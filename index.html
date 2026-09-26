@@ -18,7 +18,7 @@
                 extend: {
                     colors: {
                         app: {
-                            bg: '#FAF7F2', card: '#FFFFFF', header: '#FFFDF9',
+                            bg: '#FAF7F2', card: '#FFFFFF', header: '#181C23',
                             textMain: '#29231E', textSec: '#6B6259', border: '#E5DCD2', footer: '#2F2924',
                             darkBg: '#0F1115', darkCard: '#171B21', darkHeader: '#181C23',
                             darkTextMain: '#E8EAED', darkTextSec: '#A6ADB8', darkBorder: '#2B313A', darkFooter: '#0B0D10'
@@ -48,12 +48,13 @@
             body.text-size-lg { font-size: 18px; }
             
             .text-h1 { @apply text-[26px] md:text-[32px] font-bold leading-tight; }
-            .text-h2 { @apply text-[22px] md:text-[26px] font-semibold leading-snug; }
-            .text-h3 { @apply text-[18px] md:text-[22px] font-medium; }
+            .text-h2 { @apply text-[20px] md:text-[24px] font-semibold leading-snug; }
+            .text-h3 { @apply text-[18px] md:text-[20px] font-semibold; }
             .text-body { @apply text-[1em] leading-[1.7]; }
             .text-small { @apply text-[0.85em] leading-normal; }
 
             .card { @apply bg-app-card dark:bg-app-darkCard border border-app-border dark:border-app-darkBorder rounded-xl shadow-sm; }
+            .topic-box { @apply bg-app-card dark:bg-app-darkCard border-t-4 border-t-brand dark:border-t-brand-dark border-l border-r border-b border-app-border dark:border-app-darkBorder rounded-b-xl rounded-t-sm shadow-sm p-5 md:p-7 mb-6; }
             
             .btn-primary { @apply bg-brand dark:bg-brand-dark text-white dark:text-app-darkBg px-6 py-3 rounded-lg font-medium transition-colors hover:opacity-90 active:scale-95 touch-target; }
             .btn-secondary { @apply bg-transparent border border-app-border dark:border-app-darkBorder text-app-textMain dark:text-app-darkTextMain px-6 py-3 rounded-lg font-medium transition-colors hover:bg-gray-50 dark:hover:bg-gray-800 active:scale-95 touch-target; }
@@ -66,161 +67,234 @@
         .page-view { display: none; }
         .page-view.active { display: block; animation: fadeIn 0.3s ease-in-out; }
         @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+        
+        /* Table Styles */
+        .mpsc-table th { @apply bg-gray-100 dark:bg-gray-800 text-left p-3 font-semibold border border-app-border dark:border-app-darkBorder; }
+        .mpsc-table td { @apply p-3 border border-app-border dark:border-app-darkBorder; }
+        .mpsc-table tr:nth-child(even) { @apply bg-gray-50/50 dark:bg-gray-800/30; }
     </style>
 </head>
 <body class="text-size-base flex flex-col min-h-screen">
 
-    <header class="sticky top-0 z-50 w-full bg-[#181C23] text-white shadow-sm border-b border-gray-800 backdrop-blur-md">
+    <!-- HEADER (Dark in both modes) -->
+    <header class="sticky top-0 z-40 w-full bg-app-header text-white shadow-md border-b border-gray-800">
         <div class="max-w-5xl mx-auto px-4 h-16 flex items-center justify-between">
-            <a href="javascript:void(0)" onclick="app.navigate('home');" class="text-h2 font-bold flex items-center gap-2 touch-target hover:text-gray-200 transition-colors">
+            <a href="javascript:void(0)" onclick="app.navigate('home');" class="text-xl font-bold flex items-center gap-2 touch-target hover:text-gray-200 transition-colors">
                 <i class="fa-solid fa-graduation-cap text-brand-dark"></i> StudySphere
             </a>
-
-            <div class="flex items-center gap-2 md:gap-4">
-                <nav class="hidden md:flex items-center gap-6 mr-2">
-                    <a href="javascript:void(0)" onclick="app.navigate('home');" class="hover:text-brand-dark font-medium transition-colors">Home</a>
-                    <a href="javascript:void(0)" onclick="app.navigate('about');" class="hover:text-brand-dark font-medium transition-colors">About Us</a>
-                    <a href="javascript:void(0)" onclick="app.scrollToSection('footer-section');" class="hover:text-brand-dark font-medium transition-colors">Contact</a>
-                </nav>
-
-                <div class="hidden md:flex items-center gap-2">
-                    <div class="flex items-center gap-1 bg-gray-800 rounded-full p-1 border border-gray-700">
-                        <button onclick="app.changeFontSize('sm')" class="w-6 h-6 rounded-full flex items-center justify-center text-xs font-medium hover:bg-gray-700 transition-colors" title="Smaller text">A-</button>
-                        <button onclick="app.changeFontSize('base')" class="w-6 h-6 rounded-full flex items-center justify-center text-sm font-medium hover:bg-gray-700 transition-colors" title="Default text">A</button>
-                        <button onclick="app.changeFontSize('lg')" class="w-6 h-6 rounded-full flex items-center justify-center text-base font-medium hover:bg-gray-700 transition-colors" title="Larger text">A+</button>
-                    </div>
-                    <button onclick="app.toggleTheme()" class="w-8 h-8 text-sm rounded-full flex items-center justify-center bg-gray-800 hover:text-brand-dark transition-colors border border-gray-700 touch-target" title="Toggle Theme">
-                        <i class="fa-solid fa-sun block dark:hidden"></i>
-                        <i class="fa-solid fa-moon hidden dark:block"></i>
-                    </button>
-                </div>
-
-                <button class="md:hidden touch-target text-xl hover:text-brand-dark transition-colors" onclick="app.toggleMobileMenu()">
-                    <i class="fa-solid fa-bars"></i>
-                </button>
-            </div>
-        </div>
-
-        <div id="mobile-menu" class="fixed inset-0 w-full h-[100dvh] bg-[#FAF7F2]/95 dark:bg-[#0F1115]/95 backdrop-blur-xl transform translate-x-full transition-transform duration-300 ease-out z-[100] flex flex-col text-app-textMain dark:text-app-darkTextMain">
-            <div class="px-6 py-4 flex justify-between items-center border-b border-gray-200/50 dark:border-gray-800/50">
-                <span class="font-bold text-lg text-brand dark:text-brand-dark flex items-center gap-2">
-                    <i class="fa-solid fa-graduation-cap"></i> Menu
-                </span>
-                <button onclick="app.toggleMobileMenu()" class="w-10 h-10 rounded-full bg-gray-200/50 dark:bg-gray-800/50 flex items-center justify-center hover:bg-gray-300 dark:hover:bg-gray-700 hover:text-error transition-colors text-lg">
-                    <i class="fa-solid fa-xmark"></i>
-                </button>
-            </div>
-            
-            <div class="flex flex-col px-4 py-4 gap-1 overflow-y-auto flex-grow">
-                <a href="javascript:void(0)" onclick="app.navigate('home'); app.toggleMobileMenu();" class="flex items-center gap-4 p-3 rounded-xl hover:bg-white/60 dark:hover:bg-gray-800/40 active:scale-95 transition-all">
-                    <div class="w-8 h-8 rounded-lg bg-brand/10 dark:bg-brand-dark/10 flex items-center justify-center text-base text-brand dark:text-brand-dark"><i class="fa-solid fa-house"></i></div>
-                    <span class="text-base font-bold">Home</span>
-                </a>
-                <a href="javascript:void(0)" onclick="app.navigate('about'); app.toggleMobileMenu();" class="flex items-center gap-4 p-3 rounded-xl hover:bg-white/60 dark:hover:bg-gray-800/40 active:scale-95 transition-all">
-                    <div class="w-8 h-8 rounded-lg bg-brand/10 dark:bg-brand-dark/10 flex items-center justify-center text-base text-brand dark:text-brand-dark"><i class="fa-solid fa-circle-info"></i></div>
-                    <span class="text-base font-bold">About Us</span>
-                </a>
-                <a href="javascript:void(0)" onclick="app.navigate('sitemap'); app.toggleMobileMenu();" class="flex items-center gap-4 p-3 rounded-xl hover:bg-white/60 dark:hover:bg-gray-800/40 active:scale-95 transition-all">
-                    <div class="w-8 h-8 rounded-lg bg-brand/10 dark:bg-brand-dark/10 flex items-center justify-center text-base text-brand dark:text-brand-dark"><i class="fa-solid fa-sitemap"></i></div>
-                    <span class="text-base font-bold">Sitemap</span>
-                </a>
-                <a href="javascript:void(0)" onclick="app.scrollToSection('footer-section'); app.toggleMobileMenu();" class="flex items-center gap-4 p-3 rounded-xl hover:bg-white/60 dark:hover:bg-gray-800/40 active:scale-95 transition-all">
-                    <div class="w-8 h-8 rounded-lg bg-brand/10 dark:bg-brand-dark/10 flex items-center justify-center text-base text-brand dark:text-brand-dark"><i class="fa-solid fa-envelope"></i></div>
-                    <span class="text-base font-bold">Contact</span>
-                </a>
-                
-                <div class="h-px bg-gray-200 dark:bg-gray-800 my-4 mx-4"></div>
-                
-                <div class="grid grid-cols-2 gap-3 px-2">
-                    <a href="javascript:void(0)" onclick="app.navigate('privacy'); app.toggleMobileMenu();" class="p-3 rounded-xl bg-white/40 dark:bg-gray-800/20 text-center"><span class="text-xs font-bold text-app-textSec dark:text-app-darkTextSec uppercase">Privacy</span></a>
-                    <a href="javascript:void(0)" onclick="app.navigate('terms'); app.toggleMobileMenu();" class="p-3 rounded-xl bg-white/40 dark:bg-gray-800/20 text-center"><span class="text-xs font-bold text-app-textSec dark:text-app-darkTextSec uppercase">Terms</span></a>
-                </div>
-            </div>
-
-            <div class="p-5 bg-white dark:bg-app-darkCard shadow-lg flex flex-col gap-4 mt-auto">
-                <div class="flex items-center justify-between">
-                    <span class="font-bold text-sm text-app-textSec dark:text-app-darkTextSec">Theme</span>
-                    <button onclick="app.toggleTheme()" class="w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-800 flex items-center justify-center text-lg shadow-sm">
-                        <i class="fa-solid fa-sun text-warning dark:hidden"></i><i class="fa-solid fa-moon text-blue-400 hidden dark:block"></i>
-                    </button>
-                </div>
-                <div class="flex items-center justify-between">
-                    <span class="font-bold text-sm text-app-textSec dark:text-app-darkTextSec">Text Size</span>
-                    <div class="flex items-center gap-1 bg-gray-100 dark:bg-gray-800 p-1 rounded-lg">
-                        <button onclick="app.changeFontSize('sm')" class="px-3 py-1 rounded-md text-sm font-bold bg-white dark:bg-gray-700 shadow-sm active:scale-95">A-</button>
-                        <button onclick="app.changeFontSize('base')" class="px-3 py-1 rounded-md text-base font-bold bg-white dark:bg-gray-700 shadow-sm active:scale-95">A</button>
-                        <button onclick="app.changeFontSize('lg')" class="px-3 py-1 rounded-md text-lg font-bold bg-white dark:bg-gray-700 shadow-sm active:scale-95">A+</button>
-                    </div>
-                </div>
-            </div>
+            <button class="touch-target text-xl hover:text-brand-dark transition-colors focus:outline-none" onclick="app.toggleMobileMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </button>
         </div>
     </header>
 
-    <main class="flex-grow w-full max-w-5xl mx-auto px-4 py-8">
+    <!-- HALF-SCREEN MENU DRAWER -->
+    <div id="mobile-menu-backdrop" class="fixed inset-0 bg-black/50 z-40 hidden opacity-0 transition-opacity duration-300" onclick="app.toggleMobileMenu()"></div>
+    <div id="mobile-menu" class="fixed top-0 right-0 h-[100dvh] w-[75vw] md:w-[350px] bg-app-card dark:bg-app-darkCard shadow-2xl transform translate-x-full transition-transform duration-300 ease-out z-50 flex flex-col border-l border-app-border dark:border-app-darkBorder">
         
-        <!-- PAGE 1: HOMEPAGE (Subject List Only) -->
-        <div id="home-page" class="page-view active">
-            
-            <!-- NEW CREATIVE HERO BANNER -->
-            <div class="mb-10 relative overflow-hidden rounded-2xl bg-gradient-to-br from-brand/10 to-transparent dark:from-brand-dark/10 border border-brand/20 dark:border-brand-dark/20 p-6 md:p-8 text-center shadow-sm">
-                <!-- Background Book Shadow/Watermark -->
-                <div class="absolute -top-8 -right-8 text-brand/5 dark:text-brand-dark/5 text-9xl transform -rotate-12">
-                    <i class="fa-solid fa-book-open"></i>
-                </div>
-                
-                <h1 class="text-h2 font-bold mb-3 text-brand dark:text-brand-dark relative z-10 leading-tight">
-                    MPSC Group C <span class="text-app-textMain dark:text-app-darkTextMain">परीक्षेची परिपूर्ण तयारी</span>
-                </h1>
-                
-                <p class="text-body text-app-textSec dark:text-app-darkTextSec max-w-3xl mx-auto relative z-10 font-medium leading-relaxed">
-                    Prelims आणि Mains साठी उपयुक्त Notes, One-Liners, Revision Material आणि MCQ Quiz — अभ्यास, उजळणी आणि सरावासाठी सर्व माहिती एकाच ठिकाणी.
-                </p>
-                
-                <!-- Quick Tags -->
-                <div class="mt-6 flex flex-wrap justify-center gap-3 relative z-10">
-                    <span class="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-white/80 dark:bg-app-darkCard/80 backdrop-blur-sm border border-success/20 text-xs font-bold text-success dark:text-success-dark shadow-sm"><i class="fa-solid fa-book-open-reader"></i> Notes</span>
-                    <span class="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-white/80 dark:bg-app-darkCard/80 backdrop-blur-sm border border-warning/20 text-xs font-bold text-warning dark:text-warning-dark shadow-sm"><i class="fa-solid fa-bolt"></i> One-Liners</span>
-                    <span class="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-white/80 dark:bg-app-darkCard/80 backdrop-blur-sm border border-subject/20 text-xs font-bold text-subject dark:text-subject-dark shadow-sm"><i class="fa-solid fa-brain"></i> MCQ Quiz</span>
+        <div class="px-5 h-16 flex justify-between items-center border-b border-app-border dark:border-app-darkBorder">
+            <span class="font-bold text-lg text-brand dark:text-brand-dark">Menu</span>
+            <button onclick="app.toggleMobileMenu()" class="w-8 h-8 rounded-full bg-gray-100 dark:bg-gray-800 flex items-center justify-center hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors text-app-textMain dark:text-app-darkTextMain focus:outline-none">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+        
+        <nav class="flex flex-col px-4 py-6 gap-2 overflow-y-auto flex-grow text-sm font-medium text-app-textMain dark:text-app-darkTextMain">
+            <a href="javascript:void(0)" onclick="app.navigate('home'); app.toggleMobileMenu();" class="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors">
+                <i class="fa-solid fa-house w-5 text-center text-brand dark:text-brand-dark"></i> Home
+            </a>
+            <a href="javascript:void(0)" onclick="app.navigate('about'); app.toggleMobileMenu();" class="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors">
+                <i class="fa-solid fa-circle-info w-5 text-center text-brand dark:text-brand-dark"></i> About Us
+            </a>
+            <a href="javascript:void(0)" onclick="app.navigate('sitemap'); app.toggleMobileMenu();" class="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors">
+                <i class="fa-solid fa-sitemap w-5 text-center text-brand dark:text-brand-dark"></i> Sitemap
+            </a>
+            <a href="javascript:void(0)" onclick="app.navigate('privacy'); app.toggleMobileMenu();" class="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors">
+                <i class="fa-solid fa-shield-halved w-5 text-center text-brand dark:text-brand-dark"></i> Privacy Policy
+            </a>
+            <a href="javascript:void(0)" onclick="app.navigate('terms'); app.toggleMobileMenu();" class="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors">
+                <i class="fa-solid fa-file-contract w-5 text-center text-brand dark:text-brand-dark"></i> Terms of Service
+            </a>
+        </nav>
+
+        <div class="p-5 border-t border-app-border dark:border-app-darkBorder bg-gray-50 dark:bg-[#12151A]">
+            <div class="flex items-center justify-between mb-4">
+                <span class="text-sm font-medium text-app-textSec dark:text-app-darkTextSec">Theme</span>
+                <button onclick="app.toggleTheme()" class="w-8 h-8 rounded-full bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 flex items-center justify-center shadow-sm">
+                    <i class="fa-solid fa-sun text-warning text-xs dark:hidden"></i>
+                    <i class="fa-solid fa-moon text-blue-400 text-xs hidden dark:block"></i>
+                </button>
+            </div>
+            <div class="flex items-center justify-between">
+                <span class="text-sm font-medium text-app-textSec dark:text-app-darkTextSec">Text Size</span>
+                <div class="flex items-center gap-1 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 p-1 rounded-md shadow-sm">
+                    <button onclick="app.changeFontSize('sm')" class="px-2 py-1 rounded text-xs font-bold hover:bg-gray-100 dark:hover:bg-gray-700 text-app-textMain dark:text-app-darkTextMain">A-</button>
+                    <button onclick="app.changeFontSize('base')" class="px-2 py-1 rounded text-sm font-bold hover:bg-gray-100 dark:hover:bg-gray-700 text-app-textMain dark:text-app-darkTextMain">A</button>
+                    <button onclick="app.changeFontSize('lg')" class="px-2 py-1 rounded text-base font-bold hover:bg-gray-100 dark:hover:bg-gray-700 text-app-textMain dark:text-app-darkTextMain">A+</button>
                 </div>
             </div>
+        </div>
+    </div>
 
+    <!-- MAIN CONTENT -->
+    <main class="flex-grow w-full max-w-5xl mx-auto px-4 py-8">
+        
+        <!-- PAGE 1: HOMEPAGE (Subjects List) -->
+        <div id="home-page" class="page-view active">
+            <div class="text-center mb-10">
+                <h1 class="text-h1 mb-2 text-brand dark:text-brand-dark">StudySphere</h1>
+                <p class="text-body text-app-textSec dark:text-app-darkTextSec max-w-2xl mx-auto font-medium">MPSC Group C Prelims + Mains Preparation</p>
+            </div>
             <!-- Subjects Container -->
-            <div class="space-y-4 mb-10" id="subject-list-container"></div>
+            <div class="space-y-3 mb-10" id="subject-list-container"></div>
         </div>
 
         <!-- PAGE: ABOUT US -->
         <div id="about-page" class="page-view">
             <div class="mb-6 pb-4 border-b border-app-border dark:border-app-darkBorder">
-                <button onclick="app.navigate('home')" class="text-small text-app-textSec dark:text-app-darkTextSec hover:text-brand transition-colors mb-2 flex items-center gap-1 touch-target w-max -ml-2 px-2"><i class="fa-solid fa-arrow-left"></i> Back to Home</button>
-                <h1 class="text-h1 text-brand dark:text-brand-dark flex items-center gap-2"><i class="fa-solid fa-bullseye"></i> About Us</h1>
+                <button onclick="app.navigate('home')" class="text-small text-app-textSec dark:text-app-darkTextSec hover:text-brand transition-colors mb-2 flex items-center gap-1"><i class="fa-solid fa-arrow-left"></i> Back</button>
+                <h1 class="text-h1 text-brand dark:text-brand-dark">About Us</h1>
             </div>
-            <div class="card p-6 md:p-8 bg-gradient-to-br from-app-card to-[#f5eee6] dark:from-app-darkCard dark:to-[#211d1a]">
-                <div class="text-body space-y-4 text-app-textSec dark:text-app-darkTextSec">
-                    <p>स्पर्धा परीक्षांची तयारी करणाऱ्या विद्यार्थ्यांसाठी अभ्यासाची माहिती सोप्या, व्यवस्थित आणि revision-friendly स्वरूपात उपलब्ध करून देणे हा या वेबसाइटचा उद्देश आहे.</p>
-                    <p>येथे विषयानुसार Notes, One-Liners आणि Quiz उपलब्ध करून देण्याचा प्रयत्न केला जातो, जेणेकरून विद्यार्थ्यांना अभ्यास, उजळणी आणि सराव एकाच ठिकाणी करता येईल.</p>
-                    <p>आम्ही माहिती शक्य तितकी अचूक आणि परीक्षेच्या दृष्टीने उपयुक्त ठेवण्याचा प्रयत्न करतो. मात्र कोणत्याही माहितीत चूक, त्रुटी किंवा अद्ययावत करण्याची आवश्यकता आढळल्यास कृपया आम्हाला कळवा.</p>
-                    <p>दिलेली माहिती चुकीची किंवा त्रुटीपूर्ण आहे असे वाटल्यास, कृपया Telegram वर आम्हाला कळवा. तुमच्या सूचनेची पडताळणी करून आवश्यक असल्यास माहितीमध्ये सुधारणा केली जाईल.</p>
-                    <p class="mt-4 font-medium text-app-textMain dark:text-app-darkTextMain border-l-2 border-brand dark:border-brand-dark pl-3">तुमच्या अभ्यासासाठी ही वेबसाइट अधिक उपयुक्त बनवण्यासाठी तुमचा अभिप्राय आमच्यासाठी महत्त्वाचा পেল आहे.</p>
+            <div class="card p-6 md:p-8 text-body space-y-4 text-app-textMain dark:text-app-darkTextMain">
+                <p>स्पर्धा परीक्षांची तयारी करणाऱ्या विद्यार्थ्यांसाठी अभ्यासाची माहिती सोप्या, व्यवस्थित आणि revision-friendly स्वरूपात उपलब्ध करून देणे हा या वेबसाइटचा उद्देश आहे.</p>
+                <p>येथे विषयानुसार Notes, One-Liners आणि Quiz उपलब्ध करून देण्याचा प्रयत्न केला जातो, जेणेकरून विद्यार्थ्यांना अभ्यास, उजळणी आणि सराव एकाच ठिकाणी करता येईल.</p>
+                <p>आम्ही माहिती शक्य तितकी अचूक आणि परीक्षेच्या दृष्टीने उपयुक्त ठेवण्याचा प्रयत्न करतो. मात्र कोणत्याही माहितीत चूक, त्रुटी किंवा अद्ययावत करण्याची आवश्यकता आढळल्यास कृपया आम्हाला कळवा.</p>
+                <p>दिलेली माहिती चुकीची किंवा त्रुटीपूर्ण आहे असे वाटल्यास, कृपया Telegram वर आम्हाला कळवा. तुमच्या सूचनेची पडताळणी करून आवश्यक असल्यास माहितीमध्ये सुधारणा केली जाईल.</p>
+                <p class="font-medium text-brand dark:text-brand-dark">तुमच्या अभ्यासासाठी ही वेबसाइट अधिक उपयुक्त बनवण्यासाठी तुमचा अभिप्राय आमच्यासाठी महत्त्वाचा आहे.</p>
+            </div>
+        </div>
+
+        <!-- PAGE: PRIVACY POLICY -->
+        <div id="privacy-page" class="page-view">
+            <div class="mb-6 pb-4 border-b border-app-border dark:border-app-darkBorder">
+                <button onclick="app.navigate('home')" class="text-small text-app-textSec dark:text-app-darkTextSec hover:text-brand transition-colors mb-2 flex items-center gap-1"><i class="fa-solid fa-arrow-left"></i> Back</button>
+                <h1 class="text-h1 text-brand dark:text-brand-dark">Privacy Policy</h1>
+                <p class="text-sm text-app-textSec mt-1">Last Updated: October 2026</p>
+            </div>
+            <div class="card p-6 md:p-8 text-body space-y-6">
+                <p>आमच्या वेबसाइटवर येणाऱ्या वापरकर्त्यांच्या गोपनीयतेचा आम्ही आदर करतो.</p>
+                <div>
+                    <h3 class="font-bold text-lg mb-2">1. आम्ही कोणती माहिती गोळा करू शकतो?</h3>
+                    <p class="mb-2">वेबसाइटच्या काही सुविधांसाठी खालील माहिती आवश्यक असू शकते:</p>
+                    <ul class="list-disc pl-5 space-y-1 text-app-textSec dark:text-app-darkTextSec">
+                        <li>Google Login वापरल्यास Google account मधील आवश्यक basic profile information</li>
+                        <li>Quiz मध्ये मिळवलेले गुण आणि performance</li>
+                        <li>Quiz attempt संबंधित माहिती</li>
+                        <li>वापरकर्त्याने स्वतः दिलेली feedback किंवा संपर्क माहिती</li>
+                    </ul>
+                    <p class="mt-2 text-sm">आम्ही आवश्यकतेपेक्षा अधिक वैयक्तिक माहिती गोळा करण्याचा प्रयत्न करणार नाही.</p>
                 </div>
+                <div>
+                    <h3 class="font-bold text-lg mb-2">2. माहितीचा वापर</h3>
+                    <ul class="list-disc pl-5 space-y-1 text-app-textSec dark:text-app-darkTextSec">
+                        <li>Login सुविधा उपलब्ध करून देण्यासाठी</li>
+                        <li>Quiz results जतन करण्यासाठी</li>
+                        <li>Leaderboard दाखवण्यासाठी</li>
+                        <li>वेबसाइटची कार्यक्षमता सुधारण्यासाठी</li>
+                        <li>वापरकर्त्यांच्या feedback वर कार्यवाही करण्यासाठी</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg mb-2">3. माहितीची सुरक्षा</h3>
+                    <p class="text-app-textSec dark:text-app-darkTextSec">वापरकर्त्यांची माहिती सुरक्षित ठेवण्यासाठी योग्य तांत्रिक उपाययोजना करण्याचा प्रयत्न केला जाईल. मात्र इंटरनेटवरील कोणतीही प्रणाली पूर्णपणे सुरक्षित असल्याची हमी देता येत नाही.</p>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg mb-2">4. Third-Party Services</h3>
+                    <p class="text-app-textSec dark:text-app-darkTextSec">Google Login, hosting, analytics किंवा इतर आवश्यक सेवांसाठी third-party services वापरल्या जाऊ शकतात. अशा सेवांच्या स्वतःच्या privacy policies लागू होऊ शकतात.</p>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg mb-2">5. माहिती शेअर करणे</h3>
+                    <p class="text-app-textSec dark:text-app-darkTextSec">कायद्याने आवश्यक असल्याशिवाय किंवा आवश्यक technical services साठी, वापरकर्त्यांची वैयक्तिक माहिती अनावश्यकपणे इतरांना विकली किंवा शेअर केली जाणार नाही.</p>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg mb-2">6. बदल</h3>
+                    <p class="text-app-textSec dark:text-app-darkTextSec">आवश्यकतेनुसार ही Privacy Policy अद्ययावत केली जाऊ शकते. बदल झाल्यास या पेजवर updated date दिली जाईल.</p>
+                    <p class="mt-2 font-medium">या वेबसाइटचा वापर करण्यापूर्वी ही Privacy Policy वाचणे आणि समजून घेणे ही वापरकर्त्याची जबाबदारी आहे.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- PAGE: TERMS OF SERVICE -->
+        <div id="terms-page" class="page-view">
+            <div class="mb-6 pb-4 border-b border-app-border dark:border-app-darkBorder">
+                <button onclick="app.navigate('home')" class="text-small text-app-textSec dark:text-app-darkTextSec hover:text-brand transition-colors mb-2 flex items-center gap-1"><i class="fa-solid fa-arrow-left"></i> Back</button>
+                <h1 class="text-h1 text-brand dark:text-brand-dark">Terms of Service</h1>
+                <p class="text-sm text-app-textSec mt-1">Last Updated: October 2026</p>
+            </div>
+            <div class="card p-6 md:p-8 text-body space-y-6">
+                <p>या वेबसाइटचा वापर करून आपण खालील अटी मान्य करता.</p>
+                <div>
+                    <h3 class="font-bold text-lg mb-2">1. वेबसाइटचा उद्देश</h3>
+                    <p class="text-app-textSec dark:text-app-darkTextSec">ही वेबसाइट स्पर्धा परीक्षांच्या अभ्यासासाठी Notes, One-Liners आणि Quiz उपलब्ध करून देण्यासाठी तयार करण्यात आली आहे. वेबसाइटवरील माहिती ही अभ्यासासाठी आणि शैक्षणिक संदर्भासाठी आहे.</p>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg mb-2">2. माहितीची अचूकता</h3>
+                    <p class="text-app-textSec dark:text-app-darkTextSec">आम्ही उपलब्ध करून दिलेली माहिती शक्य तितकी अचूक ठेवण्याचा प्रयत्न करतो. तथापि, माहितीमध्ये अनवधानाने चुका, अपूर्णता किंवा जुन्या माहितीसंदर्भात त्रुटी असू शकतात. त्यामुळे कोणत्याही परीक्षेसाठी अंतिम तयारी करताना अधिकृत सरकारी/परीक्षा प्राधिकरणाच्या स्रोतांशी महत्त्वाची माहिती पडताळून पाहणे अपेक्षित आहे.</p>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg mb-2">3. Quiz आणि Results</h3>
+                    <p class="text-app-textSec dark:text-app-darkTextSec">Quiz मधील गुण, ranking आणि इतर performance information ही वेबसाइटवरील प्रणालीच्या आधारे तयार केली जाते. Quiz score किंवा leaderboard हे कोणत्याही परीक्षेतील अधिकृत गुण, rank किंवा selection ची हमी दर्शवत नाही.</p>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg mb-2">4. Content Usage</h3>
+                    <p class="text-app-textSec dark:text-app-darkTextSec">वेबसाइटवरील स्वतः तयार केलेले notes, explanations, design आणि इतर original content परवानगीशिवाय व्यावसायिक स्वरूपात कॉपी, पुनर्प्रकाशित किंवा वितरित करू नये.</p>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg mb-2">5. External Links</h3>
+                    <p class="text-app-textSec dark:text-app-darkTextSec">वेबसाइटवर Telegram किंवा इतर external websites/services चे links असू शकतात. त्या external services च्या content किंवा privacy practices साठी त्यांची स्वतःची अटी लागू होतात.</p>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg mb-2">6. Website Changes</h3>
+                    <p class="text-app-textSec dark:text-app-darkTextSec">आम्ही वेबसाइटवरील content, features, notes, quizzes किंवा इतर सुविधा कोणत्याही वेळी बदलू, अपडेट करू किंवा काढून टाकू शकतो.</p>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg mb-2">7. वापरकर्त्याची जबाबदारी</h3>
+                    <p class="text-app-textSec dark:text-app-darkTextSec">वेबसाइटचा गैरवापर करू नये, इतर वापरकर्त्यांच्या माहितीचा गैरवापर करू नये आणि वेबसाइटच्या कार्यात अडथळा आणण्याचा प्रयत्न करू नये.</p>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg mb-2">8. संपर्क</h3>
+                    <p class="text-app-textSec dark:text-app-darkTextSec">वेबसाइटवरील माहितीमध्ये काही त्रुटी आढळल्यास किंवा काही सूचना असल्यास आम्हाला उपलब्ध असलेल्या contact/Telegram माध्यमातून कळवू शकता.</p>
+                    <p class="mt-4 font-medium text-brand dark:text-brand-dark">या वेबसाइटचा वापर सुरू ठेवल्यास आपण या Terms of Service शी सहमत असल्याचे मानले जाईल.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- PAGE: SITEMAP -->
+        <div id="sitemap-page" class="page-view">
+            <div class="mb-6 pb-4 border-b border-app-border dark:border-app-darkBorder">
+                <button onclick="app.navigate('home')" class="text-small text-app-textSec dark:text-app-darkTextSec hover:text-brand transition-colors mb-2 flex items-center gap-1"><i class="fa-solid fa-arrow-left"></i> Back</button>
+                <h1 class="text-h1 text-brand dark:text-brand-dark">Sitemap</h1>
+            </div>
+            <div class="card p-6 text-body">
+                <ul class="space-y-4">
+                    <li><a href="javascript:void(0)" onclick="app.navigate('home')" class="font-bold hover:text-brand transition-colors">Home (Subject List)</a></li>
+                    <li><a href="javascript:void(0)" onclick="app.navigate('about')" class="font-bold hover:text-brand transition-colors">About Us</a></li>
+                    <li><a href="javascript:void(0)" onclick="app.navigate('privacy')" class="font-bold hover:text-brand transition-colors">Privacy Policy</a></li>
+                    <li><a href="javascript:void(0)" onclick="app.navigate('terms')" class="font-bold hover:text-brand transition-colors">Terms of Service</a></li>
+                </ul>
             </div>
         </div>
 
         <!-- PAGE: NOTES -->
         <div id="notes-page" class="page-view">
             <div class="mb-6 pb-4 border-b border-app-border dark:border-app-darkBorder">
-                <button onclick="app.navigate('home')" class="text-small text-app-textSec dark:text-app-darkTextSec hover:text-brand transition-colors mb-2 flex items-center gap-1 touch-target w-max -ml-2 px-2"><i class="fa-solid fa-arrow-left"></i> Back to Subjects</button>
+                <button onclick="app.navigate('home')" class="text-small text-app-textSec dark:text-app-darkTextSec hover:text-brand transition-colors mb-2 flex items-center gap-1"><i class="fa-solid fa-arrow-left"></i> Back to Subjects</button>
                 <div class="flex flex-col md:flex-row md:items-end justify-between gap-2">
                     <div>
-                        <span class="text-small font-semibold tracking-wider text-subject dark:text-subject-dark uppercase" id="notes-subject-name">Subject</span>
+                        <span class="text-small font-semibold text-subject dark:text-subject-dark uppercase tracking-wider" id="notes-subject-name">Subject</span>
                         <h1 class="text-h2 mt-1" id="notes-chapter-name">Chapter Name</h1>
                     </div>
-                    <div class="bg-success/10 dark:bg-success-dark/10 text-success dark:text-success-dark px-3 py-1 rounded-full text-sm font-medium self-start md:self-auto">📖 Chapter Notes</div>
+                    <div class="bg-brand/10 dark:bg-brand-dark/10 text-brand dark:text-brand-dark px-3 py-1 rounded text-sm font-medium self-start md:self-auto">📖 Chapter Notes</div>
                 </div>
             </div>
-            <div id="notes-content" class="space-y-6 text-body leading-relaxed"></div>
+            
+            <!-- NOTES CONTENT AREA -->
+            <div id="notes-content" class="text-body leading-relaxed text-app-textMain dark:text-app-darkTextMain">
+                <!-- Topics will be dynamically injected here -->
+            </div>
             
             <div class="mt-8 flex flex-col sm:flex-row justify-center gap-4">
-                 <button onclick="app.navigate('one-liners', app.state.context)" class="btn-secondary w-full sm:w-auto shadow-sm">Read One-Liners <i class="fa-solid fa-bolt ml-2 text-warning"></i></button>
+                 <button onclick="app.navigate('one-liners', app.state.context)" class="btn-secondary w-full sm:w-auto">Read One-Liners <i class="fa-solid fa-bolt ml-2 text-warning"></i></button>
                  <button onclick="app.navigate('quiz', app.state.context)" class="btn-primary w-full sm:w-auto shadow-md">Practice Quiz <i class="fa-solid fa-arrow-right ml-2"></i></button>
             </div>
         </div>
@@ -228,188 +302,121 @@
         <!-- PAGE: ONE-LINERS -->
         <div id="one-liners-page" class="page-view">
             <div class="mb-6 pb-4 border-b border-app-border dark:border-app-darkBorder">
-                <button onclick="app.navigate('home')" class="text-small text-app-textSec dark:text-app-darkTextSec hover:text-brand transition-colors mb-2 flex items-center gap-1 touch-target w-max -ml-2 px-2"><i class="fa-solid fa-arrow-left"></i> Back to Subjects</button>
+                <button onclick="app.navigate('notes', app.state.context)" class="text-small text-app-textSec dark:text-app-darkTextSec hover:text-brand transition-colors mb-2 flex items-center gap-1"><i class="fa-solid fa-arrow-left"></i> Back to Notes</button>
                 <div class="flex flex-col md:flex-row md:items-end justify-between gap-2">
                     <div>
-                        <span class="text-small font-semibold tracking-wider text-subject dark:text-subject-dark uppercase" id="ol-subject-name">Subject</span>
+                        <span class="text-small font-semibold text-subject dark:text-subject-dark uppercase tracking-wider" id="ol-subject-name">Subject</span>
                         <h1 class="text-h2 mt-1" id="ol-chapter-name">Chapter Name</h1>
                     </div>
-                    <div class="bg-warning/10 dark:bg-warning-dark/10 text-warning dark:text-warning-dark px-3 py-1 rounded-full text-sm font-medium self-start md:self-auto">📝 One-Liners | Revision</div>
+                    <div class="bg-warning/10 dark:bg-warning-dark/10 text-warning dark:text-warning-dark px-3 py-1 rounded text-sm font-medium self-start md:self-auto">📝 One-Liners Revision</div>
                 </div>
             </div>
+            
             <div class="space-y-4" id="one-liners-content"></div>
-            <div class="mt-10 text-center"><button onclick="app.startQuizFromOneLiner()" class="btn-primary w-full sm:w-auto shadow-md">Practice Quiz Now <i class="fa-solid fa-arrow-right ml-2"></i></button></div>
+            
+            <div class="mt-10 text-center">
+                <button onclick="app.startQuizFromOneLiner()" class="btn-primary w-full sm:w-auto shadow-md">Practice Quiz Now <i class="fa-solid fa-brain ml-2"></i></button>
+            </div>
         </div>
 
         <!-- PAGE: QUIZ -->
         <div id="quiz-page" class="page-view">
             <div class="mb-6 pb-4 border-b border-app-border dark:border-app-darkBorder flex justify-between items-end">
                 <div>
-                    <button onclick="app.navigate('home')" class="text-small text-app-textSec dark:text-app-darkTextSec hover:text-brand transition-colors mb-2 flex items-center gap-1 touch-target w-max -ml-2 px-2"><i class="fa-solid fa-arrow-left"></i> Exit Quiz</button>
-                    <span class="text-small font-semibold tracking-wider text-subject dark:text-subject-dark uppercase" id="quiz-subject-name">Subject</span>
+                    <button onclick="app.navigate('home')" class="text-small text-app-textSec dark:text-app-darkTextSec hover:text-brand transition-colors mb-2 flex items-center gap-1"><i class="fa-solid fa-arrow-left"></i> Exit Quiz</button>
+                    <span class="text-small font-semibold text-subject dark:text-subject-dark uppercase tracking-wider" id="quiz-subject-name">Subject</span>
                     <h1 class="text-h2 mt-1" id="quiz-chapter-name">Chapter Name</h1>
                 </div>
                 <div id="quiz-timer-container" class="hidden flex-col items-end text-brand dark:text-brand-dark bg-brand/5 dark:bg-brand-dark/10 px-4 py-2 rounded-lg border border-brand/20 dark:border-brand-dark/20 transition-colors">
-                    <span class="text-[10px] uppercase font-bold tracking-wider mb-0.5 opacity-80">Time Remaining</span>
+                    <span class="text-[10px] uppercase font-bold tracking-wider mb-0.5 opacity-80">Time</span>
                     <div class="font-mono text-xl font-bold flex items-center gap-2"><i class="fa-regular fa-clock"></i> <span id="quiz-timer">00:00</span></div>
                 </div>
             </div>
 
-            <!-- Quiz Intro (Username Removed) -->
-            <div id="quiz-intro-state" class="card p-6 md:p-10 max-w-2xl mx-auto mt-8">
-                <div class="w-20 h-20 bg-brand/10 dark:bg-brand-dark/10 text-brand dark:text-brand-dark rounded-full flex items-center justify-center text-4xl mx-auto mb-6"><i class="fa-solid fa-clipboard-list"></i></div>
-                <h2 class="text-h2 text-center mb-6">Quiz Instructions</h2>
-                
+            <!-- Quiz Intro -->
+            <div id="quiz-intro-state" class="card p-6 md:p-10 max-w-xl mx-auto mt-8 text-center">
+                <div class="w-16 h-16 bg-brand/10 dark:bg-brand-dark/10 text-brand dark:text-brand-dark rounded-full flex items-center justify-center text-3xl mx-auto mb-6"><i class="fa-solid fa-brain"></i></div>
+                <h2 class="text-h2 mb-6">Quiz Instructions</h2>
                 <div class="grid grid-cols-2 gap-4 mb-8">
-                    <div class="bg-gray-50 dark:bg-gray-800 p-4 rounded-xl border border-gray-100 dark:border-gray-700 text-center">
-                        <span class="block text-xs uppercase font-bold text-app-textSec dark:text-app-darkTextSec mb-1">Total Questions</span>
+                    <div class="bg-gray-50 dark:bg-gray-800 p-4 rounded-lg border border-gray-100 dark:border-gray-700">
+                        <span class="block text-xs font-bold text-app-textSec dark:text-app-darkTextSec mb-1 uppercase">Questions</span>
                         <span class="text-2xl font-bold text-subject dark:text-subject-dark" id="intro-q-count">0</span>
                     </div>
-                    <div class="bg-gray-50 dark:bg-gray-800 p-4 rounded-xl border border-gray-100 dark:border-gray-700 text-center">
-                        <span class="block text-xs uppercase font-bold text-app-textSec dark:text-app-darkTextSec mb-1">Time Limit</span>
+                    <div class="bg-gray-50 dark:bg-gray-800 p-4 rounded-lg border border-gray-100 dark:border-gray-700">
+                        <span class="block text-xs font-bold text-app-textSec dark:text-app-darkTextSec mb-1 uppercase">Time</span>
                         <span class="text-2xl font-bold text-warning dark:text-warning-dark"><span id="intro-time">0</span> Min</span>
                     </div>
                 </div>
-                
-                <div class="text-center">
-                    <button onclick="app.startQuiz()" class="btn-primary w-full sm:w-auto text-lg px-10 shadow-lg shadow-brand/20"><i class="fa-solid fa-play mr-2"></i> Start Quiz</button>
-                </div>
+                <button onclick="app.startQuiz()" class="btn-primary w-full text-lg shadow-md"><i class="fa-solid fa-play mr-2"></i> Start Quiz</button>
             </div>
 
             <!-- Quiz Active -->
             <div id="quiz-active-state" class="hidden flex flex-col lg:flex-row gap-6 relative">
                 <div class="flex-grow">
                     <div class="flex items-center justify-between mb-4 px-1">
-                        <span class="font-bold text-app-textSec dark:text-app-darkTextSec uppercase tracking-wider text-sm" id="quiz-q-number">Question 1</span>
-                        <div class="flex gap-2"><span class="text-xs font-semibold bg-success/10 text-success px-2 py-1 rounded">Score: <span id="quiz-current-score">0</span></span></div>
+                        <span class="font-bold text-app-textSec dark:text-app-darkTextSec text-sm uppercase" id="quiz-q-number">Question 1</span>
                     </div>
-                    <div class="card p-6 md:p-8 mb-6 shadow-md border-t-4 border-t-brand dark:border-t-brand-dark">
+                    <div class="card p-6 md:p-8 mb-6 border-t-4 border-t-subject dark:border-t-subject-dark">
                         <h3 class="text-h3 font-semibold mb-6 leading-relaxed" id="quiz-question-text">Loading?</h3>
+                        <!-- Options injected here -->
                         <div class="space-y-3" id="quiz-options"></div>
                     </div>
                     <div class="flex justify-between items-center mt-6">
-                        <button id="btn-prev-q" class="btn-secondary flex items-center gap-2"><i class="fa-solid fa-arrow-left"></i> Previous</button>
-                        <button id="btn-next-q" class="btn-primary flex items-center gap-2">Next <i class="fa-solid fa-arrow-right"></i></button>
+                        <button id="btn-prev-q" class="btn-secondary px-5 py-2 flex items-center gap-2"><i class="fa-solid fa-arrow-left"></i> Prev</button>
+                        <button id="btn-next-q" class="btn-primary px-8 py-2 flex items-center gap-2">Next <i class="fa-solid fa-arrow-right"></i></button>
                     </div>
                 </div>
-                <div id="quiz-dashboard-container" class="hidden lg:block w-72 shrink-0">
+                
+                <!-- Question Palette -->
+                <div id="quiz-dashboard-container" class="hidden lg:block w-64 shrink-0">
                     <div class="card p-5 sticky top-24">
-                        <h4 class="font-bold mb-4 text-sm uppercase tracking-wider text-app-textSec border-b border-gray-100 dark:border-gray-800 pb-2">Status</h4>
+                        <h4 class="font-bold mb-4 text-xs uppercase tracking-wider text-app-textSec border-b border-gray-100 dark:border-gray-800 pb-2">Palette</h4>
                         <div class="flex flex-wrap gap-2" id="quiz-dashboard-grid"></div>
-                        <button id="btn-dashboard-submit" onclick="app.confirmSubmit()" class="w-full mt-6 bg-gray-900 dark:bg-gray-700 text-white py-3 rounded-lg font-medium">Submit Final Quiz</button>
+                        <button onclick="app.confirmSubmit()" class="w-full mt-6 bg-error hover:bg-red-700 text-white py-2.5 rounded font-medium transition-colors shadow-sm">Submit Quiz</button>
                     </div>
                 </div>
             </div>
 
-            <!-- Quiz Result (No Global Leaderboard) -->
+            <!-- Quiz Result -->
             <div id="quiz-result-state" class="hidden space-y-8">
                 <div class="card p-8 text-center bg-gradient-to-b from-brand/5 to-transparent border-t-4 border-t-brand dark:border-t-brand-dark">
-                    <h2 class="text-h2 font-bold mb-2 uppercase tracking-wide text-brand dark:text-brand-dark"><i class="fa-solid fa-trophy mr-2 text-warning"></i> Quiz Result</h2>
-                    
+                    <h2 class="text-h2 font-bold mb-2 text-brand dark:text-brand-dark"><i class="fa-solid fa-trophy text-warning mr-2"></i> Quiz Result</h2>
                     <div class="flex justify-center items-baseline gap-2 my-6">
-                        <span class="text-6xl font-black text-app-textMain dark:text-app-darkTextMain" id="res-score">0</span>
-                        <span class="text-2xl font-bold text-app-textSec dark:text-app-darkTextSec">/ <span id="res-total">0</span></span>
+                        <span class="text-5xl font-black text-app-textMain dark:text-app-darkTextMain" id="res-score">0</span>
+                        <span class="text-xl font-bold text-app-textSec dark:text-app-darkTextSec">/ <span id="res-total">0</span></span>
                     </div>
-                    
-                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-2xl mx-auto mb-8">
-                        <div class="bg-white dark:bg-app-darkCard border border-app-border dark:border-app-darkBorder p-4 rounded-xl shadow-sm">
-                            <span class="block text-xs uppercase font-bold text-success dark:text-success-dark mb-1">Correct</span>
-                            <span class="text-2xl font-bold" id="res-correct">0</span>
-                        </div>
-                        <div class="bg-white dark:bg-app-darkCard border border-app-border dark:border-app-darkBorder p-4 rounded-xl shadow-sm">
-                            <span class="block text-xs uppercase font-bold text-error dark:text-error-dark mb-1">Wrong</span>
-                            <span class="text-2xl font-bold" id="res-wrong">0</span>
-                        </div>
-                        <div class="bg-white dark:bg-app-darkCard border border-app-border dark:border-app-darkBorder p-4 rounded-xl shadow-sm">
-                            <span class="block text-xs uppercase font-bold text-app-textSec dark:text-app-darkTextSec mb-1">Skipped</span>
-                            <span class="text-2xl font-bold" id="res-skipped">0</span>
-                        </div>
-                        <div class="bg-white dark:bg-app-darkCard border border-app-border dark:border-app-darkBorder p-4 rounded-xl shadow-sm">
-                            <span class="block text-xs uppercase font-bold text-subject dark:text-subject-dark mb-1">Accuracy</span>
-                            <span class="text-2xl font-bold" id="res-accuracy">0%</span>
-                        </div>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-3 max-w-2xl mx-auto mb-6">
+                        <div class="bg-white dark:bg-app-darkCard border border-app-border dark:border-app-darkBorder p-3 rounded shadow-sm"><span class="block text-xs font-bold text-success mb-1 uppercase">Correct</span><span class="text-xl font-bold" id="res-correct">0</span></div>
+                        <div class="bg-white dark:bg-app-darkCard border border-app-border dark:border-app-darkBorder p-3 rounded shadow-sm"><span class="block text-xs font-bold text-error mb-1 uppercase">Wrong</span><span class="text-xl font-bold" id="res-wrong">0</span></div>
+                        <div class="bg-white dark:bg-app-darkCard border border-app-border dark:border-app-darkBorder p-3 rounded shadow-sm"><span class="block text-xs font-bold text-app-textSec mb-1 uppercase">Skipped</span><span class="text-xl font-bold" id="res-skipped">0</span></div>
+                        <div class="bg-white dark:bg-app-darkCard border border-app-border dark:border-app-darkBorder p-3 rounded shadow-sm"><span class="block text-xs font-bold text-subject mb-1 uppercase">Accuracy</span><span class="text-xl font-bold" id="res-accuracy">0%</span></div>
                     </div>
-
-                    <div class="flex flex-wrap justify-center gap-4">
-                        <button onclick="app.resetQuiz()" class="btn-primary"><i class="fa-solid fa-rotate-right mr-2"></i> Retry Quiz</button>
-                        <button onclick="app.navigate('home')" class="btn-secondary"><i class="fa-solid fa-list mr-2"></i> Back to Chapter</button>
+                    <div class="flex flex-wrap justify-center gap-3">
+                        <button onclick="app.resetQuiz()" class="btn-primary py-2"><i class="fa-solid fa-rotate-right mr-2"></i> Retry</button>
+                        <button onclick="app.navigate('notes', app.state.context)" class="btn-secondary py-2">Back to Notes</button>
                     </div>
                 </div>
 
                 <div>
-                    <h3 class="text-h3 font-bold mb-6 flex items-center gap-2"><i class="fa-solid fa-clipboard-check text-brand dark:text-brand-dark"></i> Question Review</h3>
+                    <h3 class="text-h3 font-bold mb-4 flex items-center gap-2"><i class="fa-solid fa-clipboard-check text-brand dark:text-brand-dark"></i> Solutions & Explanation</h3>
                     <div class="space-y-4" id="quiz-review-list"></div>
                 </div>
             </div>
         </div>
 
-        <!-- PAGE: Sitemap -->
-        <div id="sitemap-page" class="page-view">
-            <div class="mb-6 pb-4 border-b border-app-border dark:border-app-darkBorder">
-                <button onclick="app.navigate('home')" class="text-small text-app-textSec dark:text-app-darkTextSec hover:text-brand transition-colors mb-2 flex items-center gap-1 touch-target w-max -ml-2 px-2"><i class="fa-solid fa-arrow-left"></i> Back to Home</button>
-                <h1 class="text-h1 text-brand dark:text-brand-dark">Sitemap</h1>
-            </div>
-            <div class="card p-6 md:p-8 space-y-6 text-body">
-                <ul class="space-y-4 list-none text-app-textMain dark:text-app-darkTextMain">
-                    <li><a href="javascript:void(0)" onclick="app.navigate('home');" class="font-bold text-lg hover:text-brand transition-colors"><i class="fa-solid fa-house text-app-textSec text-sm"></i> Home</a>
-                        <ul class="ml-6 mt-3 border-l-2 border-app-border dark:border-app-darkBorder pl-4 space-y-3">
-                            <li><span class="font-semibold text-subject dark:text-subject-dark">Subjects & Study Materials</span>
-                                <ul class="ml-4 mt-2 space-y-2 list-disc pl-4 text-app-textSec" id="sitemap-subjects-list"></ul>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- PAGE: PRIVACY POLICY -->
-        <div id="privacy-page" class="page-view">
-            <div class="mb-6 pb-4 border-b border-app-border dark:border-app-darkBorder">
-                <button onclick="app.navigate('home')" class="text-small text-app-textSec dark:text-app-darkTextSec hover:text-brand transition-colors mb-2 flex items-center gap-1 touch-target w-max -ml-2 px-2"><i class="fa-solid fa-arrow-left"></i> Back to Home</button>
-                <h1 class="text-h1 text-brand dark:text-brand-dark">Privacy Policy</h1>
-            </div>
-            <div class="card p-6 md:p-8 text-body">
-                <p class="mb-4 font-medium">आमच्या वेबसाइटवर येणाऱ्या वापरकर्त्यांच्या गोपनीयतेचा आम्ही आदर करतो.</p>
-                <h3 class="font-bold mt-4 mb-2">1. आम्ही कोणती माहिती गोळा करू शकतो?</h3>
-                <p class="text-app-textSec mb-2">वेबसाइटच्या काही सुविधांसाठी खालील माहिती आवश्यक असू शकते:</p>
-                <ul class="list-disc pl-5 mb-4 text-app-textSec space-y-1">
-                    <li>Google Login वापरल्यास Google account मधील आवश्यक basic profile information</li>
-                    <li>Quiz मध्ये मिळवलेले गुण आणि performance</li>
-                    <li>Quiz attempt संबंधित माहिती</li>
-                    <li>वापरकर्त्याने स्वतः दिलेली feedback किंवा संपर्क माहिती</li>
-                </ul>
-                <h3 class="font-bold mt-4 mb-2">2. माहितीची सुरक्षा</h3>
-                <p class="text-app-textSec mb-4">वापरकर्त्यांची माहिती सुरक्षित ठेवण्यासाठी योग्य तांत्रिक उपाययोजना करण्याचा प्रयत्न केला जाईल. मात्र इंटरनेटवरील कोणतीही प्रणाली पूर्णपणे सुरक्षित असल्याची हमी देता येत नाही.</p>
-            </div>
-        </div>
-
-        <!-- PAGE: TERMS OF SERVICE -->
-        <div id="terms-page" class="page-view">
-            <div class="mb-6 pb-4 border-b border-app-border dark:border-app-darkBorder">
-                <button onclick="app.navigate('home')" class="text-small text-app-textSec dark:text-app-darkTextSec hover:text-brand transition-colors mb-2 flex items-center gap-1 touch-target w-max -ml-2 px-2"><i class="fa-solid fa-arrow-left"></i> Back to Home</button>
-                <h1 class="text-h1 text-brand dark:text-brand-dark">Terms of Service</h1>
-            </div>
-            <div class="card p-6 md:p-8 text-body">
-                <p class="mb-4 font-medium">या वेबसाइटचा वापर करून आपण खालील अटी मान्य करता.</p>
-                <h3 class="font-bold mt-4 mb-2">1. वेबसाइटचा उद्देश</h3>
-                <p class="text-app-textSec mb-4">ही वेबसाइट स्पर्धा परीक्षांच्या अभ्यासासाठी Notes, One-Liners आणि Quiz उपलब्ध करून देण्यासाठी तयार करण्यात आली आहे.</p>
-                <h3 class="font-bold mt-4 mb-2">2. माहितीची अचूकता</h3>
-                <p class="text-app-textSec mb-4">आम्ही उपलब्ध करून दिलेली माहिती शक्य तितकी अचूक ठेवण्याचा प्रयत्न करतो. तथापि, माहितीमध्ये अनवधानाने चुका असू शकतात. अंतिम तयारी करताना अधिकृत सरकारी स्रोतांशी माहिती पडताळून पाहणे अपेक्षित आहे.</p>
-            </div>
-        </div>
     </main>
 
-    <footer id="footer-section" class="bg-[#181C23] text-gray-300 mt-auto border-t border-gray-800">
-        <div class="max-w-5xl mx-auto px-4 py-8 md:py-12">
+    <!-- FOOTER -->
+    <footer id="footer-section" class="bg-app-footer text-gray-300 mt-auto border-t border-gray-800">
+        <div class="max-w-5xl mx-auto px-4 py-8">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div>
-                    <h3 class="text-xl font-bold text-brand-dark mb-4 flex items-center gap-2"><i class="fa-solid fa-graduation-cap"></i> StudySphere</h3>
-                    <p class="text-sm text-gray-400 mb-4 max-w-xs">Your trusted platform for competitive exam preparation. Master topics with structured notes and interactive quizzes.</p>
-                    <p class="text-sm text-gray-400">© 2026 StudySphere.</p>
+                    <h3 class="text-lg font-bold text-brand-dark mb-3"><i class="fa-solid fa-graduation-cap"></i> StudySphere</h3>
+                    <p class="text-sm text-gray-400 max-w-xs">MPSC Group C Exam Preparation. Structured notes, rapid revision one-liners, and MCQ quizzes.</p>
                 </div>
                 
                 <div>
-                    <h4 class="text-white font-semibold mb-4">Quick Links</h4>
+                    <h4 class="text-white font-semibold mb-3">Quick Links</h4>
                     <ul class="space-y-2 text-sm">
                         <li><a href="javascript:void(0)" onclick="app.navigate('home');" class="hover:text-brand-dark transition-colors">Home</a></li>
                         <li><a href="javascript:void(0)" onclick="app.navigate('about');" class="hover:text-brand-dark transition-colors">About Us</a></li>
@@ -420,474 +427,314 @@
                 </div>
 
                 <div>
-                    <h4 class="text-white font-semibold mb-4">Support & Connect</h4>
+                    <h4 class="text-white font-semibold mb-3">Support & Connect</h4>
                     <div class="flex flex-col items-start gap-3">
-                        <a href="https://t.me/+va0AGcqvCdQzNTI1" target="_blank" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-[#229ED9] hover:bg-[#1e8cc0] text-white px-5 py-2.5 rounded-lg font-medium transition-colors shadow-sm touch-target">
-                            <i class="fa-brands fa-telegram text-xl"></i> Contact on Telegram
+                        <a href="https://t.me/+va0AGcqvCdQzNTI1" target="_blank" class="w-full sm:w-auto text-sm inline-flex items-center justify-center gap-2 bg-[#229ED9] hover:bg-[#1e8cc0] text-white px-4 py-2 rounded font-medium transition-colors">
+                            <i class="fa-brands fa-telegram text-lg"></i> Contact on Telegram
                         </a>
-                        <button onclick="app.openDonateModal()" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-success hover:bg-green-700 dark:bg-success-dark dark:hover:bg-green-500 text-white dark:text-app-darkBg px-5 py-2.5 rounded-lg font-medium transition-colors shadow-sm touch-target">
-                            <i class="fa-solid fa-hand-holding-heart text-xl"></i> Donate Us
+                        <button onclick="app.openDonateModal()" class="w-full sm:w-auto text-sm inline-flex items-center justify-center gap-2 bg-success hover:bg-green-700 text-white px-4 py-2 rounded font-medium transition-colors">
+                            <i class="fa-solid fa-hand-holding-heart text-lg"></i> Donate Us
                         </button>
                     </div>
                 </div>
             </div>
+            <div class="mt-8 pt-4 border-t border-gray-800 text-center text-xs text-gray-500">
+                &copy; 2026 StudySphere. All Rights Reserved.
+            </div>
         </div>
     </footer>
 
-    <!-- DONATE / UPI MODAL -->
-    <div id="modal-donate" class="fixed inset-0 bg-black/60 backdrop-blur-sm z-[100] hidden flex-col items-center justify-center p-4 opacity-0 transition-opacity duration-300">
+    <!-- DONATE MODAL (UPI) -->
+    <div id="modal-donate" class="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 hidden flex-col items-center justify-center p-4 opacity-0 transition-opacity duration-300">
         <div class="bg-app-card dark:bg-app-darkCard rounded-xl shadow-2xl max-w-sm w-full p-6 relative transform scale-95 transition-transform duration-300" id="modal-donate-content">
-            <button onclick="app.closeModal('modal-donate')" class="absolute top-4 right-4 text-gray-400 hover:text-gray-600 dark:hover:text-gray-200"><i class="fa-solid fa-xmark text-xl"></i></button>
+            <button onclick="app.closeModal('modal-donate')" class="absolute top-4 right-4 text-gray-400 hover:text-gray-600 focus:outline-none"><i class="fa-solid fa-xmark text-lg"></i></button>
             <h3 class="text-h3 font-bold mb-2 text-brand dark:text-brand-dark"><i class="fa-solid fa-hand-holding-heart mr-2"></i> Support Our Work</h3>
-            <p class="text-small text-app-textSec dark:text-app-darkTextSec mb-5">Your contribution helps us keep this platform free and updated. Select an amount or enter your own.</p>
+            <p class="text-sm text-app-textSec dark:text-app-darkTextSec mb-5">Your contribution helps us keep this platform updated. Select an amount or enter your own.</p>
             
             <div class="grid grid-cols-3 gap-2 mb-4">
-                <button onclick="app.setDonateAmount(50)" class="py-2 px-3 border-2 border-brand/20 dark:border-brand-dark/20 rounded-lg hover:border-brand dark:hover:border-brand-dark hover:bg-brand/5 font-semibold transition-colors">₹50</button>
-                <button onclick="app.setDonateAmount(100)" class="py-2 px-3 border-2 border-brand/20 dark:border-brand-dark/20 rounded-lg hover:border-brand dark:hover:border-brand-dark hover:bg-brand/5 font-semibold transition-colors">₹100</button>
-                <button onclick="app.setDonateAmount(200)" class="py-2 px-3 border-2 border-brand/20 dark:border-brand-dark/20 rounded-lg hover:border-brand dark:hover:border-brand-dark hover:bg-brand/5 font-semibold transition-colors">₹200</button>
+                <button onclick="app.setDonateAmount(50)" class="py-2 border border-brand/30 dark:border-brand-dark/30 rounded hover:bg-brand/10 font-bold text-sm text-brand dark:text-brand-dark transition-colors">₹50</button>
+                <button onclick="app.setDonateAmount(100)" class="py-2 border border-brand/30 dark:border-brand-dark/30 rounded hover:bg-brand/10 font-bold text-sm text-brand dark:text-brand-dark transition-colors">₹100</button>
+                <button onclick="app.setDonateAmount(200)" class="py-2 border border-brand/30 dark:border-brand-dark/30 rounded hover:bg-brand/10 font-bold text-sm text-brand dark:text-brand-dark transition-colors">₹200</button>
             </div>
             
-            <div class="mb-6 relative">
-                <span class="absolute left-4 top-1/2 -translate-y-1/2 text-app-textSec font-semibold">₹</span>
-                <input type="number" id="donate-custom-amount" placeholder="Custom Amount" min="1" class="w-full pl-8 pr-4 py-3 rounded-lg border border-app-border dark:border-app-darkBorder bg-app-bg dark:bg-app-darkBg focus:outline-none focus:border-brand dark:focus:border-brand-dark transition-colors text-app-textMain dark:text-app-darkTextMain">
+            <div class="mb-5 relative">
+                <span class="absolute left-3 top-1/2 -translate-y-1/2 text-gray-500 font-bold">₹</span>
+                <input type="number" id="donate-custom-amount" placeholder="Custom Amount" min="1" class="w-full pl-8 pr-3 py-2.5 rounded border border-app-border dark:border-app-darkBorder bg-app-bg dark:bg-app-darkBg focus:outline-none focus:border-brand">
             </div>
             
-            <button onclick="app.processUpiDonation()" class="btn-primary w-full shadow-md"><i class="fa-solid fa-qrcode mr-2"></i> Pay Now via UPI</button>
-            <p class="text-[11px] text-center text-app-textSec mt-3 opacity-70">Opens PhonePe, GPay, Paytm, etc. (Mobile Only)</p>
+            <button onclick="app.processUpiDonation()" class="bg-success hover:bg-green-700 text-white w-full py-2.5 rounded font-bold shadow-md flex items-center justify-center gap-2"><i class="fa-solid fa-qrcode"></i> Pay Now via UPI</button>
+            <p class="text-[10px] text-center text-gray-400 mt-3">Opens PhonePe, GPay, Paytm (Mobile Only)</p>
         </div>
     </div>
 
-    <!-- Submit Confirmation Modal -->
-    <div id="modal-submit" class="fixed inset-0 bg-black/60 backdrop-blur-sm z-[100] hidden flex-col items-center justify-center p-4 opacity-0 transition-opacity duration-300">
+    <!-- SUBMIT QUIZ MODAL -->
+    <div id="modal-submit" class="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 hidden flex-col items-center justify-center p-4 opacity-0 transition-opacity duration-300">
         <div class="bg-app-card dark:bg-app-darkCard rounded-xl shadow-2xl max-w-sm w-full p-6 transform scale-95 transition-transform duration-300" id="modal-submit-content">
             <h3 class="text-h3 font-bold mb-2">Submit Quiz?</h3>
-            <div id="modal-submit-msg" class="text-body text-app-textSec dark:text-app-darkTextSec mb-6 bg-gray-50 dark:bg-gray-800 p-3 rounded border border-gray-200 dark:border-gray-700"></div>
+            <div id="modal-submit-msg" class="text-sm text-app-textSec dark:text-app-darkTextSec mb-6 bg-gray-50 dark:bg-gray-800 p-3 rounded border border-gray-200 dark:border-gray-700"></div>
             <div class="flex gap-3 justify-end">
-                <button onclick="app.closeModal('modal-submit')" class="btn-secondary py-2 px-4">Review More</button>
-                <button onclick="app.processSubmit()" class="btn-primary py-2 px-4">Yes, Submit</button>
+                <button onclick="app.closeModal('modal-submit')" class="btn-secondary py-1.5 px-4 text-sm">Review More</button>
+                <button onclick="app.processSubmit()" class="bg-error hover:bg-red-700 text-white py-1.5 px-4 rounded font-medium text-sm">Yes, Submit</button>
             </div>
         </div>
     </div>
     
-    <!-- Message Modal -->
-    <div id="modal-message" class="fixed inset-0 bg-black/50 z-[100] hidden flex-col items-center justify-center p-4 opacity-0 transition-opacity">
+    <!-- MESSAGE MODAL -->
+    <div id="modal-message" class="fixed inset-0 bg-black/50 z-50 hidden flex-col items-center justify-center p-4 opacity-0 transition-opacity">
         <div class="bg-app-card dark:bg-app-darkCard rounded-xl shadow-xl max-w-sm w-full p-6 text-center">
-            <div id="modal-message-icon" class="text-4xl mb-3 text-brand dark:text-brand-dark"><i class="fa-solid fa-circle-info"></i></div>
-            <h3 id="modal-message-title" class="text-h3 font-bold mb-2">Alert</h3>
-            <p id="modal-message-text" class="text-body text-app-textSec dark:text-app-darkTextSec mb-6"></p>
-            <button onclick="app.closeModal('modal-message')" class="btn-primary w-full py-2">OK</button>
+            <div id="modal-message-icon" class="text-3xl mb-3 text-brand dark:text-brand-dark"><i class="fa-solid fa-circle-info"></i></div>
+            <h3 id="modal-message-title" class="text-lg font-bold mb-2">Alert</h3>
+            <p id="modal-message-text" class="text-sm text-app-textSec dark:text-app-darkTextSec mb-5"></p>
+            <button onclick="app.closeModal('modal-message')" class="btn-primary w-full py-2 text-sm">OK</button>
         </div>
     </div>
 
     <script>
-        // ================= FINAL DATA STRUCTURE =================
-        // येथे सर्व १२ विषयांची यादी तयार केली आहे. 
-        // जेव्हा तुम्हाला नवीन चॅप्टर ऍड करायचा असेल, तेव्हा फक्त खालील संबंधित कमेंटच्या खाली कोड पेस्ट करा.
-
+        // =========================================================================
+        // DATA SECTION (All content managed here)
+        // =========================================================================
+        
         const DATA = {
             subjects: [
-                { id: 'sub_pol', name: 'Indian Polity and Civics', icon: 'fa-scale-balanced', color: 'brand', chapters: [
-                    // 👇 Indian Polity चे chapters येथे येतील 👇
-                    { id: 'pol_c1', name: 'Chapter 1: भारतीय संविधानाची निर्मिती व पार्श्वभूमी', qCount: 10 },
-                    { id: 'pol_c2', name: 'Chapter 2: संविधानाची वैशिष्ट्ये, उद्देशिका व मूलभूत रचना', qCount: 10 },
-                    { id: 'pol_c3', name: 'Chapter 3: नागरिकत्व व मूलभूत अधिकार', qCount: 10 }
-                    
-                ]},
-                { id: 'sub_sci', name: 'General Science', icon: 'fa-flask', color: 'blue', chapters: [
-                    // 👇 General Science चे chapters येथे येतील 👇
-                ]},
-                { id: 'sub_cur', name: 'Current Affairs', icon: 'fa-newspaper', color: 'amber', chapters: [
-                    // 👇 Current Affairs चे chapters येथे येतील 👇
-                ]},
-                { id: 'sub_geo', name: 'Geography', icon: 'fa-earth-asia', color: 'green', chapters: [
-                    // 👇 Geography चे chapters येथे येतील 👇
-                ]},
-                { id: 'sub_his', name: 'History', icon: 'fa-monument', color: 'orange', chapters: [
-                    // 👇 History चे chapters येथे येतील 👇
-                ]},
-                { id: 'sub_eco', name: 'Economics', icon: 'fa-chart-line', color: 'indigo', chapters: [
-                    // 👇 Economics चे chapters येथे येतील 👇
-                ]},
-                { id: 'sub_math', name: 'Mental Ability and Arithmetics', icon: 'fa-calculator', color: 'red', chapters: [
-                    // 👇 Mental Ability चे chapters येथे येतील 👇
-                ]},
-                { id: 'sub_mar', name: 'Marathi', icon: 'fa-book-open-reader', color: 'pink', chapters: [
-                    // 👇 Marathi चे chapters येथे येतील 👇
-                ]},
-                { id: 'sub_eng', name: 'English', icon: 'fa-font', color: 'blue', chapters: [
-                    // 👇 English चे chapters येथे येतील 👇
-                ]},
-                { id: 'sub_con', name: 'Indian Constitution and Panchayat Raj', icon: 'fa-landmark-dome', color: 'brand', chapters: [
-                    // 👇 Indian Constitution चे chapters येथे येतील 👇
-                ]},
-                { id: 'sub_it', name: 'Information Technology Computer Basics', icon: 'fa-computer', color: 'gray', chapters: [
-                    // 👇 IT & Computer Basics चे chapters येथे येतील 👇
-                ]},
-                { id: 'sub_rti', name: 'RTI Act (2005), Maharashtra RTS Act (2015)', icon: 'fa-gavel', color: 'amber', chapters: [
-                    // 👇 RTI Act चे chapters येथे येतील 👇
-                ]}
+                { id: 'sub_sci', name: 'General Science', chapters: [] },
+                { id: 'sub_cur', name: 'Current Affairs', chapters: [] },
+                { id: 'sub_geo', name: 'Geography', chapters: [] },
+                { id: 'sub_his', name: 'History', chapters: [] },
+                { id: 'sub_eco', name: 'Economics', chapters: [] },
+                { id: 'sub_math', name: 'Mental Ability and Arithmetics', chapters: [] },
+                { 
+                    id: 'sub_pol', 
+                    name: 'Indian Polity and Civics', 
+                    chapters: [
+                        { id: 'pol_c1', name: 'Chapter 1: भारतीय संविधानाची निर्मिती व पार्श्वभूमी', qCount: 15 }
+                    ] 
+                },
+                { id: 'sub_mar', name: 'Marathi', chapters: [] },
+                { id: 'sub_eng', name: 'English', chapters: [] },
+                { id: 'sub_con', name: 'Indian Constitution and Panchayat Raj', chapters: [] },
+                { id: 'sub_it', name: 'Information Technology Computer Basics', chapters: [] },
+                { id: 'sub_rti', name: 'RTI Act (2005), Maharashtra RTS Act (2015)', chapters: [] }
             ],
             
             notes: {
-                // 👇 Notes चा डेटा येथे येईल 👇
-                // Polity Notes
                 'pol_c1': [
-        { type: 'h3', content: 'ब्रिटिशकालीन घटनात्मक विकास' },
-        { type: 'ul', items: [
-            'Regulating Act, 1773: बंगालचा गव्हर्नर "Governor-General of Bengal" बनला (पहिले: Warren Hastings).',
-            'Pitt\'s India Act, 1784: कंपनीच्या व्यावसायिक आणि राजकीय कार्यात फरक; Board of Control ची स्थापना.',
-            'Charter Act, 1833: केंद्रीकरणाचा शिखरबिंदू. पहिले Governor-General of India "लॉर्ड विल्यम बेंटिक" बनले.',
-            'Government of India Act, 1858: कंपनीची राजवट समाप्त, थेट ब्रिटिश Crown ची राजवट सुरू. पहिले Viceroy "लॉर्ड कॅनिंग" बनले.',
-            'Indian Councils Act, 1909 (Morley-Minto): मुस्लिमांसाठी स्वतंत्र मतदारसंघ (Separate Electorates) सुरू.',
-            'Government of India Act, 1919: प्रांतांमध्ये द्विदल राज्यपद्धती (Dyarchy).',
-            'Government of India Act, 1935: प्रांतीय स्वायत्तता (Provincial Autonomy) सुरू. भारतीय संविधानाचा सर्वात महत्त्वाचा स्रोत.'
-        ]},
-        { type: 'h3', content: 'संविधान सभा व निर्मिती प्रक्रिया' },
-        { type: 'ul', items: [
-            'संविधान सभेची पहिली मागणी 1934 मध्ये M. N. Roy यांनी केली.',
-            'संविधान सभेची स्थापना 1946 च्या "Cabinet Mission Plan" नुसार झाली.',
-            'पहिली बैठक 9 डिसेंबर 1946 रोजी झाली (हंगामी अध्यक्ष: डॉ. सच्चिदानंद सिन्हा).',
-            '11 डिसेंबर 1946 रोजी डॉ. राजेंद्र प्रसाद यांची कायमस्वरूपी अध्यक्ष म्हणून निवड झाली.',
-            '13 डिसेंबर 1946 रोजी पंडित जवाहरलाल नेहरूंनी "उद्दिष्टांचा ठराव" (Objective Resolution) मांडला.',
-            '29 ऑगस्ट 1947 रोजी डॉ. बी. आर. आंबेडकर यांच्या अध्यक्षतेखाली मसुदा समिती (Drafting Committee) स्थापन झाली.'
-        ]},
-        { type: 'p', content: 'संविधान 26 नोव्हेंबर 1949 रोजी स्वीकारण्यात आले आणि 26 जानेवारी 1950 रोजी पूर्णपणे अंमलात आले. संविधान तयार करण्यासाठी 2 वर्षे, 11 महिने आणि 18 दिवस लागले.' }
-    ],
-    
-    'pol_c2': [
-        { type: 'h3', content: 'भारतीय संविधानाची वैशिष्ट्ये' },
-        { type: 'ul', items: [
-            'लिखित व जगातील सर्वात विस्तृत संविधान (मूळ संविधानात 395 कलमे, 22 भाग व 8 अनुसूच्या).',
-            'संघराज्यीय (Federal) व एकात्मिक (Unitary) वैशिष्ट्यांचा समन्वय (K.C. Wheare यांच्या मते "Quasi-Federal").',
-            'संसदीय शासनव्यवस्था: राष्ट्रपती हे नाममात्र प्रमुख (Constitutional Head) तर पंतप्रधान हे वास्तविक प्रमुख (Real Executive) असतात.',
-            'एकेरी नागरिकत्व, स्वतंत्र न्यायव्यवस्था आणि सार्वत्रिक प्रौढ मताधिकार (61व्या दुरुस्तीने वय 21 वरून 18 वर्षे केले).'
-        ]},
-        { type: 'h3', content: 'उद्देशिका (Preamble) आणि मूलभूत रचना' },
-        { type: 'ul', items: [
-            'उद्देशिका हा संविधानाचा भाग आहे (केशवानंद भारती खटला - 1973).',
-            'उद्देशिकेत फक्त एकदाच (42 वी घटनादुरुस्ती, 1976) बदल झाला असून समाजवादी, धर्मनिरपेक्ष व अखंडता हे शब्द जोडले.',
-            'मूलभूत रचना सिद्धांत (Basic Structure Doctrine): संसदेला संविधानात दुरुस्ती करण्याचा अधिकार आहे, पण मूलभूत रचना नष्ट करता येत नाही.'
-        ]},
-        { type: 'h3', content: 'संविधानावरील विविध देशांचा प्रभाव (Borrowed Features)' },
-        { type: 'ul', items: [
-            'ब्रिटन (UK): संसदीय शासनपद्धती, Rule of Law, एकेरी नागरिकत्व.',
-            'अमेरिका (USA): मूलभूत अधिकार (Fundamental Rights), न्यायालयीन पुनर्विलोकन (Judicial Review).',
-            'आयर्लंड: राज्याच्या धोरणाची मार्गदर्शक तत्त्वे (DPSP).',
-            'कॅनडा: प्रबळ केंद्र असलेले संघराज्य.',
-            'रशिया (USSR): मूलभूत कर्तव्ये (Fundamental Duties).'
-        ]}
-    ],
-    
-    'pol_c3': [
-        { type: 'h3', content: 'नागरिकत्व (Citizenship)' },
-        { type: 'p', content: 'संविधानाच्या भाग II मध्ये (कलमे 5-11) नागरिकत्वाची तरतूद आहे. भारताने एकेरी नागरिकत्व स्वीकारले आहे. नागरिकत्व कायदा, 1955 नुसार जन्म, वंश, नोंदणी, देशीयीकरण व प्रदेश विलिनीकरणाने नागरिकत्व मिळते.' },
-        { type: 'h3', content: 'मूलभूत अधिकार (Fundamental Rights)' },
-        { type: 'ul', items: [
-            'भाग III (कलमे 12-35). याला भारतीय संविधानाचा "Magna Carta" म्हटले जाते. हे अधिकार Justiciable आहेत.',
-            'मूळ संविधानात 7 अधिकार होते, पण 44व्या घटनादुरुस्तीने (1978) संपत्तीचा अधिकार (Right to Property) वगळला. आता 6 मूलभूत अधिकार आहेत.'
-        ]},
-        { type: 'h3', content: 'महत्त्वाची कलमे व तरतुदी' },
-        { type: 'ul', items: [
-            'कलम 14: कायद्यासमोर समानता व कायद्याचे समान संरक्षण.',
-            'कलम 17: अस्पृश्यता नष्ट करणे.',
-            'कलम 19: 6 प्रकारची स्वातंत्र्ये (भाषण, सभा, संघटना, संचार, वास्तव्य, व्यवसाय).',
-            'कलम 21: जीवित व व्यक्तिगत स्वातंत्र्य (K.S. Puttaswamy खटल्यानुसार Right to Privacy हा याचाच भाग आहे).',
-            'कलम 21A: 6 ते 14 वर्षे वयोगटातील बालकांसाठी शिक्षणाचा हक्क (86 वी घटनादुरुस्ती, 2002).',
-            'कलम 32: घटनात्मक उपायांचा अधिकार (डॉ. आंबेडकरांच्या मते संविधानाचा "आत्मा"). याअंतर्गत सर्वोच्च न्यायालय 5 प्रकारचे प्राधिलेख (Writs) काढू शकते.'
-        ]}
-    ],
+                    // Topic 1
+                    { type: 'topic-box', title: '🟦 TOPIC 1 — ब्रिटिशकालीन घटनात्मक विकास', content: [
+                        { type: 'p', text: 'भारतीय संविधानाच्या निर्मितीमागे ब्रिटिश काळातील अनेक कायदे व प्रशासकीय सुधारणा महत्त्वाच्या होत्या. दोन प्रमुख टप्पे: **ईस्ट इंडिया कंपनीची राजवट (1773 ते 1858)** आणि **ब्रिटिश राजमुकुटाची राजवट (1858 ते 1947)**.' },
+                        { type: 'h4', text: '① Regulating Act, 1773' },
+                        { type: 'ul', items: ['बंगालचा गव्हर्नर → **Governor-General of Bengal** झाला.', 'पहिले गव्हर्नर-जनरल: **Warren Hastings**', '1774 मध्ये कलकत्ता येथे Supreme Court स्थापन.', 'कंपनीच्या प्रशासनावर ब्रिटिश संसदीय नियंत्रणाची सुरुवात.'] },
+                        { type: 'h4', text: '② Pitt\'s India Act, 1784' },
+                        { type: 'p', text: 'कंपनीच्या व्यावसायिक (Commercial) आणि राजकीय (Political) कार्यांमध्ये स्पष्ट फरक. राजकीय बाबींवर नियंत्रण ठेवण्यासाठी **Board of Control** निर्माण. (येथून **Dual Control** ची सुरुवात).' },
+                        { type: 'h4', text: '③ Charter Act, 1813' },
+                        { type: 'p', text: 'कंपनीची भारतातील व्यापाराची मक्तेदारी समाप्त (फक्त चहा व चीन व्यापार राहिला). शिक्षणासाठी **₹1 लाख** वार्षिक तरतूद.' },
+                        { type: 'h4', text: '④ Charter Act, 1833' },
+                        { type: 'ul', items: ['हा कायदा भारतातील **केंद्रीकरणाचा शिखरबिंदू (Peak of Centralisation)** मानला जातो.', 'बंगालचा गव्हर्नर-जनरल → **Governor-General of India** झाला.', 'पहिले गव्हर्नर-जनरल ऑफ इंडिया: **लॉर्ड विल्यम बेंटिक (Lord William Bentinck)**.'] },
+                        { type: 'h4', text: '⑤ Charter Act, 1853' },
+                        { type: 'p', text: 'गव्हर्नर-जनरलच्या कौन्सिलचे **Executive** आणि **Legislative** (विधीमंडळ) भागांमध्ये प्रथमच विभाजन.' },
+                        { type: 'h4', text: '⑥ Government of India Act, 1858' },
+                        { type: 'ul', items: ['1857 च्या उठावानंतर ईस्ट इंडिया **कंपनीची राजवट समाप्त**; कारभार थेट **British Crown** कडे.', 'गव्हर्नर-जनरलला आता **Viceroy** म्हणूनही ओळखले जाऊ लागले.', 'पहिले व्हाईसरॉय: **लॉर्ड कॅनिंग (Lord Canning)**.', 'Secretary of State for India हे नवीन पद निर्माण.'] },
+                        { type: 'h4', text: '⑦ Indian Councils Acts (1861, 1892, 1909)' },
+                        { type: 'ul', items: [
+                            '**1861:** कायदेमंडळात भारतीयांना सहभागी करण्याची सुरुवात (Portfolio System ला मान्यता).',
+                            '**1892:** सदस्यांना अर्थसंकल्पावर चर्चा करण्याचा व प्रश्न विचारण्याचा मर्यादित अधिकार.',
+                            '**1909 (Morley-Minto):** मुस्लिमांसाठी **स्वतंत्र मतदारसंघ (Separate Electorates)** सुरू करण्यात आले. (S. P. Sinha हे कार्यकारी मंडळात पहिले भारतीय).'
+                        ]},
+                        { type: 'h4', text: '⑧ Government of India Act, 1919 (Montagu-Chelmsford)' },
+                        { type: 'p', text: 'मुख्य वैशिष्ट्य: प्रांतांमध्ये द्विदल राज्यपद्धती (**Dyarchy in Provinces**). केंद्रात द्विगृही कायदेमंडळ (Bicameral Legislature) सुरू.' },
+                        { type: 'h4', text: '⑨ Government of India Act, 1935' },
+                        { type: 'p', text: 'भारतीय संविधानाच्या निर्मितीवर सर्वाधिक प्रभाव टाकणारा कायदा. प्रमुख तरतुदी: प्रांतांतील Dyarchy समाप्त करून **प्रांतीय स्वायत्तता (Provincial Autonomy)** सुरू. RBI, Federal Court आणि All India Federation ची योजना.' },
+                        { type: 'h4', text: '⑩ Indian Independence Act, 1947' },
+                        { type: 'p', text: 'भारतावरील ब्रिटिश राजवट समाप्त. भारत व पाकिस्तान अशी दोन स्वतंत्र **Dominions** निर्माण.' }
+                    ]},
+                    
+                    // Topic 2
+                    { type: 'topic-box', title: '🟦 TOPIC 2 — स्वातंत्र्यपूर्व घटनात्मक मागण्या', content: [
+                        { type: 'ul', items: [
+                            '**M. N. Roy (1934):** भारतीयांसाठी **Constituent Assembly (संविधान सभा)** असावी अशी मागणी सर्वप्रथम मांडली.',
+                            '**August Offer (1940):** भारतीयांना संविधाननिर्मितीच्या प्रक्रियेत सहभागी करण्याच्या मागणीला तत्त्वतः मान्यता.',
+                            '**Cripps Mission (1942):** युद्धानंतर भारताला घटनात्मक स्वायत्तता देण्याची योजना (काँग्रेस व लीगने नाकारली).',
+                            '**Cabinet Mission Plan (1946) ⭐:** याच योजनेच्या शिफारशीनुसार भारताची **संविधान सभा स्थापन** करण्यात आली.',
+                            '**Nehru Report (1928):** मोतीलाल नेहरू यांच्या अध्यक्षतेखाली (Dominion Status व Fundamental Rights ची मागणी).',
+                            '**Karachi Resolution (1931):** सरदार पटेल अध्यक्ष. (Fundamental Rights आणि आर्थिक कार्यक्रमांचा ठराव).'
+                        ]}
+                    ]},
+                    
+                    // Topic 3
+                    { type: 'topic-box', title: '🟦 TOPIC 3 — संविधान सभा (Constituent Assembly)', content: [
+                        { type: 'p', text: 'संविधान सभेची एकूण मूळ सदस्यसंख्या **389** होती (ब्रिटिश प्रांत 296 + संस्थाने 93). फाळणीनंतर भारताच्या संविधान सभेत **299** सदस्य राहिले.' },
+                        { type: 'p', text: 'ही सभा थेट सार्वत्रिक मताधिकारावर निवडलेली नव्हती (Indirect Election व Nomination).' },
+                        { type: 'table', headers: ['घटना', 'दिनांक / व्यक्ती'], rows: [
+                            ['पहिली बैठक', '9 December 1946'],
+                            ['हंगामी अध्यक्ष', 'Dr. Sachchidananda Sinha'],
+                            ['कायमस्वरूपी अध्यक्ष', 'Dr. Rajendra Prasad (11 Dec 1946)'],
+                            ['उपाध्यक्ष', 'H. C. Mookherjee & V. T. Krishnamachari'],
+                            ['घटनात्मक सल्लागार', 'Sir B. N. Rau']
+                        ]}
+                    ]},
+
+                    // Topic 4
+                    { type: 'topic-box', title: '🟦 TOPIC 4 — संविधान निर्मिती प्रक्रिया', content: [
+                        { type: 'h4', text: 'उद्दिष्टांचा ठराव (Objective Resolution)' },
+                        { type: 'ul', items: [
+                            'मांडणारे: **पंडित जवाहरलाल नेहरू**',
+                            'कधी मांडला: **13 December 1946**',
+                            'कधी स्वीकारला: **22 January 1947**',
+                            'महत्त्व: याच ठरावातील मूलभूत मूल्ये नंतर संविधानाच्या Preamble (उद्देशिकेत) मध्ये प्रतिबिंबित झाली.'
+                        ]},
+                        { type: 'h4', text: 'मसुदा समिती (Drafting Committee) ⭐' },
+                        { type: 'p', text: 'स्थापना: **29 August 1947**. अध्यक्ष: **डॉ. बी. आर. आंबेडकर**. (एकूण 7 सदस्य). संविधानाचा मसुदा तयार करण्याची प्रमुख जबाबदारी या समितीवर होती. डॉ. आंबेडकरांना "भारतीय संविधानाचे प्रमुख शिल्पकार" मानले जाते.' },
+                        { type: 'table', headers: ['इतर प्रमुख समित्या', 'अध्यक्ष'], rows: [
+                            ['Union Powers / Union Constitution', 'Jawaharlal Nehru'],
+                            ['Provincial Constitution Committee', 'Sardar Vallabhbhai Patel'],
+                            ['Advisory Comm. on Fundamental Rights', 'Sardar Vallabhbhai Patel']
+                        ]}
+                    ]},
+
+                    // Topic 5
+                    { type: 'topic-box', title: '🟦 TOPIC 5 — संविधान स्वीकार व अंमलबजावणी', content: [
+                        { type: 'ul', items: [
+                            '**संविधान स्वीकार (Adoption):** **26 November 1949**. या दिवशी नागरिकत्व व निवडणुकांसारख्या काही तरतुदी लगेच लागू झाल्या.',
+                            '**पूर्ण अंमलबजावणी (Commencement):** **26 January 1950**. भारत Sovereign Democratic Republic झाला.',
+                            '**26 जानेवारी का?:** 1930 मध्ये याच दिवशी काँग्रेसने "पूर्ण स्वराज्य दिन" साजरा केला होता.',
+                            '**लागलेला कालावधी:** संविधान तयार करण्यासाठी **2 वर्षे, 11 महिने आणि 18 दिवस** लागले.'
+                        ]}
+                    ]},
+                    
+                    // Trap Zone
+                    { type: 'topic-box', title: '🚨 MPSC TRAP ZONE', content: [
+                        { type: 'ul', items: [
+                            '**Trap 1:** Governor-General of Bengal → Warren Hastings | Governor-General of India → William Bentinck.',
+                            '**Trap 2:** First Viceroy → Lord Canning.',
+                            '**Trap 3:** Dyarchy in Provinces → 1919 | Provincial Autonomy → 1935.',
+                            '**Trap 4:** Constituent Assembly demanded by M. N. Roy (1934) BUT established by Cabinet Mission Plan (1946).',
+                            '**Trap 5:** Objective Resolution presented on 13 Dec 1946 BUT adopted on 22 Jan 1947.',
+                            '**Trap 6:** Constitution adopted on 26 Nov 1949 BUT fully commenced on 26 Jan 1950.'
+                        ]}
+                    ]}
+                ]
             },
             
             oneLiners: {
-                // 👇 One-Liners चा डेटा येथे येईल 👇
-                // Polity One Liners
                 'pol_c1': [
-        { q: 'भारताच्या घटनात्मक विकासातील पहिले महत्त्वाचे पाऊल कोणते?', a: '1773 चा Regulating Act' },
-        { q: 'भारताचे पहिले गव्हर्नर-जनरल (Governor-General of India) कोण होते?', a: 'लॉर्ड विल्यम बेंटिक (1833 चा कायदा)' },
-        { q: 'कंपनीची राजवट समाप्त करून ब्रिटिश Crown ची राजवट केव्हा सुरू झाली?', a: '1858 च्या भारत सरकार कायद्याने' },
-        { q: 'मुस्लिमांसाठी स्वतंत्र मतदारसंघ (Separate Electorates) कोणत्या कायद्याने सुरू झाले?', a: '1909 चा मोर्ले-मिंटो कायदा' },
-        { q: 'प्रांतांमध्ये स्वायत्तता (Provincial Autonomy) कोणत्या कायद्याने दिली?', a: '1935 चा भारत सरकार कायदा' },
-        { q: 'संविधान सभेची संकल्पना सर्वप्रथम कोणी मांडली?', a: 'एम. एन. रॉय (1934)' },
-        { q: 'संविधान सभेची स्थापना कोणत्या योजनेनुसार झाली?', a: 'Cabinet Mission Plan (1946)' },
-        { q: 'संविधान सभेचे कायमस्वरूपी अध्यक्ष कोण होते?', a: 'डॉ. राजेंद्र प्रसाद' },
-        { q: 'मसुदा समितीचे (Drafting Committee) अध्यक्ष कोण होते?', a: 'डॉ. बी. आर. आंबेडकर' },
-        { q: 'भारतीय संविधान केव्हा स्वीकारण्यात आले?', a: '26 नोव्हेंबर 1949' }
-    ],
-
-    'pol_c2': [
-        { q: 'मूळ संविधानात किती कलमे, भाग व अनुसूच्या होत्या?', a: '395 कलमे, 22 भाग व 8 अनुसूच्या' },
-        { q: 'भारतीय संघराज्याला "Quasi-Federal" कोणी म्हटले आहे?', a: 'के. सी. व्हीयर (K.C. Wheare)' },
-        { q: 'मतदानाचे वय 21 वरून 18 वर्षे कोणत्या घटनादुरुस्तीने केले?', a: '61 वी घटनादुरुस्ती (1988)' },
-        { q: 'उद्देशिकेत समाजवादी व धर्मनिरपेक्ष शब्द कोणत्या घटनादुरुस्तीने जोडले?', a: '42 वी घटनादुरुस्ती (1976)' },
-        { q: 'उद्देशिका हा संविधानाचा भाग आहे, असा निर्णय कोणत्या खटल्यात दिला?', a: 'केशवानंद भारती खटला (1973)' },
-        { q: 'पक्षांतरबंदी कायद्याशी कोणती अनुसूची संबंधित आहे?', a: '10 वी अनुसूची' },
-        { q: 'मार्गदर्शक तत्त्वे (DPSP) कोणत्या देशाच्या संविधानातून घेतली आहेत?', a: 'आयर्लंड' },
-        { q: 'मूलभूत अधिकारांची (Fundamental Rights) संकल्पना कुठून घेतली आहे?', a: 'अमेरिका (USA)' },
-        { q: 'मूलभूत कर्तव्ये (Fundamental Duties) कोणत्या देशाकडून घेतली आहेत?', a: 'रशिया (USSR)' },
-        { q: 'केंद्र-राज्य अधिकारांचे विभाजन कोणत्या अनुसूचीमध्ये आहे?', a: '7 वी अनुसूची' }
-    ],
-
-    'pol_c3': [
-        { q: 'नागरिकत्वासंबंधी कलमे संविधानाच्या कोणत्या भागात आहेत?', a: 'भाग 2 (कलमे 5 ते 11)' },
-        { q: 'सध्या भारतीय संविधानात किती मूलभूत अधिकार आहेत?', a: '6 मूलभूत अधिकार' },
-        { q: 'कोणत्या घटनादुरुस्तीने संपत्तीचा अधिकार वगळण्यात आला?', a: '44 वी घटनादुरुस्ती (1978)' },
-        { q: 'अस्पृश्यता निर्मूलनाशी संबंधित कलम कोणते?', a: 'कलम 17' },
-        { q: 'कोणत्या कलमाला डॉ. आंबेडकरांनी "संविधानाचा आत्मा" म्हटले आहे?', a: 'कलम 32 (घटनात्मक उपायांचा अधिकार)' },
-        { q: 'Right to Education (शिक्षणाचा अधिकार) कोणत्या कलमात आहे?', a: 'कलम 21A' },
-        { q: 'Right to Privacy हा मूलभूत अधिकार कोणत्या कलमांतर्गत येतो?', a: 'कलम 21' },
-        { q: 'मूलभूत अधिकारांचे रक्षण करण्यासाठी सर्वोच्च न्यायालय किती प्रकारचे प्राधिलेख काढू शकते?', a: '5 प्रकारचे प्राधिलेख (Writs)' },
-        { q: 'परमादेश (Mandamus) या प्राधिलेखाचा अर्थ काय होतो?', a: '"आम्ही आज्ञा देतो" (सार्वजनिक कर्तव्य पार पाडण्याचा आदेश)' },
-        { q: 'कोणत्या आणीबाणीत कलम 19 आपोआप निलंबित होते?', a: 'युद्ध किंवा परकीय आक्रमणामुळे पुकारलेल्या राष्ट्रीय आणीबाणीत (कलम 358)' }
-    ],
+                    { q: 'भारताच्या घटनात्मक विकासावर पहिला महत्त्वाचा ब्रिटिश संसदीय कायदा कोणता?', a: 'Regulating Act, 1773' },
+                    { q: 'कंपनीच्या राजवटीत Dual Control (दुहेरी नियंत्रण) कोणत्या कायद्याने सुरू झाले?', a: 'Pitt\'s India Act, 1784' },
+                    { q: 'भारताचे पहिले गव्हर्नर-जनरल (Governor-General of India) कोण बनले?', a: 'लॉर्ड विल्यम बेंटिक (Charter Act, 1833)' },
+                    { q: 'Crown Rule (राजमुकुटाची राजवट) कोणत्या कायद्याने सुरू झाली?', a: 'Government of India Act, 1858' },
+                    { q: 'भारताचे पहिले व्हाईसरॉय (Viceroy) कोण होते?', a: 'लॉर्ड कॅनिंग' },
+                    { q: 'मुस्लिमांसाठी स्वतंत्र मतदारसंघ (Separate Electorates) कोणी दिले?', a: 'Indian Councils Act, 1909 (Morley-Minto)' },
+                    { q: 'प्रांतांमध्ये द्विदल शासनपद्धती (Dyarchy) कोणत्या कायद्याने लागू झाली?', a: 'Government of India Act, 1919' },
+                    { q: 'प्रांतीय स्वायत्तता (Provincial Autonomy) कोणत्या कायद्याचे वैशिष्ट्य आहे?', a: 'Government of India Act, 1935' },
+                    { q: 'संविधान सभेची सर्वप्रथम मागणी कोणी केली?', a: 'एम. एन. रॉय (M. N. Roy) - 1934' },
+                    { q: 'संविधान सभेची स्थापना कोणत्या योजनेनुसार झाली?', a: 'Cabinet Mission Plan, 1946' },
+                    { q: 'संविधान सभेचे कायमस्वरूपी अध्यक्ष कोण होते?', a: 'डॉ. राजेंद्र प्रसाद' },
+                    { q: 'संविधान सभेचे घटनात्मक सल्लागार (Constitutional Advisor) कोण होते?', a: 'सर बी. एन. राव' },
+                    { q: 'मसुदा समितीचे (Drafting Committee) अध्यक्ष कोण होते?', a: 'डॉ. बी. आर. आंबेडकर' },
+                    { q: 'उद्दिष्टांचा ठराव (Objective Resolution) कोणी आणि कधी मांडला?', a: 'जवाहरलाल नेहरू यांनी 13 डिसेंबर 1946 रोजी' },
+                    { q: 'भारतीय संविधान केव्हा स्वीकारण्यात (Adopted) आले?', a: '26 नोव्हेंबर 1949' }
+                ]
             },
             
             quizzes: {
-                // 👇 Quiz चा डेटा येथे येईल 👇
-                // Polity Quiz
                 'pol_c1': {
-        timeLimit: 300,
-        questions: [
-            {
-                id: 'q1',
-                text: 'भारतात "Board of Control" ची स्थापना खालीलपैकी कोणत्या कायद्याने झाली?',
-                options: ['1773 चा Regulating Act', '1784 चा Pitt\'s India Act', '1833 चा Charter Act', '1858 चा भारत सरकार कायदा'],
-                correctIdx: 1,
-                explanation: 'पिट्स इंडिया ॲक्ट (1784) नुसार कंपनीच्या व्यावसायिक आणि राजकीय कार्यात फरक करून राजकीय बाबींसाठी Board of Control ची स्थापना करण्यात आली.'
-            },
-            {
-                id: 'q2',
-                text: 'मुस्लिमांसाठी स्वतंत्र मतदारसंघाची (Separate Electorates) सुरुवात कोणत्या कायद्याने झाली?',
-                options: ['1892 चा भारतीय परिषद कायदा', '1909 चा मोर्ले-मिंटो कायदा', '1919 चा मोंटेग्यू-चेम्सफोर्ड कायदा', '1935 चा भारत सरकार कायदा'],
-                correctIdx: 1,
-                explanation: '1909 च्या Indian Councils Act (Morley-Minto Reforms) ने भारतात पहिल्यांदाच मुस्लिमांसाठी स्वतंत्र मतदारसंघाची तत्त्वे स्वीकारली.'
-            },
-            {
-                id: 'q3',
-                text: 'भारताचे पहिले "व्हाईसरॉय" (Viceroy) कोण होते?',
-                options: ['लॉर्ड विल्यम बेंटिक', 'वॉरन हेस्टिंग्स', 'लॉर्ड कॅनिंग', 'लॉर्ड माउंटबॅटन'],
-                correctIdx: 2,
-                explanation: '1858 च्या कायद्यानुसार ईस्ट इंडिया कंपनीची राजवट संपली आणि गव्हर्नर-जनरलला व्हाईसरॉय म्हटले जाऊ लागले. लॉर्ड कॅनिंग हे पहिले व्हाईसरॉय होते.'
-            },
-            {
-                id: 'q4',
-                text: 'संविधान सभेची पहिल्यांदा अधिकृत मागणी (1934 मध्ये) कोणी केली?',
-                options: ['महात्मा गांधी', 'एम. एन. रॉय', 'पंडित नेहरू', 'डॉ. बी. आर. आंबेडकर'],
-                correctIdx: 1,
-                explanation: 'भारतीयांसाठी संविधान सभा असावी अशी सर्वप्रथम स्पष्ट मागणी M. N. Roy यांनी 1934 मध्ये मांडली.'
-            },
-            {
-                id: 'q5',
-                text: 'प्रांतांमध्ये द्विदल राज्यपद्धती (Dyarchy in Provinces) कोणत्या कायद्याने लागू केली?',
-                options: ['1909 चा कायदा', '1919 चा कायदा', '1935 चा कायदा', '1947 चा कायदा'],
-                correctIdx: 1,
-                explanation: '1919 च्या मोंटेग्यू-चेम्सफोर्ड कायद्याने प्रांतांमध्ये Reserved आणि Transferred असे दोन भाग करून Dyarchy लागू केली.'
-            },
-            {
-                id: 'q6',
-                text: 'संविधान सभेमध्ये "उद्दिष्टांचा ठराव" (Objective Resolution) कोणी मांडला?',
-                options: ['डॉ. राजेंद्र प्रसाद', 'सर बी. एन. राव', 'पंडित जवाहरलाल नेहरू', 'सरदार वल्लभभाई पटेल'],
-                correctIdx: 2,
-                explanation: 'पंडित जवाहरलाल नेहरूंनी 13 डिसेंबर 1946 रोजी उद्दिष्टांचा ठराव मांडला, जो नंतर भारतीय संविधानाच्या उद्देशिकेचा आधार बनला.'
-            },
-            {
-                id: 'q7',
-                text: 'मसुदा समितीची (Drafting Committee) स्थापना कोणत्या दिवशी झाली?',
-                options: ['13 डिसेंबर 1946', '22 जानेवारी 1947', '29 ऑगस्ट 1947', '26 नोव्हेंबर 1949'],
-                correctIdx: 2,
-                explanation: 'संविधानाचा मसुदा तयार करण्यासाठी 29 ऑगस्ट 1947 रोजी डॉ. बी. आर. आंबेडकर यांच्या अध्यक्षतेखाली मसुदा समिती स्थापन झाली.'
-            },
-            {
-                id: 'q8',
-                text: 'संविधान सभेचे घटनात्मक सल्लागार (Constitutional Advisor) कोण होते?',
-                options: ['सर बी. एन. राव', 'डॉ. सच्चिदानंद सिन्हा', 'एच. सी. मुखर्जी', 'डॉ. बी. आर. आंबेडकर'],
-                correctIdx: 0,
-                explanation: 'संविधानाच्या प्रारूपासाठी कायदेशीर मार्गदर्शन करण्यासाठी सर बी. एन. राव यांची घटनात्मक सल्लागार म्हणून नियुक्ती करण्यात आली होती.'
-            },
-            {
-                id: 'q9',
-                text: 'भारताचे संविधान केव्हा पूर्णपणे अंमलात आले?',
-                options: ['15 ऑगस्ट 1947', '26 नोव्हेंबर 1949', '26 जानेवारी 1950', '26 जानेवारी 1949'],
-                correctIdx: 2,
-                explanation: 'संविधान 26 नोव्हेंबर 1949 रोजी स्वीकारले गेले, परंतु त्याची पूर्ण अंमलबजावणी 26 जानेवारी 1950 रोजी सुरू झाली.'
-            },
-            {
-                id: 'q10',
-                text: 'प्रांतीय स्वायत्तता (Provincial Autonomy) हे खालीलपैकी कोणत्या कायद्याचे वैशिष्ट्य होते?',
-                options: ['1919 चा कायदा', '1935 चा कायदा', '1909 चा कायदा', '1853 चा कायदा'],
-                correctIdx: 1,
-                explanation: '1935 च्या भारत सरकार कायद्याने प्रांतांमधील द्विदल राज्यपद्धती (Dyarchy) समाप्त करून प्रांतीय स्वायत्तता (Provincial Autonomy) बहाल केली.'
-            }
-        ]
-    },
-
-    'pol_c2': {
-        timeLimit: 300,
-        questions: [
-            {
-                id: 'q1',
-                text: 'भारतीय संविधानाला "Quasi-Federal" (अर्ध-संघराज्यीय) असे कोणी म्हटले आहे?',
-                options: ['डॉ. बी. आर. आंबेडकर', 'ग्रॅनव्हिल ऑस्टिन', 'के. सी. व्हीयर', 'आयव्हर जेनिंग्स'],
-                correctIdx: 2,
-                explanation: 'ब्रिटिश घटनातज्ज्ञ K. C. Wheare यांनी भारतीय संघराज्याला Federal in structure and Unitary in spirit असल्यामुळे "Quasi-Federal" म्हटले आहे.'
-            },
-            {
-                id: 'q2',
-                text: 'मतदानाचे वय 21 वरून 18 वर्षे कोणत्या घटनादुरुस्तीने करण्यात आले?',
-                options: ['42 वी दुरुस्ती', '44 वी दुरुस्ती', '61 वी दुरुस्ती', '73 वी दुरुस्ती'],
-                correctIdx: 2,
-                explanation: '1988 च्या 61 व्या घटनादुरुस्ती कायद्याद्वारे मतदानाचे वय 21 वर्षांवरून 18 वर्षे करण्यात आले.'
-            },
-            {
-                id: 'q3',
-                text: 'भारतीय संविधानाच्या उद्देशिकेत (Preamble) "समाजवादी" आणि "धर्मनिरपेक्ष" हे शब्द कधी जोडले गेले?',
-                options: ['1951 (1 ली दुरुस्ती)', '1976 (42 वी दुरुस्ती)', '1978 (44 वी दुरुस्ती)', '1985 (52 वी दुरुस्ती)'],
-                correctIdx: 1,
-                explanation: '42 व्या घटनादुरुस्तीने (1976) उद्देशिकेत समाजवादी, धर्मनिरपेक्ष आणि अखंडता हे तीन नवीन शब्द जोडण्यात आले.'
-            },
-            {
-                id: 'q4',
-                text: 'मूलभूत रचना सिद्धांत (Basic Structure Doctrine) कोणत्या ऐतिहासिक खटल्यातून उदयास आला?',
-                options: ['गोलकनाथ खटला (1967)', 'केशवानंद भारती खटला (1973)', 'मेनका गांधी खटला (1978)', 'मिनर्व्हा मिल्स खटला (1980)'],
-                correctIdx: 1,
-                explanation: '1973 च्या केशवानंद भारती खटल्यात सर्वोच्च न्यायालयाने स्पष्ट केले की संसद संविधानात दुरुस्ती करू शकते, परंतु संविधानाची मूलभूत रचना नष्ट करू शकत नाही.'
-            },
-            {
-                id: 'q5',
-                text: 'राज्याच्या धोरणाची मार्गदर्शक तत्त्वे (DPSP) कोणत्या देशाच्या संविधानातून घेतली आहेत?',
-                options: ['अमेरिका', 'कॅनडा', 'आयर्लंड', 'ऑस्ट्रेलिया'],
-                correctIdx: 2,
-                explanation: 'भारतीय संविधानातील DPSP ची संकल्पना आयर्लंडच्या संविधानातून घेण्यात आली आहे (ज्यांनी ती स्पेनकडून घेतली होती).'
-            },
-            {
-                id: 'q6',
-                text: 'संसदेच्या दोन्ही सभागृहांची "संयुक्त बैठक" (Joint Sitting) ही संकल्पना कुठून घेतली आहे?',
-                options: ['ब्रिटन', 'ऑस्ट्रेलिया', 'दक्षिण आफ्रिका', 'रशिया'],
-                correctIdx: 1,
-                explanation: 'समवर्ती सूची (Concurrent List) आणि संसदेची संयुक्त बैठक या दोन्ही संकल्पना ऑस्ट्रेलियाच्या संविधानातून प्रेरित आहेत.'
-            },
-            {
-                id: 'q7',
-                text: 'कोणत्या अनुसूचीमध्ये 22 मान्यताप्राप्त भाषांचा समावेश आहे?',
-                options: ['7 वी अनुसूची', '8 वी अनुसूची', '9 वी अनुसूची', '10 वी अनुसूची'],
-                correctIdx: 1,
-                explanation: 'भारतीय संविधानाच्या 8 व्या अनुसूचीमध्ये अधिकृत 22 भाषांची नोंद करण्यात आली आहे.'
-            },
-            {
-                id: 'q8',
-                text: 'पक्षांतरबंदी कायद्याशी (Anti-Defection Law) संबंधित अनुसूची कोणती?',
-                options: ['8 वी अनुसूची', '9 वी अनुसूची', '10 वी अनुसूची', '11 वी अनुसूची'],
-                correctIdx: 2,
-                explanation: '52 व्या घटनादुरुस्तीने (1985) संविधानात 10 वी अनुसूची जोडण्यात आली, जी पक्षांतरामुळे सदस्यत्व गमावण्यासंबंधी आहे.'
-            },
-            {
-                id: 'q9',
-                text: 'भारतीय संविधानात "प्रजासत्ताक" (Republic) या शब्दाचा अर्थ काय होतो?',
-                options: ['देशाचा प्रमुख जनतेने प्रत्यक्ष किंवा अप्रत्यक्षपणे निवडलेला असतो.', 'देशात संसदीय शासनप्रणाली आहे.', 'राज्यघटनेचे सर्वोच्चत्व आहे.', 'देशात स्वतंत्र न्यायव्यवस्था आहे.'],
-                correctIdx: 0,
-                explanation: 'Republic (प्रजासत्ताक) म्हणजे राज्याचा प्रमुख (राष्ट्रपती) हा वंशपरंपरेने पदावर न येता, लोकांद्वारे प्रत्यक्ष किंवा अप्रत्यक्षपणे निवडलेला असतो.'
-            },
-            {
-                id: 'q10',
-                text: 'मूलभूत कर्तव्ये (Fundamental Duties) कोणत्या देशाच्या संविधानातून प्रेरित आहेत?',
-                options: ['फ्रान्स', 'जपान', 'रशिया (USSR)', 'कॅनडा'],
-                correctIdx: 2,
-                explanation: 'मूलभूत कर्तव्ये आणि उद्देशिकेतील सामाजिक, आर्थिक व राजकीय न्यायाची संकल्पना तत्कालीन सोव्हिएत युनियन (USSR) कडून घेतली आहे.'
-            }
-        ]
-    },
-
-    'pol_c3': {
-        timeLimit: 300,
-        questions: [
-            {
-                id: 'q1',
-                text: 'नागरिकत्वासंबंधीच्या तरतुदी भारतीय संविधानाच्या कोणत्या भागात आहेत?',
-                options: ['भाग I (कलमे 1-4)', 'भाग II (कलमे 5-11)', 'भाग III (कलमे 12-35)', 'भाग IV (कलमे 36-51)'],
-                correctIdx: 1,
-                explanation: 'संविधानाच्या भाग II मध्ये (कलमे 5-11) नागरिकत्वासंबंधी तरतुदी देण्यात आल्या आहेत.'
-            },
-            {
-                id: 'q2',
-                text: 'भारतीय संविधानाचा "मॅग्ना कार्टा" (Magna Carta) कोणत्या भागाला म्हटले जाते?',
-                options: ['भाग II', 'भाग III', 'भाग IV', 'भाग IV-A'],
-                correctIdx: 1,
-                explanation: 'मूलभूत अधिकारांचा समावेश असलेल्या भाग III ला भारतीय संविधानाचा मॅग्ना कार्टा असे संबोधले जाते.'
-            },
-            {
-                id: 'q3',
-                text: 'कोणत्या घटनादुरुस्तीद्वारे "संपत्तीचा अधिकार" (Right to Property) मूलभूत अधिकारांच्या यादीतून वगळण्यात आला?',
-                options: ['42 वी घटनादुरुस्ती', '44 वी घटनादुरुस्ती', '86 वी घटनादुरुस्ती', '101 वी घटनादुरुस्ती'],
-                correctIdx: 1,
-                explanation: '1978 च्या 44 व्या घटनादुरुस्तीने संपत्तीचा अधिकार मूलभूत अधिकारातून काढून तो कलम 300A अंतर्गत केवळ कायदेशीर अधिकार बनवला.'
-            },
-            {
-                id: 'q4',
-                text: 'घटनेतील कोणते कलम "अस्पृश्यता निर्मूलन" (Abolition of Untouchability) शी संबंधित आहे?',
-                options: ['कलम 15', 'कलम 16', 'कलम 17', 'कलम 18'],
-                correctIdx: 2,
-                explanation: 'कलम 17 नुसार अस्पृश्यता नष्ट करण्यात आली असून, तिचे कोणत्याही स्वरूपातील आचरण कायद्याने दंडनीय ठरवण्यात आले आहे.'
-            },
-            {
-                id: 'q5',
-                text: '86 व्या घटनादुरुस्तीने (2002) कोणते कलम संविधानात नव्याने जोडले?',
-                options: ['कलम 19A', 'कलम 21A', 'कलम 39A', 'कलम 51A'],
-                correctIdx: 1,
-                explanation: '86 व्या घटनादुरुस्तीने 6 ते 14 वर्षे वयोगटातील बालकांसाठी सक्तीच्या व मोफत शिक्षणाचा हक्क (Right to Education) कलम 21A मध्ये जोडला.'
-            },
-            {
-                id: 'q6',
-                text: 'K. S. Puttaswamy खटला (2017) खालीलपैकी कोणत्या अधिकाराशी संबंधित आहे?',
-                options: ['संपत्तीचा अधिकार', 'शिक्षणाचा अधिकार', 'खाजगीपणाचा अधिकार (Right to Privacy)', 'धार्मिक स्वातंत्र्याचा अधिकार'],
-                correctIdx: 2,
-                explanation: 'या खटल्यात सर्वोच्च न्यायालयाने ऐतिहासिक निर्णय देत "खाजगीपणाचा अधिकार" (Right to Privacy) हा कलम 21 अंतर्गत मूलभूत अधिकार असल्याचे मान्य केले.'
-            },
-            {
-                id: 'q7',
-                text: 'डॉ. बी. आर. आंबेडकर यांनी संविधानातील कोणत्या कलमाला "संविधानाचे हृदय व आत्मा" म्हटले आहे?',
-                options: ['कलम 14', 'कलम 21', 'कलम 32', 'कलम 40'],
-                correctIdx: 2,
-                explanation: 'कलम 32 (घटनात्मक उपायांचा अधिकार) मुळे इतर मूलभूत अधिकारांचे रक्षण होते, म्हणून त्याला संविधानाचा आत्मा म्हटले जाते.'
-            },
-            {
-                id: 'q8',
-                text: '"बंदी प्रत्यक्षीकरण" (Habeas Corpus) या प्राधिलेखाचा मुख्य उद्देश काय आहे?',
-                options: ['सार्वजनिक अधिकाऱ्याला कर्तव्य करण्यास भाग पाडणे.', 'कनिष्ठ न्यायालयाचा निर्णय रद्द करणे.', 'एखाद्या व्यक्तीच्या बेकायदेशीर अटकेतून मुक्तता करणे.', 'सार्वजनिक पदावरील व्यक्तीची पात्रता तपासणे.'],
-                correctIdx: 2,
-                explanation: 'Habeas Corpus म्हणजे "To have the body". बेकायदेशीर अटकेत असलेल्या व्यक्तीला न्यायालयासमोर हजर करण्याचा हा आदेश असतो.'
-            },
-            {
-                id: 'q9',
-                text: 'आणीबाणीच्या काळात खालीलपैकी कोणती दोन कलमे राष्ट्रपतींनाही निलंबित (Suspend) करता येत नाहीत?',
-                options: ['कलमे 14 आणि 15', 'कलमे 19 आणि 20', 'कलमे 20 आणि 21', 'कलमे 25 आणि 26'],
-                correctIdx: 2,
-                explanation: '44 व्या घटनादुरुस्तीनुसार, आणीबाणीच्या काळातही राष्ट्रपती कलम 20 (गुन्ह्याबद्दल दोषसिद्धी संरक्षण) आणि कलम 21 (जीविताचा अधिकार) यांचे अंमलबजावणी थांबवू शकत नाहीत.'
-            },
-            {
-                id: 'q10',
-                text: 'उच्च न्यायालयाला (High Court) प्राधिलेख (Writs) जारी करण्याचा अधिकार कोणत्या कलमांतर्गत मिळतो?',
-                options: ['कलम 32', 'कलम 124', 'कलम 226', 'कलम 214'],
-                correctIdx: 2,
-                explanation: 'सर्वोच्च न्यायालय कलम 32 नुसार फक्त मूलभूत अधिकारांसाठी writs जारी करते, तर उच्च न्यायालय कलम 226 नुसार मूलभूत अधिकारांसोबतच इतर कायदेशीर अधिकारांसाठीही writs जारी करू शकते.'
-            }
-        ]
-    }
+                    timeLimit: 450, // 7.5 mins for 15 Qs
+                    questions: [
+                        {
+                            id: 'q1', text: 'बंगालचा गव्हर्नर हा "Governor-General of India" खालीलपैकी कोणत्या कायद्याने बनला?',
+                            options: ['Regulating Act, 1773', 'Pitt\'s India Act, 1784', 'Charter Act, 1833', 'Government of India Act, 1858'],
+                            correctIdx: 2, explanation: '1833 च्या सनदी कायद्याने (Charter Act) बंगालचा गव्हर्नर-जनरल हा भारताचा गव्हर्नर-जनरल बनला. लॉर्ड विल्यम बेंटिक हे पहिले गव्हर्नर-जनरल ऑफ इंडिया होते.'
+                        },
+                        {
+                            id: 'q2', text: 'भारतातील ब्रिटिश प्रशासनात "Dual Control" (राजकीय बाबींसाठी Board of Control) कोणत्या कायद्याने सुरू झाले?',
+                            options: ['1773 चा कायदा', '1784 चा पिट्स इंडिया कायदा', '1853 चा कायदा', '1919 चा कायदा'],
+                            correctIdx: 1, explanation: '1784 च्या पिट्स इंडिया कायद्याने कंपनीच्या व्यावसायिक आणि राजकीय कार्यांमध्ये फरक केला व राजकीय बाबींसाठी Board of Control ची स्थापना केली.'
+                        },
+                        {
+                            id: 'q3', text: 'मुस्लिमांसाठी स्वतंत्र मतदारसंघाची (Separate Electorates) सुरुवात कोणत्या कायद्याने झाली?',
+                            options: ['1892 चा भारतीय परिषद कायदा', '1909 चा मोर्ले-मिंटो कायदा', '1919 चा मोंटेग्यू-चेम्सफोर्ड कायदा', '1935 चा भारत सरकार कायदा'],
+                            correctIdx: 1, explanation: '1909 च्या Indian Councils Act (Morley-Minto Reforms) ने भारतात पहिल्यांदाच स्वतंत्र मतदारसंघाचे तत्त्व स्वीकारले.'
+                        },
+                        {
+                            id: 'q4', text: 'प्रांतांमध्ये "द्विदल राज्यपद्धती" (Dyarchy) खालीलपैकी कोणत्या कायद्याने लागू केली?',
+                            options: ['1909 चा कायदा', '1919 चा कायदा', '1935 चा कायदा', '1947 चा कायदा'],
+                            correctIdx: 1, explanation: '1919 च्या मोंटेग्यू-चेम्सफोर्ड कायद्याने प्रांतांमधील विषय Reserved आणि Transferred असे दोन भागात विभागून Dyarchy लागू केली.'
+                        },
+                        {
+                            id: 'q5', text: 'भारतासाठी संविधान सभा असावी, अशी संकल्पना सर्वप्रथम (1934 मध्ये) कोणी मांडली?',
+                            options: ['महात्मा गांधी', 'एम. एन. रॉय', 'पंडित जवाहरलाल नेहरू', 'डॉ. बी. आर. आंबेडकर'],
+                            correctIdx: 1, explanation: 'भारतीयांसाठी Constituent Assembly असावी अशी सर्वप्रथम स्पष्ट मागणी M. N. Roy यांनी 1934 मध्ये केली.'
+                        },
+                        {
+                            id: 'q6', text: 'संविधान सभेची स्थापना खालीलपैकी कोणत्या योजनेच्या आधारावर करण्यात आली?',
+                            options: ['ऑगस्ट ऑफर (1940)', 'क्रिप्स मिशन (1942)', 'कॅबिनेट मिशन प्लॅन (1946)', 'माउंटबॅटन योजना (1947)'],
+                            correctIdx: 2, explanation: '1946 च्या Cabinet Mission Plan च्या शिफारशीनुसारच भारताची संविधान सभा स्थापन करण्यात आली.'
+                        },
+                        {
+                            id: 'q7', text: 'संविधान सभेची पहिली बैठक कधी पार पडली?',
+                            options: ['9 डिसेंबर 1946', '11 डिसेंबर 1946', '13 डिसेंबर 1946', '26 नोव्हेंबर 1949'],
+                            correctIdx: 0, explanation: 'संविधान सभेची पहिली बैठक 9 डिसेंबर 1946 रोजी पार पडली, ज्याचे हंगामी अध्यक्ष डॉ. सच्चिदानंद सिन्हा होते.'
+                        },
+                        {
+                            id: 'q8', text: 'संविधान सभेचे "कायमस्वरूपी अध्यक्ष" म्हणून कोणाची निवड झाली?',
+                            options: ['डॉ. सच्चिदानंद सिन्हा', 'पंडित जवाहरलाल नेहरू', 'डॉ. राजेंद्र प्रसाद', 'सरदार वल्लभभाई पटेल'],
+                            correctIdx: 2, explanation: '11 डिसेंबर 1946 रोजी डॉ. राजेंद्र प्रसाद यांची संविधान सभेचे कायमस्वरूपी अध्यक्ष म्हणून निवड झाली.'
+                        },
+                        {
+                            id: 'q9', text: 'संविधान सभेचे "घटनात्मक सल्लागार" (Constitutional Advisor) कोण होते?',
+                            options: ['सर बी. एन. राव', 'डॉ. बी. आर. आंबेडकर', 'एच. सी. मुखर्जी', 'व्ही. टी. कृष्णम्माचारी'],
+                            correctIdx: 0, explanation: 'संविधानाच्या प्रारूपासाठी कायदेशीर मार्गदर्शन करण्यासाठी सर बी. एन. राव यांची घटनात्मक सल्लागार म्हणून नियुक्ती झाली होती.'
+                        },
+                        {
+                            id: 'q10', text: 'संविधान सभेमध्ये "उद्दिष्टांचा ठराव" (Objective Resolution) कोणी मांडला?',
+                            options: ['डॉ. राजेंद्र प्रसाद', 'डॉ. बी. आर. आंबेडकर', 'पंडित जवाहरलाल नेहरू', 'सरदार पटेल'],
+                            correctIdx: 2, explanation: 'पंडित जवाहरलाल नेहरूंनी 13 डिसेंबर 1946 रोजी उद्दिष्टांचा ठराव मांडला, जो नंतर भारतीय संविधानाच्या उद्देशिकेचा आधार बनला.'
+                        },
+                        {
+                            id: 'q11', text: '"मसुदा समितीची" (Drafting Committee) स्थापना कोणत्या तारखेला झाली?',
+                            options: ['22 जानेवारी 1947', '15 ऑगस्ट 1947', '29 ऑगस्ट 1947', '26 नोव्हेंबर 1949'],
+                            correctIdx: 2, explanation: 'संविधानाचा मसुदा तयार करण्यासाठी 29 ऑगस्ट 1947 रोजी डॉ. बी. आर. आंबेडकर यांच्या अध्यक्षतेखाली 7 सदस्यीय मसुदा समिती स्थापन झाली.'
+                        },
+                        {
+                            id: 'q12', text: 'भारतीय संविधान केव्हा "स्वीकारण्यात" (Adopted) आले?',
+                            options: ['15 ऑगस्ट 1947', '26 नोव्हेंबर 1949', '26 जानेवारी 1950', '2 ऑक्टोबर 1949'],
+                            correctIdx: 1, explanation: 'संविधान 26 नोव्हेंबर 1949 रोजी स्वीकारले गेले. या दिवशी नागरिकत्व व निवडणुकांसारख्या काही तरतुदी लगेच लागू झाल्या.'
+                        },
+                        {
+                            id: 'q13', text: 'भारतीय संविधानाची पूर्णपणे "अंमलबजावणी" (Commencement) कधी सुरू झाली?',
+                            options: ['26 नोव्हेंबर 1949', '26 जानेवारी 1950', '15 ऑगस्ट 1947', '26 जानेवारी 1930'],
+                            correctIdx: 1, explanation: '26 जानेवारी 1950 रोजी संविधानाची पूर्ण अंमलबजावणी झाली आणि भारत एक सार्वभौम प्रजासत्ताक देश बनला.'
+                        },
+                        {
+                            id: 'q14', text: 'भारतीय संविधान तयार करण्यासाठी एकूण किती कालावधी लागला?',
+                            options: ['2 वर्षे, 11 महिने आणि 18 दिवस', '3 वर्षे पूर्ण', '2 वर्षे, 10 महिने आणि 12 दिवस', '2 वर्षे, 6 महिने आणि 18 दिवस'],
+                            correctIdx: 0, explanation: 'संविधान तयार करण्यासाठी संविधान सभेला 2 वर्षे, 11 महिने आणि 18 दिवस इतका प्रदीर्घ कालावधी लागला.'
+                        },
+                        {
+                            id: 'q15', text: 'खालीलपैकी कोणता कायदा भारतीय संविधानाचा सर्वात मोठा आणि महत्त्वाचा ब्रिटिशकालीन स्रोत मानला जातो?',
+                            options: ['1909 चा कायदा', '1919 चा कायदा', '1935 चा भारत सरकार कायदा', '1947 चा स्वातंत्र्य कायदा'],
+                            correctIdx: 2, explanation: '1935 चा भारत सरकार कायदा (Government of India Act, 1935) हा भारतीय संविधानाच्या निर्मितीवर सर्वाधिक प्रभाव टाकणारा कायदा आहे.'
+                        }
+                    ]
+                }
             }
         };
 
+        // =========================================================================
+        // APPLICATION LOGIC (State & Core Functions)
+        // =========================================================================
+        
         const app = {
             state: {
                 theme: localStorage.getItem('theme') || 'light',
                 fontSize: localStorage.getItem('fontSize') || 'base',
                 currentPage: 'home',
-                context: { subject: null, chapter: null },
-                quiz: { active: false, data: null, answers: [], currentIndex: 0, timer: null, timeRemaining: 0, timeSpent: 0 }
+                context: { subject: null, chapter: null, cId: null },
+                quiz: { active: false, data: null, answers: [], currentIndex: 0, timer: null, timeRemaining: 0 }
             },
 
             init: function() {
                 this.applyTheme(this.state.theme);
                 this.changeFontSize(this.state.fontSize);
                 this.renderSubjects();
-                this.populateSitemapSubjects();
                 this.navigate('home');
             },
 
@@ -901,7 +748,7 @@
                 if(target) {
                     setTimeout(() => {
                         target.style.display = 'block';
-                        void target.offsetWidth;
+                        void target.offsetWidth; // Trigger reflow
                         target.classList.add('active');
                         window.scrollTo({ top: 0, behavior: 'smooth' });
                     }, 50);
@@ -919,20 +766,18 @@
                 }
             },
 
-            scrollToSection: function(id) {
-                const el = document.getElementById(id);
-                if(el) {
-                    const y = el.getBoundingClientRect().top + window.scrollY - 80;
-                    window.scrollTo({ top: y, behavior: 'smooth' });
-                }
-            },
-
             toggleMobileMenu: function() {
                 const menu = document.getElementById('mobile-menu');
+                const backdrop = document.getElementById('mobile-menu-backdrop');
+                
                 if (menu.classList.contains('translate-x-full')) {
                     menu.classList.remove('translate-x-full');
+                    backdrop.classList.remove('hidden');
+                    setTimeout(() => backdrop.classList.remove('opacity-0'), 10);
                 } else {
                     menu.classList.add('translate-x-full');
+                    backdrop.classList.add('opacity-0');
+                    setTimeout(() => backdrop.classList.add('hidden'), 300);
                 }
             },
 
@@ -942,7 +787,6 @@
                 this.state.theme = themeStr;
                 localStorage.setItem('theme', themeStr);
             },
-
             toggleTheme: function() { this.applyTheme(this.state.theme === 'light' ? 'dark' : 'light'); },
 
             changeFontSize: function(size) {
@@ -956,106 +800,61 @@
                 const modal = document.getElementById(id);
                 modal.classList.remove('hidden');
                 modal.classList.add('flex');
-                setTimeout(() => {
-                    modal.classList.remove('opacity-0');
-                    if(id==='modal-submit' || id==='modal-donate') document.getElementById(`${id}-content`).classList.remove('scale-95');
-                }, 10);
+                setTimeout(() => { modal.classList.remove('opacity-0'); if(id==='modal-submit' || id==='modal-donate') document.getElementById(`${id}-content`).classList.remove('scale-95'); }, 10);
             },
-            
             closeModal: function(id) {
                 const modal = document.getElementById(id);
                 modal.classList.add('opacity-0');
                 if(id==='modal-submit' || id==='modal-donate') document.getElementById(`${id}-content`).classList.add('scale-95');
-                setTimeout(() => {
-                    modal.classList.add('hidden');
-                    modal.classList.remove('flex');
-                }, 300);
+                setTimeout(() => { modal.classList.add('hidden'); modal.classList.remove('flex'); }, 300);
             },
             
-            alert: function(title, msg, iconClass = 'fa-circle-info') {
-                document.getElementById('modal-message-title').innerText = title;
-                document.getElementById('modal-message-text').innerText = msg;
-                document.getElementById('modal-message-icon').innerHTML = `<i class="fa-solid ${iconClass}"></i>`;
-                this.showModal('modal-message');
-            },
-
-            openDonateModal: function() {
-                document.getElementById('donate-custom-amount').value = '';
-                this.showModal('modal-donate');
-            },
-            
-            setDonateAmount: function(amt) {
-                document.getElementById('donate-custom-amount').value = amt;
-            },
-            
+            openDonateModal: function() { document.getElementById('donate-custom-amount').value = ''; this.showModal('modal-donate'); },
+            setDonateAmount: function(amt) { document.getElementById('donate-custom-amount').value = amt; },
             processUpiDonation: function() {
                 let amt = document.getElementById('donate-custom-amount').value;
-                if(!amt || isNaN(amt) || amt < 1) {
-                    this.alert('Invalid Amount', 'Please enter a valid amount to proceed with the donation.', 'fa-circle-exclamation');
-                    return; 
-                }
-                
-                const upiId = 'vikram.joshi9089@oksbi';
-                const name = 'StudySphere';
-                const upiUrl = `upi://pay?pa=${upiId}&pn=${name}&am=${amt}&cu=INR`;
-                
-                window.location.href = upiUrl; 
+                if(!amt || isNaN(amt) || amt < 1) return;
+                window.location.href = `upi://pay?pa=vikram.joshi9089@oksbi&pn=StudySphere&am=${amt}&cu=INR`; 
                 this.closeModal('modal-donate');
             },
 
-            // --- RENDER LOGIC ---
+            // --- RENDER LOGIC --- //
+            
             renderSubjects: function() {
                 const container = document.getElementById('subject-list-container');
                 container.innerHTML = '';
                 
                 DATA.subjects.forEach((subj, idx) => {
                     let chaptersHtml = '';
-                    
                     if(subj.chapters.length === 0) {
                         chaptersHtml = `<div class="p-4 text-app-textSec italic text-sm">Content coming soon...</div>`;
                     } else {
                         chaptersHtml = subj.chapters.map(chap => `
-                            <div class="p-3 md:p-4 hover:bg-white dark:hover:bg-app-darkCard rounded-lg transition-colors border-b border-gray-100 dark:border-gray-800 last:border-0 group">
-                                <div class="flex flex-col xl:flex-row xl:items-center justify-between gap-3">
-                                    <span class="font-medium text-body group-hover:text-brand dark:group-hover:text-brand-dark transition-colors">${chap.name}</span>
-                                    <div class="flex flex-wrap items-center gap-2 w-full xl:w-auto">
-                                        <button onclick="app.navigate('notes', {subject: '${subj.name}', chapter: '${chap.name}', cId: '${chap.id}'})" class="flex-1 xl:flex-none text-small bg-success/10 text-success px-3 py-2 rounded-md hover:bg-success hover:text-white transition-colors touch-target text-center whitespace-nowrap">📖 Notes</button>
-                                        <button onclick="app.navigate('one-liners', {subject: '${subj.name}', chapter: '${chap.name}', cId: '${chap.id}'})" class="flex-1 xl:flex-none text-small bg-brand/10 text-brand px-3 py-2 rounded-md hover:bg-brand hover:text-white transition-colors touch-target text-center whitespace-nowrap">📝 One-Liners</button>
-                                        <button onclick="app.navigate('quiz', {subject: '${subj.name}', chapter: '${chap.name}', cId: '${chap.id}'})" class="flex-1 xl:flex-none text-small bg-subject/10 text-subject px-3 py-2 rounded-md hover:bg-subject hover:text-white transition-colors touch-target text-center whitespace-nowrap">🧠 Quiz</button>
+                            <div class="p-3 md:p-4 hover:bg-gray-50 dark:hover:bg-gray-800/50 transition-colors border-b border-gray-100 dark:border-gray-800 last:border-0">
+                                <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-3">
+                                    <span class="font-medium text-body">${chap.name}</span>
+                                    <div class="flex items-center gap-2">
+                                        <button onclick="app.navigate('notes', {subject: '${subj.name}', chapter: '${chap.name}', cId: '${chap.id}'})" class="text-xs font-bold uppercase tracking-wider bg-success/10 text-success px-3 py-2 rounded hover:bg-success hover:text-white transition-colors">Notes</button>
+                                        <button onclick="app.navigate('one-liners', {subject: '${subj.name}', chapter: '${chap.name}', cId: '${chap.id}'})" class="text-xs font-bold uppercase tracking-wider bg-warning/10 text-warning px-3 py-2 rounded hover:bg-warning hover:text-white transition-colors">One-Liners</button>
+                                        <button onclick="app.navigate('quiz', {subject: '${subj.name}', chapter: '${chap.name}', cId: '${chap.id}'})" class="text-xs font-bold uppercase tracking-wider bg-subject/10 text-subject px-3 py-2 rounded hover:bg-subject hover:text-white transition-colors">Quiz</button>
                                     </div>
                                 </div>
                             </div>
                         `).join('');
                     }
 
-                    // FIXED: Subject Name on left, Dropdown Icon on Right
                     const html = `
-                        <div class="card overflow-hidden transition-all duration-300 mb-4">
-                            <button class="w-full p-4 flex items-center justify-between bg-app-card dark:bg-app-darkCard hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors touch-target outline-none" onclick="app.toggleAccordion('subj-${idx}')">
-                                <div class="flex items-center gap-4 flex-1 text-left">
-                                    <div class="w-12 h-12 shrink-0 rounded-full bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 flex items-center justify-center text-xl"><i class="fa-solid ${subj.icon}"></i></div>
-                                    <span class="text-h3 font-semibold flex-1">${subj.name}</span>
-                                </div>
-                                <div class="text-app-textSec dark:text-app-darkTextSec transform transition-transform duration-300 shrink-0 ml-4 text-lg" id="icon-subj-${idx}"><i class="fa-solid fa-chevron-down"></i></div>
+                        <div class="card overflow-hidden transition-all duration-300">
+                            <button class="w-full p-4 flex items-center justify-between bg-app-card dark:bg-app-darkCard hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors focus:outline-none" onclick="app.toggleAccordion('subj-${idx}')">
+                                <span class="text-h3 font-bold text-left text-brand dark:text-brand-dark">${subj.name}</span>
+                                <span class="text-app-textSec dark:text-app-darkTextSec transform transition-transform duration-300 text-sm" id="icon-subj-${idx}"><i class="fa-solid fa-chevron-down"></i></span>
                             </button>
-                            <div id="content-subj-${idx}" class="hidden border-t border-app-border dark:border-app-darkBorder bg-[#fdfcfb] dark:bg-[#14171c]">
-                                <div class="p-2 space-y-1">
-                                    ${chaptersHtml}
-                                </div>
+                            <div id="content-subj-${idx}" class="hidden border-t border-app-border dark:border-app-darkBorder bg-white dark:bg-[#14171c]">
+                                ${chaptersHtml}
                             </div>
                         </div>`;
                     container.insertAdjacentHTML('beforeend', html);
                 });
-            },
-
-            populateSitemapSubjects: function() {
-                 const container = document.getElementById('sitemap-subjects-list');
-                 if(!container) return;
-                 container.innerHTML = '';
-                 DATA.subjects.forEach(subj => {
-                     const html = `<li>${subj.name}</li>`;
-                     container.insertAdjacentHTML('beforeend', html);
-                 });
             },
 
             toggleAccordion: function(id) {
@@ -1063,6 +862,11 @@
                 const icon = document.getElementById(`icon-${id}`);
                 if(content.classList.contains('hidden')) { content.classList.remove('hidden'); icon.style.transform = 'rotate(180deg)'; } 
                 else { content.classList.add('hidden'); icon.style.transform = 'rotate(0deg)'; }
+            },
+            
+            // Helper function to format bold text denoted by **text**
+            formatText: function(str) {
+                return str.replace(/\*\*(.*?)\*\*/g, '<strong class="font-bold text-brand dark:text-brand-dark">$1</strong>');
             },
 
             renderNotes: function() {
@@ -1074,17 +878,28 @@
                 
                 let data = DATA.notes[ctx.cId] || [];
                 if(data.length === 0) {
-                    container.innerHTML = '<p class="text-app-textSec italic p-4">Notes for this chapter will be updated soon.</p>';
+                    container.innerHTML = '<p class="text-app-textSec italic p-4 card">Notes for this chapter will be updated soon.</p>';
                     return;
                 }
 
                 data.forEach(block => {
                     let html = '';
-                    if (block.type === 'h3') html = `<h3 class="text-h3 font-semibold text-brand dark:text-brand-dark mt-8 mb-4 first:mt-0">${block.content}</h3>`;
-                    else if (block.type === 'p') html = `<p class="mb-4 text-app-textMain dark:text-app-darkTextMain">${block.content}</p>`;
-                    else if (block.type === 'ul') {
-                        const items = block.items.map(item => `<li class="mb-2 pl-3 relative before:content-[''] before:absolute before:left-0 before:top-2 before:w-1.5 before:h-1.5 before:bg-brand dark:before:bg-brand-dark before:rounded-full">${item}</li>`).join('');
-                        html = `<ul class="list-none mb-6 space-y-1 text-app-textMain dark:text-app-darkTextMain ml-2">${items}</ul>`;
+                    if (block.type === 'topic-box') {
+                        html = `<div class="topic-box"><h3 class="text-h3 font-bold text-brand dark:text-brand-dark mb-4 border-b border-app-border dark:border-app-darkBorder pb-2">${block.title}</h3>`;
+                        block.content.forEach(sub => {
+                            if (sub.type === 'p') html += `<p class="mb-4">${app.formatText(sub.text)}</p>`;
+                            else if (sub.type === 'h4') html += `<h4 class="text-base font-bold mt-4 mb-2 text-app-textMain dark:text-app-darkTextMain">${app.formatText(sub.text)}</h4>`;
+                            else if (sub.type === 'ul') {
+                                html += `<ul class="list-none space-y-2 mb-4">`;
+                                sub.items.forEach(item => html += `<li class="pl-4 relative before:content-[''] before:absolute before:left-0 before:top-2 before:w-1.5 before:h-1.5 before:bg-brand dark:before:bg-brand-dark before:rounded-full">${app.formatText(item)}</li>`);
+                                html += `</ul>`;
+                            } else if (sub.type === 'table') {
+                                let ths = sub.headers.map(h => `<th>${h}</th>`).join('');
+                                let trs = sub.rows.map(r => `<tr>${r.map(d => `<td>${app.formatText(d)}</td>`).join('')}</tr>`).join('');
+                                html += `<div class="overflow-x-auto my-5"><table class="w-full text-sm text-left mpsc-table"><thead><tr>${ths}</tr></thead><tbody>${trs}</tbody></table></div>`;
+                            }
+                        });
+                        html += `</div>`;
                     }
                     container.insertAdjacentHTML('beforeend', html);
                 });
@@ -1099,18 +914,27 @@
                 
                 let data = DATA.oneLiners[ctx.cId] || [];
                 if(data.length === 0) {
-                    container.innerHTML = '<p class="text-app-textSec italic p-4">One-liners will be updated soon.</p>';
+                    container.innerHTML = '<p class="text-app-textSec italic p-4 card">One-liners will be updated soon.</p>';
                     return;
                 }
 
                 data.forEach((item, index) => {
                     const numStr = (index + 1).toString().padStart(2, '0');
-                    const html = `<div class="card p-4 md:p-5 flex gap-4 transition-colors hover:border-brand/30 dark:hover:border-brand-dark/30"><div class="shrink-0 pt-1"><span class="bg-brand/10 dark:bg-brand-dark/10 text-brand dark:text-brand-dark font-bold text-sm px-2 py-1 rounded">${numStr}</span></div><div class="space-y-2"><p class="text-body font-semibold text-app-textMain dark:text-app-darkTextMain">${item.q}</p><p class="text-body text-success dark:text-success-dark font-medium">${item.a}</p></div></div>`;
+                    const html = `
+                        <div class="card p-4 md:p-5 flex gap-4 transition-colors hover:border-brand/30 dark:hover:border-brand-dark/30">
+                            <div class="shrink-0 pt-0.5"><span class="bg-brand/10 dark:bg-brand-dark/10 text-brand dark:text-brand-dark font-bold text-xs px-2 py-1 rounded">${numStr}</span></div>
+                            <div class="space-y-1.5">
+                                <p class="text-body font-bold text-app-textMain dark:text-app-darkTextMain">${item.q}</p>
+                                <p class="text-body text-success dark:text-success-dark font-medium">${item.a}</p>
+                            </div>
+                        </div>`;
                     container.insertAdjacentHTML('beforeend', html);
                 });
             },
 
             startQuizFromOneLiner: function() { this.navigate('quiz', this.state.context); },
+
+            // --- QUIZ LOGIC --- //
 
             setupQuizIntro: function() {
                 const ctx = this.state.context;
@@ -1124,7 +948,6 @@
                 document.getElementById('quiz-timer-container').classList.add('hidden');
                 
                 let quizData = DATA.quizzes[ctx.cId] || null;
-                
                 if(!quizData || !quizData.questions || quizData.questions.length === 0) {
                      document.getElementById('intro-q-count').innerText = "0";
                      document.getElementById('intro-time').innerText = "0";
@@ -1140,10 +963,7 @@
             },
 
             startQuiz: function() {
-                if(this.state.quiz.data.questions.length === 0) { 
-                    this.alert("Coming Soon", "Questions for this chapter are not uploaded yet."); 
-                    return; 
-                }
+                if(this.state.quiz.data.questions.length === 0) return;
                 
                 document.getElementById('quiz-intro-state').classList.add('hidden');
                 document.getElementById('quiz-active-state').classList.remove('hidden');
@@ -1158,7 +978,7 @@
                 this.renderCurrentQuestion();
                 this.startTimer();
                 
-                if(window.innerWidth < 1024) window.scrollTo({top: document.getElementById('quiz-active-state').offsetTop - 80, behavior: 'smooth'});
+                if(window.innerWidth < 1024) window.scrollTo({top: document.getElementById('quiz-active-state').offsetTop - 60, behavior: 'smooth'});
             },
 
             renderCurrentQuestion: function() {
@@ -1169,31 +989,44 @@
                 const question = qState.data.questions[idx];
 
                 document.getElementById('quiz-q-number').innerText = `Question ${idx + 1} of ${total}`;
-                let currentScore = 0;
-                qState.answers.forEach((ans, i) => { if (ans !== null && ans === qState.data.questions[i].correctIdx) currentScore++; });
-                document.getElementById('quiz-current-score').innerText = currentScore;
                 document.getElementById('quiz-question-text').innerText = question.text;
                 
                 const optionsContainer = document.getElementById('quiz-options');
                 optionsContainer.innerHTML = '';
+                
                 question.options.forEach((opt, optIdx) => {
                     const isSelected = qState.answers[idx] === optIdx;
                     const id = `opt-${idx}-${optIdx}`;
-                    const html = `<label for="${id}" class="block relative group cursor-pointer"><input type="radio" name="question${idx}" id="${id}" value="${optIdx}" class="peer sr-only" ${isSelected ? 'checked' : ''} onchange="app.selectOption(${idx}, ${optIdx})"><div class="w-full p-4 md:p-5 rounded-lg border-2 border-app-border dark:border-app-darkBorder bg-app-card dark:bg-app-darkCard text-body text-app-textMain dark:text-app-darkTextMain transition-all peer-checked:border-subject peer-checked:bg-subject/5 dark:peer-checked:border-subject-dark dark:peer-checked:bg-subject-dark/10 hover:border-gray-300 dark:hover:border-gray-600 peer-checked:hover:border-subject flex items-center gap-3"><div class="w-6 h-6 shrink-0 rounded-full border-2 border-gray-300 dark:border-gray-600 flex items-center justify-center peer-checked:border-subject peer-checked:bg-subject dark:peer-checked:border-subject-dark dark:peer-checked:bg-subject-dark transition-colors"><div class="w-2.5 h-2.5 rounded-full bg-white opacity-0 peer-checked:opacity-100"></div></div><span class="flex-1">${opt}</span></div></label>`;
+                    
+                    // Added intense highlight for peer-checked (selected option)
+                    const html = `
+                        <label for="${id}" class="block relative group cursor-pointer">
+                            <input type="radio" name="question${idx}" id="${id}" value="${optIdx}" class="peer sr-only" ${isSelected ? 'checked' : ''} onchange="app.selectOption(${idx}, ${optIdx})">
+                            <div class="w-full p-4 rounded-lg border-2 border-app-border dark:border-app-darkBorder bg-app-card dark:bg-app-darkCard text-app-textMain dark:text-app-darkTextMain transition-all 
+                                peer-checked:border-brand peer-checked:bg-brand/10 dark:peer-checked:border-brand-dark dark:peer-checked:bg-brand-dark/10 
+                                peer-checked:shadow-sm hover:border-gray-300 dark:hover:border-gray-600 flex items-center gap-3">
+                                
+                                <div class="w-5 h-5 shrink-0 rounded-full border-2 border-gray-400 dark:border-gray-500 flex items-center justify-center 
+                                    peer-checked:border-brand peer-checked:bg-brand dark:peer-checked:border-brand-dark dark:peer-checked:bg-brand-dark transition-colors">
+                                    <div class="w-2 h-2 rounded-full bg-white opacity-0 peer-checked:opacity-100"></div>
+                                </div>
+                                <span class="flex-1 font-medium peer-checked:text-brand dark:peer-checked:text-brand-dark">${opt}</span>
+                            </div>
+                        </label>`;
                     optionsContainer.insertAdjacentHTML('beforeend', html);
                 });
 
                 document.getElementById('btn-prev-q').disabled = (idx === 0);
                 const nextBtn = document.getElementById('btn-next-q');
                 if (idx === total - 1) {
-                    nextBtn.innerHTML = `Submit <i class="fa-solid fa-check"></i>`;
-                    nextBtn.classList.remove('btn-primary');
-                    nextBtn.classList.add('bg-success', 'hover:bg-green-700', 'text-white', 'border-0');
+                    nextBtn.innerHTML = `Submit`;
+                    nextBtn.classList.replace('btn-primary', 'bg-error');
+                    nextBtn.classList.add('hover:bg-red-700', 'text-white');
                     nextBtn.onclick = () => this.confirmSubmit();
                 } else {
-                    nextBtn.innerHTML = `Next <i class="fa-solid fa-arrow-right"></i>`;
+                    nextBtn.innerHTML = `Next <i class="fa-solid fa-arrow-right text-sm"></i>`;
                     nextBtn.classList.add('btn-primary');
-                    nextBtn.classList.remove('bg-success', 'hover:bg-green-700', 'text-white', 'border-0');
+                    nextBtn.classList.remove('bg-error', 'hover:bg-red-700', 'text-white');
                     nextBtn.onclick = () => this.nextQuestion();
                 }
                 this.updateDashboardVisuals();
@@ -1211,7 +1044,7 @@
                 for(let i=0; i<total; i++) {
                     const btn = document.createElement('button');
                     btn.id = `dash-btn-${i}`;
-                    btn.className = `w-10 h-10 rounded text-sm font-medium flex items-center justify-center transition-colors border bg-white dark:bg-app-darkCard border-gray-300 dark:border-gray-600 text-app-textMain dark:text-app-darkTextMain touch-target`;
+                    btn.className = `w-9 h-9 rounded text-sm font-bold flex items-center justify-center transition-colors border bg-white dark:bg-app-darkCard border-gray-300 dark:border-gray-600 text-app-textSec dark:text-app-darkTextSec`;
                     btn.innerText = i + 1;
                     btn.onclick = () => this.jumpToQuestion(i);
                     grid.appendChild(btn);
@@ -1222,11 +1055,11 @@
                      if(!document.getElementById('mobile-dash-injected')) {
                          const mobileWrapper = document.createElement('div');
                          mobileWrapper.id = 'mobile-dash-injected';
-                         mobileWrapper.className = 'mt-8';
+                         mobileWrapper.className = 'mt-6';
                          mobileWrapper.appendChild(dashCard.cloneNode(true));
                          const clonedBtns = mobileWrapper.querySelectorAll('button[id^="dash-btn-"]');
                          clonedBtns.forEach((b, i) => b.onclick = () => this.jumpToQuestion(i));
-                         const clonedSubmit = mobileWrapper.querySelector('#btn-dashboard-submit');
+                         const clonedSubmit = mobileWrapper.querySelector('button');
                          if(clonedSubmit) clonedSubmit.onclick = () => this.confirmSubmit();
                          activeState.appendChild(mobileWrapper);
                          document.getElementById('quiz-dashboard-container').classList.add('hidden');
@@ -1239,10 +1072,10 @@
                 const total = qState.data.questions.length;
                 const updateButton = (btn, i) => {
                     if(!btn) return;
-                    btn.className = 'w-10 h-10 rounded text-sm font-medium flex items-center justify-center transition-all border touch-target ';
-                    if (qState.currentIndex === i) btn.className += 'bg-subject text-white border-subject ring-2 ring-subject/30 dark:ring-subject-dark/30 z-10 scale-110 shadow-md';
-                    else if (qState.answers[i] !== null) btn.className += 'bg-success dark:bg-success-dark text-white border-transparent';
-                    else btn.className += 'bg-white dark:bg-app-darkCard text-app-textSec dark:text-app-darkTextSec border-gray-300 dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-800';
+                    btn.className = 'w-9 h-9 rounded text-sm font-bold flex items-center justify-center transition-all border ';
+                    if (qState.currentIndex === i) btn.className += 'bg-brand text-white border-brand scale-110 shadow';
+                    else if (qState.answers[i] !== null) btn.className += 'bg-success text-white border-success';
+                    else btn.className += 'bg-white dark:bg-app-darkCard text-app-textSec dark:text-app-darkTextSec border-gray-300 dark:border-gray-600';
                 };
                 for(let i=0; i<total; i++) {
                     updateButton(document.querySelector(`#quiz-dashboard-container #dash-btn-${i}`), i);
@@ -1254,14 +1087,14 @@
                 clearInterval(this.state.quiz.timer);
                 this.updateTimerDisplay();
                 const container = document.getElementById('quiz-timer-container');
-                container.classList.remove('animate-pulse', 'border-error', 'text-error');
+                container.classList.remove('text-error', 'border-error', 'animate-pulse');
+                
                 this.state.quiz.timer = setInterval(() => {
                     this.state.quiz.timeRemaining--;
-                    this.state.quiz.timeSpent++;
                     this.updateTimerDisplay();
+                    
                     if (this.state.quiz.timeRemaining <= 30 && this.state.quiz.timeRemaining > 0) {
-                        container.classList.add('animate-pulse', 'border-error', 'text-error');
-                        container.classList.remove('border-brand/20');
+                        container.classList.add('text-error', 'border-error', 'animate-pulse');
                     }
                     if (this.state.quiz.timeRemaining <= 0) { clearInterval(this.state.quiz.timer); this.processSubmit(true); }
                 }, 1000);
@@ -1286,7 +1119,7 @@
                 let answered = 0;
                 this.state.quiz.answers.forEach(a => { if(a !== null) answered++; });
                 let msg = `You have answered <strong>${answered}</strong> of <strong>${total}</strong> questions.`;
-                if(answered < total) msg += `<br><span class="text-warning dark:text-warning-dark mt-2 block"><i class="fa-solid fa-triangle-exclamation"></i> ${total - answered} questions are unanswered.</span>`;
+                if(answered < total) msg += `<br><span class="text-error mt-2 block font-medium">Warning: ${total - answered} questions are unanswered!</span>`;
                 document.getElementById('modal-submit-msg').innerHTML = msg;
                 this.showModal('modal-submit');
             },
@@ -1312,14 +1145,13 @@
                 });
 
                 const accuracy = total > 0 ? Math.round(((correct) / (total - skipped)) * 100) || 0 : 0;
-                const finalAccuracy = skipped === total ? 0 : accuracy;
 
                 document.getElementById('res-score').innerText = correct;
                 document.getElementById('res-total').innerText = total;
                 document.getElementById('res-correct').innerText = correct;
                 document.getElementById('res-wrong').innerText = wrong;
                 document.getElementById('res-skipped').innerText = skipped;
-                document.getElementById('res-accuracy').innerText = finalAccuracy + '%';
+                document.getElementById('res-accuracy').innerText = (skipped === total ? 0 : accuracy) + '%';
 
                 this.renderDetailedReview();
                 window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -1334,36 +1166,36 @@
                     const userAnsIdx = this.state.quiz.answers[i];
                     const isSkipped = userAnsIdx === null;
                     const isCorrect = userAnsIdx === q.correctIdx;
-                    let statusColor, statusIcon, statusLabel, userAnsText, correctAnsText = q.options[q.correctIdx];
                     
-                    if (isSkipped) { statusColor = 'gray'; statusIcon = 'fa-circle-minus'; statusLabel = 'Not Answered'; userAnsText = '-'; }
-                    else if (isCorrect) { statusColor = 'success'; statusIcon = 'fa-circle-check'; statusLabel = 'Correct'; userAnsText = q.options[userAnsIdx]; }
-                    else { statusColor = 'error'; statusIcon = 'fa-circle-xmark'; statusLabel = 'Incorrect'; userAnsText = q.options[userAnsIdx]; }
-
-                    const bgClass = statusColor === 'gray' ? 'bg-gray-100 dark:bg-gray-800' : `bg-${statusColor}/10 dark:bg-${statusColor}-dark/10`;
-                    const borderClass = statusColor === 'gray' ? 'border-gray-200 dark:border-gray-700' : `border-${statusColor}/20 dark:border-${statusColor}-dark/20`;
-                    const textClass = statusColor === 'gray' ? 'text-app-textSec dark:text-app-darkTextSec' : `text-${statusColor} dark:text-${statusColor}-dark`;
+                    let statusColor, statusIcon, statusLabel, userAnsText = '-';
+                    const correctAnsText = q.options[q.correctIdx];
+                    
+                    if (isSkipped) { statusColor = 'gray'; statusIcon = 'fa-minus'; statusLabel = 'Skipped'; }
+                    else if (isCorrect) { statusColor = 'success'; statusIcon = 'fa-check'; statusLabel = 'Correct'; userAnsText = q.options[userAnsIdx]; }
+                    else { statusColor = 'error'; statusIcon = 'fa-xmark'; statusLabel = 'Wrong'; userAnsText = q.options[userAnsIdx]; }
 
                     const html = `
-                        <div class="card p-4 md:p-6 border-l-4 border-l-${statusColor === 'gray' ? 'gray-400' : (statusColor === 'success' ? 'success' : 'error')}">
+                        <div class="card p-5 border-l-4 ${isCorrect ? 'border-l-success' : (isSkipped ? 'border-l-gray-400' : 'border-l-error')} mb-4">
                             <div class="flex items-center gap-2 mb-3">
-                                <span class="text-sm font-bold bg-gray-100 dark:bg-gray-800 px-2 py-1 rounded">Q${i+1}</span>
-                                <span class="${textClass} font-semibold flex items-center gap-1 text-sm uppercase tracking-wider"><i class="fa-solid ${statusIcon}"></i> ${statusLabel}</span>
+                                <span class="bg-gray-100 dark:bg-gray-800 px-2 py-0.5 rounded text-xs font-bold">Q${i+1}</span>
+                                <span class="text-${statusColor} text-xs font-bold uppercase"><i class="fa-solid ${statusIcon}"></i> ${statusLabel}</span>
                             </div>
-                            <p class="text-body font-medium mb-4">${q.text}</p>
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mb-4">
-                                <div class="${bgClass} ${borderClass} border p-3 rounded-md">
-                                    <span class="text-xs font-semibold text-app-textSec dark:text-app-darkTextSec uppercase block mb-1">Your Answer</span>
-                                    <span class="font-medium ${isCorrect ? textClass : (isSkipped ? '' : 'text-error dark:text-error-dark')}">${userAnsText}</span>
+                            <p class="font-semibold mb-4 text-app-textMain dark:text-app-darkTextMain">${q.text}</p>
+                            
+                            <div class="grid md:grid-cols-2 gap-3 mb-4 text-sm">
+                                <div class="p-3 rounded bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700">
+                                    <span class="block text-[10px] text-gray-500 uppercase font-bold mb-1">Your Answer</span>
+                                    <span class="font-medium ${!isSkipped && !isCorrect ? 'text-error' : ''}">${userAnsText}</span>
                                 </div>
-                                <div class="bg-success/5 border border-success/20 p-3 rounded-md">
-                                    <span class="text-xs font-semibold text-success dark:text-success-dark uppercase block mb-1">Correct Answer</span>
-                                    <span class="font-medium text-success dark:text-success-dark">${correctAnsText}</span>
+                                <div class="p-3 rounded bg-success/10 border border-success/20">
+                                    <span class="block text-[10px] text-success uppercase font-bold mb-1">Correct Answer</span>
+                                    <span class="font-medium text-success">${correctAnsText}</span>
                                 </div>
                             </div>
-                            <div class="bg-[#FAF7F2] dark:bg-[#1f242b] p-4 rounded-lg text-small text-app-textSec dark:text-app-darkTextSec border border-app-border dark:border-app-darkBorder mt-4">
-                                <strong class="text-app-textMain dark:text-app-darkTextMain block mb-1"><i class="fa-solid fa-lightbulb text-warning"></i> Explanation:</strong>
-                                ${q.explanation}
+                            
+                            <div class="bg-warning/5 border border-warning/20 p-4 rounded-lg text-sm">
+                                <strong class="block mb-1 text-warning-dark"><i class="fa-solid fa-lightbulb"></i> Explanation:</strong>
+                                <span class="text-app-textSec dark:text-app-darkTextSec">${q.explanation}</span>
                             </div>
                         </div>`;
                     container.insertAdjacentHTML('beforeend', html);
