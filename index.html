@@ -70,7 +70,6 @@
 </head>
 <body class="text-size-base flex flex-col min-h-screen">
 
-    <!-- Header (Dark background for both modes) -->
     <header class="sticky top-0 z-50 w-full bg-[#181C23] text-white shadow-sm border-b border-gray-800 backdrop-blur-md">
         <div class="max-w-5xl mx-auto px-4 h-16 flex items-center justify-between">
             <a href="javascript:void(0)" onclick="app.navigate('home');" class="text-h2 font-bold flex items-center gap-2 touch-target hover:text-gray-200 transition-colors">
@@ -78,14 +77,12 @@
             </a>
 
             <div class="flex items-center gap-2 md:gap-4">
-                <!-- Desktop Nav -->
                 <nav class="hidden md:flex items-center gap-6 mr-2">
                     <a href="javascript:void(0)" onclick="app.navigate('home');" class="hover:text-brand-dark font-medium transition-colors">Home</a>
                     <a href="javascript:void(0)" onclick="app.navigate('about');" class="hover:text-brand-dark font-medium transition-colors">About Us</a>
                     <a href="javascript:void(0)" onclick="app.scrollToSection('footer-section');" class="hover:text-brand-dark font-medium transition-colors">Contact</a>
                 </nav>
 
-                <!-- Desktop Controls -->
                 <div class="hidden md:flex items-center gap-2">
                     <div class="flex items-center gap-1 bg-gray-800 rounded-full p-1 border border-gray-700">
                         <button onclick="app.changeFontSize('sm')" class="w-6 h-6 rounded-full flex items-center justify-center text-xs font-medium hover:bg-gray-700 transition-colors" title="Smaller text">A-</button>
@@ -98,14 +95,12 @@
                     </button>
                 </div>
 
-                <!-- Mobile Menu Toggle -->
                 <button class="md:hidden touch-target text-xl hover:text-brand-dark transition-colors" onclick="app.toggleMobileMenu()">
                     <i class="fa-solid fa-bars"></i>
                 </button>
             </div>
         </div>
 
-        <!-- Full Screen Mobile Menu -->
         <div id="mobile-menu" class="fixed inset-0 w-full h-[100dvh] bg-[#FAF7F2]/95 dark:bg-[#0F1115]/95 backdrop-blur-xl transform translate-x-full transition-transform duration-300 ease-out z-[100] flex flex-col text-app-textMain dark:text-app-darkTextMain">
             <div class="px-6 py-4 flex justify-between items-center border-b border-gray-200/50 dark:border-gray-800/50">
                 <span class="font-bold text-lg text-brand dark:text-brand-dark flex items-center gap-2">
@@ -163,7 +158,7 @@
 
     <main class="flex-grow w-full max-w-5xl mx-auto px-4 py-8">
         
-        <!-- PAGE 1: HOMEPAGE (Only Subjects) -->
+        <!-- PAGE 1: HOMEPAGE (Subject List Only) -->
         <div id="home-page" class="page-view active">
             <div class="text-center mb-10">
                 <h1 class="text-h1 mb-2">Crack Your Competitive Exams</h1>
@@ -173,7 +168,7 @@
             <div class="space-y-4 mb-10" id="subject-list-container"></div>
         </div>
 
-        <!-- PAGE: ABOUT US (Now standalone) -->
+        <!-- PAGE: ABOUT US -->
         <div id="about-page" class="page-view">
             <div class="mb-6 pb-4 border-b border-app-border dark:border-app-darkBorder">
                 <button onclick="app.navigate('home')" class="text-small text-app-textSec dark:text-app-darkTextSec hover:text-brand transition-colors mb-2 flex items-center gap-1 touch-target w-max -ml-2 px-2"><i class="fa-solid fa-arrow-left"></i> Back to Home</button>
@@ -185,7 +180,7 @@
                     <p>येथे विषयानुसार Notes, One-Liners आणि Quiz उपलब्ध करून देण्याचा प्रयत्न केला जातो, जेणेकरून विद्यार्थ्यांना अभ्यास, उजळणी आणि सराव एकाच ठिकाणी करता येईल.</p>
                     <p>आम्ही माहिती शक्य तितकी अचूक आणि परीक्षेच्या दृष्टीने उपयुक्त ठेवण्याचा प्रयत्न करतो. मात्र कोणत्याही माहितीत चूक, त्रुटी किंवा अद्ययावत करण्याची आवश्यकता आढळल्यास कृपया आम्हाला कळवा.</p>
                     <p>दिलेली माहिती चुकीची किंवा त्रुटीपूर्ण आहे असे वाटल्यास, कृपया Telegram वर आम्हाला कळवा. तुमच्या सूचनेची पडताळणी करून आवश्यक असल्यास माहितीमध्ये सुधारणा केली जाईल.</p>
-                    <p class="mt-4 font-medium text-app-textMain dark:text-app-darkTextMain border-l-2 border-brand dark:border-brand-dark pl-3">तुमच्या अभ्यासासाठी ही वेबसाइट अधिक उपयुक्त बनवण्यासाठी तुमचा अभिप्राय आमच्यासाठी महत्त्वाचा आहे.</p>
+                    <p class="mt-4 font-medium text-app-textMain dark:text-app-darkTextMain border-l-2 border-brand dark:border-brand-dark pl-3">तुमच्या अभ्यासासाठी ही वेबसाइट अधिक उपयुक्त बनवण्यासाठी तुमचा अभिप्राय आमच्यासाठी महत्त्वाचा পেল आहे.</p>
                 </div>
             </div>
         </div>
@@ -240,7 +235,7 @@
                 </div>
             </div>
 
-            <!-- Quiz Intro (Removed Name Input) -->
+            <!-- Quiz Intro (Username Removed) -->
             <div id="quiz-intro-state" class="card p-6 md:p-10 max-w-2xl mx-auto mt-8">
                 <div class="w-20 h-20 bg-brand/10 dark:bg-brand-dark/10 text-brand dark:text-brand-dark rounded-full flex items-center justify-center text-4xl mx-auto mb-6"><i class="fa-solid fa-clipboard-list"></i></div>
                 <h2 class="text-h2 text-center mb-6">Quiz Instructions</h2>
@@ -290,22 +285,37 @@
             <div id="quiz-result-state" class="hidden space-y-8">
                 <div class="card p-8 text-center bg-gradient-to-b from-brand/5 to-transparent border-t-4 border-t-brand dark:border-t-brand-dark">
                     <h2 class="text-h2 font-bold mb-2 uppercase tracking-wide text-brand dark:text-brand-dark"><i class="fa-solid fa-trophy mr-2 text-warning"></i> Quiz Result</h2>
+                    
                     <div class="flex justify-center items-baseline gap-2 my-6">
                         <span class="text-6xl font-black text-app-textMain dark:text-app-darkTextMain" id="res-score">0</span>
                         <span class="text-2xl font-bold text-app-textSec dark:text-app-darkTextSec">/ <span id="res-total">0</span></span>
                     </div>
+                    
                     <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-2xl mx-auto mb-8">
-                        <div class="bg-white dark:bg-app-darkCard border border-app-border dark:border-app-darkBorder p-4 rounded-xl shadow-sm"><span class="block text-xs uppercase font-bold text-success dark:text-success-dark mb-1">Correct</span><span class="text-2xl font-bold" id="res-correct">0</span></div>
-                        <div class="bg-white dark:bg-app-darkCard border border-app-border dark:border-app-darkBorder p-4 rounded-xl shadow-sm"><span class="block text-xs uppercase font-bold text-error dark:text-error-dark mb-1">Wrong</span><span class="text-2xl font-bold" id="res-wrong">0</span></div>
-                        <div class="bg-white dark:bg-app-darkCard border border-app-border dark:border-app-darkBorder p-4 rounded-xl shadow-sm"><span class="block text-xs uppercase font-bold text-app-textSec dark:text-app-darkTextSec mb-1">Skipped</span><span class="text-2xl font-bold" id="res-skipped">0</span></div>
-                        <div class="bg-white dark:bg-app-darkCard border border-app-border dark:border-app-darkBorder p-4 rounded-xl shadow-sm"><span class="block text-xs uppercase font-bold text-subject dark:text-subject-dark mb-1">Accuracy</span><span class="text-2xl font-bold" id="res-accuracy">0%</span></div>
+                        <div class="bg-white dark:bg-app-darkCard border border-app-border dark:border-app-darkBorder p-4 rounded-xl shadow-sm">
+                            <span class="block text-xs uppercase font-bold text-success dark:text-success-dark mb-1">Correct</span>
+                            <span class="text-2xl font-bold" id="res-correct">0</span>
+                        </div>
+                        <div class="bg-white dark:bg-app-darkCard border border-app-border dark:border-app-darkBorder p-4 rounded-xl shadow-sm">
+                            <span class="block text-xs uppercase font-bold text-error dark:text-error-dark mb-1">Wrong</span>
+                            <span class="text-2xl font-bold" id="res-wrong">0</span>
+                        </div>
+                        <div class="bg-white dark:bg-app-darkCard border border-app-border dark:border-app-darkBorder p-4 rounded-xl shadow-sm">
+                            <span class="block text-xs uppercase font-bold text-app-textSec dark:text-app-darkTextSec mb-1">Skipped</span>
+                            <span class="text-2xl font-bold" id="res-skipped">0</span>
+                        </div>
+                        <div class="bg-white dark:bg-app-darkCard border border-app-border dark:border-app-darkBorder p-4 rounded-xl shadow-sm">
+                            <span class="block text-xs uppercase font-bold text-subject dark:text-subject-dark mb-1">Accuracy</span>
+                            <span class="text-2xl font-bold" id="res-accuracy">0%</span>
+                        </div>
                     </div>
+
                     <div class="flex flex-wrap justify-center gap-4">
                         <button onclick="app.resetQuiz()" class="btn-primary"><i class="fa-solid fa-rotate-right mr-2"></i> Retry Quiz</button>
                         <button onclick="app.navigate('home')" class="btn-secondary"><i class="fa-solid fa-list mr-2"></i> Back to Chapter</button>
                     </div>
                 </div>
-                <!-- Review List -->
+
                 <div>
                     <h3 class="text-h3 font-bold mb-6 flex items-center gap-2"><i class="fa-solid fa-clipboard-check text-brand dark:text-brand-dark"></i> Question Review</h3>
                     <div class="space-y-4" id="quiz-review-list"></div>
@@ -313,7 +323,7 @@
             </div>
         </div>
 
-        <!-- PAGE: SITEMAP -->
+        <!-- PAGE: Sitemap -->
         <div id="sitemap-page" class="page-view">
             <div class="mb-6 pb-4 border-b border-app-border dark:border-app-darkBorder">
                 <button onclick="app.navigate('home')" class="text-small text-app-textSec dark:text-app-darkTextSec hover:text-brand transition-colors mb-2 flex items-center gap-1 touch-target w-max -ml-2 px-2"><i class="fa-solid fa-arrow-left"></i> Back to Home</button>
@@ -323,7 +333,9 @@
                 <ul class="space-y-4 list-none text-app-textMain dark:text-app-darkTextMain">
                     <li><a href="javascript:void(0)" onclick="app.navigate('home');" class="font-bold text-lg hover:text-brand transition-colors"><i class="fa-solid fa-house text-app-textSec text-sm"></i> Home</a>
                         <ul class="ml-6 mt-3 border-l-2 border-app-border dark:border-app-darkBorder pl-4 space-y-3">
-                            <li><span class="font-semibold text-subject dark:text-subject-dark">Subjects & Study Materials</span><ul class="ml-4 mt-2 space-y-2 list-disc pl-4 text-app-textSec" id="sitemap-subjects-list"></ul></li>
+                            <li><span class="font-semibold text-subject dark:text-subject-dark">Subjects & Study Materials</span>
+                                <ul class="ml-4 mt-2 space-y-2 list-disc pl-4 text-app-textSec" id="sitemap-subjects-list"></ul>
+                            </li>
                         </ul>
                     </li>
                 </ul>
@@ -346,14 +358,7 @@
                     <li>Quiz attempt संबंधित माहिती</li>
                     <li>वापरकर्त्याने स्वतः दिलेली feedback किंवा संपर्क माहिती</li>
                 </ul>
-                <h3 class="font-bold mt-4 mb-2">2. माहितीचा वापर</h3>
-                <ul class="list-disc pl-5 mb-4 text-app-textSec space-y-1">
-                    <li>Login सुविधा उपलब्ध करून देण्यासाठी</li>
-                    <li>Quiz results जतन करण्यासाठी</li>
-                    <li>Leaderboard दाखवण्यासाठी</li>
-                    <li>वेबसाइटची कार्यक्षमता सुधारण्यासाठी</li>
-                </ul>
-                <h3 class="font-bold mt-4 mb-2">3. माहितीची सुरक्षा</h3>
+                <h3 class="font-bold mt-4 mb-2">2. माहितीची सुरक्षा</h3>
                 <p class="text-app-textSec mb-4">वापरकर्त्यांची माहिती सुरक्षित ठेवण्यासाठी योग्य तांत्रिक उपाययोजना करण्याचा प्रयत्न केला जाईल. मात्र इंटरनेटवरील कोणतीही प्रणाली पूर्णपणे सुरक्षित असल्याची हमी देता येत नाही.</p>
             </div>
         </div>
@@ -370,10 +375,6 @@
                 <p class="text-app-textSec mb-4">ही वेबसाइट स्पर्धा परीक्षांच्या अभ्यासासाठी Notes, One-Liners आणि Quiz उपलब्ध करून देण्यासाठी तयार करण्यात आली आहे.</p>
                 <h3 class="font-bold mt-4 mb-2">2. माहितीची अचूकता</h3>
                 <p class="text-app-textSec mb-4">आम्ही उपलब्ध करून दिलेली माहिती शक्य तितकी अचूक ठेवण्याचा प्रयत्न करतो. तथापि, माहितीमध्ये अनवधानाने चुका असू शकतात. अंतिम तयारी करताना अधिकृत सरकारी स्रोतांशी माहिती पडताळून पाहणे अपेक्षित आहे.</p>
-                <h3 class="font-bold mt-4 mb-2">3. Quiz आणि Results</h3>
-                <p class="text-app-textSec mb-4">Quiz मधील गुण हे कोणत्याही परीक्षेतील अधिकृत गुण किंवा selection ची हमी दर्शवत नाही.</p>
-                <h3 class="font-bold mt-4 mb-2">4. Content Usage</h3>
-                <p class="text-app-textSec mb-4">वेबसाइटवरील नोट्स आणि इतर कंटेंट परवानगीशिवाय व्यावसायिक स्वरूपात कॉपी करू नये.</p>
             </div>
         </div>
     </main>
@@ -431,7 +432,7 @@
                 <input type="number" id="donate-custom-amount" placeholder="Custom Amount" min="1" class="w-full pl-8 pr-4 py-3 rounded-lg border border-app-border dark:border-app-darkBorder bg-app-bg dark:bg-app-darkBg focus:outline-none focus:border-brand dark:focus:border-brand-dark transition-colors text-app-textMain dark:text-app-darkTextMain">
             </div>
             
-            <button onclick="app.processUpiDonation()" class="btn-primary w-full shadow-md"><i class="fa-solid fa-qrcode mr-2"></i> Pay via UPI App</button>
+            <button onclick="app.processUpiDonation()" class="btn-primary w-full shadow-md"><i class="fa-solid fa-qrcode mr-2"></i> Pay Now via UPI</button>
             <p class="text-[11px] text-center text-app-textSec mt-3 opacity-70">Opens PhonePe, GPay, Paytm, etc. (Mobile Only)</p>
         </div>
     </div>
@@ -448,6 +449,7 @@
         </div>
     </div>
     
+    <!-- Message Modal -->
     <div id="modal-message" class="fixed inset-0 bg-black/50 z-[100] hidden flex-col items-center justify-center p-4 opacity-0 transition-opacity">
         <div class="bg-app-card dark:bg-app-darkCard rounded-xl shadow-xl max-w-sm w-full p-6 text-center">
             <div id="modal-message-icon" class="text-4xl mb-3 text-brand dark:text-brand-dark"><i class="fa-solid fa-circle-info"></i></div>
@@ -465,53 +467,53 @@
         const DATA = {
             subjects: [
                 { id: 'sub_sci', name: 'General Science', icon: 'fa-flask', color: 'blue', chapters: [
-                    // --- INSERT GENERAL SCIENCE CHAPTERS HERE ---
+                    // 👇 General Science चे chapters येथे येतील 👇
                 ]},
                 { id: 'sub_cur', name: 'Current Affairs', icon: 'fa-newspaper', color: 'amber', chapters: [
-                    // --- INSERT CURRENT AFFAIRS CHAPTERS HERE ---
+                    // 👇 Current Affairs चे chapters येथे येतील 👇
                 ]},
                 { id: 'sub_geo', name: 'Geography', icon: 'fa-earth-asia', color: 'green', chapters: [
-                    // --- INSERT GEOGRAPHY CHAPTERS HERE ---
+                    // 👇 Geography चे chapters येथे येतील 👇
                 ]},
                 { id: 'sub_his', name: 'History', icon: 'fa-monument', color: 'orange', chapters: [
-                    // --- INSERT HISTORY CHAPTERS HERE ---
+                    // 👇 History चे chapters येथे येतील 👇
                 ]},
                 { id: 'sub_eco', name: 'Economics', icon: 'fa-chart-line', color: 'indigo', chapters: [
-                    // --- INSERT ECONOMICS CHAPTERS HERE ---
+                    // 👇 Economics चे chapters येथे येतील 👇
                 ]},
                 { id: 'sub_math', name: 'Mental Ability and Arithmetics', icon: 'fa-calculator', color: 'red', chapters: [
-                    // --- INSERT MATHS CHAPTERS HERE ---
+                    // 👇 Mental Ability चे chapters येथे येतील 👇
                 ]},
                 { id: 'sub_pol', name: 'Indian Polity and Civics', icon: 'fa-scale-balanced', color: 'brand', chapters: [
-                    // --- INSERT POLITY CHAPTERS HERE ---
+                    // 👇 Indian Polity चे chapters येथे येतील 👇
                 ]},
                 { id: 'sub_mar', name: 'Marathi', icon: 'fa-book-open-reader', color: 'pink', chapters: [
-                    // --- INSERT MARATHI CHAPTERS HERE ---
+                    // 👇 Marathi चे chapters येथे येतील 👇
                 ]},
                 { id: 'sub_eng', name: 'English', icon: 'fa-font', color: 'blue', chapters: [
-                    // --- INSERT ENGLISH CHAPTERS HERE ---
+                    // 👇 English चे chapters येथे येतील 👇
                 ]},
                 { id: 'sub_con', name: 'Indian Constitution and Panchayat Raj', icon: 'fa-landmark-dome', color: 'brand', chapters: [
-                    // --- INSERT CONSTITUTION CHAPTERS HERE ---
+                    // 👇 Indian Constitution चे chapters येथे येतील 👇
                 ]},
                 { id: 'sub_it', name: 'Information Technology Computer Basics', icon: 'fa-computer', color: 'gray', chapters: [
-                    // --- INSERT IT CHAPTERS HERE ---
+                    // 👇 IT & Computer Basics चे chapters येथे येतील 👇
                 ]},
                 { id: 'sub_rti', name: 'RTI Act (2005), Maharashtra RTS Act (2015)', icon: 'fa-gavel', color: 'amber', chapters: [
-                    // --- INSERT RTI CHAPTERS HERE ---
+                    // 👇 RTI Act चे chapters येथे येतील 👇
                 ]}
             ],
             
             notes: {
-                // --- INSERT NOTES HERE ---
+                // 👇 Notes चा डेटा येथे येईल 👇
             },
             
             oneLiners: {
-                // --- INSERT ONE-LINERS HERE ---
+                // 👇 One-Liners चा डेटा येथे येईल 👇
             },
             
             quizzes: {
-                // --- INSERT QUIZZES HERE ---
+                // 👇 Quiz चा डेटा येथे येईल 👇
             }
         };
 
@@ -620,7 +622,6 @@
                 this.showModal('modal-message');
             },
 
-            // --- DONATE & UPI LOGIC ---
             openDonateModal: function() {
                 document.getElementById('donate-custom-amount').value = '';
                 this.showModal('modal-donate');
@@ -670,14 +671,15 @@
                         `).join('');
                     }
 
+                    // FIXED: Subject Name on left, Dropdown Icon on Right
                     const html = `
-                        <div class="card overflow-hidden transition-all duration-300">
+                        <div class="card overflow-hidden transition-all duration-300 mb-4">
                             <button class="w-full p-4 flex items-center justify-between bg-app-card dark:bg-app-darkCard hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors touch-target outline-none" onclick="app.toggleAccordion('subj-${idx}')">
-                                <div class="flex items-center gap-3">
-                                    <div class="w-10 h-10 rounded-full bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 flex items-center justify-center text-lg"><i class="fa-solid ${subj.icon}"></i></div>
-                                    <span class="text-h3 font-semibold text-left">${subj.name}</span>
+                                <div class="flex items-center gap-4 flex-1 text-left">
+                                    <div class="w-12 h-12 shrink-0 rounded-full bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 flex items-center justify-center text-xl"><i class="fa-solid ${subj.icon}"></i></div>
+                                    <span class="text-h3 font-semibold flex-1">${subj.name}</span>
                                 </div>
-                                <div class="text-app-textSec dark:text-app-darkTextSec transform transition-transform duration-300" id="icon-subj-${idx}"><i class="fa-solid fa-chevron-down"></i></div>
+                                <div class="text-app-textSec dark:text-app-darkTextSec transform transition-transform duration-300 shrink-0 ml-4 text-lg" id="icon-subj-${idx}"><i class="fa-solid fa-chevron-down"></i></div>
                             </button>
                             <div id="content-subj-${idx}" class="hidden border-t border-app-border dark:border-app-darkBorder bg-[#fdfcfb] dark:bg-[#14171c]">
                                 <div class="p-2 space-y-1">
@@ -720,27 +722,14 @@
                 }
 
                 data.forEach(block => {
-                    if (block.type === 'topic') {
-                        let innerHtml = '';
-                        block.content.forEach(inner => {
-                            if(inner.type === 'h4') innerHtml += `<h4 class="text-lg font-bold text-app-textMain dark:text-app-darkTextMain mt-5 mb-2">${inner.content}</h4>`;
-                            else if(inner.type === 'p') innerHtml += `<p class="mb-3 text-app-textMain dark:text-app-darkTextMain">${inner.content}</p>`;
-                            else if(inner.type === 'ul') innerHtml += `<ul class="list-disc mb-4 pl-5 space-y-1.5 text-app-textMain dark:text-app-darkTextMain marker:text-brand dark:marker:text-brand-dark">${inner.items.map(i=>`<li>${i}</li>`).join('')}</ul>`;
-                            else if(inner.type === 'table') {
-                               let ths = inner.headers.map(h => `<th class="border border-app-border dark:border-gray-700 px-3 py-2 bg-gray-50 dark:bg-gray-800 font-semibold">${h}</th>`).join('');
-                               let trs = inner.rows.map(r => `<tr>${r.map(c => `<td class="border border-app-border dark:border-gray-700 px-3 py-2">${c}</td>`).join('')}</tr>`).join('');
-                               innerHtml += `<div class="overflow-x-auto mb-4 mt-2 rounded-lg border border-app-border dark:border-gray-700"><table class="w-full text-sm border-collapse">${ths ? `<thead><tr>${ths}</tr></thead>` : ''}<tbody class="divide-y divide-app-border dark:divide-gray-700">${trs}</tbody></table></div>`;
-                            }
-                        });
-                        
-                        let html = `<div class="card p-5 md:p-7 mb-6 border-app-border dark:border-app-darkBorder hover:shadow-md transition-shadow"><h3 class="text-xl font-bold text-brand dark:text-brand-dark mb-4 pb-2 border-b border-brand/20 dark:border-brand-dark/20">${block.title}</h3>${innerHtml}</div>`;
-                        container.insertAdjacentHTML('beforeend', html);
-                    } else {
-                        let html = '';
-                        if (block.type === 'h3') html = `<h3 class="text-h3 font-semibold text-brand dark:text-brand-dark mt-8 mb-4 first:mt-0">${block.content}</h3>`;
-                        else if (block.type === 'p') html = `<p class="mb-4 text-app-textMain dark:text-app-darkTextMain">${block.content}</p>`;
-                        container.insertAdjacentHTML('beforeend', html);
+                    let html = '';
+                    if (block.type === 'h3') html = `<h3 class="text-h3 font-semibold text-brand dark:text-brand-dark mt-8 mb-4 first:mt-0">${block.content}</h3>`;
+                    else if (block.type === 'p') html = `<p class="mb-4 text-app-textMain dark:text-app-darkTextMain">${block.content}</p>`;
+                    else if (block.type === 'ul') {
+                        const items = block.items.map(item => `<li class="mb-2 pl-3 relative before:content-[''] before:absolute before:left-0 before:top-2 before:w-1.5 before:h-1.5 before:bg-brand dark:before:bg-brand-dark before:rounded-full">${item}</li>`).join('');
+                        html = `<ul class="list-none mb-6 space-y-1 text-app-textMain dark:text-app-darkTextMain ml-2">${items}</ul>`;
                     }
+                    container.insertAdjacentHTML('beforeend', html);
                 });
             },
 
@@ -759,7 +748,7 @@
 
                 data.forEach((item, index) => {
                     const numStr = (index + 1).toString().padStart(2, '0');
-                    const html = `<div class="card p-4 md:p-5 flex gap-4 transition-colors hover:border-brand/30 dark:hover:border-brand-dark/30"><div class="shrink-0 pt-1"><span class="bg-brand/10 dark:bg-brand-dark/10 text-brand dark:text-brand-dark font-bold text-sm px-2 py-1 rounded">${numStr}</span></div><div class="space-y-2"><p class="text-body font-semibold text-app-textMain dark:text-app-darkTextMain">${item.q}</p><p class="text-body text-success dark:text-success-dark font-medium"><i class="fa-solid fa-check mr-1 opacity-70"></i> ${item.a}</p></div></div>`;
+                    const html = `<div class="card p-4 md:p-5 flex gap-4 transition-colors hover:border-brand/30 dark:hover:border-brand-dark/30"><div class="shrink-0 pt-1"><span class="bg-brand/10 dark:bg-brand-dark/10 text-brand dark:text-brand-dark font-bold text-sm px-2 py-1 rounded">${numStr}</span></div><div class="space-y-2"><p class="text-body font-semibold text-app-textMain dark:text-app-darkTextMain">${item.q}</p><p class="text-body text-success dark:text-success-dark font-medium">${item.a}</p></div></div>`;
                     container.insertAdjacentHTML('beforeend', html);
                 });
             },
