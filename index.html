@@ -160,10 +160,30 @@
         
         <!-- PAGE 1: HOMEPAGE (Subject List Only) -->
         <div id="home-page" class="page-view active">
-            <div class="text-center mb-10">
-                <h1 class="text-h1 mb-2">Crack Your Competitive Exams</h1>
-                <p class="text-body text-app-textSec dark:text-app-darkTextSec max-w-2xl mx-auto">Structured notes, rapid revision one-liners, and timed quizzes designed for serious aspirants.</p>
+            
+            <!-- NEW CREATIVE HERO BANNER -->
+            <div class="mb-10 relative overflow-hidden rounded-2xl bg-gradient-to-br from-brand/10 to-transparent dark:from-brand-dark/10 border border-brand/20 dark:border-brand-dark/20 p-6 md:p-8 text-center shadow-sm">
+                <!-- Background Book Shadow/Watermark -->
+                <div class="absolute -top-8 -right-8 text-brand/5 dark:text-brand-dark/5 text-9xl transform -rotate-12">
+                    <i class="fa-solid fa-book-open"></i>
+                </div>
+                
+                <h1 class="text-h2 font-bold mb-3 text-brand dark:text-brand-dark relative z-10 leading-tight">
+                    MPSC Group C <span class="text-app-textMain dark:text-app-darkTextMain">परीक्षेची परिपूर्ण तयारी</span>
+                </h1>
+                
+                <p class="text-body text-app-textSec dark:text-app-darkTextSec max-w-3xl mx-auto relative z-10 font-medium leading-relaxed">
+                    Prelims आणि Mains साठी उपयुक्त Notes, One-Liners, Revision Material आणि MCQ Quiz — अभ्यास, उजळणी आणि सरावासाठी सर्व माहिती एकाच ठिकाणी.
+                </p>
+                
+                <!-- Quick Tags -->
+                <div class="mt-6 flex flex-wrap justify-center gap-3 relative z-10">
+                    <span class="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-white/80 dark:bg-app-darkCard/80 backdrop-blur-sm border border-success/20 text-xs font-bold text-success dark:text-success-dark shadow-sm"><i class="fa-solid fa-book-open-reader"></i> Notes</span>
+                    <span class="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-white/80 dark:bg-app-darkCard/80 backdrop-blur-sm border border-warning/20 text-xs font-bold text-warning dark:text-warning-dark shadow-sm"><i class="fa-solid fa-bolt"></i> One-Liners</span>
+                    <span class="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-white/80 dark:bg-app-darkCard/80 backdrop-blur-sm border border-subject/20 text-xs font-bold text-subject dark:text-subject-dark shadow-sm"><i class="fa-solid fa-brain"></i> MCQ Quiz</span>
+                </div>
             </div>
+
             <!-- Subjects Container -->
             <div class="space-y-4 mb-10" id="subject-list-container"></div>
         </div>
@@ -466,6 +486,12 @@
 
         const DATA = {
             subjects: [
+                { id: 'sub_pol', name: 'Indian Polity and Civics', icon: 'fa-scale-balanced', color: 'brand', chapters: [
+                    // 👇 Indian Polity चे chapters येथे येतील 👇
+                    { id: 'pol_c1', name: 'Chapter 1: भारतीय संविधानाची निर्मिती व पार्श्वभूमी', qCount: 10 },
+                    { id: 'pol_c2', name: 'Chapter 2: संविधानाची वैशिष्ट्ये, उद्देशिका व मूलभूत रचना', qCount: 10 },
+                    { id: 'pol_c3', name: 'Chapter 3: नागरिकत्व व मूलभूत अधिकार', qCount: 10 }
+                ]},
                 { id: 'sub_sci', name: 'General Science', icon: 'fa-flask', color: 'blue', chapters: [
                     // 👇 General Science चे chapters येथे येतील 👇
                 ]},
@@ -483,9 +509,6 @@
                 ]},
                 { id: 'sub_math', name: 'Mental Ability and Arithmetics', icon: 'fa-calculator', color: 'red', chapters: [
                     // 👇 Mental Ability चे chapters येथे येतील 👇
-                ]},
-                { id: 'sub_pol', name: 'Indian Polity and Civics', icon: 'fa-scale-balanced', color: 'brand', chapters: [
-                    // 👇 Indian Polity चे chapters येथे येतील 👇
                 ]},
                 { id: 'sub_mar', name: 'Marathi', icon: 'fa-book-open-reader', color: 'pink', chapters: [
                     // 👇 Marathi चे chapters येथे येतील 👇
