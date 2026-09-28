@@ -181,7 +181,7 @@
                         <span class="text-xl font-bold text-brand-600 dark:text-brand-500">StudySphere</span>
                     </div>
                     <p class="theme-text-sec text-sm leading-relaxed mb-4 max-w-md">
-                        Your professional bilingual platform for MPSC Combined Group B and C Examination preparation. Practice smart, achieve your goals.
+                        StudySphere is a bilingual MCQ practice platform designed for MPSC Combined Group B & C examination preparation.
                     </p>
                 </div>
                 
@@ -191,6 +191,7 @@
                         <li><a href="#/" class="hover:text-brand-600 transition">Home</a></li>
                         <li><a href="#/about" class="hover:text-brand-600 transition">About Us</a></li>
                         <li><a href="#/dashboard" class="hover:text-brand-600 transition">Dashboard</a></li>
+                        <li><a href="#/contact" class="hover:text-brand-600 transition">Contact</a></li>
                     </ul>
                 </div>
 
@@ -224,8 +225,6 @@
         import { getAuth, signInAnonymously, onAuthStateChanged, signOut, signInWithEmailAndPassword, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js";
         import { getFirestore, doc, setDoc, getDoc, collection, query, where, getDocs, serverTimestamp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js";
 
-        // Firebase Configuration Placeholder
-        // NOTE: Admin/Owner needs to replace this object in production.
         const firebaseConfig = typeof __firebase_config !== 'undefined' ? JSON.parse(__firebase_config) : {
             apiKey: "PLACEHOLDER_API_KEY",
             authDomain: "studysphere-placeholder.firebaseapp.com",
@@ -242,7 +241,6 @@
             appInst = initializeApp(firebaseConfig);
             auth = getAuth(appInst);
             db = getFirestore(appInst);
-            // Quick check if config seems valid (not placeholders)
             if(firebaseConfig.apiKey !== "PLACEHOLDER_API_KEY") {
                 isFirebaseValid = true;
             }
@@ -250,7 +248,6 @@
             console.warn("Firebase initialization failed. Running in standalone demo mode.");
         }
 
-        // Attach Firebase to global app object for router access
         window.fb = {
             auth, db, isFirebaseValid,
             signInAnonymously, onAuthStateChanged, signOut, signInWithEmailAndPassword, createUserWithEmailAndPassword,
@@ -259,19 +256,26 @@
     </script>
 
     <script>
-        // MOCK DATA (Content Architecture)
+        // MOCK DATA (Content Architecture mapped to Sitemap)
         const DATA = {
             subjects: [
+                // Common
                 { id: 's1', titleMr: 'सामान्य विज्ञान', titleEn: 'General Science', category: 'common' },
                 { id: 's2', titleMr: 'चालू घडामोडी', titleEn: 'Current Affairs', category: 'common' },
                 { id: 's3', titleMr: 'भूगोल', titleEn: 'Geography', category: 'common' },
                 { id: 's4', titleMr: 'इतिहास', titleEn: 'History', category: 'common' },
                 { id: 's5', titleMr: 'अर्थशास्त्र', titleEn: 'Economics', category: 'common' },
+                { id: 's8', titleMr: 'बौद्धिक चाचणी व अंकगणित', titleEn: 'Mental Ability & Arithmetic', category: 'common' },
+                { id: 's9', titleMr: 'भारतीय राज्यघटना', titleEn: 'Indian Polity & Civics', category: 'common' },
+                // Mains Only
                 { id: 's6', titleMr: 'मराठी', titleEn: 'Marathi', category: 'mains' },
-                { id: 's7', titleMr: 'इंग्रजी', titleEn: 'English', category: 'mains' }
+                { id: 's7', titleMr: 'इंग्रजी', titleEn: 'English', category: 'mains' },
+                { id: 's10', titleMr: 'बुद्धिमत्ता चाचणी व अंकगणित', titleEn: 'Intelligent Test & Arithmetic', category: 'mains' },
+                { id: 's11', titleMr: 'भारतीय राज्यघटना व पंचायत राज', titleEn: 'Indian Constitution & Panchayat Raj', category: 'mains' },
+                { id: 's12', titleMr: 'माहिती तंत्रज्ञान / संगणक', titleEn: 'Information Technology / Computer Basics', category: 'mains' },
+                { id: 's13', titleMr: 'RTI 2005 व RTS 2015', titleEn: 'RTI Act 2005 & Maharashtra RTS Act 2015', category: 'mains' }
             ],
             chapters: [
-                // Demo Data for Geography (s3)
                 { id: 'c1', subjectId: 's3', titleMr: 'पृथ्वी, स्थान, अक्षांश व रेखांश', titleEn: 'Earth, Location, Latitude & Longitude' },
                 { id: 'c2', subjectId: 's3', titleMr: 'महाराष्ट्राचा भूगोल', titleEn: 'Geography of Maharashtra' }
             ],
@@ -284,7 +288,6 @@
                 { id: 'q2', topicId: 't1', titleMr: 'अक्षांश व रेखांश मुख्य चाचणी', titleEn: 'Lat & Long Main Test', mode: 'test', qCount: 5 }
             ],
             questions: {
-                // Questions for q1 & q2 (Reused for demo simplicity)
                 'q1': [
                     {
                         id: 'qn1', order: 1,
@@ -365,7 +368,6 @@
             }
         };
 
-        // Reuse Q1 questions for Q2 but add negative marking for Test mode demonstration
         DATA.questions['q2'] = DATA.questions['q1'].map(q => ({...q, negMarks: 0.5}));
 
         const app = {
@@ -374,7 +376,6 @@
             fontSize: localStorage.getItem('fontSize') || 'default',
             drawerOpen: false,
             
-            // UI Helpers
             toggleTheme: () => {
                 app.theme = app.theme === 'light' ? 'dark' : 'light';
                 document.documentElement.setAttribute('data-theme', app.theme);
@@ -426,13 +427,11 @@
                 document.getElementById('modal-content').innerHTML = '';
             },
 
-            // Navigation
             navigate: (path) => {
                 window.location.hash = path;
                 if(app.drawerOpen) app.toggleDrawer();
             },
             
-            // Render Engine Helpers
             renderNavigationLinks: () => {
                 const container = document.getElementById('drawer-links');
                 let links = `
@@ -441,6 +440,9 @@
                     </a>
                     <a href="#/about" class="flex items-center gap-3 p-3 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-700 transition" onclick="app.toggleDrawer()">
                         <i class="ph ph-info text-xl text-brand-600"></i> <span class="font-medium">About Us</span>
+                    </a>
+                    <a href="#/contact" class="flex items-center gap-3 p-3 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-700 transition" onclick="app.toggleDrawer()">
+                        <i class="ph ph-envelope text-xl text-brand-600"></i> <span class="font-medium">Contact</span>
                     </a>
                 `;
                 if (app.currentUser) {
@@ -462,7 +464,6 @@
                 container.innerHTML = links;
             },
 
-            // Specific Feature: Donation Modal
             openDonationModal: () => {
                 const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
                 const upiId = "vikram.joshi9089@oksbi";
@@ -520,11 +521,9 @@
                 window.location.href = upiUrl;
                 app.closeModal();
                 app.showToast('Payment intent launched. Awaiting verification...', 'info');
-                // Note: Real verification requires backend webhook.
             }
         };
 
-        // Init Theme/Font logic immediately
         document.documentElement.setAttribute('data-theme', app.theme);
         app.setFontSize(app.fontSize);
         document.getElementById('year').innerText = new Date().getFullYear();
@@ -542,7 +541,6 @@
                 this.isSubmitted = false;
                 this.tabSwitchCount = 0;
                 
-                // Initialize status
                 this.questions.forEach(q => this.status[q.id] = 'unvisited');
                 this.status[this.questions[0].id] = 'visited';
                 
@@ -555,7 +553,6 @@
                         if (document.hidden && !this.isSubmitted) {
                             this.tabSwitchCount++;
                             if (this.tabSwitchCount === 1) {
-                                alert("Warning: Navigating away from the test tab is prohibited. Further switches may void your attempt."); // Using custom modal usually, but visibility blur blocks DOM updates reliably only via alert sometimes. Replacing with custom toast to respect rules.
                                 app.showToast("Warning: Do not switch tabs during a Test!", "warning");
                             } else {
                                 app.showToast("Multiple tab switches detected. This will be recorded.", "error");
@@ -563,8 +560,6 @@
                         }
                     };
                     document.addEventListener('visibilitychange', this.visibilityHandler);
-                    
-                    // Prevent context menu
                     this.contextHandler = (e) => e.preventDefault();
                     document.addEventListener('contextmenu', this.contextHandler);
                 }
@@ -677,8 +672,9 @@
                     <!-- Intro Card -->
                     <section class="bg-brand-50 dark:bg-slate-800/50 rounded-2xl p-6 sm:p-8 border border-brand-100 dark:border-slate-700 flex flex-col md:flex-row items-center gap-6">
                         <div class="flex-1">
-                            <h2 class="text-2xl sm:text-3xl font-bold text-brand-600 dark:text-brand-500 mb-2">Crack MPSC Group B & C</h2>
-                            <p class="theme-text-sec text-base sm:text-lg">Structured bilingual MCQ practice, comprehensive mock tests, and detailed explanations to boost your preparation.</p>
+                            <h2 class="text-2xl sm:text-3xl font-bold text-brand-600 dark:text-brand-500 mb-4">Crack MPSC Group B & C</h2>
+                            <p class="theme-text-sec text-base sm:text-lg mb-2 font-medium">StudySphere हे MPSC Combined Group B & C परीक्षेच्या तयारीसाठी तयार केलेले bilingual MCQ practice platform आहे. येथे विषय, Chapter आणि Topic नुसार प्रश्नसंच, Practice Quiz, Test Quiz आणि निकालाचे विश्लेषण उपलब्ध करून देण्याचा उद्देश आहे.</p>
+                            <p class="theme-text-sec text-base sm:text-lg">StudySphere is a bilingual MCQ practice platform designed for MPSC Combined Group B & C examination preparation. It provides subject-wise, chapter-wise and topic-wise quizzes along with practice, test and performance analysis features.</p>
                         </div>
                         <div class="hidden md:flex bg-white dark:bg-slate-700 p-4 rounded-full shadow-sm">
                             <i class="ph-fill ph-student text-5xl text-brand-500"></i>
@@ -718,27 +714,57 @@
 
                     <!-- Guide -->
                     <section class="theme-surface border theme-border rounded-xl p-6 sm:p-8">
-                        <h3 class="text-xl font-bold mb-4">How it Works</h3>
-                        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+                        <h3 class="text-xl font-bold mb-6">How StudySphere Works</h3>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-6">
                             <div class="flex flex-col gap-2">
                                 <div class="w-10 h-10 rounded-full bg-brand-100 text-brand-600 flex items-center justify-center font-bold">1</div>
-                                <h4 class="font-bold">Select Topic</h4>
-                                <p class="text-sm theme-text-sec">Choose subject, chapter, and specific topic.</p>
+                                <h4 class="font-bold">Subject निवडा</h4>
+                                <p class="text-sm theme-text-sec">तुमच्या अभ्यासातील संबंधित विषय निवडा.</p>
                             </div>
                             <div class="flex flex-col gap-2">
                                 <div class="w-10 h-10 rounded-full bg-brand-100 text-brand-600 flex items-center justify-center font-bold">2</div>
-                                <h4 class="font-bold">Choose Mode</h4>
-                                <p class="text-sm theme-text-sec">Practice freely or take a timed test.</p>
+                                <h4 class="font-bold">Chapter निवडा</h4>
+                                <p class="text-sm theme-text-sec">विषयातील आवश्यक Chapter उघडा.</p>
                             </div>
                             <div class="flex flex-col gap-2">
                                 <div class="w-10 h-10 rounded-full bg-brand-100 text-brand-600 flex items-center justify-center font-bold">3</div>
-                                <h4 class="font-bold">Attempt Quiz</h4>
-                                <p class="text-sm theme-text-sec">Answer bilingual questions with exam-like interface.</p>
+                                <h4 class="font-bold">Topic निवडा</h4>
+                                <p class="text-sm theme-text-sec">Chapter मधील संबंधित Topic निवडा.</p>
                             </div>
                             <div class="flex flex-col gap-2">
                                 <div class="w-10 h-10 rounded-full bg-brand-100 text-brand-600 flex items-center justify-center font-bold">4</div>
-                                <h4 class="font-bold">Analyze</h4>
-                                <p class="text-sm theme-text-sec">Review detailed explanations and track progress.</p>
+                                <h4 class="font-bold">Quiz निवडा</h4>
+                                <p class="text-sm theme-text-sec">उपलब्ध Practice किंवा Test Quiz निवडा.</p>
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <div class="w-10 h-10 rounded-full bg-brand-100 text-brand-600 flex items-center justify-center font-bold">5</div>
+                                <h4 class="font-bold">Quiz सुरू करा</h4>
+                                <p class="text-sm theme-text-sec">थेट quiz सुरू करा. (Test साठी Login आवश्यक).</p>
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <div class="w-10 h-10 rounded-full bg-slate-100 text-slate-600 flex items-center justify-center font-bold">6</div>
+                                <h4 class="font-bold">प्रश्न सोडवा</h4>
+                                <p class="text-sm theme-text-sec">दिलेल्या चार पर्यायांपैकी योग्य पर्याय निवडा.</p>
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <div class="w-10 h-10 rounded-full bg-slate-100 text-slate-600 flex items-center justify-center font-bold">7</div>
+                                <h4 class="font-bold">Review करा</h4>
+                                <p class="text-sm theme-text-sec">आवश्यक असल्यास प्रश्न Mark for Review करा.</p>
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <div class="w-10 h-10 rounded-full bg-slate-100 text-slate-600 flex items-center justify-center font-bold">8</div>
+                                <h4 class="font-bold">Quiz Submit करा</h4>
+                                <p class="text-sm theme-text-sec">सर्व प्रश्न सोडल्यानंतर quiz submit करा.</p>
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <div class="w-10 h-10 rounded-full bg-slate-100 text-slate-600 flex items-center justify-center font-bold">9</div>
+                                <h4 class="font-bold">Result पाहा</h4>
+                                <p class="text-sm theme-text-sec">score आणि questions चे analysis पाहा.</p>
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <div class="w-10 h-10 rounded-full bg-slate-100 text-slate-600 flex items-center justify-center font-bold">10</div>
+                                <h4 class="font-bold">पुन्हा सराव करा</h4>
+                                <p class="text-sm theme-text-sec">चुकीचे प्रश्न पाहून revision अधिक प्रभावी करा.</p>
                             </div>
                         </div>
                     </section>
@@ -831,7 +857,6 @@
             openQuizConfig: (quizId) => {
                 const quiz = DATA.quizzes.find(q => q.id === quizId);
                 
-                // Security Check for Test Mode
                 if(quiz.mode === 'test') {
                     if(!window.fb.auth || !window.fb.auth.currentUser) {
                         app.openModal(`
@@ -849,7 +874,7 @@
                     }
                 }
 
-                const timeOptions = quiz.mode === 'test' ? [5, 10, 15, 20] : [0, 5, 10, 15]; // 0 = No limit for practice
+                const timeOptions = quiz.mode === 'test' ? [5, 10, 15, 20] : [0, 5, 10, 15];
                 
                 app.openModal(`
                     <div class="p-6">
@@ -896,11 +921,9 @@
                     return;
                 }
 
-                // Check Firebase for previous test attempt if Test mode
                 if (quiz.mode === 'test' && window.fb.isFirebaseValid && window.fb.auth.currentUser) {
                     try {
                         const uid = window.fb.auth.currentUser.uid;
-                        // RULE 1 Strict path used below:
                         const attemptRef = window.fb.collection(window.fb.db, 'artifacts', 'studysphere', 'users', uid, 'quizAttempts');
                         const q = window.fb.query(attemptRef, window.fb.where('quizId', '==', quizId));
                         const snapshot = await window.fb.getDocs(q);
@@ -910,7 +933,6 @@
                         }
                     } catch (e) {
                         console.error("Firestore attempt check failed", e);
-                        // Degrade gracefully for demo if Firestore config is missing but auth exists
                     }
                 }
 
@@ -927,7 +949,7 @@
                 if(time > 0) {
                     activeEngine.startTimer(
                         (formatted) => { document.getElementById('timer-display').innerText = formatted; },
-                        () => { Views.submitQuiz(true); } // auto-submit on timeout
+                        () => { Views.submitQuiz(true); } 
                     );
                 }
             },
@@ -936,8 +958,6 @@
                 const root = document.getElementById('app-root');
                 root.innerHTML = `
                     <div class="flex flex-col lg:flex-row gap-6 h-full min-h-[calc(100vh-140px)] relative">
-                        
-                        <!-- Mobile Palette Toggle -->
                         <div class="lg:hidden flex justify-between items-center bg-slate-100 dark:bg-slate-800 p-3 rounded-lg border theme-border mb-2">
                             <div class="font-bold">Q. ${activeEngine.currentIndex + 1} / ${activeEngine.questions.length}</div>
                             <button onclick="document.getElementById('palette-panel').classList.toggle('hidden')" class="flex items-center gap-2 text-sm bg-brand-600 text-white px-3 py-1.5 rounded">
@@ -945,9 +965,7 @@
                             </button>
                         </div>
 
-                        <!-- Left: Question Area -->
                         <div class="flex-1 flex flex-col theme-surface border theme-border rounded-xl shadow-sm overflow-hidden relative">
-                            <!-- Header -->
                             <div class="bg-slate-50 dark:bg-slate-800 p-4 border-b theme-border flex justify-between items-center">
                                 <h2 class="font-bold text-lg hidden sm:block">${activeEngine.quiz.titleMr}</h2>
                                 <div class="flex items-center gap-4 ml-auto">
@@ -959,12 +977,8 @@
                                 </div>
                             </div>
 
-                            <!-- Question Content -->
-                            <div class="p-6 sm:p-8 flex-1 overflow-y-auto" id="question-content">
-                                <!-- Rendered dynamically -->
-                            </div>
+                            <div class="p-6 sm:p-8 flex-1 overflow-y-auto" id="question-content"></div>
 
-                            <!-- Action Buttons -->
                             <div class="p-4 bg-slate-50 dark:bg-slate-800 border-t theme-border flex flex-wrap gap-3 justify-between">
                                 <div class="flex flex-wrap gap-2 w-full sm:w-auto">
                                     <button onclick="Views.quizAction('review')" class="flex-1 sm:flex-none px-4 py-2 bg-purple-100 text-purple-700 dark:bg-purple-900/30 dark:text-purple-300 border border-purple-200 dark:border-purple-800 rounded font-medium text-sm hover:bg-purple-200 transition">Mark for Review</button>
@@ -977,14 +991,11 @@
                             </div>
                         </div>
 
-                        <!-- Right: Palette Panel -->
                         <div id="palette-panel" class="hidden lg:flex w-full lg:w-80 flex-col gap-4 absolute lg:relative top-0 left-0 lg:h-auto h-full z-20 bg-white/95 dark:bg-slate-900/95 backdrop-blur lg:bg-transparent lg:backdrop-blur-none p-4 lg:p-0">
-                            <!-- Mobile Close -->
                             <div class="lg:hidden flex justify-end mb-2">
                                 <button onclick="document.getElementById('palette-panel').classList.add('hidden')" class="p-2 bg-slate-200 dark:bg-slate-700 rounded-full"><i class="ph ph-x"></i></button>
                             </div>
                             
-                            <!-- Legend -->
                             <div class="theme-surface border theme-border rounded-xl p-4 shadow-sm text-xs space-y-2">
                                 <div class="font-bold text-sm border-b theme-border pb-2 mb-2">Palette Legend</div>
                                 <div class="flex items-center gap-2"><div class="w-4 h-4 rounded-full bg-slate-200 dark:bg-slate-600"></div> Not Visited</div>
@@ -994,12 +1005,9 @@
                                 <div class="flex items-center gap-2"><div class="w-4 h-4 rounded-full bg-blue-500 relative"><div class="absolute right-0 bottom-0 w-1.5 h-1.5 bg-green-400 rounded-full border border-white"></div></div> Answered & Marked</div>
                             </div>
 
-                            <!-- Grid -->
                             <div class="theme-surface border theme-border rounded-xl p-4 shadow-sm flex-1 overflow-y-auto">
                                 <div class="font-bold text-sm mb-3">Questions</div>
-                                <div class="grid grid-cols-5 gap-2" id="palette-grid">
-                                    <!-- Rendered dynamically -->
-                                </div>
+                                <div class="grid grid-cols-5 gap-2" id="palette-grid"></div>
                             </div>
                         </div>
                     </div>
@@ -1042,7 +1050,7 @@
                 const grid = document.getElementById('palette-grid');
                 grid.innerHTML = activeEngine.questions.map((q, i) => {
                     const status = activeEngine.status[q.id];
-                    let bgClass = 'bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-300'; // unvisited
+                    let bgClass = 'bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-300';
                     if (status === 'visited') bgClass = 'bg-red-500 text-white';
                     if (status === 'answered') bgClass = 'bg-green-500 text-white';
                     if (status === 'review') bgClass = 'bg-purple-500 text-white';
@@ -1099,11 +1107,9 @@
 
                 const result = activeEngine.calculateResult();
                 
-                // Save to Firestore if Test Mode and Firebase is active
                 if(activeEngine.quiz.mode === 'test' && window.fb.isFirebaseValid && window.fb.auth.currentUser) {
                     try {
                         const uid = window.fb.auth.currentUser.uid;
-                        // RULE 1 Strict path:
                         const attemptRef = window.fb.collection(window.fb.db, 'artifacts', 'studysphere', 'users', uid, 'quizAttempts');
                         await window.fb.addDoc(attemptRef, {
                             quizId: activeEngine.quiz.id,
@@ -1114,11 +1120,9 @@
                         });
                     } catch (e) {
                         console.error("Failed to save attempt to backend", e);
-                        // Continuing to display result even if save fails for demo resilience
                     }
                 }
 
-                // Render Result UI
                 const root = document.getElementById('app-root');
                 root.innerHTML = `
                     <div class="max-w-4xl mx-auto space-y-6">
@@ -1270,7 +1274,6 @@
                         app.showToast('Authentication failed: ' + err.message, 'error');
                     }
                 } else {
-                    // Mock login for demo if Firebase disabled
                     app.currentUser = { uid: 'demo_user', email: e };
                     app.renderNavigationLinks();
                     app.showToast('Mock Login Successful (Demo Mode)', 'success');
@@ -1314,9 +1317,170 @@
                 `;
             },
 
-            // Basic Text Pages
-            About: () => `<div class="max-w-3xl mx-auto prose dark:prose-invert"><h1 class="text-3xl font-bold mb-4">About StudySphere</h1><p>StudySphere is a dedicated platform designed for MPSC Combined Group B and C aspirants. Our mission is to provide high-quality, bilingual (Marathi & English) MCQ practice environments that simulate the real examination experience.</p></div>`,
-            Legal: (title) => `<div class="max-w-3xl mx-auto prose dark:prose-invert"><h1 class="text-3xl font-bold mb-4">${title}</h1><p>This is a placeholder for the formal ${title}. Replace this content with actual legal text before production deployment.</p></div>`
+            // Static Pages integration
+            About: () => `
+                <div class="max-w-4xl mx-auto space-y-8">
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-brand-100 text-brand-600 rounded-full flex items-center justify-center mx-auto mb-4"><i class="ph ph-info text-3xl"></i></div>
+                        <h1 class="text-3xl sm:text-4xl font-bold mb-4">About StudySphere</h1>
+                    </div>
+                    
+                    <div class="theme-surface border theme-border rounded-xl p-6 sm:p-8 shadow-sm space-y-6 text-base sm:text-lg leading-relaxed theme-text-sec">
+                        <p>StudySphere हे MPSC Combined Group B & C परीक्षेची तयारी करणाऱ्या विद्यार्थ्यांसाठी तयार केलेले bilingual learning आणि MCQ practice platform आहे.</p>
+                        <p>या platform चा मुख्य उद्देश विद्यार्थ्यांना <strong class="theme-text font-semibold">विषय &rarr; Chapter &rarr; Topic</strong> या क्रमाने अभ्यासाशी संबंधित MCQs सोडवण्याची आणि स्वतःच्या तयारीचे मूल्यमापन करण्याची सोपी सुविधा उपलब्ध करून देणे हा आहे.</p>
+                        <p>StudySphere वर विद्यार्थ्यांना विविध विषयांमधील Practice Quizzes आणि Test Quizzes सोडवता येतील. Quiz पूर्ण केल्यानंतर score, correct answers, incorrect answers, skipped questions आणि उपलब्ध असल्यास प्रश्नांचे explanations पाहता येतील.</p>
+                        <p>Website वरील content मराठी आणि English या दोन्ही भाषांमध्ये उपलब्ध करून देण्याचा प्रयत्न केला जातो, जेणेकरून विद्यार्थ्यांना प्रश्न समजून घेणे आणि revision करणे अधिक सोपे जाईल.</p>
+                        <p>StudySphere चा उद्देश केवळ quiz देणे नसून नियमित practice, revision, accuracy आणि self-assessment यांना मदत करणारे एक व्यवस्थित digital platform तयार करणे हा आहे.</p>
+                    </div>
+
+                    <div class="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800 p-6 rounded-xl">
+                        <h3 class="text-lg font-bold text-amber-800 dark:text-amber-400 mb-2 flex items-center gap-2"><i class="ph-fill ph-warning-circle"></i> Important Note</h3>
+                        <p class="text-amber-700 dark:text-amber-300 text-sm sm:text-base leading-relaxed">
+                            StudySphere हे स्वतंत्र educational platform आहे. हे Maharashtra Public Service Commission (MPSC) चे अधिकृत website किंवा अधिकृत application नाही. <br><br>
+                            परीक्षेचा अधिकृत syllabus, notification, परीक्षा पद्धती, dates आणि इतर अधिकृत माहितीसाठी MPSC च्या अधिकृत सूचनांना अंतिम संदर्भ मानावा.
+                        </p>
+                    </div>
+                </div>
+            `,
+            
+            Contact: () => `
+                <div class="max-w-3xl mx-auto space-y-8">
+                    <h1 class="text-3xl font-bold mb-6 flex items-center gap-2"><i class="ph ph-envelope-simple text-brand-600"></i> Contact Us</h1>
+                    <div class="theme-surface border theme-border rounded-xl p-6 sm:p-8 shadow-sm">
+                        <p class="theme-text-sec text-lg mb-6">For queries, feedback, or support regarding StudySphere platform, you can reach out to our community.</p>
+                        <a href="https://t.me/+va0AGcqvCdQzNTI1" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-3 px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white rounded-lg font-medium transition shadow-sm">
+                            <i class="ph-fill ph-telegram-logo text-2xl"></i> Join our Telegram Group
+                        </a>
+                        <p class="mt-6 text-sm theme-text-sec">We will regularly update this section with more direct contact methods.</p>
+                    </div>
+                </div>
+            `,
+
+            Legal: (type) => {
+                const isPrivacy = type === 'privacy';
+                const title = isPrivacy ? 'Privacy Policy' : 'Terms of Service';
+                const date = 'September 2026'; // Placeholder current date context
+
+                const content = isPrivacy ? `
+                    <p>StudySphere (“we”, “us”, “our”) respects the privacy of its users and aims to handle user information responsibly.</p>
+                    
+                    <h3>1. Information We May Collect</h3>
+                    <p>Depending on the features used, StudySphere may collect information such as:</p>
+                    <ul>
+                        <li>Name</li>
+                        <li>Email address</li>
+                        <li>Account authentication information</li>
+                        <li>Quiz attempts</li>
+                        <li>Quiz scores and performance data</li>
+                        <li>User preferences such as theme or font-size settings</li>
+                        <li>Technical information required for website operation</li>
+                    </ul>
+                    <p>We aim to collect only information that is reasonably necessary for providing and improving the service.</p>
+
+                    <h3>2. Use of Information</h3>
+                    <p>Information may be used to:</p>
+                    <ul>
+                        <li>Provide user authentication</li>
+                        <li>Maintain quiz history</li>
+                        <li>Display quiz results</li>
+                        <li>Provide performance analysis</li>
+                        <li>Improve website functionality</li>
+                        <li>Maintain website security</li>
+                        <li>Prevent misuse of quiz functionality</li>
+                    </ul>
+
+                    <h3>3. Quiz Data</h3>
+                    <p>For logged-in users, quiz attempts and related performance information may be associated with their account. Users should not attempt to access, modify or interfere with another user's information.</p>
+
+                    <h3>4. Cookies and Local Storage</h3>
+                    <p>StudySphere may use browser storage technologies to remember preferences such as:</p>
+                    <ul>
+                        <li>Light/Dark mode</li>
+                        <li>Font-size preference</li>
+                        <li>Other necessary interface settings</li>
+                    </ul>
+
+                    <h3>5. Third-Party Services</h3>
+                    <p>StudySphere may use third-party services such as Firebase and payment/UPI-related services where required. Such services may process information according to their respective privacy policies and terms.</p>
+
+                    <h3>6. Payments and Donations</h3>
+                    <p>If donation functionality is enabled, payment processing may involve third-party UPI/payment services. StudySphere does not intend to store sensitive banking credentials or UPI application passwords.</p>
+
+                    <h3>7. Security</h3>
+                    <p>Reasonable technical measures are used to protect user information. However, no internet-based system can guarantee absolute security.</p>
+
+                    <h3>8. Children's Privacy</h3>
+                    <p>The platform is intended for examination preparation and is not specifically designed as a service for children.</p>
+
+                    <h3>9. Changes to This Policy</h3>
+                    <p>This Privacy Policy may be updated when website functionality or applicable requirements change.</p>
+
+                    <h3>10. Contact</h3>
+                    <p>For privacy-related questions, please contact us through the contact method provided on the StudySphere website.</p>
+                ` : `
+                    <p>By accessing or using StudySphere, you agree to use the website responsibly and in accordance with these Terms.</p>
+
+                    <h3>1. Purpose of the Website</h3>
+                    <p>StudySphere is an independent educational platform designed to provide MCQ-based practice and self-assessment for MPSC Combined Group B & C examination preparation.</p>
+
+                    <h3>2. Independent Platform</h3>
+                    <p>StudySphere is not an official website or application of the Maharashtra Public Service Commission (MPSC). Official examination notifications, syllabus, dates and other official information should always be verified from the official MPSC sources.</p>
+
+                    <h3>3. User Account</h3>
+                    <p>Certain features, particularly Test Quizzes, may require user authentication. Users are responsible for maintaining the security of their account credentials.</p>
+
+                    <h3>4. Quiz Rules</h3>
+                    <p>Users must not attempt to manipulate:</p>
+                    <ul>
+                        <li>quiz scores</li>
+                        <li>quiz attempts</li>
+                        <li>answers</li>
+                        <li>timers</li>
+                        <li>result records</li>
+                        <li>another user's data</li>
+                    </ul>
+
+                    <h3>5. Test Attempts</h3>
+                    <p>Where a Test Quiz is configured as a one-time attempt, an authenticated user may be restricted to one attempt for that particular quiz.</p>
+
+                    <h3>6. Educational Content</h3>
+                    <p>Quiz questions and explanations are intended for educational practice. Users should independently verify important information against reliable and official sources where appropriate.</p>
+
+                    <h3>7. Website Availability</h3>
+                    <p>We aim to keep StudySphere available and functional, but continuous uninterrupted availability cannot be guaranteed.</p>
+
+                    <h3>8. Prohibited Activities</h3>
+                    <p>Users must not:</p>
+                    <ul>
+                        <li>attempt unauthorized access</li>
+                        <li>manipulate quiz results</li>
+                        <li>interfere with website security</li>
+                        <li>access another user's data</li>
+                        <li>misuse the website</li>
+                        <li>intentionally disrupt website operation</li>
+                    </ul>
+
+                    <h3>9. Donations</h3>
+                    <p>If donation functionality is available, donations are voluntary. Payment processing may be handled through external UPI/payment services.</p>
+
+                    <h3>10. Changes</h3>
+                    <p>These Terms may be updated when required.</p>
+
+                    <h3>11. Contact</h3>
+                    <p>For questions regarding these Terms, please use the contact option provided on the StudySphere website.</p>
+                `;
+
+                return `
+                    <div class="max-w-4xl mx-auto theme-surface border theme-border rounded-xl p-8 shadow-sm">
+                        <h1 class="text-3xl font-bold mb-2">${title}</h1>
+                        <p class="text-sm theme-text-sec mb-8">Last Updated: ${date}</p>
+                        
+                        <div class="prose dark:prose-invert max-w-none prose-brand prose-h3:mt-8 prose-h3:mb-4 prose-p:text-slate-600 dark:prose-p:text-slate-300 prose-li:text-slate-600 dark:prose-li:text-slate-300">
+                            ${content}
+                        </div>
+                    </div>
+                `;
+            }
         };
 
         app.logout = async () => {
@@ -1333,11 +1497,10 @@
         const router = () => {
             const hash = window.location.hash || '#/';
             const root = document.getElementById('app-root');
-            activeEngine = null; // reset quiz engine on navigation
+            activeEngine = null;
             
-            // Re-apply animations
             root.classList.remove('fade-in');
-            void root.offsetWidth; // trigger reflow
+            void root.offsetWidth; 
             root.classList.add('fade-in');
 
             try {
@@ -1347,8 +1510,9 @@
                 else if (hash === '#/login') root.innerHTML = Views.Login();
                 else if (hash === '#/dashboard') root.innerHTML = Views.Dashboard();
                 else if (hash === '#/about') root.innerHTML = Views.About();
-                else if (hash === '#/privacy-policy') root.innerHTML = Views.Legal('Privacy Policy');
-                else if (hash === '#/terms') root.innerHTML = Views.Legal('Terms of Service');
+                else if (hash === '#/contact') root.innerHTML = Views.Contact();
+                else if (hash === '#/privacy-policy') root.innerHTML = Views.Legal('privacy');
+                else if (hash === '#/terms') root.innerHTML = Views.Legal('terms');
                 else root.innerHTML = `<div class="text-center py-20 text-red-500 text-xl">Page not found (404)</div>`;
             } catch (e) {
                 console.error("Routing error:", e);
@@ -1359,20 +1523,18 @@
 
         window.addEventListener('hashchange', router);
         
-        // Listen to Firebase Auth state if valid
-        if(window.fb.isFirebaseValid) {
-            window.fb.onAuthStateChanged(window.fb.auth, (user) => {
-                app.currentUser = user;
-                app.renderNavigationLinks();
-                // Re-render if on dashboard/login
-                if(window.location.hash === '#/dashboard' || window.location.hash === '#/login') router();
-            });
-        } else {
-            app.renderNavigationLinks(); // Init with null user
-        }
-
-        // Initialize App
         window.addEventListener('DOMContentLoaded', () => {
+            // Firebase setup (type="module") is guaranteed to be ready by DOMContentLoaded
+            if(window.fb && window.fb.isFirebaseValid) {
+                window.fb.onAuthStateChanged(window.fb.auth, (user) => {
+                    app.currentUser = user;
+                    app.renderNavigationLinks();
+                    if(window.location.hash === '#/dashboard' || window.location.hash === '#/login') router();
+                });
+            } else {
+                app.renderNavigationLinks(); 
+            }
+            
             router();
         });
 
