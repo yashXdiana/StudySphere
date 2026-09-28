@@ -3,14 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>StudySphere - MPSC Group B & C Preparation</title>
+    <title>StudySphere - Final | MPSC Group B & C Preparation</title>
     <meta name="description" content="Bilingual MCQ Practice Platform for MPSC Combined Group B and C Examination.">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700&family=Noto+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700&family=Noto+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind & Icons -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <!-- Confetti for Result Celebrations -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
     <script>
         tailwind.config = {
@@ -21,24 +25,24 @@
                         sans: ['"Noto Sans"', '"Noto Sans Devanagari"', 'sans-serif'],
                     },
                     colors: {
-                        brand: {
-                            50: '#eff6ff',
-                            100: '#dbeafe',
-                            500: '#3b82f6',
-                            600: '#2563eb',
-                            700: '#1d4ed8',
-                            900: '#1e3a8a',
-                        },
-                        dark: {
-                            bg: '#0f172a', // slate-900
-                            surface: '#1e293b', // slate-800
-                            border: '#334155' // slate-700
+                        brand: { 50: '#eff6ff', 100: '#dbeafe', 500: '#3b82f6', 600: '#2563eb', 700: '#1d4ed8', 900: '#1e3a8a' },
+                        dark: { bg: '#0f172a', surface: '#1e293b', border: '#334155' }
+                    },
+                    animation: {
+                        'fade-in-up': 'fadeInUp 0.5s ease-out forwards',
+                        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                    },
+                    keyframes: {
+                        fadeInUp: {
+                            '0%': { opacity: '0', transform: 'translateY(15px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
                         }
                     }
                 }
             }
         }
     </script>
+
     <style>
         :root {
             --bg-color: #f8fafc;
@@ -46,11 +50,6 @@
             --text-primary: #0f172a;
             --text-secondary: #475569;
             --border-color: #e2e8f0;
-            --palette-unvisited: #e2e8f0;
-            --palette-visited: #ef4444;
-            --palette-answered: #22c55e;
-            --palette-review: #a855f7;
-            --palette-ans-review: #3b82f6;
         }
 
         [data-theme="dark"] {
@@ -59,7 +58,6 @@
             --text-primary: #f1f5f9;
             --text-secondary: #94a3b8;
             --border-color: #334155;
-            --palette-unvisited: #334155;
         }
 
         html {
@@ -76,14 +74,13 @@
             overflow-x: hidden;
         }
 
-        /* Utility classes mapping to CSS vars */
         .theme-bg { background-color: var(--bg-color); }
         .theme-surface { background-color: var(--surface-color); }
         .theme-text { color: var(--text-primary); }
         .theme-text-sec { color: var(--text-secondary); }
         .theme-border { border-color: var(--border-color); }
 
-        /* Font scaling logic via HTML root rem scaling */
+        /* Font Scaling */
         html.font-small { font-size: 14px; }
         html.font-default { font-size: 16px; }
         html.font-large { font-size: 18px; }
@@ -94,18 +91,29 @@
         ::-webkit-scrollbar-thumb { background: var(--border-color); border-radius: 4px; }
         ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
 
-        /* Animations */
-        .fade-in { animation: fadeIn 0.3s ease-in-out; }
+        /* Page Transitions */
+        .fade-in { animation: fadeIn 0.3s ease-in-out forwards; }
         @keyframes fadeIn { from { opacity: 0; transform: translateY(5px); } to { opacity: 1; transform: translateY(0); } }
 
-        /* Radio Button Styling */
+        /* Shimmer Skeleton Loader */
+        .skeleton {
+            background: linear-gradient(90deg, var(--border-color) 25%, var(--bg-color) 50%, var(--border-color) 75%);
+            background-size: 200% 100%;
+            animation: shimmer 1.5s infinite;
+        }
+        @keyframes shimmer { 0% { background-position: -200% 0; } 100% { background-position: 200% 0; } }
+
         input[type="radio"] { accent-color: #2563eb; width: 1.25rem; height: 1.25rem; cursor: pointer; }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(37, 99, 235, 0.1) 0%, rgba(37, 99, 235, 0) 100%);
+        }
     </style>
 </head>
 <body class="theme-bg theme-text">
 
     <!-- Accessibility Toolbar -->
-    <div class="theme-surface theme-border border-b text-xs sm:text-sm py-1.5 px-4 flex justify-between items-center z-50 sticky top-0">
+    <div class="theme-surface theme-border border-b text-xs sm:text-sm py-1.5 px-4 flex justify-between items-center z-50 sticky top-0 backdrop-blur-md bg-opacity-90 dark:bg-opacity-90">
         <div class="flex items-center gap-2">
             <span class="font-medium theme-text-sec hidden sm:inline">Accessibility:</span>
             <button onclick="app.setFontSize('small')" class="px-2 py-0.5 rounded hover:bg-slate-200 dark:hover:bg-slate-700 transition" aria-label="Decrease font size">A−</button>
@@ -116,19 +124,19 @@
             <button onclick="app.toggleTheme()" class="flex items-center gap-1 px-2 py-0.5 rounded hover:bg-slate-200 dark:hover:bg-slate-700 transition" aria-label="Toggle Theme">
                 <i class="ph ph-sun text-lg dark:hidden"></i>
                 <i class="ph ph-moon text-lg hidden dark:block"></i>
-                <span class="hidden sm:inline" id="theme-label">Light Mode</span>
+                <span class="hidden sm:inline font-medium" id="theme-label">Light Mode</span>
             </button>
         </div>
     </div>
 
     <!-- Main Header -->
-    <header class="theme-surface shadow-sm sticky top-8 z-40 border-b theme-border">
+    <header class="theme-surface shadow-sm sticky top-8 z-40 border-b theme-border backdrop-blur-md bg-opacity-95 dark:bg-opacity-95">
         <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
             <a href="#/" class="flex items-center gap-2 group focus:outline-none">
-                <div class="bg-brand-600 text-white p-1.5 rounded-lg group-hover:bg-brand-700 transition">
+                <div class="bg-gradient-to-br from-brand-500 to-brand-700 text-white p-1.5 rounded-lg group-hover:shadow-lg transition-all transform group-hover:scale-105">
                     <i class="ph ph-books text-2xl"></i>
                 </div>
-                <h1 class="text-2xl font-bold tracking-tight text-brand-600 dark:text-brand-500">StudySphere</h1>
+                <h1 class="text-2xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-brand-600 to-brand-800 dark:from-brand-400 dark:to-brand-200">StudySphere</h1>
             </a>
             
             <button onclick="app.toggleDrawer()" class="p-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-700 transition focus:outline-none focus:ring-2 focus:ring-brand-500" aria-label="Open Menu">
@@ -138,83 +146,85 @@
     </header>
 
     <!-- Navigation Drawer Overlay -->
-    <div id="drawer-overlay" class="fixed inset-0 bg-black/50 z-50 hidden opacity-0 transition-opacity duration-300" onclick="app.toggleDrawer()"></div>
+    <div id="drawer-overlay" class="fixed inset-0 bg-slate-900/50 backdrop-blur-sm z-50 hidden opacity-0 transition-opacity duration-300" onclick="app.toggleDrawer()"></div>
     
     <!-- Navigation Drawer -->
     <nav id="drawer" class="fixed top-0 right-0 h-full w-4/5 max-w-sm theme-surface shadow-2xl z-50 transform translate-x-full transition-transform duration-300 flex flex-col">
         <div class="p-4 flex items-center justify-between border-b theme-border">
             <div class="flex items-center gap-2">
-                <i class="ph ph-books text-xl text-brand-600"></i>
+                <div class="bg-brand-600 text-white p-1 rounded-md"><i class="ph ph-books text-lg"></i></div>
                 <span class="font-bold text-lg">Menu</span>
             </div>
             <button onclick="app.toggleDrawer()" class="p-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-700 transition" aria-label="Close Menu">
                 <i class="ph ph-x text-xl"></i>
             </button>
         </div>
-        <div class="flex-1 overflow-y-auto py-4 px-2 space-y-1" id="drawer-links">
+        <div class="flex-1 overflow-y-auto py-4 px-3 space-y-1" id="drawer-links">
             <!-- Links rendered dynamically based on Auth state -->
+        </div>
+        <div class="p-4 border-t theme-border text-center text-xs theme-text-sec">
+            StudySphere Final Release v2.0
         </div>
     </nav>
 
     <!-- Main Content Area -->
-    <main id="app-root" class="flex-1 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8 fade-in relative">
-        <!-- Content will be injected here by the router -->
+    <main id="app-root" class="flex-1 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8 relative">
+        <!-- Content injected via Async Router -->
     </main>
 
     <!-- Modals Container -->
-    <div id="modal-container" class="fixed inset-0 z-[60] flex items-center justify-center hidden">
-        <div class="absolute inset-0 bg-black/60 backdrop-blur-sm" onclick="app.closeModal()"></div>
-        <div id="modal-content" class="relative w-full max-w-md m-4 theme-surface rounded-xl shadow-2xl flex flex-col max-h-[90vh] overflow-y-auto fade-in">
+    <div id="modal-container" class="fixed inset-0 z-[60] flex items-center justify-center hidden opacity-0 transition-opacity duration-200">
+        <div class="absolute inset-0 bg-slate-900/60 backdrop-blur-sm" onclick="app.closeModal()"></div>
+        <div id="modal-content" class="relative w-full max-w-md m-4 theme-surface rounded-2xl shadow-2xl flex flex-col max-h-[90vh] overflow-y-auto transform scale-95 transition-transform duration-200">
             <!-- Modal Body -->
         </div>
     </div>
 
     <!-- Custom Alert Container -->
-    <div id="toast-container" class="fixed bottom-4 left-1/2 transform -translate-x-1/2 z-[70] flex flex-col gap-2 w-full max-w-sm px-4"></div>
+    <div id="toast-container" class="fixed bottom-4 left-1/2 transform -translate-x-1/2 z-[70] flex flex-col gap-2 w-full max-w-sm px-4 pointer-events-none"></div>
 
     <footer class="theme-surface border-t theme-border mt-auto">
         <div class="max-w-7xl mx-auto px-4 py-8 sm:py-12">
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
                 <div class="col-span-1 sm:col-span-2">
                     <div class="flex items-center gap-2 mb-4">
-                        <i class="ph ph-books text-2xl text-brand-600"></i>
-                        <span class="text-xl font-bold text-brand-600 dark:text-brand-500">StudySphere</span>
+                        <i class="ph-fill ph-books text-3xl text-brand-600"></i>
+                        <span class="text-2xl font-bold text-brand-600 dark:text-brand-500">StudySphere</span>
                     </div>
                     <p class="theme-text-sec text-sm leading-relaxed mb-4 max-w-md">
-                        StudySphere is a bilingual MCQ practice platform designed for MPSC Combined Group B & C examination preparation.
+                        StudySphere is a comprehensive bilingual MCQ practice platform designed specifically for the MPSC Combined Group B & C examinations.
                     </p>
                 </div>
                 
                 <div>
-                    <h3 class="font-bold mb-4">Quick Links</h3>
-                    <ul class="space-y-2 text-sm theme-text-sec">
-                        <li><a href="#/" class="hover:text-brand-600 transition">Home</a></li>
-                        <li><a href="#/about" class="hover:text-brand-600 transition">About Us</a></li>
-                        <li><a href="#/dashboard" class="hover:text-brand-600 transition">Dashboard</a></li>
-                        <li><a href="#/contact" class="hover:text-brand-600 transition">Contact</a></li>
+                    <h3 class="font-bold text-lg mb-4">Explore</h3>
+                    <ul class="space-y-3 text-sm theme-text-sec">
+                        <li><a href="#/" class="hover:text-brand-600 dark:hover:text-brand-400 transition flex items-center gap-2"><i class="ph ph-caret-right"></i> Home</a></li>
+                        <li><a href="#/about" class="hover:text-brand-600 dark:hover:text-brand-400 transition flex items-center gap-2"><i class="ph ph-caret-right"></i> About Us</a></li>
+                        <li><a href="#/dashboard" class="hover:text-brand-600 dark:hover:text-brand-400 transition flex items-center gap-2"><i class="ph ph-caret-right"></i> Dashboard</a></li>
                     </ul>
                 </div>
 
                 <div>
-                    <h3 class="font-bold mb-4">Support & Legal</h3>
-                    <ul class="space-y-2 text-sm theme-text-sec">
+                    <h3 class="font-bold text-lg mb-4">Support & Legal</h3>
+                    <ul class="space-y-3 text-sm theme-text-sec">
                         <li>
                             <a href="https://t.me/+va0AGcqvCdQzNTI1" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 hover:text-brand-600 transition">
                                 <i class="ph-fill ph-telegram-logo text-lg text-blue-500"></i> Telegram Group
                             </a>
                         </li>
-                        <li><a href="#/privacy-policy" class="hover:text-brand-600 transition">Privacy Policy</a></li>
-                        <li><a href="#/terms" class="hover:text-brand-600 transition">Terms of Service</a></li>
+                        <li><a href="#/privacy-policy" class="hover:text-brand-600 dark:hover:text-brand-400 transition flex items-center gap-2"><i class="ph ph-caret-right"></i> Privacy Policy</a></li>
+                        <li><a href="#/terms" class="hover:text-brand-600 dark:hover:text-brand-400 transition flex items-center gap-2"><i class="ph ph-caret-right"></i> Terms of Service</a></li>
                     </ul>
                 </div>
             </div>
             
             <div class="mt-8 pt-8 border-t theme-border flex flex-col sm:flex-row items-center justify-between gap-4">
                 <p class="text-sm theme-text-sec text-center sm:text-left">
-                    &copy; <span id="year"></span> StudySphere. All rights reserved.
+                    &copy; <span id="year"></span> StudySphere. All rights reserved. Built for MPSC Aspirants.
                 </p>
-                <button onclick="app.openDonationModal()" class="flex items-center gap-2 px-4 py-2 bg-brand-600 hover:bg-brand-700 text-white rounded-lg transition font-medium text-sm shadow-sm focus:ring-2 focus:ring-offset-2 focus:ring-brand-500 dark:focus:ring-offset-slate-900">
-                    <i class="ph ph-heart text-lg"></i> Donate Us
+                <button onclick="app.openDonationModal()" class="flex items-center gap-2 px-5 py-2.5 bg-gradient-to-r from-brand-600 to-brand-700 hover:from-brand-700 hover:to-brand-800 text-white rounded-xl transition-all font-medium text-sm shadow-md hover:shadow-lg focus:ring-2 focus:ring-offset-2 focus:ring-brand-500 transform hover:-translate-y-0.5">
+                    <i class="ph-fill ph-heart text-lg text-pink-300"></i> Support Project
                 </button>
             </div>
         </div>
@@ -223,15 +233,16 @@
     <script type="module">
         import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
         import { getAuth, signInAnonymously, onAuthStateChanged, signOut, signInWithEmailAndPassword, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js";
-        import { getFirestore, doc, setDoc, getDoc, collection, query, where, getDocs, serverTimestamp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js";
+        import { getFirestore, doc, setDoc, getDoc, collection, query, where, getDocs, serverTimestamp, addDoc } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js";
 
+        // Production-ready Firebase configuration fallback
         const firebaseConfig = typeof __firebase_config !== 'undefined' ? JSON.parse(__firebase_config) : {
-            apiKey: "PLACEHOLDER_API_KEY",
-            authDomain: "studysphere-placeholder.firebaseapp.com",
-            projectId: "studysphere-placeholder",
-            storageBucket: "studysphere-placeholder.appspot.com",
-            messagingSenderId: "0000000000",
-            appId: "1:0000000000:web:abcdef123456"
+            apiKey: "MOCK_KEY_FOR_LOCAL_DEV",
+            authDomain: "studysphere.firebaseapp.com",
+            projectId: "studysphere",
+            storageBucket: "studysphere.appspot.com",
+            messagingSenderId: "000",
+            appId: "1:000:web:000"
         };
 
         let appInst, auth, db;
@@ -241,135 +252,130 @@
             appInst = initializeApp(firebaseConfig);
             auth = getAuth(appInst);
             db = getFirestore(appInst);
-            if(firebaseConfig.apiKey !== "PLACEHOLDER_API_KEY") {
+            if(firebaseConfig.apiKey !== "MOCK_KEY_FOR_LOCAL_DEV") {
                 isFirebaseValid = true;
             }
         } catch (e) {
-            console.warn("Firebase initialization failed. Running in standalone demo mode.");
+            console.warn("Firebase initialized in Local Mode.");
         }
 
         window.fb = {
             auth, db, isFirebaseValid,
             signInAnonymously, onAuthStateChanged, signOut, signInWithEmailAndPassword, createUserWithEmailAndPassword,
-            doc, setDoc, getDoc, collection, query, where, getDocs, serverTimestamp
+            doc, setDoc, getDoc, collection, query, where, getDocs, serverTimestamp, addDoc
         };
     </script>
 
     <script>
-        // MOCK DATA (Content Architecture mapped to Sitemap)
-        const DATA = {
-            subjects: [
-                // Common
-                { id: 's1', titleMr: 'सामान्य विज्ञान', titleEn: 'General Science', category: 'common' },
-                { id: 's2', titleMr: 'चालू घडामोडी', titleEn: 'Current Affairs', category: 'common' },
-                { id: 's3', titleMr: 'भूगोल', titleEn: 'Geography', category: 'common' },
-                { id: 's4', titleMr: 'इतिहास', titleEn: 'History', category: 'common' },
-                { id: 's5', titleMr: 'अर्थशास्त्र', titleEn: 'Economics', category: 'common' },
-                { id: 's8', titleMr: 'बौद्धिक चाचणी व अंकगणित', titleEn: 'Mental Ability & Arithmetic', category: 'common' },
-                { id: 's9', titleMr: 'भारतीय राज्यघटना', titleEn: 'Indian Polity & Civics', category: 'common' },
-                // Mains Only
-                { id: 's6', titleMr: 'मराठी', titleEn: 'Marathi', category: 'mains' },
-                { id: 's7', titleMr: 'इंग्रजी', titleEn: 'English', category: 'mains' },
-                { id: 's10', titleMr: 'बुद्धिमत्ता चाचणी व अंकगणित', titleEn: 'Intelligent Test & Arithmetic', category: 'mains' },
-                { id: 's11', titleMr: 'भारतीय राज्यघटना व पंचायत राज', titleEn: 'Indian Constitution & Panchayat Raj', category: 'mains' },
-                { id: 's12', titleMr: 'माहिती तंत्रज्ञान / संगणक', titleEn: 'Information Technology / Computer Basics', category: 'mains' },
-                { id: 's13', titleMr: 'RTI 2005 व RTS 2015', titleEn: 'RTI Act 2005 & Maharashtra RTS Act 2015', category: 'mains' }
-            ],
-            chapters: [
-                { id: 'c1', subjectId: 's3', titleMr: 'पृथ्वी, स्थान, अक्षांश व रेखांश', titleEn: 'Earth, Location, Latitude & Longitude' },
-                { id: 'c2', subjectId: 's3', titleMr: 'महाराष्ट्राचा भूगोल', titleEn: 'Geography of Maharashtra' }
-            ],
-            topics: [
-                { id: 't1', chapterId: 'c1', titleMr: 'अक्षांश आणि रेखांश', titleEn: 'Latitude and Longitude' },
-                { id: 't2', chapterId: 'c1', titleMr: 'पृथ्वीची गती', titleEn: 'Motion of Earth' }
-            ],
-            quizzes: [
-                { id: 'q1', topicId: 't1', titleMr: 'अक्षांश मूलभूत सराव', titleEn: 'Latitude Basics Practice', mode: 'practice', qCount: 5 },
-                { id: 'q2', topicId: 't1', titleMr: 'अक्षांश व रेखांश मुख्य चाचणी', titleEn: 'Lat & Long Main Test', mode: 'test', qCount: 5 }
-            ],
-            questions: {
-                'q1': [
-                    {
-                        id: 'qn1', order: 1,
-                        mr: 'विषुववृत्त हे कोणते अक्षांश दर्शवते?', 
-                        en: 'Which latitude does the Equator represent?',
-                        options: [
-                            { id: 'A', mr: '0°', en: '0°' },
-                            { id: 'B', mr: '90° N', en: '90° N' },
-                            { id: 'C', mr: '23.5° S', en: '23.5° S' },
-                            { id: 'D', mr: '180°', en: '180°' }
-                        ],
-                        correct: 'A',
-                        expMr: 'विषुववृत्त हे पृथ्वीच्या मध्यभागातून जाणारे 0° अक्षांश आहे.',
-                        expEn: 'The Equator is the 0° latitude passing through the center of the Earth.',
-                        marks: 2, negMarks: 0
-                    },
-                    {
-                        id: 'qn2', order: 2,
-                        mr: 'कर्कवृत्त कोणत्या अक्षांशावर स्थित आहे?', 
-                        en: 'At which latitude is the Tropic of Cancer located?',
-                        options: [
-                            { id: 'A', mr: '23.5° S', en: '23.5° S' },
-                            { id: 'B', mr: '23.5° N', en: '23.5° N' },
-                            { id: 'C', mr: '66.5° N', en: '66.5° N' },
-                            { id: 'D', mr: '0°', en: '0°' }
-                        ],
-                        correct: 'B',
-                        expMr: 'कर्कवृत्त उत्तर गोलार्धात 23.5° N अक्षांशावर आहे.',
-                        expEn: 'The Tropic of Cancer is located in the Northern Hemisphere at 23.5° N.',
-                        marks: 2, negMarks: 0
-                    },
-                    {
-                        id: 'qn3', order: 3,
-                        mr: 'पृथ्वीवरील एकूण अक्षांशांची संख्या किती आहे?', 
-                        en: 'What is the total number of latitudes on Earth?',
-                        options: [
-                            { id: 'A', mr: '180', en: '180' },
-                            { id: 'B', mr: '181', en: '181' },
-                            { id: 'C', mr: '360', en: '360' },
-                            { id: 'D', mr: '90', en: '90' }
-                        ],
-                        correct: 'B',
-                        expMr: 'उत्तर गोलार्धात 90, दक्षिण गोलार्धात 90 आणि 1 विषुववृत्त (90+90+1 = 181).',
-                        expEn: '90 in the Northern Hemisphere, 90 in the Southern Hemisphere, and 1 Equator (90+90+1 = 181).',
-                        marks: 2, negMarks: 0
-                    },
-                    {
-                        id: 'qn4', order: 4,
-                        mr: 'सर्वात मोठे अक्षवृत्त कोणते?', 
-                        en: 'Which is the largest circle of latitude?',
-                        options: [
-                            { id: 'A', mr: 'मकरवृत्त', en: 'Tropic of Capricorn' },
-                            { id: 'B', mr: 'आर्क्टिक वृत्त', en: 'Arctic Circle' },
-                            { id: 'C', mr: 'विषुववृत्त', en: 'Equator' },
-                            { id: 'D', mr: 'कर्कवृत्त', en: 'Tropic of Cancer' }
-                        ],
-                        correct: 'C',
-                        expMr: 'विषुववृत्त हे पृथ्वीवरील सर्वात मोठे अक्षवृत्त (Great Circle) आहे.',
-                        expEn: 'The Equator is the largest circle of latitude (Great Circle) on Earth.',
-                        marks: 2, negMarks: 0
-                    },
-                    {
-                        id: 'qn5', order: 5,
-                        mr: 'दोन लगतच्या अक्षांशांमधील अंदाजे अंतर किती असते?', 
-                        en: 'What is the approximate distance between two consecutive latitudes?',
-                        options: [
-                            { id: 'A', mr: '100 km', en: '100 km' },
-                            { id: 'B', mr: '111 km', en: '111 km' },
-                            { id: 'C', mr: '150 km', en: '150 km' },
-                            { id: 'D', mr: '69 km', en: '69 km' }
-                        ],
-                        correct: 'B',
-                        expMr: 'दोन लगतच्या अक्षांशांमधील अंतर सर्वत्र समान असते, जे अंदाजे 111 किलोमीटर आहे.',
-                        expEn: 'The distance between two consecutive latitudes is constant everywhere, approximately 111 kilometers.',
-                        marks: 2, negMarks: 0
-                    }
+        /**
+         * UNIFIED DATA MODEL
+         * Mimics the final architecture where DataService fetches JSON files generated by the backend script.
+         */
+        const DataService = {
+            // Mock Index Data (Normally fetched from `data/quiz-index.json`)
+            index: {
+                subjects: [
+                    { id: 's1', titleMr: 'सामान्य विज्ञान', titleEn: 'General Science', category: 'common' },
+                    { id: 'GEO', titleMr: 'भूगोल', titleEn: 'Geography', category: 'common' },
+                    { id: 'POL', titleMr: 'भारतीय राज्यघटना', titleEn: 'Indian Polity & Civics', category: 'common' },
+                    { id: 'MAR', titleMr: 'मराठी', titleEn: 'Marathi', category: 'mains' }
+                ],
+                chapters: [
+                    { id: 'CH-GEO-01', subjectId: 'GEO', titleMr: 'पृथ्वी, स्थान, अक्षांश व रेखांश', titleEn: 'Earth, Location, Latitude & Longitude' }
+                ],
+                topics: [
+                    { id: 'TOP-GEO-01-01', chapterId: 'CH-GEO-01', titleMr: 'अक्षांश आणि रेखांश', titleEn: 'Latitude and Longitude' }
+                ],
+                quizzes: [
+                    { id: 'QUIZ-GEO-01-01-003', topicId: 'TOP-GEO-01-01', titleMr: 'अक्षांश - सराव प्रश्नसंच', titleEn: 'Latitude - Practice Quiz', mode: 'practice', qCount: 10 }
                 ]
+            },
+
+            // Mock Data fetching mechanisms (Returns Promises to simulate network requests)
+            async getSubjects() { return this.index.subjects; },
+            async getChapters(subjectId) { return this.index.chapters.filter(c => c.subjectId === subjectId); },
+            async getTopics(chapterId) { return this.index.topics.filter(t => t.chapterId === chapterId); },
+            async getQuizzes(topicId) { return this.index.quizzes.filter(q => q.topicId === topicId); },
+            async getQuizDetails(quizId) {
+                // Simulate network delay for realistic UI feedback
+                await new Promise(r => setTimeout(r, 600)); 
+                
+                // Embedded Real Output from your JSON generator script!
+                if(quizId === 'QUIZ-GEO-01-01-003') {
+                    return {
+                      "quizId": "QUIZ-GEO-01-01-003",
+                      "subjectId": "GEO",
+                      "chapterId": "CH-GEO-01",
+                      "topicId": "TOP-GEO-01-01",
+                      "quizTitleMarathi": "अक्षांश - सराव प्रश्नसंच",
+                      "quizTitleEnglish": "Latitude - Practice Quiz",
+                      "quizType": "practice",
+                      "questionCount": 10,
+                      "negativeMarking": 0.25,
+                      "questions": [
+                        {
+                          "questionId": "Q-GEO-01-01-003-001",
+                          "questionNumber": 1,
+                          "questionMarathi": "विषुववृत्त हे कोणते अक्षवृत्त आहे?",
+                          "questionEnglish": "Which latitude does the Equator represent?",
+                          "options": { "A": { "optionMarathi": "0°", "optionEnglish": "0°" }, "B": { "optionMarathi": "23.5° N", "optionEnglish": "23.5° N" }, "C": { "optionMarathi": "90°", "optionEnglish": "90°" }, "D": { "optionMarathi": "66.5° S", "optionEnglish": "66.5° S" } },
+                          "correctOption": "A",
+                          "explanationMarathi": "विषुववृत्त हे पृथ्वीच्या मध्यभागातून जाणारे 0° अक्षवृत्त आहे, जे पृथ्वीचे उत्तर आणि दक्षिण गोलार्धात विभाजन करते.",
+                          "explanationEnglish": "The Equator is the 0° latitude passing through the center of the Earth, dividing it into Northern and Southern Hemispheres.",
+                          "difficulty": "Easy"
+                        },
+                        {
+                          "questionId": "Q-GEO-01-01-003-002",
+                          "questionNumber": 2,
+                          "questionMarathi": "पृथ्वीवरील एकूण अक्षवृत्तांची संख्या किती आहे?",
+                          "questionEnglish": "What is the total number of latitudes on Earth?",
+                          "options": { "A": { "optionMarathi": "180", "optionEnglish": "180" }, "B": { "optionMarathi": "181", "optionEnglish": "181" }, "C": { "optionMarathi": "360", "optionEnglish": "360" }, "D": { "optionMarathi": "90", "optionEnglish": "90" } },
+                          "correctOption": "B",
+                          "explanationMarathi": "उत्तर गोलार्धात 90, दक्षिण गोलार्धात 90 आणि 1 विषुववृत्त असे मिळून एकूण 181 अक्षवृत्ते आहेत.",
+                          "explanationEnglish": "There are 90 latitudes in the Northern Hemisphere, 90 in the Southern Hemisphere, and 1 Equator, making a total of 181.",
+                          "difficulty": "Easy"
+                        },
+                        {
+                          "questionId": "Q-GEO-01-01-003-003",
+                          "questionNumber": 3,
+                          "questionMarathi": "दोन लगतच्या अक्षवृत्तांमधील अंदाजे अंतर किती असते?",
+                          "questionEnglish": "What is the approximate distance between two consecutive latitudes?",
+                          "options": { "A": { "optionMarathi": "111 किमी", "optionEnglish": "111 km" }, "B": { "optionMarathi": "100 किमी", "optionEnglish": "100 km" }, "C": { "optionMarathi": "69 किमी", "optionEnglish": "69 km" }, "D": { "optionMarathi": "180 किमी", "optionEnglish": "180 km" } },
+                          "correctOption": "A",
+                          "explanationMarathi": "दोन लगतच्या अक्षवृत्तांमधील अंतर सर्वत्र समान असते, जे अंदाजे 111 किलोमीटर (किंवा 69 मैल) असते.",
+                          "explanationEnglish": "The distance between two consecutive latitudes is relatively constant everywhere, which is approximately 111 kilometers (or 69 miles).",
+                          "difficulty": "Moderate"
+                        },
+                        {
+                          "questionId": "Q-GEO-01-01-003-004",
+                          "questionNumber": 4,
+                          "questionMarathi": "विषुववृत्ताकडून ध्रुवांकडे जाताना अक्षवृत्तांच्या लांबीवर काय परिणाम होतो?",
+                          "questionEnglish": "What happens to the length of latitudes as we move from the Equator towards the poles?",
+                          "options": { "A": { "optionMarathi": "लांबी वाढते", "optionEnglish": "Length increases" }, "B": { "optionMarathi": "लांबी कमी होत जाते", "optionEnglish": "Length decreases" }, "C": { "optionMarathi": "लांबी समान राहते", "optionEnglish": "Length remains constant" }, "D": { "optionMarathi": "प्रथम वाढते आणि नंतर कमी होते", "optionEnglish": "First increases then decreases" } },
+                          "correctOption": "B",
+                          "explanationMarathi": "पृथ्वीच्या गोलाकार आकारामुळे, विषुववृत्ताकडून ध्रुवांकडे जाताना अक्षवृत्तांचा परिघ किंवा लांबी कमी होत जाते आणि ध्रुवांवर ती शून्य होते.",
+                          "explanationEnglish": "Due to the spherical shape of the Earth, the circumference or length of latitudes decreases from the Equator to the poles, becoming zero at the poles.",
+                          "difficulty": "Moderate"
+                        },
+                        {
+                          "questionId": "Q-GEO-01-01-003-005",
+                          "questionNumber": 5,
+                          "questionMarathi": "कर्कवृत्त (Tropic of Cancer) भारताच्या किती राज्यांमधून जाते?",
+                          "questionEnglish": "The Tropic of Cancer passes through how many states of India?",
+                          "options": { "A": { "optionMarathi": "7", "optionEnglish": "7" }, "B": { "optionMarathi": "8", "optionEnglish": "8" }, "C": { "optionMarathi": "9", "optionEnglish": "9" }, "D": { "optionMarathi": "6", "optionEnglish": "6" } },
+                          "correctOption": "B",
+                          "explanationMarathi": "कर्कवृत्त (23.5° N) भारताच्या ८ राज्यांमधून जाते: गुजरात, राजस्थान, मध्य प्रदेश, छत्तीसगड, झारखंड, पश्चिम बंगाल, त्रिपुरा आणि मिझोराम.",
+                          "explanationEnglish": "The Tropic of Cancer (23.5° N) passes through 8 Indian states: Gujarat, Rajasthan, Madhya Pradesh, Chhattisgarh, Jharkhand, West Bengal, Tripura, and Mizoram.",
+                          "difficulty": "Moderate"
+                        }
+                      ]
+                    };
+                }
+                throw new Error("Quiz not found");
             }
         };
 
-        DATA.questions['q2'] = DATA.questions['q1'].map(q => ({...q, negMarks: 0.5}));
-
+        // Core App Logic
         const app = {
             currentUser: null,
             theme: localStorage.getItem('theme') || 'light',
@@ -406,25 +412,43 @@
                 const container = document.getElementById('toast-container');
                 const toast = document.createElement('div');
                 const colors = {
-                    info: 'bg-slate-800 text-white',
+                    info: 'bg-slate-800 text-white dark:bg-slate-100 dark:text-slate-900',
                     success: 'bg-green-600 text-white',
                     error: 'bg-red-600 text-white',
                     warning: 'bg-amber-500 text-white'
                 };
-                toast.className = `${colors[type]} px-4 py-3 rounded-lg shadow-lg text-sm font-medium fade-in flex items-center justify-between gap-3`;
-                toast.innerHTML = `<span>${message}</span> <button onclick="this.parentElement.remove()" class="opacity-75 hover:opacity-100"><i class="ph ph-x"></i></button>`;
+                const icons = { info: 'ph-info', success: 'ph-check-circle', error: 'ph-warning', warning: 'ph-warning-circle' };
+                
+                toast.className = `${colors[type]} px-4 py-3 rounded-xl shadow-lg text-sm font-medium fade-in flex items-center justify-between gap-3 pointer-events-auto mt-2 transition-all transform`;
+                toast.innerHTML = `<div class="flex items-center gap-2"><i class="ph-fill ${icons[type]} text-lg"></i> <span>${message}</span></div> <button onclick="this.parentElement.remove()" class="opacity-75 hover:opacity-100"><i class="ph ph-x"></i></button>`;
                 container.appendChild(toast);
-                setTimeout(() => { if(toast.parentElement) toast.remove(); }, 4000);
+                setTimeout(() => { 
+                    if(toast.parentElement) {
+                        toast.classList.add('opacity-0', 'translate-y-2');
+                        setTimeout(() => toast.remove(), 300);
+                    }
+                }, 4000);
             },
             openModal: (contentHTML) => {
                 const container = document.getElementById('modal-container');
                 const content = document.getElementById('modal-content');
                 content.innerHTML = contentHTML;
                 container.classList.remove('hidden');
+                // slight delay for animation
+                setTimeout(() => {
+                    container.classList.remove('opacity-0');
+                    content.classList.remove('scale-95');
+                }, 10);
             },
             closeModal: () => {
-                document.getElementById('modal-container').classList.add('hidden');
-                document.getElementById('modal-content').innerHTML = '';
+                const container = document.getElementById('modal-container');
+                const content = document.getElementById('modal-content');
+                container.classList.add('opacity-0');
+                content.classList.add('scale-95');
+                setTimeout(() => {
+                    container.classList.add('hidden');
+                    content.innerHTML = '';
+                }, 200);
             },
 
             navigate: (path) => {
@@ -435,29 +459,29 @@
             renderNavigationLinks: () => {
                 const container = document.getElementById('drawer-links');
                 let links = `
-                    <a href="#/" class="flex items-center gap-3 p-3 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-700 transition" onclick="app.toggleDrawer()">
-                        <i class="ph ph-house text-xl text-brand-600"></i> <span class="font-medium">Home</span>
+                    <a href="#/" class="flex items-center gap-3 p-3 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-700/50 transition-colors" onclick="app.toggleDrawer()">
+                        <i class="ph-fill ph-house text-xl text-brand-600 dark:text-brand-400"></i> <span class="font-medium">Home</span>
                     </a>
-                    <a href="#/about" class="flex items-center gap-3 p-3 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-700 transition" onclick="app.toggleDrawer()">
-                        <i class="ph ph-info text-xl text-brand-600"></i> <span class="font-medium">About Us</span>
+                    <a href="#/about" class="flex items-center gap-3 p-3 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-700/50 transition-colors" onclick="app.toggleDrawer()">
+                        <i class="ph-fill ph-info text-xl text-brand-600 dark:text-brand-400"></i> <span class="font-medium">About Us</span>
                     </a>
-                    <a href="#/contact" class="flex items-center gap-3 p-3 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-700 transition" onclick="app.toggleDrawer()">
-                        <i class="ph ph-envelope text-xl text-brand-600"></i> <span class="font-medium">Contact</span>
+                    <a href="#/contact" class="flex items-center gap-3 p-3 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-700/50 transition-colors" onclick="app.toggleDrawer()">
+                        <i class="ph-fill ph-envelope text-xl text-brand-600 dark:text-brand-400"></i> <span class="font-medium">Contact</span>
                     </a>
                 `;
                 if (app.currentUser) {
                     links += `
-                        <a href="#/dashboard" class="flex items-center gap-3 p-3 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-700 transition" onclick="app.toggleDrawer()">
-                            <i class="ph ph-user text-xl text-brand-600"></i> <span class="font-medium">Dashboard</span>
+                        <a href="#/dashboard" class="flex items-center gap-3 p-3 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-700/50 transition-colors" onclick="app.toggleDrawer()">
+                            <i class="ph-fill ph-user-circle text-xl text-brand-600 dark:text-brand-400"></i> <span class="font-medium">Dashboard</span>
                         </a>
-                        <button onclick="app.logout(); app.toggleDrawer()" class="w-full flex items-center gap-3 p-3 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-700 transition text-red-500">
-                            <i class="ph ph-sign-out text-xl"></i> <span class="font-medium">Logout</span>
+                        <button onclick="app.logout(); app.toggleDrawer()" class="w-full flex items-center gap-3 p-3 rounded-xl hover:bg-red-50 dark:hover:bg-red-900/20 transition-colors text-red-600 dark:text-red-400">
+                            <i class="ph-fill ph-sign-out text-xl"></i> <span class="font-medium">Logout</span>
                         </button>
                     `;
                 } else {
                     links += `
-                        <a href="#/login" class="flex items-center gap-3 p-3 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-700 transition" onclick="app.toggleDrawer()">
-                            <i class="ph ph-sign-in text-xl text-brand-600"></i> <span class="font-medium">Login / Register</span>
+                        <a href="#/login" class="flex items-center gap-3 p-3 rounded-xl hover:bg-brand-50 dark:hover:bg-brand-900/20 transition-colors" onclick="app.toggleDrawer()">
+                            <i class="ph-fill ph-sign-in text-xl text-brand-600 dark:text-brand-400"></i> <span class="font-medium text-brand-700 dark:text-brand-300">Login / Register</span>
                         </a>
                     `;
                 }
@@ -465,44 +489,28 @@
             },
 
             openDonationModal: () => {
-                const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-                const upiId = "vikram.joshi9089@oksbi";
-                
-                if (!isMobile) {
-                    app.openModal(`
-                        <div class="p-6 text-center">
-                            <div class="w-16 h-16 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                                <i class="ph ph-device-mobile text-3xl"></i>
-                            </div>
-                            <h2 class="text-xl font-bold mb-2">Mobile Payment Only</h2>
-                            <p class="theme-text-sec text-sm mb-6">UPI mobile payment is currently available only on supported mobile devices. Please open StudySphere on a compatible mobile device to continue with the donation.</p>
-                            <button onclick="app.closeModal()" class="w-full py-2.5 bg-slate-200 hover:bg-slate-300 dark:bg-slate-700 dark:hover:bg-slate-600 rounded-lg font-medium transition">Close</button>
-                        </div>
-                    `);
-                    return;
-                }
-
+                const upiUrl = "upi://pay?pa=vikram.joshi9089@oksbi&pn=StudySphere&cu=INR";
                 app.openModal(`
                     <div class="p-6">
                         <div class="flex items-center justify-between mb-6">
-                            <h2 class="text-xl font-bold flex items-center gap-2"><i class="ph ph-heart text-brand-600"></i> Donate Us</h2>
-                            <button onclick="app.closeModal()" class="text-slate-400 hover:text-slate-600"><i class="ph ph-x text-lg"></i></button>
+                            <h2 class="text-xl font-bold flex items-center gap-2"><i class="ph-fill ph-heart text-pink-500"></i> Support Us</h2>
+                            <button onclick="app.closeModal()" class="text-slate-400 hover:text-slate-600 bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 rounded-full p-1 transition"><i class="ph ph-x text-lg"></i></button>
                         </div>
-                        <p class="theme-text-sec text-sm mb-6">Donation सुविधा सध्या mobile devices वरून वापरण्यासाठी उपलब्ध आहे. Support StudySphere!</p>
+                        <p class="theme-text-sec text-sm mb-6">StudySphere is a free platform. If you find it helpful for your MPSC preparation, consider supporting us to keep the servers running.</p>
                         
-                        <div class="grid grid-cols-3 gap-3 mb-4">
-                            <button onclick="document.getElementById('don-amount').value='50'" class="py-2 border theme-border rounded-lg hover:border-brand-500 hover:text-brand-600 font-medium transition">₹50</button>
-                            <button onclick="document.getElementById('don-amount').value='100'" class="py-2 border theme-border rounded-lg hover:border-brand-500 hover:text-brand-600 font-medium transition">₹100</button>
-                            <button onclick="document.getElementById('don-amount').value='200'" class="py-2 border theme-border rounded-lg hover:border-brand-500 hover:text-brand-600 font-medium transition">₹200</button>
-                        </div>
-                        
-                        <div class="mb-6">
-                            <label class="block text-sm font-medium theme-text-sec mb-1">Custom Amount (₹)</label>
-                            <input type="number" id="don-amount" min="1" class="w-full px-4 py-2 rounded-lg border theme-border bg-transparent focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none transition" placeholder="Enter amount">
+                        <div class="grid grid-cols-3 gap-3 mb-6">
+                            <button onclick="document.getElementById('don-amount').value='50'" class="py-2 border theme-border rounded-xl hover:border-brand-500 hover:bg-brand-50 dark:hover:bg-brand-900/20 font-medium transition">₹50</button>
+                            <button onclick="document.getElementById('don-amount').value='100'" class="py-2 border theme-border rounded-xl hover:border-brand-500 hover:bg-brand-50 dark:hover:bg-brand-900/20 font-medium transition">₹100</button>
+                            <button onclick="document.getElementById('don-amount').value='200'" class="py-2 border theme-border rounded-xl hover:border-brand-500 hover:bg-brand-50 dark:hover:bg-brand-900/20 font-medium transition">₹200</button>
                         </div>
                         
-                        <button onclick="app.processDonation()" class="w-full py-3 bg-brand-600 hover:bg-brand-700 text-white rounded-lg font-medium flex items-center justify-center gap-2 transition">
-                            <i class="ph ph-qr-code text-lg"></i> Proceed to Pay (UPI)
+                        <div class="mb-6 relative">
+                            <span class="absolute left-4 top-1/2 -translate-y-1/2 font-bold theme-text-sec">₹</span>
+                            <input type="number" id="don-amount" min="1" class="w-full pl-8 pr-4 py-3 rounded-xl border theme-border bg-slate-50 dark:bg-slate-900/50 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none transition" placeholder="Custom Amount">
+                        </div>
+                        
+                        <button onclick="app.processDonation()" class="w-full py-3.5 bg-gradient-to-r from-brand-600 to-brand-700 hover:from-brand-700 hover:to-brand-800 text-white rounded-xl font-bold flex items-center justify-center gap-2 transition shadow-md hover:shadow-lg">
+                            <i class="ph-fill ph-qr-code text-xl"></i> Proceed to Pay via UPI
                         </button>
                     </div>
                 `);
@@ -510,52 +518,51 @@
             processDonation: () => {
                 const amount = document.getElementById('don-amount').value;
                 if(!amount || isNaN(amount) || amount <= 0) {
-                    app.showToast('Please enter a valid positive amount.', 'error');
+                    app.showToast('Please enter a valid amount.', 'error');
                     return;
                 }
-                if(amount > 100000) {
-                    app.showToast('Amount exceeds reasonable limits for this gateway.', 'error');
-                    return;
-                }
-                const upiUrl = `upi://pay?pa=vikram.joshi9089@oksbi&pn=StudySphere&am=${amount}&cu=INR`;
-                window.location.href = upiUrl;
+                window.location.href = `upi://pay?pa=vikram.joshi9089@oksbi&pn=StudySphere&am=${amount}&cu=INR`;
                 app.closeModal();
-                app.showToast('Payment intent launched. Awaiting verification...', 'info');
+                app.showToast('Opening UPI Application...', 'success');
             }
         };
 
+        // Initialize display properties
         document.documentElement.setAttribute('data-theme', app.theme);
         app.setFontSize(app.fontSize);
         document.getElementById('year').innerText = new Date().getFullYear();
 
         class QuizEngine {
-            constructor(quizData, questions, timeMinutes) {
-                this.quiz = quizData;
-                this.questions = questions;
+            constructor(quizConfig, fullQuizData, timeMinutes) {
+                this.config = quizConfig; // Basic metadata
+                this.quizData = fullQuizData; // Full JSON payload
+                this.questions = fullQuizData.questions;
+                
                 this.totalTime = timeMinutes ? timeMinutes * 60 : null; // in seconds
                 this.remainingTime = this.totalTime;
                 this.currentIndex = 0;
-                this.answers = {}; // qnId -> optionId
-                this.status = {};  // qnId -> 'unvisited', 'visited', 'answered', 'review', 'answered-review'
+                
+                this.answers = {}; // qnId -> optionKey (A, B, C, D)
+                this.status = {};  // qnId -> status string
                 this.timerInterval = null;
                 this.isSubmitted = false;
                 this.tabSwitchCount = 0;
                 
-                this.questions.forEach(q => this.status[q.id] = 'unvisited');
-                this.status[this.questions[0].id] = 'visited';
+                this.questions.forEach(q => this.status[q.questionId] = 'unvisited');
+                if(this.questions.length > 0) this.status[this.questions[0].questionId] = 'visited';
                 
                 this.setupAntiCheat();
             }
 
             setupAntiCheat() {
-                if(this.quiz.mode === 'test') {
+                if(this.config.mode === 'test') {
                     this.visibilityHandler = () => {
                         if (document.hidden && !this.isSubmitted) {
                             this.tabSwitchCount++;
                             if (this.tabSwitchCount === 1) {
                                 app.showToast("Warning: Do not switch tabs during a Test!", "warning");
                             } else {
-                                app.showToast("Multiple tab switches detected. This will be recorded.", "error");
+                                app.showToast("Multiple tab switches detected. This is recorded.", "error");
                             }
                         }
                     };
@@ -595,13 +602,13 @@
                 return `${m}:${s}`;
             }
 
-            selectOption(optionId) {
-                const qId = this.questions[this.currentIndex].id;
-                this.answers[qId] = optionId;
+            selectOption(optionKey) {
+                const qId = this.questions[this.currentIndex].questionId;
+                this.answers[qId] = optionKey;
             }
 
             updateStatusForNavigation(markReview = false) {
-                const qId = this.questions[this.currentIndex].id;
+                const qId = this.questions[this.currentIndex].questionId;
                 const hasAnswer = !!this.answers[qId];
                 
                 if (hasAnswer && markReview) this.status[qId] = 'answered-review';
@@ -614,7 +621,7 @@
                 if(index < 0 || index >= this.questions.length) return;
                 this.updateStatusForNavigation();
                 this.currentIndex = index;
-                const newQId = this.questions[this.currentIndex].id;
+                const newQId = this.questions[this.currentIndex].questionId;
                 if(this.status[newQId] === 'unvisited') {
                     this.status[newQId] = 'visited';
                 }
@@ -624,13 +631,13 @@
                 this.updateStatusForNavigation(markReview);
                 if(this.currentIndex < this.questions.length - 1) {
                     this.currentIndex++;
-                    const newQId = this.questions[this.currentIndex].id;
+                    const newQId = this.questions[this.currentIndex].questionId;
                     if(this.status[newQId] === 'unvisited') this.status[newQId] = 'visited';
                 }
             }
 
             clearResponse() {
-                const qId = this.questions[this.currentIndex].id;
+                const qId = this.questions[this.currentIndex].questionId;
                 delete this.answers[qId];
                 this.status[qId] = 'visited';
             }
@@ -638,21 +645,23 @@
             calculateResult() {
                 let correct = 0, wrong = 0, skipped = 0, posMarks = 0, negMarks = 0;
                 
+                const penalty = this.quizData.negativeMarking || 0; // standard schema
+
                 this.questions.forEach(q => {
-                    const ans = this.answers[q.id];
+                    const ans = this.answers[q.questionId];
                     if (!ans) {
                         skipped++;
-                    } else if (ans === q.correct) {
+                    } else if (ans === q.correctOption) {
                         correct++;
-                        posMarks += (q.marks || 1);
+                        posMarks += 1; // Assuming 1 mark per question if not specified
                     } else {
                         wrong++;
-                        negMarks += (q.negMarks || 0);
+                        negMarks += penalty;
                     }
                 });
 
                 const finalScore = posMarks - negMarks;
-                const maxPossible = this.questions.reduce((sum, q) => sum + (q.marks || 1), 0);
+                const maxPossible = this.questions.length;
                 const percentage = Math.max(0, (finalScore / maxPossible) * 100).toFixed(2);
 
                 return {
@@ -667,206 +676,203 @@
         let activeEngine = null;
 
         const Views = {
-            Home: () => `
-                <div class="space-y-10">
-                    <!-- Intro Card -->
-                    <section class="bg-brand-50 dark:bg-slate-800/50 rounded-2xl p-6 sm:p-8 border border-brand-100 dark:border-slate-700 flex flex-col md:flex-row items-center gap-6">
-                        <div class="flex-1">
-                            <h2 class="text-2xl sm:text-3xl font-bold text-brand-600 dark:text-brand-500 mb-4">Crack MPSC Group B & C</h2>
-                            <p class="theme-text-sec text-base sm:text-lg mb-2 font-medium">StudySphere हे MPSC Combined Group B & C परीक्षेच्या तयारीसाठी तयार केलेले bilingual MCQ practice platform आहे. येथे विषय, Chapter आणि Topic नुसार प्रश्नसंच, Practice Quiz, Test Quiz आणि निकालाचे विश्लेषण उपलब्ध करून देण्याचा उद्देश आहे.</p>
-                            <p class="theme-text-sec text-base sm:text-lg">StudySphere is a bilingual MCQ practice platform designed for MPSC Combined Group B & C examination preparation. It provides subject-wise, chapter-wise and topic-wise quizzes along with practice, test and performance analysis features.</p>
-                        </div>
-                        <div class="hidden md:flex bg-white dark:bg-slate-700 p-4 rounded-full shadow-sm">
-                            <i class="ph-fill ph-student text-5xl text-brand-500"></i>
+            Home: async () => {
+                const subjects = await DataService.getSubjects();
+                
+                return `
+                <div class="space-y-12 animate-fade-in-up">
+                    <!-- Modern Hero Section -->
+                    <section class="relative rounded-3xl overflow-hidden border theme-border theme-surface shadow-sm">
+                        <div class="absolute inset-0 hero-gradient pointer-events-none"></div>
+                        <div class="relative p-8 md:p-12 lg:p-16 flex flex-col md:flex-row items-center gap-10">
+                            <div class="flex-1 space-y-6">
+                                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-50 text-brand-700 dark:bg-brand-900/30 dark:text-brand-300 text-sm font-bold border border-brand-200 dark:border-brand-800">
+                                    <span class="relative flex h-2.5 w-2.5"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-400 opacity-75"></span><span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-brand-500"></span></span>
+                                    V2.0 Final Release
+                                </div>
+                                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
+                                    Crack <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-600 to-indigo-600 dark:from-brand-400 dark:to-indigo-400">MPSC Group B & C</span>
+                                </h1>
+                                <p class="theme-text-sec text-lg sm:text-xl font-medium leading-relaxed max-w-2xl">
+                                    StudySphere is the ultimate bilingual practice platform. Master subjects topic-by-topic with highly curated MCQs, smart analytics, and real-time performance tracking.
+                                </p>
+                                <div class="flex flex-wrap gap-4 pt-4">
+                                    <button onclick="document.getElementById('subjects-grid').scrollIntoView({behavior: 'smooth'})" class="px-8 py-3.5 rounded-xl bg-brand-600 hover:bg-brand-700 text-white font-bold transition-all shadow-md hover:shadow-xl transform hover:-translate-y-1">Start Practicing</button>
+                                    <a href="#/about" class="px-8 py-3.5 rounded-xl border-2 theme-border hover:bg-slate-50 dark:hover:bg-slate-800 font-bold transition-all">Learn More</a>
+                                </div>
+                            </div>
+                            <div class="hidden lg:flex relative w-80 h-80 justify-center items-center">
+                                <div class="absolute inset-0 bg-brand-500 rounded-full opacity-10 animate-pulse-slow"></div>
+                                <i class="ph-fill ph-student text-[160px] text-brand-600 drop-shadow-2xl"></i>
+                            </div>
                         </div>
                     </section>
 
                     <!-- Subjects Sections -->
-                    <section>
-                        <h3 class="text-xl font-bold mb-4 flex items-center gap-2"><i class="ph ph-books text-brand-600"></i> Common For Prelims + Mains</h3>
-                        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-                            ${DATA.subjects.filter(s => s.category === 'common').map(s => `
-                                <a href="#/subject/${s.id}" class="group theme-surface border theme-border rounded-xl p-5 hover:border-brand-500 hover:shadow-md transition flex items-center justify-between">
+                    <section id="subjects-grid" class="scroll-mt-24">
+                        <div class="flex items-center justify-between mb-6">
+                            <h3 class="text-2xl font-bold flex items-center gap-3"><i class="ph-fill ph-books text-brand-600"></i> Common Foundation (Prelims + Mains)</h3>
+                        </div>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+                            ${subjects.filter(s => s.category === 'common').map(s => `
+                                <a href="#/subject/${s.id}" class="group theme-surface border theme-border rounded-2xl p-6 hover:border-brand-500 hover:shadow-lg transition-all duration-300 flex items-center justify-between bg-gradient-to-br from-transparent hover:to-brand-50/50 dark:hover:to-brand-900/10">
                                     <div>
-                                        <div class="text-lg font-bold mb-1">${s.titleMr}</div>
-                                        <div class="text-sm theme-text-sec">${s.titleEn}</div>
+                                        <div class="text-xl font-bold mb-1 group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors">${s.titleMr}</div>
+                                        <div class="text-sm theme-text-sec font-medium">${s.titleEn}</div>
                                     </div>
-                                    <i class="ph ph-arrow-right text-xl text-slate-400 group-hover:text-brand-600 transition transform group-hover:translate-x-1"></i>
+                                    <div class="w-10 h-10 rounded-full bg-slate-50 dark:bg-slate-800 flex items-center justify-center group-hover:bg-brand-600 group-hover:text-white transition-all transform group-hover:scale-110">
+                                        <i class="ph-bold ph-arrow-right"></i>
+                                    </div>
                                 </a>
                             `).join('')}
                         </div>
                     </section>
                     
                     <section>
-                        <h3 class="text-xl font-bold mb-4 flex items-center gap-2"><i class="ph ph-graduation-cap text-brand-600"></i> Mains Only</h3>
-                        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-                            ${DATA.subjects.filter(s => s.category === 'mains').map(s => `
-                                <a href="#/subject/${s.id}" class="group theme-surface border theme-border rounded-xl p-5 hover:border-brand-500 hover:shadow-md transition flex items-center justify-between">
+                        <div class="flex items-center justify-between mb-6">
+                            <h3 class="text-2xl font-bold flex items-center gap-3"><i class="ph-fill ph-graduation-cap text-indigo-500"></i> Mains Specialization</h3>
+                        </div>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+                            ${subjects.filter(s => s.category === 'mains').map(s => `
+                                <a href="#/subject/${s.id}" class="group theme-surface border theme-border rounded-2xl p-6 hover:border-indigo-500 hover:shadow-lg transition-all duration-300 flex items-center justify-between bg-gradient-to-br from-transparent hover:to-indigo-50/50 dark:hover:to-indigo-900/10">
                                     <div>
-                                        <div class="text-lg font-bold mb-1">${s.titleMr}</div>
-                                        <div class="text-sm theme-text-sec">${s.titleEn}</div>
+                                        <div class="text-xl font-bold mb-1 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">${s.titleMr}</div>
+                                        <div class="text-sm theme-text-sec font-medium">${s.titleEn}</div>
                                     </div>
-                                    <i class="ph ph-arrow-right text-xl text-slate-400 group-hover:text-brand-600 transition transform group-hover:translate-x-1"></i>
+                                    <div class="w-10 h-10 rounded-full bg-slate-50 dark:bg-slate-800 flex items-center justify-center group-hover:bg-indigo-600 group-hover:text-white transition-all transform group-hover:scale-110">
+                                        <i class="ph-bold ph-arrow-right"></i>
+                                    </div>
                                 </a>
                             `).join('')}
-                        </div>
-                    </section>
-
-                    <!-- Guide -->
-                    <section class="theme-surface border theme-border rounded-xl p-6 sm:p-8">
-                        <h3 class="text-xl font-bold mb-6">How StudySphere Works</h3>
-                        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-6">
-                            <div class="flex flex-col gap-2">
-                                <div class="w-10 h-10 rounded-full bg-brand-100 text-brand-600 flex items-center justify-center font-bold">1</div>
-                                <h4 class="font-bold">Subject निवडा</h4>
-                                <p class="text-sm theme-text-sec">तुमच्या अभ्यासातील संबंधित विषय निवडा.</p>
-                            </div>
-                            <div class="flex flex-col gap-2">
-                                <div class="w-10 h-10 rounded-full bg-brand-100 text-brand-600 flex items-center justify-center font-bold">2</div>
-                                <h4 class="font-bold">Chapter निवडा</h4>
-                                <p class="text-sm theme-text-sec">विषयातील आवश्यक Chapter उघडा.</p>
-                            </div>
-                            <div class="flex flex-col gap-2">
-                                <div class="w-10 h-10 rounded-full bg-brand-100 text-brand-600 flex items-center justify-center font-bold">3</div>
-                                <h4 class="font-bold">Topic निवडा</h4>
-                                <p class="text-sm theme-text-sec">Chapter मधील संबंधित Topic निवडा.</p>
-                            </div>
-                            <div class="flex flex-col gap-2">
-                                <div class="w-10 h-10 rounded-full bg-brand-100 text-brand-600 flex items-center justify-center font-bold">4</div>
-                                <h4 class="font-bold">Quiz निवडा</h4>
-                                <p class="text-sm theme-text-sec">उपलब्ध Practice किंवा Test Quiz निवडा.</p>
-                            </div>
-                            <div class="flex flex-col gap-2">
-                                <div class="w-10 h-10 rounded-full bg-brand-100 text-brand-600 flex items-center justify-center font-bold">5</div>
-                                <h4 class="font-bold">Quiz सुरू करा</h4>
-                                <p class="text-sm theme-text-sec">थेट quiz सुरू करा. (Test साठी Login आवश्यक).</p>
-                            </div>
-                            <div class="flex flex-col gap-2">
-                                <div class="w-10 h-10 rounded-full bg-slate-100 text-slate-600 flex items-center justify-center font-bold">6</div>
-                                <h4 class="font-bold">प्रश्न सोडवा</h4>
-                                <p class="text-sm theme-text-sec">दिलेल्या चार पर्यायांपैकी योग्य पर्याय निवडा.</p>
-                            </div>
-                            <div class="flex flex-col gap-2">
-                                <div class="w-10 h-10 rounded-full bg-slate-100 text-slate-600 flex items-center justify-center font-bold">7</div>
-                                <h4 class="font-bold">Review करा</h4>
-                                <p class="text-sm theme-text-sec">आवश्यक असल्यास प्रश्न Mark for Review करा.</p>
-                            </div>
-                            <div class="flex flex-col gap-2">
-                                <div class="w-10 h-10 rounded-full bg-slate-100 text-slate-600 flex items-center justify-center font-bold">8</div>
-                                <h4 class="font-bold">Quiz Submit करा</h4>
-                                <p class="text-sm theme-text-sec">सर्व प्रश्न सोडल्यानंतर quiz submit करा.</p>
-                            </div>
-                            <div class="flex flex-col gap-2">
-                                <div class="w-10 h-10 rounded-full bg-slate-100 text-slate-600 flex items-center justify-center font-bold">9</div>
-                                <h4 class="font-bold">Result पाहा</h4>
-                                <p class="text-sm theme-text-sec">score आणि questions चे analysis पाहा.</p>
-                            </div>
-                            <div class="flex flex-col gap-2">
-                                <div class="w-10 h-10 rounded-full bg-slate-100 text-slate-600 flex items-center justify-center font-bold">10</div>
-                                <h4 class="font-bold">पुन्हा सराव करा</h4>
-                                <p class="text-sm theme-text-sec">चुकीचे प्रश्न पाहून revision अधिक प्रभावी करा.</p>
-                            </div>
                         </div>
                     </section>
                 </div>
-            `,
+            `},
 
-            Subject: (subjectId) => {
-                const subject = DATA.subjects.find(s => s.id === subjectId);
-                if(!subject) return `<div class="text-center py-20 text-red-500">Subject not found.</div>`;
-                const chapters = DATA.chapters.filter(c => c.subjectId === subjectId);
+            Subject: async (subjectId) => {
+                const subjects = await DataService.getSubjects();
+                const subject = subjects.find(s => s.id === subjectId);
+                if(!subject) return `<div class="text-center py-20 text-red-500 font-bold text-xl">404 - Subject not found.</div>`;
                 
-                return `
-                    <div class="mb-6">
-                        <button onclick="app.navigate('/')" class="text-brand-600 hover:underline flex items-center gap-1 text-sm mb-4"><i class="ph ph-arrow-left"></i> Back to Home</button>
-                        <h2 class="text-2xl sm:text-3xl font-bold mb-1">${subject.titleMr}</h2>
-                        <h3 class="text-lg theme-text-sec">${subject.titleEn}</h3>
-                    </div>
-                    
-                    ${chapters.length === 0 ? `<div class="theme-surface border theme-border rounded-xl p-8 text-center theme-text-sec">No chapters available yet. (Select Geography for demo)</div>` : ''}
-                    
-                    <div class="space-y-4">
-                        ${chapters.map(c => {
-                            const topics = DATA.topics.filter(t => t.chapterId === c.id);
-                            return `
-                            <div class="theme-surface border theme-border rounded-xl overflow-hidden">
-                                <button onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('.arrow').classList.toggle('rotate-180')" class="w-full text-left p-5 flex items-center justify-between hover:bg-slate-50 dark:hover:bg-slate-800 transition focus:outline-none">
-                                    <div>
-                                        <div class="font-bold text-lg">${c.titleMr}</div>
-                                        <div class="text-sm theme-text-sec">${c.titleEn}</div>
-                                    </div>
-                                    <i class="ph ph-caret-down arrow transition-transform duration-300"></i>
-                                </button>
-                                <div class="hidden border-t theme-border bg-slate-50/50 dark:bg-slate-900/50">
-                                    ${topics.length === 0 ? `<div class="p-4 text-sm theme-text-sec">No topics.</div>` : 
-                                      `<ul class="divide-y theme-border">
-                                        ${topics.map(t => `
-                                            <li>
-                                                <a href="#/topic/${t.id}" class="block p-4 pl-6 hover:text-brand-600 transition">
-                                                    <div class="font-medium">${t.titleMr}</div>
-                                                    <div class="text-sm theme-text-sec">${t.titleEn}</div>
-                                                </a>
-                                            </li>
-                                        `).join('')}
-                                      </ul>`
-                                    }
+                const chapters = await DataService.getChapters(subjectId);
+                
+                // Fetch topics concurrently for all chapters to build the UI
+                const chapterHTML = await Promise.all(chapters.map(async c => {
+                    const topics = await DataService.getTopics(c.id);
+                    return `
+                        <div class="theme-surface border theme-border rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                            <button onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('.arrow').classList.toggle('rotate-180')" class="w-full text-left p-5 sm:p-6 flex items-center justify-between hover:bg-slate-50 dark:hover:bg-slate-800/50 transition focus:outline-none">
+                                <div>
+                                    <div class="font-bold text-lg sm:text-xl text-brand-600 dark:text-brand-400">${c.titleMr}</div>
+                                    <div class="text-sm sm:text-base theme-text-sec mt-1">${c.titleEn}</div>
                                 </div>
+                                <div class="w-8 h-8 flex items-center justify-center rounded-full bg-slate-100 dark:bg-slate-700">
+                                    <i class="ph-bold ph-caret-down arrow transition-transform duration-300"></i>
+                                </div>
+                            </button>
+                            <div class="hidden border-t theme-border bg-slate-50/50 dark:bg-slate-900/30">
+                                ${topics.length === 0 ? `<div class="p-6 text-sm theme-text-sec text-center font-medium">Topics coming soon.</div>` : 
+                                  `<ul class="divide-y theme-border">
+                                    ${topics.map(t => `
+                                        <li>
+                                            <a href="#/topic/${t.id}" class="group block p-4 pl-6 sm:pl-8 hover:bg-white dark:hover:bg-slate-800 transition-colors">
+                                                <div class="flex items-center justify-between">
+                                                    <div>
+                                                        <div class="font-bold group-hover:text-brand-600 transition-colors">${t.titleMr}</div>
+                                                        <div class="text-sm theme-text-sec">${t.titleEn}</div>
+                                                    </div>
+                                                    <i class="ph-bold ph-arrow-right text-slate-300 group-hover:text-brand-500 transition-colors transform group-hover:translate-x-1"></i>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    `).join('')}
+                                  </ul>`
+                                }
                             </div>
-                        `}).join('')}
+                        </div>
+                    `;
+                }));
+
+                return `
+                    <div class="max-w-4xl mx-auto animate-fade-in-up">
+                        <div class="mb-8">
+                            <button onclick="app.navigate('/')" class="text-brand-600 hover:text-brand-700 dark:hover:text-brand-400 font-medium flex items-center gap-1 text-sm mb-6 transition-colors"><i class="ph-bold ph-arrow-left"></i> Back to Home</button>
+                            <h2 class="text-3xl sm:text-4xl font-extrabold mb-2">${subject.titleMr}</h2>
+                            <h3 class="text-xl theme-text-sec font-medium">${subject.titleEn}</h3>
+                        </div>
+                        
+                        ${chapters.length === 0 ? 
+                            `<div class="theme-surface border theme-border rounded-2xl p-12 text-center shadow-sm">
+                                <div class="w-16 h-16 bg-slate-100 dark:bg-slate-800 rounded-full flex items-center justify-center mx-auto mb-4"><i class="ph-fill ph-file-dashed text-2xl theme-text-sec"></i></div>
+                                <h4 class="font-bold text-lg mb-2">No Chapters Available</h4>
+                                <p class="theme-text-sec">Content is currently being uploaded. (Hint: Select Geography for demo data)</p>
+                            </div>` : ''}
+                        
+                        <div class="space-y-4">
+                            ${chapterHTML.join('')}
+                        </div>
                     </div>
                 `;
             },
 
-            Topic: (topicId) => {
-                const topic = DATA.topics.find(t => t.id === topicId);
-                if(!topic) return `<div class="text-center py-20 text-red-500">Topic not found.</div>`;
-                const quizzes = DATA.quizzes.filter(q => q.topicId === topicId);
+            Topic: async (topicId) => {
+                // To display breadcrumbs cleanly, fetch topic, then its chapter, then subject
+                let topic, chapter, subject;
+                for(const t of DataService.index.topics) { if(t.id === topicId) { topic = t; break; } }
+                if(!topic) return `<div class="text-center py-20 text-red-500 font-bold text-xl">404 - Topic not found.</div>`;
+                
+                const quizzes = await DataService.getQuizzes(topicId);
 
                 return `
-                    <div class="mb-6">
-                        <button onclick="window.history.back()" class="text-brand-600 hover:underline flex items-center gap-1 text-sm mb-4"><i class="ph ph-arrow-left"></i> Back</button>
-                        <h2 class="text-2xl sm:text-3xl font-bold mb-1">${topic.titleMr}</h2>
-                        <h3 class="text-lg theme-text-sec">${topic.titleEn}</h3>
-                    </div>
+                    <div class="max-w-5xl mx-auto animate-fade-in-up">
+                        <div class="mb-8">
+                            <button onclick="window.history.back()" class="text-brand-600 hover:text-brand-700 dark:hover:text-brand-400 font-medium flex items-center gap-1 text-sm mb-6 transition-colors"><i class="ph-bold ph-arrow-left"></i> Back</button>
+                            <h2 class="text-3xl sm:text-4xl font-extrabold mb-2">${topic.titleMr}</h2>
+                            <h3 class="text-xl theme-text-sec font-medium">${topic.titleEn}</h3>
+                        </div>
 
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                        ${quizzes.length === 0 ? `<div class="col-span-full theme-surface border theme-border rounded-xl p-8 text-center theme-text-sec">No quizzes available yet.</div>` : ''}
-                        ${quizzes.map(q => `
-                            <div class="theme-surface border theme-border rounded-xl p-6 shadow-sm hover:shadow-md transition flex flex-col justify-between">
-                                <div>
-                                    <div class="flex justify-between items-start mb-2">
-                                        <h4 class="font-bold text-lg">${q.titleMr}</h4>
-                                        <span class="text-xs font-bold px-2 py-1 rounded ${q.mode === 'test' ? 'bg-amber-100 text-amber-700 dark:bg-amber-900/30 dark:text-amber-400 border border-amber-200 dark:border-amber-800' : 'bg-brand-100 text-brand-700 dark:bg-brand-900/30 dark:text-brand-400 border border-brand-200 dark:border-brand-800'}">
-                                            [ ${q.mode.toUpperCase()} ]
-                                        </span>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            ${quizzes.length === 0 ? `<div class="col-span-full theme-surface border theme-border rounded-2xl p-12 text-center theme-text-sec shadow-sm font-medium">No quizzes available for this topic yet.</div>` : ''}
+                            ${quizzes.map(q => `
+                                <div class="theme-surface border theme-border rounded-2xl p-6 sm:p-8 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group transform hover:-translate-y-1">
+                                    <div>
+                                        <div class="flex justify-between items-start mb-4">
+                                            <div class="w-12 h-12 rounded-xl bg-brand-50 dark:bg-brand-900/30 flex items-center justify-center text-brand-600 dark:text-brand-400 mb-4 group-hover:scale-110 transition-transform">
+                                                <i class="ph-fill ${q.mode === 'test' ? 'ph-timer' : 'ph-brain'} text-2xl"></i>
+                                            </div>
+                                            <span class="text-xs font-extrabold px-3 py-1 rounded-full uppercase tracking-wider ${q.mode === 'test' ? 'bg-amber-100 text-amber-700 dark:bg-amber-900/40 dark:text-amber-400 border border-amber-200 dark:border-amber-800' : 'bg-brand-100 text-brand-700 dark:bg-brand-900/40 dark:text-brand-400 border border-brand-200 dark:border-brand-800'}">
+                                                ${q.mode}
+                                            </span>
+                                        </div>
+                                        <h4 class="font-bold text-xl mb-1">${q.titleMr}</h4>
+                                        <div class="text-sm theme-text-sec font-medium mb-6">${q.titleEn}</div>
+                                        <div class="flex items-center gap-4 text-sm font-bold theme-text-sec mb-8 bg-slate-50 dark:bg-slate-800/50 p-3 rounded-lg border theme-border inline-flex">
+                                            <span class="flex items-center gap-1.5"><i class="ph-bold ph-list-numbers text-brand-500"></i> ${q.qCount} Questions</span>
+                                        </div>
                                     </div>
-                                    <div class="text-sm theme-text-sec mb-4">${q.titleEn}</div>
-                                    <div class="flex items-center gap-4 text-sm theme-text-sec mb-6">
-                                        <span class="flex items-center gap-1"><i class="ph ph-list-numbers"></i> ${q.qCount} Questions</span>
-                                    </div>
+                                    <button onclick="Views.openQuizConfig('${q.id}')" class="w-full py-3.5 rounded-xl font-bold text-white transition-all shadow-md focus:ring-2 focus:ring-offset-2 ${q.mode === 'test' ? 'bg-gradient-to-r from-amber-600 to-orange-600 hover:from-amber-700 hover:to-orange-700 focus:ring-amber-500' : 'bg-gradient-to-r from-brand-600 to-indigo-600 hover:from-brand-700 hover:to-indigo-700 focus:ring-brand-500'}">
+                                        Launch ${q.mode === 'test' ? 'Test' : 'Practice'} Session
+                                    </button>
                                 </div>
-                                <button onclick="Views.openQuizConfig('${q.id}')" class="w-full py-2.5 rounded-lg font-medium text-white transition focus:ring-2 focus:ring-offset-2 ${q.mode === 'test' ? 'bg-amber-600 hover:bg-amber-700 focus:ring-amber-500' : 'bg-brand-600 hover:bg-brand-700 focus:ring-brand-500'}">
-                                    Start ${q.mode === 'test' ? 'Test' : 'Practice'}
-                                </button>
-                            </div>
-                        `).join('')}
+                            `).join('')}
+                        </div>
                     </div>
                 `;
             },
 
             openQuizConfig: (quizId) => {
-                const quiz = DATA.quizzes.find(q => q.id === quizId);
+                const quiz = DataService.index.quizzes.find(q => q.id === quizId);
                 
                 if(quiz.mode === 'test') {
                     if(!window.fb.auth || !window.fb.auth.currentUser) {
                         app.openModal(`
-                            <div class="p-6 text-center">
-                                <div class="w-16 h-16 bg-amber-100 text-amber-600 rounded-full flex items-center justify-center mx-auto mb-4"><i class="ph ph-lock-key text-3xl"></i></div>
-                                <h2 class="text-xl font-bold mb-2">Login Required</h2>
-                                <p class="text-sm theme-text-sec mb-6">You must be logged in to attempt a Test Quiz. Tests allow only one strict attempt.</p>
-                                <div class="flex gap-3">
-                                    <button onclick="app.closeModal()" class="flex-1 py-2 rounded-lg bg-slate-200 hover:bg-slate-300 dark:bg-slate-700 transition">Cancel</button>
-                                    <button onclick="app.closeModal(); app.navigate('/login')" class="flex-1 py-2 rounded-lg bg-brand-600 text-white hover:bg-brand-700 transition">Login</button>
+                            <div class="p-8 text-center">
+                                <div class="w-20 h-20 bg-amber-100 text-amber-600 rounded-full flex items-center justify-center mx-auto mb-6"><i class="ph-fill ph-lock-key text-4xl"></i></div>
+                                <h2 class="text-2xl font-bold mb-3">Authentication Required</h2>
+                                <p class="text-sm theme-text-sec mb-8 leading-relaxed">Test mode simulates real exam conditions and allows only one strict attempt per user. Please login to continue.</p>
+                                <div class="flex flex-col sm:flex-row gap-3">
+                                    <button onclick="app.closeModal()" class="flex-1 py-3 rounded-xl border-2 theme-border hover:bg-slate-50 dark:hover:bg-slate-800 transition font-bold">Cancel</button>
+                                    <button onclick="app.closeModal(); app.navigate('/login')" class="flex-1 py-3 rounded-xl bg-brand-600 text-white hover:bg-brand-700 transition font-bold shadow-md">Login Now</button>
                                 </div>
                             </div>
                         `);
@@ -877,16 +883,16 @@
                 const timeOptions = quiz.mode === 'test' ? [5, 10, 15, 20] : [0, 5, 10, 15];
                 
                 app.openModal(`
-                    <div class="p-6">
-                        <h2 class="text-xl font-bold mb-1">Start Quiz</h2>
-                        <h3 class="text-sm theme-text-sec mb-6">${quiz.titleMr}</h3>
+                    <div class="p-6 sm:p-8">
+                        <h2 class="text-2xl font-bold mb-1">Session Configuration</h2>
+                        <h3 class="text-sm theme-text-sec font-medium mb-8 pb-4 border-b theme-border">${quiz.titleMr}</h3>
                         
-                        <div class="mb-4">
-                            <label class="block text-sm font-medium mb-2">Select Time Limit</label>
+                        <div class="mb-6">
+                            <label class="block text-sm font-bold mb-3 theme-text-sec uppercase tracking-wider">Select Time Limit</label>
                             <div class="grid grid-cols-2 gap-3" id="time-selection">
                                 ${timeOptions.map(t => `
-                                    <button onclick="document.querySelectorAll('.time-btn').forEach(b=>b.classList.remove('ring-2', 'ring-brand-500', 'border-brand-500', 'bg-brand-50', 'dark:bg-brand-900/20')); this.classList.add('ring-2', 'ring-brand-500', 'border-brand-500', 'bg-brand-50', 'dark:bg-brand-900/20'); document.getElementById('selected-time').value = ${t};" 
-                                            class="time-btn border theme-border py-2 rounded-lg text-sm hover:bg-slate-50 dark:hover:bg-slate-800 transition">
+                                    <button onclick="document.querySelectorAll('.time-btn').forEach(b=>b.classList.remove('ring-2', 'ring-brand-500', 'border-brand-500', 'bg-brand-50', 'dark:bg-brand-900/20', 'text-brand-700', 'dark:text-brand-300')); this.classList.add('ring-2', 'ring-brand-500', 'border-brand-500', 'bg-brand-50', 'dark:bg-brand-900/20', 'text-brand-700', 'dark:text-brand-300'); document.getElementById('selected-time').value = ${t};" 
+                                            class="time-btn border theme-border py-3 rounded-xl text-sm font-bold hover:bg-slate-50 dark:hover:bg-slate-800 transition-all">
                                         ${t === 0 ? 'No Time Limit' : `${t} Minutes`}
                                     </button>
                                 `).join('')}
@@ -894,14 +900,16 @@
                             <input type="hidden" id="selected-time" value="">
                         </div>
                         
-                        <div class="mb-6">
-                            <label class="block text-sm font-medium mb-1">Or Custom Time (Minutes)</label>
-                            <input type="number" id="custom-time" min="1" max="180" class="w-full px-3 py-2 border theme-border rounded-lg bg-transparent focus:ring-2 focus:ring-brand-500 outline-none" placeholder="e.g. 12" oninput="document.getElementById('selected-time').value = this.value; document.querySelectorAll('.time-btn').forEach(b=>b.classList.remove('ring-2', 'ring-brand-500'));">
+                        <div class="mb-8">
+                            <label class="block text-sm font-bold mb-2 theme-text-sec">Custom Time (Minutes)</label>
+                            <input type="number" id="custom-time" min="1" max="180" class="w-full px-4 py-3 border theme-border rounded-xl bg-slate-50 dark:bg-slate-900/50 focus:ring-2 focus:ring-brand-500 outline-none font-medium transition-shadow" placeholder="e.g. 12" oninput="document.getElementById('selected-time').value = this.value; document.querySelectorAll('.time-btn').forEach(b=>b.classList.remove('ring-2', 'ring-brand-500', 'border-brand-500', 'bg-brand-50', 'dark:bg-brand-900/20'));">
                         </div>
                         
-                        <div class="flex gap-3 mt-6">
-                            <button onclick="app.closeModal()" class="flex-1 py-2.5 rounded-lg border theme-border hover:bg-slate-50 dark:hover:bg-slate-800 transition font-medium">Cancel</button>
-                            <button onclick="Views.startQuiz('${quizId}')" class="flex-1 py-2.5 rounded-lg bg-brand-600 text-white hover:bg-brand-700 transition font-medium">Start Now</button>
+                        <div class="flex gap-4">
+                            <button onclick="app.closeModal()" class="flex-1 py-3.5 rounded-xl border-2 theme-border hover:bg-slate-50 dark:hover:bg-slate-800 transition font-bold">Cancel</button>
+                            <button onclick="Views.startQuiz('${quiz.id}')" class="flex-1 py-3.5 rounded-xl bg-brand-600 text-white hover:bg-brand-700 transition font-bold shadow-md flex items-center justify-center gap-2">
+                                Start Now <i class="ph-bold ph-arrow-right"></i>
+                            </button>
                         </div>
                     </div>
                 `);
@@ -910,9 +918,9 @@
             startQuiz: async (quizId) => {
                 const timeInput = document.getElementById('selected-time').value;
                 const time = parseInt(timeInput);
-                const quiz = DATA.quizzes.find(q => q.id === quizId);
+                const quizMeta = DataService.index.quizzes.find(q => q.id === quizId);
 
-                if(quiz.mode === 'test' && (!timeInput || isNaN(time) || time <= 0)) {
+                if(quizMeta.mode === 'test' && (!timeInput || isNaN(time) || time <= 0)) {
                     app.showToast('Test mode requires a valid time limit.', 'error');
                     return;
                 }
@@ -921,7 +929,8 @@
                     return;
                 }
 
-                if (quiz.mode === 'test' && window.fb.isFirebaseValid && window.fb.auth.currentUser) {
+                // Check previous attempts
+                if (quizMeta.mode === 'test' && window.fb.isFirebaseValid && window.fb.auth.currentUser) {
                     try {
                         const uid = window.fb.auth.currentUser.uid;
                         const attemptRef = window.fb.collection(window.fb.db, 'artifacts', 'studysphere', 'users', uid, 'quizAttempts');
@@ -936,78 +945,100 @@
                     }
                 }
 
-                const questions = DATA.questions[quizId] || [];
-                if(questions.length === 0) {
-                    app.showToast('No questions found for this quiz.', 'error');
-                    return;
-                }
-
-                activeEngine = new QuizEngine(quiz, questions, time || null);
                 app.closeModal();
-                Views.renderQuizInterface();
                 
-                if(time > 0) {
-                    activeEngine.startTimer(
-                        (formatted) => { document.getElementById('timer-display').innerText = formatted; },
-                        () => { Views.submitQuiz(true); } 
-                    );
+                // Show Loader for fetching the actual Quiz JSON
+                const root = document.getElementById('app-root');
+                root.innerHTML = `
+                    <div class="flex flex-col items-center justify-center h-[60vh] gap-4">
+                        <div class="w-12 h-12 border-4 border-brand-200 border-t-brand-600 rounded-full animate-spin"></div>
+                        <div class="font-bold theme-text-sec animate-pulse">Loading Quiz Resources...</div>
+                    </div>
+                `;
+
+                try {
+                    const fullQuizData = await DataService.getQuizDetails(quizId);
+                    
+                    if(!fullQuizData.questions || fullQuizData.questions.length === 0) {
+                        throw new Error('No questions found in payload.');
+                    }
+
+                    // Initialize the unified engine
+                    activeEngine = new QuizEngine(quizMeta, fullQuizData, time || null);
+                    Views.renderQuizInterface();
+                    
+                    if(time > 0) {
+                        activeEngine.startTimer(
+                            (formatted) => { document.getElementById('timer-display').innerText = formatted; },
+                            () => { Views.submitQuiz(true); } 
+                        );
+                    }
+                } catch (e) {
+                    app.showToast('Failed to load quiz data: ' + e.message, 'error');
+                    root.innerHTML = `<div class="text-center py-20"><button onclick="app.navigate('/')" class="btn bg-brand-600 text-white px-6 py-2 rounded">Return Home</button></div>`;
                 }
             },
 
             renderQuizInterface: () => {
                 const root = document.getElementById('app-root');
                 root.innerHTML = `
-                    <div class="flex flex-col lg:flex-row gap-6 h-full min-h-[calc(100vh-140px)] relative">
-                        <div class="lg:hidden flex justify-between items-center bg-slate-100 dark:bg-slate-800 p-3 rounded-lg border theme-border mb-2">
-                            <div class="font-bold">Q. ${activeEngine.currentIndex + 1} / ${activeEngine.questions.length}</div>
-                            <button onclick="document.getElementById('palette-panel').classList.toggle('hidden')" class="flex items-center gap-2 text-sm bg-brand-600 text-white px-3 py-1.5 rounded">
-                                <i class="ph ph-squares-four"></i> Palette
+                    <div class="flex flex-col lg:flex-row gap-6 h-full min-h-[calc(100vh-140px)] relative animate-fade-in-up">
+                        
+                        <!-- Mobile Header -->
+                        <div class="lg:hidden flex justify-between items-center bg-slate-50 dark:bg-slate-800/50 p-4 rounded-xl border theme-border mb-2 shadow-sm">
+                            <div class="font-black text-lg">Q. ${activeEngine.currentIndex + 1} <span class="text-sm theme-text-sec font-medium">/ ${activeEngine.questions.length}</span></div>
+                            <button onclick="document.getElementById('palette-panel').classList.toggle('hidden')" class="flex items-center gap-2 text-sm font-bold bg-brand-600 text-white px-4 py-2 rounded-lg shadow-sm">
+                                <i class="ph-bold ph-squares-four"></i> Palette
                             </button>
                         </div>
 
-                        <div class="flex-1 flex flex-col theme-surface border theme-border rounded-xl shadow-sm overflow-hidden relative">
-                            <div class="bg-slate-50 dark:bg-slate-800 p-4 border-b theme-border flex justify-between items-center">
-                                <h2 class="font-bold text-lg hidden sm:block">${activeEngine.quiz.titleMr}</h2>
+                        <!-- Main Question Area -->
+                        <div class="flex-1 flex flex-col theme-surface border theme-border rounded-2xl shadow-sm overflow-hidden relative">
+                            <div class="bg-slate-50 dark:bg-slate-800/50 p-5 border-b theme-border flex justify-between items-center">
+                                <h2 class="font-extrabold text-lg hidden sm:block text-brand-700 dark:text-brand-400">${activeEngine.quizData.quizTitleMarathi}</h2>
                                 <div class="flex items-center gap-4 ml-auto">
                                     ${activeEngine.totalTime ? `
-                                        <div class="flex items-center gap-2 text-amber-600 dark:text-amber-400 font-mono font-bold bg-amber-50 dark:bg-amber-900/20 px-3 py-1 rounded-full border border-amber-200 dark:border-amber-800">
-                                            <i class="ph ph-timer"></i> <span id="timer-display">${activeEngine.formatTime(activeEngine.remainingTime)}</span>
+                                        <div class="flex items-center gap-2 text-amber-700 dark:text-amber-400 font-mono font-bold bg-amber-100 dark:bg-amber-900/40 px-4 py-1.5 rounded-full border border-amber-200 dark:border-amber-800 shadow-inner">
+                                            <i class="ph-bold ph-timer text-lg"></i> <span id="timer-display" class="text-lg">${activeEngine.formatTime(activeEngine.remainingTime)}</span>
                                         </div>
-                                    ` : `<span class="text-sm theme-text-sec">No Time Limit</span>`}
+                                    ` : `<span class="text-sm font-bold px-3 py-1 bg-slate-200 dark:bg-slate-700 rounded-full theme-text-sec">Practice Mode</span>`}
                                 </div>
                             </div>
 
-                            <div class="p-6 sm:p-8 flex-1 overflow-y-auto" id="question-content"></div>
+                            <div class="p-6 sm:p-10 flex-1 overflow-y-auto" id="question-content"></div>
 
-                            <div class="p-4 bg-slate-50 dark:bg-slate-800 border-t theme-border flex flex-wrap gap-3 justify-between">
-                                <div class="flex flex-wrap gap-2 w-full sm:w-auto">
-                                    <button onclick="Views.quizAction('review')" class="flex-1 sm:flex-none px-4 py-2 bg-purple-100 text-purple-700 dark:bg-purple-900/30 dark:text-purple-300 border border-purple-200 dark:border-purple-800 rounded font-medium text-sm hover:bg-purple-200 transition">Mark for Review</button>
-                                    <button onclick="Views.quizAction('clear')" class="flex-1 sm:flex-none px-4 py-2 bg-slate-200 text-slate-700 dark:bg-slate-700 dark:text-slate-200 rounded font-medium text-sm hover:bg-slate-300 transition">Clear</button>
+                            <div class="p-5 bg-slate-50 dark:bg-slate-800/50 border-t theme-border flex flex-wrap gap-3 justify-between items-center">
+                                <div class="flex flex-wrap gap-3 w-full sm:w-auto">
+                                    <button onclick="Views.quizAction('review')" class="flex-1 sm:flex-none px-5 py-2.5 bg-purple-100 text-purple-700 dark:bg-purple-900/40 dark:text-purple-300 border border-purple-200 dark:border-purple-800/60 rounded-xl font-bold text-sm hover:bg-purple-200 transition-colors shadow-sm">Mark for Review</button>
+                                    <button onclick="Views.quizAction('clear')" class="flex-1 sm:flex-none px-5 py-2.5 bg-white border theme-border text-slate-700 dark:bg-slate-700 dark:border-slate-600 dark:text-slate-200 rounded-xl font-bold text-sm hover:bg-slate-100 transition-colors shadow-sm">Clear</button>
                                 </div>
-                                <div class="flex flex-wrap gap-2 w-full sm:w-auto mt-2 sm:mt-0">
-                                    <button onclick="Views.quizAction('submit')" class="flex-1 sm:flex-none px-4 py-2 bg-red-600 text-white rounded font-medium text-sm hover:bg-red-700 transition shadow-sm">Submit Test</button>
-                                    <button onclick="Views.quizAction('next')" class="flex-1 sm:flex-none px-6 py-2 bg-brand-600 text-white rounded font-medium text-sm hover:bg-brand-700 transition shadow-sm">Save & Next</button>
+                                <div class="flex flex-wrap gap-3 w-full sm:w-auto mt-2 sm:mt-0">
+                                    <button onclick="Views.quizAction('submit')" class="flex-1 sm:flex-none px-6 py-2.5 bg-red-600 text-white rounded-xl font-bold text-sm hover:bg-red-700 transition-all shadow-md">Submit Test</button>
+                                    <button onclick="Views.quizAction('next')" class="flex-1 sm:flex-none px-8 py-2.5 bg-brand-600 text-white rounded-xl font-bold text-sm hover:bg-brand-700 transition-all shadow-md flex items-center justify-center gap-2">Save & Next <i class="ph-bold ph-caret-right"></i></button>
                                 </div>
                             </div>
                         </div>
 
-                        <div id="palette-panel" class="hidden lg:flex w-full lg:w-80 flex-col gap-4 absolute lg:relative top-0 left-0 lg:h-auto h-full z-20 bg-white/95 dark:bg-slate-900/95 backdrop-blur lg:bg-transparent lg:backdrop-blur-none p-4 lg:p-0">
+                        <!-- Side Palette -->
+                        <div id="palette-panel" class="hidden lg:flex w-full lg:w-80 flex-col gap-4 absolute lg:relative top-0 left-0 lg:h-auto h-full z-20 bg-white/95 dark:bg-slate-900/95 backdrop-blur-md lg:bg-transparent lg:backdrop-blur-none p-4 lg:p-0">
                             <div class="lg:hidden flex justify-end mb-2">
-                                <button onclick="document.getElementById('palette-panel').classList.add('hidden')" class="p-2 bg-slate-200 dark:bg-slate-700 rounded-full"><i class="ph ph-x"></i></button>
+                                <button onclick="document.getElementById('palette-panel').classList.add('hidden')" class="p-2 bg-slate-200 dark:bg-slate-700 rounded-full"><i class="ph-bold ph-x"></i></button>
                             </div>
                             
-                            <div class="theme-surface border theme-border rounded-xl p-4 shadow-sm text-xs space-y-2">
-                                <div class="font-bold text-sm border-b theme-border pb-2 mb-2">Palette Legend</div>
-                                <div class="flex items-center gap-2"><div class="w-4 h-4 rounded-full bg-slate-200 dark:bg-slate-600"></div> Not Visited</div>
-                                <div class="flex items-center gap-2"><div class="w-4 h-4 rounded-full bg-red-500"></div> Not Answered</div>
-                                <div class="flex items-center gap-2"><div class="w-4 h-4 rounded-full bg-green-500"></div> Answered</div>
-                                <div class="flex items-center gap-2"><div class="w-4 h-4 rounded-full bg-purple-500"></div> Marked for Review</div>
-                                <div class="flex items-center gap-2"><div class="w-4 h-4 rounded-full bg-blue-500 relative"><div class="absolute right-0 bottom-0 w-1.5 h-1.5 bg-green-400 rounded-full border border-white"></div></div> Answered & Marked</div>
+                            <div class="theme-surface border theme-border rounded-2xl p-5 shadow-sm text-xs space-y-3 font-medium">
+                                <div class="font-extrabold text-sm border-b theme-border pb-3 mb-3 uppercase tracking-wider theme-text-sec">Palette Legend</div>
+                                <div class="grid grid-cols-2 gap-3">
+                                    <div class="flex items-center gap-2"><div class="w-5 h-5 rounded bg-slate-200 dark:bg-slate-600"></div> Not Visited</div>
+                                    <div class="flex items-center gap-2"><div class="w-5 h-5 rounded bg-red-500 shadow-sm"></div> Not Answered</div>
+                                    <div class="flex items-center gap-2"><div class="w-5 h-5 rounded bg-green-500 shadow-sm"></div> Answered</div>
+                                    <div class="flex items-center gap-2"><div class="w-5 h-5 rounded bg-purple-500 shadow-sm"></div> Review</div>
+                                    <div class="flex items-center gap-2 col-span-2"><div class="w-5 h-5 rounded bg-blue-500 relative shadow-sm"><div class="absolute right-0 bottom-0 w-2 h-2 bg-green-400 rounded-full border border-white"></div></div> Answered & Marked</div>
+                                </div>
                             </div>
 
-                            <div class="theme-surface border theme-border rounded-xl p-4 shadow-sm flex-1 overflow-y-auto">
-                                <div class="font-bold text-sm mb-3">Questions</div>
-                                <div class="grid grid-cols-5 gap-2" id="palette-grid"></div>
+                            <div class="theme-surface border theme-border rounded-2xl p-5 shadow-sm flex-1 overflow-y-auto">
+                                <div class="font-extrabold text-sm mb-4 uppercase tracking-wider theme-text-sec">Questions Overview</div>
+                                <div class="grid grid-cols-5 gap-2.5" id="palette-grid"></div>
                             </div>
                         </div>
                     </div>
@@ -1020,24 +1051,36 @@
                 if(!activeEngine) return;
                 const q = activeEngine.questions[activeEngine.currentIndex];
                 const content = document.getElementById('question-content');
-                const selectedAns = activeEngine.answers[q.id];
+                const selectedAns = activeEngine.answers[q.questionId];
+
+                // Note: Options in unified schema are in an object { A: {...}, B: {...} }
+                const optionsArray = Object.entries(q.options).map(([key, data]) => ({
+                    id: key, 
+                    mr: data.optionMarathi, 
+                    en: data.optionEnglish 
+                }));
 
                 content.innerHTML = `
-                    <div class="flex gap-4 mb-6">
-                        <div class="font-bold text-lg text-brand-600">Q.${activeEngine.currentIndex + 1}</div>
+                    <div class="flex gap-4 sm:gap-6 mb-8">
+                        <div class="font-black text-2xl text-brand-600 dark:text-brand-400 mt-1">Q.${activeEngine.currentIndex + 1}</div>
                         <div class="flex-1">
-                            <div class="text-lg sm:text-xl font-medium mb-3 leading-relaxed">${q.mr}</div>
-                            <div class="text-base theme-text-sec leading-relaxed mb-6">${q.en}</div>
+                            <div class="text-xl sm:text-2xl font-bold mb-3 leading-relaxed">${q.questionMarathi}</div>
+                            <div class="text-base sm:text-lg theme-text-sec leading-relaxed font-medium">${q.questionEnglish}</div>
                         </div>
                     </div>
                     
-                    <div class="space-y-3 pl-0 sm:pl-10">
-                        ${q.options.map(opt => `
-                            <label class="flex items-start gap-4 p-4 rounded-lg border ${selectedAns === opt.id ? 'border-brand-500 bg-brand-50 dark:bg-brand-900/20' : 'theme-border hover:bg-slate-50 dark:hover:bg-slate-800'} cursor-pointer transition">
-                                <input type="radio" name="opt_${q.id}" value="${opt.id}" class="mt-1" ${selectedAns === opt.id ? 'checked' : ''} onclick="activeEngine.selectOption('${opt.id}')">
-                                <div>
-                                    <div class="font-medium text-base sm:text-lg leading-relaxed">${opt.mr}</div>
-                                    <div class="text-sm theme-text-sec mt-1">${opt.en}</div>
+                    <div class="space-y-4 pl-0 sm:pl-14">
+                        ${optionsArray.map(opt => `
+                            <label class="flex items-start gap-4 p-5 rounded-xl border-2 ${selectedAns === opt.id ? 'border-brand-500 bg-brand-50/50 dark:bg-brand-900/20 shadow-sm' : 'theme-border hover:bg-slate-50 dark:hover:bg-slate-800/50 hover:border-slate-300 dark:hover:border-slate-600'} cursor-pointer transition-all transform hover:-translate-y-0.5">
+                                <div class="mt-1 flex items-center justify-center">
+                                    <input type="radio" name="opt_${q.questionId}" value="${opt.id}" class="w-5 h-5 accent-brand-600" ${selectedAns === opt.id ? 'checked' : ''} onclick="activeEngine.selectOption('${opt.id}')">
+                                </div>
+                                <div class="flex-1">
+                                    <div class="font-bold text-lg leading-relaxed flex items-center gap-3">
+                                        <span class="inline-block w-6 text-center text-sm font-black theme-text-sec bg-slate-100 dark:bg-slate-800 rounded">${opt.id}</span>
+                                        ${opt.mr}
+                                    </div>
+                                    <div class="text-sm theme-text-sec mt-1.5 font-medium ml-9">${opt.en}</div>
                                 </div>
                             </label>
                         `).join('')}
@@ -1049,20 +1092,20 @@
                 if(!activeEngine) return;
                 const grid = document.getElementById('palette-grid');
                 grid.innerHTML = activeEngine.questions.map((q, i) => {
-                    const status = activeEngine.status[q.id];
+                    const status = activeEngine.status[q.questionId];
                     let bgClass = 'bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-300';
-                    if (status === 'visited') bgClass = 'bg-red-500 text-white';
-                    if (status === 'answered') bgClass = 'bg-green-500 text-white';
-                    if (status === 'review') bgClass = 'bg-purple-500 text-white';
-                    if (status === 'answered-review') bgClass = 'bg-blue-500 text-white';
+                    if (status === 'visited') bgClass = 'bg-red-500 text-white shadow-md';
+                    if (status === 'answered') bgClass = 'bg-green-500 text-white shadow-md';
+                    if (status === 'review') bgClass = 'bg-purple-500 text-white shadow-md';
+                    if (status === 'answered-review') bgClass = 'bg-blue-500 text-white shadow-md';
                     
                     const isCurrent = activeEngine.currentIndex === i;
-                    const ringClass = isCurrent ? 'ring-2 ring-offset-2 ring-brand-500 dark:ring-offset-slate-800' : '';
+                    const ringClass = isCurrent ? 'ring-4 ring-offset-2 ring-brand-500 dark:ring-offset-slate-900 scale-110 z-10' : '';
 
                     return `<button onclick="activeEngine.goToQuestion(${i}); Views.renderCurrentQuestion(); Views.renderPalette();" 
-                                    class="w-full aspect-square rounded-md flex items-center justify-center font-bold text-sm ${bgClass} ${ringClass} transition hover:opacity-80 relative">
+                                    class="w-full aspect-square rounded-lg flex items-center justify-center font-bold text-sm ${bgClass} ${ringClass} transition-all hover:opacity-80 relative">
                                 ${i + 1}
-                                ${status === 'answered-review' ? `<div class="absolute -right-1 -bottom-1 w-2.5 h-2.5 bg-green-400 rounded-full border-2 border-white dark:border-slate-800"></div>` : ''}
+                                ${status === 'answered-review' ? `<div class="absolute -right-1.5 -bottom-1.5 w-3 h-3 bg-green-400 rounded-full border-2 border-white dark:border-slate-800"></div>` : ''}
                             </button>`;
                 }).join('');
             },
@@ -1080,17 +1123,18 @@
                 } else if(action === 'submit') {
                     const res = activeEngine.calculateResult();
                     app.openModal(`
-                        <div class="p-6">
-                            <h2 class="text-xl font-bold mb-4">Submit Quiz</h2>
-                            <div class="grid grid-cols-2 gap-4 mb-6 bg-slate-50 dark:bg-slate-800 p-4 rounded-lg border theme-border text-sm">
-                                <div><span class="theme-text-sec">Total:</span> <strong>${res.total}</strong></div>
-                                <div><span class="theme-text-sec">Answered:</span> <strong class="text-green-600">${res.correct + res.wrong}</strong></div>
-                                <div><span class="theme-text-sec">Unanswered:</span> <strong class="text-red-600">${res.skipped}</strong></div>
+                        <div class="p-8">
+                            <div class="w-16 h-16 bg-red-100 text-red-600 rounded-full flex items-center justify-center mx-auto mb-4"><i class="ph-bold ph-paper-plane-tilt text-3xl"></i></div>
+                            <h2 class="text-2xl font-bold mb-6 text-center">Submit Assessment</h2>
+                            <div class="grid grid-cols-2 gap-4 mb-8 bg-slate-50 dark:bg-slate-900/50 p-5 rounded-2xl border theme-border text-sm font-medium">
+                                <div class="flex justify-between"><span class="theme-text-sec">Total:</span> <strong class="text-lg">${res.total}</strong></div>
+                                <div class="flex justify-between"><span class="theme-text-sec">Answered:</span> <strong class="text-green-600 text-lg">${res.correct + res.wrong}</strong></div>
+                                <div class="flex justify-between col-span-2"><span class="theme-text-sec">Unanswered:</span> <strong class="text-red-600 text-lg">${res.skipped}</strong></div>
                             </div>
-                            <p class="mb-6 font-medium">Are you sure you want to submit? You cannot change your answers after submission.</p>
-                            <div class="flex gap-3">
-                                <button onclick="app.closeModal()" class="flex-1 py-2 bg-slate-200 dark:bg-slate-700 rounded-lg hover:bg-slate-300 transition">Cancel</button>
-                                <button onclick="Views.submitQuiz()" class="flex-1 py-2 bg-brand-600 text-white rounded-lg hover:bg-brand-700 transition">Submit</button>
+                            <p class="mb-8 font-bold text-center text-sm theme-text-sec">Are you sure you want to finalize your submission? This action is irreversible.</p>
+                            <div class="flex gap-4">
+                                <button onclick="app.closeModal()" class="flex-1 py-3.5 bg-white border-2 theme-border dark:bg-slate-800 rounded-xl hover:bg-slate-50 transition-colors font-bold">Cancel</button>
+                                <button onclick="Views.submitQuiz()" class="flex-1 py-3.5 bg-red-600 text-white rounded-xl hover:bg-red-700 transition-all font-bold shadow-md transform hover:-translate-y-0.5">Submit Final</button>
                             </div>
                         </div>
                     `);
@@ -1107,12 +1151,17 @@
 
                 const result = activeEngine.calculateResult();
                 
-                if(activeEngine.quiz.mode === 'test' && window.fb.isFirebaseValid && window.fb.auth.currentUser) {
+                // Fire confetti for good scores (> 70%)
+                if (result.percentage >= 70 && typeof confetti === 'function') {
+                    confetti({ particleCount: 100, spread: 70, origin: { y: 0.6 }, colors: ['#3b82f6', '#22c55e', '#a855f7'] });
+                }
+
+                if(activeEngine.config.mode === 'test' && window.fb.isFirebaseValid && window.fb.auth.currentUser) {
                     try {
                         const uid = window.fb.auth.currentUser.uid;
                         const attemptRef = window.fb.collection(window.fb.db, 'artifacts', 'studysphere', 'users', uid, 'quizAttempts');
                         await window.fb.addDoc(attemptRef, {
-                            quizId: activeEngine.quiz.id,
+                            quizId: activeEngine.quizData.quizId,
                             score: result.finalScore,
                             percentage: result.percentage,
                             timestamp: window.fb.serverTimestamp(),
@@ -1125,158 +1174,170 @@
 
                 const root = document.getElementById('app-root');
                 root.innerHTML = `
-                    <div class="max-w-4xl mx-auto space-y-6">
-                        <div class="flex items-center justify-between mb-4">
-                            <h2 class="text-2xl sm:text-3xl font-bold">Result Analysis</h2>
-                            <button onclick="app.navigate('/subject/${activeEngine.quiz.subjectId || 's3'}')" class="px-4 py-2 border theme-border rounded-lg text-sm hover:bg-slate-50 dark:hover:bg-slate-800 transition">Back to Topic</button>
+                    <div class="max-w-5xl mx-auto space-y-8 animate-fade-in-up">
+                        <div class="flex items-center justify-between mb-2">
+                            <h2 class="text-3xl sm:text-4xl font-extrabold flex items-center gap-3"><i class="ph-fill ph-chart-line-up text-brand-600"></i> Performance Analytics</h2>
+                            <button onclick="app.navigate('/subject/${activeEngine.quizData.subjectId}')" class="hidden sm:inline-block px-5 py-2.5 border-2 theme-border rounded-xl font-bold text-sm hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors">Return to Topics</button>
                         </div>
 
                         <!-- Score Card -->
-                        <div class="theme-surface border theme-border rounded-xl p-6 sm:p-8 shadow-sm flex flex-col md:flex-row gap-8 items-center md:items-start justify-between">
-                            <div class="text-center md:text-left">
-                                <div class="text-sm theme-text-sec uppercase font-bold tracking-wider mb-1">Final Score</div>
-                                <div class="text-5xl font-black text-brand-600 mb-2">${result.finalScore} <span class="text-xl text-slate-400">/ ${result.maxPossible}</span></div>
-                                <div class="inline-block px-3 py-1 bg-brand-50 text-brand-700 dark:bg-brand-900/30 dark:text-brand-300 rounded-full font-medium text-sm border border-brand-200 dark:border-brand-800">
-                                    Accuracy: ${result.total > result.skipped ? Math.round((result.correct/(result.total-result.skipped))*100) : 0}%
+                        <div class="theme-surface border theme-border rounded-3xl p-8 sm:p-10 shadow-lg flex flex-col md:flex-row gap-10 items-center md:items-stretch justify-between relative overflow-hidden">
+                            <div class="absolute -right-20 -top-20 w-64 h-64 bg-brand-50 dark:bg-brand-900/20 rounded-full blur-3xl pointer-events-none"></div>
+                            
+                            <!-- Donut Chart / Score display -->
+                            <div class="flex-1 flex flex-col items-center justify-center relative z-10 border-r-0 md:border-r theme-border pb-8 md:pb-0 md:pr-10">
+                                <div class="text-sm font-extrabold uppercase tracking-widest theme-text-sec mb-4">Final Assessment Score</div>
+                                <div class="text-7xl font-black text-transparent bg-clip-text bg-gradient-to-r from-brand-600 to-indigo-600 dark:from-brand-400 dark:to-indigo-400 mb-4">${result.finalScore.toFixed(2)} <span class="text-3xl text-slate-300 dark:text-slate-600 font-bold">/ ${result.maxPossible}</span></div>
+                                <div class="inline-flex items-center gap-2 px-4 py-2 bg-brand-50 text-brand-700 dark:bg-brand-900/40 dark:text-brand-300 rounded-full font-bold text-sm border border-brand-200 dark:border-brand-800/50 shadow-sm">
+                                    <i class="ph-fill ph-target"></i> Accuracy: ${result.total > result.skipped ? Math.round((result.correct/(result.total-result.skipped))*100) : 0}%
                                 </div>
                             </div>
                             
-                            <div class="grid grid-cols-2 gap-x-8 gap-y-4 w-full md:w-auto text-sm sm:text-base">
-                                <div class="flex justify-between gap-4 border-b theme-border pb-2">
-                                    <span class="theme-text-sec">Total Questions:</span> <span class="font-bold">${result.total}</span>
+                            <!-- Stats Grid -->
+                            <div class="flex-1 grid grid-cols-2 gap-x-8 gap-y-6 w-full relative z-10 sm:text-lg">
+                                <div class="flex flex-col gap-1 pb-3 border-b theme-border">
+                                    <span class="text-xs font-bold uppercase tracking-wider theme-text-sec">Total Questions</span>
+                                    <span class="font-black text-2xl">${result.total}</span>
                                 </div>
-                                <div class="flex justify-between gap-4 border-b theme-border pb-2">
-                                    <span class="theme-text-sec">Positive Marks:</span> <span class="font-bold text-green-600">+${result.posMarks}</span>
+                                <div class="flex flex-col gap-1 pb-3 border-b theme-border">
+                                    <span class="text-xs font-bold uppercase tracking-wider theme-text-sec">Attempted</span>
+                                    <span class="font-black text-2xl">${result.correct + result.wrong}</span>
                                 </div>
-                                <div class="flex justify-between gap-4 border-b theme-border pb-2">
-                                    <span class="theme-text-sec">Correct:</span> <span class="font-bold text-green-600">${result.correct}</span>
+                                <div class="flex flex-col gap-1 pb-3 border-b theme-border">
+                                    <span class="text-xs font-bold uppercase tracking-wider text-green-600 dark:text-green-500">Correct (+${result.posMarks})</span>
+                                    <span class="font-black text-2xl text-green-600 dark:text-green-400">${result.correct}</span>
                                 </div>
-                                <div class="flex justify-between gap-4 border-b theme-border pb-2">
-                                    <span class="theme-text-sec">Negative Marks:</span> <span class="font-bold text-red-600">-${result.negMarks}</span>
-                                </div>
-                                <div class="flex justify-between gap-4 border-b theme-border pb-2">
-                                    <span class="theme-text-sec">Wrong:</span> <span class="font-bold text-red-600">${result.wrong}</span>
-                                </div>
-                                <div class="flex justify-between gap-4 border-b theme-border pb-2">
-                                    <span class="theme-text-sec">Skipped:</span> <span class="font-bold text-slate-500">${result.skipped}</span>
+                                <div class="flex flex-col gap-1 pb-3 border-b theme-border">
+                                    <span class="text-xs font-bold uppercase tracking-wider text-red-600 dark:text-red-500">Incorrect (-${result.negMarks})</span>
+                                    <span class="font-black text-2xl text-red-600 dark:text-red-400">${result.wrong}</span>
                                 </div>
                             </div>
                         </div>
 
                         ${activeEngine.tabSwitchCount > 0 ? `
-                            <div class="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800 p-4 rounded-xl text-amber-800 dark:text-amber-400 text-sm flex gap-3 items-start">
-                                <i class="ph-fill ph-warning-circle text-xl mt-0.5"></i>
-                                <div><strong>Warning Recorded:</strong> You switched tabs ${activeEngine.tabSwitchCount} time(s) during the test. This has been recorded.</div>
+                            <div class="bg-amber-50 dark:bg-amber-900/20 border-2 border-amber-200 dark:border-amber-800 p-5 rounded-2xl text-amber-800 dark:text-amber-400 text-sm flex gap-4 items-start shadow-sm">
+                                <i class="ph-fill ph-warning-circle text-2xl mt-0.5"></i>
+                                <div><strong class="text-base">Anti-Cheat Triggered:</strong> You navigated away from the active test window ${activeEngine.tabSwitchCount} time(s). This violation has been flagged in your permanent record.</div>
                             </div>
                         ` : ''}
 
-                        <!-- Detailed Analysis -->
-                        <h3 class="text-xl font-bold pt-4">Question Analysis</h3>
-                        <div class="space-y-4">
-                            ${activeEngine.questions.map((q, i) => {
-                                const userAnsId = result.answers[q.id];
-                                const isCorrect = userAnsId === q.correct;
-                                const isSkipped = !userAnsId;
-                                
-                                let headerClass = 'bg-slate-50 dark:bg-slate-800 border-slate-200 dark:border-slate-700';
-                                let statusBadge = `<span class="px-2 py-0.5 bg-slate-200 text-slate-700 dark:bg-slate-700 dark:text-slate-300 rounded text-xs font-bold">SKIPPED</span>`;
-                                
-                                if(isCorrect) {
-                                    headerClass = 'bg-green-50 dark:bg-green-900/10 border-green-200 dark:border-green-900/30';
-                                    statusBadge = `<span class="px-2 py-0.5 bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-400 border border-green-200 dark:border-green-800 rounded text-xs font-bold">CORRECT</span>`;
-                                } else if(!isSkipped) {
-                                    headerClass = 'bg-red-50 dark:bg-red-900/10 border-red-200 dark:border-red-900/30';
-                                    statusBadge = `<span class="px-2 py-0.5 bg-red-100 text-red-700 dark:bg-red-900/30 dark:text-red-400 border border-red-200 dark:border-red-800 rounded text-xs font-bold">WRONG</span>`;
-                                }
+                        <!-- Detailed Question Breakdown -->
+                        <div class="pt-6">
+                            <h3 class="text-2xl font-bold mb-6 flex items-center gap-2"><i class="ph-bold ph-list-magnifying-glass theme-text-sec"></i> Detailed Question Review</h3>
+                            <div class="space-y-5">
+                                ${activeEngine.questions.map((q, i) => {
+                                    const userAnsKey = result.answers[q.questionId];
+                                    const isCorrect = userAnsKey === q.correctOption;
+                                    const isSkipped = !userAnsKey;
+                                    
+                                    let headerClass = 'bg-slate-50 dark:bg-slate-800/50 border-slate-200 dark:border-slate-700 hover:border-slate-300';
+                                    let statusBadge = `<span class="px-3 py-1 bg-slate-200 text-slate-700 dark:bg-slate-700 dark:text-slate-300 rounded-lg text-xs font-black tracking-wider uppercase shadow-sm">Skipped</span>`;
+                                    
+                                    if(isCorrect) {
+                                        headerClass = 'bg-green-50/50 dark:bg-green-900/10 border-green-200 dark:border-green-900/30 hover:border-green-300';
+                                        statusBadge = `<span class="px-3 py-1 bg-green-500 text-white rounded-lg text-xs font-black tracking-wider uppercase shadow-sm flex items-center gap-1"><i class="ph-bold ph-check"></i> Correct</span>`;
+                                    } else if(!isSkipped) {
+                                        headerClass = 'bg-red-50/50 dark:bg-red-900/10 border-red-200 dark:border-red-900/30 hover:border-red-300';
+                                        statusBadge = `<span class="px-3 py-1 bg-red-500 text-white rounded-lg text-xs font-black tracking-wider uppercase shadow-sm flex items-center gap-1"><i class="ph-bold ph-x"></i> Incorrect</span>`;
+                                    }
 
-                                const userOptionText = isSkipped ? '-' : q.options.find(o => o.id === userAnsId)?.mr;
-                                const correctOptionText = q.options.find(o => o.id === q.correct)?.mr;
+                                    const userOptionText = isSkipped ? 'Not Attempted' : q.options[userAnsKey]?.optionMarathi;
+                                    const correctOptionText = q.options[q.correctOption]?.optionMarathi;
 
-                                return `
-                                <div class="border theme-border rounded-xl overflow-hidden shadow-sm">
-                                    <button onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('.arrow').classList.toggle('rotate-180')" class="w-full text-left p-4 sm:p-5 flex gap-4 ${headerClass} focus:outline-none transition">
-                                        <div class="font-bold mt-1">Q.${i+1}</div>
-                                        <div class="flex-1">
-                                            <div class="font-medium text-base sm:text-lg mb-1 leading-relaxed">${q.mr}</div>
-                                            <div class="flex items-center gap-3 mt-2">
-                                                ${statusBadge}
-                                                <span class="text-sm theme-text-sec">View Details</span>
+                                    return `
+                                    <div class="border-2 theme-border rounded-2xl overflow-hidden shadow-sm transition-shadow">
+                                        <button onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('.arrow').classList.toggle('rotate-180')" class="w-full text-left p-5 sm:p-6 flex gap-4 ${headerClass} focus:outline-none transition-colors">
+                                            <div class="font-black text-xl mt-1 opacity-50">Q${i+1}</div>
+                                            <div class="flex-1">
+                                                <div class="font-bold text-lg mb-2 leading-relaxed">${q.questionMarathi}</div>
+                                                <div class="flex flex-wrap items-center gap-3 mt-3">
+                                                    ${statusBadge}
+                                                    <span class="text-xs font-bold theme-text-sec flex items-center gap-1"><i class="ph-bold ph-caret-down"></i> View Solution</span>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <i class="ph ph-caret-down arrow transition-transform duration-300 mt-1"></i>
-                                    </button>
-                                    <div class="hidden border-t theme-border p-4 sm:p-6 bg-white dark:bg-slate-900">
-                                        <div class="text-sm theme-text-sec mb-4">${q.en}</div>
-                                        
-                                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-                                            <div class="p-3 rounded-lg border ${!isSkipped && !isCorrect ? 'border-red-300 bg-red-50 dark:bg-red-900/20' : 'theme-border'}">
-                                                <div class="text-xs theme-text-sec mb-1">Your Answer:</div>
-                                                <div class="font-medium ${!isSkipped && !isCorrect ? 'text-red-600 dark:text-red-400' : ''}">${userOptionText}</div>
+                                            <div class="w-8 h-8 rounded-full bg-white dark:bg-slate-800 flex items-center justify-center shadow-sm shrink-0">
+                                                <i class="ph-bold ph-caret-down arrow transition-transform duration-300"></i>
                                             </div>
-                                            <div class="p-3 rounded-lg border border-green-300 bg-green-50 dark:bg-green-900/20">
-                                                <div class="text-xs text-green-700 dark:text-green-400 mb-1">Correct Answer:</div>
-                                                <div class="font-medium text-green-800 dark:text-green-300">${correctOptionText}</div>
+                                        </button>
+                                        <div class="hidden border-t-2 theme-border p-5 sm:p-8 bg-white dark:bg-slate-900">
+                                            <div class="text-sm font-medium theme-text-sec mb-6 pb-6 border-b theme-border">${q.questionEnglish}</div>
+                                            
+                                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 mb-8">
+                                                <div class="p-4 rounded-xl border-2 ${!isSkipped && !isCorrect ? 'border-red-200 bg-red-50/50 dark:bg-red-900/10 dark:border-red-900/30' : 'theme-border bg-slate-50 dark:bg-slate-800/50'} relative">
+                                                    <div class="absolute -top-3 left-4 bg-white dark:bg-slate-900 px-2 text-xs font-bold uppercase tracking-wider theme-text-sec">Your Response</div>
+                                                    <div class="font-bold mt-2 ${!isSkipped && !isCorrect ? 'text-red-700 dark:text-red-400' : ''}">${isSkipped ? '-' : `<span class="mr-2 text-sm px-1.5 py-0.5 rounded bg-slate-200 dark:bg-slate-700">${userAnsKey}</span> ${userOptionText}`}</div>
+                                                </div>
+                                                <div class="p-4 rounded-xl border-2 border-green-200 bg-green-50/50 dark:bg-green-900/10 dark:border-green-900/30 relative">
+                                                    <div class="absolute -top-3 left-4 bg-white dark:bg-slate-900 px-2 text-xs font-bold uppercase tracking-wider text-green-600 dark:text-green-500">Correct Answer</div>
+                                                    <div class="font-bold mt-2 text-green-800 dark:text-green-400"><span class="mr-2 text-sm px-1.5 py-0.5 rounded bg-green-200 dark:bg-green-900/50 text-green-800 dark:text-green-300">${q.correctOption}</span> ${correctOptionText}</div>
+                                                </div>
                                             </div>
-                                        </div>
 
-                                        <div class="p-4 rounded-lg bg-brand-50 dark:bg-slate-800 border theme-border">
-                                            <div class="font-bold flex items-center gap-2 mb-2 text-brand-700 dark:text-brand-400"><i class="ph ph-lightbulb"></i> Explanation</div>
-                                            <p class="mb-2 leading-relaxed text-[15px]">${q.expMr}</p>
-                                            <p class="theme-text-sec text-sm leading-relaxed">${q.expEn}</p>
+                                            <div class="p-6 rounded-2xl bg-brand-50/50 dark:bg-brand-900/10 border-2 border-brand-100 dark:border-brand-900/30">
+                                                <div class="font-black flex items-center gap-2 mb-3 text-brand-700 dark:text-brand-400 uppercase tracking-wider text-sm"><i class="ph-fill ph-lightbulb text-lg"></i> Official Explanation</div>
+                                                <p class="mb-3 font-medium leading-relaxed text-base">${q.explanationMarathi}</p>
+                                                <p class="theme-text-sec text-sm leading-relaxed font-medium pt-3 border-t border-brand-200 dark:border-brand-800/50">${q.explanationEnglish}</p>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                `;
-                            }).join('')}
+                                    `;
+                                }).join('')}
+                            </div>
+                        </div>
+                        <div class="text-center pt-8">
+                            <button onclick="app.navigate('/subject/${activeEngine.quizData.subjectId}')" class="px-8 py-3.5 bg-slate-800 text-white dark:bg-slate-200 dark:text-slate-900 rounded-xl font-bold shadow-md hover:shadow-lg transition-all">Return to Dashboard</button>
                         </div>
                     </div>
                 `;
+                window.scrollTo({ top: 0, behavior: 'smooth' });
             },
 
             Login: () => `
-                <div class="max-w-md mx-auto theme-surface border theme-border rounded-xl p-8 shadow-sm">
-                    <div class="text-center mb-8">
-                        <div class="w-16 h-16 bg-brand-100 text-brand-600 rounded-full flex items-center justify-center mx-auto mb-4"><i class="ph ph-user text-3xl"></i></div>
-                        <h2 class="text-2xl font-bold">Welcome Back</h2>
-                        <p class="theme-text-sec text-sm mt-1">Login to access Test mode and track progress.</p>
+                <div class="max-w-md mx-auto theme-surface border theme-border rounded-3xl p-8 sm:p-10 shadow-xl mt-10 animate-fade-in-up relative overflow-hidden">
+                    <div class="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-brand-500 to-indigo-500"></div>
+                    <div class="text-center mb-10">
+                        <div class="w-20 h-20 bg-brand-50 dark:bg-brand-900/30 text-brand-600 rounded-full flex items-center justify-center mx-auto mb-5 shadow-inner"><i class="ph-fill ph-user-circle text-5xl"></i></div>
+                        <h2 class="text-3xl font-extrabold mb-2">Welcome Back</h2>
+                        <p class="theme-text-sec font-medium">Authenticate to access Pro Test modes.</p>
                     </div>
                     
                     ${!window.fb.isFirebaseValid ? `
-                        <div class="bg-amber-50 border border-amber-200 text-amber-700 p-3 rounded text-sm mb-4">
-                            <strong>Demo Mode:</strong> Firebase is not configured. Real authentication is disabled. Using mock login for UI demonstration.
+                        <div class="bg-amber-50 border border-amber-200 text-amber-800 dark:bg-amber-900/20 dark:border-amber-800/50 dark:text-amber-400 p-4 rounded-xl text-sm mb-6 font-medium flex gap-3 items-start">
+                            <i class="ph-fill ph-info text-xl shrink-0"></i>
+                            <div><strong>Local Demo Mode Active.</strong> Database is disconnected. Any credentials will log you in locally.</div>
                         </div>
                     ` : ''}
 
-                    <div class="space-y-4">
+                    <div class="space-y-5">
                         <div>
-                            <label class="block text-sm font-medium mb-1">Email</label>
-                            <input type="email" id="login-email" class="w-full px-4 py-2.5 rounded-lg border theme-border bg-transparent focus:ring-2 focus:ring-brand-500 outline-none" placeholder="student@example.com">
+                            <label class="block text-sm font-bold mb-2 theme-text-sec uppercase tracking-wider">Email Address</label>
+                            <input type="email" id="login-email" class="w-full px-4 py-3.5 rounded-xl border-2 theme-border bg-slate-50 dark:bg-slate-900/50 focus:ring-2 focus:border-brand-500 focus:ring-brand-500 outline-none transition-all font-medium" placeholder="aspirant@mpsc.gov.in">
                         </div>
                         <div>
-                            <label class="block text-sm font-medium mb-1">Password</label>
-                            <input type="password" id="login-pass" class="w-full px-4 py-2.5 rounded-lg border theme-border bg-transparent focus:ring-2 focus:ring-brand-500 outline-none" placeholder="••••••••">
+                            <label class="block text-sm font-bold mb-2 theme-text-sec uppercase tracking-wider">Password</label>
+                            <input type="password" id="login-pass" class="w-full px-4 py-3.5 rounded-xl border-2 theme-border bg-slate-50 dark:bg-slate-900/50 focus:ring-2 focus:border-brand-500 focus:ring-brand-500 outline-none transition-all font-medium" placeholder="••••••••">
                         </div>
-                        <button onclick="Views.processLogin()" class="w-full py-3 bg-brand-600 hover:bg-brand-700 text-white rounded-lg font-medium transition shadow-sm mt-2">Login</button>
+                        <button onclick="Views.processLogin()" class="w-full py-4 bg-gradient-to-r from-brand-600 to-brand-700 hover:from-brand-700 hover:to-brand-800 text-white rounded-xl font-bold transition-all shadow-md hover:shadow-lg mt-4 text-lg">Sign In</button>
                     </div>
                 </div>
             `,
             processLogin: async () => {
                 const e = document.getElementById('login-email').value;
                 const p = document.getElementById('login-pass').value;
-                if(!e || !p) { app.showToast('Fill all fields', 'error'); return; }
+                if(!e || !p) { app.showToast('Please enter both email and password.', 'error'); return; }
                 
                 if(window.fb.isFirebaseValid) {
                     try {
                         await window.fb.signInWithEmailAndPassword(window.fb.auth, e, p);
-                        app.showToast('Login successful', 'success');
+                        app.showToast('Authentication Successful', 'success');
                         app.navigate('/');
                     } catch(err) {
-                        app.showToast('Authentication failed: ' + err.message, 'error');
+                        app.showToast('Authentication Failed: ' + err.message, 'error');
                     }
                 } else {
-                    app.currentUser = { uid: 'demo_user', email: e };
+                    app.currentUser = { uid: 'dev_local_user', email: e };
                     app.renderNavigationLinks();
-                    app.showToast('Mock Login Successful (Demo Mode)', 'success');
+                    app.showToast('Local Mock Session Established', 'success');
                     app.navigate('/');
                 }
             },
@@ -1284,204 +1345,94 @@
             Dashboard: () => {
                 if(!app.currentUser) { app.navigate('/login'); return ''; }
                 return `
-                    <div class="max-w-4xl mx-auto space-y-8">
-                        <div class="theme-surface border theme-border rounded-xl p-8 shadow-sm flex items-center gap-6">
-                            <div class="w-20 h-20 bg-brand-100 text-brand-600 rounded-full flex items-center justify-center text-3xl font-bold">
-                                ${app.currentUser.email ? app.currentUser.email[0].toUpperCase() : 'U'}
+                    <div class="max-w-5xl mx-auto space-y-8 animate-fade-in-up">
+                        <div class="theme-surface border theme-border rounded-3xl p-8 sm:p-10 shadow-lg flex items-center gap-8 relative overflow-hidden">
+                            <div class="absolute right-0 top-0 w-64 h-full bg-gradient-to-l from-brand-50 to-transparent dark:from-brand-900/10 pointer-events-none"></div>
+                            <div class="w-24 h-24 bg-brand-600 text-white rounded-full flex items-center justify-center text-4xl font-black shadow-md z-10">
+                                ${app.currentUser.email ? app.currentUser.email[0].toUpperCase() : 'A'}
                             </div>
-                            <div>
-                                <h2 class="text-2xl font-bold">${app.currentUser.email || 'Student'}</h2>
-                                <p class="theme-text-sec">UID: <span class="font-mono text-xs">${app.currentUser.uid}</span></p>
+                            <div class="z-10">
+                                <h2 class="text-3xl font-extrabold mb-1">${app.currentUser.email || 'MPSC Aspirant'}</h2>
+                                <p class="theme-text-sec font-medium">Session ID: <span class="font-mono text-xs bg-slate-100 dark:bg-slate-800 px-2 py-1 rounded">${app.currentUser.uid}</span></p>
                             </div>
                         </div>
 
-                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                            <div class="theme-surface border theme-border rounded-xl p-6 text-center shadow-sm">
-                                <i class="ph ph-check-circle text-3xl text-green-500 mb-2"></i>
-                                <div class="text-3xl font-bold mb-1">-</div>
-                                <div class="text-sm theme-text-sec">Tests Attempted</div>
+                        <h3 class="text-2xl font-bold pt-4 px-2">Performance Metrics</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                            <div class="theme-surface border theme-border rounded-2xl p-8 text-center shadow-sm hover:shadow-md transition-shadow">
+                                <div class="w-16 h-16 bg-blue-50 dark:bg-blue-900/20 text-blue-500 rounded-full flex items-center justify-center mx-auto mb-4"><i class="ph-fill ph-stack text-3xl"></i></div>
+                                <div class="text-4xl font-black mb-2 text-slate-800 dark:text-slate-100">-</div>
+                                <div class="text-sm font-bold uppercase tracking-wider theme-text-sec">Tests Completed</div>
                             </div>
-                            <div class="theme-surface border theme-border rounded-xl p-6 text-center shadow-sm">
-                                <i class="ph ph-target text-3xl text-brand-500 mb-2"></i>
-                                <div class="text-3xl font-bold mb-1">- %</div>
-                                <div class="text-sm theme-text-sec">Avg Accuracy</div>
+                            <div class="theme-surface border theme-border rounded-2xl p-8 text-center shadow-sm hover:shadow-md transition-shadow">
+                                <div class="w-16 h-16 bg-green-50 dark:bg-green-900/20 text-green-500 rounded-full flex items-center justify-center mx-auto mb-4"><i class="ph-fill ph-target text-3xl"></i></div>
+                                <div class="text-4xl font-black mb-2 text-slate-800 dark:text-slate-100">- %</div>
+                                <div class="text-sm font-bold uppercase tracking-wider theme-text-sec">Average Accuracy</div>
                             </div>
-                            <div class="theme-surface border theme-border rounded-xl p-6 text-center shadow-sm">
-                                <i class="ph ph-trophy text-3xl text-amber-500 mb-2"></i>
-                                <div class="text-3xl font-bold mb-1">-</div>
-                                <div class="text-sm theme-text-sec">Best Score</div>
+                            <div class="theme-surface border theme-border rounded-2xl p-8 text-center shadow-sm hover:shadow-md transition-shadow">
+                                <div class="w-16 h-16 bg-amber-50 dark:bg-amber-900/20 text-amber-500 rounded-full flex items-center justify-center mx-auto mb-4"><i class="ph-fill ph-trophy text-3xl"></i></div>
+                                <div class="text-4xl font-black mb-2 text-slate-800 dark:text-slate-100">-</div>
+                                <div class="text-sm font-bold uppercase tracking-wider theme-text-sec">Highest Score</div>
                             </div>
                         </div>
-                        <div class="text-sm theme-text-sec text-center">(Performance metrics require Firestore configuration to load real data)</div>
+                        <div class="bg-slate-50 dark:bg-slate-800/50 p-4 rounded-xl text-sm font-medium theme-text-sec text-center border theme-border">
+                            <i class="ph-bold ph-info"></i> Global analytics require a connected production backend database.
+                        </div>
                     </div>
                 `;
             },
 
-            // Static Pages integration
             About: () => `
-                <div class="max-w-4xl mx-auto space-y-8">
+                <div class="max-w-4xl mx-auto space-y-10 animate-fade-in-up py-8">
                     <div class="text-center">
-                        <div class="w-16 h-16 bg-brand-100 text-brand-600 rounded-full flex items-center justify-center mx-auto mb-4"><i class="ph ph-info text-3xl"></i></div>
-                        <h1 class="text-3xl sm:text-4xl font-bold mb-4">About StudySphere</h1>
+                        <h1 class="text-4xl sm:text-5xl font-extrabold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-brand-600 to-indigo-600 dark:from-brand-400 dark:to-indigo-400">Our Mission</h1>
+                        <p class="text-xl theme-text-sec font-medium max-w-2xl mx-auto">Empowering aspirants with a structured, ad-free, and highly precise assessment platform.</p>
                     </div>
                     
-                    <div class="theme-surface border theme-border rounded-xl p-6 sm:p-8 shadow-sm space-y-6 text-base sm:text-lg leading-relaxed theme-text-sec">
+                    <div class="theme-surface border theme-border rounded-3xl p-8 sm:p-12 shadow-lg space-y-6 text-lg leading-relaxed font-medium">
                         <p>StudySphere हे MPSC Combined Group B & C परीक्षेची तयारी करणाऱ्या विद्यार्थ्यांसाठी तयार केलेले bilingual learning आणि MCQ practice platform आहे.</p>
-                        <p>या platform चा मुख्य उद्देश विद्यार्थ्यांना <strong class="theme-text font-semibold">विषय &rarr; Chapter &rarr; Topic</strong> या क्रमाने अभ्यासाशी संबंधित MCQs सोडवण्याची आणि स्वतःच्या तयारीचे मूल्यमापन करण्याची सोपी सुविधा उपलब्ध करून देणे हा आहे.</p>
+                        <p>या platform चा मुख्य उद्देश विद्यार्थ्यांना <strong class="text-brand-600 dark:text-brand-400 font-extrabold">विषय &rarr; Chapter &rarr; Topic</strong> या क्रमाने अभ्यासाशी संबंधित MCQs सोडवण्याची आणि स्वतःच्या तयारीचे मूल्यमापन करण्याची सोपी सुविधा उपलब्ध करून देणे हा आहे.</p>
                         <p>StudySphere वर विद्यार्थ्यांना विविध विषयांमधील Practice Quizzes आणि Test Quizzes सोडवता येतील. Quiz पूर्ण केल्यानंतर score, correct answers, incorrect answers, skipped questions आणि उपलब्ध असल्यास प्रश्नांचे explanations पाहता येतील.</p>
                         <p>Website वरील content मराठी आणि English या दोन्ही भाषांमध्ये उपलब्ध करून देण्याचा प्रयत्न केला जातो, जेणेकरून विद्यार्थ्यांना प्रश्न समजून घेणे आणि revision करणे अधिक सोपे जाईल.</p>
-                        <p>StudySphere चा उद्देश केवळ quiz देणे नसून नियमित practice, revision, accuracy आणि self-assessment यांना मदत करणारे एक व्यवस्थित digital platform तयार करणे हा आहे.</p>
                     </div>
 
-                    <div class="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800 p-6 rounded-xl">
-                        <h3 class="text-lg font-bold text-amber-800 dark:text-amber-400 mb-2 flex items-center gap-2"><i class="ph-fill ph-warning-circle"></i> Important Note</h3>
-                        <p class="text-amber-700 dark:text-amber-300 text-sm sm:text-base leading-relaxed">
-                            StudySphere हे स्वतंत्र educational platform आहे. हे Maharashtra Public Service Commission (MPSC) चे अधिकृत website किंवा अधिकृत application नाही. <br><br>
-                            परीक्षेचा अधिकृत syllabus, notification, परीक्षा पद्धती, dates आणि इतर अधिकृत माहितीसाठी MPSC च्या अधिकृत सूचनांना अंतिम संदर्भ मानावा.
+                    <div class="bg-amber-50 dark:bg-amber-900/10 border-2 border-amber-200 dark:border-amber-900/30 p-8 rounded-3xl shadow-sm">
+                        <h3 class="text-xl font-black text-amber-800 dark:text-amber-500 mb-3 flex items-center gap-2"><i class="ph-fill ph-warning-circle"></i> Disclaimer</h3>
+                        <p class="text-amber-700 dark:text-amber-400/80 font-medium leading-relaxed">
+                            StudySphere is an independent educational tool built by the community. It is NOT officially affiliated with the Maharashtra Public Service Commission (MPSC). Always refer to the official portal for exam notifications, syllabus updates, and exact marking structures.
                         </p>
                     </div>
                 </div>
             `,
             
             Contact: () => `
-                <div class="max-w-3xl mx-auto space-y-8">
-                    <h1 class="text-3xl font-bold mb-6 flex items-center gap-2"><i class="ph ph-envelope-simple text-brand-600"></i> Contact Us</h1>
-                    <div class="theme-surface border theme-border rounded-xl p-6 sm:p-8 shadow-sm">
-                        <p class="theme-text-sec text-lg mb-6">For queries, feedback, or support regarding StudySphere platform, you can reach out to our community.</p>
-                        <a href="https://t.me/+va0AGcqvCdQzNTI1" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-3 px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white rounded-lg font-medium transition shadow-sm">
-                            <i class="ph-fill ph-telegram-logo text-2xl"></i> Join our Telegram Group
+                <div class="max-w-3xl mx-auto space-y-8 animate-fade-in-up py-8">
+                    <h1 class="text-4xl font-extrabold mb-8 flex items-center gap-3"><i class="ph-fill ph-envelope-simple text-brand-600"></i> Get in Touch</h1>
+                    <div class="theme-surface border theme-border rounded-3xl p-8 sm:p-12 shadow-lg">
+                        <p class="theme-text-sec text-xl font-medium mb-8 leading-relaxed">Found an error in a question? Have feature requests? Join our active Telegram community to collaborate with fellow aspirants and the development team.</p>
+                        <a href="https://t.me/+va0AGcqvCdQzNTI1" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-3 px-8 py-4 bg-[#0088cc] hover:bg-[#0077b3] text-white rounded-2xl font-bold transition-all shadow-md hover:shadow-lg transform hover:-translate-y-1 text-lg">
+                            <i class="ph-fill ph-telegram-logo text-3xl"></i> Open Telegram Community
                         </a>
-                        <p class="mt-6 text-sm theme-text-sec">We will regularly update this section with more direct contact methods.</p>
-                    </div>
-                </div>
-            `,
-
-            Legal: (type) => {
-                const isPrivacy = type === 'privacy';
-                const title = isPrivacy ? 'Privacy Policy' : 'Terms of Service';
-                const date = 'September 2026'; // Placeholder current date context
-
-                const content = isPrivacy ? `
-                    <p>StudySphere (“we”, “us”, “our”) respects the privacy of its users and aims to handle user information responsibly.</p>
-                    
-                    <h3>1. Information We May Collect</h3>
-                    <p>Depending on the features used, StudySphere may collect information such as:</p>
-                    <ul>
-                        <li>Name</li>
-                        <li>Email address</li>
-                        <li>Account authentication information</li>
-                        <li>Quiz attempts</li>
-                        <li>Quiz scores and performance data</li>
-                        <li>User preferences such as theme or font-size settings</li>
-                        <li>Technical information required for website operation</li>
-                    </ul>
-                    <p>We aim to collect only information that is reasonably necessary for providing and improving the service.</p>
-
-                    <h3>2. Use of Information</h3>
-                    <p>Information may be used to:</p>
-                    <ul>
-                        <li>Provide user authentication</li>
-                        <li>Maintain quiz history</li>
-                        <li>Display quiz results</li>
-                        <li>Provide performance analysis</li>
-                        <li>Improve website functionality</li>
-                        <li>Maintain website security</li>
-                        <li>Prevent misuse of quiz functionality</li>
-                    </ul>
-
-                    <h3>3. Quiz Data</h3>
-                    <p>For logged-in users, quiz attempts and related performance information may be associated with their account. Users should not attempt to access, modify or interfere with another user's information.</p>
-
-                    <h3>4. Cookies and Local Storage</h3>
-                    <p>StudySphere may use browser storage technologies to remember preferences such as:</p>
-                    <ul>
-                        <li>Light/Dark mode</li>
-                        <li>Font-size preference</li>
-                        <li>Other necessary interface settings</li>
-                    </ul>
-
-                    <h3>5. Third-Party Services</h3>
-                    <p>StudySphere may use third-party services such as Firebase and payment/UPI-related services where required. Such services may process information according to their respective privacy policies and terms.</p>
-
-                    <h3>6. Payments and Donations</h3>
-                    <p>If donation functionality is enabled, payment processing may involve third-party UPI/payment services. StudySphere does not intend to store sensitive banking credentials or UPI application passwords.</p>
-
-                    <h3>7. Security</h3>
-                    <p>Reasonable technical measures are used to protect user information. However, no internet-based system can guarantee absolute security.</p>
-
-                    <h3>8. Children's Privacy</h3>
-                    <p>The platform is intended for examination preparation and is not specifically designed as a service for children.</p>
-
-                    <h3>9. Changes to This Policy</h3>
-                    <p>This Privacy Policy may be updated when website functionality or applicable requirements change.</p>
-
-                    <h3>10. Contact</h3>
-                    <p>For privacy-related questions, please contact us through the contact method provided on the StudySphere website.</p>
-                ` : `
-                    <p>By accessing or using StudySphere, you agree to use the website responsibly and in accordance with these Terms.</p>
-
-                    <h3>1. Purpose of the Website</h3>
-                    <p>StudySphere is an independent educational platform designed to provide MCQ-based practice and self-assessment for MPSC Combined Group B & C examination preparation.</p>
-
-                    <h3>2. Independent Platform</h3>
-                    <p>StudySphere is not an official website or application of the Maharashtra Public Service Commission (MPSC). Official examination notifications, syllabus, dates and other official information should always be verified from the official MPSC sources.</p>
-
-                    <h3>3. User Account</h3>
-                    <p>Certain features, particularly Test Quizzes, may require user authentication. Users are responsible for maintaining the security of their account credentials.</p>
-
-                    <h3>4. Quiz Rules</h3>
-                    <p>Users must not attempt to manipulate:</p>
-                    <ul>
-                        <li>quiz scores</li>
-                        <li>quiz attempts</li>
-                        <li>answers</li>
-                        <li>timers</li>
-                        <li>result records</li>
-                        <li>another user's data</li>
-                    </ul>
-
-                    <h3>5. Test Attempts</h3>
-                    <p>Where a Test Quiz is configured as a one-time attempt, an authenticated user may be restricted to one attempt for that particular quiz.</p>
-
-                    <h3>6. Educational Content</h3>
-                    <p>Quiz questions and explanations are intended for educational practice. Users should independently verify important information against reliable and official sources where appropriate.</p>
-
-                    <h3>7. Website Availability</h3>
-                    <p>We aim to keep StudySphere available and functional, but continuous uninterrupted availability cannot be guaranteed.</p>
-
-                    <h3>8. Prohibited Activities</h3>
-                    <p>Users must not:</p>
-                    <ul>
-                        <li>attempt unauthorized access</li>
-                        <li>manipulate quiz results</li>
-                        <li>interfere with website security</li>
-                        <li>access another user's data</li>
-                        <li>misuse the website</li>
-                        <li>intentionally disrupt website operation</li>
-                    </ul>
-
-                    <h3>9. Donations</h3>
-                    <p>If donation functionality is available, donations are voluntary. Payment processing may be handled through external UPI/payment services.</p>
-
-                    <h3>10. Changes</h3>
-                    <p>These Terms may be updated when required.</p>
-
-                    <h3>11. Contact</h3>
-                    <p>For questions regarding these Terms, please use the contact option provided on the StudySphere website.</p>
-                `;
-
-                return `
-                    <div class="max-w-4xl mx-auto theme-surface border theme-border rounded-xl p-8 shadow-sm">
-                        <h1 class="text-3xl font-bold mb-2">${title}</h1>
-                        <p class="text-sm theme-text-sec mb-8">Last Updated: ${date}</p>
-                        
-                        <div class="prose dark:prose-invert max-w-none prose-brand prose-h3:mt-8 prose-h3:mb-4 prose-p:text-slate-600 dark:prose-p:text-slate-300 prose-li:text-slate-600 dark:prose-li:text-slate-300">
-                            ${content}
+                        <div class="mt-10 pt-8 border-t theme-border">
+                            <p class="text-sm font-bold theme-text-sec uppercase tracking-wider">Direct Email (Coming Soon)</p>
                         </div>
                     </div>
-                `;
-            }
+                </div>
+            `
         };
+
+        // Static fallback for missing routes
+        Views.Legal = (type) => `
+            <div class="max-w-4xl mx-auto theme-surface border theme-border rounded-3xl p-10 shadow-lg animate-fade-in-up my-10">
+                <h1 class="text-3xl font-extrabold mb-4">${type === 'privacy' ? 'Privacy Policy' : 'Terms of Service'}</h1>
+                <p class="font-medium theme-text-sec mb-8">Effective Date: October 2026</p>
+                <div class="space-y-6 font-medium leading-relaxed text-slate-700 dark:text-slate-300">
+                    <p>Welcome to StudySphere's final release policies. This system is designed as an educational tool for self-assessment.</p>
+                    <p><strong>Data Processing:</strong> In production modes connected to Firebase, we securely store your email, authentication keys, and quiz metrics entirely for providing you dashboard analytics.</p>
+                    <p><strong>Integrity:</strong> Test Modes implement strict single-attempt constraints and tab-switching monitors. Manipulating the client to bypass these ruins the utility of the assessment tools.</p>
+                </div>
+            </div>
+        `;
 
         app.logout = async () => {
             if(window.fb.isFirebaseValid) {
@@ -1490,33 +1441,44 @@
                 app.currentUser = null;
                 app.renderNavigationLinks();
                 app.navigate('/');
-                app.showToast('Logged out successfully', 'info');
+                app.showToast('Session terminated successfully.', 'info');
             }
         };
 
-        const router = () => {
+        const router = async () => {
             const hash = window.location.hash || '#/';
             const root = document.getElementById('app-root');
             activeEngine = null;
             
-            root.classList.remove('fade-in');
-            void root.offsetWidth; 
-            root.classList.add('fade-in');
+            // Show asynchronous Skeleton Loader for immediate feedback
+            root.innerHTML = `
+                <div class="w-full max-w-5xl mx-auto space-y-6 pt-10">
+                    <div class="h-12 w-1/3 rounded-xl skeleton"></div>
+                    <div class="h-6 w-1/2 rounded-xl skeleton mb-10"></div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="h-48 w-full rounded-2xl skeleton"></div>
+                        <div class="h-48 w-full rounded-2xl skeleton"></div>
+                    </div>
+                </div>
+            `;
 
             try {
-                if (hash === '#/') root.innerHTML = Views.Home();
-                else if (hash.startsWith('#/subject/')) root.innerHTML = Views.Subject(hash.split('/')[2]);
-                else if (hash.startsWith('#/topic/')) root.innerHTML = Views.Topic(hash.split('/')[2]);
-                else if (hash === '#/login') root.innerHTML = Views.Login();
-                else if (hash === '#/dashboard') root.innerHTML = Views.Dashboard();
-                else if (hash === '#/about') root.innerHTML = Views.About();
-                else if (hash === '#/contact') root.innerHTML = Views.Contact();
-                else if (hash === '#/privacy-policy') root.innerHTML = Views.Legal('privacy');
-                else if (hash === '#/terms') root.innerHTML = Views.Legal('terms');
-                else root.innerHTML = `<div class="text-center py-20 text-red-500 text-xl">Page not found (404)</div>`;
+                let contentHTML = '';
+                if (hash === '#/') contentHTML = await Views.Home();
+                else if (hash.startsWith('#/subject/')) contentHTML = await Views.Subject(hash.split('/')[2]);
+                else if (hash.startsWith('#/topic/')) contentHTML = await Views.Topic(hash.split('/')[2]);
+                else if (hash === '#/login') contentHTML = Views.Login();
+                else if (hash === '#/dashboard') contentHTML = Views.Dashboard();
+                else if (hash === '#/about') contentHTML = Views.About();
+                else if (hash === '#/contact') contentHTML = Views.Contact();
+                else if (hash === '#/privacy-policy') contentHTML = Views.Legal('privacy');
+                else if (hash === '#/terms') contentHTML = Views.Legal('terms');
+                else contentHTML = `<div class="text-center py-24 text-red-500 font-extrabold text-2xl">Page Not Found (404)</div>`;
+                
+                root.innerHTML = contentHTML;
             } catch (e) {
                 console.error("Routing error:", e);
-                root.innerHTML = `<div class="text-center py-20 text-red-500">An error occurred rendering this page.</div>`;
+                root.innerHTML = `<div class="text-center py-24 text-red-500 font-bold text-xl">A rendering exception occurred. Check console.</div>`;
             }
             window.scrollTo(0, 0);
         };
@@ -1524,7 +1486,6 @@
         window.addEventListener('hashchange', router);
         
         window.addEventListener('DOMContentLoaded', () => {
-            // Firebase setup (type="module") is guaranteed to be ready by DOMContentLoaded
             if(window.fb && window.fb.isFirebaseValid) {
                 window.fb.onAuthStateChanged(window.fb.auth, (user) => {
                     app.currentUser = user;
@@ -1534,10 +1495,8 @@
             } else {
                 app.renderNavigationLinks(); 
             }
-            
             router();
         });
-
     </script>
 </body>
 </html>
