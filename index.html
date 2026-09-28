@@ -209,12 +209,26 @@
         .topic-info span { font-size: 0.8rem; color: var(--text-secondary); }
         .topic-arrow { color: var(--text-secondary); font-size: 0.9rem; flex-shrink: 0; }
 
+        .quiz-card { background-color: var(--surface-color); border: 1px solid var(--border-color); border-radius: 8px; padding: 1.5rem; margin-bottom: 1rem; box-shadow: var(--card-shadow); border-left: 4px solid var(--primary-color); }
+        .quiz-card-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem; }
+        .quiz-number { font-weight: 700; color: var(--primary-color); font-size: 0.9rem; }
+        .quiz-badge { font-size: 0.75rem; font-weight: 600; padding: 0.2rem 0.5rem; border-radius: 4px; text-transform: uppercase; }
+        .badge-practice { background: rgba(16, 185, 129, 0.1); color: #10b981; border: 1px solid rgba(16,185,129,0.2); }
+        .badge-test { background: rgba(245, 158, 11, 0.1); color: #d97706; border: 1px solid rgba(245,158,11,0.2); }
+        .quiz-titles h3 { font-size: 1.15rem; color: var(--text-primary); margin-bottom: 0.2rem; font-family: 'Noto Sans Devanagari', sans-serif; }
+        .quiz-titles p { font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 0.75rem; }
+        .quiz-desc { font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 1rem; }
+        .quiz-meta { display: flex; flex-wrap: wrap; gap: 1rem; font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.25rem; }
+        .meta-item { display: flex; align-items: center; gap: 0.3rem; }
+        .no-quiz-card { background: var(--surface-color); border: 1px solid var(--border-color); border-radius: 8px; padding: 3rem 1.5rem; text-align: center; color: var(--text-secondary); }
+
         .breadcrumb { font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: center; }
         .breadcrumb a { color: var(--primary-color); font-weight: 500; text-decoration: none; cursor: pointer; }
         .breadcrumb a:hover { text-decoration: underline; }
         .breadcrumb span.separator { color: var(--text-secondary); font-size: 0.75rem; }
         .breadcrumb span.current { color: var(--text-secondary); }
 
+        /* Dedicated Full-Screen Exam View */
         #view-quiz {
             position: fixed;
             top: 0; left: 0; width: 100vw; height: 100vh;
@@ -528,7 +542,7 @@
                 <div class="exam-top-bar">
                     <div style="display:flex; align-items:center; gap:0.75rem;">
                         <span class="q-number-badge" id="q-num-display">Q 1</span>
-                        <h3 id="exam-quiz-title" style="font-size:1rem; font-family:'Noto Sans Devanagari',sans-serif; max-width:60vw; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;">Quiz Title</h3>
+                        <h3 id="exam-quiz-title" style="font-size:1rem; font-family:'Noto Sans Devanagari',sans-serif; max-width:50vw; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;">Quiz Title</h3>
                     </div>
                     <div style="display:flex; align-items:center; gap:0.75rem;">
                         <div id="q-timer-display" class="q-timer" style="display: none">
@@ -540,7 +554,7 @@
 
                 <!-- Mobile Palette Toggle Bar -->
                 <div class="exam-mobile-palette-bar">
-                    <span style="font-size:0.85rem; font-weight:600;"><i class="fas.fa-th"></i> Question Palette</span>
+                    <span style="font-size:0.85rem; font-weight:600;"><i class="fas fa-th"></i> Question Palette</span>
                     <button class="btn-save" style="padding:0.25rem 0.75rem; font-size:0.8rem;" onclick="toggleMobilePalette(true)"><i class="fas fa-bars"></i> Open Palette</button>
                 </div>
                 
@@ -554,7 +568,7 @@
                 <div class="exam-sidebar-panel" id="exam-sidebar-palette">
                     <div class="palette-header">
                         <span>Question Palette</span>
-                        <button class="close-menu" style="display:none; font-size:1.2rem;" id="close-palette-btn" onclick="toggleMobilePalette(false)"><i class="fas fa-times"></i></button>
+                        <button class="close-menu" style="font-size:1.2rem;" id="close-palette-btn" onclick="toggleMobilePalette(false)"><i class="fas fa-times"></i></button>
                     </div>
                     <div class="palette-grid" id="exam-palette-grid"></div>
                     <div class="palette-legend">
@@ -896,7 +910,8 @@
                 appState = data.appState || { view: 'home' };
 
                 if (data.activeQuizStatus === 'active' && data.activeQuizCode) {
-                    const quiz = window.STUDYSPHERE_QUIZZES.find(q => q.quizCode === data.activeQuizCode);
+                    const quizzes = window.STUDYSPHERE_QUIZZES || [];
+                    const quiz = quizzes.find(q => q.quizCode === data.activeQuizCode);
                     if (quiz) {
                         activeQuiz.quizData = quiz;
                         activeQuiz.status = 'active';
@@ -922,7 +937,8 @@
                         return;
                     }
                 } else if (data.activeQuizStatus === 'finished' && data.activeQuizCode) {
-                    const quiz = window.STUDYSPHERE_QUIZZES.find(q => q.quizCode === data.activeQuizCode);
+                    const quizzes = window.STUDYSPHERE_QUIZZES || [];
+                    const quiz = quizzes.find(q => q.quizCode === data.activeQuizCode);
                     if (quiz) {
                         activeQuiz.quizData = quiz;
                         activeQuiz.status = 'finished';
@@ -1114,9 +1130,10 @@
             }
 
             let quizCardsHTML = '';
-            if (typeof window.STUDYSPHERE_QUIZZES !== 'undefined') {
+            const allQuizzes = window.STUDYSPHERE_QUIZZES || [];
+            if (allQuizzes.length > 0) {
                 const seenQuizCodes = new Set();
-                const matchedQuizzes = window.STUDYSPHERE_QUIZZES.filter(q => {
+                const matchedQuizzes = allQuizzes.filter(q => {
                     if (q.topicCode === topicCode && !seenQuizCodes.has(q.quizCode)) {
                         seenQuizCodes.add(q.quizCode); return true;
                     } return false;
@@ -1144,7 +1161,7 @@
                                 ${negText}
                                 ${timeText}
                             </div>
-                            <button class="btn btn-start-quiz" onclick="openQuizStartModal('${quiz.quizCode}')">
+                            <button class="btn btn-save" onclick="openQuizStartModal('${quiz.quizCode}')">
                                 <i class="fas fa-play-circle"></i> Start Quiz
                             </button>
                         </div>
@@ -1177,7 +1194,8 @@
         }
 
         function openQuizStartModal(quizCode) {
-            const quiz = window.STUDYSPHERE_QUIZZES.find(q => q.quizCode === quizCode);
+            const quizzes = window.STUDYSPHERE_QUIZZES || [];
+            const quiz = quizzes.find(q => q.quizCode === quizCode);
             if (!quiz) return;
             
             const timeLimitOptions = `
@@ -1240,7 +1258,8 @@
         }
 
         function initNewQuizSession(quizCode, timeLimitInMinutes) {
-            const quiz = window.STUDYSPHERE_QUIZZES.find(q => q.quizCode === quizCode);
+            const quizzes = window.STUDYSPHERE_QUIZZES || [];
+            const quiz = quizzes.find(q => q.quizCode === quizCode);
             if (!quiz) return;
 
             activeQuiz = {
@@ -1354,7 +1373,7 @@
             if (activeQuiz.currentIndex < activeQuiz.quizData.questions.length - 1) {
                 goToQuestion(activeQuiz.currentIndex + 1);
             } else {
-                const btn = document.querySelector('.btn-save');
+                const btn = document.querySelector('.exam-footer-controls .btn-save');
                 const originalText = btn.innerHTML;
                 btn.innerHTML = 'Last Q';
                 setTimeout(() => btn.innerHTML = originalText, 1500);
@@ -1383,18 +1402,15 @@
             const qId = activeQuiz.quizData.questions[index].questionId;
             activeQuiz.visited.add(qId);
             renderQuizQuestion(index);
-            toggleMobilePalette(false); // Close palette drawer on mobile after picking
+            toggleMobilePalette(false);
         }
 
         function toggleMobilePalette(open) {
             const palettePanel = document.getElementById('exam-sidebar-palette');
-            const closeBtn = document.getElementById('close-palette-btn');
             if (open) {
                 palettePanel.classList.add('mobile-open');
-                closeBtn.style.display = 'block';
             } else {
                 palettePanel.classList.remove('mobile-open');
-                closeBtn.style.display = 'none';
             }
         }
 
@@ -1436,7 +1452,6 @@
                 if (activeQuiz.timeRemaining <= 0) {
                     clearInterval(activeQuiz.timerInterval);
                     activeQuiz.timeRemaining = 0;
-                    alert("Time is over. Your quiz has been submitted automatically.");
                     forceSubmitQuiz();
                 }
             }, 1000);
@@ -1572,7 +1587,6 @@
                             <div class="stat-box"><div class="stat-value" style="color:var(--primary-color);">${accuracy}%</div><div class="stat-label">Accuracy</div></div>
                             <div class="stat-box"><div class="stat-value" style="color:var(--primary-color);">${percentage}%</div><div class="stat-label">Percentage</div></div>
                         </div>
-                        ${activeQuiz.tabSwitches > 0 ? `<div style="margin-top:1rem; color:#ef4444; font-size:0.85rem;"><i class="fas fa-exclamation-triangle"></i> Note: You left the quiz tab ${activeQuiz.tabSwitches} time(s).</div>` : ''}
                     </div>
 
                     <div class="section-title">Question Analysis</div>
@@ -1620,7 +1634,6 @@
             if (document.hidden && activeQuiz.status === 'active') {
                 activeQuiz.tabSwitches++;
                 persistState();
-                alert("Warning: You left the quiz tab! This is recorded as an irregular activity.");
             }
         }
 
@@ -1749,30 +1762,17 @@
             const val = document.getElementById('custom-donation').value;
             if(!val || val < 1) { alert("Please enter a valid amount."); return; }
             window.location.href = `upi://pay?pa=vikram.joshi9089@oksbi&pn=StudySphere&am=${val}&cu=INR`;
-            setTimeout(() => { closeModal('donate-modal'); alert("UPI app should open on mobile devices."); }, 1000);
+            setTimeout(() => { closeModal('donate-modal'); }, 1000);
         }
 
         function validateQuizData() {
-            if (typeof window.STUDYSPHERE_QUIZZES === 'undefined') { console.warn("Missing quiz-data.js"); return; }
+            const quizzes = window.STUDYSPHERE_QUIZZES || [];
             const quizCodes = new Set();
-            window.STUDYSPHERE_QUIZZES.forEach(quiz => {
+            quizzes.forEach(quiz => {
                 if(quizCodes.has(quiz.quizCode)) console.warn(`Duplicate quizCode: ${quiz.quizCode}`);
                 quizCodes.add(quiz.quizCode);
-                
-                const subject = syllabusData.find(s => s.code === quiz.subjectCode);
-                if (!subject) {
-                    console.warn(`Invalid subjectCode '${quiz.subjectCode}' in ${quiz.quizCode}`);
-                } else {
-                    const chapter = subject.chapters.find(c => c.code === quiz.chapterCode);
-                    if (!chapter) {
-                        console.warn(`Invalid chapterCode '${quiz.chapterCode}' in ${quiz.quizCode}`);
-                    } else {
-                        const topic = chapter.topics.find(t => t.code === quiz.topicCode);
-                        if (!topic) console.warn(`Invalid topicCode '${topic.topicCode}' in ${quiz.quizCode}`);
-                    }
-                }
             });
-            console.log(`Successfully validated ${window.STUDYSPHERE_QUIZZES.length} loaded quizzes.`);
+            console.log(`Successfully validated ${quizzes.length} loaded quizzes.`);
         }
 
         window.onload = initApp;
