@@ -2,7 +2,7 @@
 <html lang="mr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>StudySphere | MPSC Group B & C MCQ Practice</title>
     
     <!-- Fonts: Noto Sans & Noto Sans Devanagari -->
@@ -60,7 +60,10 @@
             font-family: 'Noto Sans', 'Noto Sans Devanagari', sans-serif;
         }
 
-        html {
+        html, body {
+            width: 100%;
+            max-width: 100vw;
+            overflow-x: hidden;
             font-size: var(--base-font-size);
             scroll-behavior: smooth;
         }
@@ -73,7 +76,6 @@
             display: flex;
             flex-direction: column;
             min-height: 100vh;
-            overflow-x: hidden;
         }
 
         #utility-bar {
@@ -85,6 +87,7 @@
             align-items: center;
             gap: 1rem;
             font-size: 0.875rem;
+            width: 100%;
         }
 
         .utility-btn {
@@ -114,6 +117,7 @@
             top: 0;
             z-index: 100;
             box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            width: 100%;
         }
 
         .logo-container { display: flex; align-items: center; gap: 1rem; cursor: pointer; }
@@ -133,7 +137,7 @@
         #sidebar {
             position: fixed;
             top: 0; left: -100%;
-            width: 300px; max-width: 80%; height: 100vh;
+            width: 280px; max-width: 80%; height: 100vh;
             background-color: var(--surface-color);
             box-shadow: 2px 0 8px rgba(0,0,0,0.2);
             z-index: 1000;
@@ -164,7 +168,7 @@
             flex-grow: 1; padding: 2rem 1rem; max-width: 1200px; margin: 0 auto; width: 100%;
         }
 
-        .view { display: none; animation: fadeIn 0.3s ease; }
+        .view { display: none; animation: fadeIn 0.3s ease; width: 100%; }
         .view.active { display: block; }
         @keyframes fadeIn { from { opacity: 0; transform: translateY(5px); } to { opacity: 1; transform: translateY(0); } }
 
@@ -172,71 +176,75 @@
         .intro-box p { color: var(--text-secondary); font-size: 1.1rem; }
         .section-title { margin-bottom: 1rem; font-size: 1.25rem; color: var(--text-primary); border-bottom: 2px solid var(--border-color); padding-bottom: 0.5rem; margin-top: 2rem; }
         
-        .subjects-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.25rem; margin-bottom: 2rem; }
-        .subject-card { background-color: var(--surface-color); border: 1px solid var(--border-color); border-radius: 8px; padding: 1.5rem; cursor: pointer; box-shadow: var(--card-shadow); transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s; display: flex; flex-direction: column; justify-content: space-between; position: relative; }
+        .subjects-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 1.25rem; margin-bottom: 2rem; width: 100%; }
+        .subject-card { background-color: var(--surface-color); border: 1px solid var(--border-color); border-radius: 8px; padding: 1.5rem; cursor: pointer; box-shadow: var(--card-shadow); transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s; display: flex; flex-direction: column; justify-content: space-between; position: relative; width: 100%; }
         .subject-card:hover { transform: translateY(-3px); box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); border-color: var(--primary-color); }
         .subject-badge { position: absolute; top: 1rem; right: 1rem; font-size: 0.75rem; font-weight: 600; padding: 0.2rem 0.5rem; border-radius: 4px; }
         .badge-common { background-color: rgba(16, 185, 129, 0.1); color: #10b981; border: 1px solid rgba(16, 185, 129, 0.2); }
         .badge-mains { background-color: rgba(245, 158, 11, 0.1); color: #d97706; border: 1px solid rgba(245, 158, 11, 0.2); }
-        .subject-info h3 { font-size: 1.2rem; color: var(--text-primary); margin-bottom: 0.25rem; margin-top: 1.5rem; font-family: 'Noto Sans Devanagari', sans-serif; }
-        .subject-info span { font-size: 0.9rem; color: var(--text-secondary); }
+        .subject-info h3 { font-size: 1.2rem; color: var(--text-primary); margin-bottom: 0.25rem; margin-top: 1.5rem; font-family: 'Noto Sans Devanagari', sans-serif; word-break: break-word; }
+        .subject-info span { font-size: 0.9rem; color: var(--text-secondary); word-break: break-word; }
         .subject-footer { margin-top: 1.5rem; display: flex; justify-content: flex-end; }
         .subject-arrow { color: var(--primary-color); font-size: 1.25rem; }
 
-        .back-header { display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem; }
+        .back-header { display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem; flex-wrap: wrap; }
         .btn-back { background: none; border: 1px solid var(--border-color); color: var(--text-primary); padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: 500; display: flex; align-items: center; gap: 0.5rem; transition: all 0.2s; }
         .btn-back:hover { background-color: var(--surface-hover); border-color: var(--primary-color); }
-        .view-header h2 { font-size: 1.5rem; color: var(--text-primary); font-family: 'Noto Sans Devanagari', sans-serif; }
-        .view-header p { color: var(--text-secondary); font-size: 0.95rem; }
+        .view-header h2 { font-size: 1.5rem; color: var(--text-primary); font-family: 'Noto Sans Devanagari', sans-serif; word-break: break-word; }
+        .view-header p { color: var(--text-secondary); font-size: 0.95rem; word-break: break-word; }
 
-        .chapter-container { display: flex; flex-direction: column; gap: 1rem; margin-bottom: 2rem; }
-        .chapter-card { background-color: var(--surface-color); border: 1px solid var(--border-color); border-radius: 8px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.05); }
-        .chapter-header { padding: 1.25rem; display: flex; justify-content: space-between; align-items: center; cursor: pointer; background-color: var(--surface-color); transition: background-color 0.2s; }
+        .chapter-container { display: flex; flex-direction: column; gap: 1rem; margin-bottom: 2rem; width: 100%; }
+        .chapter-card { background-color: var(--surface-color); border: 1px solid var(--border-color); border-radius: 8px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.05); width: 100%; }
+        .chapter-header { padding: 1.25rem; display: flex; justify-content: space-between; align-items: center; cursor: pointer; background-color: var(--surface-color); transition: background-color 0.2s; gap: 1rem; }
         .chapter-header:hover { background-color: var(--surface-hover); }
-        .chapter-title-group { display: flex; align-items: center; gap: 1rem; }
+        .chapter-title-group { display: flex; align-items: center; gap: 1rem; min-width: 0; }
         .chapter-number { background-color: rgba(37, 99, 235, 0.1); color: var(--primary-color); font-weight: 700; width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; border-radius: 6px; font-size: 0.9rem; flex-shrink: 0; }
-        .chapter-names h4 { font-size: 1.05rem; color: var(--text-primary); font-family: 'Noto Sans Devanagari', sans-serif; }
-        .chapter-names span { font-size: 0.85rem; color: var(--text-secondary); }
+        .chapter-names { min-width: 0; }
+        .chapter-names h4 { font-size: 1.05rem; color: var(--text-primary); font-family: 'Noto Sans Devanagari', sans-serif; word-break: break-word; }
+        .chapter-names span { font-size: 0.85rem; color: var(--text-secondary); word-break: break-word; }
         .chapter-toggle-icon { color: var(--text-secondary); transition: transform 0.3s; flex-shrink: 0; }
         .chapter-card.open .chapter-toggle-icon { transform: rotate(180deg); }
-        .topic-list { display: none; border-top: 1px solid var(--border-color); background-color: var(--bg-color); padding: 0.5rem 0; }
+        .topic-list { display: none; border-top: 1px solid var(--border-color); background-color: var(--bg-color); padding: 0.5rem 0; width: 100%; }
         .chapter-card.open .topic-list { display: block; animation: fadeIn 0.3s ease; }
-        .topic-item { padding: 0.75rem 1.25rem 0.75rem 3.5rem; display: flex; justify-content: space-between; align-items: center; cursor: pointer; transition: background-color 0.2s; border-bottom: 1px solid rgba(0,0,0,0.02); }
+        .topic-item { padding: 0.75rem 1.25rem 0.75rem 2rem; display: flex; justify-content: space-between; align-items: center; cursor: pointer; transition: background-color 0.2s; border-bottom: 1px solid rgba(0,0,0,0.02); gap: 1rem; }
         [data-theme="dark"] .topic-item { border-bottom: 1px solid rgba(255,255,255,0.02); }
         .topic-item:last-child { border-bottom: none; }
         .topic-item:hover { background-color: rgba(37, 99, 235, 0.05); }
-        .topic-info h5 { font-size: 0.95rem; color: var(--text-primary); font-family: 'Noto Sans Devanagari', sans-serif; font-weight: 500; }
-        .topic-info span { font-size: 0.8rem; color: var(--text-secondary); }
+        .topic-info { min-width: 0; }
+        .topic-info h5 { font-size: 0.95rem; color: var(--text-primary); font-family: 'Noto Sans Devanagari', sans-serif; font-weight: 500; word-break: break-word; }
+        .topic-info span { font-size: 0.8rem; color: var(--text-secondary); word-break: break-word; }
         .topic-arrow { color: var(--text-secondary); font-size: 0.9rem; flex-shrink: 0; }
 
-        .quiz-card { background-color: var(--surface-color); border: 1px solid var(--border-color); border-radius: 8px; padding: 1.5rem; margin-bottom: 1rem; box-shadow: var(--card-shadow); border-left: 4px solid var(--primary-color); }
+        .quiz-card { background-color: var(--surface-color); border: 1px solid var(--border-color); border-radius: 8px; padding: 1.5rem; margin-bottom: 1rem; box-shadow: var(--card-shadow); border-left: 4px solid var(--primary-color); width: 100%; }
         .quiz-card-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem; }
         .quiz-number { font-weight: 700; color: var(--primary-color); font-size: 0.9rem; }
         .quiz-badge { font-size: 0.75rem; font-weight: 600; padding: 0.2rem 0.5rem; border-radius: 4px; text-transform: uppercase; }
         .badge-practice { background: rgba(16, 185, 129, 0.1); color: #10b981; border: 1px solid rgba(16,185,129,0.2); }
         .badge-test { background: rgba(245, 158, 11, 0.1); color: #d97706; border: 1px solid rgba(245,158,11,0.2); }
-        .quiz-titles h3 { font-size: 1.15rem; color: var(--text-primary); margin-bottom: 0.2rem; font-family: 'Noto Sans Devanagari', sans-serif; }
-        .quiz-titles p { font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 0.75rem; }
-        .quiz-desc { font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 1rem; }
+        .quiz-titles h3 { font-size: 1.15rem; color: var(--text-primary); margin-bottom: 0.2rem; font-family: 'Noto Sans Devanagari', sans-serif; word-break: break-word; }
+        .quiz-titles p { font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 0.75rem; word-break: break-word; }
+        .quiz-desc { font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 1rem; word-break: break-word; }
         .quiz-meta { display: flex; flex-wrap: wrap; gap: 1rem; font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.25rem; }
         .meta-item { display: flex; align-items: center; gap: 0.3rem; }
-        .no-quiz-card { background: var(--surface-color); border: 1px solid var(--border-color); border-radius: 8px; padding: 3rem 1.5rem; text-align: center; color: var(--text-secondary); }
+        .no-quiz-card { background: var(--surface-color); border: 1px solid var(--border-color); border-radius: 8px; padding: 3rem 1.5rem; text-align: center; color: var(--text-secondary); width: 100%; }
 
-        .breadcrumb { font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: center; }
+        .breadcrumb { font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: center; width: 100%; }
         .breadcrumb a { color: var(--primary-color); font-weight: 500; text-decoration: none; cursor: pointer; }
         .breadcrumb a:hover { text-decoration: underline; }
         .breadcrumb span.separator { color: var(--text-secondary); font-size: 0.75rem; }
         .breadcrumb span.current { color: var(--text-secondary); }
 
-        /* Dedicated Full-Screen Exam View */
+        /* STRICT FULL-SCREEN EXAM LAYOUT */
         #view-quiz {
             position: fixed;
             top: 0; left: 0; width: 100vw; height: 100vh;
+            max-width: 100vw; max-height: 100vh;
             background-color: var(--bg-color);
             z-index: 9999;
             display: none;
             flex-direction: column;
             overflow: hidden;
+            box-sizing: border-box;
         }
         #view-quiz.active { display: flex; }
 
@@ -249,16 +257,19 @@
 
         .exam-screen-layout {
             display: grid;
-            grid-template-columns: 1fr 320px;
-            grid-template-rows: 60px 1fr 70px;
+            grid-template-columns: 1fr 300px;
+            grid-template-rows: 55px 1fr 65px;
             height: 100vh;
             width: 100vw;
+            max-width: 100vw;
             background-color: var(--bg-color);
+            overflow: hidden;
+            box-sizing: border-box;
         }
-        @media(max-width: 900px) {
+        @media(max-width: 850px) {
             .exam-screen-layout {
-                grid-template-columns: 1fr;
-                grid-template-rows: 55px 50px 1fr 65px;
+                grid-template-columns: 100%;
+                grid-template-rows: 50px 1fr 60px;
             }
         }
 
@@ -270,38 +281,29 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-        }
-
-        /* Mobile palette toggle bar */
-        .exam-mobile-palette-bar {
-            grid-column: 1 / -1;
-            grid-row: 2 / 3;
-            background-color: var(--surface-hover);
-            border-bottom: 1px solid var(--border-color);
-            padding: 0 1rem;
-            display: none;
-            justify-content: space-between;
-            align-items: center;
-        }
-        @media(max-width: 900px) {
-            .exam-mobile-palette-bar { display: flex; }
+            width: 100%;
+            height: 100%;
+            box-sizing: border-box;
         }
 
         .exam-main-panel {
             grid-column: 1 / 2;
             grid-row: 2 / 3;
             overflow-y: auto;
-            padding: 1.25rem;
+            overflow-x: hidden;
+            padding: 1rem;
             display: flex;
             flex-direction: column;
             background-color: var(--surface-color);
-            margin: 0.75rem;
+            margin: 0.5rem;
             border-radius: 8px;
             border: 1px solid var(--border-color);
             box-shadow: var(--card-shadow);
+            min-width: 0;
+            box-sizing: border-box;
         }
-        @media(max-width: 900px) {
-            .exam-main-panel { grid-column: 1 / -1; grid-row: 3 / 4; margin: 0.5rem; }
+        @media(max-width: 850px) {
+            .exam-main-panel { grid-column: 1 / -1; grid-row: 2 / 3; margin: 0.25rem; }
         }
 
         .exam-sidebar-panel {
@@ -314,17 +316,19 @@
             display: flex;
             flex-direction: column;
             gap: 1rem;
+            background: var(--surface-color);
+            box-sizing: border-box;
         }
-        @media(max-width: 900px) {
+        @media(max-width: 850px) {
             .exam-sidebar-panel {
                 position: fixed;
-                top: 0; right: -100%; width: 280px; height: 100vh;
+                top: 0; right: -100%; width: 280px; max-width: 85vw; height: 100vh;
                 z-index: 10001;
-                background-color: var(--surface-color);
                 box-shadow: -4px 0 15px rgba(0,0,0,0.3);
                 transition: right 0.3s ease;
                 border-left: 1px solid var(--border-color);
                 display: flex;
+                background-color: var(--surface-color);
             }
             .exam-sidebar-panel.mobile-open { right: 0; }
         }
@@ -334,15 +338,16 @@
             grid-row: 3 / 4;
             background-color: var(--surface-color);
             border-top: 1px solid var(--border-color);
-            padding: 0 1rem;
+            padding: 0.5rem 1rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
             gap: 0.5rem;
-            flex-wrap: wrap;
-        }
-        @media(max-width: 900px) {
-            .exam-footer-controls { grid-row: 4 / 5; padding: 0.5rem; justify-content: space-around; }
+            flex-wrap: nowrap;
+            overflow-x: auto;
+            width: 100%;
+            height: 100%;
+            box-sizing: border-box;
         }
 
         .q-number-badge {
@@ -352,56 +357,60 @@
             border-radius: 999px;
             font-size: 0.85rem;
             font-weight: 600;
+            white-space: nowrap;
         }
         .q-timer {
             display: flex; align-items: center; gap: 0.4rem;
-            font-size: 1rem; font-weight: 700; color: #ef4444;
+            font-size: 0.95rem; font-weight: 700; color: #ef4444;
             background: rgba(239, 68, 68, 0.1);
-            padding: 0.2rem 0.6rem; border-radius: 6px;
+            padding: 0.2rem 0.5rem; border-radius: 6px;
             border: 1px solid rgba(239,68,68,0.2);
+            white-space: nowrap;
         }
         [data-theme="dark"] .q-timer { color: #fca5a5; }
 
-        .question-box { margin-bottom: 1.25rem; }
-        .q-text-mr { font-size: 1.15rem; font-weight: 600; color: var(--text-primary); margin-bottom: 0.5rem; font-family: 'Noto Sans Devanagari', sans-serif; }
-        .q-text-en { font-size: 0.95rem; color: var(--text-secondary); margin-bottom: 1.25rem; }
+        .question-box { margin-bottom: 1rem; width: 100%; }
+        .q-text-mr { font-size: 1.1rem; font-weight: 600; color: var(--text-primary); margin-bottom: 0.4rem; font-family: 'Noto Sans Devanagari', sans-serif; word-break: break-word; }
+        .q-text-en { font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 1rem; word-break: break-word; }
 
-        .options-list { display: flex; flex-direction: column; gap: 0.75rem; margin-bottom: 1.25rem; }
+        .options-list { display: flex; flex-direction: column; gap: 0.6rem; margin-bottom: 1rem; width: 100%; }
         .option-label {
-            display: flex; align-items: center; gap: 1rem;
-            padding: 0.85rem 1rem; border: 1px solid var(--border-color);
+            display: flex; align-items: center; gap: 0.75rem;
+            padding: 0.75rem; border: 1px solid var(--border-color);
             border-radius: 8px; cursor: pointer; transition: all 0.2s;
             background: var(--surface-color);
+            width: 100%;
+            box-sizing: border-box;
         }
         .option-label:hover { background-color: rgba(37, 99, 235, 0.05); border-color: var(--primary-color); }
         .option-label.selected { background-color: rgba(37, 99, 235, 0.1); border-color: var(--primary-color); box-shadow: 0 0 0 1px var(--primary-color); }
         
-        .opt-char { font-weight: 700; width: 28px; height: 28px; display: flex; align-items: center; justify-content: center; background: var(--surface-hover); border-radius: 50%; color: var(--text-primary); flex-shrink: 0; }
+        .opt-char { font-weight: 700; width: 26px; height: 26px; display: flex; align-items: center; justify-content: center; background: var(--surface-hover); border-radius: 50%; color: var(--text-primary); flex-shrink: 0; }
         .option-label.selected .opt-char { background: var(--primary-color); color: white; }
-        .opt-texts { display: flex; flex-direction: column; }
-        .opt-mr { font-weight: 500; font-size: 1rem; font-family: 'Noto Sans Devanagari', sans-serif; color: var(--text-primary); }
-        .opt-en { font-size: 0.85rem; color: var(--text-secondary); }
+        .opt-texts { display: flex; flex-direction: column; min-width: 0; }
+        .opt-mr { font-weight: 500; font-size: 0.95rem; font-family: 'Noto Sans Devanagari', sans-serif; color: var(--text-primary); word-break: break-word; }
+        .opt-en { font-size: 0.8rem; color: var(--text-secondary); word-break: break-word; }
 
-        .report-link { font-size: 0.85rem; color: #ef4444; cursor: pointer; display: inline-flex; align-items: center; gap: 0.25rem; transition: color 0.2s; margin-top: auto; padding-top: 0.75rem; width: fit-content; }
+        .report-link { font-size: 0.85rem; color: #ef4444; cursor: pointer; display: inline-flex; align-items: center; gap: 0.25rem; transition: color 0.2s; margin-top: auto; padding-top: 0.5rem; width: fit-content; }
         .report-link:hover { text-decoration: underline; color: #dc2626; }
 
-        .ctrl-group { display: flex; gap: 0.5rem; flex-wrap: wrap; align-items: center; }
-        .btn-outline { background: transparent; border: 1px solid var(--border-color); color: var(--text-primary); padding: 0.45rem 0.85rem; border-radius: 6px; cursor: pointer; font-weight: 500; font-size: 0.9rem; }
+        .ctrl-group { display: flex; gap: 0.4rem; align-items: center; flex-shrink: 0; }
+        .btn-outline { background: transparent; border: 1px solid var(--border-color); color: var(--text-primary); padding: 0.4rem 0.7rem; border-radius: 6px; cursor: pointer; font-weight: 500; font-size: 0.85rem; white-space: nowrap; }
         .btn-outline:hover { background: var(--surface-hover); border-color: var(--text-secondary); }
         
         .btn-review { border-color: #8b5cf6; color: #8b5cf6; }
         .btn-review:hover { background: #8b5cf6; color: white; }
         
-        .btn-save { background: var(--primary-color); color: white; padding: 0.45rem 1rem; border-radius: 6px; cursor: pointer; font-weight: 600; border: none; font-size: 0.9rem; }
+        .btn-save { background: var(--primary-color); color: white; padding: 0.4rem 0.85rem; border-radius: 6px; cursor: pointer; font-weight: 600; border: none; font-size: 0.85rem; white-space: nowrap; }
         .btn-save:hover { background: var(--primary-hover); }
 
-        .btn-submit-q { background: #10b981; color: white; padding: 0.45rem 1rem; border-radius: 6px; cursor: pointer; font-weight: 600; border: none; font-size: 0.9rem; }
+        .btn-submit-q { background: #10b981; color: white; padding: 0.4rem 0.85rem; border-radius: 6px; cursor: pointer; font-weight: 600; border: none; font-size: 0.85rem; white-space: nowrap; }
         .btn-submit-q:hover { background: #059669; }
 
         .palette-header { font-weight: 600; font-size: 0.95rem; color: var(--text-primary); text-align: center; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem; display: flex; justify-content: space-between; align-items: center; }
-        .palette-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 0.4rem; max-height: 250px; overflow-y: auto; padding: 2px; }
+        .palette-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 0.4rem; max-height: 220px; overflow-y: auto; padding: 2px; }
         .p-btn {
-            aspect-ratio: 1; border: none; border-radius: 4px; font-weight: 600; font-size: 0.9rem; cursor: pointer;
+            aspect-ratio: 1; border: none; border-radius: 4px; font-weight: 600; font-size: 0.85rem; cursor: pointer;
             display: flex; align-items: center; justify-content: center; transition: filter 0.2s; position: relative;
         }
         .p-btn:hover { filter: brightness(0.9); }
@@ -411,42 +420,42 @@
         .s-answered { background-color: var(--q-answered); color: var(--q-text-light); }
         .s-review { background-color: var(--q-review); color: var(--q-text-light); }
         .s-review-ans { background-color: var(--q-review); color: var(--q-text-light); }
-        .s-review-ans::after { content: ''; position: absolute; bottom: 0; right: 0; width: 0; height: 0; border-style: solid; border-width: 0 0 10px 10px; border-color: transparent transparent #10b981 transparent; }
+        .s-review-ans::after { content: ''; position: absolute; bottom: 0; right: 0; width: 0; height: 0; border-style: solid; border-width: 0 0 8px 8px; border-color: transparent transparent #10b981 transparent; }
 
-        .palette-legend { font-size: 0.7rem; color: var(--text-secondary); display: flex; flex-direction: column; gap: 0.3rem; margin-top: auto; }
+        .palette-legend { font-size: 0.7rem; color: var(--text-secondary); display: flex; flex-direction: column; gap: 0.25rem; margin-top: auto; }
         .l-item { display: flex; align-items: center; gap: 0.4rem; }
-        .l-box { width: 12px; height: 12px; border-radius: 2px; flex-shrink: 0; }
+        .l-box { width: 10px; height: 10px; border-radius: 2px; flex-shrink: 0; }
 
-        .scorecard { background: var(--surface-color); border: 1px solid var(--border-color); border-radius: 8px; padding: 2rem; margin-bottom: 2rem; text-align: center; box-shadow: var(--card-shadow); border-top: 4px solid var(--primary-color); }
+        .scorecard { background: var(--surface-color); border: 1px solid var(--border-color); border-radius: 8px; padding: 1.5rem; margin-bottom: 2rem; text-align: center; box-shadow: var(--card-shadow); border-top: 4px solid var(--primary-color); width: 100%; }
         .scorecard h2 { color: var(--text-primary); margin-bottom: 0.5rem; font-family: 'Noto Sans Devanagari', sans-serif; }
-        .scorecard-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 1rem; margin-top: 1.5rem; }
-        .stat-box { background: var(--surface-hover); padding: 1rem; border-radius: 6px; border: 1px solid var(--border-color); }
-        .stat-value { font-size: 1.4rem; font-weight: 700; color: var(--primary-color); }
-        .stat-label { font-size: 0.8rem; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 0.05em; }
+        .scorecard-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(110px, 1fr)); gap: 0.75rem; margin-top: 1.5rem; }
+        .stat-box { background: var(--surface-hover); padding: 0.75rem; border-radius: 6px; border: 1px solid var(--border-color); }
+        .stat-value { font-size: 1.25rem; font-weight: 700; color: var(--primary-color); word-break: break-all; }
+        .stat-label { font-size: 0.75rem; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 0.05em; }
         .stat-box.highlight { background: rgba(16,185,129,0.1); border-color: rgba(16,185,129,0.3); }
         .stat-box.highlight .stat-value { color: #10b981; }
 
-        .qa-card { background: var(--surface-color); border: 1px solid var(--border-color); border-radius: 8px; margin-bottom: 1.5rem; padding: 1.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.05); }
-        .qa-header { display: flex; justify-content: space-between; margin-bottom: 1rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem; }
+        .qa-card { background: var(--surface-color); border: 1px solid var(--border-color); border-radius: 8px; margin-bottom: 1.5rem; padding: 1.25rem; box-shadow: 0 1px 3px rgba(0,0,0,0.05); width: 100%; }
+        .qa-header { display: flex; justify-content: space-between; margin-bottom: 1rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem; gap: 0.5rem; flex-wrap: wrap; }
         .qa-num { font-weight: 700; color: var(--text-primary); }
-        .qa-res { font-weight: 600; padding: 0.2rem 0.5rem; border-radius: 4px; font-size: 0.85rem; }
+        .qa-res { font-weight: 600; padding: 0.2rem 0.5rem; border-radius: 4px; font-size: 0.8rem; }
         .res-correct { background: rgba(16, 185, 129, 0.1); color: #10b981; }
         .res-wrong { background: rgba(239, 68, 68, 0.1); color: #ef4444; }
         .res-skipped { background: rgba(148, 163, 184, 0.1); color: #64748b; }
         
-        .qa-q { font-size: 1.1rem; color: var(--text-primary); font-weight: 500; margin-bottom: 1rem; font-family: 'Noto Sans Devanagari', sans-serif; }
-        .ans-block { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem; font-size: 0.95rem; }
+        .qa-q { font-size: 1.05rem; color: var(--text-primary); font-weight: 500; margin-bottom: 1rem; font-family: 'Noto Sans Devanagari', sans-serif; word-break: break-word; }
+        .ans-block { display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; margin-bottom: 1rem; font-size: 0.9rem; width: 100%; }
         @media(max-width: 600px) { .ans-block { grid-template-columns: 1fr; } }
-        .ans-box { padding: 0.75rem; border-radius: 6px; border: 1px solid var(--border-color); background: var(--bg-color); }
-        .ans-box-title { font-size: 0.8rem; color: var(--text-secondary); margin-bottom: 0.25rem; }
-        .ans-text { color: var(--text-primary); font-weight: 500; }
+        .ans-box { padding: 0.65rem; border-radius: 6px; border: 1px solid var(--border-color); background: var(--bg-color); min-width: 0; }
+        .ans-box-title { font-size: 0.75rem; color: var(--text-secondary); margin-bottom: 0.2rem; }
+        .ans-text { color: var(--text-primary); font-weight: 500; word-break: break-word; }
         
-        .qa-exp { background: rgba(37, 99, 235, 0.05); border-left: 4px solid var(--primary-color); padding: 1rem; border-radius: 0 6px 6px 0; margin-top: 1rem; }
-        .qa-exp h4 { font-size: 0.9rem; color: var(--primary-color); margin-bottom: 0.5rem; }
-        .qa-exp p { font-size: 0.95rem; color: var(--text-secondary); margin-bottom: 0.5rem; font-family: 'Noto Sans Devanagari', sans-serif; }
+        .qa-exp { background: rgba(37, 99, 235, 0.05); border-left: 4px solid var(--primary-color); padding: 0.85rem; border-radius: 0 6px 6px 0; margin-top: 1rem; width: 100%; }
+        .qa-exp h4 { font-size: 0.85rem; color: var(--primary-color); margin-bottom: 0.4rem; }
+        .qa-exp p { font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 0.4rem; font-family: 'Noto Sans Devanagari', sans-serif; word-break: break-word; }
 
-        footer { background-color: var(--footer-bg); color: var(--footer-text); padding: 3rem 1rem 1rem; margin-top: auto; }
-        .footer-content { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-bottom: 2rem; }
+        footer { background-color: var(--footer-bg); color: var(--footer-text); padding: 3rem 1rem 1rem; margin-top: auto; width: 100%; }
+        .footer-content { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 2rem; margin-bottom: 2rem; width: 100%; }
         .footer-brand h2 { font-size: 1.5rem; margin-bottom: 0.5rem; color: #ffffff; }
         .footer-brand p { color: #cbd5e1; font-size: 0.9rem; }
         .footer-links h3 { font-size: 1.1rem; margin-bottom: 1rem; color: #ffffff; }
@@ -455,25 +464,25 @@
         .footer-links a { color: #cbd5e1; text-decoration: none; transition: color 0.2s; }
         .footer-links a:hover { color: var(--primary-hover); }
         .footer-actions { display: flex; flex-direction: column; gap: 1rem; }
-        .btn { display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; padding: 0.75rem 1.5rem; border-radius: 6px; font-weight: 600; text-decoration: none; cursor: pointer; border: none; transition: background-color 0.2s; font-size: 1rem; }
+        .btn { display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; padding: 0.65rem 1.25rem; border-radius: 6px; font-weight: 600; text-decoration: none; cursor: pointer; border: none; transition: background-color 0.2s; font-size: 0.95rem; }
         .btn-telegram { background-color: #0088cc; color: white; }
         .btn-telegram:hover { background-color: #0077b5; }
         .btn-donate { background-color: #10b981; color: white; }
         .btn-donate:hover { background-color: #059669; }
         .footer-bottom { text-align: center; padding-top: 1.5rem; border-top: 1px solid rgba(255,255,255,0.1); color: #94a3b8; font-size: 0.85rem; }
 
-        .modal-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.6); backdrop-filter: blur(2px); display: none; justify-content: center; align-items: center; z-index: 20000; opacity: 0; transition: opacity 0.3s; }
+        .modal-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.6); backdrop-filter: blur(2px); display: none; justify-content: center; align-items: center; z-index: 20000; opacity: 0; transition: opacity 0.3s; padding: 1rem; box-sizing: border-box; }
         .modal-overlay.active { display: flex; opacity: 1; }
-        .modal-content { background-color: var(--surface-color); border-radius: 8px; width: 90%; max-width: 600px; max-height: 90vh; overflow-y: auto; box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1); transform: translateY(20px); transition: transform 0.3s; }
+        .modal-content { background-color: var(--surface-color); border-radius: 8px; width: 100%; max-width: 550px; max-height: 90vh; overflow-y: auto; box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1); transform: translateY(20px); transition: transform 0.3s; box-sizing: border-box; }
         .modal-overlay.active .modal-content { transform: translateY(0); }
-        .modal-header { padding: 1.25rem 1.5rem; border-bottom: 1px solid var(--border-color); display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; background-color: var(--surface-color); z-index: 10; }
-        .modal-header h2 { font-size: 1.25rem; color: var(--text-primary); }
-        .modal-body { padding: 1.5rem; color: var(--text-secondary); }
+        .modal-header { padding: 1.15rem 1.25rem; border-bottom: 1px solid var(--border-color); display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; background-color: var(--surface-color); z-index: 10; }
+        .modal-header h2 { font-size: 1.15rem; color: var(--text-primary); word-break: break-word; }
+        .modal-body { padding: 1.25rem; color: var(--text-secondary); word-break: break-word; }
 
-        .form-control { width: 100%; padding: 0.75rem; border: 1px solid var(--border-color); border-radius: 6px; background: var(--bg-color); color: var(--text-primary); font-size: 1rem; margin-bottom: 1rem; }
+        .form-control { width: 100%; padding: 0.65rem; border: 1px solid var(--border-color); border-radius: 6px; background: var(--bg-color); color: var(--text-primary); font-size: 0.95rem; margin-bottom: 1rem; box-sizing: border-box; }
         .form-control:focus { outline: none; border-color: var(--primary-color); }
         select.form-control { cursor: pointer; }
-        textarea.form-control { resize: vertical; min-height: 100px; }
+        textarea.form-control { resize: vertical; min-height: 90px; }
     </style>
 </head>
 <body>
@@ -536,26 +545,21 @@
         <!-- TOPIC VIEW -->
         <section id="view-topic" class="view"></section>
 
-        <!-- QUIZ ENGINE VIEW (Dedicated Full-Screen Examination Mode) -->
+        <!-- QUIZ VIEW (FULL SCREEN) -->
         <section id="view-quiz" class="view">
             <div class="exam-screen-layout anti-cheat-active">
                 <div class="exam-top-bar">
-                    <div style="display:flex; align-items:center; gap:0.75rem;">
+                    <div style="display:flex; align-items:center; gap:0.5rem; min-width:0;">
                         <span class="q-number-badge" id="q-num-display">Q 1</span>
-                        <h3 id="exam-quiz-title" style="font-size:1rem; font-family:'Noto Sans Devanagari',sans-serif; max-width:50vw; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;">Quiz Title</h3>
+                        <h3 id="exam-quiz-title" style="font-size:0.9rem; font-family:'Noto Sans Devanagari',sans-serif; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;">Quiz Title</h3>
                     </div>
-                    <div style="display:flex; align-items:center; gap:0.75rem;">
+                    <div style="display:flex; align-items:center; gap:0.5rem; flex-shrink:0;">
+                        <button class="btn-save" style="padding:0.25rem 0.5rem; font-size:0.75rem;" onclick="toggleMobilePalette(true)"><i class="fas fa-th"></i> Palette</button>
                         <div id="q-timer-display" class="q-timer" style="display: none">
                             <i class="fas fa-stopwatch"></i> <span id="q-time-text">--:--</span>
                         </div>
-                        <button class="btn-outline" style="padding:0.25rem 0.5rem; font-size:0.8rem; background:rgba(239,68,68,0.1); border-color:#ef4444; color:#ef4444;" onclick="openSubmitConfirmation()">Quit</button>
+                        <button class="btn-outline" style="padding:0.2rem 0.4rem; font-size:0.75rem; background:rgba(239,68,68,0.1); border-color:#ef4444; color:#ef4444;" onclick="openSubmitConfirmation()">Quit</button>
                     </div>
-                </div>
-
-                <!-- Mobile Palette Toggle Bar -->
-                <div class="exam-mobile-palette-bar">
-                    <span style="font-size:0.85rem; font-weight:600;"><i class="fas fa-th"></i> Question Palette</span>
-                    <button class="btn-save" style="padding:0.25rem 0.75rem; font-size:0.8rem;" onclick="toggleMobilePalette(true)"><i class="fas fa-bars"></i> Open Palette</button>
                 </div>
                 
                 <div class="exam-main-panel">
@@ -568,7 +572,7 @@
                 <div class="exam-sidebar-panel" id="exam-sidebar-palette">
                     <div class="palette-header">
                         <span>Question Palette</span>
-                        <button class="close-menu" style="font-size:1.2rem;" id="close-palette-btn" onclick="toggleMobilePalette(false)"><i class="fas fa-times"></i></button>
+                        <button class="close-menu" style="font-size:1.2rem;" onclick="toggleMobilePalette(false)"><i class="fas fa-times"></i></button>
                     </div>
                     <div class="palette-grid" id="exam-palette-grid"></div>
                     <div class="palette-legend">
@@ -598,8 +602,8 @@
 
         <!-- ERROR VIEW -->
         <section id="view-error" class="view">
-            <div class="error-container">
-                <i class="fas fa-exclamation-triangle"></i>
+            <div class="error-container" style="text-align:center; padding:3rem 1rem;">
+                <i class="fas fa-exclamation-triangle" style="font-size:2.5rem; color:#ef4444; margin-bottom:1rem;"></i>
                 <h2>Content Not Found</h2>
                 <p style="margin-bottom: 2rem; color: var(--text-secondary);">The subject, chapter, or topic you are looking for does not exist.</p>
                 <button class="btn btn-back" onclick="navigateSPA('view-home', true)" style="margin: 0 auto;">
@@ -635,12 +639,12 @@
     </footer>
 
     <div id="modals-container">
-        <div class="modal-overlay" id="about-modal" onclick="closeModalOutside(event, 'about-modal')"><div class="modal-content"><div class="modal-header"><h2>About Us</h2><button class="close-menu" onclick="closeModal('about-modal')"><i class="fas fa-times"></i></button></div><div class="modal-body"><p>StudySphere is an independent educational platform created to help MPSC Combined Group B & C aspirants practice objective questions topic-wise.</p><p><em>Disclaimer: StudySphere is an independent initiative and is not affiliated with the official Maharashtra Public Service Commission (MPSC).</em></p></div></div></div>
+        <div class="modal-overlay" id="about-modal" onclick="closeModalOutside(event, 'about-modal')"><div class="modal-content"><div class="modal-header"><h2>About Us</h2><button class="close-menu" onclick="closeModal('about-modal')"><i class="fas fa-times"></i></button></div><div class="modal-body"><p>StudySphere is an independent educational platform created to help MPSC Combined Group B & C aspirants practice objective questions topic-wise.</p><p style="margin-top:0.75rem;"><em>Disclaimer: StudySphere is an independent initiative and is not affiliated with the official Maharashtra Public Service Commission (MPSC).</em></p></div></div></div>
         <div class="modal-overlay" id="privacy-modal" onclick="closeModalOutside(event, 'privacy-modal')"><div class="modal-content"><div class="modal-header"><h2>Privacy Policy</h2><button class="close-menu" onclick="closeModal('privacy-modal')"><i class="fas fa-times"></i></button></div><div class="modal-body"><p>No mandatory account creation. Local browser storage is used solely to remember preferences and quiz reports locally on your device. We do not collect or sell personal data.</p></div></div></div>
         <div class="modal-overlay" id="terms-modal" onclick="closeModalOutside(event, 'terms-modal')"><div class="modal-content"><div class="modal-header"><h2>Terms of Service</h2><button class="close-menu" onclick="closeModal('terms-modal')"><i class="fas fa-times"></i></button></div><div class="modal-body"><ul><li><strong>Educational Purpose:</strong> Solely for practice.</li><li><strong>Verification:</strong> Users should independently verify answer keys. Questions may contain errors.</li><li><strong>No Affiliation:</strong> Not an official MPSC website.</li></ul></div></div></div>
         <div class="modal-overlay" id="sitemap-modal" onclick="closeModalOutside(event, 'sitemap-modal')"><div class="modal-content"><div class="modal-header"><h2>Sitemap</h2><button class="close-menu" onclick="closeModal('sitemap-modal')"><i class="fas fa-times"></i></button></div><div class="modal-body"><ul><li>Home (Subjects List) -> Chapters -> Topics -> Quizzes</li><li>Static pages via Menu.</li></ul></div></div></div>
-        <div class="modal-overlay" id="contact-modal" onclick="closeModalOutside(event, 'contact-modal')"><div class="modal-content"><div class="modal-header"><h2>Contact</h2><button class="close-menu" onclick="closeModal('contact-modal')"><i class="fas fa-times"></i></button></div><div class="modal-body"><p>Please join our Telegram channel.</p><a href="https://t.me/+va0AGcqvCdQzNTI1" target="_blank" class="btn btn-telegram"><i class="fab fa-telegram-plane"></i> Join Telegram</a></div></div></div>
-        <div class="modal-overlay" id="donate-modal" onclick="closeModalOutside(event, 'donate-modal')"><div class="modal-content"><div class="modal-header"><h2>Donate Us</h2><button class="close-menu" onclick="closeModal('donate-modal')"><i class="fas fa-times"></i></button></div><div class="modal-body"><div style="background:rgba(239,68,68,0.1);color:#ef4444;padding:1rem;border-radius:6px;margin-bottom:1rem;">Donation सुविधा सध्या केवळ mobile device वरून उपलब्ध आहे.</div><input type="number" id="custom-donation" class="form-control" placeholder="Enter amount (₹)" min="1"><button class="btn btn-donate" style="width:100%;" onclick="initiateUPIPayment()">Proceed to Pay via UPI</button></div></div></div>
+        <div class="modal-overlay" id="contact-modal" onclick="closeModalOutside(event, 'contact-modal')"><div class="modal-content"><div class="modal-header"><h2>Contact</h2><button class="close-menu" onclick="closeModal('contact-modal')"><i class="fas fa-times"></i></button></div><div class="modal-body"><p>Please join our Telegram channel.</p><a href="https://t.me/+va0AGcqvCdQzNTI1" target="_blank" class="btn btn-telegram" style="margin-top:1rem;"><i class="fab fa-telegram-plane"></i> Join Telegram</a></div></div></div>
+        <div class="modal-overlay" id="donate-modal" onclick="closeModalOutside(event, 'donate-modal')"><div class="modal-content"><div class="modal-header"><h2>Donate Us</h2><button class="close-menu" onclick="closeModal('donate-modal')"><i class="fas fa-times"></i></button></div><div class="modal-body"><div style="background:rgba(239,68,68,0.1);color:#ef4444;padding:1rem;border-radius:6px;margin-bottom:1rem;font-size:0.9rem;">Donation सुविधा सध्या केवळ mobile device वरून उपलब्ध आहे. कृपया UPI-enabled mobile device वापरून payment पूर्ण करा.</div><input type="number" id="custom-donation" class="form-control" placeholder="Enter amount (₹)" min="1"><button class="btn btn-donate" style="width:100%;" onclick="initiateUPIPayment()">Proceed to Pay via UPI</button></div></div></div>
 
         <!-- Quiz Start Modal -->
         <div class="modal-overlay" id="quiz-start-modal" onclick="closeModalOutside(event, 'quiz-start-modal')">
@@ -682,7 +686,7 @@
             </div>
         </div>
 
-        <!-- Standalone Question Report Modal -->
+        <!-- Question Report Modal -->
         <div class="modal-overlay" id="report-modal" onclick="closeModalOutside(event, 'report-modal')">
             <div class="modal-content">
                 <div class="modal-header">
@@ -691,7 +695,7 @@
                 </div>
                 <div class="modal-body">
                     <p id="report-q-meta" style="font-size:0.85rem; color:var(--text-secondary); margin-bottom:1rem;"></p>
-                    <label style="font-weight:600; margin-bottom:0.5rem; display:block;">Select Reason <span style="color:red">*</span></label>
+                    <label style="font-weight:600; margin-bottom:0.5rem; display:block; font-size:0.9rem;">Select Reason <span style="color:red">*</span></label>
                     <select id="report-reason" class="form-control">
                         <option value="">-- Select a reason --</option>
                         <option value="Incorrect question">Incorrect question</option>
@@ -702,7 +706,7 @@
                         <option value="Other">Other</option>
                     </select>
                     
-                    <label style="font-weight:600; margin-bottom:0.5rem; display:block; margin-top:1rem;">Additional Details <span id="details-star" style="color:red; display:none;">*</span></label>
+                    <label style="font-weight:600; margin-bottom:0.5rem; display:block; margin-top:1rem; font-size:0.9rem;">Additional Details <span id="details-star" style="color:red; display:none;">*</span></label>
                     <textarea id="report-details" class="form-control" placeholder="Provide extra context here..." maxlength="500"></textarea>
                     
                     <button class="btn btn-save" style="width:100%; margin-top:1rem;" onclick="submitQuestionReport()">Submit Report</button>
@@ -718,12 +722,12 @@
                     <button class="close-menu" onclick="closeModal('report-success-modal')"><i class="fas fa-times"></i></button>
                 </div>
                 <div class="modal-body">
-                    <p style="color:#10b981; font-weight:600; margin-bottom:0.75rem;"><i class="fas fa-check-circle"></i> Thank you. Your report has been recorded.</p>
-                    <p style="font-size:0.9rem; margin-bottom:1rem;">Please send the generated report to us on Telegram so that we can review this question.</p>
-                    <textarea id="report-payload-box" class="form-control" readonly style="font-family:monospace; font-size:0.85rem; height:120px;"></textarea>
-                    <div style="display:flex; gap:1rem; margin-top:1rem;">
-                        <button class="btn btn-save" style="flex:1;" onclick="copyReportPayload()"><i class="fas fa-copy"></i> Copy Report</button>
-                        <a id="telegram-link-btn" href="https://t.me/+va0AGcqvCdQzNTI1" target="_blank" class="btn btn-telegram" style="flex:1;"><i class="fab fa-telegram-plane"></i> Open Telegram</a>
+                    <p style="color:#10b981; font-weight:600; margin-bottom:0.75rem;"><i class="fas fa-check-circle"></i> Thank you. Your report has been recorded locally.</p>
+                    <p style="font-size:0.85rem; margin-bottom:0.75rem;">Click below to send this report directly to our Telegram group with one tap:</p>
+                    <textarea id="report-payload-box" class="form-control" readonly style="font-family:monospace; font-size:0.8rem; height:110px;"></textarea>
+                    <div style="display:flex; gap:0.75rem; margin-top:1rem; flex-wrap:wrap;">
+                        <button class="btn btn-save" style="flex:1; min-width:120px;" onclick="copyReportPayload()"><i class="fas fa-copy"></i> Copy Report</button>
+                        <a id="telegram-link-btn" href="#" target="_blank" class="btn btn-telegram" style="flex:1; min-width:120px;"><i class="fab fa-telegram-plane"></i> Send to Telegram</a>
                     </div>
                 </div>
             </div>
@@ -881,7 +885,6 @@
         }
 
         function persistState() {
-            // Only persist active or finished quiz states, or route navigations
             const stateToSave = {
                 appState,
                 activeQuizStatus: activeQuiz.status,
@@ -910,7 +913,6 @@
                 const data = JSON.parse(saved);
                 appState = data.appState || { view: 'home' };
 
-                // If user was actively taking a quiz, resume it
                 if (data.activeQuizStatus === 'active' && data.activeQuizCode) {
                     const quizzes = window.STUDYSPHERE_QUIZZES || [];
                     const quiz = quizzes.find(q => q.quizCode === data.activeQuizCode);
@@ -939,25 +941,13 @@
                         return;
                     }
                 } 
-                
-                // If user was viewing a finished result screen when they refreshed
-                if (data.activeQuizStatus === 'finished' && data.activeQuizCode && appState.view === 'result') {
-                    const quizzes = window.STUDYSPHERE_QUIZZES || [];
-                    const quiz = quizzes.find(q => q.quizCode === data.activeQuizCode);
-                    if (quiz) {
-                        activeQuiz.quizData = quiz;
-                        activeQuiz.status = 'finished';
-                        activeQuiz.answers = data.answers || {};
-                        renderResultScreen();
-                        return;
-                    }
-                }
 
-                // Normal view restoration
                 if (appState.view === 'subject' && appState.subjectCode) {
                     renderSubject(appState.subjectCode, false);
                 } else if (appState.view === 'topic' && appState.topicCode) {
                     renderTopic(appState.topicCode, appState.subjectCode, appState.chapterCode, false);
+                } else if (appState.view === 'result' && activeQuiz.status === 'finished') {
+                    renderResultScreen();
                 } else {
                     renderHome(false);
                 }
@@ -1210,18 +1200,18 @@
             if (!quiz) return;
             
             const timeLimitOptions = `
-                <div style="margin-top:1.5rem;">
-                    <label style="font-weight:600; display:block; margin-bottom:0.5rem;">Timer Option:</label>
+                <div style="margin-top:1.25rem;">
+                    <label style="font-weight:600; display:block; margin-bottom:0.5rem; font-size:0.9rem;">Timer Option:</label>
                     <div style="display:flex; gap:1rem; flex-wrap:wrap; margin-bottom:1rem;">
-                        <label style="display:flex; align-items:center; gap:0.5rem; cursor:pointer;">
+                        <label style="display:flex; align-items:center; gap:0.5rem; cursor:pointer; font-size:0.9rem;">
                             <input type="radio" name="quiz-timer-type" value="timed" checked onchange="toggleCustomTime(true)"> Timed Quiz
                         </label>
-                        <label style="display:flex; align-items:center; gap:0.5rem; cursor:pointer;">
+                        <label style="display:flex; align-items:center; gap:0.5rem; cursor:pointer; font-size:0.9rem;">
                             <input type="radio" name="quiz-timer-type" value="untimed" onchange="toggleCustomTime(false)"> Without Time Limit
                         </label>
                     </div>
                     <div id="custom-time-wrapper">
-                        <label style="font-size:0.9rem; color:var(--text-secondary);">Enter time in minutes (1-600):</label>
+                        <label style="font-size:0.85rem; color:var(--text-secondary);">Enter time in minutes (1-600):</label>
                         <input type="number" id="quiz-custom-time" class="form-control" value="${quiz.timeLimit || 10}" min="1" max="600" style="margin-top:0.25rem;">
                         <p id="quiz-time-error" style="color:#ef4444; font-size:0.85rem; display:none;"></p>
                     </div>
@@ -1229,16 +1219,16 @@
             `;
 
             document.getElementById('quiz-start-body').innerHTML = `
-                <h3 style="color:var(--text-primary); margin-bottom:0.5rem;">${quiz.titleMr}</h3>
-                <p style="color:var(--text-secondary); margin-bottom:1rem; font-size:0.95rem;">${quiz.titleEn}</p>
-                <div style="display:grid; grid-template-columns:1fr 1fr; gap:0.5rem; background:var(--surface-hover); padding:1rem; border-radius:6px; border:1px solid var(--border-color); font-size:0.9rem;">
+                <h3 style="color:var(--text-primary); margin-bottom:0.4rem; font-size:1.1rem;">${quiz.titleMr}</h3>
+                <p style="color:var(--text-secondary); margin-bottom:1rem; font-size:0.9rem;">${quiz.titleEn}</p>
+                <div style="display:grid; grid-template-columns:1fr 1fr; gap:0.5rem; background:var(--surface-hover); padding:0.85rem; border-radius:6px; border:1px solid var(--border-color); font-size:0.85rem;">
                     <div><strong>Questions:</strong> ${quiz.questions.length}</div>
                     <div><strong>Marks/Q:</strong> ${quiz.marksPerQuestion}</div>
                     <div><strong>Negative:</strong> ${quiz.negativeMarks ? '-' + quiz.negativeMarks : 'None'}</div>
                     <div><strong>Type:</strong> <span style="text-transform:capitalize;">${quiz.quizType}</span></div>
                 </div>
                 ${timeLimitOptions}
-                <button class="btn btn-save" style="width:100%; margin-top:1.5rem;" onclick="validateAndStartQuiz('${quizCode}')">
+                <button class="btn btn-save" style="width:100%; margin-top:1.25rem;" onclick="validateAndStartQuiz('${quizCode}')">
                     <i class="fas fa-play"></i> Start Quiz
                 </button>
             `;
@@ -1387,7 +1377,7 @@
                 const btn = document.querySelector('.exam-footer-controls .btn-save');
                 const originalText = btn.innerHTML;
                 btn.innerHTML = 'Last Q';
-                setTimeout(() => btn.innerHTML = originalText, 1500);
+                setTimeout(() => btn.innerHTML = originalText, 1200);
             }
         }
 
@@ -1491,13 +1481,13 @@
             const notAnswered = activeQuiz.quizData.questions.length - answered;
 
             document.getElementById('quiz-submit-body').innerHTML = `
-                <p style="margin-bottom:1.5rem;">Are you sure you want to submit the quiz?</p>
-                <div style="background:var(--surface-hover); padding:1rem; border-radius:6px; border:1px solid var(--border-color); margin-bottom:1.5rem; display:grid; gap:0.5rem; font-size:0.95rem;">
+                <p style="margin-bottom:1.25rem; font-size:0.95rem;">Are you sure you want to submit the quiz?</p>
+                <div style="background:var(--surface-hover); padding:0.85rem; border-radius:6px; border:1px solid var(--border-color); margin-bottom:1.25rem; display:grid; gap:0.4rem; font-size:0.9rem;">
                     <div style="display:flex; justify-content:space-between;"><span>Answered:</span> <strong>${answered}</strong></div>
                     <div style="display:flex; justify-content:space-between;"><span>Not Answered / Skipped:</span> <strong>${notAnswered}</strong></div>
                     <div style="display:flex; justify-content:space-between;"><span>Marked for Review:</span> <strong>${review}</strong></div>
                 </div>
-                <div style="display:flex; gap:1rem;">
+                <div style="display:flex; gap:0.75rem;">
                     <button class="btn btn-outline" style="flex:1;" onclick="closeModal('quiz-submit-modal')">Cancel</button>
                     <button class="btn btn-submit-q" style="flex:1;" onclick="forceSubmitQuiz()">Submit Quiz</button>
                 </div>
@@ -1555,7 +1545,7 @@
                             <span class="qa-num">Q ${i + 1}</span>
                             ${resBadge}
                         </div>
-                        <div class="qa-q">${q.questionMr}<br><span style="font-size:0.95rem; color:var(--text-secondary);">${q.questionEn}</span></div>
+                        <div class="qa-q">${q.questionMr}<br><span style="font-size:0.9rem; color:var(--text-secondary);">${q.questionEn}</span></div>
                         <div class="ans-block">
                             <div class="ans-box"><div class="ans-box-title">Your Answer</div><div class="ans-text">${userAnsText}</div></div>
                             <div class="ans-box" style="background:rgba(16,185,129,0.05); border-color:rgba(16,185,129,0.2);"><div class="ans-box-title" style="color:#10b981;">Correct Answer</div><div class="ans-text">${correctAnsText}</div></div>
@@ -1563,7 +1553,7 @@
                         <div class="qa-exp">
                             <h4>Explanation / स्पष्टीकरण:</h4>
                             <p>${q.explanationMr}</p>
-                            <p style="font-size:0.85rem;">${q.explanationEn}</p>
+                            <p style="font-size:0.8rem;">${q.explanationEn}</p>
                         </div>
                     </div>
                 `;
@@ -1578,16 +1568,16 @@
             const percentage = maxScore > 0 ? ((finalScore / maxScore) * 100).toFixed(2) : 0;
 
             document.getElementById('view-result').innerHTML = `
-                <div class="back-header" style="max-width:1200px; margin:0 auto 1.5rem; width:100%; padding:0 1rem;">
-                    <button class="btn-back" onclick="retakeQuiz()"><i class="fas fa-redo"></i> Retake Quiz</button> 
-                    <button class="btn-back" onclick="returnToTopicFromQuiz()"><i class="fas fa-arrow-left"></i> Back to Topic</button>
+                <div class="back-header" style="max-width:1200px; margin:0 auto 1.5rem; width:100%; padding:0 1rem; box-sizing:border-box;">
+                    <button class="btn-back" onclick="retakeQuiz()"><i class="fas fa-redo"></i> Retake</button> 
+                    <button class="btn-back" onclick="returnToTopicFromQuiz()"><i class="fas fa-arrow-left"></i> Topic</button>
                     <button class="btn-back" style="margin-left:auto;" onclick="renderHome(true)"><i class="fas fa-home"></i> Home</button>
                 </div>
                 
-                <div style="max-width:1200px; margin:0 auto; width:100%; padding:0 1rem;">
+                <div style="max-width:1200px; margin:0 auto; width:100%; padding:0 1rem; box-sizing:border-box;">
                     <div class="scorecard">
                         <h2>Quiz Result</h2>
-                        <p style="color:var(--text-secondary);">${quiz.titleMr}</p>
+                        <p style="color:var(--text-secondary); font-size:0.95rem;">${quiz.titleMr}</p>
                         
                         <div class="scorecard-grid">
                             <div class="stat-box"><div class="stat-value">${totalQ}</div><div class="stat-label">Total Qs</div></div>
@@ -1595,7 +1585,7 @@
                             <div class="stat-box"><div class="stat-value" style="color:#ef4444;">${wrongCount}</div><div class="stat-label">Wrong</div></div>
                             <div class="stat-box"><div class="stat-value" style="color:#64748b;">${skippedCount}</div><div class="stat-label">Skipped</div></div>
                             <div class="stat-box"><div class="stat-value">${correctMarks.toFixed(2)}</div><div class="stat-label">Correct Marks</div></div>
-                            <div class="stat-box"><div class="stat-value" style="color:#ef4444;">-${negativeDeduction.toFixed(2)}</div><div class="stat-label">Negative Marks</div></div>
+                            <div class="stat-box"><div class="stat-value" style="color:#ef4444;">-${negativeDeduction.toFixed(2)}</div><div class="stat-label">Negative</div></div>
                             <div class="stat-box highlight"><div class="stat-value">${finalScore.toFixed(2)} / ${maxScore}</div><div class="stat-label">Final Score</div></div>
                             <div class="stat-box"><div class="stat-value" style="color:var(--primary-color);">${accuracy}%</div><div class="stat-label">Accuracy</div></div>
                             <div class="stat-box"><div class="stat-value" style="color:var(--primary-color);">${percentage}%</div><div class="stat-label">Percentage</div></div>
@@ -1713,6 +1703,11 @@
                 `Correct Answer Key: ${report.correctAnswer}`;
 
             document.getElementById('report-payload-box').value = payloadText;
+            
+            // Set up direct Telegram pre-fill link share URL
+            const encodedText = encodeURIComponent(payloadText);
+            document.getElementById('telegram-link-btn').href = `https://t.me/share/url?url=${encodeURIComponent('https://t.me/+va0AGcqvCdQzNTI1')}&text=${encodedText}`;
+
             openModal('report-success-modal');
         }
 
@@ -1729,7 +1724,7 @@
             if (savedSize) { currentFontSize = parseInt(savedSize); applyFontSize(); }
         }
         function changeFontSize(step) {
-            if (step > 0 && currentFontSize < 24) currentFontSize += 2;
+            if (step > 0 && currentFontSize < 22) currentFontSize += 2;
             if (step < 0 && currentFontSize > 12) currentFontSize -= 2;
             applyFontSize(); localStorage.setItem('studySphere_fontSize', currentFontSize);
         }
@@ -1759,8 +1754,8 @@
         }
         function updateThemeIcon(theme) {
             const btn = document.getElementById('theme-toggle');
-            if (theme === 'dark') btn.innerHTML = '<i class="fas fa-sun"></i> Light Mode';
-            else btn.innerHTML = '<i class="fas fa-moon"></i> Dark Mode';
+            if (theme === 'dark') btn.innerHTML = '<i class="fas fa-sun"></i> Light';
+            else btn.innerHTML = '<i class="fas fa-moon"></i> Theme';
         }
 
         function toggleSidebar() {
@@ -1785,7 +1780,6 @@
                 if(quizCodes.has(quiz.quizCode)) console.warn(`Duplicate quizCode: ${quiz.quizCode}`);
                 quizCodes.add(quiz.quizCode);
             });
-            console.log(`Successfully validated ${quizzes.length} loaded quizzes.`);
         }
 
         window.onload = initApp;
