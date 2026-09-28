@@ -881,6 +881,7 @@
         }
 
         function persistState() {
+            // Only persist active or finished quiz states, or route navigations
             const stateToSave = {
                 appState,
                 activeQuizStatus: activeQuiz.status,
@@ -901,7 +902,7 @@
             const saved = localStorage.getItem('studysphere_persisted_state');
             if (!saved) {
                 if (!history.state) history.replaceState({ view: 'home' }, '', '');
-                handlePopState({ state: { view: 'home' } });
+                renderHome(false);
                 return;
             }
 
@@ -909,6 +910,7 @@
                 const data = JSON.parse(saved);
                 appState = data.appState || { view: 'home' };
 
+                // If user was actively taking a quiz, resume it
                 if (data.activeQuizStatus === 'active' && data.activeQuizCode) {
                     const quizzes = window.STUDYSPHERE_QUIZZES || [];
                     const quiz = quizzes.find(q => q.quizCode === data.activeQuizCode);
@@ -936,7 +938,10 @@
                         launchQuizInterfaceEngine();
                         return;
                     }
-                } else if (data.activeQuizStatus === 'finished' && data.activeQuizCode) {
+                } 
+                
+                // If user was viewing a finished result screen when they refreshed
+                if (data.activeQuizStatus === 'finished' && data.activeQuizCode && appState.view === 'result') {
                     const quizzes = window.STUDYSPHERE_QUIZZES || [];
                     const quiz = quizzes.find(q => q.quizCode === data.activeQuizCode);
                     if (quiz) {
@@ -948,11 +953,17 @@
                     }
                 }
 
-                if (appState.view === 'subject' && appState.subjectCode) renderSubject(appState.subjectCode, false);
-                else if (appState.view === 'topic' && appState.topicCode) renderTopic(appState.topicCode, appState.subjectCode, appState.chapterCode, false);
-                else renderHome(false);
+                // Normal view restoration
+                if (appState.view === 'subject' && appState.subjectCode) {
+                    renderSubject(appState.subjectCode, false);
+                } else if (appState.view === 'topic' && appState.topicCode) {
+                    renderTopic(appState.topicCode, appState.subjectCode, appState.chapterCode, false);
+                } else {
+                    renderHome(false);
+                }
             } catch (e) {
                 console.error("Failed to restore state", e);
+                localStorage.removeItem('studysphere_persisted_state');
                 renderHome(false);
             }
         }
@@ -968,7 +979,7 @@
             const state = event.state;
             if (!state || state.view === 'home') renderHome(false);
             else if (state.view === 'subject') renderSubject(state.subjectCode, false);
-            else if (state.view === 'topic') renderTopic(state.subjectCode, state.chapterCode, state.topicCode, false);
+            else if (state.view === 'topic') renderTopic(state.topicCode, state.subjectCode, state.chapterCode, false);
         }
 
         function navigateSPA(targetViewId, pushToHistory = true, force = false) {
@@ -1126,7 +1137,7 @@
                 history.pushState(appState, '', '');
                 persistState();
             } else {
-                appState.view = 'topic'; appState.topicCode = topicCode;
+                appState.view = 'topic'; appState.topicCode = topicCode; appState.subjectCode = subjectCode; appState.chapterCode = chapterCode;
             }
 
             let quizCardsHTML = '';
@@ -1498,6 +1509,8 @@
             closeModal('quiz-submit-modal');
             if (activeQuiz.timerInterval) clearInterval(activeQuiz.timerInterval);
             activeQuiz.status = 'finished';
+            
+            appState.view = 'result';
             persistState();
             renderResultScreen();
         }
