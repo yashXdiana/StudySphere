@@ -15,7 +15,6 @@
 
     <style>
         :root {
-            /* Light Theme Variables */
             --bg-color: #f4f6f8;
             --surface-color: #ffffff;
             --surface-hover: #f8fafc;
@@ -30,17 +29,15 @@
             --card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
             --base-font-size: 16px;
             
-            /* Quiz Palette Colors */
             --q-unvisited: #cbd5e1;
-            --q-visited: #ef4444; /* Red */
-            --q-answered: #10b981; /* Green */
-            --q-review: #8b5cf6; /* Purple */
+            --q-visited: #ef4444; 
+            --q-answered: #10b981; 
+            --q-review: #8b5cf6; 
             --q-text-light: #ffffff;
             --q-text-dark: #1e293b;
         }
 
         [data-theme="dark"] {
-            /* Dark Theme Variables */
             --bg-color: #0f172a;
             --surface-color: #1e293b;
             --surface-hover: #334155;
@@ -53,7 +50,6 @@
             --footer-bg: #0b1120;
             --footer-text: #f8fafc;
             --card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
-
             --q-unvisited: #475569;
         }
 
@@ -246,6 +242,200 @@
         .btn-start-quiz { width: 100%; background-color: var(--primary-color); color: white; padding: 0.75rem; font-size: 1rem; border:none; border-radius:6px; cursor:pointer; font-weight:600; transition: background 0.2s;}
         .btn-start-quiz:hover { background-color: var(--primary-hover); }
 
+        /* Dedicated Full-Screen Quiz View Styles */
+        #view-quiz {
+            position: fixed;
+            top: 0; left: 0; width: 100vw; height: 100vh;
+            background-color: var(--bg-color);
+            z-index: 9999;
+            display: none;
+            flex-direction: column;
+            overflow: hidden;
+        }
+        #view-quiz.active { display: flex; }
+
+        .anti-cheat-active {
+            user-select: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+        }
+
+        .exam-screen-layout {
+            display: grid;
+            grid-template-columns: 1fr 320px;
+            grid-template-rows: 60px 1fr 70px;
+            height: 100vh;
+            width: 100vw;
+            background-color: var(--bg-color);
+        }
+        @media(max-width: 900px) {
+            .exam-screen-layout {
+                grid-template-columns: 1fr;
+                grid-template-rows: 55px auto 1fr 65px;
+                overflow-y: auto;
+            }
+        }
+
+        .exam-top-bar {
+            grid-column: 1 / -1;
+            background-color: var(--surface-color);
+            border-bottom: 1px solid var(--border-color);
+            padding: 0 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .exam-main-panel {
+            grid-column: 1 / 2;
+            overflow-y: auto;
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            background-color: var(--surface-color);
+            margin: 1rem;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            box-shadow: var(--card-shadow);
+        }
+        @media(max-width: 900px) {
+            .exam-main-panel { grid-column: 1 / -1; margin: 0.75rem; }
+        }
+
+        .exam-sidebar-panel {
+            grid-column: 2 / 3;
+            grid-row: 2 / 3;
+            background-color: var(--surface-color);
+            border-left: 1px solid var(--border-color);
+            border-top: none;
+            padding: 1rem;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        @media(max-width: 900px) {
+            .exam-sidebar-panel {
+                grid-column: 1 / -1;
+                grid-row: 2 / 3;
+                border-left: none;
+                border-bottom: 1px solid var(--border-color);
+                max-height: 200px;
+            }
+        }
+
+        .exam-footer-controls {
+            grid-column: 1 / -1;
+            background-color: var(--surface-color);
+            border-top: 1px solid var(--border-color);
+            padding: 0 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .q-number-badge {
+            background: var(--primary-color);
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 999px;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+        .q-timer {
+            display: flex; align-items: center; gap: 0.5rem;
+            font-size: 1.1rem; font-weight: 700; color: #ef4444;
+            background: rgba(239, 68, 68, 0.1);
+            padding: 0.25rem 0.75rem; border-radius: 6px;
+            border: 1px solid rgba(239,68,68,0.2);
+        }
+        [data-theme="dark"] .q-timer { color: #fca5a5; }
+
+        .question-box { margin-bottom: 1.5rem; }
+        .q-text-mr { font-size: 1.2rem; font-weight: 600; color: var(--text-primary); margin-bottom: 0.5rem; font-family: 'Noto Sans Devanagari', sans-serif; }
+        .q-text-en { font-size: 1rem; color: var(--text-secondary); margin-bottom: 1.5rem; }
+
+        .options-list { display: flex; flex-direction: column; gap: 0.75rem; margin-bottom: 1.5rem; }
+        .option-label {
+            display: flex; align-items: center; gap: 1rem;
+            padding: 1rem; border: 1px solid var(--border-color);
+            border-radius: 8px; cursor: pointer; transition: all 0.2s;
+            background: var(--surface-color);
+        }
+        .option-label:hover { background-color: rgba(37, 99, 235, 0.05); border-color: var(--primary-color); }
+        .option-label.selected { background-color: rgba(37, 99, 235, 0.1); border-color: var(--primary-color); box-shadow: 0 0 0 1px var(--primary-color); }
+        
+        .opt-char { font-weight: 700; width: 30px; height: 30px; display: flex; align-items: center; justify-content: center; background: var(--surface-hover); border-radius: 50%; color: var(--text-primary); flex-shrink: 0; }
+        .option-label.selected .opt-char { background: var(--primary-color); color: white; }
+        .opt-texts { display: flex; flex-direction: column; }
+        .opt-mr { font-weight: 500; font-size: 1.05rem; font-family: 'Noto Sans Devanagari', sans-serif; color: var(--text-primary); }
+        .opt-en { font-size: 0.9rem; color: var(--text-secondary); }
+
+        .report-link { font-size: 0.85rem; color: #ef4444; cursor: pointer; display: inline-flex; align-items: center; gap: 0.25rem; transition: color 0.2s; margin-top: auto; padding-top: 1rem; }
+        .report-link:hover { text-decoration: underline; color: #dc2626; }
+
+        .ctrl-group { display: flex; gap: 0.75rem; flex-wrap: wrap; }
+        .btn-outline { background: transparent; border: 1px solid var(--border-color); color: var(--text-primary); padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: 500; }
+        .btn-outline:hover { background: var(--surface-hover); border-color: var(--text-secondary); }
+        
+        .btn-review { border-color: #8b5cf6; color: #8b5cf6; }
+        .btn-review:hover { background: #8b5cf6; color: white; }
+        
+        .btn-save { background: var(--primary-color); color: white; padding: 0.5rem 1.25rem; border-radius: 6px; cursor: pointer; font-weight: 600; border: none; }
+        .btn-save:hover { background: var(--primary-hover); }
+
+        .btn-submit-q { background: #10b981; color: white; padding: 0.5rem 1.25rem; border-radius: 6px; cursor: pointer; font-weight: 600; border: none; }
+        .btn-submit-q:hover { background: #059669; }
+
+        .palette-header { font-weight: 600; font-size: 0.95rem; color: var(--text-primary); text-align: center; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem; }
+        .palette-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 0.4rem; }
+        .p-btn {
+            aspect-ratio: 1; border: none; border-radius: 4px; font-weight: 600; font-size: 0.9rem; cursor: pointer;
+            display: flex; align-items: center; justify-content: center; transition: filter 0.2s; position: relative;
+        }
+        .p-btn:hover { filter: brightness(0.9); }
+        
+        .s-unvisited { background-color: var(--q-unvisited); color: var(--q-text-dark); }
+        .s-visited { background-color: var(--q-visited); color: var(--q-text-light); }
+        .s-answered { background-color: var(--q-answered); color: var(--q-text-light); }
+        .s-review { background-color: var(--q-review); color: var(--q-text-light); }
+        .s-review-ans { background-color: var(--q-review); color: var(--q-text-light); }
+        .s-review-ans::after { content: ''; position: absolute; bottom: 0; right: 0; width: 0; height: 0; border-style: solid; border-width: 0 0 10px 10px; border-color: transparent transparent #10b981 transparent; }
+
+        .palette-legend { font-size: 0.7rem; color: var(--text-secondary); display: flex; flex-direction: column; gap: 0.3rem; }
+        .l-item { display: flex; align-items: center; gap: 0.4rem; }
+        .l-box { width: 12px; height: 12px; border-radius: 2px; }
+
+        .scorecard { background: var(--surface-color); border: 1px solid var(--border-color); border-radius: 8px; padding: 2rem; margin-bottom: 2rem; text-align: center; box-shadow: var(--card-shadow); border-top: 4px solid var(--primary-color); }
+        .scorecard h2 { color: var(--text-primary); margin-bottom: 0.5rem; font-family: 'Noto Sans Devanagari', sans-serif; }
+        .scorecard-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 1rem; margin-top: 1.5rem; }
+        .stat-box { background: var(--surface-hover); padding: 1rem; border-radius: 6px; border: 1px solid var(--border-color); }
+        .stat-value { font-size: 1.4rem; font-weight: 700; color: var(--primary-color); }
+        .stat-label { font-size: 0.8rem; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 0.05em; }
+        .stat-box.highlight { background: rgba(16,185,129,0.1); border-color: rgba(16,185,129,0.3); }
+        .stat-box.highlight .stat-value { color: #10b981; }
+
+        .qa-card { background: var(--surface-color); border: 1px solid var(--border-color); border-radius: 8px; margin-bottom: 1.5rem; padding: 1.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.05); }
+        .qa-header { display: flex; justify-content: space-between; margin-bottom: 1rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem; }
+        .qa-num { font-weight: 700; color: var(--text-primary); }
+        .qa-res { font-weight: 600; padding: 0.2rem 0.5rem; border-radius: 4px; font-size: 0.85rem; }
+        .res-correct { background: rgba(16, 185, 129, 0.1); color: #10b981; }
+        .res-wrong { background: rgba(239, 68, 68, 0.1); color: #ef4444; }
+        .res-skipped { background: rgba(148, 163, 184, 0.1); color: #64748b; }
+        
+        .qa-q { font-size: 1.1rem; color: var(--text-primary); font-weight: 500; margin-bottom: 1rem; font-family: 'Noto Sans Devanagari', sans-serif; }
+        .ans-block { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem; font-size: 0.95rem; }
+        @media(max-width: 600px) { .ans-block { grid-template-columns: 1fr; } }
+        .ans-box { padding: 0.75rem; border-radius: 6px; border: 1px solid var(--border-color); background: var(--bg-color); }
+        .ans-box-title { font-size: 0.8rem; color: var(--text-secondary); margin-bottom: 0.25rem; }
+        .ans-text { color: var(--text-primary); font-weight: 500; }
+        
+        .qa-exp { background: rgba(37, 99, 235, 0.05); border-left: 4px solid var(--primary-color); padding: 1rem; border-radius: 0 6px 6px 0; margin-top: 1rem; }
+        .qa-exp h4 { font-size: 0.9rem; color: var(--primary-color); margin-bottom: 0.5rem; }
+        .qa-exp p { font-size: 0.95rem; color: var(--text-secondary); margin-bottom: 0.5rem; font-family: 'Noto Sans Devanagari', sans-serif; }
+
         footer { background-color: var(--footer-bg); color: var(--footer-text); padding: 3rem 1rem 1rem; margin-top: auto; }
         .footer-content { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-bottom: 2rem; }
         .footer-brand h2 { font-size: 1.5rem; margin-bottom: 0.5rem; color: #ffffff; }
@@ -265,161 +455,16 @@
 
         .modal-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.6); backdrop-filter: blur(2px); display: none; justify-content: center; align-items: center; z-index: 2000; opacity: 0; transition: opacity 0.3s; }
         .modal-overlay.active { display: flex; opacity: 1; }
-        .modal-content { background-color: var(--surface-color); border-radius: 8px; width: 90%; max-width: 600px; max-height: 90vh; overflow-y: auto; box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); transform: translateY(20px); transition: transform 0.3s; }
+        .modal-content { background-color: var(--surface-color); border-radius: 8px; width: 90%; max-width: 600px; max-height: 90vh; overflow-y: auto; box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1); transform: translateY(20px); transition: transform 0.3s; }
         .modal-overlay.active .modal-content { transform: translateY(0); }
         .modal-header { padding: 1.25rem 1.5rem; border-bottom: 1px solid var(--border-color); display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; background-color: var(--surface-color); z-index: 10; }
         .modal-header h2 { font-size: 1.25rem; color: var(--text-primary); }
         .modal-body { padding: 1.5rem; color: var(--text-secondary); }
-        
-        .quiz-layout {
-            display: grid;
-            grid-template-columns: 1fr 300px;
-            gap: 1.5rem;
-            align-items: start;
-        }
-        @media(max-width: 900px) {
-            .quiz-layout { grid-template-columns: 1fr; }
-            .quiz-sidebar { order: -1; margin-bottom: 1rem; }
-        }
-
-        .quiz-main-card {
-            background: var(--surface-color);
-            border: 1px solid var(--border-color);
-            border-radius: 8px;
-            box-shadow: var(--card-shadow);
-            overflow: hidden;
-        }
-        
-        .anti-cheat-active {
-            user-select: none;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-        }
-
-        .quiz-top-bar {
-            background-color: var(--surface-hover);
-            padding: 1rem 1.5rem;
-            border-bottom: 1px solid var(--border-color);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 1rem;
-        }
-        .q-number-badge {
-            background: var(--primary-color);
-            color: white;
-            padding: 0.25rem 0.75rem;
-            border-radius: 999px;
-            font-size: 0.9rem;
-            font-weight: 600;
-        }
-        .q-timer {
-            display: flex; align-items: center; gap: 0.5rem;
-            font-size: 1.1rem; font-weight: 700; color: #ef4444;
-            background: rgba(239, 68, 68, 0.1);
-            padding: 0.25rem 0.75rem; border-radius: 6px;
-            border: 1px solid rgba(239,68,68,0.2);
-        }
-        [data-theme="dark"] .q-timer { color: #fca5a5; }
-
-        .question-box { padding: 1.5rem; border-bottom: 1px solid var(--border-color); }
-        .q-text-mr { font-size: 1.25rem; font-weight: 600; color: var(--text-primary); margin-bottom: 0.5rem; font-family: 'Noto Sans Devanagari', sans-serif; }
-        .q-text-en { font-size: 1.05rem; color: var(--text-secondary); margin-bottom: 1.5rem; }
-
-        .options-list { display: flex; flex-direction: column; gap: 0.75rem; padding: 1.5rem; }
-        .option-label {
-            display: flex; align-items: center; gap: 1rem;
-            padding: 1rem; border: 1px solid var(--border-color);
-            border-radius: 8px; cursor: pointer; transition: all 0.2s;
-            background: var(--surface-color);
-        }
-        .option-label:hover { background-color: rgba(37, 99, 235, 0.05); border-color: var(--primary-color); }
-        .option-label.selected { background-color: rgba(37, 99, 235, 0.1); border-color: var(--primary-color); box-shadow: 0 0 0 1px var(--primary-color); }
-        
-        .opt-char { font-weight: 700; width: 30px; height: 30px; display: flex; align-items: center; justify-content: center; background: var(--surface-hover); border-radius: 50%; color: var(--text-primary); }
-        .option-label.selected .opt-char { background: var(--primary-color); color: white; }
-        .opt-texts { display: flex; flex-direction: column; }
-        .opt-mr { font-weight: 500; font-size: 1.05rem; font-family: 'Noto Sans Devanagari', sans-serif; color: var(--text-primary);}
-        .opt-en { font-size: 0.9rem; color: var(--text-secondary); }
-
-        .report-link { margin: 0 1.5rem 1rem; font-size: 0.85rem; color: #ef4444; cursor: pointer; display: inline-flex; align-items: center; gap: 0.25rem; transition: color 0.2s; }
-        .report-link:hover { text-decoration: underline; color: #dc2626; }
-
-        .quiz-controls {
-            display: flex; justify-content: space-between; flex-wrap: wrap; gap: 1rem;
-            padding: 1.5rem; background-color: var(--surface-hover); border-top: 1px solid var(--border-color);
-        }
-        .ctrl-group { display: flex; gap: 0.75rem; flex-wrap: wrap; }
-        .btn-outline { background: transparent; border: 1px solid var(--border-color); color: var(--text-primary); }
-        .btn-outline:hover { background: var(--surface-color); border-color: var(--text-secondary); }
-        
-        .btn-review { border-color: #8b5cf6; color: #8b5cf6; }
-        .btn-review:hover { background: #8b5cf6; color: white; }
-        
-        .btn-save { background: var(--primary-color); color: white; }
-        .btn-save:hover { background: var(--primary-hover); }
-
-        .btn-submit-q { background: #10b981; color: white; }
-        .btn-submit-q:hover { background: #059669; }
-
-        .quiz-sidebar { background: var(--surface-color); border: 1px solid var(--border-color); border-radius: 8px; padding: 1rem; box-shadow: var(--card-shadow); height: fit-content; }
-        .palette-header { font-weight: 600; margin-bottom: 1rem; color: var(--text-primary); text-align: center; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem;}
-        
-        .palette-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 0.5rem; margin-bottom: 1.5rem; }
-        .p-btn {
-            aspect-ratio: 1; border: none; border-radius: 4px; font-weight: 600; font-size: 0.95rem; cursor: pointer;
-            display: flex; align-items: center; justify-content: center; transition: filter 0.2s; position: relative;
-        }
-        .p-btn:hover { filter: brightness(0.9); }
-        
-        /* Status Colors */
-        .s-unvisited { background-color: var(--q-unvisited); color: var(--q-text-dark); }
-        .s-visited { background-color: var(--q-visited); color: var(--q-text-light); }
-        .s-answered { background-color: var(--q-answered); color: var(--q-text-light); }
-        .s-review { background-color: var(--q-review); color: var(--q-text-light); }
-        
-        .s-review-ans { background-color: var(--q-review); color: var(--q-text-light); }
-        .s-review-ans::after { content: ''; position: absolute; bottom: 0; right: 0; width: 0; height: 0; border-style: solid; border-width: 0 0 12px 12px; border-color: transparent transparent #10b981 transparent; }
-
-        .palette-legend { font-size: 0.75rem; color: var(--text-secondary); display: flex; flex-direction: column; gap: 0.4rem; }
-        .l-item { display: flex; align-items: center; gap: 0.5rem; }
-        .l-box { width: 14px; height: 14px; border-radius: 2px; }
-
-        .scorecard { background: var(--surface-color); border: 1px solid var(--border-color); border-radius: 8px; padding: 2rem; margin-bottom: 2rem; text-align: center; box-shadow: var(--card-shadow); border-top: 4px solid var(--primary-color); }
-        .scorecard h2 { color: var(--text-primary); margin-bottom: 0.5rem; font-family: 'Noto Sans Devanagari', sans-serif;}
-        .scorecard-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 1rem; margin-top: 1.5rem; }
-        .stat-box { background: var(--surface-hover); padding: 1rem; border-radius: 6px; border: 1px solid var(--border-color); }
-        .stat-value { font-size: 1.5rem; font-weight: 700; color: var(--primary-color); }
-        .stat-label { font-size: 0.85rem; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 0.05em; }
-        .stat-box.highlight { background: rgba(16,185,129,0.1); border-color: rgba(16,185,129,0.3); }
-        .stat-box.highlight .stat-value { color: #10b981; }
-
-        .qa-card { background: var(--surface-color); border: 1px solid var(--border-color); border-radius: 8px; margin-bottom: 1.5rem; padding: 1.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.05); }
-        .qa-header { display: flex; justify-content: space-between; margin-bottom: 1rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem; }
-        .qa-num { font-weight: 700; color: var(--text-primary); }
-        .qa-res { font-weight: 600; padding: 0.2rem 0.5rem; border-radius: 4px; font-size: 0.85rem; }
-        .res-correct { background: rgba(16, 185, 129, 0.1); color: #10b981; }
-        .res-wrong { background: rgba(239, 68, 68, 0.1); color: #ef4444; }
-        .res-skipped { background: rgba(148, 163, 184, 0.1); color: #64748b; }
-        
-        .qa-q { font-size: 1.1rem; color: var(--text-primary); font-weight: 500; margin-bottom: 1rem; font-family: 'Noto Sans Devanagari', sans-serif;}
-        .ans-block { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem; font-size: 0.95rem; }
-        @media(max-width: 600px) { .ans-block { grid-template-columns: 1fr; } }
-        .ans-box { padding: 0.75rem; border-radius: 6px; border: 1px solid var(--border-color); background: var(--bg-color); }
-        .ans-box-title { font-size: 0.8rem; color: var(--text-secondary); margin-bottom: 0.25rem; }
-        .ans-text { color: var(--text-primary); font-weight: 500; }
-        
-        .qa-exp { background: rgba(37, 99, 235, 0.05); border-left: 4px solid var(--primary-color); padding: 1rem; border-radius: 0 6px 6px 0; margin-top: 1rem; }
-        .qa-exp h4 { font-size: 0.9rem; color: var(--primary-color); margin-bottom: 0.5rem; }
-        .qa-exp p { font-size: 0.95rem; color: var(--text-secondary); margin-bottom: 0.5rem; font-family: 'Noto Sans Devanagari', sans-serif;}
 
         .form-control { width: 100%; padding: 0.75rem; border: 1px solid var(--border-color); border-radius: 6px; background: var(--bg-color); color: var(--text-primary); font-size: 1rem; margin-bottom: 1rem; }
         .form-control:focus { outline: none; border-color: var(--primary-color); }
         select.form-control { cursor: pointer; }
         textarea.form-control { resize: vertical; min-height: 100px; }
-
     </style>
 </head>
 <body>
@@ -436,7 +481,7 @@
     </div>
 
     <header>
-        <div class="logo-container" onclick="navigateSPA('view-home')" style="cursor:pointer;">
+        <div class="logo-container" onclick="navigateSPA('view-home', true)" role="button" tabindex="0">
             <i class="fas fa-globe-asia logo-icon"></i>
             <div class="brand-text">
                 <h1>StudySphere</h1>
@@ -448,13 +493,13 @@
         </button>
     </header>
 
-    <nav id="sidebar">
+    <nav id="sidebar" aria-label="Main Navigation">
         <div class="sidebar-header">
             <h2 style="font-size: 1.2rem;">Menu</h2>
             <button class="close-menu" onclick="toggleSidebar()" aria-label="Close Menu"><i class="fas fa-times"></i></button>
         </div>
         <div class="sidebar-nav">
-            <a href="#" onclick="navigateSPA('view-home'); toggleSidebar();"><i class="fas fa-home fa-fw"></i> Home</a>
+            <a href="#" onclick="navigateSPA('view-home', true); toggleSidebar();"><i class="fas fa-home fa-fw"></i> Home</a>
             <a href="#" onclick="openModal('about-modal'); toggleSidebar();"><i class="fas fa-info-circle fa-fw"></i> About Us</a>
             <a href="#" onclick="openModal('contact-modal'); toggleSidebar();"><i class="fas fa-envelope fa-fw"></i> Contact</a>
             <a href="#" onclick="openModal('sitemap-modal'); toggleSidebar();"><i class="fas fa-sitemap fa-fw"></i> Sitemap</a>
@@ -465,7 +510,6 @@
     <div class="sidebar-overlay" onclick="toggleSidebar()"></div>
 
     <main id="app-content">
-        
         <!-- HOME VIEW -->
         <section id="view-home" class="view active">
             <div class="intro-box">
@@ -483,8 +527,50 @@
         <!-- TOPIC VIEW -->
         <section id="view-topic" class="view"></section>
 
-        <!-- QUIZ ENGINE VIEW -->
-        <section id="view-quiz" class="view"></section>
+        <!-- QUIZ ENGINE VIEW (Dedicated Full-Screen Examination Mode) -->
+        <section id="view-quiz" class="view">
+            <div class="exam-screen-layout anti-cheat-active">
+                <div class="exam-top-bar">
+                    <div style="display:flex; align-items:center; gap:1rem;">
+                        <span class="q-number-badge" id="q-num-display">Q 1</span>
+                        <h3 id="exam-quiz-title" style="font-size:1.05rem; font-family:'Noto Sans Devanagari',sans-serif;">Quiz Title</h3>
+                    </div>
+                    <div id="q-timer-display" class="q-timer" style="display: none">
+                        <i class="fas fa-stopwatch"></i> <span id="q-time-text">--:--</span>
+                    </div>
+                </div>
+                
+                <div class="exam-main-panel">
+                    <div id="q-render-area" style="flex-grow:1;"></div>
+                    <div class="report-link" onclick="openReportModal()">
+                        <i class="fas fa-flag"></i> Report This Question
+                    </div>
+                </div>
+
+                <div class="exam-sidebar-panel">
+                    <div class="palette-header">Question Palette</div>
+                    <div class="palette-grid" id="exam-palette-grid"></div>
+                    <div class="palette-legend">
+                        <div class="l-item"><div class="l-box s-answered"></div> Answered</div>
+                        <div class="l-item"><div class="l-box s-visited"></div> Not Answered</div>
+                        <div class="l-item"><div class="l-box s-unvisited"></div> Not Visited</div>
+                        <div class="l-item"><div class="l-box s-review"></div> Marked for Review</div>
+                        <div class="l-item"><div class="l-box s-review-ans"></div> Answered & Marked</div>
+                    </div>
+                </div>
+
+                <div class="exam-footer-controls">
+                    <div class="ctrl-group">
+                        <button class="btn-outline" onclick="clearResponse()">Clear Response</button>
+                        <button class="btn-outline btn-review" onclick="toggleMarkForReview()">Mark for Review</button>
+                    </div>
+                    <div class="ctrl-group">
+                        <button class="btn-save" onclick="saveAndNext()">Save & Next <i class="fas fa-chevron-right"></i></button>
+                        <button class="btn-submit-q" onclick="openSubmitConfirmation()">Submit Quiz</button>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!-- QUIZ RESULT VIEW -->
         <section id="view-result" class="view"></section>
@@ -495,12 +581,11 @@
                 <i class="fas fa-exclamation-triangle"></i>
                 <h2>Content Not Found</h2>
                 <p style="margin-bottom: 2rem; color: var(--text-secondary);">The subject, chapter, or topic you are looking for does not exist.</p>
-                <button class="btn btn-back" onclick="navigateSPA('view-home')" style="margin: 0 auto;">
+                <button class="btn btn-back" onclick="navigateSPA('view-home', true)" style="margin: 0 auto;">
                     <i class="fas fa-home"></i> Back to Home
                 </button>
             </div>
         </section>
-
     </main>
 
     <footer>
@@ -512,7 +597,7 @@
             <div class="footer-links">
                 <h3>Quick Links</h3>
                 <ul>
-                    <li><a href="#" onclick="navigateSPA('view-home')">Home</a></li>
+                    <li><a href="#" onclick="navigateSPA('view-home', true)">Home</a></li>
                     <li><a href="#" onclick="openModal('about-modal')">About Us</a></li>
                     <li><a href="#" onclick="openModal('sitemap-modal')">Sitemap</a></li>
                     <li><a href="#" onclick="openModal('privacy-modal')">Privacy Policy</a></li>
@@ -529,7 +614,6 @@
     </footer>
 
     <div id="modals-container">
-        <!-- Static Information Modals -->
         <div class="modal-overlay" id="about-modal" onclick="closeModalOutside(event, 'about-modal')"><div class="modal-content"><div class="modal-header"><h2>About Us</h2><button class="close-menu" onclick="closeModal('about-modal')"><i class="fas fa-times"></i></button></div><div class="modal-body"><p>StudySphere is an independent educational platform created to help MPSC Combined Group B & C aspirants practice objective questions topic-wise.</p><p><em>Disclaimer: StudySphere is an independent initiative and is not affiliated with the official Maharashtra Public Service Commission (MPSC).</em></p></div></div></div>
         <div class="modal-overlay" id="privacy-modal" onclick="closeModalOutside(event, 'privacy-modal')"><div class="modal-content"><div class="modal-header"><h2>Privacy Policy</h2><button class="close-menu" onclick="closeModal('privacy-modal')"><i class="fas fa-times"></i></button></div><div class="modal-body"><p>No mandatory account creation. Local browser storage is used solely to remember preferences and quiz reports locally on your device. We do not collect or sell personal data.</p></div></div></div>
         <div class="modal-overlay" id="terms-modal" onclick="closeModalOutside(event, 'terms-modal')"><div class="modal-content"><div class="modal-header"><h2>Terms of Service</h2><button class="close-menu" onclick="closeModal('terms-modal')"><i class="fas fa-times"></i></button></div><div class="modal-body"><ul><li><strong>Educational Purpose:</strong> Solely for practice.</li><li><strong>Verification:</strong> Users should independently verify answer keys. Questions may contain errors.</li><li><strong>No Affiliation:</strong> Not an official MPSC website.</li></ul></div></div></div>
@@ -537,7 +621,7 @@
         <div class="modal-overlay" id="contact-modal" onclick="closeModalOutside(event, 'contact-modal')"><div class="modal-content"><div class="modal-header"><h2>Contact</h2><button class="close-menu" onclick="closeModal('contact-modal')"><i class="fas fa-times"></i></button></div><div class="modal-body"><p>Please join our Telegram channel.</p><a href="https://t.me/+va0AGcqvCdQzNTI1" target="_blank" class="btn btn-telegram"><i class="fab fa-telegram-plane"></i> Join Telegram</a></div></div></div>
         <div class="modal-overlay" id="donate-modal" onclick="closeModalOutside(event, 'donate-modal')"><div class="modal-content"><div class="modal-header"><h2>Donate Us</h2><button class="close-menu" onclick="closeModal('donate-modal')"><i class="fas fa-times"></i></button></div><div class="modal-body"><div style="background:rgba(239,68,68,0.1);color:#ef4444;padding:1rem;border-radius:6px;margin-bottom:1rem;">Donation सुविधा सध्या केवळ mobile device वरून उपलब्ध आहे.</div><input type="number" id="custom-donation" class="form-control" placeholder="Enter amount (₹)" min="1"><button class="btn btn-donate" style="width:100%;" onclick="initiateUPIPayment()">Proceed to Pay via UPI</button></div></div></div>
 
-        <!-- Quiz Modals -->
+        <!-- Quiz Start Modal -->
         <div class="modal-overlay" id="quiz-start-modal" onclick="closeModalOutside(event, 'quiz-start-modal')">
             <div class="modal-content">
                 <div class="modal-header">
@@ -548,6 +632,7 @@
             </div>
         </div>
 
+        <!-- Quiz Submit Confirmation Modal -->
         <div class="modal-overlay" id="quiz-submit-modal" onclick="closeModalOutside(event, 'quiz-submit-modal')">
             <div class="modal-content">
                 <div class="modal-header">
@@ -558,6 +643,7 @@
             </div>
         </div>
 
+        <!-- Quiz Exit Warning Modal -->
         <div class="modal-overlay" id="quiz-exit-modal">
             <div class="modal-content">
                 <div class="modal-header">
@@ -567,13 +653,14 @@
                     <p style="color: #ef4444; font-weight:600;"><i class="fas fa-exclamation-circle"></i> Quiz is currently in progress.</p>
                     <p>Are you sure you want to leave? Your current progress will be lost.</p>
                     <div style="display:flex; gap:1rem; margin-top:2rem;">
-                        <button class="btn btn-outline" style="flex:1;" onclick="closeModal('quiz-exit-modal'); resumeQuizNavigation(false)">Stay in Quiz</button>
+                        <button class="btn btn-outline" style="flex:1;" onclick="closeModal('quiz-exit-modal'); resumeQuizNavigation(false)">Stay</button>
                         <button class="btn btn-submit-q" style="flex:1; background:#ef4444;" onclick="closeModal('quiz-exit-modal'); resumeQuizNavigation(true)">Leave Quiz</button>
                     </div>
                 </div>
             </div>
         </div>
 
+        <!-- Standalone Question Report Modal -->
         <div class="modal-overlay" id="report-modal" onclick="closeModalOutside(event, 'report-modal')">
             <div class="modal-content">
                 <div class="modal-header">
@@ -585,18 +672,37 @@
                     <label style="font-weight:600; margin-bottom:0.5rem; display:block;">Select Reason <span style="color:red">*</span></label>
                     <select id="report-reason" class="form-control">
                         <option value="">-- Select a reason --</option>
-                        <option value="Incorrect question">Incorrect question formulation</option>
-                        <option value="Incorrect option">Incorrect options</option>
-                        <option value="Incorrect correct answer">Wrong answer key</option>
-                        <option value="Typographical error">Typographical / Spelling error</option>
-                        <option value="Translation issue">Translation issue (Marathi/English)</option>
-                        <option value="Other">Other (Please specify)</option>
+                        <option value="Incorrect question">Incorrect question</option>
+                        <option value="Incorrect option">Incorrect option</option>
+                        <option value="Incorrect correct answer">Incorrect correct answer</option>
+                        <option value="Typographical error">Typographical error</option>
+                        <option value="Translation issue">Translation issue</option>
+                        <option value="Other">Other</option>
                     </select>
                     
-                    <label style="font-weight:600; margin-bottom:0.5rem; display:block; margin-top:1rem;">Additional Details</label>
+                    <label style="font-weight:600; margin-bottom:0.5rem; display:block; margin-top:1rem;">Additional Details <span id="details-star" style="color:red; display:none;">*</span></label>
                     <textarea id="report-details" class="form-control" placeholder="Provide extra context here..." maxlength="500"></textarea>
                     
                     <button class="btn btn-save" style="width:100%; margin-top:1rem;" onclick="submitQuestionReport()">Submit Report</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Report Success / Telegram Payload Modal -->
+        <div class="modal-overlay" id="report-success-modal" onclick="closeModalOutside(event, 'report-success-modal')">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Report Recorded</h2>
+                    <button class="close-menu" onclick="closeModal('report-success-modal')"><i class="fas fa-times"></i></button>
+                </div>
+                <div class="modal-body">
+                    <p style="color:#10b981; font-weight:600; margin-bottom:0.75rem;"><i class="fas fa-check-circle"></i> Thank you. Your report has been recorded.</p>
+                    <p style="font-size:0.9rem; margin-bottom:1rem;">Please send the generated report to us on Telegram so that we can review this question.</p>
+                    <textarea id="report-payload-box" class="form-control" readonly style="font-family:monospace; font-size:0.85rem; height:120px;"></textarea>
+                    <div style="display:flex; gap:1rem; margin-top:1rem;">
+                        <button class="btn btn-save" style="flex:1;" onclick="copyReportPayload()"><i class="fas fa-copy"></i> Copy Report</button>
+                        <a id="telegram-link-btn" href="https://t.me/+va0AGcqvCdQzNTI1" target="_blank" class="btn btn-telegram" style="flex:1;"><i class="fab fa-telegram-plane"></i> Open Telegram</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -712,7 +818,8 @@
             view: 'home',
             subjectCode: null,
             chapterCode: null,
-            topicCode: null
+            topicCode: null,
+            quizCode: null
         };
 
         let activeQuiz = {
@@ -725,10 +832,13 @@
             timerInterval: null,
             timeRemaining: 0,
             isTimed: false,
+            quizStartedAt: null,
+            quizDurationSeconds: 0,
             tabSwitches: 0
         };
 
         let pendingNavigation = null; 
+        let currentReportTarget = null;
 
         function initApp() {
             initFontSize();
@@ -736,12 +846,6 @@
             validateQuizData();
             
             window.addEventListener('popstate', handlePopState);
-            
-            if (!history.state) {
-                history.replaceState({ view: 'home' }, '', '');
-            }
-            handlePopState({ state: history.state });
-
             document.addEventListener("visibilitychange", handleVisibilityChange);
             
             window.addEventListener('beforeunload', function (e) {
@@ -750,6 +854,83 @@
                     e.returnValue = '';
                 }
             });
+
+            restorePersistedState();
+        }
+
+        function persistState() {
+            const stateToSave = {
+                appState,
+                activeQuizStatus: activeQuiz.status,
+                activeQuizCode: activeQuiz.quizData ? activeQuiz.quizData.quizCode : null,
+                answers: activeQuiz.answers,
+                visited: Array.from(activeQuiz.visited),
+                review: Array.from(activeQuiz.review),
+                currentIndex: activeQuiz.currentIndex,
+                isTimed: activeQuiz.isTimed,
+                quizStartedAt: activeQuiz.quizStartedAt,
+                quizDurationSeconds: activeQuiz.quizDurationSeconds,
+                tabSwitches: activeQuiz.tabSwitches
+            };
+            localStorage.setItem('studysphere_persisted_state', JSON.stringify(stateToSave));
+        }
+
+        function restorePersistedState() {
+            const saved = localStorage.getItem('studysphere_persisted_state');
+            if (!saved) {
+                if (!history.state) history.replaceState({ view: 'home' }, '', '');
+                handlePopState({ state: { view: 'home' } });
+                return;
+            }
+
+            try {
+                const data = JSON.parse(saved);
+                appState = data.appState || { view: 'home' };
+
+                if (data.activeQuizStatus === 'active' && data.activeQuizCode) {
+                    const quiz = window.STUDYSPHERE_QUIZZES.find(q => q.quizCode === data.activeQuizCode);
+                    if (quiz) {
+                        activeQuiz.quizData = quiz;
+                        activeQuiz.status = 'active';
+                        activeQuiz.answers = data.answers || {};
+                        activeQuiz.visited = new Set(data.visited || []);
+                        activeQuiz.review = new Set(data.review || []);
+                        activeQuiz.currentIndex = data.currentIndex || 0;
+                        activeQuiz.isTimed = data.isTimed;
+                        activeQuiz.quizStartedAt = data.quizStartedAt;
+                        activeQuiz.quizDurationSeconds = data.quizDurationSeconds;
+                        activeQuiz.tabSwitches = data.tabSwitches || 0;
+
+                        if (activeQuiz.isTimed && activeQuiz.quizStartedAt) {
+                            const elapsed = Math.floor((Date.now() - activeQuiz.quizStartedAt) / 1000);
+                            activeQuiz.timeRemaining = activeQuiz.quizDurationSeconds - elapsed;
+                            if (activeQuiz.timeRemaining <= 0) {
+                                forceSubmitQuiz();
+                                return;
+                            }
+                        }
+
+                        launchQuizInterfaceEngine();
+                        return;
+                    }
+                } else if (data.activeQuizStatus === 'finished' && data.activeQuizCode) {
+                    const quiz = window.STUDYSPHERE_QUIZZES.find(q => q.quizCode === data.activeQuizCode);
+                    if (quiz) {
+                        activeQuiz.quizData = quiz;
+                        activeQuiz.status = 'finished';
+                        activeQuiz.answers = data.answers || {};
+                        renderResultScreen();
+                        return;
+                    }
+                }
+
+                if (appState.view === 'subject' && appState.subjectCode) renderSubject(appState.subjectCode, false);
+                else if (appState.view === 'topic' && appState.topicCode) renderTopic(appState.topicCode, appState.subjectCode, appState.chapterCode, false);
+                else renderHome(false);
+            } catch (e) {
+                console.error("Failed to restore state", e);
+                renderHome(false);
+            }
         }
 
         function handlePopState(event) {
@@ -774,8 +955,10 @@
             }
 
             document.querySelectorAll('.view').forEach(v => {
-                v.classList.remove('active');
-                v.style.display = 'none';
+                if(v.id !== 'view-quiz') {
+                    v.classList.remove('active');
+                    v.style.display = 'none';
+                }
             });
             
             const target = document.getElementById(targetViewId);
@@ -792,6 +975,7 @@
             if (pushToHistory && targetViewId === 'view-home') {
                 appState = { view: 'home', subjectCode: null, chapterCode: null, topicCode: null };
                 history.pushState(appState, '', '');
+                persistState();
             }
         }
 
@@ -808,6 +992,7 @@
             if (pushToHistory) {
                 appState = { view: 'home', subjectCode: null, chapterCode: null, topicCode: null };
                 history.pushState(appState, '', '');
+                persistState();
             } else {
                 appState.view = 'home';
             }
@@ -847,6 +1032,7 @@
             if (pushToHistory) {
                 appState = { view: 'subject', subjectCode: subjectCode, chapterCode: null, topicCode: null };
                 history.pushState(appState, '', '');
+                persistState();
             } else {
                 appState.view = 'subject'; appState.subjectCode = subjectCode;
             }
@@ -914,12 +1100,12 @@
             if (pushToHistory) {
                 appState = { view: 'topic', subjectCode: subjectCode, chapterCode: chapterCode, topicCode: topicCode };
                 history.pushState(appState, '', '');
+                persistState();
             } else {
                 appState.view = 'topic'; appState.topicCode = topicCode;
             }
 
             let quizCardsHTML = '';
-            
             if (typeof window.STUDYSPHERE_QUIZZES !== 'undefined') {
                 const seenQuizCodes = new Set();
                 const matchedQuizzes = window.STUDYSPHERE_QUIZZES.filter(q => {
@@ -1042,10 +1228,10 @@
             }
 
             closeModal('quiz-start-modal');
-            startQuizEngine(quizCode, timeLimit);
+            initNewQuizSession(quizCode, timeLimit);
         }
 
-        function startQuizEngine(quizCode, timeLimitInMinutes) {
+        function initNewQuizSession(quizCode, timeLimitInMinutes) {
             const quiz = window.STUDYSPHERE_QUIZZES.find(q => q.quizCode === quizCode);
             if (!quiz) return;
 
@@ -1059,65 +1245,52 @@
                 timerInterval: null,
                 timeRemaining: timeLimitInMinutes ? timeLimitInMinutes * 60 : 0,
                 isTimed: !!timeLimitInMinutes,
+                quizStartedAt: timeLimitInMinutes ? Date.now() : null,
+                quizDurationSeconds: timeLimitInMinutes ? timeLimitInMinutes * 60 : 0,
                 tabSwitches: 0
             };
 
-            activeQuiz.visited.add(quiz.questions[0].questionId);
+            if (quiz.questions.length > 0) {
+                activeQuiz.visited.add(quiz.questions[0].questionId);
+            }
 
+            persistState();
+            launchQuizInterfaceEngine();
+        }
+
+        function launchQuizInterfaceEngine() {
+            const quiz = activeQuiz.quizData;
+            if (!quiz) return;
+
+            document.getElementById('exam-quiz-title').innerText = quiz.titleMr;
+            
+            const timerDisplay = document.getElementById('q-timer-display');
+            if (activeQuiz.isTimed) {
+                timerDisplay.style.display = 'flex';
+                startTimerEngine();
+            } else {
+                timerDisplay.style.display = 'none';
+            }
+
+            buildPaletteGrid();
+            renderQuizQuestion(activeQuiz.currentIndex);
+            
+            document.querySelectorAll('.view').forEach(v => {
+                v.classList.remove('active');
+                v.style.display = 'none';
+            });
+            const qView = document.getElementById('view-quiz');
+            qView.style.display = 'flex';
+            qView.classList.add('active');
+            window.scrollTo(0, 0);
+        }
+
+        function buildPaletteGrid() {
             let paletteGrid = '';
-            quiz.questions.forEach((q, i) => {
+            activeQuiz.quizData.questions.forEach((q, i) => {
                 paletteGrid += `<button id="p-btn-${i}" class="p-btn s-unvisited" onclick="goToQuestion(${i})">${i + 1}</button>`;
             });
-
-            document.getElementById('view-quiz').innerHTML = `
-                <div class="quiz-layout anti-cheat-active">
-                    <div class="quiz-main-card">
-                        <div class="quiz-top-bar">
-                            <div style="display:flex; align-items:center; gap:1rem;">
-                                <span class="q-number-badge" id="q-num-display">Q 1 of ${quiz.questions.length}</span>
-                            </div>
-                            <div id="q-timer-display" class="q-timer" style="display: ${activeQuiz.isTimed ? 'flex' : 'none'}">
-                                <i class="fas fa-stopwatch"></i> <span id="q-time-text">--:--</span>
-                            </div>
-                        </div>
-                        
-                        <div id="q-render-area"></div>
-                        
-                        <div class="report-link" onclick="openReportModal()">
-                            <i class="fas fa-flag"></i> Report This Question
-                        </div>
-                        
-                        <div class="quiz-controls">
-                            <div class="ctrl-group">
-                                <button class="btn btn-outline" onclick="clearResponse()">Clear Response</button>
-                                <button class="btn btn-outline btn-review" onclick="toggleMarkForReview()">Mark for Review</button>
-                            </div>
-                            <div class="ctrl-group">
-                                <button class="btn btn-save" onclick="saveAndNext()">Save & Next <i class="fas fa-chevron-right"></i></button>
-                                <button class="btn btn-submit-q" onclick="openSubmitConfirmation()">Submit Quiz</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="quiz-sidebar">
-                        <div class="palette-header">Question Palette</div>
-                        <div class="palette-grid">${paletteGrid}</div>
-                        <div class="palette-legend">
-                            <div class="l-item"><div class="l-box s-answered"></div> Answered</div>
-                            <div class="l-item"><div class="l-box s-visited"></div> Not Answered</div>
-                            <div class="l-item"><div class="l-box s-unvisited"></div> Not Visited</div>
-                            <div class="l-item"><div class="l-box s-review"></div> Marked for Review</div>
-                            <div class="l-item"><div class="l-box s-review-ans"></div> Answered & Marked</div>
-                        </div>
-                    </div>
-                </div>
-            `;
-
-            navigateSPA('view-quiz', false, true); 
-            
-            attachAntiCheat();
-            if (activeQuiz.isTimed) startTimer();
-            renderQuizQuestion(0);
+            document.getElementById('exam-palette-grid').innerHTML = paletteGrid;
         }
 
         function renderQuizQuestion(index) {
@@ -1152,14 +1325,19 @@
             `;
 
             updateQuestionPalette();
+            persistState();
         }
 
         function handleOptionSelect(optKey) {
             const qId = activeQuiz.quizData.questions[activeQuiz.currentIndex].questionId;
             activeQuiz.answers[qId] = optKey;
             
-            ['A', 'B', 'C', 'D'].forEach(k => document.getElementById(`opt-${k}`).classList.remove('selected'));
-            document.getElementById(`opt-${optKey}`).classList.add('selected');
+            ['A', 'B', 'C', 'D'].forEach(k => {
+                const el = document.getElementById(`opt-${k}`);
+                if(el) el.classList.remove('selected');
+            });
+            const target = document.getElementById(`opt-${optKey}`);
+            if(target) target.classList.add('selected');
             
             updateQuestionPalette();
         }
@@ -1170,7 +1348,7 @@
             } else {
                 const btn = document.querySelector('.btn-save');
                 const originalText = btn.innerHTML;
-                btn.innerHTML = 'Last Question Reached';
+                btn.innerHTML = 'Last Question';
                 setTimeout(() => btn.innerHTML = originalText, 1500);
             }
         }
@@ -1179,7 +1357,10 @@
             const qId = activeQuiz.quizData.questions[activeQuiz.currentIndex].questionId;
             delete activeQuiz.answers[qId];
             
-            ['A', 'B', 'C', 'D'].forEach(k => document.getElementById(`opt-${k}`).classList.remove('selected'));
+            ['A', 'B', 'C', 'D'].forEach(k => {
+                const el = document.getElementById(`opt-${k}`);
+                if(el) el.classList.remove('selected');
+            });
             updateQuestionPalette();
         }
 
@@ -1202,7 +1383,6 @@
                 if (!btn) return;
                 
                 btn.className = 'p-btn';
-                
                 const qId = q.questionId;
                 const isVisited = activeQuiz.visited.has(qId);
                 const isAnswered = !!activeQuiz.answers[qId];
@@ -1222,13 +1402,19 @@
             });
         }
 
-        function startTimer() {
+        function startTimerEngine() {
+            if (activeQuiz.timerInterval) clearInterval(activeQuiz.timerInterval);
+            
             updateTimerDisplay();
             activeQuiz.timerInterval = setInterval(() => {
-                activeQuiz.timeRemaining--;
+                const elapsed = Math.floor((Date.now() - activeQuiz.quizStartedAt) / 1000);
+                activeQuiz.timeRemaining = activeQuiz.quizDurationSeconds - elapsed;
+                
                 updateTimerDisplay();
+                
                 if (activeQuiz.timeRemaining <= 0) {
                     clearInterval(activeQuiz.timerInterval);
+                    activeQuiz.timeRemaining = 0;
                     alert("Time is over. Your quiz has been submitted automatically.");
                     forceSubmitQuiz();
                 }
@@ -1237,9 +1423,13 @@
 
         function updateTimerDisplay() {
             if (!activeQuiz.isTimed) return;
-            const m = Math.floor(activeQuiz.timeRemaining / 60);
-            const s = activeQuiz.timeRemaining % 60;
-            document.getElementById('q-time-text').innerText = `${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`;
+            const rem = Math.max(0, activeQuiz.timeRemaining);
+            const m = Math.floor(rem / 60);
+            const s = rem % 60;
+            const timeTextEl = document.getElementById('q-time-text');
+            if (timeTextEl) {
+                timeTextEl.innerText = `${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`;
+            }
         }
 
         function openSubmitConfirmation() {
@@ -1257,7 +1447,7 @@
                 <p style="margin-bottom:1.5rem;">Are you sure you want to submit the quiz?</p>
                 <div style="background:var(--surface-hover); padding:1rem; border-radius:6px; border:1px solid var(--border-color); margin-bottom:1.5rem; display:grid; gap:0.5rem; font-size:0.95rem;">
                     <div style="display:flex; justify-content:space-between;"><span>Answered:</span> <strong>${answered}</strong></div>
-                    <div style="display:flex; justify-content:space-between;"><span>Not Answered:</span> <strong>${notAnswered}</strong></div>
+                    <div style="display:flex; justify-content:space-between;"><span>Not Answered / Skipped:</span> <strong>${notAnswered}</strong></div>
                     <div style="display:flex; justify-content:space-between;"><span>Marked for Review:</span> <strong>${review}</strong></div>
                 </div>
                 <div style="display:flex; gap:1rem;">
@@ -1272,7 +1462,7 @@
             closeModal('quiz-submit-modal');
             if (activeQuiz.timerInterval) clearInterval(activeQuiz.timerInterval);
             activeQuiz.status = 'finished';
-            detachAntiCheat();
+            persistState();
             renderResultScreen();
         }
 
@@ -1330,48 +1520,66 @@
                 `;
             });
 
-            const totalMarksAttempted = correctCount * marksPerQ;
-            const penalty = wrongCount * negMarks;
-            const finalScore = totalMarksAttempted - penalty;
+            const correctMarks = correctCount * marksPerQ;
+            const negativeDeduction = wrongCount * negMarks;
+            const finalScore = correctMarks - negativeDeduction;
             const maxScore = totalQ * marksPerQ;
             const attempted = correctCount + wrongCount;
             const accuracy = attempted > 0 ? ((correctCount / attempted) * 100).toFixed(2) : 0;
+            const percentage = maxScore > 0 ? ((finalScore / maxScore) * 100).toFixed(2) : 0;
 
             document.getElementById('view-result').innerHTML = `
-                <div class="back-header"><button class="btn-back" onclick="retakeQuiz()"><i class="fas fa-redo"></i> Retake Quiz</button> <button class="btn-back" style="margin-left:auto;" onclick="returnToTopicFromQuiz()">Back to Topic <i class="fas fa-arrow-right"></i></button></div>
-                
-                <div class="scorecard">
-                    <h2>Quiz Result</h2>
-                    <p style="color:var(--text-secondary);">${quiz.titleMr}</p>
-                    
-                    <div class="scorecard-grid">
-                        <div class="stat-box"><div class="stat-value">${totalQ}</div><div class="stat-label">Total Qs</div></div>
-                        <div class="stat-box"><div class="stat-value" style="color:#10b981;">${correctCount}</div><div class="stat-label">Correct</div></div>
-                        <div class="stat-box"><div class="stat-value" style="color:#ef4444;">${wrongCount}</div><div class="stat-label">Wrong</div></div>
-                        <div class="stat-box"><div class="stat-value" style="color:#64748b;">${skippedCount}</div><div class="stat-label">Skipped</div></div>
-                        <div class="stat-box highlight"><div class="stat-value">${finalScore.toFixed(2)} / ${maxScore}</div><div class="stat-label">Final Score</div></div>
-                        <div class="stat-box"><div class="stat-value" style="color:var(--primary-color);">${accuracy}%</div><div class="stat-label">Accuracy</div></div>
-                    </div>
-                    ${activeQuiz.tabSwitches > 0 ? `<div style="margin-top:1rem; color:#ef4444; font-size:0.85rem;"><i class="fas fa-exclamation-triangle"></i> Note: You left the quiz tab ${activeQuiz.tabSwitches} time(s).</div>` : ''}
+                <div class="back-header" style="max-width:1200px; margin:0 auto 1.5rem; width:100%; padding:0 1rem;">
+                    <button class="btn-back" onclick="retakeQuiz()"><i class="fas fa-redo"></i> Retake Quiz</button> 
+                    <button class="btn-back" onclick="returnToTopicFromQuiz()"><i class="fas fa-arrow-left"></i> Back to Topic</button>
+                    <button class="btn-back" style="margin-left:auto;" onclick="renderHome(true)"><i class="fas fa-home"></i> Home</button>
                 </div>
-
-                <div class="section-title">Question Analysis</div>
-                ${qaHTML}
                 
-                <div style="text-align:center; margin-top:2rem;">
-                    <button class="btn btn-save" onclick="window.scrollTo(0,0)"><i class="fas fa-arrow-up"></i> Back to Top</button>
+                <div style="max-width:1200px; margin:0 auto; width:100%; padding:0 1rem;">
+                    <div class="scorecard">
+                        <h2>Quiz Result</h2>
+                        <p style="color:var(--text-secondary);">${quiz.titleMr}</p>
+                        
+                        <div class="scorecard-grid">
+                            <div class="stat-box"><div class="stat-value">${totalQ}</div><div class="stat-label">Total Qs</div></div>
+                            <div class="stat-box"><div class="stat-value" style="color:#10b981;">${correctCount}</div><div class="stat-label">Correct</div></div>
+                            <div class="stat-box"><div class="stat-value" style="color:#ef4444;">${wrongCount}</div><div class="stat-label">Wrong</div></div>
+                            <div class="stat-box"><div class="stat-value" style="color:#64748b;">${skippedCount}</div><div class="stat-label">Skipped</div></div>
+                            <div class="stat-box"><div class="stat-value">${correctMarks.toFixed(2)}</div><div class="stat-label">Correct Marks</div></div>
+                            <div class="stat-box"><div class="stat-value" style="color:#ef4444;">-${negativeDeduction.toFixed(2)}</div><div class="stat-label">Negative Marks</div></div>
+                            <div class="stat-box highlight"><div class="stat-value">${finalScore.toFixed(2)} / ${maxScore}</div><div class="stat-label">Final Score</div></div>
+                            <div class="stat-box"><div class="stat-value" style="color:var(--primary-color);">${accuracy}%</div><div class="stat-label">Accuracy</div></div>
+                            <div class="stat-box"><div class="stat-value" style="color:var(--primary-color);">${percentage}%</div><div class="stat-label">Percentage</div></div>
+                        </div>
+                        ${activeQuiz.tabSwitches > 0 ? `<div style="margin-top:1rem; color:#ef4444; font-size:0.85rem;"><i class="fas fa-exclamation-triangle"></i> Note: You left the quiz tab ${activeQuiz.tabSwitches} time(s).</div>` : ''}
+                    </div>
+
+                    <div class="section-title">Question Analysis</div>
+                    ${qaHTML}
+                    
+                    <div style="text-align:center; margin:2rem 0;">
+                        <button class="btn btn-save" onclick="window.scrollTo(0,0)"><i class="fas fa-arrow-up"></i> Back to Top</button>
+                    </div>
                 </div>
             `;
 
-            navigateSPA('view-result', false, true);
+            document.querySelectorAll('.view').forEach(v => {
+                v.classList.remove('active');
+                v.style.display = 'none';
+            });
+            const rView = document.getElementById('view-result');
+            rView.style.display = 'block';
+            rView.classList.add('active');
+            window.scrollTo(0, 0);
         }
 
         function retakeQuiz() {
-            startQuizEngine(activeQuiz.quizData.quizCode, activeQuiz.isTimed ? activeQuiz.quizData.timeLimit : null);
+            initNewQuizSession(activeQuiz.quizData.quizCode, activeQuiz.isTimed ? Math.floor(activeQuiz.quizDurationSeconds / 60) : null);
         }
 
         function returnToTopicFromQuiz() {
             activeQuiz.status = 'inactive';
+            localStorage.removeItem('studysphere_persisted_state');
             renderTopic(activeQuiz.quizData.topicCode, activeQuiz.quizData.subjectCode, activeQuiz.quizData.chapterCode, true);
         }
 
@@ -1379,7 +1587,7 @@
             if (leave) {
                 if (activeQuiz.timerInterval) clearInterval(activeQuiz.timerInterval);
                 activeQuiz.status = 'inactive';
-                detachAntiCheat();
+                localStorage.removeItem('studysphere_persisted_state');
                 
                 if (pendingNavigation.view === 'home') renderHome();
                 else if (pendingNavigation.view === 'subject') renderSubject(pendingNavigation.subjectCode);
@@ -1390,32 +1598,29 @@
         function handleVisibilityChange() {
             if (document.hidden && activeQuiz.status === 'active') {
                 activeQuiz.tabSwitches++;
+                persistState();
                 alert("Warning: You left the quiz tab! This is recorded as an irregular activity.");
             }
         }
 
-        function blockAction(e) { e.preventDefault(); }
-
-        function attachAntiCheat() {
-            const quizNode = document.getElementById('view-quiz');
-            quizNode.addEventListener('contextmenu', blockAction);
-            quizNode.addEventListener('copy', blockAction);
-            quizNode.addEventListener('paste', blockAction);
-        }
-
-        function detachAntiCheat() {
-            const quizNode = document.getElementById('view-quiz');
-            quizNode.removeEventListener('contextmenu', blockAction);
-            quizNode.removeEventListener('copy', blockAction);
-            quizNode.removeEventListener('paste', blockAction);
-        }
-
         function openReportModal() {
-            if(!activeQuiz.quizData) return;
+            if (!activeQuiz.quizData) return;
             const q = activeQuiz.quizData.questions[activeQuiz.currentIndex];
+            currentReportTarget = q;
+            
             document.getElementById('report-q-meta').innerText = `Quiz: ${activeQuiz.quizData.quizCode} | Q.ID: ${q.questionId}`;
             document.getElementById('report-reason').value = '';
             document.getElementById('report-details').value = '';
+            document.getElementById('details-star').style.display = 'none';
+            
+            document.getElementById('report-reason').onchange = function() {
+                if (this.value === 'Other') {
+                    document.getElementById('details-star').style.display = 'inline';
+                } else {
+                    document.getElementById('details-star').style.display = 'none';
+                }
+            };
+            
             openModal('report-modal');
         }
 
@@ -1426,15 +1631,22 @@
             if (!reason) { alert("Please select a reason."); return; }
             if (reason === 'Other' && !details) { alert("Please provide details for 'Other' reason."); return; }
 
-            const qId = activeQuiz.quizData.questions[activeQuiz.currentIndex].questionId;
+            const q = currentReportTarget || activeQuiz.quizData.questions[activeQuiz.currentIndex];
             
             const report = {
                 reportId: 'REP-' + Date.now(),
+                timestamp: new Date().toISOString(),
+                questionId: q.questionId,
                 quizCode: activeQuiz.quizData.quizCode,
-                questionId: qId,
+                subjectCode: activeQuiz.quizData.subjectCode,
+                chapterCode: activeQuiz.quizData.chapterCode,
+                topicCode: activeQuiz.quizData.topicCode,
+                questionMr: q.questionMr,
+                questionEn: q.questionEn,
+                options: q.options,
+                correctAnswer: q.correctAnswer,
                 reason: reason,
-                details: details,
-                timestamp: new Date().toISOString()
+                details: details
             };
 
             let reports = JSON.parse(localStorage.getItem('studysphere_question_reports') || '[]');
@@ -1442,9 +1654,27 @@
             localStorage.setItem('studysphere_question_reports', JSON.stringify(reports));
 
             closeModal('report-modal');
-            alert("Thank you. Your report has been recorded locally.");
+
+            const payloadText = `StudySphere — Question Report\n` +
+                `Question ID: ${report.questionId}\n` +
+                `Quiz Code: ${report.quizCode}\n` +
+                `Subject: ${report.subjectCode} | Chapter: ${report.chapterCode} | Topic: ${report.topicCode}\n` +
+                `Reason: ${report.reason}\n` +
+                `Details: ${report.details || 'None'}\n` +
+                `Question (MR): ${report.questionMr}\n` +
+                `Options: A. ${report.options.A.mr} | B. ${report.options.B.mr} | C. ${report.options.C.mr} | D. ${report.options.D.mr}\n` +
+                `Correct Answer Key: ${report.correctAnswer}`;
+
+            document.getElementById('report-payload-box').value = payloadText;
+            openModal('report-success-modal');
         }
 
+        function copyReportPayload() {
+            const box = document.getElementById('report-payload-box');
+            box.select();
+            document.execCommand('copy');
+            alert("Report payload copied to clipboard successfully!");
+        }
 
         let currentFontSize = 16;
         function initFontSize() {
@@ -1520,9 +1750,8 @@
                         if (!topic) console.warn(`Invalid topicCode '${quiz.topicCode}' in ${quiz.quizCode}`);
                     }
                 }
-                if(!Array.isArray(quiz.questions)) console.warn(`Questions missing in ${quiz.quizCode}`);
             });
-            console.log(`Validated ${window.STUDYSPHERE_QUIZZES.length} loaded quizzes.`);
+            console.log(`Successfully validated ${window.STUDYSPHERE_QUIZZES.length} loaded quizzes.`);
         }
 
         window.onload = initApp;
