@@ -4,7 +4,7 @@
 // correctAnswer MUST contain ONLY "A", "B", "C", or "D".
 // =================================================================
 
-const STUDYSPHERE_QUIZZES = [
+window.STUDYSPHERE_QUIZZES = [
     {
         quizCode: "GEO-01-T01-QZ01",
         subjectCode: "GEO",
