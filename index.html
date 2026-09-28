@@ -1,1502 +1,1769 @@
 <!DOCTYPE html>
-<html lang="mr" data-theme="light" class="text-base transition-all duration-300">
+<html lang="mr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>StudySphere - Final | MPSC Group B & C Preparation</title>
-    <meta name="description" content="Bilingual MCQ Practice Platform for MPSC Combined Group B and C Examination.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudySphere | MPSC Group B & C MCQ Practice</title>
     
+    <!-- Fonts: Noto Sans & Noto Sans Devanagari -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700&family=Noto+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700&family=Noto+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     
-    <!-- Tailwind & Icons -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://unpkg.com/@phosphor-icons/web"></script>
-    <!-- Confetti for Result Celebrations -->
-    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
-
-    <script>
-        tailwind.config = {
-            darkMode: ['class', '[data-theme="dark"]'],
-            theme: {
-                extend: {
-                    fontFamily: {
-                        sans: ['"Noto Sans"', '"Noto Sans Devanagari"', 'sans-serif'],
-                    },
-                    colors: {
-                        brand: { 50: '#eff6ff', 100: '#dbeafe', 500: '#3b82f6', 600: '#2563eb', 700: '#1d4ed8', 900: '#1e3a8a' },
-                        dark: { bg: '#0f172a', surface: '#1e293b', border: '#334155' }
-                    },
-                    animation: {
-                        'fade-in-up': 'fadeInUp 0.5s ease-out forwards',
-                        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
-                    },
-                    keyframes: {
-                        fadeInUp: {
-                            '0%': { opacity: '0', transform: 'translateY(15px)' },
-                            '100%': { opacity: '1', transform: 'translateY(0)' },
-                        }
-                    }
-                }
-            }
-        }
-    </script>
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <style>
         :root {
-            --bg-color: #f8fafc;
+            /* Light Theme Variables */
+            --bg-color: #f4f6f8;
             --surface-color: #ffffff;
-            --text-primary: #0f172a;
-            --text-secondary: #475569;
+            --surface-hover: #f8fafc;
+            --text-primary: #1a1e23;
+            --text-secondary: #4a5568;
             --border-color: #e2e8f0;
+            --primary-color: #2563eb;
+            --primary-hover: #1d4ed8;
+            --header-bg: #ffffff;
+            --footer-bg: #1e293b;
+            --footer-text: #f8fafc;
+            --card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            --base-font-size: 16px;
         }
 
         [data-theme="dark"] {
+            /* Dark Theme Variables */
             --bg-color: #0f172a;
             --surface-color: #1e293b;
-            --text-primary: #f1f5f9;
+            --surface-hover: #334155;
+            --text-primary: #f8fafc;
             --text-secondary: #94a3b8;
             --border-color: #334155;
+            --primary-color: #3b82f6;
+            --primary-hover: #60a5fa;
+            --header-bg: #1e293b;
+            --footer-bg: #0b1120;
+            --footer-text: #f8fafc;
+            --card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Noto Sans', 'Noto Sans Devanagari', sans-serif;
         }
 
         html {
-            background-color: var(--bg-color);
-            color: var(--text-primary);
+            font-size: var(--base-font-size);
             scroll-behavior: smooth;
         }
 
         body {
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            transition: background-color 0.3s, color 0.3s;
+            line-height: 1.6;
             display: flex;
             flex-direction: column;
             min-height: 100vh;
-            margin: 0;
             overflow-x: hidden;
         }
 
-        .theme-bg { background-color: var(--bg-color); }
-        .theme-surface { background-color: var(--surface-color); }
-        .theme-text { color: var(--text-primary); }
-        .theme-text-sec { color: var(--text-secondary); }
-        .theme-border { border-color: var(--border-color); }
-
-        /* Font Scaling */
-        html.font-small { font-size: 14px; }
-        html.font-default { font-size: 16px; }
-        html.font-large { font-size: 18px; }
-
-        /* Custom Scrollbar */
-        ::-webkit-scrollbar { width: 6px; }
-        ::-webkit-scrollbar-track { background: var(--bg-color); }
-        ::-webkit-scrollbar-thumb { background: var(--border-color); border-radius: 4px; }
-        ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
-
-        /* Page Transitions */
-        .fade-in { animation: fadeIn 0.3s ease-in-out forwards; }
-        @keyframes fadeIn { from { opacity: 0; transform: translateY(5px); } to { opacity: 1; transform: translateY(0); } }
-
-        /* Shimmer Skeleton Loader */
-        .skeleton {
-            background: linear-gradient(90deg, var(--border-color) 25%, var(--bg-color) 50%, var(--border-color) 75%);
-            background-size: 200% 100%;
-            animation: shimmer 1.5s infinite;
+        #utility-bar {
+            background-color: var(--primary-color);
+            color: #ffffff;
+            padding: 0.25rem 1rem;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 1rem;
+            font-size: 0.875rem;
         }
-        @keyframes shimmer { 0% { background-position: -200% 0; } 100% { background-position: 200% 0; } }
 
-        input[type="radio"] { accent-color: #2563eb; width: 1.25rem; height: 1.25rem; cursor: pointer; }
+        .utility-btn {
+            background: none;
+            border: none;
+            color: #ffffff;
+            cursor: pointer;
+            font-weight: 600;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            transition: background 0.2s;
+            display: flex;
+            align-items: center;
+            gap: 0.25rem;
+        }
+
+        .utility-btn:hover {
+            background: rgba(255,255,255,0.2);
+        }
+
+        header {
+            background-color: var(--header-bg);
+            border-bottom: 1px solid var(--border-color);
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            transition: background-color 0.3s, border-color 0.3s;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .logo-icon {
+            font-size: 2rem;
+            color: var(--primary-color);
+        }
+
+        .brand-text h1 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            line-height: 1.2;
+            color: var(--text-primary);
+        }
+
+        .brand-text p {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            font-weight: 500;
+        }
+
+        .menu-toggle {
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--text-primary);
+            cursor: pointer;
+            padding: 0.5rem;
+        }
+
+        #sidebar {
+            position: fixed;
+            top: 0;
+            left: -100%;
+            width: 300px;
+            max-width: 80%;
+            height: 100vh;
+            background-color: var(--surface-color);
+            box-shadow: 2px 0 8px rgba(0,0,0,0.2);
+            z-index: 1000;
+            transition: left 0.3s ease-in-out;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #sidebar.open {
+            left: 0;
+        }
+
+        .sidebar-header {
+            padding: 1.5rem 1rem;
+            border-bottom: 1px solid var(--border-color);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .close-menu {
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--text-primary);
+            cursor: pointer;
+        }
+
+        .sidebar-nav {
+            padding: 1rem 0;
+            flex-grow: 1;
+            overflow-y: auto;
+        }
+
+        .sidebar-nav a {
+            display: block;
+            padding: 1rem 1.5rem;
+            color: var(--text-primary);
+            text-decoration: none;
+            font-weight: 500;
+            border-left: 4px solid transparent;
+            transition: background 0.2s, border-color 0.2s;
+        }
+
+        .sidebar-nav a:hover {
+            background-color: rgba(0,0,0,0.05);
+            border-left-color: var(--primary-color);
+        }
         
-        .hero-gradient {
-            background: linear-gradient(135deg, rgba(37, 99, 235, 0.1) 0%, rgba(37, 99, 235, 0) 100%);
+        [data-theme="dark"] .sidebar-nav a:hover {
+            background-color: rgba(255,255,255,0.05);
         }
+
+        .sidebar-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.5);
+            z-index: 999;
+            display: none;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .sidebar-overlay.active {
+            display: block;
+            opacity: 1;
+        }
+
+        main {
+            flex-grow: 1;
+            padding: 2rem 1rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        .view {
+            display: none;
+            animation: fadeIn 0.4s ease;
+        }
+
+        .view.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .intro-box {
+            background-color: var(--surface-color);
+            border: 1px solid var(--border-color);
+            border-left: 5px solid var(--primary-color);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            box-shadow: var(--card-shadow);
+        }
+
+        .intro-box p {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+        }
+
+        .section-title {
+            margin-bottom: 1rem;
+            font-size: 1.25rem;
+            color: var(--text-primary);
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 0.5rem;
+            margin-top: 2rem;
+        }
+
+        .subjects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.25rem;
+            margin-bottom: 2rem;
+        }
+
+        .subject-card {
+            background-color: var(--surface-color);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1.5rem;
+            cursor: pointer;
+            box-shadow: var(--card-shadow);
+            transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: relative;
+        }
+
+        .subject-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            border-color: var(--primary-color);
+        }
+
+        .subject-badge {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            font-size: 0.75rem;
+            font-weight: 600;
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+        }
+
+        .badge-common {
+            background-color: rgba(16, 185, 129, 0.1);
+            color: #10b981;
+            border: 1px solid rgba(16, 185, 129, 0.2);
+        }
+
+        .badge-mains {
+            background-color: rgba(245, 158, 11, 0.1);
+            color: #d97706;
+            border: 1px solid rgba(245, 158, 11, 0.2);
+        }
+
+        .subject-info h3 {
+            font-size: 1.25rem;
+            color: var(--text-primary);
+            margin-bottom: 0.25rem;
+            margin-top: 1.5rem;
+            font-family: 'Noto Sans Devanagari', sans-serif;
+        }
+
+        .subject-info span {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+        
+        .subject-footer {
+            margin-top: 1.5rem;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .subject-arrow {
+            color: var(--primary-color);
+            font-size: 1.25rem;
+        }
+
+        .back-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .btn-back {
+            background: none;
+            border: 1px solid var(--border-color);
+            color: var(--text-primary);
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.2s;
+        }
+
+        .btn-back:hover {
+            background-color: var(--surface-hover);
+            border-color: var(--primary-color);
+        }
+
+        .view-header h2 {
+            font-size: 1.5rem;
+            color: var(--text-primary);
+            font-family: 'Noto Sans Devanagari', sans-serif;
+        }
+        
+        .view-header p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+
+        .chapter-container {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .chapter-card {
+            background-color: var(--surface-color);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+        }
+
+        .chapter-header {
+            padding: 1.25rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            background-color: var(--surface-color);
+            transition: background-color 0.2s;
+        }
+
+        .chapter-header:hover {
+            background-color: var(--surface-hover);
+        }
+
+        .chapter-title-group {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .chapter-number {
+            background-color: rgba(37, 99, 235, 0.1);
+            color: var(--primary-color);
+            font-weight: 700;
+            width: 36px;
+            height: 36px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 6px;
+            font-size: 0.9rem;
+        }
+
+        .chapter-names h4 {
+            font-size: 1.1rem;
+            color: var(--text-primary);
+            font-family: 'Noto Sans Devanagari', sans-serif;
+        }
+
+        .chapter-names span {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+
+        .chapter-toggle-icon {
+            color: var(--text-secondary);
+            transition: transform 0.3s;
+        }
+
+        .chapter-card.open .chapter-toggle-icon {
+            transform: rotate(180deg);
+        }
+
+        .topic-list {
+            display: none;
+            border-top: 1px solid var(--border-color);
+            background-color: var(--bg-color);
+            padding: 0.5rem 0;
+        }
+
+        .chapter-card.open .topic-list {
+            display: block;
+            animation: fadeIn 0.3s ease;
+        }
+
+        .topic-item {
+            padding: 0.75rem 1.25rem 0.75rem 4rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            transition: background-color 0.2s;
+            border-bottom: 1px solid rgba(0,0,0,0.02);
+        }
+        
+        [data-theme="dark"] .topic-item {
+            border-bottom: 1px solid rgba(255,255,255,0.02);
+        }
+
+        .topic-item:last-child {
+            border-bottom: none;
+        }
+
+        .topic-item:hover {
+            background-color: rgba(37, 99, 235, 0.05);
+        }
+
+        .topic-info h5 {
+            font-size: 1rem;
+            color: var(--text-primary);
+            font-family: 'Noto Sans Devanagari', sans-serif;
+            font-weight: 500;
+        }
+
+        .topic-info span {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+
+        .topic-arrow {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        .topic-item:hover .topic-arrow {
+            color: var(--primary-color);
+            transform: translateX(4px);
+            transition: transform 0.2s;
+        }
+
+        .breadcrumb {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            align-items: center;
+        }
+
+        .breadcrumb a {
+            color: var(--primary-color);
+            font-weight: 500;
+            text-decoration: none;
+            cursor: pointer;
+            transition: color 0.2s;
+        }
+        
+        .breadcrumb a:hover {
+            color: var(--primary-hover);
+            text-decoration: underline;
+        }
+
+        .breadcrumb span.separator {
+            color: var(--text-secondary);
+            font-size: 0.75rem;
+        }
+
+        .breadcrumb span.current {
+            color: var(--text-secondary);
+        }
+
+        .error-container {
+            text-align: center;
+            padding: 4rem 1rem;
+            background-color: var(--surface-color);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            margin-top: 2rem;
+            box-shadow: var(--card-shadow);
+        }
+
+        .error-container i {
+            font-size: 3rem;
+            color: var(--text-secondary);
+            margin-bottom: 1rem;
+        }
+        
+        .error-container h2 {
+            margin-bottom: 0.5rem;
+            color: var(--text-primary);
+        }
+
+        .no-quiz-card {
+            background-color: rgba(245, 158, 11, 0.1);
+            border: 1px dashed #f59e0b;
+            padding: 2rem;
+            text-align: center;
+            border-radius: 8px;
+            color: #b45309;
+        }
+        
+        [data-theme="dark"] .no-quiz-card {
+            color: #fcd34d;
+        }
+
+        footer {
+            background-color: var(--footer-bg);
+            color: var(--footer-text);
+            padding: 3rem 1rem 1rem;
+            margin-top: auto;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-brand h2 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: #ffffff;
+        }
+        
+        .footer-brand p {
+            color: #cbd5e1;
+            font-size: 0.9rem;
+        }
+
+        .footer-links h3 {
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+            color: #ffffff;
+        }
+
+        .footer-links ul {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-links a {
+            color: #cbd5e1;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .footer-links a:hover {
+            color: var(--primary-hover);
+        }
+
+        .footer-actions {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1.5rem;
+            border-radius: 6px;
+            font-weight: 600;
+            text-decoration: none;
+            cursor: pointer;
+            border: none;
+            transition: background-color 0.2s;
+            font-size: 1rem;
+        }
+
+        .btn-telegram { background-color: #0088cc; color: white; }
+        .btn-telegram:hover { background-color: #0077b5; }
+        .btn-donate { background-color: #10b981; color: white; }
+        .btn-donate:hover { background-color: #059669; }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: #94a3b8;
+            font-size: 0.85rem;
+        }
+
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.6);
+            backdrop-filter: blur(2px);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 2000;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .modal-overlay.active {
+            display: flex;
+            opacity: 1;
+        }
+
+        .modal-content {
+            background-color: var(--surface-color);
+            border-radius: 8px;
+            width: 90%;
+            max-width: 600px;
+            max-height: 90vh;
+            overflow-y: auto;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            transform: translateY(20px);
+            transition: transform 0.3s;
+        }
+
+        .modal-overlay.active .modal-content {
+            transform: translateY(0);
+        }
+
+        .modal-header {
+            padding: 1.25rem 1.5rem;
+            border-bottom: 1px solid var(--border-color);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            background-color: var(--surface-color);
+            z-index: 10;
+        }
+
+        .modal-header h2 { font-size: 1.25rem; color: var(--text-primary); }
+        .modal-body { padding: 1.5rem; color: var(--text-secondary); }
+        .modal-body h3 { color: var(--text-primary); margin-top: 1rem; margin-bottom: 0.5rem; }
+        .modal-body p { margin-bottom: 1rem; }
+        .modal-body ul { margin-left: 1.5rem; margin-bottom: 1rem; }
+
+        .donation-note {
+            background-color: rgba(239, 68, 68, 0.1);
+            color: #ef4444;
+            padding: 1rem;
+            border-radius: 6px;
+            margin-bottom: 1.5rem;
+            font-size: 0.9rem;
+            border-left: 4px solid #ef4444;
+        }
+
+        .amount-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .amount-btn {
+            background-color: transparent;
+            border: 2px solid var(--border-color);
+            color: var(--text-primary);
+            padding: 0.75rem;
+            border-radius: 6px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .amount-btn:hover, .amount-btn.selected {
+            border-color: var(--primary-color);
+            background-color: rgba(37, 99, 235, 0.05);
+            color: var(--primary-color);
+        }
+
+        .custom-amount {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            font-size: 1rem;
+            margin-bottom: 1.5rem;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+        }
+
+        .custom-amount:focus { outline: none; border-color: var(--primary-color); }
+        
+        .pay-btn {
+            width: 100%;
+            background-color: #10b981;
+            color: white;
+            border: none;
+            padding: 1rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .pay-btn:hover { background-color: #059669; }
+
     </style>
 </head>
-<body class="theme-bg theme-text">
+<body>
 
-    <!-- Accessibility Toolbar -->
-    <div class="theme-surface theme-border border-b text-xs sm:text-sm py-1.5 px-4 flex justify-between items-center z-50 sticky top-0 backdrop-blur-md bg-opacity-90 dark:bg-opacity-90">
-        <div class="flex items-center gap-2">
-            <span class="font-medium theme-text-sec hidden sm:inline">Accessibility:</span>
-            <button onclick="app.setFontSize('small')" class="px-2 py-0.5 rounded hover:bg-slate-200 dark:hover:bg-slate-700 transition" aria-label="Decrease font size">A−</button>
-            <button onclick="app.setFontSize('default')" class="px-2 py-0.5 rounded hover:bg-slate-200 dark:hover:bg-slate-700 transition font-medium" aria-label="Default font size">A</button>
-            <button onclick="app.setFontSize('large')" class="px-2 py-0.5 rounded hover:bg-slate-200 dark:hover:bg-slate-700 transition" aria-label="Increase font size">A+</button>
-        </div>
-        <div class="flex items-center gap-3">
-            <button onclick="app.toggleTheme()" class="flex items-center gap-1 px-2 py-0.5 rounded hover:bg-slate-200 dark:hover:bg-slate-700 transition" aria-label="Toggle Theme">
-                <i class="ph ph-sun text-lg dark:hidden"></i>
-                <i class="ph ph-moon text-lg hidden dark:block"></i>
-                <span class="hidden sm:inline font-medium" id="theme-label">Light Mode</span>
-            </button>
-        </div>
+    <div id="utility-bar">
+        <span>Font Size:</span>
+        <button class="utility-btn" onclick="changeFontSize(-1)" aria-label="Decrease Font Size">A-</button>
+        <button class="utility-btn" onclick="resetFontSize()" aria-label="Reset Font Size">A</button>
+        <button class="utility-btn" onclick="changeFontSize(1)" aria-label="Increase Font Size">A+</button>
+        <div style="width: 1px; height: 16px; background: rgba(255,255,255,0.3); margin: 0 0.5rem;"></div>
+        <button class="utility-btn" onclick="toggleTheme()" id="theme-toggle" aria-label="Toggle Dark Mode">
+            <i class="fas fa-moon"></i> Theme
+        </button>
     </div>
 
-    <!-- Main Header -->
-    <header class="theme-surface shadow-sm sticky top-8 z-40 border-b theme-border backdrop-blur-md bg-opacity-95 dark:bg-opacity-95">
-        <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
-            <a href="#/" class="flex items-center gap-2 group focus:outline-none">
-                <div class="bg-gradient-to-br from-brand-500 to-brand-700 text-white p-1.5 rounded-lg group-hover:shadow-lg transition-all transform group-hover:scale-105">
-                    <i class="ph ph-books text-2xl"></i>
-                </div>
-                <h1 class="text-2xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-brand-600 to-brand-800 dark:from-brand-400 dark:to-brand-200">StudySphere</h1>
-            </a>
-            
-            <button onclick="app.toggleDrawer()" class="p-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-700 transition focus:outline-none focus:ring-2 focus:ring-brand-500" aria-label="Open Menu">
-                <i class="ph ph-list text-2xl theme-text"></i>
-            </button>
+    <header>
+        <div class="logo-container" onclick="navigateSPA('view-home')" style="cursor:pointer;">
+            <i class="fas fa-globe-asia logo-icon"></i>
+            <div class="brand-text">
+                <h1>StudySphere</h1>
+                <p>MPSC Group B & C Preparation</p>
+            </div>
         </div>
+        <button class="menu-toggle" onclick="toggleSidebar()" aria-label="Open Menu">
+            <i class="fas fa-bars"></i>
+        </button>
     </header>
 
-    <!-- Navigation Drawer Overlay -->
-    <div id="drawer-overlay" class="fixed inset-0 bg-slate-900/50 backdrop-blur-sm z-50 hidden opacity-0 transition-opacity duration-300" onclick="app.toggleDrawer()"></div>
-    
-    <!-- Navigation Drawer -->
-    <nav id="drawer" class="fixed top-0 right-0 h-full w-4/5 max-w-sm theme-surface shadow-2xl z-50 transform translate-x-full transition-transform duration-300 flex flex-col">
-        <div class="p-4 flex items-center justify-between border-b theme-border">
-            <div class="flex items-center gap-2">
-                <div class="bg-brand-600 text-white p-1 rounded-md"><i class="ph ph-books text-lg"></i></div>
-                <span class="font-bold text-lg">Menu</span>
-            </div>
-            <button onclick="app.toggleDrawer()" class="p-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-700 transition" aria-label="Close Menu">
-                <i class="ph ph-x text-xl"></i>
+    <nav id="sidebar">
+        <div class="sidebar-header">
+            <h2 style="font-size: 1.2rem;">Menu</h2>
+            <button class="close-menu" onclick="toggleSidebar()" aria-label="Close Menu">
+                <i class="fas fa-times"></i>
             </button>
         </div>
-        <div class="flex-1 overflow-y-auto py-4 px-3 space-y-1" id="drawer-links">
-            <!-- Links rendered dynamically based on Auth state -->
-        </div>
-        <div class="p-4 border-t theme-border text-center text-xs theme-text-sec">
-            StudySphere Final Release v2.0
+        <div class="sidebar-nav">
+            <a href="#" onclick="navigateSPA('view-home'); toggleSidebar();"><i class="fas fa-home fa-fw"></i> Home</a>
+            <a href="#" onclick="openModal('about-modal'); toggleSidebar();"><i class="fas fa-info-circle fa-fw"></i> About Us</a>
+            <a href="#" onclick="openModal('contact-modal'); toggleSidebar();"><i class="fas fa-envelope fa-fw"></i> Contact</a>
+            <a href="#" onclick="openModal('sitemap-modal'); toggleSidebar();"><i class="fas fa-sitemap fa-fw"></i> Sitemap</a>
+            <a href="#" onclick="openModal('privacy-modal'); toggleSidebar();"><i class="fas fa-shield-alt fa-fw"></i> Privacy Policy</a>
+            <a href="#" onclick="openModal('terms-modal'); toggleSidebar();"><i class="fas fa-file-contract fa-fw"></i> Terms of Service</a>
         </div>
     </nav>
+    <div class="sidebar-overlay" onclick="toggleSidebar()"></div>
 
-    <!-- Main Content Area -->
-    <main id="app-root" class="flex-1 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8 relative">
-        <!-- Content injected via Async Router -->
+    <main id="app-content">
+        
+        <!-- HOME VIEW -->
+        <section id="view-home" class="view active">
+            <div class="intro-box">
+                <p>Welcome to StudySphere, an MCQ-based learning platform designed for <strong>MPSC Combined Group B & C</strong> preparation. Select a subject below, explore chapters and topics, and start practicing objectively designed tests.</p>
+            </div>
+
+            <h2 class="section-title">SECTION A: Prelims + Mains Common Subjects</h2>
+            <div id="common-subjects-grid" class="subjects-grid">
+                <!-- Dynamically populated via JS -->
+            </div>
+
+            <h2 class="section-title">SECTION B: Mains Subjects</h2>
+            <div id="mains-subjects-grid" class="subjects-grid">
+                <!-- Dynamically populated via JS -->
+            </div>
+        </section>
+
+        <!-- SUBJECT VIEW -->
+        <section id="view-subject" class="view">
+            <!-- Dynamically populated via JS -->
+        </section>
+
+        <!-- TOPIC VIEW -->
+        <section id="view-topic" class="view">
+            <!-- Dynamically populated via JS -->
+        </section>
+
+        <!-- Placeholders for future steps -->
+        <section id="view-quiz" class="view"></section>
+        <section id="view-result" class="view"></section>
+
+        <!-- ERROR VIEW -->
+        <section id="view-error" class="view">
+            <div class="error-container">
+                <i class="fas fa-exclamation-triangle"></i>
+                <h2>Content Not Found</h2>
+                <p style="margin-bottom: 2rem; color: var(--text-secondary);">The subject, chapter, or topic you are looking for does not exist.</p>
+                <button class="btn btn-back" onclick="renderHome()" style="margin: 0 auto;">
+                    <i class="fas fa-home"></i> Back to Home
+                </button>
+            </div>
+        </section>
+
     </main>
 
-    <!-- Modals Container -->
-    <div id="modal-container" class="fixed inset-0 z-[60] flex items-center justify-center hidden opacity-0 transition-opacity duration-200">
-        <div class="absolute inset-0 bg-slate-900/60 backdrop-blur-sm" onclick="app.closeModal()"></div>
-        <div id="modal-content" class="relative w-full max-w-md m-4 theme-surface rounded-2xl shadow-2xl flex flex-col max-h-[90vh] overflow-y-auto transform scale-95 transition-transform duration-200">
-            <!-- Modal Body -->
-        </div>
-    </div>
-
-    <!-- Custom Alert Container -->
-    <div id="toast-container" class="fixed bottom-4 left-1/2 transform -translate-x-1/2 z-[70] flex flex-col gap-2 w-full max-w-sm px-4 pointer-events-none"></div>
-
-    <footer class="theme-surface border-t theme-border mt-auto">
-        <div class="max-w-7xl mx-auto px-4 py-8 sm:py-12">
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
-                <div class="col-span-1 sm:col-span-2">
-                    <div class="flex items-center gap-2 mb-4">
-                        <i class="ph-fill ph-books text-3xl text-brand-600"></i>
-                        <span class="text-2xl font-bold text-brand-600 dark:text-brand-500">StudySphere</span>
-                    </div>
-                    <p class="theme-text-sec text-sm leading-relaxed mb-4 max-w-md">
-                        StudySphere is a comprehensive bilingual MCQ practice platform designed specifically for the MPSC Combined Group B & C examinations.
-                    </p>
-                </div>
-                
-                <div>
-                    <h3 class="font-bold text-lg mb-4">Explore</h3>
-                    <ul class="space-y-3 text-sm theme-text-sec">
-                        <li><a href="#/" class="hover:text-brand-600 dark:hover:text-brand-400 transition flex items-center gap-2"><i class="ph ph-caret-right"></i> Home</a></li>
-                        <li><a href="#/about" class="hover:text-brand-600 dark:hover:text-brand-400 transition flex items-center gap-2"><i class="ph ph-caret-right"></i> About Us</a></li>
-                        <li><a href="#/dashboard" class="hover:text-brand-600 dark:hover:text-brand-400 transition flex items-center gap-2"><i class="ph ph-caret-right"></i> Dashboard</a></li>
-                    </ul>
-                </div>
-
-                <div>
-                    <h3 class="font-bold text-lg mb-4">Support & Legal</h3>
-                    <ul class="space-y-3 text-sm theme-text-sec">
-                        <li>
-                            <a href="https://t.me/+va0AGcqvCdQzNTI1" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 hover:text-brand-600 transition">
-                                <i class="ph-fill ph-telegram-logo text-lg text-blue-500"></i> Telegram Group
-                            </a>
-                        </li>
-                        <li><a href="#/privacy-policy" class="hover:text-brand-600 dark:hover:text-brand-400 transition flex items-center gap-2"><i class="ph ph-caret-right"></i> Privacy Policy</a></li>
-                        <li><a href="#/terms" class="hover:text-brand-600 dark:hover:text-brand-400 transition flex items-center gap-2"><i class="ph ph-caret-right"></i> Terms of Service</a></li>
-                    </ul>
-                </div>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h2><i class="fas fa-globe-asia"></i> StudySphere</h2>
+                <p>An objective MCQ practice and testing platform dedicated to MPSC Combined Group B & C exam preparation.</p>
             </div>
-            
-            <div class="mt-8 pt-8 border-t theme-border flex flex-col sm:flex-row items-center justify-between gap-4">
-                <p class="text-sm theme-text-sec text-center sm:text-left">
-                    &copy; <span id="year"></span> StudySphere. All rights reserved. Built for MPSC Aspirants.
-                </p>
-                <button onclick="app.openDonationModal()" class="flex items-center gap-2 px-5 py-2.5 bg-gradient-to-r from-brand-600 to-brand-700 hover:from-brand-700 hover:to-brand-800 text-white rounded-xl transition-all font-medium text-sm shadow-md hover:shadow-lg focus:ring-2 focus:ring-offset-2 focus:ring-brand-500 transform hover:-translate-y-0.5">
-                    <i class="ph-fill ph-heart text-lg text-pink-300"></i> Support Project
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#" onclick="navigateSPA('view-home')">Home</a></li>
+                    <li><a href="#" onclick="openModal('about-modal')">About Us</a></li>
+                    <li><a href="#" onclick="openModal('sitemap-modal')">Sitemap</a></li>
+                    <li><a href="#" onclick="openModal('privacy-modal')">Privacy Policy</a></li>
+                    <li><a href="#" onclick="openModal('terms-modal')">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="footer-actions">
+                <h3>Connect & Support</h3>
+                <a href="https://t.me/+va0AGcqvCdQzNTI1" target="_blank" class="btn btn-telegram">
+                    <i class="fab fa-telegram-plane"></i> Join Telegram
+                </a>
+                <button class="btn btn-donate" onclick="openModal('donate-modal')">
+                    <i class="fas fa-heart"></i> Donate Us
                 </button>
             </div>
         </div>
+        <div class="footer-bottom">
+            &copy; 2026 StudySphere. Designed for educational purposes.
+        </div>
     </footer>
 
-    <script type="module">
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
-        import { getAuth, signInAnonymously, onAuthStateChanged, signOut, signInWithEmailAndPassword, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js";
-        import { getFirestore, doc, setDoc, getDoc, collection, query, where, getDocs, serverTimestamp, addDoc } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js";
+    <!-- Modals Container (Same as Step 1) -->
+    <div id="modals-container">
+        
+        <!-- About Modal -->
+        <div class="modal-overlay" id="about-modal" onclick="closeModalOutside(event, 'about-modal')">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>About Us</h2>
+                    <button class="close-menu" onclick="closeModal('about-modal')"><i class="fas fa-times"></i></button>
+                </div>
+                <div class="modal-body">
+                    <p>StudySphere is an independent educational platform created to help MPSC Combined Group B & C aspirants practice objective questions topic-wise.</p>
+                    <p>Our focus is on structured practice, topic-wise quizzes, practice tests, quick revision, detailed explanations, and bilingual learning (Marathi & English).</p>
+                    <p><em>Disclaimer: StudySphere is an independent initiative and is not affiliated with the official Maharashtra Public Service Commission (MPSC).</em></p>
+                </div>
+            </div>
+        </div>
 
-        // Production-ready Firebase configuration fallback
-        const firebaseConfig = typeof __firebase_config !== 'undefined' ? JSON.parse(__firebase_config) : {
-            apiKey: "MOCK_KEY_FOR_LOCAL_DEV",
-            authDomain: "studysphere.firebaseapp.com",
-            projectId: "studysphere",
-            storageBucket: "studysphere.appspot.com",
-            messagingSenderId: "000",
-            appId: "1:000:web:000"
-        };
+        <!-- Privacy Modal -->
+        <div class="modal-overlay" id="privacy-modal" onclick="closeModalOutside(event, 'privacy-modal')">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Privacy Policy</h2>
+                    <button class="close-menu" onclick="closeModal('privacy-modal')"><i class="fas fa-times"></i></button>
+                </div>
+                <div class="modal-body">
+                    <p>At StudySphere, your privacy is respected. Since this is a static educational website:</p>
+                    <ul>
+                        <li>No mandatory account creation or login is required.</li>
+                        <li>Local browser storage (localStorage) is used solely to remember your UI preferences (Dark mode, Font size) and quiz progress locally on your device.</li>
+                        <li>Question reports are stored locally in your browser.</li>
+                        <li>We do not collect, process, or sell personal data.</li>
+                        <li>External links (like Telegram) have their own privacy policies.</li>
+                        <li>Donations are processed directly through your UPI application, and we do not collect payment data.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Terms Modal -->
+        <div class="modal-overlay" id="terms-modal" onclick="closeModalOutside(event, 'terms-modal')">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Terms of Service</h2>
+                    <button class="close-menu" onclick="closeModal('terms-modal')"><i class="fas fa-times"></i></button>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li><strong>Educational Purpose:</strong> This platform is designed solely for practice and educational purposes.</li>
+                        <li><strong>Verification:</strong> While we strive for accuracy, users should independently verify important factual information and answer keys. Questions may occasionally contain errors and can be reported.</li>
+                        <li><strong>No Affiliation:</strong> StudySphere is not an official MPSC website.</li>
+                        <li><strong>No Guarantees:</strong> Use of this website does not guarantee success in any official examinations.</li>
+                        <li>Content structure and syllabi mapping may be updated without prior notice to align with optimal MCQ practice.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 
-        let appInst, auth, db;
-        let isFirebaseValid = false;
+        <!-- Sitemap Modal -->
+        <div class="modal-overlay" id="sitemap-modal" onclick="closeModalOutside(event, 'sitemap-modal')">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Sitemap</h2>
+                    <button class="close-menu" onclick="closeModal('sitemap-modal')"><i class="fas fa-times"></i></button>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li>Home (Subjects List)</li>
+                        <li>Subjects -> Chapters</li>
+                        <li>Chapters -> Topics</li>
+                        <li>Topics -> Practice Quizzes & Test Quizzes</li>
+                        <li>About Us</li>
+                        <li>Contact</li>
+                        <li>Privacy Policy</li>
+                        <li>Terms of Service</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Contact Modal -->
+        <div class="modal-overlay" id="contact-modal" onclick="closeModalOutside(event, 'contact-modal')">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Contact</h2>
+                    <button class="close-menu" onclick="closeModal('contact-modal')"><i class="fas fa-times"></i></button>
+                </div>
+                <div class="modal-body">
+                    <p>For discussions, queries, and updates, please join our Telegram channel.</p>
+                    <a href="https://t.me/+va0AGcqvCdQzNTI1" target="_blank" class="btn btn-telegram" style="margin-top:1rem;">
+                        <i class="fab fa-telegram-plane"></i> Join Telegram
+                    </a>
+                </div>
+            </div>
+        </div>
 
-        try {
-            appInst = initializeApp(firebaseConfig);
-            auth = getAuth(appInst);
-            db = getFirestore(appInst);
-            if(firebaseConfig.apiKey !== "MOCK_KEY_FOR_LOCAL_DEV") {
-                isFirebaseValid = true;
-            }
-        } catch (e) {
-            console.warn("Firebase initialized in Local Mode.");
-        }
-
-        window.fb = {
-            auth, db, isFirebaseValid,
-            signInAnonymously, onAuthStateChanged, signOut, signInWithEmailAndPassword, createUserWithEmailAndPassword,
-            doc, setDoc, getDoc, collection, query, where, getDocs, serverTimestamp, addDoc
-        };
-    </script>
+        <!-- Donate Modal -->
+        <div class="modal-overlay" id="donate-modal" onclick="closeModalOutside(event, 'donate-modal')">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Donate Us</h2>
+                    <button class="close-menu" onclick="closeModal('donate-modal')"><i class="fas fa-times"></i></button>
+                </div>
+                <div class="modal-body">
+                    <div class="donation-note">
+                        <i class="fas fa-info-circle"></i> Donation सुविधा सध्या केवळ mobile device वरून उपलब्ध आहे. कृपया UPI-enabled mobile device वापरून payment पूर्ण करा.
+                    </div>
+                    <h3>Select Amount:</h3>
+                    <div class="amount-grid">
+                        <button class="amount-btn" onclick="setDonationAmount(50)">₹50</button>
+                        <button class="amount-btn" onclick="setDonationAmount(100)">₹100</button>
+                        <button class="amount-btn" onclick="setDonationAmount(200)">₹200</button>
+                    </div>
+                    <h3>Or Custom Amount:</h3>
+                    <input type="number" id="custom-donation" class="custom-amount" placeholder="Enter custom amount (₹)" min="1" oninput="clearAmountSelection()">
+                    <button class="pay-btn" onclick="initiateUPIPayment()">Proceed to Pay via UPI</button>
+                    <p id="donation-error" style="color: #ef4444; font-size: 0.85rem; margin-top: 1rem; display: none;"></p>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script>
-        /**
-         * UNIFIED DATA MODEL
-         * Mimics the final architecture where DataService fetches JSON files generated by the backend script.
-         */
-        const DataService = {
-            // Mock Index Data (Normally fetched from `data/quiz-index.json`)
-            index: {
-                subjects: [
-                    { id: 's1', titleMr: 'सामान्य विज्ञान', titleEn: 'General Science', category: 'common' },
-                    { id: 'GEO', titleMr: 'भूगोल', titleEn: 'Geography', category: 'common' },
-                    { id: 'POL', titleMr: 'भारतीय राज्यघटना', titleEn: 'Indian Polity & Civics', category: 'common' },
-                    { id: 'MAR', titleMr: 'मराठी', titleEn: 'Marathi', category: 'mains' }
-                ],
+        // =========================================================
+        // DATA STRUCTURE: Subject -> Chapter -> Topic
+        // =========================================================
+        const syllabusData = [
+            // --- SECTION A: PRELIMS + MAINS COMMON ---
+            {
+                code: "SCI", section: "COMMON", subjectMr: "सामान्य विज्ञान", subjectEn: "General Science",
                 chapters: [
-                    { id: 'CH-GEO-01', subjectId: 'GEO', titleMr: 'पृथ्वी, स्थान, अक्षांश व रेखांश', titleEn: 'Earth, Location, Latitude & Longitude' }
-                ],
-                topics: [
-                    { id: 'TOP-GEO-01-01', chapterId: 'CH-GEO-01', titleMr: 'अक्षांश आणि रेखांश', titleEn: 'Latitude and Longitude' }
-                ],
-                quizzes: [
-                    { id: 'QUIZ-GEO-01-01-003', topicId: 'TOP-GEO-01-01', titleMr: 'अक्षांश - सराव प्रश्नसंच', titleEn: 'Latitude - Practice Quiz', mode: 'practice', qCount: 10 }
+                    {
+                        code: "SCI-01", chapterMr: "भौतिकशास्त्र", chapterEn: "Physics",
+                        topics: [
+                            { code: "SCI-01-T01", topicMr: "प्रकाश (Light)", topicEn: "Light" },
+                            { code: "SCI-01-T02", topicMr: "ध्वनी (Sound)", topicEn: "Sound" },
+                            { code: "SCI-01-T03", topicMr: "उष्णता व तापमान", topicEn: "Heat & Temperature" },
+                            { code: "SCI-01-T04", topicMr: "विद्युत धारा (Electricity)", topicEn: "Electricity" },
+                            { code: "SCI-01-T05", topicMr: "बल व दाब (Force & Pressure)", topicEn: "Force & Pressure" }
+                        ]
+                    },
+                    {
+                        code: "SCI-02", chapterMr: "रसायनशास्त्र", chapterEn: "Chemistry",
+                        topics: [
+                            { code: "SCI-02-T01", topicMr: "द्रव्य व त्याचे स्वरूप", topicEn: "Matter & Its Nature" },
+                            { code: "SCI-02-T02", topicMr: "अणूची संरचना", topicEn: "Atomic Structure" },
+                            { code: "SCI-02-T03", topicMr: "मूलद्रव्यांचे आवर्ती वर्गीकरण", topicEn: "Periodic Classification of Elements" },
+                            { code: "SCI-02-T04", topicMr: "आम्ल, आम्लारी व क्षार", topicEn: "Acids, Bases & Salts" },
+                            { code: "SCI-02-T05", topicMr: "धातू आणि अधातू", topicEn: "Metals & Non-metals" }
+                        ]
+                    },
+                    {
+                        code: "SCI-03", chapterMr: "प्राणीशास्त्र", chapterEn: "Zoology",
+                        topics: [
+                            { code: "SCI-03-T01", topicMr: "प्राण्यांचे वर्गीकरण", topicEn: "Animal Classification" },
+                            { code: "SCI-03-T02", topicMr: "पेशी रचना व कार्य", topicEn: "Cell Structure & Function" },
+                            { code: "SCI-03-T03", topicMr: "रक्ताभिसरण संस्था", topicEn: "Blood Circulation System" },
+                            { code: "SCI-03-T04", topicMr: "पचन संस्था व श्वसन संस्था", topicEn: "Digestive & Respiratory System" },
+                            { code: "SCI-03-T05", topicMr: "चेती संस्था व प्रजनन संस्था", topicEn: "Nervous & Reproductive System" }
+                        ]
+                    },
+                    {
+                        code: "SCI-04", chapterMr: "वनस्पतीशास्त्र", chapterEn: "Botany",
+                        topics: [
+                            { code: "SCI-04-T01", topicMr: "वनस्पतींचे वर्गीकरण", topicEn: "Plant Classification" },
+                            { code: "SCI-04-T02", topicMr: "वनस्पतींची रचना व कार्ये", topicEn: "Plant Structure & Functions" },
+                            { code: "SCI-04-T03", topicMr: "प्रकाश संश्लेषण", topicEn: "Photosynthesis" }
+                        ]
+                    },
+                    {
+                        code: "SCI-05", chapterMr: "मानवी आरोग्य व रोग", chapterEn: "Human Health & Hygiene",
+                        topics: [
+                            { code: "SCI-05-T01", topicMr: "पोषक द्रव्ये (Nutrients)", topicEn: "Nutrients" },
+                            { code: "SCI-05-T02", topicMr: "जिवाणूजन्य रोग", topicEn: "Bacterial Diseases" },
+                            { code: "SCI-05-T03", topicMr: "विषाणूजन्य रोग", topicEn: "Viral Diseases" },
+                            { code: "SCI-05-T04", topicMr: "इतर संसर्गजन्य व असंसर्गजन्य रोग", topicEn: "Other Communicable & Non-communicable Diseases" }
+                        ]
+                    }
+                ]
+            },
+            {
+                code: "CA", section: "COMMON", subjectMr: "चालू घडामोडी", subjectEn: "Current Affairs",
+                chapters: [
+                    {
+                        code: "CA-01", chapterMr: "राष्ट्रीय व आंतरराष्ट्रीय", chapterEn: "National & International",
+                        topics: [
+                            { code: "CA-01-T01", topicMr: "राष्ट्रीय घडामोडी", topicEn: "National Affairs" },
+                            { code: "CA-01-T02", topicMr: "आंतरराष्ट्रीय घडामोडी", topicEn: "International Affairs" },
+                            { code: "CA-01-T03", topicMr: "महत्त्वाच्या परिषदा व संमेलने", topicEn: "Important Summits & Conferences" }
+                        ]
+                    },
+                    {
+                        code: "CA-02", chapterMr: "महाराष्ट्र विशेष", chapterEn: "Maharashtra Special",
+                        topics: [
+                            { code: "CA-02-T01", topicMr: "महाराष्ट्रातील राजकीय घडामोडी", topicEn: "Maharashtra Political Affairs" },
+                            { code: "CA-02-T02", topicMr: "महाराष्ट्रातील आर्थिक व सामाजिक घडामोडी", topicEn: "Maharashtra Economic & Social Affairs" }
+                        ]
+                    },
+                    {
+                        code: "CA-03", chapterMr: "अर्थव्यवस्था व योजना", chapterEn: "Economy & Schemes",
+                        topics: [
+                            { code: "CA-03-T01", topicMr: "सरकारी योजना व धोरणे", topicEn: "Government Schemes & Policies" },
+                            { code: "CA-03-T02", topicMr: "आर्थिक निर्देशांक व अहवाल", topicEn: "Economic Indices & Reports" }
+                        ]
+                    },
+                    {
+                        code: "CA-04", chapterMr: "पुरस्कार, क्रीडा व नियुक्त्या", chapterEn: "Awards, Sports & Appointments",
+                        topics: [
+                            { code: "CA-04-T01", topicMr: "महत्त्वाचे पुरस्कार (Awards)", topicEn: "Important Awards" },
+                            { code: "CA-04-T02", topicMr: "क्रीडा घडामोडी (Sports)", topicEn: "Sports Affairs" },
+                            { code: "CA-04-T03", topicMr: "महत्त्वाच्या नियुक्त्या व निधन", topicEn: "Appointments & Obituaries" }
+                        ]
+                    }
+                ]
+            },
+            {
+                code: "GEO", section: "COMMON", subjectMr: "भूगोल", subjectEn: "Geography",
+                chapters: [
+                    {
+                        code: "GEO-01", chapterMr: "पृथ्वी व मूलभूत भूगोल", chapterEn: "Earth & Basic Geography",
+                        topics: [
+                            { code: "GEO-01-T01", topicMr: "पृथ्वी, स्थान, अक्षांश-रेखांश", topicEn: "Earth, Location, Latitude & Longitude" },
+                            { code: "GEO-01-T02", topicMr: "वातावरण आणि हवामान", topicEn: "Atmosphere & Climate" },
+                            { code: "GEO-01-T03", topicMr: "नकाशे व प्रमाण", topicEn: "Maps & Scales" }
+                        ]
+                    },
+                    {
+                        code: "GEO-02", chapterMr: "भारताचा भूगोल", chapterEn: "Geography of India",
+                        topics: [
+                            { code: "GEO-02-T01", topicMr: "भारताची प्राकृतिक रचना", topicEn: "Physical Structure of India" },
+                            { code: "GEO-02-T02", topicMr: "भारतातील नदीप्रणाली", topicEn: "River Systems of India" },
+                            { code: "GEO-02-T03", topicMr: "भारताचे हवामान, मृदा व वने", topicEn: "Climate, Soils & Forests of India" },
+                            { code: "GEO-02-T04", topicMr: "शेती व खनिजे", topicEn: "Agriculture & Minerals" }
+                        ]
+                    },
+                    {
+                        code: "GEO-03", chapterMr: "महाराष्ट्राचा भूगोल", chapterEn: "Geography of Maharashtra",
+                        topics: [
+                            { code: "GEO-03-T01", topicMr: "महाराष्ट्राची प्राकृतिक रचना", topicEn: "Physical Structure of Maharashtra" },
+                            { code: "GEO-03-T02", topicMr: "महाराष्ट्रातील नदीप्रणाली", topicEn: "River Systems of Maharashtra" },
+                            { code: "GEO-03-T03", topicMr: "हवामान, मृदा आणि वने", topicEn: "Climate, Soils & Forests in Maharashtra" },
+                            { code: "GEO-03-T04", topicMr: "शेती व जलसिंचन", topicEn: "Agriculture & Irrigation in Maharashtra" },
+                            { code: "GEO-03-T05", topicMr: "खनिजे, ऊर्जा साधने व उद्योग", topicEn: "Minerals, Energy Resources & Industries" },
+                            { code: "GEO-03-T06", topicMr: "लोकसंख्या व वाहतूक", topicEn: "Population & Transport in Maharashtra" }
+                        ]
+                    }
+                ]
+            },
+            {
+                code: "HIS", section: "COMMON", subjectMr: "इतिहास", subjectEn: "History",
+                chapters: [
+                    {
+                        code: "HIS-01", chapterMr: "आधुनिक भारताचा इतिहास", chapterEn: "Modern Indian History",
+                        topics: [
+                            { code: "HIS-01-T01", topicMr: "युरोपियनांचे आगमन व ब्रिटिश सत्ता विस्तार", topicEn: "Advent of Europeans & Expansion of British Power" },
+                            { code: "HIS-01-T02", topicMr: "१८५७ चा उठाव", topicEn: "Revolt of 1857" },
+                            { code: "HIS-01-T03", topicMr: "सामाजिक व धार्मिक सुधारणा चळवळी", topicEn: "Socio-Religious Reform Movements" },
+                            { code: "HIS-01-T04", topicMr: "राष्ट्रीय सभेची स्थापना व मवाळ-जहाल कालखंड", topicEn: "INC & Moderate-Extremist Phase" },
+                            { code: "HIS-01-T05", topicMr: "गांधी युग व स्वातंत्र्य चळवळ", topicEn: "Gandhian Era & Freedom Struggle" }
+                        ]
+                    },
+                    {
+                        code: "HIS-02", chapterMr: "महाराष्ट्राचा इतिहास", chapterEn: "History of Maharashtra",
+                        topics: [
+                            { code: "HIS-02-T01", topicMr: "महाराष्ट्रातील समाजसुधारक - भाग १", topicEn: "Social Reformers in Maharashtra - Part 1" },
+                            { code: "HIS-02-T02", topicMr: "महाराष्ट्रातील समाजसुधारक - भाग २", topicEn: "Social Reformers in Maharashtra - Part 2" },
+                            { code: "HIS-02-T03", topicMr: "राष्ट्रीय चळवळीतील महाराष्ट्राचे योगदान", topicEn: "Maharashtra's Contribution to National Movement" },
+                            { code: "HIS-02-T04", topicMr: "शेतकरी, कामगार व आदिवासी चळवळी", topicEn: "Peasant, Labour & Tribal Movements" },
+                            { code: "HIS-02-T05", topicMr: "संयुक्त महाराष्ट्र चळवळ", topicEn: "Samyukta Maharashtra Movement" }
+                        ]
+                    }
+                ]
+            },
+            {
+                code: "ECO", section: "COMMON", subjectMr: "अर्थशास्त्र", subjectEn: "Economics",
+                chapters: [
+                    {
+                        code: "ECO-01", chapterMr: "भारतीय अर्थव्यवस्था", chapterEn: "Indian Economy",
+                        topics: [
+                            { code: "ECO-01-T01", topicMr: "राष्ट्रीय उत्पन्न (National Income)", topicEn: "National Income" },
+                            { code: "ECO-01-T02", topicMr: "आर्थिक नियोजन व नीती आयोग", topicEn: "Economic Planning & NITI Aayog" },
+                            { code: "ECO-01-T03", topicMr: "दारीद्र्य व बेरोजगारी", topicEn: "Poverty & Unemployment" },
+                            { code: "ECO-01-T04", topicMr: "लोकसंख्या (Population)", topicEn: "Population" }
+                        ]
+                    },
+                    {
+                        code: "ECO-02", chapterMr: "शेती, उद्योग व सेवा क्षेत्र", chapterEn: "Agriculture, Industry & Services",
+                        topics: [
+                            { code: "ECO-02-T01", topicMr: "भारतीय शेती", topicEn: "Indian Agriculture" },
+                            { code: "ECO-02-T02", topicMr: "उद्योग क्षेत्र", topicEn: "Industrial Sector" },
+                            { code: "ECO-02-T03", topicMr: "पायाभूत सुविधा व सेवा क्षेत्र", topicEn: "Infrastructure & Services Sector" }
+                        ]
+                    },
+                    {
+                        code: "ECO-03", chapterMr: "सार्वजनिक वित्त व बँकिंग", chapterEn: "Public Finance & Banking",
+                        topics: [
+                            { code: "ECO-03-T01", topicMr: "सार्वजनिक वित्त, अर्थसंकल्प व करप्रणाली", topicEn: "Public Finance, Budget & Taxation" },
+                            { code: "ECO-03-T02", topicMr: "भारतीय बँकिंग व्यवस्था व RBI", topicEn: "Indian Banking System & RBI" },
+                            { code: "ECO-03-T03", topicMr: "चलनवाढ (Inflation)", topicEn: "Inflation" }
+                        ]
+                    },
+                    {
+                        code: "ECO-04", chapterMr: "परकीय व्यापार व महाराष्ट्र अर्थव्यवस्था", chapterEn: "Foreign Trade & MH Economy",
+                        topics: [
+                            { code: "ECO-04-T01", topicMr: "परकीय व्यापार व व्यवहारतोल", topicEn: "Foreign Trade & Balance of Payment" },
+                            { code: "ECO-04-T02", topicMr: "महाराष्ट्राची अर्थव्यवस्था", topicEn: "Economy of Maharashtra" }
+                        ]
+                    }
+                ]
+            },
+            {
+                code: "MAT", section: "COMMON", subjectMr: "बुद्धिमत्ता चाचणी व अंकगणित", subjectEn: "Mental Ability and Arithmetic",
+                chapters: [
+                    {
+                        code: "MAT-01", chapterMr: "अंकगणित - भाग १", chapterEn: "Arithmetic - Part 1",
+                        topics: [
+                            { code: "MAT-01-T01", topicMr: "संख्यामालिका व संख्यांचे प्रकार", topicEn: "Number System" },
+                            { code: "MAT-01-T02", topicMr: "लसावि व मसावि", topicEn: "LCM and HCF" },
+                            { code: "MAT-01-T03", topicMr: "अपूर्णांक व दशांश", topicEn: "Fractions and Decimals" },
+                            { code: "MAT-01-T04", topicMr: "शेकडेवारी", topicEn: "Percentage" }
+                        ]
+                    },
+                    {
+                        code: "MAT-02", chapterMr: "अंकगणित - भाग २", chapterEn: "Arithmetic - Part 2",
+                        topics: [
+                            { code: "MAT-02-T01", topicMr: "नफा-तोटा व सूट", topicEn: "Profit, Loss & Discount" },
+                            { code: "MAT-02-T02", topicMr: "गुणोत्तर व प्रमाण", topicEn: "Ratio & Proportion" },
+                            { code: "MAT-02-T03", topicMr: "सरासरी", topicEn: "Average" },
+                            { code: "MAT-02-T04", topicMr: "काळ, काम, वेग आणि अंतर", topicEn: "Time, Work, Speed & Distance" }
+                        ]
+                    },
+                    {
+                        code: "MAT-03", chapterMr: "बुद्धिमत्ता चाचणी", chapterEn: "Mental Ability",
+                        topics: [
+                            { code: "MAT-03-T01", topicMr: "अक्षरमालिका व सांकेतिक भाषा", topicEn: "Alphabet Series & Coding-Decoding" },
+                            { code: "MAT-03-T02", topicMr: "दिशा आणि अंतर", topicEn: "Direction & Distance" },
+                            { code: "MAT-03-T03", topicMr: "नातेसंबंध", topicEn: "Blood Relations" },
+                            { code: "MAT-03-T04", topicMr: "वेन आकृत्या व तर्क-अनुमान", topicEn: "Venn Diagrams & Syllogism" },
+                            { code: "MAT-03-T05", topicMr: "घड्याळ व दिनदर्शिका", topicEn: "Clock & Calendar" }
+                        ]
+                    }
+                ]
+            },
+            {
+                code: "POL", section: "COMMON", subjectMr: "भारतीय राज्यव्यवस्था व नागरिकशास्त्र", subjectEn: "Indian Polity and Civics",
+                chapters: [
+                    {
+                        code: "POL-01", chapterMr: "संविधानाची निर्मिती व वैशिष्ट्ये", chapterEn: "Making & Features of Constitution",
+                        topics: [
+                            { code: "POL-01-T01", topicMr: "संविधान निर्मिती प्रक्रिया", topicEn: "Making of the Constitution" },
+                            { code: "POL-01-T02", topicMr: "संविधानाची ठळक वैशिष्ट्ये व सरनामा", topicEn: "Salient Features & Preamble" }
+                        ]
+                    },
+                    {
+                        code: "POL-02", chapterMr: "मूलभूत हक्क व कर्तव्ये", chapterEn: "Fundamental Rights & Duties",
+                        topics: [
+                            { code: "POL-02-T01", topicMr: "मूलभूत हक्क (Fundamental Rights)", topicEn: "Fundamental Rights" },
+                            { code: "POL-02-T02", topicMr: "मार्गदर्शक तत्त्वे व मूलभूत कर्तव्ये", topicEn: "DPSP & Fundamental Duties" }
+                        ]
+                    },
+                    {
+                        code: "POL-03", chapterMr: "केंद्र व राज्य शासन", chapterEn: "Union & State Executive",
+                        topics: [
+                            { code: "POL-03-T01", topicMr: "राष्ट्रपती व उपराष्ट्रपती", topicEn: "President & Vice-President" },
+                            { code: "POL-03-T02", topicMr: "पंतप्रधान व केंद्रीय मंत्रिमंडळ", topicEn: "Prime Minister & Council of Ministers" },
+                            { code: "POL-03-T03", topicMr: "राज्यपाल, मुख्यमंत्री व राज्य मंत्रिमंडळ", topicEn: "Governor, CM & State Council" },
+                            { code: "POL-03-T04", topicMr: "संसद व राज्य विधिमंडळ", topicEn: "Parliament & State Legislature" }
+                        ]
+                    },
+                    {
+                        code: "POL-04", chapterMr: "न्यायव्यवस्था व प्रशासकीय रचना", chapterEn: "Judiciary & Administrative Setup",
+                        topics: [
+                            { code: "POL-04-T01", topicMr: "सर्वोच्च व उच्च न्यायालय", topicEn: "Supreme Court & High Court" },
+                            { code: "POL-04-T02", topicMr: "केंद्र-राज्य संबंध", topicEn: "Centre-State Relations" },
+                            { code: "POL-04-T03", topicMr: "घटनात्मक व वैधानिक आयोग", topicEn: "Constitutional & Statutory Bodies" }
+                        ]
+                    }
                 ]
             },
 
-            // Mock Data fetching mechanisms (Returns Promises to simulate network requests)
-            async getSubjects() { return this.index.subjects; },
-            async getChapters(subjectId) { return this.index.chapters.filter(c => c.subjectId === subjectId); },
-            async getTopics(chapterId) { return this.index.topics.filter(t => t.chapterId === chapterId); },
-            async getQuizzes(topicId) { return this.index.quizzes.filter(q => q.topicId === topicId); },
-            async getQuizDetails(quizId) {
-                // Simulate network delay for realistic UI feedback
-                await new Promise(r => setTimeout(r, 600)); 
-                
-                // Embedded Real Output from your JSON generator script!
-                if(quizId === 'QUIZ-GEO-01-01-003') {
-                    return {
-                      "quizId": "QUIZ-GEO-01-01-003",
-                      "subjectId": "GEO",
-                      "chapterId": "CH-GEO-01",
-                      "topicId": "TOP-GEO-01-01",
-                      "quizTitleMarathi": "अक्षांश - सराव प्रश्नसंच",
-                      "quizTitleEnglish": "Latitude - Practice Quiz",
-                      "quizType": "practice",
-                      "questionCount": 10,
-                      "negativeMarking": 0.25,
-                      "questions": [
-                        {
-                          "questionId": "Q-GEO-01-01-003-001",
-                          "questionNumber": 1,
-                          "questionMarathi": "विषुववृत्त हे कोणते अक्षवृत्त आहे?",
-                          "questionEnglish": "Which latitude does the Equator represent?",
-                          "options": { "A": { "optionMarathi": "0°", "optionEnglish": "0°" }, "B": { "optionMarathi": "23.5° N", "optionEnglish": "23.5° N" }, "C": { "optionMarathi": "90°", "optionEnglish": "90°" }, "D": { "optionMarathi": "66.5° S", "optionEnglish": "66.5° S" } },
-                          "correctOption": "A",
-                          "explanationMarathi": "विषुववृत्त हे पृथ्वीच्या मध्यभागातून जाणारे 0° अक्षवृत्त आहे, जे पृथ्वीचे उत्तर आणि दक्षिण गोलार्धात विभाजन करते.",
-                          "explanationEnglish": "The Equator is the 0° latitude passing through the center of the Earth, dividing it into Northern and Southern Hemispheres.",
-                          "difficulty": "Easy"
-                        },
-                        {
-                          "questionId": "Q-GEO-01-01-003-002",
-                          "questionNumber": 2,
-                          "questionMarathi": "पृथ्वीवरील एकूण अक्षवृत्तांची संख्या किती आहे?",
-                          "questionEnglish": "What is the total number of latitudes on Earth?",
-                          "options": { "A": { "optionMarathi": "180", "optionEnglish": "180" }, "B": { "optionMarathi": "181", "optionEnglish": "181" }, "C": { "optionMarathi": "360", "optionEnglish": "360" }, "D": { "optionMarathi": "90", "optionEnglish": "90" } },
-                          "correctOption": "B",
-                          "explanationMarathi": "उत्तर गोलार्धात 90, दक्षिण गोलार्धात 90 आणि 1 विषुववृत्त असे मिळून एकूण 181 अक्षवृत्ते आहेत.",
-                          "explanationEnglish": "There are 90 latitudes in the Northern Hemisphere, 90 in the Southern Hemisphere, and 1 Equator, making a total of 181.",
-                          "difficulty": "Easy"
-                        },
-                        {
-                          "questionId": "Q-GEO-01-01-003-003",
-                          "questionNumber": 3,
-                          "questionMarathi": "दोन लगतच्या अक्षवृत्तांमधील अंदाजे अंतर किती असते?",
-                          "questionEnglish": "What is the approximate distance between two consecutive latitudes?",
-                          "options": { "A": { "optionMarathi": "111 किमी", "optionEnglish": "111 km" }, "B": { "optionMarathi": "100 किमी", "optionEnglish": "100 km" }, "C": { "optionMarathi": "69 किमी", "optionEnglish": "69 km" }, "D": { "optionMarathi": "180 किमी", "optionEnglish": "180 km" } },
-                          "correctOption": "A",
-                          "explanationMarathi": "दोन लगतच्या अक्षवृत्तांमधील अंतर सर्वत्र समान असते, जे अंदाजे 111 किलोमीटर (किंवा 69 मैल) असते.",
-                          "explanationEnglish": "The distance between two consecutive latitudes is relatively constant everywhere, which is approximately 111 kilometers (or 69 miles).",
-                          "difficulty": "Moderate"
-                        },
-                        {
-                          "questionId": "Q-GEO-01-01-003-004",
-                          "questionNumber": 4,
-                          "questionMarathi": "विषुववृत्ताकडून ध्रुवांकडे जाताना अक्षवृत्तांच्या लांबीवर काय परिणाम होतो?",
-                          "questionEnglish": "What happens to the length of latitudes as we move from the Equator towards the poles?",
-                          "options": { "A": { "optionMarathi": "लांबी वाढते", "optionEnglish": "Length increases" }, "B": { "optionMarathi": "लांबी कमी होत जाते", "optionEnglish": "Length decreases" }, "C": { "optionMarathi": "लांबी समान राहते", "optionEnglish": "Length remains constant" }, "D": { "optionMarathi": "प्रथम वाढते आणि नंतर कमी होते", "optionEnglish": "First increases then decreases" } },
-                          "correctOption": "B",
-                          "explanationMarathi": "पृथ्वीच्या गोलाकार आकारामुळे, विषुववृत्ताकडून ध्रुवांकडे जाताना अक्षवृत्तांचा परिघ किंवा लांबी कमी होत जाते आणि ध्रुवांवर ती शून्य होते.",
-                          "explanationEnglish": "Due to the spherical shape of the Earth, the circumference or length of latitudes decreases from the Equator to the poles, becoming zero at the poles.",
-                          "difficulty": "Moderate"
-                        },
-                        {
-                          "questionId": "Q-GEO-01-01-003-005",
-                          "questionNumber": 5,
-                          "questionMarathi": "कर्कवृत्त (Tropic of Cancer) भारताच्या किती राज्यांमधून जाते?",
-                          "questionEnglish": "The Tropic of Cancer passes through how many states of India?",
-                          "options": { "A": { "optionMarathi": "7", "optionEnglish": "7" }, "B": { "optionMarathi": "8", "optionEnglish": "8" }, "C": { "optionMarathi": "9", "optionEnglish": "9" }, "D": { "optionMarathi": "6", "optionEnglish": "6" } },
-                          "correctOption": "B",
-                          "explanationMarathi": "कर्कवृत्त (23.5° N) भारताच्या ८ राज्यांमधून जाते: गुजरात, राजस्थान, मध्य प्रदेश, छत्तीसगड, झारखंड, पश्चिम बंगाल, त्रिपुरा आणि मिझोराम.",
-                          "explanationEnglish": "The Tropic of Cancer (23.5° N) passes through 8 Indian states: Gujarat, Rajasthan, Madhya Pradesh, Chhattisgarh, Jharkhand, West Bengal, Tripura, and Mizoram.",
-                          "difficulty": "Moderate"
-                        }
-                      ]
-                    };
-                }
-                throw new Error("Quiz not found");
+            // --- SECTION B: MAINS / MAINS-FOCUSED ---
+            {
+                code: "MAR", section: "MAINS", subjectMr: "मराठी", subjectEn: "Marathi Language",
+                chapters: [
+                    {
+                        code: "MAR-01", chapterMr: "व्याकरण", chapterEn: "Grammar",
+                        topics: [
+                            { code: "MAR-01-T01", topicMr: "वर्णमाला व संधी", topicEn: "Alphabets & Sandhi" },
+                            { code: "MAR-01-T02", topicMr: "शब्दांच्या जाती (नाम, सर्वनाम, विशेषण, क्रियापद)", topicEn: "Parts of Speech" },
+                            { code: "MAR-01-T03", topicMr: "लिंग, वचन, विभक्ती व प्रयोग", topicEn: "Gender, Number, Case & Prayog" },
+                            { code: "MAR-01-T04", topicMr: "समास व अलंकार", topicEn: "Samas & Alankar" },
+                            { code: "MAR-01-T05", topicMr: "वाक्याचे प्रकार व वाक्यरूपांतर", topicEn: "Sentence Types & Transformation" }
+                        ]
+                    },
+                    {
+                        code: "MAR-02", chapterMr: "शब्दसंग्रह", chapterEn: "Vocabulary",
+                        topics: [
+                            { code: "MAR-02-T01", topicMr: "समानार्थी व विरुद्धार्थी शब्द", topicEn: "Synonyms & Antonyms" },
+                            { code: "MAR-02-T02", topicMr: "वाक्प्रचार व म्हणी", topicEn: "Idioms & Proverbs" },
+                            { code: "MAR-02-T03", topicMr: "शुद्ध व अशुद्ध शब्द", topicEn: "Correct/Incorrect Words" },
+                            { code: "MAR-02-T04", topicMr: "शब्दसमूहाबद्दल एक शब्द", topicEn: "One Word Substitution" }
+                        ]
+                    },
+                    {
+                        code: "MAR-03", chapterMr: "उतारा आकलन", chapterEn: "Comprehension",
+                        topics: [
+                            { code: "MAR-03-T01", topicMr: "उताऱ्यावरील प्रश्न", topicEn: "Passage Based Questions" }
+                        ]
+                    }
+                ]
+            },
+            {
+                code: "ENG", section: "MAINS", subjectMr: "इंग्रजी", subjectEn: "English Language",
+                chapters: [
+                    {
+                        code: "ENG-01", chapterMr: "Grammar Basics", chapterEn: "Grammar Basics",
+                        topics: [
+                            { code: "ENG-01-T01", topicMr: "Parts of Speech", topicEn: "Parts of Speech" },
+                            { code: "ENG-01-T02", topicMr: "Articles & Prepositions", topicEn: "Articles & Prepositions" },
+                            { code: "ENG-01-T03", topicMr: "Tenses", topicEn: "Tenses" },
+                            { code: "ENG-01-T04", topicMr: "Subject-Verb Agreement", topicEn: "Subject-Verb Agreement" }
+                        ]
+                    },
+                    {
+                        code: "ENG-02", chapterMr: "Advanced Grammar", chapterEn: "Advanced Grammar",
+                        topics: [
+                            { code: "ENG-02-T01", topicMr: "Active and Passive Voice", topicEn: "Active and Passive Voice" },
+                            { code: "ENG-02-T02", topicMr: "Direct and Indirect Speech", topicEn: "Direct and Indirect Speech" },
+                            { code: "ENG-02-T03", topicMr: "Sentence Structure & Correction", topicEn: "Sentence Structure & Correction" }
+                        ]
+                    },
+                    {
+                        code: "ENG-03", chapterMr: "Vocabulary & Comprehension", chapterEn: "Vocabulary & Comprehension",
+                        topics: [
+                            { code: "ENG-03-T01", topicMr: "Synonyms & Antonyms", topicEn: "Synonyms & Antonyms" },
+                            { code: "ENG-03-T02", topicMr: "Idioms & Phrases", topicEn: "Idioms & Phrases" },
+                            { code: "ENG-03-T03", topicMr: "One Word Substitution", topicEn: "One Word Substitution" },
+                            { code: "ENG-03-T04", topicMr: "Reading Comprehension (Passage)", topicEn: "Reading Comprehension (Passage)" }
+                        ]
+                    }
+                ]
+            },
+            {
+                code: "CON", section: "MAINS", subjectMr: "भारतीय संविधान व पंचायतराज", subjectEn: "Indian Constitution & Panchayati Raj",
+                chapters: [
+                    {
+                        code: "CON-01", chapterMr: "संविधानातील महत्त्वाच्या तरतुदी", chapterEn: "Important Constitutional Provisions",
+                        topics: [
+                            { code: "CON-01-T01", topicMr: "संविधानातील महत्त्वाचे कलम व भाग", topicEn: "Important Articles & Parts" },
+                            { code: "CON-01-T02", topicMr: "महत्त्वाच्या घटनादुरुस्त्या", topicEn: "Important Amendments" }
+                        ]
+                    },
+                    {
+                        code: "CON-02", chapterMr: "पंचायतराज (ग्रामीण)", chapterEn: "Panchayati Raj (Rural)",
+                        topics: [
+                            { code: "CON-02-T01", topicMr: "७३ वी घटनादुरुस्ती व पंचायतराज समित्या", topicEn: "73rd Amendment & Committees" },
+                            { code: "CON-02-T02", topicMr: "ग्रामपंचायत व ग्रामसभा", topicEn: "Gram Panchayat & Gram Sabha" },
+                            { code: "CON-02-T03", topicMr: "पंचायत समिती व जिल्हा परिषद", topicEn: "Panchayat Samiti & Zilla Parishad" }
+                        ]
+                    },
+                    {
+                        code: "CON-03", chapterMr: "नागरी स्थानिक स्वराज्य संस्था", chapterEn: "Urban Local Bodies",
+                        topics: [
+                            { code: "CON-03-T01", topicMr: "७४ वी घटनादुरुस्ती व नागरी प्रशासन", topicEn: "74th Amendment & Urban Administration" },
+                            { code: "CON-03-T02", topicMr: "नगरपंचायत व नगरपरिषद", topicEn: "Nagar Panchayat & Municipal Council" },
+                            { code: "CON-03-T03", topicMr: "महानगरपालिका व कटक मंडळे", topicEn: "Municipal Corporation & Cantonment Boards" }
+                        ]
+                    }
+                ]
+            },
+            {
+                code: "IT", section: "MAINS", subjectMr: "माहिती तंत्रज्ञान व संगणक मूलभूत माहिती", subjectEn: "Information Technology & Computer Basics",
+                chapters: [
+                    {
+                        code: "IT-01", chapterMr: "संगणकाची मूलभूत माहिती", chapterEn: "Computer Fundamentals",
+                        topics: [
+                            { code: "IT-01-T01", topicMr: "संगणकाची ओळख, पिढ्या व प्रकार", topicEn: "Intro, Generations & Types of Computers" },
+                            { code: "IT-01-T02", topicMr: "हार्डवेअर आणि सॉफ्टवेअर", topicEn: "Hardware & Software" },
+                            { code: "IT-01-T03", topicMr: "मेमरी आणि स्टोरेज", topicEn: "Memory & Storage" }
+                        ]
+                    },
+                    {
+                        code: "IT-02", chapterMr: "इंटरनेट व नेटवर्किंग", chapterEn: "Internet & Networking",
+                        topics: [
+                            { code: "IT-02-T01", topicMr: "नेटवर्किंग संकल्पना", topicEn: "Networking Concepts" },
+                            { code: "IT-02-T02", topicMr: "इंटरनेट, वेब व ईमेल", topicEn: "Internet, Web & Email" },
+                            { code: "IT-02-T03", topicMr: "सायबर सुरक्षा व सायबर गुन्हे", topicEn: "Cyber Security & Cyber Crimes" }
+                        ]
+                    },
+                    {
+                        code: "IT-03", chapterMr: "आधुनिक तंत्रज्ञान व ई-गव्हर्नन्स", chapterEn: "Modern Tech & e-Governance",
+                        topics: [
+                            { code: "IT-03-T01", topicMr: "नवीन माहिती तंत्रज्ञान (AI, Cloud, IoT)", topicEn: "Modern IT (AI, Cloud, IoT)" },
+                            { code: "IT-03-T02", topicMr: "महाराष्ट्रातील ई-प्रशासन (e-Governance)", topicEn: "e-Governance in Maharashtra" }
+                        ]
+                    }
+                ]
+            },
+            {
+                code: "RTI", section: "MAINS", subjectMr: "माहितीचा अधिकार अधिनियम, 2005 व महाराष्ट्र लोकसेवा हक्क अधिनियम, 2015", subjectEn: "RTI Act 2005 & Maharashtra RTS Act 2015",
+                chapters: [
+                    {
+                        code: "RTI-01", chapterMr: "माहितीचा अधिकार अधिनियम, 2005", chapterEn: "Right to Information Act, 2005",
+                        topics: [
+                            { code: "RTI-01-T01", topicMr: "उद्दिष्टे, व्याख्या व माहितीचा अधिकार", topicEn: "Objectives, Definitions & Right to Info" },
+                            { code: "RTI-01-T02", topicMr: "माहिती अधिकारी व अपील यंत्रणा", topicEn: "Information Officers & Appellate Mechanisms" },
+                            { code: "RTI-01-T03", topicMr: "माहिती आयोग, दंड व सवलती", topicEn: "Information Commissions, Penalties & Exemptions" }
+                        ]
+                    },
+                    {
+                        code: "RTI-02", chapterMr: "महाराष्ट्र लोकसेवा हक्क अधिनियम, 2015", chapterEn: "Maharashtra RTS Act, 2015",
+                        topics: [
+                            { code: "RTI-02-T01", topicMr: "उद्दिष्टे, व्याख्या व सेवा हक्क", topicEn: "Objectives, Definitions & Right to Services" },
+                            { code: "RTI-02-T02", topicMr: "आयोग, अधिकारी व दंड", topicEn: "Commission, Officers & Penalties" }
+                        ]
+                    }
+                ]
             }
+        ];
+
+        
+        // Application State
+        let appState = {
+            view: 'home',
+            subjectCode: null,
+            chapterCode: null,
+            topicCode: null
         };
 
-        // Core App Logic
-        const app = {
-            currentUser: null,
-            theme: localStorage.getItem('theme') || 'light',
-            fontSize: localStorage.getItem('fontSize') || 'default',
-            drawerOpen: false,
+        function initApp() {
+            initFontSize();
+            initTheme();
             
-            toggleTheme: () => {
-                app.theme = app.theme === 'light' ? 'dark' : 'light';
-                document.documentElement.setAttribute('data-theme', app.theme);
-                localStorage.setItem('theme', app.theme);
-                document.getElementById('theme-label').innerText = app.theme === 'light' ? 'Light Mode' : 'Dark Mode';
-            },
-            setFontSize: (size) => {
-                document.documentElement.classList.remove('font-small', 'font-default', 'font-large');
-                document.documentElement.classList.add(`font-${size}`);
-                app.fontSize = size;
-                localStorage.setItem('fontSize', size);
-            },
-            toggleDrawer: () => {
-                app.drawerOpen = !app.drawerOpen;
-                const drawer = document.getElementById('drawer');
-                const overlay = document.getElementById('drawer-overlay');
-                if (app.drawerOpen) {
-                    drawer.classList.remove('translate-x-full');
-                    overlay.classList.remove('hidden');
-                    setTimeout(() => overlay.classList.remove('opacity-0'), 10);
-                } else {
-                    drawer.classList.add('translate-x-full');
-                    overlay.classList.add('opacity-0');
-                    setTimeout(() => overlay.classList.add('hidden'), 300);
-                }
-            },
-            showToast: (message, type = 'info') => {
-                const container = document.getElementById('toast-container');
-                const toast = document.createElement('div');
-                const colors = {
-                    info: 'bg-slate-800 text-white dark:bg-slate-100 dark:text-slate-900',
-                    success: 'bg-green-600 text-white',
-                    error: 'bg-red-600 text-white',
-                    warning: 'bg-amber-500 text-white'
-                };
-                const icons = { info: 'ph-info', success: 'ph-check-circle', error: 'ph-warning', warning: 'ph-warning-circle' };
-                
-                toast.className = `${colors[type]} px-4 py-3 rounded-xl shadow-lg text-sm font-medium fade-in flex items-center justify-between gap-3 pointer-events-auto mt-2 transition-all transform`;
-                toast.innerHTML = `<div class="flex items-center gap-2"><i class="ph-fill ${icons[type]} text-lg"></i> <span>${message}</span></div> <button onclick="this.parentElement.remove()" class="opacity-75 hover:opacity-100"><i class="ph ph-x"></i></button>`;
-                container.appendChild(toast);
-                setTimeout(() => { 
-                    if(toast.parentElement) {
-                        toast.classList.add('opacity-0', 'translate-y-2');
-                        setTimeout(() => toast.remove(), 300);
-                    }
-                }, 4000);
-            },
-            openModal: (contentHTML) => {
-                const container = document.getElementById('modal-container');
-                const content = document.getElementById('modal-content');
-                content.innerHTML = contentHTML;
-                container.classList.remove('hidden');
-                // slight delay for animation
-                setTimeout(() => {
-                    container.classList.remove('opacity-0');
-                    content.classList.remove('scale-95');
-                }, 10);
-            },
-            closeModal: () => {
-                const container = document.getElementById('modal-container');
-                const content = document.getElementById('modal-content');
-                container.classList.add('opacity-0');
-                content.classList.add('scale-95');
-                setTimeout(() => {
-                    container.classList.add('hidden');
-                    content.innerHTML = '';
-                }, 200);
-            },
-
-            navigate: (path) => {
-                window.location.hash = path;
-                if(app.drawerOpen) app.toggleDrawer();
-            },
+            // Listen for Browser Back/Forward buttons
+            window.addEventListener('popstate', handlePopState);
             
-            renderNavigationLinks: () => {
-                const container = document.getElementById('drawer-links');
-                let links = `
-                    <a href="#/" class="flex items-center gap-3 p-3 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-700/50 transition-colors" onclick="app.toggleDrawer()">
-                        <i class="ph-fill ph-house text-xl text-brand-600 dark:text-brand-400"></i> <span class="font-medium">Home</span>
-                    </a>
-                    <a href="#/about" class="flex items-center gap-3 p-3 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-700/50 transition-colors" onclick="app.toggleDrawer()">
-                        <i class="ph-fill ph-info text-xl text-brand-600 dark:text-brand-400"></i> <span class="font-medium">About Us</span>
-                    </a>
-                    <a href="#/contact" class="flex items-center gap-3 p-3 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-700/50 transition-colors" onclick="app.toggleDrawer()">
-                        <i class="ph-fill ph-envelope text-xl text-brand-600 dark:text-brand-400"></i> <span class="font-medium">Contact</span>
-                    </a>
-                `;
-                if (app.currentUser) {
-                    links += `
-                        <a href="#/dashboard" class="flex items-center gap-3 p-3 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-700/50 transition-colors" onclick="app.toggleDrawer()">
-                            <i class="ph-fill ph-user-circle text-xl text-brand-600 dark:text-brand-400"></i> <span class="font-medium">Dashboard</span>
-                        </a>
-                        <button onclick="app.logout(); app.toggleDrawer()" class="w-full flex items-center gap-3 p-3 rounded-xl hover:bg-red-50 dark:hover:bg-red-900/20 transition-colors text-red-600 dark:text-red-400">
-                            <i class="ph-fill ph-sign-out text-xl"></i> <span class="font-medium">Logout</span>
-                        </button>
-                    `;
-                } else {
-                    links += `
-                        <a href="#/login" class="flex items-center gap-3 p-3 rounded-xl hover:bg-brand-50 dark:hover:bg-brand-900/20 transition-colors" onclick="app.toggleDrawer()">
-                            <i class="ph-fill ph-sign-in text-xl text-brand-600 dark:text-brand-400"></i> <span class="font-medium text-brand-700 dark:text-brand-300">Login / Register</span>
-                        </a>
-                    `;
-                }
-                container.innerHTML = links;
-            },
+            // Initialize History state on first load
+            history.replaceState({ view: 'home' }, '', '');
+            renderHome(false);
+        }
 
-            openDonationModal: () => {
-                const upiUrl = "upi://pay?pa=vikram.joshi9089@oksbi&pn=StudySphere&cu=INR";
-                app.openModal(`
-                    <div class="p-6">
-                        <div class="flex items-center justify-between mb-6">
-                            <h2 class="text-xl font-bold flex items-center gap-2"><i class="ph-fill ph-heart text-pink-500"></i> Support Us</h2>
-                            <button onclick="app.closeModal()" class="text-slate-400 hover:text-slate-600 bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 rounded-full p-1 transition"><i class="ph ph-x text-lg"></i></button>
-                        </div>
-                        <p class="theme-text-sec text-sm mb-6">StudySphere is a free platform. If you find it helpful for your MPSC preparation, consider supporting us to keep the servers running.</p>
-                        
-                        <div class="grid grid-cols-3 gap-3 mb-6">
-                            <button onclick="document.getElementById('don-amount').value='50'" class="py-2 border theme-border rounded-xl hover:border-brand-500 hover:bg-brand-50 dark:hover:bg-brand-900/20 font-medium transition">₹50</button>
-                            <button onclick="document.getElementById('don-amount').value='100'" class="py-2 border theme-border rounded-xl hover:border-brand-500 hover:bg-brand-50 dark:hover:bg-brand-900/20 font-medium transition">₹100</button>
-                            <button onclick="document.getElementById('don-amount').value='200'" class="py-2 border theme-border rounded-xl hover:border-brand-500 hover:bg-brand-50 dark:hover:bg-brand-900/20 font-medium transition">₹200</button>
-                        </div>
-                        
-                        <div class="mb-6 relative">
-                            <span class="absolute left-4 top-1/2 -translate-y-1/2 font-bold theme-text-sec">₹</span>
-                            <input type="number" id="don-amount" min="1" class="w-full pl-8 pr-4 py-3 rounded-xl border theme-border bg-slate-50 dark:bg-slate-900/50 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none transition" placeholder="Custom Amount">
-                        </div>
-                        
-                        <button onclick="app.processDonation()" class="w-full py-3.5 bg-gradient-to-r from-brand-600 to-brand-700 hover:from-brand-700 hover:to-brand-800 text-white rounded-xl font-bold flex items-center justify-center gap-2 transition shadow-md hover:shadow-lg">
-                            <i class="ph-fill ph-qr-code text-xl"></i> Proceed to Pay via UPI
-                        </button>
-                    </div>
-                `);
-            },
-            processDonation: () => {
-                const amount = document.getElementById('don-amount').value;
-                if(!amount || isNaN(amount) || amount <= 0) {
-                    app.showToast('Please enter a valid amount.', 'error');
-                    return;
-                }
-                window.location.href = `upi://pay?pa=vikram.joshi9089@oksbi&pn=StudySphere&am=${amount}&cu=INR`;
-                app.closeModal();
-                app.showToast('Opening UPI Application...', 'success');
-            }
-        };
-
-        // Initialize display properties
-        document.documentElement.setAttribute('data-theme', app.theme);
-        app.setFontSize(app.fontSize);
-        document.getElementById('year').innerText = new Date().getFullYear();
-
-        class QuizEngine {
-            constructor(quizConfig, fullQuizData, timeMinutes) {
-                this.config = quizConfig; // Basic metadata
-                this.quizData = fullQuizData; // Full JSON payload
-                this.questions = fullQuizData.questions;
-                
-                this.totalTime = timeMinutes ? timeMinutes * 60 : null; // in seconds
-                this.remainingTime = this.totalTime;
-                this.currentIndex = 0;
-                
-                this.answers = {}; // qnId -> optionKey (A, B, C, D)
-                this.status = {};  // qnId -> status string
-                this.timerInterval = null;
-                this.isSubmitted = false;
-                this.tabSwitchCount = 0;
-                
-                this.questions.forEach(q => this.status[q.questionId] = 'unvisited');
-                if(this.questions.length > 0) this.status[this.questions[0].questionId] = 'visited';
-                
-                this.setupAntiCheat();
-            }
-
-            setupAntiCheat() {
-                if(this.config.mode === 'test') {
-                    this.visibilityHandler = () => {
-                        if (document.hidden && !this.isSubmitted) {
-                            this.tabSwitchCount++;
-                            if (this.tabSwitchCount === 1) {
-                                app.showToast("Warning: Do not switch tabs during a Test!", "warning");
-                            } else {
-                                app.showToast("Multiple tab switches detected. This is recorded.", "error");
-                            }
-                        }
-                    };
-                    document.addEventListener('visibilitychange', this.visibilityHandler);
-                    this.contextHandler = (e) => e.preventDefault();
-                    document.addEventListener('contextmenu', this.contextHandler);
-                }
-            }
-
-            cleanupAntiCheat() {
-                if(this.visibilityHandler) document.removeEventListener('visibilitychange', this.visibilityHandler);
-                if(this.contextHandler) document.removeEventListener('contextmenu', this.contextHandler);
-            }
-
-            startTimer(onTick, onTimeout) {
-                if(!this.totalTime) return;
-                this.timerInterval = setInterval(() => {
-                    this.remainingTime--;
-                    onTick(this.formatTime(this.remainingTime));
-                    if(this.remainingTime <= 60 && this.remainingTime % 15 === 0) {
-                         app.showToast(`Only ${this.remainingTime} seconds remaining!`, 'warning');
-                    }
-                    if(this.remainingTime <= 0) {
-                        this.stopTimer();
-                        onTimeout();
-                    }
-                }, 1000);
-            }
-
-            stopTimer() {
-                if(this.timerInterval) clearInterval(this.timerInterval);
-            }
-
-            formatTime(seconds) {
-                const m = Math.floor(seconds / 60).toString().padStart(2, '0');
-                const s = (seconds % 60).toString().padStart(2, '0');
-                return `${m}:${s}`;
-            }
-
-            selectOption(optionKey) {
-                const qId = this.questions[this.currentIndex].questionId;
-                this.answers[qId] = optionKey;
-            }
-
-            updateStatusForNavigation(markReview = false) {
-                const qId = this.questions[this.currentIndex].questionId;
-                const hasAnswer = !!this.answers[qId];
-                
-                if (hasAnswer && markReview) this.status[qId] = 'answered-review';
-                else if (!hasAnswer && markReview) this.status[qId] = 'review';
-                else if (hasAnswer) this.status[qId] = 'answered';
-                else this.status[qId] = 'visited';
-            }
-
-            goToQuestion(index) {
-                if(index < 0 || index >= this.questions.length) return;
-                this.updateStatusForNavigation();
-                this.currentIndex = index;
-                const newQId = this.questions[this.currentIndex].questionId;
-                if(this.status[newQId] === 'unvisited') {
-                    this.status[newQId] = 'visited';
-                }
-            }
-
-            next(markReview = false) {
-                this.updateStatusForNavigation(markReview);
-                if(this.currentIndex < this.questions.length - 1) {
-                    this.currentIndex++;
-                    const newQId = this.questions[this.currentIndex].questionId;
-                    if(this.status[newQId] === 'unvisited') this.status[newQId] = 'visited';
-                }
-            }
-
-            clearResponse() {
-                const qId = this.questions[this.currentIndex].questionId;
-                delete this.answers[qId];
-                this.status[qId] = 'visited';
-            }
-
-            calculateResult() {
-                let correct = 0, wrong = 0, skipped = 0, posMarks = 0, negMarks = 0;
-                
-                const penalty = this.quizData.negativeMarking || 0; // standard schema
-
-                this.questions.forEach(q => {
-                    const ans = this.answers[q.questionId];
-                    if (!ans) {
-                        skipped++;
-                    } else if (ans === q.correctOption) {
-                        correct++;
-                        posMarks += 1; // Assuming 1 mark per question if not specified
-                    } else {
-                        wrong++;
-                        negMarks += penalty;
-                    }
-                });
-
-                const finalScore = posMarks - negMarks;
-                const maxPossible = this.questions.length;
-                const percentage = Math.max(0, (finalScore / maxPossible) * 100).toFixed(2);
-
-                return {
-                    total: this.questions.length,
-                    correct, wrong, skipped, posMarks, negMarks, finalScore, maxPossible, percentage,
-                    answers: this.answers,
-                    tabSwitches: this.tabSwitchCount
-                };
+        function handlePopState(event) {
+            if (event.state) {
+                const state = event.state;
+                if (state.view === 'home') renderHome(false);
+                else if (state.view === 'subject') renderSubject(state.subjectCode, false);
+                else if (state.view === 'topic') renderTopic(state.subjectCode, state.chapterCode, state.topicCode, false);
+            } else {
+                renderHome(false);
             }
         }
 
-        let activeEngine = null;
+        
+        function renderHome(pushToHistory = true) {
+            appState = { view: 'home', subjectCode: null, chapterCode: null, topicCode: null };
+            
+            if (pushToHistory) {
+                history.pushState(appState, '', '');
+            }
 
-        const Views = {
-            Home: async () => {
-                const subjects = await DataService.getSubjects();
-                
-                return `
-                <div class="space-y-12 animate-fade-in-up">
-                    <!-- Modern Hero Section -->
-                    <section class="relative rounded-3xl overflow-hidden border theme-border theme-surface shadow-sm">
-                        <div class="absolute inset-0 hero-gradient pointer-events-none"></div>
-                        <div class="relative p-8 md:p-12 lg:p-16 flex flex-col md:flex-row items-center gap-10">
-                            <div class="flex-1 space-y-6">
-                                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-50 text-brand-700 dark:bg-brand-900/30 dark:text-brand-300 text-sm font-bold border border-brand-200 dark:border-brand-800">
-                                    <span class="relative flex h-2.5 w-2.5"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-400 opacity-75"></span><span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-brand-500"></span></span>
-                                    V2.0 Final Release
-                                </div>
-                                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
-                                    Crack <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-600 to-indigo-600 dark:from-brand-400 dark:to-indigo-400">MPSC Group B & C</span>
-                                </h1>
-                                <p class="theme-text-sec text-lg sm:text-xl font-medium leading-relaxed max-w-2xl">
-                                    StudySphere is the ultimate bilingual practice platform. Master subjects topic-by-topic with highly curated MCQs, smart analytics, and real-time performance tracking.
-                                </p>
-                                <div class="flex flex-wrap gap-4 pt-4">
-                                    <button onclick="document.getElementById('subjects-grid').scrollIntoView({behavior: 'smooth'})" class="px-8 py-3.5 rounded-xl bg-brand-600 hover:bg-brand-700 text-white font-bold transition-all shadow-md hover:shadow-xl transform hover:-translate-y-1">Start Practicing</button>
-                                    <a href="#/about" class="px-8 py-3.5 rounded-xl border-2 theme-border hover:bg-slate-50 dark:hover:bg-slate-800 font-bold transition-all">Learn More</a>
-                                </div>
-                            </div>
-                            <div class="hidden lg:flex relative w-80 h-80 justify-center items-center">
-                                <div class="absolute inset-0 bg-brand-500 rounded-full opacity-10 animate-pulse-slow"></div>
-                                <i class="ph-fill ph-student text-[160px] text-brand-600 drop-shadow-2xl"></i>
-                            </div>
-                        </div>
-                    </section>
+            const commonGrid = document.getElementById('common-subjects-grid');
+            const mainsGrid = document.getElementById('mains-subjects-grid');
+            
+            commonGrid.innerHTML = '';
+            mainsGrid.innerHTML = '';
 
-                    <!-- Subjects Sections -->
-                    <section id="subjects-grid" class="scroll-mt-24">
-                        <div class="flex items-center justify-between mb-6">
-                            <h3 class="text-2xl font-bold flex items-center gap-3"><i class="ph-fill ph-books text-brand-600"></i> Common Foundation (Prelims + Mains)</h3>
-                        </div>
-                        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-                            ${subjects.filter(s => s.category === 'common').map(s => `
-                                <a href="#/subject/${s.id}" class="group theme-surface border theme-border rounded-2xl p-6 hover:border-brand-500 hover:shadow-lg transition-all duration-300 flex items-center justify-between bg-gradient-to-br from-transparent hover:to-brand-50/50 dark:hover:to-brand-900/10">
-                                    <div>
-                                        <div class="text-xl font-bold mb-1 group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors">${s.titleMr}</div>
-                                        <div class="text-sm theme-text-sec font-medium">${s.titleEn}</div>
-                                    </div>
-                                    <div class="w-10 h-10 rounded-full bg-slate-50 dark:bg-slate-800 flex items-center justify-center group-hover:bg-brand-600 group-hover:text-white transition-all transform group-hover:scale-110">
-                                        <i class="ph-bold ph-arrow-right"></i>
-                                    </div>
-                                </a>
-                            `).join('')}
-                        </div>
-                    </section>
-                    
-                    <section>
-                        <div class="flex items-center justify-between mb-6">
-                            <h3 class="text-2xl font-bold flex items-center gap-3"><i class="ph-fill ph-graduation-cap text-indigo-500"></i> Mains Specialization</h3>
-                        </div>
-                        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-                            ${subjects.filter(s => s.category === 'mains').map(s => `
-                                <a href="#/subject/${s.id}" class="group theme-surface border theme-border rounded-2xl p-6 hover:border-indigo-500 hover:shadow-lg transition-all duration-300 flex items-center justify-between bg-gradient-to-br from-transparent hover:to-indigo-50/50 dark:hover:to-indigo-900/10">
-                                    <div>
-                                        <div class="text-xl font-bold mb-1 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">${s.titleMr}</div>
-                                        <div class="text-sm theme-text-sec font-medium">${s.titleEn}</div>
-                                    </div>
-                                    <div class="w-10 h-10 rounded-full bg-slate-50 dark:bg-slate-800 flex items-center justify-center group-hover:bg-indigo-600 group-hover:text-white transition-all transform group-hover:scale-110">
-                                        <i class="ph-bold ph-arrow-right"></i>
-                                    </div>
-                                </a>
-                            `).join('')}
-                        </div>
-                    </section>
-                </div>
-            `},
+            syllabusData.forEach(subject => {
+                const badgeClass = subject.section === 'COMMON' ? 'badge-common' : 'badge-mains';
+                const badgeText = subject.section === 'COMMON' ? 'Prelims + Mains' : 'Mains';
 
-            Subject: async (subjectId) => {
-                const subjects = await DataService.getSubjects();
-                const subject = subjects.find(s => s.id === subjectId);
-                if(!subject) return `<div class="text-center py-20 text-red-500 font-bold text-xl">404 - Subject not found.</div>`;
-                
-                const chapters = await DataService.getChapters(subjectId);
-                
-                // Fetch topics concurrently for all chapters to build the UI
-                const chapterHTML = await Promise.all(chapters.map(async c => {
-                    const topics = await DataService.getTopics(c.id);
-                    return `
-                        <div class="theme-surface border theme-border rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
-                            <button onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('.arrow').classList.toggle('rotate-180')" class="w-full text-left p-5 sm:p-6 flex items-center justify-between hover:bg-slate-50 dark:hover:bg-slate-800/50 transition focus:outline-none">
-                                <div>
-                                    <div class="font-bold text-lg sm:text-xl text-brand-600 dark:text-brand-400">${c.titleMr}</div>
-                                    <div class="text-sm sm:text-base theme-text-sec mt-1">${c.titleEn}</div>
-                                </div>
-                                <div class="w-8 h-8 flex items-center justify-center rounded-full bg-slate-100 dark:bg-slate-700">
-                                    <i class="ph-bold ph-caret-down arrow transition-transform duration-300"></i>
-                                </div>
-                            </button>
-                            <div class="hidden border-t theme-border bg-slate-50/50 dark:bg-slate-900/30">
-                                ${topics.length === 0 ? `<div class="p-6 text-sm theme-text-sec text-center font-medium">Topics coming soon.</div>` : 
-                                  `<ul class="divide-y theme-border">
-                                    ${topics.map(t => `
-                                        <li>
-                                            <a href="#/topic/${t.id}" class="group block p-4 pl-6 sm:pl-8 hover:bg-white dark:hover:bg-slate-800 transition-colors">
-                                                <div class="flex items-center justify-between">
-                                                    <div>
-                                                        <div class="font-bold group-hover:text-brand-600 transition-colors">${t.titleMr}</div>
-                                                        <div class="text-sm theme-text-sec">${t.titleEn}</div>
-                                                    </div>
-                                                    <i class="ph-bold ph-arrow-right text-slate-300 group-hover:text-brand-500 transition-colors transform group-hover:translate-x-1"></i>
-                                                </div>
-                                            </a>
-                                        </li>
-                                    `).join('')}
-                                  </ul>`
-                                }
+                const cardHTML = `
+                    <div class="subject-card" onclick="renderSubject('${subject.code}')" role="button" tabindex="0" aria-label="Open ${subject.subjectEn}">
+                        <span class="subject-badge ${badgeClass}">${badgeText}</span>
+                        <div class="subject-info">
+                            <h3>${subject.subjectMr}</h3>
+                            <span>${subject.subjectEn}</span>
+                        </div>
+                        <div class="subject-footer">
+                            <i class="fas fa-arrow-right subject-arrow"></i>
+                        </div>
+                    </div>
+                `;
+
+                if (subject.section === 'COMMON') {
+                    commonGrid.innerHTML += cardHTML;
+                } else {
+                    mainsGrid.innerHTML += cardHTML;
+                }
+            });
+
+            navigateSPA('view-home');
+        }
+
+        
+        function renderSubject(subjectCode, pushToHistory = true) {
+            const subject = syllabusData.find(s => s.code === subjectCode);
+            if (!subject) {
+                navigateSPA('view-error');
+                return;
+            }
+
+            appState = { view: 'subject', subjectCode: subjectCode, chapterCode: null, topicCode: null };
+            if (pushToHistory) {
+                history.pushState(appState, '', '');
+            }
+
+            let chaptersHTML = '';
+            subject.chapters.forEach((chapter, index) => {
+                let topicsHTML = '';
+                chapter.topics.forEach(topic => {
+                    topicsHTML += `
+                        <div class="topic-item" onclick="renderTopic('${topic.code}', '${subject.code}', '${chapter.code}')" role="button" tabindex="0">
+                            <div class="topic-info">
+                                <h5>${topic.topicMr}</h5>
+                                <span>${topic.topicEn}</span>
                             </div>
+                            <i class="fas fa-chevron-right topic-arrow"></i>
                         </div>
                     `;
-                }));
+                });
 
-                return `
-                    <div class="max-w-4xl mx-auto animate-fade-in-up">
-                        <div class="mb-8">
-                            <button onclick="app.navigate('/')" class="text-brand-600 hover:text-brand-700 dark:hover:text-brand-400 font-medium flex items-center gap-1 text-sm mb-6 transition-colors"><i class="ph-bold ph-arrow-left"></i> Back to Home</button>
-                            <h2 class="text-3xl sm:text-4xl font-extrabold mb-2">${subject.titleMr}</h2>
-                            <h3 class="text-xl theme-text-sec font-medium">${subject.titleEn}</h3>
+                chaptersHTML += `
+                    <div class="chapter-card" id="chapter-${chapter.code}">
+                        <div class="chapter-header" onclick="toggleChapter('${chapter.code}')" aria-expanded="false" role="button" tabindex="0">
+                            <div class="chapter-title-group">
+                                <div class="chapter-number">${String(index + 1).padStart(2, '0')}</div>
+                                <div class="chapter-names">
+                                    <h4>${chapter.chapterMr}</h4>
+                                    <span>${chapter.chapterEn}</span>
+                                </div>
+                            </div>
+                            <i class="fas fa-chevron-down chapter-toggle-icon"></i>
                         </div>
-                        
-                        ${chapters.length === 0 ? 
-                            `<div class="theme-surface border theme-border rounded-2xl p-12 text-center shadow-sm">
-                                <div class="w-16 h-16 bg-slate-100 dark:bg-slate-800 rounded-full flex items-center justify-center mx-auto mb-4"><i class="ph-fill ph-file-dashed text-2xl theme-text-sec"></i></div>
-                                <h4 class="font-bold text-lg mb-2">No Chapters Available</h4>
-                                <p class="theme-text-sec">Content is currently being uploaded. (Hint: Select Geography for demo data)</p>
-                            </div>` : ''}
-                        
-                        <div class="space-y-4">
-                            ${chapterHTML.join('')}
+                        <div class="topic-list" aria-hidden="true">
+                            ${topicsHTML}
                         </div>
                     </div>
                 `;
-            },
+            });
 
-            Topic: async (topicId) => {
-                // To display breadcrumbs cleanly, fetch topic, then its chapter, then subject
-                let topic, chapter, subject;
-                for(const t of DataService.index.topics) { if(t.id === topicId) { topic = t; break; } }
-                if(!topic) return `<div class="text-center py-20 text-red-500 font-bold text-xl">404 - Topic not found.</div>`;
-                
-                const quizzes = await DataService.getQuizzes(topicId);
-
-                return `
-                    <div class="max-w-5xl mx-auto animate-fade-in-up">
-                        <div class="mb-8">
-                            <button onclick="window.history.back()" class="text-brand-600 hover:text-brand-700 dark:hover:text-brand-400 font-medium flex items-center gap-1 text-sm mb-6 transition-colors"><i class="ph-bold ph-arrow-left"></i> Back</button>
-                            <h2 class="text-3xl sm:text-4xl font-extrabold mb-2">${topic.titleMr}</h2>
-                            <h3 class="text-xl theme-text-sec font-medium">${topic.titleEn}</h3>
-                        </div>
-
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                            ${quizzes.length === 0 ? `<div class="col-span-full theme-surface border theme-border rounded-2xl p-12 text-center theme-text-sec shadow-sm font-medium">No quizzes available for this topic yet.</div>` : ''}
-                            ${quizzes.map(q => `
-                                <div class="theme-surface border theme-border rounded-2xl p-6 sm:p-8 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group transform hover:-translate-y-1">
-                                    <div>
-                                        <div class="flex justify-between items-start mb-4">
-                                            <div class="w-12 h-12 rounded-xl bg-brand-50 dark:bg-brand-900/30 flex items-center justify-center text-brand-600 dark:text-brand-400 mb-4 group-hover:scale-110 transition-transform">
-                                                <i class="ph-fill ${q.mode === 'test' ? 'ph-timer' : 'ph-brain'} text-2xl"></i>
-                                            </div>
-                                            <span class="text-xs font-extrabold px-3 py-1 rounded-full uppercase tracking-wider ${q.mode === 'test' ? 'bg-amber-100 text-amber-700 dark:bg-amber-900/40 dark:text-amber-400 border border-amber-200 dark:border-amber-800' : 'bg-brand-100 text-brand-700 dark:bg-brand-900/40 dark:text-brand-400 border border-brand-200 dark:border-brand-800'}">
-                                                ${q.mode}
-                                            </span>
-                                        </div>
-                                        <h4 class="font-bold text-xl mb-1">${q.titleMr}</h4>
-                                        <div class="text-sm theme-text-sec font-medium mb-6">${q.titleEn}</div>
-                                        <div class="flex items-center gap-4 text-sm font-bold theme-text-sec mb-8 bg-slate-50 dark:bg-slate-800/50 p-3 rounded-lg border theme-border inline-flex">
-                                            <span class="flex items-center gap-1.5"><i class="ph-bold ph-list-numbers text-brand-500"></i> ${q.qCount} Questions</span>
-                                        </div>
-                                    </div>
-                                    <button onclick="Views.openQuizConfig('${q.id}')" class="w-full py-3.5 rounded-xl font-bold text-white transition-all shadow-md focus:ring-2 focus:ring-offset-2 ${q.mode === 'test' ? 'bg-gradient-to-r from-amber-600 to-orange-600 hover:from-amber-700 hover:to-orange-700 focus:ring-amber-500' : 'bg-gradient-to-r from-brand-600 to-indigo-600 hover:from-brand-700 hover:to-indigo-700 focus:ring-brand-500'}">
-                                        Launch ${q.mode === 'test' ? 'Test' : 'Practice'} Session
-                                    </button>
-                                </div>
-                            `).join('')}
-                        </div>
-                    </div>
-                `;
-            },
-
-            openQuizConfig: (quizId) => {
-                const quiz = DataService.index.quizzes.find(q => q.id === quizId);
-                
-                if(quiz.mode === 'test') {
-                    if(!window.fb.auth || !window.fb.auth.currentUser) {
-                        app.openModal(`
-                            <div class="p-8 text-center">
-                                <div class="w-20 h-20 bg-amber-100 text-amber-600 rounded-full flex items-center justify-center mx-auto mb-6"><i class="ph-fill ph-lock-key text-4xl"></i></div>
-                                <h2 class="text-2xl font-bold mb-3">Authentication Required</h2>
-                                <p class="text-sm theme-text-sec mb-8 leading-relaxed">Test mode simulates real exam conditions and allows only one strict attempt per user. Please login to continue.</p>
-                                <div class="flex flex-col sm:flex-row gap-3">
-                                    <button onclick="app.closeModal()" class="flex-1 py-3 rounded-xl border-2 theme-border hover:bg-slate-50 dark:hover:bg-slate-800 transition font-bold">Cancel</button>
-                                    <button onclick="app.closeModal(); app.navigate('/login')" class="flex-1 py-3 rounded-xl bg-brand-600 text-white hover:bg-brand-700 transition font-bold shadow-md">Login Now</button>
-                                </div>
-                            </div>
-                        `);
-                        return;
-                    }
-                }
-
-                const timeOptions = quiz.mode === 'test' ? [5, 10, 15, 20] : [0, 5, 10, 15];
-                
-                app.openModal(`
-                    <div class="p-6 sm:p-8">
-                        <h2 class="text-2xl font-bold mb-1">Session Configuration</h2>
-                        <h3 class="text-sm theme-text-sec font-medium mb-8 pb-4 border-b theme-border">${quiz.titleMr}</h3>
-                        
-                        <div class="mb-6">
-                            <label class="block text-sm font-bold mb-3 theme-text-sec uppercase tracking-wider">Select Time Limit</label>
-                            <div class="grid grid-cols-2 gap-3" id="time-selection">
-                                ${timeOptions.map(t => `
-                                    <button onclick="document.querySelectorAll('.time-btn').forEach(b=>b.classList.remove('ring-2', 'ring-brand-500', 'border-brand-500', 'bg-brand-50', 'dark:bg-brand-900/20', 'text-brand-700', 'dark:text-brand-300')); this.classList.add('ring-2', 'ring-brand-500', 'border-brand-500', 'bg-brand-50', 'dark:bg-brand-900/20', 'text-brand-700', 'dark:text-brand-300'); document.getElementById('selected-time').value = ${t};" 
-                                            class="time-btn border theme-border py-3 rounded-xl text-sm font-bold hover:bg-slate-50 dark:hover:bg-slate-800 transition-all">
-                                        ${t === 0 ? 'No Time Limit' : `${t} Minutes`}
-                                    </button>
-                                `).join('')}
-                            </div>
-                            <input type="hidden" id="selected-time" value="">
-                        </div>
-                        
-                        <div class="mb-8">
-                            <label class="block text-sm font-bold mb-2 theme-text-sec">Custom Time (Minutes)</label>
-                            <input type="number" id="custom-time" min="1" max="180" class="w-full px-4 py-3 border theme-border rounded-xl bg-slate-50 dark:bg-slate-900/50 focus:ring-2 focus:ring-brand-500 outline-none font-medium transition-shadow" placeholder="e.g. 12" oninput="document.getElementById('selected-time').value = this.value; document.querySelectorAll('.time-btn').forEach(b=>b.classList.remove('ring-2', 'ring-brand-500', 'border-brand-500', 'bg-brand-50', 'dark:bg-brand-900/20'));">
-                        </div>
-                        
-                        <div class="flex gap-4">
-                            <button onclick="app.closeModal()" class="flex-1 py-3.5 rounded-xl border-2 theme-border hover:bg-slate-50 dark:hover:bg-slate-800 transition font-bold">Cancel</button>
-                            <button onclick="Views.startQuiz('${quiz.id}')" class="flex-1 py-3.5 rounded-xl bg-brand-600 text-white hover:bg-brand-700 transition font-bold shadow-md flex items-center justify-center gap-2">
-                                Start Now <i class="ph-bold ph-arrow-right"></i>
-                            </button>
-                        </div>
-                    </div>
-                `);
-            },
-
-            startQuiz: async (quizId) => {
-                const timeInput = document.getElementById('selected-time').value;
-                const time = parseInt(timeInput);
-                const quizMeta = DataService.index.quizzes.find(q => q.id === quizId);
-
-                if(quizMeta.mode === 'test' && (!timeInput || isNaN(time) || time <= 0)) {
-                    app.showToast('Test mode requires a valid time limit.', 'error');
-                    return;
-                }
-                if(timeInput && (isNaN(time) || time < 0 || time > 180)) {
-                    app.showToast('Please enter a valid time between 1 and 180 minutes.', 'error');
-                    return;
-                }
-
-                // Check previous attempts
-                if (quizMeta.mode === 'test' && window.fb.isFirebaseValid && window.fb.auth.currentUser) {
-                    try {
-                        const uid = window.fb.auth.currentUser.uid;
-                        const attemptRef = window.fb.collection(window.fb.db, 'artifacts', 'studysphere', 'users', uid, 'quizAttempts');
-                        const q = window.fb.query(attemptRef, window.fb.where('quizId', '==', quizId));
-                        const snapshot = await window.fb.getDocs(q);
-                        if (!snapshot.empty) {
-                            app.showToast('You have already attempted this Test Quiz.', 'error');
-                            return;
-                        }
-                    } catch (e) {
-                        console.error("Firestore attempt check failed", e);
-                    }
-                }
-
-                app.closeModal();
-                
-                // Show Loader for fetching the actual Quiz JSON
-                const root = document.getElementById('app-root');
-                root.innerHTML = `
-                    <div class="flex flex-col items-center justify-center h-[60vh] gap-4">
-                        <div class="w-12 h-12 border-4 border-brand-200 border-t-brand-600 rounded-full animate-spin"></div>
-                        <div class="font-bold theme-text-sec animate-pulse">Loading Quiz Resources...</div>
-                    </div>
-                `;
-
-                try {
-                    const fullQuizData = await DataService.getQuizDetails(quizId);
-                    
-                    if(!fullQuizData.questions || fullQuizData.questions.length === 0) {
-                        throw new Error('No questions found in payload.');
-                    }
-
-                    // Initialize the unified engine
-                    activeEngine = new QuizEngine(quizMeta, fullQuizData, time || null);
-                    Views.renderQuizInterface();
-                    
-                    if(time > 0) {
-                        activeEngine.startTimer(
-                            (formatted) => { document.getElementById('timer-display').innerText = formatted; },
-                            () => { Views.submitQuiz(true); } 
-                        );
-                    }
-                } catch (e) {
-                    app.showToast('Failed to load quiz data: ' + e.message, 'error');
-                    root.innerHTML = `<div class="text-center py-20"><button onclick="app.navigate('/')" class="btn bg-brand-600 text-white px-6 py-2 rounded">Return Home</button></div>`;
-                }
-            },
-
-            renderQuizInterface: () => {
-                const root = document.getElementById('app-root');
-                root.innerHTML = `
-                    <div class="flex flex-col lg:flex-row gap-6 h-full min-h-[calc(100vh-140px)] relative animate-fade-in-up">
-                        
-                        <!-- Mobile Header -->
-                        <div class="lg:hidden flex justify-between items-center bg-slate-50 dark:bg-slate-800/50 p-4 rounded-xl border theme-border mb-2 shadow-sm">
-                            <div class="font-black text-lg">Q. ${activeEngine.currentIndex + 1} <span class="text-sm theme-text-sec font-medium">/ ${activeEngine.questions.length}</span></div>
-                            <button onclick="document.getElementById('palette-panel').classList.toggle('hidden')" class="flex items-center gap-2 text-sm font-bold bg-brand-600 text-white px-4 py-2 rounded-lg shadow-sm">
-                                <i class="ph-bold ph-squares-four"></i> Palette
-                            </button>
-                        </div>
-
-                        <!-- Main Question Area -->
-                        <div class="flex-1 flex flex-col theme-surface border theme-border rounded-2xl shadow-sm overflow-hidden relative">
-                            <div class="bg-slate-50 dark:bg-slate-800/50 p-5 border-b theme-border flex justify-between items-center">
-                                <h2 class="font-extrabold text-lg hidden sm:block text-brand-700 dark:text-brand-400">${activeEngine.quizData.quizTitleMarathi}</h2>
-                                <div class="flex items-center gap-4 ml-auto">
-                                    ${activeEngine.totalTime ? `
-                                        <div class="flex items-center gap-2 text-amber-700 dark:text-amber-400 font-mono font-bold bg-amber-100 dark:bg-amber-900/40 px-4 py-1.5 rounded-full border border-amber-200 dark:border-amber-800 shadow-inner">
-                                            <i class="ph-bold ph-timer text-lg"></i> <span id="timer-display" class="text-lg">${activeEngine.formatTime(activeEngine.remainingTime)}</span>
-                                        </div>
-                                    ` : `<span class="text-sm font-bold px-3 py-1 bg-slate-200 dark:bg-slate-700 rounded-full theme-text-sec">Practice Mode</span>`}
-                                </div>
-                            </div>
-
-                            <div class="p-6 sm:p-10 flex-1 overflow-y-auto" id="question-content"></div>
-
-                            <div class="p-5 bg-slate-50 dark:bg-slate-800/50 border-t theme-border flex flex-wrap gap-3 justify-between items-center">
-                                <div class="flex flex-wrap gap-3 w-full sm:w-auto">
-                                    <button onclick="Views.quizAction('review')" class="flex-1 sm:flex-none px-5 py-2.5 bg-purple-100 text-purple-700 dark:bg-purple-900/40 dark:text-purple-300 border border-purple-200 dark:border-purple-800/60 rounded-xl font-bold text-sm hover:bg-purple-200 transition-colors shadow-sm">Mark for Review</button>
-                                    <button onclick="Views.quizAction('clear')" class="flex-1 sm:flex-none px-5 py-2.5 bg-white border theme-border text-slate-700 dark:bg-slate-700 dark:border-slate-600 dark:text-slate-200 rounded-xl font-bold text-sm hover:bg-slate-100 transition-colors shadow-sm">Clear</button>
-                                </div>
-                                <div class="flex flex-wrap gap-3 w-full sm:w-auto mt-2 sm:mt-0">
-                                    <button onclick="Views.quizAction('submit')" class="flex-1 sm:flex-none px-6 py-2.5 bg-red-600 text-white rounded-xl font-bold text-sm hover:bg-red-700 transition-all shadow-md">Submit Test</button>
-                                    <button onclick="Views.quizAction('next')" class="flex-1 sm:flex-none px-8 py-2.5 bg-brand-600 text-white rounded-xl font-bold text-sm hover:bg-brand-700 transition-all shadow-md flex items-center justify-center gap-2">Save & Next <i class="ph-bold ph-caret-right"></i></button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Side Palette -->
-                        <div id="palette-panel" class="hidden lg:flex w-full lg:w-80 flex-col gap-4 absolute lg:relative top-0 left-0 lg:h-auto h-full z-20 bg-white/95 dark:bg-slate-900/95 backdrop-blur-md lg:bg-transparent lg:backdrop-blur-none p-4 lg:p-0">
-                            <div class="lg:hidden flex justify-end mb-2">
-                                <button onclick="document.getElementById('palette-panel').classList.add('hidden')" class="p-2 bg-slate-200 dark:bg-slate-700 rounded-full"><i class="ph-bold ph-x"></i></button>
-                            </div>
-                            
-                            <div class="theme-surface border theme-border rounded-2xl p-5 shadow-sm text-xs space-y-3 font-medium">
-                                <div class="font-extrabold text-sm border-b theme-border pb-3 mb-3 uppercase tracking-wider theme-text-sec">Palette Legend</div>
-                                <div class="grid grid-cols-2 gap-3">
-                                    <div class="flex items-center gap-2"><div class="w-5 h-5 rounded bg-slate-200 dark:bg-slate-600"></div> Not Visited</div>
-                                    <div class="flex items-center gap-2"><div class="w-5 h-5 rounded bg-red-500 shadow-sm"></div> Not Answered</div>
-                                    <div class="flex items-center gap-2"><div class="w-5 h-5 rounded bg-green-500 shadow-sm"></div> Answered</div>
-                                    <div class="flex items-center gap-2"><div class="w-5 h-5 rounded bg-purple-500 shadow-sm"></div> Review</div>
-                                    <div class="flex items-center gap-2 col-span-2"><div class="w-5 h-5 rounded bg-blue-500 relative shadow-sm"><div class="absolute right-0 bottom-0 w-2 h-2 bg-green-400 rounded-full border border-white"></div></div> Answered & Marked</div>
-                                </div>
-                            </div>
-
-                            <div class="theme-surface border theme-border rounded-2xl p-5 shadow-sm flex-1 overflow-y-auto">
-                                <div class="font-extrabold text-sm mb-4 uppercase tracking-wider theme-text-sec">Questions Overview</div>
-                                <div class="grid grid-cols-5 gap-2.5" id="palette-grid"></div>
-                            </div>
-                        </div>
-                    </div>
-                `;
-                Views.renderCurrentQuestion();
-                Views.renderPalette();
-            },
-
-            renderCurrentQuestion: () => {
-                if(!activeEngine) return;
-                const q = activeEngine.questions[activeEngine.currentIndex];
-                const content = document.getElementById('question-content');
-                const selectedAns = activeEngine.answers[q.questionId];
-
-                // Note: Options in unified schema are in an object { A: {...}, B: {...} }
-                const optionsArray = Object.entries(q.options).map(([key, data]) => ({
-                    id: key, 
-                    mr: data.optionMarathi, 
-                    en: data.optionEnglish 
-                }));
-
-                content.innerHTML = `
-                    <div class="flex gap-4 sm:gap-6 mb-8">
-                        <div class="font-black text-2xl text-brand-600 dark:text-brand-400 mt-1">Q.${activeEngine.currentIndex + 1}</div>
-                        <div class="flex-1">
-                            <div class="text-xl sm:text-2xl font-bold mb-3 leading-relaxed">${q.questionMarathi}</div>
-                            <div class="text-base sm:text-lg theme-text-sec leading-relaxed font-medium">${q.questionEnglish}</div>
-                        </div>
-                    </div>
-                    
-                    <div class="space-y-4 pl-0 sm:pl-14">
-                        ${optionsArray.map(opt => `
-                            <label class="flex items-start gap-4 p-5 rounded-xl border-2 ${selectedAns === opt.id ? 'border-brand-500 bg-brand-50/50 dark:bg-brand-900/20 shadow-sm' : 'theme-border hover:bg-slate-50 dark:hover:bg-slate-800/50 hover:border-slate-300 dark:hover:border-slate-600'} cursor-pointer transition-all transform hover:-translate-y-0.5">
-                                <div class="mt-1 flex items-center justify-center">
-                                    <input type="radio" name="opt_${q.questionId}" value="${opt.id}" class="w-5 h-5 accent-brand-600" ${selectedAns === opt.id ? 'checked' : ''} onclick="activeEngine.selectOption('${opt.id}')">
-                                </div>
-                                <div class="flex-1">
-                                    <div class="font-bold text-lg leading-relaxed flex items-center gap-3">
-                                        <span class="inline-block w-6 text-center text-sm font-black theme-text-sec bg-slate-100 dark:bg-slate-800 rounded">${opt.id}</span>
-                                        ${opt.mr}
-                                    </div>
-                                    <div class="text-sm theme-text-sec mt-1.5 font-medium ml-9">${opt.en}</div>
-                                </div>
-                            </label>
-                        `).join('')}
-                    </div>
-                `;
-            },
-
-            renderPalette: () => {
-                if(!activeEngine) return;
-                const grid = document.getElementById('palette-grid');
-                grid.innerHTML = activeEngine.questions.map((q, i) => {
-                    const status = activeEngine.status[q.questionId];
-                    let bgClass = 'bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-300';
-                    if (status === 'visited') bgClass = 'bg-red-500 text-white shadow-md';
-                    if (status === 'answered') bgClass = 'bg-green-500 text-white shadow-md';
-                    if (status === 'review') bgClass = 'bg-purple-500 text-white shadow-md';
-                    if (status === 'answered-review') bgClass = 'bg-blue-500 text-white shadow-md';
-                    
-                    const isCurrent = activeEngine.currentIndex === i;
-                    const ringClass = isCurrent ? 'ring-4 ring-offset-2 ring-brand-500 dark:ring-offset-slate-900 scale-110 z-10' : '';
-
-                    return `<button onclick="activeEngine.goToQuestion(${i}); Views.renderCurrentQuestion(); Views.renderPalette();" 
-                                    class="w-full aspect-square rounded-lg flex items-center justify-center font-bold text-sm ${bgClass} ${ringClass} transition-all hover:opacity-80 relative">
-                                ${i + 1}
-                                ${status === 'answered-review' ? `<div class="absolute -right-1.5 -bottom-1.5 w-3 h-3 bg-green-400 rounded-full border-2 border-white dark:border-slate-800"></div>` : ''}
-                            </button>`;
-                }).join('');
-            },
-
-            quizAction: (action) => {
-                if(!activeEngine) return;
-                if(action === 'clear') {
-                    activeEngine.clearResponse();
-                    Views.renderCurrentQuestion();
-                    Views.renderPalette();
-                } else if(action === 'next' || action === 'review') {
-                    activeEngine.next(action === 'review');
-                    Views.renderCurrentQuestion();
-                    Views.renderPalette();
-                } else if(action === 'submit') {
-                    const res = activeEngine.calculateResult();
-                    app.openModal(`
-                        <div class="p-8">
-                            <div class="w-16 h-16 bg-red-100 text-red-600 rounded-full flex items-center justify-center mx-auto mb-4"><i class="ph-bold ph-paper-plane-tilt text-3xl"></i></div>
-                            <h2 class="text-2xl font-bold mb-6 text-center">Submit Assessment</h2>
-                            <div class="grid grid-cols-2 gap-4 mb-8 bg-slate-50 dark:bg-slate-900/50 p-5 rounded-2xl border theme-border text-sm font-medium">
-                                <div class="flex justify-between"><span class="theme-text-sec">Total:</span> <strong class="text-lg">${res.total}</strong></div>
-                                <div class="flex justify-between"><span class="theme-text-sec">Answered:</span> <strong class="text-green-600 text-lg">${res.correct + res.wrong}</strong></div>
-                                <div class="flex justify-between col-span-2"><span class="theme-text-sec">Unanswered:</span> <strong class="text-red-600 text-lg">${res.skipped}</strong></div>
-                            </div>
-                            <p class="mb-8 font-bold text-center text-sm theme-text-sec">Are you sure you want to finalize your submission? This action is irreversible.</p>
-                            <div class="flex gap-4">
-                                <button onclick="app.closeModal()" class="flex-1 py-3.5 bg-white border-2 theme-border dark:bg-slate-800 rounded-xl hover:bg-slate-50 transition-colors font-bold">Cancel</button>
-                                <button onclick="Views.submitQuiz()" class="flex-1 py-3.5 bg-red-600 text-white rounded-xl hover:bg-red-700 transition-all font-bold shadow-md transform hover:-translate-y-0.5">Submit Final</button>
-                            </div>
-                        </div>
-                    `);
-                }
-            },
-
-            submitQuiz: async (isAuto = false) => {
-                if(!activeEngine || activeEngine.isSubmitted) return;
-                activeEngine.isSubmitted = true;
-                activeEngine.stopTimer();
-                activeEngine.cleanupAntiCheat();
-                app.closeModal();
-                if(isAuto) app.showToast('Time is up! Quiz submitted automatically.', 'info');
-
-                const result = activeEngine.calculateResult();
-                
-                // Fire confetti for good scores (> 70%)
-                if (result.percentage >= 70 && typeof confetti === 'function') {
-                    confetti({ particleCount: 100, spread: 70, origin: { y: 0.6 }, colors: ['#3b82f6', '#22c55e', '#a855f7'] });
-                }
-
-                if(activeEngine.config.mode === 'test' && window.fb.isFirebaseValid && window.fb.auth.currentUser) {
-                    try {
-                        const uid = window.fb.auth.currentUser.uid;
-                        const attemptRef = window.fb.collection(window.fb.db, 'artifacts', 'studysphere', 'users', uid, 'quizAttempts');
-                        await window.fb.addDoc(attemptRef, {
-                            quizId: activeEngine.quizData.quizId,
-                            score: result.finalScore,
-                            percentage: result.percentage,
-                            timestamp: window.fb.serverTimestamp(),
-                            tabSwitches: result.tabSwitches
-                        });
-                    } catch (e) {
-                        console.error("Failed to save attempt to backend", e);
-                    }
-                }
-
-                const root = document.getElementById('app-root');
-                root.innerHTML = `
-                    <div class="max-w-5xl mx-auto space-y-8 animate-fade-in-up">
-                        <div class="flex items-center justify-between mb-2">
-                            <h2 class="text-3xl sm:text-4xl font-extrabold flex items-center gap-3"><i class="ph-fill ph-chart-line-up text-brand-600"></i> Performance Analytics</h2>
-                            <button onclick="app.navigate('/subject/${activeEngine.quizData.subjectId}')" class="hidden sm:inline-block px-5 py-2.5 border-2 theme-border rounded-xl font-bold text-sm hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors">Return to Topics</button>
-                        </div>
-
-                        <!-- Score Card -->
-                        <div class="theme-surface border theme-border rounded-3xl p-8 sm:p-10 shadow-lg flex flex-col md:flex-row gap-10 items-center md:items-stretch justify-between relative overflow-hidden">
-                            <div class="absolute -right-20 -top-20 w-64 h-64 bg-brand-50 dark:bg-brand-900/20 rounded-full blur-3xl pointer-events-none"></div>
-                            
-                            <!-- Donut Chart / Score display -->
-                            <div class="flex-1 flex flex-col items-center justify-center relative z-10 border-r-0 md:border-r theme-border pb-8 md:pb-0 md:pr-10">
-                                <div class="text-sm font-extrabold uppercase tracking-widest theme-text-sec mb-4">Final Assessment Score</div>
-                                <div class="text-7xl font-black text-transparent bg-clip-text bg-gradient-to-r from-brand-600 to-indigo-600 dark:from-brand-400 dark:to-indigo-400 mb-4">${result.finalScore.toFixed(2)} <span class="text-3xl text-slate-300 dark:text-slate-600 font-bold">/ ${result.maxPossible}</span></div>
-                                <div class="inline-flex items-center gap-2 px-4 py-2 bg-brand-50 text-brand-700 dark:bg-brand-900/40 dark:text-brand-300 rounded-full font-bold text-sm border border-brand-200 dark:border-brand-800/50 shadow-sm">
-                                    <i class="ph-fill ph-target"></i> Accuracy: ${result.total > result.skipped ? Math.round((result.correct/(result.total-result.skipped))*100) : 0}%
-                                </div>
-                            </div>
-                            
-                            <!-- Stats Grid -->
-                            <div class="flex-1 grid grid-cols-2 gap-x-8 gap-y-6 w-full relative z-10 sm:text-lg">
-                                <div class="flex flex-col gap-1 pb-3 border-b theme-border">
-                                    <span class="text-xs font-bold uppercase tracking-wider theme-text-sec">Total Questions</span>
-                                    <span class="font-black text-2xl">${result.total}</span>
-                                </div>
-                                <div class="flex flex-col gap-1 pb-3 border-b theme-border">
-                                    <span class="text-xs font-bold uppercase tracking-wider theme-text-sec">Attempted</span>
-                                    <span class="font-black text-2xl">${result.correct + result.wrong}</span>
-                                </div>
-                                <div class="flex flex-col gap-1 pb-3 border-b theme-border">
-                                    <span class="text-xs font-bold uppercase tracking-wider text-green-600 dark:text-green-500">Correct (+${result.posMarks})</span>
-                                    <span class="font-black text-2xl text-green-600 dark:text-green-400">${result.correct}</span>
-                                </div>
-                                <div class="flex flex-col gap-1 pb-3 border-b theme-border">
-                                    <span class="text-xs font-bold uppercase tracking-wider text-red-600 dark:text-red-500">Incorrect (-${result.negMarks})</span>
-                                    <span class="font-black text-2xl text-red-600 dark:text-red-400">${result.wrong}</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        ${activeEngine.tabSwitchCount > 0 ? `
-                            <div class="bg-amber-50 dark:bg-amber-900/20 border-2 border-amber-200 dark:border-amber-800 p-5 rounded-2xl text-amber-800 dark:text-amber-400 text-sm flex gap-4 items-start shadow-sm">
-                                <i class="ph-fill ph-warning-circle text-2xl mt-0.5"></i>
-                                <div><strong class="text-base">Anti-Cheat Triggered:</strong> You navigated away from the active test window ${activeEngine.tabSwitchCount} time(s). This violation has been flagged in your permanent record.</div>
-                            </div>
-                        ` : ''}
-
-                        <!-- Detailed Question Breakdown -->
-                        <div class="pt-6">
-                            <h3 class="text-2xl font-bold mb-6 flex items-center gap-2"><i class="ph-bold ph-list-magnifying-glass theme-text-sec"></i> Detailed Question Review</h3>
-                            <div class="space-y-5">
-                                ${activeEngine.questions.map((q, i) => {
-                                    const userAnsKey = result.answers[q.questionId];
-                                    const isCorrect = userAnsKey === q.correctOption;
-                                    const isSkipped = !userAnsKey;
-                                    
-                                    let headerClass = 'bg-slate-50 dark:bg-slate-800/50 border-slate-200 dark:border-slate-700 hover:border-slate-300';
-                                    let statusBadge = `<span class="px-3 py-1 bg-slate-200 text-slate-700 dark:bg-slate-700 dark:text-slate-300 rounded-lg text-xs font-black tracking-wider uppercase shadow-sm">Skipped</span>`;
-                                    
-                                    if(isCorrect) {
-                                        headerClass = 'bg-green-50/50 dark:bg-green-900/10 border-green-200 dark:border-green-900/30 hover:border-green-300';
-                                        statusBadge = `<span class="px-3 py-1 bg-green-500 text-white rounded-lg text-xs font-black tracking-wider uppercase shadow-sm flex items-center gap-1"><i class="ph-bold ph-check"></i> Correct</span>`;
-                                    } else if(!isSkipped) {
-                                        headerClass = 'bg-red-50/50 dark:bg-red-900/10 border-red-200 dark:border-red-900/30 hover:border-red-300';
-                                        statusBadge = `<span class="px-3 py-1 bg-red-500 text-white rounded-lg text-xs font-black tracking-wider uppercase shadow-sm flex items-center gap-1"><i class="ph-bold ph-x"></i> Incorrect</span>`;
-                                    }
-
-                                    const userOptionText = isSkipped ? 'Not Attempted' : q.options[userAnsKey]?.optionMarathi;
-                                    const correctOptionText = q.options[q.correctOption]?.optionMarathi;
-
-                                    return `
-                                    <div class="border-2 theme-border rounded-2xl overflow-hidden shadow-sm transition-shadow">
-                                        <button onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('.arrow').classList.toggle('rotate-180')" class="w-full text-left p-5 sm:p-6 flex gap-4 ${headerClass} focus:outline-none transition-colors">
-                                            <div class="font-black text-xl mt-1 opacity-50">Q${i+1}</div>
-                                            <div class="flex-1">
-                                                <div class="font-bold text-lg mb-2 leading-relaxed">${q.questionMarathi}</div>
-                                                <div class="flex flex-wrap items-center gap-3 mt-3">
-                                                    ${statusBadge}
-                                                    <span class="text-xs font-bold theme-text-sec flex items-center gap-1"><i class="ph-bold ph-caret-down"></i> View Solution</span>
-                                                </div>
-                                            </div>
-                                            <div class="w-8 h-8 rounded-full bg-white dark:bg-slate-800 flex items-center justify-center shadow-sm shrink-0">
-                                                <i class="ph-bold ph-caret-down arrow transition-transform duration-300"></i>
-                                            </div>
-                                        </button>
-                                        <div class="hidden border-t-2 theme-border p-5 sm:p-8 bg-white dark:bg-slate-900">
-                                            <div class="text-sm font-medium theme-text-sec mb-6 pb-6 border-b theme-border">${q.questionEnglish}</div>
-                                            
-                                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 mb-8">
-                                                <div class="p-4 rounded-xl border-2 ${!isSkipped && !isCorrect ? 'border-red-200 bg-red-50/50 dark:bg-red-900/10 dark:border-red-900/30' : 'theme-border bg-slate-50 dark:bg-slate-800/50'} relative">
-                                                    <div class="absolute -top-3 left-4 bg-white dark:bg-slate-900 px-2 text-xs font-bold uppercase tracking-wider theme-text-sec">Your Response</div>
-                                                    <div class="font-bold mt-2 ${!isSkipped && !isCorrect ? 'text-red-700 dark:text-red-400' : ''}">${isSkipped ? '-' : `<span class="mr-2 text-sm px-1.5 py-0.5 rounded bg-slate-200 dark:bg-slate-700">${userAnsKey}</span> ${userOptionText}`}</div>
-                                                </div>
-                                                <div class="p-4 rounded-xl border-2 border-green-200 bg-green-50/50 dark:bg-green-900/10 dark:border-green-900/30 relative">
-                                                    <div class="absolute -top-3 left-4 bg-white dark:bg-slate-900 px-2 text-xs font-bold uppercase tracking-wider text-green-600 dark:text-green-500">Correct Answer</div>
-                                                    <div class="font-bold mt-2 text-green-800 dark:text-green-400"><span class="mr-2 text-sm px-1.5 py-0.5 rounded bg-green-200 dark:bg-green-900/50 text-green-800 dark:text-green-300">${q.correctOption}</span> ${correctOptionText}</div>
-                                                </div>
-                                            </div>
-
-                                            <div class="p-6 rounded-2xl bg-brand-50/50 dark:bg-brand-900/10 border-2 border-brand-100 dark:border-brand-900/30">
-                                                <div class="font-black flex items-center gap-2 mb-3 text-brand-700 dark:text-brand-400 uppercase tracking-wider text-sm"><i class="ph-fill ph-lightbulb text-lg"></i> Official Explanation</div>
-                                                <p class="mb-3 font-medium leading-relaxed text-base">${q.explanationMarathi}</p>
-                                                <p class="theme-text-sec text-sm leading-relaxed font-medium pt-3 border-t border-brand-200 dark:border-brand-800/50">${q.explanationEnglish}</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    `;
-                                }).join('')}
-                            </div>
-                        </div>
-                        <div class="text-center pt-8">
-                            <button onclick="app.navigate('/subject/${activeEngine.quizData.subjectId}')" class="px-8 py-3.5 bg-slate-800 text-white dark:bg-slate-200 dark:text-slate-900 rounded-xl font-bold shadow-md hover:shadow-lg transition-all">Return to Dashboard</button>
-                        </div>
-                    </div>
-                `;
-                window.scrollTo({ top: 0, behavior: 'smooth' });
-            },
-
-            Login: () => `
-                <div class="max-w-md mx-auto theme-surface border theme-border rounded-3xl p-8 sm:p-10 shadow-xl mt-10 animate-fade-in-up relative overflow-hidden">
-                    <div class="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-brand-500 to-indigo-500"></div>
-                    <div class="text-center mb-10">
-                        <div class="w-20 h-20 bg-brand-50 dark:bg-brand-900/30 text-brand-600 rounded-full flex items-center justify-center mx-auto mb-5 shadow-inner"><i class="ph-fill ph-user-circle text-5xl"></i></div>
-                        <h2 class="text-3xl font-extrabold mb-2">Welcome Back</h2>
-                        <p class="theme-text-sec font-medium">Authenticate to access Pro Test modes.</p>
-                    </div>
-                    
-                    ${!window.fb.isFirebaseValid ? `
-                        <div class="bg-amber-50 border border-amber-200 text-amber-800 dark:bg-amber-900/20 dark:border-amber-800/50 dark:text-amber-400 p-4 rounded-xl text-sm mb-6 font-medium flex gap-3 items-start">
-                            <i class="ph-fill ph-info text-xl shrink-0"></i>
-                            <div><strong>Local Demo Mode Active.</strong> Database is disconnected. Any credentials will log you in locally.</div>
-                        </div>
-                    ` : ''}
-
-                    <div class="space-y-5">
-                        <div>
-                            <label class="block text-sm font-bold mb-2 theme-text-sec uppercase tracking-wider">Email Address</label>
-                            <input type="email" id="login-email" class="w-full px-4 py-3.5 rounded-xl border-2 theme-border bg-slate-50 dark:bg-slate-900/50 focus:ring-2 focus:border-brand-500 focus:ring-brand-500 outline-none transition-all font-medium" placeholder="aspirant@mpsc.gov.in">
-                        </div>
-                        <div>
-                            <label class="block text-sm font-bold mb-2 theme-text-sec uppercase tracking-wider">Password</label>
-                            <input type="password" id="login-pass" class="w-full px-4 py-3.5 rounded-xl border-2 theme-border bg-slate-50 dark:bg-slate-900/50 focus:ring-2 focus:border-brand-500 focus:ring-brand-500 outline-none transition-all font-medium" placeholder="••••••••">
-                        </div>
-                        <button onclick="Views.processLogin()" class="w-full py-4 bg-gradient-to-r from-brand-600 to-brand-700 hover:from-brand-700 hover:to-brand-800 text-white rounded-xl font-bold transition-all shadow-md hover:shadow-lg mt-4 text-lg">Sign In</button>
-                    </div>
+            const subjectView = document.getElementById('view-subject');
+            subjectView.innerHTML = `
+                <div class="breadcrumb">
+                    <a onclick="renderHome()">Home</a>
+                    <span class="separator"><i class="fas fa-chevron-right"></i></span>
+                    <span class="current">${subject.subjectEn}</span>
                 </div>
-            `,
-            processLogin: async () => {
-                const e = document.getElementById('login-email').value;
-                const p = document.getElementById('login-pass').value;
-                if(!e || !p) { app.showToast('Please enter both email and password.', 'error'); return; }
                 
-                if(window.fb.isFirebaseValid) {
-                    try {
-                        await window.fb.signInWithEmailAndPassword(window.fb.auth, e, p);
-                        app.showToast('Authentication Successful', 'success');
-                        app.navigate('/');
-                    } catch(err) {
-                        app.showToast('Authentication Failed: ' + err.message, 'error');
-                    }
-                } else {
-                    app.currentUser = { uid: 'dev_local_user', email: e };
-                    app.renderNavigationLinks();
-                    app.showToast('Local Mock Session Established', 'success');
-                    app.navigate('/');
-                }
-            },
-
-            Dashboard: () => {
-                if(!app.currentUser) { app.navigate('/login'); return ''; }
-                return `
-                    <div class="max-w-5xl mx-auto space-y-8 animate-fade-in-up">
-                        <div class="theme-surface border theme-border rounded-3xl p-8 sm:p-10 shadow-lg flex items-center gap-8 relative overflow-hidden">
-                            <div class="absolute right-0 top-0 w-64 h-full bg-gradient-to-l from-brand-50 to-transparent dark:from-brand-900/10 pointer-events-none"></div>
-                            <div class="w-24 h-24 bg-brand-600 text-white rounded-full flex items-center justify-center text-4xl font-black shadow-md z-10">
-                                ${app.currentUser.email ? app.currentUser.email[0].toUpperCase() : 'A'}
-                            </div>
-                            <div class="z-10">
-                                <h2 class="text-3xl font-extrabold mb-1">${app.currentUser.email || 'MPSC Aspirant'}</h2>
-                                <p class="theme-text-sec font-medium">Session ID: <span class="font-mono text-xs bg-slate-100 dark:bg-slate-800 px-2 py-1 rounded">${app.currentUser.uid}</span></p>
-                            </div>
-                        </div>
-
-                        <h3 class="text-2xl font-bold pt-4 px-2">Performance Metrics</h3>
-                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                            <div class="theme-surface border theme-border rounded-2xl p-8 text-center shadow-sm hover:shadow-md transition-shadow">
-                                <div class="w-16 h-16 bg-blue-50 dark:bg-blue-900/20 text-blue-500 rounded-full flex items-center justify-center mx-auto mb-4"><i class="ph-fill ph-stack text-3xl"></i></div>
-                                <div class="text-4xl font-black mb-2 text-slate-800 dark:text-slate-100">-</div>
-                                <div class="text-sm font-bold uppercase tracking-wider theme-text-sec">Tests Completed</div>
-                            </div>
-                            <div class="theme-surface border theme-border rounded-2xl p-8 text-center shadow-sm hover:shadow-md transition-shadow">
-                                <div class="w-16 h-16 bg-green-50 dark:bg-green-900/20 text-green-500 rounded-full flex items-center justify-center mx-auto mb-4"><i class="ph-fill ph-target text-3xl"></i></div>
-                                <div class="text-4xl font-black mb-2 text-slate-800 dark:text-slate-100">- %</div>
-                                <div class="text-sm font-bold uppercase tracking-wider theme-text-sec">Average Accuracy</div>
-                            </div>
-                            <div class="theme-surface border theme-border rounded-2xl p-8 text-center shadow-sm hover:shadow-md transition-shadow">
-                                <div class="w-16 h-16 bg-amber-50 dark:bg-amber-900/20 text-amber-500 rounded-full flex items-center justify-center mx-auto mb-4"><i class="ph-fill ph-trophy text-3xl"></i></div>
-                                <div class="text-4xl font-black mb-2 text-slate-800 dark:text-slate-100">-</div>
-                                <div class="text-sm font-bold uppercase tracking-wider theme-text-sec">Highest Score</div>
-                            </div>
-                        </div>
-                        <div class="bg-slate-50 dark:bg-slate-800/50 p-4 rounded-xl text-sm font-medium theme-text-sec text-center border theme-border">
-                            <i class="ph-bold ph-info"></i> Global analytics require a connected production backend database.
-                        </div>
-                    </div>
-                `;
-            },
-
-            About: () => `
-                <div class="max-w-4xl mx-auto space-y-10 animate-fade-in-up py-8">
-                    <div class="text-center">
-                        <h1 class="text-4xl sm:text-5xl font-extrabold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-brand-600 to-indigo-600 dark:from-brand-400 dark:to-indigo-400">Our Mission</h1>
-                        <p class="text-xl theme-text-sec font-medium max-w-2xl mx-auto">Empowering aspirants with a structured, ad-free, and highly precise assessment platform.</p>
-                    </div>
-                    
-                    <div class="theme-surface border theme-border rounded-3xl p-8 sm:p-12 shadow-lg space-y-6 text-lg leading-relaxed font-medium">
-                        <p>StudySphere हे MPSC Combined Group B & C परीक्षेची तयारी करणाऱ्या विद्यार्थ्यांसाठी तयार केलेले bilingual learning आणि MCQ practice platform आहे.</p>
-                        <p>या platform चा मुख्य उद्देश विद्यार्थ्यांना <strong class="text-brand-600 dark:text-brand-400 font-extrabold">विषय &rarr; Chapter &rarr; Topic</strong> या क्रमाने अभ्यासाशी संबंधित MCQs सोडवण्याची आणि स्वतःच्या तयारीचे मूल्यमापन करण्याची सोपी सुविधा उपलब्ध करून देणे हा आहे.</p>
-                        <p>StudySphere वर विद्यार्थ्यांना विविध विषयांमधील Practice Quizzes आणि Test Quizzes सोडवता येतील. Quiz पूर्ण केल्यानंतर score, correct answers, incorrect answers, skipped questions आणि उपलब्ध असल्यास प्रश्नांचे explanations पाहता येतील.</p>
-                        <p>Website वरील content मराठी आणि English या दोन्ही भाषांमध्ये उपलब्ध करून देण्याचा प्रयत्न केला जातो, जेणेकरून विद्यार्थ्यांना प्रश्न समजून घेणे आणि revision करणे अधिक सोपे जाईल.</p>
-                    </div>
-
-                    <div class="bg-amber-50 dark:bg-amber-900/10 border-2 border-amber-200 dark:border-amber-900/30 p-8 rounded-3xl shadow-sm">
-                        <h3 class="text-xl font-black text-amber-800 dark:text-amber-500 mb-3 flex items-center gap-2"><i class="ph-fill ph-warning-circle"></i> Disclaimer</h3>
-                        <p class="text-amber-700 dark:text-amber-400/80 font-medium leading-relaxed">
-                            StudySphere is an independent educational tool built by the community. It is NOT officially affiliated with the Maharashtra Public Service Commission (MPSC). Always refer to the official portal for exam notifications, syllabus updates, and exact marking structures.
-                        </p>
-                    </div>
+                <div class="back-header">
+                    <button class="btn-back" onclick="goBack()"><i class="fas fa-arrow-left"></i> Back</button>
                 </div>
-            `,
-            
-            Contact: () => `
-                <div class="max-w-3xl mx-auto space-y-8 animate-fade-in-up py-8">
-                    <h1 class="text-4xl font-extrabold mb-8 flex items-center gap-3"><i class="ph-fill ph-envelope-simple text-brand-600"></i> Get in Touch</h1>
-                    <div class="theme-surface border theme-border rounded-3xl p-8 sm:p-12 shadow-lg">
-                        <p class="theme-text-sec text-xl font-medium mb-8 leading-relaxed">Found an error in a question? Have feature requests? Join our active Telegram community to collaborate with fellow aspirants and the development team.</p>
-                        <a href="https://t.me/+va0AGcqvCdQzNTI1" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-3 px-8 py-4 bg-[#0088cc] hover:bg-[#0077b3] text-white rounded-2xl font-bold transition-all shadow-md hover:shadow-lg transform hover:-translate-y-1 text-lg">
-                            <i class="ph-fill ph-telegram-logo text-3xl"></i> Open Telegram Community
-                        </a>
-                        <div class="mt-10 pt-8 border-t theme-border">
-                            <p class="text-sm font-bold theme-text-sec uppercase tracking-wider">Direct Email (Coming Soon)</p>
-                        </div>
-                    </div>
+                
+                <div class="view-header">
+                    <h2>${subject.subjectMr}</h2>
+                    <p>${subject.subjectEn}</p>
                 </div>
-            `
-        };
-
-        // Static fallback for missing routes
-        Views.Legal = (type) => `
-            <div class="max-w-4xl mx-auto theme-surface border theme-border rounded-3xl p-10 shadow-lg animate-fade-in-up my-10">
-                <h1 class="text-3xl font-extrabold mb-4">${type === 'privacy' ? 'Privacy Policy' : 'Terms of Service'}</h1>
-                <p class="font-medium theme-text-sec mb-8">Effective Date: October 2026</p>
-                <div class="space-y-6 font-medium leading-relaxed text-slate-700 dark:text-slate-300">
-                    <p>Welcome to StudySphere's final release policies. This system is designed as an educational tool for self-assessment.</p>
-                    <p><strong>Data Processing:</strong> In production modes connected to Firebase, we securely store your email, authentication keys, and quiz metrics entirely for providing you dashboard analytics.</p>
-                    <p><strong>Integrity:</strong> Test Modes implement strict single-attempt constraints and tab-switching monitors. Manipulating the client to bypass these ruins the utility of the assessment tools.</p>
-                </div>
-            </div>
-        `;
-
-        app.logout = async () => {
-            if(window.fb.isFirebaseValid) {
-                await window.fb.signOut(window.fb.auth);
-            } else {
-                app.currentUser = null;
-                app.renderNavigationLinks();
-                app.navigate('/');
-                app.showToast('Session terminated successfully.', 'info');
-            }
-        };
-
-        const router = async () => {
-            const hash = window.location.hash || '#/';
-            const root = document.getElementById('app-root');
-            activeEngine = null;
-            
-            // Show asynchronous Skeleton Loader for immediate feedback
-            root.innerHTML = `
-                <div class="w-full max-w-5xl mx-auto space-y-6 pt-10">
-                    <div class="h-12 w-1/3 rounded-xl skeleton"></div>
-                    <div class="h-6 w-1/2 rounded-xl skeleton mb-10"></div>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <div class="h-48 w-full rounded-2xl skeleton"></div>
-                        <div class="h-48 w-full rounded-2xl skeleton"></div>
-                    </div>
+                
+                <div class="section-title">Chapters (${subject.chapters.length})</div>
+                <div class="chapter-container">
+                    ${chaptersHTML}
                 </div>
             `;
 
-            try {
-                let contentHTML = '';
-                if (hash === '#/') contentHTML = await Views.Home();
-                else if (hash.startsWith('#/subject/')) contentHTML = await Views.Subject(hash.split('/')[2]);
-                else if (hash.startsWith('#/topic/')) contentHTML = await Views.Topic(hash.split('/')[2]);
-                else if (hash === '#/login') contentHTML = Views.Login();
-                else if (hash === '#/dashboard') contentHTML = Views.Dashboard();
-                else if (hash === '#/about') contentHTML = Views.About();
-                else if (hash === '#/contact') contentHTML = Views.Contact();
-                else if (hash === '#/privacy-policy') contentHTML = Views.Legal('privacy');
-                else if (hash === '#/terms') contentHTML = Views.Legal('terms');
-                else contentHTML = `<div class="text-center py-24 text-red-500 font-extrabold text-2xl">Page Not Found (404)</div>`;
+            navigateSPA('view-subject');
+        }
+
+        
+        function toggleChapter(chapterCode) {
+            const card = document.getElementById(`chapter-${chapterCode}`);
+            const header = card.querySelector('.chapter-header');
+            const topicList = card.querySelector('.topic-list');
+            
+            const isOpen = card.classList.contains('open');
+            
+            if (isOpen) {
+                card.classList.remove('open');
+                header.setAttribute('aria-expanded', 'false');
+                topicList.setAttribute('aria-hidden', 'true');
+            } else {
+                card.classList.add('open');
+                header.setAttribute('aria-expanded', 'true');
+                topicList.setAttribute('aria-hidden', 'false');
+            }
+        }
+
+        
+        function renderTopic(topicCode, subjectCode, chapterCode, pushToHistory = true) {
+            const subject = syllabusData.find(s => s.code === subjectCode);
+            if (!subject) return navigateSPA('view-error');
+            
+            const chapter = subject.chapters.find(c => c.code === chapterCode);
+            if (!chapter) return navigateSPA('view-error');
+            
+            const topic = chapter.topics.find(t => t.code === topicCode);
+            if (!topic) return navigateSPA('view-error');
+
+            appState = { view: 'topic', subjectCode: subjectCode, chapterCode: chapterCode, topicCode: topicCode };
+            if (pushToHistory) {
+                history.pushState(appState, '', '');
+            }
+
+            const topicView = document.getElementById('view-topic');
+            topicView.innerHTML = `
+                <div class="breadcrumb">
+                    <a onclick="renderHome()">Home</a>
+                    <span class="separator"><i class="fas fa-chevron-right"></i></span>
+                    <a onclick="renderSubject('${subject.code}')">${subject.subjectEn}</a>
+                    <span class="separator"><i class="fas fa-chevron-right"></i></span>
+                    <span class="current">${chapter.chapterEn}</span>
+                </div>
+
+                <div class="back-header">
+                    <button class="btn-back" onclick="goBack()"><i class="fas fa-arrow-left"></i> Back</button>
+                </div>
+
+                <div class="view-header" style="margin-bottom: 2rem;">
+                    <h2>${topic.topicMr}</h2>
+                    <p>${topic.topicEn}</p>
+                    <div style="font-size:0.75rem; color:var(--text-secondary); margin-top:0.5rem; font-family:monospace;">Code: ${topic.code}</div>
+                </div>
+
+                <div class="section-title">Available Quizzes</div>
                 
-                root.innerHTML = contentHTML;
-            } catch (e) {
-                console.error("Routing error:", e);
-                root.innerHTML = `<div class="text-center py-24 text-red-500 font-bold text-xl">A rendering exception occurred. Check console.</div>`;
+                <!-- Placeholder for future Step 4 (Quiz Data Integration) -->
+                <div class="no-quiz-card">
+                    <i class="fas fa-hourglass-half" style="font-size: 2rem; margin-bottom: 1rem;"></i>
+                    <h3>या Topic साठी Quiz लवकरच उपलब्ध होईल.</h3>
+                    <p style="margin-top:0.5rem;">Quiz for this topic will be available soon.</p>
+                </div>
+            `;
+
+            navigateSPA('view-topic');
+        }
+
+        
+        function navigateSPA(targetViewId) {
+            // Hide all views
+            document.querySelectorAll('.view').forEach(v => {
+                v.classList.remove('active');
+                v.style.display = 'none';
+            });
+            
+            // Show target
+            const target = document.getElementById(targetViewId);
+            if (target) {
+                target.style.display = 'block';
+                // Small delay to allow CSS transitions to trigger
+                setTimeout(() => target.classList.add('active'), 10);
             }
             window.scrollTo(0, 0);
-        };
-
-        window.addEventListener('hashchange', router);
-        
-        window.addEventListener('DOMContentLoaded', () => {
-            if(window.fb && window.fb.isFirebaseValid) {
-                window.fb.onAuthStateChanged(window.fb.auth, (user) => {
-                    app.currentUser = user;
-                    app.renderNavigationLinks();
-                    if(window.location.hash === '#/dashboard' || window.location.hash === '#/login') router();
-                });
-            } else {
-                app.renderNavigationLinks(); 
+            
+            // Sync side menu if open (Menu links use this function)
+            if(targetViewId === 'view-home') {
+                 if (document.getElementById('sidebar').classList.contains('open')) {
+                     toggleSidebar();
+                 }
             }
-            router();
-        });
+        }
+
+        function goBack() {
+            window.history.back();
+        }
+
+        // Theme and Font Utilities (from Step 1)
+        let currentFontSize = 16;
+        function initFontSize() {
+            const savedSize = localStorage.getItem('studySphere_fontSize');
+            if (savedSize) {
+                currentFontSize = parseInt(savedSize);
+                applyFontSize();
+            }
+        }
+        function changeFontSize(step) {
+            if (step > 0 && currentFontSize < 24) currentFontSize += 2;
+            if (step < 0 && currentFontSize > 12) currentFontSize -= 2;
+            applyFontSize();
+            localStorage.setItem('studySphere_fontSize', currentFontSize);
+        }
+        function resetFontSize() {
+            currentFontSize = 16;
+            applyFontSize();
+            localStorage.setItem('studySphere_fontSize', currentFontSize);
+        }
+        function applyFontSize() {
+            document.documentElement.style.setProperty('--base-font-size', currentFontSize + 'px');
+        }
+
+        function initTheme() {
+            const savedTheme = localStorage.getItem('studySphere_theme');
+            if (savedTheme) {
+                document.documentElement.setAttribute('data-theme', savedTheme);
+                updateThemeIcon(savedTheme);
+            } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                document.documentElement.setAttribute('data-theme', 'dark');
+                updateThemeIcon('dark');
+            }
+        }
+        function toggleTheme() {
+            const currentTheme = document.documentElement.getAttribute('data-theme') || 'light';
+            const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+            document.documentElement.setAttribute('data-theme', newTheme);
+            localStorage.setItem('studySphere_theme', newTheme);
+            updateThemeIcon(newTheme);
+        }
+        function updateThemeIcon(theme) {
+            const btn = document.getElementById('theme-toggle');
+            if (theme === 'dark') {
+                btn.innerHTML = '<i class="fas fa-sun"></i> Light Mode';
+            } else {
+                btn.innerHTML = '<i class="fas fa-moon"></i> Dark Mode';
+            }
+        }
+
+        // Sidebar Utilities
+        function toggleSidebar() {
+            document.getElementById('sidebar').classList.toggle('open');
+            document.querySelector('.sidebar-overlay').classList.toggle('active');
+        }
+
+        // Modal Utilities
+        function openModal(modalId) { document.getElementById(modalId).classList.add('active'); }
+        function closeModal(modalId) {
+            document.getElementById(modalId).classList.remove('active');
+            if(modalId === 'donate-modal') {
+                document.getElementById('custom-donation').value = '';
+                document.getElementById('donation-error').style.display = 'none';
+                clearAmountSelection();
+            }
+        }
+        function closeModalOutside(event, modalId) {
+            if (event.target.id === modalId) closeModal(modalId);
+        }
+
+        // Donation Utilities
+        let selectedDonationAmount = 0;
+        function setDonationAmount(amount) {
+            selectedDonationAmount = amount;
+            document.getElementById('custom-donation').value = '';
+            document.querySelectorAll('.amount-btn').forEach(btn => btn.classList.remove('selected'));
+            event.target.classList.add('selected');
+        }
+        function clearAmountSelection() {
+            selectedDonationAmount = 0;
+            document.querySelectorAll('.amount-btn').forEach(btn => btn.classList.remove('selected'));
+        }
+        function initiateUPIPayment() {
+            const customInput = document.getElementById('custom-donation').value;
+            const finalAmount = customInput ? parseFloat(customInput) : selectedDonationAmount;
+            const errorElement = document.getElementById('donation-error');
+            
+            if (!finalAmount || finalAmount <= 0) {
+                errorElement.innerText = "Please select or enter a valid amount greater than 0.";
+                errorElement.style.display = 'block';
+                return;
+            }
+            errorElement.style.display = 'none';
+            const upiId = "vikram.joshi9089@oksbi";
+            const upiUri = `upi://pay?pa=${upiId}&pn=${encodeURIComponent("StudySphere")}&am=${finalAmount}&cu=INR&tn=StudySphere Donation`;
+            window.location.href = upiUri;
+            setTimeout(() => {
+                closeModal('donate-modal');
+                alert("If you are on a mobile device, your UPI app should open shortly.");
+            }, 1000);
+        }
+
+        // Initialize App
+        window.onload = initApp;
     </script>
 </body>
 </html>
