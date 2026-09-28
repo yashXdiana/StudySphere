@@ -1,1211 +1,1381 @@
 <!DOCTYPE html>
-<html lang="en" class="light">
+<html lang="mr" data-theme="light" class="text-base transition-all duration-300">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>StudySphere | Competitive Exam Platform</title>
+    <title>StudySphere - MPSC Group B & C Preparation</title>
+    <meta name="description" content="Bilingual MCQ Practice Platform for MPSC Combined Group B and C Examination.">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700&family=Noto+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
 
     <script>
         tailwind.config = {
-            darkMode: 'class',
+            darkMode: ['class', '[data-theme="dark"]'],
             theme: {
                 extend: {
-                    colors: {
-                        app: {
-                            bg: '#FAF7F2', card: '#FFFFFF', header: '#181C23',
-                            textMain: '#29231E', textSec: '#6B6259', border: '#E5DCD2', footer: '#2F2924',
-                            darkBg: '#0F1115', darkCard: '#171B21', darkHeader: '#181C23',
-                            darkTextMain: '#E8EAED', darkTextSec: '#A6ADB8', darkBorder: '#2B313A', darkFooter: '#0B0D10'
-                        },
-                        brand: { DEFAULT: '#8B5E3C', dark: '#D39B6A' },
-                        subject: { DEFAULT: '#2563EB', dark: '#60A5FA' },
-                        success: { DEFAULT: '#15803D', dark: '#4ADE80' },
-                        warning: { DEFAULT: '#B7791F', dark: '#FBBF24' },
-                        error: { DEFAULT: '#DC2626', dark: '#F87171' }
+                    fontFamily: {
+                        sans: ['"Noto Sans"', '"Noto Sans Devanagari"', 'sans-serif'],
                     },
-                    fontFamily: { sans: ['"Noto Sans Devanagari"', 'sans-serif'], }
+                    colors: {
+                        brand: {
+                            50: '#eff6ff',
+                            100: '#dbeafe',
+                            500: '#3b82f6',
+                            600: '#2563eb',
+                            700: '#1d4ed8',
+                            900: '#1e3a8a',
+                        },
+                        dark: {
+                            bg: '#0f172a', // slate-900
+                            surface: '#1e293b', // slate-800
+                            border: '#334155' // slate-700
+                        }
+                    }
                 }
             }
         }
     </script>
-
-    <style type="text/tailwindcss">
-        @layer base {
-            body { @apply bg-app-bg text-app-textMain transition-colors duration-200 overflow-x-hidden antialiased; }
-            .dark body { @apply bg-app-darkBg text-app-darkTextMain; }
-        }
-        
-        @layer utilities {
-            .touch-target { @apply min-h-[44px] min-w-[44px] flex items-center justify-center; }
-            body.text-size-sm { font-size: 14px; }
-            body.text-size-base { font-size: 16px; }
-            body.text-size-lg { font-size: 18px; }
-            
-            .text-h1 { @apply text-[26px] md:text-[32px] font-bold leading-tight; }
-            .text-h2 { @apply text-[20px] md:text-[24px] font-semibold leading-snug; }
-            .text-h3 { @apply text-[18px] md:text-[20px] font-semibold; }
-            .text-body { @apply text-[1em] leading-[1.7]; }
-            .text-small { @apply text-[0.85em] leading-normal; }
-
-            .card { @apply bg-app-card dark:bg-app-darkCard border border-app-border dark:border-app-darkBorder rounded-xl shadow-sm; }
-            .topic-box { @apply bg-app-card dark:bg-app-darkCard border-t-4 border-t-brand dark:border-t-brand-dark border-l border-r border-b border-app-border dark:border-app-darkBorder rounded-b-xl rounded-t-sm shadow-sm p-5 md:p-7 mb-6; }
-            
-            .btn-primary { @apply bg-brand dark:bg-brand-dark text-white dark:text-app-darkBg px-6 py-3 rounded-lg font-medium transition-colors hover:opacity-90 active:scale-95 touch-target; }
-            .btn-secondary { @apply bg-transparent border border-app-border dark:border-app-darkBorder text-app-textMain dark:text-app-darkTextMain px-6 py-3 rounded-lg font-medium transition-colors hover:bg-gray-50 dark:hover:bg-gray-800 active:scale-95 touch-target; }
+    <style>
+        :root {
+            --bg-color: #f8fafc;
+            --surface-color: #ffffff;
+            --text-primary: #0f172a;
+            --text-secondary: #475569;
+            --border-color: #e2e8f0;
+            --palette-unvisited: #e2e8f0;
+            --palette-visited: #ef4444;
+            --palette-answered: #22c55e;
+            --palette-review: #a855f7;
+            --palette-ans-review: #3b82f6;
         }
 
-        ::-webkit-scrollbar { width: 8px; }
-        ::-webkit-scrollbar-track { background: transparent; }
-        ::-webkit-scrollbar-thumb { @apply bg-gray-300 dark:bg-gray-700 rounded-full; }
-        
-        .page-view { display: none; }
-        .page-view.active { display: block; animation: fadeIn 0.3s ease-in-out; }
-        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
-        
-        /* Table Styles */
-        .mpsc-table th { @apply bg-gray-100 dark:bg-gray-800 text-left p-3 font-semibold border border-app-border dark:border-app-darkBorder; }
-        .mpsc-table td { @apply p-3 border border-app-border dark:border-app-darkBorder; }
-        .mpsc-table tr:nth-child(even) { @apply bg-gray-50/50 dark:bg-gray-800/30; }
+        [data-theme="dark"] {
+            --bg-color: #0f172a;
+            --surface-color: #1e293b;
+            --text-primary: #f1f5f9;
+            --text-secondary: #94a3b8;
+            --border-color: #334155;
+            --palette-unvisited: #334155;
+        }
+
+        html {
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            scroll-behavior: smooth;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+            overflow-x: hidden;
+        }
+
+        /* Utility classes mapping to CSS vars */
+        .theme-bg { background-color: var(--bg-color); }
+        .theme-surface { background-color: var(--surface-color); }
+        .theme-text { color: var(--text-primary); }
+        .theme-text-sec { color: var(--text-secondary); }
+        .theme-border { border-color: var(--border-color); }
+
+        /* Font scaling logic via HTML root rem scaling */
+        html.font-small { font-size: 14px; }
+        html.font-default { font-size: 16px; }
+        html.font-large { font-size: 18px; }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: var(--bg-color); }
+        ::-webkit-scrollbar-thumb { background: var(--border-color); border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+
+        /* Animations */
+        .fade-in { animation: fadeIn 0.3s ease-in-out; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(5px); } to { opacity: 1; transform: translateY(0); } }
+
+        /* Radio Button Styling */
+        input[type="radio"] { accent-color: #2563eb; width: 1.25rem; height: 1.25rem; cursor: pointer; }
     </style>
 </head>
-<body class="text-size-base flex flex-col min-h-screen">
+<body class="theme-bg theme-text">
 
-    <!-- HEADER (Dark in both modes) -->
-    <header class="sticky top-0 z-40 w-full bg-app-header text-white shadow-md border-b border-gray-800">
-        <div class="max-w-5xl mx-auto px-4 h-16 flex items-center justify-between">
-            <a href="javascript:void(0)" onclick="app.navigate('home');" class="text-xl font-bold flex items-center gap-2 touch-target hover:text-gray-200 transition-colors">
-                <i class="fa-solid fa-graduation-cap text-brand-dark"></i> StudySphere
+    <!-- Accessibility Toolbar -->
+    <div class="theme-surface theme-border border-b text-xs sm:text-sm py-1.5 px-4 flex justify-between items-center z-50 sticky top-0">
+        <div class="flex items-center gap-2">
+            <span class="font-medium theme-text-sec hidden sm:inline">Accessibility:</span>
+            <button onclick="app.setFontSize('small')" class="px-2 py-0.5 rounded hover:bg-slate-200 dark:hover:bg-slate-700 transition" aria-label="Decrease font size">A−</button>
+            <button onclick="app.setFontSize('default')" class="px-2 py-0.5 rounded hover:bg-slate-200 dark:hover:bg-slate-700 transition font-medium" aria-label="Default font size">A</button>
+            <button onclick="app.setFontSize('large')" class="px-2 py-0.5 rounded hover:bg-slate-200 dark:hover:bg-slate-700 transition" aria-label="Increase font size">A+</button>
+        </div>
+        <div class="flex items-center gap-3">
+            <button onclick="app.toggleTheme()" class="flex items-center gap-1 px-2 py-0.5 rounded hover:bg-slate-200 dark:hover:bg-slate-700 transition" aria-label="Toggle Theme">
+                <i class="ph ph-sun text-lg dark:hidden"></i>
+                <i class="ph ph-moon text-lg hidden dark:block"></i>
+                <span class="hidden sm:inline" id="theme-label">Light Mode</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Main Header -->
+    <header class="theme-surface shadow-sm sticky top-8 z-40 border-b theme-border">
+        <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
+            <a href="#/" class="flex items-center gap-2 group focus:outline-none">
+                <div class="bg-brand-600 text-white p-1.5 rounded-lg group-hover:bg-brand-700 transition">
+                    <i class="ph ph-books text-2xl"></i>
+                </div>
+                <h1 class="text-2xl font-bold tracking-tight text-brand-600 dark:text-brand-500">StudySphere</h1>
             </a>
-            <button class="touch-target text-xl hover:text-brand-dark transition-colors focus:outline-none" onclick="app.toggleMobileMenu()">
-                <i class="fa-solid fa-bars"></i>
+            
+            <button onclick="app.toggleDrawer()" class="p-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-700 transition focus:outline-none focus:ring-2 focus:ring-brand-500" aria-label="Open Menu">
+                <i class="ph ph-list text-2xl theme-text"></i>
             </button>
         </div>
     </header>
 
-    <!-- HALF-SCREEN MENU DRAWER -->
-    <div id="mobile-menu-backdrop" class="fixed inset-0 bg-black/50 z-40 hidden opacity-0 transition-opacity duration-300" onclick="app.toggleMobileMenu()"></div>
-    <div id="mobile-menu" class="fixed top-0 right-0 h-[100dvh] w-[75vw] md:w-[350px] bg-app-card dark:bg-app-darkCard shadow-2xl transform translate-x-full transition-transform duration-300 ease-out z-50 flex flex-col border-l border-app-border dark:border-app-darkBorder">
-        
-        <div class="px-5 h-16 flex justify-between items-center border-b border-app-border dark:border-app-darkBorder">
-            <span class="font-bold text-lg text-brand dark:text-brand-dark">Menu</span>
-            <button onclick="app.toggleMobileMenu()" class="w-8 h-8 rounded-full bg-gray-100 dark:bg-gray-800 flex items-center justify-center hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors text-app-textMain dark:text-app-darkTextMain focus:outline-none">
-                <i class="fa-solid fa-xmark"></i>
+    <!-- Navigation Drawer Overlay -->
+    <div id="drawer-overlay" class="fixed inset-0 bg-black/50 z-50 hidden opacity-0 transition-opacity duration-300" onclick="app.toggleDrawer()"></div>
+    
+    <!-- Navigation Drawer -->
+    <nav id="drawer" class="fixed top-0 right-0 h-full w-4/5 max-w-sm theme-surface shadow-2xl z-50 transform translate-x-full transition-transform duration-300 flex flex-col">
+        <div class="p-4 flex items-center justify-between border-b theme-border">
+            <div class="flex items-center gap-2">
+                <i class="ph ph-books text-xl text-brand-600"></i>
+                <span class="font-bold text-lg">Menu</span>
+            </div>
+            <button onclick="app.toggleDrawer()" class="p-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-700 transition" aria-label="Close Menu">
+                <i class="ph ph-x text-xl"></i>
             </button>
         </div>
-        
-        <nav class="flex flex-col px-4 py-6 gap-2 overflow-y-auto flex-grow text-sm font-medium text-app-textMain dark:text-app-darkTextMain">
-            <a href="javascript:void(0)" onclick="app.navigate('home'); app.toggleMobileMenu();" class="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors">
-                <i class="fa-solid fa-house w-5 text-center text-brand dark:text-brand-dark"></i> Home
-            </a>
-            <a href="javascript:void(0)" onclick="app.navigate('about'); app.toggleMobileMenu();" class="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors">
-                <i class="fa-solid fa-circle-info w-5 text-center text-brand dark:text-brand-dark"></i> About Us
-            </a>
-            <a href="javascript:void(0)" onclick="app.navigate('sitemap'); app.toggleMobileMenu();" class="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors">
-                <i class="fa-solid fa-sitemap w-5 text-center text-brand dark:text-brand-dark"></i> Sitemap
-            </a>
-            <a href="javascript:void(0)" onclick="app.navigate('privacy'); app.toggleMobileMenu();" class="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors">
-                <i class="fa-solid fa-shield-halved w-5 text-center text-brand dark:text-brand-dark"></i> Privacy Policy
-            </a>
-            <a href="javascript:void(0)" onclick="app.navigate('terms'); app.toggleMobileMenu();" class="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors">
-                <i class="fa-solid fa-file-contract w-5 text-center text-brand dark:text-brand-dark"></i> Terms of Service
-            </a>
-        </nav>
+        <div class="flex-1 overflow-y-auto py-4 px-2 space-y-1" id="drawer-links">
+            <!-- Links rendered dynamically based on Auth state -->
+        </div>
+    </nav>
 
-        <div class="p-5 border-t border-app-border dark:border-app-darkBorder bg-gray-50 dark:bg-[#12151A]">
-            <div class="flex items-center justify-between mb-4">
-                <span class="text-sm font-medium text-app-textSec dark:text-app-darkTextSec">Theme</span>
-                <button onclick="app.toggleTheme()" class="w-8 h-8 rounded-full bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 flex items-center justify-center shadow-sm">
-                    <i class="fa-solid fa-sun text-warning text-xs dark:hidden"></i>
-                    <i class="fa-solid fa-moon text-blue-400 text-xs hidden dark:block"></i>
-                </button>
-            </div>
-            <div class="flex items-center justify-between">
-                <span class="text-sm font-medium text-app-textSec dark:text-app-darkTextSec">Text Size</span>
-                <div class="flex items-center gap-1 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 p-1 rounded-md shadow-sm">
-                    <button onclick="app.changeFontSize('sm')" class="px-2 py-1 rounded text-xs font-bold hover:bg-gray-100 dark:hover:bg-gray-700 text-app-textMain dark:text-app-darkTextMain">A-</button>
-                    <button onclick="app.changeFontSize('base')" class="px-2 py-1 rounded text-sm font-bold hover:bg-gray-100 dark:hover:bg-gray-700 text-app-textMain dark:text-app-darkTextMain">A</button>
-                    <button onclick="app.changeFontSize('lg')" class="px-2 py-1 rounded text-base font-bold hover:bg-gray-100 dark:hover:bg-gray-700 text-app-textMain dark:text-app-darkTextMain">A+</button>
-                </div>
-            </div>
+    <!-- Main Content Area -->
+    <main id="app-root" class="flex-1 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8 fade-in relative">
+        <!-- Content will be injected here by the router -->
+    </main>
+
+    <!-- Modals Container -->
+    <div id="modal-container" class="fixed inset-0 z-[60] flex items-center justify-center hidden">
+        <div class="absolute inset-0 bg-black/60 backdrop-blur-sm" onclick="app.closeModal()"></div>
+        <div id="modal-content" class="relative w-full max-w-md m-4 theme-surface rounded-xl shadow-2xl flex flex-col max-h-[90vh] overflow-y-auto fade-in">
+            <!-- Modal Body -->
         </div>
     </div>
 
-    <!-- MAIN CONTENT -->
-    <main class="flex-grow w-full max-w-5xl mx-auto px-4 py-8">
-        
-        <!-- PAGE 1: HOMEPAGE (Subjects List) -->
-        <div id="home-page" class="page-view active">
-            <div class="text-center mb-10">
-                <h1 class="text-h1 mb-2 text-brand dark:text-brand-dark">StudySphere</h1>
-                <p class="text-body text-app-textSec dark:text-app-darkTextSec max-w-2xl mx-auto font-medium">MPSC Group C Prelims + Mains Preparation</p>
-            </div>
-            <!-- Subjects Container -->
-            <div class="space-y-3 mb-10" id="subject-list-container"></div>
-        </div>
+    <!-- Custom Alert Container -->
+    <div id="toast-container" class="fixed bottom-4 left-1/2 transform -translate-x-1/2 z-[70] flex flex-col gap-2 w-full max-w-sm px-4"></div>
 
-        <!-- PAGE: ABOUT US -->
-        <div id="about-page" class="page-view">
-            <div class="mb-6 pb-4 border-b border-app-border dark:border-app-darkBorder">
-                <button onclick="app.navigate('home')" class="text-small text-app-textSec dark:text-app-darkTextSec hover:text-brand transition-colors mb-2 flex items-center gap-1"><i class="fa-solid fa-arrow-left"></i> Back</button>
-                <h1 class="text-h1 text-brand dark:text-brand-dark">About Us</h1>
-            </div>
-            <div class="card p-6 md:p-8 text-body space-y-4 text-app-textMain dark:text-app-darkTextMain">
-                <p>स्पर्धा परीक्षांची तयारी करणाऱ्या विद्यार्थ्यांसाठी अभ्यासाची माहिती सोप्या, व्यवस्थित आणि revision-friendly स्वरूपात उपलब्ध करून देणे हा या वेबसाइटचा उद्देश आहे.</p>
-                <p>येथे विषयानुसार Notes, One-Liners आणि Quiz उपलब्ध करून देण्याचा प्रयत्न केला जातो, जेणेकरून विद्यार्थ्यांना अभ्यास, उजळणी आणि सराव एकाच ठिकाणी करता येईल.</p>
-                <p>आम्ही माहिती शक्य तितकी अचूक आणि परीक्षेच्या दृष्टीने उपयुक्त ठेवण्याचा प्रयत्न करतो. मात्र कोणत्याही माहितीत चूक, त्रुटी किंवा अद्ययावत करण्याची आवश्यकता आढळल्यास कृपया आम्हाला कळवा.</p>
-                <p>दिलेली माहिती चुकीची किंवा त्रुटीपूर्ण आहे असे वाटल्यास, कृपया Telegram वर आम्हाला कळवा. तुमच्या सूचनेची पडताळणी करून आवश्यक असल्यास माहितीमध्ये सुधारणा केली जाईल.</p>
-                <p class="font-medium text-brand dark:text-brand-dark">तुमच्या अभ्यासासाठी ही वेबसाइट अधिक उपयुक्त बनवण्यासाठी तुमचा अभिप्राय आमच्यासाठी महत्त्वाचा आहे.</p>
-            </div>
-        </div>
-
-        <!-- PAGE: PRIVACY POLICY -->
-        <div id="privacy-page" class="page-view">
-            <div class="mb-6 pb-4 border-b border-app-border dark:border-app-darkBorder">
-                <button onclick="app.navigate('home')" class="text-small text-app-textSec dark:text-app-darkTextSec hover:text-brand transition-colors mb-2 flex items-center gap-1"><i class="fa-solid fa-arrow-left"></i> Back</button>
-                <h1 class="text-h1 text-brand dark:text-brand-dark">Privacy Policy</h1>
-                <p class="text-sm text-app-textSec mt-1">Last Updated: October 2026</p>
-            </div>
-            <div class="card p-6 md:p-8 text-body space-y-6">
-                <p>आमच्या वेबसाइटवर येणाऱ्या वापरकर्त्यांच्या गोपनीयतेचा आम्ही आदर करतो.</p>
-                <div>
-                    <h3 class="font-bold text-lg mb-2">1. आम्ही कोणती माहिती गोळा करू शकतो?</h3>
-                    <p class="mb-2">वेबसाइटच्या काही सुविधांसाठी खालील माहिती आवश्यक असू शकते:</p>
-                    <ul class="list-disc pl-5 space-y-1 text-app-textSec dark:text-app-darkTextSec">
-                        <li>Google Login वापरल्यास Google account मधील आवश्यक basic profile information</li>
-                        <li>Quiz मध्ये मिळवलेले गुण आणि performance</li>
-                        <li>Quiz attempt संबंधित माहिती</li>
-                        <li>वापरकर्त्याने स्वतः दिलेली feedback किंवा संपर्क माहिती</li>
-                    </ul>
-                    <p class="mt-2 text-sm">आम्ही आवश्यकतेपेक्षा अधिक वैयक्तिक माहिती गोळा करण्याचा प्रयत्न करणार नाही.</p>
-                </div>
-                <div>
-                    <h3 class="font-bold text-lg mb-2">2. माहितीचा वापर</h3>
-                    <ul class="list-disc pl-5 space-y-1 text-app-textSec dark:text-app-darkTextSec">
-                        <li>Login सुविधा उपलब्ध करून देण्यासाठी</li>
-                        <li>Quiz results जतन करण्यासाठी</li>
-                        <li>Leaderboard दाखवण्यासाठी</li>
-                        <li>वेबसाइटची कार्यक्षमता सुधारण्यासाठी</li>
-                        <li>वापरकर्त्यांच्या feedback वर कार्यवाही करण्यासाठी</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="font-bold text-lg mb-2">3. माहितीची सुरक्षा</h3>
-                    <p class="text-app-textSec dark:text-app-darkTextSec">वापरकर्त्यांची माहिती सुरक्षित ठेवण्यासाठी योग्य तांत्रिक उपाययोजना करण्याचा प्रयत्न केला जाईल. मात्र इंटरनेटवरील कोणतीही प्रणाली पूर्णपणे सुरक्षित असल्याची हमी देता येत नाही.</p>
-                </div>
-                <div>
-                    <h3 class="font-bold text-lg mb-2">4. Third-Party Services</h3>
-                    <p class="text-app-textSec dark:text-app-darkTextSec">Google Login, hosting, analytics किंवा इतर आवश्यक सेवांसाठी third-party services वापरल्या जाऊ शकतात. अशा सेवांच्या स्वतःच्या privacy policies लागू होऊ शकतात.</p>
-                </div>
-                <div>
-                    <h3 class="font-bold text-lg mb-2">5. माहिती शेअर करणे</h3>
-                    <p class="text-app-textSec dark:text-app-darkTextSec">कायद्याने आवश्यक असल्याशिवाय किंवा आवश्यक technical services साठी, वापरकर्त्यांची वैयक्तिक माहिती अनावश्यकपणे इतरांना विकली किंवा शेअर केली जाणार नाही.</p>
-                </div>
-                <div>
-                    <h3 class="font-bold text-lg mb-2">6. बदल</h3>
-                    <p class="text-app-textSec dark:text-app-darkTextSec">आवश्यकतेनुसार ही Privacy Policy अद्ययावत केली जाऊ शकते. बदल झाल्यास या पेजवर updated date दिली जाईल.</p>
-                    <p class="mt-2 font-medium">या वेबसाइटचा वापर करण्यापूर्वी ही Privacy Policy वाचणे आणि समजून घेणे ही वापरकर्त्याची जबाबदारी आहे.</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- PAGE: TERMS OF SERVICE -->
-        <div id="terms-page" class="page-view">
-            <div class="mb-6 pb-4 border-b border-app-border dark:border-app-darkBorder">
-                <button onclick="app.navigate('home')" class="text-small text-app-textSec dark:text-app-darkTextSec hover:text-brand transition-colors mb-2 flex items-center gap-1"><i class="fa-solid fa-arrow-left"></i> Back</button>
-                <h1 class="text-h1 text-brand dark:text-brand-dark">Terms of Service</h1>
-                <p class="text-sm text-app-textSec mt-1">Last Updated: October 2026</p>
-            </div>
-            <div class="card p-6 md:p-8 text-body space-y-6">
-                <p>या वेबसाइटचा वापर करून आपण खालील अटी मान्य करता.</p>
-                <div>
-                    <h3 class="font-bold text-lg mb-2">1. वेबसाइटचा उद्देश</h3>
-                    <p class="text-app-textSec dark:text-app-darkTextSec">ही वेबसाइट स्पर्धा परीक्षांच्या अभ्यासासाठी Notes, One-Liners आणि Quiz उपलब्ध करून देण्यासाठी तयार करण्यात आली आहे. वेबसाइटवरील माहिती ही अभ्यासासाठी आणि शैक्षणिक संदर्भासाठी आहे.</p>
-                </div>
-                <div>
-                    <h3 class="font-bold text-lg mb-2">2. माहितीची अचूकता</h3>
-                    <p class="text-app-textSec dark:text-app-darkTextSec">आम्ही उपलब्ध करून दिलेली माहिती शक्य तितकी अचूक ठेवण्याचा प्रयत्न करतो. तथापि, माहितीमध्ये अनवधानाने चुका, अपूर्णता किंवा जुन्या माहितीसंदर्भात त्रुटी असू शकतात. त्यामुळे कोणत्याही परीक्षेसाठी अंतिम तयारी करताना अधिकृत सरकारी/परीक्षा प्राधिकरणाच्या स्रोतांशी महत्त्वाची माहिती पडताळून पाहणे अपेक्षित आहे.</p>
-                </div>
-                <div>
-                    <h3 class="font-bold text-lg mb-2">3. Quiz आणि Results</h3>
-                    <p class="text-app-textSec dark:text-app-darkTextSec">Quiz मधील गुण, ranking आणि इतर performance information ही वेबसाइटवरील प्रणालीच्या आधारे तयार केली जाते. Quiz score किंवा leaderboard हे कोणत्याही परीक्षेतील अधिकृत गुण, rank किंवा selection ची हमी दर्शवत नाही.</p>
-                </div>
-                <div>
-                    <h3 class="font-bold text-lg mb-2">4. Content Usage</h3>
-                    <p class="text-app-textSec dark:text-app-darkTextSec">वेबसाइटवरील स्वतः तयार केलेले notes, explanations, design आणि इतर original content परवानगीशिवाय व्यावसायिक स्वरूपात कॉपी, पुनर्प्रकाशित किंवा वितरित करू नये.</p>
-                </div>
-                <div>
-                    <h3 class="font-bold text-lg mb-2">5. External Links</h3>
-                    <p class="text-app-textSec dark:text-app-darkTextSec">वेबसाइटवर Telegram किंवा इतर external websites/services चे links असू शकतात. त्या external services च्या content किंवा privacy practices साठी त्यांची स्वतःची अटी लागू होतात.</p>
-                </div>
-                <div>
-                    <h3 class="font-bold text-lg mb-2">6. Website Changes</h3>
-                    <p class="text-app-textSec dark:text-app-darkTextSec">आम्ही वेबसाइटवरील content, features, notes, quizzes किंवा इतर सुविधा कोणत्याही वेळी बदलू, अपडेट करू किंवा काढून टाकू शकतो.</p>
-                </div>
-                <div>
-                    <h3 class="font-bold text-lg mb-2">7. वापरकर्त्याची जबाबदारी</h3>
-                    <p class="text-app-textSec dark:text-app-darkTextSec">वेबसाइटचा गैरवापर करू नये, इतर वापरकर्त्यांच्या माहितीचा गैरवापर करू नये आणि वेबसाइटच्या कार्यात अडथळा आणण्याचा प्रयत्न करू नये.</p>
-                </div>
-                <div>
-                    <h3 class="font-bold text-lg mb-2">8. संपर्क</h3>
-                    <p class="text-app-textSec dark:text-app-darkTextSec">वेबसाइटवरील माहितीमध्ये काही त्रुटी आढळल्यास किंवा काही सूचना असल्यास आम्हाला उपलब्ध असलेल्या contact/Telegram माध्यमातून कळवू शकता.</p>
-                    <p class="mt-4 font-medium text-brand dark:text-brand-dark">या वेबसाइटचा वापर सुरू ठेवल्यास आपण या Terms of Service शी सहमत असल्याचे मानले जाईल.</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- PAGE: SITEMAP -->
-        <div id="sitemap-page" class="page-view">
-            <div class="mb-6 pb-4 border-b border-app-border dark:border-app-darkBorder">
-                <button onclick="app.navigate('home')" class="text-small text-app-textSec dark:text-app-darkTextSec hover:text-brand transition-colors mb-2 flex items-center gap-1"><i class="fa-solid fa-arrow-left"></i> Back</button>
-                <h1 class="text-h1 text-brand dark:text-brand-dark">Sitemap</h1>
-            </div>
-            <div class="card p-6 text-body">
-                <ul class="space-y-4">
-                    <li><a href="javascript:void(0)" onclick="app.navigate('home')" class="font-bold hover:text-brand transition-colors">Home (Subject List)</a></li>
-                    <li><a href="javascript:void(0)" onclick="app.navigate('about')" class="font-bold hover:text-brand transition-colors">About Us</a></li>
-                    <li><a href="javascript:void(0)" onclick="app.navigate('privacy')" class="font-bold hover:text-brand transition-colors">Privacy Policy</a></li>
-                    <li><a href="javascript:void(0)" onclick="app.navigate('terms')" class="font-bold hover:text-brand transition-colors">Terms of Service</a></li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- PAGE: NOTES -->
-        <div id="notes-page" class="page-view">
-            <div class="mb-6 pb-4 border-b border-app-border dark:border-app-darkBorder">
-                <button onclick="app.navigate('home')" class="text-small text-app-textSec dark:text-app-darkTextSec hover:text-brand transition-colors mb-2 flex items-center gap-1"><i class="fa-solid fa-arrow-left"></i> Back to Subjects</button>
-                <div class="flex flex-col md:flex-row md:items-end justify-between gap-2">
-                    <div>
-                        <span class="text-small font-semibold text-subject dark:text-subject-dark uppercase tracking-wider" id="notes-subject-name">Subject</span>
-                        <h1 class="text-h2 mt-1" id="notes-chapter-name">Chapter Name</h1>
+    <footer class="theme-surface border-t theme-border mt-auto">
+        <div class="max-w-7xl mx-auto px-4 py-8 sm:py-12">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="col-span-1 sm:col-span-2">
+                    <div class="flex items-center gap-2 mb-4">
+                        <i class="ph ph-books text-2xl text-brand-600"></i>
+                        <span class="text-xl font-bold text-brand-600 dark:text-brand-500">StudySphere</span>
                     </div>
-                    <div class="bg-brand/10 dark:bg-brand-dark/10 text-brand dark:text-brand-dark px-3 py-1 rounded text-sm font-medium self-start md:self-auto">📖 Chapter Notes</div>
-                </div>
-            </div>
-            
-            <!-- NOTES CONTENT AREA -->
-            <div id="notes-content" class="text-body leading-relaxed text-app-textMain dark:text-app-darkTextMain">
-                <!-- Topics will be dynamically injected here -->
-            </div>
-            
-            <div class="mt-8 flex flex-col sm:flex-row justify-center gap-4">
-                 <button onclick="app.navigate('one-liners', app.state.context)" class="btn-secondary w-full sm:w-auto">Read One-Liners <i class="fa-solid fa-bolt ml-2 text-warning"></i></button>
-                 <button onclick="app.navigate('quiz', app.state.context)" class="btn-primary w-full sm:w-auto shadow-md">Practice Quiz <i class="fa-solid fa-arrow-right ml-2"></i></button>
-            </div>
-        </div>
-
-        <!-- PAGE: ONE-LINERS -->
-        <div id="one-liners-page" class="page-view">
-            <div class="mb-6 pb-4 border-b border-app-border dark:border-app-darkBorder">
-                <button onclick="app.navigate('notes', app.state.context)" class="text-small text-app-textSec dark:text-app-darkTextSec hover:text-brand transition-colors mb-2 flex items-center gap-1"><i class="fa-solid fa-arrow-left"></i> Back to Notes</button>
-                <div class="flex flex-col md:flex-row md:items-end justify-between gap-2">
-                    <div>
-                        <span class="text-small font-semibold text-subject dark:text-subject-dark uppercase tracking-wider" id="ol-subject-name">Subject</span>
-                        <h1 class="text-h2 mt-1" id="ol-chapter-name">Chapter Name</h1>
-                    </div>
-                    <div class="bg-warning/10 dark:bg-warning-dark/10 text-warning dark:text-warning-dark px-3 py-1 rounded text-sm font-medium self-start md:self-auto">📝 One-Liners Revision</div>
-                </div>
-            </div>
-            
-            <div class="space-y-4" id="one-liners-content"></div>
-            
-            <div class="mt-10 text-center">
-                <button onclick="app.startQuizFromOneLiner()" class="btn-primary w-full sm:w-auto shadow-md">Practice Quiz Now <i class="fa-solid fa-brain ml-2"></i></button>
-            </div>
-        </div>
-
-        <!-- PAGE: QUIZ -->
-        <div id="quiz-page" class="page-view">
-            <div class="mb-6 pb-4 border-b border-app-border dark:border-app-darkBorder flex justify-between items-end">
-                <div>
-                    <button onclick="app.navigate('home')" class="text-small text-app-textSec dark:text-app-darkTextSec hover:text-brand transition-colors mb-2 flex items-center gap-1"><i class="fa-solid fa-arrow-left"></i> Exit Quiz</button>
-                    <span class="text-small font-semibold text-subject dark:text-subject-dark uppercase tracking-wider" id="quiz-subject-name">Subject</span>
-                    <h1 class="text-h2 mt-1" id="quiz-chapter-name">Chapter Name</h1>
-                </div>
-                <div id="quiz-timer-container" class="hidden flex-col items-end text-brand dark:text-brand-dark bg-brand/5 dark:bg-brand-dark/10 px-4 py-2 rounded-lg border border-brand/20 dark:border-brand-dark/20 transition-colors">
-                    <span class="text-[10px] uppercase font-bold tracking-wider mb-0.5 opacity-80">Time</span>
-                    <div class="font-mono text-xl font-bold flex items-center gap-2"><i class="fa-regular fa-clock"></i> <span id="quiz-timer">00:00</span></div>
-                </div>
-            </div>
-
-            <!-- Quiz Intro -->
-            <div id="quiz-intro-state" class="card p-6 md:p-10 max-w-xl mx-auto mt-8 text-center">
-                <div class="w-16 h-16 bg-brand/10 dark:bg-brand-dark/10 text-brand dark:text-brand-dark rounded-full flex items-center justify-center text-3xl mx-auto mb-6"><i class="fa-solid fa-brain"></i></div>
-                <h2 class="text-h2 mb-6">Quiz Instructions</h2>
-                <div class="grid grid-cols-2 gap-4 mb-8">
-                    <div class="bg-gray-50 dark:bg-gray-800 p-4 rounded-lg border border-gray-100 dark:border-gray-700">
-                        <span class="block text-xs font-bold text-app-textSec dark:text-app-darkTextSec mb-1 uppercase">Questions</span>
-                        <span class="text-2xl font-bold text-subject dark:text-subject-dark" id="intro-q-count">0</span>
-                    </div>
-                    <div class="bg-gray-50 dark:bg-gray-800 p-4 rounded-lg border border-gray-100 dark:border-gray-700">
-                        <span class="block text-xs font-bold text-app-textSec dark:text-app-darkTextSec mb-1 uppercase">Time</span>
-                        <span class="text-2xl font-bold text-warning dark:text-warning-dark"><span id="intro-time">0</span> Min</span>
-                    </div>
-                </div>
-                <button onclick="app.startQuiz()" class="btn-primary w-full text-lg shadow-md"><i class="fa-solid fa-play mr-2"></i> Start Quiz</button>
-            </div>
-
-            <!-- Quiz Active -->
-            <div id="quiz-active-state" class="hidden flex flex-col lg:flex-row gap-6 relative">
-                <div class="flex-grow">
-                    <div class="flex items-center justify-between mb-4 px-1">
-                        <span class="font-bold text-app-textSec dark:text-app-darkTextSec text-sm uppercase" id="quiz-q-number">Question 1</span>
-                    </div>
-                    <div class="card p-6 md:p-8 mb-6 border-t-4 border-t-subject dark:border-t-subject-dark">
-                        <h3 class="text-h3 font-semibold mb-6 leading-relaxed" id="quiz-question-text">Loading?</h3>
-                        <!-- Options injected here -->
-                        <div class="space-y-3" id="quiz-options"></div>
-                    </div>
-                    <div class="flex justify-between items-center mt-6">
-                        <button id="btn-prev-q" class="btn-secondary px-5 py-2 flex items-center gap-2"><i class="fa-solid fa-arrow-left"></i> Prev</button>
-                        <button id="btn-next-q" class="btn-primary px-8 py-2 flex items-center gap-2">Next <i class="fa-solid fa-arrow-right"></i></button>
-                    </div>
-                </div>
-                
-                <!-- Question Palette -->
-                <div id="quiz-dashboard-container" class="hidden lg:block w-64 shrink-0">
-                    <div class="card p-5 sticky top-24">
-                        <h4 class="font-bold mb-4 text-xs uppercase tracking-wider text-app-textSec border-b border-gray-100 dark:border-gray-800 pb-2">Palette</h4>
-                        <div class="flex flex-wrap gap-2" id="quiz-dashboard-grid"></div>
-                        <button onclick="app.confirmSubmit()" class="w-full mt-6 bg-error hover:bg-red-700 text-white py-2.5 rounded font-medium transition-colors shadow-sm">Submit Quiz</button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Quiz Result -->
-            <div id="quiz-result-state" class="hidden space-y-8">
-                <div class="card p-8 text-center bg-gradient-to-b from-brand/5 to-transparent border-t-4 border-t-brand dark:border-t-brand-dark">
-                    <h2 class="text-h2 font-bold mb-2 text-brand dark:text-brand-dark"><i class="fa-solid fa-trophy text-warning mr-2"></i> Quiz Result</h2>
-                    <div class="flex justify-center items-baseline gap-2 my-6">
-                        <span class="text-5xl font-black text-app-textMain dark:text-app-darkTextMain" id="res-score">0</span>
-                        <span class="text-xl font-bold text-app-textSec dark:text-app-darkTextSec">/ <span id="res-total">0</span></span>
-                    </div>
-                    <div class="grid grid-cols-2 md:grid-cols-4 gap-3 max-w-2xl mx-auto mb-6">
-                        <div class="bg-white dark:bg-app-darkCard border border-app-border dark:border-app-darkBorder p-3 rounded shadow-sm"><span class="block text-xs font-bold text-success mb-1 uppercase">Correct</span><span class="text-xl font-bold" id="res-correct">0</span></div>
-                        <div class="bg-white dark:bg-app-darkCard border border-app-border dark:border-app-darkBorder p-3 rounded shadow-sm"><span class="block text-xs font-bold text-error mb-1 uppercase">Wrong</span><span class="text-xl font-bold" id="res-wrong">0</span></div>
-                        <div class="bg-white dark:bg-app-darkCard border border-app-border dark:border-app-darkBorder p-3 rounded shadow-sm"><span class="block text-xs font-bold text-app-textSec mb-1 uppercase">Skipped</span><span class="text-xl font-bold" id="res-skipped">0</span></div>
-                        <div class="bg-white dark:bg-app-darkCard border border-app-border dark:border-app-darkBorder p-3 rounded shadow-sm"><span class="block text-xs font-bold text-subject mb-1 uppercase">Accuracy</span><span class="text-xl font-bold" id="res-accuracy">0%</span></div>
-                    </div>
-                    <div class="flex flex-wrap justify-center gap-3">
-                        <button onclick="app.resetQuiz()" class="btn-primary py-2"><i class="fa-solid fa-rotate-right mr-2"></i> Retry</button>
-                        <button onclick="app.navigate('notes', app.state.context)" class="btn-secondary py-2">Back to Notes</button>
-                    </div>
-                </div>
-
-                <div>
-                    <h3 class="text-h3 font-bold mb-4 flex items-center gap-2"><i class="fa-solid fa-clipboard-check text-brand dark:text-brand-dark"></i> Solutions & Explanation</h3>
-                    <div class="space-y-4" id="quiz-review-list"></div>
-                </div>
-            </div>
-        </div>
-
-    </main>
-
-    <!-- FOOTER -->
-    <footer id="footer-section" class="bg-app-footer text-gray-300 mt-auto border-t border-gray-800">
-        <div class="max-w-5xl mx-auto px-4 py-8">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div>
-                    <h3 class="text-lg font-bold text-brand-dark mb-3"><i class="fa-solid fa-graduation-cap"></i> StudySphere</h3>
-                    <p class="text-sm text-gray-400 max-w-xs">MPSC Group C Exam Preparation. Structured notes, rapid revision one-liners, and MCQ quizzes.</p>
+                    <p class="theme-text-sec text-sm leading-relaxed mb-4 max-w-md">
+                        Your professional bilingual platform for MPSC Combined Group B and C Examination preparation. Practice smart, achieve your goals.
+                    </p>
                 </div>
                 
                 <div>
-                    <h4 class="text-white font-semibold mb-3">Quick Links</h4>
-                    <ul class="space-y-2 text-sm">
-                        <li><a href="javascript:void(0)" onclick="app.navigate('home');" class="hover:text-brand-dark transition-colors">Home</a></li>
-                        <li><a href="javascript:void(0)" onclick="app.navigate('about');" class="hover:text-brand-dark transition-colors">About Us</a></li>
-                        <li><a href="javascript:void(0)" onclick="app.navigate('sitemap');" class="hover:text-brand-dark transition-colors">Sitemap</a></li>
-                        <li><a href="javascript:void(0)" onclick="app.navigate('privacy');" class="hover:text-brand-dark transition-colors">Privacy Policy</a></li>
-                        <li><a href="javascript:void(0)" onclick="app.navigate('terms');" class="hover:text-brand-dark transition-colors">Terms of Service</a></li>
+                    <h3 class="font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2 text-sm theme-text-sec">
+                        <li><a href="#/" class="hover:text-brand-600 transition">Home</a></li>
+                        <li><a href="#/about" class="hover:text-brand-600 transition">About Us</a></li>
+                        <li><a href="#/dashboard" class="hover:text-brand-600 transition">Dashboard</a></li>
                     </ul>
                 </div>
 
                 <div>
-                    <h4 class="text-white font-semibold mb-3">Support & Connect</h4>
-                    <div class="flex flex-col items-start gap-3">
-                        <a href="https://t.me/+va0AGcqvCdQzNTI1" target="_blank" class="w-full sm:w-auto text-sm inline-flex items-center justify-center gap-2 bg-[#229ED9] hover:bg-[#1e8cc0] text-white px-4 py-2 rounded font-medium transition-colors">
-                            <i class="fa-brands fa-telegram text-lg"></i> Contact on Telegram
-                        </a>
-                        <button onclick="app.openDonateModal()" class="w-full sm:w-auto text-sm inline-flex items-center justify-center gap-2 bg-success hover:bg-green-700 text-white px-4 py-2 rounded font-medium transition-colors">
-                            <i class="fa-solid fa-hand-holding-heart text-lg"></i> Donate Us
-                        </button>
-                    </div>
+                    <h3 class="font-bold mb-4">Support & Legal</h3>
+                    <ul class="space-y-2 text-sm theme-text-sec">
+                        <li>
+                            <a href="https://t.me/+va0AGcqvCdQzNTI1" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 hover:text-brand-600 transition">
+                                <i class="ph-fill ph-telegram-logo text-lg text-blue-500"></i> Telegram Group
+                            </a>
+                        </li>
+                        <li><a href="#/privacy-policy" class="hover:text-brand-600 transition">Privacy Policy</a></li>
+                        <li><a href="#/terms" class="hover:text-brand-600 transition">Terms of Service</a></li>
+                    </ul>
                 </div>
             </div>
-            <div class="mt-8 pt-4 border-t border-gray-800 text-center text-xs text-gray-500">
-                &copy; 2026 StudySphere. All Rights Reserved.
+            
+            <div class="mt-8 pt-8 border-t theme-border flex flex-col sm:flex-row items-center justify-between gap-4">
+                <p class="text-sm theme-text-sec text-center sm:text-left">
+                    &copy; <span id="year"></span> StudySphere. All rights reserved.
+                </p>
+                <button onclick="app.openDonationModal()" class="flex items-center gap-2 px-4 py-2 bg-brand-600 hover:bg-brand-700 text-white rounded-lg transition font-medium text-sm shadow-sm focus:ring-2 focus:ring-offset-2 focus:ring-brand-500 dark:focus:ring-offset-slate-900">
+                    <i class="ph ph-heart text-lg"></i> Donate Us
+                </button>
             </div>
         </div>
     </footer>
 
-    <!-- DONATE MODAL (UPI) -->
-    <div id="modal-donate" class="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 hidden flex-col items-center justify-center p-4 opacity-0 transition-opacity duration-300">
-        <div class="bg-app-card dark:bg-app-darkCard rounded-xl shadow-2xl max-w-sm w-full p-6 relative transform scale-95 transition-transform duration-300" id="modal-donate-content">
-            <button onclick="app.closeModal('modal-donate')" class="absolute top-4 right-4 text-gray-400 hover:text-gray-600 focus:outline-none"><i class="fa-solid fa-xmark text-lg"></i></button>
-            <h3 class="text-h3 font-bold mb-2 text-brand dark:text-brand-dark"><i class="fa-solid fa-hand-holding-heart mr-2"></i> Support Our Work</h3>
-            <p class="text-sm text-app-textSec dark:text-app-darkTextSec mb-5">Your contribution helps us keep this platform updated. Select an amount or enter your own.</p>
-            
-            <div class="grid grid-cols-3 gap-2 mb-4">
-                <button onclick="app.setDonateAmount(50)" class="py-2 border border-brand/30 dark:border-brand-dark/30 rounded hover:bg-brand/10 font-bold text-sm text-brand dark:text-brand-dark transition-colors">₹50</button>
-                <button onclick="app.setDonateAmount(100)" class="py-2 border border-brand/30 dark:border-brand-dark/30 rounded hover:bg-brand/10 font-bold text-sm text-brand dark:text-brand-dark transition-colors">₹100</button>
-                <button onclick="app.setDonateAmount(200)" class="py-2 border border-brand/30 dark:border-brand-dark/30 rounded hover:bg-brand/10 font-bold text-sm text-brand dark:text-brand-dark transition-colors">₹200</button>
-            </div>
-            
-            <div class="mb-5 relative">
-                <span class="absolute left-3 top-1/2 -translate-y-1/2 text-gray-500 font-bold">₹</span>
-                <input type="number" id="donate-custom-amount" placeholder="Custom Amount" min="1" class="w-full pl-8 pr-3 py-2.5 rounded border border-app-border dark:border-app-darkBorder bg-app-bg dark:bg-app-darkBg focus:outline-none focus:border-brand">
-            </div>
-            
-            <button onclick="app.processUpiDonation()" class="bg-success hover:bg-green-700 text-white w-full py-2.5 rounded font-bold shadow-md flex items-center justify-center gap-2"><i class="fa-solid fa-qrcode"></i> Pay Now via UPI</button>
-            <p class="text-[10px] text-center text-gray-400 mt-3">Opens PhonePe, GPay, Paytm (Mobile Only)</p>
-        </div>
-    </div>
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
+        import { getAuth, signInAnonymously, onAuthStateChanged, signOut, signInWithEmailAndPassword, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js";
+        import { getFirestore, doc, setDoc, getDoc, collection, query, where, getDocs, serverTimestamp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js";
 
-    <!-- SUBMIT QUIZ MODAL -->
-    <div id="modal-submit" class="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 hidden flex-col items-center justify-center p-4 opacity-0 transition-opacity duration-300">
-        <div class="bg-app-card dark:bg-app-darkCard rounded-xl shadow-2xl max-w-sm w-full p-6 transform scale-95 transition-transform duration-300" id="modal-submit-content">
-            <h3 class="text-h3 font-bold mb-2">Submit Quiz?</h3>
-            <div id="modal-submit-msg" class="text-sm text-app-textSec dark:text-app-darkTextSec mb-6 bg-gray-50 dark:bg-gray-800 p-3 rounded border border-gray-200 dark:border-gray-700"></div>
-            <div class="flex gap-3 justify-end">
-                <button onclick="app.closeModal('modal-submit')" class="btn-secondary py-1.5 px-4 text-sm">Review More</button>
-                <button onclick="app.processSubmit()" class="bg-error hover:bg-red-700 text-white py-1.5 px-4 rounded font-medium text-sm">Yes, Submit</button>
-            </div>
-        </div>
-    </div>
-    
-    <!-- MESSAGE MODAL -->
-    <div id="modal-message" class="fixed inset-0 bg-black/50 z-50 hidden flex-col items-center justify-center p-4 opacity-0 transition-opacity">
-        <div class="bg-app-card dark:bg-app-darkCard rounded-xl shadow-xl max-w-sm w-full p-6 text-center">
-            <div id="modal-message-icon" class="text-3xl mb-3 text-brand dark:text-brand-dark"><i class="fa-solid fa-circle-info"></i></div>
-            <h3 id="modal-message-title" class="text-lg font-bold mb-2">Alert</h3>
-            <p id="modal-message-text" class="text-sm text-app-textSec dark:text-app-darkTextSec mb-5"></p>
-            <button onclick="app.closeModal('modal-message')" class="btn-primary w-full py-2 text-sm">OK</button>
-        </div>
-    </div>
+        // Firebase Configuration Placeholder
+        // NOTE: Admin/Owner needs to replace this object in production.
+        const firebaseConfig = typeof __firebase_config !== 'undefined' ? JSON.parse(__firebase_config) : {
+            apiKey: "PLACEHOLDER_API_KEY",
+            authDomain: "studysphere-placeholder.firebaseapp.com",
+            projectId: "studysphere-placeholder",
+            storageBucket: "studysphere-placeholder.appspot.com",
+            messagingSenderId: "0000000000",
+            appId: "1:0000000000:web:abcdef123456"
+        };
+
+        let appInst, auth, db;
+        let isFirebaseValid = false;
+
+        try {
+            appInst = initializeApp(firebaseConfig);
+            auth = getAuth(appInst);
+            db = getFirestore(appInst);
+            // Quick check if config seems valid (not placeholders)
+            if(firebaseConfig.apiKey !== "PLACEHOLDER_API_KEY") {
+                isFirebaseValid = true;
+            }
+        } catch (e) {
+            console.warn("Firebase initialization failed. Running in standalone demo mode.");
+        }
+
+        // Attach Firebase to global app object for router access
+        window.fb = {
+            auth, db, isFirebaseValid,
+            signInAnonymously, onAuthStateChanged, signOut, signInWithEmailAndPassword, createUserWithEmailAndPassword,
+            doc, setDoc, getDoc, collection, query, where, getDocs, serverTimestamp
+        };
+    </script>
 
     <script>
-        // =========================================================================
-        // DATA SECTION (All content managed here)
-        // =========================================================================
-        
+        // MOCK DATA (Content Architecture)
         const DATA = {
             subjects: [
-                { id: 'sub_sci', name: 'General Science', chapters: [] },
-                { id: 'sub_cur', name: 'Current Affairs', chapters: [] },
-                { id: 'sub_geo', name: 'Geography', chapters: [] },
-                { id: 'sub_his', name: 'History', chapters: [] },
-                { id: 'sub_eco', name: 'Economics', chapters: [] },
-                { id: 'sub_math', name: 'Mental Ability and Arithmetics', chapters: [] },
-                { 
-                    id: 'sub_pol', 
-                    name: 'Indian Polity and Civics', 
-                    chapters: [
-                        { id: 'pol_c1', name: 'Chapter 1: भारतीय संविधानाची निर्मिती व पार्श्वभूमी', qCount: 15 }
-                    ] 
-                },
-                { id: 'sub_mar', name: 'Marathi', chapters: [] },
-                { id: 'sub_eng', name: 'English', chapters: [] },
-                { id: 'sub_con', name: 'Indian Constitution and Panchayat Raj', chapters: [] },
-                { id: 'sub_it', name: 'Information Technology Computer Basics', chapters: [] },
-                { id: 'sub_rti', name: 'RTI Act (2005), Maharashtra RTS Act (2015)', chapters: [] }
+                { id: 's1', titleMr: 'सामान्य विज्ञान', titleEn: 'General Science', category: 'common' },
+                { id: 's2', titleMr: 'चालू घडामोडी', titleEn: 'Current Affairs', category: 'common' },
+                { id: 's3', titleMr: 'भूगोल', titleEn: 'Geography', category: 'common' },
+                { id: 's4', titleMr: 'इतिहास', titleEn: 'History', category: 'common' },
+                { id: 's5', titleMr: 'अर्थशास्त्र', titleEn: 'Economics', category: 'common' },
+                { id: 's6', titleMr: 'मराठी', titleEn: 'Marathi', category: 'mains' },
+                { id: 's7', titleMr: 'इंग्रजी', titleEn: 'English', category: 'mains' }
             ],
-            
-            notes: {
-                'pol_c1': [
-                    // Topic 1
-                    { type: 'topic-box', title: '🟦 TOPIC 1 — ब्रिटिशकालीन घटनात्मक विकास', content: [
-                        { type: 'p', text: 'भारतीय संविधानाच्या निर्मितीमागे ब्रिटिश काळातील अनेक कायदे व प्रशासकीय सुधारणा महत्त्वाच्या होत्या. दोन प्रमुख टप्पे: **ईस्ट इंडिया कंपनीची राजवट (1773 ते 1858)** आणि **ब्रिटिश राजमुकुटाची राजवट (1858 ते 1947)**.' },
-                        { type: 'h4', text: '① Regulating Act, 1773' },
-                        { type: 'ul', items: ['बंगालचा गव्हर्नर → **Governor-General of Bengal** झाला.', 'पहिले गव्हर्नर-जनरल: **Warren Hastings**', '1774 मध्ये कलकत्ता येथे Supreme Court स्थापन.', 'कंपनीच्या प्रशासनावर ब्रिटिश संसदीय नियंत्रणाची सुरुवात.'] },
-                        { type: 'h4', text: '② Pitt\'s India Act, 1784' },
-                        { type: 'p', text: 'कंपनीच्या व्यावसायिक (Commercial) आणि राजकीय (Political) कार्यांमध्ये स्पष्ट फरक. राजकीय बाबींवर नियंत्रण ठेवण्यासाठी **Board of Control** निर्माण. (येथून **Dual Control** ची सुरुवात).' },
-                        { type: 'h4', text: '③ Charter Act, 1813' },
-                        { type: 'p', text: 'कंपनीची भारतातील व्यापाराची मक्तेदारी समाप्त (फक्त चहा व चीन व्यापार राहिला). शिक्षणासाठी **₹1 लाख** वार्षिक तरतूद.' },
-                        { type: 'h4', text: '④ Charter Act, 1833' },
-                        { type: 'ul', items: ['हा कायदा भारतातील **केंद्रीकरणाचा शिखरबिंदू (Peak of Centralisation)** मानला जातो.', 'बंगालचा गव्हर्नर-जनरल → **Governor-General of India** झाला.', 'पहिले गव्हर्नर-जनरल ऑफ इंडिया: **लॉर्ड विल्यम बेंटिक (Lord William Bentinck)**.'] },
-                        { type: 'h4', text: '⑤ Charter Act, 1853' },
-                        { type: 'p', text: 'गव्हर्नर-जनरलच्या कौन्सिलचे **Executive** आणि **Legislative** (विधीमंडळ) भागांमध्ये प्रथमच विभाजन.' },
-                        { type: 'h4', text: '⑥ Government of India Act, 1858' },
-                        { type: 'ul', items: ['1857 च्या उठावानंतर ईस्ट इंडिया **कंपनीची राजवट समाप्त**; कारभार थेट **British Crown** कडे.', 'गव्हर्नर-जनरलला आता **Viceroy** म्हणूनही ओळखले जाऊ लागले.', 'पहिले व्हाईसरॉय: **लॉर्ड कॅनिंग (Lord Canning)**.', 'Secretary of State for India हे नवीन पद निर्माण.'] },
-                        { type: 'h4', text: '⑦ Indian Councils Acts (1861, 1892, 1909)' },
-                        { type: 'ul', items: [
-                            '**1861:** कायदेमंडळात भारतीयांना सहभागी करण्याची सुरुवात (Portfolio System ला मान्यता).',
-                            '**1892:** सदस्यांना अर्थसंकल्पावर चर्चा करण्याचा व प्रश्न विचारण्याचा मर्यादित अधिकार.',
-                            '**1909 (Morley-Minto):** मुस्लिमांसाठी **स्वतंत्र मतदारसंघ (Separate Electorates)** सुरू करण्यात आले. (S. P. Sinha हे कार्यकारी मंडळात पहिले भारतीय).'
-                        ]},
-                        { type: 'h4', text: '⑧ Government of India Act, 1919 (Montagu-Chelmsford)' },
-                        { type: 'p', text: 'मुख्य वैशिष्ट्य: प्रांतांमध्ये द्विदल राज्यपद्धती (**Dyarchy in Provinces**). केंद्रात द्विगृही कायदेमंडळ (Bicameral Legislature) सुरू.' },
-                        { type: 'h4', text: '⑨ Government of India Act, 1935' },
-                        { type: 'p', text: 'भारतीय संविधानाच्या निर्मितीवर सर्वाधिक प्रभाव टाकणारा कायदा. प्रमुख तरतुदी: प्रांतांतील Dyarchy समाप्त करून **प्रांतीय स्वायत्तता (Provincial Autonomy)** सुरू. RBI, Federal Court आणि All India Federation ची योजना.' },
-                        { type: 'h4', text: '⑩ Indian Independence Act, 1947' },
-                        { type: 'p', text: 'भारतावरील ब्रिटिश राजवट समाप्त. भारत व पाकिस्तान अशी दोन स्वतंत्र **Dominions** निर्माण.' }
-                    ]},
-                    
-                    // Topic 2
-                    { type: 'topic-box', title: '🟦 TOPIC 2 — स्वातंत्र्यपूर्व घटनात्मक मागण्या', content: [
-                        { type: 'ul', items: [
-                            '**M. N. Roy (1934):** भारतीयांसाठी **Constituent Assembly (संविधान सभा)** असावी अशी मागणी सर्वप्रथम मांडली.',
-                            '**August Offer (1940):** भारतीयांना संविधाननिर्मितीच्या प्रक्रियेत सहभागी करण्याच्या मागणीला तत्त्वतः मान्यता.',
-                            '**Cripps Mission (1942):** युद्धानंतर भारताला घटनात्मक स्वायत्तता देण्याची योजना (काँग्रेस व लीगने नाकारली).',
-                            '**Cabinet Mission Plan (1946) ⭐:** याच योजनेच्या शिफारशीनुसार भारताची **संविधान सभा स्थापन** करण्यात आली.',
-                            '**Nehru Report (1928):** मोतीलाल नेहरू यांच्या अध्यक्षतेखाली (Dominion Status व Fundamental Rights ची मागणी).',
-                            '**Karachi Resolution (1931):** सरदार पटेल अध्यक्ष. (Fundamental Rights आणि आर्थिक कार्यक्रमांचा ठराव).'
-                        ]}
-                    ]},
-                    
-                    // Topic 3
-                    { type: 'topic-box', title: '🟦 TOPIC 3 — संविधान सभा (Constituent Assembly)', content: [
-                        { type: 'p', text: 'संविधान सभेची एकूण मूळ सदस्यसंख्या **389** होती (ब्रिटिश प्रांत 296 + संस्थाने 93). फाळणीनंतर भारताच्या संविधान सभेत **299** सदस्य राहिले.' },
-                        { type: 'p', text: 'ही सभा थेट सार्वत्रिक मताधिकारावर निवडलेली नव्हती (Indirect Election व Nomination).' },
-                        { type: 'table', headers: ['घटना', 'दिनांक / व्यक्ती'], rows: [
-                            ['पहिली बैठक', '9 December 1946'],
-                            ['हंगामी अध्यक्ष', 'Dr. Sachchidananda Sinha'],
-                            ['कायमस्वरूपी अध्यक्ष', 'Dr. Rajendra Prasad (11 Dec 1946)'],
-                            ['उपाध्यक्ष', 'H. C. Mookherjee & V. T. Krishnamachari'],
-                            ['घटनात्मक सल्लागार', 'Sir B. N. Rau']
-                        ]}
-                    ]},
-
-                    // Topic 4
-                    { type: 'topic-box', title: '🟦 TOPIC 4 — संविधान निर्मिती प्रक्रिया', content: [
-                        { type: 'h4', text: 'उद्दिष्टांचा ठराव (Objective Resolution)' },
-                        { type: 'ul', items: [
-                            'मांडणारे: **पंडित जवाहरलाल नेहरू**',
-                            'कधी मांडला: **13 December 1946**',
-                            'कधी स्वीकारला: **22 January 1947**',
-                            'महत्त्व: याच ठरावातील मूलभूत मूल्ये नंतर संविधानाच्या Preamble (उद्देशिकेत) मध्ये प्रतिबिंबित झाली.'
-                        ]},
-                        { type: 'h4', text: 'मसुदा समिती (Drafting Committee) ⭐' },
-                        { type: 'p', text: 'स्थापना: **29 August 1947**. अध्यक्ष: **डॉ. बी. आर. आंबेडकर**. (एकूण 7 सदस्य). संविधानाचा मसुदा तयार करण्याची प्रमुख जबाबदारी या समितीवर होती. डॉ. आंबेडकरांना "भारतीय संविधानाचे प्रमुख शिल्पकार" मानले जाते.' },
-                        { type: 'table', headers: ['इतर प्रमुख समित्या', 'अध्यक्ष'], rows: [
-                            ['Union Powers / Union Constitution', 'Jawaharlal Nehru'],
-                            ['Provincial Constitution Committee', 'Sardar Vallabhbhai Patel'],
-                            ['Advisory Comm. on Fundamental Rights', 'Sardar Vallabhbhai Patel']
-                        ]}
-                    ]},
-
-                    // Topic 5
-                    { type: 'topic-box', title: '🟦 TOPIC 5 — संविधान स्वीकार व अंमलबजावणी', content: [
-                        { type: 'ul', items: [
-                            '**संविधान स्वीकार (Adoption):** **26 November 1949**. या दिवशी नागरिकत्व व निवडणुकांसारख्या काही तरतुदी लगेच लागू झाल्या.',
-                            '**पूर्ण अंमलबजावणी (Commencement):** **26 January 1950**. भारत Sovereign Democratic Republic झाला.',
-                            '**26 जानेवारी का?:** 1930 मध्ये याच दिवशी काँग्रेसने "पूर्ण स्वराज्य दिन" साजरा केला होता.',
-                            '**लागलेला कालावधी:** संविधान तयार करण्यासाठी **2 वर्षे, 11 महिने आणि 18 दिवस** लागले.'
-                        ]}
-                    ]},
-                    
-                    // Trap Zone
-                    { type: 'topic-box', title: '🚨 MPSC TRAP ZONE', content: [
-                        { type: 'ul', items: [
-                            '**Trap 1:** Governor-General of Bengal → Warren Hastings | Governor-General of India → William Bentinck.',
-                            '**Trap 2:** First Viceroy → Lord Canning.',
-                            '**Trap 3:** Dyarchy in Provinces → 1919 | Provincial Autonomy → 1935.',
-                            '**Trap 4:** Constituent Assembly demanded by M. N. Roy (1934) BUT established by Cabinet Mission Plan (1946).',
-                            '**Trap 5:** Objective Resolution presented on 13 Dec 1946 BUT adopted on 22 Jan 1947.',
-                            '**Trap 6:** Constitution adopted on 26 Nov 1949 BUT fully commenced on 26 Jan 1950.'
-                        ]}
-                    ]}
+            chapters: [
+                // Demo Data for Geography (s3)
+                { id: 'c1', subjectId: 's3', titleMr: 'पृथ्वी, स्थान, अक्षांश व रेखांश', titleEn: 'Earth, Location, Latitude & Longitude' },
+                { id: 'c2', subjectId: 's3', titleMr: 'महाराष्ट्राचा भूगोल', titleEn: 'Geography of Maharashtra' }
+            ],
+            topics: [
+                { id: 't1', chapterId: 'c1', titleMr: 'अक्षांश आणि रेखांश', titleEn: 'Latitude and Longitude' },
+                { id: 't2', chapterId: 'c1', titleMr: 'पृथ्वीची गती', titleEn: 'Motion of Earth' }
+            ],
+            quizzes: [
+                { id: 'q1', topicId: 't1', titleMr: 'अक्षांश मूलभूत सराव', titleEn: 'Latitude Basics Practice', mode: 'practice', qCount: 5 },
+                { id: 'q2', topicId: 't1', titleMr: 'अक्षांश व रेखांश मुख्य चाचणी', titleEn: 'Lat & Long Main Test', mode: 'test', qCount: 5 }
+            ],
+            questions: {
+                // Questions for q1 & q2 (Reused for demo simplicity)
+                'q1': [
+                    {
+                        id: 'qn1', order: 1,
+                        mr: 'विषुववृत्त हे कोणते अक्षांश दर्शवते?', 
+                        en: 'Which latitude does the Equator represent?',
+                        options: [
+                            { id: 'A', mr: '0°', en: '0°' },
+                            { id: 'B', mr: '90° N', en: '90° N' },
+                            { id: 'C', mr: '23.5° S', en: '23.5° S' },
+                            { id: 'D', mr: '180°', en: '180°' }
+                        ],
+                        correct: 'A',
+                        expMr: 'विषुववृत्त हे पृथ्वीच्या मध्यभागातून जाणारे 0° अक्षांश आहे.',
+                        expEn: 'The Equator is the 0° latitude passing through the center of the Earth.',
+                        marks: 2, negMarks: 0
+                    },
+                    {
+                        id: 'qn2', order: 2,
+                        mr: 'कर्कवृत्त कोणत्या अक्षांशावर स्थित आहे?', 
+                        en: 'At which latitude is the Tropic of Cancer located?',
+                        options: [
+                            { id: 'A', mr: '23.5° S', en: '23.5° S' },
+                            { id: 'B', mr: '23.5° N', en: '23.5° N' },
+                            { id: 'C', mr: '66.5° N', en: '66.5° N' },
+                            { id: 'D', mr: '0°', en: '0°' }
+                        ],
+                        correct: 'B',
+                        expMr: 'कर्कवृत्त उत्तर गोलार्धात 23.5° N अक्षांशावर आहे.',
+                        expEn: 'The Tropic of Cancer is located in the Northern Hemisphere at 23.5° N.',
+                        marks: 2, negMarks: 0
+                    },
+                    {
+                        id: 'qn3', order: 3,
+                        mr: 'पृथ्वीवरील एकूण अक्षांशांची संख्या किती आहे?', 
+                        en: 'What is the total number of latitudes on Earth?',
+                        options: [
+                            { id: 'A', mr: '180', en: '180' },
+                            { id: 'B', mr: '181', en: '181' },
+                            { id: 'C', mr: '360', en: '360' },
+                            { id: 'D', mr: '90', en: '90' }
+                        ],
+                        correct: 'B',
+                        expMr: 'उत्तर गोलार्धात 90, दक्षिण गोलार्धात 90 आणि 1 विषुववृत्त (90+90+1 = 181).',
+                        expEn: '90 in the Northern Hemisphere, 90 in the Southern Hemisphere, and 1 Equator (90+90+1 = 181).',
+                        marks: 2, negMarks: 0
+                    },
+                    {
+                        id: 'qn4', order: 4,
+                        mr: 'सर्वात मोठे अक्षवृत्त कोणते?', 
+                        en: 'Which is the largest circle of latitude?',
+                        options: [
+                            { id: 'A', mr: 'मकरवृत्त', en: 'Tropic of Capricorn' },
+                            { id: 'B', mr: 'आर्क्टिक वृत्त', en: 'Arctic Circle' },
+                            { id: 'C', mr: 'विषुववृत्त', en: 'Equator' },
+                            { id: 'D', mr: 'कर्कवृत्त', en: 'Tropic of Cancer' }
+                        ],
+                        correct: 'C',
+                        expMr: 'विषुववृत्त हे पृथ्वीवरील सर्वात मोठे अक्षवृत्त (Great Circle) आहे.',
+                        expEn: 'The Equator is the largest circle of latitude (Great Circle) on Earth.',
+                        marks: 2, negMarks: 0
+                    },
+                    {
+                        id: 'qn5', order: 5,
+                        mr: 'दोन लगतच्या अक्षांशांमधील अंदाजे अंतर किती असते?', 
+                        en: 'What is the approximate distance between two consecutive latitudes?',
+                        options: [
+                            { id: 'A', mr: '100 km', en: '100 km' },
+                            { id: 'B', mr: '111 km', en: '111 km' },
+                            { id: 'C', mr: '150 km', en: '150 km' },
+                            { id: 'D', mr: '69 km', en: '69 km' }
+                        ],
+                        correct: 'B',
+                        expMr: 'दोन लगतच्या अक्षांशांमधील अंतर सर्वत्र समान असते, जे अंदाजे 111 किलोमीटर आहे.',
+                        expEn: 'The distance between two consecutive latitudes is constant everywhere, approximately 111 kilometers.',
+                        marks: 2, negMarks: 0
+                    }
                 ]
-            },
-            
-            oneLiners: {
-                'pol_c1': [
-                    { q: 'भारताच्या घटनात्मक विकासावर पहिला महत्त्वाचा ब्रिटिश संसदीय कायदा कोणता?', a: 'Regulating Act, 1773' },
-                    { q: 'कंपनीच्या राजवटीत Dual Control (दुहेरी नियंत्रण) कोणत्या कायद्याने सुरू झाले?', a: 'Pitt\'s India Act, 1784' },
-                    { q: 'भारताचे पहिले गव्हर्नर-जनरल (Governor-General of India) कोण बनले?', a: 'लॉर्ड विल्यम बेंटिक (Charter Act, 1833)' },
-                    { q: 'Crown Rule (राजमुकुटाची राजवट) कोणत्या कायद्याने सुरू झाली?', a: 'Government of India Act, 1858' },
-                    { q: 'भारताचे पहिले व्हाईसरॉय (Viceroy) कोण होते?', a: 'लॉर्ड कॅनिंग' },
-                    { q: 'मुस्लिमांसाठी स्वतंत्र मतदारसंघ (Separate Electorates) कोणी दिले?', a: 'Indian Councils Act, 1909 (Morley-Minto)' },
-                    { q: 'प्रांतांमध्ये द्विदल शासनपद्धती (Dyarchy) कोणत्या कायद्याने लागू झाली?', a: 'Government of India Act, 1919' },
-                    { q: 'प्रांतीय स्वायत्तता (Provincial Autonomy) कोणत्या कायद्याचे वैशिष्ट्य आहे?', a: 'Government of India Act, 1935' },
-                    { q: 'संविधान सभेची सर्वप्रथम मागणी कोणी केली?', a: 'एम. एन. रॉय (M. N. Roy) - 1934' },
-                    { q: 'संविधान सभेची स्थापना कोणत्या योजनेनुसार झाली?', a: 'Cabinet Mission Plan, 1946' },
-                    { q: 'संविधान सभेचे कायमस्वरूपी अध्यक्ष कोण होते?', a: 'डॉ. राजेंद्र प्रसाद' },
-                    { q: 'संविधान सभेचे घटनात्मक सल्लागार (Constitutional Advisor) कोण होते?', a: 'सर बी. एन. राव' },
-                    { q: 'मसुदा समितीचे (Drafting Committee) अध्यक्ष कोण होते?', a: 'डॉ. बी. आर. आंबेडकर' },
-                    { q: 'उद्दिष्टांचा ठराव (Objective Resolution) कोणी आणि कधी मांडला?', a: 'जवाहरलाल नेहरू यांनी 13 डिसेंबर 1946 रोजी' },
-                    { q: 'भारतीय संविधान केव्हा स्वीकारण्यात (Adopted) आले?', a: '26 नोव्हेंबर 1949' }
-                ]
-            },
-            
-            quizzes: {
-                'pol_c1': {
-                    timeLimit: 450, // 7.5 mins for 15 Qs
-                    questions: [
-                        {
-                            id: 'q1', text: 'बंगालचा गव्हर्नर हा "Governor-General of India" खालीलपैकी कोणत्या कायद्याने बनला?',
-                            options: ['Regulating Act, 1773', 'Pitt\'s India Act, 1784', 'Charter Act, 1833', 'Government of India Act, 1858'],
-                            correctIdx: 2, explanation: '1833 च्या सनदी कायद्याने (Charter Act) बंगालचा गव्हर्नर-जनरल हा भारताचा गव्हर्नर-जनरल बनला. लॉर्ड विल्यम बेंटिक हे पहिले गव्हर्नर-जनरल ऑफ इंडिया होते.'
-                        },
-                        {
-                            id: 'q2', text: 'भारतातील ब्रिटिश प्रशासनात "Dual Control" (राजकीय बाबींसाठी Board of Control) कोणत्या कायद्याने सुरू झाले?',
-                            options: ['1773 चा कायदा', '1784 चा पिट्स इंडिया कायदा', '1853 चा कायदा', '1919 चा कायदा'],
-                            correctIdx: 1, explanation: '1784 च्या पिट्स इंडिया कायद्याने कंपनीच्या व्यावसायिक आणि राजकीय कार्यांमध्ये फरक केला व राजकीय बाबींसाठी Board of Control ची स्थापना केली.'
-                        },
-                        {
-                            id: 'q3', text: 'मुस्लिमांसाठी स्वतंत्र मतदारसंघाची (Separate Electorates) सुरुवात कोणत्या कायद्याने झाली?',
-                            options: ['1892 चा भारतीय परिषद कायदा', '1909 चा मोर्ले-मिंटो कायदा', '1919 चा मोंटेग्यू-चेम्सफोर्ड कायदा', '1935 चा भारत सरकार कायदा'],
-                            correctIdx: 1, explanation: '1909 च्या Indian Councils Act (Morley-Minto Reforms) ने भारतात पहिल्यांदाच स्वतंत्र मतदारसंघाचे तत्त्व स्वीकारले.'
-                        },
-                        {
-                            id: 'q4', text: 'प्रांतांमध्ये "द्विदल राज्यपद्धती" (Dyarchy) खालीलपैकी कोणत्या कायद्याने लागू केली?',
-                            options: ['1909 चा कायदा', '1919 चा कायदा', '1935 चा कायदा', '1947 चा कायदा'],
-                            correctIdx: 1, explanation: '1919 च्या मोंटेग्यू-चेम्सफोर्ड कायद्याने प्रांतांमधील विषय Reserved आणि Transferred असे दोन भागात विभागून Dyarchy लागू केली.'
-                        },
-                        {
-                            id: 'q5', text: 'भारतासाठी संविधान सभा असावी, अशी संकल्पना सर्वप्रथम (1934 मध्ये) कोणी मांडली?',
-                            options: ['महात्मा गांधी', 'एम. एन. रॉय', 'पंडित जवाहरलाल नेहरू', 'डॉ. बी. आर. आंबेडकर'],
-                            correctIdx: 1, explanation: 'भारतीयांसाठी Constituent Assembly असावी अशी सर्वप्रथम स्पष्ट मागणी M. N. Roy यांनी 1934 मध्ये केली.'
-                        },
-                        {
-                            id: 'q6', text: 'संविधान सभेची स्थापना खालीलपैकी कोणत्या योजनेच्या आधारावर करण्यात आली?',
-                            options: ['ऑगस्ट ऑफर (1940)', 'क्रिप्स मिशन (1942)', 'कॅबिनेट मिशन प्लॅन (1946)', 'माउंटबॅटन योजना (1947)'],
-                            correctIdx: 2, explanation: '1946 च्या Cabinet Mission Plan च्या शिफारशीनुसारच भारताची संविधान सभा स्थापन करण्यात आली.'
-                        },
-                        {
-                            id: 'q7', text: 'संविधान सभेची पहिली बैठक कधी पार पडली?',
-                            options: ['9 डिसेंबर 1946', '11 डिसेंबर 1946', '13 डिसेंबर 1946', '26 नोव्हेंबर 1949'],
-                            correctIdx: 0, explanation: 'संविधान सभेची पहिली बैठक 9 डिसेंबर 1946 रोजी पार पडली, ज्याचे हंगामी अध्यक्ष डॉ. सच्चिदानंद सिन्हा होते.'
-                        },
-                        {
-                            id: 'q8', text: 'संविधान सभेचे "कायमस्वरूपी अध्यक्ष" म्हणून कोणाची निवड झाली?',
-                            options: ['डॉ. सच्चिदानंद सिन्हा', 'पंडित जवाहरलाल नेहरू', 'डॉ. राजेंद्र प्रसाद', 'सरदार वल्लभभाई पटेल'],
-                            correctIdx: 2, explanation: '11 डिसेंबर 1946 रोजी डॉ. राजेंद्र प्रसाद यांची संविधान सभेचे कायमस्वरूपी अध्यक्ष म्हणून निवड झाली.'
-                        },
-                        {
-                            id: 'q9', text: 'संविधान सभेचे "घटनात्मक सल्लागार" (Constitutional Advisor) कोण होते?',
-                            options: ['सर बी. एन. राव', 'डॉ. बी. आर. आंबेडकर', 'एच. सी. मुखर्जी', 'व्ही. टी. कृष्णम्माचारी'],
-                            correctIdx: 0, explanation: 'संविधानाच्या प्रारूपासाठी कायदेशीर मार्गदर्शन करण्यासाठी सर बी. एन. राव यांची घटनात्मक सल्लागार म्हणून नियुक्ती झाली होती.'
-                        },
-                        {
-                            id: 'q10', text: 'संविधान सभेमध्ये "उद्दिष्टांचा ठराव" (Objective Resolution) कोणी मांडला?',
-                            options: ['डॉ. राजेंद्र प्रसाद', 'डॉ. बी. आर. आंबेडकर', 'पंडित जवाहरलाल नेहरू', 'सरदार पटेल'],
-                            correctIdx: 2, explanation: 'पंडित जवाहरलाल नेहरूंनी 13 डिसेंबर 1946 रोजी उद्दिष्टांचा ठराव मांडला, जो नंतर भारतीय संविधानाच्या उद्देशिकेचा आधार बनला.'
-                        },
-                        {
-                            id: 'q11', text: '"मसुदा समितीची" (Drafting Committee) स्थापना कोणत्या तारखेला झाली?',
-                            options: ['22 जानेवारी 1947', '15 ऑगस्ट 1947', '29 ऑगस्ट 1947', '26 नोव्हेंबर 1949'],
-                            correctIdx: 2, explanation: 'संविधानाचा मसुदा तयार करण्यासाठी 29 ऑगस्ट 1947 रोजी डॉ. बी. आर. आंबेडकर यांच्या अध्यक्षतेखाली 7 सदस्यीय मसुदा समिती स्थापन झाली.'
-                        },
-                        {
-                            id: 'q12', text: 'भारतीय संविधान केव्हा "स्वीकारण्यात" (Adopted) आले?',
-                            options: ['15 ऑगस्ट 1947', '26 नोव्हेंबर 1949', '26 जानेवारी 1950', '2 ऑक्टोबर 1949'],
-                            correctIdx: 1, explanation: 'संविधान 26 नोव्हेंबर 1949 रोजी स्वीकारले गेले. या दिवशी नागरिकत्व व निवडणुकांसारख्या काही तरतुदी लगेच लागू झाल्या.'
-                        },
-                        {
-                            id: 'q13', text: 'भारतीय संविधानाची पूर्णपणे "अंमलबजावणी" (Commencement) कधी सुरू झाली?',
-                            options: ['26 नोव्हेंबर 1949', '26 जानेवारी 1950', '15 ऑगस्ट 1947', '26 जानेवारी 1930'],
-                            correctIdx: 1, explanation: '26 जानेवारी 1950 रोजी संविधानाची पूर्ण अंमलबजावणी झाली आणि भारत एक सार्वभौम प्रजासत्ताक देश बनला.'
-                        },
-                        {
-                            id: 'q14', text: 'भारतीय संविधान तयार करण्यासाठी एकूण किती कालावधी लागला?',
-                            options: ['2 वर्षे, 11 महिने आणि 18 दिवस', '3 वर्षे पूर्ण', '2 वर्षे, 10 महिने आणि 12 दिवस', '2 वर्षे, 6 महिने आणि 18 दिवस'],
-                            correctIdx: 0, explanation: 'संविधान तयार करण्यासाठी संविधान सभेला 2 वर्षे, 11 महिने आणि 18 दिवस इतका प्रदीर्घ कालावधी लागला.'
-                        },
-                        {
-                            id: 'q15', text: 'खालीलपैकी कोणता कायदा भारतीय संविधानाचा सर्वात मोठा आणि महत्त्वाचा ब्रिटिशकालीन स्रोत मानला जातो?',
-                            options: ['1909 चा कायदा', '1919 चा कायदा', '1935 चा भारत सरकार कायदा', '1947 चा स्वातंत्र्य कायदा'],
-                            correctIdx: 2, explanation: '1935 चा भारत सरकार कायदा (Government of India Act, 1935) हा भारतीय संविधानाच्या निर्मितीवर सर्वाधिक प्रभाव टाकणारा कायदा आहे.'
-                        }
-                    ]
-                }
             }
         };
 
-        // =========================================================================
-        // APPLICATION LOGIC (State & Core Functions)
-        // =========================================================================
-        
+        // Reuse Q1 questions for Q2 but add negative marking for Test mode demonstration
+        DATA.questions['q2'] = DATA.questions['q1'].map(q => ({...q, negMarks: 0.5}));
+
         const app = {
-            state: {
-                theme: localStorage.getItem('theme') || 'light',
-                fontSize: localStorage.getItem('fontSize') || 'base',
-                currentPage: 'home',
-                context: { subject: null, chapter: null, cId: null },
-                quiz: { active: false, data: null, answers: [], currentIndex: 0, timer: null, timeRemaining: 0 }
+            currentUser: null,
+            theme: localStorage.getItem('theme') || 'light',
+            fontSize: localStorage.getItem('fontSize') || 'default',
+            drawerOpen: false,
+            
+            // UI Helpers
+            toggleTheme: () => {
+                app.theme = app.theme === 'light' ? 'dark' : 'light';
+                document.documentElement.setAttribute('data-theme', app.theme);
+                localStorage.setItem('theme', app.theme);
+                document.getElementById('theme-label').innerText = app.theme === 'light' ? 'Light Mode' : 'Dark Mode';
             },
-
-            init: function() {
-                this.applyTheme(this.state.theme);
-                this.changeFontSize(this.state.fontSize);
-                this.renderSubjects();
-                this.navigate('home');
-            },
-
-            navigate: function(pageId, contextData = null) {
-                document.querySelectorAll('.page-view').forEach(el => {
-                    el.classList.remove('active');
-                    setTimeout(() => el.style.display = 'none', 50);
-                });
-                
-                const target = document.getElementById(`${pageId}-page`);
-                if(target) {
-                    setTimeout(() => {
-                        target.style.display = 'block';
-                        void target.offsetWidth; // Trigger reflow
-                        target.classList.add('active');
-                        window.scrollTo({ top: 0, behavior: 'smooth' });
-                    }, 50);
-                }
-                
-                this.state.currentPage = pageId;
-
-                if (contextData) {
-                    this.state.context = contextData;
-                    if (pageId === 'notes') this.renderNotes();
-                    if (pageId === 'one-liners') this.renderOneLiners();
-                    if (pageId === 'quiz') this.setupQuizIntro();
-                } else if (pageId === 'home') {
-                    if(this.state.quiz.active) this.cleanupQuiz();
-                }
-            },
-
-            toggleMobileMenu: function() {
-                const menu = document.getElementById('mobile-menu');
-                const backdrop = document.getElementById('mobile-menu-backdrop');
-                
-                if (menu.classList.contains('translate-x-full')) {
-                    menu.classList.remove('translate-x-full');
-                    backdrop.classList.remove('hidden');
-                    setTimeout(() => backdrop.classList.remove('opacity-0'), 10);
-                } else {
-                    menu.classList.add('translate-x-full');
-                    backdrop.classList.add('opacity-0');
-                    setTimeout(() => backdrop.classList.add('hidden'), 300);
-                }
-            },
-
-            applyTheme: function(themeStr) {
-                if(themeStr === 'dark') document.documentElement.classList.add('dark');
-                else document.documentElement.classList.remove('dark');
-                this.state.theme = themeStr;
-                localStorage.setItem('theme', themeStr);
-            },
-            toggleTheme: function() { this.applyTheme(this.state.theme === 'light' ? 'dark' : 'light'); },
-
-            changeFontSize: function(size) {
-                document.body.classList.remove('text-size-sm', 'text-size-base', 'text-size-lg');
-                document.body.classList.add(`text-size-${size}`);
-                this.state.fontSize = size;
+            setFontSize: (size) => {
+                document.documentElement.classList.remove('font-small', 'font-default', 'font-large');
+                document.documentElement.classList.add(`font-${size}`);
+                app.fontSize = size;
                 localStorage.setItem('fontSize', size);
             },
-
-            showModal: function(id) {
-                const modal = document.getElementById(id);
-                modal.classList.remove('hidden');
-                modal.classList.add('flex');
-                setTimeout(() => { modal.classList.remove('opacity-0'); if(id==='modal-submit' || id==='modal-donate') document.getElementById(`${id}-content`).classList.remove('scale-95'); }, 10);
-            },
-            closeModal: function(id) {
-                const modal = document.getElementById(id);
-                modal.classList.add('opacity-0');
-                if(id==='modal-submit' || id==='modal-donate') document.getElementById(`${id}-content`).classList.add('scale-95');
-                setTimeout(() => { modal.classList.add('hidden'); modal.classList.remove('flex'); }, 300);
-            },
-            
-            openDonateModal: function() { document.getElementById('donate-custom-amount').value = ''; this.showModal('modal-donate'); },
-            setDonateAmount: function(amt) { document.getElementById('donate-custom-amount').value = amt; },
-            processUpiDonation: function() {
-                let amt = document.getElementById('donate-custom-amount').value;
-                if(!amt || isNaN(amt) || amt < 1) return;
-                window.location.href = `upi://pay?pa=vikram.joshi9089@oksbi&pn=StudySphere&am=${amt}&cu=INR`; 
-                this.closeModal('modal-donate');
-            },
-
-            // --- RENDER LOGIC --- //
-            
-            renderSubjects: function() {
-                const container = document.getElementById('subject-list-container');
-                container.innerHTML = '';
-                
-                DATA.subjects.forEach((subj, idx) => {
-                    let chaptersHtml = '';
-                    if(subj.chapters.length === 0) {
-                        chaptersHtml = `<div class="p-4 text-app-textSec italic text-sm">Content coming soon...</div>`;
-                    } else {
-                        chaptersHtml = subj.chapters.map(chap => `
-                            <div class="p-3 md:p-4 hover:bg-gray-50 dark:hover:bg-gray-800/50 transition-colors border-b border-gray-100 dark:border-gray-800 last:border-0">
-                                <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-3">
-                                    <span class="font-medium text-body">${chap.name}</span>
-                                    <div class="flex items-center gap-2">
-                                        <button onclick="app.navigate('notes', {subject: '${subj.name}', chapter: '${chap.name}', cId: '${chap.id}'})" class="text-xs font-bold uppercase tracking-wider bg-success/10 text-success px-3 py-2 rounded hover:bg-success hover:text-white transition-colors">Notes</button>
-                                        <button onclick="app.navigate('one-liners', {subject: '${subj.name}', chapter: '${chap.name}', cId: '${chap.id}'})" class="text-xs font-bold uppercase tracking-wider bg-warning/10 text-warning px-3 py-2 rounded hover:bg-warning hover:text-white transition-colors">One-Liners</button>
-                                        <button onclick="app.navigate('quiz', {subject: '${subj.name}', chapter: '${chap.name}', cId: '${chap.id}'})" class="text-xs font-bold uppercase tracking-wider bg-subject/10 text-subject px-3 py-2 rounded hover:bg-subject hover:text-white transition-colors">Quiz</button>
-                                    </div>
-                                </div>
-                            </div>
-                        `).join('');
-                    }
-
-                    const html = `
-                        <div class="card overflow-hidden transition-all duration-300">
-                            <button class="w-full p-4 flex items-center justify-between bg-app-card dark:bg-app-darkCard hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors focus:outline-none" onclick="app.toggleAccordion('subj-${idx}')">
-                                <span class="text-h3 font-bold text-left text-brand dark:text-brand-dark">${subj.name}</span>
-                                <span class="text-app-textSec dark:text-app-darkTextSec transform transition-transform duration-300 text-sm" id="icon-subj-${idx}"><i class="fa-solid fa-chevron-down"></i></span>
-                            </button>
-                            <div id="content-subj-${idx}" class="hidden border-t border-app-border dark:border-app-darkBorder bg-white dark:bg-[#14171c]">
-                                ${chaptersHtml}
-                            </div>
-                        </div>`;
-                    container.insertAdjacentHTML('beforeend', html);
-                });
-            },
-
-            toggleAccordion: function(id) {
-                const content = document.getElementById(`content-${id}`);
-                const icon = document.getElementById(`icon-${id}`);
-                if(content.classList.contains('hidden')) { content.classList.remove('hidden'); icon.style.transform = 'rotate(180deg)'; } 
-                else { content.classList.add('hidden'); icon.style.transform = 'rotate(0deg)'; }
-            },
-            
-            // Helper function to format bold text denoted by **text**
-            formatText: function(str) {
-                return str.replace(/\*\*(.*?)\*\*/g, '<strong class="font-bold text-brand dark:text-brand-dark">$1</strong>');
-            },
-
-            renderNotes: function() {
-                const ctx = this.state.context;
-                document.getElementById('notes-subject-name').innerText = ctx.subject;
-                document.getElementById('notes-chapter-name').innerText = ctx.chapter;
-                const container = document.getElementById('notes-content');
-                container.innerHTML = '';
-                
-                let data = DATA.notes[ctx.cId] || [];
-                if(data.length === 0) {
-                    container.innerHTML = '<p class="text-app-textSec italic p-4 card">Notes for this chapter will be updated soon.</p>';
-                    return;
-                }
-
-                data.forEach(block => {
-                    let html = '';
-                    if (block.type === 'topic-box') {
-                        html = `<div class="topic-box"><h3 class="text-h3 font-bold text-brand dark:text-brand-dark mb-4 border-b border-app-border dark:border-app-darkBorder pb-2">${block.title}</h3>`;
-                        block.content.forEach(sub => {
-                            if (sub.type === 'p') html += `<p class="mb-4">${app.formatText(sub.text)}</p>`;
-                            else if (sub.type === 'h4') html += `<h4 class="text-base font-bold mt-4 mb-2 text-app-textMain dark:text-app-darkTextMain">${app.formatText(sub.text)}</h4>`;
-                            else if (sub.type === 'ul') {
-                                html += `<ul class="list-none space-y-2 mb-4">`;
-                                sub.items.forEach(item => html += `<li class="pl-4 relative before:content-[''] before:absolute before:left-0 before:top-2 before:w-1.5 before:h-1.5 before:bg-brand dark:before:bg-brand-dark before:rounded-full">${app.formatText(item)}</li>`);
-                                html += `</ul>`;
-                            } else if (sub.type === 'table') {
-                                let ths = sub.headers.map(h => `<th>${h}</th>`).join('');
-                                let trs = sub.rows.map(r => `<tr>${r.map(d => `<td>${app.formatText(d)}</td>`).join('')}</tr>`).join('');
-                                html += `<div class="overflow-x-auto my-5"><table class="w-full text-sm text-left mpsc-table"><thead><tr>${ths}</tr></thead><tbody>${trs}</tbody></table></div>`;
-                            }
-                        });
-                        html += `</div>`;
-                    }
-                    container.insertAdjacentHTML('beforeend', html);
-                });
-            },
-
-            renderOneLiners: function() {
-                const ctx = this.state.context;
-                document.getElementById('ol-subject-name').innerText = ctx.subject;
-                document.getElementById('ol-chapter-name').innerText = ctx.chapter;
-                const container = document.getElementById('one-liners-content');
-                container.innerHTML = '';
-                
-                let data = DATA.oneLiners[ctx.cId] || [];
-                if(data.length === 0) {
-                    container.innerHTML = '<p class="text-app-textSec italic p-4 card">One-liners will be updated soon.</p>';
-                    return;
-                }
-
-                data.forEach((item, index) => {
-                    const numStr = (index + 1).toString().padStart(2, '0');
-                    const html = `
-                        <div class="card p-4 md:p-5 flex gap-4 transition-colors hover:border-brand/30 dark:hover:border-brand-dark/30">
-                            <div class="shrink-0 pt-0.5"><span class="bg-brand/10 dark:bg-brand-dark/10 text-brand dark:text-brand-dark font-bold text-xs px-2 py-1 rounded">${numStr}</span></div>
-                            <div class="space-y-1.5">
-                                <p class="text-body font-bold text-app-textMain dark:text-app-darkTextMain">${item.q}</p>
-                                <p class="text-body text-success dark:text-success-dark font-medium">${item.a}</p>
-                            </div>
-                        </div>`;
-                    container.insertAdjacentHTML('beforeend', html);
-                });
-            },
-
-            startQuizFromOneLiner: function() { this.navigate('quiz', this.state.context); },
-
-            // --- QUIZ LOGIC --- //
-
-            setupQuizIntro: function() {
-                const ctx = this.state.context;
-                document.getElementById('quiz-subject-name').innerText = ctx.subject;
-                document.getElementById('quiz-chapter-name').innerText = ctx.chapter;
-                
-                document.getElementById('quiz-intro-state').classList.remove('hidden');
-                document.getElementById('quiz-active-state').classList.add('hidden');
-                document.getElementById('quiz-result-state').classList.add('hidden');
-                document.getElementById('quiz-dashboard-container').classList.add('hidden');
-                document.getElementById('quiz-timer-container').classList.add('hidden');
-                
-                let quizData = DATA.quizzes[ctx.cId] || null;
-                if(!quizData || !quizData.questions || quizData.questions.length === 0) {
-                     document.getElementById('intro-q-count').innerText = "0";
-                     document.getElementById('intro-time').innerText = "0";
-                     this.state.quiz.data = { timeLimit: 0, questions: [] };
+            toggleDrawer: () => {
+                app.drawerOpen = !app.drawerOpen;
+                const drawer = document.getElementById('drawer');
+                const overlay = document.getElementById('drawer-overlay');
+                if (app.drawerOpen) {
+                    drawer.classList.remove('translate-x-full');
+                    overlay.classList.remove('hidden');
+                    setTimeout(() => overlay.classList.remove('opacity-0'), 10);
                 } else {
-                     document.getElementById('intro-q-count').innerText = quizData.questions.length;
-                     document.getElementById('intro-time').innerText = Math.floor(quizData.timeLimit / 60);
-                     this.state.quiz.data = quizData;
-                }
-
-                this.state.quiz.answers = new Array(this.state.quiz.data.questions.length).fill(null);
-                this.state.quiz.currentIndex = 0;
-            },
-
-            startQuiz: function() {
-                if(this.state.quiz.data.questions.length === 0) return;
-                
-                document.getElementById('quiz-intro-state').classList.add('hidden');
-                document.getElementById('quiz-active-state').classList.remove('hidden');
-                document.getElementById('quiz-dashboard-container').classList.remove('hidden');
-                document.getElementById('quiz-timer-container').classList.remove('hidden');
-                document.getElementById('quiz-timer-container').classList.add('flex');
-
-                this.state.quiz.active = true;
-                this.state.quiz.timeRemaining = this.state.quiz.data.timeLimit;
-                
-                this.renderQuizDashboard();
-                this.renderCurrentQuestion();
-                this.startTimer();
-                
-                if(window.innerWidth < 1024) window.scrollTo({top: document.getElementById('quiz-active-state').offsetTop - 60, behavior: 'smooth'});
-            },
-
-            renderCurrentQuestion: function() {
-                const qState = this.state.quiz;
-                const total = qState.data.questions.length;
-                if(total === 0) return;
-                const idx = qState.currentIndex;
-                const question = qState.data.questions[idx];
-
-                document.getElementById('quiz-q-number').innerText = `Question ${idx + 1} of ${total}`;
-                document.getElementById('quiz-question-text').innerText = question.text;
-                
-                const optionsContainer = document.getElementById('quiz-options');
-                optionsContainer.innerHTML = '';
-                
-                question.options.forEach((opt, optIdx) => {
-                    const isSelected = qState.answers[idx] === optIdx;
-                    const id = `opt-${idx}-${optIdx}`;
-                    
-                    // Added intense highlight for peer-checked (selected option)
-                    const html = `
-                        <label for="${id}" class="block relative group cursor-pointer">
-                            <input type="radio" name="question${idx}" id="${id}" value="${optIdx}" class="peer sr-only" ${isSelected ? 'checked' : ''} onchange="app.selectOption(${idx}, ${optIdx})">
-                            <div class="w-full p-4 rounded-lg border-2 border-app-border dark:border-app-darkBorder bg-app-card dark:bg-app-darkCard text-app-textMain dark:text-app-darkTextMain transition-all 
-                                peer-checked:border-brand peer-checked:bg-brand/10 dark:peer-checked:border-brand-dark dark:peer-checked:bg-brand-dark/10 
-                                peer-checked:shadow-sm hover:border-gray-300 dark:hover:border-gray-600 flex items-center gap-3">
-                                
-                                <div class="w-5 h-5 shrink-0 rounded-full border-2 border-gray-400 dark:border-gray-500 flex items-center justify-center 
-                                    peer-checked:border-brand peer-checked:bg-brand dark:peer-checked:border-brand-dark dark:peer-checked:bg-brand-dark transition-colors">
-                                    <div class="w-2 h-2 rounded-full bg-white opacity-0 peer-checked:opacity-100"></div>
-                                </div>
-                                <span class="flex-1 font-medium peer-checked:text-brand dark:peer-checked:text-brand-dark">${opt}</span>
-                            </div>
-                        </label>`;
-                    optionsContainer.insertAdjacentHTML('beforeend', html);
-                });
-
-                document.getElementById('btn-prev-q').disabled = (idx === 0);
-                const nextBtn = document.getElementById('btn-next-q');
-                if (idx === total - 1) {
-                    nextBtn.innerHTML = `Submit`;
-                    nextBtn.classList.replace('btn-primary', 'bg-error');
-                    nextBtn.classList.add('hover:bg-red-700', 'text-white');
-                    nextBtn.onclick = () => this.confirmSubmit();
-                } else {
-                    nextBtn.innerHTML = `Next <i class="fa-solid fa-arrow-right text-sm"></i>`;
-                    nextBtn.classList.add('btn-primary');
-                    nextBtn.classList.remove('bg-error', 'hover:bg-red-700', 'text-white');
-                    nextBtn.onclick = () => this.nextQuestion();
-                }
-                this.updateDashboardVisuals();
-            },
-
-            selectOption: function(qIdx, optIdx) { this.state.quiz.answers[qIdx] = optIdx; this.updateDashboardVisuals(); },
-            nextQuestion: function() { if (this.state.quiz.currentIndex < this.state.quiz.data.questions.length - 1) { this.state.quiz.currentIndex++; this.renderCurrentQuestion(); } },
-            prevQuestion: function() { if (this.state.quiz.currentIndex > 0) { this.state.quiz.currentIndex--; this.renderCurrentQuestion(); } },
-            jumpToQuestion: function(idx) { this.state.quiz.currentIndex = idx; this.renderCurrentQuestion(); },
-
-            renderQuizDashboard: function() {
-                const grid = document.getElementById('quiz-dashboard-grid');
-                grid.innerHTML = '';
-                const total = this.state.quiz.data.questions.length;
-                for(let i=0; i<total; i++) {
-                    const btn = document.createElement('button');
-                    btn.id = `dash-btn-${i}`;
-                    btn.className = `w-9 h-9 rounded text-sm font-bold flex items-center justify-center transition-colors border bg-white dark:bg-app-darkCard border-gray-300 dark:border-gray-600 text-app-textSec dark:text-app-darkTextSec`;
-                    btn.innerText = i + 1;
-                    btn.onclick = () => this.jumpToQuestion(i);
-                    grid.appendChild(btn);
-                }
-                if(window.innerWidth < 1024) {
-                     const activeState = document.getElementById('quiz-active-state');
-                     const dashCard = document.getElementById('quiz-dashboard-container').querySelector('.card');
-                     if(!document.getElementById('mobile-dash-injected')) {
-                         const mobileWrapper = document.createElement('div');
-                         mobileWrapper.id = 'mobile-dash-injected';
-                         mobileWrapper.className = 'mt-6';
-                         mobileWrapper.appendChild(dashCard.cloneNode(true));
-                         const clonedBtns = mobileWrapper.querySelectorAll('button[id^="dash-btn-"]');
-                         clonedBtns.forEach((b, i) => b.onclick = () => this.jumpToQuestion(i));
-                         const clonedSubmit = mobileWrapper.querySelector('button');
-                         if(clonedSubmit) clonedSubmit.onclick = () => this.confirmSubmit();
-                         activeState.appendChild(mobileWrapper);
-                         document.getElementById('quiz-dashboard-container').classList.add('hidden');
-                     }
+                    drawer.classList.add('translate-x-full');
+                    overlay.classList.add('opacity-0');
+                    setTimeout(() => overlay.classList.add('hidden'), 300);
                 }
             },
-
-            updateDashboardVisuals: function() {
-                const qState = this.state.quiz;
-                const total = qState.data.questions.length;
-                const updateButton = (btn, i) => {
-                    if(!btn) return;
-                    btn.className = 'w-9 h-9 rounded text-sm font-bold flex items-center justify-center transition-all border ';
-                    if (qState.currentIndex === i) btn.className += 'bg-brand text-white border-brand scale-110 shadow';
-                    else if (qState.answers[i] !== null) btn.className += 'bg-success text-white border-success';
-                    else btn.className += 'bg-white dark:bg-app-darkCard text-app-textSec dark:text-app-darkTextSec border-gray-300 dark:border-gray-600';
+            showToast: (message, type = 'info') => {
+                const container = document.getElementById('toast-container');
+                const toast = document.createElement('div');
+                const colors = {
+                    info: 'bg-slate-800 text-white',
+                    success: 'bg-green-600 text-white',
+                    error: 'bg-red-600 text-white',
+                    warning: 'bg-amber-500 text-white'
                 };
-                for(let i=0; i<total; i++) {
-                    updateButton(document.querySelector(`#quiz-dashboard-container #dash-btn-${i}`), i);
-                    updateButton(document.querySelector(`#mobile-dash-injected #dash-btn-${i}`), i);
+                toast.className = `${colors[type]} px-4 py-3 rounded-lg shadow-lg text-sm font-medium fade-in flex items-center justify-between gap-3`;
+                toast.innerHTML = `<span>${message}</span> <button onclick="this.parentElement.remove()" class="opacity-75 hover:opacity-100"><i class="ph ph-x"></i></button>`;
+                container.appendChild(toast);
+                setTimeout(() => { if(toast.parentElement) toast.remove(); }, 4000);
+            },
+            openModal: (contentHTML) => {
+                const container = document.getElementById('modal-container');
+                const content = document.getElementById('modal-content');
+                content.innerHTML = contentHTML;
+                container.classList.remove('hidden');
+            },
+            closeModal: () => {
+                document.getElementById('modal-container').classList.add('hidden');
+                document.getElementById('modal-content').innerHTML = '';
+            },
+
+            // Navigation
+            navigate: (path) => {
+                window.location.hash = path;
+                if(app.drawerOpen) app.toggleDrawer();
+            },
+            
+            // Render Engine Helpers
+            renderNavigationLinks: () => {
+                const container = document.getElementById('drawer-links');
+                let links = `
+                    <a href="#/" class="flex items-center gap-3 p-3 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-700 transition" onclick="app.toggleDrawer()">
+                        <i class="ph ph-house text-xl text-brand-600"></i> <span class="font-medium">Home</span>
+                    </a>
+                    <a href="#/about" class="flex items-center gap-3 p-3 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-700 transition" onclick="app.toggleDrawer()">
+                        <i class="ph ph-info text-xl text-brand-600"></i> <span class="font-medium">About Us</span>
+                    </a>
+                `;
+                if (app.currentUser) {
+                    links += `
+                        <a href="#/dashboard" class="flex items-center gap-3 p-3 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-700 transition" onclick="app.toggleDrawer()">
+                            <i class="ph ph-user text-xl text-brand-600"></i> <span class="font-medium">Dashboard</span>
+                        </a>
+                        <button onclick="app.logout(); app.toggleDrawer()" class="w-full flex items-center gap-3 p-3 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-700 transition text-red-500">
+                            <i class="ph ph-sign-out text-xl"></i> <span class="font-medium">Logout</span>
+                        </button>
+                    `;
+                } else {
+                    links += `
+                        <a href="#/login" class="flex items-center gap-3 p-3 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-700 transition" onclick="app.toggleDrawer()">
+                            <i class="ph ph-sign-in text-xl text-brand-600"></i> <span class="font-medium">Login / Register</span>
+                        </a>
+                    `;
                 }
+                container.innerHTML = links;
             },
 
-            startTimer: function() {
-                clearInterval(this.state.quiz.timer);
-                this.updateTimerDisplay();
-                const container = document.getElementById('quiz-timer-container');
-                container.classList.remove('text-error', 'border-error', 'animate-pulse');
+            // Specific Feature: Donation Modal
+            openDonationModal: () => {
+                const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+                const upiId = "vikram.joshi9089@oksbi";
                 
-                this.state.quiz.timer = setInterval(() => {
-                    this.state.quiz.timeRemaining--;
-                    this.updateTimerDisplay();
-                    
-                    if (this.state.quiz.timeRemaining <= 30 && this.state.quiz.timeRemaining > 0) {
-                        container.classList.add('text-error', 'border-error', 'animate-pulse');
-                    }
-                    if (this.state.quiz.timeRemaining <= 0) { clearInterval(this.state.quiz.timer); this.processSubmit(true); }
-                }, 1000);
-            },
-
-            updateTimerDisplay: function() {
-                const tr = this.state.quiz.timeRemaining;
-                const m = Math.floor(tr / 60).toString().padStart(2, '0');
-                const s = (tr % 60).toString().padStart(2, '0');
-                document.getElementById('quiz-timer').innerText = `${m}:${s}`;
-            },
-
-            cleanupQuiz: function() {
-                clearInterval(this.state.quiz.timer);
-                this.state.quiz.active = false;
-                const mobileDash = document.getElementById('mobile-dash-injected');
-                if(mobileDash) mobileDash.remove();
-            },
-
-            confirmSubmit: function() {
-                const total = this.state.quiz.data.questions.length;
-                let answered = 0;
-                this.state.quiz.answers.forEach(a => { if(a !== null) answered++; });
-                let msg = `You have answered <strong>${answered}</strong> of <strong>${total}</strong> questions.`;
-                if(answered < total) msg += `<br><span class="text-error mt-2 block font-medium">Warning: ${total - answered} questions are unanswered!</span>`;
-                document.getElementById('modal-submit-msg').innerHTML = msg;
-                this.showModal('modal-submit');
-            },
-
-            processSubmit: async function(isAutoSubmit = false) {
-                this.closeModal('modal-submit');
-                this.cleanupQuiz();
-                if(isAutoSubmit) await new Promise(r => setTimeout(r, 1000));
-                
-                document.getElementById('quiz-active-state').classList.add('hidden');
-                document.getElementById('quiz-dashboard-container').classList.add('hidden');
-                document.getElementById('quiz-timer-container').classList.add('hidden');
-                document.getElementById('quiz-result-state').classList.remove('hidden');
-                
-                const questions = this.state.quiz.data.questions;
-                const total = questions.length;
-                let correct = 0, wrong = 0, skipped = 0;
-                
-                this.state.quiz.answers.forEach((ans, i) => {
-                    if (ans === null) skipped++;
-                    else if (ans === questions[i].correctIdx) correct++;
-                    else wrong++;
-                });
-
-                const accuracy = total > 0 ? Math.round(((correct) / (total - skipped)) * 100) || 0 : 0;
-
-                document.getElementById('res-score').innerText = correct;
-                document.getElementById('res-total').innerText = total;
-                document.getElementById('res-correct').innerText = correct;
-                document.getElementById('res-wrong').innerText = wrong;
-                document.getElementById('res-skipped').innerText = skipped;
-                document.getElementById('res-accuracy').innerText = (skipped === total ? 0 : accuracy) + '%';
-
-                this.renderDetailedReview();
-                window.scrollTo({ top: 0, behavior: 'smooth' });
-            },
-
-            renderDetailedReview: function() {
-                const container = document.getElementById('quiz-review-list');
-                container.innerHTML = '';
-                const questions = this.state.quiz.data.questions;
-                
-                questions.forEach((q, i) => {
-                    const userAnsIdx = this.state.quiz.answers[i];
-                    const isSkipped = userAnsIdx === null;
-                    const isCorrect = userAnsIdx === q.correctIdx;
-                    
-                    let statusColor, statusIcon, statusLabel, userAnsText = '-';
-                    const correctAnsText = q.options[q.correctIdx];
-                    
-                    if (isSkipped) { statusColor = 'gray'; statusIcon = 'fa-minus'; statusLabel = 'Skipped'; }
-                    else if (isCorrect) { statusColor = 'success'; statusIcon = 'fa-check'; statusLabel = 'Correct'; userAnsText = q.options[userAnsIdx]; }
-                    else { statusColor = 'error'; statusIcon = 'fa-xmark'; statusLabel = 'Wrong'; userAnsText = q.options[userAnsIdx]; }
-
-                    const html = `
-                        <div class="card p-5 border-l-4 ${isCorrect ? 'border-l-success' : (isSkipped ? 'border-l-gray-400' : 'border-l-error')} mb-4">
-                            <div class="flex items-center gap-2 mb-3">
-                                <span class="bg-gray-100 dark:bg-gray-800 px-2 py-0.5 rounded text-xs font-bold">Q${i+1}</span>
-                                <span class="text-${statusColor} text-xs font-bold uppercase"><i class="fa-solid ${statusIcon}"></i> ${statusLabel}</span>
+                if (!isMobile) {
+                    app.openModal(`
+                        <div class="p-6 text-center">
+                            <div class="w-16 h-16 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i class="ph ph-device-mobile text-3xl"></i>
                             </div>
-                            <p class="font-semibold mb-4 text-app-textMain dark:text-app-darkTextMain">${q.text}</p>
-                            
-                            <div class="grid md:grid-cols-2 gap-3 mb-4 text-sm">
-                                <div class="p-3 rounded bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700">
-                                    <span class="block text-[10px] text-gray-500 uppercase font-bold mb-1">Your Answer</span>
-                                    <span class="font-medium ${!isSkipped && !isCorrect ? 'text-error' : ''}">${userAnsText}</span>
-                                </div>
-                                <div class="p-3 rounded bg-success/10 border border-success/20">
-                                    <span class="block text-[10px] text-success uppercase font-bold mb-1">Correct Answer</span>
-                                    <span class="font-medium text-success">${correctAnsText}</span>
-                                </div>
-                            </div>
-                            
-                            <div class="bg-warning/5 border border-warning/20 p-4 rounded-lg text-sm">
-                                <strong class="block mb-1 text-warning-dark"><i class="fa-solid fa-lightbulb"></i> Explanation:</strong>
-                                <span class="text-app-textSec dark:text-app-darkTextSec">${q.explanation}</span>
-                            </div>
-                        </div>`;
-                    container.insertAdjacentHTML('beforeend', html);
-                });
-            },
+                            <h2 class="text-xl font-bold mb-2">Mobile Payment Only</h2>
+                            <p class="theme-text-sec text-sm mb-6">UPI mobile payment is currently available only on supported mobile devices. Please open StudySphere on a compatible mobile device to continue with the donation.</p>
+                            <button onclick="app.closeModal()" class="w-full py-2.5 bg-slate-200 hover:bg-slate-300 dark:bg-slate-700 dark:hover:bg-slate-600 rounded-lg font-medium transition">Close</button>
+                        </div>
+                    `);
+                    return;
+                }
 
-            resetQuiz: function() { this.setupQuizIntro(); }
+                app.openModal(`
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-6">
+                            <h2 class="text-xl font-bold flex items-center gap-2"><i class="ph ph-heart text-brand-600"></i> Donate Us</h2>
+                            <button onclick="app.closeModal()" class="text-slate-400 hover:text-slate-600"><i class="ph ph-x text-lg"></i></button>
+                        </div>
+                        <p class="theme-text-sec text-sm mb-6">Donation सुविधा सध्या mobile devices वरून वापरण्यासाठी उपलब्ध आहे. Support StudySphere!</p>
+                        
+                        <div class="grid grid-cols-3 gap-3 mb-4">
+                            <button onclick="document.getElementById('don-amount').value='50'" class="py-2 border theme-border rounded-lg hover:border-brand-500 hover:text-brand-600 font-medium transition">₹50</button>
+                            <button onclick="document.getElementById('don-amount').value='100'" class="py-2 border theme-border rounded-lg hover:border-brand-500 hover:text-brand-600 font-medium transition">₹100</button>
+                            <button onclick="document.getElementById('don-amount').value='200'" class="py-2 border theme-border rounded-lg hover:border-brand-500 hover:text-brand-600 font-medium transition">₹200</button>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label class="block text-sm font-medium theme-text-sec mb-1">Custom Amount (₹)</label>
+                            <input type="number" id="don-amount" min="1" class="w-full px-4 py-2 rounded-lg border theme-border bg-transparent focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none transition" placeholder="Enter amount">
+                        </div>
+                        
+                        <button onclick="app.processDonation()" class="w-full py-3 bg-brand-600 hover:bg-brand-700 text-white rounded-lg font-medium flex items-center justify-center gap-2 transition">
+                            <i class="ph ph-qr-code text-lg"></i> Proceed to Pay (UPI)
+                        </button>
+                    </div>
+                `);
+            },
+            processDonation: () => {
+                const amount = document.getElementById('don-amount').value;
+                if(!amount || isNaN(amount) || amount <= 0) {
+                    app.showToast('Please enter a valid positive amount.', 'error');
+                    return;
+                }
+                if(amount > 100000) {
+                    app.showToast('Amount exceeds reasonable limits for this gateway.', 'error');
+                    return;
+                }
+                const upiUrl = `upi://pay?pa=vikram.joshi9089@oksbi&pn=StudySphere&am=${amount}&cu=INR`;
+                window.location.href = upiUrl;
+                app.closeModal();
+                app.showToast('Payment intent launched. Awaiting verification...', 'info');
+                // Note: Real verification requires backend webhook.
+            }
         };
 
-        document.addEventListener('DOMContentLoaded', () => { app.init(); });
+        // Init Theme/Font logic immediately
+        document.documentElement.setAttribute('data-theme', app.theme);
+        app.setFontSize(app.fontSize);
+        document.getElementById('year').innerText = new Date().getFullYear();
+
+        class QuizEngine {
+            constructor(quizData, questions, timeMinutes) {
+                this.quiz = quizData;
+                this.questions = questions;
+                this.totalTime = timeMinutes ? timeMinutes * 60 : null; // in seconds
+                this.remainingTime = this.totalTime;
+                this.currentIndex = 0;
+                this.answers = {}; // qnId -> optionId
+                this.status = {};  // qnId -> 'unvisited', 'visited', 'answered', 'review', 'answered-review'
+                this.timerInterval = null;
+                this.isSubmitted = false;
+                this.tabSwitchCount = 0;
+                
+                // Initialize status
+                this.questions.forEach(q => this.status[q.id] = 'unvisited');
+                this.status[this.questions[0].id] = 'visited';
+                
+                this.setupAntiCheat();
+            }
+
+            setupAntiCheat() {
+                if(this.quiz.mode === 'test') {
+                    this.visibilityHandler = () => {
+                        if (document.hidden && !this.isSubmitted) {
+                            this.tabSwitchCount++;
+                            if (this.tabSwitchCount === 1) {
+                                alert("Warning: Navigating away from the test tab is prohibited. Further switches may void your attempt."); // Using custom modal usually, but visibility blur blocks DOM updates reliably only via alert sometimes. Replacing with custom toast to respect rules.
+                                app.showToast("Warning: Do not switch tabs during a Test!", "warning");
+                            } else {
+                                app.showToast("Multiple tab switches detected. This will be recorded.", "error");
+                            }
+                        }
+                    };
+                    document.addEventListener('visibilitychange', this.visibilityHandler);
+                    
+                    // Prevent context menu
+                    this.contextHandler = (e) => e.preventDefault();
+                    document.addEventListener('contextmenu', this.contextHandler);
+                }
+            }
+
+            cleanupAntiCheat() {
+                if(this.visibilityHandler) document.removeEventListener('visibilitychange', this.visibilityHandler);
+                if(this.contextHandler) document.removeEventListener('contextmenu', this.contextHandler);
+            }
+
+            startTimer(onTick, onTimeout) {
+                if(!this.totalTime) return;
+                this.timerInterval = setInterval(() => {
+                    this.remainingTime--;
+                    onTick(this.formatTime(this.remainingTime));
+                    if(this.remainingTime <= 60 && this.remainingTime % 15 === 0) {
+                         app.showToast(`Only ${this.remainingTime} seconds remaining!`, 'warning');
+                    }
+                    if(this.remainingTime <= 0) {
+                        this.stopTimer();
+                        onTimeout();
+                    }
+                }, 1000);
+            }
+
+            stopTimer() {
+                if(this.timerInterval) clearInterval(this.timerInterval);
+            }
+
+            formatTime(seconds) {
+                const m = Math.floor(seconds / 60).toString().padStart(2, '0');
+                const s = (seconds % 60).toString().padStart(2, '0');
+                return `${m}:${s}`;
+            }
+
+            selectOption(optionId) {
+                const qId = this.questions[this.currentIndex].id;
+                this.answers[qId] = optionId;
+            }
+
+            updateStatusForNavigation(markReview = false) {
+                const qId = this.questions[this.currentIndex].id;
+                const hasAnswer = !!this.answers[qId];
+                
+                if (hasAnswer && markReview) this.status[qId] = 'answered-review';
+                else if (!hasAnswer && markReview) this.status[qId] = 'review';
+                else if (hasAnswer) this.status[qId] = 'answered';
+                else this.status[qId] = 'visited';
+            }
+
+            goToQuestion(index) {
+                if(index < 0 || index >= this.questions.length) return;
+                this.updateStatusForNavigation();
+                this.currentIndex = index;
+                const newQId = this.questions[this.currentIndex].id;
+                if(this.status[newQId] === 'unvisited') {
+                    this.status[newQId] = 'visited';
+                }
+            }
+
+            next(markReview = false) {
+                this.updateStatusForNavigation(markReview);
+                if(this.currentIndex < this.questions.length - 1) {
+                    this.currentIndex++;
+                    const newQId = this.questions[this.currentIndex].id;
+                    if(this.status[newQId] === 'unvisited') this.status[newQId] = 'visited';
+                }
+            }
+
+            clearResponse() {
+                const qId = this.questions[this.currentIndex].id;
+                delete this.answers[qId];
+                this.status[qId] = 'visited';
+            }
+
+            calculateResult() {
+                let correct = 0, wrong = 0, skipped = 0, posMarks = 0, negMarks = 0;
+                
+                this.questions.forEach(q => {
+                    const ans = this.answers[q.id];
+                    if (!ans) {
+                        skipped++;
+                    } else if (ans === q.correct) {
+                        correct++;
+                        posMarks += (q.marks || 1);
+                    } else {
+                        wrong++;
+                        negMarks += (q.negMarks || 0);
+                    }
+                });
+
+                const finalScore = posMarks - negMarks;
+                const maxPossible = this.questions.reduce((sum, q) => sum + (q.marks || 1), 0);
+                const percentage = Math.max(0, (finalScore / maxPossible) * 100).toFixed(2);
+
+                return {
+                    total: this.questions.length,
+                    correct, wrong, skipped, posMarks, negMarks, finalScore, maxPossible, percentage,
+                    answers: this.answers,
+                    tabSwitches: this.tabSwitchCount
+                };
+            }
+        }
+
+        let activeEngine = null;
+
+        const Views = {
+            Home: () => `
+                <div class="space-y-10">
+                    <!-- Intro Card -->
+                    <section class="bg-brand-50 dark:bg-slate-800/50 rounded-2xl p-6 sm:p-8 border border-brand-100 dark:border-slate-700 flex flex-col md:flex-row items-center gap-6">
+                        <div class="flex-1">
+                            <h2 class="text-2xl sm:text-3xl font-bold text-brand-600 dark:text-brand-500 mb-2">Crack MPSC Group B & C</h2>
+                            <p class="theme-text-sec text-base sm:text-lg">Structured bilingual MCQ practice, comprehensive mock tests, and detailed explanations to boost your preparation.</p>
+                        </div>
+                        <div class="hidden md:flex bg-white dark:bg-slate-700 p-4 rounded-full shadow-sm">
+                            <i class="ph-fill ph-student text-5xl text-brand-500"></i>
+                        </div>
+                    </section>
+
+                    <!-- Subjects Sections -->
+                    <section>
+                        <h3 class="text-xl font-bold mb-4 flex items-center gap-2"><i class="ph ph-books text-brand-600"></i> Common For Prelims + Mains</h3>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                            ${DATA.subjects.filter(s => s.category === 'common').map(s => `
+                                <a href="#/subject/${s.id}" class="group theme-surface border theme-border rounded-xl p-5 hover:border-brand-500 hover:shadow-md transition flex items-center justify-between">
+                                    <div>
+                                        <div class="text-lg font-bold mb-1">${s.titleMr}</div>
+                                        <div class="text-sm theme-text-sec">${s.titleEn}</div>
+                                    </div>
+                                    <i class="ph ph-arrow-right text-xl text-slate-400 group-hover:text-brand-600 transition transform group-hover:translate-x-1"></i>
+                                </a>
+                            `).join('')}
+                        </div>
+                    </section>
+                    
+                    <section>
+                        <h3 class="text-xl font-bold mb-4 flex items-center gap-2"><i class="ph ph-graduation-cap text-brand-600"></i> Mains Only</h3>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                            ${DATA.subjects.filter(s => s.category === 'mains').map(s => `
+                                <a href="#/subject/${s.id}" class="group theme-surface border theme-border rounded-xl p-5 hover:border-brand-500 hover:shadow-md transition flex items-center justify-between">
+                                    <div>
+                                        <div class="text-lg font-bold mb-1">${s.titleMr}</div>
+                                        <div class="text-sm theme-text-sec">${s.titleEn}</div>
+                                    </div>
+                                    <i class="ph ph-arrow-right text-xl text-slate-400 group-hover:text-brand-600 transition transform group-hover:translate-x-1"></i>
+                                </a>
+                            `).join('')}
+                        </div>
+                    </section>
+
+                    <!-- Guide -->
+                    <section class="theme-surface border theme-border rounded-xl p-6 sm:p-8">
+                        <h3 class="text-xl font-bold mb-4">How it Works</h3>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+                            <div class="flex flex-col gap-2">
+                                <div class="w-10 h-10 rounded-full bg-brand-100 text-brand-600 flex items-center justify-center font-bold">1</div>
+                                <h4 class="font-bold">Select Topic</h4>
+                                <p class="text-sm theme-text-sec">Choose subject, chapter, and specific topic.</p>
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <div class="w-10 h-10 rounded-full bg-brand-100 text-brand-600 flex items-center justify-center font-bold">2</div>
+                                <h4 class="font-bold">Choose Mode</h4>
+                                <p class="text-sm theme-text-sec">Practice freely or take a timed test.</p>
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <div class="w-10 h-10 rounded-full bg-brand-100 text-brand-600 flex items-center justify-center font-bold">3</div>
+                                <h4 class="font-bold">Attempt Quiz</h4>
+                                <p class="text-sm theme-text-sec">Answer bilingual questions with exam-like interface.</p>
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <div class="w-10 h-10 rounded-full bg-brand-100 text-brand-600 flex items-center justify-center font-bold">4</div>
+                                <h4 class="font-bold">Analyze</h4>
+                                <p class="text-sm theme-text-sec">Review detailed explanations and track progress.</p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            `,
+
+            Subject: (subjectId) => {
+                const subject = DATA.subjects.find(s => s.id === subjectId);
+                if(!subject) return `<div class="text-center py-20 text-red-500">Subject not found.</div>`;
+                const chapters = DATA.chapters.filter(c => c.subjectId === subjectId);
+                
+                return `
+                    <div class="mb-6">
+                        <button onclick="app.navigate('/')" class="text-brand-600 hover:underline flex items-center gap-1 text-sm mb-4"><i class="ph ph-arrow-left"></i> Back to Home</button>
+                        <h2 class="text-2xl sm:text-3xl font-bold mb-1">${subject.titleMr}</h2>
+                        <h3 class="text-lg theme-text-sec">${subject.titleEn}</h3>
+                    </div>
+                    
+                    ${chapters.length === 0 ? `<div class="theme-surface border theme-border rounded-xl p-8 text-center theme-text-sec">No chapters available yet. (Select Geography for demo)</div>` : ''}
+                    
+                    <div class="space-y-4">
+                        ${chapters.map(c => {
+                            const topics = DATA.topics.filter(t => t.chapterId === c.id);
+                            return `
+                            <div class="theme-surface border theme-border rounded-xl overflow-hidden">
+                                <button onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('.arrow').classList.toggle('rotate-180')" class="w-full text-left p-5 flex items-center justify-between hover:bg-slate-50 dark:hover:bg-slate-800 transition focus:outline-none">
+                                    <div>
+                                        <div class="font-bold text-lg">${c.titleMr}</div>
+                                        <div class="text-sm theme-text-sec">${c.titleEn}</div>
+                                    </div>
+                                    <i class="ph ph-caret-down arrow transition-transform duration-300"></i>
+                                </button>
+                                <div class="hidden border-t theme-border bg-slate-50/50 dark:bg-slate-900/50">
+                                    ${topics.length === 0 ? `<div class="p-4 text-sm theme-text-sec">No topics.</div>` : 
+                                      `<ul class="divide-y theme-border">
+                                        ${topics.map(t => `
+                                            <li>
+                                                <a href="#/topic/${t.id}" class="block p-4 pl-6 hover:text-brand-600 transition">
+                                                    <div class="font-medium">${t.titleMr}</div>
+                                                    <div class="text-sm theme-text-sec">${t.titleEn}</div>
+                                                </a>
+                                            </li>
+                                        `).join('')}
+                                      </ul>`
+                                    }
+                                </div>
+                            </div>
+                        `}).join('')}
+                    </div>
+                `;
+            },
+
+            Topic: (topicId) => {
+                const topic = DATA.topics.find(t => t.id === topicId);
+                if(!topic) return `<div class="text-center py-20 text-red-500">Topic not found.</div>`;
+                const quizzes = DATA.quizzes.filter(q => q.topicId === topicId);
+
+                return `
+                    <div class="mb-6">
+                        <button onclick="window.history.back()" class="text-brand-600 hover:underline flex items-center gap-1 text-sm mb-4"><i class="ph ph-arrow-left"></i> Back</button>
+                        <h2 class="text-2xl sm:text-3xl font-bold mb-1">${topic.titleMr}</h2>
+                        <h3 class="text-lg theme-text-sec">${topic.titleEn}</h3>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        ${quizzes.length === 0 ? `<div class="col-span-full theme-surface border theme-border rounded-xl p-8 text-center theme-text-sec">No quizzes available yet.</div>` : ''}
+                        ${quizzes.map(q => `
+                            <div class="theme-surface border theme-border rounded-xl p-6 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+                                <div>
+                                    <div class="flex justify-between items-start mb-2">
+                                        <h4 class="font-bold text-lg">${q.titleMr}</h4>
+                                        <span class="text-xs font-bold px-2 py-1 rounded ${q.mode === 'test' ? 'bg-amber-100 text-amber-700 dark:bg-amber-900/30 dark:text-amber-400 border border-amber-200 dark:border-amber-800' : 'bg-brand-100 text-brand-700 dark:bg-brand-900/30 dark:text-brand-400 border border-brand-200 dark:border-brand-800'}">
+                                            [ ${q.mode.toUpperCase()} ]
+                                        </span>
+                                    </div>
+                                    <div class="text-sm theme-text-sec mb-4">${q.titleEn}</div>
+                                    <div class="flex items-center gap-4 text-sm theme-text-sec mb-6">
+                                        <span class="flex items-center gap-1"><i class="ph ph-list-numbers"></i> ${q.qCount} Questions</span>
+                                    </div>
+                                </div>
+                                <button onclick="Views.openQuizConfig('${q.id}')" class="w-full py-2.5 rounded-lg font-medium text-white transition focus:ring-2 focus:ring-offset-2 ${q.mode === 'test' ? 'bg-amber-600 hover:bg-amber-700 focus:ring-amber-500' : 'bg-brand-600 hover:bg-brand-700 focus:ring-brand-500'}">
+                                    Start ${q.mode === 'test' ? 'Test' : 'Practice'}
+                                </button>
+                            </div>
+                        `).join('')}
+                    </div>
+                `;
+            },
+
+            openQuizConfig: (quizId) => {
+                const quiz = DATA.quizzes.find(q => q.id === quizId);
+                
+                // Security Check for Test Mode
+                if(quiz.mode === 'test') {
+                    if(!window.fb.auth || !window.fb.auth.currentUser) {
+                        app.openModal(`
+                            <div class="p-6 text-center">
+                                <div class="w-16 h-16 bg-amber-100 text-amber-600 rounded-full flex items-center justify-center mx-auto mb-4"><i class="ph ph-lock-key text-3xl"></i></div>
+                                <h2 class="text-xl font-bold mb-2">Login Required</h2>
+                                <p class="text-sm theme-text-sec mb-6">You must be logged in to attempt a Test Quiz. Tests allow only one strict attempt.</p>
+                                <div class="flex gap-3">
+                                    <button onclick="app.closeModal()" class="flex-1 py-2 rounded-lg bg-slate-200 hover:bg-slate-300 dark:bg-slate-700 transition">Cancel</button>
+                                    <button onclick="app.closeModal(); app.navigate('/login')" class="flex-1 py-2 rounded-lg bg-brand-600 text-white hover:bg-brand-700 transition">Login</button>
+                                </div>
+                            </div>
+                        `);
+                        return;
+                    }
+                }
+
+                const timeOptions = quiz.mode === 'test' ? [5, 10, 15, 20] : [0, 5, 10, 15]; // 0 = No limit for practice
+                
+                app.openModal(`
+                    <div class="p-6">
+                        <h2 class="text-xl font-bold mb-1">Start Quiz</h2>
+                        <h3 class="text-sm theme-text-sec mb-6">${quiz.titleMr}</h3>
+                        
+                        <div class="mb-4">
+                            <label class="block text-sm font-medium mb-2">Select Time Limit</label>
+                            <div class="grid grid-cols-2 gap-3" id="time-selection">
+                                ${timeOptions.map(t => `
+                                    <button onclick="document.querySelectorAll('.time-btn').forEach(b=>b.classList.remove('ring-2', 'ring-brand-500', 'border-brand-500', 'bg-brand-50', 'dark:bg-brand-900/20')); this.classList.add('ring-2', 'ring-brand-500', 'border-brand-500', 'bg-brand-50', 'dark:bg-brand-900/20'); document.getElementById('selected-time').value = ${t};" 
+                                            class="time-btn border theme-border py-2 rounded-lg text-sm hover:bg-slate-50 dark:hover:bg-slate-800 transition">
+                                        ${t === 0 ? 'No Time Limit' : `${t} Minutes`}
+                                    </button>
+                                `).join('')}
+                            </div>
+                            <input type="hidden" id="selected-time" value="">
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label class="block text-sm font-medium mb-1">Or Custom Time (Minutes)</label>
+                            <input type="number" id="custom-time" min="1" max="180" class="w-full px-3 py-2 border theme-border rounded-lg bg-transparent focus:ring-2 focus:ring-brand-500 outline-none" placeholder="e.g. 12" oninput="document.getElementById('selected-time').value = this.value; document.querySelectorAll('.time-btn').forEach(b=>b.classList.remove('ring-2', 'ring-brand-500'));">
+                        </div>
+                        
+                        <div class="flex gap-3 mt-6">
+                            <button onclick="app.closeModal()" class="flex-1 py-2.5 rounded-lg border theme-border hover:bg-slate-50 dark:hover:bg-slate-800 transition font-medium">Cancel</button>
+                            <button onclick="Views.startQuiz('${quizId}')" class="flex-1 py-2.5 rounded-lg bg-brand-600 text-white hover:bg-brand-700 transition font-medium">Start Now</button>
+                        </div>
+                    </div>
+                `);
+            },
+
+            startQuiz: async (quizId) => {
+                const timeInput = document.getElementById('selected-time').value;
+                const time = parseInt(timeInput);
+                const quiz = DATA.quizzes.find(q => q.id === quizId);
+
+                if(quiz.mode === 'test' && (!timeInput || isNaN(time) || time <= 0)) {
+                    app.showToast('Test mode requires a valid time limit.', 'error');
+                    return;
+                }
+                if(timeInput && (isNaN(time) || time < 0 || time > 180)) {
+                    app.showToast('Please enter a valid time between 1 and 180 minutes.', 'error');
+                    return;
+                }
+
+                // Check Firebase for previous test attempt if Test mode
+                if (quiz.mode === 'test' && window.fb.isFirebaseValid && window.fb.auth.currentUser) {
+                    try {
+                        const uid = window.fb.auth.currentUser.uid;
+                        // RULE 1 Strict path used below:
+                        const attemptRef = window.fb.collection(window.fb.db, 'artifacts', 'studysphere', 'users', uid, 'quizAttempts');
+                        const q = window.fb.query(attemptRef, window.fb.where('quizId', '==', quizId));
+                        const snapshot = await window.fb.getDocs(q);
+                        if (!snapshot.empty) {
+                            app.showToast('You have already attempted this Test Quiz.', 'error');
+                            return;
+                        }
+                    } catch (e) {
+                        console.error("Firestore attempt check failed", e);
+                        // Degrade gracefully for demo if Firestore config is missing but auth exists
+                    }
+                }
+
+                const questions = DATA.questions[quizId] || [];
+                if(questions.length === 0) {
+                    app.showToast('No questions found for this quiz.', 'error');
+                    return;
+                }
+
+                activeEngine = new QuizEngine(quiz, questions, time || null);
+                app.closeModal();
+                Views.renderQuizInterface();
+                
+                if(time > 0) {
+                    activeEngine.startTimer(
+                        (formatted) => { document.getElementById('timer-display').innerText = formatted; },
+                        () => { Views.submitQuiz(true); } // auto-submit on timeout
+                    );
+                }
+            },
+
+            renderQuizInterface: () => {
+                const root = document.getElementById('app-root');
+                root.innerHTML = `
+                    <div class="flex flex-col lg:flex-row gap-6 h-full min-h-[calc(100vh-140px)] relative">
+                        
+                        <!-- Mobile Palette Toggle -->
+                        <div class="lg:hidden flex justify-between items-center bg-slate-100 dark:bg-slate-800 p-3 rounded-lg border theme-border mb-2">
+                            <div class="font-bold">Q. ${activeEngine.currentIndex + 1} / ${activeEngine.questions.length}</div>
+                            <button onclick="document.getElementById('palette-panel').classList.toggle('hidden')" class="flex items-center gap-2 text-sm bg-brand-600 text-white px-3 py-1.5 rounded">
+                                <i class="ph ph-squares-four"></i> Palette
+                            </button>
+                        </div>
+
+                        <!-- Left: Question Area -->
+                        <div class="flex-1 flex flex-col theme-surface border theme-border rounded-xl shadow-sm overflow-hidden relative">
+                            <!-- Header -->
+                            <div class="bg-slate-50 dark:bg-slate-800 p-4 border-b theme-border flex justify-between items-center">
+                                <h2 class="font-bold text-lg hidden sm:block">${activeEngine.quiz.titleMr}</h2>
+                                <div class="flex items-center gap-4 ml-auto">
+                                    ${activeEngine.totalTime ? `
+                                        <div class="flex items-center gap-2 text-amber-600 dark:text-amber-400 font-mono font-bold bg-amber-50 dark:bg-amber-900/20 px-3 py-1 rounded-full border border-amber-200 dark:border-amber-800">
+                                            <i class="ph ph-timer"></i> <span id="timer-display">${activeEngine.formatTime(activeEngine.remainingTime)}</span>
+                                        </div>
+                                    ` : `<span class="text-sm theme-text-sec">No Time Limit</span>`}
+                                </div>
+                            </div>
+
+                            <!-- Question Content -->
+                            <div class="p-6 sm:p-8 flex-1 overflow-y-auto" id="question-content">
+                                <!-- Rendered dynamically -->
+                            </div>
+
+                            <!-- Action Buttons -->
+                            <div class="p-4 bg-slate-50 dark:bg-slate-800 border-t theme-border flex flex-wrap gap-3 justify-between">
+                                <div class="flex flex-wrap gap-2 w-full sm:w-auto">
+                                    <button onclick="Views.quizAction('review')" class="flex-1 sm:flex-none px-4 py-2 bg-purple-100 text-purple-700 dark:bg-purple-900/30 dark:text-purple-300 border border-purple-200 dark:border-purple-800 rounded font-medium text-sm hover:bg-purple-200 transition">Mark for Review</button>
+                                    <button onclick="Views.quizAction('clear')" class="flex-1 sm:flex-none px-4 py-2 bg-slate-200 text-slate-700 dark:bg-slate-700 dark:text-slate-200 rounded font-medium text-sm hover:bg-slate-300 transition">Clear</button>
+                                </div>
+                                <div class="flex flex-wrap gap-2 w-full sm:w-auto mt-2 sm:mt-0">
+                                    <button onclick="Views.quizAction('submit')" class="flex-1 sm:flex-none px-4 py-2 bg-red-600 text-white rounded font-medium text-sm hover:bg-red-700 transition shadow-sm">Submit Test</button>
+                                    <button onclick="Views.quizAction('next')" class="flex-1 sm:flex-none px-6 py-2 bg-brand-600 text-white rounded font-medium text-sm hover:bg-brand-700 transition shadow-sm">Save & Next</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Right: Palette Panel -->
+                        <div id="palette-panel" class="hidden lg:flex w-full lg:w-80 flex-col gap-4 absolute lg:relative top-0 left-0 lg:h-auto h-full z-20 bg-white/95 dark:bg-slate-900/95 backdrop-blur lg:bg-transparent lg:backdrop-blur-none p-4 lg:p-0">
+                            <!-- Mobile Close -->
+                            <div class="lg:hidden flex justify-end mb-2">
+                                <button onclick="document.getElementById('palette-panel').classList.add('hidden')" class="p-2 bg-slate-200 dark:bg-slate-700 rounded-full"><i class="ph ph-x"></i></button>
+                            </div>
+                            
+                            <!-- Legend -->
+                            <div class="theme-surface border theme-border rounded-xl p-4 shadow-sm text-xs space-y-2">
+                                <div class="font-bold text-sm border-b theme-border pb-2 mb-2">Palette Legend</div>
+                                <div class="flex items-center gap-2"><div class="w-4 h-4 rounded-full bg-slate-200 dark:bg-slate-600"></div> Not Visited</div>
+                                <div class="flex items-center gap-2"><div class="w-4 h-4 rounded-full bg-red-500"></div> Not Answered</div>
+                                <div class="flex items-center gap-2"><div class="w-4 h-4 rounded-full bg-green-500"></div> Answered</div>
+                                <div class="flex items-center gap-2"><div class="w-4 h-4 rounded-full bg-purple-500"></div> Marked for Review</div>
+                                <div class="flex items-center gap-2"><div class="w-4 h-4 rounded-full bg-blue-500 relative"><div class="absolute right-0 bottom-0 w-1.5 h-1.5 bg-green-400 rounded-full border border-white"></div></div> Answered & Marked</div>
+                            </div>
+
+                            <!-- Grid -->
+                            <div class="theme-surface border theme-border rounded-xl p-4 shadow-sm flex-1 overflow-y-auto">
+                                <div class="font-bold text-sm mb-3">Questions</div>
+                                <div class="grid grid-cols-5 gap-2" id="palette-grid">
+                                    <!-- Rendered dynamically -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                Views.renderCurrentQuestion();
+                Views.renderPalette();
+            },
+
+            renderCurrentQuestion: () => {
+                if(!activeEngine) return;
+                const q = activeEngine.questions[activeEngine.currentIndex];
+                const content = document.getElementById('question-content');
+                const selectedAns = activeEngine.answers[q.id];
+
+                content.innerHTML = `
+                    <div class="flex gap-4 mb-6">
+                        <div class="font-bold text-lg text-brand-600">Q.${activeEngine.currentIndex + 1}</div>
+                        <div class="flex-1">
+                            <div class="text-lg sm:text-xl font-medium mb-3 leading-relaxed">${q.mr}</div>
+                            <div class="text-base theme-text-sec leading-relaxed mb-6">${q.en}</div>
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-3 pl-0 sm:pl-10">
+                        ${q.options.map(opt => `
+                            <label class="flex items-start gap-4 p-4 rounded-lg border ${selectedAns === opt.id ? 'border-brand-500 bg-brand-50 dark:bg-brand-900/20' : 'theme-border hover:bg-slate-50 dark:hover:bg-slate-800'} cursor-pointer transition">
+                                <input type="radio" name="opt_${q.id}" value="${opt.id}" class="mt-1" ${selectedAns === opt.id ? 'checked' : ''} onclick="activeEngine.selectOption('${opt.id}')">
+                                <div>
+                                    <div class="font-medium text-base sm:text-lg leading-relaxed">${opt.mr}</div>
+                                    <div class="text-sm theme-text-sec mt-1">${opt.en}</div>
+                                </div>
+                            </label>
+                        `).join('')}
+                    </div>
+                `;
+            },
+
+            renderPalette: () => {
+                if(!activeEngine) return;
+                const grid = document.getElementById('palette-grid');
+                grid.innerHTML = activeEngine.questions.map((q, i) => {
+                    const status = activeEngine.status[q.id];
+                    let bgClass = 'bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-300'; // unvisited
+                    if (status === 'visited') bgClass = 'bg-red-500 text-white';
+                    if (status === 'answered') bgClass = 'bg-green-500 text-white';
+                    if (status === 'review') bgClass = 'bg-purple-500 text-white';
+                    if (status === 'answered-review') bgClass = 'bg-blue-500 text-white';
+                    
+                    const isCurrent = activeEngine.currentIndex === i;
+                    const ringClass = isCurrent ? 'ring-2 ring-offset-2 ring-brand-500 dark:ring-offset-slate-800' : '';
+
+                    return `<button onclick="activeEngine.goToQuestion(${i}); Views.renderCurrentQuestion(); Views.renderPalette();" 
+                                    class="w-full aspect-square rounded-md flex items-center justify-center font-bold text-sm ${bgClass} ${ringClass} transition hover:opacity-80 relative">
+                                ${i + 1}
+                                ${status === 'answered-review' ? `<div class="absolute -right-1 -bottom-1 w-2.5 h-2.5 bg-green-400 rounded-full border-2 border-white dark:border-slate-800"></div>` : ''}
+                            </button>`;
+                }).join('');
+            },
+
+            quizAction: (action) => {
+                if(!activeEngine) return;
+                if(action === 'clear') {
+                    activeEngine.clearResponse();
+                    Views.renderCurrentQuestion();
+                    Views.renderPalette();
+                } else if(action === 'next' || action === 'review') {
+                    activeEngine.next(action === 'review');
+                    Views.renderCurrentQuestion();
+                    Views.renderPalette();
+                } else if(action === 'submit') {
+                    const res = activeEngine.calculateResult();
+                    app.openModal(`
+                        <div class="p-6">
+                            <h2 class="text-xl font-bold mb-4">Submit Quiz</h2>
+                            <div class="grid grid-cols-2 gap-4 mb-6 bg-slate-50 dark:bg-slate-800 p-4 rounded-lg border theme-border text-sm">
+                                <div><span class="theme-text-sec">Total:</span> <strong>${res.total}</strong></div>
+                                <div><span class="theme-text-sec">Answered:</span> <strong class="text-green-600">${res.correct + res.wrong}</strong></div>
+                                <div><span class="theme-text-sec">Unanswered:</span> <strong class="text-red-600">${res.skipped}</strong></div>
+                            </div>
+                            <p class="mb-6 font-medium">Are you sure you want to submit? You cannot change your answers after submission.</p>
+                            <div class="flex gap-3">
+                                <button onclick="app.closeModal()" class="flex-1 py-2 bg-slate-200 dark:bg-slate-700 rounded-lg hover:bg-slate-300 transition">Cancel</button>
+                                <button onclick="Views.submitQuiz()" class="flex-1 py-2 bg-brand-600 text-white rounded-lg hover:bg-brand-700 transition">Submit</button>
+                            </div>
+                        </div>
+                    `);
+                }
+            },
+
+            submitQuiz: async (isAuto = false) => {
+                if(!activeEngine || activeEngine.isSubmitted) return;
+                activeEngine.isSubmitted = true;
+                activeEngine.stopTimer();
+                activeEngine.cleanupAntiCheat();
+                app.closeModal();
+                if(isAuto) app.showToast('Time is up! Quiz submitted automatically.', 'info');
+
+                const result = activeEngine.calculateResult();
+                
+                // Save to Firestore if Test Mode and Firebase is active
+                if(activeEngine.quiz.mode === 'test' && window.fb.isFirebaseValid && window.fb.auth.currentUser) {
+                    try {
+                        const uid = window.fb.auth.currentUser.uid;
+                        // RULE 1 Strict path:
+                        const attemptRef = window.fb.collection(window.fb.db, 'artifacts', 'studysphere', 'users', uid, 'quizAttempts');
+                        await window.fb.addDoc(attemptRef, {
+                            quizId: activeEngine.quiz.id,
+                            score: result.finalScore,
+                            percentage: result.percentage,
+                            timestamp: window.fb.serverTimestamp(),
+                            tabSwitches: result.tabSwitches
+                        });
+                    } catch (e) {
+                        console.error("Failed to save attempt to backend", e);
+                        // Continuing to display result even if save fails for demo resilience
+                    }
+                }
+
+                // Render Result UI
+                const root = document.getElementById('app-root');
+                root.innerHTML = `
+                    <div class="max-w-4xl mx-auto space-y-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <h2 class="text-2xl sm:text-3xl font-bold">Result Analysis</h2>
+                            <button onclick="app.navigate('/subject/${activeEngine.quiz.subjectId || 's3'}')" class="px-4 py-2 border theme-border rounded-lg text-sm hover:bg-slate-50 dark:hover:bg-slate-800 transition">Back to Topic</button>
+                        </div>
+
+                        <!-- Score Card -->
+                        <div class="theme-surface border theme-border rounded-xl p-6 sm:p-8 shadow-sm flex flex-col md:flex-row gap-8 items-center md:items-start justify-between">
+                            <div class="text-center md:text-left">
+                                <div class="text-sm theme-text-sec uppercase font-bold tracking-wider mb-1">Final Score</div>
+                                <div class="text-5xl font-black text-brand-600 mb-2">${result.finalScore} <span class="text-xl text-slate-400">/ ${result.maxPossible}</span></div>
+                                <div class="inline-block px-3 py-1 bg-brand-50 text-brand-700 dark:bg-brand-900/30 dark:text-brand-300 rounded-full font-medium text-sm border border-brand-200 dark:border-brand-800">
+                                    Accuracy: ${result.total > result.skipped ? Math.round((result.correct/(result.total-result.skipped))*100) : 0}%
+                                </div>
+                            </div>
+                            
+                            <div class="grid grid-cols-2 gap-x-8 gap-y-4 w-full md:w-auto text-sm sm:text-base">
+                                <div class="flex justify-between gap-4 border-b theme-border pb-2">
+                                    <span class="theme-text-sec">Total Questions:</span> <span class="font-bold">${result.total}</span>
+                                </div>
+                                <div class="flex justify-between gap-4 border-b theme-border pb-2">
+                                    <span class="theme-text-sec">Positive Marks:</span> <span class="font-bold text-green-600">+${result.posMarks}</span>
+                                </div>
+                                <div class="flex justify-between gap-4 border-b theme-border pb-2">
+                                    <span class="theme-text-sec">Correct:</span> <span class="font-bold text-green-600">${result.correct}</span>
+                                </div>
+                                <div class="flex justify-between gap-4 border-b theme-border pb-2">
+                                    <span class="theme-text-sec">Negative Marks:</span> <span class="font-bold text-red-600">-${result.negMarks}</span>
+                                </div>
+                                <div class="flex justify-between gap-4 border-b theme-border pb-2">
+                                    <span class="theme-text-sec">Wrong:</span> <span class="font-bold text-red-600">${result.wrong}</span>
+                                </div>
+                                <div class="flex justify-between gap-4 border-b theme-border pb-2">
+                                    <span class="theme-text-sec">Skipped:</span> <span class="font-bold text-slate-500">${result.skipped}</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        ${activeEngine.tabSwitchCount > 0 ? `
+                            <div class="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800 p-4 rounded-xl text-amber-800 dark:text-amber-400 text-sm flex gap-3 items-start">
+                                <i class="ph-fill ph-warning-circle text-xl mt-0.5"></i>
+                                <div><strong>Warning Recorded:</strong> You switched tabs ${activeEngine.tabSwitchCount} time(s) during the test. This has been recorded.</div>
+                            </div>
+                        ` : ''}
+
+                        <!-- Detailed Analysis -->
+                        <h3 class="text-xl font-bold pt-4">Question Analysis</h3>
+                        <div class="space-y-4">
+                            ${activeEngine.questions.map((q, i) => {
+                                const userAnsId = result.answers[q.id];
+                                const isCorrect = userAnsId === q.correct;
+                                const isSkipped = !userAnsId;
+                                
+                                let headerClass = 'bg-slate-50 dark:bg-slate-800 border-slate-200 dark:border-slate-700';
+                                let statusBadge = `<span class="px-2 py-0.5 bg-slate-200 text-slate-700 dark:bg-slate-700 dark:text-slate-300 rounded text-xs font-bold">SKIPPED</span>`;
+                                
+                                if(isCorrect) {
+                                    headerClass = 'bg-green-50 dark:bg-green-900/10 border-green-200 dark:border-green-900/30';
+                                    statusBadge = `<span class="px-2 py-0.5 bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-400 border border-green-200 dark:border-green-800 rounded text-xs font-bold">CORRECT</span>`;
+                                } else if(!isSkipped) {
+                                    headerClass = 'bg-red-50 dark:bg-red-900/10 border-red-200 dark:border-red-900/30';
+                                    statusBadge = `<span class="px-2 py-0.5 bg-red-100 text-red-700 dark:bg-red-900/30 dark:text-red-400 border border-red-200 dark:border-red-800 rounded text-xs font-bold">WRONG</span>`;
+                                }
+
+                                const userOptionText = isSkipped ? '-' : q.options.find(o => o.id === userAnsId)?.mr;
+                                const correctOptionText = q.options.find(o => o.id === q.correct)?.mr;
+
+                                return `
+                                <div class="border theme-border rounded-xl overflow-hidden shadow-sm">
+                                    <button onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('.arrow').classList.toggle('rotate-180')" class="w-full text-left p-4 sm:p-5 flex gap-4 ${headerClass} focus:outline-none transition">
+                                        <div class="font-bold mt-1">Q.${i+1}</div>
+                                        <div class="flex-1">
+                                            <div class="font-medium text-base sm:text-lg mb-1 leading-relaxed">${q.mr}</div>
+                                            <div class="flex items-center gap-3 mt-2">
+                                                ${statusBadge}
+                                                <span class="text-sm theme-text-sec">View Details</span>
+                                            </div>
+                                        </div>
+                                        <i class="ph ph-caret-down arrow transition-transform duration-300 mt-1"></i>
+                                    </button>
+                                    <div class="hidden border-t theme-border p-4 sm:p-6 bg-white dark:bg-slate-900">
+                                        <div class="text-sm theme-text-sec mb-4">${q.en}</div>
+                                        
+                                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+                                            <div class="p-3 rounded-lg border ${!isSkipped && !isCorrect ? 'border-red-300 bg-red-50 dark:bg-red-900/20' : 'theme-border'}">
+                                                <div class="text-xs theme-text-sec mb-1">Your Answer:</div>
+                                                <div class="font-medium ${!isSkipped && !isCorrect ? 'text-red-600 dark:text-red-400' : ''}">${userOptionText}</div>
+                                            </div>
+                                            <div class="p-3 rounded-lg border border-green-300 bg-green-50 dark:bg-green-900/20">
+                                                <div class="text-xs text-green-700 dark:text-green-400 mb-1">Correct Answer:</div>
+                                                <div class="font-medium text-green-800 dark:text-green-300">${correctOptionText}</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="p-4 rounded-lg bg-brand-50 dark:bg-slate-800 border theme-border">
+                                            <div class="font-bold flex items-center gap-2 mb-2 text-brand-700 dark:text-brand-400"><i class="ph ph-lightbulb"></i> Explanation</div>
+                                            <p class="mb-2 leading-relaxed text-[15px]">${q.expMr}</p>
+                                            <p class="theme-text-sec text-sm leading-relaxed">${q.expEn}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                `;
+                            }).join('')}
+                        </div>
+                    </div>
+                `;
+            },
+
+            Login: () => `
+                <div class="max-w-md mx-auto theme-surface border theme-border rounded-xl p-8 shadow-sm">
+                    <div class="text-center mb-8">
+                        <div class="w-16 h-16 bg-brand-100 text-brand-600 rounded-full flex items-center justify-center mx-auto mb-4"><i class="ph ph-user text-3xl"></i></div>
+                        <h2 class="text-2xl font-bold">Welcome Back</h2>
+                        <p class="theme-text-sec text-sm mt-1">Login to access Test mode and track progress.</p>
+                    </div>
+                    
+                    ${!window.fb.isFirebaseValid ? `
+                        <div class="bg-amber-50 border border-amber-200 text-amber-700 p-3 rounded text-sm mb-4">
+                            <strong>Demo Mode:</strong> Firebase is not configured. Real authentication is disabled. Using mock login for UI demonstration.
+                        </div>
+                    ` : ''}
+
+                    <div class="space-y-4">
+                        <div>
+                            <label class="block text-sm font-medium mb-1">Email</label>
+                            <input type="email" id="login-email" class="w-full px-4 py-2.5 rounded-lg border theme-border bg-transparent focus:ring-2 focus:ring-brand-500 outline-none" placeholder="student@example.com">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium mb-1">Password</label>
+                            <input type="password" id="login-pass" class="w-full px-4 py-2.5 rounded-lg border theme-border bg-transparent focus:ring-2 focus:ring-brand-500 outline-none" placeholder="••••••••">
+                        </div>
+                        <button onclick="Views.processLogin()" class="w-full py-3 bg-brand-600 hover:bg-brand-700 text-white rounded-lg font-medium transition shadow-sm mt-2">Login</button>
+                    </div>
+                </div>
+            `,
+            processLogin: async () => {
+                const e = document.getElementById('login-email').value;
+                const p = document.getElementById('login-pass').value;
+                if(!e || !p) { app.showToast('Fill all fields', 'error'); return; }
+                
+                if(window.fb.isFirebaseValid) {
+                    try {
+                        await window.fb.signInWithEmailAndPassword(window.fb.auth, e, p);
+                        app.showToast('Login successful', 'success');
+                        app.navigate('/');
+                    } catch(err) {
+                        app.showToast('Authentication failed: ' + err.message, 'error');
+                    }
+                } else {
+                    // Mock login for demo if Firebase disabled
+                    app.currentUser = { uid: 'demo_user', email: e };
+                    app.renderNavigationLinks();
+                    app.showToast('Mock Login Successful (Demo Mode)', 'success');
+                    app.navigate('/');
+                }
+            },
+
+            Dashboard: () => {
+                if(!app.currentUser) { app.navigate('/login'); return ''; }
+                return `
+                    <div class="max-w-4xl mx-auto space-y-8">
+                        <div class="theme-surface border theme-border rounded-xl p-8 shadow-sm flex items-center gap-6">
+                            <div class="w-20 h-20 bg-brand-100 text-brand-600 rounded-full flex items-center justify-center text-3xl font-bold">
+                                ${app.currentUser.email ? app.currentUser.email[0].toUpperCase() : 'U'}
+                            </div>
+                            <div>
+                                <h2 class="text-2xl font-bold">${app.currentUser.email || 'Student'}</h2>
+                                <p class="theme-text-sec">UID: <span class="font-mono text-xs">${app.currentUser.uid}</span></p>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                            <div class="theme-surface border theme-border rounded-xl p-6 text-center shadow-sm">
+                                <i class="ph ph-check-circle text-3xl text-green-500 mb-2"></i>
+                                <div class="text-3xl font-bold mb-1">-</div>
+                                <div class="text-sm theme-text-sec">Tests Attempted</div>
+                            </div>
+                            <div class="theme-surface border theme-border rounded-xl p-6 text-center shadow-sm">
+                                <i class="ph ph-target text-3xl text-brand-500 mb-2"></i>
+                                <div class="text-3xl font-bold mb-1">- %</div>
+                                <div class="text-sm theme-text-sec">Avg Accuracy</div>
+                            </div>
+                            <div class="theme-surface border theme-border rounded-xl p-6 text-center shadow-sm">
+                                <i class="ph ph-trophy text-3xl text-amber-500 mb-2"></i>
+                                <div class="text-3xl font-bold mb-1">-</div>
+                                <div class="text-sm theme-text-sec">Best Score</div>
+                            </div>
+                        </div>
+                        <div class="text-sm theme-text-sec text-center">(Performance metrics require Firestore configuration to load real data)</div>
+                    </div>
+                `;
+            },
+
+            // Basic Text Pages
+            About: () => `<div class="max-w-3xl mx-auto prose dark:prose-invert"><h1 class="text-3xl font-bold mb-4">About StudySphere</h1><p>StudySphere is a dedicated platform designed for MPSC Combined Group B and C aspirants. Our mission is to provide high-quality, bilingual (Marathi & English) MCQ practice environments that simulate the real examination experience.</p></div>`,
+            Legal: (title) => `<div class="max-w-3xl mx-auto prose dark:prose-invert"><h1 class="text-3xl font-bold mb-4">${title}</h1><p>This is a placeholder for the formal ${title}. Replace this content with actual legal text before production deployment.</p></div>`
+        };
+
+        app.logout = async () => {
+            if(window.fb.isFirebaseValid) {
+                await window.fb.signOut(window.fb.auth);
+            } else {
+                app.currentUser = null;
+                app.renderNavigationLinks();
+                app.navigate('/');
+                app.showToast('Logged out successfully', 'info');
+            }
+        };
+
+        const router = () => {
+            const hash = window.location.hash || '#/';
+            const root = document.getElementById('app-root');
+            activeEngine = null; // reset quiz engine on navigation
+            
+            // Re-apply animations
+            root.classList.remove('fade-in');
+            void root.offsetWidth; // trigger reflow
+            root.classList.add('fade-in');
+
+            try {
+                if (hash === '#/') root.innerHTML = Views.Home();
+                else if (hash.startsWith('#/subject/')) root.innerHTML = Views.Subject(hash.split('/')[2]);
+                else if (hash.startsWith('#/topic/')) root.innerHTML = Views.Topic(hash.split('/')[2]);
+                else if (hash === '#/login') root.innerHTML = Views.Login();
+                else if (hash === '#/dashboard') root.innerHTML = Views.Dashboard();
+                else if (hash === '#/about') root.innerHTML = Views.About();
+                else if (hash === '#/privacy-policy') root.innerHTML = Views.Legal('Privacy Policy');
+                else if (hash === '#/terms') root.innerHTML = Views.Legal('Terms of Service');
+                else root.innerHTML = `<div class="text-center py-20 text-red-500 text-xl">Page not found (404)</div>`;
+            } catch (e) {
+                console.error("Routing error:", e);
+                root.innerHTML = `<div class="text-center py-20 text-red-500">An error occurred rendering this page.</div>`;
+            }
+            window.scrollTo(0, 0);
+        };
+
+        window.addEventListener('hashchange', router);
+        
+        // Listen to Firebase Auth state if valid
+        if(window.fb.isFirebaseValid) {
+            window.fb.onAuthStateChanged(window.fb.auth, (user) => {
+                app.currentUser = user;
+                app.renderNavigationLinks();
+                // Re-render if on dashboard/login
+                if(window.location.hash === '#/dashboard' || window.location.hash === '#/login') router();
+            });
+        } else {
+            app.renderNavigationLinks(); // Init with null user
+        }
+
+        // Initialize App
+        window.addEventListener('DOMContentLoaded', () => {
+            router();
+        });
+
     </script>
 </body>
 </html>
