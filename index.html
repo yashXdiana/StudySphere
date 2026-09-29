@@ -1,793 +1,3555 @@
 <!DOCTYPE html>
 <html lang="mr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>StudySphere - MPSC Group C Preparation</title>
-    <meta name="description" content="StudySphere: MPSC गट क पूर्व आणि मुख्य परीक्षेच्या तयारीसाठी मोफत अभ्यास, नोट्स, सराव आणि PYQ विश्लेषण.">
-    
-    <!-- Google Fonts: Inter (English) & Mukta (Marathi) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Mukta:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Phosphor Icons -->
-    <script src="https://unpkg.com/@phosphor-icons/web"></script>
-    
-    <style>
-        /* --- CSS Variables & Theming --- */
-        :root {
-            --bg-primary: #f8fafc;
-            --bg-secondary: #ffffff;
-            --bg-alt: #f1f5f9;
-            --text-primary: #0f172a;
-            --text-secondary: #475569;
-            --accent-primary: #2563eb;
-            --accent-hover: #1d4ed8;
-            --accent-light: #e0e7ff;
-            --border-color: #e2e8f0;
-            
-            --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
-            --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-            --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-            
-            --font-en: 'Inter', sans-serif;
-            --font-mr: 'Mukta', sans-serif;
-            
-            --header-height: 70px;
-            --container-width: 1200px;
-            
-            --radius-md: 12px;
-            --radius-lg: 24px;
-            
-            --transition: 0.3s ease;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        body.dark-theme {
-            --bg-primary: #0f172a;
-            --bg-secondary: #1e293b;
-            --bg-alt: #020617;
-            --text-primary: #f8fafc;
-            --text-secondary: #cbd5e1;
-            --accent-primary: #3b82f6;
-            --accent-hover: #60a5fa;
-            --accent-light: #1e3a8a;
-            --border-color: #334155;
-            --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.3);
-            --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.4);
-        }
+<title>StudySphere | MPSC Group C Pre & Mains</title>
 
-        /* --- Base & Reset --- */
-        * { box-sizing: border-box; margin: 0; padding: 0; }
-        html { scroll-behavior: smooth; font-size: 16px; }
-        body {
-            font-family: var(--font-mr);
-            background-color: var(--bg-primary);
-            color: var(--text-primary);
-            line-height: 1.6;
-            transition: background-color var(--transition), color var(--transition);
-            overflow-x: hidden;
-        }
-        
-        h1, h2, h3, .font-en { font-family: var(--font-en); }
-        h1:lang(mr), h2:lang(mr), h3:lang(mr) { font-family: var(--font-mr); }
-        a { text-decoration: none; color: inherit; }
-        ul { list-style: none; }
-        button { border: none; background: none; cursor: pointer; font-family: inherit; }
-        :focus-visible { outline: 2px solid var(--accent-primary); outline-offset: 2px; }
+<meta name="description"
+content="StudySphere - MPSC Group C Prelims आणि Mains परीक्षेसाठी अभ्यास, मार्गदर्शन, नोट्स, सराव, टेस्ट आणि PYQ आधारित शैक्षणिक व्यासपीठ.">
 
-        /* --- Layout --- */
-        .container { max-width: var(--container-width); margin: 0 auto; padding: 0 1.5rem; }
-        .section { padding: 4rem 0; }
-        .bg-alt { background-color: var(--bg-alt); }
-        .text-center { text-align: center; }
-        
-        /* --- Header & Nav --- */
-        .header {
-            background-color: var(--bg-secondary);
-            border-bottom: 1px solid var(--border-color);
-            position: fixed; top: 0; width: 100%; height: var(--header-height);
-            z-index: 1000; display: flex; align-items: center;
-            transition: background-color var(--transition);
-        }
-        .header-inner { display: flex; justify-content: space-between; align-items: center; width: 100%; }
-        .logo { font-size: 1.5rem; font-weight: 700; color: var(--accent-primary); display: flex; align-items: center; gap: 0.5rem; font-family: var(--font-en); }
-        
-        .nav-menu { display: flex; gap: 1.5rem; align-items: center; }
-        .nav-link { font-family: var(--font-en); font-weight: 500; color: var(--text-secondary); transition: color 0.2s; font-size: 0.95rem; }
-        .nav-link:hover, .nav-link.active { color: var(--accent-primary); }
-        
-        .header-actions { display: flex; gap: 1rem; align-items: center; }
-        .icon-btn { font-size: 1.5rem; color: var(--text-secondary); padding: 0.5rem; border-radius: 50%; display: flex; transition: 0.2s; }
-        .icon-btn:hover { background-color: var(--bg-alt); color: var(--accent-primary); }
-        .mobile-toggle { display: none; }
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-        /* --- UI Elements --- */
-        .btn {
-            display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem;
-            padding: 0.75rem 1.5rem; border-radius: 8px; font-weight: 600; font-size: 1rem; transition: 0.2s;
-        }
-        .btn-primary { background-color: var(--accent-primary); color: #fff; }
-        .btn-primary:hover { background-color: var(--accent-hover); transform: translateY(-2px); box-shadow: var(--shadow-md); }
-        .btn-outline { border: 2px solid var(--accent-primary); color: var(--accent-primary); }
-        .btn-outline:hover { background-color: var(--accent-light); transform: translateY(-2px); }
-        .btn-telegram { background-color: #0088cc; color: white; }
-        .btn-telegram:hover { background-color: #0077b5; transform: translateY(-2px); }
-        
-        .card {
-            background-color: var(--bg-secondary); border-radius: var(--radius-md);
-            padding: 1.5rem; box-shadow: var(--shadow-sm); border: 1px solid var(--border-color);
-            transition: var(--transition);
-        }
-        .card:hover { box-shadow: var(--shadow-md); border-color: var(--accent-primary); transform: translateY(-3px); }
-        .badge { display: inline-block; padding: 0.25rem 0.75rem; border-radius: 12px; font-size: 0.8rem; font-weight: 600; background: var(--accent-light); color: var(--accent-primary); margin-bottom: 0.5rem;}
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Mukta:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-        /* --- View Management (SPA) --- */
-        main { margin-top: var(--header-height); min-height: calc(100vh - var(--header-height) - 150px); }
-        .view { display: none; animation: fadeIn 0.3s ease; }
-        .view.active { display: block; }
-        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+<script src="https://unpkg.com/@phosphor-icons/web"></script>
 
-        /* --- Home: Hero --- */
-        .hero { display: flex; align-items: center; padding: 5rem 0; position: relative; overflow: hidden; }
-        .hero::before {
-            content: ''; position: absolute; top: -20%; right: -10%; width: 600px; height: 600px;
-            background: radial-gradient(circle, var(--accent-light) 0%, transparent 60%); z-index: -1;
-        }
-        .hero-title { font-size: 3.5rem; font-weight: 800; line-height: 1.2; margin-bottom: 0.5rem; color: var(--accent-primary); }
-        .hero-subtitle { font-size: 1.5rem; font-weight: 600; color: var(--text-secondary); margin-bottom: 1.5rem; }
-        .hero-desc { font-size: 1.125rem; max-width: 600px; margin-bottom: 2rem; }
-        .hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; }
+<style>
 
-        /* --- Home: Grids --- */
-        .section-header { margin-bottom: 3rem; }
-        .section-title { font-size: 2rem; margin-bottom: 0.5rem; }
-        .section-desc { color: var(--text-secondary); font-size: 1.1rem; }
-        
-        .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
-        .grid-4 { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; }
-        
-        /* Journey Steps */
-        .journey-step { text-align: center; padding: 1.5rem; }
-        .journey-icon { font-size: 2.5rem; color: var(--accent-primary); margin-bottom: 1rem; }
-        
-        /* Cards styling inside grids */
-        .subject-card .card-icon { font-size: 2rem; color: var(--accent-primary); margin-bottom: 1rem; }
-        .subject-card h3 { font-size: 1.25rem; margin-bottom: 0.5rem; }
-        .subject-card p { color: var(--text-secondary); font-size: 0.95rem; }
-        
-        /* --- Text/Info Pages --- */
-        .content-box { max-width: 800px; margin: 0 auto; background: var(--bg-secondary); padding: 2.5rem; border-radius: var(--radius-md); border: 1px solid var(--border-color); }
-        .content-box p { margin-bottom: 1rem; font-size: 1.1rem; }
-        .content-box ul { margin-bottom: 1.5rem; padding-left: 1.5rem; }
-        .content-box li { margin-bottom: 0.5rem; font-size: 1.05rem; }
-        
-        /* --- Compact Contact --- */
-        .contact-compact { max-width: 450px; margin: 0 auto; text-align: center; padding: 2rem; }
-        .contact-compact i { font-size: 3rem; color: #0088cc; margin-bottom: 1rem; }
+/* =========================================================
+   STUDYSPHERE — FINAL BASE DESIGN
+   ========================================================= */
 
-        /* --- Footer --- */
-        .footer { background-color: var(--bg-secondary); border-top: 1px solid var(--border-color); padding: 3rem 0 1.5rem; margin-top: auto; }
-        .footer-content { display: flex; flex-direction: column; align-items: center; gap: 1.5rem; }
-        .footer-nav { display: flex; flex-wrap: wrap; justify-content: center; gap: 1.5rem; }
-        .footer-nav a { color: var(--text-secondary); font-weight: 500; font-family: var(--font-en); font-size: 0.9rem;}
-        .footer-nav a:hover { color: var(--accent-primary); }
-        .footer-buttons { display: flex; gap: 1rem; }
-        .footer-bottom { margin-top: 2rem; text-align: center; color: var(--text-secondary); font-size: 0.85rem; border-top: 1px solid var(--border-color); padding-top: 1.5rem; width: 100%; }
+:root {
 
-        /* --- Modal (Donation) --- */
-        .modal-overlay {
-            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-            background: rgba(0,0,0,0.6); z-index: 9999;
-            display: flex; align-items: center; justify-content: center;
-            opacity: 0; visibility: hidden; transition: 0.3s; padding: 1rem;
-        }
-        .modal-overlay.active { opacity: 1; visibility: visible; }
-        .modal {
-            background: var(--bg-secondary); width: 100%; max-width: 400px;
-            border-radius: var(--radius-md); padding: 2rem; position: relative;
-            transform: translateY(20px); transition: 0.3s; box-shadow: var(--shadow-lg); text-align: center;
-        }
-        .modal-overlay.active .modal { transform: translateY(0); }
-        .modal-close { position: absolute; top: 1rem; right: 1rem; font-size: 1.5rem; color: var(--text-secondary); transition: 0.2s; }
-        .modal-close:hover { color: var(--text-primary); }
-        
-        /* Mobile Donate UI */
-        .donate-amounts { display: flex; justify-content: center; gap: 0.5rem; margin: 1.5rem 0; }
-        .amt-btn { padding: 0.5rem 1rem; border: 1px solid var(--border-color); border-radius: 20px; background: var(--bg-alt); color: var(--text-primary); font-weight: 600; }
-        .amt-btn.selected, .amt-btn:hover { background: var(--accent-light); border-color: var(--accent-primary); color: var(--accent-primary); }
-        .custom-amt { margin-bottom: 1.5rem; text-align: left; }
-        .custom-amt label { display: block; font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 0.5rem; }
-        .custom-amt input { width: 100%; padding: 0.75rem; border: 1px solid var(--border-color); border-radius: 8px; background: var(--bg-primary); color: var(--text-primary); font-size: 1rem; }
-        .custom-amt input:focus { outline: none; border-color: var(--accent-primary); }
-        .error-msg { color: #dc2626; font-size: 0.85rem; margin-top: 0.5rem; display: none; }
-        
-        /* Desktop Donate UI */
-        .qr-box { background: #fff; padding: 1rem; border: 1px solid var(--border-color); border-radius: 8px; width: 200px; height: 200px; margin: 1.5rem auto; }
-        .qr-box svg { width: 100%; height: 100%; }
+    /* Main Colors */
+    --bg: #faf8f5;
+    --surface: #ffffff;
+    --surface-soft: #f3eee7;
 
-        /* --- Responsive --- */
-        @media (max-width: 768px) {
-            .mobile-toggle { display: block; }
-            .nav-menu {
-                position: fixed; top: var(--header-height); left: 0; width: 100%;
-                background: var(--bg-secondary); border-bottom: 1px solid var(--border-color);
-                flex-direction: column; gap: 0; padding: 0;
-                clip-path: polygon(0 0, 100% 0, 100% 0, 0 0); transition: 0.3s ease-in-out;
-            }
-            .nav-menu.open { clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); }
-            .nav-menu li { width: 100%; text-align: center; }
-            .nav-link { display: block; padding: 1.25rem; border-bottom: 1px solid var(--border-color); font-size: 1.1rem; }
-            
-            .hero-title { font-size: 2.5rem; }
-            .hero-actions { flex-direction: column; width: 100%; }
-            .hero-actions .btn { width: 100%; }
-            .footer-buttons { flex-direction: column; width: 100%; max-width: 300px; }
-        }
-    </style>
+    --text: #29231f;
+    --text-soft: #6b625b;
+
+    --primary: #8b5e3c;
+    --primary-dark: #70472b;
+    --primary-soft: #eadfd4;
+
+    --accent: #c58b52;
+
+    --border: #e5ddd4;
+
+    --success: #16803c;
+    --danger: #c62828;
+
+    /* Shadows */
+    --shadow-sm:
+        0 2px 8px rgba(50, 35, 20, 0.05);
+
+    --shadow-md:
+        0 8px 24px rgba(50, 35, 20, 0.08);
+
+    --shadow-lg:
+        0 18px 45px rgba(50, 35, 20, 0.14);
+
+    /* Typography */
+    --font-mr: 'Mukta', sans-serif;
+    --font-en: 'Inter', sans-serif;
+
+    /* Layout */
+    --header-height: 70px;
+    --container: 1180px;
+
+    --radius-sm: 8px;
+    --radius-md: 14px;
+    --radius-lg: 22px;
+
+    --transition: .25s ease;
+}
+
+
+/* =========================================================
+   DARK MODE
+   ========================================================= */
+
+body.dark-theme {
+
+    --bg: #171411;
+    --surface: #211d19;
+    --surface-soft: #2a241f;
+
+    --text: #f5eee7;
+    --text-soft: #c7bbb0;
+
+    --primary: #d39a68;
+    --primary-dark: #e0aa79;
+    --primary-soft: #49372a;
+
+    --accent: #d5a06d;
+
+    --border: #3b322b;
+
+    --shadow-sm:
+        0 2px 8px rgba(0,0,0,.20);
+
+    --shadow-md:
+        0 8px 24px rgba(0,0,0,.25);
+
+    --shadow-lg:
+        0 18px 45px rgba(0,0,0,.35);
+}
+
+
+/* =========================================================
+   RESET
+   ========================================================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+body {
+    font-family: var(--font-mr);
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.65;
+
+    overflow-x: hidden;
+
+    transition:
+        background-color var(--transition),
+        color var(--transition);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+:focus-visible {
+    outline: 2px solid var(--primary);
+    outline-offset: 3px;
+}
+
+
+/* =========================================================
+   TYPOGRAPHY
+   ========================================================= */
+
+h1,
+h2,
+h3,
+h4,
+.nav-link,
+.logo,
+.btn {
+    font-family: var(--font-en);
+}
+
+h1:lang(mr),
+h2:lang(mr),
+h3:lang(mr),
+h4:lang(mr) {
+    font-family: var(--font-mr);
+}
+
+
+/* =========================================================
+   LAYOUT
+   ========================================================= */
+
+.container {
+    width: min(var(--container), calc(100% - 32px));
+    margin: auto;
+}
+
+.section {
+    padding: 72px 0;
+}
+
+.section-soft {
+    background: var(--surface-soft);
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.header {
+    height: var(--header-height);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    background: rgba(255,255,255,.94);
+
+    backdrop-filter: blur(12px);
+
+    border-bottom: 1px solid var(--border);
+
+    z-index: 1000;
+
+    transition:
+        background var(--transition),
+        border-color var(--transition);
+}
+
+body.dark-theme .header {
+    background: rgba(33,29,25,.94);
+}
+
+.header-inner {
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* Logo */
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+
+    font-size: 1.35rem;
+    font-weight: 800;
+
+    color: var(--primary);
+
+    white-space: nowrap;
+}
+
+.logo-icon {
+    width: 36px;
+    height: 36px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px;
+
+    background: var(--primary);
+    color: white;
+
+    font-size: 20px;
+}
+
+
+/* Navigation */
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.nav-link {
+    color: var(--text-soft);
+
+    font-size: .9rem;
+    font-weight: 600;
+
+    position: relative;
+
+    transition: color var(--transition);
+}
+
+.nav-link::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: -7px;
+
+    width: 0;
+    height: 2px;
+
+    background: var(--primary);
+
+    transition: width var(--transition);
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--primary);
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+    width: 100%;
+}
+
+
+/* Header Actions */
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+
+/* Theme button */
+
+.theme-btn {
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    color: var(--text-soft);
+
+    transition:
+        background var(--transition),
+        color var(--transition);
+}
+
+.theme-btn:hover {
+    background: var(--surface-soft);
+    color: var(--primary);
+}
+
+
+/* Mobile Menu Button */
+
+.mobile-toggle {
+    display: none;
+
+    width: 40px;
+    height: 40px;
+
+    align-items: center;
+    justify-content: center;
+
+    color: var(--text-soft);
+
+    /* IMPORTANT:
+       No round hover background */
+    border-radius: 0;
+}
+
+.mobile-toggle:hover,
+.mobile-toggle:active,
+.mobile-toggle:focus {
+    background: transparent;
+    color: var(--primary);
+}
+
+
+/* =========================================================
+   MAIN / SPA VIEWS
+   ========================================================= */
+
+main {
+    margin-top: var(--header-height);
+
+    min-height:
+        calc(100vh - var(--header-height));
+}
+
+.view {
+    display: none;
+}
+
+.view.active {
+    display: block;
+
+    animation: fadeIn .25s ease;
+}
+
+@keyframes fadeIn {
+
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.hero {
+    min-height: 570px;
+
+    display: flex;
+    align-items: center;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+.hero::before {
+    content: "";
+
+    position: absolute;
+
+    width: 550px;
+    height: 550px;
+
+    right: -220px;
+    top: -160px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            var(--primary-soft),
+            transparent 68%
+        );
+
+    pointer-events: none;
+}
+
+.hero-content {
+    max-width: 800px;
+
+    position: relative;
+    z-index: 1;
+}
+
+.hero-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    padding: 6px 14px;
+
+    border-radius: 30px;
+
+    background: var(--primary-soft);
+    color: var(--primary);
+
+    font-family: var(--font-en);
+
+    font-size: .82rem;
+    font-weight: 700;
+
+    margin-bottom: 20px;
+}
+
+.hero-title {
+    font-size: clamp(2.7rem, 7vw, 4.4rem);
+
+    line-height: 1.1;
+
+    font-weight: 800;
+
+    color: var(--text);
+
+    margin-bottom: 14px;
+}
+
+.hero-title span {
+    color: var(--primary);
+}
+
+.hero-subtitle {
+    font-family: var(--font-en);
+
+    font-size: clamp(1.15rem, 3vw, 1.5rem);
+
+    font-weight: 600;
+
+    color: var(--text-soft);
+
+    margin-bottom: 20px;
+}
+
+.hero-desc {
+    max-width: 700px;
+
+    margin: auto auto 28px;
+
+    color: var(--text-soft);
+
+    font-size: 1.08rem;
+}
+
+.hero-actions {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+
+    flex-wrap: wrap;
+}
+
+
+/* =========================================================
+   BUTTONS
+   ========================================================= */
+
+.btn {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    padding: 11px 20px;
+
+    border-radius: var(--radius-sm);
+
+    font-size: .95rem;
+    font-weight: 700;
+
+    transition:
+        transform var(--transition),
+        background var(--transition),
+        color var(--transition),
+        box-shadow var(--transition);
+}
+
+.btn-primary {
+    background: var(--primary);
+    color: white;
+}
+
+.btn-primary:hover {
+    background: var(--primary-dark);
+
+    transform: translateY(-2px);
+
+    box-shadow: var(--shadow-md);
+}
+
+.btn-outline {
+    border: 1px solid var(--border);
+
+    color: var(--text);
+
+    background: var(--surface);
+}
+
+.btn-outline:hover {
+    border-color: var(--primary);
+
+    color: var(--primary);
+
+    background: var(--primary-soft);
+
+    transform: translateY(-2px);
+}
+
+.btn-telegram {
+    background: #0088cc;
+    color: white;
+}
+
+.btn-telegram:hover {
+    background: #0077b5;
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   SECTION HEADER
+   ========================================================= */
+
+.section-header {
+    max-width: 720px;
+
+    margin: 0 auto 42px;
+}
+
+.section-title {
+    font-size: clamp(1.7rem, 4vw, 2.25rem);
+
+    font-weight: 800;
+
+    margin-bottom: 7px;
+}
+
+.section-desc {
+    color: var(--text-soft);
+
+    font-size: 1.05rem;
+}
+
+
+/* =========================================================
+   CARDS
+   ========================================================= */
+
+.card {
+    background: var(--surface);
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius-md);
+
+    padding: 24px;
+
+    box-shadow: var(--shadow-sm);
+
+    transition:
+        transform var(--transition),
+        box-shadow var(--transition),
+        border-color var(--transition);
+}
+
+.card:hover {
+    transform: translateY(-4px);
+
+    border-color: var(--primary);
+
+    box-shadow: var(--shadow-md);
+}
+
+
+/* =========================================================
+   STUDY JOURNEY
+   ========================================================= */
+
+.journey-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 18px;
+}
+
+.journey-card {
+    display: flex;
+
+    gap: 17px;
+
+    align-items: flex-start;
+}
+
+.journey-number {
+    min-width: 38px;
+    height: 38px;
+
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: var(--primary-soft);
+
+    color: var(--primary);
+
+    font-family: var(--font-en);
+
+    font-weight: 800;
+}
+
+.journey-card h3 {
+    font-size: 1.05rem;
+
+    margin-bottom: 4px;
+}
+
+.journey-card p {
+    color: var(--text-soft);
+
+    font-size: .93rem;
+}
+
+
+/* =========================================================
+   SUBJECTS
+   ========================================================= */
+
+.subject-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 18px;
+}
+
+.subject-card {
+    position: relative;
+
+    cursor: pointer;
+
+    min-height: 190px;
+}
+
+.subject-icon {
+    width: 46px;
+    height: 46px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 12px;
+
+    background: var(--primary-soft);
+
+    color: var(--primary);
+
+    font-size: 23px;
+
+    margin-bottom: 16px;
+}
+
+.subject-card h3 {
+    font-family: var(--font-en);
+
+    font-size: 1.08rem;
+
+    margin-bottom: 6px;
+}
+
+.subject-card p {
+    color: var(--text-soft);
+
+    font-size: .92rem;
+}
+
+.coming-soon {
+    display: inline-block;
+
+    margin-top: 12px;
+
+    font-family: var(--font-en);
+
+    font-size: .7rem;
+    font-weight: 700;
+
+    color: var(--primary);
+
+    background: var(--primary-soft);
+
+    padding: 4px 9px;
+
+    border-radius: 20px;
+}
+
+
+/* =========================================================
+   STUDY GUIDE
+   ========================================================= */
+
+.guide-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 18px;
+}
+
+.guide-card {
+    padding: 22px;
+}
+
+.guide-card i {
+    font-size: 28px;
+
+    color: var(--primary);
+
+    margin-bottom: 13px;
+}
+
+.guide-card h3 {
+    font-size: 1rem;
+
+    margin-bottom: 7px;
+}
+
+.guide-card p {
+    color: var(--text-soft);
+
+    font-size: .9rem;
+}
+
+
+/* =========================================================
+   FEATURE AREA
+   ========================================================= */
+
+.feature-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 18px;
+}
+
+.feature-card {
+    text-align: center;
+}
+
+.feature-icon {
+    font-size: 38px;
+
+    color: var(--primary);
+
+    margin-bottom: 12px;
+}
+
+.feature-card h3 {
+    margin-bottom: 7px;
+
+    font-size: 1.1rem;
+}
+
+.feature-card p {
+    color: var(--text-soft);
+
+    font-size: .92rem;
+}
+
+.status {
+    display: inline-block;
+
+    margin-top: 13px;
+
+    font-size: .75rem;
+
+    font-weight: 700;
+
+    color: var(--primary);
+
+    background: var(--primary-soft);
+
+    padding: 4px 10px;
+
+    border-radius: 20px;
+}
+
+
+/* =========================================================
+   ABOUT PREVIEW
+   ========================================================= */
+
+.about-preview {
+    display: grid;
+
+    grid-template-columns:
+        1.5fr 1fr;
+
+    gap: 20px;
+}
+
+.about-preview h3 {
+    font-size: 1.3rem;
+
+    margin-bottom: 8px;
+}
+
+.about-preview p {
+    color: var(--text-soft);
+
+    margin-bottom: 17px;
+}
+
+.telegram-preview {
+    text-align: center;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+.telegram-preview i {
+    font-size: 42px;
+
+    color: #0088cc;
+
+    margin-bottom: 10px;
+}
+
+
+/* =========================================================
+   INFORMATION PAGES
+   ========================================================= */
+
+.info-view {
+    padding: 60px 0;
+}
+
+.content-box {
+    max-width: 850px;
+
+    margin: auto;
+
+    background: var(--surface);
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius-md);
+
+    padding: clamp(25px, 5vw, 45px);
+
+    box-shadow: var(--shadow-sm);
+}
+
+.content-box h2 {
+    margin-bottom: 28px;
+}
+
+.content-box h3 {
+    margin-top: 25px;
+
+    margin-bottom: 8px;
+}
+
+.content-box p {
+    color: var(--text-soft);
+
+    margin-bottom: 15px;
+
+    font-size: 1.03rem;
+}
+
+.content-box ul {
+    padding-left: 20px;
+
+    list-style: disc;
+}
+
+.content-box li {
+    color: var(--text-soft);
+
+    margin-bottom: 9px;
+}
+
+.content-box strong {
+    color: var(--text);
+}
+
+
+/* =========================================================
+   CONTACT
+   ========================================================= */
+
+.contact-wrapper {
+    max-width: 480px;
+
+    margin: auto;
+}
+
+.contact-card {
+    text-align: center;
+
+    padding: 30px;
+}
+
+.contact-icon {
+    font-size: 45px;
+
+    color: #0088cc;
+
+    margin-bottom: 10px;
+}
+
+.contact-card h2 {
+    font-size: 1.8rem;
+
+    margin-bottom: 7px;
+}
+
+.contact-card p {
+    color: var(--text-soft);
+
+    margin-bottom: 20px;
+}
+
+
+/* =========================================================
+   SITE MAP
+   ========================================================= */
+
+.sitemap-list > li {
+    margin-bottom: 15px;
+}
+
+.sitemap-list a {
+    color: var(--primary);
+
+    font-weight: 700;
+}
+
+.sitemap-sub {
+    padding-left: 22px;
+
+    margin-top: 5px;
+
+    list-style: disc;
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+.footer {
+    background: var(--surface);
+
+    border-top: 1px solid var(--border);
+
+    padding: 35px 0 18px;
+}
+
+.footer-content {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 20px;
+}
+
+.footer-nav {
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 18px;
+}
+
+.footer-nav a {
+    font-family: var(--font-en);
+
+    color: var(--text-soft);
+
+    font-size: .83rem;
+
+    font-weight: 600;
+}
+
+.footer-nav a:hover {
+    color: var(--primary);
+}
+
+.footer-buttons {
+    display: flex;
+
+    gap: 10px;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+}
+
+.footer-bottom {
+    width: 100%;
+
+    text-align: center;
+
+    padding-top: 18px;
+
+    border-top: 1px solid var(--border);
+
+    color: var(--text-soft);
+
+    font-size: .8rem;
+}
+
+
+/* =========================================================
+   DONATION MODAL
+   ========================================================= */
+
+.modal-overlay {
+    position: fixed;
+
+    inset: 0;
+
+    background: rgba(0,0,0,.62);
+
+    z-index: 9999;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 16px;
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transition:
+        opacity .25s ease,
+        visibility .25s ease;
+}
+
+.modal-overlay.active {
+    opacity: 1;
+
+    visibility: visible;
+}
+
+.modal {
+    width: 100%;
+
+    max-width: 410px;
+
+    background: var(--surface);
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius-lg);
+
+    padding: 28px;
+
+    position: relative;
+
+    box-shadow: var(--shadow-lg);
+
+    transform: translateY(20px);
+
+    transition: transform .25s ease;
+
+    text-align: center;
+}
+
+.modal-overlay.active .modal {
+    transform: translateY(0);
+}
+
+.modal-close {
+    position: absolute;
+
+    top: 10px;
+    right: 12px;
+
+    width: 36px;
+    height: 36px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--text-soft);
+
+    border-radius: 8px;
+}
+
+.modal-close:hover {
+    background: var(--surface-soft);
+
+    color: var(--primary);
+}
+
+.modal h3 {
+    font-family: var(--font-mr);
+
+    font-size: 1.5rem;
+
+    color: var(--primary);
+
+    margin-bottom: 5px;
+}
+
+.modal-intro {
+    color: var(--text-soft);
+
+    font-size: .92rem;
+
+    margin-bottom: 20px;
+}
+
+
+/* Mobile donation */
+
+.donate-amounts {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 8px;
+
+    margin-bottom: 18px;
+}
+
+.amount-btn {
+    padding: 10px;
+
+    border-radius: 9px;
+
+    background: var(--surface-soft);
+
+    border: 1px solid var(--border);
+
+    color: var(--text);
+
+    font-family: var(--font-en);
+
+    font-weight: 700;
+
+    transition: var(--transition);
+}
+
+.amount-btn:hover,
+.amount-btn.selected {
+    border-color: var(--primary);
+
+    background: var(--primary-soft);
+
+    color: var(--primary);
+}
+
+.custom-amount {
+    text-align: left;
+
+    margin-bottom: 16px;
+}
+
+.custom-amount label {
+    display: block;
+
+    font-size: .85rem;
+
+    color: var(--text-soft);
+
+    margin-bottom: 6px;
+}
+
+.custom-amount input {
+    width: 100%;
+
+    padding: 11px 12px;
+
+    border: 1px solid var(--border);
+
+    border-radius: 8px;
+
+    background: var(--bg);
+
+    color: var(--text);
+
+    font-family: var(--font-mr);
+
+    font-size: 1rem;
+}
+
+.custom-amount input:focus {
+    outline: none;
+
+    border-color: var(--primary);
+}
+
+.error-message {
+    display: none;
+
+    color: var(--danger);
+
+    font-size: .8rem;
+
+    margin-top: 5px;
+}
+
+
+/* Desktop QR */
+
+.qr-area {
+    display: none;
+}
+
+.qr-image-box {
+    width: 210px;
+    height: 210px;
+
+    margin: 20px auto;
+
+    padding: 10px;
+
+    background: white;
+
+    border: 1px solid var(--border);
+
+    border-radius: 12px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+.qr-image-box img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+}
+
+.qr-note {
+    color: var(--text-soft);
+
+    font-size: .82rem;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 950px) {
+
+    .nav-menu {
+        gap: 15px;
+    }
+
+    .subject-grid {
+        grid-template-columns:
+            repeat(3, 1fr);
+    }
+
+    .guide-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .journey-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .container {
+        width: min(var(--container), calc(100% - 24px));
+    }
+
+    .section {
+        padding: 55px 0;
+    }
+
+    /* Mobile Navigation */
+
+    .mobile-toggle {
+        display: flex;
+    }
+
+    .nav-menu {
+        position: fixed;
+
+        top: var(--header-height);
+        left: 0;
+
+        width: 100%;
+
+        background: var(--surface);
+
+        border-bottom: 1px solid var(--border);
+
+        display: flex;
+
+        flex-direction: column;
+
+        gap: 0;
+
+        max-height: 0;
+
+        overflow: hidden;
+
+        transition:
+            max-height .3s ease;
+    }
+
+    .nav-menu.open {
+        max-height: 500px;
+    }
+
+    .nav-menu li {
+        width: 100%;
+    }
+
+    .nav-link {
+        display: block;
+
+        text-align: center;
+
+        padding: 14px;
+
+        border-bottom: 1px solid var(--border);
+
+        font-size: .95rem;
+    }
+
+    .nav-link::after {
+        display: none;
+    }
+
+
+    /* Hero */
+
+    .hero {
+        min-height: 500px;
+
+        text-align: center;
+    }
+
+    .hero-title {
+        font-size: 2.8rem;
+    }
+
+    .hero-desc {
+        font-size: 1rem;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+
+        width: 100%;
+
+        max-width: 320px;
+
+        margin: auto;
+    }
+
+    .hero-actions .btn {
+        width: 100%;
+    }
+
+
+    /* Grids */
+
+    .journey-grid,
+    .subject-grid,
+    .feature-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .guide-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .about-preview {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* Footer */
+
+    .footer-buttons {
+        width: 100%;
+
+        max-width: 320px;
+
+        flex-direction: column;
+    }
+
+    .footer-buttons .btn {
+        width: 100%;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .hero-title {
+        font-size: 2.4rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.05rem;
+    }
+
+    .guide-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .content-box {
+        padding: 22px 18px;
+    }
+
+    .modal {
+        padding: 24px 18px;
+    }
+}
+
+</style>
 </head>
-<body class="light-theme">
 
-    <!-- Header -->
-    <header class="header">
-        <div class="container header-inner">
-            <a href="#home" class="logo">
-                <i class="ph-fill ph-student"></i> StudySphere
-            </a>
-            
-            <nav>
-                <ul class="nav-menu" id="nav-menu">
-                    <li><a href="#home" class="nav-link active">Home</a></li>
-                    <li><a href="#about" class="nav-link">About</a></li>
-                    <li><a href="#contact" class="nav-link">Contact</a></li>
-                    <li><a href="#privacy" class="nav-link">Privacy Policy</a></li>
-                    <li><a href="#sitemap" class="nav-link">Site Map</a></li>
-                    <li><a href="#terms" class="nav-link">Terms & Conditions</a></li>
-                </ul>
-            </nav>
 
-            <div class="header-actions">
-                <button class="icon-btn" id="theme-toggle" aria-label="Toggle Theme">
-                    <i class="ph ph-moon" id="theme-icon"></i>
-                </button>
-                <button class="icon-btn mobile-toggle" id="menu-toggle" aria-label="Toggle Menu">
-                    <i class="ph ph-list" id="menu-icon"></i>
-                </button>
-            </div>
-        </div>
-    </header>
+<body>
 
-    <!-- Main Content (SPA Views) -->
-    <main>
-        <!-- ================= HOME VIEW ================= -->
-        <div id="view-home" class="view active">
-            
-            <!-- Hero -->
-            <section class="hero">
-                <div class="container text-center">
-                    <h1 class="hero-title">StudySphere</h1>
-                    <h2 class="hero-subtitle">MPSC Group C Prelims + Mains</h2>
-                    <p class="hero-desc mx-auto" style="margin: 0 auto 2rem;">
-                        MPSC गट क परीक्षेसाठी परीक्षाभिमुख अभ्याससाहित्य, रिव्हिजन, सराव प्रश्न आणि चाचण्या (Tests) एकाच ठिकाणी. तुमच्या यशाचा प्रवास इथून सुरू करा.
-                    </p>
-                    <div class="hero-actions" style="justify-content: center;">
-                        <a href="#subjects" class="btn btn-primary" onclick="document.getElementById('learning-journey').scrollIntoView();">अभ्यास सुरू करा <i class="ph-bold ph-arrow-right"></i></a>
-                        <a href="#guide" class="btn btn-outline" onclick="document.getElementById('study-guide').scrollIntoView();">मार्गदर्शन <i class="ph-bold ph-compass"></i></a>
-                    </div>
-                </div>
-            </section>
 
-            <!-- Learning Journey -->
-            <section id="learning-journey" class="section bg-alt">
-                <div class="container">
-                    <div class="section-header text-center">
-                        <h2 class="section-title">तुमचा अभ्यासाचा प्रवास</h2>
-                        <p class="section-desc">यशस्वी तयारीसाठीची योग्य पद्धत</p>
-                    </div>
-                    <div class="grid-3">
-                        <div class="card journey-step">
-                            <i class="ph-duotone ph-list-magnifying-glass journey-icon"></i>
-                            <h3>1. Syllabus</h3>
-                            <p>अभ्यासक्रम आणि परीक्षेचे स्वरूप समजून घेणे.</p>
-                        </div>
-                        <div class="card journey-step">
-                            <i class="ph-duotone ph-book-open-text journey-icon"></i>
-                            <h3>2. Learn</h3>
-                            <p>परीक्षाभिमुख नोट्स आणि संकल्पना स्पष्ट करणे.</p>
-                        </div>
-                        <div class="card journey-step">
-                            <i class="ph-duotone ph-arrows-clockwise journey-icon"></i>
-                            <h3>3. Revise</h3>
-                            <p>महत्त्वाच्या मुद्द्यांची वेळेवर उजळणी (Revision) करणे.</p>
-                        </div>
-                        <div class="card journey-step">
-                            <i class="ph-duotone ph-target journey-icon"></i>
-                            <h3>4. Practice</h3>
-                            <p>विषय व घटकानुसार वस्तुनिष्ठ प्रश्नांचा (MCQ) सराव.</p>
-                        </div>
-                        <div class="card journey-step">
-                            <i class="ph-duotone ph-exam journey-icon"></i>
-                            <h3>5. Test</h3>
-                            <p>परीक्षेच्या वातावरणात वेळ लावून चाचण्या सोडवणे.</p>
-                        </div>
-                        <div class="card journey-step">
-                            <i class="ph-duotone ph-chart-line-up journey-icon"></i>
-                            <h3>6. Analyse</h3>
-                            <p>चुकांचे विश्लेषण करून कमकुवत घटकांवर काम करणे.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
+<!-- =========================================================
+     HEADER
+     ========================================================= -->
 
-            <!-- Subjects (Future Architecture Placeholders) -->
-            <section class="section">
-                <div class="container">
-                    <div class="section-header text-center">
-                        <h2 class="section-title">MPSC Group C Subjects</h2>
-                        <p class="section-desc">विषयानुसार अभ्याससाहित्य (भविष्यातील अपडेट)</p>
-                    </div>
-                    <div class="grid-4">
-                        <div class="card subject-card" data-subject-id="HIS">
-                            <i class="ph-duotone ph-scroll card-icon"></i>
-                            <h3 class="font-en">History</h3>
-                            <p>आधुनिक भारताचा व महाराष्ट्राचा इतिहास</p>
-                            <span class="badge mt-sm">लवकरच उपलब्ध</span>
-                        </div>
-                        <div class="card subject-card" data-subject-id="GEO">
-                            <i class="ph-duotone ph-globe-hemisphere-west card-icon"></i>
-                            <h3 class="font-en">Geography</h3>
-                            <p>महाराष्ट्राच्या भूगोलाच्या विशेष संदर्भासह</p>
-                            <span class="badge mt-sm">लवकरच उपलब्ध</span>
-                        </div>
-                        <div class="card subject-card" data-subject-id="ECO">
-                            <i class="ph-duotone ph-chart-line-up card-icon"></i>
-                            <h3 class="font-en">Economy</h3>
-                            <p>भारतीय अर्थव्यवस्था व शासकीय अर्थव्यवस्था</p>
-                            <span class="badge mt-sm">लवकरच उपलब्ध</span>
-                        </div>
-                        <div class="card subject-card" data-subject-id="POL">
-                            <i class="ph-duotone ph-bank card-icon"></i>
-                            <h3 class="font-en">Polity</h3>
-                            <p>भारतीय राज्यघटना व पंचायत राज</p>
-                            <span class="badge mt-sm">लवकरच उपलब्ध</span>
-                        </div>
-                        <div class="card subject-card" data-subject-id="SCI">
-                            <i class="ph-duotone ph-atom card-icon"></i>
-                            <h3 class="font-en">General Science</h3>
-                            <p>भौतिक, रसायन, प्राणी, वनस्पती, आरोग्यशास्त्र</p>
-                            <span class="badge mt-sm">लवकरच उपलब्ध</span>
-                        </div>
-                        <div class="card subject-card" data-subject-id="MATH">
-                            <i class="ph-duotone ph-calculator card-icon"></i>
-                            <h3 class="font-en">Arithmetic</h3>
-                            <p>अंकगणित व मूलभूत गणितीय क्रिया</p>
-                            <span class="badge mt-sm">लवकरच उपलब्ध</span>
-                        </div>
-                        <div class="card subject-card" data-subject-id="REAS">
-                            <i class="ph-duotone ph-brain card-icon"></i>
-                            <h3 class="font-en">Reasoning</h3>
-                            <p>बुद्धिमत्ता चाचणी व तार्किक क्षमता</p>
-                            <span class="badge mt-sm">लवकरच उपलब्ध</span>
-                        </div>
-                    </div>
-                </div>
-            </section>
+<header class="header">
 
-            <!-- Study Guide -->
-            <section id="study-guide" class="section bg-alt">
-                <div class="container">
-                    <div class="section-header text-center">
-                        <h2 class="section-title">MPSC अभ्यास मार्गदर्शन</h2>
-                        <p class="section-desc">“अभ्यासाची सुरुवात नेमकी कुठून करावी?”</p>
-                    </div>
-                    <div class="grid-3">
-                        <div class="card">
-                            <h3>सुरुवात कशी करावी?</h3>
-                            <p>नवशिक्या विद्यार्थ्यांसाठी अभ्यासाची दिशा आणि प्राथमिक नियोजन.</p>
-                        </div>
-                        <div class="card">
-                            <h3>Prelims Strategy</h3>
-                            <p>पूर्व परीक्षा उत्तीर्ण करण्यासाठीचे अचूक नियोजन व टार्गेट स्कोअर.</p>
-                        </div>
-                        <div class="card">
-                            <h3>Mains Strategy</h3>
-                            <p>मुख्य परीक्षेच्या अभ्यासक्रमाचे सखोल विश्लेषण व रणनीती.</p>
-                        </div>
-                        <div class="card">
-                            <h3>Subject-wise Strategy</h3>
-                            <p>प्रत्येक विषयानुसार अभ्यासाची पद्धत आणि संदर्भ ग्रंथांची यादी.</p>
-                        </div>
-                        <div class="card">
-                            <h3>PYQ कसे वापरावे?</h3>
-                            <p>मागील वर्षाच्या प्रश्नपत्रिकांचे विश्लेषण करून प्रश्नांचा कल कसा ओळखावा.</p>
-                        </div>
-                        <div class="card">
-                            <h3>Revision Strategy</h3>
-                            <p>वाचलेले लक्षात ठेवण्यासाठी प्रभावी उजळणी तंत्र (Revision Techniques).</p>
-                        </div>
-                        <div class="card">
-                            <h3>Time Management</h3>
-                            <p>नोकरी करणाऱ्या किंवा पूर्णवेळ अभ्यास करणाऱ्यांसाठी वेळेचे नियोजन.</p>
-                        </div>
-                        <div class="card">
-                            <h3>सामान्य चुका</h3>
-                            <p>विद्यार्थ्यांकडून वारंवार होणाऱ्या चुका आणि त्या कशा टाळाव्यात.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
+    <div class="container header-inner">
 
-            <!-- PYQ / Practice / Current Affairs -->
-            <section class="section">
-                <div class="container">
-                    <div class="grid-3">
-                        <!-- PYQ Analysis -->
-                        <div class="card text-center" style="display:flex; flex-direction:column; justify-content:center; align-items:center;">
-                            <i class="ph-duotone ph-files card-icon" style="font-size: 3rem; color: var(--accent-primary); margin-bottom:1rem;"></i>
-                            <h3 class="font-en" style="margin-bottom:0.5rem;">PYQ Analysis</h3>
-                            <p>विषय व घटकानुसार मागील वर्षांच्या प्रश्नांचे सखोल विश्लेषण.</p>
-                            <span class="badge mt-sm">लवकरच उपलब्ध</span>
-                        </div>
-                        
-                        <!-- Practice & Test -->
-                        <div class="card text-center" style="display:flex; flex-direction:column; justify-content:center; align-items:center;">
-                            <i class="ph-duotone ph-pencil-line card-icon" style="font-size: 3rem; color: var(--accent-primary); margin-bottom:1rem;"></i>
-                            <h3 class="font-en" style="margin-bottom:0.5rem;">Practice & Test</h3>
-                            <p>घटकानुसार सराव (Practice Quiz) आणि पूर्ण अभ्यासक्रमावर आधारित Test Simulator.</p>
-                            <span class="badge mt-sm">लवकरच उपलब्ध</span>
-                        </div>
-                        
-                        <!-- Current Affairs -->
-                        <div class="card text-center" style="display:flex; flex-direction:column; justify-content:center; align-items:center;">
-                            <i class="ph-duotone ph-newspaper card-icon" style="font-size: 3rem; color: var(--accent-primary); margin-bottom:1rem;"></i>
-                            <h3 class="font-en" style="margin-bottom:0.5rem;">Current Affairs</h3>
-                            <p>MPSC गट क परीक्षेसाठी अत्यंत उपयुक्त अशा चालू घडामोडींचे संकलन.</p>
-                            <span class="badge mt-sm">लवकरच उपलब्ध</span>
-                        </div>
-                    </div>
-                </div>
-            </section>
+        <a href="#home" class="logo" aria-label="StudySphere Home">
 
-            <!-- Intro Snippets (About/Contact) -->
-            <section class="section bg-alt">
-                <div class="container grid-3">
-                    <div class="card" style="grid-column: span 2;">
-                        <h3>StudySphere बद्दल थोडक्यात</h3>
-                        <p style="margin-top:0.5rem; margin-bottom: 1rem;">हे व्यासपीठ विशेषतः MPSC Group C परीक्षेची तयारी करणाऱ्या विद्यार्थ्यांसाठी तयार करण्यात आले आहे. परीक्षाभिमुख नोट्स, रिव्हिजन, सराव प्रश्न, आणि मार्गदर्शन एकाच ठिकाणी उपलब्ध करून देणे हे आमचे उद्दिष्ट आहे.</p>
-                        <a href="#about" class="btn btn-outline" style="padding: 0.5rem 1rem; font-size:0.9rem;">सविस्तर वाचा</a>
-                    </div>
-                    <div class="card text-center">
-                        <i class="ph-duotone ph-telegram-logo" style="font-size:2.5rem; color:#0088cc;"></i>
-                        <h3 style="margin: 0.5rem 0;">संपर्क / त्रुटी नोंदवा</h3>
-                        <p style="font-size:0.9rem; margin-bottom:1rem; color:var(--text-secondary);">माहितीत किंवा प्रश्नात त्रुटी आढळल्यास आम्हाला कळवा.</p>
-                        <a href="#contact" class="btn btn-primary" style="padding: 0.5rem 1rem; font-size:0.9rem; width:100%;">Contact Page</a>
-                    </div>
-                </div>
-            </section>
-        </div>
+            <span class="logo-icon">
+                <i class="ph-fill ph-student"></i>
+            </span>
 
-        <!-- ================= ABOUT VIEW ================= -->
-        <div id="view-about" class="view section">
-            <div class="container">
-                <div class="content-box">
-                    <h2 class="section-title text-center" style="margin-bottom: 2rem;">आमच्याबद्दल (About Us)</h2>
-                    <p><strong>StudySphere</strong> हे विशेषतः MPSC Group C (गट क) पूर्व आणि मुख्य परीक्षेची तयारी करणाऱ्या विद्यार्थ्यांसाठी तयार केलेले मोफत अभ्यास व्यासपीठ आहे.</p>
-                    <p>येथे विद्यार्थ्यांना अभ्यासक्रमानुसार, परीक्षाभिमुख आणि सोप्या पद्धतीने अभ्यास करता यावा हा आमचा मुख्य उद्देश आहे. या वेबसाइटवर विविध विषयांचे अभ्याससाहित्य (Study Notes), उजळणी (Revision), सराव प्रश्न (Practice Questions), चाचण्या (Tests), आणि PYQ विश्लेषण उपलब्ध करून देण्याचे आमचे उद्दिष्ट आहे.</p>
-                    <p>StudySphere हे विद्यार्थ्यांना त्यांच्या अभ्यासात योग्य मार्गदर्शन करणारे educational platform आहे. आम्ही उपलब्ध केलेली माहिती जास्तीत जास्त अचूक देण्याचा प्रयत्न करतो.</p>
-                    <p><strong>त्रुटी नोंदवणे:</strong> जर तुम्हाला कोणत्याही माहितीत किंवा प्रश्नात काही चूक किंवा त्रुटी आढळल्यास, तुम्ही थेट आमच्या Telegram चॅनेलद्वारे संपर्क साधून ती आमच्या निदर्शनास आणून देऊ शकता. तुमच्या विधायक सूचनांचे आम्ही नेहमीच स्वागत करतो.</p>
-                </div>
-            </div>
-        </div>
+            StudySphere
 
-        <!-- ================= CONTACT VIEW ================= -->
-        <div id="view-contact" class="view section">
-            <div class="container">
-                <div class="card contact-compact">
-                    <i class="ph-fill ph-telegram-logo"></i>
-                    <h2 class="section-title" style="font-size: 1.75rem;">संपर्क करा</h2>
-                    <p style="margin: 1rem 0 2rem; color: var(--text-secondary);">माहितीतील त्रुटी, प्रश्नातील त्रुटी, सूचना किंवा वेबसाइटशी संबंधित कोणत्याही अडचणींसाठी आमच्याशी संपर्क साधा.</p>
-                    <a href="https://t.me/MPSCstudysphere" target="_blank" rel="noopener noreferrer" class="btn btn-telegram" style="width: 100%;">
-                        <i class="ph-bold ph-paper-plane-tilt"></i> Telegram वर संपर्क करा
+        </a>
+
+
+        <nav>
+
+            <ul class="nav-menu" id="navMenu">
+
+                <li>
+                    <a href="#home" class="nav-link active">
+                        Home
                     </a>
-                </div>
-            </div>
+                </li>
+
+                <li>
+                    <a href="#about" class="nav-link">
+                        About
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#contact" class="nav-link">
+                        Contact
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#privacy" class="nav-link">
+                        Privacy Policy
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#sitemap" class="nav-link">
+                        Site Map
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#terms" class="nav-link">
+                        Terms & Conditions
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+
+        <div class="header-actions">
+
+            <button
+                class="theme-btn"
+                id="themeToggle"
+                aria-label="Change Theme">
+
+                <i
+                    class="ph ph-moon"
+                    id="themeIcon">
+                </i>
+
+            </button>
+
+
+            <button
+                class="mobile-toggle"
+                id="mobileToggle"
+                aria-label="Open Menu">
+
+                <i
+                    class="ph ph-list"
+                    id="menuIcon">
+                </i>
+
+            </button>
+
         </div>
 
-        <!-- ================= PRIVACY POLICY VIEW ================= -->
-        <div id="view-privacy" class="view section">
-            <div class="container">
-                <div class="content-box">
-                    <h2 class="section-title text-center" style="margin-bottom: 2rem;">खाजगीपणाचे धोरण (Privacy Policy)</h2>
-                    <p>StudySphere हे पूर्णपणे शैक्षणिक उद्देशाने (Educational Purpose) बनवलेले मोफत व्यासपीठ आहे. आमच्या वापरकर्त्यांच्या खाजगीपणाचा आम्ही आदर करतो.</p>
-                    <ul>
-                        <li><strong>माहिती संकलन:</strong> वेबसाइटचा वापर सोपा करण्यासाठी आम्ही तुमच्या ब्राउझरमधील Local Storage चा वापर करतो (उदा. Light/Dark Theme ची निवड सेव्ह करण्यासाठी). आम्ही मुद्दामहून कोणतीही वैयक्तिक माहिती (नाव, ईमेल, मोबाईल नंबर) मागत नाही किंवा गोळा करत नाही.</li>
-                        <li><strong>खाते/लॉगिन नाही:</strong> या वेबसाइटवर सध्या कोणतीही अकाउंट/लॉगिन सिस्टीम नाही, त्यामुळे तुमचा कोणताही खाजगी डेटा आमच्या सर्व्हरवर सेव्ह केला जात नाही.</li>
-                        <li><strong>तृतीय पक्ष सेवा (Third Party Services):</strong> वेबसाइटचे स्वरूप आणि कार्यक्षमता सुधारण्यासाठी Google Fonts, आयकॉन सेवा, आणि संपर्कासाठी Telegram सारख्या बाह्य सेवांचा वापर केला जातो. या सेवांचे स्वतःचे स्वतंत्र खाजगीपणाचे धोरण असते.</li>
-                        <li><strong>आर्थिक सुरक्षा:</strong> वेबसाइटवरील 'Donate Us' पर्यायाद्वारे मिळालेली मदत पूर्णपणे ऐच्छिक आहे. सुरक्षेच्या कारणास्तव, वेबसाइटवर कुठेही डोनेशनसाठीचा मूळ UPI ID सार्वजनिकरित्या मजकूर स्वरूपात प्रदर्शित केलेला नाही.</li>
-                        <li><strong>वैयक्तिक माहितीची काळजी:</strong> वापरकर्त्यांनी सार्वजनिक संपर्क माध्यमांद्वारे (उदा. Telegram) आपली अत्यंत संवेदनशील वैयक्तिक माहिती पाठवणे टाळावे.</li>
-                        <li><strong>धोरणात बदल:</strong> जसजशी वेबसाइटची कार्यक्षमता (उदा. Test/Quiz System) वाढेल, तसतसे या धोरणात आवश्यकतेनुसार बदल केले जाऊ शकतात.</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <!-- ================= SITE MAP VIEW ================= -->
-        <div id="view-sitemap" class="view section">
-            <div class="container">
-                <div class="content-box">
-                    <h2 class="section-title text-center" style="margin-bottom: 2rem;">साइट मॅप (Site Map)</h2>
-                    <ul style="list-style: none; padding-left: 0;">
-                        <li style="margin-bottom: 0.5rem;"><a href="#home" class="font-en font-bold" style="color: var(--accent-primary);">Home (मुख्य पृष्ठ)</a>
-                            <ul style="list-style: disc; padding-left: 2rem; margin-top: 0.5rem; margin-bottom: 1.5rem;">
-                                <li>Study Guide (मार्गदर्शन)</li>
-                                <li>Subjects (विषय)</li>
-                                <li>PYQ Analysis</li>
-                                <li>Practice & Test</li>
-                                <li>Current Affairs (चालू घडामोडी)</li>
-                            </ul>
-                        </li>
-                        <li style="margin-bottom: 0.5rem;"><a href="#about" class="font-en" style="color: var(--accent-primary);">About (आमच्याबद्दल)</a></li>
-                        <li style="margin-bottom: 0.5rem;"><a href="#contact" class="font-en" style="color: var(--accent-primary);">Contact (संपर्क)</a></li>
-                        <li style="margin-bottom: 0.5rem;"><a href="#privacy" class="font-en" style="color: var(--accent-primary);">Privacy Policy (खाजगीपणाचे धोरण)</a></li>
-                        <li style="margin-bottom: 0.5rem;"><a href="#terms" class="font-en" style="color: var(--accent-primary);">Terms & Conditions (अटी आणि शर्ती)</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <!-- ================= TERMS VIEW ================= -->
-        <div id="view-terms" class="view section">
-            <div class="container">
-                <div class="content-box">
-                    <h2 class="section-title text-center" style="margin-bottom: 2rem;">अटी आणि शर्ती (Terms & Conditions)</h2>
-                    <p>StudySphere वेबसाइटचा वापर करण्यापूर्वी कृपया खालील अटी आणि शर्ती काळजीपूर्वक वाचा:</p>
-                    <ul>
-                        <li><strong>शैक्षणिक उद्देश:</strong> वेबसाइटवरील सर्व अभ्याससाहित्य (नोट्स, प्रश्न, रणनीती) हे केवळ MPSC गट क परीक्षेच्या तयारीसाठी व मार्गदर्शनासाठी पुरवले आहे.</li>
-                        <li><strong>माहितीची अचूकता (Disclaimer):</strong> आम्ही वेबसाइटवरील माहिती अचूक देण्याचा आटोकाट प्रयत्न करतो. तरीही मानवी चुकांमुळे किंवा जुन्या संदर्भामुळे काही त्रुटी असू शकतात. वापरकर्त्यांनी आवश्यकतेनुसार महत्त्वाची आणि तांत्रिक माहिती अधिकृत स्रोतांवरून (उदा. MPSC ची अधिकृत वेबसाइट) तपासून घ्यावी.</li>
-                        <li><strong>वापरकर्त्याची जबाबदारी:</strong> अभ्यासासाठी या सामग्रीचा वापर करणे ही सर्वस्वी वापरकर्त्याची जबाबदारी आहे. कोणत्याही माहितीतील चुकीमुळे होणाऱ्या नुकसानीस StudySphere जबाबदार राहणार नाही.</li>
-                        <li><strong>यशाची हमी नाही:</strong> हे प्लॅटफॉर्म अभ्यासात मदत करण्यासाठी बनवले आहे. वेबसाइटचा वापर केल्याने परीक्षेत यश मिळण्याची कोणतीही कायदेशीर हमी दिली जात नाही.</li>
-                        <li><strong>ऐच्छिक योगदान (Voluntary Donation):</strong> वेबसाइटला आर्थिक मदत करण्यासाठी दिलेले 'Donation' हे पूर्णपणे ऐच्छिक आहे. या योगदानामुळे परीक्षेत कोणताही विशेष फायदा, हमी, रँक किंवा वेबसाइटवर कोणताही विशेष अधिकार दिला जात नाही.</li>
-                        <li><strong>बाह्य लिंक्स (External Links):</strong> वेबसाइटवर असलेल्या बाह्य लिंक्स (उदा. Telegram) व त्यांच्या सेवांच्या अटी त्या संबंधित कंपनीच्या धोरणानुसार असतील.</li>
-                        <li><strong>बदल करण्याचा अधिकार:</strong> वेबसाइट मालक किंवा प्रशासक कोणत्याही पूर्वसूचनेविना वेबसाइटच्या स्वरूपात, माहितीत, क्विझमध्ये किंवा कार्यक्षमतेत बदल करण्याचा किंवा ती बंद करण्याचा सर्वाधिकार राखून ठेवतात.</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-    </main>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container footer-content">
-            <nav class="footer-nav">
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#contact">Contact</a>
-                <a href="#privacy">Privacy Policy</a>
-                <a href="#sitemap">Site Map</a>
-                <a href="#terms">Terms & Conditions</a>
-            </nav>
-            
-            <div class="footer-buttons">
-                <a href="#contact" class="btn btn-outline" style="border-color: var(--border-color); color: var(--text-primary);"><i class="ph-bold ph-envelope-simple"></i> Contact Us</a>
-                <button type="button" class="btn btn-primary" id="open-donate-btn"><i class="ph-bold ph-heart"></i> Donate Us</button>
-            </div>
-            
-            <div class="footer-bottom">
-                <p>&copy; <span id="current-year"></span> StudySphere.</p>
-                <p style="margin-top: 0.25rem;">MPSC Group C Preparation Platform</p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Donation Modal -->
-    <div class="modal-overlay" id="donate-modal">
-        <div class="modal">
-            <button class="modal-close" id="close-donate-btn" aria-label="Close modal"><i class="ph-bold ph-x"></i></button>
-            
-            <h3 class="font-en" style="font-size: 1.5rem; color: var(--accent-primary); margin-bottom: 0.5rem;">StudySphere ला योगदान द्या</h3>
-            <p style="color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 1.5rem;">मोफत अभ्याससाहित्य सुरू ठेवण्यासाठी तुम्ही इच्छेनुसार योगदान देऊ शकता.</p>
-
-            <!-- Mobile Flow -->
-            <div id="mobile-donate-flow" style="display: none;">
-                <div class="donate-amounts">
-                    <button class="amt-btn" data-val="50">₹50</button>
-                    <button class="amt-btn" data-val="100">₹100</button>
-                    <button class="amt-btn" data-val="200">₹200</button>
-                </div>
-                
-                <div class="custom-amt">
-                    <label for="custom-amount">इतर रक्कम (₹)</label>
-                    <input type="number" id="custom-amount" placeholder="रक्कम टाका (उदा. 50)" min="1">
-                    <div class="error-msg" id="donate-error">कृपया योग्य रक्कम टाका (₹० पेक्षा जास्त).</div>
-                </div>
-                
-                <button type="button" class="btn btn-primary" id="pay-now-btn" style="width: 100%;">
-                    Pay Now <i class="ph-bold ph-arrow-right"></i>
-                </button>
-            </div>
-
-            <!-- Desktop Flow -->
-            <div id="desktop-donate-flow" style="display: none;">
-                <div class="qr-box">
-                    <!-- Inline SVG QR Placeholder -->
-                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-label="Demo QR Code">
-                        <rect width="100" height="100" fill="#ffffff" rx="8" stroke="#e2e8f0" stroke-width="2"/>
-                        <rect x="15" y="15" width="25" height="25" fill="none" stroke="#64748b" stroke-width="4"/>
-                        <rect x="20" y="20" width="15" height="15" fill="#64748b"/>
-                        <rect x="60" y="15" width="25" height="25" fill="none" stroke="#64748b" stroke-width="4"/>
-                        <rect x="65" y="20" width="15" height="15" fill="#64748b"/>
-                        <rect x="15" y="60" width="25" height="25" fill="none" stroke="#64748b" stroke-width="4"/>
-                        <rect x="20" y="65" width="15" height="15" fill="#64748b"/>
-                        <rect x="48" y="15" width="6" height="6" fill="#64748b"/>
-                        <rect x="48" y="34" width="6" height="6" fill="#64748b"/>
-                        <rect x="15" y="48" width="6" height="6" fill="#64748b"/>
-                        <rect x="34" y="48" width="6" height="6" fill="#64748b"/>
-                        <rect x="48" y="48" width="6" height="6" fill="#64748b"/>
-                        <rect x="60" y="48" width="25" height="6" fill="#64748b"/>
-                        <rect x="48" y="60" width="6" height="25" fill="#64748b"/>
-                        <rect x="60" y="79" width="6" height="6" fill="#64748b"/>
-                        <rect x="79" y="60" width="6" height="6" fill="#64748b"/>
-                        <rect x="79" y="79" width="6" height="6" fill="#64748b"/>
-                    </svg>
-                </div>
-                <span class="badge" style="background:#e2e8f0; color:#475569;">Demo QR Code</span>
-                <p style="color: var(--text-secondary); font-size: 0.85rem; margin-top: 1rem;">स्कॅन करून पे करण्यासाठी मोबाईलचा वापर करा. <br>वास्तविक QR Code नंतर येथे जोडला जाईल.</p>
-            </div>
-        </div>
     </div>
 
-    <!-- Application Logic -->
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            // Set current year
-            document.getElementById('current-year').textContent = new Date().getFullYear();
+</header>
 
-            // --- Theme Management ---
-            const themeToggleBtn = document.getElementById('theme-toggle');
-            const themeIcon = document.getElementById('theme-icon');
-            
-            const savedTheme = localStorage.getItem('studysphere-theme');
-            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-            const isDark = savedTheme === 'dark' || (!savedTheme && prefersDark);
-            
-            function applyTheme(dark) {
-                if (dark) {
-                    document.body.classList.add('dark-theme');
-                    themeIcon.classList.replace('ph-moon', 'ph-sun');
-                    localStorage.setItem('studysphere-theme', 'dark');
-                } else {
-                    document.body.classList.remove('dark-theme');
-                    themeIcon.classList.replace('ph-sun', 'ph-moon');
-                    localStorage.setItem('studysphere-theme', 'light');
-                }
-            }
-            
-            applyTheme(isDark);
-            
-            themeToggleBtn.addEventListener('click', () => {
-                applyTheme(!document.body.classList.contains('dark-theme'));
+
+
+<!-- =========================================================
+     MAIN
+     ========================================================= -->
+
+<main>
+
+
+<!-- =========================================================
+     HOME
+     ========================================================= -->
+
+<section id="view-home" class="view active">
+
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+        <div class="container text-center">
+
+            <div class="hero-content">
+
+                <div class="hero-label">
+                    <i class="ph-fill ph-book-open"></i>
+                    MPSC Group C Preparation
+                </div>
+
+
+                <h1 class="hero-title">
+
+                    Study<span>Sphere</span>
+
+                </h1>
+
+
+                <h2 class="hero-subtitle">
+
+                    MPSC Group C Prelims + Mains
+
+                </h2>
+
+
+                <p class="hero-desc">
+
+                    MPSC गट क परीक्षेच्या तयारीसाठी
+                    अभ्यासक्रमानुसार अभ्यास, मार्गदर्शन,
+                    नोट्स, Revision, सराव प्रश्न आणि Tests
+                    एकाच ठिकाणी.
+
+                </p>
+
+
+                <div class="hero-actions">
+
+                    <button
+                        class="btn btn-primary"
+                        id="startStudyBtn">
+
+                        अभ्यास सुरू करा
+
+                        <i class="ph-bold ph-arrow-down"></i>
+
+                    </button>
+
+
+                    <button
+                        class="btn btn-outline"
+                        id="guideBtn">
+
+                        मार्गदर्शन
+
+                        <i class="ph-bold ph-compass"></i>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- STUDY JOURNEY -->
+
+    <section
+        id="learning-journey"
+        class="section section-soft">
+
+        <div class="container">
+
+            <div class="section-header text-center">
+
+                <h2 class="section-title">
+                    तुमचा अभ्यासाचा प्रवास
+                </h2>
+
+                <p class="section-desc">
+                    MPSC तयारीसाठी एक structured approach
+                </p>
+
+            </div>
+
+
+            <div class="journey-grid">
+
+
+                <div class="card journey-card">
+
+                    <div class="journey-number">1</div>
+
+                    <div>
+
+                        <h3>Syllabus</h3>
+
+                        <p>
+                            अधिकृत अभ्यासक्रम आणि परीक्षेचे
+                            स्वरूप समजून घ्या.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="card journey-card">
+
+                    <div class="journey-number">2</div>
+
+                    <div>
+
+                        <h3>Learn</h3>
+
+                        <p>
+                            प्रत्येक विषय आणि घटक
+                            मूलभूत पातळीपासून शिका.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="card journey-card">
+
+                    <div class="journey-number">3</div>
+
+                    <div>
+
+                        <h3>Revise</h3>
+
+                        <p>
+                            महत्त्वाचे मुद्दे आणि facts
+                            नियमितपणे revise करा.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="card journey-card">
+
+                    <div class="journey-number">4</div>
+
+                    <div>
+
+                        <h3>Practice</h3>
+
+                        <p>
+                            Topic आणि Chapter नुसार
+                            MCQ चा सराव करा.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="card journey-card">
+
+                    <div class="journey-number">5</div>
+
+                    <div>
+
+                        <h3>Test</h3>
+
+                        <p>
+                            परीक्षा पद्धतीनुसार Tests
+                            आणि timed practice करा.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="card journey-card">
+
+                    <div class="journey-number">6</div>
+
+                    <div>
+
+                        <h3>Analyse</h3>
+
+                        <p>
+                            चुका ओळखा आणि कमकुवत
+                            topics वर पुन्हा काम करा.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- SUBJECTS -->
+
+    <section
+        id="subjects"
+        class="section">
+
+        <div class="container">
+
+            <div class="section-header text-center">
+
+                <h2 class="section-title">
+                    MPSC Group C Subjects
+                </h2>
+
+                <p class="section-desc">
+                    Prelims आणि Mains अभ्यासासाठी विषयानुसार
+                    अभ्याससाहित्य
+                </p>
+
+            </div>
+
+
+            <div class="subject-grid">
+
+
+                <div
+                    class="card subject-card"
+                    data-subject-id="HIS">
+
+                    <div class="subject-icon">
+                        <i class="ph-duotone ph-scroll"></i>
+                    </div>
+
+                    <h3>History</h3>
+
+                    <p>
+                        आधुनिक भारत आणि महाराष्ट्राचा इतिहास
+                    </p>
+
+                    <span class="coming-soon">
+                        Content तयार होत आहे
+                    </span>
+
+                </div>
+
+
+                <div
+                    class="card subject-card"
+                    data-subject-id="GEO">
+
+                    <div class="subject-icon">
+                        <i class="ph-duotone ph-globe-hemisphere-west"></i>
+                    </div>
+
+                    <h3>Geography</h3>
+
+                    <p>
+                        भारत व महाराष्ट्राच्या विशेष संदर्भासह भूगोल
+                    </p>
+
+                    <span class="coming-soon">
+                        Content तयार होत आहे
+                    </span>
+
+                </div>
+
+
+                <div
+                    class="card subject-card"
+                    data-subject-id="POL">
+
+                    <div class="subject-icon">
+                        <i class="ph-duotone ph-bank"></i>
+                    </div>
+
+                    <h3>Polity & Civics</h3>
+
+                    <p>
+                        भारतीय राज्यघटना, शासन व्यवस्था आणि पंचायत राज
+                    </p>
+
+                    <span class="coming-soon">
+                        Content तयार होत आहे
+                    </span>
+
+                </div>
+
+
+                <div
+                    class="card subject-card"
+                    data-subject-id="ECO">
+
+                    <div class="subject-icon">
+                        <i class="ph-duotone ph-chart-line-up"></i>
+                    </div>
+
+                    <h3>Economy</h3>
+
+                    <p>
+                        भारतीय अर्थव्यवस्था आणि आर्थिक व्यवस्था
+                    </p>
+
+                    <span class="coming-soon">
+                        Content तयार होत आहे
+                    </span>
+
+                </div>
+
+
+                <div
+                    class="card subject-card"
+                    data-subject-id="SCI">
+
+                    <div class="subject-icon">
+                        <i class="ph-duotone ph-atom"></i>
+                    </div>
+
+                    <h3>General Science</h3>
+
+                    <p>
+                        Physics, Chemistry, Biology आणि संबंधित घटक
+                    </p>
+
+                    <span class="coming-soon">
+                        Content तयार होत आहे
+                    </span>
+
+                </div>
+
+
+                <div
+                    class="card subject-card"
+                    data-subject-id="MATH">
+
+                    <div class="subject-icon">
+                        <i class="ph-duotone ph-calculator"></i>
+                    </div>
+
+                    <h3>Arithmetic</h3>
+
+                    <p>
+                        अंकगणित आणि मूलभूत गणितीय संकल्पना
+                    </p>
+
+                    <span class="coming-soon">
+                        Content तयार होत आहे
+                    </span>
+
+                </div>
+
+
+                <div
+                    class="card subject-card"
+                    data-subject-id="REAS">
+
+                    <div class="subject-icon">
+                        <i class="ph-duotone ph-brain"></i>
+                    </div>
+
+                    <h3>Reasoning</h3>
+
+                    <p>
+                        बुद्धिमत्ता चाचणी आणि तार्किक क्षमता
+                    </p>
+
+                    <span class="coming-soon">
+                        Content तयार होत आहे
+                    </span>
+
+                </div>
+
+
+                <div
+                    class="card subject-card"
+                    data-subject-id="CA">
+
+                    <div class="subject-icon">
+                        <i class="ph-duotone ph-newspaper"></i>
+                    </div>
+
+                    <h3>Current Affairs</h3>
+
+                    <p>
+                        परीक्षेसाठी उपयुक्त चालू घडामोडी
+                    </p>
+
+                    <span class="coming-soon">
+                        Content तयार होत आहे
+                    </span>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- STUDY GUIDE -->
+
+    <section
+        id="study-guide"
+        class="section section-soft">
+
+        <div class="container">
+
+            <div class="section-header text-center">
+
+                <h2 class="section-title">
+                    MPSC अभ्यास मार्गदर्शन
+                </h2>
+
+                <p class="section-desc">
+                    अभ्यासाची सुरुवात कुठून करावी आणि तयारी कशी करावी?
+                </p>
+
+            </div>
+
+
+            <div class="guide-grid">
+
+
+                <div class="card guide-card">
+
+                    <i class="ph-duotone ph-rocket-launch"></i>
+
+                    <h3>
+                        सुरुवात कशी करावी?
+                    </h3>
+
+                    <p>
+                        नव्याने तयारी सुरू करणाऱ्या विद्यार्थ्यांसाठी
+                        योग्य दिशा आणि सुरुवातीचे नियोजन.
+                    </p>
+
+                </div>
+
+
+                <div class="card guide-card">
+
+                    <i class="ph-duotone ph-exam"></i>
+
+                    <h3>
+                        Prelims Strategy
+                    </h3>
+
+                    <p>
+                        Objective परीक्षा लक्षात घेऊन
+                        syllabus, revision आणि MCQ strategy.
+                    </p>
+
+                </div>
+
+
+                <div class="card guide-card">
+
+                    <i class="ph-duotone ph-books"></i>
+
+                    <h3>
+                        Mains Strategy
+                    </h3>
+
+                    <p>
+                        Mains मधील विषयांचे integrated
+                        preparation आणि revision planning.
+                    </p>
+
+                </div>
+
+
+                <div class="card guide-card">
+
+                    <i class="ph-duotone ph-book-open"></i>
+
+                    <h3>
+                        Subject-wise Strategy
+                    </h3>
+
+                    <p>
+                        प्रत्येक विषयासाठी अभ्यासाची योग्य
+                        पद्धत आणि topic coverage.
+                    </p>
+
+                </div>
+
+
+                <div class="card guide-card">
+
+                    <i class="ph-duotone ph-files"></i>
+
+                    <h3>
+                        PYQ कसे वापरावे?
+                    </h3>
+
+                    <p>
+                        मागील प्रश्नपत्रिकांचा अभ्यास करून
+                        प्रश्नांचा pattern समजून घेणे.
+                    </p>
+
+                </div>
+
+
+                <div class="card guide-card">
+
+                    <i class="ph-duotone ph-arrows-clockwise"></i>
+
+                    <h3>
+                        Revision Strategy
+                    </h3>
+
+                    <p>
+                        अभ्यास केलेल्या विषयांची नियमित आणि
+                        effective revision.
+                    </p>
+
+                </div>
+
+
+                <div class="card guide-card">
+
+                    <i class="ph-duotone ph-clock"></i>
+
+                    <h3>
+                        Time Management
+                    </h3>
+
+                    <p>
+                        उपलब्ध वेळेनुसार daily आणि weekly
+                        study planning.
+                    </p>
+
+                </div>
+
+
+                <div class="card guide-card">
+
+                    <i class="ph-duotone ph-warning"></i>
+
+                    <h3>
+                        सामान्य चुका
+                    </h3>
+
+                    <p>
+                        MPSC तयारीमध्ये होणाऱ्या सामान्य चुका
+                        आणि त्या टाळण्याचे मार्ग.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- FEATURES -->
+
+    <section class="section">
+
+        <div class="container">
+
+            <div class="feature-grid">
+
+
+                <div class="card feature-card">
+
+                    <i class="ph-duotone ph-files feature-icon"></i>
+
+                    <h3>PYQ Analysis</h3>
+
+                    <p>
+                        विषय आणि topic नुसार मागील प्रश्नांचे
+                        विश्लेषण.
+                    </p>
+
+                    <span class="status">
+                        लवकरच
+                    </span>
+
+                </div>
+
+
+                <div class="card feature-card">
+
+                    <i class="ph-duotone ph-pencil-line feature-icon"></i>
+
+                    <h3>Practice & Test</h3>
+
+                    <p>
+                        Practice Quiz आणि Test Simulator
+                        objective format मध्ये.
+                    </p>
+
+                    <span class="status">
+                        लवकरच
+                    </span>
+
+                </div>
+
+
+                <div class="card feature-card">
+
+                    <i class="ph-duotone ph-newspaper feature-icon"></i>
+
+                    <h3>Current Affairs</h3>
+
+                    <p>
+                        MPSC Group C साठी उपयुक्त
+                        current affairs content.
+                    </p>
+
+                    <span class="status">
+                        लवकरच
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ABOUT PREVIEW -->
+
+    <section class="section section-soft">
+
+        <div class="container about-preview">
+
+
+            <div class="card">
+
+                <h3>
+                    StudySphere बद्दल
+                </h3>
+
+                <p>
+                    StudySphere हे MPSC Group C Prelims आणि
+                    Mains परीक्षेची तयारी करणाऱ्या विद्यार्थ्यांसाठी
+                    तयार केलेले शैक्षणिक व्यासपीठ आहे.
+                </p>
+
+                <p>
+                    अभ्यासक्रमानुसार learning, revision,
+                    practice, tests, PYQ analysis आणि
+                    अभ्यास मार्गदर्शन एकाच ठिकाणी उपलब्ध
+                    करून देणे हा यामागचा मुख्य उद्देश आहे.
+                </p>
+
+                <a
+                    href="#about"
+                    class="btn btn-outline">
+
+                    सविस्तर वाचा
+
+                    <i class="ph-bold ph-arrow-right"></i>
+
+                </a>
+
+            </div>
+
+
+            <div class="card telegram-preview">
+
+                <i class="ph-fill ph-telegram-logo"></i>
+
+                <h3>
+                    त्रुटी किंवा सूचना?
+                </h3>
+
+                <p>
+                    माहिती किंवा प्रश्नामध्ये त्रुटी आढळल्यास
+                    आम्हाला कळवा.
+                </p>
+
+                <a
+                    href="https://t.me/MPSCstudysphere"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-telegram">
+
+                    Telegram वर संपर्क करा
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</section>
+
+
+
+<!-- =========================================================
+     ABOUT
+     ========================================================= -->
+
+<section
+    id="view-about"
+    class="view info-view">
+
+    <div class="container">
+
+        <div class="content-box">
+
+            <h2 class="section-title text-center">
+                आमच्याबद्दल
+            </h2>
+
+            <p>
+                <strong>StudySphere</strong> हे विशेषतः
+                MPSC Group C Prelims आणि Mains परीक्षेची
+                तयारी करणाऱ्या विद्यार्थ्यांसाठी तयार केलेले
+                शैक्षणिक व्यासपीठ आहे.
+            </p>
+
+            <p>
+                विद्यार्थ्यांना अभ्यासक्रमानुसार, परीक्षाभिमुख
+                आणि सोप्या पद्धतीने अभ्यास करता यावा हा
+                वेबसाइटचा मुख्य उद्देश आहे.
+            </p>
+
+            <p>
+                येथे Notes, Revision, Practice Questions,
+                Practice Quiz, Tests, PYQ Analysis,
+                Current Affairs आणि MPSC अभ्यास मार्गदर्शन
+                उपलब्ध करून देण्याचे उद्दिष्ट आहे.
+            </p>
+
+            <h3>
+                आमचा दृष्टिकोन
+            </h3>
+
+            <p>
+                अभ्यासाची सुरुवात योग्य दिशेने व्हावी,
+                प्रत्येक topic व्यवस्थित शिकता यावा आणि
+                त्यानंतर revision व objective practice
+                करता यावी, यासाठी content ची रचना
+                अभ्यासक्रमाशी जोडण्याचा प्रयत्न केला जातो.
+            </p>
+
+            <h3>
+                त्रुटी नोंदवणे
+            </h3>
+
+            <p>
+                वेबसाइटवरील माहिती किंवा कोणत्याही प्रश्नामध्ये
+                त्रुटी आढळल्यास ती आमच्या निदर्शनास आणून द्यावी.
+                विधायक सूचना आणि corrections चे स्वागत आहे.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     CONTACT
+     ========================================================= -->
+
+<section
+    id="view-contact"
+    class="view info-view">
+
+    <div class="container">
+
+        <div class="contact-wrapper">
+
+            <div class="card contact-card">
+
+                <i class="ph-fill ph-telegram-logo contact-icon"></i>
+
+                <h2>
+                    संपर्क करा
+                </h2>
+
+                <p>
+                    माहितीतील त्रुटी, प्रश्नातील त्रुटी,
+                    सूचना किंवा वेबसाइटशी संबंधित
+                    अडचणी असल्यास Telegram वर संपर्क करा.
+                </p>
+
+                <a
+                    href="https://t.me/MPSCstudysphere"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-telegram"
+                    style="width:100%;">
+
+                    <i class="ph-bold ph-paper-plane-tilt"></i>
+
+                    Telegram वर संपर्क करा
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     PRIVACY
+     ========================================================= -->
+
+<section
+    id="view-privacy"
+    class="view info-view">
+
+    <div class="container">
+
+        <div class="content-box">
+
+            <h2 class="section-title text-center">
+                Privacy Policy
+            </h2>
+
+            <p>
+                StudySphere हे शैक्षणिक उद्देशाने तयार केलेले
+                व्यासपीठ आहे. वापरकर्त्यांच्या privacy चा
+                आदर करणे आमच्यासाठी महत्त्वाचे आहे.
+            </p>
+
+            <h3>
+                माहिती संकलन
+            </h3>
+
+            <p>
+                वेबसाइटचा वापर सुधारण्यासाठी browser मध्ये
+                काही preferences जसे की Light/Dark Theme
+                Local Storage मध्ये सेव्ह होऊ शकतात.
+            </p>
+
+            <h3>
+                Account / Login
+            </h3>
+
+            <p>
+                सध्या वेबसाइटवर user account किंवा login
+                system आवश्यक नाही. त्यामुळे account-related
+                वैयक्तिक माहिती साठवली जात नाही.
+            </p>
+
+            <h3>
+                बाह्य सेवा
+            </h3>
+
+            <p>
+                Google Fonts, icon services आणि Telegram
+                सारख्या बाह्य सेवांचा वापर वेबसाइटच्या
+                functionality साठी केला जाऊ शकतो.
+            </p>
+
+            <h3>
+                Donation
+            </h3>
+
+            <p>
+                Donation पूर्णपणे ऐच्छिक आहे. UPI payment
+                करण्यासाठी आवश्यक payment information
+                website च्या public text मध्ये दाखवली जात नाही.
+            </p>
+
+            <h3>
+                धोरणातील बदल
+            </h3>
+
+            <p>
+                वेबसाइटमध्ये नवीन features किंवा services
+                जोडल्यास या Privacy Policy मध्ये आवश्यक
+                बदल केले जाऊ शकतात.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     SITE MAP
+     ========================================================= -->
+
+<section
+    id="view-sitemap"
+    class="view info-view">
+
+    <div class="container">
+
+        <div class="content-box">
+
+            <h2 class="section-title text-center">
+                Site Map
+            </h2>
+
+            <ul class="sitemap-list">
+
+                <li>
+                    <a href="#home">
+                        Home
+                    </a>
+
+                    <ul class="sitemap-sub">
+
+                        <li>Study Journey</li>
+                        <li>Subjects</li>
+                        <li>Study Guide</li>
+                        <li>PYQ Analysis</li>
+                        <li>Practice & Test</li>
+                        <li>Current Affairs</li>
+
+                    </ul>
+
+                </li>
+
+
+                <li>
+                    <a href="#about">
+                        About
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="#contact">
+                        Contact
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="#privacy">
+                        Privacy Policy
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="#sitemap">
+                        Site Map
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="#terms">
+                        Terms & Conditions
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     TERMS
+     ========================================================= -->
+
+<section
+    id="view-terms"
+    class="view info-view">
+
+    <div class="container">
+
+        <div class="content-box">
+
+            <h2 class="section-title text-center">
+                Terms & Conditions
+            </h2>
+
+            <p>
+                StudySphere चा वापर करताना खालील अटी
+                आणि शर्ती लागू राहतील.
+            </p>
+
+            <h3>
+                शैक्षणिक उद्देश
+            </h3>
+
+            <p>
+                वेबसाइटवरील सामग्री MPSC Group C परीक्षेच्या
+                अभ्यासासाठी आणि शैक्षणिक मार्गदर्शनासाठी
+                उपलब्ध करून दिली जाते.
+            </p>
+
+            <h3>
+                माहितीची अचूकता
+            </h3>
+
+            <p>
+                माहिती शक्य तितकी अचूक ठेवण्याचा प्रयत्न
+                केला जातो. तरीही मानवी चुका किंवा
+                माहिती जुनाट झाल्यामुळे काही त्रुटी राहू शकतात.
+            </p>
+
+            <p>
+                महत्त्वाची अधिकृत माहिती आवश्यकतेनुसार
+                संबंधित अधिकृत स्रोतावरून तपासावी.
+            </p>
+
+            <h3>
+                वापरकर्त्याची जबाबदारी
+            </h3>
+
+            <p>
+                वेबसाइटवरील content चा वापर करून अभ्यास
+                करण्याची जबाबदारी वापरकर्त्याची आहे.
+            </p>
+
+            <h3>
+                यशाची हमी
+            </h3>
+
+            <p>
+                StudySphere हे अभ्यासासाठी मदत करणारे
+                व्यासपीठ आहे. वेबसाइटच्या वापरामुळे
+                परीक्षेतील यशाची कोणतीही हमी दिली जात नाही.
+            </p>
+
+            <h3>
+                Donation
+            </h3>
+
+            <p>
+                Donation हे पूर्णपणे voluntary आहे.
+                Donation केल्यामुळे कोणताही विशेष
+                academic advantage किंवा special access
+                मिळत नाही.
+            </p>
+
+            <h3>
+                बाह्य Links
+            </h3>
+
+            <p>
+                Telegram सारख्या बाह्य सेवांच्या वापरासाठी
+                त्या सेवांच्या स्वतःच्या Terms लागू होऊ शकतात.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+
+<!-- =========================================================
+     FOOTER
+     ========================================================= -->
+
+<footer class="footer">
+
+    <div class="container footer-content">
+
+
+        <nav class="footer-nav">
+
+            <a href="#home">
+                Home
+            </a>
+
+            <a href="#about">
+                About
+            </a>
+
+            <a href="#contact">
+                Contact
+            </a>
+
+            <a href="#privacy">
+                Privacy Policy
+            </a>
+
+            <a href="#sitemap">
+                Site Map
+            </a>
+
+            <a href="#terms">
+                Terms & Conditions
+            </a>
+
+        </nav>
+
+
+        <div class="footer-buttons">
+
+            <a
+                href="#contact"
+                class="btn btn-outline">
+
+                <i class="ph-bold ph-paper-plane-tilt"></i>
+
+                Contact Us
+
+            </a>
+
+
+            <button
+                type="button"
+                class="btn btn-primary"
+                id="donateButton">
+
+                <i class="ph-bold ph-heart"></i>
+
+                Donate Us
+
+            </button>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © <span id="year"></span> StudySphere
+            </p>
+
+            <p>
+                MPSC Group C Prelims & Mains
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+<!-- =========================================================
+     DONATION MODAL
+     ========================================================= -->
+
+<div
+    class="modal-overlay"
+    id="donationModal"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="donationTitle">
+
+
+    <div class="modal">
+
+
+        <button
+            type="button"
+            class="modal-close"
+            id="closeDonation"
+            aria-label="Close">
+
+            <i class="ph-bold ph-x"></i>
+
+        </button>
+
+
+        <h3 id="donationTitle">
+            StudySphere ला योगदान द्या
+        </h3>
+
+
+        <p class="modal-intro">
+            मोफत अभ्याससाहित्य सुरू ठेवण्यासाठी
+            तुम्ही इच्छेनुसार योगदान देऊ शकता.
+        </p>
+
+
+        <!-- MOBILE -->
+
+        <div id="mobileDonation">
+
+            <div class="donate-amounts">
+
+                <button
+                    class="amount-btn"
+                    data-amount="50">
+
+                    ₹50
+
+                </button>
+
+                <button
+                    class="amount-btn"
+                    data-amount="100">
+
+                    ₹100
+
+                </button>
+
+                <button
+                    class="amount-btn"
+                    data-amount="200">
+
+                    ₹200
+
+                </button>
+
+            </div>
+
+
+            <div class="custom-amount">
+
+                <label for="customAmount">
+                    इतर रक्कम (₹)
+                </label>
+
+                <input
+                    type="number"
+                    id="customAmount"
+                    min="1"
+                    step="1"
+                    placeholder="रक्कम टाका">
+
+                <div
+                    class="error-message"
+                    id="donationError">
+
+                    कृपया ₹1 किंवा त्यापेक्षा जास्त रक्कम टाका.
+
+                </div>
+
+            </div>
+
+
+            <button
+                type="button"
+                class="btn btn-primary"
+                id="payNow"
+                style="width:100%;">
+
+                Pay Now
+
+                <i class="ph-bold ph-arrow-right"></i>
+
+            </button>
+
+        </div>
+
+
+
+        <!-- DESKTOP -->
+
+        <div id="desktopDonation" class="qr-area">
+
+            <div class="qr-image-box">
+
+                <!--
+                    AFTER GETTING YOUR REAL QR:
+                    Replace this src with your image.
+
+                    Example:
+                    src="qr-code.png"
+                -->
+
+                <img
+                    src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 210 210'%3E%3Crect width='210' height='210' fill='white'/%3E%3Crect x='15' y='15' width='55' height='55' fill='none' stroke='%23555555' stroke-width='8'/%3E%3Crect x='30' y='30' width='25' height='25' fill='%23555555'/%3E%3Crect x='140' y='15' width='55' height='55' fill='none' stroke='%23555555' stroke-width='8'/%3E%3Crect x='155' y='30' width='25' height='25' fill='%23555555'/%3E%3Crect x='15' y='140' width='55' height='55' fill='none' stroke='%23555555' stroke-width='8'/%3E%3Crect x='30' y='155' width='25' height='25' fill='%23555555'/%3E%3Cpath d='M90 15h15v15H90zM110 40h15v15h-15zM80 80h20v20H80zM115 85h15v15h-15zM145 90h15v15h-15zM90 120h15v15H90zM115 120h25v15h-25zM150 120h15v15h-15zM85 150h15v15H85zM110 155h20v20h-20zM145 150h15v15h-15zM175 125h20v20h-20z' fill='%23555555'/%3E%3C/svg%3E"
+                    alt="Demo QR Code">
+
+            </div>
+
+
+            <span class="status">
+                Demo QR Code
+            </span>
+
+
+            <p class="qr-note">
+
+                ही फक्त Demo QR आहे.
+                वास्तविक QR Code नंतर येथे replace करता येईल.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!-- =========================================================
+     JAVASCRIPT
+     ========================================================= -->
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+
+    /* =====================================================
+       YEAR
+       ===================================================== */
+
+    document.getElementById("year").textContent =
+        new Date().getFullYear();
+
+
+
+    /* =====================================================
+       THEME
+       ===================================================== */
+
+    const themeToggle =
+        document.getElementById("themeToggle");
+
+    const themeIcon =
+        document.getElementById("themeIcon");
+
+
+    const savedTheme =
+        localStorage.getItem("studysphere-theme");
+
+
+    function applyTheme(isDark) {
+
+        if (isDark) {
+
+            document.body.classList.add("dark-theme");
+
+            themeIcon.classList.remove("ph-moon");
+
+            themeIcon.classList.add("ph-sun");
+
+            localStorage.setItem(
+                "studysphere-theme",
+                "dark"
+            );
+
+        } else {
+
+            document.body.classList.remove("dark-theme");
+
+            themeIcon.classList.remove("ph-sun");
+
+            themeIcon.classList.add("ph-moon");
+
+            localStorage.setItem(
+                "studysphere-theme",
+                "light"
+            );
+        }
+    }
+
+
+    applyTheme(savedTheme === "dark");
+
+
+    themeToggle.addEventListener("click", function () {
+
+        const isDark =
+            document.body.classList.contains("dark-theme");
+
+        applyTheme(!isDark);
+
+    });
+
+
+
+    /* =====================================================
+       MOBILE MENU
+       ===================================================== */
+
+    const mobileToggle =
+        document.getElementById("mobileToggle");
+
+    const navMenu =
+        document.getElementById("navMenu");
+
+    const menuIcon =
+        document.getElementById("menuIcon");
+
+
+    mobileToggle.addEventListener("click", function () {
+
+        navMenu.classList.toggle("open");
+
+        const isOpen =
+            navMenu.classList.contains("open");
+
+
+        menuIcon.classList.toggle(
+            "ph-list",
+            !isOpen
+        );
+
+        menuIcon.classList.toggle(
+            "ph-x",
+            isOpen
+        );
+
+    });
+
+
+
+    /* =====================================================
+       SPA ROUTER
+       ===================================================== */
+
+    const validRoutes = [
+        "home",
+        "about",
+        "contact",
+        "privacy",
+        "sitemap",
+        "terms"
+    ];
+
+
+    function closeMobileMenu() {
+
+        navMenu.classList.remove("open");
+
+        menuIcon.classList.remove("ph-x");
+
+        menuIcon.classList.add("ph-list");
+
+    }
+
+
+    function route() {
+
+        let hash =
+            window.location.hash.replace("#", "");
+
+
+        if (!validRoutes.includes(hash)) {
+
+            hash = "home";
+
+        }
+
+
+        document
+            .querySelectorAll(".view")
+            .forEach(function (view) {
+
+                view.classList.remove("active");
+
             });
 
-            // --- Mobile Menu Toggle ---
-            const menuToggleBtn = document.getElementById('menu-toggle');
-            const menuIcon = document.getElementById('menu-icon');
-            const navMenu = document.getElementById('nav-menu');
 
-            function toggleMenu() {
-                navMenu.classList.toggle('open');
-                const isOpen = navMenu.classList.contains('open');
-                menuIcon.classList.replace(isOpen ? 'ph-list' : 'ph-x', isOpen ? 'ph-x' : 'ph-list');
-            }
-            menuToggleBtn.addEventListener('click', toggleMenu);
+        const target =
+            document.getElementById(
+                "view-" + hash
+            );
 
-            // --- SPA Router ---
-            const validRoutes = ['home', 'about', 'contact', 'privacy', 'sitemap', 'terms'];
-            
-            function handleRouting() {
-                let hash = window.location.hash.replace('#', '');
-                
-                if (!hash || !validRoutes.includes(hash)) {
-                    hash = 'home';
-                    // Replace state quietly if URL is empty, so back button works correctly
-                    if(!window.location.hash) window.history.replaceState(null, null, '#home');
-                }
 
-                // Hide all views, show target view
-                document.querySelectorAll('.view').forEach(view => view.classList.remove('active'));
-                document.getElementById(`view-${hash}`).classList.add('active');
+        if (target) {
 
-                // Update nav links active state
-                document.querySelectorAll('.nav-link').forEach(link => {
-                    link.classList.toggle('active', link.getAttribute('href') === `#${hash}`);
-                });
+            target.classList.add("active");
 
-                // Close mobile menu if open
-                if (navMenu.classList.contains('open')) toggleMenu();
+        }
 
-                // Scroll to top instantly
-                window.scrollTo(0, 0);
-            }
 
-            window.addEventListener('hashchange', handleRouting);
-            handleRouting(); // Initial load
+        document
+            .querySelectorAll(".nav-link")
+            .forEach(function (link) {
 
-            // --- Donation System ---
-            // HIDDEN UPI ID - USED ONLY IN JS MEMORY FOR DEEP LINK
-            const INTERNAL_UPI = "vikram.joshi9089@oksbi"; 
-            
-            const donateModal = document.getElementById('donate-modal');
-            const openDonateBtn = document.getElementById('open-donate-btn');
-            const closeDonateBtn = document.getElementById('close-donate-btn');
-            
-            const mobileFlow = document.getElementById('mobile-donate-flow');
-            const desktopFlow = document.getElementById('desktop-donate-flow');
-            
-            const customAmtInput = document.getElementById('custom-amount');
-            const amtBtns = document.querySelectorAll('.amt-btn');
-            const errorMsg = document.getElementById('donate-error');
+                link.classList.toggle(
+                    "active",
+                    link.getAttribute("href") === "#" + hash
+                );
 
-            const isMobileDevice = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-
-            // Open Modal
-            openDonateBtn.addEventListener('click', () => {
-                if (isMobileDevice) {
-                    mobileFlow.style.display = 'block';
-                    desktopFlow.style.display = 'none';
-                    customAmtInput.value = '';
-                    amtBtns.forEach(b => b.classList.remove('selected'));
-                    errorMsg.style.display = 'none';
-                } else {
-                    mobileFlow.style.display = 'none';
-                    desktopFlow.style.display = 'block';
-                }
-                donateModal.classList.add('active');
             });
 
-            // Close Modal
-            function closeModal() { donateModal.classList.remove('active'); }
-            closeDonateBtn.addEventListener('click', closeModal);
-            donateModal.addEventListener('click', (e) => {
-                if (e.target === donateModal) closeModal();
-            });
-            document.addEventListener('keydown', (e) => {
-                if (e.key === 'Escape' && donateModal.classList.contains('active')) closeModal();
-            });
 
-            // Mobile Flow Logic
-            if (mobileFlow) {
-                // Preset amounts
-                amtBtns.forEach(btn => {
-                    btn.addEventListener('click', () => {
-                        amtBtns.forEach(b => b.classList.remove('selected'));
-                        btn.classList.add('selected');
-                        customAmtInput.value = btn.getAttribute('data-val');
-                        errorMsg.style.display = 'none';
-                    });
-                });
+        closeMobileMenu();
 
-                // Custom amount input resets chips
-                customAmtInput.addEventListener('input', () => {
-                    amtBtns.forEach(b => b.classList.remove('selected'));
-                    errorMsg.style.display = 'none';
-                });
-
-                // Pay Now
-                document.getElementById('pay-now-btn').addEventListener('click', () => {
-                    const amount = parseFloat(customAmtInput.value);
-                    if (isNaN(amount) || amount <= 0) {
-                        errorMsg.style.display = 'block';
-                        return;
-                    }
-                    
-                    // Generate UPI URI
-                    const upiLink = `upi://pay?pa=${INTERNAL_UPI}&pn=StudySphere&am=${amount}&cu=INR`;
-                    
-                    // Trigger deep link (attempts to open native UPI app)
-                    window.location.href = upiLink;
-                });
-            }
+        window.scrollTo({
+            top: 0,
+            behavior: "instant"
         });
-    </script>
+
+    }
+
+
+    window.addEventListener(
+        "hashchange",
+        route
+    );
+
+
+    route();
+
+
+
+    /* =====================================================
+       HERO BUTTONS
+       ===================================================== */
+
+    const startStudy =
+        document.getElementById("startStudyBtn");
+
+    const guideButton =
+        document.getElementById("guideBtn");
+
+
+    startStudy.addEventListener(
+        "click",
+        function () {
+
+            const subjects =
+                document.getElementById("subjects");
+
+            subjects.scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            });
+
+        }
+    );
+
+
+    guideButton.addEventListener(
+        "click",
+        function () {
+
+            const guide =
+                document.getElementById("study-guide");
+
+            guide.scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            });
+
+        }
+    );
+
+
+
+    /* =====================================================
+       DONATION
+       ===================================================== */
+
+    const donationModal =
+        document.getElementById("donationModal");
+
+    const donateButton =
+        document.getElementById("donateButton");
+
+    const closeDonation =
+        document.getElementById("closeDonation");
+
+
+    const mobileDonation =
+        document.getElementById("mobileDonation");
+
+    const desktopDonation =
+        document.getElementById("desktopDonation");
+
+
+    const customAmount =
+        document.getElementById("customAmount");
+
+    const donationError =
+        document.getElementById("donationError");
+
+
+    const amountButtons =
+        document.querySelectorAll(".amount-btn");
+
+
+    /*
+       IMPORTANT:
+
+       UPI ID is intentionally not displayed
+       anywhere in HTML.
+
+       It is used only internally to create
+       the UPI payment deep link.
+    */
+
+    const INTERNAL_UPI =
+        "vikram.joshi9089@oksbi";
+
+
+    /* Detect mobile */
+
+    function isMobile() {
+
+        return /Android|iPhone|iPad|iPod|webOS|BlackBerry|IEMobile|Opera Mini/i
+            .test(navigator.userAgent);
+
+    }
+
+
+    /* Open Donation */
+
+    donateButton.addEventListener(
+        "click",
+        function () {
+
+            donationError.style.display = "none";
+
+            customAmount.value = "";
+
+            amountButtons.forEach(
+                function (button) {
+
+                    button.classList.remove("selected");
+
+                }
+            );
+
+
+            if (isMobile()) {
+
+                mobileDonation.style.display =
+                    "block";
+
+                desktopDonation.style.display =
+                    "none";
+
+            } else {
+
+                mobileDonation.style.display =
+                    "none";
+
+                desktopDonation.style.display =
+                    "block";
+
+            }
+
+
+            donationModal.classList.add("active");
+
+        }
+    );
+
+
+    /* Close */
+
+    function closeDonateModal() {
+
+        donationModal.classList.remove(
+            "active"
+        );
+
+    }
+
+
+    closeDonation.addEventListener(
+        "click",
+        closeDonateModal
+    );
+
+
+    donationModal.addEventListener(
+        "click",
+        function (event) {
+
+            if (
+                event.target ===
+                donationModal
+            ) {
+
+                closeDonateModal();
+
+            }
+
+        }
+    );
+
+
+    document.addEventListener(
+        "keydown",
+        function (event) {
+
+            if (
+                event.key === "Escape" &&
+                donationModal.classList.contains("active")
+            ) {
+
+                closeDonateModal();
+
+            }
+
+        }
+    );
+
+
+
+    /* =====================================================
+       DONATION AMOUNTS
+       ===================================================== */
+
+    amountButtons.forEach(
+        function (button) {
+
+            button.addEventListener(
+                "click",
+                function () {
+
+                    amountButtons.forEach(
+                        function (item) {
+
+                            item.classList.remove(
+                                "selected"
+                            );
+
+                        }
+                    );
+
+
+                    button.classList.add(
+                        "selected"
+                    );
+
+
+                    customAmount.value =
+                        button.dataset.amount;
+
+
+                    donationError.style.display =
+                        "none";
+
+                }
+            );
+
+        }
+    );
+
+
+    /* Custom amount */
+
+    customAmount.addEventListener(
+        "input",
+        function () {
+
+            amountButtons.forEach(
+                function (button) {
+
+                    button.classList.remove(
+                        "selected"
+                    );
+
+                }
+            );
+
+
+            donationError.style.display =
+                "none";
+
+        }
+    );
+
+
+
+    /* =====================================================
+       PAY NOW
+       ===================================================== */
+
+    document
+        .getElementById("payNow")
+        .addEventListener(
+            "click",
+            function () {
+
+
+                const amount =
+                    parseFloat(
+                        customAmount.value
+                    );
+
+
+                if (
+                    !Number.isFinite(amount) ||
+                    amount <= 0
+                ) {
+
+                    donationError.style.display =
+                        "block";
+
+                    return;
+
+                }
+
+
+                /*
+                   UPI Deep Link
+
+                   This attempts to open the
+                   device's installed UPI payment app.
+                */
+
+                const upiUrl =
+                    "upi://pay?" +
+                    "pa=" +
+                    encodeURIComponent(INTERNAL_UPI) +
+                    "&pn=" +
+                    encodeURIComponent("StudySphere") +
+                    "&am=" +
+                    encodeURIComponent(amount.toFixed(2)) +
+                    "&cu=INR";
+
+
+                window.location.href =
+                    upiUrl;
+
+            }
+        );
+
+
+
+    /* =====================================================
+       SUBJECT CARDS
+       ===================================================== */
+
+    document
+        .querySelectorAll(".subject-card")
+        .forEach(
+            function (card) {
+
+                card.addEventListener(
+                    "click",
+                    function () {
+
+                        /*
+                           Future architecture:
+
+                           data-subject-id="HIS"
+                           data-subject-id="GEO"
+                           data-subject-id="POL"
+                           etc.
+
+                           Later JS/data file can use
+                           these IDs to open:
+
+                           Subject
+                              ↓
+                           Chapters
+                              ↓
+                           Topics
+                              ↓
+                           Notes
+                              ↓
+                           Practice Quiz
+                              ↓
+                           Test
+                        */
+
+                        const subjectId =
+                            card.dataset.subjectId;
+
+                        console.log(
+                            "Selected Subject:",
+                            subjectId
+                        );
+
+
+                        /*
+                           Content will be connected
+                           in the next development stage.
+                        */
+
+                    }
+                );
+
+            }
+        );
+
+
+});
+
+</script>
+
 </body>
 </html>
