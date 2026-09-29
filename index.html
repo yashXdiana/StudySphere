@@ -2,1787 +2,792 @@
 <html lang="mr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>StudySphere | MPSC Group B & C MCQ Practice</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudySphere - MPSC Group C Preparation</title>
+    <meta name="description" content="StudySphere: MPSC गट क पूर्व आणि मुख्य परीक्षेच्या तयारीसाठी मोफत अभ्यास, नोट्स, सराव आणि PYQ विश्लेषण.">
     
-    <!-- Fonts: Noto Sans & Noto Sans Devanagari -->
+    <!-- Google Fonts: Inter (English) & Mukta (Marathi) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700&family=Noto+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Mukta:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
-    <!-- Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
     <style>
+        /* --- CSS Variables & Theming --- */
         :root {
-            --bg-color: #f4f6f8;
-            --surface-color: #ffffff;
-            --surface-hover: #f8fafc;
-            --text-primary: #1a1e23;
-            --text-secondary: #4a5568;
+            --bg-primary: #f8fafc;
+            --bg-secondary: #ffffff;
+            --bg-alt: #f1f5f9;
+            --text-primary: #0f172a;
+            --text-secondary: #475569;
+            --accent-primary: #2563eb;
+            --accent-hover: #1d4ed8;
+            --accent-light: #e0e7ff;
             --border-color: #e2e8f0;
-            --primary-color: #2563eb;
-            --primary-hover: #1d4ed8;
-            --header-bg: #ffffff;
-            --footer-bg: #1e293b;
-            --footer-text: #f8fafc;
-            --card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-            --base-font-size: 16px;
             
-            --q-unvisited: #cbd5e1;
-            --q-visited: #ef4444; 
-            --q-answered: #10b981; 
-            --q-review: #8b5cf6; 
-            --q-text-light: #ffffff;
-            --q-text-dark: #1e293b;
+            --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+            --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+            --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+            
+            --font-en: 'Inter', sans-serif;
+            --font-mr: 'Mukta', sans-serif;
+            
+            --header-height: 70px;
+            --container-width: 1200px;
+            
+            --radius-md: 12px;
+            --radius-lg: 24px;
+            
+            --transition: 0.3s ease;
         }
 
-        [data-theme="dark"] {
-            --bg-color: #0f172a;
-            --surface-color: #1e293b;
-            --surface-hover: #334155;
+        body.dark-theme {
+            --bg-primary: #0f172a;
+            --bg-secondary: #1e293b;
+            --bg-alt: #020617;
             --text-primary: #f8fafc;
-            --text-secondary: #94a3b8;
+            --text-secondary: #cbd5e1;
+            --accent-primary: #3b82f6;
+            --accent-hover: #60a5fa;
+            --accent-light: #1e3a8a;
             --border-color: #334155;
-            --primary-color: #3b82f6;
-            --primary-hover: #60a5fa;
-            --header-bg: #1e293b;
-            --footer-bg: #0b1120;
-            --footer-text: #f8fafc;
-            --card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
-            --q-unvisited: #475569;
+            --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.3);
+            --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.4);
         }
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Noto Sans', 'Noto Sans Devanagari', sans-serif;
-        }
-
-        html, body {
-            width: 100%;
-            max-width: 100vw;
-            overflow-x: hidden;
-            font-size: var(--base-font-size);
-            scroll-behavior: smooth;
-        }
-
+        /* --- Base & Reset --- */
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; font-size: 16px; }
         body {
-            background-color: var(--bg-color);
+            font-family: var(--font-mr);
+            background-color: var(--bg-primary);
             color: var(--text-primary);
-            transition: background-color 0.3s, color 0.3s;
             line-height: 1.6;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-
-        #utility-bar {
-            background-color: var(--primary-color);
-            color: #ffffff;
-            padding: 0.25rem 1rem;
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
-            gap: 1rem;
-            font-size: 0.875rem;
-            width: 100%;
-        }
-
-        .utility-btn {
-            background: none;
-            border: none;
-            color: #ffffff;
-            cursor: pointer;
-            font-weight: 600;
-            padding: 0.25rem 0.5rem;
-            border-radius: 4px;
-            transition: background 0.2s;
-            display: flex;
-            align-items: center;
-            gap: 0.25rem;
-        }
-
-        .utility-btn:hover { background: rgba(255,255,255,0.2); }
-
-        header {
-            background-color: var(--header-bg);
-            border-bottom: 1px solid var(--border-color);
-            padding: 1rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-            width: 100%;
-        }
-
-        .logo-container { display: flex; align-items: center; gap: 1rem; cursor: pointer; }
-        .logo-icon { font-size: 2rem; color: var(--primary-color); }
-        .brand-text h1 { font-size: 1.5rem; font-weight: 700; line-height: 1.2; color: var(--text-primary); }
-        .brand-text p { font-size: 0.8rem; color: var(--text-secondary); font-weight: 500; }
-
-        .menu-toggle {
-            background: none;
-            border: none;
-            font-size: 1.5rem;
-            color: var(--text-primary);
-            cursor: pointer;
-            padding: 0.5rem;
-        }
-
-        #sidebar {
-            position: fixed;
-            top: 0; left: -100%;
-            width: 280px; max-width: 80%; height: 100vh;
-            background-color: var(--surface-color);
-            box-shadow: 2px 0 8px rgba(0,0,0,0.2);
-            z-index: 1000;
-            transition: left 0.3s ease-in-out;
-            display: flex; flex-direction: column;
-        }
-
-        #sidebar.open { left: 0; }
-        .sidebar-header { padding: 1.5rem 1rem; border-bottom: 1px solid var(--border-color); display: flex; justify-content: space-between; align-items: center; }
-        .close-menu { background: none; border: none; font-size: 1.5rem; color: var(--text-primary); cursor: pointer; }
-        .sidebar-nav { padding: 1rem 0; flex-grow: 1; overflow-y: auto; }
-        .sidebar-nav a {
-            display: block; padding: 1rem 1.5rem; color: var(--text-primary);
-            text-decoration: none; font-weight: 500; border-left: 4px solid transparent;
-            transition: background 0.2s, border-color 0.2s;
-        }
-        .sidebar-nav a:hover { background-color: rgba(0,0,0,0.05); border-left-color: var(--primary-color); }
-        [data-theme="dark"] .sidebar-nav a:hover { background-color: rgba(255,255,255,0.05); }
-
-        .sidebar-overlay {
-            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-            background: rgba(0,0,0,0.5); z-index: 999;
-            display: none; opacity: 0; transition: opacity 0.3s;
-        }
-        .sidebar-overlay.active { display: block; opacity: 1; }
-
-        main {
-            flex-grow: 1; padding: 2rem 1rem; max-width: 1200px; margin: 0 auto; width: 100%;
-        }
-
-        .view { display: none; animation: fadeIn 0.3s ease; width: 100%; }
-        .view.active { display: block; }
-        @keyframes fadeIn { from { opacity: 0; transform: translateY(5px); } to { opacity: 1; transform: translateY(0); } }
-
-        .intro-box { background-color: var(--surface-color); border: 1px solid var(--border-color); border-left: 5px solid var(--primary-color); padding: 1.5rem; border-radius: 8px; margin-bottom: 2rem; box-shadow: var(--card-shadow); }
-        .intro-box p { color: var(--text-secondary); font-size: 1.1rem; }
-        .section-title { margin-bottom: 1rem; font-size: 1.25rem; color: var(--text-primary); border-bottom: 2px solid var(--border-color); padding-bottom: 0.5rem; margin-top: 2rem; }
-        
-        .subjects-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 1.25rem; margin-bottom: 2rem; width: 100%; }
-        .subject-card { background-color: var(--surface-color); border: 1px solid var(--border-color); border-radius: 8px; padding: 1.5rem; cursor: pointer; box-shadow: var(--card-shadow); transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s; display: flex; flex-direction: column; justify-content: space-between; position: relative; width: 100%; }
-        .subject-card:hover { transform: translateY(-3px); box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); border-color: var(--primary-color); }
-        .subject-badge { position: absolute; top: 1rem; right: 1rem; font-size: 0.75rem; font-weight: 600; padding: 0.2rem 0.5rem; border-radius: 4px; }
-        .badge-common { background-color: rgba(16, 185, 129, 0.1); color: #10b981; border: 1px solid rgba(16, 185, 129, 0.2); }
-        .badge-mains { background-color: rgba(245, 158, 11, 0.1); color: #d97706; border: 1px solid rgba(245, 158, 11, 0.2); }
-        .subject-info h3 { font-size: 1.2rem; color: var(--text-primary); margin-bottom: 0.25rem; margin-top: 1.5rem; font-family: 'Noto Sans Devanagari', sans-serif; word-break: break-word; }
-        .subject-info span { font-size: 0.9rem; color: var(--text-secondary); word-break: break-word; }
-        .subject-footer { margin-top: 1.5rem; display: flex; justify-content: flex-end; }
-        .subject-arrow { color: var(--primary-color); font-size: 1.25rem; }
-
-        .back-header { display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem; flex-wrap: wrap; }
-        .btn-back { background: none; border: 1px solid var(--border-color); color: var(--text-primary); padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: 500; display: flex; align-items: center; gap: 0.5rem; transition: all 0.2s; }
-        .btn-back:hover { background-color: var(--surface-hover); border-color: var(--primary-color); }
-        .view-header h2 { font-size: 1.5rem; color: var(--text-primary); font-family: 'Noto Sans Devanagari', sans-serif; word-break: break-word; }
-        .view-header p { color: var(--text-secondary); font-size: 0.95rem; word-break: break-word; }
-
-        .chapter-container { display: flex; flex-direction: column; gap: 1rem; margin-bottom: 2rem; width: 100%; }
-        .chapter-card { background-color: var(--surface-color); border: 1px solid var(--border-color); border-radius: 8px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.05); width: 100%; }
-        .chapter-header { padding: 1.25rem; display: flex; justify-content: space-between; align-items: center; cursor: pointer; background-color: var(--surface-color); transition: background-color 0.2s; gap: 1rem; }
-        .chapter-header:hover { background-color: var(--surface-hover); }
-        .chapter-title-group { display: flex; align-items: center; gap: 1rem; min-width: 0; }
-        .chapter-number { background-color: rgba(37, 99, 235, 0.1); color: var(--primary-color); font-weight: 700; width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; border-radius: 6px; font-size: 0.9rem; flex-shrink: 0; }
-        .chapter-names { min-width: 0; }
-        .chapter-names h4 { font-size: 1.05rem; color: var(--text-primary); font-family: 'Noto Sans Devanagari', sans-serif; word-break: break-word; }
-        .chapter-names span { font-size: 0.85rem; color: var(--text-secondary); word-break: break-word; }
-        .chapter-toggle-icon { color: var(--text-secondary); transition: transform 0.3s; flex-shrink: 0; }
-        .chapter-card.open .chapter-toggle-icon { transform: rotate(180deg); }
-        .topic-list { display: none; border-top: 1px solid var(--border-color); background-color: var(--bg-color); padding: 0.5rem 0; width: 100%; }
-        .chapter-card.open .topic-list { display: block; animation: fadeIn 0.3s ease; }
-        .topic-item { padding: 0.75rem 1.25rem 0.75rem 2rem; display: flex; justify-content: space-between; align-items: center; cursor: pointer; transition: background-color 0.2s; border-bottom: 1px solid rgba(0,0,0,0.02); gap: 1rem; }
-        [data-theme="dark"] .topic-item { border-bottom: 1px solid rgba(255,255,255,0.02); }
-        .topic-item:last-child { border-bottom: none; }
-        .topic-item:hover { background-color: rgba(37, 99, 235, 0.05); }
-        .topic-info { min-width: 0; }
-        .topic-info h5 { font-size: 0.95rem; color: var(--text-primary); font-family: 'Noto Sans Devanagari', sans-serif; font-weight: 500; word-break: break-word; }
-        .topic-info span { font-size: 0.8rem; color: var(--text-secondary); word-break: break-word; }
-        .topic-arrow { color: var(--text-secondary); font-size: 0.9rem; flex-shrink: 0; }
-
-        .quiz-card { background-color: var(--surface-color); border: 1px solid var(--border-color); border-radius: 8px; padding: 1.5rem; margin-bottom: 1rem; box-shadow: var(--card-shadow); border-left: 4px solid var(--primary-color); width: 100%; }
-        .quiz-card-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem; }
-        .quiz-number { font-weight: 700; color: var(--primary-color); font-size: 0.9rem; }
-        .quiz-badge { font-size: 0.75rem; font-weight: 600; padding: 0.2rem 0.5rem; border-radius: 4px; text-transform: uppercase; }
-        .badge-practice { background: rgba(16, 185, 129, 0.1); color: #10b981; border: 1px solid rgba(16,185,129,0.2); }
-        .badge-test { background: rgba(245, 158, 11, 0.1); color: #d97706; border: 1px solid rgba(245,158,11,0.2); }
-        .quiz-titles h3 { font-size: 1.15rem; color: var(--text-primary); margin-bottom: 0.2rem; font-family: 'Noto Sans Devanagari', sans-serif; word-break: break-word; }
-        .quiz-titles p { font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 0.75rem; word-break: break-word; }
-        .quiz-desc { font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 1rem; word-break: break-word; }
-        .quiz-meta { display: flex; flex-wrap: wrap; gap: 1rem; font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.25rem; }
-        .meta-item { display: flex; align-items: center; gap: 0.3rem; }
-        .no-quiz-card { background: var(--surface-color); border: 1px solid var(--border-color); border-radius: 8px; padding: 3rem 1.5rem; text-align: center; color: var(--text-secondary); width: 100%; }
-
-        .breadcrumb { font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: center; width: 100%; }
-        .breadcrumb a { color: var(--primary-color); font-weight: 500; text-decoration: none; cursor: pointer; }
-        .breadcrumb a:hover { text-decoration: underline; }
-        .breadcrumb span.separator { color: var(--text-secondary); font-size: 0.75rem; }
-        .breadcrumb span.current { color: var(--text-secondary); }
-
-        /* STRICT FULL-SCREEN EXAM LAYOUT */
-        #view-quiz {
-            position: fixed;
-            top: 0; left: 0; width: 100vw; height: 100vh;
-            max-width: 100vw; max-height: 100vh;
-            background-color: var(--bg-color);
-            z-index: 9999;
-            display: none;
-            flex-direction: column;
-            overflow: hidden;
-            box-sizing: border-box;
-        }
-        #view-quiz.active { display: flex; }
-
-        .anti-cheat-active {
-            user-select: none;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-        }
-
-        .exam-screen-layout {
-            display: grid;
-            grid-template-columns: 1fr 300px;
-            grid-template-rows: 55px 1fr 65px;
-            height: 100vh;
-            width: 100vw;
-            max-width: 100vw;
-            background-color: var(--bg-color);
-            overflow: hidden;
-            box-sizing: border-box;
-        }
-        @media(max-width: 850px) {
-            .exam-screen-layout {
-                grid-template-columns: 100%;
-                grid-template-rows: 50px 1fr 60px;
-            }
-        }
-
-        .exam-top-bar {
-            grid-column: 1 / -1;
-            background-color: var(--surface-color);
-            border-bottom: 1px solid var(--border-color);
-            padding: 0 1rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            width: 100%;
-            height: 100%;
-            box-sizing: border-box;
-        }
-
-        .exam-main-panel {
-            grid-column: 1 / 2;
-            grid-row: 2 / 3;
-            overflow-y: auto;
+            transition: background-color var(--transition), color var(--transition);
             overflow-x: hidden;
-            padding: 1rem;
-            display: flex;
-            flex-direction: column;
-            background-color: var(--surface-color);
-            margin: 0.5rem;
-            border-radius: 8px;
-            border: 1px solid var(--border-color);
-            box-shadow: var(--card-shadow);
-            min-width: 0;
-            box-sizing: border-box;
         }
-        @media(max-width: 850px) {
-            .exam-main-panel { grid-column: 1 / -1; grid-row: 2 / 3; margin: 0.25rem; }
-        }
-
-        .exam-sidebar-panel {
-            grid-column: 2 / 3;
-            grid-row: 2 / 3;
-            background-color: var(--surface-color);
-            border-left: 1px solid var(--border-color);
-            padding: 1rem;
-            overflow-y: auto;
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-            background: var(--surface-color);
-            box-sizing: border-box;
-        }
-        @media(max-width: 850px) {
-            .exam-sidebar-panel {
-                position: fixed;
-                top: 0; right: -100%; width: 280px; max-width: 85vw; height: 100vh;
-                z-index: 10001;
-                box-shadow: -4px 0 15px rgba(0,0,0,0.3);
-                transition: right 0.3s ease;
-                border-left: 1px solid var(--border-color);
-                display: flex;
-                background-color: var(--surface-color);
-            }
-            .exam-sidebar-panel.mobile-open { right: 0; }
-        }
-
-        .exam-footer-controls {
-            grid-column: 1 / -1;
-            grid-row: 3 / 4;
-            background-color: var(--surface-color);
-            border-top: 1px solid var(--border-color);
-            padding: 0.5rem 1rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 0.5rem;
-            flex-wrap: nowrap;
-            overflow-x: auto;
-            width: 100%;
-            height: 100%;
-            box-sizing: border-box;
-        }
-
-        .q-number-badge {
-            background: var(--primary-color);
-            color: white;
-            padding: 0.2rem 0.6rem;
-            border-radius: 999px;
-            font-size: 0.85rem;
-            font-weight: 600;
-            white-space: nowrap;
-        }
-        .q-timer {
-            display: flex; align-items: center; gap: 0.4rem;
-            font-size: 0.95rem; font-weight: 700; color: #ef4444;
-            background: rgba(239, 68, 68, 0.1);
-            padding: 0.2rem 0.5rem; border-radius: 6px;
-            border: 1px solid rgba(239,68,68,0.2);
-            white-space: nowrap;
-        }
-        [data-theme="dark"] .q-timer { color: #fca5a5; }
-
-        .question-box { margin-bottom: 1rem; width: 100%; }
-        .q-text-mr { font-size: 1.1rem; font-weight: 600; color: var(--text-primary); margin-bottom: 0.4rem; font-family: 'Noto Sans Devanagari', sans-serif; word-break: break-word; }
-        .q-text-en { font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 1rem; word-break: break-word; }
-
-        .options-list { display: flex; flex-direction: column; gap: 0.6rem; margin-bottom: 1rem; width: 100%; }
-        .option-label {
-            display: flex; align-items: center; gap: 0.75rem;
-            padding: 0.75rem; border: 1px solid var(--border-color);
-            border-radius: 8px; cursor: pointer; transition: all 0.2s;
-            background: var(--surface-color);
-            width: 100%;
-            box-sizing: border-box;
-        }
-        .option-label:hover { background-color: rgba(37, 99, 235, 0.05); border-color: var(--primary-color); }
-        .option-label.selected { background-color: rgba(37, 99, 235, 0.1); border-color: var(--primary-color); box-shadow: 0 0 0 1px var(--primary-color); }
         
-        .opt-char { font-weight: 700; width: 26px; height: 26px; display: flex; align-items: center; justify-content: center; background: var(--surface-hover); border-radius: 50%; color: var(--text-primary); flex-shrink: 0; }
-        .option-label.selected .opt-char { background: var(--primary-color); color: white; }
-        .opt-texts { display: flex; flex-direction: column; min-width: 0; }
-        .opt-mr { font-weight: 500; font-size: 0.95rem; font-family: 'Noto Sans Devanagari', sans-serif; color: var(--text-primary); word-break: break-word; }
-        .opt-en { font-size: 0.8rem; color: var(--text-secondary); word-break: break-word; }
+        h1, h2, h3, .font-en { font-family: var(--font-en); }
+        h1:lang(mr), h2:lang(mr), h3:lang(mr) { font-family: var(--font-mr); }
+        a { text-decoration: none; color: inherit; }
+        ul { list-style: none; }
+        button { border: none; background: none; cursor: pointer; font-family: inherit; }
+        :focus-visible { outline: 2px solid var(--accent-primary); outline-offset: 2px; }
 
-        .report-link { font-size: 0.85rem; color: #ef4444; cursor: pointer; display: inline-flex; align-items: center; gap: 0.25rem; transition: color 0.2s; margin-top: auto; padding-top: 0.5rem; width: fit-content; }
-        .report-link:hover { text-decoration: underline; color: #dc2626; }
-
-        .ctrl-group { display: flex; gap: 0.4rem; align-items: center; flex-shrink: 0; }
-        .btn-outline { background: transparent; border: 1px solid var(--border-color); color: var(--text-primary); padding: 0.4rem 0.7rem; border-radius: 6px; cursor: pointer; font-weight: 500; font-size: 0.85rem; white-space: nowrap; }
-        .btn-outline:hover { background: var(--surface-hover); border-color: var(--text-secondary); }
+        /* --- Layout --- */
+        .container { max-width: var(--container-width); margin: 0 auto; padding: 0 1.5rem; }
+        .section { padding: 4rem 0; }
+        .bg-alt { background-color: var(--bg-alt); }
+        .text-center { text-align: center; }
         
-        .btn-review { border-color: #8b5cf6; color: #8b5cf6; }
-        .btn-review:hover { background: #8b5cf6; color: white; }
-        
-        .btn-save { background: var(--primary-color); color: white; padding: 0.4rem 0.85rem; border-radius: 6px; cursor: pointer; font-weight: 600; border: none; font-size: 0.85rem; white-space: nowrap; }
-        .btn-save:hover { background: var(--primary-hover); }
-
-        .btn-submit-q { background: #10b981; color: white; padding: 0.4rem 0.85rem; border-radius: 6px; cursor: pointer; font-weight: 600; border: none; font-size: 0.85rem; white-space: nowrap; }
-        .btn-submit-q:hover { background: #059669; }
-
-        .palette-header { font-weight: 600; font-size: 0.95rem; color: var(--text-primary); text-align: center; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem; display: flex; justify-content: space-between; align-items: center; }
-        .palette-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 0.4rem; max-height: 220px; overflow-y: auto; padding: 2px; }
-        .p-btn {
-            aspect-ratio: 1; border: none; border-radius: 4px; font-weight: 600; font-size: 0.85rem; cursor: pointer;
-            display: flex; align-items: center; justify-content: center; transition: filter 0.2s; position: relative;
+        /* --- Header & Nav --- */
+        .header {
+            background-color: var(--bg-secondary);
+            border-bottom: 1px solid var(--border-color);
+            position: fixed; top: 0; width: 100%; height: var(--header-height);
+            z-index: 1000; display: flex; align-items: center;
+            transition: background-color var(--transition);
         }
-        .p-btn:hover { filter: brightness(0.9); }
+        .header-inner { display: flex; justify-content: space-between; align-items: center; width: 100%; }
+        .logo { font-size: 1.5rem; font-weight: 700; color: var(--accent-primary); display: flex; align-items: center; gap: 0.5rem; font-family: var(--font-en); }
         
-        .s-unvisited { background-color: var(--q-unvisited); color: var(--q-text-dark); }
-        .s-visited { background-color: var(--q-visited); color: var(--q-text-light); }
-        .s-answered { background-color: var(--q-answered); color: var(--q-text-light); }
-        .s-review { background-color: var(--q-review); color: var(--q-text-light); }
-        .s-review-ans { background-color: var(--q-review); color: var(--q-text-light); }
-        .s-review-ans::after { content: ''; position: absolute; bottom: 0; right: 0; width: 0; height: 0; border-style: solid; border-width: 0 0 8px 8px; border-color: transparent transparent #10b981 transparent; }
-
-        .palette-legend { font-size: 0.7rem; color: var(--text-secondary); display: flex; flex-direction: column; gap: 0.25rem; margin-top: auto; }
-        .l-item { display: flex; align-items: center; gap: 0.4rem; }
-        .l-box { width: 10px; height: 10px; border-radius: 2px; flex-shrink: 0; }
-
-        .scorecard { background: var(--surface-color); border: 1px solid var(--border-color); border-radius: 8px; padding: 1.5rem; margin-bottom: 2rem; text-align: center; box-shadow: var(--card-shadow); border-top: 4px solid var(--primary-color); width: 100%; }
-        .scorecard h2 { color: var(--text-primary); margin-bottom: 0.5rem; font-family: 'Noto Sans Devanagari', sans-serif; }
-        .scorecard-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(110px, 1fr)); gap: 0.75rem; margin-top: 1.5rem; }
-        .stat-box { background: var(--surface-hover); padding: 0.75rem; border-radius: 6px; border: 1px solid var(--border-color); }
-        .stat-value { font-size: 1.25rem; font-weight: 700; color: var(--primary-color); word-break: break-all; }
-        .stat-label { font-size: 0.75rem; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 0.05em; }
-        .stat-box.highlight { background: rgba(16,185,129,0.1); border-color: rgba(16,185,129,0.3); }
-        .stat-box.highlight .stat-value { color: #10b981; }
-
-        .qa-card { background: var(--surface-color); border: 1px solid var(--border-color); border-radius: 8px; margin-bottom: 1.5rem; padding: 1.25rem; box-shadow: 0 1px 3px rgba(0,0,0,0.05); width: 100%; }
-        .qa-header { display: flex; justify-content: space-between; margin-bottom: 1rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem; gap: 0.5rem; flex-wrap: wrap; }
-        .qa-num { font-weight: 700; color: var(--text-primary); }
-        .qa-res { font-weight: 600; padding: 0.2rem 0.5rem; border-radius: 4px; font-size: 0.8rem; }
-        .res-correct { background: rgba(16, 185, 129, 0.1); color: #10b981; }
-        .res-wrong { background: rgba(239, 68, 68, 0.1); color: #ef4444; }
-        .res-skipped { background: rgba(148, 163, 184, 0.1); color: #64748b; }
+        .nav-menu { display: flex; gap: 1.5rem; align-items: center; }
+        .nav-link { font-family: var(--font-en); font-weight: 500; color: var(--text-secondary); transition: color 0.2s; font-size: 0.95rem; }
+        .nav-link:hover, .nav-link.active { color: var(--accent-primary); }
         
-        .qa-q { font-size: 1.05rem; color: var(--text-primary); font-weight: 500; margin-bottom: 1rem; font-family: 'Noto Sans Devanagari', sans-serif; word-break: break-word; }
-        .ans-block { display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; margin-bottom: 1rem; font-size: 0.9rem; width: 100%; }
-        @media(max-width: 600px) { .ans-block { grid-template-columns: 1fr; } }
-        .ans-box { padding: 0.65rem; border-radius: 6px; border: 1px solid var(--border-color); background: var(--bg-color); min-width: 0; }
-        .ans-box-title { font-size: 0.75rem; color: var(--text-secondary); margin-bottom: 0.2rem; }
-        .ans-text { color: var(--text-primary); font-weight: 500; word-break: break-word; }
-        
-        .qa-exp { background: rgba(37, 99, 235, 0.05); border-left: 4px solid var(--primary-color); padding: 0.85rem; border-radius: 0 6px 6px 0; margin-top: 1rem; width: 100%; }
-        .qa-exp h4 { font-size: 0.85rem; color: var(--primary-color); margin-bottom: 0.4rem; }
-        .qa-exp p { font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 0.4rem; font-family: 'Noto Sans Devanagari', sans-serif; word-break: break-word; }
+        .header-actions { display: flex; gap: 1rem; align-items: center; }
+        .icon-btn { font-size: 1.5rem; color: var(--text-secondary); padding: 0.5rem; border-radius: 50%; display: flex; transition: 0.2s; }
+        .icon-btn:hover { background-color: var(--bg-alt); color: var(--accent-primary); }
+        .mobile-toggle { display: none; }
 
-        footer { background-color: var(--footer-bg); color: var(--footer-text); padding: 3rem 1rem 1rem; margin-top: auto; width: 100%; }
-        .footer-content { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 2rem; margin-bottom: 2rem; width: 100%; }
-        .footer-brand h2 { font-size: 1.5rem; margin-bottom: 0.5rem; color: #ffffff; }
-        .footer-brand p { color: #cbd5e1; font-size: 0.9rem; }
-        .footer-links h3 { font-size: 1.1rem; margin-bottom: 1rem; color: #ffffff; }
-        .footer-links ul { list-style: none; }
-        .footer-links li { margin-bottom: 0.5rem; }
-        .footer-links a { color: #cbd5e1; text-decoration: none; transition: color 0.2s; }
-        .footer-links a:hover { color: var(--primary-hover); }
-        .footer-actions { display: flex; flex-direction: column; gap: 1rem; }
-        .btn { display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; padding: 0.65rem 1.25rem; border-radius: 6px; font-weight: 600; text-decoration: none; cursor: pointer; border: none; transition: background-color 0.2s; font-size: 0.95rem; }
+        /* --- UI Elements --- */
+        .btn {
+            display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem;
+            padding: 0.75rem 1.5rem; border-radius: 8px; font-weight: 600; font-size: 1rem; transition: 0.2s;
+        }
+        .btn-primary { background-color: var(--accent-primary); color: #fff; }
+        .btn-primary:hover { background-color: var(--accent-hover); transform: translateY(-2px); box-shadow: var(--shadow-md); }
+        .btn-outline { border: 2px solid var(--accent-primary); color: var(--accent-primary); }
+        .btn-outline:hover { background-color: var(--accent-light); transform: translateY(-2px); }
         .btn-telegram { background-color: #0088cc; color: white; }
-        .btn-telegram:hover { background-color: #0077b5; }
-        .btn-donate { background-color: #10b981; color: white; }
-        .btn-donate:hover { background-color: #059669; }
-        .footer-bottom { text-align: center; padding-top: 1.5rem; border-top: 1px solid rgba(255,255,255,0.1); color: #94a3b8; font-size: 0.85rem; }
+        .btn-telegram:hover { background-color: #0077b5; transform: translateY(-2px); }
+        
+        .card {
+            background-color: var(--bg-secondary); border-radius: var(--radius-md);
+            padding: 1.5rem; box-shadow: var(--shadow-sm); border: 1px solid var(--border-color);
+            transition: var(--transition);
+        }
+        .card:hover { box-shadow: var(--shadow-md); border-color: var(--accent-primary); transform: translateY(-3px); }
+        .badge { display: inline-block; padding: 0.25rem 0.75rem; border-radius: 12px; font-size: 0.8rem; font-weight: 600; background: var(--accent-light); color: var(--accent-primary); margin-bottom: 0.5rem;}
 
-        .modal-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.6); backdrop-filter: blur(2px); display: none; justify-content: center; align-items: center; z-index: 20000; opacity: 0; transition: opacity 0.3s; padding: 1rem; box-sizing: border-box; }
-        .modal-overlay.active { display: flex; opacity: 1; }
-        .modal-content { background-color: var(--surface-color); border-radius: 8px; width: 100%; max-width: 550px; max-height: 90vh; overflow-y: auto; box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1); transform: translateY(20px); transition: transform 0.3s; box-sizing: border-box; }
-        .modal-overlay.active .modal-content { transform: translateY(0); }
-        .modal-header { padding: 1.15rem 1.25rem; border-bottom: 1px solid var(--border-color); display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; background-color: var(--surface-color); z-index: 10; }
-        .modal-header h2 { font-size: 1.15rem; color: var(--text-primary); word-break: break-word; }
-        .modal-body { padding: 1.25rem; color: var(--text-secondary); word-break: break-word; }
+        /* --- View Management (SPA) --- */
+        main { margin-top: var(--header-height); min-height: calc(100vh - var(--header-height) - 150px); }
+        .view { display: none; animation: fadeIn 0.3s ease; }
+        .view.active { display: block; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
 
-        .form-control { width: 100%; padding: 0.65rem; border: 1px solid var(--border-color); border-radius: 6px; background: var(--bg-color); color: var(--text-primary); font-size: 0.95rem; margin-bottom: 1rem; box-sizing: border-box; }
-        .form-control:focus { outline: none; border-color: var(--primary-color); }
-        select.form-control { cursor: pointer; }
-        textarea.form-control { resize: vertical; min-height: 90px; }
+        /* --- Home: Hero --- */
+        .hero { display: flex; align-items: center; padding: 5rem 0; position: relative; overflow: hidden; }
+        .hero::before {
+            content: ''; position: absolute; top: -20%; right: -10%; width: 600px; height: 600px;
+            background: radial-gradient(circle, var(--accent-light) 0%, transparent 60%); z-index: -1;
+        }
+        .hero-title { font-size: 3.5rem; font-weight: 800; line-height: 1.2; margin-bottom: 0.5rem; color: var(--accent-primary); }
+        .hero-subtitle { font-size: 1.5rem; font-weight: 600; color: var(--text-secondary); margin-bottom: 1.5rem; }
+        .hero-desc { font-size: 1.125rem; max-width: 600px; margin-bottom: 2rem; }
+        .hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; }
+
+        /* --- Home: Grids --- */
+        .section-header { margin-bottom: 3rem; }
+        .section-title { font-size: 2rem; margin-bottom: 0.5rem; }
+        .section-desc { color: var(--text-secondary); font-size: 1.1rem; }
+        
+        .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
+        .grid-4 { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; }
+        
+        /* Journey Steps */
+        .journey-step { text-align: center; padding: 1.5rem; }
+        .journey-icon { font-size: 2.5rem; color: var(--accent-primary); margin-bottom: 1rem; }
+        
+        /* Cards styling inside grids */
+        .subject-card .card-icon { font-size: 2rem; color: var(--accent-primary); margin-bottom: 1rem; }
+        .subject-card h3 { font-size: 1.25rem; margin-bottom: 0.5rem; }
+        .subject-card p { color: var(--text-secondary); font-size: 0.95rem; }
+        
+        /* --- Text/Info Pages --- */
+        .content-box { max-width: 800px; margin: 0 auto; background: var(--bg-secondary); padding: 2.5rem; border-radius: var(--radius-md); border: 1px solid var(--border-color); }
+        .content-box p { margin-bottom: 1rem; font-size: 1.1rem; }
+        .content-box ul { margin-bottom: 1.5rem; padding-left: 1.5rem; }
+        .content-box li { margin-bottom: 0.5rem; font-size: 1.05rem; }
+        
+        /* --- Compact Contact --- */
+        .contact-compact { max-width: 450px; margin: 0 auto; text-align: center; padding: 2rem; }
+        .contact-compact i { font-size: 3rem; color: #0088cc; margin-bottom: 1rem; }
+
+        /* --- Footer --- */
+        .footer { background-color: var(--bg-secondary); border-top: 1px solid var(--border-color); padding: 3rem 0 1.5rem; margin-top: auto; }
+        .footer-content { display: flex; flex-direction: column; align-items: center; gap: 1.5rem; }
+        .footer-nav { display: flex; flex-wrap: wrap; justify-content: center; gap: 1.5rem; }
+        .footer-nav a { color: var(--text-secondary); font-weight: 500; font-family: var(--font-en); font-size: 0.9rem;}
+        .footer-nav a:hover { color: var(--accent-primary); }
+        .footer-buttons { display: flex; gap: 1rem; }
+        .footer-bottom { margin-top: 2rem; text-align: center; color: var(--text-secondary); font-size: 0.85rem; border-top: 1px solid var(--border-color); padding-top: 1.5rem; width: 100%; }
+
+        /* --- Modal (Donation) --- */
+        .modal-overlay {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0,0,0,0.6); z-index: 9999;
+            display: flex; align-items: center; justify-content: center;
+            opacity: 0; visibility: hidden; transition: 0.3s; padding: 1rem;
+        }
+        .modal-overlay.active { opacity: 1; visibility: visible; }
+        .modal {
+            background: var(--bg-secondary); width: 100%; max-width: 400px;
+            border-radius: var(--radius-md); padding: 2rem; position: relative;
+            transform: translateY(20px); transition: 0.3s; box-shadow: var(--shadow-lg); text-align: center;
+        }
+        .modal-overlay.active .modal { transform: translateY(0); }
+        .modal-close { position: absolute; top: 1rem; right: 1rem; font-size: 1.5rem; color: var(--text-secondary); transition: 0.2s; }
+        .modal-close:hover { color: var(--text-primary); }
+        
+        /* Mobile Donate UI */
+        .donate-amounts { display: flex; justify-content: center; gap: 0.5rem; margin: 1.5rem 0; }
+        .amt-btn { padding: 0.5rem 1rem; border: 1px solid var(--border-color); border-radius: 20px; background: var(--bg-alt); color: var(--text-primary); font-weight: 600; }
+        .amt-btn.selected, .amt-btn:hover { background: var(--accent-light); border-color: var(--accent-primary); color: var(--accent-primary); }
+        .custom-amt { margin-bottom: 1.5rem; text-align: left; }
+        .custom-amt label { display: block; font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 0.5rem; }
+        .custom-amt input { width: 100%; padding: 0.75rem; border: 1px solid var(--border-color); border-radius: 8px; background: var(--bg-primary); color: var(--text-primary); font-size: 1rem; }
+        .custom-amt input:focus { outline: none; border-color: var(--accent-primary); }
+        .error-msg { color: #dc2626; font-size: 0.85rem; margin-top: 0.5rem; display: none; }
+        
+        /* Desktop Donate UI */
+        .qr-box { background: #fff; padding: 1rem; border: 1px solid var(--border-color); border-radius: 8px; width: 200px; height: 200px; margin: 1.5rem auto; }
+        .qr-box svg { width: 100%; height: 100%; }
+
+        /* --- Responsive --- */
+        @media (max-width: 768px) {
+            .mobile-toggle { display: block; }
+            .nav-menu {
+                position: fixed; top: var(--header-height); left: 0; width: 100%;
+                background: var(--bg-secondary); border-bottom: 1px solid var(--border-color);
+                flex-direction: column; gap: 0; padding: 0;
+                clip-path: polygon(0 0, 100% 0, 100% 0, 0 0); transition: 0.3s ease-in-out;
+            }
+            .nav-menu.open { clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); }
+            .nav-menu li { width: 100%; text-align: center; }
+            .nav-link { display: block; padding: 1.25rem; border-bottom: 1px solid var(--border-color); font-size: 1.1rem; }
+            
+            .hero-title { font-size: 2.5rem; }
+            .hero-actions { flex-direction: column; width: 100%; }
+            .hero-actions .btn { width: 100%; }
+            .footer-buttons { flex-direction: column; width: 100%; max-width: 300px; }
+        }
     </style>
 </head>
-<body>
+<body class="light-theme">
 
-    <div id="utility-bar">
-        <span>Font Size:</span>
-        <button class="utility-btn" onclick="changeFontSize(-1)" aria-label="Decrease Font Size">A-</button>
-        <button class="utility-btn" onclick="resetFontSize()" aria-label="Reset Font Size">A</button>
-        <button class="utility-btn" onclick="changeFontSize(1)" aria-label="Increase Font Size">A+</button>
-        <div style="width: 1px; height: 16px; background: rgba(255,255,255,0.3); margin: 0 0.5rem;"></div>
-        <button class="utility-btn" onclick="toggleTheme()" id="theme-toggle" aria-label="Toggle Dark Mode">
-            <i class="fas fa-moon"></i> Theme
-        </button>
-    </div>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-inner">
+            <a href="#home" class="logo">
+                <i class="ph-fill ph-student"></i> StudySphere
+            </a>
+            
+            <nav>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                    <li><a href="#privacy" class="nav-link">Privacy Policy</a></li>
+                    <li><a href="#sitemap" class="nav-link">Site Map</a></li>
+                    <li><a href="#terms" class="nav-link">Terms & Conditions</a></li>
+                </ul>
+            </nav>
 
-    <header>
-        <div class="logo-container" onclick="navigateSPA('view-home', true)" role="button" tabindex="0">
-            <i class="fas fa-globe-asia logo-icon"></i>
-            <div class="brand-text">
-                <h1>StudySphere</h1>
-                <p>MPSC Group B & C Preparation</p>
+            <div class="header-actions">
+                <button class="icon-btn" id="theme-toggle" aria-label="Toggle Theme">
+                    <i class="ph ph-moon" id="theme-icon"></i>
+                </button>
+                <button class="icon-btn mobile-toggle" id="menu-toggle" aria-label="Toggle Menu">
+                    <i class="ph ph-list" id="menu-icon"></i>
+                </button>
             </div>
         </div>
-        <button class="menu-toggle" onclick="toggleSidebar()" aria-label="Open Menu">
-            <i class="fas fa-bars"></i>
-        </button>
     </header>
 
-    <nav id="sidebar" aria-label="Main Navigation">
-        <div class="sidebar-header">
-            <h2 style="font-size: 1.2rem;">Menu</h2>
-            <button class="close-menu" onclick="toggleSidebar()" aria-label="Close Menu"><i class="fas fa-times"></i></button>
-        </div>
-        <div class="sidebar-nav">
-            <a href="#" onclick="navigateSPA('view-home', true); toggleSidebar();"><i class="fas fa-home fa-fw"></i> Home</a>
-            <a href="#" onclick="openModal('about-modal'); toggleSidebar();"><i class="fas fa-info-circle fa-fw"></i> About Us</a>
-            <a href="#" onclick="openModal('contact-modal'); toggleSidebar();"><i class="fas fa-envelope fa-fw"></i> Contact</a>
-            <a href="#" onclick="openModal('sitemap-modal'); toggleSidebar();"><i class="fas fa-sitemap fa-fw"></i> Sitemap</a>
-            <a href="#" onclick="openModal('privacy-modal'); toggleSidebar();"><i class="fas fa-shield-alt fa-fw"></i> Privacy Policy</a>
-            <a href="#" onclick="openModal('terms-modal'); toggleSidebar();"><i class="fas fa-file-contract fa-fw"></i> Terms of Service</a>
-        </div>
-    </nav>
-    <div class="sidebar-overlay" onclick="toggleSidebar()"></div>
-
-    <main id="app-content">
-        <!-- HOME VIEW -->
-        <section id="view-home" class="view active">
-            <div class="intro-box">
-                <p>Welcome to StudySphere, an MCQ-based learning platform designed for <strong>MPSC Combined Group B & C</strong> preparation. Select a subject below, explore chapters and topics, and start practicing objectively designed tests.</p>
-            </div>
-            <h2 class="section-title">SECTION A: Prelims + Mains Common Subjects</h2>
-            <div id="common-subjects-grid" class="subjects-grid"></div>
-            <h2 class="section-title">SECTION B: Mains Subjects</h2>
-            <div id="mains-subjects-grid" class="subjects-grid"></div>
-        </section>
-
-        <!-- SUBJECT VIEW -->
-        <section id="view-subject" class="view"></section>
-
-        <!-- TOPIC VIEW -->
-        <section id="view-topic" class="view"></section>
-
-        <!-- QUIZ VIEW (FULL SCREEN) -->
-        <section id="view-quiz" class="view">
-            <div class="exam-screen-layout anti-cheat-active">
-                <div class="exam-top-bar">
-                    <div style="display:flex; align-items:center; gap:0.5rem; min-width:0;">
-                        <span class="q-number-badge" id="q-num-display">Q 1</span>
-                        <h3 id="exam-quiz-title" style="font-size:0.9rem; font-family:'Noto Sans Devanagari',sans-serif; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;">Quiz Title</h3>
+    <!-- Main Content (SPA Views) -->
+    <main>
+        <!-- ================= HOME VIEW ================= -->
+        <div id="view-home" class="view active">
+            
+            <!-- Hero -->
+            <section class="hero">
+                <div class="container text-center">
+                    <h1 class="hero-title">StudySphere</h1>
+                    <h2 class="hero-subtitle">MPSC Group C Prelims + Mains</h2>
+                    <p class="hero-desc mx-auto" style="margin: 0 auto 2rem;">
+                        MPSC गट क परीक्षेसाठी परीक्षाभिमुख अभ्याससाहित्य, रिव्हिजन, सराव प्रश्न आणि चाचण्या (Tests) एकाच ठिकाणी. तुमच्या यशाचा प्रवास इथून सुरू करा.
+                    </p>
+                    <div class="hero-actions" style="justify-content: center;">
+                        <a href="#subjects" class="btn btn-primary" onclick="document.getElementById('learning-journey').scrollIntoView();">अभ्यास सुरू करा <i class="ph-bold ph-arrow-right"></i></a>
+                        <a href="#guide" class="btn btn-outline" onclick="document.getElementById('study-guide').scrollIntoView();">मार्गदर्शन <i class="ph-bold ph-compass"></i></a>
                     </div>
-                    <div style="display:flex; align-items:center; gap:0.5rem; flex-shrink:0;">
-                        <button class="btn-save" style="padding:0.25rem 0.5rem; font-size:0.75rem;" onclick="toggleMobilePalette(true)"><i class="fas fa-th"></i> Palette</button>
-                        <div id="q-timer-display" class="q-timer" style="display: none">
-                            <i class="fas fa-stopwatch"></i> <span id="q-time-text">--:--</span>
+                </div>
+            </section>
+
+            <!-- Learning Journey -->
+            <section id="learning-journey" class="section bg-alt">
+                <div class="container">
+                    <div class="section-header text-center">
+                        <h2 class="section-title">तुमचा अभ्यासाचा प्रवास</h2>
+                        <p class="section-desc">यशस्वी तयारीसाठीची योग्य पद्धत</p>
+                    </div>
+                    <div class="grid-3">
+                        <div class="card journey-step">
+                            <i class="ph-duotone ph-list-magnifying-glass journey-icon"></i>
+                            <h3>1. Syllabus</h3>
+                            <p>अभ्यासक्रम आणि परीक्षेचे स्वरूप समजून घेणे.</p>
                         </div>
-                        <button class="btn-outline" style="padding:0.2rem 0.4rem; font-size:0.75rem; background:rgba(239,68,68,0.1); border-color:#ef4444; color:#ef4444;" onclick="openSubmitConfirmation()">Quit</button>
+                        <div class="card journey-step">
+                            <i class="ph-duotone ph-book-open-text journey-icon"></i>
+                            <h3>2. Learn</h3>
+                            <p>परीक्षाभिमुख नोट्स आणि संकल्पना स्पष्ट करणे.</p>
+                        </div>
+                        <div class="card journey-step">
+                            <i class="ph-duotone ph-arrows-clockwise journey-icon"></i>
+                            <h3>3. Revise</h3>
+                            <p>महत्त्वाच्या मुद्द्यांची वेळेवर उजळणी (Revision) करणे.</p>
+                        </div>
+                        <div class="card journey-step">
+                            <i class="ph-duotone ph-target journey-icon"></i>
+                            <h3>4. Practice</h3>
+                            <p>विषय व घटकानुसार वस्तुनिष्ठ प्रश्नांचा (MCQ) सराव.</p>
+                        </div>
+                        <div class="card journey-step">
+                            <i class="ph-duotone ph-exam journey-icon"></i>
+                            <h3>5. Test</h3>
+                            <p>परीक्षेच्या वातावरणात वेळ लावून चाचण्या सोडवणे.</p>
+                        </div>
+                        <div class="card journey-step">
+                            <i class="ph-duotone ph-chart-line-up journey-icon"></i>
+                            <h3>6. Analyse</h3>
+                            <p>चुकांचे विश्लेषण करून कमकुवत घटकांवर काम करणे.</p>
+                        </div>
                     </div>
                 </div>
-                
-                <div class="exam-main-panel">
-                    <div id="q-render-area" style="flex-grow:1; overflow-y:auto;"></div>
-                    <div class="report-link" onclick="openReportModal()">
-                        <i class="fas fa-flag"></i> Report This Question
-                    </div>
-                </div>
+            </section>
 
-                <div class="exam-sidebar-panel" id="exam-sidebar-palette">
-                    <div class="palette-header">
-                        <span>Question Palette</span>
-                        <button class="close-menu" style="font-size:1.2rem;" onclick="toggleMobilePalette(false)"><i class="fas fa-times"></i></button>
+            <!-- Subjects (Future Architecture Placeholders) -->
+            <section class="section">
+                <div class="container">
+                    <div class="section-header text-center">
+                        <h2 class="section-title">MPSC Group C Subjects</h2>
+                        <p class="section-desc">विषयानुसार अभ्याससाहित्य (भविष्यातील अपडेट)</p>
                     </div>
-                    <div class="palette-grid" id="exam-palette-grid"></div>
-                    <div class="palette-legend">
-                        <div class="l-item"><div class="l-box s-answered"></div> Answered</div>
-                        <div class="l-item"><div class="l-box s-visited"></div> Not Answered</div>
-                        <div class="l-item"><div class="l-box s-unvisited"></div> Not Visited</div>
-                        <div class="l-item"><div class="l-box s-review"></div> Marked for Review</div>
-                        <div class="l-item"><div class="l-box s-review-ans"></div> Answered & Marked</div>
+                    <div class="grid-4">
+                        <div class="card subject-card" data-subject-id="HIS">
+                            <i class="ph-duotone ph-scroll card-icon"></i>
+                            <h3 class="font-en">History</h3>
+                            <p>आधुनिक भारताचा व महाराष्ट्राचा इतिहास</p>
+                            <span class="badge mt-sm">लवकरच उपलब्ध</span>
+                        </div>
+                        <div class="card subject-card" data-subject-id="GEO">
+                            <i class="ph-duotone ph-globe-hemisphere-west card-icon"></i>
+                            <h3 class="font-en">Geography</h3>
+                            <p>महाराष्ट्राच्या भूगोलाच्या विशेष संदर्भासह</p>
+                            <span class="badge mt-sm">लवकरच उपलब्ध</span>
+                        </div>
+                        <div class="card subject-card" data-subject-id="ECO">
+                            <i class="ph-duotone ph-chart-line-up card-icon"></i>
+                            <h3 class="font-en">Economy</h3>
+                            <p>भारतीय अर्थव्यवस्था व शासकीय अर्थव्यवस्था</p>
+                            <span class="badge mt-sm">लवकरच उपलब्ध</span>
+                        </div>
+                        <div class="card subject-card" data-subject-id="POL">
+                            <i class="ph-duotone ph-bank card-icon"></i>
+                            <h3 class="font-en">Polity</h3>
+                            <p>भारतीय राज्यघटना व पंचायत राज</p>
+                            <span class="badge mt-sm">लवकरच उपलब्ध</span>
+                        </div>
+                        <div class="card subject-card" data-subject-id="SCI">
+                            <i class="ph-duotone ph-atom card-icon"></i>
+                            <h3 class="font-en">General Science</h3>
+                            <p>भौतिक, रसायन, प्राणी, वनस्पती, आरोग्यशास्त्र</p>
+                            <span class="badge mt-sm">लवकरच उपलब्ध</span>
+                        </div>
+                        <div class="card subject-card" data-subject-id="MATH">
+                            <i class="ph-duotone ph-calculator card-icon"></i>
+                            <h3 class="font-en">Arithmetic</h3>
+                            <p>अंकगणित व मूलभूत गणितीय क्रिया</p>
+                            <span class="badge mt-sm">लवकरच उपलब्ध</span>
+                        </div>
+                        <div class="card subject-card" data-subject-id="REAS">
+                            <i class="ph-duotone ph-brain card-icon"></i>
+                            <h3 class="font-en">Reasoning</h3>
+                            <p>बुद्धिमत्ता चाचणी व तार्किक क्षमता</p>
+                            <span class="badge mt-sm">लवकरच उपलब्ध</span>
+                        </div>
                     </div>
                 </div>
+            </section>
 
-                <div class="exam-footer-controls">
-                    <div class="ctrl-group">
-                        <button class="btn-outline" onclick="clearResponse()">Clear</button>
-                        <button class="btn-outline btn-review" onclick="toggleMarkForReview()">Review</button>
+            <!-- Study Guide -->
+            <section id="study-guide" class="section bg-alt">
+                <div class="container">
+                    <div class="section-header text-center">
+                        <h2 class="section-title">MPSC अभ्यास मार्गदर्शन</h2>
+                        <p class="section-desc">“अभ्यासाची सुरुवात नेमकी कुठून करावी?”</p>
                     </div>
-                    <div class="ctrl-group">
-                        <button class="btn-save" onclick="saveAndNext()">Next <i class="fas fa-chevron-right"></i></button>
-                        <button class="btn-submit-q" onclick="openSubmitConfirmation()">Submit</button>
+                    <div class="grid-3">
+                        <div class="card">
+                            <h3>सुरुवात कशी करावी?</h3>
+                            <p>नवशिक्या विद्यार्थ्यांसाठी अभ्यासाची दिशा आणि प्राथमिक नियोजन.</p>
+                        </div>
+                        <div class="card">
+                            <h3>Prelims Strategy</h3>
+                            <p>पूर्व परीक्षा उत्तीर्ण करण्यासाठीचे अचूक नियोजन व टार्गेट स्कोअर.</p>
+                        </div>
+                        <div class="card">
+                            <h3>Mains Strategy</h3>
+                            <p>मुख्य परीक्षेच्या अभ्यासक्रमाचे सखोल विश्लेषण व रणनीती.</p>
+                        </div>
+                        <div class="card">
+                            <h3>Subject-wise Strategy</h3>
+                            <p>प्रत्येक विषयानुसार अभ्यासाची पद्धत आणि संदर्भ ग्रंथांची यादी.</p>
+                        </div>
+                        <div class="card">
+                            <h3>PYQ कसे वापरावे?</h3>
+                            <p>मागील वर्षाच्या प्रश्नपत्रिकांचे विश्लेषण करून प्रश्नांचा कल कसा ओळखावा.</p>
+                        </div>
+                        <div class="card">
+                            <h3>Revision Strategy</h3>
+                            <p>वाचलेले लक्षात ठेवण्यासाठी प्रभावी उजळणी तंत्र (Revision Techniques).</p>
+                        </div>
+                        <div class="card">
+                            <h3>Time Management</h3>
+                            <p>नोकरी करणाऱ्या किंवा पूर्णवेळ अभ्यास करणाऱ्यांसाठी वेळेचे नियोजन.</p>
+                        </div>
+                        <div class="card">
+                            <h3>सामान्य चुका</h3>
+                            <p>विद्यार्थ्यांकडून वारंवार होणाऱ्या चुका आणि त्या कशा टाळाव्यात.</p>
+                        </div>
                     </div>
+                </div>
+            </section>
+
+            <!-- PYQ / Practice / Current Affairs -->
+            <section class="section">
+                <div class="container">
+                    <div class="grid-3">
+                        <!-- PYQ Analysis -->
+                        <div class="card text-center" style="display:flex; flex-direction:column; justify-content:center; align-items:center;">
+                            <i class="ph-duotone ph-files card-icon" style="font-size: 3rem; color: var(--accent-primary); margin-bottom:1rem;"></i>
+                            <h3 class="font-en" style="margin-bottom:0.5rem;">PYQ Analysis</h3>
+                            <p>विषय व घटकानुसार मागील वर्षांच्या प्रश्नांचे सखोल विश्लेषण.</p>
+                            <span class="badge mt-sm">लवकरच उपलब्ध</span>
+                        </div>
+                        
+                        <!-- Practice & Test -->
+                        <div class="card text-center" style="display:flex; flex-direction:column; justify-content:center; align-items:center;">
+                            <i class="ph-duotone ph-pencil-line card-icon" style="font-size: 3rem; color: var(--accent-primary); margin-bottom:1rem;"></i>
+                            <h3 class="font-en" style="margin-bottom:0.5rem;">Practice & Test</h3>
+                            <p>घटकानुसार सराव (Practice Quiz) आणि पूर्ण अभ्यासक्रमावर आधारित Test Simulator.</p>
+                            <span class="badge mt-sm">लवकरच उपलब्ध</span>
+                        </div>
+                        
+                        <!-- Current Affairs -->
+                        <div class="card text-center" style="display:flex; flex-direction:column; justify-content:center; align-items:center;">
+                            <i class="ph-duotone ph-newspaper card-icon" style="font-size: 3rem; color: var(--accent-primary); margin-bottom:1rem;"></i>
+                            <h3 class="font-en" style="margin-bottom:0.5rem;">Current Affairs</h3>
+                            <p>MPSC गट क परीक्षेसाठी अत्यंत उपयुक्त अशा चालू घडामोडींचे संकलन.</p>
+                            <span class="badge mt-sm">लवकरच उपलब्ध</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Intro Snippets (About/Contact) -->
+            <section class="section bg-alt">
+                <div class="container grid-3">
+                    <div class="card" style="grid-column: span 2;">
+                        <h3>StudySphere बद्दल थोडक्यात</h3>
+                        <p style="margin-top:0.5rem; margin-bottom: 1rem;">हे व्यासपीठ विशेषतः MPSC Group C परीक्षेची तयारी करणाऱ्या विद्यार्थ्यांसाठी तयार करण्यात आले आहे. परीक्षाभिमुख नोट्स, रिव्हिजन, सराव प्रश्न, आणि मार्गदर्शन एकाच ठिकाणी उपलब्ध करून देणे हे आमचे उद्दिष्ट आहे.</p>
+                        <a href="#about" class="btn btn-outline" style="padding: 0.5rem 1rem; font-size:0.9rem;">सविस्तर वाचा</a>
+                    </div>
+                    <div class="card text-center">
+                        <i class="ph-duotone ph-telegram-logo" style="font-size:2.5rem; color:#0088cc;"></i>
+                        <h3 style="margin: 0.5rem 0;">संपर्क / त्रुटी नोंदवा</h3>
+                        <p style="font-size:0.9rem; margin-bottom:1rem; color:var(--text-secondary);">माहितीत किंवा प्रश्नात त्रुटी आढळल्यास आम्हाला कळवा.</p>
+                        <a href="#contact" class="btn btn-primary" style="padding: 0.5rem 1rem; font-size:0.9rem; width:100%;">Contact Page</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- ================= ABOUT VIEW ================= -->
+        <div id="view-about" class="view section">
+            <div class="container">
+                <div class="content-box">
+                    <h2 class="section-title text-center" style="margin-bottom: 2rem;">आमच्याबद्दल (About Us)</h2>
+                    <p><strong>StudySphere</strong> हे विशेषतः MPSC Group C (गट क) पूर्व आणि मुख्य परीक्षेची तयारी करणाऱ्या विद्यार्थ्यांसाठी तयार केलेले मोफत अभ्यास व्यासपीठ आहे.</p>
+                    <p>येथे विद्यार्थ्यांना अभ्यासक्रमानुसार, परीक्षाभिमुख आणि सोप्या पद्धतीने अभ्यास करता यावा हा आमचा मुख्य उद्देश आहे. या वेबसाइटवर विविध विषयांचे अभ्याससाहित्य (Study Notes), उजळणी (Revision), सराव प्रश्न (Practice Questions), चाचण्या (Tests), आणि PYQ विश्लेषण उपलब्ध करून देण्याचे आमचे उद्दिष्ट आहे.</p>
+                    <p>StudySphere हे विद्यार्थ्यांना त्यांच्या अभ्यासात योग्य मार्गदर्शन करणारे educational platform आहे. आम्ही उपलब्ध केलेली माहिती जास्तीत जास्त अचूक देण्याचा प्रयत्न करतो.</p>
+                    <p><strong>त्रुटी नोंदवणे:</strong> जर तुम्हाला कोणत्याही माहितीत किंवा प्रश्नात काही चूक किंवा त्रुटी आढळल्यास, तुम्ही थेट आमच्या Telegram चॅनेलद्वारे संपर्क साधून ती आमच्या निदर्शनास आणून देऊ शकता. तुमच्या विधायक सूचनांचे आम्ही नेहमीच स्वागत करतो.</p>
                 </div>
             </div>
-        </section>
+        </div>
 
-        <!-- QUIZ RESULT VIEW -->
-        <section id="view-result" class="view"></section>
-
-        <!-- ERROR VIEW -->
-        <section id="view-error" class="view">
-            <div class="error-container" style="text-align:center; padding:3rem 1rem;">
-                <i class="fas fa-exclamation-triangle" style="font-size:2.5rem; color:#ef4444; margin-bottom:1rem;"></i>
-                <h2>Content Not Found</h2>
-                <p style="margin-bottom: 2rem; color: var(--text-secondary);">The subject, chapter, or topic you are looking for does not exist.</p>
-                <button class="btn btn-back" onclick="navigateSPA('view-home', true)" style="margin: 0 auto;">
-                    <i class="fas fa-home"></i> Back to Home
-                </button>
+        <!-- ================= CONTACT VIEW ================= -->
+        <div id="view-contact" class="view section">
+            <div class="container">
+                <div class="card contact-compact">
+                    <i class="ph-fill ph-telegram-logo"></i>
+                    <h2 class="section-title" style="font-size: 1.75rem;">संपर्क करा</h2>
+                    <p style="margin: 1rem 0 2rem; color: var(--text-secondary);">माहितीतील त्रुटी, प्रश्नातील त्रुटी, सूचना किंवा वेबसाइटशी संबंधित कोणत्याही अडचणींसाठी आमच्याशी संपर्क साधा.</p>
+                    <a href="https://t.me/MPSCstudysphere" target="_blank" rel="noopener noreferrer" class="btn btn-telegram" style="width: 100%;">
+                        <i class="ph-bold ph-paper-plane-tilt"></i> Telegram वर संपर्क करा
+                    </a>
+                </div>
             </div>
-        </section>
+        </div>
+
+        <!-- ================= PRIVACY POLICY VIEW ================= -->
+        <div id="view-privacy" class="view section">
+            <div class="container">
+                <div class="content-box">
+                    <h2 class="section-title text-center" style="margin-bottom: 2rem;">खाजगीपणाचे धोरण (Privacy Policy)</h2>
+                    <p>StudySphere हे पूर्णपणे शैक्षणिक उद्देशाने (Educational Purpose) बनवलेले मोफत व्यासपीठ आहे. आमच्या वापरकर्त्यांच्या खाजगीपणाचा आम्ही आदर करतो.</p>
+                    <ul>
+                        <li><strong>माहिती संकलन:</strong> वेबसाइटचा वापर सोपा करण्यासाठी आम्ही तुमच्या ब्राउझरमधील Local Storage चा वापर करतो (उदा. Light/Dark Theme ची निवड सेव्ह करण्यासाठी). आम्ही मुद्दामहून कोणतीही वैयक्तिक माहिती (नाव, ईमेल, मोबाईल नंबर) मागत नाही किंवा गोळा करत नाही.</li>
+                        <li><strong>खाते/लॉगिन नाही:</strong> या वेबसाइटवर सध्या कोणतीही अकाउंट/लॉगिन सिस्टीम नाही, त्यामुळे तुमचा कोणताही खाजगी डेटा आमच्या सर्व्हरवर सेव्ह केला जात नाही.</li>
+                        <li><strong>तृतीय पक्ष सेवा (Third Party Services):</strong> वेबसाइटचे स्वरूप आणि कार्यक्षमता सुधारण्यासाठी Google Fonts, आयकॉन सेवा, आणि संपर्कासाठी Telegram सारख्या बाह्य सेवांचा वापर केला जातो. या सेवांचे स्वतःचे स्वतंत्र खाजगीपणाचे धोरण असते.</li>
+                        <li><strong>आर्थिक सुरक्षा:</strong> वेबसाइटवरील 'Donate Us' पर्यायाद्वारे मिळालेली मदत पूर्णपणे ऐच्छिक आहे. सुरक्षेच्या कारणास्तव, वेबसाइटवर कुठेही डोनेशनसाठीचा मूळ UPI ID सार्वजनिकरित्या मजकूर स्वरूपात प्रदर्शित केलेला नाही.</li>
+                        <li><strong>वैयक्तिक माहितीची काळजी:</strong> वापरकर्त्यांनी सार्वजनिक संपर्क माध्यमांद्वारे (उदा. Telegram) आपली अत्यंत संवेदनशील वैयक्तिक माहिती पाठवणे टाळावे.</li>
+                        <li><strong>धोरणात बदल:</strong> जसजशी वेबसाइटची कार्यक्षमता (उदा. Test/Quiz System) वाढेल, तसतसे या धोरणात आवश्यकतेनुसार बदल केले जाऊ शकतात.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- ================= SITE MAP VIEW ================= -->
+        <div id="view-sitemap" class="view section">
+            <div class="container">
+                <div class="content-box">
+                    <h2 class="section-title text-center" style="margin-bottom: 2rem;">साइट मॅप (Site Map)</h2>
+                    <ul style="list-style: none; padding-left: 0;">
+                        <li style="margin-bottom: 0.5rem;"><a href="#home" class="font-en font-bold" style="color: var(--accent-primary);">Home (मुख्य पृष्ठ)</a>
+                            <ul style="list-style: disc; padding-left: 2rem; margin-top: 0.5rem; margin-bottom: 1.5rem;">
+                                <li>Study Guide (मार्गदर्शन)</li>
+                                <li>Subjects (विषय)</li>
+                                <li>PYQ Analysis</li>
+                                <li>Practice & Test</li>
+                                <li>Current Affairs (चालू घडामोडी)</li>
+                            </ul>
+                        </li>
+                        <li style="margin-bottom: 0.5rem;"><a href="#about" class="font-en" style="color: var(--accent-primary);">About (आमच्याबद्दल)</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="#contact" class="font-en" style="color: var(--accent-primary);">Contact (संपर्क)</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="#privacy" class="font-en" style="color: var(--accent-primary);">Privacy Policy (खाजगीपणाचे धोरण)</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="#terms" class="font-en" style="color: var(--accent-primary);">Terms & Conditions (अटी आणि शर्ती)</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- ================= TERMS VIEW ================= -->
+        <div id="view-terms" class="view section">
+            <div class="container">
+                <div class="content-box">
+                    <h2 class="section-title text-center" style="margin-bottom: 2rem;">अटी आणि शर्ती (Terms & Conditions)</h2>
+                    <p>StudySphere वेबसाइटचा वापर करण्यापूर्वी कृपया खालील अटी आणि शर्ती काळजीपूर्वक वाचा:</p>
+                    <ul>
+                        <li><strong>शैक्षणिक उद्देश:</strong> वेबसाइटवरील सर्व अभ्याससाहित्य (नोट्स, प्रश्न, रणनीती) हे केवळ MPSC गट क परीक्षेच्या तयारीसाठी व मार्गदर्शनासाठी पुरवले आहे.</li>
+                        <li><strong>माहितीची अचूकता (Disclaimer):</strong> आम्ही वेबसाइटवरील माहिती अचूक देण्याचा आटोकाट प्रयत्न करतो. तरीही मानवी चुकांमुळे किंवा जुन्या संदर्भामुळे काही त्रुटी असू शकतात. वापरकर्त्यांनी आवश्यकतेनुसार महत्त्वाची आणि तांत्रिक माहिती अधिकृत स्रोतांवरून (उदा. MPSC ची अधिकृत वेबसाइट) तपासून घ्यावी.</li>
+                        <li><strong>वापरकर्त्याची जबाबदारी:</strong> अभ्यासासाठी या सामग्रीचा वापर करणे ही सर्वस्वी वापरकर्त्याची जबाबदारी आहे. कोणत्याही माहितीतील चुकीमुळे होणाऱ्या नुकसानीस StudySphere जबाबदार राहणार नाही.</li>
+                        <li><strong>यशाची हमी नाही:</strong> हे प्लॅटफॉर्म अभ्यासात मदत करण्यासाठी बनवले आहे. वेबसाइटचा वापर केल्याने परीक्षेत यश मिळण्याची कोणतीही कायदेशीर हमी दिली जात नाही.</li>
+                        <li><strong>ऐच्छिक योगदान (Voluntary Donation):</strong> वेबसाइटला आर्थिक मदत करण्यासाठी दिलेले 'Donation' हे पूर्णपणे ऐच्छिक आहे. या योगदानामुळे परीक्षेत कोणताही विशेष फायदा, हमी, रँक किंवा वेबसाइटवर कोणताही विशेष अधिकार दिला जात नाही.</li>
+                        <li><strong>बाह्य लिंक्स (External Links):</strong> वेबसाइटवर असलेल्या बाह्य लिंक्स (उदा. Telegram) व त्यांच्या सेवांच्या अटी त्या संबंधित कंपनीच्या धोरणानुसार असतील.</li>
+                        <li><strong>बदल करण्याचा अधिकार:</strong> वेबसाइट मालक किंवा प्रशासक कोणत्याही पूर्वसूचनेविना वेबसाइटच्या स्वरूपात, माहितीत, क्विझमध्ये किंवा कार्यक्षमतेत बदल करण्याचा किंवा ती बंद करण्याचा सर्वाधिकार राखून ठेवतात.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
     </main>
 
-    <footer>
-        <div class="footer-content">
-            <div class="footer-brand">
-                <h2><i class="fas fa-globe-asia"></i> StudySphere</h2>
-                <p>An objective MCQ practice and testing platform dedicated to MPSC Combined Group B & C exam preparation.</p>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <nav class="footer-nav">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+                <a href="#privacy">Privacy Policy</a>
+                <a href="#sitemap">Site Map</a>
+                <a href="#terms">Terms & Conditions</a>
+            </nav>
+            
+            <div class="footer-buttons">
+                <a href="#contact" class="btn btn-outline" style="border-color: var(--border-color); color: var(--text-primary);"><i class="ph-bold ph-envelope-simple"></i> Contact Us</a>
+                <button type="button" class="btn btn-primary" id="open-donate-btn"><i class="ph-bold ph-heart"></i> Donate Us</button>
             </div>
-            <div class="footer-links">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="#" onclick="navigateSPA('view-home', true)">Home</a></li>
-                    <li><a href="#" onclick="openModal('about-modal')">About Us</a></li>
-                    <li><a href="#" onclick="openModal('sitemap-modal')">Sitemap</a></li>
-                    <li><a href="#" onclick="openModal('privacy-modal')">Privacy Policy</a></li>
-                    <li><a href="#" onclick="openModal('terms-modal')">Terms of Service</a></li>
-                </ul>
-            </div>
-            <div class="footer-actions">
-                <h3>Connect & Support</h3>
-                <a href="https://t.me/+va0AGcqvCdQzNTI1" target="_blank" class="btn btn-telegram"><i class="fab fa-telegram-plane"></i> Join Telegram</a>
-                <button class="btn btn-donate" onclick="openModal('donate-modal')"><i class="fas fa-heart"></i> Donate Us</button>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> StudySphere.</p>
+                <p style="margin-top: 0.25rem;">MPSC Group C Preparation Platform</p>
             </div>
         </div>
-        <div class="footer-bottom">&copy; 2026 StudySphere. Designed for educational purposes.</div>
     </footer>
 
-    <div id="modals-container">
-        <div class="modal-overlay" id="about-modal" onclick="closeModalOutside(event, 'about-modal')"><div class="modal-content"><div class="modal-header"><h2>About Us</h2><button class="close-menu" onclick="closeModal('about-modal')"><i class="fas fa-times"></i></button></div><div class="modal-body"><p>StudySphere is an independent educational platform created to help MPSC Combined Group B & C aspirants practice objective questions topic-wise.</p><p style="margin-top:0.75rem;"><em>Disclaimer: StudySphere is an independent initiative and is not affiliated with the official Maharashtra Public Service Commission (MPSC).</em></p></div></div></div>
-        <div class="modal-overlay" id="privacy-modal" onclick="closeModalOutside(event, 'privacy-modal')"><div class="modal-content"><div class="modal-header"><h2>Privacy Policy</h2><button class="close-menu" onclick="closeModal('privacy-modal')"><i class="fas fa-times"></i></button></div><div class="modal-body"><p>No mandatory account creation. Local browser storage is used solely to remember preferences and quiz reports locally on your device. We do not collect or sell personal data.</p></div></div></div>
-        <div class="modal-overlay" id="terms-modal" onclick="closeModalOutside(event, 'terms-modal')"><div class="modal-content"><div class="modal-header"><h2>Terms of Service</h2><button class="close-menu" onclick="closeModal('terms-modal')"><i class="fas fa-times"></i></button></div><div class="modal-body"><ul><li><strong>Educational Purpose:</strong> Solely for practice.</li><li><strong>Verification:</strong> Users should independently verify answer keys. Questions may contain errors.</li><li><strong>No Affiliation:</strong> Not an official MPSC website.</li></ul></div></div></div>
-        <div class="modal-overlay" id="sitemap-modal" onclick="closeModalOutside(event, 'sitemap-modal')"><div class="modal-content"><div class="modal-header"><h2>Sitemap</h2><button class="close-menu" onclick="closeModal('sitemap-modal')"><i class="fas fa-times"></i></button></div><div class="modal-body"><ul><li>Home (Subjects List) -> Chapters -> Topics -> Quizzes</li><li>Static pages via Menu.</li></ul></div></div></div>
-        <div class="modal-overlay" id="contact-modal" onclick="closeModalOutside(event, 'contact-modal')"><div class="modal-content"><div class="modal-header"><h2>Contact</h2><button class="close-menu" onclick="closeModal('contact-modal')"><i class="fas fa-times"></i></button></div><div class="modal-body"><p>Please join our Telegram channel.</p><a href="https://t.me/+va0AGcqvCdQzNTI1" target="_blank" class="btn btn-telegram" style="margin-top:1rem;"><i class="fab fa-telegram-plane"></i> Join Telegram</a></div></div></div>
-        <div class="modal-overlay" id="donate-modal" onclick="closeModalOutside(event, 'donate-modal')"><div class="modal-content"><div class="modal-header"><h2>Donate Us</h2><button class="close-menu" onclick="closeModal('donate-modal')"><i class="fas fa-times"></i></button></div><div class="modal-body"><div style="background:rgba(239,68,68,0.1);color:#ef4444;padding:1rem;border-radius:6px;margin-bottom:1rem;font-size:0.9rem;">Donation सुविधा सध्या केवळ mobile device वरून उपलब्ध आहे. कृपया UPI-enabled mobile device वापरून payment पूर्ण करा.</div><input type="number" id="custom-donation" class="form-control" placeholder="Enter amount (₹)" min="1"><button class="btn btn-donate" style="width:100%;" onclick="initiateUPIPayment()">Proceed to Pay via UPI</button></div></div></div>
+    <!-- Donation Modal -->
+    <div class="modal-overlay" id="donate-modal">
+        <div class="modal">
+            <button class="modal-close" id="close-donate-btn" aria-label="Close modal"><i class="ph-bold ph-x"></i></button>
+            
+            <h3 class="font-en" style="font-size: 1.5rem; color: var(--accent-primary); margin-bottom: 0.5rem;">StudySphere ला योगदान द्या</h3>
+            <p style="color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 1.5rem;">मोफत अभ्याससाहित्य सुरू ठेवण्यासाठी तुम्ही इच्छेनुसार योगदान देऊ शकता.</p>
 
-        <!-- Quiz Start Modal -->
-        <div class="modal-overlay" id="quiz-start-modal" onclick="closeModalOutside(event, 'quiz-start-modal')">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h2>Start Quiz</h2>
-                    <button class="close-menu" onclick="closeModal('quiz-start-modal')"><i class="fas fa-times"></i></button>
+            <!-- Mobile Flow -->
+            <div id="mobile-donate-flow" style="display: none;">
+                <div class="donate-amounts">
+                    <button class="amt-btn" data-val="50">₹50</button>
+                    <button class="amt-btn" data-val="100">₹100</button>
+                    <button class="amt-btn" data-val="200">₹200</button>
                 </div>
-                <div class="modal-body" id="quiz-start-body"></div>
+                
+                <div class="custom-amt">
+                    <label for="custom-amount">इतर रक्कम (₹)</label>
+                    <input type="number" id="custom-amount" placeholder="रक्कम टाका (उदा. 50)" min="1">
+                    <div class="error-msg" id="donate-error">कृपया योग्य रक्कम टाका (₹० पेक्षा जास्त).</div>
+                </div>
+                
+                <button type="button" class="btn btn-primary" id="pay-now-btn" style="width: 100%;">
+                    Pay Now <i class="ph-bold ph-arrow-right"></i>
+                </button>
             </div>
-        </div>
 
-        <!-- Quiz Submit Confirmation Modal -->
-        <div class="modal-overlay" id="quiz-submit-modal" onclick="closeModalOutside(event, 'quiz-submit-modal')">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h2>Submit Quiz</h2>
-                    <button class="close-menu" onclick="closeModal('quiz-submit-modal')"><i class="fas fa-times"></i></button>
+            <!-- Desktop Flow -->
+            <div id="desktop-donate-flow" style="display: none;">
+                <div class="qr-box">
+                    <!-- Inline SVG QR Placeholder -->
+                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-label="Demo QR Code">
+                        <rect width="100" height="100" fill="#ffffff" rx="8" stroke="#e2e8f0" stroke-width="2"/>
+                        <rect x="15" y="15" width="25" height="25" fill="none" stroke="#64748b" stroke-width="4"/>
+                        <rect x="20" y="20" width="15" height="15" fill="#64748b"/>
+                        <rect x="60" y="15" width="25" height="25" fill="none" stroke="#64748b" stroke-width="4"/>
+                        <rect x="65" y="20" width="15" height="15" fill="#64748b"/>
+                        <rect x="15" y="60" width="25" height="25" fill="none" stroke="#64748b" stroke-width="4"/>
+                        <rect x="20" y="65" width="15" height="15" fill="#64748b"/>
+                        <rect x="48" y="15" width="6" height="6" fill="#64748b"/>
+                        <rect x="48" y="34" width="6" height="6" fill="#64748b"/>
+                        <rect x="15" y="48" width="6" height="6" fill="#64748b"/>
+                        <rect x="34" y="48" width="6" height="6" fill="#64748b"/>
+                        <rect x="48" y="48" width="6" height="6" fill="#64748b"/>
+                        <rect x="60" y="48" width="25" height="6" fill="#64748b"/>
+                        <rect x="48" y="60" width="6" height="25" fill="#64748b"/>
+                        <rect x="60" y="79" width="6" height="6" fill="#64748b"/>
+                        <rect x="79" y="60" width="6" height="6" fill="#64748b"/>
+                        <rect x="79" y="79" width="6" height="6" fill="#64748b"/>
+                    </svg>
                 </div>
-                <div class="modal-body" id="quiz-submit-body"></div>
-            </div>
-        </div>
-
-        <!-- Quiz Exit Warning Modal -->
-        <div class="modal-overlay" id="quiz-exit-modal" onclick="closeModalOutside(event, 'quiz-exit-modal')">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h2>Warning</h2>
-                    <button class="close-menu" onclick="closeModal('quiz-exit-modal')"><i class="fas fa-times"></i></button>
-                </div>
-                <div class="modal-body">
-                    <p style="color: #ef4444; font-weight:600; margin-bottom:0.5rem;"><i class="fas fa-exclamation-circle"></i> Quiz is currently in progress.</p>
-                    <p style="margin-bottom:1.5rem;">Are you sure you want to leave? Your current progress will be lost.</p>
-                    <div style="display:flex; gap:1rem;">
-                        <button class="btn btn-outline" style="flex:1;" onclick="closeModal('quiz-exit-modal'); resumeQuizNavigation(false)">Stay</button>
-                        <button class="btn btn-submit-q" style="flex:1; background:#ef4444;" onclick="closeModal('quiz-exit-modal'); resumeQuizNavigation(true)">Leave Quiz</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Question Report Modal -->
-        <div class="modal-overlay" id="report-modal" onclick="closeModalOutside(event, 'report-modal')">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h2>Report This Question</h2>
-                    <button class="close-menu" onclick="closeModal('report-modal')"><i class="fas fa-times"></i></button>
-                </div>
-                <div class="modal-body">
-                    <p id="report-q-meta" style="font-size:0.85rem; color:var(--text-secondary); margin-bottom:1rem;"></p>
-                    <label style="font-weight:600; margin-bottom:0.5rem; display:block; font-size:0.9rem;">Select Reason <span style="color:red">*</span></label>
-                    <select id="report-reason" class="form-control">
-                        <option value="">-- Select a reason --</option>
-                        <option value="Incorrect question">Incorrect question</option>
-                        <option value="Incorrect option">Incorrect option</option>
-                        <option value="Incorrect correct answer">Incorrect correct answer</option>
-                        <option value="Typographical error">Typographical error</option>
-                        <option value="Translation issue">Translation issue</option>
-                        <option value="Other">Other</option>
-                    </select>
-                    
-                    <label style="font-weight:600; margin-bottom:0.5rem; display:block; margin-top:1rem; font-size:0.9rem;">Additional Details <span id="details-star" style="color:red; display:none;">*</span></label>
-                    <textarea id="report-details" class="form-control" placeholder="Provide extra context here..." maxlength="500"></textarea>
-                    
-                    <button class="btn btn-save" style="width:100%; margin-top:1rem;" onclick="submitQuestionReport()">Submit Report</button>
-                </div>
-            </div>
-        </div>
-
-        <!-- Report Success / Telegram Payload Modal -->
-        <div class="modal-overlay" id="report-success-modal" onclick="closeModalOutside(event, 'report-success-modal')">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h2>Report Recorded</h2>
-                    <button class="close-menu" onclick="closeModal('report-success-modal')"><i class="fas fa-times"></i></button>
-                </div>
-                <div class="modal-body">
-                    <p style="color:#10b981; font-weight:600; margin-bottom:0.75rem;"><i class="fas fa-check-circle"></i> Thank you. Your report has been recorded locally.</p>
-                    <p style="font-size:0.85rem; margin-bottom:0.75rem;">Click below to send this report directly to our Telegram group with one tap:</p>
-                    <textarea id="report-payload-box" class="form-control" readonly style="font-family:monospace; font-size:0.8rem; height:110px;"></textarea>
-                    <div style="display:flex; gap:0.75rem; margin-top:1rem; flex-wrap:wrap;">
-                        <button class="btn btn-save" style="flex:1; min-width:120px;" onclick="copyReportPayload()"><i class="fas fa-copy"></i> Copy Report</button>
-                        <a id="telegram-link-btn" href="#" target="_blank" class="btn btn-telegram" style="flex:1; min-width:120px;"><i class="fab fa-telegram-plane"></i> Send to Telegram</a>
-                    </div>
-                </div>
+                <span class="badge" style="background:#e2e8f0; color:#475569;">Demo QR Code</span>
+                <p style="color: var(--text-secondary); font-size: 0.85rem; margin-top: 1rem;">स्कॅन करून पे करण्यासाठी मोबाईलचा वापर करा. <br>वास्तविक QR Code नंतर येथे जोडला जाईल.</p>
             </div>
         </div>
     </div>
 
-    <!-- Load external quiz data store -->
-    <script src="quiz-data.js"></script>
-    
+    <!-- Application Logic -->
     <script>
-        const syllabusData = [
-            {
-                code: "SCI", section: "COMMON", subjectMr: "सामान्य विज्ञान", subjectEn: "General Science",
-                chapters: [
-                    { code: "SCI-01", chapterMr: "भौतिकशास्त्र", chapterEn: "Physics", topics: [{ code: "SCI-01-T01", topicMr: "प्रकाश (Light)", topicEn: "Light" }, { code: "SCI-01-T02", topicMr: "ध्वनी (Sound)", topicEn: "Sound" }, { code: "SCI-01-T03", topicMr: "उष्णता व तापमान", topicEn: "Heat & Temperature" }, { code: "SCI-01-T04", topicMr: "विद्युत धारा (Electricity)", topicEn: "Electricity" }, { code: "SCI-01-T05", topicMr: "बल व दाब (Force & Pressure)", topicEn: "Force & Pressure" }] },
-                    { code: "SCI-02", chapterMr: "रसायनशास्त्र", chapterEn: "Chemistry", topics: [{ code: "SCI-02-T01", topicMr: "द्रव्य व त्याचे स्वरूप", topicEn: "Matter & Its Nature" }, { code: "SCI-02-T02", topicMr: "अणूची संरचना", topicEn: "Atomic Structure" }, { code: "SCI-02-T03", topicMr: "मूलद्रव्यांचे आवर्ती वर्गीकरण", topicEn: "Periodic Classification of Elements" }, { code: "SCI-02-T04", topicMr: "आम्ल, आम्लारी व क्षार", topicEn: "Acids, Bases & Salts" }, { code: "SCI-02-T05", topicMr: "धातू आणि अधातू", topicEn: "Metals & Non-metals" }] },
-                    { code: "SCI-03", chapterMr: "प्राणीशास्त्र", chapterEn: "Zoology", topics: [{ code: "SCI-03-T01", topicMr: "प्राण्यांचे वर्गीकरण", topicEn: "Animal Classification" }, { code: "SCI-03-T02", topicMr: "पेशी रचना व कार्य", topicEn: "Cell Structure & Function" }, { code: "SCI-03-T03", topicMr: "रक्ताभिसरण संस्था", topicEn: "Blood Circulation System" }, { code: "SCI-03-T04", topicMr: "पचन संस्था व श्वसन संस्था", topicEn: "Digestive & Respiratory System" }, { code: "SCI-03-T05", topicMr: "चेती संस्था व प्रजनन संस्था", topicEn: "Nervous & Reproductive System" }] },
-                    { code: "SCI-04", chapterMr: "वनस्पतीशास्त्र", chapterEn: "Botany", topics: [{ code: "SCI-04-T01", topicMr: "वनस्पतींचे वर्गीकरण", topicEn: "Plant Classification" }, { code: "SCI-04-T02", topicMr: "वनस्पतींची रचना व कार्ये", topicEn: "Plant Structure & Functions" }, { code: "SCI-04-T03", topicMr: "प्रकाश संश्लेषण", topicEn: "Photosynthesis" }] },
-                    { code: "SCI-05", chapterMr: "मानवी आरोग्य व रोग", chapterEn: "Human Health & Hygiene", topics: [{ code: "SCI-05-T01", topicMr: "पोषक द्रव्ये (Nutrients)", topicEn: "Nutrients" }, { code: "SCI-05-T02", topicMr: "जिवाणूजन्य रोग", topicEn: "Bacterial Diseases" }, { code: "SCI-05-T03", topicMr: "विषाणूजन्य रोग", topicEn: "Viral Diseases" }, { code: "SCI-05-T04", topicMr: "इतर संसर्गजन्य व असंसर्गजन्य रोग", topicEn: "Other Communicable & Non-communicable Diseases" }] }
-                ]
-            },
-            {
-                code: "CA", section: "COMMON", subjectMr: "चालू घडामोडी", subjectEn: "Current Affairs",
-                chapters: [
-                    { code: "CA-01", chapterMr: "राष्ट्रीय व आंतरराष्ट्रीय", chapterEn: "National & International", topics: [{ code: "CA-01-T01", topicMr: "राष्ट्रीय घडामोडी", topicEn: "National Affairs" }, { code: "CA-01-T02", topicMr: "आंतरराष्ट्रीय घडामोडी", topicEn: "International Affairs" }, { code: "CA-01-T03", topicMr: "महत्त्वाच्या परिषदा व संमेलने", topicEn: "Important Summits & Conferences" }] },
-                    { code: "CA-02", chapterMr: "महाराष्ट्र विशेष", chapterEn: "Maharashtra Special", topics: [{ code: "CA-02-T01", topicMr: "महाराष्ट्रातील राजकीय घडामोडी", topicEn: "Maharashtra Political Affairs" }, { code: "CA-02-T02", topicMr: "महाराष्ट्रातील आर्थिक व सामाजिक घडामोडी", topicEn: "Maharashtra Economic & Social Affairs" }] },
-                    { code: "CA-03", chapterMr: "अर्थव्यवस्था व योजना", chapterEn: "Economy & Schemes", topics: [{ code: "CA-03-T01", topicMr: "सरकारी योजना व धोरणे", topicEn: "Government Schemes & Policies" }, { code: "CA-03-T02", topicMr: "आर्थिक निर्देशांक व अहवाल", topicEn: "Economic Indices & Reports" }] },
-                    { code: "CA-04", chapterMr: "पुरस्कार, क्रीडा व नियुक्त्या", chapterEn: "Awards, Sports & Appointments", topics: [{ code: "CA-04-T01", topicMr: "महत्त्वाचे पुरस्कार (Awards)", topicEn: "Important Awards" }, { code: "CA-04-T02", topicMr: "क्रीडा घडामोडी (Sports)", topicEn: "Sports Affairs" }, { code: "CA-04-T03", topicMr: "महत्त्वाच्या नियुक्त्या व निधन", topicEn: "Appointments & Obituaries" }] }
-                ]
-            },
-            {
-                code: "GEO", section: "COMMON", subjectMr: "भूगोल", subjectEn: "Geography",
-                chapters: [
-                    { code: "GEO-01", chapterMr: "पृथ्वी व मूलभूत भूगोल", chapterEn: "Earth & Basic Geography", topics: [{ code: "GEO-01-T01", topicMr: "पृथ्वी, स्थान, अक्षांश-रेखांश", topicEn: "Earth, Location, Latitude & Longitude" }, { code: "GEO-01-T02", topicMr: "वातावरण आणि हवामान", topicEn: "Atmosphere & Climate" }, { code: "GEO-01-T03", topicMr: "नकाशे व प्रमाण", topicEn: "Maps & Scales" }] },
-                    { code: "GEO-02", chapterMr: "भारताचा भूगोल", chapterEn: "Geography of India", topics: [{ code: "GEO-02-T01", topicMr: "भारताची प्राकृतिक रचना", topicEn: "Physical Structure of India" }, { code: "GEO-02-T02", topicMr: "भारतातील नदीप्रणाली", topicEn: "River Systems of India" }, { code: "GEO-02-T03", topicMr: "भारताचे हवामान, मृदा व वने", topicEn: "Climate, Soils & Forests of India" }, { code: "GEO-02-T04", topicMr: "शेती व खनिजे", topicEn: "Agriculture & Minerals" }] },
-                    { code: "GEO-03", chapterMr: "महाराष्ट्राचा भूगोल", chapterEn: "Geography of Maharashtra", topics: [{ code: "GEO-03-T01", topicMr: "महाराष्ट्राची प्राकृतिक रचना", topicEn: "Physical Structure of Maharashtra" }, { code: "GEO-03-T02", topicMr: "महाराष्ट्रातील नदीप्रणाली", topicEn: "River Systems of Maharashtra" }, { code: "GEO-03-T03", topicMr: "हवामान, मृदा आणि वने", topicEn: "Climate, Soils & Forests in Maharashtra" }, { code: "GEO-03-T04", topicMr: "शेती व जलसिंचन", topicEn: "Agriculture & Irrigation in Maharashtra" }, { code: "GEO-03-T05", topicMr: "खनिजे, ऊर्जा साधने व उद्योग", topicEn: "Minerals, Energy Resources & Industries" }, { code: "GEO-03-T06", topicMr: "लोकसंख्या व वाहतूक", topicEn: "Population & Transport in Maharashtra" }] }
-                ]
-            },
-            {
-                code: "HIS", section: "COMMON", subjectMr: "इतिहास", subjectEn: "History",
-                chapters: [
-                    { code: "HIS-01", chapterMr: "आधुनिक भारताचा इतिहास", chapterEn: "Modern Indian History", topics: [{ code: "HIS-01-T01", topicMr: "युरोपियनांचे आगमन व ब्रिटिश सत्ता विस्तार", topicEn: "Advent of Europeans & Expansion of British Power" }, { code: "HIS-01-T02", topicMr: "१८५७ चा उठाव", topicEn: "Revolt of 1857" }, { code: "HIS-01-T03", topicMr: "सामाजिक व धार्मिक सुधारणा चळवळी", topicEn: "Socio-Religious Reform Movements" }, { code: "HIS-01-T04", topicMr: "राष्ट्रीय सभेची स्थापना व मवाळ-जहाल कालखंड", topicEn: "INC & Moderate-Extremist Phase" }, { code: "HIS-01-T05", topicMr: "गांधी युग व स्वातंत्र्य चळवळ", topicEn: "Gandhian Era & Freedom Struggle" }] },
-                    { code: "HIS-02", chapterMr: "महाराष्ट्राचा इतिहास", chapterEn: "History of Maharashtra", topics: [{ code: "HIS-02-T01", topicMr: "महाराष्ट्रातील समाजसुधारक - भाग १", topicEn: "Social Reformers in Maharashtra - Part 1" }, { code: "HIS-02-T02", topicMr: "महाराष्ट्रातील समाजसुधारक - भाग २", topicEn: "Social Reformers in Maharashtra - Part 2" }, { code: "HIS-02-T03", topicMr: "राष्ट्रीय चळवळीतील महाराष्ट्राचे योगदान", topicEn: "Maharashtra's Contribution to National Movement" }, { code: "HIS-02-T04", topicMr: "शेतकरी, कामगार व आदिवासी चळवळी", topicEn: "Peasant, Labour & Tribal Movements" }, { code: "HIS-02-T05", topicMr: "संयुक्त महाराष्ट्र चळवळ", topicEn: "Samyukta Maharashtra Movement" }] }
-                ]
-            },
-            {
-                code: "ECO", section: "COMMON", subjectMr: "अर्थशास्त्र", subjectEn: "Economics",
-                chapters: [
-                    { code: "ECO-01", chapterMr: "भारतीय अर्थव्यवस्था", chapterEn: "Indian Economy", topics: [{ code: "ECO-01-T01", topicMr: "राष्ट्रीय उत्पन्न (National Income)", topicEn: "National Income" }, { code: "ECO-01-T02", topicMr: "आर्थिक नियोजन व नीती आयोग", topicEn: "Economic Planning & NITI Aayog" }, { code: "ECO-01-T03", topicMr: "दारीद्र्य व बेरोजगारी", topicEn: "Poverty & Unemployment" }, { code: "ECO-01-T04", topicMr: "लोकसंख्या (Population)", topicEn: "Population" }] },
-                    { code: "ECO-02", chapterMr: "शेती, उद्योग व सेवा क्षेत्र", chapterEn: "Agriculture, Industry & Services", topics: [{ code: "ECO-02-T01", topicMr: "भारतीय शेती", topicEn: "Indian Agriculture" }, { code: "ECO-02-T02", topicMr: "उद्योग क्षेत्र", topicEn: "Industrial Sector" }, { code: "ECO-02-T03", topicMr: "पायाभूत सुविधा व सेवा क्षेत्र", topicEn: "Infrastructure & Services Sector" }] },
-                    { code: "ECO-03", chapterMr: "सार्वजनिक वित्त व बँकिंग", chapterEn: "Public Finance & Banking", topics: [{ code: "ECO-03-T01", topicMr: "सार्वजनिक वित्त, अर्थसंकल्प व करप्रणाली", topicEn: "Public Finance, Budget & Taxation" }, { code: "ECO-03-T02", topicMr: "भारतीय बँकिंग व्यवस्था व RBI", topicEn: "Indian Banking System & RBI" }, { code: "ECO-03-T03", topicMr: "चलनवाढ (Inflation)", topicEn: "Inflation" }] },
-                    { code: "ECO-04", chapterMr: "परकीय व्यापार व महाराष्ट्र अर्थव्यवस्था", chapterEn: "Foreign Trade & MH Economy", topics: [{ code: "ECO-04-T01", topicMr: "परकीय व्यापार व व्यवहारतोल", topicEn: "Foreign Trade & Balance of Payment" }, { code: "ECO-04-T02", topicMr: "महाराष्ट्राची अर्थव्यवस्था", topicEn: "Economy of Maharashtra" }] }
-                ]
-            },
-            {
-                code: "MAT", section: "COMMON", subjectMr: "बुद्धिमत्ता चाचणी व अंकगणित", subjectEn: "Mental Ability and Arithmetic",
-                chapters: [
-                    { code: "MAT-01", chapterMr: "अंकगणित - भाग १", chapterEn: "Arithmetic - Part 1", topics: [{ code: "MAT-01-T01", topicMr: "संख्यामालिका व संख्यांचे प्रकार", topicEn: "Number System" }, { code: "MAT-01-T02", topicMr: "लसावि व मसावि", topicEn: "LCM and HCF" }, { code: "MAT-01-T03", topicMr: "अपूर्णांक व दशांश", topicEn: "Fractions and Decimals" }, { code: "MAT-01-T04", topicMr: "शेकडेवारी", topicEn: "Percentage" }] },
-                    { code: "MAT-02", chapterMr: "अंकगणित - भाग २", chapterEn: "Arithmetic - Part 2", topics: [{ code: "MAT-02-T01", topicMr: "नफा-तोटा व सूट", topicEn: "Profit, Loss & Discount" }, { code: "MAT-02-T02", topicMr: "गुणोत्तर व प्रमाण", topicEn: "Ratio & Proportion" }, { code: "MAT-02-T03", topicMr: "सरासरी", topicEn: "Average" }, { code: "MAT-02-T04", topicMr: "काळ, काम, वेग आणि अंतर", topicEn: "Time, Work, Speed & Distance" }] },
-                    { code: "MAT-03", chapterMr: "बुद्धिमत्ता चाचणी", chapterEn: "Mental Ability", topics: [{ code: "MAT-03-T01", topicMr: "अक्षरमालिका व सांकेतिक भाषा", topicEn: "Alphabet Series & Coding-Decoding" }, { code: "MAT-03-T02", topicMr: "दिशा आणि अंतर", topicEn: "Direction & Distance" }, { code: "MAT-03-T03", topicMr: "नातेसंबंध", topicEn: "Blood Relations" }, { code: "MAT-03-T04", topicMr: "वेन आकृत्या व तर्क-अनुमान", topicEn: "Venn Diagrams & Syllogism" }, { code: "MAT-03-T05", topicMr: "घड्याळ व दिनदर्शिका", topicEn: "Clock & Calendar" }] }
-                ]
-            },
-            {
-                code: "POL", section: "COMMON", subjectMr: "भारतीय राज्यव्यवस्था व नागरिकशास्त्र", subjectEn: "Indian Polity and Civics",
-                chapters: [
-                    { code: "POL-01", chapterMr: "संविधानाची निर्मिती व वैशिष्ट्ये", chapterEn: "Making & Features of Constitution", topics: [{ code: "POL-01-T01", topicMr: "संविधान निर्मिती प्रक्रिया", topicEn: "Making of the Constitution" }, { code: "POL-01-T02", topicMr: "संविधानाची ठळक वैशिष्ट्ये व सरनामा", topicEn: "Salient Features & Preamble" }] },
-                    { code: "POL-02", chapterMr: "मूलभूत हक्क व कर्तव्ये", chapterEn: "Fundamental Rights & Duties", topics: [{ code: "POL-02-T01", topicMr: "मूलभूत हक्क (Fundamental Rights)", topicEn: "Fundamental Rights" }, { code: "POL-02-T02", topicMr: "मार्गदर्शक तत्त्वे व मूलभूत कर्तव्ये", topicEn: "DPSP & Fundamental Duties" }] },
-                    { code: "POL-03", chapterMr: "केंद्र व राज्य शासन", chapterEn: "Union & State Executive", topics: [{ code: "POL-03-T01", topicMr: "राष्ट्रपती व उपराष्ट्रपती", topicEn: "President & Vice-President" }, { code: "POL-03-T02", topicMr: "पंतप्रधान व केंद्रीय मंत्रिमंडळ", topicEn: "Prime Minister & Council of Ministers" }, { code: "POL-03-T03", topicMr: "राज्यपाल, मुख्यमंत्री व राज्य मंत्रिमंडळ", topicEn: "Governor, CM & State Council" }, { code: "POL-03-T04", topicMr: "संसद व राज्य विधिमंडळ", topicEn: "Parliament & State Legislature" }] },
-                    { code: "POL-04", chapterMr: "न्यायव्यवस्था व प्रशासकीय रचना", chapterEn: "Judiciary & Administrative Setup", topics: [{ code: "POL-04-T01", topicMr: "सर्वोच्च व उच्च न्यायालय", topicEn: "Supreme Court & High Court" }, { code: "POL-04-T02", topicMr: "केंद्र-राज्य संबंध", topicEn: "Centre-State Relations" }, { code: "POL-04-T03", topicMr: "घटनात्मक व वैधानिक आयोग", topicEn: "Constitutional & Statutory Bodies" }] }
-                ]
-            },
-            {
-                code: "MAR", section: "MAINS", subjectMr: "मराठी", subjectEn: "Marathi Language",
-                chapters: [
-                    { code: "MAR-01", chapterMr: "व्याकरण", chapterEn: "Grammar", topics: [{ code: "MAR-01-T01", topicMr: "वर्णमाला व संधी", topicEn: "Alphabets & Sandhi" }, { code: "MAR-01-T02", topicMr: "शब्दांच्या जाती (नाम, सर्वनाम, विशेषण, क्रियापद)", topicEn: "Parts of Speech" }, { code: "MAR-01-T03", topicMr: "लिंग, वचन, विभक्ती व प्रयोग", topicEn: "Gender, Number, Case & Prayog" }, { code: "MAR-01-T04", topicMr: "समास व अलंकार", topicEn: "Samas & Alankar" }, { code: "MAR-01-T05", topicMr: "वाक्याचे प्रकार व वाक्यरूपांतर", topicEn: "Sentence Types & Transformation" }] },
-                    { code: "MAR-02", chapterMr: "शब्दसंग्रह", chapterEn: "Vocabulary", topics: [{ code: "MAR-02-T01", topicMr: "समानार्थी व विरुद्धार्थी शब्द", topicEn: "Synonyms & Antonyms" }, { code: "MAR-02-T02", topicMr: "वाक्प्रचार व म्हणी", topicEn: "Idioms & Proverbs" }, { code: "MAR-02-T03", topicMr: "शुद्ध व अशुद्ध शब्द", topicEn: "Correct/Incorrect Words" }, { code: "MAR-02-T04", topicMr: "शब्दसमूहाबद्दल एक शब्द", topicEn: "One Word Substitution" }] },
-                    { code: "MAR-03", chapterMr: "उतारा आकलन", chapterEn: "Comprehension", topics: [{ code: "MAR-03-T01", topicMr: "उताऱ्यावरील प्रश्न", topicEn: "Passage Based Questions" }] }
-                ]
-            },
-            {
-                code: "ENG", section: "MAINS", subjectMr: "इंग्रजी", subjectEn: "English Language",
-                chapters: [
-                    { code: "ENG-01", chapterMr: "Grammar Basics", chapterEn: "Grammar Basics", topics: [{ code: "ENG-01-T01", topicMr: "Parts of Speech", topicEn: "Parts of Speech" }, { code: "ENG-01-T02", topicMr: "Articles & Prepositions", topicEn: "Articles & Prepositions" }, { code: "ENG-01-T03", topicMr: "Tenses", topicEn: "Tenses" }, { code: "ENG-01-T04", topicMr: "Subject-Verb Agreement", topicEn: "Subject-Verb Agreement" }] },
-                    { code: "ENG-02", chapterMr: "Advanced Grammar", chapterEn: "Advanced Grammar", topics: [{ code: "ENG-02-T01", topicMr: "Active and Passive Voice", topicEn: "Active and Passive Voice" }, { code: "ENG-02-T02", topicMr: "Direct and Indirect Speech", topicEn: "Direct and Indirect Speech" }, { code: "ENG-02-T03", topicMr: "Sentence Structure & Correction", topicEn: "Sentence Structure & Correction" }] },
-                    { code: "ENG-03", chapterMr: "Vocabulary & Comprehension", chapterEn: "Vocabulary & Comprehension", topics: [{ code: "ENG-03-T01", topicMr: "Synonyms & Antonyms", topicEn: "Synonyms & Antonyms" }, { code: "ENG-03-T02", topicMr: "Idioms & Phrases", topicEn: "Idioms & Phrases" }, { code: "ENG-03-T03", topicMr: "One Word Substitution", topicEn: "One Word Substitution" }, { code: "ENG-03-T04", topicMr: "Reading Comprehension (Passage)", topicEn: "Reading Comprehension (Passage)" }] }
-                ]
-            },
-            {
-                code: "CON", section: "MAINS", subjectMr: "भारतीय संविधान व पंचायतराज", subjectEn: "Indian Constitution & Panchayati Raj",
-                chapters: [
-                    { code: "CON-01", chapterMr: "संविधानातील महत्त्वाच्या तरतुदी", chapterEn: "Important Constitutional Provisions", topics: [{ code: "CON-01-T01", topicMr: "संविधानातील महत्त्वाचे कलम व भाग", topicEn: "Important Articles & Parts" }, { code: "CON-01-T02", topicMr: "महत्त्वाच्या घटनादुरुस्त्या", topicEn: "Important Amendments" }] },
-                    { code: "CON-02", chapterMr: "पंचायतराज (ग्रामीण)", chapterEn: "Panchayati Raj (Rural)", topics: [{ code: "CON-02-T01", topicMr: "७३ वी घटनादुरुस्ती व पंचायतराज समित्या", topicEn: "73rd Amendment & Committees" }, { code: "CON-02-T02", topicMr: "ग्रामपंचायत व ग्रामसभा", topicEn: "Gram Panchayat & Gram Sabha" }, { code: "CON-02-T03", topicMr: "पंचायत समिती व जिल्हा परिषद", topicEn: "Panchayat Samiti & Zilla Parishad" }] },
-                    { code: "CON-03", chapterMr: "नागरी स्थानिक स्वराज्य संस्था", chapterEn: "Urban Local Bodies", topics: [{ code: "CON-03-T01", topicMr: "७४ वी घटनादुरुस्ती व नागरी प्रशासन", topicEn: "74th Amendment & Urban Administration" }, { code: "CON-03-T02", topicMr: "नगरपंचायत व नगरपरिषद", topicEn: "Nagar Panchayat & Municipal Council" }, { code: "CON-03-T03", topicMr: "महानगरपालिका व कटक मंडळे", topicEn: "Municipal Corporation & Cantonment Boards" }] }
-                ]
-            },
-            {
-                code: "IT", section: "MAINS", subjectMr: "माहिती तंत्रज्ञान व संगणक मूलभूत माहिती", subjectEn: "Information Technology & Computer Basics",
-                chapters: [
-                    { code: "IT-01", chapterMr: "संगणकाची मूलभूत माहिती", chapterEn: "Computer Fundamentals", topics: [{ code: "IT-01-T01", topicMr: "संगणकाची ओळख, पिढ्या व प्रकार", topicEn: "Intro, Generations & Types of Computers" }, { code: "IT-01-T02", topicMr: "हार्डवेअर आणि सॉफ्टवेअर", topicEn: "Hardware & Software" }, { code: "IT-01-T03", topicMr: "मेमरी आणि स्टोरेज", topicEn: "Memory & Storage" }] },
-                    { code: "IT-02", chapterMr: "इंटरनेट व नेटवर्किंग", chapterEn: "Internet & Networking", topics: [{ code: "IT-02-T01", topicMr: "नेटवर्किंग संकल्पना", topicEn: "Networking Concepts" }, { code: "IT-02-T02", topicMr: "इंटरनेट, वेब व ईमेल", topicEn: "Internet, Web & Email" }, { code: "IT-02-T03", topicMr: "सायबर सुरक्षा व सायबर गुन्हे", topicEn: "Cyber Security & Cyber Crimes" }] },
-                    { code: "IT-03", chapterMr: "आधुनिक तंत्रज्ञान व ई-गव्हर्नन्स", chapterEn: "Modern Tech & e-Governance", topics: [{ code: "IT-03-T01", topicMr: "नवीन माहिती तंत्रज्ञान (AI, Cloud, IoT)", topicEn: "Modern IT (AI, Cloud, IoT)" }, { code: "IT-03-T02", topicMr: "महाराष्ट्रातील ई-प्रशासन (e-Governance)", topicEn: "e-Governance in Maharashtra" }] }
-                ]
-            },
-            {
-                code: "RTI", section: "MAINS", subjectMr: "माहितीचा अधिकार अधिनियम, 2005 व महाराष्ट्र लोकसेवा हक्क अधिनियम, 2015", subjectEn: "RTI Act 2005 & Maharashtra RTS Act 2015",
-                chapters: [
-                    { code: "RTI-01", chapterMr: "माहितीचा अधिकार अधिनियम, 2005", chapterEn: "Right to Information Act, 2005", topics: [{ code: "RTI-01-T01", topicMr: "उद्दिष्टे, व्याख्या व माहितीचा अधिकार", topicEn: "Objectives, Definitions & Right to Info" }, { code: "RTI-01-T02", topicMr: "माहिती अधिकारी व अपील यंत्रणा", topicEn: "Information Officers & Appellate Mechanisms" }, { code: "RTI-01-T03", topicMr: "माहिती आयोग, दंड व सवलती", topicEn: "Information Commissions, Penalties & Exemptions" }] },
-                    { code: "RTI-02", chapterMr: "महाराष्ट्र लोकसेवा हक्क अधिनियम, 2015", topicEn: "Maharashtra RTS Act, 2015", topics: [{ code: "RTI-02-T01", topicMr: "उद्दिष्टे, व्याख्या व सेवा हक्क", topicEn: "Objectives, Definitions & Right to Services" }, { code: "RTI-02-T02", topicMr: "आयोग, अधिकारी व दंड", topicEn: "Commission, Officers & Penalties" }] }
-                ]
-            }
-        ];
+        document.addEventListener('DOMContentLoaded', () => {
+            // Set current year
+            document.getElementById('current-year').textContent = new Date().getFullYear();
 
-        let appState = {
-            view: 'home',
-            subjectCode: null,
-            chapterCode: null,
-            topicCode: null,
-            quizCode: null
-        };
-
-        let activeQuiz = {
-            status: 'inactive', 
-            quizData: null,
-            answers: {}, 
-            visited: new Set(),
-            review: new Set(),
-            currentIndex: 0,
-            timerInterval: null,
-            timeRemaining: 0,
-            isTimed: false,
-            quizStartedAt: null,
-            quizDurationSeconds: 0,
-            tabSwitches: 0
-        };
-
-        let pendingNavigation = null; 
-        let currentReportTarget = null;
-
-        function initApp() {
-            initFontSize();
-            initTheme();
-            validateQuizData();
+            // --- Theme Management ---
+            const themeToggleBtn = document.getElementById('theme-toggle');
+            const themeIcon = document.getElementById('theme-icon');
             
-            window.addEventListener('popstate', handlePopState);
-            document.addEventListener("visibilitychange", handleVisibilityChange);
+            const savedTheme = localStorage.getItem('studysphere-theme');
+            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            const isDark = savedTheme === 'dark' || (!savedTheme && prefersDark);
             
-            window.addEventListener('beforeunload', function (e) {
-                if (activeQuiz.status === 'active') {
-                    e.preventDefault();
-                    e.returnValue = '';
+            function applyTheme(dark) {
+                if (dark) {
+                    document.body.classList.add('dark-theme');
+                    themeIcon.classList.replace('ph-moon', 'ph-sun');
+                    localStorage.setItem('studysphere-theme', 'dark');
+                } else {
+                    document.body.classList.remove('dark-theme');
+                    themeIcon.classList.replace('ph-sun', 'ph-moon');
+                    localStorage.setItem('studysphere-theme', 'light');
                 }
+            }
+            
+            applyTheme(isDark);
+            
+            themeToggleBtn.addEventListener('click', () => {
+                applyTheme(!document.body.classList.contains('dark-theme'));
             });
 
-            restorePersistedState();
-        }
+            // --- Mobile Menu Toggle ---
+            const menuToggleBtn = document.getElementById('menu-toggle');
+            const menuIcon = document.getElementById('menu-icon');
+            const navMenu = document.getElementById('nav-menu');
 
-        function persistState() {
-            const stateToSave = {
-                appState,
-                activeQuizStatus: activeQuiz.status,
-                activeQuizCode: activeQuiz.quizData ? activeQuiz.quizData.quizCode : null,
-                answers: activeQuiz.answers,
-                visited: Array.from(activeQuiz.visited),
-                review: Array.from(activeQuiz.review),
-                currentIndex: activeQuiz.currentIndex,
-                isTimed: activeQuiz.isTimed,
-                quizStartedAt: activeQuiz.quizStartedAt,
-                quizDurationSeconds: activeQuiz.quizDurationSeconds,
-                tabSwitches: activeQuiz.tabSwitches
-            };
-            localStorage.setItem('studysphere_persisted_state', JSON.stringify(stateToSave));
-        }
+            function toggleMenu() {
+                navMenu.classList.toggle('open');
+                const isOpen = navMenu.classList.contains('open');
+                menuIcon.classList.replace(isOpen ? 'ph-list' : 'ph-x', isOpen ? 'ph-x' : 'ph-list');
+            }
+            menuToggleBtn.addEventListener('click', toggleMenu);
 
-        function restorePersistedState() {
-            const saved = localStorage.getItem('studysphere_persisted_state');
-            if (!saved) {
-                if (!history.state) history.replaceState({ view: 'home' }, '', '');
-                renderHome(false);
-                return;
+            // --- SPA Router ---
+            const validRoutes = ['home', 'about', 'contact', 'privacy', 'sitemap', 'terms'];
+            
+            function handleRouting() {
+                let hash = window.location.hash.replace('#', '');
+                
+                if (!hash || !validRoutes.includes(hash)) {
+                    hash = 'home';
+                    // Replace state quietly if URL is empty, so back button works correctly
+                    if(!window.location.hash) window.history.replaceState(null, null, '#home');
+                }
+
+                // Hide all views, show target view
+                document.querySelectorAll('.view').forEach(view => view.classList.remove('active'));
+                document.getElementById(`view-${hash}`).classList.add('active');
+
+                // Update nav links active state
+                document.querySelectorAll('.nav-link').forEach(link => {
+                    link.classList.toggle('active', link.getAttribute('href') === `#${hash}`);
+                });
+
+                // Close mobile menu if open
+                if (navMenu.classList.contains('open')) toggleMenu();
+
+                // Scroll to top instantly
+                window.scrollTo(0, 0);
             }
 
-            try {
-                const data = JSON.parse(saved);
-                appState = data.appState || { view: 'home' };
+            window.addEventListener('hashchange', handleRouting);
+            handleRouting(); // Initial load
 
-                if (data.activeQuizStatus === 'active' && data.activeQuizCode) {
-                    const quizzes = window.STUDYSPHERE_QUIZZES || [];
-                    const quiz = quizzes.find(q => q.quizCode === data.activeQuizCode);
-                    if (quiz) {
-                        activeQuiz.quizData = quiz;
-                        activeQuiz.status = 'active';
-                        activeQuiz.answers = data.answers || {};
-                        activeQuiz.visited = new Set(data.visited || []);
-                        activeQuiz.review = new Set(data.review || []);
-                        activeQuiz.currentIndex = data.currentIndex || 0;
-                        activeQuiz.isTimed = data.isTimed;
-                        activeQuiz.quizStartedAt = data.quizStartedAt;
-                        activeQuiz.quizDurationSeconds = data.quizDurationSeconds;
-                        activeQuiz.tabSwitches = data.tabSwitches || 0;
+            // --- Donation System ---
+            // HIDDEN UPI ID - USED ONLY IN JS MEMORY FOR DEEP LINK
+            const INTERNAL_UPI = "vikram.joshi9089@oksbi"; 
+            
+            const donateModal = document.getElementById('donate-modal');
+            const openDonateBtn = document.getElementById('open-donate-btn');
+            const closeDonateBtn = document.getElementById('close-donate-btn');
+            
+            const mobileFlow = document.getElementById('mobile-donate-flow');
+            const desktopFlow = document.getElementById('desktop-donate-flow');
+            
+            const customAmtInput = document.getElementById('custom-amount');
+            const amtBtns = document.querySelectorAll('.amt-btn');
+            const errorMsg = document.getElementById('donate-error');
 
-                        if (activeQuiz.isTimed && activeQuiz.quizStartedAt) {
-                            const elapsed = Math.floor((Date.now() - activeQuiz.quizStartedAt) / 1000);
-                            activeQuiz.timeRemaining = activeQuiz.quizDurationSeconds - elapsed;
-                            if (activeQuiz.timeRemaining <= 0) {
-                                forceSubmitQuiz();
-                                return;
-                            }
-                        }
+            const isMobileDevice = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 
-                        launchQuizInterfaceEngine();
+            // Open Modal
+            openDonateBtn.addEventListener('click', () => {
+                if (isMobileDevice) {
+                    mobileFlow.style.display = 'block';
+                    desktopFlow.style.display = 'none';
+                    customAmtInput.value = '';
+                    amtBtns.forEach(b => b.classList.remove('selected'));
+                    errorMsg.style.display = 'none';
+                } else {
+                    mobileFlow.style.display = 'none';
+                    desktopFlow.style.display = 'block';
+                }
+                donateModal.classList.add('active');
+            });
+
+            // Close Modal
+            function closeModal() { donateModal.classList.remove('active'); }
+            closeDonateBtn.addEventListener('click', closeModal);
+            donateModal.addEventListener('click', (e) => {
+                if (e.target === donateModal) closeModal();
+            });
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && donateModal.classList.contains('active')) closeModal();
+            });
+
+            // Mobile Flow Logic
+            if (mobileFlow) {
+                // Preset amounts
+                amtBtns.forEach(btn => {
+                    btn.addEventListener('click', () => {
+                        amtBtns.forEach(b => b.classList.remove('selected'));
+                        btn.classList.add('selected');
+                        customAmtInput.value = btn.getAttribute('data-val');
+                        errorMsg.style.display = 'none';
+                    });
+                });
+
+                // Custom amount input resets chips
+                customAmtInput.addEventListener('input', () => {
+                    amtBtns.forEach(b => b.classList.remove('selected'));
+                    errorMsg.style.display = 'none';
+                });
+
+                // Pay Now
+                document.getElementById('pay-now-btn').addEventListener('click', () => {
+                    const amount = parseFloat(customAmtInput.value);
+                    if (isNaN(amount) || amount <= 0) {
+                        errorMsg.style.display = 'block';
                         return;
                     }
-                } 
-
-                if (appState.view === 'subject' && appState.subjectCode) {
-                    renderSubject(appState.subjectCode, false);
-                } else if (appState.view === 'topic' && appState.topicCode) {
-                    renderTopic(appState.topicCode, appState.subjectCode, appState.chapterCode, false);
-                } else if (appState.view === 'result' && activeQuiz.status === 'finished') {
-                    renderResultScreen();
-                } else {
-                    renderHome(false);
-                }
-            } catch (e) {
-                console.error("Failed to restore state", e);
-                localStorage.removeItem('studysphere_persisted_state');
-                renderHome(false);
-            }
-        }
-
-        function handlePopState(event) {
-            if (activeQuiz.status === 'active') {
-                pendingNavigation = event.state || { view: 'home' };
-                history.pushState(appState, '', '');
-                openModal('quiz-exit-modal');
-                return;
-            }
-
-            const state = event.state;
-            if (!state || state.view === 'home') renderHome(false);
-            else if (state.view === 'subject') renderSubject(state.subjectCode, false);
-            else if (state.view === 'topic') renderTopic(state.topicCode, state.subjectCode, state.chapterCode, false);
-        }
-
-        function navigateSPA(targetViewId, pushToHistory = true, force = false) {
-            if (activeQuiz.status === 'active' && !force && targetViewId !== 'view-quiz') {
-                pendingNavigation = { view: targetViewId };
-                openModal('quiz-exit-modal');
-                return;
-            }
-
-            document.querySelectorAll('.view').forEach(v => {
-                if(v.id !== 'view-quiz') {
-                    v.classList.remove('active');
-                    v.style.display = 'none';
-                }
-            });
-            
-            const target = document.getElementById(targetViewId);
-            if (target) {
-                target.style.display = 'block';
-                setTimeout(() => target.classList.add('active'), 10);
-            }
-            window.scrollTo(0, 0);
-            
-            if(targetViewId === 'view-home' && document.getElementById('sidebar').classList.contains('open')) {
-                 toggleSidebar();
-            }
-
-            if (pushToHistory && targetViewId === 'view-home') {
-                appState = { view: 'home', subjectCode: null, chapterCode: null, topicCode: null };
-                history.pushState(appState, '', '');
-                persistState();
-            }
-        }
-
-        function goBack() {
-            if (activeQuiz.status === 'active') {
-                pendingNavigation = { view: 'topic', subjectCode: activeQuiz.quizData.subjectCode, chapterCode: activeQuiz.quizData.chapterCode, topicCode: activeQuiz.quizData.topicCode };
-                openModal('quiz-exit-modal');
-                return;
-            }
-            window.history.back();
-        }
-
-        function renderHome(pushToHistory = true) {
-            if (pushToHistory) {
-                appState = { view: 'home', subjectCode: null, chapterCode: null, topicCode: null };
-                history.pushState(appState, '', '');
-                persistState();
-            } else {
-                appState.view = 'home';
-            }
-
-            const commonGrid = document.getElementById('common-subjects-grid');
-            const mainsGrid = document.getElementById('mains-subjects-grid');
-            
-            commonGrid.innerHTML = '';
-            mainsGrid.innerHTML = '';
-
-            syllabusData.forEach(subject => {
-                const badgeClass = subject.section === 'COMMON' ? 'badge-common' : 'badge-mains';
-                const badgeText = subject.section === 'COMMON' ? 'Prelims + Mains' : 'Mains';
-
-                const cardHTML = `
-                    <div class="subject-card" onclick="renderSubject('${subject.code}')" role="button" tabindex="0">
-                        <span class="subject-badge ${badgeClass}">${badgeText}</span>
-                        <div class="subject-info">
-                            <h3>${subject.subjectMr}</h3>
-                            <span>${subject.subjectEn}</span>
-                        </div>
-                        <div class="subject-footer"><i class="fas fa-arrow-right subject-arrow"></i></div>
-                    </div>
-                `;
-
-                if (subject.section === 'COMMON') commonGrid.innerHTML += cardHTML;
-                else mainsGrid.innerHTML += cardHTML;
-            });
-
-            navigateSPA('view-home', false);
-        }
-        
-        function renderSubject(subjectCode, pushToHistory = true) {
-            const subject = syllabusData.find(s => s.code === subjectCode);
-            if (!subject) return navigateSPA('view-error');
-
-            if (pushToHistory) {
-                appState = { view: 'subject', subjectCode: subjectCode, chapterCode: null, topicCode: null };
-                history.pushState(appState, '', '');
-                persistState();
-            } else {
-                appState.view = 'subject'; appState.subjectCode = subjectCode;
-            }
-
-            let chaptersHTML = '';
-            subject.chapters.forEach((chapter, index) => {
-                let topicsHTML = '';
-                chapter.topics.forEach(topic => {
-                    topicsHTML += `
-                        <div class="topic-item" onclick="renderTopic('${topic.code}', '${subject.code}', '${chapter.code}')" role="button" tabindex="0">
-                            <div class="topic-info">
-                                <h5>${topic.topicMr}</h5><span>${topic.topicEn}</span>
-                            </div>
-                            <i class="fas fa-chevron-right topic-arrow"></i>
-                        </div>
-                    `;
-                });
-
-                chaptersHTML += `
-                    <div class="chapter-card" id="chapter-${chapter.code}">
-                        <div class="chapter-header" onclick="toggleChapter('${chapter.code}')" aria-expanded="false" role="button" tabindex="0">
-                            <div class="chapter-title-group">
-                                <div class="chapter-number">${String(index + 1).padStart(2, '0')}</div>
-                                <div class="chapter-names">
-                                    <h4>${chapter.chapterMr}</h4><span>${chapter.chapterEn}</span>
-                                </div>
-                            </div>
-                            <i class="fas fa-chevron-down chapter-toggle-icon"></i>
-                        </div>
-                        <div class="topic-list" aria-hidden="true">${topicsHTML}</div>
-                    </div>
-                `;
-            });
-
-            document.getElementById('view-subject').innerHTML = `
-                <div class="breadcrumb">
-                    <a onclick="renderHome()">Home</a>
-                    <span class="separator"><i class="fas fa-chevron-right"></i></span>
-                    <span class="current">${subject.subjectEn}</span>
-                </div>
-                <div class="back-header"><button class="btn-back" onclick="goBack()"><i class="fas fa-arrow-left"></i> Back</button></div>
-                <div class="view-header"><h2>${subject.subjectMr}</h2><p>${subject.subjectEn}</p></div>
-                <div class="section-title">Chapters (${subject.chapters.length})</div>
-                <div class="chapter-container">${chaptersHTML}</div>
-            `;
-            navigateSPA('view-subject', false);
-        }
-        
-        function toggleChapter(chapterCode) {
-            const card = document.getElementById(`chapter-${chapterCode}`);
-            const isOpen = card.classList.contains('open');
-            card.classList.toggle('open');
-            card.querySelector('.chapter-header').setAttribute('aria-expanded', !isOpen);
-            card.querySelector('.topic-list').setAttribute('aria-hidden', isOpen);
-        }
-        
-        function renderTopic(topicCode, subjectCode, chapterCode, pushToHistory = true) {
-            const subject = syllabusData.find(s => s.code === subjectCode);
-            if (!subject) return navigateSPA('view-error');
-            const chapter = subject.chapters.find(c => c.code === chapterCode);
-            if (!chapter) return navigateSPA('view-error');
-            const topic = chapter.topics.find(t => t.code === topicCode);
-            if (!topic) return navigateSPA('view-error');
-
-            if (pushToHistory) {
-                appState = { view: 'topic', subjectCode: subjectCode, chapterCode: chapterCode, topicCode: topicCode };
-                history.pushState(appState, '', '');
-                persistState();
-            } else {
-                appState.view = 'topic'; appState.topicCode = topicCode; appState.subjectCode = subjectCode; appState.chapterCode = chapterCode;
-            }
-
-            let quizCardsHTML = '';
-            const allQuizzes = window.STUDYSPHERE_QUIZZES || [];
-            if (allQuizzes.length > 0) {
-                const seenQuizCodes = new Set();
-                const matchedQuizzes = allQuizzes.filter(q => {
-                    if (q.topicCode === topicCode && !seenQuizCodes.has(q.quizCode)) {
-                        seenQuizCodes.add(q.quizCode); return true;
-                    } return false;
-                });
-                
-                matchedQuizzes.forEach((quiz, index) => {
-                    const typeBadge = quiz.quizType === 'test' ? 'badge-test' : 'badge-practice';
-                    const typeText = quiz.quizType === 'test' ? 'Test Quiz' : 'Practice Quiz';
-                    const negText = quiz.negativeMarks ? `<span class="meta-item"><i class="fas fa-minus-circle"></i> -${quiz.negativeMarks} Neg</span>` : '';
-                    const timeText = quiz.timeLimit ? `<span class="meta-item"><i class="fas fa-clock"></i> ${quiz.timeLimit} Mins</span>` : '<span class="meta-item"><i class="fas fa-infinity"></i> No Limit</span>';
                     
-                    quizCardsHTML += `
-                        <div class="quiz-card">
-                            <div class="quiz-card-header">
-                                <span class="quiz-number">Quiz ${String(index + 1).padStart(2, '0')}</span>
-                                <span class="quiz-badge ${typeBadge}">${typeText}</span>
-                            </div>
-                            <div class="quiz-titles">
-                                <h3>${quiz.titleMr}</h3><p>${quiz.titleEn}</p>
-                            </div>
-                            <div class="quiz-desc">${quiz.descriptionMr}</div>
-                            <div class="quiz-meta">
-                                <span class="meta-item"><i class="fas fa-list-ol"></i> ${quiz.questions.length} Questions</span>
-                                <span class="meta-item"><i class="fas fa-check-circle"></i> ${quiz.marksPerQuestion} Mark/Q</span>
-                                ${negText}
-                                ${timeText}
-                            </div>
-                            <button class="btn btn-save" onclick="openQuizStartModal('${quiz.quizCode}')">
-                                <i class="fas fa-play-circle"></i> Start Quiz
-                            </button>
-                        </div>
-                    `;
+                    // Generate UPI URI
+                    const upiLink = `upi://pay?pa=${INTERNAL_UPI}&pn=StudySphere&am=${amount}&cu=INR`;
+                    
+                    // Trigger deep link (attempts to open native UPI app)
+                    window.location.href = upiLink;
                 });
             }
-
-            const contentHTML = quizCardsHTML || `
-                <div class="no-quiz-card">
-                    <i class="fas fa-hourglass-half" style="font-size: 2rem; margin-bottom: 1rem;"></i>
-                    <h3>या Topic साठी Quiz लवकरच उपलब्ध होईल.</h3><p style="margin-top:0.5rem;">Quiz for this topic will be available soon.</p>
-                </div>
-            `;
-
-            document.getElementById('view-topic').innerHTML = `
-                <div class="breadcrumb">
-                    <a onclick="renderHome()">Home</a><span class="separator"><i class="fas fa-chevron-right"></i></span>
-                    <a onclick="renderSubject('${subject.code}')">${subject.subjectEn}</a><span class="separator"><i class="fas fa-chevron-right"></i></span>
-                    <span class="current">${chapter.chapterEn}</span>
-                </div>
-                <div class="back-header"><button class="btn-back" onclick="goBack()"><i class="fas fa-arrow-left"></i> Back</button></div>
-                <div class="view-header" style="margin-bottom: 2rem;">
-                    <h2>${topic.topicMr}</h2><p>${topic.topicEn}</p>
-                    <div style="font-size:0.75rem; color:var(--text-secondary); margin-top:0.5rem; font-family:monospace;">Code: ${topic.code}</div>
-                </div>
-                <div class="section-title">Available Quizzes</div>
-                ${contentHTML}
-            `;
-            navigateSPA('view-topic', false);
-        }
-
-        function openQuizStartModal(quizCode) {
-            const quizzes = window.STUDYSPHERE_QUIZZES || [];
-            const quiz = quizzes.find(q => q.quizCode === quizCode);
-            if (!quiz) return;
-            
-            const timeLimitOptions = `
-                <div style="margin-top:1.25rem;">
-                    <label style="font-weight:600; display:block; margin-bottom:0.5rem; font-size:0.9rem;">Timer Option:</label>
-                    <div style="display:flex; gap:1rem; flex-wrap:wrap; margin-bottom:1rem;">
-                        <label style="display:flex; align-items:center; gap:0.5rem; cursor:pointer; font-size:0.9rem;">
-                            <input type="radio" name="quiz-timer-type" value="timed" checked onchange="toggleCustomTime(true)"> Timed Quiz
-                        </label>
-                        <label style="display:flex; align-items:center; gap:0.5rem; cursor:pointer; font-size:0.9rem;">
-                            <input type="radio" name="quiz-timer-type" value="untimed" onchange="toggleCustomTime(false)"> Without Time Limit
-                        </label>
-                    </div>
-                    <div id="custom-time-wrapper">
-                        <label style="font-size:0.85rem; color:var(--text-secondary);">Enter time in minutes (1-600):</label>
-                        <input type="number" id="quiz-custom-time" class="form-control" value="${quiz.timeLimit || 10}" min="1" max="600" style="margin-top:0.25rem;">
-                        <p id="quiz-time-error" style="color:#ef4444; font-size:0.85rem; display:none;"></p>
-                    </div>
-                </div>
-            `;
-
-            document.getElementById('quiz-start-body').innerHTML = `
-                <h3 style="color:var(--text-primary); margin-bottom:0.4rem; font-size:1.1rem;">${quiz.titleMr}</h3>
-                <p style="color:var(--text-secondary); margin-bottom:1rem; font-size:0.9rem;">${quiz.titleEn}</p>
-                <div style="display:grid; grid-template-columns:1fr 1fr; gap:0.5rem; background:var(--surface-hover); padding:0.85rem; border-radius:6px; border:1px solid var(--border-color); font-size:0.85rem;">
-                    <div><strong>Questions:</strong> ${quiz.questions.length}</div>
-                    <div><strong>Marks/Q:</strong> ${quiz.marksPerQuestion}</div>
-                    <div><strong>Negative:</strong> ${quiz.negativeMarks ? '-' + quiz.negativeMarks : 'None'}</div>
-                    <div><strong>Type:</strong> <span style="text-transform:capitalize;">${quiz.quizType}</span></div>
-                </div>
-                ${timeLimitOptions}
-                <button class="btn btn-save" style="width:100%; margin-top:1.25rem;" onclick="validateAndStartQuiz('${quizCode}')">
-                    <i class="fas fa-play"></i> Start Quiz
-                </button>
-            `;
-            openModal('quiz-start-modal');
-        }
-
-        function toggleCustomTime(show) {
-            document.getElementById('custom-time-wrapper').style.display = show ? 'block' : 'none';
-        }
-
-        function validateAndStartQuiz(quizCode) {
-            const isTimed = document.querySelector('input[name="quiz-timer-type"]:checked').value === 'timed';
-            let timeLimit = null;
-
-            if (isTimed) {
-                timeLimit = parseInt(document.getElementById('quiz-custom-time').value);
-                const err = document.getElementById('quiz-time-error');
-                if (!timeLimit || isNaN(timeLimit) || timeLimit < 1 || timeLimit > 600) {
-                    err.innerText = "Please enter a valid whole number between 1 and 600.";
-                    err.style.display = 'block';
-                    return;
-                }
-                err.style.display = 'none';
-            }
-
-            closeModal('quiz-start-modal');
-            initNewQuizSession(quizCode, timeLimit);
-        }
-
-        function initNewQuizSession(quizCode, timeLimitInMinutes) {
-            const quizzes = window.STUDYSPHERE_QUIZZES || [];
-            const quiz = quizzes.find(q => q.quizCode === quizCode);
-            if (!quiz) return;
-
-            activeQuiz = {
-                status: 'active',
-                quizData: quiz,
-                answers: {},
-                visited: new Set(),
-                review: new Set(),
-                currentIndex: 0,
-                timerInterval: null,
-                timeRemaining: timeLimitInMinutes ? timeLimitInMinutes * 60 : 0,
-                isTimed: !!timeLimitInMinutes,
-                quizStartedAt: timeLimitInMinutes ? Date.now() : null,
-                quizDurationSeconds: timeLimitInMinutes ? timeLimitInMinutes * 60 : 0,
-                tabSwitches: 0
-            };
-
-            if (quiz.questions.length > 0) {
-                activeQuiz.visited.add(quiz.questions[0].questionId);
-            }
-
-            persistState();
-            launchQuizInterfaceEngine();
-        }
-
-        function launchQuizInterfaceEngine() {
-            const quiz = activeQuiz.quizData;
-            if (!quiz) return;
-
-            document.getElementById('exam-quiz-title').innerText = quiz.titleMr;
-            
-            const timerDisplay = document.getElementById('q-timer-display');
-            if (activeQuiz.isTimed) {
-                timerDisplay.style.display = 'flex';
-                startTimerEngine();
-            } else {
-                timerDisplay.style.display = 'none';
-            }
-
-            buildPaletteGrid();
-            renderQuizQuestion(activeQuiz.currentIndex);
-            
-            document.querySelectorAll('.view').forEach(v => {
-                v.classList.remove('active');
-                v.style.display = 'none';
-            });
-            const qView = document.getElementById('view-quiz');
-            qView.style.display = 'flex';
-            qView.classList.add('active');
-            window.scrollTo(0, 0);
-        }
-
-        function buildPaletteGrid() {
-            let paletteGrid = '';
-            activeQuiz.quizData.questions.forEach((q, i) => {
-                paletteGrid += `<button id="p-btn-${i}" class="p-btn s-unvisited" onclick="goToQuestion(${i})">${i + 1}</button>`;
-            });
-            document.getElementById('exam-palette-grid').innerHTML = paletteGrid;
-        }
-
-        function renderQuizQuestion(index) {
-            const q = activeQuiz.quizData.questions[index];
-            activeQuiz.currentIndex = index;
-            document.getElementById('q-num-display').innerText = `Q ${index + 1} of ${activeQuiz.quizData.questions.length}`;
-
-            let optionsHTML = '';
-            const selectedOpt = activeQuiz.answers[q.questionId];
-
-            ['A', 'B', 'C', 'D'].forEach(optKey => {
-                const isSelected = selectedOpt === optKey;
-                optionsHTML += `
-                    <div class="option-label ${isSelected ? 'selected' : ''}" onclick="handleOptionSelect('${optKey}')" id="opt-${optKey}">
-                        <div class="opt-char">${optKey}</div>
-                        <div class="opt-texts">
-                            <span class="opt-mr">${q.options[optKey].mr}</span>
-                            <span class="opt-en">${q.options[optKey].en}</span>
-                        </div>
-                    </div>
-                `;
-            });
-
-            document.getElementById('q-render-area').innerHTML = `
-                <div class="question-box">
-                    <div class="q-text-mr">${q.questionMr}</div>
-                    <div class="q-text-en">${q.questionEn}</div>
-                </div>
-                <div class="options-list">
-                    ${optionsHTML}
-                </div>
-            `;
-
-            updateQuestionPalette();
-            persistState();
-        }
-
-        function handleOptionSelect(optKey) {
-            const qId = activeQuiz.quizData.questions[activeQuiz.currentIndex].questionId;
-            activeQuiz.answers[qId] = optKey;
-            
-            ['A', 'B', 'C', 'D'].forEach(k => {
-                const el = document.getElementById(`opt-${k}`);
-                if(el) el.classList.remove('selected');
-            });
-            const target = document.getElementById(`opt-${optKey}`);
-            if(target) target.classList.add('selected');
-            
-            updateQuestionPalette();
-        }
-
-        function saveAndNext() {
-            if (activeQuiz.currentIndex < activeQuiz.quizData.questions.length - 1) {
-                goToQuestion(activeQuiz.currentIndex + 1);
-            } else {
-                const btn = document.querySelector('.exam-footer-controls .btn-save');
-                const originalText = btn.innerHTML;
-                btn.innerHTML = 'Last Q';
-                setTimeout(() => btn.innerHTML = originalText, 1200);
-            }
-        }
-
-        function clearResponse() {
-            const qId = activeQuiz.quizData.questions[activeQuiz.currentIndex].questionId;
-            delete activeQuiz.answers[qId];
-            
-            ['A', 'B', 'C', 'D'].forEach(k => {
-                const el = document.getElementById(`opt-${k}`);
-                if(el) el.classList.remove('selected');
-            });
-            updateQuestionPalette();
-        }
-
-        function toggleMarkForReview() {
-            const qId = activeQuiz.quizData.questions[activeQuiz.currentIndex].questionId;
-            if (activeQuiz.review.has(qId)) activeQuiz.review.delete(qId);
-            else activeQuiz.review.add(qId);
-            updateQuestionPalette();
-        }
-
-        function goToQuestion(index) {
-            const qId = activeQuiz.quizData.questions[index].questionId;
-            activeQuiz.visited.add(qId);
-            renderQuizQuestion(index);
-            toggleMobilePalette(false);
-        }
-
-        function toggleMobilePalette(open) {
-            const palettePanel = document.getElementById('exam-sidebar-palette');
-            if (open) {
-                palettePanel.classList.add('mobile-open');
-            } else {
-                palettePanel.classList.remove('mobile-open');
-            }
-        }
-
-        function updateQuestionPalette() {
-            activeQuiz.quizData.questions.forEach((q, i) => {
-                const btn = document.getElementById(`p-btn-${i}`);
-                if (!btn) return;
-                
-                btn.className = 'p-btn';
-                const qId = q.questionId;
-                const isVisited = activeQuiz.visited.has(qId);
-                const isAnswered = !!activeQuiz.answers[qId];
-                const isReview = activeQuiz.review.has(qId);
-
-                if (isReview && isAnswered) btn.classList.add('s-review-ans');
-                else if (isReview) btn.classList.add('s-review');
-                else if (isAnswered) btn.classList.add('s-answered');
-                else if (isVisited) btn.classList.add('s-visited');
-                else btn.classList.add('s-unvisited');
-                
-                if (i === activeQuiz.currentIndex) {
-                    btn.style.boxShadow = '0 0 0 2px var(--bg-color), 0 0 0 4px var(--primary-color)';
-                } else {
-                    btn.style.boxShadow = 'none';
-                }
-            });
-        }
-
-        function startTimerEngine() {
-            if (activeQuiz.timerInterval) clearInterval(activeQuiz.timerInterval);
-            
-            updateTimerDisplay();
-            activeQuiz.timerInterval = setInterval(() => {
-                const elapsed = Math.floor((Date.now() - activeQuiz.quizStartedAt) / 1000);
-                activeQuiz.timeRemaining = activeQuiz.quizDurationSeconds - elapsed;
-                
-                updateTimerDisplay();
-                
-                if (activeQuiz.timeRemaining <= 0) {
-                    clearInterval(activeQuiz.timerInterval);
-                    activeQuiz.timeRemaining = 0;
-                    forceSubmitQuiz();
-                }
-            }, 1000);
-        }
-
-        function updateTimerDisplay() {
-            if (!activeQuiz.isTimed) return;
-            const rem = Math.max(0, activeQuiz.timeRemaining);
-            const m = Math.floor(rem / 60);
-            const s = rem % 60;
-            const timeTextEl = document.getElementById('q-time-text');
-            if (timeTextEl) {
-                timeTextEl.innerText = `${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`;
-            }
-        }
-
-        function openSubmitConfirmation() {
-            let answered = 0;
-            let review = 0;
-            
-            activeQuiz.quizData.questions.forEach(q => {
-                if(activeQuiz.answers[q.questionId]) answered++;
-                if(activeQuiz.review.has(q.questionId)) review++;
-            });
-
-            const notAnswered = activeQuiz.quizData.questions.length - answered;
-
-            document.getElementById('quiz-submit-body').innerHTML = `
-                <p style="margin-bottom:1.25rem; font-size:0.95rem;">Are you sure you want to submit the quiz?</p>
-                <div style="background:var(--surface-hover); padding:0.85rem; border-radius:6px; border:1px solid var(--border-color); margin-bottom:1.25rem; display:grid; gap:0.4rem; font-size:0.9rem;">
-                    <div style="display:flex; justify-content:space-between;"><span>Answered:</span> <strong>${answered}</strong></div>
-                    <div style="display:flex; justify-content:space-between;"><span>Not Answered / Skipped:</span> <strong>${notAnswered}</strong></div>
-                    <div style="display:flex; justify-content:space-between;"><span>Marked for Review:</span> <strong>${review}</strong></div>
-                </div>
-                <div style="display:flex; gap:0.75rem;">
-                    <button class="btn btn-outline" style="flex:1;" onclick="closeModal('quiz-submit-modal')">Cancel</button>
-                    <button class="btn btn-submit-q" style="flex:1;" onclick="forceSubmitQuiz()">Submit Quiz</button>
-                </div>
-            `;
-            openModal('quiz-submit-modal');
-        }
-
-        function forceSubmitQuiz() {
-            closeModal('quiz-submit-modal');
-            if (activeQuiz.timerInterval) clearInterval(activeQuiz.timerInterval);
-            activeQuiz.status = 'finished';
-            
-            appState.view = 'result';
-            persistState();
-            renderResultScreen();
-        }
-
-        function renderResultScreen() {
-            const quiz = activeQuiz.quizData;
-            const totalQ = quiz.questions.length;
-            const marksPerQ = quiz.marksPerQuestion;
-            const negMarks = quiz.negativeMarks || 0;
-            
-            let correctCount = 0;
-            let wrongCount = 0;
-            let skippedCount = 0;
-
-            let qaHTML = '';
-
-            quiz.questions.forEach((q, i) => {
-                const userAns = activeQuiz.answers[q.questionId];
-                const isSkipped = !userAns;
-                let isCorrect = false;
-                
-                if (isSkipped) {
-                    skippedCount++;
-                } else if (userAns === q.correctAnswer) {
-                    isCorrect = true;
-                    correctCount++;
-                } else {
-                    wrongCount++;
-                }
-
-                let resBadge = isSkipped ? '<span class="qa-res res-skipped">Skipped</span>' 
-                             : isCorrect ? '<span class="qa-res res-correct"><i class="fas fa-check"></i> Correct</span>' 
-                             : '<span class="qa-res res-wrong"><i class="fas fa-times"></i> Wrong</span>';
-                
-                let userAnsText = isSkipped ? '<span style="color:var(--text-secondary)">Not Answered</span>' 
-                                : `<strong>${userAns}</strong>: ${q.options[userAns].mr}`;
-                let correctAnsText = `<strong>${q.correctAnswer}</strong>: ${q.options[q.correctAnswer].mr}`;
-
-                qaHTML += `
-                    <div class="qa-card">
-                        <div class="qa-header">
-                            <span class="qa-num">Q ${i + 1}</span>
-                            ${resBadge}
-                        </div>
-                        <div class="qa-q">${q.questionMr}<br><span style="font-size:0.9rem; color:var(--text-secondary);">${q.questionEn}</span></div>
-                        <div class="ans-block">
-                            <div class="ans-box"><div class="ans-box-title">Your Answer</div><div class="ans-text">${userAnsText}</div></div>
-                            <div class="ans-box" style="background:rgba(16,185,129,0.05); border-color:rgba(16,185,129,0.2);"><div class="ans-box-title" style="color:#10b981;">Correct Answer</div><div class="ans-text">${correctAnsText}</div></div>
-                        </div>
-                        <div class="qa-exp">
-                            <h4>Explanation / स्पष्टीकरण:</h4>
-                            <p>${q.explanationMr}</p>
-                            <p style="font-size:0.8rem;">${q.explanationEn}</p>
-                        </div>
-                    </div>
-                `;
-            });
-
-            const correctMarks = correctCount * marksPerQ;
-            const negativeDeduction = wrongCount * negMarks;
-            const finalScore = correctMarks - negativeDeduction;
-            const maxScore = totalQ * marksPerQ;
-            const attempted = correctCount + wrongCount;
-            const accuracy = attempted > 0 ? ((correctCount / attempted) * 100).toFixed(2) : 0;
-            const percentage = maxScore > 0 ? ((finalScore / maxScore) * 100).toFixed(2) : 0;
-
-            document.getElementById('view-result').innerHTML = `
-                <div class="back-header" style="max-width:1200px; margin:0 auto 1.5rem; width:100%; padding:0 1rem; box-sizing:border-box;">
-                    <button class="btn-back" onclick="retakeQuiz()"><i class="fas fa-redo"></i> Retake</button> 
-                    <button class="btn-back" onclick="returnToTopicFromQuiz()"><i class="fas fa-arrow-left"></i> Topic</button>
-                    <button class="btn-back" style="margin-left:auto;" onclick="renderHome(true)"><i class="fas fa-home"></i> Home</button>
-                </div>
-                
-                <div style="max-width:1200px; margin:0 auto; width:100%; padding:0 1rem; box-sizing:border-box;">
-                    <div class="scorecard">
-                        <h2>Quiz Result</h2>
-                        <p style="color:var(--text-secondary); font-size:0.95rem;">${quiz.titleMr}</p>
-                        
-                        <div class="scorecard-grid">
-                            <div class="stat-box"><div class="stat-value">${totalQ}</div><div class="stat-label">Total Qs</div></div>
-                            <div class="stat-box"><div class="stat-value" style="color:#10b981;">${correctCount}</div><div class="stat-label">Correct</div></div>
-                            <div class="stat-box"><div class="stat-value" style="color:#ef4444;">${wrongCount}</div><div class="stat-label">Wrong</div></div>
-                            <div class="stat-box"><div class="stat-value" style="color:#64748b;">${skippedCount}</div><div class="stat-label">Skipped</div></div>
-                            <div class="stat-box"><div class="stat-value">${correctMarks.toFixed(2)}</div><div class="stat-label">Correct Marks</div></div>
-                            <div class="stat-box"><div class="stat-value" style="color:#ef4444;">-${negativeDeduction.toFixed(2)}</div><div class="stat-label">Negative</div></div>
-                            <div class="stat-box highlight"><div class="stat-value">${finalScore.toFixed(2)} / ${maxScore}</div><div class="stat-label">Final Score</div></div>
-                            <div class="stat-box"><div class="stat-value" style="color:var(--primary-color);">${accuracy}%</div><div class="stat-label">Accuracy</div></div>
-                            <div class="stat-box"><div class="stat-value" style="color:var(--primary-color);">${percentage}%</div><div class="stat-label">Percentage</div></div>
-                        </div>
-                    </div>
-
-                    <div class="section-title">Question Analysis</div>
-                    ${qaHTML}
-                    
-                    <div style="text-align:center; margin:2rem 0;">
-                        <button class="btn btn-save" onclick="window.scrollTo(0,0)"><i class="fas fa-arrow-up"></i> Back to Top</button>
-                    </div>
-                </div>
-            `;
-
-            document.querySelectorAll('.view').forEach(v => {
-                v.classList.remove('active');
-                v.style.display = 'none';
-            });
-            const rView = document.getElementById('view-result');
-            rView.style.display = 'block';
-            rView.classList.add('active');
-            window.scrollTo(0, 0);
-        }
-
-        function retakeQuiz() {
-            initNewQuizSession(activeQuiz.quizData.quizCode, activeQuiz.isTimed ? Math.floor(activeQuiz.quizDurationSeconds / 60) : null);
-        }
-
-        function returnToTopicFromQuiz() {
-            activeQuiz.status = 'inactive';
-            localStorage.removeItem('studysphere_persisted_state');
-            renderTopic(activeQuiz.quizData.topicCode, activeQuiz.quizData.subjectCode, activeQuiz.quizData.chapterCode, true);
-        }
-
-        function resumeQuizNavigation(leave) {
-            if (leave) {
-                if (activeQuiz.timerInterval) clearInterval(activeQuiz.timerInterval);
-                activeQuiz.status = 'inactive';
-                localStorage.removeItem('studysphere_persisted_state');
-                
-                if (pendingNavigation.view === 'home') renderHome();
-                else if (pendingNavigation.view === 'subject') renderSubject(pendingNavigation.subjectCode);
-                else if (pendingNavigation.view === 'topic') renderTopic(pendingNavigation.topicCode, pendingNavigation.subjectCode, pendingNavigation.chapterCode);
-            }
-        }
-
-        function handleVisibilityChange() {
-            if (document.hidden && activeQuiz.status === 'active') {
-                activeQuiz.tabSwitches++;
-                persistState();
-            }
-        }
-
-        function openReportModal() {
-            if (!activeQuiz.quizData) return;
-            const q = activeQuiz.quizData.questions[activeQuiz.currentIndex];
-            currentReportTarget = q;
-            
-            document.getElementById('report-q-meta').innerText = `Quiz: ${activeQuiz.quizData.quizCode} | Q.ID: ${q.questionId}`;
-            document.getElementById('report-reason').value = '';
-            document.getElementById('report-details').value = '';
-            document.getElementById('details-star').style.display = 'none';
-            
-            document.getElementById('report-reason').onchange = function() {
-                if (this.value === 'Other') {
-                    document.getElementById('details-star').style.display = 'inline';
-                } else {
-                    document.getElementById('details-star').style.display = 'none';
-                }
-            };
-            
-            openModal('report-modal');
-        }
-
-        function submitQuestionReport() {
-            const reason = document.getElementById('report-reason').value;
-            const details = document.getElementById('report-details').value.trim();
-            
-            if (!reason) { alert("Please select a reason."); return; }
-            if (reason === 'Other' && !details) { alert("Please provide details for 'Other' reason."); return; }
-
-            const q = currentReportTarget || activeQuiz.quizData.questions[activeQuiz.currentIndex];
-            
-            const report = {
-                reportId: 'REP-' + Date.now(),
-                timestamp: new Date().toISOString(),
-                questionId: q.questionId,
-                quizCode: activeQuiz.quizData.quizCode,
-                subjectCode: activeQuiz.quizData.subjectCode,
-                chapterCode: activeQuiz.quizData.chapterCode,
-                topicCode: activeQuiz.quizData.topicCode,
-                questionMr: q.questionMr,
-                questionEn: q.questionEn,
-                options: q.options,
-                correctAnswer: q.correctAnswer,
-                reason: reason,
-                details: details
-            };
-
-            let reports = JSON.parse(localStorage.getItem('studysphere_question_reports') || '[]');
-            reports.push(report);
-            localStorage.setItem('studysphere_question_reports', JSON.stringify(reports));
-
-            closeModal('report-modal');
-
-            const payloadText = `StudySphere — Question Report\n` +
-                `Question ID: ${report.questionId}\n` +
-                `Quiz Code: ${report.quizCode}\n` +
-                `Subject: ${report.subjectCode} | Chapter: ${report.chapterCode} | Topic: ${report.topicCode}\n` +
-                `Reason: ${report.reason}\n` +
-                `Details: ${report.details || 'None'}\n` +
-                `Question (MR): ${report.questionMr}\n` +
-                `Options: A. ${report.options.A.mr} | B. ${report.options.B.mr} | C. ${report.options.C.mr} | D. ${report.options.D.mr}\n` +
-                `Correct Answer Key: ${report.correctAnswer}`;
-
-            document.getElementById('report-payload-box').value = payloadText;
-            
-            // Set up direct Telegram pre-fill link share URL
-            const encodedText = encodeURIComponent(payloadText);
-            document.getElementById('telegram-link-btn').href = `https://t.me/share/url?url=${encodeURIComponent('https://t.me/+va0AGcqvCdQzNTI1')}&text=${encodedText}`;
-
-            openModal('report-success-modal');
-        }
-
-        function copyReportPayload() {
-            const box = document.getElementById('report-payload-box');
-            box.select();
-            document.execCommand('copy');
-            alert("Report payload copied to clipboard successfully!");
-        }
-
-        let currentFontSize = 16;
-        function initFontSize() {
-            const savedSize = localStorage.getItem('studySphere_fontSize');
-            if (savedSize) { currentFontSize = parseInt(savedSize); applyFontSize(); }
-        }
-        function changeFontSize(step) {
-            if (step > 0 && currentFontSize < 22) currentFontSize += 2;
-            if (step < 0 && currentFontSize > 12) currentFontSize -= 2;
-            applyFontSize(); localStorage.setItem('studySphere_fontSize', currentFontSize);
-        }
-        function resetFontSize() {
-            currentFontSize = 16; applyFontSize(); localStorage.setItem('studySphere_fontSize', currentFontSize);
-        }
-        function applyFontSize() {
-            document.documentElement.style.setProperty('--base-font-size', currentFontSize + 'px');
-        }
-
-        function initTheme() {
-            const savedTheme = localStorage.getItem('studySphere_theme');
-            if (savedTheme) {
-                document.documentElement.setAttribute('data-theme', savedTheme);
-                updateThemeIcon(savedTheme);
-            } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-                document.documentElement.setAttribute('data-theme', 'dark');
-                updateThemeIcon('dark');
-            }
-        }
-        function toggleTheme() {
-            const currentTheme = document.documentElement.getAttribute('data-theme') || 'light';
-            const newTheme = currentTheme === 'light' ? 'dark' : 'light';
-            document.documentElement.setAttribute('data-theme', newTheme);
-            localStorage.setItem('studySphere_theme', newTheme);
-            updateThemeIcon(newTheme);
-        }
-        function updateThemeIcon(theme) {
-            const btn = document.getElementById('theme-toggle');
-            if (theme === 'dark') btn.innerHTML = '<i class="fas fa-sun"></i> Light';
-            else btn.innerHTML = '<i class="fas fa-moon"></i> Theme';
-        }
-
-        function toggleSidebar() {
-            document.getElementById('sidebar').classList.toggle('open');
-            document.querySelector('.sidebar-overlay').classList.toggle('active');
-        }
-        function openModal(modalId) { document.getElementById(modalId).classList.add('active'); }
-        function closeModal(modalId) { document.getElementById(modalId).classList.remove('active'); }
-        function closeModalOutside(event, modalId) { if (event.target.id === modalId) closeModal(modalId); }
-
-        function initiateUPIPayment() {
-            const val = document.getElementById('custom-donation').value;
-            if(!val || val < 1) { alert("Please enter a valid amount."); return; }
-            window.location.href = `upi://pay?pa=vikram.joshi9089@oksbi&pn=StudySphere&am=${val}&cu=INR`;
-            setTimeout(() => { closeModal('donate-modal'); }, 1000);
-        }
-
-        function validateQuizData() {
-            const quizzes = window.STUDYSPHERE_QUIZZES || [];
-            const quizCodes = new Set();
-            quizzes.forEach(quiz => {
-                if(quizCodes.has(quiz.quizCode)) console.warn(`Duplicate quizCode: ${quiz.quizCode}`);
-                quizCodes.add(quiz.quizCode);
-            });
-        }
-
-        window.onload = initApp;
+        });
     </script>
 </body>
 </html>
