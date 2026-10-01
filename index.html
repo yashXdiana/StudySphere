@@ -16,9 +16,6 @@
     <!-- Marked.js for fast Markdown parsing -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 
-    <!-- PDF Generation Library -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
-
     <style>
         :root {
             --bg-color: #f7f5f2; 
@@ -81,8 +78,8 @@
         .menu-overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); z-index: 999; }
         .menu-overlay.active { display: block; }
 
-        .main-container { padding: 1.2rem 4% 3rem; max-width: 1000px; margin: 0 auto; width: 100%; }
-        .breadcrumb { font-size: 0.9rem; margin-bottom: 1.2rem; opacity: 0.85; font-weight: 500; }
+        .main-container { padding: 1rem 4% 3rem; max-width: 960px; margin: 0 auto; width: 100%; }
+        .breadcrumb { font-size: 0.88rem; margin-bottom: 1rem; opacity: 0.85; font-weight: 500; }
         .breadcrumb a { color: var(--primary-color); font-weight: 600; }
 
         /* Mobile-safe controls card with zero horizontal overflow */
@@ -90,12 +87,12 @@
             background: var(--card-bg);
             border: 1px solid var(--border-color);
             border-radius: 12px;
-            padding: 14px 16px;
-            margin-bottom: 20px;
+            padding: 12px 14px;
+            margin-bottom: 16px;
             box-shadow: var(--box-shadow);
             display: flex;
             flex-direction: column;
-            gap: 12px;
+            gap: 10px;
             position: sticky;
             top: 65px;
             z-index: 80;
@@ -110,6 +107,7 @@
             gap: 6px;
             width: 100%;
             max-width: 100%;
+            min-width: 0;
         }
 
         @media (min-width: 640px) {
@@ -128,6 +126,7 @@
             display: flex;
             align-items: center;
             gap: 6px;
+            flex-shrink: 0;
         }
 
         /* Strictly contained dropdown preventing mobile overflow */
@@ -135,7 +134,7 @@
             width: 100%;
             max-width: 100%;
             min-width: 0;
-            padding: 10px 12px;
+            padding: 9px 12px;
             border: 1px solid var(--border-color);
             border-radius: 8px;
             background: var(--card-bg);
@@ -149,6 +148,7 @@
             overflow: hidden;
             display: block;
             box-sizing: border-box;
+            flex-grow: 1;
         }
 
         .chapter-dropdown:focus {
@@ -165,12 +165,12 @@
         .search-input-box input {
             width: 100%;
             max-width: 100%;
-            padding: 9px 12px 9px 36px;
+            padding: 8px 12px 8px 34px;
             border: 1px solid var(--border-color);
             border-radius: 8px;
             background: var(--card-bg);
             color: var(--text-color);
-            font-size: 0.92rem;
+            font-size: 0.9rem;
             outline: none;
             box-sizing: border-box;
         }
@@ -182,36 +182,45 @@
 
         .search-input-box i {
             position: absolute;
-            left: 12px;
+            left: 11px;
             top: 50%;
             transform: translateY(-50%);
             opacity: 0.6;
-            font-size: 0.9rem;
+            font-size: 0.88rem;
         }
 
-        /* Welcome card shown when landing on chapter index */
-        .welcome-card {
+        /* Top Hero Banner */
+        .hero-banner {
             background: var(--card-bg);
             border: 1px solid var(--border-color);
             border-radius: 12px;
-            padding: 1.5rem;
-            margin-bottom: 1.5rem;
-            text-align: center;
-            box-shadow: var(--box-shadow);
-        }
-
-        .welcome-card h2 {
-            font-size: 1.25rem;
-            color: var(--primary-color);
-            margin-bottom: 8px;
-            font-weight: 800;
-        }
-
-        .welcome-card p {
-            font-size: 0.95rem;
-            opacity: 0.85;
+            padding: 1.2rem 1.4rem;
             margin-bottom: 16px;
-            font-weight: 400;
+            box-shadow: var(--box-shadow);
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .hero-banner-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .badge-exam {
+            font-size: 0.78rem;
+            font-weight: 700;
+            padding: 3px 10px;
+            border-radius: 9999px;
+            background: var(--primary-light);
+            color: var(--primary-color);
+            border: 1px solid var(--border-color);
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
         }
 
         .btn-start-reading {
@@ -219,21 +228,27 @@
             align-items: center;
             justify-content: center;
             gap: 8px;
-            padding: 11px 22px;
+            padding: 9px 18px;
             background: var(--primary-color);
             color: #ffffff;
             border: none;
             border-radius: 8px;
-            font-size: 0.98rem;
+            font-size: 0.92rem;
             font-weight: 700;
             cursor: pointer;
             transition: background 0.2s ease, transform 0.1s ease;
-            box-shadow: 0 2px 6px rgba(121, 85, 72, 0.25);
+            box-shadow: 0 2px 5px rgba(121, 85, 72, 0.25);
+            width: 100%;
+        }
+
+        @media (min-width: 640px) {
+            .btn-start-reading {
+                width: auto;
+            }
         }
 
         .btn-start-reading:hover {
             background: var(--primary-hover);
-            transform: translateY(-1px);
         }
 
         [data-theme="dark"] .btn-start-reading {
@@ -262,8 +277,8 @@
         }
 
         .content-body h2 { 
-            font-size: 1.3rem; 
-            margin: 1.8rem 0 0.8rem; 
+            font-size: 1.28rem; 
+            margin: 1.7rem 0 0.75rem; 
             color: var(--text-color); 
             font-weight: 700; 
             border-left: 4px solid var(--primary-color); 
@@ -272,7 +287,7 @@
         }
 
         .content-body h3 { 
-            font-size: 1.15rem; 
+            font-size: 1.12rem; 
             color: var(--primary-hover); 
             margin: 1.2rem 0 0.4rem; 
             font-weight: 700; 
@@ -468,8 +483,32 @@
             }
         }
 
+        /* Error and manual file upload fallback styling */
+        .error-card {
+            background: rgba(239, 68, 68, 0.08);
+            border: 1px solid rgba(239, 68, 68, 0.3);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+        .file-input-wrapper {
+            margin-top: 15px;
+            display: inline-block;
+        }
+        .file-input-btn {
+            padding: 8px 16px;
+            background: var(--primary-color);
+            color: white;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 0.9rem;
+            display: inline-block;
+        }
+
         footer { background-color: var(--footer-bg); color: var(--footer-text); padding: 2.5rem 4% 1.5rem; margin-top: 40px; }
-        .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 25px; max-width: 1000px; margin: 0 auto 1.5rem; }
+        .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 25px; max-width: 960px; margin: 0 auto 1.5rem; }
         .footer-col h4 { color: white; font-size: 1.05rem; margin-bottom: 12px; font-weight: 700; }
         [data-theme="dark"] .footer-col h4 { color: var(--primary-color); }
         .footer-bottom { text-align: center; padding-top: 1.2rem; border-top: 1px solid rgba(255,255,255,0.1); opacity: 0.7; font-size: 0.85rem; }
@@ -492,12 +531,6 @@
             .content-section { padding: 1.2rem; }
             .controls-card { position: static; }
         }
-
-        /* PDF Generation Overrides */
-        .pdf-mode .no-print { display: none !important; }
-        .pdf-mode { background: white !important; color: black !important; }
-        .pdf-mode .content-section { border: none !important; box-shadow: none !important; padding: 10px !important; margin-bottom: 1.5rem !important; }
-        .pdf-mode .info-box { border: 1px solid #ccc !important; }
     </style>
 </head>
 <body>
@@ -548,32 +581,36 @@
             <a href="#" onclick="showChapter(0)">Home</a> &nbsp; ❯ &nbsp; <span>Current Affairs</span> &nbsp; ❯ &nbsp; <span>2026</span> &nbsp; ❯ &nbsp; <strong>January (२६ घटक)</strong>
         </div>
 
-        <div style="text-align: center; margin-bottom: 1.3rem;" class="no-print">
-            <h1 style="font-size: 1.85rem; color: var(--primary-color); font-weight: 800; line-height: 1.3;">चालू घडामोडी - जानेवारी २०२६</h1>
-            <p style="opacity: 0.85; font-weight: 500; font-size: 0.95rem;">MPSC गट-क पूर्व + मुख्य परीक्षा एकात्मिक सखोल संकलन</p>
+        <!-- Hero Card with Direct Chapter 1 Quick Start -->
+        <div class="hero-banner no-print">
+            <div class="hero-banner-header">
+                <div>
+                    <span class="badge-exam"><i class="fas fa-check-circle"></i> MPSC गट-क २०२६ एकात्मिक</span>
+                    <h1 style="font-size: 1.45rem; color: var(--primary-color); font-weight: 800; margin-top: 4px; line-height: 1.3;">
+                        चालू घडामोडी — जानेवारी २०२६
+                    </h1>
+                </div>
+                <button class="btn-start-reading" onclick="showChapter(0)">
+                    <i class="fas fa-book-open"></i> Ch 01 वाचन सुरू करा
+                </button>
+            </div>
+            <p style="font-size: 0.92rem; opacity: 0.85; margin: 0;">
+                सर्व २६ घटकांचे सखोल परीक्षाभिमुख संकलन. खालील ड्रॉपडाउनमधून हवा तो घटक निवडा किंवा खालील बटणांनी एकापाठोपाठ वाचा.
+            </p>
         </div>
 
-        <!-- Strictly Mobile-Contained Dropdown & Search Controls -->
+        <!-- Mobile-Contained Dropdown & Instant Search Controls -->
         <div class="controls-card no-print" id="controlsCard">
             <div class="select-group">
-                <label for="chapterDropdown"><i class="fas fa-book-open"></i> घटक निवडा:</label>
+                <label for="chapterDropdown"><i class="fas fa-list-ul"></i> घटक निवडा:</label>
                 <select id="chapterDropdown" class="chapter-dropdown" onchange="selectChapterByIndex(parseInt(this.value, 10))">
                     <option value="0">Ch 01. महाराष्ट्रातील चालू घडामोडी</option>
                 </select>
             </div>
             <div class="search-input-box">
                 <i class="fas fa-search"></i>
-                <input type="text" id="keyword-search" oninput="searchNotes(this.value)" placeholder="चालू घटकात किंवा सर्व नोट्समध्ये शब्द शोधा...">
+                <input type="text" id="keyword-search" oninput="searchNotes(this.value)" placeholder="कोणताही शब्द शोधा (उदा. PWD, SPADEX, Ramsar)...">
             </div>
-        </div>
-
-        <!-- Initial Start Reading Card directly beneath Chapter Dropdown -->
-        <div class="welcome-card no-print" id="welcomeCard">
-            <h2><i class="fas fa-book-reader"></i> जानेवारी २०२६ चालू घडामोडी</h2>
-            <p>खालील बटणावर क्लिक करून घटक १ पासून अभ्यास सुरू करा किंवा वरील ड्रॉपडाउनमधून हवा तो घटक निवडा.</p>
-            <button class="btn-start-reading" onclick="startChapterOneReading()">
-                <i class="fas fa-arrow-right"></i> घटक ०१ नोट्स वाचा (Ch 01)
-            </button>
         </div>
 
         <!-- Loading Spinner -->
@@ -582,8 +619,9 @@
             <p style="font-weight: 600;">Current_Affairs_JAN26_2.md फाईल लोड होत आहे...</p>
         </div>
 
+        <!-- Rendered Notes Container -->
         <div id="notes-container">
-            <!-- Rendered single active chapter injected dynamically -->
+            <!-- Active single chapter rendered here -->
         </div>
 
         <!-- Chapter Pagination Buttons (Previous / Next) -->
@@ -673,9 +711,9 @@
 
     <script>
         let rawMarkdownContent = '';
+        let chapterList = [];
         let totalChaptersCount = 26;
         let currentChapterIndex = 0;
-        let isSearching = false;
 
         const chapterTitles = [
             "01. महाराष्ट्रातील चालू घडामोडी",
@@ -709,61 +747,140 @@
         // 1. बाह्य URLs आणि अनावश्यक लिंक्स काढून टाकणे
         function cleanUnwantedUrls(text) {
             if (!text) return '';
+            // [Anchor](http...) -> Anchor
             let cleaned = text.replace(/\[([^\]]+)\]\(https?:\/\/[^\)]+\)/g, '$1');
+            // Remove lingering raw URLs
             cleaned = cleaned.replace(/https?:\/\/[^\s\)\>]+/g, '');
             return cleaned;
         }
 
-        // 2. Markdown फाईल लोड करणे
+        // 2. अचूक Chapter Splitting (Robust algorithm handles any header formatting)
+        function splitByChapters(markdownText) {
+            const lines = markdownText.split('\n');
+            const chapters = [];
+            let currentLines = [];
+
+            // Match Chapter 01, Chapter 1, **January 2026 — Chapter 01**, etc.
+            const chapterPattern = /(?:Chapter\s*0?(\d+)|घटक\s*0?(\d+))/i;
+
+            for (let i = 0; i < lines.length; i++) {
+                const line = lines[i];
+                const isHeading = line.includes('Chapter ') || line.includes('Chapter 0') || line.includes('घटक ');
+
+                if (isHeading && chapterPattern.test(line)) {
+                    if (currentLines.length > 0) {
+                        const chunk = currentLines.join('\n').trim();
+                        if (chunk.length > 50) {
+                            chapters.push(chunk);
+                        }
+                        currentLines = [];
+                    }
+                }
+                currentLines.push(line);
+            }
+
+            if (currentLines.length > 0) {
+                const chunk = currentLines.join('\n').trim();
+                if (chunk.length > 50) {
+                    chapters.push(chunk);
+                }
+            }
+
+            // Fallback: If split count is zero or one, split on blue box icon
+            if (chapters.length <= 1) {
+                const altChunks = markdownText.split(/(?=\*\*🟦 CURRENT AFFAIRS|\*\*January 2026 — Chapter|## Chapter)/i);
+                const validAlt = altChunks.filter(c => c.trim().length > 50);
+                if (validAlt.length > 1) {
+                    return validAlt;
+                }
+            }
+
+            return chapters;
+        }
+
+        // 3. Markdown फाईल लोड करणे (With graceful fallback if opened via file://)
         async function fetchAndRenderNotes() {
             const spinner = document.getElementById('loading-spinner');
 
             try {
                 const response = await fetch('Current_Affairs_JAN26_2.md');
                 if (!response.ok) {
-                    throw new Error(`Current_Affairs_JAN26_2.md फाईल लोड करता आली नाही (Status: ${response.status})`);
+                    throw new Error(`Status ${response.status}: Current_Affairs_JAN26_2.md फाईल शोधता आली नाही.`);
                 }
 
                 const rawText = await response.text();
-                rawMarkdownContent = cleanUnwantedUrls(rawText);
-
-                renderChapters(rawMarkdownContent);
-                populateDropdown();
-                spinner.style.display = 'none';
-
-                // खात्रीपूर्वक सुरुवातीला फक्त Chapter 1 (index 0) दाखवणे
-                showChapter(0);
+                processMarkdownData(rawText);
 
             } catch (error) {
-                spinner.innerHTML = `
-                    <div style="color: var(--danger-color); padding: 18px; background: rgba(239, 68, 68, 0.08); border-radius: 8px;">
-                        <h3 style="font-size:1.15rem;"><i class="fas fa-exclamation-triangle"></i> फाईल लोड करताना त्रुटी आली</h3>
-                        <p style="font-size: 0.95rem; margin-top: 6px;">खात्री करा की <strong>Current_Affairs_JAN26_2.md</strong> ही फाईल याच डिरेक्टरीमध्ये आहे.</p>
-                        <p style="font-size: 0.82rem; opacity: 0.8; margin-top: 4px;">Error: ${error.message}</p>
-                    </div>
-                `;
+                showErrorFallback(error.message);
             }
         }
 
-        // 3. चॅप्टरनुसार कार्ड्स तयार करणे
-        function renderChapters(markdownText) {
+        function processMarkdownData(rawText) {
+            const spinner = document.getElementById('loading-spinner');
+            rawMarkdownContent = cleanUnwantedUrls(rawText);
+
+            chapterList = splitByChapters(rawMarkdownContent);
+            if (chapterList.length > 0) {
+                totalChaptersCount = chapterList.length;
+            }
+
+            renderChaptersDOM();
+            populateDropdown();
+            
+            spinner.style.display = 'none';
+
+            // Show Chapter 1 initially
+            showChapter(0);
+        }
+
+        // Fallback UI if running locally under file:/// restriction
+        function showErrorFallback(msg) {
+            const spinner = document.getElementById('loading-spinner');
+            spinner.innerHTML = `
+                <div class="error-card">
+                    <h3 style="color: var(--danger-color); font-size:1.15rem; font-weight:700;">
+                        <i class="fas fa-exclamation-triangle"></i> Current_Affairs_JAN26_2.md फाईल थेट लोड करता आली नाही
+                    </h3>
+                    <p style="font-size: 0.92rem; margin: 8px 0; opacity: 0.85;">
+                        जर तुम्ही ही फाईल थेट कम्प्युटरवर (<code>file:///</code>) उघडली असेल, तर ब्राऊझर सिक्युरिटीमुळे fetch ब्लॉक होतो.
+                    </p>
+                    <p style="font-size: 0.88rem; font-weight:600;">
+                        GitHub Pages वर हे आपोआप चालू होईल. किंवा स्थानिक पातळीवर टेस्ट करण्यासाठी खाली तुमची <strong>Current_Affairs_JAN26_2.md</strong> फाईल निवडा:
+                    </p>
+                    <div class="file-input-wrapper">
+                        <label class="file-input-btn">
+                            <i class="fas fa-upload"></i> फाईल निवडा (Select Current_Affairs_JAN26_2.md)
+                            <input type="file" id="localFileInput" accept=".md,.txt" style="display:none;" onchange="handleManualFileUpload(event)">
+                        </label>
+                    </div>
+                </div>
+            `;
+        }
+
+        function handleManualFileUpload(event) {
+            const file = event.target.files[0];
+            if (!file) return;
+
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                processMarkdownData(e.target.result);
+            };
+            reader.readAsText(file);
+        }
+
+        // 4. चॅप्टरनुसार कार्ड्स तयार करणे
+        function renderChaptersDOM() {
             const container = document.getElementById('notes-container');
             container.innerHTML = '';
 
-            const chapterChunks = markdownText.split(/(?=\*\*🟦 CURRENT AFFAIRS 2026\*\*\s*\n\s*\*\*January 2026 — Chapter|\*\*January 2026 — Chapter)/i);
-            const validChunks = chapterChunks.filter(c => c.trim().length > 0);
-            
-            if (validChunks.length > 0) {
-                totalChaptersCount = validChunks.length;
-            }
-
-            validChunks.forEach((chunk, index) => {
+            chapterList.forEach((chunk, index) => {
                 const chapNum = (index + 1).toString().padStart(2, '0');
                 const section = document.createElement('section');
                 section.id = `chap-${chapNum}`;
                 section.className = 'content-section';
                 section.setAttribute('data-index', index);
-                section.style.display = 'none'; // सुरुवातीला लपवणे
+                section.style.display = 'none';
 
                 const bodyDiv = document.createElement('div');
                 bodyDiv.className = 'content-body';
@@ -776,7 +893,7 @@
             });
         }
 
-        // 4. कॉलआउट बॉक्सेस व तक्ते सजवणे
+        // 5. कॉलआउट बॉक्सेस व तक्ते सजवणे
         function applyDesignTransforms(element) {
             const allParagraphs = element.querySelectorAll('p, blockquote');
             allParagraphs.forEach(p => {
@@ -810,7 +927,7 @@
             });
         }
 
-        // 5. ड्रॉपडाउन तयार करणे
+        // 6. ड्रॉपडाउन तयार करणे
         function populateDropdown() {
             const selectEl = document.getElementById('chapterDropdown');
             selectEl.innerHTML = '';
@@ -823,23 +940,11 @@
             }
         }
 
-        // घटक १ वाचन सुरू करणे (Welcome Card लपवून Ch 1 वर जाणे)
-        function startChapterOneReading() {
-            const welcomeCard = document.getElementById('welcomeCard');
-            if (welcomeCard) welcomeCard.style.display = 'none';
-            showChapter(0);
-        }
-
-        // 6. ठराविक घटक (Single Chapter) दाखवणे आणि वर स्क्रोल करणे
+        // 7. ठराविक घटक (Single Active Chapter) दाखवणे आणि वर स्क्रोल करणे
         function showChapter(index) {
             if (index < 0 || index >= totalChaptersCount) return;
             
             currentChapterIndex = index;
-            isSearching = false;
-
-            // Welcome Card लपवणे
-            const welcomeCard = document.getElementById('welcomeCard');
-            if (welcomeCard) welcomeCard.style.display = 'none';
 
             const sections = document.querySelectorAll('#notes-container .content-section');
             sections.forEach((sec, i) => {
@@ -853,7 +958,7 @@
             // नेव्हिगेशन बटणे अपडेट करणे
             updatePaginationUI();
 
-            // पेज आपोआप वर नेणे
+            // पेज आपोआप कंट्रोल बारवर स्क्रोल करणे
             const controls = document.getElementById('controlsCard');
             if (controls) {
                 const topOffset = controls.getBoundingClientRect().top + window.pageYOffset - 75;
@@ -861,7 +966,7 @@
             }
         }
 
-        // 7. पुढील किंवा मागील घटकावर जाणे
+        // 8. पुढील किंवा मागील घटकावर जाणे
         function navigateChapter(direction) {
             const nextIndex = currentChapterIndex + direction;
             if (nextIndex >= 0 && nextIndex < totalChaptersCount) {
@@ -869,12 +974,12 @@
             }
         }
 
-        // 8. ड्रॉपडाउनमधून घटक निवडणे
+        // 9. ड्रॉपडाउनमधून घटक निवडणे
         function selectChapterByIndex(idx) {
             showChapter(idx);
         }
 
-        // 9. तळाच्या बटणांचे दृश्य अपडेट करणे (Next / Prev buttons logic)
+        // 10. तळाच्या बटणांचे दृश्य अपडेट करणे (Next / Prev logic)
         function updatePaginationUI() {
             const paginationBar = document.getElementById('chapterPagination');
             const prevBtn = document.getElementById('prevChapterBtn');
@@ -889,7 +994,7 @@
             const curr = currentChapterIndex;
             tracker.textContent = `घटक ${curr + 1} / ${totalChaptersCount}`;
 
-            // मागील बटण (Chapter 1 वर असताना लपवणे)
+            // मागील बटण (Ch 1 वर असताना लपवणे)
             if (curr === 0) {
                 prevBtn.style.display = 'none';
             } else {
@@ -898,7 +1003,7 @@
                 prevText.textContent = `Ch ${prevNum} (मागील)`;
             }
 
-            // पुढील बटण (शेवटच्या Chapter 26 वर असताना लपवणे)
+            // पुढील बटण (शेवटच्या Ch वर असताना लपवणे)
             if (curr === totalChaptersCount - 1) {
                 nextBtn.style.display = 'none';
             } else {
@@ -908,21 +1013,16 @@
             }
         }
 
-        // 10. कीवर्ड शोधणे (Search Logic)
+        // 11. कीवर्ड शोधणे (Search Logic)
         function searchNotes(query) {
             const term = (query || '').trim().toLowerCase();
             const sections = document.querySelectorAll('#notes-container .content-section');
             const paginationBar = document.getElementById('chapterPagination');
-            const welcomeCard = document.getElementById('welcomeCard');
 
             if (!term) {
-                // शोध रिकामा केल्यास पुन्हा चालू चॅप्टरवर येणे
                 showChapter(currentChapterIndex);
                 return;
             }
-
-            if (welcomeCard) welcomeCard.style.display = 'none';
-            isSearching = true;
 
             sections.forEach(sec => {
                 const text = sec.innerText.toLowerCase();
@@ -933,7 +1033,7 @@
                 }
             });
 
-            // शोध चालू असताना नेव्हिगेशन लपवणे
+            // शोध चालू असताना नेव्हिगेशन बार लपवणे
             if (paginationBar) paginationBar.style.display = 'none';
         }
 
@@ -1009,32 +1109,6 @@
                 window.location.href = `upi://pay?pa=${INTERNAL_UPI_ID}&pn=StudySphere&am=${selectedAmount}&cu=INR`;
                 setTimeout(closeModals, 500);
             }
-        }
-
-        // PDF Generation (सर्व २६ चॅप्टर्स एकत्रित सेव्ह करणे)
-        function downloadPDF() {
-            const element = document.getElementById('pdf-wrapper');
-            const sections = document.querySelectorAll('#notes-container .content-section');
-            
-            // पीडीएफ तयार करण्यासाठी सर्व चॅप्टर्स दृश्यमान करणे
-            sections.forEach(sec => sec.style.display = 'block');
-            element.classList.add('pdf-mode');
-            
-            const opt = {
-                margin:       8,
-                filename:     'MPSC_Group_C_Jan_2026_Current_Affairs.pdf',
-                image:        { type: 'jpeg', quality: 0.98 },
-                html2canvas:  { scale: 2, useCORS: true, windowWidth: 1000 },
-                jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' }
-            };
-
-            setTimeout(() => {
-                html2pdf().set(opt).from(element).save().then(() => {
-                    element.classList.remove('pdf-mode');
-                    // पीडीएफ झाल्यानंतर पुन्हा चालू असलेल्या चॅप्टरवर परत येणे
-                    showChapter(currentChapterIndex);
-                });
-            }, 400);
         }
 
         window.addEventListener('DOMContentLoaded', fetchAndRenderNotes);
