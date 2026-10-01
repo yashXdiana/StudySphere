@@ -1,1404 +1,723 @@
 <!DOCTYPE html>
-<html lang="mr">
+<html lang="mr" class="h-full">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-    <title>MPSC Group C - चालू घडामोडी जानेवारी २०२६ | StudySphere</title>
-    
-    <!-- Google Fonts: Mukta & Poppins -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>MPSC गट-क (Group C) - परीक्षा ॲप</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Yantramanav:wght@400;500;700;900&display=swap" rel="stylesheet">
     
-    <!-- FontAwesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- Marked.js -->
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Yantramanav"', '"Plus Jakarta Sans"', 'sans-serif'],
+                        mono: ['"Plus Jakarta Sans"', 'monospace'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#fff7ed',
+                            100: '#ffedd5',
+                            500: '#f97316',
+                            600: '#ea580c',
+                            700: '#c2410c',
+                            900: '#7c2d12',
+                        },
+                        navy: {
+                            800: '#1e293b',
+                            900: '#0f172a',
+                            950: '#020617',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
 
     <style>
-        :root {
-            --bg-color: #f7f5f2; 
-            --text-color: #2e1c14; 
-            --text-secondary: #5d4037;
-            --primary-color: #795548; 
-            --primary-hover: #5d4037;
-            --primary-light: rgba(121, 85, 72, 0.08);
-            --card-bg: #ffffff; 
-            --border-color: #d7ccc8;
-            --header-bg: #ffffff;
-            --footer-bg: #2e1c14;
-            --footer-text: #efebe9;
-            --telegram-color: #0088cc;
-            --donate-color: #10b981;
-            --danger-color: #ef4444;
-            --warning-color: #f59e0b;
-            --success-color: #10b981;
-            --box-shadow: 0 4px 6px -1px rgba(121, 85, 72, 0.08);
-        }
-
-        [data-theme="dark"] {
-            --bg-color: #121212;
-            --text-color: #f5f0eb;
-            --text-secondary: #d7ccc8;
-            --primary-color: #bcaaa4;
-            --primary-hover: #d7ccc8;
-            --primary-light: rgba(188, 170, 164, 0.12);
-            --card-bg: #1e1e1e;
-            --border-color: #332d2a;
-            --header-bg: #181818;
-            --footer-bg: #0a0a0a;
-            --footer-text: #d7ccc8;
-            --box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
-        }
-
-        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Mukta', 'Poppins', sans-serif; transition: background-color 0.25s, color 0.25s, border-color 0.25s; }
-        html, body { width: 100%; overflow-x: hidden; }
-        body { background-color: var(--bg-color); color: var(--text-color); line-height: 1.85; font-size: 1.05rem; }
-        a { text-decoration: none; color: inherit; cursor: pointer; }
-        ul { list-style: none; }
-
-        header { background-color: var(--header-bg); border-bottom: 1px solid var(--border-color); padding: 0.85rem 4%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 4px rgba(0,0,0,0.02); }
-        .logo-container { display: flex; flex-direction: column; cursor: pointer; }
-        .logo { font-size: 1.35rem; font-weight: 800; color: var(--primary-color); line-height: 1.2; letter-spacing: -0.5px;}
-        .logo-sub { font-size: 0.75rem; font-weight: 600; opacity: 0.85; letter-spacing: 0.5px; text-transform: uppercase;}
-        
-        .header-controls { display: flex; align-items: center; gap: 8px; }
-        .btn { padding: 7px 14px; border: none; border-radius: 6px; cursor: pointer; font-weight: 600; display: flex; align-items: center; gap: 6px; font-size: 0.9rem; }
-        .btn-telegram { background-color: var(--telegram-color); color: white; }
-        .btn-donate { background-color: var(--donate-color); color: white; }
-        .icon-btn { background: transparent; color: var(--text-color); font-size: 1.2rem; border: none; cursor: pointer; padding: 6px 10px; border-radius: 6px; }
-        .icon-btn:hover { background: var(--primary-light); }
-
-        .mobile-menu { position: fixed; top: 0; right: -300px; width: 280px; height: 100vh; background-color: var(--card-bg); border-left: 1px solid var(--border-color); z-index: 1000; transition: right 0.3s ease; display: flex; flex-direction: column; }
-        .mobile-menu.active { right: 0; }
-        .menu-header { padding: 1.2rem; border-bottom: 1px solid var(--border-color); display: flex; justify-content: space-between; align-items: center; }
-        .menu-links { flex: 1; overflow-y: auto; padding: 1rem 0; }
-        .menu-links a, .menu-links button { display: block; width: 100%; text-align: left; padding: 12px 20px; background: none; border: none; color: var(--text-color); font-size: 1rem; font-weight: 600; cursor: pointer; }
-        .menu-overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); z-index: 999; }
-        .menu-overlay.active { display: block; }
-
-        .main-container { padding: 1rem 4% 3rem; max-width: 960px; margin: 0 auto; width: 100%; }
-        .breadcrumb { font-size: 0.88rem; margin-bottom: 1rem; opacity: 0.85; font-weight: 500; }
-        .breadcrumb a { color: var(--primary-color); font-weight: 600; }
-
-        /* Mobile-safe strictly contained dropdown bar */
-        .controls-card {
-            background: var(--card-bg);
-            border: 1px solid var(--border-color);
-            border-radius: 12px;
-            padding: 12px 14px;
-            margin-bottom: 16px;
-            box-shadow: var(--box-shadow);
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            position: sticky;
-            top: 65px;
-            z-index: 80;
-            width: 100%;
-            max-width: 100%;
+        /* Mobile App Viewport Lock - strictly prevent bounce and outer scroll */
+        html, body {
+            height: 100%;
+            height: 100dvh;
+            width: 100vw;
             overflow: hidden;
+            position: fixed;
+            touch-action: manipulation;
+            -webkit-tap-highlight-color: transparent;
+            user-select: none;
+            -webkit-user-select: none;
         }
 
-        .select-group {
-            display: flex;
-            flex-direction: column;
-            gap: 6px;
-            width: 100%;
-            max-width: 100%;
-            min-width: 0;
+        /* Allow smooth scrolling inside dedicated content containers only */
+        .app-scroll-content {
+            overflow-y: auto;
+            -webkit-overflow-scrolling: touch;
+            overscroll-behavior-y: contain;
         }
 
-        @media (min-width: 640px) {
-            .select-group {
-                flex-direction: row;
-                align-items: center;
-                gap: 10px;
-            }
+        /* Hide scrollbars for clean native app appearance */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
         }
-
-        .select-group label {
-            font-size: 0.95rem;
-            font-weight: 700;
-            color: var(--primary-color);
-            white-space: nowrap;
-            display: flex;
-            align-items: center;
-            gap: 6px;
-            flex-shrink: 0;
-        }
-
-        .chapter-dropdown {
-            width: 100%;
-            max-width: 100%;
-            min-width: 0;
-            padding: 9px 12px;
-            border: 1px solid var(--border-color);
-            border-radius: 8px;
-            background: var(--card-bg);
-            color: var(--text-color);
-            font-size: 0.94rem;
-            font-weight: 600;
-            outline: none;
-            cursor: pointer;
-            text-overflow: ellipsis;
-            white-space: nowrap;
-            overflow: hidden;
-            display: block;
-            box-sizing: border-box;
-            flex-grow: 1;
-        }
-
-        .chapter-dropdown:focus {
-            border-color: var(--primary-color);
-            box-shadow: 0 0 0 2px var(--primary-light);
-        }
-
-        .search-input-box {
-            position: relative;
-            width: 100%;
-            max-width: 100%;
-        }
-
-        .search-input-box input {
-            width: 100%;
-            max-width: 100%;
-            padding: 8px 12px 8px 34px;
-            border: 1px solid var(--border-color);
-            border-radius: 8px;
-            background: var(--card-bg);
-            color: var(--text-color);
-            font-size: 0.9rem;
-            outline: none;
-            box-sizing: border-box;
-        }
-
-        .search-input-box input:focus {
-            border-color: var(--primary-color);
-            box-shadow: 0 0 0 2px var(--primary-light);
-        }
-
-        .search-input-box i {
-            position: absolute;
-            left: 11px;
-            top: 50%;
-            transform: translateY(-50%);
-            opacity: 0.6;
-            font-size: 0.88rem;
-        }
-
-        /* Hero Banner with Ch 01 Start Button */
-        .hero-banner {
-            background: var(--card-bg);
-            border: 1px solid var(--border-color);
-            border-radius: 12px;
-            padding: 1.2rem 1.4rem;
-            margin-bottom: 16px;
-            box-shadow: var(--box-shadow);
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
-
-        .hero-banner-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 8px;
-        }
-
-        .badge-exam {
-            font-size: 0.78rem;
-            font-weight: 700;
-            padding: 3px 10px;
-            border-radius: 9999px;
-            background: var(--primary-light);
-            color: var(--primary-color);
-            border: 1px solid var(--border-color);
-            display: inline-flex;
-            align-items: center;
-            gap: 5px;
-        }
-
-        .btn-start-reading {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            gap: 8px;
-            padding: 9px 18px;
-            background: var(--primary-color);
-            color: #ffffff;
-            border: none;
-            border-radius: 8px;
-            font-size: 0.92rem;
-            font-weight: 700;
-            cursor: pointer;
-            box-shadow: 0 2px 5px rgba(121, 85, 72, 0.25);
-            width: 100%;
-        }
-
-        @media (min-width: 640px) {
-            .btn-start-reading { width: auto; }
-        }
-
-        .btn-start-reading:hover { background: var(--primary-hover); }
-        [data-theme="dark"] .btn-start-reading { color: #121212; background: var(--primary-color); }
-
-        .content-section { 
-            background: var(--card-bg); 
-            border: 1px solid var(--border-color); 
-            border-radius: 12px; 
-            padding: 1.75rem; 
-            margin-bottom: 1.5rem; 
-            box-shadow: var(--box-shadow); 
-            width: 100%;
-        }
-
-        .content-body h1 { 
-            font-size: 1.55rem; 
-            color: var(--primary-color); 
-            margin: 0 0 1.2rem 0; 
-            border-bottom: 2px solid var(--primary-color); 
-            padding-bottom: 10px; 
-            font-weight: 800; 
-            line-height: 1.35; 
-        }
-
-        .content-body h2 { 
-            font-size: 1.28rem; 
-            margin: 1.7rem 0 0.75rem; 
-            color: var(--text-color); 
-            font-weight: 700; 
-            border-left: 4px solid var(--primary-color); 
-            padding-left: 10px; 
-            line-height: 1.35; 
-        }
-
-        .content-body h3 { 
-            font-size: 1.12rem; 
-            color: var(--primary-hover); 
-            margin: 1.2rem 0 0.4rem; 
-            font-weight: 700; 
-        }
-
-        .content-body h4 { 
-            font-size: 1.02rem; 
-            margin: 0.9rem 0 0.35rem; 
-            font-weight: 700; 
-            color: var(--text-secondary); 
-        }
-
-        /* Unbolded text for all regular paragraphs */
-        .content-body p { 
-            margin-bottom: 0.85rem; 
-            color: var(--text-color); 
-            font-weight: 400; 
-        }
-
-        .content-body p strong { font-weight: 600; }
-        .content-body ul { margin-left: 18px; margin-bottom: 1rem; list-style-type: disc; }
-        .content-body li { margin-bottom: 0.4rem; font-weight: 400; }
-        .content-body hr { border: none; border-top: 1px dashed var(--border-color); margin: 1.6rem 0; }
-
-        /* Highlight Boxes */
-        .info-box { 
-            padding: 14px 18px; 
-            border-radius: 8px; 
-            margin: 15px 0; 
-            background: var(--card-bg); 
-            border-left: 5px solid; 
-            box-shadow: 0 2px 4px rgba(0,0,0,0.03); 
-        }
-        
-        .box-favourite { 
-            border-left-color: var(--warning-color); 
-            background: rgba(245, 158, 11, 0.08); 
-        }
-        .box-favourite h4 { color: #d97706; margin-bottom: 6px; font-size: 1.02rem; display: flex; align-items: center; gap: 8px; }
-        [data-theme="dark"] .box-favourite h4 { color: #fbbf24; }
-        
-        .box-trap { 
-            border-left-color: var(--danger-color); 
-            background: rgba(239, 68, 68, 0.08); 
-        }
-        .box-trap h4 { color: #b91c1c; margin-bottom: 6px; font-size: 1.02rem; display: flex; align-items: center; gap: 8px; }
-        [data-theme="dark"] .box-trap h4 { color: #f87171; }
-        
-        .box-revision { 
-            border-left-color: var(--success-color); 
-            background: rgba(16, 185, 129, 0.07); 
-            border: 1px solid rgba(16, 185, 129, 0.25); 
-            border-left: 5px solid var(--success-color); 
-        }
-        .box-revision h4 { 
-            color: #047857; 
-            margin-bottom: 10px; 
-            font-size: 1.15rem; 
-            text-align: center; 
-            border-bottom: 1px solid rgba(16, 185, 129, 0.25); 
-            padding-bottom: 8px; 
-        }
-        [data-theme="dark"] .box-revision h4 { color: #34d399; }
-        .box-revision ul { margin-left: 0; list-style-type: none; }
-        .box-revision li { margin-bottom: 6px; padding-left: 22px; position: relative; }
-        .box-revision li::before { content: '✅'; position: absolute; left: 0; top: 0; font-size: 0.9rem; }
-
-        /* Tables */
-        .data-table { 
-            width: 100%; 
-            border-collapse: collapse; 
-            margin: 14px 0; 
-            font-size: 0.92rem; 
-            background: var(--card-bg); 
-            border-radius: 8px; 
-            overflow: hidden; 
-        }
-        .data-table th, .data-table td { 
-            padding: 9px 12px; 
-            border: 1px solid var(--border-color); 
-            text-align: left; 
-        }
-        .data-table th { 
-            background-color: var(--primary-color); 
-            color: #ffffff; 
-            font-weight: 700; 
-        }
-        [data-theme="dark"] .data-table th { color: #1a1a1a; background-color: var(--primary-color); }
-        .data-table tr:nth-child(even) { background-color: var(--primary-light); }
-        .table-responsive { overflow-x: auto; margin: 12px 0; width: 100%; }
-
-        /* Bottom Chapter Navigation Bar */
-        .chapter-pagination {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            align-items: center;
-            gap: 10px;
-            margin-top: 1.5rem;
-            padding-top: 1.5rem;
-            border-top: 1px solid var(--border-color);
-            width: 100%;
-        }
-
-        .page-btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            padding: 10px 16px;
-            border-radius: 8px;
-            background: var(--card-bg);
-            color: var(--primary-color);
-            border: 1px solid var(--border-color);
-            font-size: 0.92rem;
-            font-weight: 700;
-            cursor: pointer;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.03);
-        }
-
-        .page-btn:hover {
-            background: var(--primary-color);
-            color: #ffffff;
-            border-color: var(--primary-color);
-        }
-
-        [data-theme="dark"] .page-btn:hover {
-            color: #121212;
-            background: var(--primary-color);
-        }
-
-        .page-btn.next-btn {
-            margin-left: auto;
-            background: var(--primary-color);
-            color: #ffffff;
-            border-color: var(--primary-color);
-        }
-
-        .page-btn.next-btn:hover { background: var(--primary-hover); }
-        [data-theme="dark"] .page-btn.next-btn { color: #121212; background: var(--primary-color); }
-
-        .chapter-tracker {
-            font-size: 0.88rem;
-            font-weight: 700;
-            opacity: 0.85;
-            text-align: center;
-            order: 2;
-            flex: 1 1 100%;
-            margin-top: 5px;
-        }
-
-        @media (min-width: 500px) {
-            .chapter-tracker {
-                order: unset;
-                flex: none;
-                margin-top: 0;
-            }
-        }
-
-        footer { background-color: var(--footer-bg); color: var(--footer-text); padding: 2.5rem 4% 1.5rem; margin-top: 40px; }
-        .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 25px; max-width: 960px; margin: 0 auto 1.5rem; }
-        .footer-col h4 { color: white; font-size: 1.05rem; margin-bottom: 12px; font-weight: 700; }
-        [data-theme="dark"] .footer-col h4 { color: var(--primary-color); }
-        .footer-bottom { text-align: center; padding-top: 1.2rem; border-top: 1px solid rgba(255,255,255,0.1); opacity: 0.7; font-size: 0.85rem; }
-        
-        .modal-overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.6); backdrop-filter: blur(2px); z-index: 2000; justify-content: center; align-items: center; padding: 20px; }
-        .modal { background: var(--card-bg); padding: 22px; border-radius: 12px; width: 100%; max-width: 340px; position: relative; text-align: center; box-shadow: 0 10px 25px rgba(0,0,0,0.25); border: 1px solid var(--border-color); }
-        .close-modal { position: absolute; top: 12px; right: 12px; font-size: 1.2rem; cursor: pointer; background: none; border: none; color: var(--text-color); }
-        .preset-amounts { display: flex; gap: 8px; margin-bottom: 12px; }
-        .amt-btn { flex: 1; padding: 8px 4px; border: 1px solid var(--border-color); background: transparent; color: var(--text-color); border-radius: 6px; cursor: pointer; font-weight: 600; font-size: 0.9rem; }
-        .amt-btn.selected { background: var(--primary-color); color: white; border-color: var(--primary-color); }
-        [data-theme="dark"] .amt-btn.selected { color: #1a1a1a; }
-        .custom-amt-group input { width: 100%; padding: 8px 8px 8px 24px; border: 1px solid var(--border-color); border-radius: 6px; background: transparent; color: var(--text-color); outline: none; }
-        .currency-symbol { position: absolute; left: 10px; top: 50%; transform: translateY(-50%); font-weight: 600; }
-        .btn-pay { width: 100%; padding: 10px; background: var(--primary-color); color: white; border: none; border-radius: 6px; font-weight: 700; cursor: pointer; margin-top: 12px; }
-        [data-theme="dark"] .btn-pay { color: #1a1a1a; }
-        .btn-pay:disabled { opacity: 0.5; cursor: not-allowed; }
-
-        @media (max-width: 768px) {
-            .desktop-only { display: none !important; }
-            .content-section { padding: 1.2rem; }
-            .controls-card { position: static; }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
         }
     </style>
 </head>
-<body>
 
-    <header class="no-print">
-        <div class="logo-container" onclick="showChapter(0)">
-            <span class="logo"><i class="fas fa-graduation-cap"></i> StudySphere</span>
-            <span class="logo-sub">MPSC Group C Special</span>
+<body class="bg-slate-100 text-slate-800 font-sans flex flex-col justify-between antialiased">
+
+    <!-- Top App Bar (Header) -->
+    <header class="h-14 sm:h-16 bg-navy-950 text-white flex items-center justify-between px-4 sm:px-6 shadow-md shrink-0 z-40">
+        <div class="flex items-center space-x-2.5">
+            <div class="w-8 h-8 sm:w-9 sm:h-9 rounded-xl bg-gradient-to-tr from-brand-600 to-amber-500 flex items-center justify-center font-black text-white text-sm sm:text-base shadow-sm">
+                C
+            </div>
+            <div>
+                <h1 class="font-extrabold text-sm sm:text-base tracking-wide leading-none text-white">MPSC गट-क</h1>
+                <p class="text-[10px] sm:text-xs text-orange-400 font-semibold tracking-wider mt-0.5">सराव परीक्षा २०२६</p>
+            </div>
         </div>
-        
-        <div class="header-controls">
-            <button class="btn btn-telegram desktop-only" onclick="openTelegram()">
-                <i class="fab fa-telegram-plane"></i> Telegram
-            </button>
-            <button class="btn btn-donate desktop-only" onclick="openDonate()">
-                <i class="fas fa-hand-holding-heart"></i> Donate Us
-            </button>
-            <button class="icon-btn" onclick="toggleTheme()" id="themeBtn" aria-label="Toggle Theme" title="थीम बदला">
-                <i class="fas fa-moon"></i>
-            </button>
-            <button class="icon-btn" onclick="toggleMenu()" aria-label="Menu" title="मेनू उघडा">
-                <i class="fas fa-bars"></i>
+
+        <!-- Right Side Header Status -->
+        <div class="flex items-center gap-2">
+            <span id="active-track-badge" class="px-2.5 py-1 rounded-full text-[11px] font-bold bg-white/10 text-slate-200 border border-white/10">
+                पूर्व परीक्षा
+            </span>
+            <button onclick="toggleTrack()" class="px-2.5 py-1 text-[11px] font-bold rounded-lg bg-brand-600 hover:bg-brand-500 text-white transition active:scale-95">
+                बदला 🔁
             </button>
         </div>
     </header>
 
-    <div class="menu-overlay no-print" id="menuOverlay" onclick="toggleMenu()"></div>
-    <nav class="mobile-menu no-print" id="mobileMenu">
-        <div class="menu-header">
-            <span style="font-weight: 700; color: var(--primary-color);"><i class="fas fa-book-reader"></i> StudySphere</span>
-            <button class="icon-btn" onclick="toggleMenu()"><i class="fas fa-times"></i></button>
-        </div>
-        <div class="menu-links">
-            <a href="#" onclick="toggleMenu(); showChapter(0);"><i class="fas fa-home fa-fw"></i> मुख्य पान (Home)</a>
-            <div style="height: 1px; background: var(--border-color); margin: 10px 20px;"></div>
-            <button onclick="openTelegram(); toggleMenu();" style="color: var(--telegram-color);">
-                <i class="fab fa-telegram-plane fa-fw"></i> Join Telegram
-            </button>
-            <button onclick="openDonate(); toggleMenu();" style="color: var(--donate-color);">
-                <i class="fas fa-hand-holding-heart fa-fw"></i> Donate Us
-            </button>
-        </div>
-    </nav>
+    <main class="flex-1 w-full max-w-4xl mx-auto h-[calc(100dvh-7rem)] sm:h-[calc(100dvh-7.5rem)] relative overflow-hidden flex flex-col">
 
-    <main class="main-container">
-        
-        <div class="breadcrumb no-print">
-            <a href="#" onclick="showChapter(0)">Home</a> &nbsp; ❯ &nbsp; <span>Current Affairs</span> &nbsp; ❯ &nbsp; <span>2026</span> &nbsp; ❯ &nbsp; <strong>January (सर्व २६ घटक)</strong>
-        </div>
-
-        <!-- Mobile-Contained Dropdown & Instant Search Controls -->
-        <div class="controls-card no-print" id="controlsCard">
-            <div class="select-group">
-                <label for="chapterDropdown"><i class="fas fa-list-ul"></i> घटक निवडा:</label>
-                <select id="chapterDropdown" class="chapter-dropdown" onchange="showChapter(parseInt(this.value, 10))">
-                    <!-- Populated dynamically -->
-                </select>
-            </div>
-            <div class="search-input-box">
-                <i class="fas fa-search"></i>
-                <input type="text" id="keyword-search" oninput="searchNotes(this.value)" placeholder="कोणताही शब्द शोधा (उदा. PWD, SPADEX, Ramsar)...">
-            </div>
-        </div>
-
-        <!-- Chapters List Table on Main Page -->
-        <div class="content-section no-print" id="chapterListSection" style="margin-bottom: 20px;">
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; flex-wrap: wrap; gap: 8px;">
-                <h2 style="font-size: 1.25rem; font-weight: 800; color: var(--primary-color); margin: 0; border: none; padding: 0;">
-                    <i class="fas fa-book"></i> सर्व घटकांची सूची (Chapters Index)
-                </h2>
-                <button class="btn-start-reading" onclick="showChapter(0)" style="padding: 6px 14px; font-size: 0.88rem;">
-                    <i class="fas fa-book-open"></i> Ch 01 वाचन सुरू करा
+        <!-- VIEW 1: HOME & SUBJECT SELECTOR -->
+        <div id="screen-home" class="flex-1 h-full flex flex-col app-scroll-content no-scrollbar p-3.5 sm:p-5 space-y-4">
+            
+            <!-- Exam Mode Tabs (Prelims vs Mains) -->
+            <div class="bg-white p-1 rounded-2xl border border-slate-200 shadow-xs grid grid-cols-2 gap-1 shrink-0">
+                <button id="tab-prelims" onclick="switchTrack('prelims')" class="py-2 rounded-xl text-xs sm:text-sm font-black transition text-white bg-navy-900 shadow-sm">
+                    🎯 पूर्व परीक्षा (Prelims)
+                </button>
+                <button id="tab-mains" onclick="switchTrack('mains')" class="py-2 rounded-xl text-xs sm:text-sm font-black transition text-slate-600 hover:text-navy-950">
+                    🏆 मुख्य परीक्षा (Mains)
                 </button>
             </div>
-            <p style="font-size: 0.88rem; opacity: 0.85; margin-bottom: 12px;">
-                खालील तक्त्यामधून कोणताही घटक वाचण्यासाठी त्याच्या नावावर किंवा 'वाचा' बटणावर क्लिक करा:
-            </p>
-            <div class="table-responsive">
-                <table class="data-table" style="margin: 0;">
-                    <thead>
-                        <tr>
-                            <th style="width: 12%;">घटक क्र.</th>
-                            <th style="width: 68%;">घटकाचे नाव (Subject / Topic)</th>
-                            <th style="width: 20%; text-align: center;">कृती (Action)</th>
-                        </tr>
-                    </thead>
-                    <tbody id="chaptersTableBody">
-                        <!-- Populated dynamically with exact 26 chapters -->
-                    </tbody>
-                </table>
+
+            <!-- Quick Start Banner -->
+            <div class="bg-gradient-to-r from-navy-900 via-indigo-950 to-navy-900 text-white rounded-2xl p-4 sm:p-5 shadow-sm shrink-0 flex items-center justify-between">
+                <div class="space-y-1">
+                    <span class="inline-block text-[10px] font-bold uppercase tracking-wider text-orange-400 bg-orange-400/10 px-2 py-0.5 rounded">
+                        Full Practice Test
+                    </span>
+                    <h2 class="text-base sm:text-xl font-bold">सर्व विषयांची संपूर्ण टेस्ट</h2>
+                    <p class="text-xs text-slate-300">१/४ निगेटिव्ह गुणांकनासह रिअल टेस्ट द्या.</p>
+                </div>
+                <button onclick="startTest('ALL')" class="bg-brand-600 hover:bg-brand-500 active:scale-95 text-white font-bold text-xs sm:text-sm px-4 py-2.5 rounded-xl shadow-md transition">
+                    सुरू करा 🚀
+                </button>
+            </div>
+
+            <div class="flex-1 space-y-2">
+                <div class="flex items-center justify-between px-1">
+                    <h3 class="text-xs sm:text-sm font-bold text-slate-700 uppercase tracking-wider" id="subject-list-heading">
+                        पूर्व परीक्षेचे विषय (Prelims Subjects)
+                    </h3>
+                    <span class="text-[11px] font-semibold text-slate-400" id="subject-count-info">७ विषय</span>
+                </div>
+
+                <!-- Subject Cards Container -->
+                <div id="subjects-container" class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 pb-6">
+                    <!-- Dynamic rendering by JS based on user syllabus -->
+                </div>
             </div>
         </div>
 
-        <!-- Rendered Notes Container: Only Active Chapter is shown here -->
-        <div id="notes-container">
-            <!-- Active single chapter rendered here -->
+        <!-- VIEW 2: QUIZ / TEST SCREEN -->
+        <div id="screen-quiz" class="hidden flex-1 h-full flex flex-col justify-between bg-white sm:rounded-2xl sm:my-2 sm:border sm:border-slate-200 sm:shadow-sm overflow-hidden">
+            
+            <!-- Quiz Sub-Header (Progress + Timer) -->
+            <div class="px-4 py-3 bg-slate-50 border-b border-slate-200 flex items-center justify-between shrink-0">
+                <div class="flex items-center space-x-2">
+                    <span id="quiz-subject-pill" class="text-[11px] font-bold bg-orange-100 text-orange-800 px-2.5 py-0.5 rounded-full">
+                        विषय
+                    </span>
+                    <span class="text-xs font-bold text-slate-600">
+                        प्र. <span id="q-curr-index" class="text-brand-600 font-extrabold text-sm">1</span>/<span id="q-total-count">5</span>
+                    </span>
+                </div>
+
+                <!-- Countdown Timer -->
+                <div class="flex items-center gap-1.5 px-3 py-1 bg-white border border-slate-200 rounded-xl shadow-2xs font-mono font-bold text-xs text-slate-800">
+                    <span class="inline-block w-2 h-2 rounded-full bg-emerald-500 animate-ping"></span>
+                    <span id="quiz-timer">00:00</span>
+                </div>
+
+                <button onclick="quitTest()" class="text-xs font-semibold text-rose-600 hover:text-rose-700 px-2 py-1 rounded">
+                    थांबवा ✕
+                </button>
+            </div>
+
+            <!-- Quiz Progress Bar -->
+            <div class="w-full bg-slate-200 h-1 shrink-0">
+                <div id="quiz-progress-fill" class="bg-brand-600 h-1 transition-all duration-300" style="width: 20%;"></div>
+            </div>
+
+            <!-- Question and Options (Scrollable area inside locked screen) -->
+            <div class="flex-1 app-scroll-content p-4 sm:p-6 space-y-5">
+                <div class="flex items-start gap-2">
+                    <span class="w-6 h-6 rounded-md bg-slate-100 text-slate-700 text-xs font-bold flex items-center justify-center shrink-0 mt-0.5" id="q-badge-num">
+                        1
+                    </span>
+                    <h3 id="q-question-text" class="text-base sm:text-lg font-bold text-slate-900 leading-snug">
+                        येथे प्रश्न दिसेल...
+                    </h3>
+                </div>
+
+                <!-- 4 Options List -->
+                <div id="options-list" class="space-y-2.5 pt-1">
+                    <!-- Injected dynamically -->
+                </div>
+            </div>
+
+            <!-- Quiz Bottom Action Bar -->
+            <div class="p-3 sm:p-4 bg-slate-50 border-t border-slate-200 flex items-center justify-between gap-3 shrink-0">
+                <button id="btn-prev-q" onclick="navigateQuestion(-1)" class="px-4 py-2.5 text-xs font-bold rounded-xl border border-slate-200 text-slate-600 bg-white hover:bg-slate-100 active:scale-95 transition disabled:opacity-30 disabled:pointer-events-none">
+                    ← मागे
+                </button>
+
+                <button onclick="clearCurrentSelection()" class="text-xs font-semibold text-slate-400 hover:text-slate-600">
+                    खोडा
+                </button>
+
+                <button id="btn-next-q" onclick="navigateQuestion(1)" class="px-5 py-2.5 text-xs font-bold rounded-xl bg-navy-900 hover:bg-navy-800 text-white active:scale-95 shadow-xs transition">
+                    पुढे →
+                </button>
+            </div>
         </div>
 
-        <!-- Chapter Pagination Buttons (Previous / Next) -->
-        <div class="chapter-pagination no-print" id="chapterPagination">
-            <button class="page-btn prev-btn" id="prevChapterBtn" onclick="navigateChapter(-1)">
-                <i class="fas fa-arrow-left"></i> <span id="prevBtnText">मागील घटक</span>
-            </button>
-            <div class="chapter-tracker" id="chapterTracker">घटक १ / २६</div>
-            <button class="page-btn next-btn" id="nextChapterBtn" onclick="navigateChapter(1)">
-                <span id="nextBtnText">पुढील घटक</span> <i class="fas fa-arrow-right"></i>
-            </button>
+        <!-- VIEW 3: RESULT & EXPLANATION SCREEN -->
+        <div id="screen-result" class="hidden flex-1 h-full flex flex-col app-scroll-content no-scrollbar p-4 space-y-4">
+            
+            <!-- Result Summary Card -->
+            <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-xs text-center space-y-4">
+                <div class="inline-flex p-3 rounded-2xl bg-orange-50 text-brand-600 text-2xl shadow-inner">
+                    🎯
+                </div>
+                <div>
+                    <h3 class="text-xl font-black text-slate-900">तुमचा निकाल (Result)</h3>
+                    <p class="text-xs text-slate-500">MPSC ०.२५ निगेटिव्ह मार्किंगनुसार</p>
+                </div>
+
+                <!-- Score Grid -->
+                <div class="grid grid-cols-4 gap-2 pt-1 text-center">
+                    <div class="bg-slate-50 p-2.5 rounded-xl border border-slate-100">
+                        <span class="text-[10px] font-bold text-slate-500 block">गुण</span>
+                        <span id="res-score" class="text-lg font-black text-brand-600">0.00</span>
+                    </div>
+                    <div class="bg-emerald-50 p-2.5 rounded-xl border border-emerald-100">
+                        <span class="text-[10px] font-bold text-emerald-700 block">बरोबर</span>
+                        <span id="res-correct" class="text-lg font-black text-emerald-600">0</span>
+                    </div>
+                    <div class="bg-rose-50 p-2.5 rounded-xl border border-rose-100">
+                        <span class="text-[10px] font-bold text-rose-700 block">चूक</span>
+                        <span id="res-wrong" class="text-lg font-black text-rose-600">0</span>
+                    </div>
+                    <div class="bg-amber-50 p-2.5 rounded-xl border border-amber-100">
+                        <span class="text-[10px] font-bold text-amber-700 block">बाकी</span>
+                        <span id="res-skipped" class="text-lg font-black text-amber-600">0</span>
+                    </div>
+                </div>
+
+                <div class="flex items-center justify-center gap-3 pt-2">
+                    <button onclick="showScreen('home')" class="w-full py-2.5 text-xs font-bold rounded-xl bg-slate-900 text-white hover:bg-slate-800 active:scale-95 transition">
+                        मुख्य मेनूकडे जा 🏠
+                    </button>
+                </div>
+            </div>
+
+            <!-- Explanations Header -->
+            <div class="space-y-3 pb-6">
+                <h4 class="text-xs font-bold text-slate-700 uppercase tracking-wider px-1">
+                    सर्व प्रश्नांचे सविस्तर विश्लेषण (Explanations)
+                </h4>
+                <div id="results-review-list" class="space-y-3">
+                    <!-- Dynamic review items injected here -->
+                </div>
+            </div>
         </div>
 
     </main>
 
-    <footer id="mainFooter" class="no-print">
-        <div class="footer-grid">
-            <div class="footer-col">
-                <h4>StudySphere</h4>
-                <p>MPSC Group C Prelims & Mains साठी मोफत परीक्षाभिमुख Study Platform.</p>
-            </div>
-            <div class="footer-col">
-                <h4>Quick Links</h4>
-                <ul>
-                    <li><a href="#" onclick="showChapter(0)">पहिले पान (Ch 01)</a></li>
-                    <li><a href="#" onclick="window.scrollTo({top:0, behavior:'smooth'})">वर स्क्रोल करा (Top)</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h4>Information</h4>
-                <ul>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Terms & Conditions</a></li>
-                    <li><a href="#">Disclaimer</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h4>Support</h4>
-                <div style="display: flex; flex-direction: column; gap: 10px;">
-                    <button class="btn btn-telegram" onclick="openTelegram()" style="width: 100%; justify-content: center; padding: 9px; font-size: 0.95rem;">
-                        <i class="fab fa-telegram-plane"></i> Telegram Channel
-                    </button>
-                    <button class="btn btn-donate" onclick="openDonate()" style="width: 100%; justify-content: center; padding: 9px; font-size: 0.95rem;">
-                        <i class="fas fa-hand-holding-heart"></i> Donate Us
-                    </button>
-                </div>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2026 StudySphere. All Rights Reserved. | MPSC Group C</p>
-        </div>
-    </footer>
+    <!-- Bottom Mobile Navigation Bar (100% Mobile App UX) -->
+    <nav class="h-14 sm:h-16 bg-white border-t border-slate-200 px-6 flex items-center justify-around shrink-0 z-40">
+        <button onclick="handleBottomNav('prelims')" id="nav-btn-prelims" class="flex flex-col items-center justify-center text-brand-600 transition">
+            <span class="text-lg">🎯</span>
+            <span class="text-[10px] font-bold mt-0.5">पूर्व परीक्षा</span>
+        </button>
+        <button onclick="handleBottomNav('mains')" id="nav-btn-mains" class="flex flex-col items-center justify-center text-slate-400 hover:text-slate-600 transition">
+            <span class="text-lg">🏆</span>
+            <span class="text-[10px] font-bold mt-0.5">मुख्य परीक्षा</span>
+        </button>
+        <button onclick="showAppInfo()" class="flex flex-col items-center justify-center text-slate-400 hover:text-slate-600 transition">
+            <span class="text-lg">ℹ️</span>
+            <span class="text-[10px] font-bold mt-0.5">माहिती</span>
+        </button>
+    </nav>
 
-    <!-- Donation Modals -->
-    <div class="modal-overlay no-print" id="mobileDonateModal">
-        <div class="modal">
-            <button class="close-modal" onclick="closeModals()">&times;</button>
-            <h2 style="font-size:1.25rem; margin-bottom:5px; color: var(--primary-color);"><i class="fas fa-heart"></i> StudySphere ला Support करा</h2>
-            <p style="font-size:0.88rem; opacity:0.85;">तुमचा हातभार या मोफत उपक्रमास सातत्य ठेवण्यास मदत करतो.</p>
-            <div class="preset-amounts" style="margin-top: 14px;">
-                <button class="amt-btn" onclick="selectPresetAmount(25)">₹25</button>
-                <button class="amt-btn" onclick="selectPresetAmount(50)">₹50</button>
-                <button class="amt-btn" onclick="selectPresetAmount(100)">₹100</button>
+    <!-- Simple In-App Modal (No native alert/confirm) -->
+    <div id="app-modal" class="fixed inset-0 bg-slate-900/60 backdrop-blur-xs flex items-center justify-center p-4 z-50 hidden">
+        <div class="bg-white rounded-2xl max-w-xs w-full p-5 space-y-3 text-center shadow-xl">
+            <div id="modal-icon" class="text-3xl">⚠️</div>
+            <h4 id="modal-title" class="font-bold text-slate-900 text-sm">सूचना</h4>
+            <p id="modal-msg" class="text-xs text-slate-600 leading-relaxed">संदेश</p>
+            <div class="flex gap-2 pt-2">
+                <button id="modal-btn-cancel" onclick="closeModal()" class="flex-1 py-2 rounded-xl text-xs font-bold border border-slate-200 text-slate-600 hover:bg-slate-50">नाही</button>
+                <button id="modal-btn-ok" class="flex-1 py-2 rounded-xl text-xs font-bold bg-brand-600 text-white hover:bg-brand-500 shadow-sm">होय</button>
             </div>
-            <div class="custom-amt-group" style="text-align: left; margin-bottom: 12px; position:relative;">
-                <label style="font-size:0.82rem; font-weight:600; display:block; margin-bottom:3px;">Custom Amount (इतर रक्कम)</label>
-                <div style="position:relative;">
-                    <span class="currency-symbol">₹</span>
-                    <input type="number" id="customAmt" placeholder="रक्कम टाका" min="1" step="any" oninput="handleCustomAmount()">
-                </div>
-            </div>
-            <button class="btn-pay" id="payNowBtn" onclick="initiateUPIPayment()" disabled>Pay Now</button>
-        </div>
-    </div>
-
-    <div class="modal-overlay no-print" id="desktopDonateModal">
-        <div class="modal">
-            <button class="close-modal" onclick="closeModals()">&times;</button>
-            <h2 style="font-size:1.25rem; margin-bottom:5px; color: var(--primary-color);">StudySphere ला Support करा</h2>
-            <p style="font-size:0.88rem; opacity:0.85;">कोणत्याही UPI ॲपवरून स्कॅन करा:</p>
-            <div style="margin:12px auto; width:160px; height:160px; border:1px dashed var(--border-color); display:flex; justify-content:center; align-items:center; background:white; border-radius:8px;">
-                <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=upi://pay?pa=vikram.joshi9089@oksbi%26pn=StudySphere" alt="Donation QR" style="max-width:100%; height:auto;">
-            </div>
-            <p style="font-size:0.8rem; font-weight:600;">UPI ID: <code>vikram.joshi9089@oksbi</code></p>
         </div>
     </div>
 
     <script>
-        // सर्व २६ घटकांचा संपूर्ण डेटा - कोणतीही माहिती गहाळ न करता व सर्व बाह्य लिंक्स पूर्ण स्वच्छ करून
-        const rawChaptersData = [
-`# 🟦 Chapter 01: महाराष्ट्रातील चालू घडामोडी
-
-## ① महाराष्ट्रातील महत्त्वाच्या प्रशासकीय घडामोडी
-
-### 1. महाराष्ट्राच्या 150 Days e-Governance Programme मध्ये PWD प्रथम
-महाराष्ट्र शासनाने 150 दिवसांचा e-Governance Programme राबविला. या कार्यक्रमाचा कालावधी 7 मे 2025 ते 10 जानेवारी 2026 असा होता.
-- एकूण 57 विभागांनी सहभाग घेतला.
-- Website, Aaple Sarkar, e-Office, Dashboard, WhatsApp Chatbot, AI/Blockchain आणि GIS यांसारख्या बाबींवर भर.
-- राज्यस्तरीय मूल्यांकनासाठी Quality Council of India (QCI) ची नियुक्ती करण्यात आली.
-- महाराष्ट्र सार्वजनिक बांधकाम विभागाने 200 पैकी 186.75 गुण मिळवत प्रथम क्रमांक मिळवला.
-
-MPSC Exam Points
-- Programme → 150 Days e-Governance Programme
-- मूल्यांकन → QCI
-- प्रथम → Public Works Department
-- गुण → 186.75/200
-
-### 2. Sevakarmi Puraskar Programme मध्ये PWD
-27 जानेवारी 2026 रोजी महाराष्ट्राच्या Sevakarmi Puraskar Programme मध्ये Public Works Department ने द्वितीय क्रमांक मिळवला.
-- 42 Ministerial Secretaries अंतर्गत 93 सरकारी आस्थापनांचे मूल्यांकन झाले.
-- Sevakarmi component मध्ये 8 parameters होते.
-- Sevakarmi Tech मध्ये MahaPAR, iGOT, E-HRMS यांसारख्या digital systems चा समावेश होता.
-- PWD ला 200 पैकी 178 गुण मिळाले.
-
-Exam Trap:
-e-Governance Programme → PWD 1st
-Sevakarmi Puraskar Programme → PWD 2nd
-
----
-
-## ② महाराष्ट्राचे 77 वे प्रजासत्ताक दिन
-26 जानेवारी 2026 रोजी महाराष्ट्रात 77 वा प्रजासत्ताक दिन साजरा करण्यात आला.
-- ठिकाण → छत्रपती शिवाजी महाराज मैदान, दादर, मुंबई
-- महाराष्ट्राचे राज्यपाल → आचार्य देवव्रत
-- राज्यपालांनी लोकशाही, संविधान, नागरिकांचे कर्तव्य आणि महाराष्ट्राच्या विकासावर भर दिला.
-
-| घटक | माहिती |
-| :--- | :--- |
-| दिवस | 26 January 2026 |
-| प्रजासत्ताक दिन | 77 वा |
-| ठिकाण | छत्रपती शिवाजी महाराज मैदान, दादर |
-| राज्यपाल | आचार्य देवव्रत |
-
----
-
-## ③ महाराष्ट्रातील महत्त्वाची राजकीय/प्रशासकीय घटना
-January 2026 मध्ये महाराष्ट्राचे उपमुख्यमंत्री अजित पवार यांचे निधन झाले. केंद्राच्या गृह मंत्रालयाच्या अधिकृत नोंदीत 28 जानेवारी 2026 रोजी त्यांच्या निधनाबद्दल शोक व्यक्त करण्यात आल्याची नोंद आहे.
-
----
-
-## ④ महाराष्ट्रातील स्थानिक स्वराज्य संस्था निवडणुका
-राज्यपालांच्या 26 जानेवारीच्या संदेशात महाराष्ट्रातील नगरपालिका आणि महानगरपालिकांच्या निवडणुका नुकत्याच पार पडल्याचा आणि जिल्हा परिषदांच्या निवडणुका सुरू असल्याचा उल्लेख करण्यात आला.
-- Urban Local Bodies → नगरपालिका / महानगरपालिका
-- Rural Local Bodies → जिल्हा परिषद इ.
-
----
-
-## ⑤ महाराष्ट्राचा Export Preparedness Index मध्ये प्रथम क्रमांक
-NITI Aayog च्या Export Preparedness Index 2024 मध्ये महाराष्ट्राने प्रथम क्रमांक मिळवला.
-- Index → Export Preparedness Index
-- Edition → 2024
-- Released → January 2026
-- महाराष्ट्र → 1st Rank
-- संस्था → NITI Aayog
-
-MPSC Trap: Index year (2024) आणि release year (January 2026) वेगळे आहेत.
-
----
-
-## ⑥ महाराष्ट्रातील मोठ्या गुंतवणुकीशी संबंधित Davos घडामोडी
-World Economic Forum, Davos — January 2026 दरम्यान महाराष्ट्र शासनाने विविध कंपन्यांसोबत सुमारे ₹30 लाख कोटींच्या investment MoUs केल्याचे राज्यपालांच्या अधिकृत भाषणात नमूद करण्यात आले.
-- संबंधित देश → 18 countries
-- अपेक्षित रोजगार → सुमारे 40 लाख jobs
-
----
-
-## ⑦ महाराष्ट्रासाठी महत्त्वाचे Industrial Policy Developments
-- Maharashtra Industry, Investment and Services Policy-2025 (Target: ₹70.50 लाख कोटी गुंतवणूक, सुमारे 50 लाख थेट नोकऱ्या)
-- Bamboo Industry Policy-2025
-- Gems and Jewellery Policy-2025
-- Animation, Visual Effects, Gaming, Comics and Extended Reality Policy-2025
-- Global Capability Center Policy-2025
-
----
-
-## ⑧ Maharashtra Startup, Entrepreneurship & Innovation Policy
-महाराष्ट्राने Maharashtra Startup, Entrepreneurship and Innovation Policy 2025 लागू केली.
-- पुढील पाच वर्षांचे उद्दिष्ट: 1,25,000 entrepreneurs ना support करणे आणि 50,000 startups ना मदत करणे.
-
----
-
-## ⑨ MahaGeotech Application Centre व MILAAP
-- MahaGeotech Application Centre: प्रशासनात Geospatial Technology आणि GIS चा वापर वाढवण्यासाठी स्थापन.
-- MILAAP (MIDC Industrial Land Application and Allotment Portal): Industrial plots चे transparent allotment करणे.
-
-Quick Revision
-- 77 वा Republic Day: 26 Jan 2026 (दादर, मुंबई)
-- PWD 150 Days e-Governance: प्रथम (186.75/200)
-- PWD Sevakarmi Puraskar: द्वितीय (178/200)
-- Export Preparedness Index 2024: महाराष्ट्र प्रथम (NITI Aayog)
-- Davos Maharashtra MoUs: ₹30 लाख कोटी (18 देश, 40 लाख रोजगार)`,
-
-`# 🟦 Chapter 02: राष्ट्रीय चालू घडामोडी (National Current Affairs)
-
-## ① Economic Survey 2025–26
-29 January 2026 रोजी Economic Survey 2025–26 संसदेत सादर करण्यात आला.
-- FY 2025–26 साठी Real GDP Growth → 7.4%
-- FY 2025–26 साठी Real GVA Growth → 7.3%
-- FY 2026–27 साठी Real GDP growth projection → 6.8%–7.2%
-- September 2025 मध्ये बँकिंग Gross NPAs → 2.2%
-- 16 January 2026 रोजी Forex Reserves → US$ 701.4 billion
-- Services Exports FY25 → US$ 387.6 billion | Remittances → US$ 135.4 billion
-- SPADEX: भारताने autonomous satellite docking क्षमता मिळवून ही क्षमता साध्य करणारा जगातील चौथा देश बनला.
-
-Exam Trap:
-Economic Survey 2025–26 चा Release Date: 29 January 2026 (Survey Year ≠ Release Date).
-
----
-
-## ② 77 वा प्रजासत्ताक दिन — राष्ट्रीय स्तर
-- तारीख: 26 January 2026 | मुख्य समारंभ: Kartavya Path, New Delhi
-- मुख्य अतिथी (Chief Guests):
-  1. António Costa — President of the European Council
-  2. Ursula von der Leyen — President of the European Commission
-- विशेष थीम: 150 years of Vande Mataram.
-
----
-
-## ③ National Voters' Day 2026
-- तारीख: 25 January 2026 (16 वी आवृत्ती)
-- Theme: "My India, My Vote" | Tagline: "Citizen at the Heart of Indian Democracy"
-- ECI स्थापना: 25 January 1950 (Article 324).
-- MY Bharat Padyatra: "MY Bharat MY Vote" मोहीम राज्य व जिल्हा पातळीवर राबवली गेली.
-
----
-
-## ④ Rozgar Mela, Bharat Parv आणि आंतरराष्ट्रीय घडामोडी
-- 18th Rozgar Mela (24 Jan): 61,000+ नियुक्तीपत्रे वितरित; स्थापनेपासून 11 लाखांहून अधिक पत्रे.
-- Germany Chancellor Friedrich Merz भेट (12–13 Jan): सेमीकंडक्टर, क्रिटिकल मिनरल्स, संरक्षण व टेलिकॉम सहकार्य.
-- UAE President Sheikh Mohamed bin Zayed Al Nahyan भेट (19 Jan): Comprehensive Strategic Partnership चा आढावा.
-- Bharat Parv 2026 (26–31 Jan): लाल किल्ला, नवी दिल्ली (पर्यटन मंत्रालय).`,
-
-`# 🟦 Chapter 03: आंतरराष्ट्रीय चालू घडामोडी (International Current Affairs)
-
-## ① World Economic Forum Annual Meeting 2026 — Davos
-- ठिकाण: Davos-Klosters, Switzerland (19–23 January 2026) | आवृत्ती: 56th
-- Theme: "A Spirit of Dialogue" | 130+ देश आणि 65 राष्ट्रप्रमुख सहभागी.
-- अहवाल: Global Risks Report 2026, Global Cooperation Barometer 2026, Global Cybersecurity Outlook 2026.
-
----
-
-## ② India–European Union Free Trade Agreement
-- 27 January 2026: भारत आणि EU यांनी FTA च्या negotiations पूर्ण झाल्याची घोषणा केली.
-- PIB नुसार हा भारताच्या इतिहासातील सर्वात मोठा Free Trade Agreement मानला जातो.
-
-Exam Trap: European Council President (António Costa) आणि European Commission President (Ursula von der Leyen) ही दोन स्वतंत्र पदे आहेत.
-
----
-
-## ③ इतर महत्त्वाच्या आंतरराष्ट्रीय घडामोडी
-- India-UAE द्विपक्षीय व्यापार: FY25 मधील $100 Billion वरून 2032 पर्यंत $200 Billion चे उद्दिष्ट.
-- HPCL + ADNOC Gas LNG करार: 10 वर्षांचा करार (0.5 MTPA, 2028 पासून पुरवठा).
-- 28th CSPOC (New Delhi, 14–16 Jan): राष्ट्रकुल देशांच्या सभापतींची परिषद; अध्यक्ष: ओम बिर्ला.
-- 16th ADMM-Plus Experts Working Group on Counter-Terrorism: भारत + मलेशिया सह-अध्यक्ष.
-- UN Secretary-General António Guterres: 2026 हे त्यांच्या कार्यकाळाचे शेवटचे वर्ष.`,
-
-`# 🟦 Chapter 04: शासकीय योजना व कार्यक्रम (Government Schemes)
-
-| योजना / कार्यक्रम | मुख्य क्षेत्र | महत्त्वाचा तपशील |
-| :--- | :--- | :--- |
-| YUVA AI for ALL | MeitY (National AI Literacy) | जयपूर येथे लाँच; युवकांना AI साक्षरता देणे |
-| PM SVANidhi Credit Card | फेरीवाले (Street Vendors) | औपचारिक क्रेडिट व वर्किंग कॅपिटल सुविधा |
-| Jal Jeevan Mission | ग्रामीण पाणीपुरवठा | 15.74 कोटी घरे (81.31% कव्हरेज पूर्ण) |
-| PMAY-G | ग्रामीण घरे | 4.95 कोटी पक्क्या घरांचे उद्दिष्ट (2.93 कोटी पूर्ण) |
-| PMGSY | ग्रामीण रस्ते | 99.6%+ घरांना ऑल-वेदर रोड कनेक्टिव्हिटी |
-| PM-JANMAN | PVTGs (आदिम जमाती) | 11 critical interventions, 9 मंत्रालये |
-| DAY-NRLM | महिला सक्षमीकरण | 2 कोटी 'लखपती दीदी' (Lakhpati Didi) चा टप्पा पार |
-| DDU-GKY | ग्रामीण युवक कौशल्य | 82,000+ प्रशिक्षित, 37,000 जणांना नोकऱ्या |
-| RSETI 2.0 | स्वयंरोजगार प्रशिक्षण | 625 संस्था, 50% क्रेडिट लिंकेज टार्गेट |
-| VB-G RAM G Act | ग्रामीण रोजगार | रोजगार हमी कालावधी up to 125 days (जुने 100 दिवस) |
-| DISHA | जिल्हा संनियंत्रण | 1,058 बैठका, 8 मुख्य योजनांचे मॉनिटरिंग |
-
-Exam Trap:
-- PMGSY (रस्ते) ≠ PMAY-G (घरे)
-- PM-JANMAN हे विशेषतः PVTGs साठी आहे, सर्वसामान्य ST साठी नाही.
-- MGNREGA जुना हमी कालावधी 100 दिवस होता, नवीन VB-G RAM G अंतर्गत 125 दिवसांची तरतूद आहे.`,
-
-`# 🟦 Chapter 05: नियुक्त्या व व्यक्ती (Appointments & Persons)
-
-- Air Marshal Seethepalli Shrinivas: AOC-in-C, Training Command, Indian Air Force (पदभार: 1 Jan 2026).
-- Justice V. Ramasubramanian: Chairperson, National Human Rights Commission (NHRC).
-- NHRC Special Rapporteurs & Monitors: 15 Special Rapporteurs आणि 18 Special Monitors ची 3 वर्षांसाठी नियुक्ती.
-- ECI Leadership: Chief Election Commissioner: Gyanesh Kumar | Election Commissioners: Dr. Sukhbir Singh Sandhu आणि Dr. Vivek Joshi.
-- Om Birla: Chairperson, 28th CSPOC (Commonwealth Speakers' Conference).
-- Friedrich Merz: Federal Chancellor, Germany (भारताची पहिली अधिकृत भेट).
-- Rakesh Verma: Director General, IIIDEM.
-
-MPSC Exam Points
-- NHRC अध्यक्ष → Justice V. Ramasubramanian
-- मुख्य निवडणूक आयुक्त → Gyanesh Kumar
-- IAF ट्रेनिंग कमांड → Air Marshal Seethepalli Shrinivas`,
-
-`# 🟦 Chapter 06: पुरस्कार व सन्मान (Awards & Honours)
-
-## ① पद्म पुरस्कार २०२६ (Padma Awards 2026)
-- एकूण पुरस्कार: 131 (५ पद्मविभूषण, १३ पद्मभूषण, ११३ पद्मश्री - २ ड्युओ केसेससह).
-- 19 महिला, 6 परदेशी/NRI, 16 मरणोत्तर पुरस्कार.
-
-### पद्मविभूषण (५ व्यक्ती):
-1. धर्मेंद्र सिंग देओल (मरणोत्तर) — कला (महाराष्ट्र)
-2. के. टी. थॉमस — सार्वजनिक व्यवहार (केरळ)
-3. एन. राजम — कला (उत्तर प्रदेश)
-4. पी. नारायणन — साहित्य व शिक्षण (केरळ)
-5. व्ही. एस. अच्युतानंदन (मरणोत्तर) — सार्वजनिक व्यवहार (केरळ)
-
-### पद्मभूषण (१३ पैकी प्रमुख):
-अलका याज्ञिक (कला), भगतसिंग कोश्यारी (सार्वजनिक व्यवहार), उदय कोटक (उद्योग), मम्मूट्टी (कला), पियुष पांडे (मरणोत्तर - कला), विजय अमृतराज (क्रीडा).
-
-### पद्मश्री (महाराष्ट्रातील प्रमुख):
-रोहित शर्मा (क्रीडा), सतीश शाह (मरणोत्तर), आर. माधवन, डॉ. आर्मिडा फर्नांडिस, अशोक खाडे, रघुवीर खेडकर, भिकल्या धिंडा, सत्यनारायण नुवाल.
-
----
-
-## ② शौर्य पुरस्कार २०२६ (Gallantry Awards)
-- अशोक चक्र (१): ग्रुप कॅप्टन शुभांशू शुक्ला (Axiom-4 मोहिमेत ISS वर जाणारे पहिले भारतीय).
-- कीर्ती चक्र (३): मेजर अर्शदीप सिंग, नायब सुभेदार डोलेश्वर सुब्बा, ग्रुप कॅप्टन प्रशांत बाळकृष्णन नायर.
-- शौर्य चक्र (१३): लेफ्टनंट कमांडर दिल्ना के., लेफ्टनंट कमांडर रूपा ए. सह एकूण १३.
-- एकूण शौर्य पुरस्कार: ७० (६ मरणोत्तर) | लष्करी पदके: ३०१ | जीवन रक्षा पदके: ३०.
-- इंदिरा गांधी शांतता पुरस्कार २०२५: Graça Machel (मोझांबिक).`,
-
-`# 🟦 Chapter 07: अहवाल, निर्देशांक व क्रमवारी (Reports & Indices)
-
-- Export Preparedness Index 2024 (NITI Aayog): मोठ्या राज्यांमध्ये महाराष्ट्र प्रथम (Rank 1), त्यानंतर तामिळनाडू व गुजरात.
-- Responsible Nations Index 2025: World Intellectual Foundation (WIF).
-- WESP 2026 (World Economic Situation and Prospects): United Nations (UN DESA).
-- WEF अहवाल (Davos): Global Risks Report 2026, Global Cybersecurity Outlook 2026, Global Cooperation Barometer.
-- First Advance Estimates (MoSPI): Real GDP Growth 7.4%.
-- CPI चलनवाढ (जानेवारी २०२६): 2.75% (नवीन Base Year: 2024 = 100).
-- WPI चलनवाढ (जानेवारी २०२६): 1.81% (Base Year: 2011-12 = 100).
-- RBI Trend & Progress of Banking: बँकिंग Gross NPA प्रमाण घसरून 2.1% - 2.2% वर.
-
-Exam Trap:
-- CPI Base Year → 2024
-- WPI Base Year → 2011–12
-- Export Preparedness Index प्रकाशित संस्था → NITI Aayog (WEF किंवा World Bank नाही).`,
-
-`# 🟦 Chapter 08: कायदे, विधेयके व धोरणे (Acts, Bills & Policies)
-
-## ① National Sports Governance Act, 2025
-तरतुदी 1 जानेवारी 2026 पासून लागू करण्यात आल्या.
-- Search-cum-Selection Committee Rules (8 Jan): अध्यक्ष - कॅबिनेट सचिव.
-- National Sports Bodies Rules (12 Jan): जनरल बॉडीमध्ये किमान 4 Sportspersons of Outstanding Merit (SOMs) असणे बंधनकारक (यात ५०% महिला).
-
----
-
-## ② Uniform Consent Guidelines (पर्यावरण मंत्रालय - 28 Jan)
-Air Act 1981 व Water Act 1974 अंतर्गत CTO (Consent to Operate) रद्द होईपर्यंत वैध राहील.
-
----
-
-## ③ इतर धोरणात्मक निर्णय
-- Atal Pension Yojana (APY): 2030-31 पर्यंत मुदतवाढ.
-- CoalSETU धोरण: कोळसा लिलाव व दीर्घकालीन लिंकेज धोरण.
-- Budget Session 2026: 28 जानेवारी 2026 पासून संसदेचे अर्थसंकल्पीय अधिवेशन सुरू.`,
-
-`# 🟦 Chapter 09: अर्थव्यवस्था व वित्त (Economy & Finance)
-
-- Real GDP Growth FY26: 7.4% | FY27 Projection: 6.8%–7.2%.
-- क्षेत्रनिहाय वृद्धी दर: कृषी: 3.1% | उद्योग GVA: 7.0% | उत्पादन (H1): 8.4% | सेवा क्षेत्र GVA: 9.3%.
-- वित्तीय तूट (Fiscal Deficit): 4.4% of GDP | महसुली तूट: 0.8% of GDP.
-- केंद्र सरकार कर्ज-जीडीपी प्रमाण: 55.7% (2031 पर्यंत 50% चे उद्दिष्ट).
-- कर संकलन: एप्रिल-डिसेंबर GST संकलन ₹17.4 लाख कोटी; एकूण करात प्रत्यक्ष कराचा वाटा 58.2%.
-- एकूण निर्यात FY25: विक्रमी US$ 825.3 billion (वस्तू + सेवा).
-- रेमिटन्स (परकीय आवक): US$ 135.4 billion (भारत जगात अव्वल).
-- रेपो रेट (डिसेंबर २०२५ अखेर): 5.25%.
-- डिमॅट / युनिक गुंतवणूकदार: 12 कोटींपेक्षा जास्त (25% महिला गुंतवणूकदार).
-- PMJDY खाती: 55.02 कोटी खाती.`,
-
-`# 🟦 Chapter 10: विज्ञान व तंत्रज्ञान (Science & Technology)
-
-- PSLV-C62 / EOS-N1 (12 Jan): इस्रोचे प्रक्षेपण; तिसऱ्या टप्प्यातील तांत्रिक दोषांमुळे उपग्रह नियोजित कक्षेत स्थापित होऊ शकला नाही.
-- Aditya-L1: सूर्यावरील शक्तिशाली सौर वादळाचा (Solar Storm) अभ्यास यशस्वीरीत्या नोंदवला; पहिले AO प्रपोजल्स मागवले.
-- LOX-Methane इंजिन: इस्रोने लिक्विड ऑक्सिजन-मिथेन सब-स्केल थ्रस्ट चेंबरची यशस्वी चाचणी घेतली.
-- IMEx-2026: Indian Microgravity Experiments साठी इस्रोकडून संधी जाहीर.
-- AstroSat परिषद: भारताच्या खगोलशास्त्र उपग्रहाला १० वर्षे पूर्ण झाल्यानिमित्त आंतरराष्ट्रीय परिषद.
-- National Quantum Mission (NQM): बजेट ₹6,003.65 कोटी.
-- RDI Fund: डीप-टेक आणि नाविन्यतेसाठी ₹1 लाख कोटींची 6 वर्षांची योजना.
-- ISRO START-2026: Space Science and Technology Awareness Training कार्यक्रम सुरू.`,
-
-`# 🟦 Chapter 11: पर्यावरण, हवामान व जैवविविधता (Environment & Biodiversity)
-
-## ① २ नवीन रामसर स्थळे (31 Jan 2026)
-1. Patna Bird Sanctuary — एटा, उत्तर प्रदेश (⚠️ पाटणा शहरात नाही!)
-2. Chhari-Dhand — कच्छ, गुजरात
-- भारतातील एकूण रामसर स्थळे: 98
-
----
-
-## ② इतर पर्यावरण घडामोडी
-- Project Dolphin: देशातील नदीय व खाडीतील डॉल्फिनची दुसरी व्यापक गणना बिजनौर (UP) येथून सुरू.
-- National River Research Centre: WII, डेहराडून येथे उद्घाटन.
-- ABS निधी वाटप (महाराष्ट्र): राष्ट्रीय जैवविविधता प्राधिकरणाने (NBA) वाडा तालुका (पालघर) आणि BMC ला बॅसिलस सूक्ष्मजीवांच्या व्यावसायिक वापरापोटी निधी वितरित केला.
-- CCTS (Carbon Credit Trading Scheme): 208 नवीन औद्योगिक घटकांसाठी GEI टार्गेट्स जाहीर (एकूण 490 संस्था).
-- काझीरंगा उन्नत कॉरिडॉर: वन्यजीव सुरक्षेसाठी ₹6,950+ कोटींचा प्रकल्प आसाममध्ये सुरू.`,
-
-`# 🟦 Chapter 12: संरक्षण व सुरक्षा (Defence & Security)
-
-- DRDO चा 68 वा स्थापना दिवस: 1 जानेवारी 2026.
-- MPATGM चाचणी (11 Jan): Man Portable Anti-Tank Guided Missile ची केके रेंज, अहिल्यानगर (महाराष्ट्र) येथे यशस्वी चाचणी (3rd Gen Fire-and-Forget, IIR सीकर, टँडेम वॉरहेड).
-- LR-AShM: Long Range Anti-Ship Hypersonic Missile (Mach 10 गती). प्रजासत्ताक दिन संचलनात प्रदर्शन.
-- AIP (Air Independent Propulsion): पाणबुड्यांना जास्त काळ पाण्याखाली राहण्यासाठी स्वदेशी प्रोपल्शन तंत्रज्ञान.
-- पिनाका (Pinaka): गाईडेड एक्स्टेंडेड रेंज रॉकेटचे मूल्यांकन.
-- इतर क्षेपणास्त्रे: प्रलय (Surface-to-Surface), आकाश-एनजी (Surface-to-Air), अस्त्र एमके-२ (Air-to-Air).`,
-
-`# 🟦 Chapter 13: क्रीडा घडामोडी (Sports)
-
-- भारत-न्यूझीलंड ODI मालिका: न्यूझीलंडने भारतात पहिल्यांदाच ODI मालिका ३-० ने जिंकली.
-- भारत-न्यूझीलंड T20I मालिका: अभिषेक शर्माचे १४ चेंडूत जलद अर्धशतक; भारताची मालिकेत ३-० अजेय आघाडी.
-- ICC U-19 क्रिकेट विश्वचषक २०२६: झिम्बाब्वे व नामिबिया येथे सुरू; भारताचे ग्रुप स्टेजमध्ये सलग ३ विजय.
-- TATA WPL २०२६: ४ थी आवृत्ती ९ जानेवारीपासून नवी मुंबईत सुरू (आरसीबी वि. मुंबई इंडियन्स उद्घाटन सामना).
-- खेळो इंडिया विंटर गेम्स २०२६ (Leh, Ladakh): ६ वी आवृत्ती; प्रथमच Figure Skating चा समावेश.
-- Pune Grand Tour 2026 (सायकलिंग): विजेता Luke Mudgway (Li-Ning Star संघ).
-- 72 वी राष्ट्रीय व्हॉलीबॉल स्पर्धा: वाराणसी (UP) येथे आयोजित.`,
-
-`# 🟦 Chapter 14: कला, संस्कृती, साहित्य व वारसा (Culture & Heritage)
-
-- New Delhi World Book Fair 2026: भारत मंडपम; थीम: "Indian Military History: Valour and Wisdom @75" (NBT द्वारे).
-- 'The Saga of Kudopali': १८५७ चे स्वातंत्र्यवीर सुरेंद्र साय यांच्या संघर्षावर आधारित पुस्तक विविध भाषांत प्रकाशित.
-- Bharat Rang Mahotsav (BRM 2026): NSD ची २५ वी आवृत्ती; 'Rang Akash' (रेडिओ) आणि 'Naatyam' (OTT) लाँच.
-- पराक्रम दिवस (23 Jan): नेताजी सुभाषचंद्र बोस यांची १२९ वी जयंती (श्री विजय पुरम / पोर्ट ब्लेअर येथे मुख्य कार्यक्रम).
-- वंदे मातरम्: रचना होऊन २०२६ मध्ये १५० वर्षे पूर्ण.`,
-
-`# 🟦 Chapter 15: सामाजिक क्षेत्र व मानवी विकास (Social Sector)
-
-- National Girl Child Day (24 Jan): माध्यमिक स्तरावर मुलींचा GER 80.2%; 97.5% शाळांमध्ये स्वतंत्र शौचालये.
-- Mission Shakti बजेट (FY26): ₹3,150 कोटी (संबल + सामर्थ्य घटक).
-- PMMVY (मातृत्व वंदना): 4.26 कोटी लाभार्थ्यांना ₹20,060 कोटी वितरित.
-- नवीन हेल्पलाईन शॉर्ट कोड: PM CARES, Poshan व PMMVY साठी जुना 14408 बदलून 1515 करण्यात आला.
-- U-WIN प्लॅटफॉर्म: लसीकरण ट्रॅकिंगसाठी 5 कोटींहून अधिक माता व बालकांची नोंद.
-- Tele-MANAS: २४×७ मोफत मानसिक आरोग्य समुपदेशन (२० भाषांमध्ये).
-- भारताचा MMR: मातृ मृत्यू दर 88 वर आला.
-- कामगार बाजारपेठ (PLFS Jan 2026): महिला LFPR 35.1%, एकूण बेरोजगारी दर 5.0%.`,
-
-`# 🟦 Chapter 16: संस्था व संघटना (Organisations & Institutions)
-
-- NSO (MoSPI): पहिल्या आगाऊ अंदाजात Real GDP Growth 7.4%.
-- NDDB Foundation: 'Giftmilk' आणि 'Shishu Sanjeevani' उपक्रम.
-- NIESBUD व JSS परिषद (पुणे): सिम्बायोसिस युनिव्हर्सिटी, पुणे येथे अनौपचारिक व्यावसायिक प्रशिक्षणावर राष्ट्रीय मंथन.
-- DARPG & CPGRAMS: सलग ४३ व्या महिन्यात १ लाखांहून अधिक तक्रारींचे निवारण; GRAI मध्ये दूरसंचार, टपाल व CBIC विभाग अव्वल.
-- राष्ट्रीय महिला आयोग (NCW): ३० जानेवारी रोजी स्थापना दिन.`,
-
-`# 🟦 Chapter 17: समित्या, आयोग व उपक्रम (Committees & Initiatives)
-
-- Make in India in Sports Committee: राष्ट्रीय क्रीडा महासंघांमध्ये (NSFs) क्रीडा साहित्यासाठी समिती स्थापन करण्याचा आदेश.
-- PM-SETU उद्योग सल्लागार बैठक (पुणे): यशदा (YASHADA), पुणे येथे आयटीआय आधुनिकीकरणासाठी बैठक.
-- Model Women-Friendly Gram Panchayats कार्यशाळा (पुणे): पंचायती राज मंत्रालयाद्वारे यशदा, पुणे येथे संपन्न.
-- Viksit Bharat Young Leaders Dialogue 2026: भारत मंडपम येथे १,५०० युवा नेत्यांचा सहभाग.
-- #SkillTheNation Challenge: राष्ट्रपती द्रौपदी मुर्मू यांच्या हस्ते SOAR (Skilling for AI Readiness) मोहीम सुरू.
-- Waste to Wealth उपक्रम: केंद्रीय सचिवालयात कचऱ्यापासून उपयुक्त फर्निचर व कलाकृती बनवण्याचा उपक्रम.`,
-
-`# 🟦 Chapter 18: संमेलने व शिखर परिषदा (Conferences & Summits)
-
-- IICDEM 2026 (21–23 Jan): निवडणूक आयोगातर्फे (ECI) नवी दिल्लीत प्रथमच आंतरराष्ट्रीय निवडणूक परिषद; १००+ आंतरराष्ट्रीय प्रतिनिधी.
-- 86th AIPOC (19–21 Jan): ऑल इंडिया प्रिसिडिंग ऑफिसर्स परिषद, लखनौ (उत्तर प्रदेश विधानसभा).
-- India Energy Week 2026 (27–30 Jan): ४ थी आवृत्ती, गोवा (१२०+ देश सहभागी).
-- ICSSTM-I 2026 (19–20 Jan): १ ली आंतरराष्ट्रीय अंतराळ परिषद, नेहरू सायन्स सेंटर, मुंबई.
-- समावेशक शिक्षण परिषद (7 Jan): फर्ग्युसन कॉलेज, पुणे येथे अपंगत्व संशोधन परिषद.`,
-
-`# 🟦 Chapter 19: महत्त्वाचे दिवस, सप्ताह व वर्षे (Important Days)
-
-- 4 जानेवारी: जागतिक ब्रेल दिन (World Braille Day - Louis Braille)
-- 9 जानेवारी: प्रवासी भारतीय दिवस (गांधीजींचे भारतात आगमन - १९१५)
-- 10 जानेवारी: जागतिक हिंदी दिन (⚠️ राष्ट्रीय हिंदी दिन १४ सप्टेंबर)
-- 12 जानेवारी: राष्ट्रीय युवा दिन (स्वामी विवेकानंद जयंती)
-- 15 जानेवारी: थलसेना दिन (Army Day - जनरल के. एम. करिअप्पा)
-- 16 जानेवारी: राष्ट्रीय स्टार्टअप दिन (Startup India लाँच २०१६)
-- 24 जानेवारी: राष्ट्रीय बालिका दिन & आंतरराष्ट्रीय शिक्षण दिन
-- 25 जानेवारी: राष्ट्रीय मतदार दिन (ECI स्थापना १९५०) & राष्ट्रीय पर्यटन दिन
-- 26 जानेवारी: 77 वा प्रजासत्ताक दिन, आंतरराष्ट्रीय सीमाशुल्क दिन (WCO) & आंतरराष्ट्रीय स्वच्छ ऊर्जा दिन
-- 27 जानेवारी: आंतरराष्ट्रीय होलोकॉस्ट स्मरण दिन
-- 28 जानेवारी: डेटा गोपनीयता दिन (Data Privacy Day)
-- 30 जानेवारी: हुतात्मा दिन (Martyrs' Day - महात्मा गांधी पुण्यतिथी) & जागतिक NTD दिन`,
-
-`# 🟦 Chapter 20: पुस्तके, लेखक व प्रकाशने (Books & Authors)
-
-- 'Sing, Dance and Lead': लेखक - Hindol Sengupta (श्रील प्रभुपाद यांच्या जीवनावरील नेतृत्व धडे).
-- 'Awazon Ke Jugnu': IGNCA द्वारे भारतातील ३१ नामांकित रेडिओ व व्हॉईस-ओव्हर कलाकारांचे दस्तऐवजीकरण.
-- 'The Saga of Kudopali': वीर सुरेंद्र साय आणि १८५७ च्या संबलपूर लढ्यावर पुस्तक.
-- PM-YUVA 3.0: ४३ युवा लेखकांची निवड; दरमहा ₹५०,००० शिष्यवृत्ती व १०% आजीवन रॉयल्टी.
-- India Year Book: माहिती व प्रसारण मंत्रालयाच्या प्रकाशन विभागातर्फे प्रदर्शित.
-- अभिजात भाषा ग्रंथ: केंद्रीय शिक्षणमंत्र्यांतर्फे अभिजात भारतीय भाषांतील ५५ साहित्यकृती प्रकाशित.`,
-
-`# 🟦 Chapter 21: उल्लेखनीय व्यक्ती व निधन (Notable Personalities)
-
-- धर्मेंद्र सिंग देओल: मरणोत्तर पद्मविभूषण २०२६ जाहीर.
-- अजित पवार: महाराष्ट्राचे उपमुख्यमंत्री (जानेवारी २०२६ मध्ये निधन).
-- स्वामी विवेकानंद: १२ जानेवारी राष्ट्रीय युवा दिनानिमित्त स्मरण.
-- महात्मा गांधी: ३० जानेवारी हुतात्मा दिनानिमित्त देशभरात २ मिनिटांचे मौन.
-- फिल्ड मार्शल के. एम. करिअप्पा: १५ जानेवारी सेना दिनानिमित्त गौरव.
-- वीर सुरेंद्र साय: १८५७ चे स्वातंत्र्ययोद्धा (कुदोपाली पुस्तकामुळे चर्चेत).`,
-
-`# 🟦 Chapter 22: महाराष्ट्र विशेष चालू घडामोडी (Maharashtra Special)
-
-- पुणे शहर (जानेवारी २०२६ चे केंद्र):
-  - यशदा (YASHADA): PM-SETU उद्योग बैठक & महिला-स्नेही ग्रामपंचायत कार्यशाळा.
-  - सिम्बायोसिस युनिव्हर्सिटी: जन शिक्षण संस्थान (JSS) परिषद.
-  - फर्ग्युसन कॉलेज: समावेशक शिक्षण व अपंगत्व आंतरराष्ट्रीय परिषद.
-- मुंबई: नेहरू सायन्स सेंटर येथे पहिली आंतरराष्ट्रीय अंतराळ परिषद (ICSSTM).
-- अहिल्यानगर: केके रेंज येथे MPATGM क्षेपणास्त्राची यशस्वी चाचणी.
-- आपले सरकार पोर्टल: ई-प्रशासनांतर्गत १००+ सेवांचा विस्तार.
-- सहकार क्षेत्र: 'सहकार से समृद्धी' अंतर्गत PACS संगणकीकरण व डेटाबेस अद्ययावत.
-- पिक परिस्थिती: कापूस, सोयाबीन, तूर आणि ऊस या मुख्य पिकांवर भर.`,
-
-`# 🟦 Chapter 23: राष्ट्रीय व नागरी घडामोडी (Civic Developments)
-
-- SVAMITVA योजना: प्रजासत्ताक दिनाच्या चित्ररथाची मुख्य थीम; देशभरात सुमारे ३ कोटी प्रॉपर्टी कार्ड्स वितरित.
-- ग्रामपंचायत प्रतिनिधी (विशेष पाहुणे): प्रजासत्ताक दिनी देशातील सुमारे ४५० निवडून आलेले सरपंच/प्रतिनिधी विशेष अतिथी.
-- मुंबई-पुणे मिसिंग लिंक: खोपोली एक्झिट ते कुसगाव (१३.३ किमी, ₹६,६९५ कोटी) प्रकल्पाचा आढावा.
-- तुळजाभवानी मंदिर विकास आराखडा: तुळजापूर (धाराशिव जिल्हा) येथील मास्टर प्लॅनचा आढावा.
-- मुख्यमंत्री समृद्ध पंचायतराज अभियान: महाराष्ट्रात ५ जानेवारी ते ५ डिसेंबर २०२६ दरम्यान विशेष मोहीम.`,
-
-`# 🟦 Chapter 24: करार व आंतरराष्ट्रीय सहकार्य (Agreements & MoUs)
-
-- भारत-जर्मनी सहकार्य: सेमीकंडक्टर इकोसिस्टम, क्रिटिकल मिनरल्स, संरक्षण उद्योग व दूरसंचार करार.
-- भारत-यूएई सहकार्य: धोलेरा स्पेशल इन्व्हेस्टमेंट रिजन (गुजरात) विकास, IN-SPACe व UAE Space Agency अंतराळ करार, LNG करार.
-- भारत-इस्रायल सहकार्य: मत्स्यव्यवसाय आणि मत्स्यशेती (Fisheries & Aquaculture) क्षेत्रात संयुक्त घोषणा.
-- भारत-युरोपियन युनियन (EU): मुक्त व्यापार करार (FTA) वाटाघाटी पूर्ण; संरक्षण व माहिती सुरक्षा करार; RBI आणि ESMA सामंजस्य करार.`,
-
-`# 🟦 Chapter 25: आपत्ती व आपत्ती व्यवस्थापन (Disasters & Disaster Management)
-
-- 11th NCDS Meeting (20 Jan): धरण सुरक्षिततेवरील राष्ट्रीय समितीची नवी दिल्लीत बैठक (महाराष्ट्र सहभागी).
-- "सांझा शक्ती" सराव (8–9 Jan): खडकी मिलिटरी स्टेशन (पुणे) येथे लष्कर आणि १६ नागरी यंत्रणांचा (पोलीस, फोर्स वन, अग्निशामक) संयुक्त सराव.
-- आपदा मित्र (महाराष्ट्र): राज्यातील २० जिल्ह्यांमध्ये ७,९०० प्रशिक्षित स्वयंसेवक कार्यरत; EERR किट्स वितरित.
-- महाराष्ट्र SEOC (मुंबई): ३६ जिल्हा आपत्कालीन केंद्रांशी जोडलेली स्मार्ट GIS-आधारित डिसिजन सपोर्ट सिस्टीम.
-- State Disaster Management Plan (SDMP): २०२३ आराखड्यानुसार आपत्ती पूर्वतयारी.`,
-
-`# 🟦 Chapter 26: विविध व विशेष घडामोडी (Miscellaneous Events)
-
-- वंदे मातरम् १५० वर्षे: राष्ट्रीय गीताच्या रचनेला १५० वर्षे पूर्ण झाल्यानिमित्त विशेष स्मरण.
-- राष्ट्रीय रस्ते सुरक्षा सप्ताह: हेल्मेट, सीटबेल्ट आणि वाहतूक नियमांचे पालन यावर जनजागृती.
-- ऊर्जा सुरक्षा व संक्रमण: हरित हायड्रोजन, जैवइंधन आणि स्वच्छ तंत्रज्ञानावर भर.
-- प्रजासत्ताक दिन चित्ररथ पुरस्कार: सर्वोत्कृष्ट मार्चिंग तुकड्या व चित्ररथांचे संरक्षण राज्यमंत्र्यांच्या हस्ते वितरण.
-- जानेवारी महिना सारांश: सर्व २६ घटकांची MPSC गट-क दृष्टिकोनातून समग्र व परिपूर्ण उजळणी पूर्ण.`
+        // Complete Subject Map according to user's specified syllabus
+        const SYLLABUS_CONFIG = {
+            prelims: [
+                { id: 'pre-hist', name: 'History (इतिहास)', marathi: 'इतिहास', icon: '🏛️', desc: 'आधुनिक भारत व महाराष्ट्राचा इतिहास' },
+                { id: 'pre-geo', name: 'Geography (भूगोल)', marathi: 'भूगोल', icon: '🌍', desc: 'महाराष्ट्राच्या भूगोलावर विशेष भर' },
+                { id: 'pre-eco', name: 'Economics (अर्थशास्त्र)', marathi: 'अर्थशास्त्र', icon: '📈', desc: 'भारतीय अर्थव्यवस्था, दारिद्र्य, बँकिंग' },
+                { id: 'pre-pol', name: 'Polity & Civics', marathi: 'राज्यशास्त्र व नागरिकशास्त्र', icon: '⚖️', desc: 'भारतीय राज्यघटना, पंचायत राज' },
+                { id: 'pre-sci', name: 'General Science', marathi: 'सामान्य विज्ञान', icon: '🔬', desc: 'भौतिकशास्त्र, रसायनशास्त्र, जीवशास्त्र' },
+                { id: 'pre-ca', name: 'Current Affairs', marathi: 'चालू घडामोडी', icon: '📰', desc: 'राष्ट्रीय व आंतरराष्ट्रीय घडामोडी' },
+                { id: 'pre-apt', name: 'Mental Ability & Arithmetic', marathi: 'बुद्धिमत्ता व अंकगणित', icon: '🧮', desc: 'तर्कक्षमता, संख्या मालिका व कूट प्रश्न' }
+            ],
+            mains: [
+                // Paper 1
+                { id: 'main-mar', name: 'Paper 1: Marathi (मराठी)', marathi: 'मराठी भाषा', icon: '📖', desc: 'मराठी व्याकरण, शब्दसंग्रह व आकलन' },
+                { id: 'main-eng', name: 'Paper 1: English (इंग्रजी)', marathi: 'इंग्रजी भाषा', icon: '🔤', desc: 'Grammar, Vocabulary & Comprehension' },
+                // Paper 2
+                { id: 'main-hist', name: 'Paper 2: History (इतिहास)', marathi: 'इतिहास', icon: '🏛️', desc: 'महाराष्ट्रातील समाजसुधारक व चळवळी' },
+                { id: 'main-geo', name: 'Paper 2: Geography (भूगोल)', marathi: 'भूगोल', icon: '🌍', desc: 'हवामान, नद्या, कृषी व वने' },
+                { id: 'main-pol', name: 'Paper 2: Polity & Civics', marathi: 'राज्यशास्त्र व नागरिकशास्त्र', icon: '⚖️', desc: 'घटनात्मक तरतुदी व प्रशासन' },
+                { id: 'main-eco', name: 'Paper 2: Economics (अर्थशास्त्र)', marathi: 'अर्थशास्त्र', icon: '📊', desc: 'नियोजन, लोकसंख्या व सार्वजनिक वित्त' },
+                { id: 'main-sci', name: 'Paper 2: General Science', marathi: 'सामान्य विज्ञान', icon: '🧬', desc: 'विज्ञान आणि तंत्रज्ञानातील प्रगती' },
+                { id: 'main-ca', name: 'Paper 2: Current Affairs', marathi: 'चालू घडामोडी', icon: '🌐', desc: 'समकालीन घडामोडी व कायदे' },
+                { id: 'main-apt', name: 'Paper 2: Mental Ability', marathi: 'बुद्धिमत्ता व अंकगणित', icon: '🧮', desc: 'डेटा इंटरप्रिटेशन व बुद्धिमत्ता' },
+                { id: 'main-it', name: 'Paper 2: Information Technology', marathi: 'माहिती तंत्रज्ञान (IT)', icon: '💻', desc: 'सायबर सुरक्षा, संगणक मूलभूत ज्ञान' },
+                { id: 'main-rti', name: 'Paper 2: RTI & RTS Acts', marathi: 'RTI व लोकसेवा हक्क कायदा', icon: '📜', desc: 'माहिती अधिकार २००५ व लोकसेवा कायदा २०१५' },
+                { id: 'main-post', name: 'Paper 2: Post-Specific Knowledge', marathi: 'पदानुसार विशेष ज्ञान', icon: '📑', desc: 'लिपिक-टंकलेखक व कर सहाय्यक पदज्ञान' }
+            ]
+        };
+
+        const SAMPLE_QUESTIONS = [
+            {
+                subjectId: 'pre-geo',
+                track: 'prelims',
+                subjectName: 'भूगोल',
+                question: 'महाराष्ट्रातील "लोणार सरोवर" हे उल्कापातामुळे तयार झालेले सरोवर कोणत्या जिल्ह्यात आहे?',
+                options: ['अकोला', 'बुलढाणा', 'अमरावती', 'वाशिम'],
+                correct: 1,
+                explanation: 'लोणार सरोवर हे बुलढाणा जिल्ह्यातील खाऱ्या पाण्याचे नैसर्गिक सरोवर असून उल्कापातामुळे (Meteorite impact) तयार झाले आहे.'
+            },
+            {
+                subjectId: 'pre-pol',
+                track: 'prelims',
+                subjectName: 'राज्यशास्त्र',
+                question: 'भारतीय राज्यघटनेतील कोणत्या कलमानुसार "ग्रामपंचायतींची स्थापना" करण्याचे निर्देश दिले आहेत?',
+                options: ['कलम ४०', 'कलम ४४', 'कलम ५०', 'कलम ५१'],
+                correct: 0,
+                explanation: 'मार्गदर्शक तत्त्वांमधील कलम ४० हे ग्रामपंचायतींच्या स्थापनेशी संबंधित आहे.'
+            },
+            {
+                subjectId: 'pre-hist',
+                track: 'prelims',
+                subjectName: 'इतिहास',
+                question: '१ मे १९६० रोजी संयुक्त महाराष्ट्र राज्याची स्थापना झाली, त्यावेळी महाराष्ट्रात एकूण किती जिल्हे होते?',
+                options: ['२४ जिल्हे', '२६ जिल्हे', '२८ जिल्हे', '३० जिल्हे'],
+                correct: 1,
+                explanation: 'स्थापनेच्या वेळी महाराष्ट्रात २६ जिल्हे व ४ प्रशासकीय विभाग होते. आजघडीला ३६ जिल्हे आहेत.'
+            },
+            {
+                subjectId: 'pre-sci',
+                track: 'prelims',
+                subjectName: 'सामान्य विज्ञान',
+                question: 'मानवी शरीरात रक्तातील साखरेचे प्रमाण नियंत्रित ठेवणारे "इन्सुलिन" हे संप्रेरक कोणत्या अवयवातून स्रवले जाते?',
+                options: ['यकृत (Liver)', 'स्वादुपिंड (Pancreas)', 'जठर (Stomach)', 'वृक्क (Kidney)'],
+                correct: 1,
+                explanation: 'इन्सुलिन हे स्वादुपिंडातील आयलेट्स ऑफ लँगरहॅन्सच्या बीटा पेशींद्वारे स्रवले जाते.'
+            },
+            {
+                subjectId: 'pre-apt',
+                track: 'prelims',
+                subjectName: 'बुद्धिमत्ता',
+                question: 'जर CAT = 24 आणि DOG = 26 असेल, तर BAT बरोबर किती?',
+                options: ['२२', '२३', '२४', '२५'],
+                correct: 1,
+                explanation: 'अक्षरांचे इंग्रजी वर्णमालेतील स्थान: B(2) + A(1) + T(20) = 23.'
+            },
+            {
+                subjectId: 'main-mar',
+                track: 'mains',
+                subjectName: 'मराठी भाषा',
+                question: '"विद्वान" या नामाचे स्त्रीलिंगी रूप खालीलपैकी कोणते?',
+                options: ['विदुषी', 'विद्वानी', 'विद्वाती', 'विदुषक'],
+                correct: 0,
+                explanation: 'विद्वान या पुल्लिंगी नामाचे स्त्रीलिंगी रूप "विदुषी" असे होते.'
+            },
+            {
+                subjectId: 'main-rti',
+                track: 'mains',
+                subjectName: 'RTI व लोकसेवा हक्क कायदा',
+                question: 'माहितीचा अधिकार कायदा (RTI Act) भारतात कोणत्या वर्षी संमत करण्यात आला?',
+                options: ['२००२', '२००५', '२००८', '२०१०'],
+                correct: 1,
+                explanation: 'माहितीचा अधिकार अधिनियम १२ ऑक्टोबर २००५ पासून संपूर्ण भारतात लागू करण्यात आला.'
+            },
+            {
+                subjectId: 'main-it',
+                track: 'mains',
+                subjectName: 'माहिती तंत्रज्ञान',
+                question: 'संगणकामध्ये "RAM" चा योग्य विस्तार (Full Form) कोणता आहे?',
+                options: ['Read Access Memory', 'Random Access Memory', 'Rapid Action Module', 'Real Application Memory'],
+                correct: 1,
+                explanation: 'RAM चे पूर्ण रूप Random Access Memory असे असून ही संगणकाची मुख्य तात्पुरती (Volatile) मेमरी असते.'
+            }
         ];
 
-        const chapterTitles = [
-            "01. महाराष्ट्रातील चालू घडामोडी",
-            "02. राष्ट्रीय चालू घडामोडी",
-            "03. आंतरराष्ट्रीय चालू घडामोडी",
-            "04. शासकीय योजना व कार्यक्रम",
-            "05. नियुक्त्या व व्यक्ती",
-            "06. पुरस्कार व सन्मान",
-            "07. अहवाल, निर्देशांक व क्रमवारी",
-            "08. कायदे, विधेयके व धोरणे",
-            "09. अर्थव्यवस्था व वित्त",
-            "10. विज्ञान व तंत्रज्ञान",
-            "11. पर्यावरण, हवामान व जैवविविधता",
-            "12. संरक्षण व सुरक्षा",
-            "13. क्रीडा घडामोडी",
-            "14. कला, संस्कृती, साहित्य व वारसा",
-            "15. सामाजिक क्षेत्र व मानवी विकास",
-            "16. संस्था व संघटना",
-            "17. समित्या, आयोग व उपक्रम",
-            "18. शिखर परिषदा व संमेलने",
-            "19. महत्त्वाचे दिवस, सप्ताह व वर्षे",
-            "20. पुस्तके, लेखक व प्रकाशने",
-            "21. उल्लेखनीय व्यक्ती व निधन",
-            "22. महाराष्ट्र विशेष चालू घडामोडी",
-            "23. राष्ट्रीय व नागरी घडामोडी",
-            "24. करार व आंतरराष्ट्रीय सहकार्य",
-            "25. आपत्ती व आपत्ती व्यवस्थापन",
-            "26. विविध व विशेष चालू घडामोडी"
-        ];
+        let currentTrack = 'prelims'; // 'prelims' or 'mains'
+        let activeQuestions = [];
+        let activeQIndex = 0;
+        let userChoices = {}; // { questionIndex: chosenOptionIndex }
+        let timerSeconds = 0;
+        let timerInterval = null;
 
-        let currentChapterIndex = 0;
-        const totalChaptersCount = chapterTitles.length;
-
-        // Clean external links and unwanted URLs
-        function cleanUnwantedUrls(text) {
-            if (!text) return '';
-            let cleaned = text.replace(/\[([^\]]+)\]\(https?:\/\/[^\)]+\)/g, '$1');
-            cleaned = cleaned.replace(/https?:\/\/[^\s\)\>]+/g, '');
-            return cleaned;
+        function init() {
+            renderSubjects();
         }
 
-        // Apply callouts and tables design
-        function applyDesignTransforms(element) {
-            const allParagraphs = element.querySelectorAll('p, blockquote');
-            allParagraphs.forEach(p => {
-                const text = p.innerText || '';
+        function switchTrack(track) {
+            currentTrack = track;
+            const tabPrelims = document.getElementById('tab-prelims');
+            const tabMains = document.getElementById('tab-mains');
+            const trackBadge = document.getElementById('active-track-badge');
+            const navPrelims = document.getElementById('nav-btn-prelims');
+            const navMains = document.getElementById('nav-btn-mains');
 
-                if (text.includes('Exam Trap') || text.includes('MPSC Trap')) {
-                    const box = document.createElement('div');
-                    box.className = 'info-box box-trap';
-                    box.innerHTML = `<h4><i class="fas fa-exclamation-triangle"></i> Exam Trap / सावधगिरी</h4><div>${p.innerHTML}</div>`;
-                    p.replaceWith(box);
-                } else if (text.includes('MPSC Exam Points') || text.includes('MPSC Favourite') || text.includes('MPSC Focus')) {
-                    const box = document.createElement('div');
-                    box.className = 'info-box box-favourite';
-                    box.innerHTML = `<h4><i class="fas fa-fire"></i> MPSC Exam Points / Focus</h4><div>${p.innerHTML}</div>`;
-                    p.replaceWith(box);
-                } else if (text.includes('Quick Revision') || text.includes('One Page Revision')) {
-                    const box = document.createElement('div');
-                    box.className = 'info-box box-revision';
-                    box.innerHTML = `<h4><i class="fas fa-bolt"></i> Quick Revision (झटपट उजळणी)</h4><div>${p.innerHTML}</div>`;
-                    p.replaceWith(box);
-                }
-            });
-
-            const tables = element.querySelectorAll('table');
-            tables.forEach(table => {
-                table.className = 'data-table';
-                const wrapper = document.createElement('div');
-                wrapper.className = 'table-responsive';
-                table.parentNode.insertBefore(wrapper, table);
-                wrapper.appendChild(table);
-            });
+            if (track === 'prelims') {
+                tabPrelims.className = 'py-2 rounded-xl text-xs sm:text-sm font-black transition text-white bg-navy-900 shadow-sm';
+                tabMains.className = 'py-2 rounded-xl text-xs sm:text-sm font-black transition text-slate-600 hover:text-navy-950';
+                trackBadge.innerText = 'पूर्व परीक्षा (Prelims)';
+                navPrelims.className = 'flex flex-col items-center justify-center text-brand-600 transition';
+                navMains.className = 'flex flex-col items-center justify-center text-slate-400 hover:text-slate-600 transition';
+                document.getElementById('subject-list-heading').innerText = 'पूर्व परीक्षेचे विषय (Prelims Subjects)';
+                document.getElementById('subject-count-info').innerText = '७ विषय';
+            } else {
+                tabMains.className = 'py-2 rounded-xl text-xs sm:text-sm font-black transition text-white bg-navy-900 shadow-sm';
+                tabPrelims.className = 'py-2 rounded-xl text-xs sm:text-sm font-black transition text-slate-600 hover:text-navy-950';
+                trackBadge.innerText = 'मुख्य परीक्षा (Mains)';
+                navMains.className = 'flex flex-col items-center justify-center text-brand-600 transition';
+                navPrelims.className = 'flex flex-col items-center justify-center text-slate-400 hover:text-slate-600 transition';
+                document.getElementById('subject-list-heading').innerText = 'मुख्य परीक्षेचे विषय (Mains Subjects)';
+                document.getElementById('subject-count-info').innerText = '१२ विषय (Paper 1 & 2)';
+            }
+            renderSubjects();
         }
 
-        // सर्व २६ घटकांचा डेटा DOM मध्ये तयार करणे
-        function renderAllChaptersDOM() {
-            const container = document.getElementById('notes-container');
-            if (!container) return;
-            container.innerHTML = '';
-
-            rawChaptersData.forEach((chapterMd, idx) => {
-                const chapNum = (idx + 1).toString().padStart(2, '0');
-                const section = document.createElement('section');
-                section.className = 'content-section';
-                section.id = `chap-${chapNum}`;
-                section.style.display = (idx === 0) ? 'block' : 'none';
-
-                const contentBody = document.createElement('div');
-                contentBody.className = 'content-body';
-
-                // बाह्य लिंक्स काढून Marked द्वारे पार्स करणे
-                const cleaned = cleanUnwantedUrls(chapterMd);
-                contentBody.innerHTML = marked.parse(cleaned);
-
-                // डिझाईन आणि हायलाईट बॉक्सेस लागू करणे
-                applyDesignTransforms(contentBody);
-
-                section.appendChild(contentBody);
-                container.appendChild(section);
-            });
+        function toggleTrack() {
+            switchTrack(currentTrack === 'prelims' ? 'mains' : 'prelims');
         }
 
-        // Populate Dropdown and Table with strictly 26 chapters
-        function populateDropdownAndTable() {
-            const selectEl = document.getElementById('chapterDropdown');
-            const tbody = document.getElementById('chaptersTableBody');
-            
-            selectEl.innerHTML = '';
-            tbody.innerHTML = '';
+        function handleBottomNav(target) {
+            showScreen('home');
+            switchTrack(target);
+        }
 
-            for (let i = 0; i < totalChaptersCount; i++) {
-                const chapNum = (i + 1).toString().padStart(2, '0');
-                const titleText = chapterTitles[i];
+        function renderSubjects() {
+            const container = document.getElementById('subjects-container');
+            const list = SYLLABUS_CONFIG[currentTrack];
 
-                // Dropdown Option
-                const option = document.createElement('option');
-                option.value = i;
-                option.textContent = `Ch ${titleText}`;
-                selectEl.appendChild(option);
-
-                // Table Row
-                const tr = document.createElement('tr');
-                tr.innerHTML = `
-                    <td style="font-weight: 700; color: var(--primary-color);">Ch ${chapNum}</td>
-                    <td style="font-weight: 600; cursor: pointer;" onclick="showChapter(${i})">${titleText}</td>
-                    <td style="text-align: center;">
-                        <button class="btn btn-primary" onclick="showChapter(${i})" style="padding: 4px 10px; font-size: 0.82rem; margin: 0 auto;">
-                            <i class="fas fa-book-open"></i> वाचा
-                        </button>
-                    </td>
+            container.innerHTML = list.map(sub => {
+                return `
+                    <div onclick="startTest('${sub.id}', '${sub.marathi}')" class="bg-white p-3.5 rounded-2xl border border-slate-200 hover:border-brand-500 shadow-2xs active:scale-[0.98] transition cursor-pointer flex items-center justify-between group">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-10 h-10 rounded-xl bg-slate-50 group-hover:bg-orange-50 flex items-center justify-center text-xl shrink-0 transition">
+                                ${sub.icon}
+                            </div>
+                            <div>
+                                <h4 class="text-xs sm:text-sm font-bold text-slate-900 group-hover:text-brand-600 transition leading-snug">
+                                    ${sub.name}
+                                </h4>
+                                <p class="text-[11px] text-slate-400 line-clamp-1">${sub.desc}</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-1 shrink-0 text-slate-400 group-hover:text-brand-600">
+                            <span class="text-xs font-bold">सराव</span>
+                            <span class="text-sm">→</span>
+                        </div>
+                    </div>
                 `;
-                tbody.appendChild(tr);
-            }
+            }).join('');
         }
 
-        // Display selected chapter
-        function showChapter(index) {
-            if (index < 0 || index >= totalChaptersCount) return;
+        function startTest(subjectId, customTitle = '') {
+            let pool = [];
+
+            if (subjectId === 'ALL') {
+                pool = SAMPLE_QUESTIONS.filter(q => q.track === currentTrack);
+                if (pool.length === 0) pool = [...SAMPLE_QUESTIONS];
+                document.getElementById('quiz-subject-pill').innerText = currentTrack === 'prelims' ? 'पूर्व सर्व विषय' : 'मुख्य सर्व विषय';
+            } else {
+                pool = SAMPLE_QUESTIONS.filter(q => q.subjectId === subjectId || q.subjectName.includes(customTitle));
+                if (pool.length === 0) {
+                    pool = SAMPLE_QUESTIONS.filter(q => q.track === currentTrack);
+                }
+                document.getElementById('quiz-subject-pill').innerText = customTitle || 'सराव प्रश्न';
+            }
+
+            activeQuestions = pool;
+            activeQIndex = 0;
+            userChoices = {};
+            timerSeconds = activeQuestions.length * 60; // 60 seconds per question
+
+            showScreen('quiz');
+            loadQuestion();
+            startTimer();
+        }
+
+        function startTimer() {
+            clearInterval(timerInterval);
+            renderTimer();
+            timerInterval = setInterval(() => {
+                timerSeconds--;
+                renderTimer();
+                if (timerSeconds <= 0) {
+                    clearInterval(timerInterval);
+                    finishTest();
+                }
+            }, 1000);
+        }
+
+        function renderTimer() {
+            const m = Math.floor(timerSeconds / 60);
+            const s = timerSeconds % 60;
+            document.getElementById('quiz-timer').innerText = 
+                `${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`;
+        }
+
+        function loadQuestion() {
+            const q = activeQuestions[activeQIndex];
+            document.getElementById('q-curr-index').innerText = activeQIndex + 1;
+            document.getElementById('q-total-count').innerText = activeQuestions.length;
+            document.getElementById('q-badge-num').innerText = activeQIndex + 1;
+            document.getElementById('q-question-text').innerText = q.question;
+
+            // Update Progress Bar
+            const percent = ((activeQIndex + 1) / activeQuestions.length) * 100;
+            document.getElementById('quiz-progress-fill').style.width = `${percent}%`;
+
+            // Render Options
+            const selected = userChoices[activeQIndex];
+            const optionsContainer = document.getElementById('options-list');
             
-            currentChapterIndex = index;
+            optionsContainer.innerHTML = q.options.map((opt, i) => {
+                const isSelected = selected === i;
+                const border = isSelected ? 'border-brand-600 bg-orange-50/70 shadow-xs ring-1 ring-brand-600' : 'border-slate-200 bg-white hover:bg-slate-50';
+                const circle = isSelected ? 'bg-brand-600 text-white border-brand-600' : 'bg-slate-100 text-slate-700 border-slate-300';
 
-            const sections = document.querySelectorAll('#notes-container .content-section');
-            sections.forEach((sec, i) => {
-                sec.style.display = (i === index) ? 'block' : 'none';
-            });
+                return `
+                    <div onclick="selectAnswer(${i})" class="flex items-center gap-3 p-3.5 rounded-xl border ${border} cursor-pointer transition select-none active:scale-[0.99]">
+                        <div class="w-7 h-7 rounded-lg border text-xs font-bold flex items-center justify-center shrink-0 ${circle}">
+                            ${['A', 'B', 'C', 'D'][i]}
+                        </div>
+                        <div class="text-xs sm:text-sm font-semibold text-slate-800 leading-snug">
+                            ${opt}
+                        </div>
+                    </div>
+                `;
+            }).join('');
 
-            // Sync dropdown
-            const selectEl = document.getElementById('chapterDropdown');
-            if (selectEl) selectEl.value = index;
-
-            // Update bottom next/prev buttons
-            updatePaginationUI();
-
-            // Smooth scroll to chapter
-            const activeSection = document.getElementById(`chap-${(index + 1).toString().padStart(2, '0')}`);
-            if (activeSection) {
-                const topOffset = activeSection.getBoundingClientRect().top + window.pageYOffset - 80;
-                window.scrollTo({ top: Math.max(0, topOffset), behavior: 'smooth' });
-            }
-        }
-
-        // ६. पुढील किंवा मागील घटकावर जाणे
-        function navigateChapter(direction) {
-            const nextIndex = currentChapterIndex + direction;
-            if (nextIndex >= 0 && nextIndex < totalChaptersCount) {
-                showChapter(nextIndex);
-            }
-        }
-
-        // ७. तळाच्या बटणांचे दृश्य अपडेट करणे (Next / Prev logic)
-        function updatePaginationUI() {
-            const paginationBar = document.getElementById('chapterPagination');
-            const prevBtn = document.getElementById('prevChapterBtn');
-            const nextBtn = document.getElementById('nextChapterBtn');
-            const prevText = document.getElementById('prevBtnText');
-            const nextText = document.getElementById('nextBtnText');
-            const tracker = document.getElementById('chapterTracker');
-
-            if (!paginationBar) return;
-            paginationBar.style.display = 'flex';
-
-            const curr = currentChapterIndex;
-            tracker.textContent = `घटक ${curr + 1} / ${totalChaptersCount}`;
-
-            // मागील बटण (Ch 1 वर असताना लपवणे)
-            if (curr === 0) {
-                prevBtn.style.display = 'none';
+            // Update Bottom Button Labels
+            document.getElementById('btn-prev-q').disabled = activeQIndex === 0;
+            const nextBtn = document.getElementById('btn-next-q');
+            if (activeQIndex === activeQuestions.length - 1) {
+                nextBtn.innerText = 'पूर्ण करा ✅';
+                nextBtn.className = 'px-5 py-2.5 text-xs font-bold rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white active:scale-95 shadow-xs transition';
             } else {
-                prevBtn.style.display = 'inline-flex';
-                const prevNum = (curr).toString().padStart(2, '0');
-                prevText.textContent = `Ch ${prevNum} (मागील)`;
-            }
-
-            // पुढील बटण (शेवटच्या Ch वर असताना लपवणे)
-            if (curr === totalChaptersCount - 1) {
-                nextBtn.style.display = 'none';
-            } else {
-                nextBtn.style.display = 'inline-flex';
-                const nextNum = (curr + 2).toString().padStart(2, '0');
-                nextText.textContent = `Ch ${nextNum} (पुढील)`;
+                nextBtn.innerText = 'पुढे →';
+                nextBtn.className = 'px-5 py-2.5 text-xs font-bold rounded-xl bg-navy-900 hover:bg-navy-800 text-white active:scale-95 shadow-xs transition';
             }
         }
 
-        // ८. कीवर्ड शोधणे (Search Logic)
-        function searchNotes(query) {
-            const term = (query || '').trim().toLowerCase();
-            const sections = document.querySelectorAll('#notes-container .content-section');
-            const paginationBar = document.getElementById('chapterPagination');
+        function selectAnswer(optIndex) {
+            userChoices[activeQIndex] = optIndex;
+            loadQuestion();
+        }
 
-            if (!term) {
-                showChapter(currentChapterIndex);
-                return;
-            }
+        function clearCurrentSelection() {
+            delete userChoices[activeQIndex];
+            loadQuestion();
+        }
 
-            sections.forEach(sec => {
-                const text = sec.innerText.toLowerCase();
-                if (text.includes(term)) {
-                    sec.style.display = 'block';
+        function navigateQuestion(direction) {
+            if (direction === 1) {
+                if (activeQIndex < activeQuestions.length - 1) {
+                    activeQIndex++;
+                    loadQuestion();
                 } else {
-                    sec.style.display = 'none';
+                    promptSubmit();
+                }
+            } else if (direction === -1) {
+                if (activeQIndex > 0) {
+                    activeQIndex--;
+                    loadQuestion();
+                }
+            }
+        }
+
+        function promptSubmit() {
+            showModal(
+                'चाचणी सबमिट करायची?',
+                'तुम्ही सर्व प्रश्न पाहिले आहेत. निकाल व स्पष्टीकरण पाहण्यासाठी "होय" दाबा.',
+                () => {
+                    closeModal();
+                    finishTest();
+                }
+            );
+        }
+
+        function quitTest() {
+            showModal(
+                'चाचणी थांबवायची आहे का?',
+                'आता बाहेर पडल्यास तुमचे उत्तर सेव्ह होणार नाही.',
+                () => {
+                    clearInterval(timerInterval);
+                    closeModal();
+                    showScreen('home');
+                }
+            );
+        }
+
+        function finishTest() {
+            clearInterval(timerInterval);
+
+            let correct = 0;
+            let wrong = 0;
+            let skipped = 0;
+
+            activeQuestions.forEach((q, idx) => {
+                const choice = userChoices[idx];
+                if (choice === undefined) {
+                    skipped++;
+                } else if (choice === q.correct) {
+                    correct++;
+                } else {
+                    wrong++;
                 }
             });
 
-            // सर्च चालू असताना नेव्हिगेशन बार लपवणे
-            if (paginationBar) paginationBar.style.display = 'none';
+            // MPSC formula: +1 for right, -0.25 for wrong
+            const netScore = Math.max(0, (correct * 1.0) - (wrong * 0.25));
+
+            document.getElementById('res-score').innerText = netScore.toFixed(2);
+            document.getElementById('res-correct').innerText = correct;
+            document.getElementById('res-wrong').innerText = wrong;
+            document.getElementById('res-skipped').innerText = skipped;
+
+            renderReviewList();
+            showScreen('result');
         }
 
-        // Theme Toggle
-        function toggleTheme() {
-            const body = document.body;
-            const btn = document.getElementById('themeBtn');
-            if (body.getAttribute('data-theme') === 'dark') {
-                body.removeAttribute('data-theme');
-                btn.innerHTML = '<i class="fas fa-moon"></i>';
-                localStorage.setItem('theme', 'light');
-            } else {
-                body.setAttribute('data-theme', 'dark');
-                btn.innerHTML = '<i class="fas fa-sun"></i>';
-                localStorage.setItem('theme', 'dark');
-            }
-        }
-        if (localStorage.getItem('theme') === 'dark') {
-            document.body.setAttribute('data-theme', 'dark');
-            document.getElementById('themeBtn').innerHTML = '<i class="fas fa-sun"></i>';
+        function renderReviewList() {
+            const container = document.getElementById('results-review-list');
+            container.innerHTML = activeQuestions.map((q, idx) => {
+                const choice = userChoices[idx];
+                const isSkipped = choice === undefined;
+                const isCorrect = choice === q.correct;
+
+                let tag = isSkipped 
+                    ? `<span class="text-[10px] font-bold px-2 py-0.5 rounded bg-amber-100 text-amber-800">सोडवला नाही</span>`
+                    : (isCorrect 
+                        ? `<span class="text-[10px] font-bold px-2 py-0.5 rounded bg-emerald-100 text-emerald-800">बरोबर (+१.००)</span>`
+                        : `<span class="text-[10px] font-bold px-2 py-0.5 rounded bg-rose-100 text-rose-800">चूक (-०.२५)</span>`);
+
+                return `
+                    <div class="bg-white p-4 rounded-2xl border border-slate-200 shadow-2xs space-y-2.5">
+                        <div class="flex items-center justify-between">
+                            <span class="text-[11px] font-bold text-slate-400">प्रश्न ${idx + 1}</span>
+                            ${tag}
+                        </div>
+                        <p class="text-xs sm:text-sm font-bold text-slate-900 leading-snug">${q.question}</p>
+                        
+                        <div class="space-y-1.5 pt-1">
+                            ${q.options.map((opt, i) => {
+                                let style = 'bg-slate-50 border-slate-200 text-slate-700';
+                                if (i === q.correct) {
+                                    style = 'bg-emerald-50 border-emerald-300 text-emerald-900 font-bold';
+                                } else if (!isCorrect && choice === i) {
+                                    style = 'bg-rose-50 border-rose-300 text-rose-900 font-bold';
+                                }
+                                return `
+                                    <div class="p-2 rounded-lg border text-xs flex justify-between items-center ${style}">
+                                        <span>(${['A','B','C','D'][i]}) ${opt}</span>
+                                        ${i === q.correct ? '<span>✅ अचूक</span>' : ''}
+                                        ${!isCorrect && choice === i ? '<span>❌ तुमचे उत्तर</span>' : ''}
+                                    </div>
+                                `;
+                            }).join('')}
+                        </div>
+
+                        <div class="p-2.5 bg-blue-50/70 border border-blue-100 rounded-xl text-[11px] text-slate-700 leading-relaxed">
+                            <strong class="text-blue-900 block font-bold">💡 स्पष्टीकरण:</strong>
+                            ${q.explanation}
+                        </div>
+                    </div>
+                `;
+            }).join('');
         }
 
-        // Mobile Menu
-        function toggleMenu() {
-            document.getElementById('mobileMenu').classList.toggle('active');
-            document.getElementById('menuOverlay').classList.toggle('active');
-        }
-
-        function openTelegram() {
-            window.open('https://t.me/MPSCstudysphere', '_blank');
-        }
-
-        // Donation Logic
-        const INTERNAL_UPI_ID = "vikram.joshi9089@oksbi"; 
-        let selectedAmount = 0;
-        function isMobileDevice() { return /Android|webOS|iPhone|iPad|iPod/i.test(navigator.userAgent); }
-        function openDonate() {
-            if (isMobileDevice()) {
-                document.getElementById('mobileDonateModal').style.display = 'flex';
-            } else {
-                document.getElementById('desktopDonateModal').style.display = 'flex';
-            }
-        }
-        function closeModals() {
-            document.querySelectorAll('.modal-overlay').forEach(m => m.style.display = 'none');
-        }
-        window.onclick = function(e) { if(e.target.classList.contains('modal-overlay')) closeModals(); }
-
-        function selectPresetAmount(amount) {
-            selectedAmount = amount;
-            document.querySelectorAll('.amt-btn').forEach(btn => btn.classList.remove('selected'));
-            event.target.classList.add('selected');
-            document.getElementById('customAmt').value = '';
-            validateAmount();
-        }
-        function handleCustomAmount() {
-            document.querySelectorAll('.amt-btn').forEach(btn => btn.classList.remove('selected'));
-            selectedAmount = parseFloat(document.getElementById('customAmt').value);
-            validateAmount();
-        }
-        function validateAmount() {
-            const btn = document.getElementById('payNowBtn');
-            if (isNaN(selectedAmount) || selectedAmount < 1) {
-                btn.disabled = true;
-                btn.innerText = 'Pay Now';
-            } else {
-                btn.disabled = false;
-                btn.innerText = `Pay ₹${selectedAmount}`;
-            }
-        }
-        function initiateUPIPayment() {
-            if (selectedAmount >= 1) {
-                window.location.href = `upi://pay?pa=${INTERNAL_UPI_ID}&pn=StudySphere&am=${selectedAmount}&cu=INR`;
-                setTimeout(closeModals, 500);
+        function showScreen(screenId) {
+            ['home', 'quiz', 'result'].forEach(s => {
+                const el = document.getElementById(`screen-${s}`);
+                if (el) el.classList.add('hidden');
+            });
+            const target = document.getElementById(`screen-${screenId}`);
+            if (target) {
+                target.classList.remove('hidden');
+                target.scrollTop = 0;
             }
         }
 
-        // Initial setup
-        window.addEventListener('DOMContentLoaded', () => {
-            renderAllChaptersDOM();
-            populateDropdownAndTable();
-            showChapter(0); // सुरुवातीला फक्त Chapter 1 उघडेल
-        });
+        function showModal(title, msg, onConfirm) {
+            const modal = document.getElementById('app-modal');
+            document.getElementById('modal-title').innerText = title;
+            document.getElementById('modal-msg').innerText = msg;
+            const okBtn = document.getElementById('modal-btn-ok');
+            okBtn.onclick = onConfirm;
+            modal.classList.remove('hidden');
+        }
+
+        function closeModal() {
+            document.getElementById('app-modal').classList.add('hidden');
+        }
+
+        function showAppInfo() {
+            showModal(
+                'MPSC गट-क ॲप माहिती',
+                'हे ॲप पूर्णपणे पूर्व आणि मुख्य परीक्षेच्या नवीन २०२६ पॅटर्नवर आधारित आहे. GitHub Pages वर हे थेट चालवता येते.',
+                () => closeModal()
+            );
+        }
+
+        // App Boot
+        window.onload = function() {
+            init();
+        };
     </script>
 </body>
 </html>
-`
