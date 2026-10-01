@@ -328,6 +328,67 @@
         .data-table tr:nth-child(even) { background-color: var(--primary-light); }
         .table-responsive { overflow-x: auto; margin: 15px 0; }
 
+        /* Chapter Pagination Navigation */
+        .chapter-pagination {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 12px;
+            margin-top: 2rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .page-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 18px;
+            border-radius: 8px;
+            background: var(--card-bg);
+            color: var(--primary-color);
+            border: 1px solid var(--border-color);
+            font-size: 0.95rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.25s ease;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.03);
+        }
+
+        .page-btn:hover {
+            background: var(--primary-color);
+            color: #ffffff;
+            border-color: var(--primary-color);
+        }
+
+        [data-theme="dark"] .page-btn:hover {
+            color: #121212;
+            background: var(--primary-color);
+        }
+
+        .page-btn.next-btn {
+            margin-left: auto;
+            background: var(--primary-color);
+            color: #ffffff;
+            border-color: var(--primary-color);
+        }
+
+        .page-btn.next-btn:hover {
+            background: var(--primary-hover);
+        }
+
+        [data-theme="dark"] .page-btn.next-btn {
+            color: #121212;
+            background: var(--primary-color);
+        }
+
+        .chapter-tracker {
+            font-size: 0.88rem;
+            font-weight: 600;
+            opacity: 0.75;
+            text-align: center;
+        }
+
         .btn-download { 
             display: flex; 
             align-items: center; 
@@ -437,13 +498,13 @@
         <div class="controls-card no-print">
             <div class="select-group">
                 <label for="chapterDropdown"><i class="fas fa-book-open"></i> घटक निवडा:</label>
-                <select id="chapterDropdown" class="chapter-dropdown" onchange="jumpToChapter(this.value)">
-                    <option value="">-- सर्व २६ घटकांची यादी --</option>
+                <select id="chapterDropdown" class="chapter-dropdown" onchange="selectChapterByIndex(parseInt(this.value, 10))">
+                    <option value="0">-- घटक निवडा (Ch 01 to Ch 26) --</option>
                 </select>
             </div>
             <div class="search-input-box">
                 <i class="fas fa-search"></i>
-                <input type="text" id="keyword-search" oninput="searchNotes(this.value)" placeholder="महत्त्वाचा शब्द शोधा (उदा. PWD, Padma, GDP, Ramsar)...">
+                <input type="text" id="keyword-search" oninput="searchNotes(this.value)" placeholder="घटकामध्ये किंवा सर्व नोट्समध्ये शब्द शोधा...">
             </div>
         </div>
 
@@ -457,6 +518,17 @@
             <div id="notes-container">
                 <!-- Rendered chapters injected dynamically -->
             </div>
+        </div>
+
+        <!-- Navigation Buttons at the Bottom of Content -->
+        <div class="chapter-pagination no-print" id="chapterPagination" style="display: none;">
+            <button class="page-btn prev-btn" id="prevChapterBtn" onclick="navigateChapter(-1)">
+                <i class="fas fa-arrow-left"></i> <span id="prevBtnText">मागील घटक</span>
+            </button>
+            <div class="chapter-tracker" id="chapterTracker">घटक १ / २६</div>
+            <button class="page-btn next-btn" id="nextChapterBtn" onclick="navigateChapter(1)">
+                <span id="nextBtnText">पुढील घटक</span> <i class="fas fa-arrow-right"></i>
+            </button>
         </div>
 
         <button class="btn-download no-print" onclick="downloadPDF()">
@@ -538,6 +610,10 @@
 
     <script>
         let rawMarkdownContent = '';
+        let totalChaptersCount = 0;
+        let currentChapterIndex = 0;
+        let isSearching = false;
+
         const chapterTitles = [
             "01. महाराष्ट्रातील चालू घडामोडी",
             "02. राष्ट्रीय चालू घडामोडी",
@@ -592,6 +668,9 @@
                 populateDropdown();
                 spinner.style.display = 'none';
 
+                // सुरुवातीला फक्त पहिला चॅप्टर (Chapter 1) दाखवणे
+                showChapter(0);
+
             } catch (error) {
                 spinner.innerHTML = `
                     <div style="color: var(--danger-color); padding: 20px; background: rgba(239, 68, 68, 0.08); border-radius: 8px;">
@@ -609,14 +688,16 @@
             container.innerHTML = '';
 
             const chapterChunks = markdownText.split(/(?=\*\*🟦 CURRENT AFFAIRS 2026\*\*\s*\n\s*\*\*January 2026 — Chapter|\*\*January 2026 — Chapter)/i);
+            const validChunks = chapterChunks.filter(c => c.trim().length > 0);
+            totalChaptersCount = validChunks.length;
 
-            chapterChunks.forEach((chunk, index) => {
-                if (!chunk.trim()) return;
-
+            validChunks.forEach((chunk, index) => {
                 const chapNum = (index + 1).toString().padStart(2, '0');
                 const section = document.createElement('section');
                 section.id = `chap-${chapNum}`;
                 section.className = 'content-section';
+                section.setAttribute('data-index', index);
+                section.style.display = 'none'; // बाय-डिफॉल्ट लपवणे
 
                 const bodyDiv = document.createElement('div');
                 bodyDiv.className = 'content-body';
@@ -663,45 +744,118 @@
             });
         }
 
-        // 5. ड्रॉपडाउन पॉप्युलेट करणे
+        // 5. ड्रॉपडाउन तयार करणे
         function populateDropdown() {
             const selectEl = document.getElementById('chapterDropdown');
+            selectEl.innerHTML = '';
             chapterTitles.forEach((title, i) => {
-                const chapId = (i + 1).toString().padStart(2, '0');
                 const option = document.createElement('option');
-                option.value = `chap-${chapId}`;
+                option.value = i;
                 option.textContent = `Ch ${title}`;
                 selectEl.appendChild(option);
             });
         }
 
-        // 6. ड्रॉपडाउनद्वारे घटकावर नेव्हिगेट करणे
-        function jumpToChapter(chapId) {
-            if (!chapId) return;
-            const target = document.getElementById(chapId);
-            if (target) {
-                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        // 6. ठराविक घटक (Single Chapter) दाखवणे आणि बटणे नियंत्रित करणे
+        function showChapter(index) {
+            if (index < 0 || index >= totalChaptersCount) return;
+            
+            currentChapterIndex = index;
+            isSearching = false;
+
+            const sections = document.querySelectorAll('#notes-container .content-section');
+            sections.forEach((sec, i) => {
+                sec.style.display = (i === index) ? 'block' : 'none';
+            });
+
+            // ड्रॉपडाउन सिंक करणे
+            const selectEl = document.getElementById('chapterDropdown');
+            if (selectEl) selectEl.value = index;
+
+            // नेव्हिगेशन बटणे अपडेट करणे
+            updatePaginationUI();
+
+            // पेज आपोआप वर नेणे
+            const controls = document.querySelector('.controls-card');
+            if (controls) {
+                controls.scrollIntoView({ behavior: 'smooth', block: 'start' });
             }
         }
 
-        // 7. कीवर्ड शोधणे
+        // 7. पुढील किंवा मागील घटकावर जाणे
+        function navigateChapter(direction) {
+            const nextIndex = currentChapterIndex + direction;
+            if (nextIndex >= 0 && nextIndex < totalChaptersCount) {
+                showChapter(nextIndex);
+            }
+        }
+
+        // 8. ड्रॉपडाउनमधून घटक निवडणे
+        function selectChapterByIndex(idx) {
+            showChapter(idx);
+        }
+
+        // 9. तळाच्या बटणांचे दृश्य अपडेट करणे (Next / Prev logic)
+        function updatePaginationUI() {
+            const paginationBar = document.getElementById('chapterPagination');
+            const prevBtn = document.getElementById('prevChapterBtn');
+            const nextBtn = document.getElementById('nextChapterBtn');
+            const prevText = document.getElementById('prevBtnText');
+            const nextText = document.getElementById('nextBtnText');
+            const tracker = document.getElementById('chapterTracker');
+
+            if (!paginationBar) return;
+            paginationBar.style.display = 'flex';
+
+            const curr = currentChapterIndex;
+            tracker.textContent = `घटक ${curr + 1} / ${totalChaptersCount}`;
+
+            // मागील बटण (Chapter 1 वर असताना लपवणे)
+            if (curr === 0) {
+                prevBtn.style.display = 'none';
+            } else {
+                prevBtn.style.display = 'inline-flex';
+                const prevNum = (curr).toString().padStart(2, '0');
+                prevText.textContent = `Ch ${prevNum} (मागील)`;
+            }
+
+            // पुढील बटण (शेवटच्या Chapter 26 वर असताना लपवणे)
+            if (curr === totalChaptersCount - 1) {
+                nextBtn.style.display = 'none';
+            } else {
+                nextBtn.style.display = 'inline-flex';
+                const nextNum = (curr + 2).toString().padStart(2, '0');
+                nextText.textContent = `Ch ${nextNum} (पुढील)`;
+            }
+        }
+
+        // 10. कीवर्ड शोधणे (Search Logic)
         function searchNotes(query) {
             const term = (query || '').trim().toLowerCase();
-            const sections = document.querySelectorAll('.content-section');
+            const sections = document.querySelectorAll('#notes-container .content-section');
+            const paginationBar = document.getElementById('chapterPagination');
 
             if (!term) {
-                sections.forEach(sec => sec.style.display = 'block');
+                // शोध रिकामा केल्यास पुन्हा चालू चॅप्टरवर येणे
+                showChapter(currentChapterIndex);
                 return;
             }
+
+            isSearching = true;
+            let matchCount = 0;
 
             sections.forEach(sec => {
                 const text = sec.innerText.toLowerCase();
                 if (text.includes(term)) {
                     sec.style.display = 'block';
+                    matchCount++;
                 } else {
                     sec.style.display = 'none';
                 }
             });
+
+            // शोध चालू असताना नेव्हिगेशन लपवणे
+            if (paginationBar) paginationBar.style.display = 'none';
         }
 
         // Theme Toggle (Light / Dark)
@@ -778,9 +932,13 @@
             }
         }
 
-        // PDF Generation
+        // PDF Generation (सर्व २६ चॅप्टर्स एकत्रित सेव्ह करणे)
         function downloadPDF() {
             const element = document.getElementById('pdf-wrapper');
+            const sections = document.querySelectorAll('#notes-container .content-section');
+            
+            // पीडीएफ करताना सर्व चॅप्टर्स दृश्यमान करणे
+            sections.forEach(sec => sec.style.display = 'block');
             element.classList.add('pdf-mode');
             
             const opt = {
@@ -794,6 +952,8 @@
             setTimeout(() => {
                 html2pdf().set(opt).from(element).save().then(() => {
                     element.classList.remove('pdf-mode');
+                    // पीडीएफ झाल्यानंतर पुन्हा चालू असलेल्या चॅप्टरवर परत येणे
+                    showChapter(currentChapterIndex);
                 });
             }, 400);
         }
