@@ -1,1 +1,372 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MPSC Group C 2026 - चालू घडामोडी</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Marked.js CDN for Markdown Parsing -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 
+  <!-- Google Fonts: Mukta & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Mukta:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Mukta', 'Inter', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    .prose-marathi {
+      font-family: 'Mukta', sans-serif;
+      line-height: 1.85;
+      font-size: 1.05rem;
+    }
+    .prose-marathi h1 {
+      font-size: 1.7rem;
+      font-weight: 800;
+      color: #0f172a;
+      margin-top: 1.8rem;
+      margin-bottom: 0.8rem;
+      border-bottom: 2px solid #e2e8f0;
+      padding-bottom: 0.5rem;
+    }
+    .dark .prose-marathi h1 {
+      color: #f8fafc;
+      border-color: #334155;
+    }
+    .prose-marathi h2 {
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: #1e293b;
+      margin-top: 1.6rem;
+      margin-bottom: 0.6rem;
+      border-left: 4px solid #2563eb;
+      padding-left: 0.6rem;
+    }
+    .dark .prose-marathi h2 {
+      color: #e2e8f0;
+      border-left-color: #60a5fa;
+    }
+    .prose-marathi h3 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: #2563eb;
+      margin-top: 1.3rem;
+      margin-bottom: 0.45rem;
+    }
+    .dark .prose-marathi h3 {
+      color: #60a5fa;
+    }
+    .prose-marathi p {
+      margin-bottom: 0.85rem;
+      color: #334155;
+    }
+    .dark .prose-marathi p {
+      color: #cbd5e1;
+    }
+    .prose-marathi ul {
+      list-style-type: disc;
+      padding-left: 1.6rem;
+      margin-bottom: 1.1rem;
+    }
+    .prose-marathi li {
+      margin-bottom: 0.35rem;
+      color: #334155;
+    }
+    .dark .prose-marathi li {
+      color: #cbd5e1;
+    }
+    .prose-marathi strong {
+      color: #0f172a;
+      font-weight: 700;
+    }
+    .dark .prose-marathi strong {
+      color: #ffffff;
+    }
+    .prose-marathi blockquote {
+      border-left: 4px solid #f59e0b;
+      background-color: #fffbeb;
+      padding: 0.75rem 1rem;
+      border-radius: 0 0.75rem 0.75rem 0;
+      margin: 1.1rem 0;
+      color: #92400e;
+    }
+    .dark .prose-marathi blockquote {
+      background-color: #1e293b;
+      border-left-color: #fbbf24;
+      color: #fde68a;
+    }
+    .prose-marathi table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1.3rem 0;
+      font-size: 0.95rem;
+      border-radius: 0.5rem;
+      overflow: hidden;
+    }
+    .prose-marathi th, .prose-marathi td {
+      border: 1px solid #cbd5e1;
+      padding: 0.6rem 0.8rem;
+      text-align: left;
+    }
+    .dark .prose-marathi th, .dark .prose-marathi td {
+      border-color: #334155;
+    }
+    .prose-marathi th {
+      background-color: #f1f5f9;
+      font-weight: 700;
+      color: #0f172a;
+    }
+    .dark .prose-marathi th {
+      background-color: #1e293b;
+      color: #f8fafc;
+    }
+  </style>
+</head>
+<body class="bg-slate-100 dark:bg-slate-950 text-slate-800 dark:text-slate-100 min-h-screen flex flex-col font-sans transition-colors duration-200">
+
+  <header class="sticky top-0 z-40 bg-white/95 dark:bg-slate-900/95 backdrop-blur border-b border-slate-200 dark:border-slate-800 shadow-sm">
+    <div class="max-w-5xl mx-auto px-4 h-14 flex items-center justify-between gap-3">
+      
+      <!-- Brand & Exam Tag -->
+      <div class="flex items-center gap-2.5">
+        <div class="w-8 h-8 rounded-lg bg-blue-600 text-white font-bold text-xs flex items-center justify-center shadow-sm">
+          MPSC
+        </div>
+        <div>
+          <span class="text-[11px] font-bold px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/60 dark:text-blue-200 uppercase tracking-wider">Group C 2026</span>
+          <span class="text-sm font-extrabold text-slate-900 dark:text-white ml-1">चालू घडामोडी</span>
+        </div>
+      </div>
+
+      <!-- Action buttons -->
+      <div class="flex items-center gap-1.5 sm:gap-2">
+        <button onclick="adjustFontSize(-1)" title="फॉन्ट लहान करा" class="w-8 h-8 rounded-lg bg-slate-100 dark:bg-slate-800 text-xs font-bold text-slate-600 dark:text-slate-300 hover:bg-slate-200">A-</button>
+        <button onclick="adjustFontSize(1)" title="फॉन्ट मोठा करा" class="w-8 h-8 rounded-lg bg-slate-100 dark:bg-slate-800 text-xs font-bold text-slate-600 dark:text-slate-300 hover:bg-slate-200">A+</button>
+        
+        <button onclick="toggleDarkMode()" title="थीम बदला" class="p-2 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-200">
+          <span id="theme-icon">🌙</span>
+        </button>
+
+        <!-- Telegram Channel Link -->
+        <a href="https://t.me/" target="_blank" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#229ED9] hover:bg-[#1e8ec3] text-white text-xs font-semibold shadow-sm">
+          <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/></svg>
+          <span class="hidden sm:inline">Telegram चॅनेल</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <div class="max-w-5xl mx-auto w-full px-4 pt-4">
+    <div class="bg-white dark:bg-slate-900 p-3 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm flex flex-col sm:flex-row items-center gap-3">
+      
+      <!-- Chapter Dropdown Selector -->
+      <div class="flex-1 w-full flex items-center gap-2">
+        <label for="chapter-select" class="text-xs font-bold text-slate-500 dark:text-slate-400 whitespace-nowrap">घटक निवडा:</label>
+        <select id="chapter-select" onchange="filterByChapter(this.value)" class="w-full bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-xs sm:text-sm font-semibold rounded-xl px-3 py-2 text-slate-800 dark:text-slate-100 focus:outline-none focus:ring-2 focus:ring-blue-500">
+          <option value="all">📚 संपूर्ण जानेवारी २०२६ संकलन (सर्व घटक)</option>
+          <option value="Chapter 01">Ch 01: महाराष्ट्रातील चालू घडामोडी</option>
+          <option value="Chapter 02">Ch 02: राष्ट्रीय चालू घडामोडी</option>
+          <option value="Chapter 03">Ch 03: आंतरराष्ट्रीय घडामोडी</option>
+          <option value="Chapter 04">Ch 04: शासकीय योजना व कार्यक्रम</option>
+          <option value="Chapter 05">Ch 05: नियुक्त्या व व्यक्ती</option>
+          <option value="Chapter 06">Ch 06: पुरस्कार व सन्मान</option>
+          <option value="Chapter 07">Ch 07: अहवाल, निर्देशांक व क्रमवारी</option>
+          <option value="Chapter 08">Ch 08: कायदे, विधेयके व धोरणे</option>
+          <option value="Chapter 09">Ch 09: अर्थव्यवस्था व वित्त</option>
+          <option value="Chapter 10">Ch 10: विज्ञान व तंत्रज्ञान</option>
+          <option value="Chapter 11">Ch 11: पर्यावरण, हवामान व जैवविविधता</option>
+          <option value="Chapter 12">Ch 12: संरक्षण व सुरक्षा</option>
+          <option value="Chapter 13">Ch 13: क्रीडा घडामोडी</option>
+          <option value="Chapter 14">Ch 14: कला, संस्कृती, साहित्य व वारसा</option>
+          <option value="Chapter 15">Ch 15: सामाजिक क्षेत्र व मानवी विकास</option>
+          <option value="Chapter 16">Ch 16: संस्था व संघटना</option>
+          <option value="Chapter 17">Ch 17: समित्या, आयोग व उपक्रम</option>
+          <option value="Chapter 18">Ch 18: संमेलने व शिखर परिषदा</option>
+          <option value="Chapter 19">Ch 19: महत्त्वाचे दिवस, सप्ताह व वर्षे</option>
+          <option value="Chapter 20">Ch 20: पुस्तके, लेखक व प्रकाशने</option>
+          <option value="Chapter 21">Ch 21: उल्लेखनीय व्यक्ती व निधन</option>
+          <option value="Chapter 22">Ch 22: महाराष्ट्र विशेष चालू घडामोडी</option>
+          <option value="Chapter 23">Ch 23: राष्ट्रीय व नागरी घडामोडी</option>
+          <option value="Chapter 24">Ch 24: करार व आंतरराष्ट्रीय सहकार्य</option>
+          <option value="Chapter 25">Ch 25: आपत्ती व आपत्ती व्यवस्थापन</option>
+          <option value="Chapter 26">Ch 26: विविध व विशेष घडामोडी</option>
+        </select>
+      </div>
+
+      <!-- Keyword Search -->
+      <div class="w-full sm:w-72 relative">
+        <input 
+          type="text" 
+          id="keyword-search" 
+          onkeyup="searchWithinNotes(this.value)" 
+          placeholder="महत्त्वाचा शब्द शोधा (उदा. PWD, Padma)..." 
+          class="w-full bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-xs sm:text-sm rounded-xl pl-8 pr-3 py-2 text-slate-800 dark:text-slate-100 focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder-slate-400"
+        />
+        <svg class="w-4 h-4 absolute left-2.5 top-2.5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+      </div>
+
+    </div>
+  </div>
+
+  <main class="flex-1 max-w-5xl w-full mx-auto px-4 py-4 pb-20 space-y-4">
+    <article class="bg-white dark:bg-slate-900 p-5 sm:p-8 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm overflow-hidden min-h-[60vh]">
+      
+      <!-- Loading indicator -->
+      <div id="loading-spinner" class="flex flex-col items-center justify-center py-20 text-slate-500 space-y-3">
+        <div class="w-8 h-8 border-4 border-blue-600 border-t-transparent rounded-full animate-spin"></div>
+        <p class="text-sm font-semibold">नोट्स लोड होत आहेत...</p>
+      </div>
+
+      <!-- Target content area -->
+      <div id="notes-content" class="prose-marathi hidden"></div>
+      
+    </article>
+  </main>
+
+  <script>
+    let rawLoadedMarkdown = '';
+    let currentFontSizePx = 17;
+
+    // सर्व नको असलेल्या बाह्य लिंक्स काढून टाकणारे स्वच्छ करणारे फंक्शन
+    function cleanMarkdownLinks(text) {
+      if (!text) return '';
+      // [Anchor Text](http...) -> Anchor Text
+      let cleaned = text.replace(/\[([^\]]+)\]\(https?:\/\/[^\)]+\)/g, '$1');
+      // उरलेल्या थेट URL काढून टाकणे
+      cleaned = cleaned.replace(/https?:\/\/[^\s\)\>]+/g, '');
+      return cleaned;
+    }
+
+    // Markdown फाईल लोड करणे
+    async function loadMarkdownFile() {
+      const spinner = document.getElementById('loading-spinner');
+      const contentEl = document.getElementById('notes-content');
+
+      try {
+        // फाईलचे नाव: Current_Affairs_JAN26_2.md
+        const response = await fetch('Current_Affairs_JAN26_2.md');
+        
+        if (!response.ok) {
+          throw new Error(`HTTP Error ${response.status}: फाईल सापडली नाही.`);
+        }
+
+        const rawText = await response.text();
+        rawLoadedMarkdown = cleanMarkdownLinks(rawText);
+        
+        spinner.classList.add('hidden');
+        contentEl.classList.remove('hidden');
+        renderContent(rawLoadedMarkdown);
+
+      } catch (err) {
+        spinner.innerHTML = `
+          <div class="text-center p-6 bg-rose-50 dark:bg-rose-950/30 rounded-xl border border-rose-200 text-rose-800 dark:text-rose-300">
+            <p class="font-bold text-base mb-1">⚠️ नोट्स फाईल लोड होऊ शकली नाही</p>
+            <p class="text-xs">${err.message}</p>
+            <p class="text-xs mt-3 text-slate-500">खात्री करा की <b>Current_Affairs_JAN26_2.md</b> ही फाईल याच फोल्डरमध्ये (Root डिरेक्टरीमध्ये) आहे.</p>
+          </div>
+        `;
+      }
+    }
+
+    // Markdown चे HTML मध्ये रूपांतर करून दाखवणे
+    function renderContent(md) {
+      document.getElementById('notes-content').innerHTML = marked.parse(md);
+    }
+
+    // विशिष्ट घटक (Chapter) फिल्टर करणे
+    function filterByChapter(chapterKeyword) {
+      if (!rawLoadedMarkdown) return;
+
+      if (chapterKeyword === 'all') {
+        renderContent(rawLoadedMarkdown);
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+        return;
+      }
+
+      // निवडलेल्या चॅप्टरचा भाग शोधून फक्त तेवढाच दाखवणे
+      const chapters = rawLoadedMarkdown.split(/(?=\*\*January 2026 — Chapter|\*\*January 2026 — Ch)/i);
+      const matched = chapters.find(c => c.toLowerCase().includes(chapterKeyword.toLowerCase()));
+
+      if (matched) {
+        renderContent(matched);
+        window.scrollTo({ top: 120, behavior: 'smooth' });
+      } else {
+        renderContent(rawLoadedMarkdown);
+      }
+    }
+
+    // कीवर्डनुसार सर्च करणे
+    function searchWithinNotes(term) {
+      if (!rawLoadedMarkdown) return;
+      if (!term || term.trim() === '') {
+        renderContent(rawLoadedMarkdown);
+        return;
+      }
+
+      const cleanTerm = term.trim().toLowerCase();
+      const lines = rawLoadedMarkdown.split('\n');
+      let matchedSections = [];
+      let currentSection = [];
+      let matchFound = false;
+
+      for (let line of lines) {
+        if (line.startsWith('**Chapter') || line.startsWith('①') || line.startsWith('②') || line.startsWith('③') || line.startsWith('④') || line.startsWith('⑤') || line.startsWith('⑥') || line.startsWith('⑦') || line.startsWith('⑧') || line.startsWith('⑨') || line.startsWith('⑩')) {
+          if (matchFound && currentSection.length > 0) {
+            matchedSections.push(currentSection.join('\n'));
+          }
+          currentSection = [line];
+          matchFound = line.toLowerCase().includes(cleanTerm);
+        } else {
+          currentSection.push(line);
+          if (line.toLowerCase().includes(cleanTerm)) matchFound = true;
+        }
+      }
+      if (matchFound && currentSection.length > 0) matchedSections.push(currentSection.join('\n'));
+
+      if (matchedSections.length > 0) {
+        renderContent(`> 🔍 **"${term}"** संदर्भात मिळालेले मुद्दे:\n\n---\n\n` + matchedSections.join('\n\n---\n\n'));
+      } else {
+        renderContent(`> ❌ **"${term}"** संदर्भात कोणतीही नोंद सापडली नाही.`);
+      }
+    }
+
+    // थीम बदलणे (Dark / Light)
+    function toggleDarkMode() {
+      const html = document.documentElement;
+      const icon = document.getElementById('theme-icon');
+      if (html.classList.contains('dark')) {
+        html.classList.remove('dark');
+        icon.textContent = '🌙';
+      } else {
+        html.classList.add('dark');
+        icon.textContent = '☀️';
+      }
+    }
+
+    // फॉन्ट आकार कमी-जास्त करणे
+    function adjustFontSize(delta) {
+      currentFontSizePx += delta;
+      if (currentFontSizePx < 14) currentFontSizePx = 14;
+      if (currentFontSizePx > 26) currentFontSizePx = 26;
+      document.getElementById('notes-content').style.fontSize = `${currentFontSizePx}px`;
+    }
+
+    window.addEventListener('DOMContentLoaded', loadMarkdownFile);
+  </script>
+</body>
+</html>
