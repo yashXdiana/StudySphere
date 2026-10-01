@@ -21,16 +21,16 @@
 
     <style>
         :root {
-            --bg-color: #f5f3f0; 
-            --text-color: #3e2723; 
+            --bg-color: #f7f5f2; 
+            --text-color: #2e1c14; 
             --text-secondary: #5d4037;
             --primary-color: #795548; 
             --primary-hover: #5d4037;
-            --primary-light: rgba(121, 85, 72, 0.1);
+            --primary-light: rgba(121, 85, 72, 0.08);
             --card-bg: #ffffff; 
             --border-color: #d7ccc8;
             --header-bg: #ffffff;
-            --footer-bg: #3e2723;
+            --footer-bg: #2e1c14;
             --footer-text: #efebe9;
             --telegram-color: #0088cc;
             --donate-color: #10b981;
@@ -41,16 +41,16 @@
         }
 
         [data-theme="dark"] {
-            --bg-color: #0a0a0a;
-            --text-color: #efebe9;
+            --bg-color: #121212;
+            --text-color: #f5f0eb;
             --text-secondary: #d7ccc8;
             --primary-color: #bcaaa4;
             --primary-hover: #d7ccc8;
-            --primary-light: rgba(188, 170, 164, 0.15);
-            --card-bg: #1a1a1a;
-            --border-color: #333333;
-            --header-bg: #141414;
-            --footer-bg: #050505;
+            --primary-light: rgba(188, 170, 164, 0.12);
+            --card-bg: #1e1e1e;
+            --border-color: #332d2a;
+            --header-bg: #181818;
+            --footer-bg: #0a0a0a;
             --footer-text: #d7ccc8;
             --box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
         }
@@ -84,55 +84,268 @@
         .breadcrumb { font-size: 0.9rem; margin-bottom: 1.2rem; opacity: 0.85; font-weight: 500; }
         .breadcrumb a { color: var(--primary-color); font-weight: 600; }
 
-        .search-container { margin-bottom: 1.5rem; }
-        .search-input-box { width: 100%; position: relative; }
-        .search-input-box input { width: 100%; padding: 12px 14px 12px 42px; border: 1px solid var(--border-color); border-radius: 8px; background: var(--card-bg); color: var(--text-color); font-size: 0.95rem; outline: none; }
-        .search-input-box input:focus { border-color: var(--primary-color); box-shadow: 0 0 0 2px var(--primary-light); }
-        .search-input-box i { position: absolute; left: 14px; top: 50%; transform: translateY(-50%); opacity: 0.6; font-size: 1rem; }
+        .controls-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 16px 20px;
+            margin-bottom: 25px;
+            box-shadow: var(--box-shadow);
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            position: sticky;
+            top: 70px;
+            z-index: 80;
+        }
 
-        .sticky-index-box { background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 10px; padding: 16px 20px; margin-bottom: 25px; box-shadow: var(--box-shadow); position: sticky; top: 70px; z-index: 80; max-height: 45vh; overflow-y: auto;}
-        .sticky-index-box h3 { margin-bottom: 12px; border-bottom: 1px solid var(--border-color); padding-bottom: 8px; font-size: 1.1rem; color: var(--primary-color); display: flex; justify-content: space-between; align-items: center; }
-        .index-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 6px; }
-        .index-grid a { display: block; padding: 6px 10px; border-radius: 6px; font-size: 0.9rem; font-weight: 600; color: var(--text-color); border: 1px solid transparent; transition: all 0.2s; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-        .index-grid a:hover { background: var(--primary-light); color: var(--primary-color); border-color: var(--primary-color); }
+        .select-group {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            width: 100%;
+        }
 
-        .content-section { background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 12px; padding: 2rem; margin-bottom: 2rem; box-shadow: var(--box-shadow); scroll-margin-top: 90px; }
+        .select-group label {
+            font-size: 0.92rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            white-space: nowrap;
+        }
+
+        .chapter-dropdown {
+            flex: 1;
+            padding: 10px 14px;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            background: var(--card-bg);
+            color: var(--text-color);
+            font-size: 0.95rem;
+            font-weight: 600;
+            outline: none;
+            cursor: pointer;
+        }
+
+        .chapter-dropdown:focus {
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 2px var(--primary-light);
+        }
+
+        .search-input-box {
+            position: relative;
+            width: 100%;
+        }
+
+        .search-input-box input {
+            width: 100%;
+            padding: 10px 14px 10px 38px;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            background: var(--card-bg);
+            color: var(--text-color);
+            font-size: 0.95rem;
+            outline: none;
+        }
+
+        .search-input-box input:focus {
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 2px var(--primary-light);
+        }
+
+        .search-input-box i {
+            position: absolute;
+            left: 14px;
+            top: 50%;
+            transform: translateY(-50%);
+            opacity: 0.6;
+            font-size: 0.95rem;
+        }
+
+        .content-section { 
+            background: var(--card-bg); 
+            border: 1px solid var(--border-color); 
+            border-radius: 12px; 
+            padding: 2rem; 
+            margin-bottom: 2rem; 
+            box-shadow: var(--box-shadow); 
+            scroll-margin-top: 130px; 
+        }
+
+        .content-body h1 { 
+            font-size: 1.65rem; 
+            color: var(--primary-color); 
+            margin: 0 0 1.5rem 0; 
+            border-bottom: 2px solid var(--primary-color); 
+            padding-bottom: 10px; 
+            font-weight: 800; 
+            line-height: 1.35; 
+        }
+
+        .content-body h2 { 
+            font-size: 1.35rem; 
+            margin: 2rem 0 1rem; 
+            color: var(--text-color); 
+            font-weight: 700; 
+            border-left: 4px solid var(--primary-color); 
+            padding-left: 10px; 
+            line-height: 1.35; 
+        }
+
+        .content-body h3 { 
+            font-size: 1.18rem; 
+            color: var(--primary-hover); 
+            margin: 1.4rem 0 0.5rem; 
+            font-weight: 700; 
+        }
+
+        .content-body h4 { 
+            font-size: 1.05rem; 
+            margin: 1rem 0 0.4rem; 
+            font-weight: 700; 
+            color: var(--text-secondary); 
+        }
+
+        /* Ensuring clean, unbolded paragraphs */
+        .content-body p { 
+            margin-bottom: 0.9rem; 
+            color: var(--text-color); 
+            font-weight: 400; 
+        }
+
+        .content-body p strong {
+            font-weight: 600;
+        }
+
+        .content-body ul { 
+            margin-left: 20px; 
+            margin-bottom: 1.1rem; 
+            list-style-type: disc; 
+        }
+
+        .content-body li { 
+            margin-bottom: 0.45rem; 
+            font-weight: 400;
+        }
+
+        .content-body hr { 
+            border: none; 
+            border-top: 1px dashed var(--border-color); 
+            margin: 2rem 0; 
+        }
+
+        .date-badge { 
+            display: inline-block; 
+            background: var(--primary-light); 
+            color: var(--primary-color); 
+            border: 1px solid var(--border-color); 
+            padding: 3px 12px; 
+            border-radius: 20px; 
+            font-size: 0.85rem; 
+            font-weight: 600; 
+            margin-bottom: 15px; 
+        }
+
+        .info-box { 
+            padding: 15px 20px; 
+            border-radius: 8px; 
+            margin: 16px 0; 
+            background: var(--card-bg); 
+            border-left: 5px solid; 
+            box-shadow: 0 2px 4px rgba(0,0,0,0.04); 
+        }
         
-        .content-body h1 { font-size: 1.65rem; color: var(--primary-color); margin: 0 0 1.5rem 0; border-bottom: 2px solid var(--primary-color); padding-bottom: 10px; font-weight: 800; line-height: 1.35; }
-        .content-body h2 { font-size: 1.35rem; margin: 2rem 0 1rem; color: var(--text-color); font-weight: 700; border-left: 4px solid var(--primary-color); padding-left: 10px; line-height: 1.35; }
-        .content-body h3 { font-size: 1.18rem; color: var(--primary-hover); margin: 1.4rem 0 0.5rem; font-weight: 700; }
-        .content-body h4 { font-size: 1.05rem; margin: 1rem 0 0.4rem; font-weight: 700; color: var(--text-secondary); }
-        .content-body p { margin-bottom: 0.9rem; color: var(--text-color); }
-        .content-body ul { margin-left: 20px; margin-bottom: 1.1rem; list-style-type: disc; }
-        .content-body li { margin-bottom: 0.45rem; }
-        .content-body hr { border: none; border-top: 1px dashed var(--border-color); margin: 2rem 0; }
-        .content-body strong { font-weight: 700; color: var(--text-color); }
-        
-        .info-box { padding: 15px 20px; border-radius: 8px; margin: 16px 0; background: var(--card-bg); border-left: 5px solid; box-shadow: 0 2px 4px rgba(0,0,0,0.04); }
-        
-        .box-favourite { border-left-color: var(--warning-color); background: rgba(245, 158, 11, 0.08); }
-        .box-favourite h4 { color: #d97706; margin-bottom: 8px; font-size: 1.05rem; display: flex; align-items: center; gap: 8px; }
+        .box-favourite { 
+            border-left-color: var(--warning-color); 
+            background: rgba(245, 158, 11, 0.08); 
+        }
+        .box-favourite h4 { 
+            color: #d97706; 
+            margin-bottom: 8px; 
+            font-size: 1.05rem; 
+            display: flex; 
+            align-items: center; 
+            gap: 8px; 
+        }
         [data-theme="dark"] .box-favourite h4 { color: #fbbf24; }
         
-        .box-trap { border-left-color: var(--danger-color); background: rgba(239, 68, 68, 0.08); }
-        .box-trap h4 { color: #b91c1c; margin-bottom: 8px; font-size: 1.05rem; display: flex; align-items: center; gap: 8px; }
+        .box-trap { 
+            border-left-color: var(--danger-color); 
+            background: rgba(239, 68, 68, 0.08); 
+        }
+        .box-trap h4 { 
+            color: #b91c1c; 
+            margin-bottom: 8px; 
+            font-size: 1.05rem; 
+            display: flex; 
+            align-items: center; 
+            gap: 8px; 
+        }
         [data-theme="dark"] .box-trap h4 { color: #f87171; }
         
-        .box-revision { border-left-color: var(--success-color); background: rgba(16, 185, 129, 0.07); border: 1px solid rgba(16, 185, 129, 0.25); border-left: 5px solid var(--success-color); }
-        .box-revision h4 { color: #047857; margin-bottom: 12px; font-size: 1.2rem; text-align: center; border-bottom: 1px solid rgba(16, 185, 129, 0.25); padding-bottom: 10px; }
+        .box-revision { 
+            border-left-color: var(--success-color); 
+            background: rgba(16, 185, 129, 0.07); 
+            border: 1px solid rgba(16, 185, 129, 0.25); 
+            border-left: 5px solid var(--success-color); 
+        }
+        .box-revision h4 { 
+            color: #047857; 
+            margin-bottom: 12px; 
+            font-size: 1.2rem; 
+            text-align: center; 
+            border-bottom: 1px solid rgba(16, 185, 129, 0.25); 
+            padding-bottom: 10px; 
+        }
         [data-theme="dark"] .box-revision h4 { color: #34d399; }
         .box-revision ul { margin-left: 0; list-style-type: none; }
         .box-revision li { margin-bottom: 8px; padding-left: 24px; position: relative; }
         .box-revision li::before { content: '✅'; position: absolute; left: 0; top: 0; font-size: 0.95rem; }
 
-        .data-table { width: 100%; border-collapse: collapse; margin: 15px 0; font-size: 0.95rem; background: var(--card-bg); border-radius: 8px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.05); }
-        .data-table th, .data-table td { padding: 10px 14px; border: 1px solid var(--border-color); text-align: left; }
-        .data-table th { background-color: var(--primary-color); color: #ffffff; font-weight: 700; }
-        [data-theme="dark"] .data-table th { color: #1a1a1a; background-color: var(--primary-color); }
+        .data-table { 
+            width: 100%; 
+            border-collapse: collapse; 
+            margin: 15px 0; 
+            font-size: 0.95rem; 
+            background: var(--card-bg); 
+            border-radius: 8px; 
+            overflow: hidden; 
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05); 
+        }
+        .data-table th, .data-table td { 
+            padding: 10px 14px; 
+            border: 1px solid var(--border-color); 
+            text-align: left; 
+        }
+        .data-table th { 
+            background-color: var(--primary-color); 
+            color: #ffffff; 
+            font-weight: 700; 
+        }
+        [data-theme="dark"] .data-table th { 
+            color: #1a1a1a; 
+            background-color: var(--primary-color); 
+        }
         .data-table tr:nth-child(even) { background-color: var(--primary-light); }
         .table-responsive { overflow-x: auto; margin: 15px 0; }
 
-        .btn-download { display: flex; align-items: center; justify-content: center; gap: 10px; width: 100%; padding: 14px; background: #2563eb; color: white; border: none; border-radius: 8px; font-size: 1.05rem; font-weight: 700; cursor: pointer; margin-top: 25px; transition: background 0.3s; box-shadow: 0 4px 6px rgba(37, 99, 235, 0.2); }
+        .btn-download { 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            gap: 10px; 
+            width: 100%; 
+            padding: 14px; 
+            background: #2563eb; 
+            color: white; 
+            border: none; 
+            border-radius: 8px; 
+            font-size: 1.05rem; 
+            font-weight: 700; 
+            cursor: pointer; 
+            margin-top: 25px; 
+            transition: background 0.3s; 
+            box-shadow: 0 4px 6px rgba(37, 99, 235, 0.2); 
+        }
         .btn-download:hover { background: #1d4ed8; }
 
         footer { background-color: var(--footer-bg); color: var(--footer-text); padding: 3rem 5% 1.5rem; margin-top: 40px; }
@@ -157,8 +370,7 @@
         @media (max-width: 768px) {
             .desktop-only { display: none !important; }
             .content-section { padding: 1.2rem; }
-            .sticky-index-box { position: static; max-height: 220px; }
-            .index-grid { grid-template-columns: 1fr; }
+            .controls-card { position: static; }
         }
 
         /* PDF Generation Overrides */
@@ -200,7 +412,6 @@
         </div>
         <div class="menu-links">
             <a href="#" onclick="toggleMenu(); window.scrollTo({top:0, behavior:'smooth'});"><i class="fas fa-home fa-fw"></i> मुख्य पान (Home)</a>
-            <a href="#quick-index" onclick="toggleMenu();"><i class="fas fa-list-ol fa-fw"></i> अनुक्रमणिका (Index)</a>
             <div style="height: 1px; background: var(--border-color); margin: 10px 20px;"></div>
             <button onclick="openTelegram(); toggleMenu();" style="color: var(--telegram-color);">
                 <i class="fab fa-telegram-plane fa-fw"></i> Join Telegram
@@ -222,22 +433,17 @@
             <p style="opacity: 0.85; font-weight: 500;">MPSC गट-क पूर्व + मुख्य परीक्षा एकात्मिक सखोल संकलन (Prelims + Mains Integrated)</p>
         </div>
 
-        <!-- Search Bar -->
-        <div class="search-container no-print">
+        <!-- Dropdown & Search Controls -->
+        <div class="controls-card no-print">
+            <div class="select-group">
+                <label for="chapterDropdown"><i class="fas fa-book-open"></i> घटक निवडा:</label>
+                <select id="chapterDropdown" class="chapter-dropdown" onchange="jumpToChapter(this.value)">
+                    <option value="">-- सर्व २६ घटकांची यादी --</option>
+                </select>
+            </div>
             <div class="search-input-box">
                 <i class="fas fa-search"></i>
                 <input type="text" id="keyword-search" oninput="searchNotes(this.value)" placeholder="महत्त्वाचा शब्द शोधा (उदा. PWD, Padma, GDP, Ramsar)...">
-            </div>
-        </div>
-
-        <!-- Sticky Collapsible Index Box -->
-        <div id="quick-index" class="sticky-index-box no-print">
-            <h3>
-                <span><i class="fas fa-list-ol"></i> अनुक्रमणिका (सर्व २६ घटक)</span>
-                <span style="font-size: 0.8rem; font-weight: normal; opacity: 0.8;">क्लिक करून थेट जा</span>
-            </h3>
-            <div id="index-links" class="index-grid">
-                <!-- Dynamically populated -->
             </div>
         </div>
 
@@ -269,7 +475,6 @@
                 <h4>Quick Links</h4>
                 <ul>
                     <li><a href="#" onclick="window.scrollTo({top:0, behavior:'smooth'})">मुख्य पान (Top)</a></li>
-                    <li><a href="#quick-index">घटक अनुक्रमणिका</a></li>
                 </ul>
             </div>
             <div class="footer-col">
@@ -341,7 +546,7 @@
             "05. नियुक्त्या व व्यक्ती",
             "06. पुरस्कार व सन्मान",
             "07. अहवाल, निर्देशांक व क्रमवारी",
-            "08. कायडे, विधेयके व धोरणे",
+            "08. कायदे, विधेयके व धोरणे",
             "09. अर्थव्यवस्था व वित्त",
             "10. विज्ञान व तंत्रज्ञान",
             "11. पर्यावरण, हवामान व जैवविविधता",
@@ -362,12 +567,10 @@
             "26. विविध व विशेष चालू घडामोडी"
         ];
 
-        // 1. सर्व बाह्य लिंक्स आणि URLs पूर्णपणे काढून टाकणे
+        // 1. बाह्य URLs आणि अनावश्यक लिंक्स स्वच्छ करणे
         function cleanUnwantedUrls(text) {
             if (!text) return '';
-            // [Anchor Text](https://...) -> Anchor Text
             let cleaned = text.replace(/\[([^\]]+)\]\(https?:\/\/[^\)]+\)/g, '$1');
-            // थेट https://... URLs काढून टाकणे
             cleaned = cleaned.replace(/https?:\/\/[^\s\)\>]+/g, '');
             return cleaned;
         }
@@ -386,7 +589,7 @@
                 rawMarkdownContent = cleanUnwantedUrls(rawText);
 
                 renderChapters(rawMarkdownContent);
-                buildIndexNav();
+                populateDropdown();
                 spinner.style.display = 'none';
 
             } catch (error) {
@@ -400,7 +603,7 @@
             }
         }
 
-        // 3. चॅप्टरनुसार विभाजन करून कार्ड्स तयार करणे
+        // 3. चॅप्टरनुसार कार्ड्स तयार करणे
         function renderChapters(markdownText) {
             const container = document.getElementById('notes-container');
             container.innerHTML = '';
@@ -426,7 +629,7 @@
             });
         }
 
-        // 4. कॉलआउट बॉक्सेस (.box-trap, .box-favourite, .box-revision) व तक्ते सजवणे
+        // 4. कॉलआउट बॉक्सेस व तक्ते सजवणे
         function applyDesignTransforms(element) {
             const allParagraphs = element.querySelectorAll('p, blockquote');
             allParagraphs.forEach(p => {
@@ -460,21 +663,28 @@
             });
         }
 
-        // 5. Sticky अनुक्रमणिका (Index Links) तयार करणे
-        function buildIndexNav() {
-            const indexContainer = document.getElementById('index-links');
-            indexContainer.innerHTML = '';
-
+        // 5. ड्रॉपडाउन पॉप्युलेट करणे
+        function populateDropdown() {
+            const selectEl = document.getElementById('chapterDropdown');
             chapterTitles.forEach((title, i) => {
                 const chapId = (i + 1).toString().padStart(2, '0');
-                const link = document.createElement('a');
-                link.href = `#chap-${chapId}`;
-                link.innerHTML = `<i class="far fa-bookmark" style="font-size:0.8rem; margin-right:4px;"></i> Ch ${title}`;
-                indexContainer.appendChild(link);
+                const option = document.createElement('option');
+                option.value = `chap-${chapId}`;
+                option.textContent = `Ch ${title}`;
+                selectEl.appendChild(option);
             });
         }
 
-        // 6. कीवर्ड सर्च
+        // 6. ड्रॉपडाउनद्वारे घटकावर नेव्हिगेट करणे
+        function jumpToChapter(chapId) {
+            if (!chapId) return;
+            const target = document.getElementById(chapId);
+            if (target) {
+                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        }
+
+        // 7. कीवर्ड शोधणे
         function searchNotes(query) {
             const term = (query || '').trim().toLowerCase();
             const sections = document.querySelectorAll('.content-section');
