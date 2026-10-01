@@ -3,13 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>January 2026 Current Affairs - StudySphere</title>
+    <title>MPSC Group C - जानेवारी २०२६ चालू घडामोडी | StudySphere</title>
     
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Google Fonts: Mukta & Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
     <!-- FontAwesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- html2pdf.js for PDF Generation -->
+    
+    <!-- Marked.js for fast Markdown parsing -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+    <!-- PDF Generation Library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
 
     <style>
@@ -24,154 +31,142 @@
             --footer-bg: #3e2723;
             --footer-text: #efebe9;
             --telegram-color: #0088cc;
+            --telegram-hover: #0077b3;
             --donate-color: #10b981;
+            --donate-hover: #059669;
             --danger-color: #ef4444;
             --warning-color: #f59e0b;
             --success-color: #10b981;
             --box-shadow: 0 4px 6px -1px rgba(121, 85, 72, 0.08);
-            
-            /* Heading Accents */
-            --h1-bg: linear-gradient(135deg, #795548 0%, #5d4037 100%);
-            --h1-text: #ffffff;
-            --h2-bg: linear-gradient(to right, rgba(121, 85, 72, 0.1) 0%, rgba(121, 85, 72, 0.01) 100%);
-            --h2-border: #795548;
         }
 
         [data-theme="dark"] {
             --bg-color: #0a0a0a;
             --text-color: #efebe9;
-            --primary-color: #a1887f;
+            --primary-color: #bcaaa4;
             --card-bg: #1a1a1a;
             --border-color: #333333;
             --header-bg: #141414;
             --footer-bg: #000000;
-            
-            /* Heading Accents Dark */
-            --h1-bg: linear-gradient(135deg, #4e342e 0%, #3e2723 100%);
-            --h1-text: #efebe9;
-            --h2-bg: linear-gradient(to right, rgba(161, 136, 127, 0.15) 0%, rgba(161, 136, 127, 0.02) 100%);
-            --h2-border: #a1887f;
         }
 
-        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', 'Mukta', sans-serif; transition: background-color 0.3s, color 0.3s, border-color 0.3s; }
-        body { background-color: var(--bg-color); color: var(--text-color); line-height: 1.6; }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Mukta', 'Poppins', sans-serif; transition: background-color 0.3s, color 0.3s; }
+        body { background-color: var(--bg-color); color: var(--text-color); line-height: 1.85; font-size: 1.05rem; }
         a { text-decoration: none; color: inherit; cursor: pointer; }
-        ul, ol { margin-left: 20px; margin-bottom: 15px; }
-        p { margin-bottom: 12px; }
-
-        /* Header & Nav */
-        header { background-color: var(--header-bg); border-bottom: 1px solid var(--border-color); padding: 1rem 5%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 4px rgba(0,0,0,0.02); }
+        ul { list-style: none; }
+        
+        header { background-color: var(--header-bg); border-bottom: 1px solid var(--border-color); padding: 0.85rem 5%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 4px rgba(0,0,0,0.02); }
         .logo-container { display: flex; flex-direction: column; cursor: pointer; }
-        .logo { font-size: 1.4rem; font-weight: 700; color: var(--primary-color); line-height: 1.2;}
-        .logo-sub { font-size: 0.75rem; font-weight: 500; opacity: 0.8; letter-spacing: 0.5px;}
-        .header-controls { display: flex; align-items: center; gap: 12px; }
-        .btn { padding: 7px 14px; border: none; border-radius: 6px; cursor: pointer; font-weight: 500; display: flex; align-items: center; gap: 6px; font-size: 0.9rem; }
+        .logo { font-size: 1.35rem; font-weight: 800; color: var(--primary-color); line-height: 1.2; letter-spacing: -0.5px;}
+        .logo-sub { font-size: 0.75rem; font-weight: 600; opacity: 0.8; letter-spacing: 0.5px; text-transform: uppercase;}
+        
+        .header-controls { display: flex; align-items: center; gap: 10px; }
+        .btn { padding: 7px 14px; border: none; border-radius: 6px; cursor: pointer; font-weight: 600; display: flex; align-items: center; gap: 6px; font-size: 0.9rem; }
         .btn-telegram { background-color: var(--telegram-color); color: white; }
         .btn-donate { background-color: var(--donate-color); color: white; }
-        .icon-btn { background: transparent; color: var(--text-color); font-size: 1.3rem; border: none; cursor: pointer; padding: 5px; }
-
-        /* Mobile Menu */
+        .btn-primary { background-color: var(--primary-color); color: white; }
+        .icon-btn { background: transparent; color: var(--text-color); font-size: 1.2rem; border: none; cursor: pointer; padding: 6px 10px; border-radius: 6px; }
+        .icon-btn:hover { background: rgba(121, 85, 72, 0.08); }
+        
+        /* Mobile slide-in menu */
         .mobile-menu { position: fixed; top: 0; right: -300px; width: 280px; height: 100vh; background-color: var(--card-bg); border-left: 1px solid var(--border-color); z-index: 1000; transition: right 0.3s ease; display: flex; flex-direction: column; }
         .mobile-menu.active { right: 0; }
-        .menu-header { padding: 1.2rem; border-bottom: 1px solid var(--border-color); display: flex; justify-content: space-between; }
+        .menu-header { padding: 1.2rem; border-bottom: 1px solid var(--border-color); display: flex; justify-content: space-between; align-items: center; }
         .menu-links { flex: 1; overflow-y: auto; padding: 1rem 0; }
-        .menu-links a, .menu-links button { display: block; width: 100%; text-align: left; padding: 12px 20px; background: none; border: none; color: var(--text-color); font-size: 1rem; font-weight: 500; cursor: pointer; }
+        .menu-links a, .menu-links button { display: block; width: 100%; text-align: left; padding: 12px 20px; background: none; border: none; color: var(--text-color); font-size: 1rem; font-weight: 600; cursor: pointer; }
         .menu-overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.4); z-index: 999; }
         .menu-overlay.active { display: block; }
 
-        .main-container { padding: 2rem 5%; max-width: 1000px; margin: 0 auto; }
-        .breadcrumb { font-size: 0.9rem; margin-bottom: 1.5rem; opacity: 0.8; }
-        .breadcrumb a { color: var(--primary-color); font-weight: 500; }
-        .page-title { text-align: center; margin-bottom: 2rem; color: var(--primary-color); font-size: 2rem; font-weight: 700; }
+        .main-container { padding: 1.5rem 5% 3rem; max-width: 1050px; margin: 0 auto; }
+        .breadcrumb { font-size: 0.9rem; margin-bottom: 1.2rem; opacity: 0.8; font-weight: 500; }
+        .breadcrumb a { color: var(--primary-color); font-weight: 600; }
 
-        /* Regular Index Box (Not sticky, not scrollable) */
-        .index-box { background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 12px; padding: 25px; margin-bottom: 30px; box-shadow: var(--box-shadow); position: relative; display: block; overflow: visible; height: auto; max-height: none; }
-        .index-box h3 { margin-bottom: 20px; border-bottom: 1px solid var(--border-color); padding-bottom: 10px; font-size: 1.2rem; color: var(--primary-color); display: flex; align-items: center; gap: 8px;}
-        .index-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 10px; }
-        .index-grid a { display: block; padding: 10px 15px; background: var(--bg-color); border-radius: 6px; font-size: 0.95rem; font-weight: 500; color: var(--text-color); border: 1px solid transparent; transition: all 0.2s;}
-        .index-grid a:hover { border-color: var(--primary-color); color: var(--primary-color); transform: translateX(3px); }
+        /* Search & Filter Bar */
+        .filter-bar { display: flex; gap: 12px; margin-bottom: 1.5rem; flex-wrap: wrap; }
+        .search-input-box { flex: 1; min-width: 260px; position: relative; }
+        .search-input-box input { width: 100%; padding: 10px 14px 10px 36px; border: 1px solid var(--border-color); border-radius: 8px; background: var(--card-bg); color: var(--text-color); font-size: 0.95rem; }
+        .search-input-box i { position: absolute; left: 12px; top: 50%; transform: translateY(-50%); opacity: 0.6; }
 
-        /* Content Styling */
-        .content-section { background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 12px; padding: 2rem; margin-bottom: 2rem; box-shadow: var(--box-shadow); scroll-margin-top: 80px;}
+        /* Sticky Collapsible Index */
+        .sticky-index-box { background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 10px; padding: 16px 20px; margin-bottom: 25px; box-shadow: var(--box-shadow); position: sticky; top: 70px; z-index: 80; max-height: 45vh; overflow-y: auto;}
+        .sticky-index-box h3 { margin-bottom: 12px; border-bottom: 1px solid var(--border-color); padding-bottom: 8px; font-size: 1.1rem; color: var(--primary-color); display: flex; justify-content: space-between; align-items: center; }
+        .index-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 6px; }
+        .index-grid a { display: block; padding: 6px 10px; border-radius: 6px; font-size: 0.9rem; font-weight: 600; color: var(--text-color); border: 1px solid transparent; transition: all 0.2s; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+        .index-grid a:hover { background: rgba(121, 85, 72, 0.1); color: var(--primary-color); border-color: var(--primary-color); }
+
+        .content-section { background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 12px; padding: 2rem; margin-bottom: 2rem; box-shadow: var(--box-shadow); scroll-margin-top: 90px; }
         
-        /* Better Headings */
-        h1.chapter-title { background: var(--h1-bg); color: var(--h1-text); padding: 15px 20px; border-radius: 8px; font-size: 1.6rem; margin-bottom: 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); border-left: 6px solid rgba(255,255,255,0.4); }
-        h2.topic-title { background: var(--h2-bg); color: var(--text-color); padding: 10px 15px; border-left: 5px solid var(--h2-border); border-radius: 4px; font-size: 1.25rem; margin: 25px 0 15px 0; font-weight: 700; border-bottom: 1px solid rgba(121, 85, 72, 0.05); }
-        h3.sub-title { font-size: 1.1rem; color: var(--primary-hover); margin: 15px 0 8px 0; font-weight: 600;}
+        .content-body h1 { font-size: 1.6rem; color: var(--primary-color); margin: 0 0 1.5rem 0; border-bottom: 2px solid var(--primary-color); padding-bottom: 10px; font-weight: 800;}
+        .content-body h2 { font-size: 1.35rem; margin: 2rem 0 1rem; color: var(--text-color); font-weight: 700; border-left: 4px solid var(--primary-color); padding-left: 10px; }
+        .content-body h3 { font-size: 1.18rem; color: var(--primary-hover); margin: 1.4rem 0 0.5rem; font-weight: 700; }
+        .content-body h4 { font-size: 1.05rem; margin: 1rem 0 0.4rem; font-weight: 700; }
+        .content-body p { margin-bottom: 0.9rem; }
+        .content-body ul { margin-left: 20px; margin-bottom: 1.1rem; list-style-type: disc; }
+        .content-body li { margin-bottom: 0.45rem; }
+        .content-body hr { border: none; border-top: 1px dashed var(--border-color); margin: 2rem 0; }
         
-        .date-badge { display: inline-flex; align-items: center; gap: 6px; background: var(--bg-color); border: 1px solid var(--border-color); padding: 4px 10px; border-radius: 6px; font-size: 0.85rem; font-weight: 600; margin-bottom: 15px; color: var(--text-color);}
+        /* Highlight Boxes matching user design */
+        .info-box { padding: 15px 20px; border-radius: 8px; margin: 15px 0; background: var(--card-bg); border-left: 5px solid; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+        .box-favourite { border-left-color: var(--warning-color); background: rgba(245, 158, 11, 0.07); }
+        .box-favourite h4 { color: #d97706; margin-bottom: 8px; font-size: 1.05rem; display: flex; align-items: center; gap: 8px; }
+        
+        .box-trap { border-left-color: var(--danger-color); background: rgba(239, 68, 68, 0.07); }
+        .box-trap h4 { color: #b91c1c; margin-bottom: 8px; font-size: 1.05rem; display: flex; align-items: center; gap: 8px; }
+        
+        .box-revision { border-left-color: var(--success-color); background: rgba(16, 185, 129, 0.06); border: 1px solid rgba(16, 185, 129, 0.2); border-left: 5px solid var(--success-color); }
+        .box-revision h4 { color: #047857; margin-bottom: 12px; font-size: 1.2rem; text-align: center; border-bottom: 1px solid rgba(16, 185, 129, 0.2); padding-bottom: 10px; }
+        .box-revision ul { margin-left: 0; list-style-type: none; }
+        .box-revision li { margin-bottom: 8px; padding-left: 24px; position: relative; }
+        .box-revision li::before { content: '✅'; position: absolute; left: 0; top: 0; font-size: 0.95rem; }
 
-        .info-box { padding: 15px 20px; border-radius: 8px; margin: 20px 0; background: var(--bg-color); border-left: 5px solid; }
-        .box-favourite { border-left-color: var(--warning-color); background: rgba(245, 158, 11, 0.05); }
-        .box-favourite h4 { color: #d97706; margin-bottom: 8px; font-size: 1.05rem; display: flex; align-items: center; gap: 8px;}
-        .box-trap { border-left-color: var(--danger-color); background: rgba(239, 68, 68, 0.05); }
-        .box-trap h4 { color: #b91c1c; margin-bottom: 8px; font-size: 1.05rem; display: flex; align-items: center; gap: 8px;}
-        .box-revision { border-left-color: var(--success-color); background: rgba(16, 185, 129, 0.05); }
-        .box-revision h4 { color: #047857; margin-bottom: 12px; font-size: 1.1rem; border-bottom: 1px solid rgba(16, 185, 129, 0.2); padding-bottom: 8px; display: flex; align-items: center; gap: 8px;}
-
-        /* Mobile Friendly Table - 100% width, No horizontal scroll */
-        .table-wrapper { width: 100%; margin: 15px 0; overflow: hidden; }
-        .data-table { width: 100%; border-collapse: collapse; table-layout: fixed; word-wrap: break-word; background: var(--bg-color); border-radius: 8px; overflow: hidden; border: 1px solid var(--border-color); }
-        .data-table th, .data-table td { padding: 10px 12px; border: 1px solid var(--border-color); text-align: left; vertical-align: top; word-break: break-word; font-size: 0.95rem; }
-        .data-table th { background-color: var(--primary-color); color: white; font-weight: 600; }
+        /* Tables */
+        .data-table { width: 100%; border-collapse: collapse; margin: 15px 0; font-size: 0.95rem; background: var(--card-bg); border-radius: 8px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.05); }
+        .data-table th, .data-table td { padding: 10px 14px; border: 1px solid var(--border-color); text-align: left; }
+        .data-table th { background-color: var(--primary-color); color: white; font-weight: 700; }
         .data-table tr:nth-child(even) { background-color: rgba(121, 85, 72, 0.04); }
+        .table-responsive { overflow-x: auto; margin: 15px 0; }
 
-        .btn-download { display: flex; align-items: center; justify-content: center; gap: 10px; width: 100%; padding: 16px; background: #2563eb; color: white; border: none; border-radius: 12px; font-size: 1.1rem; font-weight: 600; cursor: pointer; margin-top: 30px; transition: background 0.3s, transform 0.1s; box-shadow: 0 4px 6px rgba(37, 99, 235, 0.2);}
+        /* Buttons & Utility */
+        .btn-download { display: flex; align-items: center; justify-content: center; gap: 10px; width: 100%; padding: 14px; background: #2563eb; color: white; border: none; border-radius: 8px; font-size: 1.05rem; font-weight: 700; cursor: pointer; margin-top: 25px; transition: background 0.3s; box-shadow: 0 4px 6px rgba(37, 99, 235, 0.2); }
         .btn-download:hover { background: #1d4ed8; }
-        .btn-download:active { transform: scale(0.98); }
-        .btn-download:disabled { background: #94a3b8; cursor: not-allowed; box-shadow: none; }
 
-        /* Footer & Modals */
-        footer { background-color: var(--footer-bg); color: var(--footer-text); padding: 3rem 5% 1.5rem; margin-top: 40px;}
-        .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 30px; max-width: 1000px; margin: 0 auto; margin-bottom: 2rem;}
-        .footer-col h4 { color: white; font-size: 1.1rem; margin-bottom: 15px; font-weight: 600;}
-        .footer-col ul { margin-left: 0; }
-        .footer-bottom { text-align: center; padding-top: 1.5rem; border-top: 1px solid rgba(255,255,255,0.1); opacity: 0.7; font-size: 0.85rem;}
+        /* Footer and Modals */
+        footer { background-color: var(--footer-bg); color: var(--footer-text); padding: 3rem 5% 1.5rem; margin-top: 40px; }
+        .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 30px; max-width: 1200px; margin: 0 auto; margin-bottom: 2rem; }
+        .footer-col h4 { color: white; font-size: 1.1rem; margin-bottom: 15px; font-weight: 700; }
+        .footer-bottom { text-align: center; padding-top: 1.5rem; border-top: 1px solid rgba(255,255,255,0.1); opacity: 0.7; font-size: 0.85rem; }
         
         .modal-overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); backdrop-filter: blur(2px); z-index: 2000; justify-content: center; align-items: center; padding: 20px; }
         .modal { background: var(--card-bg); padding: 25px; border-radius: 12px; width: 100%; max-width: 350px; position: relative; text-align: center; box-shadow: 0 10px 25px rgba(0,0,0,0.2); }
-        .close-modal { position: absolute; top: 12px; right: 12px; font-size: 1.2rem; cursor: pointer; background: none; border: none; color: var(--text-color); width: 25px; height: 25px; display: flex; align-items: center; justify-content: center; border-radius: 50%; }
-        .preset-amounts { display: flex; gap: 8px; margin-bottom: 15px;}
-        .amt-btn { flex: 1; padding: 10px 5px; border: 1px solid var(--border-color); background: transparent; color: var(--text-color); border-radius: 6px; cursor: pointer; font-weight: 600; font-size: 1rem; }
+        .close-modal { position: absolute; top: 12px; right: 12px; font-size: 1.2rem; cursor: pointer; background: none; border: none; color: var(--text-color); }
+        .preset-amounts { display: flex; gap: 8px; margin-bottom: 15px; }
+        .amt-btn { flex: 1; padding: 10px 5px; border: 1px solid var(--border-color); background: transparent; color: var(--text-color); border-radius: 6px; cursor: pointer; font-weight: 600; }
         .amt-btn.selected { background: var(--primary-color); color: white; border-color: var(--primary-color); }
-        .custom-amt-group { text-align: left; margin-bottom: 15px; }
-        .custom-amt-group input { width: 100%; padding: 10px 10px 10px 25px; border: 1px solid var(--border-color); border-radius: 6px; background: transparent; color: var(--text-color); font-size: 1rem; }
-        .currency-symbol { position: absolute; left: 12px; top: 50%; transform: translateY(-50%); font-weight: 600;}
-        .error-msg { color: var(--danger-color); font-size: 0.8rem; display: none; margin-top: 4px; }
-        .btn-pay { width: 100%; padding: 12px; background: var(--primary-color); color: white; border: none; border-radius: 6px; font-size: 1rem; font-weight: 600; cursor: pointer; }
-        .btn-pay:disabled { background: var(--border-color); color: var(--text-color); opacity: 0.5; cursor: not-allowed; }
+        .custom-amt-group input { width: 100%; padding: 10px 10px 10px 25px; border: 1px solid var(--border-color); border-radius: 6px; background: transparent; color: var(--text-color); }
+        .currency-symbol { position: absolute; left: 12px; top: 50%; transform: translateY(-50%); font-weight: 600; }
+        .btn-pay { width: 100%; padding: 12px; background: var(--primary-color); color: white; border: none; border-radius: 6px; font-weight: 700; cursor: pointer; margin-top: 15px; }
+        .btn-pay:disabled { opacity: 0.5; cursor: not-allowed; }
 
         @media (max-width: 768px) {
             .desktop-only { display: none !important; }
             .content-section { padding: 1.2rem; }
-            h1.chapter-title { font-size: 1.3rem; padding: 12px 15px; border-left-width: 4px; }
-            h2.topic-title { font-size: 1.1rem; padding: 8px 12px; }
-            /* Mobile Table Optimizations */
-            .data-table th, .data-table td { padding: 6px 8px; font-size: 0.85rem; }
+            .sticky-index-box { position: static; max-height: 220px; }
             .index-grid { grid-template-columns: 1fr; }
         }
 
-        /* These styles apply ONLY when generating the PDF */
-        .pdf-exporting .no-print { display: none !important; }
-        .pdf-exporting body { background: white; color: black; font-size: 11pt; line-height: 1.5; }
-        .pdf-exporting .content-section { box-shadow: none; border: none; padding: 0; margin-bottom: 15px; background: white; }
-        .pdf-exporting h1.chapter-title { page-break-before: always; background-color: #f3f4f6; color: #1f2937; border-left: 5px solid #4b5563; box-shadow: none; padding: 10px; margin-top: 0; }
-        .pdf-exporting h1.chapter-title:first-of-type { page-break-before: auto; }
-        .pdf-exporting h2.topic-title { page-break-after: avoid; background-color: white; border-color: #9ca3af; margin-top: 15px; padding: 5px 10px; }
-        .pdf-exporting p, .pdf-exporting li { page-break-inside: avoid; }
-        .pdf-exporting .info-box { border: 1px solid #d1d5db; page-break-inside: avoid; background: #f9fafb !important; }
-        .pdf-exporting .data-table { border: 1px solid #d1d5db; page-break-inside: avoid; }
-        .pdf-exporting .data-table th { background-color: #e5e7eb !important; color: #111827 !important; border-color: #d1d5db; }
-        .pdf-exporting .data-table td { border-color: #d1d5db; }
-        .pdf-exporting .date-badge { border: none; padding: 0; font-weight: normal; color: #4b5563; }
+        /* PDF Generation Overrides */
+        .pdf-mode .no-print { display: none !important; }
+        .pdf-mode { background: white !important; color: black !important; }
+        .pdf-mode .content-section { border: none !important; box-shadow: none !important; padding: 10px !important; margin-bottom: 2rem !important; }
+        .pdf-mode .info-box { border: 1px solid #ccc !important; }
     </style>
 </head>
 <body>
 
     <header class="no-print">
-        <div class="logo-container" onclick="window.location.href='../../../index.html'">
-            <span class="logo">StudySphere</span>
-            <span class="logo-sub">MPSC Group C</span>
+        <div class="logo-container" onclick="window.scrollTo({top:0, behavior:'smooth'})">
+            <span class="logo"><i class="fas fa-graduation-cap"></i> StudySphere</span>
+            <span class="logo-sub">MPSC Group C Special</span>
         </div>
         
         <div class="header-controls">
@@ -181,23 +176,25 @@
             <button class="btn btn-donate desktop-only" onclick="openDonate()">
                 <i class="fas fa-hand-holding-heart"></i> Donate Us
             </button>
-            <button class="icon-btn" onclick="toggleTheme()" id="themeBtn" aria-label="Toggle Theme">
+            <button class="icon-btn" onclick="toggleTheme()" id="themeBtn" aria-label="Toggle Theme" title="थीम बदला">
                 <i class="fas fa-moon"></i>
             </button>
-            <button class="icon-btn" onclick="toggleMenu()" aria-label="Menu">
+            <button class="icon-btn" onclick="toggleMenu()" aria-label="Menu" title="मेनू उघडा">
                 <i class="fas fa-bars"></i>
             </button>
         </div>
     </header>
 
+    <!-- Slide-in Drawer -->
     <div class="menu-overlay no-print" id="menuOverlay" onclick="toggleMenu()"></div>
     <nav class="mobile-menu no-print" id="mobileMenu">
         <div class="menu-header">
-            <span style="font-weight: 600; color: var(--primary-color);">Menu</span>
+            <span style="font-weight: 700; color: var(--primary-color);"><i class="fas fa-book-reader"></i> StudySphere</span>
             <button class="icon-btn" onclick="toggleMenu()"><i class="fas fa-times"></i></button>
         </div>
         <div class="menu-links">
-            <a href="../../../index.html"><i class="fas fa-home fa-fw"></i> Home</a>
+            <a href="#" onclick="toggleMenu(); window.scrollTo({top:0, behavior:'smooth'});"><i class="fas fa-home fa-fw"></i> मुख्य पान (Home)</a>
+            <a href="#quick-index" onclick="toggleMenu();"><i class="fas fa-list-ol fa-fw"></i> अनुक्रमणिका (Index)</a>
             <div style="height: 1px; background: var(--border-color); margin: 10px 20px;"></div>
             <button onclick="openTelegram(); toggleMenu();" style="color: var(--telegram-color);">
                 <i class="fab fa-telegram-plane fa-fw"></i> Join Telegram
@@ -211,971 +208,50 @@
     <main class="main-container">
         
         <div class="breadcrumb no-print">
-            <a href="../../../index.html">Home</a> &nbsp; ❯ &nbsp; <a href="../../index.html">Current Affairs</a> &nbsp; ❯ &nbsp; 2026 &nbsp; ❯ &nbsp; January
+            <a href="#">Home</a> &nbsp; ❯ &nbsp; <span>Current Affairs</span> &nbsp; ❯ &nbsp; <span>2026</span> &nbsp; ❯ &nbsp; <strong>January (सर्व २६ घटक)</strong>
         </div>
 
-        <h1 class="page-title no-print">चालू घडामोडी - जानेवारी २०२६</h1>
+        <div style="text-align: center; margin-bottom: 2rem;" class="no-print">
+            <h1 style="font-size: 2rem; color: var(--primary-color); font-weight: 800;">चालू घडामोडी - जानेवारी २०२६</h1>
+            <p style="opacity: 0.85; font-weight: 500;">MPSC गट-क पूर्व + मुख्य परीक्षा एकात्मिक सखोल संकलन (Prelims + Mains Integrated)</p>
+        </div>
 
-        <!-- Index Box (Not sticky, non-scrollable as requested) -->
-        <div class="index-box no-print">
-            <h3><i class="fas fa-list-ul"></i> अनुक्रमणिका (Index)</h3>
-            <div class="index-grid">
-                <a href="#chap-01">01. महाराष्ट्रातील चालू घडामोडी</a>
-                <a href="#chap-02">02. राष्ट्रीय चालू घडामोडी</a>
-                <a href="#chap-03">03. आंतरराष्ट्रीय चालू घडामोडी</a>
-                <a href="#chap-04">04. शासकीय योजना व कार्यक्रम</a>
-                <a href="#chap-06">06. पुरस्कार व सन्मान</a>
-                <a href="#chap-07">07. Reports, Indices & Rankings</a>
-                <a href="#chap-09">09. अर्थव्यवस्था व वित्त</a>
-                <a href="#chap-10">10. विज्ञान व तंत्रज्ञान</a>
-                <a href="#chap-11">11. पर्यावरण, हवामान व जैवविविधता</a>
-                <a href="#chap-12">12. संरक्षण व सुरक्षा</a>
-                <a href="#chap-13">13. क्रीडा</a>
-                <a href="#chap-14">14. कला, संस्कृती, साहित्य व वारसा</a>
-                <a href="#chap-15">15. सामाजिक क्षेत्र व मानवी विकास</a>
-                <a href="#chap-16">16. संस्था व संघटना</a>
-                <a href="#chap-17">17. समित्या, आयोग व उपक्रम</a>
-                <a href="#chap-18">18. शिखर परिषदा, परिषद, संमेलने व बैठका</a>
-                <a href="#chap-19">19. महत्त्वाचे दिवस, सप्ताह व वर्षे</a>
-                <a href="#chap-20">20. पुस्तके, लेखक व प्रकाशने</a>
-                <a href="#chap-21">21. उल्लेखनीय व्यक्ती व निधन</a>
-                <a href="#chap-22">22. महाराष्ट्र विशेष चालू घडामोडी</a>
-                <a href="#chap-23">23. राष्ट्रीय व नागरी घडामोडी</a>
-                <a href="#chap-24">24. करार, सामंजस्य करार व आंतरराष्ट्रीय सहकार्य</a>
-                <a href="#chap-25">25. आपत्ती व आपत्ती व्यवस्थापन</a>
-                <a href="#chap-26">26. विविध व विशेष चालू घडामोडी</a>
+        <!-- Search and Quick Select Filter -->
+        <div class="filter-bar no-print">
+            <div class="search-input-box">
+                <i class="fas fa-search"></i>
+                <input type="text" id="keyword-search" onkeyup="searchNotes(this.value)" placeholder="महत्त्वाचा शब्द शोधा (उदा. PWD, Padma, GDP, Ramsar)...">
+            </div>
+            <button class="btn btn-primary" onclick="resetFilter()" title="मूळ स्थितीवर या">
+                <i class="fas fa-redo"></i> रिसेट
+            </button>
+        </div>
+
+        <!-- Sticky Index Box -->
+        <div id="quick-index" class="sticky-index-box no-print">
+            <h3>
+                <span><i class="fas fa-list-ol"></i> अनुक्रमणिका (सर्व २६ घटक)</span>
+                <span style="font-size: 0.8rem; font-weight: normal; opacity: 0.8;">क्लिक करून थेट जा</span>
+            </h3>
+            <div id="index-links" class="index-grid">
+                <!-- Dynamically generated from chapters -->
             </div>
         </div>
 
-        <!-- PDF WRAPPER - ONLY THIS CONTENT GOES INTO PDF -->
+        <!-- Loading Spinner -->
+        <div id="loading-spinner" class="content-section text-center" style="text-align: center; padding: 3rem;">
+            <i class="fas fa-circle-notch fa-spin fa-2x" style="color: var(--primary-color); margin-bottom: 12px;"></i>
+            <p style="font-weight: 600;">Current_Affairs_JAN26_2.md फाईल लोड होत आहे...</p>
+        </div>
+
         <div id="pdf-wrapper">
-            
-            <!-- Chapter 01 -->
-            <section id="chap-01" class="content-section">
-                <h1 class="chapter-title">Chapter 01: महाराष्ट्रातील चालू घडामोडी</h1>
-                
-                <h2 class="topic-title">① महाराष्ट्रातील महत्त्वाच्या प्रशासकीय घडामोडी</h2>
-                <h3 class="sub-title">1. महाराष्ट्राच्या 150 Days e-Governance Programme मध्ये PWD प्रथम</h3>
-                <p>महाराष्ट्र शासनाने 150 दिवसांचा e-Governance Programme राबविला. या कार्यक्रमाचा कालावधी 7 मे 2025 ते 10 जानेवारी 2026 असा होता.</p>
-                <ul>
-                    <li>एकूण 57 विभागांनी सहभाग घेतला.</li>
-                    <li>Website, Aaple Sarkar, e-Office, Dashboard, WhatsApp Chatbot, AI/Blockchain आणि GIS यांसारख्या बाबींवर भर.</li>
-                    <li>राज्यस्तरीय मूल्यांकनासाठी Quality Council of India (QCI) ची नियुक्ती करण्यात आली.</li>
-                    <li>महाराष्ट्र सार्वजनिक बांधकाम विभागाने 200 पैकी 186.75 गुण मिळवत प्रथम क्रमांक मिळवला.</li>
-                </ul>
-                <div class="info-box box-favourite">
-                    <h4><i class="fas fa-fire"></i> MPSC Exam Points</h4>
-                    <p>Programme → 150 Days e-Governance Programme<br>
-                    मूल्यांकन → QCI<br>
-                    प्रथम → Public Works Department<br>
-                    गुण → 186.75/200</p>
-                </div>
-
-                <h3 class="sub-title">2. Sevakarmi Puraskar Programme मध्ये PWD</h3>
-                <p>27 जानेवारी 2026 रोजी महाराष्ट्राच्या Sevakarmi Puraskar Programme मध्ये Public Works Department ने द्वितीय क्रमांक मिळवला.</p>
-                <p>या मूल्यांकनात:</p>
-                <ul>
-                    <li>42 Ministerial Secretaries अंतर्गत 93 सरकारी आस्थापनांचे मूल्यांकन झाले.</li>
-                    <li>Sevakarmi component मध्ये 8 parameters होते.</li>
-                    <li>Sevakarmi Tech मध्ये MahaPAR, iGOT, E-HRMS यांसारख्या digital systems चा समावेश होता.</li>
-                    <li>PWD ला 200 पैकी 178 गुण मिळाले.</li>
-                </ul>
-                <div class="info-box box-trap">
-                    <h4><i class="fas fa-exclamation-triangle"></i> Exam Trap</h4>
-                    <p>e-Governance Programme → PWD 1st<br>
-                    Sevakarmi Puraskar Programme → PWD 2nd</p>
-                </div>
-
-                <h2 class="topic-title">② महाराष्ट्राचे 77 वे प्रजासत्ताक दिन</h2>
-                <p>26 जानेवारी 2026 रोजी महाराष्ट्रात 77 वा प्रजासत्ताक दिन साजरा करण्यात आला.</p>
-                <p>मुख्य शासकीय समारंभ:</p>
-                <ul>
-                    <li>ठिकाण → छत्रपती शिवाजी महाराज मैदान, दादर, मुंबई</li>
-                    <li>महाराष्ट्राचे राज्यपाल → आचार्य देवव्रत</li>
-                </ul>
-                <p>राज्यपालांनी लोकशाही, संविधान, नागरिकांचे कर्तव्य आणि महाराष्ट्राच्या विकासावर भर दिला.</p>
-                <h3 class="sub-title">Exam Facts</h3>
-                <div class="table-wrapper">
-                    <table class="data-table">
-                        <tr><th>घटक</th><th>माहिती</th></tr>
-                        <tr><td>दिवस</td><td>26 January 2026</td></tr>
-                        <tr><td>प्रजासत्ताक दिन</td><td>77 वा</td></tr>
-                        <tr><td>ठिकाण</td><td>छत्रपती शिवाजी महाराज मैदान, दादर</td></tr>
-                        <tr><td>राज्यपाल</td><td>आचार्य देवव्रत</td></tr>
-                    </table>
-                </div>
-
-                <h2 class="topic-title">③ महाराष्ट्रातील महत्त्वाची राजकीय/प्रशासकीय घटना</h2>
-                <p>January 2026 मध्ये महाराष्ट्राचे उपमुख्यमंत्री अजित पवार यांचे निधन झाले. केंद्राच्या गृह मंत्रालयाच्या अधिकृत नोंदीत 28 जानेवारी 2026 रोजी त्यांच्या निधनाबद्दल शोक व्यक्त करण्यात आल्याची नोंद आहे.</p>
-                <div class="info-box box-revision">
-                    <h4><i class="fas fa-list-check"></i> MPSC Note</h4>
-                    <p>ही घटना व्यक्ती/निधन या स्वतंत्र Current Affairs categories मध्येही cross-reference करता येईल; येथे महाराष्ट्रातील महत्त्वाची घटना म्हणून नोंद.</p>
-                </div>
-
-                <h2 class="topic-title">④ महाराष्ट्रातील स्थानिक स्वराज्य संस्था निवडणुका</h2>
-                <p>राज्यपालांच्या 26 जानेवारीच्या संदेशात महाराष्ट्रातील नगरपालिका आणि महानगरपालिकांच्या निवडणुका नुकत्याच पार पडल्याचा आणि जिल्हा परिषदांच्या निवडणुका सुरू असल्याचा उल्लेख करण्यात आला.</p>
-                <div class="info-box box-favourite">
-                    <h4><i class="fas fa-fire"></i> MPSC Focus</h4>
-                    <p>Urban Local Bodies → नगरपालिका / महानगरपालिका<br>
-                    Rural Local Bodies → जिल्हा परिषद इ.<br>
-                    स्थानिक स्वराज्य संस्था + निवडणूक प्रक्रिया हा Polity सोबत जोडून अभ्यासण्याचा मुद्दा.</p>
-                </div>
-
-                <h2 class="topic-title">⑤ महाराष्ट्राचा Export Preparedness Index मध्ये प्रथम क्रमांक</h2>
-                <p>NITI Aayog च्या Export Preparedness Index 2024 मध्ये महाराष्ट्राने प्रथम क्रमांक मिळवला.</p>
-                <p>महाराष्ट्राच्या राज्यपालांच्या फेब्रुवारी 2026 च्या अधिकृत भाषणात याची नोंद आहे आणि त्यात हा Index January 2026 मध्ये प्रसिद्ध झाल्याचे नमूद केले आहे.</p>
-                <h3 class="sub-title">Exam Facts</h3>
-                <ul>
-                    <li>Index → Export Preparedness Index</li>
-                    <li>Edition → 2024</li>
-                    <li>Released → January 2026</li>
-                    <li>महाराष्ट्र → 1st Rank</li>
-                    <li>संस्था → NITI Aayog</li>
-                </ul>
-                <div class="info-box box-trap">
-                    <h4><i class="fas fa-exclamation-triangle"></i> MPSC Trap</h4>
-                    <p>Index year आणि release year वेगळे आहेत.</p>
-                </div>
-
-                <h2 class="topic-title">⑥ महाराष्ट्रातील मोठ्या गुंतवणुकीशी संबंधित Davos घडामोडी</h2>
-                <p>World Economic Forum, Davos — January 2026 दरम्यान महाराष्ट्र शासनाने विविध कंपन्यांसोबत सुमारे ₹30 लाख कोटींच्या investment MoUs केल्याचे राज्यपालांच्या नंतरच्या अधिकृत भाषणात नमूद करण्यात आले.</p>
-                <ul>
-                    <li>संबंधित देश → 18 countries</li>
-                    <li>अपेक्षित रोजगार → सुमारे 40 लाख jobs</li>
-                </ul>
-                <p>हे आकडे महाराष्ट्र शासनाच्या अधिकृत निवेदनात दिले आहेत.</p>
-                <p><strong>Important:</strong> ही माहिती January 2026 मधील Davos-related Maharashtra development म्हणून लक्षात ठेवावी.</p>
-
-                <h2 class="topic-title">⑦ महाराष्ट्रासाठी महत्त्वाचे Industrial Policy Developments</h2>
-                <p>महाराष्ट्र शासनाने 2025 मध्ये जाहीर केलेल्या काही धोरणांचा 2026 च्या राज्यीय development agenda मध्ये समावेश आहे:</p>
-                <ul>
-                    <li>Maharashtra Industry, Investment and Services Policy-2025</li>
-                    <li>Bamboo Industry Policy-2025</li>
-                    <li>Gems and Jewellery Policy-2025</li>
-                    <li>Animation, Visual Effects, Gaming, Comics and Extended Reality Policy-2025</li>
-                    <li>Global Capability Center Policy-2025</li>
-                </ul>
-                <p>Maharashtra Industry, Investment and Services Policy-2025 अंतर्गत:</p>
-                <ul>
-                    <li>Target investment → ₹70.50 लाख कोटी</li>
-                    <li>Direct jobs → सुमारे 50 लाख</li>
-                </ul>
-
-                <h2 class="topic-title">⑧ Maharashtra Startup, Entrepreneurship & Innovation Policy</h2>
-                <p>महाराष्ट्राने Maharashtra Startup, Entrepreneurship and Innovation Policy 2025 लागू केली.</p>
-                <p>पुढील पाच वर्षांसाठी उद्दिष्ट:</p>
-                <ul>
-                    <li>1,25,000 entrepreneurs ना nurture/support करणे</li>
-                    <li>50,000 startups ना support करणे</li>
-                </ul>
-                <p>उद्देश: Entrepreneurship वाढवणे, Innovation ecosystem मजबूत करणे, महाराष्ट्राला global entrepreneurship hub बनवणे.</p>
-
-                <h2 class="topic-title">⑨ MahaGeotech Application Centre</h2>
-                <p>महाराष्ट्र शासनाने प्रशासनात Geospatial Technology चा वापर वाढवण्यासाठी MahaGeotech Application Centre स्थापन केले.</p>
-                <p>मुख्य उद्देश:</p>
-                <ul>
-                    <li>Geospatial technology चा प्रशासनात वापर</li>
-                    <li>Policy formulation मधील errors कमी करणे</li>
-                    <li>Data-based administration ला चालना देणे.</li>
-                </ul>
-                <div class="info-box box-favourite">
-                    <h4><i class="fas fa-fire"></i> MPSC Connection</h4>
-                    <p>Geospatial Technology + Governance + GIS.</p>
-                </div>
-
-                <h2 class="topic-title">⑩ MILAAP — MIDC Industrial Land Application & Allotment Portal</h2>
-                <p>महाराष्ट्र शासनाने MIDC Industrial Land Application and Allotment Portal (MILAAP) ही strategic initiative सुरू केली.</p>
-                <p>मुख्य उद्देश: Industrial plots चे transparent allotment.</p>
-                <p><strong>लक्षात ठेवा:</strong> MILAAP → MIDC → Industrial Land → Transparent Allotment</p>
-
-                <div class="info-box box-revision">
-                    <h4><i class="fas fa-bolt"></i> January 2026 — MPSC Quick Revision</h4>
-                    <div class="table-wrapper">
-                        <table class="data-table">
-                            <tr><th>मुद्दा</th><th>लक्षात ठेवण्याची माहिती</th></tr>
-                            <tr><td>77 वा Republic Day</td><td>26 Jan 2026</td></tr>
-                            <tr><td>Maharashtra Governor</td><td>आचार्य देवव्रत</td></tr>
-                            <tr><td>Republic Day venue</td><td>छत्रपती शिवाजी महाराज मैदान, दादर</td></tr>
-                            <tr><td>150 Days e-Governance Programme</td><td>PWD प्रथम</td></tr>
-                            <tr><td>PWD e-Governance score</td><td>186.75/200</td></tr>
-                            <tr><td>Sevakarmi Puraskar</td><td>PWD द्वितीय</td></tr>
-                            <tr><td>PWD Sevakarmi score</td><td>178/200</td></tr>
-                            <tr><td>Export Preparedness Index</td><td>महाराष्ट्र प्रथम</td></tr>
-                            <tr><td>Index</td><td>Export Preparedness Index 2024</td></tr>
-                            <tr><td>Index institution</td><td>NITI Aayog</td></tr>
-                            <tr><td>MILAAP</td><td>MIDC industrial land allotment</td></tr>
-                            <tr><td>MahaGeotech</td><td>Geospatial technology</td></tr>
-                            <tr><td>Startup Policy target</td><td>1.25 lakh entrepreneurs</td></tr>
-                            <tr><td>Startup Policy</td><td>50,000 startups support</td></tr>
-                            <tr><td>Davos Maharashtra MoUs</td><td>~₹30 lakh crore</td></tr>
-                            <tr><td>Davos countries</td><td>18</td></tr>
-                            <tr><td>Expected jobs</td><td>~40 lakh</td></tr>
-                        </table>
-                    </div>
-                </div>
-
-                <div class="info-box box-revision">
-                    <h4><i class="fas fa-list-check"></i> MPSC Prelims Focus</h4>
-                    <p>खास लक्षात ठेवा:</p>
-                    <ul>
-                        <li>PWD → 150 Days e-Governance → 1st</li>
-                        <li>PWD → Sevakarmi Puraskar → 2nd</li>
-                        <li>Export Preparedness Index 2024 → Maharashtra 1st</li>
-                        <li>MILAAP → MIDC industrial land</li>
-                        <li>MahaGeotech → Geospatial Technology</li>
-                        <li>Maharashtra Startup Policy → 1,25,000 entrepreneurs + 50,000 startups</li>
-                        <li>Republic Day 2026 → 77th</li>
-                        <li>Maharashtra Republic Day venue → Dadar, Mumbai</li>
-                    </ul>
-                </div>
-            </section>
-
-            <!-- Chapter 02 -->
-            <section id="chap-02" class="content-section">
-                <h1 class="chapter-title">Chapter 02: राष्ट्रीय चालू घडामोडी (National Current Affairs)</h1>
-                
-                <h2 class="topic-title">① Economic Survey 2025–26</h2>
-                <p>29 January 2026 रोजी Economic Survey 2025–26 प्रसिद्ध करण्यात आला.</p>
-                <h3 class="sub-title">महत्त्वाचे मुद्दे</h3>
-                <ul>
-                    <li>FY 2025–26 साठी Real GDP Growth → 7.4%</li>
-                    <li>FY 2025–26 साठी Real GVA Growth → 7.3%</li>
-                    <li>FY 2026–27 साठी Real GDP growth projection → 6.8%–7.2%</li>
-                    <li>FY25 मध्ये Centre's Revenue Receipts → GDP च्या 9.2%</li>
-                    <li>September 2025 मध्ये Gross NPAs → 2.2%</li>
-                    <li>FY25 मध्ये Services Exports → US$ 387.6 billion</li>
-                    <li>FY25 मध्ये Remittances → US$ 135.4 billion</li>
-                    <li>16 January 2026 रोजी Forex Reserves → US$ 701.4 billion</li>
-                    <li>FY25 मध्ये India चा global merchandise exports मधील share → 1.8%</li>
-                    <li>FY25 foodgrain production → 3577.3 LMT</li>
-                    <li>September 2025 पर्यंत unique investors → 12 कोटींपेक्षा जास्त</li>
-                    <li>PLI schemes → 14 sectors</li>
-                    <li>PLI अंतर्गत actual investment → ₹2 लाख कोटींपेक्षा जास्त</li>
-                    <li>PLI मुळे jobs → 12.6 लाखांपेक्षा जास्त</li>
-                    <li>e-Shram registrations → January 2026 मध्ये 31 कोटींपेक्षा जास्त</li>
-                    <li>India → world's largest recipient of remittances.</li>
-                </ul>
-                <h3 class="sub-title">विशेष Science/Technology point</h3>
-                <p>भारताने SPADEX द्वारे autonomous satellite docking capability प्राप्त करून ही क्षमता साध्य करणारा जगातील चौथा देश बनल्याचे Economic Survey मध्ये नमूद आहे.</p>
-                
-                <div class="info-box box-trap">
-                    <h4><i class="fas fa-exclamation-triangle"></i> MPSC Trap</h4>
-                    <p>Economic Survey 2025–26 → Release: 29 January 2026<br>Survey Year ≠ Release Date</p>
-                </div>
-
-                <h2 class="topic-title">② 77 वा प्रजासत्ताक दिन — राष्ट्रीय स्तर</h2>
-                <p>26 January 2026 रोजी भारताचा 77 वा Republic Day साजरा करण्यात आला.</p>
-                <h3 class="sub-title">मुख्य मुद्दे</h3>
-                <ul>
-                    <li>Date → 26 January 2026</li>
-                    <li>Republic Day → 77th</li>
-                    <li>मुख्य समारंभ → Kartavya Path, New Delhi</li>
-                    <li>Chief Guest: António Costa — President of the European Council, Ursula von der Leyen — President of the European Commission</li>
-                </ul>
-                <p>2026 च्या Republic Day celebrations मध्ये 150 years of Vande Mataram हा विशेष thematic component होता.</p>
-                
-                <div class="info-box box-favourite">
-                    <h4><i class="fas fa-fire"></i> MPSC Focus</h4>
-                    <p>77th Republic Day → 2026<br>Chief Guests → European Council + European Commission</p>
-                </div>
-
-                <h2 class="topic-title">③ National Voters' Day 2026</h2>
-                <p>Date: 25 January 2026. 2026 मध्ये भारताने 16वा National Voters' Day साजरा केला.</p>
-                <ul>
-                    <li>Theme: “My India, My Vote”</li>
-                    <li>Tagline: “Citizen at the Heart of Indian Democracy”</li>
-                </ul>
-                <p>National Voters' Day हा दरवर्षी 25 January रोजी साजरा केला जातो. ही तारीख Election Commission of India च्या स्थापनेशी संबंधित आहे. ECI स्थापना → 25 January 1950 (Article 324).</p>
-                <p>2026 च्या कार्यक्रमात President Droupadi Murmu Chief Guest होत्या.</p>
-
-                <div class="info-box box-trap">
-                    <h4><i class="fas fa-exclamation-triangle"></i> MPSC Trap</h4>
-                    <div class="table-wrapper">
-                        <table class="data-table">
-                            <tr><th>प्रश्न</th><th>उत्तर</th></tr>
-                            <tr><td>National Voters' Day</td><td>25 January</td></tr>
-                            <tr><td>2026 edition</td><td>16th</td></tr>
-                            <tr><td>Theme</td><td>My India, My Vote</td></tr>
-                            <tr><td>Tagline</td><td>Citizen at the Heart of Indian Democracy</td></tr>
-                            <tr><td>ECI established</td><td>25 January 1950</td></tr>
-                            <tr><td>Constitutional Article</td><td>Article 324</td></tr>
-                        </table>
-                    </div>
-                </div>
-
-                <h2 class="topic-title">④ MY Bharat — National Voters' Day Padyatra</h2>
-                <p>MY Bharat, Ministry of Youth Affairs & Sports अंतर्गत autonomous body ने National Voters' Day निमित्त nationwide mobilisation programme आयोजित केला.</p>
-                <ul>
-                    <li>Programme: National Voters' Day Padyatra / Sundays on Cycle – 2026</li>
-                    <li>Date: 25 January 2026</li>
-                    <li>Coverage: State capitals, UT capitals, District Headquarters</li>
-                </ul>
-                <p>मुख्य उद्देश: Youth participation, First-time voters awareness, Voter registration. Campaign message: “MY Bharat MY Vote”.</p>
-
-                <h2 class="topic-title">⑤ Padma Awards 2026</h2>
-                <p>25 January 2026 रोजी Padma Awards 2026 जाहीर करण्यात आले. तीन categories: Padma Vibhushan, Padma Bhushan, Padma Shri.</p>
-                <p>Total: 131 Padma Awards. यामध्ये 2 duo cases समाविष्ट आहेत; duo case मध्ये award एकच म्हणून मोजला जातो.</p>
-                <p>Awards कधी प्रदान होतात? Padma Awards ची घोषणा सामान्यतः Republic Day च्या पूर्वसंध्येला केली जाते. Awards चे ceremonial presentation सामान्यतः March/April मध्ये Rashtrapati Bhavan येथे होते.</p>
-                
-                <div class="info-box box-trap">
-                    <h4><i class="fas fa-exclamation-triangle"></i> MPSC Trap</h4>
-                    <p>Announcement → January / Republic Day<br>Presentation → सामान्यतः March/April</p>
-                </div>
-
-                <h2 class="topic-title">⑥ Republic Day Gallantry Awards 2026</h2>
-                <p>25 January 2026 रोजी President Droupadi Murmu यांनी Armed Forces personnel साठी gallantry awards मंजूर केले. Total Gallantry Awards: 70 (यामध्ये 6 posthumous).</p>
-                <div class="table-wrapper">
-                    <table class="data-table">
-                        <tr><th>Award</th><th>संख्या</th></tr>
-                        <tr><td>Ashoka Chakra</td><td>1</td></tr>
-                        <tr><td>Kirti Chakra</td><td>3</td></tr>
-                        <tr><td>Shaurya Chakra</td><td>13</td></tr>
-                        <tr><td>Bar to Sena Medal (Gallantry)</td><td>1</td></tr>
-                        <tr><td>Sena Medals (Gallantry)</td><td>44</td></tr>
-                        <tr><td>Nao Sena Medals</td><td>6</td></tr>
-                        <tr><td>Vayu Sena Medals</td><td>2</td></tr>
-                    </table>
-                </div>
-                <p>Important: Ashoka Chakra → 1. या वर्षी Ashoka Chakra मिळवणाऱ्यांमध्ये Group Captain Shubhanshu Shukla यांचा समावेश आहे.</p>
-
-                <h2 class="topic-title">⑦ India–Germany Relations</h2>
-                <p>12–13 January 2026 रोजी German Chancellor Friedrich Merz यांनी भारताला भेट दिली. ही त्यांची India ची first official visit as Chancellor आणि Asia मधील first visit as Federal Chancellor होती.</p>
-                <p>भारत आणि जर्मनीने खालील क्षेत्रांमध्ये agreements/Joint Declarations केले: Defence Industrial Cooperation, Economic Cooperation, Semiconductor Ecosystem, Critical Minerals, Telecommunications.</p>
-                
-                <div class="info-box box-favourite">
-                    <h4><i class="fas fa-fire"></i> MPSC Focus</h4>
-                    <p>India + Germany → Semiconductor + Critical Minerals + Defence + Telecom</p>
-                </div>
-
-                <h2 class="topic-title">⑧ India–UAE Relations</h2>
-                <p>19 January 2026 रोजी UAE चे President Sheikh Mohamed bin Zayed Al Nahyan यांनी भारताला official visit केली.</p>
-                <p>Important: UAE President → Sheikh Mohamed bin Zayed Al Nahyan. Visit → 19 January 2026. India-UAE relationship → Comprehensive Strategic Partnership.</p>
-
-                <h2 class="topic-title">⑨ 18th Rozgar Mela</h2>
-                <p>24 January 2026 रोजी 18th Rozgar Mela आयोजित करण्यात आला. Appointment letters → 61,000 पेक्षा जास्त, Locations → 45. PM Narendra Modi यांनी संबोधित केले.</p>
-                <p>Rozgar Mela च्या माध्यमातून inception पासून 11 लाखांपेक्षा जास्त recruitment letters जारी झाल्याचे नमूद केले आहे.</p>
-                <div class="info-box box-favourite">
-                    <h4><i class="fas fa-fire"></i> MPSC Quick Fact</h4>
-                    <p>18th Rozgar Mela → 24 January 2026 → 61,000+ appointment letters</p>
-                </div>
-
-                <h2 class="topic-title">⑩ Viksit Bharat Young Leaders Dialogue 2026</h2>
-                <p>January 2026 मध्ये आयोजित. Youth participation, nation-building आणि leadership development वर भर. 11 January 2026 रोजी ISRO astronauts सोबत interaction झाले.</p>
-                <p>Exam Connection: Youth → Leadership → Viksit Bharat 2047</p>
-
-                <h2 class="topic-title">⑪ Bharat Parv 2026</h2>
-                <p>Bharat Parv 2026 हा national cultural and tourism festival 26–31 January 2026 दरम्यान आयोजित करण्यात आला. Location: Red Fort, New Delhi. Organiser: Ministry of Tourism.</p>
-                <p>मुख्य उद्देश: India's cultural heritage, Art, Cuisine, Tourism, Spiritual heritage. Ek Bharat Shreshtha Bharat, Dekho Apna Desh यांना प्रोत्साहन.</p>
-
-                <h2 class="topic-title">⑫ National-level Space Science Conference</h2>
-                <p>1st International Hybrid Conference on Space Science, Technology and Management (ICSSTM–I 2026)</p>
-                <ul>
-                    <li>Date: 19–20 January 2026</li>
-                    <li>Venue: Nehru Science Centre, Mumbai</li>
-                    <li>Co-organisers: ISRO, MUST University Malaysia, Nehru Science Centre Mumbai</li>
-                    <li>Central Theme: Space Science Education and Capacity Building</li>
-                </ul>
-                <p>ही घटना Maharashtra मध्ये झाली असली तरी तिचा विषय national/international science collaboration शी संबंधित आहे.</p>
-
-                <h2 class="topic-title">⑬ Republic Day — Best Marching Contingents & Tableaux</h2>
-                <p>30 January 2026 रोजी Republic Day Parade 2026 मधील Best Marching Contingents आणि Best Tableaux यांचे awards प्रदान करण्यात आले. हा कार्यक्रम Raksha Rajya Mantri Sanjay Seth यांच्या हस्ते झाला.</p>
-
-                <div class="info-box box-revision">
-                    <h4><i class="fas fa-bolt"></i> January 2026 — One Page Revision</h4>
-                    <div class="table-wrapper">
-                        <table class="data-table">
-                            <tr><th>Topic</th><th>Important Fact</th></tr>
-                            <tr><td>Economic Survey</td><td>2025–26</td></tr>
-                            <tr><td>Economic Survey release</td><td>29 Jan 2026</td></tr>
-                            <tr><td>FY26 Real GDP</td><td>7.4%</td></tr>
-                            <tr><td>FY26 Real GVA</td><td>7.3%</td></tr>
-                            <tr><td>FY27 GDP projection</td><td>6.8–7.2%</td></tr>
-                            <tr><td>Forex reserves</td><td>$701.4 bn</td></tr>
-                            <tr><td>Services exports FY25</td><td>$387.6 bn</td></tr>
-                            <tr><td>Remittances FY25</td><td>$135.4 bn</td></tr>
-                            <tr><td>e-Shram registrations</td><td>31+ crore</td></tr>
-                            <tr><td>PLI sectors</td><td>14</td></tr>
-                            <tr><td>77th Republic Day</td><td>26 Jan 2026</td></tr>
-                            <tr><td>Republic Day venue</td><td>Kartavya Path</td></tr>
-                            <tr><td>Republic Day Chief Guests</td><td>António Costa + Ursula von der Leyen</td></tr>
-                            <tr><td>National Voters' Day</td><td>25 Jan</td></tr>
-                            <tr><td>NVD 2026</td><td>16th</td></tr>
-                            <tr><td>NVD Theme</td><td>My India, My Vote</td></tr>
-                            <tr><td>Padma Awards 2026</td><td>131</td></tr>
-                            <tr><td>Gallantry Awards</td><td>70 (6 posthumous)</td></tr>
-                            <tr><td>Rozgar Mela</td><td>18th (24 Jan, 61,000+ letters)</td></tr>
-                            <tr><td>Germany visit</td><td>12–13 Jan</td></tr>
-                            <tr><td>UAE President visit</td><td>19 Jan</td></tr>
-                            <tr><td>Bharat Parv</td><td>26–31 Jan, Red Fort</td></tr>
-                            <tr><td>ICSSTM–I</td><td>19–20 Jan</td></tr>
-                            <tr><td>SPADEX</td><td>Autonomous satellite docking</td></tr>
-                        </table>
-                    </div>
-                </div>
-
-                <div class="info-box box-revision">
-                    <h4><i class="fas fa-list-check"></i> Prelims Focus</h4>
-                    <ul>
-                        <li>Economic Survey 2025–26 → GDP 7.4%</li>
-                        <li>National Voters' Day → 25 January (16th edition, My India My Vote, ECI Article 324)</li>
-                        <li>Padma Awards 2026 → 131, Gallantry Awards → 70</li>
-                        <li>77th Republic Day → 26 January 2026 (Guests: António Costa + Ursula von der Leyen)</li>
-                        <li>18th Rozgar Mela → 61,000+ appointment letters</li>
-                        <li>India–Germany → Semiconductors + Critical Minerals + Defence + Telecom</li>
-                        <li>India–UAE → Sheikh Mohamed bin Zayed Al Nahyan</li>
-                        <li>Bharat Parv 2026 → 26–31 January</li>
-                        <li>SPADEX → autonomous satellite docking</li>
-                    </ul>
-                </div>
-            </section>
-
-            <!-- Chapter 03 -->
-            <section id="chap-03" class="content-section">
-                <h1 class="chapter-title">Chapter 03: आंतरराष्ट्रीय चालू घडामोडी (International Current Affairs)</h1>
-                
-                <h2 class="topic-title">① World Economic Forum Annual Meeting 2026 — Davos</h2>
-                <p>📅 19–23 January 2026 | 📍 Davos-Klosters, Switzerland</p>
-                <p>World Economic Forum (WEF) ची 56वी Annual Meeting January 2026 मध्ये झाली. Theme: “A Spirit of Dialogue”.</p>
-                <p>Participation: सुमारे 3,000 participants, 130+ countries, सुमारे 400 political leaders, जवळपास 65 Heads of State/Government, जवळपास 850 CEOs/Chairpersons.</p>
-                <p>WEF ने 2026 meeting मध्ये geopolitical fragmentation, technological change आणि international cooperation यावर विशेष भर दिला.</p>
-                <p>Associated Reports: Global Risks Report 2026, Global Cooperation Barometer 2026, Global Cybersecurity Outlook 2026, Chief Economists Outlook.</p>
-
-                <h2 class="topic-title">② India–European Union Free Trade Agreement</h2>
-                <p>📅 27 January 2026. भारत आणि European Union (EU) यांनी India–EU Free Trade Agreement च्या negotiations/conclusion ची घोषणा केली.</p>
-                <p>हा भारताच्या इतिहासातील सर्वात मोठा Free Trade Agreement म्हणून वर्णन करण्यात आला.</p>
-                <p>प्रमुख व्यक्ती: India → Prime Minister Narendra Modi. EU → António Costa (President, European Council), Ursula von der Leyen (President, European Commission).</p>
-                <div class="info-box box-trap">
-                    <h4><i class="fas fa-exclamation-triangle"></i> MPSC Trap</h4>
-                    <p>European Council President आणि European Commission President ही दोन वेगवेगळी पदे आहेत.</p>
-                </div>
-
-                <h2 class="topic-title">③ India–Germany Strategic Partnership</h2>
-                <p>📅 12–13 January 2026. Germany चे Federal Chancellor Friedrich Merz यांनी भारताला official visit केली.</p>
-                <p>प्रमुख सहकार्य क्षेत्रे: Defence Industrial Cooperation, Economic Cooperation, Semiconductor Ecosystem, Critical Minerals, Telecommunications. Critical and Emerging Technologies च्या क्षेत्रातील Semiconductor Ecosystem Partnership महत्त्वाचे cooperation आहे.</p>
-
-                <h2 class="topic-title">④ India–UAE Strategic Partnership</h2>
-                <p>📅 19 January 2026. UAE चे President Sheikh Mohamed bin Zayed Al Nahyan यांनी भारताला official visit केली.</p>
-                <p>India–UAE bilateral trade: FY 2024–25 → US$100 billion. दोन्ही देशांनी US$200 billion bilateral trade by 2032 हे target ठेवले.</p>
-                <p>LNG Agreement: HPCL + ADNOC Gas → 10-year LNG Supply Agreement (0.5 million tonnes per year), Supply beginning 2028.</p>
-
-                <h2 class="topic-title">⑤ 28th CSPOC — Commonwealth Parliamentary Conference</h2>
-                <p>📅 14–16 January 2026 | 📍 New Delhi, India. भारताने 28th CSPOC host केले. Conference of Speakers and Presiding Officers of the Commonwealth (CSPOC).</p>
-                <p>Chair: Om Birla — Speaker of Lok Sabha. 53 national parliaments represented.</p>
-
-                <h2 class="topic-title">⑥ 16th ADMM-Plus Experts Working Group on Counter-Terrorism</h2>
-                <p>📅 14–16 January 2026 | 📍 New Delhi. 16th ASEAN Defence Ministers' Meeting-Plus (ADMM-Plus) Experts Working Group on Counter-Terrorism ची meeting झाली.</p>
-                <p>Co-Chairs: India + Malaysia. Participants: ASEAN चे 11 members आणि 7 dialogue partners (Australia, China, Japan, New Zealand, Republic of Korea, Russia, USA).</p>
-
-                <h2 class="topic-title">⑦ UN Secretary-General — 2026 Priorities</h2>
-                <p>January 2026 मध्ये UN Secretary-General António Guterres यांनी त्यांच्या 2026 priorities मांडल्या. 2026 हे त्यांच्या tenure चे final year आहे.</p>
-
-                <h2 class="topic-title">⑧ World Economic Situation and Prospects 2026</h2>
-                <p>United Nations ने World Economic Situation and Prospects 2026 report January 2026 मध्ये प्रसिद्ध केली.</p>
-
-                <h2 class="topic-title">⑨ 2026 UN Water Conference — International Cooperation</h2>
-                <p>2026 UN Water Conference UAE + Senegal यांच्या co-hosting अंतर्गत होणार आहे. Focus → SDG 6 (Clean Water and Sanitation).</p>
-
-                <h2 class="topic-title">⑩ India–UAE: IMEC</h2>
-                <p>India आणि UAE ने India–Middle East–Europe Economic Corridor (IMEC) संदर्भातील cooperation पुढे नेण्याची भूमिका पुन्हा अधोरेखित केली. Launch: G20 Summit, New Delhi — September 2023.</p>
-
-                <h2 class="topic-title">⑪ India–UAE: Nuclear & Polar Science Cooperation</h2>
-                <p>India आणि UAE यांनी advanced nuclear technologies (Small Modular Reactors - SMRs इ.) आणि Polar Science क्षेत्रात cooperation explore करण्याचे मान्य केले.</p>
-
-                <h2 class="topic-title">⑫ WEF 2026 — Global Geopolitical Discussions</h2>
-                <p>Davos 2026 मध्ये geopolitics हा प्रमुख विषय होता. WEF नुसार जवळपास 65 Heads of State and Government सहभागी झाले. Theme → A Spirit of Dialogue.</p>
-
-                <h2 class="topic-title">⑬ UN General Assembly — Multilateralism</h2>
-                <p>January 2026 मध्ये UN General Assembly President Annalena Baerbock यांनी Davos येथे multilateralism आणि UN Charter च्या महत्त्वावर भाष्य केले. UN General Assembly मध्ये 193 Member States आहेत.</p>
-
-                <div class="info-box box-revision">
-                    <h4><i class="fas fa-bolt"></i> January 2026 — One Page Revision</h4>
-                    <div class="table-wrapper">
-                        <table class="data-table">
-                            <tr><th>Topic</th><th>Important Fact</th></tr>
-                            <tr><td>WEF Annual Meeting</td><td>56th, Davos-Klosters, 19–23 Jan</td></tr>
-                            <tr><td>WEF Theme</td><td>A Spirit of Dialogue</td></tr>
-                            <tr><td>India–EU FTA</td><td>Conclusion announced (Modi, Costa, von der Leyen)</td></tr>
-                            <tr><td>Germany Chancellor</td><td>Friedrich Merz (12–13 Jan)</td></tr>
-                            <tr><td>India–Germany</td><td>Semiconductor + Critical Minerals</td></tr>
-                            <tr><td>UAE President</td><td>Sheikh Mohamed bin Zayed Al Nahyan</td></tr>
-                            <tr><td>India-UAE target</td><td>US$200 billion by 2032</td></tr>
-                            <tr><td>LNG agreement</td><td>0.5 MTPA (HPCL + ADNOC Gas)</td></tr>
-                            <tr><td>CSPOC</td><td>28th, New Delhi, 14–16 Jan, Chair: Om Birla</td></tr>
-                            <tr><td>ADMM-Plus EWG</td><td>16th, Counter-Terrorism, India + Malaysia co-chairs</td></tr>
-                            <tr><td>UN Secretary-General</td><td>António Guterres (2026 Final year)</td></tr>
-                            <tr><td>IMEC</td><td>India–Middle East–Europe Economic Corridor</td></tr>
-                        </table>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Chapter 04 -->
-            <section id="chap-04" class="content-section">
-                <h1 class="chapter-title">Chapter 04: शासकीय योजना व कार्यक्रम (Government Schemes)</h1>
-                
-                <h2 class="topic-title">① YUVA AI for ALL</h2>
-                <p>📅 January 2026. भारत सरकारने National AI Literacy Programme अंतर्गत YUVA AI for ALL हा flagship course सुरू केला. Launch: 6 January 2026, Jaipur. Ministry: Ministry of Electronics & Information Technology (MeitY).</p>
-                <p>मुख्य उद्देश: युवकांना AI चे मूलभूत ज्ञान देणे, AI knowledge चे democratisation.</p>
-                <div class="info-box box-trap">
-                    <h4><i class="fas fa-exclamation-triangle"></i> Exam Trap</h4>
-                    <p>YUVA AI for ALL → AI Literacy. याला AI research किंवा AI hardware manufacturing scheme समजू नका.</p>
-                </div>
-
-                <h2 class="topic-title">② PM SVANidhi Credit Card</h2>
-                <p>📅 23 January 2026. PM SVANidhi Credit Card ही nationwide initiative launch करण्यात आली. ही initiative street vendors, hawkers आणि footpath workers यांच्यासाठी आहे.</p>
-                <p>उद्देश: Street vendors ना formal credit access, financial inclusion देणे.</p>
-
-                <h2 class="topic-title">③ Jal Jeevan Mission — January 2026 Progress</h2>
-                <p>सुरुवात: August 2019. उद्देश: प्रत्येक rural household ला Functional Household Tap Connection (FHTC) देणे.</p>
-                <p>January 2026 update: Rural households with tap-water coverage → सुमारे 15.74 crore (Coverage → 81.31%).</p>
-                <div class="info-box box-trap">
-                    <h4><i class="fas fa-exclamation-triangle"></i> MPSC Trap</h4>
-                    <p>Jal Jeevan Mission = Rural household tap-water supply. Urban drinking-water schemes सोबत गोंधळ करू नका.</p>
-                </div>
-
-                <h2 class="topic-title">④ PMAY-G — Rural Housing Progress</h2>
-                <p>Pradhan Mantri Awaas Yojana–Gramin. उद्देश: ग्रामीण भागातील पात्र houseless households साठी pucca house देणे. Implementation: 1 April 2016 पासून.</p>
-                <p>January 2026 update: 4.95 crore pucca houses target. 3.86 crore sanctioned, 2.93 crore completed.</p>
-
-                <h2 class="topic-title">⑤ PMGSY — Rural Connectivity</h2>
-                <p>Pradhan Mantri Gram Sadak Yojana (Launch 25 Dec 2000). PMGSY-I: 1,63,665 roads completed. PMGSY-III चा मुख्य भर Rural agricultural markets, Higher secondary schools, Hospitals जोडण्यावर आहे.</p>
-
-                <h2 class="topic-title">⑥ PM-JANMAN</h2>
-                <p>Pradhan Mantri Janjati Adivasi Nyaya Maha Abhiyan. विशेषतः Particularly Vulnerable Tribal Groups (PVTGs) साठी. 11 critical interventions आणि 9 Ministries चा समावेश.</p>
-                <div class="info-box box-trap">
-                    <h4><i class="fas fa-exclamation-triangle"></i> MPSC Trap</h4>
-                    <p>PM-JANMAN → PVTGs. ही scheme सर्व Scheduled Tribes साठी सामान्य tribal scheme नाही.</p>
-                </div>
-
-                <h2 class="topic-title">⑦ DAY-NRLM — Lakhpati Didi</h2>
-                <p>Deendayal Antyodaya Yojana – National Rural Livelihoods Mission. January 2026 update: 2 crore Lakhpati Didis चा milestone. Lakhpati Didi म्हणजे SHG ecosystem मधून वार्षिक किमान ₹1 लाख sustainable income मिळवणाऱ्या महिला.</p>
-
-                <h2 class="topic-title">⑧ DDU-GKY</h2>
-                <p>Deen Dayal Upadhyaya Grameen Kaushalya Yojana. Target: ग्रामीण गरीब युवकांना Placement-linked Skill Development देणे. ROSHNI (Left Wing Extremism areas) आणि Himayat (J&K, Ladakh) विशेष programmes.</p>
-
-                <h2 class="topic-title">⑨ RSETI — Rural Self Employment Training Institutes</h2>
-                <p>625 RSETIs कार्यरत. 59 lakh rural youth trained. FY 2025–26 पासून RSETI 2.0 लागू.</p>
-
-                <h2 class="topic-title">⑩ MGNREGS — Rural Employment</h2>
-                <p>Mahatma Gandhi National Rural Employment Guarantee Scheme. January 2026 development: Viksit Bharat – Guarantee for Rozgar and Ajeevika Mission (Gramin) (VB-G RAM G Act). नव्या framework मध्ये rural households साठी up to 125 days guaranteed employment ची तरतूद नमूद आहे.</p>
-                <div class="info-box box-trap">
-                    <h4><i class="fas fa-exclamation-triangle"></i> MPSC Trap</h4>
-                    <p>जुना framework: MGNREGA → 100 days. नवीन VB-G RAM G framework → up to 125 days.</p>
-                </div>
-
-                <h2 class="topic-title">⑪ NSAP & DISHA</h2>
-                <p>National Social Assistance Programme (NSAP) social security assistance शी संबंधित. District Development Coordination and Monitoring Committee (DISHA) district level वर Central Government schemes चे monitoring करते.</p>
-
-                <div class="info-box box-revision">
-                    <h4><i class="fas fa-list-check"></i> Prelims Focus & Traps</h4>
-                    <ul>
-                        <li>PMGSY ≠ PMAY-G (Roads vs Houses)</li>
-                        <li>JJM ≠ PMGSY (Tap water vs Roads)</li>
-                        <li>PM-JANMAN ≠ सामान्य Tribal Development (It is for PVTGs)</li>
-                        <li>DDU-GKY ≠ RSETI (Placement-linked skill vs Self-employment training)</li>
-                        <li>MGNREGS ≠ PM SVANidhi (Rural wage employment vs Street vendors)</li>
-                    </ul>
-                </div>
-            </section>
-
-            <!-- Chapter 06 -->
-            <section id="chap-06" class="content-section">
-                <h1 class="chapter-title">Chapter 06: पुरस्कार व सन्मान (Awards & Honours)</h1>
-                
-                <h2 class="topic-title">① Padma Awards 2026</h2>
-                <p>📅 घोषणा — 25 January 2026. एकूण 131 Padma Awards (5 Padma Vibhushan, 13 Padma Bhushan, 113 Padma Shri). यामध्ये 2 duo cases आहेत.</p>
-                
-                <h3 class="sub-title">② Padma Vibhushan 2026 (5)</h3>
-                <div class="table-wrapper">
-                    <table class="data-table">
-                        <tr><th>व्यक्ती</th><th>क्षेत्र</th><th>राज्य/देश</th></tr>
-                        <tr><td>Dharmendra Singh Deol (Posthumous)</td><td>Art</td><td>Maharashtra</td></tr>
-                        <tr><td>K. T. Thomas</td><td>Public Affairs</td><td>Kerala</td></tr>
-                        <tr><td>N. Rajam</td><td>Art</td><td>Uttar Pradesh</td></tr>
-                        <tr><td>P. Narayanan</td><td>Literature & Education</td><td>Kerala</td></tr>
-                        <tr><td>V. S. Achuthanandhan (Posthumous)</td><td>Public Affairs</td><td>Kerala</td></tr>
-                    </table>
-                </div>
-
-                <h3 class="sub-title">③ Padma Bhushan 2026 (13)</h3>
-                <p>महत्त्वाचे awardees: Alka Yagnik, Bhagat Singh Koshyari, Mammootty, Piyush Pandey, Uday Kotak, Vijay Amritraj.</p>
-
-                <h3 class="sub-title">④ Padma Shri 2026 — Important Names (Maharashtra)</h3>
-                <p>Rohit Sharma (Sports), Satish Shah (Art), R. Madhavan (Art), Armida Fernandes, Ashok Khade, Shrirang Devba Lad.</p>
-
-                <h2 class="topic-title">⑥ Gallantry Awards 2026</h2>
-                <p>President ने 70 personnel साठी Gallantry Awards मंजूर केले. 1 Ashoka Chakra, 3 Kirti Chakras, 13 Shaurya Chakras.</p>
-                <div class="info-box box-favourite">
-                    <h4><i class="fas fa-fire"></i> Ashoka Chakra 2026</h4>
-                    <p>Awardee: Group Captain Shubhanshu Shukla. विशेष कारण: International Space Station (ISS) वर जाणारे पहिले भारतीय ठरले (Axiom-4 Mission). Ashoka Chakra = India's highest peacetime gallantry award.</p>
-                </div>
-
-                <h2 class="topic-title">Military Decorations & Medals</h2>
-                <p>301 military decorations (Param Vishisht Seva Medal 30, Ati Vishisht Seva Medal 56, etc.). President's Medals (Police/Fire): 982 personnel. Jeevan Raksha Padak Awards 2025: 30 awards.</p>
-
-                <h2 class="topic-title">⑬ Indira Gandhi Prize for Peace, Disarmament and Development 2025</h2>
-                <p>Awardee: Graça Machel (Mozambique). Education, Health, Nutrition आणि Humanitarian service मधील कार्यासाठी.</p>
-
-                <div class="info-box box-trap">
-                    <h4><i class="fas fa-exclamation-triangle"></i> MPSC Exam Traps</h4>
-                    <ul>
-                        <li>Padma Awards = 131 (Padma Shri 113 आहे).</li>
-                        <li>Ashoka Chakra → Highest peacetime gallantry award. Shubhanshu Shukla यांचा award Padma Award नाही.</li>
-                        <li>Rohit Sharma → Padma Shri 2026. Vijay Amritraj → Padma Bhushan 2026.</li>
-                    </ul>
-                </div>
-            </section>
-
-            <!-- Chapter 07 -->
-            <section id="chap-07" class="content-section">
-                <h1 class="chapter-title">Chapter 07: Reports, Indices & Rankings</h1>
-                
-                <h2 class="topic-title">① Export Preparedness Index 2024</h2>
-                <p>Publisher: NITI Aayog (4th edition). Large States मध्ये Maharashtra — Rank 1. (त्यानंतर Tamil Nadu, Gujarat).</p>
-
-                <h2 class="topic-title">② Responsible Nations Index 2025</h2>
-                <p>Publisher: World Intellectual Foundation (WIF).</p>
-
-                <h2 class="topic-title">Global Reports</h2>
-                <ul>
-                    <li>World Economic Situation and Prospects 2026 (WESP 2026) → Publisher: United Nations (UN DESA).</li>
-                    <li>Global Risks Report 2026 → Publisher: World Economic Forum (WEF).</li>
-                    <li>Global Cybersecurity Outlook 2026 → Publisher: WEF.</li>
-                    <li>Global Cooperation Barometer 2026 → Publisher: WEF + McKinsey.</li>
-                    <li>Chief Economists Outlook → Publisher: WEF.</li>
-                </ul>
-
-                <h2 class="topic-title">⑧ Economic Survey & National Income</h2>
-                <p>Economic Survey 2025–26 → Publisher: Ministry of Finance. First Advance Estimates of National Income 2025–26 → Publisher: MoSPI. FY 2025–26 साठी Real GDP Growth: 7.4%.</p>
-
-                <h2 class="topic-title">⑩ Inflation Indices (CPI & WPI)</h2>
-                <p>Consumer Price Index (CPI) → Publisher: MoSPI (NSO). Base Year: 2024=100. January Combined CPI: 2.75%.</p>
-                <p>Wholesale Price Index (WPI) → Publisher: DPIIT. Base Year: 2011–12=100. January WPI: 1.81%.</p>
-                <div class="info-box box-trap">
-                    <h4><i class="fas fa-exclamation-triangle"></i> MPSC Trap</h4>
-                    <p>CPI Base Year → 2024. WPI Base Year → 2011–12.</p>
-                </div>
-
-                <h2 class="topic-title">Banking & State Finances</h2>
-                <p>CAG Report on State Finances. RBI — Trend and Progress of Banking in India 2024–25 (Gross NPA Ratio 2.1% पर्यंत खाली आल्याचे नमूद).</p>
-            </section>
-
-            <!-- Chapter 09 -->
-            <section id="chap-09" class="content-section">
-                <h1 class="chapter-title">Chapter 09: अर्थव्यवस्था व वित्त (Economy & Finance)</h1>
-                
-                <h2 class="topic-title">① Economic Survey 2025–26 Key Figures</h2>
-                <p>29 January 2026 रोजी केंद्रीय अर्थमंत्री Nirmala Sitharaman यांनी सादर केला.</p>
-                <div class="table-wrapper">
-                    <table class="data-table">
-                        <tr><th>Indicator</th><th>Estimate/Value</th></tr>
-                        <tr><td>FY26 Real GDP Growth</td><td>7.4% (Consumption + Investment driven)</td></tr>
-                        <tr><td>FY27 GDP Projection</td><td>6.8–7.2%</td></tr>
-                        <tr><td>Agriculture & Allied Growth</td><td>3.1%</td></tr>
-                        <tr><td>Industry GVA (H1 FY26)</td><td>7.0%</td></tr>
-                        <tr><td>Services GVA (H1 FY26)</td><td>9.3%</td></tr>
-                        <tr><td>PFCE share in GDP</td><td>61.5%</td></tr>
-                        <tr><td>Fiscal Deficit FY26</td><td>4.4% of GDP</td></tr>
-                        <tr><td>Revenue Deficit FY26</td><td>0.8% of GDP (Lowest since FY09)</td></tr>
-                        <tr><td>Debt/GDP FY25</td><td>55.7%</td></tr>
-                    </table>
-                </div>
-
-                <h2 class="topic-title">Taxation & Banking</h2>
-                <p>Gross GST (Apr-Dec FY26) ₹17.4 lakh crore. Direct Tax share FY25 58.2%. Income tax filers 9.2 crore. Gross NPA (Sep 2025) 2.2% (multi-decadal low). PMJDY accounts 55.02 crore.</p>
-
-                <h2 class="topic-title">Exports & External Sector</h2>
-                <p>Total Exports FY25: USD 825.3 billion. Services Exports: USD 387.6 billion (13.6% growth). Remittances FY25: USD 135.4 billion (World's largest recipient). India's share in global merchandise exports 1.8%.</p>
-                
-                <div class="info-box box-favourite">
-                    <h4><i class="fas fa-fire"></i> MPSC Concepts</h4>
-                    <p>Capital Expenditure → 4.3% of GDP. Repo Rate (Dec 2025) → 5.25%. Unique investors in Equity Market → >12 crore.</p>
-                </div>
-            </section>
-
-            <!-- Chapter 10 -->
-            <section id="chap-10" class="content-section">
-                <h1 class="chapter-title">Chapter 10: विज्ञान व तंत्रज्ञान (Science & Technology)</h1>
-                
-                <h2 class="topic-title">① Space Missions</h2>
-                <p><strong>PSLV-C62 / EOS-N1:</strong> 12 January 2026. Third stage anomaly मुळे satellites intended orbit मध्ये deploy करता आले नाहीत.</p>
-                <p><strong>Aditya-L1:</strong> Solar Storm Study. L1 = Sun-Earth Lagrange Point 1. सूर्याचा अभ्यास (Corona, CMEs).</p>
-                <p><strong>LOX-Methane Engine:</strong> 27 January 2026. ISRO ने sub-scale thrust chamber ची testing केली. Reusable launch vehicles साठी महत्त्वाचे.</p>
-                <p><strong>IMEx-2026:</strong> Indian Microgravity Experiments साठी ISRO चे Announcement of Opportunity. AstroSat 10 years conference. START-2026 (Space Science awareness training).</p>
-
-                <h2 class="topic-title">② DRDO High-Speed Rocket-Sled Test</h2>
-                <p>Fighter aircraft escape system शी संबंधित technology च्या evaluation साठी यशस्वी चाचणी.</p>
-
-                <h2 class="topic-title">③ Emerging Technologies & Policies</h2>
-                <p>STIP 2020 हा draft policy document होता, त्याला direct scheme समजू नये.</p>
-                <ul>
-                    <li><strong>RDI Fund:</strong> Research Development & Innovation Fund. Financial pool ₹1 lakh crore (6 years). Focus on deep tech, AI, Quantum.</li>
-                    <li><strong>National Quantum Mission (NQM):</strong> Budget Outlay ₹6,003.65 crore.</li>
-                </ul>
-
-                <h2 class="topic-title">④ Scientific Ecosystem</h2>
-                <p>Indian National Science Academy (INSA) चा 91st Foundation Day (7 Jan 2026, New Delhi). DST Secretary नुसार भारत Science & engineering publications मध्ये Top 3 आणि Resident Indians च्या patent filings मध्ये 6th position वर आहे.</p>
-                
-                <div class="info-box box-trap">
-                    <h4><i class="fas fa-exclamation-triangle"></i> Exam Traps</h4>
-                    <p>Aditya-L1 ≠ Chandrayaan. AstroSat → Astronomy. PSLV-C62 → Anomaly (not successful deployment). RDI Fund (₹1 lakh cr) ≠ NQM (₹6,003.65 cr).</p>
-                </div>
-            </section>
-
-            <!-- Chapter 11 -->
-            <section id="chap-11" class="content-section">
-                <h1 class="chapter-title">Chapter 11: पर्यावरण, हवामान व जैवविविधता</h1>
-                
-                <h2 class="topic-title">① 2 नवीन Ramsar Sites</h2>
-                <p>📅 31 January 2026. भारताच्या Ramsar network मध्ये दोन नवीन wetlands समाविष्ट करण्यात आले:</p>
-                <ol>
-                    <li>Patna Bird Sanctuary (Etah, Uttar Pradesh)</li>
-                    <li>Chhari-Dhand (Kutch, Gujarat)</li>
-                </ol>
-                <p>भारतातील एकूण Ramsar Sites आता 98 झाल्या आहेत.</p>
-
-                <h2 class="topic-title">② Conservation Projects</h2>
-                <p><strong>Aravalli Green Wall:</strong> Land degradation कमी करणे, 26 million hectares degraded land restore करण्याचे target. <strong>Project Dolphin:</strong> Second Rangewide Estimation of Riverine and Estuarine Dolphins in India सुरू (Bijnor, UP). <strong>National River Research Centre:</strong> WII, Dehradun येथे उद्घाटन.</p>
-
-                <h2 class="topic-title">③ Access and Benefit Sharing (ABS) - Maharashtra</h2>
-                <p>National Biodiversity Authority (NBA) ने महाराष्ट्रातील Biodiversity Management Committees (Palghar & BMC) ना ABS अंतर्गत निधी वितरित केला. Bacillus genus मधील soil microorganisms च्या commercial utilisation मधून benefit मिळाला.</p>
-
-                <h2 class="topic-title">④ Climate Policy & Pollution</h2>
-                <p><strong>CCTS:</strong> Carbon Credit Trading Scheme अंतर्गत 208 additional carbon-intensive entities साठी Greenhouse Gas Emission Intensity (GEI) targets notify केले (Total 490). <strong>CETP:</strong> Common Effluent Treatment Plants regulatory framework rationalised. <strong>Delhi-NCR:</strong> GRAP Stage IV 17 Jan लागू, 20 Jan revoked.</p>
-
-                <h2 class="topic-title">⑤ Wildlife Infrastructure</h2>
-                <p>88th SC-NBWL meeting (70 proposals). Kumbhalgarh Wildlife Sanctuary (Rajasthan) ESZ final notification. Kaziranga Elevated Corridor (Assam) Bhoomi Pujan (₹6,950 crore). Economic Survey 2025-26 ने Climate strategy मध्ये 'Adaptation' वर भर दिला.</p>
-            </section>
-
-            <!-- Chapter 12 -->
-            <section id="chap-12" class="content-section">
-                <h1 class="chapter-title">Chapter 12: संरक्षण व सुरक्षा (Defence & Security)</h1>
-                
-                <h2 class="topic-title">① DRDO 68th Foundation Day & Tests</h2>
-                <p>1 January 2026 रोजी DRDO चा 68th Foundation Day. 11 January रोजी <strong>MPATGM</strong> (Man Portable Anti-Tank Guided Missile) ची KK Ranges, Ahilya Nagar, Maharashtra येथे यशस्वी चाचणी (3rd Gen, Fire-and-Forget, IIR Homing Seeker, Tandem Warhead).</p>
-
-                <h2 class="topic-title">② LR-AShM</h2>
-                <p>Long Range Anti-Ship Hypersonic Missile (LR-AShM) Republic Day 2026 मध्ये प्रदर्शित. Hypersonic Glide Missile. प्रारंभिक speed Mach 10, Average Mach 5.0. Two-stage solid propulsion.</p>
-
-                <h2 class="topic-title">③ Naval Technologies for Combat Submarines</h2>
-                <p>AIP (Air Independent Propulsion) technology मुळे submarine ला atmospheric oxygen वर पूर्णपणे अवलंबून न राहता अधिक काळ underwater operation करण्यास मदत मिळते.</p>
-
-                <h2 class="topic-title">④ Other Missile Systems</h2>
-                <ul>
-                    <li>Pralay: Surface-to-Surface</li>
-                    <li>Akash-NG: Surface-to-Air</li>
-                    <li>Astra Mk-II: Air-to-Air (BVRAAM)</li>
-                    <li>NAG: Anti-Tank</li>
-                    <li>Rudram-2: Air-to-Surface</li>
-                    <li>Pinaka: Guided Extended Range Rocket (MLRS)</li>
-                    <li>ATAGS: Advanced Towed Artillery Gun System</li>
-                    <li>Anant Shastra: Quick Reaction SAM</li>
-                </ul>
-
-                <h2 class="topic-title">⑤ DRDO - Industry Collaboration</h2>
-                <p>2,201 LAToTs (Licensing Agreements for Transfer of Technology) Indian industries ना देण्यात आले. 15 DRDO Industry Academia Centres of Excellence स्थापन.</p>
-            </section>
-
-            <!-- Chapter 13 -->
-            <section id="chap-13" class="content-section">
-                <h1 class="chapter-title">Chapter 13: क्रीडा (Sports)</h1>
-                
-                <h2 class="topic-title">① Cricket</h2>
-                <p><strong>India-NZ ODI Series:</strong> New Zealand ने series 3-0 ने जिंकली. ही New Zealand ची भारतातील पहिली ODI series victory होती. <strong>India-NZ T20I Series:</strong> India ने 25 January पर्यंत 3-0 आघाडी घेतली. 3rd T20I मध्ये Abhishek Sharma ने 14 balls मध्ये अर्धशतक केले (2nd fastest for India).</p>
-                <p><strong>U-19 World Cup 2026:</strong> 16th edition. Hosts: Zimbabwe, Namibia. India ने group stage मध्ये USA, Bangladesh, New Zealand ला हरवून 3/3 wins नोंदवले.</p>
-                <p><strong>WPL 2026:</strong> 4th edition 9 Jan पासून Navi Mumbai येथे सुरू. Opening match मध्ये RCB ने MI ला हरवले.</p>
-
-                <h2 class="topic-title">② Other Sports</h2>
-                <p><strong>72nd National Volleyball Championship:</strong> Varanasi, UP येथे. <strong>Khelo India Winter Games 2026:</strong> 6th edition, Ladakh leg (Leh). नवीन समावेश: Figure Skating पहिल्यांदाच समाविष्ट. <strong>Pune Grand Tour 2026:</strong> Cycling competition, Winner: Luke Mudgway, Team: Li-Ning Star.</p>
-                <p><strong>National Sports Board Rules:</strong> 8 January 2026 रोजी notify.</p>
-
-                <div class="info-box box-trap">
-                    <h4><i class="fas fa-exclamation-triangle"></i> Exam Traps</h4>
-                    <p>WPL 2026 आणि U-19 World Cup चे champions January मध्ये ठरले नव्हते. Pune Grand Tour ही Cycling स्पर्धा आहे.</p>
-                </div>
-            </section>
-
-            <!-- Chapter 14 -->
-            <section id="chap-14" class="content-section">
-                <h1 class="chapter-title">Chapter 14: कला, संस्कृती, साहित्य व वारसा</h1>
-                
-                <h2 class="topic-title">① Book Fairs & Festivals</h2>
-                <p><strong>New Delhi World Book Fair 2026:</strong> 10-18 Jan, Bharat Mandapam. Organiser: NBT. Theme: Indian Military History: Valour and Wisdom @75. 'The Saga of Kudopali' (Veer Surendra Sai, 1857) प्रकाशित.</p>
-                <p><strong>Bharat Parv 2026:</strong> 26-31 Jan, Red Fort. Organiser: Ministry of Tourism. Indian Culture Portal (Ministry of Culture) सहभागी.</p>
-
-                <h2 class="topic-title">② Theatre & Culture</h2>
-                <p><strong>25th Bharat Rang Mahotsav 2026:</strong> Organiser: NSD. 40+ locations. 277 Indian, 12 international productions. NSD ने 'Rang Akash' (Radio) आणि 'Naatyam' (OTT) launch केले.</p>
-
-                <h2 class="topic-title">③ Parakram Diwas 2026</h2>
-                <p>📅 23-25 January. Netaji Subhas Chandra Bose यांची 129वी जयंती. मुख्य कार्यक्रम Sri Vijaya Puram, Andaman & Nicobar Islands येथे.</p>
-
-                <h2 class="topic-title">④ Padma Awards 2026</h2>
-                <p>131 awards (5 Vibhushan, 13 Bhushan, 113 Shri). Maharashtra मधील धर्मेंद्र (Dharmendra Singh Deol) यांना मरणोत्तर Padma Vibhushan (Art).</p>
-            </section>
-
-            <!-- Chapter 15 -->
-            <section id="chap-15" class="content-section">
-                <h1 class="chapter-title">Chapter 15: सामाजिक क्षेत्र व मानवी विकास</h1>
-                
-                <h2 class="topic-title">① National Girl Child Day 2026</h2>
-                <p>📅 24 January. 2024-25 मध्ये secondary level वर मुलींचा GER → 80.2%. Mission Shakti (₹3,150 crore) अंतर्गत women safety, security & empowerment. 2,153 child marriages prevented.</p>
-
-                <h2 class="topic-title">② Health & Nutrition</h2>
-                <p><strong>Poshan Tracker:</strong> 9+ crore beneficiaries. <strong>PMMVY:</strong> 4.26 crore beneficiaries. <strong>Helpline:</strong> PM CARES, Poshan, PMMVY साठी नवीन short code <strong>1515</strong>. <strong>U-WIN:</strong> Vaccination-related platform (5 crore+ coverage). <strong>MMR:</strong> भारताचा Maternal Mortality Ratio 88. <strong>Tele-MANAS:</strong> Mental Health Support (20 languages).</p>
-
-                <h2 class="topic-title">③ Employment & Labour</h2>
-                <p><strong>National Career Service:</strong> 2.3 crore+ vacancies mobilised. <strong>e-Shram:</strong> 31 crore+ unorganised workers. <strong>Gig Economy:</strong> Gig workers संख्या 55% वाढली (FY21-FY25). <strong>Female LFPR:</strong> January 2026 मध्ये 35.1%. Overall Unemployment Rate 5.0%.</p>
-                
-                <div class="info-box box-trap">
-                    <h4><i class="fas fa-exclamation-triangle"></i> Exam Traps</h4>
-                    <p>U-WIN → Vaccination. Tele-MANAS → Mental Health. e-Shram → Unorganised workers. MMR 88 → Maternal deaths (not infant).</p>
-                </div>
-            </section>
-
-            <!-- Chapter 16 -->
-            <section id="chap-16" class="content-section">
-                <h1 class="chapter-title">Chapter 16: संस्था व संघटना (Organisations)</h1>
-                <div class="table-wrapper">
-                    <table class="data-table">
-                        <tr><th>Organisation</th><th>Key Function / Event in Jan 2026</th></tr>
-                        <tr><td>NSO (MoSPI)</td><td>FY2025-26 GDP First Advance Estimates (7.4%)</td></tr>
-                        <tr><td>NDDB Foundation</td><td>Giftmilk + Shishu Sanjeevani nutrition programmes</td></tr>
-                        <tr><td>NIESBUD</td><td>Entrepreneurship & small business development (Pune conference)</td></tr>
-                        <tr><td>JSS</td><td>Jan Shikshan Sansthan - Non-formal vocational training</td></tr>
-                        <tr><td>NSD</td><td>Bharat Rang Mahotsav</td></tr>
-                        <tr><td>NBT</td><td>New Delhi World Book Fair</td></tr>
-                        <tr><td>NCW</td><td>National Commission for Women Foundation Day</td></tr>
-                        <tr><td>DARPG</td><td>Administrative reforms, CPGRAMS (Grievance Redressal)</td></tr>
-                        <tr><td>CSPOC</td><td>28th Conference, New Delhi (Commonwealth Speakers)</td></tr>
-                    </table>
-                </div>
-                <p>GRAI Group A Top Performers: Department of Telecommunications, Department of Posts, CBIC.</p>
-            </section>
-
-            <!-- Chapter 17 -->
-            <section id="chap-17" class="content-section">
-                <h1 class="chapter-title">Chapter 17: समित्या, आयोग व उपक्रम</h1>
-                
-                <h2 class="topic-title">① Important Committees & Initiatives</h2>
-                <p><strong>Make in India in Sports Committee:</strong> National Sports Federations (NSFs) ना स्थापन करण्याचा सल्ला. <strong>RDI Fund:</strong> ₹1 lakh crore fund. First SLFMs: TDB + BIRAC. <strong>PM-SETU:</strong> ITI upgradation, Pune industry consultation. <strong>Women-Friendly Gram Panchayat:</strong> National Workshop at YASHADA, Pune.</p>
-
-                <h2 class="topic-title">② Youth & Technology</h2>
-                <p><strong>Viksit Bharat Young Leaders’ Dialogue 2026:</strong> 9-12 Jan, New Delhi. 1,500 young leaders. <strong>#SkillTheNation Challenge:</strong> AI learning (SOAR - Skilling for AI Readiness platform).</p>
-
-                <h2 class="topic-title">③ Governance Reforms</h2>
-                <p><strong>Cooperative Reforms:</strong> National Cooperative Database, Sahkar se Samriddhi (Udaipur workshop). <strong>Secretariat Reforms:</strong> e-Office (93.81% eFiles), Swachhata, Waste to Wealth (Scrap productive use).</p>
-            </section>
-
-            <!-- Chapter 18 -->
-            <section id="chap-18" class="content-section">
-                <h1 class="chapter-title">Chapter 18: शिखर परिषदा व बैठका</h1>
-                <div class="table-wrapper">
-                    <table class="data-table">
-                        <tr><th>Conference</th><th>Details</th></tr>
-                        <tr><td>IICDEM 2026</td><td>21-23 Jan, New Delhi. ECI आयोजित Democracy & Election Management.</td></tr>
-                        <tr><td>28th CSPOC</td><td>14-16 Jan, New Delhi. Commonwealth Speakers. Chair: Om Birla.</td></tr>
-                        <tr><td>86th AIPOC</td><td>19-21 Jan, Lucknow. All India Presiding Officers’ Conference.</td></tr>
-                        <tr><td>India Energy Week</td><td>27-30 Jan, Goa. 4th edition.</td></tr>
-                        <tr><td>5th ASI Symposium</td><td>7-9 Jan, PRL Ahmedabad. Astronomical Society of India.</td></tr>
-                        <tr><td>ICSSTM-I 2026</td><td>19-20 Jan, Mumbai. Space Science Education.</td></tr>
-                        <tr><td>WEF Annual Meeting</td><td>Davos, Switzerland. Theme: A Spirit of Dialogue.</td></tr>
-                    </table>
-                </div>
-            </section>
-
-            <!-- Chapter 19 -->
-            <section id="chap-19" class="content-section">
-                <h1 class="chapter-title">Chapter 19: महत्त्वाचे दिवस, सप्ताह व वर्षे</h1>
-                <div class="table-wrapper">
-                    <table class="data-table">
-                        <tr><th>Date</th><th>Important Day</th><th>Key Point</th></tr>
-                        <tr><td>4 Jan</td><td>World Braille Day</td><td>Louis Braille</td></tr>
-                        <tr><td>9 Jan</td><td>Pravasi Bharatiya Divas</td><td>Gandhi returned to India (1915)</td></tr>
-                        <tr><td>10 Jan</td><td>World Hindi Day</td><td>Hindi promotion (Hindi Diwas is 14 Sep)</td></tr>
-                        <tr><td>12 Jan</td><td>National Youth Day</td><td>Swami Vivekananda</td></tr>
-                        <tr><td>15 Jan</td><td>Army Day</td><td>K. M. Cariappa (First Indian C-in-C)</td></tr>
-                        <tr><td>16 Jan</td><td>National Startup Day</td><td>Startup India launch (2016)</td></tr>
-                        <tr><td>23 Jan</td><td>Parakram Diwas</td><td>Netaji Subhas Chandra Bose</td></tr>
-                        <tr><td>24 Jan</td><td>National Girl Child Day</td><td>Girl child empowerment</td></tr>
-                        <tr><td>24 Jan</td><td>Int. Day of Education</td><td>Education</td></tr>
-                        <tr><td>25 Jan</td><td>National Voters' Day</td><td>ECI established (1950)</td></tr>
-                        <tr><td>26 Jan</td><td>Republic Day</td><td>Constitution in force (1950)</td></tr>
-                        <tr><td>26 Jan</td><td>Int. Customs Day</td><td>WCO</td></tr>
-                        <tr><td>30 Jan</td><td>Martyrs' Day</td><td>Mahatma Gandhi</td></tr>
-                    </table>
-                </div>
-            </section>
-
-            <!-- Chapter 20 -->
-            <section id="chap-20" class="content-section">
-                <h1 class="chapter-title">Chapter 20: पुस्तके, लेखक व प्रकाशने</h1>
-                
-                <h2 class="topic-title">① Important Books</h2>
-                <ul>
-                    <li><strong>Sing, Dance and Lead:</strong> Author: Hindol Sengupta. Subject: Srila Prabhupada & leadership.</li>
-                    <li><strong>Awazon Ke Jugnu:</strong> IGNCA publication. 31 Indian voices/persons documented.</li>
-                    <li><strong>The Saga of Kudopali:</strong> Veer Surendra Sai, 1857.</li>
-                    <li><strong>55 Classical-language works:</strong> CIIL + CICT (Tamil, Odia, Telugu etc.).</li>
-                    <li><strong>India Year Book / Bharat Year Book:</strong> Publications Division.</li>
-                </ul>
-
-                <h2 class="topic-title">② PM-YUVA 3.0</h2>
-                <p>43 young authors selected. Six-month mentorship programme. Scholarship: ₹50,000 per month. Royalty: 10% lifetime royalty.</p>
-            </section>
-
-            <!-- Chapter 21 -->
-            <section id="chap-21" class="content-section">
-                <h1 class="chapter-title">Chapter 21: उल्लेखनीय व्यक्ती व निधन</h1>
-                <p>Padma Awards 2026 मध्ये 131 व्यक्तींचा सन्मान. धर्मेंद्र (Dharmendra) यांना मरणोत्तर Padma Vibhushan. S. P. Balasubrahmanyam यांना श्रद्धांजली. स्वामी विवेकानंद (Youth Day), महात्मा गांधी (Martyrs' Day), K.M. Cariappa (Army Day), वीर सुरेंद्र साई, प्रभुपाद (पुस्तके) चर्चेत होते.</p>
-            </section>
-
-            <!-- Chapter 22 -->
-            <section id="chap-22" class="content-section">
-                <h1 class="chapter-title">Chapter 22: महाराष्ट्र विशेष चालू घडामोडी</h1>
-                <p><strong>Pune:</strong> PM-SETU Industry Consultation, JSS Zonal Conference, Women-Friendly Gram Panchayat Workshop, Inclusive Education Conference. <strong>Mumbai:</strong> 1st ICSSTM-I 2026 (Space Science). <strong>Aaple Sarkar:</strong> Citizen-service platform. <strong>PACS & Sahkar se Samriddhi:</strong> Cooperative sector strengthening.</p>
-            </section>
-
-            <!-- Chapter 23 -->
-            <section id="chap-23" class="content-section">
-                <h1 class="chapter-title">Chapter 23: राष्ट्रीय व नागरी घडामोडी</h1>
-                <p><strong>SVAMITVA:</strong> Rural residential property ownership (~3 crore property cards). <strong>Maharashtra 150 Days e-Governance:</strong> PWD प्रथम. <strong>Mumbai-Pune Missing Link:</strong> 13.3 km, ₹6,695 crore. <strong>Tuljabhavani Temple:</strong> Tuljapur, Dharashiv. <strong>Vande Mataram:</strong> 150 years in 2026.</p>
-            </section>
-
-            <!-- Chapter 24 -->
-            <section id="chap-24" class="content-section">
-                <h1 class="chapter-title">Chapter 24: करार, सामंजस्य करार व आंतरराष्ट्रीय सहकार्य</h1>
-                <div class="table-wrapper">
-                    <table class="data-table">
-                        <tr><th>Country / Org</th><th>Key Area of Cooperation</th></tr>
-                        <tr><td>Germany</td><td>Semiconductor, Critical Minerals, Telecom, Defence</td></tr>
-                        <tr><td>UAE</td><td>Dholera SIR (Gujarat), Space (IN-SPACe - UAE Space Agency)</td></tr>
-                        <tr><td>Israel</td><td>Fisheries & Aquaculture</td></tr>
-                        <tr><td>European Union</td><td>FTA negotiations concluded, Security & Defence, Mobility</td></tr>
-                        <tr><td>RBI - ESMA</td><td>Financial/securities regulatory cooperation</td></tr>
-                    </table>
-                </div>
-            </section>
-
-            <!-- Chapter 25 -->
-            <section id="chap-25" class="content-section">
-                <h1 class="chapter-title">Chapter 25: आपत्ती व आपत्ती व्यवस्थापन</h1>
-                <p><strong>11th NCDS Meeting:</strong> Dam Safety, New Delhi. <strong>Sanjha Shakti:</strong> Khadki, Pune (Military-Civil Fusion exercise, 16 civilian agencies). <strong>Aapda Mitra:</strong> Maharashtra 7,900 trained volunteers in 20 districts. <strong>SEOC:</strong> Mumbai, Smart GIS-based DSS.</p>
-            </section>
-
-            <!-- Chapter 26 -->
-            <section id="chap-26" class="content-section">
-                <h1 class="chapter-title">Chapter 26: विविध व विशेष चालू घडामोडी</h1>
-                <p>National Days revision (Startup Day, Youth Day, Voters' Day, Republic Day, Girl Child Day, Martyrs' Day). Padma Awards summary. India Energy Week (Goa). Vande Mataram 150 years.</p>
-                <div class="info-box box-revision">
-                    <h4><i class="fas fa-check-circle"></i> Status Update</h4>
-                    <p>January 2026 - 26 Chapters Completed (Based on provided data).</p>
-                </div>
-            </section>
-
-        </div> <!-- END OF PDF WRAPPER -->
-
-        <button id="downloadBtn" class="btn-download no-print" onclick="downloadPDF()">
-            <i class="fas fa-file-pdf"></i> Download Notes (PDF)
+            <div id="notes-container">
+                <!-- Parsed HTML sections will be injected here -->
+            </div>
+        </div>
+
+        <button class="btn-download no-print" onclick="downloadPDF()">
+            <i class="fas fa-file-pdf"></i> संपूर्ण नोट्स PDF स्वरूपात डाऊनलोड करा
         </button>
 
     </main>
@@ -1184,29 +260,28 @@
         <div class="footer-grid">
             <div class="footer-col">
                 <h4>StudySphere</h4>
-                <p>MPSC Group C Prelims & Mains साठी Study Platform.</p>
+                <p>MPSC Group C Prelims & Mains साठी मोफत परीक्षाभिमुख Study Platform.</p>
             </div>
             <div class="footer-col">
                 <h4>Quick Links</h4>
                 <ul>
-                    <li><a href="../../../index.html">Home</a></li>
-                    <li><a href="../../../index.html#about">About</a></li>
-                    <li><a href="../../../index.html#contact">Contact</a></li>
+                    <li><a href="#" onclick="window.scrollTo({top:0, behavior:'smooth'})">मुख्य पान (Top)</a></li>
+                    <li><a href="#quick-index">घटक अनुक्रमणिका</a></li>
                 </ul>
             </div>
             <div class="footer-col">
                 <h4>Information</h4>
                 <ul>
-                    <li><a href="../../../index.html">Privacy Policy</a></li>
-                    <li><a href="../../../index.html">Terms of Service</a></li>
-                    <li><a href="../../../index.html">Sitemap</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Disclaimer</a></li>
                 </ul>
             </div>
             <div class="footer-col">
                 <h4>Support</h4>
                 <div style="display: flex; flex-direction: column; gap: 10px;">
                     <button class="btn btn-telegram" onclick="openTelegram()" style="width: 100%; justify-content: center; padding: 10px; font-size: 1rem;">
-                        <i class="fab fa-telegram-plane"></i> Telegram
+                        <i class="fab fa-telegram-plane"></i> Telegram Channel
                     </button>
                     <button class="btn btn-donate" onclick="openDonate()" style="width: 100%; justify-content: center; padding: 10px; font-size: 1rem;">
                         <i class="fas fa-hand-holding-heart"></i> Donate Us
@@ -1223,18 +298,18 @@
     <div class="modal-overlay no-print" id="mobileDonateModal">
         <div class="modal">
             <button class="close-modal" onclick="closeModals()">&times;</button>
-            <h2 style="font-size:1.3rem; margin-bottom:5px;">StudySphere ला Support करा</h2>
-            <p style="font-size:0.95rem;">तुमचा छोटा support platform चालू ठेवण्यास मदत करतो.</p>
+            <h2 style="font-size:1.3rem; margin-bottom:5px; color: var(--primary-color);"><i class="fas fa-heart"></i> StudySphere ला Support करा</h2>
+            <p style="font-size:0.9rem; opacity:0.85;">तुमचा छोटासा हातभार या मोफत उपक्रमास सातत्य ठेवण्यास मदत करतो.</p>
             <div class="preset-amounts" style="margin-top: 15px;">
+                <button class="amt-btn" onclick="selectPresetAmount(25)">₹25</button>
                 <button class="amt-btn" onclick="selectPresetAmount(50)">₹50</button>
                 <button class="amt-btn" onclick="selectPresetAmount(100)">₹100</button>
-                <button class="amt-btn" onclick="selectPresetAmount(200)">₹200</button>
             </div>
             <div class="custom-amt-group" style="text-align: left; margin-bottom: 15px;">
-                <label style="font-size:0.85rem;">Custom Amount</label>
+                <label style="font-size:0.85rem; font-weight:600;">Custom Amount (इतर रक्कम)</label>
                 <div style="position:relative;">
                     <span class="currency-symbol">₹</span>
-                    <input type="number" id="customAmt" placeholder="Enter amount" min="1" step="any" oninput="handleCustomAmount()">
+                    <input type="number" id="customAmt" placeholder="रक्कम टाका" min="1" step="any" oninput="handleCustomAmount()">
                 </div>
             </div>
             <button class="btn-pay" id="payNowBtn" onclick="initiateUPIPayment()" disabled>Pay Now</button>
@@ -1244,16 +319,192 @@
     <div class="modal-overlay no-print" id="desktopDonateModal">
         <div class="modal">
             <button class="close-modal" onclick="closeModals()">&times;</button>
-            <h2 style="font-size:1.3rem; margin-bottom:5px;">StudySphere ला Support करा</h2>
-            <p style="font-size:0.95rem;">Direct UPI payment उपलब्ध नसल्यास QR code scan करून payment करा.</p>
-            <div style="margin:15px auto; width:180px; height:180px; border:1px dashed var(--border-color); display:flex; justify-content:center; align-items:center; background:white;">
-                <img src="../../../assets/images/donation-qr-demo.png" alt="Donation QR" onerror="this.outerHTML='<div style=\'color:#aaa;\'>DEMO QR</div>'">
+            <h2 style="font-size:1.3rem; margin-bottom:5px; color: var(--primary-color);">StudySphere ला Support करा</h2>
+            <p style="font-size:0.9rem; opacity:0.85;">कोणत्याही UPI ॲपवरून (GPay, PhonePe, Paytm) स्कॅन करा:</p>
+            <div style="margin:15px auto; width:180px; height:180px; border:1px dashed var(--border-color); display:flex; justify-content:center; align-items:center; background:white; border-radius:8px;">
+                <img src="https://api.qrserver.com/v1/create-qr-code/?size=160x160&data=upi://pay?pa=vikram.joshi9089@oksbi%26pn=StudySphere" alt="Donation QR" style="max-width:100%; height:auto;">
             </div>
+            <p style="font-size:0.8rem; font-weight:600;">UPI ID: <code>vikram.joshi9089@oksbi</code></p>
         </div>
     </div>
 
     <script>
-        // Theme
+        let rawMarkdownContent = '';
+        const chapterTitles = [
+            "01. महाराष्ट्रातील चालू घडामोडी",
+            "02. राष्ट्रीय चालू घडामोडी",
+            "03. आंतरराष्ट्रीय चालू घडामोडी",
+            "04. शासकीय योजना व कार्यक्रम",
+            "05. नियुक्त्या व व्यक्ती",
+            "06. पुरस्कार व सन्मान",
+            "07. अहवाल, निर्देशांक व क्रमवारी",
+            "08. कायडे, विधेयके व धोरणे",
+            "09. अर्थव्यवस्था व वित्त",
+            "10. विज्ञान व तंत्रज्ञान",
+            "11. पर्यावरण, हवामान व जैवविविधता",
+            "12. संरक्षण व सुरक्षा",
+            "13. क्रीडा घडामोडी",
+            "14. कला, संस्कृती, साहित्य व वारसा",
+            "15. सामाजिक क्षेत्र व मानवी विकास",
+            "16. संस्था व संघटना",
+            "17. समित्या, आयोग व उपक्रम",
+            "18. शिखर परिषदा, परिषद, संमेलने",
+            "19. महत्त्वाचे दिवस, सप्ताह व वर्षे",
+            "20. पुस्तके, लेखक व प्रकाशने",
+            "21. उल्लेखनीय व्यक्ती व निधन",
+            "22. महाराष्ट्र विशेष चालू घडामोडी",
+            "23. राष्ट्रीय व नागरी घडामोडी",
+            "24. करार, सामंजस्य करार व आंतरराष्ट्रीय सहकार्य",
+            "25. आपत्ती व आपत्ती व्यवस्थापन",
+            "26. विविध व विशेष चालू घडामोडी"
+        ];
+
+        // 1. सर्व बाह्य लिंक्स पूर्णपणे काढून टाकणे
+        function cleanUnwantedUrls(text) {
+            if (!text) return '';
+            // [Anchor](https://...) -> Anchor
+            let cleaned = text.replace(/\[([^\]]+)\]\(https?:\/\/[^\)]+\)/g, '$1');
+            // थेट https://... URLs काढून टाकणे
+            cleaned = cleaned.replace(/https?:\/\/[^\s\)\>]+/g, '');
+            return cleaned;
+        }
+
+        // 2. Markdown फाईल लोड करणे
+        async function fetchAndRenderNotes() {
+            const spinner = document.getElementById('loading-spinner');
+            const container = document.getElementById('notes-container');
+
+            try {
+                const response = await fetch('Current_Affairs_JAN26_2.md');
+                if (!response.ok) {
+                    throw new Error(`फाईल लोड करता आली नाही (Status: ${response.status})`);
+                }
+
+                const rawText = await response.text();
+                rawMarkdownContent = cleanUnwantedUrls(rawText);
+
+                // Build chapters
+                renderChapters(rawMarkdownContent);
+                buildIndexNav();
+                spinner.style.display = 'none';
+
+            } catch (error) {
+                spinner.innerHTML = `
+                    <div style="color: #b91c1c; padding: 20px; background: rgba(239, 68, 68, 0.08); border-radius: 8px;">
+                        <h3><i class="fas fa-exclamation-triangle"></i> फाईल लोड करताना त्रुटी आली</h3>
+                        <p style="font-size: 0.95rem; margin-top: 6px;">खात्री करा की <strong>Current_Affairs_JAN26_2.md</strong> ही फाईल याच फोल्डरमध्ये आहे.</p>
+                        <p style="font-size: 0.85rem; opacity: 0.8; margin-top: 4px;">Error: ${error.message}</p>
+                    </div>
+                `;
+            }
+        }
+
+        // 3. चॅप्टरनुसार विभाजन करून डिझाइन कार्ड्स तयार करणे
+        function renderChapters(markdownText) {
+            const container = document.getElementById('notes-container');
+            container.innerHTML = '';
+
+            // Split into chapters
+            const chapterChunks = markdownText.split(/(?=\*\*🟦 CURRENT AFFAIRS 2026\*\*\s*\n\s*\*\*January 2026 — Chapter|\*\*January 2026 — Chapter)/i);
+
+            chapterChunks.forEach((chunk, index) => {
+                if (!chunk.trim()) return;
+
+                const chapNum = (index + 1).toString().padStart(2, '0');
+                const section = document.createElement('section');
+                section.id = `chap-${chapNum}`;
+                section.className = 'content-section';
+
+                const bodyDiv = document.createElement('div');
+                bodyDiv.className = 'content-body';
+                
+                // Parse markdown
+                bodyDiv.innerHTML = marked.parse(chunk);
+
+                // Apply custom design wrappers for Traps, Favourites and Quick Revisions
+                applyDesignTransforms(bodyDiv);
+
+                section.appendChild(bodyDiv);
+                container.appendChild(section);
+            });
+        }
+
+        // 4. डिझाइननुसार बॉक्स-क्लासेस लावणे (.box-trap, .box-favourite, .box-revision)
+        function applyDesignTransforms(element) {
+            // Transform Blockquotes & Paragraphs
+            const allParagraphs = element.querySelectorAll('p, blockquote');
+            allParagraphs.forEach(p => {
+                const text = p.innerText || '';
+
+                if (text.includes('Exam Trap') || text.includes('MPSC Trap')) {
+                    const box = document.createElement('div');
+                    box.className = 'info-box box-trap';
+                    box.innerHTML = `<h4><i class="fas fa-exclamation-triangle"></i> Exam Trap / सावधगिरी</h4><div>${p.innerHTML}</div>`;
+                    p.replaceWith(box);
+                } else if (text.includes('MPSC Exam Points') || text.includes('MPSC Favourite') || text.includes('MPSC Focus')) {
+                    const box = document.createElement('div');
+                    box.className = 'info-box box-favourite';
+                    box.innerHTML = `<h4><i class="fas fa-fire"></i> MPSC Exam Points / Focus</h4><div>${p.innerHTML}</div>`;
+                    p.replaceWith(box);
+                } else if (text.includes('Quick Revision') || text.includes('One Page Revision')) {
+                    const box = document.createElement('div');
+                    box.className = 'info-box box-revision';
+                    box.innerHTML = `<h4><i class="fas fa-bolt"></i> Quick Revision (झटपट उजळणी)</h4><div>${p.innerHTML}</div>`;
+                    p.replaceWith(box);
+                }
+            });
+
+            // Table enhancement
+            const tables = element.querySelectorAll('table');
+            tables.forEach(table => {
+                table.className = 'data-table';
+                const wrapper = document.createElement('div');
+                wrapper.className = 'table-responsive';
+                table.parentNode.insertBefore(wrapper, table);
+                wrapper.appendChild(table);
+            });
+        }
+
+        // 5. Sticky अनुक्रमणिका (Index Links) तयार करणे
+        function buildIndexNav() {
+            const indexContainer = document.getElementById('index-links');
+            indexContainer.innerHTML = '';
+
+            chapterTitles.forEach((title, i) => {
+                const chapId = (i + 1).toString().padStart(2, '0');
+                const link = document.createElement('a');
+                link.href = `#chap-${chapId}`;
+                link.innerHTML = `<i class="far fa-bookmark" style="font-size:0.8rem; margin-right:4px;"></i> Ch ${title}`;
+                indexContainer.appendChild(link);
+            });
+        }
+
+        // 6. कीवर्ड सर्च
+        function searchNotes(query) {
+            const term = (query || '').trim().toLowerCase();
+            const sections = document.querySelectorAll('.content-section');
+
+            if (!term) {
+                sections.forEach(sec => sec.style.display = 'block');
+                return;
+            }
+
+            sections.forEach(sec => {
+                const text = sec.innerText.toLowerCase();
+                if (text.includes(term)) {
+                    sec.style.display = 'block';
+                } else {
+                    sec.style.display = 'none';
+                }
+            });
+        }
+
+        function resetFilter() {
+            document.getElementById('keyword-search').value = '';
+            searchNotes('');
+        }
+
+        // Theme Toggle
         function toggleTheme() {
             const body = document.body;
             const btn = document.getElementById('themeBtn');
@@ -1272,12 +523,15 @@
             document.getElementById('themeBtn').innerHTML = '<i class="fas fa-sun"></i>';
         }
 
-        // Navigation & Menu
+        // Mobile Menu
         function toggleMenu() {
             document.getElementById('mobileMenu').classList.toggle('active');
             document.getElementById('menuOverlay').classList.toggle('active');
         }
-        function openTelegram() { window.open('https://t.me/MPSCstudysphere', '_blank'); }
+
+        function openTelegram() {
+            window.open('https://t.me/MPSCstudysphere', '_blank');
+        }
 
         // Donation Logic
         const INTERNAL_UPI_ID = "vikram.joshi9089@oksbi"; 
@@ -1297,10 +551,13 @@
 
         function selectPresetAmount(amount) {
             selectedAmount = amount;
+            document.querySelectorAll('.amt-btn').forEach(btn => btn.classList.remove('selected'));
+            event.target.classList.add('selected');
             document.getElementById('customAmt').value = '';
             validateAmount();
         }
         function handleCustomAmount() {
+            document.querySelectorAll('.amt-btn').forEach(btn => btn.classList.remove('selected'));
             selectedAmount = parseFloat(document.getElementById('customAmt').value);
             validateAmount();
         }
@@ -1321,32 +578,27 @@
             }
         }
 
-        // PDF Generation Logic
+        // PDF Generation
         function downloadPDF() {
             const element = document.getElementById('pdf-wrapper');
-            const btn = document.getElementById('downloadBtn');
-            const originalText = btn.innerHTML;
-            
-            btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Generating PDF...';
-            btn.disabled = true;
-
-            // Adding pdf specific class to body for specific CSS overrides
-            document.body.classList.add('pdf-exporting');
+            element.classList.add('pdf-mode');
             
             const opt = {
-                margin:       [10, 10, 10, 10], // Margin
-                filename:     'StudySphere_Jan_2026_Current_Affairs.pdf',
+                margin:       8,
+                filename:     'MPSC_Group_C_Jan_2026_Current_Affairs.pdf',
                 image:        { type: 'jpeg', quality: 0.98 },
-                html2canvas:  { scale: 2, useCORS: true, windowWidth: 1000 },
+                html2canvas:  { scale: 2, useCORS: true, windowWidth: 1050 },
                 jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' }
             };
 
-            html2pdf().set(opt).from(element).save().then(() => {
-                document.body.classList.remove('pdf-exporting');
-                btn.innerHTML = originalText;
-                btn.disabled = false;
-            });
+            setTimeout(() => {
+                html2pdf().set(opt).from(element).save().then(() => {
+                    element.classList.remove('pdf-mode');
+                });
+            }, 400);
         }
+
+        window.addEventListener('DOMContentLoaded', fetchAndRenderNotes);
     </script>
 </body>
 </html>
