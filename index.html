@@ -85,12 +85,13 @@
         .breadcrumb { font-size: 0.9rem; margin-bottom: 1.2rem; opacity: 0.85; font-weight: 500; }
         .breadcrumb a { color: var(--primary-color); font-weight: 600; }
 
+        /* Mobile-safe controls card with zero horizontal overflow */
         .controls-card {
             background: var(--card-bg);
             border: 1px solid var(--border-color);
             border-radius: 12px;
             padding: 14px 16px;
-            margin-bottom: 22px;
+            margin-bottom: 20px;
             box-shadow: var(--box-shadow);
             display: flex;
             flex-direction: column;
@@ -99,6 +100,8 @@
             top: 65px;
             z-index: 80;
             width: 100%;
+            max-width: 100%;
+            overflow: hidden;
         }
 
         .select-group {
@@ -106,6 +109,7 @@
             flex-direction: column;
             gap: 6px;
             width: 100%;
+            max-width: 100%;
         }
 
         @media (min-width: 640px) {
@@ -126,9 +130,11 @@
             gap: 6px;
         }
 
+        /* Strictly contained dropdown preventing mobile overflow */
         .chapter-dropdown {
             width: 100%;
             max-width: 100%;
+            min-width: 0;
             padding: 10px 12px;
             border: 1px solid var(--border-color);
             border-radius: 8px;
@@ -142,6 +148,7 @@
             white-space: nowrap;
             overflow: hidden;
             display: block;
+            box-sizing: border-box;
         }
 
         .chapter-dropdown:focus {
@@ -152,10 +159,12 @@
         .search-input-box {
             position: relative;
             width: 100%;
+            max-width: 100%;
         }
 
         .search-input-box input {
             width: 100%;
+            max-width: 100%;
             padding: 9px 12px 9px 36px;
             border: 1px solid var(--border-color);
             border-radius: 8px;
@@ -163,6 +172,7 @@
             color: var(--text-color);
             font-size: 0.92rem;
             outline: none;
+            box-sizing: border-box;
         }
 
         .search-input-box input:focus {
@@ -177,6 +187,58 @@
             transform: translateY(-50%);
             opacity: 0.6;
             font-size: 0.9rem;
+        }
+
+        /* Welcome card shown when landing on chapter index */
+        .welcome-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+            box-shadow: var(--box-shadow);
+        }
+
+        .welcome-card h2 {
+            font-size: 1.25rem;
+            color: var(--primary-color);
+            margin-bottom: 8px;
+            font-weight: 800;
+        }
+
+        .welcome-card p {
+            font-size: 0.95rem;
+            opacity: 0.85;
+            margin-bottom: 16px;
+            font-weight: 400;
+        }
+
+        .btn-start-reading {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            padding: 11px 22px;
+            background: var(--primary-color);
+            color: #ffffff;
+            border: none;
+            border-radius: 8px;
+            font-size: 0.98rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: background 0.2s ease, transform 0.1s ease;
+            box-shadow: 0 2px 6px rgba(121, 85, 72, 0.25);
+        }
+
+        .btn-start-reading:hover {
+            background: var(--primary-hover);
+            transform: translateY(-1px);
+        }
+
+        [data-theme="dark"] .btn-start-reading {
+            color: #121212;
+            background: var(--primary-color);
         }
 
         .content-section { 
@@ -406,26 +468,6 @@
             }
         }
 
-        .btn-download { 
-            display: flex; 
-            align-items: center; 
-            justify-content: center; 
-            gap: 10px; 
-            width: 100%; 
-            padding: 13px; 
-            background: #2563eb; 
-            color: white; 
-            border: none; 
-            border-radius: 8px; 
-            font-size: 1rem; 
-            font-weight: 700; 
-            cursor: pointer; 
-            margin-top: 25px; 
-            transition: background 0.3s; 
-            box-shadow: 0 4px 6px rgba(37, 99, 235, 0.2); 
-        }
-        .btn-download:hover { background: #1d4ed8; }
-
         footer { background-color: var(--footer-bg); color: var(--footer-text); padding: 2.5rem 4% 1.5rem; margin-top: 40px; }
         .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 25px; max-width: 1000px; margin: 0 auto 1.5rem; }
         .footer-col h4 { color: white; font-size: 1.05rem; margin-bottom: 12px; font-weight: 700; }
@@ -503,15 +545,15 @@
     <main class="main-container">
         
         <div class="breadcrumb no-print">
-            <a href="#" onclick="showChapter(0)">Home</a> &nbsp; ❯ &nbsp; <span>Current Affairs</span> &nbsp; ❯ &nbsp; <span>2026</span> &nbsp; ❯ &nbsp; <strong>January (सर्व २६ घटक)</strong>
+            <a href="#" onclick="showChapter(0)">Home</a> &nbsp; ❯ &nbsp; <span>Current Affairs</span> &nbsp; ❯ &nbsp; <span>2026</span> &nbsp; ❯ &nbsp; <strong>January (२६ घटक)</strong>
         </div>
 
-        <div style="text-align: center; margin-bottom: 1.5rem;" class="no-print">
+        <div style="text-align: center; margin-bottom: 1.3rem;" class="no-print">
             <h1 style="font-size: 1.85rem; color: var(--primary-color); font-weight: 800; line-height: 1.3;">चालू घडामोडी - जानेवारी २०२६</h1>
-            <p style="opacity: 0.85; font-weight: 500; font-size: 0.95rem;">MPSC गट-क पूर्व + मुख्य परीक्षा एकात्मिक सखोल संकलन (Prelims + Mains Integrated)</p>
+            <p style="opacity: 0.85; font-weight: 500; font-size: 0.95rem;">MPSC गट-क पूर्व + मुख्य परीक्षा एकात्मिक सखोल संकलन</p>
         </div>
 
-        <!-- Dropdown & Search Controls (Mobile-safe width) -->
+        <!-- Strictly Mobile-Contained Dropdown & Search Controls -->
         <div class="controls-card no-print" id="controlsCard">
             <div class="select-group">
                 <label for="chapterDropdown"><i class="fas fa-book-open"></i> घटक निवडा:</label>
@@ -525,16 +567,23 @@
             </div>
         </div>
 
+        <!-- Initial Start Reading Card directly beneath Chapter Dropdown -->
+        <div class="welcome-card no-print" id="welcomeCard">
+            <h2><i class="fas fa-book-reader"></i> जानेवारी २०२६ चालू घडामोडी</h2>
+            <p>खालील बटणावर क्लिक करून घटक १ पासून अभ्यास सुरू करा किंवा वरील ड्रॉपडाउनमधून हवा तो घटक निवडा.</p>
+            <button class="btn-start-reading" onclick="startChapterOneReading()">
+                <i class="fas fa-arrow-right"></i> घटक ०१ नोट्स वाचा (Ch 01)
+            </button>
+        </div>
+
         <!-- Loading Spinner -->
         <div id="loading-spinner" class="content-section" style="text-align: center; padding: 3rem;">
             <i class="fas fa-circle-notch fa-spin fa-2x" style="color: var(--primary-color); margin-bottom: 12px;"></i>
             <p style="font-weight: 600;">Current_Affairs_JAN26_2.md फाईल लोड होत आहे...</p>
         </div>
 
-        <div id="pdf-wrapper">
-            <div id="notes-container">
-                <!-- Rendered chapters injected dynamically -->
-            </div>
+        <div id="notes-container">
+            <!-- Rendered single active chapter injected dynamically -->
         </div>
 
         <!-- Chapter Pagination Buttons (Previous / Next) -->
@@ -547,10 +596,6 @@
                 <span id="nextBtnText">पुढील घटक</span> <i class="fas fa-arrow-right"></i>
             </button>
         </div>
-
-        <button class="btn-download no-print" onclick="downloadPDF()">
-            <i class="fas fa-file-pdf"></i> सर्व २६ घटक PDF स्वरूपात डाऊनलोड करा
-        </button>
 
     </main>
 
@@ -778,12 +823,23 @@
             }
         }
 
+        // घटक १ वाचन सुरू करणे (Welcome Card लपवून Ch 1 वर जाणे)
+        function startChapterOneReading() {
+            const welcomeCard = document.getElementById('welcomeCard');
+            if (welcomeCard) welcomeCard.style.display = 'none';
+            showChapter(0);
+        }
+
         // 6. ठराविक घटक (Single Chapter) दाखवणे आणि वर स्क्रोल करणे
         function showChapter(index) {
             if (index < 0 || index >= totalChaptersCount) return;
             
             currentChapterIndex = index;
             isSearching = false;
+
+            // Welcome Card लपवणे
+            const welcomeCard = document.getElementById('welcomeCard');
+            if (welcomeCard) welcomeCard.style.display = 'none';
 
             const sections = document.querySelectorAll('#notes-container .content-section');
             sections.forEach((sec, i) => {
@@ -857,6 +913,7 @@
             const term = (query || '').trim().toLowerCase();
             const sections = document.querySelectorAll('#notes-container .content-section');
             const paginationBar = document.getElementById('chapterPagination');
+            const welcomeCard = document.getElementById('welcomeCard');
 
             if (!term) {
                 // शोध रिकामा केल्यास पुन्हा चालू चॅप्टरवर येणे
@@ -864,14 +921,13 @@
                 return;
             }
 
+            if (welcomeCard) welcomeCard.style.display = 'none';
             isSearching = true;
-            let matchCount = 0;
 
             sections.forEach(sec => {
                 const text = sec.innerText.toLowerCase();
                 if (text.includes(term)) {
                     sec.style.display = 'block';
-                    matchCount++;
                 } else {
                     sec.style.display = 'none';
                 }
