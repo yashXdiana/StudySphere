@@ -1,723 +1,1638 @@
 <!DOCTYPE html>
-<html lang="mr" class="h-full">
+<html lang="mr-IN" data-theme="light" data-font-size="medium" data-design="a">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
-    <title>MPSC गट-क (Group C) - परीक्षा ॲप</title>
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Yantramanav:wght@400;500;700;900&display=swap" rel="stylesheet">
-    
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        sans: ['"Yantramanav"', '"Plus Jakarta Sans"', 'sans-serif'],
-                        mono: ['"Plus Jakarta Sans"', 'monospace'],
-                    },
-                    colors: {
-                        brand: {
-                            50: '#fff7ed',
-                            100: '#ffedd5',
-                            500: '#f97316',
-                            600: '#ea580c',
-                            700: '#c2410c',
-                            900: '#7c2d12',
-                        },
-                        navy: {
-                            800: '#1e293b',
-                            900: '#0f172a',
-                            950: '#020617',
-                        }
-                    }
-                }
-            }
-        }
-    </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StudySphere — MPSC Group C 2026 Home Page Concepts</title>
 
-    <style>
-        /* Mobile App Viewport Lock - strictly prevent bounce and outer scroll */
-        html, body {
-            height: 100%;
-            height: 100dvh;
-            width: 100vw;
-            overflow: hidden;
-            position: fixed;
-            touch-action: manipulation;
-            -webkit-tap-highlight-color: transparent;
-            user-select: none;
-            -webkit-user-select: none;
-        }
+  <!-- Mukta font for authentic, humanist Devanagari (Marathi) and Latin (English) rendering -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;500;600;700;800&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-        /* Allow smooth scrolling inside dedicated content containers only */
-        .app-scroll-content {
-            overflow-y: auto;
-            -webkit-overflow-scrolling: touch;
-            overscroll-behavior-y: contain;
-        }
+  <style>
+    /* ==========================================================================
+       1. GLOBAL TOKENS & DYNAMIC THEMES
+       ========================================================================== */
+    :root {
+      /* Shared Spacing */
+      --sp-xs: 0.25rem;
+      --sp-sm: 0.5rem;
+      --sp-md: 1rem;
+      --sp-lg: 1.5rem;
+      --sp-xl: 2rem;
+      --sp-2xl: 3rem;
 
-        /* Hide scrollbars for clean native app appearance */
-        .no-scrollbar::-webkit-scrollbar {
-            display: none;
-        }
-        .no-scrollbar {
-            -ms-overflow-style: none;
-            scrollbar-width: none;
-        }
-    </style>
+      /* Shared Typography Scaling Factor */
+      --fs-ratio: 1rem;
+      --fs-xs: calc(var(--fs-ratio) * 0.78);
+      --fs-sm: calc(var(--fs-ratio) * 0.88);
+      --fs-base: calc(var(--fs-ratio) * 1);
+      --fs-md: calc(var(--fs-ratio) * 1.15);
+      --fs-lg: calc(var(--fs-ratio) * 1.35);
+      --fs-xl: calc(var(--fs-ratio) * 1.68);
+      --fs-2xl: calc(var(--fs-ratio) * 2.2);
+
+      --max-w: 1200px;
+      --header-h: 62px;
+      --transition: 200ms ease;
+
+      /* Base Academic Light */
+      --bg: #F7F5F2;
+      --surface: #FFFFFF;
+      --surface-subtle: #F0EDE8;
+      --text: #252525;
+      --text-muted: #6B6B6B;
+      --text-dim: #949089;
+      --border: #E5E1DC;
+      --border-subtle: #ECE8E3;
+      --accent: #54382A;
+      --accent-hover: #402A1F;
+      --accent-tint: #F3ECE6;
+      --accent-glow: rgba(84, 56, 42, 0.12);
+      --shadow-sm: 0 2px 5px rgba(37, 37, 37, 0.04);
+      --shadow-card: 0 4px 14px rgba(37, 37, 37, 0.05);
+
+      /* Typography */
+      --font-main: 'Mukta', sans-serif;
+      --font-display: 'Mukta', sans-serif;
+    }
+
+    /* Charcoal Dark Mode (Comfortable for long study hours, no pure black) */
+    [data-theme="dark"] {
+      --bg: #181716;
+      --surface: #22201D;
+      --surface-subtle: #292724;
+      --text: #EDEAE5;
+      --text-muted: #A39F99;
+      --text-dim: #75716C;
+      --border: #33302B;
+      --border-subtle: #2B2824;
+      --accent: #C5A483;
+      --accent-hover: #D7BD9F;
+      --accent-tint: #2B231B;
+      --accent-glow: rgba(197, 164, 131, 0.18);
+      --shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.25);
+      --shadow-card: 0 4px 16px rgba(0, 0, 0, 0.35);
+    }
+
+    /* Dynamic font size tier multipliers */
+    [data-font-size="small"] { --fs-ratio: 0.90rem; }
+    [data-font-size="medium"] { --fs-ratio: 1.00rem; }
+    [data-font-size="large"] { --fs-ratio: 1.15rem; }
+
+    /* ==========================================================================
+       DESIGN A: CLEAN ACADEMIC
+       Feeling: "A comfortable digital study desk"
+       Warm tone, classic card borders, centered stability, understated tags.
+       ========================================================================== */
+    [data-design="a"] {
+      --font-main: 'Mukta', sans-serif;
+      --font-display: 'Mukta', sans-serif;
+      --radius-card: 10px;
+      --radius-sm: 6px;
+      --radius-pill: 9999px;
+    }
+
+    [data-design="a"] .site-header {
+      border-bottom: 1px solid var(--border);
+      background-color: var(--surface);
+    }
+
+    [data-design="a"] .hero-box {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-card);
+      padding: var(--sp-xl);
+      margin-bottom: var(--sp-2xl);
+    }
+
+    [data-design="a"] .hero-badge {
+      display: inline-block;
+      font-size: var(--fs-xs);
+      font-weight: 700;
+      color: var(--accent);
+      background: var(--accent-tint);
+      padding: 3px 10px;
+      border-radius: var(--radius-pill);
+      margin-bottom: var(--sp-xs);
+      letter-spacing: 0.04em;
+    }
+
+    [data-design="a"] .section-heading {
+      font-size: var(--fs-lg);
+      font-weight: 700;
+      border-bottom: 1.5px solid var(--border);
+      padding-bottom: var(--sp-sm);
+      margin-bottom: var(--sp-md);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    [data-design="a"] .sub-heading {
+      font-size: var(--fs-md);
+      font-weight: 600;
+      color: var(--text-muted);
+      margin: var(--sp-lg) 0 var(--sp-sm);
+    }
+
+    [data-design="a"] .subj-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-card);
+      padding: 14px 18px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      transition: all var(--transition);
+      cursor: pointer;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    [data-design="a"] .subj-card:hover {
+      border-color: var(--accent);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-sm);
+    }
+
+    [data-design="a"] .card-icon-wrapper {
+      width: 42px;
+      height: 42px;
+      border-radius: var(--radius-sm);
+      background: var(--surface-subtle);
+      color: var(--accent);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      transition: background var(--transition);
+    }
+
+    [data-design="a"] .subj-card:hover .card-icon-wrapper {
+      background: var(--accent-tint);
+    }
+
+    [data-design="a"] .quiz-combine-card {
+      background: var(--surface);
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius-card);
+      padding: var(--sp-lg);
+      display: flex;
+      align-items: center;
+      gap: var(--sp-md);
+      cursor: pointer;
+      transition: all var(--transition);
+      text-decoration: none;
+      color: inherit;
+    }
+
+    [data-design="a"] .quiz-combine-card:hover {
+      border-color: var(--accent);
+      box-shadow: var(--shadow-card);
+      transform: translateY(-2px);
+    }
+
+    /* ==========================================================================
+       DESIGN B: MODERN DASHBOARD
+       Feeling: "Organized, focused test preparatory command center"
+       Structured grids, accent left borders, pill icons, micro-badges.
+       ========================================================================== */
+    [data-design="b"] {
+      --font-main: 'Plus Jakarta Sans', 'Mukta', sans-serif;
+      --font-display: 'Plus Jakarta Sans', 'Mukta', sans-serif;
+      --radius-card: 12px;
+      --radius-sm: 8px;
+      --radius-pill: 9999px;
+    }
+
+    [data-design="b"] .site-header {
+      border-bottom: 2px solid var(--border);
+      background-color: var(--surface);
+      box-shadow: var(--shadow-sm);
+    }
+
+    [data-design="b"] .hero-box {
+      background: linear-gradient(135deg, var(--surface) 0%, var(--surface-subtle) 100%);
+      border: 1px solid var(--border);
+      border-left: 6px solid var(--accent);
+      border-radius: var(--radius-card);
+      padding: var(--sp-xl);
+      margin-bottom: var(--sp-2xl);
+      box-shadow: var(--shadow-sm);
+    }
+
+    [data-design="b"] .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: var(--fs-xs);
+      font-weight: 700;
+      color: #FFFFFF;
+      background: var(--accent);
+      padding: 4px 12px;
+      border-radius: var(--radius-sm);
+      margin-bottom: var(--sp-sm);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    [data-design="b"] .section-heading {
+      font-size: var(--fs-lg);
+      font-weight: 800;
+      letter-spacing: -0.01em;
+      margin-bottom: var(--sp-md);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    [data-design="b"] .section-heading::before {
+      content: '';
+      display: inline-block;
+      width: 4px;
+      height: 20px;
+      background: var(--accent);
+      border-radius: 2px;
+    }
+
+    [data-design="b"] .sub-heading {
+      display: inline-block;
+      font-size: var(--fs-sm);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--accent);
+      background: var(--accent-tint);
+      padding: 4px 10px;
+      border-radius: var(--radius-sm);
+      margin: var(--sp-lg) 0 var(--sp-sm);
+    }
+
+    [data-design="b"] .subj-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-card);
+      padding: 16px 20px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      transition: all var(--transition);
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    [data-design="b"] .subj-card::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 0px;
+      background: var(--accent);
+      transition: width var(--transition);
+    }
+
+    [data-design="b"] .subj-card:hover {
+      border-color: var(--accent);
+      box-shadow: var(--shadow-card);
+      transform: translateY(-3px);
+    }
+
+    [data-design="b"] .subj-card:hover::after {
+      width: 4px;
+    }
+
+    [data-design="b"] .card-icon-wrapper {
+      width: 44px;
+      height: 44px;
+      border-radius: var(--radius-sm);
+      background: var(--accent-tint);
+      color: var(--accent);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    [data-design="b"] .quiz-combine-card {
+      background: var(--surface);
+      border: 2px solid var(--border);
+      border-radius: var(--radius-card);
+      padding: var(--sp-lg);
+      display: flex;
+      align-items: center;
+      gap: var(--sp-md);
+      cursor: pointer;
+      position: relative;
+      transition: all var(--transition);
+      text-decoration: none;
+      color: inherit;
+      box-shadow: var(--shadow-sm);
+    }
+
+    [data-design="b"] .quiz-combine-card:hover {
+      border-color: var(--accent);
+      box-shadow: 0 8px 24px var(--accent-glow);
+      transform: translateY(-3px);
+    }
+
+    /* ==========================================================================
+       DESIGN C: PREMIUM MINIMAL
+       Feeling: "Elegant, spacious, editorial academic repository"
+       Understated hairline borders, airy margins, refined typography, quiet focus.
+       ========================================================================== */
+    [data-design="c"] {
+      --font-main: 'Mukta', sans-serif;
+      --font-display: 'Newsreader', serif;
+      --radius-card: 4px;
+      --radius-sm: 4px;
+      --radius-pill: 4px;
+      --bg: #FBF9F6;
+    }
+
+    [data-design="c"][data-theme="dark"] {
+      --bg: #141312;
+      --surface: #1C1B19;
+      --border: #292724;
+    }
+
+    [data-design="c"] .site-header {
+      border-bottom: 1px solid var(--border-subtle);
+      background-color: var(--bg);
+    }
+
+    [data-design="c"] .hero-box {
+      background: transparent;
+      border: none;
+      border-bottom: 1px solid var(--border);
+      border-radius: 0;
+      padding: var(--sp-xl) 0 var(--sp-2xl);
+      margin-bottom: var(--sp-2xl);
+    }
+
+    [data-design="c"] .hero-badge {
+      display: inline-block;
+      font-size: var(--fs-xs);
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--text-dim);
+      margin-bottom: var(--sp-xs);
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 2px;
+    }
+
+    [data-design="c"] .hero-title {
+      font-family: var(--font-display);
+      font-size: calc(var(--fs-2xl) * 1.15);
+      font-weight: 400;
+      letter-spacing: -0.02em;
+    }
+
+    [data-design="c"] .section-heading {
+      font-family: var(--font-display);
+      font-size: calc(var(--fs-xl) * 1.1);
+      font-weight: 400;
+      color: var(--text);
+      letter-spacing: -0.01em;
+      margin-bottom: var(--sp-lg);
+    }
+
+    [data-design="c"] .sub-heading {
+      font-size: var(--fs-sm);
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--text-dim);
+      margin: var(--sp-xl) 0 var(--sp-sm);
+    }
+
+    [data-design="c"] .subj-card {
+      background: var(--surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-card);
+      padding: 18px 22px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      transition: all var(--transition);
+      cursor: pointer;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    [data-design="c"] .subj-card:hover {
+      border-color: var(--text-muted);
+      background-color: var(--surface-subtle);
+      transform: none;
+      box-shadow: none;
+    }
+
+    [data-design="c"] .card-icon-wrapper {
+      width: 36px;
+      height: 36px;
+      border-radius: var(--radius-card);
+      background: transparent;
+      color: var(--text-muted);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      border: 1px solid var(--border-subtle);
+    }
+
+    [data-design="c"] .subj-card:hover .card-icon-wrapper {
+      color: var(--text);
+      border-color: var(--text-muted);
+    }
+
+    [data-design="c"] .quiz-combine-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-card);
+      padding: var(--sp-xl);
+      display: flex;
+      align-items: center;
+      gap: var(--sp-lg);
+      cursor: pointer;
+      transition: all var(--transition);
+      text-decoration: none;
+      color: inherit;
+    }
+
+    [data-design="c"] .quiz-combine-card:hover {
+      border-color: var(--text);
+      background-color: var(--surface-subtle);
+      transform: none;
+    }
+
+    /* ==========================================================================
+       2. BASE RESET & SHARED LAYOUT
+       ========================================================================== */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      font-family: var(--font-main);
+      font-size: 16px;
+      line-height: 1.5;
+      background-color: var(--bg);
+      color: var(--text);
+      -webkit-font-smoothing: antialiased;
+      transition: background-color var(--transition), color var(--transition);
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      overflow-x: hidden;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button {
+      font-family: inherit;
+      cursor: pointer;
+      border: none;
+      background: none;
+      color: inherit;
+    }
+
+    :focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 3px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 0 var(--sp-md);
+    }
+
+    /* Top Concept Comparison Switcher (For user evaluation) */
+    .concept-switch-bar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: #111111;
+      color: #FFFFFF;
+      padding: 8px 12px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      font-size: 0.8rem;
+      border-bottom: 1px solid #333333;
+    }
+
+    .switch-label {
+      font-weight: 700;
+      color: #D7BD9F;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      white-space: nowrap;
+    }
+
+    .switch-pills {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      overflow-x: auto;
+      padding-bottom: 2px;
+    }
+
+    .switch-pill {
+      background: #252525;
+      color: #A3A3A3;
+      border: 1px solid #3A3A3A;
+      border-radius: 4px;
+      padding: 4px 10px;
+      font-size: 0.76rem;
+      font-weight: 600;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: all 150ms ease;
+    }
+
+    .switch-pill:hover {
+      color: #FFFFFF;
+      border-color: #666666;
+    }
+
+    .switch-pill.active {
+      background: #C5A483;
+      color: #111111;
+      border-color: #C5A483;
+      font-weight: 700;
+    }
+
+    /* ==========================================================================
+       3. SITE HEADER (DESKTOP & MOBILE COMPACT)
+       ========================================================================== */
+    .site-header {
+      position: sticky;
+      top: 37px; /* sits right beneath experiment bar */
+      z-index: 90;
+      height: var(--header-h);
+      transition: background-color var(--transition), border var(--transition);
+    }
+
+    .header-inner {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--sp-md);
+    }
+
+    /* StudySphere Brand Logo */
+    .brand-logo {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-size: var(--fs-md);
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      color: var(--text);
+    }
+
+    .brand-emblem {
+      width: 34px;
+      height: 34px;
+      border-radius: var(--radius-sm);
+      background: var(--accent);
+      color: #FFFFFF;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    [data-theme="dark"] .brand-emblem {
+      color: #181716;
+    }
+
+    /* Desktop Navigation links */
+    .desktop-nav {
+      display: none;
+      align-items: center;
+      gap: var(--sp-lg);
+    }
+
+    .nav-item {
+      font-size: var(--fs-sm);
+      font-weight: 600;
+      color: var(--text-muted);
+      padding: var(--sp-xs) var(--sp-sm);
+      border-radius: var(--radius-sm);
+      transition: color var(--transition);
+    }
+
+    .nav-item:hover, .nav-item.active {
+      color: var(--text);
+    }
+
+    /* Utility actions */
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: var(--sp-sm);
+    }
+
+    .btn-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 14px;
+      border-radius: var(--radius-pill);
+      font-size: var(--fs-xs);
+      font-weight: 600;
+      border: 1px solid var(--border);
+      background: var(--surface);
+      color: var(--text);
+      transition: all var(--transition);
+      height: 34px;
+      white-space: nowrap;
+    }
+
+    .btn-pill:hover {
+      border-color: var(--text-muted);
+    }
+
+    .btn-donate {
+      background: var(--accent-tint);
+      color: var(--accent);
+      border-color: var(--border);
+    }
+
+    .btn-donate:hover {
+      background: var(--accent);
+      color: #FFFFFF;
+      border-color: var(--accent);
+    }
+
+    /* Single-button compact controls */
+    .icon-btn {
+      width: 36px;
+      height: 36px;
+      border-radius: var(--radius-sm);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid var(--border);
+      background: var(--surface);
+      color: var(--text-muted);
+      font-size: var(--fs-sm);
+      font-weight: 700;
+      transition: all var(--transition);
+      flex-shrink: 0;
+    }
+
+    .icon-btn:hover {
+      color: var(--text);
+      border-color: var(--text-muted);
+    }
+
+    /* Mobile Header Layout:
+       [Font Size] [Theme] [Logo/StudySphere] [Menu]
+       Font Size is positioned strictly to the left of the Theme toggle button. */
+    .mobile-header-bar {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .mobile-left-controls {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    @media (min-width: 900px) {
+      .mobile-header-bar { display: none !important; }
+      .desktop-nav { display: flex; }
+      .desktop-actions { display: flex !important; }
+    }
+
+    @media (max-width: 899px) {
+      .desktop-nav, .desktop-actions { display: none !important; }
+    }
+
+    /* ==========================================================================
+       4. MOBILE NAVIGATION DRAWER
+       ========================================================================== */
+    .drawer-scrim {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(2px);
+      z-index: 200;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity var(--transition);
+    }
+
+    .drawer-scrim.open {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .mobile-drawer {
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: min(65vw, 320px);
+      height: 100%;
+      background: var(--surface);
+      border-left: 1px solid var(--border);
+      z-index: 210;
+      transform: translateX(100%);
+      transition: transform var(--transition) cubic-bezier(0.16, 1, 0.3, 1);
+      display: flex;
+      flex-direction: column;
+      padding: var(--sp-lg) var(--sp-md);
+      box-shadow: var(--shadow-card);
+    }
+
+    .mobile-drawer.open {
+      transform: translateX(0);
+    }
+
+    .drawer-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: var(--sp-md);
+      margin-bottom: var(--sp-md);
+    }
+
+    .drawer-links {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      flex: 1;
+    }
+
+    .drawer-links a {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 10px 12px;
+      border-radius: var(--radius-sm);
+      font-size: var(--fs-base);
+      font-weight: 600;
+      color: var(--text);
+      transition: background var(--transition);
+    }
+
+    .drawer-links a:hover {
+      background: var(--surface-subtle);
+    }
+
+    .drawer-foot {
+      padding-top: var(--sp-md);
+      border-top: 1px solid var(--border);
+      display: flex;
+      flex-direction: column;
+      gap: var(--sp-sm);
+    }
+
+    /* ==========================================================================
+       5. CONTENT SECTIONS & RESPONSIVE GRIDS
+       ========================================================================== */
+    .main-body {
+      flex: 1;
+      padding-top: var(--sp-xl);
+      padding-bottom: var(--sp-2xl);
+    }
+
+    .hero-title {
+      font-size: var(--fs-xl);
+      font-weight: 800;
+      line-height: 1.22;
+      color: var(--text);
+      margin-bottom: var(--sp-xs);
+    }
+
+    .hero-desc {
+      font-size: var(--fs-base);
+      color: var(--text-muted);
+      max-width: 680px;
+      line-height: 1.5;
+    }
+
+    .content-section {
+      margin-bottom: var(--sp-2xl);
+    }
+
+    /* Grid Specification:
+       Desktop: 3–4 columns
+       Tablet: 2 columns
+       Mobile: 1 column */
+    .grid-subjects {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--sp-md);
+    }
+
+    @media (min-width: 640px) {
+      .grid-subjects {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .grid-subjects {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    @media (min-width: 1240px) {
+      .grid-subjects.grid-4 {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+
+    /* Subject Card Details:
+       English name first, Marathi name second (smaller, no brackets).
+       Arrow on right. Entire card clickable. */
+    .subj-info {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .subj-en {
+      font-size: var(--fs-base);
+      font-weight: 600;
+      color: var(--text);
+      line-height: 1.3;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .subj-mr {
+      font-size: var(--fs-sm);
+      color: var(--text-muted);
+      font-weight: 400;
+      line-height: 1.25;
+      margin-top: 2px;
+    }
+
+    .subj-arrow {
+      color: var(--text-dim);
+      font-size: var(--fs-md);
+      transition: transform var(--transition), color var(--transition);
+      flex-shrink: 0;
+    }
+
+    .subj-card:hover .subj-arrow {
+      color: var(--accent);
+      transform: translateX(3px);
+    }
+
+    /* Combine Quizzes Grid (2 prominent homepage cards) */
+    .grid-combine {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--sp-md);
+    }
+
+    @media (min-width: 768px) {
+      .grid-combine {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    .combine-emblem {
+      width: 52px;
+      height: 52px;
+      border-radius: var(--radius-sm);
+      background: var(--accent-tint);
+      color: var(--accent);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .combine-title {
+      font-size: var(--fs-md);
+      font-weight: 700;
+      color: var(--text);
+      margin: 2px 0;
+    }
+
+    .combine-pill {
+      display: inline-block;
+      font-size: var(--fs-xs);
+      font-weight: 700;
+      color: var(--accent);
+      background: var(--surface-subtle);
+      padding: 3px 8px;
+      border-radius: var(--radius-sm);
+      margin-top: 4px;
+    }
+
+    /* ==========================================================================
+       6. SITE FOOTER
+       ========================================================================== */
+    .site-footer {
+      background: var(--surface);
+      border-top: 1px solid var(--border);
+      padding: var(--sp-2xl) 0 var(--sp-xl);
+      margin-top: auto;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--sp-xl);
+    }
+
+    @media (min-width: 768px) {
+      .footer-grid {
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+      }
+    }
+
+    .footer-brand {
+      font-size: var(--fs-lg);
+      font-weight: 800;
+      color: var(--text);
+      margin-bottom: 6px;
+    }
+
+    .footer-lead {
+      font-size: var(--fs-sm);
+      color: var(--text-muted);
+      line-height: 1.5;
+      max-width: 320px;
+    }
+
+    .footer-title {
+      font-size: var(--fs-sm);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text);
+      margin-bottom: var(--sp-md);
+    }
+
+    .footer-nav {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: var(--sp-xs);
+    }
+
+    .footer-nav a {
+      font-size: var(--fs-sm);
+      color: var(--text-muted);
+      transition: color var(--transition);
+    }
+
+    .footer-nav a:hover {
+      color: var(--accent);
+    }
+
+    .footer-copyright {
+      margin-top: var(--sp-2xl);
+      padding-top: var(--sp-md);
+      border-top: 1px solid var(--border-subtle);
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      font-size: var(--fs-xs);
+      color: var(--text-dim);
+    }
+  </style>
 </head>
+<body>
 
-<body class="bg-slate-100 text-slate-800 font-sans flex flex-col justify-between antialiased">
+  <!-- ==========================================================================
+       EXPERIMENT CONTROLLER BAR (Allows instant visual comparison of A, B & C)
+       ========================================================================== -->
+  <aside class="concept-switch-bar" aria-label="Design Experiment Selector">
+    <div class="switch-label">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+      Concept Preview:
+    </div>
+    <div class="switch-pills">
+      <button class="switch-pill active" onclick="setDesignConcept('a', this)">Design A — Clean Academic</button>
+      <button class="switch-pill" onclick="setDesignConcept('b', this)">Design B — Modern Dashboard</button>
+      <button class="switch-pill" onclick="setDesignConcept('c', this)">Design C — Premium Minimal</button>
+    </div>
+  </aside>
 
-    <!-- Top App Bar (Header) -->
-    <header class="h-14 sm:h-16 bg-navy-950 text-white flex items-center justify-between px-4 sm:px-6 shadow-md shrink-0 z-40">
-        <div class="flex items-center space-x-2.5">
-            <div class="w-8 h-8 sm:w-9 sm:h-9 rounded-xl bg-gradient-to-tr from-brand-600 to-amber-500 flex items-center justify-center font-black text-white text-sm sm:text-base shadow-sm">
-                C
-            </div>
-            <div>
-                <h1 class="font-extrabold text-sm sm:text-base tracking-wide leading-none text-white">MPSC गट-क</h1>
-                <p class="text-[10px] sm:text-xs text-orange-400 font-semibold tracking-wider mt-0.5">सराव परीक्षा २०२६</p>
-            </div>
+  <!-- ==========================================================================
+       HEADER (DESKTOP + MOBILE)
+       ========================================================================== -->
+  <header class="site-header">
+    <div class="container header-inner">
+
+      <!-- MOBILE HEADER: [Font Size] [Theme] [Logo/StudySphere] [Menu] -->
+      <div class="mobile-header-bar">
+        <div class="mobile-left-controls">
+          <!-- Font size control strictly to the left of the theme control -->
+          <button id="mobileFontBtn" class="icon-btn" aria-label="Cycle Font Size" title="Font Size: Medium">A</button>
+          <!-- Theme control -->
+          <button id="mobileThemeBtn" class="icon-btn" aria-label="Toggle Dark/Light Mode" title="Toggle Theme">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          </button>
         </div>
 
-        <!-- Right Side Header Status -->
-        <div class="flex items-center gap-2">
-            <span id="active-track-badge" class="px-2.5 py-1 rounded-full text-[11px] font-bold bg-white/10 text-slate-200 border border-white/10">
-                पूर्व परीक्षा
-            </span>
-            <button onclick="toggleTrack()" class="px-2.5 py-1 text-[11px] font-bold rounded-lg bg-brand-600 hover:bg-brand-500 text-white transition active:scale-95">
-                बदला 🔁
-            </button>
-        </div>
-    </header>
+        <a href="#" class="brand-logo" title="StudySphere Home">
+          <div class="brand-emblem">
+            <!-- Open Book + Checkmark Sphere Logo -->
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+              <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+              <path d="m9 11 2 2 4-4"></path>
+            </svg>
+          </div>
+          <span>StudySphere</span>
+        </a>
 
-    <main class="flex-1 w-full max-w-4xl mx-auto h-[calc(100dvh-7rem)] sm:h-[calc(100dvh-7.5rem)] relative overflow-hidden flex flex-col">
-
-        <!-- VIEW 1: HOME & SUBJECT SELECTOR -->
-        <div id="screen-home" class="flex-1 h-full flex flex-col app-scroll-content no-scrollbar p-3.5 sm:p-5 space-y-4">
-            
-            <!-- Exam Mode Tabs (Prelims vs Mains) -->
-            <div class="bg-white p-1 rounded-2xl border border-slate-200 shadow-xs grid grid-cols-2 gap-1 shrink-0">
-                <button id="tab-prelims" onclick="switchTrack('prelims')" class="py-2 rounded-xl text-xs sm:text-sm font-black transition text-white bg-navy-900 shadow-sm">
-                    🎯 पूर्व परीक्षा (Prelims)
-                </button>
-                <button id="tab-mains" onclick="switchTrack('mains')" class="py-2 rounded-xl text-xs sm:text-sm font-black transition text-slate-600 hover:text-navy-950">
-                    🏆 मुख्य परीक्षा (Mains)
-                </button>
-            </div>
-
-            <!-- Quick Start Banner -->
-            <div class="bg-gradient-to-r from-navy-900 via-indigo-950 to-navy-900 text-white rounded-2xl p-4 sm:p-5 shadow-sm shrink-0 flex items-center justify-between">
-                <div class="space-y-1">
-                    <span class="inline-block text-[10px] font-bold uppercase tracking-wider text-orange-400 bg-orange-400/10 px-2 py-0.5 rounded">
-                        Full Practice Test
-                    </span>
-                    <h2 class="text-base sm:text-xl font-bold">सर्व विषयांची संपूर्ण टेस्ट</h2>
-                    <p class="text-xs text-slate-300">१/४ निगेटिव्ह गुणांकनासह रिअल टेस्ट द्या.</p>
-                </div>
-                <button onclick="startTest('ALL')" class="bg-brand-600 hover:bg-brand-500 active:scale-95 text-white font-bold text-xs sm:text-sm px-4 py-2.5 rounded-xl shadow-md transition">
-                    सुरू करा 🚀
-                </button>
-            </div>
-
-            <div class="flex-1 space-y-2">
-                <div class="flex items-center justify-between px-1">
-                    <h3 class="text-xs sm:text-sm font-bold text-slate-700 uppercase tracking-wider" id="subject-list-heading">
-                        पूर्व परीक्षेचे विषय (Prelims Subjects)
-                    </h3>
-                    <span class="text-[11px] font-semibold text-slate-400" id="subject-count-info">७ विषय</span>
-                </div>
-
-                <!-- Subject Cards Container -->
-                <div id="subjects-container" class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 pb-6">
-                    <!-- Dynamic rendering by JS based on user syllabus -->
-                </div>
-            </div>
-        </div>
-
-        <!-- VIEW 2: QUIZ / TEST SCREEN -->
-        <div id="screen-quiz" class="hidden flex-1 h-full flex flex-col justify-between bg-white sm:rounded-2xl sm:my-2 sm:border sm:border-slate-200 sm:shadow-sm overflow-hidden">
-            
-            <!-- Quiz Sub-Header (Progress + Timer) -->
-            <div class="px-4 py-3 bg-slate-50 border-b border-slate-200 flex items-center justify-between shrink-0">
-                <div class="flex items-center space-x-2">
-                    <span id="quiz-subject-pill" class="text-[11px] font-bold bg-orange-100 text-orange-800 px-2.5 py-0.5 rounded-full">
-                        विषय
-                    </span>
-                    <span class="text-xs font-bold text-slate-600">
-                        प्र. <span id="q-curr-index" class="text-brand-600 font-extrabold text-sm">1</span>/<span id="q-total-count">5</span>
-                    </span>
-                </div>
-
-                <!-- Countdown Timer -->
-                <div class="flex items-center gap-1.5 px-3 py-1 bg-white border border-slate-200 rounded-xl shadow-2xs font-mono font-bold text-xs text-slate-800">
-                    <span class="inline-block w-2 h-2 rounded-full bg-emerald-500 animate-ping"></span>
-                    <span id="quiz-timer">00:00</span>
-                </div>
-
-                <button onclick="quitTest()" class="text-xs font-semibold text-rose-600 hover:text-rose-700 px-2 py-1 rounded">
-                    थांबवा ✕
-                </button>
-            </div>
-
-            <!-- Quiz Progress Bar -->
-            <div class="w-full bg-slate-200 h-1 shrink-0">
-                <div id="quiz-progress-fill" class="bg-brand-600 h-1 transition-all duration-300" style="width: 20%;"></div>
-            </div>
-
-            <!-- Question and Options (Scrollable area inside locked screen) -->
-            <div class="flex-1 app-scroll-content p-4 sm:p-6 space-y-5">
-                <div class="flex items-start gap-2">
-                    <span class="w-6 h-6 rounded-md bg-slate-100 text-slate-700 text-xs font-bold flex items-center justify-center shrink-0 mt-0.5" id="q-badge-num">
-                        1
-                    </span>
-                    <h3 id="q-question-text" class="text-base sm:text-lg font-bold text-slate-900 leading-snug">
-                        येथे प्रश्न दिसेल...
-                    </h3>
-                </div>
-
-                <!-- 4 Options List -->
-                <div id="options-list" class="space-y-2.5 pt-1">
-                    <!-- Injected dynamically -->
-                </div>
-            </div>
-
-            <!-- Quiz Bottom Action Bar -->
-            <div class="p-3 sm:p-4 bg-slate-50 border-t border-slate-200 flex items-center justify-between gap-3 shrink-0">
-                <button id="btn-prev-q" onclick="navigateQuestion(-1)" class="px-4 py-2.5 text-xs font-bold rounded-xl border border-slate-200 text-slate-600 bg-white hover:bg-slate-100 active:scale-95 transition disabled:opacity-30 disabled:pointer-events-none">
-                    ← मागे
-                </button>
-
-                <button onclick="clearCurrentSelection()" class="text-xs font-semibold text-slate-400 hover:text-slate-600">
-                    खोडा
-                </button>
-
-                <button id="btn-next-q" onclick="navigateQuestion(1)" class="px-5 py-2.5 text-xs font-bold rounded-xl bg-navy-900 hover:bg-navy-800 text-white active:scale-95 shadow-xs transition">
-                    पुढे →
-                </button>
-            </div>
-        </div>
-
-        <!-- VIEW 3: RESULT & EXPLANATION SCREEN -->
-        <div id="screen-result" class="hidden flex-1 h-full flex flex-col app-scroll-content no-scrollbar p-4 space-y-4">
-            
-            <!-- Result Summary Card -->
-            <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-xs text-center space-y-4">
-                <div class="inline-flex p-3 rounded-2xl bg-orange-50 text-brand-600 text-2xl shadow-inner">
-                    🎯
-                </div>
-                <div>
-                    <h3 class="text-xl font-black text-slate-900">तुमचा निकाल (Result)</h3>
-                    <p class="text-xs text-slate-500">MPSC ०.२५ निगेटिव्ह मार्किंगनुसार</p>
-                </div>
-
-                <!-- Score Grid -->
-                <div class="grid grid-cols-4 gap-2 pt-1 text-center">
-                    <div class="bg-slate-50 p-2.5 rounded-xl border border-slate-100">
-                        <span class="text-[10px] font-bold text-slate-500 block">गुण</span>
-                        <span id="res-score" class="text-lg font-black text-brand-600">0.00</span>
-                    </div>
-                    <div class="bg-emerald-50 p-2.5 rounded-xl border border-emerald-100">
-                        <span class="text-[10px] font-bold text-emerald-700 block">बरोबर</span>
-                        <span id="res-correct" class="text-lg font-black text-emerald-600">0</span>
-                    </div>
-                    <div class="bg-rose-50 p-2.5 rounded-xl border border-rose-100">
-                        <span class="text-[10px] font-bold text-rose-700 block">चूक</span>
-                        <span id="res-wrong" class="text-lg font-black text-rose-600">0</span>
-                    </div>
-                    <div class="bg-amber-50 p-2.5 rounded-xl border border-amber-100">
-                        <span class="text-[10px] font-bold text-amber-700 block">बाकी</span>
-                        <span id="res-skipped" class="text-lg font-black text-amber-600">0</span>
-                    </div>
-                </div>
-
-                <div class="flex items-center justify-center gap-3 pt-2">
-                    <button onclick="showScreen('home')" class="w-full py-2.5 text-xs font-bold rounded-xl bg-slate-900 text-white hover:bg-slate-800 active:scale-95 transition">
-                        मुख्य मेनूकडे जा 🏠
-                    </button>
-                </div>
-            </div>
-
-            <!-- Explanations Header -->
-            <div class="space-y-3 pb-6">
-                <h4 class="text-xs font-bold text-slate-700 uppercase tracking-wider px-1">
-                    सर्व प्रश्नांचे सविस्तर विश्लेषण (Explanations)
-                </h4>
-                <div id="results-review-list" class="space-y-3">
-                    <!-- Dynamic review items injected here -->
-                </div>
-            </div>
-        </div>
-
-    </main>
-
-    <!-- Bottom Mobile Navigation Bar (100% Mobile App UX) -->
-    <nav class="h-14 sm:h-16 bg-white border-t border-slate-200 px-6 flex items-center justify-around shrink-0 z-40">
-        <button onclick="handleBottomNav('prelims')" id="nav-btn-prelims" class="flex flex-col items-center justify-center text-brand-600 transition">
-            <span class="text-lg">🎯</span>
-            <span class="text-[10px] font-bold mt-0.5">पूर्व परीक्षा</span>
+        <!-- Mobile Drawer Toggle -->
+        <button id="mobileMenuOpen" class="icon-btn" aria-label="Open Navigation Menu">
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
         </button>
-        <button onclick="handleBottomNav('mains')" id="nav-btn-mains" class="flex flex-col items-center justify-center text-slate-400 hover:text-slate-600 transition">
-            <span class="text-lg">🏆</span>
-            <span class="text-[10px] font-bold mt-0.5">मुख्य परीक्षा</span>
-        </button>
-        <button onclick="showAppInfo()" class="flex flex-col items-center justify-center text-slate-400 hover:text-slate-600 transition">
-            <span class="text-lg">ℹ️</span>
-            <span class="text-[10px] font-bold mt-0.5">माहिती</span>
-        </button>
-    </nav>
+      </div>
 
-    <!-- Simple In-App Modal (No native alert/confirm) -->
-    <div id="app-modal" class="fixed inset-0 bg-slate-900/60 backdrop-blur-xs flex items-center justify-center p-4 z-50 hidden">
-        <div class="bg-white rounded-2xl max-w-xs w-full p-5 space-y-3 text-center shadow-xl">
-            <div id="modal-icon" class="text-3xl">⚠️</div>
-            <h4 id="modal-title" class="font-bold text-slate-900 text-sm">सूचना</h4>
-            <p id="modal-msg" class="text-xs text-slate-600 leading-relaxed">संदेश</p>
-            <div class="flex gap-2 pt-2">
-                <button id="modal-btn-cancel" onclick="closeModal()" class="flex-1 py-2 rounded-xl text-xs font-bold border border-slate-200 text-slate-600 hover:bg-slate-50">नाही</button>
-                <button id="modal-btn-ok" class="flex-1 py-2 rounded-xl text-xs font-bold bg-brand-600 text-white hover:bg-brand-500 shadow-sm">होय</button>
-            </div>
+      <!-- DESKTOP HEADER -->
+      <a href="#" class="brand-logo desktop-nav" title="StudySphere Home">
+        <div class="brand-emblem">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+            <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+            <path d="m9 11 2 2 4-4"></path>
+          </svg>
         </div>
+        <span>StudySphere</span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Primary Navigation">
+        <a href="#" class="nav-item active">Home</a>
+        <a href="#" class="nav-item">About</a>
+        <a href="#" class="nav-item">Contact</a>
+      </nav>
+
+      <div class="header-actions desktop-actions">
+        <!-- Telegram Link -->
+        <a href="https://t.me/MPSCstudysphere" target="_blank" rel="noopener noreferrer" class="btn-pill" title="Join MPSC StudySphere on Telegram">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+          Telegram
+        </a>
+
+        <!-- Donate Button -->
+        <button class="btn-pill btn-donate" onclick="alert('StudySphere voluntary contribution workflow will open here.')">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+          Donate
+        </button>
+
+        <!-- Font Size Cycler -->
+        <button id="desktopFontBtn" class="icon-btn" aria-label="Adjust Font Size" title="Font Size: Medium">A</button>
+
+        <!-- Theme Switcher -->
+        <button id="desktopThemeBtn" class="icon-btn" aria-label="Toggle Dark/Light Mode" title="Toggle Theme">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       MOBILE RIGHT-SIDE DRAWER (50%-65% width)
+       ========================================================================== -->
+  <div id="drawerOverlay" class="drawer-scrim" onclick="closeMobileDrawer()"></div>
+  <aside id="drawerMenu" class="mobile-drawer" aria-label="Mobile Navigation Drawer">
+    <div class="drawer-head">
+      <div class="brand-logo">
+        <div class="brand-emblem">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 11 2 2 4-4"></path><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+        </div>
+        <span style="font-size: var(--fs-base);">StudySphere</span>
+      </div>
+      <button id="mobileMenuClose" class="icon-btn" aria-label="Close Menu">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
     </div>
 
-    <script>
-        // Complete Subject Map according to user's specified syllabus
-        const SYLLABUS_CONFIG = {
-            prelims: [
-                { id: 'pre-hist', name: 'History (इतिहास)', marathi: 'इतिहास', icon: '🏛️', desc: 'आधुनिक भारत व महाराष्ट्राचा इतिहास' },
-                { id: 'pre-geo', name: 'Geography (भूगोल)', marathi: 'भूगोल', icon: '🌍', desc: 'महाराष्ट्राच्या भूगोलावर विशेष भर' },
-                { id: 'pre-eco', name: 'Economics (अर्थशास्त्र)', marathi: 'अर्थशास्त्र', icon: '📈', desc: 'भारतीय अर्थव्यवस्था, दारिद्र्य, बँकिंग' },
-                { id: 'pre-pol', name: 'Polity & Civics', marathi: 'राज्यशास्त्र व नागरिकशास्त्र', icon: '⚖️', desc: 'भारतीय राज्यघटना, पंचायत राज' },
-                { id: 'pre-sci', name: 'General Science', marathi: 'सामान्य विज्ञान', icon: '🔬', desc: 'भौतिकशास्त्र, रसायनशास्त्र, जीवशास्त्र' },
-                { id: 'pre-ca', name: 'Current Affairs', marathi: 'चालू घडामोडी', icon: '📰', desc: 'राष्ट्रीय व आंतरराष्ट्रीय घडामोडी' },
-                { id: 'pre-apt', name: 'Mental Ability & Arithmetic', marathi: 'बुद्धिमत्ता व अंकगणित', icon: '🧮', desc: 'तर्कक्षमता, संख्या मालिका व कूट प्रश्न' }
-            ],
-            mains: [
-                // Paper 1
-                { id: 'main-mar', name: 'Paper 1: Marathi (मराठी)', marathi: 'मराठी भाषा', icon: '📖', desc: 'मराठी व्याकरण, शब्दसंग्रह व आकलन' },
-                { id: 'main-eng', name: 'Paper 1: English (इंग्रजी)', marathi: 'इंग्रजी भाषा', icon: '🔤', desc: 'Grammar, Vocabulary & Comprehension' },
-                // Paper 2
-                { id: 'main-hist', name: 'Paper 2: History (इतिहास)', marathi: 'इतिहास', icon: '🏛️', desc: 'महाराष्ट्रातील समाजसुधारक व चळवळी' },
-                { id: 'main-geo', name: 'Paper 2: Geography (भूगोल)', marathi: 'भूगोल', icon: '🌍', desc: 'हवामान, नद्या, कृषी व वने' },
-                { id: 'main-pol', name: 'Paper 2: Polity & Civics', marathi: 'राज्यशास्त्र व नागरिकशास्त्र', icon: '⚖️', desc: 'घटनात्मक तरतुदी व प्रशासन' },
-                { id: 'main-eco', name: 'Paper 2: Economics (अर्थशास्त्र)', marathi: 'अर्थशास्त्र', icon: '📊', desc: 'नियोजन, लोकसंख्या व सार्वजनिक वित्त' },
-                { id: 'main-sci', name: 'Paper 2: General Science', marathi: 'सामान्य विज्ञान', icon: '🧬', desc: 'विज्ञान आणि तंत्रज्ञानातील प्रगती' },
-                { id: 'main-ca', name: 'Paper 2: Current Affairs', marathi: 'चालू घडामोडी', icon: '🌐', desc: 'समकालीन घडामोडी व कायदे' },
-                { id: 'main-apt', name: 'Paper 2: Mental Ability', marathi: 'बुद्धिमत्ता व अंकगणित', icon: '🧮', desc: 'डेटा इंटरप्रिटेशन व बुद्धिमत्ता' },
-                { id: 'main-it', name: 'Paper 2: Information Technology', marathi: 'माहिती तंत्रज्ञान (IT)', icon: '💻', desc: 'सायबर सुरक्षा, संगणक मूलभूत ज्ञान' },
-                { id: 'main-rti', name: 'Paper 2: RTI & RTS Acts', marathi: 'RTI व लोकसेवा हक्क कायदा', icon: '📜', desc: 'माहिती अधिकार २००५ व लोकसेवा कायदा २०१५' },
-                { id: 'main-post', name: 'Paper 2: Post-Specific Knowledge', marathi: 'पदानुसार विशेष ज्ञान', icon: '📑', desc: 'लिपिक-टंकलेखक व कर सहाय्यक पदज्ञान' }
-            ]
-        };
+    <ul class="drawer-links">
+      <li><a href="#" onclick="closeMobileDrawer()">Home</a></li>
+      <li><a href="#" onclick="closeMobileDrawer()">About</a></li>
+      <li><a href="#" onclick="closeMobileDrawer()">Contact</a></li>
+      <li>
+        <a href="https://t.me/MPSCstudysphere" target="_blank" rel="noopener noreferrer">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+          Telegram
+        </a>
+      </li>
+    </ul>
 
-        const SAMPLE_QUESTIONS = [
-            {
-                subjectId: 'pre-geo',
-                track: 'prelims',
-                subjectName: 'भूगोल',
-                question: 'महाराष्ट्रातील "लोणार सरोवर" हे उल्कापातामुळे तयार झालेले सरोवर कोणत्या जिल्ह्यात आहे?',
-                options: ['अकोला', 'बुलढाणा', 'अमरावती', 'वाशिम'],
-                correct: 1,
-                explanation: 'लोणार सरोवर हे बुलढाणा जिल्ह्यातील खाऱ्या पाण्याचे नैसर्गिक सरोवर असून उल्कापातामुळे (Meteorite impact) तयार झाले आहे.'
-            },
-            {
-                subjectId: 'pre-pol',
-                track: 'prelims',
-                subjectName: 'राज्यशास्त्र',
-                question: 'भारतीय राज्यघटनेतील कोणत्या कलमानुसार "ग्रामपंचायतींची स्थापना" करण्याचे निर्देश दिले आहेत?',
-                options: ['कलम ४०', 'कलम ४४', 'कलम ५०', 'कलम ५१'],
-                correct: 0,
-                explanation: 'मार्गदर्शक तत्त्वांमधील कलम ४० हे ग्रामपंचायतींच्या स्थापनेशी संबंधित आहे.'
-            },
-            {
-                subjectId: 'pre-hist',
-                track: 'prelims',
-                subjectName: 'इतिहास',
-                question: '१ मे १९६० रोजी संयुक्त महाराष्ट्र राज्याची स्थापना झाली, त्यावेळी महाराष्ट्रात एकूण किती जिल्हे होते?',
-                options: ['२४ जिल्हे', '२६ जिल्हे', '२८ जिल्हे', '३० जिल्हे'],
-                correct: 1,
-                explanation: 'स्थापनेच्या वेळी महाराष्ट्रात २६ जिल्हे व ४ प्रशासकीय विभाग होते. आजघडीला ३६ जिल्हे आहेत.'
-            },
-            {
-                subjectId: 'pre-sci',
-                track: 'prelims',
-                subjectName: 'सामान्य विज्ञान',
-                question: 'मानवी शरीरात रक्तातील साखरेचे प्रमाण नियंत्रित ठेवणारे "इन्सुलिन" हे संप्रेरक कोणत्या अवयवातून स्रवले जाते?',
-                options: ['यकृत (Liver)', 'स्वादुपिंड (Pancreas)', 'जठर (Stomach)', 'वृक्क (Kidney)'],
-                correct: 1,
-                explanation: 'इन्सुलिन हे स्वादुपिंडातील आयलेट्स ऑफ लँगरहॅन्सच्या बीटा पेशींद्वारे स्रवले जाते.'
-            },
-            {
-                subjectId: 'pre-apt',
-                track: 'prelims',
-                subjectName: 'बुद्धिमत्ता',
-                question: 'जर CAT = 24 आणि DOG = 26 असेल, तर BAT बरोबर किती?',
-                options: ['२२', '२३', '२४', '२५'],
-                correct: 1,
-                explanation: 'अक्षरांचे इंग्रजी वर्णमालेतील स्थान: B(2) + A(1) + T(20) = 23.'
-            },
-            {
-                subjectId: 'main-mar',
-                track: 'mains',
-                subjectName: 'मराठी भाषा',
-                question: '"विद्वान" या नामाचे स्त्रीलिंगी रूप खालीलपैकी कोणते?',
-                options: ['विदुषी', 'विद्वानी', 'विद्वाती', 'विदुषक'],
-                correct: 0,
-                explanation: 'विद्वान या पुल्लिंगी नामाचे स्त्रीलिंगी रूप "विदुषी" असे होते.'
-            },
-            {
-                subjectId: 'main-rti',
-                track: 'mains',
-                subjectName: 'RTI व लोकसेवा हक्क कायदा',
-                question: 'माहितीचा अधिकार कायदा (RTI Act) भारतात कोणत्या वर्षी संमत करण्यात आला?',
-                options: ['२००२', '२००५', '२००८', '२०१०'],
-                correct: 1,
-                explanation: 'माहितीचा अधिकार अधिनियम १२ ऑक्टोबर २००५ पासून संपूर्ण भारतात लागू करण्यात आला.'
-            },
-            {
-                subjectId: 'main-it',
-                track: 'mains',
-                subjectName: 'माहिती तंत्रज्ञान',
-                question: 'संगणकामध्ये "RAM" चा योग्य विस्तार (Full Form) कोणता आहे?',
-                options: ['Read Access Memory', 'Random Access Memory', 'Rapid Action Module', 'Real Application Memory'],
-                correct: 1,
-                explanation: 'RAM चे पूर्ण रूप Random Access Memory असे असून ही संगणकाची मुख्य तात्पुरती (Volatile) मेमरी असते.'
-            }
-        ];
+    <div class="drawer-foot">
+      <button class="btn-pill btn-donate" style="width: 100%; justify-content: center; height: 40px;" onclick="closeMobileDrawer()">
+        Support StudySphere
+      </button>
+    </div>
+  </aside>
 
-        let currentTrack = 'prelims'; // 'prelims' or 'mains'
-        let activeQuestions = [];
-        let activeQIndex = 0;
-        let userChoices = {}; // { questionIndex: chosenOptionIndex }
-        let timerSeconds = 0;
-        let timerInterval = null;
+  <!-- ==========================================================================
+       MAIN CONTENT CONTAINER
+       ========================================================================== -->
+  <main class="main-body">
+    <div class="container">
 
-        function init() {
-            renderSubjects();
-        }
+      <!-- Compact Introduction / Hero Section -->
+      <section class="hero-box">
+        <span class="hero-badge">MPSC Group C 2026</span>
+        <h1 class="hero-title">Prelims + Mains Quiz Platform</h1>
+        <p class="hero-desc">
+          Practice subject-wise, chapter-wise and combined quizzes for MPSC Group C preparation.
+        </p>
+      </section>
 
-        function switchTrack(track) {
-            currentTrack = track;
-            const tabPrelims = document.getElementById('tab-prelims');
-            const tabMains = document.getElementById('tab-mains');
-            const trackBadge = document.getElementById('active-track-badge');
-            const navPrelims = document.getElementById('nav-btn-prelims');
-            const navMains = document.getElementById('nav-btn-mains');
+      <!-- ======================================================================
+           PRELIMS SECTION (7 Official Subjects)
+           ====================================================================== -->
+      <section class="content-section">
+        <h2 class="section-heading">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 14 14"></polyline></svg>
+          MPSC Group C 2026 — PRELIMS
+        </h2>
 
-            if (track === 'prelims') {
-                tabPrelims.className = 'py-2 rounded-xl text-xs sm:text-sm font-black transition text-white bg-navy-900 shadow-sm';
-                tabMains.className = 'py-2 rounded-xl text-xs sm:text-sm font-black transition text-slate-600 hover:text-navy-950';
-                trackBadge.innerText = 'पूर्व परीक्षा (Prelims)';
-                navPrelims.className = 'flex flex-col items-center justify-center text-brand-600 transition';
-                navMains.className = 'flex flex-col items-center justify-center text-slate-400 hover:text-slate-600 transition';
-                document.getElementById('subject-list-heading').innerText = 'पूर्व परीक्षेचे विषय (Prelims Subjects)';
-                document.getElementById('subject-count-info').innerText = '७ विषय';
-            } else {
-                tabMains.className = 'py-2 rounded-xl text-xs sm:text-sm font-black transition text-white bg-navy-900 shadow-sm';
-                tabPrelims.className = 'py-2 rounded-xl text-xs sm:text-sm font-black transition text-slate-600 hover:text-navy-950';
-                trackBadge.innerText = 'मुख्य परीक्षा (Mains)';
-                navMains.className = 'flex flex-col items-center justify-center text-brand-600 transition';
-                navPrelims.className = 'flex flex-col items-center justify-center text-slate-400 hover:text-slate-600 transition';
-                document.getElementById('subject-list-heading').innerText = 'मुख्य परीक्षेचे विषय (Mains Subjects)';
-                document.getElementById('subject-count-info').innerText = '१२ विषय (Paper 1 & 2)';
-            }
-            renderSubjects();
-        }
+        <div class="grid-subjects">
+          <!-- 1. History -->
+          <a href="#" class="subj-card">
+            <div class="card-icon-wrapper" title="History">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="21" x2="21" y2="21"></line><line x1="6" y1="21" x2="6" y2="10"></line><line x1="10" y1="21" x2="10" y2="10"></line><line x1="14" y1="21" x2="14" y2="10"></line><line x1="18" y1="21" x2="18" y2="10"></line><polygon points="12 3 2 10 22 10 12 3"></polygon></svg>
+            </div>
+            <div class="subj-info">
+              <div class="subj-en">History</div>
+              <div class="subj-mr">इतिहास</div>
+            </div>
+            <span class="subj-arrow">›</span>
+          </a>
 
-        function toggleTrack() {
-            switchTrack(currentTrack === 'prelims' ? 'mains' : 'prelims');
-        }
+          <!-- 2. Geography -->
+          <a href="#" class="subj-card">
+            <div class="card-icon-wrapper" title="Geography">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+            </div>
+            <div class="subj-info">
+              <div class="subj-en">Geography</div>
+              <div class="subj-mr">भूगोल</div>
+            </div>
+            <span class="subj-arrow">›</span>
+          </a>
 
-        function handleBottomNav(target) {
-            showScreen('home');
-            switchTrack(target);
-        }
+          <!-- 3. Economics -->
+          <a href="#" class="subj-card">
+            <div class="card-icon-wrapper" title="Economics">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+            </div>
+            <div class="subj-info">
+              <div class="subj-en">Economics</div>
+              <div class="subj-mr">अर्थशास्त्र</div>
+            </div>
+            <span class="subj-arrow">›</span>
+          </a>
 
-        function renderSubjects() {
-            const container = document.getElementById('subjects-container');
-            const list = SYLLABUS_CONFIG[currentTrack];
+          <!-- 4. Polity & Civics -->
+          <a href="#" class="subj-card">
+            <div class="card-icon-wrapper" title="Polity & Civics">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+            </div>
+            <div class="subj-info">
+              <div class="subj-en">Polity &amp; Civics</div>
+              <div class="subj-mr">राज्यशास्त्र व नागरिकशास्त्र</div>
+            </div>
+            <span class="subj-arrow">›</span>
+          </a>
 
-            container.innerHTML = list.map(sub => {
-                return `
-                    <div onclick="startTest('${sub.id}', '${sub.marathi}')" class="bg-white p-3.5 rounded-2xl border border-slate-200 hover:border-brand-500 shadow-2xs active:scale-[0.98] transition cursor-pointer flex items-center justify-between group">
-                        <div class="flex items-center space-x-3">
-                            <div class="w-10 h-10 rounded-xl bg-slate-50 group-hover:bg-orange-50 flex items-center justify-center text-xl shrink-0 transition">
-                                ${sub.icon}
-                            </div>
-                            <div>
-                                <h4 class="text-xs sm:text-sm font-bold text-slate-900 group-hover:text-brand-600 transition leading-snug">
-                                    ${sub.name}
-                                </h4>
-                                <p class="text-[11px] text-slate-400 line-clamp-1">${sub.desc}</p>
-                            </div>
-                        </div>
-                        <div class="flex items-center space-x-1 shrink-0 text-slate-400 group-hover:text-brand-600">
-                            <span class="text-xs font-bold">सराव</span>
-                            <span class="text-sm">→</span>
-                        </div>
-                    </div>
-                `;
-            }).join('');
-        }
+          <!-- 5. General Science -->
+          <a href="#" class="subj-card">
+            <div class="card-icon-wrapper" title="General Science">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 2v7.31L4.69 19a2 2 0 0 0 1.69 3h11.24a2 2 0 0 0 1.69-3L14 9.31V2"></path><line x1="8" y1="2" x2="16" y2="2"></line><line x1="9" y1="12" x2="15" y2="12"></line></svg>
+            </div>
+            <div class="subj-info">
+              <div class="subj-en">General Science</div>
+              <div class="subj-mr">सामान्य विज्ञान</div>
+            </div>
+            <span class="subj-arrow">›</span>
+          </a>
 
-        function startTest(subjectId, customTitle = '') {
-            let pool = [];
+          <!-- 6. Current Affairs -->
+          <a href="#" class="subj-card">
+            <div class="card-icon-wrapper" title="Current Affairs">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2"></path><path d="M18 14h-8"></path><path d="M15 18h-5"></path><path d="M10 6h8v4h-8V6Z"></path></svg>
+            </div>
+            <div class="subj-info">
+              <div class="subj-en">Current Affairs</div>
+              <div class="subj-mr">चालू घडामोडी</div>
+            </div>
+            <span class="subj-arrow">›</span>
+          </a>
 
-            if (subjectId === 'ALL') {
-                pool = SAMPLE_QUESTIONS.filter(q => q.track === currentTrack);
-                if (pool.length === 0) pool = [...SAMPLE_QUESTIONS];
-                document.getElementById('quiz-subject-pill').innerText = currentTrack === 'prelims' ? 'पूर्व सर्व विषय' : 'मुख्य सर्व विषय';
-            } else {
-                pool = SAMPLE_QUESTIONS.filter(q => q.subjectId === subjectId || q.subjectName.includes(customTitle));
-                if (pool.length === 0) {
-                    pool = SAMPLE_QUESTIONS.filter(q => q.track === currentTrack);
-                }
-                document.getElementById('quiz-subject-pill').innerText = customTitle || 'सराव प्रश्न';
-            }
+          <!-- 7. Mental Ability & Arithmetic -->
+          <a href="#" class="subj-card">
+            <div class="card-icon-wrapper" title="Mental Ability & Arithmetic">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="2" width="16" height="20" rx="2"></rect><line x1="8" y1="6" x2="16" y2="6"></line><line x1="16" y1="14" x2="16" y2="18"></line><circle cx="9" cy="11" r="1"></circle><circle cx="15" cy="11" r="1"></circle><circle cx="9" cy="15" r="1"></circle></svg>
+            </div>
+            <div class="subj-info">
+              <div class="subj-en">Mental Ability &amp; Arithmetic</div>
+              <div class="subj-mr">बुद्धिमत्ता व अंकगणित</div>
+            </div>
+            <span class="subj-arrow">›</span>
+          </a>
+        </div>
+      </section>
 
-            activeQuestions = pool;
-            activeQIndex = 0;
-            userChoices = {};
-            timerSeconds = activeQuestions.length * 60; // 60 seconds per question
+      <!-- ======================================================================
+           MAINS SECTION (Paper 1 & Paper 2)
+           ====================================================================== -->
+      <section class="content-section">
+        <h2 class="section-heading">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
+          MPSC Group C 2026 — MAINS
+        </h2>
 
-            showScreen('quiz');
-            loadQuestion();
-            startTimer();
-        }
+        <!-- Paper 1 — Language -->
+        <h3 class="sub-heading">Paper 1 — Language</h3>
+        <div class="grid-subjects" style="margin-bottom: var(--sp-lg);">
+          <!-- Marathi -->
+          <a href="#" class="subj-card">
+            <div class="card-icon-wrapper" title="Marathi">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 8 6 6"></path><path d="m4 14 6-6 2-3"></path><path d="M2 5h12"></path><path d="M7 2h1"></path><path d="m22 22-5-10-5 10"></path><path d="M14 18h6"></path></svg>
+            </div>
+            <div class="subj-info">
+              <div class="subj-en">Marathi</div>
+              <div class="subj-mr">मराठी</div>
+            </div>
+            <span class="subj-arrow">›</span>
+          </a>
 
-        function startTimer() {
-            clearInterval(timerInterval);
-            renderTimer();
-            timerInterval = setInterval(() => {
-                timerSeconds--;
-                renderTimer();
-                if (timerSeconds <= 0) {
-                    clearInterval(timerInterval);
-                    finishTest();
-                }
-            }, 1000);
-        }
+          <!-- English -->
+          <a href="#" class="subj-card">
+            <div class="card-icon-wrapper" title="English">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M4 12h16"></path><path d="M12 4v16"></path></svg>
+            </div>
+            <div class="subj-info">
+              <div class="subj-en">English</div>
+              <div class="subj-mr">इंग्रजी</div>
+            </div>
+            <span class="subj-arrow">›</span>
+          </a>
+        </div>
 
-        function renderTimer() {
-            const m = Math.floor(timerSeconds / 60);
-            const s = timerSeconds % 60;
-            document.getElementById('quiz-timer').innerText = 
-                `${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`;
-        }
+        <!-- Paper 2 — General Studies & Intelligence -->
+        <h3 class="sub-heading">Paper 2 — General Studies &amp; Intelligence</h3>
+        <div class="grid-subjects grid-4">
+          <a href="#" class="subj-card">
+            <div class="card-icon-wrapper">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="21" x2="21" y2="21"></line><polygon points="12 3 2 10 22 10 12 3"></polygon></svg>
+            </div>
+            <div class="subj-info">
+              <div class="subj-en">History</div>
+              <div class="subj-mr">इतिहास</div>
+            </div>
+            <span class="subj-arrow">›</span>
+          </a>
 
-        function loadQuestion() {
-            const q = activeQuestions[activeQIndex];
-            document.getElementById('q-curr-index').innerText = activeQIndex + 1;
-            document.getElementById('q-total-count').innerText = activeQuestions.length;
-            document.getElementById('q-badge-num').innerText = activeQIndex + 1;
-            document.getElementById('q-question-text').innerText = q.question;
+          <a href="#" class="subj-card">
+            <div class="card-icon-wrapper">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+            </div>
+            <div class="subj-info">
+              <div class="subj-en">Geography</div>
+              <div class="subj-mr">भूगोल</div>
+            </div>
+            <span class="subj-arrow">›</span>
+          </a>
 
-            // Update Progress Bar
-            const percent = ((activeQIndex + 1) / activeQuestions.length) * 100;
-            document.getElementById('quiz-progress-fill').style.width = `${percent}%`;
+          <a href="#" class="subj-card">
+            <div class="card-icon-wrapper">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+            </div>
+            <div class="subj-info">
+              <div class="subj-en">Polity &amp; Civics</div>
+              <div class="subj-mr">राज्यशास्त्र व नागरिकशास्त्र</div>
+            </div>
+            <span class="subj-arrow">›</span>
+          </a>
 
-            // Render Options
-            const selected = userChoices[activeQIndex];
-            const optionsContainer = document.getElementById('options-list');
-            
-            optionsContainer.innerHTML = q.options.map((opt, i) => {
-                const isSelected = selected === i;
-                const border = isSelected ? 'border-brand-600 bg-orange-50/70 shadow-xs ring-1 ring-brand-600' : 'border-slate-200 bg-white hover:bg-slate-50';
-                const circle = isSelected ? 'bg-brand-600 text-white border-brand-600' : 'bg-slate-100 text-slate-700 border-slate-300';
+          <a href="#" class="subj-card">
+            <div class="card-icon-wrapper">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+            </div>
+            <div class="subj-info">
+              <div class="subj-en">Economics</div>
+              <div class="subj-mr">अर्थशास्त्र</div>
+            </div>
+            <span class="subj-arrow">›</span>
+          </a>
 
-                return `
-                    <div onclick="selectAnswer(${i})" class="flex items-center gap-3 p-3.5 rounded-xl border ${border} cursor-pointer transition select-none active:scale-[0.99]">
-                        <div class="w-7 h-7 rounded-lg border text-xs font-bold flex items-center justify-center shrink-0 ${circle}">
-                            ${['A', 'B', 'C', 'D'][i]}
-                        </div>
-                        <div class="text-xs sm:text-sm font-semibold text-slate-800 leading-snug">
-                            ${opt}
-                        </div>
-                    </div>
-                `;
-            }).join('');
+          <a href="#" class="subj-card">
+            <div class="card-icon-wrapper">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 2v7.31L4.69 19a2 2 0 0 0 1.69 3h11.24a2 2 0 0 0 1.69-3L14 9.31V2"></path></svg>
+            </div>
+            <div class="subj-info">
+              <div class="subj-en">General Science</div>
+              <div class="subj-mr">सामान्य विज्ञान</div>
+            </div>
+            <span class="subj-arrow">›</span>
+          </a>
 
-            // Update Bottom Button Labels
-            document.getElementById('btn-prev-q').disabled = activeQIndex === 0;
-            const nextBtn = document.getElementById('btn-next-q');
-            if (activeQIndex === activeQuestions.length - 1) {
-                nextBtn.innerText = 'पूर्ण करा ✅';
-                nextBtn.className = 'px-5 py-2.5 text-xs font-bold rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white active:scale-95 shadow-xs transition';
-            } else {
-                nextBtn.innerText = 'पुढे →';
-                nextBtn.className = 'px-5 py-2.5 text-xs font-bold rounded-xl bg-navy-900 hover:bg-navy-800 text-white active:scale-95 shadow-xs transition';
-            }
-        }
+          <a href="#" class="subj-card">
+            <div class="card-icon-wrapper">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2"></path></svg>
+            </div>
+            <div class="subj-info">
+              <div class="subj-en">Current Affairs</div>
+              <div class="subj-mr">चालू घडामोडी</div>
+            </div>
+            <span class="subj-arrow">›</span>
+          </a>
 
-        function selectAnswer(optIndex) {
-            userChoices[activeQIndex] = optIndex;
-            loadQuestion();
-        }
+          <a href="#" class="subj-card">
+            <div class="card-icon-wrapper">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="2" width="16" height="20" rx="2"></rect><line x1="8" y1="6" x2="16" y2="6"></line></svg>
+            </div>
+            <div class="subj-info">
+              <div class="subj-en">Mental Ability &amp; Arithmetic</div>
+              <div class="subj-mr">बुद्धिमत्ता व अंकगणित</div>
+            </div>
+            <span class="subj-arrow">›</span>
+          </a>
 
-        function clearCurrentSelection() {
-            delete userChoices[activeQIndex];
-            loadQuestion();
-        }
+          <!-- Information Technology -->
+          <a href="#" class="subj-card">
+            <div class="card-icon-wrapper" title="Information Technology">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+            </div>
+            <div class="subj-info">
+              <div class="subj-en">Information Technology</div>
+              <div class="subj-mr">माहिती तंत्रज्ञान</div>
+            </div>
+            <span class="subj-arrow">›</span>
+          </a>
 
-        function navigateQuestion(direction) {
-            if (direction === 1) {
-                if (activeQIndex < activeQuestions.length - 1) {
-                    activeQIndex++;
-                    loadQuestion();
-                } else {
-                    promptSubmit();
-                }
-            } else if (direction === -1) {
-                if (activeQIndex > 0) {
-                    activeQIndex--;
-                    loadQuestion();
-                }
-            }
-        }
+          <!-- RTI Act & Maharashtra Right to Public Services Act -->
+          <a href="#" class="subj-card">
+            <div class="card-icon-wrapper" title="RTI & Public Services Act">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><circle cx="12" cy="14" r="2"></circle><line x1="12" y1="10" x2="12" y2="10.01"></line></svg>
+            </div>
+            <div class="subj-info">
+              <div class="subj-en">RTI Act &amp; Maharashtra Right to Public Services Act</div>
+              <div class="subj-mr">माहिती अधिकार व लोकसेवा हक्क</div>
+            </div>
+            <span class="subj-arrow">›</span>
+          </a>
 
-        function promptSubmit() {
-            showModal(
-                'चाचणी सबमिट करायची?',
-                'तुम्ही सर्व प्रश्न पाहिले आहेत. निकाल व स्पष्टीकरण पाहण्यासाठी "होय" दाबा.',
-                () => {
-                    closeModal();
-                    finishTest();
-                }
-            );
-        }
+          <!-- Post-Specific Knowledge -->
+          <a href="#" class="subj-card">
+            <div class="card-icon-wrapper" title="Post-Specific Knowledge">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+            </div>
+            <div class="subj-info">
+              <div class="subj-en">Post-Specific Knowledge</div>
+              <div class="subj-mr">पदानुसार विशेष ज्ञान</div>
+            </div>
+            <span class="subj-arrow">›</span>
+          </a>
+        </div>
+      </section>
 
-        function quitTest() {
-            showModal(
-                'चाचणी थांबवायची आहे का?',
-                'आता बाहेर पडल्यास तुमचे उत्तर सेव्ह होणार नाही.',
-                () => {
-                    clearInterval(timerInterval);
-                    closeModal();
-                    showScreen('home');
-                }
-            );
-        }
+      <!-- ======================================================================
+           COMBINED QUIZ SECTION (Homepage Entry Cards Only)
+           ====================================================================== -->
+      <section class="content-section">
+        <h2 class="section-heading">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polygon points="12 8 8 12 12 16 16 12 12 8"></polygon></svg>
+          MPSC Group C 2026 — COMBINE QUIZZES
+        </h2>
 
-        function finishTest() {
-            clearInterval(timerInterval);
+        <div class="grid-combine">
+          <!-- Card 1: Prelims Combine Quiz -->
+          <a href="#" class="quiz-combine-card" title="Open Prelims Mock Quiz">
+            <div class="combine-emblem">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+            </div>
+            <div class="subj-info">
+              <div style="font-size: var(--fs-xs); font-weight: 700; text-transform: uppercase; color: var(--text-dim); letter-spacing: 0.05em;">MPSC Group C 2026</div>
+              <div class="combine-title">PRELIMS Combine Quiz</div>
+              <span class="combine-pill">100 Marks</span>
+            </div>
+            <span class="subj-arrow" style="font-size: var(--fs-lg);">›</span>
+          </a>
 
-            let correct = 0;
-            let wrong = 0;
-            let skipped = 0;
+          <!-- Card 2: Mains Quiz -->
+          <a href="#" class="quiz-combine-card" title="Open Mains Mock Quiz">
+            <div class="combine-emblem">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg>
+            </div>
+            <div class="subj-info">
+              <div style="font-size: var(--fs-xs); font-weight: 700; text-transform: uppercase; color: var(--text-dim); letter-spacing: 0.05em;">MPSC Group C 2026</div>
+              <div class="combine-title">MAINS Quiz</div>
+              <span class="combine-pill">200 Marks</span>
+            </div>
+            <span class="subj-arrow" style="font-size: var(--fs-lg);">›</span>
+          </a>
+        </div>
+      </section>
 
-            activeQuestions.forEach((q, idx) => {
-                const choice = userChoices[idx];
-                if (choice === undefined) {
-                    skipped++;
-                } else if (choice === q.correct) {
-                    correct++;
-                } else {
-                    wrong++;
-                }
-            });
+    </div>
+  </main>
 
-            // MPSC formula: +1 for right, -0.25 for wrong
-            const netScore = Math.max(0, (correct * 1.0) - (wrong * 0.25));
+  <!-- ==========================================================================
+       SITE FOOTER
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand identity -->
+        <div>
+          <div class="footer-brand">StudySphere</div>
+          <p class="footer-lead">MPSC Group C Prelims &amp; Mains Quiz Platform</p>
+        </div>
 
-            document.getElementById('res-score').innerText = netScore.toFixed(2);
-            document.getElementById('res-correct').innerText = correct;
-            document.getElementById('res-wrong').innerText = wrong;
-            document.getElementById('res-skipped').innerText = skipped;
+        <!-- Navigation -->
+        <div>
+          <div class="footer-title">Navigation</div>
+          <ul class="footer-nav">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms &amp; Services</a></li>
+            <li><a href="#">Sitemap</a></li>
+          </ul>
+        </div>
 
-            renderReviewList();
-            showScreen('result');
-        }
+        <!-- Communication -->
+        <div>
+          <div class="footer-title">Communication</div>
+          <ul class="footer-nav">
+            <li>
+              <a href="https://t.me/MPSCstudysphere" target="_blank" rel="noopener noreferrer" style="display:inline-flex; align-items:center; gap:6px;">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                Telegram
+              </a>
+            </li>
+          </ul>
+        </div>
 
-        function renderReviewList() {
-            const container = document.getElementById('results-review-list');
-            container.innerHTML = activeQuestions.map((q, idx) => {
-                const choice = userChoices[idx];
-                const isSkipped = choice === undefined;
-                const isCorrect = choice === q.correct;
+        <!-- Support -->
+        <div>
+          <div class="footer-title">Support</div>
+          <p style="font-size: var(--fs-xs); color: var(--text-muted); margin-bottom: 12px; line-height: 1.4;">
+            Keep this platform ad-free and open for all Maharashtra aspirants.
+          </p>
+          <button class="btn-pill btn-donate" style="width: 100%; justify-content: center; height: 36px;" onclick="alert('Donation workflow will open here.')">
+            Donate
+          </button>
+        </div>
+      </div>
 
-                let tag = isSkipped 
-                    ? `<span class="text-[10px] font-bold px-2 py-0.5 rounded bg-amber-100 text-amber-800">सोडवला नाही</span>`
-                    : (isCorrect 
-                        ? `<span class="text-[10px] font-bold px-2 py-0.5 rounded bg-emerald-100 text-emerald-800">बरोबर (+१.००)</span>`
-                        : `<span class="text-[10px] font-bold px-2 py-0.5 rounded bg-rose-100 text-rose-800">चूक (-०.२५)</span>`);
+      <div class="footer-copyright">
+        <div>&copy; 2026 StudySphere. Designed for MPSC Group C Aspirants.</div>
+        <div>Clean Academic • GitHub Pages Static Architecture</div>
+      </div>
+    </div>
+  </footer>
 
-                return `
-                    <div class="bg-white p-4 rounded-2xl border border-slate-200 shadow-2xs space-y-2.5">
-                        <div class="flex items-center justify-between">
-                            <span class="text-[11px] font-bold text-slate-400">प्रश्न ${idx + 1}</span>
-                            ${tag}
-                        </div>
-                        <p class="text-xs sm:text-sm font-bold text-slate-900 leading-snug">${q.question}</p>
-                        
-                        <div class="space-y-1.5 pt-1">
-                            ${q.options.map((opt, i) => {
-                                let style = 'bg-slate-50 border-slate-200 text-slate-700';
-                                if (i === q.correct) {
-                                    style = 'bg-emerald-50 border-emerald-300 text-emerald-900 font-bold';
-                                } else if (!isCorrect && choice === i) {
-                                    style = 'bg-rose-50 border-rose-300 text-rose-900 font-bold';
-                                }
-                                return `
-                                    <div class="p-2 rounded-lg border text-xs flex justify-between items-center ${style}">
-                                        <span>(${['A','B','C','D'][i]}) ${opt}</span>
-                                        ${i === q.correct ? '<span>✅ अचूक</span>' : ''}
-                                        ${!isCorrect && choice === i ? '<span>❌ तुमचे उत्तर</span>' : ''}
-                                    </div>
-                                `;
-                            }).join('')}
-                        </div>
+  <!-- ==========================================================================
+       VANILLA JAVASCRIPT LOGIC
+       ========================================================================== -->
+  <script>
+    (function() {
+      'use strict';
 
-                        <div class="p-2.5 bg-blue-50/70 border border-blue-100 rounded-xl text-[11px] text-slate-700 leading-relaxed">
-                            <strong class="text-blue-900 block font-bold">💡 स्पष्टीकरण:</strong>
-                            ${q.explanation}
-                        </div>
-                    </div>
-                `;
-            }).join('');
-        }
+      const root = document.documentElement;
 
-        function showScreen(screenId) {
-            ['home', 'quiz', 'result'].forEach(s => {
-                const el = document.getElementById(`screen-${s}`);
-                if (el) el.classList.add('hidden');
-            });
-            const target = document.getElementById(`screen-${screenId}`);
-            if (target) {
-                target.classList.remove('hidden');
-                target.scrollTop = 0;
-            }
-        }
+      /* ------------------------------------------------------------------------
+         1. CONCEPT SWITCHER CONTROLLER (Design A / B / C)
+         ------------------------------------------------------------------------ */
+      window.setDesignConcept = function(concept, btnEl) {
+        root.setAttribute('data-design', concept);
+        document.querySelectorAll('.switch-pill').forEach(b => b.classList.remove('active'));
+        if (btnEl) btnEl.classList.add('active');
+        localStorage.setItem('studysphere_experiment_design', concept);
+      };
 
-        function showModal(title, msg, onConfirm) {
-            const modal = document.getElementById('app-modal');
-            document.getElementById('modal-title').innerText = title;
-            document.getElementById('modal-msg').innerText = msg;
-            const okBtn = document.getElementById('modal-btn-ok');
-            okBtn.onclick = onConfirm;
-            modal.classList.remove('hidden');
-        }
+      const savedDesign = localStorage.getItem('studysphere_experiment_design');
+      if (savedDesign) {
+        const targetBtn = document.querySelector(`.switch-pill[onclick*="'${savedDesign}'"]`);
+        if (targetBtn) setDesignConcept(savedDesign, targetBtn);
+      }
 
-        function closeModal() {
-            document.getElementById('app-modal').classList.add('hidden');
-        }
+      /* ------------------------------------------------------------------------
+         2. PERSISTENT THEME CONTROLLER (Dark / Light)
+         ------------------------------------------------------------------------ */
+      const THEME_KEY = 'studysphere_theme';
 
-        function showAppInfo() {
-            showModal(
-                'MPSC गट-क ॲप माहिती',
-                'हे ॲप पूर्णपणे पूर्व आणि मुख्य परीक्षेच्या नवीन २०२६ पॅटर्नवर आधारित आहे. GitHub Pages वर हे थेट चालवता येते.',
-                () => closeModal()
-            );
-        }
+      function applyTheme(theme) {
+        root.setAttribute('data-theme', theme);
+        localStorage.setItem(THEME_KEY, theme);
+        updateThemeIcons(theme);
+      }
 
-        // App Boot
-        window.onload = function() {
-            init();
-        };
-    </script>
+      function toggleTheme() {
+        const current = root.getAttribute('data-theme') || 'light';
+        const next = current === 'dark' ? 'light' : 'dark';
+        applyTheme(next);
+      }
+
+      function updateThemeIcons(theme) {
+        const sunSvg = '<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>';
+        const moonSvg = '<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>';
+        const icon = theme === 'dark' ? sunSvg : moonSvg;
+
+        const dBtn = document.getElementById('desktopThemeBtn');
+        const mBtn = document.getElementById('mobileThemeBtn');
+        if (dBtn) dBtn.innerHTML = icon;
+        if (mBtn) mBtn.innerHTML = icon;
+      }
+
+      const initialTheme = localStorage.getItem(THEME_KEY) ||
+        (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      applyTheme(initialTheme);
+
+      /* ------------------------------------------------------------------------
+         3. PERSISTENT FONT SIZE CYCLER (Small -> Medium -> Large)
+         ------------------------------------------------------------------------ */
+      const FONT_KEY = 'studysphere_font_size';
+      const fontTiers = ['small', 'medium', 'large'];
+
+      function applyFontSize(size) {
+        root.setAttribute('data-font-size', size);
+        localStorage.setItem(FONT_KEY, size);
+
+        const label = size === 'small' ? 'A⁻' : (size === 'large' ? 'A⁺' : 'A');
+        const title = `Font Size: ${size.charAt(0).toUpperCase() + size.slice(1)}`;
+
+        const dBtn = document.getElementById('desktopFontBtn');
+        const mBtn = document.getElementById('mobileFontBtn');
+        if (dBtn) { dBtn.textContent = label; dBtn.title = title; }
+        if (mBtn) { mBtn.textContent = label; mBtn.title = title; }
+      }
+
+      function cycleFontSize() {
+        const current = root.getAttribute('data-font-size') || 'medium';
+        const nextIdx = (fontTiers.indexOf(current) + 1) % fontTiers.length;
+        applyFontSize(fontTiers[nextIdx]);
+      }
+
+      const initialSize = localStorage.getItem(FONT_KEY) || 'medium';
+      applyFontSize(initialSize);
+
+      /* ------------------------------------------------------------------------
+         4. MOBILE DRAWER CONTROLLER
+         ------------------------------------------------------------------------ */
+      const drawer = document.getElementById('drawerMenu');
+      const scrim = document.getElementById('drawerOverlay');
+
+      window.openMobileDrawer = function() {
+        drawer.classList.add('open');
+        scrim.classList.add('open');
+        document.body.style.overflow = 'hidden';
+      };
+
+      window.closeMobileDrawer = function() {
+        drawer.classList.remove('open');
+        scrim.classList.remove('open');
+        document.body.style.overflow = '';
+      };
+
+      /* ------------------------------------------------------------------------
+         5. ATTACH LISTENERS
+         ------------------------------------------------------------------------ */
+      document.getElementById('desktopThemeBtn')?.addEventListener('click', toggleTheme);
+      document.getElementById('mobileThemeBtn')?.addEventListener('click', toggleTheme);
+      document.getElementById('desktopFontBtn')?.addEventListener('click', cycleFontSize);
+      document.getElementById('mobileFontBtn')?.addEventListener('click', cycleFontSize);
+      document.getElementById('mobileMenuOpen')?.addEventListener('click', window.openMobileDrawer);
+      document.getElementById('mobileMenuClose')?.addEventListener('click', window.closeMobileDrawer);
+    })();
+  </script>
 </body>
 </html>
