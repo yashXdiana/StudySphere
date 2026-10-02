@@ -1,0 +1,262 @@
+/* STREAMING_CHUNK:Configuring CSS custom properties and theme tokens /
+/ ==========================================================================
+StudySphere — Main Shared Stylesheet
+Architecture: Global Resets, Design Tokens, Typography & Theme Foundations
+========================================================================== */
+
+:root {
+/* --------------------------------------------------
+1. Font Scaling System (Controlled via data-font-size)
+-------------------------------------------------- */
+--font-scale: 1rem;
+--font-size-3xs: calc(var(--font-scale) * 0.72);
+--font-size-2xs: calc(var(--font-scale) * 0.80);
+--font-size-xs:  calc(var(--font-scale) * 0.88);
+--font-size-sm:  calc(var(--font-scale) * 0.95);
+--font-size-base:calc(var(--font-scale) * 1.05);
+--font-size-md:  calc(var(--font-scale) * 1.20);
+--font-size-lg:  calc(var(--font-scale) * 1.38);
+--font-size-xl:  calc(var(--font-scale) * 1.70);
+--font-size-2xl: calc(var(--font-scale) * 2.10);
+
+/* --------------------------------------------------
+2. Spacing Architecture
+-------------------------------------------------- */
+--space-3xs: 0.25rem;
+--space-2xs: 0.40rem;
+--space-xs:  0.65rem;
+--space-sm:  0.90rem;
+--space-md:  1.25rem;
+--space-lg:  1.75rem;
+--space-xl:  2.50rem;
+--space-2xl: 3.50rem;
+
+/* --------------------------------------------------
+3. Layout & Elevation Boundaries
+-------------------------------------------------- */
+--container-max-width: 1200px;
+--header-height: 60px;
+--radius-sm: 8px;
+--radius-md: 14px;
+--radius-lg: 18px;
+--radius-pill: 9999px;
+--transition-fast: 150ms cubic-bezier(0.2, 0.8, 0.2, 1);
+--transition-normal: 220ms cubic-bezier(0.2, 0.8, 0.2, 1);
+
+/* --------------------------------------------------
+4. Typography Stack (Devanagari + Latin Optimized)
+-------------------------------------------------- */
+--font-family-base: 'Mukta', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+
+/* --------------------------------------------------
+5. Light Theme Color Palette (Default)
+-------------------------------------------------- */
+--color-background: #F7F5F2;
+--color-surface: #FFFFFF;
+--color-surface-subtle: #EFECE6;
+--color-surface-elevated: #FFFFFF;
+--color-text: #252525;
+--color-text-muted: #5C5853;
+--color-text-dim: #8A857D;
+--color-primary: #523B2B;
+--color-primary-hover: #3E2B1E;
+--color-primary-soft: #EFE7DE;
+--color-primary-contrast: #FFFFFF;
+--color-secondary: #7A5B45;
+--color-border: #E5E1DC;
+--color-border-strong: #D5D0C5;
+
+--shadow-subtle: 0 1px 3px rgba(37, 37, 37, 0.04);
+--shadow-card: 0 2px 6px rgba(40, 32, 24, 0.04), 0 1px 2px rgba(40, 32, 24, 0.02);
+--shadow-elevated: 0 8px 20px rgba(40, 32, 24, 0.08);
+--shadow-modal: 0 20px 48px rgba(35, 33, 30, 0.22);
+}
+
+/* STREAMING_CHUNK:Configuring Dark Theme and Font Scale Selectors /
+/ --------------------------------------------------
+Dark Theme Overrides (Comfortable Night Study)
+-------------------------------------------------- */
+[data-theme="dark"] {
+--color-background: #171615;
+--color-surface: #22201D;
+--color-surface-subtle: #2B2925;
+--color-surface-elevated: #2A2723;
+--color-text: #EDEAE4;
+--color-text-muted: #A39D93;
+--color-text-dim: #757067;
+--color-primary: #CCA988;
+--color-primary-hover: #DEC0A2;
+--color-primary-soft: #30261C;
+--color-primary-contrast: #171615;
+--color-secondary: #A88667;
+--color-border: #33302B;
+--color-border-strong: #444039;
+
+--shadow-subtle: 0 1px 3px rgba(0, 0, 0, 0.3);
+--shadow-card: 0 2px 6px rgba(0, 0, 0, 0.35);
+--shadow-elevated: 0 8px 20px rgba(0, 0, 0, 0.5);
+--shadow-modal: 0 20px 48px rgba(0, 0, 0, 0.75);
+}
+
+/* --------------------------------------------------
+Font Scaling States
+-------------------------------------------------- */
+[data-font-size="small"]  { --font-scale: 0.90rem; }
+[data-font-size="medium"] { --font-scale: 1.00rem; }
+[data-font-size="large"]  { --font-scale: 1.12rem; }
+
+/* STREAMING_CHUNK:Applying CSS Reset and Core Element Styles /
+/ --------------------------------------------------
+Box Sizing and Resets
+-------------------------------------------------- */
+*, *::before, *::after {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+html {
+font-family: var(--font-family-base);
+font-size: 16px;
+line-height: 1.5;
+background-color: var(--color-background);
+color: var(--color-text);
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+scroll-behavior: smooth;
+scroll-padding-top: calc(var(--header-height) + 16px);
+}
+
+body {
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+overflow-x: hidden;
+width: 100%;
+}
+
+a {
+color: inherit;
+text-decoration: none;
+-webkit-tap-highlight-color: transparent;
+}
+
+button {
+font-family: inherit;
+cursor: pointer;
+border: none;
+background: none;
+color: inherit;
+-webkit-tap-highlight-color: transparent;
+}
+
+img, svg {
+display: block;
+max-width: 100%;
+}
+
+:focus-visible {
+outline: 2px solid var(--color-primary);
+outline-offset: 3px;
+}
+
+/* STREAMING_CHUNK:Defining Common Layout Containers and Structural Utilities /
+/ --------------------------------------------------
+Common Layout Containers
+-------------------------------------------------- */
+.container {
+width: 100%;
+max-width: var(--container-max-width);
+margin-left: auto;
+margin-right: auto;
+padding-left: 16px;
+padding-right: 16px;
+}
+
+@media (min-width: 640px) {
+.container {
+padding-left: 22px;
+padding-right: 22px;
+}
+}
+
+@media (min-width: 1024px) {
+.container {
+padding-left: 28px;
+padding-right: 28px;
+}
+}
+
+/* --------------------------------------------------
+Reusable Base UI Elements
+-------------------------------------------------- */
+.btn {
+display: inline-flex;
+align-items: center;
+justify-content: center;
+gap: var(--space-2xs);
+font-family: inherit;
+font-size: var(--font-size-xs);
+font-weight: 700;
+padding: 8px 16px;
+border-radius: var(--radius-pill);
+border: 1px solid var(--color-border);
+background-color: var(--color-surface);
+color: var(--color-text);
+transition: all var(--transition-fast);
+line-height: 1;
+}
+
+.btn:hover {
+background-color: var(--color-surface-subtle);
+border-color: var(--color-border-strong);
+}
+
+.btn-primary {
+background-color: var(--color-primary);
+color: var(--color-primary-contrast);
+border-color: var(--color-primary);
+}
+
+.btn-primary:hover {
+background-color: var(--color-primary-hover);
+border-color: var(--color-primary-hover);
+color: var(--color-primary-contrast);
+}
+
+.btn-icon {
+width: 36px;
+height: 36px;
+padding: 0;
+border-radius: var(--radius-pill);
+border: 1px solid var(--color-border);
+background-color: var(--color-surface);
+display: inline-flex;
+align-items: center;
+justify-content: center;
+color: var(--color-text);
+transition: all var(--transition-fast);
+}
+
+.btn-icon:hover {
+background-color: var(--color-surface-subtle);
+border-color: var(--color-border-strong);
+}
+
+.card-base {
+background-color: var(--color-surface);
+border: 1px solid var(--color-border);
+border-radius: var(--radius-md);
+box-shadow: var(--shadow-card);
+transition: transform var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+/* Accessibility: Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+*, *::before, *::after {
+animation-duration: 0.01ms !important;
+animation-iteration-count: 1 !important;
+transition-duration: 0.01ms !important;
+scroll-behavior: auto !important;
+}
+}

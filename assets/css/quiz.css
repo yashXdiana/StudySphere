@@ -1,0 +1,31 @@
+/* STREAMING_CHUNK:Configuring Independent Quiz Interface Baseline /
+/ ==========================================================================
+StudySphere — Quiz Dedicated Stylesheet (RESERVED)
+Architecture: Device-Specific, Fixed-Layout, Distraction-Free Quiz Engine
+
+IMPORTANT:
+This stylesheet is intentionally separated from style.css and pages.css.
+Normal StudySphere Header, Footer, and Drawer navigation DO NOT apply here.
+========================================================================== */
+
+/* Baseline Container Architecture for Future Quiz Engine */
+.quiz-viewport-root {
+width: 100vw;
+height: 100vh;
+height: 100dvh;
+display: flex;
+flex-direction: column;
+overflow: hidden;
+position: relative;
+background-color: var(--color-background);
+color: var(--color-text);
+}
+
+/* Structural Question Workspace Shell (To be styled in Step 9) */
+.quiz-workspace-container {
+flex: 1;
+display: flex;
+flex-direction: column;
+overflow-y: auto;
+-webkit-overflow-scrolling: touch;
+}

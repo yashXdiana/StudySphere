@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="mr-IN" data-theme="light" data-font-size="medium">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>StudySphere — MPSC Group C 2026</title>
+
+  <!-- Google Fonts: Mukta for Devanagari & Latin -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Core Stylesheets -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/pages.css">
+
+  <!-- Zero-Flicker Initialization for Theme and Font Size -->
+  <script>
+    (function () {
+      try {
+        var theme = localStorage.getItem('studysphere_theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', theme);
+        var size = localStorage.getItem('studysphere_font_size') || 'medium';
+        document.documentElement.setAttribute('data-font-size', size);
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body data-page="home">
+
+  <!-- Structural Header Placeholder -->
+  <header id="site-header" class="site-header" role="banner">
+    <div class="container header-container">
+      <div class="header-brand-wrap">
+        <a href="index.html" class="brand-link" aria-label="StudySphere Homepage">
+          <span class="brand-name">StudySphere</span>
+        </a>
+      </div>
+
+      <!-- Navigation & Controls Placeholder -->
+      <nav id="site-navigation" class="site-nav" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="pages/about.html" class="nav-link">About</a>
+        <a href="pages/contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="header-actions-wrap">
+        <a href="https://t.me/MPSCstudysphere" target="_blank" rel="noopener noreferrer" class="btn btn-telegram">Telegram</a>
+        <button type="button" class="btn btn-donate" id="donate-btn">Donate</button>
+        <button type="button" class="btn-icon" id="font-size-btn" aria-label="Cycle Font Size">A</button>
+        <button type="button" class="btn-icon" id="theme-btn" aria-label="Toggle Dark or Light Mode">☾</button>
+        <button type="button" class="btn-icon mobile-menu-btn" id="mobile-drawer-toggle" aria-label="Open Navigation Menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Structural Shell -->
+  <div id="drawerOverlay" class="drawer-overlay" aria-hidden="true"></div>
+  <aside id="drawerMenu" class="mobile-drawer" role="dialog" aria-label="Mobile Navigation Menu" aria-modal="true">
+    <div class="drawer-inner">
+      <button type="button" class="btn-icon drawer-close-btn" id="mobile-drawer-close" aria-label="Close Navigation Menu">✕</button>
+      <nav class="drawer-nav" aria-label="Mobile Navigation Links">
+        <a href="index.html">Home</a>
+        <a href="pages/about.html">About</a>
+        <a href="pages/contact.html">Contact</a>
+        <a href="https://t.me/MPSCstudysphere" target="_blank" rel="noopener noreferrer">Telegram</a>
+        <button type="button" class="btn btn-donate drawer-donate-btn" id="drawer-donate-btn">Donate</button>
+      </nav>
+    </div>
+  </aside>
+
+  <!-- Main Content Structural Foundation -->
+  <main id="main-content" class="main-content" role="main">
+    <div class="container">
+      <!-- Page-specific content placeholder (Will be populated in Step 4) -->
+      <div class="content-placeholder">
+        <h1>StudySphere — MPSC Group C 2026</h1>
+        <p>Main content area structural foundation.</p>
+      </div>
+    </div>
+  </main>
+
+  <!-- Structural Footer Placeholder -->
+  <footer id="site-footer" class="site-footer" role="contentinfo">
+    <div class="container footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="footer-title">StudySphere</span>
+          <p class="footer-desc">MPSC Group C Prelims &amp; Mains Quiz Platform</p>
+        </div>
+        <nav class="footer-nav" aria-label="Footer Quick Links">
+          <a href="pages/about.html">About</a>
+          <a href="pages/contact.html">Contact</a>
+          <a href="pages/privacy-policy.html">Privacy Policy</a>
+          <a href="pages/terms.html">Terms &amp; Services</a>
+          <a href="pages/sitemap.html">Sitemap</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <a href="https://t.me/MPSCstudysphere" target="_blank" rel="noopener noreferrer" class="footer-link">Telegram</a>
+        <button type="button" class="btn btn-donate" id="footer-donate-btn">Donate</button>
+        <p class="footer-copyright">&copy; 2026 StudySphere. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/navigation.js"></script>
+</body>
+</html>
