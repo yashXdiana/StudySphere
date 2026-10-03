@@ -1,10 +1,12 @@
 /**
- * StudySphere — Common JavaScript Architecture (main.js)
+ * StudySphere — Main Controller (assets/js/main.js)
  * Responsible for:
+ *   - Mobile Right-Side Navigation Drawer (Open, Close, Escape, Overlay Backdrop)
+ *   - Body Scroll Locking during Mobile Drawer Display
  *   - Theme Controller (Light / Dark) & LocalStorage Persistence
  *   - Font Size Controller (Small / Medium / Large) & LocalStorage Persistence
+ *   - Section Heading Smooth Scroll Anchor Interceptor with Sticky Header Offset
  *   - Donation Modal Controller (Mobile amount inputs vs Desktop QR)
- *   - Section Heading Smooth Scroll Anchor Interceptor
  */
 
 (function () {
@@ -13,7 +15,72 @@
   var root = document.documentElement;
 
   /* ==========================================================================
-     1. Theme Management (Light / Dark)
+     1. Mobile Right-Side Navigation Drawer
+     ========================================================================== */
+  var drawerElement = null;
+  var overlayElement = null;
+  var isDrawerOpen = false;
+
+  function openDrawer() {
+    if (!drawerElement) drawerElement = document.getElementById('drawerMenu');
+    if (!overlayElement) overlayElement = document.getElementById('drawerOverlay');
+
+    if (drawerElement) {
+      drawerElement.classList.add('active');
+      drawerElement.setAttribute('aria-hidden', 'false');
+    }
+    if (overlayElement) {
+      overlayElement.classList.add('active');
+      overlayElement.setAttribute('aria-hidden', 'false');
+    }
+
+    var toggleBtn = document.getElementById('mobile-drawer-toggle');
+    if (toggleBtn) {
+      toggleBtn.setAttribute('aria-expanded', 'true');
+    }
+
+    document.body.style.overflow = 'hidden';
+    isDrawerOpen = true;
+
+    if (drawerElement) {
+      var firstFocusable = drawerElement.querySelector('button, [href], input, [tabindex="0"]');
+      if (firstFocusable) firstFocusable.focus();
+    }
+  }
+
+  function closeDrawer() {
+    if (!drawerElement) drawerElement = document.getElementById('drawerMenu');
+    if (!overlayElement) overlayElement = document.getElementById('drawerOverlay');
+
+    if (drawerElement) {
+      drawerElement.classList.remove('active');
+      drawerElement.setAttribute('aria-hidden', 'true');
+    }
+    if (overlayElement) {
+      overlayElement.classList.remove('active');
+      overlayElement.setAttribute('aria-hidden', 'true');
+    }
+
+    var toggleBtn = document.getElementById('mobile-drawer-toggle');
+    if (toggleBtn) {
+      toggleBtn.setAttribute('aria-expanded', 'false');
+    }
+
+    document.body.style.overflow = '';
+    isDrawerOpen = false;
+  }
+
+  function toggleDrawer(e) {
+    if (e && e.preventDefault) e.preventDefault();
+    if (isDrawerOpen) {
+      closeDrawer();
+    } else {
+      openDrawer();
+    }
+  }
+
+  /* ==========================================================================
+     2. Theme Management (Light / Dark)
      ========================================================================== */
   var THEME_STORAGE_KEY = 'studysphere_theme';
   var VALID_THEMES = ['light', 'dark'];
@@ -37,6 +104,13 @@
       localStorage.setItem(THEME_STORAGE_KEY, theme);
     } catch (e) {}
 
+    var themeBtn = document.getElementById('theme-btn');
+    if (themeBtn) {
+      themeBtn.textContent = theme === 'dark' ? '☀' : '☾';
+      themeBtn.setAttribute('title', theme === 'dark' ? 'Switch to Light Mode' : 'Switch to Dark Mode');
+      themeBtn.setAttribute('aria-label', theme === 'dark' ? 'Switch to Light Mode' : 'Switch to Dark Mode');
+    }
+
     window.dispatchEvent(new CustomEvent('studysphere:themechange', { detail: { theme: theme } }));
   }
 
@@ -47,7 +121,7 @@
   }
 
   /* ==========================================================================
-     2. Font Size Management (Small / Medium / Large)
+     3. Font Size Management (Small / Medium / Large)
      ========================================================================== */
   var FONT_STORAGE_KEY = 'studysphere_font_size';
   var FONT_TIERS = ['small', 'medium', 'large'];
@@ -69,6 +143,14 @@
       localStorage.setItem(FONT_STORAGE_KEY, size);
     } catch (e) {}
 
+    var fontBtn = document.getElementById('font-size-btn');
+    if (fontBtn) {
+      var indicator = size === 'small' ? 'A⁻' : (size === 'large' ? 'A⁺' : 'A');
+      fontBtn.textContent = indicator;
+      fontBtn.setAttribute('title', 'Font Size: ' + size.charAt(0).toUpperCase() + size.slice(1) + ' (click to cycle)');
+      fontBtn.setAttribute('aria-label', 'Font Size: ' + size.charAt(0).toUpperCase() + size.slice(1) + ' (click to cycle)');
+    }
+
     window.dispatchEvent(new CustomEvent('studysphere:fontsizechange', { detail: { size: size } }));
   }
 
@@ -80,12 +162,25 @@
   }
 
   /* ==========================================================================
-     3. Donation Modal Controller
+     4. Smooth Scroll To Section Heading
+     ========================================================================== */
+  function navigateToSection(targetId) {
+    if (!targetId) return;
+    var target = document.getElementById(targetId);
+    if (!target) return;
+
+    closeDrawer();
+    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  /* ==========================================================================
+     5. Donation Modal Controller
      ========================================================================== */
   var donationModal = null;
   var thankYouModal = null;
   var selectedAmount = 50;
   var UPI_ID = 'vikram.joshi9089@oksbi';
+  var lastFocusedElement = null;
 
   function isMobileDevice() {
     return window.innerWidth < 768;
@@ -94,6 +189,8 @@
   function openDonationModal() {
     if (!donationModal) donationModal = document.getElementById('donationModal');
     if (!donationModal) return;
+
+    lastFocusedElement = document.activeElement;
 
     var mobileSection = document.getElementById('donateMobileView');
     var desktopSection = document.getElementById('donateDesktopView');
@@ -113,6 +210,9 @@
     donationModal.classList.add('active');
     donationModal.setAttribute('aria-hidden', 'false');
     document.body.style.overflow = 'hidden';
+
+    var closeBtn = document.getElementById('modalCloseBtn');
+    if (closeBtn) closeBtn.focus();
   }
 
   function closeDonationModal() {
@@ -122,6 +222,9 @@
       donationModal.setAttribute('aria-hidden', 'true');
     }
     document.body.style.overflow = '';
+    if (lastFocusedElement && typeof lastFocusedElement.focus === 'function') {
+      lastFocusedElement.focus();
+    }
   }
 
   function resetMobileDonationForm() {
@@ -148,6 +251,9 @@
       thankYouModal.classList.add('active');
       thankYouModal.setAttribute('aria-hidden', 'false');
       document.body.style.overflow = 'hidden';
+
+      var closeBtn = document.getElementById('thankYouCloseBtn');
+      if (closeBtn) closeBtn.focus();
     }
   }
 
@@ -158,6 +264,9 @@
       thankYouModal.setAttribute('aria-hidden', 'true');
     }
     document.body.style.overflow = '';
+    if (lastFocusedElement && typeof lastFocusedElement.focus === 'function') {
+      lastFocusedElement.focus();
+    }
   }
 
   function handlePayNow() {
@@ -171,7 +280,7 @@
 
       if (isNaN(parsed) || !isFinite(parsed) || parsed <= 0 || /[^0-9.]/.test(rawVal)) {
         if (errorMsg) {
-          errorMsg.textContent = 'Please enter a valid positive amount (e.g. ₹50, ₹100).';
+          errorMsg.textContent = 'कृपया योग्य रक्कम प्रविष्ट करा (उदा. ₹50, ₹100).';
           errorMsg.classList.add('visible');
         }
         return;
@@ -181,7 +290,6 @@
 
     if (errorMsg) errorMsg.classList.remove('visible');
 
-    // Build the UPI intent URL (does NOT render UPI string into the visible popup DOM)
     var upiUrl = 'upi://pay?pa=' + encodeURIComponent(UPI_ID) +
                  '&pn=' + encodeURIComponent('StudySphere Support') +
                  '&am=' + encodeURIComponent(amountToPay) +
@@ -189,139 +297,135 @@
 
     closeDonationModal();
 
-    // Trigger external UPI app intent
     try {
       window.location.href = upiUrl;
     } catch (e) {}
 
-    // Prepare appreciation modal upon returning
     setTimeout(function () {
       openThankYouModal();
     }, 1200);
   }
 
   /* ==========================================================================
-     4. Initialization & Event Binding
+     6. Initialization & Safe Event Binding
      ========================================================================== */
-  document.addEventListener('DOMContentLoaded', function () {
-    // 1. Initial synchronization
-    var initialTheme = getStoredTheme();
-    applyTheme(initialTheme);
+  function init() {
+    // 1. Theme & Font Size
+    applyTheme(getStoredTheme());
+    applyFontSize(getStoredFontSize());
 
-    var initialSize = getStoredFontSize();
-    applyFontSize(initialSize);
-
-    // 2. Theme switch button
     var themeBtn = document.getElementById('theme-btn');
-    if (themeBtn) {
-      themeBtn.addEventListener('click', toggleTheme);
-    }
+    if (themeBtn) themeBtn.onclick = toggleTheme;
 
-    // 3. Font size button
     var fontBtn = document.getElementById('font-size-btn');
-    if (fontBtn) {
-      fontBtn.addEventListener('click', cycleFontSize);
+    if (fontBtn) fontBtn.onclick = cycleFontSize;
+
+    // 2. Mobile Drawer Navigation
+    drawerElement = document.getElementById('drawerMenu');
+    overlayElement = document.getElementById('drawerOverlay');
+
+    var mobileToggleBtn = document.getElementById('mobile-drawer-toggle');
+    if (mobileToggleBtn) mobileToggleBtn.onclick = toggleDrawer;
+
+    var drawerCloseBtn = document.getElementById('mobile-drawer-close');
+    if (drawerCloseBtn) drawerCloseBtn.onclick = closeDrawer;
+
+    if (overlayElement) overlayElement.onclick = closeDrawer;
+
+    if (drawerElement) {
+      var drawerLinks = drawerElement.querySelectorAll('a');
+      drawerLinks.forEach(function (link) {
+        link.onclick = function () {
+          closeDrawer();
+        };
+      });
     }
 
-    // 4. Donation Buttons (Header, Drawer, Footer)
+    // 3. Donation Triggers
     var donateButtons = document.querySelectorAll('#donate-btn, #drawer-donate-btn, #footer-donate-btn');
     donateButtons.forEach(function (btn) {
-      btn.addEventListener('click', function () {
-        if (window.StudySphere && window.StudySphere.nav && window.StudySphere.nav.closeDrawer) {
-          window.StudySphere.nav.closeDrawer();
-        }
+      btn.onclick = function (e) {
+        if (e && e.preventDefault) e.preventDefault();
+        closeDrawer();
         openDonationModal();
-      });
+      };
     });
 
-    // 5. Donation Modal close triggers
     var modalCloseBtn = document.getElementById('modalCloseBtn');
-    if (modalCloseBtn) modalCloseBtn.addEventListener('click', closeDonationModal);
+    if (modalCloseBtn) modalCloseBtn.onclick = closeDonationModal;
 
     var donationBackdrop = document.getElementById('donationModal');
     if (donationBackdrop) {
-      donationBackdrop.addEventListener('click', function (e) {
+      donationBackdrop.onclick = function (e) {
         if (e.target === donationBackdrop) closeDonationModal();
-      });
+      };
     }
 
-    // 6. Preset Amount Buttons
+    // 4. Donation Presets and Inputs
     var presetButtons = document.querySelectorAll('.btn-preset');
     var customInput = document.getElementById('customAmountInput');
     var errorMsg = document.getElementById('donateErrorMsg');
 
     presetButtons.forEach(function (btn) {
-      btn.addEventListener('click', function () {
+      btn.onclick = function () {
         presetButtons.forEach(function (b) { b.classList.remove('active'); });
         btn.classList.add('active');
         selectedAmount = parseInt(btn.getAttribute('data-amount'), 10);
         if (customInput) customInput.value = '';
         if (errorMsg) errorMsg.classList.remove('visible');
-      });
+      };
     });
 
     if (customInput) {
-      customInput.addEventListener('input', function () {
+      customInput.oninput = function () {
         presetButtons.forEach(function (b) { b.classList.remove('active'); });
         if (errorMsg) errorMsg.classList.remove('visible');
-      });
+      };
     }
 
-    // 7. Pay Now button
     var payNowBtn = document.getElementById('payNowBtn');
-    if (payNowBtn) payNowBtn.addEventListener('click', handlePayNow);
+    if (payNowBtn) payNowBtn.onclick = handlePayNow;
 
-    // 8. Thank You Modal close triggers
     var thankYouCloseBtn = document.getElementById('thankYouCloseBtn');
-    if (thankYouCloseBtn) thankYouCloseBtn.addEventListener('click', closeThankYouModal);
+    if (thankYouCloseBtn) thankYouCloseBtn.onclick = closeThankYouModal;
 
     var thankYouBackdrop = document.getElementById('thankYouModal');
     if (thankYouBackdrop) {
-      thankYouBackdrop.addEventListener('click', function (e) {
+      thankYouBackdrop.onclick = function (e) {
         if (e.target === thankYouBackdrop) closeThankYouModal();
-      });
+      };
     }
 
-    // 9. Quick Section Navigation Buttons — scroll smoothly to SECTION HEADINGS
-    var quickNavButtons = document.querySelectorAll('.btn-quick-nav');
+    // 5. Section Quick Navigation Buttons
+    var quickNavButtons = document.querySelectorAll('.btn-quick-nav, .hero-cta-btn');
     quickNavButtons.forEach(function (btn) {
-      btn.addEventListener('click', function (e) {
-        e.preventDefault();
-        var targetId = btn.getAttribute('data-target');
-        if (targetId) {
-          var targetElem = document.getElementById(targetId);
-          if (targetElem) {
-            targetElem.scrollIntoView({ behavior: 'smooth', block: 'start' });
-          }
-        }
-      });
+      btn.onclick = function (e) {
+        if (e && e.preventDefault) e.preventDefault();
+        var targetId = btn.getAttribute('data-target') || 'prelims-section';
+        navigateToSection(targetId);
+      };
     });
 
-    // 10. Escape key closes active modals
+    // 6. Global Escape Key Listener
     document.addEventListener('keydown', function (e) {
       if (e.key === 'Escape') {
+        if (isDrawerOpen) closeDrawer();
         closeDonationModal();
         closeThankYouModal();
       }
     });
-  });
+  }
 
-  /* ==========================================================================
-     5. Public API Namespace Export
-     ========================================================================== */
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+
+  // Global Namespace Export
   window.StudySphere = window.StudySphere || {};
-  window.StudySphere.theme = {
-    get: getStoredTheme,
-    set: applyTheme,
-    toggle: toggleTheme
-  };
-  window.StudySphere.font = {
-    get: getStoredFontSize,
-    set: applyFontSize,
-    cycle: cycleFontSize
-  };
-  window.StudySphere.donate = {
-    open: openDonationModal,
-    close: closeDonationModal
-  };
+  window.StudySphere.theme = { get: getStoredTheme, set: applyTheme, toggle: toggleTheme };
+  window.StudySphere.font = { get: getStoredFontSize, set: applyFontSize, cycle: cycleFontSize };
+  window.StudySphere.nav = { open: openDrawer, close: closeDrawer, toggle: toggleDrawer, scrollTo: navigateToSection };
+  window.StudySphere.donate = { open: openDonationModal, close: closeDonationModal };
 })();
