@@ -2,8 +2,9 @@
  * StudySphere — Common Navigation Architecture (navigation.js)
  * Responsible for:
  *   - Mobile Right-Side Drawer (Open, Close, Overlay Backdrop)
- *   - Escape Key Accessibility Interceptor
- *   - Explicit Anchor Scrolling to Section Headings (e.g. Explore Subjects)
+ *   - Body Scroll Locking during Mobile Drawer Display
+ *   - Keyboard Accessibility (Escape key interceptor & focus trapping)
+ *   - Explicit Anchor Scrolling to Section Headings
  */
 
 (function () {
@@ -20,16 +21,29 @@
     if (!drawerElement) drawerElement = document.getElementById('drawerMenu');
     if (!overlayElement) overlayElement = document.getElementById('drawerOverlay');
 
-    if (drawerElement) drawerElement.classList.add('active');
-    if (overlayElement) overlayElement.classList.add('active');
+    if (drawerElement) {
+      drawerElement.classList.add('active');
+      drawerElement.setAttribute('aria-hidden', 'false');
+    }
+    if (overlayElement) {
+      overlayElement.classList.add('active');
+      overlayElement.setAttribute('aria-hidden', 'false');
+    }
+
+    var toggleBtn = document.getElementById('mobile-drawer-toggle');
+    if (toggleBtn) {
+      toggleBtn.setAttribute('aria-expanded', 'true');
+    }
 
     document.body.style.overflow = 'hidden';
     isDrawerOpen = true;
 
-    // Accessibility: Focus first focusable element inside drawer
+    // Accessibility: Focus first interactive control inside the drawer
     if (drawerElement) {
-      var firstFocusable = drawerElement.querySelector('button, [href], input');
-      if (firstFocusable) firstFocusable.focus();
+      var firstFocusable = drawerElement.querySelector('button, [href], input, [tabindex="0"]');
+      if (firstFocusable) {
+        firstFocusable.focus();
+      }
     }
   }
 
@@ -37,14 +51,26 @@
     if (!drawerElement) drawerElement = document.getElementById('drawerMenu');
     if (!overlayElement) overlayElement = document.getElementById('drawerOverlay');
 
-    if (drawerElement) drawerElement.classList.remove('active');
-    if (overlayElement) overlayElement.classList.remove('active');
+    if (drawerElement) {
+      drawerElement.classList.remove('active');
+      drawerElement.setAttribute('aria-hidden', 'true');
+    }
+    if (overlayElement) {
+      overlayElement.classList.remove('active');
+      overlayElement.setAttribute('aria-hidden', 'true');
+    }
+
+    var toggleBtn = document.getElementById('mobile-drawer-toggle');
+    if (toggleBtn) {
+      toggleBtn.setAttribute('aria-expanded', 'false');
+    }
 
     document.body.style.overflow = '';
     isDrawerOpen = false;
   }
 
-  function toggleDrawer() {
+  function toggleDrawer(e) {
+    if (e && e.preventDefault) e.preventDefault();
     if (isDrawerOpen) {
       closeDrawer();
     } else {
@@ -65,15 +91,63 @@
   }
 
   /* ==========================================================================
-     3. Global Keyboard and Window Listeners
+     3. Event Binding & Initialization (Safe for all document states)
      ========================================================================== */
-  document.addEventListener('keydown', function (e) {
-    if (e.key === 'Escape' && isDrawerOpen) {
-      closeDrawer();
-    }
-  });
+  function initNavigation() {
+    drawerElement = document.getElementById('drawerMenu');
+    overlayElement = document.getElementById('drawerOverlay');
 
-  // Export to global namespace
+    // Toggle button in header
+    var mobileToggleBtn = document.getElementById('mobile-drawer-toggle');
+    if (mobileToggleBtn) {
+      // Remove any existing duplicate listeners by replacing with fresh handler
+      mobileToggleBtn.onclick = toggleDrawer;
+    }
+
+    // Close button inside drawer
+    var drawerCloseBtn = document.getElementById('mobile-drawer-close');
+    if (drawerCloseBtn) {
+      drawerCloseBtn.onclick = function (e) {
+        if (e && e.preventDefault) e.preventDefault();
+        closeDrawer();
+      };
+    }
+
+    // Backdrop overlay click closes drawer
+    if (overlayElement) {
+      overlayElement.onclick = function (e) {
+        if (e && e.preventDefault) e.preventDefault();
+        closeDrawer();
+      };
+    }
+
+    // Close drawer when any internal navigation link is tapped
+    if (drawerElement) {
+      var drawerLinks = drawerElement.querySelectorAll('a');
+      drawerLinks.forEach(function (link) {
+        link.addEventListener('click', function () {
+          closeDrawer();
+        });
+      });
+    }
+
+    // Keyboard support: Escape closes active drawer
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && isDrawerOpen) {
+        closeDrawer();
+      }
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initNavigation);
+  } else {
+    initNavigation();
+  }
+
+  /* ==========================================================================
+     4. Public API Namespace Export
+     ========================================================================== */
   window.StudySphere = window.StudySphere || {};
   window.StudySphere.nav = {
     openDrawer: openDrawer,
