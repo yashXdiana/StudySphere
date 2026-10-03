@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
   <title>StudySphere — MPSC Group C 2026 Prelims + Mains Quiz Platform</title>
 
-  <!-- Google Fonts: Mukta for Devanagari (Marathi) and Latin glyph harmony -->
+  <!-- Google Fonts: Mukta for Marathi (Devanagari) & Latin Glyphs -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -28,7 +28,7 @@
 <body data-page="home">
 
   <!-- ==========================================================================
-       1. Header: Desktop & Mobile Adaptive
+       1. Header: Desktop & Mobile Adaptive (No Overflow on Mobile)
        ========================================================================== -->
   <header id="site-header" class="site-header" role="banner">
     <div class="container header-container">
@@ -54,6 +54,7 @@
 
       <!-- Header Action Controls -->
       <div class="header-actions-wrap">
+        <!-- Desktop-Only Action Buttons (Hidden on mobile to prevent overflow) -->
         <a href="https://t.me/MPSCstudysphere" target="_blank" rel="noopener noreferrer" class="btn btn-telegram header-btn-telegram" aria-label="Join our Telegram Channel">
           <svg class="btn-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <path d="m22 2-7 20-4-9-9-4Z"></path>
@@ -62,6 +63,8 @@
           <span>Telegram</span>
         </a>
         <button type="button" class="btn btn-donate header-btn-donate" id="donate-btn">Donate Us</button>
+
+        <!-- Compact Controls: Visible on both Desktop and Mobile -->
         <button type="button" class="btn-icon" id="font-size-btn" aria-label="Cycle Font Size" title="Font Size: Medium (click to cycle)">A</button>
         <button type="button" class="btn-icon" id="theme-btn" aria-label="Toggle Dark or Light Mode" title="Toggle Dark or Light Mode">☾</button>
         <button type="button" class="btn-icon mobile-menu-btn" id="mobile-drawer-toggle" aria-label="Open Navigation Menu" title="Open Navigation">☰</button>
@@ -70,15 +73,27 @@
   </header>
 
   <!-- ==========================================================================
-       2. Mobile Navigation Drawer (Single-Line Option Alignment)
+       2. Mobile Navigation Drawer (Includes Telegram, Donate, & Side-by-Side Jump Buttons)
        ========================================================================== -->
   <div id="drawerOverlay" class="drawer-overlay" aria-hidden="true"></div>
   <aside id="drawerMenu" class="mobile-drawer" role="dialog" aria-label="Mobile Navigation Menu" aria-modal="true" aria-hidden="true">
     <div class="drawer-inner">
       <div class="drawer-header">
-        <span class="drawer-title">Navigation</span>
+        <span class="drawer-title">StudySphere</span>
         <button type="button" class="btn-icon drawer-close-btn" id="mobile-drawer-close" aria-label="Close Navigation Menu">✕</button>
       </div>
+
+      <!-- Quick Navigation Buttons Side-by-Side inside Drawer -->
+      <div class="drawer-quick-nav-block">
+        <span class="drawer-section-label">त्वरित विभाग</span>
+        <div class="drawer-quick-nav-grid">
+          <button type="button" class="btn-drawer-quick-nav" data-target="prelims-section">पूर्व परीक्षा</button>
+          <button type="button" class="btn-drawer-quick-nav" data-target="mains-section">मुख्य परीक्षा</button>
+          <button type="button" class="btn-drawer-quick-nav" data-target="combine-quiz-section">Exam Simulator</button>
+        </div>
+      </div>
+
+      <!-- Primary Drawer Navigation Links -->
       <nav class="drawer-nav" aria-label="Mobile Navigation Links">
         <a href="index.html" class="drawer-link active">
           <svg class="drawer-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -101,20 +116,25 @@
           </svg>
           <span>Contact</span>
         </a>
-        <a href="https://t.me/MPSCstudysphere" target="_blank" rel="noopener noreferrer" class="drawer-link">
+      </nav>
+
+      <!-- Drawer Actions: Telegram & Donate Us permanently visible on mobile -->
+      <div class="drawer-actions-block">
+        <a href="https://t.me/MPSCstudysphere" target="_blank" rel="noopener noreferrer" class="drawer-action-btn drawer-telegram-btn">
           <svg class="drawer-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <path d="m22 2-7 20-4-9-9-4Z"></path>
             <path d="M22 2 11 13"></path>
           </svg>
-          <span>Telegram</span>
+          <span>Telegram चॅनेल</span>
         </a>
-        <button type="button" class="btn btn-donate drawer-donate-btn" id="drawer-donate-btn">
+
+        <button type="button" class="drawer-action-btn drawer-donate-btn" id="drawer-donate-btn">
           <svg class="drawer-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path>
           </svg>
-          <span>Donate Us</span>
+          <span>Donate Us (मदत करा)</span>
         </button>
-      </nav>
+      </div>
     </div>
   </aside>
 
@@ -124,7 +144,7 @@
   <main id="main-content" class="main-content" role="main">
     <div class="container">
       
-      <!-- Hero / Introduction Section -->
+      <!-- Hero / Introduction Section (Without Explore Subjects Button) -->
       <section class="hero-section" aria-labelledby="hero-title">
         <div class="hero-content">
           <span class="hero-badge">MPSC Group C 2026</span>
@@ -132,29 +152,20 @@
           <p class="hero-desc">
             MPSC Group C 2026 परीक्षेच्या संपूर्ण तयारीसाठी एक शांत, जाहिरातमुक्त आणि दर्जेदार अभ्यास मंच. येथे Prelims आणि Mains परीक्षेसाठी विषयनिहाय सराव, घटकनिहाय चाचण्या व परिपूर्ण Mock Quizzes उपलब्ध आहेत.
           </p>
-          <div class="hero-cta-wrapper">
-            <button type="button" class="btn btn-donate hero-cta-btn" data-target="prelims-section">
-              <span>Explore Subjects</span>
-              <span aria-hidden="true" style="font-weight: 800;">↓</span>
-            </button>
-          </div>
         </div>
       </section>
 
-      <!-- Section Navigation Dock (Between Hero and Prelims) -->
-      <nav class="section-nav-wrapper" aria-label="Section Quick Navigation">
+      <!-- Section Navigation Dock: 3 Buttons Side-by-Side (Button 1 | Button 2 | Button 3) -->
+      <nav class="section-nav-wrapper" aria-label="Quick Section Navigation">
         <div class="quick-nav-bar">
           <button type="button" class="btn-quick-nav" data-target="prelims-section">
-            <span>Explore Prelims</span>
-            <span class="nav-arrow" aria-hidden="true">↓</span>
+            <span>पूर्व परीक्षा</span>
           </button>
           <button type="button" class="btn-quick-nav" data-target="mains-section">
-            <span>Explore Mains</span>
-            <span class="nav-arrow" aria-hidden="true">↓</span>
+            <span>मुख्य परीक्षा</span>
           </button>
           <button type="button" class="btn-quick-nav" data-target="combine-quiz-section">
-            <span>Explore Combine Quiz</span>
-            <span class="nav-arrow" aria-hidden="true">↓</span>
+            <span>Exam Simulator</span>
           </button>
         </div>
       </nav>
@@ -308,7 +319,7 @@
           <h2 id="mains-heading" class="section-heading">
             <span class="heading-accent">MPSC Group C 2026 — MAINS</span>
           </h2>
-          <p class="section-subheading">Comprehensive Preparation for Paper 1 (Language) &amp; Paper 2 (GS &amp; Intelligence)</p>
+          <p class="section-subheading">Paper 1 (Language) &amp; Paper 2 (GS &amp; Intelligence)</p>
         </div>
 
         <!-- Mains Paper 1: Language -->
@@ -545,13 +556,12 @@
       </section>
 
       <!-- ==========================================================================
-           Section 3: MPSC Group C 2026 — COMBINE QUIZ
-           (Tightened bottom margin for natural transition to Footer)
+           Section 3: MPSC Group C 2026 — COMBINE QUIZ / Exam Simulator
            ========================================================================== -->
       <section class="study-section combine-section-container" id="combine-quiz-section" aria-labelledby="combine-quiz-heading">
         <div class="section-header-block">
           <h2 id="combine-quiz-heading" class="section-heading">
-            <span class="heading-accent">MPSC Group C 2026 — COMBINE QUIZ</span>
+            <span class="heading-accent">MPSC Group C 2026 — Exam Simulator</span>
           </h2>
           <p class="section-subheading">परीक्षेसारख्या वातावरणात संपूर्ण सराव चाचण्या (Exam-Simulation Mock Papers)</p>
         </div>
