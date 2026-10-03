@@ -341,7 +341,7 @@
       });
     }
 
-    // 3. Donation Triggers
+    // 3. Donation Triggers (Both Desktop and Drawer-based)
     var donateButtons = document.querySelectorAll('#donate-btn, #drawer-donate-btn, #footer-donate-btn');
     donateButtons.forEach(function (btn) {
       btn.onclick = function (e) {
@@ -396,8 +396,8 @@
       };
     }
 
-    // 5. Section Quick Navigation Buttons
-    var quickNavButtons = document.querySelectorAll('.btn-quick-nav, .hero-cta-btn');
+    // 5. Section Quick Navigation Buttons (both on-page dock and inside mobile drawer)
+    var quickNavButtons = document.querySelectorAll('.btn-quick-nav, .btn-drawer-quick-nav');
     quickNavButtons.forEach(function (btn) {
       btn.onclick = function (e) {
         if (e && e.preventDefault) e.preventDefault();
