@@ -1,0 +1,56 @@
+{
+  "quizId": "TEST-001",
+  "title": {
+    "mr": "Test Quiz",
+    "en": "Test Quiz"
+  },
+  "subject": "history",
+  "paper": "Prelims",
+  "type": "mixed_chapter",
+  "chapters": [
+    "test-chapter"
+  ],
+  "difficulty": "moderate",
+  "duration": 10,
+  "marksPerQuestion": 2,
+  "negativeMarking": 0.5,
+  "totalQuestions": 1,
+  "questions": [
+    {
+      "questionId": "TEST-001-Q001",
+      "chapter": "test-chapter",
+      "difficulty": "moderate",
+      "question": {
+        "mr": "भारताची राजधानी कोणती?",
+        "en": "What is the capital of India?"
+      },
+      "options": [
+        {
+          "id": "A",
+          "mr": "मुंबई",
+          "en": "Mumbai"
+        },
+        {
+          "id": "B",
+          "mr": "नवी दिल्ली",
+          "en": "New Delhi"
+        },
+        {
+          "id": "C",
+          "mr": "पुणे",
+          "en": "Pune"
+        },
+        {
+          "id": "D",
+          "mr": "नागपूर",
+          "en": "Nagpur"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": {
+        "mr": "नवी दिल्ली ही भारताची राजधानी आहे.",
+        "en": "New Delhi is the capital of India."
+      }
+    }
+  ]
+}
