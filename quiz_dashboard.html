@@ -5,12 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
   <title>StudySphere — Quiz Dashboard</title>
 
-  <!-- Google Fonts: Mukta -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  
-  <!-- FontAwesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
   <style>
@@ -64,9 +61,6 @@
     .view-section { display: none; width: 100%; height: 100%; flex-direction: column; overflow: hidden; }
     .view-section.active { display: flex; }
 
-    /* =========================================
-       1. Setup Screen
-       ========================================= */
     .setup-viewport {
       flex: 1; overflow-y: auto; padding: 20px; display: flex; justify-content: center; align-items: center; background: var(--quiz-bg);
     }
@@ -96,9 +90,6 @@
     }
     .btn-start:hover { background: #e04848; }
 
-    /* =========================================
-       2. Active Quiz Runner
-       ========================================= */
     .quiz-header {
       height: var(--header-height); background: var(--quiz-surface); border-bottom: 1px solid var(--quiz-border);
       display: flex; align-items: center; justify-content: space-between; padding: 0 16px; flex-shrink: 0;
@@ -118,7 +109,6 @@
     }
     .timer-pill.warning { color: var(--status-warning); border-color: var(--status-warning); background: #ffebee; }
     
-    /* Mobile Menu Icon for Palette */
     .btn-palette-toggle {
       background: none; border: 1px solid var(--quiz-border-strong); color: var(--quiz-text);
       width: 32px; height: 32px; border-radius: 6px; display: flex; align-items: center; justify-content: center; cursor: pointer;
@@ -161,7 +151,6 @@
     .opt-text-mr { font-size: 16px; font-weight: 700; }
     .opt-text-en { font-size: 13px; font-weight: 500; color: var(--quiz-text-muted); }
 
-    /* Desktop Palette */
     .palette-sidebar {
       width: 280px; background: var(--quiz-surface); border-left: 1px solid var(--quiz-border);
       display: none; flex-direction: column; overflow-y: auto; padding: 20px;
@@ -179,7 +168,6 @@
     .p-btn.ans-marked { background: var(--status-ans-marked-bg); color: #fff; }
     .p-btn.current { box-shadow: 0 0 0 2px #fff, 0 0 0 4px var(--color-dark); }
 
-    /* Mobile Palette Drawer */
     .mobile-palette-overlay {
       position: fixed; inset: 0; background: rgba(0,0,0,0.5); z-index: 100; display: none;
     }
@@ -192,7 +180,6 @@
     .drawer-header { display: flex; justify-content: space-between; padding: 16px; border-bottom: 1px solid var(--quiz-border); font-weight: 800;}
     .drawer-body { padding: 16px; overflow-y: auto; flex: 1; }
 
-    /* Single Line Bottom Bar */
     .bottom-bar {
       height: var(--footer-height); background: var(--quiz-surface); border-top: 1px solid var(--quiz-border);
       display: flex; align-items: center; justify-content: space-between; padding: 0 8px; flex-shrink: 0;
@@ -214,9 +201,6 @@
     .btn-next { background: var(--color-dark); color: #fff; }
     .btn-submit { background: var(--status-correct); color: #fff; display: none; }
 
-    /* =========================================
-       3. Results View
-       ========================================= */
     .result-viewport {
       flex: 1; overflow-y: auto; padding: 20px; background: var(--quiz-bg);
     }
@@ -258,7 +242,6 @@
     .btn-report:hover { background: #fff1f1; }
     .btn-report.reported { background: var(--status-correct); border-color: var(--status-correct); color: #fff; }
 
-    /* Modals & Toasts */
     .modal-overlay {
       position: fixed; inset: 0; background: rgba(0,0,0,0.5); display: none; align-items: center; justify-content: center; z-index: 200; padding: 16px;
     }
@@ -285,7 +268,7 @@
     <div id="viewSetup" class="view-section active">
       <div class="setup-viewport">
         <div class="setup-card">
-          <span class="setup-badge">MPSC Group C 2026</span>
+          <span class="setup-badge">StudySphere Mock Test</span>
           <h1 id="setupTitle" class="setup-title">Loading...</h1>
           <p id="setupContext" class="setup-subtitle">Please wait...</p>
           
@@ -429,6 +412,7 @@
 
   <script>
     // Configuration
+    // MAKE SURE TO REPLACE THIS URL IF YOUR APPS SCRIPT LINK CHANGES
     const REPORT_APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzXR7L9lMGyh7NTj-dEzI_OcudYEHg_a12VZNkA8RVIpSZV_oRSFkZpSYlIzeDDx6vRPQ/exec';
 
     // State Variables
@@ -453,12 +437,15 @@
       const fileUrl = urlParams.get('quizFile');
 
       if (!fileUrl) {
-        // Fallback demo data if no URL param is provided
+        // Fallback demo data if no URL param is provided (for testing)
         quizData = getFallbackData();
         renderSetupScreen();
       } else {
         fetch(fileUrl)
-          .then(res => res.json())
+          .then(res => {
+            if (!res.ok) throw new Error("File not found");
+            return res.json();
+          })
           .then(data => {
             quizData = data;
             renderSetupScreen();
@@ -474,8 +461,11 @@
 
     function renderSetupScreen() {
       if(!quizData) return;
-      document.getElementById('setupTitle').innerText = quizData.titleMr || quizData.titleEn || "Quiz";
-      document.getElementById('setupContext').innerText = `${quizData.subjectNameMr} • ${quizData.chapterNameMr}`;
+      document.getElementById('setupTitle').innerText = quizData.titleMr || quizData.title || "Quiz";
+      
+      const subject = quizData.subjectNameMr || "General";
+      const chapter = quizData.chapterNameMr || "Practice";
+      document.getElementById('setupContext').innerText = `${subject} • ${chapter}`;
       
       document.getElementById('setupMetaQ').innerText = quizData.questions.length;
       document.getElementById('setupMetaM').innerText = quizData.totalMarks || quizData.questions.length;
@@ -491,7 +481,7 @@
       vActive.classList.add('active');
       
       // Setup Header
-      document.getElementById('hdrTitle').innerText = quizData.titleMr || "Quiz";
+      document.getElementById('hdrTitle').innerText = quizData.titleMr || quizData.title || "Quiz";
       document.getElementById('hdrSub').innerText = quizData.chapterNameMr || "";
       
       // Setup Timer
@@ -537,7 +527,15 @@
       document.getElementById('qMarksBadge').innerText = `गुण: ${q.marks || 1} | उणे: ${quizData.negativeMarkingPerWrong || 0.25}`;
       
       document.getElementById('qTextMr').innerText = q.question.mr;
-      document.getElementById('qTextEn').innerText = q.question.en || '';
+      
+      // Show english question only if it exists
+      const enTextEl = document.getElementById('qTextEn');
+      if(q.question.en) {
+          enTextEl.innerText = q.question.en;
+          enTextEl.style.display = 'block';
+      } else {
+          enTextEl.style.display = 'none';
+      }
 
       const optContainer = document.getElementById('optionsContainer');
       optContainer.innerHTML = '';
@@ -548,13 +546,14 @@
         div.className = `option-row ${isSelected ? 'selected' : ''}`;
         div.onclick = () => selectOption(q.questionId, opt.id);
         
-        div.innerHTML = `
-          <div class="opt-circle"></div>
-          <div class="opt-text-wrap">
-            <span class="opt-text-mr">${opt.id}. ${opt.text.mr}</span>
-            <span class="opt-text-en">${opt.text.en || ''}</span>
-          </div>
-        `;
+        let optHtml = `<div class="opt-circle"></div><div class="opt-text-wrap">`;
+        optHtml += `<span class="opt-text-mr">${opt.id}. ${opt.text.mr}</span>`;
+        if (opt.text.en) {
+            optHtml += `<span class="opt-text-en">${opt.text.en}</span>`;
+        }
+        optHtml += `</div>`;
+        
+        div.innerHTML = optHtml;
         optContainer.appendChild(div);
       });
 
@@ -578,7 +577,7 @@
 
     function selectOption(qId, optId) {
       selectedAnswers[qId] = optId;
-      renderQuestion(currentIndex); // re-render to show selection and update palette
+      renderQuestion(currentIndex);
     }
 
     function renderPalettes() {
@@ -646,7 +645,6 @@
       vResult.classList.add('active');
 
       let correct = 0, wrong = 0, unans = 0;
-      const totalMarks = quizData.totalMarks || quizData.questions.length;
       const negRate = quizData.negativeMarkingPerWrong || 0.25;
 
       quizData.questions.forEach(q => {
@@ -725,10 +723,13 @@
       const comment = document.getElementById('reportComment').value;
       const q = quizData.questions[currentReportIndex];
       
+      // Payload structure strictly matches what Code.gs expects
       const payload = {
         quizId: quizData.quizId || "UNKNOWN",
         questionId: currentReportQId,
         questionNumber: currentReportIndex + 1,
+        subject: quizData.subjectNameMr || "General",
+        chapter: quizData.chapterNameMr || "Mixed",
         questionText: q.question.mr,
         issue: issue,
         comment: comment
@@ -738,26 +739,33 @@
       btnSub.innerText = "Submitting...";
       btnSub.disabled = true;
 
+      // CRITICAL: Content-Type text/plain is used to bypass complex CORS preflight issues with Google Apps Script.
       fetch(REPORT_APPS_SCRIPT_URL, {
         method: 'POST',
-        mode: 'no-cors',
-        headers: { 'Content-Type': 'application/json' },
+        headers: {
+          'Content-Type': 'text/plain;charset=utf-8'
+        },
         body: JSON.stringify(payload)
       })
-      .then(() => {
-        reportedCache[currentReportQId] = true;
-        document.getElementById('reportModal').style.display = 'none';
-        showToast("Report submitted successfully!");
-        
-        // Update Button visually
-        const repBtn = document.getElementById(`btnRep_${currentReportQId}`);
-        if(repBtn) {
-          repBtn.className = 'btn-report reported';
-          repBtn.innerText = 'Reported ✓';
+      .then(response => response.json())
+      .then(data => {
+        if(data.result === 'success') {
+          reportedCache[currentReportQId] = true;
+          document.getElementById('reportModal').style.display = 'none';
+          showToast("Report submitted successfully!");
+          
+          // Update Button visually
+          const repBtn = document.getElementById(`btnRep_${currentReportQId}`);
+          if(repBtn) {
+            repBtn.className = 'btn-report reported';
+            repBtn.innerText = 'Reported ✓';
+          }
+        } else {
+          throw new Error(data.error || "Unknown error");
         }
       })
       .catch(err => {
-        showToast("Error submitting report.");
+        showToast("Error submitting report. Please try again.");
         console.error(err);
       })
       .finally(() => {
