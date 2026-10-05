@@ -857,6 +857,9 @@
             document.getElementById('prelims-grid').innerHTML = syllabusData.prelims.map(createSubjectCardHtml).join('');
             document.getElementById('mains-paper1-grid').innerHTML = syllabusData.mains_paper1.map(createSubjectCardHtml).join('');
             document.getElementById('mains-paper2-grid').innerHTML = syllabusData.mains_paper2.map(createSubjectCardHtml).join('');
+
+            // Restore state if available
+            restoreState();
         }
 
         function navigateTo(viewId) {
@@ -865,6 +868,41 @@
             if(target) {
                 target.classList.remove('hidden');
                 window.scrollTo({ top: 0, behavior: 'smooth' });
+                
+                // Save current view to sessionStorage
+                sessionStorage.setItem('currentView', viewId);
+                // Clear any specific subject/mock state when returning to home/static pages
+                if (viewId !== 'view-subject-details' && viewId !== 'view-mock-list') {
+                    sessionStorage.removeItem('currentSubjectId');
+                    sessionStorage.removeItem('currentMockTitle');
+                    sessionStorage.removeItem('currentMockCategory');
+                }
+            }
+        }
+
+        function restoreState() {
+            const currentView = sessionStorage.getItem('currentView');
+            
+            if (currentView === 'view-subject-details') {
+                const subjectId = sessionStorage.getItem('currentSubjectId');
+                if (subjectId) {
+                    openSubjectView(subjectId);
+                } else {
+                    navigateTo('view-home'); // Fallback
+                }
+            } else if (currentView === 'view-mock-list') {
+                const mockTitle = sessionStorage.getItem('currentMockTitle');
+                const mockCategory = sessionStorage.getItem('currentMockCategory');
+                if (mockTitle && mockCategory) {
+                    openMockListView(mockTitle, mockCategory);
+                } else {
+                    navigateTo('view-home'); // Fallback
+                }
+            } else if (currentView) {
+                navigateTo(currentView);
+            } else {
+                // Default to home if no state
+                navigateTo('view-home');
             }
         }
 
@@ -878,6 +916,9 @@
         function openSubjectView(subjectId) {
             const sub = subjectLookup[subjectId];
             if(!sub) return;
+
+            // Save state
+            sessionStorage.setItem('currentSubjectId', subjectId);
 
             document.getElementById('sd-icon').className = `w-12 h-12 bg-slate text-white rounded-lg flex items-center justify-center text-xl fa-solid ${sub.icon}`;
             document.getElementById('sd-title-en').innerText = sub.en;
@@ -966,6 +1007,11 @@
            4. Mock Test List View Generation
            ========================================================================== */
         function openMockListView(title, category) {
+            
+            // Save State
+            sessionStorage.setItem('currentMockTitle', title);
+            sessionStorage.setItem('currentMockCategory', category);
+
             document.getElementById('mock-list-title').innerText = title;
             
             let mockTests = globalCatalog.filter(q => q.subject === "संपूर्ण सराव चाचणी" || q.subject === "Full Mock Test");
