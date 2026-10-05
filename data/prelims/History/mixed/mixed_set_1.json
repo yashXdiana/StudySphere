@@ -1,0 +1,49 @@
+{
+"quizId": "HIST-CH01-QZ01",
+"titleMr": "आधुनिक भारताचा इतिहास - सराव १",
+"title": "Modern Indian History - Test 1",
+"subjectNameMr": "इतिहास",
+"chapterNameMr": "आधुनिक भारताचा इतिहास",
+"durationMinutes": 15,
+"totalMarks": 10,
+"negativeMarkingPerWrong": 0.25,
+"difficulty": "Medium",
+"questions": [
+{
+"questionId": "q1",
+"marks": 1,
+"question": {
+"mr": "१८५७ च्या उठावाचे तात्कालिक कारण काय होते?",
+"en": "What was the immediate cause of the 1857 revolt?"
+},
+"options": [
+{ "id": "A", "text": { "mr": "दत्तक वारसा नामंजूर" } },
+{ "id": "B", "text": { "mr": "एनफिल्ड रायफलला गायीची व डुकराची चरबी लावलेले काडतूस" } },
+{ "id": "C", "text": { "mr": "जमीन महसूल धोरण" } },
+{ "id": "D", "text": { "mr": "ख्रिस्ती धर्मप्रसारक" } }
+],
+"correctAnswer": "B",
+"explanation": {
+"mr": "नवीन एनफिल्ड रायफलच्या काडतुसांना गायीची आणि डुकराची चरबी लावलेली असायची, ज्यामुळे सैनिकांच्या धार्मिक भावना दुखावल्या गेल्या."
+}
+},
+{
+"questionId": "q2",
+"marks": 1,
+"question": {
+"mr": "महात्मा जोतीराव फुले यांनी 'सत्यशोधक समाजाची' स्थापना कोणत्या वर्षी केली?",
+"en": "In which year did Mahatma Jotirao Phule establish the 'Satyashodhak Samaj'?"
+},
+"options": [
+{ "id": "A", "text": { "mr": "१८७३" } },
+{ "id": "B", "text": { "mr": "१८७५" } },
+{ "id": "C", "text": { "mr": "१८८५" } },
+{ "id": "D", "text": { "mr": "१८९०" } }
+],
+"correctAnswer": "A",
+"explanation": {
+"mr": "२४ सप्टेंबर १८७३ रोजी पुण्यात महात्मा फुले यांनी सत्यशोधक समाजाची स्थापना केली."
+}
+}
+]
+}
