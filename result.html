@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="mr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StudySphere | चाचणी निकाल आणि सविस्तर विश्लेषण</title>
+  <meta name="description" content="MPSC Group C सराव चाचणी निकाल, गुणपत्रक आणि सविस्तर स्पष्टीकरण">
+
+  <!-- Google Fonts & Tailwind CSS CDN -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;500;600;700;800&family=Noto+Sans+Devanagari:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Mukta"', '"Noto Sans Devanagari"', '"Plus Jakarta Sans"', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              50: '#eef2ff',
+              100: '#e0e7ff',
+              500: '#6366f1',
+              600: '#4f46e5',
+              700: '#4338ca',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* मराठी जोडाक्षरे आणि अक्षरे न तुटण्यासाठी प्रगत टायपोग्राफी */
+    html, body {
+      font-feature-settings: "liga" 1, "kern" 1;
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    ::-webkit-scrollbar { width: 6px; height: 6px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+    ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
+    .dark ::-webkit-scrollbar-thumb { background: #334155; }
+
+    @media print {
+      header, .no-print { display: none !important; }
+      body { background: #ffffff !important; color: #000000 !important; }
+      .print-shadow-none { box-shadow: none !important; border-color: #cbd5e1 !important; }
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 dark:bg-[#0b0f19] dark:text-slate-100 font-sans min-h-screen flex flex-col antialiased transition-colors duration-200">
+
+  <!-- ========================================== -->
+  <!-- TOP HEADER -->
+  <!-- ========================================== -->
+  <header class="sticky top-0 z-40 bg-white/95 dark:bg-[#0e1626]/95 backdrop-blur border-b border-slate-200 dark:border-slate-800 shadow-sm transition-colors duration-200">
+    <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 h-14 sm:h-16 flex items-center justify-between gap-2">
+      
+      <!-- Brand & Back -->
+      <a href="index.html" class="flex items-center gap-2 group">
+        <div class="w-8 h-8 sm:w-9 sm:h-9 rounded-xl bg-indigo-600 text-white flex items-center justify-center font-bold text-xs shadow-md shadow-indigo-600/30 group-hover:scale-105 transition-transform">
+          SS
+        </div>
+        <div class="flex flex-col">
+          <span class="text-sm sm:text-base font-bold tracking-tight text-slate-900 dark:text-white leading-tight">StudySphere</span>
+          <span class="text-[10px] text-slate-500 dark:text-slate-400">निकाल व सविस्तर विश्लेषण</span>
+        </div>
+      </a>
+
+      <!-- Right Action Controls -->
+      <div class="flex items-center gap-1.5 sm:gap-2">
+        <a href="test-list.html" id="backToSubjectBtn" class="px-2.5 py-1.5 rounded-lg bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 text-xs font-bold transition-all flex items-center gap-1">
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/></svg>
+          <span class="hidden sm:inline">चाचणी सूची</span>
+        </a>
+
+        <a href="index.html" class="px-2.5 py-1.5 rounded-lg bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 text-xs font-bold transition-all flex items-center gap-1">
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+          <span class="hidden sm:inline">Home</span>
+        </a>
+
+        <!-- Dark/Light Theme Switcher -->
+        <button onclick="toggleDarkMode()" title="थीम बदला" class="p-1.5 sm:p-2 rounded-lg bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 transition-all">
+          <svg id="sunIcon" class="w-4 h-4 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg id="moonIcon" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ========================================== -->
+  <!-- MAIN RESULT CONTENT -->
+  <!-- ========================================== -->
+  <main class="flex-grow max-w-5xl mx-auto px-3 sm:px-6 lg:px-8 py-5 sm:py-8 w-full">
+
+    <!-- Empty State: No Result Found (Strictly No Demo Data) -->
+    <div id="noResultState" class="hidden text-center py-14 px-4 bg-white dark:bg-[#131d31] rounded-2xl border border-slate-200 dark:border-slate-800 my-auto">
+      <div class="w-14 h-14 bg-indigo-50 dark:bg-indigo-950/60 text-indigo-600 dark:text-indigo-400 rounded-full flex items-center justify-center mx-auto mb-3 shadow-inner">
+        <svg class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+      </div>
+      <h2 class="text-base sm:text-lg font-bold text-slate-900 dark:text-white">कोणताही चाचणी निकाल उपलब्ध नाही</h2>
+      <p class="text-xs text-slate-500 dark:text-slate-400 mt-1 max-w-sm mx-auto leading-relaxed">
+        तुम्ही अजून कोणतीही सराव चाचणी सोडवलेली नाही किंवा चाचणीचा कालावधी पूर्ण झालेला नाही.
+      </p>
+      <div class="mt-5 flex items-center justify-center gap-3">
+        <a href="test-list.html" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-indigo-600 text-white text-xs font-bold hover:bg-indigo-700 shadow-md transition-all active:scale-95">
+          <span>सराव चाचणी निवडा</span>
+          <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- Active Result Container -->
+    <div id="activeResultContainer" class="space-y-6">
+
+      <!-- Top Score Summary Banner -->
+      <div class="relative overflow-hidden rounded-2xl sm:rounded-3xl bg-gradient-to-br from-indigo-900 via-indigo-800 to-slate-900 text-white p-5 sm:p-7 shadow-xl border border-indigo-700/40">
+        <div class="absolute -right-12 -bottom-12 w-56 h-56 rounded-full bg-indigo-500/20 blur-3xl pointer-events-none"></div>
+
+        <div class="relative z-10">
+          
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-4 border-b border-indigo-700/50">
+            <div>
+              <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[10px] sm:text-[11px] font-extrabold uppercase tracking-wide bg-amber-400/20 text-amber-300 border border-amber-300/30 mb-1.5">
+                चाचणी निकाल (Test Result)
+              </span>
+              <h1 id="testTitle" class="text-lg sm:text-2xl font-extrabold text-white leading-snug">
+                सराव चाचणी निकाल
+              </h1>
+            </div>
+
+            <!-- Quick Utility Buttons: Retake, Share, PDF -->
+            <div class="flex flex-wrap items-center gap-1.5 sm:gap-2 no-print">
+              <button onclick="shareScoreWhatsApp()" title="WhatsApp वर स्कोअर शेअर करा" class="px-3 py-1.5 rounded-xl bg-emerald-600/90 hover:bg-emerald-600 text-white font-bold text-xs flex items-center gap-1.5 shadow-sm active:scale-95 transition-all">
+                <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+                <span>Share</span>
+              </button>
+
+              <button onclick="window.print()" title="PDF सेव्ह किंवा प्रिंट करा" class="px-3 py-1.5 rounded-xl bg-white/10 hover:bg-white/20 border border-white/20 text-white font-bold text-xs backdrop-blur transition-all flex items-center gap-1.5 active:scale-95">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4H7v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"/></svg>
+                <span class="hidden xs:inline">Print / PDF</span>
+              </button>
+
+              <button onclick="retakeTest()" class="px-3 py-1.5 rounded-xl bg-indigo-500 hover:bg-indigo-600 text-white font-bold text-xs shadow-md transition-all flex items-center gap-1.5 active:scale-95">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/></svg>
+                <span>पुन्हा सोडवा</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- 4-Cell Metric Tiles Grid -->
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5 sm:gap-4 mt-5">
+            
+            <!-- Total Marks -->
+            <div class="p-3.5 rounded-xl sm:rounded-2xl bg-white/10 backdrop-blur border border-white/10 flex flex-col justify-between">
+              <span class="text-[11px] sm:text-xs text-indigo-200 font-semibold">मिळालेले गुण</span>
+              <div class="mt-1 flex items-baseline gap-1">
+                <span id="scoreObtained" class="text-xl sm:text-3xl font-extrabold text-white">०.००</span>
+                <span id="scoreTotal" class="text-xs text-indigo-200">/ ०</span>
+              </div>
+              <span id="percentageBadge" class="text-[10px] sm:text-[11px] font-bold text-amber-300 mt-1">०% गुण</span>
+            </div>
+
+            <!-- Accuracy -->
+            <div class="p-3.5 rounded-xl sm:rounded-2xl bg-white/10 backdrop-blur border border-white/10 flex flex-col justify-between">
+              <span class="text-[11px] sm:text-xs text-indigo-200 font-semibold">अचूकता (Accuracy)</span>
+              <div class="mt-1 flex items-baseline gap-1">
+                <span id="accuracyVal" class="text-xl sm:text-3xl font-extrabold text-emerald-400">०%</span>
+              </div>
+              <span class="text-[10px] sm:text-[11px] text-slate-300 mt-1">प्रयत्नांपैकी अचूक</span>
+            </div>
+
+            <!-- Time Spent -->
+            <div class="p-3.5 rounded-xl sm:rounded-2xl bg-white/10 backdrop-blur border border-white/10 flex flex-col justify-between">
+              <span class="text-[11px] sm:text-xs text-indigo-200 font-semibold">घेतलेला वेळ</span>
+              <div class="mt-1 flex items-baseline gap-1">
+                <span id="timeSpentVal" class="text-xl sm:text-3xl font-extrabold text-white">००:००</span>
+              </div>
+              <span id="speedMetricBadge" class="text-[10px] sm:text-[11px] text-slate-300 mt-1">० सेकंद/प्रश्न</span>
+            </div>
+
+            <!-- Negative Deduction -->
+            <div class="p-3.5 rounded-xl sm:rounded-2xl bg-white/10 backdrop-blur border border-white/10 flex flex-col justify-between">
+              <span class="text-[11px] sm:text-xs text-indigo-200 font-semibold">निगेटिव्ह वजावट</span>
+              <div class="mt-1 flex items-baseline gap-1">
+                <span id="negDeductionVal" class="text-xl sm:text-3xl font-extrabold text-rose-400">-०.००</span>
+              </div>
+              <span class="text-[10px] sm:text-[11px] text-slate-300 mt-1">-०.२५ प्रति चूक</span>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Quick Attempt Stat Badges -->
+      <div class="grid grid-cols-3 gap-2 sm:gap-3">
+        <div class="p-3 sm:p-3.5 rounded-xl bg-emerald-50 dark:bg-emerald-950/40 border border-emerald-200 dark:border-emerald-800/50 flex items-center justify-between">
+          <div class="flex items-center gap-2">
+            <div class="w-6 h-6 sm:w-7 sm:h-7 rounded-lg bg-emerald-500 text-white flex items-center justify-center font-bold text-xs">✓</div>
+            <div>
+              <p class="text-[10px] sm:text-xs text-emerald-800 dark:text-emerald-300 font-semibold">बरोबर</p>
+              <p id="statCorrect" class="text-base sm:text-lg font-extrabold text-emerald-700 dark:text-emerald-400">०</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-3 sm:p-3.5 rounded-xl bg-rose-50 dark:bg-rose-950/40 border border-rose-200 dark:border-rose-800/50 flex items-center justify-between">
+          <div class="flex items-center gap-2">
+            <div class="w-6 h-6 sm:w-7 sm:h-7 rounded-lg bg-rose-500 text-white flex items-center justify-center font-bold text-xs">✗</div>
+            <div>
+              <p class="text-[10px] sm:text-xs text-rose-800 dark:text-rose-300 font-semibold">चुकीचे</p>
+              <p id="statIncorrect" class="text-base sm:text-lg font-extrabold text-rose-700 dark:text-rose-400">०</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-3 sm:p-3.5 rounded-xl bg-slate-100 dark:bg-slate-800/70 border border-slate-200 dark:border-slate-700 flex items-center justify-between">
+          <div class="flex items-center gap-2">
+            <div class="w-6 h-6 sm:w-7 sm:h-7 rounded-lg bg-slate-400 text-white flex items-center justify-center font-bold text-xs">—</div>
+            <div>
+              <p class="text-[10px] sm:text-xs text-slate-700 dark:text-slate-300 font-semibold">अनुत्तरित</p>
+              <p id="statUnattempted" class="text-base sm:text-lg font-extrabold text-slate-700 dark:text-slate-300">०</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Review Section Header, Language Switcher & Filter Controls -->
+      <div class="flex flex-col md:flex-row md:items-center justify-between gap-3 pb-3 border-b border-slate-200 dark:border-slate-800 no-print">
+        
+        <div>
+          <h2 class="text-sm sm:text-base font-bold text-slate-900 dark:text-white flex items-center gap-2">
+            <span>सर्व प्रश्नांचे सविस्तर स्पष्टीकरण (Detailed Review)</span>
+          </h2>
+          <p class="text-[11px] text-slate-500 dark:text-slate-400">प्रश्नात त्रुटी आढळल्यास 'त्रुटी नोंदवा (Report)' बटणाचा वापर करा</p>
+        </div>
+
+        <div class="flex flex-wrap items-center gap-2">
+          
+          <!-- Bilingual Language Selector for Review -->
+          <div class="flex items-center p-0.5 rounded-lg bg-slate-200/80 dark:bg-slate-800 text-[10px] sm:text-[11px] font-bold">
+            <button type="button" onclick="setReviewLanguage('both')" id="reviewLangBoth" 
+                    class="px-2.5 py-1 rounded-md transition-all bg-white dark:bg-slate-900 text-indigo-600 dark:text-indigo-400 shadow-sm">
+              दोन्ही
+            </button>
+            <button type="button" onclick="setReviewLanguage('mr')" id="reviewLangMr" 
+                    class="px-2.5 py-1 rounded-md transition-all text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white">
+              मराठी
+            </button>
+            <button type="button" onclick="setReviewLanguage('en')" id="reviewLangEn" 
+                    class="px-2.5 py-1 rounded-md transition-all text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white">
+              Eng
+            </button>
+          </div>
+
+          <!-- Question Attempt Filters -->
+          <div class="flex items-center p-0.5 rounded-lg bg-slate-200/80 dark:bg-slate-800 text-[10px] sm:text-[11px] font-bold">
+            <button onclick="filterQuestions('all')" id="btnFilterAll" class="q-filter px-2 sm:px-2.5 py-1 rounded-md bg-white dark:bg-slate-900 text-indigo-600 dark:text-indigo-400 shadow-sm">
+              सर्व (<span id="countAll">०</span>)
+            </button>
+            <button onclick="filterQuestions('incorrect')" id="btnFilterIncorrect" class="q-filter px-2 sm:px-2.5 py-1 rounded-md text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white">
+              चूक (<span id="countIncorrect">०</span>)
+            </button>
+            <button onclick="filterQuestions('correct')" id="btnFilterCorrect" class="q-filter px-2 sm:px-2.5 py-1 rounded-md text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white">
+              बरोबर (<span id="countCorrect">०</span>)
+            </button>
+            <button onclick="filterQuestions('skipped')" id="btnFilterSkipped" class="q-filter px-2 sm:px-2.5 py-1 rounded-md text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white">
+              अनुत्तरित (<span id="countSkipped">०</span>)
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Questions Review Cards Container -->
+      <div id="questionsReviewContainer" class="space-y-4 sm:space-y-5">
+        <!-- Rendered dynamically via JS -->
+      </div>
+
+    </div>
+
+  </main>
+
+  <!-- ========================================== -->
+  <!-- REPORT QUESTION MODAL (APPS SCRIPT SYNC) -->
+  <!-- ========================================== -->
+  <div id="reportModal" class="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm hidden items-center justify-center p-3 sm:p-4 no-print">
+    <div class="bg-white dark:bg-[#131d31] rounded-2xl w-full max-w-sm sm:max-w-md p-5 sm:p-6 shadow-2xl border border-slate-200 dark:border-slate-800 relative animate-fade-in my-auto">
+      
+      <button onclick="closeReportModal()" class="absolute top-4 right-4 p-1.5 text-slate-400 hover:text-slate-600 dark:hover:text-white rounded-lg">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+      </button>
+
+      <div class="flex items-center gap-3 mb-3.5 pb-2.5 border-b border-slate-100 dark:border-slate-800">
+        <div class="w-9 h-9 rounded-xl bg-rose-50 dark:bg-rose-950/60 text-rose-600 dark:text-rose-400 flex items-center justify-center font-bold text-sm shrink-0">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
+        </div>
+        <div>
+          <h3 class="text-xs sm:text-sm font-bold text-slate-900 dark:text-white">प्रश्नातील त्रुटी नोंदवा (Report Issue)</h3>
+          <p id="reportQuestionBadge" class="text-[11px] text-slate-500 dark:text-slate-400 font-medium">प्रश्न क्रमांक #</p>
+        </div>
+      </div>
+
+      <form id="reportForm" onsubmit="submitReportToGoogleSheet(event)" class="space-y-3.5 text-xs">
+        
+        <!-- Hidden Context Parameters -->
+        <input type="hidden" id="reportQuizId" value="">
+        <input type="hidden" id="reportQuestionId" value="">
+        <input type="hidden" id="reportQuestionNum" value="">
+        <input type="hidden" id="reportSubject" value="">
+        <input type="hidden" id="reportChapter" value="">
+        <input type="hidden" id="reportQuestionSnippet" value="">
+
+        <!-- Issue Category Selector -->
+        <div>
+          <label class="block font-bold text-slate-700 dark:text-slate-300 mb-1">त्रुटीचा प्रकार निवडा: *</label>
+          <select id="reportIssueType" required class="w-full p-2 rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900 text-slate-800 dark:text-slate-100 font-medium focus:ring-2 focus:ring-indigo-500 focus:outline-none text-xs">
+            <option value="उत्तर चुकीचे आहे (Incorrect Answer Key)">उत्तर चुकीचे आहे (Incorrect Answer Key)</option>
+            <option value="प्रश्नात अथवा पर्यायात चूक (Question/Option Mistake)">प्रश्नात अथवा पर्यायात चूक (Question/Option Mistake)</option>
+            <option value="मराठी/इंग्रजी भाषांतरात दोष (Translation Error)">मराठी/इंग्रजी भाषांतरात दोष (Translation Error)</option>
+            <option value="स्पष्टीकरणात चूक (Incorrect Explanation)">स्पष्टीकरणात चूक (Incorrect Explanation)</option>
+            <option value="इतर तांत्रिक अडचण (Other)">इतर तांत्रिक अडचण (Other)</option>
+          </select>
+        </div>
+
+        <!-- Additional Note -->
+        <div>
+          <label class="block font-bold text-slate-700 dark:text-slate-300 mb-1">सविस्तर माहिती / संदर्भ (वैकल्पिक):</label>
+          <textarea id="reportDetails" rows="3" placeholder="आपल्या मते योग्य उत्तर काय असायला हवे किंवा त्रुटीबद्दल माहिती लिहा..." class="w-full p-2.5 rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900 text-slate-800 dark:text-slate-100 font-medium focus:ring-2 focus:ring-indigo-500 focus:outline-none text-xs"></textarea>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="flex items-center gap-2 pt-1">
+          <button type="button" onclick="closeReportModal()" class="flex-1 py-2 rounded-xl bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 font-bold text-slate-700 dark:text-slate-300 transition-colors">
+            रद्द करा
+          </button>
+          <button type="submit" id="reportSubmitBtn" class="flex-1 py-2 rounded-xl bg-rose-600 hover:bg-rose-700 text-white font-bold shadow-md shadow-rose-600/25 active:scale-95 transition-all flex items-center justify-center gap-1.5">
+            <span>नोंदवा (Submit)</span>
+          </button>
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div id="toastNotification" class="fixed bottom-5 right-5 z-50 transform translate-y-20 opacity-0 transition-all duration-300 bg-slate-900 text-white dark:bg-white dark:text-slate-900 px-4 py-2.5 rounded-xl shadow-xl flex items-center gap-2 text-xs font-semibold no-print">
+    <svg id="toastIcon" class="w-4 h-4 text-emerald-400 dark:text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+    <span id="toastMessage">नोंद यशस्वी झाली!</span>
+  </div>
+
+  <!-- ========================================== -->
+  <!-- JAVASCRIPT RESULT ENGINE CORE LOGIC -->
+  <!-- ========================================== -->
+  <script>
+    // --- Google Apps Script Endpoint ---
+    const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzXR7L9lMGyh7NTj-dEzI_OcudYEHg_a12VZNkA8RVIpSZV_oRSFkZpSYlIzeDDx6vRPQ/exec";
+
+    // --- State Variables ---
+    let resultData = null;
+    let currentFilter = 'all';
+    let reviewLanguage = 'both'; // 'both' | 'mr' | 'en'
+    let reportedQuestions = new Set(); // Stores reported question numbers to track state
+
+    // Resolve text helper for string or { mr, en }
+    function resolveText(item, lang = reviewLanguage) {
+      if (!item) return '';
+      if (typeof item === 'string') return item;
+      if (typeof item === 'object') {
+        if (lang === 'mr') return item.mr || item.en || '';
+        if (lang === 'en') return item.en || item.mr || '';
+        return item;
+      }
+      return String(item);
+    }
+
+    function setReviewLanguage(lang) {
+      reviewLanguage = lang;
+      const btns = {
+        both: document.getElementById('reviewLangBoth'),
+        mr: document.getElementById('reviewLangMr'),
+        en: document.getElementById('reviewLangEn')
+      };
+
+      Object.keys(btns).forEach(key => {
+        if (btns[key]) {
+          if (key === lang) {
+            btns[key].className = 'px-2.5 py-1 rounded-md transition-all bg-white dark:bg-slate-900 text-indigo-600 dark:text-indigo-400 shadow-sm';
+          } else {
+            btns[key].className = 'px-2.5 py-1 rounded-md transition-all text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white';
+          }
+        }
+      });
+
+      renderQuestionsReview();
+    }
+
+    // STRICT CLEAN LOADER: STRICTLY NO DEMO RESULT!
+    function loadResultData() {
+      const stored = sessionStorage.getItem('currentTestResult');
+      if (stored) {
+        try {
+          resultData = JSON.parse(stored);
+        } catch (e) {
+          resultData = null;
+        }
+      }
+
+      // If no test was attempted, display the clean error state (NO FAKE DATA)
+      if (!resultData || !Array.isArray(resultData.questionsAnalysis) || resultData.questionsAnalysis.length === 0) {
+        document.getElementById('activeResultContainer').classList.add('hidden');
+        document.getElementById('noResultState').classList.remove('hidden');
+        return;
+      }
+
+      document.getElementById('noResultState').classList.add('hidden');
+      document.getElementById('activeResultContainer').classList.remove('hidden');
+
+      renderScoreSummary();
+      renderQuestionsReview();
+    }
+
+    function renderScoreSummary() {
+      const titleMr = resolveText(resultData.title, 'mr');
+      document.getElementById('testTitle').textContent = titleMr || 'MPSC Group C सराव चाचणी निकाल';
+
+      const obtained = resultData.marksObtained !== undefined ? resultData.marksObtained : 0;
+      const totalMarks = resultData.totalMarks || (resultData.totalQuestions || 20);
+      document.getElementById('scoreObtained').textContent = obtained.toFixed(2);
+      document.getElementById('scoreTotal').textContent = `/ ${totalMarks}`;
+
+      // Percentage calculation
+      const pct = Math.max(0, Math.min(100, (obtained / totalMarks) * 100));
+      document.getElementById('percentageBadge').textContent = `${pct.toFixed(1)}% गुण`;
+
+      // Accuracy: Correct / Total Attempted
+      const attempted = (resultData.correctCount || 0) + (resultData.incorrectCount || 0);
+      const accuracy = attempted > 0 ? ((resultData.correctCount / attempted) * 100).toFixed(1) : '0';
+      document.getElementById('accuracyVal').textContent = `${accuracy}%`;
+
+      // Time spent & average speed per question
+      const spentSec = resultData.timeSpentSeconds || 0;
+      const m = Math.floor(spentSec / 60);
+      const s = spentSec % 60;
+      document.getElementById('timeSpentVal').textContent = `${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`;
+
+      const totalQ = resultData.totalQuestions || resultData.questionsAnalysis.length || 1;
+      const avgSec = Math.round(spentSec / totalQ);
+      document.getElementById('speedMetricBadge').textContent = `सरासरी: ${avgSec} सेकंद/प्रश्न`;
+
+      // Negative deduction
+      document.getElementById('negDeductionVal').textContent = `-${(resultData.negativeDeduction || 0).toFixed(2)}`;
+
+      // Status counters
+      document.getElementById('statCorrect').textContent = resultData.correctCount || 0;
+      document.getElementById('statIncorrect').textContent = resultData.incorrectCount || 0;
+      document.getElementById('statUnattempted').textContent = resultData.unattemptedCount || 0;
+
+      // Filter counters
+      document.getElementById('countAll').textContent = resultData.questionsAnalysis.length;
+      document.getElementById('countIncorrect').textContent = resultData.incorrectCount || 0;
+      document.getElementById('countCorrect').textContent = resultData.correctCount || 0;
+      document.getElementById('countSkipped').textContent = resultData.unattemptedCount || 0;
+    }
+
+    function renderQuestionsReview() {
+      const container = document.getElementById('questionsReviewContainer');
+      container.innerHTML = '';
+
+      const letters = ['A', 'B', 'C', 'D'];
+
+      resultData.questionsAnalysis.forEach((item, idx) => {
+        const qNum = idx + 1;
+        const isAttempted = item.isAttempted;
+        const isCorrect = item.isCorrect;
+
+        // Filtering logic
+        if (currentFilter === 'correct' && !isCorrect) return;
+        if (currentFilter === 'incorrect' && (isCorrect || !isAttempted)) return;
+        if (currentFilter === 'skipped' && isAttempted) return;
+
+        // Attempt status badge
+        let statusBadge = '';
+        let cardBorderClass = 'border-slate-200 dark:border-slate-800';
+
+        if (!isAttempted) {
+          statusBadge = `<span class="px-2 py-0.5 rounded text-[10px] sm:text-xs font-bold bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300">अनुत्तरित (Skipped)</span>`;
+        } else if (isCorrect) {
+          statusBadge = `<span class="px-2 py-0.5 rounded text-[10px] sm:text-xs font-bold bg-emerald-100 dark:bg-emerald-950/80 text-emerald-700 dark:text-emerald-300 flex items-center gap-1">✓ बरोबर (+१.००)</span>`;
+          cardBorderClass = 'border-emerald-200 dark:border-emerald-900/60';
+        } else {
+          statusBadge = `<span class="px-2 py-0.5 rounded text-[10px] sm:text-xs font-bold bg-rose-100 dark:bg-rose-950/80 text-rose-700 dark:text-rose-300 flex items-center gap-1">✗ चूक (-०.२५)</span>`;
+          cardBorderClass = 'border-rose-200 dark:border-rose-900/60';
+        }
+
+        const card = document.createElement('div');
+        card.className = `p-3.5 sm:p-5 rounded-2xl bg-white dark:bg-[#131d31] border ${cardBorderClass} shadow-sm transition-all`;
+
+        // Render bilingual question text
+        const qData = item.question;
+        let questionHtml = '';
+
+        if (typeof qData === 'object' && qData !== null) {
+          const mrQ = qData.mr || '';
+          const enQ = qData.en || '';
+
+          if (reviewLanguage === 'mr') {
+            questionHtml = `<p class="text-xs sm:text-sm font-bold text-slate-900 dark:text-slate-100 leading-relaxed">${mrQ || enQ}</p>`;
+          } else if (reviewLanguage === 'en') {
+            questionHtml = `<p class="text-xs sm:text-sm font-bold text-slate-900 dark:text-slate-100 leading-relaxed">${enQ || mrQ}</p>`;
+          } else {
+            questionHtml = `
+              <div class="space-y-1">
+                <div class="flex items-start gap-1.5">
+                  <span class="px-1 py-0.2 rounded text-[8px] font-extrabold uppercase bg-indigo-100 dark:bg-indigo-950 text-indigo-700 dark:text-indigo-300 shrink-0 mt-0.5">MR</span>
+                  <p class="text-xs sm:text-sm font-bold text-slate-900 dark:text-slate-100 leading-relaxed">${mrQ}</p>
+                </div>
+                ${enQ ? `
+                <div class="flex items-start gap-1.5 pt-1 border-t border-dashed border-slate-200 dark:border-slate-800">
+                  <span class="px-1 py-0.2 rounded text-[8px] font-extrabold uppercase bg-amber-100 dark:bg-amber-950 text-amber-700 dark:text-amber-300 shrink-0 mt-0.5">EN</span>
+                  <p class="text-xs sm:text-sm font-medium text-slate-600 dark:text-slate-300 leading-relaxed">${enQ}</p>
+                </div>` : ''}
+              </div>
+            `;
+          }
+        } else {
+          questionHtml = `<p class="text-xs sm:text-sm font-bold text-slate-900 dark:text-slate-100 leading-relaxed">${qData}</p>`;
+        }
+
+        // Render bilingual options
+        let optionsHtml = '';
+        item.options.forEach((opt, optIndex) => {
+          const isCorrectAnswer = (optIndex === item.correctAnswerIndex);
+          const isUserChoice = (optIndex === item.givenAnswer);
+
+          let optBoxClass = 'border-slate-200 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-900/30 text-slate-800 dark:text-slate-200';
+          let optBadge = '';
+
+          if (isCorrectAnswer) {
+            optBoxClass = 'border-emerald-500 bg-emerald-50 dark:bg-emerald-950/40 text-emerald-900 dark:text-emerald-200 font-semibold';
+            optBadge = `<span class="px-2 py-0.5 rounded text-[9px] font-extrabold uppercase bg-emerald-600 text-white shrink-0">योग्य उत्तर</span>`;
+          } else if (isUserChoice && !isCorrect) {
+            optBoxClass = 'border-rose-500 bg-rose-50 dark:bg-rose-950/40 text-rose-900 dark:text-rose-200';
+            optBadge = `<span class="px-2 py-0.5 rounded text-[9px] font-extrabold uppercase bg-rose-600 text-white shrink-0">तुमचे उत्तर (चूक)</span>`;
+          }
+
+          let optTextHtml = '';
+          if (typeof opt === 'object' && opt !== null) {
+            const mrOpt = opt.mr || '';
+            const enOpt = opt.en || '';
+
+            if (reviewLanguage === 'mr') {
+              optTextHtml = `<span class="text-xs font-semibold">${mrOpt || enOpt}</span>`;
+            } else if (reviewLanguage === 'en') {
+              optTextHtml = `<span class="text-xs font-semibold">${enOpt || mrOpt}</span>`;
+            } else {
+              optTextHtml = `
+                <div class="flex flex-col">
+                  <span class="text-xs font-bold text-slate-900 dark:text-slate-100">${mrOpt}</span>
+                  ${enOpt ? `<span class="text-[10px] text-slate-500 dark:text-slate-400 font-normal">${enOpt}</span>` : ''}
+                </div>
+              `;
+            }
+          } else {
+            optTextHtml = `<span class="text-xs font-medium">${opt}</span>`;
+          }
+
+          optionsHtml += `
+            <div class="p-2 sm:p-2.5 rounded-xl border flex items-center justify-between gap-2.5 ${optBoxClass}">
+              <div class="flex items-center gap-2 sm:gap-2.5 min-w-0">
+                <span class="w-5 h-5 sm:w-6 sm:h-6 rounded-lg text-xs font-bold flex items-center justify-center shrink-0 border ${
+                  isCorrectAnswer 
+                    ? 'bg-emerald-600 text-white border-emerald-600 shadow-sm' 
+                    : (isUserChoice 
+                        ? 'bg-rose-600 text-white border-rose-600 shadow-sm' 
+                        : 'bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-300 border-slate-300 dark:border-slate-600')
+                }">
+                  ${letters[optIndex] || optIndex + 1}
+                </span>
+                ${optTextHtml}
+              </div>
+              ${optBadge}
+            </div>
+          `;
+        });
+
+        // Explanation (Bilingual)
+        const expData = item.explanation;
+        let explanationHtml = '';
+
+        if (typeof expData === 'object' && expData !== null) {
+          const mrExp = expData.mr || '';
+          const enExp = expData.en || '';
+
+          if (reviewLanguage === 'mr') {
+            explanationHtml = `<p class="text-[11px] sm:text-xs text-slate-700 dark:text-slate-300 leading-relaxed">${mrExp || enExp}</p>`;
+          } else if (reviewLanguage === 'en') {
+            explanationHtml = `<p class="text-[11px] sm:text-xs text-slate-700 dark:text-slate-300 leading-relaxed">${enExp || mrExp}</p>`;
+          } else {
+            explanationHtml = `
+              <div class="space-y-1">
+                <p class="text-[11px] sm:text-xs text-slate-800 dark:text-slate-200 leading-relaxed font-medium">${mrExp}</p>
+                ${enExp ? `<p class="text-[10px] sm:text-[11px] text-slate-500 dark:text-slate-400 leading-relaxed pt-1 border-t border-dashed border-amber-200/60 dark:border-amber-900/40">${enExp}</p>` : ''}
+              </div>
+            `;
+          }
+        } else {
+          explanationHtml = `<p class="text-[11px] sm:text-xs text-slate-700 dark:text-slate-300 leading-relaxed">${expData || 'स्पष्टीकरण उपलब्ध नाही.'}</p>`;
+        }
+
+        // Check if question is already reported
+        const isReported = reportedQuestions.has(qNum);
+        let reportBtnHtml = '';
+
+        if (isReported) {
+          // Green and Unclickable State
+          reportBtnHtml = `
+            <button disabled 
+                    class="no-print inline-flex items-center gap-1 px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-lg text-[10px] sm:text-[11px] font-bold bg-emerald-50 dark:bg-emerald-950/60 text-emerald-600 dark:text-emerald-400 border border-emerald-300 dark:border-emerald-800 cursor-not-allowed opacity-90">
+              <svg class="w-3 h-3 text-emerald-600 dark:text-emerald-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+              <span>✓ नोंदवले (Reported)</span>
+            </button>
+          `;
+        } else {
+          // Standard Red Active State
+          const snippet = encodeURIComponent(resolveText(qData, 'mr').substring(0, 80) + '...');
+          reportBtnHtml = `
+            <button id="report-btn-${qNum}" onclick="openReportModal('${resultData.testId || 'test-01'}', '${item.questionId || qNum}', '${qNum}', '${snippet}')" 
+                    class="no-print inline-flex items-center gap-1 px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-lg text-[10px] sm:text-[11px] font-bold text-rose-600 dark:text-rose-400 bg-rose-50 dark:bg-rose-950/40 hover:bg-rose-100 dark:hover:bg-rose-900/60 border border-rose-200 dark:border-rose-900 transition-all active:scale-95" title="प्रश्नात चूक असल्यास नोंदवा">
+              <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
+              <span>त्रुटी नोंदवा (Report)</span>
+            </button>
+          `;
+        }
+
+        card.innerHTML = `
+          <!-- Card Header Strip -->
+          <div class="flex items-center justify-between gap-2 mb-3 pb-2 border-b border-slate-100 dark:border-slate-800">
+            <div class="flex items-center gap-1.5 sm:gap-2">
+              <span class="px-2 py-0.5 rounded-md bg-indigo-100 dark:bg-indigo-950 text-indigo-700 dark:text-indigo-300 font-extrabold text-[11px]">
+                प्रश्न #${qNum}
+              </span>
+              ${statusBadge}
+            </div>
+            ${reportBtnHtml}
+          </div>
+
+          <!-- Question Body -->
+          <div class="mb-3">
+            ${questionHtml}
+          </div>
+
+          <!-- 4 Options Grid/Stack -->
+          <div class="space-y-1.5 sm:space-y-2 mb-3">
+            ${optionsHtml}
+          </div>
+
+          <!-- Detailed Explanation Box -->
+          <div class="p-2.5 sm:p-3 rounded-xl bg-amber-50/70 dark:bg-amber-950/20 border border-amber-200/80 dark:border-amber-900/40">
+            <div class="flex items-center gap-1.5 text-[11px] font-bold text-amber-800 dark:text-amber-300 mb-1">
+              <svg class="w-3.5 h-3.5 text-amber-600 dark:text-amber-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              <span>सविस्तर स्पष्टीकरण (Explanation):</span>
+            </div>
+            ${explanationHtml}
+          </div>
+        `;
+
+        container.appendChild(card);
+      });
+    }
+
+    function filterQuestions(filterType) {
+      currentFilter = filterType;
+
+      document.querySelectorAll('.q-filter').forEach(btn => {
+        btn.className = 'q-filter px-2 sm:px-2.5 py-1 rounded-md text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white';
+      });
+
+      const activeBtnId = {
+        'all': 'btnFilterAll',
+        'incorrect': 'btnFilterIncorrect',
+        'correct': 'btnFilterCorrect',
+        'skipped': 'btnFilterSkipped'
+      }[filterType];
+
+      if (document.getElementById(activeBtnId)) {
+        document.getElementById(activeBtnId).className = 'q-filter px-2 sm:px-2.5 py-1 rounded-md bg-white dark:bg-slate-900 text-indigo-600 dark:text-indigo-400 shadow-sm font-bold';
+      }
+
+      renderQuestionsReview();
+    }
+
+    // Modal Reporting Controllers
+    function openReportModal(quizId, questionId, questionNum, escapedSnippet) {
+      const snippet = decodeURIComponent(escapedSnippet);
+
+      document.getElementById('reportQuizId').value = quizId;
+      document.getElementById('reportQuestionId').value = questionId;
+      document.getElementById('reportQuestionNum').value = questionNum;
+      document.getElementById('reportQuestionBadge').textContent = `चाचणी: ${quizId} • प्रश्न #${questionNum}`;
+      document.getElementById('reportQuestionSnippet').value = snippet;
+
+      const title = resolveText(resultData.title, 'mr');
+      document.getElementById('reportSubject').value = title || 'General';
+      document.getElementById('reportChapter').value = resultData.testId || 'N/A';
+
+      document.getElementById('reportDetails').value = '';
+      document.getElementById('reportIssueType').selectedIndex = 0;
+
+      const modal = document.getElementById('reportModal');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    }
+
+    function closeReportModal() {
+      const modal = document.getElementById('reportModal');
+      modal.classList.remove('flex');
+      modal.classList.add('hidden');
+    }
+
+    async function submitReportToGoogleSheet(e) {
+      e.preventDefault();
+
+      const btn = document.getElementById('reportSubmitBtn');
+      const originalText = btn.innerHTML;
+      btn.disabled = true;
+      btn.innerHTML = `
+        <svg class="w-3.5 h-3.5 animate-spin text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="10" stroke-width="3"></circle><path stroke-linecap="round" d="M12 2a10 10 0 0 1 10 10" stroke-width="3" stroke="currentColor"></path></svg>
+        <span>नोंदवत आहे...</span>
+      `;
+
+      const qNumVal = parseInt(document.getElementById('reportQuestionNum').value);
+
+      // Construct Google Apps Script Payload (9 Exact Columns)
+      const reportPayload = {
+        quizId: document.getElementById('reportQuizId').value,
+        questionId: document.getElementById('reportQuestionId').value,
+        questionNumber: qNumVal,
+        subject: document.getElementById('reportSubject').value,
+        chapter: document.getElementById('reportChapter').value,
+        question: document.getElementById('reportQuestionSnippet').value,
+        issue: document.getElementById('reportIssueType').value,
+        additionalDetails: document.getElementById('reportDetails').value || 'काही नाही',
+        status: "Pending"
+      };
+
+      try {
+        const formData = new FormData();
+        Object.keys(reportPayload).forEach(key => {
+          formData.append(key, reportPayload[key]);
+        });
+
+        await fetch(APPS_SCRIPT_URL, {
+          method: 'POST',
+          mode: 'no-cors',
+          body: formData
+        });
+
+        // Mark question as reported to transform button state to Green & Disabled
+        reportedQuestions.add(qNumVal);
+        closeReportModal();
+        showToast('त्रुटी यशस्वीपणे नोंदवली गेली! धन्यवाद.');
+        renderQuestionsReview();
+      } catch (err) {
+        reportedQuestions.add(qNumVal);
+        closeReportModal();
+        showToast('तक्रार नोंदवण्यात आली आहे.');
+        renderQuestionsReview();
+      } finally {
+        btn.disabled = false;
+        btn.innerHTML = originalText;
+      }
+    }
+
+    // WhatsApp Score Share Generator
+    function shareScoreWhatsApp() {
+      if (!resultData) return;
+      const obtained = (resultData.marksObtained !== undefined ? resultData.marksObtained : 0).toFixed(2);
+      const total = resultData.totalMarks || (resultData.totalQuestions || 20);
+      const title = resolveText(resultData.title, 'mr');
+
+      const text = `🎯 *StudySphere MPSC Group C सराव निकाल*\n\n📝 *चाचणी:* ${title}\n🏆 *मिळालेले गुण:* ${obtained} / ${total}\n✅ *बरोबर:* ${resultData.correctCount}\n❌ *चुकीचे:* ${resultData.incorrectCount}\n\nतुम्हीही मोफत MPSC सराव चाचणी सोडवा आणि तयारी मजबूत करा! 👇\n${window.location.origin}`;
+      const url = `https://api.whatsapp.com/send?text=${encodeURIComponent(text)}`;
+      window.open(url, '_blank');
+    }
+
+    function retakeTest() {
+      window.location.href = 'test-list.html';
+    }
+
+    // Toast Notification helper
+    let toastTimeout;
+    function showToast(msg) {
+      const toast = document.getElementById('toastNotification');
+      document.getElementById('toastMessage').textContent = msg;
+
+      toast.classList.remove('translate-y-20', 'opacity-0');
+      toast.classList.add('translate-y-0', 'opacity-100');
+
+      clearTimeout(toastTimeout);
+      toastTimeout = setTimeout(() => {
+        toast.classList.remove('translate-y-0', 'opacity-100');
+        toast.classList.add('translate-y-20', 'opacity-0');
+      }, 3000);
+    }
+
+    // Dark Mode Theme Controllers
+    function initTheme() {
+      const isDark = localStorage.getItem('studySphereTheme') === 'dark' ||
+        (!('studySphereTheme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches);
+      
+      if (isDark) {
+        document.documentElement.classList.add('dark');
+        document.getElementById('sunIcon').classList.remove('hidden');
+        document.getElementById('moonIcon').classList.add('hidden');
+      } else {
+        document.documentElement.classList.remove('dark');
+        document.getElementById('sunIcon').classList.add('hidden');
+        document.getElementById('moonIcon').classList.remove('hidden');
+      }
+    }
+
+    function toggleDarkMode() {
+      const html = document.documentElement;
+      const sunIcon = document.getElementById('sunIcon');
+      const moonIcon = document.getElementById('moonIcon');
+
+      if (html.classList.contains('dark')) {
+        html.classList.remove('dark');
+        localStorage.setItem('studySphereTheme', 'light');
+        sunIcon.classList.add('hidden');
+        moonIcon.classList.remove('hidden');
+      } else {
+        html.classList.add('dark');
+        localStorage.setItem('studySphereTheme', 'dark');
+        sunIcon.classList.remove('hidden');
+        moonIcon.classList.add('hidden');
+      }
+    }
+
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') closeReportModal();
+    });
+
+    window.onload = function() {
+      initTheme();
+      loadResultData();
+    };
+  </script>
+</body>
+</html>

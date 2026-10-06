@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html lang="mr" class="h-full">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StudySphere | Examination Hall</title>
+  <meta name="description" content="MPSC Group C Online Examination & Mock Test Interface">
+
+  <!-- Google Fonts & Tailwind CSS CDN -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;500;600;700;800&family=Noto+Sans+Devanagari:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Mukta"', '"Noto Sans Devanagari"', '"Plus Jakarta Sans"', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              50: '#eef2ff',
+              100: '#e0e7ff',
+              500: '#6366f1',
+              600: '#4f46e5',
+              700: '#4338ca',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* मराठी जोडाक्षरे आणि अक्षरे न तुटण्यासाठी प्रगत टायपोग्राफी */
+    html, body {
+      font-feature-settings: "liga" 1, "kern" 1;
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    .no-select {
+      -webkit-user-select: none;
+      user-select: none;
+    }
+
+    /* Dynamic font size for question content only (Default: Small) */
+    :root {
+      --q-text-size: 0.9375rem;    /* 15px */
+      --opt-text-size: 0.8125rem;  /* 13px */
+      --opt-sub-size: 0.6875rem;   /* 11px */
+    }
+    .q-font-small {
+      --q-text-size: 0.9375rem;
+      --opt-text-size: 0.8125rem;
+      --opt-sub-size: 0.6875rem;
+    }
+    .q-font-medium {
+      --q-text-size: 1.0625rem;
+      --opt-text-size: 0.9375rem;
+      --opt-sub-size: 0.8125rem;
+    }
+    .q-font-large {
+      --q-text-size: 1.1875rem;
+      --opt-text-size: 1.0625rem;
+      --opt-sub-size: 0.875rem;
+    }
+
+    .question-body-text {
+      font-size: var(--q-text-size) !important;
+      line-height: 1.45;
+    }
+    .option-primary-text {
+      font-size: var(--opt-text-size) !important;
+      line-height: 1.35;
+    }
+    .option-secondary-text {
+      font-size: var(--opt-sub-size) !important;
+      line-height: 1.25;
+    }
+
+    ::-webkit-scrollbar { width: 5px; height: 5px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+    ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
+    .dark ::-webkit-scrollbar-thumb { background: #334155; }
+  </style>
+</head>
+<body class="bg-slate-100 text-slate-800 dark:bg-[#0b0f19] dark:text-slate-100 font-sans h-full flex flex-col antialiased transition-colors duration-200 overflow-hidden no-select q-font-small">
+
+  <!-- ========================================== -->
+  <!-- TOP EXAM NAVIGATION & TIMER BAR -->
+  <!-- ========================================== -->
+  <header class="h-14 sm:h-16 bg-white dark:bg-[#0e1626] border-b border-slate-200 dark:border-slate-800 shadow-sm flex items-center justify-between px-2.5 sm:px-6 shrink-0 z-30">
+    
+    <!-- Test Info / Exit Button -->
+    <div class="flex items-center gap-2 sm:gap-3 min-w-0">
+      <button onclick="openExitModal()" title="चाचणीतून बाहेर पडा" 
+              class="px-2 py-1 sm:px-2.5 sm:py-1.5 rounded-lg bg-rose-50 hover:bg-rose-100 dark:bg-rose-950/60 dark:hover:bg-rose-900/60 text-rose-600 dark:text-rose-400 border border-rose-200 dark:border-rose-900 text-[11px] sm:text-xs font-bold flex items-center gap-1 transition-all active:scale-95 shrink-0">
+        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15M12 9l-3 3m0 0l3 3m-3-3h12.75"/></svg>
+        <span>Exit</span>
+      </button>
+
+      <div class="min-w-0">
+        <h1 id="examTitle" class="text-xs sm:text-sm font-bold text-slate-900 dark:text-white truncate max-w-[130px] xs:max-w-[180px] sm:max-w-md">
+          MPSC चाचणी
+        </h1>
+        <div class="flex items-center gap-1.5 text-[10px] text-slate-500 dark:text-slate-400">
+          <span id="markingSchemeBadge">१ गुण | -०.२५</span>
+          <span>•</span>
+          <span id="totalQuestionsBadge">० प्रश्न</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Center/Right: Timer, Theme Toggle, Palette Toggle and Submit -->
+    <div class="flex items-center gap-1.5 sm:gap-3">
+      
+      <!-- Countdown Timer Box -->
+      <div id="timerContainer" class="flex items-center gap-1.5 px-2 py-1 sm:px-3 sm:py-1.5 rounded-xl bg-indigo-50 dark:bg-indigo-950/80 border border-indigo-200 dark:border-indigo-800 text-indigo-700 dark:text-indigo-300 font-mono font-extrabold text-xs sm:text-sm shadow-inner shrink-0">
+        <svg class="w-3.5 h-3.5 sm:w-4 sm:h-4 text-indigo-600 dark:text-indigo-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="10"/>
+          <polyline points="12 6 12 12 16 14"/>
+        </svg>
+        <span id="timerDisplay">00:00</span>
+      </div>
+
+      <!-- Theme Switcher -->
+      <button onclick="toggleDarkMode()" title="थीम बदला" class="p-1.5 sm:p-2 rounded-lg bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300 transition-colors">
+        <svg id="sunIcon" class="w-3.5 h-3.5 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        <svg id="moonIcon" class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+
+      <!-- Mobile Question Palette Toggle Button -->
+      <button onclick="toggleMobilePalette()" class="lg:hidden flex items-center gap-1 px-2 py-1 rounded-lg bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-200 text-xs font-bold">
+        <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <rect x="3" y="3" width="7" height="7"/>
+          <rect x="14" y="3" width="7" height="7"/>
+          <rect x="14" y="14" width="7" height="7"/>
+          <rect x="3" y="14" width="7" height="7"/>
+        </svg>
+        <span id="paletteMobileCount">०/०</span>
+      </button>
+
+      <!-- Submit Test Primary Button (Header) -->
+      <button onclick="openSubmitModal()" class="px-2.5 sm:px-4 py-1.5 rounded-lg bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs shadow-md shadow-emerald-600/25 active:scale-95 transition-all">
+        Submit
+      </button>
+
+    </div>
+  </header>
+
+  <!-- ========================================== -->
+  <!-- MAIN TEST STAGE (Split Layout) -->
+  <!-- ========================================== -->
+  <div class="flex-grow flex overflow-hidden relative">
+
+    <!-- LEFT PANE: Active Question & Interactive Options -->
+    <main class="flex-1 flex flex-col justify-between bg-slate-50 dark:bg-[#0b0f19] overflow-hidden relative">
+      
+      <!-- Top Scrollable Content Area: Active Question & Interactive Options -->
+      <div class="flex-1 overflow-y-auto p-3 sm:p-5 lg:p-6 w-full">
+        <div class="max-w-4xl mx-auto w-full">
+          
+          <div class="flex flex-wrap items-center justify-between gap-2 pb-2.5 mb-3 border-b border-slate-200 dark:border-slate-800">
+            
+            <!-- Question Counter -->
+            <div class="flex items-center gap-1.5">
+              <span class="px-2 py-0.5 rounded-md bg-indigo-100 dark:bg-indigo-950 text-indigo-700 dark:text-indigo-300 font-extrabold text-xs">
+                प्रश्न <span id="currentQuestionNum">१</span>
+              </span>
+              <span class="text-xs text-slate-400 font-medium">/ <span id="totalQuestionsText">०</span></span>
+            </div>
+
+            <!-- Controls Right: Language Switcher + Font Size Adjuster in single row -->
+            <div class="flex items-center gap-1.5 sm:gap-2">
+              
+              <!-- Language Selector Segmented Control -->
+              <div class="flex items-center p-0.5 rounded-lg bg-slate-200/80 dark:bg-slate-800 text-[10px] sm:text-[11px] font-bold">
+                <button type="button" onclick="setLanguage('both')" id="langBtnBoth" 
+                        class="px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-md transition-all bg-white dark:bg-slate-900 text-indigo-600 dark:text-indigo-400 shadow-sm">
+                  दोन्ही
+                </button>
+                <button type="button" onclick="setLanguage('mr')" id="langBtnMr" 
+                        class="px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-md transition-all text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white">
+                  मराठी
+                </button>
+                <button type="button" onclick="setLanguage('en')" id="langBtnEn" 
+                        class="px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-md transition-all text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white">
+                  Eng
+                </button>
+              </div>
+
+              <!-- Question & Option Font Size Switcher (Cycles: S -> M -> L) -->
+              <button id="qFontSizeBtn" onclick="toggleQuestionFontSize()" title="प्रश्न व पर्यायांचा आकार बदला (Default: Small)"
+                      class="px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-lg bg-slate-200/80 dark:bg-slate-800 hover:bg-slate-300 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 text-[10px] sm:text-xs font-bold flex items-center gap-1 transition-all">
+                <span class="tracking-tighter">A<span class="text-[9px]">A</span></span>
+                <span id="qFontBadge" class="text-[9px] uppercase px-1 py-0.2 rounded bg-indigo-100 dark:bg-indigo-900/60 text-indigo-700 dark:text-indigo-300 font-extrabold">S</span>
+              </button>
+
+              <!-- Marking info -->
+              <div class="hidden sm:flex items-center gap-1.5 text-xs font-semibold pl-1">
+                <span class="text-emerald-600 dark:text-emerald-400">+१.००</span>
+                <span class="text-rose-500">-०.२५</span>
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- Question Text Container -->
+          <div id="questionContainer" class="mb-4 sm:mb-5 space-y-2">
+            <!-- Dynamically populated via JS -->
+          </div>
+
+          <!-- 4 MCQ Options Container -->
+          <div id="optionsContainer" class="space-y-2 sm:space-y-2.5 mb-4">
+            <!-- Dynamically populated via JS -->
+          </div>
+
+          <!-- Not Found / Error State Container -->
+          <div id="testErrorState" class="hidden text-center py-10 px-4 bg-white dark:bg-[#131d31] rounded-2xl border border-slate-200 dark:border-slate-800">
+            <div class="w-12 h-12 bg-amber-100 dark:bg-amber-950/60 text-amber-600 dark:text-amber-400 rounded-full flex items-center justify-center mx-auto mb-3">
+              <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
+            </div>
+            <h2 class="text-base font-bold text-slate-900 dark:text-white">सदर सराव चाचणी उपलब्ध नाही</h2>
+            <p class="text-xs text-slate-500 dark:text-slate-400 mt-1 max-w-sm mx-auto">या घटकाची चाचणी फाईल अजून अपलोड झालेली नाही किंवा लिंक चुकीची आहे.</p>
+            <a href="test-list.html" class="mt-4 inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-indigo-600 text-white text-xs font-bold hover:bg-indigo-700 transition-all">
+              <span>चाचणी सूचीकडे परत जा</span>
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ========================================================================= -->
+      <!-- BOTTOM FIXED SINGLE-LINE 4-BUTTON DOCKED DOCKBAR (ZERO-SCROLL ALL SCREENS) -->
+      <!-- ========================================================================= -->
+      <div id="actionBarWrapper" class="w-full shrink-0 bg-white/95 dark:bg-[#0e1626]/95 backdrop-blur border-t border-slate-200 dark:border-slate-800 px-3 sm:px-6 py-2 sm:py-2.5 z-20 shadow-md">
+        <div class="max-w-4xl mx-auto w-full">
+          <div class="grid grid-cols-4 gap-2 sm:gap-3 items-center w-full">
+            
+            <!-- 1. Mark for Review -->
+            <button onclick="markForReviewAndNext()" 
+                    class="w-full py-2 sm:py-2.5 px-1 sm:px-3 rounded-xl bg-purple-50 dark:bg-purple-950/60 hover:bg-purple-100 dark:hover:bg-purple-900/60 border border-purple-200 dark:border-purple-800 text-purple-700 dark:text-purple-300 font-bold text-[11px] sm:text-xs flex items-center justify-center gap-1 transition-all active:scale-95 truncate">
+              <svg class="w-3.5 h-3.5 text-purple-600 dark:text-purple-400 shrink-0" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+              </svg>
+              <span class="truncate">Review</span>
+            </button>
+
+            <!-- 2. Clear Response -->
+            <button onclick="clearResponse()" 
+                    class="w-full py-2 sm:py-2.5 px-1 sm:px-3 rounded-xl bg-slate-200/80 hover:bg-slate-300 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-300 font-bold text-[11px] sm:text-xs flex items-center justify-center transition-all active:scale-95 truncate">
+              <span class="truncate">Clear</span>
+            </button>
+
+            <!-- 3. Previous Button -->
+            <button id="prevBtn" onclick="prevQuestion()" 
+                    class="w-full py-2 sm:py-2.5 px-1 sm:px-3 rounded-xl border border-slate-300 dark:border-slate-700 hover:bg-slate-200 dark:hover:bg-slate-800 font-bold text-[11px] sm:text-xs text-slate-700 dark:text-slate-200 transition-all flex items-center justify-center gap-0.5 sm:gap-1 truncate">
+              <svg class="w-3.5 h-3.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/></svg>
+              <span class="truncate">Prev</span>
+            </button>
+
+            <!-- 4. Save & Next Button -->
+            <button onclick="saveAndNext()" 
+                    class="w-full py-2 sm:py-2.5 px-1 sm:px-3 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white font-bold text-[11px] sm:text-xs shadow-md shadow-indigo-600/25 transition-all flex items-center justify-center gap-0.5 sm:gap-1 active:scale-95 truncate">
+              <span class="truncate">Next</span>
+              <svg class="w-3.5 h-3.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+            </button>
+
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+    <!-- ========================================== -->
+    <!-- RIGHT PANE: QUESTION PALETTE (TCS/IBPS style) -->
+    <!-- ========================================== -->
+    <aside id="paletteSidebar" 
+           class="fixed lg:static inset-y-0 right-0 z-40 w-80 lg:w-72 xl:w-80 bg-white dark:bg-[#131d31] border-l border-slate-200 dark:border-slate-800 flex flex-col justify-between transform translate-x-full lg:translate-x-0 transition-transform duration-300 ease-in-out shadow-2xl lg:shadow-none">
+      
+      <!-- Palette Header -->
+      <div class="p-3.5 sm:p-4 border-b border-slate-100 dark:border-slate-800 flex items-center justify-between">
+        <div>
+          <h2 class="text-xs font-bold uppercase tracking-wider text-slate-700 dark:text-slate-300">Question Palette</h2>
+          <p class="text-[11px] text-slate-400">प्रश्नावर थेट जाण्यासाठी क्लिक करा</p>
+        </div>
+        <button onclick="toggleMobilePalette(false)" class="lg:hidden p-1.5 rounded-lg text-slate-400 hover:text-slate-600 dark:hover:text-white">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
+
+      <!-- Palette Legend (Status Counters) -->
+      <div class="p-3 bg-slate-50 dark:bg-slate-900/60 border-b border-slate-100 dark:border-slate-800 text-[10px] sm:text-[11px] grid grid-cols-2 gap-2 font-medium">
+        <div class="flex items-center gap-1.5">
+          <span class="w-5 h-5 rounded-md bg-emerald-500 text-white font-bold flex items-center justify-center text-[10px]" id="statAnswered">०</span>
+          <span class="text-slate-600 dark:text-slate-300 truncate">Answered</span>
+        </div>
+        <div class="flex items-center gap-1.5">
+          <span class="w-5 h-5 rounded-md bg-rose-500 text-white font-bold flex items-center justify-center text-[10px]" id="statNotAnswered">०</span>
+          <span class="text-slate-600 dark:text-slate-300 truncate">Not Answered</span>
+        </div>
+        <div class="flex items-center gap-1.5">
+          <span class="w-5 h-5 rounded-md bg-purple-600 text-white font-bold flex items-center justify-center text-[10px]" id="statMarked">०</span>
+          <span class="text-slate-600 dark:text-slate-300 truncate">Review</span>
+        </div>
+        <div class="flex items-center gap-1.5">
+          <span class="w-5 h-5 rounded-md bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-200 font-bold flex items-center justify-center text-[10px]" id="statNotVisited">०</span>
+          <span class="text-slate-600 dark:text-slate-300 truncate">Not Visited</span>
+        </div>
+      </div>
+
+      <!-- Question Numbers Grid Container -->
+      <div class="flex-1 overflow-y-auto p-3.5">
+        <div id="paletteGrid" class="grid grid-cols-5 gap-2">
+          <!-- Dynamically populated numbers 1..N -->
+        </div>
+      </div>
+
+      <!-- Palette Footer Action -->
+      <div class="p-3.5 border-t border-slate-100 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-900/40">
+        <button onclick="openSubmitModal()" class="w-full py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs shadow-md shadow-emerald-600/20 active:scale-95 transition-all flex items-center justify-center gap-1.5">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+          <span>चाचणी सबमिट करा</span>
+        </button>
+      </div>
+
+    </aside>
+
+    <!-- Mobile Drawer Backdrop -->
+    <div id="paletteBackdrop" onclick="toggleMobilePalette(false)" class="fixed inset-0 bg-black/50 z-30 lg:hidden hidden backdrop-blur-sm transition-opacity"></div>
+
+  </div>
+
+  <!-- ========================================== -->
+  <!-- EXIT TEST CONFIRMATION MODAL -->
+  <!-- ========================================== -->
+  <div id="exitModal" class="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm hidden items-center justify-center p-4">
+    <div class="bg-white dark:bg-[#131d31] rounded-2xl w-full max-w-sm p-5 shadow-2xl border border-slate-200 dark:border-slate-800 text-center animate-fade-in my-auto">
+      <div class="w-11 h-11 bg-rose-100 dark:bg-rose-950/60 text-rose-600 dark:text-rose-400 rounded-full flex items-center justify-center mx-auto mb-3">
+        <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
+      </div>
+      <h3 class="text-sm sm:text-base font-bold text-slate-900 dark:text-white">चाचणीतून बाहेर पडायचे आहे का?</h3>
+      <p class="text-xs text-slate-500 dark:text-slate-400 mt-1 leading-relaxed">
+        तुम्ही बाहेर पडल्यास तुमची सोडवलेली उत्तरे जतन होणार नाहीत आणि निकाल मोजला जाणार नाही.
+      </p>
+      <div class="flex items-center gap-2 mt-4">
+        <button onclick="closeExitModal()" class="flex-1 py-2 rounded-xl bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-xs font-bold text-slate-700 dark:text-slate-300">
+          सराव सुरू ठेवा
+        </button>
+        <button onclick="confirmExitTest()" class="flex-1 py-2 rounded-xl bg-rose-600 hover:bg-rose-700 text-white text-xs font-bold shadow-md shadow-rose-600/25">
+          होय, बाहेर पडा
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================== -->
+  <!-- SUBMIT CONFIRMATION SUMMARY MODAL -->
+  <!-- ========================================== -->
+  <div id="submitModal" class="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm hidden items-center justify-center p-4">
+    <div class="bg-white dark:bg-[#131d31] rounded-2xl w-full max-w-sm sm:max-w-md p-5 shadow-2xl border border-slate-200 dark:border-slate-800 text-center animate-fade-in my-auto">
+      
+      <div class="w-11 h-11 bg-indigo-100 dark:bg-indigo-950/60 text-indigo-600 dark:text-indigo-400 rounded-full flex items-center justify-center mx-auto mb-2.5 shadow-inner">
+        <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+          <polyline points="14 2 14 8 20 8"/>
+          <line x1="16" y1="13" x2="8" y2="13"/>
+          <line x1="16" y1="17" x2="8" y2="17"/>
+        </svg>
+      </div>
+
+      <h3 class="text-sm sm:text-base font-bold text-slate-900 dark:text-white">चाचणी सबमिट करायची आहे का?</h3>
+      <p class="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5">तुमच्या प्रयत्नांचा सारांश तपासून घ्या:</p>
+
+      <!-- Exam Summary Grid -->
+      <div class="grid grid-cols-2 gap-2 my-3 text-xs font-semibold text-left">
+        <div class="p-2 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200/80 dark:border-slate-700/60 flex items-center justify-between">
+          <span class="text-slate-600 dark:text-slate-400">एकूण प्रश्न:</span>
+          <span id="modalTotal" class="font-bold text-slate-900 dark:text-white">०</span>
+        </div>
+        <div class="p-2 rounded-xl bg-emerald-50 dark:bg-emerald-950/40 border border-emerald-200 dark:border-emerald-800/40 flex items-center justify-between">
+          <span class="text-emerald-700 dark:text-emerald-300">Answered:</span>
+          <span id="modalAnswered" class="font-bold text-emerald-700 dark:text-emerald-300">०</span>
+        </div>
+        <div class="p-2 rounded-xl bg-purple-50 dark:bg-purple-950/40 border border-purple-200 dark:border-purple-800/40 flex items-center justify-between">
+          <span class="text-purple-700 dark:text-purple-300">Review:</span>
+          <span id="modalMarked" class="font-bold text-purple-700 dark:text-purple-300">०</span>
+        </div>
+        <div class="p-2 rounded-xl bg-rose-50 dark:bg-rose-950/40 border border-rose-200 dark:border-rose-800/40 flex items-center justify-between">
+          <span class="text-rose-700 dark:text-rose-300">Unanswered:</span>
+          <span id="modalUnanswered" class="font-bold text-rose-700 dark:text-rose-300">०</span>
+        </div>
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="flex items-center gap-2 mt-4">
+        <button onclick="closeSubmitModal()" class="flex-1 py-2 rounded-xl bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-xs font-bold text-slate-700 dark:text-slate-300 transition-colors">
+          सराव सुरू ठेवा
+        </button>
+        <button onclick="finalizeAndSubmitExam()" class="flex-1 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs shadow-md shadow-emerald-600/25 active:scale-95 transition-all">
+          नक्की सबमिट करा
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Time Out Alert Modal -->
+  <div id="timeOutModal" class="fixed inset-0 z-50 bg-black/75 backdrop-blur-sm hidden items-center justify-center p-4">
+    <div class="bg-white dark:bg-[#131d31] rounded-2xl w-full max-w-sm p-5 shadow-2xl border border-slate-200 dark:border-slate-800 text-center my-auto">
+      <div class="w-12 h-12 bg-rose-100 dark:bg-rose-950/60 text-rose-600 dark:text-rose-400 rounded-full flex items-center justify-center mx-auto mb-3 shadow-inner">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+      </div>
+      <h3 class="text-base font-bold text-slate-900 dark:text-white">वेळ संपली आहे! (Time Up)</h3>
+      <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">तुमची चाचणी आपोआप सबमिट केली जात आहे. कृपया प्रतीक्षा करा...</p>
+    </div>
+  </div>
+
+  <!-- ========================================== -->
+  <!-- JAVASCRIPT EXAM ENGINE CORE LOGIC -->
+  <!-- ========================================== -->
+  <script>
+    // --- State Variables ---
+    let examData = null;
+    let currentIndex = 0;
+    let userAnswers = {};      // { questionIndex: selectedOptionIndex }
+    let questionStatus = {};   // { questionIndex: 'not_visited' | 'not_answered' | 'answered' | 'marked' | 'marked_answered' }
+    let totalQuestions = 0;
+    let timeRemaining = 0;     // in seconds
+    let timerInterval = null;
+    let isSubmitting = false;
+    let activeLanguage = 'both'; // 'both' | 'mr' | 'en'
+
+    // Question font sizes: Default 'small'
+    const qFontSizes = ['small', 'medium', 'large'];
+    let currentQFontIndex = 0;
+
+    function toggleQuestionFontSize() {
+      currentQFontIndex = (currentQFontIndex + 1) % qFontSizes.length;
+      applyQuestionFontSize(qFontSizes[currentQFontIndex]);
+    }
+
+    function applyQuestionFontSize(size) {
+      document.body.classList.remove('q-font-small', 'q-font-medium', 'q-font-large');
+      document.body.classList.add(`q-font-${size}`);
+      const badge = document.getElementById('qFontBadge');
+      if (size === 'small') badge.textContent = 'S';
+      if (size === 'medium') badge.textContent = 'M';
+      if (size === 'large') badge.textContent = 'L';
+      localStorage.setItem('studySphereQFontSize', size);
+    }
+
+    function initQuestionFontSize() {
+      const saved = localStorage.getItem('studySphereQFontSize') || 'small';
+      currentQFontIndex = qFontSizes.indexOf(saved);
+      if (currentQFontIndex === -1) currentQFontIndex = 0;
+      applyQuestionFontSize(saved);
+    }
+
+    function resolveText(item, lang = activeLanguage) {
+      if (!item) return '';
+      if (typeof item === 'string') return item;
+      if (typeof item === 'object') {
+        if (lang === 'mr') return item.mr || item.en || '';
+        if (lang === 'en') return item.en || item.mr || '';
+        return item;
+      }
+      return String(item);
+    }
+
+    function setLanguage(lang) {
+      activeLanguage = lang;
+      const btns = {
+        both: document.getElementById('langBtnBoth'),
+        mr: document.getElementById('langBtnMr'),
+        en: document.getElementById('langBtnEn')
+      };
+
+      Object.keys(btns).forEach(key => {
+        if (btns[key]) {
+          if (key === lang) {
+            btns[key].className = 'px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-md transition-all bg-white dark:bg-slate-900 text-indigo-600 dark:text-indigo-400 shadow-sm';
+          } else {
+            btns[key].className = 'px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-md transition-all text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white';
+          }
+        }
+      });
+
+      if (examData && totalQuestions > 0) {
+        loadQuestion(currentIndex);
+      }
+    }
+
+    // STRICT CLEAN LOADER: STRICTLY NO DEMO DATA!
+    async function loadTestData() {
+      const urlParams = new URLSearchParams(window.location.search);
+      const testFile = urlParams.get('file');
+
+      if (!testFile) {
+        showErrorState();
+        return;
+      }
+
+      // Try multiple path variations to resolve correctly on GitHub Pages and local servers
+      const pathsToTry = [
+        testFile,
+        './' + testFile,
+        '/' + testFile,
+        '../' + testFile
+      ];
+
+      let loaded = false;
+      for (const p of pathsToTry) {
+        try {
+          const res = await fetch(p);
+          if (res.ok) {
+            const data = await res.json();
+            if (data && Array.isArray(data.questions) && data.questions.length > 0) {
+              examData = data;
+              loaded = true;
+              break;
+            }
+          }
+        } catch (e) {}
+      }
+
+      if (!loaded || !examData) {
+        showErrorState();
+        return;
+      }
+
+      // Initialize loaded quiz
+      totalQuestions = examData.questions.length;
+      timeRemaining = (examData.durationMinutes || 15) * 60;
+
+      for (let i = 0; i < totalQuestions; i++) {
+        questionStatus[i] = 'not_visited';
+      }
+
+      const titleText = resolveText(examData.title, 'mr') || 'MPSC Group C सराव चाचणी';
+      document.getElementById('examTitle').textContent = titleText;
+      document.getElementById('markingSchemeBadge').textContent = `${examData.marksPerQuestion || 1} गुण | -${examData.negativeMarking || 0.25}`;
+      document.getElementById('totalQuestionsBadge').textContent = `${totalQuestions} प्रश्न`;
+      document.getElementById('totalQuestionsText').textContent = totalQuestions;
+
+      renderPaletteGrid();
+      loadQuestion(0);
+      startTimer();
+    }
+
+    function showErrorState() {
+      document.getElementById('questionContainer').innerHTML = '';
+      document.getElementById('optionsContainer').innerHTML = '';
+      document.getElementById('actionBarWrapper').classList.add('hidden');
+      document.getElementById('testErrorState').classList.remove('hidden');
+      document.getElementById('examTitle').textContent = 'चाचणी उपलब्ध नाही';
+      document.getElementById('timerDisplay').textContent = '--:--';
+    }
+
+    function startTimer() {
+      updateTimerDisplay();
+      timerInterval = setInterval(() => {
+        if (timeRemaining > 0) {
+          timeRemaining--;
+          updateTimerDisplay();
+        } else {
+          clearInterval(timerInterval);
+          autoSubmitOnTimeUp();
+        }
+      }, 1000);
+    }
+
+    function updateTimerDisplay() {
+      const minutes = Math.floor(timeRemaining / 60);
+      const seconds = timeRemaining % 60;
+      const formatted = `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+      const timerEl = document.getElementById('timerDisplay');
+      if (timerEl) timerEl.textContent = formatted;
+
+      const container = document.getElementById('timerContainer');
+      if (container && timeRemaining <= 120) {
+        container.className = "flex items-center gap-1.5 px-2 py-1 sm:px-3 sm:py-1.5 rounded-xl bg-rose-50 dark:bg-rose-950/80 border border-rose-300 dark:border-rose-800 text-rose-600 dark:text-rose-300 font-mono font-extrabold text-xs sm:text-sm animate-pulse shadow-inner";
+      }
+    }
+
+    function loadQuestion(index) {
+      if (!examData || index < 0 || index >= totalQuestions) return;
+      currentIndex = index;
+
+      const q = examData.questions[index];
+      document.getElementById('currentQuestionNum').textContent = index + 1;
+      document.getElementById('paletteMobileCount').textContent = `${index + 1}/${totalQuestions}`;
+
+      document.getElementById('prevBtn').disabled = (index === 0);
+      if (index === 0) {
+        document.getElementById('prevBtn').classList.add('opacity-40', 'pointer-events-none');
+      } else {
+        document.getElementById('prevBtn').classList.remove('opacity-40', 'pointer-events-none');
+      }
+
+      if (questionStatus[index] === 'not_visited') {
+        questionStatus[index] = 'not_answered';
+      }
+
+      const qContainer = document.getElementById('questionContainer');
+      const qData = q.question;
+
+      if (typeof qData === 'object' && qData !== null) {
+        const mrText = qData.mr || '';
+        const enText = qData.en || '';
+
+        if (activeLanguage === 'mr') {
+          qContainer.innerHTML = `<p class="question-body-text font-bold text-slate-900 dark:text-slate-100">${mrText || enText}</p>`;
+        } else if (activeLanguage === 'en') {
+          qContainer.innerHTML = `<p class="question-body-text font-bold text-slate-900 dark:text-slate-100">${enText || mrText}</p>`;
+        } else {
+          qContainer.innerHTML = `
+            <div class="space-y-1.5">
+              <div class="flex items-start gap-1.5">
+                <span class="px-1.5 py-0.2 rounded text-[9px] font-extrabold uppercase bg-indigo-100 dark:bg-indigo-950 text-indigo-700 dark:text-indigo-300 shrink-0 mt-0.5">MR</span>
+                <p class="question-body-text font-bold text-slate-900 dark:text-slate-100">${mrText}</p>
+              </div>
+              ${enText ? `
+              <div class="flex items-start gap-1.5 pt-1.5 border-t border-dashed border-slate-200 dark:border-slate-800">
+                <span class="px-1.5 py-0.2 rounded text-[9px] font-extrabold uppercase bg-amber-100 dark:bg-amber-950 text-amber-700 dark:text-amber-300 shrink-0 mt-0.5">EN</span>
+                <p class="question-body-text font-medium text-slate-600 dark:text-slate-300">${enText}</p>
+              </div>` : ''}
+            </div>
+          `;
+        }
+      } else {
+        qContainer.innerHTML = `<p class="question-body-text font-bold text-slate-900 dark:text-slate-100">${qData}</p>`;
+      }
+
+      const optionsContainer = document.getElementById('optionsContainer');
+      optionsContainer.innerHTML = '';
+
+      const letters = ['A', 'B', 'C', 'D'];
+      const selectedAnswer = userAnswers[index];
+
+      q.options.forEach((opt, optIndex) => {
+        const isSelected = (selectedAnswer === optIndex);
+        const card = document.createElement('div');
+        card.className = `p-2.5 sm:p-3.5 rounded-xl border-2 cursor-pointer transition-all flex items-center justify-between gap-3 ${
+          isSelected 
+            ? 'border-indigo-600 bg-indigo-50/80 dark:bg-indigo-950/60 dark:border-indigo-500' 
+            : 'border-slate-200 dark:border-slate-800 bg-white dark:bg-[#131d31] hover:bg-slate-50 dark:hover:bg-slate-800/60'
+        }`;
+        
+        card.onclick = () => selectOption(optIndex);
+
+        let optionContentHtml = '';
+        if (typeof opt === 'object' && opt !== null) {
+          const mrOpt = opt.mr || '';
+          const enOpt = opt.en || '';
+
+          if (activeLanguage === 'mr') {
+            optionContentHtml = `<span class="option-primary-text font-semibold text-slate-800 dark:text-slate-200">${mrOpt || enOpt}</span>`;
+          } else if (activeLanguage === 'en') {
+            optionContentHtml = `<span class="option-primary-text font-semibold text-slate-800 dark:text-slate-200">${enOpt || mrOpt}</span>`;
+          } else {
+            optionContentHtml = `
+              <div class="flex flex-col">
+                <span class="option-primary-text font-bold text-slate-900 dark:text-slate-100">${mrOpt}</span>
+                ${enOpt ? `<span class="option-secondary-text text-slate-500 dark:text-slate-400">${enOpt}</span>` : ''}
+              </div>
+            `;
+          }
+        } else {
+          optionContentHtml = `<span class="option-primary-text font-medium text-slate-800 dark:text-slate-200">${opt}</span>`;
+        }
+
+        card.innerHTML = `
+          <div class="flex items-center gap-2.5 sm:gap-3 min-w-0 flex-1">
+            <div class="w-6 h-6 sm:w-7 sm:h-7 rounded-lg font-bold text-xs flex items-center justify-center shrink-0 border ${
+              isSelected 
+                ? 'bg-indigo-600 text-white border-indigo-600 shadow-sm' 
+                : 'border-slate-200 dark:border-slate-700 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300'
+            }">
+              ${letters[optIndex] || optIndex + 1}
+            </div>
+            <div class="min-w-0 flex-1">
+              ${optionContentHtml}
+            </div>
+          </div>
+          <div class="w-4 h-4 sm:w-5 sm:h-5 rounded-full border-2 flex items-center justify-center shrink-0 ${
+            isSelected ? 'border-indigo-600' : 'border-slate-300 dark:border-slate-600'
+          }">
+            <div class="w-2 h-2 sm:w-2.5 sm:h-2.5 rounded-full ${isSelected ? 'bg-indigo-600' : 'bg-transparent'}"></div>
+          </div>
+        `;
+        optionsContainer.appendChild(card);
+      });
+
+      updatePaletteUI();
+    }
+
+    function selectOption(optIndex) {
+      userAnswers[currentIndex] = optIndex;
+      questionStatus[currentIndex] = 'answered';
+      loadQuestion(currentIndex);
+    }
+
+    function saveAndNext() {
+      if (userAnswers[currentIndex] !== undefined) {
+        questionStatus[currentIndex] = 'answered';
+      } else {
+        questionStatus[currentIndex] = 'not_answered';
+      }
+
+      if (currentIndex < totalQuestions - 1) {
+        loadQuestion(currentIndex + 1);
+      } else {
+        updatePaletteUI();
+        openSubmitModal();
+      }
+    }
+
+    function markForReviewAndNext() {
+      if (userAnswers[currentIndex] !== undefined) {
+        questionStatus[currentIndex] = 'marked_answered';
+      } else {
+        questionStatus[currentIndex] = 'marked';
+      }
+
+      if (currentIndex < totalQuestions - 1) {
+        loadQuestion(currentIndex + 1);
+      } else {
+        updatePaletteUI();
+      }
+    }
+
+    function clearResponse() {
+      delete userAnswers[currentIndex];
+      questionStatus[currentIndex] = 'not_answered';
+      loadQuestion(currentIndex);
+    }
+
+    function prevQuestion() {
+      if (currentIndex > 0) {
+        loadQuestion(currentIndex - 1);
+      }
+    }
+
+    function renderPaletteGrid() {
+      const grid = document.getElementById('paletteGrid');
+      grid.innerHTML = '';
+
+      for (let i = 0; i < totalQuestions; i++) {
+        const btn = document.createElement('button');
+        btn.id = `palette-btn-${i}`;
+        btn.textContent = i + 1;
+        btn.onclick = () => {
+          loadQuestion(i);
+          toggleMobilePalette(false);
+        };
+        grid.appendChild(btn);
+      }
+      updatePaletteUI();
+    }
+
+    function updatePaletteUI() {
+      let countAnswered = 0;
+      let countNotAnswered = 0;
+      let countMarked = 0;
+      let countNotVisited = 0;
+
+      for (let i = 0; i < totalQuestions; i++) {
+        const status = questionStatus[i];
+        const btn = document.getElementById(`palette-btn-${i}`);
+        if (!btn) continue;
+
+        const isCurrent = (i === currentIndex);
+        let baseClass = "h-8 sm:h-9 rounded-xl font-bold text-xs flex items-center justify-center transition-all relative ";
+
+        if (isCurrent) {
+          baseClass += "ring-2 ring-indigo-500 ring-offset-2 dark:ring-offset-[#131d31] scale-105 ";
+        }
+
+        if (status === 'answered') {
+          btn.className = baseClass + "bg-emerald-500 text-white shadow-sm";
+          countAnswered++;
+        } else if (status === 'not_answered') {
+          btn.className = baseClass + "bg-rose-500 text-white shadow-sm";
+          countNotAnswered++;
+        } else if (status === 'marked') {
+          btn.className = baseClass + "bg-purple-600 text-white shadow-sm";
+          countMarked++;
+        } else if (status === 'marked_answered') {
+          btn.className = baseClass + "bg-purple-600 text-white shadow-sm";
+          btn.innerHTML = `${i + 1}<span class="absolute -top-1 -right-1 w-2.5 h-2.5 bg-emerald-400 border border-white rounded-full"></span>`;
+          countAnswered++;
+          countMarked++;
+        } else {
+          btn.className = baseClass + "bg-slate-200 dark:bg-slate-700/60 text-slate-700 dark:text-slate-300 hover:bg-slate-300";
+          countNotVisited++;
+        }
+      }
+
+      document.getElementById('statAnswered').textContent = countAnswered;
+      document.getElementById('statNotAnswered').textContent = countNotAnswered;
+      document.getElementById('statMarked').textContent = countMarked;
+      document.getElementById('statNotVisited').textContent = countNotVisited;
+    }
+
+    function toggleMobilePalette(force) {
+      const palette = document.getElementById('paletteSidebar');
+      const backdrop = document.getElementById('paletteBackdrop');
+
+      const isHidden = palette.classList.contains('translate-x-full');
+      const shouldOpen = (force !== undefined) ? force : isHidden;
+
+      if (shouldOpen) {
+        palette.classList.remove('translate-x-full');
+        backdrop.classList.remove('hidden');
+      } else {
+        palette.classList.add('translate-x-full');
+        backdrop.classList.add('hidden');
+      }
+    }
+
+    // Exit Modal Handlers
+    function openExitModal() {
+      const modal = document.getElementById('exitModal');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    }
+
+    function closeExitModal() {
+      const modal = document.getElementById('exitModal');
+      modal.classList.remove('flex');
+      modal.classList.add('hidden');
+    }
+
+    function confirmExitTest() {
+      isSubmitting = true;
+      clearInterval(timerInterval);
+      window.location.href = 'test-list.html';
+    }
+
+    // Submit Modal Handlers
+    function openSubmitModal() {
+      let answered = 0;
+      let marked = 0;
+      let unanswered = 0;
+
+      for (let i = 0; i < totalQuestions; i++) {
+        if (userAnswers[i] !== undefined) answered++;
+        if (questionStatus[i] === 'marked' || questionStatus[i] === 'marked_answered') marked++;
+      }
+      unanswered = totalQuestions - answered;
+
+      document.getElementById('modalTotal').textContent = totalQuestions;
+      document.getElementById('modalAnswered').textContent = answered;
+      document.getElementById('modalMarked').textContent = marked;
+      document.getElementById('modalUnanswered').textContent = unanswered;
+
+      const modal = document.getElementById('submitModal');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    }
+
+    function closeSubmitModal() {
+      const modal = document.getElementById('submitModal');
+      modal.classList.remove('flex');
+      modal.classList.add('hidden');
+    }
+
+    function autoSubmitOnTimeUp() {
+      const timeoutModal = document.getElementById('timeOutModal');
+      timeoutModal.classList.remove('hidden');
+      timeoutModal.classList.add('flex');
+      setTimeout(() => {
+        finalizeAndSubmitExam();
+      }, 1500);
+    }
+
+    function finalizeAndSubmitExam() {
+      if (isSubmitting || !examData) return;
+      isSubmitting = true;
+      clearInterval(timerInterval);
+
+      let correctCount = 0;
+      let incorrectCount = 0;
+      let unattemptedCount = 0;
+
+      const marksPerQ = examData.marksPerQuestion || 1;
+      const negMarks = examData.negativeMarking || 0.25;
+      const detailedResponses = [];
+
+      examData.questions.forEach((q, index) => {
+        const givenAnswer = userAnswers[index];
+        const isAttempted = (givenAnswer !== undefined);
+        let isCorrect = false;
+
+        if (isAttempted) {
+          if (givenAnswer === q.correctAnswerIndex) {
+            correctCount++;
+            isCorrect = true;
+          } else {
+            incorrectCount++;
+            isCorrect = false;
+          }
+        } else {
+          unattemptedCount++;
+        }
+
+        detailedResponses.push({
+          questionId: q.id || index + 1,
+          question: q.question,
+          options: q.options,
+          givenAnswer: givenAnswer,
+          correctAnswerIndex: q.correctAnswerIndex,
+          isCorrect: isCorrect,
+          isAttempted: isAttempted,
+          explanation: q.explanation || { mr: "स्पष्टीकरण उपलब्ध नाही.", en: "Explanation not available." }
+        });
+      });
+
+      const totalMarksObtained = Math.max(0, (correctCount * marksPerQ) - (incorrectCount * negMarks));
+      const timeSpent = (examData.durationMinutes * 60) - Math.max(0, timeRemaining);
+
+      const resultPayload = {
+        testId: examData.testId || 'test-01',
+        title: examData.title,
+        totalQuestions: totalQuestions,
+        totalMarks: examData.totalMarks || (totalQuestions * marksPerQ),
+        marksObtained: parseFloat(totalMarksObtained.toFixed(2)),
+        correctCount: correctCount,
+        incorrectCount: incorrectCount,
+        unattemptedCount: unattemptedCount,
+        negativeDeduction: parseFloat((incorrectCount * negMarks).toFixed(2)),
+        timeSpentSeconds: timeSpent,
+        totalTimeMinutes: examData.durationMinutes,
+        questionsAnalysis: detailedResponses
+      };
+
+      sessionStorage.setItem('currentTestResult', JSON.stringify(resultPayload));
+      window.location.href = 'result.html';
+    }
+
+    window.addEventListener('beforeunload', function (e) {
+      if (!isSubmitting && examData) {
+        e.preventDefault();
+        e.returnValue = 'तुम्ही चाचणी अर्धवट सोडल्यास तुमचे गुण मोजले जाणार नाहीत.';
+      }
+    });
+
+    function initTheme() {
+      const isDark = localStorage.getItem('studySphereTheme') === 'dark' ||
+        (!('studySphereTheme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches);
+      
+      if (isDark) {
+        document.documentElement.classList.add('dark');
+        document.getElementById('sunIcon').classList.remove('hidden');
+        document.getElementById('moonIcon').classList.add('hidden');
+      } else {
+        document.documentElement.classList.remove('dark');
+        document.getElementById('sunIcon').classList.add('hidden');
+        document.getElementById('moonIcon').classList.remove('hidden');
+      }
+    }
+
+    function toggleDarkMode() {
+      const html = document.documentElement;
+      const sunIcon = document.getElementById('sunIcon');
+      const moonIcon = document.getElementById('moonIcon');
+
+      if (html.classList.contains('dark')) {
+        html.classList.remove('dark');
+        localStorage.setItem('studySphereTheme', 'light');
+        sunIcon.classList.add('hidden');
+        moonIcon.classList.remove('hidden');
+      } else {
+        html.classList.add('dark');
+        localStorage.setItem('studySphereTheme', 'dark');
+        sunIcon.classList.remove('hidden');
+        moonIcon.classList.add('hidden');
+      }
+    }
+
+    window.onload = function() {
+      initTheme();
+      initQuestionFontSize();
+      loadTestData();
+    };
+  </script>
+</body>
+</html>

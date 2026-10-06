@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="mr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StudySphere | सराव चाचण्या सूची</title>
+  <meta name="description" content="MPSC Group C 2026 विषयनिहाय व घटकनिहाय मोफत सराव चाचण्या आणि मॉक टेस्ट्स.">
+  
+  <!-- Google Fonts & Tailwind CSS CDN -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;500;600;700;800&family=Noto+Sans+Devanagari:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Mukta"', '"Noto Sans Devanagari"', '"Plus Jakarta Sans"', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              50: '#eef2ff',
+              100: '#e0e7ff',
+              500: '#6366f1',
+              600: '#4f46e5',
+              700: '#4338ca',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* मराठी जोडाक्षरे आणि अक्षरे न तुटण्यासाठी प्रगत टायपोग्राफी */
+    html, body {
+      font-feature-settings: "liga" 1, "kern" 1;
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    :root {
+      --content-text-size: 1rem;
+      --content-subtext-size: 0.8125rem;
+    }
+    .font-size-small {
+      --content-text-size: 0.875rem;
+      --content-subtext-size: 0.75rem;
+    }
+    .font-size-medium {
+      --content-text-size: 1rem;
+      --content-subtext-size: 0.8125rem;
+    }
+    .font-size-large {
+      --content-text-size: 1.125rem;
+      --content-subtext-size: 0.9375rem;
+    }
+
+    .test-item-title {
+      font-size: var(--content-text-size) !important;
+    }
+    .test-item-sub {
+      font-size: var(--content-subtext-size) !important;
+    }
+
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+    ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
+    .dark ::-webkit-scrollbar-thumb { background: #334155; }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 dark:bg-[#0b0f19] dark:text-slate-100 font-sans transition-colors duration-200 min-h-screen flex flex-col font-size-medium antialiased selection:bg-indigo-500 selection:text-white">
+
+  <!-- Header -->
+  <header class="sticky top-0 z-40 bg-white/95 dark:bg-[#0e1626]/95 backdrop-blur border-b border-slate-200 dark:border-slate-800 shadow-sm transition-colors duration-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-2">
+      
+      <!-- Logo & Home Link -->
+      <a href="index.html" class="flex items-center gap-2.5 group focus:outline-none focus:ring-2 focus:ring-indigo-500 rounded-lg p-1">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-600 via-indigo-500 to-amber-400 p-[1.5px] shadow-md shadow-indigo-500/20 group-hover:scale-105 transition-transform duration-200">
+          <div class="w-full h-full bg-white dark:bg-slate-900 rounded-[10px] flex items-center justify-center">
+            <svg class="w-6 h-6 text-indigo-600 dark:text-indigo-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+              <circle cx="12" cy="12" r="3" class="fill-amber-400 stroke-none"/>
+            </svg>
+          </div>
+        </div>
+        <div class="flex flex-col">
+          <span class="text-xl font-bold tracking-tight bg-gradient-to-r from-indigo-600 to-indigo-800 dark:from-indigo-400 dark:to-indigo-200 bg-clip-text text-transparent">
+            StudySphere
+          </span>
+          <span class="text-[10px] text-slate-500 dark:text-slate-400 -mt-1 font-medium tracking-wide">MPSC Group C Portal</span>
+        </div>
+      </a>
+
+      <!-- Desktop Center Links -->
+      <nav class="hidden md:flex items-center gap-1 text-sm font-semibold text-slate-600 dark:text-slate-300">
+        <a href="index.html" class="px-3 py-1.5 rounded-lg hover:text-indigo-600 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">Home</a>
+        <a href="index.html" class="px-3 py-1.5 rounded-lg hover:text-indigo-600 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">सर्व विषय</a>
+      </nav>
+
+      <!-- Right controls -->
+      <div class="flex items-center gap-1.5 sm:gap-2">
+        <a href="https://t.me/MPSCstudysphere" target="_blank" rel="noopener noreferrer" 
+           class="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-sky-50 dark:bg-sky-950/60 text-sky-600 dark:text-sky-300 hover:bg-sky-100 dark:hover:bg-sky-900 border border-sky-200 dark:border-sky-800 text-xs font-semibold shadow-sm transition-all">
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.121l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.535-.197 1.006.128.832.946z"/></svg>
+          <span>Telegram</span>
+        </a>
+
+        <button id="fontSizeBtn" onclick="toggleFontSize()" title="मजकुराचा आकार बदला"
+                class="px-2.5 py-1.5 rounded-lg bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 border border-slate-200 dark:border-slate-700 text-xs font-bold flex items-center gap-1 transition-all">
+          <span class="tracking-tighter">A<span class="text-[10px]">A</span></span>
+          <span id="fontBadge" class="text-[9px] uppercase px-1 py-0.2 rounded bg-indigo-100 dark:bg-indigo-900/60 text-indigo-700 dark:text-indigo-300 font-extrabold">M</span>
+        </button>
+
+        <button id="themeToggleBtn" onclick="toggleDarkMode()" title="थीम बदला"
+                class="p-2 rounded-lg bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 border border-slate-200 dark:border-slate-700 transition-all">
+          <svg id="sunIcon" class="w-4 h-4 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg id="moonIcon" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <main class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 w-full">
+
+    <!-- Breadcrumb Bar -->
+    <nav class="flex items-center gap-2 text-xs font-medium text-slate-500 dark:text-slate-400 mb-5 overflow-x-auto pb-1" aria-label="Breadcrumb">
+      <a href="index.html" class="hover:text-indigo-600 dark:hover:text-white flex items-center gap-1 shrink-0">
+        <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+        <span>मुख्यपृष्ठ (Home)</span>
+      </a>
+      <svg class="w-3.5 h-3.5 text-slate-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+      <span id="breadcrumbSection" class="shrink-0 text-slate-700 dark:text-slate-300 font-semibold">Prelims</span>
+      <svg class="w-3.5 h-3.5 text-slate-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+      <span id="breadcrumbSubject" class="text-indigo-600 dark:text-indigo-400 font-bold shrink-0">इतिहास (History)</span>
+    </nav>
+
+    <!-- Subject Hero Header Card -->
+    <div class="relative overflow-hidden p-5 sm:p-7 rounded-2xl bg-gradient-to-br from-indigo-600 via-indigo-700 to-indigo-900 text-white shadow-xl mb-8">
+      <div class="absolute -right-8 -bottom-8 w-44 h-44 rounded-full bg-white/10 blur-2xl pointer-events-none"></div>
+      <div class="flex flex-col md:flex-row md:items-center justify-between gap-5 relative z-10">
+        <div class="flex items-start sm:items-center gap-4">
+          <div id="subjectHeroIcon" class="w-14 h-14 rounded-2xl bg-white/15 backdrop-blur border border-white/20 flex items-center justify-center shrink-0 shadow-inner">
+            <svg class="w-7 h-7 text-amber-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/>
+              <path d="M6 6h10M6 10h10M6 14h6"/>
+            </svg>
+          </div>
+          <div>
+            <div class="flex items-center gap-2 mb-1">
+              <span id="heroBadge" class="px-2 py-0.5 rounded text-[11px] font-bold uppercase tracking-wider bg-amber-400/20 text-amber-300 border border-amber-300/30">MPSC Group C 2026</span>
+              <span id="markingBadge" class="text-[11px] font-medium text-indigo-100 bg-white/10 px-2 py-0.5 rounded">१/४ निगेटिव्ह मार्किंग</span>
+            </div>
+            <h1 id="subjectHeroTitle" class="text-xl sm:text-2xl font-extrabold tracking-tight">History (इतिहास)</h1>
+            <p id="subjectHeroDesc" class="text-xs sm:text-sm text-indigo-100/90 mt-1 max-w-xl">
+              घटकनिहाय आणि संपूर्ण सर्वसमावेशक मोफत सराव चाचण्या.
+            </p>
+          </div>
+        </div>
+
+        <!-- Quick Counters -->
+        <div class="flex items-center gap-3 shrink-0 bg-white/10 backdrop-blur rounded-xl p-3 border border-white/15">
+          <div class="text-center px-2">
+            <span id="statTotalTests" class="block text-lg font-extrabold">०</span>
+            <span class="text-[10px] text-indigo-200 uppercase font-semibold">चाचण्या</span>
+          </div>
+          <div class="w-px h-8 bg-white/20"></div>
+          <div class="text-center px-2">
+            <span id="statTotalQuestions" class="block text-lg font-extrabold">०</span>
+            <span class="text-[10px] text-indigo-200 uppercase font-semibold">एकूण प्रश्न</span>
+          </div>
+          <div class="w-px h-8 bg-white/20"></div>
+          <div class="text-center px-2">
+            <span class="block text-lg font-extrabold text-amber-300">Free</span>
+            <span class="text-[10px] text-indigo-200 uppercase font-semibold">शुल्क</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Search & Filter Controls -->
+    <div class="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3 mb-6">
+      
+      <!-- Filter Segmented Tabs -->
+      <div class="flex items-center p-1 bg-slate-200/80 dark:bg-slate-800 rounded-xl max-w-fit">
+        <button id="tabAll" onclick="filterTests('all')" 
+                class="filter-tab px-3.5 py-1.5 rounded-lg text-xs font-bold transition-all bg-white dark:bg-slate-900 text-indigo-600 dark:text-indigo-400 shadow-sm">
+          सर्व चाचण्या (All)
+        </button>
+        <button id="tabChapters" onclick="filterTests('chapters')" 
+                class="filter-tab px-3.5 py-1.5 rounded-lg text-xs font-bold transition-all text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white">
+          घटकनिहाय (Chapters)
+        </button>
+        <button id="tabMixed" onclick="filterTests('mixed')" 
+                class="filter-tab px-3.5 py-1.5 rounded-lg text-xs font-bold transition-all text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white">
+          मिश्र सराव (Mixed Mocks)
+        </button>
+      </div>
+
+      <!-- Quick Search Filter -->
+      <div class="relative w-full sm:w-64">
+        <svg class="w-4 h-4 text-slate-400 absolute left-3 top-2.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="text" id="testSearchInput" oninput="searchTests(this.value)" placeholder="टेस्ट किंवा घटक शोधा..." 
+               class="w-full pl-9 pr-3 py-1.5 text-xs rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 text-slate-800 dark:text-slate-100 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+      </div>
+    </div>
+
+    <!-- Chapter Section -->
+    <div id="chapterSectionWrapper" class="mb-10">
+      <div class="flex items-center justify-between mb-4 pb-2 border-b border-slate-200 dark:border-slate-800">
+        <div class="flex items-center gap-2">
+          <div class="w-2 h-5 bg-indigo-600 rounded-full"></div>
+          <h2 class="text-base sm:text-lg font-bold text-slate-900 dark:text-white">घटकनिहाय सराव (Chapter-wise Tests)</h2>
+        </div>
+        <span id="chapterCountBadge" class="text-xs text-slate-500 dark:text-slate-400 font-medium">० घटक उपलब्ध</span>
+      </div>
+
+      <!-- Chapter Groups Container -->
+      <div id="chapterGroupsContainer" class="space-y-4">
+        <!-- Rendered dynamically via JS & Auto-Probe Engine -->
+      </div>
+    </div>
+
+    <!-- Mixed Section -->
+    <div id="mixedSectionWrapper" class="mb-12">
+      <div class="flex items-center justify-between mb-4 pb-2 border-b border-slate-200 dark:border-slate-800">
+        <div class="flex items-center gap-2">
+          <div class="w-2 h-5 bg-emerald-600 rounded-full"></div>
+          <h2 class="text-base sm:text-lg font-bold text-slate-900 dark:text-white">संपूर्ण विषय मिश्र सराव (Mixed Full Tests)</h2>
+        </div>
+        <span id="mixedCountBadge" class="text-xs text-slate-500 dark:text-slate-400 font-medium">० टेस्ट्स उपलब्ध</span>
+      </div>
+
+      <!-- Mixed Tests Grid Container -->
+      <div id="mixedTestsContainer" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <!-- Rendered dynamically via JS & Auto-Probe Engine -->
+      </div>
+    </div>
+
+    <!-- Empty Search State -->
+    <div id="emptySearchState" class="hidden text-center py-12 p-6 rounded-2xl bg-white dark:bg-[#131d31] border border-slate-200 dark:border-slate-800">
+      <div class="w-12 h-12 bg-slate-100 dark:bg-slate-800 text-slate-400 rounded-full flex items-center justify-center mx-auto mb-3">
+        <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      </div>
+      <h3 class="text-sm font-bold text-slate-900 dark:text-white">कोणतीही टेस्ट सापडली नाही</h3>
+      <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">कृपया शोधलेला शब्द तपासा किंवा वेगळा घटक निवडा.</p>
+    </div>
+
+  </main>
+
+  <!-- ================================================================= -->
+  <!-- PRE-TEST INFO POPUP MODAL (COMPACT & ZERO-SCROLL ON ALL MOBILES) -->
+  <!-- ================================================================= -->
+  <div id="testInfoModal" class="fixed inset-0 z-50 bg-black/70 backdrop-blur-sm hidden items-center justify-center p-3 sm:p-4">
+    <div class="bg-white dark:bg-[#131d31] rounded-2xl w-full max-w-[340px] sm:max-w-md p-4 sm:p-5 shadow-2xl border border-slate-200 dark:border-slate-800 relative animate-fade-in my-auto">
+      
+      <!-- Close button -->
+      <button onclick="closeTestInfoModal()" class="absolute top-3 right-3 p-1.5 text-slate-400 hover:text-slate-600 dark:hover:text-white rounded-lg">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+      </button>
+
+      <!-- Modal Header -->
+      <div class="flex items-center gap-3 mb-3 pb-2.5 border-b border-slate-100 dark:border-slate-800 pr-6">
+        <div class="w-9 h-9 rounded-xl bg-indigo-50 dark:bg-indigo-950/80 text-indigo-600 dark:text-indigo-400 flex items-center justify-center shrink-0 shadow-inner">
+          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+          </svg>
+        </div>
+        <div class="min-w-0">
+          <span class="inline-block text-[10px] font-extrabold uppercase tracking-wide text-indigo-600 dark:text-indigo-400">
+            सराव चाचणी तपशील
+          </span>
+          <h3 id="modalTestTitle" class="text-xs sm:text-sm font-bold text-slate-900 dark:text-white leading-tight truncate">
+            चाचणीचे नाव
+          </h3>
+        </div>
+      </div>
+
+      <!-- Test Meta Badges Grid (Ultra compact 4-cell layout) -->
+      <div class="grid grid-cols-2 gap-2 mb-3">
+        <div class="p-2 rounded-xl bg-slate-50 dark:bg-slate-900/60 border border-slate-200/80 dark:border-slate-800 flex items-center gap-2">
+          <span class="text-xs">📝</span>
+          <div>
+            <span class="text-[9px] text-slate-400 block leading-tight font-medium">प्रश्न संख्या</span>
+            <span id="modalTestQuestions" class="text-[11px] font-bold text-slate-800 dark:text-slate-100">२० प्रश्न</span>
+          </div>
+        </div>
+
+        <div class="p-2 rounded-xl bg-slate-50 dark:bg-slate-900/60 border border-slate-200/80 dark:border-slate-800 flex items-center gap-2">
+          <span class="text-xs">⏱️</span>
+          <div>
+            <span class="text-[9px] text-slate-400 block leading-tight font-medium">वेळ मर्यादा</span>
+            <span id="modalTestTime" class="text-[11px] font-bold text-slate-800 dark:text-slate-100">१५ मिनिटे</span>
+          </div>
+        </div>
+
+        <div class="p-2 rounded-xl bg-slate-50 dark:bg-slate-900/60 border border-slate-200/80 dark:border-slate-800 flex items-center gap-2">
+          <span class="text-xs">🎯</span>
+          <div>
+            <span class="text-[9px] text-slate-400 block leading-tight font-medium">एकूण गुण</span>
+            <span id="modalTestMarks" class="text-[11px] font-bold text-slate-800 dark:text-slate-100">२० गुण</span>
+          </div>
+        </div>
+
+        <div class="p-2 rounded-xl bg-slate-50 dark:bg-slate-900/60 border border-slate-200/80 dark:border-slate-800 flex items-center gap-2">
+          <span class="text-xs">⚖️</span>
+          <div>
+            <span class="text-[9px] text-slate-400 block leading-tight font-medium">निगेटिव्ह गुण</span>
+            <span class="text-[11px] font-bold text-rose-600 dark:text-rose-400">-०.२५ (१/४)</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Concise Single-box Instructions (Zero Scroll Friendly) -->
+      <div class="p-2.5 rounded-xl bg-indigo-50/70 dark:bg-indigo-950/30 border border-indigo-100 dark:border-indigo-900/40 text-[11px] text-slate-700 dark:text-slate-300 space-y-1 mb-3.5 font-medium leading-tight">
+        <p class="flex items-center gap-1 font-bold text-indigo-950 dark:text-indigo-200 text-[11px]">
+          <span>• अचूक: <strong class="text-emerald-600 dark:text-emerald-400">+१.००</strong></span>
+          <span class="text-slate-300 dark:text-slate-600">|</span>
+          <span>चूक: <strong class="text-rose-600 dark:text-rose-400">-०.२५</strong></span>
+        </p>
+        <p class="text-[10px] text-slate-500 dark:text-slate-400">• वेळ संपल्यानंतर चाचणी आपोआप सबमिट होईल.</p>
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="flex items-center gap-2">
+        <button type="button" onclick="closeTestInfoModal()" 
+                class="flex-1 py-2 rounded-xl bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-xs font-bold text-slate-700 dark:text-slate-300 transition-colors">
+          रद्द करा
+        </button>
+        <a id="modalStartTestBtn" href="#" 
+           class="flex-1 py-2 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-bold shadow-md shadow-indigo-600/30 transition-all text-center flex items-center justify-center gap-1.5 active:scale-95">
+          <span>चाचणी सुरू करा</span>
+          <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+  <footer class="mt-auto bg-white dark:bg-[#0b101c] border-t border-slate-200 dark:border-slate-800 py-6 text-center text-xs text-slate-400">
+    StudySphere © 2026 • स्पर्धा परीक्षा ऑनलाइन सराव केंद्र
+  </footer>
+
+  <!-- ======================================================== -->
+  <!-- JAVASCRIPT: CATALOG LOADER & SMART AUTO-PROBE ENGINE     -->
+  <!-- ======================================================== -->
+  <script>
+    let catalogDatabase = null;
+    let activeSubjectKey = 'prelims-history';
+    let currentFilter = 'all';
+    let allLoadedChapters = [];
+    let allLoadedMixed = [];
+
+    // Helper: resolve text string or bilingual object
+    function resolveText(item, lang = 'mr') {
+      if (!item) return '';
+      if (typeof item === 'string') return item;
+      if (typeof item === 'object') {
+        if (lang === 'mr') return item.mr || item.en || '';
+        if (lang === 'en') return item.en || item.mr || '';
+        return item.mr || item.en || '';
+      }
+      return String(item);
+    }
+
+    function parseURLParams() {
+      const urlParams = new URLSearchParams(window.location.search);
+      const subject = urlParams.get('subject');
+      const section = urlParams.get('section');
+      const type = urlParams.get('type');
+
+      if (type) {
+        activeSubjectKey = type;
+      } else if (subject) {
+        activeSubjectKey = (section ? section + '-' : 'prelims-') + subject;
+      } else {
+        activeSubjectKey = 'prelims-history';
+      }
+    }
+
+    async function loadCatalogData() {
+      parseURLParams();
+
+      const pathsToTry = [
+        'data/catalog.json',
+        './data/catalog.json',
+        '/data/catalog.json',
+        '../data/catalog.json',
+        'catalog.json'
+      ];
+
+      for (const p of pathsToTry) {
+        try {
+          const res = await fetch(p);
+          if (res.ok) {
+            const data = await res.json();
+            if (data && typeof data === 'object') {
+              catalogDatabase = data;
+              break;
+            }
+          }
+        } catch (e) {}
+      }
+
+      if (!catalogDatabase) {
+        catalogDatabase = getEmergencyBuiltinData();
+      }
+
+      renderSubjectPage();
+    }
+
+    function renderSubjectPage() {
+      let data = catalogDatabase ? catalogDatabase[activeSubjectKey] : null;
+
+      if (!data && catalogDatabase) {
+        const keys = Object.keys(catalogDatabase);
+        const match = keys.find(k => k.includes(activeSubjectKey) || activeSubjectKey.includes(k));
+        if (match) data = catalogDatabase[match];
+      }
+
+      if (!data) {
+        data = (catalogDatabase && catalogDatabase['prelims-history']) || getEmergencyBuiltinData()['prelims-history'];
+      }
+
+      document.getElementById('breadcrumbSection').textContent = data.section || 'General';
+      document.getElementById('breadcrumbSubject').textContent = `${data.nameMr || ''} (${data.nameEn || ''})`;
+      document.getElementById('subjectHeroTitle').textContent = `${data.nameEn || ''} (${data.nameMr || ''})`;
+      document.getElementById('subjectHeroDesc').textContent = data.desc || 'घटकनिहाय आणि संपूर्ण सर्वसमावेशक मोफत सराव चाचण्या.';
+      document.getElementById('heroBadge').textContent = data.badge || 'MPSC 2026';
+
+      const rawChapters = data.chapters || [];
+      allLoadedChapters = rawChapters.map((ch, idx) => ({
+        id: ch.id || `ch-${idx+1}`,
+        title: ch.title,
+        tests: Array.isArray(ch.tests) ? [...ch.tests] : []
+      }));
+
+      allLoadedMixed = Array.isArray(data.mixed) ? [...data.mixed] : [];
+
+      document.getElementById('chapterCountBadge').textContent = `${allLoadedChapters.length} घटक उपलब्ध`;
+
+      if (allLoadedChapters.length === 0) {
+        document.getElementById('chapterSectionWrapper').classList.add('hidden');
+        document.getElementById('tabChapters').classList.add('hidden');
+      } else {
+        document.getElementById('chapterSectionWrapper').classList.remove('hidden');
+        document.getElementById('tabChapters').classList.remove('hidden');
+      }
+
+      // Initial clean render
+      renderChapterTests(allLoadedChapters);
+      renderMixedTests(allLoadedMixed);
+      updateTotalStats();
+
+      // Launch Auto-Probe Engine to discover uploaded JSON test files in folders
+      startAutoProbing();
+    }
+
+    function updateTotalStats() {
+      let totalQuestions = 0;
+      let totalTests = allLoadedMixed.length;
+
+      allLoadedChapters.forEach(ch => {
+        totalTests += (ch.tests ? ch.tests.length : 0);
+        if (ch.tests) {
+          ch.tests.forEach(t => totalQuestions += (t.questions || 20));
+        }
+      });
+      allLoadedMixed.forEach(t => totalQuestions += (t.questions || 25));
+
+      document.getElementById('statTotalTests').textContent = totalTests;
+      document.getElementById('statTotalQuestions').textContent = totalQuestions;
+      document.getElementById('mixedCountBadge').textContent = `${allLoadedMixed.length} टेस्ट्स उपलब्ध`;
+    }
+
+    // =======================================================================
+    // SMART AUTO-PROBE ENGINE (Zero-code detection for test-1.json, test-2.json...)
+    // =======================================================================
+    async function probeTestFile(possiblePaths) {
+      for (const p of possiblePaths) {
+        try {
+          const res = await fetch(p);
+          if (res.ok) {
+            const data = await res.json();
+            if (data && Array.isArray(data.questions) && data.questions.length > 0) {
+              return { path: p, data: data };
+            }
+          }
+        } catch (e) {}
+      }
+      return null;
+    }
+
+    async function startAutoProbing() {
+      const subjectFolder1 = activeSubjectKey; // e.g. prelims-history
+      const subjectFolder2 = activeSubjectKey.replace('-', '/'); // e.g. prelims/history
+
+      // 1. Probe Chapter Tests (test-1.json, test-2.json, test-3.json...)
+      for (let chIndex = 0; chIndex < allLoadedChapters.length; chIndex++) {
+        const chapter = allLoadedChapters[chIndex];
+        const chId = chapter.id;
+
+        // If tests are already manually defined in catalog.json, skip probing
+        if (chapter.tests && chapter.tests.length > 0) continue;
+
+        let testNum = 1;
+        let foundAny = false;
+
+        while (testNum <= 10) { // Probe up to 10 tests sequentially
+          const possiblePaths = [
+            `data/${subjectFolder1}/chapters/${chId}/test-${testNum}.json`,
+            `data/${subjectFolder1}/chapters/${chId}/test-0${testNum}.json`,
+            `data/${subjectFolder2}/chapters/${chId}/test-${testNum}.json`,
+            `data/${subjectFolder2}/chapters/${chId}/test-0${testNum}.json`,
+            `./data/${subjectFolder1}/chapters/${chId}/test-${testNum}.json`,
+            `./data/${subjectFolder2}/chapters/${chId}/test-${testNum}.json`
+          ];
+
+          const result = await probeTestFile(possiblePaths);
+          if (result) {
+            foundAny = true;
+            const tData = result.data;
+            const qCount = tData.questions.length;
+            const duration = tData.durationMinutes || 15;
+            const marksPerQ = tData.marksPerQuestion || 1;
+            const totalMarks = tData.totalMarks || (qCount * marksPerQ);
+            const rawTitle = resolveText(tData.title, 'mr');
+            const cleanTitle = rawTitle || `${chapter.title.split('—').pop().trim()} सराव ${testNum}`;
+
+            chapter.tests.push({
+              id: tData.testId || `${chId}-t${testNum}`,
+              title: cleanTitle,
+              questions: qCount,
+              time: duration,
+              marks: totalMarks,
+              difficulty: tData.difficulty || 'सराव',
+              file: result.path
+            });
+
+            // Update UI for this chapter immediately
+            updateChapterCardUI(chIndex, chapter);
+            updateTotalStats();
+            testNum++;
+          } else {
+            // Stop probing this chapter when next sequential file is not found
+            break;
+          }
+        }
+      }
+
+      // 2. Probe Mixed Tests (test-1.json, test-2.json...)
+      if (allLoadedMixed.length === 0) {
+        let mixNum = 1;
+        while (mixNum <= 10) {
+          const possibleMixedPaths = [
+            `data/${subjectFolder1}/mixed/test-${mixNum}.json`,
+            `data/${subjectFolder1}/mixed/test-0${mixNum}.json`,
+            `data/${subjectFolder2}/mixed/test-${mixNum}.json`,
+            `data/${subjectFolder2}/mixed/test-0${mixNum}.json`,
+            `./data/${subjectFolder1}/mixed/test-${mixNum}.json`,
+            `./data/${subjectFolder2}/mixed/test-${mixNum}.json`
+          ];
+
+          const result = await probeTestFile(possibleMixedPaths);
+          if (result) {
+            const mData = result.data;
+            const qCount = mData.questions.length;
+            const duration = mData.durationMinutes || 25;
+            const marksPerQ = mData.marksPerQuestion || 1;
+            const totalMarks = mData.totalMarks || (qCount * marksPerQ);
+            const rawTitle = resolveText(mData.title, 'mr');
+            const cleanTitle = rawTitle || `संयुक्त सराव टेस्ट ${mixNum}`;
+
+            allLoadedMixed.push({
+              id: mData.testId || `mix-t${mixNum}`,
+              title: cleanTitle,
+              questions: qCount,
+              time: duration,
+              marks: totalMarks,
+              difficulty: mData.difficulty || 'परीक्षाभिमुख',
+              file: result.path
+            });
+
+            renderMixedTests(allLoadedMixed);
+            updateTotalStats();
+            mixNum++;
+          } else {
+            break;
+          }
+        }
+      }
+    }
+
+    function updateChapterCardUI(chIndex, chapter) {
+      const card = document.getElementById(`chapter-card-${chIndex}`);
+      if (!card) return;
+
+      const hasTests = chapter.tests && chapter.tests.length > 0;
+      const countBadge = card.querySelector('.chapter-test-count');
+      const container = card.querySelector('.chapter-tests-grid');
+
+      if (countBadge) {
+        countBadge.textContent = chapter.tests.length === 1 ? '१ चाचणी' : `${chapter.tests.length} चाचण्या`;
+        countBadge.className = 'chapter-test-count ml-auto text-[11px] text-indigo-600 dark:text-indigo-400 font-bold';
+      }
+
+      if (hasTests && container) {
+        let gridHtml = '';
+        chapter.tests.forEach(test => {
+          const testFileSafe = encodeURIComponent(test.file);
+          const testTitleSafe = encodeURIComponent(test.title);
+
+          gridHtml += `
+            <div class="test-item group p-3.5 rounded-xl border border-slate-200 dark:border-slate-800 hover:border-indigo-400 dark:hover:border-indigo-500 bg-slate-50/50 dark:bg-slate-900/40 hover:bg-white dark:hover:bg-slate-900 transition-all flex items-center justify-between gap-3">
+              <div class="min-w-0">
+                <div class="flex items-center gap-2 mb-1">
+                  <span class="px-1.5 py-0.5 rounded text-[10px] font-bold bg-indigo-100 dark:bg-indigo-950 text-indigo-700 dark:text-indigo-300">${test.questions} प्रश्न</span>
+                  <span class="text-[10px] font-medium text-slate-500 dark:text-slate-400">${test.time} मिनिटे</span>
+                  <span class="text-[10px] font-medium text-emerald-600 dark:text-emerald-400">• ${test.difficulty || 'सराव'}</span>
+                </div>
+                <h4 class="test-item-title font-bold text-slate-900 dark:text-white truncate group-hover:text-indigo-600 dark:group-hover:text-indigo-400">
+                  ${test.title}
+                </h4>
+              </div>
+              <button type="button" 
+                      onclick="openTestInfoModal('${testTitleSafe}', ${test.questions}, ${test.time}, ${test.marks || test.questions}, '${testFileSafe}')"
+                      class="shrink-0 inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-bold shadow-sm shadow-indigo-600/20 active:scale-95 transition-all">
+                <span>Start</span>
+                <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+              </button>
+            </div>
+          `;
+        });
+        container.className = "chapter-tests-grid grid grid-cols-1 sm:grid-cols-2 gap-3";
+        container.innerHTML = gridHtml;
+      }
+    }
+
+    function renderChapterTests(chapters) {
+      const container = document.getElementById('chapterGroupsContainer');
+      container.innerHTML = '';
+      if (!chapters || chapters.length === 0) return;
+
+      chapters.forEach((chapter, index) => {
+        const groupEl = document.createElement('div');
+        groupEl.id = `chapter-card-${index}`;
+        groupEl.className = 'rounded-2xl bg-white dark:bg-[#131d31] border border-slate-200/90 dark:border-slate-800 p-4 sm:p-5 shadow-sm';
+
+        const hasTests = chapter.tests && chapter.tests.length > 0;
+        const testCountText = hasTests 
+          ? (chapter.tests.length === 1 ? '१ चाचणी' : `${chapter.tests.length} चाचण्या`)
+          : 'लवकरच उपलब्ध';
+
+        let html = `
+          <div class="flex items-center gap-2 mb-3 pb-2 border-b border-slate-100 dark:border-slate-800/80">
+            <span class="w-6 h-6 rounded-lg bg-indigo-50 dark:bg-indigo-950/80 text-indigo-600 dark:text-indigo-400 font-bold text-xs flex items-center justify-center shrink-0">
+              ${index + 1}
+            </span>
+            <h3 class="text-sm font-bold text-slate-800 dark:text-slate-100">${chapter.title}</h3>
+            <span class="chapter-test-count ml-auto text-[11px] ${hasTests ? 'text-indigo-600 dark:text-indigo-400 font-bold' : 'text-slate-400 font-medium'}">${testCountText}</span>
+          </div>
+        `;
+
+        if (hasTests) {
+          html += `<div class="chapter-tests-grid grid grid-cols-1 sm:grid-cols-2 gap-3">`;
+          chapter.tests.forEach(test => {
+            const testFileSafe = encodeURIComponent(test.file);
+            const testTitleSafe = encodeURIComponent(test.title);
+
+            html += `
+              <div class="test-item group p-3.5 rounded-xl border border-slate-200 dark:border-slate-800 hover:border-indigo-400 dark:hover:border-indigo-500 bg-slate-50/50 dark:bg-slate-900/40 hover:bg-white dark:hover:bg-slate-900 transition-all flex items-center justify-between gap-3">
+                <div class="min-w-0">
+                  <div class="flex items-center gap-2 mb-1">
+                    <span class="px-1.5 py-0.5 rounded text-[10px] font-bold bg-indigo-100 dark:bg-indigo-950 text-indigo-700 dark:text-indigo-300">${test.questions} प्रश्न</span>
+                    <span class="text-[10px] font-medium text-slate-500 dark:text-slate-400">${test.time} मिनिटे</span>
+                    <span class="text-[10px] font-medium text-emerald-600 dark:text-emerald-400">• ${test.difficulty || 'सराव'}</span>
+                  </div>
+                  <h4 class="test-item-title font-bold text-slate-900 dark:text-white truncate group-hover:text-indigo-600 dark:group-hover:text-indigo-400">
+                    ${test.title}
+                  </h4>
+                </div>
+                <button type="button" 
+                        onclick="openTestInfoModal('${testTitleSafe}', ${test.questions}, ${test.time}, ${test.marks || test.questions}, '${testFileSafe}')"
+                        class="shrink-0 inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-bold shadow-sm shadow-indigo-600/20 active:scale-95 transition-all">
+                  <span>Start</span>
+                  <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+                </button>
+              </div>
+            `;
+          });
+          html += `</div>`;
+        } else {
+          // Clean placeholder while probing or when test is not yet uploaded
+          html += `
+            <div class="chapter-tests-grid p-3 rounded-xl border border-dashed border-slate-200 dark:border-slate-800 bg-slate-50/30 dark:bg-slate-900/20 flex items-center justify-between">
+              <span class="text-xs text-slate-400 font-medium">या घटकाची सराव चाचणी लवकरच उपलब्ध होईल.</span>
+              <span class="px-2 py-0.5 rounded text-[10px] font-semibold bg-amber-50 dark:bg-amber-950/40 text-amber-600 dark:text-amber-400 border border-amber-200/60 dark:border-amber-900/40">लवकरच उपलब्ध</span>
+            </div>
+          `;
+        }
+
+        groupEl.innerHTML = html;
+        container.appendChild(groupEl);
+      });
+    }
+
+    function renderMixedTests(tests) {
+      const container = document.getElementById('mixedTestsContainer');
+      container.innerHTML = '';
+      if (!tests || tests.length === 0) {
+        document.getElementById('mixedSectionWrapper').classList.add('hidden');
+        return;
+      }
+
+      document.getElementById('mixedSectionWrapper').classList.remove('hidden');
+
+      tests.forEach(test => {
+        const testFileSafe = encodeURIComponent(test.file);
+        const testTitleSafe = encodeURIComponent(test.title);
+
+        const card = document.createElement('div');
+        card.className = 'test-item p-4 sm:p-5 rounded-2xl bg-white dark:bg-[#131d31] border border-slate-200/90 dark:border-slate-800 hover:border-emerald-500 shadow-sm hover:shadow-md transition-all flex flex-col justify-between';
+        card.innerHTML = `
+          <div>
+            <div class="flex items-center justify-between gap-2 mb-2">
+              <span class="px-2 py-0.5 rounded text-[10px] font-extrabold uppercase bg-emerald-100 dark:bg-emerald-950 text-emerald-700 dark:text-emerald-300">
+                ${test.marks || test.questions} Marks
+              </span>
+              <span class="text-xs text-slate-500 dark:text-slate-400 font-medium">वेळ: ${test.time} मिनिटे</span>
+            </div>
+            <h3 class="test-item-title font-bold text-slate-900 dark:text-white mb-1">${test.title}</h3>
+            <p class="test-item-sub text-slate-500 dark:text-slate-400 mb-4">
+              संपूर्ण अभ्यासक्रमावर आधारित संयुक्त सराव चाचणी (०.२५ निगेटिव्ह मार्किंग).
+            </p>
+          </div>
+          <div class="pt-3 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between">
+            <span class="text-xs font-semibold text-emerald-600 dark:text-emerald-400">मोफत सराव चाचणी</span>
+            <button type="button" 
+                    onclick="openTestInfoModal('${testTitleSafe}', ${test.questions}, ${test.time}, ${test.marks || test.questions}, '${testFileSafe}')"
+                    class="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold shadow-md shadow-emerald-600/20 active:scale-95 transition-all">
+              <span>चाचणी सुरू करा</span>
+              <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+            </button>
+          </div>
+        `;
+        container.appendChild(card);
+      });
+    }
+
+    // Modal Control: Compact Zero-Scroll Pre-Test Info Modal
+    function openTestInfoModal(encodedTitle, questions, time, marks, encodedFile) {
+      const title = decodeURIComponent(encodedTitle);
+      const file = decodeURIComponent(encodedFile);
+
+      document.getElementById('modalTestTitle').textContent = title;
+      document.getElementById('modalTestQuestions').textContent = `${questions} प्रश्न`;
+      document.getElementById('modalTestTime').textContent = `${time} मिनिटे`;
+      document.getElementById('modalTestMarks').textContent = `${marks} गुण`;
+      document.getElementById('modalStartTestBtn').href = `test.html?file=${encodeURIComponent(file)}`;
+
+      const modal = document.getElementById('testInfoModal');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    }
+
+    function closeTestInfoModal() {
+      const modal = document.getElementById('testInfoModal');
+      modal.classList.remove('flex');
+      modal.classList.add('hidden');
+    }
+
+    function filterTests(type) {
+      currentFilter = type;
+      document.querySelectorAll('.filter-tab').forEach(tab => {
+        tab.className = 'filter-tab px-3.5 py-1.5 rounded-lg text-xs font-bold transition-all text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white';
+      });
+
+      const activeBtn = type === 'all' ? 'tabAll' : (type === 'chapters' ? 'tabChapters' : 'tabMixed');
+      if (document.getElementById(activeBtn)) {
+        document.getElementById(activeBtn).className = 'filter-tab px-3.5 py-1.5 rounded-lg text-xs font-bold transition-all bg-white dark:bg-slate-900 text-indigo-600 dark:text-indigo-400 shadow-sm';
+      }
+
+      const chapterWrapper = document.getElementById('chapterSectionWrapper');
+      const mixedWrapper = document.getElementById('mixedSectionWrapper');
+
+      if (type === 'all') {
+        if (allLoadedChapters.length > 0) chapterWrapper.classList.remove('hidden');
+        if (allLoadedMixed.length > 0) mixedWrapper.classList.remove('hidden');
+      } else if (type === 'chapters') {
+        chapterWrapper.classList.remove('hidden');
+        mixedWrapper.classList.add('hidden');
+      } else if (type === 'mixed') {
+        chapterWrapper.classList.add('hidden');
+        mixedWrapper.classList.remove('hidden');
+      }
+    }
+
+    function searchTests(query) {
+      const q = query.trim().toLowerCase();
+      const emptyState = document.getElementById('emptySearchState');
+
+      if (!q) {
+        renderChapterTests(allLoadedChapters);
+        renderMixedTests(allLoadedMixed);
+        filterTests(currentFilter);
+        emptyState.classList.add('hidden');
+        return;
+      }
+
+      const filteredChapters = [];
+      allLoadedChapters.forEach(ch => {
+        const matchingTests = (ch.tests || []).filter(t => t.title.toLowerCase().includes(q));
+        if (ch.title.toLowerCase().includes(q)) {
+          filteredChapters.push(ch);
+        } else if (matchingTests.length > 0) {
+          filteredChapters.push({ ...ch, tests: matchingTests });
+        }
+      });
+
+      const filteredMixed = allLoadedMixed.filter(t => t.title.toLowerCase().includes(q));
+
+      renderChapterTests(filteredChapters);
+      renderMixedTests(filteredMixed);
+
+      if (filteredChapters.length === 0 && filteredMixed.length === 0) {
+        emptyState.classList.remove('hidden');
+      } else {
+        emptyState.classList.add('hidden');
+      }
+    }
+
+    // Builtin fallback structure (No fake tests)
+    function getEmergencyBuiltinData() {
+      return {
+        "prelims-history": {
+          "nameEn": "History",
+          "nameMr": "इतिहास",
+          "section": "MPSC Group C — PRELIMS",
+          "badge": "Prelims 2026",
+          "desc": "आधुनिक भारताचा इतिहास, राष्ट्रीय चळवळ आणि महाराष्ट्राचा विशेष संदर्भ.",
+          "chapters": [
+            { "id": "p-hist-01", "title": "Modern Indian History — आधुनिक भारताचा इतिहास", "tests": [] },
+            { "id": "p-hist-02", "title": "British Rule in India — भारतातील ब्रिटिश सत्तेचा विस्तार व प्रशासन", "tests": [] }
+          ],
+          "mixed": []
+        }
+      };
+    }
+
+    // Theme (Dark / Light)
+    function initTheme() {
+      const isDark = localStorage.getItem('studySphereTheme') === 'dark' ||
+        (!('studySphereTheme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches);
+      if (isDark) {
+        document.documentElement.classList.add('dark');
+        document.getElementById('sunIcon').classList.remove('hidden');
+        document.getElementById('moonIcon').classList.add('hidden');
+      } else {
+        document.documentElement.classList.remove('dark');
+        document.getElementById('sunIcon').classList.add('hidden');
+        document.getElementById('moonIcon').classList.remove('hidden');
+      }
+    }
+
+    function toggleDarkMode() {
+      const html = document.documentElement;
+      if (html.classList.contains('dark')) {
+        html.classList.remove('dark');
+        localStorage.setItem('studySphereTheme', 'light');
+        document.getElementById('sunIcon').classList.add('hidden');
+        document.getElementById('moonIcon').classList.remove('hidden');
+      } else {
+        html.classList.add('dark');
+        localStorage.setItem('studySphereTheme', 'dark');
+        document.getElementById('sunIcon').classList.remove('hidden');
+        document.getElementById('moonIcon').classList.add('hidden');
+      }
+    }
+
+    // Font Sizing (S / M / L)
+    const fontSizes = ['small', 'medium', 'large'];
+    let currentFontIndex = 1;
+    function toggleFontSize() {
+      currentFontIndex = (currentFontIndex + 1) % fontSizes.length;
+      applyFontSize(fontSizes[currentFontIndex]);
+    }
+    function applyFontSize(size) {
+      document.body.classList.remove('font-size-small', 'font-size-medium', 'font-size-large');
+      document.body.classList.add(`font-size-${size}`);
+      const badge = document.getElementById('fontBadge');
+      if (size === 'small') badge.textContent = 'S';
+      if (size === 'medium') badge.textContent = 'M';
+      if (size === 'large') badge.textContent = 'L';
+      localStorage.setItem('studySphereFontSize', size);
+    }
+    function initFontSize() {
+      const saved = localStorage.getItem('studySphereFontSize') || 'medium';
+      currentFontIndex = fontSizes.indexOf(saved);
+      if (currentFontIndex === -1) currentFontIndex = 1;
+      applyFontSize(saved);
+    }
+
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') closeTestInfoModal();
+    });
+
+    window.onload = function() {
+      initTheme();
+      initFontSize();
+      loadCatalogData();
+    };
+  </script>
+</body>
+</html>
