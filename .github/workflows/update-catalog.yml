@@ -21,8 +21,8 @@ node-version: '20'
 name: Run Catalog Builder
 run: node build-catalog.js
 name: Commit and Push changes
-run: |
-git config --local user.email "github-actions[bot]@users.noreply.github.com"
-git config --local user.name "github-actions[bot]"
+run: git config --local user.email "action@github.com" 
+git config --local user.name "GitHub Action"
 git add data/catalog.json
-git diff --quiet && git diff --staged --quiet || (git commit -m "chore: auto-update quiz catalog [skip ci]" && git push)
+git commit -m "Update quiz catalog" || echo "No changes to commit"
+git push
