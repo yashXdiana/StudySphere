@@ -67,6 +67,11 @@
       font-size: var(--content-subtext-size) !important;
     }
 
+    /* Accordion Dropdown transition smoothing */
+    .chapter-collapse-content {
+      transition: max-height 0.3s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.25s ease-in-out;
+    }
+
     ::-webkit-scrollbar { width: 6px; }
     ::-webkit-scrollbar-track { background: transparent; }
     ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
@@ -218,11 +223,17 @@
           <div class="w-2 h-5 bg-indigo-600 rounded-full"></div>
           <h2 class="text-base sm:text-lg font-bold text-slate-900 dark:text-white">घटकनिहाय सराव (Chapter-wise Tests)</h2>
         </div>
-        <span id="chapterCountBadge" class="text-xs text-slate-500 dark:text-slate-400 font-medium">० घटक उपलब्ध</span>
+        <div class="flex items-center gap-2">
+          <button type="button" onclick="toggleAllChapterDropdowns()" id="toggleAllBtn" 
+                  class="hidden sm:inline-flex text-[11px] font-bold px-2.5 py-1 rounded-lg bg-slate-200/70 hover:bg-slate-300 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-300 transition-all">
+            सर्व उघडा / बंद करा
+          </button>
+          <span id="chapterCountBadge" class="text-xs text-slate-500 dark:text-slate-400 font-medium">० घटक उपलब्ध</span>
+        </div>
       </div>
 
-      <!-- Chapter Groups Container -->
-      <div id="chapterGroupsContainer" class="space-y-4">
+      <!-- Chapter Groups Container (Accordion Dropdowns) -->
+      <div id="chapterGroupsContainer" class="space-y-3">
         <!-- Rendered dynamically via JS & Auto-Probe Engine -->
       </div>
     </div>
@@ -607,7 +618,7 @@
 
       if (countBadge) {
         countBadge.textContent = chapter.tests.length === 1 ? '१ चाचणी' : `${chapter.tests.length} चाचण्या`;
-        countBadge.className = 'chapter-test-count ml-auto text-[11px] text-indigo-600 dark:text-indigo-400 font-bold';
+        countBadge.className = 'chapter-test-count text-[11px] px-2 py-0.5 rounded-full font-bold bg-indigo-50 dark:bg-indigo-950/70 text-indigo-700 dark:text-indigo-300 border border-indigo-200/80 dark:border-indigo-800/60 shrink-0';
       }
 
       if (hasTests && container) {
@@ -617,7 +628,7 @@
           const testTitleSafe = encodeURIComponent(test.title);
 
           gridHtml += `
-            <div class="test-item group p-3.5 rounded-xl border border-slate-200 dark:border-slate-800 hover:border-indigo-400 dark:hover:border-indigo-500 bg-slate-50/50 dark:bg-slate-900/40 hover:bg-white dark:hover:bg-slate-900 transition-all flex items-center justify-between gap-3">
+            <div class="test-item group p-3 sm:p-3.5 rounded-xl border border-slate-200 dark:border-slate-800 hover:border-indigo-400 dark:hover:border-indigo-500 bg-white dark:bg-[#11192a] hover:shadow-sm transition-all flex items-center justify-between gap-3">
               <div class="min-w-0">
                 <div class="flex items-center gap-2 mb-1">
                   <span class="px-1.5 py-0.5 rounded text-[10px] font-bold bg-indigo-100 dark:bg-indigo-950 text-indigo-700 dark:text-indigo-300">${test.questions} प्रश्न</span>
@@ -637,8 +648,49 @@
             </div>
           `;
         });
-        container.className = "chapter-tests-grid grid grid-cols-1 sm:grid-cols-2 gap-3";
+        container.className = "chapter-tests-grid grid grid-cols-1 sm:grid-cols-2 gap-2.5 sm:gap-3";
         container.innerHTML = gridHtml;
+        
+        // Auto expand chapter if it just discovered tests and it is the first probed chapter
+        if (chIndex === 0) {
+          toggleChapterDropdown(chIndex, true);
+        }
+      }
+    }
+
+    // State tracking for accordion dropdowns
+    const chapterDropdownStates = {};
+
+    function toggleChapterDropdown(chIndex, forceState) {
+      const contentEl = document.getElementById(`chapter-dropdown-content-${chIndex}`);
+      const iconEl = document.getElementById(`chapter-dropdown-icon-${chIndex}`);
+      if (!contentEl || !iconEl) return;
+
+      const currentState = (chapterDropdownStates[chIndex] !== undefined) 
+        ? chapterDropdownStates[chIndex] 
+        : (chIndex === 0); // Default open for first chapter, closed for others
+
+      const newState = (forceState !== undefined) ? forceState : !currentState;
+      chapterDropdownStates[chIndex] = newState;
+
+      if (newState) {
+        contentEl.classList.remove('hidden');
+        iconEl.classList.add('rotate-180');
+      } else {
+        contentEl.classList.add('hidden');
+        iconEl.classList.remove('rotate-180');
+      }
+    }
+
+    let allDropdownsExpanded = false;
+    function toggleAllChapterDropdowns() {
+      allDropdownsExpanded = !allDropdownsExpanded;
+      allLoadedChapters.forEach((_, idx) => {
+        toggleChapterDropdown(idx, allDropdownsExpanded);
+      });
+      const btn = document.getElementById('toggleAllBtn');
+      if (btn) {
+        btn.textContent = allDropdownsExpanded ? 'सर्व बंद करा' : 'सर्व उघडा';
       }
     }
 
@@ -650,31 +702,25 @@
       chapters.forEach((chapter, index) => {
         const groupEl = document.createElement('div');
         groupEl.id = `chapter-card-${index}`;
-        groupEl.className = 'rounded-2xl bg-white dark:bg-[#131d31] border border-slate-200/90 dark:border-slate-800 p-4 sm:p-5 shadow-sm';
+        groupEl.className = 'rounded-2xl bg-white dark:bg-[#131d31] border border-slate-200/90 dark:border-slate-800 shadow-sm overflow-hidden transition-all';
 
         const hasTests = chapter.tests && chapter.tests.length > 0;
         const testCountText = hasTests 
           ? (chapter.tests.length === 1 ? '१ चाचणी' : `${chapter.tests.length} चाचण्या`)
           : 'लवकरच उपलब्ध';
 
-        let html = `
-          <div class="flex items-center gap-2 mb-3 pb-2 border-b border-slate-100 dark:border-slate-800/80">
-            <span class="w-6 h-6 rounded-lg bg-indigo-50 dark:bg-indigo-950/80 text-indigo-600 dark:text-indigo-400 font-bold text-xs flex items-center justify-center shrink-0">
-              ${index + 1}
-            </span>
-            <h3 class="text-sm font-bold text-slate-800 dark:text-slate-100">${chapter.title}</h3>
-            <span class="chapter-test-count ml-auto text-[11px] ${hasTests ? 'text-indigo-600 dark:text-indigo-400 font-bold' : 'text-slate-400 font-medium'}">${testCountText}</span>
-          </div>
-        `;
+        const isDefaultOpen = (index === 0 && hasTests);
+        chapterDropdownStates[index] = isDefaultOpen;
 
+        let testsHtml = '';
         if (hasTests) {
-          html += `<div class="chapter-tests-grid grid grid-cols-1 sm:grid-cols-2 gap-3">`;
+          testsHtml = `<div class="chapter-tests-grid grid grid-cols-1 sm:grid-cols-2 gap-2.5 sm:gap-3">`;
           chapter.tests.forEach(test => {
             const testFileSafe = encodeURIComponent(test.file);
             const testTitleSafe = encodeURIComponent(test.title);
 
-            html += `
-              <div class="test-item group p-3.5 rounded-xl border border-slate-200 dark:border-slate-800 hover:border-indigo-400 dark:hover:border-indigo-500 bg-slate-50/50 dark:bg-slate-900/40 hover:bg-white dark:hover:bg-slate-900 transition-all flex items-center justify-between gap-3">
+            testsHtml += `
+              <div class="test-item group p-3 sm:p-3.5 rounded-xl border border-slate-200 dark:border-slate-800 hover:border-indigo-400 dark:hover:border-indigo-500 bg-white dark:bg-[#11192a] hover:shadow-sm transition-all flex items-center justify-between gap-3">
                 <div class="min-w-0">
                   <div class="flex items-center gap-2 mb-1">
                     <span class="px-1.5 py-0.5 rounded text-[10px] font-bold bg-indigo-100 dark:bg-indigo-950 text-indigo-700 dark:text-indigo-300">${test.questions} प्रश्न</span>
@@ -694,18 +740,53 @@
               </div>
             `;
           });
-          html += `</div>`;
+          testsHtml += `</div>`;
         } else {
-          // Clean placeholder while probing or when test is not yet uploaded
-          html += `
-            <div class="chapter-tests-grid p-3 rounded-xl border border-dashed border-slate-200 dark:border-slate-800 bg-slate-50/30 dark:bg-slate-900/20 flex items-center justify-between">
+          testsHtml = `
+            <div class="chapter-tests-grid p-3 rounded-xl border border-dashed border-slate-200 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-900/30 flex items-center justify-between gap-2">
               <span class="text-xs text-slate-400 font-medium">या घटकाची सराव चाचणी लवकरच उपलब्ध होईल.</span>
-              <span class="px-2 py-0.5 rounded text-[10px] font-semibold bg-amber-50 dark:bg-amber-950/40 text-amber-600 dark:text-amber-400 border border-amber-200/60 dark:border-amber-900/40">लवकरच उपलब्ध</span>
+              <span class="px-2 py-0.5 rounded text-[10px] font-semibold bg-amber-50 dark:bg-amber-950/40 text-amber-600 dark:text-amber-400 border border-amber-200/60 dark:border-amber-900/40 shrink-0">लवकरच उपलब्ध</span>
             </div>
           `;
         }
 
-        groupEl.innerHTML = html;
+        // Accordion Card Structure: Clickable Dropdown Trigger Header + Collapsible Body
+        groupEl.innerHTML = `
+          <!-- Dropdown Header Button -->
+          <button type="button" 
+                  onclick="toggleChapterDropdown(${index})"
+                  aria-expanded="${isDefaultOpen}"
+                  class="w-full text-left p-3.5 sm:p-4 bg-slate-50/50 hover:bg-slate-100/80 dark:bg-[#131d31] dark:hover:bg-slate-800/50 transition-colors flex items-center justify-between gap-3 focus:outline-none focus:ring-2 focus:ring-indigo-500/30">
+            <div class="flex items-center gap-2.5 sm:gap-3 min-w-0">
+              <span class="w-6 h-6 sm:w-7 sm:h-7 rounded-lg bg-indigo-50 dark:bg-indigo-950/80 text-indigo-600 dark:text-indigo-400 font-extrabold text-xs flex items-center justify-center shrink-0 border border-indigo-100 dark:border-indigo-900/50">
+                ${index + 1}
+              </span>
+              <h3 class="text-xs sm:text-sm font-bold text-slate-900 dark:text-white truncate">
+                ${chapter.title}
+              </h3>
+            </div>
+            <div class="flex items-center gap-2 shrink-0">
+              <span class="chapter-test-count text-[11px] px-2 py-0.5 rounded-full font-bold ${
+                hasTests 
+                  ? 'bg-indigo-50 dark:bg-indigo-950/70 text-indigo-700 dark:text-indigo-300 border border-indigo-200/80 dark:border-indigo-800/60' 
+                  : 'bg-slate-100 dark:bg-slate-800 text-slate-500 dark:text-slate-400'
+              }">
+                ${testCountText}
+              </span>
+              <div id="chapter-dropdown-icon-${index}" class="w-6 h-6 rounded-lg flex items-center justify-center text-slate-400 dark:text-slate-500 transform transition-transform duration-200 ${isDefaultOpen ? 'rotate-180' : ''}">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
+                </svg>
+              </div>
+            </div>
+          </button>
+
+          <!-- Dropdown Collapsible Content Container -->
+          <div id="chapter-dropdown-content-${index}" class="chapter-collapse-content p-3.5 sm:p-4 pt-1 sm:pt-2 border-t border-slate-100 dark:border-slate-800/80 bg-slate-50/30 dark:bg-[#0f1728]/40 ${isDefaultOpen ? '' : 'hidden'}">
+            ${testsHtml}
+          </div>
+        `;
+
         container.appendChild(groupEl);
       });
     }
