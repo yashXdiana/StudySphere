@@ -74,7 +74,6 @@
       line-height: 1.3;
     }
 
-    /* Subtle custom scrollbar */
     ::-webkit-scrollbar {
       width: 6px;
     }
@@ -90,40 +89,43 @@
     }
   </style>
 </head>
-<body class="bg-slate-50 text-slate-800 dark:bg-[#0b0f19] dark:text-slate-100 font-sans transition-colors duration-200 min-h-screen flex flex-col font-size-medium antialiased selection:bg-indigo-500 selection:text-white">
+<body class="bg-slate-50 text-slate-800 dark:bg-[#0b0f19] dark:text-slate-100 font-sans transition-colors duration-200 min-h-screen flex flex-col font-size-medium antialiased selection:bg-indigo-500 selection:text-white overflow-x-hidden">
 
+  <!-- ========================================== -->
+  <!-- HEADER (Zero Mobile Overflow) -->
+  <!-- ========================================== -->
   <header class="sticky top-0 z-40 bg-white/95 dark:bg-[#0e1626]/95 backdrop-blur border-b border-slate-200 dark:border-slate-800 shadow-sm transition-colors duration-200">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-2">
+    <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 h-14 sm:h-16 flex items-center justify-between gap-1.5 sm:gap-2">
       
       <!-- Logo & Brand Name -->
-      <a href="#" class="flex items-center gap-2.5 group focus:outline-none focus:ring-2 focus:ring-indigo-500 rounded-lg p-1">
-        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-600 via-indigo-500 to-amber-400 p-[1.5px] shadow-md shadow-indigo-500/20 group-hover:scale-105 transition-transform duration-200">
+      <a href="index.html" class="flex items-center gap-2 sm:gap-2.5 group focus:outline-none rounded-lg p-0.5 shrink-0 min-w-0">
+        <div class="w-8 h-8 sm:w-10 sm:h-10 rounded-xl bg-gradient-to-tr from-indigo-600 via-indigo-500 to-amber-400 p-[1.5px] shadow-md shadow-indigo-500/20 group-hover:scale-105 transition-transform duration-200 shrink-0">
           <div class="w-full h-full bg-white dark:bg-slate-900 rounded-[10px] flex items-center justify-center">
-            <!-- Custom Education/Sphere SVG Logo -->
-            <svg class="w-6 h-6 text-indigo-600 dark:text-indigo-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <svg class="w-5 h-5 sm:w-6 sm:h-6 text-indigo-600 dark:text-indigo-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
               <circle cx="12" cy="12" r="3" class="fill-amber-400 stroke-none"/>
             </svg>
           </div>
         </div>
-        <div class="flex flex-col">
-          <span class="text-xl font-bold tracking-tight bg-gradient-to-r from-indigo-600 to-indigo-800 dark:from-indigo-400 dark:to-indigo-200 bg-clip-text text-transparent">
+        <div class="flex flex-col min-w-0">
+          <span class="text-base sm:text-xl font-bold tracking-tight bg-gradient-to-r from-indigo-600 to-indigo-800 dark:from-indigo-400 dark:to-indigo-200 bg-clip-text text-transparent truncate">
             StudySphere
           </span>
-          <span class="text-[10px] text-slate-500 dark:text-slate-400 -mt-1 font-medium tracking-wide">MPSC Group C Portal</span>
+          <span class="text-[9px] sm:text-[10px] text-slate-500 dark:text-slate-400 -mt-1 font-medium tracking-wide truncate">MPSC Group C</span>
         </div>
       </a>
 
       <!-- Desktop Center Navigation Links -->
       <nav class="hidden md:flex items-center gap-1 text-sm font-semibold text-slate-600 dark:text-slate-300">
-        <a href="#" class="px-3 py-1.5 rounded-lg hover:text-indigo-600 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">Home</a>
+        <a href="index.html" class="px-3 py-1.5 rounded-lg hover:text-indigo-600 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">Home</a>
         <button onclick="openModal('aboutModal')" class="px-3 py-1.5 rounded-lg hover:text-indigo-600 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">About</button>
         <button onclick="openModal('contactModal')" class="px-3 py-1.5 rounded-lg hover:text-indigo-600 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">Contact</button>
       </nav>
 
-      <div class="flex items-center gap-1.5 sm:gap-2">
+      <!-- Right Action Controls (Clean, Compact, No Overflow) -->
+      <div class="flex items-center gap-1.5 sm:gap-2 shrink-0">
         
-        <!-- Telegram Button (Header Desktop) -->
+        <!-- Telegram Button (Desktop/Tablet Only) -->
         <a href="https://t.me/MPSCstudysphere" target="_blank" rel="noopener noreferrer" 
            class="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-sky-50 dark:bg-sky-950/60 text-sky-600 dark:text-sky-300 hover:bg-sky-100 dark:hover:bg-sky-900 border border-sky-200 dark:border-sky-800 text-xs font-semibold shadow-sm transition-all duration-150">
           <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
@@ -132,27 +134,26 @@
           <span>Telegram</span>
         </a>
 
-        <!-- Donate Us Button (Header) -->
+        <!-- Donate Us Button (Desktop/Tablet Header - On Mobile it is inside Drawer) -->
         <button onclick="handleDonateClick()" 
-                class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white text-xs font-bold shadow-sm shadow-amber-500/25 active:scale-95 transition-all duration-150">
+                class="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white text-xs font-bold shadow-sm shadow-amber-500/25 active:scale-95 transition-all duration-150">
           <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
             <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
           </svg>
           <span>Donate</span>
         </button>
 
-        <!-- Font Size Adjuster Button (Cycles: Medium -> Large -> Small) -->
+        <!-- Font Size Adjuster Button -->
         <button id="fontSizeBtn" onclick="toggleFontSize()" title="मजकुराचा आकार बदला (Small, Medium, Large)"
-                class="px-2.5 py-1.5 rounded-lg bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 border border-slate-200 dark:border-slate-700 text-xs font-bold flex items-center gap-1 transition-all">
-          <span class="tracking-tighter">A<span class="text-[10px]">A</span></span>
-          <span id="fontBadge" class="text-[9px] uppercase px-1 py-0.2 rounded bg-indigo-100 dark:bg-indigo-900/60 text-indigo-700 dark:text-indigo-300 font-extrabold">M</span>
+                class="px-2 py-1 sm:px-2.5 sm:py-1.5 rounded-lg bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 border border-slate-200 dark:border-slate-700 text-xs font-bold flex items-center gap-0.5 sm:gap-1 transition-all">
+          <span class="tracking-tighter text-[11px] sm:text-xs">A<span class="text-[9px]">A</span></span>
+          <span id="fontBadge" class="text-[8px] sm:text-[9px] uppercase px-1 py-0.2 rounded bg-indigo-100 dark:bg-indigo-900/60 text-indigo-700 dark:text-indigo-300 font-extrabold">M</span>
         </button>
 
         <!-- Dark / Light Theme Toggle -->
         <button id="themeToggleBtn" onclick="toggleDarkMode()" title="थीम बदला (Dark/Light Mode)"
-                class="p-2 rounded-lg bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 border border-slate-200 dark:border-slate-700 transition-all">
-          <!-- Sun Icon (Shown in Dark Mode) -->
-          <svg id="sunIcon" class="w-4 h-4 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                class="p-1.5 sm:p-2 rounded-lg bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 border border-slate-200 dark:border-slate-700 transition-all">
+          <svg id="sunIcon" class="w-3.5 h-3.5 sm:w-4 sm:h-4 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
             <circle cx="12" cy="12" r="5"></circle>
             <line x1="12" y1="1" x2="12" y2="3"></line>
             <line x1="12" y1="21" x2="12" y2="23"></line>
@@ -163,15 +164,14 @@
             <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
             <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
           </svg>
-          <!-- Moon Icon (Shown in Light Mode) -->
-          <svg id="moonIcon" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <svg id="moonIcon" class="w-3.5 h-3.5 sm:w-4 sm:h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
             <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
           </svg>
         </button>
 
         <!-- Mobile Menu Hamburger Button -->
-        <button onclick="toggleMobileDrawer(true)" class="md:hidden p-2 rounded-lg bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 border border-slate-200 dark:border-slate-700 focus:outline-none" aria-label="Open Navigation Menu">
-          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+        <button onclick="toggleMobileDrawer(true)" class="md:hidden p-1.5 sm:p-2 rounded-lg bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 border border-slate-200 dark:border-slate-700 focus:outline-none" aria-label="Open Navigation Menu">
+          <svg class="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
             <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7"></path>
           </svg>
         </button>
@@ -180,57 +180,64 @@
     </div>
   </header>
 
+  <!-- ========================================== -->
+  <!-- MOBILE DRAWER (Zero-Scroll on All Mobiles) -->
+  <!-- ========================================== -->
   <div id="drawerBackdrop" onclick="toggleMobileDrawer(false)" class="fixed inset-0 bg-black/50 z-50 backdrop-blur-sm hidden transition-opacity duration-300"></div>
   
-  <div id="mobileDrawer" class="fixed top-0 right-0 h-full w-[65%] sm:w-1/2 max-w-[320px] bg-white dark:bg-[#0f172a] shadow-2xl z-50 transform translate-x-full transition-transform duration-300 ease-in-out flex flex-col justify-between border-l border-slate-200 dark:border-slate-800">
-    <!-- Drawer Top -->
-    <div class="p-5">
-      <div class="flex items-center justify-between pb-4 border-b border-slate-100 dark:border-slate-800">
-        <span class="font-bold text-sm text-slate-900 dark:text-white">StudySphere Menu</span>
+  <div id="mobileDrawer" class="fixed top-0 right-0 h-[100dvh] max-h-[100dvh] w-[75%] sm:w-[300px] max-w-[320px] bg-white dark:bg-[#0f172a] shadow-2xl z-50 transform translate-x-full transition-transform duration-300 ease-in-out flex flex-col justify-between border-l border-slate-200 dark:border-slate-800 overflow-hidden">
+    
+    <!-- Drawer Top Content -->
+    <div class="p-4 sm:p-5 flex flex-col">
+      <div class="flex items-center justify-between pb-3 border-b border-slate-100 dark:border-slate-800">
+        <div class="flex items-center gap-2">
+          <div class="w-6 h-6 rounded-lg bg-indigo-600 text-white font-bold text-xs flex items-center justify-center">SS</div>
+          <span class="font-bold text-sm text-slate-900 dark:text-white">StudySphere Menu</span>
+        </div>
         <button onclick="toggleMobileDrawer(false)" class="p-1.5 rounded-lg text-slate-400 hover:text-slate-600 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800">
-          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+          <svg class="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
             <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
           </svg>
         </button>
       </div>
 
-      <!-- Drawer Nav Links -->
-      <nav class="mt-4 flex flex-col gap-1 text-sm font-semibold text-slate-700 dark:text-slate-200">
-        <a href="#" onclick="toggleMobileDrawer(false)" class="flex items-center gap-3 px-3 py-2.5 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800">
+      <!-- Drawer Nav Links (Compact, Fits Cleanly) -->
+      <nav class="mt-3 flex flex-col gap-1 text-xs sm:text-sm font-semibold text-slate-700 dark:text-slate-200">
+        <a href="index.html" onclick="toggleMobileDrawer(false)" class="flex items-center gap-2.5 px-3 py-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800">
           <svg class="w-4 h-4 text-indigo-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
-          <span>Home</span>
+          <span>Home (मुख्यपृष्ठ)</span>
         </a>
-        <button onclick="toggleMobileDrawer(false); openModal('aboutModal');" class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-left hover:bg-slate-100 dark:hover:bg-slate-800">
+        <button onclick="toggleMobileDrawer(false); openModal('aboutModal');" class="flex items-center gap-2.5 px-3 py-2 rounded-lg text-left hover:bg-slate-100 dark:hover:bg-slate-800">
           <svg class="w-4 h-4 text-emerald-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
-          <span>About</span>
+          <span>About (माहिती)</span>
         </button>
-        <button onclick="toggleMobileDrawer(false); openModal('contactModal');" class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-left hover:bg-slate-100 dark:hover:bg-slate-800">
+        <button onclick="toggleMobileDrawer(false); openModal('contactModal');" class="flex items-center gap-2.5 px-3 py-2 rounded-lg text-left hover:bg-slate-100 dark:hover:bg-slate-800">
           <svg class="w-4 h-4 text-amber-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-          <span>Contact</span>
+          <span>Contact (संपर्क)</span>
         </button>
-        <a href="https://t.me/MPSCstudysphere" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 px-3 py-2.5 rounded-lg hover:bg-sky-50 dark:hover:bg-sky-950/40 text-sky-600 dark:text-sky-400">
+        <a href="https://t.me/MPSCstudysphere" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2.5 px-3 py-2 rounded-lg hover:bg-sky-50 dark:hover:bg-sky-950/40 text-sky-600 dark:text-sky-400">
           <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.121l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.535-.197 1.006.128.832.946z"/></svg>
           <span>Telegram Group</span>
         </a>
       </nav>
     </div>
 
-    <!-- Drawer Footer -->
-    <div class="p-5 border-t border-slate-100 dark:border-slate-800">
-      <button onclick="toggleMobileDrawer(false); handleDonateClick();" class="w-full py-2.5 px-4 rounded-xl bg-gradient-to-r from-amber-500 to-orange-500 text-white font-bold text-xs flex items-center justify-center gap-2 shadow-md shadow-amber-500/20">
+    <!-- Drawer Bottom (Prominent Donate Button - 100% Zero Scroll Required) -->
+    <div class="p-4 border-t border-slate-100 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-900/50">
+      <button onclick="toggleMobileDrawer(false); handleDonateClick();" class="w-full py-2.5 px-3 rounded-xl bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white font-bold text-xs flex items-center justify-center gap-2 shadow-md shadow-amber-500/25 active:scale-95 transition-all">
         <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
-        <span>Donate Support</span>
+        <span>Donate Support (सहकार्य करा)</span>
       </button>
-      <p class="text-[11px] text-center text-slate-400 mt-3 font-medium">StudySphere © 2026</p>
+      <p class="text-[10px] text-center text-slate-400 mt-2 font-medium">StudySphere © 2026 • मोफत सराव केंद्र</p>
     </div>
   </div>
 
-  <main class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 w-full">
+  <main class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8 w-full">
 
     <!-- Top Announcement / Quick Info Bar -->
-    <div class="mb-8 p-3 sm:p-4 rounded-2xl bg-indigo-50/80 dark:bg-indigo-950/30 border border-indigo-100 dark:border-indigo-900/60 flex items-center justify-between gap-3">
-      <div class="flex items-center gap-3">
-        <span class="flex h-2.5 w-2.5 relative">
+    <div class="mb-6 sm:mb-8 p-3 sm:p-4 rounded-2xl bg-indigo-50/80 dark:bg-indigo-950/30 border border-indigo-100 dark:border-indigo-900/60 flex items-center justify-between gap-3">
+      <div class="flex items-center gap-2.5 sm:gap-3">
+        <span class="flex h-2.5 w-2.5 relative shrink-0">
           <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-indigo-400 opacity-75"></span>
           <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-indigo-600"></span>
         </span>
@@ -238,15 +245,14 @@
           MPSC गट-क २०२६ ची तयारी: सर्व सराव चाचण्या आणि संयुक्त मॉक टेस्ट्स मोफत उपलब्ध आहेत.
         </p>
       </div>
-      <span class="hidden md:inline-flex text-[11px] font-bold px-2 py-0.5 rounded-full bg-indigo-200/60 dark:bg-indigo-900/60 text-indigo-800 dark:text-indigo-300">New Syllabus</span>
+      <span class="hidden md:inline-flex text-[11px] font-bold px-2 py-0.5 rounded-full bg-indigo-200/60 dark:bg-indigo-900/60 text-indigo-800 dark:text-indigo-300 shrink-0">New Syllabus</span>
     </div>
 
     <!-- ========================================== -->
     <!-- SECTION 1: MPSC Group C 2026 — PRELIMS -->
     <!-- ========================================== -->
-    <section class="mb-12">
-      <!-- Section Header -->
-      <div class="flex items-center gap-3 mb-5 pb-2 border-b border-slate-200 dark:border-slate-800">
+    <section class="mb-10 sm:mb-12">
+      <div class="flex items-center gap-3 mb-4 sm:mb-5 pb-2 border-b border-slate-200 dark:border-slate-800">
         <div class="w-2.5 h-6 bg-indigo-600 rounded-full"></div>
         <div>
           <h2 class="text-lg sm:text-xl font-bold tracking-tight text-slate-900 dark:text-white flex items-center gap-2">
@@ -400,9 +406,8 @@
     <!-- ========================================== -->
     <!-- SECTION 2: MPSC Group C 2026 — MAINS -->
     <!-- ========================================== -->
-    <section class="mb-12">
-      <!-- Section Header -->
-      <div class="flex items-center gap-3 mb-5 pb-2 border-b border-slate-200 dark:border-slate-800">
+    <section class="mb-10 sm:mb-12">
+      <div class="flex items-center gap-3 mb-4 sm:mb-5 pb-2 border-b border-slate-200 dark:border-slate-800">
         <div class="w-2.5 h-6 bg-emerald-600 rounded-full"></div>
         <div>
           <h2 class="text-lg sm:text-xl font-bold tracking-tight text-slate-900 dark:text-white flex items-center gap-2">
@@ -529,97 +534,96 @@
           <a href="test-list.html?section=mains&subject=current-affairs" class="subject-card group flex items-center justify-between p-3.5 sm:p-4 rounded-xl bg-white dark:bg-[#131d31] border border-slate-200/90 dark:border-slate-800 hover:border-emerald-500 shadow-sm hover:shadow-md transition-all duration-200">
             <div class="flex items-center gap-3.5 min-w-0">
               <div class="w-10 h-10 rounded-lg bg-rose-50 dark:bg-rose-950/50 text-rose-600 dark:text-rose-400 flex items-center justify-center shrink-0 border border-rose-200/60 dark:border-rose-900/50 group-hover:scale-105 transition-transform">
-                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-              </div>
-              <div class="flex flex-col min-w-0">
-                <span class="subject-title font-bold text-slate-900 dark:text-slate-100 group-hover:text-emerald-600 dark:group-hover:text-emerald-400 truncate">Current Affairs</span>
-                <span class="subject-subtext text-slate-500 dark:text-slate-400 font-medium">चालू घडामोडी</span>
-              </div>
+                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+              </svg>
             </div>
-            <svg class="w-5 h-5 text-slate-400 group-hover:text-emerald-600 dark:group-hover:text-emerald-400 group-hover:translate-x-1 transition-all shrink-0 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
-          </a>
-
-          <!-- 9. Mental Ability & Arithmetic -->
-          <a href="test-list.html?section=mains&subject=mental-ability-arithmetic" class="subject-card group flex items-center justify-between p-3.5 sm:p-4 rounded-xl bg-white dark:bg-[#131d31] border border-slate-200/90 dark:border-slate-800 hover:border-emerald-500 shadow-sm hover:shadow-md transition-all duration-200">
-            <div class="flex items-center gap-3.5 min-w-0">
-              <div class="w-10 h-10 rounded-lg bg-indigo-50 dark:bg-indigo-950/50 text-indigo-600 dark:text-indigo-400 flex items-center justify-center shrink-0 border border-indigo-200/60 dark:border-indigo-900/50 group-hover:scale-105 transition-transform">
-                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="8" y1="6" x2="16" y2="6"/><line x1="16" y1="14" x2="16" y2="18"/><path d="M8 10h.01M12 10h.01M16 10h.01M8 14h.01M12 14h.01M8 18h.01M12 18h.01"/></svg>
-              </div>
-              <div class="flex flex-col min-w-0">
-                <span class="subject-title font-bold text-slate-900 dark:text-slate-100 group-hover:text-emerald-600 dark:group-hover:text-emerald-400 truncate">Mental Ability & Arithmetic</span>
-                <span class="subject-subtext text-slate-500 dark:text-slate-400 font-medium">बुद्धिमत्ता व अंकगणित</span>
-              </div>
+            <div class="flex flex-col min-w-0">
+              <span class="subject-title font-bold text-slate-900 dark:text-slate-100 group-hover:text-emerald-600 dark:group-hover:text-emerald-400 truncate">Current Affairs</span>
+              <span class="subject-subtext text-slate-500 dark:text-slate-400 font-medium">चालू घडामोडी</span>
             </div>
-            <svg class="w-5 h-5 text-slate-400 group-hover:text-emerald-600 dark:group-hover:text-emerald-400 group-hover:translate-x-1 transition-all shrink-0 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
-          </a>
+          </div>
+          <svg class="w-5 h-5 text-slate-400 group-hover:text-emerald-600 dark:group-hover:text-emerald-400 group-hover:translate-x-1 transition-all shrink-0 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+        </a>
 
-          <!-- 10. Information Technology -->
-          <a href="test-list.html?section=mains&subject=information-technology" class="subject-card group flex items-center justify-between p-3.5 sm:p-4 rounded-xl bg-white dark:bg-[#131d31] border border-slate-200/90 dark:border-slate-800 hover:border-emerald-500 shadow-sm hover:shadow-md transition-all duration-200">
-            <div class="flex items-center gap-3.5 min-w-0">
-              <div class="w-10 h-10 rounded-lg bg-cyan-50 dark:bg-cyan-950/50 text-cyan-600 dark:text-cyan-400 flex items-center justify-center shrink-0 border border-cyan-200/60 dark:border-cyan-900/50 group-hover:scale-105 transition-transform">
-                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
-                  <line x1="8" y1="21" x2="16" y2="21"/>
-                  <line x1="12" y1="17" x2="12" y2="21"/>
-                </svg>
-              </div>
-              <div class="flex flex-col min-w-0">
-                <span class="subject-title font-bold text-slate-900 dark:text-slate-100 group-hover:text-emerald-600 dark:group-hover:text-emerald-400 truncate">Information Technology</span>
-                <span class="subject-subtext text-slate-500 dark:text-slate-400 font-medium">माहिती तंत्रज्ञान</span>
-              </div>
+        <!-- 9. Mental Ability & Arithmetic -->
+        <a href="test-list.html?section=mains&subject=mental-ability-arithmetic" class="subject-card group flex items-center justify-between p-3.5 sm:p-4 rounded-xl bg-white dark:bg-[#131d31] border border-slate-200/90 dark:border-slate-800 hover:border-emerald-500 shadow-sm hover:shadow-md transition-all duration-200">
+          <div class="flex items-center gap-3.5 min-w-0">
+            <div class="w-10 h-10 rounded-lg bg-indigo-50 dark:bg-indigo-950/50 text-indigo-600 dark:text-indigo-400 flex items-center justify-center shrink-0 border border-indigo-200/60 dark:border-indigo-900/50 group-hover:scale-105 transition-transform">
+              <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="8" y1="6" x2="16" y2="6"/><line x1="16" y1="14" x2="16" y2="18"/><path d="M8 10h.01M12 10h.01M16 10h.01M8 14h.01M12 14h.01M8 18h.01M12 18h.01"/></svg>
             </div>
-            <svg class="w-5 h-5 text-slate-400 group-hover:text-emerald-600 dark:group-hover:text-emerald-400 group-hover:translate-x-1 transition-all shrink-0 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
-          </a>
-
-          <!-- 11. RTI Act & Maharashtra Right to Public Services Act -->
-          <a href="test-list.html?section=mains&subject=rti-public-services" class="subject-card group flex items-center justify-between p-3.5 sm:p-4 rounded-xl bg-white dark:bg-[#131d31] border border-slate-200/90 dark:border-slate-800 hover:border-emerald-500 shadow-sm hover:shadow-md transition-all duration-200">
-            <div class="flex items-center gap-3.5 min-w-0">
-              <div class="w-10 h-10 rounded-lg bg-yellow-50 dark:bg-yellow-950/50 text-yellow-700 dark:text-yellow-400 flex items-center justify-center shrink-0 border border-yellow-200/60 dark:border-yellow-900/50 group-hover:scale-105 transition-transform">
-                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-                  <polyline points="14 2 14 8 20 8"/>
-                  <line x1="16" y1="13" x2="8" y2="13"/>
-                  <line x1="16" y1="17" x2="8" y2="17"/>
-                  <polyline points="10 9 9 9 8 9"/>
-                </svg>
-              </div>
-              <div class="flex flex-col min-w-0">
-                <span class="subject-title font-bold text-slate-900 dark:text-slate-100 group-hover:text-emerald-600 dark:group-hover:text-emerald-400 truncate">RTI & Public Services Act</span>
-                <span class="subject-subtext text-slate-500 dark:text-slate-400 font-medium">माहिती अधिकार व लोकसेवा हक्क कायदा</span>
-              </div>
+            <div class="flex flex-col min-w-0">
+              <span class="subject-title font-bold text-slate-900 dark:text-slate-100 group-hover:text-emerald-600 dark:group-hover:text-emerald-400 truncate">Mental Ability & Arithmetic</span>
+              <span class="subject-subtext text-slate-500 dark:text-slate-400 font-medium">बुद्धिमत्ता व अंकगणित</span>
             </div>
-            <svg class="w-5 h-5 text-slate-400 group-hover:text-emerald-600 dark:group-hover:text-emerald-400 group-hover:translate-x-1 transition-all shrink-0 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
-          </a>
+          </div>
+          <svg class="w-5 h-5 text-slate-400 group-hover:text-emerald-600 dark:group-hover:text-emerald-400 group-hover:translate-x-1 transition-all shrink-0 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+        </a>
 
-          <!-- 12. Post-Specific Knowledge -->
-          <a href="test-list.html?section=mains&subject=post-specific-knowledge" class="subject-card group flex items-center justify-between p-3.5 sm:p-4 rounded-xl bg-white dark:bg-[#131d31] border border-slate-200/90 dark:border-slate-800 hover:border-emerald-500 shadow-sm hover:shadow-md transition-all duration-200">
-            <div class="flex items-center gap-3.5 min-w-0">
-              <div class="w-10 h-10 rounded-lg bg-pink-50 dark:bg-pink-950/50 text-pink-600 dark:text-pink-400 flex items-center justify-center shrink-0 border border-pink-200/60 dark:border-pink-900/50 group-hover:scale-105 transition-transform">
-                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
-                  <circle cx="9" cy="7" r="4"/>
-                  <path d="M22 21v-2a4 4 0 0 0-3-3.87"/>
-                  <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
-                </svg>
-              </div>
-              <div class="flex flex-col min-w-0">
-                <span class="subject-title font-bold text-slate-900 dark:text-slate-100 group-hover:text-emerald-600 dark:group-hover:text-emerald-400 truncate">Post-Specific Knowledge</span>
-                <span class="subject-subtext text-slate-500 dark:text-slate-400 font-medium">पदानुसार विशेष ज्ञान (क्लार्क, कर सहाय्यक इ.)</span>
-              </div>
+        <!-- 10. Information Technology -->
+        <a href="test-list.html?section=mains&subject=information-technology" class="subject-card group flex items-center justify-between p-3.5 sm:p-4 rounded-xl bg-white dark:bg-[#131d31] border border-slate-200/90 dark:border-slate-800 hover:border-emerald-500 shadow-sm hover:shadow-md transition-all duration-200">
+          <div class="flex items-center gap-3.5 min-w-0">
+            <div class="w-10 h-10 rounded-lg bg-cyan-50 dark:bg-cyan-950/50 text-cyan-600 dark:text-cyan-400 flex items-center justify-center shrink-0 border border-cyan-200/60 dark:border-cyan-900/50 group-hover:scale-105 transition-transform">
+              <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                <line x1="8" y1="21" x2="16" y2="21"/>
+                <line x1="12" y1="17" x2="12" y2="21"/>
+              </svg>
             </div>
-            <svg class="w-5 h-5 text-slate-400 group-hover:text-emerald-600 dark:group-hover:text-emerald-400 group-hover:translate-x-1 transition-all shrink-0 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
-          </a>
+            <div class="flex flex-col min-w-0">
+              <span class="subject-title font-bold text-slate-900 dark:text-slate-100 group-hover:text-emerald-600 dark:group-hover:text-emerald-400 truncate">Information Technology</span>
+              <span class="subject-subtext text-slate-500 dark:text-slate-400 font-medium">माहिती तंत्रज्ञान</span>
+            </div>
+          </div>
+          <svg class="w-5 h-5 text-slate-400 group-hover:text-emerald-600 dark:group-hover:text-emerald-400 group-hover:translate-x-1 transition-all shrink-0 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+        </a>
 
-        </div>
+        <!-- 11. RTI Act & Maharashtra Right to Public Services Act -->
+        <a href="test-list.html?section=mains&subject=rti-public-services" class="subject-card group flex items-center justify-between p-3.5 sm:p-4 rounded-xl bg-white dark:bg-[#131d31] border border-slate-200/90 dark:border-slate-800 hover:border-emerald-500 shadow-sm hover:shadow-md transition-all duration-200">
+          <div class="flex items-center gap-3.5 min-w-0">
+            <div class="w-10 h-10 rounded-lg bg-yellow-50 dark:bg-yellow-950/50 text-yellow-700 dark:text-yellow-400 flex items-center justify-center shrink-0 border border-yellow-200/60 dark:border-yellow-900/50 group-hover:scale-105 transition-transform">
+              <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                <polyline points="14 2 14 8 20 8"/>
+                <line x1="16" y1="13" x2="8" y2="13"/>
+                <line x1="16" y1="17" x2="8" y2="17"/>
+                <polyline points="10 9 9 9 8 9"/>
+              </svg>
+            </div>
+            <div class="flex flex-col min-w-0">
+              <span class="subject-title font-bold text-slate-900 dark:text-slate-100 group-hover:text-emerald-600 dark:group-hover:text-emerald-400 truncate">RTI & Public Services Act</span>
+              <span class="subject-subtext text-slate-500 dark:text-slate-400 font-medium">माहिती अधिकार व लोकसेवा हक्क कायदा</span>
+            </div>
+          </div>
+          <svg class="w-5 h-5 text-slate-400 group-hover:text-emerald-600 dark:group-hover:text-emerald-400 group-hover:translate-x-1 transition-all shrink-0 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+        </a>
+
+        <!-- 12. Post-Specific Knowledge -->
+        <a href="test-list.html?section=mains&subject=post-specific-knowledge" class="subject-card group flex items-center justify-between p-3.5 sm:p-4 rounded-xl bg-white dark:bg-[#131d31] border border-slate-200/90 dark:border-slate-800 hover:border-emerald-500 shadow-sm hover:shadow-md transition-all duration-200">
+          <div class="flex items-center gap-3.5 min-w-0">
+            <div class="w-10 h-10 rounded-lg bg-pink-50 dark:bg-pink-950/50 text-pink-600 dark:text-pink-400 flex items-center justify-center shrink-0 border border-pink-200/60 dark:border-pink-900/50 group-hover:scale-105 transition-transform">
+              <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+                <circle cx="9" cy="7" r="4"/>
+                <path d="M22 21v-2a4 4 0 0 0-3-3.87"/>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+              </svg>
+            </div>
+            <div class="flex flex-col min-w-0">
+              <span class="subject-title font-bold text-slate-900 dark:text-slate-100 group-hover:text-emerald-600 dark:group-hover:text-emerald-400 truncate">Post-Specific Knowledge</span>
+              <span class="subject-subtext text-slate-500 dark:text-slate-400 font-medium">पदानुसार विशेष ज्ञान (क्लार्क, कर सहाय्यक इ.)</span>
+            </div>
+          </div>
+          <svg class="w-5 h-5 text-slate-400 group-hover:text-emerald-600 dark:group-hover:text-emerald-400 group-hover:translate-x-1 transition-all shrink-0 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+        </a>
+
       </div>
     </section>
 
     <!-- ========================================== -->
     <!-- SECTION 3: MPSC COMBINE FULL QUIZZES -->
     <!-- ========================================== -->
-    <section class="mb-14">
-      <!-- Section Header -->
-      <div class="flex items-center gap-3 mb-5 pb-2 border-b border-slate-200 dark:border-slate-800">
+    <section class="mb-12 sm:mb-14">
+      <div class="flex items-center gap-3 mb-4 sm:mb-5 pb-2 border-b border-slate-200 dark:border-slate-800">
         <div class="w-2.5 h-6 bg-gradient-to-b from-indigo-500 to-purple-600 rounded-full"></div>
         <div>
           <h2 class="text-lg sm:text-xl font-bold tracking-tight text-slate-900 dark:text-white flex items-center gap-2">
@@ -719,7 +723,7 @@
           <div class="flex items-center gap-2 text-[11px] text-slate-500 dark:text-slate-400">
             <span>• १/४ निगेटिव्ह पॅटर्न</span>
             <span>• सविस्तर स्पष्टीकरण</span>
-            <span>• वेळेच्या बंधनासह सराव</span>
+            <span>• TCS/IBPS फॉरमॅट</span>
           </div>
         </div>
 
@@ -783,7 +787,7 @@
       <!-- Compact Copyright Strip -->
       <div class="pt-4 flex flex-col sm:flex-row items-center justify-between text-[11px] text-slate-500 dark:text-slate-400 gap-1.5 font-medium">
         <p>© २०२६ StudySphere. सर्व हक्क राखीव (All rights reserved).</p>
-        <p class="text-slate-400 dark:text-slate-500">महाराष्ट्रातील स्पर्धा परीक्षेची तयारी करणाऱ्या विद्यार्थ्यांसाठी समर्पित 🚩</p>
+        <p class="text-slate-400 dark:text-slate-500">महाराष्ट्रातील स्पर्धा परीक्षा विद्यार्थ्यांसाठी समर्पित 🚩</p>
       </div>
 
     </div>
@@ -809,7 +813,6 @@
           विद्यार्थ्यांना मोफत व दर्जेदार टेस्ट्स उपलब्ध ठेवण्यासाठी आपले सहकार्य मोलाचे आहे.
         </p>
 
-        <!-- Refined Transparency Note on Free Web Hosting & Server Performance -->
         <div class="mt-2.5 p-2.5 rounded-xl bg-amber-50 dark:bg-amber-950/40 border border-amber-200/80 dark:border-amber-900/50 text-left">
           <p class="text-[11px] text-amber-900 dark:text-amber-200 leading-relaxed font-semibold">
             💡 <span class="underline">महत्त्वाची नोंद:</span> सध्या ही वेबसाइट विनामूल्य वेब सेवांचा (Free Web Hosting & Tools) वापर करून चालवली जात आहे. तुमच्या छोट्याशा आर्थिक सहकार्यामुळे (Donation) वेबसाइट अधिक गतिशील, वेगवान आणि सर्व्हर-सक्षम करण्यात मोठी मदत होईल.
@@ -843,7 +846,7 @@
         <p id="amountError" class="text-[11px] text-rose-500 mt-1 hidden font-medium">कृपया किमान ₹१० किंवा त्याहून अधिक रक्कम टाका.</p>
       </div>
 
-      <!-- Pay Now Button (Direct UPI Intent) -->
+      <!-- Pay Now Button -->
       <button onclick="triggerUPIPayment()" id="payNowBtn" 
               class="w-full py-2.5 rounded-xl bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white font-bold text-xs shadow-md shadow-amber-500/25 active:scale-[0.98] transition-all flex items-center justify-center gap-2">
         <span>Pay with UPI App (GPay / PhonePe / Paytm)</span>
@@ -858,7 +861,7 @@
   <div id="desktopDonationModal" class="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm hidden items-center justify-center p-4">
     <div class="bg-white dark:bg-[#131d31] rounded-2xl w-full max-w-md p-6 shadow-2xl border border-slate-200 dark:border-slate-800 relative">
       <button onclick="closeModal('desktopDonationModal')" class="absolute top-4 right-4 p-1.5 text-slate-400 hover:text-slate-600 dark:hover:text-white rounded-lg">
-        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
       </button>
 
       <div class="text-center mb-3">
@@ -871,7 +874,6 @@
         </p>
       </div>
 
-      <!-- Refined Transparency Note for Desktop -->
       <div class="mb-3.5 p-2.5 rounded-xl bg-amber-50 dark:bg-amber-950/40 border border-amber-200/80 dark:border-amber-900/50 text-left">
         <p class="text-[11px] text-amber-900 dark:text-amber-200 leading-relaxed font-semibold">
           💡 <span class="underline">महत्त्वाची नोंद:</span> सध्या ही वेबसाइट विनामूल्य वेब सेवांचा (Free Web Hosting) वापर करून चालवली जात आहे. तुमच्या छोट्याशा आर्थिक सहकार्यामुळे (Donation) वेबसाइट अधिक गतिशील, वेगवान आणि सर्व्हर-सक्षम करण्यात मोलाची मदत होईल.
@@ -1260,7 +1262,7 @@
       }
     }
 
-    // --- Font Resizer (Cycles: Medium -> Large -> Small -> Medium) ---
+    // --- Font Resizer ---
     function toggleFontSize() {
       currentFontIndex = (currentFontIndex + 1) % fontSizes.length;
       applyFontSize(fontSizes[currentFontIndex]);
@@ -1301,7 +1303,7 @@
       }
     }
 
-    // --- Donation Logic (Mobile UPI vs Desktop QR) ---
+    // --- Donation Logic ---
     function handleDonateClick() {
       if (isMobileDevice()) {
         openModal('mobileDonationModal');
@@ -1315,7 +1317,6 @@
       document.getElementById('customAmountInput').value = amount;
       validateCustomAmount();
 
-      // Highlight active button
       document.querySelectorAll('.donation-btn').forEach(btn => {
         if (btn.textContent.includes(amount.toString())) {
           btn.className = 'donation-btn py-2 px-3 text-xs font-bold rounded-xl border-2 border-amber-500 bg-amber-50 dark:bg-amber-950/40 text-amber-700 dark:text-amber-300 transition-all';
@@ -1355,12 +1356,9 @@
 
       paymentInitiated = true;
       closeModal('mobileDonationModal');
-      
-      // Trigger Mobile UPI intent
       window.location.href = upiUrl;
     }
 
-    // Detect return to browser tab after mobile payment
     document.addEventListener('visibilitychange', function() {
       if (document.visibilityState === 'visible' && paymentInitiated) {
         paymentInitiated = false;
@@ -1437,19 +1435,6 @@
       }
     }
 
-    // Subject Box Demo Interaction
-    document.querySelectorAll('.subject-card').forEach(card => {
-      card.addEventListener('click', function(e) {
-        const title = this.querySelector('.subject-title')?.textContent || 'Subject';
-        // For now preventing dead anchor navigation and showing feedback
-        if (this.getAttribute('href') === '#') {
-          e.preventDefault();
-          showToast(`"${title}" ची टेस्ट्स सूची लवकरच उघडेल!`);
-        }
-      });
-    });
-
-    // Close modals with Escape key
     document.addEventListener('keydown', function(e) {
       if (e.key === 'Escape') {
         ['mobileDonationModal', 'desktopDonationModal', 'thankYouModal', 'aboutModal', 'contactModal', 'privacyModal', 'termsModal', 'sitemapModal'].forEach(id => {
@@ -1459,7 +1444,6 @@
       }
     });
 
-    // Run on Page Load
     window.onload = function() {
       initTheme();
       initFontSize();
