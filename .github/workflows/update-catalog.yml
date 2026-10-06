@@ -1,7 +1,6 @@
-STREAMING_CHUNK:Configuring workflow triggers...
+STREAMING_CHUNK:Configuring triggers...
 
 name: Auto-Build Quiz Catalog
-
 on:
 push:
 branches:
@@ -10,32 +9,25 @@ paths:
 - 'data//*.json'
 - 'build-catalog.js'
 
-STREAMING_CHUNK:Setting up permissions and jobs...
+STREAMING_CHUNK:Defining jobs and steps...
 
 jobs:
 build-and-commit:
 runs-on: ubuntu-latest
-
 permissions:
-  contents: write
-
+contents: write
 steps:
-  # STREAMING_CHUNK:Checking out code and setting up Node.js...
-  - name: Checkout repository
-    uses: actions/checkout@v4
-
-  - name: Setup Node.js
-    uses: actions/setup-node@v4
-    with:
-      node-version: '20'
-
-  # STREAMING_CHUNK:Running the builder script and committing changes...
-  - name: Run Catalog Builder
-    run: node build-catalog.js
-
-  - name: Commit and Push changes
-    run: |
-      git config --local user.email "github-actions[bot]@users.noreply.github.com"
-      git config --local user.name "github-actions[bot]"
-      git add data/catalog.json
-      git diff --quiet && git diff --staged --quiet || (git commit -m "chore: auto-update quiz catalog [skip ci]" && git push)
+- name: Checkout repository
+uses: actions/checkout@v4
+- name: Setup Node.js
+uses: actions/setup-node@v4
+with:
+node-version: '20'
+- name: Run Catalog Builder
+run: node build-catalog.js
+- name: Commit and Push changes
+run: |
+git config --local user.email "github-actions[bot]@users.noreply.github.com"
+git config --local user.name "github-actions[bot]"
+git add data/catalog.json
+git diff --quiet && git diff --staged --quiet || (git commit -m "chore: auto-update quiz catalog [skip ci]" && git push)
