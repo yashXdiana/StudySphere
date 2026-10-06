@@ -20,8 +20,7 @@ function walkDir(dir, callback) {
 }
 
 const catalog = [];
-
-console.log('Scanning for quiz JSON files...');
+console.log('Scanning for quiz JSON files in data/ directory...');
 
 // Traverse the data directory
 walkDir(dataDir, (filePath) => {
@@ -32,14 +31,14 @@ walkDir(dataDir, (filePath) => {
             const quizData = JSON.parse(fileContent);
             
             // Format the file path for web URLs (replace Windows backslashes with forward slashes)
-            // Example: 'data/prelims/History/quiz_1.json'
+            // Example output: 'data/prelims/History/chapters/01_modern_indian_history/quiz_1.json'
             const relativePath = path.relative(__dirname, filePath).split(path.sep).join('/');
 
-            // Push only the necessary metadata to the catalog
-            if (quizData.quizId && quizData.titleMr) {
+            // Push only the necessary metadata to the catalog if it has a valid ID and Title
+            if (quizData.quizId && (quizData.titleMr || quizData.title)) {
                 catalog.push({
                     quizId: quizData.quizId,
-                    titleMr: quizData.titleMr,
+                    titleMr: quizData.titleMr || "निनावी चाचणी",
                     titleEn: quizData.title || "",
                     subject: quizData.subjectNameMr || "General",
                     chapter: quizData.chapterNameMr || "Mixed",
@@ -48,6 +47,7 @@ walkDir(dataDir, (filePath) => {
                     difficulty: quizData.difficulty || "Medium",
                     fileUrl: relativePath
                 });
+                console.log(`Added to catalog: ${quizData.titleMr || quizData.title} -> ${relativePath}`);
             }
         } catch (err) {
             console.error(`[Error] Failed to parse JSON in file: ${filePath}`, err);
@@ -63,8 +63,8 @@ try {
     }
     
     fs.writeFileSync(outputFile, JSON.stringify(catalog, null, 2));
-    console.log(`Success! Catalog generated with ${catalog.length} quizzes.`);
+    console.log(`\nSuccess! Catalog generated with ${catalog.length} quizzes.`);
     console.log(`Output saved to: ${outputFile}`);
 } catch (err) {
-    console.error('[Error] Failed to write catalog.json:', err);
+    console.error('\n[Error] Failed to write catalog.json:', err);
 }
