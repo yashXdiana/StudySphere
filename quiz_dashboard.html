@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="mr-IN"> 
+<html lang="mr-IN">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
@@ -443,7 +443,7 @@
       } else {
         fetch(fileUrl)
           .then(res => {
-            if (!res.ok) throw new Error("File not found");
+            if (!res.ok) throw new Error("File not found or HTTP error");
             return res.json();
           })
           .then(data => {
