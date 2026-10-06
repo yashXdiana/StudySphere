@@ -67,7 +67,7 @@
       font-size: var(--content-subtext-size) !important;
     }
 
-    /* Accordion Dropdown transition smoothing */
+    /* Accordion transition smoothing */
     .chapter-collapse-content {
       transition: max-height 0.3s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.25s ease-in-out;
     }
@@ -80,7 +80,9 @@
 </head>
 <body class="bg-slate-50 text-slate-800 dark:bg-[#0b0f19] dark:text-slate-100 font-sans transition-colors duration-200 min-h-screen flex flex-col font-size-medium antialiased selection:bg-indigo-500 selection:text-white">
 
-  <!-- Header -->
+  <!-- ========================================== -->
+  <!-- HEADER -->
+  <!-- ========================================== -->
   <header class="sticky top-0 z-40 bg-white/95 dark:bg-[#0e1626]/95 backdrop-blur border-b border-slate-200 dark:border-slate-800 shadow-sm transition-colors duration-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-2">
       
@@ -132,6 +134,9 @@
     </div>
   </header>
 
+  <!-- ========================================== -->
+  <!-- MAIN CONTENT CONTAINER -->
+  <!-- ========================================== -->
   <main class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 w-full">
 
     <!-- Breadcrumb Bar -->
@@ -223,13 +228,7 @@
           <div class="w-2 h-5 bg-indigo-600 rounded-full"></div>
           <h2 class="text-base sm:text-lg font-bold text-slate-900 dark:text-white">घटकनिहाय सराव (Chapter-wise Tests)</h2>
         </div>
-        <div class="flex items-center gap-2">
-          <button type="button" onclick="toggleAllChapterDropdowns()" id="toggleAllBtn" 
-                  class="hidden sm:inline-flex text-[11px] font-bold px-2.5 py-1 rounded-lg bg-slate-200/70 hover:bg-slate-300 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-300 transition-all">
-            सर्व उघडा / बंद करा
-          </button>
-          <span id="chapterCountBadge" class="text-xs text-slate-500 dark:text-slate-400 font-medium">० घटक उपलब्ध</span>
-        </div>
+        <span id="chapterCountBadge" class="text-xs text-slate-500 dark:text-slate-400 font-medium">० घटक उपलब्ध</span>
       </div>
 
       <!-- Chapter Groups Container (Accordion Dropdowns) -->
@@ -464,7 +463,8 @@
         document.getElementById('tabChapters').classList.remove('hidden');
       }
 
-      // Initial clean render
+      // Initial render - ALL chapters initially closed (null)
+      activeOpenChapterIndex = null;
       renderChapterTests(allLoadedChapters);
       renderMixedTests(allLoadedMixed);
       updateTotalStats();
@@ -554,7 +554,7 @@
               file: result.path
             });
 
-            // Update UI for this chapter immediately
+            // Update UI for this chapter immediately without force-opening it
             updateChapterCardUI(chIndex, chapter);
             updateTotalStats();
             testNum++;
@@ -650,48 +650,38 @@
         });
         container.className = "chapter-tests-grid grid grid-cols-1 sm:grid-cols-2 gap-2.5 sm:gap-3";
         container.innerHTML = gridHtml;
-        
-        // Auto expand chapter if it just discovered tests and it is the first probed chapter
-        if (chIndex === 0) {
-          toggleChapterDropdown(chIndex, true);
-        }
       }
     }
 
-    // State tracking for accordion dropdowns
-    const chapterDropdownStates = {};
+    // =======================================================================
+    // ACCORDION DROPDOWN ENGINE (Single open at a time, Initially all closed)
+    // =======================================================================
+    let activeOpenChapterIndex = null; // null means all closed initially
 
-    function toggleChapterDropdown(chIndex, forceState) {
-      const contentEl = document.getElementById(`chapter-dropdown-content-${chIndex}`);
-      const iconEl = document.getElementById(`chapter-dropdown-icon-${chIndex}`);
-      if (!contentEl || !iconEl) return;
+    function toggleChapterDropdown(chIndex) {
+      const isCurrentlyOpen = (activeOpenChapterIndex === chIndex);
 
-      const currentState = (chapterDropdownStates[chIndex] !== undefined) 
-        ? chapterDropdownStates[chIndex] 
-        : (chIndex === 0); // Default open for first chapter, closed for others
-
-      const newState = (forceState !== undefined) ? forceState : !currentState;
-      chapterDropdownStates[chIndex] = newState;
-
-      if (newState) {
-        contentEl.classList.remove('hidden');
-        iconEl.classList.add('rotate-180');
-      } else {
-        contentEl.classList.add('hidden');
-        iconEl.classList.remove('rotate-180');
+      // If there was an open chapter, close it first
+      if (activeOpenChapterIndex !== null) {
+        const prevContent = document.getElementById(`chapter-dropdown-content-${activeOpenChapterIndex}`);
+        const prevIcon = document.getElementById(`chapter-dropdown-icon-${activeOpenChapterIndex}`);
+        if (prevContent) prevContent.classList.add('hidden');
+        if (prevIcon) prevIcon.classList.remove('rotate-180');
       }
-    }
 
-    let allDropdownsExpanded = false;
-    function toggleAllChapterDropdowns() {
-      allDropdownsExpanded = !allDropdownsExpanded;
-      allLoadedChapters.forEach((_, idx) => {
-        toggleChapterDropdown(idx, allDropdownsExpanded);
-      });
-      const btn = document.getElementById('toggleAllBtn');
-      if (btn) {
-        btn.textContent = allDropdownsExpanded ? 'सर्व बंद करा' : 'सर्व उघडा';
+      // If user clicked the same open chapter, keep all closed
+      if (isCurrentlyOpen) {
+        activeOpenChapterIndex = null;
+        return;
       }
+
+      // Open the clicked chapter
+      const targetContent = document.getElementById(`chapter-dropdown-content-${chIndex}`);
+      const targetIcon = document.getElementById(`chapter-dropdown-icon-${chIndex}`);
+      if (targetContent) targetContent.classList.remove('hidden');
+      if (targetIcon) targetIcon.classList.add('rotate-180');
+
+      activeOpenChapterIndex = chIndex;
     }
 
     function renderChapterTests(chapters) {
@@ -708,9 +698,6 @@
         const testCountText = hasTests 
           ? (chapter.tests.length === 1 ? '१ चाचणी' : `${chapter.tests.length} चाचण्या`)
           : 'लवकरच उपलब्ध';
-
-        const isDefaultOpen = (index === 0 && hasTests);
-        chapterDropdownStates[index] = isDefaultOpen;
 
         let testsHtml = '';
         if (hasTests) {
@@ -750,12 +737,12 @@
           `;
         }
 
-        // Accordion Card Structure: Clickable Dropdown Trigger Header + Collapsible Body
+        // Accordion Card Structure: Header Button (Title + Count + Arrow) + Collapsible Body (Initially Hidden)
         groupEl.innerHTML = `
-          <!-- Dropdown Header Button -->
+          <!-- Dropdown Header Trigger -->
           <button type="button" 
                   onclick="toggleChapterDropdown(${index})"
-                  aria-expanded="${isDefaultOpen}"
+                  aria-expanded="false"
                   class="w-full text-left p-3.5 sm:p-4 bg-slate-50/50 hover:bg-slate-100/80 dark:bg-[#131d31] dark:hover:bg-slate-800/50 transition-colors flex items-center justify-between gap-3 focus:outline-none focus:ring-2 focus:ring-indigo-500/30">
             <div class="flex items-center gap-2.5 sm:gap-3 min-w-0">
               <span class="w-6 h-6 sm:w-7 sm:h-7 rounded-lg bg-indigo-50 dark:bg-indigo-950/80 text-indigo-600 dark:text-indigo-400 font-extrabold text-xs flex items-center justify-center shrink-0 border border-indigo-100 dark:border-indigo-900/50">
@@ -773,7 +760,7 @@
               }">
                 ${testCountText}
               </span>
-              <div id="chapter-dropdown-icon-${index}" class="w-6 h-6 rounded-lg flex items-center justify-center text-slate-400 dark:text-slate-500 transform transition-transform duration-200 ${isDefaultOpen ? 'rotate-180' : ''}">
+              <div id="chapter-dropdown-icon-${index}" class="w-6 h-6 rounded-lg flex items-center justify-center text-slate-400 dark:text-slate-500 transform transition-transform duration-200">
                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.2">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
                 </svg>
@@ -781,8 +768,8 @@
             </div>
           </button>
 
-          <!-- Dropdown Collapsible Content Container -->
-          <div id="chapter-dropdown-content-${index}" class="chapter-collapse-content p-3.5 sm:p-4 pt-1 sm:pt-2 border-t border-slate-100 dark:border-slate-800/80 bg-slate-50/30 dark:bg-[#0f1728]/40 ${isDefaultOpen ? '' : 'hidden'}">
+          <!-- Collapsible Content (Initially Hidden) -->
+          <div id="chapter-dropdown-content-${index}" class="chapter-collapse-content p-3.5 sm:p-4 pt-1 sm:pt-2 border-t border-slate-100 dark:border-slate-800/80 bg-slate-50/30 dark:bg-[#0f1728]/40 hidden">
             ${testsHtml}
           </div>
         `;
