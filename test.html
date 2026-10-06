@@ -91,64 +91,73 @@
 </head>
 <body class="bg-slate-100 text-slate-800 dark:bg-[#0b0f19] dark:text-slate-100 font-sans h-full flex flex-col antialiased transition-colors duration-200 overflow-hidden no-select q-font-small">
 
-  <!-- ========================================== -->
-  <!-- TOP EXAM NAVIGATION & TIMER BAR -->
-  <!-- ========================================== -->
-  <header class="h-14 sm:h-16 bg-white dark:bg-[#0e1626] border-b border-slate-200 dark:border-slate-800 shadow-sm flex items-center justify-between px-2.5 sm:px-6 shrink-0 z-30">
-    
-    <!-- Test Info / Exit Button -->
-    <div class="flex items-center gap-2 sm:gap-3 min-w-0">
-      <button onclick="openExitModal()" title="चाचणीतून बाहेर पडा" 
-              class="px-2 py-1 sm:px-2.5 sm:py-1.5 rounded-lg bg-rose-50 hover:bg-rose-100 dark:bg-rose-950/60 dark:hover:bg-rose-900/60 text-rose-600 dark:text-rose-400 border border-rose-200 dark:border-rose-900 text-[11px] sm:text-xs font-bold flex items-center gap-1 transition-all active:scale-95 shrink-0">
-        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15M12 9l-3 3m0 0l3 3m-3-3h12.75"/></svg>
-        <span>Exit</span>
-      </button>
-
-      <div class="min-w-0">
-        <h1 id="examTitle" class="text-xs sm:text-sm font-bold text-slate-900 dark:text-white truncate max-w-[130px] xs:max-w-[180px] sm:max-w-md">
-          MPSC चाचणी
-        </h1>
-        <div class="flex items-center gap-1.5 text-[10px] text-slate-500 dark:text-slate-400">
-          <span id="markingSchemeBadge">१ गुण | -०.२५</span>
-          <span>•</span>
-          <span id="totalQuestionsBadge">० प्रश्न</span>
-        </div>
-      </div>
-    </div>
-
-    <!-- Center/Right: Timer, Theme Toggle, Palette Toggle and Submit -->
-    <div class="flex items-center gap-1.5 sm:gap-3">
+  <!-- ========================================================================= -->
+  <!-- TOP EXAM NAVIGATION & TIMER BAR (2-ROW CLEAN ON MOBILE, 1-ROW ON DESKTOP) -->
+  <!-- ========================================================================= -->
+  <header class="bg-white dark:bg-[#0e1626] border-b border-slate-200 dark:border-slate-800 shadow-sm px-2.5 sm:px-6 py-1.5 sm:py-0 sm:h-16 shrink-0 z-30 transition-colors">
+    <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1.5 sm:gap-4 w-full h-full">
       
-      <!-- Countdown Timer Box -->
-      <div id="timerContainer" class="flex items-center gap-1.5 px-2 py-1 sm:px-3 sm:py-1.5 rounded-xl bg-indigo-50 dark:bg-indigo-950/80 border border-indigo-200 dark:border-indigo-800 text-indigo-700 dark:text-indigo-300 font-mono font-extrabold text-xs sm:text-sm shadow-inner shrink-0">
-        <svg class="w-3.5 h-3.5 sm:w-4 sm:h-4 text-indigo-600 dark:text-indigo-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <circle cx="12" cy="12" r="10"/>
-          <polyline points="12 6 12 12 16 14"/>
-        </svg>
-        <span id="timerDisplay">00:00</span>
+      <!-- LINE 1 (Mobile Line 1 / Desktop Left): Exit Button & Test Information -->
+      <div class="flex items-center justify-between sm:justify-start gap-2 sm:gap-3 min-w-0 w-full sm:w-auto">
+        
+        <!-- Exit Button -->
+        <button onclick="openExitModal()" title="चाचणीतून बाहेर पडा" 
+                class="px-2 py-1 sm:px-2.5 sm:py-1.5 rounded-lg bg-rose-50 hover:bg-rose-100 dark:bg-rose-950/60 dark:hover:bg-rose-900/60 text-rose-600 dark:text-rose-400 border border-rose-200 dark:border-rose-900 text-[11px] sm:text-xs font-bold flex items-center gap-1 transition-all active:scale-95 shrink-0">
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15M12 9l-3 3m0 0l3 3m-3-3h12.75"/></svg>
+          <span>Exit</span>
+        </button>
+
+        <!-- Test Title and Scheme Badges -->
+        <div class="min-w-0 flex-1 sm:flex-initial">
+          <h1 id="examTitle" class="text-xs sm:text-sm font-bold text-slate-900 dark:text-white truncate max-w-[210px] sm:max-w-md">
+            MPSC चाचणी
+          </h1>
+          <div class="flex items-center gap-1.5 text-[10px] text-slate-500 dark:text-slate-400">
+            <span id="markingSchemeBadge">१ गुण | -०.२५</span>
+            <span>•</span>
+            <span id="totalQuestionsBadge">० प्रश्न</span>
+          </div>
+        </div>
+
       </div>
 
-      <!-- Theme Switcher -->
-      <button onclick="toggleDarkMode()" title="थीम बदला" class="p-1.5 sm:p-2 rounded-lg bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300 transition-colors">
-        <svg id="sunIcon" class="w-3.5 h-3.5 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
-        <svg id="moonIcon" class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
-      </button>
+      <!-- LINE 2 (Mobile Line 2 / Desktop Right): Timer, Theme, Mobile Palette, Submit -->
+      <div class="flex items-center justify-between sm:justify-end gap-1.5 sm:gap-3 pt-1 sm:pt-0 border-t border-slate-100 dark:border-slate-800/80 sm:border-0 w-full sm:w-auto">
+        
+        <!-- Countdown Timer Box -->
+        <div id="timerContainer" class="flex items-center gap-1 sm:gap-1.5 px-2 py-1 sm:px-3 sm:py-1.5 rounded-xl bg-indigo-50 dark:bg-indigo-950/80 border border-indigo-200 dark:border-indigo-800 text-indigo-700 dark:text-indigo-300 font-mono font-extrabold text-xs sm:text-sm shadow-inner shrink-0">
+          <svg class="w-3.5 h-3.5 sm:w-4 sm:h-4 text-indigo-600 dark:text-indigo-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"/>
+            <polyline points="12 6 12 12 16 14"/>
+          </svg>
+          <span id="timerDisplay">00:00</span>
+        </div>
 
-      <!-- Mobile Question Palette Toggle Button -->
-      <button onclick="toggleMobilePalette()" class="lg:hidden flex items-center gap-1 px-2 py-1 rounded-lg bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-200 text-xs font-bold">
-        <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <rect x="3" y="3" width="7" height="7"/>
-          <rect x="14" y="3" width="7" height="7"/>
-          <rect x="14" y="14" width="7" height="7"/>
-          <rect x="3" y="14" width="7" height="7"/>
-        </svg>
-        <span id="paletteMobileCount">०/०</span>
-      </button>
+        <div class="flex items-center gap-1.5 sm:gap-2">
+          <!-- Theme Switcher -->
+          <button onclick="toggleDarkMode()" title="थीम बदला" class="p-1 sm:p-2 rounded-lg bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300 transition-colors">
+            <svg id="sunIcon" class="w-3.5 h-3.5 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+            <svg id="moonIcon" class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          </button>
 
-      <!-- Submit Test Primary Button (Header) -->
-      <button onclick="openSubmitModal()" class="px-2.5 sm:px-4 py-1.5 rounded-lg bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs shadow-md shadow-emerald-600/25 active:scale-95 transition-all">
-        Submit
-      </button>
+          <!-- Mobile Question Palette Toggle Button -->
+          <button onclick="toggleMobilePalette()" class="lg:hidden flex items-center gap-1 px-2 py-1 rounded-lg bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-200 text-xs font-bold">
+            <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="3" width="7" height="7"/>
+              <rect x="14" y="3" width="7" height="7"/>
+              <rect x="14" y="14" width="7" height="7"/>
+              <rect x="3" y="14" width="7" height="7"/>
+            </svg>
+            <span id="paletteMobileCount">०/०</span>
+          </button>
+
+          <!-- Submit Test Button -->
+          <button onclick="openSubmitModal()" class="px-2.5 sm:px-4 py-1 sm:py-1.5 rounded-lg bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs shadow-md shadow-emerald-600/25 active:scale-95 transition-all">
+            Submit
+          </button>
+        </div>
+
+      </div>
 
     </div>
   </header>
@@ -161,7 +170,7 @@
     <!-- LEFT PANE: Active Question & Interactive Options -->
     <main class="flex-1 flex flex-col justify-between bg-slate-50 dark:bg-[#0b0f19] overflow-hidden relative">
       
-      <!-- Top Scrollable Content Area: Active Question & Interactive Options -->
+      <!-- Top Scrollable Content Area -->
       <div class="flex-1 overflow-y-auto p-3 sm:p-5 lg:p-6 w-full">
         <div class="max-w-4xl mx-auto w-full">
           
@@ -279,7 +288,7 @@
     </main>
 
     <!-- ========================================== -->
-    <!-- RIGHT PANE: QUESTION PALETTE (TCS/IBPS style) -->
+    <!-- RIGHT PANE: QUESTION PALETTE -->
     <!-- ========================================== -->
     <aside id="paletteSidebar" 
            class="fixed lg:static inset-y-0 right-0 z-40 w-80 lg:w-72 xl:w-80 bg-white dark:bg-[#131d31] border-l border-slate-200 dark:border-slate-800 flex flex-col justify-between transform translate-x-full lg:translate-x-0 transition-transform duration-300 ease-in-out shadow-2xl lg:shadow-none">
@@ -426,7 +435,6 @@
   <!-- JAVASCRIPT EXAM ENGINE CORE LOGIC -->
   <!-- ========================================== -->
   <script>
-    // --- State Variables ---
     let examData = null;
     let currentIndex = 0;
     let userAnswers = {};      // { questionIndex: selectedOptionIndex }
@@ -497,7 +505,6 @@
       }
     }
 
-    // STRICT CLEAN LOADER: STRICTLY NO DEMO DATA!
     async function loadTestData() {
       const urlParams = new URLSearchParams(window.location.search);
       const testFile = urlParams.get('file');
@@ -507,7 +514,6 @@
         return;
       }
 
-      // Try multiple path variations to resolve correctly on GitHub Pages and local servers
       const pathsToTry = [
         testFile,
         './' + testFile,
@@ -535,7 +541,6 @@
         return;
       }
 
-      // Initialize loaded quiz
       totalQuestions = examData.questions.length;
       timeRemaining = (examData.durationMinutes || 15) * 60;
 
@@ -585,7 +590,7 @@
 
       const container = document.getElementById('timerContainer');
       if (container && timeRemaining <= 120) {
-        container.className = "flex items-center gap-1.5 px-2 py-1 sm:px-3 sm:py-1.5 rounded-xl bg-rose-50 dark:bg-rose-950/80 border border-rose-300 dark:border-rose-800 text-rose-600 dark:text-rose-300 font-mono font-extrabold text-xs sm:text-sm animate-pulse shadow-inner";
+        container.className = "flex items-center gap-1 sm:gap-1.5 px-2 py-1 sm:px-3 sm:py-1.5 rounded-xl bg-rose-50 dark:bg-rose-950/80 border border-rose-300 dark:border-rose-800 text-rose-600 dark:text-rose-300 font-mono font-extrabold text-xs sm:text-sm animate-pulse shadow-inner";
       }
     }
 
@@ -825,7 +830,6 @@
       }
     }
 
-    // Exit Modal Handlers
     function openExitModal() {
       const modal = document.getElementById('exitModal');
       modal.classList.remove('hidden');
@@ -844,7 +848,6 @@
       window.location.href = 'test-list.html';
     }
 
-    // Submit Modal Handlers
     function openSubmitModal() {
       let answered = 0;
       let marked = 0;
