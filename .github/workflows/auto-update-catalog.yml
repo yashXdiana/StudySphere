@@ -1,0 +1,36 @@
+name: Auto-Build Quiz Catalog
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'data/*.json'
+      - 'build-catalog.js'
+
+jobs:
+  build-and-commit:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Run Catalog Builder
+        run: node build-catalog.js
+
+      - name: Commit and Push changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add data/catalog.json
+          git commit -m "Update quiz catalog" || echo "No changes to commit"
+          git push
