@@ -1,0 +1,464 @@
+{
+  "testId": "p-hist-04-t6",
+  "title": {
+    "mr": "सामाजिक व धार्मिक सुधारणा चळवळी — सराव 6",
+    "en": "Social and Religious Reform Movements — Practice Test 6"
+  },
+  "durationMinutes": 20,
+  "marksPerQuestion": 1,
+  "negativeMarking": 0.25,
+  "totalMarks": 25,
+  "difficulty": "मध्यम ते काठिण्य",
+  "questions": [
+    {
+      "id": 1,
+      "question": {
+        "mr": "राजा राममोहन रॉय यांनी १८२५ मध्ये वेदांत तत्त्वज्ञान आणि पाश्चात्त्य भौतिक विज्ञानाच्या समन्वयासाठी कलकत्ता येथे कोणती शैक्षणिक संस्था स्थापन केली?",
+        "en": "Which educational institution was founded in Calcutta in 1825 by Raja Ram Mohan Roy to synthesize Vedantic philosophy with Western physical sciences?"
+      },
+      "options": [
+        { "mr": "वेदांत कॉलेज (Vedanta College)", "en": "Vedanta College" },
+        { "mr": "हिंदू कॉलेज (Hindu College)", "en": "Hindu College" },
+        { "mr": "संस्कृत कॉलेज (Sanskrit College)", "en": "Sanskrit College" },
+        { "mr": "कलकत्ता युनिटेरियन कमिटी", "en": "Calcutta Unitarian Committee" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१८२५ मध्ये राजा राममोहन रॉय यांनी 'वेदांत कॉलेज'ची स्थापना केली. यामध्ये भारतीय तत्त्वज्ञान व उपनिषदांसोबतच पाश्चात्त्य भौतिकशास्त्र, रसायनशास्त्र आणि समाजशास्त्र शिकवण्याची विशेष सोय करण्यात आली होती.",
+        "en": "In 1825, Raja Ram Mohan Roy established the Vedanta College, which offered courses combining traditional Indian spiritual learning with Western scientific, mathematical, and social studies."
+      }
+    },
+    {
+      "id": 2,
+      "question": {
+        "mr": "राजा राममोहन रॉय यांच्या इंग्लंड दौऱ्याबाबत (१८३०-१८३३) खालील विधाने विचारात घ्या:\nअ. समुद्र ओलांडून (काळेपाणी पार करून) इंग्लंडला प्रवास करणारे ते पहिले आधुनिक भारतीय विचारवंत होते.\nब. २७ सप्टेंबर १८३३ रोजी इंग्लंडमधील 'ब्रिस्टल' (Bristol) येथे त्यांचे निधन झाले.\nवरीलपैकी कोणते/ती विधान/ने बरोबर आहेत?",
+        "en": "Consider the following statements regarding Raja Ram Mohan Roy's voyage to England (1830–1833):\na. He was the first modern Indian intellectual to cross the seas ('Kala Pani') and travel to Britain.\nb. He passed away on 27 September 1833 at Bristol, England.\nWhich of the statements given above is/are correct?"
+      },
+      "options": [
+        { "mr": "फक्त अ", "en": "Only a" },
+        { "mr": "फक्त ब", "en": "Only b" },
+        { "mr": "अ आणि ब दोन्ही", "en": "Both a and b" },
+        { "mr": "दोन्ही नाही", "en": "Neither a nor b" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "दोन्ही विधाने योग्य आहेत. मुघल सम्राट अकबर दुसरा याच्या वतीने दाद मागण्यासाठी ते १८३० मध्ये इंग्लंडला गेले. २७ सप्टेंबर १८३३ रोजी ब्रिस्टलजवळील स्टेपलटन ग्रोव्ह येथे मेंदूज्वराने त्यांचे निधन झाले; ब्रिस्टल येथील अर्नोस व्हेल सिमेट्रीत त्यांची समाधी आहे.",
+        "en": "Both statements are correct. Raja Ram Mohan Roy sailed to England in November 1830 representing the Mughal Crown and lobbying against the repeal of the Sati regulation, passing away at Bristol on 27 September 1833."
+      }
+    },
+    {
+      "id": 3,
+      "question": {
+        "mr": "१८३० मध्ये राजा राममोहन रॉय यांच्या सुधारणावादी विचारांना व सतीबंदी कायद्याला विरोध करण्यासाठी राधाकांत देव यांनी स्थापन केलेल्या सनातनी संघटनेचे नाव काय होते?",
+        "en": "What was the name of the orthodox Hindu association established in Calcutta in 1830 by Radhakanta Deb to counter the liberal reforms of Raja Ram Mohan Roy?"
+      },
+      "options": [
+        { "mr": "धर्म सभा (Dharma Sabha)", "en": "Dharma Sabha" },
+        { "mr": "तत्वबोधिनी सभा (Tattvabodhini Sabha)", "en": "Tattvabodhini Sabha" },
+        { "mr": "आत्मीय सभा (Atmiya Sabha)", "en": "Atmiya Sabha" },
+        { "mr": "सनातन धर्म रक्षणी सभा", "en": "Sanatan Dharma Rakshani Sabha" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "जानेवारी १८३० मध्ये राजा राधाकांत देव यांनी 'धर्म सभा' स्थापन केली. या सभेने बेंटिंकच्या सतीबंदी कायद्याविरुद्ध इंग्लंडच्या प्रिव्ही कौन्सिलकडे अपील केले होते, तथापि १८३२ मध्ये प्रिव्ही कौन्सिलने ही याचिका फेटाळून लावली.",
+        "en": "In January 1830, Raja Radhakanta Deb formed the 'Dharma Sabha' to defend orthodox socio-religious practices against colonial legislative interference, famously petitioning the Privy Council against the abolition of Sati."
+      }
+    },
+    {
+      "id": 4,
+      "question": {
+        "mr": "देवेंद्रनाथ टागोर यांनी ब्राह्मो समाजाच्या उपासनेसाठी १८४८ मध्ये संकलित केलेल्या महत्त्वपूर्ण धर्मग्रंथाचे नाव काय होते?",
+        "en": "Which foundational devotional text was compiled in 1848 by Debendranath Tagore for the formal worship and liturgical services of the Brahmo Samaj?"
+      },
+      "options": [
+        { "mr": "ब्राह्मोधर्म (Brahmo Dharma)", "en": "Brahmo Dharma" },
+        { "mr": "सत्यार्थ प्रकाश (Satyarth Prakash)", "en": "Satyarth Prakash" },
+        { "mr": "धर्मविवेचन (Dharmavivechan)", "en": "Dharmavivechan" },
+        { "mr": "सार्वजनिक सत्यधर्म पुस्तक", "en": "Sarvajanik Satyadharma Pustak" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "महर्षी देवेंद्रनाथ टागोर यांनी १८४८ मध्ये उपनिषदांमधील निवडक श्लोक संकलित करून 'ब्राह्मोधर्म' हा ग्रंथ तयार केला, ज्यामध्ये मूर्तिपूजा विरहित शुद्ध एकेश्वरवादी उपासनेचे नियम दिले होते.",
+        "en": "In 1848, Debendranath Tagore compiled 'Brahmo Dharma', a seminal theistic manual based on select passages from the Upanishads and moral texts to serve as a guide for Brahmo worshippers."
+      }
+    },
+    {
+      "id": 5,
+      "question": {
+        "mr": "१८६३ मध्ये केशवचंद्र सेन यांच्या प्रेरणेने मद्रास येथे 'वेद समाज' (Veda Samaj) ची स्थापना खालीलपैकी कोणी केली?",
+        "en": "Who among the following founded the 'Veda Samaj' at Madras in 1863 under the direct inspiration of Brahmo leader Keshub Chunder Sen?"
+      },
+      "options": [
+        { "mr": "श्रीधरलू नायडू आणि चेम्बटी श्रीधरलु", "en": "K. Sridharalu Naidu and Chembati Sridharalu" },
+        { "mr": "कंदुकुरी वीरेशलिंगम पंतुलु", "en": "Kandukuri Veeresalingam Pantulu" },
+        { "mr": "श्री नारायण गुरू", "en": "Sri Narayana Guru" },
+        { "mr": "सी. नटेश मुदलियार", "en": "C. Natesa Mudaliar" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१८६४ मध्ये मद्रासला 'दक्षिणेचा ब्राह्मो समाज' मानल्या गेलेल्या 'वेद समाजा'ची स्थापना के. श्रीधरलू नायडू व व्ही. राजगोपालाचारलू यांनी केली. १८७१ मध्ये श्रीधरलू नायडू यांनी त्याचे नामकरण 'ब्राह्मो समाज ऑफ सदर्न इंडिया' असे केले.",
+        "en": "Under Keshub Chunder Sen's impetus, Chembati Sridharalu Naidu and V. Rajagopalacharlu founded the Veda Samaj in Madras in 1864, which was reconstituted in 1871 as the Brahmo Samaj of Southern India."
+      }
+    },
+    {
+      "id": 6,
+      "question": {
+        "mr": "केशवचंद्र सेन यांच्या प्रयत्नांमुळे ब्रिटिश सरकारने १८७२ मध्ये संमत केलेल्या 'विशेष विवाह कायद्याला' (Special Marriage Act 1872) आणखी कोणत्या नावाने ओळखले जाते?",
+        "en": "By what other designation is the landmark Special Marriage Act of 1872, enacted through the advocacy of Keshub Chunder Sen, commonly known?"
+      },
+      "options": [
+        { "mr": "नेटिव्ह मॅरेज ॲक्ट (Native Marriage Act / Act III of 1872)", "en": "Native Marriage Act (Act III of 1872)" },
+        { "mr": "शारदा कायदा (Sharda Act)", "en": "Sharda Act" },
+        { "mr": "हिंदू विधवा पुनर्विवाह कायदा", "en": "Hindu Widows' Remarriage Act" },
+        { "mr": "संमती वय कायदा", "en": "Age of Consent Act" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१८७२ चा 'नेटिव्ह मॅरेज ॲक्ट' (नागरी विवाह कायदा) हा ब्राह्मो विवाह पद्धतीला कायदेशीर मान्यता देणारा कायदा होता. याने बालविवाह व बहुपत्नीत्वाला बंदी घातली आणि मुलींचे लग्नाचे किमान वय १४ व मुलांचे १८ वर्षे निश्चित केले.",
+        "en": "Act III of 1872, commonly designated as the Native Marriage Act, legalized inter-caste Brahmo unions, prohibited polygamy, and fixed the statutory minimum age of marriage at 14 for girls and 18 for boys."
+      }
+    },
+    {
+      "id": 7,
+      "question": {
+        "mr": "ईश्वरचंद्र विद्यासागर यांनी १८४९ मध्ये कलकत्ता येथे उच्चवर्णीय मुलींच्या शिक्षणासाठी जे. ई. डी. बेथून यांच्यासोबत कोणती ऐतिहासिक शाळा स्थापन केली?",
+        "en": "Which pioneer secular girls' institution was founded at Calcutta in 1849 by J. E. D. Bethune in close collaboration with Ishwar Chandra Vidyasagar?"
+      },
+      "options": [
+        { "mr": "हिंदू फिमेल स्कूल (Hindu Female School / नंतरचे बेथून स्कूल)", "en": "Hindu Female School (later Bethune School)" },
+        { "mr": "कलकत्ता मदरसा", "en": "Calcutta Madrasa" },
+        { "mr": "अकॅडेमिक असोसिएशन", "en": "Academic Association" },
+        { "mr": "शारदा सदन", "en": "Sharada Sadan" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "७ मे १८४९ रोजी बेथून आणि ईश्वरचंद्र विद्यासागर यांनी 'हिंदू फिमेल स्कूल' स्थापन केले. विद्यासागर हे या संस्थेचे मानद सचिव होते आणि त्यांनी संपूर्ण बंगालमध्ये ३५ हून अधिक मुलींच्या शाळा स्वतःच्या पुढाकाराने सुरू केल्या.",
+        "en": "On 7 May 1849, J. E. D. Bethune, assisted by Ishwar Chandra Vidyasagar as secretary, opened the Hindu Female School (later Bethune College) in Calcutta, inaugurating formal secular higher education for women in India."
+      }
+    },
+    {
+      "id": 8,
+      "question": {
+        "mr": "७ डिसेंबर १८५६ रोजी पंडित ईश्वरचंद्र विद्यासागर यांच्या वैयक्तिक उपस्थितीत भारतातील पहिला कायदेशीर हिंदू विधवा पुनर्विवाह कोणामध्ये पार पडला?",
+        "en": "On 7 December 1856, in the presence of Pandit Ishwar Chandra Vidyasagar, between whom was India's first legal Hindu widow remarriage solemnized in Calcutta?"
+      },
+      "options": [
+        { "mr": "श्रीशचंद्र विद्यार्थी आणि कालिमती देवी", "en": "Srish Chandra Vidyaratna and Kalimati Devi" },
+        { "mr": "नारायण शेषाद्री आणि आनंदीबाई", "en": "Narayan Sheshadri and Anandibai" },
+        { "mr": "विष्णु परशुराम शास्त्री आणि नर्मदाबाई", "en": "Vishnu Parshuram Shastri and Narmadabai" },
+        { "mr": "धोंडो केशव कर्वे आणि गोदुबाई", "en": "Dhondo Keshav Karve and Godubai" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१८५६ चा विधवा पुनर्विवाह कायदा संमत झाल्यानंतर ७ डिसेंबर १८५६ रोजी कलकत्त्यात संस्कृत कॉलेजचे प्राध्यापक श्रीशचंद्र विद्यार्थी यांचा विवाह कालिमती देवी या बालविधवेशी विद्यासागरांच्या स्वतःच्या आर्थिक खर्चातून पार पडला.",
+        "en": "On 7 December 1856, the first legally sanctioned widow remarriage under Act XV of 1856 was performed in Calcutta between Sanskrit scholar Srish Chandra Vidyaratna and widowed bride Kalimati Devi."
+      }
+    },
+    {
+      "id": 9,
+      "question": {
+        "mr": "यंग बंगाल चळवळीतील हेन्री व्हिव्हियन डेरोझिओ यांच्या अनुयायांनी (Derozians) समाजसुधारणांसाठी खालीलपैकी कोणती वृत्तपत्रे चालवली होती?",
+        "en": "Which of the following journals were edited and published by the Derozians (Young Bengal followers) during the 1830s and 1840s to propagate rationalism?"
+      },
+      "options": [
+        { "mr": "ज्ञानन्वेषण (Gyananveshan) आणि एनक्वायरर (The Enquirer)", "en": "Gyananveshan and The Enquirer" },
+        { "mr": "संवाद कौमुदी आणि मिरात-उल-अखबार", "en": "Samvad Kaumudi and Mirat-ul-Akhbar" },
+        { "mr": "दर्पण आणि प्रभाकर", "en": "Darpan and Prabhakar" },
+        { "mr": "सुधारक आणि केसरी", "en": "Sudharak and Kesari" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "डेरोझिओ यांच्या शिष्यांनी (दक्षिणरंजन मुखर्जी, कृष्णमोहन बॅनर्जी) 'ज्ञानन्वेषण' (Gyananveshan - १८३१) आणि 'द एनक्वायरर' (The Enquirer) ही वृत्तपत्रे सुरू करून सनातन हिंदू धर्मातील अंधश्रद्धांवर तार्किक हल्ले चढवले.",
+        "en": "The Derozians, including Krishnamohan Banerjee and Rasikkrishna Mallick, voiced radical rationalist arguments through their mouthpieces 'The Enquirer' and the bilingual journal 'Gyananveshan'."
+      }
+    },
+    {
+      "id": 10,
+      "question": {
+        "mr": "बाळशास्त्री जांभेकर यांनी १८३० च्या दशकात स्थापन केलेल्या खालील संस्थांचा विचार करा:\nअ. बाँबे नेटिव्ह जनरल लायब्ररी (Bombay Native General Library)\nब. नेटिव्ह इम्प्रुव्हमेंट सोसायटी (Native Improvement Society)\nवरीलपैकी कोणत्या संस्थेची स्थापना जांभेकरांच्या पुढाकाराने झाली होती?",
+        "en": "Consider the following civic institutions established in Bombay during the 1830s:\na. Bombay Native General Library\nb. Native Improvement Society\nWhich of the above was/were founded through the initiative of Balshastri Jambhekar?"
+      },
+      "options": [
+        { "mr": "फक्त अ", "en": "Only a" },
+        { "mr": "फक्त ब", "en": "Only b" },
+        { "mr": "अ आणि ब दोन्ही", "en": "Both a and b" },
+        { "mr": "दोन्ही नाही", "en": "Neither a nor b" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "दोन्ही विधाने बरोबर आहेत. बाळशास्त्री जांभेकर यांनी १८३० मध्ये 'नेटिव्ह इम्प्रुव्हमेंट सोसायटी' सुरू केली आणि १८४५ मध्ये लोकांसाठी 'बाँबे नेटिव्ह जनरल लायब्ररी' (सार्वजनिक वाचनालय) स्थापन करण्यात मुख्य भूमिका बजावली.",
+        "en": "Both statements are correct. Balshastri Jambhekar founded the Native Improvement Society in 1830 and was central to inaugurating the Bombay Native General Library in 1845 to facilitate public reading rooms."
+      }
+    },
+    {
+      "id": 11,
+      "question": {
+        "mr": "बाळशास्त्री जांभेकर यांनी लिहिलेल्या ग्रंथांच्या संदर्भात खालीलपैकी कोणता ग्रंथ त्यांनी लिहिलेला नाही?",
+        "en": "Which of the following books was NOT authored by Balshastri Jambhekar?"
+      },
+      "options": [
+        { "mr": "धर्मविवेचन (Dharmavivechan)", "en": "Dharmavivechan" },
+        { "mr": "शून्यलब्धी (Shunyalabdhi - Differential Calculus)", "en": "Shunyalabdhi" },
+        { "mr": "हिंदुस्थानचा इतिहास (History of India)", "en": "History of India" },
+        { "mr": "सारसंग्रह (Sarsangraha)", "en": "Sarsangraha" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "'धर्मविवेचन' (१८४८) हा ग्रंथ दादोबा पांडुरंग तर्खडकर यांनी 'एक धर्म शोधक' या नावाने लिहिला होता. शून्यलब्धी, हिंदुस्थानचा इतिहास आणि सारसंग्रह हे ग्रंथ बाळशास्त्री जांभेकर यांनी लिहिले होते.",
+        "en": "'Dharmavivechan' was authored by Dadoba Pandurang Tarkhadkar in 1848 under a pen name. Works like 'Shunyalabdhi' (mathematics) and 'History of India' were composed by Balshastri Jambhekar."
+      }
+    },
+    {
+      "id": 12,
+      "question": {
+        "mr": "१८४८ मध्ये दादोबा पांडुरंग तर्खडकर यांनी 'परमहंस सभे'ची जी सात मूलभूत तत्त्वे (Seven Principles) निश्चित केली, त्यात खालीलपैकी कशाचा समावेश नव्हता?",
+        "en": "Which of the following doctrines was NOT among the seven foundational principles (Seven Pledges) formulated by Dadoba Pandurang for the Paramahansa Sabha in 1848?"
+      },
+      "options": [
+        { "mr": "मनुष्याची जात जन्मावरून ठरावी आणि जातिव्यवस्था ही ईश्वराची निर्मिती आहे.", "en": "Caste is determined by birth and hierarchical caste barriers are divinely ordained." },
+        { "mr": "केवळ एकच ईश्वर सर्व विश्वाचा निर्माता आहे आणि त्याचीच भक्ती करावी.", "en": "Only one supreme God is the creator of the universe and deserves worship." },
+        { "mr": "सर्व मानवांचा धर्म एकच असून मनुष्यमात्राची जात एकच आहे.", "en": "All mankind shares a single universal religion and constitutes one brotherhood." },
+        { "mr": "माणसाचे श्रेष्ठत्व त्याच्या गुणांवर व आचरणावर अवलंबून असते, जातीवर नाही.", "en": "Human greatness is judged by individual character and moral conduct, not caste." }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "पर्याय १ चुकीचा आहे, कारण परमहंस सभेचा मुख्य उद्देशच जातिव्यवस्था आणि जन्मजात श्रेष्ठत्व नष्ट करणे हा होता. सभेचे तत्त्व होते: 'सर्व मानवांची जात एकच' आणि 'ईश्वर एकच आहे'.",
+        "en": "Option 1 contradicts the core tenet of the Paramahansa Sabha, which explicitly rejected birth-based caste superiority and asserted the moral brotherhood of all human beings."
+      }
+    },
+    {
+      "id": 13,
+      "question": {
+        "mr": "१८५५ मध्ये 'ज्ञानप्रकाश' या नियतकालिकात 'हिंदू धर्मातील अनिष्ट रूढी आणि जातिभेद' यावर टीका करणारा निबंध लिहून मुंबई विद्यापीठात नावाजले गेलेले बंधू डॉ. आत्माराम पांडुरंग आणि दादोबा पांडुरंग यांचे घराणे कोणते?",
+        "en": "To which prominent reformist family of Bombay did Dr. Atmaram Pandurang and Dadoba Pandurang belong?"
+      },
+      "options": [
+        { "mr": "तर्खडकर घराणे (Tarkhadkar family)", "en": "Tarkhadkar family" },
+        { "mr": "भांडारकर घराणे", "en": "Bhandarkar family" },
+        { "mr": "जांभेकर घराणे", "en": "Jambhekar family" },
+        { "mr": "रानडे घराणे", "en": "Ranade family" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "तर्खडकर बंधू (दादोबा, आत्माराम आणि भास्कर पांडुरंग) यांनी १९ व्या शतकात महाराष्ट्राच्या समाजसुधारणा चळवळीचा पाया घातला. दादोबांनी परमहंस सभा तर आत्माराम यांनी प्रार्थना समाज स्थापन केला.",
+        "en": "The Tarkhadkar brothers—Dadoba, Atmaram, and Bhaskar—were towering figures in 19th-century western Indian reform, establishing both the Paramahansa Sabha and the Prarthana Samaj."
+      }
+    },
+    {
+      "id": 14,
+      "question": {
+        "mr": "गोपाळ हरी देशमुख (लोकहितवादी) यांनी १८४८ ते १८५० दरम्यान 'प्रभाकर'मधून प्रसिद्ध केलेल्या 'शतपत्रां'मध्ये (१०८ पत्रे) खालीलपैकी कोणत्या विषयांवर मूलगामी विचार मांडले होते?\nअ. भिक्षुकशाही, अंधश्रद्धा आणि पोथीनिष्ठतेवर कडाडून टीका\nब. पाश्चात्त्य ज्ञान, विज्ञान, इंग्रजी शिक्षण आणि औद्योगिकरणाचा पुरस्कार\nक. देशातील दारिद्र्य दूर करण्यासाठी स्वदेशी उद्योगांची उभारणी\nपर्याय निवडा:",
+        "en": "Which of the following topics were critically analyzed by Gopal Hari Deshmukh (Lokhitwadi) in his historic 'Shatapatre' (108 letters) published in 'Prabhakar'?\na. Severe critique of priestly orthodoxy, fatalism, and blind scriptural adherence\nb. Advocacy of Western science, English learning, and industrialization\nc. Promotion of indigenous (Swadeshi) manufacturing to counter poverty\nChoose the correct option:"
+      },
+      "options": [
+        { "mr": "फक्त अ आणि ब", "en": "Only a and b" },
+        { "mr": "फक्त ब आणि क", "en": "Only b and c" },
+        { "mr": "फक्त अ आणि क", "en": "Only a and c" },
+        { "mr": "अ, ब आणि क सर्व", "en": "All a, b, and c" }
+      ],
+      "correctAnswerIndex": 3,
+      "explanation": {
+        "mr": "सर्व विधाने बरोबर आहेत. लोकहितवादींनी शतपत्रांमधून जुन्या पुराणमतवादी भिक्षुकशाहीवर प्रहार केला, भारतीयांना उद्योगी बनण्याचा सल्ला दिला आणि स्वदेशी मालाच्या उत्पादनाचा आग्रह धरून भारताच्या सर्वांगीण पुनरुत्थानाची मांडणी केली.",
+        "en": "All statements are correct. In 'Shatapatre', Lokhitwadi denounced priestly exploitation, advocated modern science and industry, and urged economic self-reliance through early Swadeshi enterprise."
+      }
+    },
+    {
+      "id": 15,
+      "question": {
+        "mr": "लोकहितवादी गोपाळ हरी देशमुख यांना ब्रिटिश सरकारने १८७७ च्या दिल्ली दरबारात कोणत्या मानद पदवीने सन्मानित केले होते?",
+        "en": "Which honorary civic title was conferred upon Gopal Hari Deshmukh (Lokhitwadi) by the British Government at the Imperial Delhi Durbar of 1877?"
+      },
+      "options": [
+        { "mr": "रावबहादूर (Rao Bahadur)", "en": "Rao Bahadur" },
+        { "mr": "महामहोपाध्याय", "en": "Mahamahopadhyaya" },
+        { "mr": "सर (Knighthood)", "en": "Knighthood (Sir)" },
+        { "mr": "कैसर-ए-हिंद", "en": "Kaiser-i-Hind" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१ जानेवारी १८७७ रोजी लॉर्ड लिटनच्या दिल्ली दरबारात गोपाळ हरी देशमुख यांच्या उत्कृष्ट प्रशासकीय आणि न्यायिक सेवेचा गौरव म्हणून ब्रिटिश सरकारने त्यांना 'रावबहादूर' ही पदवी प्रदान केली.",
+        "en": "At the imperial Delhi Durbar convened by Lord Lytton on 1 January 1877, Gopal Hari Deshmukh was honored with the official title of 'Rao Bahadur' for his distinguished judicial and public career."
+      }
+    },
+    {
+      "id": 16,
+      "question": {
+        "mr": "गोविंद विठ्ठल कुंटे उर्फ भाऊ महाजन यांनी १८४१ मध्ये सुरू केलेल्या 'प्रभाकर' साप्ताहिकात खालीलपैकी कोणाचा प्रदीर्घ इतिहास मराठीत अनुवादित करून प्रसिद्ध केला होता?",
+        "en": "The history of which world-historical revolution was serialized in Marathi translation by Bhau Mahajan in his weekly newspaper 'Prabhakar' in the 1840s?"
+      },
+      "options": [
+        { "mr": "फ्रेंच राज्यक्रांती (French Revolution)", "en": "French Revolution" },
+        { "mr": "अमेरिकन स्वातंत्र्ययुद्ध", "en": "American War of Independence" },
+        { "mr": "रशियन राज्यक्रांती", "en": "Russian Revolution" },
+        { "mr": "इंग्लंडची वैभवशाली क्रांती", "en": "Glorious Revolution of England" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "भाऊ महाजन यांनी 'प्रभाकर'मध्ये फ्रेंच राज्यक्रांतीचा साद्यंत इतिहास मराठीत अनुवादित करून प्रसिद्ध केला, ज्यामुळे महाराष्ट्रातील वाचकांना स्वातंत्र्य, समता आणि बंधुता या आधुनिक तत्त्वांची सर्वप्रथम ओळख झाली.",
+        "en": "In 'Prabhakar', Bhau Mahajan published a pioneering detailed Marathi serial on the French Revolution, exposing the educated Marathi public to concepts of liberty, equality, and popular democracy."
+      }
+    },
+    {
+      "id": 17,
+      "question": {
+        "mr": "१८५३ मध्ये सुरू झालेल्या 'बॉम्बे असोसिएशन'च्या माध्यमातून ब्रिटिश संसदेकडे भारतीयांच्या कोणत्या मागण्यांसाठी पहिली औपचारिक याचिका (Petition) पाठवण्यात आली होती?",
+        "en": "Through the petition submitted to the British Parliament in 1852–53 by the Bombay Association, which major political reform was demanded?"
+      },
+      "options": [
+        { "mr": "भारतीयांना विधिमंडळात प्रतिनिधित्व मिळावे आणि प्रशासकीय खर्चात कपात व्हावी.", "en": "Indian representation in legislative councils and reduction of extravagant administrative expenditure." },
+        { "mr": "भारतातून ब्रिटिश राजवट तात्काळ पूर्णपणे समाप्त करावी.", "en": "Immediate and unconditional withdrawal of British rule from India." },
+        { "mr": "केवळ संस्थानिकांचे सैन्य वाढवण्याची परवानगी मिळावी.", "en": "Unrestricted enlargement of the armies of native princely states." },
+        { "mr": "सर्व सरकारी नोकऱ्या केवळ युरोपियनांनाच दिल्या जाव्यात.", "en": "Reservation of all civil offices exclusively for Europeans." }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "बॉम्बे असोसिएशनने १८५३ च्या सनदी कायद्याच्या वेळी ब्रिटिश संसदेला याचिका पाठवून अशी मागणी केली की, भारतीयांवर कायदे करताना त्यांच्या हिताचे रक्षण व्हावे, कायदेमंडळात स्थान मिळावे आणि भारतीयांना उच्च सनदी सेवांच्या परीक्षा भारतात देण्याची सोय व्हावी.",
+        "en": "The Bombay Association drafted a memorial to the British Parliament ahead of the Charter Act of 1853, seeking an Indian advisory council, reduced fiscal burdens on the peasantry, and local recruitment into superior civil services."
+      }
+    },
+    {
+      "id": 18,
+      "question": {
+        "mr": "जगन्नाथ शंकरशेट (नाना शंकरशेट) यांनी मुंबईत मुलींच्या शिक्षणाला सामाजिक प्रतिष्ठा मिळवून देण्यासाठी १८४९ मध्ये स्वतःच्या वाड्यात कोणती शाळा सुरू केली होती?",
+        "en": "Which pioneering girls' school did Jagannath Shankarsheth establish inside his personal family estate in Bombay in 1849 to encourage female education?"
+      },
+      "options": [
+        { "mr": "जगन्नाथ शंकरशेट कन्या शाळा (मुलींची पहिली खाजगी शाळा)", "en": "Jagannath Shankarsheth Girls' School" },
+        { "mr": "एल्फिन्स्टन हायस्कूल", "en": "Elphinstone High School" },
+        { "mr": "बेथून कन्या विद्यालय", "en": "Bethune Kanya Vidyalaya" },
+        { "mr": "शारदा सदन", "en": "Sharada Sadan" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१८४९ मध्ये जेव्हा उच्चवर्णीय लोक मुलींना शाळेत पाठवण्यास घाबरत होते, तेव्हा नाना शंकरशेट यांनी स्वतःच्या गिरगावातील वाड्यात स्वतःच्या खर्चाने मुलींची शाळा सुरू केली आणि आपली कन्या व नातेवाईकांच्या मुलींना त्यात दाखल करून समाजापुढे आदर्श ठेवला.",
+        "en": "In 1849, breaking conservative orthodoxy, Jagannath Shankarsheth instituted a dedicated girls' school inside his residential premises at Girgaon, financing it entirely from his personal funds to champion women's schooling."
+      }
+    },
+    {
+      "id": 19,
+      "question": {
+        "mr": "मुंबईत 'ग्रँट मेडिकल कॉलेज' (Grant Medical College) आणि 'जे. जे. हॉस्पिटल' (Sir J. J. Hospital) च्या उभारणीत १८४५ मध्ये खालीलपैकी कोणत्या दोन दानशूर व्यक्तींचा पुढाकार होता?",
+        "en": "Which two eminent philanthropists were primarily responsible for funding and establishing Grant Medical College and Sir J. J. Hospital in Bombay in 1845?"
+      },
+      "options": [
+        { "mr": "सर जमशेटजी जिजीभॉय आणि जगन्नाथ शंकरशेट", "en": "Sir Jamsetjee Jeejeebhoy and Jagannath Shankarsheth" },
+        { "mr": "डॉ. भाऊ दाजी लाड आणि बाळशास्त्री जांभेकर", "en": "Dr. Bhau Daji Lad and Balshastri Jambhekar" },
+        { "mr": "दादाभाई नौरोजी आणि फिरोजशाह मेहता", "en": "Dadabhai Naoroji and Pherozeshah Mehta" },
+        { "mr": "प्रेमचंद रायचंद आणि कावसजी जहांगीर", "en": "Premchand Roychand and Cowasji Jehangir" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "सर जमशेटजी जिजीभॉय यांनी प्रचंड आर्थिक देणगी दिली आणि नाना शंकरशेट यांनी सरकारी स्तरावर पाठपुरावा करून १८४५ मध्ये 'ग्रँट मेडिकल कॉलेज' आणि 'जे. जे. हॉस्पिटल' सुरू केले, ज्यातून भारताला पहिले आधुनिक देशी डॉक्टर मिळाले.",
+        "en": "Parsi merchant prince Sir Jamsetjee Jeejeebhoy donated generous initial capital while Jagannath Shankarsheth mobilized state sanctions to open Grant Medical College and Sir J. J. Hospital in 1845."
+      }
+    },
+    {
+      "id": 20,
+      "question": {
+        "mr": "प्राच्यविद्या आणि पुरातत्त्व संशोधनात बहुमोल कामगिरी केल्याबद्दल लंडनच्या 'रॉयल एशियाटिक सोसायटी'ने (Royal Asiatic Society) कोणत्या महाराष्ट्रीय विद्वानाला आपले सन्माननीय सदस्यत्व बहाल केले होते?",
+        "en": "Which Maharashtrian scholar-physician was elected as a member of the Royal Asiatic Society of Great Britain and Ireland for deciphering ancient inscriptions and cave manuscripts?"
+      },
+      "options": [
+        { "mr": "डॉ. भाऊ दाजी लाड", "en": "Dr. Bhau Daji Lad" },
+        { "mr": "दादोबा पांडुरंग तर्खडकर", "en": "Dadoba Pandurang Tarkhadkar" },
+        { "mr": "न्यायमूर्ती महादेव गोविंद रानडे", "en": "Justice Mahadev Govind Ranade" },
+        { "mr": "गोपाळ हरी देशमुख", "en": "Gopal Hari Deshmukh" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "डॉ. भाऊ दाजी लाड यांनी अजिंठा, कार्ले, नाशिक इत्यादी लेण्यांमधील ब्राह्मी व संस्कृत शिलालेखांचे वाचन केले. त्यांच्या जागतिक दर्जाच्या पुरातत्त्व संशोधनामुळे लंडनच्या रॉयल एशियाटिक सोसायटीने त्यांना सदस्यत्व देऊन गौरवले होते.",
+        "en": "Dr. Bhau Daji Lad's groundbreaking epigraphical discoveries at Ajanta, Karle, and Kanheri earned him international scholarly acclaim and honorary membership in the Royal Asiatic Society."
+      }
+    },
+    {
+      "id": 21,
+      "question": {
+        "mr": "प्रार्थना समाजाच्या स्थापनेच्या संदर्भात खालील विधाने विचारात घ्या:\nअ. केशवचंद्र सेन यांच्या मुंबई भेटीदरम्यान ३१ मार्च १८६७ रोजी दादोबा पांडुरंग यांच्या निवासस्थानी पहिली बैठक झाली.\nब. प्रार्थना समाजाने मूर्तीपूजा पूर्णपणे नाकारली आणि एकेश्वरवादी प्रार्थनेवर भर दिला.\nवरीलपैकी कोणते/ती विधान/ने बरोबर आहेत?",
+        "en": "Consider the following statements regarding the genesis of the Prarthana Samaj:\na. The inaugural organizational meeting was convened at Dadoba Pandurang's residence on 31 March 1867 following Keshub Chunder Sen's lecture tour.\nb. Prarthana Samaj explicitly denounced polytheism and image worship, emphasizing pure theistic prayers.\nWhich of the statements given above is/are correct?"
+      },
+      "options": [
+        { "mr": "फक्त अ", "en": "Only a" },
+        { "mr": "फक्त ब", "en": "Only b" },
+        { "mr": "अ आणि ब दोन्ही", "en": "Both a and b" },
+        { "mr": "दोन्ही नाही", "en": "Neither a nor b" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "दोन्ही विधाने योग्य आहेत. ३१ मार्च १८६७ रोजी डॉ. आत्माराम पांडुरंग यांच्या घरी बैठक होऊन प्रार्थना समाज जन्माला आला. प्रार्थना समाजाने हिंदू धर्माच्या मूळ स्रोतांतून प्रेरणा घेऊन मूर्तीपूजा नाकारली आणि नैतिक, एकेश्वरवादी प्रार्थना पद्धती स्वीकारली.",
+        "en": "Both statements are correct. Established on 31 March 1867 following Keshub Chunder Sen's influential address, Prarthana Samaj rejected idolatry and priestly mediators while promoting congregational theistic worship."
+      }
+    },
+    {
+      "id": 22,
+      "question": {
+        "mr": "प्रार्थना समाजाचे ज्येष्ठ नेते डॉ. रामकृष्ण गोपाळ भांडारकर (Dr. R. G. Bhandarkar) यांच्या संदर्भात खालीलपैकी कोणते विधान बरोबर आहे?",
+        "en": "Which of the following statements is accurate regarding Dr. R. G. Bhandarkar, a foundational ideologue of the Prarthana Samaj?"
+      },
+      "options": [
+        { "mr": "ते आंतरराष्ट्रीय कीर्तीचे संस्कृत पंडित आणि प्राच्यविद्या संशोधक (Indologist) होते आणि त्यांनी मुंबई विद्यापीठाचे कुलगुरू पद भूषवले.", "en": "He was an internationally acclaimed Sanskrit scholar and Indologist who served as Vice-Chancellor of Bombay University." },
+        { "mr": "त्यांनी सत्यशोधक समाजाचे पहिले अध्यक्षपद भूषवले.", "en": "He served as the first President of Satyashodhak Samaj." },
+        { "mr": "त्यांनी विधवा पुनर्विवाहाला तीव्र विरोध केला होता.", "en": "He was an outspoken opponent of widow remarriage." },
+        { "mr": "त्यांनी मुंबईत 'ज्ञानप्रसारक सभा' स्थापन केली.", "en": "He founded the Dnyan Prasarak Sabha in Bombay." }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "डॉ. आर. जी. भांडारकर (१८३७-१९२५) हे आंतरराष्ट्रीय कीर्तीचे प्राच्यविद्या संशोधक होते. त्यांनी स्वतः आपल्या विधवा मुलीचा पुनर्विवाह घडवून आणला होता आणि ते मुंबई विद्यापीठाचे पहिले भारतीय कुलगुरू (Vice-Chancellor) बनले होते.",
+        "en": "Dr. R. G. Bhandarkar was a celebrated Indologist and Sanskritist whose critical scholarship was acclaimed in Europe. He implemented his reformist ideals by solemnizing his widowed daughter's remarriage in 1891 and served as Vice-Chancellor of Bombay University."
+      }
+    },
+    {
+      "id": 23,
+      "question": {
+        "mr": "न्यायमूर्ती महादेव गोविंद रानडे यांनी पुण्यात स्थापन केलेल्या संस्थांच्या संदर्भात खालीलपैकी कोणत्या संस्थेची स्थापना १८७० मध्ये झाली, जिने सार्वजनिक मागण्या मांडण्याचे काम केले?",
+        "en": "Which prominent socio-political organization was founded in Pune in 1870, under Justice M. G. Ranade's guidance, to act as a mediating bridge between the people and the government?"
+      },
+      "options": [
+        { "mr": "पुणे सार्वजनिक सभा (Poona Sarvajanik Sabha)", "en": "Poona Sarvajanik Sabha" },
+        { "mr": "बॉम्बे असोसिएशन", "en": "Bombay Association" },
+        { "mr": "डेक्कन सभा (Deccan Sabha)", "en": "Deccan Sabha" },
+        { "mr": "वक्तृत्वोत्तेजक सभा", "en": "Vaktrutvottejak Sabha" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "२ एप्रिल १८७० रोजी गणेश वासुदेव जोशी (सार्वजनिक काका) आणि न्यायमूर्ती रानडे यांच्या पुढाकाराने 'पुणे सार्वजनिक सभा' स्थापन झाली. या सभेने दुष्काळ निवारण आणि शेतकऱ्यांच्या हक्कांसाठी कायदेशीर याचिका सादर करण्याचे मोठे कार्य केले.",
+        "en": "Formed on 2 April 1870 by G. V. Joshi (Sarvajanik Kaka) and mentored by Justice Ranade, the Poona Sarvajanik Sabha represented agrarian and civic grievances before the colonial state."
+      }
+    },
+    {
+      "id": 24,
+      "question": {
+        "mr": "पुणे सार्वजनिक सभेचे कार्य खेडोपाडी पोहोचवणारे आणि हातरहाटावर विणलेले खादीचे कपडे परिधान करून १८७७ च्या दिल्ली दरबारात हजेरी लावणारे नेते कोण होते?",
+        "en": "Who earned the popular sobriquet 'Sarvajanik Kaka' and attended the 1877 Imperial Delhi Durbar dressed in pure hand-spun khadi to present popular demands to Queen Victoria?"
+      },
+      "options": [
+        { "mr": "गणेश वासुदेव जोशी (सार्वजनिक काका)", "en": "Ganesh Vasudev Joshi (Sarvajanik Kaka)" },
+        { "mr": "गोपाळ कृष्ण गोखले", "en": "Gopal Krishna Gokhale" },
+        { "mr": "शिवराम हरी साठे", "en": "Shivram Hari Sathe" },
+        { "mr": "महादेव गोविंद रानडे", "en": "Mahadev Govind Ranade" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "गणेश वासुदेव जोशी यांना लोक प्रेमाने 'सार्वजनिक काका' म्हणत. त्यांनी देशी कापडाचा प्रसार करण्यासाठी स्वतः चरख्यावर कातलेले खादीचे कपडे वापरले आणि १८७७ च्या दिल्ली दरबारात राणी व्हिक्टोरियाकडे भारताला राजकीय स्वायत्तता देण्याची मागणी केली.",
+        "en": "Ganesh Vasudev Joshi ('Sarvajanik Kaka') championed indigenous handicrafts and self-reliance, attending the 1877 Delhi Durbar in pure hand-spun Khadi to present a civic address petitioning for Indian self-rule."
+      }
+    },
+    {
+      "id": 25,
+      "question": {
+        "mr": "१८९६ मध्ये पुणे सार्वजनिक सभेवर लोकमान्य टिळक यांच्या जहाल गटाचे नियंत्रण प्रस्थापित झाल्यानंतर न्यायमूर्ती रानडे आणि गोपाळ कृष्ण गोखले यांनी पुण्यात कोणती नवीन संस्था स्थापन केली?",
+        "en": "Following the capture of the Poona Sarvajanik Sabha by Bal Gangadhar Tilak's militant faction in 1895–96, which rival liberal moderate body was formed by Justice Ranade and G. K. Gokhale?"
+      },
+      "options": [
+        { "mr": "डेक्कन सभा (Deccan Sabha)", "en": "Deccan Sabha" },
+        { "mr": "भारत सेवक समाज", "en": "Servants of India Society" },
+        { "mr": "बॉम्बे प्रेसिडेन्सी असोसिएशन", "en": "Bombay Presidency Association" },
+        { "mr": "पुणे असोसिएशन", "en": "Poona Association" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "नोव्हेंबर १८९६ मध्ये न्यायमूर्ती रानडे आणि गोपाळ कृष्ण गोखले यांनी मवाळ (उदारमतवादी) विचारसरणीच्या प्रसारासाठी 'डेक्कन सभा' स्थापन केली. टिळकांनी केसरीतून या नव्या सभेवर तीव्र टीका केली होती.",
+        "en": "In November 1896, Justice Ranade and Gopal Krishna Gokhale broke away from the Tilak-dominated Poona Sarvajanik Sabha to inaugurate the moderate constitutionalist association styled as the 'Deccan Sabha'."
+      }
+    }
+  ]
+}

@@ -1,0 +1,464 @@
+{
+  "testId": "p-hist-01-t2",
+  "title": {
+    "mr": "आधुनिक भारताचा इतिहास — सराव 2",
+    "en": "Modern Indian History — Practice Test 2"
+  },
+  "durationMinutes": 20,
+  "marksPerQuestion": 1,
+  "negativeMarking": 0.25,
+  "totalMarks": 25,
+  "difficulty": "मध्यम ते काठिण्य",
+  "questions": [
+    {
+      "id": 1,
+      "question": {
+        "mr": "डच ईस्ट इंडिया कंपनीने भारतात आपली पहिली अधिकृत वखार १६०५ मध्ये खालीलपैकी कोणत्या ठिकाणी स्थापन केली होती?",
+        "en": "At which of the following places did the Dutch East India Company establish their first official factory in India in 1605?"
+      },
+      "options": [
+        { "mr": "मसुलीपट्टणम", "en": "Masulipatnam" },
+        { "mr": "पुलिकत", "en": "Pulicat" },
+        { "mr": "सुरत", "en": "Surat" },
+        { "mr": "नागपट्टणम", "en": "Nagapattinam" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "डच ईस्ट इंडिया कंपनीची स्थापना १६०२ मध्ये झाली. त्यांनी १६०५ मध्ये आंध्र किनाऱ्यावरील मसुलीपट्टणम येथे भारतात आपली पहिली वखार स्थापन केली. त्यानंतर १६१० मध्ये त्यांनी पुलिकत येथे मुख्य केंद्र स्थापन केले.",
+        "en": "The United East India Company of the Netherlands was formed in 1602. They established their first trading factory in India at Masulipatnam (Andhra coast) in 1605, followed by Pulicat in 1610."
+      }
+    },
+    {
+      "id": 2,
+      "question": {
+        "mr": "१७५९ मधील प्रसिद्ध 'बेदराची लढाई' (Battle of Bedara/Chinsurah) कोणामध्ये लढली गेली?",
+        "en": "Between whom was the famous Battle of Bedara (Chinsurah) fought in 1759?"
+      },
+      "options": [
+        { "mr": "ब्रिटिश आणि डच", "en": "British and Dutch" },
+        { "mr": "ब्रिटिश आणि फ्रेंच", "en": "British and French" },
+        { "mr": "फ्रेंच आणि पोर्तुगीज", "en": "French and Portuguese" },
+        { "mr": "ब्रिटिश आणि पोर्तुगीज", "en": "British and Portuguese" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "नोव्हेंबर १७५९ मध्ये बंगालमधील बेदरा (चिंसुरा) येथे ब्रिटिशांनी कर्नल रॉबर्ट क्लाइव्हच्या मार्गदर्शनाखाली कर्नल फोर्डच्या नेतृत्वात डचांचा निर्णायक पराभव केला. या पराभवामुळे डचांचे भारतातील राजकीय महत्त्व कायमचे संपुष्टात आले.",
+        "en": "In November 1759, the Battle of Bedara (Chinsurah) was fought between the British and the Dutch forces. The decisive British victory under Colonel Forde permanently crushed Dutch political and commercial ambitions in India."
+      }
+    },
+    {
+      "id": 3,
+      "question": {
+        "mr": "१६१५ मध्ये मुघल सम्राट जहांगीरच्या दरबारात व्यापारी सवलती मिळवण्यासाठी ब्रिटिश राजा जेम्स पहिला याने पाठवलेला अधिकृत राजदूत कोण होता?",
+        "en": "Who was the official ambassador sent by King James I of England to the court of Mughal Emperor Jahangir in 1615 to secure commercial privileges?"
+      },
+      "options": [
+        { "mr": "सर थॉमस रो", "en": "Sir Thomas Roe" },
+        { "mr": "कॅप्टन विल्यम हॉकिन्स", "en": "Captain William Hawkins" },
+        { "mr": "जॉब चार्नॉक", "en": "Job Charnock" },
+        { "mr": "जॉन सुरमन", "en": "John Surman" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "सर थॉमस रो हे १६१५ ते १६१९ या काळात जहांगीरच्या दरबारात ब्रिटिश राजा जेम्स पहिल्याचे अधिकृत राजदूत म्हणून राहिले. त्यांनी मुघल साम्राज्याच्या विविध भागांत वखारी स्थापन करण्यासाठी शाही फर्माने मिळवली. कॅप्टन हॉकिन्स १६०८ मध्ये आला होता, मात्र त्याला सर्वसमावेशक तह करता आला नव्हता.",
+        "en": "Sir Thomas Roe arrived in 1615 as an accredited ambassador of King James I to the court of Jahangir. He stayed until 1619 and succeeded in securing imperial firmans allowing the English to establish factories throughout the Mughal Empire."
+      }
+    },
+    {
+      "id": 4,
+      "question": {
+        "mr": "१७१७ मध्ये ईस्ट इंडिया कंपनीला सीमाशुल्कमुक्त व्यापार आणि नाणी पाडण्याचे अधिकार देणारा 'शाही फर्मान' (ज्याला कंपनीचा 'मॅग्ना कार्टा' म्हटले जाते) कोणत्या मुघल सम्राटाने जारी केला?",
+        "en": "Which Mughal Emperor issued the imperial farman of 1717 (often called the 'Magna Carta' of the Company) granting duty-free trade rights and coinage privileges in Bengal?"
+      },
+      "options": [
+        { "mr": "फर्रुखसियार", "en": "Farrukhsiyar" },
+        { "mr": "बहादूर शाह पहिला", "en": "Bahadur Shah I" },
+        { "mr": "मुहम्मद शाह 'रंगीला'", "en": "Muhammad Shah 'Rangeela'" },
+        { "mr": "जहांदार शाह", "en": "Jahandar Shah" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "जॉन सुरमनच्या शिष्टमंडळाला मुघल सम्राट फर्रुखसियारने १७१७ मध्ये एक फर्मान दिले. यानुसार वार्षिक ₹३,००० शुल्काच्या बदल्यात बंगालमध्ये सीमाशुल्कमुक्त व्यापाराची मुभा आणि मुंबईतील कंपनीच्या नाण्यांना मुघल साम्राज्यात कायदेशीर मान्यता मिळाली.",
+        "en": "In 1717, Mughal Emperor Farrukhsiyar issued an imperial farman to the John Surman mission, exempting the Company from internal customs duties in Bengal for an annual nominal tribute of 3,000 rupees and validating Company coins across the empire."
+      }
+    },
+    {
+      "id": 5,
+      "question": {
+        "mr": "खालील विधाने विचारात घ्या:\nअ. फ्रेंच ईस्ट इंडिया कंपनीची स्थापना १६६४ मध्ये राजा लुई १४ वा याचा अर्थमंत्री कोलबर्ट याच्या प्रयत्नांतून झाली.\nब. फ्रेंचांनी भारतात आपली पहिली वखार फ्रँकोइस कॅरॉनच्या नेतृत्वाखाली १६६८ मध्ये सुरत येथे सुरू केली.\nवरीलपैकी कोणते/ती विधान/ने बरोबर आहेत?",
+        "en": "Consider the following statements:\na. The French East India Company was established in 1664 through the efforts of Colbert, the finance minister of King Louis XIV.\nb. The French established their first Indian factory at Surat in 1668 under the leadership of Francois Caron.\nWhich of the statements given above is/are correct?"
+      },
+      "options": [
+        { "mr": "फक्त अ", "en": "Only a" },
+        { "mr": "फक्त ब", "en": "Only b" },
+        { "mr": "अ आणि ब दोन्ही", "en": "Both a and b" },
+        { "mr": "दोन्ही नाही", "en": "Neither a nor b" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "दोन्ही विधाने योग्य आहेत. १६६४ मध्ये कोलबर्टच्या पुढाकाराने 'कंपagnie des Indes Orientales' ही शासकीय मालकीची फ्रेंच कंपनी स्थापन झाली. १६६७ मध्ये निघालेल्या मोहिमेत फ्रँकोइस कॅरॉनने १६६८ मध्ये सुरत येथे पहिली फ्रेंच वखार सुरू केली.",
+        "en": "Both statements are correct. The French East India Company was formed in 1664 with state funding under Colbert (minister to Louis XIV). Francois Caron established the first French factory at Surat in 1668."
+      }
+    },
+    {
+      "id": 6,
+      "question": {
+        "mr": "१६६१ मध्ये इंग्लंडचा राजा चार्ल्स दुसरा याला पोर्तुगीज राजकुमारी कॅथरीन ऑफ ब्रागांझा हिच्याशी विवाहाच्या वेळी हुंडा म्हणून खालीलपैकी कोणते बेट मिळाले होते?",
+        "en": "Which of the following islands was gifted as dowry to King Charles II of England upon his marriage to the Portuguese Princess Catherine of Braganza in 1661?"
+      },
+      "options": [
+        { "mr": "मुंबई (Bombay)", "en": "Bombay" },
+        { "mr": "सालशेत (Salsette)", "en": "Salsette" },
+        { "mr": "दीव (Diu)", "en": "Diu" },
+        { "mr": "दमण (Daman)", "en": "Daman" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१६६१ मध्ये इंग्लंडचा राजा चार्ल्स दुसरा याचा विवाह पोर्तुगालची राजकुमारी कॅथरीनसोबत झाला, तेव्हा पोर्तुगीजांनी मुंबई बेट हुंडा म्हणून दिले. १६६८ मध्ये चार्ल्स दुसऱ्याने हे बेट ईस्ट इंडिया कंपनीला वार्षिक १० पाउंड भाडेतत्त्वावर दिले.",
+        "en": "In 1661, Bombay was gifted as dowry by the Portuguese crown to King Charles II of England on his marriage to Catherine of Braganza. In 1668, Charles II leased it to the East India Company for an annual rent of £10."
+      }
+    },
+    {
+      "id": 7,
+      "question": {
+        "mr": "१७४६ मधील पहिल्या कर्नाटक युद्धादरम्यान झालेल्या प्रसिद्ध 'शांथोमच्या लढाईत' (Battle of St. Thome / Battle of Adyar) कोणाचा पराभव झाला?",
+        "en": "Who was defeated in the famous Battle of St. Thome (Battle of Adyar) fought in 1746 during the First Carnatic War?"
+      },
+      "options": [
+        { "mr": "कर्नाटकचा नवाब अन्वर-उद्-दीन चे सैन्य", "en": "The army of Anwar-ud-din, Nawab of Carnatic" },
+        { "mr": "डुप्लेच्या नेतृत्वाखालील फ्रेंच सैन्य", "en": "The French forces led by Dupleix" },
+        { "mr": "रॉबर्ट क्लाइव्हचे ब्रिटिश सैन्य", "en": "The British forces under Robert Clive" },
+        { "mr": "मराठा सैन्य", "en": "The Maratha forces" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "शांथोमची लढाई (१७४६) अड्यार नदीकाठी झाली. यामध्ये कॅप्टन पॅराडाईजच्या नेतृत्वाखालील शिस्तबद्ध लहान फ्रेंच सैन्याने नवाब अन्वर-उद्-दीनचा मुलगा महफूज खान याच्या १०,००० च्या प्रचंड भारतीय फौजेचा दारुण पराभव केला. यामुळे युरोपीय युद्धपद्धतीचे श्रेष्ठत्व सिद्ध झाले.",
+        "en": "In the Battle of St. Thome (1746) on the banks of the Adyar River, a small, disciplined French force commanded by Captain Paradise routed Mahfuz Khan's 10,000-strong army of Nawab Anwar-ud-din, demonstrating European military superiority over larger traditional Indian armies."
+      }
+    },
+    {
+      "id": 8,
+      "question": {
+        "mr": "कलकत्ता येथील 'अंधारकोठडीची दुर्घटना' (Black Hole Tragedy) खालीलपैकी कोणत्या तारखेला घडल्याचे जे. झेड. हॉलवेल याने नमूद केले आहे?",
+        "en": "On which of the following dates did the alleged 'Black Hole Tragedy' of Calcutta take place, as reported by J. Z. Holwell?"
+      },
+      "options": [
+        { "mr": "२० जून १७५६", "en": "20 June 1756" },
+        { "mr": "२३ जून १७५७", "en": "23 June 1757" },
+        { "mr": "१२ ऑगस्ट १७६५", "en": "12 August 1765" },
+        { "mr": "२२ ऑक्टोबर १७६४", "en": "22 October 1764" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "२० जून १७५६ रोजी सिराज-उद्-दौलाने फोर्ट विल्यम जिंकल्यानंतर १४६ ब्रिटीश कैद्यांना एका छोट्या १८×१४ फूट खोलीत कोंडल्याचा दावा हॉलवेलने केला, ज्यात १२३ जणांचा गुदमरून मृत्यू झाल्याचे सांगितले जाते. या घटनेचा उपयोग ब्रिटिश जनमत भडकवण्यासाठी केला गेला.",
+        "en": "According to J. Z. Holwell, on the night of 20 June 1756, after Siraj-ud-Daulah captured Fort William, 146 British prisoners were locked into an 18x14 foot room, leading to the suffocation of 123 prisoners."
+      }
+    },
+    {
+      "id": 9,
+      "question": {
+        "mr": "खालील घटनांचा योग्य कालानुक्रम लावा:\n१. अलीनगरचा तह\n२. प्लासीची लढाई\n३. बक्सारची लढाई\n४. अलाहाबादचा पहिला तह\nयोग्य पर्याय निवडा:",
+        "en": "Arrange the following historical events in correct chronological order:\n1. Treaty of Alinagar\n2. Battle of Plassey\n3. Battle of Buxar\n4. First Treaty of Allahabad\nChoose the correct option:"
+      },
+      "options": [
+        { "mr": "१ ➔ २ ➔ ३ ➔ ४", "en": "1 ➔ 2 ➔ 3 ➔ 4" },
+        { "mr": "२ ➔ १ ➔ ३ ➔ ४", "en": "2 ➔ 1 ➔ 3 ➔ 4" },
+        { "mr": "१ ➔ २ ➔ ४ ➔ ३", "en": "1 ➔ 2 ➔ 4 ➔ 3" },
+        { "mr": "३ ➔ १ ➔ २ ➔ ४", "en": "3 ➔ 1 ➔ 2 ➔ 4" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१. अलीनगरचा तह: ९ फेब्रुवारी १७५७ (सिराज-उद्-दौला आणि क्लाईव्ह);\n२. प्लासीची लढाई: २३ जून १७५७;\n३. बक्सारची लढाई: २२ ऑक्टोबर १७६४;\n४. अलाहाबादचा पहिला तह: १२ ऑगस्ट १७६५ (शहा आलम दुसरा आणि क्लाईव्ह).",
+        "en": "1. Treaty of Alinagar: 9 February 1757;\n2. Battle of Plassey: 23 June 1757;\n3. Battle of Buxar: 22 October 1764;\n4. First Treaty of Allahabad: 12 August 1765. The chronological sequence is 1 ➔ 2 ➔ 3 ➔ 4."
+      }
+    },
+    {
+      "id": 10,
+      "question": {
+        "mr": "१७७३ च्या रेग्युलेटिंग ॲक्टनुसार कलकत्ता येथे स्थापन झालेल्या सुप्रीम कोर्टाचे पहिले सरन्यायाधीश (Chief Justice) कोण होते?",
+        "en": "Who was the first Chief Justice of the Supreme Court established at Calcutta under the Regulating Act of 1773?"
+      },
+      "options": [
+        { "mr": "सर एलिझा इम्पे (Sir Elijah Impey)", "en": "Sir Elijah Impey" },
+        { "mr": "सर विल्यम जोन्स (Sir William Jones)", "en": "Sir William Jones" },
+        { "mr": "सर जॉन शोर (Sir John Shore)", "en": "Sir John Shore" },
+        { "mr": "लॉर्ड मेकॉल (Lord Macaulay)", "en": "Lord Macaulay" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१७७३ च्या कायद्यानुसार १७७४ मध्ये फोर्ट विल्यम (कलकत्ता) येथे सर्वोच्च न्यायालय स्थापन झाले. सर एलिझा इम्पे हे त्याचे पहिले सरन्यायाधीश होते, तर चेंबर्स, लेमायस्टर आणि हाईड हे इतर तीन न्यायाधीश होते.",
+        "en": "Under the Regulating Act of 1773, a Supreme Court was established at Fort William (Calcutta) in 1774. Sir Elijah Impey was appointed as its first Chief Justice, assisted by three puisne judges: Chambers, Lemaistre, and Hyde."
+      }
+    },
+    {
+      "id": 11,
+      "question": {
+        "mr": "१७८४ मध्ये कलकत्ता येथे 'द एशियाटिक सोसायटी ऑफ बेंगॉल'ची (The Asiatic Society of Bengal) स्थापना कोणाच्या पुढाकाराने झाली?",
+        "en": "Under whose initiative was 'The Asiatic Society of Bengal' established in Calcutta in 1784?"
+      },
+      "options": [
+        { "mr": "सर विल्यम जोन्स", "en": "Sir William Jones" },
+        { "mr": "चार्ल्स विल्किन्स", "en": "Charles Wilkins" },
+        { "mr": "मॅक्स म्युलर", "en": "Max Muller" },
+        { "mr": "वॉरन हेस्टिंग्स", "en": "Warren Hastings" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१५ जानेवारी १७८४ रोजी कलकत्ता उच्च न्यायालयाचे न्यायाधीश सर विल्यम जोन्स यांनी पौर्वात्य भाषा, संस्कृती व कायद्यांचा पद्धतशीर अभ्यास करण्यासाठी 'एशियाटिक सोसायटी ऑफ बेंगॉल'ची स्थापना केली. वॉरन हेस्टिंग्सने याला प्रशासकीय पाठिंबा दिला होता.",
+        "en": "On 15 January 1784, Sir William Jones, a jurist and orientalist, founded The Asiatic Society of Bengal to encourage Oriental studies, languages, and historical research with the patronage of Governor-General Warren Hastings."
+      }
+    },
+    {
+      "id": 12,
+      "question": {
+        "mr": "भगवद्गीतेचे इंग्रजीत सर्वप्रथम भाषांतर १७८५ मध्ये खालीलपैकी कोणी केले होते?",
+        "en": "Who among the following made the first English translation of the Bhagavad Gita in 1785?"
+      },
+      "options": [
+        { "mr": "चार्ल्स विल्किन्स (Charles Wilkins)", "en": "Charles Wilkins" },
+        { "mr": "सर विल्यम जोन्स (Sir William Jones)", "en": "Sir William Jones" },
+        { "mr": "जेम्स प्रिन्सेप (James Prinsep)", "en": "James Prinsep" },
+        { "mr": "एच. टी. कोलब्रुक (H. T. Colebrooke)", "en": "H. T. Colebrooke" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "चार्ल्स विल्किन्स यांनी १७८५ मध्ये श्रीमद्भगवद्गीतेचे 'Bhagvat-Geeta, or Dialogues of Kreeshna and Arjoon' या नावाने इंग्रजीत भाषांतर केले. या भाषांतराची प्रस्तावना तत्कालीन गव्हर्नर-जनरल वॉरन हेस्टिंग्सने लिहिली होती.",
+        "en": "Charles Wilkins translated the Bhagavad Gita directly from Sanskrit into English in 1785. Governor-General Warren Hastings wrote the introductory preface for this historic translation."
+      }
+    },
+    {
+      "id": 13,
+      "question": {
+        "mr": "लॉर्ड कॉर्नवॉलिसने केलेल्या सुधारणांच्या संदर्भात खालील विधाने विचारात घ्या:\nअ. त्याने १७९३ मध्ये 'कॉर्नवॉलिस कोड' लागू केला, ज्याने महसूल आणि न्याय प्रशासन वेगळे केले.\nब. त्याने जिल्हा न्यायाधीशाच्या हाताखाली जिल्हा पोलीस दलाची निर्मिती केली आणि प्रत्येक जिल्ह्यात 'थाने' निर्माण करून 'दारोगा' नियुक्त केला.\nवरीलपैकी कोणते/ती विधान/ने बरोबर आहेत?",
+        "en": "Consider the following statements regarding Lord Cornwallis's administrative reforms:\na. He enacted the 'Cornwallis Code' in 1793, which separated revenue collection from judicial administration.\nb. He established a regular police force, divided districts into 'thanas' and placed them under a 'Daroga'.\nWhich of the statements given above is/are correct?"
+      },
+      "options": [
+        { "mr": "फक्त अ", "en": "Only a" },
+        { "mr": "फक्त ब", "en": "Only b" },
+        { "mr": "अ आणि ब दोन्ही", "en": "Both a and b" },
+        { "mr": "दोन्ही नाही", "en": "Neither a nor b" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "दोन्ही विधाने योग्य आहेत. कॉर्नवॉलिस कोड (१७९३) द्वारे महसूल व न्यायदानाचे अधिकार वेगळे करण्यात आले (कलेक्टरांचे न्यायिक अधिकार काढून जिल्हा न्यायाधीशांकडे दिले). तसेच कायदा-सुव्यवस्थेसाठी जमीनदारांचे पोलीस अधिकार रद्द करून आधुनिक ठाणे व दारोगा पद्धत आणली गेली.",
+        "en": "Both statements are correct. The Cornwallis Code of 1793 established separation of judicial and executive powers (divesting collectors of judicial authority). He also reorganized police administration by relieving zamindars of police duties and dividing districts into thanas headed by Darogas."
+      }
+    },
+    {
+      "id": 14,
+      "question": {
+        "mr": "कायमधारा पद्धतीशी (Permanent Settlement) संबंधित 'सूर्यास्त कायदा' (Sunset Law) खालीलपैकी कशाशी संबंधित होता?",
+        "en": "The 'Sunset Law' associated with the Permanent Settlement was related to which of the following?"
+      },
+      "options": [
+        { "mr": "ठरवून दिलेल्या तारखेला सूर्यास्तापूर्वी जमीन महसूल सरकारी तिजोरीत जमा न केल्यास जमीनदाराची जमीन लिलावात काढणे", "en": "Auctioning the zamindar's estate if revenue was not deposited in the treasury before sunset on the appointed date" },
+        { "mr": "शेतकऱ्यांनी सूर्यास्तानंतर शेतात काम न करण्याचे कायदेशीर बंधन", "en": "Legal restriction barring peasants from working in fields after sunset" },
+        { "mr": "सूर्यास्तापूर्वीच गुन्हेगारांना फाशी देण्याचा दंड संहिता नियम", "en": "Penal rule mandating executions strictly before sunset" },
+        { "mr": "सूर्यास्तानंतर नवीन महसूल सर्वेक्षणावर बंदी", "en": "Prohibition of fresh land revenue surveys after sunset" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१७९४ मध्ये कायमधारा पद्धतीअंतर्गत 'सूर्यास्त कायदा' करण्यात आला. त्यानुसार निश्चित केलेल्या तारखेच्या सूर्यास्तापर्यंत जमीनदाराने महसुली हप्ता भरला नाही, तर सरकारला त्याची जमीन जप्त करून तिचा जाहीर लिलाव करण्याचा अधिकार होता.",
+        "en": "Introduced in 1794 under the Permanent Settlement, the 'Sunset Law' decreed that if a zamindar failed to pay the assessed revenue instalment by sunset of the specified due date, their zamindari estate was liable to be immediately confiscated and auctioned."
+      }
+    },
+    {
+      "id": 15,
+      "question": {
+        "mr": "१८०६ चा 'वेल्लोरचा शिपाई उठाव' (Vellore Mutiny) कोणाच्या गव्हर्नर-जनरलपदाच्या कार्यकाळात झाला होता?",
+        "en": "During whose tenure as Governor-General did the famous Vellore Mutiny of 1806 take place?"
+      },
+      "options": [
+        { "mr": "सर जॉर्ज बार्लो (Sir George Barlow)", "en": "Sir George Barlow" },
+        { "mr": "लॉर्ड मिंटो पहिला (Lord Minto I)", "en": "Lord Minto I" },
+        { "mr": "लॉर्ड हेस्टिंग्स (Lord Hastings)", "en": "Lord Hastings" },
+        { "mr": "लॉर्ड वेलस्ली (Lord Wellesley)", "en": "Lord Wellesley" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१० जुलै १८०६ रोजी मद्रास प्रांतातील वेल्लोर येथे भारतीय सैनिकांनी धार्मिक प्रतीकांवर (फेटे, टिळा, दाढी इत्यादींवर) निर्बंध लादल्यामुळे आणि नवीन शिरस्त्राणे सक्तीची केल्याने उठाव केला. त्यावेळी सर जॉर्ज बार्लो (१८०५-१८०७) भारताचे हंगामी गव्हर्नर-जनरल होते आणि लॉर्ड विल्यम बेंटिंक मद्रासचे गव्हर्नर होते.",
+        "en": "The Vellore Mutiny broke out on 10 July 1806 against offensive military dress codes restricting religious marks and turbans. Sir George Barlow was the Governor-General of India at the time, while Lord William Bentinck was Governor of Madras."
+      }
+    },
+    {
+      "id": 16,
+      "question": {
+        "mr": "१८०९ चा 'अमृतसरचा तह' (Treaty of Amritsar) ब्रिटिश ईस्ट इंडिया कंपनी आणि कोणामध्ये संपन्न झाला?",
+        "en": "The Treaty of Amritsar (1809) was signed between the British East India Company and whom?"
+      },
+      "options": [
+        { "mr": "महाराजा रणजितसिंग", "en": "Maharaja Ranjit Singh" },
+        { "mr": "दिलीपसिंग", "en": "Duleep Singh" },
+        { "mr": "खडक सिंग", "en": "Kharak Singh" },
+        { "mr": "शेर सिंग", "en": "Sher Singh" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "२५ एप्रिल १८०९ रोजी चार्ल्स मेटकॉफ आणि महाराजा रणजितसिंग यांच्यात अमृतसरचा तह झाला. या तहानुसार सतलज नदी ही शीख साम्राज्य आणि ब्रिटिश वर्चस्वाखालील प्रदेशांमधील सीमारेषा म्हणून निश्चित करण्यात आली.",
+        "en": "Signed on 25 April 1809 between Maharaja Ranjit Singh and British envoy Charles Metcalfe (under Lord Minto I), the Treaty of Amritsar established the Sutlej River as the official boundary between the Sikh Empire and British spheres of influence."
+      }
+    },
+    {
+      "id": 17,
+      "question": {
+        "mr": "१८१६ चा 'सुगौलीचा तह' (Treaty of Sugauli) खालीलपैकी कोणत्या युद्धाची समाप्ती दर्शवतो?",
+        "en": "The Treaty of Sugauli (1816) marked the end of which of the following wars?"
+      },
+      "options": [
+        { "mr": "इंग्रज-नेपाळ (गुरखा) युद्ध", "en": "Anglo-Nepal (Gurkha) War" },
+        { "mr": "पहिले इंग्रज-ब्रह्मी (म्यानमार) युद्ध", "en": "First Anglo-Burmese War" },
+        { "mr": "पहिले इंग्रज-अफगाण युद्ध", "en": "First Anglo-Afghan War" },
+        { "mr": "पहिले इंग्रज-शीख युद्ध", "en": "First Anglo-Sikh War" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "लॉर्ड हेस्टिंग्सच्या कार्यकाळात १८१४-१८१६ दरम्यान इंग्रज-नेपाळ युद्ध झाले. मार्च १८१६ मध्ये झालेल्या सुगौलीच्या तहाने या युद्धाची समाप्ती झाली, ज्याद्वारे गढवाल, कुमाऊँ आणि तराई प्रदेश इंग्रजांच्या ताब्यात आला आणि काठमांडू येथे ब्रिटीश रेसिडेंट नियुक्त केला गेला.",
+        "en": "The Anglo-Nepalese (Gurkha) War (1814-1816) ended with the ratification of the Treaty of Sugauli in March 1816. Nepal ceded Garhwal, Kumaon, and the Tarai districts to the Company and accepted a permanent British Resident at Kathmandu."
+      }
+    },
+    {
+      "id": 18,
+      "question": {
+        "mr": "१८२६ मध्ये झालेल्या 'यांदाबूच्या तहाने' (Treaty of Yandabo) कोणत्या युद्धाचा शेवट झाला?",
+        "en": "Which war concluded with the Treaty of Yandabo in 1826?"
+      },
+      "options": [
+        { "mr": "पहिले इंग्रज-ब्रह्मी युद्ध", "en": "First Anglo-Burmese War" },
+        { "mr": "दुसरे इंग्रज-ब्रह्मी युद्ध", "en": "Second Anglo-Burmese War" },
+        { "mr": "पहिले इंग्रज-अफगाण युद्ध", "en": "First Anglo-Afghan War" },
+        { "mr": "तिसरे इंग्रज-मराठा युद्ध", "en": "Third Anglo-Maratha War" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "लॉर्ड ॲमहर्स्टच्या कारकिर्दीत १८२४ ते १८२६ या काळात पहिले इंग्रज-ब्रह्मी युद्ध लढले गेले. २४ फेब्रुवारी १८२६ रोजी झालेल्या यांदाबूच्या तहानुसार ब्रह्मी सरकारने आसाम, मणिपूर, आराकान आणि तेनासेरिमवरील हक्क सोडले व १ कोटी रुपये नुकसानभरपाई दिली.",
+        "en": "The First Anglo-Burmese War (1824-1826) ended with the Treaty of Yandabo on 24 February 1826. Burma ceded Assam, Manipur, Arakan, and Tenasserim to the British and paid a war indemnity of 1 crore rupees."
+      }
+    },
+    {
+      "id": 19,
+      "question": {
+        "mr": "१८२९ मध्ये लॉर्ड विल्यम बेंटिंकने कोणत्या रेग्युलेशनद्वारे सती प्रथा बेकायदेशीर आणि शिक्षेस पात्र गुन्हा घोषित केली?",
+        "en": "By which Regulation did Lord William Bentinck declare the practice of Sati illegal and punishable as culpable homicide in 1829?"
+      },
+      "options": [
+        { "mr": "रेग्युलेशन XVII (सतरा)", "en": "Regulation XVII" },
+        { "mr": "रेग्युलेशन X (दहा)", "en": "Regulation X" },
+        { "mr": "रेग्युलेशन XXI (एकवीस)", "en": "Regulation XXI" },
+        { "mr": "रेग्युलेशन V (पाच)", "en": "Regulation V" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "राजा राममोहन रॉय यांच्या अथक प्रयत्नांमुळे गव्हर्नर-जनरल लॉर्ड विल्यम बेंटिंकने ४ डिसेंबर १८२९ रोजी 'बंगाल कोड रेग्युलेशन XVII' जारी करून सती प्रथा बेकायदेशीर ठरवली. सुरुवातीला हा नियम बंगाल प्रांतासाठी होता, नंतर १८३० मध्ये तो मद्रास आणि मुंबईतही लागू करण्यात आला.",
+        "en": "Supported by Raja Ram Mohan Roy's crusade, Lord William Bentinck promulgated Regulation XVII on 4 December 1829, declaring Sati illegal and prosecutable as culpable homicide in Bengal, which was extended to Madras and Bombay Presidencies in 1830."
+      }
+    },
+    {
+      "id": 20,
+      "question": {
+        "mr": "मध्य भारतातून 'ठगांचा बंदोबस्त' (Suppression of Thuggee) करण्याचे ऐतिहासिक काम लॉर्ड विल्यम बेंटिंकने कोणत्या अधिकाऱ्यावर सोपवले होते?",
+        "en": "Which officer was entrusted by Lord William Bentinck with the historical task of the suppression of Thuggee in Central India?"
+      },
+      "options": [
+        { "mr": "कॅप्टन विल्यम स्लीमन (William Sleeman)", "en": "Captain William Sleeman" },
+        { "mr": "कर्नल जेम्स आऊट्रम (James Outram)", "en": "Colonel James Outram" },
+        { "mr": "सर चार्ल्स नेपियर (Charles Napier)", "en": "Sir Charles Napier" },
+        { "mr": "कॉलिन कॅम्पबेल (Colin Campbell)", "en": "Colin Campbell" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१८३० च्या दशकात व्यापारी व प्रवाशांना फसवून त्यांची हत्या करणाऱ्या संघटित ठग टोळ्यांचा बंदोबस्त करण्यासाठी बेंटिंकने कॅप्टन विल्यम स्लीमनची नियुक्ती केली. स्लीमनने मोहीम राबवून हजारो ठगांना पकडून या प्रथेचा समूळ बीमोड केला.",
+        "en": "In the 1830s, Lord William Bentinck appointed Captain William Sleeman to suppress the centuries-old predatory cult of the Thugs. Through extensive operations and intelligence networks, Sleeman completely dismantled the Thuggee system."
+      }
+    },
+    {
+      "id": 21,
+      "question": {
+        "mr": "भारतीय वृत्तपत्रांवरील कठोर बंधने उठवून त्यांना स्वातंत्र्य मिळवून दिल्याबद्दल कोणत्या गव्हर्नर-जनरलला 'भारतीय वृत्तपत्रांचा मुक्तिदाता' (Liberator of the Indian Press) म्हटले जाते?",
+        "en": "Which Governor-General is famously known as the 'Liberator of the Indian Press' for repealing stringent censorship restrictions?"
+      },
+      "options": [
+        { "mr": "सर चार्ल्स मेटकॉफ (Sir Charles Metcalfe)", "en": "Sir Charles Metcalfe" },
+        { "mr": "लॉर्ड विल्यम बेंटिंक (Lord William Bentinck)", "en": "Lord William Bentinck" },
+        { "mr": "लॉर्ड ऑकलंड (Lord Auckland)", "en": "Lord Auckland" },
+        { "mr": "लॉर्ड रिपन (Lord Ripon)", "en": "Lord Ripon" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "सर चार्ल्स मेटकॉफ यांनी आपल्या अल्प कार्यकाळात (१८३५-१८३६) १८२३ चा कठोर 'प्रेस लायसन्सिंग नियम' रद्द करून नवीन उदारमतवादी प्रेस कायदा (१८३५) मंजूर केला. त्यामुळे वृत्तपत्रांना मुद्रण स्वातंत्र्य मिळाले आणि त्यांना 'भारतीय वृत्तपत्रांचा मुक्तिदाता' उपाधी मिळाली.",
+        "en": "During his brief tenure (1835-1836), Sir Charles Metcalfe repealed the repressive Licensing Regulations of 1823 through the Press Act of 1835, granting broad freedom to the Indian press and earning him the title 'Liberator of the Indian Press'."
+      }
+    },
+    {
+      "id": 22,
+      "question": {
+        "mr": "१८४३ मध्ये सिंध प्रांताचे ब्रिटिश साम्राज्यात विलीनीकरण कोणत्या गव्हर्नर-जनरलच्या काळात झाले?",
+        "en": "Under which Governor-General was the annexation of Sindh into the British Empire carried out in 1843?"
+      },
+      "options": [
+        { "mr": "लॉर्ड एलनबरो (Lord Ellenborough)", "en": "Lord Ellenborough" },
+        { "mr": "लॉर्ड ऑकलंड (Lord Auckland)", "en": "Lord Auckland" },
+        { "mr": "लॉर्ड हार्डिंग्ज पहिला (Lord Hardinge I)", "en": "Lord Hardinge I" },
+        { "mr": "लॉर्ड डलहौसी (Lord Dalhousie)", "en": "Lord Dalhousie" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "लॉर्ड एलनबरोच्या काळात (१८४२-१८४४) सर चार्ल्स नेपियरने मियानी आणि दाबोच्या लढाईत बलोच अमिरांचा पराभव करून १८४३ मध्ये सिंध प्रांत ब्रिटिशांच्या ताब्यात जोडला. या विलीनीकरणावर नेपियरने 'Peccavi' (I have Sindh/sinned) हा प्रसिद्ध संदेश पाठवला होता.",
+        "en": "Sindh was annexed in 1843 during the Governor-Generalship of Lord Ellenborough after Sir Charles Napier defeated the Amirs of Sindh at the Battles of Miani and Dubbo."
+      }
+    },
+    {
+      "id": 23,
+      "question": {
+        "mr": "१८४६ च्या पहिल्या इंग्रज-शीख युद्धानंतर स्वाक्षरी करण्यात आलेल्या 'लाहोरच्या तहाची' (Treaty of Lahore) प्रमुख तरतूद खालीलपैकी कोणती होती?",
+        "en": "Which of the following was a major provision of the 'Treaty of Lahore' signed in 1846 following the First Anglo-Sikh War?"
+      },
+      "options": [
+        { "mr": "शिखांनी जालंधर दोआब (बियास व सतलज मधील भाग) ब्रिटिशांच्या हवाली केला आणि दीड कोटी रुपये युद्धदंड मान्य केला.", "en": "The Sikhs surrendered the Jalandhar Doab (territory between Beas and Sutlej) and agreed to a war indemnity of 1.5 crore rupees." },
+        { "mr": "संपूर्ण पंजाब राज्य तात्काळ थेट ब्रिटिश प्रशासनात विलीन करण्यात आले.", "en": "The entire Punjab state was immediately annexed directly into British administration." },
+        { "mr": "दिलीपसिंग यांना पदच्युत करून ब्रिटनला पाठवण्यात आले.", "en": "Duleep Singh was deposed and deported to Britain immediately." },
+        { "mr": "सैन्य पूर्णपणे विसर्जित करून सैनिकांवर ब्रिटिश अधिकारी नेमले गेले.", "en": "The Sikh army was completely disbanded with British personnel appointed in their place." }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "८ मार्च १८४६ रोजी झालेल्या लाहोरच्या तहानुसार अल्पवयीन दिलीपसिंग यांना राजा म्हणून मान्यता मिळाली, मात्र शिखांना जालंधर दोआब ब्रिटिशांना द्यावा लागला आणि दीड कोटी रुपयांचा दंड ठोठावला गेला. दंडाची रक्कम भरता न आल्याने ब्रिटिशांनी जम्मू-काश्मीरचा प्रदेश गुलाब सिंग यांना विकला. पंजाबचे संपूर्ण विलीनीकरण १८४९ च्या दुसऱ्या युद्धानंतर झाले.",
+        "en": "Under the Treaty of Lahore (March 1846), the Sikhs ceded the fertile Jalandhar Doab to the British and accepted a heavy war indemnity of 1.5 crore rupees (leading to the transfer of Kashmir to Gulab Singh). Punjab was annexed outright only later in 1849."
+      }
+    },
+    {
+      "id": 24,
+      "question": {
+        "mr": "लॉर्ड डलहौसीने भारतात आणलेल्या प्रशासकीय व तांत्रिक सुधारणांच्या संदर्भात खालील विधाने विचारात घ्या:\nअ. त्याने १८५४ मध्ये स्वतंत्र 'सार्वजनिक बांधकाम खाते' (PWD) सुरू केले.\nब. १८५३ मध्ये कलकत्ता ते आग्रा दरम्यान पहिली प्रायोगिक इलेक्ट्रिक टेलिग्राफ (तंतू) लाईन सुरू केली.\nवरीलपैकी कोणते/ती विधान/ने बरोबर आहेत?",
+        "en": "Consider the following statements regarding the administrative and technological modernization introduced by Lord Dalhousie:\na. He established a separate Public Works Department (PWD) in 1854.\nb. In 1853, the first experimental electric telegraph line was opened between Calcutta and Agra.\nWhich of the statements given above is/are correct?"
+      },
+      "options": [
+        { "mr": "फक्त अ", "en": "Only a" },
+        { "mr": "फक्त ब", "en": "Only b" },
+        { "mr": "अ आणि ब दोन्ही", "en": "Both a and b" },
+        { "mr": "दोन्ही नाही", "en": "Neither a nor b" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "दोन्ही विधाने बरोबर आहेत. डलहौसीने लष्करी अभियंत्यांच्या हातातील कामे काढून स्वतंत्र नागरी PWD खात्याची निर्मिती केली. तसेच ओ'शॉघनेसी यांच्या देखरेखीखाली १८५३ मध्ये कलकत्ता ते आग्रा दरम्यान पहिली इलेक्ट्रिक टेलिग्राफ लाईन कार्यान्वित केली, ज्याचे जाळे पुढे देशभर पसरवले.",
+        "en": "Both statements are correct. Dalhousie organized a separate Public Works Department (PWD) for civil engineering projects and introduced the electric telegraph under Dr. William O'Shaughnessy, opening the first operative line between Calcutta and Agra in 1853."
+      }
+    },
+    {
+      "id": 25,
+      "question": {
+        "mr": "ईस्ट इंडिया कंपनीच्या काळातील महसूल आणि आर्थिक धोरणांमुळे भारतात घडून आलेल्या 'अव-औद्योगिकीकरण' (De-industrialization) प्रक्रियेचा प्राथमिक परिणाम काय झाला?",
+        "en": "What was the primary consequence of the process of 'De-industrialization' caused by the East India Company's fiscal and commercial policies in India?"
+      },
+      "options": [
+        { "mr": "पारंपरिक ग्रामीण हस्तकला व हातमाग उद्योगांचा ऱ्हास होऊन शेतीवरील लोकसंख्येचा भार प्रचंड वाढला", "en": "Collapse of traditional rural handicrafts and handloom industries, leading to severe overburdening of agriculture" },
+        { "mr": "भारतात वेगाने आधुनिक अवजड कारखानदारीचा उदय झाला", "en": "Rapid growth of modern heavy manufacturing factories across India" },
+        { "mr": "भारताची कृषी निर्यात पूर्णपणे बंद होऊन फक्त तयार मालाची निर्यात सुरू झाली", "en": "Total cessation of Indian agricultural exports in favor of finished industrial goods" },
+        { "mr": "शहरी कारागिरांचे राहणीमान आणि क्रयशक्ती कमालीची वाढली", "en": "Substantial rise in living standards and purchasing power of urban artisans" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "ब्रिटिश औद्योगिक क्रांतीनंतर इंग्लंडमधून येणाऱ्या स्वस्त मशिननिर्मित कपड्यांवर शून्य आयात शुल्क आणि भारतीय उत्पादनांवर ब्रिटनमध्ये भरमसाठ जकात लावल्याने भारतातील पारंपारिक हातमाग व हस्तकला उद्योग उद्ध्वस्त झाले. कारागीर बेरोजगार होऊन खेड्यांत शेतीकडे वळले, ज्यामुळे शेतीवर अवाजवी भार पडून भारतीय अर्थव्यवस्थेचे ग्रामीणिकरण (Ruralization) आणि अव-औद्योगिकीकरण झाले.",
+        "en": "De-industrialization in colonial India destroyed traditional artisans, weavers, and village handicrafts through asymmetric tariffs favoriting British machine goods, forcing urban artisans to migrate to villages, which intensely overburdened the agrarian economy."
+      }
+    }
+  ]
+}

@@ -1,0 +1,464 @@
+{
+  "testId": "p-hist-02-t7",
+  "title": {
+    "mr": "भारतातील ब्रिटिश सत्तेचा विस्तार व प्रशासन — सराव 7",
+    "en": "British Rule in India — Practice Test 7"
+  },
+  "durationMinutes": 20,
+  "marksPerQuestion": 1,
+  "negativeMarking": 0.25,
+  "totalMarks": 25,
+  "difficulty": "मध्यम ते काठिण्य",
+  "questions": [
+    {
+      "id": 1,
+      "question": {
+        "mr": "१७७२ मध्ये वॉरन हेस्टिंग्सने महसूल संकलनासाठी सुरू केलेल्या 'इजारदारी पद्धतीबाबत' (Ijardari / Farming System) खालील विधाने विचारात घ्या:\nअ. या पद्धतीनुसार महसूल गोळा करण्याचे अधिकार लिलावात सर्वाधिक बोली लावणाऱ्या ठेकेदाराला पाच वर्षांसाठी दिले जात असत.\nब. या पद्धतीमुळे जमीन महसूल वसुलीत मोठी अनिश्चितता निर्माण झाली आणि शेतकऱ्यांचे प्रचंड आर्थिक शोषण झाले.\nवरीलपैकी कोणते/ती विधान/ने बरोबर आहेत?",
+        "en": "Consider the following statements regarding the 'Ijardari' (Revenue Farming) System introduced by Warren Hastings in 1772:\na. Under this system, the right to collect land revenue was auctioned to the highest bidder for a period of five years.\nb. This system resulted in immense fiscal instability and widespread economic exploitation of the peasantry.\nWhich of the statements given above is/are correct?"
+      },
+      "options": [
+        { "mr": "फक्त अ", "en": "Only a" },
+        { "mr": "फक्त ब", "en": "Only b" },
+        { "mr": "अ आणि ब दोन्ही", "en": "Both a and b" },
+        { "mr": "दोन्ही नाही", "en": "Neither a nor b" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "दोन्ही विधाने बरोबर आहेत. १७७२ मध्ये हेस्टिंग्सने पाच वर्षांचा 'पंचवार्षिक बंदोबस्त' (Quinquennial Settlement) सुरू केला, ज्यामध्ये सर्वाधिक बोली लावणाऱ्या इजारदाराला महसूल वसुलीचे अधिकार दिले. ठेकेदारांनी अवास्तव बोली लावून शेतकऱ्यांकडून जास्तीत जास्त वसुली केली, ज्यामुळे शेतीचे मोठे नुकसान झाले. १७७७ मध्ये ही पद्धत बदलून वार्षिक लिलाव सुरू करण्यात आला, परंतु तोही अपयशी ठरला.",
+        "en": "Both statements are correct. In 1772, Warren Hastings instituted the Quinquennial Ijardari auction system, granting revenue collection rights to speculative highest bidders for five years. Because the revenue contractors lacked hereditary ties to the land, they extorted maximum rent from ryots, causing severe agricultural distress."
+      }
+    },
+    {
+      "id": 2,
+      "question": {
+        "mr": "१७८१ मध्ये वॉरन हेस्टिंग्सने मुस्लिम कायद्यांच्या अभ्यासासाठी आणि कंपनीच्या न्यायालयांना काझी व मुफ्ती पुरवण्यासाठी खालीलपैकी कोणती संस्था स्थापन केली?",
+        "en": "Which institution was established by Warren Hastings in 1781 to promote the study of Muslim law and qualify native officers for Company courts?"
+      },
+      "options": [
+        { "mr": "कलकत्ता मदरसा (Calcutta Madrasa / Aliah University)", "en": "Calcutta Madrasa" },
+        { "mr": "फोर्ट विल्यम कॉलेज", "en": "Fort William College" },
+        { "mr": "बनारस संस्कृत कॉलेज", "en": "Banaras Sanskrit College" },
+        { "mr": "एशियाटिक सोसायटी", "en": "Asiatic Society" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "ऑक्टोबर १७८० मध्ये मंजुरी देऊन १७८१ मध्ये वॉरन हेस्टिंग्सने कलकत्ता मदरसा (मदरसा-ए-आलिया) स्थापन केला. कंपनीच्या न्यायालयांमध्ये मुस्लिम कायद्यानुसार न्यायदान करण्यासाठी आवश्यक असलेले कायदेपंडित, काझी आणि कारकून तयार करणे हा यामागील मुख्य प्रशासकीय उद्देश होता.",
+        "en": "In 1781, Warren Hastings founded the Calcutta Madrasa (Madrasa-i-Aliya) at his own expense to educate Muslim scholars in Islamic jurisprudence, Arabic, and Persian, thereby training qualified personnel for British civil and criminal courts."
+      }
+    },
+    {
+      "id": 3,
+      "question": {
+        "mr": "१७९१ मध्ये बनारसचे ब्रिटिश रेसिडेंट जोनाथन डंकन यांनी हिंदू कायदे, साहित्य आणि धर्मशास्त्रांच्या अध्ययनासाठी कोठे 'संस्कृत कॉलेज' सुरू केले?",
+        "en": "In 1791, where did Jonathan Duncan, the British Resident, establish the Sanskrit College to cultivate Hindu jurisprudence, literature, and philosophy?"
+      },
+      "options": [
+        { "mr": "वाराणसी (बनारस)", "en": "Varanasi (Banaras)" },
+        { "mr": "अलाहाबाद", "en": "Allahabad" },
+        { "mr": "पाटणा", "en": "Patna" },
+        { "mr": "मथुरा", "en": "Mathura" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१७९१ मध्ये जोनाथन डंकन यांनी वाराणसी (बनारस) येथे संस्कृत कॉलेजची स्थापना केली. याचा हेतू हिंदू धर्मशास्त्रे व कायद्यांचे संवर्धन करून ब्रिटिश न्यायाधीशांना मदत करणारे हिंदू कायदेपंडित (पंडित/शास्त्री) तयार करणे हा होता.",
+        "en": "In 1791, Jonathan Duncan, Resident at Banaras, founded the Sanskrit College at Varanasi with the support of Lord Cornwallis to preserve Hindu jurisprudence and train native legal scholars to assist British magistrates in civil courts."
+      }
+    },
+    {
+      "id": 4,
+      "question": {
+        "mr": "लॉर्ड कॉर्नवॉलिसने १७९३ मध्ये केलेल्या न्यायालयीन सुधारणांनुसार जिल्हा स्तरावर दिवाणी न्यायालयांचे अध्यक्षपद कोणाकडे सोपवण्यात आले?",
+        "en": "Under the judicial hierarchy established by Lord Cornwallis in 1793, who was appointed to preside over the District Civil Courts (Zilla Adalats)?"
+      },
+      "options": [
+        { "mr": "जिल्हा दिवाणी न्यायाधीश (District Civil Judge - युरोपियन अधिकारी)", "en": "District Civil Judge (a European covenanted servant)" },
+        { "mr": "जिल्हाधिकारी (District Collector)", "en": "District Collector" },
+        { "mr": "सदर अमीन (Sadar Amin)", "en": "Sadar Amin" },
+        { "mr": "जिल्हा पोलीस अधीक्षक (Superintendent of Police)", "en": "Superintendent of Police" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "कॉर्नवॉलिस संहितेने (१७९३) महसूल आणि न्यायदानाचे अधिकार वेगळे केले. जिल्हाधिकाऱ्याचे सर्व न्यायिक अधिकार काढून घेऊन ते 'जिल्हा दिवाणी न्यायाधीश' (District Judge) या स्वतंत्र पदाकडे सोपवण्यात आले. हे पद केवळ ब्रिटिश युरोपियन अधिकाऱ्यांसाठी राखीव होते.",
+        "en": "Under the Cornwallis Code of 1793, judicial and executive duties were segregated. The District Collector was stripped of judicial powers, which were vested exclusively in a separate European covenanted civil servant designated as the District Civil Judge."
+      }
+    },
+    {
+      "id": 5,
+      "question": {
+        "mr": "१७९९ मध्ये लॉर्ड वेलस्लीने देशी व अँग्लो-इंडियन वृत्तपत्रांवर पूर्व-नियंत्रण लादण्यासाठी खालीलपैकी कोणता दडपशाही कायदा मंजूर केला?",
+        "en": "Which repressive statute was enacted by Lord Wellesley in 1799 to impose strict pre-censorship on Indian publications?"
+      },
+      "options": [
+        { "mr": "सेन्सॉरशिप ऑफ प्रेस ॲक्ट १७९९ (Censorship of the Press Act 1799)", "en": "Censorship of the Press Act 1799" },
+        { "mr": "लायसन्सिंग रेग्युलेशन्स १८२३", "en": "Licensing Regulations 1823" },
+        { "mr": "व्हर्नाक्युलर प्रेस ॲक्ट १८७८", "en": "Vernacular Press Act 1878" },
+        { "mr": "प्रेस ॲक्ट १८३५", "en": "Press Act 1835" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "नेपोलियनच्या इजिप्तमधील हालचाली आणि फ्रेंच आक्रमणाची भीती दाखवून लॉर्ड वेलस्लीने १७९९ मध्ये 'सेन्सॉरशिप ऑफ प्रेस ॲक्ट' आणला. यात वृत्तपत्राच्या प्रत्येक पानावर संपादक, मालक व मुद्रकाचे नाव छापणे सक्तीचे केले आणि छपाईपूर्वी सरकारी सचिवाकडून मजकुराची पूर्वतपासणी (Pre-censorship) अनिवार्य केली. हा नियम न पाळल्यास हद्दपारीची शिक्षा होती.",
+        "en": "Apprehending French subversion during the Napoleonic Wars, Lord Wellesley enacted the Censorship of the Press Act in 1799. It imposed wartime pre-censorship, mandating that newspaper publishers submit all sheets to the Government Secretary prior to publication under penalty of deportation."
+      }
+    },
+    {
+      "id": 6,
+      "question": {
+        "mr": "१८०० मध्ये लॉर्ड वेलस्लीने कलकत्ता येथे स्थापन केलेल्या 'फोर्ट विल्यम कॉलेज'च्या (Fort William College) बाबतीत खालील विधाने विचारात घ्या:\nअ. कंपनीच्या तरुण ब्रिटिश सनदी सेवकांना भारतीय भाषा, कायदे आणि संस्कृतीचे प्रशिक्षण देणे हा त्याचा मुख्य हेतू होता.\nब. लंडनच्या कोर्ट ऑफ डायरेक्टर्सने या खर्चाला विरोध करून १८०२ मध्ये हे कॉलेज बंद करण्याचे आदेश दिले आणि १८०६ मध्ये लंडनजवळ हेलिबरी कॉलेज सुरू केले.\nवरीलपैकी कोणते/ती विधान/ने बरोबर आहेत?",
+        "en": "Consider the following statements regarding 'Fort William College' established at Calcutta by Lord Wellesley in 1800:\na. Its primary aim was to train newly arrived British civil servants in Indian languages, customary laws, and administration.\nb. The Court of Directors in London disapproved of the expense, ordered its downsizing in 1802, and established East India College at Haileybury in 1806.\nWhich of the statements given above is/are correct?"
+      },
+      "options": [
+        { "mr": "फक्त अ", "en": "Only a" },
+        { "mr": "फक्त ब", "en": "Only b" },
+        { "mr": "अ आणि ब दोन्ही", "en": "Both a and b" },
+        { "mr": "दोन्ही नाही", "en": "Neither a nor b" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "दोन्ही विधाने योग्य आहेत. वेलस्लीने १० जुलै १८०० रोजी फोर्ट विल्यम कॉलेज सुरू केले. परंतु संचालक मंडळाने वेलस्लीच्या या मनमानी व महागड्या प्रकल्पाला विरोध केला. लंडनने १८०६ मध्ये स्वतःच्या नियंत्रणाखाली इंग्लंडमध्ये हेलिबरी कॉलेज स्थापन केले आणि कलकत्त्यातील फोर्ट विल्यम कॉलेजचे कार्य केवळ भाषा शिकवण्यापुरते मर्यादित केले.",
+        "en": "Both statements are correct. Wellesley set up Fort William College in 1800 to orient young British writers in vernacular languages and administrative codes. The Court of Directors curtailed its operations due to high costs and metropolitan oversight concerns, establishing the East India College at Haileybury in 1806 instead."
+      }
+    },
+    {
+      "id": 7,
+      "question": {
+        "mr": "१८०१ मध्ये लॉर्ड वेलस्लीने अयोध्याच्या (अवध) नवाबाशी केलेल्या तैनाती फौजेच्या कराराद्वारे अवधचा कोणता महत्त्वाचा भूभाग कंपनीने कायमस्वरूपी हस्तगत केला?",
+        "en": "Under the Subsidiary Treaty of 1801 coerced by Lord Wellesley, which strategic territorial tracts were surrendered by Nawab Saadat Ali Khan of Awadh?"
+      },
+      "options": [
+        { "mr": "रोहिलखंड आणि खालचा गंगा-यमुना दोआब प्रदेश", "en": "Rohilkhand and the Lower Ganga-Yamuna Doab" },
+        { "mr": "लखनौ आणि फैजाबाद शहर", "en": "Lucknow and Faizabad City" },
+        { "mr": "बुंदेलखंड आणि माळवा", "en": "Bundelkhand and Malwa" },
+        { "mr": "बनारस आणि गाझीपूर", "en": "Banaras and Ghazipur" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "नोव्हेंबर १८०१ मध्ये वेलस्लीने नवाब सादत अली खानवर तैनाती फौजेच्या खर्चाचा दबाव आणून अवधच्या राज्याचा सुमारे अर्धा भूभाग काढून घेतला. यात रोहिलखंड, गोरखपूर आणि गंगा-यमुना दोआबचा संपन्न प्रदेश कंपनीच्या थेट नियंत्रणात आला, ज्याला पुढे 'सिडेड प्रॉव्हिन्सेस' (Ceded Provinces) म्हटले गेले.",
+        "en": "Under the treaty signed in November 1801, Wellesley coerced Nawab Saadat Ali Khan into surrendering roughly half of Awadh's domain—encompassing Rohilkhand, Gorakhpur, and the fertile Lower Doab—to permanently fund the upkeep of British subsidiary regiments."
+      }
+    },
+    {
+      "id": 8,
+      "question": {
+        "mr": "१८०३ मध्ये दुसऱ्या इंग्रज-मराठा युद्धादरम्यान ब्रिटिशांनी दिल्लीवर ताबा मिळवल्यानंतर मुघल सम्राट शहा आलम दुसरा याच्याबाबत कोणते धोरण ठरवले गेले?",
+        "en": "Following the British capture of Delhi in September 1803 during the Second Anglo-Maratha War, what constitutional policy was adopted towards Mughal Emperor Shah Alam II?"
+      },
+      "options": [
+        { "mr": "त्याचे साम्राज्य विस्तार अधिकार संपुष्टात आणून त्याला लाल किल्ल्यापुरते मर्यादित ठेवत कंपनीचा निवृत्तिवेतनधारक (Pensioner) बनवण्यात आले.", "en": "His sovereign realm was curtailed exclusively to the Red Fort and he was maintained as a pensioner of the East India Company." },
+        { "mr": "त्याला मुघल गादीवरून तात्काळ पदच्युत करून रंगूनला हद्दपार करण्यात आले.", "en": "He was immediately deposed from the imperial throne and deported to Rangoon." },
+        { "mr": "त्याला ब्रिटिश संसदेत भारताचा अधिकृत प्रतिनिधी म्हणून नियुक्त केले.", "en": "He was appointed as the official imperial representative to the British Parliament." },
+        { "mr": "मुघल साम्राज्याची संपूर्ण पुनर्स्थापना करून कंपनीने त्याची मांडलिकत्व स्वीकारले.", "en": "The Mughal Empire was restored fully and the Company accepted subordinate vassal status." }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "सप्टेंबर १८०३ मध्ये जनरल जेरार्ड लेकने दिल्लीच्या लढाईत दौलतराव शिंद्यांच्या सैन्याचा पराभव केला आणि दिल्ली ताब्यात घेतली. ब्रिटिशांनी वृद्ध व अंध सम्राट शहा आलम दुसऱ्याला संरक्षण दिले; परंतु त्याचे सार्वभौमत्व लाल किल्ल्याच्या तटबंदीपुरते मर्यादित ठेवून त्याला ब्रिटिश कंपनीचा नियमित पेन्शनर बनवले.",
+        "en": "After Lord Lake defeated Scindia's forces at the Battle of Delhi in September 1803, the British took Emperor Shah Alam II under imperial protection, divested the Mughal crown of administrative and political power outside the Red Fort, and transformed him into a salaried pensioner."
+      }
+    },
+    {
+      "id": 9,
+      "question": {
+        "mr": "१८१७ मध्ये हिंदू आणि पाश्चात्य शिक्षणाचा समन्वय साधण्यासाठी राजा राममोहन रॉय आणि डेव्हिड हेअर यांच्या पुढाकाराने कलकत्ता येथे स्थापन झालेल्या संस्थेचे नाव काय होते?",
+        "en": "Which famous higher education institution was founded at Calcutta in 1817 through the joint efforts of Raja Ram Mohan Roy and David Hare to promote secular English learning?"
+      },
+      "options": [
+        { "mr": "हिंदू कॉलेज (Hindu College / नंतरचे प्रेसिडेन्सी कॉलेज)", "en": "Hindu College (later Presidency College)" },
+        { "mr": "संस्कृत कॉलेज", "en": "Sanskrit College" },
+        { "mr": "वेदांत कॉलेज", "en": "Vedanta College" },
+        { "mr": "बिशप्स कॉलेज", "en": "Bishop's College" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "२० जानेवारी १८१७ रोजी कलकत्ता येथे 'हिंदू कॉलेज'ची स्थापना झाली. यात घड्याळजी डेव्हिड हेअर, राजा राममोहन रॉय आणि सर्वोच्च न्यायालयाचे मुख्य न्यायाधीश सर एडवर्ड हाईड ईस्ट यांनी पुढाकार घेतला. भारतीय तरुणांना इंग्रजी भाषा, पाश्चात्य साहित्य आणि विज्ञान शिकवणारे हे देशातील पहिले मोठे धर्मनिरपेक्ष केंद्र ठरले, ज्याचे १८५५ मध्ये 'प्रेसिडेन्सी कॉलेज' झाले.",
+        "en": "Founded on 20 January 1817 by David Hare, Raja Ram Mohan Roy, and Chief Justice Sir Edward Hyde East, Hindu College was India's premier institution for modern Western secular education. In 1855, it was transformed into Presidency College."
+      }
+    },
+    {
+      "id": 10,
+      "question": {
+        "mr": "१८१८ मध्ये पेशवाईचा अस्त झाल्यानंतर ब्रिटिश सरकारने छत्रपती शिवाजी महाराजांचे थेट वंशज छत्रपती प्रतापसिंह यांच्याकडे साताऱ्याची स्वतंत्र लहान गादी सोपवली, तेव्हा त्यांचा राजकीय सल्लागार म्हणून कोणाची नियुक्ती केली होती?",
+        "en": "Following the termination of the Peshwaship in 1818, when the British installed Chhatrapati Pratapsingh on the throne of Satara, who was appointed as the British Political Agent to administer the principality?"
+      },
+      "options": [
+        { "mr": "कॅप्टन जेम्स ग्रँट डफ (Captain James Grant Duff)", "en": "Captain James Grant Duff" },
+        { "mr": "माउंटस्टुअर्ट एल्फिन्स्टन (Mountstuart Elphinstone)", "en": "Mountstuart Elphinstone" },
+        { "mr": "सर जॉन माल्कम (Sir John Malcolm)", "en": "Sir John Malcolm" },
+        { "mr": "रॉबर्ट विंगेट (Robert Wingate)", "en": "Robert Wingate" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "माउंटस्टुअर्ट एल्फिन्स्टनने मराठा प्रजेचा रोष शमवण्यासाठी छत्रपती प्रतापसिंह यांना साताऱ्याचे राज्य दिले आणि त्यांच्या मदतीसाठी व देखरेखीसाठी कॅप्टन जेम्स ग्रँट डफ यांची 'पॉलिटिकल एजंट' म्हणून नियुक्ती केली. ग्रँट डफ यांनीच पुढे 'अ हिस्ट्री ऑफ द मराठाज' (History of the Mahrattas) हा तीन खंडांचा प्रसिद्ध इतिहास ग्रंथ लिहिला.",
+        "en": "To reconcile Maratha public sentiment after annexing the Peshwa's dominions in 1818, Elphinstone reinstated Chhatrapati Pratapsingh on a reconstituted throne of Satara under British tutelage and appointed Captain James Grant Duff as Political Agent. Duff authored the monumental three-volume 'History of the Mahrattas'."
+      }
+    },
+    {
+      "id": 11,
+      "question": {
+        "mr": "मुंबई प्रांतात १८२२ मध्ये स्थापन झालेल्या 'बॉम्बे नेटिव्ह स्कूल बुक अँड स्कूल सोसायटी'च्या (Bombay Native School Book and School Society) स्थापनेत कोणाचे मुख्य योगदान होते?",
+        "en": "Who among the following was the principal British architect and patron behind the founding of the 'Bombay Native School Book and School Society' in 1822?"
+      },
+      "options": [
+        { "mr": "माउंटस्टुअर्ट एल्फिन्स्टन (Mountstuart Elphinstone)", "en": "Mountstuart Elphinstone" },
+        { "mr": "सर जॉन माल्कम", "en": "Sir John Malcolm" },
+        { "mr": "लॉर्ड कॉर्नवॉलिस", "en": "Lord Cornwallis" },
+        { "mr": "चार्ल्स मेटकॉफ", "en": "Charles Metcalfe" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "मुंबईचे गव्हर्नर माउंटस्टुअर्ट एल्फिन्स्टन (१८१९-१८२७) यांच्या पुढाकाराने आणि जगन्नाथ शंकरशेट यांच्या सहकार्याने १८२२ मध्ये ही संस्था स्थापन झाली. मराठी व गुजराती भाषेत पाठ्यपुस्तके तयार करणे आणि देशी शाळांचे जाळे पसरवणे हा तिचा हेतू होता. १८४० मध्ये तिचे नाव 'बोर्ड ऑफ एज्युकेशन' झाले.",
+        "en": "In August 1822, Governor Mountstuart Elphinstone, alongside Indian reformers like Jagannath Shankarsheth, organized the Bombay Native School Book and School Society to publish vernacular schoolbooks in Marathi and Gujarati and establish secular native schools throughout the Presidency."
+      }
+    },
+    {
+      "id": 12,
+      "question": {
+        "mr": "१८२९ मध्ये सती प्रथा बंदी कायदा संमत झाल्यानंतर सती प्रथेचे समर्थन करण्यासाठी आणि ब्रिटिश कायद्याला विरोध करण्यासाठी १८३० मध्ये राधाकांत देव यांनी कोणती पुराणमतवादी संस्था स्थापन केली?",
+        "en": "Which orthodox socio-religious organization was founded by Raja Radhakanta Deb in Calcutta in 1830 to defend customary traditions and petition against the abolition of Sati?"
+      },
+      "options": [
+        { "mr": "धर्मसभा (Dharma Sabha)", "en": "Dharma Sabha" },
+        { "mr": "ब्राह्मो सभा (Brahmo Sabha)", "en": "Brahmo Sabha" },
+        { "mr": "तत्वबोधिनी सभा", "en": "Tattwabodhini Sabha" },
+        { "mr": "आत्मीय सभा", "en": "Atmiya Sabha" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "राजा राधाकांत देव यांनी जानेवारी १८३० मध्ये 'धर्मसभा' स्थापन केली. ही संस्था सती बंदी कायद्याच्या विरोधात होती. त्यांनी बेंटिंकच्या कायद्याविरुद्ध लंडनच्या प्रिव्ही कौन्सिलकडे अपील केले होते; परंतु प्रिव्ही कौन्सिलने १८३२ मध्ये त्यांची याचिका फेटाळून लावून सती बंदी कायदा कायम ठेवला.",
+        "en": "In January 1830, Raja Radhakanta Deb founded the 'Dharma Sabha' to rally orthodox Hindu society against colonial legislative interference in socio-religious customs, notably petitioning the British Privy Council to overturn Bentinck's Regulation XVII abolishing Sati (the appeal was dismissed in 1832)."
+      }
+    },
+    {
+      "id": 13,
+      "question": {
+        "mr": "१८३३ च्या सनदी कायद्याद्वारे स्थापन झालेल्या पहिल्या भारतीय विधी आयोगाने (First Law Commission 1834) प्रामुख्याने कोणत्या संहितेचा मूळ मसुदा तयार केला?",
+        "en": "Which foundational legal code was originally drafted by the First Law Commission of India constituted under the Charter Act of 1833?"
+      },
+      "options": [
+        { "mr": "भारतीय दंड संहिता (Indian Penal Code - IPC)", "en": "Indian Penal Code (IPC)" },
+        { "mr": "भारतीय पुरावा कायदा", "en": "Indian Evidence Act" },
+        { "mr": "भारतीय करार कायदा", "en": "Indian Contract Act" },
+        { "mr": "विशिष्ट दिलासा कायदा", "en": "Specific Relief Act" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१८३४ मध्ये लॉर्ड मेकॉलच्या अध्यक्षतेखाली पहिला विधी आयोग स्थापन झाला. या आयोगाने १८३७ मध्ये 'भारतीय दंड संहितेचा' (IPC) मूळ मसुदा तयार केला, जो पुढे १८६० मध्ये संमत होऊन १८६२ पासून लागू झाला.",
+        "en": "The First Law Commission of India, instituted in 1834 under the presidency of Lord Macaulay, drafted the foundational text of the Indian Penal Code, which was submitted in 1837 and enacted into statutory law in 1860."
+      }
+    },
+    {
+      "id": 14,
+      "question": {
+        "mr": "१८४३ मध्ये सिंध प्रांतावर ब्रिटिशांचे प्रत्यक्ष नियंत्रण प्रस्थापित करताना तेथील स्थानिक सत्ताधीश कोणत्या वंशाचे होते?",
+        "en": "When the British conquered and annexed Sindh in 1843, which Baluch ruling dynasty held sovereignty across the emirates?"
+      },
+      "options": [
+        { "mr": "तालपूर घराणे (Talpur Dynasty / Amirs of Sindh)", "en": "Talpur Dynasty (Amirs of Sindh)" },
+        { "mr": "कलहोरा घराणे", "en": "Kalhora Dynasty" },
+        { "mr": "दुर्रानी घराणे", "en": "Durrani Dynasty" },
+        { "mr": "बारकाझाई घराणे", "en": "Barakzai Dynasty" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "सिंधवर तालपूर वंशाचे बलोच शासक राज्य करत होते, ज्यांना 'सिंधचे अमीर' म्हटले जाई. हैदराबाद, खैरपूर आणि मीरपूर ही त्यांची प्रमुख सत्ताकेंद्रे होती. १८४३ मध्ये चार्ल्स नेपियरने मियानी आणि दाबोच्या लढाईत या तालपूर अमिरांचा पराभव करून सिंध खालसा केला.",
+        "en": "Sindh was governed by a confederacy of Baluch chieftains belonging to the Talpur dynasty, collectively referred to as the 'Amirs of Sindh'. They were defeated and unseated by Major-General Sir Charles Napier in 1843 at the Battles of Miani and Dubbo."
+      }
+    },
+    {
+      "id": 15,
+      "question": {
+        "mr": "१८४४ ते १८४८ दरम्यान भारताचा गव्हर्नर-जनरल राहिलेल्या लॉर्ड हार्डिंग्ज पहिल्या याने ओरिसातील खोंड जमातीत चालणाऱ्या कोणत्या अनिष्ट प्रथेचे उच्चाटन करण्यासाठी विशेष मोहीम राबवली?",
+        "en": "During his administration (1844–1848), Governor-General Lord Hardinge I took decisive administrative and military measures to suppress which barbaric rite practiced among the Khond tribes of Orissa?"
+      },
+      "options": [
+        { "mr": "मानव बळी प्रथा ('मारिया' - Meriah sacrifice)", "en": "Human Sacrifice ('Meriah' sacrifice)" },
+        { "mr": "सती प्रथा", "en": "Sati rite" },
+        { "mr": "गुलामगिरी प्रथा", "en": "Domestic slavery" },
+        { "mr": "कन्या भ्रूणहत्या", "en": "Female infanticide" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "ओरिसातील डोंगराळ भागातील खोंड जमातीत शेतीची सुपीकता वाढवण्यासाठी 'मारिया' (Meriah) नावाची मानवी बळी देण्याची प्रथा होती. लॉर्ड हार्डिंग्जच्या काळात १८४५ मध्ये कॅप्टन कॅम्पबेल आणि कॅप्टन मॅकफर्सन यांच्या नेतृत्वाखाली विशेष एजन्सी स्थापन करून ही प्रथा कठोरपणे बंद करण्यात आली.",
+        "en": "Lord Hardinge I vigorously suppressed the cruel tribal rite of 'Meriah' (human sacrifice practiced to ensure bountiful crops) among the hill Khonds of Orissa and the Eastern Ghats, commissioning dedicated agencies under Captain S. C. Macpherson and Captain J. Campbell."
+      }
+    },
+    {
+      "id": 16,
+      "question": {
+        "mr": "१८४९ मध्ये कलकत्ता येथे उच्चवर्णीय मुलींच्या शिक्षणासाठी पहिली धर्मनिरपेक्ष शाळा (हिंदू फिमेल स्कूल - पुढे बेथून कॉलेज) स्थापन करण्यात कोणी पुढाकार घेतला?",
+        "en": "Who took the lead initiative in founding the pioneering secular Hindu Female School (later Bethune College) for girls in Calcutta in May 1849?"
+      },
+      "options": [
+        { "mr": "जे. ई. डी. बेथून आणि पंडित ईश्वरचंद्र विद्यासागर", "en": "J. E. D. Bethune and Pandit Ishwar Chandra Vidyasagar" },
+        { "mr": "लॉर्ड डलहौसी आणि राजा राममोहन रॉय", "en": "Lord Dalhousie and Raja Ram Mohan Roy" },
+        { "mr": "विल्यम बेंटिंक आणि डेव्हिड हेअर", "en": "William Bentinck and David Hare" },
+        { "mr": "चार्ल्स वूड आणि केशवचंद्र सेन", "en": "Charles Wood and Keshub Chunder Sen" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "मे १८४९ मध्ये कौन्सिलचे विधी सदस्य आणि शिक्षण मंडळाचे अध्यक्ष जे. ई. डी. बेथून यांनी 'हिंदू फिमेल स्कूल' सुरू केले. पंडित ईश्वरचंद्र विद्यासागर यांनी या संस्थेचे मानद सचिव म्हणून जबाबदारी सांभाळली आणि मुलींच्या शिक्षणाला सामाजिक प्रतिष्ठा मिळवून दिली. पुढे डलहौसीने या शाळेला स्वतःच्या खिशातून नियमित अनुदान दिले.",
+        "en": "In May 1849, John Elliot Drinkwater Bethune (Law Member of the Supreme Council) established the Hindu Female School in Calcutta. Pandit Ishwar Chandra Vidyasagar served as its secretary and champion, making it the bedrock of secular institutional education for women in India."
+      }
+    },
+    {
+      "id": 17,
+      "question": {
+        "mr": "लॉर्ड डलहौसीने १८५४ मध्ये भारतात आणलेल्या 'हमी पद्धतीचा' (Old Guarantee System) मुख्य आर्थिक दोष काय होता?",
+        "en": "What was the fundamental economic flaw of the 'Old Guarantee System' introduced by Lord Dalhousie in the 1850s to promote private railway construction?"
+      },
+      "options": [
+        { "mr": "ब्रिटिश रेल्वे कंपन्यांना गुंतवलेल्या भांडवलावर भारतीय तिजोरीतून ५% निश्चित परताव्याची हमी असल्याने कंपन्यांनी प्रचंड उधळपट्टी व अवाजवी खर्च केला, ज्याचा भार भारतीय करदात्यांवर पडला.", "en": "Because private British companies were guaranteed a 5% sterling return from Indian revenues on their capital regardless of profit, they engaged in wasteful, reckless expenditure at the expense of Indian taxpayers." },
+        { "mr": "रेल्वे कंपन्यांना भारतातून कोणताही नफा मायदेशी नेण्यास सक्त मनाई होती.", "en": "Railway companies were legally banned from repatriating operating surpluses to London." },
+        { "mr": "भारतीय सावकारांना रेल्वे शेअर्स खरेदी करण्यास बंदी घालण्यात आली.", "en": "Native Indian bankers were excluded from subscribing to railway equities." },
+        { "mr": "रेल्वेचे भाडे भारतीय शेतकऱ्यांच्या इच्छेनुसार ठरवणे अनिवार्य केले.", "en": "Passenger and freight tariffs were pegged directly to peasant income thresholds." }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "डलहौसीच्या गॅरंटी सिस्टीमने खाजगी ब्रिटिश कंपन्यांना ९९ वर्षांसाठी मोफत जमीन आणि गुंतवलेल्या भांडवलावर भारतीय तिजोरीतून ५% निश्चित लाभांशाची हमी दिली. नफा झाला नाही तरी हा ५% परतावा मिळत राहिल्याने कंपन्यांनी रेल्वे बांधणीत अफाट उधळपट्टी केली. राष्ट्रवादी अर्थतज्ज्ञांनी याचे वर्णन 'खाजगी नफा आणि सार्वजनिक तोटा' (Private enterprise at public risk) असे केले.",
+        "en": "Under Dalhousie's Old Guarantee System, joint-stock British rail companies were guaranteed a minimum 5% annual return on their investment paid out of Indian public revenues, accompanied by free 99-year land leases. Insulated from business risk or operational deficits, contractors indulged in extravagant, padded construction, creating what nationalists dubbed 'private profit at public risk'."
+      }
+    },
+    {
+      "id": 18,
+      "question": {
+        "mr": "१८५८ च्या भारत सरकार कायद्यान्वये लंडनमध्ये स्थापन करण्यात आलेल्या 'इंडिया कौन्सिल'च्या (Council of India) आर्थिक अधिकारांबाबत खालीलपैकी कोणती तरतूद खरी आहे?",
+        "en": "Which of the following provisions accurately describes the statutory powers of the 15-member Council of India regarding expenditures under the Government of India Act 1858?"
+      },
+      "options": [
+        { "mr": "भारतीय महसुलातून कोणत्याही प्रकारचा खर्च किंवा विनियोग करण्यासाठी कौन्सिलच्या बहुमताची मंजुरी आवश्यक होती आणि भारत मंत्र्याला यात कौन्सिलचा निर्णय फेटाळता येत नव्हता.", "en": "The appropriation and expenditure of Indian revenues required the concurring majority vote of the Council, which could not be overridden by the Secretary of State." },
+        { "mr": "कौन्सिलला आर्थिक बाबींवर मतदान करण्याचा कोणताही अधिकार नव्हता.", "en": "The Council had no statutory authority to vote on financial appropriations." },
+        { "mr": "भारत मंत्री कौन्सिलची मंजुरी न घेता संपूर्ण भारतीय महसूल स्वतःच्या मर्जीने खर्च करू शकत होता.", "en": "The Secretary of State held discretionary authority to spend Indian revenues without consulting the Council." },
+        { "mr": "सर्व आर्थिक निर्णय केवळ व्हाइसरॉयच्या सहमतीनेच लंडनमध्ये मंजूर केले जात असत.", "en": "All financial disbursements had to be initiated exclusively by the Viceroy." }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१८५८ च्या कायद्यातील कलम ४१ नुसार, जरी भारत मंत्री इतर राजकीय व प्रशासकीय बाबींमध्ये कौन्सिलचे मत फेटाळू शकत असला, तरी भारतीय तिजोरीतून (Indian Revenues) खर्च करण्याच्या किंवा कर्ज काढण्याच्या कोणत्याही निर्णयासाठी इंडिया कौन्सिलच्या उपस्थित सदस्यांच्या बहुमताची औपचारिक मंजुरी अनिवार्य होती; येथे भारत मंत्र्याला नकाराधिकार (Veto) नव्हता.",
+        "en": "Under Section 41 of the Government of India Act 1858, while the Secretary of State could override his Council on political, administrative, and diplomatic matters, he could not spend, borrow, or appropriate Indian revenues without the concurrence of a majority vote of the Council of India."
+      }
+    },
+    {
+      "id": 19,
+      "question": {
+        "mr": "१८६० मध्ये लॉर्ड कॅनिंगच्या कार्यकाळात 'भारतीय दंड संहिता' (IPC) संमत झाली, तेव्हा या संहितेच्या मसुद्यात 'राजद्रोह' (Sedition - कलम १२४-अ) हे कलम मूळ कायद्यात नव्हते; ते कोणत्या वर्षी संमत झालेल्या दुरुस्ती कायद्याद्वारे समाविष्ट करण्यात आले?",
+        "en": "The Indian Penal Code was enacted in 1860, but the offense of 'Sedition' (Section 124A) was omitted from the original text. In which year was Section 124A incorporated into the IPC through an amending act?"
+      },
+      "options": [
+        { "mr": "१८७० (दुरुस्ती कायदा क्र. २७)", "en": "1870 (Amending Act XXVII)" },
+        { "mr": "१८६२", "en": "1862" },
+        { "mr": "१८७८", "en": "1878" },
+        { "mr": "१८९७", "en": "1897" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "मेकॉलच्या १८३७ च्या मसुद्यात राजद्रोहाची तरतूद होती, परंतु १८६० मध्ये आयपीसी मंजूर करताना चुकून किंवा वगळल्यामुळे कलम १२४-अ समाविष्ट झाले नव्हते. वहाबी चळवळ आणि ब्रिटिशविरोधी असंतोष रोखण्यासाठी १८७० च्या दुरुस्ती कायद्यान्वये सर जेम्स स्टीफन यांनी 'कलम १२४-अ' (राजद्रोह / Sedition) अधिकृतपणे भारतीय दंड संहितेत समाविष्ट केले.",
+        "en": "Though drafted in Macaulay's original 1837 text, Section 124A (Sedition) was inadvertently dropped when the IPC was enacted in 1860. It was officially inserted into the Penal Code via the Indian Penal Code Amendment Act (Act XXVII of 1870) under Law Member Sir James Fitzjames Stephen to counter the Wahabi movement."
+      }
+    },
+    {
+      "id": 20,
+      "question": {
+        "mr": "१८६१ च्या 'भारतीय कौन्सिल कायद्यानुसार' (Indian Councils Act 1861) व्हाइसरॉयच्या कायदेमंडळात नियुक्त करावयाच्या अतिरिक्त सदस्यांची संख्या किती निश्चित करण्यात आली होती?",
+        "en": "Under the Indian Councils Act of 1861, what was the statutory range fixed for additional legislative members nominated to the Viceroy's Council?"
+      },
+      "options": [
+        { "mr": "किमान ६ आणि जास्तीत जास्त १२ सदस्य (ज्यात किमान निम्मे बिगर-सरकारी असावेत)", "en": "Not less than 6 and not more than 12 members (at least half being non-officials)" },
+        { "mr": "किमान १० आणि जास्तीत जास्त १६ सदस्य", "en": "Not less than 10 and not more than 16 members" },
+        { "mr": "थेट ६० सदस्य निश्चित केले गेले", "en": "Fixed uniformly at 60 members" },
+        { "mr": "केवळ ४ सदस्य", "en": "Exclusively 4 members" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१८६१ च्या कायद्यानुसार व्हाइसरॉयला कायदे तयार करण्यासाठी आपल्या कौन्सिलमध्ये किमान ६ आणि कमाल १२ अतिरिक्त सदस्य नामनिर्देशित करण्याचे अधिकार मिळाले. या अतिरिक्त सदस्यांपैकी किमान निम्मे सदस्य 'बिगर-सरकारी' (Non-official) असणे अनिवार्य होते आणि त्यांची मुदत २ वर्षे होती.",
+        "en": "The Indian Councils Act of 1861 expanded the Governor-General's Council for legislative purposes by authorizing the nomination of not less than 6 and not more than 12 additional members for a term of two years, of whom at least one-half were required to be non-officials."
+      }
+    },
+    {
+      "id": 21,
+      "question": {
+        "mr": "१८६२ मध्ये मुंबई उच्च न्यायालय स्थापन झाल्यानंतर त्याचे पहिले मुख्य न्यायाधीश (Chief Justice) कोण बनले?",
+        "en": "Upon the formal inauguration of the chartered Bombay High Court in August 1862, who assumed office as its first Chief Justice?"
+      },
+      "options": [
+        { "mr": "सर मॅथ्यू रिचर्ड सॉस (Sir Matthew Richard Sausse)", "en": "Sir Matthew Richard Sausse" },
+        { "mr": "सर बार्नेस पीकॉक (Sir Barnes Peacock)", "en": "Sir Barnes Peacock" },
+        { "mr": "सर कोली हार्टलँड (Sir Colley Scotland)", "en": "Sir Colley Scotland" },
+        { "mr": "सर मायकेल वेस्ट्रॉप (Sir Michael Westropp)", "en": "Sir Michael Westropp" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१४ ऑगस्ट १८६२ रोजी मुंबई उच्च न्यायालय अस्तित्वात आले. सर मॅथ्यू रिचर्ड सॉस हे मुंबई उच्च न्यायालयाचे पहिले मुख्य न्यायाधीश बनले. कलकत्ता उच्च न्यायालयाचे पहिले मुख्य न्यायाधीश सर बार्नेस पीकॉक होते आणि मद्रास उच्च न्यायालयाचे सर कोली स्कॉटलंड होते. न्यायमूर्ती जनार्दन वासुदेवजी हे मुंबई उच्च न्यायालयाचे पहिले भारतीय हंगामी न्यायाधीश ठरले.",
+        "en": "Sir Matthew Richard Sausse, formerly Chief Justice of the Supreme Court of Bombay, became the inaugural Chief Justice of the newly constituted Bombay High Court on 14 August 1862. Sir Barnes Peacock served as the first Chief Justice at Calcutta, and Sir Colley Scotland at Madras."
+      }
+    },
+    {
+      "id": 22,
+      "question": {
+        "mr": "१८६४ ते १८६९ दरम्यान भारताचा व्हाइसरॉय राहिलेल्या सर जॉन लॉरेन्सने (Sir John Lawrence) उन्हाळ्याच्या काळात प्रशासकीय कार्यक्षमतेसाठी भारताची अधिकृत 'उन्हाळी राजधानी' (Summer Capital) म्हणून कोणत्या शहराला दर्जा दिला?",
+        "en": "In 1864, which hill station was officially designated by Viceroy Sir John Lawrence as the regular Summer Capital of the Government of India?"
+      },
+      "options": [
+        { "mr": "सिमला (Shimla)", "en": "Shimla" },
+        { "mr": "दार्जिलिंग (Darjeeling)", "en": "Darjeeling" },
+        { "mr": "महाबळेश्वर (Mahabaleshwar)", "en": "Mahabaleshwar" },
+        { "mr": "उंटाकमंड / ऊटी (Ooty)", "en": "Ootacamund (Ooty)" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१८६४ मध्ये सर जॉन लॉरेन्सने सिमला (हिमाचल प्रदेश) या थंड हवेच्या शहराला ब्रिटिश भारताची अधिकृत 'उन्हाळी राजधानी' बनवले. दरवर्षी एप्रिल ते ऑक्टोबर या काळात संपूर्ण केंद्रीय सरकार, व्हाइसरॉयचे कौन्सिल आणि लष्कराचे मुख्यालय कलकत्त्याहून सिमल्याला हलवले जात असे. ही दुहेरी राजधानी पद्धत पुढे १९४७ पर्यंत चालू राहिली.",
+        "en": "In 1864, Viceroy Sir John Lawrence formalized the imperial institutional practice of shifting the supreme Government of India, the Viceroy's Council, and Army Headquarters from Calcutta to Shimla for the hot weather months, officially designating Shimla as the Summer Capital of the British Raj."
+      }
+    },
+    {
+      "id": 23,
+      "question": {
+        "mr": "१८७३ मध्ये ब्रिटिश सरकारने ईस्ट इंडिया कंपनीबाबत कोणता अंतिम कायदेशीर निर्णय घेतला?",
+        "en": "What definitive statutory measure was enacted by the British Parliament regarding the East India Company through the East India Stock Dividend Redemption Act of 1873?"
+      },
+      "options": [
+        { "mr": "ईस्ट इंडिया कंपनीचे सर्व शेअर्स फेडून १ जून १८७४ रोजी कंपनीचे अस्तित्व औपचारिकपणे पूर्ण विसर्जित (Dissolved) करण्यात आले.", "en": "Redeeming all Company capital stock dividends and formally dissolving the East India Company's corporate existence on 1 June 1874." },
+        { "mr": "कंपनीला पुन्हा भारताचा संपूर्ण व्यापारी कारभार सोपवण्यात आला.", "en": "Restoring full commercial governance of India back to the Company." },
+        { "mr": "कंपनीचे रूपांतर एका खाजगी बँकेत करण्यात आले.", "en": "Converting the Company into a private commercial banking entity." },
+        { "mr": "कंपनीला केवळ चहा उत्पादनापुरती मर्यादित ठेवण्यात आले.", "en": "Restricting the Company exclusively to domestic tea plantations." }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१८५८ च्या कायद्याने कंपनीची सत्ता काढून घेतली होती, परंतु कंपनी एक कायदेशीर व्यावसायिक संस्था म्हणून कागदावर अस्तित्वात होती. ब्रिटिश संसदेने १८७३ चा 'ईस्ट इंडिया स्टॉक डिव्हिडंड रिडेम्पशन ॲक्ट' संमत करून सर्व भागधारकांचे भांडवल फेडले आणि १ जून १८७४ रोजी ईस्ट इंडिया कंपनी औपचारिकपणे पूर्णपणे विसर्जित (कायमची बंद) केली.",
+        "en": "Although stripped of administrative power in 1858, the East India Company retained nominal corporate existence. Parliament passed the East India Stock Dividend Redemption Act of 1873 to pay off its capital stockholders, formally dissolving the East India Company on 1 June 1874."
+      }
+    },
+    {
+      "id": 24,
+      "question": {
+        "mr": "१८७९ मध्ये स्वाक्षरी झालेल्या 'दख्खन शेतकरी साहाय्य कायद्याची' (Deccan Agriculturists' Relief Act 1879) अंमलबजावणी प्रामुख्याने महाराष्ट्रातील कोणत्या चार जिल्ह्यांमध्ये सुरू करण्यात आली होती?",
+        "en": "In which four districts of Maharashtra was the Deccan Agriculturists' Relief Act of 1879 initially implemented following the Deccan Riots Commission report?"
+      },
+      "options": [
+        { "mr": "पुणे, अहमदनगर, सोलापूर आणि सातारा", "en": "Pune, Ahmednagar, Solapur, and Satara" },
+        { "mr": "मुंबई, ठाणे, कुलाबा आणि रत्नागिरी", "en": "Bombay, Thane, Kolaba, and Ratnagiri" },
+        { "mr": "नाशिक, धुळे, जळगाव आणि नंदुरबार", "en": "Nashik, Dhule, Jalgaon, and Nandurbar" },
+        { "mr": "नागपूर, अमरावती, वर्धा आणि यवतमाळ", "en": "Nagpur, Amravati, Wardha, and Yavatmal" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१८७५ च्या दख्खनच्या शेतकरी दंगलीनंतर १८७९ मध्ये संमत झालेला हा कायदा सुरुवातीला मुंबई इलाख्यातील सर्वाधिक असंतोष असलेल्या चार जिल्ह्यांत—पुणे, अहमदनगर, सोलापूर आणि सातारा—लागू करण्यात आला. या कायद्याने सावकारांच्या हिशोबांची तपासणी आणि शेतकऱ्यांना कर्जापोटी अटकेपासून संरक्षण दिले.",
+        "en": "The Deccan Agriculturists' Relief Act of 1879 was initially enforced across the four drought-prone and unrest-affected districts of the Bombay Deccan: Pune, Ahmednagar, Solapur, and Satara. It empowered civil courts to investigate unconscionable debt claims and protected ryots against civil arrest."
+      }
+    },
+    {
+      "id": 25,
+      "question": {
+        "mr": "१८८० मध्ये लॉर्ड रिपन भारताचा व्हाइसरॉय बनून आल्यानंतर त्याने खालीलपैकी कोणत्या आंतरराष्ट्रीय मुद्द्यावर माघार घेऊन दुसरे इंग्रज-अफगाण युद्ध तात्काळ संपवले?",
+        "en": "Upon assuming office in 1880, which pragmatic diplomatic compromise was enacted by Viceroy Lord Ripon to terminate the Second Anglo-Afghan War?"
+      },
+      "options": [
+        { "mr": "अब्दुर रहमान खान याला अफगाणिस्तानचा कायदेशीर अमीर म्हणून मान्यता दिली, काबूलमध्ये ब्रिटिश रेसिडेंट ठेवण्याची अट रद्द केली आणि ब्रिटिश फौजा भारतात परत बोलावल्या.", "en": "Recognized Abdur Rahman Khan as the legitimate Amir of Afghanistan, dropped the insistence on stationing a British Resident at Kabul, and withdrew British expeditionary forces." },
+        { "mr": "अफगाणिस्तानवर थेट हल्ला करून काबूल पूर्णपणे नष्ट केले.", "en": "Launched an all-out offensive to conquer Kabul outright." },
+        { "mr": "अफगाणिस्तानचे राज्य रशियन झारच्या ताब्यात सुपूर्द केले.", "en": "Surrendered sovereignty of Afghanistan to the Russian Empire." },
+        { "mr": "अमीर याकूब खान याला लंडनचा नागरिकत्व देऊन अफगाणिस्तान ब्रिटिश प्रांतात विलीन केला.", "en": "Conferred British peerage upon Amir Yaqub Khan and integrated Afghanistan as a British province." }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "लॉर्ड लिटनच्या विनाशकारी युद्धानंतर उदारमतवादी लॉर्ड रिपनने १८८० मध्ये पदभार स्वीकारला. त्याने काबूलमध्ये ब्रिटिश रेसिडेंट ठेवण्याचा अट्टाहास सोडला. अब्दुर रहमान खान याला अफगाणिस्तानचा अमीर म्हणून मान्यता दिली आणि केवळ परराष्ट्र धोरणावर ब्रिटिशांचे नियंत्रण ठेवून सर्व ब्रिटिश सैन्य सुरक्षितपणे भारतात परत आणले.",
+        "en": "Lord Ripon reversed Lytton's forward policy in 1880 by recognizing Abdur Rahman Khan as Amir of Afghanistan. In exchange for an annual subsidy and control over Afghan external relations, Ripon relinquished the demand for a resident British envoy at Kabul and evacuated British troops back into India."
+      }
+    }
+  ]
+}

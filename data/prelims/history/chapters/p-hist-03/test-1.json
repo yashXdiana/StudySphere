@@ -1,0 +1,927 @@
+  {
+
+    "testId": "p-hist-03-t1",
+
+    "title": {
+
+      "mr": "१८५७ चा उठाव — सराव 1",
+
+      "en": "Revolt of 1857 — Practice Test 1"
+
+    },
+
+    "durationMinutes": 20,
+
+    "marksPerQuestion": 1,
+
+    "negativeMarking": 0.25,
+
+    "totalMarks": 25,
+
+    "difficulty": "मध्यम ते काठिण्य",
+
+    "questions": [
+
+      {
+
+        "id": 1,
+
+        "question": {
+
+          "mr": "१८५७ च्या उठावाच्या तात्कालिक कारणांपैकी एक असलेल्या 'एनफिल्ड रायफल'च्या (Enfield Rifle) संदर्भात खालील विधाने विचारात घ्या:\nअ. या रायफली जुन्या 'ब्राऊन बेस' (Brown Bess) मस्कट्सच्या जागी दाखल करण्यात आल्या होत्या.\nब. या काडतुसांना लावण्यात आलेली चरबी गाय आणि डुकराची असल्याचा संशय शिपायांमध्ये पसरला होता.\nवरीलपैकी कोणते/ती विधान/ने बरोबर आहेत?",
+
+          "en": "Consider the following statements regarding the 'Enfield Rifle', which served as an immediate trigger for the Revolt of 1857:\na. These rifles replaced the older 'Brown Bess' smooth-bore muskets.\nb. A suspicion spread among sepoys that the grease applied to the cartridges was made of cow and pig fat.\nWhich of the statements given above is/are correct?"
+
+        },
+
+        "options": [
+
+          { "mr": "फक्त अ", "en": "Only a" },
+
+          { "mr": "फक्त ब", "en": "Only b" },
+
+          { "mr": "अ आणि ब दोन्ही", "en": "Both a and b" },
+
+          { "mr": "दोन्ही नाही", "en": "Neither a nor b" }
+
+        ],
+
+        "correctAnswerIndex": 2,
+
+        "explanation": {
+
+          "mr": "दोन्ही विधाने योग्य आहेत. १८५६ मध्ये ब्रिटिश सरकारने जुन्या गुळगुळीत नळीच्या 'ब्राऊन बेस' बंदुकांऐवजी 'एनफिल्ड रायफल' सुरू केली. या रायफलींच्या काडतुसांचे आवरण दातांनी तोडावे लागत असे, ज्यात गाय व डुकराची चरबी वापरल्याची अफवा पसरल्याने हिंदू आणि मुस्लिम अशा दोन्ही सैनिकांच्या धार्मिक भावना दुखावल्या.",
+
+          "en": "Both statements are correct. In 1856, the Enfield rifle was introduced replacing the older 'Brown Bess' musket. The cartridges had to be bitten off before loading, and rumors of grease derived from beef and pork tallow offended both Hindu and Muslim sepoys."
+
+        }
+
+      },
+
+      {
+
+        "id": 2,
+
+        "question": {
+
+          "mr": "२९ मार्च १८५७ रोजी बराकपूर छावणीत कोणत्या रेजिमेंटच्या मंगल पांडे यांनी चरबीयुक्त काडतुसे वापरण्यास नकार देऊन ब्रिटिश अधिकाऱ्यांवर गोळ्या झाडल्या?",
+
+          "en": "On 29 March 1857, Mangal Pandey revolted against greased cartridges at Barrackpore. Which regiment did he belong to?"
+
+        },
+
+        "options": [
+
+          { "mr": "३४ वी बंगाल नेटिव्ह इन्फंट्री (34th BNI)", "en": "34th Bengal Native Infantry (34th BNI)" },
+
+          { "mr": "१९ वी बंगाल नेटिव्ह इन्फंट्री", "en": "19th Bengal Native Infantry" },
+
+          { "mr": "२० वी बंगाल नेटिव्ह इन्फंट्री", "en": "20th Bengal Native Infantry" },
+
+          { "mr": "११ वी बंगाल नेटिव्ह इन्फंट्री", "en": "11th Bengal Native Infantry" }
+
+        ],
+
+        "correctAnswerIndex": 0,
+
+        "explanation": {
+
+          "mr": "मंगल पांडे हे ३४ व्या बंगाल नेटिव्ह इन्फंट्री (BNI) मधील शिपाई होते. त्यांनी २९ मार्च १८५७ रोजी बराकपूरच्या परेड मैदानावर सार्जंट मेजर ह्यूसन आणि लेफ्टनंट बॉग यांच्यावर हल्ला केला. त्यांना ८ एप्रिल १८५७ रोजी फाशी देण्यात आली.",
+
+          "en": "Mangal Pandey was a sepoy in the 34th Bengal Native Infantry (BNI). On 29 March 1857 at Barrackpore, he attacked Lieutenant Baugh and Sergeant-Major Hewson. He was executed by hanging on 8 April 1857."
+
+        }
+
+      },
+
+      {
+
+        "id": 3,
+
+        "question": {
+
+          "mr": "१८५७ च्या उठावाची प्रत्यक्ष ठिणगी १० मे १८५७ रोजी मेरठ छावणीत पडली. या उठावात खालीलपैकी कोणत्या दोन रेजिमेंट्सनी मुख्य सहभाग घेतला?",
+
+          "en": "The Revolt of 1857 broke out at Meerut on 10 May 1857. Which two native infantry regiments primarily revolted there?"
+
+        },
+
+        "options": [
+
+          { "mr": "११ वी आणि २० वी नेटिव्ह इन्फंट्री (11th and 20th Native Infantry)", "en": "11th and 20th Native Infantry" },
+
+          { "mr": "१९ वी आणि ३४ वी नेटिव्ह इन्फंट्री", "en": "19th and 34th Native Infantry" },
+
+          { "mr": "१ ली आणि २ री अवध इर्रेग्युलर रेजिमेंट", "en": "1st and 2nd Oudh Irregular Regiment" },
+
+          { "mr": "७ वी आणि ९ वी नेटिव्ह इन्फंट्री", "en": "7th and 9th Native Infantry" }
+
+        ],
+
+        "correctAnswerIndex": 0,
+
+        "explanation": {
+
+          "mr": "१० मे १८५७ रोजी मेरठ येथे तिसऱ्या लाइट कॅव्हलरीसह ११ व्या आणि २० व्या नेटिव्ह इन्फंट्रीच्या सैनिकांनी बंड पुकारले, आपल्या कैदी सहकाऱ्यांना सोडवले, युरोपियन अधिकाऱ्यांवर हल्ले केले आणि 'चलो दिल्ली'चा नारा देत दिल्लीकडे आगेकूच केली.",
+
+          "en": "On 10 May 1857, the sepoys of the 11th and 20th Native Infantry, along with the 3rd Native Cavalry, mutinied at Meerut, released imprisoned comrades, and marched towards Delhi chanting 'Chalo Delhi'."
+
+        }
+
+      },
+
+      {
+
+        "id": 4,
+
+        "question": {
+
+          "mr": "११-१२ मे १८५७ रोजी दिल्लीवर ताबा मिळवल्यानंतर बंडखोर सैनिकांनी कोणाला 'शहेनशहा-ए-हिंदुस्थान' (भारताचा सम्राट) म्हणून घोषित केले?",
+
+          "en": "After capturing Delhi on 11-12 May 1857, whom did the rebels proclaim as the 'Shahenshah-e-Hindustan' (Emperor of India)?"
+
+        },
+
+        "options": [
+
+          { "mr": "बहादूर शाह दुसरा 'झफर'", "en": "Bahadur Shah II 'Zafar'" },
+
+          { "mr": "नानासाहेब पेशवे", "en": "Nana Saheb Peshwa" },
+
+          { "mr": "बख्त खान", "en": "Bakht Khan" },
+
+          { "mr": "शहा आलम दुसरा", "en": "Shah Alam II" }
+
+        ],
+
+        "correctAnswerIndex": 0,
+
+        "explanation": {
+
+          "mr": "मेरठहून आलेल्या शिपायांनी लाल किल्ल्यात प्रवेश करून वृद्ध मुघल सम्राट बहादूर शाह दुसरा (झफर) याला १८५७ च्या उठावाचे नाममात्र सर्वोच्च नेते म्हणून 'शहेनशहा-ए-हिंदुस्थान' घोषित केले.",
+
+          "en": "Upon reaching the Red Fort, sepoys proclaimed the aged Mughal Emperor Bahadur Shah II (Zafar) as the symbolic leader and 'Shahenshah-e-Hindustan' to unite the country under legitimate imperial authority."
+
+        }
+
+      },
+
+      {
+
+        "id": 5,
+
+        "question": {
+
+          "mr": "दिल्लीतील प्रत्यक्ष लष्करी उठावाचे नेतृत्व 'लष्करी समितीच्या' (Court of Soldiers) माध्यमातून कोणाच्या हाती होते?",
+
+          "en": "Who held actual operational military command of the rebel forces at Delhi through a 10-member administrative committee?"
+
+        },
+
+        "options": [
+
+          { "mr": "जनरल बख्त खान", "en": "General Bakht Khan" },
+
+          { "mr": "मिर्झा मुघल", "en": "Mirza Mughal" },
+
+          { "mr": "मौलवी अहमदुल्ला", "en": "Maulvi Ahmadullah" },
+
+          { "mr": "खान बहादूर खान", "en": "Khan Bahadur Khan" }
+
+        ],
+
+        "correctAnswerIndex": 0,
+
+        "explanation": {
+
+          "mr": "बरेलीहून आलेल्या सुभेदार बख्त खान यांनी दिल्लीतील सैन्याची धुरा सांभाळली. बहादूर शाहने त्यांना 'साहेब-ए-आलम बहादूर' हा किताब दिला. त्यांनी १० सदस्यांची लष्करी व नागरी समिती स्थापन करून दिल्लीतील कारभार चालवला.",
+
+          "en": "Subedar Bakht Khan arrived from Bareilly and assumed direct command of the forces in Delhi. Bahadur Shah conferred upon him the title 'Saheb-e-Alam Bahadur', and he headed the 10-member executive court."
+
+        }
+
+      },
+
+      {
+
+        "id": 6,
+
+        "question": {
+
+          "mr": "सप्टेंबर १८५७ मध्ये ब्रिटिशांनी दिल्ली पुन्हा जिंकून घेतल्यानंतर मुघल सम्राट बहादूर शाह याला कोणत्या ठिकाणाहून अटक करण्यात आली?",
+
+          "en": "In September 1857, following the British recapture of Delhi, from which historical monument was Bahadur Shah Zafar arrested?"
+
+        },
+
+        "options": [
+
+          { "mr": "हुमायूँची कबर (Humayun's Tomb)", "en": "Humayun's Tomb" },
+
+          { "mr": "कुतुब मिनार", "en": "Qutub Minar" },
+
+          { "mr": "जामा मशीद", "en": "Jama Masjid" },
+
+          { "mr": "सफदरजंगची कबर", "en": "Safdarjung's Tomb" }
+
+        ],
+
+        "correctAnswerIndex": 0,
+
+        "explanation": {
+
+          "mr": "२० सप्टेंबर १८५७ रोजी ब्रिटिश अधिकारी लेफ्टनंट विल्यम हॉडसन याने हुमायूँच्या मकबऱ्यातून बहादूर शाह झफर याला अटक केली. हॉडसनने सम्राटाच्या मुलांची (मिर्झा मुघल, मिर्झा ख्वाजा सुलतान) आणि नातवाची दिल्ली दरवाजाजवळ गोळ्या झाडून हत्या केली.",
+
+          "en": "On 20 September 1857, British officer Lt. William Hodson captured Bahadur Shah II from Humayun's Tomb. Hodson also shot dead the Emperor's two sons and a grandson near the Delhi Gate (Khooni Darwaza)."
+
+        }
+
+      },
+
+      {
+
+        "id": 7,
+
+        "question": {
+
+          "mr": "कानपूर येथील उठावाच्या संदर्भात खालील योग्य जोड्या जुळवा:\n\nस्तंभ अ (नेते / व्यक्ती)\n१. नानासाहेब\n२. तात्या टोपे\n३. अझीमुल्ला खान\n\nस्तंभ ब (भूमिका / पद)\nअ. मुख्य मुत्सद्दी व सल्लागार\nब. मुख्य सेनापती\nक. पेशवा म्हणून उठावाचे नेतृत्व\n\nयोग्य पर्याय निवडा:",
+
+          "en": "Match the personalities involved in the Kanpur uprising with their respective roles:\n\nColumn A\n1. Nana Saheb\n2. Tatya Tope\n3. Azimullah Khan\n\nColumn B\na. Chief Diplomat & Advisor\nb. Commander-in-Chief\nc. Leader proclaimed as Peshwa\n\nChoose the correct option:"
+
+        },
+
+        "options": [
+
+          { "mr": "१-क, २-ब, ३-अ", "en": "1-c, 2-b, 3-a" },
+
+          { "mr": "१-ब, २-क, ३-अ", "en": "1-b, 2-c, 3-a" },
+
+          { "mr": "१-क, २-अ, ३-ब", "en": "1-c, 2-a, 3-b" },
+
+          { "mr": "१-अ, २-ब, ३-क", "en": "1-a, 2-b, 3-c" }
+
+        ],
+
+        "correctAnswerIndex": 0,
+
+        "explanation": {
+
+          "mr": "कानपूरमध्ये नानासाहेबांनी (धोंडोपंत) पेशवा म्हणून नेतृत्वाची घोषणा केली. रामचंद्र पांडुरंग टोपे उर्फ तात्या टोपे त्यांचे मुख्य सेनापती होते, तर अझीमुल्ला खान हे नानासाहेबांचे प्रमुख सल्लागार व मुत्सद्दी प्रतिनिधी होते.",
+
+          "en": "Nana Saheb led the uprising at Kanpur styling himself as Peshwa. Tatya Tope served as his military commander-in-chief, while Azimullah Khan was his key political advisor and diplomatic envoy."
+
+        }
+
+      },
+
+      {
+
+        "id": 8,
+
+        "question": {
+
+          "mr": "लखनौ (अवध) येथील उठावाचे नेतृत्व खालीलपैकी कोणी केले, ज्यांनी आपल्या अल्पवयीन मुलाला (बिरजिस काद्र) नवाब घोषित केले होते?",
+
+          "en": "Who spearheaded the revolt in Lucknow (Awadh), proclaiming her minor son Birjis Qadr as the Nawab?"
+
+        },
+
+        "options": [
+
+          { "mr": "बेगम हजरत महल", "en": "Begum Hazrat Mahal" },
+
+          { "mr": "झीनत महल", "en": "Zeenat Mahal" },
+
+          { "mr": "अझिझन बाई", "en": "Azizan Bai" },
+
+          { "mr": "राणी ईश्वरी कुमारी", "en": "Rani Ishwari Kumari" }
+
+        ],
+
+        "correctAnswerIndex": 0,
+
+        "explanation": {
+
+          "mr": "अवधचा नवाब वाजिद अली शाह यांच्या पत्नी बेगम हजरत महल यांनी लखनौमध्ये बंडाचे नेतृत्व केले. त्यांनी आपल्या ११ वर्षांच्या मुलाला बिरजिस काद्र याला नवाब घोषित करून मौलवी अहमदुल्ला यांच्या सहकार्याने ब्रिटिशांना कडवी झुंज दिली.",
+
+          "en": "Begum Hazrat Mahal, wife of deposed Nawab Wajid Ali Shah, commanded the revolt in Lucknow. She crowned her young son Birjis Qadr as Nawab and organized resistance alongside Maulvi Ahmadullah."
+
+        }
+
+      },
+
+      {
+
+        "id": 9,
+
+        "question": {
+
+          "mr": "झाशीची राणी लक्ष्मीबाई यांचा जन्म खालीलपैकी कोणत्या शहरात झाला होता?",
+
+          "en": "In which of the following cities was Rani Lakshmibai of Jhansi born?"
+
+        },
+
+        "options": [
+
+          { "mr": "वाराणसी (काशी)", "en": "Varanasi (Kashi)" },
+
+          { "mr": "झाशी", "en": "Jhansi" },
+
+          { "mr": "ग्वाल्हेर", "en": "Gwalior" },
+
+          { "mr": "पुणे", "en": "Pune" }
+
+        ],
+
+        "correctAnswerIndex": 0,
+
+        "explanation": {
+
+          "mr": "राणी लक्ष्मीबाई (मूळ नाव: मणिकर्णिका तांबे / मनू) यांचा जन्म १९ नोव्हेंबर १८२८ (काही नोंदीनुसार १८३५) रोजी वाराणसी (काशी) येथे झाला. त्यांचे वडील मोरोपंत तांबे हे पेशव्यांचे आश्रित होते.",
+
+          "en": "Rani Lakshmibai (born Manikarnika Tambe, affectionately called Manu) was born at Varanasi into a Marathi Karhade Brahmin family. Her father Moropant Tambe was attached to the court of Chimnaji Appa and Baji Rao II."
+
+        }
+
+      },
+
+      {
+
+        "id": 10,
+
+        "question": {
+
+          "mr": "झाशीचा किल्ला ब्रिटिश फौजांनी वेढल्यानंतर राणी लक्ष्मीबाई यांच्याविरुद्ध लढणाऱ्या ब्रिटिश लष्करी अधिकाऱ्याचे नाव काय होते?",
+
+          "en": "Which British military officer led the siege of Jhansi against Rani Lakshmibai in March-April 1858?"
+
+        },
+
+        "options": [
+
+          { "mr": "सर ह्यू रोझ (Sir Hugh Rose)", "en": "Sir Hugh Rose" },
+
+          { "mr": "सर कॉलिन कॅम्पबेल (Sir Colin Campbell)", "en": "Sir Colin Campbell" },
+
+          { "mr": "जनरल हेव्हलॉक (General Havelock)", "en": "General Havelock" },
+
+          { "mr": "कर्नल नील (Colonel Neill)", "en": "Colonel Neill" }
+
+        ],
+
+        "correctAnswerIndex": 0,
+
+        "explanation": {
+
+          "mr": "सर ह्यू रोझ याने सेंट्रल इंडिया फिल्ड फोर्सचे नेतृत्व करत झाशीच्या किल्ल्याला वेढा घातला. राणीच्या मृत्यूनंतर ह्यू रोझने उद्गार काढले होते की, 'येथे निजलेली ही स्त्री बंडखोरांमधील एकमेव पुरुष होती'.",
+
+          "en": "Major-General Sir Hugh Rose commanded the Central India Field Force against Jhansi. After her death, Rose famously remarked that the Rani was 'the bravest and best military leader of the rebels, the only man among the rebels'."
+
+        }
+
+      },
+
+      {
+
+        "id": 11,
+
+        "question": {
+
+          "mr": "बिहारमधील जगदीशपूर येथे वयाच्या ८० व्या वर्षी १८५७ च्या उठावाचे प्रभावी नेतृत्व करणारे जमीनदार कोण होते?",
+
+          "en": "Who was the 80-year-old zamindar of Jagdishpur who led the revolt in Bihar with remarkable guerrilla tactics?"
+
+        },
+
+        "options": [
+
+          { "mr": "कुंवर सिंग (Kunwar Singh)", "en": "Kunwar Singh" },
+
+          { "mr": "अमर सिंग (Amar Singh)", "en": "Amar Singh" },
+
+          { "mr": "हरे कृष्ण सिंग", "en": "Hare Krishna Singh" },
+
+          { "mr": "पीर अली", "en": "Pir Ali" }
+
+        ],
+
+        "correctAnswerIndex": 0,
+
+        "explanation": {
+
+          "mr": "बिहारमधील शाहाबाद (आरा) जिल्ह्यातील जगदीशपूरचे वृद्ध जमीनदार बाबू कुंवर सिंग यांनी ब्रिटिशांविरुद्ध लढा दिला. त्यांनी कॅप्टन ले ग्रँडच्या फौजेचा पराभव केला. त्यांच्या मृत्यूनंतर त्यांचे बंधू अमर सिंग यांनी लढा चालू ठेवला.",
+
+          "en": "Babu Kunwar Singh, the octogenarian Ujjainiya Rajput zamindar of Jagdishpur (Arrah, Bihar), organized fierce guerrilla resistance against British forces and defeated Captain Le Grand before succumbing to bullet wounds in April 1858."
+
+        }
+
+      },
+
+      {
+
+        "id": 12,
+
+        "question": {
+
+          "mr": "फैजाबाद येथे १८५७ च्या उठावाचे नेतृत्व करणारे आणि ब्रिटिशांवर 'जिहाद' पुकारून ₹५०,००० चे बक्षीस लावले गेलेले नेते कोण होते?",
+
+          "en": "Who led the revolt at Faizabad, proclaimed a jihad against the British, and had a bounty of ₹50,000 placed on his head?"
+
+        },
+
+        "options": [
+
+          { "mr": "मौलवी अहमदुल्ला शाह", "en": "Maulvi Ahmadullah Shah" },
+
+          { "mr": "मौलवी लियाकत अली", "en": "Maulvi Liaquat Ali" },
+
+          { "mr": "खान बहादूर खान", "en": "Khan Bahadur Khan" },
+
+          { "mr": "हसरत मोहानी", "en": "Hasrat Mohani" }
+
+        ],
+
+        "correctAnswerIndex": 0,
+
+        "explanation": {
+
+          "mr": "मौलवी अहमदुल्ला शाह (डंका शाह) यांनी फैजाबाद आणि लखनौमध्ये उठावाचे प्रखर नेतृत्व केले. ब्रिटिशांनी त्यांच्यावर ५०,००० रुपयांचे मोठे बक्षीस जाहीर केले होते. जून १८५८ मध्ये पोवायनच्या राजाने विश्वासघाताने त्यांची हत्या केली.",
+
+          "en": "Maulvi Ahmadullah Shah of Faizabad (originally from Madras) was an uncompromising leader of the revolt. The British placed a bounty of ₹50,000 on his head; he was assassinated through treachery by the Raja of Powayan in June 1858."
+
+        }
+
+      },
+
+      {
+
+        "id": 13,
+
+        "question": {
+
+          "mr": "अलाहाबाद आणि बनारस येथे १८५७ च्या उठावाचे नेतृत्व खालीलपैकी कोणाकडे होते?",
+
+          "en": "Who was the primary leader of the uprising at Allahabad and Banaras in 1857?"
+
+        },
+
+        "options": [
+
+          { "mr": "मौलवी लियाकत अली", "en": "Maulvi Liaquat Ali" },
+
+          { "mr": "खान बहादूर खान", "en": "Khan Bahadur Khan" },
+
+          { "mr": "कदम सिंग", "en": "Kadam Singh" },
+
+          { "mr": "देवी सिंग", "en": "Devi Singh" }
+
+        ],
+
+        "correctAnswerIndex": 0,
+
+        "explanation": {
+
+          "mr": "अलाहाबाद येथे स्थानिक शिक्षक मौलवी लियाकत अली यांनी उठावाचे नेतृत्व केले आणि खुसरो बागेतून कारभार चालवला. पुढे कर्नल नील याने अलाहाबादमध्ये क्रूरपणे कत्तल करून हा उठाव चिरडला.",
+
+          "en": "Maulvi Liaquat Ali led the revolt at Allahabad and established headquarters at Khusro Bagh. Colonel James Neill brutally suppressed the uprising with indiscriminate executions."
+
+        }
+
+      },
+
+      {
+
+        "id": 14,
+
+        "question": {
+
+          "mr": "१८५७ च्या उठावाच्या वेळी खान बहादूर खान यांनी कोणत्या शहरात समांतर प्रशासनाची स्थापना करून स्वतःला नवाब घोषित केले होते?",
+
+          "en": "In which region did Khan Bahadur Khan establish a rebel administration and declare himself governor in 1857?"
+
+        },
+
+        "options": [
+
+          { "mr": "बरेली (रोहिलखंड)", "en": "Bareilly (Rohilkhand)" },
+
+          { "mr": "मेरठ", "en": "Meerut" },
+
+          { "mr": "आग्रा", "en": "Agra" },
+
+          { "mr": "झाशी", "en": "Jhansi" }
+
+        ],
+
+        "correctAnswerIndex": 0,
+
+        "explanation": {
+
+          "mr": "रोहिल्ला सरदार हाफिज रहमत खान यांचे नातू खान बहादूर खान यांनी बरेली (रोहिलखंड) येथे उठावाचे नेतृत्व केले आणि ब्रिटिश प्रशासनाला हुसकावून स्वतःचे समांतर शासन स्थापन केले.",
+
+          "en": "Khan Bahadur Khan, grandson of former Rohilla chief Hafiz Rahmat Khan, led the rebel government at Bareilly (Rohilkhand), defying British authorities until his defeat and execution."
+
+        }
+
+      },
+
+      {
+
+        "id": 15,
+
+        "question": {
+
+          "mr": "१८५७ च्या उठावात आसाममध्ये उठावाचे नेतृत्व करून अंतिम बलिदानाचा मार्ग पत्करणारे नेते कोण होते?",
+
+          "en": "Who led the revolt in Assam in 1857 seeking to restore the Ahom dynasty and was subsequently executed?"
+
+        },
+
+        "options": [
+
+          { "mr": "दिवाण मनीराम दत्त (Maniram Dewan)", "en": "Maniram Dewan" },
+
+          { "mr": "गोमधर कोन्वर", "en": "Gomdhar Konwar" },
+
+          { "mr": "कंदर्पेश्वर सिंग", "en": "Kandarpeswar Singha" },
+
+          { "mr": "पियली बारफुकन", "en": "Piyoli Barphukan" }
+
+        ],
+
+        "correctAnswerIndex": 0,
+
+        "explanation": {
+
+          "mr": "आसाममध्ये दिवाण मनीराम दत्त (मनीराम देवान) यांनी अहोम राजघराण्यातील कंदर्पेश्वर सिंग यांना गादीवर बसवण्याचा कट रचला. ब्रिटिशांनी मनीराम देवान व पियली बरुआ यांना पकडून १८५८ मध्ये फाशी दिली.",
+
+          "en": "Maniram Dewan plotted with Ahom prince Kandarpeswar Singha to overthrow British rule in Assam. The conspiracy was uncovered, and Maniram Dewan along with Piyali Baruah was hanged publicly in February 1858."
+
+        }
+
+      },
+
+      {
+
+        "id": 16,
+
+        "question": {
+
+          "mr": "ओरिसातील संबळपूर येथे १८५७ च्या उठावाचे नेतृत्व करणारे क्रांतिकारक कोण होते?",
+
+          "en": "Who was the prominent leader of the 1857 resistance in Sambalpur, Orissa?"
+
+        },
+
+        "options": [
+
+          { "mr": "सुरेंद्र साई (Surendra Sai)", "en": "Surendra Sai" },
+
+          { "mr": "राधाकृष्ण दंडसेना", "en": "Radhakrishna Dandasena" },
+
+          { "mr": "चक्र बिसोई", "en": "Chakra Bisoi" },
+
+          { "mr": "बक्षी जगबंधू", "en": "Bakshi Jagabandhu" }
+
+        ],
+
+        "correctAnswerIndex": 0,
+
+        "explanation": {
+
+          "mr": "संबळपूरचे राजकुमार सुरेंद्र साई यांनी १८५७ च्या उठावात ब्रिटिशांविरुद्ध लढा दिला. त्यांनी तुरुंगातून पळून येऊन १८६२ पर्यंत गनिमी काव्याने लढा सुरू ठेवला; शेवटी १८८४ मध्ये असीरगडच्या तुरुंगात त्यांचा मृत्यू झाला.",
+
+          "en": "Surendra Sai led the insurrection against the British in Sambalpur (Orissa), escaping from Hazaribagh jail and continuing guerrilla warfare until his capture in 1864."
+
+        }
+
+      },
+
+      {
+
+        "id": 17,
+
+        "question": {
+
+          "mr": "१८५७ च्या उठावाच्या वेळी ब्रिटनचे पंतप्रधान कोण होते?",
+
+          "en": "Who was the Prime Minister of Britain during the Revolt of 1857?"
+
+        },
+
+        "options": [
+
+          { "mr": "लॉर्ड पामर्स्टन (Lord Palmerston)", "en": "Lord Palmerston" },
+
+          { "mr": "बेंजामिन डिझरायली", "en": "Benjamin Disraeli" },
+
+          { "mr": "विल्यम ग्लॅडस्टन", "en": "William Gladstone" },
+
+          { "mr": "लॉर्ड डर्बी", "en": "Lord Derby" }
+
+        ],
+
+        "correctAnswerIndex": 0,
+
+        "explanation": {
+
+          "mr": "१८५७ च्या उठावाच्या वेळी लॉर्ड पामर्स्टन (विस्कॉउन्ट पामर्स्टन) हे ब्रिटनचे पंतप्रधान होते (कार्यकाळ: १८५५-१८५८). त्यानंतर १८५८ मध्ये लॉर्ड डर्बी यांच्या काळात भारत सरकार कायदा १८५८ संमत झाला.",
+
+          "en": "Lord Palmerston was the Prime Minister of Great Britain during the outbreak of the Revolt of 1857. Lord Derby took office in February 1858 to oversee the passage of the Government of India Act 1858."
+
+        }
+
+      },
+
+      {
+
+        "id": 18,
+
+        "question": {
+
+          "mr": "१८५७ च्या उठावाच्या वेळी भारताचे गव्हर्नर-जनरल कोण होते?",
+
+          "en": "Who was the Governor-General of India during the Revolt of 1857?"
+
+        },
+
+        "options": [
+
+          { "mr": "लॉर्ड कॅनिंग (Lord Canning)", "en": "Lord Canning" },
+
+          { "mr": "लॉर्ड डलहौसी", "en": "Lord Dalhousie" },
+
+          { "mr": "लॉर्ड हार्डिंग्ज", "en": "Lord Hardinge" },
+
+          { "mr": "लॉर्ड एलनबरो", "en": "Lord Ellenborough" }
+
+        ],
+
+        "correctAnswerIndex": 0,
+
+        "explanation": {
+
+          "mr": "लॉर्ड कॅनिंग हे १८५६ ते १८६२ या काळात भारताचे गव्हर्नर-जनरल होते. उठावानंतर नोव्हेंबर १८५८ मध्ये ते भारताचे पहिले व्हाइसरॉय बनले.",
+
+          "en": "Lord Canning was the Governor-General of India during the Revolt of 1857. Following the suppression of the revolt, he became India's first Viceroy on 1 November 1858."
+
+        }
+
+      },
+
+      {
+
+        "id": 19,
+
+        "question": {
+
+          "mr": "१८५७ च्या उठावाच्या नियोजित प्रसारासाठी कोणत्या दोन प्रतीकात्मक वस्तूंचा वापर खेड्यापाड्यांत गुप्त संदेश म्हणून करण्यात आला?",
+
+          "en": "Which two symbolic items were traditionally circulated from village to village as secret tokens heralding the Revolt of 1857?"
+
+        },
+
+        "options": [
+
+          { "mr": "कमळाचे फूल आणि चपाती (भाकरी)", "en": "Lotus Flower and Chapati (Bread)" },
+
+          { "mr": "तिरंगा आणि तुळशीपत्र", "en": "Tricolor and Tulsi leaves" },
+
+          { "mr": "तलवार आणि कुंकू", "en": "Sword and Kumkum" },
+
+          { "mr": "धनुष्यबाण आणि भाकरी", "en": "Bow-arrow and Bread" }
+
+        ],
+
+        "correctAnswerIndex": 0,
+
+        "explanation": {
+
+          "mr": "उठावाच्या प्रसारासाठी 'कमळाचे फूल' (लष्करी छावण्यांमध्ये एका सैनिकाकडून दुसऱ्याकडे) आणि 'चपाती/भाकरी' (एका गावातील चौकिदाराकडून दुसऱ्या गावाकडे) ही गुप्त प्रतीके म्हणून वापरली गेली.",
+
+          "en": "Chapatis were passed rapidly from village watchmen to watchmen, while red lotus flowers were circulated among military cantonments as silent symbols of common cause."
+
+        }
+
+      },
+
+      {
+
+        "id": 20,
+
+        "question": {
+
+          "mr": "१८५७ च्या उठावात कानपूर येथे बिबघर हत्याकांड आणि सतीचौरा घाट प्रकरणाचा सूड घेण्यासाठी भारतीयांवर अमानुष अत्याचार करणारा क्रूर ब्रिटिश लष्करी अधिकारी कोण होता?",
+
+          "en": "Which ruthless British officer became notorious for barbaric retributions and summary executions at Banaras and Allahabad in 1857?"
+
+        },
+
+        "options": [
+
+          { "mr": "कर्नल जेम्स नील (Colonel James Neill)", "en": "Colonel James Neill" },
+
+          { "mr": "सर कॉलिन कॅम्पबेल", "en": "Sir Colin Campbell" },
+
+          { "mr": "मेजर विल्यम हॉडसन", "en": "Major William Hodson" },
+
+          { "mr": "जनरल जॉन निकोल्सन", "en": "General John Nicholson" }
+
+        ],
+
+        "correctAnswerIndex": 0,
+
+        "explanation": {
+
+          "mr": "मद्रास फ्युसिलियर्सचा कर्नल जेम्स नील याने बनारस व अलाहाबाद येथे गावे जाळून हजारो निष्पाप भारतीयांना झाडांवर फाशी दिली. पुढे लखनौच्या वेढ्यादरम्यान सप्टेंबर १८५७ मध्ये तो मारला गेला.",
+
+          "en": "Colonel James Neill of the Madras Fusiliers perpetrated indiscriminate slaughter and mass hangings across Banaras, Allahabad, and Kanpur before being killed in action at Lucknow in September 1857."
+
+        }
+
+      },
+
+      {
+
+        "id": 21,
+
+        "question": {
+
+          "mr": "सप्टेंबर १८५७ मध्ये दिल्ली जिंकताना काश्मिरी गेट उडवून देणाऱ्या ब्रिटिश फौजांचे नेतृत्व करताना कोणता प्रमुख ब्रिटिश सेनापती मारला गेला?",
+
+          "en": "Which celebrated British general was mortally wounded during the assault on the Kashmiri Gate while recapturing Delhi in September 1857?"
+
+        },
+
+        "options": [
+
+          { "mr": "जनरल जॉन निकोल्सन (General John Nicholson)", "en": "General John Nicholson" },
+
+          { "mr": "सर हेन्री लॉरेन्स", "en": "Sir Henry Lawrence" },
+
+          { "mr": "सर ह्यू व्हीलर", "en": "Sir Hugh Wheeler" },
+
+          { "mr": "जनरल अन्सोन", "en": "General Anson" }
+
+        ],
+
+        "correctAnswerIndex": 0,
+
+        "explanation": {
+
+          "mr": "ब्रिगेडिअर-जनरल जॉन निकोल्सन याने १४ सप्टेंबर १८५७ रोजी काश्मिरी गेट तोडून दिल्लीत प्रवेश केला. लढाईत तो गंभीर जखमी झाला आणि २३ सप्टेंबर १८५७ रोजी त्याचा मृत्यू झाला.",
+
+          "en": "Brigadier-General John Nicholson led the main assault on Delhi through the stormed Kashmiri Gate. He was shot in the chest on 14 September and died nine days later on 23 September 1857."
+
+        }
+
+      },
+
+      {
+
+        "id": 22,
+
+        "question": {
+
+          "mr": "लखनौ येथील रेसिडेन्सीचे रक्षण करताना जुलै १८५७ मध्ये तोफेचा गोळा लागून मरण पावलेले अवधचे ब्रिटिश मुख्य आयुक्त (Chief Commissioner) कोण होते?",
+
+          "en": "Which British Chief Commissioner of Awadh was mortally wounded by an artillery shell inside the Lucknow Residency in July 1857?"
+
+        },
+
+        "options": [
+
+          { "mr": "सर हेन्री लॉरेन्स (Sir Henry Lawrence)", "en": "Sir Henry Lawrence" },
+
+          { "mr": "सर जॉन लॉरेन्स", "en": "Sir John Lawrence" },
+
+          { "mr": "सर जेम्स आऊट्रम", "en": "Sir James Outram" },
+
+          { "mr": "कर्नल इनग्लिस", "en": "Colonel Inglis" }
+
+        ],
+
+        "correctAnswerIndex": 0,
+
+        "explanation": {
+
+          "mr": "२ जुलै १८५७ रोजी लखनौ रेसिडेन्सीवर बंडखोरांनी डागलेला तोफेचा गोळा लागल्याने सर हेन्री लॉरेन्स गंभीर जखमी झाले आणि ४ जुलै १८५७ रोजी त्यांचा मृत्यू झाला.",
+
+          "en": "Sir Henry Lawrence, Chief Commissioner of Oudh, was struck by an exploding shell inside the Residency on 2 July 1857 and died on 4 July 1857."
+
+        }
+
+      },
+
+      {
+
+        "id": 23,
+
+        "question": {
+
+          "mr": "१८५७ च्या उठावाला 'भारताचे पहिले स्वातंत्र्यसमर' (The First War of Indian Independence) असे कोणी संबोधले?",
+
+          "en": "Who described the 1857 Revolt as 'The Indian War of Independence' in his seminal book published in 1909?"
+
+        },
+
+        "options": [
+
+          { "mr": "विनायक दामोदर सावरकर", "en": "Vinayak Damodar Savarkar" },
+
+          { "mr": "बाळ गंगाधर टिळक", "en": "Bal Gangadhar Tilak" },
+
+          { "mr": "आर. सी. मुजुमदार", "en": "R. C. Majumdar" },
+
+          { "mr": "एस. एन. सेन", "en": "S. N. Sen" }
+
+        ],
+
+        "correctAnswerIndex": 0,
+
+        "explanation": {
+
+          "mr": "स्वातंत्र्यवीर वि. दा. सावरकर यांनी लंडनमध्ये असताना १९०९ मध्ये '१८५७ चे स्वातंत्र्यसमर' (The Indian War of Independence 1857) हा ग्रंथ लिहिला आणि ब्रिटिशांचा 'केवळ शिपायांचे बंड' हा दावा खोडून काढला.",
+
+          "en": "Vinayak Damodar Savarkar characterized the uprising as 'The First War of Indian Independence' in his 1909 book to counter the British narrative of a 'mere sepoy mutiny'."
+
+        }
+
+      },
+
+      {
+
+        "id": 24,
+
+        "question": {
+
+          "mr": "\"१८५७ चा उठाव हा ना पहिला, ना राष्ट्रीय, ना स्वातंत्र्य लढा होता\" (Neither first, nor national, nor war of independence) असे मत कोणत्या इतिहासकाराने मांडले?",
+
+          "en": "\"The so-called First National War of Independence of 1857 is neither First, nor National, nor War of Independence.\" Who made this famous assessment?"
+
+        },
+
+        "options": [
+
+          { "mr": "डॉ. आर. सी. मुजुमदार (Dr. R. C. Majumdar)", "en": "Dr. R. C. Majumdar" },
+
+          { "mr": "डॉ. एस. एन. सेन", "en": "Dr. S. N. Sen" },
+
+          { "mr": "सर जॉन सीले", "en": "Sir John Seeley" },
+
+          { "mr": "ताराचंद", "en": "Tarachand" }
+
+        ],
+
+        "correctAnswerIndex": 0,
+
+        "explanation": {
+
+          "mr": "इतिहासकार डॉ. आर. सी. मुजुमदार यांनी त्यांच्या 'The Sepoy Mutiny and the Rebellion of 1857' या ग्रंथात निष्कर्ष काढला की हा लढा आधुनिक राष्ट्रीय भावनेने प्रेरित नव्हता, तर स्थानिक सरंजामदारांच्या स्वार्थातून उद्भवला होता.",
+
+          "en": "Historian Dr. R. C. Majumdar concluded that the revolt lacked an all-India character and national consciousness, calling it 'neither first, nor national, nor a war of independence'."
+
+        }
+
+      },
+
+      {
+
+        "id": 25,
+
+        "question": {
+
+          "mr": "भारत सरकारने १८५७ च्या उठावाच्या शताब्दी वर्षात (१९५७) प्रकाशित केलेल्या अधिकृत ग्रंथाचे (Eighteen Fifty-Seven) लेखक कोण होते?",
+
+          "en": "Who authored the official centenary history titled 'Eighteen Fifty-Seven', commissioned by the Government of India and published in 1957?"
+
+        },
+
+        "options": [
+
+          { "mr": "डॉ. सुरेंद्रनाथ सेन (Dr. S. N. Sen)", "en": "Dr. S. N. Sen" },
+
+          { "mr": "डॉ. आर. सी. मुजुमदार", "en": "Dr. R. C. Majumdar" },
+
+          { "mr": "मौलाना अबुल कलाम आझाद", "en": "Maulana Abul Kalam Azad" },
+
+          { "mr": "पंडित जवाहरलाल नेहरू", "en": "Pandit Jawaharlal Nehru" }
+
+        ],
+
+        "correctAnswerIndex": 0,
+
+        "explanation": {
+
+          "mr": "भारत सरकारच्या शिक्षण मंत्रालयाने नेमलेले अधिकृत इतिहासकार डॉ. एस. एन. सेन यांनी 'Eighteen Fifty-Seven' हा ग्रंथ लिहिला. त्यांनी नमूद केले की, 'धर्माच्या रक्षणासाठी सुरू झालेला हा लढा शेवटी स्वातंत्र्याच्या लढ्यात रूपांतरित झाला.'",
+
+          "en": "Dr. Surendra Nath Sen authored the official history 'Eighteen Fifty-Seven' sponsored by the Ministry of Education, noting that 'what began as a fight for religion ended as a war for independence'."
+
+        }
+
+      }
+
+    ]
+
+  }

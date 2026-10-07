@@ -1,0 +1,464 @@
+{
+  "testId": "p-hist-02-t6",
+  "title": {
+    "mr": "भारतातील ब्रिटिश सत्तेचा विस्तार व प्रशासन — सराव 6",
+    "en": "British Rule in India — Practice Test 6"
+  },
+  "durationMinutes": 20,
+  "marksPerQuestion": 1,
+  "negativeMarking": 0.25,
+  "totalMarks": 25,
+  "difficulty": "मध्यम ते काठिण्य",
+  "questions": [
+    {
+      "id": 1,
+      "question": {
+        "mr": "१७७३ च्या नियामक कायद्यानुसार (Regulating Act 1773) मुंबई आणि मद्रास या दुय्यम इलाख्यांच्या अधिकारांवर खालीलपैकी कोणता महत्त्वाचा निर्बंध घालण्यात आला?",
+        "en": "Under the Regulating Act of 1773, which crucial restriction was placed on the subordinate Presidencies of Bombay and Madras?"
+      },
+      "options": [
+        { "mr": "बंगालच्या गव्हर्नर-जनरल व कौन्सिलच्या पूर्वपरवानगीशिवाय देशी सत्तांशी युद्ध पुकारण्यास किंवा शांतता तह करण्यास बंदी घालण्यात आली.", "en": "They were barred from declaring war or negotiating peace treaties with native Indian rulers without the prior sanction of the Governor-General and Council of Bengal." },
+        { "mr": "त्यांना स्वतःचे सैन्य आणि आरमार बाळगण्यास पूर्णपणे बंदी घालण्यात आली.", "en": "They were completely prohibited from maintaining provincial military garrisons and navies." },
+        { "mr": "त्यांच्या ताब्यातील सर्व महसूल थेट लंडनच्या तिजोरीत जमा करण्याची सक्ती करण्यात आली.", "en": "They were compelled to remit their territorial revenues directly into the British exchequer." },
+        { "mr": "त्यांच्या प्रांतांमधील सर्व कायदे लंडनच्या महापौर न्यायालयामार्फत मंजूर करणे बंधनकारक झाले.", "en": "All their provincial statutes were required to be ratified by the Mayor's Court in London." }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१७७३ च्या कायद्याने मद्रास व मुंबईच्या गव्हर्नरांना बंगालच्या गव्हर्नर-जनरलच्या नियंत्रणाखाली आणले. अत्यंत तातडीची परिस्थिती वगळता बंगाल कौन्सिलच्या पूर्वसंमतीशिवाय त्यांना देशी संस्थानांशी युद्ध सुरू करणे किंवा शांतता करार करण्यास सक्त मनाई करण्यात आली. मात्र संवादातील अंतरामुळे सुरुवातीला मुंबई व मद्रासने अनेकदा याचे उल्लंघन केले (उदा. १७७५ चा सुरतचा तह).",
+        "en": "The Regulating Act of 1773 subordinated the Presidencies of Madras and Bombay to the Governor-General of Bengal in foreign policy. Except in cases of sudden emergency, neither presidency could commence hostilities or negotiate treaties with native powers without prior approval from the Governor-General and Council at Fort William."
+      }
+    },
+    {
+      "id": 2,
+      "question": {
+        "mr": "१७८६ मध्ये ब्रिटिश संसदेत वॉरन हेस्टिंग्सवर महाभियोग (Impeachment) चालवताना त्याच्यावर खालीलपैकी कोणत्या आरोपांचा समावेश होता?\nअ. रोहिल्ला युद्धात कंपनीच्या सैन्याचा पैशांसाठी भाड्याने केलेला गैरवापर\nब. बनारसचा राजा चैतसिंग याच्यावर लादलेला अवास्तव युद्धकर आणि त्याची केलेली बेकायदेशीर अटक\nक. अवधच्या बेगमांचा खजिना लुटण्यासाठी ब्रिटिश सैन्याचा केलेला वापर\nड. नंदकुमार याच्यावर चालवलेला संशयास्पद खटला व फाशी\nयोग्य पर्याय निवडा:",
+        "en": "When Warren Hastings was impeached by the British Parliament between 1788 and 1795, which of the following charges were leveled against him?\na. Mercenary misuse of Company troops in the Rohilla War for cash subsidies\nb. Extortionate wartime levies and unlawful arrest of Raja Chait Singh of Banaras\nc. Deployment of British troops to plunder the ancestral treasury of the Begums of Awadh\nd. Conspiring in the controversial trial and execution of Maharaja Nandkumar\nChoose the correct option:"
+      },
+      "options": [
+        { "mr": "फक्त अ, ब आणि क", "en": "Only a, b, and c" },
+        { "mr": "फक्त ब आणि क", "en": "Only b and c" },
+        { "mr": "फक्त अ आणि ड", "en": "Only a and d" },
+        { "mr": "अ, ब, क आणि ड सर्व", "en": "All a, b, c, and d" }
+      ],
+      "correctAnswerIndex": 3,
+      "explanation": {
+        "mr": "एडमंड बर्क, चार्ल्स जेम्स फॉक्स आणि रिचर्ड शेरिडन यांनी वॉरन हेस्टिंग्सवर रोहिल्ला युद्ध (१७७४), राजा चैतसिंग प्रकरण (१७८१), फैजाबाद येथील अवधच्या बेगमांची लूट (१७८१) आणि महाराजा नंदकुमारची न्यायालयीन हत्या (१७७५) या सर्व प्रकरणांवरून १७८८ ते १७९५ दरम्यान ब्रिटिश संसदेत गाजलेला महाभियोगाचा खटला चालवला. प्रदीर्घ सुनावणीनंतर १७९५ मध्ये त्याला सर्व आरोपांतून निर्दोष सोडण्यात आले.",
+        "en": "All four charges formed the core indictment in Warren Hastings' celebrated impeachment led by Edmund Burke, Charles James Fox, and Richard Sheridan in the House of Lords. Although acquitted in 1795 after a seven-year trial, these proceedings thoroughly laid bare colonial extortion and administrative abuses in 18th-century Bengal."
+      }
+    },
+    {
+      "id": 3,
+      "question": {
+        "mr": "लॉर्ड कॉर्नवॉलिसने १७९३ मध्ये सुरू केलेल्या पोलीस सुधारणांनुसार ग्रामीण भागात कायदा व सुव्यवस्था राखण्यासाठी कोणती व्यवस्था करण्यात आली?",
+        "en": "Under the police administration reforms enacted by Lord Cornwallis in 1793, what structural mechanism was established to preserve rural law and order?"
+      },
+      "options": [
+        { "mr": "जिल्ह्याचे सुमारे २० ते ३० चौरस मैलांच्या ठाण्यांमध्ये (Thanas) विभाजन करण्यात आले आणि प्रत्येक ठाण्यावर एका भारतीय 'दारोगा'ची नियुक्ती करण्यात आली.", "en": "Districts were divided into jurisdictions of roughly 20 to 30 square miles called 'Thanas', each headed by an Indian 'Daroga'." },
+        { "mr": "पारंपरिक जमीनदारांच्या खाजगी सैन्याला कायदेशीर पोलीस अधिकार बहाल करण्यात आले.", "en": "Hereditary private militias of rural zamindars were conferred official police powers." },
+        { "mr": "प्रत्येक खेड्यात एका युरोपियन सार्जंटची थेट ठाणेदार म्हणून नेमणूक केली गेली.", "en": "A European sergeant was stationed in every village as chief police officer." },
+        { "mr": "पोलीस खात्याचे संपूर्ण नियंत्रण थेट प्रांतीय उच्च न्यायालयाच्या न्यायाधीशांकडे सोपवले.", "en": "Total control over the constabulary was placed under provincial High Court judges." }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "कॉर्नवॉलिस कोड (१७९३) ने जमीनदारांचे सर्व पोलीस अधिकार पूर्णपणे रद्द केले. जिल्ह्यांची विभागणी लहान ठाण्यांमध्ये केली गेली, ज्याचे नियंत्रण जिल्हा न्यायाधीशाच्या हाताखाली एका भारतीय 'दारोगा'कडे सोपवले गेले. ग्रामीण चौकिदारांना (Chaukidars) या दारोगाच्या देखरेखीखाली काम करण्याचे आदेश दिले गेले.",
+        "en": "Under Regulation XXII of 1793, Cornwallis stripped rural zamindars of all policing obligations and divided districts into police circles ('thanas') of approximately 20 to 30 square miles, each placed under a state-appointed native police officer designated as the 'Daroga', answerable to the District Magistrate."
+      }
+    },
+    {
+      "id": 4,
+      "question": {
+        "mr": "१७९९ मध्ये चौथ्या इंग्रज-म्हैसूर युद्धात टिपू सुलतानचा पराभव झाल्यानंतर ब्रिटिशांनी त्याच्या साम्राज्याची फाळणी करताना खालीलपैकी कोणता प्रदेश ईस्ट इंडिया कंपनीच्या प्रत्यक्ष ताब्यात घेतला?",
+        "en": "Following the fall of Tipu Sultan in the Fourth Anglo-Mysore War (1799), which territorial tract did the British East India Company acquire under direct annexations?"
+      },
+      "options": [
+        { "mr": "कनारा, कोईम्बतूर, वायनाड आणि धरपुरम", "en": "Canara, Coimbatore, Wynad, and Dharapuram" },
+        { "mr": "गुर्रमकोंडा आणि चित्तूर", "en": "Gurramkonda and Chittoor" },
+        { "mr": "गुत्ती आणि सोलापूर", "en": "Gooty and Solapur" },
+        { "mr": "कुर्ग आणि म्हैसूर शहर", "en": "Coorg and Mysore City" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "टिपूच्या मृत्यूनंतर लॉर्ड वेलस्लीने म्हैसूरची फाळणी केली. ब्रिटिशांनी पश्चिम किनारपट्टीचा कनारा (दक्षिण व उत्तर कन्नड), कोईम्बतूर, वायनाड आणि श्रीरंगपट्टणम बेट थेट कंपनीच्या ताब्यात घेतले, ज्यामुळे ब्रिटिश मद्रास आणि मुंबई या दोन्ही इलाख्यांचा संपर्क जोडला गेला. हैदराबादच्या निजामाला गुत्ती व गुर्रमकोंडाचा भाग देण्यात आला.",
+        "en": "Following Tipu's death on 4 May 1799, the partition treaty gave the British the strategic coastal district of Canara (linking Malabar with Goa), Wynad, Coimbatore, and Dharapuram, totally cutting off truncated Mysore from all sea access."
+      }
+    },
+    {
+      "id": 5,
+      "question": {
+        "mr": "१८०१ मध्ये लॉर्ड वेलस्लीने मद्रास प्रांतातील कर्नाटकच्या नवाबावर (Nawab of Carnatic) कोणता आरोप ठेवून त्याचे संपूर्ण राज्य ब्रिटिश साम्राज्यात विलीन केले?",
+        "en": "In 1801, on what pretext did Lord Wellesley annex the entire principality of the Nawab of Carnatic into the British Madras Presidency?"
+      },
+      "options": [
+        { "mr": "नवाबाने टिपू सुलतानशी ब्रिटिशांविरुद्ध गुप्त पत्रव्यवहार केल्याचा सापडलेला पुरावा", "en": "Documentary evidence alleging that the Nawab conducted treacherous correspondence with Tipu Sultan against the British" },
+        { "mr": "नवाबाने फ्रेंचांना पाँडिचेरी बंदराचा ताबा बेकायदेशीरपणे देणे", "en": "The Nawab illegally surrendering Pondicherry port to the French fleet" },
+        { "mr": "नवाबाला कोणताही कायदेशीर पुरुष वारस नसणे", "en": "The absence of any legitimate male heir to the Arcot throne" },
+        { "mr": "नवाबाने ब्रिटिशांच्या सैन्यावर अचानक चढवलेला हल्ला", "en": "The Nawab mounting an unprovoked surprise assault on British troops" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "श्रीरंगपट्टणम जिंकल्यानंतर ब्रिटिशांना अशी कागदपत्रे सापडल्याचा दावा करण्यात आला की अर्काटचा नवाब उमदत-उल-उमरा आणि त्याचे वडील टिपू सुलतानशी गुप्तपणे पत्रव्यवहार करत होते. १८०१ मध्ये नवाबाच्या मृत्यूनंतर वेलस्लीने त्याच्या वारसावर दबाव आणून २६ जुलै १८०१ रोजी कर्नाटकचे संपूर्ण राज्य विलीन केले आणि नवाबाला केवळ पेन्शनधारक बनवले.",
+        "en": "Following the fall of Srirangapatnam, Wellesley alleged that Nawab Umdat-ul-Umra and his father had maintained treasonous correspondence with Tipu Sultan. Upon the Nawab's death in 1801, Wellesley coerced his successor, Azim-ud-Daula, to cede the entire civil and military administration of Carnatic, creating the Madras Presidency."
+      }
+    },
+    {
+      "id": 6,
+      "question": {
+        "mr": "१८०३ मध्ये दुसऱ्या इंग्रज-मराठा युद्धादरम्यान आर्थर वेलस्लीने दौलतराव शिंदे आणि रघूजी भोसले यांच्या संयुक्त सेनेचा पराभव केलेली 'असईची लढाई' (Battle of Assaye) महाराष्ट्रातील कोणत्या आधुनिक जिल्ह्यात झाली होती?",
+        "en": "In which present-day district of Maharashtra was the decisive Battle of Assaye fought on 23 September 1803, where Major-General Arthur Wellesley defeated the joint forces of Scindia and Bhonsle?"
+      },
+      "options": [
+        { "mr": "जालना", "en": "Jalna" },
+        { "mr": "छत्रपती संभाजीनगर (औरंगाबाद)", "en": "Chhatrapati Sambhajinagar (Aurangabad)" },
+        { "mr": "अहमदनगर", "en": "Ahmednagar" },
+        { "mr": "बुलढाणा", "en": "Buldhana" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "२३ सप्टेंबर १८०३ रोजी झालेली 'असईची लढाई' ही आर्थर वेलस्लीच्या (नंतरचा ड्यूक ऑफ वेलिंग्टन) लष्करी कारकिर्दीतील अत्यंत खडतर आणि निर्णायक लढाई मानली जाते. असई हे गाव सध्याच्या जालना जिल्ह्यातील भोकरदन तालुक्यात येते. या लढाईत मराठ्यांच्या तोफखान्याने ब्रिटिशांचे मोठे नुकसान केले होते.",
+        "en": "The Battle of Assaye (23 September 1803) took place near the village of Assaye in the Bhokardan taluka of present-day Jalna district, Maharashtra. It was considered by Arthur Wellesley as the bloodiest and hardest-fought victory of his entire military career."
+      }
+    },
+    {
+      "id": 7,
+      "question": {
+        "mr": "दुसऱ्या इंग्रज-मराठा युद्धातील तहांच्या संदर्भात खालील योग्य जोड्या जुळवा:\n\nस्तंभ अ (तह)\n१. देवगावचा तह (Treaty of Deogaon - १८०३)\n२. सुरजी-अंजनगावचा तह (Treaty of Surji-Anjangaon - १८०३)\n३. राजघाटचा तह (Treaty of Rajghat - १८०५/०६)\n\nस्तंभ ब (मराठा सत्ताधीश)\nअ. दौलतराव शिंदे\nब. यशवंतराव होळकर\nक. रघूजी भोसले दुसरे\n\nयोग्य पर्याय निवडा:",
+        "en": "Match the treaties of the Second Anglo-Maratha War with the respective Maratha signatories:\n\nColumn A (Treaty)\n1. Treaty of Deogaon (1803)\n2. Treaty of Surji-Anjangaon (1803)\n3. Treaty of Rajghat (1805/06)\n\nColumn B (Signatory)\na. Daulat Rao Scindia\nb. Yashwantrao Holkar\nc. Raghuji Bhonsle II\n\nChoose the correct option:"
+      },
+      "options": [
+        { "mr": "१-क, २-अ, ३-ब", "en": "1-c, 2-a, 3-b" },
+        { "mr": "१-अ, २-क, ३-ब", "en": "1-a, 2-c, 3-b" },
+        { "mr": "१-क, २-ब, ३-अ", "en": "1-c, 2-b, 3-a" },
+        { "mr": "१-ब, २-अ, ३-क", "en": "1-b, 2-a, 3-c" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "योग्य जोड्या:\n१. देवगावचा तह (१७ डिसेंबर १८०३): रघूजी भोसले दुसरे (कटक व बालासोर ब्रिटिशांना दिले) ➔ १-क\n२. सुरजी-अंजनगावचा तह (३० डिसेंबर १८०३): दौलतराव शिंदे (गंगा-यमुना दोआब, दिल्ली, आग्रा ब्रिटिशांना दिले) ➔ २-अ\n३. राजघाटचा तह (जानेवारी १८०६): यशवंतराव होळकर (सर जॉर्ज बार्लो यांच्याशी करार) ➔ ३-ब.",
+        "en": "Correct pairings:\n1. Treaty of Deogaon (17 Dec 1803): Raghuji Bhonsle II (ceded Cuttack and Balasore) ➔ 1-c\n2. Treaty of Surji-Anjangaon (30 Dec 1803): Daulat Rao Scindia (ceded the Upper Doab, Delhi, and Agra) ➔ 2-a\n3. Treaty of Rajghat (Jan 1806): Yashwantrao Holkar (restoring territories north of Chambal) ➔ 3-b."
+      }
+    },
+    {
+      "id": 8,
+      "question": {
+        "mr": "१८०५ मध्ये लॉर्ड वेलस्लीला इंग्लंडला परत बोलावण्यामागे लंडनच्या कोर्ट ऑफ डायरेक्टर्सचे कोणते मुख्य कारण होते?",
+        "en": "What was the primary reason that prompted the Court of Directors in London to recall Governor-General Lord Wellesley in 1805?"
+      },
+      "options": [
+        { "mr": "सततच्या युद्धांमुळे कंपनीवर प्रचंड आर्थिक कर्जाचा डोंगर साचणे आणि भरतपूरच्या किल्ल्यावरील अयशस्वी हल्ले", "en": "Mounting financial debts incurred through unending wars and military reversals at the siege of Bharatpur" },
+        { "mr": "वेलस्लीने भारतीय संस्थानांशी मैत्री करून ब्रिटिश सैन्याची कपात करणे", "en": "Wellesley reducing troop garrisons and appeasing native rulers" },
+        { "mr": "ब्रिटिश संसदेने भारतातून व्यापार पूर्णपणे बंद करण्याचा घेतलेला निर्णय", "en": "Parliament's directive to wind down British trade in India completely" },
+        { "mr": "त्याने भारतीय भाषांमध्ये कायदे तयार करण्यास नकार देणे", "en": "His refusal to publish colonial statutes in Indian languages" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "लॉर्ड वेलस्लीच्या आक्रमक विस्तारवादी धोरणांमुळे कंपनीचे कर्ज १० दशलक्ष पाउंडवरून थेट ३१ दशलक्ष पाउंडवर पोहोचले. त्यातच १८०५ मध्ये लॉर्ड लेक याने भरतपूरच्या मातीच्या किल्ल्यावर सलग चार अयशस्वी हल्ले केले, ज्यात ब्रिटिशांचे ३,००० हून अधिक सैनिक मारले गेले. या वित्तीय व लष्करी संकटाने भयभीत झालेल्या संचालक मंडळाने वेलस्लीला तत्काळ माघारी बोलावले.",
+        "en": "Wellesley's relentless military campaigns escalated the Company's public debt from £10 million in 1798 to £31 million by 1805. Furthermore, General Lake suffered unprecedented casualties in four failed assaults to capture the mud fortress of Bharatpur in early 1805, prompting the Directors to recall Wellesley."
+      }
+    },
+    {
+      "id": 9,
+      "question": {
+        "mr": "१३ जून १८१७ रोजी ब्रिटिश रेसिडेंट माउंटस्टुअर्ट एल्फिन्स्टन याने शनिवारवाड्याला वेढा घालून दुसऱ्या बाजीराव पेशव्याकडून कोणत्या अपमानास्पद तहावर स्वाक्षरी करवून घेतली?",
+        "en": "On 13 June 1817, British Resident Mountstuart Elphinstone surrounded the Shaniwar Wada and forced Peshwa Baji Rao II to sign which humiliating treaty?"
+      },
+      "options": [
+        { "mr": "पुण्याचा तह (Treaty of Poona)", "en": "Treaty of Poona" },
+        { "mr": "वसईचा तह (Treaty of Bassein)", "en": "Treaty of Bassein" },
+        { "mr": "पुरंदरचा तह (Treaty of Purandar)", "en": "Treaty of Purandar" },
+        { "mr": "वडगावचा तह (Treaty of Wadgaon)", "en": "Treaty of Wadgaon" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "गायकवाडांचे दूत गंगाधर शास्त्री यांच्या हत्येनंतर त्र्यंबकजी डेंगळे यांच्या अटकेवरून वाद पेटला. एल्फिन्स्टनने पुण्याला वेढा देऊन १३ जून १८१७ रोजी दुसऱ्या बाजीरावाकडून 'पुण्याचा तह' करवून घेतला. या तहानुसार पेशव्यांनी मराठा महासंघाचे (Maratha Confederacy) प्रमुखपद कायमचे सोडले, गायकवाडांवरील हक्क नाकारले आणि ब्रिटिशांना मोठा महसुली मुलूख दिला.",
+        "en": "Following the murder of Gangadhar Shastri, Mountstuart Elphinstone forced Peshwa Baji Rao II to conclude the Treaty of Poona on 13 June 1817. Under this pact, the Peshwa formally renounced the supreme headship of the Maratha Confederacy, severed diplomatic ties with all other Indian rulers, and surrendered territory yielding ₹34 lakhs annually."
+      }
+    },
+    {
+      "id": 10,
+      "question": {
+        "mr": "तिसऱ्या इंग्रज-मराठा युद्धातील (१८१७-१८१८) शेवटची मोठी लढाई कोणती होती, ज्या लढाईत पेशव्यांचे निष्ठावंत सेनापती बापू गोखले धारातीर्थी पडले?",
+        "en": "Which major battle of the Third Anglo-Maratha War (1817–1818) saw the heroic death of the Peshwa's loyal commander-in-chief, Bapu Gokhale?"
+      },
+      "options": [
+        { "mr": "आष्टीची लढाई (Battle of Ashti)", "en": "Battle of Ashti" },
+        { "mr": "खडकीची लढाई (Battle of Khadki)", "en": "Battle of Khadki" },
+        { "mr": "कोरेगावची लढाई (Battle of Koregaon)", "en": "Battle of Koregaon" },
+        { "mr": "महिदपूरची लढाई (Battle of Mahidpur)", "en": "Battle of Mahidpur" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१९ फेब्रुवारी १८१८ रोजी सोलापूर जिल्ह्यातील आष्टी येथे जनरल स्मिथच्या ब्रिटिश सैन्याविरुद्ध लढताना मराठ्यांचे सेनापती बापू गोखले धारातीर्थी पडले. या लढाईनंतर दुसऱ्या बाजीरावाचे लष्करी बळ पूर्णपणे संपले आणि ब्रिटिशांनी छत्रपती प्रतापसिंह व त्यांच्या कुटुंबीयांना आपल्या ताब्यात घेतले.",
+        "en": "On 19 February 1818, the Battle of Ashti (in present-day Solapur district) took place between General Smith's cavalry and the Maratha rearguard. General Bapu Gokhale was killed in action defending the fleeing Peshwa, effectively shattering the Maratha military capability."
+      }
+    },
+    {
+      "id": 11,
+      "question": {
+        "mr": "१८१८ मध्ये पेशवाई संपुष्टात आल्यानंतर ब्रिटिशांनी दुसऱ्या बाजीराव पेशव्याला कोणत्या ठिकाणी वार्षिक ₹८ लाखांच्या पेन्शनवर नजरकैदेत ठेवले?",
+        "en": "Following the extinction of the Peshwaship in June 1818, to which location was deposed Peshwa Baji Rao II banished on an annual pension of ₹8 lakhs?"
+      },
+      "options": [
+        { "mr": "बिटहूर (कानपूरजवळ, उत्तर प्रदेश)", "en": "Bithoor (near Kanpur, Uttar Pradesh)" },
+        { "mr": "वाराणसी", "en": "Varanasi" },
+        { "mr": "अलाहाबाद", "en": "Allahabad" },
+        { "mr": "ग्वाल्हेर", "en": "Gwalior" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "३ जून १८१८ रोजी दुसऱ्या बाजीरावाने सर जॉन माल्कमकडे शरणागती पत्करली. ब्रिटिशांनी पेशवेपद कायमचे रद्द केले आणि बाजीरावाला महाराष्ट्रातून हद्दपार करून कानपूरजवळील 'बिटहूर' येथे वार्षिक ₹८ लाख निवृत्तिवेतनावर नजरकैदेत ठेवले, जिथे त्याचा १८५१ मध्ये मृत्यू झाला.",
+        "en": "On 3 June 1818, Peshwa Baji Rao II surrendered to Sir John Malcolm. Lord Hastings permanently abolished the office of the Peshwa and exiled Baji Rao II to Bithoor on the banks of the Ganga near Kanpur with an annual pension of ₹8 lakhs."
+      }
+    },
+    {
+      "id": 12,
+      "question": {
+        "mr": "१८२३ मध्ये कार्यवाहक गव्हर्नर-जनरल जॉन ॲडम याने लागू केलेल्या 'प्रेस लायसन्सिंग नियमावली'विरुद्ध (Licensing Regulations 1823) निषेध म्हणून कोणत्या भारतीय विचारवंताने आपले प्रसिद्ध वृत्तपत्र बंद केले?",
+        "en": "In protest against the repressive Licensing Regulations promulgated by Acting Governor-General John Adam in 1823, which Indian intellectual ceased publication of his famous Persian journal?"
+      },
+      "options": [
+        { "mr": "राजा राममोहन रॉय (मिरात-उल-अखबार)", "en": "Raja Ram Mohan Roy (Mirat-ul-Akhbar)" },
+        { "mr": "बाळशास्त्री जांभेकर (दर्पण)", "en": "Balshastri Jambhekar (Darpan)" },
+        { "mr": "द्वारकानाथ टागोर (बंगदूत)", "en": "Dwarkanath Tagore (Bangaduta)" },
+        { "mr": "ईश्वरचंद्र विद्यासागर (सोमप्रकाश)", "en": "Ishwar Chandra Vidyasagar (Somprakash)" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "जॉन ॲडमच्या १८२३ च्या नियमानुसार छापखाना चालवण्यासाठी सरकारकडून आगाऊ परवाना घेणे अनिवार्य करण्यात आले. या दडपशाहीचा निषेध म्हणून राजा राममोहन रॉय यांनी आपले प्रसिद्ध फारसी साप्ताहिक 'मिरात-उल-अखबार' बंद केले आणि सर्वोच्च न्यायालयात ऐतिहासिक याचिका दाखल केली.",
+        "en": "John Adam's Licensing Regulations of 1823 mandated prior executive licensing for all printing presses. In principled protest against this assault on free speech, Raja Ram Mohan Roy shut down his celebrated Persian weekly 'Mirat-ul-Akhbar' and submitted an eloquent constitutional memorial to the Supreme Court."
+      }
+    },
+    {
+      "id": 13,
+      "question": {
+        "mr": "मुंबई इलाख्यात महसूल निश्चित करण्यासाठी १८३५ च्या सुमारास 'सर्वेक्षण आणि जमाबंदी पद्धतीची' (Bombay Survey and Settlement System) शास्त्रोक्त रचना कोणी केली?",
+        "en": "Around 1835, which two British revenue officers formulated the scientific 'Bombay Survey and Settlement System' to resolve distortions in the Deccan Ryotwari assessment?"
+      },
+      "options": [
+        { "mr": "एच. ई. गोल्डस्मिड आणि कॅप्टन विंगेट (H. E. Goldsmid and Captain Wingate)", "en": "H. E. Goldsmid and Captain Wingate" },
+        { "mr": "थॉमस मुन्रो आणि अलेक्झांडर रीड", "en": "Thomas Munro and Alexander Read" },
+        { "mr": "होल्ट मॅकेन्झी आणि रॉबर्ट बर्ड", "en": "Holt Mackenzie and Robert Merttins Bird" },
+        { "mr": "माउंटस्टुअर्ट एल्फिन्स्टन आणि ग्रँट डफ", "en": "Mountstuart Elphinstone and Grant Duff" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "महाराष्ट्रात प्रिंगलने (Pringle) १८२५ मध्ये लागू केलेली महसूल पद्धत अवास्तव दरांमुळे अपयशी ठरली. १८३५-३६ मध्ये एच. ई. गोल्डस्मिड आणि लेफ्टनंट (नंतर कॅप्टन) जॉर्ज विंगेट यांनी जमिनीच्या प्रत्यक्ष मातीची सुपीकता आणि भौगोलिक घटकांवर आधारित 'बॉम्बे सर्व्हे सिस्टीम' विकसित केली, जी पुढील अनेक दशके मुंबई इलाख्यात चालू राहिली.",
+        "en": "Following the collapse of R. K. Pringle's flawed revenue assessment in the Bombay Deccan, H. E. Goldsmid and Captain George Wingate devised the 'Bombay Survey System' in 1835–1836, categorizing agricultural soil into nine distinct grades and fixing revenue on empirical field capacity for 30-year leases."
+      }
+    },
+    {
+      "id": 14,
+      "question": {
+        "mr": "१८३१ मध्ये गैरकारभाराचा ठपका ठेवून लॉर्ड विल्यम बेंटिंकने कोणत्या दक्षिणेकडील संस्थानाचे प्रशासन थेट ब्रिटिश आयुक्तांच्या नियंत्रणाखाली आणले?",
+        "en": "On grounds of administrative misrule and peasant rebellion, the direct governance of which southern princely state was assumed by Lord William Bentinck in 1831?"
+      },
+      "options": [
+        { "mr": "म्हैसूर (Mysore)", "en": "Mysore" },
+        { "mr": "त्रावणकोर (Travancore)", "en": "Travancore" },
+        { "mr": "हैदराबाद (Hyderabad)", "en": "Hyderabad" },
+        { "mr": "तंजावर (Tanjore)", "en": "Tanjore" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१८३१ मध्ये म्हैसूरचे राजे कृष्णराज ओडियार तिसरे यांच्या राजवटीत नगर प्रांतात शेतकरी उठाव झाला. बेंटिंकने प्रशासकीय अकार्यक्षमतेचे कारण दाखवून म्हैसूरचे प्रशासन थेट ब्रिटिश चीफ कमिशनरच्या ताब्यात घेतले. तब्बल ५० वर्षांनंतर, १८८१ मध्ये लॉर्ड रिपनने हे राज्य पुन्हा ओडियार घराण्याला परत केले (Rendition of Mysore).",
+        "en": "In 1831, citing administrative mismanagement and the peasant rebellion in Nagar, Lord William Bentinck set aside Maharaja Krishnaraja Wadiyar III and placed Mysore under direct British Chief Commissionership until Lord Ripon restored it to native rule in 1881."
+      }
+    },
+    {
+      "id": 15,
+      "question": {
+        "mr": "१८३४ मध्ये लॉर्ड विल्यम बेंटिंकने कोणत्या कारणावरून 'कुर्ग' (Coorg) या डोंगराळ संस्थानाचे ब्रिटिश भारतात विलीनीकरण केले?",
+        "en": "In 1834, on what official grounds did Lord William Bentinck annex the tiny highland state of Coorg into British India?"
+      },
+      "options": [
+        { "mr": "स्थानिक राजा वीरराजेंद्र याचा प्रजेवरील क्रूर अत्याचार आणि जनतेची ब्रिटिशांच्या हस्तक्षेपाची मागणी", "en": "Tyrannical cruelty of the local Raja Vira Rajendra and popular petitioning for British intervention" },
+        { "mr": "राजाला नैसर्गिक वारस नसल्यामुळे दत्तक वारसा नामंजूर करणे", "en": "Lapse of heir under the Doctrine of Lapse" },
+        { "mr": "राजाने कंपनीच्या सैन्याला कर भरण्यास नकार देणे", "en": "Refusal by the Raja to pay subsidiary maintenance dues" },
+        { "mr": "राजाने रशियाशी लष्करी युती करणे", "en": "The Raja entering an offensive alliance with Russia" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "कुर्गचा राजा चिक्क वीरराजेंद्र हा अत्यंत जुलमी व विकृत राज्यकर्ता मानला गेला. त्याने आपल्या नातेवाईकांची हत्या केली आणि प्रजेवर अनन्वित अत्याचार केले. एप्रिल १८३४ मध्ये बेंटिंकने लष्कर पाठवून कुर्ग जिंकले आणि 'स्थानिक प्रजेच्या इच्छेनुसार' हे राज्य ब्रिटिश भारतात विलीन केले.",
+        "en": "In 1834, Lord William Bentinck invaded and annexed Coorg after its eccentric ruler, Chikka Vira Rajendra, defied Company directives and unleashed brutal oppression against his own family and subjects, with the annexation justified on grounds of popular welfare."
+      }
+    },
+    {
+      "id": 16,
+      "question": {
+        "mr": "१८३९ ते १८४२ दरम्यान झालेल्या 'पहिल्या इंग्रज-अफगाण युद्धाला' (First Anglo-Afghan War) खालीलपैकी कोणता ऐतिहासिक शब्दप्रयोग वापरला जातो?",
+        "en": "Which famous critical term is commonly used by colonial historians to describe the catastrophic First Anglo-Afghan War (1839–1842) undertaken by Lord Auckland?"
+      },
+      "options": [
+        { "mr": "ऑकलंडची मूर्खता / ऑकलंडची घोडचूक (Auckland's Folly)", "en": "Auckland's Folly" },
+        { "mr": "ग्रेट गेम व्हिक्टरी", "en": "Great Game Victory" },
+        { "mr": "काबूल मुक्ती मोहीम", "en": "Kabul Liberation Mission" },
+        { "mr": "हिंदुकुश शांतिमोहीम", "en": "Hindukush Peace Mission" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "रशियाच्या काल्पनिक भीतीपोटी लॉर्ड ऑकलंडने अफगाणिस्तानात कटपुतळी सरकार बसवण्यासाठी हे अकारण युद्ध सुरू केले. यात १६,००० सैनिकांची भीषण कत्तल झाली, कोट्यवधी रुपयांचा चुराडा झाला आणि शेवटी दोस्त मोहम्मदच पुन्हा गादीवर बसला. या ऐतिहासिक अपयशाला इतिहासकार 'ऑकलंडची घोडचूक' (Auckland's Folly) म्हणतात.",
+        "en": "The disastrous First Anglo-Afghan War (1839–1842), launched to depose Dost Mohammad under paranoid fears of Tsarist Russia, ended in the annihilation of Elphinstone's retreating army in the snow passes of Gandamak. Historians widely refer to this misadventure as 'Auckland's Folly'."
+      }
+    },
+    {
+      "id": 17,
+      "question": {
+        "mr": "१८४६ मध्ये पहिल्या इंग्रज-शीख युद्धानंतर अल्पवयीन महाराजा दिलीपसिंग यांच्या संरक्षणासाठी ब्रिटिशांनी 'भैरोवालच्या तहाद्वारे' (Treaty of Bhairowal 1846) पंजाबमध्ये कोणती व्यवस्था केली?",
+        "en": "Following the First Anglo-Sikh War, what administrative arrangement was instituted under the Treaty of Bhairowal (December 1846) during the minority of Maharaja Duleep Singh?"
+      },
+      "options": [
+        { "mr": "महाराणी जिंदा कौर यांना रीजन्सीमधून काढून टाकण्यात आले आणि ब्रिटिश रेसिडेंट हेन्री लॉरेन्सच्या अध्यक्षतेखाली ८ शीख सरदारांची कौन्सिल स्थापन झाली.", "en": "Maharani Jindan was removed from the regency and a Council of Regency comprising eight Sikh chiefs was created under Resident Henry Lawrence." },
+        { "mr": "पंजाबचे संपूर्ण राज्य ताबडतोब ब्रिटिश मुकुटात थेट विलीन करण्यात आले.", "en": "The kingdom of Punjab was directly annexed into the British Crown immediately." },
+        { "mr": "दिलीपसिंग यांना पदच्युत करून गुलाब सिंग यांना संपूर्ण पंजाबचे राजे बनवले.", "en": "Duleep Singh was deposed and Gulab Singh was crowned monarch of the entirety of Punjab." },
+        { "mr": "सर्व शीख सैनिकांना बरखास्त करून युरोपियन सैनिकांची भरती केली गेली.", "en": "All Sikh troops were disbanded in favor of regular European infantry." }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "डिसेंबर १८४६ च्या भैरोवालच्या तहाने राणी जिंदा कौर यांचे सर्व राजकीय अधिकार काढून त्यांना ₹१.५ लाखांची पेन्शन दिली गेली. लाहोरमध्ये ब्रिटिश रेसिडेंट सर हेन्री लॉरेन्सच्या अमर्याद नियंत्रणाखाली आठ शीख सरदारांचे रीजन्सी कौन्सिल स्थापन करून पंजाबचा संपूर्ण लष्करी व नागरी ताबा ब्रिटिशांनी हस्तगत केला.",
+        "en": "The Treaty of Bhairowal (16 December 1846) stripped Rani Jindan of her regency powers on an annual pension. Executive authority over Punjab was placed in a Council of Regency composed of eight leading Sikh sardars presided over by British Resident Henry Lawrence with total military control."
+      }
+    },
+    {
+      "id": 18,
+      "question": {
+        "mr": "१८४९ मध्ये दुसऱ्या इंग्रज-शीख युद्धातील निर्णायक लढाई खालीलपैकी कोणती होती, ज्या लढाईत तोफखान्याच्या प्रचंड वापरामुळे तिला 'तोफांची लढाई' (Battle of the Guns) म्हटले जाते?",
+        "en": "Which decisive engagement of the Second Anglo-Sikh War fought on 21 February 1849 was termed the 'Battle of the Guns' due to overwhelming artillery bombardments?"
+      },
+      "options": [
+        { "mr": "गुजरातची लढाई (Battle of Gujrat)", "en": "Battle of Gujrat" },
+        { "mr": "चिलियनवालाची लढाई (Battle of Chillianwala)", "en": "Battle of Chillianwala" },
+        { "mr": "रामनगरची लढाई (Battle of Ramnagar)", "en": "Battle of Ramnagar" },
+        { "mr": "मुलतानचा वेढा (Siege of Multan)", "en": "Siege of Multan" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "२१ फेब्रुवारी १८४९ रोजी चिनाब नदीजवळ झालेल्या 'गुजरातच्या लढाईत' जनरल ह्यू गॉफच्या ब्रिटिश फौजांनी प्रचंड तोफगोळ्यांचा मारा करून चतरसिंग आणि शेरसिंग यांच्या शीख सैन्याचा निर्णायक पराभव केला. या विजयानंतर २९ मार्च १८४९ रोजी लॉर्ड डलहौसीने संपूर्ण पंजाब ब्रिटिश साम्राज्यात विलीन केला.",
+        "en": "The Battle of Gujrat (21 February 1849) witnessed an unprecedented concentration of British heavy artillery that crushed the Sikh resistance under Chattar Singh and Sher Singh. Dubbed the 'Battle of the Guns', its outcome led to the formal annexation of Punjab by Dalhousie in March 1849."
+      }
+    },
+    {
+      "id": 19,
+      "question": {
+        "mr": "लॉर्ड डलहौसीने १८५२ मधील दुसऱ्या इंग्रज-ब्रह्मी युद्धानंतर (Second Anglo-Burmese War) म्यानमारचा कोणता समृद्ध सागरी भाग ब्रिटिश भारतात विलीन केला?",
+        "en": "Which coastal province of Burma did Lord Dalhousie annex into British India following the Second Anglo-Burmese War in 1852?"
+      },
+      "options": [
+        { "mr": "पेगू किंवा कनिष्ठ म्यानमार (Pegu / Lower Burma)", "en": "Pegu (Lower Burma)" },
+        { "mr": "मांडले (Mandalay)", "en": "Mandalay" },
+        { "mr": "अवा (Ava)", "en": "Ava" },
+        { "mr": "शान राज्ये (Shan States)", "en": "Shan States" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१८५२ मध्ये कमोडोर लॅम्बर्टने रंगूनवर ताबा मिळवला. कोणत्याही औपचारिक तहाची वाट न पाहता लॉर्ड डलहौसीने २० डिसेंबर १८५२ रोजी एका जाहीरनाम्याद्वारे सागवान लाकूड आणि तांदळाने समृद्ध असलेला 'पेगू' (कनिष्ठ ब्रह्मदेश) हा संपूर्ण किनारपट्टीचा प्रदेश ब्रिटिश भारतात विलीन केला, ज्यामुळे उर्वरित ब्रह्मदेश समुद्रापासून तुटला गेला.",
+        "en": "In December 1852, following the swift Second Anglo-Burmese War, Lord Dalhousie issued an imperial proclamation annexing the entire province of Pegu (Lower Burma), including the key port of Rangoon, cutting off the Kingdom of Ava from direct access to the sea."
+      }
+    },
+    {
+      "id": 20,
+      "question": {
+        "mr": "१८५३ च्या सनदी कायद्याद्वारे (Charter Act 1853) नागरी सेवेच्या (Civil Services) भरतीमध्ये खालीलपैकी कोणता महत्त्वाचा बदल करण्यात आला?",
+        "en": "Which historic reform in civil service recruitment was introduced under the Charter Act of 1853?"
+      },
+      "options": [
+        { "mr": "संचालकांचे नामनिर्देशन अधिकार (Patronage) बंद करून सर्वांसाठी खुली स्पर्धा परीक्षा सुरू करण्यात आली.", "en": "The Court of Directors' patronage was abolished, instituting an open competitive examination system for all." },
+        { "mr": "स्पर्धा परीक्षा लंडनऐवजी केवळ कलकत्ता येथे घेण्याची सक्ती केली गेली.", "en": "Examinations were made mandatory strictly in Calcutta instead of London." },
+        { "mr": "भारतीयांना सनदी सेवेत प्रवेश देण्यावर २५ वर्षांची बंदी घालण्यात आली.", "en": "A 25-year ban was placed on the admission of Indian candidates into the civil services." },
+        { "mr": "केवळ लष्करी अधिकाऱ्यांना नागरी प्रशासनात थेट बढती अनिवार्य केली.", "en": "Civil posts were reserved exclusively for serving military personnel." }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१८५३ च्या सनदी कायद्याने कोर्ट ऑफ डायरेक्टर्सची सनदी नोकऱ्यांमधील वशिलेबाजी (Patronage) पद्धत पूर्णपणे संपवली आणि गुणवत्ता आधारित 'खुली स्पर्धा परीक्षा' अनिवार्य केली. या परीक्षेची नियमावली तयार करण्यासाठी १८५४ मध्ये लॉर्ड मेकॉल यांच्या अध्यक्षतेखाली समिती नेमली गेली आणि १८५५ पासून लंडनमध्ये स्पर्धा परीक्षा सुरू झाल्या.",
+        "en": "The Charter Act of 1853 ended the patronage of the Court of Directors by mandating that appointments to the Covenanted Civil Service be made entirely through open competitive examinations. The Macaulay Committee of 1854 drew up the regulations for these examinations, which commenced in London in 1855."
+      }
+    },
+    {
+      "id": 21,
+      "question": {
+        "mr": "१८५३ मध्ये लॉर्ड डलहौसीने रेल्वेच्या विस्तारासाठी आणलेली 'जुन्या हमी पद्धत' (Old Guarantee System) खालीलपैकी कोणत्या तत्त्वावर आधारित होती?",
+        "en": "What was the operating basis of the 'Old Guarantee System' devised by Lord Dalhousie in the 1850s to attract private British capital for Indian railway construction?"
+      },
+      "options": [
+        { "mr": "खाजगी ब्रिटिश रेल्वे कंपन्यांना गुंतवलेल्या भांडवलावर भारतीय तिजोरीतून किमान ५% परताव्याची हमी आणि ९९ वर्षांसाठी मोफत जमीन देणे.", "en": "Guaranteeing a minimum 5% annual return on invested capital from Indian revenues alongside free 99-year land leases to private British rail companies." },
+        { "mr": "भारतीय सावकारांना रेल्वे बांधण्यासाठी १००% बिनव्याजी कर्ज देणे.", "en": "Providing 100% interest-free capital loans solely to native Indian bankers." },
+        { "mr": "रेल्वेचे संपूर्ण बांधकाम केवळ सरकारी खर्चातून करणे आणि कोणतीही खाजगी गुंतवणूक न घेणे.", "en": "Constructing all railway lines strictly via state funds without private joint-stock capital." },
+        { "mr": "रेल्वेचा नफा ५०% भारतीय शेतकऱ्यांमध्ये वाटप करण्याची सक्ती करणे.", "en": "Mandating that 50% of railway net profits be distributed directly to cultivators." }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "डलहौसीच्या 'हमी पद्धती'नुसार (Guarantee System) खाजगी ब्रिटिश कंपन्यांना आकर्षित करण्यासाठी भारतीय तिजोरीतून ५% निश्चित लाभांशाची हमी आणि मोफत जमिनी दिल्या गेल्या. तोटा झाला तरी भारतीय जनतेच्या करातून ५% व्याज मिळत राहिल्याने कंपन्यांनी अवाजवी खर्च केला, ज्याचे वर्णन राष्ट्रवादी अर्थतज्ज्ञांनी 'खाजगी नफा आणि सार्वजनिक तोटा' (Private enterprise at public risk) असे केले.",
+        "en": "Under Dalhousie's Old Guarantee System, joint-stock British rail companies were guaranteed a 5% sterling return on their capital paid out of Indian public revenues, alongside free land for 99 years. Because their returns were insulated from operational losses, it invited reckless and wasteful expenditure dubbed 'private profit at public risk'."
+      }
+    },
+    {
+      "id": 22,
+      "question": {
+        "mr": "१८६० मध्ये लॉर्ड कॅनिंगच्या कार्यकाळात युरोपियन नीळ मळेवाल्यांच्या शोषणाविरुद्ध बंगालमध्ये झालेल्या 'नीळ उठावाचे' (Indigo Revolt) वर्णन दीनबंधू मित्र यांनी आपल्या कोणत्या प्रसिद्ध नाटकात केले आहे?",
+        "en": "Which famous Bengali play written by Dinabandhu Mitra in 1860 vividly portrayed the ruthless exploitation of peasant cultivators by European indigo planters?"
+      },
+      "options": [
+        { "mr": "नील दर्पण (Nil Darpan)", "en": "Nil Darpan" },
+        { "mr": "आनंदमठ (Anandamath)", "en": "Anandamath" },
+        { "mr": "भारत दुर्दशा (Bharat Durdasha)", "en": "Bharat Durdasha" },
+        { "mr": "वर्तमान भारत (Bartaman Bharat)", "en": "Bartaman Bharat" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "दीनबंधू मित्र यांनी १८६० मध्ये 'नील दर्पण' हे नाटक लिहिले. या नाटकात युरोपियन नीळ मळेवाल्यांनी बंगालच्या शेतकऱ्यांवर केलेले अत्याचार आणि अन्यायाचे विदारक वास्तव मांडले गेले. रेव्हरंड जेम्स लाँग यांनी या नाटकाचे इंग्रजीत भाषांतर केले (ज्यासाठी लाँग यांना इंग्रज न्यायालयाने तुरुंगवासाची शिक्षा ठोठावली होती).",
+        "en": "Dinabandhu Mitra wrote the iconic play 'Nil Darpan' (The Mirror of Indigo) in 1860, exposing the brutal coercion and physical atrocities inflicted on ryots by European indigo planters. Rev. James Long was fined and imprisoned by the colonial court for publishing its English translation."
+      }
+    },
+    {
+      "id": 23,
+      "question": {
+        "mr": "१८६४ ते १८६९ या काळात भारताचा व्हाइसरॉय राहिलेल्या सर जॉन लॉरेन्सच्या अफगाणिस्तानविषयक परराष्ट्र धोरणाचे मुख्य वैशिष्ट्य कोणते होते?",
+        "en": "What was the core operational principle of Viceroy Sir John Lawrence's Afghan policy (1864–1869), famously termed 'Masterly Inactivity'?"
+      },
+      "options": [
+        { "mr": "अफगाणिस्तानच्या अंतर्गत गादीच्या वादात कोणत्याही बाजूला लष्करी मदत न करणे आणि जो अमीर प्रत्यक्ष सत्तेवर येईल त्याच्याशी मैत्रीपूर्ण संबंध ठेवणे.", "en": "Refusing to intervene militarily in Afghan succession civil wars while maintaining diplomatic relations with whichever prince established de facto authority." },
+        { "mr": "अफगाणिस्तानवर तात्काळ आक्रमण करून काबूलमध्ये ब्रिटिश सैन्य तैनात करणे.", "en": "Launching an immediate invasion of Afghanistan to station a British division in Kabul." },
+        { "mr": "अफगाणिस्तानचे तीन तुकडे करून ते रशिया आणि इराणला वाटून देणे.", "en": "Partitioning Afghanistan between Tsarist Russia and Qajar Iran." },
+        { "mr": "अफगाणिस्तानच्या सर्व जनतेला भारतीय नागरिकत्व बहाल करणे.", "en": "Conferring British Indian citizenship upon the entirety of Afghanistan's populace." }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "सर जॉन लॉरेन्सने पहिल्या अफगाण युद्धातील विनाशातून धडा घेऊन 'कुशल निष्क्रियतेचे धोरण' (Masterly Inactivity) स्वीकारले. दोस्त मोहम्मदच्या मृत्यूनंतर त्याच्या मुलांमध्ये झालेल्या गृहयुद्धात ब्रिटिशांनी तटस्थता पाळली, कोणताही हस्तक्षेप केला नाही आणि शेर अलीने काबूलवर प्रत्यक्ष नियंत्रण मिळवताच त्याला कायदेशीर अमीर म्हणून मान्यता दिली.",
+        "en": "Chastened by the First Afghan disaster, Sir John Lawrence practiced 'Masterly Inactivity', strictly avoiding military entanglements in internal dynastic civil wars following Dost Mohammad's death in 1863, and recognizing Sher Ali only after he established de facto control over Kabul."
+      }
+    },
+    {
+      "id": 24,
+      "question": {
+        "mr": "१८७६ च्या 'रॉयल टायटल्स कायद्यान्वये' (Royal Titles Act 1876) ब्रिटिश पंतप्रधान बेंजामिन डिझरायली यांनी राणी व्हिक्टोरियाला कोणती अधिकृत पदवी प्रदान करण्याची तरतूद केली?",
+        "en": "Under the Royal Titles Act of 1876 steered by Prime Minister Benjamin Disraeli, which imperial title was officially conferred upon Queen Victoria?"
+      },
+      "options": [
+        { "mr": "कैसर-ए-हिंद (Kaiser-i-Hind / Empress of India)", "en": "Kaiser-i-Hind (Empress of India)" },
+        { "mr": "ग्रेट ब्रिटन आणि हिंदुस्थानची राणी (Queen of Hindustan)", "en": "Queen of Hindustan" },
+        { "mr": "सम्राज्ञी व्हिक्टोरिया पहिली (Empress Victoria I)", "en": "Empress Victoria I" },
+        { "mr": "पूर्वेकडील साम्राज्याची संरक्षिका (Protector of the East)", "en": "Protector of the East" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "ब्रिटिश संसदेने १८७६ मध्ये 'रॉयल टायटल्स ॲक्ट' मंजूर केला. या कायद्यानुसार १ मे १८७६ रोजी राणी व्हिक्टोरियाने अधिकृतपणे 'कैसर-ए-हिंद' (Empress of India) ही पदवी धारण केली. पुढे १ जानेवारी १८७७ रोजी लॉर्ड लिटनने दिल्ली दरबार भरवून भारतात या पदवीची औपचारिक घोषणा केली.",
+        "en": "Enacted in 1876 under Benjamin Disraeli's Conservative administration, the Royal Titles Act proclaimed Queen Victoria 'Kaiser-i-Hind' (Empress of India) to legally designate British paramountcy over both British provinces and the princely states."
+      }
+    },
+    {
+      "id": 25,
+      "question": {
+        "mr": "१८८० मध्ये लॉर्ड रिपन भारताचा व्हाइसरॉय बनून आल्यानंतर त्याने खालीलपैकी कोणत्या राजकीय विचारसरणीचे प्रतिनिधित्व करून भारतात प्रशासकीय सुधारणा राबवल्या?",
+        "en": "When Lord Ripon arrived as Viceroy in 1880, which British political philosophy and administration did he represent in instituting liberal reforms in India?"
+      },
+      "options": [
+        { "mr": "विल्यम ग्लॅडस्टन यांची ब्रिटिश लिबरल (उदारमतवादी) विचारसरणी", "en": "William Gladstone's British Liberal Party ideology" },
+        { "mr": "बेंजामिन डिझरायली यांची हुकूमशाही पुराणमतवादी विचारसरणी", "en": "Benjamin Disraeli's imperialist Conservative Party ideology" },
+        { "mr": "ब्रिटिश लेबर पक्षाची समाजवादी विचारसरणी", "en": "British Labour Party's democratic socialist ideology" },
+        { "mr": "चार्टिस्ट कामगार क्रांतिकारी विचारसरणी", "en": "Chartist radical working-class movement" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१८८० मध्ये ब्रिटनमध्ये निवडणुका जिंकून विल्यम ग्लॅडस्टन यांच्या नेतृत्वाखाली लिबरल (उदारमतवादी) सरकार सत्तेवर आले. ग्लॅडस्टनने साम्राज्यवादी लॉर्ड लिटनला माघारी बोलावून उदारमतवादी विचारांचे लॉर्ड रिपन यांची व्हाइसरॉय म्हणून नियुक्ती केली. रिपनने लिटनची दडपशाही धोरणे (व्हर्नाक्युलर प्रेस ॲक्ट) रद्द करून स्थानिक स्वराज्य व शिक्षणाला चालना दिली.",
+        "en": "Lord Ripon was an ardent disciple of Prime Minister William Ewart Gladstone's British Liberal Party. Appointed following Gladstone's 1880 electoral triumph, Ripon's viceroyalty reversed Lytton's repressive imperialist measures, championing local self-governance, educational grants, and press freedom."
+      }
+    }
+  ]
+}

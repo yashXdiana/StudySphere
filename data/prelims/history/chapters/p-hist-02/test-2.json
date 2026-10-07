@@ -1,0 +1,464 @@
+{
+  "testId": "p-hist-02-t2",
+  "title": {
+    "mr": "भारतातील ब्रिटिश सत्तेचा विस्तार व प्रशासन — सराव 2",
+    "en": "British Rule in India — Practice Test 2"
+  },
+  "durationMinutes": 20,
+  "marksPerQuestion": 1,
+  "negativeMarking": 0.25,
+  "totalMarks": 25,
+  "difficulty": "मध्यम ते काठिण्य",
+  "questions": [
+    {
+      "id": 1,
+      "question": {
+        "mr": "१७७३ च्या नियामक कायद्यानुसार (Regulating Act 1773) स्थापन करण्यात आलेल्या कलकत्ता येथील सर्वोच्च न्यायालयाच्या अधिकारक्षेत्राबाबत खालील विधाने विचारात घ्या:\nअ. हे न्यायालय फोर्ट विल्यम (कलकत्ता) आणि त्याच्या अखत्यारीतील सर्व ब्रिटिश प्रजेसाठी स्थापन करण्यात आले होते.\nब. १७८१ च्या दुरुस्ती कायद्याने (Act of Settlement) गव्हर्नर-जनरल आणि त्याच्या कौन्सिलला त्यांच्या अधिकृत कामकाजासाठी सर्वोच्च न्यायालयाच्या कार्यकक्षेतून वगळले.\nवरीलपैकी कोणते/ती विधान/ने बरोबर आहेत?",
+        "en": "Consider the following statements regarding the jurisdiction of the Supreme Court established at Calcutta under the Regulating Act of 1773:\na. This court was established for Fort William (Calcutta) and all British subjects residing within its subordinate factory limits.\nb. The Act of Settlement of 1781 exempted the Governor-General and his Council from the jurisdiction of the Supreme Court for their official acts.\nWhich of the statements given above is/are correct?"
+      },
+      "options": [
+        { "mr": "फक्त अ", "en": "Only a" },
+        { "mr": "फक्त ब", "en": "Only b" },
+        { "mr": "अ आणि ब दोन्ही", "en": "Both a and b" },
+        { "mr": "दोन्ही नाही", "en": "Neither a nor b" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "दोन्ही विधाने योग्य आहेत. १७७४ मध्ये सर एलिझा इम्पे यांच्या अध्यक्षतेखाली कलकत्ता येथे सर्वोच्च न्यायालय स्थापन झाले. सुरुवातीला त्याचे अधिकारक्षेत्र अस्पष्ट असल्याने गव्हर्नर-जनरल कौन्सिल आणि न्यायालयात तीव्र संघर्ष निर्माण झाला. हा वाद मिटवण्यासाठी ब्रिटिश संसदेने १७८१ मध्ये 'अमेंडिंग ॲक्ट' (Act of Settlement) मंजूर करून शासकीय कर्तव्ये पार पाडताना केलेल्या कृतींसाठी गव्हर्नर-जनरल व त्याच्या कौन्सिलला न्यायालयाच्या कार्यकक्षेबाहेर ठेवले.",
+        "en": "Both statements are correct. Established in 1774 with Sir Elijah Impey as Chief Justice, the Supreme Court's undefined jurisdiction created friction with the executive council. The Declaratory Act of 1781 resolved this deadlock by formally exempting the Governor-General, Council members, and revenue collectors from the Court's jurisdiction for acts done in their public capacity."
+      }
+    },
+    {
+      "id": 2,
+      "question": {
+        "mr": "१७८६ च्या दुरुस्ती कायद्यान्वये (Act of 1786) लॉर्ड कॉर्नवॉलिसला खालीलपैकी कोणते दोन विशेष अधिकार बहाल करण्यात आले होते?",
+        "en": "Which two extraordinary powers were conferred upon Lord Cornwallis by the Amending Act of 1786 before he assumed the Governor-Generalship?"
+      },
+      "options": [
+        { "mr": "आपल्या कौन्सिलचा निर्णय फेटाळण्याचा नकाराधिकार (Veto Power) आणि कमांडर-इन-चीफ (सरसेनापती) पदाचे अधिकार", "en": "The veto power to override Council decisions in extraordinary cases and the office of Commander-in-Chief" },
+        { "mr": "प्रांतीय गव्हर्नरांना बडतर्फ करण्याचा अधिकार आणि थेट कर गोळा करण्याचा अधिकार", "en": "The power to dismiss provincial Governors and collect taxes directly" },
+        { "mr": "ब्रिटिश संसदेच्या मंजुरीशिवाय युद्ध पुकारण्याचा अधिकार आणि सर्वोच्च न्यायालयाचे न्यायाधीश नेमण्याचा अधिकार", "en": "The authority to declare war without parliamentary sanction and appoint Supreme Court judges" },
+        { "mr": "कंपनीचे संचालक मंडळ बरखास्त करण्याचा अधिकार आणि खाजगी व्यापार करण्याचा परवाना", "en": "The power to dissolve the Court of Directors and a license to conduct private trade" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "लॉर्ड कॉर्नवॉलिसने भारतात येण्यापूर्वी दोन प्रमुख अटी ठेवल्या होत्या: १. विशेष परिस्थितीत कौन्सिलचा बहुमताचा निर्णय धुडकावून स्वतःचा निर्णय घेण्याचा अधिकार (Veto Power), आणि २. गव्हर्नर-जनरलसह भारताचा लष्करप्रमुख (Commander-in-Chief) पदाचे अधिकार. ब्रिटिश संसदेने १७८६ चा कायदा मंजूर करून या दोन्ही मागण्या मान्य केल्या.",
+        "en": "Before accepting the Governor-Generalship, Lord Cornwallis demanded overriding veto authority over his council in exceptional emergencies and the combined rank of Commander-in-Chief. The Act of 1786 was specially enacted by the British Parliament to grant these twin powers."
+      }
+    },
+    {
+      "id": 3,
+      "question": {
+        "mr": "लॉर्ड वेलस्लीच्या 'तैनाती फौज' (Subsidiary Alliance System) पद्धतीचा स्वीकार करणाऱ्या भारतीय संस्थानांचा योग्य कालानुक्रम कोणता?",
+        "en": "Which of the following is the correct chronological order of the princely states that accepted Lord Wellesley's Subsidiary Alliance System?"
+      },
+      "options": [
+        { "mr": "हैदराबाद (१७९८) ➔ म्हैसूर (१७९९) ➔ अवध (१८०१) ➔ पेशवे (१८०२) ➔ भोसले (१८०३)", "en": "Hyderabad (1798) ➔ Mysore (1799) ➔ Awadh (1801) ➔ Peshwa (1802) ➔ Bhonsle (1803)" },
+        { "mr": "म्हैसूर (१७९८) ➔ हैदराबाद (१७९९) ➔ पेशवे (१८०१) ➔ अवध (१८०२) ➔ शिंदे (१८०३)", "en": "Mysore (1798) ➔ Hyderabad (1799) ➔ Peshwa (1801) ➔ Awadh (1802) ➔ Scindia (1803)" },
+        { "mr": "हैदराबाद (१७९८) ➔ अवध (१७९९) ➔ म्हैसूर (१८०१) ➔ भोसले (१८०२) ➔ पेशवे (१८०३)", "en": "Hyderabad (1798) ➔ Awadh (1799) ➔ Mysore (1801) ➔ Bhonsle (1802) ➔ Peshwa (1803)" },
+        { "mr": "अवध (१७९८) ➔ हैदराबाद (१७९९) ➔ पेशवे (१८०१) ➔ म्हैसूर (१८०२) ➔ होळकर (१८०३)", "en": "Awadh (1798) ➔ Hyderabad (1799) ➔ Peshwa (1801) ➔ Mysore (1802) ➔ Holkar (1803)" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "लॉर्ड वेलस्लीने १७९८ मध्ये गवर्नर-जनरल झाल्यानंतर तैनाती फौजेचा आक्रमक वापर केला. स्वीकारण्याचा योग्य क्रम:\n१. हैदराबादचा निजाम (१७९८)\n२. म्हैसूर (१७९९ - चौथ्या युद्धानंतर)\n३. तंजावर (१७९९)\n४. अवध (१८०१)\n५. पेशवे दुसरे बाजीराव (१८०२ - वसईचा तह)\n६. भोसले (१८०३ - देवगावचा तह)\n७. शिंदे (१८०३ - सुरजी-अंजनगावचा तह).",
+        "en": "The chronological sequence of states entering the Subsidiary Alliance under Wellesley is: Hyderabad (1798), Mysore (1799), Tanjore (1799), Awadh (1801), Peshwa (1802 via Treaty of Bassein), Bhonsle of Berar (1803 via Treaty of Deogaon), and Scindia (1803 via Treaty of Surji-Anjangaon)."
+      }
+    },
+    {
+      "id": 4,
+      "question": {
+        "mr": "१८१३ च्या सनदी कायद्यानुसार (Charter Act of 1813) खालीलपैकी कोणती तरतूद करण्यात आली नव्हती?",
+        "en": "Which of the following provisions was NOT enacted under the Charter Act of 1813?"
+      },
+      "options": [
+        { "mr": "कंपनीची भारतातील सर्व प्रकारच्या व्यापारावरील मक्तेदारी पूर्णपणे संपुष्टात आणली गेली.", "en": "The Company's commercial monopoly over all forms of trade in India was completely terminated." },
+        { "mr": "भारतात स्थानिक साहित्याचा पुनरुद्धार आणि विज्ञानाच्या प्रसारासाठी दरवर्षी ₹१ लाखांची तरतूद करण्यात आली.", "en": "An annual fund of ₹1 lakh was allocated for the revival of literature and the promotion of sciences in India." },
+        { "mr": "ख्रिश्चन धर्मप्रचारकांना (Missionaries) भारतात येऊन धर्मप्रसार करण्याची अधिकृत मुभा देण्यात आली.", "en": "Christian missionaries were granted lawful permission to enter India and preach their religion." },
+        { "mr": "चहाचा व्यापार आणि चीनबरोबरच्या व्यापारावरील कंपनीची मक्तेदारी पुढील २० वर्षांसाठी कायम ठेवण्यात आली.", "en": "The Company's monopoly over the tea trade and general trade with China was retained for 20 years." }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "पर्याय १ चुकीचा आहे, कारण १८१३ च्या कायद्याने कंपनीची व्यापारी मक्तेदारी मर्यादित केली असली तरी ती पूर्णपणे संपुष्टात आली नव्हती. 'चहाचा व्यापार' आणि 'चीनशी होणारा व्यापार' या दोन बाबींवर कंपनीची मक्तेदारी आणखी २० वर्षांसाठी (१८३३ पर्यंत) अबाधित ठेवण्यात आली होती. उर्वरित तिन्ही तरतुदी १८१३ च्या कायद्यातील आहेत.",
+        "en": "Option 1 is incorrect because the commercial monopoly was not completely abolished in 1813; the tea trade and Chinese trade were explicitly reserved for the East India Company for another 20 years. The monopoly was extinguished entirely only by the Charter Act of 1833."
+      }
+    },
+    {
+      "id": 5,
+      "question": {
+        "mr": "ब्रिटिश भारतातील भूमहसूल पद्धती आणि त्यांचे प्रमुख प्रवर्तक यांच्या योग्य जोड्या जुळवा:\n\nस्तंभ अ (पद्धत)\n१. कायमधारा पद्धत (Permanent Settlement)\n२. रयतवारी पद्धत (Ryotwari System)\n३. महालवारी पद्धत (Mahalwari System)\n\nस्तंभ ब (प्रवर्तक / अधिकारी)\nअ. थॉमस मुन्रो आणि अलेक्झांडर रीड\nब. होल्ट मॅकेन्झी आणि रॉबर्ट बर्ड\nक. लॉर्ड कॉर्नवॉलिस आणि जॉन शोर\n\nयोग्य पर्याय निवडा:",
+        "en": "Match the pairs of land revenue systems in British India with their principal architects:\n\nColumn A (System)\n1. Permanent Settlement\n2. Ryotwari System\n3. Mahalwari System\n\nColumn B (Architect / Officer)\na. Thomas Munro and Alexander Read\nb. Holt Mackenzie and Robert Merttins Bird\nc. Lord Cornwallis and John Shore\n\nChoose the correct option:"
+      },
+      "options": [
+        { "mr": "१-क, २-अ, ३-ब", "en": "1-c, 2-a, 3-b" },
+        { "mr": "१-अ, २-क, ३-ब", "en": "1-a, 2-c, 3-b" },
+        { "mr": "१-क, २-ब, ३-अ", "en": "1-c, 2-b, 3-a" },
+        { "mr": "१-ब, २-अ, ३-क", "en": "1-b, 2-a, 3-c" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "योग्य जोड्या:\n१. कायमधारा पद्धत (१७९३, बंगाल): लॉर्ड कॉर्नवॉलिस आणि जॉन शोर (१-क)\n२. रयतवारी पद्धत (१७९२/१८२०, मद्रास): थॉमस मुन्रो आणि कॅप्टन अलेक्झांडर रीड (२-अ)\n३. महालवारी पद्धत (१८२२/१८३३, वायव्य प्रांत): होल्ट मॅकेन्झी आणि रॉबर्ट बर्ड (३-ब).",
+        "en": "Correct pairings:\n1. Permanent Settlement (1793, Bengal): Lord Cornwallis and John Shore (1-c)\n2. Ryotwari System (Madras, 1792/1820): Thomas Munro and Alexander Read (2-a)\n3. Mahalwari System (NW Provinces, 1822/1833): Holt Mackenzie and Robert Merttins Bird (3-b)."
+      }
+    },
+    {
+      "id": 6,
+      "question": {
+        "mr": "१८३३ च्या सनदी कायद्यातील कलम ८७ (Section 87) खालीलपैकी कोणत्या तत्त्वाशी संबंधित होते?",
+        "en": "Section 87 of the Charter Act of 1833 was associated with which of the following principles?"
+      },
+      "options": [
+        { "mr": "धर्म, वंश, जात किंवा जन्मस्थान या कारणांवरून कोणत्याही भारतीय प्रजेला कंपनीच्या नोकरीसाठी अपात्र ठरवले जाणार नाही.", "en": "No native of India shall be disabled from holding any office under the Company on grounds solely of religion, descent, caste, or color." },
+        { "mr": "भारतीय भाषांमधील प्राथमिक शाळांना १००% सरकारी अनुदान दिले जाईल.", "en": "Vernacular primary schools will receive 100% state grant-in-aid." },
+        { "mr": "ईस्ट इंडिया कंपनीची भारतातील सर्व प्रशासकीय सत्ता तात्काळ रद्द केली जाईल.", "en": "All governing authority of the East India Company in India will be revoked immediately." },
+        { "mr": "संस्थानिकांच्या अंतर्गत कारभारात हस्तक्षेप करण्यास पूर्ण बंदी असेल.", "en": "Absolute non-intervention will be maintained in the internal affairs of princely states." }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१८३३ च्या सनदी कायद्यातील कलम ८७ ने ब्रिटिश भारतातील सरकारी नोकऱ्यांमध्ये समानतेचे तत्त्व मांडले. या कलमानुसार धर्म, जात, वंश किंवा जन्माच्या आधारावर कंपनीच्या कोणत्याही नोकरीसाठी भारतीयांवर बंदी घालता येणार नाही अशी घोषणा करण्यात आली. प्रत्यक्ष अंमलबजावणी मर्यादित राहिली तरी हा समान हक्कांचा पहिला वैधानिक आधार ठरला.",
+        "en": "Section 87 of the Charter Act of 1833 laid down the earliest statutory principle of non-discrimination in public employment, enacting that no Indian subject would be debarred from holding any place or office under the Company merely on grounds of religion, race, caste, or birthplace."
+      }
+    },
+    {
+      "id": 7,
+      "question": {
+        "mr": "लॉर्ड मेकॉलच्या १८३५ च्या शिक्षणविषयक मिनिटाबाबत (Minute on Indian Education) खालील विधाने विचारात घ्या:\nअ. त्याने भारतीय पौर्वात्य विद्येवर टीका करून इंग्रजी माध्यमाद्वारे पाश्चात्य विज्ञान व शिक्षणाची जोरदार शिफारस केली.\nब. त्याने शिक्षणाचा 'झिरपता सिद्धांत' (Downward Filtration Theory) मांडला, ज्यानुसार उच्च वर्गाला दिलेले शिक्षण हळूहळू सामान्य जनतेपर्यंत पोहोचेल असे मानले गेले.\nवरीलपैकी कोणते/ती विधान/ने बरोबर आहेत?",
+        "en": "Consider the following statements regarding Lord Macaulay's Minute on Indian Education (1835):\na. He dismissed traditional Oriental learning and strongly advocated Western sciences and literature through the English medium.\nb. He propounded the 'Downward Filtration Theory', assuming that education imparted to the upper classes would percolate down to the masses.\nWhich of the statements given above is/are correct?"
+      },
+      "options": [
+        { "mr": "फक्त अ", "en": "Only a" },
+        { "mr": "फक्त ब", "en": "Only b" },
+        { "mr": "अ आणि ब दोन्ही", "en": "Both a and b" },
+        { "mr": "दोन्ही नाही", "en": "Neither a nor b" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "दोन्ही विधाने अचूक आहेत. २ फेब्रुवारी १८३५ रोजी कौन्सिलचा विधी सदस्य लॉर्ड मेकॉल याने आपला अहवाल सादर केला. त्यात त्याने पाश्चात्य ज्ञान आणि इंग्रजी माध्यमाची शिफारस केली. तसेच मर्यादित संसाधनांमुळे केवळ वरिष्ठ मूठभर वर्गाला शिक्षित करून त्यांच्यामार्फत ते ज्ञान सामान्य जनतेत पाझरेल असा 'झिरपता सिद्धांत' (Downward Filtration Theory) मांडला. लॉर्ड विल्यम बेंटिंकने मार्च १८३५ मध्ये ही शिफारस स्वीकारली.",
+        "en": "Both statements are correct. In his Minute of February 1835, Macaulay famously promoted English as the exclusive medium of higher instruction to create a class 'Indian in blood and color, but English in taste'. He also formulated the Downward Filtration Theory, arguing that limited state funds should be focused on educating the elite, who would subsequently educate the broader public."
+      }
+    },
+    {
+      "id": 8,
+      "question": {
+        "mr": "१८४३ मध्ये सिंध प्रांताचे ब्रिटिश साम्राज्यात विलीनीकरण करणाऱ्या लष्करी मोहिमेचे नेतृत्व कोणाकडे होते?",
+        "en": "Who commanded the military campaign that culminated in the annexation of Sindh into the British Empire in 1843?"
+      },
+      "options": [
+        { "mr": "सर चार्ल्स नेपियर (Sir Charles Napier)", "en": "Sir Charles Napier" },
+        { "mr": "सर जेम्स आऊट्रम (Sir James Outram)", "en": "Sir James Outram" },
+        { "mr": "सर हेन्री लॉरेन्स (Sir Henry Lawrence)", "en": "Sir Henry Lawrence" },
+        { "mr": "जनरल ह्यू गॉफ (General Hugh Gough)", "en": "General Hugh Gough" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "गव्हर्नर-जनरल लॉर्ड एलनबरोच्या कार्यकाळात १८४३ मध्ये सर चार्ल्स नेपियरने मियानी आणि दाबोच्या लढाईत सिंधच्या तालपूर अमिरांचा पराभव करून सिंध प्रांत ब्रिटिशांच्या ताब्यात जोडला. या विलीनीकरणावर नेपियरने 'Peccavi' (I have Sindh / I have sinned) हा प्रसिद्ध लॅटिन संदेश लंडनला पाठवला होता.",
+        "en": "Under Governor-General Lord Ellenborough, Major-General Sir Charles Napier routed the Amirs of Sindh at the Battles of Miani and Dubbo in 1843, completing the annexation of Sindh. Napier famously punned his actions with the one-word dispatch: 'Peccavi' ('I have sinned' / 'I have Sindh')."
+      }
+    },
+    {
+      "id": 9,
+      "question": {
+        "mr": "लॉर्ड डलहौसीने आपल्या 'खालसा धोरणांतर्गत' (Doctrine of Lapse) संस्थाने विलीन करताना खालीलपैकी कोणता कालानुक्रम योग्य आहे?",
+        "en": "Which of the following represents the correct chronological sequence of princely states annexed by Lord Dalhousie under the Doctrine of Lapse?"
+      },
+      "options": [
+        { "mr": "सातारा (१८४८) ➔ संबळपूर (१८४९) ➔ झाशी (१८५३) ➔ नागपूर (१८५४)", "en": "Satara (1848) ➔ Sambalpur (1849) ➔ Jhansi (1853) ➔ Nagpur (1854)" },
+        { "mr": "सातारा (१८४८) ➔ झाशी (१८४९) ➔ संबळपूर (१८५३) ➔ नागपूर (१८५४)", "en": "Satara (1848) ➔ Jhansi (1849) ➔ Sambalpur (1853) ➔ Nagpur (1854)" },
+        { "mr": "झाशी (१८४८) ➔ सातारा (१८४९) ➔ नागपूर (१८५३) ➔ संबळपूर (१८५४)", "en": "Jhansi (1848) ➔ Satara (1849) ➔ Nagpur (1853) ➔ Sambalpur (1854)" },
+        { "mr": "संबळपूर (१८४८) ➔ सातारा (१८४९) ➔ झाशी (१८५३) ➔ नागपूर (१८५४)", "en": "Sambalpur (1848) ➔ Satara (1849) ➔ Jhansi (1853) ➔ Nagpur (1854)" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "लॉर्ड डलहौसीने दत्तक वारसा नामंजूर करून विलीन केलेल्या संस्थानांचा योग्य क्रम:\n१. सातारा (१८४८)\n२. जैतपूर व संबळपूर (१८४९)\n३. बघाट (१८५०)\n४. उदयपूर (१८५२)\n५. झाशी (१८५३ - गंगाधर रावांच्या मृत्यूनंतर)\n६. नागपूर (१८५४ - रघुजी तिसऱ्याच्या मृत्यूनंतर).\nत्यामुळे योग्य पर्याय सातारा ➔ संबळपूर ➔ झाशी ➔ नागपूर हा आहे.",
+        "en": "The correct chronological order of states annexed under the Doctrine of Lapse is: Satara (1848), Jaitpur and Sambalpur (1849), Baghat (1850), Udaipur (1852), Jhansi (1853), and Nagpur (1854)."
+      }
+    },
+    {
+      "id": 10,
+      "question": {
+        "mr": "फेब्रुवारी १८५६ मध्ये लॉर्ड डलहौसीने अवधचे संस्थान (Awadh) ब्रिटिश साम्राज्यात विलीन करताना खालीलपैकी कोणाच्या चौकशी अहवालाचा आधार घेतला होता?",
+        "en": "In February 1856, when Lord Dalhousie annexed the princely state of Awadh, whose investigative report on internal misgovernance was used as the official pretext?"
+      },
+      "options": [
+        { "mr": "सर जेम्स आऊट्रम (Sir James Outram)", "en": "Sir James Outram" },
+        { "mr": "कर्नल विल्यम स्लीमन (Colonel William Sleeman)", "en": "Colonel William Sleeman" },
+        { "mr": "सर हेन्री लॉरेन्स (Sir Henry Lawrence)", "en": "Sir Henry Lawrence" },
+        { "mr": "चार्ल्स मेटकॉफ (Charles Metcalfe)", "en": "Charles Metcalfe" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "अवधचा नवाब वाजिद अली शाह याला नैसर्गिक वारसदार असल्याने तिथे दत्तक वारसा नियम लागू होत नव्हता. त्यामुळे ब्रिटिशांनी 'कुशासनाचा' (गैरकारभाराचा) आरोप केला. रेसिडेंट कर्नल स्लीमनने विलीनीकरणाला विरोध केला होता; म्हणून डलहौसीने सर जेम्स आऊट्रम यांची रेसिडेंट म्हणून नियुक्ती केली. आऊट्रमच्या १८५५ च्या अहवालाचा आधार घेऊन फेब्रुवारी १८५६ मध्ये अवध संस्थान विलीन करण्यात आले.",
+        "en": "Awadh possessed legitimate heirs and could not be annexed under the Doctrine of Lapse. Resident Colonel Sleeman opposed outright takeover, so Dalhousie appointed Sir James Outram in 1854. Outram's scathing 1855 report alleging rampant corruption and misrule provided the administrative pretext for its annexation in February 1856."
+      }
+    },
+    {
+      "id": 11,
+      "question": {
+        "mr": "१८५४ च्या सर चार्ल्स वूड यांच्या खलिताबाबत (Wood's Despatch 1854) खालीलपैकी कोणती शिफारस करण्यात आली नव्हती?",
+        "en": "Which of the following was NOT among the recommendations made by Sir Charles Wood's Despatch of 1854?"
+      },
+      "options": [
+        { "mr": "सर्व प्राथमिक शाळांमध्ये केवळ इंग्रजी माध्यमातूनच शिक्षण अनिवार्य करणे.", "en": "Making English the strictly mandatory medium of instruction across all primary village schools." },
+        { "mr": "लंडन विद्यापीठाच्या धर्तीवर कलकत्ता, मुंबई आणि मद्रास येथे विद्यापीठे स्थापन करणे.", "en": "Establishing universities modeled on the University of London at Calcutta, Bombay, and Madras." },
+        { "mr": "प्रत्येक प्रांतात स्वतंत्र 'सार्वजनिक शिक्षण खाते' (Department of Public Instruction - DPI) सुरू करणे.", "en": "Creating a separate Department of Public Instruction (DPI) in every province." },
+        { "mr": "खाजगी शैक्षणिक संस्थांना प्रोत्साहन देण्यासाठी 'अनुदान पद्धत' (Grants-in-aid system) लागू करणे.", "en": "Instituting a 'Grants-in-aid' system to foster private educational enterprise." }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "विधान १ चुकीचे आहे, कारण वूड्स डिस्पॅचने प्राथमिक शिक्षणासाठी 'स्थानिक मातृभाषा' (Vernacular Languages) आणि उच्च शिक्षणासाठी इंग्रजी माध्यम असा समतोल सुचवला होता; प्राथमिक स्तरावर इंग्रजी सक्तीचे केले नव्हते. उर्वरित तिन्ही तरतुदी (विद्यापीठांची स्थापना, DPI खात्याची निर्मिती, आणि ग्रँट्स-इन-एड पद्धत) या खलित्यातील मुख्य शिफारशी होत्या.",
+        "en": "Option 1 is incorrect because Wood's Despatch emphasized vernacular languages for primary school instruction and English for higher university education. It recommended establishing universities at Calcutta, Bombay, and Madras (1857), creating provincial DPIs, and encouraging private schools via grants-in-aid."
+      }
+    },
+    {
+      "id": 12,
+      "question": {
+        "mr": "२ ऑगस्ट १८५८ रोजी ब्रिटिश संसदेने संमत केलेल्या 'भारत सरकार कायद्यानुसार' (Act for the Better Government of India 1858) खालीलपैकी कोणता महत्त्वाचा बदल घडून आला?",
+        "en": "Which major constitutional transformation occurred under the 'Act for the Better Government of India' enacted by the British Parliament on 2 August 1858?"
+      },
+      "options": [
+        { "mr": "ईस्ट इंडिया कंपनीची भारतातील राजवट संपुष्टात येऊन भारताचे प्रशासन थेट ब्रिटिश राजमुकुटाकडे (Crown) हस्तांतरित झाले.", "en": "The East India Company's rule in India was terminated and the governance was transferred directly to the British Crown." },
+        { "mr": "भारतात प्रांतीय स्वायत्तता लागू करून भारतीयांना मतदानाचा अधिकार देण्यात आला.", "en": "Provincial autonomy was introduced and voting rights were granted to Indians." },
+        { "mr": "भारताचा गव्हर्नर-जनरल हा केवळ नामधारी प्रमुख बनून सर्व अधिकार भारतीय मंत्रिमंडळाकडे गेले.", "en": "The Governor-General became purely titular, transferring all powers to an Indian ministry." },
+        { "mr": "ब्रिटिश सैन्यातील सर्व युरोपियन सैनिकांना मायदेशी परत पाठवून केवळ भारतीय सैन्य ठेवण्यात आले.", "en": "All European troops were withdrawn from India, leaving an entirely native armed force." }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१८५७ च्या उठावानंतर संमत झालेल्या १८५८ च्या कायद्याने ईस्ट इंडिया कंपनीची राजवट संपवली. भारताचा कारभार सम्राज्ञी व्हिक्टोरियाच्या वतीने चालवण्यासाठी ब्रिटनमध्ये 'भारत मंत्री' (Secretary of State) आणि भारतात 'व्हाइसरॉय' (Viceroy) ही पदे निर्माण करण्यात आली. १७८४ चे कोर्ट ऑफ डायरेक्टर्स आणि बोर्ड ऑफ कंट्रोल बरखास्त करून दुहेरी शासन संपुष्टात आले.",
+        "en": "The Government of India Act 1858 dissolved the East India Company and transferred the government, territories, and revenues of India directly to the British Crown. It created the cabinet-level office of the Secretary of State for India assisted by a 15-member council and redesignated the Governor-General as the Viceroy."
+      }
+    },
+    {
+      "id": 13,
+      "question": {
+        "mr": "१८६१ च्या 'इंडियन कौन्सिल्स कायद्यान्वये' (Indian Councils Act 1861) व्हाइसरॉय लॉर्ड कॅनिंगने सुरू केलेल्या कोणत्या प्रशासकीय पद्धतीला कायदेशीर मान्यता मिळाली?",
+        "en": "Which administrative practice initiated by Viceroy Lord Canning received statutory recognition under the Indian Councils Act of 1861?"
+      },
+      "options": [
+        { "mr": "खातेवाटप पद्धत (Portfolio System / Cabinet System)", "en": "Portfolio System (Cabinet System)" },
+        { "mr": "थेट निवडणूक पद्धत (Direct Election System)", "en": "Direct Election System" },
+        { "mr": "द्विदल राज्यपद्धत (Dyarchy System)", "en": "Dyarchy System" },
+        { "mr": "कलेक्टर नियंत्रण पद्धत (Collector Supremacy System)", "en": "Collector Supremacy System" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "लॉर्ड कॅनिंगने १८५९ मध्ये प्रायोगिक तत्त्वावर सुरू केलेल्या 'खातेवाटप पद्धतीला' (Portfolio System) १८६१ च्या कौन्सिल कायद्याने वैधानिक मान्यता दिली. यानुसार कौन्सिलच्या प्रत्येक सदस्याकडे गृह, महसूल, लष्कर, वित्त यांसारखी विशिष्ट खाती सोपवण्यात आली आणि तो त्या खात्याचा मंत्री म्हणून निर्णय घेण्यास सक्षम बनला.",
+        "en": "The Indian Councils Act of 1861 formalized the 'Portfolio System' introduced by Lord Canning in 1859. Under this cabinet-style arrangement, individual members of the Executive Council were placed in charge of specific departments (home, revenue, finance, military) and authorized to issue departmental orders."
+      }
+    },
+    {
+      "id": 14,
+      "question": {
+        "mr": "१८६१ च्या कौन्सिल कायद्यानुसार व्हाइसरॉयला आणीबाणीच्या काळात कौन्सिलच्या संमतीशिवाय किती कालावधीसाठी 'अध्यादेश' (Ordinance) जारी करण्याचा अधिकार मिळाला?",
+        "en": "Under the Indian Councils Act of 1861, for what maximum duration was the Viceroy empowered to promulgate 'Ordinances' without Council concurrence during emergencies?"
+      },
+      "options": [
+        { "mr": "६ महिने (6 Months)", "en": "6 Months" },
+        { "mr": "१ वर्ष (1 Year)", "en": "1 Year" },
+        { "mr": "३ महिने (3 Months)", "en": "3 Months" },
+        { "mr": "२ वर्षे (2 Years)", "en": "2 Years" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१८६१ च्या कायद्याने व्हाइसरॉयला आणीबाणीच्या काळात कायदेमंडळाच्या संमतीशिवाय तात्काळ अध्यादेश (Ordinance) काढण्याचा विशेष अधिकार दिला. या अध्यादेशाचा प्रभाव सर्वसाधारण कायद्यासारखाच असे आणि त्याची कमाल मुदत ६ महिने होती. हीच तरतूद पुढे भारतीय संविधानाच्या कलम १२३ मध्ये राष्ट्रपतींच्या अध्यादेश अधिकाराचे मूळ ठरली.",
+        "en": "Section 48 of the Indian Councils Act of 1861 empowered the Viceroy to issue ordinances in times of emergency without the legislative council. Such ordinances held the force of law for a maximum validity period of six months."
+      }
+    },
+    {
+      "id": 15,
+      "question": {
+        "mr": "१८६० मध्ये जेम्स विल्सन यांनी सादर केलेल्या भारताच्या पहिल्या अर्थसंकल्पात आयकर (Income Tax) लागू करण्यामागे खालीलपैकी कोणते मुख्य कारण होते?",
+        "en": "What was the primary fiscal necessity behind the introduction of the first Income Tax in India by James Wilson in the budget of 1860?"
+      },
+      "options": [
+        { "mr": "१८५७ च्या लष्करी उठावाचा बंदोबस्त करताना तिजोरीवर पडलेल्या प्रचंड कर्जाची व वित्तीय तुटीची भरपाई करणे", "en": "Liquidating massive exchequer deficits and imperial debts incurred during the military suppression of the Revolt of 1857" },
+        { "mr": "लंडनमध्ये नवीन संसद भवन बांधण्यासाठी निधी उभारणे", "en": "Financing the construction of a new Parliament House in London" },
+        { "mr": "भारतात प्राथमिक शिक्षणाचा खर्च भागवणे", "en": "Subsidizing primary education infrastructure across Indian villages" },
+        { "mr": "ब्रिटिश व्यापाऱ्यांना आयात मालावर ५०% सवलत देणे", "en": "Financing a 50% tariff rebate for British commercial imports" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१८५७ च्या उठावादरम्यान झालेल्या लष्करी मोहिमांमुळे ब्रिटिश भारताचे राष्ट्रीय कर्ज प्रचंड वाढले होते आणि मोठा वित्तीय तुटवडा निर्माण झाला होता. ही वित्तीय दरी भरून काढण्यासाठी कौन्सिलचे पहिले अर्थ सदस्य जेम्स विल्सन यांनी १८६० मध्ये ₹५०० पेक्षा जास्त उत्पन्न असणाऱ्यांवर भारतात पहिल्यांदाच आयकर लादला.",
+        "en": "Suppressing the Revolt of 1857 depleted the Company's coffers, leaving the British Crown with a staggering post-rebellion public debt. Finance Member James Wilson introduced the Income Tax Act in July 1860 to restore imperial fiscal solvency."
+      }
+    },
+    {
+      "id": 16,
+      "question": {
+        "mr": "१८६३ मध्ये लंडन येथे जाऊन 'इंडियन सिव्हिल सर्व्हिस' (ICS) परीक्षा उत्तीर्ण होणारे पहिले भारतीय खालीलपैकी कोण होते?",
+        "en": "Who became the first Indian to travel to London and qualify for the competitive Indian Civil Service (ICS) examination in 1863?"
+      },
+      "options": [
+        { "mr": "सत्येंद्रनाथ टागोर", "en": "Satyendranath Tagore" },
+        { "mr": "सुरेंद्रनाथ बॅनर्जी", "en": "Surendranath Banerjee" },
+        { "mr": "रमेशचंद्र दत्त", "en": "Romesh Chunder Dutt" },
+        { "mr": "बिहारीलाल गुप्ता", "en": "Bihari Lal Gupta" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "रवींद्रनाथ टागोरांचे थोरले बंधू सत्येंद्रनाथ टागोर हे १८६३ मध्ये लंडन येथे कठीण आयसीएस (ICS) परीक्षा उत्तीर्ण होणारे पहिले भारतीय ठरले. १८६४ मध्ये त्यांना मुंबई इलाख्यात (बॉम्बे प्रेसिडेन्सी) प्रशासकीय अधिकारी म्हणून नियुक्त करण्यात आले.",
+        "en": "Satyendranath Tagore, elder brother of Rabindranath Tagore, broke the European monopoly over the superior civil services by qualifying for the Indian Civil Service in London in 1863, taking up his posting in the Bombay Presidency in 1864."
+      }
+    },
+    {
+      "id": 17,
+      "question": {
+        "mr": "१८६६ च्या भीषण 'ओडिशा दुष्काळानंतर' (Orissa Famine 1866) प्रशासकीय अपयशाची चौकशी करून दुष्काळ निवारण उपाय सुचवण्यासाठी कोणाच्या अध्यक्षतेखाली आयोग नेमण्यात आला होता?",
+        "en": "Following the tragic Orissa Famine of 1866, under whose chairmanship was an inquiry commission appointed to investigate administrative failure and recommend famine relief guidelines?"
+      },
+      "options": [
+        { "mr": "सर जॉर्ज कॅम्पबेल (Sir George Campbell)", "en": "Sir George Campbell" },
+        { "mr": "सर रिचर्ड स्ट्रॅची (Sir Richard Strachey)", "en": "Sir Richard Strachey" },
+        { "mr": "सर जेम्स लायेल (Sir James Lyall)", "en": "Sir James Lyall" },
+        { "mr": "सर अँथनी मॅकडोनेल (Sir Antony MacDonnell)", "en": "Sir Antony MacDonnell" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१८६६ मधील ओडिशा दुष्काळात सुमारे १० लाखांहून अधिक लोक उपासमारीने मेले. या संकटाची चौकशी करण्यासाठी सर जॉन लॉरेन्सने सर जॉर्ज कॅम्पबेल यांच्या अध्यक्षतेखाली आयोग नेमला. या आयोगाने सरकारच्या निष्क्रियतेवर ताशेरे ओढले आणि दुष्काळ काळात अन्नधान्याची वाहतूक सुरळीत ठेवण्यासाठी रस्ते व कालव्यांच्या विकासाची शिफारस केली.",
+        "en": "The devastating Orissa Famine of 1866 claimed nearly a third of the regional population. Viceroy Sir John Lawrence constituted the Campbell Commission (under Sir George Campbell), which criticized official complacency and recommended public expenditure on coastal canals and transport infrastructure."
+      }
+    },
+    {
+      "id": 18,
+      "question": {
+        "mr": "फेब्रुवारी १८७२ मध्ये अंदमान बेटावरील पोर्ट ब्लेअर येथे कार्यरत असताना कोणत्या ब्रिटिश व्हाइसरॉयची शेर अली आफ्रिदी या कैद्याने हत्या केली होती?",
+        "en": "In February 1872, which serving British Viceroy was assassinated at Port Blair in the Andaman Islands by a convict named Sher Ali Afridi?"
+      },
+      "options": [
+        { "mr": "लॉर्ड मेयो (Lord Mayo)", "en": "Lord Mayo" },
+        { "mr": "लॉर्ड एल्गिन पहिला (Lord Elgin I)", "en": "Lord Elgin I" },
+        { "mr": "लॉर्ड नॉर्थब्रुक (Lord Northbrook)", "en": "Lord Northbrook" },
+        { "mr": "लॉर्ड लिटन (Lord Lytton)", "en": "Lord Lytton" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "८ फेब्रुवारी १८७२ रोजी लॉर्ड मेयो अंदमानातील पोर्ट ब्लेअर येथील तुरुंगाची पाहणी करून परत येत असताना शेर अली आफ्रिदी या पठाण कैद्याने त्यांच्यावर चाकूने हल्ला करून त्यांची हत्या केली. पदावर असताना हत्या झालेला लॉर्ड मेयो हा एकमेव ब्रिटिश व्हाइसरॉय होता.",
+        "en": "On 8 February 1872, Lord Mayo was fatally stabbed at Hope Town jetty, Port Blair, by Sher Ali Afridi, a Pathan convict undergoing life imprisonment. Mayo remains the solitary Viceroy of India to have been assassinated while holding office."
+      }
+    },
+    {
+      "id": 19,
+      "question": {
+        "mr": "१ जानेवारी १८७७ रोजी लॉर्ड लिटनने भरवलेल्या पहिल्या 'दिल्ली दरबाराबाबत' खालील विधाने विचारात घ्या:\nअ. या दरबारात राणी व्हिक्टोरियाला 'कैसर-ए-हिंद' (Empress of India) ही पदवी बहाल करण्यात आली.\nब. हा दरबार अशा वेळी भरवण्यात आला होता जेव्हा दक्षिण आणि पश्चिम भारतात भीषण दुष्काळ पडला होता आणि लाखो लोक मरत होते.\nवरीलपैकी कोणते/ती विधान/ने बरोबर आहेत?",
+        "en": "Consider the following statements regarding the First Delhi Durbar convened by Lord Lytton on 1 January 1877:\na. At this durbar, Queen Victoria was proclaimed 'Kaiser-i-Hind' (Empress of India).\nb. This durbar was organized at a time when Southern and Western India were reeling from catastrophic famine and mass starvation.\nWhich of the statements given above is/are correct?"
+      },
+      "options": [
+        { "mr": "फक्त अ", "en": "Only a" },
+        { "mr": "फक्त ब", "en": "Only b" },
+        { "mr": "अ आणि ब दोन्ही", "en": "Both a and b" },
+        { "mr": "दोन्ही नाही", "en": "Neither a nor b" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "दोन्ही विधाने योग्य आहेत. १८७६ च्या 'रॉयल टायटल्स ॲक्ट'नुसार राणी व्हिक्टोरियाला 'कैसर-ए-हिंद' पदवी देण्यासाठी १ जानेवारी १८७७ रोजी दिल्ली दरबार आयोजित करण्यात आला. मद्रास, म्हैसूर, मुंबई व हैदराबादमध्ये दुष्काळाने कोट्यवधी लोक होरपळत असताना लिटनने या दरबारावर प्रचंड सरकारी निधी उधळला; यावर 'रोम जळत असताना नीरो फिडल वाजवत होता' अशी टीका झाली.",
+        "en": "Both statements are correct. Enacted under Disraeli's Royal Titles Act, the Delhi Durbar proclaimed Queen Victoria Empress of India ('Kaiser-i-Hind') on 1 January 1877. This ostentatious imperial spectacle took place amidst the horrific Madras Famine of 1876–1878, drawing severe public condemnation."
+      }
+    },
+    {
+      "id": 20,
+      "question": {
+        "mr": "१८७८ च्या 'भारतीय शस्त्र कायद्यान्वये' (Indian Arms Act 1878) खालीलपैकी कोणती तरतूद करण्यात आली होती?",
+        "en": "Which of the following provisions was enacted under Lord Lytton's Indian Arms Act (Act XI of 1878)?"
+      },
+      "options": [
+        { "mr": "भारतीयांना परवान्याशिवाय शस्त्र बाळगणे फौजदारी गुन्हा ठरवण्यात आले, तर युरोपियन आणि अँग्लो-इंडियन्सना यातून पूर्ण सूट देण्यात आली.", "en": "Possessing arms without a license was criminalized for Indians, while Europeans and Anglo-Indians were exempted." },
+        { "mr": "ब्रिटिश सैनिकांना भारतात बंदुका वापरण्यास सक्त मनाई करण्यात आली.", "en": "British soldiers were forbidden from carrying firearms within India." },
+        { "mr": "केवळ संस्थानिकांच्या सैन्याला शस्त्रे ठेवण्याची मुभा देण्यात आली.", "en": "Only princely state armies were permitted to maintain weapons." },
+        { "mr": "प्रत्येक भारतीय नागरिकाला शस्त्र परवाना मोफत देण्याची सक्ती करण्यात आली.", "en": "The government was mandated to issue arms licenses to all Indian citizens free of charge." }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "लॉर्ड लिटनने संमत केलेल्या १८७८ च्या आर्म्स ॲक्टनुसार भारतीयांना शस्त्र बाळगणे किंवा विकत घेणे यासाठी परवाना सक्तीचा केला आणि विनापरवाना शस्त्र बाळगल्यास तुरुंगवासाची शिक्षा ठेवली. सर्वात आक्षेपार्ह बाब म्हणजे युरोपियन, युरेशियन आणि अँग्लो-इंडियन यांना यातून पूर्णपणे वगळले होते, ज्यामुळे हा उघड वांशिक भेदभावाचा कायदा ठरला.",
+        "en": "The Indian Arms Act of 1878 made possessing, carrying, or manufacturing arms without an official license a serious criminal offense for Indians, while explicitly exempting Europeans, Americans, and Anglo-Indians, demonstrating institutionalized racial inequality."
+      }
+    },
+    {
+      "id": 21,
+      "question": {
+        "mr": "१८८० ते १८८४ या काळात भारताचा व्हाइसरॉय राहिलेल्या लॉर्ड रिपनने केलेल्या सुधारणांच्या संदर्भात खालीलपैकी कोणती घटना त्याच्या कार्यकाळाशी संबंधित नाही?",
+        "en": "Which of the following events was NOT associated with the viceroyalty of Lord Ripon (1880–1884)?"
+      },
+      "options": [
+        { "mr": "१८७८ च्या व्हर्नाक्युलर प्रेस कायद्याला अधिक कठोर करणे", "en": "Making the Vernacular Press Act of 1878 more stringent" },
+        { "mr": "स्थानिक स्वराज्य संस्थांविषयीचा १८८२ चा ऐतिहासिक ठराव संमत करणे", "en": "Enacting the landmark Resolution on Local Self-Government in 1882" },
+        { "mr": "पहिला फॅक्टरी कायदा १८८१ संमत करणे", "en": "Passing the First Indian Factory Act in 1881" },
+        { "mr": "१८८२ मध्ये सर विल्यम हंटर यांच्या अध्यक्षतेखाली शिक्षण आयोग नेमणे", "en": "Appointing the Hunter Education Commission in 1882" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "पर्याय १ चुकीचा आहे, कारण लॉर्ड रिपनने १८८२ मध्ये व्हर्नाक्युलर प्रेस कायदा 'कठोर' केला नाही, तर तो 'पूर्णपणे रद्द' (Repeal) करून भारतीय भाषेतील वृत्तपत्रांना स्वातंत्र्य मिळवून दिले. उर्वरित तिन्ही बाबी (स्थानिक स्वराज्य ठराव, १८८१ चा फॅक्टरी कायदा, आणि १८८२ चा हंटर आयोग) लॉर्ड रिपनच्या कार्यकाळातील महत्त्वपूर्ण सुधारणा आहेत.",
+        "en": "Option 1 is not associated with Ripon because he repealed (rather than strengthened) the repressive Vernacular Press Act in 1882. The other three initiatives—the Local Self-Government Resolution (1882), the First Factory Act (1881), and the Hunter Commission (1882)—were landmark achievements of his administration."
+      }
+    },
+    {
+      "id": 22,
+      "question": {
+        "mr": "१८८३ मधील वादग्रस्त 'इल्बर्ट बिल' (Ilbert Bill) मागे तत्कालीन ब्रिटिश सरकारचा मुख्य उद्देश काय होता?",
+        "en": "What was the core objective of the controversial 'Ilbert Bill' introduced in 1883 under Lord Ripon?"
+      },
+      "options": [
+        { "mr": "फौजदारी न्यायव्यवस्थेतून वांशिक भेदभाव दूर करून भारतीय जिल्हा सत्र न्यायाधीशांना युरोपियन आरोपींचे खटले चालवण्याचा अधिकार देणे", "en": "Eliminating racial discrimination in criminal jurisdiction by empowering Indian Sessions Judges to try European offenders" },
+        { "mr": "ब्रिटिश न्यायालयांचे सर्व कामकाज स्थानिक प्रादेशिक भाषेतून चालवण्याची सक्ती करणे", "en": "Mandating that all judicial business in British courts be transacted in regional vernaculars" },
+        { "mr": "भारतीय न्यायाधीशांचे वेतन युरोपियन न्यायाधीशांपेक्षा ५०% कमी करणे", "en": "Fixing the salaries of Indian judges at 50% below European judicial staff" },
+        { "mr": "फौजदारी खटल्यांमधून ज्युरी पद्धत कायमची बंद करणे", "en": "Abolishing the jury trial system across all criminal courts" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "लॉर्ड रिपनच्या कौन्सिलमधील कायदे सदस्य सर कोर्टनी इल्बर्ट याने २ फेब्रुवारी १८८३ रोजी हे विधेयक मांडले. तत्कालीन नियमांनुसार भारतीय न्यायाधीशांना युरोपियन ब्रिटिश आरोपींवर खटला चालवण्याचा अधिकार नव्हता. या विधेयकाने भारतीय व युरोपियन न्यायाधीशांना समान दर्जा देण्याचा प्रयत्न केला. याविरोधात अँग्लो-इंडियन समाजाने तीव्र वंशवादी विरोध (White Mutiny) केला.",
+        "en": "Drafted by Law Member Sir Courtenay Ilbert, the Bill sought to remove racial disqualifications in the criminal code by vesting Indian District Magistrates and Sessions Judges with jurisdiction to try European British subjects. The bill ignited an organized racial agitation among the Anglo-Indian community."
+      }
+    },
+    {
+      "id": 23,
+      "question": {
+        "mr": "२८ डिसेंबर १८८५ रोजी मुंबई येथे भारतीय राष्ट्रीय काँग्रेसचे (INC) पहिले अधिवेशन भरले, तेव्हा भारताचा व्हाइसरॉय कोण होता?",
+        "en": "Who was the Viceroy of India when the first session of the Indian National Congress (INC) met in Bombay on 28 December 1885?"
+      },
+      "options": [
+        { "mr": "लॉर्ड डफरिन (Lord Dufferin)", "en": "Lord Dufferin" },
+        { "mr": "लॉर्ड रिपन (Lord Ripon)", "en": "Lord Ripon" },
+        { "mr": "लॉर्ड लॅन्सडाउन (Lord Lansdowne)", "en": "Lord Lansdowne" },
+        { "mr": "लॉर्ड एल्गिन दुसरा (Lord Elgin II)", "en": "Lord Elgin II" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "भारतीय राष्ट्रीय काँग्रेसच्या स्थापनेवेळी (डिसेंबर १८८५) लॉर्ड डफरिन (कार्यकाळ: १८८४-१८८८) हा भारताचा व्हाइसरॉय होता. सुरुवातीला डफरिनने काँग्रेसकडे दुर्लक्ष केले किंवा सौम्य पाठिंबा दिला; परंतु काँग्रेसच्या राजकीय मागण्या वाढल्यावर १८८८ मध्ये त्याने काँग्रेसला 'मूठभर सुशिक्षित लोकांचे प्रतिनिधित्व करणारी संस्था' (Microscopic Minority) म्हणून हिणवले.",
+        "en": "Lord Dufferin (Viceroy from 1884 to 1888) was the head of the colonial government during the founding session of the Indian National Congress in Bombay in 1885. While initially neutral, he subsequently denounced Congress in 1888 as representing merely a 'microscopic minority'."
+      }
+    },
+    {
+      "id": 24,
+      "question": {
+        "mr": "१८८६ मध्ये लॉर्ड डफरिनने भारतीय सनदी सेवेच्या पुनर्रचनेसाठी नियुक्त केलेल्या 'ॲचिसन आयोगाने' (Aitchison Commission 1886) खालीलपैकी कोणती मुख्य शिफारस केली?",
+        "en": "Which of the following was a key structural recommendation of the Aitchison Commission (1886) appointed by Lord Dufferin regarding the civil services?"
+      },
+      "options": [
+        { "mr": "सनदी सेवांची तीन वर्गांमध्ये विभागणी करणे: इम्पेरियल, प्रांतीय (Provincial) आणि दुय्यम (Subordinate) नागरी सेवा.", "en": "Dividing the civil services into a tripartite structure: Imperial, Provincial, and Subordinate Civil Services." },
+        { "mr": "आयसीएस परीक्षा लंडनऐवजी केवळ कलकत्ता येथे घेणे.", "en": "Holding the ICS examination exclusively in Calcutta instead of London." },
+        { "mr": "सर्व प्रशासकीय पदे केवळ भारतीय संस्थानिकांच्या वारसदारांना देणे.", "en": "Reserving all executive posts solely for descendants of native royal dynasties." },
+        { "mr": "नागरी सेवा परीक्षेची कमाल वयोमर्यादा १६ वर्षे इतकी कमी करणे.", "en": "Lowering the maximum entrance age for civil service examinations to 16 years." }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "सर चार्ल्स ॲचिसन आयोगाने लिटनची अयशस्वी 'स्टॅच्युटरी सिव्हिल सर्व्हिस' रद्द केली आणि प्रशासकीय सेवांची त्रिस्तरीय रचना सुचवली: १. इम्पेरियल सिव्हिल सर्व्हिस (लंडनमध्ये परीक्षा), २. प्रोव्हिन्शियल सिव्हिल सर्व्हिस (प्रांतीय सरकारांमार्फत भरती), आणि ३. सबऑर्डिनेट सिव्हिल सर्व्हिस. तसेच परीक्षेची कमाल वयोमर्यादा १९ वरून वाढवून २३ वर्षे करण्याची शिफारस केली.",
+        "en": "The Aitchison Public Service Commission (1886) recommended abolishing the Statutory Civil Service and reorganizing administrative recruitment into three tiers: the Imperial Indian Civil Service, the Provincial Civil Service, and the Subordinate Civil Service, while raising the entrance age limit to 23."
+      }
+    },
+    {
+      "id": 25,
+      "question": {
+        "mr": "१८९३ मध्ये ब्रिटिश भारत आणि अफगाणिस्तान यांच्यातील सीमा निश्चित करण्यासाठी कोणत्या ब्रिटिश मुत्सद्द्याच्या नेतृत्वाखाली शिष्टमंडळ काबूलला पाठवण्यात आले होते?",
+        "en": "Under which British diplomat's leadership was a mission dispatched to Kabul in 1893 to demarcate the international border between British India and Afghanistan?"
+      },
+      "options": [
+        { "mr": "सर मॉर्टिमर ड्युरंड (Sir Mortimer Durand)", "en": "Sir Mortimer Durand" },
+        { "mr": "सर हेन्री मॅकमोहन (Sir Henry McMahon)", "en": "Sir Henry McMahon" },
+        { "mr": "सर सिरिल रॅडक्लिफ (Sir Cyril Radcliffe)", "en": "Sir Cyril Radcliffe" },
+        { "mr": "सर लुई काव्हानाऱ्या (Sir Louis Cavagnari)", "en": "Sir Louis Cavagnari" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "लॉर्ड लॅन्सडाउनच्या कार्यकाळात १८९३ मध्ये ब्रिटिश परराष्ट्र सचिव सर मॉर्टिमर ड्युरंड आणि अफगाणिस्तानचा अमीर अब्दुर रहमान खान यांच्यात करार झाला. या करारानुसार भारत-अफगाणिस्तान सीमारेषा निश्चित झाली, ज्याला 'ड्युरंड रेषा' (Durand Line) म्हटले जाते. आज ही सीमा पाकिस्तान आणि अफगाणिस्तान दरम्यान आहे.",
+        "en": "In 1893, Foreign Secretary Sir Mortimer Durand negotiated an agreement with Afghan Amir Abdur Rahman Khan on behalf of Lord Lansdowne's administration, establishing the frontier boundary known as the 'Durand Line'."
+      }
+    }
+  ]
+}

@@ -1,0 +1,464 @@
+{
+  "testId": "p-hist-02-t5",
+  "title": {
+    "mr": "भारतातील ब्रिटिश सत्तेचा विस्तार व प्रशासन — सराव 5",
+    "en": "British Rule in India — Practice Test 5"
+  },
+  "durationMinutes": 20,
+  "marksPerQuestion": 1,
+  "negativeMarking": 0.25,
+  "totalMarks": 25,
+  "difficulty": "मध्यम ते काठिण्य",
+  "questions": [
+    {
+      "id": 1,
+      "question": {
+        "mr": "१७७२ मध्ये वॉरन हेस्टिंग्सने महसूल प्रशासनाची घडी बसवण्यासाठी महसूल मंडळाचे (Board of Revenue) मध्यवर्ती कार्यालय मुर्शिदाबादहून कोठे हलवले?",
+        "en": "In 1772, where did Warren Hastings shift the central revenue board and exchequer treasury from Murshidabad to consolidate administrative control?"
+      },
+      "options": [
+        { "mr": "कलकत्ता", "en": "Calcutta" },
+        { "mr": "पाटणा", "en": "Patna" },
+        { "mr": "ढाका", "en": "Dacca" },
+        { "mr": "मुंगेर", "en": "Munger" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१७७२ मध्ये वॉरन हेस्टिंग्सने दुहेरी शासनव्यवस्था संपुष्टात आणून महसुलाची मध्यवर्ती तिजोरी (खजिना) आणि महसूल नियंत्रण मंडळ जुनी प्रांतीय राजधानी मुर्शिदाबादहून कलकत्त्याला हलवले. या निर्णयामुळे कलकत्ता हे ब्रिटिश भारताचे वास्तविक प्रशासकीय व राजकीय केंद्र बनले.",
+        "en": "In 1772, Warren Hastings terminated the Dual Government and shifted the central treasury and Board of Revenue from Murshidabad to Calcutta, establishing Calcutta as the unquestioned administrative nerve center of British power in Bengal."
+      }
+    },
+    {
+      "id": 2,
+      "question": {
+        "mr": "१७८४ च्या 'द एशियाटिक सोसायटी ऑफ बेंगॉल'च्या (Asiatic Society of Bengal) स्थापनेचा मुख्य प्रशासकीय हेतू काय होता?",
+        "en": "What was the core administrative purpose behind the establishment of 'The Asiatic Society of Bengal' by Sir William Jones in 1784?"
+      },
+      "options": [
+        { "mr": "पौर्वात्य भाषा, हस्तलिखिते, हिंदू-मुस्लिम धर्मशास्त्रे आणि स्थानिक कायद्यांचा पद्धतशीर अभ्यास करून ब्रिटिश नोकरशाहीची प्रशासन क्षमता वाढवणे", "en": "To facilitate systematic study of Oriental languages, manuscripts, and indigenous jurisprudence to aid British civil servants in judicial governance" },
+        { "mr": "भारतात केवळ ख्रिश्चन धर्मप्रसाराचे जाळे निर्माण करणे", "en": "To exclusively develop networks for Christian evangelical conversion" },
+        { "mr": "भारतातील सर्व स्थानिक शाळांना पाश्चात्य इंग्रजी माध्यमात रूपांतरित करणे", "en": "To convert all indigenous primary institutions into English-medium schools" },
+        { "mr": "भारतीय सैनिकांना युरोपियन युद्धनीतीचे प्रशिक्षण देणे", "en": "To train Indian auxiliary sepoys in European combat doctrine" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१५ जानेवारी १७८४ रोजी कलकत्ता सुप्रीम कोर्टाचे न्यायाधीश सर विल्यम जोन्स यांनी वॉरन हेस्टिंग्सच्या पाठिंब्याने एशियाटिक सोसायटी स्थापन केली. ब्रिटिश अधिकाऱ्यांना स्थानिक समाज, रूढी आणि कायद्यांची योग्य माहिती व्हावी, जेणेकरून न्यायदान आणि महसूल प्रशासन सुलभ होईल, हा यामागील खरा प्रशासकीय उद्देश होता.",
+        "en": "Founded on 15 January 1784 by jurist Sir William Jones under Warren Hastings' patronage, the Asiatic Society of Bengal was intended to master Oriental classics, languages, and customary codes, thereby equipping colonial judges and administrators to govern Indian society through indigenous legal principles."
+      }
+    },
+    {
+      "id": 3,
+      "question": {
+        "mr": "लॉर्ड कॉर्नवॉलिसने १७९० ते १७९३ दरम्यान फौजदारी न्यायव्यवस्थेत केलेल्या पुनर्रचनेबाबत खालील विधाने विचारात घ्या:\nअ. त्याने जुनी जिल्हा फौजदारी न्यायालये (Faujdari Adalats) बरखास्त करून युरोपियन न्यायाधीशांच्या अखत्यारीतील चार प्रांतीय सर्किट न्यायालये स्थापन केली.\nब. त्याने कलकत्ता येथे 'सदर निजामत अदालत' पुनर्रचित करून तिचे अध्यक्षपद स्वतः गव्हर्नर-जनरल आणि कौन्सिलकडे ठेवले.\nवरीलपैकी कोणते/ती विधान/ने बरोबर आहेत?",
+        "en": "Consider the following statements regarding Lord Cornwallis's criminal judicial reforms (1790–1793):\na. He abolished the indigenous District Faujdari Adalats and established four Provincial Courts of Circuit presided over by European judges.\nb. He relocated and reconstituted the Sadar Nizamat Adalat at Calcutta, placing it under the Governor-General and Council.\nWhich of the statements given above is/are correct?"
+      },
+      "options": [
+        { "mr": "फक्त अ", "en": "Only a" },
+        { "mr": "फक्त ब", "en": "Only b" },
+        { "mr": "अ आणि ब दोन्ही", "en": "Both a and b" },
+        { "mr": "दोन्ही नाही", "en": "Neither a nor b" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "दोन्ही विधाने योग्य आहेत. कॉर्नवॉलिसने भारतीय काझी व मुफ्तींच्या ताब्यातील जुनी जिल्हा फौजदारी न्यायालये बंद केली आणि कलकत्ता, मुर्शिदाबाद, ढाका व पाटणा येथे युरोपियन अधिकाऱ्यांखाली फिरती सर्किट न्यायालये सुरू केली. तसेच सर्वोच्च फौजदारी अपील न्यायालय असणारी 'सदर निजामत अदालत' मुर्शिदाबादहून कलकत्त्याला आणून तिचे सर्वोच्च अधिकार स्वतःकडे घेतले.",
+        "en": "Both statements are correct. In criminal judicature, Cornwallis supplanted native district faujdars by instituting four Circuit Courts (Calcutta, Murshidabad, Dacca, and Patna) staffed by European covenanted servants and relocated the apex Sadar Nizamat Adalat to Calcutta under the direct supervision of the Governor-General and his Council."
+      }
+    },
+    {
+      "id": 4,
+      "question": {
+        "mr": "१७९८ मध्ये लॉर्ड वेलस्लीने लागू केलेल्या 'तैनाती फौज' पद्धतीमध्ये सामील झालेल्या संस्थानांवर खालीलपैकी कोणता अंतर्गत प्रशासकीय निर्बंध लादला गेला होता?",
+        "en": "Under Lord Wellesley's Subsidiary Alliance system (1798), which specific administrative restriction was imposed on signatory princely states regarding foreign personnel?"
+      },
+      "options": [
+        { "mr": "कंपनी सरकारच्या पूर्वपरवानगीशिवाय कोणत्याही इतर युरोपियन व्यक्तीला (उदा. फ्रेंच) नोकरीत ठेवण्यास किंवा आश्रय देण्यास सक्त मनाई", "en": "Absolute prohibition on employing or harboring non-British European nationals (such as the French) without prior Company sanction" },
+        { "mr": "संस्थानिकाने आपल्या सर्व सरदारांना तात्काळ बडतर्फ करणे अनिवार्य", "en": "Mandatory summary dismissal of all hereditary feudal sardars" },
+        { "mr": "राज्यातील सर्व हिंदू मंदिरांवर सरकारी कर गोळा करण्याची सक्ती", "en": "Compulsory collection of state taxes across all regional shrines" },
+        { "mr": "संस्थानिकाने आपल्या प्रजेला केवळ इंग्रजी शिकण्याची सक्ती करणे", "en": "Forcing subjects within the state to learn only the English language" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "तैनाती फौजेच्या प्रमुख अटींपैकी एक अट अशी होती की संबंधित संस्थानाने आपल्या दरबारातून सर्व फ्रेंच व इतर युरोपियन लष्करी अधिकारी काढून टाकले पाहिजेत आणि ब्रिटिश रेसिडेंटच्या पूर्वसंमतीशिवाय कोणत्याही परदेशी नागरिकाला नोकरीत ठेवता येणार नाही. या अटीमुळे संस्थानांमधून फ्रेंच प्रभाव पूर्णपणे नष्ट झाला.",
+        "en": "A fundamental clause of Wellesley's Subsidiary Treaty barred the signatory state from engaging, employing, or retaining in service any non-British European, particularly French military officers, effectively eliminating French diplomatic and military rivalry in the subcontinent."
+      }
+    },
+    {
+      "id": 5,
+      "question": {
+        "mr": "१८०६ मध्ये तंजावर, म्हैसूर व मद्रास सैनिकांमध्ये पेटलेल्या 'वेल्लोरच्या शिपाई उठावानंतर' (Vellore Mutiny 1806) तत्कालीन ब्रिटिश सरकारने कोणते प्रशासकीय पाऊल उचलले?",
+        "en": "Following the Vellore Mutiny of 1806 in the Madras Army, which immediate administrative step was taken by the British authorities?"
+      },
+      "options": [
+        { "mr": "मद्रासचे गव्हर्नर लॉर्ड विल्यम बेंटिंक आणि सेनापती सर जॉन क्रॅडॉॉक यांना तात्काळ माघारी बोलावून वादग्रस्त पोशाख नियम रद्द केले.", "en": "Governor of Madras Lord William Bentinck and Commander-in-Chief Sir John Cradock were recalled, and the offensive dress regulations were repealed." },
+        { "mr": "मद्रास प्रेसिडेन्सी कायमची बरखास्त करून मुंबईत विलीन केली.", "en": "The Madras Presidency was permanently dissolved and merged into Bombay." },
+        { "mr": "सर्व भारतीय सैनिकांना तत्काळ शस्त्रमुक्त करून सैन्यातून काढून टाकण्यात आले.", "en": "All native sepoys were completely disarmed and permanently disbanded." },
+        { "mr": "टिपू सुलतानच्या कुटुंबाला पुन्हा म्हैसूरच्या गादीवर बसवले.", "en": "Tipu Sultan's family was restored back onto the throne of Mysore." }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१० जुलै १८०६ रोजी धार्मिक प्रतीकांवरील बंदीमुळे वेल्लोरचा उठाव झाला. उठाव दडपल्यानंतर लंडनच्या संचालक मंडळाने मद्रासचे गव्हर्नर लॉर्ड विल्यम बेंटिंक आणि लष्करप्रमुख सर जॉन क्रॅडॉॉक यांच्यावर ठपका ठेवून त्यांना इंग्लंडला परत बोलावले, नवीन शिरस्त्राणांचे नियम मागे घेतले आणि वेल्लोरच्या किल्ल्यात असणाऱ्या टिपूच्या वारसांना कलकत्त्याला हलवले.",
+        "en": "Alarmed by the bloody rebellion at Vellore sparked by intrusive military dress and turban regulations, the Court of Directors recalled both Madras Governor Lord William Bentinck and Commander-in-Chief Sir John Cradock, revoked the controversial uniform codes, and transferred Tipu's exiled sons from Vellore to Calcutta."
+      }
+    },
+    {
+      "id": 6,
+      "question": {
+        "mr": "१८१६ मध्ये 'सुगौलीच्या तहाने' इंग्रज-नेपाळ युद्धाची समाप्ती झाल्यानंतर ब्रिटिशांना हिमालयातील कोणत्या दोन महत्त्वाच्या जिल्ह्यांचा प्रत्यक्ष ताबा मिळाला?",
+        "en": "Under the Treaty of Sugauli (1816) ending the Anglo-Nepalese War, which two strategic Himalayan hill districts were permanently ceded to the British?"
+      },
+      "options": [
+        { "mr": "गढवाल आणि कुमाऊँ (Garhwal and Kumaon)", "en": "Garhwal and Kumaon" },
+        { "mr": "काश्मीर आणि लडाख", "en": "Kashmir and Ladakh" },
+        { "mr": "सिक्कीम आणि भूतान", "en": "Sikkim and Bhutan" },
+        { "mr": "कांगडा आणि लाहौल", "en": "Kangra and Lahaul" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "मार्च १८१६ च्या सुगौलीच्या तहानुसार नेपाळने पश्चिमेकडील गढवाल आणि कुमाऊँ हे दोन डोंगराळ जिल्हे ब्रिटिश ईस्ट इंडिया कंपनीच्या स्वाधीन केले. या प्रदेशामुळे ब्रिटिशांना मध्य आशिया आणि तिबेटकडे जाणाऱ्या व्यापारी मार्गांवर नियंत्रण मिळाले आणि पुढे नैनिताल, सिमला, मसुरी ही थंड हवेची शहरे विकसित करता आली.",
+        "en": "Under the 1816 Treaty of Sugauli, the Gurkha kingdom of Nepal ceded the western Himalayan districts of Kumaon and Garhwal to the Company, giving the British direct access to trans-Himalayan trade routes to Tibet and establishing sanitarium settlements like Shimla, Mussoorie, and Almora."
+      }
+    },
+    {
+      "id": 7,
+      "question": {
+        "mr": "१८१८ मध्ये पेशवाईच्या विलीनीकरणानंतर मुंबई सरकारने 'दख्खनचे आयुक्त' (Commissioner of the Deccan) म्हणून कोणाची नियुक्ती करून पुणे व महाराष्ट्राचा प्रशासकीय बंदोबस्त केला?",
+        "en": "Following the fall of the Peshwai in 1818, who was appointed as the Sole Commissioner of the Deccan to organize the administrative settlement of conquered Maratha territories?"
+      },
+      "options": [
+        { "mr": "माउंटस्टुअर्ट एल्फिन्स्टन (Mountstuart Elphinstone)", "en": "Mountstuart Elphinstone" },
+        { "mr": "सर जॉन माल्कम (Sir John Malcolm)", "en": "Sir John Malcolm" },
+        { "mr": "कॅप्टन ग्रँट डफ (Captain Grant Duff)", "en": "Captain Grant Duff" },
+        { "mr": "रॉबर्ट विंगेट (Robert Wingate)", "en": "Robert Wingate" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "तिसऱ्या इंग्रज-मराठा युद्धानंतर लॉर्ड हेस्टिंग्सने पुण्यातील माजी ब्रिटिश रेसिडेंट माउंटस्टुअर्ट एल्फिन्स्टन यांची 'कमिशनर ऑफ दख्खन' म्हणून नियुक्ती केली. एल्फिन्स्टनने पारंपरिक पाटील, कुलकर्णी आणि देशमुख यांच्याशी सामंजस्य ठेवून महाराष्ट्रात सुधारित रयतवारी महसूल व न्यायिक प्रशासन स्थापन केले आणि पुढे तो मुंबईचा गव्हर्नर (१८१९-१८२७) बनला.",
+        "en": "Lord Hastings designated Mountstuart Elphinstone as the Sole Commissioner of the Deccan in 1818. Elphinstone preserved village headships (Patils) and traditional institutions while crafting a modified Ryotwari settlement before serving as Governor of Bombay from 1819 to 1827."
+      }
+    },
+    {
+      "id": 8,
+      "question": {
+        "mr": "१८२२ मध्ये लॉर्ड हेस्टिंग्सच्या कार्यकाळात बंगालमधील शेतकऱ्यांना जमीनदारांच्या मनमानी भाडेवाढ आणि बेदखलीपासून वाचवण्यासाठी कोणता कायदा करण्यात आला होता?",
+        "en": "Which tenancy statute was enacted in 1822 during Lord Hastings' administration to afford cultivators in Bengal a degree of protection against arbitrary rent hikes and eviction?"
+      },
+      "options": [
+        { "mr": "बंगाल टेनन्सी ॲक्ट १८२२ (रेग्युलेशन VII)", "en": "Bengal Tenancy Act 1822 (Regulation VII)" },
+        { "mr": "बंगाल जमीनदारी सुधारणा कायदा १८२२", "en": "Bengal Zamindari Reform Act 1822" },
+        { "mr": "कायमधारा पुनरावलोकन कायदा", "en": "Permanent Settlement Review Act" },
+        { "mr": "शेतकरी कर्ज संरक्षण कायदा", "en": "Peasant Debt Protection Act" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "कायमधारा पद्धतीत जमीनदारांनी शेतकऱ्यांवर चालवलेला अन्याय रोखण्यासाठी १८२२ चा बंगाल कुळ कायदा (Bengal Tenancy Act 1822) करण्यात आला. या कायद्याने जुन्या वंशपरंपरागत कुळांना ठरवून दिलेल्या महसुलापेक्षा जास्त भाडेवाढ करण्यापासून मर्यादित संरक्षण दिले.",
+        "en": "To mitigate the harsh consequences of Cornwallis's 1793 settlement which left cultivators as mere tenants-at-will, the Bengal Tenancy Regulation of 1822 was enacted under Lord Hastings to check arbitrary rent enhancements on hereditary raiyats."
+      }
+    },
+    {
+      "id": 9,
+      "question": {
+        "mr": "१८२४ मधील 'बराकपूरचा लष्करी उठाव' (Barrackpore Sepoy Mutiny 1824) खालीलपैकी कोणत्या युद्धाच्या पार्श्वभूमीवर घडला होता?",
+        "en": "Against the geopolitical backdrop of which colonial war did the Barrackpore Sepoy Mutiny of November 1824 take place?"
+      },
+      "options": [
+        { "mr": "पहिले इंग्रज-ब्रह्मी युद्ध (First Anglo-Burmese War)", "en": "First Anglo-Burmese War" },
+        { "mr": "पहिले इंग्रज-अफगाण युद्ध", "en": "First Anglo-Afghan War" },
+        { "mr": "तिसरे इंग्रज-मराठा युद्ध", "en": "Third Anglo-Maratha War" },
+        { "mr": "इंग्रज-शीख युद्ध", "en": "Anglo-Sikh War" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "नोव्हेंबर १८२४ मध्ये पहिल्या इंग्रज-ब्रह्मी युद्धादरम्यान ४७ व्या बंगाल देशी पायदळ तुकडीला समुद्रावरून म्यानमारला (ब्रह्मदेश) जाण्याचा हुकूम झाला. समुद्रावरून प्रवास केल्यास जात भ्रष्ट होते (काळेपाणी) या धार्मिक समजुतीमुळे आणि वाहतूक भत्त्याच्या अभावामुळे शिपायांनी जाण्यास नकार दिला. जनरल पॅगोने तोफा डागून हा उठाव निर्घृणपणे चिरडला.",
+        "en": "The 1824 Barrackpore Mutiny broke out during the First Anglo-Burmese War when the 47th Bengal Native Infantry refused embarkation orders for Rangoon over grievances regarding transport allowances and Hindu taboos against maritime sea travel ('Kala Pani'), resulting in their violent suppression by British artillery."
+      }
+    },
+    {
+      "id": 10,
+      "question": {
+        "mr": "लॉर्ड विल्यम बेंटिंकने १८३१ मध्ये प्रशासनातील भ्रष्टाचार कमी करण्यासाठी आणि न्यायदान गतिमान करण्यासाठी खालीलपैकी कोणती न्यायालये बरखास्त केली?",
+        "en": "In 1831, which tier of intermediate appellate courts established by Cornwallis was abolished by Lord William Bentinck to streamline civil justice and cut expenditure?"
+      },
+      "options": [
+        { "mr": "प्रांतीय अपील व सर्किट न्यायालये (Provincial Courts of Appeal and Circuit)", "en": "Provincial Courts of Appeal and Circuit" },
+        { "mr": "सदर दिवाणी अदालत", "en": "Sadar Diwani Adalat" },
+        { "mr": "सदर निजामत अदालत", "en": "Sadar Nizamat Adalat" },
+        { "mr": "जिल्हा मुन्सिफ न्यायालये", "en": "District Munsif Courts" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "कॉर्नवॉलिसने सुरू केलेली चार प्रांतीय अपील आणि सर्किट न्यायालये खटले रखडवणारी आणि अकार्यक्षम ठरली होती. १८३१ मध्ये बेंटिंकने ही सर्व प्रांतीय सर्किट न्यायालये बरखास्त केली आणि त्यांचे फौजदारी व अपीली अधिकार थेट जिल्हा न्यायाधीश आणि सत्र न्यायाधीशांकडे (District and Sessions Judge) सोपवले.",
+        "en": "Lord William Bentinck abolished Cornwallis's dilatory and expensive Provincial Courts of Appeal and Circuit in 1831, transferring their judicial and appellate functions directly to District and Sessions Judges and assigning administrative supervision to revenue commissioners."
+      }
+    },
+    {
+      "id": 11,
+      "question": {
+        "mr": "१८३३ च्या सनदी कायद्याद्वारे (Charter Act 1833) मुंबई आणि मद्रास या प्रांतांच्या विधिमंडळांवर खालीलपैकी कोणता मूलभूत निर्बंध लादला गेला?",
+        "en": "Under the Charter Act of 1833, which fundamental constitutional restriction was imposed on the provincial governments of Bombay and Madras?"
+      },
+      "options": [
+        { "mr": "त्यांचे कायदे करण्याचे स्वतंत्र अधिकार पूर्णपणे काढून घेण्यात आले आणि सर्व कायदेनिर्मिती केंद्रीय कौन्सिलकडे केंद्रित झाली.", "en": "Their independent legislative powers were completely revoked, centralizing all statute-making authority in the central council." },
+        { "mr": "त्यांना केवळ महसूलविषयक कायदे करण्याचे अधिकार उरले.", "en": "They were restricted to passing legislation exclusively on land revenue matters." },
+        { "mr": "त्यांच्या कारभारात केवळ भारतीय मंत्र्यांची नियुक्ती अनिवार्य करण्यात आली.", "en": "Mandating the induction of native ministers into their provincial executives." },
+        { "mr": "त्यांना केंद्र सरकारच्या परवानगीशिवाय पोलीस दल बाळगण्यास बंदी घालण्यात आली.", "en": "They were prohibited from maintaining provincial police forces without central approval." }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१८३३ च्या कायद्याने भारतातील कायदेनिर्मितीचे पूर्ण केंद्रीकरण केले. मुंबई व मद्रासच्या गव्हर्नरांचे कायदे बनवण्याचे अधिकार काढून घेण्यात आले आणि संपूर्ण ब्रिटिश भारतासाठी कायदे करण्याचे एकाधिकार 'गव्हर्नर-जनरल ऑफ इंडिया इन कौन्सिल' कडे सोपवण्यात आले. हे प्रांतीय अधिकार पुढे १८६१ च्या कायद्याने पुनर्संचयित झाले.",
+        "en": "The Charter Act of 1833 centralized imperial lawmaking by divesting the Governors of Bombay and Madras of their independent legislative authority, vesting exclusive statutory jurisdiction over all British territories in the Governor-General of India in Council."
+      }
+    },
+    {
+      "id": 12,
+      "question": {
+        "mr": "१८३५ मध्ये लॉर्ड विल्यम बेंटिंकने 'कलकत्ता मेडिकल कॉलेज' (Calcutta Medical College) सुरू केल्यानंतर, १८३६ मध्ये मानवी मृतदेहाचे विच्छेदन (Dissection) करणारे पहिले भारतीय वैद्यकीय विद्वान कोण होते?",
+        "en": "Following the establishment of the Calcutta Medical College by Lord William Bentinck in 1835, who was the first Indian medical scholar to conduct a human anatomical dissection in 1836?"
+      },
+      "options": [
+        { "mr": "पंडित मधुसूदन गुप्ता (Pandit Madhusudan Gupta)", "en": "Pandit Madhusudan Gupta" },
+        { "mr": "डॉ. महेंद्रलाल सरकार", "en": "Dr. Mahendralal Sarkar" },
+        { "mr": "डॉ. कादंबिनी गांगुली", "en": "Dr. Kadambini Ganguly" },
+        { "mr": "द्वारकानाथ कोटनिस", "en": "Dwarkanath Kotnis" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१० जानेवारी १८३६ रोजी कलकत्ता मेडिकल कॉलेजमध्ये पंडित मधुसूदन गुप्ता यांनी डॉ. हेन्री गूडिव्ह यांच्या मार्गदर्शनाखाली मानवी मृतदेहाचे प्रत्यक्ष विच्छेदन केले. पारंपरिक धार्मिक रूढी आणि विटाळाच्या समजुती मोडून आधुनिक वैद्यकशास्त्रात पाऊल ठेवणारे ते पहिले भारतीय ठरले; या ऐतिहासिक कामगिरीबद्दल फोर्ट विल्यमवरून तोफांची सलामी देण्यात आली होती.",
+        "en": "On 10 January 1836, Ayurvedic scholar and medical student Pandit Madhusudan Gupta performed the first human anatomical dissection at Calcutta Medical College, breaking orthodox caste taboos and marking a milestone for modern Western medical science in India."
+      }
+    },
+    {
+      "id": 13,
+      "question": {
+        "mr": "वायव्य प्रांतातील (North-Western Provinces) महालवारी महसूल पद्धतीत १८३३ च्या रेग्युलेशन IX द्वारे सुधारणा करून वैज्ञानिक मोजणी व नकाशे तयार केल्याबद्दल कोणाला 'उत्तर भारतातील भूमहसूल बंदोबस्ताचा जनक' मानले जाते?",
+        "en": "Who is acknowledged as the 'Father of Land Settlement in Northern India' for reorganizing the Mahalwari system with cadastral field mapping and soil classification under Regulation IX of 1833?"
+      },
+      "options": [
+        { "mr": "रॉबर्ट मार्टिन्स बर्ड (Robert Merttins Bird)", "en": "Robert Merttins Bird" },
+        { "mr": "होल्ट मॅकेन्झी (Holt Mackenzie)", "en": "Holt Mackenzie" },
+        { "mr": "जेम्स थॉमसन (James Thomason)", "en": "James Thomason" },
+        { "mr": "अलेक्झांडर रीड (Alexander Read)", "en": "Alexander Read" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "रॉबर्ट मार्टिन्स बर्ड यांनी जेम्स थॉमसन यांच्या सहकार्याने महालवारी महसूल पद्धतीचे सरलीकरण केले. जमिनीचे अचूक त्रिकोणमितीय सर्वेक्षण, खेड्यांचे नकाशे आणि जमिनीच्या सुपीकतेनुसार वाजवी महसूल दर ठरवण्याचे काम बर्ड यांनी केले; म्हणून त्यांना उत्तर भारतातील भूमहसूल पद्धतीचे जनक म्हणतात.",
+        "en": "Robert Merttins Bird overhauled the Mahalwari system under Regulation IX of 1833 by introducing cadastral field surveys, village maps, and systematic soil productivity registers, earning him the title 'Father of Land Settlement in Northern India'."
+      }
+    },
+    {
+      "id": 14,
+      "question": {
+        "mr": "१८४२ मध्ये पहिल्या इंग्रज-अफगाण युद्धाच्या दारुण पराभवानंतर लॉर्ड ऑकलंडच्या जागी गव्हर्नर-जनरल म्हणून नियुक्त झालेल्या लॉर्ड एलनबरोने अफगाणिस्तानबाबत कोणते पाऊल उचलले?",
+        "en": "Following the British military disaster in the First Anglo-Afghan War in 1842, what course of action did Governor-General Lord Ellenborough take regarding Afghanistan?"
+      },
+      "options": [
+        { "mr": "जनरल पोलॉकच्या सैन्यामार्फत काबूलवर तात्पुरता प्रतिहल्ला करून ब्रिटिश कैद्यांची सुटका केली आणि अफगाणिस्तानातून सैन्य पूर्णपणे माघारी बोलावले.", "en": "Dispatched General Pollock's 'Army of Retribution' to relieve British hostages and execute a complete military withdrawal from Afghanistan." },
+        { "mr": "अफगाणिस्तान कायमस्वरूपी ब्रिटिश साम्राज्यात विलीन केला.", "en": "Permanently annexed Afghanistan directly into British India." },
+        { "mr": "काबूल येथे कायमस्वरूपी ३०,००० ब्रिटिश सैनिकांची छावणी उभारली.", "en": "Stationed a permanent garrison of 30,000 British troops at Kabul." },
+        { "mr": "दोस्त मोहम्मदला लंडनला नेऊन फाशी दिली.", "en": "Transported Dost Mohammad to London for public execution." }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "ऑकलंडच्या आपत्तीनंतर लॉर्ड एलनबरोने जनरल पोलॉक आणि जनरल नॉट यांच्या नेतृत्वाखाली 'आर्मी ऑफ रिट्रीब्युशन' पाठवली. त्यांनी काबूलचा बाजार जाळून टाकला, ब्रिटिश कैद्यांची सुटका केली आणि ब्रिटिशांची प्रतिष्ठा पुनर्संचयित झाल्याचे भासवून ऑक्टोबर १८४२ मध्ये अफगाणिस्तानातून संपूर्ण सैन्य भारतात परत बोलावले व दोस्त मोहम्मदला पुन्हा गादीवर बसू दिले.",
+        "en": "Assuming office in 1842, Lord Ellenborough authorized General George Pollock's 'Army of Retribution' to re-enter Kabul, destroy the Grand Bazaar, and rescue British prisoners. Demonstrating imperial retaliation, Ellenborough then evacuated all British forces from Afghanistan and permitted Dost Mohammad Khan to reoccupy his throne."
+      }
+    },
+    {
+      "id": 15,
+      "question": {
+        "mr": "१८४६ मधील पहिल्या इंग्रज-शीख युद्धातील निर्णायक लढाई खालीलपैकी कोणती होती, ज्या लढाईत ब्रिटिशांनी सतलज नदीकाठी शिखांचा अंतिम पराभव केला?",
+        "en": "Which was the final, decisive battle of the First Anglo-Sikh War fought on the banks of the Sutlej River on 10 February 1846?"
+      },
+      "options": [
+        { "mr": "सोब्राऑनची लढाई (Battle of Sobraon)", "en": "Battle of Sobraon" },
+        { "mr": "मुदकीची लढाई (Battle of Mudki)", "en": "Battle of Mudki" },
+        { "mr": "फिरोजशाहची लढाई (Battle of Ferozeshah)", "en": "Battle of Ferozeshah" },
+        { "mr": "अलीवालची लढाई (Battle of Aliwal)", "en": "Battle of Aliwal" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१० फेब्रुवारी १८४६ रोजी झालेली सोब्राऑनची लढाई ही पहिल्या शीख युद्धातील अंतिम व सर्वात रक्तरंजित लढाई होती. लाल सिंग व तेज सिंग यांच्या विश्वासघातामुळे शीख सैन्याचा दारुण पराभव झाला. जनरल ह्यू गॉफ आणि लॉर्ड हार्डिंग्ज यांनी सतलज ओलांडून लाहोरवर ताबा मिळवला आणि लाहोरचा तह लादला.",
+        "en": "Fought on 10 February 1846, the Battle of Sobraon was the decisive and bloody finale of the First Anglo-Sikh War. Betrayed by commanders Tej Singh and Lal Singh, the Sikh army was routed at the Sutlej crossings, forcing the Lahore Darbar to submit to the Treaty of Lahore."
+      }
+    },
+    {
+      "id": 16,
+      "question": {
+        "mr": "१८४९ मध्ये दुसऱ्या इंग्रज-शीख युद्धानंतर पंजाबचे विलीनीकरण करताना लॉर्ड डलहौसीने अल्पवयीन महाराजा दिलीपसिंग यांच्याबाबत कोणता निर्णय घेतला?",
+        "en": "When Lord Dalhousie annexed Punjab in March 1849 following the Second Anglo-Sikh War, what administrative settlement was made regarding the minor Maharaja Duleep Singh?"
+      },
+      "options": [
+        { "mr": "त्यांना गादीवरून पदच्युत करून वार्षिक ५०,००० पाउंड निवृत्तिवेतनावर इंग्लंडला शिक्षणासाठी पाठवले आणि कोहिनूर हिरा राणी व्हिक्टोरियाला दिला.", "en": "He was deposed on an annual pension of £50,000, dispatched to England for education, and made to surrender the Koh-i-Noor diamond to Queen Victoria." },
+        { "mr": "त्यांना पंजाबचे नामधारी राजे म्हणून लाहोरच्या किल्ल्यात ठेवण्यात आले.", "en": "He was retained as titular Maharaja inside the Lahore Fort under direct regency." },
+        { "mr": "त्यांना तात्काळ अंदमानच्या सेल्युलर तुरुंगात जन्मठेपेसाठी पाठवले.", "en": "He was banished to the Andaman penal settlement for life imprisonment." },
+        { "mr": "त्यांना काश्मीरचे स्वतंत्र राज्यपाल म्हणून नियुक्त केले.", "en": "He was appointed as the hereditary civilian governor of Kashmir." }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "२९ मार्च १८४९ च्या लाहोर करारानुसार अवघ्या ११ वर्षांच्या महाराजा दिलीपसिंग यांना पदच्युत करण्यात आले. त्यांना वार्षिक ₹४ ते ५ लाखांचे (सुमारे ५०,००० पाउंड) पेन्शन देऊन इंग्लंडला पाठवण्यात आले. त्यांच्याकडून प्रसिद्ध 'कोहिनूर' हिरा ईस्ट इंडिया कंपनीने राणी व्हिक्टोरियाला अर्पण करण्यासाठी घेतला.",
+        "en": "Under the March 1849 surrender terms, eleven-year-old Maharaja Duleep Singh surrendered the sovereignty of the Punjab, resigned the Koh-i-Noor diamond to the British Crown, and was sent to Britain on an imperial pension of £50,000 per annum under the guardianship of Sir John Login."
+      }
+    },
+    {
+      "id": 17,
+      "question": {
+        "mr": "१८५२ मध्ये लॉर्ड डलहौसीने मुंबई इलाख्यातील करमुक्त (इनाम) जमिनींची चौकशी करण्यासाठी नेमलेल्या 'इनाम कमिशन' (Inam Commission) चा मुख्य परिणाम काय झाला?",
+        "en": "What was the direct socio-political consequence of the 'Inam Commission' instituted by Lord Dalhousie in the Bombay Presidency in 1852?"
+      },
+      "options": [
+        { "mr": "सुमारे ३५,००० इनाम जमिनींची तपासणी करून मालकीच्या कागदपत्रांअभावी २०,००० हून अधिक वतने/जहागिरी जप्त करण्यात आल्या, ज्यामुळे पश्चिम भारतात तीव्र असंतोष पसरला.", "en": "Out of 35,000 scrutinized rent-free estates, over 20,000 were confiscated for lack of title deeds, creating deep hostility among western Indian landed gentry." },
+        { "mr": "सर्व इनामदारांना १००% करमुक्त सनदा देऊन कायमस्वरूपी संरक्षण देण्यात आले.", "en": "All inamdars were granted perpetual tax-exempt patents and legal protection." },
+        { "mr": "जमीनदारांची सर्व कर्जे सरकारी तिजोरीतून पूर्णपणे माफ करण्यात आली.", "en": "All debts of landlords were completely liquidated out of the public treasury." },
+        { "mr": "मुंबईतील सर्व शेतजमिनींचे वाटप केवळ ब्रिटिश अधिकाऱ्यांना करण्यात आले.", "en": "All agricultural lands in Bombay were redistributed exclusively to British personnel." }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१८५२ च्या इनाम कमिशनने जुन्या मराठा व पेशवे काळातील इनाम व जहागिरींच्या सनदा तपासल्या. लेखी पुरावे नसलेल्या २०,००० पेक्षा जास्त इनामे सरकारने खालसा केली. यामुळे महाराष्ट्रातील सरदार, देशमुख आणि वतनदार वर्ग आर्थिकदृष्ट्या कंगाल झाला आणि त्यांच्यात १८५७ च्या उठावाची ठिणगी पडण्यास मदत झाली.",
+        "en": "The Inam Commission of 1852 examined titles of rent-free estates across western India. Failing documentary verification, the colonial administration resumed more than 20,000 estates, alienating the Maratha aristocracy and landed elite prior to the 1857 uprising."
+      }
+    },
+    {
+      "id": 18,
+      "question": {
+        "mr": "लॉर्ड डलहौसीच्या काळात १८५४ मध्ये स्थापन करण्यात आलेल्या स्वतंत्र 'सार्वजनिक बांधकाम खात्याच्या' (Public Works Department - PWD) पूर्वी सार्वजनिक बांधकामांची जबाबदारी कोणाकडे होती?",
+        "en": "Prior to the creation of a separate Public Works Department (PWD) by Lord Dalhousie in 1854, which entity was responsible for civil engineering and construction works?"
+      },
+      "options": [
+        { "mr": "लष्करी मंडळ (Military Board)", "en": "Military Board" },
+        { "mr": "महसूल मंडळ (Board of Revenue)", "en": "Board of Revenue" },
+        { "mr": "स्थानिक ग्रामपंचायती", "en": "Local Village Panchayats" },
+        { "mr": "खाजगी ब्रिटिश रेल्वे कंपन्या", "en": "Private British Railway Companies" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "डलहौसीच्या आधी सर्व सार्वजनिक बांधकामे (रस्ते, पूल, कालवे) लष्कराच्या 'मिलिटरी बोर्ड'कडे (Military Board) होती. हे मंडळ अकार्यक्षम आणि संथ होते. डलहौसीने नागरी कामांची जबाबदारी लष्कराकडून काढून स्वतंत्र नागरी PWD खाते तयार केले आणि अभियंत्यांची स्वतंत्र केडर सुरू केली.",
+        "en": "Before 1854, all public construction works were supervised by an inefficient Military Board burdened with ordnance duties. Lord Dalhousie established a dedicated civilian Public Works Department (PWD) staffed by qualified civil engineers to manage canals, bridges, and metalled trunk roads."
+      }
+    },
+    {
+      "id": 19,
+      "question": {
+        "mr": "१८५४ च्या सर चार्ल्स वूड यांच्या शिक्षण खलितानुसार १८५७ मध्ये भारतातील पहिली तीन विद्यापीठे लंडन विद्यापीठाच्या धर्तीवर कोणत्या तीन शहरांमध्ये स्थापन झाली?",
+        "en": "In accordance with Sir Charles Wood's Despatch of 1854, in which three Presidency cities were India's first three universities incorporated in 1857 on the model of London University?"
+      },
+      "options": [
+        { "mr": "कलकत्ता, मुंबई आणि मद्रास", "en": "Calcutta, Bombay, and Madras" },
+        { "mr": "कलकत्ता, दिल्ली आणि लाहोर", "en": "Calcutta, Delhi, and Lahore" },
+        { "mr": "मुंबई, पुणे आणि अलाहाबाद", "en": "Bombay, Poona, and Allahabad" },
+        { "mr": "मद्रास, बंगळुरू आणि नागपूर", "en": "Madras, Bangalore, and Nagpur" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "वूड्स डिस्पॅचच्या शिफारशीनुसार १८५७ च्या उठावाच्या दरम्यानच ब्रिटिश सरकारने तीन विद्यापीठे स्थापन केली: कलकत्ता विद्यापीठ (जानेवारी १८५७), मुंबई विद्यापीठ (जुलै १८५७), आणि मद्रास विद्यापीठ (सप्टेंबर १८५७). ही विद्यापीठे केवळ परीक्षा घेणारी आणि पदव्या देणारी संस्थात्मक मंडळे होती.",
+        "en": "Pursuant to the recommendations of Wood's Despatch, the Universities of Calcutta (January 1857), Bombay (July 1857), and Madras (September 1857) were incorporated by legislative acts as examining bodies modeled on the University of London."
+      }
+    },
+    {
+      "id": 20,
+      "question": {
+        "mr": "१८५८ च्या भारत सरकार कायद्यानुसार 'कोर्ट ऑफ डायरेक्टर्स' आणि 'बोर्ड ऑफ कंट्रोल' रद्द झाल्यानंतर त्यांचे सर्व अधिकार कोणाकडे केंद्रित झाले?",
+        "en": "Following the abolition of the Court of Directors and the Board of Control under the Government of India Act 1858, in which newly created imperial office were their collective powers vested?"
+      },
+      "options": [
+        { "mr": "भारत मंत्री (Secretary of State for India)", "en": "Secretary of State for India" },
+        { "mr": "भारताचा व्हाइसरॉय (Viceroy of India)", "en": "Viceroy of India" },
+        { "mr": "लंडनचा महापौर (Lord Mayor of London)", "en": "Lord Mayor of London" },
+        { "mr": "कलकत्ता सर्वोच्च न्यायालयाचे मुख्य न्यायाधीश", "en": "Chief Justice of Calcutta Supreme Court" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१८५८ च्या कायद्याने पिट्स इंडिया ॲक्टने सुरू केलेली १७८४ ची दुहेरी नियंत्रण व्यवस्था संपवली. कोर्ट ऑफ डायरेक्टर्स (कंपनीचे संचालक) आणि बोर्ड ऑफ कंट्रोल (ब्रिटिश सरकारी मंडळ) हे दोन्ही रद्द झाले आणि त्यांचे सर्व नागरी, लष्करी, वित्तीय आणि प्रशासकीय अधिकार कॅबिनेट दर्जाच्या 'भारत मंत्री' (Secretary of State for India) या एकाच पदाच्या हाती केंद्रित झाले.",
+        "en": "The Government of India Act 1858 abolished the dual apparatus of the Board of Control and the Court of Directors, concentrating all their administrative, political, and financial powers in the newly instituted office of the Secretary of State for India, a member of the British Cabinet."
+      }
+    },
+    {
+      "id": 21,
+      "question": {
+        "mr": "१८६१ च्या 'इंडियन कौन्सिल्स कायद्याने' (Indian Councils Act 1861) प्रांतीय विधिमंडळांबाबत कोणता महत्त्वपूर्ण विकेंद्रीकरणाचा निर्णय घेतला?",
+        "en": "What landmark decentralizing provision was enacted regarding provincial legislatures by the Indian Councils Act of 1861?"
+      },
+      "options": [
+        { "mr": "१८३३ च्या कायद्याने हिरावून घेतलेले मुंबई आणि मद्रास प्रांतांचे कायदे बनवण्याचे स्वतंत्र अधिकार पुन्हा बहाल करण्यात आले.", "en": "Restoration of the independent lawmaking powers of the Bombay and Madras Presidencies, which had been stripped by the Act of 1833." },
+        { "mr": "मुंबई आणि मद्रास या प्रांतांना केंद्र सरकारपासून पूर्ण स्वातंत्र्य देण्यात आले.", "en": "Bombay and Madras Presidencies were granted complete political independence from the central government." },
+        { "mr": "सर्व प्रांतांमध्ये थेट सार्वत्रिक प्रौढ मतदानाने निवडणुका सुरू झाल्या.", "en": "Direct universal adult suffrage elections were inaugurated across all provinces." },
+        { "mr": "प्रांतीय सरकारांना स्वतःचे स्वतंत्र चलन पाडण्याची परवानगी मिळाली.", "en": "Provincial administrations were allowed to mint separate regional currencies." }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१८३३ च्या सनदी कायद्याने मुंबई व मद्रासचे कायदे करण्याचे अधिकार काढून घेऊन संपूर्ण सत्तेचे केंद्रीकरण केले होते. १८६१ च्या कौन्सिल कायद्याने ही चूक सुधारून मुंबई व मद्रास प्रांतांना कायदे बनवण्याचे अधिकार पुन्हा बहाल केले (Legislative Devolution) आणि बंगाल, वायव्य प्रांत व पंजाबमध्ये नवीन प्रांतीय कायदेमंडळे स्थापन करण्याची तरतूद केली.",
+        "en": "The Indian Councils Act of 1861 reversed the centralizing policy of the 1833 Charter Act by restoring legislative powers to the governments of Bombay and Madras, inaugurating the policy of legislative devolution and sanctioning the creation of local legislative councils in Bengal, the North-Western Provinces, and Punjab."
+      }
+    },
+    {
+      "id": 22,
+      "question": {
+        "mr": "१८६० मध्ये सर चार्ल्स वूड यांच्या कार्यकाळात स्थापन झालेल्या केंद्रीय पोलीस आयोगाच्या शिफारशीनुसार भारतातील संपूर्ण पोलीस प्रशासनाची मूलभूत रचना कोणत्या मॉडेलवर आधारित करण्यात आली?",
+        "en": "Based on the Police Commission of 1860, the organizational framework of the Indian police force enacted via the Police Act of 1861 was modeled on which constabulary?"
+      },
+      "options": [
+        { "mr": "रॉयल आयरिश कॉन्स्टॅब्युलरी मॉडेल (Royal Irish Constabulary Model)", "en": "Royal Irish Constabulary Model" },
+        { "mr": "लंडन मेट्रोपॉलिटन पोलीस मॉडेल", "en": "London Metropolitan Police Model" },
+        { "mr": "फ्रेंच जँडार्मरी मॉडेल", "en": "French Gendarmerie Model" },
+        { "mr": "अमेरिकन मार्शल मॉडेल", "en": "American Marshal Model" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१८५९-६० च्या पोलीस आयोगाने सर चार्ल्स नेपियरच्या १८४३ मधील सिंध पोलीस प्रयोगाचा आणि 'रॉयल आयरिश कॉन्स्टॅब्युलरी'चा (Royal Irish Constabulary) अभ्यास करून अहवाल दिला. यानुसार भारतीय पोलीस दल हे लंडनच्या निशस्त्र नागरी पोलिसांसारखे नसून लष्करी धर्तीवर संघटित, सशस्त्र आणि दडपशाही करू शकणारे आयरिश मॉडेलवर आधारलेले बनवण्यात आले.",
+        "en": "The Indian Police Act of 1861 was structured directly on the paramilitary blueprint of the Royal Irish Constabulary (first piloted in Sindh by Sir Charles Napier in 1843), creating a regimented, armed constabulary geared for political surveillance and internal crowd suppression rather than civilian policing."
+      }
+    },
+    {
+      "id": 23,
+      "question": {
+        "mr": "१८७० मध्ये लॉर्ड मेयोने वित्तीय विकेंद्रीकरणाची (Financial Decentralization) योजना आखताना प्रांतांना सोपवलेल्या खात्यांमध्ये खालीलपैकी कशाचा समावेश नव्हता?",
+        "en": "Under Lord Mayo's Financial Decentralization scheme of 1870, which of the following departments was NOT transferred to the administration of provincial governments?"
+      },
+      "options": [
+        { "mr": "लष्कर आणि परराष्ट्र संबंध (Military and Foreign Affairs)", "en": "Military and Foreign Affairs" },
+        { "mr": "पोलीस प्रशासन (Police Administration)", "en": "Police Administration" },
+        { "mr": "तुरुंग आणि वैद्यकीय सेवा (Jails and Medical Services)", "en": "Jails and Medical Services" },
+        { "mr": "प्राथमिक शिक्षण आणि रस्ते (Education and Roads)", "en": "Education and Roads" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "लॉर्ड मेयोने १४ डिसेंबर १८७० च्या ठरावाद्वारे केवळ स्थानिक स्वरूपाची खाती—पोलीस, तुरुंग, शिक्षण, वैद्यकीय सेवा, रस्ते आणि इमारती—प्रांतांकडे सोपवली. लष्कर, संरक्षण, परराष्ट्र संबंध, चलन, रेल्वे व टपाल यांसारखी संपूर्ण साम्राज्याची धोरणात्मक खाती केंद्र सरकारकडेच (व्हाइसरॉयकडे) कायम ठेवली.",
+        "en": "Lord Mayo's 1870 resolution devolved only local civilian services (police, jails, elementary education, public health, and provincial roads) to provincial governments supported by fixed annual block grants. Strategic subjects like defense, military operations, external affairs, and currency remained centralized."
+      }
+    },
+    {
+      "id": 24,
+      "question": {
+        "mr": "१८७८ मध्ये लॉर्ड लिटनने उच्चभ्रू खानदानी भारतीयांना प्रशासनात सामावून घेण्यासाठी आणलेल्या 'स्टॅच्युटरी सिव्हिल सर्व्हिस' (Statutory Civil Service) योजनेबाबत खालीलपैकी कोणते विधान बरोबर आहे?",
+        "en": "Which of the following statements is correct regarding the Statutory Civil Service scheme introduced by Lord Lytton in 1878–79?"
+      },
+      "options": [
+        { "mr": "या योजनेनुसार कव्हेनंटेड पदांपैकी १/६ पदे प्रांतीय सरकारांच्या शिफारशीने भारतीय खानदानी उच्चभ्रू व्यक्तींना नामनिर्देशनाने (Nomination) भरली जात असत.", "en": "One-sixth of covenanted civil posts were to be filled by nomination from aristocratic Indian families on the recommendation of provincial governments." },
+        { "mr": "या योजनेद्वारे सर्व पदांवर थेट खुली स्पर्धा परीक्षा भारतात अनिवार्य केली.", "en": "It mandated open competitive written examinations across all posts inside India." },
+        { "mr": "या सेवेतील अधिकाऱ्यांना ब्रिटिश सनदी अधिकाऱ्यांपेक्षा दुप्पट वेतन दिले जात असे.", "en": "Officers in this cadre were granted double the salaries of British covenanted servants." },
+        { "mr": "या सेवेचे सदस्य केवळ ब्रिटिश संसदेच्या दोन्ही सभागृहांकडून निवडले जात असत.", "en": "Members of this service were recruited exclusively by both Houses of the British Parliament." }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "लॉर्ड लिटनने १८७८-७९ मध्ये 'स्टॅच्युटरी सिव्हिल सर्व्हिस' सुरू केली. यानुसार कव्हेनंटेड सेवेतील एक षष्ठांश (१/६) पदे खुली स्पर्धा परीक्षा न घेता, केवळ उच्च घराण्यातील, निष्ठावंत संस्थानिक व जमीनदार कुटुंबातील तरुणांना नामनिर्देशनाने (Nomination) दिली जात असत. ही पद्धत अत्यंत अकार्यक्षम ठरल्याने १८८६ च्या ॲचिसन आयोगाच्या शिफारशीने ती बंद करण्यात आली.",
+        "en": "Under Lytton's Statutory Civil Service rules (1879), up to one-sixth of posts reserved for covenanted civil servants were filled through nomination by the Viceroy and provincial governors from aristocratic, loyalist Indian families without competitive examination. It was abolished following the Aitchison Commission in 1886."
+      }
+    },
+    {
+      "id": 25,
+      "question": {
+        "mr": "१८८२ च्या हंटर शिक्षण आयोगाच्या (Hunter Education Commission 1882) शिफारशीनुसार प्राथमिक शिक्षणाच्या व्यवस्थापनाची जबाबदारी कोणाकडे सोपवण्यात आली?",
+        "en": "Pursuant to the recommendations of the Hunter Education Commission of 1882, the administration and control of primary education were assigned to which authorities?"
+      },
+      "options": [
+        { "mr": "नव्याने स्थापन करण्यात आलेली जिल्हा मंडळे आणि नगरपालिका (District Boards and Municipalities)", "en": "Newly constituted District Boards and Municipalities" },
+        { "mr": "केवळ ब्रिटिश लष्कराच्या छावण्या", "en": "Exclusively British military cantonment authorities" },
+        { "mr": "लंडन येथील भारत मंत्र्याचे कार्यालय", "en": "The Secretary of State's Office in London" },
+        { "mr": "सर्वोच्च न्यायालयाचे मुख्य न्यायाधीश", "en": "The Chief Justice of the Supreme Court" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१८८२ मध्ये लॉर्ड रिपनने नेमलेल्या सर विल्यम हंटर आयोगाने शिफारस केली की, प्राथमिक शिक्षणाचा विस्तार हा राज्य कारभाराचा मुख्य उद्देश असावा. यासाठी प्राथमिक शाळांचे व्यवस्थापन, तपासणी आणि निधीचे वाटप स्थानिक पातळीवर नव्याने निर्माण झालेल्या स्थानिक स्वराज्य संस्थांकडे—म्हणजेच जिल्हा बोर्ड (District Boards) आणि नगरपालिकांकडे (Municipalities)—सोपवण्यात आले.",
+        "en": "The Hunter Commission (1882) declared that the promotion of primary education should be an imperative duty of the state and recommended that the control, inspection, and local funding of primary schools be delegated to the newly created rural district boards and urban municipal councils."
+      }
+    }
+  ]
+}

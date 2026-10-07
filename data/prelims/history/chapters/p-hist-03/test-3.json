@@ -1,0 +1,927 @@
+  {
+
+    "testId": "p-hist-03-t3",
+
+    "title": {
+
+      "mr": "१८५७ चा उठाव — सराव 3",
+
+      "en": "Revolt of 1857 — Practice Test 3"
+
+    },
+
+    "durationMinutes": 20,
+
+    "marksPerQuestion": 1,
+
+    "negativeMarking": 0.25,
+
+    "totalMarks": 25,
+
+    "difficulty": "मध्यम ते काठिण्य",
+
+    "questions": [
+
+      {
+
+        "id": 1,
+
+        "question": {
+
+          "mr": "१८५६ मध्ये लॉर्ड कॅनिंगच्या काळात संमत झालेल्या कोणत्या लष्करी कायद्यामुळे भारतीय सैनिकांमध्ये असंतोष पसरला होता?",
+
+          "en": "Which military act passed under Lord Canning in 1856 created widespread alarm among sepoys regarding overseas deployment?"
+
+        },
+
+        "options": [
+
+          { "mr": "सामान्य सेवा भरती कायदा (General Service Enlistment Act)", "en": "General Service Enlistment Act" },
+
+          { "mr": "लष्करी पेन्शन कायदा", "en": "Military Pension Act" },
+
+          { "mr": "भारतीय शस्त्र कायदा", "en": "Indian Arms Act" },
+
+          { "mr": "कॅन्टोनमेंट कायदा", "en": "Cantonment Act" }
+
+        ],
+
+        "correctAnswerIndex": 0,
+
+        "explanation": {
+
+          "mr": "२५ जुलै १८५६ रोजी संमत झालेल्या या कायद्यानुसार बंगाल सैन्यातील प्रत्येक नवीन सैनिकाला सरकार जिथे हुकूम देईल तिथे (समुद्रापारही) जाऊन लढण्याचे बंधन घालण्यात आले, ज्याने शिपायांच्या धार्मिक समजुती दुखावल्या.",
+
+          "en": "The General Service Enlistment Act of 1856 required recruits of the Bengal Army to serve wherever ordered, including overseas, violating high-caste Hindu taboos against crossing the sea."
+
+        }
+
+      },
+
+      {
+
+        "id": 2,
+
+        "question": {
+
+          "mr": "१८५७ च्या उठावापूर्वी १८५४ मध्ये डलहौसीने संमत केलेल्या 'टपाल कायद्यामुळे' (Post Office Act 1854) सैनिकांची कोणती जुनी सुविधा बंद झाली होती?",
+
+          "en": "Which privilege of Indian sepoys was abolished by Lord Dalhousie's Post Office Act of 1854?"
+
+        },
+
+        "options": [
+
+          { "mr": "मोफत पत्र पाठवण्याची सुविधा (Free postage privilege)", "en": "Free postage privilege" },
+
+          { "mr": "मोफत प्रवास भत्ता", "en": "Free travel allowance" },
+
+          { "mr": "रेशन सवलत", "en": "Ration concession" },
+
+          { "mr": "सैनिकी गणवेश अनुदान", "en": "Military uniform grant" }
+
+        ],
+
+        "correctAnswerIndex": 0,
+
+        "explanation": {
+
+          "mr": "१८५४ च्या पोस्ट ऑफिस ॲक्टने शिपायांची वर्षानुवर्षे चालत आलेली मोफत टपाल पाठवण्याची सुविधा काढून घेतली, ज्यामुळे शिपायांमध्ये असंतोष वाढला.",
+
+          "en": "The Post Office Act of 1854 withdrew the longstanding privilege of free postage enjoyed by Company sepoys, fueling resentment within the ranks."
+
+        }
+
+      },
+
+      {
+
+        "id": 3,
+
+        "question": {
+
+          "mr": "१८५७ च्या उठावात कानपूर येथे बिबघर हत्याकांडानंतर जनरल हेव्हलॉक आणि सर कॉलिन कॅम्पबेल यांनी कोणत्या तारखेला कानपूर पुन्हा ताब्यात घेतले?",
+
+          "en": "When did the British recapture Kanpur under General Havelock and Sir Colin Campbell?"
+
+        },
+
+        "options": [
+
+          { "mr": "१७ जुलै १८५७ (आणि अंतिम ताबा ६ डिसेंबर १८५७)", "en": "17 July 1857 (final recapture 6 December 1857)" },
+
+          { "mr": "१० मे १८५७", "en": "10 May 1857" },
+
+          { "mr": "१५ ऑगस्ट १८५८", "en": "15 August 1858" },
+
+          { "mr": "२६ जानेवारी १८५८", "en": "26 January 1858" }
+
+        ],
+
+        "correctAnswerIndex": 0,
+
+        "explanation": {
+
+          "mr": "हेव्हलॉकने १७ जुलै १८५७ रोजी कानपूरमध्ये प्रवेश केला. नंतर नोव्हेंबरमध्ये तात्या टोपेंनी पुन्हा कानपूरवर नियंत्रण मिळवले, परंतु सर कॉलिन कॅम्पबेलने ६ डिसेंबर १८५७ रोजी बंडखोरांचा अंतिम पराभव केला.",
+
+          "en": "Havelock entered Kanpur on 17 July 1857. Tatya Tope temporarily recaptured the city in late November, but Sir Colin Campbell decisively defeated the forces on 6 December 1857."
+
+        }
+
+      },
+
+      {
+
+        "id": 4,
+
+        "question": {
+
+          "mr": "लखनौचा वेढा उठवण्यासाठी ब्रिटिशांच्या बाजूने लढताना 'व्हिक्टोरिया क्रॉस' मिळवणारे आणि लखनौचे रक्षण करणारे मुख्य सेनापती कोण होते?",
+
+          "en": "Who served as the Commander-in-Chief who successfully relieved and finally recaptured Lucknow in March 1858?"
+
+        },
+
+        "options": [
+
+          { "mr": "सर कॉलिन कॅम्पबेल (Sir Colin Campbell)", "en": "Sir Colin Campbell" },
+
+          { "mr": "सर ह्यू रोझ", "en": "Sir Hugh Rose" },
+
+          { "mr": "जनरल निकोल्सन", "en": "General Nicholson" },
+
+          { "mr": "कर्नल नील", "en": "Colonel Neill" }
+
+        ],
+
+        "correctAnswerIndex": 0,
+
+        "explanation": {
+
+          "mr": "सर कॉलिन कॅम्पबेल यांनी नेपाळच्या गुरखा सैन्याच्या मदतीने मार्च १८५८ मध्ये लखनौ शहरावर पूर्ण ताबा मिळवला आणि बेगम हजरत महल यांच्या सैन्याचा पराभव केला.",
+
+          "en": "Sir Colin Campbell directed the grand offensive that relieved the Lucknow Residency in November 1857 and completed the final recapture of the city in March 1858."
+
+        }
+
+      },
+
+      {
+
+        "id": 5,
+
+        "question": {
+
+          "mr": "१८५७ च्या उठावात राजस्थानमधील कोटा (Kota) येथे उठाव करणाऱ्या सैनिकांचे नेतृत्व खालीलपैकी कोणाकडे होते?",
+
+          "en": "Who led the popular uprising at Kota (Rajasthan) in 1857, executing the British Political Agent Major Burton?"
+
+        },
+
+        "options": [
+
+          { "mr": "जयदयाळ आणि मेहराब खान (Jaidayal and Mehrab Khan)", "en": "Jaidayal and Mehrab Khan" },
+
+          { "mr": "कुंवर सिंग आणि अमर सिंग", "en": "Kunwar Singh and Amar Singh" },
+
+          { "mr": "राव तुला राम", "en": "Rao Tula Ram" },
+
+          { "mr": "कदम सिंग", "en": "Kadam Singh" }
+
+        ],
+
+        "correctAnswerIndex": 0,
+
+        "explanation": {
+
+          "mr": "कोटा येथे वकील जयदयाळ आणि रिसालदार मेहराब खान यांच्या नेतृत्वाखाली कोटा कंन्टिजंटने बंड करून मेजर बर्टनची हत्या केली आणि अनेक महिने कोटावर स्वतंत्र शासन चालवले.",
+
+          "en": "At Kota, Lala Jaidayal and Mehrab Khan led the rebellion, besieged the Maharao in his palace, and killed Major Burton before General Roberts suppressed them in March 1858."
+
+        }
+
+      },
+
+      {
+
+        "id": 6,
+
+        "question": {
+
+          "mr": "हरियाणातील रेवाडी (Rewari) भागात १८५७ च्या उठावाचे नेतृत्व कोणी केले?",
+
+          "en": "Who led the 1857 uprising in Rewari (Haryana) against the British?"
+
+        },
+
+        "options": [
+
+          { "mr": "राव तुला राम (Rao Tula Ram)", "en": "Rao Tula Ram" },
+
+          { "mr": "कदम सिंग", "en": "Kadam Singh" },
+
+          { "mr": "देवी सिंग", "en": "Devi Singh" },
+
+          { "mr": "शाह मल", "en": "Shah Mal" }
+
+        ],
+
+        "correctAnswerIndex": 0,
+
+        "explanation": {
+
+          "mr": "रेवाडीचे राव तुला राम यांनी ब्रिटिश सत्तेविरुद्ध बंड करून स्वतःला स्वतंत्र घोषित केले आणि दिल्लीच्या सम्राटाला मदत पुरवली. नंतर ते मदतीसाठी रशिया आणि अफगाणिस्तानला गेले, जिथे काबूलमध्ये त्यांचा मृत्यू झाला.",
+
+          "en": "Rao Tula Ram led the revolt in the Ahirwal region of Rewari. After fighting the British at the Battle of Narnaul, he traveled to Iran and Afghanistan seeking foreign aid, dying in Kabul in 1863."
+
+        }
+
+      },
+
+      {
+
+        "id": 7,
+
+        "question": {
+
+          "mr": "मध्य भारतातील मंदसौर (Mandsaur) येथे १८५७ च्या उठावाचे नेतृत्व खालीलपैकी कोणाकडे होते?",
+
+          "en": "Who proclaimed an independent government at Mandsaur (Malwa) during the 1857 uprising?"
+
+        },
+
+        "options": [
+
+          { "mr": "शहजादा फिरोज शाह (Shehzada Firoz Shah)", "en": "Shehzada Firoz Shah" },
+
+          { "mr": "बहादूर शाह", "en": "Bahadur Shah" },
+
+          { "mr": "बख्त खान", "en": "Bakht Khan" },
+
+          { "mr": "अहमदुल्ला शाह", "en": "Ahmadullah Shah" }
+
+        ],
+
+        "correctAnswerIndex": 0,
+
+        "explanation": {
+
+          "mr": "मुघल राजघराण्यातील शहजादा फिरोज शाह यांनी मंदसौर येथे बंड पुकारून स्वतःला स्वतंत्र घोषित केले. त्यांनी तात्या टोपे व रावसाहेब यांच्यासोबत मध्य भारतात प्रदीर्घ लढा दिला.",
+
+          "en": "Mughal prince Shehzada Firoz Shah led the Malwa rebellion at Mandsaur, assembling thousands of fighters before coordinating operations with Tatya Tope."
+
+        }
+
+      },
+
+      {
+
+        "id": 8,
+
+        "question": {
+
+          "mr": "कुल्लू (हिमाचल प्रदेश) येथे १८५७ च्या उठावात बंड करणाऱ्या स्थानिक नेत्याचे नाव काय होते?",
+
+          "en": "Who organized the anti-British resistance in Kullu (Himachal Pradesh) in 1857?"
+
+        },
+
+        "options": [
+
+          { "mr": "प्रताप सिंग (Raja Pratap Singh)", "en": "Raja Pratap Singh" },
+
+          { "mr": "वीर सिंग", "en": "Vir Singh" },
+
+          { "mr": "रणजित सिंग", "en": "Ranjit Singh" },
+
+          { "mr": "सूरत सिंग", "en": "Surat Singh" }
+
+        ],
+
+        "correctAnswerIndex": 0,
+
+        "explanation": {
+
+          "mr": "कुल्लूचे राजे प्रताप सिंग यांनी स्वतःला स्वतंत्र घोषित करून उठावाचा प्रयत्न केला; परंतु ब्रिटिशांनी त्यांना पकडून धरमशाला येथे फाशी दिली.",
+
+          "en": "Raja Pratap Singh of Kullu led local resistance against British authority in 1857; he was captured and executed at Dharamshala."
+
+        }
+
+      },
+
+      {
+
+        "id": 9,
+
+        "question": {
+
+          "mr": "१८५७ च्या उठावात सहभागी असलेले आणि नंतर नेपाळमध्ये अज्ञातवासात गेलेले 'डंका शाह' म्हणून कोणाला ओळखले जात असे?",
+
+          "en": "Which famous leader of the 1857 revolt was popularly known among the masses as 'Danka Shah'?"
+
+        },
+
+        "options": [
+
+          { "mr": "मौलवी अहमदुल्ला शाह", "en": "Maulvi Ahmadullah Shah" },
+
+          { "mr": "मौलवी लियाकत अली", "en": "Maulvi Liaquat Ali" },
+
+          { "mr": "बख्त खान", "en": "Bakht Khan" },
+
+          { "mr": "अझीमुल्ला खान", "en": "Azimullah Khan" }
+
+        ],
+
+        "correctAnswerIndex": 0,
+
+        "explanation": {
+
+          "mr": "मौलवी अहमदुल्ला शाह पालखीत बसून प्रवास करत असताना पुढे नगारा (डंका) वाजत असे, म्हणून त्यांना सामान्य जनता प्रेमाने 'डंका शाह' म्हणत असे.",
+
+          "en": "Maulvi Ahmadullah Shah was popularly called 'Danka Shah' (the Maulvi with the drum) because he traveled with a palanquin preceded by a drum."
+
+        }
+
+      },
+
+      {
+
+        "id": 10,
+
+        "question": {
+
+          "mr": "ब्रिटिश अधिकारी सर ह्यू रोझ याने कोणत्या भारतीय रणरागिणीचा उल्लेख 'बंडखोरांमधील सर्वात धोकादायक आणि शूर सेनापती' असा केला?",
+
+          "en": "Sir Hugh Rose described which female rebel commander as 'the bravest and best military leader of the rebels'?"
+
+        },
+
+        "options": [
+
+          { "mr": "राणी लक्ष्मीबाई (झाशी)", "en": "Rani Lakshmibai (Jhansi)" },
+
+          { "mr": "बेगम हजरत महल", "en": "Begum Hazrat Mahal" },
+
+          { "mr": "राणी अवंतीबाई", "en": "Rani Avantibai" },
+
+          { "mr": "झलकारी बाई", "en": "Jhalkari Bai" }
+
+        ],
+
+        "correctAnswerIndex": 0,
+
+        "explanation": {
+
+          "mr": "सर ह्यू रोझने झाशीच्या राणी लक्ष्मीबाईंच्या अजोड शौर्याबद्दल हे गौरवोद्गार काढले होते, ज्यांनी रणांगणावर पुरुषी वेषात प्रत्यक्ष युद्ध लढले.",
+
+          "en": "Major-General Sir Hugh Rose recorded this high tribute for Rani Lakshmibai of Jhansi after her martyrdom on the battlefield of Gwalior."
+
+        }
+
+      },
+
+      {
+
+        "id": 11,
+
+        "question": {
+
+          "mr": "झाशीच्या सैन्यात राणी लक्ष्मीबाईंच्या तोफखान्याचे प्रमुख सेनापती कोण होते?",
+
+          "en": "Who commanded Rani Lakshmibai's artillery at the fort of Jhansi in 1858?"
+
+        },
+
+        "options": [
+
+          { "mr": "गुलाम गौस खान (Ghulam Ghaus Khan)", "en": "Ghulam Ghaus Khan" },
+
+          { "mr": "खुदा बख्श", "en": "Khuda Bakhsh" },
+
+          { "mr": "दोस्त मोहम्मद", "en": "Dost Mohammad" },
+
+          { "mr": "मीर आलम", "en": "Mir Alam" }
+
+        ],
+
+        "correctAnswerIndex": 0,
+
+        "explanation": {
+
+          "mr": "गुलाम गौस खान हे राणीच्या तोफखान्याचे प्रमुख होते, तर खुदा बख्श हे पायदळाचे नेतृत्व करत होते. दोघेही किल्ल्याचे रक्षण करताना धारातीर्थी पडले.",
+
+          "en": "Ghulam Ghaus Khan was the chief gunner commanding Rani Lakshmibai's artillery, while Khuda Bakhsh led cavalry units. Both died defending Jhansi fort."
+
+        }
+
+      },
+
+      {
+
+        "id": 12,
+
+        "question": {
+
+          "mr": "राणी लक्ष्मीबाई यांच्या हुबेहूब दिसणाऱ्या आणि किल्ल्यातून राणीला निसटण्यास मदत करणाऱ्या अंगरक्षक वीरांगनेचे नाव काय होते?",
+
+          "en": "Who was the legendary Dalit warrior-woman and confidante of Rani Lakshmibai who impersonated the Rani to facilitate her escape from Jhansi fort?"
+
+        },
+
+        "options": [
+
+          { "mr": "झलकारी बाई (Jhalkari Bai)", "en": "Jhalkari Bai" },
+
+          { "mr": "उदा देवी", "en": "Uda Devi" },
+
+          { "mr": "अवान्ती बाई", "en": "Avanti Bai" },
+
+          { "mr": "महावीरी देवी", "en": "Mahabiri Devi" }
+
+        ],
+
+        "correctAnswerIndex": 0,
+
+        "explanation": {
+
+          "mr": "झलकारी बाई या कोळी समाजातील शूर सैनिक होत्या. त्यांनी स्वतः राणीचा वेष धारण करून ब्रिटिश फौजेला गुंतवून ठेवले, ज्यामुळे राणी लक्ष्मीबाई सुरक्षितपणे किल्ल्याबाहेर पडू शकल्या.",
+
+          "en": "Jhalkari Bai, a soldier in the women's wing 'Durga Dal', disguised herself as Rani Lakshmibai to mislead the British, allowing the Rani to escape on horseback."
+
+        }
+
+      },
+
+      {
+
+        "id": 13,
+
+        "question": {
+
+          "mr": "लखनौ येथील सिकंदर बाग येथे झाडावर बसून ३० हून अधिक ब्रिटिश सैनिकांना गोळ्या झाडणाऱ्या दलित वीरांगनेचे नाव काय होते?",
+
+          "en": "Which Dalit warrior-woman climbed a pipal tree at Sikandar Bagh in Lucknow and sniped down over 30 British soldiers before being killed?"
+
+        },
+
+        "options": [
+
+          { "mr": "उदा देवी पासी (Uda Devi Pasi)", "en": "Uda Devi Pasi" },
+
+          { "mr": "झलकारी बाई", "en": "Jhalkari Bai" },
+
+          { "mr": "अझिझन बाई", "en": "Azizan Bai" },
+
+          { "mr": "आशा देवी", "en": "Asha Devi" }
+
+        ],
+
+        "correctAnswerIndex": 0,
+
+        "explanation": {
+
+          "mr": "उदा देवी पासी यांनी बेगम हजरत महल यांच्या सैन्यात महिला तुकडी उभारली. नोव्हेंबर १८५७ मध्ये सिकंदर बागेत कॉलिन कॅम्पबेलच्या फौजेविरुद्ध लढताना त्यांनी हौतात्म्य पत्करले.",
+
+          "en": "Uda Devi Pasi fought bravely at Sikandar Bagh in Lucknow in November 1857, sniping British soldiers from a tree before being shot down by Colin Campbell's troops."
+
+        }
+
+      },
+
+      {
+
+        "id": 14,
+
+        "question": {
+
+          "mr": "कानपूर येथील उठावात नानासाहेबांच्या सैनिकांना मदत करणारी आणि महिला पथक उभारणारी नर्तकी वीरांगना कोण होती?",
+
+          "en": "Which courtesan in Kanpur actively supported Nana Saheb's forces and mobilized women fighters during the 1857 uprising?"
+
+        },
+
+        "options": [
+
+          { "mr": "अझिझन बाई (Azizan Bai)", "en": "Azizan Bai" },
+
+          { "mr": "उदा देवी", "en": "Uda Devi" },
+
+          { "mr": "झीनत महल", "en": "Zeenat Mahal" },
+
+          { "mr": "गौहर जान", "en": "Gauhar Jaan" }
+
+        ],
+
+        "correctAnswerIndex": 0,
+
+        "explanation": {
+
+          "mr": "अझिझन बाई ही कानपूरमधील नर्तकी होती. तिने सैनिकांना रसद, दारूगोळा पुरवला आणि महिलांचे सशस्त्र पथक उभारले. ब्रिटिशांनी तिला पकडून गोळ्या झाडल्या.",
+
+          "en": "Azizan Bai, a courtesan of Kanpur, set up an armed women's brigade to patrol the town, carry ammunition, and attend to wounded sepoys. She was captured and shot."
+
+        }
+
+      },
+
+      {
+
+        "id": 15,
+
+        "question": {
+
+          "mr": "१८५७ च्या उठावानंतर शेवटचा मुघल सम्राट बहादूर शाह झफर याला कोणत्या देशात हद्दपार करण्यात आले?",
+
+          "en": "To which city was the last Mughal Emperor Bahadur Shah Zafar exiled following his trial in 1858?"
+
+        },
+
+        "options": [
+
+          { "mr": "रंगून (म्यानमार/ब्रह्मदेश)", "en": "Rangoon (Burma)" },
+
+          { "mr": "कोलंबो (श्रीलंका)", "en": "Colombo" },
+
+          { "mr": "लंडन", "en": "London" },
+
+          { "mr": "अंदमान", "en": "Andaman" }
+
+        ],
+
+        "correctAnswerIndex": 0,
+
+        "explanation": {
+
+          "mr": "बहादूर शाह झफरवर लाल किल्ल्यात खटला चालवून त्यांना रंगून (म्यानमार) येथे हद्दपार केले गेले. ७ नोव्हेंबर १८६२ रोजी वयाच्या ८७ व्या वर्षी रंगूनमध्येच त्यांचा मृत्यू झाला.",
+
+          "en": "Bahadur Shah Zafar was convicted of rebellion and exiled to Rangoon, Burma, where he died in captivity on 7 November 1862 at the age of 87."
+
+        }
+
+      },
+
+      {
+
+        "id": 16,
+
+        "question": {
+
+          "mr": "१८५७ च्या उठावाच्या पार्श्वभूमीवर तयार करण्यात आलेल्या पील आयोगाने (Peel Commission) सैन्य भरतीसाठी कोणत्या संकल्पनेचा वापर केला?",
+
+          "en": "Which martial categorization theory was institutionalized by the Peel Commission (1859) to guide post-1857 army recruitment?"
+
+        },
+
+        "options": [
+
+          { "mr": "लढाऊ आणि बिगर-लढाऊ जमाती सिद्धांत (Martial and Non-Martial Races)", "en": "Martial and Non-Martial Races theory" },
+
+          { "mr": "सार्वत्रिक सक्तीची भरती", "en": "Universal conscription" },
+
+          { "mr": "केवळ उच्चवर्णीय भरती", "en": "Exclusively upper-caste recruitment" },
+
+          { "mr": "धर्मनिरपेक्ष सैन्य मॉडेल", "en": "Secular integrated army model" }
+
+        ],
+
+        "correctAnswerIndex": 0,
+
+        "explanation": {
+
+          "mr": "उठावात सहभागी झालेल्या अवध, बिहार व बंगालच्या सैनिकांना 'बिगर-लढाऊ' ठरवून भरती बंद केली, तर ब्रिटिशांशी एकनिष्ठ राहिलेल्या शीख, गुरखा व पठाणांना 'लढाऊ जमाती' (Martial Races) घोषित करून सैन्यात भरती केले.",
+
+          "en": "The British classified communities like Gurkhas, Sikhs, and Pathans who helped suppress the revolt as 'Martial Races', while blacklisting high-caste Awadhi sepoys as 'Non-Martial'."
+
+        }
+
+      },
+
+      {
+
+        "id": 17,
+
+        "question": {
+
+          "mr": "१८५७ च्या उठावात ब्रिटिशांनी मुघल सम्राटाच्या दोन पुत्रांची व नातवाची हत्या दिल्ली दरवाजाजवळ केली. त्या दरवाजाला आज काय म्हटले जाते?",
+
+          "en": "What is the historic Delhi gate popularly called where Lt. Hodson shot dead the sons and grandson of Bahadur Shah Zafar?"
+
+        },
+
+        "options": [
+
+          { "mr": "खुनी दरवाजा (Khooni Darwaza)", "en": "Khooni Darwaza" },
+
+          { "mr": "अजमेरी दरवाजा", "en": "Ajmeri Gate" },
+
+          { "mr": "काश्मिरी गेट", "en": "Kashmiri Gate" },
+
+          { "mr": "लाहोर गेट", "en": "Lahore Gate" }
+
+        ],
+
+        "correctAnswerIndex": 0,
+
+        "explanation": {
+
+          "mr": "लेफ्टनंट हॉडसनने २२ सप्टेंबर १८५७ रोजी मिर्झा मुघल, मिर्झा ख्वाजा सुलतान आणि मिर्झा अबु बक्र यांना विवस्त्र करून दिल्ली दरवाजाजवळ गोळ्या झाडल्या, ज्यामुळे त्या दरवाजाला 'खुनी दरवाजा' नाव पडले.",
+
+          "en": "Lt. William Hodson shot dead the Mughal princes near the Old Delhi Gate on 22 September 1857, which earned the site the name 'Khooni Darwaza' (Bloody Gate)."
+
+        }
+
+      },
+
+      {
+
+        "id": 18,
+
+        "question": {
+
+          "mr": "१८५७ च्या उठावात 'इनाम कमिशन' (Inam Commission 1852) चा सर्वाधिक फटका महाराष्ट्रातील कोणत्या वर्गाला बसला होता?",
+
+          "en": "Which social class in Maharashtra was most adversely affected by Dalhousie's Inam Commission of 1852?"
+
+        },
+
+        "options": [
+
+          { "mr": "जहागीरदार, वतनदार आणि इनामदार (Landed Aristocracy)", "en": "Jagirdars, Watandars, and Inamdars" },
+
+          { "mr": "शेतमजूर", "en": "Landless agricultural laborers" },
+
+          { "mr": "शहरी व्यापारी", "en": "Urban merchants" },
+
+          { "mr": "हातमाग विणकर", "en": "Handloom weavers" }
+
+        ],
+
+        "correctAnswerIndex": 0,
+
+        "explanation": {
+
+          "mr": "इनाम कमिशनने मुंबई इलाख्यातील ३५,००० इनामांची कागदपत्रे तपासून २०,००० पेक्षा जास्त करमुक्त जहागिरी जप्त केल्या. यामुळे सरदार व जहागीरदार वर्ग कंगाल झाला आणि १८५७ मध्ये ब्रिटिशांविरुद्ध बंड करण्यास प्रवृत्त झाला.",
+
+          "en": "The Inam Commission confiscated over 20,000 rent-free estates across western India due to lack of written titles, alienating hereditary sardars and watandars prior to 1857."
+
+        }
+
+      },
+
+      {
+
+        "id": 19,
+
+        "question": {
+
+          "mr": "१८५७ च्या उठावाच्या संदर्भात खालीलपैकी कोणते विधान अयोग्य आहे?",
+
+          "en": "Which of the following statements regarding the Revolt of 1857 is incorrect?"
+
+        },
+
+        "options": [
+
+          { "mr": "उठावात आधुनिक सुशिक्षित मध्यमवर्गाने बंडखोरांना सक्रिय व पूर्ण पाठिंबा दिला.", "en": "The modern educated Indian middle class actively and wholeheartedly supported the rebels." },
+
+          { "mr": "उठावाचे स्वरूप प्रामुख्याने उत्तर आणि मध्य भारतापुरते मर्यादित होते.", "en": "The uprising was predominantly concentrated in northern and central India." },
+
+          { "mr": "हिंदू आणि मुस्लिम सैनिकांमध्ये अभूतपूर्व ऐक्य दिसून आले.", "en": "Unprecedented Hindu-Muslim communal unity was exhibited during the revolt." },
+
+          { "mr": "उठावानंतर ईस्ट इंडिया कंपनीची सत्ता संपुष्टात आली.", "en": "The rule of the East India Company was terminated after the revolt." }
+
+        ],
+
+        "correctAnswerIndex": 0,
+
+        "explanation": {
+
+          "mr": "विधान १ अयोग्य आहे. आधुनिक सुशिक्षित मध्यमवर्गाने, बुद्धिजीवी वर्गाने आणि मोठ्या सावकार-व्यापाऱ्यांनी उठावाकडे संशयाने पाहिले. त्यांना वाटले की हा उठाव सरंजामी जुन्या व्यवस्थेची पुनर्स्थापना करेल, म्हणून ते ब्रिटिशांच्या बाजूने किंवा तटस्थ राहिले.",
+
+          "en": "Statement 1 is incorrect. The modern educated elite and merchants stayed away from the revolt, believing that British rule was a modernizing force while the rebels represented regressive feudal elements."
+
+        }
+
+      },
+
+      {
+
+        "id": 20,
+
+        "question": {
+
+          "mr": "तात्या टोपे यांनी १८५८ मध्ये राजस्थानमधील कोणत्या संस्थानाची राजधानी जिंकून तेथील सैन्याचा पाठिंबा मिळवला होता?",
+
+          "en": "Which princely capital in Rajasthan did Tatya Tope capture in December 1857 - 1858, winning over its state army?"
+
+        },
+
+        "options": [
+
+          { "mr": "झालावाड आणि बांसवाडा (Jhalawar and Banswara)", "en": "Jhalawar and Banswara" },
+
+          { "mr": "जयपूर", "en": "Jaipur" },
+
+          { "mr": "जोधपूर", "en": "Jodhpur" },
+
+          { "mr": "बिकानेर", "en": "Bikaner" }
+
+        ],
+
+        "correctAnswerIndex": 0,
+
+        "explanation": {
+
+          "mr": "तात्या टोपे यांनी झालावाडच्या सैन्याला आपल्या बाजूने वळवले आणि राजा राणा पृथ्वी सिंग याला पळवून लावून राजधानीवर ताबा मिळवला. त्यानंतर त्यांनी बांसवाडाही जिंकला होता.",
+
+          "en": "Tatya Tope forced the submission of Rana Prithvi Singh of Jhalawar, captured the royal arsenal, and later occupied Banswara during his mobile guerrilla campaign."
+
+        }
+
+      },
+
+      {
+
+        "id": 21,
+
+        "question": {
+
+          "mr": "१८५७ च्या उठावात कानपूरमध्ये नानासाहेबांच्या पराभवानंतर तात्या टोपे यांनी कोणत्या शहराला आपले नवे केंद्र बनवले?",
+
+          "en": "Following the loss of Kanpur, which strategic fortress in Bundelkhand did Tatya Tope make his base of operations?"
+
+        },
+
+        "options": [
+
+          { "mr": "कालपी (Kalpi)", "en": "Kalpi" },
+
+          { "mr": "अलाहाबाद", "en": "Allahabad" },
+
+          { "mr": "बनारस", "en": "Banaras" },
+
+          { "mr": "लखनौ", "en": "Lucknow" }
+
+        ],
+
+        "correctAnswerIndex": 0,
+
+        "explanation": {
+
+          "mr": "कालपी हे यमुना नदीच्या काठावरील मोक्याचे ठिकाण होते. तात्या टोपे आणि राणी लक्ष्मीबाई यांनी कालपी येथे मोठा दारूगोळा कारखाना व लष्करी छावणी उभारली होती.",
+
+          "en": "Kalpi in the Jalaun district was fortified by Tatya Tope and Rani Lakshmibai as an arsenal and operational base against General Hugh Rose."
+
+        }
+
+      },
+
+      {
+
+        "id": 22,
+
+        "question": {
+
+          "mr": "ग्वाल्हेरचा किल्ला राणी लक्ष्मीबाई आणि तात्या टोपे यांनी जून १८५८ मध्ये कोणाकडून जिंकून घेतला?",
+
+          "en": "From which pro-British Maharaja did Rani Lakshmibai and Tatya Tope capture the Gwalior Fort in June 1858?"
+
+        },
+
+        "options": [
+
+          { "mr": "जयाजीराव शिंदे (Jayajirao Scindia)", "en": "Jayajirao Scindia" },
+
+          { "mr": "दौलतराव शिंदे", "en": "Daulat Rao Scindia" },
+
+          { "mr": "माधवराव शिंदे", "en": "Madhav Rao Scindia" },
+
+          { "mr": "तुकोजीराव होळकर", "en": "Tukoji Rao Holkar" }
+
+        ],
+
+        "correctAnswerIndex": 0,
+
+        "explanation": {
+
+          "mr": "१ जून १८५८ रोजी राणी आणि तात्यांच्या फौजेने ग्वाल्हेरवर चढाई केली. जयाजीराव शिंदे यांचे सैन्य बंडखोरांना सामील झाले आणि शिंदे यांना पळून आग्र्याला ब्रिटिशांकडे आश्रय घ्यावा लागला.",
+
+          "en": "On 1 June 1858, rebel forces captured Gwalior without resistance as Maharaja Jayajirao Scindia's troops defected, forcing Scindia to flee to British safety at Agra."
+
+        }
+
+      },
+
+      {
+
+        "id": 23,
+
+        "question": {
+
+          "mr": "ग्वाल्हेरच्या विजयानंतर तेथे कोणाला औपचारिकपणे 'पेशवा' म्हणून घोषित करण्यात आले?",
+
+          "en": "Following the capture of Gwalior in June 1858, who was officially proclaimed Peshwa in a grand durbar?"
+
+        },
+
+        "options": [
+
+          { "mr": "रावसाहेब (नानासाहेबांचे पुतणे)", "en": "Rao Saheb (Nana Saheb's nephew)" },
+
+          { "mr": "तात्या टोपे", "en": "Tatya Tope" },
+
+          { "mr": "बापू गोखले", "en": "Bapu Gokhale" },
+
+          { "mr": "अमर सिंग", "en": "Amar Singh" }
+
+        ],
+
+        "correctAnswerIndex": 0,
+
+        "explanation": {
+
+          "mr": "ग्वाल्हेर जिंकल्यानंतर भरलेल्या दरबारात नानासाहेबांचे पुतणे रावसाहेब (पांडुरंग सदाशिव) यांना पेशवा घोषित केले गेले आणि तात्या टोपे यांना सरसेनापती करण्यात आले.",
+
+          "en": "At the Phool Bagh Durbar in Gwalior, Rao Saheb (nephew of Nana Saheb) was ceremonially declared Peshwa, while Tatya Tope was confirmed as military commander."
+
+        }
+
+      },
+
+      {
+
+        "id": 24,
+
+        "question": {
+
+          "mr": "१८५८ च्या भारत सरकार कायद्यानुसार ब्रिटिश संसदेत भारताचा कारभार पाहण्यासाठी कोणते नवीन कॅबिनेट पद निर्माण करण्यात आले?",
+
+          "en": "Which British Cabinet office was created under the Government of India Act 1858 to oversee the governance of India?"
+
+        },
+
+        "options": [
+
+          { "mr": "भारत मंत्री (Secretary of State for India)", "en": "Secretary of State for India" },
+
+          { "mr": "भारताचा व्हाइसरॉय", "en": "Viceroy of India" },
+
+          { "mr": "लॉर्ड चांसलर", "en": "Lord Chancellor" },
+
+          { "mr": "इम्पेरियल कमिशनर", "en": "Imperial Commissioner" }
+
+        ],
+
+        "correctAnswerIndex": 0,
+
+        "explanation": {
+
+          "mr": "१८५८ च्या कायद्याने 'सेक्रेटरी ऑफ स्टेट फॉर इंडिया' (भारत मंत्री) हे पद निर्माण केले. त्याच्या मदतीसाठी १५ सदस्यांचे 'इंडिया कौन्सिल' (India Council) स्थापन करण्यात आले. लॉर्ड स्टॅन्ले हे पहिले भारत मंत्री बनले.",
+
+          "en": "The Act of 1858 established the office of the Secretary of State for India assisted by a 15-member Council of India. Lord Stanley became the first Secretary of State."
+
+        }
+
+      },
+
+      {
+
+        "id": 25,
+
+        "question": {
+
+          "mr": "१८५७ च्या उठावावर 'द ग्रेट रिबेलियन' (The Great Rebellion) हा प्रसिद्ध ऐतिहासिक ग्रंथ खालीलपैकी कोणी लिहिला?",
+
+          "en": "Who authored the historical study titled 'The Great Rebellion' evaluating the 1857 uprising?"
+
+        },
+
+        "options": [
+
+          { "mr": "अशोक मेहता (Ashok Mehta)", "en": "Ashok Mehta" },
+
+          { "mr": "पी. सी. जोशी (P. C. Joshi)", "en": "P. C. Joshi" },
+
+          { "mr": "वि. दा. सावरकर", "en": "V. D. Savarkar" },
+
+          { "mr": "ताराचंद", "en": "Tarachand" }
+
+        ],
+
+        "correctAnswerIndex": 0,
+
+        "explanation": {
+
+          "mr": "समाजवादी विचारवंत आणि स्वातंत्र्यसैनिक अशोक मेहता यांनी 'The Great Rebellion' हे पुस्तक लिहिले, ज्यामध्ये त्यांनी या उठावाच्या राष्ट्रीय स्वरूपाचे विश्लेषण केले.",
+
+          "en": "Socialist leader Ashok Mehta authored 'The Great Rebellion' (1946), arguing that the uprising transcended a sepoy mutiny and bore a broader national character."
+
+        }
+
+      }
+
+    ]
+
+  }

@@ -1,0 +1,464 @@
+{
+  "testId": "p-hist-03-t8",
+  "title": {
+    "mr": "१८५७ चा उठाव — सराव 8",
+    "en": "Revolt of 1857 — Practice Test 8"
+  },
+  "durationMinutes": 20,
+  "marksPerQuestion": 1,
+  "negativeMarking": 0.25,
+  "totalMarks": 25,
+  "difficulty": "मध्यम ते काठिण्य",
+  "questions": [
+    {
+      "id": 1,
+      "question": {
+        "mr": "१८५७ च्या उठावादरम्यान लखनौ (अवध) येथे बेगम हजरत महल यांनी आपल्या कोणत्या अल्पवयीन पुत्राला अवधचा कायदेशीर नवाब म्हणून गादीवर बसवले?",
+        "en": "During the Revolt of 1857, whom did Begum Hazrat Mahal install on the throne of Lucknow as the legitimate Nawab of Awadh?"
+      },
+      "options": [
+        { "mr": "बिरजिस काद्र (Birjis Qadr)", "en": "Birjis Qadr" },
+        { "mr": "वाजिद अली शाह (Wajid Ali Shah)", "en": "Wajid Ali Shah" },
+        { "mr": "सआदत अली खान (Saadat Ali Khan)", "en": "Saadat Ali Khan" },
+        { "mr": "आसिफ-उद-दौला (Asaf-ud-Daula)", "en": "Asaf-ud-Daula" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "पदच्युत नवाब वाजिद अली शाह कलकत्त्यात नजरकैदेत असताना, त्यांच्या पत्नी बेगम हजरत महल यांनी अवधमधील उठावाचे नेतृत्व स्वीकारले. त्यांनी आपला ११ वर्षांचा मुलगा बिरजिस काद्र याला नवाब घोषित करून स्वतः राज्याची सूत्रे हाती घेतली.",
+        "en": "With Nawab Wajid Ali Shah interned at Metiabruz near Calcutta, Begum Hazrat Mahal proclaimed her 11-year-old son Birjis Qadr as the Nawab of Awadh in July 1857, ruling as regent alongside loyal taluqdars."
+      }
+    },
+    {
+      "id": 2,
+      "question": {
+        "mr": "१८५७ च्या उठावातील प्रमुख लष्करी सेनापती तात्या टोपे यांचे मूळ नाव खालीलपैकी कोणते होते?",
+        "en": "What was the real name of Tatya Tope, the brilliant military commander of the 1857 Revolt?"
+      },
+      "options": [
+        { "mr": "रामचंद्र पांडुरंग येवलेकर (टोपे)", "en": "Ramchandra Pandurang Yewlekar (Tope)" },
+        { "mr": "धोंडोपंत बाजीराव", "en": "Dhondopant Baji Rao" },
+        { "mr": "बाळकृष्ण हरी चाफेकर", "en": "Balkrishna Hari Chapekar" },
+        { "mr": "सदाशिव नारायण राव", "en": "Sadashiv Narayan Rao" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "तात्या टोपे यांचे मूळ नाव रामचंद्र पांडुरंग येवलेकर असे होते. त्यांचा जन्म नाशिक जिल्ह्यातील येवला येथे झाला होता. दुसऱ्या बाजीराव पेशव्यांनी त्यांच्या कुशलतेवर खूश होऊन त्यांना नवरत्नांची टोपी बक्षीस दिली होती, ज्यामुळे त्यांना 'टोपे' हे नाव मिळाले.",
+        "en": "Tatya Tope was originally named Ramchandra Pandurang Yewlekar, born at Yeola near Nashik. His family later shifted to Bithoor in the service of Peshwa Baji Rao II, who gifted him an ornate gem-studded cap ('tope')."
+      }
+    },
+    {
+      "id": 3,
+      "question": {
+        "mr": "कानपूर येथे उठावाचे नेतृत्व करणारे नानासाहेब पेशवे यांचे मूळ नाव काय होते?",
+        "en": "What was the original personal name of Nana Saheb Peshwa, who spearheaded the rebellion at Kanpur?"
+      },
+      "options": [
+        { "mr": "धोंडोपंत (Dhondopant)", "en": "Dhondopant" },
+        { "mr": "रामचंद्र (Ramchandra)", "en": "Ramchandra" },
+        { "mr": "सदाशिवराव (Sadashivrao)", "en": "Sadashivrao" },
+        { "mr": "विनायकराव (Vinayakrao)", "en": "Vinayakrao" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "नानासाहेब पेशवे हे माधवराव नारायण भट यांचे सुपुत्र होते आणि त्यांचे मूळ नाव धोंडोपंत होते. १८२७ मध्ये शेवटचे पेशवे बाजीराव दुसरे यांनी त्यांना दत्तक घेतले होते.",
+        "en": "Nana Saheb's birth name was Dhondopant. He was adopted in 1827 by the exiled ex-Peshwa Baji Rao II at Bithoor."
+      }
+    },
+    {
+      "id": 4,
+      "question": {
+        "mr": "जून १८५७ मध्ये नागपूर येथे ब्रिटिश लष्करी ठाण्यावर हल्ला करण्याचा कट रचणाऱ्या प्रमुख नेत्यांमध्ये कोणाचा समावेश होता?",
+        "en": "Who among the following spearheaded the covert conspiracy to capture the British arsenal and treasury at Nagpur in June 1857?"
+      },
+      "options": [
+        { "mr": "इनायतउल्ला खान आणि विलायत खान", "en": "Inayatullah Khan and Vilayat Khan" },
+        { "mr": "रंगो बापूजी आणि दाजीबा फडके", "en": "Rango Bapuji and Dajiba Phadke" },
+        { "mr": "चीमासाहेब आणि नाना अहिरे", "en": "Chimasahib and Nana Ahire" },
+        { "mr": "भागोजी नाईक आणि कजारसिंग", "en": "Bhagoji Naik and Kajarsing" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "नागपूर येथे १३ जून १८५७ रोजी सैनिकांनी उठाव करण्याची गुप्त योजना आखली होती. अनियमित घोडदळाचे सुभेदार इनायतउल्ला खान, विलायत खान आणि दाफेदार अब्दुल मजीद यांनी हा कट रचला होता; मात्र फितुरीमुळे तो उघडकीस येऊन ब्रिटिश अधिकाऱ्यांनी त्यांना फाशी दिली.",
+        "en": "In June 1857, Inayatullah Khan, Vilayat Khan, and Abdul Majid plotted an uprising among the irregular cavalry at Sitabuldi (Nagpur). The plot was leaked before execution, and the leaders were court-martialed and executed."
+      }
+    },
+    {
+      "id": 5,
+      "question": {
+        "mr": "१८५७ च्या उठावात दिल्ली येथे प्रत्यक्ष कारभार चालवण्यासाठी बख्त खान यांनी स्थापन केलेल्या १० सदस्यांच्या प्रशासकीय मंडळाला (Court of Soldiers) काय म्हटले जात असे?",
+        "en": "What was the administrative governing council of 10 members established by General Bakht Khan at Delhi called during the 1857 Revolt?"
+      },
+      "options": [
+        { "mr": "जलसा / कोर्ट ऑफ ॲडमिनिस्ट्रेशन (Court of Administration)", "en": "Court of Administration (Jalsa)" },
+        { "mr": "दिवाण-इ-खास परिषद", "en": "Diwan-i-Khas Council" },
+        { "mr": "इम्पेरियल वॉर कॅबिनेट", "en": "Imperial War Cabinet" },
+        { "mr": "मजलिस-इ-शूरा", "en": "Majlis-i-Shura" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "जनरल बख्त खान यांनी दिल्लीमध्ये लष्करी आणि नागरी कारभार सुरळीत चालवण्यासाठी 'कोर्ट ऑफ ॲडमिनिस्ट्रेशन' (ज्याला कोर्ट किंवा जलसा म्हटले जाई) स्थापन केले होते. यामध्ये ६ लष्करी आणि ४ नागरी सदस्य होते, जे लोकशाही पद्धतीने निर्णय घेत असत.",
+        "en": "General Bakht Khan created a 10-member administrative organ styled as the 'Court of Administration' (incorporating 6 military and 4 civilian representatives) to manage finances, civilian policing, and food supply in Delhi."
+      }
+    },
+    {
+      "id": 6,
+      "question": {
+        "mr": "११ एप्रिल १८५८ रोजी खानदेशात ब्रिटिशांची फौजा आणि भिल्ल सैनिकांमध्ये झालेली प्रसिद्ध लढाई खालीलपैकी कोणत्या ठिकाणी झाली?",
+        "en": "On 11 April 1858, which bloody battle was fought in Khandesh between British troops and the Bhil forces led by Kajarsing?"
+      },
+      "options": [
+        { "mr": "अंबापाणीची लढाई (Battle of Ambapani)", "en": "Battle of Ambapani" },
+        { "mr": "वडगावची लढाई", "en": "Battle of Wadgaon" },
+        { "mr": "सिन्नरची लढाई", "en": "Battle of Sinnar" },
+        { "mr": "पेठची लढाई", "en": "Battle of Peint" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "सातपुड्याच्या कुशीत असलेल्या अंबापाणी येथे ११ एप्रिल १८५८ रोजी ब्रिटिश अधिकारी कॅप्टन कीटिंग आणि भिल्ल नेते कजारसिंग व भीमा नाईक यांच्यात भीषण लढाई झाली. या लढाईत अनेक भिल्ल क्रांतिकारक व त्यांच्या कुटुंबीयांनी बलिदान दिले.",
+        "en": "The Battle of Ambapani occurred on 11 April 1858 in the Satpura hills of Khandesh, where British forces under Captain Keating engaged heavily armed Bhil insurgents commanded by Kajarsing."
+      }
+    },
+    {
+      "id": 7,
+      "question": {
+        "mr": "१८५७ च्या उठावात ओडिशातील 'संबलपूर' (Sambalpur) संस्थानात ब्रिटिशांविरुद्ध प्रदीर्घ सशस्त्र संघर्ष करणारे प्रमुख नेते कोण होते?",
+        "en": "Who led the protracted armed rebellion against British authority in Sambalpur (Odisha) during the 1857 Revolt?"
+      },
+      "options": [
+        { "mr": "सुरेंद्र साई (Surendra Sai)", "en": "Surendra Sai" },
+        { "mr": "चक्र बिश्नोई", "en": "Chakra Bisnoi" },
+        { "mr": "राधाकृष्ण दंडसेना", "en": "Radhakrishna Dandasena" },
+        { "mr": "कंदरपेश्वर सिंग", "en": "Kandarpeswar Singha" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "डलहौसीने १८४९ मध्ये दत्तक वारसा नामंजूर करून संबलपूर खालसा केले होते. १८५७ च्या उठावात तुरुंगातून सुटून सुरेंद्र साई यांनी संबलपूरच्या गादीसाठी आणि स्वातंत्र्यासाठी १८६२ पर्यंत ब्रिटिशांशी प्रखर लढा दिला.",
+        "en": "Surendra Sai, the claimant to the throne of Sambalpur (which had been annexed under the Doctrine of Lapse in 1849), escaped from Hazaribagh jail in 1857 and led a determined guerrilla war against the British until 1862."
+      }
+    },
+    {
+      "id": 8,
+      "question": {
+        "mr": "डिसेंबर १८५७ मध्ये कानपूर येथे नानासाहेब आणि तात्या टोपे यांच्या सैन्याचा निर्णायक पराभव करून कानपूरवर पुन्हा पूर्ण नियंत्रण मिळवणारा ब्रिटिश सेनापती कोण होता?",
+        "en": "Which British Commander-in-Chief decisively defeated the rebel forces of Tatya Tope at Kanpur on 6 December 1857, securing the city?"
+      },
+      "options": [
+        { "mr": "सर कॉलिन कॅम्पबेल (Sir Colin Campbell)", "en": "Sir Colin Campbell" },
+        { "mr": "सर जॉन निकोल्सन (Sir John Nicholson)", "en": "Sir John Nicholson" },
+        { "mr": "सर ह्यू रोज (Sir Hugh Rose)", "en": "Sir Hugh Rose" },
+        { "mr": "कर्नल जेम्स नील (Colonel James Neill)", "en": "Colonel James Neill" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "सर कॉलिन कॅम्पबेल याने ६ डिसेंबर १८५७ रोजी कानपूरच्या दुसऱ्या लढाईत तात्या टोपे यांच्या नेतृत्वाखालील ग्वाल्हेर कंन्टिजंट सैन्याचा पराभव केला आणि कानपूरवर ब्रिटिशांचे वर्चस्व कायम केले.",
+        "en": "Sir Colin Campbell, appointed Commander-in-Chief in India, defeated Tatya Tope's Gwalior Contingent at the Second Battle of Kanpur on 6 December 1857, definitively eliminating rebel hold over the Doab."
+      }
+    },
+    {
+      "id": 9,
+      "question": {
+        "mr": "१८ एप्रिल १८५९ रोजी तात्या टोपे यांना फाशी देण्यात आल्यानंतर इतिहासकारांच्या मते १८५७ च्या उठावाची कोणती अवस्था झाली?",
+        "en": "Following the public execution of Tatya Tope on 18 April 1859, how is this event historically viewed in the timeline of the 1857 Revolt?"
+      },
+      "options": [
+        { "mr": "१८५७ च्या महान सशस्त्र स्वातंत्र्यलढ्याचा हा अधिकृत व अखेरचा शेवट मानला जातो.", "en": "It is officially considered the final concluding act of the armed resistance of the 1857 Revolt." },
+        { "mr": "उठावाचा केंद्रबिंदू मद्रास प्रांतात स्थलांतरित झाला.", "en": "The epicentre of the revolt shifted decisively to Madras Presidency." },
+        { "mr": "ब्रिटिश सैन्याने संपूर्ण भारतातून तात्पुरती माघार घेतली.", "en": "British forces executed a temporary retreat across India." },
+        { "mr": "नानासाहेब पेशवे पुन्हा कानपूरचे राजे बनले.", "en": "Nana Saheb was reinstated as the ruler of Kanpur." }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "तात्या टोपे हे १८५७ च्या उठावात शेवटपर्यंत गनिमी काव्याने लढणारे सेनापती होते. १८ एप्रिल १८५९ रोजी त्यांना शिवपुरी येथे फाशी दिल्यानंतर उत्तर व मध्य भारतातील संघटित लष्करी प्रतिकार पूर्णपणे संपुष्टात आला.",
+        "en": "With the capture and execution of Tatya Tope on 18 April 1859, the last formidable military spark of the 1857 uprising was extinguished, bringing formal military operations to an end."
+      }
+    },
+    {
+      "id": 10,
+      "question": {
+        "mr": "१८५७ च्या उठावात पंजाब प्रांतातील शीख संस्थानिक आणि सैनिकांनी ब्रिटिशांना मदत करण्यामागे खालीलपैकी कोणते प्रमुख ऐतिहासिक कारण होते?",
+        "en": "Which major historical and political factor prompted the Sikh chiefs and soldiers of Punjab to assist the British during the 1857 Revolt?"
+      },
+      "options": [
+        { "mr": "मुघल राजवटीविषयी असलेला ऐतिहासिक कटू अनुभव आणि १८४९ च्या युद्धात ब्रिटिश सैन्यातील पूरबिया (हिंदुस्तानी) सैनिकांनी शिखांचा केलेला पराभव", "en": "Historical animosity towards the restored Mughal dynasty and resentment against the Purbiya sepoys who had helped defeat the Sikhs in 1849" },
+        { "mr": "ब्रिटिशांनी पंजाबला संपूर्ण स्वातंत्र्य देण्याचे दिलेले लेखी आश्वासन", "en": "A formal British treaty promising complete independence to Punjab" },
+        { "mr": "बहादुर शाह जफर यांनी पंजाबवर लादलेला जाचक शेती कर", "en": "Exorbitant agrarian taxes levied on Punjab by Bahadur Shah Zafar" },
+        { "mr": "नानासाहेब पेशवे यांनी शिखांवर केलेले लष्करी आक्रमण", "en": "Military incursion mounted by Nana Saheb against Sikh territories" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "मुघल सम्राटांविषयी शीख समाजात ऐतिहासिक कटुता होती. शिवाय १८४५ व १८४८ च्या इंग्रज-शीख युद्धांत ईस्ट इंडिया कंपनीच्या वतीने लढणारे सैनिक हे अवध-बिहारचे पूरबिया (हिंदुस्तानी) शिपाई होते. त्यामुळे शीख सैनिकांनी दिल्लीतील मुघल बादशहाच्या नेतृत्वाखालील उठावात सामील न होता ब्रिटिशांना मदत केली.",
+        "en": "Sikh soldiers harbored historical memories of Mughal persecution and resented the high-caste Purbiya (Hindustani) sepoys who had manned the British regiments during the annexation of Punjab in 1849, prompting them to enlist under John Lawrence to capture Delhi."
+      }
+    },
+    {
+      "id": 11,
+      "question": {
+        "mr": "नोव्हेंबर १८६२ मध्ये वयाच्या ८७ व्या वर्षी रंगून (म्यानमार) येथे एका छोट्या लाकडी घरात बंदी असताना मृत्यू पावलेले भारताचे शेवटचे मुघल सम्राट कोण होते?",
+        "en": "Who was the last Mughal Emperor of India who passed away in exile in November 1862 at Rangoon (Burma) at the age of 87?"
+      },
+      "options": [
+        { "mr": "बहादुर शाह जफर (दुसरे)", "en": "Bahadur Shah Zafar II" },
+        { "mr": "अकबर शाह दुसरे", "en": "Akbar Shah II" },
+        { "mr": "शाह आलम दुसरे", "en": "Shah Alam II" },
+        { "mr": "मोहम्मद शाह रंगीला", "en": "Muhammad Shah Rangila" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "बहादुर शाह जफर (दुसरे) यांच्यावर लाल किल्ल्यात लष्करी खटला चालवून त्यांना रंगून येथे हद्दपार करण्यात आले. ७ नोव्हेंबर १८६२ रोजी रंगून येथे त्यांचा मृत्यू झाला आणि तेथेच त्यांची समाधी आहे.",
+        "en": "Bahadur Shah Zafar was tried by a military tribunal at the Red Fort, convicted of rebellion, and exiled to Rangoon, Burma, where he died in captivity on 7 November 1862."
+      }
+    },
+    {
+      "id": 12,
+      "question": {
+        "mr": "ब्रिटिश फौजांनी प्रदीर्घ वेढ्यानंतर दिल्ली शहर आणि लाल किल्ला बंडखोरांकडून पुन्हा कधी हस्तगत केला?",
+        "en": "On which date did British forces definitively recapture the city and fortress of Delhi from the rebels in 1857?"
+      },
+      "options": [
+        { "mr": "२० सप्टेंबर १८५७", "en": "20 September 1857" },
+        { "mr": "११ मे १८५७", "en": "11 May 1857" },
+        { "mr": "१५ ऑगस्ट १८५७", "en": "15 August 1857" },
+        { "mr": "१ नोव्हेंबर १८५८", "en": "1 November 1858" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "८ जून १८५७ पासून ब्रिटिशांनी दिल्लीला वेढा घातला होता. शेवटी १४ सप्टेंबरला काश्मिरी गेट फोडून आठवडाभराच्या भीषण रस्त्यावरील लढाईनंतर २० सप्टेंबर १८५७ रोजी लाल किल्ल्यावर पुन्हा युनियन जॅक फडकवला गेला.",
+        "en": "Following a prolonged siege of the Delhi Ridge beginning in June, British and allied troops launched a multi-column assault on 14 September, securing total possession of the city and Red Fort on 20 September 1857."
+      }
+    },
+    {
+      "id": 13,
+      "question": {
+        "mr": "१८५७ च्या उठावाच्या अपयशाच्या कारणांचा अभ्यास करताना खालीलपैकी कोणते विधान चुकीचे आहे?",
+        "en": "Which of the following statements is incorrect regarding the causes of the failure of the 1857 Revolt?"
+      },
+      "options": [
+        { "mr": "भारतीय सैनिकांमध्ये देशभक्ती, शौर्य आणि बलिदानाच्या भावनेचा अभाव होता.", "en": "Indian soldiers completely lacked personal courage, devotion, and willingness to sacrifice." },
+        { "mr": "उठाव एकाच वेळी संपूर्ण भारतात न होता वेगवेगळ्या वेळी आणि वेगवेगळ्या प्रदेशांत झाला.", "en": "The uprising was fragmented geographically and temporally rather than occurring simultaneously across India." },
+        { "mr": "ब्रिटिशांकडे आधुनिक टेलिग्राफ (तार), रेल्वे आणि प्रगत एनफिल्ड बंदुकांची तांत्रिक श्रेष्ठता होती.", "en": "The British possessed superior logistics, electric telegraph communications, and Enfield rifles." },
+        { "mr": "ग्वाल्हेरचे शिंदे, हैदराबादचे निजाम आणि नेपाळचे राजे यांनी ब्रिटिशांना उघड पाठिंबा दिला.", "en": "Major rulers such as Scindia of Gwalior, the Nizam of Hyderabad, and the Rana of Nepal allied with the British." }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "विधान १ चुकीचे आहे. भारतीय सैनिक व नेते अतुलनीय शौर्याने आणि बलिदानाने लढले. उठावाच्या अपयशाची खरी कारणे म्हणजे केंद्रीय नियोजनाचा अभाव, शस्त्रास्त्रांची कमतरता, आधुनिक संपर्काचा अभाव आणि संस्थानिकांचा ब्रिटिशांना मिळालेला पाठिंबा ही होती.",
+        "en": "Statement 1 is incorrect because Indian sepoys and commanders displayed extraordinary courage and sacrifice. The collapse of the movement stemmed from lack of coordination, logistical backwardness, lack of modern weaponry, and feudal divisions."
+      }
+    },
+    {
+      "id": 14,
+      "question": {
+        "mr": "झाशीच्या किल्ल्यावरून रात्रीच्या वेळी दोराच्या साहाय्याने खाली उतरून राणी लक्ष्मीबाईंनी आपल्या पाठीवर कोणाला बांधले होते?",
+        "en": "Whom did Rani Lakshmibai carry strapped to her back when she escaped down the ramparts of Jhansi Fort on horseback in April 1858?"
+      },
+      "options": [
+        { "mr": "दामोदर राव (दत्तक पुत्र)", "en": "Damodar Rao (Adopted son)" },
+        { "mr": "आनंद राव (भाऊ)", "en": "Anand Rao (Brother)" },
+        { "mr": "मोरोपंत तांबे (वडील)", "en": "Moropant Tambe (Father)" },
+        { "mr": "गंगाधर राव", "en": "Gangadhar Rao" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "४ एप्रिल १८५८ च्या रात्री झाशीचा वेढा फोडताना राणी लक्ष्मीबाईंनी आपला १० वर्षांचा दत्तक पुत्र दामोदर राव याला पाठीवर बांधले, घोड्यावर स्वार झाल्या आणि निवडक योद्ध्यांसह कालपीकडे कूच केले.",
+        "en": "On the night of 4 April 1858, Rani Lakshmibai escaped through British cordons around Jhansi Fort on horseback with her young adopted son, Damodar Rao, strapped securely to her back."
+      }
+    },
+    {
+      "id": 15,
+      "question": {
+        "mr": "१८५८ च्या भारत सरकार कायद्यानुसार 'कोर्ट ऑफ डायरेक्टर्स' आणि 'बोर्ड ऑफ कंट्रोल' रद्द करून त्यांच्या जागी लंडनमध्ये कोणती नवीन १५ सदस्यीय सल्लागार संस्था स्थापन करण्यात आली?",
+        "en": "Under the Government of India Act 1858, which 15-member advisory body was instituted in London to assist the Secretary of State for India?"
+      },
+      "options": [
+        { "mr": "इंडिया कौन्सिल (Council of India)", "en": "Council of India" },
+        { "mr": "इम्पेरियल लेजिस्लेटिव्ह कौन्सिल", "en": "Imperial Legislative Council" },
+        { "mr": "व्हाइसरॉय एक्झिक्युटिव्ह कौन्सिल", "en": "Viceroy's Executive Council" },
+        { "mr": "ब्रिटिश इंडिया असोसिएशन", "en": "British India Association" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१८५८ च्या कायद्याने भारत मंत्र्याला (Secretary of State) मदत करण्यासाठी लंडनमध्ये १५ सदस्यांचे 'इंडिया कौन्सिल' (Council of India) स्थापन केले. यातील ८ सदस्य ब्रिटिश राजाकडून आणि ७ सदस्य जुन्या संचालक मंडळाकडून निवडले जात.",
+        "en": "The Government of India Act 1858 created the 15-member 'Council of India' in London to counsel the Secretary of State on Indian administrative and financial matters."
+      }
+    },
+    {
+      "id": 16,
+      "question": {
+        "mr": "१८५७ च्या उठावात अलाहाबाद येथे बंड पुकारून स्वतःला बहादुर शाह जफर यांचा प्रतिनिधी घोषित करणारे नेते कोण होते?",
+        "en": "Who led the uprising at Allahabad in June 1857, holding Khusro Bagh and acting as the representative of the Mughal Emperor?"
+      },
+      "options": [
+        { "mr": "मौलवी लियाकत अली", "en": "Maulvi Liaquat Ali" },
+        { "mr": "मौलवी अहमदउल्लाह", "en": "Maulvi Ahmadullah" },
+        { "mr": "अजीमुल्लाह खान", "en": "Azimullah Khan" },
+        { "mr": "खान बहादूर खान", "en": "Khan Bahadur Khan" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "मौलवी लियाकत अली हे अलाहाबाद परिसरातील धार्मिक व राजकीय नेते होते. जून १८५७ मध्ये त्यांनी अलाहाबाद शहर आणि कोतवालीवर ताबा मिळवून खुस्रो बाग हे आपले मुख्यालय बनवले होते.",
+        "en": "Maulvi Liaquat Ali, a schoolteacher and religious leader, assumed command of the rebel administration at Allahabad, garrisoning Khusro Bagh before being dislodged by Colonel Neill."
+      }
+    },
+    {
+      "id": 17,
+      "question": {
+        "mr": "मे १८५८ मध्ये कर्नाटक सीमेवरील 'नरगुंद' (Nargund) संस्थानात ब्रिटिश अधिकारी चार्ल्स मॅन्सनची हत्या करून बंड पुकारणारे राजे कोण होते?",
+        "en": "Which ruler of Nargund rebelled in May 1858 and killed the British Political Agent Charles Manson?"
+      },
+      "options": [
+        { "mr": "भास्करराव भावे (बाबासाहेब)", "en": "Bhaskar Rao Bhave (Babasaheb)" },
+        { "mr": "वेंकटप्पा नाईक", "en": "Venkatappa Naik" },
+        { "mr": "चीमासाहेब", "en": "Chimasahib" },
+        { "mr": "राघवेंद्र राव", "en": "Raghavendra Rao" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "नरगुंदचे संस्थानिक भास्करराव भावे (बाबासाहेब) यांनी ब्रिटिशांच्या निःशस्त्रीकरण कायद्याला विरोध केला. ब्रिटिश अधिकारी चार्ल्स मॅन्सन बंड मोडून काढण्यासाठी येत असताना २९ मे १८५८ रोजी सुरापूरजवळ त्याची हत्या करण्यात आली. नंतर जून १८५८ मध्ये बाबासाहेबांना बेळगाव येथे फाशी देण्यात आली.",
+        "en": "Babasaheb Bhaskar Rao Bhave of Nargund rose in revolt in May 1858 against British attempts to confiscate arms. His forces ambushed and killed Political Agent Charles Manson. He was subsequently captured and executed at Belgaum."
+      }
+    },
+    {
+      "id": 18,
+      "question": {
+        "mr": "नाशिक जिल्ह्यातील 'सुरगाणा' (Surgana) संस्थानात १८५७ च्या शेवटी कोळी व भिल्ल जनतेला एकत्र करून ब्रिटिशांविरुद्ध उठाव करणारे कोण होते?",
+        "en": "Who mobilized the Koli and Bhil inhabitants of Surgana (Nashik) into armed insurrection against British rule in late 1857?"
+      },
+      "options": [
+        { "mr": "सुरगाण्याचे पदच्युत देशमुख आणि संभाजी", "en": "The deposed Deshmukh and Sambhaji of Surgana" },
+        { "mr": "उमाजी नाईक", "en": "Umaji Naik" },
+        { "mr": "राघोजी भांगरे", "en": "Raghoji Bhangre" },
+        { "mr": "रंगो बापूजी", "en": "Rango Bapuji" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "सुरगाणा येथे ब्रिटिशांनी हस्तक्षेप करून नवा शासक बसवल्यामुळे पदच्युत स्थानिक देशमुख आणि संभाजी यांनी १८५७ च्या अखेरीस आदिवासींना एकत्र करून सुरगाणा बाजार आणि ठाण्यावर हल्ला केला होता.",
+        "en": "In Surgana, tribal Kolis and Bhils led by the dispossessed local Deshmukh family and Sambhaji attacked colonial offices and police outposts in late 1857."
+      }
+    },
+    {
+      "id": 19,
+      "question": {
+        "mr": "१८५७ च्या उठावानंतर पील आयोगाच्या शिफारशीनुसार मद्रास आणि मुंबई सैन्यात (Madras & Bombay Armies) युरोपियन आणि भारतीय सैनिकांचे प्रमाण किती निश्चित करण्यात आले?",
+        "en": "Following the Peel Commission recommendations after 1857, what was the official ratio fixed between European and Indian troops in the Madras and Bombay Armies?"
+      },
+      "options": [
+        { "mr": "१ : ३ (एक युरोपियन मागे तीन भारतीय)", "en": "1 : 3 (One European to three Indians)" },
+        { "mr": "१ : २", "en": "1 : 2" },
+        { "mr": "१ : ५", "en": "1 : 5" },
+        { "mr": "१ : १", "en": "1 : 1" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "पील आयोगाने बंगाल लष्करात १:२ हे प्रमाण ठेवले, तर मद्रास आणि मुंबई या कमी बंडखोर प्रांतांमध्ये हे प्रमाण १:३ (१ युरोपियन मागे ३ भारतीय सैनिक) निश्चित केले गेले.",
+        "en": "The Peel Commission fixed the ratio of European to native troops at 1:2 in the heavily mutinous Bengal Army, and at 1:3 in the relatively peaceful Madras and Bombay Presidencies."
+      }
+    },
+    {
+      "id": 20,
+      "question": {
+        "mr": "मार्च १८५८ मध्ये ब्रिटिश सैन्याने लखनौ शहरावर अंतिम ताबा मिळवताना नेपाळचे पंतप्रधान राणा जंग बहादूर यांनी किती गुरखा सैनिकांची मदत पाठवली होती?",
+        "en": "How many Gurkha troops were dispatched by Prime Minister Rana Jung Bahadur of Nepal to assist Sir Colin Campbell in recapturing Lucknow in March 1858?"
+      },
+      "options": [
+        { "mr": "सुमारे ९,००० सैनिक", "en": "Approximately 9,000 troops" },
+        { "mr": "सुमारे २,००० सैनिक", "en": "Approximately 2,000 troops" },
+        { "mr": "सुमारे २०,००० सैनिक", "en": "Approximately 20,000 troops" },
+        { "mr": "सुमारे ५०,००० सैनिक", "en": "Approximately 50,000 troops" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "नेपाळचे पंतप्रधान जंग बहादूर स्वतः सुमारे ९,००० निष्ठावंत गुरखा सैनिकांसह लखनौच्या अंतिम वेढ्यात कॅम्पबेलच्या मदतीसाठी आले. त्यांच्या साहाय्याने ब्रिटिशांनी २१ मार्च १८५८ रोजी लखनौ पूर्णपणे जिंकले.",
+        "en": "Rana Jung Bahadur personally marched from Kathmandu leading an army of roughly 9,000 Gurkhas, participating decisively in the capture of Lucknow alongside Sir Colin Campbell in March 1858."
+      }
+    },
+    {
+      "id": 21,
+      "question": {
+        "mr": "जुलै १८५७ मध्ये अहमदाबाद (गुजरात) येथे ७ व्या नेटिव्ह इन्फंट्रीच्या कोणत्या शिपायाने बंडाची ठिणगी टाकण्याचा प्रयत्न केला होता?",
+        "en": "In July 1857, which sepoy attempted to incite an uprising within the 7th Native Infantry garrisoned at Ahmedabad (Gujarat)?"
+      },
+      "options": [
+        { "mr": "सुभेदार सूरजमल", "en": "Subedar Surajmal" },
+        { "mr": "मंगल पांडे", "en": "Mangal Pandey" },
+        { "mr": "कदम सिंग", "en": "Kadam Singh" },
+        { "mr": "पीर अली", "en": "Pir Ali" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "अहमदाबादमध्ये ७ व्या देशी पलटणीतील सुभेदार सूरजमल आणि काही सहकाऱ्यांनी बंडाचा कट रचला होता; मात्र युरोपियन अधिकाऱ्यांनी वेळीच सैन्याला निःशस्त्र करून हा कट उधळला.",
+        "en": "At Ahmedabad, clandestine mutinous plans led by Subedar Surajmal in the 7th Native Infantry were detected, leading to the disarming and court-martial of the involved sepoys in July 1857."
+      }
+    },
+    {
+      "id": 22,
+      "question": {
+        "mr": "१८५७ च्या उठावाचे वर्णन करताना 'अराष्ट्रीय आणि पूर्णतः स्वार्थी सैनिकांचे बंड, ज्याला कोणताही नेता किंवा जनतेचा पाठिंबा नव्हता' असे विधान कोणत्या ब्रिटिश इतिहासकाराने केले?",
+        "en": "Which British historian famously described the 1857 movement as 'a wholly unpatriotic and selfish Sepoy Mutiny with no native leadership and no popular support'?"
+      },
+      "options": [
+        { "mr": "सर जॉन सीले (Sir John Seeley)", "en": "Sir John Seeley" },
+        { "mr": "टी. आर. होम्स (T. R. Holmes)", "en": "T. R. Holmes" },
+        { "mr": "सर जेम्स आऊट्रम (Sir James Outram)", "en": "Sir James Outram" },
+        { "mr": "एल. ई. आर. रीस (L. E. R. Rees)", "en": "L. E. R. Rees" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "इतिहासकार सर जॉन सीले यांनी आपल्या 'द एक्सपान्शन ऑफ इंग्लंड' या ग्रंथात उठावाला राष्ट्रीय स्वरूप नाकारून त्याला निव्वळ स्वार्थी सैनिकांची बंडाळी (Selfish Sepoy Mutiny) म्हटले होते.",
+        "en": "Sir John Seeley dismissed the rebellion in 'The Expansion of England', characterizing it as 'a wholly unpatriotic and selfish Sepoy Mutiny with no native leadership and no popular support'."
+      }
+    },
+    {
+      "id": 23,
+      "question": {
+        "mr": "१८५७ चा उठाव सुरू झाला तेव्हा ब्रिटनचे पंतप्रधान असलेले 'लॉर्ड पामर्स्टन' (Lord Palmerston) हे कोणत्या राजकीय पक्षाचे नेते होते?",
+        "en": "Lord Palmerston, who served as the Prime Minister of Great Britain during the 1857 Revolt, belonged to which political party?"
+      },
+      "options": [
+        { "mr": "व्हिग / लिबरल पक्ष (Whig / Liberal Party)", "en": "Whig / Liberal Party" },
+        { "mr": "कंझर्व्हेटिव्ह पक्ष (टोरीज)", "en": "Conservative Party (Tories)" },
+        { "mr": "लेबर पक्ष (Labour Party)", "en": "Labour Party" },
+        { "mr": "युनियनिस्ट पक्ष", "en": "Unionist Party" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "लॉर्ड पामर्स्टन हे व्हिग/लिबरल (Liberal) पक्षाचे नेते होते आणि ते १८५५ ते १८५८ या काळात ब्रिटनचे पंतप्रधान होते. उठावाच्या व्यवस्थापनावरून वाद झाल्याने फेब्रुवारी १८५८ मध्ये त्यांच्या सरकारने राजीनामा दिला आणि लॉर्ड डर्बी यांचे कंझर्व्हेटिव्ह सरकार आले.",
+        "en": "Lord Palmerston was a prominent leader of the Whig (Liberal) Party and served as British Prime Minister from 1855 until early 1858 when his administration fell, paving the way for Lord Derby's Conservatives."
+      }
+    },
+    {
+      "id": 24,
+      "question": {
+        "mr": "मेरठ आणि आसपासच्या ग्रामीण भागात १० मे १८५७ नंतर हजारो गुजर शेतकऱ्यांना संघटित करून ब्रिटिश ठाण्यांवर हल्ले चढवणारे नेते कोण होते?",
+        "en": "Who organized thousands of Gujjar peasants around Meerut to storm colonial outposts following the 10 May 1857 outbreak?"
+      },
+      "options": [
+        { "mr": "कदम सिंग (Kadam Singh)", "en": "Kadam Singh" },
+        { "mr": "शाह मल (Shah Mal)", "en": "Shah Mal" },
+        { "mr": "देवी सिंग (Devi Singh)", "en": "Devi Singh" },
+        { "mr": "बख्त खान (Bakht Khan)", "en": "Bakht Khan" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "मेरठच्या ग्रामीण भागात राजा कदम सिंग यांनी स्थानिक गुजर बांधवांना संघटित करून ब्रिटिश प्रशासनाला आव्हान दिले आणि स्वतःचे स्वतंत्र शासन स्थापन केले होते.",
+        "en": "Raja Kadam Singh emerged as the leader of the rural Gujjar rebellion in the Meerut district, disrupting telegraph communications and asserting regional autonomy."
+      }
+    },
+    {
+      "id": 25,
+      "question": {
+        "mr": "१८५८ च्या राणी व्हिक्टोरियाच्या जाहीरनाम्यात भारतीयांना नोकऱ्यांसंदर्भात खालीलपैकी कोणते महत्त्वाचे आश्वासन देण्यात आले होते?",
+        "en": "What statutory assurance was formally extended to Indian subjects regarding public employment in Queen Victoria's Proclamation of 1858?"
+      },
+      "options": [
+        { "mr": "जात, धर्म किंवा वंशाचा विचार न करता केवळ पात्रता, शिक्षण आणि सचोटीच्या आधारावर सरकारी नोकऱ्यांमध्ये मुक्त व निष्पक्ष प्रवेश दिला जाईल.", "en": "Free and impartial admission to offices in public service based solely on qualification, integrity, and merit without distinction of race or creed." },
+        { "mr": "सरकारी नोकऱ्यांमध्ये सर्व पदे केवळ ब्रिटनमध्ये जन्मलेल्या युरोपियनांसाठी राखीव असतील.", "en": "All civil posts would be strictly reserved for individuals born in the United Kingdom." },
+        { "mr": "सनदी सेवांमधील सर्व स्पर्धा परीक्षा तात्काळ बंद केल्या जातील.", "en": "All open competitive civil service examinations would be abolished forthwith." },
+        { "mr": "नोकऱ्यांमध्ये केवळ मुघल सम्राटांच्या वंशजांनाच उच्च पदे दिली जातील.", "en": "Superior executive offices would be allotted solely to descendants of the Mughal dynasty." }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१ नोव्हेंबर १८५८ च्या जाहीरनाम्यात राणी व्हिक्टोरियाने स्पष्ट आश्वासन दिले की, धर्म किंवा वंशाचा कोणताही भेदभाव न करता प्रत्येक भारतीय प्रजेला तिच्या योग्यतेनुसार आणि गुणवत्तेनुसार सरकारी नोकऱ्यांमध्ये समान संधी दिली जाईल.",
+        "en": "Queen Victoria's Proclamation solemnly declared that subjects of whatever race or creed would be freely and impartially admitted to offices in the public service, provided they possessed the requisite qualifications and ability."
+      }
+    }
+  ]
+}

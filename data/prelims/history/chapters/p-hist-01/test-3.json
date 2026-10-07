@@ -1,0 +1,464 @@
+{
+  "testId": "p-hist-01-t3",
+  "title": {
+    "mr": "आधुनिक भारताचा इतिहास — सराव 3",
+    "en": "Modern Indian History — Practice Test 3"
+  },
+  "durationMinutes": 20,
+  "marksPerQuestion": 1,
+  "negativeMarking": 0.25,
+  "totalMarks": 25,
+  "difficulty": "मध्यम ते काठिण्य",
+  "questions": [
+    {
+      "id": 1,
+      "question": {
+        "mr": "१६०० मध्ये ईस्ट इंडिया कंपनीला आशियाई देशांशी १५ वर्षांच्या व्यापाराची सनद प्रदान करणाऱ्या इंग्लंडच्या तत्कालीन राणी कोण होत्या?",
+        "en": "Who was the Queen of England that granted a 15-year royal charter to the East India Company for trading with Asian countries in 1600?"
+      },
+      "options": [
+        { "mr": "राणी एलिझाबेथ पहिली", "en": "Queen Elizabeth I" },
+        { "mr": "राणी व्हिक्टोरिया", "en": "Queen Victoria" },
+        { "mr": "राणी मेरी पहिली", "en": "Queen Mary I" },
+        { "mr": "राणी ॲन", "en": "Queen Anne" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "३१ डिसेंबर १६०० रोजी राणी एलिझाबेथ पहिली यांनी एका शाही सनदेद्वारे (Royal Charter) 'गव्हर्नर अँड कंपनी ऑफ मर्चंट्स ऑफ लंडन ट्रेडिंग इन टू द ईस्ट इंडीज' या कंपनीला पूर्वेकडील देशांशी व्यापाराची १५ वर्षांची मक्तेदारी दिली.",
+        "en": "On 31 December 1600, Queen Elizabeth I granted a royal charter to 'The Governor and Company of Merchants of London Trading into the East Indies', conferring a monopoly on English trade with the East Indies for an initial period of 15 years."
+      }
+    },
+    {
+      "id": 2,
+      "question": {
+        "mr": "१६१२ मधील 'स्वालीच्या लढाईत' (Battle of Swally) इंग्रज कॅप्टन थॉमस बेस्ट याने कोणत्या युरोपियन सत्तेचा पराभव करून मुघलांच्या नजरेत ईस्ट इंडिया कंपनीची पत वाढवली?",
+        "en": "In the Battle of Swally (1612), English Captain Thomas Best defeated which European power, thereby raising the Company's prestige in the eyes of the Mughals?"
+      },
+      "options": [
+        { "mr": "पोर्तुगीज", "en": "Portuguese" },
+        { "mr": "डच", "en": "Dutch" },
+        { "mr": "फ्रेंच", "en": "French" },
+        { "mr": "डेनिश", "en": "Danish" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "नोव्हेंबर १६१२ मध्ये सुरतनजीक स्वाली (सुवाली) खाडीत कॅप्टन थॉमस बेस्टच्या ब्रिटिश जहाजांनी बलदंड पोर्तुगीज नौदलाचा पराभव केला. या पराक्रमामुळे मुघल सम्राट जहांगीर प्रभावित झाला आणि त्याने १६१३ मध्ये इंग्रजांना सुरत येथे पहिली कायमस्वरूपी वखार स्थापन करण्याचे शाही फर्मान दिले.",
+        "en": "In November 1612, Captain Thomas Best defeated the Portuguese fleet at the Battle of Swally near Surat. Impressed by this victory, Emperor Jahangir issued a farman in 1613 permitting the English to erect a permanent trading factory at Surat."
+      }
+    },
+    {
+      "id": 3,
+      "question": {
+        "mr": "पोर्तुगीज गव्हर्नर नुनो दा कुन्हा (Nuno da Cunha) याने १५३० मध्ये पोर्तुगीजांची भारतातील अधिकृत राजधानी कोठून कोठे हलवली?",
+        "en": "To which place did the Portuguese Governor Nuno da Cunha shift their official headquarters in India from Cochin in 1530?"
+      },
+      "options": [
+        { "mr": "गोवा", "en": "Goa" },
+        { "mr": "कालिकत", "en": "Calicut" },
+        { "mr": "दीव", "en": "Diu" },
+        { "mr": "दमण", "en": "Daman" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१५३० मध्ये पोर्तुगीज गव्हर्नर नुनो दा कुन्हा याने पोर्तुगीजांचे भारतातील प्रशासकीय मुख्यालय कोचीनहून गोव्याला हलवले. १५१० मध्ये अल्बुकर्कने जिंकलेला गोवा यामुळे पोर्तुगीज भारताची (Estado da Índia) कायमस्वरूपी राजधानी बनला.",
+        "en": "In 1530, Portuguese Governor Nuno da Cunha officially shifted the capital and headquarters of the Portuguese government in India from Cochin to Goa, cementing Goa as the center of Estado da Índia."
+      }
+    },
+    {
+      "id": 4,
+      "question": {
+        "mr": "१६३२ मध्ये ईस्ट इंडिया कंपनीला गोलकोंडा राज्यातील बंदरांवर मुक्त व्यापाराचा हक्क देणारा 'सुवर्ण फर्मान' (Golden Farman) कोणी जारी केला?",
+        "en": "Who issued the 'Golden Farman' in 1632 granting the East India Company duty-free trading privileges across the ports of the Sultanate of Golconda?"
+      },
+      "options": [
+        { "mr": "गोलकोंड्याचा सुलतान अब्दुल्ला कुतुबशाह", "en": "Abdullah Qutb Shah, Sultan of Golconda" },
+        { "mr": "मुघल सम्राट शहाजहान", "en": "Mughal Emperor Shah Jahan" },
+        { "mr": "विजापूरचा सुलतान मोहम्मद आदिलशाह", "en": "Muhammad Adil Shah, Sultan of Bijapur" },
+        { "mr": "कर्नाटकचा नवाब साआदतउल्ला खान", "en": "Saadatullah Khan, Nawab of Carnatic" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१६३२ मध्ये गोलकोंड्याच्या कुतुबशाही सुलतान अब्दुल्ला कुतुबशाहने इंग्रजांना 'सुवर्ण फर्मान' (Golden Farman) दिले. यानुसार वार्षिक ५०० पॅगोडा शुल्काच्या मोबदल्यात इंग्रजांना गोलकोंडा राज्याच्या सर्व बंदरांवर जकातमुक्त व्यापाराची परवानगी मिळाली.",
+        "en": "In 1632, Sultan Abdullah Qutb Shah of Golconda issued the famous 'Golden Farman', which allowed the English East India Company to trade freely at all ports of the Sultanate on an annual payment of 500 pagodas."
+      }
+    },
+    {
+      "id": 5,
+      "question": {
+        "mr": "१६३९ मध्ये फ्रान्सिस डे याने चंद्रगिरीच्या राजाकडून जमीन भाडेतत्त्वावर घेऊन मद्रास येथे खालीलपैकी कोणता प्रसिद्ध किल्ला बांधला?",
+        "en": "Which famous fortified factory was constructed by Francis Day at Madras in 1639 after acquiring land on lease from the Raja of Chandragiri?"
+      },
+      "options": [
+        { "mr": "फोर्ट सेंट जॉर्ज (Fort St. George)", "en": "Fort St. George" },
+        { "mr": "फोर्ट विल्यम (Fort William)", "en": "Fort William" },
+        { "mr": "फोर्ट सेंट डेव्हिड (Fort St. David)", "en": "Fort St. David" },
+        { "mr": "फोर्ट सेंट अँजेलो (Fort St. Angelo)", "en": "Fort St. Angelo" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१६३९ मध्ये फ्रान्सिस डे याने चंद्रगिरीच्या स्थानिक राजाकडून एक किनारपट्टीचा पट्टा मिळवला आणि तिथे 'फोर्ट सेंट जॉर्ज' या नावाने तटबंदी वखार उभारली. हे केंद्र पुढे जाऊन मद्रास प्रेसिडेन्सीचे मुख्यालय बनले.",
+        "en": "In 1639, Francis Day obtained a lease of land from the ruler of Chandragiri and erected Fort St. George at Madras, which subsequently became the headquarters of the Company's settlements on the Coromandel Coast."
+      }
+    },
+    {
+      "id": 6,
+      "question": {
+        "mr": "१६९८ मध्ये इंग्रजांना सुतानाती, कलिकाता आणि गोविंदपूर या तीन खेड्यांची जमीनदारी मिळाली. या तीन खेड्यांचे एकत्रीकरण करून आधुनिक कलकत्ता शहराची पायाभरणी कोणाच्या नेतृत्वात झाली?",
+        "en": "In 1698, the English secured the zamindari rights of Sutanuti, Kalikata, and Gobindapur. Who led the consolidation of these villages to lay the foundation of modern Calcutta?"
+      },
+      "options": [
+        { "mr": "जॉब चार्नॉक (Job Charnock)", "en": "Job Charnock" },
+        { "mr": "सर चार्ल्स आयर (Sir Charles Eyre)", "en": "Sir Charles Eyre" },
+        { "mr": "रॉबर्ट क्लाईव्ह (Robert Clive)", "en": "Robert Clive" },
+        { "mr": "विल्यम हेजेस (William Hedges)", "en": "William Hedges" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "जॉब चार्नॉक याने १६९० मध्ये सुतानाती येथे कंपनीचे व्यापारी केंद्र स्थापन केले. पुढे १६९८ मध्ये तिन्ही खेड्यांची जमीनदारी मिळवून कलकत्त्याची वखार तटबंदीयुक्त करण्यात आली (फोर्ट विल्यम), ज्यातून आधुनिक कलकत्ता शहराचा पाया घातला गेला.",
+        "en": "Job Charnock established an English settlement at Sutanuti in 1690. Following the grant of zamindari for Sutanuti, Kalikata, and Gobindapur in 1698, this settlement expanded into modern Calcutta around Fort William."
+      }
+    },
+    {
+      "id": 7,
+      "question": {
+        "mr": "१७०७ मध्ये औरंगजेबाच्या मृत्यूनंतर बंगालचा सुभेदार मुर्शिदकुली खान याने आपली राजधानी ढाक्याहून कोठे हलवली?",
+        "en": "After the death of Aurangzeb in 1707, where did Murshid Quli Khan shift the provincial capital of Bengal from Dacca?"
+      },
+      "options": [
+        { "mr": "मुर्शिदाबाद", "en": "Murshidabad" },
+        { "mr": "मुंगेर", "en": "Munger" },
+        { "mr": "कलकत्ता", "en": "Calcutta" },
+        { "mr": "पाटणा", "en": "Patna" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "मुर्शिदकुली खानने बंगालचा कारभार स्वतंत्रपणे चालवताना १७०४ च्या सुमारास दिवाणचे कार्यालय ढाक्याहून मक्शुदाबाद येथे नेले आणि १७१७ मध्ये त्याचे नामकरण 'मुर्शिदाबाद' करून ती बंगालची अधिकृत राजधानी बनवली.",
+        "en": "Murshid Quli Khan transferred the administrative capital of Bengal from Dacca to Maqsudabad, which he subsequently renamed Murshidabad in 1717, establishing it as the seat of the autonomous Nawabs of Bengal."
+      }
+    },
+    {
+      "id": 8,
+      "question": {
+        "mr": "मीर कासीमने बंगालचा नवाब बनल्यानंतर कंपनीच्या हस्तक्षेपापासून दूर राहण्यासाठी आपली राजधानी मुर्शिदाबादहून कोठे हलवली?",
+        "en": "After becoming the Nawab of Bengal, to which location did Mir Qasim shift his capital from Murshidabad to minimize Company interference?"
+      },
+      "options": [
+        { "mr": "मुंगेर (बिहार)", "en": "Munger (Bihar)" },
+        { "mr": "पाटणा", "en": "Patna" },
+        { "mr": "ढाका", "en": "Dacca" },
+        { "mr": "अलाहाबाद", "en": "Allahabad" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "मीर कासीमने कलकत्त्यातील ब्रिटिशांच्या दबावापासून सुरक्षित अंतर राखण्यासाठी १७६२ मध्ये आपली राजधानी मुर्शिदाबादहून बिहारमधील 'मुंगेर' येथे हलवली आणि तेथे युरोपीय धर्तीवर सैन्याला प्रशिक्षण व तोफा-बंदुकांचा कारखाना सुरू केला.",
+        "en": "In 1762, Mir Qasim shifted his capital from Murshidabad to Munger in Bihar to insulate his court from British intrigues in Calcutta and modernize his infantry and ordnance manufacturing."
+      }
+    },
+    {
+      "id": 9,
+      "question": {
+        "mr": "ऑगस्ट १७६५ मध्ये रॉबर्ट क्लाईव्ह आणि अयोध्याचा नवाब शुजा-उद्-दौला यांच्यात झालेल्या अलाहाबादच्या दुसऱ्या तहातील प्रमुख अट खालीलपैकी कोणती होती?",
+        "en": "Which of the following was a major term of the Second Treaty of Allahabad signed in August 1765 between Robert Clive and Nawab Shuja-ud-Daula of Awadh?"
+      },
+      "options": [
+        { "mr": "नवाबाने कडा आणि अलाहाबाद हे जिल्हे मुघल सम्राटाला द्यायचे आणि कंपनीला ५० लाख रुपये युद्धभरपाई द्यायची", "en": "The Nawab surrendered Kora and Allahabad to the Mughal Emperor and paid 50 lakh rupees as war indemnity to the Company" },
+        { "mr": "अवधचे संपूर्ण राज्य ब्रिटिश ईस्ट इंडिया कंपनीत कायमचे विलीन करण्यात आले", "en": "The entire territory of Awadh was annexed permanently into the East India Company" },
+        { "mr": "नवाबाने आपली सर्व सेना बरखास्त करून ब्रिटिशांचे संपूर्ण प्रशासन स्वीकारावे", "en": "The Nawab agreed to disband his entire standing army and accept direct British administration" },
+        { "mr": "अवध प्रांतात ब्रिटिशांनी महसूल गोळा करण्याचे संपूर्ण दिवाणी अधिकार हस्तगत केले", "en": "The British acquired full Diwani rights over revenue collection in the province of Awadh" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१६ ऑगस्ट १७६५ च्या अलाहाबादच्या दुसऱ्या तहानुसार शुजा-उद्-दौलाकडून कडा व अलाहाबाद जिल्हे काढून मुघल सम्राट शहा आलमला दिले गेले, कंपनीला ५० लाख रुपये युद्धदंड दिला गेला आणि अवध हे ब्रिटिशांसाठी मराठ्यांविरुद्ध 'बफर स्टेट' (मध्यस्थ राज्य) बनवले गेले.",
+        "en": "Under the Second Treaty of Allahabad (16 August 1765), Shuja-ud-Daula surrendered Kora and Allahabad to Shah Alam II, paid £500,000 (50 lakh rupees) as war indemnity, and maintained Awadh as a buffer state against Maratha expansion."
+      }
+    },
+    {
+      "id": 10,
+      "question": {
+        "mr": "१७७५ च्या 'सुरतच्या तहाच्या' (Treaty of Surat) संदर्भात खालील विधाने विचारात घ्या:\nअ. हा तह रघुनाथराव (राघोबा) आणि मुंबई ब्रिटिश कौन्सिल यांच्यात झाला.\nब. या तहामुळे पहिल्या इंग्रज-मराठा युद्धाची ठिणगी पडली.\nवरीलपैकी कोणते/ती विधान/ने बरोबर आहेत?",
+        "en": "Consider the following statements regarding the Treaty of Surat (1775):\na. It was signed between Raghunath Rao (Raghoba) and the Bombay Council of the British.\nb. This treaty sparked the First Anglo-Maratha War.\nWhich of the statements given above is/are correct?"
+      },
+      "options": [
+        { "mr": "फक्त अ", "en": "Only a" },
+        { "mr": "फक्त ब", "en": "Only b" },
+        { "mr": "अ आणि ब दोन्ही", "en": "Both a and b" },
+        { "mr": "दोन्ही नाही", "en": "Neither a nor b" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "दोन्ही विधाने बरोबर आहेत. नारायणराव पेशव्यांच्या हत्येनंतर पेशवेपदाच्या लालसेपोटी रघुनाथरावाने ६ मार्च १७७५ रोजी मुंबईकर इंग्रजांशी सुरतचा तह केला. या तहाने साष्टी व वसई देण्याचे मान्य करून इंग्रजी सैन्य घेतले, ज्यातून पहिले इंग्रज-मराठा युद्ध (१७७५-१७८२) सुरू झाले.",
+        "en": "Both statements are correct. Seeking the Peshwaship after Narayanrao's murder, Raghunathrao concluded the Treaty of Surat on 6 March 1775 with the Bombay Council, promising Salsette and Bassein in exchange for troops, which initiated the First Anglo-Maratha War."
+      }
+    },
+    {
+      "id": 11,
+      "question": {
+        "mr": "१७७९ मध्ये पहिल्या इंग्रज-मराठा युद्धादरम्यान मराठा सैन्याने इंग्रजांचा दारुण पराभव करून कोणता ऐतिहासिक तह करण्यास भाग पाडले?",
+        "en": "In 1779, during the First Anglo-Maratha War, Maratha forces decisively defeated the British forces and compelled them to sign which historic treaty?"
+      },
+      "options": [
+        { "mr": "वडगावचा तह (Treaty of Wadgaon)", "en": "Treaty of Wadgaon" },
+        { "mr": "पुरंदरचा तह (Treaty of Purandar)", "en": "Treaty of Purandar" },
+        { "mr": "पुण्याचा तह (Treaty of Poona)", "en": "Treaty of Poona" },
+        { "mr": "कनकपूरचा तह (Treaty of Kanakpur)", "en": "Treaty of Kanakpur" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "जानेवारी १७७९ मध्ये तळेगाव-वडगाव येथे महादजी शिंदे यांच्या नेतृत्वाखालील मराठा फौजांनी ब्रिटिश फौजेला घेराव घालून पाणी व रसद तोडली. इंग्रजांना शरणागती पत्करावी लागली आणि १६ जानेवारी १७७९ रोजी अपमानास्पद 'वडगावचा तह' करावा लागला.",
+        "en": "In January 1779 at the Battle of Wadgaon, Maratha armies under Mahadji Shinde trapped the Bombay British forces, forcing them to surrender and sign the humiliating Convention/Treaty of Wadgaon on 16 January 1779."
+      }
+    },
+    {
+      "id": 12,
+      "question": {
+        "mr": "पहिल्या इंग्रज-म्हैसूर युद्धाची (१७६७-१७६९) समाप्ती खालीलपैकी कोणत्या तहाने झाली, ज्यामध्ये हैदर अलीने ब्रिटिशांवर आपल्या अटी लादल्या?",
+        "en": "The First Anglo-Mysore War (1767–1769) concluded with which treaty, wherein Hyder Ali dictated peace terms to the British?"
+      },
+      "options": [
+        { "mr": "मद्रासचा तह (Treaty of Madras)", "en": "Treaty of Madras" },
+        { "mr": "मंगलोरचा तह (Treaty of Mangalore)", "en": "Treaty of Mangalore" },
+        { "mr": "श्रीरंगपट्टणमचा तह (Treaty of Srirangapatnam)", "en": "Treaty of Srirangapatnam" },
+        { "mr": "म्हैसूरचा तह (Treaty of Mysore)", "en": "Treaty of Mysore" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "एप्रिल १७६९ मध्ये हैदर अलीने अचानक वेगाने आगेकूच करून मद्रास शहराला वेढा घातला. ब्रिटिशांना बचावाचा मार्ग न उरल्याने त्यांनी ४ एप्रिल १७६९ रोजी मद्रासचा तह केला. यात परस्परांचे प्रदेश परत करणे आणि संरक्षणात्मक मदतीचे वचन देण्यात आले.",
+        "en": "In April 1769, Hyder Ali outmaneuvered British columns and suddenly appeared before the walls of Madras, forcing the terrified Madras Council to sign the Treaty of Madras (4 April 1769), which provided for mutual restitution of conquests and mutual defense."
+      }
+    },
+    {
+      "id": 13,
+      "question": {
+        "mr": "दुसऱ्या इंग्रज-म्हैसूर युद्धादरम्यान (१७८०-१७८४) सर आयर कूट यांनी १७८१ मध्ये झालेल्या कोणत्या प्रसिद्ध लढाईत हैदर अलीचा पराभव केला होता?",
+        "en": "During the Second Anglo-Mysore War (1780–1784), in which famous battle of 1781 did Sir Eyre Coote defeat Hyder Ali?"
+      },
+      "options": [
+        { "mr": "पोर्टो नोव्होची लढाई (Battle of Porto Novo)", "en": "Battle of Porto Novo" },
+        { "mr": "पोलीलूरची लढाई (Battle of Pollilur)", "en": "Battle of Pollilur" },
+        { "mr": "शोलींगूरची लढाई (Battle of Sholinghur)", "en": "Battle of Sholinghur" },
+        { "mr": "आरकोटची लढाई (Battle of Arcot)", "en": "Battle of Arcot" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१ जुलै १७८१ रोजी पोर्टो नोव्हो (परंगिपेटाई) येथे सर आयर कूट यांच्या नेतृत्वाखालील ब्रिटिश सैन्याने हैदर अलीचा दारुण पराभव केला. या लढाईने मद्रासवरील संकट टळले आणि ब्रिटिशांचे मनोधैर्य पुन्हा उंचावले.",
+        "en": "On 1 July 1781, British forces under Sir Eyre Coote defeated Hyder Ali at the Battle of Porto Novo, saving the Madras Presidency and halting Hyder's southward sweep."
+      }
+    },
+    {
+      "id": 14,
+      "question": {
+        "mr": "१७९२ मधील श्रीरंगपट्टणमच्या तहाद्वारे तिसऱ्या इंग्रज-म्हैसूर युद्धाची सांगता झाली. या तहानुसार टिपू सुलतानला आपला किती भूभाग इंग्रज आणि त्यांच्या मित्रपक्षांना द्यावा लागला?",
+        "en": "The Third Anglo-Mysore War ended with the Treaty of Srirangapatnam in 1792. Under this treaty, how much territory was Tipu Sultan forced to surrender to the British and their allies?"
+      },
+      "options": [
+        { "mr": "आपल्या राज्याचा निम्मा (१/२) भूभाग", "en": "Half (1/2) of his territory" },
+        { "mr": "एक तृतीयांश (१/३) भूभाग", "en": "One-third (1/3) of his territory" },
+        { "mr": "एक चतुर्थांश (१/४) भूभाग", "en": "One-fourth (1/4) of his territory" },
+        { "mr": "संपूर्ण किनारपट्टीचा भूभाग", "en": "The entire coastal province" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "मार्च १७९२ च्या श्रीरंगपट्टणमच्या तहानुसार टिपू सुलतानला आपल्या राज्याचा निम्मा प्रदेश इंग्रज, निजाम आणि मराठ्यांमध्ये वाटून द्यावा लागला. तसेच ३ कोटी रुपयांपेक्षा जास्त युद्धदंड लावला गेला आणि भरपाईची हमी म्हणून टिपूच्या दोन मुलांना ओलिस ठेवण्यात आले.",
+        "en": "Under the Treaty of Srirangapatnam (March 1792), Tipu Sultan surrendered roughly half of Mysore's territories (split among the British, Nizam, and Marathas), paid over £3 million in indemnities, and surrendered two of his sons as hostages."
+      }
+    },
+    {
+      "id": 15,
+      "question": {
+        "mr": "टिपू सुलतानच्या संदर्भातील खालील विधाने विचारात घ्या:\nअ. त्याने फ्रान्समधील 'जॅकोबिन क्लब'चे (Jacobin Club) सदस्यत्व स्वीकारले आणि स्वतःला 'नागरिक टिपू' (Citizen Tipu) घोषित केले.\nब. त्याने श्रीरंगपट्टणम येथे 'स्वातंत्र्याचा वृक्ष' (Tree of Liberty) लावला.\nवरीलपैकी कोणते/ती विधान/ने बरोबर आहेत?",
+        "en": "Consider the following statements regarding Tipu Sultan:\na. He enrolled as a member of the French 'Jacobin Club' and styled himself 'Citizen Tipu'.\nb. He planted the 'Tree of Liberty' at Srirangapatnam.\nWhich of the statements given above is/are correct?"
+      },
+      "options": [
+        { "mr": "फक्त अ", "en": "Only a" },
+        { "mr": "फक्त ब", "en": "Only b" },
+        { "mr": "अ आणि ब दोन्ही", "en": "Both a and b" },
+        { "mr": "दोन्ही नाही", "en": "Neither a nor b" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "दोन्ही विधाने बरोबर आहेत. टिपू सुलतान आंतरराष्ट्रीय घडामोडींविषयी अत्यंत जागरूक होता. त्याने फ्रेंच सैनिकांच्या सहकार्याने १७९७ मध्ये श्रीरंगपट्टणम येथे जॅकोबिन क्लब स्थापन करून स्वतः सदस्यत्व घेतले आणि फ्रेंच क्रांतीच्या समर्थनार्थ तेथे 'स्वातंत्र्याचा वृक्ष' लावला.",
+        "en": "Both statements are correct. Showing keen interest in revolutionary France, Tipu Sultan sanctioned the establishment of a Jacobin Club at Srirangapatnam in 1797, enrolled as Citizen Tipu, and planted the Tree of Liberty."
+      }
+    },
+    {
+      "id": 16,
+      "question": {
+        "mr": "१८०० मध्ये कंपनीच्या तरुण सनदी अधिकाऱ्यांना भारतीय भाषा आणि प्रशासनाचे प्रशिक्षण देण्यासाठी कलकत्ता येथे 'फोर्ट विल्यम कॉलेज' कोणाच्या आदेशाने सुरू झाले?",
+        "en": "By whose orders was 'Fort William College' established at Calcutta in 1800 to train young civil servants of the Company in Indian languages and administration?"
+      },
+      "options": [
+        { "mr": "लॉर्ड वेलस्ली", "en": "Lord Wellesley" },
+        { "mr": "लॉर्ड कॉर्नवॉलिस", "en": "Lord Cornwallis" },
+        { "mr": "वॉरन हेस्टिंग्स", "en": "Warren Hastings" },
+        { "mr": "लॉर्ड विल्यम बेंटिंक", "en": "Lord William Bentinck" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "लॉर्ड वेलस्लीने १० जुलै १८०० रोजी फोर्ट विल्यम कॉलेजची स्थापना केली, जेणेकरून इंग्लंडमधून भारतात येणाऱ्या सनदी अधिकाऱ्यांना स्थानिक कायदे, भाषा आणि रितीरिवाजांचे औपचारिक शिक्षण दिले जावे. मात्र लंडनच्या कोर्ट ऑफ डायरेक्टर्सने १८०६ मध्ये लंडनजवळ हेलीबरी कॉलेज सुरू करून याचे महत्त्व कमी केले.",
+        "en": "Lord Wellesley founded Fort William College on 10 July 1800 to train freshly arrived British civil servants in Indian languages, culture, and administrative regulations before dispatching them to the districts."
+      }
+    },
+    {
+      "id": 17,
+      "question": {
+        "mr": "१८१७-१८ मधील तिसऱ्या इंग्रज-मराठा युद्धादरम्यान खालीलपैकी कोणती महत्त्वपूर्ण लढाई झाली नव्हती?",
+        "en": "Which of the following significant battles was NOT fought during the Third Anglo-Maratha War (1817–1818)?"
+      },
+      "options": [
+        { "mr": "अडगावची लढाई (Battle of Adgaon/Argaon)", "en": "Battle of Argaon" },
+        { "mr": "खडकीची लढाई (Battle of Khadki)", "en": "Battle of Khadki" },
+        { "mr": "कोरेगावची लढाई (Battle of Koregaon)", "en": "Battle of Koregaon" },
+        { "mr": "महिदपूरची लढाई (Battle of Mahidpur)", "en": "Battle of Mahidpur" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "अडगावची (अडगाव-अंजनगाव) लढाई नोव्हेंबर १८०३ मध्ये 'दुसऱ्या' इंग्रज-मराठा युद्धादरम्यान झाली होती. खडकी (नोव्हेंबर १८१७), महिदपूर (डिसेंबर १८१७), आणि कोरेगाव (१ जानेवारी १८१८) या लढाया 'तिसऱ्या' इंग्रज-मराठा युद्धातील आहेत.",
+        "en": "The Battle of Argaon occurred in November 1803 during the Second Anglo-Maratha War. Battles of Khadki (November 1817), Mahidpur (December 1817), and Koregaon (January 1818) were prominent engagements of the Third Anglo-Maratha War."
+      }
+    },
+    {
+      "id": 18,
+      "question": {
+        "mr": "१८१८ मध्ये पेशवाईचा अस्त झाल्यानंतर ब्रिटिश सरकारने दुसऱ्या बाजीराव पेशव्याला पदच्युत करून वार्षिक आठ लाख रुपयांच्या पेन्शनवर कोठे पाठवले?",
+        "en": "Following the collapse of the Peshwaship in 1818, to which place was Peshwa Baji Rao II banished on an annual pension of eight lakh rupees?"
+      },
+      "options": [
+        { "mr": "बिटहूर (कानपूरजवळ)", "en": "Bithoor (near Kanpur)" },
+        { "mr": "वाराणसी", "en": "Varanasi" },
+        { "mr": "झाशी", "en": "Jhansi" },
+        { "mr": "ग्वाल्हेर", "en": "Gwalior" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "जून १८१८ मध्ये दुसऱ्या बाजीरावाने सर जॉन माल्कमकडे आत्मसमर्पण केले. ब्रिटिशांनी पेशवेपद कायमचे रद्द केले आणि बाजीरावाला कानपूरजवळील 'बिटहूर' येथे वार्षिक ८ लाख रुपयांच्या निवृत्तिवेतनावर पाठवून नजरकैदेत ठेवले.",
+        "en": "In June 1818, Peshwa Baji Rao II surrendered to Sir John Malcolm. The office of the Peshwa was permanently abolished and Baji Rao II was exiled to Bithoor near Kanpur with an annual pension of eight lakh rupees."
+      }
+    },
+    {
+      "id": 19,
+      "question": {
+        "mr": "मध्य भारतातील पेंढारी टोळ्यांच्या समूळ उच्चाटनाचे (Suppression of Pindaris) श्रेय कोणत्या गव्हर्नर-जनरलला जाते?",
+        "en": "The credit for the total suppression and eradication of the Pindaris in Central India belongs to which Governor-General?"
+      },
+      "options": [
+        { "mr": "लॉर्ड हेस्टिंग्स (लॉर्ड मॉइरा)", "en": "Lord Hastings (Lord Moira)" },
+        { "mr": "लॉर्ड मिंटो पहिला", "en": "Lord Minto I" },
+        { "mr": "लॉर्ड कॉर्नवॉलिस", "en": "Lord Cornwallis" },
+        { "mr": "लॉर्ड ॲमहर्स्ट", "en": "Lord Amherst" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "लॉर्ड हेस्टिंग्सने (१८१३-१८२३) पेंढार्यांच्या लुटीचा बीमोड करण्यासाठी उत्तर व दक्षिणेतून १ लाखाहून अधिक सैन्याची मोठी मोहीम उघडली आणि वासील मोहम्मद, चितू व करीम खान यांसारख्या पेंढारी प्रमुखांचा नायनाट करून शांतता प्रस्थापित केली.",
+        "en": "Lord Hastings (1813–1823) organized a massive pincer campaign involving over 110,000 soldiers to crush the predatory bands of Pindaris, hunting down leaders like Cheetu, Karim Khan, and Wasil Mohammad."
+      }
+    },
+    {
+      "id": 20,
+      "question": {
+        "mr": "१८१३ च्या सनदी कायद्याद्वारे (Charter Act of 1813) भारतातील स्थानिक रहिवाशांच्या शिक्षणासाठी दरवर्षी किती रुपयांची तरतूद करण्यात आली होती?",
+        "en": "Under the Charter Act of 1813, what annual budgetary provision was sanctioned for the revival of literature and the promotion of sciences among the inhabitants of India?"
+      },
+      "options": [
+        { "mr": "₹ १ लाख", "en": "₹ 1 Lakh" },
+        { "mr": "₹ ५ लाख", "en": "₹ 5 Lakhs" },
+        { "mr": "₹ १० लाख", "en": "₹ 10 Lakhs" },
+        { "mr": "₹ ५०,०००", "en": "₹ 50,000" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१८१३ च्या सनदी कायद्यातील कलम ४३ नुसार ईस्ट इंडिया कंपनीने भारतातील जनतेच्या शिक्षण, वाङ्मय पुनरुज्जीवन आणि विज्ञानाच्या प्रसारासाठी वार्षिक किमान १ लाख रुपये खर्च करण्याचे कायदेशीर बंधन घालण्यात आले.",
+        "en": "Section 43 of the Charter Act of 1813 laid down that the Company should allocate an annual sum of not less than one lakh rupees for the promotion of native education, scientific knowledge, and literature in British India."
+      }
+    },
+    {
+      "id": 21,
+      "question": {
+        "mr": "१८३५ च्या प्रसिद्ध 'शिक्षणावरील मिनिट' (Minute on Indian Education) द्वारे इंग्रजी ही उच्च शिक्षणाची अधिकृत भाषा करण्याची शिफारस कोणी केली?",
+        "en": "Who recommended making English the medium of higher instruction in India through his famous 'Minute on Indian Education' in 1835?"
+      },
+      "options": [
+        { "mr": "टी. बी. मेकॉल (Lord T. B. Macaulay)", "en": "Lord T. B. Macaulay" },
+        { "mr": "चार्ल्स वूड (Charles Wood)", "en": "Charles Wood" },
+        { "mr": "एच. टी. प्रिन्सेप (H. T. Prinsep)", "en": "H. T. Prinsep" },
+        { "mr": "विल्यम ॲडम (William Adam)", "en": "William Adam" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "२ फेब्रुवारी १८३५ रोजी कौन्सिलचा विधी सदस्य लॉर्ड मेकॉल याने आपला अहवाल सादर केला. त्यात त्याने पाश्चात्य विज्ञान व इंग्रजी शिक्षणाची जोरदार शिफारस केली आणि झिरपता सिद्धांत (Downward Filtration Theory) मांडला. लॉर्ड विल्यम बेंटिंकने मार्च १८३५ मध्ये ही शिफारस स्वीकारली.",
+        "en": "On 2 February 1835, Law Member Lord Macaulay submitted his celebrated Minute advocating European education through English medium, rejecting traditional Oriental scholarship, which was formally adopted by Bentinck's resolution of March 1835."
+      }
+    },
+    {
+      "id": 22,
+      "question": {
+        "mr": "१८३३ च्या सनदी कायद्याद्वारे स्थापन करण्यात आलेल्या पहिल्या 'भारतीय विधि आयोगाचे' (First Law Commission) अध्यक्ष कोण होते?",
+        "en": "Who was appointed as the Chairman of the First Law Commission of India constituted under the Charter Act of 1833?"
+      },
+      "options": [
+        { "mr": "लॉर्ड मेकॉल (Lord Macaulay)", "en": "Lord Macaulay" },
+        { "mr": "सर जेम्स स्टीफन (Sir James Stephen)", "en": "Sir James Stephen" },
+        { "mr": "लॉर्ड बेंटिंक (Lord Bentinck)", "en": "Lord Bentinck" },
+        { "mr": "सर एलिझा इम्पे (Sir Elijah Impey)", "en": "Sir Elijah Impey" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१८३३ च्या सनदी कायद्यानुसार १८३४ मध्ये पहिला भारतीय विधी आयोग स्थापन करण्यात आला आणि त्याचे अध्यक्ष लॉर्ड मेकॉल होते. या आयोगाने पुढे जाऊन भारतीय दंड संहिता (Indian Penal Code - IPC) चा मूळ मसुदा तयार केला.",
+        "en": "Under the Charter Act of 1833, the First Law Commission was established in 1834 with Lord Macaulay as its President, which drafted the foundational version of the Indian Penal Code."
+      }
+    },
+    {
+      "id": 23,
+      "question": {
+        "mr": "१८४३ मध्ये भारतात अस्तित्वात असलेली 'गुलामगिरी प्रथा' (Slavery) खालीलपैकी कोणत्या कायद्याने पूर्णपणे बेकायदेशीर ठरवून रद्द करण्यात आली?",
+        "en": "By which Act was slavery formally abolished and declared illegal in British India in 1843?"
+      },
+      "options": [
+        { "mr": "इंडियन स्लेव्हरी ॲक्ट १८४३ (ॲक्ट V)", "en": "Indian Slavery Act 1843 (Act V)" },
+        { "mr": "रेग्युलेशन XVII १८२९", "en": "Regulation XVII of 1829" },
+        { "mr": "चार्टर ॲक्ट १८३३ (कलम ८८)", "en": "Charter Act of 1833 (Section 88)" },
+        { "mr": "रिलिजियस डिसेबिलिटीज ॲक्ट १८५०", "en": "Religious Disabilities Act 1850" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "गव्हर्नर-जनरल लॉर्ड एलनबरो याने १८४३ चा 'कायदा क्रमांक ५' (Act V of 1843) मंजूर केला. या कायद्याने कोणत्याही व्यक्तीला गुलाम म्हणून विकणे, खरेदी करणे किंवा गुलाम म्हणून मालकी सांगणे कायदेशीरदृष्ट्या पूर्णपणे निषिद्ध केले.",
+        "en": "Governor-General Lord Ellenborough enacted Act V of 1843 (the Indian Slavery Act), making the purchase, sale, or legal enforcement of claims to the property of any person as a slave strictly illegal."
+      }
+    },
+    {
+      "id": 24,
+      "question": {
+        "mr": "१८५० मध्ये मंजूर करण्यात आलेल्या 'धार्मिक अपात्रता निवारण कायद्याचा' (Religious Disabilities Removal Act / Lex Loci Act) मुख्य उद्देश काय होता?",
+        "en": "What was the main purpose of the Religious Disabilities Removal Act (Lex Loci Act) enacted in 1850?"
+      },
+      "options": [
+        { "mr": "धर्म बदलणाऱ्या व्यक्तीला आपल्या वडिलोपार्जित संपत्तीतील वारसा हक्क गमावण्यापासून संरक्षण देणे", "en": "Protecting the inheritance rights of an individual to ancestral property even after converting to another religion" },
+        { "mr": "ख्रिश्चन मिशनऱ्यांना करमुक्त जमिनींचे वाटप करणे", "en": "Distributing tax-free lands to Christian missionary organizations" },
+        { "mr": "सर्व सरकारी शाळांमधून धार्मिक शिक्षण पूर्णपणे बंद करणे", "en": "Banning religious education in all government-funded schools" },
+        { "mr": "विविध जातींमधील परस्पर आंतरजातीय विवाहांची सक्ती करणे", "en": "Mandating inter-caste marriages across different social communities" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "लॉर्ड डलहौसीने १८५० मध्ये लेक्स लोकी कायदा (धार्मिक अपात्रता निवारण कायदा) संमत केला. हिंदू वा मुस्लिम परंपरेनुसार धर्म बदलल्यास संपत्तीचा वारसा हक्क गमवावा लागत असे, परंतु या कायद्याने धर्म बदलणाऱ्या ख्रिश्चन धर्मांतरितांचे वडिलोपार्जित संपत्तीवरील हक्क सुरक्षित ठेवले, ज्यामुळे स्थानिक समाजात मोठा असंतोष पसरला.",
+        "en": "The Lex Loci Act (Religious Disabilities Act XXI of 1850) modified Hindu and customary inheritance laws by establishing that conversion away from one's native religion would not cause the forfeiture of ancestral property inheritance."
+      }
+    },
+    {
+      "id": 25,
+      "question": {
+        "mr": "१८५३ च्या सनदी कायद्याद्वारे (Charter Act of 1853) भारतीय नागरी सेवेच्या (Civil Services) भरती प्रक्रियेत कोणता क्रांतिकारक बदल करण्यात आला?",
+        "en": "What revolutionary reform was introduced in the recruitment process of the Indian Civil Services by the Charter Act of 1853?"
+      },
+      "options": [
+        { "mr": "संचालकांचा शिफारस कोटा (Patronage) बंद करून खुली स्पर्धा परीक्षा सुरू करण्यात आली", "en": "Abolition of the Court of Directors' patronage in favor of an open competitive examination" },
+        { "mr": "भारतीयांसाठी स्पर्धा परीक्षांची वयोमर्यादा वाढवून ३० वर्षे करण्यात आली", "en": "The maximum age limit for Indian candidates was raised to 30 years" },
+        { "mr": "नागरी सेवा परीक्षा एकाच वेळी लंडन आणि भारतात घेण्यास सुरुवात झाली", "en": "Civil service examinations began to be conducted simultaneously in London and India" },
+        { "mr": "कंपनीच्या लष्करी अधिकाऱ्यांना नागरी प्रशासनात थेट बढती अनिवार्य करण्यात आली", "en": "Military officers of the Company were made mandatorily eligible for direct administrative posting" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१८५३ च्या सनदी कायद्याने कोर्ट ऑफ डायरेक्टर्सची नामनिर्देशन (Patronage) पद्धत संपुष्टात आणली आणि नागरी सेवेत निवडीसाठी सर्वांसाठी 'खुली स्पर्धा परीक्षा' अनिवार्य केली. यासाठी १८५४ मध्ये लॉर्ड मेकॉल यांच्या अध्यक्षतेखाली समिती नेमण्यात आली आणि १८५५ पासून लंडनमध्ये परीक्षा सुरू झाल्या.",
+        "en": "The Charter Act of 1853 stripped the Court of Directors of their patronage power and introduced an open competitive examination system for civil service entries, organized through the Macaulay Committee recommendations of 1854."
+      }
+    }
+  ]
+}

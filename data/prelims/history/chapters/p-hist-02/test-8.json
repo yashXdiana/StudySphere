@@ -1,0 +1,464 @@
+{
+  "testId": "p-hist-02-t8",
+  "title": {
+    "mr": "भारतातील ब्रिटिश सत्तेचा विस्तार व प्रशासन — सराव 8",
+    "en": "British Rule in India — Practice Test 8"
+  },
+  "durationMinutes": 20,
+  "marksPerQuestion": 1,
+  "negativeMarking": 0.25,
+  "totalMarks": 25,
+  "difficulty": "मध्यम ते काठिण्य",
+  "questions": [
+    {
+      "id": 1,
+      "question": {
+        "mr": "१७७३ च्या नियामक कायद्यानुसार (Regulating Act 1773) स्थापन करण्यात आलेल्या फोर्ट विल्यम (कलकत्ता) येथील सर्वोच्च न्यायालयाचे पहिले मुख्य न्यायाधीश कोण होते?",
+        "en": "Who was appointed as the first Chief Justice of the Supreme Court of Judicature at Fort William in Calcutta under the Regulating Act of 1773?"
+      },
+      "options": [
+        { "mr": "सर एलिझा इम्पे (Sir Elijah Impey)", "en": "Sir Elijah Impey" },
+        { "mr": "सर विल्यम जोन्स (Sir William Jones)", "en": "Sir William Jones" },
+        { "mr": "सर रॉबर्ट चेंबर्स (Sir Robert Chambers)", "en": "Sir Robert Chambers" },
+        { "mr": "सर हाइड ईस्ट (Sir Hyde East)", "en": "Sir Hyde East" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१७७३ च्या कायद्यानुसार १७७४ मध्ये कलकत्ता येथे सर्वोच्च न्यायालय स्थापन झाले. सर एलिझा इम्पे हे त्याचे पहिले सरन्यायाधीश होते, तर रॉबर्ट चेंबर्स, स्टीफन सीझर लेमायस्टर आणि जॉन हाइड हे इतर तीन न्यायाधीश होते.",
+        "en": "Under the Regulating Act of 1773, the Supreme Court of Judicature at Fort William was established in 1774. Sir Elijah Impey was appointed as its first Chief Justice, assisted by three puisne judges: Chambers, Lemaistre, and Hyde."
+      }
+    },
+    {
+      "id": 2,
+      "question": {
+        "mr": "१७८४ च्या पिट्स इंडिया कायद्यान्वये गव्हर्नर-जनरलच्या कार्यकारी कौन्सिलमधील सदस्यांची संख्या ४ वरून कमी करून किती करण्यात आली?",
+        "en": "Under Pitt's India Act of 1784, the number of members in the Governor-General's Executive Council was reduced from four to what number?"
+      },
+      "options": [
+        { "mr": "३ (तीन)", "en": "3 (Three)" },
+        { "mr": "२ (दोन)", "en": "2 (Two)" },
+        { "mr": "५ (पाच)", "en": "5 (Five)" },
+        { "mr": "६ (सहा)", "en": "6 (Six)" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१७७३ च्या कायद्याने निर्माण केलेल्या चार सदस्यीय कौन्सिलमध्ये वॉरन हेस्टिंग्सला बहुमताअभावी वारंवार कोंडीचा सामना करावा लागत होता. १७८४ च्या कायद्याने सदस्यसंख्या ४ वरून ३ करण्यात आली, ज्यामुळे गव्हर्नर-जनरलला केवळ एका सदस्याच्या पाठिंब्याने स्वतःच्या निर्णायक मताचा (Casting Vote) वापर करून निर्णय घेणे शक्य झाले.",
+        "en": "Pitt's India Act of 1784 reduced the membership of the Governor-General's Council from four to three (including the Commander-in-Chief), allowing the Governor-General to pass measures with the support of only one councillor by exercising his casting vote."
+      }
+    },
+    {
+      "id": 3,
+      "question": {
+        "mr": "लॉर्ड कॉर्नवॉलिसने १७९३ मध्ये लागू केलेल्या कायमधारा महसूल पद्धतीमध्ये (Permanent Settlement) गोळा केलेल्या एकूण महसुलाचे विभाजन सरकार आणि जमीनदार यांच्यात कोणत्या प्रमाणात होत असे?",
+        "en": "Under the Permanent Settlement introduced by Lord Cornwallis in 1793, in what proportion was the collected land revenue divided between the Company government and the zamindars?"
+      },
+      "options": [
+        { "mr": "१०/११ भाग सरकारला आणि १/११ भाग जमीनदाराला", "en": "10/11th share to the Government and 1/11th share to the Zamindar" },
+        { "mr": "९/१० भाग सरकारला आणि १/१० भाग जमीनदाराला", "en": "9/10th share to the Government and 1/10th share to the Zamindar" },
+        { "mr": "अर्धा (१/२) भाग सरकारला आणि अर्धा (१/२) भाग जमीनदाराला", "en": "1/2 share to the Government and 1/2 share to the Zamindar" },
+        { "mr": "५/६ भाग सरकारला आणि १/६ भाग जमीनदाराला", "en": "5/6th share to the Government and 1/6th share to the Zamindar" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "कायमधारा पद्धतीनुसार जमीनदाराने शेतकऱ्यांकडून वसूल केलेल्या एकूण महसुलापैकी १०/११ भाग (सुमारे ८९%) कंपनीच्या सरकारी तिजोरीत जमा करणे सक्तीचे होते, तर उर्वरित १/११ भाग (सुमारे ११%) जमीनदाराला त्याच्या मेहनतीचा मोबदला म्हणून ठेवण्याची मुभा होती.",
+        "en": "Under the Permanent Settlement of 1793, the zamindars were recognized as hereditary proprietors of the soil, liable to pay a permanently fixed sum wherein 10/11ths of the total collection went to the colonial state and 1/11th was retained by the zamindar."
+      }
+    },
+    {
+      "id": 4,
+      "question": {
+        "mr": "१७९२ मध्ये मद्रास इलाख्यातील बारामहाल जिल्ह्यात प्रायोगिक तत्त्वावर 'रयतवारी पद्धत' (Ryotwari System) सर्वप्रथम कोणी सुरू केली?",
+        "en": "In 1792, who initially introduced the Ryotwari System on an experimental basis in the Baramahal district of Madras Presidency?"
+      },
+      "options": [
+        { "mr": "कॅप्टन अलेक्झांडर रीड (Captain Alexander Read)", "en": "Captain Alexander Read" },
+        { "mr": "सर थॉमस मुन्रो (Sir Thomas Munro)", "en": "Sir Thomas Munro" },
+        { "mr": "होल्ट मॅकेन्झी (Holt Mackenzie)", "en": "Holt Mackenzie" },
+        { "mr": "जॉन शोर (John Shore)", "en": "John Shore" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "तिसऱ्या इंग्रज-म्हैसूर युद्धानंतर टिपू सुलतानाकडून मिळालेल्या बारामहाल भागात कॅप्टन अलेक्झांडर रीड यांनी १७९२ मध्ये रयतवारी पद्धत प्रायोगिक स्वरूपात सुरू केली. पुढे १८२० मध्ये मद्रासचे गव्हर्नर असताना सर थॉमस मुन्रो यांनी ही पद्धत संपूर्ण मद्रास प्रांतात व्यापक प्रमाणावर लागू केली.",
+        "en": "The Ryotwari experiment was first initiated by Captain Alexander Read in 1792 in the Baramahal district ceded by Tipu Sultan. Sir Thomas Munro subsequently developed and extended it across the entire Madras Presidency between 1820 and 1827."
+      }
+    },
+    {
+      "id": 5,
+      "question": {
+        "mr": "१८०६ मध्ये सर जॉर्ज बार्लो यांच्या कार्यकाळात झालेल्या 'वेल्लोरच्या शिपाई उठावाचे' (Vellore Mutiny) तात्कालिक कारण खालीलपैकी कोणते होते?",
+        "en": "What was the immediate catalyst behind the Vellore Sepoy Mutiny that occurred in July 1806 during the administration of Sir George Barlow?"
+      },
+      "options": [
+        { "mr": "नवीन शिरस्त्राण (Agnew turban) सक्तीचे करणे आणि कपाळावर टिळा लावणे व दाढी राखण्यावर घातलेली लष्करी बंदी", "en": "Enforcement of the new Agnew turban and prohibitions against wearing caste marks (tilak) and ear ornaments, along with trimming beards" },
+        { "mr": "गाय आणि डुकराची चरबी लावलेल्या काडतुसांचा वापर", "en": "Introduction of Enfield rifle cartridges greased with cow and pig fat" },
+        { "mr": "सैनिकांचा पगार ५०% कमी करण्याचा सरकारी आदेश", "en": "Government orders reducing sepoy salaries by 50%" },
+        { "mr": "सर्व शिपायांना समुद्रापार जाऊन लढण्याची केलेली सक्ती", "en": "Compulsion to serve overseas across the sea ('Kala Pani')" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "मद्रास सैन्याचे कमांडर-इन-चीफ सर जॉन क्रॅडॉॉक यांनी काढलेल्या नव्या नियमानुसार हिंदू सैनिकांना कपाळावर टिळा लावणे व कानात कुंडले घालणे निषिद्ध केले, तर मुस्लिम सैनिकांना दाढी राखण्यास मनाई केली. तसेच कातडी चकती असलेली 'अ‍ॅग्न्यू पगडी' सक्तीची केली, ज्यामुळे सैनिकांमध्ये धर्मभ्रष्टतेची भीती निर्माण होऊन उठाव झाला.",
+        "en": "The immediate provocation of the Vellore Mutiny was military dress regulations enforced by General Sir John Cradock, which forbade religious marks and turbans in favor of a round hat with a leather cockade, leading sepoys to suspect a plot to forcibly convert them to Christianity."
+      }
+    },
+    {
+      "id": 6,
+      "question": {
+        "mr": "१८१३ च्या सनदी कायद्यानुसार (Charter Act of 1813) ईस्ट इंडिया कंपनीच्या भारतातील व्यापारी मक्तेदारीबाबत खालीलपैकी कोणते विधान अचूक आहे?",
+        "en": "Which of the following statements is accurate regarding the East India Company's commercial monopoly under the Charter Act of 1813?"
+      },
+      "options": [
+        { "mr": "भारतातील सामान्य व्यापारावरील मक्तेदारी संपुष्टात आली, परंतु चहाचा व्यापार आणि चीनबरोबरचा व्यापार यांवरील मक्तेदारी कायम राहिली.", "en": "The trade monopoly in India was ended, but the monopoly over the tea trade and trade with China was retained." },
+        { "mr": "कंपनीची सर्व प्रकारच्या व्यापारावरील मक्तेदारी पूर्णपणे संपुष्टात आणली गेली.", "en": "The Company's commercial monopolies over all categories of trade were completely abolished." },
+        { "mr": "कंपनीला केवळ अफू आणि मिठाचा व्यापार करण्याची मुभा देण्यात आली.", "en": "The Company was restricted strictly to the trade of opium and salt." },
+        { "mr": "कंपनीची मक्तेदारी कोणत्याही बदलाशिवाय पुढील ५० वर्षांसाठी वाढवण्यात आली.", "en": "The Company's monopoly was renewed without any alterations for another 50 years." }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१८१३ च्या सनदी कायद्याने ब्रिटनमधील खाजगी व्यापाऱ्यांना भारतात व्यापार करण्याची मुभा देऊन कंपनीची मक्तेदारी संपुष्टात आणली. तथापि, 'चहाचा व्यापार' (Tea trade) आणि 'चीनशी होणारा व्यापार' (Trade with China) या दोन क्षेत्रांवरील कंपनीची मक्तेदारी आणखी २० वर्षांसाठी (१८३३ पर्यंत) अबाधित ठेवण्यात आली.",
+        "en": "The Charter Act of 1813 stripped the East India Company of its commercial monopoly in India, throwing open trade to all private British merchants, with the sole exceptions of the tea trade and general trade with China, which remained exclusive to the Company until 1833."
+      }
+    },
+    {
+      "id": 7,
+      "question": {
+        "mr": "१८१७-१८ च्या तिसऱ्या इंग्रज-मराठा युद्धादरम्यान खालीलपैकी कोणती लढाई लढली गेली नव्हती?",
+        "en": "Which of the following battles was NOT fought during the Third Anglo-Maratha War (1817–1818)?"
+      },
+      "options": [
+        { "mr": "अडगावची लढाई (Battle of Argaon)", "en": "Battle of Argaon" },
+        { "mr": "खडकीची लढाई (Battle of Khadki)", "en": "Battle of Khadki" },
+        { "mr": "सीताबर्डीची लढाई (Battle of Sitabuldi)", "en": "Battle of Sitabuldi" },
+        { "mr": "महिदपूरची लढाई (Battle of Mahidpur)", "en": "Battle of Mahidpur" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "अडगावची (किंवा अरगाव) लढाई २९ नोव्हेंबर १८०३ रोजी 'दुसऱ्या' इंग्रज-मराठा युद्धादरम्यान आर्थर वेलस्ली आणि रघूजी भोसले यांच्या सैन्यात झाली होती. खडकी (नोव्हेंबर १८१७), सीताबर्डी (नोव्हेंबर १८१७) आणि महिदपूर (डिसेंबर १८१७) या तिन्ही लढाया 'तिसऱ्या' इंग्रज-मराठा युद्धातील आहेत.",
+        "en": "The Battle of Argaon was fought on 29 November 1803 during the Second Anglo-Maratha War. The Battles of Khadki, Sitabuldi, and Mahidpur were major engagements of the Third Anglo-Maratha War (1817–1818)."
+      }
+    },
+    {
+      "id": 8,
+      "question": {
+        "mr": "१८२९ मध्ये लॉर्ड विल्यम बेंटिंकने सती प्रथा बंदी कायदा संमत केला, त्या वेळी या कायद्याला सर्वप्रथम कोणत्या प्रांतात लागू करण्यात आले?",
+        "en": "When Lord William Bentinck enacted Regulation XVII banning the practice of Sati in December 1829, to which jurisdiction was it initially applied?"
+      },
+      "options": [
+        { "mr": "बंगाल प्रेसिडेन्सी (Bengal Presidency)", "en": "Bengal Presidency" },
+        { "mr": "मद्रास प्रेसिडेन्सी", "en": "Madras Presidency" },
+        { "mr": "मुंबई प्रेसिडेन्सी", "en": "Bombay Presidency" },
+        { "mr": "संपूर्ण ब्रिटिश भारतात एकाच वेळी", "en": "Simultaneously across all of British India" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "४ डिसेंबर १८२९ रोजी जारी केलेले 'रेग्युलेशन XVII' सुरुवातीला केवळ बंगाल प्रेसिडेन्सीपुरते मर्यादित होते. त्यानंतर काही महिन्यांनी, १८३० मध्ये किंचित बदलांसह हे नियम मद्रास आणि मुंबई इलाख्यांमध्येही लागू करण्यात आले.",
+        "en": "Regulation XVII of 1829, promulgated on 4 December 1829, declared Sati illegal and punishable as culpable homicide initially only within the Bengal Presidency. Similar regulations were adapted and applied to the Madras and Bombay Presidencies in 1830."
+      }
+    },
+    {
+      "id": 9,
+      "question": {
+        "mr": "१८३३ च्या सनदी कायद्यानुसार भारताचा पहिला 'गव्हर्नर-जनरल ऑफ इंडिया' (Governor-General of India) कोण बनला?",
+        "en": "Who became the first 'Governor-General of India' under the provisions of the Charter Act of 1833?"
+      },
+      "options": [
+        { "mr": "लॉर्ड विल्यम बेंटिंक (Lord William Bentinck)", "en": "Lord William Bentinck" },
+        { "mr": "लॉर्ड वॉरन हेस्टिंग्स (Lord Warren Hastings)", "en": "Lord Warren Hastings" },
+        { "mr": "लॉर्ड डलहौसी (Lord Dalhousie)", "en": "Lord Dalhousie" },
+        { "mr": "लॉर्ड कॅनिंग (Lord Canning)", "en": "Lord Canning" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१८३३ च्या सनदी कायद्याने 'बंगालचा गव्हर्नर-जनरल' हे पद बदलून 'भारताचा गव्हर्नर-जनरल' असे केले आणि सर्व नागरी व लष्करी सत्ता त्याच्या हाती एकवटली. लॉर्ड विल्यम बेंटिंक हा भारताचा पहिला गव्हर्नर-जनरल ठरला.",
+        "en": "The Charter Act of 1833 redesignated the Governor-General of Bengal as the 'Governor-General of India', vesting in him all supreme civil and military authority. Lord William Bentinck thus became the first Governor-General of India."
+      }
+    },
+    {
+      "id": 10,
+      "question": {
+        "mr": "भारतीय मुद्रण स्वातंत्र्याचा पुरस्कार करत १८३५ चा प्रसिद्ध वृत्तपत्र कायदा मंजूर करणारे कार्यवाहक गव्हर्नर-जनरल कोण होते?",
+        "en": "Who was the Acting Governor-General who enacted the liberal Press Act of 1835, earning the title 'Liberator of the Indian Press'?"
+      },
+      "options": [
+        { "mr": "सर चार्ल्स मेटकॉफ (Sir Charles Metcalfe)", "en": "Sir Charles Metcalfe" },
+        { "mr": "लॉर्ड ऑकलंड (Lord Auckland)", "en": "Lord Auckland" },
+        { "mr": "लॉर्ड एलनबरो (Lord Ellenborough)", "en": "Lord Ellenborough" },
+        { "mr": "लॉर्ड ॲमहर्स्ट (Lord Amherst)", "en": "Lord Amherst" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "सर चार्ल्स मेटकॉफ यांनी १८३५-३६ या आपल्या अल्प कार्यकाळात १८२३ चे जाचक लायसन्सिंग नियम रद्द करून नवा प्रेस कायदा केला. यामुळे वृत्तपत्रांना मुद्रण स्वातंत्र्य मिळाले आणि त्यांना 'भारतीय वृत्तपत्रांचा मुक्तिदाता' म्हटले गेले.",
+        "en": "Sir Charles Metcalfe repealed John Adam's repressive Licensing Regulations of 1823 through the Press Act of 1835, securing operational freedom for both English and Indian-language publications."
+      }
+    },
+    {
+      "id": 11,
+      "question": {
+        "mr": "१८४३ मध्ये सिंध प्रांताचे ब्रिटिश साम्राज्यात विलीनीकरण कोणत्या गव्हर्नर-जनरलच्या कार्यकाळात झाले?",
+        "en": "Under which Governor-General was the annexation of Sindh carried out in 1843?"
+      },
+      "options": [
+        { "mr": "लॉर्ड एलनबरो (Lord Ellenborough)", "en": "Lord Ellenborough" },
+        { "mr": "लॉर्ड ऑकलंड (Lord Auckland)", "en": "Lord Auckland" },
+        { "mr": "लॉर्ड हार्डिंग्ज पहिला (Lord Hardinge I)", "en": "Lord Hardinge I" },
+        { "mr": "लॉर्ड डलहौसी (Lord Dalhousie)", "en": "Lord Dalhousie" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "लॉर्ड एलनबरोच्या काळात (१८४२-१८४४) सर चार्ल्स नेपियरने मियानी आणि दाबो येथे बलोच अमिरांचा पराभव करून १८४३ मध्ये सिंध प्रांत ब्रिटिश साम्राज्यात जोडला.",
+        "en": "Sindh was formally annexed in 1843 during the tenure of Governor-General Lord Ellenborough, following the military victories of Sir Charles Napier over the Talpur Amirs."
+      }
+    },
+    {
+      "id": 12,
+      "question": {
+        "mr": "१८४८ मध्ये लॉर्ड डलहौसीने आपल्या 'खालसा धोरणांतर्गत' (Doctrine of Lapse) सर्वप्रथम कोणते संस्थान विलीन केले?",
+        "en": "Which princely state was annexed first by Lord Dalhousie in 1848 under the Doctrine of Lapse?"
+      },
+      "options": [
+        { "mr": "सातारा (Satara)", "en": "Satara" },
+        { "mr": "जैतपूर (Jaitpur)", "en": "Jaitpur" },
+        { "mr": "झाशी (Jhansi)", "en": "Jhansi" },
+        { "mr": "नागपूर (Nagpur)", "en": "Nagpur" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१८४८ मध्ये सातारचे राजे शहाजी (अप्पासाहेब भोसले) यांच्या मृत्यूनंतर दत्तक पुत्र नामंजूर करून लॉर्ड डलहौसीने सर्वात आधी सातारा संस्थान ब्रिटिश साम्राज्यात विलीन केले.",
+        "en": "Satara was the very first princely state to be annexed by Lord Dalhousie under the Doctrine of Lapse in 1848 following the death of Raja Shahaji (Appa Sahib) without natural male issue."
+      }
+    },
+    {
+      "id": 13,
+      "question": {
+        "mr": "लॉर्ड डलहौसीने १८५४ मध्ये स्थापन केलेल्या स्वतंत्र 'सार्वजनिक बांधकाम खात्याच्या' (PWD) अखत्यारीत खालीलपैकी कोणत्या कालव्याचे औपचारिक उद्घाटन करण्यात आले?",
+        "en": "Under the Public Works Department organized by Lord Dalhousie, which monumental canal system was officially opened in April 1854?"
+      },
+      "options": [
+        { "mr": "वरचा गंगा कालवा (Upper Ganges Canal)", "en": "Upper Ganges Canal" },
+        { "mr": "सरहिंद कालवा (Sirhind Canal)", "en": "Sirhind Canal" },
+        { "mr": "पश्चिम यमुना कालवा", "en": "Western Yamuna Canal" },
+        { "mr": "इंदिरा गांधी कालवा", "en": "Indira Gandhi Canal" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "८ एप्रिल १८५४ रोजी सर प्रोबी कॉटले यांच्या तांत्रिक मार्गदर्शनाखाली पूर्ण झालेल्या 'वरच्या गंगा कालव्याचे' (Upper Ganges Canal) औपचारिक उद्घाटन करण्यात आले. हा तत्कालीन जगातील सर्वात मोठा मानवनिर्मित सिंचन कालवा मानला गेला.",
+        "en": "Engineered by Sir Proby Cautley, the Upper Ganges Canal was formally inaugurated by Lord Dalhousie in April 1854, irrigating vast tracts between the Ganges and the Yamuna."
+      }
+    },
+    {
+      "id": 14,
+      "question": {
+        "mr": "१८५४ मधील सर चार्ल्स वूड यांच्या प्रसिद्ध खलिताचा (Wood's Despatch) प्राथमिक संबंध खालीलपैकी कोणत्या क्षेत्राशी होता?",
+        "en": "Sir Charles Wood's celebrated Despatch of 1854 was primarily concerned with which sector?"
+      },
+      "options": [
+        { "mr": "शैक्षणिक सुधारणा (Educational Reforms)", "en": "Educational Reforms" },
+        { "mr": "लष्करी पुनर्रचना (Military Reorganization)", "en": "Military Reorganization" },
+        { "mr": "पोलीस प्रशासन सुधारणा (Police Reforms)", "en": "Police Reforms" },
+        { "mr": "भूमहसूल मूल्यांकन (Land Revenue Assessment)", "en": "Land Revenue Assessment" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१८५४ चा वूड्स डिस्पॅच हा भारतातील आधुनिक शिक्षणाचा 'मॅग्ना कार्टा' मानला जातो. याने प्राथमिक स्तरावर मातृभाषा आणि उच्च शिक्षणासाठी इंग्रजी माध्यम, तीन विद्यापीठांची स्थापना आणि शिक्षण खात्यांची निर्मिती सुचवली.",
+        "en": "Wood's Despatch of 1854 is regarded as the 'Magna Carta of English Education in India', outlining a comprehensive educational hierarchy from vernacular primary schools to chartered universities."
+      }
+    },
+    {
+      "id": 15,
+      "question": {
+        "mr": "१८५८ च्या भारत सरकार कायद्यान्वये (Government of India Act 1858) खालीलपैकी कोणती संस्था विसर्जित करण्यात आली?",
+        "en": "Which of the following bodies was abolished by the Government of India Act 1858?"
+      },
+      "options": [
+        { "mr": "बोर्ड ऑफ कंट्रोल आणि कोर्ट ऑफ डायरेक्टर्स दोन्ही", "en": "Both the Board of Control and the Court of Directors" },
+        { "mr": "केवळ सर्वोच्च न्यायालय (Supreme Court)", "en": "Only the Supreme Court" },
+        { "mr": "केवळ गव्हर्नर-जनरल कौन्सिल", "en": "Only the Governor-General's Council" },
+        { "mr": "कलकत्ता हायकोर्ट", "en": "Calcutta High Court" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१८५८ च्या कायद्याने ईस्ट इंडिया कंपनीची दुहेरी शासनव्यवस्था (Dual Government) पूर्णपणे संपुष्टात आणली. १७८४ च्या कायद्याने स्थापन झालेले 'बोर्ड ऑफ कंट्रोल' आणि कंपनीचे 'कोर्ट ऑफ डायरेक्टर्स' दोन्ही रद्द करून त्यांचे अधिकार 'भारत मंत्री' (Secretary of State for India) या पदाकडे सोपवण्यात आले.",
+        "en": "The Government of India Act 1858 terminated the system of dual government by abolishing both the Court of Directors and the Board of Control, concentrating their powers in the Secretary of State for India."
+      }
+    },
+    {
+      "id": 16,
+      "question": {
+        "mr": "१८६१ च्या 'इंडियन कौन्सिल्स कायद्याने' (Indian Councils Act 1861) खालीलपैकी कोणती महत्त्वाची वैधानिक सुधारणा घडवून आणली?",
+        "en": "Which important statutory reform was introduced by the Indian Councils Act of 1861?"
+      },
+      "options": [
+        { "mr": "व्हाइसरॉयच्या कौन्सिलमध्ये बिगर-सरकारी सदस्यांचा समावेश आणि मुंबई व मद्रास प्रांतांचे कायदे बनवण्याचे अधिकार पुनर्संचयित करणे", "en": "Inclusion of non-official members in the Viceroy's legislative council and restoration of lawmaking powers to Bombay and Madras" },
+        { "mr": "भारतात सार्वत्रिक प्रौढ मतदानाद्वारे थेट निवडणुका सुरू करणे", "en": "Introduction of direct elections based on universal adult franchise" },
+        { "mr": "केंद्रीय कायदेमंडळात भारतीय सदस्यांचे पूर्ण बहुमत निर्माण करणे", "en": "Creation of an elected Indian majority in the central legislative council" },
+        { "mr": "व्हाइसरॉयचे सर्व नकाराधिकार (Veto) संपुष्टात आणणे", "en": "Complete abolition of the Viceroy's veto powers" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१८६१ च्या कायद्याने कायदेनिर्मितीच्या प्रक्रियेत बिगर-सरकारी सदस्यांना नामनिर्देशित करण्याची तरतूद केली आणि १८३३ मध्ये हिरावून घेतलेले मुंबई व मद्रासचे कायदे करण्याचे अधिकार पुन्हा बहाल करून वैधानिक विकेंद्रीकरणाची सुरुवात केली.",
+        "en": "The Indian Councils Act of 1861 initiated legislative devolution by restoring legislative competence to the Presidencies of Bombay and Madras and introducing non-official members into the expanded legislative councils."
+      }
+    },
+    {
+      "id": 17,
+      "question": {
+        "mr": "१८६५ मध्ये सर जॉन लॉरेन्स यांच्या कार्यकाळात ब्रिटिशांनी कोणत्या शेजारील हिमालयातील राज्याविरुद्ध 'दुआर युद्ध' (Duar War) लढून 'सिंचुलाचा तह' केला?",
+        "en": "In 1865, during Sir John Lawrence's viceroyalty, the British fought the Duar War against which Himalayan state, concluding the Treaty of Sinchula?"
+      },
+      "options": [
+        { "mr": "भूतान (Bhutan)", "en": "Bhutan" },
+        { "mr": "नेपाळ (Nepal)", "en": "Nepal" },
+        { "mr": "सिक्कीम (Sikkim)", "en": "Sikkim" },
+        { "mr": "तिबेट (Tibet)", "en": "Tibet" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१८६४-६५ मध्ये ब्रिटिश आणि भूतान यांच्यात १८ दुआर (Dooars) खिंडींवरून युद्ध झाले. नोव्हेंबर १८६५ मध्ये झालेल्या 'सिंचुलाच्या तहानुसार' (Treaty of Sinchula) भूतानने आसाम व बंगालच्या सीमेवरील सर्व दुआर प्रदेश कंपनीच्या स्वाधीन केला आणि त्या बदल्यात ब्रिटिशांनी वार्षिक अनुदान देण्याचे मान्य केले.",
+        "en": "The Duar War (1864–1865) ended with the Treaty of Sinchula in November 1865, under which Bhutan ceded the eighteen Bengal and Assam Duars to British India in exchange for an annual subsidy."
+      }
+    },
+    {
+      "id": 18,
+      "question": {
+        "mr": "१८७० च्या 'वित्तीय विकेंद्रीकरण ठरावानुसार' व्हाइसरॉय लॉर्ड मेयो याने प्रांतांकडे खालीलपैकी कोणती खाती सोपवली?",
+        "en": "Under the Financial Decentralization Resolution of 1870, which departments did Viceroy Lord Mayo transfer to provincial administrations?"
+      },
+      "options": [
+        { "mr": "तुरुंग, पोलीस, शिक्षण, वैद्यकीय सेवा आणि स्थानिक रस्ते", "en": "Jails, police, education, medical services, and local roads" },
+        { "mr": "संरक्षण, लष्कर, रेल्वे आणि परराष्ट्र संबंध", "en": "Defense, military, railways, and external affairs" },
+        { "mr": "केवळ सीमाशुल्क आणि टपाल खाते", "en": "Exclusively customs and post offices" },
+        { "mr": "केवळ आयकर आणि मीठ कर खाते", "en": "Exclusively income tax and salt revenues" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "लॉर्ड मेयोने १८७० मध्ये स्थानिक प्रशासनाची खाती—पोलीस, तुरुंग, शिक्षण, आरोग्य आणि रस्ते—प्रांतांकडे सोपवली आणि त्यांच्या खर्चासाठी केंद्रीय तिजोरीतून एकरकमी अनुदान दिले, ज्यामुळे वित्तीय विकेंद्रीकरणाची सुरुवात झाली.",
+        "en": "Lord Mayo's 1870 Resolution decentralized fiscal management by devolving administration and expenditure of local services—jails, police, education, registration, medical services, and public roads—to provincial governments."
+      }
+    },
+    {
+      "id": 19,
+      "question": {
+        "mr": "१८७६-७८ मधील मद्रास आणि म्हैसूरच्या भीषण दुष्काळानंतर लॉर्ड लिटनने १८७८ मध्ये नेमलेल्या पहिल्या दुष्काळ आयोगाचे अध्यक्ष कोण होते?",
+        "en": "Who served as the president of the first Famine Commission appointed by Lord Lytton in 1878 following the disastrous famine of 1876–1878?"
+      },
+      "options": [
+        { "mr": "सर रिचर्ड स्ट्रॅची (Sir Richard Strachey)", "en": "Sir Richard Strachey" },
+        { "mr": "सर जेम्स लायेल (Sir James Lyall)", "en": "Sir James Lyall" },
+        { "mr": "सर अँथनी मॅकडोनेल (Sir Antony MacDonnell)", "en": "Sir Antony MacDonnell" },
+        { "mr": "सर जॉर्ज कॅम्पबेल (Sir George Campbell)", "en": "Sir George Campbell" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "लॉर्ड लिटनने १८७८ मध्ये जनरल सर रिचर्ड स्ट्रॅची यांच्या अध्यक्षतेखाली दुष्काळ आयोग नेमला. या आयोगाच्या शिफारशींवरून १८८० मध्ये अहवाल आला आणि १८८३ मध्ये भारतात पहिला अधिकृत 'दुष्काळ आचारसंहिता' (Famine Code) तयार करण्यात आला.",
+        "en": "General Sir Richard Strachey presided over the Famine Commission of 1878. Its recommendations formulated basic relief principles, resulting in the creation of the Famine Insurance Grant and the provincial Famine Codes of 1883."
+      }
+    },
+    {
+      "id": 20,
+      "question": {
+        "mr": "मार्च १८७८ मध्ये लॉर्ड लिटनने संमत केलेल्या 'व्हर्नाक्युलर प्रेस कायद्याला' (Vernacular Press Act) भारतीय जनतेने कोणत्या नावाने संबोधले?",
+        "en": "By what popular epithet was the Vernacular Press Act passed by Lord Lytton in March 1878 condemned across India?"
+      },
+      "options": [
+        { "mr": "गॅगिंग ॲक्ट (Gagging Act / तोंड दाबणारा कायदा)", "en": "Gagging Act" },
+        { "mr": "ब्लॅक ॲक्ट (Black Act)", "en": "Black Act" },
+        { "mr": "इन्सल्ट ॲक्ट (Insult Act)", "en": "Insult Act" },
+        { "mr": "सप्रेशन ॲक्ट (Suppression Act)", "en": "Suppression Act" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१८७८ च्या या कायद्याने केवळ भारतीय भाषेतील वृत्तपत्रांवर कडक सेन्सॉरशिप आणि जामीनपत्रांची सक्ती लादली होती, तर इंग्रजी वृत्तपत्रांना सूट दिली होती. या भेदभावामुळे आणि अभिव्यक्ती स्वातंत्र्याच्या गळचेपीमुळे त्याला 'गॅगिंग ॲक्ट' म्हटले गेले.",
+        "en": "The Vernacular Press Act of 1878 was branded the 'Gagging Act' because it discriminatorily curbed the operational liberty of native-language newspapers while exempting Anglo-Indian English journals."
+      }
+    },
+    {
+      "id": 21,
+      "question": {
+        "mr": "१८८१ मधील पहिल्या 'फॅक्टरी कायद्याच्या' (Factory Act 1881) संदर्भात खालीलपैकी कोणते विधान अचूक आहे?",
+        "en": "Which of the following statements is accurate regarding the First Indian Factory Act of 1881?"
+      },
+      "options": [
+        { "mr": "या कायद्याने ७ वर्षांखालील बालकांच्या कामावर बंदी घातली आणि ७ ते १२ वयोगटातील मुलांसाठी कामाचे तास ९ निश्चित केले.", "en": "It prohibited employment of children under 7 years of age and limited work hours to 9 daily for children aged 7 to 12." },
+        { "mr": "या कायद्याने महिला कामगारांसाठी दररोज ८ तासांचे काम अनिवार्य केले.", "en": "It restricted working hours for female workers to 8 hours daily." },
+        { "mr": "या कायद्याने सर्व प्रौढ कामगारांना आठवड्यातून दोन सुट्ट्या दिल्या.", "en": "It mandated two weekly holidays for all adult male factory operatives." },
+        { "mr": "हा कायदा भारतातील सर्व चहा आणि कॉफीच्या मळ्यांना पूर्ण लागू होता.", "en": "It was made universally applicable across all tea and coffee plantations." }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "लॉर्ड रिपनच्या काळातील १८८१ चा फॅक्टरी कायदा केवळ बालकामगारांसाठी होता. यात ७ वर्षांखालील मुलांच्या कामावर बंदी घातली, ७ ते १२ वयोगटासाठी ९ तासांची मर्यादा ठेवली आणि महिन्यातून ४ सुट्ट्या दिल्या. प्रौढ कामगार किंवा महिलांसाठी यात मर्यादा नव्हती.",
+        "en": "The First Factory Act of 1881 applied to mechanized factories employing 100 or more operatives. It banned child labor under 7, limited working hours for children aged 7–12 to 9 hours a day, and granted them 4 monthly holidays."
+      }
+    },
+    {
+      "id": 22,
+      "question": {
+        "mr": "१८ मे १८८२ रोजी स्थानिक स्वराज्य संस्थांविषयी ऐतिहासिक ठराव संमत करून तालुका व जिल्हा मंडळांची पायाभरणी करणारे व्हाइसरॉय कोण होते?",
+        "en": "Who was the Viceroy who laid the modern foundation of municipal and rural local boards through his historic Resolution of 18 May 1882?"
+      },
+      "options": [
+        { "mr": "लॉर्ड रिपन (Lord Ripon)", "en": "Lord Ripon" },
+        { "mr": "लॉर्ड लिटन (Lord Lytton)", "en": "Lord Lytton" },
+        { "mr": "लॉर्ड मेयो (Lord Mayo)", "en": "Lord Mayo" },
+        { "mr": "लॉर्ड डफरिन (Lord Dufferin)", "en": "Lord Dufferin" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१८ मे १८८२ च्या ठरावाद्वारे लॉर्ड रिपनने तालुका बोर्ड, जिल्हा बोर्ड व नगरपालिका स्थापन करून बिगर-सरकारी प्रतिनिधींना प्राधान्य दिले; म्हणून त्यांना 'भारतातील स्थानिक स्वराज्य संस्थांचे जनक' मानले जाते.",
+        "en": "Through his resolution of 18 May 1882, Lord Ripon established rural local boards and municipal councils with non-official majorities and elected elements, earning him the title 'Father of Local Self-Government in India'."
+      }
+    },
+    {
+      "id": 23,
+      "question": {
+        "mr": "१८८३ मधील वादग्रस्त 'इल्बर्ट बिलाचा' (Ilbert Bill) मुख्य हेतू खालीलपैकी कोणता होता?",
+        "en": "What was the primary objective of the controversial 'Ilbert Bill' introduced in 1883?"
+      },
+      "options": [
+        { "mr": "न्यायव्यवस्थेतील वांशिक भेदभाव दूर करून भारतीय सत्र न्यायाधीशांना युरोपियन आरोपींचे खटले चालवण्याचा अधिकार देणे", "en": "Removing racial disqualifications in the judiciary by empowering Indian Sessions Judges to try European criminal offenders" },
+        { "mr": "भारतीय भाषेतील वृत्तपत्रांवर कायमची बंदी घालणे", "en": "Imposing a permanent ban on all Indian-language newspapers" },
+        { "mr": "आयसीएस परीक्षेची कमाल वयोमर्यादा १८ वर्षे करणे", "en": "Lowering the maximum age limit for the ICS examination to 18 years" },
+        { "mr": "सर्व ब्रिटिश न्यायालयांचे कामकाज केवळ मराठीत चालवणे", "en": "Conducting all proceedings in British courts exclusively in Marathi" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "सर कोर्टनी इल्बर्ट यांनी मांडलेल्या या विधेयकाने भारतीय आणि युरोपियन दंडाधिकाऱ्यांना समान अधिकार देण्याचा प्रयत्न केला, जेणेकरून भारतीय न्यायाधीशही युरोपियन आरोपींचे खटले चालवू शकतील. याविरोधात अँग्लो-इंडियनांनी तीव्र वंशवादी आंदोलन केले.",
+        "en": "Drafted by Sir Courtenay Ilbert, the bill sought to abolish racial discrimination in the criminal judicial code by giving senior Indian district magistrates and sessions judges jurisdiction over European British subjects."
+      }
+    },
+    {
+      "id": 24,
+      "question": {
+        "mr": "१८८६ मधील 'ॲचिसन आयोगाच्या' (Aitchison Commission) शिफारशींनुसार भारतीय सनदी सेवांची कोणत्या तीन वर्गांत विभागणी करण्यात आली?",
+        "en": "In accordance with the recommendations of the Aitchison Commission of 1886, into which three categories were the civil services divided?"
+      },
+      "options": [
+        { "mr": "इम्पेरियल, प्रांतीय (Provincial) आणि दुय्यम (Subordinate) नागरी सेवा", "en": "Imperial, Provincial, and Subordinate Civil Services" },
+        { "mr": "लष्करी, नागरी आणि न्यायालयीन सेवा", "en": "Military, Civil, and Judicial Services" },
+        { "mr": "केंद्रीय, राज्य आणि स्थानिक सेवा", "en": "Central, State, and Local Services" },
+        { "mr": "राजकीय, महसुली आणि परराष्ट्र सेवा", "en": "Political, Revenue, and Foreign Services" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "सर चार्ल्स ॲचिसन आयोगाने १८८६ मध्ये जुनी स्टॅच्युटरी सिव्हिल सर्व्हिस रद्द करून त्रिस्तरीय रचना सुचवली: १. इम्पेरियल सिव्हिल सर्व्हिस (लंडनमध्ये परीक्षा), २. प्रांतीय सिव्हिल सर्व्हिस (प्रांतीय भरती) आणि ३. दुय्यम नागरी सेवा.",
+        "en": "The Aitchison Public Service Commission (1886) recommended the abolition of the Statutory Civil Service and the creation of a three-tier system: the Imperial Indian Civil Service, Provincial Civil Service, and Subordinate Civil Service."
+      }
+    },
+    {
+      "id": 25,
+      "question": {
+        "mr": "१८९२ च्या 'इंडियन कौन्सिल्स कायद्याने' (Indian Councils Act 1892) कायदेमंडळाच्या अधिकारात खालीलपैकी कोणती भर घातली?",
+        "en": "Which of the following powers was granted to members of the legislative councils under the Indian Councils Act of 1892?"
+      },
+      "options": [
+        { "mr": "वार्षिक अर्थसंकल्पावर (Budget) चर्चा करण्याचा आणि ६ दिवसांची पूर्वसूचना देऊन प्रश्न विचारण्याचा अधिकार", "en": "The right to discuss the annual financial statement (Budget) and ask questions on public policy with 6 days' notice" },
+        { "mr": "अर्थसंकल्पावर प्रत्यक्ष मतदान करण्याचा आणि कपात सुचवण्याचा अधिकार", "en": "The power to vote on budget demands and introduce policy cuts" },
+        { "mr": "मंत्र्यांना पूरक प्रश्न (Supplementary questions) विचारण्याचा पूर्ण अधिकार", "en": "The complete power to put supplementary questions to ministers" },
+        { "mr": "व्हाइसरॉयच्या अध्यादेशांना फेटाळण्याचा नकाराधिकार", "en": "Veto power to overturn ordinances promulgated by the Viceroy" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१८९२ च्या कायद्याने भारतीय सदस्यांना प्रथमच अर्थसंकल्पावर चर्चा करण्याचा आणि ६ दिवसांची नोटीस देऊन जनहिताच्या विषयांवर प्रश्न विचारण्याचा अधिकार दिला; परंतु त्यांना बजेटवर मतदान करण्याचा किंवा पूरक प्रश्न विचारण्याचा अधिकार नव्हता.",
+        "en": "The Indian Councils Act of 1892 widened the functions of legislative councils by allowing members to discuss the annual financial budget and question the executive with six days' prior notice, though voting on the budget and asking supplementary questions were prohibited."
+      }
+    }
+  ]
+}

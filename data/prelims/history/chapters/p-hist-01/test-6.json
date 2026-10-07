@@ -1,0 +1,464 @@
+{
+  "testId": "p-hist-01-t6",
+  "title": {
+    "mr": "आधुनिक भारताचा इतिहास — सराव 6",
+    "en": "Modern Indian History — Practice Test 6"
+  },
+  "durationMinutes": 20,
+  "marksPerQuestion": 1,
+  "negativeMarking": 0.25,
+  "totalMarks": 25,
+  "difficulty": "मध्यम ते काठिण्य",
+  "questions": [
+    {
+      "id": 1,
+      "question": {
+        "mr": "१४९८ मध्ये वास्को द गामा कालिकत बंदरावर उतरला, तेव्हा त्याचे स्वागत करणाऱ्या स्थानिक हिंदू राजाची पदवी काय होती?",
+        "en": "When Vasco da Gama arrived at the port of Calicut in 1498, what was the hereditary dynastic title of the local Hindu ruler who received him?"
+      },
+      "options": [
+        { "mr": "झामोरिन (सामुद्री)", "en": "Zamorin (Samudri)" },
+        { "mr": "मार्तंड वर्मा", "en": "Marthanda Varma" },
+        { "mr": "देवराय", "en": "Devaraya" },
+        { "mr": "नाईक", "en": "Nayak" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "२० मे १४९८ रोजी पोर्तुगीज खलाशी वास्को द गामा कालिकत (कप्पाड किनारा) येथे पोहोचला. त्यावेळी तेथील स्थानिक सत्ताधीश 'झामोरिन' (स्थानिक मल्याळम भाषेत 'सामुद्री' म्हणजे समुद्राचा राजा) याने त्याचे स्वागत केले.",
+        "en": "On 20 May 1498, Vasco da Gama reached the port of Calicut (Kappad beach), where he was received hospitably by the local hereditary ruler bearing the dynastic title of Zamorin (Samuthiri)."
+      }
+    },
+    {
+      "id": 2,
+      "question": {
+        "mr": "पोर्तुगीजांनी भारतात व्यापार सुरक्षेच्या नावाखाली समुद्रात प्रवास करणाऱ्या जहाजांवर जबरदस्तीने लादलेल्या परवाना पद्धतीला काय म्हटले जात असे?",
+        "en": "What was the naval trade permit/pass system called that the Portuguese forcibly imposed on merchant ships navigating Indian Ocean sea routes?"
+      },
+      "options": [
+        { "mr": "कार्ताझ पद्धत (Cartaz System)", "en": "Cartaz System" },
+        { "mr": "दस्तक पद्धत (Dastak System)", "en": "Dastak System" },
+        { "mr": "इजारदारी पद्धत (Ijardari System)", "en": "Ijardari System" },
+        { "mr": "कौलनामा (Kaulnama)", "en": "Kaulnama" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "पोर्तुगीजांनी अरबी समुद्रावर आपले वर्चस्व गाजवण्यासाठी 'कार्ताझ' (Cartaz) ही पास किंवा परवाना पद्धत सुरू केली. कार्ताझ नसलेली जहाजे पोर्तुगीज आरमारातर्फे लुटली जात किंवा जप्त केली जात; अगदी मुघल सम्राटांच्या जहाजांनाही हा परवाना घ्यावा लागत असे.",
+        "en": "The Portuguese asserted maritime hegemony over the Indian Ocean via the Cartaz system—a compulsory naval trade license without which ships were intercepted, seized, or plundered."
+      }
+    },
+    {
+      "id": 3,
+      "question": {
+        "mr": "१६६२ मध्ये स्थापन झालेल्या डॅनिश (डेन्मार्क) ईस्ट इंडिया कंपनीने भारतात आपले मुख्य प्रशासकीय केंद्र खालीलपैकी कोणत्या ठिकाणी स्थापन केले होते?",
+        "en": "The Danish East India Company, which entered the Indian trade, established its principal headquarters at which of the following places?"
+      },
+      "options": [
+        { "mr": "श्रीरामपूर (सेरामपूर - बंगाल)", "en": "Serampore (Bengal)" },
+        { "mr": "त्रांकेबार (तामिळनाडू)", "en": "Tranquebar (Tamil Nadu)" },
+        { "mr": "बालासोर (ओरिसा)", "en": "Balasore (Orissa)" },
+        { "mr": "सुरत (गुजरात)", "en": "Surat (Gujarat)" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "डेन्सनी १६२० मध्ये तामिळनाडूतील त्रांकेबार येथे पहिली वखार सुरू केली, परंतु १७५५ मध्ये स्थापन केलेले बंगालमधील श्रीरामपूर (Serampore) हे त्यांचे भारतातील मुख्य व्यापारी व प्रशासकीय केंद्र बनले. १८४५ मध्ये त्यांनी आपल्या सर्व भारतीय वसाहती ब्रिटिशांना विकल्या.",
+        "en": "While the Danes established their first factory at Tranquebar (Tamil Nadu) in 1620, Serampore in Bengal (founded 1755) grew into their primary commercial and administrative headquarters until sold to the British in 1845."
+      }
+    },
+    {
+      "id": 4,
+      "question": {
+        "mr": "१७४८ ते १७५४ दरम्यान झालेल्या दुसऱ्या कर्नाटक युद्धाच्या (Second Carnatic War) मूळ कारणांमध्ये खालीलपैकी कोणत्या घडामोडींचा समावेश होता?",
+        "en": "Which succession disputes formed the primary spark that triggered the Second Carnatic War (1748–1754)?"
+      },
+      "options": [
+        { "mr": "हैदराबाद आणि कर्नाटक या दोन्ही राज्यांमधील वारसाहक्काचा संघर्ष", "en": "Succession disputes in both Hyderabad and Carnatic states" },
+        { "mr": "बंगालच्या नवाबपदासाठी सिराज-उद्-दौला आणि शौकत जंग यांमधील कलह", "en": "Dispute for the Nawabship of Bengal between Siraj-ud-Daulah and Shaukat Jung" },
+        { "mr": "मराठा साम्राज्यातील पेशवेपदाचा अंतर्गत तंटामुक्ती संघर्ष", "en": "Internal disputes regarding the Maratha Peshwaship" },
+        { "mr": "अवधच्या गादीवरील वजीरपदाचा संघर्ष", "en": "Conflict over the Wazirship of Awadh" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "दुसरे कर्नाटक युद्ध हैदराबाद (नासीर जंग विरुद्ध मुझफ्फर जंग) आणि कर्नाटक (अन्वर-उद्-दीन विरुद्ध चंदासाहेब) या दोन्ही संस्थानांमधील वारसाहक्काच्या संघर्षातून पेटले. फ्रेंचांनी मुझफ्फर जंग व चंदासाहेब यांना, तर ब्रिटिशांनी नासीर जंग व अन्वर-उद्-दीन यांना पाठिंबा दिला.",
+        "en": "The Second Carnatic War arose directly from dual civil wars of succession: in Hyderabad between Nasir Jung and Muzaffar Jung, and in Carnatic between Anwar-ud-din and Chanda Sahib, with the French and British backing opposing factions."
+      }
+    },
+    {
+      "id": 5,
+      "question": {
+        "mr": "१७४९ मधील 'आंबूरच्या लढाईत' (Battle of Ambur) फ्रेंच आणि त्यांच्या मित्रपक्षांच्या संयुक्त सैन्याने कोणाचा पराभव करून त्याचा वध केला?",
+        "en": "In the Battle of Ambur (1749), the combined forces of the French and their allies defeated and killed which ruler?"
+      },
+      "options": [
+        { "mr": "अनवर-उद्-दीन (कर्नाटकचा नवाब)", "en": "Anwar-ud-din (Nawab of Carnatic)" },
+        { "mr": "नासीर जंग (हैदराबादचा निजाम)", "en": "Nasir Jung (Nizam of Hyderabad)" },
+        { "mr": "चंदासाहेब", "en": "Chanda Sahib" },
+        { "mr": "मुहम्मद अली", "en": "Muhammad Ali" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "३ ऑगस्ट १७४९ रोजी आंबूर येथे झालेल्या लढाईत फ्रेंच गव्हर्नर डुप्लेच्या मदतीने मुझफ्फर जंग आणि चंदासाहेब यांच्या सैन्याने कर्नाटकचा नवाब अनवर-उद्-दीन याचा पराभव करून त्याचा वध केला, त्यानंतर चंदासाहेब कर्नाटकचा नवाब बनला.",
+        "en": "At the Battle of Ambur on 3 August 1749, Muzaffar Jung, Chanda Sahib, and French auxiliary troops defeated and killed Nawab Anwar-ud-din of Carnatic, clearing Chanda Sahib's ascension to the Arcot throne."
+      }
+    },
+    {
+      "id": 6,
+      "question": {
+        "mr": "१७५७ च्या प्लासीच्या लढाईच्या वेळी ब्रिटिश ईस्ट इंडिया कंपनीच्या फौजांना मदत करणाऱ्या सिराज-उद्-दौलाच्या फौजेतील मुख्य फितूर सेनापती कोण होता?",
+        "en": "Who was the primary treacherous Commander-in-Chief of Siraj-ud-Daulah's army whose deliberate inaction aided the British at the Battle of Plassey in 1757?"
+      },
+      "options": [
+        { "mr": "मीर जाफर", "en": "Mir Jafar" },
+        { "mr": "मीर मदान", "en": "Mir Madan" },
+        { "mr": "मोहन लाल", "en": "Mohan Lal" },
+        { "mr": "राजा दुर्लभराय", "en": "Raja Durlabhram" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "प्लासीच्या लढाईत सिराज-उद्-दौलाचा मुख्य सेनापती मीर जाफर याने रॉबर्ट क्लाईव्हशी केलेल्या गुप्त करारानुसार आपल्या हाताखालील सैन्याला लढाईत उतरवलेच नाही. त्याच्या या विश्वासघातामुळे अवघ्या काही तासांत सिराजचा पराभव झाला.",
+        "en": "Mir Jafar, the Mir Bakshi (Commander-in-Chief) of Siraj-ud-Daulah, had entered into a clandestine conspiracy with Robert Clive, keeping the major wing of the Nawab's army immobile during the Battle of Plassey."
+      }
+    },
+    {
+      "id": 7,
+      "question": {
+        "mr": "प्लासीच्या लढाईत ब्रिटिशांना वित्तपुरवठा आणि अंतर्गत सहकार्य करणारे कलकत्त्याचे प्रसिद्ध धनाढ्य सावकार कोण होते?",
+        "en": "Who was the influential and immensely wealthy banker of Bengal who actively collaborated with the British against Siraj-ud-Daulah prior to the Battle of Plassey?"
+      },
+      "options": [
+        { "mr": "जगत सेठ (फतेहचंद यांचे घराण)", "en": "Jagat Seth (House of Fateh Chand)" },
+        { "mr": "द्वारकानाथ टागोर", "en": "Dwarkanath Tagore" },
+        { "mr": "जमशेटजी जिजीभॉय", "en": "Jamsetjee Jeejeebhoy" },
+        { "mr": "गोकुळदास तेजपाल", "en": "Gokuldas Tejpal" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "जगत सेठ हे तत्कालीन भारतातील सर्वात मोठे सावकार घराणे होते. सिराज-उद्-दौलाच्या आर्थिक मागण्यांमुळे संतप्त झालेल्या जगत सेठ (महताब राय व स्वरूपचंद) यांनी रॉबर्ट क्लाईव्ह, मीर जाफर, अमिचंद आणि राय दुर्लभ यांच्यासोबत कट रचून नवाबाला पदच्युत करण्यात महत्त्वाची भूमिका बजावली.",
+        "en": "The influential banking dynasty of the Jagat Seths (headed by Mahtab Rai and Swarup Chand) financed and orchestrated the conspiracy with Robert Clive and Mir Jafar to overthrow Nawab Siraj-ud-Daulah in 1757."
+      }
+    },
+    {
+      "id": 8,
+      "question": {
+        "mr": "१७६० मधील 'कटवा, घिरिया आणि उधवानला' या सलग लढायांमध्ये ब्रिटिश सैन्याने कोणाचा पराभव केला होता?",
+        "en": "In the series of battles including Katwa, Gheria, and Udhwanala fought in 1763, whose forces were repeatedly defeated by the British army?"
+      },
+      "options": [
+        { "mr": "मीर कासीम", "en": "Mir Qasim" },
+        { "mr": "सिराज-उद्-दौला", "en": "Siraj-ud-Daulah" },
+        { "mr": "शुजा-उद्-दौला", "en": "Shuja-ud-Daula" },
+        { "mr": "मीर जाफर", "en": "Mir Jafar" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१७६३ मध्ये व्यापार शुल्काच्या वादावरून इंग्रज आणि मीर कासीम यांच्यात युद्ध पेटले. मेजर ॲडम्सच्या नेतृत्वाखालील ब्रिटिश सैन्याने कटवा, घिरिया, सुती आणि उधवानला येथे मीर कासीमचा सलग पराभव केला, ज्यानंतर मीर कासीम अवधच्या नवाबाकडे आश्रयाला गेला.",
+        "en": "In 1763, Major Adams led Company forces in a series of engagements at Katwa, Gheria, and Udhwanala, routing Mir Qasim's reformed infantry and compelling him to seek an alliance with the Nawab of Awadh."
+      }
+    },
+    {
+      "id": 9,
+      "question": {
+        "mr": "१७६५ ते १७७२ दरम्यान बंगालमधील 'दुहेरी राज्यव्यवस्थेच्या' काळात कंपनीने नियुक्त केलेल्या दोन भारतीय 'उप-दिवाणां'च्या संदर्भात योग्य जोडी कोणती आहे?",
+        "en": "During the Dual Government in Bengal (1765–1772), which pair of Indian Deputy Diwans was appointed by the East India Company to manage revenue collection?"
+      },
+      "options": [
+        { "mr": "बंगालसाठी मुहम्मद रझा खान आणि बिहारसाठी राजा शिताब राय", "en": "Muhammad Reza Khan for Bengal and Raja Shitab Rai for Bihar" },
+        { "mr": "बंगालसाठी राजा शिताब राय आणि बिहारसाठी मुहम्मद रझा खान", "en": "Raja Shitab Rai for Bengal and Muhammad Reza Khan for Bihar" },
+        { "mr": "बंगालसाठी राय दुर्लभ आणि बिहारसाठी जगत सेठ", "en": "Rai Durlabh for Bengal and Jagat Seth for Bihar" },
+        { "mr": "बंगालसाठी नंदकुमार आणि बिहारसाठी राजा चैतसिंग", "en": "Nandkumar for Bengal and Raja Chait Singh for Bihar" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "रॉबर्ट क्लाईव्हने १७६५ मध्ये दिवाणी अधिकार मिळाल्यानंतर प्रत्यक्ष महसूल गोळा करण्यासाठी स्वतःचे अधिकारी न नेमता दोन नायब दिवाण नेमले: बंगाल प्रांतासाठी मुहम्मद रझा खान आणि बिहारसाठी राजा शिताब राय. १७७२ मध्ये हेस्टिंग्सने दोघांनाही पदावरून हटवले.",
+        "en": "Under the Dual System, Robert Clive conducted administrative and revenue matters through two appointed Naib Diwans (Deputy Diwans): Muhammad Reza Khan for Bengal and Raja Shitab Rai for Bihar, until both offices were terminated in 1772."
+      }
+    },
+    {
+      "id": 10,
+      "question": {
+        "mr": "१७७२ मध्ये वॉरन हेस्टिंग्सने बंगालमध्ये महसूल गोळा करण्यासाठी कोणती प्रायोगिक पद्धत सुरू केली होती, ज्या अंतर्गत सर्वाधिक बोली लावणाऱ्याला ५ वर्षांसाठी जमीन दिली जात असे?",
+        "en": "Which experimental revenue method did Warren Hastings introduce in Bengal in 1772, granting revenue collection rights to the highest bidder for five years?"
+      },
+      "options": [
+        { "mr": "पंचवार्षिक बंदोबस्त (Quinquennial / Ijardari System)", "en": "Quinquennial / Ijardari System" },
+        { "mr": "दहा वर्षांची कायमधारा पद्धत", "en": "Decennial Permanent Settlement" },
+        { "mr": "वार्षिक रयतवारी पद्धत", "en": "Annual Ryotwari System" },
+        { "mr": "ग्राम महाल पद्धत", "en": "Village Mahal System" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१७७२ मध्ये हेस्टिंग्सने 'इजारदारी पद्धत' (Quinquennial Settlement) सुरू केली. यात महसूल वसुलीचे अधिकार लिलावात सर्वाधिक बोली लावणाऱ्या कंत्राटदाराला (इजारदार) ५ वर्षांसाठी दिले जात. यात अवास्तव बोली लागल्याने शेतकऱ्यांचे शोषण वाढले आणि ही पद्धत पूर्णपणे अपयशी ठरली.",
+        "en": "In 1772, Warren Hastings implemented the Quinquennial (Five-Year) Ijardari auction system, auctioning revenue rights to the highest bidding revenue-farmer. The speculative bids led to harsh peasant exactions and fiscal collapse."
+      }
+    },
+    {
+      "id": 11,
+      "question": {
+        "mr": "१७७६ च्या पुरंदरच्या तहानंतर, १७७९ मध्ये मुंबई सरकारने रघुनाथरावाला (राघोबा) पुन्हा पेशवेपदी बसवण्यासाठी पाठवलेल्या फौजेचा पराभव नाना फडणवीस व महादजी शिंदे यांनी कोणत्या प्रसिद्ध खिंडीजवळ केला?",
+        "en": "Following the repudiation of the Treaty of Purandar, near which strategic pass did Nana Phadnavis and Mahadji Shinde defeat the British Bombay forces in January 1779?"
+      },
+      "options": [
+        { "mr": "बोरघाट (तळेगाव-वडगाव जवळ)", "en": "Bhor Ghat (near Talegaon-Wadgaon)" },
+        { "mr": "कसारा घाट", "en": "Kasara Ghat" },
+        { "mr": "वरंधा घाट", "en": "Varandha Ghat" },
+        { "mr": "कुंभार्ली घाट", "en": "Kumbharli Ghat" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "जानेवारी १७७९ मध्ये कर्नल एगर्टनच्या नेतृत्वाखालील ब्रिटिश सैन्याने बोरघाटातून पुण्यावर चढाई केली. मराठ्यांनी गनिमी काव्याने त्यांना तळेगाव-वडगाव येथे घेरले आणि त्यांचे अन्नधान्य संपवून त्यांचा दारुण पराभव केला, ज्यामुळे वडगावचा तह झाला.",
+        "en": "In January 1779, the Bombay army ascended Bhor Ghat toward Pune. The Marathas employed scorched-earth tactics, encircled them at Talegaon-Wadgaon, and cut off supply lines, resulting in the British surrender at Wadgaon."
+      }
+    },
+    {
+      "id": 12,
+      "question": {
+        "mr": "१७८१ मध्ये वॉरन हेस्टिंग्सने बनारसचा राजा चैतसिंग याच्यावर दबाव आणून अतिरिक्त युद्धकर (सबसिडी) मागितल्याने पेटलेल्या बंडाबाबत खालीलपैकी कोणते विधान बरोबर आहे?",
+        "en": "Which of the following statements is correct regarding the 1781 conflict when Warren Hastings demanded exorbitant auxiliary subsidies from Raja Chait Singh of Banaras?"
+      },
+      "options": [
+        { "mr": "चैतसिंगने अतिरिक्त ५ लाख रुपये देण्यास असमर्थता दर्शवल्यामुळे हेस्टिंग्सने स्वतः बनारसला जाऊन त्याला नजरकैदेत ठेवले, ज्यामुळे स्थानिक जनतेने बंड केले.", "en": "When Chait Singh expressed inability to pay the extraordinary levy of ₹5 lakhs, Hastings personally went to Banaras and placed him under arrest, triggering a public rebellion." },
+        { "mr": "चैतसिंगने ब्रिटिशांशी संपूर्ण निष्ठा ठेवून सर्व मागण्या शांततेने मान्य केल्या.", "en": "Chait Singh peacefully complied with all demands and maintained unbroken loyalty." },
+        { "mr": "चैतसिंगने ब्रिटिशांविरुद्ध लढण्यासाठी फ्रेंच आरमाराची मदत घेतली.", "en": "Chait Singh summoned the French naval fleet to fight against the British." },
+        { "mr": "या बंडामुळे वॉरन हेस्टिंग्सने तात्काळ आपल्या पदाचा राजीनामा दिला.", "en": "This rebellion forced Warren Hastings to tender an immediate resignation." }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "वॉरन हेस्टिंग्सने नियमित महसुलाव्यतिरिक्त राजा चैतसिंगकडे अतिरिक्त ५ लाख रुपये आणि घोडदळाची मागणी केली. चैतसिंगने असमर्थता दाखवताच हेस्टिंग्सने बनारसला जाऊन त्याला कैद केले. बनारसच्या सैनिकांनी ब्रिटिशांवर हल्ला चढवला आणि हेस्टिंग्सला जीवाच्या भीतीने चुनारच्या किल्ल्यात पळून जावे लागले होते. हेस्टिंग्सवर इंग्लंडमध्ये चाललेल्या महाभियोगात (Impeachment) हा महत्त्वाचा मुद्दा होता.",
+        "en": "Hastings unilaterally demanded wartime contributions of 5 lakh rupees and cavalry troops from Raja Chait Singh. When delayed, Hastings marched to Banaras and placed the Raja under arrest, sparking an insurrection that forced Hastings to temporarily flee to Chunar Fort."
+      }
+    },
+    {
+      "id": 13,
+      "question": {
+        "mr": "१७८२ मध्ये ईस्ट इंडिया कंपनी आणि मराठा महासंघ यांच्यात झालेल्या 'सालबाईच्या तहावर' स्वाक्षरी करणाऱ्या मध्यस्थ मुत्सद्दी कोण होते?",
+        "en": "Who acted as the primary mediator and guarantor in negotiating the Treaty of Salbai (1782) between the British and the Marathas?"
+      },
+      "options": [
+        { "mr": "महादजी शिंदे", "en": "Mahadji Shinde" },
+        { "mr": "तुकोजी होळकर", "en": "Tukoji Holkar" },
+        { "mr": "नाना फडणवीस", "en": "Nana Phadnavis" },
+        { "mr": "फत्तेसिंग गायकवाड", "en": "Fattesing Gaekwad" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१७ मे १७८२ रोजी झालेला सालबाईचा तह महादजी शिंदे यांच्या मुत्सद्देगिरीमुळे झाला. महादजींनी इंग्रज प्रतिनिधी डेव्हिड अँडरसन आणि पेशव्यांच्या प्रतिनिधींमध्ये मध्यस्थी केली आणि तहाच्या अंमलबजावणीची हमी स्वतः घेतली.",
+        "en": "Mahadji Shinde played the central role of mediator and guarantor in concluding the Treaty of Salbai (17 May 1782) with British envoy David Anderson, which solidified Shinde's paramount standing in North Indian politics."
+      }
+    },
+    {
+      "id": 14,
+      "question": {
+        "mr": "१७९० ते १७९२ दरम्यान झालेल्या तिसऱ्या इंग्रज-म्हैसूर युद्धाची प्रत्यक्ष ठिणगी खालीलपैकी कोणत्या घटनेमुळे पडली?",
+        "en": "What was the immediate incident that triggered the outbreak of the Third Anglo-Mysore War (1790–1792)?"
+      },
+      "options": [
+        { "mr": "टिपू सुलतानने ब्रिटिशांचा मित्रपक्ष असलेल्या त्रावणकोरच्या संस्थानावर केलेले आक्रमण", "en": "Tipu Sultan's attack on the British-allied Kingdom of Travancore" },
+        { "mr": "ब्रिटिशांनी म्हैसूरचे मंगलोर बंदर परस्पर ताब्यात घेणे", "en": "The British unilaterally seizing the port of Mangalore from Mysore" },
+        { "mr": "हैदराबादच्या निजामाने श्रीरंगपट्टणमवर अचानक चढवलेला हल्ला", "en": "A sudden raid mounted on Srirangapatnam by the Nizam of Hyderabad" },
+        { "mr": "टिपूने मद्रास कौन्सिलच्या राजदूताला बंदी बनवणे", "en": "Tipu imprisoning envoys dispatched by the Madras Council" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "त्रावणकोरच्या राजाने डचांकडून क्रांगनोर व आयाकोट्टा हे किल्ले विकत घेतले, ज्यांवर टिपूचा दावा होता. एप्रिल १७९० मध्ये टिपूने त्रावणकोरच्या सीमाभागावर (Nedumkotta) हल्ला केला. त्रावणकोर हा ब्रिटिशांचा संरक्षित मित्र असल्याने कॉर्नवॉलिसने टिपूविरुद्ध युद्ध पुकारले.",
+        "en": "The war broke out when Tipu Sultan attacked the Kingdom of Travancore in 1790 over territorial disputes regarding Cranganore and Ayacotta. Because Travancore was under British protection, Lord Cornwallis declared war against Mysore."
+      }
+    },
+    {
+      "id": 15,
+      "question": {
+        "mr": "लॉर्ड कॉर्नवॉलिसने १७९३ मध्ये केलेल्या न्यायालयीन सुधारणांनुसार जिल्हाधिकाऱ्यांकडून (Collector) कोणते अधिकार काढून घेऊन ते जिल्हा न्यायाधीशांकडे (District Judge) सोपवण्यात आले?",
+        "en": "Under Lord Cornwallis's judicial code of 1793, which functional authority was stripped from the District Collector and transferred exclusively to the District Judge?"
+      },
+      "options": [
+        { "mr": "न्यायिक व दिवाणी खटले चालवण्याचे अधिकार", "en": "Judicial and civil magistracy powers" },
+        { "mr": "जमीन महसूल ठरवण्याचे आणि वसूल करण्याचे अधिकार", "en": "Powers of land revenue assessment and tax collection" },
+        { "mr": "सार्वजनिक जमिनींचे मोजमाप करण्याचे अधिकार", "en": "Powers relating to cadastral land surveying" },
+        { "mr": "स्थानिक सैन्याच्या हालचालींचे अधिकार", "en": "Powers to command local military garrisons" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "कॉर्नवॉलिस कोड (१७९३) ने 'सत्तेच्या पृथक्करणाचा' (Separation of Powers) सिद्धांत लागू केला. जिल्हाधिकाऱ्यांकडे केवळ महसूल वसुलीचे काम ठेवले गेले आणि त्यांचे सर्व दिवाणी न्यायिक अधिकार काढून स्वतंत्र जिल्हा न्यायाधीशाचे (District Judge) पद निर्माण केले गेले.",
+        "en": "The Cornwallis Code separated executive and judicial functions. Collectors were divested of all judicial and magisterial roles and restricted solely to revenue administration, transferring judicial authority to newly instituted District Civil Judges."
+      }
+    },
+    {
+      "id": 16,
+      "question": {
+        "mr": "१७९८ मध्ये लॉर्ड वेलस्लीने सुरू केलेल्या 'तैनाती फौज' पद्धतीच्या मुख्य अटींमध्ये खालीलपैकी कशाचा समावेश नव्हता?",
+        "en": "Which of the following was NOT among the standard operational stipulations of Lord Wellesley's Subsidiary Alliance system?"
+      },
+      "options": [
+        { "mr": "संस्थानिकाला आपल्या अंतर्गत प्रशासनात ब्रिटीश रेसिडेंटचे थेट कायदे लागू करणे बंधनकारक होते.", "en": "The native ruler was mandated to enforce direct statutory laws of the British Resident within internal domestic affairs." },
+        { "mr": "संस्थानिकाने आपल्या राज्यात कायमस्वरूपी ब्रिटिश सैन्य तैनात ठेवायचे आणि त्याच्या खर्चासाठी रोख रक्कम किंवा विशिष्ट भूप्रदेश द्यायचा.", "en": "The ruler had to station a permanent British garrison and provide cash subsidies or territory for its maintenance." },
+        { "mr": "ब्रिटिशांच्या पूर्वपरवानगीशिवाय कोणत्याही इतर युरोपियन व्यक्तीला दरबारात नोकरीवर ठेवण्यास सक्त मनाई होती.", "en": "The ruler was barred from employing non-British European personnel without prior British consent." },
+        { "mr": "इतर कोणत्याही देशी राज्याशी युद्ध किंवा वाटाघाटी केवळ ब्रिटिशांच्या मध्यस्थीनेच करता येत असत.", "en": "External foreign relations and conflicts with other states could be handled only via British mediation." }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "तैनाती फौजेच्या करारानुसार ब्रिटिशांनी संस्थानिकाच्या 'अंतर्गत कारभारात कोणताही हस्तक्षेप न करण्याचे' अधिकृत आश्वासन दिले होते (जरी व्यवहारात रेसिडेंट हस्तक्षेप करत असत). त्यामुळे संस्थानिकावर ब्रिटिश कायदे लागू करण्याची कोणतीही औपचारिक अट नव्हती.",
+        "en": "The Subsidiary treaty explicitly contained a clause guaranteeing non-intervention in internal governance (though violated in practice). Stationing British statutes internally was never a formal treaty term."
+      }
+    },
+    {
+      "id": 17,
+      "question": {
+        "mr": "१८०२ च्या वसईच्या तहानुसार दुसऱ्या बाजीराव पेशव्याने ब्रिटिशांच्या फौजेच्या खर्चासाठी वार्षिक किती रुपयांचा महसूल देणारा प्रदेश कंपनीला सुपूर्द केला?",
+        "en": "Under the Treaty of Bassein (1802), territories yielding what amount of annual revenue were ceded by Peshwa Baji Rao II to fund the subsidiary force?"
+      },
+      "options": [
+        { "mr": "२६ लाख रुपये", "en": "26 Lakh Rupees" },
+        { "mr": "५० लाख रुपये", "en": "50 Lakh Rupees" },
+        { "mr": "१० लाख रुपये", "en": "10 Lakh Rupees" },
+        { "mr": "७५ लाख रुपये", "en": "75 Lakh Rupees" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "३१ डिसेंबर १८०२ च्या वसईच्या तहानुसार पेशव्याने पुण्यात ब्रिटिश फौजेची तुकडी ठेवण्याचे मान्य केले आणि तिच्या खर्चासाठी वार्षिक २६ लाख रुपयांचे उत्पन्न देणारा गुजरात, तुंगभद्रा व तापी खोऱ्यातील भूप्रदेश कंपनीच्या स्वाधीन केला.",
+        "en": "Under Article 4 of the Treaty of Bassein, Peshwa Baji Rao II permanently assigned territories in Gujarat and the Karnatak yielding an annual revenue of ₹26 lakhs to defray the cost of the subsidiary force."
+      }
+    },
+    {
+      "id": 18,
+      "question": {
+        "mr": "१८०३ मध्ये दुसऱ्या इंग्रज-मराठा युद्धादरम्यान लॉर्ड लेक याने उत्तर भारतात खालीलपैकी कोणत्या लढाईत दौलतराव शिंद्यांच्या सैन्याचा निर्णायक पराभव करून आग्रा आणि दिल्लीवर ताबा मिळवला?",
+        "en": "In which battle fought in North India in 1803 did General Lake defeat Daulat Rao Scindia's French-trained forces to seize Delhi and Agra?"
+      },
+      "options": [
+        { "mr": "लासवारीची लढाई (Battle of Laswari)", "en": "Battle of Laswari" },
+        { "mr": "अडगावची लढाई (Battle of Argaon)", "en": "Battle of Argaon" },
+        { "mr": "खडकीची लढाई (Battle of Khadki)", "en": "Battle of Khadki" },
+        { "mr": "सीताबर्डीची लढाई (Battle of Sitabuldi)", "en": "Battle of Sitabuldi" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१ नोव्हेंबर १८०३ रोजी राजस्थानमधील लासवारी येथे जनरल जेरार्ड लेक याने शिंद्यांच्या अभेद्य मानल्या जाणाऱ्या पायदळाचा पराभव केला. या विजयामुळे उत्तर भारतातील मराठ्यांची सत्ता पूर्णपणे संपुष्टात येऊन आग्रा व दिल्ली ब्रिटिशांच्या हातात गेली.",
+        "en": "On 1 November 1803, Lord Gerard Lake won a decisive victory against Scindia's elite regular brigades at the Battle of Laswari (Alwar), breaking Maratha dominance across the Upper Doab, Agra, and Delhi."
+      }
+    },
+    {
+      "id": 19,
+      "question": {
+        "mr": "१८१७ मध्ये नागपूरच्या भोसले घराण्यातील कोणत्या शासकाने ब्रिटिशांविरुद्ध पुकारलेल्या बंडात 'सीताबर्डीची लढाई' (Battle of Sitabuldi) झाली?",
+        "en": "In November 1817, during the Third Anglo-Maratha War, which ruler of the Nagpur Bhonsle dynasty engaged the British in the Battle of Sitabuldi?"
+      },
+      "options": [
+        { "mr": "मुधोजी उर्फ अप्पासाहेब भोसले", "en": "Mudhoji alias Appa Sahib Bhonsle" },
+        { "mr": "रघूजी भोसले दुसरे", "en": "Raghuji Bhonsle II" },
+        { "mr": "परसोजी भोसले", "en": "Parsoji Bhonsle" },
+        { "mr": "राघोजी भोसले तिसरे", "en": "Raghuji Bhonsle III" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "२६-२७ नोव्हेंबर १८१७ रोजी नागपूरचे राज्यकर्ते अप्पासाहेब भोसले यांनी पेशव्यांना पाठिंबा देण्यासाठी ब्रिटिश रेसिडेन्सीवर हल्ला चढवला. नागपूरजवळील सीताबर्डी टेकडीवर झालेल्या या लढाईत ब्रिटिश सैन्याने अप्पासाहेबांच्या सैन्याचा पराभव केला.",
+        "en": "On 26–27 November 1817, Appa Sahib Bhonsle assaulted the British Residency at Nagpur. The resulting Battle of Sitabuldi ended in a British victory, forcing Appa Sahib to flee and forfeiting Nagpur's independence."
+      }
+    },
+    {
+      "id": 20,
+      "question": {
+        "mr": "१८२० च्या दशकात थॉमस मुन्रो यांनी मद्रास प्रांतात लागू केलेल्या रयतवारी पद्धतीचे मुख्य वैशिष्ट्य खालीलपैकी कोणते होते?",
+        "en": "Which of the following was the foundational feature of the Ryotwari System formulated by Thomas Munro across Madras Presidency in the 1820s?"
+      },
+      "options": [
+        { "mr": "शासनाने मध्यस्थ जमीनदारांना वगळून प्रत्यक्ष शेतकरी (रयत) यांच्याशी थेट महसूल करार केला.", "en": "The state bypassed all intermediary zamindars and contracted revenue settlements directly with individual cultivators (Ryots)." },
+        { "mr": "संपूर्ण गावाला एकत्रितरीत्या एकाच कराराखाली महसूल भरण्याची जबाबदारी दिली.", "en": "Entire villages were bound jointly to pay assessed land revenue as a collective corporate body." },
+        { "mr": "जमीनदारांना जमिनीचे वंशपरंपरागत मालक घोषित करून त्यांना कायमस्वरूपी महसूल गोळा करण्याचा हक्क दिला.", "en": "Zamindars were declared hereditary proprietors with perpetual revenue rights." },
+        { "mr": "शेतकऱ्यांना जमिनीवरील मालकी न देता सरकारी वेठबिगार म्हणून काम करायला लावले.", "en": "Cultivators were denied land rights and treated as bonded agricultural labor." }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "रयतवारी पद्धतीमध्ये कंपनी सरकार आणि प्रत्यक्ष कसणारा शेतकरी (रयत) यांच्यामध्ये कोणताही मध्यस्थ (जमीनदार) नव्हता. शेतकरी हा जमिनीचा मालक मानला गेला, जोपर्यंत तो ठरलेला महसूल सरकारला भरत असे. हा महसूल दर २० ते ३० वर्षांनी पुनरावलोकन केला जात असे.",
+        "en": "In the Ryotwari system, there were no intermediate zamindars. The government dealt directly with the cultivating peasant (ryot), who was recognized as the registered proprietor liable for paying land revenue directly to the treasury."
+      }
+    },
+    {
+      "id": 21,
+      "question": {
+        "mr": "१८३३ च्या सनदी कायद्याद्वारे (Charter Act of 1833) ईस्ट इंडिया कंपनीच्या स्वरूपात कोणता मूलभूत बदल झाला?",
+        "en": "What fundamental structural transformation occurred regarding the East India Company by virtue of the Charter Act of 1833?"
+      },
+      "options": [
+        { "mr": "कंपनीची सर्व व्यापारी कार्ये (Commercial functions) पूर्णपणे बंद करून तिला केवळ एक शुद्ध 'प्रशासकीय संस्था' (Administrative body) बनवण्यात आले.", "en": "Its commercial functions were terminated, converting it strictly into a purely administrative entity for the British Crown." },
+        { "mr": "कंपनीचा राजकीय कारभार काढून घेऊन तिला फक्त कापड व्यापारापुरती मर्यादित करण्यात आले.", "en": "Political powers were revoked, limiting it solely to the private textile trade." },
+        { "mr": "कंपनी बरखास्त करून भारताचा कारभार थेट ब्रिटिश संसदेच्या मंत्रिमंडळाने ताब्यात घेतला.", "en": "The Company was dissolved and India was placed immediately under direct Cabinet control." },
+        { "mr": "कंपनीला स्वतःचे सैन्य बाळगण्यास बंदी घालून केवळ कर गोळा करण्याचे अधिकार दिले.", "en": "It was prohibited from raising armed forces and restricted only to tax assessments." }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१८३३ च्या सनदी कायद्याने कंपनीची चहा आणि चीन व्यापारावरील शिल्लक मक्तेदारीही रद्द केली आणि तिची सर्व व्यावसायिक व्यापारी कार्ये संपुष्टात आणली. कंपनी ही ब्रिटिश राजमुकुटाच्या वतीने भारतात केवळ 'प्रशासकीय आणि राजकीय कारभार' चालवणारी संस्था बनली.",
+        "en": "The Charter Act of 1833 ended the East India Company's remaining monopolies on tea and Chinese trade, bringing its commercial activities to a close and reconstituting it purely as an administrative governing agency."
+      }
+    },
+    {
+      "id": 22,
+      "question": {
+        "mr": "१८४४ ते १८४८ या काळात भारताचा गव्हर्नर-जनरल राहिलेल्या लॉर्ड हार्डिंग्ज पहिल्या याच्या कारकिर्दीतील प्रमुख सुधारणा कोणती होती?",
+        "en": "Which notable reform was accomplished during the tenure of Governor-General Lord Hardinge I (1844–1848)?"
+      },
+      "options": [
+        { "mr": "इंग्रजी शिक्षण घेतलेल्या भारतीयांना सरकारी नोकऱ्यांमध्ये प्राधान्य देण्याची अधिकृत घोषणा (१८४४)", "en": "Official declaration according preference in public employment to Indians educated in English-medium institutions (1844)" },
+        { "mr": "भारतातील पहिली रेल्वे मार्गिका सुरू करणे", "en": "Launching the first passenger railway line in India" },
+        { "mr": "कायमधारा पद्धत उत्तर भारतात लागू करणे", "en": "Extending the Permanent Settlement across Northern India" },
+        { "mr": "प्रेसवरील सर्व बंधने पुन्हा कठोर करणे", "en": "Reimposing stringent press censorship measures" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१८४४ मध्ये लॉर्ड हार्डिंग्ज पहिल्याने जाहीर केले की सरकारी नोकऱ्यांमध्ये भरती करताना इंग्रजी भाषा जाणणाऱ्या उमेदवारांना प्राधान्य दिले जाईल. या निर्णयामुळे भारतीयांमध्ये इंग्रजी शिक्षणाचा प्रसार वेगाने वाढण्यास मोठी चालना मिळाली.",
+        "en": "In 1844, Lord Hardinge I issued a historic notification stating that in governmental service recruitment, preference would be given to candidates possessing proficiency in English, drastically incentivizing Western schooling."
+      }
+    },
+    {
+      "id": 23,
+      "question": {
+        "mr": "ओरिसातील खोंड (Khond) जमातीमध्ये प्रचलित असलेल्या 'मारिया' (Meriah) या मानवी बळी प्रथेचे उच्चाटन करण्यासाठी १८४० च्या दशकात कोणत्या ब्रिटिश अधिकाऱ्याची नियुक्ती करण्यात आली होती?",
+        "en": "Which British officer was specially commissioned in the 1840s to eradicate the 'Meriah' system of human sacrifice prevalent among the Khonds of Orissa?"
+      },
+      "options": [
+        { "mr": "कॅप्टन जे. सी. कॅम्पबेल (Captain J. C. Campbell)", "en": "Captain J. C. Campbell" },
+        { "mr": "कॅप्टन विल्यम स्लीमन (Captain William Sleeman)", "en": "Captain William Sleeman" },
+        { "mr": "जेम्स आऊट्रम (James Outram)", "en": "James Outram" },
+        { "mr": "अलेक्झांडर रीड (Alexander Read)", "en": "Alexander Read" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "खोंड जमातीत चांगली पिके येण्यासाठी 'मारिया' नावाची मानवी बळी देण्याची प्रथा होती. लॉर्ड हार्डिंग्जच्या काळात कॅप्टन कॅम्पबेल (आणि कॅप्टन मॅकफर्सन) यांच्या नेतृत्वाखाली विशेष एजन्सी स्थापन करून ही क्रूर प्रथा बंद पाडण्यात आली.",
+        "en": "Captain J. C. Campbell (along with Captain Macpherson) was appointed under Lord Hardinge I to suppress the archaic rite of Meriah (human sacrifice) among the Khond hill tribes of Orissa and surrounding agencies."
+      }
+    },
+    {
+      "id": 24,
+      "question": {
+        "mr": "लॉर्ड डलहौसीने १८५४ मध्ये रेल्वे विकासासाठी आणलेली 'हमी पद्धत' (Guarantee System) खालीलपैकी कशावर आधारित होती?",
+        "en": "What was the operating basis of the 'Guarantee System' introduced by Lord Dalhousie in the 1850s to promote railway construction in India?"
+      },
+      "options": [
+        { "mr": "खाजगी ब्रिटिश रेल्वे कंपन्यांना त्यांच्या गुंतवलेल्या भांडवलावर भारतीय महसुलातून किमान ५% परताव्याची हमी देणे आणि मोफत जमीन देणे.", "en": "Guaranteeing a minimum 5% return on invested capital from Indian revenues alongside free 99-year land leases to private British railway companies." },
+        { "mr": "भारतीय स्थानिक सावकारांना रेल्वे उभारणीसाठी १००% बिनव्याजी कर्ज देणे.", "en": "Offering 100% interest-free loans exclusively to indigenous bankers for rail lines." },
+        { "mr": "रेल्वेचे संपूर्ण काम केवळ शासकीय खर्चातून करणे आणि कोणतीही खाजगी गुंतवणूक न घेणे.", "en": "Executing all railway tracks exclusively using public exchequer funds with no private capital." },
+        { "mr": "फक्त संस्थानिकांच्या पैशातून रेल्वे मार्ग बांधून तो ब्रिटिश सैन्याला चालवायला देणे.", "en": "Financing tracks solely from princely coffers for the British military." }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "डलहौसीच्या 'गॅरंटी सिस्टीम'नुसार ब्रिटिश भांडवलदारांना आकर्षित करण्यासाठी भारतीय तिजोरीतून किमान ५% निश्चित व्याजाची हमी दिली गेली. नफा झाला नाही तरी हा लाभांश मिळत राहिल्यामुळे कंपन्यांनी प्रचंड उधळपट्टी केली, ज्याला 'खाजगी नफा आणि सार्वजनिक तोटा' (Private enterprise at public risk) म्हटले जाते.",
+        "en": "The Old Guarantee System promised British rail joint-stock companies a 5% guaranteed interest return on capital out of Indian revenues, plus free 99-year land grants, creating wasteful expenditure dubbed 'private profit at public risk'."
+      }
+    },
+    {
+      "id": 25,
+      "question": {
+        "mr": "१८५६ मध्ये लॉर्ड डलहौसीने भारताचे उन्हाळी लष्करी मुख्यालय (Summer Military Headquarters) आणि मुख्य तोफखाना मुख्यालय कलकत्त्याहून कोठे हलवले?",
+        "en": "In 1856, where did Lord Dalhousie transfer the Summer Military Headquarters and the Army Artillery Headquarters away from Calcutta?"
+      },
+      "options": [
+        { "mr": "लष्करी मुख्यालय सिमला येथे आणि तोफखाना मेरठ येथे", "en": "Army Headquarters to Shimla and Artillery Headquarters to Meerut" },
+        { "mr": "लष्करी मुख्यालय पुणे येथे आणि तोफखाना खडकी येथे", "en": "Army Headquarters to Poona and Artillery Headquarters to Khadki" },
+        { "mr": "लष्करी मुख्यालय दार्जिलिंग येथे आणि तोफखाना पाटणा येथे", "en": "Army Headquarters to Darjeeling and Artillery Headquarters to Patna" },
+        { "mr": "लष्करी मुख्यालय नैनिताल येथे आणि तोफखाना कानपूर येथे", "en": "Army Headquarters to Nainital and Artillery Headquarters to Kanpur" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "डलहौसीने प्रशासकीय आणि लष्करी कार्यक्षमतेसाठी सैन्याचे मुख्य कार्यालय उन्हाळ्यात सिमला (Shimla) येथे हलवले (पुढे सिमला ही उन्हाळी राजधानीच बनली). तसेच सैन्याचे मुख्य तोफखाना केंद्र (Artillery Headquarters) कलकत्त्याहून हलवून पश्चिमेकडे मेरठ (Meerut) येथे आणले.",
+        "en": "Lord Dalhousie shifted the Army's headquarters to Shimla (later formalized as the summer capital) and relocated the Bengal Artillery headquarters from Calcutta inland to Meerut for strategic operational balance."
+      }
+    }
+  ]
+}

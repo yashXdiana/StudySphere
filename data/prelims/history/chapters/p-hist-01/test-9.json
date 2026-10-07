@@ -1,0 +1,464 @@
+{
+  "testId": "p-hist-01-t9",
+  "title": {
+    "mr": "आधुनिक भारताचा इतिहास — सराव 9",
+    "en": "Modern Indian History — Practice Test 9"
+  },
+  "durationMinutes": 20,
+  "marksPerQuestion": 1,
+  "negativeMarking": 0.25,
+  "totalMarks": 25,
+  "difficulty": "मध्यम ते काठिण्य",
+  "questions": [
+    {
+      "id": 1,
+      "question": {
+        "mr": "१४९८ मध्ये वास्को द गामा याला आफ्रिकेतील मालिंदी बंदरावरून भारताच्या कालिकत बंदरापर्यंतचा सागरी मार्ग दाखवणारा गुजराती वाटाड्या कोण होता?",
+        "en": "Who was the Gujarati pilot/navigator who guided Vasco da Gama across the Indian Ocean from Malindi to the port of Calicut in 1498?"
+      },
+      "options": [
+        { "mr": "अब्दुल माजिद (अहमद इब्न माजिद)", "en": "Abdul Majid (Ahmad Ibn Majid)" },
+        { "mr": "कान्होजी आंग्रे", "en": "Kanhoji Angre" },
+        { "mr": "तिमोजा", "en": "Timoji" },
+        { "mr": "कुंजली मराक्कर", "en": "Kunjali Marakkar" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "वास्को द गामा आफ्रिकेच्या पूर्व किनाऱ्यावरील मालिंदी बंदरात पोहोचल्यानंतर, अब्दुल माजिद (किंवा कांजी मालम) नावाच्या कुशल गुजराती खलाशी/वाटाड्याने त्याला मान्सून वाऱ्यांच्या साहाय्याने अरबी समुद्र ओलांडून कालिकतला पोहोचण्यास मदत केली.",
+        "en": "After reaching the East African port of Malindi, Vasco da Gama hired a skilled Gujarati navigator named Abdul Majid (also referenced as Kanji Malam) who piloted his fleet across the Arabian Sea directly to Calicut."
+      }
+    },
+    {
+      "id": 2,
+      "question": {
+        "mr": "१५०५ मध्ये भारताचा पहिला पोर्तुगीज व्हाइसरॉय म्हणून नियुक्त झालेल्या फ्रान्सिस्को दी अल्मेडा याच्या मुख्य धोरणात्मक उद्दिष्टाचे नाव काय होते?",
+        "en": "What was the designation of the maritime strategy pursued by Francisco de Almeida, the first Portuguese Viceroy of India appointed in 1505?"
+      },
+      "options": [
+        { "mr": "शांत पाण्याचे धोरण (Blue Water Policy / Cartaz Policy)", "en": "Blue Water Policy" },
+        { "mr": "भूभागीय साम्राज्य विस्तार धोरण", "en": "Territorial Annexation Policy" },
+        { "mr": "धार्मिक सामंजस्य धोरण", "en": "Religious Conciliation Policy" },
+        { "mr": "मुक्त व्यापार धोरण", "en": "Open Door Trade Policy" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "फ्रान्सिस्को दी अल्मेडाने जमिनीवर किल्ले व मुलुख जिंकण्यापेक्षा अरबी समुद्र व हिंदी महासागराच्या जलमार्गांवर नौदलाचे अभेद्य वर्चस्व निर्माण करण्यावर भर दिला, ज्याला 'शांत पाण्याचे धोरण' (Blue Water Policy) म्हटले जाते.",
+        "en": "Francisco de Almeida instituted the 'Blue Water Policy' (A Política das Águas Azuis), prioritizing absolute naval supremacy over Indian Ocean trade choke points rather than extensive territorial conquests on the Indian mainland."
+      }
+    },
+    {
+      "id": 3,
+      "question": {
+        "mr": "डच ईस्ट इंडिया कंपनीच्या संदर्भात खालील विधाने विचारात घ्या:\nअ. डच संसदेने १६०२ मध्ये सनद देऊन स्थापन केलेली ही जगातील पहिली संयुक्त भांडवली कंपनी (Joint Stock Company) होती.\nब. १७४१ मधील कुलाचेलच्या लढाईत त्रावणकोरच्या मार्तंड वर्मांनी डचांचा पराभव केला.\nवरीलपैकी कोणते/ती विधान/ने बरोबर आहेत?",
+        "en": "Consider the following statements regarding the Dutch East India Company:\na. Established by a charter of the States-General in 1602, it was the world's first publicly listed joint-stock company.\nb. Maharaja Marthanda Varma of Travancore defeated the Dutch at the Battle of Colachel in 1741.\nWhich of the statements given above is/are correct?"
+      },
+      "options": [
+        { "mr": "फक्त अ", "en": "Only a" },
+        { "mr": "फक्त ब", "en": "Only b" },
+        { "mr": "अ आणि ब दोन्ही", "en": "Both a and b" },
+        { "mr": "दोन्ही नाही", "en": "Neither a nor b" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "दोन्ही विधाने सत्य आहेत. डच ईस्ट इंडिया कंपनी (VOC) ही शेअर्स जारी करणारी पहिली महाकाय कंपनी होती. त्रावणकोरचे राजे मार्तंड वर्मा यांनी कुलाचेलच्या लढाईत (१७४१) डच आरमाराचा दारुण पराभव करून मलबारवरील त्यांचे नियंत्रण संपुष्टात आणले.",
+        "en": "Both statements are correct. The Dutch VOC (Vereenigde Oostindische Compagnie) was the first multinational joint-stock company to issue public stock in 1602. The Battle of Colachel (1741) fought against Marthanda Varma ended Dutch dominance in the pepper trade."
+      }
+    },
+    {
+      "id": 4,
+      "question": {
+        "mr": "१६०८ मध्ये मुघल सम्राट जहांगीरच्या दरबारात ब्रिटिश राजा जेम्स पहिला याचे शिफारसपत्र घेऊन येणारा कॅप्टन विल्यम हॉकिन्स कोणत्या जहाजावरून सुरतला पोहोचला होता?",
+        "en": "On which flagship vessel did Captain William Hawkins arrive at Surat in 1608 bearing an introductory letter from King James I to Mughal Emperor Jahangir?"
+      },
+      "options": [
+        { "mr": "हेक्टर (Hector)", "en": "Hector" },
+        { "mr": "रेड ड्रॅगन (Red Dragon)", "en": "Red Dragon" },
+        { "mr": "मेफ्लॉवर (Mayflower)", "en": "Mayflower" },
+        { "mr": "व्हिक्टोरिया (Victoria)", "en": "Victoria" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "कॅप्टन विल्यम हॉकिन्स ऑगस्ट १६०८ मध्ये 'हेक्टर' नावाच्या व्यापारी जहाजाने सुरत बंदरावर आला. तो तुर्की व फारसी भाषा अस्खलित बोलत असल्यामुळे जहांगीरने त्याला दरबारात ४०० ची मनसब आणि 'इंग्लिश खान' ही पदवी दिली होती.",
+        "en": "Captain William Hawkins anchored at Surat in August 1608 aboard the ship 'Hector'. Proficient in Turkish, Hawkins gained personal audience with Jahangir, who conferred upon him a mansab of 400 and the title 'English Khan'."
+      }
+    },
+    {
+      "id": 5,
+      "question": {
+        "mr": "१६९० च्या दशकात ईस्ट इंडिया कंपनीचा एजंट जॉब चार्नॉक याने बंगालमध्ये ज्या तीन गावांची जमीनदारी विकत घेऊन कलकत्ता वखारीचा पाया घातला, त्या गावांमध्ये खालीलपैकी कोणाचा समावेश नव्हता?",
+        "en": "In the 1690s, the English agent Job Charnock acquired the zamindari of three villages that formed modern Calcutta. Which of the following was NOT one of those three villages?"
+      },
+      "options": [
+        { "mr": "चंद्रनगर (Chandernagore)", "en": "Chandernagore" },
+        { "mr": "सुतानाती (Sutanuti)", "en": "Sutanuti" },
+        { "mr": "कलिकाता (Kalikata)", "en": "Kalikata" },
+        { "mr": "गोविंदपूर (Gobindapur)", "en": "Gobindapur" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "इंग्रजांनी १६९८ मध्ये सुतानाती, कलिकाता आणि गोविंदपूर या तीन गावांचे जमीनदारी हक्क मिळवून कलकत्ता शहराची पायाभरणी केली. चंद्रनगर ही फ्रेंचांची प्रमुख व्यापारी वखार होती, ती इंग्रजांच्या अखत्यारीत नव्हती.",
+        "en": "In 1698, the English acquired the zamindari rights to Sutanuti, Kalikata, and Gobindapur, developing them around Fort William into Calcutta. Chandernagore was a major French trading post, not part of these three villages."
+      }
+    },
+    {
+      "id": 6,
+      "question": {
+        "mr": "१७४६ च्या पहिल्या कर्नाटक युद्धादरम्यान फ्रेंचांनी ब्रिटिशांच्या ताब्यातील मद्रास (फोर्ट सेंट जॉर्ज) जिंकून घेतले, तेव्हा मद्रास जिंकणाऱ्या फ्रेंच आरमाराचे नेतृत्व कोणी केले होते?",
+        "en": "During the First Carnatic War in 1746, who commanded the French naval expedition from Mauritius that captured Madras (Fort St. George) from the British?"
+      },
+      "options": [
+        { "mr": "ला बोर्डोने (La Bourdonnais)", "en": "La Bourdonnais" },
+        { "mr": "जोसेफ डुप्ले (Joseph Dupleix)", "en": "Joseph Dupleix" },
+        { "mr": "काउंट दी लाली (Count de Lally)", "en": "Count de Lally" },
+        { "mr": "बुसी (Bussy)", "en": "Bussy" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "मॉरिशसचा फ्रेंच गव्हर्नर ला बोर्डोने याने आरमारी फौजेसह सप्टेंबर १७४६ मध्ये मद्रासला वेढा घालून जिंकून घेतले. नंतर पैशांच्या बदल्यात मद्रास ब्रिटिशांना परत करण्यावरून ला बोर्डोने आणि पाँडिचेरीचा गव्हर्नर डुप्ले यांच्यात तीव्र मतभेद झाले होते.",
+        "en": "Admiral La Bourdonnais, the French governor of Mauritius (Isle de France), led the naval assault that forced the British surrender of Madras in September 1746, leading to a bitter feud with Dupleix over ransoming the town."
+      }
+    },
+    {
+      "id": 7,
+      "question": {
+        "mr": "१७५० च्या दशकात हैदराबादच्या दरबारात प्रचंड राजकीय प्रभाव निर्माण करणारा आणि निजामाकडून ब्रिटिशांविरुद्ध 'उत्तर सरकार' (Northern Circars) चा प्रदेश मिळवणारा फ्रेंच सेनापती कोण होता?",
+        "en": "Which French general exerted decisive diplomatic and military influence at the court of the Nizam of Hyderabad and secured the cession of the Northern Circars in the 1750s?"
+      },
+      "options": [
+        { "mr": "चार्ल्स डी बुसी (Charles de Bussy)", "en": "Charles de Bussy" },
+        { "mr": "काउंट दी लाली (Count de Lally)", "en": "Count de Lally" },
+        { "mr": "फ्रँकोइस मार्टिन (Francois Martin)", "en": "Francois Martin" },
+        { "mr": "डुप्ले (Dupleix)", "en": "Dupleix" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "फ्रेंच सेनापती बुसी याने हैदराबादचा निजाम सलाबत जंग याला गादीवर बसवून दरबारात फ्रेंच सैन्याची तुकडी ठेवली आणि या सैन्याच्या खर्चासाठी आंध्र किनारपट्टीवरील 'उत्तर सरकार' (मुस्तफानगर, एलोर, राजमहेंद्री, चिकाकोल) चा प्रदेश फ्रेंचांसाठी मिळवला.",
+        "en": "Marquis de Bussy-Castelnau stationed a French subsidiary force at Hyderabad with Salabat Jung and secured the cession of the fertile Northern Circars to finance French auxiliary forces."
+      }
+    },
+    {
+      "id": 8,
+      "question": {
+        "mr": "बंगालचा नवाब अलिवर्दी खान याने १७५१ मध्ये मराठ्यांशी (रघूजी भोसले) शांतता तह करून कोणत्या प्रदेशाचा महसूल चौथाई म्हणून मराठ्यांना देण्याचे मान्य केले होते?",
+        "en": "Under the peace settlement of 1751 negotiated with the Marathas (Raghuji Bhonsle), the Nawab of Bengal, Alivardi Khan, ceded the revenue/chauth of which province?"
+      },
+      "options": [
+        { "mr": "ओरिसा (कटकसह) आणि १२ लाख रुपये वार्षिक चौथाई", "en": "Orissa (including Cuttack) and 12 lakh rupees annual chauth" },
+        { "mr": "बिहार आणि २५ लाख रुपये चौथाई", "en": "Bihar and 25 lakh rupees chauth" },
+        { "mr": "आसाम आणि ५ लाख रुपये खंडणी", "en": "Assam and 5 lakh rupees tribute" },
+        { "mr": "चितगाव आणि १० लाख रुपये", "en": "Chittagong and 10 lakh rupees" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "मराठ्यांच्या सततच्या स्वाऱ्यांनी त्रस्त होऊन अलिवर्दी खानने मे १७५१ मध्ये रघूजी भोसल्यांशी तह केला. यानुसार ओरिसा (कटक) चा महसूल मराठ्यांना देण्यात आला आणि बंगाल-बिहारच्या संरक्षणासाठी दरवर्षी १२ लाख रुपये चौथाई देणे कबूल केले.",
+        "en": "Exhausted by Maratha raids, Alivardi Khan signed a treaty with Raghuji Bhonsle of Nagpur in 1751, surrendering the province of Orissa and agreeing to an annual chauth payment of ₹12 lakhs from Bengal and Bihar."
+      }
+    },
+    {
+      "id": 9,
+      "question": {
+        "mr": "१७५७ च्या प्लासीच्या लढाईपूर्वी रॉबर्ट क्लाईव्हने फितुरी घडवण्यासाठी ज्या गुप्त करारावर स्वाक्षरी केली होती, त्यात मध्यस्थी करणाऱ्या कोणत्या व्यापाऱ्याची क्लाईव्हने बनावट करारावर सही करून फसवणूक केली?",
+        "en": "Prior to the Battle of Plassey (1757), which wealthy merchant acted as intermediary in Clive's plot and was duped by Clive with a forged fictitious agreement on red paper?"
+      },
+      "options": [
+        { "mr": "अमिचंद (Omichund)", "en": "Omichund" },
+        { "mr": "जगत सेठ (Jagat Seth)", "en": "Jagat Seth" },
+        { "mr": "राय दुर्लभ (Rai Durlabh)", "en": "Rai Durlabh" },
+        { "mr": "माणिकचंद (Manikchand)", "en": "Manikchand" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "अमिचंदने नवाबच्या खजिन्यातून ३० लाख रुपये किंवा ५% वाटा देण्याची अट ठेवली, अन्यथा कट फोडण्याची धमकी दिली. रॉबर्ट क्लाईव्हने दोन करार तयार केले: एक खोटा (लाल कागदावर, ज्यावर ॲडमिरल वॉटसनची खोटी स्वाक्षरी केली) आणि एक खरा (पांढऱ्या कागदावर). प्लासीनंतर अमिचंदला काहीही न देता हाकलून दिले गेले.",
+        "en": "Omichund demanded 30 lakh rupees (or 5% of the Nawab's treasury) for keeping the conspiracy secret. Robert Clive drafted two treaties—a fictitious treaty on red paper with Admiral Watson's forged signature and a genuine one on white paper—disowning Omichund completely after victory."
+      }
+    },
+    {
+      "id": 10,
+      "question": {
+        "mr": "१७६० च्या दशकात ईस्ट इंडिया कंपनीच्या अधिकाऱ्यांनी अंतर्गत व्यापारात जकात चुकवण्यासाठी वापरलेल्या अधिकृत परवान्याला काय म्हटले जात असे?",
+        "en": "What was the official trade transit pass issued under Company authority that was heavily abused by private British merchants in 18th-century Bengal?"
+      },
+      "options": [
+        { "mr": "दस्तक (Dastak)", "en": "Dastak" },
+        { "mr": "सनद (Sanad)", "en": "Sanad" },
+        { "mr": "फर्मान (Farman)", "en": "Farman" },
+        { "mr": "हुंडी (Hundi)", "en": "Hundi" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "'दस्तक' हा फोर्ट विल्यमच्या गव्हर्नरच्या स्वाक्षरीने दिला जाणारा जकातमुक्तीचा अधिकृत परवाना होता. १७१७ च्या मुघल फर्मानानुसार हा फक्त कंपनीच्या आयात-निर्यात व्यापारासाठी वैध होता, परंतु कंपनीच्या अधिकाऱ्यांनी त्याचा स्वतःच्या खाजगी व्यापारासाठी गैरवापर केला, ज्यामुळे मीर कासीमशी युद्ध पेटले.",
+        "en": "The 'Dastak' was a transit permit issued by the Company's authorities exempting goods from internal customs tolls. Intended solely for corporate export-import trade, corrupt British servants utilized it for illicit private domestic commerce, sparking confrontation with Mir Qasim."
+      }
+    },
+    {
+      "id": 11,
+      "question": {
+        "mr": "१७६५ मध्ये बंगालमध्ये रॉबर्ट क्लाईव्हने सुरू केलेल्या 'दुहेरी राज्यव्यवस्थेच्या' (Dual Government) काळात प्रशासनातील 'निजामत' (Nizamat) या अधिकारात खालीलपैकी कोणत्या बाबींचा समावेश होता?",
+        "en": "Under the Dual System of Government instituted in Bengal by Robert Clive in 1765, which functions fell within the scope of 'Nizamat'?"
+      },
+      "options": [
+        { "mr": "पोलीस प्रशासन, शांतता व सुव्यवस्था आणि फौजदारी न्याय", "en": "Police administration, law and order maintenance, and criminal justice" },
+        { "mr": "केवळ जमीन महसूल गोळा करणे आणि दिवाणी न्याय", "en": "Solely land revenue assessment, realization, and civil justice" },
+        { "mr": "परकीय देशांशी तह करणे आणि चलन पाडणे", "en": "Foreign treaty negotiations and minting imperial currency" },
+        { "mr": "समुद्रमार्गे आयात-निर्यात व्यापाराचे नियमन", "en": "Regulation of maritime overseas commerce" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "दुहेरी शासन व्यवस्थेत महसूल गोळा करण्याचे व दिवाणी न्यायाचे अधिकार (दिवाणी) कंपनीकडे थेट आले; तर शांतता, सुव्यवस्था, पोलीस आणि फौजदारी न्यायव्यवस्था (निजामत) नामधारी नवाबकडे सोपवली गेली, ज्यामुळे 'जबाबदारी नवाबाकडे आणि अधिकार कंपनीकडे' अशी स्थिती निर्माण झाली.",
+        "en": "Under Clive's Dual System, sovereign powers were bifurcated: 'Diwani' (fiscal administration and civil law) belonged to the Company, while 'Nizamat' (police, defense, criminal justice, and public peace) was retained by the titular Nawab without financial resources."
+      }
+    },
+    {
+      "id": 12,
+      "question": {
+        "mr": "१७७२ मध्ये वॉरन हेस्टिंग्सने जिल्हा पातळीवर स्थापन केलेल्या दोन मूलभूत न्यायालयांची नावे काय होती?",
+        "en": "What were the names of the two foundational district-level courts established in each district by Warren Hastings under his Judicial Plan of 1772?"
+      },
+      "options": [
+        { "mr": "मफ्युसिल दिवाणी अदालत आणि मफ्युसिल फौजदारी अदालत", "en": "Mofussil Diwani Adalat and Mofussil Faujdari Adalat" },
+        { "mr": "सदर दिवाणी अदालत आणि सदर निजामत अदालत", "en": "Sadar Diwani Adalat and Sadar Nizamat Adalat" },
+        { "mr": "प्रांतीय अपील न्यायालय आणि सत्र न्यायालय", "en": "Provincial Court of Appeal and Sessions Court" },
+        { "mr": "पंचायती न्यायालय आणि काझी न्यायालय", "en": "Panchayat Court and Qazi Court" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१७७२ च्या आराखड्यानुसार प्रत्येक जिल्ह्यात दोन न्यायालये स्थापन झाली: १. मफ्युसिल दिवाणी अदालत (जिल्हाधिकाऱ्यांच्या अध्यक्षतेखाली मालमत्ता व कर्जाचे खटले चालवण्यासाठी) आणि २. मफ्युसिल फौजदारी अदालत (काझी व मुफ्तींच्या नियंत्रणाखाली फौजदारी गुन्हे चालवण्यासाठी).",
+        "en": "Warren Hastings' 1772 Judicial Plan organized two district courts in each revenue district: the Mofussil Diwani Adalat (Civil Court, presided over by the Collector) and the Mofussil Faujdari Adalat (Criminal Court, presided over by Indian Qazis and Muftis)."
+      }
+    },
+    {
+      "id": 13,
+      "question": {
+        "mr": "१७७४ मध्ये कलकत्ता येथे स्थापन झालेल्या सुप्रीम कोर्टाच्या अधिकारक्षेत्रावरून गव्हर्नर-जनरल वॉरन हेस्टिंग्स आणि सुप्रीम कोर्टात तीव्र वाद निर्माण झालेला प्रसिद्ध खटला खालीलपैकी कोणता होता?",
+        "en": "Which famous legal case highlighted the severe jurisdictional conflict between the Supreme Court at Calcutta and Governor-General Warren Hastings' Council in 1779?"
+      },
+      "options": [
+        { "mr": "कासिजोरा खटला (Cossijurah Case)", "en": "Cossijurah Case" },
+        { "mr": "नंदकुमार खटला", "en": "Nandkumar Case" },
+        { "mr": "चैतसिंग खटला", "en": "Chait Singh Case" },
+        { "mr": "मीर जाफर खटला", "en": "Mir Jafar Case" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "कासिजोरा खटल्यात (१७७९-८०) सुप्रीम कोर्टाने कासिजोराच्या जमीनदाराला अटक करण्यासाठी शेरीफ व शस्त्रसज्ज पथक पाठवले. वॉरन हेस्टिंग्सने सैन्याची तुकडी पाठवून कोर्टाच्या पथकालाच ताब्यात घेतले. या पेचप्रसंगामुळेच पुढे ब्रिटिश संसदेला १७८१ चा ॲक्ट ऑफ सेटलमेंट संमत करावा लागला.",
+        "en": "In the Cossijurah Case (1779–1780), the Supreme Court dispatched armed bailiffs against a defaulting zamindar. Hastings sent military detachments to intercept the court officials, precipitating the constitutional impasse settled by the Declaratory Act of 1781."
+      }
+    },
+    {
+      "id": 14,
+      "question": {
+        "mr": "१७८० मध्ये जेम्स ऑगस्टस हिकी (James Augustus Hicky) यांनी कलकत्ता येथून सुरू केलेल्या भारताच्या पहिल्या मुद्रित इंग्रजी वृत्तपत्राचे नाव काय होते?",
+        "en": "What was the name of India's first printed English weekly newspaper founded by James Augustus Hicky at Calcutta in 1780?"
+      },
+      "options": [
+        { "mr": "द बेंगॉल गॅझेट (The Bengal Gazette / Calcutta General Advertiser)", "en": "The Bengal Gazette (Calcutta General Advertiser)" },
+        { "mr": "द कॅलकटा क्रॉनिकल", "en": "The Calcutta Chronicle" },
+        { "mr": "द इंडियन मिरर", "en": "The Indian Mirror" },
+        { "mr": "बॉम्बे हेराल्ड", "en": "Bombay Herald" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "२९ जानेवारी १७८० रोजी जेम्स ऑगस्टस हिकी याने 'द बेंगॉल गॅझेट' (किंवा 'हिकीज गॅझेट') हे भारतातील पहिले वृत्तपत्र सुरू केले. गव्हर्नर-जनरल वॉरन हेस्टिंग्स आणि मुख्य न्यायाधीश एलिझा इम्पे यांच्यावर तीव्र राजकीय टीका केल्यामुळे १७८२ मध्ये हिकीचे छपाई यंत्र जप्त करण्यात आले.",
+        "en": "On 29 January 1780, James Augustus Hicky launched 'The Bengal Gazette' (Calcutta General Advertiser). Celebrated for its independent and stinging satire targeting Warren Hastings and Elijah Impey, its printing press was seized by authorities in 1782."
+      }
+    },
+    {
+      "id": 15,
+      "question": {
+        "mr": "१७८१ मध्ये अवधच्या नवाबाशी संगनमत करून वॉरन हेस्टिंग्सने अवधच्या दिवंगत नवाबाच्या पत्नी आणि आई यांच्याकडील संपत्ती जबरदस्तीने जप्त केली होती. हा ऐतिहासिक वाद कोणत्या नावाने ओळखला जातो?",
+        "en": "In 1781, Warren Hastings pressured Nawab Asaf-ud-Daula to forcibly seize treasure and estates from the widow and mother of late Shuja-ud-Daula. This scandal is historically designated as:"
+      },
+      "options": [
+        { "mr": "अवधच्या बेगमांचे प्रकरण (Case of the Begums of Oudh)", "en": "Case of the Begums of Oudh" },
+        { "mr": "फैजाबादचा खजिना लुट", "en": "Loot of Faizabad Treasury" },
+        { "mr": "लखनौचा तह वाद", "en": "Treaty of Lucknow Dispute" },
+        { "mr": "रोहिल्ला खंडणी प्रकरण", "en": "Rohilla Tribute Dispute" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "वॉरन हेस्टिंग्सने कंपनीचे देणे भागवण्यासाठी अवधचा नवाब असफ-उद्-दौला याच्यावर दबाव आणून फैजाबाद येथील राजमाता (बहू बेगम) आणि आजी (नवाब बेगम) यांच्या महालात ब्रिटिश सैन्य घुसवले व त्यांचे लाखो रुपयांचे दागिने व खजिना जप्त केला. या अमानुष कृत्यामुळे एडमंड बर्कने हेस्टिंग्सवर महाभियोगात घणाघाती आरोप केले.",
+        "en": "The extortion visited upon the Begums of Oudh in 1781 involved Company troops surrounding the royal palaces at Faizabad and coercing the eunuch stewards to surrender ancestral treasures to clear the Nawab's Company debt, becoming a primary article in Hastings' impeachment."
+      }
+    },
+    {
+      "id": 16,
+      "question": {
+        "mr": "१७९० मध्ये सुरू झालेल्या तिसऱ्या इंग्रज-म्हैसूर युद्धाच्या वेळी ब्रिटिश ईस्ट इंडिया कंपनीने टिपू सुलतानविरुद्ध खालीलपैकी कोणत्या दोन स्थानिक सत्तांशी त्रिपुट (Triple Alliance) करार केला होता?",
+        "en": "At the start of the Third Anglo-Mysore War in 1790, Lord Cornwallis negotiated a Triple Alliance against Tipu Sultan with which two native Indian powers?"
+      },
+      "options": [
+        { "mr": "मराठा साम्राज्य (पेशवे) आणि हैदराबादचा निजाम", "en": "The Maratha Empire (Peshwa) and the Nizam of Hyderabad" },
+        { "mr": "त्रावणकोरचे राजे आणि अवधचे नवाब", "en": "Raja of Travancore and the Nawab of Awadh" },
+        { "mr": "कर्नाटकचा नवाब आणि तंजावरचे राजे", "en": "Nawab of Carnatic and Raja of Tanjore" },
+        { "mr": "शीख साम्राज्य आणि ग्वाल्हेरचे शिंदे", "en": "Sikh Empire and Scindia of Gwalior" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "लॉर्ड कॉर्नवॉलिसने टिपूचा पाडाव करण्यासाठी जून १७९० मध्ये मराठे आणि जुलै १७९० मध्ये हैदराबादचा निजाम यांच्याशी त्रिपुट करार केला. या करारात टिपूच्या पराभवानंतर त्याच्या राज्याचा जिंकलेला प्रदेश तिघांमध्ये समान वाटून घेण्याचे ठरले होते.",
+        "en": "In 1790, Lord Cornwallis formed the offensive Triple Alliance uniting the East India Company, the Maratha Peshwa administration, and the Nizam of Hyderabad against Tipu Sultan, agreeing to partition Mysore's conquered territories."
+      }
+    },
+    {
+      "id": 17,
+      "question": {
+        "mr": "लॉर्ड कॉर्नवॉलिसने 'कॉर्नवॉलिस कोड' (१७९३) अंतर्गत पोलीस व्यवस्थेची पुनर्रचना करताना जिल्हा स्तरावर कोणाचे पोलीस अधिकार संपुष्टात आणले?",
+        "en": "Under the Cornwallis Code of 1793, whose traditional policing and criminal security responsibilities were stripped away during the restructuring of law enforcement?"
+      },
+      "options": [
+        { "mr": "पारंपरिक जमीनदार (Zamindars)", "en": "Traditional Zamindars" },
+        { "mr": "मुन्सिफ आणि अमीन", "en": "Munsifs and Amins" },
+        { "mr": "ब्रिटिश लष्करी कॅप्टन", "en": "British Military Captains" },
+        { "mr": "प्रांतीय सुभेदार", "en": "Provincial Subahdars" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "मुघल काळापासून ग्रामीण भागात कायदा व सुव्यवस्था राखण्याचे आणि गुन्हेगारांना पकडण्याचे अधिकार जमीनदारांकडे होते. कॉर्नवॉलिसने जमीनदारांचे हे पोलीस अधिकार पूर्णपणे रद्द करून जिल्ह्याची विभागणी ठाण्यांमध्ये केली आणि प्रत्येकावर स्वतंत्र सरकारी 'दारोगा' नियुक्त केला.",
+        "en": "Lord Cornwallis formally relieved the rural zamindars of their ancient police obligations and disbanded their private retainers, replacing them with state-administered thanas placed under civil police officers known as Darogas."
+      }
+    },
+    {
+      "id": 18,
+      "question": {
+        "mr": "१७९८ मध्ये लॉर्ड वेलस्लीने हैदराबादच्या निजामाशी तैनाती फौजेचा करार केल्यानंतर, निजामाने आपल्या लष्करातून कोणत्या युरोपियन अधिकाऱ्यांच्या हाताखालील सैनिकी तुकड्या बरखास्त करण्याचे मान्य केले?",
+        "en": "Following the Subsidiary Alliance concluded with Lord Wellesley in 1798, the Nizam of Hyderabad disbanded his French-trained auxiliary brigades commanded by which officer?"
+      },
+      "options": [
+        { "mr": "रेमंड (Monsieur Raymond)", "en": "Monsieur Raymond" },
+        { "mr": "बुसी (Bussy)", "en": "Bussy" },
+        { "mr": "दुद्रेनेक (Dudrenec)", "en": "Dudrenec" },
+        { "mr": "पायरोन (Perron)", "en": "Perron" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "हैदराबादच्या सैन्यात फ्रेंच सेनापती मिचेल जोआकिम मेरी रेमंड (Michel Joachim Marie Raymond) याच्या हाताखाली १४,००० सैनिकांची तोफखाना सज्ज फ्रेंच तुकडी होती. १७९८ च्या तैनाती करारानुसार निजामाने या संपूर्ण फ्रेंच सैन्याला पूर्णपणे विसर्जित करून ब्रिटीश रेसिडेंटचे नियंत्रण मान्य केले.",
+        "en": "Under the 1798 treaty negotiated by Wellesley, the Nizam dismissed his 14,000-strong French-officered army originally trained by Monsieur Raymond, disbanding all French personnel in favor of British troops."
+      }
+    },
+    {
+      "id": 19,
+      "question": {
+        "mr": "१८०२ मध्ये दुसऱ्या इंग्रज-मराठा युद्धापूर्वी पुण्यात पेशवे बाजीराव दुसरे आणि दौलतराव शिंदे यांच्या संयुक्त सैन्याचा 'हडपसरच्या लढाईत' पराभव करणारे मराठा सेनापती कोण होते?",
+        "en": "Prior to the Second Anglo-Maratha War, which Maratha leader routed the combined armies of Peshwa Baji Rao II and Daulat Rao Scindia at the Battle of Hadapsar in October 1802?"
+      },
+      "options": [
+        { "mr": "यशवंतराव होळकर", "en": "Yashwantrao Holkar" },
+        { "mr": "तुकोजीराव होळकर", "en": "Tukoji Rao Holkar" },
+        { "mr": "रघूजी भोसले", "en": "Raghuji Bhonsle" },
+        { "mr": "दमाजी गायकवाड", "en": "Damaji Gaekwad" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "दिवाळीच्या दिवशी २५ ऑक्टोबर १८०२ रोजी पुण्याजवळ हडपसर येथे यशवंतराव होळकर यांनी पेशवे आणि शिंद्यांच्या संयुक्त फौजेचा धुव्वा उडवला. या पराभवामुळे भेदरलेल्या बाजीराव दुसऱ्याने पुण्यातून पळ काढून इंग्रजांच्या आश्रयाने वसईला धाव घेतली आणि वसईचा तह केला.",
+        "en": "On 25 October 1802 at the Battle of Hadapsar outside Pune, Yashwantrao Holkar crushed the joint armies of Peshwa Baji Rao II and Daulat Rao Scindia, compelling the panicked Peshwa to flee to Bassein and sign the subsidiary pact."
+      }
+    },
+    {
+      "id": 20,
+      "question": {
+        "mr": "१८१७ मध्ये 'खडकीच्या लढाईत' (Battle of Khadki) पेशवे दुसऱ्या बाजीरावाच्या सैन्याचे नेतृत्व कोणत्या निष्ठावंत सरदाराने केले होते?",
+        "en": "Who served as the Commander-in-Chief of Peshwa Baji Rao II's army at the Battle of Khadki in November 1817?"
+      },
+      "options": [
+        { "mr": "बापू गोखले", "en": "Bapu Gokhale" },
+        { "mr": "त्र्यंबकजी डेंगळे", "en": "Trimbakji Dengle" },
+        { "mr": "विंचूरकर", "en": "Vinchurkar" },
+        { "mr": "अप्पासाहेब पटवर्धन", "en": "Appasaheb Patwardhan" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "५ नोव्हेंबर १८१७ रोजी खडकी (पुणे) येथे झालेल्या लढाईत पेशव्यांच्या सैन्याचे नेतृत्व सेनापती बापू गोखले यांनी केले. कर्नल बर्रच्या नेतृत्वाखालील ब्रिटिश सैन्याने पेशव्यांच्या सैन्याचा पराभव केला. पुढे फेब्रुवारी १८१८ मध्ये आष्टीच्या लढाईत बापू गोखले धारातीर्थी पडले.",
+        "en": "General Bapu Gokhale commanded the Peshwa's forces against Colonel Burr at the Battle of Khadki on 5 November 1817. Gokhale later fell in action during the Battle of Ashti in February 1818."
+      }
+    },
+    {
+      "id": 21,
+      "question": {
+        "mr": "१८१८ मध्ये पेशवाई नष्ट झाल्यानंतर मुंबईचे पहिले गव्हर्नर बनलेल्या माउंटस्टुअर्ट एल्फिन्स्टन याने स्थानिक शाळांमध्ये शिक्षण देण्यासाठी स्थापन केलेल्या प्रसिद्ध संस्थेचे नाव काय होते?",
+        "en": "What was the name of the pioneering educational society founded in 1822 under the patronage of Mountstuart Elphinstone to promote vernacular education in Western India?"
+      },
+      "options": [
+        { "mr": "बॉम्बे नेटिव्ह स्कूल बुक अँड स्कूल सोसायटी (Bombay Native School Book and School Society)", "en": "Bombay Native School Book and School Society" },
+        { "mr": "दख्खन शिक्षण मंडळ (Deccan Education Society)", "en": "Deccan Education Society" },
+        { "mr": "पुणे ज्ञानप्रसारक सभा", "en": "Poona Dnyan Prasarak Sabha" },
+        { "mr": "बॉम्बे एज्युकेशन ट्रस्ट", "en": "Bombay Education Trust" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "माउंटस्टुअर्ट एल्फिन्स्टनच्या पुढाकाराने १८२२ मध्ये 'बॉम्बे नेटिव्ह स्कूल बुक अँड स्कूल सोसायटी' स्थापन झाली (पुढे १८४० मध्ये तिचे नाव 'बोर्ड ऑफ एज्युकेशन' झाले). या संस्थेने मराठी व गुजराती भाषेत पाठ्यपुस्तके तयार केली आणि प्राथमिक शाळांचे जाळे विणले.",
+        "en": "Under Mountstuart Elphinstone, the 'Bombay Native School Book and School Society' was formed in 1822 to print textbooks in Marathi and Gujarati and establish secular native schools throughout the Bombay Presidency."
+      }
+    },
+    {
+      "id": 22,
+      "question": {
+        "mr": "१८३३ च्या सनदी कायद्यानुसार (Charter Act of 1833) ईस्ट इंडिया कंपनीच्या कारभारात समाविष्ट करण्यात आलेले कलम ८७ (Section 87) खालीलपैकी कशाशी संबंधित होते?",
+        "en": "Section 87 of the Charter Act of 1833 laid down which landmark principle regarding public employment in British India?"
+      },
+      "options": [
+        { "mr": "केवळ धर्म, वंश, जात किंवा जन्मस्थान या कारणांवरून कोणत्याही भारतीय प्रजेला कंपनीच्या नोकरीसाठी अपात्र ठरवले जाणार नाही.", "en": "No native of India shall be disabled from holding any place, office, or employment by reason only of his religion, place of birth, descent, or color." },
+        { "mr": "सरकारी नोकऱ्यांमध्ये केवळ ब्रिटनमध्ये पदवी घेतलेल्या व्यक्तींनाच थेट नियुक्ती मिळेल.", "en": "Mandating university degrees earned solely in Britain for official administrative postings." },
+        { "mr": "सर्व न्यायिक पदे केवळ ब्रिटिश उच्चवर्गीयांसाठी राखीव राहतील.", "en": "Reserving all judicial appointments exclusively for British covenanted servants." },
+        { "mr": "नागरी सेवा अधिकाऱ्यांना मोफत जमीन अनुदान देणे बंधनकारक केले.", "en": "Mandating free land allocations to civil servants." }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१८३३ च्या सनदी कायद्यातील कलम ८७ ने ऐतिहासिक घोषणा केली की कोणत्याही भारतीयाला त्याच्या धर्मावरून, वंशावरून, जातीवरून किंवा जन्मावरून सरकारी नोकरीपासून वंचित ठेवले जाणार नाही. जरी याची तात्काळ अंमलबजावणी झाली नाही, तरी भारतीयांसाठी समान हक्कांचा तो पहिला कायदेशीर आधार होता.",
+        "en": "Section 87 of the Charter Act of 1833 famously established that no Indian subject would be debarred from holding public office under the Company on grounds solely of religion, descent, caste, or color, creating the first statutory anti-discrimination principle."
+      }
+    },
+    {
+      "id": 23,
+      "question": {
+        "mr": "१८३९ मध्ये पहिले इंग्रज-अफगाण युद्ध सुरू करणाऱ्या गव्हर्नर-जनरल लॉर्ड ऑकलंडच्या आक्रमक धोरणाला इतिहासकार काय म्हणतात?",
+        "en": "What is the strategic foreign policy doctrine associated with Governor-General Lord Auckland that precipitated the First Anglo-Afghan War in 1839?"
+      },
+      "options": [
+        { "mr": "अग्रगामी धोरण (Forward Policy)", "en": "Forward Policy" },
+        { "mr": "कुशल निष्क्रियतेचे धोरण (Policy of Masterly Inactivity)", "en": "Policy of Masterly Inactivity" },
+        { "mr": "मध्यस्थ राज्य धोरण (Policy of Ring Fence)", "en": "Policy of Ring Fence" },
+        { "mr": "अलिप्तता धोरण (Policy of Subordinate Isolation)", "en": "Policy of Subordinate Isolation" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "रशियन साम्राज्याच्या आक्रमक विस्ताराची भीती बाळगून लॉर्ड ऑकलंडने भारताच्या नैसर्गिक सीमांच्या पलीकडे जाऊन अफगाणिस्तानात कठपुतळी शासन बसवण्याचा प्रयत्न केला, याला 'फॉरवर्ड पॉलिसी' (Forward Policy) म्हणतात. हे युद्ध ब्रिटिशांसाठी अत्यंत विनाशकारी ठरले.",
+        "en": "Lord Auckland executed the 'Forward Policy'—advancing beyond British frontiers into Afghanistan to preempt anticipated Russian tsarist influence, culminating in the complete destruction of the British expeditionary force at Kabul."
+      }
+    },
+    {
+      "id": 24,
+      "question": {
+        "mr": "१८४६ मध्ये पहिल्या इंग्रज-शीख युद्धानंतर स्वाक्षरी करण्यात आलेल्या 'भैरोवालच्या तहाची' (Treaty of Bhairowal) प्रमुख तरतूद काय होती?",
+        "en": "What was the paramount provision of the Treaty of Bhairowal concluded in December 1846 following the First Anglo-Sikh War?"
+      },
+      "options": [
+        { "mr": "महाराणी जिंदा कौर यांना पदच्युत करून लाहोर येथे ब्रिटिश रेसिडेंटच्या अध्यक्षतेखाली ८ शीख सरदारांची रीजन्सी कौन्सिल स्थापन करण्यात आली.", "en": "Rani Jindan was removed from the regency and a Council of Regency comprising eight Sikh chiefs was created under the British Resident." },
+        { "mr": "दिलीपसिंग यांना तात्काळ पदच्युत करून लंडनला रवाना करण्यात आले.", "en": "Maharaja Duleep Singh was instantly deposed and sent to London." },
+        { "mr": "पंजाबचे संपूर्ण साम्राज्य ताबडतोब ब्रिटिश मुकुटात विलीन केले गेले.", "en": "The entire kingdom of Punjab was immediately annexed into the British Crown." },
+        { "mr": "जम्मू-काश्मीर पुन्हा शीख साम्राज्याचा भाग म्हणून घोषित करण्यात आला.", "en": "Jammu and Kashmir was restored back to the Sikh Empire." }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "२२ डिसेंबर १८४६ रोजी भैरोवालचा तह झाला. यात अल्पवयीन दिलीपसिंग यांच्या वतीने कारभार पाहणाऱ्या महाराणी जिंदा कौर यांना वार्षिक दीड लाख रुपयांची पेन्शन देऊन बाजूला केले गेले आणि सर हेन्री लॉरेन्स (ब्रिटिश रेसिडेंट) यांच्या अध्यक्षतेखाली ८ शीख सरदारांचे कौन्सिल स्थापन करून पंजाबचा संपूर्ण लष्करी व नागरी ताबा ब्रिटिशांनी घेतला.",
+        "en": "Under the Treaty of Bhairowal (Dec 1846), Maharani Jindan was stripped of regency powers and pensioned off, with supreme executive authority vested in British Resident Henry Lawrence presiding over a Council of Regency during Duleep Singh's minority."
+      }
+    },
+    {
+      "id": 25,
+      "question": {
+        "mr": "लॉर्ड डलहौसीने १८५४ मध्ये स्थापन केलेल्या सार्वजनिक बांधकाम खात्याच्या (PWD) अखत्यारीत कोणत्या ऐतिहासिक रस्त्याचे पुनरुज्जीवन आणि आधुनिक पक्कीकरण पूर्ण केले?",
+        "en": "Under the Public Works Department organized by Lord Dalhousie in the 1850s, which historic arterial highway connecting Calcutta to the North-West was modernized and metalled?"
+      },
+      "options": [
+        { "mr": "ग्रँड ट्रंक रोड (Grand Trunk Road - जी. टी. रोड)", "en": "Grand Trunk Road (GT Road)" },
+        { "mr": "दख्खन ट्रंक रोड", "en": "Deccan Trunk Road" },
+        { "mr": "मुंबई-पुणे घाट महामार्ग", "en": "Bombay-Poona Ghat Highway" },
+        { "mr": "मद्रास-बंगळुरू महामार्ग", "en": "Madras-Bangalore Highway" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "शेरशाह सूरीने उभारलेल्या ऐतिहासिक 'सडक-ए-आझम' चे लॉर्ड ऑकलंडच्या काळात पुनरुज्जीवन सुरू झाले आणि डलहौसीच्या सार्वजनिक बांधकाम खात्याने (PWD) कलकत्ता ते पेशावर या संपूर्ण 'ग्रँड ट्रंक रोड'चे आधुनिक डांबरीकरण व पुलांचे बांधकाम पूर्ण केले.",
+        "en": "Lord Dalhousie's newly organized Public Works Department (PWD) completed the systematic metalling, bridging, and upgrading of the historic Grand Trunk Road extending from Calcutta all the way to Peshawar on the North-West frontier."
+      }
+    }
+  ]
+}

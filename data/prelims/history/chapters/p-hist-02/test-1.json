@@ -1,0 +1,464 @@
+{
+  "testId": "p-hist-02-t1",
+  "title": {
+    "mr": "भारतातील ब्रिटिश सत्तेचा विस्तार व प्रशासन — सराव 1",
+    "en": "British Rule in India — Practice Test 1"
+  },
+  "durationMinutes": 20,
+  "marksPerQuestion": 1,
+  "negativeMarking": 0.25,
+  "totalMarks": 25,
+  "difficulty": "मध्यम ते काठिण्य",
+  "questions": [
+    {
+      "id": 1,
+      "question": {
+        "mr": "वॉरन हेस्टिंग्सच्या 'रिंग फेन्स' (घेऱ्याचे धोरण / Policy of Ring Fence) धोरणाबाबत खालील विधाने विचारात घ्या:\nअ. या धोरणाचा मुख्य उद्देश कंपनीच्या सीमारेषेचे रक्षण करण्यासाठी शेजारील राज्यांचे बफर स्टेट (मध्यस्थ राज्य) म्हणून रक्षण करणे हा होता.\nब. या धोरणांतर्गत अवधच्या राज्याला मराठे आणि अफगाणांच्या संभाव्य आक्रमणाविरुद्ध बफर स्टेट म्हणून वापरण्यात आले.\nवरीलपैकी कोणते/ती विधान/ने बरोबर आहेत?",
+        "en": "Consider the following statements regarding Warren Hastings' 'Policy of Ring Fence':\na. The primary objective of this policy was to defend the Company's frontiers by safeguarding neighboring states as buffer states.\nb. Under this policy, the state of Awadh was utilized as a buffer state against potential invasions by the Marathas and Afghans.\nWhich of the statements given above is/are correct?"
+      },
+      "options": [
+        { "mr": "फक्त अ", "en": "Only a" },
+        { "mr": "फक्त ब", "en": "Only b" },
+        { "mr": "अ आणि ब दोन्ही", "en": "Both a and b" },
+        { "mr": "दोन्ही नाही", "en": "Neither a nor b" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "दोन्ही विधाने योग्य आहेत. वॉरन हेस्टिंग्सने कंपनीच्या ताब्यातील बंगाल प्रांताचे रक्षण करण्यासाठी शेजारील राज्यांचे संरक्षण करण्याचे 'रिंग फेन्स' धोरण अवलंबले. यात अवधच्या संरक्षणाची जबाबदारी कंपनीने घेतली, जेणेकरून मराठ्यांचे किंवा अफगाणांचे आक्रमण थेट बंगालपर्यंत पोहोचू नये.",
+        "en": "Both statements are correct. Warren Hastings initiated the 'Ring Fence' policy to safeguard the Company's frontiers by defending neighboring territories at their own expense. Awadh was explicitly maintained as a buffer state to protect Bengal from Maratha and Afghan incursions."
+      }
+    },
+    {
+      "id": 2,
+      "question": {
+        "mr": "१७९३ च्या 'कॉर्नवॉलिस कोड' (Cornwallis Code) मधील प्रशासकीय तत्त्वाबाबत खालीलपैकी कोणते विधान अचूक आहे?",
+        "en": "Which of the following statements is accurate regarding the administrative principle embodied in the 'Cornwallis Code' of 1793?"
+      },
+      "options": [
+        { "mr": "या संहितेने महसूल प्रशासन आणि न्यायिक कार्ये यांचे स्पष्ट पृथक्करण (Separation of Powers) केले.", "en": "The code established a clear separation of revenue administration from judicial functions." },
+        { "mr": "जिल्हाधिकाऱ्याकडे (Collector) दिवाणी आणि फौजदारी दोन्ही न्यायालयांचे सर्वोच्च अधिकार सोपवण्यात आले.", "en": "The District Collector was invested with supreme authority over both civil and criminal courts." },
+        { "mr": "भारतीय न्यायाधीशांना युरोपियन अधिकाऱ्यांवरील खटले चालवण्याचे अमर्याद अधिकार देण्यात आले.", "en": "Indian judges were conferred unrestricted powers to try European officials." },
+        { "mr": "महसूल वसुलीसाठी पूर्वीची जमीनदारी पद्धत पूर्णपणे रद्द करून रयतवारी सुरू करण्यात आली.", "en": "The zamindari system was entirely abolished in favor of the ryotwari system for revenue collection." }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१७९३ च्या कॉर्नवॉलिस कोडने मॉन्टेस्क्यूच्या 'सत्ता पृथक्करण' तत्त्वावर आधारित सुधारणा घडवून आणली. जिल्हाधिकाऱ्याचे दिवाणी न्यायिक अधिकार काढून घेऊन ते स्वतंत्र जिल्हा न्यायाधीशाकडे (District Judge) सोपवले गेले आणि कलेक्टरांना केवळ महसूल गोळा करण्यापुरते मर्यादित ठेवण्यात आले.",
+        "en": "The Cornwallis Code of 1793 was anchored on the principle of separation of powers. It divested the District Collector of judicial and magisterial duties, transferring them to newly appointed District Judges, and restricted the Collector strictly to revenue management."
+      }
+    },
+    {
+      "id": 3,
+      "question": {
+        "mr": "ब्रिटिश भारतातील नागरी सेवेच्या (Civil Services) विकासाबाबत खालील घटनांचा योग्य कालानुक्रम लावा:\n१. फोर्ट विल्यम कॉलेजची स्थापना (कलकत्ता)\n२. ईस्ट इंडिया कॉलेजची स्थापना (हेलिबरी, इंग्लंड)\n३. खुल्या स्पर्धा परीक्षेची तरतूद (सनदी कायदा)\n४. सत्येंद्रनाथ टागोर यांची ICS मध्ये निवड\nयोग्य पर्याय निवडा:",
+        "en": "Arrange the following events in chronological order regarding the development of the Civil Services in British India:\n1. Establishment of Fort William College (Calcutta)\n2. Establishment of East India College (Haileybury, England)\n3. Provision of Open Competitive Examination (Charter Act)\n4. Selection of Satyendranath Tagore into the ICS\nChoose the correct option:"
+      },
+      "options": [
+        { "mr": "१ ➔ २ ➔ ३ ➔ ४", "en": "1 ➔ 2 ➔ 3 ➔ 4" },
+        { "mr": "२ ➔ १ ➔ ३ ➔ ४", "en": "2 ➔ 1 ➔ 3 ➔ 4" },
+        { "mr": "१ ➔ ३ ➔ २ ➔ ४", "en": "1 ➔ 3 ➔ 2 ➔ 4" },
+        { "mr": "३ ➔ १ ➔ २ ➔ ४", "en": "3 ➔ 1 ➔ 2 ➔ 4" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "योग्य कालानुक्रम:\n१. फोर्ट विल्यम कॉलेज: १८०० (लॉर्ड वेलस्ली)\n२. हेलिबरी येथील ईस्ट इंडिया कॉलेज: १८०६\n३. खुली स्पर्धा परीक्षा: १८५३ चा सनदी कायदा (मेकॉल समिती १८५४)\n४. सत्येंद्रनाथ टागोर यांची निवड: १८६३ (पहिले भारतीय ICS).\nत्यामुळे योग्य क्रम १ ➔ २ ➔ ३ ➔ ४ असा आहे.",
+        "en": "The correct chronological order is:\n1. Fort William College: 1800 (Lord Wellesley)\n2. East India College at Haileybury: 1806\n3. Open competitive exams introduced: Charter Act of 1853 (Macaulay Committee 1854)\n4. Satyendranath Tagore qualified: 1863 (first Indian ICS officer).\nHence, the sequence is 1 ➔ 2 ➔ 3 ➔ 4."
+      }
+    },
+    {
+      "id": 4,
+      "question": {
+        "mr": "१८५७ च्या उठावानंतर ब्रिटिश सैन्याची पुनर्रचना करण्यासाठी नेमण्यात आलेल्या 'पील कमिशन'ने (Peel Commission 1859) खालीलपैकी कोणती प्रमुख शिफारस केली होती?",
+        "en": "Which of the following was a primary recommendation of the 'Peel Commission' (1859) appointed to reorganize the British Indian Army after the Revolt of 1857?"
+      },
+      "options": [
+        { "mr": "तोफखाना आणि आधुनिक शस्त्रागारे केवळ युरोपियन सैनिकांच्या हाती ठेवणे आणि सैन्यात जातीय व प्रादेशिक संतुलन साधणे.", "en": "Retaining artillery and sophisticated armaments strictly in European hands and maintaining communal and regional counterpoise in regiments." },
+        { "mr": "भारतीय सैनिकांचे प्रमाण युरोपियन सैनिकांपेक्षा तिप्पट वाढवणे.", "en": "Increasing the proportion of Indian soldiers to three times that of European troops." },
+        { "mr": "अवध आणि बिहारमधील उच्चवर्णीय सैनिकांची भरती मोठ्या प्रमाणावर वाढवणे.", "en": "Substantially increasing the recruitment of upper-caste soldiers from Awadh and Bihar." },
+        { "mr": "भारतीय अधिकाऱ्यांना ब्रिटिश सैन्यात कर्नल व ब्रिगेडियर पदांवर थेट बढती देणे.", "en": "Granting Indian officers direct promotion to the ranks of Colonel and Brigadier." }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१८५९ च्या मेजर जनरल जोनाथन पील आयोगाने 'फुट पाडा आणि राज्य करा' या तत्त्वावर सैन्याची पुनर्रचना सुचवली. तोफखाना पूर्णपणे युरोपियन सैनिकांच्या नियंत्रणात ठेवण्यात आला. बंगाल सैन्यात युरोपियन आणि भारतीय सैनिकांचे प्रमाण १:२, तर मद्रास व मुंबई सैन्यात १:३ करण्यात आले. तसेच अवध-बिहार ऐवजी पंजाब, गुरखा व शीख अशा 'लढाऊ जमाती' (Martial Races) मधून भरती वाढवण्यात आली.",
+        "en": "The Peel Commission (1859) recommended keeping all field artillery exclusively in European hands, reducing Indian proportions (1:2 in Bengal, 1:3 in Madras/Bombay), and structuring regiments on the basis of communal and regional divisions ('counterpoise of natives against natives') favoring 'martial races'."
+      }
+    },
+    {
+      "id": 5,
+      "question": {
+        "mr": "१८६० च्या पोलीस आयोगाच्या शिफारशींवरून संमत झालेल्या 'भारतीय पोलीस कायदा १८६१' (Police Act 1861) नुसार जिल्हा पातळीवर पोलीस प्रशासनाची रचना कशी करण्यात आली?",
+        "en": "Under the Indian Police Act of 1861, enacted following the recommendations of the Police Commission of 1860, how was district police administration structured?"
+      },
+      "options": [
+        { "mr": "जिल्हा पोलीस अधीक्षकाकडे (SP) खात्याचे नियंत्रण देण्यात आले, परंतु तो जिल्हा दंडाधिकाऱ्याच्या (DM) सर्वसाधारण नियंत्रणाखाली राहिला.", "en": "The District Superintendent of Police (SP) headed the force, but functioned under the general supervision of the District Magistrate (DM)." },
+        { "mr": "पोलीस खात्याला जिल्हा दंडाधिकाऱ्याच्या सर्व प्रकारच्या नियंत्रणातून पूर्णपणे स्वतंत्र करण्यात आले.", "en": "The police department was made entirely independent of any oversight by the District Magistrate." },
+        { "mr": "प्रत्येक खेड्यात पोलीस अंमलदार नेमून ग्रामपंचायतींना सर्व गुन्हे तपासाचे अधिकार दिले.", "en": "Village panchayats were invested with plenary criminal investigative powers with village constables." },
+        { "mr": "पोलीस ठाण्यांचे प्रमुखपद केवळ सैनिकी अधिकाऱ्यांकडेच सोपवण्यात आले.", "en": "The leadership of local police thanas was assigned exclusively to military personnel." }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१८६१ च्या पोलीस कायद्याने प्रांतात पोलीस महानिरीक्षक (IGP) आणि जिल्ह्यात पोलीस अधीक्षक (SP) हे पद निर्माण केले. मात्र, कायदा व सुव्यवस्था राखण्याच्या दृष्टीने एसपी हा जिल्हा दंडाधिकाऱ्याच्या (District Magistrate/Collector) सर्वसाधारण देखरेखीखाली व नियंत्रणाखाली काम करेल अशी दुहेरी नियंत्रण व्यवस्था निश्चित केली गेली.",
+        "en": "The Police Act of 1861 created an organized civil constabulary headed provincially by an Inspector General (IG) and district-wise by a Superintendent of Police (SP). Crucially, the district SP was placed under the general direction and supervision of the civilian District Magistrate (DM)."
+      }
+    },
+    {
+      "id": 6,
+      "question": {
+        "mr": "लॉर्ड मेकॉलच्या अध्यक्षतेखालील पहिल्या विधी आयोगाने (First Law Commission 1834) तयार केलेल्या मसुद्याच्या आधारे 'भारतीय दंड संहिता' (IPC) कोणत्या वर्षी संमत करण्यात आली आणि ती कधीपासून लागू झाली?",
+        "en": "Based on the draft prepared by the First Law Commission under Lord Macaulay, in which year was the Indian Penal Code (IPC) enacted, and from when did it come into force?"
+      },
+      "options": [
+        { "mr": "संमत: १८६०, लागू: १ जानेवारी १८६२", "en": "Enacted: 1860, Enforced: 1 January 1862" },
+        { "mr": "संमत: १८५८, लागू: १ नोव्हेंबर १८५८", "en": "Enacted: 1858, Enforced: 1 November 1858" },
+        { "mr": "संमत: १८६१, लागू: १ जुलै १८६१", "en": "Enacted: 1861, Enforced: 1 July 1861" },
+        { "mr": "संमत: १८३७, लागू: १८३८", "en": "Enacted: 1837, Enforced: 1838" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "लॉर्ड मेकॉलने १८३७ मध्ये भारतीय दंड संहितेचा मूळ मसुदा तयार केला होता. अनेक पुनरावलोकनांनंतर हा कायदा ६ ऑक्टोबर १८६० रोजी ब्रिटिश कायदेमंडळाने संमत केला आणि १ जानेवारी १८६२ पासून तो संपूर्ण ब्रिटिश भारतात अधिकृतपणे लागू करण्यात आला.",
+        "en": "The draft of the Indian Penal Code, originally prepared in 1837 by Macaulay's Law Commission, was enacted into law on 6 October 1860 and officially came into force across British India on 1 January 1862."
+      }
+    },
+    {
+      "id": 7,
+      "question": {
+        "mr": "दादाभाई नौरोजी यांनी मांडलेल्या 'संपत्तीचे वहन' (Drain of Wealth) सिद्धांतानुसार 'गृहखर्च' (Home Charges) या शीर्षकाखाली खालीलपैकी कोणत्या घटकांचा समावेश होत होता?\nअ. लंडनस्थित इंडिया कौन्सिल आणि भारत मंत्र्यांच्या कार्यालयाचा प्रशासकीय खर्च\nब. ब्रिटिश भारतातील सार्वजनिक कर्जावरील (Public Debt) व्याज\nक. भारतात सेवा बजावलेल्या ब्रिटिश सनदी व लष्करी अधिकाऱ्यांचे निवृत्तिवेतन (Pensions)\nड. भारतीय रेल्वे भांडवलावर ब्रिटिश गुंतवणूकदारांना दिलेला हमीचा ५% लाभांश\nयोग्य पर्याय निवडा:",
+        "en": "According to Dadabhai Naoroji's 'Drain of Wealth' theory, which of the following components were incorporated under 'Home Charges'?\na. Administrative costs of the India Office and Council of India in London\nb. Interest payments on Indian public debt contracted in Britain\nc. Pensions and furloughs of retired British civilian and military officers\nd. Guaranteed 5% interest paid to British private investors on Indian railway capital\nChoose the correct option:"
+      },
+      "options": [
+        { "mr": "फक्त अ, ब आणि क", "en": "Only a, b, and c" },
+        { "mr": "फक्त ब आणि ड", "en": "Only b and d" },
+        { "mr": "फक्त अ आणि क", "en": "Only a and c" },
+        { "mr": "अ, ब, क आणि ड सर्व", "en": "All a, b, c, and d" }
+      ],
+      "correctAnswerIndex": 3,
+      "explanation": {
+        "mr": "वरील सर्व (अ, ब, क, ड) घटक 'होम चार्जेस'चे मुख्य भाग होते. हा असा खर्च होता जो दरवर्षी भारतीय तिजोरीतून पौंड स्वरूपात लंडनला पाठवला जात असे, ज्याच्या बदल्यात भारताला कोणताही प्रत्यक्ष भौतिक किंवा आर्थिक परतावा मिळत नव्हता. दादाभाई नौरोजींनी याला भारताचे रक्त शोषणारी प्रक्रिया म्हटले.",
+        "en": "All four items formed the core of the 'Home Charges' remitted annually to Britain from Indian exchequer funds without any equivalent commercial or material return, constituting the principal mechanism of the unilateral Drain of Wealth."
+      }
+    },
+    {
+      "id": 8,
+      "question": {
+        "mr": "ब्रिटिश न्यायालयीन प्रशासनाच्या पुनर्रचनेबाबत खालील विधाने विचारात घ्या:\nअ. १८६१ च्या 'इंडियन हायकोर्ट्स ॲक्ट'ने जुनी सर्वोच्च न्यायालये (Supreme Courts) आणि सदर अदालती विसर्जित केल्या.\nब. १८६२ मध्ये कलकत्ता, मुंबई आणि मद्रास येथे एकात्मिक उच्च न्यायालये (High Courts) स्थापन करण्यात आली.\nवरीलपैकी कोणते/ती विधान/ने बरोबर आहेत?",
+        "en": "Consider the following statements regarding the reorganization of the judicial administration:\na. The Indian High Courts Act of 1861 abolished the old Supreme Courts and the Sadar Adalats.\nb. Integrated High Courts were established at Calcutta, Bombay, and Madras in 1862.\nWhich of the statements given above is/are correct?"
+      },
+      "options": [
+        { "mr": "फक्त अ", "en": "Only a" },
+        { "mr": "फक्त ब", "en": "Only b" },
+        { "mr": "अ आणि ब दोन्ही", "en": "Both a and b" },
+        { "mr": "दोन्ही नाही", "en": "Neither a nor b" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "दोन्ही विधाने अचूक आहेत. १८६१ च्या उच्च न्यायालय कायद्याने मुघल/कंपनी काळापासून चालत आलेल्या 'सदर दिवाणी' व 'सदर निजामत' या अपीली अदालती आणि ब्रिटिशांची 'सर्वोच्च न्यायालये' एकत्र विलीन केली. १८६२ मध्ये कलकत्ता, मुंबई आणि मद्रास येथे तीन सनदी उच्च न्यायालये स्थापन झाली.",
+        "en": "Both statements are correct. The Indian High Courts Act of 1861 amalgamated the dual jurisdictions of the Crown's Supreme Courts and the Company's Sadar Diwani and Sadar Nizamat Adalats, inaugurating chartered High Courts in Calcutta, Bombay, and Madras in 1862."
+      }
+    },
+    {
+      "id": 9,
+      "question": {
+        "mr": "१८३३ च्या सनदी कायद्याद्वारे (Charter Act 1833) भारताच्या प्रशासकीय रचनेत खालीलपैकी कोणता मूलभूत बदल करण्यात आला?",
+        "en": "Which fundamental structural transformation was brought about in the administration of British India by the Charter Act of 1833?"
+      },
+      "options": [
+        { "mr": "बंगालच्या गव्हर्नर-जनरलचे पद 'भारताचा गव्हर्नर-जनरल' करण्यात आले आणि मुंबई व मद्रासचे स्वतंत्र कायदेनिर्मिती अधिकार संपुष्टात आले.", "en": "The Governor-General of Bengal was designated as the 'Governor-General of India' and the independent lawmaking powers of Bombay and Madras were abolished." },
+        { "mr": "ईस्ट इंडिया कंपनीची भारतातील सर्व राजकीय सत्ता काढून घेऊन ब्रिटिश संसदेकडे देण्यात आली.", "en": "All political authority of the East India Company in India was transferred directly to the British Parliament." },
+        { "mr": "भारतीयांसाठी केंद्रीय विधिमंडळात ५०% निर्वाचित जागा राखीव करण्यात आल्या.", "en": "50% of seats in the central legislature were reserved for elected Indian representatives." },
+        { "mr": "द्विदल राज्यपद्धती (Dyarchy) संपूर्ण प्रांतांमध्ये लागू करण्यात आली.", "en": "Dyarchy was introduced across all provincial governments." }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१८३३ च्या सनदी कायद्याने प्रशासकीय व कायदेविषयक सत्तेचे संपूर्ण केंद्रीकरण केले. बंगालचा गव्हर्नर-जनरल आता 'भारताचा गव्हर्नर-जनरल' बनला (लॉर्ड विल्यम बेंटिंक पहिला). मद्रास व मुंबईच्या गव्हर्नरांचे स्वतंत्र कायदे करण्याचे अधिकार हिरावून घेण्यात आले आणि ते केंद्रीय कायदेमंडळात एकवटले गेले.",
+        "en": "The Charter Act of 1833 centralized the entire imperial administration. Lord William Bentinck became the first 'Governor-General of India'. The provincial legislatures of Bombay and Madras were stripped of their autonomous legislative powers, concentrating all lawmaking authority in the central council."
+      }
+    },
+    {
+      "id": 10,
+      "question": {
+        "mr": "१८५८ च्या भारत सरकार कायद्यान्वये निर्माण करण्यात आलेल्या 'भारत मंत्री' (Secretary of State for India) बाबत खालील विधाने विचारात घ्या:\nअ. तो ब्रिटिश मंत्रिमंडळाचा कॅबिनेट मंत्री असे आणि ब्रिटिश संसदेला जबाबदार होता.\nब. त्याच्या नियंत्रणासाठी स्थापन करण्यात आलेले 'इंडिया कौन्सिल' हे निव्वळ सल्लागार मंडळ होते; मात्र वित्तीय बाबींमध्ये बहुमताचा निर्णय बंधनकारक होता.\nवरीलपैकी कोणते/ती विधान/ने बरोबर आहेत?",
+        "en": "Consider the following statements regarding the Secretary of State for India instituted under the Act of 1858:\na. He was a British cabinet minister and remained directly responsible to the British Parliament.\nb. The 'Council of India' created to assist him was purely advisory, but its majority assent was mandatory regarding financial expenditures.\nWhich of the statements given above is/are correct?"
+      },
+      "options": [
+        { "mr": "फक्त अ", "en": "Only a" },
+        { "mr": "फक्त ब", "en": "Only b" },
+        { "mr": "अ आणि ब दोन्ही", "en": "Both a and b" },
+        { "mr": "दोन्ही नाही", "en": "Neither a nor b" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "दोन्ही विधाने बरोबर आहेत. भारत मंत्री हा ब्रिटिश कॅबिनेटचा पूर्णवेळ मंत्री होता. त्याला सल्ला देण्यासाठी १५ सदस्यांचे इंडिया कौन्सिल होते. सामान्य राजकीय बाबींमध्ये भारत मंत्र्याला कौन्सिलचा सल्ला धुडकावण्याचा अधिकार होता; परंतु भारतीय महसुलातून खर्च करण्याच्या वित्तीय निर्णयांवर कौन्सिलच्या बहुमताची मंजुरी आवश्यक होती.",
+        "en": "Both statements are correct. The Secretary of State was a British Cabinet minister answering to Parliament. While the 15-member Council of India was predominantly advisory, the Secretary of State could not override a majority vote of the Council on matters involving the appropriation of Indian revenues."
+      }
+    },
+    {
+      "id": 11,
+      "question": {
+        "mr": "भारतात 'आर्थिक विकेंद्रीकरणाचा जनक' (Father of Financial Decentralization) म्हणून कोणत्या व्हाइसरॉयला ओळखले जाते, ज्याने १८७० मध्ये प्रांतांना स्वतंत्र बजेट व खाती दिली?",
+        "en": "Which Viceroy is known as the 'Father of Financial Decentralization' in India for granting provincial governments fixed budgets and administrative heads in 1870?"
+      },
+      "options": [
+        { "mr": "लॉर्ड मेयो (Lord Mayo)", "en": "Lord Mayo" },
+        { "mr": "लॉर्ड रिपन (Lord Ripon)", "en": "Lord Ripon" },
+        { "mr": "लॉर्ड लिटन (Lord Lytton)", "en": "Lord Lytton" },
+        { "mr": "लॉर्ड नॉर्थब्रुक (Lord Northbrook)", "en": "Lord Northbrook" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१४ डिसेंबर १८७० च्या ठरावाद्वारे लॉर्ड मेयोने वित्तीय विकेंद्रीकरणाची पायाभरणी केली. त्याने तुरुंग, पोलीस, शिक्षण, रस्ते व वैद्यकीय सेवा ही खाती प्रांतांकडे सोपवली आणि त्यांच्या खर्चासाठी केंद्रीय तिजोरीतून एकरकमी वार्षिक अनुदान निश्चित केले. म्हणूनच मेयोला आर्थिक विकेंद्रीकरणाचा जनक म्हणतात.",
+        "en": "Viceroy Lord Mayo introduced financial decentralization through his Resolution of December 1870, transferring local services (education, sanitation, jails, roads) to provincial administrations supported by fixed annual lump-sum grants from the central exchequer."
+      }
+    },
+    {
+      "id": 12,
+      "question": {
+        "mr": "१८७८ च्या 'व्हर्नाक्युलर प्रेस कायद्याच्या' (Vernacular Press Act 1878) संदर्भात खालीलपैकी कोणते विधान अयोग्य आहे?",
+        "en": "Which of the following statements is incorrect regarding the Vernacular Press Act of 1878 passed by Lord Lytton?"
+      },
+      "options": [
+        { "mr": "हा कायदा इंग्रजी आणि प्रादेशिक अशा दोन्ही भाषांतील वृत्तपत्रांवर समान रीतीने लागू करण्यात आला होता.", "en": "The Act was applied equally and without discrimination to both English and Indian-language newspapers." },
+        { "mr": "जिल्हा दंडाधिकाऱ्याच्या निर्णयाविरुद्ध कोणत्याही न्यायालयात अपील करण्याची तरतूद नव्हती.", "en": "There was no provision to appeal against the decision of the District Magistrate in a court of law." },
+        { "mr": "मुद्रक व प्रकाशकाकडून सरकारविरुद्ध न लिहिण्याबाबत जामीनपत्र (Security Bond) लिहून घेण्याचा अधिकार दंडाधिकाऱ्याला होता.", "en": "Magistrates were empowered to demand security bonds from printers and publishers against publishing seditious content." },
+        { "mr": "या कायद्याच्या कारवाईपासून वाचण्यासाठी 'अमृत बझार पत्रिका' हे वृत्तपत्र एका रात्रीत इंग्रजी वृत्तपत्र बनले.", "en": "To evade the provisions of this Act, the 'Amrita Bazar Patrika' transitioned overnight into a fully English newspaper." }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "विधान १ अयोग्य आहे, कारण हा कायदा अत्यंत पक्षपाती होता. तो केवळ 'देशी' (भारतीय भाषांमधील) वृत्तपत्रांवर बंधने घालत होता; इंग्रजी भाषेतील अँग्लो-इंडियन वृत्तपत्रांना यातून पूर्ण सूट देण्यात आली होती. म्हणूनच याला 'गॅगिंग ॲक्ट' (तोंड दाबणारा कायदा) म्हटले गेले.",
+        "en": "Statement 1 is incorrect because the Vernacular Press Act was overtly discriminatory, singling out Indian-language publications while completely exempting English-language newspapers from censorship and pre-publication bonds."
+      }
+    },
+    {
+      "id": 13,
+      "question": {
+        "mr": "१८ मे १८८२ रोजी लॉर्ड रिपनने संमत केलेल्या स्थानिक स्वराज्य संस्थांविषयक ठरावातील (Local Self-Government Resolution) मुख्य वैशिष्ट्य कोणते होते?",
+        "en": "What was the pivotal feature of Lord Ripon's historic Local Self-Government Resolution enacted on 18 May 1882?"
+      },
+      "options": [
+        { "mr": "स्थानिक संस्थांमध्ये बिगर-सरकारी (Non-official) सदस्यांचे बहुमत असणे आणि अध्यक्षांची निवड शक्यतो बिगर-सरकारी सदस्यांमधून होणे.", "en": "Maintaining a non-official majority in local boards and preferring elected non-officials as chairpersons." },
+        { "mr": "जिल्हाधिकाऱ्याला सर्व नगरपालिकांचे पदसिद्ध अध्यक्ष बनवणे अनिवार्य करणे.", "en": "Making the District Collector mandatory ex-officio chairman of all municipal boards." },
+        { "mr": "स्थानिक स्वराज्य संस्थांना कर आकारणीचे सर्व अधिकार पूर्णपणे बंद करणे.", "en": "Abolishing all tax-levying powers previously vested in local bodies." },
+        { "mr": "स्थानिक स्वराज्य संस्थांचे सर्व सदस्य थेट ब्रिटिश संसदेमार्फत नामनिर्देशित करणे.", "en": "Nominating all members of local self-governing boards directly through the British Parliament." }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "लॉर्ड रिपनच्या १८८२ च्या ठरावाने स्थानिक स्वराज्य संस्थांना 'प्रशासकीय कार्यक्षमतेचे साधन' न मानता 'राजकीय आणि लोकप्रिय शिक्षणाचे साधन' मानले. ग्रामीण भागात तालुका व जिल्हा बोर्ड स्थापन करून त्यामध्ये बिगर-सरकारी सदस्यांचे प्राबल्य ठेवले आणि शक्यतो बिगर-सरकारी अध्यक्षांची तरतूद केली.",
+        "en": "Ripon's Resolution of 1882 treated local self-government not merely as an engine of administrative convenience, but as an instrument of political and popular education, mandating non-official majorities and encouraging non-official elected chairmen."
+      }
+    },
+    {
+      "id": 14,
+      "question": {
+        "mr": "१८८२ मध्ये नियुक्त करण्यात आलेल्या 'हंटर शिक्षण आयोगाचे' (Hunter Education Commission) मुख्य लक्ष खालीलपैकी कोणत्या घटकावर होते?",
+        "en": "The primary focus of the Hunter Education Commission appointed in 1882 was on which sector of education?"
+      },
+      "options": [
+        { "mr": "प्राथमिक आणि माध्यमिक शिक्षण (Primary and Secondary Education)", "en": "Primary and Secondary Education" },
+        { "mr": "केवळ उच्च विद्यापीठीय शिक्षण आणि संशोधन", "en": "Exclusively university postgraduate education and scientific research" },
+        { "mr": "लष्करी आणि नौदल अभियांत्रिकी शिक्षण", "en": "Military and naval engineering curricula" },
+        { "mr": "वैद्यकीय आणि कायदेशीर शिक्षण", "en": "Medical and legal vocational training" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१८५४ च्या वूड्स डिस्पॅचच्या अंमलबजावणीचा आढावा घेण्यासाठी लॉर्ड रिपनने १८८२ मध्ये सर विल्यम हंटर आयोग नेमला. या आयोगाला प्रामुख्याने प्राथमिक शिक्षणाच्या स्थितीची चौकशी करण्याचे काम सोपवले गेले. प्राथमिक शिक्षणाची जबाबदारी स्थानिक स्वराज्य संस्थांकडे सोपवण्याची शिफारस याने केली.",
+        "en": "The Hunter Commission of 1882 was appointed by Lord Ripon specifically to evaluate the state of primary and secondary education in British India, recommending that local district and municipal boards be entrusted with the management of primary schooling."
+      }
+    },
+    {
+      "id": 15,
+      "question": {
+        "mr": "१८९२ च्या 'इंडियन कौन्सिल्स कायद्याने' (Indian Councils Act 1892) कायदेमंडळाच्या अधिकारात खालीलपैकी कोणती भर घातली?",
+        "en": "Which of the following constitutional powers was conferred upon legislative council members by the Indian Councils Act of 1892?"
+      },
+      "options": [
+        { "mr": "वार्षिक अर्थसंकल्पावर (Budget) चर्चा करण्याचा आणि ६ दिवसांची पूर्वसूचना देऊन प्रश्न विचारण्याचा अधिकार", "en": "The power to discuss the annual financial budget and ask questions on public policy with 6 days' notice" },
+        { "mr": "अर्थसंकल्पातील खर्चाच्या बाबींवर प्रत्यक्ष मतदान करण्याचा अधिकार", "en": "The power to vote on specific budgetary allocations and expenditure cuts" },
+        { "mr": "मंत्र्यांना पूरक प्रश्न (Supplementary Questions) विचारण्याचा पूर्ण अधिकार", "en": "The full right to put supplementary cross-examination questions to executive ministers" },
+        { "mr": "व्हाइसरॉयच्या अध्यादेशांना कायदेमंडळात नामंजूर करण्याचा अधिकार", "en": "The power to veto ordinances promulgated by the Viceroy" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१८९२ च्या कायद्याने भारतीय सदस्यांना पहिल्यांदाच अर्थसंकल्पावर (बजेट) आपली मते मांडण्याचा आणि जनहिताच्या विषयांवर सरकारला ६ दिवसांची नोटीस देऊन प्रश्न विचारण्याचा अधिकार दिला; परंतु त्यांना बजेटवर मतदान करण्याचा किंवा मूळ प्रश्नावर पूरक प्रश्न विचारण्याचा अधिकार नव्हता.",
+        "en": "The Indian Councils Act of 1892 broadened legislative functions by permitting members to discuss the budget and question the executive on matters of public interest with six days' prior notice, but strictly barred them from voting or tabling supplementary questions."
+      }
+    },
+    {
+      "id": 16,
+      "question": {
+        "mr": "ब्रिटिश भारतातील पहिल्या फॅक्टरी कायदा (१८८१) आणि दुसऱ्या फॅक्टरी कायदा (१८९१) यांच्यातील महत्त्वाचा फरक कोणता?",
+        "en": "What was a major distinction between the First Factory Act (1881) and the Second Factory Act (1891) in British India?"
+      },
+      "options": [
+        { "mr": "पहिला कायदा केवळ बालकामगारांसाठी होता, तर दुसऱ्या कायद्याने महिला कामगारांसाठी कामाचे तास (११ तास) निश्चित केले आणि साप्ताहिक सुट्टी दिली.", "en": "The first act dealt strictly with child labor, whereas the second act regulated women's working hours (11 hours) and granted a weekly holiday." },
+        { "mr": "पहिल्या कायद्याने किमान वेतन लागू केले, तर दुसऱ्या कायद्याने ते रद्द केले.", "en": "The first act introduced minimum wage floors, which were dismantled by the second act." },
+        { "mr": "पहिला कायदा चहाच्या मळ्यांना लागू होता, तर दुसरा कायदा कापड गिरण्यांना लागू होता.", "en": "The first act applied to tea plantations, while the second act was limited to textile mills." },
+        { "mr": "पहिल्या कायद्याने पुरुष कामगारांचे तास ८ केले, तर दुसऱ्या कायद्याने ते १२ केले.", "en": "The first act capped adult male shifts at 8 hours, whereas the second act extended them to 12." }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१८८१ चा फॅक्टरी ॲक्ट केवळ ७ ते १२ वयोगटातील बालकांसाठी होता (९ तास कामाची मर्यादा). १८९१ च्या फॅक्टरी ॲक्टने बालकांची किमान वयोमर्यादा ७ वरून ९ वर्षे केली, महिलांसाठी दररोज कमाल ११ तास कामाची मर्यादा व रात्रीच्या कामावर बंदी घातली आणि सर्व कामगारांसाठी आठवड्यातून एक दिवस (रविवार) सुट्टी सक्तीची केली.",
+        "en": "The 1881 Act regulated only child workers aged 7–12. The 1891 Factory Act raised the child entry age from 7 to 9, restricted female employment to 11 hours daily with a night-work ban, and made a weekly day of rest mandatory for all factory operatives."
+      }
+    },
+    {
+      "id": 17,
+      "question": {
+        "mr": "१८७६-७८ च्या भीषण दुष्काळानंतर लॉर्ड लिटनने १८७८ मध्ये नियुक्त केलेल्या पहिल्या अधिकृत दुष्काळ आयोगाचे अध्यक्ष कोण होते?",
+        "en": "Who chaired the first official Famine Commission appointed by Lord Lytton in 1878 following the devastating famine of 1876–1878?"
+      },
+      "options": [
+        { "mr": "जनरल सर रिचर्ड स्ट्रॅची (Sir Richard Strachey)", "en": "General Sir Richard Strachey" },
+        { "mr": "सर जेम्स लायेल (Sir James Lyall)", "en": "Sir James Lyall" },
+        { "mr": "सर अँथनी मॅकडोनेल (Sir Antony MacDonnell)", "en": "Sir Antony MacDonnell" },
+        { "mr": "सर जॉन कॅम्पबेल (Sir John Campbell)", "en": "Sir John Campbell" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "लॉर्ड लिटनने १८७८ मध्ये सर रिचर्ड स्ट्रॅची यांच्या अध्यक्षतेखाली पहिला दुष्काळ आयोग नेमला. या आयोगाच्या शिफारशींवरून १८८० मध्ये अहवाल आला आणि १८८३ मध्ये भारतात पहिला 'दुष्काळ आचारसंहिता' (Famine Code) तयार करण्यात आला. तसेच दुष्काळ निवारणासाठी वार्षिक दीड कोटींचा दुष्काळ विमा निधी (Famine Insurance Fund) स्थापन झाला.",
+        "en": "Sir Richard Strachey presided over the Famine Commission of 1878. Its recommendations led directly to the formulation of the Provincial Famine Codes in 1883 and the creation of an annual Famine Relief and Insurance Fund of ₹1.5 crores."
+      }
+    },
+    {
+      "id": 18,
+      "question": {
+        "mr": "ब्रिटिश राजवटीत भारतावर लादण्यात आलेल्या 'एकतर्फी मुक्त व्यापार' (One-way Free Trade) धोरणाचा भारतीय अर्थव्यवस्थेवर कोणता विपरीत परिणाम झाला?",
+        "en": "What was the adverse economic consequence of the 'One-way Free Trade' regime imposed upon India under British colonial rule?"
+      },
+      "options": [
+        { "mr": "ब्रिटिश मशिननिर्मित उत्पादने भारतात नाममात्र शुल्काने आयात झाली, तर भारतीय हस्तकला व कापडावर ब्रिटनमध्ये प्रचंड आयात जकात लादून भारतीय उद्योग उद्ध्वस्त झाले.", "en": "British manufactured goods entered India duty-free, while exorbitant protective tariffs were levied on Indian handloom exports into Britain, ruining Indian handicrafts." },
+        { "mr": "भारतात आधुनिक यंत्रोद्योगांचा मोठ्या प्रमाणावर विकास झाला.", "en": "Large-scale expansion of indigenous capital-intensive heavy industries in India." },
+        { "mr": "भारताची कृषी व औद्योगिक उत्पादनातील आयात पूर्णपणे थांबली.", "en": "A complete stoppage of all imports into India of foreign commodities." },
+        { "mr": "भारतीय रुपयाचे मूल्य आंतरराष्ट्रीय बाजारात ब्रिटनच्या पाउंडपेक्षा जास्त झाले.", "en": "The exchange value of the Indian rupee climbed significantly above the British pound." }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "औद्योगिक क्रांतीनंतर ब्रिटनने भारताला आपल्या कारखान्यांसाठी कच्चा माल पुरवणारा आणि तयार मशिननिर्मित मालाची बाजारपेठ बनवले. ब्रिटनमधून भारतात येणाऱ्या वस्तूंवर आयात शुल्क नाममात्र ठेवण्यात आले, परंतु भारतीय उत्पादनांवर ब्रिटनमध्ये भरमसाठ संरक्षक जकात लादली गेली. या धोरणामुळे भारतीय कारागीर बेकार झाले आणि शेतीवरील भार वाढून अव-औद्योगिकीकरण (De-industrialization) घडून आले.",
+        "en": "Under 'One-way Free Trade', British machine manufactures flooded Indian domestic markets virtually duty-free, while Indian exports faced prohibitive tariffs in the UK, collapsing native artisan manufacturing and precipitating ruralization and de-industrialization."
+      }
+    },
+    {
+      "id": 19,
+      "question": {
+        "mr": "ब्रिटिशांच्या रयतवारी आणि महालवारी महसूल पद्धतींमुळे भारतीय ग्रामीण समाजात खालीलपैकी कोणता महत्त्वाचा सामाजिक-आर्थिक बदल घडून आला?",
+        "en": "Which major socio-economic transformation occurred in Indian agrarian society as a consequence of the British Ryotwari and Mahalwari revenue systems?"
+      },
+      "options": [
+        { "mr": "जमीन ही हस्तांतरणीय व विक्रीयोग्य मालमत्ता बनली आणि नगदी पिकांच्या वाढीमुळे ग्रामीण सावकारशाही व शेतकरी कर्जबाजारीपणा वाढला.", "en": "Land was converted into a saleable, mortgagable commodity and commercialization of crops stimulated moneylending and peasant indebtedness." },
+        { "mr": "शेतकऱ्यांना जमिनीचा कर पूर्णपणे माफ करण्यात आला.", "en": "Peasants were permanently exempted from state land revenue assessments." },
+        { "mr": "गावगाड्याचे पारंपारिक स्वावलंबन अधिक मजबूत झाले.", "en": "Traditional economic self-sufficiency of rural village communities was strengthened." },
+        { "mr": "शेतमजुरांचे पगार वाढून ग्रामीण गरिबी पूर्णपणे नष्ट झाली.", "en": "Agricultural wage rates surged, eliminating rural pauperism." }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "ब्रिटिशांनी रोख रकमेत आणि ठरलेल्या तारखेला महसूल भरण्याची सक्ती केल्याने जमीन ही खरेदी-विक्रीची वस्तू (Commodity) बनली. महसूल भरण्यासाठी शेतकऱ्यांना नगदी पिके घ्यावी लागली आणि सावकारांच्या दारात जावे लागले, ज्यामुळे जमिनी सावकारांच्या घशात गेल्या आणि शेतकरी वेठबिगार/कुळ बनले.",
+        "en": "By mandating rigid, unyielding cash payments on fixed calendar dates, the British transformed land into private, alienable property. Cultivators were compelled to borrow from usurious moneylenders and cultivate cash crops, giving rise to pervasive debt and land alienation."
+      }
+    },
+    {
+      "id": 20,
+      "question": {
+        "mr": "१८०६ मध्ये इंग्लंडमध्ये स्थापन करण्यात आलेल्या 'हेलिबरी कॉलेज'चा (Haileybury College) मुख्य उद्देश काय होता?",
+        "en": "What was the primary purpose of the 'Haileybury College' established in England in 1806?"
+      },
+      "options": [
+        { "mr": "भारतात सनदी अधिकारी म्हणून जाणाऱ्या तरुण ब्रिटिश उमेदवारांना प्रशासकीय व भाषाविषयक दोन वर्षांचे औपचारिक प्रशिक्षण देणे.", "en": "Imparting two years of formal administrative and language training to young British recruits bound for the Indian Civil Service." },
+        { "mr": "भारतीय सैनिकांना आधुनिक तोफखान्याचे प्रशिक्षण देणे.", "en": "Training native Indian sepoys in modern field artillery maneuvers." },
+        { "mr": "लंडनमध्ये कायद्याचा अभ्यास करणाऱ्या भारतीय विद्यार्थ्यांना शिष्यवृत्ती देणे.", "en": "Awarding legal scholarships to Indian students studying law in London." },
+        { "mr": "ब्रिटनच्या संसदेतील खासदारांना भारताच्या इतिहासाची माहिती देणे.", "en": "Briefing members of the British Parliament on Indian cultural history." }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "लॉर्ड वेलस्लीने १८०० मध्ये कलकत्त्यात स्थापन केलेले फोर्ट विल्यम कॉलेज लंडनच्या संचालक मंडळाला पसंत पडले नाही. त्यांनी १८०६ मध्ये लंडनजवळ हर्टफोर्डशायर येथे 'ईस्ट इंडिया कॉलेज' (हेलिबरी कॉलेज) सुरू केले, जिथे कंपनीच्या नामनिर्देशित सनदी अधिकाऱ्यांना भारतात पाठवण्यापूर्वी दोन वर्षे प्रशिक्षण दिले जात असे.",
+        "en": "Disapproving of Wellesley's expensive Fort William College, the Court of Directors founded the East India College at Haileybury in 1806 to deliver a two-year preparatory curriculum in classical administration, law, and Oriental languages to nominated civilian writers."
+      }
+    },
+    {
+      "id": 21,
+      "question": {
+        "mr": "लॉर्ड लिटनच्या कार्यकाळात (१८७६-१८८०) भारतीय सनदी सेवेच्या (ICS) प्रवेशाची कमाल वयोमर्यादा २१ वरून कमी करून किती वर्षे करण्यात आली होती?",
+        "en": "During Lord Lytton's administration (1876–1880), to what age was the maximum age limit for entering the Indian Civil Service examination lowered from 21 years?"
+      },
+      "options": [
+        { "mr": "१९ वर्षे (19 years)", "en": "19 years" },
+        { "mr": "१८ वर्षे (18 years)", "en": "18 years" },
+        { "mr": "२० वर्षे (20 years)", "en": "20 years" },
+        { "mr": "१७ वर्षे (17 years)", "en": "17 years" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१८७८ मध्ये लॉर्ड लिटनच्या पुढाकाराने ICS परीक्षेसाठी कमाल वयोमर्यादा २१ वरून थेट १९ वर्षे इतकी कमी करण्यात आली. इतक्या लहान वयात पदवी पूर्ण करून लंडनला जाऊन इंग्रजीत परीक्षा देणे भारतीयांसाठी अत्यंत कठीण व्हावे, हा यामागचा हेतू होता. या अन्यायाविरुद्ध सुरेंद्रनाथ बॅनर्जी यांनी १८७७-७८ मध्ये देशभरात 'सिव्हिल सर्व्हिस आंदोलन' चालवले.",
+        "en": "In 1878, under Lord Lytton, the maximum age limit for the ICS open entrance examination was deliberately slashed from 21 to 19 years to disadvantage Indian university graduates, sparking an all-India protest movement organized by Surendranath Banerjee."
+      }
+    },
+    {
+      "id": 22,
+      "question": {
+        "mr": "सर विल्यम ली-वॉरनर (Sir William Lee-Warner) यांनी आपल्या 'द नेटिव्ह स्टेट्स ऑफ इंडिया' ग्रंथात ब्रिटिश ईस्ट इंडिया कंपनी आणि भारतीय संस्थानांमधील संबंधांचे वर्गीकरण खालीलपैकी कोणत्या तीन कालखंडांत केले आहे?",
+        "en": "In his seminal treatise 'The Native States of India', how did Sir William Lee-Warner classify the three historical phases of British policy towards princely states?"
+      },
+      "options": [
+        { "mr": "घेऱ्याचे धोरण (Ring Fence १७५७-१८१३), अधीनस्थ पृथक्करण (Subordinate Isolation १८१३-१८५७), आणि अधीनस्थ संघटन (Subordinate Union १८५८-१९३५)", "en": "Policy of Ring Fence (1757–1813), Subordinate Isolation (1813–1857), and Subordinate Union (1858–1935)" },
+        { "mr": "थेट विलीनीकरण, संपूर्ण दुर्लक्ष, आणि राजकीय मांडलिकत्व", "en": "Direct Annexation, Complete Neglect, and Vassalage" },
+        { "mr": "व्यापारी मैत्री, लष्करी आक्रमण, आणि घटनात्मक लोकशाही", "en": "Commercial Friendship, Armed Incursion, and Constitutional Democracy" },
+        { "mr": "मुक्त व्यापार, धार्मिक हस्तक्षेप, आणि आर्थिक शोषण", "en": "Free Trade, Religious Intervention, and Economic Expropriation" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "सर विल्यम ली-वॉरनर यांनी संस्थानांशी असलेल्या संबंधांचे तीन टप्पे मांडले:\n१. १७५७-१८१३: रिंग फेन्स किंवा समानतेचे धोरण (Policy of Ring Fence)\n२. १८१३-१८५८: अधीनस्थ पृथक्करणाचे धोरण (Policy of Subordinate Isolation - संस्थानांवर नियंत्रण परंतु परस्परांपासून वेगळे ठेवणे)\n३. १८५८-१९३५: अधीनस्थ संघटनाचे धोरण (Policy of Subordinate Union - संस्थानिकांचे अस्तित्व मान्य करून त्यांना ब्रिटिश राजमुकुटाच्या संरक्षणाखाली आणणे).",
+        "en": "Sir William Lee-Warner delineated three evolutionary epochs: the Policy of the Ring Fence (1757–1813) marked by non-intervention; the Policy of Subordinate Isolation (1813–1858) asserting British paramountcy and annexation; and the Policy of Subordinate Union (1858–1935) integrating princes as loyal partners under the Crown."
+      }
+    },
+    {
+      "id": 23,
+      "question": {
+        "mr": "१८९८ च्या सर हेन्री फाउलर समितीच्या (Fowler Committee) शिफारशीनुसार ब्रिटिश भारतातील चलनाचे मानक म्हणून कोणते धोरण स्वीकारण्यात आले?",
+        "en": "Following the recommendations of the Sir Henry Fowler Committee in 1898, which policy was formally adopted as the currency standard in British India?"
+      },
+      "options": [
+        { "mr": "ब्रिटिश सुवर्ण सॉव्हरिन नाण्याला कायदेशीर चलन बनवून १ पाउंड = १५ रुपये असा स्थिर विनिमय दर ठरवण्यात आला.", "en": "The British gold sovereign was made legal tender, fixing the exchange rate at 1 Sovereign = 15 Rupees." },
+        { "mr": "रुपयाचे अवमूल्यन करून कागदी नोटांवर पूर्ण बंदी घालण्यात आली.", "en": "The rupee was devalued and paper currency notes were strictly banned." },
+        { "mr": "भारतात केवळ तांब्याची नाणी पाडण्याचे निर्देश देण्यात आले.", "en": "Directives were issued to mint exclusively copper tokens in India." },
+        { "mr": "सर्व ब्रिटिश व्यवहार केवळ अमेरिकन डॉलरमध्ये करणे बंधनकारक झाले.", "en": "Conducting all official transactions exclusively in US dollars was made mandatory." }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१८९८ मध्ये नेमलेल्या फाउलर समितीच्या शिफारशींवरून १८९९ चा इंडियन कॉइनेज ॲक्ट संमत झाला. यानुसार भारताने 'गोल्ड एक्स्चेंज स्टँडर्ड' (सुवर्ण विनिमय पद्धत) स्वीकारले. ब्रिटिश सोन्याचे सॉव्हरिन नाणे भारतात कायदेशीर चलन झाले आणि १ रुपयाचे मूल्य १ शिलिंग ४ पेन्स (म्हणजेच १ पाउंड = १५ रुपये) निश्चित करण्यात आले.",
+        "en": "The Fowler Committee of 1898 recommended pegging the Indian rupee to gold. Under the Indian Coinage Act of 1899, the British gold sovereign and half-sovereign were declared legal tender throughout British India at the fixed parity of 1s. 4d. per rupee (₹15 = £1)."
+      }
+    },
+    {
+      "id": 24,
+      "question": {
+        "mr": "१८६० मध्ये जेम्स विल्सन यांनी भारतात सर्वप्रथम आयकर (Income Tax) लागू केला, तेव्हा तत्कालीन आकारणीचे निकष काय होते?",
+        "en": "When James Wilson introduced the first Income Tax in India in 1860, what were the basic thresholds and rates of assessment?"
+      },
+      "options": [
+        { "mr": "₹२०० ते ₹५०० उत्पन्नावर २% आणि ₹५०० पेक्षा जास्त उत्पन्नावर ४% कर आकारला गेला.", "en": "A 2% tax was levied on incomes between ₹200 and ₹500, and a 4% tax on incomes above ₹500." },
+        { "mr": "सर्व नागरिकांच्या उत्पन्नावर सरसकट २५% कर लादला गेला.", "en": "A uniform 25% tax was imposed on the total income of all citizens." },
+        { "mr": "केवळ ब्रिटिश अधिकाऱ्यांच्या वेतनावर १०% कर लावला गेला.", "en": "A 10% tax was charged solely on the salaries of British officials." },
+        { "mr": "फक्त शेतीच्या उत्पन्नावर ५०% कर लागू करण्यात आला.", "en": "A 50% income tax was applied exclusively to agricultural yields." }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१८५७ च्या उठावामुळे झालेल्या प्रचंड लष्करी कर्जाची परतफेड करण्यासाठी अर्थ सदस्य जेम्स विल्सन यांनी २४ जुलै १८६० रोजी आयकर कायदा लागू केला. यात ₹२०० ते ₹५०० वार्षिक उत्पन्न असणाऱ्यांवर २% आणि ₹५०० पेक्षा जास्त उत्पन्न असणाऱ्यांवर ४% आयकर आकारण्यात आला (यात शेती उत्पन्नही समाविष्ट होते).",
+        "en": "Enacted by Finance Member James Wilson on 24 July 1860 to bridge budgetary deficits caused by the 1857 military mobilization, the income tax levied 2% on annual incomes between ₹200 and ₹500, and 4% on incomes exceeding ₹500, encompassing both commercial and agricultural incomes."
+      }
+    },
+    {
+      "id": 25,
+      "question": {
+        "mr": "१८५८ च्या राणीच्या जाहीरनाम्यामध्ये भारतीय जनतेला व राज्यकर्त्यांना दिलेल्या आश्वासनांमध्ये खालीलपैकी कोणत्या तरतुदीचा समावेश नव्हता?",
+        "en": "Which of the following provisions was NOT among the solemn pledges given to Indian subjects and rulers in Queen Victoria's Proclamation of 1858?"
+      },
+      "options": [
+        { "mr": "ब्रिटिश साम्राज्य विस्तार धोरणाचा अंत, संस्थानिकांचे दत्तक हक्क व करार पाळणे आणि धार्मिक बाबींमध्ये हस्तक्षेप न करणे.", "en": "Termination of territorial annexation, honoring treaties and adoption rights of princes, and non-interference in religious practices." },
+        { "mr": "पात्रता आणि गुणवत्तेच्या आधारावर भारतीयांना सरकारी नोकऱ्यांमध्ये समान संधी देणे.", "en": "Equal opportunity in public employment for Indian subjects on the basis of merit and integrity." },
+        { "mr": "भारतीयांना तात्काळ ब्रिटिश संसदेत थेट मतदानाचा आणि प्रतिनिधी पाठवण्याचा अधिकार देणे.", "en": "Granting Indian subjects immediate adult franchise to elect representatives directly to the British Parliament." },
+        { "mr": "१८५७ च्या उठावात ब्रिटीश नागरिकांच्या हत्येत थेट सहभागी नसलेल्या बंडखोरांना सर्वसाधारण माफी देणे.", "en": "General amnesty to all rebels of the 1857 uprising who were not directly guilty of murdering British subjects." }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "राणीच्या १८५८ च्या जाहीरनाम्यात ब्रिटिश संसदेत प्रतिनिधी पाठवण्याचा किंवा भारतीयांना संसदेसाठी मतदानाचा अधिकार देण्याचा कोणताही उल्लेख नव्हता. उर्वरित तिन्ही तरतुदी (साम्राज्य विस्ताराचा अंत, धार्मिक सहिष्णुता, नोकऱ्यांमध्ये समान संधी आणि सर्वसाधारण माफी) १ नोव्हेंबर १८५८ च्या जाहीरनाम्यातील प्रमुख आश्वासने होती.",
+        "en": "Queen Victoria's Proclamation of 1 November 1858 never promised any franchise or representation in the British Parliament. Its core pledges were the cessation of territorial conquests, respect for princely adoption rights, racial non-discrimination in civil service recruitment, religious neutrality, and general amnesty for rebels."
+      }
+    }
+  ]
+}

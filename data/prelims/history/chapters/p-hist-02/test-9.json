@@ -1,0 +1,464 @@
+{
+  "testId": "p-hist-02-t9",
+  "title": {
+    "mr": "भारतातील ब्रिटिश सत्तेचा विस्तार व प्रशासन — सराव 9",
+    "en": "British Rule in India — Practice Test 9"
+  },
+  "durationMinutes": 20,
+  "marksPerQuestion": 1,
+  "negativeMarking": 0.25,
+  "totalMarks": 25,
+  "difficulty": "मध्यम ते काठिण्य",
+  "questions": [
+    {
+      "id": 1,
+      "question": {
+        "mr": "१७७३ च्या नियामक कायद्यानुसार (Regulating Act 1773) कंपनीच्या संचालकांची (Court of Directors) मुदत आणि रचना यांबाबत खालीलपैकी कोणता बदल करण्यात आला?",
+        "en": "Under the Regulating Act of 1773, which structural modification was enacted regarding the tenure and constitution of the Court of Directors of the East India Company?"
+      },
+      "options": [
+        { "mr": "संचालकांचा कार्यकाळ एका वर्षावरून वाढवून चार वर्षे करण्यात आला आणि दरवर्षी एक चतुर्थांश (१/४) सदस्य निवृत्त होण्याची तरतूद झाली.", "en": "The tenure of Directors was extended from one year to four years, with one-fourth of the members retiring annually." },
+        { "mr": "संचालक मंडळ पूर्णपणे बरखास्त करून सर्व अधिकार थेट ब्रिटिश राजाकडे हस्तांतरित करण्यात आले.", "en": "The Court of Directors was abolished, transferring all executive authority directly to the British Crown." },
+        { "mr": "संचालक मंडळातील सदस्यांची संख्या २४ वरून वाढवून ६० करण्यात आली.", "en": "The number of Directors was increased from 24 to 60." },
+        { "mr": "संचालक मंडळात केवळ भारतीय संस्थानिकांचे नामनिर्देशन अनिवार्य केले गेले.", "en": "Nomination of native Indian princes into the Court of Directors was made mandatory." }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१७७३ च्या नियामक कायद्याने संचालक मंडळाच्या रचनेत स्थैर्य आणण्यासाठी संचालकांचा कार्यकाळ १ वर्षावरून ४ वर्षे केला. एकूण २४ संचालकांपैकी १/४ सदस्य (६ सदस्य) दरवर्षी निवृत्त होत असत आणि त्यांच्या जागी नवे सदस्य निवडले जात असत.",
+        "en": "To prevent electoral corruption and instability in the Company's management, the Regulating Act of 1773 extended the tenure of the 24 Directors from one year to four years, providing that one-fourth (six Directors) should retire every year."
+      }
+    },
+    {
+      "id": 2,
+      "question": {
+        "mr": "१७८४ च्या पिट्स इंडिया कायद्यान्वये (Pitt's India Act 1784) लंडनमध्ये स्थापन करण्यात आलेल्या ६ सदस्यीय नियामक मंडळाचे (Board of Control) अध्यक्षपद कोणाकडे असे?",
+        "en": "Who presided over the 6-member Board of Control established in London pursuant to Pitt's India Act of 1784?"
+      },
+      "options": [
+        { "mr": "ब्रिटिश मंत्रिमंडळाचा परराष्ट्र सचिव किंवा विशेष नियुक्त कॅबिनेट मंत्री (Secretary of State)", "en": "A British Cabinet Minister (Secretary of State for Foreign Affairs or designated Commissioner)" },
+        { "mr": "भारताचा गव्हर्नर-जनरल", "en": "The Governor-General of India" },
+        { "mr": "ईस्ट इंडिया कंपनीचा ज्येष्ठ संचालक", "en": "The senior-most Director of the East India Company" },
+        { "mr": "कलकत्ता सर्वोच्च न्यायालयाचे मुख्य न्यायाधीश", "en": "The Chief Justice of the Calcutta Supreme Court" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "पिट्स इंडिया ॲक्टनुसार स्थापन झालेल्या 'बोर्ड ऑफ कंट्रोल'मध्ये ब्रिटिश सरकारचे ६ आयुक्त असत, ज्यात चान्सलर ऑफ द एक्सचेकर (अर्थमंत्री), एक सेक्रेटरी ऑफ स्टेट (गृह/परराष्ट्र मंत्री) आणि प्रिव्ही कौन्सिलचे चार सदस्य असत. सेक्रेटरी ऑफ स्टेट हा या मंडळाचा अध्यक्ष म्हणून काम पाहत असे.",
+        "en": "Under Pitt's India Act of 1784, the Board of Control comprised six commissioners from the British Cabinet, including the Chancellor of the Exchequer, a Principal Secretary of State (who served as President), and four Privy Councillors appointed by the Crown."
+      }
+    },
+    {
+      "id": 3,
+      "question": {
+        "mr": "लॉर्ड कॉर्नवॉलिसने १७९३ मध्ये न्यायव्यवस्था आणि महसूल प्रशासनाची पुनर्रचना करताना महसूलविषयक खटले चालवण्यासाठी अस्तित्वात असणाऱ्या कोणत्या जुन्या न्यायालयांना कायमचे बरखास्त केले?",
+        "en": "In 1793, while reforming judicial administration, which traditional courts dedicated to revenue disputes did Lord Cornwallis abolish?"
+      },
+      "options": [
+        { "mr": "माल अदालत (Mal Adalat / Revenue Courts)", "en": "Mal Adalats (Revenue Courts)" },
+        { "mr": "सदर दिवाणी अदालत", "en": "Sadar Diwani Adalat" },
+        { "mr": "सदर निजामत अदालत", "en": "Sadar Nizamat Adalat" },
+        { "mr": "मेयर कोर्ट", "en": "Mayor's Court" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१७९३ च्या कॉर्नवॉलिस संहितेपूर्वी महसुली तंटे कलेक्टरांच्या नियंत्रणाखालील 'माल अदालतीं'मध्ये (Mal Adalats) चालवले जात असत. कॉर्नवॉलिसने या माल अदालती पूर्णपणे रद्द केल्या आणि सर्व महसुली खटले नियमित जिल्हा दिवाणी न्यायालयांच्या (Zilla Diwani Adalats) कक्षेखाली आणले.",
+        "en": "Prior to 1793, revenue matters were tried by collectors in special revenue tribunals known as Mal Adalats. Cornwallis abolished Mal Adalats and transferred all rent and revenue litigation directly to the jurisdiction of the ordinary regular Civil Courts (Diwani Adalats)."
+      }
+    },
+    {
+      "id": 4,
+      "question": {
+        "mr": "१७९८ मध्ये लॉर्ड वेलस्लीने लागू केलेल्या तैनाती फौजेच्या (Subsidiary Alliance) करारातील मुख्य वित्तीय तरतूद कोणती होती?",
+        "en": "What was the principal fiscal mechanism embodied within Lord Wellesley's Subsidiary Alliance system (1798) to finance the auxiliary British contingent?"
+      },
+      "options": [
+        { "mr": "संस्थानिकाने सैन्याच्या देखभालीसाठी नियमित रोख रक्कम देणे किंवा कायमस्वरूपी महसूल मिळणारा निश्चित भूप्रदेश कंपनीकडे हस्तांतरित करणे.", "en": "The native ruler had to pay a regular annual cash subsidy or permanently cede a specific territory yielding equivalent revenue to the Company." },
+        { "mr": "संस्थानिकाने आपल्या एकूण महसुलातील ९०% हिस्सा ब्रिटनच्या संसदेकडे थेट पाठवणे.", "en": "Remitting 90% of total state revenues directly to the British Parliament." },
+        { "mr": "संस्थानिकाने ब्रिटिश सैन्याला केवळ मोफत धान्य पुरवणे.", "en": "Supplying free grain and rations exclusively to British garrison troops." },
+        { "mr": "संस्थानिकाने स्वतःच्या सैनिकांचे वेतन बंद करून ते पैसे लंडनच्या बँकेत जमा करणे.", "en": "Freezing domestic troop salaries to deposit funds in Bank of England accounts." }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "तैनाती फौजेच्या कराराद्वारे संबंधित भारतीय राज्याला ब्रिटिश सैन्याची तुकडी पदरी बाळगावी लागत असे. या फौजेच्या नियमित खर्चासाठी संस्थानिकाला ठरवून दिलेली रोख रक्कम द्यावी लागे; आणि रक्कम थकल्यास तितक्या उत्पन्नाचा भूभाग (उदा. अवधचा दोआब किंवा निजामाचा बेरार) कायमचा कंपनीला द्यावा लागत असे.",
+        "en": "Under the Subsidiary Alliance, native rulers were required to station British troops within their borders. For their upkeep, states either remitted a cash subsidy or, in the case of default or larger states, permanently ceded fertile tracts of territory yielding equivalent revenue."
+      }
+    },
+    {
+      "id": 5,
+      "question": {
+        "mr": "१८०५ च्या दुसऱ्या इंग्रज-मराठा युद्धादरम्यान ब्रिटिशांनी दौलतराव शिंदे यांच्याशी केलेल्या कोणत्या तहाने गोहद आणि ग्वाल्हेरचा किल्ला शिंद्यांना परत केला गेला?",
+        "en": "Under which subsequent treaty in November 1805, modifying the earlier settlement with Daulat Rao Scindia, were the territories of Gohad and Gwalior Fort restored back to Scindia?"
+      },
+      "options": [
+        { "mr": "मुस्तफापूरचा तह (Treaty of Mustafapur / Burhanpur Revision)", "en": "Treaty of Mustafapur" },
+        { "mr": "सुरजी-अंजनगावचा तह", "en": "Treaty of Surji-Anjangaon" },
+        { "mr": "देवगावचा तह", "en": "Treaty of Deogaon" },
+        { "mr": "वसईचा तह", "en": "Treaty of Bassein" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "२२ नोव्हेंबर १८०५ रोजी सर जॉर्ज बार्लो याने दौलतराव शिंदे यांच्याशी मुस्तफापूर येथे सुधारित तह केला. लॉर्ड वेलस्लीने पूर्वी घेतलेला गोहद व ग्वाल्हेरचा किल्ला शिंद्यांना परत केला आणि चंबळ नदी ही दोन्ही राज्यांमधील सीमारेषा म्हणून निश्चित केली गेली.",
+        "en": "Signed on 22 November 1805 under Acting Governor-General Sir George Barlow, the Treaty of Mustafapur modified the terms of Surji-Anjangaon, restoring Gwalior Fort and Gohad to Daulat Rao Scindia and demarcating the Chambal River as the imperial boundary."
+      }
+    },
+    {
+      "id": 6,
+      "question": {
+        "mr": "१८०९ च्या 'अमृतसरच्या तहाने' (Treaty of Amritsar 1809) ब्रिटिश ईस्ट इंडिया कंपनीने महाराजा रणजितसिंग यांच्या कोणत्या महत्त्वाकांक्षेला पायबंद घातला?",
+        "en": "Which major geopolitical ambition of Maharaja Ranjit Singh was effectively checked by the British East India Company via the Treaty of Amritsar (1809)?"
+      },
+      "options": [
+        { "mr": "सतलज नदीच्या पूर्वेकडील शीख संस्थानांवर (सिस-सतलज राज्ये) प्रभुत्व स्थापन करण्याची महत्त्वाकांक्षा", "en": "His ambition to absorb and establish paramountcy over the Cis-Sutlej Sikh states east of the Sutlej River" },
+        { "mr": "अफगाणिस्तानवर आक्रमण करून पेशावर जिंकण्याची मोहीम", "en": "His plan to invade Afghanistan and annex Peshawar" },
+        { "mr": "काश्मीर आणि लडाख जिंकण्याची मोहीम", "en": "His campaigns to capture Kashmir and Ladakh" },
+        { "mr": "सिंध प्रांतावर थेट ताबा मिळवण्याची योजना", "en": "His plan to annex lower Sindh" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "महाराजा रणजितसिंग सतलज नदी ओलांडून पटियाला, नाभा, जिंद यांसारखी सिस-सतलज शीख संस्थाने आपल्या साम्राज्यात समाविष्ट करू पाहत होते. चार्ल्स मेटकॉफ याने १८०९ च्या अमृतसरच्या तहाद्वारे सतलज ही सीमारेषा निश्चित केली आणि सिस-सतलज राज्यांना ब्रिटिशांच्या संरक्षणाखाली आणून रणजितसिंगांचा पूर्व दिशेतील विस्तार रोखला.",
+        "en": "The Treaty of Amritsar (1809) halted Maharaja Ranjit Singh's eastward expansion across the Sutlej River. The British took the Cis-Sutlej states (such as Patiala, Jind, and Nabha) under their protection, while recognizing Ranjit Singh's sovereignty west and north of the Sutlej."
+      }
+    },
+    {
+      "id": 7,
+      "question": {
+        "mr": "१८१६ च्या सुगौलीच्या तहाने (Treaty of Sugauli 1816) ब्रिटिशांना लाभलेल्या प्रादेशिक फायद्यांबाबत खालील विधाने विचारात घ्या:\nअ. नेपाळच्या राज्याने काठमांडू येथे कायमस्वरूपी ब्रिटिश रेसिडेंट ठेवणे मान्य केले.\nब. या तहाने ब्रिटिशांना मध्य आशिया आणि तिबेटकडे जाणाऱ्या व्यापारी खिंडींवर थेट नियंत्रण मिळवून दिले.\nवरीलपैकी कोणते/ती विधान/ने बरोबर आहेत?",
+        "en": "Consider the following statements regarding the strategic gains secured by the British under the Treaty of Sugauli (1816):\na. The Kingdom of Nepal agreed to host a permanent British Resident at Kathmandu.\nb. It secured direct British oversight over mountain passes and trans-Himalayan trade routes to Tibet.\nWhich of the statements given above is/are correct?"
+      },
+      "options": [
+        { "mr": "फक्त अ", "en": "Only a" },
+        { "mr": "फक्त ब", "en": "Only b" },
+        { "mr": "अ आणि ब दोन्ही", "en": "Both a and b" },
+        { "mr": "दोन्ही नाही", "en": "Neither a nor b" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "दोन्ही विधाने अचूक आहेत. मार्च १८१६ च्या सुगौलीच्या तहाने नेपाळने काठमांडू येथे ब्रिटिश रेसिडेंसी मान्य केली आणि कुमाऊँ-गढवालचा भूभाग इंग्रजांना दिला, ज्यामुळे ब्रिटिशांना हिमालयातील व्यापारी खिंडींवरून तिबेटशी व्यापार करण्याचे मोक्याचे मार्ग मिळाले.",
+        "en": "Both statements are correct. The 1816 Treaty of Sugauli ended the Anglo-Nepalese War, stationing a British Resident at Kathmandu and granting the British control over Kumaon and Garhwal, which commanded vital trade passes into Tibet."
+      }
+    },
+    {
+      "id": 8,
+      "question": {
+        "mr": "१८१७ मध्ये नागपूरच्या भोसले दरबारात 'सीताबर्डीच्या लढाईत' (Battle of Sitabuldi) ब्रिटिशांशी संघर्ष करणारे मराठा राज्यकर्ते कोण होते?",
+        "en": "Who was the Maratha ruler of Nagpur who fought the British at the Battle of Sitabuldi in November 1817 during the Third Anglo-Maratha War?"
+      },
+      "options": [
+        { "mr": "मुधोजी उर्फ अप्पासाहेब भोसले", "en": "Mudhoji alias Appa Sahib Bhonsle" },
+        { "mr": "रघूजी भोसले दुसरे", "en": "Raghuji Bhonsle II" },
+        { "mr": "परसोजी भोसले", "en": "Parsoji Bhonsle" },
+        { "mr": "राघोजी भोसले तिसरे", "en": "Raghuji Bhonsle III" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "२६-२७ नोव्हेंबर १८१७ रोजी नागपूरचे राज्यकर्ते अप्पासाहेब भोसले यांनी पेशव्यांना पाठिंबा देण्यासाठी सीताबर्डी टेकडीवर ब्रिटिश रेसिडेन्सीवर हल्ला चढवला. या लढाईत ब्रिटिश सैन्याने त्यांचा पराभव केला, ज्यामुळे नागपूरचे सार्वभौमत्व नष्ट झाले आणि नंतर १८५४ मध्ये डलहौसीने नागपूर संस्थान पूर्णपणे खालसा केले.",
+        "en": "On 26–27 November 1817, Appa Sahib Bhonsle of Nagpur launched an assault against the British Residency at the Battle of Sitabuldi. Defeated by British forces, Appa Sahib was deposed, leading to Company paramountcy over Nagpur."
+      }
+    },
+    {
+      "id": 9,
+      "question": {
+        "mr": "१८१८ मध्ये पेशवाईचा पाडाव झाल्यानंतर ब्रिटिशांनी छत्रपती शिवाजी महाराजांचे थेट वंशज छत्रपती प्रतापसिंह यांच्याशी कोणता तह करून साताऱ्याचे राज्य स्वाधीन केले?",
+        "en": "Following the collapse of the Peshwai in 1818, which treaty was concluded by the British with Chhatrapati Pratapsingh to establish the tributary state of Satara?"
+      },
+      "options": [
+        { "mr": "साताऱ्याचा तह (Treaty of Satara - १८१९)", "en": "Treaty of Satara (1819)" },
+        { "mr": "पुण्याचा तह", "en": "Treaty of Poona" },
+        { "mr": "कनकपूरचा तह", "en": "Treaty of Kanakpur" },
+        { "mr": "महाबळेश्वरचा तह", "en": "Treaty of Mahabaleshwar" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "२५ सप्टेंबर १८१९ रोजी कॅप्टन जेम्स ग्रँट डफ आणि छत्रपती प्रतापसिंह यांच्यात साताऱ्याचा तह झाला. या तहानुसार ब्रिटिशांनी प्रतापसिंहांना साताऱ्याची स्वतंत्र गादी दिली, परंतु अंतर्गत कारभारात ब्रिटिश रेसिडेंटचा सल्ला पाळणे आणि परकीय सत्तांशी संबंध न ठेवणे बंधनकारक केले.",
+        "en": "Signed on 25 September 1819 between Captain James Grant Duff (on behalf of Mountstuart Elphinstone) and Chhatrapati Pratapsingh, the Treaty of Satara created the miniature kingdom of Satara under British political suzerainty."
+      }
+    },
+    {
+      "id": 10,
+      "question": {
+        "mr": "१८२२ मधील महालवारी महसूल पद्धतीत (Mahalwari System) 'महाल' या संकल्पनेचा अचूक प्रशासकीय अर्थ काय होता?",
+        "en": "What was the exact administrative definition of the term 'Mahal' under the Mahalwari revenue settlement instituted in 1822?"
+      },
+      "options": [
+        { "mr": "संपूर्ण गाव किंवा अनेक खेड्यांचा मिळून बनलेला एक महसुली संपदा/एकक (Village or Estate)", "en": "An entire village or a cluster of villages assessed as a single fiscal estate/unit" },
+        { "mr": "एका मोठ्या जमीनदाराचा खाजगी राजवाडा", "en": "A private palace of a large regional zamindar" },
+        { "mr": "केवळ सिंचित शेतीचा छोटा तुकडा", "en": "Exclusively an irrigated piece of canal land" },
+        { "mr": "ब्रिटीश सैनिकांची कायमस्वरूपी छावणी", "en": "A permanent cantonment for British soldiers" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "महालवारी पद्धतीत 'महाल' म्हणजे एक किंवा अनेक गावांचा महसुली समूह. यात स्वतंत्र शेतकऱ्याऐवजी संपूर्ण ग्रामसमूह संयुक्तपणे महसूल भरण्यास बांधील असे आणि गावाचा प्रमुख (नंबरदार) हा महसूल गोळा करून सरकारी तिजोरीत जमा करत असे.",
+        "en": "Under the Mahalwari system, a 'Mahal' was a revenue estate consisting of a single village or a group of villages. The land revenue was assessed collectively for the Mahal, and the village community was jointly held responsible for payment."
+      }
+    },
+    {
+      "id": 11,
+      "question": {
+        "mr": "१८२४ ते १८२६ दरम्यान चाललेल्या पहिल्या इंग्रज-ब्रह्मी युद्धाच्या वेळी भारताचा गव्हर्नर-जनरल कोण होता?",
+        "en": "Who served as the Governor-General of India during the First Anglo-Burmese War (1824–1826)?"
+      },
+      "options": [
+        { "mr": "लॉर्ड ॲमहर्स्ट (Lord Amherst)", "en": "Lord Amherst" },
+        { "mr": "लॉर्ड हेस्टिंग्स (Lord Hastings)", "en": "Lord Hastings" },
+        { "mr": "लॉर्ड विल्यम बेंटिंक (Lord William Bentinck)", "en": "Lord William Bentinck" },
+        { "mr": "लॉर्ड ऑकलंड (Lord Auckland)", "en": "Lord Auckland" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "लॉर्ड ॲमहर्स्ट (१८२३-१८२८) हा पहिल्या इंग्रज-ब्रह्मी युद्धाच्या वेळी गव्हर्नर-जनरल होता. या युद्धात ब्रिटिशांनी रंगून जिंकले आणि १८२६ च्या यांदाबूच्या तहाने आसाम, मणिपूर व किनारपट्टीचा भूभाग मिळवला.",
+        "en": "Lord Amherst (1823–1828) directed the First Anglo-Burmese War, which resulted in the acquisition of Assam, Manipur, Arakan, and Tenasserim through the Treaty of Yandabo in February 1826."
+      }
+    },
+    {
+      "id": 12,
+      "question": {
+        "mr": "१८२९ मध्ये सती प्रथा बंदी कायदा संमत करताना लॉर्ड विल्यम बेंटिंकला खालीलपैकी कोणत्या महान भारतीय समाजसुधारकाचे मोलाचे साहाय्य लाभले?",
+        "en": "Whose relentless advocacy and scholarly campaign decisively supported Lord William Bentinck in enacting the abolition of Sati in 1829?"
+      },
+      "options": [
+        { "mr": "राजा राममोहन रॉय", "en": "Raja Ram Mohan Roy" },
+        { "mr": "ईश्वरचंद्र विद्यासागर", "en": "Ishwar Chandra Vidyasagar" },
+        { "mr": "केशवचंद्र सेन", "en": "Keshub Chunder Sen" },
+        { "mr": "द्वारकानाथ टागोर", "en": "Dwarkanath Tagore" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "राजा राममोहन रॉय यांनी १८१८ पासून सती प्रथेविरुद्ध व्यापक जनजागृती केली. त्यांनी प्राचीन हिंदू धर्मग्रंथांचे दाखले देऊन सिद्ध केले की सती प्रथा धार्मिकदृष्ट्या अनिवार्य नाही. त्यांच्या या ऐतिहासिक पाठपुराव्यामुळेच बेंटिंकने १८२९ चे रेग्युलेशन XVII संमत केले.",
+        "en": "Raja Ram Mohan Roy had campaigned vigorously against Sati since 1818, citing Hindu scriptures to demonstrate that the rite lacked Vedic authority. His sustained reformist support provided the moral backing for Bentinck's Regulation XVII in 1829."
+      }
+    },
+    {
+      "id": 13,
+      "question": {
+        "mr": "१८३३ च्या सनदी कायद्याद्वारे (Charter Act 1833) केंद्रीय कायदेमंडळात विधी सदस्य (Law Member) म्हणून समाविष्ट करण्यात आलेल्या चौथ्या सदस्याच्या अधिकारकक्षेबाबत खालील विधाने विचारात घ्या:\nअ. त्याला केवळ कायदेनिर्मितीच्या बैठकांमध्ये उपस्थित राहण्याचा आणि मत देण्याचा अधिकार होता.\nब. कार्यकारी स्वरूपाच्या प्रशासकीय बैठकांमध्ये त्याला पूर्ण मतदानाचा अधिकार नव्हता.\nवरीलपैकी कोणते/ती विधान/ने बरोबर आहेत?",
+        "en": "Consider the following statements regarding the status of the fourth member (Law Member) added under the Charter Act of 1833:\na. He was entitled to sit and vote strictly during legislative meetings of the Council.\nb. He was denied full voting rights during executive and administrative sessions.\nWhich of the statements given above is/are correct?"
+      },
+      "options": [
+        { "mr": "फक्त अ", "en": "Only a" },
+        { "mr": "फक्त ब", "en": "Only b" },
+        { "mr": "अ आणि ब दोन्ही", "en": "Both a and b" },
+        { "mr": "दोन्ही नाही", "en": "Neither a nor b" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "दोन्ही विधाने योग्य आहेत. १८३३ च्या कायद्याने लॉर्ड मेकॉल हा पहिला विधी सदस्य बनला. त्याला कायदेमंडळाच्या बैठकीत हजर राहून कायदे बनवण्याचा अधिकार होता, परंतु कार्यकारी निर्णय घेताना त्याला मतदानाचा अधिकार नव्हता. १८५३ च्या कायद्याने या विधी सदस्याला पूर्ण कार्यकारी दर्जा दिला गेला.",
+        "en": "Both statements are correct. The fourth councillor (the Law Member, first held by Macaulay) was qualified to attend and vote exclusively when laws and regulations were being deliberated, possessing no executive vote until regularized by the Charter Act of 1853."
+      }
+    },
+    {
+      "id": 14,
+      "question": {
+        "mr": "१८३५ मध्ये लॉर्ड मेकॉलने मांडलेल्या प्रसिद्ध शिक्षणविषयक मिनिटामध्ये (Macaulay's Minute 1835) खालीलपैकी कोणते उद्दिष्ट स्पष्टपणे नमूद केले होते?",
+        "en": "Which famous objective was explicitly articulated by Lord Macaulay in his Minute on Indian Education in February 1835?"
+      },
+      "options": [
+        { "mr": "\"रक्ताने आणि रंगाने भारतीय, परंतु अभिरुचीने, विचाराने, नैतिकतेने आणि बुद्धीने इंग्रज असणारा एक वर्ग निर्माण करणे.\"", "en": "\"To form a class who may be interpreters between us and the millions whom we govern; a class of persons, Indian in blood and colour, but English in taste, in opinions, in morals, and in intellect.\"" },
+        { "mr": "\"भारतातील सर्व नागरिकांना लंडन विद्यापीठाच्या पदव्या मोफत देणे.\"", "en": "\"To confer London University degrees free of cost to all Indian citizens.\"" },
+        { "mr": "\"पारंपरिक संस्कृत आणि अरबी पाठशाळांना ५०% महसूल अनुदान देणे.\"", "en": "\"To provide 50% revenue grants to traditional Sanskrit and Arabic pathshalas.\"" },
+        { "mr": "\"इंग्रजी शिक्षणावर बंदी घालून केवळ मातृभाषेला प्रोत्साहन देणे.\"", "en": "\"To ban English education in order to exclusively promote native mother tongues.\"" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "लॉर्ड मेकॉलने २ फेब्रुवारी १८३५ च्या अहवालात स्पष्टपणे लिहिले होते की, कंपनीला प्रशासकीय कामांसाठी भारतीय कारकून व मध्यस्थ हवे आहेत. म्हणून त्याने 'रक्ताने भारतीय पण विचाराने इंग्रज' असा पाश्चात्य सुशिक्षित वर्ग तयार करण्यासाठी इंग्रजी माध्यमाची शिफारस केली.",
+        "en": "In his celebrated Minute of 2 February 1835, Macaulay famously declared that colonial educational funds should be directed towards creating an English-educated elite who would be 'Indian in blood and colour, but English in taste, in opinions, in morals, and in intellect'."
+      }
+    },
+    {
+      "id": 15,
+      "question": {
+        "mr": "१८४३ मध्ये सिंध प्रांताच्या विलीनीकरणानंतर त्या कारवाईवर 'Peccavi' (I have sinned / I have Sindh) हा संदेश पाठवणारे ब्रिटिश लष्करी अधिकारी कोण होते?",
+        "en": "Following the annexation of Sindh in 1843, which British military officer famously dispatched the punning telegram 'Peccavi' ('I have Sindh')?"
+      },
+      "options": [
+        { "mr": "सर चार्ल्स नेपियर (Sir Charles Napier)", "en": "Sir Charles Napier" },
+        { "mr": "सर जेम्स आऊट्रम (Sir James Outram)", "en": "Sir James Outram" },
+        { "mr": "सर हेन्री लॉरेन्स (Sir Henry Lawrence)", "en": "Sir Henry Lawrence" },
+        { "mr": "कर्नल विल्यम स्लीमन (Colonel William Sleeman)", "en": "Colonel William Sleeman" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "सर चार्ल्स नेपियरने १८४३ मध्ये मियानी आणि दाबोच्या लढाईत सिंधच्या अमिरांचा पराभव केला. ही मोहीम नैतिकदृष्ट्या समर्थनीय नसली तरी साम्राज्यविस्तारासाठी फायदेशीर होती. या विलीनीकरणावर नेपियरने लॅटिन शब्द 'Peccavi' (ज्याचा अर्थ 'I have sinned' म्हणजेच 'मी सिंध जिंकला') हा प्रसिद्ध संदेश पाठवला होता.",
+        "en": "Major-General Sir Charles Napier carried out the conquest of Sindh in 1843. Acknowledging that the unprovoked annexation lacked moral justification, the satirical magazine Punch reported that Napier dispatched the Latin pun 'Peccavi' ('I have sinned' / 'I have Sindh')."
+      }
+    },
+    {
+      "id": 16,
+      "question": {
+        "mr": "१८४५-४६ च्या पहिल्या इंग्रज-शीख युद्धातील खालील लढायांचा योग्य कालानुक्रम लावा:\n१. मुदकीची लढाई (Battle of Mudki)\n२. फिरोजशाहची लढाई (Battle of Ferozeshah)\n३. अलीवालची लढाई (Battle of Aliwal)\n४. सोब्राऑनची लढाई (Battle of Sobraon)\nयोग्य पर्याय निवडा:",
+        "en": "Arrange the following battles of the First Anglo-Sikh War (1845–1846) in correct chronological order:\n1. Battle of Mudki\n2. Battle of Ferozeshah\n3. Battle of Aliwal\n4. Battle of Sobraon\nChoose the correct option:"
+      },
+      "options": [
+        { "mr": "१ ➔ २ ➔ ३ ➔ ४", "en": "1 ➔ 2 ➔ 3 ➔ 4" },
+        { "mr": "२ ➔ १ ➔ ३ ➔ ४", "en": "2 ➔ 1 ➔ 3 ➔ 4" },
+        { "mr": "१ ➔ ३ ➔ २ ➔ ४", "en": "1 ➔ 3 ➔ 2 ➔ 4" },
+        { "mr": "३ ➔ १ ➔ ४ ➔ २", "en": "3 ➔ 1 ➔ 4 ➔ 2" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "पहिल्या इंग्रज-शीख युद्धातील लढायांचा कालक्रम:\n१. मुदकीची लढाई: १८ डिसेंबर १८४५\n२. फिरोजशाहची लढाई: २१-२२ डिसेंबर १८४५\n३. अलीवालची लढाई: २८ जानेवारी १८४६\n४. सोब्राऑनची लढाई: १० फेब्रुवारी १८४६ (निर्णायक लढाई).\nत्यामुळे योग्य क्रम १ ➔ २ ➔ ३ ➔ ४ असा आहे.",
+        "en": "The correct chronological order of the battles of the First Anglo-Sikh War is:\n1. Battle of Mudki (18 Dec 1845)\n2. Battle of Ferozeshah (21–22 Dec 1845)\n3. Battle of Aliwal (28 Jan 1846)\n4. Battle of Sobraon (10 Feb 1846).\nHence, the sequence is 1 ➔ 2 ➔ 3 ➔ 4."
+      }
+    },
+    {
+      "id": 17,
+      "question": {
+        "mr": "लॉर्ड डलहौसीने आपल्या 'खालसा धोरणांतर्गत' (Doctrine of Lapse) १८५३ मध्ये झाशीचे संस्थान विलीन करताना तेथील कोणत्या दिवंगत राजाच्या दत्तक पुत्राला नामंजूर केले होते?",
+        "en": "Under the Doctrine of Lapse, when Lord Dalhousie annexed the state of Jhansi in 1853, whose adopted son (Damodar Rao) was refused recognition by the British?"
+      },
+      "options": [
+        { "mr": "राजा गंगाधर राव (Raja Gangadhar Rao)", "en": "Raja Gangadhar Rao" },
+        { "mr": "राजा रामचंद्र राव", "en": "Raja Ramchandra Rao" },
+        { "mr": "रघुनाथ राव", "en": "Raghunath Rao" },
+        { "mr": "शिवराव भाऊ", "en": "Shiv Rao Bhau" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "नोव्हेंबर १८५३ मध्ये झाशीचे राजे गंगाधर राव यांचे निधन झाले. मृत्यूपूर्वी त्यांनी दामोदर राव या मुलाला दत्तक घेतले होते. राणी लक्ष्मीबाई यांनी या दत्तक विधानाला मान्यता देण्याची मागणी केली, परंतु डलहौसीने झाशी हे ब्रिटिशांच्या अधिपत्याखालील राज्य असल्याचा दावा करून दत्तक नामंजूर केले आणि १८५४ मध्ये झाशी ब्रिटिश साम्राज्यात विलीन केले.",
+        "en": "Raja Gangadhar Rao of Jhansi passed away in November 1853 after adopting five-year-old Damodar Rao. Citing the Doctrine of Lapse, Lord Dalhousie rejected Rani Lakshmibai's petitions and annexed the principality to British India in 1854."
+      }
+    },
+    {
+      "id": 18,
+      "question": {
+        "mr": "१८५३ मध्ये लॉर्ड डलहौसीने सुरू केलेल्या भारतातील पहिल्या रेल्वे मार्गावर (मुंबई ते ठाणे) वापरण्यात आलेल्या तीन वाफेच्या इंजिनांची नावे काय होती?",
+        "en": "What were the names of the three steam locomotives that hauled India's first passenger train between Bombay and Thane on 16 April 1853?"
+      },
+      "options": [
+        { "mr": "सिंध, सुलतान आणि साहिब (Sindh, Sultan, and Sahib)", "en": "Sindh, Sultan, and Sahib" },
+        { "mr": "अकबर, बाबर आणि हुमायूँ", "en": "Akbar, Babur, and Humayun" },
+        { "mr": "व्हिक्टोरिया, अल्बर्ट आणि एडवर्ड", "en": "Victoria, Albert, and Edward" },
+        { "mr": "चेतक, पवन आणि बादल", "en": "Chetak, Pawan, and Badal" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१६ एप्रिल १८५३ रोजी बोरीबंदर ते ठाणे दरम्यान धावलेल्या पहिल्या २१ मैल (३४ किमी) लांबीच्या गाडीला १४ डबे जोडलेले होते आणि तिला 'सिंध', 'सुलतान' आणि 'साहिब' ही तीन वाफेची इंजिने लावण्यात आली होती.",
+        "en": "The historic first passenger train on 16 April 1853, operated by the Great Indian Peninsula Railway across 34 km between Bori Bunder and Thane, was pulled by three steam locomotives named Sindh, Sultan, and Sahib."
+      }
+    },
+    {
+      "id": 19,
+      "question": {
+        "mr": "१८५६ मध्ये लॉर्ड डलहौसीने 'कुशासनाचा' (गैरकारभाराचा) ठपका ठेवून अवधचे संस्थान विलीन केले, तेव्हा अवधचा पदच्युत नवाब कोण होता?",
+        "en": "When Lord Dalhousie annexed the state of Awadh in February 1856 on charges of chronic misrule, who was the deposed Nawab of Awadh?"
+      },
+      "options": [
+        { "mr": "वाजिद अली शाह (Wajid Ali Shah)", "en": "Wajid Ali Shah" },
+        { "mr": "अमजद अली शाह", "en": "Amjad Ali Shah" },
+        { "mr": "सादत अली खान", "en": "Saadat Ali Khan" },
+        { "mr": "बिरजिस काद्र", "en": "Birjis Qadr" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "७ फेब्रुवारी १८५६ रोजी डलहौसीने अवधचे संस्थान खालसा केले. तत्कालीन नवाब वाजिद अली शाह यांना पदच्युत करून वार्षिक ₹१२ लाखांच्या पेन्शनवर कलकत्ता (मटियाबुर्ज) येथे नजरकैदेत पाठवण्यात आले. त्यांच्या पत्नी बेगम हजरत महल आणि मुलगा बिरजिस काद्र यांनी पुढे १८५७ च्या लखनौ उठावाचे नेतृत्व केले.",
+        "en": "On 7 February 1856, Nawab Wajid Ali Shah was deposed on charges of maladministration and exiled to Metiabruz near Calcutta on a pension of ₹12 lakhs per annum, prompting his wife Begum Hazrat Mahal to lead the rebellion in Awadh in 1857."
+      }
+    },
+    {
+      "id": 20,
+      "question": {
+        "mr": "२ ऑगस्ट १८५८ रोजी संमत झालेल्या भारत सरकार कायद्याद्वारे निर्माण करण्यात आलेल्या 'इंडिया कौन्सिल'च्या (Council of India) रचनेबाबत खालीलपैकी कोणते विधान बरोबर आहे?",
+        "en": "Which of the following statements is accurate regarding the composition of the Council of India established under the Act of 1858?"
+      },
+      "options": [
+        { "mr": "कौन्सिलमध्ये एकूण १५ सदस्य होते, ज्यापैकी किमान ९ सदस्यांना भारतात किमान १० वर्षे सेवा केल्याचा अनुभव असणे आवश्यक होते.", "en": "The Council consisted of 15 members, of whom at least 9 were required to have served or resided in India for at least 10 years." },
+        { "mr": "कौन्सिलमध्ये केवळ ब्रिटिश संसदेचे निवडून आलेले खासदार असत.", "en": "The Council was composed exclusively of elected members of the British Parliament." },
+        { "mr": "कौन्सिलमधील सर्व सदस्यांची नियुक्ती भारताच्या व्हाइसरॉयमार्फत केली जात असे.", "en": "All members of the Council were directly appointed by the Viceroy of India." },
+        { "mr": "कौन्सिलमध्ये निम्म्या जागा भारतीय राजांसाठी राखीव ठेवण्यात आल्या होत्या.", "en": "Half of the Council seats were statutorily reserved for native Indian princes." }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१८५८ च्या कायद्यानुसार लंडनमध्ये भारत मंत्र्याला साहाय्य करण्यासाठी १५ सदस्यांचे इंडिया कौन्सिल स्थापन झाले. यातील ८ सदस्य ब्रिटिश राजा (Crown) नामनिर्देशित करत असे आणि ७ सदस्य कोर्ट ऑफ डायरेक्टर्सकडून निवडले जात. सर्वात महत्त्वाची अट म्हणजे यातील किमान ९ सदस्यांनी भारतात किमान १० वर्षे सेवा केलेली असावी आणि भारत सोडल्याला १० वर्षांपेक्षा जास्त काळ झालेला नसावा.",
+        "en": "Under the Government of India Act 1858, the Council of India comprised 15 members (8 appointed by the Crown, 7 elected by Company Directors). To ensure administrative expertise, at least nine members were required to have served in India for at least 10 years and not have left India more than 10 years prior to appointment."
+      }
+    },
+    {
+      "id": 21,
+      "question": {
+        "mr": "१८६० मध्ये जेम्स विल्सन यांनी मांडलेल्या पहिल्या अर्थसंकल्पानंतर १८६१ मध्ये कागदी चलनाचे व्यवस्थापन अधिकृतपणे सरकारकडे घेण्यासाठी कोणता कायदा करण्यात आला?",
+        "en": "Following the fiscal reforms of James Wilson, which statute was passed in 1861 to vest the monopoly of paper currency issue exclusively with the Government of India?"
+      },
+      "options": [
+        { "mr": "कागदी चलन कायदा १८६१ (Paper Currency Act 1861)", "en": "Paper Currency Act 1861" },
+        { "mr": "बँकिंग नियमन कायदा १८६१", "en": "Banking Regulation Act 1861" },
+        { "mr": "भारतीय टांकसाळ कायदा १८६१", "en": "Indian Mint Act 1861" },
+        { "mr": "स्टेट बँक ऑफ इंडिया कायदा", "en": "State Bank of India Act" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१८६१ च्या 'पेपर करन्सी ॲक्ट'ने खाजगी व प्रेसिडेन्सी बँकांचे (जसे बँक ऑफ बेंगॉल) नोटा छापण्याचे अधिकार काढून घेतले आणि संपूर्ण भारतात अधिकृत कागदी नोटा छापण्याचा आणि वितरणाचा एकाधिकार भारत सरकारकडे (Crown Government) केंद्रित केला.",
+        "en": "The Paper Currency Act of 1861 terminated the private note-issuing privileges of the Presidency Banks, conferring upon the Government of India the exclusive monopoly to issue paper currency notes throughout British India."
+      }
+    },
+    {
+      "id": 22,
+      "question": {
+        "mr": "१८६१ च्या 'इंडियन हायकोर्ट्स ॲक्ट'नुसार जुनी सर्वोच्च न्यायालये व सदर अदालती बरखास्त झाल्यानंतर ऑगस्ट १८६२ मध्ये मुंबई उच्च न्यायालयाचे औपचारिक उद्घाटन कोणाच्या अध्यक्षतेखाली झाले?",
+        "en": "Under the Indian High Courts Act of 1861, which eliminated the Supreme Courts and Sadar Adalats, when was the chartered Bombay High Court formally inaugurated?"
+      },
+      "options": [
+        { "mr": "१४ ऑगस्ट १८६२ (सर मॅथ्यू सॉस यांच्या अध्यक्षतेखाली)", "en": "14 August 1862 (under Sir Matthew Sausse)" },
+        { "mr": "२ जुलै १८६२", "en": "2 July 1862" },
+        { "mr": "१५ ऑगस्ट १८६२", "en": "15 August 1862" },
+        { "mr": "१ जानेवारी १८६३", "en": "1 January 1863" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१८६१ च्या कायद्यानुसार कलकत्ता हायकोर्ट २ जुलै १८६२ रोजी आणि मद्रास हायकोर्ट १५ ऑगस्ट १८६२ रोजी सुरू झाले, तर 'मुंबई उच्च न्यायालयाचे' अधिकृत उद्घाटन १४ ऑगस्ट १८६२ रोजी झाले. सर मॅथ्यू रिचर्ड सॉस हे त्याचे पहिले मुख्य न्यायाधीश बनले.",
+        "en": "The High Court of Judicature at Bombay was formally inaugurated on 14 August 1862 under Chief Justice Sir Matthew Richard Sausse, consolidating the judicial authority of the old Supreme Court of Bombay and the Sadar Diwani/Faujdari Adalats."
+      }
+    },
+    {
+      "id": 23,
+      "question": {
+        "mr": "१८६६ मध्ये सर जॉन लॉरेन्स यांच्या कार्यकाळात आग्रा येथे स्थापन झालेले चौथे उच्च न्यायालय १८६९ मध्ये कायमस्वरूपी कोणत्या शहरात हलवण्यात आले?",
+        "en": "The fourth High Court, originally established at Agra in 1866 under the High Courts Act of 1861, was permanently shifted to which city in 1869?"
+      },
+      "options": [
+        { "mr": "अलाहाबाद (प्रयागराज)", "en": "Allahabad (Prayagraj)" },
+        { "mr": "लखनौ", "en": "Lucknow" },
+        { "mr": "कानपूर", "en": "Kanpur" },
+        { "mr": "दिल्ली", "en": "Delhi" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "वायव्य प्रांतासाठी मार्च १८६६ मध्ये आग्रा येथे उच्च न्यायालय सुरू करण्यात आले होते. १८६९ मध्ये प्रशासकीय सोयीसाठी हे न्यायालय आग्राहून अलाहाबाद येथे कायमचे हलवण्यात आले आणि पुढे १९१९ मध्ये त्याचे अधिकृत नाव 'अलाहाबाद उच्च न्यायालय' करण्यात आले.",
+        "en": "The High Court of Judicature for the North-Western Provinces was initially set up at Agra in March 1866 under Sir Walter Morgan. In 1869, it was permanently relocated to Allahabad, formally becoming known as the Allahabad High Court."
+      }
+    },
+    {
+      "id": 24,
+      "question": {
+        "mr": "१८७० मधील 'भारतीय दंड संहिता दुरुस्ती कायद्याद्वारे' (IPC Amendment Act 1870) सर जेम्स स्टीफन यांनी संहितेत कोणते प्रसिद्ध कलम नव्याने समाविष्ट केले?",
+        "en": "Which famous penal provision was officially inserted into the Indian Penal Code via the Amending Act of 1870 by Law Member Sir James Fitzjames Stephen?"
+      },
+      "options": [
+        { "mr": "कलम १२४-अ (Section 124A - राजद्रोह / Sedition)", "en": "Section 124A (Sedition)" },
+        { "mr": "कलम ३०२ (हत्या / Murder)", "en": "Section 302" },
+        { "mr": "कलम १५३-अ (जातीय तेढ)", "en": "Section 153A" },
+        { "mr": "कलम १४४ (बेकायदेशीर जमाव)", "en": "Section 144" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१८६० च्या मूळ आयपीसीमध्ये राजद्रोहाचे कलम चुकून वगळले गेले होते. वहाबी चळवळ आणि ब्रिटिश सत्तेविरुद्धचा प्रक्षोभ रोखण्यासाठी १८७० च्या दुरुस्ती कायद्यान्वये 'कलम १२४-अ' (राजद्रोह / Sedition) समाविष्ट करण्यात आले. याच कलमाखाली पुढे लोकमान्य टिळक (१८९७ व १९०८) आणि महात्मा गांधी (१९२२) यांच्यावर खटले चालवले गेले.",
+        "en": "Section 124A (Sedition) was incorporated into Chapter VI of the Indian Penal Code through Act XXVII of 1870 under Sir James Fitzjames Stephen to penalize actions exciting disaffection against the Crown, later used prominently against Bal Gangadhar Tilak and Mahatma Gandhi."
+      }
+    },
+    {
+      "id": 25,
+      "question": {
+        "mr": "१८८५ मध्ये लॉर्ड डफरिनच्या काळात संपूर्ण म्यानमार (ब्रह्मदेश) जिंकून ब्रिटिश भारतात जोडल्यानंतर, १८८६ ते १९३७ पर्यंत ब्रह्मदेशाचे प्रशासकीय स्वरूप काय होते?",
+        "en": "Following the Third Anglo-Burmese War in 1885 under Lord Dufferin, how was Burma administratively governed between 1886 and 1937?"
+      },
+      "options": [
+        { "mr": "ब्रह्मदेश हा ब्रिटिश भारताचाच एक अंतर्गत प्रांत (Province of British India) म्हणून एका लेफ्टनंट गव्हर्नरमार्फत चालवला जात होता.", "en": "Burma was administered directly as an internal province of British India headed by a Lieutenant-Governor." },
+        { "mr": "ब्रह्मदेशाला लंडनच्या थेट नियंत्रणाखाली स्वतंत्र वसाहतीचा दर्जा दिला गेला.", "en": "Burma was treated as a separate Crown Colony directly under London." },
+        { "mr": "ब्रह्मदेशाला स्वतंत्र लष्करी संरक्षित राज्य घोषित केले.", "en": "Burma was categorized as an autonomous military protectorate." },
+        { "mr": "ब्रह्मदेशाचा कारभार सिंगापूरच्या गव्हर्नरकडे सोपवला गेला.", "en": "Burma's administration was placed under the Governor of Singapore." }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१ जानेवारी १८८६ रोजी डफरिनने जाहीरनामा काढून संपूर्ण ब्रह्मदेश ब्रिटिश भारतात विलीन केला. १८८६ ते १९३७ या प्रदीर्घ काळात ब्रह्मदेश हा भारताचाच एक प्रांत मानला गेला आणि त्याचा खर्चही भारतीय तिजोरीतून चालवला गेला. पुढे १९३५ च्या भारत सरकार कायद्यानुसार १ एप्रिल १९३७ रोजी ब्रह्मदेश भारतापासून स्वतंत्र करण्यात आला.",
+        "en": "Following annexation on 1 January 1886, Burma was administered as a regular province of the British Indian Empire under the Viceroy. It remained integrated into British India until it was formally separated under the Government of India Act 1935 on 1 April 1937."
+      }
+    }
+  ]
+}

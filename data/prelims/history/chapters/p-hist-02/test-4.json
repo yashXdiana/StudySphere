@@ -1,0 +1,464 @@
+{
+  "testId": "p-hist-02-t4",
+  "title": {
+    "mr": "भारतातील ब्रिटिश सत्तेचा विस्तार व प्रशासन — सराव 4",
+    "en": "British Rule in India — Practice Test 4"
+  },
+  "durationMinutes": 20,
+  "marksPerQuestion": 1,
+  "negativeMarking": 0.25,
+  "totalMarks": 25,
+  "difficulty": "मध्यम ते काठिण्य",
+  "questions": [
+    {
+      "id": 1,
+      "question": {
+        "mr": "१७७३ च्या नियामक कायद्यानुसार (Regulating Act 1773) गव्हर्नर-जनरलच्या कार्यकारी कौन्सिलमध्ये (Executive Council) घेतलेल्या निर्णयांबाबत खालीलपैकी कोणती तरतूद होती?",
+        "en": "Which of the following provisions governed the decision-making process within the Governor-General's Executive Council under the Regulating Act of 1773?"
+      },
+      "options": [
+        { "mr": "निर्णय कौन्सिलच्या बहुमताने घेतले जात असत आणि मतांची बरोबरी झाल्यास गव्हर्नर-जनरलला निर्णायक मत (Casting Vote) देण्याचा अधिकार होता.", "en": "Decisions were made by the majority vote of the Council, and the Governor-General possessed only a casting vote in the event of a tie." },
+        { "mr": "गव्हर्नर-जनरलला कौन्सिलच्या बहुमताचा निर्णय धुडकावून स्वतःचा निर्णय लादण्याचा पूर्ण नकाराधिकार (Veto Power) होता.", "en": "The Governor-General had absolute veto power to override the majority decision of the Council at will." },
+        { "mr": "सर्व निर्णय केवळ कौन्सिलच्या सर्वानुमतेच (Unanimously) घेणे बंधनकारक होते.", "en": "All executive decisions were required to be taken strictly unanimously by the Council." },
+        { "mr": "कौन्सिलचे निर्णय केवळ सल्लागार स्वरूपाचे होते आणि गव्हर्नर-जनरल कोणत्याही निर्णयासाठी बांधील नव्हता.", "en": "The Council's decisions were purely advisory, and the Governor-General was not bound by any votes." }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१७७३ च्या कायद्यानुसार वॉरन हेस्टिंग्सच्या मदतीसाठी चार सदस्यांचे कार्यकारी मंडळ नेमले गेले. सर्व निर्णय बहुमताने घेणे सक्तीचे होते. गव्हर्नर-जनरलला विशेष नकाराधिकार (Veto) नव्हता, केवळ मतांची बरोबरी (Tie) झाल्यासच त्याला एक निर्णायक मत (Casting Vote) वापरता येत असे. त्यामुळे कौन्सिलमधील विरोधकांमुळे हेस्टिंग्सचे कामकाज अनेकदा ठप्प होत असे.",
+        "en": "Under the Regulating Act of 1773, the Governor-General had to abide by the majority decision of his four-member council. He possessed no discretionary veto power and could exercise only a casting vote when the votes were equally divided, frequently leading to administrative deadlocks between Hastings and his councillors."
+      }
+    },
+    {
+      "id": 2,
+      "question": {
+        "mr": "१७८१ च्या 'बंदोबस्त कायद्यान्वये' (Act of Settlement 1781) कलकत्ता सर्वोच्च न्यायालयाच्या कार्यपद्धतीत स्थानिक प्रजेच्या न्यायदानाबाबत कोणता महत्त्वाचा बदल करण्यात आला?",
+        "en": "What significant rule was introduced by the Act of Settlement (Declaratory Act) of 1781 regarding the administration of justice for native Indian subjects by the Calcutta Supreme Court?"
+      },
+      "options": [
+        { "mr": "हिंदूंच्या खटल्यांचा निकाल हिंदू कायद्यांनुसार आणि मुसलमानांच्या खटल्यांचा निकाल मुसलमानी कायद्यांनुसार करण्याचे निर्देश देण्यात आले.", "en": "It mandated that personal and civil disputes of Hindus be adjudicated according to Hindu law and those of Muslims according to Muslim law." },
+        { "mr": "स्थानिक भारतीय प्रजेवर केवळ ब्रिटिश संसदेचे ख्रिश्चन कायदे लागू करण्याची सक्ती करण्यात आली.", "en": "It enforced English Christian personal laws strictly upon all native Indian subjects." },
+        { "mr": "भारतीय प्रजेला सर्वोच्च न्यायालयात कोणत्याही प्रकारची दाद मागण्यास कायमची बंदी घालण्यात आली.", "en": "It completely barred native Indian subjects from seeking redress before the Supreme Court." },
+        { "mr": "सर्व स्थानिक कायद्यांची जागा तात्काळ फ्रेंच नागरी संहितेने घेतली.", "en": "It substituted all indigenous customs with the French civil code." }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१७८१ च्या दुरुस्ती कायद्याने सर्वोच्च न्यायालयाला निर्देश दिले की कलकत्त्यातील प्रकरणांमध्ये स्थानिक रहिवाशांच्या सामाजिक, धार्मिक रूढी व वैयक्तिक कायद्यांचा आदर केला पाहिजे. वारसाहक्क, विवाह आणि कौटुंबिक करारांच्या वादांत हिंदूंवर त्यांचे पारंपरिक कायदे आणि मुसलमानांवर शरियत कायदे लागू केले गेले.",
+        "en": "The Act of Settlement of 1781 directed the Supreme Court to administer personal laws of the defendants in inheritance, succession, and contract matters, mandating that Hindu laws be applied to Hindus and Mohammedan laws to Muslims, respecting native customs."
+      }
+    },
+    {
+      "id": 3,
+      "question": {
+        "mr": "१७९३ च्या 'कायमधारा पद्धती'अंतर्गत (Permanent Settlement) जमीन महसूल नियमित न भरणाऱ्या जमीनदारांची इस्टेट त्वरित जप्त करून लिलावात काढण्याच्या नियमाला काय म्हटले जात असे?",
+        "en": "What was the administrative rule called under the Permanent Settlement of 1793 whereby a zamindar's estate was immediately auctioned off if revenue was not remitted on the designated date before dusk?"
+      },
+      "options": [
+        { "mr": "सूर्यास्त कायदा (Sunset Law)", "en": "Sunset Law" },
+        { "mr": "जप्ती संहिता (Distraint Code)", "en": "Distraint Code" },
+        { "mr": "लिलाव हुकूमनामा (Auction Decree)", "en": "Auction Decree" },
+        { "mr": "इजारदारी नियम (Ijardari Regulation)", "en": "Ijardari Regulation" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१७९४ मध्ये कायमधारा पद्धतीत 'सूर्यास्त कायदा' (Sunset Law) जोडण्यात आला. यानुसार निश्चित केलेल्या तारखेच्या सूर्यास्तापर्यंत जमीनदाराने महसुली हप्ता सरकारी तिजोरीत जमा न केल्यास, सरकारला त्याची जमीन जप्त करून दुसऱ्या दिवशी जाहीर लिलावात विकण्याचा अधिकार होता. यामुळे अनेक पारंपरिक जुने जमीनदार उद्ध्वस्त झाले.",
+        "en": "Introduced in 1794, the 'Sunset Law' decreed that if a zamindar failed to deposit the stipulated revenue installment by sunset on the fixed date, the state acquired the immediate right to confiscate and auction his estate, ruining numerous hereditary zamindaris."
+      }
+    },
+    {
+      "id": 4,
+      "question": {
+        "mr": "मद्रास प्रांतात सर थॉमस मुन्रो यांनी लागू केलेल्या रयतवारी पद्धतीत (Ryotwari System) सामान्यतः प्रत्यक्ष उत्पादनाच्या किती टक्के महसूल निश्चित करण्यात आला होता?",
+        "en": "In the Ryotwari System formulated by Sir Thomas Munro in the Madras Presidency, approximately what proportion of gross agricultural produce was initially fixed as government revenue?"
+      },
+      "options": [
+        { "mr": "सुमारे ४५% ते ५०% (अर्धा भाग)", "en": "Around 45% to 50% (roughly half)" },
+        { "mr": "केवळ १०%", "en": "Merely 10%" },
+        { "mr": "एक तृतीयांश (३३%)", "en": "One-third (33%)" },
+        { "mr": "सुमारे ७५% ते ८०%", "en": "Around 75% to 80%" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "थॉमस मुन्रोच्या रयतवारी पद्धतीनुसार शासनाने शेतकरी (रयत) यांच्याशी थेट संपर्क साधला तरी महसुलाचा दर अत्यंत अवास्तव आणि जाचक ठेवला होता. सुरुवातीला हा दर एकूण उत्पादनाच्या निम्म्यापर्यंत (सुमारे ४५% ते ५०%) निश्चित करण्यात आला होता, ज्यामुळे दुष्काळातही शेतकरी कर्जाच्या खाईत लोटले गेले.",
+        "en": "Under Munro's Ryotwari settlement in Madras, the revenue assessment was pitched excessively high, initially claiming roughly 45% to 50% (nearly half) of the gross agricultural output, placing an immense fiscal strain on peasant cultivators."
+      }
+    },
+    {
+      "id": 5,
+      "question": {
+        "mr": "१८०२ च्या 'वसईच्या तहाने' (Treaty of Bassein) खालीलपैकी कोणता महत्त्वाचा परिणाम दुसऱ्या इंग्रज-मराठा युद्धास कारणीभूत ठरला?",
+        "en": "Which major consequence of the Treaty of Bassein (1802) directly precipitated the Second Anglo-Maratha War?"
+      },
+      "options": [
+        { "mr": "दुसऱ्या बाजीराव पेशव्याने ब्रिटिशांची तैनाती फौज स्वीकारून मराठा महासंघाचे स्वातंत्र्य गहाण ठेवले, जे शिंदे आणि भोसले यांना अमान्य होते.", "en": "Peshwa Baji Rao II accepted the British Subsidiary Alliance and compromised Maratha sovereignty, which was unacceptable to Scindia and Bhonsle." },
+        { "mr": "ब्रिटिशांनी छत्रपतींना तात्काळ साताऱ्यावरून पदच्युत करून दिल्लीला नजरकैदेत ठेवले.", "en": "The British immediately deposed the Chhatrapati from Satara and exiled him to Delhi." },
+        { "mr": "पेशव्यांनी संपूर्ण मराठा सैन्याचे विलीनीकरण ब्रिटिश ईस्ट इंडिया कंपनीच्या पायदळात केले.", "en": "The Peshwa disbanded and merged the entire Maratha army into the Company's infantry." },
+        { "mr": "यशवंतराव होळकरांना ब्रिटिशांनी पुण्याचे अधिकृत पेशवे घोषित केले.", "en": "The British proclaimed Yashwantrao Holkar as the legitimate Peshwa of Pune." }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "३१ डिसेंबर १८०२ रोजी पेशवे बाजीराव दुसरे यांनी यशवंतराव होळकरांच्या भयाने ब्रिटिशांशी वसईचा तह केला. या तहानुसार पुण्यात ब्रिटिश फौज ठेवणे आणि परराष्ट्र संबंध कंपनीच्या स्वाधीन करणे पेशव्यांनी मान्य केले. पेशव्यांचे हे लाचार मांडलिकत्व दौलतराव शिंदे व रघूजी भोसले यांना सहन झाले नाही आणि त्यातून दुसरे इंग्रज-मराठा युद्ध भडकले.",
+        "en": "Signed on 31 December 1802, the Treaty of Bassein forced Peshwa Baji Rao II to accept a subsidiary force and surrender Maratha external diplomacy to the Company. Daulat Rao Scindia and Raghuji Bhonsle viewed this capitulation as an intolerable surrender of Maratha independence, sparking the Second Anglo-Maratha War."
+      }
+    },
+    {
+      "id": 6,
+      "question": {
+        "mr": "१८०९ च्या 'अमृतसरच्या तहाबाबत' (Treaty of Amritsar 1809) खालील विधाने विचारात घ्या:\nअ. हा तह ब्रिटिश प्रतिनिधी चार्ल्स मेटकॉफ आणि पंजाबचे महाराजा रणजितसिंग यांच्यात झाला.\nब. या तहानुसार सतलज नदी ही शीख साम्राज्य आणि ब्रिटिश भारतामधील सीमारेषा म्हणून निश्चित करण्यात आली.\nवरीलपैकी कोणते/ती विधान/ने बरोबर आहेत?",
+        "en": "Consider the following statements regarding the Treaty of Amritsar (1809):\na. It was negotiated between the British envoy Charles Metcalfe and Maharaja Ranjit Singh of Punjab.\nb. Under this treaty, the Sutlej River was demarcated as the mutual boundary between the Sikh Empire and British India.\nWhich of the statements given above is/are correct?"
+      },
+      "options": [
+        { "mr": "फक्त अ", "en": "Only a" },
+        { "mr": "फक्त ब", "en": "Only b" },
+        { "mr": "अ आणि ब दोन्ही", "en": "Both a and b" },
+        { "mr": "दोन्ही नाही", "en": "Neither a nor b" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "दोन्ही विधाने बरोबर आहेत. २५ एप्रिल १८०९ रोजी लॉर्ड मिंटो पहिल्याच्या काळात चार्ल्स मेटकॉफ आणि महाराजा रणजितसिंग यांच्यात अमृतसरचा तह झाला. या तहाने रणजितसिंग यांच्या पूर्वेकडील (सतलज पार) विस्ताराला पायबंद घालून सतलज नदी ही कायमस्वरूपी सीमारेषा ठरवली आणि इंग्रजांनी रणजितसिंग यांच्या स्वतंत्र राज्याला मान्यता दिली.",
+        "en": "Both statements are correct. Concluded on 25 April 1809 between Charles Metcalfe and Maharaja Ranjit Singh, the Treaty of Amritsar established the Sutlej River as the official territorial boundary, restraining Sikh expansion into Cis-Sutlej states while leaving Ranjit Singh sovereign to expand north and west."
+      }
+    },
+    {
+      "id": 7,
+      "question": {
+        "mr": "१८२२ मध्ये वायव्य प्रांतात (North-Western Provinces) रेग्युलेशन VII द्वारे अस्तित्वात आलेल्या 'महालवारी पद्धतीचे' (Mahalwari System) मूळ प्रवर्तक कोण होते?",
+        "en": "Who was the original formulator of the 'Mahalwari System' instituted in the North-Western Provinces under Regulation VII of 1822?"
+      },
+      "options": [
+        { "mr": "होल्ट मॅकेन्झी (Holt Mackenzie)", "en": "Holt Mackenzie" },
+        { "mr": "लॉर्ड कॉर्नवॉलिस (Lord Cornwallis)", "en": "Lord Cornwallis" },
+        { "mr": "कॅप्टन अलेक्झांडर रीड (Alexander Read)", "en": "Captain Alexander Read" },
+        { "mr": "सर चार्ल्स मेटकॉफ (Sir Charles Metcalfe)", "en": "Sir Charles Metcalfe" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१८१९ मध्ये होल्ट मॅकेन्झी यांनी सादर केलेल्या अहवालावरून १८२२ च्या रेग्युलेशन VII नुसार महालवारी पद्धत लागू झाली. यात 'महाल' (संपूर्ण गाव किंवा ग्रामसमूह) हे महसुलाचे एकक मानले गेले आणि गावाच्या प्रमुखाकडे (नंबरदार/लंबरदार) संपूर्ण गावाचा महसूल जमा करण्याची संयुक्त जबाबदारी सोपवली गेली.",
+        "en": "Devised by Holt Mackenzie in his 1819 minute and sanctioned by Regulation VII of 1822, the Mahalwari System treated the entire village estate ('Mahal') as a single unit, holding the village community and its headman ('Lambardar') collectively responsible for the payment of land revenue."
+      }
+    },
+    {
+      "id": 8,
+      "question": {
+        "mr": "४ डिसेंबर १८२९ रोजी लॉर्ड विल्यम बेंटिंकने कोणत्या प्रसिद्ध रेग्युलेशनद्वारे सती प्रथा बेकायदेशीर आणि सदोष मनुष्यवधास पात्र गुन्हा घोषित केली?",
+        "en": "By which historic regulation on 4 December 1829 did Lord William Bentinck declare the practice of Sati illegal and punishable as culpable homicide?"
+      },
+      "options": [
+        { "mr": "बंगाल रेग्युलेशन XVII (सतरा)", "en": "Bengal Regulation XVII" },
+        { "mr": "बंगाल रेग्युलेशन X (दहा)", "en": "Bengal Regulation X" },
+        { "mr": "रेग्युलेशन XXI (एकवीस)", "en": "Regulation XXI" },
+        { "mr": "रेग्युलेशन V (पाच)", "en": "Regulation V" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "राजा राममोहन रॉय यांच्या सामाजिक चळवळीच्या पाठपुराव्यामुळे गव्हर्नर-जनरल लॉर्ड विल्यम बेंटिंकने ४ डिसेंबर १८२९ रोजी 'बंगाल कोड रेग्युलेशन XVII' जारी केले. याने सती प्रथा बेकायदेशीर ठरवली. सुरुवातीला हा कायदा बंगाल प्रांतात लागू झाला आणि १८३० मध्ये तो मद्रास व मुंबई इलाख्यांतही लागू करण्यात आला.",
+        "en": "Supported by Raja Ram Mohan Roy's humanitarian campaign, Lord William Bentinck promulgated Bengal Regulation XVII on 4 December 1829, outlawing Sati and declaring anyone aiding or abetting it guilty of culpable homicide. It was extended to the Madras and Bombay Presidencies in 1830."
+      }
+    },
+    {
+      "id": 9,
+      "question": {
+        "mr": "१८३३ च्या सनदी कायद्याद्वारे (Charter Act 1833) ईस्ट इंडिया कंपनीच्या अधिकारात कोणता क्रांतिकारक बदल करण्यात आला?",
+        "en": "What monumental shift was enacted regarding the East India Company's legal character under the Charter Act of 1833?"
+      },
+      "options": [
+        { "mr": "कंपनीची सर्व व्यापारी कार्ये (Commercial Functions) पूर्णपणे बंद करून तिला केवळ एक शुद्ध 'प्रशासकीय संस्था' (Administrative Body) बनवण्यात आले.", "en": "Its commercial functions were terminated entirely, transforming it purely into an administrative organ for the British Crown." },
+        { "mr": "कंपनीचा राजकीय कारभार काढून घेऊन तिला केवळ कापड व मसाल्यांचा खाजगी व्यापार करण्याची मुभा दिली.", "en": "Its political authority was revoked, restricting it solely to the private trade in textiles and spices." },
+        { "mr": "कंपनी पूर्णपणे विसर्जित करून भारताचा कारभार तात्काळ संयुक्त राष्ट्रांच्या आयोगाकडे सोपवला.", "en": "The Company was dissolved outright and its assets surrendered to an international board." },
+        { "mr": "कंपनीला स्वतःचे चलन आणि स्वतंत्र परराष्ट्र धोरण चालवण्याचे सार्वभौम अधिकार दिले.", "en": "The Company was granted sovereign rights to maintain independent foreign embassies and currency." }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१८३३ च्या सनदी कायद्याने कंपनीची चहा आणि चीन व्यापारावरील उरलेली मक्तेदारीही रद्दबातल केली. तिचे व्यावसायिक आणि व्यापारी अस्तित्व संपुष्टात आणून तिला केवळ ब्रिटिश सम्राटाच्या वतीने भारतात 'राजकीय व प्रशासकीय कारभार' पाहणारी शासकीय संस्था बनवले गेले.",
+        "en": "The Charter Act of 1833 extinguished the Company's remaining commercial monopolies over the tea trade and Chinese trade, bringing its commercial career to an end and reconstituting it strictly as a trustee governing body administering India on behalf of the British Crown."
+      }
+    },
+    {
+      "id": 10,
+      "question": {
+        "mr": "भारतीय वृत्तपत्रांवरील १८२३ चे जाचक निर्बंध (Licensing Regulations) रद्द करून त्यांना मुद्रण स्वातंत्र्य दिल्याबद्दल कोणत्या गव्हर्नर-जनरलला 'भारतीय वृत्तपत्रांचा मुक्तिदाता' (Liberator of the Indian Press) म्हटले जाते?",
+        "en": "Which Governor-General is famously known as the 'Liberator of the Indian Press' for repealing the repressive Licensing Regulations of 1823 through the Press Act of 1835?"
+      },
+      "options": [
+        { "mr": "सर चार्ल्स मेटकॉफ (Sir Charles Metcalfe)", "en": "Sir Charles Metcalfe" },
+        { "mr": "लॉर्ड विल्यम बेंटिंक (Lord William Bentinck)", "en": "Lord William Bentinck" },
+        { "mr": "लॉर्ड ऑकलंड (Lord Auckland)", "en": "Lord Auckland" },
+        { "mr": "लॉर्ड रिपन (Lord Ripon)", "en": "Lord Ripon" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "सर चार्ल्स मेटकॉफ यांनी आपल्या अल्प कार्यकाळात (१८३५-१८३६) जॉन ॲडमचे १८२३ चे लायसन्सिंग नियम रद्द केले आणि नवीन उदारमतवादी 'प्रेस ॲक्ट १८३५' संमत केला. वृत्तपत्रांना पूर्वपरवानगी न घेता केवळ प्रकाशकाचे नाव जाहीर करून छपाईचे स्वातंत्र्य दिल्यामुळे त्यांना 'भारतीय वृत्तपत्रांचा मुक्तिदाता' म्हटले जाते.",
+        "en": "During his brief administration (1835–1836), Acting Governor-General Sir Charles Metcalfe repealed the restrictive Licensing Regulations of 1823 via the Press Act of 1835 (drafted by Macaulay), granting freedom to both English and Indian vernacular newspapers and earning the title 'Liberator of the Indian Press'."
+      }
+    },
+    {
+      "id": 11,
+      "question": {
+        "mr": "१८३८ मधील पहिल्या इंग्रज-अफगाण युद्धापूर्वी झालेल्या 'त्रिपक्षीय तहामध्ये' (Tripartite Treaty) खालीलपैकी कोणत्या तीन सत्तांचा सहभाग होता?",
+        "en": "Which three parties were the signatories to the historic 'Tripartite Treaty' signed in June 1838 prior to the First Anglo-Afghan War?"
+      },
+      "options": [
+        { "mr": "ब्रिटिश ईस्ट इंडिया कंपनी (लॉर्ड ऑकलंड), महाराजा रणजितसिंग आणि शाह शुजा", "en": "British East India Company (Lord Auckland), Maharaja Ranjit Singh, and Shah Shuja" },
+        { "mr": "ब्रिटिश कंपनी, हैदराबादचा निजाम आणि म्हैसूरचे ओडियार", "en": "British Company, Nizam of Hyderabad, and Wodeyars of Mysore" },
+        { "mr": "ब्रिटिश कंपनी, पेशवे बाजीराव दुसरे आणि गायकवाड", "en": "British Company, Peshwa Baji Rao II, and the Gaekwad" },
+        { "mr": "ब्रिटिश कंपनी, दोस्त मोहम्मद आणि इराणचा शाह", "en": "British Company, Dost Mohammad, and the Shah of Iran" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "जून १८३८ मध्ये लॉर्ड ऑकलंडच्या पुढाकाराने ब्रिटिश कंपनी, पंजाबचे महाराजा रणजितसिंग आणि पदच्युत अफगाण अमीर शाह शुजा यांच्यात त्रिपक्षीय तह झाला. दोस्त मोहम्मदला काबूलच्या गादीवरून हटवून ब्रिटिशांचा हस्तक शाह शुजा याला पुन्हा बसवणे हा या युतीचा हेतू होता, ज्यातून १८३९ मध्ये विनाशकारी पहिले इंग्रज-अफगाण युद्ध उद्भवले.",
+        "en": "Signed in June 1838, the Tripartite Treaty bound the British government (under Auckland), Maharaja Ranjit Singh of Punjab, and the exiled Afghan ruler Shah Shuja in a joint expedition to depose Dost Mohammad Khan and restore Shah Shuja to the throne of Kabul, triggering the First Anglo-Afghan War."
+      }
+    },
+    {
+      "id": 12,
+      "question": {
+        "mr": "१८४६ च्या पहिल्या इंग्रज-शीख युद्धानंतर झालेल्या 'लाहोरच्या तहातील' (Treaty of Lahore 1846) प्रमुख तरतुदींनुसार ब्रिटिशांनी जम्मू आणि काश्मीरचा प्रदेश कोणाला सुपूर्द केला?",
+        "en": "Under the terms of the Treaty of Lahore (1846) ending the First Anglo-Sikh War, to whom did the British transfer the territory of Jammu and Kashmir for 75 lakh rupees?"
+      },
+      "options": [
+        { "mr": "गुलाब सिंग (डोग्रा सरदार)", "en": "Gulab Singh (Dogra Chief)" },
+        { "mr": "लाल सिंग (शीख वजीर)", "en": "Lal Singh (Sikh Wazir)" },
+        { "mr": "तेज सिंग (शीख सेनापती)", "en": "Tej Singh (Sikh Commander)" },
+        { "mr": "रणजितसिंग यांचे धाकटे बंधू", "en": "Ranjit Singh's younger brother" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "मार्च १८४६ मधील लाहोरच्या तहानुसार पराभूत शीख दरबारावर दीड कोटी रुपयांची युद्धभरपाई लादण्यात आली. ही रक्कम तिजोरीत नसल्याने शिखांनी बियास व सिंधूमधील डोंगररांगा (काश्मीरसह) दिल्या. १६ मार्च १८४६ रोजी ब्रिटिशांनी 'अमृतसरचा तह' करून हा संपूर्ण जम्मू-काश्मीरचा प्रदेश राजा गुलाब सिंग डोग्रा यांना ७५ लाख रुपयांच्या बदल्यात विकला.",
+        "en": "Under the Treaty of Lahore (March 1846), the defeated Sikh Regency was penalized with an indemnity of ₹1.5 crores. Being unable to pay the cash balance, the Lahore Darbar ceded the hill territories between the Beas and the Indus. Under the Treaty of Amritsar (16 March 1846), the British sold Kashmir to Raja Gulab Singh of Jammu for ₹75 lakhs."
+      }
+    },
+    {
+      "id": 13,
+      "question": {
+        "mr": "लॉर्ड डलहौसीने १८४८ मध्ये सातारा संस्थान खालसा करताना सातारचे कोणते छत्रपती पुत्रहीन वारल्यामुळे दत्तक वारसा नामंजूर करण्यात आला होता?",
+        "en": "When Lord Dalhousie annexed the Kingdom of Satara in 1848 under the Doctrine of Lapse, whose death without natural male issue led to the rejection of an adopted heir?"
+      },
+      "options": [
+        { "mr": "छत्रपती शहाजी राजे (अप्पासाहेब भोसले)", "en": "Chhatrapati Shahaji Raje (Appa Sahib Bhonsle)" },
+        { "mr": "छत्रपती प्रतापसिंह भोसले", "en": "Chhatrapati Pratapsingh Bhonsle" },
+        { "mr": "छत्रपती शिवाजी चौथे", "en": "Chhatrapati Shivaji IV" },
+        { "mr": "छत्रपती राजाराम दुसरे", "en": "Chhatrapati Rajaram II" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१८४८ मध्ये सातारा संस्थानचे राजे शहाजी (अप्पासाहेब भोसले) यांचे नैसर्गिक वारसाशिवाय निधन झाले. त्यांनी मृत्यूच्या काही तास आधी घेतलेल्या दत्तक पुत्राला लॉर्ड डलहौसीने नामंजूर केले आणि सातारा हे ब्रिटिशांनी 'स्वतः निर्माण केलेले आश्रित राज्य' असल्याचा युक्तिवाद करून १८४८ मध्ये सर्वप्रथम खालसा केले.",
+        "en": "In 1848, Raja Shahaji of Satara (popularly called Appa Sahib) died without a biological son. Lord Dalhousie refused to recognize the adoption made on his deathbed without prior British sanction, arguing that Satara was a subordinate creation of the British Crown (in 1818), making it the first casualty of the Doctrine of Lapse."
+      }
+    },
+    {
+      "id": 14,
+      "question": {
+        "mr": "१८५३ मधील भारताच्या पहिल्या रेल्वे आणि टेलिग्राफच्या विकासाबाबत खालील विधाने विचारात घ्या:\nअ. १६ एप्रिल १८५३ रोजी बोरीबंदर (मुंबई) ते ठाणे दरम्यान ३४ किमी अंतरावर पहिली प्रवासी रेल्वे धावली.\nब. १८५३ मध्ये कलकत्ता ते आग्रा दरम्यान पहिली प्रायोगिक इलेक्ट्रिक टेलिग्राफ लाईन सुरू करण्यात आली.\nवरीलपैकी कोणते/ती विधान/ने बरोबर आहेत?",
+        "en": "Consider the following statements regarding the introduction of railways and telegraphs in India in 1853:\na. On 16 April 1853, the first passenger train traversed 34 km between Bori Bunder (Bombay) and Thane.\nb. In 1853, the first operative electric telegraph line was inaugurated between Calcutta and Agra.\nWhich of the statements given above is/are correct?"
+      },
+      "options": [
+        { "mr": "फक्त अ", "en": "Only a" },
+        { "mr": "फक्त ब", "en": "Only b" },
+        { "mr": "अ आणि ब दोन्ही", "en": "Both a and b" },
+        { "mr": "दोन्ही नाही", "en": "Neither a nor b" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "दोन्ही विधाने अचूक आहेत. १६ एप्रिल १८५३ रोजी ग्रेट इंडियन पेनिन्सुला (GIP) रेल्वेने बोरीबंदर ते ठाणे दरम्यान पहिली रेल्वे चालवली. तसेच १८५३ मध्ये डॉ. विल्यम ओ'शॉघनेसी यांच्या मार्गदर्शनाखाली कलकत्ता ते आग्रा दरम्यान पहिली टेलिग्राफ लाईन सुरू केली गेली, जी पुढे १८५७ च्या उठावात ब्रिटिशांसाठी अत्यंत मोलाची ठरली.",
+        "en": "Both statements are correct. On 16 April 1853, India's first train operated across 34 km from Bori Bunder to Thane. In the same year, under Dr. William O'Shaughnessy, the first functional electric telegraph line was opened between Calcutta and Agra, spanning 800 miles."
+      }
+    },
+    {
+      "id": 15,
+      "question": {
+        "mr": "१८५४ च्या 'भारतीय टपाल कायद्यानुसार' (Post Office Act 1854) लॉर्ड डलहौसीने टपाल दरांमध्ये कोणता महत्त्वपूर्ण सुधारणावादी बदल केला?",
+        "en": "What revolutionary reform was introduced in postal tariffs across India under Lord Dalhousie's Post Office Act of 1854?"
+      },
+      "options": [
+        { "mr": "अंतराचा विचार न करता संपूर्ण भारतात अर्ध्या तोळ्यापर्यंतच्या पत्रासाठी अर्धा आणा (1/2 anna) हा एकसमान दर आणि आधुनिक चिकट टपाल तिकिटे लागू झाली.", "en": "Uniform rate of half an anna per letter regardless of distance across all India and modern adhesive postage stamps were introduced." },
+        { "mr": "फक्त सरकारी अधिकाऱ्यांना मोफत टपाल पाठवण्याची सोय करून जनतेसाठी दर पाचपट वाढवले.", "en": "Free postal transit was reserved exclusively for British officials while rates were quintupled for the public." },
+        { "mr": "टपालाचा खर्च अंतराच्या मैलानुसार ठरवून प्रत्येक मैलासाठी एक रुपया आकारण्यात आला.", "en": "Postal charges were calculated strictly on mileage slabs at one rupee per mile." },
+        { "mr": "खाजगी पत्रांची वाहतूक पूर्णपणे बंद करून केवळ सैनिकी टपाल सुरू ठेवले.", "en": "Private correspondence was banned in favor of purely military dispatches." }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१८५४ च्या टपाल कायद्याने आधुनिक पोस्ट खात्याचा पाया घातला. अंतरावर आधारित जुनी खर्चिक पद्धत बंद करून संपूर्ण देशात कुठेही पत्र पाठवण्यासाठी अवघ्या 'अर्धा आणा' (१/२ आणा) हा एकसमान दर निश्चित करण्यात आला आणि देशात पहिल्यांदाच कागदावर चिकटणारी टपाल तिकिटे (Adhesive Postage Stamps) सुरू झाली.",
+        "en": "The Post Office Act of 1854 completely reorganized communication by ending distance-graded postal rates, introducing an all-India uniform tariff of half an anna for letters weighing up to half a tola, and releasing the first adhesive postage stamps across British India."
+      }
+    },
+    {
+      "id": 16,
+      "question": {
+        "mr": "१८५६ च्या 'सामान्य सेवा भरती कायद्याचा' (General Service Enlistment Act 1856) बंगाल सैन्यातील शिपायांवर कोणता मानसिक आणि धार्मिक परिणाम झाला?",
+        "en": "What religious and psychological impact did the General Service Enlistment Act of 1856 exert on the sepoys of the Bengal Army?"
+      },
+      "options": [
+        { "mr": "भविष्यात भरती होणाऱ्या प्रत्येक सैनिकाला समुद्रापार (काळेपाणी) जाऊन लढण्याचे बंधन आल्याने आपला धर्म भ्रष्ट होईल अशी भीती पसरली.", "en": "It mandated overseas service across the sea ('Kala Pani') for all future recruits, stoking fears of loss of caste and religious desecration." },
+        { "mr": "सैनिकांना मोफत जमीन वाटप झाल्याने शिपायांमध्ये आनंदाचे वातावरण निर्माण झाले.", "en": "Free land grants were distributed to sepoys, generating widespread contentment." },
+        { "mr": "सैनिकांचे वेतन ब्रिटिश सैनिकांइतके समान झाल्याने असंतोष कमी झाला.", "en": "Sepoy wages were equalized with British regular soldiers, reducing resentment." },
+        { "mr": "सर्व शिपायांना तात्काळ निवृत्त करून लंडनला स्थायिक होण्याचे आदेश मिळाले.", "en": "All sepoys received mandatory retirement orders to settle in London." }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "लॉर्ड कॅनिंगने २५ जुलै १८५६ रोजी हा कायदा केला. तत्कालीन उच्चवर्णीय हिंदू समजुतीनुसार समुद्रावरून प्रवास केल्यास (काळेपाणी ओलांडल्यास) जात जाते अशी रूढी होती. या कायद्याने बंगाल सैन्यात भरती होणाऱ्या प्रत्येक नवीन सैनिकाला गरज पडल्यास जहाजाने समुद्रापार लढायला जाण्याचे वचन देणे सक्तीचे केले, ज्यामुळे सैनिकांमध्ये धर्म संकटात आल्याची तीव्र भावना निर्माण झाली.",
+        "en": "Passed by Lord Canning in July 1856, the General Service Enlistment Act decreed that no sepoy would be recruited into the Bengal Army who did not pledge to serve overseas if ordered. Traditional high-caste Hindu sepoys viewed crossing the sea ('Kala Pani') as a direct violation of caste purity, feeding the explosive grievances of 1857."
+      }
+    },
+    {
+      "id": 17,
+      "question": {
+        "mr": "१८५८ च्या भारत सरकार कायद्यान्वये स्थापन करण्यात आलेल्या १५ सदस्यीय 'इंडिया कौन्सिल'चे (Council of India) अध्यक्षपद कोणाकडे सोपवण्यात आले होते?",
+        "en": "Who presided as the ex-officio President over the 15-member 'Council of India' created under the Government of India Act 1858?"
+      },
+      "options": [
+        { "mr": "भारत मंत्री (Secretary of State for India)", "en": "Secretary of State for India" },
+        { "mr": "भारताचा व्हाइसरॉय (Viceroy of India)", "en": "Viceroy of India" },
+        { "mr": "ब्रिटिश पंतप्रधान (British Prime Minister)", "en": "British Prime Minister" },
+        { "mr": "लंडन सर्वोच्च न्यायालयाचे मुख्य न्यायाधीश", "en": "Chief Justice of London Supreme Court" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१८५८ च्या कायद्यानुसार लंडनमध्ये भारत मंत्र्याला सल्ला देण्यासाठी १५ सदस्यांचे इंडिया कौन्सिल स्थापन झाले. स्वतः 'भारत मंत्री' (Secretary of State for India) हा या कौन्सिलचा पदसिद्ध अध्यक्ष असे आणि त्याला विशेष परिस्थितीत कौन्सिलच्या मतांवर नकाराधिकार (Veto) वापरण्याचे अधिकार होते.",
+        "en": "Under the Government of India Act 1858, the Secretary of State for India presided ex-officio over the Council of India, maintaining executive supremacy over its proceedings except in specific appropriations of Indian revenues where council majority was required."
+      }
+    },
+    {
+      "id": 18,
+      "question": {
+        "mr": "१८६१ च्या 'इंडियन हायकोर्ट्स ॲक्टनुसार' स्थापन झालेल्या तीन उच्च न्यायालयांमध्ये सर्वप्रथम २ जुलै १८६२ रोजी कोणते उच्च न्यायालय कार्यान्वित झाले?",
+        "en": "Among the three High Courts chartered under the Indian High Courts Act of 1861, which was the very first to be formally inaugurated on 2 July 1862?"
+      },
+      "options": [
+        { "mr": "कलकत्ता उच्च न्यायालय (Calcutta High Court)", "en": "Calcutta High Court" },
+        { "mr": "मुंबई उच्च न्यायालय (Bombay High Court)", "en": "Bombay High Court" },
+        { "mr": "मद्रास उच्च न्यायालय (Madras High Court)", "en": "Madras High Court" },
+        { "mr": "अलाहाबाद उच्च न्यायालय (Allahabad High Court)", "en": "Allahabad High Court" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१८६१ च्या उच्च न्यायालय कायद्यानुसार सर्वात आधी २ जुलै १८६२ रोजी कलकत्ता उच्च न्यायालय स्थापन झाले. त्यानंतर १४ ऑगस्ट १८६२ रोजी मुंबई उच्च न्यायालय आणि १५ ऑगस्ट १८६२ रोजी मद्रास उच्च न्यायालय कार्यान्वित झाले. सर बार्नेस पीकॉक हे कलकत्ता उच्च न्यायालयाचे पहिले मुख्य न्यायाधीश होते.",
+        "en": "The High Court of Judicature at Fort William in Bengal (Calcutta High Court) was the earliest chartered court inaugurated on 2 July 1862 with Sir Barnes Peacock as Chief Justice, followed by Bombay on 14 August 1862 and Madras on 15 August 1862."
+      }
+    },
+    {
+      "id": 19,
+      "question": {
+        "mr": "१८६१ च्या 'भारतीय नागरी सेवा कायद्याने' (Indian Civil Service Act 1861) खालीलपैकी कोणती तरतूद केली होती?",
+        "en": "Which administrative provision was enacted under the Indian Civil Service Act of 1861?"
+      },
+      "options": [
+        { "mr": "प्रशासनातील महत्त्वाच्या आणि वरिष्ठ पदांची एक सूची (Schedule) तयार करून ती केवळ सनदी सेवेतील (Covenanted) अधिकाऱ्यांसाठी राखीव ठेवण्यात आली.", "en": "It reserved a scheduled list of principal administrative and judicial posts exclusively for covenanted civil servants." },
+        { "mr": "आयसीएस परीक्षा लंडनऐवजी भारतात दरवर्षी आयोजित करण्याचा नियम केला.", "en": "It mandated that the open ICS examination be conducted annually in India rather than London." },
+        { "mr": "भारतीयांसाठी स्पर्धा परीक्षेत किमान ५०% जागा आरक्षित करण्यात आल्या.", "en": "It reserved a statutory 50% quota for native Indians in the civil service." },
+        { "mr": "सनदी सेवांमधून युरोपियन अधिकाऱ्यांची भरती पूर्णपणे थांबवली गेली.", "en": "It prohibited further recruitment of European officers into the superior services." }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१८६१ च्या नागरी सेवा कायद्याने उच्च प्रशासकीय आणि न्यायिक पदांची एक अनुसूची (Schedule) तयार केली. या अनुसूचीतील सर्व वरिष्ठ पदे केवळ लंडनमध्ये परीक्षा देऊन आलेल्या कव्हेनंटेड नागरी सेवकांसाठी (ICS) राखीव ठेवली गेली, ज्यामुळे उच्च प्रशासनावरील ब्रिटिश अधिकाऱ्यांची मक्तेदारी अधिक घट्ट झाली.",
+        "en": "The Indian Civil Service Act of 1861 designated a schedule of superior civilian offices (including District Magistrates, Sessions Judges, and Board Members) that were reserved exclusively for members of the Covenanted Civil Service selected through the London open competition."
+      }
+    },
+    {
+      "id": 20,
+      "question": {
+        "mr": "१८७२ मध्ये झालेल्या भारताच्या पहिल्या प्रायोगिक जनगणनेच्या (First Census 1872) वेळी भारताचा व्हाइसरॉय कोण होता?",
+        "en": "Who was the Viceroy of India when the first non-synchronous experimental population census was undertaken across India in 1872?"
+      },
+      "options": [
+        { "mr": "लॉर्ड मेयो (Lord Mayo)", "en": "Lord Mayo" },
+        { "mr": "लॉर्ड रिपन (Lord Ripon)", "en": "Lord Ripon" },
+        { "mr": "लॉर्ड लिटन (Lord Lytton)", "en": "Lord Lytton" },
+        { "mr": "लॉर्ड नॉर्थब्रुक (Lord Northbrook)", "en": "Lord Northbrook" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "भारतातील पहिली जनगणना १८७२ मध्ये व्हाइसरॉय लॉर्ड मेयो यांच्या कार्यकाळात प्रायोगिक पातळीवर पार पडली. तथापि, संपूर्ण भारतामध्ये एकाच वेळी (Synchronous) झालेली पहिली संपूर्ण व अधिकृत दशवार्षिक जनगणना १८८१ मध्ये लॉर्ड रिपनच्या काळात पार पडली.",
+        "en": "The first systematic, all-India experimental population census was compiled in 1872 during the viceroyalty of Lord Mayo. The first synchronous, decennial all-India census was later executed in 1881 under Lord Ripon."
+      }
+    },
+    {
+      "id": 21,
+      "question": {
+        "mr": "१८७५ मध्ये झालेल्या 'दख्खनच्या शेतकरी उठावाचे' (Deccan Riots) मुख्य कारण खालीलपैकी कोणते होते?",
+        "en": "What was the primary root cause of the agrarian peasant uprisings known as the Deccan Riots of 1875 in Maharashtra?"
+      },
+      "options": [
+        { "mr": "गुजराती व मारवाडी सावकारांचे अवास्तव व्याज, शेती महसुलातील जाचक वाढ आणि कर्जवसुलीपोटी जमिनी जप्त करणे", "en": "Exorbitant interest rates charged by Marwari and Gujarati moneylenders, rigid revenue enhancements, and mortgage foreclosures on peasant lands" },
+        { "mr": "ब्रिटीश सैनिकांनी मंदिरांवर केलेले हल्ले", "en": "Attacks mounted by British troops on native places of worship" },
+        { "mr": "शेतकऱ्यांना जबरदस्तीने केवळ चहाची लागवड करण्यास भाग पाडणे", "en": "Coercing cultivators to produce only tea and coffee crops" },
+        { "mr": "स्थानिक शाळांमधून मराठी भाषा बंद करणे", "en": "Abolishing the Marathi language in rural schools" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "पुणे आणि अहमदनगर जिल्ह्यांत मे १८७५ मध्ये सुपे गावातून हा उठाव सुरू झाला. अमेरिकन यादवी युद्ध संपल्यानंतर कापसाचे भाव गडगडले, सरकारने महसुलात ५०% वाढ केली आणि सावकारांनी कर्जापोटी शेतकऱ्यांच्या जमिनी, घरे व जनावरे जप्त करणे सुरू केले. संतापाने शेतकऱ्यांनी सावकारांची घरे व दुकाने लुटून कर्जाची कागदपत्रे व रोखे (Bonds) जाळून टाकले.",
+        "en": "The Deccan Riots of 1875 originated in Pune and Ahmednagar due to plummeting cotton prices following the American Civil War, enhanced government land revenue demands, and merciless debt recovery by Gujarati and Marwari moneylenders who auctioned peasants' mortgaged lands."
+      }
+    },
+    {
+      "id": 22,
+      "question": {
+        "mr": "१८८१ मधील पहिल्या 'फॅक्टरी कायद्याच्या' (Factory Act 1881) संदर्भात खालीलपैकी कोणती तरतूद बरोबर आहे?",
+        "en": "Which of the following provisions was enacted under the First Indian Factory Act of 1881?"
+      },
+      "options": [
+        { "mr": "७ वर्षांखालील बालकांना कारखान्यात कामावर ठेवण्यास सक्त बंदी घालण्यात आली.", "en": "Employment of children under 7 years of age was strictly prohibited." },
+        { "mr": "महिलांसाठी कामाचे तास प्रतिदिन ८ तास निश्चित केले गेले.", "en": "Working hours for women were limited to 8 hours per day." },
+        { "mr": "सर्व पुरुष कामगारांना दर आठवड्याला दोन दिवसांची सुट्टी अनिवार्य केली.", "en": "All adult male workers were granted two mandatory rest days each week." },
+        { "mr": "हा कायदा १० पेक्षा जास्त मजूर असणाऱ्या सर्व लहान दुकानांनाही लागू करण्यात आला.", "en": "The Act was applied universally to all small artisanal workshops employing more than 10 hands." }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "लॉर्ड रिपनने १८८१ मध्ये पहिला फॅक्टरी कायदा केला. हा कायदा १०० पेक्षा जास्त मजूर असणाऱ्या कारखान्यांना लागू होता. यात ७ वर्षांखालील बालकांना कामावर ठेवण्यास बंदी घातली, ७ ते १२ वयोगटातील मुलांसाठी कामाचे तास दररोज ९ तास निश्चित केले आणि त्यांना महिन्यातून ४ सुट्ट्या दिल्या. प्रौढ पुरुष व महिलांसाठी यात कामाच्या तासांची कोणतीही तरतूद नव्हती.",
+        "en": "The First Factory Act of 1881, enacted by Lord Ripon for factories employing at least 100 workers, prohibited the employment of children under 7 years of age, restricted work hours for children aged 7–12 to 9 hours daily, and provided four holidays a month, leaving adult male and female labor unregulated."
+      }
+    },
+    {
+      "id": 23,
+      "question": {
+        "mr": "१८८३ मधील 'इल्बर्ट बिल' विरोधात भारतातील अँग्लो-इंडियन आणि युरोपियन समाजाने लढा देण्यासाठी कोणती संघटना स्थापन केली होती?",
+        "en": "Which association was organized by the European and Anglo-Indian community in India to lead the virulent agitation against the Ilbert Bill in 1883?"
+      },
+      "options": [
+        { "mr": "युरोपियन अँड अँग्लो-इंडियन डिफेन्स असोसिएशन (European and Anglo-Indian Defence Association)", "en": "European and Anglo-Indian Defence Association" },
+        { "mr": "ब्रिटिश इंडियन असोसिएशन", "en": "British Indian Association" },
+        { "mr": "इम्पेरियल लीग ऑफ बॉम्बे", "en": "Imperial League of Bombay" },
+        { "mr": "रॉयल कलकत्ता डिफेन्स कमिटी", "en": "Royal Calcutta Defence Committee" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "भारतीय न्यायाधीशांना युरोपियनांचे खटले चालवण्याचा अधिकार देणाऱ्या इल्बर्ट बिलाला विरोध करण्यासाठी युरोपियन मळेवाले, व्यापारी व अधिकाऱ्यांनी 'युरोपियन अँड अँग्लो-इंडियन डिफेन्स असोसिएशन' स्थापन केली. त्यांनी ₹१.५ लाखांचा निधी गोळा केला, व्हाइसरॉय रिपनचा बहिष्कार केला आणि त्याला लंडनला पळवून नेण्याचा कट रचला, ज्याला 'व्हाईट म्यूटिनी' (श्वेत बंड) म्हणतात.",
+        "en": "To resist the Ilbert Bill, European merchants, planters, and officials formed the 'European and Anglo-Indian Defence Association' in Calcutta in 1883. Collecting massive defense funds, they agitated racial supremacy over native magistrates, forcing Lord Ripon into an embarrassing compromise."
+      }
+    },
+    {
+      "id": 24,
+      "question": {
+        "mr": "१८८६ मधील तिसऱ्या इंग्रज-ब्रह्मी युद्धानंतर ब्रह्मदेश (म्यानमार) ब्रिटिश साम्राज्यात विलीन करण्यात आला, तेव्हा पदच्युत ब्रह्मी राजा थिबाव याला ब्रिटिशांनी महाराष्ट्रातील कोणत्या शहरात नजरकैदेत ठेवले होते?",
+        "en": "Following the Third Anglo-Burmese War and the annexation of Upper Burma in 1886, in which city of Maharashtra was the deposed King Thibaw placed under British house arrest?"
+      },
+      "options": [
+        { "mr": "रत्नागिरी (Ratnagiri)", "en": "Ratnagiri" },
+        { "mr": "पुणे", "en": "Pune" },
+        { "mr": "सातारा", "en": "Satara" },
+        { "mr": "नाशिक", "en": "Nashik" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "लॉर्ड डफरिनच्या काळात १८८५ मध्ये ब्रह्मदेश जिंकून १ जानेवारी १८८६ रोजी तो भारतात जोडला गेला. पदच्युत राजा थिबाव आणि त्याची राणी सुफयालात यांना हद्दपार करून महाराष्ट्रातील कोकण किनारपट्टीवरील 'रत्नागिरी' येथे नजरकैदेत ठेवण्यात आले. तिथे त्यांच्यासाठी भव्य 'थिबा पॅलेस' बांधण्यात आला, जिथे १९१६ मध्ये त्याचा मृत्यू झाला.",
+        "en": "Following the British capture of Mandalay in late 1885, King Thibaw was dethroned and transported to India in exile. He was confined under state surveillance at Ratnagiri in Maharashtra, where the colonial government built the Thibaw Palace for his internment until his death in 1916."
+      }
+    },
+    {
+      "id": 25,
+      "question": {
+        "mr": "१८९२ च्या 'इंडियन कौन्सिल्स कायद्यानुसार' (Indian Councils Act 1892) कायदेमंडळात गैर-सरकारी सदस्यांच्या निवडीसाठी खालीलपैकी कोणाच्या शिफारशींना कायदेशीर आधार देण्यात आला?",
+        "en": "Under the Indian Councils Act of 1892, nominations of non-official members to the legislative councils were made on the official recommendations of which bodies?"
+      },
+      "options": [
+        { "mr": "नगरपालिका, जिल्हा बोर्ड, विद्यापीठे, जमीनदार संघटना आणि चेंबर्स ऑफ कॉमर्स", "en": "Municipalities, District Boards, Universities, Zamindari associations, and Chambers of Commerce" },
+        { "mr": "केवळ भारतीय राष्ट्रीय काँग्रेस आणि मुस्लिम लीग", "en": "Exclusively the Indian National Congress and the Muslim League" },
+        { "mr": "सर्व प्राथमिक शाळांचे मुख्याध्यापक आणि ग्रामसेवक", "en": "Headmasters of primary schools and village revenue officers" },
+        { "mr": "केवळ ब्रिटिश लष्करातील भारतीय सैनिकांची मंडळे", "en": "Committees of native soldiers from the British Indian Army" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१८९२ च्या कायद्याने कायद्यात 'इलेक्शन' (निवडणूक) हा शब्द न वापरता अप्रत्यक्ष निवडणुकीचे तत्त्व मान्य केले. प्रांतीय कायदेमंडळांमध्ये नगरपालिका, जिल्हा बोर्ड, विद्यापीठे आणि व्यापारी महामंडळे (Chambers of Commerce) यांच्या शिफारशींवरून सदस्यांचे नामनिर्देशन केले जाई, तर केंद्रीय कायदेमंडळात प्रांतीय कायदेमंडळांचे सदस्य प्रतिनिधींची शिफारस करत असत.",
+        "en": "The Indian Councils Act of 1892 utilized an indirect representative formula. Non-official provincial councilors were nominated by the Governor based on recommendations from district boards, municipal corporations, university senates, landholders, and commercial chambers, introducing the elective principle into Indian legislatures."
+      }
+    }
+  ]
+}

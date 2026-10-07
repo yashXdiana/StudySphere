@@ -1,0 +1,464 @@
+{
+  "testId": "p-hist-04-t4",
+  "title": {
+    "mr": "सामाजिक व धार्मिक सुधारणा चळवळी — सराव 4",
+    "en": "Social and Religious Reform Movements — Practice Test 4"
+  },
+  "durationMinutes": 20,
+  "marksPerQuestion": 1,
+  "negativeMarking": 0.25,
+  "totalMarks": 25,
+  "difficulty": "मध्यम ते काठिण्य",
+  "questions": [
+    {
+      "id": 1,
+      "question": {
+        "mr": "१८८२ मध्ये प्रकाशित झालेल्या 'स्त्री-पुरुष तुलना' (Stree-Purush Tulana) या आद्य स्त्रीवादी ग्रंथाच्या लेखिका खालीलपैकी कोण होत्या?",
+        "en": "Who was the author of the pioneering feminist text 'Stree-Purush Tulana' (A Comparison Between Women and Men) published in 1882?"
+      },
+      "options": [
+        { "mr": "ताराबाई शिंदे", "en": "Tarabai Shinde" },
+        { "mr": "पंडिता रमाबाई", "en": "Pandita Ramabai" },
+        { "mr": "सावित्रीबाई फुले", "en": "Savitribai Phule" },
+        { "mr": "रमाबाई रानडे", "en": "Ramabai Ranade" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "बुलढाणा जिल्ह्यातील सत्यशोधक समाजाच्या कार्यकर् बरार ताराबाई शिंदे यांनी १८८२ मध्ये 'स्त्री-पुरुष तुलना' हे पुस्तक लिहिले. विजयालक्ष्मी या विधवेवर झालेल्या अन्यायाच्या पार्श्वभूमीवर त्यांनी पुरुषांच्या दुटप्पी नैतिकतेवर आणि पुरुषसत्ताक व्यवस्थेवर कडाडून टीका केली.",
+        "en": "Tarabai Shinde of Buldhana, associated with the Satyashodhak Samaj, published 'Stree-Purush Tulana' in 1882. Prompted by the public trial of a young widow named Vijayalakshmi, it is celebrated as modern India's first feminist critique of patriarchy."
+      }
+    },
+    {
+      "id": 2,
+      "question": {
+        "mr": "१८८४ मधील प्रसिद्ध 'रखमाबाई वि. दादाजी भिकाजी' या गाजलेल्या न्यायालयीन खटल्याचा मुख्य विषय खालीलपैकी कोणता होता?",
+        "en": "What was the central issue in the celebrated 1884–1887 legal dispute known as the 'Rukhmabai v. Dadaji Bhikaji' case?"
+      },
+      "options": [
+        { "mr": "वैवाहिक हक्कांची पुनर्स्थापना (Restitution of Conjugal Rights) आणि बालविवाह", "en": "Restitution of Conjugal Rights and Child Marriage" },
+        { "mr": "वडिलोपार्जित संपत्तीतील वारसा हक्क", "en": "Ancestral Property Inheritance Rights" },
+        { "mr": "महिलांना उच्च शिक्षणात प्रवेशाचा हक्क", "en": "Women's Access to Higher Education" },
+        { "mr": "सतीप्रथा आणि विधवा मुंडन बंदी", "en": "Abolition of Sati and Tonsure" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "अल्पवयीन असताना विवाह झालेल्या रखमाबाईंनी वयात आल्यानंतर अशिक्षित पती दादाजी भिकाजी यांच्याकडे जाण्यास नकार दिला. पतीने दाखल केलेल्या वैवाहिक हक्कांच्या दाव्यात रखमाबाईंनी तुरुंगवास पत्करण्याची तयारी दाखवली, पण शरणागती नाकारली. या खटल्यामुळेच पुढे १८९१ चा 'संमती वय कायदा' संमत होण्यास गती मिळाली. रखमाबाई पुढे भारताच्या पहिल्या महिला प्रॅक्टिसिंग डॉक्टर बनल्या.",
+        "en": "The Rukhmabai defense against the restitution of conjugal rights filed by her estranged husband Dadaji Bhikaji exposed the brutality of child marriage under colonial Hindu law, directly fueling the reform campaign that led to the Age of Consent Act of 1891."
+      }
+    },
+    {
+      "id": 3,
+      "question": {
+        "mr": "१८८७ मध्ये मद्रास येथे भारतीय राष्ट्रीय काँग्रेसच्या अधिवेशनासोबत 'भारतीय राष्ट्रीय सामाजिक परिषद' (Indian National Social Conference) स्थापन करण्यात कोणाचा मुख्य पुढाकार होता?",
+        "en": "Who among the following was the principal founder of the 'Indian National Social Conference' inaugurated alongside the Congress session in Madras in 1887?"
+      },
+      "options": [
+        { "mr": "न्यायमूर्ती महादेव गोविंद रानडे आणि रघुनाथ राव", "en": "Justice Mahadev Govind Ranade and R. Raghunatha Rao" },
+        { "mr": "गोपाळ कृष्ण गोखले आणि फिरोजशाह मेहता", "en": "Gopal Krishna Gokhale and Pherozeshah Mehta" },
+        { "mr": "लोकमान्य बाळ गंगाधर टिळक आणि चिपळूणकर", "en": "Lokmanya Bal Gangadhar Tilak and Chiplunkar" },
+        { "mr": "दादाभाई नौरोजी आणि दिनशा वाच्छा", "en": "Dadabhai Naoroji and Dinshaw Wacha" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "न्यायमूर्ती महादेव गोविंद रानडे आणि दिवाण बहादूर रघुनाथ राव यांनी १८८७ मध्ये 'इंडियन नॅशनल सोशल कॉन्फरन्स' स्थापन केली. ही काँग्रेसची सामाजिक शाखा मानली जात असे आणि दरवर्षी काँग्रेस अधिवेशनाच्या मांडवातच तिची बैठक होत असे.",
+        "en": "Justice M. G. Ranade along with R. Raghunatha Rao founded the Indian National Social Conference in December 1887 at Madras to discuss social reform alongside the political platform of the Indian National Congress."
+      }
+    },
+    {
+      "id": 4,
+      "question": {
+        "mr": "भारतीय राष्ट्रीय सामाजिक परिषदेने बालविवाहाला आळा घालण्यासाठी आणि विवाहाचे वय वाढवण्यासाठी कोणती प्रसिद्ध प्रतिज्ञा मोहीम चालवली होती?",
+        "en": "Which famous pledge campaign was organized by the Indian National Social Conference to curb child marriage?"
+      },
+      "options": [
+        { "mr": "शपथ मोहीम / प्लेज मूव्हमेंट (Pledge Movement)", "en": "Pledge Movement" },
+        { "mr": "शारदा प्रतिज्ञा आंदोलन", "en": "Sharda Pledge Agitation" },
+        { "mr": "संमती मोहीम", "en": "Age of Consent Drive" },
+        { "mr": "सत्यशोधक प्रतिज्ञा", "en": "Satyashodhak Vow" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "सोशल कॉन्फरन्सने 'प्लेज मूव्हमेंट' (Pledge Movement) सुरू केली. यात सदस्यांनी आपल्या अल्पवयीन मुला-मुलींचे विवाह बालवयात न करण्याची आणि बालविवाहाच्या समारंभांवर बहिष्कार टाकण्याची लेखी शपथ घेणे आवश्यक होते.",
+        "en": "The Social Conference launched the 'Pledge Movement' inspiring educated members to sign formal declarations promising not to marry off their children before prescribed statutory ages and to boycott child marriage ceremonies."
+      }
+    },
+    {
+      "id": 5,
+      "question": {
+        "mr": "१८९१ मध्ये 'संमती वय कायदा' (Age of Consent Act 1891) संमत व्हावा यासाठी मुंबईतील कोणत्या पारशी समाजसुधारकाने प्रदीर्घ मोहीम चालवली होती?",
+        "en": "Which Parsi social reformer from Bombay spearheaded the sustained campaign that culminated in the enactment of the Age of Consent Act of 1891?"
+      },
+      "options": [
+        { "mr": "बहरामजी मलबारी (Behramji Malabari)", "en": "Behramji Malabari" },
+        { "mr": "नौरोजी फरदुनजी", "en": "Naoroji Furdoonji" },
+        { "mr": "सोराबजी शापूरजी बंगाली", "en": "Sorabji Shapurji Bengalee" },
+        { "mr": "सर दिनशा पेटिट", "en": "Sir Dinshaw Petit" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "बहरामजी मलबारी यांनी १८८४ मध्ये 'बालविवाह आणि सक्तीचे वैधव्य' या विषयावर टिप्पणी प्रसिद्ध केली आणि इंग्लंड व भारतात जनजागृती केली. त्यांच्या पाठपुराव्यामुळे आणि फुलमणी दासी या बालिकेच्या मृत्यूनंतर १८९१ मध्ये संमतीचे वय १० वरून १२ वर्षे करणारा कायदा झाला.",
+        "en": "Journalist Behramji Malabari published his historic notes on 'Infant Marriage and Enforced Widowhood' in 1884, campaigning tirelessly in India and Britain until the Age of Consent Act raised the consummation age to 12 in 1891."
+      }
+    },
+    {
+      "id": 6,
+      "question": {
+        "mr": "बहरामजी मलबारी आणि दयाराम गिडूमल यांनी १९०८ मध्ये मुंबईत महिलांच्या कल्याणासाठी आणि परिचारिका प्रशिक्षणासाठी कोणती संस्था स्थापन केली?",
+        "en": "Which humanitarian organization was founded in Bombay in 1908 by Behramji Malabari and Dayaram Gidumal for women's welfare and nursing?"
+      },
+      "options": [
+        { "mr": "सेवा सदन (Seva Sadan)", "en": "Seva Sadan" },
+        { "mr": "शारदा सदन", "en": "Sharada Sadan" },
+        { "mr": "मुक्ती सदन", "en": "Mukti Sadan" },
+        { "mr": "हिंगणे स्त्री शिक्षण संस्था", "en": "Hingne Stree Shikshan Samstha" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "बहरामजी मलबारी आणि दिवाण दयाराम गिडूमल यांनी १९०८ मध्ये मुंबईत 'सेवा सदन' स्थापन केले. या संस्थेमार्फत निराधार महिलांना वैद्यकीय शिक्षण, नर्सिंग आणि रोजगारक्षम प्रशिक्षण दिले जात असे.",
+        "en": "Behramji Malabari and Dayaram Gidumal co-founded 'Seva Sadan' in Bombay in 1908 to provide shelter, medical care, and professional training to disadvantaged women."
+      }
+    },
+    {
+      "id": 7,
+      "question": {
+        "mr": "पुण्यात २ ऑक्टोबर १९०९ रोजी रमाबाई रानडे यांच्या अध्यक्षतेखाली 'पुणे सेवा सदन' (Pune Seva Sadan) सुरू करण्यात कोणाचा मुख्य वाटा होता?",
+        "en": "Who among the following was the chief organizer alongside Ramabai Ranade in establishing the 'Pune Seva Sadan' on 2 October 1909?"
+      },
+      "options": [
+        { "mr": "गोपाळ कृष्ण देवधर (G. K. Deodhar)", "en": "Gopal Krishna Deodhar" },
+        { "mr": "गोपाळ गणेश आगरकर", "en": "Gopal Ganesh Agarkar" },
+        { "mr": "धोंडो केशव कर्वे", "en": "Dhondo Keshav Karve" },
+        { "mr": "विठ्ठल रामजी शिंदे", "en": "Vithal Ramji Shinde" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "भारत सेवक समाजाचे सदस्य गोपाळ कृष्ण देवधर आणि न्यायमूर्ती रानडे यांच्या पत्नी रमाबाई रानडे यांनी १९०९ मध्ये 'पुणे सेवा सदन' स्थापन केले. रमाबाई रानडे या त्याच्या आजीवन अध्यक्षा होत्या.",
+        "en": "Gopal Krishna Deodhar of the Servants of India Society, in collaboration with Ramabai Ranade, founded the Pune Seva Sadan in 1909 to educate and train adult women in nursing and teaching."
+      }
+    },
+    {
+      "id": 8,
+      "question": {
+        "mr": "महर्षी धोंडो केशव कर्वे (Maharshi D. K. Karve) यांच्या संदर्भात खालील विधाने विचारात घ्या:\nअ. त्यांनी १८९३ मध्ये स्वतः गोदुबाई (आनंदीबाई) या विधवेशी विवाह करून समाजसुधारणेचा आदर्श घालून दिला.\nब. त्यांनी १८९६ मध्ये पुण्यात 'अनाथ बालिकाश्रम' आणि १८९९ मध्ये हिंगणे येथे महिला आश्रमाची स्थापना केली.\nक. त्यांनी १९१६ मध्ये जपानच्या महिला विद्यापीठाच्या प्रेरणेने पुण्यामध्ये भारतातील पहिले महिला विद्यापीठ (SNDT) स्थापन केले.\nवरीलपैकी कोणती विधाने बरोबर आहेत?",
+        "en": "Consider the following statements regarding Maharshi Dhondo Keshav Karve:\na. He practiced what he preached by marrying a widow named Godubai (Anandibai) in 1893.\nb. He founded the Anath Balikashram in Pune in 1896, shifting it to Hingne in 1899.\nc. Inspired by Japan Women's University, he established India's first Women's University (SNDT) in Pune in 1916.\nWhich of the statements given above are correct?"
+      },
+      "options": [
+        { "mr": "फक्त अ आणि ब", "en": "Only a and b" },
+        { "mr": "फक्त ब आणि क", "en": "Only b and c" },
+        { "mr": "फक्त अ आणि क", "en": "Only a and c" },
+        { "mr": "अ, ब आणि क सर्व", "en": "All a, b, and c" }
+      ],
+      "correctAnswerIndex": 3,
+      "explanation": {
+        "mr": "सर्व विधाने बरोबर आहेत. महर्षी कर्वे यांनी पंडिता रमाबाईंच्या शारदा सदनातील विद्यार्थिनी आनंदीबाईंशी १८९३ मध्ये विवाह केला. हिंगणे येथे बालिकाश्रम चालवला आणि १९१६ मध्ये सर विठ्ठलदास ठाकरसी यांच्या दातृत्वातून SNDT महिला विद्यापीठ उभारले. त्यांना १९५८ मध्ये 'भारतरत्न' सन्मान मिळाला.",
+        "en": "All statements are correct. Maharshi Karve married a widow in 1893, established the Hingne educational complex, founded the SNDT Women's University in 1916, and was awarded the Bharat Ratna in 1958 on his 100th birthday."
+      }
+    },
+    {
+      "id": 9,
+      "question": {
+        "mr": "महर्षी कर्वे यांनी १९१५ मध्ये प्रांतीय सामाजिक परिषदेच्या अध्यक्षपदावरून केलेल्या भाषणात महिलांच्या उच्च शिक्षणासाठी कोणत्या देशाच्या महिला विद्यापीठाचा संदर्भ दिला होता?",
+        "en": "While presiding over the National Social Conference in 1915, which country's dedicated Women's University did Maharshi Karve cite as an inspirational model for India?"
+      },
+      "options": [
+        { "mr": "जपान (Japan Women's University)", "en": "Japan (Japan Women's University)" },
+        { "mr": "इंग्लंड (Oxford University)", "en": "England (Oxford University)" },
+        { "mr": "अमेरिका (Columbia University)", "en": "United States (Columbia University)" },
+        { "mr": "जर्मनी (Heidelberg University)", "en": "Germany (Heidelberg University)" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "महर्षी कर्वे यांनी प्रा. नारोजी यांनी दिलेल्या जपानच्या 'जपान वुमेन्स युनिव्हर्सिटी'च्या माहितीपत्रकाचा सखोल अभ्यास केला. डिसेंबर १९१५ मधील भाषणात त्यांनी जपानच्या धर्तीवर भारतात स्वतंत्र महिला विद्यापीठ स्थापण्याचा संकल्प जाहीर केला.",
+        "en": "Karve read an account of the Japan Women's University at Tokyo sent by Babu Shivprasad Gupta, utilizing its blueprint to advocate for an independent Indian women's university in his December 1915 presidential address."
+      }
+    },
+    {
+      "id": 10,
+      "question": {
+        "mr": "१२ जून १९०५ रोजी पुणे येथे 'भारत सेवक समाज' (Servants of India Society) ची स्थापना खालीलपैकी कोणी केली?",
+        "en": "Who among the following founded the 'Servants of India Society' (Bharat Sevak Samaj) in Pune on 12 June 1905?"
+      },
+      "options": [
+        { "mr": "गोपाळ कृष्ण गोखले", "en": "Gopal Krishna Gokhale" },
+        { "mr": "न्यायमूर्ती महादेव गोविंद रानडे", "en": "Justice Mahadev Govind Ranade" },
+        { "mr": "बाळ गंगाधर टिळक", "en": "Bal Gangadhar Tilak" },
+        { "mr": "विठ्ठल रामजी शिंदे", "en": "Vithal Ramji Shinde" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "नामदार गोपाळ कृष्ण गोखले यांनी १२ जून १९०५ रोजी पुण्यात भारत सेवक समाज स्थापन केला. देशाच्या सेवेसाठी निःस्वार्थी, चारित्र्यवान आणि समर्पित राष्ट्रीय कार्यकर्ते (कार्यकर्ते) घडवणे हा या संस्थेचा मुख्य उद्देश होता.",
+        "en": "Gopal Krishna Gokhale established the Servants of India Society in Pune on 12 June 1905 to train secular, devoted public workers committed to the unselfish constitutional service of the motherland."
+      }
+    },
+    {
+      "id": 11,
+      "question": {
+        "mr": "भारत सेवक समाजाच्या स्थापनेच्या वेळी गोपाळ कृष्ण गोखले यांच्यासोबत प्रतिज्ञा घेणाऱ्या पहिल्या चार सभासदांमध्ये खालीलपैकी कोणाचा समावेश होता?\nअ. गोपाळ कृष्ण देवधर\nब. अनंत विनायक पटवर्धन\nक. नारायण शिवराम द्रविड\nपर्याय निवडा:",
+        "en": "Who among the following were among the foundation members who took vows alongside G. K. Gokhale at the inauguration of the Servants of India Society in 1905?\na. Gopal Krishna Deodhar\nb. Anant Vinayak Patwardhan\nc. Narayan Shivram Dravid\nChoose the option:"
+      },
+      "options": [
+        { "mr": "फक्त अ आणि ब", "en": "Only a and b" },
+        { "mr": "फक्त ब आणि क", "en": "Only b and c" },
+        { "mr": "फक्त अ आणि क", "en": "Only a and c" },
+        { "mr": "अ, ब आणि क सर्व", "en": "All a, b, and c" }
+      ],
+      "correctAnswerIndex": 3,
+      "explanation": {
+        "mr": "सर्व तिघेही मूळ संस्थापक सदस्य होते. १२ जून १९०५ रोजी फर्ग्युसन टेकडीवर गोखले यांच्या उपस्थितीत गोपाळ कृष्ण देवधर, अनंत विनायक पटवर्धन आणि नारायण शिवराम द्रविड या तिघांनी जीवनव्रती म्हणून सात कठोर प्रतिज्ञा घेतल्या होत्या.",
+        "en": "All three were foundational life-members. G. K. Deodhar, A. V. Patwardhan, and N. S. Dravid took solemn vows of poverty and national service with Gokhale on 12 June 1905 on the slopes of Fergusson College hill."
+      }
+    },
+    {
+      "id": 12,
+      "question": {
+        "mr": "गोपाळ कृष्ण गोखले यांच्या निधनानंतर (१९१५) भारत सेवक समाजाचे (Servants of India Society) अध्यक्षपद खालीलपैकी कोणाकडे आले?",
+        "en": "Following the demise of Gopal Krishna Gokhale in February 1915, who succeeded him as President of the Servants of India Society?"
+      },
+      "options": [
+        { "mr": "श्रीनिवास शास्त्री (V. S. Srinivasa Sastri)", "en": "V. S. Srinivasa Sastri" },
+        { "mr": "हृदयनाथ कुंझरू", "en": "Hriday Nath Kunzru" },
+        { "mr": "ठक्कर बाप्पा", "en": "Thakkar Bappa" },
+        { "mr": "ना. म. जोशी", "en": "N. M. Joshi" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "गोखलेंच्या निधनानंतर प्रख्यात मुत्सद्दी आणि विद्वान व्ही. एस. श्रीनिवास शास्त्री (V. S. Srinivasa Sastri) हे भारत सेवक समाजाचे दुसरे अध्यक्ष बनले. त्यानंतर १९२७ मध्ये पंडित हृदयनाथ कुंझरू अध्यक्ष झाले.",
+        "en": "Upon Gokhale's death in 1915, statesman V. S. Srinivasa Sastri was chosen as the second President of the Servants of India Society, guiding its liberal constitutional activities until Hriday Nath Kunzru succeeded him in 1927."
+      }
+    },
+    {
+      "id": 13,
+      "question": {
+        "mr": "१८ ऑक्टोबर १९०६ रोजी मुंबईत अस्पृश्योद्धारासाठी 'डिप्रेस्ड क्लासेस मिशन सोसायटी ऑफ इंडिया' (Depressed Classes Mission) ची स्थापना कोणी केली?",
+        "en": "Who established the 'Depressed Classes Mission Society of India' in Bombay on 18 October 1906 for the emancipation of the untouchable communities?"
+      },
+      "options": [
+        { "mr": "महर्षी विठ्ठल रामजी शिंदे", "en": "Maharshi Vithal Ramji Shinde" },
+        { "mr": "डॉ. बाबासाहेब आंबेडकर", "en": "Dr. B. R. Ambedkar" },
+        { "mr": "महात्मा ज्योतिराव फुले", "en": "Mahatma Jyotirao Phule" },
+        { "mr": "राजर्षी शाहू महाराज", "en": "Rajarshi Shahu Maharaj" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "प्रार्थना समाजाचे धर्मप्रचारक महर्षी विठ्ठल रामजी शिंदे यांनी १८ ऑक्टोबर १९०६ रोजी मुंबईत 'डिप्रेस्ड क्लासेस मिशन' सुरू केले. सर रामकृष्ण गोपाळ भांडारकर हे त्याचे पहिले अध्यक्ष होते.",
+        "en": "Maharshi Vithal Ramji Shinde, an ordained minister of the Prarthana Samaj, founded the Depressed Classes Mission Society of India on 18 October 1906 under the presidency of Dr. R. G. Bhandarkar."
+      }
+    },
+    {
+      "id": 14,
+      "question": {
+        "mr": "महर्षी विठ्ठल रामजी शिंदे यांच्या संदर्भात खालील विधाने विचारात घ्या:\nअ. त्यांनी इंग्लंडमधील ऑक्सफर्ड येथील मँचेस्टर कॉलेजमध्ये जाऊन तौलनिक धर्मशास्त्राचा (Comparative Religion) अभ्यास केला होता.\nब. त्यांनी अस्पृश्यतेच्या समस्येवर 'भारतीय अस्पृश्यतेचा प्रश्न' (The Problem of Untouchability in India) हा ऐतिहासिक संशोधन ग्रंथ लिहिला.\nक. त्यांनी १९१७ च्या कलकत्ता काँग्रेस अधिवेशनात अस्पृश्यता निवारणाचा ठराव संमत करून घेण्यात पुढाकार घेतला.\nवरीलपैकी कोणती विधाने बरोबर आहेत?",
+        "en": "Consider the following statements regarding Maharshi Vithal Ramji Shinde:\na. He studied comparative religion and liberal theology at Manchester College, Oxford, in England.\nb. He authored the pioneering research treatise 'Bharatiya Asprushyatecha Prashna' (The Problem of Untouchability in India).\nc. He piloted the official resolution condemning untouchability at the 1917 Calcutta session of the Indian National Congress.\nWhich of the statements given above are correct?"
+      },
+      "options": [
+        { "mr": "फक्त अ आणि ब", "en": "Only a and b" },
+        { "mr": "फक्त ब आणि क", "en": "Only b and c" },
+        { "mr": "फक्त अ आणि क", "en": "Only a and c" },
+        { "mr": "अ, ब आणि क सर्व", "en": "All a, b, and c" }
+      ],
+      "correctAnswerIndex": 3,
+      "explanation": {
+        "mr": "सर्व विधाने बरोबर आहेत. महर्षी शिंदे यांनी ऑक्सफर्डमध्ये बौद्धिक शिक्षण घेतले, १९१७ च्या काँग्रेस अधिवेशनात अस्पृश्यता निर्मूलनाचा पहिला ऐतिहासिक ठराव मांडला आणि 'भारतीय अस्पृश्यतेचा प्रश्न' हा समाजशास्त्रीय ग्रंथ लिहिला.",
+        "en": "All statements are correct. Shinde studied unitarianism at Oxford (1901–1903), pushed Congress to adopt an anti-untouchability resolution in 1917, and published the authoritative analytical sociological work 'Bharatiya Asprushyatecha Prashna' in 1933."
+      }
+    },
+    {
+      "id": 15,
+      "question": {
+        "mr": "२६ जुलै १९०२ रोजी आपल्या कोल्हापूर संस्थानात मागासवर्गीय व बहुजन समाजासाठी ५०% आरक्षणाची ऐतिहासिक घोषणा करणारे क्रांतिकारक राजे कोण होते?",
+        "en": "Which royal reformer issued the historic royal decree on 26 July 1902 reserving 50% of state administrative posts for backward communities in Kolhapur?"
+      },
+      "options": [
+        { "mr": "राजर्षी छत्रपती शाहू महाराज", "en": "Rajarshi Chhatrapati Shahu Maharaj" },
+        { "mr": "महाराजा सयाजीराव गायकवाड", "en": "Maharaja Sayajirao Gaekwad" },
+        { "mr": "चिखलीकर महाराज", "en": "Chikhalikar Maharaj" },
+        { "mr": "तुकोजीराव होळकर", "en": "Tukojirao Holkar" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "२६ जुलै १९०२ रोजी राजर्षी शाहू महाराजांनी कोल्हापूरच्या गॅझेटमध्ये जाहीरनामा काढून संस्थानातील सर्व प्रशासकीय नोकऱ्यांमध्ये मागासवर्गीय जातींसाठी ५०% जागा राखीव ठेवल्या. म्हणूनच त्यांना 'भारतातील आरक्षणाचे जनक' मानले जाते.",
+        "en": "On 26 July 1902, Rajarshi Chhatrapati Shahu Maharaj of Kolhapur issued an order reserving 50% of state appointments for backward and non-Brahmin communities, pioneering affirmative action in India."
+      }
+    },
+    {
+      "id": 16,
+      "question": {
+        "mr": "राजर्षी शाहू महाराजांनी कोल्हापूर संस्थानात अस्पृश्यता निर्मूलन आणि बहुजन शिक्षणासाठी केलेल्या सुधारणांमध्ये खालीलपैकी कशाचा समावेश नव्हता?",
+        "en": "Which of the following was NOT among the welfare and educational measures enacted by Rajarshi Shahu Maharaj in Kolhapur?"
+      },
+      "options": [
+        { "mr": "संस्थानात प्राथमिक शिक्षण पूर्णपणे बंद करून केवळ उच्च इंग्रजी शिक्षण सक्तीचे करणे", "en": "Abolishing primary schooling in favor of exclusively Western higher education" },
+        { "mr": "१९१७ मध्ये मोफत आणि सक्तीच्या प्राथमिक शिक्षणाचा कायदा मंजूर करणे", "en": "Passing the act for free and compulsory primary education in 1917" },
+        { "mr": "महार वतने रद्द करून जमीन कसणाऱ्यांना मालकी हक्क देणे (१९१८)", "en": "Abolition of the feudal Mahar Vatan and granting ryotwari rights (1918)" },
+        { "mr": "विविध जातींसाठी मराठा, जैन, मुस्लिम, व्हिक्टोरिया बोर्डिंगसारखी मोफत वसतिगृहे सुरू करणे", "en": "Establishing community student hostels such as the Maratha, Jain, Muslim, and Victoria Boardings" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "पर्याय १ चुकीचा आहे, कारण शाहू महाराजांनी प्राथमिक शिक्षणावर सर्वाधिक भर दिला आणि २५ जुलै १९१७ रोजी संस्थानात 'मोफत व सक्तीचे प्राथमिक शिक्षण' लागू केले. त्यांनी महार वतन पद्धत नष्ट केली, जातिवार वसतिगृहे स्थापली आणि आंतरजातीय विवाहास कायदेशीर मान्यता दिली.",
+        "en": "Option 1 is false. Shahu Maharaj championed universal primary education, making it legally free and compulsory in July 1917. He abolished the exploitative Mahar Vatan in 1918 and created caste-based student boarding hostels."
+      }
+    },
+    {
+      "id": 17,
+      "question": {
+        "mr": "१९२० मध्ये कोल्हापूर संस्थानातील 'माणगाव' (Mangaon) येथे आयोजित दक्षिण महाराष्ट्र बहिष्कृत परिषदेचे अध्यक्षस्थान कोणाकडे होते, जिथे शाहू महाराजांनी त्यांना भावी नेते म्हणून घोषित केले?",
+        "en": "Who presided over the historic Mangaon Conference of the Depressed Classes in Kolhapur in March 1920, where Shahu Maharaj proclaimed him India's undisputed true leader?"
+      },
+      "options": [
+        { "mr": "डॉ. बाबासाहेब आंबेडकर", "en": "Dr. B. R. Ambedkar" },
+        { "mr": "महर्षी विठ्ठल रामजी शिंदे", "en": "Maharshi Vithal Ramji Shinde" },
+        { "mr": "भास्करराव जाधव", "en": "Bhaskarrao Jadhav" },
+        { "mr": "शिवराम जानबा कांबळे", "en": "Shivram Janba Kamble" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "२१-२२ मार्च १९२० रोजी माणगाव परिषदेचे अध्यक्ष तरुण बॅरिस्टर डॉ. बाबासाहेब आंबेडकर होते. या परिषदेत छत्रपती शाहू महाराजांनी घोषित केले: \"तुम्हाला बाबासाहेबांच्या रूपाने तुमचा खरा उद्धारकर्ता व नेता मिळाला आहे; इतकेच नव्हे तर ते संपूर्ण भारताचे पुढारी होतील.\"",
+        "en": "Dr. B. R. Ambedkar presided over the Mangaon Conference on 21–22 March 1920. Shahu Maharaj publicly addressed the assembly, introducing Ambedkar as their true liberator and future national leader."
+      }
+    },
+    {
+      "id": 18,
+      "question": {
+        "mr": "२० जुलै १९२४ रोजी मुंबईत अस्पृश्योद्धारासाठी 'बहिष्कृत हितकारिणी सभा' (Bahishkrit Hitakarini Sabha) स्थापन करताना डॉ. बाबासाहेब आंबेडकरांनी कोणते ब्रीदवाक्य दिले?",
+        "en": "What threefold slogan was adopted by Dr. B. R. Ambedkar upon establishing the 'Bahishkrit Hitakarini Sabha' in Bombay on 20 July 1924?"
+      },
+      "options": [
+        { "mr": "\"शिका, संघटित व्हा आणि संघर्ष करा!\" (Educate, Agitate, Organise!)", "en": "\"Educate, Agitate, Organise!\"" },
+        { "mr": "\"सत्यमेव जयते\"", "en": "\"Satyameva Jayate\"" },
+        { "mr": "\"स्वावलंबन हेच आमचे ध्येय\"", "en": "\"Self-reliance is our creed\"" },
+        { "mr": "\"धर्म हा माणसासाठी आहे\"", "en": "\"Religion is for man\"" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "२० जुलै १९२४ रोजी डॉ. आंबेडकरांनी बहिष्कृत हितकारिणी सभा स्थापन केली. तिचे ब्रीदवाक्य 'शिका, संघटित व्हा आणि संघर्ष करा' (Educate, Agitate, Organise) हे होते. सर चिमणलाल सेटलवाड हे तिचे पहिले अध्यक्ष होते आणि आंबेडकर हे कार्यकारी समितीचे प्रमुख होते.",
+        "en": "Dr. B. R. Ambedkar inaugurated the Bahishkrit Hitakarini Sabha on 20 July 1924 with the central motto: 'Educate, Agitate, Organise' to promote socio-economic advancement among the depressed classes."
+      }
+    },
+    {
+      "id": 19,
+      "question": {
+        "mr": "२० मार्च १९२७ रोजी डॉ. बाबासाहेब आंबेडकरांनी पाशवी सामाजिक बहिष्काराविरुद्ध पाण्यासाठी महाड येथे चालवलेल्या लढ्याला काय म्हटले जाते, ज्याला 'सामाजिक समतेचा जाहीरनामा' मानले जाते?",
+        "en": "Which historic civil rights agitation was led by Dr. B. R. Ambedkar on 20 March 1927 in Raigad district to assert the right to draw water from a public reservoir?"
+      },
+      "options": [
+        { "mr": "महाड चवदार तळे सत्याग्रह (Mahad Satyagraha)", "en": "Mahad Chawdar Tank Satyagraha" },
+        { "mr": "कळारम मंदिर सत्याग्रह", "en": "Kalaram Temple Satyagraha" },
+        { "mr": "अंबादेवी मंदिर सत्याग्रह", "en": "Ambadevi Temple Satyagraha" },
+        { "mr": "पुणे सत्याग्रह", "en": "Pune Satyagraha" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "२० मार्च १९२७ रोजी महाड येथील चवदार तळ्याचे पाणी पिऊन डॉ. आंबेडकरांनी अस्पृश्यांच्या मानवी मूलभूत हक्कांची घोषणा केली. म्हणून २० मार्च हा दिवस भारतात 'सामाजिक सक्षमीकरण दिन' (Social Empowerment Day) म्हणून साजरा केला जातो.",
+        "en": "On 20 March 1927, Dr. Ambedkar led thousands of untouchables to drink water from the public Chawdar Tank at Mahad, asserting basic human civil liberties. 20 March is commemorated annually as Social Empowerment Day."
+      }
+    },
+    {
+      "id": 20,
+      "question": {
+        "mr": "२५ डिसेंबर १९२७ रोजी महाड येथे झालेल्या दुसऱ्या परिषदेत डॉ. बाबासाहेब आंबेडकरांच्या उपस्थितीत सामाजिक विषमतेचे प्रतीक असणाऱ्या कोणत्या ग्रंथाचे जाहीर दहन करण्यात आले?",
+        "en": "Which ancient code symbolizing caste hierarchy and institutionalized gender inequality was publicly burned on 25 December 1927 during the Mahad conference?"
+      },
+      "options": [
+        { "mr": "मनुस्मृती (Manusmriti)", "en": "Manusmriti" },
+        { "mr": "याज्ञवल्क्य स्मृती", "en": "Yajnavalkya Smriti" },
+        { "mr": "पराशर स्मृती", "en": "Parashara Smriti" },
+        { "mr": "अर्थशास्त्र", "en": "Arthashastra" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "२५ डिसेंबर १९२७ रोजी महाड येथील परिषदेत सहस्रबुद्धे यांच्या पुढाकाराने डॉ. बाबासाहेब आंबेडकरांच्या हस्ते विषमतेचा पुरस्कार करणाऱ्या 'मनुस्मृती' ग्रंथाचे जाहीर दहन करण्यात आले. हा दिवस 'मनुस्मृती दहन दिन' म्हणून ओळखला जातो.",
+        "en": "On 25 December 1927, Dr. B. R. Ambedkar alongside associates like Bapusaheb Sahasrabuddhe publicly consigned the Manusmriti to the flames at Mahad in rejection of caste and gender injustice."
+      }
+    },
+    {
+      "id": 21,
+      "question": {
+        "mr": "२ मार्च १९३० रोजी डॉ. बाबासाहेब आंबेडकरांनी नाशिक येथे दलितांच्या धार्मिक समानतेसाठी कोणते प्रसिद्ध मंदिर प्रवेश आंदोलन सुरू केले?",
+        "en": "Which landmark temple-entry satyagraha was inaugurated on 2 March 1930 at Nashik under the leadership of Dr. B. R. Ambedkar and Dadasaheb Gaikwad?"
+      },
+      "options": [
+        { "mr": "कळारम मंदिर सत्याग्रह (Kalaram Temple Satyagraha)", "en": "Kalaram Temple Satyagraha" },
+        { "mr": "त्र्यंबकेश्वर सत्याग्रह", "en": "Trimbakeshwar Satyagraha" },
+        { "mr": "गुरुवायूर सत्याग्रह", "en": "Guruvayur Satyagraha" },
+        { "mr": "पार्वती मंदिर सत्याग्रह", "en": "Parvati Temple Satyagraha" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "२ मार्च १९३० रोजी नाशिक येथील प्रख्यात काळाराम मंदिरात प्रवेशाचा हक्क मिळवण्यासाठी कर्मवीर दादासाहेब गायकवाड यांच्या सहकार्याने डॉ. आंबेडकरांनी अहिंसक सत्याग्रह सुरू केला, जो सुमारे ५ वर्षे चालला.",
+        "en": "The Kalaram Temple Satyagraha was launched at Nashik on 2 March 1930 under Dr. Ambedkar and Bhaurao (Dadasaheb) Gaikwad to claim unconditional entry rights to sacred public shrines."
+      }
+    },
+    {
+      "id": 22,
+      "question": {
+        "mr": "डॉ. बाबासाहेब आंबेडकरांनी आपल्या वैचारिक प्रबोधनासाठी सुरू केलेल्या वृत्तपत्रांचा अचूक कालानुक्रम कोणता आहे?\n१. मूकनायक (Mooknayak)\n२. बहिष्कृत भारत (Bahishkrit Bharat)\n३. जनता (Janata)\n४. प्रबुद्ध भारत (Prabuddha Bharat)\nपर्याय निवडा:",
+        "en": "What is the correct chronological sequence of the newspapers founded by Dr. B. R. Ambedkar?\n1. Mooknayak\n2. Bahishkrit Bharat\n3. Janata\n4. Prabuddha Bharat\nChoose the correct option:"
+      },
+      "options": [
+        { "mr": "१ ➔ २ ➔ ३ ➔ ४", "en": "1 ➔ 2 ➔ 3 ➔ 4" },
+        { "mr": "२ ➔ १ ➔ ३ ➔ ४", "en": "2 ➔ 1 ➔ 3 ➔ 4" },
+        { "mr": "१ ➔ ३ ➔ २ ➔ ४", "en": "1 ➔ 3 ➔ 2 ➔ 4" },
+        { "mr": "४ ➔ १ ➔ २ ➔ ३", "en": "4 ➔ 1 ➔ 2 ➔ 3" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "डॉ. आंबेडकरांच्या वृत्तपत्रांचा योग्य कालानुक्रम:\n१. मूकनायक (३१ जानेवारी १९२०)\n२. बहिष्कृत भारत (३ एप्रिल १९२७)\n३. जनता (२४ नोव्हेंबर १९३०)\n४. प्रबुद्ध भारत (४ फेब्रुवारी १९५६).\nत्यामुळे योग्य पर्याय १ ➔ २ ➔ ३ ➔ ४ असा आहे.",
+        "en": "The chronological sequence of Dr. Ambedkar's periodicals is: Mooknayak (1920) ➔ Bahishkrit Bharat (1927) ➔ Janata (1930) ➔ Prabuddha Bharat (1956)."
+      }
+    },
+    {
+      "id": 23,
+      "question": {
+        "mr": "ऑगस्ट १९३६ मध्ये डॉ. बाबासाहेब आंबेडकरांनी कामगार आणि शेतकरी वर्गाच्या हक्कांसाठी मुंबईत कोणता राजकीय पक्ष स्थापन केला?",
+        "en": "Which political party was founded by Dr. B. R. Ambedkar in August 1936 to contest the 1937 provincial legislative elections on a pro-labor platform?"
+      },
+      "options": [
+        { "mr": "स्वतंत्र मजूर पक्ष (Independent Labour Party - ILP)", "en": "Independent Labour Party (ILP)" },
+        { "mr": "शेड्युल्ड कास्ट्स फेडरेशन (SCF)", "en": "Scheduled Castes Federation (SCF)" },
+        { "mr": "रिपब्लिकन पार्टी ऑफ इंडिया (RPI)", "en": "Republican Party of India (RPI)" },
+        { "mr": "शेतकरी कामगार पक्ष (PWP)", "en": "Peasants and Workers Party (PWP)" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "डॉ. आंबेडकरांनी ऑगस्ट १९३६ मध्ये 'इंडिपेंडंट लेबर पार्टी' (स्वतंत्र मजूर पक्ष) स्थापन केला. १९३७ च्या मुंबई विधानसभा निवडणुकीत या पक्षाने १७ पैकी १४ जागा जिंकून प्रचंड यश मिळवले होते.",
+        "en": "In August 1936, Dr. Ambedkar formed the Independent Labour Party (ILP). Contesting the 1937 Bombay Legislative Assembly elections on an agrarian and industrial labor platform, the ILP secured 14 of the 17 seats it contested."
+      }
+    },
+    {
+      "id": 24,
+      "question": {
+        "mr": "१४ ऑक्टोबर १९५६ रोजी विजयादशमीच्या शुभमुहूर्तावर डॉ. बाबासाहेब आंबेडकरांनी नागपूरच्या दीक्षाभूमीवर आपल्या लाखो अनुयायांसह कोणत्या धर्माची दीक्षा घेतली?",
+        "en": "On 14 October 1956 (Vijaya Dashami), which religion did Dr. B. R. Ambedkar embrace alongside hundreds of thousands of followers at Deekshabhoomi, Nagpur?"
+      },
+      "options": [
+        { "mr": "बौद्ध धर्म (Buddhism)", "en": "Buddhism" },
+        { "mr": "जैन धर्म", "en": "Jainism" },
+        { "mr": "शीख धर्म", "en": "Sikhism" },
+        { "mr": "ख्रिश्चन धर्म", "en": "Christianity" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१३ ऑक्टोबर १९३५ रोजी येवला येथे \"मी हिंदू म्हणून जन्मलो असलो तरी हिंदू म्हणून मरणार नाही\" ही प्रतिज्ञा केली होती. त्यानुसार १४ ऑक्टोबर १९५६ रोजी नागपूर येथे महास्थवीर चंद्रमणी यांच्याकडून त्यांनी त्रिशरण, पंचशील आणि २२ प्रतिज्ञा घेऊन बौद्ध धर्म स्वीकारला.",
+        "en": "Fulfilling his 1935 Yeola declaration, Dr. Ambedkar embraced Buddhism at Deekshabhoomi, Nagpur, on 14 October 1956 along with roughly 500,000 followers, taking the vows administered by Mahasthavir Chandramani."
+      }
+    },
+    {
+      "id": 25,
+      "question": {
+        "mr": "मद्रास प्रांतात बालविवाह बंदी, विधवा पुनर्विवाह आणि देवदासी प्रथा निर्मूलनासाठी आयुष्यभर संघर्ष करणारे आणि 'आंध्र प्रदेशातील समाजप्रबोधनाचे जनक' मानले जाणारे नेते कोण होते?",
+        "en": "Who among the following was hailed as the 'Father of the Renaissance in Andhra' for his crusades against child marriage and dedication to widow remarriage in South India?"
+      },
+      "options": [
+        { "mr": "कंदुकुरी वीरेशलिंगम पंतुलु (Kandukuri Veeresalingam Pantulu)", "en": "Kandukuri Veeresalingam Pantulu" },
+        { "mr": "गुराझाडा आप्पाराव", "en": "Gurazada Apparao" },
+        { "mr": "पट्टाभी सीतारामय्या", "en": "Pattabhi Sitaramayya" },
+        { "mr": "मुत्तुलक्ष्मी रेड्डी", "en": "Muthulakshmi Reddi" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "कंदुकुरी वीरेशलिंगम पंतुलु (१८४८-१९१९) यांनी राजमुंद्री येथे १८७८ मध्ये समाजसुधारणा संघ स्थापन केला. त्यांनी ११ डिसेंबर १८८१ रोजी दक्षिणेतील पहिला जाहीर विधवा पुनर्विवाह घडवून आणला आणि 'विवेकवर्धिनी' या तेलुगू नियतकालिकातून विचार मांडले.",
+        "en": "Kandukuri Veeresalingam Pantulu (1848–1919) founded the Rajahmundry Social Reform Association in 1878, arranged the first widow remarriage in Telugu-speaking regions in 1881, and edited 'Vivekavardhani'."
+      }
+    }
+  ]
+}

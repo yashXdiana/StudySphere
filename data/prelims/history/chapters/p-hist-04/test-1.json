@@ -1,0 +1,464 @@
+{
+  "testId": "p-hist-04-t1",
+  "title": {
+    "mr": "सामाजिक व धार्मिक सुधारणा चळवळी — सराव 1",
+    "en": "Social and Religious Reform Movements — Practice Test 1"
+  },
+  "durationMinutes": 20,
+  "marksPerQuestion": 1,
+  "negativeMarking": 0.25,
+  "totalMarks": 25,
+  "difficulty": "मध्यम ते काठिण्य",
+  "questions": [
+    {
+      "id": 1,
+      "question": {
+        "mr": "राजा राममोहन रॉय यांच्या संदर्भात खालील विधाने विचारात घ्या:\nअ. त्यांनी १८१५ मध्ये कलकत्ता येथे एकेश्वरवादाचा प्रसार करण्यासाठी 'आत्मीय सभा' स्थापन केली.\nब. १८२८ मध्ये त्यांनी स्थापन केलेल्या 'ब्राह्मो सभे'चे रूपांतर पुढे 'ब्राह्मो समाज'मध्ये झाले.\nक. मुघल सम्राट अकबर दुसरा याने त्यांना 'राजा' ही पदवी देऊन इंग्लंडला पाठवले होते.\nवरीलपैकी कोणती विधाने बरोबर आहेत?",
+        "en": "Consider the following statements regarding Raja Ram Mohan Roy:\na. He founded the 'Atmiya Sabha' in Calcutta in 1815 to propagate monotheism.\nb. The 'Brahmo Sabha' established by him in 1828 later evolved into the 'Brahmo Samaj'.\nc. Mughal Emperor Akbar II conferred the title 'Raja' upon him and sent him to England.\nWhich of the statements given above are correct?"
+      },
+      "options": [
+        { "mr": "फक्त अ आणि ब", "en": "Only a and b" },
+        { "mr": "फक्त ब आणि क", "en": "Only b and c" },
+        { "mr": "फक्त अ आणि क", "en": "Only a and c" },
+        { "mr": "अ, ब आणि क सर्व", "en": "All a, b, and c" }
+      ],
+      "correctAnswerIndex": 3,
+      "explanation": {
+        "mr": "सर्व विधाने बरोबर आहेत. राजा राममोहन रॉय यांनी १८१५ मध्ये आत्मीय सभा आणि २० ऑगस्ट १८२८ रोजी ब्राह्मो सभेची स्थापना केली. मुघल बादशहा अकबर दुसरा याने स्वतःच्या पेन्शनच्या वाढीसाठी रॉय यांना इंग्लंडला पाठवण्यापूर्वी 'राजा' ही पदवी दिली होती.",
+        "en": "All statements are correct. Raja Ram Mohan Roy established Atmiya Sabha in 1815 and Brahmo Sabha on 20 August 1828. Mughal Emperor Akbar II bestowed the title of 'Raja' upon him before his diplomatic mission to England."
+      }
+    },
+    {
+      "id": 2,
+      "question": {
+        "mr": "१८०९ मध्ये राजा राममोहन रॉय यांनी एकेश्वरवादाचे समर्थन करण्यासाठी पर्शियन (फारसी) भाषेत खालीलपैकी कोणता प्रसिद्ध ग्रंथ लिहिला?",
+        "en": "Which famous work in Persian was authored by Raja Ram Mohan Roy in 1809 in defense of monotheism?"
+      },
+      "options": [
+        { "mr": "तुहफत-उल-मुवाहिद्दीन (A Gift to Monotheists)", "en": "Tuhfat-ul-Muwahhidin (A Gift to Monotheists)" },
+        { "mr": "मिरात-उल-अखबार (Mirat-ul-Akhbar)", "en": "Mirat-ul-Akhbar" },
+        { "mr": "प्रिसेप्ट्स ऑफ जिझस (Precepts of Jesus)", "en": "The Precepts of Jesus" },
+        { "mr": "संवाद कौमुदी (Samvad Kaumudi)", "en": "Samvad Kaumudi" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "राजा राममोहन रॉय यांनी १८०९ मध्ये 'तुहफत-उल-मुवाहिद्दीन' (एकेश्वरवाद्यांना भेट) हा ग्रंथ फारसी भाषेत लिहिला. यात त्यांनी मूर्तिपूजा, अंधश्रद्धा आणि बहुदेवतावादावर कठोर टीका केली होती.",
+        "en": "In 1809, Raja Ram Mohan Roy published 'Tuhfat-ul-Muwahhidin' (A Gift to Monotheists) in Persian with an Arabic introduction, arguing rationally against polytheism and idol worship."
+      }
+    },
+    {
+      "id": 3,
+      "question": {
+        "mr": "राजा राममोहन रॉय यांनी सुरू केलेल्या वृत्तपत्रांच्या जोड्यांपैकी कोणती जोडी अचूक आहे?\n१. संवाद कौमुदी — बंगाली भाषा\n२. मिरात-उल-अखबार — फारसी (पर्शियन) भाषा\nपर्याय निवडा:",
+        "en": "Which of the pairs of journals initiated by Raja Ram Mohan Roy is/are correct?\n1. Samvad Kaumudi — Bengali language\n2. Mirat-ul-Akhbar — Persian language\nChoose the option:"
+      },
+      "options": [
+        { "mr": "फक्त १", "en": "Only 1" },
+        { "mr": "फक्त २", "en": "Only 2" },
+        { "mr": "१ आणि २ दोन्ही", "en": "Both 1 and 2" },
+        { "mr": "दोन्ही नाही", "en": "Neither 1 nor 2" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "दोन्ही जोड्या बरोबर आहेत. त्यांनी १८२१ मध्ये 'संवाद कौमुदी' हे बंगाली साप्ताहिक सुरू केले (ज्यातून सतीप्रथेविरोधात मोहीम चालवली) आणि १८२२ मध्ये 'मिरात-उल-अखबार' हे पहिले फारसी साप्ताहिक सुरू केले.",
+        "en": "Both pairs are correct. Raja Ram Mohan Roy launched the Bengali weekly 'Samvad Kaumudi' in 1821 and the Persian weekly 'Mirat-ul-Akhbar' in 1822."
+      }
+    },
+    {
+      "id": 4,
+      "question": {
+        "mr": "१८३९ मध्ये महर्षी देवेंद्रनाथ टागोर यांनी कलकत्ता येथे स्थापन केलेल्या सभेचे नाव काय होते, जिचे मूळ नाव 'तत्वरंजिनी सभा' होते?",
+        "en": "What was the name of the society founded in Calcutta in 1839 by Debendranath Tagore, initially called 'Tattvaranjini Sabha'?"
+      },
+      "options": [
+        { "mr": "तत्वबोधिनी सभा", "en": "Tattvabodhini Sabha" },
+        { "mr": "धर्म सभा", "en": "Dharma Sabha" },
+        { "mr": "ब्राह्मो सभा", "en": "Brahmo Sabha" },
+        { "mr": "मानव धर्म सभा", "en": "Manav Dharma Sabha" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "६ ऑक्टोबर १८३९ रोजी देवेंद्रनाथ टागोर यांनी 'तत्वरंजिनी सभा' स्थापन केली, जिचे नाव नंतर बदलून 'तत्वबोधिनी सभा' ठेवण्यात आले. या सभेने उपनिषदांचा पद्धतशीर अभ्यास आणि बंगाली भाषेचा प्रसार केला.",
+        "en": "On 6 October 1839, Debendranath Tagore founded the Tattvaranjini Sabha, soon renamed 'Tattvabodhini Sabha', to foster Vedantic rationalism and indigenous culture."
+      }
+    },
+    {
+      "id": 5,
+      "question": {
+        "mr": "तत्वबोधिनी सभेचे मुखपत्र असलेल्या 'तत्वबोधिनी पत्रिका' या मासिकाचे पहिले संपादक खालीलपैकी कोण होते?",
+        "en": "Who among the following was the first editor of 'Tattvabodhini Patrika', the journal of the Tattvabodhini Sabha launched in 1843?"
+      },
+      "options": [
+        { "mr": "अक्षय कुमार दत्त", "en": "Akshay Kumar Dutt" },
+        { "mr": "ईश्वरचंद्र विद्यासागर", "en": "Ishwar Chandra Vidyasagar" },
+        { "mr": "देवेंद्रनाथ टागोर", "en": "Debendranath Tagore" },
+        { "mr": "केशवचंद्र सेन", "en": "Keshub Chunder Sen" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१८४३ मध्ये सुरू झालेल्या 'तत्वबोधिनी पत्रिका' या मासिकाचे संपादक अक्षय कुमार दत्त होते. त्यांनी विज्ञानाधारित दृष्टीकोन आणि बंगाली गद्यशैलीच्या विकासात मोठे योगदान दिले.",
+        "en": "Akshay Kumar Dutt was the inaugural editor of the 'Tattvabodhini Patrika' established in 1843, introducing scientific rationalism into Bengali intellectual discourse."
+      }
+    },
+    {
+      "id": 6,
+      "question": {
+        "mr": "१८६६ मध्ये ब्राह्मो समाजात पडलेल्या पहिल्या फुटीनंतर केशवचंद्र सेन यांच्या गटाने स्थापन केलेल्या शाखेचे नाव काय होते?",
+        "en": "Following the first schism in the Brahmo Samaj in 1866, what was the name of the branch established by Keshub Chunder Sen's faction?"
+      },
+      "options": [
+        { "mr": "भारतीय ब्राह्मो समाज (Brahmo Samaj of India)", "en": "Brahmo Samaj of India" },
+        { "mr": "आदि ब्राह्मो समाज (Adi Brahmo Samaj)", "en": "Adi Brahmo Samaj" },
+        { "mr": "साधारण ब्राह्मो समाज (Sadharan Brahmo Samaj)", "en": "Sadharan Brahmo Samaj" },
+        { "mr": "प्रार्थना समाज (Prarthana Samaj)", "en": "Prarthana Samaj" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१८६६ मध्ये ब्राह्मो समाजात फूट पडली. केशवचंद्र सेन यांच्या पुरोगामी गटाने 'भारतीय ब्राह्मो समाज' (Brahmo Samaj of India) स्थापन केला, तर देवेंद्रनाथ टागोर यांच्या मूळ जुन्या गटाला 'आदि ब्राह्मो समाज' म्हटले गेले.",
+        "en": "In 1866, Keshub Chunder Sen split off to form the 'Brahmo Samaj of India', while Debendranath Tagore's parent orthodox branch came to be designated as the 'Adi Brahmo Samaj'."
+      }
+    },
+    {
+      "id": 7,
+      "question": {
+        "mr": "१८७८ मध्ये केशवचंद्र सेन यांच्या भारतीय ब्राह्मो समाजात दुसरी फूट पडून 'साधारण ब्राह्मो समाज' स्थापन होण्याचे तात्कालिक कारण कोणते होते?",
+        "en": "What was the immediate cause behind the second schism in 1878 that led to the foundation of the 'Sadharan Brahmo Samaj'?"
+      },
+      "options": [
+        { "mr": "केशवचंद्र सेन यांनी आपल्या अल्पवयीन १३ वर्षीय कन्येचा विवाह कूचबिहारच्या महाराजांशी वैदिक-हिंदू पद्धतीने करणे", "en": "Keshub Chunder Sen marrying his minor 13-year-old daughter to the Maharaja of Cooch Behar according to orthodox Hindu rites" },
+        { "mr": "सतीप्रथा बंदी कायद्याला पाठिंबा देणे", "en": "Supporting the abolition of Sati" },
+        { "mr": "ख्रिश्चन धर्म स्वीकारणे", "en": "His formal conversion to Christianity" },
+        { "mr": "देवेंद्रनाथ टागोर यांच्याशी राजकीय वाद", "en": "A political conflict with Debendranath Tagore" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "केशवचंद्र सेन यांनी स्वतः १८७२ च्या विशेष विवाह कायद्याचे समर्थन केले होते (मुलीचे लग्नाचे किमान वय १४ ठरवले होते); परंतु १८७८ मध्ये त्यांनी स्वतःच्या १३ वर्षांच्या कन्येचा विवाह कूचबिहारच्या अल्पवयीन राजाशी पारंपरिक हिंदू पद्धतीने केला. त्यामुळे संतप्त होऊन शिवनाथ शास्त्री, आनंदमोहन बोस इत्यादींनी 'साधारण ब्राह्मो समाज' स्थापन केला.",
+        "en": "In May 1878, Keshub Chunder Sen married his minor 13-year-old daughter Suniti Devi to the minor Prince of Cooch Behar violating the 1872 Marriage Act, prompting Anandamohan Bose and Shibnath Shastri to form the Sadharan Brahmo Samaj."
+      }
+    },
+    {
+      "id": 8,
+      "question": {
+        "mr": "हिंदू विधवा पुनर्विवाहासाठी आयुष्यभर संघर्ष करणारे आणि २६ जुलै १८५६ रोजी 'हिंदू विधवा पुनर्विवाह कायदा' संमत करून घेणारे थोर समाजसुधारक कोण होते?",
+        "en": "Who was the eminent social reformer whose sustained advocacy led to the passing of the Hindu Widows' Remarriage Act on 26 July 1856?"
+      },
+      "options": [
+        { "mr": "पंडित ईश्वरचंद्र विद्यासागर", "en": "Pandit Ishwar Chandra Vidyasagar" },
+        { "mr": "राजा राममोहन रॉय", "en": "Raja Ram Mohan Roy" },
+        { "mr": "देवेंद्रनाथ टागोर", "en": "Debendranath Tagore" },
+        { "mr": "केशवचंद्र सेन", "en": "Keshub Chunder Sen" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "पंडित ईश्वरचंद्र विद्यासागर यांनी संस्कृत ग्रंथांचे दाखले देऊन विधवा पुनर्विवाह शास्त्रसंमत असल्याचे सिद्ध केले. त्यांच्या प्रयत्नांमुळे लॉर्ड डलहौसीने विधेयक मांडले आणि लॉर्ड कॅनिंगने १८५६ चा 'हिंदू विधवा पुनर्विवाह कायदा' (Act XV of 1856) संमत केला.",
+        "en": "Pandit Ishwar Chandra Vidyasagar spearheaded the movement for widow remarriage by citing Vedic texts. His relentless petitioning led to Lord Canning enacting the Hindu Widows' Remarriage Act (Act XV of 1856)."
+      }
+    },
+    {
+      "id": 9,
+      "question": {
+        "mr": "पंडित ईश्वरचंद्र विद्यासागर यांनी बंगाली भाषेत प्राथमिक शिक्षण सुलभ व्हावे म्हणून लिहिलेले प्रसिद्ध वर्णमालेचे पुस्तक कोणते?",
+        "en": "Which famous introductory Bengali primer was authored by Ishwar Chandra Vidyasagar to facilitate foundational language learning?"
+      },
+      "options": [
+        { "mr": "वर्णपरिचय (Barnaparichay)", "en": "Barnaparichay" },
+        { "mr": "आनंदमठ", "en": "Anandamath" },
+        { "mr": "संवाद कौमुदी", "en": "Samvad Kaumudi" },
+        { "mr": "मेघनाद वध", "en": "Meghnad Badh" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "विद्यासागर यांनी १८५५ मध्ये 'वर्णपरिचय' हा बंगाली मुळाक्षरे व व्याकरण शिकवणारा अत्यंत लोकप्रिय ग्रंथ लिहिला, ज्याने आधुनिक बंगाली भाषेची पायाभरणी केली.",
+        "en": "In 1855, Ishwar Chandra Vidyasagar published 'Barnaparichay', which restructured Bengali typography and phonetics, serving as the foundational primer for Bengali education."
+      }
+    },
+    {
+      "id": 10,
+      "question": {
+        "mr": "१८२० च्या दशकात बंगालमध्ये सुरू झालेल्या 'यंग बंगाल चळवळी'चे (Young Bengal Movement) प्रवर्तक खालीलपैकी कोण होते?",
+        "en": "Who was the pioneer of the radical 'Young Bengal Movement' founded in Bengal during the late 1820s?"
+      },
+      "options": [
+        { "mr": "हेन्री व्हिव्हियन डेरोझिओ (Henry Louis Vivian Derozio)", "en": "Henry Louis Vivian Derozio" },
+        { "mr": "डेव्हिड हेअर (David Hare)", "en": "David Hare" },
+        { "mr": "मायकेल मधुसूदन दत्त", "en": "Michael Madhusudan Dutt" },
+        { "mr": "रामगोपाल घोष", "en": "Ramgopal Ghosh" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "हिंदू कॉलेजचे तरुण प्राध्यापक हेन्री व्हिव्हियन डेरोझिओ (१८०९-१८३१) हे यंग बंगाल चळवळीचे नेते होते. फ्रेंच राज्यक्रांतीच्या विचारांनी प्रेरित होऊन त्यांनी विद्यार्थ्यांना प्रश्न विचारणे, अंधश्रद्धा नाकारणे आणि स्वातंत्र्याचा विचार शिकवला. सुरेंद्रनाथ बॅनर्जी यांनी त्यांना 'आधुनिक बंगालच्या सभ्यतेचे प्रणेते' म्हटले होते.",
+        "en": "Henry Louis Vivian Derozio, an Anglo-Indian teacher at Hindu College from 1826 to 1831, inspired the radical Young Bengal Movement, urging students to question all authority and champion free thought."
+      }
+    },
+    {
+      "id": 11,
+      "question": {
+        "mr": "हेन्री व्हिव्हियन डेरोझिओ यांच्या संदर्भात खालील विधाने विचारात घ्या:\nअ. त्यांनी १८२८ मध्ये विद्यार्थ्यांसाठी 'अकॅडेमिक असोसिएशन' (Academic Association) ही वादविवाद संस्था स्थापन केली.\nब. त्यांना 'आधुनिक भारताचे पहिले राष्ट्रवादी कवी' मानले जाते.\nवरीलपैकी कोणते/ती विधान/ने बरोबर आहेत?",
+        "en": "Consider the following statements regarding Henry Vivian Derozio:\na. He established the debating club 'Academic Association' for students in 1828.\nb. He is widely recognized as the 'first nationalist poet of modern India'.\nWhich of the statements given above is/are correct?"
+      },
+      "options": [
+        { "mr": "फक्त अ", "en": "Only a" },
+        { "mr": "फक्त ब", "en": "Only b" },
+        { "mr": "अ आणि ब दोन्ही", "en": "Both a and b" },
+        { "mr": "दोन्ही नाही", "en": "Neither a nor b" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "दोन्ही विधाने बरोबर आहेत. डेरोझिओ यांनी १८२८ मध्ये 'अकॅडेमिक असोसिएशन' स्थापन केली. त्यांच्या 'टू इंडिया - माय नेटिव्ह लँड' (To India - My Native Land) या देशभक्तीपर कवितेमुळे त्यांना आधुनिक भारताचे पहिले राष्ट्रकवी म्हटले जाते.",
+        "en": "Both statements are correct. Derozio formed the Academic Association in 1828 and composed patriotic poems such as 'To India - My Native Land', earning him recognition as modern India's first nationalist poet."
+      }
+    },
+    {
+      "id": 12,
+      "question": {
+        "mr": "महाराष्ट्रात 'वृत्तपत्रसृष्टीचे जनक' म्हणून गौरवल्या जाणाऱ्या बाळशास्त्री जांभेकर यांनी ६ जानेवारी १८३२ रोजी कोणते पहिले मराठी वृत्तपत्र सुरू केले?",
+        "en": "Which first Marathi newspaper was launched on 6 January 1832 by Balshastri Jambhekar, revered as the 'Father of Marathi Journalism'?"
+      },
+      "options": [
+        { "mr": "दर्पण (Darpan)", "en": "Darpan" },
+        { "mr": "दिग्दर्शन (Digdarshan)", "en": "Digdarshan" },
+        { "mr": "प्रभाकर (Prabhakar)", "en": "Prabhakar" },
+        { "mr": "ज्ञानप्रकाश (Dnyanprakash)", "en": "Dnyanprakash" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "बाळशास्त्री जांभेकर यांनी ६ जानेवारी १८३२ रोजी मुंबईत 'दर्पण' हे द्विभाषिक (मराठी व इंग्रजी) वृत्तपत्र सुरू केले. म्हणून ६ जानेवारी हा दिवस महाराष्ट्रात 'पत्रकार दिन' म्हणून साजरा केला जातो.",
+        "en": "Balshastri Jambhekar founded 'Darpan', a bilingual (Marathi and English) periodical, on 6 January 1832, earning him the title 'Father of Marathi Journalism'."
+      }
+    },
+    {
+      "id": 13,
+      "question": {
+        "mr": "बाळशास्त्री जांभेकर यांनी १८४० मध्ये सुरू केलेल्या महाराष्ट्रातील पहिल्या मराठी मासिकाचे नाव काय होते?",
+        "en": "What was the name of the first Marathi monthly magazine launched by Balshastri Jambhekar in 1840?"
+      },
+      "options": [
+        { "mr": "दिग्दर्शन (Digdarshan)", "en": "Digdarshan" },
+        { "mr": "दर्पण (Darpan)", "en": "Darpan" },
+        { "mr": "ज्ञानसिंधू (Dnyansindhu)", "en": "Dnyansindhu" },
+        { "mr": "विविधज्ञानविस्तार (Vividhdnyanvistar)", "en": "Vividhdnyanvistar" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "बाळशास्त्री जांभेकर यांनी मे १८४० मध्ये 'दिग्दर्शन' हे पहिले मराठी मासिक सुरू केले. यात इतिहास, भूगोल, विज्ञान आणि भौतिकशास्त्र या विषयांवर माहितीपूर्ण लेख प्रसिद्ध केले जात असत.",
+        "en": "Balshastri Jambhekar founded 'Digdarshan' in May 1840, which was the first monthly periodical in Marathi dealing with history, geography, and natural sciences."
+      }
+    },
+    {
+      "id": 14,
+      "question": {
+        "mr": "ख्रिश्चन धर्मात गेलेल्या श्रीपती शेषाद्री परळीकर या तरुणाचे शुद्धीकरण करून त्याला पुन्हा हिंदू धर्मात सन्मानाने परत घेण्याचे ऐतिहासिक कार्य खालीलपैकी कोणी केले?",
+        "en": "Who accomplished the historic re-conversion (shuddhi) of young Shripati Sheshadri Parlikar back into the Hindu fold after he had come under Christian influence?"
+      },
+      "options": [
+        { "mr": "बाळशास्त्री जांभेकर", "en": "Balshastri Jambhekar" },
+        { "mr": "दादोबा पांडुरंग तर्खडकर", "en": "Dadoba Pandurang Tarkhadkar" },
+        { "mr": "गोपाळ हरी देशमुख", "en": "Gopal Hari Deshmukh" },
+        { "mr": "महात्मा ज्योतिराव फुले", "en": "Mahatma Jyotirao Phule" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१८४३ मध्ये नारायण शेषाद्री याने ख्रिस्ती धर्म स्वीकारल्यावर त्याचा अल्पवयीन भाऊ श्रीपती यालाही ख्रिस्ती करण्याचा प्रयत्न झाला. बाळशास्त्री जांभेकर यांनी कायदेशीर लढा देऊन त्याला सोडवले आणि काशीच्या विद्वानांची अनुमती मिळवून त्याचे शुद्धीकरण केले.",
+        "en": "In 1843, Balshastri Jambhekar legally retrieved minor Shripati Sheshadri from Scottish missionaries and secured approval from orthodox pandits to readmit him into Hinduism."
+      }
+    },
+    {
+      "id": 15,
+      "question": {
+        "mr": "२२ जून १८४४ रोजी सुरत येथे 'मानव धर्म सभा' स्थापन करण्यात खालीलपैकी कोणाचा पुढाकार होता?",
+        "en": "Who among the following took the lead in establishing the 'Manav Dharma Sabha' at Surat on 22 June 1844?"
+      },
+      "options": [
+        { "mr": "दादोबा पांडुरंग तर्खडकर आणि दुर्गाराम मंच्छाराम", "en": "Dadoba Pandurang Tarkhadkar and Durgaram Manchharam" },
+        { "mr": "बाळशास्त्री जांभेकर आणि भाऊ महाजन", "en": "Balshastri Jambhekar and Bhau Mahajan" },
+        { "mr": "डॉ. आत्माराम पांडुरंग आणि आर. जी. भांडारकर", "en": "Dr. Atmaram Pandurang and R. G. Bhandarkar" },
+        { "mr": "जगन्नाथ शंकरशेट आणि भाऊ दाजी लाड", "en": "Jagannath Shankarsheth and Bhau Daji Lad" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "दादोबा पांडुरंग तर्खडकर आणि दुर्गाराम मंच्छाराम महेता यांनी २२ जून १८४४ रोजी सुरत येथे मानव धर्म सभा सुरू केली. एकेश्वरवाद, विश्वबंधुत्व आणि जातीभेद निर्मूलन हे या सभेचे मूळ तत्त्व होते.",
+        "en": "Dadoba Pandurang Tarkhadkar along with Durgaram Manchharam Mehta founded the Manav Dharma Sabha in Surat on 22 June 1844 to challenge orthodoxy and caste exclusivism."
+      }
+    },
+    {
+      "id": 16,
+      "question": {
+        "mr": "३१ जुलै १८४९ रोजी मुंबई येथे स्थापन झालेल्या गुप्त 'परमहंस सभे'च्या (Paramahansa Sabha) संदर्भात खालील विधाने विचारात घ्या:\nअ. दादोबा पांडुरंग तर्खडकर, रामचंद्र बाळकृष्ण जयकर आणि भिकोबा लक्ष्मण चव्हाण यांनी तिची स्थापना केली.\nब. सभेच्या बैठकीत शेवटी सर्वांना एकाच पात्रातील अन्न व विहिरीचे पाणी पिणे (रोटीबंदी तोडणे) अनिवार्य होते.\nक. रामचंद्र बाळकृष्ण जयकर हे या सभेचे पहिले अध्यक्ष होते.\nवरीलपैकी कोणती विधाने बरोबर आहेत?",
+        "en": "Consider the following statements regarding the clandestine 'Paramahansa Sabha' founded in Bombay on 31 July 1849:\na. It was founded by Dadoba Pandurang Tarkhadkar, Ramchandra Balkrishna Jayakar, and Bhikoba Laxman Chavan.\nb. Members were required to break caste barriers by eating bread prepared by lower-caste Christians and drinking water from the same vessel.\nc. Ramchandra Balkrishna Jayakar was its first president.\nWhich of the statements given above are correct?"
+      },
+      "options": [
+        { "mr": "फक्त अ आणि ब", "en": "Only a and b" },
+        { "mr": "फक्त ब आणि क", "en": "Only b and c" },
+        { "mr": "फक्त अ आणि क", "en": "Only a and c" },
+        { "mr": "अ, ब आणि क सर्व", "en": "All a, b, and c" }
+      ],
+      "correctAnswerIndex": 3,
+      "explanation": {
+        "mr": "सर्व विधाने बरोबर आहेत. ३१ जुलै १८४९ रोजी परमहंस सभा स्थापन झाली. जातीभेद निर्मूलन हे मुख्य उद्दिष्ट असल्याने सभेच्या सुरुवातीला सर्वांना पाव खावा लागे व पाणी प्यावे लागे. सभेचे कामकाज अत्यंत गुप्त ठेवले जात असे. १८६० मध्ये सभासदांची यादी चोरीला गेल्याने ही सभा बरखास्त झाली.",
+        "en": "All statements are correct. The Paramahansa Sabha was founded secretly on 31 July 1849 in Bombay. Members initiated themselves by breaking caste rules via dining together; it was presided over by Ramchandra Balkrishna Jayakar."
+      }
+    },
+    {
+      "id": 17,
+      "question": {
+        "mr": "दादोबा पांडुरंग तर्खडकर यांनी परमहंस सभेचे वैचारिक तत्त्वज्ञान मांडण्यासाठी 'एक धर्म शोधक' या टोपणनावाने कोणता ग्रंथ लिहिला?",
+        "en": "Under the pseudonym 'Ek Dharma Shodhak', which book was authored by Dadoba Pandurang Tarkhadkar delineating the philosophical tenets of Paramahansa Sabha?"
+      },
+      "options": [
+        { "mr": "धर्मविवेचन (Dharmavivechan)", "en": "Dharmavivechan" },
+        { "mr": "पारमहंसिक ब्राह्मधर्म", "en": "Paramahansik Brahmadharma" },
+        { "mr": "महाराष्ट्र भाषेचे व्याकरण", "en": "Maharashtra Bhasheche Vyakaran" },
+        { "mr": "शेतकऱ्याचा असूड", "en": "Shetkaryacha Asud" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "दादोबा पांडुरंग यांनी १८४८ मध्ये 'धर्मविवेचन' हा ग्रंथ 'एक धर्म शोधक' या नावाने लिहिला. त्यात त्यांनी ईश्वराचे एकत्व, सर्व मानवजातीची एकच जात आणि नैतिक आचरणाचे महत्त्व स्पष्ट केले.",
+        "en": "Dadoba Pandurang published 'Dharmavivechan' in 1848 under the pen-name 'Ek Dharma Shodhak', articulating the 7 cardinal monotheistic and universalist principles of the Paramahansa Sabha."
+      }
+    },
+    {
+      "id": 18,
+      "question": {
+        "mr": "मराठी भाषेचे व्याकरण पद्धतशीरपणे लिहून भाषेला निश्चित नियम दिल्यामुळे कोणाला 'मराठी भाषेचे पाणिनी' (Panini of Marathi Language) म्हटले जाते?",
+        "en": "Who is revered as the 'Panini of the Marathi Language' for his systematic grammar treatises on Marathi?"
+      },
+      "options": [
+        { "mr": "दादोबा पांडुरंग तर्खडकर", "en": "Dadoba Pandurang Tarkhadkar" },
+        { "mr": "बाळशास्त्री जांभेकर", "en": "Balshastri Jambhekar" },
+        { "mr": "विष्णुशास्त्री चिपळूणकर", "en": "Vishnushastri Chiplunkar" },
+        { "mr": "कृष्णाजी प्रभाकर खाडिलकर", "en": "Krishnaji Prabhakar Khadilkar" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "दादोबा पांडुरंग तर्खडकर यांनी १८३६ मध्ये 'महाराष्ट्र भाषेचे व्याकरण' हा ग्रंथ लिहिला. या महान कार्यामुळे त्यांना 'मराठी भाषेचे पाणिनी' मानले जाते. (विष्णुशास्त्री चिपळूणकर यांना 'मराठी भाषेचे शिवाजी' म्हटले जाते).",
+        "en": "Dadoba Pandurang Tarkhadkar is acclaimed as the 'Panini of Marathi' following his comprehensive 1836 work 'Maharashtra Bhasheche Vyakaran'."
+      }
+    },
+    {
+      "id": 19,
+      "question": {
+        "mr": "'प्रभाकर' या साप्ताहिकातून १८४८ ते १८५० दरम्यान प्रसिद्ध झालेली लोकहितवादींची प्रसिद्ध 'शतपत्रे' खालीलपैकी कोणी लिहिली होती?",
+        "en": "Who authored the celebrated 'Shatapatre' (100 Epistles) published between 1848 and 1850 in the weekly journal 'Prabhakar'?"
+      },
+      "options": [
+        { "mr": "गोपाळ हरी देशमुख", "en": "Gopal Hari Deshmukh" },
+        { "mr": "गोपाळ गणेश आगरकर", "en": "Gopal Ganesh Agarkar" },
+        { "mr": "बाळ गंगाधर टिळक", "en": "Bal Gangadhar Tilak" },
+        { "mr": "भाऊ महाजन", "en": "Bhau Mahajan" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "गोपाळ हरी देशमुख (लोकहितवादी) यांनी भाऊ महाजन यांच्या 'प्रभाकर' साप्ताहिकातून १०८ पत्रांद्वारे सामाजिक, आर्थिक आणि धार्मिक सुधारणांवर भाष्य करणारी 'शतपत्रे' लिहिली.",
+        "en": "Gopal Hari Deshmukh, widely known by his pen-name 'Lokhitwadi', wrote the historic 108 reformist letters known as 'Shatapatre' in Bhau Mahajan's weekly 'Prabhakar'."
+      }
+    },
+    {
+      "id": 20,
+      "question": {
+        "mr": "लोकहितवादी (गोपाळ हरी देशमुख) यांच्या संदर्भात खालील विधाने विचारात घ्या:\nअ. त्यांनी भारतीयांच्या दारिद्र्यामागे आळस, अज्ञान आणि तंत्रज्ञानाचा अभाव असल्याचे सांगून स्वदेशी मालाच्या वापराचा पुरस्कार केला.\nब. १८८० मध्ये ब्रिटिश सरकारने त्यांना 'कौन्सिल ऑफ लेजिस्लेशन'चे (कायदेमंडळ) सदस्य नेमले होते.\nक. त्यांनी 'ज्ञानप्रकाश', 'इंदुप्रकाश' आणि 'लोकहितवादी' या नियतकालिकांमधून लेखन केले.\nवरीलपैकी कोणती विधाने बरोबर आहेत?",
+        "en": "Consider the following statements regarding Lokhitwadi (Gopal Hari Deshmukh):\na. He advocated Swadeshi enterprise and attributed Indian poverty to fatalism, inertia, and technological backwardness.\nb. In 1880, the British Government appointed him to the Governor-General's Council for Legislation.\nc. He contributed extensively to periodicals like 'Dnyanprakash', 'Induprakash', and 'Lokhitwadi'.\nWhich of the statements given above are correct?"
+      },
+      "options": [
+        { "mr": "फक्त अ आणि ब", "en": "Only a and b" },
+        { "mr": "फक्त ब आणि क", "en": "Only b and c" },
+        { "mr": "फक्त अ आणि क", "en": "Only a and c" },
+        { "mr": "अ, ब आणि क सर्व", "en": "All a, b, and c" }
+      ],
+      "correctAnswerIndex": 3,
+      "explanation": {
+        "mr": "सर्व विधाने बरोबर आहेत. लोकहितवादींनी आर्थिक राष्ट्रवादाची पायाभरणी केली, स्वदेशीचा पुरस्कार केला. १८८० मध्ये ते केंद्रीय कायदेमंडळाचे सदस्य बनले आणि त्यांनी आयुष्यभर विविध वृत्तपत्रांमधून समाजप्रबोधन केले.",
+        "en": "All statements are correct. Lokhitwadi was an early advocate of Swadeshi economics, served as a member of the Governor's Legislative Council in 1880, and utilized various periodicals for sociopolitical critique."
+      }
+    },
+    {
+      "id": 21,
+      "question": {
+        "mr": "१८४१ मध्ये 'प्रभाकर', १८४४ मध्ये 'धूमकेतू' आणि १८५३ मध्ये 'ज्ञानदर्शन' ही वृत्तपत्रे व नियतकालिके सुरू करणारे महाराष्ट्रातील पत्रकार कोण होते?",
+        "en": "Who among the following was the Maharashtrian journalist who founded the periodical 'Prabhakar' in 1841, 'Dhumketu' in 1844, and 'Dnyandarshan' in 1853?"
+      },
+      "options": [
+        { "mr": "गोविंद विठ्ठल कुंटे (भाऊ महाजन)", "en": "Govind Vitthal Kunte (Bhau Mahajan)" },
+        { "mr": "बाळशास्त्री जांभेकर", "en": "Balshastri Jambhekar" },
+        { "mr": "दादोबा पांडुरंग", "en": "Dadoba Pandurang" },
+        { "mr": "कृष्णाजी लक्ष्मण दाभोळकर", "en": "Krishnaji Laxman Dabholkar" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "गोविंद विठ्ठल कुंटे उर्फ भाऊ महाजन यांनी २४ ऑक्टोबर १८४१ रोजी 'प्रभाकर' सुरू केले (ज्यात शतपत्रे आणि फ्रेंच राज्यक्रांतीचा इतिहास प्रसिद्ध झाला). तसेच त्यांनी 'धूमकेतू' व 'ज्ञानदर्शन' ही वृत्तपत्रेही चालवली.",
+        "en": "Govind Vitthal Kunte (Bhau Mahajan) launched the impactful weekly 'Prabhakar' in 1841, along with 'Dhumketu' and quarterly digest 'Dnyandarshan'."
+      }
+    },
+    {
+      "id": 22,
+      "question": {
+        "mr": "मुंबईच्या सार्वजनिक जीवनाची पायाभरणी करणारे आणि 'मुंबईचे शिल्पकार' व 'अनभिषिक्त राजा' म्हणून ओळखले जाणारे नेते कोण होते?",
+        "en": "Who among the following was revered as the 'Architect of Modern Bombay' and the 'Uncrowned King of Bombay' for his public philanthropy and leadership?"
+      },
+      "options": [
+        { "mr": "जगन्नाथ (नाना) शंकरशेट", "en": "Jagannath (Nana) Shankarsheth" },
+        { "mr": "सर जमशेटजी जिजीभॉय", "en": "Sir Jamsetjee Jeejeebhoy" },
+        { "mr": "दादाभाई नौरोजी", "en": "Dadabhai Naoroji" },
+        { "mr": "फिरोजशाह मेहता", "en": "Pherozeshah Mehta" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "नाना शंकरशेट (१८०३-१८६५) यांनी मुंबईच्या शैक्षणिक, सामाजिक व नागरी विकासात प्रचंड योगदान दिले. एल्फिन्स्टन कॉलेज, ग्रँट मेडिकल कॉलेज, बॉम्बे असोसिएशन आणि पहिली रेल्वे यात त्यांचा मोठा वाटा होता. आचार्य अत्रे यांनी त्यांना 'मुंबईचे अनभिषिक्त सम्राट' म्हटले होते.",
+        "en": "Jagannath Shankarsheth (Nana Shankarsheth) was the foremost philanthropist of 19th-century Bombay, co-founding the Bombay Association, Elphinstone College, and the GIP Railway."
+      }
+    },
+    {
+      "id": 23,
+      "question": {
+        "mr": "२६ ऑगस्ट १८५२ रोजी मुंबईतील नागरिकांच्या राजकीय व नागरी हक्कांसाठी स्थापन करण्यात आलेल्या 'बॉम्बे असोसिएशन' (Bombay Association) चे पहिले अध्यक्ष कोण होते?",
+        "en": "Who served as the first President of the 'Bombay Association' founded on 26 August 1852 to petition the British Parliament for constitutional reforms?"
+      },
+      "options": [
+        { "mr": "सर जमशेटजी जिजीभॉय", "en": "Sir Jamsetjee Jeejeebhoy" },
+        { "mr": "जगन्नाथ शंकरशेट", "en": "Jagannath Shankarsheth" },
+        { "mr": "डॉ. भाऊ दाजी लाड", "en": "Dr. Bhau Daji Lad" },
+        { "mr": "दादाभाई नौरोजी", "en": "Dadabhai Naoroji" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "२६ ऑगस्ट १८५२ रोजी बॉम्बे असोसिएशन स्थापन झाली. सर जमशेटजी जिजीभॉय हे तिचे पहिले अध्यक्ष होते, नाना शंकरशेट हे उपाध्यक्ष होते आणि डॉ. भाऊ दाजी लाड हे तिचे पहिले सचिव (कार्यवाह) होते.",
+        "en": "The Bombay Association was established on 26 August 1852 with Sir Jamsetjee Jeejeebhoy as its first President, Nana Shankarsheth as Vice-President, and Dr. Bhau Daji Lad as its Secretary."
+      }
+    },
+    {
+      "id": 24,
+      "question": {
+        "mr": "कुष्ठरोगावर 'चाळमोगरा' (Chaulmoogra) तेलाचा यशस्वी उपयोग शोधून काढणारे आणि प्राचीन भारतीय नाणी व शिलालेखांचे गाढे अभ्यासक असलेले महाराष्ट्रातील विद्वान कोण होते?",
+        "en": "Which eminent scholar-physician from Maharashtra discovered the therapeutic efficacy of Chaulmoogra oil in treating leprosy and was an epigraphist of ancient inscriptions?"
+      },
+      "options": [
+        { "mr": "डॉ. भाऊ दाजी लाड", "en": "Dr. Bhau Daji Lad" },
+        { "mr": "डॉ. आत्माराम पांडुरंग", "en": "Dr. Atmaram Pandurang" },
+        { "mr": "डॉ. आर. जी. भांडारकर", "en": "Dr. R. G. Bhandarkar" },
+        { "mr": "डॉ. विश्राम घोले", "en": "Dr. Vishram Ghole" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "डॉ. रामकृष्ण विठ्ठल लाड उर्फ डॉ. भाऊ दाजी लाड (१८२२-१८७४) हे ग्रँट मेडिकल कॉलेजचे पहिले पदवीधर होते. त्यांनी कुष्ठरोगावर देशी चाळमोगरा तेलाने प्रभावी औषध शोधले, म्हणून त्यांना 'धन्वंतरी' म्हटले गेले. ते जागतिक दर्जाचे पुरातत्त्वशास्त्रज्ञ व शिलालेख तज्ज्ञही होते.",
+        "en": "Dr. Bhau Daji Lad (1822–1874) was a pioneering surgeon who discovered the curative values of Chaulmoogra oil for leprosy patients and decoded crucial ancient Indian inscriptions."
+      }
+    },
+    {
+      "id": 25,
+      "question": {
+        "mr": "३१ मार्च १८६७ रोजी मुंबईत स्थापन झालेल्या 'प्रार्थना समाजा'च्या (Prarthana Samaj) स्थापनेत खालीलपैकी कोणाचे मार्गदर्शन आणि प्रेरणा निर्णायक ठरली?",
+        "en": "Whose visit and personal inspiration in Bombay was decisively instrumental in the foundation of the 'Prarthana Samaj' on 31 March 1867?"
+      },
+      "options": [
+        { "mr": "केशवचंद्र सेन", "en": "Keshub Chunder Sen" },
+        { "mr": "देवेंद्रनाथ टागोर", "en": "Debendranath Tagore" },
+        { "mr": "राजा राममोहन रॉय", "en": "Raja Ram Mohan Roy" },
+        { "mr": "स्वामी दयानंद सरस्वती", "en": "Swami Dayanand Saraswati" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१८६४ आणि १८६७ मध्ये केशवचंद्र सेन यांनी मुंबईला भेट दिली. त्यांच्या प्रभावी व्याख्यानांनी प्रेरित होऊन डॉ. आत्माराम पांडुरंग, न्यायमूर्ती रानडे इत्यादींनी ३१ मार्च १८६७ रोजी मुंबईत 'प्रार्थना समाज' स्थापन केला. डॉ. आत्माराम पांडुरंग हे त्याचे पहिले अध्यक्ष होते.",
+        "en": "Keshub Chunder Sen's reform tours to Bombay in 1864 and 1867 catalyzed local leaders led by Dr. Atmaram Pandurang to officially inaugurate the Prarthana Samaj on 31 March 1867."
+      }
+    }
+  ]
+}

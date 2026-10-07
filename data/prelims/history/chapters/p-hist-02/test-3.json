@@ -1,0 +1,464 @@
+{
+  "testId": "p-hist-02-t3",
+  "title": {
+    "mr": "भारतातील ब्रिटिश सत्तेचा विस्तार व प्रशासन — सराव 3",
+    "en": "British Rule in India — Practice Test 3"
+  },
+  "durationMinutes": 20,
+  "marksPerQuestion": 1,
+  "negativeMarking": 0.25,
+  "totalMarks": 25,
+  "difficulty": "मध्यम ते काठिण्य",
+  "questions": [
+    {
+      "id": 1,
+      "question": {
+        "mr": "१७८४ च्या 'पिट्स इंडिया कायद्याच्या' (Pitt's India Act 1784) संदर्भात खालील विधाने विचारात घ्या:\nअ. या कायद्याने कंपनीची व्यापारी आणि राजकीय कार्ये एकमेकांपासून स्पष्टपणे विभक्त केली.\nब. कंपनीच्या नागरी, लष्करी आणि महसूल प्रशासनावर देखरेख ठेवण्यासाठी लंडनमध्ये ६ आयुक्तांचे 'बोर्ड ऑफ कंट्रोल' (Board of Control) स्थापन करण्यात आले.\nवरीलपैकी कोणते/ती विधान/ने बरोबर आहेत?",
+        "en": "Consider the following statements regarding Pitt's India Act of 1784:\na. The Act explicitly bifurcated the commercial and political functions of the East India Company.\nb. A 6-member 'Board of Control' was established in London to supervise the civil, military, and revenue affairs of the Company.\nWhich of the statements given above is/are correct?"
+      },
+      "options": [
+        { "mr": "फक्त अ", "en": "Only a" },
+        { "mr": "फक्त ब", "en": "Only b" },
+        { "mr": "अ आणि ब दोन्ही", "en": "Both a and b" },
+        { "mr": "दोन्ही नाही", "en": "Neither a nor b" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "दोन्ही विधाने अचूक आहेत. १७८४ च्या पिट्स इंडिया ॲक्टने दुहेरी नियंत्रण व्यवस्था (Dual Control System) सुरू केली. व्यापाराचे व्यवस्थापन कोर्ट ऑफ डायरेक्टर्सकडे ठेवले गेले, तर राजकीय व प्रशासकीय बाबींवर नियंत्रण ठेवण्यासाठी ब्रिटिश संसदेला जबाबदार असणारे ६ सदस्यांचे 'बोर्ड ऑफ कंट्रोल' लंडनमध्ये निर्माण करण्यात आले.",
+        "en": "Both statements are correct. Pitt's India Act of 1784 instituted the system of dual government: commercial matters were left under the Court of Directors, while a 6-member Board of Control representing the British Cabinet was set up in London to oversee all civil, military, and revenue affairs."
+      }
+    },
+    {
+      "id": 2,
+      "question": {
+        "mr": "१७९३ च्या सनदी कायद्यानुसार (Charter Act of 1793) खालीलपैकी कोणती महत्त्वपूर्ण वित्तीय तरतूद लादण्यात आली होती?",
+        "en": "Which of the following significant financial provisions was imposed by the Charter Act of 1793?"
+      },
+      "options": [
+        { "mr": "बोर्ड ऑफ कंट्रोलच्या सदस्यांचे आणि कर्मचाऱ्यांचे वेतन थेट भारतीय महसुलातून देणे अनिवार्य करण्यात आले.", "en": "Salaries of the members and staff of the Board of Control were mandated to be charged directly to Indian revenues." },
+        { "mr": "कंपनीचा भारतातील सर्व व्यापार ब्रिटिश नागरिकांसाठी पूर्णपणे खुला करण्यात आला.", "en": "The Company's entire Indian commerce was thrown open unconditionally to all British citizens." },
+        { "mr": "भारतातून गोळा होणाऱ्या सर्व करांवर ५०% ब्रिटिश आयात कर लागू करण्यात आला.", "en": "A 50% British imperial duty was imposed on all revenues collected inside India." },
+        { "mr": "कंपनीला स्वतःचे चलन पाडण्यास सक्त मनाई करण्यात आली.", "en": "The East India Company was strictly prohibited from minting its own currency." }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१७९३ च्या सनदी कायद्याने कंपनीची व्यापारी मक्तेदारी आणखी २० वर्षांनी वाढवली. या कायद्यातील सर्वात अन्यायकारक तरतूद म्हणजे लंडनस्थित 'बोर्ड ऑफ कंट्रोल'चे सदस्य आणि कर्मचाऱ्यांचे पगार ब्रिटिश तिजोरीऐवजी भारतीय महसुलातून (Indian Revenues) देण्याची सक्ती करण्यात आली, जी पुढे १९१९ पर्यंत सुरू राहिली.",
+        "en": "The Charter Act of 1793 stipulated that the salaries of the Board of Control members and their administrative staff in London should henceforth be paid out of the revenues of India, a drain that persisted until the Government of India Act 1919."
+      }
+    },
+    {
+      "id": 3,
+      "question": {
+        "mr": "१८१३ ते १८२३ या काळात भारताचा गव्हर्नर-जनरल राहिलेल्या लॉर्ड हेस्टिंग्सने (Lord Hastings) भारतीय संस्थानांबाबत कोणते आक्रमक धोरण अवलंबले?",
+        "en": "Which assertive diplomatic doctrine towards Indian princely states was adopted by Governor-General Lord Hastings (1813–1823)?"
+      },
+      "options": [
+        { "mr": "सर्वोच्चतेचे धोरण (Policy of Paramountcy)", "en": "Policy of Paramountcy" },
+        { "mr": "कुशल निष्क्रियतेचे धोरण (Policy of Masterly Inactivity)", "en": "Policy of Masterly Inactivity" },
+        { "mr": "अग्रगामी धोरण (Forward Policy)", "en": "Forward Policy" },
+        { "mr": "घेऱ्याचे धोरण (Policy of Ring Fence)", "en": "Policy of Ring Fence" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "लॉर्ड हेस्टिंग्सने 'सर्वोच्चतेचे धोरण' (Policy of Paramountcy) सुरू केले. या धोरणानुसार कंपनीने दावा केला की तिचे स्थान भारतातील कोणत्याही देशी राज्यापेक्षा सर्वोच्च व श्रेष्ठ आहे; त्यामुळे आपल्या हितसंबंधांचे रक्षण करण्यासाठी कोणत्याही भारतीय राज्याला ताब्यात घेण्याचा किंवा विलीन करण्याचा कंपनीला पूर्ण अधिकार आहे.",
+        "en": "Lord Hastings initiated the 'Policy of Paramountcy', under which the Company asserted that its authority was supreme and paramount over all indigenous princely states, entitling it to annex or threaten to annex any state to preserve imperial interests."
+      }
+    },
+    {
+      "id": 4,
+      "question": {
+        "mr": "१८१४ ते १८१६ दरम्यान झालेल्या 'इंग्रज-नेपाळ युद्धाची' (Anglo-Nepalese War) समाप्ती कोणत्या ऐतिहासिक तहाने झाली?",
+        "en": "The Anglo-Nepalese War (1814–1816) came to an end with which historic peace treaty?"
+      },
+      "options": [
+        { "mr": "सुगौलीचा तह (Treaty of Sugauli)", "en": "Treaty of Sugauli" },
+        { "mr": "यांदाबूचा तह (Treaty of Yandabo)", "en": "Treaty of Yandabo" },
+        { "mr": "लाहोरचा तह (Treaty of Lahore)", "en": "Treaty of Lahore" },
+        { "mr": "गंडमकचा तह (Treaty of Gandamak)", "en": "Treaty of Gandamak" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "लॉर्ड हेस्टिंग्सच्या काळात इंग्रज-नेपाळ युद्ध झाले. मार्च १८१६ मध्ये झालेल्या 'सुगौलीच्या तहा'ने युद्धाची सांगता झाली. या तहानुसार नेपाळने गढवाल व कुमाऊँ हे जिल्हे इंग्रजांना दिले, तराई भागावरील दावा सोडला, काठमांडू येथे ब्रिटिश रेसिडेंट ठेवणे मान्य केले आणि ब्रिटिश लष्करात गुरखा सैनिकांची भरती सुरू झाली.",
+        "en": "The Anglo-Nepalese War concluded with the Treaty of Sugauli, ratified in March 1816. Nepal ceded the strategic Himalayan districts of Garhwal and Kumaon, surrendered the Tarai lowlands, agreed to a resident British envoy in Kathmandu, and permitted recruitment of Gurkhas into the British Army."
+      }
+    },
+    {
+      "id": 5,
+      "question": {
+        "mr": "मध्य भारतातील पेंढारी टोळ्यांच्या समूळ उच्चाटनासाठी (Suppression of Pindaris) लॉर्ड हेस्टिंग्सने १८१७ मध्ये कोणत्या दोन दिशांतून संयुक्त लष्करी मोहीम राबवली होती?",
+        "en": "To completely eliminate the predatory bands of Pindaris in 1817, from which two directions did Lord Hastings execute a massive pincer military campaign?"
+      },
+      "options": [
+        { "mr": "उत्तरेकडून बंगाल सैन्य आणि दक्षिणेकडून दख्खन (मद्रास) सैन्य", "en": "Northern Army from Bengal and Southern Army from the Deccan (Madras)" },
+        { "mr": "पूर्वेकडून आसाम सैन्य आणि पश्चिमेकडून पंजाब सैन्य", "en": "Eastern Army from Assam and Western Army from Punjab" },
+        { "mr": "वायव्येकडून अफगाण सैन्य आणि दक्षिणेकडून म्हैसूर सैन्य", "en": "North-West Army from Afghanistan and Southern Army from Mysore" },
+        { "mr": "केवळ मुंबई आरमाराची सागरी नाकेबंदी", "en": "Exclusively a naval blockade by the Bombay Marine" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "लॉर्ड हेस्टिंग्सने पेंढार्यांचा बीमोड करण्यासाठी १,१३,००० सैनिकांची भव्य मोहीम काढली. स्वतः हेस्टिंग्सने उत्तरेकडील बंगाल सैन्याचे नेतृत्व केले, तर सर थॉमस हिस्लॉप यांनी दक्षिणेकडील मद्रास/दख्खन सैन्याचे नेतृत्व केले. या दुहेरी विळख्यात पेंढारी नेते वासिल मोहम्मद, करीम खान आणि चितू यांचा संपूर्ण नायनाट करण्यात आला.",
+        "en": "Lord Hastings organized an unprecedented pincer movement employing over 113,000 troops: the Northern Army led personally by Hastings from Bengal and the Southern Army commanded by Sir Thomas Hislop from the Deccan, annihilating the Pindari strongholds under Cheetu, Karim Khan, and Wasil Mohammad."
+      }
+    },
+    {
+      "id": 6,
+      "question": {
+        "mr": "१८२६ मध्ये झालेल्या 'यांदाबूच्या तहाने' (Treaty of Yandabo) खालीलपैकी कोणत्या युद्धाची समाप्ती झाली?",
+        "en": "The Treaty of Yandabo in 1826 marked the conclusion of which of the following wars?"
+      },
+      "options": [
+        { "mr": "पहिले इंग्रज-ब्रह्मी युद्ध (First Anglo-Burmese War)", "en": "First Anglo-Burmese War" },
+        { "mr": "दुसरे इंग्रज-ब्रह्मी युद्ध", "en": "Second Anglo-Burmese War" },
+        { "mr": "पहिले इंग्रज-अफगाण युद्ध", "en": "First Anglo-Afghan War" },
+        { "mr": "पहिले इंग्रज-शीख युद्ध", "en": "First Anglo-Sikh War" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "गव्हर्नर-जनरल लॉर्ड ॲमहर्स्टच्या कारकिर्दीत १८२४ ते १८२६ या काळात पहिले इंग्रज-ब्रह्मी युद्ध झाले. २४ फेब्रुवारी १८२६ रोजी झालेल्या यांदाबूच्या तहानुसार ब्रह्मी सरकारने १ कोटी रुपये युद्धभरपाई दिली आणि आसाम, कछार, जयंतिया, मणिपूर, अराकान व तेनासेरिम या प्रदेशांवरील ताबा ब्रिटिशांच्या हवाली केला.",
+        "en": "The First Anglo-Burmese War (1824–1826), fought during the tenure of Lord Amherst, concluded with the Treaty of Yandabo on 24 February 1826. The King of Burma ceded Assam, Manipur, Arakan, and Tenasserim, accepted a British Resident at Ava, and paid a war indemnity of one crore rupees."
+      }
+    },
+    {
+      "id": 7,
+      "question": {
+        "mr": "१८२३ मध्ये स्थापन करण्यात आलेल्या 'सार्वजनिक शिक्षण विषयक सामान्य समितीमध्ये' (General Committee of Public Instruction - GCPI) खालीलपैकी कोणत्या दोन विचारसरणींमध्ये तीव्र वाद निर्माण झाला?",
+        "en": "Within the General Committee of Public Instruction (GCPI) established in 1823, a famous controversy erupted between which two ideological factions?"
+      },
+      "options": [
+        { "mr": "प्राच्यविद्यावादी (Orientalists) आणि आंग्लविद्यावादी (Anglicists)", "en": "Orientalists and Anglicists" },
+        { "mr": "ख्रिश्चन मिशनरी आणि वैदिक परंपरावादी", "en": "Christian Missionaries and Vedic Traditionalists" },
+        { "mr": "जमीनदार वर्ग आणि रयतवारी समर्थक", "en": "Zamindars and Ryotwari advocates" },
+        { "mr": "न्यायालयीन सुधारक आणि पोलीस प्रशासनवादी", "en": "Judicial reformers and Police administrators" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१८२३ च्या GCPI मध्ये ₹१ लाख शिक्षण अनुदानाच्या खर्चावरून वाद उद्भवला. एच. टी. प्रिन्सेप यांच्या नेतृत्वाखालील 'प्राच्यविद्यावादी' (Orientalists) संस्कृत, अरबी व फारसी भाषांच्या संवर्धनाची मागणी करत होते; तर चार्ल्स ट्रॅव्हेलियन आणि मेकॉल यांच्या नेतृत्वाखालील 'आंग्लविद्यावादी' (Anglicists) इंग्रजी माध्यमातून पाश्चात्य विज्ञानाच्या प्रसाराचा आग्रह धरत होते.",
+        "en": "The General Committee of Public Instruction (1823) was deadlocked over the Orientalist-Anglicist controversy. Orientalists led by H. T. Prinsep advocated traditional instruction in Sanskrit, Arabic, and Persian, whereas Anglicists led by Charles Trevelyan insisted on imparting Western education through the medium of English."
+      }
+    },
+    {
+      "id": 8,
+      "question": {
+        "mr": "लॉर्ड विल्यम बेंटिंकने १८३० च्या दशकात मध्य भारतातून 'ठगांचा बंदोबस्त' (Suppression of Thuggee) करण्यासाठी कोणत्या अधिकाऱ्याची विशेष आयुक्त म्हणून नियुक्ती केली होती?",
+        "en": "Which officer was appointed as special commissioner by Lord William Bentinck in the 1830s to suppress the organized network of Thugs in Central India?"
+      },
+      "options": [
+        { "mr": "कॅप्टन विल्यम स्लीमन (Captain William Sleeman)", "en": "Captain William Sleeman" },
+        { "mr": "कर्नल जेम्स आऊट्रम (Colonel James Outram)", "en": "Colonel James Outram" },
+        { "mr": "सर चार्ल्स नेपियर (Sir Charles Napier)", "en": "Sir Charles Napier" },
+        { "mr": "सर जॉन माल्कम (Sir John Malcolm)", "en": "Sir John Malcolm" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "व्यापारी व यात्रेकरूंना रुमालाने गळा आवळून ठार मारणाऱ्या आणि संपत्ती लुटणाऱ्या गुप्त ठग टोळ्यांचे उच्चाटन करण्यासाठी बेंटिंकने १८३० मध्ये कॅप्टन (नंतर मेजर जनरल) विल्यम स्लीमनची नियुक्ती केली. स्लीमनने गुप्तहेर जाळे पसरवून हजारो ठगांना पकडून फाशी किंवा जन्मठेपेची शिक्षा दिली आणि १८३७ पर्यंत ही प्रथा नष्ट केली.",
+        "en": "In 1830, Lord William Bentinck commissioned Captain William Sleeman to dismantle the predatory fraternity of Thugs. Operating with military detachments and specialized intelligence informers, Sleeman apprehended thousands of Thugs, virtually eradicating the menace by 1837."
+      }
+    },
+    {
+      "id": 9,
+      "question": {
+        "mr": "१८३३ च्या सनदी कायद्याद्वारे (Charter Act of 1833) स्थापन करण्यात आलेल्या केंद्रीय कायदेमंडळात विधी सदस्य (Law Member) म्हणून नियुक्त होणारी पहिली व्यक्ती कोण होती?",
+        "en": "Who was appointed as the first Law Member in the Governor-General's Council constituted under the Charter Act of 1833?"
+      },
+      "options": [
+        { "mr": "लॉर्ड थॉमस बॅबिंग्टन मेकॉल (Lord T. B. Macaulay)", "en": "Lord Thomas Babington Macaulay" },
+        { "mr": "सर जेम्स स्टीफन (Sir James Stephen)", "en": "Sir James Stephen" },
+        { "mr": "कोर्टनी इल्बर्ट (Courtenay Ilbert)", "en": "Courtenay Ilbert" },
+        { "mr": "चार्ल्स वूड (Charles Wood)", "en": "Charles Wood" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१८३३ च्या सनदी कायद्याने गव्हर्नर-जनरलच्या कार्यकारी कौन्सिलमध्ये चौथ्या सदस्याची 'विधी सदस्य' (Law Member) म्हणून भर घातली. लॉर्ड मेकॉल हा पहिला विधी सदस्य बनला. त्याला कायदेमंडळाच्या बैठकीत बसण्याचा आणि कायदे तयार करण्याचा अधिकार होता, मात्र कार्यकारी मताचा अधिकार सुरुवातीला नव्हता.",
+        "en": "Under the Charter Act of 1833, a fourth member—the Law Member—was added to the Governor-General's Executive Council. Lord T. B. Macaulay was appointed as the first Law Member to assist in codifying Indian laws."
+      }
+    },
+    {
+      "id": 10,
+      "question": {
+        "mr": "१८४३ मध्ये लॉर्ड एलनबरोच्या कार्यकाळात संमत झालेल्या 'कायदा क्रमांक ५' (Act V of 1843) द्वारे खालीलपैकी कोणती सामाजिक अनिष्ट प्रथा बेकायदेशीर ठरवून संपुष्टात आणली गेली?",
+        "en": "Which regressive social practice was formally declared illegal and abolished in British India by Act V of 1843 during the tenure of Lord Ellenborough?"
+      },
+      "options": [
+        { "mr": "गुलामगिरी प्रथा (Slavery)", "en": "Slavery" },
+        { "mr": "सती प्रथा (Sati)", "en": "Sati" },
+        { "mr": "मानव बळी प्रथा (Human Sacrifice)", "en": "Human Sacrifice" },
+        { "mr": "बालविवाह प्रथा (Child Marriage)", "en": "Child Marriage" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१८४३ च्या ॲक्ट ५ (Indian Slavery Act 1843) द्वारे ब्रिटिश भारतात गुलामगिरी पूर्णपणे बेकायदेशीर ठरवण्यात आली. कोणत्याही व्यक्तीला गुलाम म्हणून विकणे, खरेदी करणे किंवा मालकी हक्क सांगणे हा फौजदारी गुन्हा ठरवला गेला आणि न्यायालयांनी गुलामांवरील सर्व दावे स्वीकारणे बंद केले.",
+        "en": "Act V of 1843 (the Indian Slavery Act), enacted under Governor-General Lord Ellenborough, abolished the legal status of slavery in British India, prohibiting courts from recognizing any property rights in human beings."
+      }
+    },
+    {
+      "id": 11,
+      "question": {
+        "mr": "१८४४ मध्ये लॉर्ड हार्डिंग्ज पहिला (Lord Hardinge I) याने सरकारी प्रशासनात भरती करताना कोणता क्रांतिकारक निर्णय जाहीर केला होता?",
+        "en": "Which significant policy decision was officially notified in 1844 by Governor-General Lord Hardinge I regarding public recruitment into government services?"
+      },
+      "options": [
+        { "mr": "सरकारी नोकऱ्यांमध्ये भरती करताना इंग्रजी भाषा जाणणाऱ्या आणि पाश्चात्य शिक्षण घेतलेल्या उमेदवारांना प्राधान्य देणे.", "en": "According preference in public service recruitment to candidates proficient in English and trained in Western educational institutions." },
+        { "mr": "सर्व प्रशासकीय पदांवर केवळ ब्रिटनमध्ये जन्मलेल्या व्यक्तींचीच नियुक्ती करणे.", "en": "Restricting all administrative appointments exclusively to persons born in Britain." },
+        { "mr": "सरकारी कार्यालयांमधून इंग्रजी भाषा बंद करून केवळ संस्कृत वापरणे.", "en": "Replacing English with Sanskrit across all governmental secretariats." },
+        { "mr": "सरकारी नोकऱ्यांसाठी किमान वय ३० वर्षे सक्तीचे करणे.", "en": "Fixing the minimum entry age for government posts at 30 years." }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१० ऑक्टोबर १८४४ रोजी गव्हर्नर-जनरल लॉर्ड हार्डिंग्ज पहिल्याने अधिकृत ठराव जारी केला की, कंपनीच्या नागरी नोकऱ्यांमध्ये भरती करताना इंग्रजी शिक्षण घेतलेल्या आणि आधुनिक ज्ञान असलेल्या सुशिक्षित उमेदवारांना प्राधान्य दिले जाईल. या निर्णयामुळे भारतात इंग्रजी शाळा व महाविद्यालयांना प्रचंड लोकप्रियता मिळाली.",
+        "en": "On 10 October 1844, Lord Hardinge I issued an official notification declaring that in all public sector appointments, preference would be given to candidates possessing proficiency in the English language and educated in modern institutions, vastly accelerating the demand for Western schooling."
+      }
+    },
+    {
+      "id": 12,
+      "question": {
+        "mr": "१८४८-४९ च्या दुसऱ्या इंग्रज-शीख युद्धानंतर पंजाबचे विलीनीकरण झाल्यावर तेथील प्रशासनावर देखरेख ठेवण्यासाठी डलहौसीने स्थापन केलेल्या 'प्रशासकीय मंडळातील' (Board of Administration) तीन सदस्यांची अचूक जोडी कोणती?",
+        "en": "Following the annexation of Punjab in 1849, who were the three members of the 'Board of Administration' appointed by Lord Dalhousie to govern the province?"
+      },
+      "options": [
+        { "mr": "सर हेन्री लॉरेन्स (अध्यक्ष), जॉन लॉरेन्स (महसूल) आणि चार्ल्स मॅनसेल (न्याय)", "en": "Sir Henry Lawrence (President), John Lawrence (Revenue), and Charles Mansel (Judicial)" },
+        { "mr": "जॉन लॉरेन्स, रॉबर्ट विंगेट आणि माउंटस्टुअर्ट एल्फिन्स्टन", "en": "John Lawrence, Robert Wingate, and Mountstuart Elphinstone" },
+        { "mr": "चार्ल्स मेटकॉफ, अलेक्झांडर रीड आणि थॉमस मुन्रो", "en": "Charles Metcalfe, Alexander Read, and Thomas Munro" },
+        { "mr": "जेम्स आऊट्रम, विल्यम स्लीमन आणि चार्ल्स नेपियर", "en": "James Outram, William Sleeman, and Charles Napier" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "पंजाबच्या प्रशासनासाठी डलहौसीने तीन सदस्यांचे बोर्ड नेमले: सर हेन्री लॉरेन्स (अध्यक्ष - राजकीय व लष्करी कामे), त्यांचे बंधू जॉन लॉरेन्स (महसूल व जमीन व्यवस्था) आणि चार्ल्स मॅनसेल (कायदे व न्याय व्यवस्था). पुढे १८५३ मध्ये हे बोर्ड बरखास्त करून जॉन लॉरेन्स यांना पंजाबचे पहिले चीफ कमिशनर (मुख्य आयुक्त) बनवण्यात आले.",
+        "en": "In 1849, Dalhousie constituted a three-man triumvirate Board of Administration for Punjab comprising Sir Henry Lawrence as President, John Lawrence in charge of revenue settlements, and Charles Mansel overseeing civil and criminal justice. It was dissolved in 1853, making John Lawrence the sole Chief Commissioner."
+      }
+    },
+    {
+      "id": 13,
+      "question": {
+        "mr": "ब्रिटिश भारतातील 'नॉन-रेग्युलेशन पद्धत' (Non-Regulation System) खालीलपैकी कशाशी संबंधित होती?",
+        "en": "The 'Non-Regulation System' introduced in newly acquired territories in British India was characterized by which administrative feature?"
+      },
+      "options": [
+        { "mr": "नव्याने जिंकलेल्या प्रांतांमध्ये गुंतागुंतीचे कायदे लागू न करता एकाच जिल्हाधिकाऱ्याकडे सर्व कार्यकारी, महसुली व न्यायिक अधिकार केंद्रित करणे.", "en": "Concentrating all executive, revenue, and judicial powers in a single Deputy Commissioner, dispensing with elaborate British statutory codes." },
+        { "mr": "व्यापाऱ्यांवर कोणत्याही प्रकारचा कर न आकारण्याचे धोरण.", "en": "A policy of total commercial tax exemption for private merchants." },
+        { "mr": "स्थानिक राजांना स्वतःचे कायदे करण्याचे अमर्याद स्वातंत्र्य देणे.", "en": "Allowing native princes unrestricted autonomy to enact their own statutes." },
+        { "mr": "फक्त लष्करी न्यायालयांद्वारे सर्व दिवाणी खटले चालवणे.", "en": "Adjudicating all civil disputes exclusively through martial military courts." }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "पंजाब, सिंध, अवध आणि आसाम यांसारख्या नव्याने जिंकलेल्या भागात जुन्या इलाख्यांप्रमाणे (Regulation Provinces) क्लिष्ट कायदे लागू न करता 'नॉन-रेग्युलेशन पद्धत' वापरली गेली. यात जिल्हा प्रमुखाला 'डेप्युटी कमिशनर' (Deputy Commissioner) म्हटले जाई, ज्याच्या हाती महसूल, पोलीस आणि न्यायदान या सर्व सत्ता केंद्रित असत.",
+        "en": "In newly annexed territories like Punjab, Sindh, and Awadh, the British applied the 'Non-Regulation System'. Simple personal rule was enforced through a Deputy Commissioner who combined executive, police, fiscal, and judicial functions without the rigid legislative technicalities of the older Presidencies."
+      }
+    },
+    {
+      "id": 14,
+      "question": {
+        "mr": "१८५० मध्ये संमत झालेल्या 'धार्मिक अपात्रता निवारण कायद्याचा' (Religious Disabilities Removal Act / Lex Loci Act 1850) मुख्य परिणाम काय झाला?",
+        "en": "What was the direct legal outcome of the Religious Disabilities Removal Act (Lex Loci Act XXI of 1850) passed by Lord Dalhousie?"
+      },
+      "options": [
+        { "mr": "धर्म बदलणाऱ्या (विशेषतः ख्रिश्चन धर्मांतरितांना) त्यांच्या वडिलोपार्जित संपत्तीतील वारसा हक्क गमावण्यापासून कायदेशीर संरक्षण मिळाले.", "en": "Religious converts (particularly to Christianity) were legally protected against the forfeiture of their ancestral inheritance rights." },
+        { "mr": "सर्व हिंदू मंदिरांना सरकारी तिजोरीतून अनुदान देणे बंधनकारक झाले.", "en": "Mandating state exchequer subsidies to all Hindu temples." },
+        { "mr": "धर्मांतर करणाऱ्यांना सरकारी नोकऱ्यांवरून तत्काळ बडतर्फ करण्यात आले.", "en": "Immediate dismissal of religious converts from government employment." },
+        { "mr": "सर्व ख्रिश्चन मिशनऱ्यांना भारतातून बाहेर काढण्याचा आदेश देण्यात आला.", "en": "An order expelling all Christian missionary societies from India." }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "पारंपारिक हिंदू व इस्लामिक कायद्यानुसार धर्म बदलल्यास त्या व्यक्तीचा वडिलोपार्जित संपत्तीवरील हक्क संपुष्टात येत असे. डलहौसीने १८५० मध्ये लेक्स लोकी कायदा करून नियम केला की, केवळ धर्म बदलल्यामुळे किंवा जातीतून बहिष्कृत झाल्यामुळे कोणाचाही वारसा हक्क हिरावून घेतला जाणार नाही. या कायद्याने ख्रिश्चन धर्मांतराला प्रोत्साहन दिले, ज्यामुळे स्थानिक जनतेत संताप पसरला.",
+        "en": "Under customary Hindu and Muslim laws, renouncing one's religion entailed forfeiture of ancestral property. The Lex Loci Act of 1850 abrogated this provision, declaring that conversion or excommunication from caste would not impair any rights of property or inheritance, stirring deep resentment before 1857."
+      }
+    },
+    {
+      "id": 15,
+      "question": {
+        "mr": "१८५३ च्या 'वऱ्हाड (बेरार) तहाद्वारे' लॉर्ड डलहौसीने हैदराबादच्या निजामाकडून बेरारचा सुपीक प्रदेश कोणत्या कारणासाठी ब्रिटिशांच्या ताब्यात घेतला?",
+        "en": "Under the Treaty of Berar (1853), for what reason did Lord Dalhousie extract the fertile territory of Berar from the Nizam of Hyderabad?"
+      },
+      "options": [
+        { "mr": "निजामाकडे थकलेला 'हैदराबाद कंन्टिजंट' फौजेचा खर्च भागवण्यासाठी आणि कापूस उत्पादक प्रदेशावर नियंत्रण मिळवण्यासाठी.", "en": "To clear accumulated arrears for maintaining the British-officered 'Hyderabad Contingent' and secure a rich cotton-producing tract." },
+        { "mr": "निजामाने ब्रिटिशांविरुद्ध रशियाशी केलेल्या गुप्त कटाची भरपाई म्हणून.", "en": "As a punitive indemnity for the Nizam's alleged clandestine alliance with Russia." },
+        { "mr": "हैदराबादमध्ये नवीन रेल्वे मार्ग बांधण्यासाठी मोफत जमीन म्हणून.", "en": "As free land allocation for laying new railway tracks inside Hyderabad." },
+        { "mr": "निजामाच्या राजवटीतील शेतकरी बंड मोडून काढल्याचा मोबदला म्हणून.", "en": "As compensation for crushing a peasant revolt within the Nizam's dominion." }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "ब्रिटिश अधिकाऱ्यांच्या हाताखालील 'हैदराबाद कंन्टिजंट' सैन्याचा मोठा थकीत खर्च निजामाकडे प्रलंबित होता. डलहौसीने निजामावर प्रचंड दबाव आणून १८५३ मध्ये बेरारचा (वऱ्हाड) करार केला. या कराराने उत्तम काळ्या मातीचा आणि दर्जेदार कापूस पिकवणारा वऱ्हाड प्रदेश सैन्याच्या कायमस्वरूपी खर्चासाठी ब्रिटिशांच्या थेट ताब्यात आला.",
+        "en": "Due to mounting financial arrears owed by the Nizam for the upkeep of the British-officered Hyderabad Contingent force, Dalhousie coerced the Nizam into signing the Treaty of Berar in May 1853, assigning the rich cotton-growing province of Berar to British administration."
+      }
+    },
+    {
+      "id": 16,
+      "question": {
+        "mr": "१८५३ च्या सनदी कायद्यानुसार (Charter Act of 1853) खालीलपैकी कोणती महत्त्वपूर्ण घटनात्मक सुधारणा करण्यात आली?",
+        "en": "Which significant constitutional reform was enacted under the Charter Act of 1853?"
+      },
+      "options": [
+        { "mr": "गव्हर्नर-जनरलच्या कौन्सिलची कार्यकारी आणि कायदेमंडळ कार्ये एकमेकांपासून वेगळी करण्यात आली आणि ६ नवीन कायदे सदस्य जोडले गेले.", "en": "The executive and legislative functions of the Governor-General's Council were bifurcated, and 6 new legislative members were added." },
+        { "mr": "भारतात प्रथमच थेट निवडणुकीद्वारे संसद स्थापन करण्यात आली.", "en": "A sovereign parliament was instituted in India through direct elections." },
+        { "mr": "कंपनीचे संचालक मंडळ (Court of Directors) पूर्णपणे बरखास्त करण्यात आले.", "en": "The Court of Directors was completely abolished." },
+        { "mr": "मुंबई आणि मद्रास या प्रांतांना स्वतंत्र परराष्ट्र धोरणाचे अधिकार देण्यात आले.", "en": "Bombay and Madras Presidencies were granted autonomous foreign policy powers." }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१८५३ च्या सनदी कायद्याने पहिल्यांदाच गव्हर्नर-जनरलच्या कौन्सिलमधील कायदेनिर्मितीची कार्ये आणि प्रशासकीय कार्ये वेगळी केली. कायदे तयार करण्यासाठी ६ नवीन 'विधान सदस्य' (Legislative Councilors) समाविष्ट केले गेले, ज्यामध्ये मद्रास, मुंबई, बंगाल आणि आग्रा यांच्या नागरी सेवेतून प्रत्येकी एक स्थानिक प्रतिनिधी नेमण्यात आला (स्थानिक प्रतिनिधित्वाची पहिली सुरुवात).",
+        "en": "The Charter Act of 1853 separated the legislative and executive functions of the Governor-General's Council for the first time, establishing a 12-member Legislative Council incorporating six new legislative councilors, including four civil servants representing Bengal, Madras, Bombay, and Agra."
+      }
+    },
+    {
+      "id": 17,
+      "question": {
+        "mr": "२६ जुलै १८५६ रोजी लॉर्ड कॅनिंगच्या स्वाक्षरीने संमत झालेल्या 'हिंदू विधवा पुनर्विवाह कायद्याचा' (Act XV of 1856) मसुदा कोणत्या गव्हर्नर-जनरलच्या काळात तयार करण्यात आला होता?",
+        "en": "The Hindu Widows' Remarriage Act (Act XV of 1856), enacted into law by Lord Canning on 26 July 1856, was drafted and introduced by which Governor-General?"
+      },
+      "options": [
+        { "mr": "लॉर्ड डलहौसी (Lord Dalhousie)", "en": "Lord Dalhousie" },
+        { "mr": "लॉर्ड विल्यम बेंटिंक (Lord William Bentinck)", "en": "Lord William Bentinck" },
+        { "mr": "लॉर्ड हार्डिंग्ज पहिला (Lord Hardinge I)", "en": "Lord Hardinge I" },
+        { "mr": "लॉर्ड एलनबरो (Lord Ellenborough)", "en": "Lord Ellenborough" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "पंडित ईश्वरचंद्र विद्यासागर यांच्या अथक प्रयत्नांमुळे आणि याचिकांमुळे हिंदू विधवा पुनर्विवाहाचे विधेयक लॉर्ड डलहौसीने १८५५ मध्ये कायदेमंडळात मांडले आणि त्याचा मसुदा तयार केला. मात्र डलहौसी भारतातून गेल्यानंतर नवीन गव्हर्नर-जनरल लॉर्ड कॅनिंग याने २६ जुलै १८५६ रोजी 'अधिनियम १५' (Act XV of 1856) म्हणून याला अंतिम कायदेशीर मंजुरी दिली.",
+        "en": "Pioneered by the social crusade of Pandit Ishwar Chandra Vidyasagar, the Hindu Widows' Remarriage Bill was drafted and piloted through the legislative council by Lord Dalhousie in 1855, and was formally enacted into law by Lord Canning on 26 July 1856."
+      }
+    },
+    {
+      "id": 18,
+      "question": {
+        "mr": "१८५८ च्या राणीच्या जाहीरनाम्यानुसार (Queen's Proclamation 1858) भारताचा पहिला 'व्हाइसरॉय' (Viceroy) म्हणून कोणाची नियुक्ती झाली?",
+        "en": "Pursuant to Queen Victoria's Proclamation of 1858, who was appointed as the first 'Viceroy' of India?"
+      },
+      "options": [
+        { "mr": "लॉर्ड कॅनिंग (Lord Canning)", "en": "Lord Canning" },
+        { "mr": "लॉर्ड डलहौसी (Lord Dalhousie)", "en": "Lord Dalhousie" },
+        { "mr": "लॉर्ड एल्गिन पहिला (Lord Elgin I)", "en": "Lord Elgin I" },
+        { "mr": "लॉर्ड लॉरेन्स (Lord Lawrence)", "en": "Lord Lawrence" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१ नोव्हेंबर १८५८ रोजी अलाहाबाद दरबारात जाहीरनामा वाचून दाखवल्यानंतर, भारताचे तत्कालीन गव्हर्नर-जनरल लॉर्ड कॅनिंग हे ब्रिटिश राजमुकुटाचे (Crown) थेट प्रतिनिधी म्हणून भारताचे पहिले 'व्हाइसरॉय' बनले. ब्रिटिश भारतातील प्रदेशांसाठी ते 'गव्हर्नर-जनरल' आणि संस्थानांशी संबंधांसाठी ते 'व्हाइसरॉय' म्हणून काम पाहत असत.",
+        "en": "On 1 November 1858 at the Allahabad Durbar, Lord Canning was designated as the first Viceroy and Governor-General of India, acting as the direct representative of the British Crown vis-à-vis princely rulers while administering British provinces as Governor-General."
+      }
+    },
+    {
+      "id": 19,
+      "question": {
+        "mr": "१८६१ च्या 'इंडियन हायकोर्ट्स ॲक्ट'नुसार खालीलपैकी कोणत्या वर्षी अलाहाबाद (वायव्य प्रांत) येथे चौथे उच्च न्यायालय स्थापन करण्यात आले?",
+        "en": "Under the Indian High Courts Act of 1861, in which year was a fourth chartered High Court established for the North-Western Provinces (initially at Agra, later shifted to Allahabad)?"
+      },
+      "options": [
+        { "mr": "१८६६ (1866)", "en": "1866" },
+        { "mr": "१८६२ (1862)", "en": "1862" },
+        { "mr": "१८७२ (1872)", "en": "1872" },
+        { "mr": "१८८० (1880)", "en": "1880" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१८६२ मध्ये कलकत्ता, मुंबई आणि मद्रास येथे तीन उच्च न्यायालये स्थापन झाल्यानंतर, वायव्य प्रांतासाठी आग्रा येथे मार्च १८६६ मध्ये चौथे उच्च न्यायालय स्थापन झाले. पुढे १८६९ मध्ये हे न्यायालय आग्राहून अलाहाबाद (प्रयागराज) येथे कायमस्वरूपी हलवण्यात आले.",
+        "en": "Following the creation of the three Presidency High Courts in 1862, a fourth High Court was constituted under the Act of 1861 at Agra in March 1866 for the North-Western Provinces, which was subsequently shifted to Allahabad in 1869."
+      }
+    },
+    {
+      "id": 20,
+      "question": {
+        "mr": "१८६२ मध्ये लॉर्ड कॅनिंगने १८६१ च्या कौन्सिल कायद्यानुसार स्थापन केलेल्या केंद्रीय कायदेमंडळात नामनिर्देशित केलेल्या तीन भारतीय सदस्यांमध्ये खालीलपैकी कोणाचा समावेश नव्हता?",
+        "en": "Who among the following was NOT among the three Indians nominated by Lord Canning to the Imperial Legislative Council in 1862 under the Indian Councils Act of 1861?"
+      },
+      "options": [
+        { "mr": "दादाभाई नौरोजी (Dadabhai Naoroji)", "en": "Dadabhai Naoroji" },
+        { "mr": "बनारसचे राजा (Raja of Banaras - नारायण सिंह)", "en": "Raja of Banaras (Narain Singh)" },
+        { "mr": "पतियाळाचे महाराजा (Maharaja of Patiala - नरेंद्र सिंह)", "en": "Maharaja of Patiala (Narendra Singh)" },
+        { "mr": "सर दिनकरराव (Sir Dinkar Rao - ग्वाल्हेरचे दिवाण)", "en": "Sir Dinkar Rao (Diwan of Gwalior)" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१८६१ च्या कायद्यानुसार लॉर्ड कॅनिंगने १८६२ मध्ये बनारसचे राजा, पतियाळाचे महाराजा आणि ग्वाल्हेरचे माजी दिवाण सर दिनकरराव या तीन प्रतिष्ठित व्यक्तींना कायदेमंडळात नामनिर्देशित केले होते. दादाभाई नौरोजी यांचा यात समावेश नव्हता; ते १८९२ मध्ये ब्रिटिश संसदेत निवडून जाणारे पहिले भारतीय ठरले.",
+        "en": "In 1862, Lord Canning nominated three non-official Indian members: Raja Narain Singh of Banaras, Maharaja Narendra Singh of Patiala, and Sir Dinkar Rao of Gwalior. Dadabhai Naoroji was never part of this initial council."
+      }
+    },
+    {
+      "id": 21,
+      "question": {
+        "mr": "१८६९ मध्ये सर जॉन लॉरेन्स यांच्या कार्यकाळात युरोप आणि भारतामधील अंतर सुमारे ७,००० किलोमीटरने कमी करणारी कोणती जागतिक घटना घडली?",
+        "en": "Which major global engineering event occurred in 1869 during Sir John Lawrence's viceroyalty that reduced the maritime transit distance between India and Britain by nearly 7,000 kilometers?"
+      },
+      "options": [
+        { "mr": "सुएझ कालवा आंतरराष्ट्रीय वाहतुकीसाठी खुला होणे (Opening of the Suez Canal)", "en": "Opening of the Suez Canal" },
+        { "mr": "पनामा कालव्याचे बांधकाम पूर्ण होणे", "en": "Completion of the Panama Canal" },
+        { "mr": "पहिली ट्रान्स-अटलांटिक केबल कार्यान्वित होणे", "en": "Laying of the first Transatlantic Cable" },
+        { "mr": "लंडन ते बॉम्बे थेट रेल्वे मार्ग सुरू होणे", "en": "Inauguration of the London to Bombay direct rail link" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "नोव्हेंबर १८६९ मध्ये इजिप्तमधील 'सुएझ कालवा' (Suez Canal) वाहतुकीसाठी खुला झाला. यामुळे आफ्रिका खंडाला वळसा घालून (केप ऑफ गुड होप) जाण्याची गरज संपली आणि लंडन ते मुंबई दरम्यानचा प्रवास सुमारे ४,००० ते ५,००० मैलांनी (सुमारे ७,००० किमी) कमी झाला, ज्यामुळे ब्रिटिशांचा भारतीय व्यापारावरील आणि सैनिकी हालचालींवरील ताबा प्रचंड वाढला.",
+        "en": "In November 1869, the opening of the Suez Canal revolutionized maritime trade between Britain and India, eliminating the long voyage around the Cape of Good Hope, reducing travel time from three months to three weeks, and solidifying British economic exploitation."
+      }
+    },
+    {
+      "id": 22,
+      "question": {
+        "mr": "१८७० च्या दशकात भारताचे आर्थिक शोषण उघडकीस आणणाऱ्या दादाभाई नौरोजींच्या 'पॉव्हर्टी अँड अन-ब्रिटिश रूल इन इंडिया' या ग्रंथात खालीलपैकी कोणत्या संकल्पनेची सविस्तर मांडणी केली आहे?",
+        "en": "Which central economic doctrine was rigorously articulated by Dadabhai Naoroji in his classic work 'Poverty and Un-British Rule in India' to explain the impoverishment of colonial India?"
+      },
+      "options": [
+        { "mr": "संपत्तीचे वहन / निसारण सिद्धांत (Drain of Wealth Theory)", "en": "Drain of Wealth Theory" },
+        { "mr": "अधोगामी गाळण सिद्धांत (Downward Filtration Theory)", "en": "Downward Filtration Theory" },
+        { "mr": "कल्याणकारी राज्य संकल्पना", "en": "Welfare State Doctrine" },
+        { "mr": "मुक्त भांडवलशाही विकास मॉडेल", "en": "Free Market Capitalist Growth Model" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "दादाभाई नौरोजी यांनी १८६७ मध्ये लंडनच्या ईस्ट इंडिया असोसिएशनसमोर पहिल्यांदा 'ड्रेन ऑफ वेल्थ' (संपत्तीचे निसारण) सिद्धांत मांडला आणि पुढे 'Poverty and Un-British Rule in India' या ग्रंथात तो सिद्ध केला. भारताचा महसूल आणि संपत्ती कसलाही परतावा न देता लंडनला वाहून नेली जात असल्याने भारतात वारंवार दुष्काळ आणि दारिद्र्य येत असल्याचे त्यांनी दाखवून दिले.",
+        "en": "Dadabhai Naoroji first propounded the 'Drain of Wealth' theory in 1867 before the East India Association in London and consolidated it in 'Poverty and Un-British Rule in India'. He proved that India was systematically impoverished because a massive portion of its national product was remitted annually to Britain without equivalent economic returns."
+      }
+    },
+    {
+      "id": 23,
+      "question": {
+        "mr": "१८७९ मधील दुसऱ्या इंग्रज-अफगाण युद्धादरम्यान अमीर याकूब खान आणि ब्रिटिश सरकार यांच्यात झालेला 'गंडमकचा तह' (Treaty of Gandamak) कोणत्या व्हाइसरॉयच्या काळात संपन्न झाला?",
+        "en": "Under which Viceroy was the Treaty of Gandamak signed in May 1879 between Amir Yaqub Khan of Afghanistan and the British government during the Second Anglo-Afghan War?"
+      },
+      "options": [
+        { "mr": "लॉर्ड लिटन (Lord Lytton)", "en": "Lord Lytton" },
+        { "mr": "लॉर्ड नॉर्थब्रुक (Lord Northbrook)", "en": "Lord Northbrook" },
+        { "mr": "लॉर्ड रिपन (Lord Ripon)", "en": "Lord Ripon" },
+        { "mr": "लॉर्ड मेयो (Lord Mayo)", "en": "Lord Mayo" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "लॉर्ड लिटनच्या आक्रमक 'अग्रगामी धोरणामुळे' (Forward Policy) १८७८ मध्ये दुसरे इंग्रज-अफगाण युद्ध भडकले. २६ मे १८७९ रोजी अफगाणिस्तानचा अमीर याकूब खान आणि सर लुई काव्हानाऱ्या यांच्यात गंडमकचा तह झाला. या तहानुसार अफगाणिस्तानचे परराष्ट्र संबंध ब्रिटिशांच्या नियंत्रणाखाली आले आणि काबूलमध्ये ब्रिटिश रेसिडेंट ठेवण्यात आला (ज्याची काही महिन्यांतच अफगाणांनी हत्या केली).",
+        "en": "Lord Lytton's forward policy sparked the Second Anglo-Afghan War in 1878. The Treaty of Gandamak (26 May 1879) placed the foreign policy of Afghanistan under British control, assigned the Kurram, Pishin, and Sibi districts to the British, and stationed a permanent British envoy at Kabul."
+      }
+    },
+    {
+      "id": 24,
+      "question": {
+        "mr": "१८८५ मध्ये लॉर्ड डफरिनच्या काळात संमत झालेल्या 'बंगाल कुळकायद्याचा' (Bengal Tenancy Act 1885) मुख्य उद्देश काय होता?",
+        "en": "What was the principal objective of the Bengal Tenancy Act of 1885 passed during the viceroyalty of Lord Dufferin?"
+      },
+      "options": [
+        { "mr": "शेतकऱ्यांना (कुळांना) जमिनीवर वहिवाटीचे (Occupancy Rights) हक्क देऊन जमीनदारांच्या मनमानी भाडेवाढ व बेदखलीपासून कायदेशीर संरक्षण देणे.", "en": "Securing occupancy rights for cultivating tenants and protecting them against arbitrary rent increases and evictions by zamindars." },
+        { "mr": "बंगालमधील सर्व जमीनदारांच्या जमिनी जप्त करून सरकारी मालकीच्या करणे.", "en": "Confiscating all zamindari estates in Bengal to convert them into direct state ownership." },
+        { "mr": "शेतकऱ्यांना केवळ नीळ पिकवण्याची सक्ती करणे.", "en": "Compelling cultivators to plant indigo exclusively on their lands." },
+        { "mr": "जमीनदारांना शेतकऱ्यांवर फौजदारी खटले चालवण्याचे अमर्याद अधिकार देणे.", "en": "Conferring unrestricted powers on zamindars to conduct criminal prosecutions against ryots." }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१८७० च्या दशकातील पाबना शेतकरी उठावांनंतर (Pabna Agrarian League) शेतकऱ्यांचे हक्क सुरक्षित करण्यासाठी लॉर्ड डफरिनने १८८५ मध्ये बंगाल टेनन्सी ॲक्ट संमत केला. या कायद्यानुसार सलग १२ वर्षे एकाच खेड्यात जमीन कसणाऱ्या शेतकऱ्याला 'भोगवटादार शेतकरी' (Settled Raiyat) मानले गेले आणि त्याला जमिनीवरून काढण्यावर व अनिर्बंध भाडेवाढीवर कायदेशीर बंधने घालण्यात आली.",
+        "en": "Prompted by peasant unrest in Pabna and eastern Bengal, the Bengal Tenancy Act of 1885 recognized occupancy rights for tenants who held land in a village for 12 continuous years, limiting the rent enhancements and eviction powers of zamindars."
+      }
+    },
+    {
+      "id": 25,
+      "question": {
+        "mr": "१८९३ मध्ये ब्रिटिश भारताचे परराष्ट्र सचिव सर मॉर्टिमर ड्युरंड यांनी भारत आणि अफगाणिस्तान यांच्यातील सीमा निश्चित करण्यासाठी आखलेल्या 'ड्युरंड रेषेची' (Durand Line) सद्यस्थिती काय आहे?",
+        "en": "What is the present-day geographical status of the 'Durand Line' demarcated in 1893 by Sir Mortimer Durand between British India and Afghanistan?"
+      },
+      "options": [
+        { "mr": "ती सध्या पाकिस्तान आणि अफगाणिस्तान यांच्यातील अधिकृत आंतरराष्ट्रीय सीमा म्हणून अस्तित्वात आहे.", "en": "It currently forms the official international boundary between Pakistan and Afghanistan." },
+        { "mr": "ती भारत आणि चीन यांच्यातील पूर्व सीमा आहे.", "en": "It serves as the eastern international border between India and China." },
+        { "mr": "ती भारत आणि म्यानमार यांच्यातील सीमा आहे.", "en": "It demarcates the international boundary between India and Myanmar." },
+        { "mr": "ती भारत आणि बांगलादेश यांच्यातील सीमा आहे.", "en": "It constitutes the territorial border between India and Bangladesh." }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१८९३ मध्ये सर मॉर्टिमर ड्युरंड आणि अफगाणिस्तानचा अमीर अब्दुर रहमान खान यांच्यात स्वाक्षरी झालेली सुमारे २,६४० किमी लांबीची 'ड्युरंड रेषा' ब्रिटिश भारत आणि अफगाणिस्तान यांच्यातील सीमा होती. १९४७ मध्ये भारताच्या फाळणीनंतर ही सीमारेषा आज आधुनिक पाकिस्तान आणि अफगाणिस्तान यांच्यातील आंतरराष्ट्रीय सीमा बनली आहे.",
+        "en": "The Durand Line, negotiated in November 1893 between Sir Mortimer Durand and Amir Abdur Rahman Khan, demarcated the frontier between British India and Afghanistan. Following the partition of India in 1947, it serves as the international boundary between modern-day Pakistan and Afghanistan."
+      }
+    }
+  ]
+}

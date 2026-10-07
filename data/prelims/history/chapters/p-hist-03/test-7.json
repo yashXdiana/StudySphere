@@ -1,0 +1,464 @@
+{
+  "testId": "p-hist-03-t7",
+  "title": {
+    "mr": "१८५७ चा उठाव — सराव 7",
+    "en": "Revolt of 1857 — Practice Test 7"
+  },
+  "durationMinutes": 20,
+  "marksPerQuestion": 1,
+  "negativeMarking": 0.25,
+  "totalMarks": 25,
+  "difficulty": "मध्यम ते काठिण्य",
+  "questions": [
+    {
+      "id": 1,
+      "question": {
+        "mr": "१८५७ च्या उठावादरम्यान पालखीतून फिरताना पुढे नगारा वाजवला जात असल्याने 'डंका शाह' या लोकप्रिय नावाने खालीलपैकी कोणत्या नेत्याला ओळखले जात होते?",
+        "en": "Which leader was popularly known as 'Danka Shah' during the 1857 Revolt because a drum was beaten ahead of his palanquin?"
+      },
+      "options": [
+        { "mr": "मौलवी अहमदउल्लाह शाह", "en": "Maulvi Ahmadullah Shah" },
+        { "mr": "शहजादा फिरोज शाह", "en": "Shahzada Firoz Shah" },
+        { "mr": "खान बहादूर खान", "en": "Khan Bahadur Khan" },
+        { "mr": "जनरल बख्त खान", "en": "General Bakht Khan" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "मौलवी अहमदउल्लाह शाह पालखीतून फिरत असत आणि त्यांच्या पुढे ढोल किंवा नगारा (डंका) वाजवला जाई, म्हणून लोक त्यांना प्रेमाने 'डंका शाह' म्हणत. त्यांनी फैजाबाद आणि लखनौमध्ये ब्रिटिशांविरुद्ध जिहाद पुकारून कडवा लढा दिला.",
+        "en": "Maulvi Ahmadullah Shah was popularly known as 'Danka Shah' because he traveled in a palanquin preceded by a drum (danka). He became a rallying figure of resistance in Awadh and Faizabad."
+      }
+    },
+    {
+      "id": 2,
+      "question": {
+        "mr": "१८५७ मध्ये दिल्ली येथे उठावकर्त्यांचे प्रत्यक्ष लष्करी नेतृत्व सांभाळणाऱ्या बख्त खान यांचे ईस्ट इंडिया कंपनीच्या लष्करात मूळ पद कोणते होते?",
+        "en": "What was the original military rank of Bakht Khan in the East India Company's army before he assumed military command at Delhi in 1857?"
+      },
+      "options": [
+        { "mr": "तोफखान्यातील सुभेदार (Subedar of Artillery)", "en": "Subedar of Artillery" },
+        { "mr": "घोडदळातील रिसालदार (Risaldar of Cavalry)", "en": "Risaldar of Cavalry" },
+        { "mr": "पायदळातील हवालदार (Havildar of Infantry)", "en": "Havildar of Infantry" },
+        { "mr": "लष्करी जमादार (Jamadar of Sappers)", "en": "Jamadar of Sappers" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "मोहम्मद बख्त खान हे कंपनीच्या बरेली येथील तोफखान्यात ४० वर्षे सेवेत असलेले अनुभवी 'सुभेदार' होते. बरेलीत उठाव झाल्यावर ते सैन्यासह दिल्लीला आले आणि सम्राट बहादुर शाह जफर यांनी त्यांना सैन्याचे सरसेनापती (कमांडर-इन-चीफ) बनवले.",
+        "en": "Bakht Khan was an experienced Subedar in the British East India Company's field artillery at Bareilly. Arriving in Delhi with rebel regiments, he was appointed Commander-in-Chief by Bahadur Shah Zafar."
+      }
+    },
+    {
+      "id": 3,
+      "question": {
+        "mr": "२७ जून १८५७ रोजी घडलेली कुप्रसिद्ध 'सतीचौरा घाट दुर्घटना' (Satichaura Ghat Incident) खालीलपैकी कोणत्या शहराशी संबंधित आहे?",
+        "en": "The controversial 'Satichaura Ghat incident' of 27 June 1857 is associated with which of the following cities?"
+      },
+      "options": [
+        { "mr": "कानपूर", "en": "Kanpur" },
+        { "mr": "अलाहाबाद", "en": "Allahabad" },
+        { "mr": "वाराणसी", "en": "Varanasi" },
+        { "mr": "लखनौ", "en": "Lucknow" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "कानपूर येथे जनरल व्हीलरच्या ब्रिटिश तुकडीने आत्मसमर्पण केल्यानंतर त्यांना सुरक्षितपणे अलाहाबादला सोडण्यासाठी सतीचौरा घाटावर बोटींमध्ये बसवले जात असताना गोळीबार सुरू झाला आणि अनेक ब्रिटिश नागरिक मारले गेले. या घटनेला सतीचौरा घाट दुर्घटना म्हणतात.",
+        "en": "The Satichaura Ghat massacre occurred on 27 June 1857 at Kanpur, when British evacuees under Major-General Wheeler boarding boats for Allahabad were fired upon by rebel forces."
+      }
+    },
+    {
+      "id": 4,
+      "question": {
+        "mr": "ऑगस्ट १८५७ मध्ये मुघल राजपुत्र मिर्झा फिरोज शाह यांच्या नावाने जारी करण्यात आलेला प्रसिद्ध 'आझमगड जाहीरनामा' (Azamgarh Proclamation) प्रामुख्याने कोणत्या तत्त्वावर भर देतो?",
+        "en": "What did the celebrated 'Azamgarh Proclamation' issued in August 1857 primarily articulate?"
+      },
+      "options": [
+        { "mr": "हिंदू आणि मुस्लिम यांच्यातील एकात्मता आणि ब्रिटिश राजवट उखडून टाकण्यासाठी सर्व घटकांचे संयुक्त सहकार्य", "en": "Complete Hindu-Muslim solidarity and collective cooperation across all classes to expel British colonial rule" },
+        { "mr": "केवळ संस्थानिकांचे अधिकार पुनर्संचयित करणे आणि सामान्य रयतेवर कर वाढवणे", "en": "Restoration of princely feudal rights while augmenting peasant land taxes" },
+        { "mr": "ब्रिटिश संसदेकडे नवीन सनदी सुधारणांची मागणी करणे", "en": "Petitioning the British Parliament for constitutional franchise" },
+        { "mr": "ख्रिश्चन धर्मप्रचारकांना संपूर्ण भारतात कायदेशीर संरक्षण देणे", "en": "Providing statutory guarantees to Christian evangelists across India" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "२५ ऑगस्ट १८५७ रोजी प्रसिद्ध झालेला आझमगड जाहीरनामा जमीनदार, व्यापारी, सरकारी नोकर, कारागीर आणि धार्मिक पंडितांना ब्रिटिशांच्या आर्थिक शोषणाची जाणीव करून देत हिंदू-मुस्लिम ऐक्याने स्वातंत्र्य लढा उभारण्याचे आवाहन करतो.",
+        "en": "Issued on 25 August 1857, the Azamgarh Proclamation appealed to various socio-economic groups (zamindars, merchants, artisans, pandits, and maulvis) to unite irrespective of religion to dismantle predatory British colonial governance."
+      }
+    },
+    {
+      "id": 5,
+      "question": {
+        "mr": "महाराष्ट्रातील नाशिक जिल्ह्यातील 'पेठ' (Peint) या आदिवासी भागात १८५७ च्या उत्तरार्धात ब्रिटिशांविरुद्ध उठावाचे नेतृत्व कोणी केले?",
+        "en": "Who led the tribal uprising against British rule at Peint in Nashik district of Maharashtra during late 1857?"
+      },
+      "options": [
+        { "mr": "राजा भगवंतराव नीळकंठराव", "en": "Raja Bhagwantrao Nilkanthrao" },
+        { "mr": "भागोजी नाईक", "en": "Bhagoji Naik" },
+        { "mr": "कजारसिंग", "en": "Kajarsing" },
+        { "mr": "बाबासाहेब भावे", "en": "Babasaheb Bhave" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "पेठचे राजे भगवंतराव नीळकंठराव यांनी स्थानिक कोळी बांधवांना एकत्र करून डिसेंबर १८५७ मध्ये हर्णे व पेठ येथील सरकारी खजिन्यावर हल्ला चढवला. नंतर ब्रिटिशांनी त्यांना पकडून पेठ येथे भरचौकात फाशी दिली.",
+        "en": "Raja Bhagwantrao Nilkanthrao, the titular ruler of Peint, mobilized the Koli community to storm British treasuries in late 1857. He was captured and publicly executed by the British at Peint."
+      }
+    },
+    {
+      "id": 6,
+      "question": {
+        "mr": "१८५७ च्या उठावात राजस्थानमधील 'कोटा' (Kota) संस्थानात बंडाचे नेतृत्व करणारे प्रमुख नेते कोण होते?",
+        "en": "Who were the principal leaders of the armed rebellion in Kota (Rajasthan) during the 1857 Revolt?"
+      },
+      "options": [
+        { "mr": "जयदयाल आणि मेहराब खान", "en": "Jaidayal and Mehrab Khan" },
+        { "mr": "ठाकूर कुशल सिंग", "en": "Thakur Kushal Singh" },
+        { "mr": "कुंवर सिंग आणि अमर सिंग", "en": "Kunwar Singh and Amar Singh" },
+        { "mr": "शहजादा फिरोज शाह", "en": "Shahzada Firoz Shah" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "कोटा येथे वकील जयदयाल आणि कोटा सैन्याचा रिसालदार मेहराब खान यांनी ऑक्टोबर १८५७ मध्ये उठाव करून ब्रिटिश पॉलिटिकल एजंट मेजर बर्टन व त्याच्या मुलांची हत्या केली आणि महाराजा रामसिंग यांना राजवाड्यात नजरकैदेत ठेवले.",
+        "en": "In Kota, advocate Lala Jaidayal and cavalry Risaldar Mehrab Khan led an uprising in October 1857, assassinating Political Agent Major Burton and confining Maharao Ram Singh to his palace for months."
+      }
+    },
+    {
+      "id": 7,
+      "question": {
+        "mr": "झाशीची राणी लक्ष्मीबाई (मणिकर्णिका तांबे) यांचा जन्म १९ नोव्हेंबर १८२८ रोजी खालीलपैकी कोणत्या शहरात झाला होता?",
+        "en": "In which city was Rani Lakshmibai of Jhansi (Manikarnika Tambe) born on 19 November 1828?"
+      },
+      "options": [
+        { "mr": "वाराणसी (काशी)", "en": "Varanasi (Kashi)" },
+        { "mr": "झाशी", "en": "Jhansi" },
+        { "mr": "ग्वाल्हेर", "en": "Gwalior" },
+        { "mr": "पुणे", "en": "Pune" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "राणी लक्ष्मीबाई यांचा जन्म वाराणसी (काशी) येथे मोरोपंत तांबे आणि भागीरथीबाई यांच्या पोटी झाला. त्यांचे मूळ नाव मणिकर्णिका (मनू) होते आणि त्यांचे बालपण बिठूर येथे नानासाहेबांच्या सहवासात गेले.",
+        "en": "Rani Lakshmibai was born as Manikarnika (Manu) Tambe on 19 November 1828 in Varanasi to Moropant Tambe and Bhagirathibai. She grew up in Bithoor alongside Nana Saheb."
+      }
+    },
+    {
+      "id": 8,
+      "question": {
+        "mr": "१८५७ च्या उठावादरम्यान दक्षिण महाराष्ट्रातील कोल्हापूर, बेळगाव आणि जमखंडी येथील बंडांचा बीमोड करणारा ब्रिटिश लष्करी अधिकारी कोण होता?",
+        "en": "Which British officer was deployed to ruthlessly suppress mutinous conspiracies across Kolhapur, Belgaum, and the Southern Maratha Country in 1857?"
+      },
+      "options": [
+        { "mr": "कर्नल जॉर्ज ले ग्रँड जेकब (George Le Grand Jacob)", "en": "Colonel George Le Grand Jacob" },
+        { "mr": "सर ह्यू रोज (Sir Hugh Rose)", "en": "Sir Hugh Rose" },
+        { "mr": "सर कॉलिन कॅम्पबेल (Sir Colin Campbell)", "en": "Sir Colin Campbell" },
+        { "mr": "कर्नल जेम्स नील (Colonel James Neill)", "en": "Colonel James Neill" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "बॉम्बे सरकारने विशेष आयुक्त म्हणून कर्नल जॉर्ज ले ग्रँड जेकबची नियुक्ती केली. त्याने ऑगस्ट १८५७ मध्ये कोल्हापुरातील २७ व्या पलटणीचे बंड दडपले आणि अनेक बंडखोरांना तोफेच्या तोंडी दिले.",
+        "en": "Colonel George Le Grand Jacob was dispatched with special powers to the Southern Maratha Country, where he disarmed mutinous elements of the 27th Bombay Native Infantry at Kolhapur."
+      }
+    },
+    {
+      "id": 9,
+      "question": {
+        "mr": "ईस्ट इंडिया कंपनीच्या बंगाल लष्करात अवध (Awadh) प्रांतातून मोठ्या प्रमाणावर उच्चवर्णीय सैनिकांची भरती होत असल्याने अवधला तत्कालीन काळात काय म्हटले जात असे?",
+        "en": "Because a massive proportion of high-caste soldiers were recruited from Awadh into the Bengal Army, what was Awadh metaphorically called prior to 1857?"
+      },
+      "options": [
+        { "mr": "\"बंगाल सैन्याचे रोपवाटिका\" (Nursery of the Bengal Army)", "en": "\"Nursery of the Bengal Army\"" },
+        { "mr": "\"हिंदुस्थानचे शस्त्रागार\" (Armoury of Hindustan)", "en": "\"Armoury of Hindustan\"" },
+        { "mr": "\"कंपनीचा सैनिकी बालेकिल्ला\" (Military Bastion of the Company)", "en": "\"Military Bastion of the Company\"" },
+        { "mr": "\"ब्रिटिशांचे संरक्षक कवच\" (Imperial Shield of the British)", "en": "\"Imperial Shield of the British\"" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "बंगाल लष्करात जवळजवळ ७५,००० सैनिक एकट्या अवध प्रांतातील ब्राह्मण व राजपूत कुटुंबांतील होते; म्हणूनच अवधला 'बंगाल सैन्याची रोपवाटिका' (Nursery of the Bengal Army) म्हटले जाई.",
+        "en": "Awadh supplied nearly 75,000 high-caste sepoys to the Bengal Army, earning the province the historic sobriquet 'Nursery of the Bengal Army'."
+      }
+    },
+    {
+      "id": 10,
+      "question": {
+        "mr": "१८५७ च्या उठावाची पूर्वतयारी करताना गावोगावी संदेश पोहोचवण्यासाठी आणि उठावाची भावना पसरवण्यासाठी खालीलपैकी कोणत्या प्रतीकांचा वापर करण्यात आला होता?",
+        "en": "Which of the following items were circulated secretly across villages and cantonments as symbolic messengers preceding the 1857 Revolt?"
+      },
+      "options": [
+        { "mr": "कमळाचे फूल आणि चपाती (भाकरी)", "en": "Lotus flower and Chapati" },
+        { "mr": "तिरंगा ध्वज आणि तलवार", "en": "Tricolor flag and Sword" },
+        { "mr": "धनुष्यबाण आणि भाकरी", "en": "Bow-arrow and Chapati" },
+        { "mr": "लाल मशाल आणि नारळ", "en": "Red torch and Coconut" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१८५७ च्या उठावापूर्वी सैनिकी छावण्यांमध्ये तांबडे कमळ आणि खेड्यापाड्यांमध्ये चपाती (भाकरी) एका गावातून दुसऱ्या गावात पाठवून जनतेला आणि सैनिकांना उठावात सहभागी होण्याचा गुप्त संदेश दिला गेला होता.",
+        "en": "Red lotuses were circulated from hand to hand among military regiments, while unleavened wheat chapatis were passed from village watchman to village watchman across rural North India."
+      }
+    },
+    {
+      "id": 11,
+      "question": {
+        "mr": "सप्टेंबर १८५७ मध्ये दिल्लीवर ब्रिटिश फौजांनी निर्णायक हल्ला चढवून काश्मिरी गेट फोडले, तेव्हा तोफेच्या गोळीबारात गंभीर जखमी होऊन मरण पावलेला ब्रिटिश सेनापती कोण होता?",
+        "en": "Which celebrated British Brigadier-General was mortally wounded while leading the assault to breach the Kashmiri Gate during the recapture of Delhi in September 1857?"
+      },
+      "options": [
+        { "mr": "ब्रिगेडिअर जॉन निकोल्सन (Brigadier John Nicholson)", "en": "Brigadier John Nicholson" },
+        { "mr": "जनरल हेन्री हॅव्हलॉक (General Henry Havelock)", "en": "General Henry Havelock" },
+        { "mr": "सर कॉलिन कॅम्पबेल (Sir Colin Campbell)", "en": "Sir Colin Campbell" },
+        { "mr": "कर्नल जेम्स नील (Colonel James Neill)", "en": "Colonel James Neill" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१४ सप्टेंबर १८५७ रोजी दिल्लीतील काश्मिरी गेट फोडून आत घुसताना ब्रिगेडिअर जॉन निकोल्सन गोळी लागून जखमी झाला आणि २३ सप्टेंबर रोजी त्याचा मृत्यू झाला.",
+        "en": "Brigadier-General John Nicholson, hero of the Punjab frontier, was shot and mortally wounded while leading the assault through the breach near Kashmiri Gate in Delhi, dying on 23 September 1857."
+      }
+    },
+    {
+      "id": 12,
+      "question": {
+        "mr": "अहमदनगर व नाशिक परिसरात १८५७ ते १८५९ दरम्यान ब्रिटिशांशी गनिमी काव्याने संघर्ष करताना भागोजी नाईक यांनी कोणत्या ठिकाणी ब्रिटिश फौजांचा तीव्र प्रतिकार केला?",
+        "en": "In which region of Ahmednagar and Nashik districts did Bhagoji Naik organize armed skirmishes against British detachments during 1857–1859?"
+      },
+      "options": [
+        { "mr": "वांबोरी, सिन्नर आणि कोपरगाव परिसर", "en": "Vambori, Sinnar, and Kopargaon tracts" },
+        { "mr": "कराड आणि वाई परिसर", "en": "Karad and Wai tracts" },
+        { "mr": "बारामती आणि इंदापूर परिसर", "en": "Baramati and Indapur tracts" },
+        { "mr": "सावंतवाडी आणि मालवण परिसर", "en": "Sawantwadi and Malvan tracts" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "अहमदनगर जिल्ह्यातील वांबोरी, सिन्नर, पाथर्डी आणि संगमनेर डोंगररांगांमध्ये भागोजी नाईक यांनी शेकडो भिल्लांना एकत्र करून ब्रिटिशांच्या पोलीस पथकांवर हल्ले चढवले. ऑक्टोबर १८५७ मध्ये त्यांनी ब्रिटिश पोलीस अधीक्षक लेफ्टनंट हेन्रीला चकमकीत ठार केले.",
+        "en": "Bhagoji Naik mobilized Bhil insurgents across Vambori, Sinnar, and the hilly tracts of Ahmednagar and Nashik, defeating British police forces and killing Superintendent Lieutenant Henry in an encounter."
+      }
+    },
+    {
+      "id": 13,
+      "question": {
+        "mr": "२२ सप्टेंबर १८५७ रोजी दिल्ली गेटजवळ (खूनी दरवाजा) मुघल सम्राट बहादुर शाह जफर यांच्या कोणत्या पुत्रांना व नातवाला लेफ्टनंट हॉडसनने विवस्त्र करून गोळ्या झाडून ठार मारले?",
+        "en": "Near the Delhi Gate (Khooni Darwaza), which two sons and grandson of Emperor Bahadur Shah Zafar were summarily shot dead by Lieutenant Hodson on 22 September 1857?"
+      },
+      "options": [
+        { "mr": "मिर्झा मुघल, मिर्झा खिज्र सुलतान आणि नातू मिर्झा अबु बक्र", "en": "Mirza Mughal, Mirza Khizr Sultan, and grandson Mirza Abu Bakr" },
+        { "mr": "मिर्झा जवान बख्त आणि मिर्झा दारा शिकोह", "en": "Mirza Jawan Bakht and Mirza Dara Shikoh" },
+        { "mr": "मिर्झा कामरान आणि मिर्झा हुमायून", "en": "Mirza Kamran and Mirza Humayun" },
+        { "mr": "मिर्झा हैदर आणि मिर्झा मुराद बक्ष", "en": "Mirza Haidar and Mirza Murad Bakhsh" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "हुमायूनच्या कबरीतून शरण आलेल्या राजपुत्रांना दिल्लीत आणताना लेफ्टनंट विल्यम हॉडसनने जमावाच्या संशयावरून मिर्झा मुघल, मिर्झा खिज्र सुलतान आणि मिर्झा अबु बक्र यांना खूनी दरवाज्यापाशी गोळ्या झाडून ठार केले.",
+        "en": "Lieutenant William Hodson summarily executed Mughal princes Mirza Mughal, Mirza Khizr Sultan, and Mirza Abu Bakr near the Delhi Gate, now known as Khooni Darwaza."
+      }
+    },
+    {
+      "id": 14,
+      "question": {
+        "mr": "नोव्हेंबर १८५७ मध्ये मुधोळ संस्थानातील (कर्नाटक) 'हलगली' (Halagali) येथील कोणत्या समाजाने ब्रिटिशांच्या निःशस्त्रीकरण कायद्याविरुद्ध (Disarming Act) सशस्त्र लढा दिला?",
+        "en": "In November 1857, which community at Halagali in Mudhol state rose in armed rebellion against the British Disarming Act?"
+      },
+      "options": [
+        { "mr": "बेरड (रामोशी) समाज", "en": "Berad (Ramoshi) community" },
+        { "mr": "कोळी समाज", "en": "Koli community" },
+        { "mr": "गोंड समाज", "en": "Gond community" },
+        { "mr": "संथाळ समाज", "en": "Santhal community" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "मुधोळ संस्थानातील हलगली गावातील बेरड (वाल्मिकी/रामोशी) बांधवांनी ब्रिटिशांच्या १८५७ च्या निःशस्त्रीकरण कायद्यानुसार (Disarming Act) स्वतःची पारंपरिक शस्त्रे जमा करण्यास नकार दिला. कर्नल माल्कमने हलगलीवर हल्ला करून गाव जाळले आणि अनेक वीरांना फाशी दिली.",
+        "en": "The martial Berad community of Halagali village in Mudhol staged an armed uprising in November 1857 when the British enforced the Disarming Act to confiscate native weapons."
+      }
+    },
+    {
+      "id": 15,
+      "question": {
+        "mr": "१८ जून १८५८ रोजी सर ह्यू रोज यांच्या सैन्याशी शौर्याने लढताना झाशीची राणी लक्ष्मीबाई खालीलपैकी कोणत्या ठिकाणी धारातीर्थी पडल्या?",
+        "en": "At which battleground near Gwalior was Rani Lakshmibai of Jhansi killed in action on 18 June 1858 while fighting British forces under Sir Hugh Rose?"
+      },
+      "options": [
+        { "mr": "कोटा-की-सराई (Kotah-ki-Serai - ग्वाल्हेरजवळ)", "en": "Kotah-ki-Serai (near Gwalior)" },
+        { "mr": "कालपी (Kalpi)", "en": "Kalpi" },
+        { "mr": "झाशीचा किल्ला (Jhansi Fort)", "en": "Jhansi Fort" },
+        { "mr": "शिवपुरी (Shivpuri)", "en": "Shivpuri" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१८ जून १८५८ रोजी ग्वाल्हेरजवळील कोटा-की-सराई येथे ब्रिटिश घोडदळाशी (8th Hussars) लढताना राणी लक्ष्मीबाई गंभीर जखमी झाल्या. त्यांचा घोडा नाला ओलांडू शकला नाही आणि तेथेच लढता लढता त्यांना वीरमरण आले.",
+        "en": "On 18 June 1858, dressed in male military attire, Rani Lakshmibai was killed fighting British cavalry at the Battle of Kotah-ki-Serai near Gwalior."
+      }
+    },
+    {
+      "id": 16,
+      "question": {
+        "mr": "१८५७ च्या उठावानंतर ब्रिटिशांनी सैन्याच्या भरतीसाठी भारतीय समाजाची विभागणी कोणत्या दोन कृत्रिम प्रवर्गांमध्ये केली?",
+        "en": "Following the 1857 Revolt, into which two distinct categories did the British divide Indian communities for military recruitment?"
+      },
+      "options": [
+        { "mr": "लढाऊ आणि बिगर-लढाऊ जाती (Martial and Non-Martial races)", "en": "Martial and Non-Martial races" },
+        { "mr": "उच्चवर्णीय आणि मागासवर्गीय जाती", "en": "Upper-caste and Lower-caste classes" },
+        { "mr": "शहरी आणि ग्रामीण नागरिक", "en": "Urban and Rural citizens" },
+        { "mr": "स्थानिक आणि स्थलांतरित सैनिक", "en": "Native and Migrant soldiers" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "उठावानंतर ब्रिटिशांनी अवध, बिहार आणि मध्य भारतातील सैनिकांना 'बिगर-लढाऊ' (Non-Martial) ठरवून भरती बंद केली; तर उठाव दडपण्यात ब्रिटिशांना साथ देणाऱ्या गुरखा, शीख आणि पठाण यांना 'लढाऊ जाती' (Martial races) घोषित करून लष्करात प्राधान्य दिले.",
+        "en": "Post-1857, the British categorized ethnic groups into 'Martial races' (Gurkhas, Sikhs, Garhwalis, Pathans) who were aggressively recruited, and 'Non-Martial races' (Awadh and Bengal plainsmen) who were phased out."
+      }
+    },
+    {
+      "id": 17,
+      "question": {
+        "mr": "१८५७ च्या उठावाचे सामाजिक आणि राष्ट्रीय स्वरूप विशद करणारा 'द ग्रेट रिबेलियन' (The Great Rebellion) हा प्रसिद्ध ऐतिहासिक ग्रंथ कोणी लिहिला?",
+        "en": "Who authored the renowned historical volume 'The Great Rebellion' analyzing the national character of the 1857 uprising?"
+      },
+      "options": [
+        { "mr": "अशोक मेहता (Ashok Mehta)", "en": "Ashok Mehta" },
+        { "mr": "पी. सी. जोशी (P. C. Joshi)", "en": "P. C. Joshi" },
+        { "mr": "शशी भूषण चौधरी (S. B. Chaudhuri)", "en": "S. B. Chaudhuri" },
+        { "mr": "ताराचंद (Tarachand)", "en": "Tarachand" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "प्रख्यात समाजवादी विचारवंत व इतिहासकार अशोक मेहता यांनी 'द ग्रेट रिबेलियन' (The Great Rebellion) या ग्रंथात सांख्यिकी आधारे सिद्ध केले की १८५७ चा लढा केवळ सैनिकांचे बंड नसून जनतेचा व्यापक राष्ट्रीय उठाव होता.",
+        "en": "Socialist intellectual and historian Ashok Mehta authored 'The Great Rebellion', demonstrating that 1857 was a wide-ranging popular rebellion rather than a narrow sepoy mutiny."
+      }
+    },
+    {
+      "id": 18,
+      "question": {
+        "mr": "१८५७ च्या उठावादरम्यान खालीलपैकी कोणत्या प्रेसिडेन्सीचे लष्कर आणि प्रशासन बहुतांशी शांत व ब्रिटिशांशी निष्ठावंत राहिले?",
+        "en": "Which major presidency establishment remained overwhelmingly peaceful and loyal to the British throughout the 1857 Revolt?"
+      },
+      "options": [
+        { "mr": "मद्रास प्रेसिडेन्सी (Madras Presidency)", "en": "Madras Presidency" },
+        { "mr": "बंगाल प्रेसिडेन्सी (Bengal Presidency)", "en": "Bengal Presidency" },
+        { "mr": "अवध प्रांत (Awadh Province)", "en": "Awadh Province" },
+        { "mr": "वायव्य प्रांत (North-Western Provinces)", "en": "North-Western Provinces" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "मद्रास प्रेसिडेन्सीमधील ५२ देशी पलटणींपैकी एकाही पलटणीने उठाव केला नाही. दक्षिण भारतात काही किरकोळ स्थानिक कट वगळता मद्रास सैन्य ब्रिटिशांशी पूर्णपणे निष्ठावंत राहिले.",
+        "en": "The Madras Presidency Army remained almost completely unaffected by the 1857 revolt, with none of its native infantry regiments rebelling against Company authorities."
+      }
+    },
+    {
+      "id": 19,
+      "question": {
+        "mr": "एप्रिल १८५८ मध्ये जगदीशपूरचे बाबू कुंवर सिंग यांच्या मृत्यूनंतर बिहारमध्ये कैमूर पर्वतरांगांमधून गनिमी काव्याने ब्रिटिशांविरुद्ध लढा कोणी पुढे चालू ठेवला?",
+        "en": "Following the death of Babu Kunwar Singh in April 1858, who continued the guerrilla war against the British from the Kaimur hills in Bihar?"
+      },
+      "options": [
+        { "mr": "अमर सिंग (त्यांचे बंधू)", "en": "Amar Singh (his brother)" },
+        { "mr": "पीर अली खान", "en": "Pir Ali Khan" },
+        { "mr": "हरे कृष्ण सिंग", "en": "Hare Krishna Singh" },
+        { "mr": "विलायत अली", "en": "Vilayat Ali" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "कुंवर सिंग यांच्या मृत्यूनंतर त्यांचे धाकटे भाऊ अमर सिंग यांनी जगदीशपूर व रोहतास भागात बंडाची सूत्रे हाती घेतली आणि ऑक्टोबर १८५९ पर्यंत जंगलांमधून ब्रिटिशांना जेरीस आणले.",
+        "en": "After Kunwar Singh died of battlefield injuries in April 1858, his younger brother Amar Singh sustained the armed struggle in the Shahabad jungles and Kaimur hills until late 1859."
+      }
+    },
+    {
+      "id": 20,
+      "question": {
+        "mr": "१५ जुलै १८५७ रोजी कानपूर येथे घडलेली 'बिबीघर दुर्घटना' (Bibighar Massacre) खालीलपैकी कशाशी संबंधित होती?",
+        "en": "The 'Bibighar Massacre' that took place at Kanpur on 15 July 1857 was related to which of the following events?"
+      },
+      "options": [
+        { "mr": "बंदीवान ठेवलेल्या सुमारे २०० ब्रिटिश महिला आणि बालकांची झालेली निर्घृण हत्या", "en": "The tragic massacre of approximately 200 captive British women and children" },
+        { "mr": "नानासाहेब पेशवे यांच्या कुटुंबाची झालेली हत्या", "en": "The execution of Nana Saheb Peshwa's household" },
+        { "mr": "भारतीय शिपायांना तोफेच्या तोंडी देण्याची घटना", "en": "The blowing of Indian sepoys from imperial cannons" },
+        { "mr": "कानपूरच्या शाही खजिन्याची झालेली लूट", "en": "The plundering of the imperial treasury at Kanpur" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "जनरल हॅव्हलॉकचे सैन्य कानपूरजवळ पोहोचत असताना, बिबीघर येथे नजरकैदेत असलेल्या सुमारे २०० ब्रिटिश स्त्रिया व मुलांची हत्या करण्यात आली. या घटनेचा वापर करून ब्रिटिश सैन्याने पुढे अत्यंत क्रूर प्रतिशोध घेतला.",
+        "en": "As British forces under General Havelock approached Kanpur, around 200 captive British women and children confined in Bibighar were killed, an incident colonial forces used to justify horrific reprisals."
+      }
+    },
+    {
+      "id": 21,
+      "question": {
+        "mr": "१ नोव्हेंबर १८५८ रोजी जाहीर झालेल्या राणी व्हिक्टोरियाच्या जाहीरनाम्यात भारतीय संस्थानिकांबाबत कोणते महत्त्वाचे धोरणात्मक आश्वासन देण्यात आले?",
+        "en": "What crucial policy guarantee was extended to Indian princely states in Queen Victoria's Proclamation of 1 November 1858?"
+      },
+      "options": [
+        { "mr": "ब्रिटिश साम्राज्य विस्ताराचा अंत केला जाईल आणि संस्थानिकांचे दत्तक घेण्याचे अधिकार व करार अबाधित राखले जातील.", "en": "Territorial expansion would cease, and princely treaties and adoption rights would be scrupulously respected." },
+        { "mr": "सर्व संस्थानांचे ब्रिटनमध्ये सक्तीने विलीनीकरण केले जाईल.", "en": "All princely states would be forcibly annexed into direct British provinces." },
+        { "mr": "संस्थानिकांची सर्व संपत्ती जप्त करून लंडनला पाठवली जाईल.", "en": "Princely state assets would be confiscated and remitted to London." },
+        { "mr": "संस्थानिकांना स्वतःचे सैन्य बाळगण्याची पूर्ण मुभा दिली जाईल.", "en": "Native princes would be permitted unrestricted sovereign military build-up." }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "राणीच्या जाहीरनाम्याने डलहौसीचे दत्तक वारसा नामंजूर धोरण (Doctrine of Lapse) कायमचे रद्द केले आणि वचन दिले की यापुढे ब्रिटिश साम्राज्य विस्तार करणार नाही व राजांचे पारंपरिक हक्क जपले जातील.",
+        "en": "Queen Victoria's Proclamation formally repudiated Dalhousie's Doctrine of Lapse, declaring that the Crown desired no further territorial extensions and would uphold the dignity and adoption rights of native princes."
+      }
+    },
+    {
+      "id": 22,
+      "question": {
+        "mr": "ऑक्टोबर १८५७ मध्ये अहमदनगर जिल्ह्यातील संगमनेरजवळ भिल्ल उठावकर्त्यांशी लढताना मारला गेलेला ब्रिटिश पोलीस अधीक्षक कोण होता?",
+        "en": "Which British Superintendent of Police was killed in action during an engagement with Bhil rebels near Sangamner in Ahmednagar district in October 1857?"
+      },
+      "options": [
+        { "mr": "लेफ्टनंट हेन्री (Lieutenant Henry)", "en": "Lieutenant Henry" },
+        { "mr": "कॅप्टन टेलर (Captain Taylor)", "en": "Captain Taylor" },
+        { "mr": "कर्नल नील (Colonel Neill)", "en": "Colonel Neill" },
+        { "mr": "मेजर हॉडसन (Major Hodson)", "en": "Major Hodson" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "४ ऑक्टोबर १८५७ रोजी अहमदनगरजवळील नंदीसूर (वांबोरी परिसर) येथे भागोजी नाईक यांच्या भिल्ल सैन्याशी लढताना अहमदनगरचा पोलीस अधीक्षक लेफ्टनंट हेन्री गोळी लागून जागीच ठार झाला.",
+        "en": "Lieutenant Henry, Superintendent of Police for Ahmednagar, was shot and killed in action during an encounter with Bhil fighters led by Bhagoji Naik in October 1857."
+      }
+    },
+    {
+      "id": 23,
+      "question": {
+        "mr": "मुघल राजघराण्यातील शहजादा फिरोज शाह यांनी ऑगस्ट १८५७ मध्ये मध्य प्रदेशातील कोणत्या महत्त्वाच्या शहरात ब्रिटिशांविरुद्ध उठावाचे नेतृत्व केले?",
+        "en": "Mughal prince Shahzada Firoz Shah raised the standard of rebellion against the British at which strategic center in Madhya Pradesh in August 1857?"
+      },
+      "options": [
+        { "mr": "मंदसौर (Mandsaur)", "en": "Mandsaur" },
+        { "mr": "भोपाळ (Bhopal)", "en": "Bhopal" },
+        { "mr": "इंदूर (Indore)", "en": "Indore" },
+        { "mr": "जबलपूर (Jabalpur)", "en": "Jabalpur" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "मुघल वंशाचे शहजादा फिरोज शाह यांनी २६ ऑगस्ट १८५७ रोजी मंदसौर येथे स्वतःला स्वतंत्र घोषित केले आणि हजारो अफगाण व मकराणी सैनिकांना संघटित करून ब्रिटिशांना आव्हान दिले.",
+        "en": "Shahzada Firoz Shah, of the Mughal imperial dynasty, proclaimed independence at Mandsaur on 26 August 1857, mobilizing thousands of fighters against British garrisons in Malwa."
+      }
+    },
+    {
+      "id": 24,
+      "question": {
+        "mr": "प्रख्यात इतिहासकार आर. सी. मुजुमदार यांनी १८५७ च्या उठावाचे वर्णन करताना खालीलपैकी कोणते वादग्रस्त निष्कर्ष नोंदवले?",
+        "en": "What famous analytical verdict was pronounced by historian R. C. Majumdar in his treatise on the 1857 uprising?"
+      },
+      "options": [
+        { "mr": "\"हा तथाकथित पहिला राष्ट्रीय स्वातंत्र्यसंग्राम ना पहिला होता, ना राष्ट्रीय होता, आणि ना स्वातंत्र्याचा लढा होता.\"", "en": "\"The so-called First National War of Independence was neither First, nor National, nor a War of Independence.\"" },
+        { "mr": "\"हा केवळ हिंदू आणि मुस्लिम यांचा ख्रिश्चनांविरुद्ध धर्मलढा होता.\"", "en": "\"It was strictly a communal clash between Hindus, Muslims, and Christians.\"" },
+        { "mr": "\"हा आधुनिक भारताचा पहिला यशस्वी कामगार लढा होता.\"", "en": "\"It was modern India's inaugural successful socialist proletarian revolution.\"" },
+        { "mr": "\"हा ब्रिटिश सैन्याचा पूर्वनियोजित अंतर्गत लष्करी उठाव होता.\"", "en": "\"It was a premeditated internal military strike by the British high command.\"" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "इतिहासकार आर. सी. मुजुमदार यांनी आपल्या 'The Sepoy Mutiny and the Revolt of 1857' या ग्रंथात निष्कर्ष काढला की, संपूर्ण भारतात एकच राष्ट्रीय उद्दिष्ट नसल्याने हा 'ना पहिला, ना राष्ट्रीय, ना स्वातंत्र्य लढा होता'.",
+        "en": "In 'The Sepoy Mutiny and the Revolt of 1857', Dr. R. C. Majumdar concluded that the uprising was 'neither First, nor National, nor a War of Independence', citing localized motives."
+      }
+    },
+    {
+      "id": 25,
+      "question": {
+        "mr": "ब्रिटिश सरकारने ईस्ट इंडिया कंपनीच्या लष्करात जुन्या 'ब्राउन बेस' (Brown Bess) बंदुकीच्या जागी वादग्रस्त ठरलेली नवीन 'एनफिल्ड रायफल' (Enfield Rifle) कधी दाखल केली होती?",
+        "en": "When did the British Indian military authorities officially introduce the controversial Pattern 1853 Enfield rifle to replace the smoothbore Brown Bess musket?"
+      },
+      "options": [
+        { "mr": "डिसेंबर १८५६", "en": "December 1856" },
+        { "mr": "जानेवारी १८५७", "en": "January 1857" },
+        { "mr": "मे १८५६", "en": "May 1856" },
+        { "mr": "मार्च १८५७", "en": "March 1857" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "डिसेंबर १८५६ मध्ये ब्रिटिश लष्कराने एनफिल्ड रायफल दाखल केली. या रायफलच्या काडतुसाचे आवरण दाताने तोडावे लागत असे, ज्यावर वंगण म्हणून गाय व डुकराची चरबी वापरल्याची बातमी जानेवारी १८५७ मध्ये दमदम छावणीत पसरली आणि उठावाची तात्कालिक ठिणगी पडली.",
+        "en": "The Pattern 1853 Enfield rifle was introduced into service in December 1856. The requirement to bite open cartridges greased with beef tallow and lard sparked religious outrage among Hindu and Muslim sepoys."
+      }
+    }
+  ]
+}

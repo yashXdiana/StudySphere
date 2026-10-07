@@ -1,0 +1,466 @@
+
+
+{
+  "testId": "p-hist-03-t4",
+  "title": {
+    "mr": "१८५७ चा उठाव — सराव 4",
+    "en": "Revolt of 1857 — Practice Test 4"
+  },
+  "durationMinutes": 20,
+  "marksPerQuestion": 1,
+  "negativeMarking": 0.25,
+  "totalMarks": 25,
+  "difficulty": "मध्यम ते काठिण्य",
+  "questions": [
+    {
+      "id": 1,
+      "question": {
+        "mr": "फेब्रुवारी १८५७ मध्ये कोणत्या लष्करी छावणीतील १९ व्या नेटिव्ह इन्फंट्रीने (19th BNI) चरबीयुक्त काडतुसे वापरण्यास सर्वप्रथम सामूहिक नकार दिला होता?",
+        "en": "At which cantonment in Bengal did the 19th Native Infantry first collectively refuse to use Enfield cartridges in February 1857?"
+      },
+      "options": [
+        { "mr": "बहरामपूर (Berhampore)", "en": "Berhampore" },
+        { "mr": "बराकपूर", "en": "Barrackpore" },
+        { "mr": "दानापूर", "en": "Danapur" },
+        { "mr": "मेरठ", "en": "Meerut" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "२६ फेब्रुवारी १८५७ रोजी बहरामपूर येथील १९ व्या देशी पायदळाने काडतुसे स्वीकारण्यास नकार दिला. ब्रिटिशांनी मार्च १८५७ मध्ये ही तुकडी बरखास्त केली.",
+        "en": "The 19th Bengal Native Infantry at Berhampore revolted on 26 February 1857 by refusing percussion caps and cartridges. The regiment was disbanded in March 1857."
+      }
+    },
+    {
+      "id": 2,
+      "question": {
+        "mr": "२९ मार्च १८५७ रोजी बराकपूर येथे मंगल पांडे यांच्या बंडाच्या वेळी कोणत्या भारतीय सैनिकाने मंगल पांडे यांना अटक करण्यास नकार दिला होता?",
+        "en": "Which Indian jemadar at Barrackpore refused the orders of his British officer to arrest Mangal Pandey on 29 March 1857?"
+      },
+      "options": [
+        { "mr": "जमादार ईश्वर पांडे (Jemadar Ishwari Pande)", "en": "Jemadar Ishwari Pande" },
+        { "mr": "सुभेदार बख्त खान", "en": "Subedar Bakht Khan" },
+        { "mr": "मातादीन भंगी", "en": "Matadin Bhangi" },
+        { "mr": "हरकिशन सिंग", "en": "Harkishan Singh" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "जमादार ईश्वर पांडे यांनी क्वार्टर गार्डच्या शिपायांना मंगल पांडे यांना अटक करण्याचा हुकूम देण्यास नकार दिला. नंतर कोर्ट मार्शल करून २१ एप्रिल १८५७ रोजी ईश्वर पांडे यांनाही फाशी देण्यात आली.",
+        "en": "Jemadar Ishwari Pande, commanding the quarter-guard at Barrackpore, refused to obey orders to seize Mangal Pandey. He was court-martialed and hanged on 21 April 1857."
+      }
+    },
+    {
+      "id": 3,
+      "question": {
+        "mr": "मेरठ येथे ९ मे १८५७ रोजी परेड मैदानावर किती शिपायांनी चरबीयुक्त काडतुसे वापरण्यास नकार दिल्याने त्यांना १० वर्षांची सक्तमजुरी ठोठावण्यात आली होती?",
+        "en": "How many sepoys of the 3rd Native Cavalry at Meerut were sentenced to 10 years of rigorous imprisonment on 9 May 1857 for refusing cartridges?"
+      },
+      "options": [
+        { "mr": "८५ शिपाई (85 Sepoys)", "en": "85 Sepoys" },
+        { "mr": "९० शिपाई", "en": "90 Sepoys" },
+        { "mr": "५० शिपाई", "en": "50 Sepoys" },
+        { "mr": "१०० शिपाई", "en": "100 Sepoys" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "३ री नेटिव्ह कॅव्हलरीच्या ९० पैकी ८५ शिपायांनी काडतुसे नाकारली. ९ मे रोजी त्यांचे गणवेश उतरवून त्यांना बेड्या ठोकण्यात आल्या. या अपमानामुळे १० मे रोजी मेरठमध्ये प्रत्यक्ष उठाव भडकला.",
+        "en": "Eighty-five out of ninety sepoys of the 3rd Native Cavalry refused to handle cartridges on 9 May 1857. They were stripped of uniforms and shackled, precipitating the Meerut outbreak next day."
+      }
+    },
+    {
+      "id": 4,
+      "question": {
+        "mr": "१० मे १८५७ रोजी मेरठ छावणीतील ब्रिटिश कमांडर कोण होता, जो उठाव रोखण्यात पूर्णपणे अपयशी ठरला?",
+        "en": "Who was the senior British Major-General commanding the Meerut military division who failed to contain the uprising on 10 May 1857?"
+      },
+      "options": [
+        { "mr": "जनरल हेविट (General Hewitt)", "en": "General Hewitt" },
+        { "mr": "जनरल अन्सोन", "en": "General Anson" },
+        { "mr": "जनरल निकोल्सन", "en": "General Nicholson" },
+        { "mr": "कर्नल फिनिस", "en": "Colonel Finnis" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "मेजर-जनरल डब्ल्यू. एच. हेविट हा मेरठचा कमांडर होता. पुरेशी युरोपियन कुमक असूनही त्याच्या अकार्यक्षमतेमुळे बंडखोर शिपाई शांततेत दिल्लीकडे निघून गेले.",
+        "en": "Major-General W. H. Hewitt commanded the Meerut cantonment. Despite having seasoned European troops under him, his passivity allowed the sepoys to march uninterrupted to Delhi."
+      }
+    },
+    {
+      "id": 5,
+      "question": {
+        "mr": "११ मे १८५७ रोजी शिपाई दिल्लीत पोहोचले, तेव्हा दिल्लीतील ब्रिटिश मॅजिस्ट्रेट आणि कलेक्टर कोण होते, ज्यांची बंडखोरांनी हत्या केली?",
+        "en": "Who was the British magistrate and collector of Delhi killed by the rebel sepoys on 11 May 1857?"
+      },
+      "options": [
+        { "mr": "जॉन हचिन्सन (John Hutchinson)", "en": "John Hutchinson" },
+        { "mr": "सायमन फ्रेझर", "en": "Simon Fraser" },
+        { "mr": "कॅप्टन डगलस", "en": "Captain Douglas" },
+        { "mr": "विल्यम हॉडसन", "en": "William Hodson" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "दिल्लीचे कमिशनर सायमन फ्रेझर, कलेक्टर जॉन हचिन्सन आणि पॅलेस गार्डचे कॅप्टन डगलस यांची ११ मे रोजी लाल किल्ल्याच्या लाहोर गेटजवळ हत्या करण्यात आली.",
+        "en": "Delhi Commissioner Simon Fraser, Collector John Hutchinson, and palace guard commander Captain Douglas were killed inside the Red Fort by mutineers on 11 May 1857."
+      }
+    },
+    {
+      "id": 6,
+      "question": {
+        "mr": "दिल्लीतील मुख्य दारूगोळा कोठार (Delhi Magazine) बंडखोरांच्या हाती पडू नये म्हणून ११ मे १८५७ रोजी स्वतःच उडवून देणारा ब्रिटिश अधिकारी कोण होता?",
+        "en": "Which British lieutenant blew up the Delhi ammunition magazine on 11 May 1857 to prevent it from falling intact into rebel hands?"
+      },
+      "options": [
+        { "mr": "लेफ्टनंट विलोबी (Lieutenant Willoughby)", "en": "Lieutenant Willoughby" },
+        { "mr": "लेफ्टनंट हॉडसन", "en": "Lieutenant Hodson" },
+        { "mr": "जनरल बर्नार्ड", "en": "General Barnard" },
+        { "mr": "ब्रिगेडियर विल्सन", "en": "Brigadier Wilson" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "लेफ्टनंट जॉर्ज विलोबी याने आपल्या ८ सहकाऱ्यांसह दारूगोळ्याच्या कोठाराला आग लावून स्फोट घडवला, ज्यात अनेक बंडखोर मारले गेले आणि विलोबी स्वतःही गंभीर जखमी झाला.",
+        "en": "Lieutenant George Willoughby, in charge of the great ammunition magazine in Delhi, heroically blew up the arsenal along with his men to keep gunpowder from the rebels."
+      }
+    },
+    {
+      "id": 7,
+      "question": {
+        "mr": "८ जून १८५७ रोजी दिल्लीच्या वेशीवर झालेल्या कोणत्या लढाईत ब्रिटिशांनी बंडखोरांचा पराभव करून 'दिल्ली रिज'वर (Delhi Ridge) आपला तळ ठोकला?",
+        "en": "In which battle on 8 June 1857 did British forces defeat the rebels to establish their siege positions along the Delhi Ridge?"
+      },
+      "options": [
+        { "mr": "बदली-की-सराईची लढाई (Battle of Badli-ki-Serai)", "en": "Battle of Badli-ki-Serai" },
+        { "mr": "नजफगढची लढाई", "en": "Battle of Najafgarh" },
+        { "mr": "पानिपतची लढाई", "en": "Battle of Panipat" },
+        { "mr": "कर्नालची लढाई", "en": "Battle of Karnal" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "सर हेन्री बर्नार्ड यांच्या नेतृत्वाखालील ब्रिटिश सैन्याने बदली-की-सराई येथे बंडखोरांचा पराभव केला आणि दिल्ली रिजचा ताबा मिळवून पुढील तीन महिने दिल्लीला वेढा दिला.",
+        "en": "At the Battle of Badli-ki-Serai on 8 June 1857, British forces defeated rebel positions and occupied the high ground along the Delhi Ridge to conduct the siege."
+      }
+    },
+    {
+      "id": 8,
+      "question": {
+        "mr": "नानासाहेब पेशवे यांचे मूळ दत्तक विधान कोणी नामंजूर करून त्यांचे वार्षिक ₹८ लाख निवृत्तिवेतन बंद केले होते?",
+        "en": "Which Governor-General refused to recognize Nana Saheb as the legal heir to Peshwa Baji Rao II and discontinued his annual pension?"
+      },
+      "options": [
+        { "mr": "लॉर्ड डलहौसी (Lord Dalhousie)", "en": "Lord Dalhousie" },
+        { "mr": "लॉर्ड हार्डिंग्ज", "en": "Lord Hardinge" },
+        { "mr": "लॉर्ड कॅनिंग", "en": "Lord Canning" },
+        { "mr": "लॉर्ड बेंटिंक", "en": "Lord Bentinck" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "दुसऱ्या बाजीरावाच्या मृत्यूनंतर (१८५१) डलहौसीने असा युक्तिवाद केला की पेन्शन बाजीरावाच्या व्यक्तीपुरती मर्यादित होती, दत्तक पुत्राला ती वारशाने मिळणार नाही; यामुळे नानासाहेब ब्रिटिशांचे कट्टर शत्रू बनले.",
+        "en": "After the death of ex-Peshwa Baji Rao II in 1851, Lord Dalhousie refused to continue the ₹8 lakh annual pension to his adopted son Nana Saheb, creating a major grievance."
+      }
+    },
+    {
+      "id": 9,
+      "question": {
+        "mr": "नानासाहेब पेशव्यांच्या पेन्शनचा हक्क मागण्यासाठी लंडनला पाठवण्यात आलेले त्यांचे हुशार मुत्सद्दी सल्लागार कोण होते?",
+        "en": "Who traveled to London on behalf of Nana Saheb to plead his pension case before the British Court of Directors?"
+      },
+      "options": [
+        { "mr": "अझीमुल्ला खान (Azimullah Khan)", "en": "Azimullah Khan" },
+        { "mr": "रंगो बापूजी", "en": "Rango Bapuji" },
+        { "mr": "तात्या टोपे", "en": "Tatya Tope" },
+        { "mr": "मौलवी अहमदुल्ला", "en": "Maulvi Ahmadullah" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "अझीमुल्ला खान १८५३ मध्ये लंडनला गेले. तेथून परतताना त्यांनी क्रिमियाच्या युद्धभूमीला भेट दिली आणि ब्रिटिशांचे लष्करी दुबळेपण प्रत्यक्ष अनुभवून भारतात बंडाचे नियोजन केले.",
+        "en": "Azimullah Khan traveled to London to plead Nana Saheb's pension case. On his return journey via the Crimea, he observed British military setbacks, convincing him that the British were vulnerable."
+      }
+    },
+    {
+      "id": 10,
+      "question": {
+        "mr": "२७ जून १८५७ रोजी कानपूर येथे गंगेच्या काठावर ब्रिटिश नागरिकांची कत्तल झालेली घटना कोणत्या नावाने ओळखली जाते?",
+        "en": "What is the infamous massacre of British evacuees at the riverbank in Kanpur on 27 June 1857 called?"
+      },
+      "options": [
+        { "mr": "सतीचौरा घाट हत्याकांड (Satichaura Ghat Massacre)", "en": "Satichaura Ghat Massacre" },
+        { "mr": "बिबघर हत्याकांड", "en": "Bibighar Massacre" },
+        { "mr": "मीरघाट हत्याकांड", "en": "Mir Ghat Massacre" },
+        { "mr": "दशाश्वमेध हत्याकांड", "en": "Dashashwamedh Massacre" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "सुरक्षित बाहेर पडण्याची हमी देऊनही सतीचौरा घाटावर होड्यांमध्ये बसताना ब्रिटिश सैनिकांवर गोळीबार झाला, ज्यात मेजर जनरल व्हीलरसह शेकडो ब्रिटिश सैनिक मारले गेले.",
+        "en": "At the Satichaura Ghat on 27 June 1857, British troops boarding evacuation boats were fired upon from both riverbanks, resulting in the slaughter of Major General Wheeler's force."
+      }
+    },
+    {
+      "id": 11,
+      "question": {
+        "mr": "१५ जुलै १८५७ रोजी सुमारे २०० ब्रिटिश महिला व बालकांची हत्या झालेली कानपूरमधील घटना कोणती?",
+        "en": "Which tragic incident in Kanpur on 15 July 1857 involved the killing of captive British women and children before Havelock's arrival?"
+      },
+      "options": [
+        { "mr": "बिबघर हत्याकांड (Bibighar Massacre)", "en": "Bibighar Massacre" },
+        { "mr": "सतीचौरा घाट", "en": "Satichaura Ghat" },
+        { "mr": "झाशी हत्याकांड", "en": "Jhansi Massacre" },
+        { "mr": "मेरठ जेल कांड", "en": "Meerut Jail incident" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "जनरल हेव्हलॉक कानपूरच्या दिशेने वेगाने चालून येत असल्याचे समजताच बिबघरमध्ये नजरकैदेत असलेल्या युरोपियन महिला आणि बालकांची निर्घृण हत्या करण्यात आली आणि त्यांचे मृतदेह विहिरीत टाकण्यात आले.",
+        "en": "As General Havelock's relieving army advanced on Kanpur, approximately 200 British women and children held prisoner in the Bibighar were killed and their bodies thrown into a well."
+      }
+    },
+    {
+      "id": 12,
+      "question": {
+        "mr": "लखनौ येथे ३० मे १८५७ रोजी उठाव सुरू झाला, तेव्हा लखनौ शहराचे लष्करी रक्षण कोणी केले?",
+        "en": "Who led the defence of the Lucknow Residency after Sir Henry Lawrence's death in July 1857?"
+      },
+      "options": [
+        { "mr": "कर्नल जॉन इनग्लिस (Colonel John Inglis)", "en": "Colonel John Inglis" },
+        { "mr": "कर्नल नील", "en": "Colonel Neill" },
+        { "mr": "जनरल हेव्हलॉक", "en": "General Havelock" },
+        { "mr": "सर जेम्स आऊट्रम", "en": "Sir James Outram" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "हेन्री लॉरेन्सच्या मृत्यूनंतर ३२ व्या रेजिमेंटचे कर्नल जॉन इनग्लिस यांनी तब्बल ८७ दिवस लखनौ रेसिडेन्सीचा वेढा यशस्वीपणे लढवला.",
+        "en": "Colonel John Inglis took over military command of the beleaguered garrison inside the Lucknow Residency following the death of Sir Henry Lawrence."
+      }
+    },
+    {
+      "id": 13,
+      "question": {
+        "mr": "बिहारची राजधानी पाटणा येथे ३ जुलै १८५७ रोजी उठावाचे नेतृत्व करणाऱ्या पुस्तक विक्रेत्या देशभक्ताचे नाव काय होते?",
+        "en": "Who was the bookseller in Patna who organized the urban insurrection on 3 July 1857 before being hanged by William Tayler?"
+      },
+      "options": [
+        { "mr": "पीर अली खान (Pir Ali Khan)", "en": "Pir Ali Khan" },
+        { "mr": "कुंवर सिंग", "en": "Kunwar Singh" },
+        { "mr": "इनायत अली", "en": "Inayat Ali" },
+        { "mr": "विलायत अली", "en": "Wilayat Ali" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "पाटण्यातील पुस्तक विक्रेते पीर अली खान यांनी बंड पुकारून डॉक्टर लॉयल या ब्रिटिश अधिकाऱ्याला ठार केले. कमिशनर विल्यम टेलरने त्यांना ७ जुलै १८५७ रोजी फाशी दिली.",
+        "en": "Pir Ali Khan, a Patna bookseller, led the rebellion in the city and was publicly executed by hanging on 7 July 1857 under orders of Commissioner William Tayler."
+      }
+    },
+    {
+      "id": 14,
+      "question": {
+        "mr": "दानापूर (बिहार) छावणीतील तीन देशी पायदळ तुकड्यांनी २५ जुलै १८५७ रोजी बंड करून कोणाच्या नेतृत्वाखाली जगदीशपूरकडे कूच केले?",
+        "en": "On 25 July 1857, sepoys of three native regiments at Danapur (near Patna) mutinied and joined which leader?"
+      },
+      "options": [
+        { "mr": "कुंवर सिंग (Kunwar Singh)", "en": "Kunwar Singh" },
+        { "mr": "पीर अली", "en": "Pir Ali" },
+        { "mr": "अमर सिंग", "en": "Amar Singh" },
+        { "mr": "बहादूर शाह", "en": "Bahadur Shah" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "दानापूर छावणीतील ७ वी, ८ वी आणि ४० वी नेटिव्ह इन्फंट्री एकत्र येऊन आरा येथे बाबू कुंवर सिंग यांच्या सैन्याला मिळाली आणि त्यांनी शाहाबाद जिल्हा स्वतंत्र केला.",
+        "en": "Sepoys of the 7th, 8th, and 40th Bengal Native Infantry mutinied at Danapur and marched to Arrah to place themselves under the command of Babu Kunwar Singh."
+      }
+    },
+    {
+      "id": 15,
+      "question": {
+        "mr": "२३ एप्रिल १८५८ रोजी गंगा नदी ओलांडताना ब्रिटिश तोफेचा गोळा लागून स्वतःचा हात कापून गंगेला अर्पण करणारे शूर योद्धे कोण होते?",
+        "en": "Which 80-year-old leader severed his own wounded forearm with a sword and offered it to the Ganges while crossing the river under British fire?"
+      },
+      "options": [
+        { "mr": "कुंवर सिंग (Kunwar Singh)", "en": "Kunwar Singh" },
+        { "mr": "अमर सिंग", "en": "Amar Singh" },
+        { "mr": "तात्या टोपे", "en": "Tatya Tope" },
+        { "mr": "बख्त खान", "en": "Bakht Khan" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "डग्लसच्या सैन्याशी लढत असताना मनगटात गोळी लागल्याने विष संपूर्ण शरीरात पसरू नये म्हणून कुंवर सिंगांनी स्वतःचा डावा हात तलवारीने छाटून गंगेला अर्पण केला. पुढे तीन दिवसांनी जगदीशपूरमध्ये त्यांचा मृत्यू झाला.",
+        "en": "While crossing the Ganges at Shivpur Ghat, Babu Kunwar Singh was hit in the left wrist by a bullet. To avoid gangrene, he severed his own arm and offered it to the Ganga."
+      }
+    },
+    {
+      "id": 16,
+      "question": {
+        "mr": "१८५७ च्या उठावात रुहेलखंडातील मुरादाबाद (Moradabad) येथे बंडखोरांचे नेतृत्व कोणी केले?",
+        "en": "Who proclaimed himself Nawab and led the rebellion in Moradabad in 1857?"
+      },
+      "options": [
+        { "mr": "मजुद्दीन / नवाब मज्जू खान (Majju Khan)", "en": "Nawab Majju Khan" },
+        { "mr": "खान बहादूर खान", "en": "Khan Bahadur Khan" },
+        { "mr": "मौलवी लियाकत अली", "en": "Maulvi Liaquat Ali" },
+        { "mr": "कासिम अली", "en": "Qasim Ali" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "मुरादाबादमध्ये नवाब मज्जू खान यांनी ब्रिटिश खजिना ताब्यात घेऊन बंड पुकारले. नंतर ब्रिटिशांनी त्यांना पकडून तोफेच्या तोंडी दिले.",
+        "en": "Nawab Majju Khan led the uprising at Moradabad and governed the district until he was captured and executed by the British in April 1858."
+      }
+    },
+    {
+      "id": 17,
+      "question": {
+        "mr": "मेरठ शहराजवळ १८५७ च्या उठावात हजारो गुर्जरांचे नेतृत्व करून ब्रिटिशांना आव्हान देणारे नेते कोण होते?",
+        "en": "Who mobilized thousands of Gujjar villagers around Meerut and declared himself Raja in 1857?"
+      },
+      "options": [
+        { "mr": "कदम सिंग (Kadam Singh)", "en": "Kadam Singh" },
+        { "mr": "देवी सिंग", "en": "Devi Singh" },
+        { "mr": "शाह मल", "en": "Shah Mal" },
+        { "mr": "धन सिंग गुर्जर", "en": "Dhan Singh Gurjar" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "परीक्षितगडचे कदम सिंग यांनी गुर्जरांचे नेतृत्व केले आणि स्वतःला राजा घोषित करून मेरठ भागातील ब्रिटिशांचे नियंत्रण संपवले.",
+        "en": "Kadam Singh organized thousands of Gujjars around Parikshitgarh and Meerut, breaking communication lines and defying colonial rule."
+      }
+    },
+    {
+      "id": 18,
+      "question": {
+        "mr": "१० मे १८५७ च्या रात्री मेरठ शहरात कोतवालीचे मुख्य अधिकारी (कोतवाल) असताना कैद्यांना सोडून बंडखोरांना मदत करणारे क्रांतिकारक कोण होते?",
+        "en": "Who was the chief police officer (Kotwal) of Meerut on 10 May 1857 who aided the rebel sepoys and released imprisoned countrymen?"
+      },
+      "options": [
+        { "mr": "धन सिंग गुर्जर (Dhan Singh Gurjar)", "en": "Dhan Singh Gurjar" },
+        { "mr": "कदम सिंग", "en": "Kadam Singh" },
+        { "mr": "उमराव सिंग", "en": "Umrao Singh" },
+        { "mr": "देवी सिंग", "en": "Devi Singh" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "मेरठचे कोतवाल धन सिंग गुर्जर यांनी गुप्तपणे बंडखोरांना पाठिंबा दिला, जेलचे दरवाजे उघडून ८०० कैद्यांना मुक्त केले आणि ब्रिटिशांविरुद्ध हल्ले चढवले.",
+        "en": "Dhan Singh Gurjar, the Kotwal of Meerut, led local villagers into the cantonment and jail, releasing prisoners and destroying Company installations on the night of 10 May 1857."
+      }
+    },
+    {
+      "id": 19,
+      "question": {
+        "mr": "१८५७ च्या उठावात मध्य प्रदेशातील सागर (Sagar) आणि दमोह भागात सैन्याचे नेतृत्व करणारे राजे कोण होते?",
+        "en": "Who led the insurrection in Sagar and Damoh districts of Central India in 1857?"
+      },
+      "options": [
+        { "mr": "राजे बखत बली आणि मर्दन सिंग", "en": "Raja Bakhat Bali and Mardan Singh" },
+        { "mr": "शंकर शाह", "en": "Shankar Shah" },
+        { "mr": "कुंवर सिंग", "en": "Kunwar Singh" },
+        { "mr": "तात्या टोपे", "en": "Tatya Tope" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "शहागढचे राजे बखत बली आणि बानपूरचे राजे मर्दन सिंग यांनी सागर, दमोह आणि ललितपूर भागात उठावाचे नेतृत्व केले आणि राणी लक्ष्मीबाईंना मदत केली.",
+        "en": "Raja Bakhat Bali of Shahgarh and Raja Mardan Singh of Banpur led the uprising across the Sagar, Damoh, and Lalitpur tracts, assisting Rani Lakshmibai."
+      }
+    },
+    {
+      "id": 20,
+      "question": {
+        "mr": "१८५७ च्या उठावात पंजाबमध्ये ब्रिटिशांना विरोध करणारा मुख्य शीख नेता कोण होता, ज्यांना तुरुंगात टाकण्यात आले?",
+        "en": "Which Sikh leader, formerly an anti-British rebel of the Second Anglo-Sikh War, was placed under house arrest in 1857 to prevent unrest in Punjab?"
+      },
+      "options": [
+        { "mr": "भाई महाराज सिंग यांचे अनुयायी / राजा शेर सिंग", "en": "Followers of Bhai Maharaj Singh / Raja Sher Singh" },
+        { "mr": "दिलीपसिंग", "en": "Duleep Singh" },
+        { "mr": "खडक सिंग", "en": "Kharak Singh" },
+        { "mr": "गुलाब सिंग", "en": "Gulab Singh" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "पंजाबचे माजी सैनिक व सरदार शेरसिंग अत्तारीवाला ब्रिटिशांच्या कैदेत होते. जॉन लॉरेन्सने शिखांमधील जुने नेते तुरुंगात ठेवून आणि निवृत्त सैनिकांना भरती करून पंजाब शांत ठेवला.",
+        "en": "Chief Commissioner John Lawrence strictly disarmed doubtful regiments in Punjab and placed former chiefs under surveillance while recruiting fresh levies."
+      }
+    },
+    {
+      "id": 21,
+      "question": {
+        "mr": "१८५७ च्या काळात 'टाइम्स' (The Times, London) या लंडनच्या वृत्तपत्राचे भारतातून वस्तुनिष्ठ वार्तांकन करणारे प्रसिद्ध युद्ध वार्ताहर कोण होते?",
+        "en": "Who was the renowned war correspondent of 'The Times' (London) who arrived in India in 1858 and documented the brutal reality of British counter-reprisals?"
+      },
+      "options": [
+        { "mr": "विल्यम हॉवर्ड रसेल (William Howard Russell)", "en": "William Howard Russell" },
+        { "mr": "जेम्स मिल्स", "en": "James Mill" },
+        { "mr": "चार्ल्स डिकन्स", "en": "Charles Dickens" },
+        { "mr": "थॉमस मेकॉल", "en": "Thomas Macaulay" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "विल्यम हॉवर्ड रसेल यांनी 'माय डायरी इन इंडिया इन द इयर १८५८-९' हे पुस्तक लिहिले. त्यांनी ब्रिटिश सैनिकांनी भारतीयांवर केलेल्या क्रूर अत्याचारांची व कत्तलींची लंडनच्या वृत्तपत्रात पोलखोल केली.",
+        "en": "William Howard Russell, reporting for The Times, chronicled military operations in India and exposed the horrific atrocities committed by British troops in retaliation."
+      }
+    },
+    {
+      "id": 22,
+      "question": {
+        "mr": "१८५७ च्या उठावात ब्रिटिशांनी रंगूनला हद्दपार केलेल्या मुघल सम्राज्ञी झीनत महल यांचा मृत्यू कोठे झाला?",
+        "en": "Where did Begum Zeenat Mahal, the favorite wife of Bahadur Shah Zafar, die in exile?"
+      },
+      "options": [
+        { "mr": "रंगून (Rangoon, Burma)", "en": "Rangoon (Burma)" },
+        { "mr": "दिल्ली", "en": "Delhi" },
+        { "mr": "लखनौ", "en": "Lucknow" },
+        { "mr": "कराची", "en": "Karachi" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "झीनत महल यांनी बहादूर शाह झफर यांच्यासोबत रंगून येथे हद्दपारी भोगली. १८८६ मध्ये रंगून येथेच त्यांचा मृत्यू झाला आणि त्यांना झफर यांच्या कबरीजवळ दफन करण्यात आले.",
+        "en": "Begum Zeenat Mahal accompanied Bahadur Shah Zafar into exile in Rangoon, where she passed away in 1886 and was buried near the Emperor's tomb."
+      }
+    },
+    {
+      "id": 23,
+      "question": {
+        "mr": "१८५७ च्या उठावानंतर १८६१ मध्ये लॉर्ड कॅनिंगने सैन्यात धार्मिक सलोखा व संघटन रोखण्यासाठी कोणती पद्धत सुरू केली?",
+        "en": "Which system was adopted in the post-1857 Indian Army to prevent soldiers from uniting across caste and religious lines?"
+      },
+      "options": [
+        { "mr": "वर्ग कंपनी पद्धत (Class Company System)", "en": "Class Company System" },
+        { "mr": "मिश्र जाती पद्धत", "en": "Mixed Caste System" },
+        { "mr": "सर्वसमावेशक रेजिमेंट", "en": "All-inclusive Regiment" },
+        { "mr": "केवळ युरोपियन कंपनी", "en": "Exclusively European Company" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "सैनिकांमध्ये ऐक्य निर्माण होऊ नये म्हणून एकाच रेजिमेंटमध्ये वेगवेगळ्या जातींच्या स्वतंत्र कंपन्या (उदा. शीख कंपनी, पठाण कंपनी, डोग्रा कंपनी) तयार केल्या गेल्या, ज्याला 'क्लास कंपनी पद्धत' म्हणतात.",
+        "en": "The 'Class Company' system segregated troops by caste, ethnicity, and religion within regiments to prevent soldiers from forging unified cross-communal bonds."
+      }
+    },
+    {
+      "id": 24,
+      "question": {
+        "mr": "१८५७ च्या उठावावर कार्ल मार्क्स (Karl Marx) यांनी कोणत्या वृत्तपत्रातून लेख लिहून हा उठाव 'राष्ट्रीय उठाव' असल्याचे प्रतिपादन केले?",
+        "en": "In which American newspaper did Karl Marx publish dispatches in 1857-58 characterizing the revolt as a 'national revolt' rather than a military mutiny?"
+      },
+      "options": [
+        { "mr": "न्यू यॉर्क डेली ट्रिब्यून (New-York Daily Tribune)", "en": "New-York Daily Tribune" },
+        { "mr": "द टाइम्स लंडन", "en": "The Times London" },
+        { "mr": "मँचेस्टर गार्डियन", "en": "Manchester Guardian" },
+        { "mr": "वॉशिंग्टन पोस्ट", "en": "Washington Post" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "कार्ल मार्क्स आणि फ्रेडरिक एंगल्स यांनी 'New-York Daily Tribune' मध्ये लेख लिहून स्पष्ट केले की भारतीय जनतेने ब्रिटिश वसाहतवादी शोषणाविरुद्ध पुकारलेला हा खराखुरा राष्ट्रीय लढा होता.",
+        "en": "Karl Marx, writing for the New-York Daily Tribune, labeled the uprising as 'not a military mutiny, but a national revolt', driven by systematic colonial expropriation."
+      }
+    },
+    {
+      "id": 25,
+      "question": {
+        "mr": "१८५७ च्या उठावाच्या वेळी लंडनमध्ये ईस्ट इंडिया कंपनीचे अधिकृत संचालक असलेले आणि नंतर भारत सरकार कायद्याचा मसुदा तयार करणारे विचारवंत कोण होते?",
+        "en": "Which prominent British philosopher and political economist was an officer in the East India Company and drafted its petition against dissolution in 1858?"
+      },
+      "options": [
+        { "mr": "जॉन स्टुअर्ट मिल (John Stuart Mill)", "en": "John Stuart Mill" },
+        { "mr": "जेरेमी बेंथम", "en": "Jeremy Bentham" },
+        { "mr": "थॉमस मेकॉल", "en": "Thomas Macaulay" },
+        { "mr": "एडमंड बर्क", "en": "Edmund Burke" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "जॉन स्टुअर्ट मिल हे ईस्ट इंडिया कंपनीच्या लंडन कार्यालयात उच्च पदावर होते. त्यांनी कंपनी बरखास्त करण्याविरुद्ध ब्रिटिश संसदेला कंपनीच्या वतीने बचावात्मक याचिका (Petition of the East India Company) लिहून दिली होती.",
+        "en": "John Stuart Mill, serving as Examiner of India Correspondence at the India House, drafted the Company's eloquent but unsuccessful petition to Parliament defending Company rule in 1858."
+      }
+    }
+  ]
+}

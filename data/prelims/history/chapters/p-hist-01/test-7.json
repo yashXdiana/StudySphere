@@ -1,0 +1,464 @@
+{
+  "testId": "p-hist-01-t7",
+  "title": {
+    "mr": "आधुनिक भारताचा इतिहास — सराव 7",
+    "en": "Modern Indian History — Practice Test 7"
+  },
+  "durationMinutes": 20,
+  "marksPerQuestion": 1,
+  "negativeMarking": 0.25,
+  "totalMarks": 25,
+  "difficulty": "मध्यम ते काठिण्य",
+  "questions": [
+    {
+      "id": 1,
+      "question": {
+        "mr": "१५०३ मध्ये पोर्तुगीजांनी भारतात आपली पहिली व्यापारी वखार आणि किल्ला खालीलपैकी कोणत्या ठिकाणी उभारला?",
+        "en": "At which of the following places did the Portuguese establish their first trading factory and fortress in India in 1503?"
+      },
+      "options": [
+        { "mr": "कोचीन (कोची)", "en": "Cochin (Kochi)" },
+        { "mr": "कण्णूर (कॅनानोर)", "en": "Cannanore (Kannur)" },
+        { "mr": "कालिकत", "en": "Calicut" },
+        { "mr": "गोवा", "en": "Goa" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "अल्फोन्सो दी अल्बुकर्क याच्या उपस्थितीत पोर्तुगीजांनी १५०३ मध्ये कोचीन येथे भारतातील पहिली वखार व 'फोर्ट मॅन्युएल' नावाचा किल्ला उभारला. यानंतर १५०५ मध्ये कण्णूर येथे दुसरी वखार स्थापन करण्यात आली.",
+        "en": "In 1503, the Portuguese erected their very first trading factory and stronghold (Fort Manuel) at Cochin under the direction of Alfonso de Albuquerque. Their second factory was established at Cannanore in 1505."
+      }
+    },
+    {
+      "id": 2,
+      "question": {
+        "mr": "पोर्तुगीजांच्या भारतातील आगमनामुळे देशात कोणत्या नव्या शेती पिकांची आणि तंत्रज्ञानाची ओळख झाली?",
+        "en": "Which of the following agricultural crops and technologies were introduced to India due to the arrival of the Portuguese?"
+      },
+      "options": [
+        { "mr": "तंबाखू, बटाटा, मिरची, अननस आणि आधुनिक छपाई यंत्र (Printing Press)", "en": "Tobacco, potato, chili, pineapple, and the modern printing press" },
+        { "mr": "चहा, कॉफी, रबर आणि रेशीम शेती", "en": "Tea, coffee, rubber, and sericulture" },
+        { "mr": "बाजरी, गहू, ज्वारी आणि चरखा", "en": "Bajra, wheat, jowar, and the spinning wheel" },
+        { "mr": "केसर, अफू, नीळ आणि लाकडी नांगर", "en": "Saffron, opium, indigo, and the wooden plough" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "पोर्तुगीजांनी भारतात तंबाखू, बटाटा, मिरची, मका, अननस, काजू आणि पपई यांसारखी पिके आणली. तसेच १५५६ मध्ये गोव्यात त्यांनी भारतातील पहिली प्रिंटिंग प्रेस (छपाई यंत्र) सुरू केली.",
+        "en": "The Portuguese introduced several new crops to India including tobacco, potatoes, red chilies, maize, pineapples, cashews, and papayas. They also brought the first printing press to India at Goa in 1556."
+      }
+    },
+    {
+      "id": 3,
+      "question": {
+        "mr": "१६२३ मध्ये झालेल्या 'अम्बोयना कत्तलीमुळे' (Amboyna Massacre) इंग्रज आणि डच यांच्यातील संघर्ष तीव्र झाला. हे अम्बोयना हे ठिकाण सध्या कोणत्या देशात आहे?",
+        "en": "The Amboyna Massacre of 1623 intensified the conflict between the English and the Dutch. In which present-day country is Amboyna located?"
+      },
+      "options": [
+        { "mr": "इंडोनेशिया", "en": "Indonesia" },
+        { "mr": "मलेशिया", "en": "Malaysia" },
+        { "mr": "म्यानमार", "en": "Myanmar" },
+        { "mr": "श्रीलंका", "en": "Sri Lanka" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "अम्बोयना हे बेट सध्याच्या इंडोनेशियातील 'मलूकू' (मसाल्यांची बेटे) भागात आहे. येथे डचांनी कट केल्याचा आरोप ठेवून १० इंग्रज व्यापाऱ्यांची निर्घृण हत्या केली. या घटनेनंतर इंग्रजांनी इंडोनेशियावरील लक्ष कमी करून भारतावर पूर्ण लक्ष केंद्रित केले.",
+        "en": "Amboyna (Ambon Island) is located in present-day Indonesia (Maluku Islands). In 1623, Dutch authorities tortured and executed ten English East India Company agents, leading the British to shift their primary commercial focus from the Spice Islands to mainland India."
+      }
+    },
+    {
+      "id": 4,
+      "question": {
+        "mr": "फ्रेंच गव्हर्नर जोसेफ फ्रँकोइस डुप्ले (Joseph François Dupleix) च्या संदर्भात खालील विधाने विचारात घ्या:\nअ. त्याने भारतीय राजांच्या अंतर्गत वादात युरोपीय सैन्य उतरवून राजकीय हस्तक्षेप करण्याचे तंत्र सर्वप्रथम विकसित केले.\nब. १७४२ मध्ये त्याची पाँडिचेरीचा गव्हर्नर-जनरल म्हणून नियुक्ती झाली होती.\nवरीलपैकी कोणते/ती विधान/ने बरोबर आहेत?",
+        "en": "Consider the following statements regarding the French Governor Joseph François Dupleix:\na. He pioneered the strategy of intervening in succession disputes of native Indian princes using European-drilled troops.\nb. He was appointed Governor-General of Pondicherry in 1742.\nWhich of the statements given above is/are correct?"
+      },
+      "options": [
+        { "mr": "फक्त अ", "en": "Only a" },
+        { "mr": "फक्त ब", "en": "Only b" },
+        { "mr": "अ आणि ब दोन्ही", "en": "Both a and b" },
+        { "mr": "दोन्ही नाही", "en": "Neither a nor b" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "दोन्ही विधाने योग्य आहेत. डुप्ले १७४२ मध्ये पाँडिचेरीचा गव्हर्नर बनला. त्याने स्थानिक सत्ताधीशांच्या भांडणात युरोपीय फौजांचा भाडोत्री वापर करून राजकीय प्रभाव मिळवण्याची नीती सुरू केली, ज्याचा पुढे ब्रिटिश साम्राज्य विस्तार करताना रॉबर्ट क्लाईव्ह व वेलस्ली यांनी मोठ्या प्रमाणावर वापर केला.",
+        "en": "Both statements are correct. Taking charge as Governor of Pondicherry in 1742, Dupleix initiated the imperial mechanism of using disciplined European troops as auxiliaries in domestic dynastic disputes in exchange for territorial and revenue concessions, a playbook later perfected by Clive and Wellesley."
+      }
+    },
+    {
+      "id": 5,
+      "question": {
+        "mr": "१७५६ मध्ये बंगालचा नवाब बनण्यापूर्वी सिराज-उद्-दौलाचे खालीलपैकी कोणाशी उत्तराधिकारावरून मुख्य अंतर्गत वैर होते?",
+        "en": "Prior to becoming the Nawab of Bengal in 1756, with whom did Siraj-ud-Daulah have major internal family rivalries over succession?"
+      },
+      "options": [
+        { "mr": "घसेटी बेगम (त्याची मावशी) आणि शौकत जंग (त्याचा चुलत भाऊ)", "en": "Ghaseti Begum (his maternal aunt) and Shaukat Jung (his cousin)" },
+        { "mr": "मीर जाफर आणि मीर मदान", "en": "Mir Jafar and Mir Madan" },
+        { "mr": "शहा आलम आणि सुजाउद्दीन", "en": "Shah Alam and Shuja-ud-din" },
+        { "mr": "सर्फराज खान आणि अलिवर्दी खान", "en": "Sarfaraz Khan and Alivardi Khan" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "अलिवर्दी खानच्या मृत्यूनंतर सिराज-उद्-दौला गादीवर आला, तेव्हा त्याला त्याची मोठी मावशी घसेटी बेगम आणि पूर्णियाचा सुभेदार असलेला त्याचा चुलत भाऊ शौकत जंग यांच्या तीव्र विरोधाचा सामना करावा लागला. ईस्ट इंडिया कंपनीच्या अधिकाऱ्यांनी या विरोधकांना छुपी फूस लावली होती.",
+        "en": "Upon succeeding Alivardi Khan in 1756, young Siraj-ud-Daulah faced intense resistance from his maternal aunt Ghaseti Begum and his cousin Shaukat Jung (Governor of Purnea), both of whom were secretly encouraged by Company officials in Calcutta."
+      }
+    },
+    {
+      "id": 6,
+      "question": {
+        "mr": "२२ ऑक्टोबर १७६४ रोजी लढल्या गेलेल्या बक्सारच्या लढाईत ब्रिटिश सैन्याचे प्रत्यक्ष नेतृत्व खालीलपैकी कोणत्या अधिकाऱ्याने केले होते?",
+        "en": "Which British officer was in direct tactical command of Company troops at the Battle of Buxar on 22 October 1764?"
+      },
+      "options": [
+        { "mr": "मेजर हेक्टर मुन्रो (Major Hector Munro)", "en": "Major Hector Munro" },
+        { "mr": "रॉबर्ट क्लाईव्ह (Robert Clive)", "en": "Robert Clive" },
+        { "mr": "मेजर स्ट्रिंगर लॉरेन्स (Major Stringer Lawrence)", "en": "Major Stringer Lawrence" },
+        { "mr": "कर्नल आयर कूट (Colonel Eyre Coote)", "en": "Colonel Eyre Coote" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "बक्सारच्या प्रसिद्ध लढाईत मेजर हेक्टर मुन्रो याने ब्रिटिश सैन्याचे नेतृत्व केले आणि अवधचा नवाब, मुघल सम्राट आणि मीर कासीम यांच्या संयुक्त सैन्याचा दारुण पराभव केला. रॉबर्ट क्लाईव्ह त्या वेळी भारतात नव्हता; तो मे १७६५ मध्ये गव्हर्नर म्हणून दुसऱ्यांदा भारतात आला.",
+        "en": "Major Hector Munro commanded the victorious British force at the Battle of Buxar on 22 October 1764. Robert Clive was in England at the time and returned to India as Governor only in May 1765."
+      }
+    },
+    {
+      "id": 7,
+      "question": {
+        "mr": "१७६५ च्या अलाहाबादच्या पहिल्या तहानुसार मुघल सम्राट शहा आलम दुसरा याला ईस्ट इंडिया कंपनीने वार्षिक किती रुपये पेन्शन देणे मान्य केले होते?",
+        "en": "Under the First Treaty of Allahabad (1765), what annual pension did the East India Company agree to pay to Mughal Emperor Shah Alam II?"
+      },
+      "options": [
+        { "mr": "२६ लाख रुपये", "en": "26 Lakh Rupees" },
+        { "mr": "५३ लाख रुपये", "en": "53 Lakh Rupees" },
+        { "mr": "१२ लाख रुपये", "en": "12 Lakh Rupees" },
+        { "mr": "३५ लाख रुपये", "en": "35 Lakh Rupees" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१२ ऑगस्ट १७६५ च्या तहानुसार, मुघल सम्राटाने कंपनीला बंगाल, बिहार आणि ओरिसाचे दिवाणी हक्क दिले; त्या बदल्यात कंपनीने बादशहाला कडा व अलाहाबाद हे जिल्हे आणि दरवर्षी २६ लाख रुपयांची नियमित पेन्शन देण्याचे मान्य केले.",
+        "en": "In the First Treaty of Allahabad signed on 12 August 1765, Shah Alam II ceded the Diwani of Bengal, Bihar, and Orissa to the East India Company in return for an annual tribute/pension of 26 lakh rupees and the districts of Kora and Allahabad."
+      }
+    },
+    {
+      "id": 8,
+      "question": {
+        "mr": "१७७३ च्या नियामक कायद्यानुसार (Regulating Act) बंगालचा पहिला गव्हर्नर-जनरल म्हणून कोणाची नियुक्ती करण्यात आली होती?",
+        "en": "Who was appointed as the first Governor-General of Bengal pursuant to the provisions of the Regulating Act of 1773?"
+      },
+      "options": [
+        { "mr": "वॉरन हेस्टिंग्स", "en": "Warren Hastings" },
+        { "mr": "लॉर्ड कॉर्नवॉलिस", "en": "Lord Cornwallis" },
+        { "mr": "सर जॉन शोर", "en": "Sir John Shore" },
+        { "mr": "रॉबर्ट क्लाईव्ह", "en": "Robert Clive" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१७७३ च्या रेग्युलेटिंग ॲक्टने फोर्ट विल्यम (बंगाल) च्या गव्हर्नरचे पद उन्नत करून 'गव्हर्नर-जनरल ऑफ द प्रेसिडेन्सी ऑफ फोर्ट विल्यम' असे केले. वॉरन हेस्टिंग्स (जे १७७२ पासून गव्हर्नर होते) हे या पदावर बसणारे पहिले अधिकारी ठरले.",
+        "en": "The Regulating Act of 1773 elevated the Governor of Bengal to the rank of 'Governor-General of Bengal' (Fort William). Warren Hastings, who had arrived as Governor of Bengal in 1772, became the first Governor-General under the Act."
+      }
+    },
+    {
+      "id": 9,
+      "question": {
+        "mr": "१७७३ च्या रेग्युलेटिंग ॲक्टमधील तरतुदींनुसार कंपनीच्या कर्मचाऱ्यांवर खालीलपैकी कोणता महत्त्वाचा निर्बंध लादण्यात आला होता?",
+        "en": "Which of the following crucial restrictions was imposed on Company servants by the Regulating Act of 1773?"
+      },
+      "options": [
+        { "mr": "कोणत्याही प्रकारचा खाजगी व्यापार करण्यास आणि स्थानिक जनतेकडून भेटवस्तू वा लाच घेण्यास सक्त मनाई करण्यात आली.", "en": "Strictly prohibiting private trade and receiving gifts, presents, or bribes from the native population." },
+        { "mr": "भारतात मालमत्ता खरेदी करण्यावर १० वर्षांसाठी पूर्ण बंदी घालण्यात आली.", "en": "A complete ban on purchasing immovable property in India for ten years." },
+        { "mr": "कंपनीच्या अधिकाऱ्यांना भारतीय सैनिकांशी थेट संवाद साधण्यास मनाई करण्यात आली.", "en": "Barring Company officers from directly communicating with Indian sepoy ranks." },
+        { "mr": "इंग्लंडला परत जाताना संपूर्ण पगार भारतातच गुंतवणे बंधनकारक करण्यात आले.", "en": "Mandating the reinvestment of entire accumulated salaries inside India upon departure." }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "कंपनी कर्मचाऱ्यांमधील बोकाळलेला भ्रष्टाचार रोखण्यासाठी १७७३ च्या कायद्याने कर्मचाऱ्यांना कोणताही खाजगी व्यापार करण्यास किंवा भारतीय संस्थानिक व जनतेकडून कोणत्याही प्रकारची भेटवस्तू, देणगी वा लाच स्वीकारण्यास स्पष्ट शब्दांत बंदी घातली.",
+        "en": "To curtail blatant private profiteering, Section 24 of the Regulating Act of 1773 strictly prohibited Company servants from engaging in private commercial transactions or accepting any gifts, donations, or gratuities from native inhabitants."
+      }
+    },
+    {
+      "id": 10,
+      "question": {
+        "mr": "पहिल्या इंग्रज-मराठा युद्धादरम्यान (१७७५-१७८२) पेशवे प्रशासनाच्या बाजूने बाराभाई कारभाऱ्यांचे नेतृत्व कोणी केले होते?",
+        "en": "Who spearheaded the Regency Council of statesmen known as the 'Barabhai Council' on behalf of the Peshwa administration during the First Anglo-Maratha War?"
+      },
+      "options": [
+        { "mr": "नाना फडणवीस आणि सखाराम बापू बोकील", "en": "Nana Phadnavis and Sakharam Bapu Bokil" },
+        { "mr": "महादजी शिंदे आणि मल्हारराव होळकर", "en": "Mahadji Shinde and Malhar Rao Holkar" },
+        { "mr": "रघुनाथराव आणि आनंदराव रास्ते", "en": "Raghunathrao and Anandrao Raste" },
+        { "mr": "बाजीराव दुसरे आणि त्र्यंबकजी डेंगळे", "en": "Baji Rao II and Trimbakji Dengle" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "नारायणराव पेशव्यांच्या हत्येनंतर अल्पवयीन सवाई माधवराव यांच्या नावाने राज्यकारभार चालवण्यासाठी नाना फडणवीस, सखाराम बापू बोकील, महादजी शिंदे यांच्यासह बारा मुत्सद्द्यांचे 'बाराभाई कारभारी मंडळ' स्थापन झाले. त्यांनी राघोबा व ब्रिटिशांविरुद्ध लढा दिला.",
+        "en": "Following Narayanrao's assassination, the administration was conducted on behalf of infant Peshwa Sawai Madhavrao by a twelve-member ministerial council known as the 'Barabhai', led prominently by Nana Phadnavis and Sakharam Bapu Bokil."
+      }
+    },
+    {
+      "id": 11,
+      "question": {
+        "mr": "१७८० च्या दुसऱ्या इंग्रज-म्हैसूर युद्धाच्या वेळी खालीलपैकी कोणत्या लढाईत हैदर अली आणि टिपू सुलतान यांनी कर्नल बेली (Colonel Baillie) च्या ब्रिटिश फौजेचा पूर्ण पराभव करून संपूर्ण तुकडीला कैद केले?",
+        "en": "In which famous encounter during the Second Anglo-Mysore War in 1780 did Hyder Ali and Tipu Sultan encircle and annihilate Colonel Baillie's detachment?"
+      },
+      "options": [
+        { "mr": "पोलीलूरची लढाई (Battle of Pollilur)", "en": "Battle of Pollilur" },
+        { "mr": "पोर्टो नोव्होची लढाई (Battle of Porto Novo)", "en": "Battle of Porto Novo" },
+        { "mr": "शोलींगूरची लढाई (Battle of Sholinghur)", "en": "Battle of Sholinghur" },
+        { "mr": "तंजावरची लढाई (Battle of Tanjore)", "en": "Battle of Tanjore" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१० सप्टेंबर १७८० रोजी पोलीलूर (कांचीपुरम जवळ) येथे हैदर आणि टिपूने कर्नल बेलीच्या सैन्याला चहूबाजूंनी घेरले. या भीषण लढाईत ब्रिटिश फौजेचा दारुण पराभव झाला आणि कर्नल बेलीसह वाचलेल्या ब्रिटिश सैनिकांना कैद करून श्रीरंगपट्टणमच्या तुरुंगात डांबण्यात आले.",
+        "en": "On 10 September 1780 at the Battle of Pollilur (near Conjeeveram), Hyder Ali and Tipu Sultan overwhelmed Colonel William Baillie's detachment, inflicting one of the worst defeats ever suffered by the British East India Company in Southern India."
+      }
+    },
+    {
+      "id": 12,
+      "question": {
+        "mr": "१७८६ मध्ये ब्रिटिश संसदेत वॉरन हेस्टिंग्सवर भ्रष्टाचाराचा व अधिकारांच्या गैरवापराचा ऐतिहासिक महाभियोग (Impeachment) चालवणारे प्रसिद्ध ब्रिटिश विचारवंत व संसद सदस्य कोण होते?",
+        "en": "Which eminent British statesman and philosopher led the historic parliamentary impeachment trial against Warren Hastings in 1786?"
+      },
+      "options": [
+        { "mr": "एडमंड बर्क (Edmund Burke)", "en": "Edmund Burke" },
+        { "mr": "विल्यम पिट द यंगर (William Pitt the Younger)", "en": "William Pitt the Younger" },
+        { "mr": "चार्ल्स जेम्स फॉक्स (Charles James Fox)", "en": "Charles James Fox" },
+        { "mr": "लॉर्ड नॉर्थ (Lord North)", "en": "Lord North" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "एडमंड बर्क यांनी वॉरन हेस्टिंग्सवर बनारसचा राजा चैतसिंग, अवधच्या बेगमांची लूट आणि नंदकुमारचा न्यायालयीन वध या प्रकरणांवरून ब्रिटिश संसदेत कठोर ताशेरे ओढले आणि १७८८ ते १७९५ या प्रदीर्घ काळात त्याच्यावर महाभियोगाचा खटला चालवला.",
+        "en": "Edmund Burke, along with Charles James Fox and Richard Sheridan, prosecuted the sensational seven-year House of Commons impeachment against Warren Hastings for high crimes and tyrannical extortion in India."
+      }
+    },
+    {
+      "id": 13,
+      "question": {
+        "mr": "१७९३ च्या 'कायमधारा पद्धतीनुसार' (Permanent Settlement) जमीन महसुलाचा दर ठरवताना आधारभूत वर्ष म्हणून कोणत्या आर्थिक वर्षाची आकडेवारी गृहीत धरण्यात आली होती?",
+        "en": "While calculating the permanent assessment under the Permanent Settlement of 1793, which baseline year's actual collections were used as reference?"
+      },
+      "options": [
+        { "mr": "१७८९-१७९० चा प्रत्यक्ष महसूल", "en": "Actual collections of 1789–1790" },
+        { "mr": "१७६५ चा दिवाणी महसूल", "en": "Diwani revenue figures of 1765" },
+        { "mr": "१७७२ चा इजारदारी महसूल", "en": "Ijardari auction records of 1772" },
+        { "mr": "१७८४ चा पिट्स ॲक्ट महसूल", "en": "Pitt's India Act audits of 1784" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "सर जॉन शोर यांच्या नेतृत्वाखालील मंडळाने १७८९-९० मधील प्रत्यक्ष वसुलीच्या आधारे सुमारे २ कोटी ६८ लाख रुपयांची वार्षिक महसूल मागणी निश्चित केली. १७९० मध्ये ही १० वर्षांसाठी लागू केली आणि १७९३ मध्ये कॉर्नवॉलिसने ती कायमस्वरूपी केली.",
+        "en": "The Board of Revenue under Sir John Shore adopted the actual revenue returns of 1789–1790 as the benchmark. Initially introduced as a decennial settlement in 1790, Lord Cornwallis declared this baseline assessment perpetual in March 1793."
+      }
+    },
+    {
+      "id": 14,
+      "question": {
+        "mr": "कायमधारा पद्धतीमुळे जमीन महसूल नियमितपणे न भरणाऱ्या जमीनदारांची जागा कोणी घेतली, ज्यामुळे ग्रामीण समाजात कोणत्या नवीन घटकाचा उदय झाला?",
+        "en": "Due to the auctioning of defaulting estates under the Permanent Settlement, who bought these properties, leading to the rise of which social group?"
+      },
+      "options": [
+        { "mr": "कलकत्त्याचे व्यापारी, सावकार आणि मध्यस्थ (अनुपस्थित जमीनदार - Absentee Landlords)", "en": "Calcutta merchants, money-lenders, and agents (Absentee Landlords)" },
+        { "mr": "मूळ शेती कसणारे स्थानिक शेतमजूर", "en": "Local cultivating peasant agricultural laborers" },
+        { "mr": "ब्रिटिश लष्करातील निवृत्त अधिकारी", "en": "Retired European military officers" },
+        { "mr": "मुघल दरबारातील जुने उमराव", "en": "Traditional nobility of the Mughal court" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "सूर्यास्त कायद्यामुळे पारंपरिक जुने जमीनदार उद्ध्वस्त झाले आणि त्यांच्या जमिनी लिलावात कलकत्त्यातील सट्टेबाज, सावकार आणि व्यापाऱ्यांनी विकत घेतल्या. हे लोक शहरात राहून एजंटांमार्फत भाडे वसूल करत, ज्याला 'अनुपस्थित जमीनदारशाही' (Absentee Landlordism) म्हटले गेले.",
+        "en": "The rigid Sunset Law wiped out traditional aristocrats whose estates were snapped up by urban Calcutta traders, banian bankers, and civil servants. These purchasers lived in cities and extracted rack-rents through chains of middlemen, giving rise to Absentee Landlordism."
+      }
+    },
+    {
+      "id": 15,
+      "question": {
+        "mr": "१७९९ मध्ये चौथ्या इंग्रज-म्हैसूर युद्धाच्या वेळी ईस्ट इंडिया कंपनीचे नेतृत्व खालीलपैकी कोणाकडे होते?",
+        "en": "Who held supreme civil and military direction as Governor-General during the Fourth Anglo-Mysore War in 1799?"
+      },
+      "options": [
+        { "mr": "लॉर्ड रिचर्ड वेलस्ली (लॉर्ड मॉर्निंग्टन)", "en": "Lord Richard Wellesley (Lord Mornington)" },
+        { "mr": "लॉर्ड कॉर्नवॉलिस", "en": "Lord Cornwallis" },
+        { "mr": "लॉर्ड वॉरन हेस्टिंग्स", "en": "Lord Warren Hastings" },
+        { "mr": "सर जॉन शोर", "en": "Sir John Shore" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१७९८ मध्ये भारतात आलेला लॉर्ड रिचर्ड वेलस्ली (लॉर्ड मॉर्निंग्टन) याने टिपू सुलतानवर फ्रेंच सैन्याशी संगनमत केल्याचा आरोप ठेवला आणि १७९९ मध्ये चौथ्या म्हैसूर युद्धाची घोषणा करून श्रीरंगपट्टणम काबीज केले.",
+        "en": "Lord Richard Wellesley (then Earl of Mornington) arrived in India in 1798. Determined to extinguish French influence, he directed the swift invasion of Mysore in 1799 that culminated in Tipu Sultan's fall."
+      }
+    },
+    {
+      "id": 16,
+      "question": {
+        "mr": "१८०० मध्ये स्थापन करण्यात आलेल्या फोर्ट विल्यम कॉलेजचे पहिले प्राचार्य (Provost) म्हणून कोणाची नियुक्ती झाली होती?",
+        "en": "Who was appointed as the first Provost of Fort William College established at Calcutta in 1800?"
+      },
+      "options": [
+        { "mr": "डेव्हिड ब्राउन (David Brown)", "en": "David Brown" },
+        { "mr": "विल्यम कॅरी (William Carey)", "en": "William Carey" },
+        { "mr": "जॉन गिलख्रिस्ट (John Gilchrist)", "en": "John Gilchrist" },
+        { "mr": "एच. टी. कोलब्रुक (H. T. Colebrooke)", "en": "H. T. Colebrooke" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "लॉर्ड वेलस्लीने फोर्ट विल्यम कॉलेज स्थापन केले तेव्हा रेव्हरंड डेव्हिड ब्राउन यांची प्राचार्य (Provost) म्हणून तर क्लॉडियस बुकॅनन यांची उप-प्राचार्य म्हणून नेमणूक केली. विल्यम कॅरी हे बंगाली व संस्कृतचे प्राध्यापक होते आणि जॉन गिलख्रिस्ट यांनी हिंदुस्तानी भाषा विभागाचे नेतृत्व केले.",
+        "en": "Rev. David Brown was named Provost and Claudius Buchanan Vice-Provost of Fort William College by Lord Wellesley in 1800. William Carey and John Gilchrist headed the Bengali/Sanskrit and Hindustani language faculties, respectively."
+      }
+    },
+    {
+      "id": 17,
+      "question": {
+        "mr": "१८०३ मध्ये दुसऱ्या इंग्रज-मराठा युद्धादरम्यान ओडिशा प्रांतात मराठ्यांचा पराभव करून ब्रिटिशांनी कोणत्या प्रसिद्ध मंदिराचा कारभार व महसूल आपल्या नियंत्रणात घेतला?",
+        "en": "During the Second Anglo-Maratha War in 1803, the British conquered coastal Orissa from the Bhonsles, acquiring control over which renowned pilgrimage center?"
+      },
+      "options": [
+        { "mr": "पुरी येथील जगन्नाथ मंदिर", "en": "Jagannath Temple at Puri" },
+        { "mr": "कोणार्कचे सूर्य मंदिर", "en": "Sun Temple at Konark" },
+        { "mr": "भुवनेश्वरचे लिंगराज मंदिर", "en": "Lingaraj Temple at Bhubaneswar" },
+        { "mr": "तिरुमला तिरुपती देवस्थान", "en": "Tirumala Tirupati Devasthanam" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "सप्टेंबर १८०३ मध्ये कर्नल हरकोर्टच्या सैन्याने कटक आणि पुरी जिंकून घेतली. ब्रिटिशांनी स्थानिक हिंदू जनतेचा पाठिंबा मिळवण्यासाठी पुरीच्या जगन्नाथ मंदिराची धार्मिक व्यवस्था अबाधित ठेवत यात्रेकरू कर (Pilgrim Tax) गोळा करण्याचे नियंत्रण स्वतःकडे घेतले.",
+        "en": "In September 1803, Colonel Harcourt occupied Cuttack and Puri. To avoid unrest, the Company protected the rituals of the Jagannath Temple at Puri while establishing strict administrative oversight and realizing pilgrim taxes."
+      }
+    },
+    {
+      "id": 18,
+      "question": {
+        "mr": "१८१७ मध्ये हिंदू आणि पाश्चात्य शिक्षणाचा समन्वय साधण्यासाठी राजा राममोहन रॉय आणि डेव्हिड हेअर यांच्या पुढाकाराने कलकत्ता येथे कोणत्या प्रसिद्ध महाविद्यालयाची स्थापना झाली?",
+        "en": "Which famous institution was established at Calcutta in 1817 through the joint initiatives of Raja Ram Mohan Roy and David Hare to promote secular and Western higher learning?"
+      },
+      "options": [
+        { "mr": "हिंदू कॉलेज (Hindu College)", "en": "Hindu College" },
+        { "mr": "वेदान्त कॉलेज (Vedanta College)", "en": "Vedanta College" },
+        { "mr": "संस्कृत कॉलेज (Sanskrit College)", "en": "Sanskrit College" },
+        { "mr": "स्कॉटिश चर्च कॉलेज (Scottish Church College)", "en": "Scottish Church College" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "२० जानेवारी १८१७ रोजी कलकत्ता येथे 'हिंदू कॉलेज'ची स्थापना झाली. यात डेव्हिड हेअर, राजा राममोहन रॉय आणि सर एडवर्ड हाईड ईस्ट यांचे मोठे योगदान होते. पुढे १८५५ मध्ये या संस्थेचे रूपांतर 'प्रेसिडेन्सी कॉलेज'मध्ये झाले.",
+        "en": "On 20 January 1817, Hindu College was opened in Calcutta by David Hare, Raja Ram Mohan Roy, and Chief Justice Sir Edward Hyde East to impart English, scientific, and humanist education. It was redesignated as Presidency College in 1855."
+      }
+    },
+    {
+      "id": 19,
+      "question": {
+        "mr": "१८१८ मध्ये पेशवाईच्या विलीनीकरणानंतर मुंबई सरकारने 'दक्षिणा प्राईझ कमिटी' (Dakshina Prize Committee) सुरू केली. पेशव्यांच्या काळातील 'दक्षिणा' निधीचा मूळ उद्देश काय होता?",
+        "en": "Following the fall of the Peshwai in 1818, Mountstuart Elphinstone reorganized the 'Dakshina' fund. What was the original purpose of the Dakshina fund under the Peshwas?"
+      },
+      "options": [
+        { "mr": "विद्वान ब्राह्मणांना दरवर्षी श्रावण महिन्यात धर्मशास्त्र व संस्कृत ज्ञानासाठी दिली जाणारी रोख देणगी", "en": "Annual monetary grants awarded to learned Brahmins in the month of Shravan for scholarship and Sanskrit studies" },
+        { "mr": "ब्रिटिश अधिकाऱ्यांच्या स्वागत समारंभासाठी राखीव निधी", "en": "Discretionary funds kept for state banquets and British receptions" },
+        { "mr": "मराठा तोफखान्यातील दारूगोळा खरेदीसाठी जमा केलेला कर", "en": "Special cess levied to purchase gunpowder for Maratha artillery" },
+        { "mr": "दक्षिण भारतातील मंदिरांना दिला जाणारा वार्षिक जिझिया कर", "en": "Annual pilgrim tax disbursed to temples across South India" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "पेशवे दरवर्षी श्रावण महिन्यात विद्वान पंडितांना पर्वती येथे लाखो रुपयांची दक्षिणा वाटत असत. १८१८ नंतर एल्फिन्स्टनने हा निधी बंद न करता हळूहळू त्याचे रूपांतर मराठी व इंग्रजी साहित्य, आधुनिक शिक्षण व अनुवादांना प्रोत्साहन देणाऱ्या 'दक्षिणा प्राईझ कमिटी'मध्ये केले.",
+        "en": "Under the Peshwas, the Dakshina was an annual royal patronage fund distributed to learned Brahmins at Parvati Hill. Elphinstone preserved the allocation but gradually redirected it towards vernacular schoolbooks, translations, and secular educational rewards."
+      }
+    },
+    {
+      "id": 20,
+      "question": {
+        "mr": "१८२४ मधील 'बराकपूरचा शिपाई उठाव' (Barrackpore Sepoy Mutiny) खालीलपैकी कोणत्या कारणामुळे झाला होता?",
+        "en": "What was the principal grievance that sparked the Barrackpore Sepoy Mutiny of November 1824?"
+      },
+      "options": [
+        { "mr": "४७ व्या बंगाल नेटिव्ह इन्फंट्रीच्या सैनिकांनी समुद्रावरून (काळेपाणी) म्यानमार (ब्रह्मदेश) येथे लढायला जाण्यास केलेला धार्मिक नकार", "en": "Religious refusal of the 47th Bengal Native Infantry sepoys to cross the sea ('Kala Pani') to fight in Burma" },
+        { "mr": "गाय आणि डुकराची चरबी लावलेली काडतुसे वापरण्याची केलेली सक्ती", "en": "Compulsion to bite cartridges greased with cow and pig fat" },
+        { "mr": "सती प्रथा बंदी कायद्याविरुद्ध शिपायांचा रोष", "en": "Outrage against legislation abolishing the practice of Sati" },
+        { "mr": "शिपायांचे निवृत्तिवेतन पूर्णपणे बंद करण्याचा लष्करी आदेश", "en": "General military orders abolishing soldier pensions" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "पहिल्या इंग्रज-ब्रह्मी युद्धाच्या वेळी ४७ व्या पायदळ तुकडीला जहाजाने ब्रह्मदेशात जाण्याचा हुकूम झाला. तत्कालीन हिंदू समजुतीनुसार समुद्रावरून प्रवास केल्यास (काळेपाणी) धर्मभ्रष्ट होतो अशी भावना होती. सैनिकांनी जाण्यास नकार दिल्याने ब्रिटिश तोफखान्याने शेकडो शिपायांना ठार केले आणि बिंदा तिवारी यांच्यासह प्रमुखांना फाशी दिली.",
+        "en": "In November 1824, the 47th Bengal Native Infantry at Barrackpore mutinied when ordered to board ships for Burma during the First Anglo-Burmese War, as crossing the sea violated caste norms ('Kala Pani'). The regiment was brutally shelled and disbanded."
+      }
+    },
+    {
+      "id": 21,
+      "question": {
+        "mr": "१८३१ मध्ये गैरकारभाराचे कारण पुढे करून लॉर्ड विल्यम बेंटिंकने कोणत्या दक्षिणेकडील संस्थानाचे प्रशासन थेट ब्रिटिश नियंत्रणाखाली आणले?",
+        "en": "On grounds of administrative breakdown and internal rebellion, the direct governance of which southern princely state was taken over by Lord William Bentinck in 1831?"
+      },
+      "options": [
+        { "mr": "म्हैसूर (Mysore)", "en": "Mysore" },
+        { "mr": "त्रावणकोर (Travancore)", "en": "Travancore" },
+        { "mr": "कुर्ग (Coorg)", "en": "Coorg" },
+        { "mr": "हैदराबाद (Hyderabad)", "en": "Hyderabad" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१८३१ मध्ये म्हैसूरचा राजा कृष्णराज ओडियार तिसरा यांच्या राजवटीविरुद्ध नगर प्रांतात शेतकरी बंड झाले. बेंटिंकने गैरकारभाराचा ठपका ठेवून म्हैसूरचे प्रशासन ब्रिटिशांच्या प्रत्यक्ष नियंत्रणाखाली घेतले (हे प्रशासन पुढे १८८१ मध्ये लॉर्ड रिपनने पुन्हा ओडियार घराण्याला परत केले).",
+        "en": "In 1831, citing administrative collapse and the Nagar peasant rebellion, Lord William Bentinck superseded the ruler Krishnaraja Wodeyar III and placed Mysore under direct British Chief Commissionership, which lasted until the rendition of Mysore by Lord Ripon in 1881."
+      }
+    },
+    {
+      "id": 22,
+      "question": {
+        "mr": "१८३३ च्या सनदी कायद्याद्वारे (Charter Act of 1833) भारतासाठी स्थापन करण्यात आलेल्या केंद्रीय विधिमंडळात (कौन्सिल) समाविष्ट करण्यात आलेल्या चौथ्या सदस्याचे स्वरूप काय होते?",
+        "en": "What was the nature and status of the fourth member added to the Governor-General's Council under the Charter Act of 1833?"
+      },
+      "options": [
+        { "mr": "तो केवळ कायदेनिर्मितीच्या बैठकांपुरता उपस्थित राहू शकणारा पूर्ण मतदानाचा अधिकार नसलेला 'विधी सदस्य' (Law Member) होता.", "en": "A Law Member permitted to sit and vote strictly during legislative meetings without full executive voting status." },
+        { "mr": "तो भारतीय संस्थानांचे प्रतिनिधित्व करणारा पहिला अनिवासी भारतीय सदस्य होता.", "en": "The first non-resident Indian member representing princely territories." },
+        { "mr": "तो लष्कराचा पूर्णवेळ नौदल प्रमुख सदस्य होता.", "en": "A full-time member serving exclusively as Admiral of naval forces." },
+        { "mr": "तो भारतीय कर महसुलावर थेट स्वाक्षरी करणारा ब्रिटनच्या संसदेचा प्रतिनिधी होता.", "en": "A representative of the British Parliament with direct countersigning authority over taxation." }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१८३३ च्या कायद्याने गव्हर्नर-जनरलच्या कौन्सिलमध्ये चौथ्या सदस्याची 'विधी सदस्य' (Law Member) म्हणून भर घातली. त्याला केवळ कायदे बनवताना बैठकीला हजर राहण्याचा अधिकार होता, कार्यकारी निर्णय प्रक्रियेत पूर्ण सदस्यत्व नव्हते. लॉर्ड मेकॉल हा पहिला विधी सदस्य बनला.",
+        "en": "The Charter Act of 1833 inducted a fourth member as a 'Law Member' (first held by Lord Macaulay), qualified to attend meetings and vote exclusively on legislative business, but denied full executive voting privileges until regularized in 1853."
+      }
+    },
+    {
+      "id": 23,
+      "question": {
+        "mr": "१८४५-४६ च्या पहिल्या इंग्रज-शीख युद्धाच्या वेळी ब्रिटिश ईस्ट इंडिया कंपनीचे गव्हर्नर-जनरल कोण होते?",
+        "en": "Who was the Governor-General of India during the First Anglo-Sikh War (1845–1846)?"
+      },
+      "options": [
+        { "mr": "लॉर्ड हार्डिंग्ज पहिला (Lord Hardinge I)", "en": "Lord Hardinge I" },
+        { "mr": "लॉर्ड डलहौसी (Lord Dalhousie)", "en": "Lord Dalhousie" },
+        { "mr": "लॉर्ड एलनबरो (Lord Ellenborough)", "en": "Lord Ellenborough" },
+        { "mr": "लॉर्ड ऑकलंड (Lord Auckland)", "en": "Lord Auckland" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "लॉर्ड हार्डिंग्ज पहिला (१८४४-१८४८) हा पहिल्या शीख युद्धाच्या वेळी गव्हर्नर-जनरल होता. त्याने मुदकी, फिरोजशाह, अलीवाल आणि सोब्राऑन या लढायांनंतर शिखांचा पराभव करून लाहोरचा तह लादला.",
+        "en": "Lord Hardinge I was the Governor-General during the First Anglo-Sikh War (1845–1846). He accompanied the Commander-in-Chief Sir Hugh Gough in the field and dictated the Treaty of Lahore in March 1846."
+      }
+    },
+    {
+      "id": 24,
+      "question": {
+        "mr": "लॉर्ड डलहौसीने १८४८ मध्ये लागू केलेल्या दत्तक वारसा नामंजूर धोरणांतर्गत (Doctrine of Lapse) सातारा संस्थान खालसा करताना सातारचे तत्कालीन छत्रपती कोण होते ज्यांचे निधन झाले होते?",
+        "en": "When Lord Dalhousie annexed Satara in 1848 under the Doctrine of Lapse, whose death without natural male issue triggered the annexation?"
+      },
+      "options": [
+        { "mr": "शहाजी राजे (अप्पासाहेब भोसले)", "en": "Shahaji Raje (Appa Sahib Bhonsle)" },
+        { "mr": "प्रतापसिंह भोसले", "en": "Pratapsingh Bhonsle" },
+        { "mr": "शिवाजी चौथे", "en": "Shivaji IV" },
+        { "mr": "राजाराम दुसरे", "en": "Rajaram II" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१८४८ मध्ये सातारा संस्थानचे राजे शहाजी (ज्यांना अप्पासाहेब भोसले म्हटले जाई) यांचे नैसर्गिक पुत्राशिवाय निधन झाले. त्यांनी मृत्यूशय्येवर दत्तक घेतलेल्या मुलाला डलहौसीने नामंजूर करून सातारा हे पहिले संस्थान ब्रिटिश साम्राज्यात विलीन केले.",
+        "en": "In 1848, Raja Shahaji of Satara (popularly known as Appa Sahib) died without biological male heirs. The adoption of a son made shortly before his demise was disallowed by Lord Dalhousie, making Satara the first state absorbed under the Doctrine of Lapse."
+      }
+    },
+    {
+      "id": 25,
+      "question": {
+        "mr": "१८५४ मध्ये सुरू करण्यात आलेल्या आधुनिक रेल्वे व्यवस्थेबाबत डलहौसीच्या आर्थिक धोरणावर टीका करताना कोणत्या प्रसिद्ध विचारवंताने म्हटले होते की, 'भारतात रेल्वे सुरू करणे म्हणजे दुसऱ्याच्या पत्नीला स्वतःच्या दागिन्यांनी सजवण्यासारखे आहे'?",
+        "en": "Critiquing the exorbitant colonial costs of British-financed railways under Dalhousie's policies, which nationalist leader famously observed that building railways in India was like 'decorating another man's wife with one's own jewelry'?"
+      },
+      "options": [
+        { "mr": "दिनशा वाच्छा (Dinshaw Wacha)", "en": "Dinshaw Wacha" },
+        { "mr": "दादाभाई नौरोजी (Dadabhai Naoroji)", "en": "Dadabhai Naoroji" },
+        { "mr": "बाळ गंगाधर टिळक (Bal Gangadhar Tilak)", "en": "Bal Gangadhar Tilak" },
+        { "mr": "गोपाळ कृष्ण गोखले (Gopal Krishna Gokhale)", "en": "Gopal Krishna Gokhale" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "दिनशा वाच्छा (आणि बाळ गंगाधर टिळक यांच्या लेखांतूनही उद्धृत) यांनी ब्रिटिश भांडवलदारांना गॅरंटी सिस्टीममधून भरमसाठ नफा देऊन भारतावर लादलेल्या रेल्वे खर्चाची तुलना 'दुसऱ्याच्या बायकोला स्वतःच्या पैशाने सजवणे' अशी केली होती, कारण खर्च भारतीय तिजोरीतून होत होता आणि नफा ब्रिटिशांना मिळत होता.",
+        "en": "Dinshaw Edulji Wacha (and echoed by Lokmanya Tilak in Kesari) scathingly criticized the fiscal drain of the guaranteed railway contract, comparing the subsidized imperial infrastructure to 'decorating another's wife with one's own jewels'."
+      }
+    }
+  ]
+}

@@ -1,0 +1,464 @@
+{
+  "testId": "p-hist-01-t5",
+  "title": {
+    "mr": "आधुनिक भारताचा इतिहास — सराव 5",
+    "en": "Modern Indian History — Practice Test 5"
+  },
+  "durationMinutes": 20,
+  "marksPerQuestion": 1,
+  "negativeMarking": 0.25,
+  "totalMarks": 25,
+  "difficulty": "मध्यम ते काठिण्य",
+  "questions": [
+    {
+      "id": 1,
+      "question": {
+        "mr": "१६६७ मध्ये सुरत येथे फ्रेंचांची पहिली वखार स्थापन केल्यानंतर, १६६९ मध्ये त्यांनी पूर्व किनारपट्टीवर आपली दुसरी वखार खालीलपैकी कोणत्या ठिकाणी स्थापन केली?",
+        "en": "Following the establishment of their first factory at Surat in 1667, at which of the following places on the east coast did the French set up their second factory in 1669?"
+      },
+      "options": [
+        { "mr": "मसुलीपट्टणम", "en": "Masulipatnam" },
+        { "mr": "पाँडिचेरी", "en": "Pondicherry" },
+        { "mr": "चंद्रनगर", "en": "Chandernagore" },
+        { "mr": "करैकाल", "en": "Karaikal" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "फ्रँकोइस कॅरॉनच्या नेतृत्वाखाली फ्रेंचांनी १६६८ मध्ये सुरत येथे पहिली वखार सुरू केली. त्यानंतर लगेचच १६६९ मध्ये मर्करा (Marcara) या पर्शियन सहकाऱ्याने गोलकोंडाच्या सुलतानाकडून परवानगी मिळवून मसुलीपट्टणम येथे फ्रेंचांची पूर्व किनारपट्टीवरील पहिली व भारतातील दुसरी वखार स्थापन केली.",
+        "en": "In 1669, a Persian named Marcara, acting on behalf of the French company, obtained a patent from the Sultan of Golconda and founded the second French factory at Masulipatnam on the Coromandel coast."
+      }
+    },
+    {
+      "id": 2,
+      "question": {
+        "mr": "१६७३ मध्ये फ्रँकोइस मार्टिन याने वलीकोंडापुरमच्या मुस्लिम सुभेदाराकडून (शेर खान लोदी) जमीन मिळवून कोणत्या महत्त्वाच्या फ्रेंच वसाहतीची पायाभरणी केली?",
+        "en": "In 1673, Francois Martin obtained a village grant from the Muslim governor of Valikondapuram (Sher Khan Lodi) and laid the foundation of which crucial French settlement?"
+      },
+      "options": [
+        { "mr": "पाँडिचेरी (Pondicherry)", "en": "Pondicherry" },
+        { "mr": "माहे (Mahe)", "en": "Mahe" },
+        { "mr": "चंद्रनगर (Chandernagore)", "en": "Chandernagore" },
+        { "mr": "यानम (Yanam)", "en": "Yanam" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१६७३ मध्ये फ्रँकोइस मार्टिन याने शेर खान लोदीकडून एक खेडे मिळवले, ज्याचे रूपांतर पुढे पाँडिचेरी (पुदुच्चेरी) या भारतातील मुख्य फ्रेंच केंद्रात झाले. फ्रँकोइस मार्टिन हा पाँडिचेरीचा पहिला गव्हर्नर बनला आणि त्यानेच १६९० च्या दशकात 'फोर्ट लुई' (Fort Louis) बांधला.",
+        "en": "In 1673, Francois Martin obtained a site from Sher Khan Lodi (Governor of Valikondapuram) and founded Pondicherry, which grew into the principal French stronghold in India under Martin as its first Director General."
+      }
+    },
+    {
+      "id": 3,
+      "question": {
+        "mr": "१७४१ मधील प्रसिद्ध 'कुलाचेलची लढाई' (Battle of Colachel) खालीलपैकी कोणामध्ये लढली गेली?",
+        "en": "Between whom was the famous Battle of Colachel fought in 1741?"
+      },
+      "options": [
+        { "mr": "त्रावणकोरचे महाराजा मार्तंड वर्मा आणि डच ईस्ट इंडिया कंपनी", "en": "Maharaja Marthanda Varma of Travancore and the Dutch East India Company" },
+        { "mr": "झामोरीन (कालिकत) आणि पोर्तुगीज", "en": "Zamorin of Calicut and the Portuguese" },
+        { "mr": "हैदर अली आणि ब्रिटिश", "en": "Hyder Ali and the British" },
+        { "mr": "फ्रेंच आणि कर्नाटकचा नवाब", "en": "The French and the Nawab of Carnatic" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१० ऑगस्ट १७४१ रोजी त्रावणकोरचे पराक्रमी राजे मार्तंड वर्मा यांनी कुलाचेलच्या लढाईत डच आरमाराचा दारुण पराभव केला. आशियाई सत्तेने युरोपीय नौदल सत्तेचा असा विनाशकारी पराभव करण्याचे हे पहिलेच ऐतिहासिक उदाहरण होते, ज्यामुळे मलबार किनाऱ्यावरून डच वर्चस्व संपुष्टात आले.",
+        "en": "On 10 August 1741, the forces of Travancore under Maharaja Marthanda Varma routed the naval forces of the Dutch East India Company at the Battle of Colachel, permanently ending Dutch political and commercial dominance along the Malabar Coast."
+      }
+    },
+    {
+      "id": 4,
+      "question": {
+        "mr": "१६९० च्या दशकात सुलतानाच्या परवानगीने ईस्ट इंडिया कंपनीने कलकत्ता येथे उभारलेल्या किल्ल्याला इंग्लंडच्या तत्कालीन राजाच्या सन्मानार्थ काय नाव देण्यात आले?",
+        "en": "What name was given to the fortified factory erected by the East India Company at Calcutta in the 1690s in honor of the reigning King of England?"
+      },
+      "options": [
+        { "mr": "फोर्ट विल्यम (Fort William)", "en": "Fort William" },
+        { "mr": "फोर्ट सेंट जॉर्ज (Fort St. George)", "en": "Fort St. George" },
+        { "mr": "फोर्ट सेंट डेव्हिड (Fort St. David)", "en": "Fort St. David" },
+        { "mr": "फोर्ट एडवर्ड (Fort Edward)", "en": "Fort Edward" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१६९६ मध्ये शोभा सिंगच्या बंडानंतर कंपनीने कलकत्त्याच्या वखारीभोवती तटबंदी उभारण्यास सुरुवात केली. १७०० मध्ये हा किल्ला पूर्ण झाला आणि त्याचे नामकरण इंग्लंडचा राजा विल्यम तिसरा याच्या सन्मानार्थ 'फोर्ट विल्यम' करण्यात आले. सर चार्ल्स आयर हे त्याचे पहिले अध्यक्ष बनले.",
+        "en": "Following the rebellion of Shobha Singh in 1696, the English fortified their factory at Calcutta, which was named Fort William in 1700 in honor of King William III of England, with Sir Charles Eyre as its first President."
+      }
+    },
+    {
+      "id": 5,
+      "question": {
+        "mr": "१७६० मध्ये ईस्ट इंडिया कंपनीने मीर जाफरला बाजूला सारून मीर कासीमला बंगालचा नवाब बनवण्याच्या मोबदल्यात खालीलपैकी कोणत्या तीन जिल्ह्यांचे महसूल हक्क मिळवले होते?",
+        "en": "In 1760, in exchange for installing Mir Qasim as the Nawab of Bengal in place of Mir Jafar, the East India Company obtained the revenue rights of which three districts?"
+      },
+      "options": [
+        { "mr": "बर्दवान, मिदनापूर आणि चितगाव", "en": "Burdwan, Midnapore, and Chittagong" },
+        { "mr": "२४ परगणा, ढाका आणि दिनाजपूर", "en": "24 Parganas, Dacca, and Dinajpur" },
+        { "mr": "मुर्शिदाबाद, पाटणा आणि पूर्णिया", "en": "Murshidabad, Patna, and Purnea" },
+        { "mr": "कटक, संबळपूर आणि बालासोर", "en": "Cuttack, Sambalpur, and Balasore" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "२७ सप्टेंबर १७६० रोजी व्हॅन्सिटार्ट आणि मीर कासीम यांच्यात झालेल्या गुप्त करारानुसार, कंपनीला सैन्य खर्चासाठी बर्दवान, मिदनापूर आणि चितगाव हे तीन सधन जिल्हे मिळाले. त्यानंतर लगेचच इंग्रजांनी मीर जाफरवर दबाव आणून मीर कासीमला नवाब केले.",
+        "en": "Under the treaty negotiated by Governor Vansittart on 27 September 1760, Mir Qasim surrendered the wealthy districts of Burdwan, Midnapore, and Chittagong to the Company to finance its military establishment in return for his elevation to the Nawabi."
+      }
+    },
+    {
+      "id": 6,
+      "question": {
+        "mr": "मीर कासीम आणि ब्रिटिश ईस्ट इंडिया कंपनी यांच्यातील संघर्षाचे मुख्य मूळ कारण खालीलपैकी कोणते होते?",
+        "en": "Which of the following was the primary root cause of conflict between Mir Qasim and the British East India Company?"
+      },
+      "options": [
+        { "mr": "कंपनीच्या नोकरांकडून 'दस्तक'चा (Dastak) केला जाणारा गैरवापर आणि अंतर्गत खाजगी व्यापारातील जकातचोरी", "en": "Misuse of the trade permits ('Dastak') by Company servants for duty-free private inland trade" },
+        { "mr": "मीर कासीमने मुघल सम्राटाला दिलेली लष्करी मदत", "en": "Military assistance extended by Mir Qasim to the Mughal Emperor" },
+        { "mr": "मीर कासीमने ब्रिटिशांच्या चहा व्यापारावर १००% आयात कर लादणे", "en": "Mir Qasim imposing 100% tariffs exclusively on British tea imports" },
+        { "mr": "कंपनीने नवाबाच्या दरबारात ख्रिश्चन मिशनऱ्यांना सक्तीने पाठवणे", "en": "The Company forcibly inducting Christian missionaries into the Nawab's court" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१७१७ च्या फर्मानानुसार मिळालेला 'दस्तक' (जकातमुक्त पावती) हा केवळ कंपनीच्या परदेशी व्यापारासाठी होता. मात्र कंपनीचे भ्रष्ट अधिकारी स्वतःच्या खाजगी देशी व्यापारासाठी दस्तकचा दुरुपयोग करत आणि भारतीय व्यापाऱ्यांनाही विकत, ज्यामुळे नवाबाचा महसूल बुडत होता. जेव्हा मीर कासीमने भारतीय व्यापाऱ्यांवरीलही सर्व जकात रद्द करून स्पर्धा समान केली, तेव्हा चिडून इंग्रजांनी युद्ध पुकारले.",
+        "en": "The trade permit (Dastak) was meant solely for Company trade, but British private servants misused it to evade transit duties on domestic trade. To curb this abuse and create parity, Mir Qasim abolished all inland duties for native merchants, which precipitated the military conflict."
+      }
+    },
+    {
+      "id": 7,
+      "question": {
+        "mr": "१७७३ च्या रेग्युलेटिंग ॲक्टनुसार स्थापन झालेल्या गव्हर्नर-जनरलच्या चार सदस्यीय कौन्सिलमध्ये खालीलपैकी कोणत्या सदस्याचा समावेश नव्हता?",
+        "en": "Who among the following was NOT among the four councilors appointed to the Governor-General's Executive Council under the Regulating Act of 1773?"
+      },
+      "options": [
+        { "mr": "चार्ल्स मेटकॉफ", "en": "Charles Metcalfe" },
+        { "mr": "फिलिप फ्रान्सिस", "en": "Philip Francis" },
+        { "mr": "जनरल क्लेव्हरिंग", "en": "General Clavering" },
+        { "mr": "जॉर्ज मॉन्सन", "en": "George Monson" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१७७३ च्या कायद्यानुसार वॉरन हेस्टिंग्सच्या मदतीसाठी चार सदस्य नेमण्यात आले होते: फिलिप फ्रान्सिस, जनरल जॉन क्लेव्हरिंग, कर्नल जॉर्ज मॉन्सन आणि रिचर्ड बारवेल. चार्ल्स मेटकॉफ हे बरेच नंतर (१८३५ मध्ये) गव्हर्नर-जनरल बनले होते.",
+        "en": "The Regulating Act of 1773 named four councilors to assist Governor-General Warren Hastings: Philip Francis, General John Clavering, Colonel George Monson, and Richard Barwell. Charles Metcalfe belongs to a much later period (1835)."
+      }
+    },
+    {
+      "id": 8,
+      "question": {
+        "mr": "१७७५ मध्ये वॉरन हेस्टिंग्सवर भ्रष्टाचाराचे आरोप केल्यामुळे खोट्या कागदपत्रांच्या (फोर्जरी) आरोपाखाली कलकत्ता सुप्रीम कोर्टाकडून वादग्रस्तरीत्या फाशी देण्यात आलेली व्यक्ती कोण होती?",
+        "en": "Who was controversially tried and executed for forgery by the Calcutta Supreme Court in 1775 after bringing charges of corruption against Warren Hastings?"
+      },
+      "options": [
+        { "mr": "महाराजा नंदकुमार", "en": "Maharaja Nandkumar" },
+        { "mr": "राजा चैतसिंग", "en": "Raja Chait Singh" },
+        { "mr": "मुहम्मद रझा खान", "en": "Muhammad Reza Khan" },
+        { "mr": "राजा शिताब राय", "en": "Raja Shitab Rai" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "बंगालचे माजी दिवाण नंदकुमार यांनी वॉरन हेस्टिंग्सवर लाच घेतल्याचा अधिकृत आरोप कौन्सिलपुढे केला. हेस्टिंग्सने आपले मित्र आणि मुख्य न्यायाधीश सर एलिझा इम्पे यांच्या मदतीने नंदकुमार यांच्यावर जुन्या बनावट स्वाक्षरीचा खटला चालवून ५ ऑगस्ट १७७५ रोजी फाशी दिली. इतिहासकारांनी याला 'न्यायालयीन हत्या' (Judicial Murder) म्हटले आहे.",
+        "en": "Maharaja Nandkumar accused Warren Hastings of accepting heavy bribes. Hastings and Chief Justice Sir Elijah Impey prosecuted him under English law for forgery, leading to his execution in August 1775, historically denounced as a 'judicial murder'."
+      }
+    },
+    {
+      "id": 9,
+      "question": {
+        "mr": "१७७६ च्या 'पुरंदरच्या तहाच्या' (Treaty of Purandar) संदर्भात खालील विधाने विचारात घ्या:\nअ. हा तह कलकत्ता कौन्सिलचा प्रतिनिधी कर्नल अप्टन आणि पुण्याचे कारभारी नाना फडणवीस यांच्यात झाला.\nब. या तहाने मुंबई सरकारने राघोबाशी केलेला १७७५ चा 'सुरतचा तह' अमान्य करण्यात आला.\nवरीलपैकी कोणते/ती विधान/ने बरोबर आहेत?",
+        "en": "Consider the following statements regarding the Treaty of Purandar (1776):\na. It was concluded between Colonel Upton (representing the Calcutta Council) and Nana Phadnavis representing the Peshwa administration.\nb. It annulled the Treaty of Surat (1775) contracted earlier by the Bombay Council with Raghoba.\nWhich of the statements given above is/are correct?"
+      },
+      "options": [
+        { "mr": "फक्त अ", "en": "Only a" },
+        { "mr": "फक्त ब", "en": "Only b" },
+        { "mr": "अ आणि ब दोन्ही", "en": "Both a and b" },
+        { "mr": "दोन्ही नाही", "en": "Neither a nor b" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "दोन्ही विधाने अचूक आहेत. वॉरन हेस्टिंग्सच्या नेतृत्वाखालील कलकत्ता कौन्सिलने मुंबई सरकारच्या सुरतच्या तहाला अनधिकृत मानले आणि कर्नल अप्टनला पाठवून १ मार्च १७७६ रोजी पुरंदरचा तह केला. यात सुरतचा तह रद्दबातल ठरवून राघोबाची सैनिकी मदत मागे घेण्याचे ठरले; मात्र साष्टी ब्रिटिशांकडेच राहिली.",
+        "en": "Both statements are correct. The Calcutta Government condemned the Bombay Council's Treaty of Surat and sent Colonel Upton to sign the Treaty of Purandar (1 March 1776) with Nana Phadnavis, repudiating Raghoba's cause while retaining Salsette."
+      }
+    },
+    {
+      "id": 10,
+      "question": {
+        "mr": "१७८४ च्या 'मंगलोरच्या तहाने' (Treaty of Mangalore) कोणत्या युद्धाचा शेवट झाला?",
+        "en": "Which war came to an end with the Treaty of Mangalore in 1784?"
+      },
+      "options": [
+        { "mr": "दुसरे इंग्रज-म्हैसूर युद्ध", "en": "Second Anglo-Mysore War" },
+        { "mr": "पहिले इंग्रज-म्हैसूर युद्ध", "en": "First Anglo-Mysore War" },
+        { "mr": "तिसरे इंग्रज-म्हैसूर युद्ध", "en": "Third Anglo-Mysore War" },
+        { "mr": "पहिले इंग्रज-मराठा युद्ध", "en": "First Anglo-Maratha War" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१७८० ते १७८४ दरम्यान चाललेले दुसरे इंग्रज-म्हैसूर युद्ध ११ मार्च १७८४ रोजी टिपू सुलतान आणि मद्रासचा गव्हर्नर लॉर्ड मॅकार्टनी यांच्यात झालेल्या मंगलोरच्या तहाने समाप्त झाले. दोन्ही बाजूंनी एकमेकांचे जिंकलेले प्रदेश व युद्धकैदी परत केले.",
+        "en": "The Second Anglo-Mysore War (1780–1784) ended on 11 March 1784 with the Treaty of Mangalore, negotiated by Lord Macartney and Tipu Sultan on the basis of mutual restoration of conquered territories and prisoners."
+      }
+    },
+    {
+      "id": 11,
+      "question": {
+        "mr": "१७८६ मध्ये लॉर्ड कॉर्नवॉलिसने भारताचा गव्हर्नर-जनरल म्हणून पदभार स्वीकारण्यापूर्वी ब्रिटिश संसदेकडे कोणत्या दोन अटींची मागणी केली होती?\nअ. त्याला गव्हर्नर-जनरल पदासोबतच कमांडर-इन-चीफ (सरसेनापती) पदाचेही अधिकार असावेत.\nब. विशेष प्रसंगी कौन्सिलचा बहुमताचा निर्णय धुडकावून स्वतःचा निर्णय लागू करण्याचा नकाराधिकार (Veto Power) असावा.\nयोग्य पर्याय निवडा:",
+        "en": "Before accepting the Governor-Generalship in 1786, what two specific conditions did Lord Cornwallis demand from the British Parliament?\na. He must unite in himself the dual offices of Governor-General and Commander-in-Chief.\nb. He must be invested with veto power to override the majority decision of his Council in extraordinary circumstances.\nChoose the correct option:"
+      },
+      "options": [
+        { "mr": "फक्त अ", "en": "Only a" },
+        { "mr": "फक्त ब", "en": "Only b" },
+        { "mr": "अ आणि ब दोन्ही", "en": "Both a and b" },
+        { "mr": "दोन्ही नाही", "en": "Neither a nor b" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "दोन्ही विधाने बरोबर आहेत. लॉर्ड कॉर्नवॉलिसने या दोन्ही अटी मान्य झाल्यावरच भारतात येण्याचे मान्य केले. ब्रिटिश संसदेने त्याच्यासाठी १७८६ चा सुधारणा कायदा (Act of 1786) विशेषत्वाने संमत करून त्याला सरसेनापतीचे पद आणि कौन्सिलच्या निर्णयांना ओव्हररूल करण्याचा अधिकार दिला.",
+        "en": "Both statements are correct. Cornwallis insisted on these exact two powers before accepting office, leading Parliament to enact the amending Act of 1786, granting him overriding powers over his Council and combining the office of Commander-in-Chief."
+      }
+    },
+    {
+      "id": 12,
+      "question": {
+        "mr": "लॉर्ड कॉर्नवॉलिसने १७९३ मध्ये महसूल गोळा करण्यासाठी कोणती सर्वोच्च प्रशासकीय संस्था कलकत्ता येथे कार्यरत ठेवली?",
+        "en": "Which apex administrative body was organized in Calcutta by Lord Cornwallis to oversee revenue assessment and administration?"
+      },
+      "options": [
+        { "mr": "बोर्ड ऑफ रेव्हेन्यू (Board of Revenue)", "en": "Board of Revenue" },
+        { "mr": "रेव्हेन्यू कमिटी (Revenue Committee)", "en": "Revenue Committee" },
+        { "mr": "सदर जमाबंदी मंडळ (Sadar Jamabandi Board)", "en": "Sadar Jamabandi Board" },
+        { "mr": "लँड कंट्रोल कौन्सिल (Land Control Council)", "en": "Land Control Council" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१७८६ मध्ये जॉन शोर यांच्या अध्यक्षतेखाली स्थापन झालेल्या 'बोर्ड ऑफ रेव्हेन्यू'ची पुनर्रचना कॉर्नवॉलिसने केली. या बोर्डाकडे सर्व जिल्हाधिकाऱ्यांच्या महसूल कार्यावर थेट देखरेख व नियंत्रण ठेवण्याचे सर्वोच्च अधिकार देण्यात आले.",
+        "en": "Lord Cornwallis consolidated and restructured the Board of Revenue at Calcutta, which functioned as the supreme administrative authority supervising district collectors in all matters related to land settlements and tax realization."
+      }
+    },
+    {
+      "id": 13,
+      "question": {
+        "mr": "१७९३ मध्ये लॉर्ड कॉर्नवॉलिसने नागरी खटल्यांसाठी पायथ्यापासून शिखरापर्यंत न्यायालयांची उतरंड तयार केली. त्यामध्ये सर्वात खालच्या पातळीवरील न्यायालय कोणते होते?",
+        "en": "In 1793, Lord Cornwallis organized a hierarchical tier of civil courts. Which of the following stood at the bottom of this civil judicial hierarchy?"
+      },
+      "options": [
+        { "mr": "मुन्सिफ न्यायालय (Munsif's Court)", "en": "Munsif's Court" },
+        { "mr": "रजिस्ट्रार न्यायालय (Registrar's Court)", "en": "Registrar's Court" },
+        { "mr": "जिल्हा दिवाणी न्यायालय (Zilla Adalat)", "en": "District Diwani Adalat" },
+        { "mr": "प्रांतीय सर्किट न्यायालय (Provincial Circuit Court)", "en": "Provincial Circuit Court" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "कॉर्नवॉलिस न्यायिक व्यवस्थेत उतरंड खालीलप्रमाणे होती: १. मुन्सिफ न्यायालय (भारतीय न्यायाधीशांखाली - ₹५० पर्यंतचे खटले), २. रजिस्ट्रार न्यायालय (युरोपीय न्यायाधीशांखाली - ₹२०० पर्यंत), ३. जिल्हा/शहर दिवाणी न्यायालय (जिल्हा न्यायाधीशांखाली), ४. प्रांतीय अपील न्यायालये, आणि सर्वात वर ५. सदर दिवाणी अदालत (कलकत्ता).",
+        "en": "In the Cornwallis judicial hierarchy, the lowest civil court was the Munsif's Court presided over by native officers (competent up to ₹50), followed by the Registrar's Court, District Adalat, Provincial Courts of Appeal, and Sadar Diwani Adalat."
+      }
+    },
+    {
+      "id": 14,
+      "question": {
+        "mr": "१७९९ मध्ये चौथ्या इंग्रज-म्हैसूर युद्धात टिपू सुलतानच्या पराभवानंतर ब्रिटिशांनी म्हैसूरचे मूळ गादीवर कोणाची बालराजा म्हणून प्रतिष्ठापना केली?",
+        "en": "Following the fall of Tipu Sultan in the Fourth Anglo-Mysore War in 1799, whom did the British install on the restored throne of Mysore?"
+      },
+      "options": [
+        { "mr": "कृष्णराज ओडियार तिसरा (Krishnaraja Wodeyar III)", "en": "Krishnaraja Wodeyar III" },
+        { "mr": "चामराज ओडियार (Chamaraja Wodeyar)", "en": "Chamaraja Wodeyar" },
+        { "mr": "फतेह हैदर (टिपूचा मुलगा)", "en": "Fateh Hyder (Tipu's Son)" },
+        { "mr": "नरसिंह ओडियार (Narasimha Wodeyar)", "en": "Narasimha Wodeyar" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "टिपूचा वध झाल्यानंतर ब्रिटिशांनी म्हैसूरचा बराचसा प्रदेश वाटून घेतला आणि उर्वरित लहान म्हैसूर राज्य पूर्वीच्या हिंदू ओडियार राजघराण्यातील अवघ्या पाच वर्षांच्या कृष्णराज ओडियार तिसरा या बालराजाच्या स्वाधीन करून त्याच्यावर तैनाती फौज लादली आणि दिवाण पूर्णय्या यांची कारभारी म्हणून नेमणूक केली.",
+        "en": "After Tipu's defeat in 1799, the British restored a truncated Mysore kingdom to the young boy Krishnaraja Wodeyar III of the displaced Hindu Wodeyar dynasty under a Subsidiary Alliance, with Purnaiya as prime minister/regent."
+      }
+    },
+    {
+      "id": 15,
+      "question": {
+        "mr": "१८०३ मध्ये दुसऱ्या इंग्रज-मराठा युद्धादरम्यान आर्थर वेलस्लीने मराठ्यांच्या संयुक्त सेनेचा पराभव केलेली 'असईची लढाई' (Battle of Assaye) महाराष्ट्रातील कोणत्या जिल्ह्यात घडली होती?",
+        "en": "In which present-day district of Maharashtra was the famous Battle of Assaye fought in September 1803, where Arthur Wellesley defeated the joint Maratha armies?"
+      },
+      "options": [
+        { "mr": "जालना", "en": "Jalna" },
+        { "mr": "छत्रपती संभाजीनगर (औरंगाबाद)", "en": "Chhatrapati Sambhajinagar (Aurangabad)" },
+        { "mr": "अहमदनगर", "en": "Ahmednagar" },
+        { "mr": "बुलढाणा", "en": "Buldhana" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "२३ सप्टेंबर १८०३ रोजी आर्थर वेलस्ली (ड्यूक ऑफ वेलिंग्टन) याने दौलतराव शिंदे आणि रघूजी भोसले यांच्या संयुक्त फौजेचा असई येथे पराभव केला. असई हे गाव सध्याच्या जालना जिल्ह्यातील भोकरदन तालुक्यात येते. ही वेलस्लीच्या कारकिर्दीतील सर्वांत खडतर आणि महत्त्वाची लढाई मानली जाते.",
+        "en": "The Battle of Assaye was fought on 23 September 1803 in modern-day Jalna district (Bhokardan taluka), Maharashtra, where Major-General Arthur Wellesley achieved a hard-fought decisive victory against the combined armies of Scindia and Bhonsle."
+      }
+    },
+    {
+      "id": 16,
+      "question": {
+        "mr": "१८०५ मध्ये दुसऱ्या इंग्रज-मराठा युद्धादरम्यान ब्रिटिशांच्या कोणत्या सेनापतीने भरतपूरचा अजिंक्य किल्ला जिंकण्यासाठी तब्बल चार वेळा अपयशी हल्ले केले, ज्यानंतर वेलस्लीला माघारी बोलावण्यात आले?",
+        "en": "During the Second Anglo-Maratha War in 1805, which British General launched four disastrous failed assaults to capture the fortress of Bharatpur?"
+      },
+      "options": [
+        { "mr": "जनरल जेरार्ड लेक (Lord Gerard Lake)", "en": "Lord Gerard Lake" },
+        { "mr": "जनरल आर्थर वेलस्ली (Arthur Wellesley)", "en": "Arthur Wellesley" },
+        { "mr": "जनरल स्मिथ (General Smith)", "en": "General Smith" },
+        { "mr": "जनरल स्टीव्हन्सन (General Stevenson)", "en": "General Stevenson" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "यशवंतराव होळकरांना आश्रय देणाऱ्या भरतपूरच्या राजा रणजीत सिंग यांच्या विरुद्ध लढताना लॉर्ड लेकने जानेवारी ते एप्रिल १८०५ दरम्यान भरतपूरच्या मातीच्या किल्ल्यावर सलग चार हल्ले केले; पण ३००० हून अधिक ब्रिटिश सैनिक मारले जाऊनही किल्ला जिंकता आला नाही. या पराभवामुळे भयभीत झालेल्या संचालक मंडळाने लॉर्ड वेलस्लीला इंग्लंडला परत बोलावले.",
+        "en": "Between January and April 1805, Lord Gerard Lake suffered unprecedented British casualties (over 3,000 men) in four consecutive failed assaults against the mud walls of the Bharatpur fort, hastening the recall of Governor-General Wellesley by the Directors."
+      }
+    },
+    {
+      "id": 17,
+      "question": {
+        "mr": "१८१७ मधील 'पुण्याच्या तहावर' (Treaty of Poona) ब्रिटिशांचा रेसिडेंट माउंटस्टुअर्ट एल्फिन्स्टन याने खालीलपैकी कोणाकडून स्वाक्षरी करवून घेतली?",
+        "en": "From whom did British Resident Mountstuart Elphinstone extract the humiliating Treaty of Poona in June 1817?"
+      },
+      "options": [
+        { "mr": "पेशवे दुसरे बाजीराव", "en": "Peshwa Baji Rao II" },
+        { "mr": "बाजीराव पहिले", "en": "Baji Rao I" },
+        { "mr": "माधवराव दुसरे", "en": "Madhavrao II" },
+        { "mr": "रघुनाथराव पेशवे", "en": "Raghunathrao Peshwa" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "गायकवाडांचे वकील गंगाधर शास्त्री यांच्या हत्येनंतर त्र्यंबकजी डेंगळे यांच्या अटकेवरून वाद पेटला. १३ जून १८१७ रोजी एल्फिन्स्टनने शनिवारवाड्याला वेढा घालून दुसऱ्या बाजीरावाकडून पुण्याचा अपमानकारक तह करवून घेतला. यात पेशव्यांनी मराठा महासंघाचे (Maratha Confederacy) प्रमुखपद सोडले आणि गायकवाड व ब्रिटिशांना मोठा महसूल दिला.",
+        "en": "On 13 June 1817, British Resident Mountstuart Elphinstone coerced Peshwa Baji Rao II into signing the Treaty of Poona, forcing the Peshwa to officially renounce his headship of the Maratha Confederacy and cede vast territories to the Company."
+      }
+    },
+    {
+      "id": 18,
+      "question": {
+        "mr": "१८१८ मध्ये पेशवाईच्या अंतानंतर मराठ्यांचा असंतोष कमी करण्यासाठी ब्रिटिशांनी छत्रपती शिवाजी महाराजांचे थेट वंशज छत्रपती प्रतापसिंह यांच्याकडे कोणत्या लहान राज्याची गादी सोपवली?",
+        "en": "Following the termination of the Peshwaship in 1818, the British carved out which small principality to install Chhatrapati Pratapsingh, a direct descendant of Shivaji Maharaj, to pacify Maratha sentiment?"
+      },
+      "options": [
+        { "mr": "सातारा (Satara)", "en": "Satara" },
+        { "mr": "कोल्हापूर (Kolhapur)", "en": "Kolhapur" },
+        { "mr": "सांगली (Sangli)", "en": "Sangli" },
+        { "mr": "अक्कलकोट (Akkalkot)", "en": "Akkalkot" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "माउंटस्टुअर्ट एल्फिन्स्टनच्या सल्ल्यानुसार लॉर्ड हेस्टिंग्सने मराठा जनतेच्या भावना शांत करण्यासाठी पेशवाई नष्ट केली तरी छत्रपती शिवाजी महाराजांचे वंशज प्रतापसिंह यांना कैदेतून सोडवून सातारा येथे स्वतंत्र लहान राज्य देऊन गादीवर बसवले आणि कॅप्टन ग्रँट डफ याला त्यांचा सल्लागार नेमले.",
+        "en": "To appease the Maratha public after abolishing the Peshwa's regime in 1818, Elphinstone installed Chhatrapati Pratapsingh on the throne of a restored miniature Kingdom of Satara under British tutelage, with Captain James Grant Duff as political agent."
+      }
+    },
+    {
+      "id": 19,
+      "question": {
+        "mr": "मुंबई इलाख्याचे (बॉम्बे प्रेसिडेन्सी) गव्हर्नर असताना माउंटस्टुअर्ट एल्फिन्स्टन (१८१९-१८२७) यांनी महसूल आकारणीसाठी कोणती पद्धत प्राधान्याने लागू केली?",
+        "en": "During his governorship of Bombay Presidency (1819–1827), which revenue assessment system did Mountstuart Elphinstone predominantly introduce?"
+      },
+      "options": [
+        { "mr": "रयतवारी पद्धतीचे सुधारित मॉडेल", "en": "A modified version of the Ryotwari System" },
+        { "mr": "बंगालची कायमधारा पद्धत", "en": "Bengal's Permanent Settlement" },
+        { "mr": "शुद्ध महालवारी पद्धत", "en": "Pure Mahalwari System" },
+        { "mr": "इजारदारी लिलाव पद्धत", "en": "Ijardari Auction System" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "एल्फिन्स्टनने महाराष्ट्रातील गावगाड्याची (पाटील-कुलकर्णी) रचना अबाधित ठेवत मद्रासच्या मुन्रो मॉडेलवर आधारित सुधारित रयतवारी पद्धत लागू केली. यात शेतकऱ्यांशी थेट संपर्क ठेवतानाच स्थानिक संस्थांचा आदर करण्याचा प्रयत्न केला गेला, ज्याचे पुढे प्रिंगल आणि विंगेट यांनी सर्वेक्षण केले.",
+        "en": "Elphinstone instituted a modified Ryotwari system across the conquered territories of the Deccan, aiming to deal directly with the peasant cultivations while preserving aspects of traditional village leadership (Patils and Deshmukhs)."
+      }
+    },
+    {
+      "id": 20,
+      "question": {
+        "mr": "१८३३ च्या सनदी कायद्यानुसार (Charter Act of 1833) मुंबई आणि मद्रास या प्रांतांच्या विधिमंडळांच्या अधिकारांवर काय मर्यादा आल्या?",
+        "en": "What restriction was imposed on the legislative powers of the Bombay and Madras Presidencies under the Charter Act of 1833?"
+      },
+      "options": [
+        { "mr": "त्यांचे कायदे करण्याचे स्वतंत्र अधिकार पूर्णपणे काढून घेण्यात आले आणि कायदेनिर्मिती केंद्राकडे (गव्हर्नर-जनरल इन कौन्सिल) केंद्रित झाली.", "en": "Their independent law-making powers were completely deprived, concentrating all legislative authority in the Governor-General in Council." },
+        { "mr": "त्यांना फक्त पोलीस आणि शिक्षणावर कायदे करण्याचा अधिकार उरला.", "en": "They were restricted to making laws only regarding police and education." },
+        { "mr": "त्यांना ब्रिटनच्या संसदेच्या पूर्वपरवानगीशिवाय कर वाढवण्यास बंदी घालण्यात आली.", "en": "They were barred from increasing taxes without prior approval of British Parliament." },
+        { "mr": "त्यांचे अधिकार वाढवून त्यांना केंद्राइतकेच सार्वभौम कायदे करण्याचा अधिकार मिळाला.", "en": "Their powers were enhanced to formulate sovereign laws on par with the Centre." }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१८३३ च्या सनदी कायद्याने भारतातील कायदेनिर्मितीचे संपूर्ण केंद्रीकरण केले. मुंबई आणि मद्रासच्या गव्हर्नरांचे स्वतंत्र कायदे बनवण्याचे अधिकार पूर्णपणे हिरावून घेण्यात आले आणि संपूर्ण भारतासाठी एकमेव कायदेमंडळ म्हणून गव्हर्नर-जनरल ऑफ इंडियाच्या कौन्सिलला अधिकार देण्यात आले.",
+        "en": "The Charter Act of 1833 centralized British power by depriving the Governors of Bombay and Madras of their independent law-making authority, vesting exclusive legislative jurisdiction for the entirety of India in the Governor-General in Council."
+      }
+    },
+    {
+      "id": 21,
+      "question": {
+        "mr": "१८३५ मध्ये लॉर्ड विल्यम बेंटिंकने भारतातील पहिले वैद्यकीय महाविद्यालय (Medical College) खालीलपैकी कोणत्या शहरात सुरू केले?",
+        "en": "In 1835, in which city did Lord William Bentinck inaugurate the first medical college in India to teach Western medicine?"
+      },
+      "options": [
+        { "mr": "कलकत्ता", "en": "Calcutta" },
+        { "mr": "मुंबई", "en": "Bombay" },
+        { "mr": "मद्रास", "en": "Madras" },
+        { "mr": "लाहोर", "en": "Lahore" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "जानेवारी १८३५ मध्ये बेंटिंकने 'कलकत्ता मेडिकल कॉलेज' (CMC) ची स्थापना केली. हे आशियातील पाश्चात्य वैद्यकीय शिक्षणाचे पहिले संस्थात्मक केंद्र होते. येथेच पंडित मधुसूदन गुप्ता यांनी १८३६ मध्ये पहिल्यांदा मानवी मृतदेहाचे विच्छेदन (Dissection) करून इतिहास घडवला.",
+        "en": "In January 1835, Bentinck founded the Calcutta Medical College, the first institution to teach Western medicine in India and Asia, where Pandit Madhusudan Gupta conducted the first human dissection in 1836."
+      }
+    },
+    {
+      "id": 22,
+      "question": {
+        "mr": "१८४३ मध्ये सिंध प्रांतावर ब्रिटिशांचे प्रत्यक्ष नियंत्रण प्रस्थापित करताना तेथील स्थानिक शासकांना कोणत्या नावाने ओळखले जात होते?",
+        "en": "When the British established direct control over Sindh in 1843, what title was held by its local rulers belonging to the Talpur dynasty?"
+      },
+      "options": [
+        { "mr": "अमीर (Amirs of Sindh)", "en": "Amirs of Sindh" },
+        { "mr": "नवाब (Nawabs)", "en": "Nawabs" },
+        { "mr": "निजाम (Nizams)", "en": "Nizams" },
+        { "mr": "वली (Walis)", "en": "Walis" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "सिंधवर तालपूर वंशाचे बलोच शासक राज्य करत होते, ज्यांना 'सिंधचे अमीर' (Amirs of Sindh) म्हटले जाई. हैदराबाद (सिंध), खैरपूर आणि मीरपूर ही त्यांची प्रमुख सत्ताकेंद्रे होती. १८४३ मध्ये चार्ल्स नेपियरने या अमिरांचा पराभव करून सिंध खालसा केला.",
+        "en": "Sindh was ruled by confederacies of the Talpur Baluch clan, whose chieftains were collectively referred to as the 'Amirs of Sindh'. They were defeated and deposed by Sir Charles Napier in 1843."
+      }
+    },
+    {
+      "id": 23,
+      "question": {
+        "mr": "लॉर्ड डलहौसीने १८४८ ते १८५६ या काळात लागू केलेल्या 'दत्तक वारसा नामंजूर धोरणांतर्गत' (Doctrine of Lapse) संस्थानांचे वर्गीकरण खालीलपैकी कोणत्या तीन श्रेणींमध्ये केले होते?",
+        "en": "Under the Doctrine of Lapse applied between 1848 and 1856, into which three categories did Lord Dalhousie classify the Indian princely states?"
+      },
+      "options": [
+        { "mr": "स्वतंत्र राज्ये (हक्क अबाधित), ईस्ट इंडिया कंपनीच्या मांडलिक/अधिपत्याखालील राज्ये (परवानगी आवश्यक), आणि ब्रिटिशांनी स्वतः निर्माण केलेली राज्ये (दत्तक घेण्यास पूर्ण बंदी)", "en": "Independent states (unconditional right), Tributary/Subordinate states (prior approval required), and Created/Revived states (absolute ban on adoption)" },
+        { "mr": "हिंदू राज्ये, मुस्लिम राज्ये आणि शीख राज्ये", "en": "Hindu states, Muslim states, and Sikh states" },
+        { "mr": "मोठी राज्ये, मध्यम संस्थाने आणि छोटी जहागिरी", "en": "Large states, Intermediate principalities, and Small jagirs" },
+        { "mr": "तोफांच्या सलामीची राज्ये, बिगर-सलामीची राज्ये आणि आदिवासी पट्टे", "en": "Salute states, Non-salute states, and Tribal tracts" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "डलहौसीने संस्थानांचे तीन गट पाडले: १. सार्वभौम राज्ये (त्यांना दत्तक घेण्यास ब्रिटिशांची आडकाठी नव्हती), २. पूर्वी मुघल/पेशव्यांना मांडलिक असलेली व आता कंपनीच्या अधिपत्याखाली आलेली राज्ये (कंपनीच्या संमतीनेच दत्तक), आणि ३. ब्रिटिशांनी स्वतः तह करून तयार केलेली संस्थाने (जसे सातारा; यांना दत्तक घेण्यास सक्त मनाई करून थेट खालसा केले गेले).",
+        "en": "Dalhousie categorized states into three tiers: sovereign allies who possessed free adoption rights; dependent/tributary states requiring paramount consent; and states created or revived by British grants where adoption was uniformly disallowed."
+      }
+    },
+    {
+      "id": 24,
+      "question": {
+        "mr": "१८५६ मध्ये लॉर्ड कॅनिंगच्या काळात मंजूर करण्यात आलेल्या 'हिंदू विधवा पुनर्विवाह कायद्याचा' (Hindu Widows' Remarriage Act - Act XV of 1856) मसुदा खालीलपैकी कोणत्या गव्हर्नर-जनरलच्या काळात तयार करण्यात आला होता?",
+        "en": "The Hindu Widows' Remarriage Act (Act XV of 1856), passed during Lord Canning's tenure, was drafted and introduced by which Governor-General?"
+      },
+      "options": [
+        { "mr": "लॉर्ड डलहौसी", "en": "Lord Dalhousie" },
+        { "mr": "लॉर्ड विल्यम बेंटिंक", "en": "Lord William Bentinck" },
+        { "mr": "लॉर्ड हार्डिंग्ज पहिला", "en": "Lord Hardinge I" },
+        { "mr": "लॉर्ड एलनबरो", "en": "Lord Ellenborough" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "पंडित ईश्वरचंद्र विद्यासागर यांच्या अथक प्रयत्नांमुळे हिंदू विधवा पुनर्विवाहाचा मसुदा लॉर्ड डलहौसीने तयार करून विधिमंडळात मांडला होता. मात्र, १८५६ मध्ये डलहौसी गेल्यानंतर नवीन गव्हर्नर-जनरल लॉर्ड कॅनिंग याने २६ जुलै १८५६ रोजी 'अधिनियम १५' (Act XV of 1856) म्हणून याला अंतिम मंजुरी दिली.",
+        "en": "Due to the persistent advocacy of Pandit Ishwar Chandra Vidyasagar, the Hindu Widows' Remarriage Act was drafted and introduced to the legislative council by Lord Dalhousie, and was finally enacted into law by Lord Canning on 26 July 1856."
+      }
+    },
+    {
+      "id": 25,
+      "question": {
+        "mr": "ईस्ट इंडिया कंपनीच्या राजवटीत दादाभाई नौरोजी यांनी मांडलेल्या 'संपत्तीच्या निसारण सिद्धांतानुसार' (Drain of Wealth Theory) खालीलपैकी कशाचा समावेश 'होम चार्जेस'मध्ये (Home Charges) होत होता?\nअ. लंडनस्थित इंडिया ऑफिसचा सर्व प्रशासकीय खर्च\nब. ब्रिटिश भारतातील रेल्वे गुंतवणुकीवर ब्रिटिश गुंतवणूकदारांना दिलेला हमीभाव लाभांश (Guaranteed Interest)\nक. भारतात काम करून निवृत्त झालेल्या ब्रिटिश अधिकाऱ्यांचे लंडनमध्ये दिले जाणारे निवृत्तिवेतन (Pensions)\nयोग्य पर्याय निवडा:",
+        "en": "According to Dadabhai Naoroji's 'Drain of Wealth Theory', which of the following components were included in the 'Home Charges' remitted from India to Britain?\na. Administrative expenditure of the India Office in London.\nb. Guaranteed interest paid to British investors on Indian railway construction.\nc. Pensions of retired British civil and military personnel payable in London.\nChoose the correct option:"
+      },
+      "options": [
+        { "mr": "फक्त अ आणि ब", "en": "Only a and b" },
+        { "mr": "फक्त ब आणि क", "en": "Only b and c" },
+        { "mr": "फक्त अ आणि क", "en": "Only a and c" },
+        { "mr": "अ, ब आणि क सर्व", "en": "All a, b, and c" }
+      ],
+      "correctAnswerIndex": 3,
+      "explanation": {
+        "mr": "होम चार्जेस म्हणजे भारत सरकारच्या तिजोरीतून लंडनला पाठवला जाणारा असा निधी ज्याच्या बदल्यात भारताला कोणताही प्रत्यक्ष आर्थिक परतावा मिळत नव्हता. यामध्ये लंडन कार्यालयाचा खर्च, कर्जावरील व्याज, ब्रिटिश अधिकाऱ्यांचे निवृत्तिवेतन व भत्ते, आणि रेल्वे भांडवलावर दिलेला हमीचा ५% परतावा या सर्वांचा समावेश होता.",
+        "en": "All three components formed the core of the 'Home Charges' transferred annually from Indian revenues to Britain: London administrative costs, military and civil pensions, interest on Indian debt, and guaranteed interest paid to British railway financiers."
+      }
+    }
+  ]
+}

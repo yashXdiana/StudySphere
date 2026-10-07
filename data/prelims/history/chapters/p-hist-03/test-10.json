@@ -1,0 +1,464 @@
+{
+  "testId": "p-hist-03-t10",
+  "title": {
+    "mr": "१८५७ चा उठाव — सराव 10",
+    "en": "Revolt of 1857 — Practice Test 10"
+  },
+  "durationMinutes": 20,
+  "marksPerQuestion": 1,
+  "negativeMarking": 0.25,
+  "totalMarks": 25,
+  "difficulty": "मध्यम ते काठिण्य",
+  "questions": [
+    {
+      "id": 1,
+      "question": {
+        "mr": "१८५७ च्या उठावादरम्यान बहराइच (अवध) येथे बेगम हजरत महल यांच्या बाजूने ब्रिटिशांशी अखेरपर्यंत निकराचा लढा देणारे प्रमुख जहागीरदार कोण होते?",
+        "en": "Who was the prominent taluqdar of Bahraich (Awadh) who fought fiercely against the British alongside Begum Hazrat Mahal during the 1857 Revolt?"
+      },
+      "options": [
+        { "mr": "राजा हरदत्त सिंग (बोंडीचे राजे)", "en": "Raja Hardatt Singh (Raja of Bondi)" },
+        { "mr": "बाबू कुंवर सिंग", "en": "Babu Kunwar Singh" },
+        { "mr": "जनरल बख्त खान", "en": "General Bakht Khan" },
+        { "mr": "खान बहादूर खान", "en": "Khan Bahadur Khan" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "बहराइच जिल्ह्यातील बोंडीचे राजे हरदत्त सिंग यांनी स्वतःचा किल्ला ब्रिटिशांविरुद्धच्या लढ्याचे केंद्र बनवला. त्यांनी बेगम हजरत महल आणि नानासाहेब पेशवे यांना आश्रय दिला आणि शरणागती न पत्करता नेपाळच्या जंगलात गेले.",
+        "en": "Raja Hardatt Singh of Bondi (Bahraich) provided troops and shelter to Begum Hazrat Mahal and Nana Saheb, resisting colonial forces to the bitter end and retreating into the Nepal hills rather than submitting."
+      }
+    },
+    {
+      "id": 2,
+      "question": {
+        "mr": "जून १८५७ मध्ये कानपूर येथे नानासाहेब पेशवे यांच्या सैन्याने वेढा घातला असता मेजर जनरल ह्यू व्हीलर याने कोणत्या ठिकाणी कच्ची मातीची तात्पुरती तटबंदी (Wheeler's Entrenchment) उभारली होती?",
+        "en": "Where did Major-General Sir Hugh Wheeler construct a temporary fortified entrenchment during the siege of Kanpur in June 1857?"
+      },
+      "options": [
+        { "mr": "तोफखाना बॅरेक्स आणि लष्करी दवाखाना मैदान", "en": "Artillery barracks and military hospital grounds" },
+        { "mr": "बिबीघर राजवाडा परिसर", "en": "Bibighar palace grounds" },
+        { "mr": "सतीचौरा घाट नदीकाठ", "en": "Satichaura Ghat riverbank" },
+        { "mr": "बिठूर किल्ला आवार", "en": "Bithoor Fort compound" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "जनरल व्हीलरने कानपूरमध्ये गंगा नदीच्या किंवा पक्क्या किल्ल्याच्या जागी उघड्या मैदानावरील तोफखान्याच्या दोन बॅरेक्सभोवती अवघी ४ फूट उंच मातीची कच्ची भिंत बांधून तात्पुरती तटबंदी उभारली, जी संरक्षणासाठी अत्यंत कुचकामी ठरली.",
+        "en": "Major-General Hugh Wheeler chose an indefensible position in the open cantonment around two brick artillery hospital barracks, surrounding them with a low 4-foot mud parapet ('Wheeler's Entrenchment')."
+      }
+    },
+    {
+      "id": 3,
+      "question": {
+        "mr": "१८५७ च्या उठावात अवध प्रांतातील 'उन्नाव' (Unnao) आणि बसिरतगंज येथे जनरल हॅव्हलॉकच्या फौजेचा मार्ग रोखून धरणारे स्थानिक जमीनदार कोण होते?",
+        "en": "Which local ruler put up formidable resistance against General Havelock's relief force at Unnao and Bashiratganj in Awadh in 1857?"
+      },
+      "options": [
+        { "mr": "राजा गुलाब सिंग", "en": "Raja Gulab Singh" },
+        { "mr": "राजा देवीबक्ष सिंग", "en": "Raja Devi Bakhsh Singh" },
+        { "mr": "राजा लाल माधव सिंग", "en": "Raja Lal Madho Singh" },
+        { "mr": "राणा बेनी माधव", "en": "Rana Beni Madho" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "उन्नावजवळील राजा गुलाब सिंग आणि स्थानिक सैनिकांनी जनरल हॅव्हलॉकच्या कानपूरहून लखनौकडे जाणाऱ्या फौजेवर अनेकदा प्रतिहल्ले चढवून त्यांचे प्रचंड नुकसान केले आणि त्यांना दोनदा मागे फिरण्यास भाग पाडले.",
+        "en": "Raja Gulab Singh and rebel taluqdars heavily contested Havelock's advance between Kanpur and Lucknow at Unnao, inflicting serious casualties on the British forces."
+      }
+    },
+    {
+      "id": 4,
+      "question": {
+        "mr": "१८५७ चा उठाव झाला तेव्हा ब्रिटिश भारताची अधिकृत प्रशासकीय राजधानी खालीलपैकी कोणती होती?",
+        "en": "Which city served as the official administrative capital of the British Indian Empire during the 1857 Revolt?"
+      },
+      "options": [
+        { "mr": "कलकत्ता (Calcutta)", "en": "Calcutta" },
+        { "mr": "दिल्ली (Delhi)", "en": "Delhi" },
+        { "mr": "अलाहाबाद (Allahabad)", "en": "Allahabad" },
+        { "mr": "मुंबई (Bombay)", "en": "Bombay" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१७७२ पासून १९११ पर्यंत ब्रिटिश भारताची राजधानी 'कलकत्ता' हीच होती. लॉर्ड कॅनिंगचे गव्हर्नर-जनरल कौन्सिल आणि सर्वोच्च सचिवालय कलकत्त्यात फोर्ट विल्यम येथे कार्यरत होते. दिल्ली ही केवळ औपचारिक मुघल राजधानी होती.",
+        "en": "Calcutta was the supreme political capital of British India in 1857, where Governor-General Lord Canning and the Supreme Council presided. Delhi was transferred to imperial capital status only in 1911."
+      }
+    },
+    {
+      "id": 5,
+      "question": {
+        "mr": "१ जून १८५८ रोजी झाशीची राणी लक्ष्मीबाई आणि तात्या टोपे यांच्या सैन्याने ग्वाल्हेरवर ताबा मिळवल्यानंतर ग्वाल्हेरचे महाराज जयाजीराव शिंदे पळून कोणत्या ब्रिटिश छावणीत गेले?",
+        "en": "Where did Maharaja Jayajirao Scindia of Gwalior flee to seek British protection after Rani Lakshmibai and Tatya Tope captured Gwalior on 1 June 1858?"
+      },
+      "options": [
+        { "mr": "आग्रा (Agra)", "en": "Agra" },
+        { "mr": "दिल्ली (Delhi)", "en": "Delhi" },
+        { "mr": "इंदूर (Indore)", "en": "Indore" },
+        { "mr": "भोपाळ (Bhopal)", "en": "Bhopal" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "ग्वाल्हेरच्या फौजा बंडखोरांना मिळाल्यामुळे महाराज जयाजीराव शिंदे आणि त्यांचे दिवाण दिनकरराव यांनी ग्वाल्हेर सोडून आग्र्याच्या किल्ल्यातील ब्रिटिश छावणीत आश्रय घेतला.",
+        "en": "When the Gwalior Contingent and state troops defected to the rebel leaders outside the city, Maharaja Jayajirao Scindia fled with a small bodyguard to the British garrison inside the fort at Agra."
+      }
+    },
+    {
+      "id": 6,
+      "question": {
+        "mr": "१८५७ च्या उठावात दक्षिण महाराष्ट्रात कोल्हापूर, बेळगाव आणि धारवाड येथील बंडखोर घटकांशी गुप्त संपर्क ठेवणारे आणि रंगो बापूजींचे निकटवर्ती कोण होते?",
+        "en": "Who acted as an underground operative coordinating networks between Satara, Kolhapur, and Belgaum in Maharashtra during the 1857 conspiracies?"
+      },
+      "options": [
+        { "mr": "नागोजी करकरे आणि दाजीबा फडके", "en": "Nagoji Karkare and Dajiba Phadke" },
+        { "mr": "चीमासाहेब आणि नाना अहिरे", "en": "Chimasahib and Nana Ahire" },
+        { "mr": "बाबासाहेब भावे आणि भास्करराव", "en": "Babasaheb Bhave and Bhaskar Rao" },
+        { "mr": "भागोजी नाईक आणि कजारसिंग", "en": "Bhagoji Naik and Kajarsing" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "रंगो बापूजी गुप्ते यांनी साताऱ्यात कट रचताना दक्षिण महाराष्ट्रातील संस्थानांशी समन्वय ठेवण्यासाठी नागोजी करकरे आणि दाजीबा फडके यांना दूत म्हणून नेमले होते.",
+        "en": "Nagoji Karkare and Dajiba Phadke served as key clandestine agents dispatched by Rango Bapuji to coordinate with native regiments in Belgaum and Kolhapur."
+      }
+    },
+    {
+      "id": 7,
+      "question": {
+        "mr": "फेब्रुवारी १८५६ मध्ये लॉर्ड डलहौसीने अवधचे विलीनीकरण केल्यानंतर १८५७ च्या उठावात अवधमधील कोणत्या प्रमुख जमीनदार घटकाने ब्रिटिशांविरुद्ध आघाडी उघडली?",
+        "en": "Following the annexation of Awadh in 1856, which feudal landed class led the widespread popular insurrection against British rule in 1857?"
+      },
+      "options": [
+        { "mr": "तालुकदार (Taluqdars)", "en": "Taluqdars" },
+        { "mr": "इनामदार (Inamdars)", "en": "Inamdars" },
+        { "mr": "मिरासदार (Mirasdars)", "en": "Mirasdars" },
+        { "mr": "खोत (Khots)", "en": "Khots" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "डलहौसीच्या १८५६ च्या 'समरी सेटलमेंट'मुळे अवधच्या तालुकदारांच्या निम्म्याहून अधिक जमिनी व किल्ले जप्त करण्यात आले होते. त्यामुळे १८५७ मध्ये तालुकदारांनी आपल्या लाखो कुळांना व सैनिकांना सोबत घेऊन ब्रिटिशांविरुद्ध प्रखर बंड पुकारले.",
+        "en": "The Summary Settlement of 1856 dispossessed the hereditary Taluqdars of Awadh of roughly half their estates, driving them and their peasant retainers into rebellion under Begum Hazrat Mahal."
+      }
+    },
+    {
+      "id": 8,
+      "question": {
+        "mr": "१८५७ च्या उठावात अवध प्रांतातील 'गोंडा' (Gonda) संस्थानातून ब्रिटिशांविरुद्ध लढा देणारे प्रमुख राजे कोण होते?",
+        "en": "Who was the ruler of Gonda in eastern Awadh who led a sustained military campaign against the British in 1857?"
+      },
+      "options": [
+        { "mr": "राजा देवीबक्ष सिंग (Raja Devi Bakhsh Singh)", "en": "Raja Devi Bakhsh Singh" },
+        { "mr": "राजा हरदत्त सिंग", "en": "Raja Hardatt Singh" },
+        { "mr": "राजा दिग्विजय सिंग", "en": "Raja Digvijay Singh" },
+        { "mr": "राणा बेनी माधव", "en": "Rana Beni Madho" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "गोंड्याचे राजे देवीबक्ष सिंग यांनी बेगम हजरत महल यांच्या आवाहनाला प्रतिसाद देत गोंडा आणि फैजाबाद भागात ब्रिटिश सैन्याविरुद्ध अनेक लढाया दिल्या आणि अखेरपर्यंत शरण न येता नेपाळमध्ये निघून गेले.",
+        "en": "Raja Devi Bakhsh Singh of Gonda commanded thousands of taluqdari troops, staunchly fighting British columns across eastern Awadh and refusing amnesty."
+      }
+    },
+    {
+      "id": 9,
+      "question": {
+        "mr": "१० मे १८५७ रोजी मीरत येथे बंड पुकारणाऱ्या सैनिकांमध्ये खालीलपैकी कोणत्या विशिष्ट रेजिमेंटचा समावेश होता?",
+        "en": "Which cavalry regiment at Meerut cantonment sparked the open mutiny on the evening of 10 May 1857?"
+      },
+      "options": [
+        { "mr": "३ री नेटिव्ह लाइट कॅव्हलरी (3rd Native Light Cavalry)", "en": "3rd Native Light Cavalry" },
+        { "mr": "१९ वी बंगाल नेटिव्ह इन्फंट्री", "en": "19th Bengal Native Infantry" },
+        { "mr": "३४ वी बंगाल नेटिव्ह इन्फंट्री", "en": "34th Bengal Native Infantry" },
+        { "mr": "२७ वी बॉम्बे इन्फंट्री", "en": "27th Bombay Infantry" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "मेरठ येथे २४ एप्रिल रोजी काडतुसे वापरण्यास नकार देणाऱ्या ८५ सैनिकांना ९ मे रोजी बेड्या ठोकून १० वर्षांची शिक्षा दिली गेली. दुसऱ्याच दिवशी, १० मे १८५७ रोजी '३ ऱ्या देशी घोडदळा'ने (3rd Native Cavalry) तुरुंग फोडून आपल्या साथीदारांची सुटका केली आणि उठावाची ठिणगी टाकली.",
+        "en": "The rebellion was ignited on 10 May 1857 by the 3rd Native Light Cavalry at Meerut to liberate 85 of their comrades who had been court-martialed and shackled in irons the preceding day for refusing the greased cartridges."
+      }
+    },
+    {
+      "id": 10,
+      "question": {
+        "mr": "छोटा नागपूर पठारावरील सिंहभूम (पोराहाट) भागात १८५७ च्या उठावात 'हो' आणि 'कोल' आदिवासींचे नेतृत्व करणारे राजे कोण होते?",
+        "en": "Who was the ruler of Porahat who led the Ho and Kol tribal communities in armed resistance against the British in Singhbhum during 1857?"
+      },
+      "options": [
+        { "mr": "राजा अर्जुन सिंग (Raja Arjun Singh)", "en": "Raja Arjun Singh" },
+        { "mr": "राजा शंकर शाह", "en": "Raja Shankar Shah" },
+        { "mr": "बिरसा मुंडा", "en": "Birsa Munda" },
+        { "mr": "सिद्धू मुर्मू", "en": "Sidhu Murmu" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "पोराहाटचे राजे अर्जुन सिंग यांनी सिंहभूम भागातील बंडखोर सैनिकांना आश्रय दिला आणि 'हो' आदिवासींना एकत्र करून १८५९ पर्यंत ब्रिटिशांशी लढा दिला. नंतर त्यांना वाराणसी येथे नजरकैदेत ठेवण्यात आले.",
+        "en": "Raja Arjun Singh of Porahat mobilized the tribal Ho and Kol population of Singhbhum, waging an anti-colonial war in the dense forests until his capture in 1859."
+      }
+    },
+    {
+      "id": 11,
+      "question": {
+        "mr": "१८५७ च्या उठावानंतर ब्रिटिश सैन्याच्या पुनर्रचनेबाबत खालील विधाने विचारात घ्या:\nअ. तोफखाना (Artillery) आणि सर्व प्रगत शस्त्रागारे केवळ युरोपियन सैनिकांच्या हाती ठेवण्यात आली.\nब. 'फूट पाडा आणि राज्य करा' या तत्त्वावर रेजिमेंट्सची पुनर्रचना जात आणि धर्माच्या आधारे करण्यात आली.\nवरीलपैकी कोणते/ती विधान/ने बरोबर आहेत?",
+        "en": "Consider the following statements regarding the military reorganization following the 1857 Revolt:\na. Field artillery and advanced armaments were placed strictly and exclusively in European hands.\nb. Regiments were restructured on the basis of caste and communal divisions under the policy of 'divide and rule'.\nWhich of the statements given above is/are correct?"
+      },
+      "options": [
+        { "mr": "फक्त अ", "en": "Only a" },
+        { "mr": "फक्त ब", "en": "Only b" },
+        { "mr": "अ आणि ब दोन्ही", "en": "Both a and b" },
+        { "mr": "दोन्ही नाही", "en": "Neither a nor b" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "दोन्ही विधाने योग्य आहेत. पील आयोगाच्या शिफारशीनुसार तोफखाना विभाग संपूर्णपणे युरोपियनांच्या ताब्यात ठेवला गेला. तसेच सैन्यात पुन्हा राष्ट्रीय एकात्मता निर्माण होऊ नये म्हणून शीख, गुरखा, मराठा, डोग्रा अशा जातीय व प्रादेशिक आधारावर स्वतंत्र रेजिमेंट्स तयार केल्या गेल्या.",
+        "en": "Both statements are correct. The post-1857 military doctrine strictly kept heavy field artillery in European regiments and organized native battalions into separate communal/caste-based companies ('counterpoise of native against native')."
+      }
+    },
+    {
+      "id": 12,
+      "question": {
+        "mr": "१८५७ च्या दरम्यान पुणे आणि सोलापूर परिसरात ब्रिटिशांविरुद्ध बंडाची योजना आखल्याच्या आरोपावरून अटक करण्यात आलेले स्थानिक नेते कोण होते?",
+        "en": "Who were the local leaders apprehended and tried by the British for conspiring an insurrection in Pune and Solapur in 1857?"
+      },
+      "options": [
+        { "mr": "शेख हुसेन आणि बाबा गणी", "en": "Sheikh Hussain and Baba Gani" },
+        { "mr": "रंगो बापूजी आणि तात्या टोपे", "en": "Rango Bapuji and Tatya Tope" },
+        { "mr": "चीमासाहेब आणि काशिनाथ", "en": "Chimasahib and Kashinath" },
+        { "mr": "कजारसिंग आणि भागोजी नाईक", "en": "Kajarsing and Bhagoji Naik" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "पुणे आणि सोलापूरमध्ये उठाव घडवून आणण्यासाठी गुप्त पत्रव्यवहार केल्याच्या आरोपावरून शेख हुसेन, बाबा गणी आणि त्यांच्या सहकाऱ्यांना ब्रिटिश पोलिसांनी अटक केली आणि लष्करी न्यायालयात खटला चालवून शिक्षा दिली.",
+        "en": "Sheikh Hussain, Baba Gani, and their associates were arrested in Pune and Solapur for distributing seditious circulars and attempting to subvert native detachments in 1857."
+      }
+    },
+    {
+      "id": 13,
+      "question": {
+        "mr": "२५ सप्टेंबर १८५७ रोजी लखनौ रेसिडेन्सीचा वेढा फोडण्यासाठी शहरात घुसताना चारबाग पुलाजवळ बंडखोरांच्या गोळीबारात ठार झालेला कुप्रसिद्ध ब्रिटिश लष्करी अधिकारी कोण होता?",
+        "en": "Which notorious British military officer was shot dead by rebel snipers near the Charbagh bridge while entering Lucknow on 25 September 1857?"
+      },
+      "options": [
+        { "mr": "ब्रिगेडिअर जनरल जेम्स नील (Brigadier-General James Neill)", "en": "Brigadier-General James Neill" },
+        { "mr": "जनरल हेन्री हॅव्हलॉक", "en": "General Henry Havelock" },
+        { "mr": "सर हेन्री लॉरेन्स", "en": "Sir Henry Lawrence" },
+        { "mr": "मेजर हॉडसन", "en": "Major Hodson" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "बनारस आणि अलाहाबाद येथे अमानुष अत्याचार करणारा ब्रिगेडिअर जनरल जेम्स नील हा २५ सप्टेंबर १८५७ रोजी लखनौमध्ये जनरल हॅव्हलॉकसह रेसिडेन्सीकडे जात असताना चारबाग वेशीजवळ एका इमारतीतून झाडलेल्या गोळीने जागीच मारला गेला.",
+        "en": "Brigadier-General James Neill, notorious for his brutal summary executions at Banaras and Allahabad, was shot dead on 25 September 1857 while forcing an entry into Lucknow through the Charbagh gate."
+      }
+    },
+    {
+      "id": 14,
+      "question": {
+        "mr": "१८५७ च्या उठावात जोधपूर (मारवाड) चे महाराजा तख्त सिंग यांनी ब्रिटिशांना कोणती मदत केली?",
+        "en": "What role was played by Maharaja Takht Singh of Jodhpur during the 1857 uprising in Rajasthan?"
+      },
+      "options": [
+        { "mr": "आपले राज्य सैन्य ब्रिटिशांच्या साहाय्यासाठी पाठवले आणि आवा येथील ठाकूर कुशल सिंग यांच्या बंडाविरुद्ध लढा दिला.", "en": "Dispatched his state army to assist the British and opposed the rebel forces of Thakur Kushal Singh of Auwa." },
+        { "mr": "स्वतःच्या सैन्यासह मुघल सम्राट बहादुर शाह जफर यांच्या सेवेत दाखल झाले.", "en": "Joined Emperor Bahadur Shah Zafar in Delhi alongside his state army." },
+        { "mr": "झाशीच्या राणीला दारूगोळा आणि रसद पाठवली.", "en": "Supplied artillery and ammunition to Rani Lakshmibai." },
+        { "mr": "राजस्थानातून ब्रिटिशांना हाकलून लावण्यासाठी संपूर्ण राजपुतान्यात बंड पुकारले.", "en": "Led a confederacy of Rajput princes to drive the British out of Rajasthan." }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "जोधपूरचे महाराजा तख्त सिंग यांनी ब्रिटिशांशी एकनिष्ठता राखत अनादर सिंग यांच्या नेतृत्वाखाली आपले सैन्य पाठवले. तथापि, आवाच्या ठाकूर कुशल सिंग यांनी सप्टेंबर १८५७ मध्ये बिथोडाच्या लढाईत जोधपूरच्या या सैन्याचा पराभव केला होता.",
+        "en": "Maharaja Takht Singh of Jodhpur remained loyal to the British Crown, dispatching the Jodhpur state forces to cooperate with British officers against the mutinous Jodhpur Legion at Auwa."
+      }
+    },
+    {
+      "id": 15,
+      "question": {
+        "mr": "जुलै १८५७ मध्ये कानपूर जिंकल्यानंतर जनरल हेन्री हॅव्हलॉक याने नानासाहेब पेशवे यांच्या कोणत्या ऐतिहासिक निवासस्थानावर हल्ला करून ते जाळून उद्ध्वस्त केले?",
+        "en": "Following the recapture of Kanpur in July 1857, which ancestral residence of Nana Saheb was bombarded and burnt to the ground by General Henry Havelock?"
+      },
+      "options": [
+        { "mr": "बिठूरचा राजवाडा (Bithoor Palace)", "en": "Bithoor Palace" },
+        { "mr": "शनिवार वाडा", "en": "Shaniwar Wada" },
+        { "mr": "कालपीचा किल्ला", "en": "Kalpi Fort" },
+        { "mr": "ग्वाल्हेरचा जयविलास महाल", "en": "Jai Vilas Palace of Gwalior" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "नानासाहेबांनी कानपूर सोडल्यानंतर जनरल हॅव्हलॉकने १९ जुलै १८५७ रोजी बिठूरवर हल्ला केला. तेथील भव्य राजवाडा, वाचनालय आणि मंदिरे जाळून टाकली आणि विहिरीतून नानासाहेबांचा खजिना व तोफा जप्त केल्या.",
+        "en": "General Havelock marched on Nana Saheb's stronghold at Bithoor on 19 July 1857, razing his sprawling palace to the ground and seizing his heavy guns."
+      }
+    },
+    {
+      "id": 16,
+      "question": {
+        "mr": "सर ह्यू रोज यांनी २२ मार्च १८५८ रोजी झाशीच्या किल्ल्याला वेढा घातला असता राणी लक्ष्मीबाईंच्या बाजूने तोफखान्याचे नेतृत्व करणारे प्रमुख निष्ठावंत तोफची कोण होते?",
+        "en": "Who commanded the formidable rebel artillery batteries defending Jhansi Fort under Rani Lakshmibai against Sir Hugh Rose in March–April 1858?"
+      },
+      "options": [
+        { "mr": "गुलाम गौस खान आणि खुदा बख्श", "en": "Ghulam Ghaus Khan and Khuda Bakhsh" },
+        { "mr": "जनरल बख्त खान", "en": "General Bakht Khan" },
+        { "mr": "मौलवी लियाकत अली", "en": "Maulvi Liaquat Ali" },
+        { "mr": "अजीमुल्लाह खान", "en": "Azimullah Khan" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "झाशीच्या किल्ल्यावरून गुलाम गौस खान यांनी 'कडक बिजली' आणि इतर तोफा चालवून ब्रिटिश सैन्याला अनेक दिवस रोखून धरले. गुलाम गौस खान आणि मुख्य घोडदळ प्रमुख खुदा बख्श हे दोघेही झाशीच्या लढाईत शेवटपर्यंत लढताना शहीद झाले.",
+        "en": "Chief gunner Ghulam Ghaus Khan and cavalry commander Khuda Bakhsh manned the defensive batteries atop Jhansi Fort, laying down their lives in the fighting."
+      }
+    },
+    {
+      "id": 17,
+      "question": {
+        "mr": "१८५७ च्या उठावात बिहारमधील हुसेनपूर (सारण जिल्हा) येथे बाबू कुंवर सिंग यांच्या प्रेरणेने ब्रिटिशांविरुद्ध समांतर प्रशासन चालवणारे स्थानिक राजे कोण होते?",
+        "en": "Who led the anti-British rural resistance in Saran (Bihar) during the 1857 uprising in coordination with Kunwar Singh?"
+      },
+      "options": [
+        { "mr": "राजा फतेह बहादूर शाही यांचे वंशज", "en": "Descendants of Raja Fateh Bahadur Sahi" },
+        { "mr": "राजा अर्जुन सिंग", "en": "Raja Arjun Singh" },
+        { "mr": "राजा मान सिंग", "en": "Raja Man Singh" },
+        { "mr": "राजा शंकर शाह", "en": "Raja Shankar Shah" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "सारण आणि चंपारण भागात स्थानिक जमीनदार व शेतकरी कुंवर सिंग यांच्या नेतृत्वाखाली एकत्र आले आणि त्यांनी कंपनीच्या महसूल कचेऱ्यांवर हल्ले करून ब्रिटिशांची राजवट उधळून लावली होती.",
+        "en": "Rebel landed lineages in Saran and Champaran challenged Company revenue collectors, providing local supply bases for Kunwar Singh's advancing army."
+      }
+    },
+    {
+      "id": 18,
+      "question": {
+        "mr": "ग्वाल्हेरचा सरकारी खजिना राणी लक्ष्मीबाई आणि तात्या टोपे यांच्या हवाली केल्याबद्दल ब्रिटिशांनी कोणत्या कोषाध्यक्षाला सार्वजनिकरीत्या फासावर लटकवले, ज्यांना '१८५७ चे भामाशाह' म्हटले जाते?",
+        "en": "Which royal treasurer was publicly hanged by the British for opening the state coffers to fund the forces of Rani Lakshmibai and Tatya Tope at Gwalior?"
+      },
+      "options": [
+        { "mr": "अमरचंद बांठिया (Amar Chand Bantia)", "en": "Amar Chand Bantia" },
+        { "mr": "जगत सेठ", "en": "Jagat Seth" },
+        { "mr": "शोभा राम", "en": "Shobha Ram" },
+        { "mr": "दिनकरराव", "en": "Dinkar Rao" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "ग्वाल्हेरचे राजकोषाध्यक्ष अमरचंद बांठिया यांनी बंडखोर सैनिकांना वेतनासाठी शिंदे सरकारचा खजिना खुला केला. ब्रिटिशांनी २० जून १८५८ रोजी ग्वाल्हेर जिंकल्यानंतर बांठिया यांना सराफा बाजारात कडुनिंबाच्या झाडावर फाशी दिली.",
+        "en": "Amar Chand Bantia disbursed the state treasury at Gwalior to pay the wages of Rani Lakshmibai and Tatya Tope's rebel forces. He was arrested and publicly executed by the British at Gwalior."
+      }
+    },
+    {
+      "id": 19,
+      "question": {
+        "mr": "१८५० मध्ये संमत झालेल्या 'धार्मिक अपात्रता निवारण कायद्यान्वये' (Religious Disabilities Act / Lex Loci Act 1850) ब्रिटिशांनी केलेली कोणती तरतूद हिंदू समाजात तीव्र असंतोषाचे कारण ठरली?",
+        "en": "Which provision of the Religious Disabilities Act (Lex Loci Act of 1850) provoked widespread religious resentment among orthodox Hindus prior to 1857?"
+      },
+      "options": [
+        { "mr": "धर्म बदलणाऱ्या (ख्रिश्चन झालेल्या) व्यक्तीला वडिलोपार्जित संपत्तीतील वारसा हक्क गमावण्यापासून कायदेशीर संरक्षण देणे.", "en": "Protecting converts to Christianity against forfeiture of ancestral inheritance rights." },
+        { "mr": "सर्व हिंदू मंदिरांना सरकारी कर लावणे.", "en": "Imposing state cesses on traditional Hindu shrines." },
+        { "mr": "हिंदू सणांवर पूर्ण कायदेशीर बंदी घालणे.", "en": "Prohibiting the observance of Hindu festivals." },
+        { "mr": "केवळ इंग्रजी भाषेत धार्मिक विधी करण्याची सक्ती करणे.", "en": "Mandating that religious rituals be solemnized exclusively in English." }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "पारंपरिक हिंदू कायद्यानुसार धर्म बदलल्यास वारसा हक्क रद्द होत असे. १८५० च्या 'लेक्स लोकी कायद्या'ने ख्रिश्चन धर्मांतरितांचे वडिलोपार्जित संपत्तीवरील हक्क सुरक्षित केले. हिंदू समाजाला वाटले की हा कायदा ख्रिश्चन मिशनऱ्यांना प्रोत्साहन देण्यासाठी व हिंदू धर्म भ्रष्ट करण्यासाठी केला आहे.",
+        "en": "Customary Hindu law held that renouncing one's religion entailed forfeiture of ancestral property. The Lex Loci Act (1850) protected religious converts against disinheritance, widely perceived as an official inducement to facilitate conversion to Christianity."
+      }
+    },
+    {
+      "id": 20,
+      "question": {
+        "mr": "साताऱ्याचे छत्रपती प्रतापसिंह यांच्या हक्कांसाठी लंडनमध्ये लढा देणारे रंगो बापूजी गुप्ते १८५७ च्या अयशस्वी उठवानंतर कुठपर्यंत निसटले आणि त्यांचे पुढे काय झाले?",
+        "en": "What became of Rango Bapuji Gupte following the discovery and collapse of the Satara conspiracy in 1857?"
+      },
+      "options": [
+        { "mr": "ते ब्रिटिशांच्या हाती न लागता भूमिगत झाले आणि त्यांचा ठावठिकाणा कधीही लागला नाही.", "en": "He successfully evaded arrest, went underground, and was never captured by the British." },
+        { "mr": "त्यांना लगेच अटक करून साताऱ्यात फाशी देण्यात आली.", "en": "He was captured immediately and executed in public at Satara." },
+        { "mr": "त्यांना अंदमानच्या सेल्युलर तुरुंगात पाठवण्यात आले.", "en": "He was deported to the penal settlement in the Andaman Islands." },
+        { "mr": "त्यांनी लंडनमध्ये जाऊन पुन्हा याचिका दाखल केली.", "en": "He escaped back to London to submit further parliamentary memorials." }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "साताऱ्याचा कट उघडकीस आल्यानंतर रंगो बापूजींचे पुत्र सीताराम व इतर साथीदार पकडले गेले व त्यांना फाशी झाली; परंतु रंगो बापूजी स्वतः वेषांतर करून निसटले. ब्रिटिशांनी त्यांच्यावर ₹५०० चे बक्षीस ठेवले होते, मात्र ते कधीही ब्रिटिशांच्या हाती लागले नाहीत.",
+        "en": "Following the betrayal of the Satara plot, Rango Bapuji slipped through the British police dragnet and disappeared permanently into obscurity, evading imperial capture despite a bounty."
+      }
+    },
+    {
+      "id": 21,
+      "question": {
+        "mr": "सप्टेंबर १८५७ मध्ये लखनौ रेसिडेन्सीचा वेढा तोडण्यासाठी जनरल हेन्री हॅव्हलॉक आणि सर जेम्स आऊट्रम यांच्या सैन्याने लखनौमध्ये प्रवेश केला, तेव्हा उद्भवलेली खरी परिस्थिती कोणती होती?",
+        "en": "What was the actual tactical outcome when General Havelock and Sir James Outram fought their way into the Lucknow Residency in late September 1857?"
+      },
+      "options": [
+        { "mr": "ते वेढा उठवू शकले नाहीत, उलट स्वतःच सैन्यासह रेसिडेन्सीमध्ये अडकले आणि नोव्हेंबरपर्यंत वेढ्यात राहिले.", "en": "They failed to break the siege; instead, they were trapped inside the Residency and reinforced the besieged garrison until relieved in November." },
+        { "mr": "त्यांनी शहरावर पूर्ण ताबा मिळवून बंडखोरांना तात्काळ पळवून लावले.", "en": "They secured total control over Lucknow and expelled the rebels immediately." },
+        { "mr": "त्यांनी बेगम हजरत महल यांना अटक करून नेपाळला हद्दपार केले.", "en": "They captured Begum Hazrat Mahal and exiled her to Nepal." },
+        { "mr": "त्यांनी अवधचा नवाब म्हणून ब्रिटिश अधिकाऱ्याची नियुक्ती केली.", "en": "They appointed a British civilian as the titular Nawab of Awadh." }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "हॅव्हलॉक आणि आऊट्रम २५ सप्टेंबर १८५७ रोजी रेसिडेन्सीत पोहोचले खरे, परंतु त्यांच्याकडे जखमी व स्त्रियांना बाहेर काढण्यासाठी पुरेसे सैन्य नव्हते. त्यामुळे वेढा सुटण्याऐवजी ते स्वतःच आत अडकून पडले, ज्याला 'पहिले रिलीफ' म्हटले जाते. नोव्हेंबर १८५७ मध्ये कॅम्पबेलने येऊन नागरिकांना बाहेर काढले.",
+        "en": "Outram and Havelock's September expedition did not lift the siege of Lucknow, but merely reinforced the garrison, remaining besieged themselves until Sir Colin Campbell arrived with a larger force in November 1857."
+      }
+    },
+    {
+      "id": 22,
+      "question": {
+        "mr": "१८५७ च्या उठावात अवधमध्ये ब्रिटिशांविरुद्ध लढणारे 'मौलवी अहमदउल्लाह शाह' हे मूळचे कोणत्या प्रांतातील होते?",
+        "en": "What was the geographical region of origin of Maulvi Ahmadullah Shah before he arrived in Awadh to lead the 1857 Revolt?"
+      },
+      "options": [
+        { "mr": "दक्षिण भारतातील मद्रास (आर्कोट)", "en": "Madras (Arcot) in South India" },
+        { "mr": "पंजाब (लाहोर)", "en": "Punjab (Lahore)" },
+        { "mr": "बंगाल (ढाका)", "en": "Bengal (Dacca)" },
+        { "mr": "मध्य भारत (ग्वाल्हेर)", "en": "Central India (Gwalior)" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "मौलवी अहमदउल्लाह शाह हे मूळचे दक्षिण भारतातील तमिळनाडू (आर्कोट) येथील होते. त्यांना इंग्रजी भाषेचे ज्ञान होते. नंतर ते ग्वाल्हेर, आग्रा मार्गे फैजाबाद येथे स्थायिक झाले आणि त्यांनी ब्रिटिशांविरुद्ध स्वातंत्र्य लढा उभारला.",
+        "en": "Maulvi Ahmadullah Shah was originally a native of Arcot in Tamil Nadu (Madras Presidency). He traveled widely preaching rebellion in Central and Northern India before settling at Faizabad."
+      }
+    },
+    {
+      "id": 23,
+      "question": {
+        "mr": "१८५७ च्या उठावानंतर ब्रिटनच्या संसदेने मुघल साम्राज्याचे औपचारिक अस्तित्व कोणत्या वर्षी संमत झालेल्या कायद्याद्वारे अधिकृतपणे समाप्त केले?",
+        "en": "In which year did statutory legislation passed by the British Parliament formally extinguish the imperial title and sovereignty of the Mughal dynasty?"
+      },
+      "options": [
+        { "mr": "१८५८ (भारत सरकार कायदा)", "en": "1858 (Government of India Act)" },
+        { "mr": "१८६२ (बहादुर शाह यांच्या मृत्यूनंतर)", "en": "1862 (Following Bahadur Shah's death)" },
+        { "mr": "१८७७ (दिल्ली दरबाराच्या वेळी)", "en": "1877 (During the Delhi Durbar)" },
+        { "mr": "१८५७ (सप्टेंबरमध्ये)", "en": "1857 (In September)" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "२ ऑगस्ट १८५८ रोजी संमत झालेल्या भारत सरकार कायद्यान्वये मुघल सम्राटाचे पद, सार्वभौमत्व आणि ईस्ट इंडिया कंपनीचे शासन अधिकृतपणे समाप्त करण्यात आले आणि भारताचे सार्वभौमत्व थेट ब्रिटिश सम्राज्ञीकडे गेले.",
+        "en": "The Government of India Act of August 1858 legally abolished the Mughal imperial sovereignty and corporate Company authority, directly assuming the governance of India under Queen Victoria."
+      }
+    },
+    {
+      "id": 24,
+      "question": {
+        "mr": "१८५७ च्या उठावाच्या प्रशासकीय व राजकीय कारणांचे विश्लेषण करून सरकारी धोरणातील चुका उघडकीस आणणारा 'अस्बाब-ए-बगावत-ए-हिंद' (The Causes of the Indian Revolt) हा ग्रंथ १८५९ मध्ये कोणी लिहिला?",
+        "en": "Who authored the famous 1859 treatise 'Asbab-e-Baghawat-e-Hind' (The Causes of the Indian Revolt) analyzing the administrative failures that led to the uprising?"
+      },
+      "options": [
+        { "mr": "सर सय्यद अहमद खान (Sir Syed Ahmad Khan)", "en": "Sir Syed Ahmad Khan" },
+        { "mr": "मिर्झा गालिब (Mirza Ghalib)", "en": "Mirza Ghalib" },
+        { "mr": "मौलाना अबुल कलाम आझाद", "en": "Maulana Abul Kalam Azad" },
+        { "mr": "अल्ताफ हुसेन हाली", "en": "Altaf Hussain Hali" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "सर सय्यद अहमद खान यांनी १८५९ मध्ये 'अस्बाब-ए-बगावत-ए-हिंद' लिहिला. त्यांनी स्पष्ट केले की कायदेमंडळात भारतीयांना प्रतिनिधित्व नसणे आणि त्यांच्या भावना न समजून घेणे हे उठावाचे मुख्य कारण होते. या पुस्तकामुळे पुढे १८६१ चा इंडियन कौन्सिल्स ॲक्ट आणण्यास मदत झाली.",
+        "en": "Sir Syed Ahmad Khan authored 'Asbab-e-Baghawat-e-Hind' in 1859, arguing that the exclusion of Indians from the legislative council and official ignorance of native public sentiment were the root causes of the 1857 outbreak."
+      }
+    },
+    {
+      "id": 25,
+      "question": {
+        "mr": "१८५७ च्या उठावाची प्रत्यक्ष सुरुवात मानली गेलेली घटना—१० मे १८५७ रोजी मीरतमध्ये शिपायांनी बंड पुकारताना खालीलपैकी कोणती तात्कालिक कारवाई केली?",
+        "en": "What immediate action was taken by the mutinous sepoys at Meerut cantonment on the evening of 10 May 1857 to commence the open uprising?"
+      },
+      "options": [
+        { "mr": "तुरुंग फोडून आपल्या बंदीवान ८५ सहकारी सैनिकांची सुटका केली, युरोपियन अधिकाऱ्यांवर हल्ला चढवला आणि दिल्लीकडे कूच केली.", "en": "Broke open the prison to liberate their 85 court-martialed comrades, attacked British officers, and marched towards Delhi." },
+        { "mr": "गव्हर्नर-जनरल लॉर्ड कॅनिंगला कलकत्त्यात नजरकैदेत ठेवले.", "en": "Placed Governor-General Lord Canning under house arrest at Calcutta." },
+        { "mr": "मुंबई बंदरातील ब्रिटिश जहाजे समुद्रात बुडवली.", "en": "Sank British merchant ships docked in Bombay harbor." },
+        { "mr": "नानासाहेब पेशवे यांना लंडनला सुरक्षित पाठवले.", "en": "Arranged the safe transport of Nana Saheb to London." }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१० मे १८५७ रोजी संध्याकाळी मीरत छावणीतील शिपायांनी उठाव केला. त्यांनी लष्करी तुरुंग फोडून बेड्या ठोकलेल्या आपल्या ८५ सहकाऱ्यांना सोडवले, युरोपियन अधिकाऱ्यांवर गोळीबार केला आणि 'दिल्ली चलो'चा नारा देत रातोरात दिल्लीकडे कूच केली.",
+        "en": "On 10 May 1857, the sepoys at Meerut mutinied, broke into the central jail to release their 85 comrades imprisoned for refusing the cartridges, killed colonial officers, and marched overnight to Delhi."
+      }
+    }
+  ]
+}

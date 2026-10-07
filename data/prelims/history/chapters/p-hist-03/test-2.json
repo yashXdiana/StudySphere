@@ -1,0 +1,927 @@
+  {
+
+    "testId": "p-hist-03-t2",
+
+    "title": {
+
+      "mr": "१८५७ चा उठाव — सराव 2",
+
+      "en": "Revolt of 1857 — Practice Test 2"
+
+    },
+
+    "durationMinutes": 20,
+
+    "marksPerQuestion": 1,
+
+    "negativeMarking": 0.25,
+
+    "totalMarks": 25,
+
+    "difficulty": "मध्यम ते काठिण्य",
+
+    "questions": [
+
+      {
+
+        "id": 1,
+
+        "question": {
+
+          "mr": "१८५७ च्या उठावाची नियोजित तारीख कोणती ठरवण्यात आली होती, जी मेरठ येथील अकाली उद्रेकामुळे बारगळली?",
+
+          "en": "What was the originally planned date for the synchronized outbreak of the Revolt of 1857?"
+
+        },
+
+        "options": [
+
+          { "mr": "३१ मे १८५७", "en": "31 May 1857" },
+
+          { "mr": "१० मे १८५७", "en": "10 May 1857" },
+
+          { "mr": "२३ जून १८५७", "en": "23 June 1857" },
+
+          { "mr": "१५ ऑगस्ट १८५७", "en": "15 August 1857" }
+
+        ],
+
+        "correctAnswerIndex": 0,
+
+        "explanation": {
+
+          "mr": "नानासाहेब पेशवे, अझीमुल्ला खान आणि रंगो बापूजी यांच्या चर्चेतून संपूर्ण देशात एकाच दिवशी ३१ मे १८५७ रोजी क्रांतीची योजना आखली गेली होती; परंतु मेरठ येथे १० मे रोजीच अचानक बंड झाल्याने नियोजनाचा समतोल बिघडला.",
+
+          "en": "The leaders originally selected 31 May 1857 as the date for a synchronized nationwide uprising, but the premature explosion at Meerut on 10 May shattered the concerted plan."
+
+        }
+
+      },
+
+      {
+
+        "id": 2,
+
+        "question": {
+
+          "mr": "झाशीची राणी लक्ष्मीबाई यांचा १७ जून १८५८ रोजी ब्रिटिशांशी लढताना कोणत्या ठिकाणी मृत्यू झाला?",
+
+          "en": "At which battlefield near Gwalior was Rani Lakshmibai martyred while fighting against British forces on 17-18 June 1858?"
+
+        },
+
+        "options": [
+
+          { "mr": "कोटा-की-सराई (Kota-ki-Serai, Gwalior)", "en": "Kota-ki-Serai (Gwalior)" },
+
+          { "mr": "कालपी (Kalpi)", "en": "Kalpi" },
+
+          { "mr": "झाशी किल्ला", "en": "Jhansi Fort" },
+
+          { "mr": "मोरोणा", "en": "Morona" }
+
+        ],
+
+        "correctAnswerIndex": 0,
+
+        "explanation": {
+
+          "mr": "ग्वाल्हेरजवळील 'कोटा-की-सराई'च्या रणांगणावर सर ह्यू रोझ आणि ब्रिगेडियर स्मिथ यांच्या सैन्याशी लढताना १७ जून १८५८ रोजी राणी लक्ष्मीबाई वीरगतीस प्राप्त झाल्या.",
+
+          "en": "Rani Lakshmibai fell in battle on 17-18 June 1858 at Kota-ki-Serai near Gwalior, fighting against British troops commanded by Brigadier Smith and Sir Hugh Rose."
+
+        }
+
+      },
+
+      {
+
+        "id": 3,
+
+        "question": {
+
+          "mr": "तात्या टोपे यांचे मूळ नाव काय होते?",
+
+          "en": "What was the real original name of the legendary commander Tatya Tope?"
+
+        },
+
+        "options": [
+
+          { "mr": "रामचंद्र पांडुरंग टोपे", "en": "Ramchandra Pandurang Tope" },
+
+          { "mr": "धोंडोपंत टोपे", "en": "Dhondopant Tope" },
+
+          { "mr": "गोपाळ कृष्ण टोपे", "en": "Gopal Krishna Tope" },
+
+          { "mr": "मोरोपंत टोपे", "en": "Moropant Tope" }
+
+        ],
+
+        "correctAnswerIndex": 0,
+
+        "explanation": {
+
+          "mr": "तात्या टोपे यांचे मूळ नाव 'रामचंद्र पांडुरंग येवलेकर (टोपे)' असे होते. पेशवे दुसऱ्या बाजीरावांनी त्यांना रत्नांनी मढवलेली नवरत्नाची टोपी भेट दिली होती, म्हणून त्यांना 'टोपे' हे नाव पडले.",
+
+          "en": "Tatya Tope's real name was Ramchandra Pandurang Tope (Yewalekar). He earned the moniker 'Tope' after being gifted a jewel-studded cap (topi) by Peshwa Baji Rao II."
+
+        }
+
+      },
+
+      {
+
+        "id": 4,
+
+        "question": {
+
+          "mr": "तात्या टोपे यांना पकडून देण्यासाठी ब्रिटिशांना फितूर झालेला त्यांचा सहकारी सरदार कोण होता?",
+
+          "en": "Which feudatory chieftain betrayed Tatya Tope into British hands in the jungles of Paron in April 1859?"
+
+        },
+
+        "options": [
+
+          { "mr": "मानसिंग (Raja Man Singh of Narwar)", "en": "Raja Man Singh of Narwar" },
+
+          { "mr": "जयसिंग", "en": "Jai Singh" },
+
+          { "mr": "बहादूर सिंग", "en": "Bahadur Singh" },
+
+          { "mr": "गुलाब सिंग", "en": "Gulab Singh" }
+
+        ],
+
+        "correctAnswerIndex": 0,
+
+        "explanation": {
+
+          "mr": "नरवरचा राजा मानसिंग याने ब्रिटिशांच्या आमिषाला बळी पडून तात्या टोपे विश्रांती घेत असताना पारोणच्या जंगलात ७ एप्रिल १८५९ रोजी त्यांना पकडून दिले. १८ एप्रिल १८५९ रोजी शिवपुरी येथे तात्यांना फाशी देण्यात आली.",
+
+          "en": "Raja Man Singh of Narwar betrayed Tatya Tope while he was asleep in the forest of Paron. Tope was captured, tried, and executed at Shivpuri on 18 April 1859."
+
+        }
+
+      },
+
+      {
+
+        "id": 5,
+
+        "question": {
+
+          "mr": "१८५७ च्या उठावात कानपूरमध्ये नानासाहेबांच्या पराभवानंतर ते आपल्या कुटुंबासह कोणत्या देशात निघून गेले?",
+
+          "en": "Following the British recapture of Kanpur and Awadh, where did Nana Saheb seek refuge?"
+
+        },
+
+        "options": [
+
+          { "mr": "नेपाळ (Nepal)", "en": "Nepal" },
+
+          { "mr": "म्यानमार (ब्रह्मदेश)", "en": "Burma" },
+
+          { "mr": "भूतान", "en": "Bhutan" },
+
+          { "mr": "तिबेट", "en": "Tibet" }
+
+        ],
+
+        "correctAnswerIndex": 0,
+
+        "explanation": {
+
+          "mr": "१८५८ च्या अखेरीस ब्रिटिशांचा दबाव वाढल्यानंतर नानासाहेब, बेगम हजरत महल आणि त्यांचे कुटुंबीय नेपाळच्या तराई जंगलात निघून गेले. नानासाहेब कधीही ब्रिटिशांच्या हाती लागले नाहीत.",
+
+          "en": "Towards the close of 1858, Nana Saheb escaped into the Terai jungles of Nepal alongside Begum Hazrat Mahal, evading British capture for the rest of his life."
+
+        }
+
+      },
+
+      {
+
+        "id": 6,
+
+        "question": {
+
+          "mr": "महाराष्ट्रात सातारा येथे १८५७ च्या उठावाचे नियोजन करणारे छत्रपती प्रतापसिंहांचे निष्ठावंत वकील कोण होते?",
+
+          "en": "Who orchestrated the 1857 uprising plan at Satara to restore the displaced Chhatrapati dynasty?"
+
+        },
+
+        "options": [
+
+          { "mr": "रंगो बापूजी गुप्ते (Rango Bapuji Gupte)", "en": "Rango Bapuji Gupte" },
+
+          { "mr": "अण्णाजी फडणीस", "en": "Annaji Phadnavis" },
+
+          { "mr": "चिमणाजी आप्पा", "en": "Chimnaji Appa" },
+
+          { "mr": "गोपाळ हरी देशमुख", "en": "Gopal Hari Deshmukh" }
+
+        ],
+
+        "correctAnswerIndex": 0,
+
+        "explanation": {
+
+          "mr": "सातारचे राजे प्रतापसिंह यांचे संस्थान खालसा झाल्यानंतर रंगो बापूजी गुप्ते लंडनला दाद मागण्यासाठी गेले. १४ वर्षे लंडनमध्ये राहून अपयश आल्यावर त्यांनी भारतात परत येऊन साताऱ्यात उठावाचे गुप्त जाळे उभारले.",
+
+          "en": "Rango Bapuji Gupte spent 14 years in London petitioning against the unjust annexation of Satara. Returning in 1854, he coordinated covert rebel networks across Maharashtra in 1857."
+
+        }
+
+      },
+
+      {
+
+        "id": 7,
+
+        "question": {
+
+          "mr": "३१ जुलै १८५७ रोजी कोल्हापूरच्या २७ व्या नेटिव्ह इन्फंट्रीने बंड पुकारले, तेव्हा त्या उठावाचे प्रमुख सूत्रधार कोण होते?",
+
+          "en": "Who was the chief rebel instigator behind the mutiny of the 27th Native Infantry at Kolhapur on 31 July 1857?"
+
+        },
+
+        "options": [
+
+          { "mr": "चिमणासाहेब (Chhimna Saheb)", "en": "Chhimna Saheb" },
+
+          { "mr": "बाबाजी अहिरे", "en": "Babaji Ahire" },
+
+          { "mr": "भागोजी नाईक", "en": "Bhagoji Naik" },
+
+          { "mr": "उमाजी नाईक", "en": "Umaji Naik" }
+
+        ],
+
+        "correctAnswerIndex": 0,
+
+        "explanation": {
+
+          "mr": "कोल्हापूरच्या छत्रपतींचे धाकटे बंधू चिमणासाहेब यांनी २७ व्या देशी पायदळाच्या सैनिकांना पाठिंबा दिला. नंतर लेफ्टनंट जेकबने हा उठाव दडपला आणि चिमणासाहेबांना कराचीला हद्दपार करण्यात आले.",
+
+          "en": "Chhimna Saheb (younger brother of the Raja of Kolhapur) secretly supported the sepoys of the 27th Native Infantry. After the mutiny was crushed by Colonel Le Grand Jacob, Chhimna Saheb was exiled to Karachi."
+
+        }
+
+      },
+
+      {
+
+        "id": 8,
+
+        "question": {
+
+          "mr": "खानदेशात १८५७ च्या काळात ब्रिटिश सत्तेविरुद्ध भिल्लांचे प्रचंड मोठे बंड कोणी उभारले?",
+
+          "en": "Who led the formidable Bhil uprising against the British in Khandesh in 1857?"
+
+        },
+
+        "options": [
+
+          { "mr": "काजीसिंग नाईक आणि भीमा नाईक", "en": "Kajisingh Naik and Bhima Naik" },
+
+          { "mr": "बिरसा मुंडा", "en": "Birsa Munda" },
+
+          { "mr": "तिलका मांझी", "en": "Tilka Manjhi" },
+
+          { "mr": "राघवजी भांगरे", "en": "Raghoji Bhangre" }
+
+        ],
+
+        "correctAnswerIndex": 0,
+
+        "explanation": {
+
+          "mr": "खानदेशात काजीसिंग नाईक (कजारसिंग) आणि बडवानी भागात भीमा नाईक यांनी भिल्लांना संघटित करून सरकारी खजिने लुटले आणि अंबापाणी येथे ब्रिटिशांशी तुंबळ युद्ध लढले.",
+
+          "en": "Kajisingh Naik and Bhima Naik led thousands of Bhils in Khandesh and the Satpuda ranges, plundering government treasuries and fighting the Battle of Ambapani against British forces in April 1858."
+
+        }
+
+      },
+
+      {
+
+        "id": 9,
+
+        "question": {
+
+          "mr": "नाशिक जिल्ह्यातील पेठ संस्थानात १८५७ च्या उठावात ब्रिटिशांविरुद्ध लढा देणारे कोळी राजे कोण होते?",
+
+          "en": "Who was the tribal Koli ruler of Peint (Nashik) who aligned with rebel forces and was hanged by the British in 1857?"
+
+        },
+
+        "options": [
+
+          { "mr": "राजा भगवंतराव नीळकंठराव", "en": "Raja Bhagwantrao Nilkanthrao" },
+
+          { "mr": "राघवजी भांगरे", "en": "Raghoji Bhangre" },
+
+          { "mr": "रंगो बापूजी", "en": "Rango Bapuji" },
+
+          { "mr": "भागोजी नाईक", "en": "Bhagoji Naik" }
+
+        ],
+
+        "correctAnswerIndex": 0,
+
+        "explanation": {
+
+          "mr": "पेठचे राजे भगवंतराव नीळकंठराव यांनी स्थानिक कोळी जनतेला एकत्र करून सरकारी कचेऱ्यांवर हल्ले केले. डिसेंबर १८५७ मध्ये ब्रिटिशांनी त्यांना पकडून पेठ येथे जाहीर फाशी दिली.",
+
+          "en": "Raja Bhagwantrao Nilkanthrao of Peint state led the Koli uprising against the British. He was captured and publicly hanged on 6 December 1857 outside the Peint fortress."
+
+        }
+
+      },
+
+      {
+
+        "id": 10,
+
+        "question": {
+
+          "mr": "अहमदनगर जिल्ह्यात १८५७-५८ दरम्यान ब्रिटिशांविरुद्ध दीर्घकाळ सशस्त्र लढा देणारे भिल्ल नेते कोण होते?",
+
+          "en": "Who was the prominent Bhil rebel leader who fought British troops in Ahmednagar district during 1857-1859?"
+
+        },
+
+        "options": [
+
+          { "mr": "भागोजी नाईक", "en": "Bhagoji Naik" },
+
+          { "mr": "काजीसिंग नाईक", "en": "Kajisingh Naik" },
+
+          { "mr": "तात्या टोपे", "en": "Tatya Tope" },
+
+          { "mr": "उमाजी नाईक", "en": "Umaji Naik" }
+
+        ],
+
+        "correctAnswerIndex": 0,
+
+        "explanation": {
+
+          "mr": "भागोजी नाईक यांनी अहमदनगर, नाशिक आणि खानदेश भागात ब्रिटिशांना सळो की पळो करून सोडले. नोव्हेंबर १८५९ मध्ये मिठासागर येथे झालेल्या चकमकीत ते धारातीर्थी पडले.",
+
+          "en": "Bhagoji Naik led armed resistance across the Sinnar and Sangamner regions of Ahmednagar and Nashik until he was killed in an encounter at Mithasagar in November 1859."
+
+        }
+
+      },
+
+      {
+
+        "id": 11,
+
+        "question": {
+
+          "mr": "विदर्भातील नागपूर येथे १८५७ च्या उठावाचे नियोजन करताना बंडखोरांनी कोणत्या चिन्हाचा संकेत म्हणून वापर करण्याचे ठरवले होते?",
+
+          "en": "In the aborted Nagpur conspiracy of June 1857, what signal was chosen to launch the insurrection?"
+
+        },
+
+        "options": [
+
+          { "mr": "मध्यरात्री आकाशात सोडलेला आगीचा बाण (Fire Arrow)", "en": "A burning fire-arrow shot at midnight" },
+
+          { "mr": "कमळाचे फूल", "en": "Lotus flower" },
+
+          { "mr": "तोफेचा आवाज", "en": "Cannon fire" },
+
+          { "mr": "नगारा वादन", "en": "Drum beats" }
+
+        ],
+
+        "correctAnswerIndex": 0,
+
+        "explanation": {
+
+          "mr": "नागपूर येथे १३ जून १८५७ रोजी सैनिकांच्या उठावाची योजना होती. आकाशात आगीचा बाण सोडताच हल्ला करण्याचे ठरले होते; परंतु फितुरीमुळे मिस्टर एलिसने हा कट आधीच उधळून लावला.",
+
+          "en": "On 13 June 1857, rebel sepoys and citizens planned an uprising in Nagpur cued by a burning arrow shot into the night sky, but the conspiracy was leaked to Commissioner Ellis."
+
+        }
+
+      },
+
+      {
+
+        "id": 12,
+
+        "question": {
+
+          "mr": "चंद्रपूर (चांदा) जिल्ह्यातील अहेरी भागात १८५७ च्या उठावात ब्रिटिशांविरुद्ध लढा देणारे गोंड नेते कोण होते?",
+
+          "en": "Who was the Gond tribal leader who spearheaded the 1857 rebellion in the Chanda (Chandrapur) region of Maharashtra?"
+
+        },
+
+        "options": [
+
+          { "mr": "बाबूराव शेडमाके", "en": "Baburao Shedmake" },
+
+          { "mr": "व्यंकटराव", "en": "Venkat Rao" },
+
+          { "mr": "शंकर शाह", "en": "Shankar Shah" },
+
+          { "mr": "रघुनाथ शाह", "en": "Raghunath Shah" }
+
+        ],
+
+        "correctAnswerIndex": 0,
+
+        "explanation": {
+
+          "mr": "बाबूराव शेडमाके यांनी चंद्रपूर जिल्ह्यातील आदिवासींना एकत्र करून ब्रिटिशांच्या राजवटीविरुद्ध लढा दिला. त्यांना पकडून २१ ऑक्टोबर १८५८ रोजी चांदा तुरुंगात फाशी देण्यात आली.",
+
+          "en": "Baburao Shedmake organized Gond and Maria tribesmen in Chandrapur, resisting British forces until his capture and execution on 21 October 1858."
+
+        }
+
+      },
+
+      {
+
+        "id": 13,
+
+        "question": {
+
+          "mr": "मुधोळ येथे १८५७ मध्ये ब्रिटिशांनी लागू केलेल्या 'शस्त्र कायद्याविरुद्ध' (Disarming Act) उठाव करणारे बेरड समाजाचे नेते कोण होते?",
+
+          "en": "Who led the Berad community revolt at Mudhol in 1857 against the British Disarming Act?"
+
+        },
+
+        "options": [
+
+          { "mr": "बाबाजी नाईक बेरड", "en": "Babaji Naik Berad" },
+
+          { "mr": "भीमा नाईक", "en": "Bhima Naik" },
+
+          { "mr": "काजीसिंग नाईक", "en": "Kajisingh Naik" },
+
+          { "mr": "नागोजी नाईक", "en": "Nagoji Naik" }
+
+        ],
+
+        "correctAnswerIndex": 0,
+
+        "explanation": {
+
+          "mr": "नोव्हेंबर १८५७ मध्ये मुधोळ संस्थानातील हळगळी (Halgali) गावातील बेरड (रामोशी) समाजाने शस्त्रे जमा करण्यास नकार दिला. बाबाजी बेरड यांच्या नेतृत्वात झालेल्या या संघर्षात अनेक स्वातंत्र्यसैनिक मारले गेले.",
+
+          "en": "In November 1857, the Berad community of Halgali (Mudhol state) rebelled under leaders like Babaji Naik against the compulsory confiscation of their traditional weapons under the Disarming Act."
+
+        }
+
+      },
+
+      {
+
+        "id": 14,
+
+        "question": {
+
+          "mr": "१८५७ च्या उठावात मध्य प्रदेशातील जबलपूर (मंडला) भागात राणी अवंतीबाई यांनी कोणत्या संस्थानातून ब्रिटिशांविरुद्ध नेतृत्व केले?",
+
+          "en": "In which princely state of Madhya Pradesh did Rani Avantibai lead the 1857 uprising against the British?"
+
+        },
+
+        "options": [
+
+          { "mr": "रामगढ (Ramgarh)", "en": "Ramgarh" },
+
+          { "mr": "झाशी", "en": "Jhansi" },
+
+          { "mr": "धार", "en": "Dhar" },
+
+          { "mr": "रेवा", "en": "Rewa" }
+
+        ],
+
+        "correctAnswerIndex": 0,
+
+        "explanation": {
+
+          "mr": "रामगढच्या राणी अवंतीबाई लोधी यांनी ब्रिटिश अधिकाऱ्यांना हुसकावून ४,००० सैनिकांसह लढा दिला. पराभव अटळ दिसताच त्यांनी २० मार्च १८५८ रोजी स्वतःच्याच तलवारीने बलिदान दिले.",
+
+          "en": "Rani Avantibai of Ramgarh led an armed force against British troops in the Mandla region. Faced with imminent capture on 20 March 1858, she committed suicide with her own sword."
+
+        }
+
+      },
+
+      {
+
+        "id": 15,
+
+        "question": {
+
+          "mr": "जबलपूर येथे ५२ व्या नेटिव्ह इन्फंट्रीला देशप्रेमाच्या कविता रचून प्रेरणा दिल्याबद्दल कोणत्या गोंड राजाला आणि त्यांच्या मुलाला ब्रिटिशांनी तोफेच्या तोंडी दिले?",
+
+          "en": "Which aged Gond ruler of Garha-Mandla and his son were executed by being blown from cannons for inspiring the 52nd Native Infantry with patriotic poems?"
+
+        },
+
+        "options": [
+
+          { "mr": "राजा शंकर शाह आणि कुंवर रघुनाथ शाह", "en": "Raja Shankar Shah and Kunwar Raghunath Shah" },
+
+          { "mr": "बाबूराव शेडमाके आणि व्यंकटराव", "en": "Baburao Shedmake and Venkat Rao" },
+
+          { "mr": "भीमा नाईक आणि काजीसिंग", "en": "Bhima Naik and Kajisingh" },
+
+          { "mr": "सुरेंद्र साई आणि उदंत साई", "en": "Surendra Sai and Udant Sai" }
+
+        ],
+
+        "correctAnswerIndex": 0,
+
+        "explanation": {
+
+          "mr": "१८ सप्टेंबर १८५७ रोजी जबलपूर येथे वृद्ध गोंड राजे शंकर शाह (वय ७०) आणि त्यांचे पुत्र रघुनाथ शाह यांना ब्रिटिशांनी तोफेच्या तोंडी देऊन निर्घृणपणे उडवून दिले.",
+
+          "en": "On 18 September 1857, the 70-year-old Gond king Raja Shankar Shah and his son Raghunath Shah were publicly tied to cannon mouths and blown apart at Jabalpur for writing verses rallying sepoys."
+
+        }
+
+      },
+
+      {
+
+        "id": 16,
+
+        "question": {
+
+          "mr": "मथुरेमध्ये १८५७ च्या उठावात स्थानिक जाट शेतकऱ्यांचे नेतृत्व खालीलपैकी कोणी केले?",
+
+          "en": "Who led the peasant rebellion of Jats in the Mathura region in 1857?"
+
+        },
+
+        "options": [
+
+          { "mr": "देवी सिंग (Devi Singh)", "en": "Devi Singh" },
+
+          { "mr": "कदम सिंग (Kadam Singh)", "en": "Kadam Singh" },
+
+          { "mr": "शाह मल (Shah Mal)", "en": "Shah Mal" },
+
+          { "mr": "कुंवर सिंग", "en": "Kunwar Singh" }
+
+        ],
+
+        "correctAnswerIndex": 0,
+
+        "explanation": {
+
+          "mr": "मथुरा येथे देवी सिंग यांनी स्थानिक शेतकऱ्यांचे नेतृत्व केले, तर मेरठजवळ कदम सिंग आणि बागपत (बडौत) भागात शाह मल यांनी नेतृत्व केले होते.",
+
+          "en": "Devi Singh led the rural uprising in Mathura, while Kadam Singh led at Meerut and Shah Mal organized the peasants of Baraut (Baghpat)."
+
+        }
+
+      },
+
+      {
+
+        "id": 17,
+
+        "question": {
+
+          "mr": "बागपत (उत्तर प्रदेश) येथील बडौत परगण्यात १८५७ च्या उठावात ८४ खेड्यांच्या शेतकऱ्यांना संघटित करून ब्रिटिशांची रसद तोडणारे नेते कोण होते?",
+
+          "en": "Who organized the cultivators of 84 villages (Chaurasi des) in the Baraut (Baghpat) region to sever British communications in 1857?"
+
+        },
+
+        "options": [
+
+          { "mr": "शाह मल (Shah Mal)", "en": "Shah Mal" },
+
+          { "mr": "देवी सिंग", "en": "Devi Singh" },
+
+          { "mr": "कदम सिंग", "en": "Kadam Singh" },
+
+          { "mr": "अहमदुल्ला शाह", "en": "Ahmadullah Shah" }
+
+        ],
+
+        "correctAnswerIndex": 0,
+
+        "explanation": {
+
+          "mr": "शाह मल यांनी बडौत भागातील शेतकऱ्यांना संघटित करून यमुना नदीवरील पुलाचे नुकसान केले आणि दिल्लीला रसद पुरवली. जुलै १८५७ मध्ये डनलॉपच्या सैन्याविरुद्ध लढताना ते मारले गेले.",
+
+          "en": "Shah Mal mobilized the Jat peasants of Baraut, destroying bridges on the Yamuna and supplying food to Delhi rebels until he was killed in action in July 1857."
+
+        }
+
+      },
+
+      {
+
+        "id": 18,
+
+        "question": {
+
+          "mr": "१८५७ च्या उठावात ग्वाल्हेरचे शिंदे आणि हैदराबादचे निजाम यांच्या भूमिकेबाबत खालीलपैकी कोणते विधान बरोबर आहे?",
+
+          "en": "Which of the following statements accurately characterizes the stance of the Scindias of Gwalior and the Nizam of Hyderabad in 1857?"
+
+        },
+
+        "options": [
+
+          { "mr": "त्यांनी ब्रिटिशांशी एकनिष्ठ राहून सक्रिय मदत केली.", "en": "They remained staunchly loyal to the British and provided active assistance." },
+
+          { "mr": "त्यांनी बंडखोरांचे संपूर्ण लष्करी नेतृत्व स्वीकारले.", "en": "They assumed military leadership of the rebel forces." },
+
+          { "mr": "त्यांनी रशियाकडून मदत मागवून ब्रिटिशांवर आक्रमण केले.", "en": "They solicited Russian aid to declare war on the British." },
+
+          { "mr": "त्यांनी आपली राज्ये तात्काळ विसर्जित केली.", "en": "They immediately abdicated their thrones." }
+
+        ],
+
+        "correctAnswerIndex": 0,
+
+        "explanation": {
+
+          "mr": "ग्वाल्हेरचे जयाजीराव शिंदे, दिवाण दिनकरराव आणि हैदराबादचे सालार जंग यांनी ब्रिटिशांना मदत केली. म्हणूनच लॉर्ड कॅनिंगने म्हटले होते, 'जर शिंद्यांनी बंडात भाग घेतला असता, तर मला उद्याच गाशा गुंडाळावा लागला असता.'",
+
+          "en": "Both the Scindias of Gwalior and the Nizam of Hyderabad remained loyal to the Company. Lord Canning famously observed: 'If the Scindia joins the rebels, I will pack off tomorrow'."
+
+        }
+
+      },
+
+      {
+
+        "id": 19,
+
+        "question": {
+
+          "mr": "१८५७ च्या उठावाचे प्रत्यक्षदर्शी वर्णन 'माझा प्रवास' या पुस्तकात खालीलपैकी कोणी लिहून ठेवले आहे?",
+
+          "en": "Which Marathi traveler wrote the eyewitness travelogue 'Majha Pravas' depicting the ground reality of the 1857 uprising?"
+
+        },
+
+        "options": [
+
+          { "mr": "विष्णूभट गोडसे", "en": "Vishnubhat Godse" },
+
+          { "mr": "रंगो बापूजी", "en": "Rango Bapuji" },
+
+          { "mr": "गोपाळ हरी देशमुख", "en": "Gopal Hari Deshmukh" },
+
+          { "mr": "महात्मा फुले", "en": "Mahatma Phule" }
+
+        ],
+
+        "correctAnswerIndex": 0,
+
+        "explanation": {
+
+          "mr": "विष्णूभट गोडसे हे पेशव्यांच्या उत्तर भारतातील यज्ञासाठी गेले असताना १८५७ च्या उठावात सापडले. त्यांनी झाशी, कालपी व ग्वाल्हेरचा लढा स्वतः डोळ्यांनी पाहिला आणि 'माझा प्रवास' या ग्रंथात त्याचे वर्णन केले.",
+
+          "en": "Vishnubhat Godse, a priest from Varsai (Raigad), witnessed the revolt at Jhansi, Kalpi, and Gwalior and documented it in his authentic travelogue 'Majha Pravas'."
+
+        }
+
+      },
+
+      {
+
+        "id": 20,
+
+        "question": {
+
+          "mr": "१८५७ च्या उठावात ब्रिटिशांच्या बाजूने लढून बंडखोरांना चिरडण्यात खालीलपैकी कोणत्या सैनिकांनी महत्त्वाची भूमिका बजावली?",
+
+          "en": "Which regiments actively supported the British forces in suppressing the 1857 uprising?"
+
+        },
+
+        "options": [
+
+          { "mr": "शीख आणि गुरखा रेजिमेंट्स (Sikh and Gurkha Regiments)", "en": "Sikh and Gurkha Regiments" },
+
+          { "mr": "अवध रेजिमेंट", "en": "Awadh Regiment" },
+
+          { "mr": "बंगाल तोफखाना", "en": "Bengal Artillery" },
+
+          { "mr": "ग्वाल्हेर कंन्टिजंट", "en": "Gwalior Contingent" }
+
+        ],
+
+        "correctAnswerIndex": 0,
+
+        "explanation": {
+
+          "mr": "पंजाबमधील शीख सैन्य आणि नेपाळचे गुरखा सैन्य ब्रिटिशांच्या बाजूने ठाम राहिले. नेपाळचे पंतप्रधान जंग बहादूर यांनी स्वतः ९,००० गुरखा सैनिकांसह लखनौ जिंकण्यात मदत केली.",
+
+          "en": "Sikh soldiers from Punjab and Gurkha soldiers from Nepal supported the British. Prime Minister Jang Bahadur of Nepal personally led 9,000 Gurkhas to help recapture Lucknow."
+
+        }
+
+      },
+
+      {
+
+        "id": 21,
+
+        "question": {
+
+          "mr": "१८५७ च्या उठावाच्या अपयशाचे मुख्य कारण खालीलपैकी कोणते होते?",
+
+          "en": "What was the foremost strategic cause behind the failure of the Revolt of 1857?"
+
+        },
+
+        "options": [
+
+          { "mr": "अखिल भारतीय समन्वयाचा अभाव, मर्यादित व्याप्ती, आधुनिक शस्त्रास्त्रांची कमतरता आणि एकाच केंद्रीय उद्दिष्टाचा अभाव", "en": "Lack of all-India coordination, localized character, deficiency in modern weaponry, and absence of a unified ideology" },
+
+          { "mr": "ब्रिटिश सैनिकांची संख्या भारतीयांपेक्षा दसपट जास्त असणे", "en": "British troops outnumbering Indian soldiers tenfold" },
+
+          { "mr": "मुघल सम्राटाने ब्रिटिशांना संपूर्ण खजिना देणे", "en": "The Mughal Emperor funding the British military exchequer" },
+
+          { "mr": "भारतीय सैनिकांनी बंदुका वापरण्यास नकार देणे", "en": "Indian soldiers refusing to use firearms altogether" }
+
+        ],
+
+        "correctAnswerIndex": 0,
+
+        "explanation": {
+
+          "mr": "१८५७ चा लढा प्रामुख्याने उत्तर व मध्य भारतापुरता मर्यादित राहिला. दक्षिण भारत, पंजाब व बंगाल शांत राहिले. शिक्षित मध्यम वर्ग अलिप्त राहिला आणि आधुनिक संपर्क साधने ब्रिटिशांच्या हाती होती.",
+
+          "en": "The revolt was geographically confined primarily to northern and central India. South India and Bengal remained largely quiet, educated elites remained detached, and rebels lacked unified central planning."
+
+        }
+
+      },
+
+      {
+
+        "id": 22,
+
+        "question": {
+
+          "mr": "१८५७ च्या उठावानंतर १ नोव्हेंबर १८५८ रोजी अलाहाबाद येथे राणी व्हिक्टोरियाचा जाहीरनामा कोणी वाचून दाखवला?",
+
+          "en": "Who read out Queen Victoria's historic Proclamation at the Allahabad Durbar on 1 November 1858?"
+
+        },
+
+        "options": [
+
+          { "mr": "लॉर्ड कॅनिंग (Lord Canning)", "en": "Lord Canning" },
+
+          { "mr": "लॉर्ड डलहौसी", "en": "Lord Dalhousie" },
+
+          { "mr": "सर जॉन लॉरेन्स", "en": "Sir John Lawrence" },
+
+          { "mr": "लॉर्ड एल्गिन", "en": "Lord Elgin" }
+
+        ],
+
+        "correctAnswerIndex": 0,
+
+        "explanation": {
+
+          "mr": "१ नोव्हेंबर १८५८ रोजी अलाहाबादच्या भव्य दरबारात लॉर्ड कॅनिंग यांनी राणीचा जाहीरनामा वाचला, ज्याद्वारे कंपनीची राजवट संपवून सत्ता ब्रिटिश मुकुटाकडे सोपवण्यात आली.",
+
+          "en": "On 1 November 1858, Lord Canning read Queen Victoria's Proclamation at the Allahabad Durbar, transferring the administration of India from the Company to the Crown."
+
+        }
+
+      },
+
+      {
+
+        "id": 23,
+
+        "question": {
+
+          "mr": "राणीच्या १८५८ च्या जाहीरनाम्यानुसार संस्थानांबाबत कोणते महत्त्वाचे आश्वासन देण्यात आले?",
+
+          "en": "Which major pledge was extended to Indian princely states in Queen Victoria's Proclamation of 1858?"
+
+        },
+
+        "options": [
+
+          { "mr": "साम्राज्य विस्ताराचा अंत आणि संस्थानांचे दत्तक विधान व अंतर्गत अधिकार अबाधित राखणे", "en": "Cessation of territorial annexations and honoring princely treaties and adoption rights" },
+
+          { "mr": "सर्व संस्थाने ब्रिटिश प्रांतात त्वरित विलीन करणे", "en": "Immediate annexation of all princely territories into British provinces" },
+
+          { "mr": "संस्थानिकांची सर्व संपत्ती जप्त करणे", "en": "Confiscation of all princely assets" },
+
+          { "mr": "संस्थानिकांना ब्रिटनच्या संसदेत मंत्री करणे", "en": "Inducting native rulers into the British Cabinet" }
+
+        ],
+
+        "correctAnswerIndex": 0,
+
+        "explanation": {
+
+          "mr": "डलहौसीचे खालसा धोरण (Doctrine of Lapse) रद्द करण्यात आले. संस्थानिकांना दत्तक घेण्याची परवानगी दिली गेली आणि अस्तित्वात असलेल्या करारांचा सन्मान करण्याचे आश्वासन दिले.",
+
+          "en": "The Doctrine of Lapse was abandoned. Princely states were guaranteed their territorial integrity, adoption rights were restored, and existing treaties were honored."
+
+        }
+
+      },
+
+      {
+
+        "id": 24,
+
+        "question": {
+
+          "mr": "१८५७ च्या उठावानंतर ब्रिटिश सैन्यात युरोपियन आणि भारतीय सैनिकांचे प्रमाण निश्चित करण्यासाठी कोणता आयोग नेमण्यात आला?",
+
+          "en": "Which commission was appointed in 1858 to reorganize the British Indian Army and fix the European-to-Indian soldier ratio?"
+
+        },
+
+        "options": [
+
+          { "mr": "पील आयोग (Peel Commission)", "en": "Peel Commission" },
+
+          { "mr": "हंटर आयोग", "en": "Hunter Commission" },
+
+          { "mr": "स्ट्रॅची आयोग", "en": "Strachey Commission" },
+
+          { "mr": "मॅकडोनेल आयोग", "en": "MacDonnell Commission" }
+
+        ],
+
+        "correctAnswerIndex": 0,
+
+        "explanation": {
+
+          "mr": "मेजर जनरल जोनाथन पील यांच्या अध्यक्षतेखाली १८५९ मध्ये पील आयोग नेमला गेला. याच्या शिफारशीनुसार बंगालमध्ये युरोपियन:भारतीय प्रमाण १:२ आणि मद्रास व मुंबईत १:३ निश्चित करण्यात आले.",
+
+          "en": "The Peel Commission (1859) recommended fixing the ratio of European to Indian troops at 1:2 in the Bengal Army and 1:3 in Madras and Bombay Presidencies, with artillery retained exclusively in European hands."
+
+        }
+
+      },
+
+      {
+
+        "id": 25,
+
+        "question": {
+
+          "mr": "१८५७ च्या उठावाला \"सभ्यतेविरुद्ध रानटीपणाचा संघर्ष\" (Conflict between civilization and barbarism) असे कोणत्या ब्रिटिश इतिहासकाराने म्हटले?",
+
+          "en": "Which British historian biasedly depicted the Revolt of 1857 as a 'conflict between civilization and barbarism'?"
+
+        },
+
+        "options": [
+
+          { "mr": "टी. आर. होम्स (T. R. Holmes)", "en": "T. R. Holmes" },
+
+          { "mr": "सर जॉन सीले", "en": "Sir John Seeley" },
+
+          { "mr": "जेम्स आऊट्रम", "en": "James Outram" },
+
+          { "mr": "एल. ई. आर. रीस", "en": "L. E. R. Rees" }
+
+        ],
+
+        "correctAnswerIndex": 0,
+
+        "explanation": {
+
+          "mr": "टी. आर. होम्स याने या संघर्षाचे वर्णन 'सभ्यता आणि रानटीपणातील द्वंद्व' असे केले. तर एल. ई. आर. रीस याने 'धर्मांध ख्रिश्चनांविरुद्ध धर्मवेड्यांचा लढा' आणि आऊट्रमने 'मुस्लिम षड्यंत्र' म्हटले होते.",
+
+          "en": "T. R. Holmes characterized the uprising as a 'conflict between civilization and barbarism'. In contrast, Outram called it a 'Mohammadan conspiracy' and Rees called it a 'war of religious fanatics'."
+
+        }
+
+      }
+
+    ]
+
+  }

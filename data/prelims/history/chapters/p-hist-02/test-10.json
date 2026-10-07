@@ -1,0 +1,464 @@
+{
+  "testId": "p-hist-02-t10",
+  "title": {
+    "mr": "भारतातील ब्रिटिश सत्तेचा विस्तार व प्रशासन — सराव 10",
+    "en": "British Rule in India — Practice Test 10"
+  },
+  "durationMinutes": 20,
+  "marksPerQuestion": 1,
+  "negativeMarking": 0.25,
+  "totalMarks": 25,
+  "difficulty": "मध्यम ते काठिण्य",
+  "questions": [
+    {
+      "id": 1,
+      "question": {
+        "mr": "१७७३ च्या नियामक कायद्याने (Regulating Act 1773) ईस्ट इंडिया कंपनीच्या कारभारात आणलेल्या खालील तरतुदींचा विचार करा:\nअ. कंपनीच्या संचालकांना (Court of Directors) भारतातील महसूल, नागरी आणि लष्करी व्यवहारांची सर्व कागदपत्रे ब्रिटिश सरकारला सादर करणे बंधनकारक करण्यात आले.\nब. गव्हर्नर-जनरलच्या कौन्सिलमधील सदस्यांचा कार्यकाळ ५ वर्षे निश्चित करण्यात आला आणि त्यांना केवळ ब्रिटिश राजाच्या संमतीनेच मुदतीपूर्वी पदावरून दूर करता येत असे.\nवरीलपैकी कोणते/ती विधान/ने बरोबर आहेत?",
+        "en": "Consider the following provisions introduced by the Regulating Act of 1773 into the affairs of the East India Company:\na. The Court of Directors was mandated to place all correspondence regarding civil, military, and revenue affairs in India before the British Government.\nb. The tenure of councillors in the Governor-General's Council was fixed at 5 years, removable prior to term solely by the British Crown.\nWhich of the statements given above is/are correct?"
+      },
+      "options": [
+        { "mr": "फक्त अ", "en": "Only a" },
+        { "mr": "फक्त ब", "en": "Only b" },
+        { "mr": "अ आणि ब दोन्ही", "en": "Both a and b" },
+        { "mr": "दोन्ही नाही", "en": "Neither a nor b" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "दोन्ही विधाने बरोबर आहेत. १७७३ च्या कायद्याने ब्रिटिश संसदेचे कंपनीच्या व्यवहारांवर प्रथमच थेट नियंत्रण प्रस्थापित केले. संचालकांना महसुली कागदपत्रे ब्रिटिश तिजोरीला (Treasury) आणि नागरी-लष्करी पत्रव्यवहार सेक्रेटरी ऑफ स्टेटला देणे सक्तीचे झाले. तसेच कौन्सिलच्या सदस्यांचा कार्यकाळ ५ वर्षे ठरवून त्यांना हटवण्याचा अधिकार ब्रिटिश मुकुटाकडे ठेवण्यात आला.",
+        "en": "Both statements are correct. The Regulating Act of 1773 established parliamentary supervision over the Company: the Court of Directors had to submit all revenue dispatches to the British Treasury and civil/military correspondence to the Secretary of State. The initial councillors were appointed for a 5-year tenure, removable only by the Crown on representation of the Directors."
+      }
+    },
+    {
+      "id": 2,
+      "question": {
+        "mr": "१७८४ च्या पिट्स इंडिया कायद्यानुसार (Pitt's India Act 1784) ब्रिटिश ईस्ट इंडिया कंपनीच्या ताब्यातील भूप्रदेशांचे अधिकृत वर्णन पहिल्यांदा कोणत्या शब्दांत करण्यात आले?",
+        "en": "Under Pitt's India Act of 1784, how were the territorial possessions of the East India Company formally designated for the very first time in statutory legislation?"
+      },
+      "options": [
+        { "mr": "\"भारतातील ब्रिटिश मालमत्ता / प्रदेश\" (British Possessions in India)", "en": "\"British Possessions in India\"" },
+        { "mr": "\"ईस्ट इंडिया कंपनीची संस्थाने\" (Estates of the East India Company)", "en": "\"Estates of the East India Company\"" },
+        { "mr": "\"हिंदुस्थानचे ब्रिटिश साम्राज्य\" (British Empire of Hindustan)", "en": "\"British Empire of Hindustan\"" },
+        { "mr": "\"मुघल सम्राटाचे संरक्षित मुलूख\" (Protected Territories of the Mughal Emperor)", "en": "\"Protected Territories of the Mughal Emperor\"" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१७८४ च्या कायद्याच्या प्रस्तावनेत सर्वप्रथम कंपनीच्या अधिपत्याखालील प्रदेशांचा उल्लेख 'भारतातील ब्रिटिश मालमत्ता' (British Possessions in India) असा करण्यात आला, ज्याद्वारे ब्रिटिश राजमुकुटाचे या प्रदेशांवरील सार्वभौमत्व कायद्याने प्रथमच अधोरेखित झाले.",
+        "en": "Pitt's India Act of 1784 is constitutionally momentous because the Company's territories were explicitly designated for the first time as 'British Possessions in India', asserting the paramount sovereign claim of the British Crown over the Company's conquests."
+      }
+    },
+    {
+      "id": 3,
+      "question": {
+        "mr": "१७९३ मध्ये लॉर्ड कॉर्नवॉलिसने सुरू केलेल्या 'कायमधारा पद्धतीबाबत' (Permanent Settlement) खालीलपैकी कोणते विधान चुकीचे आहे?",
+        "en": "Which of the following statements is incorrect regarding the Permanent Settlement introduced by Lord Cornwallis in 1793?"
+      },
+      "options": [
+        { "mr": "जमीनदारांना जमिनीचे कायमस्वरूपी मालकी हक्क देण्यात आले आणि जमिनीची विक्री किंवा हस्तांतरण करण्याचा अधिकार मिळाला.", "en": "Zamindars were recognized as permanent hereditary owners of the soil with transferable and saleable property rights." },
+        { "mr": "शासनाला जमीनदाराकडून मिळणारा वार्षिक महसूल कायमस्वरूपी निश्चित करण्यात आला, ज्यामध्ये भविष्यात कोणतीही वाढ होणार नव्हती.", "en": "The annual revenue demand payable to the colonial state was fixed in perpetuity, never to be augmented in the future." },
+        { "mr": "या पद्धतीमुळे प्रत्यक्ष शेती कसणाऱ्या कुळांचे (Raiyats) जमिनीवरील पारंपरिक हक्क अधिक सुरक्षित झाले आणि कुळांचे रक्षण झाले.", "en": "Traditional rights of the actual cultivating tenants (Raiyats) became thoroughly safeguarded and legally secure." },
+        { "mr": "ही पद्धत बंगाल, बिहार, ओरिसा आणि मद्रासच्या उत्तरेकडील जिल्ह्यांमध्ये लागू करण्यात आली.", "en": "This settlement was instituted across Bengal, Bihar, Orissa, and the Northern Circars of Madras." }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "विधान ३ चुकीचे आहे. कायमधारा पद्धतीमुळे प्रत्यक्ष शेतकरी (कुळ) केवळ जमीनदारांच्या मर्जीवर जगणारे भाडेकरू बनले. त्यांचे पिढीजात जमिनीचे हक्क हिरावून घेण्यात आले आणि जमीनदारांनी त्यांच्याकडून मनमानी भाडे वसूल करून त्यांचे प्रचंड शोषण केले. उर्वरित सर्व विधाने कायमधारा पद्धतीची खरी वैशिष्ट्ये आहेत.",
+        "en": "Statement 3 is incorrect. The Permanent Settlement severely compromised the traditional rights of the cultivating peasantry (raiyats), reducing them to mere tenants-at-will vulnerable to exorbitant rack-renting and arbitrary evictions by zamindars. All other statements are historically accurate."
+      }
+    },
+    {
+      "id": 4,
+      "question": {
+        "mr": "१८०२ मध्ये ईस्ट इंडिया कंपनीने दुसऱ्या बाजीराव पेशव्याशी केलेल्या 'वसईच्या तहावर' (Treaty of Bassein) ब्रिटिशांच्या वतीने स्वाक्षरी करणारे अधिकारी कोण होते?",
+        "en": "Who signed the historic Treaty of Bassein on 31 December 1802 on behalf of the British East India Company with Peshwa Baji Rao II?"
+      },
+      "options": [
+        { "mr": "कर्नल बॅरी क्लोज (Colonel Barry Close)", "en": "Colonel Barry Close" },
+        { "mr": "आर्थर वेलस्ली (Arthur Wellesley)", "en": "Arthur Wellesley" },
+        { "mr": "माउंटस्टुअर्ट एल्फिन्स्टन (Mountstuart Elphinstone)", "en": "Mountstuart Elphinstone" },
+        { "mr": "जनरल जेरार्ड लेक (General Gerard Lake)", "en": "General Gerard Lake" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "३१ डिसेंबर १८०२ रोजी वसई येथे झालेल्या तहावर पेशवे बाजीराव दुसरे आणि ब्रिटिशांचे रेसिडेंट कर्नल बॅरी क्लोज (Colonel Barry Close) यांनी गव्हर्नर-जनरल लॉर्ड वेलस्ली यांच्या वतीने अधिकृत स्वाक्षरी केली होती.",
+        "en": "The Treaty of Bassein was signed on 31 December 1802 between Peshwa Baji Rao II and Colonel Barry Close, the British Resident at Pune, who acted as the plenipotentiary representative of Governor-General Lord Wellesley."
+      }
+    },
+    {
+      "id": 5,
+      "question": {
+        "mr": "१८०६ मध्ये लंडनजवळ हर्टफोर्डशायर येथे स्थापन झालेल्या 'ईस्ट इंडिया कॉलेज' (Haileybury College) मधील प्राध्यापकांमध्ये खालीलपैकी कोणत्या प्रख्यात ब्रिटिश अर्थतज्ज्ञाचा समावेश होता?",
+        "en": "Which world-renowned classical economist served as a prominent professor of political economy and history at the East India College (Haileybury) established in 1806?"
+      },
+      "options": [
+        { "mr": "थॉमस रॉबर्ट माल्थस (Thomas Robert Malthus)", "en": "Thomas Robert Malthus" },
+        { "mr": "ॲडम स्मिथ (Adam Smith)", "en": "Adam Smith" },
+        { "mr": "डेव्हिड रिकार्डो (David Ricardo)", "en": "David Ricardo" },
+        { "mr": "जॉन स्टुअर्ट मिल (John Stuart Mill)", "en": "John Stuart Mill" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "लोकसंख्या सिद्धांताचे जनक मानले जाणारे प्रख्यात ब्रिटिश अर्थतज्ज्ञ थॉमस रॉबर्ट माल्थस हे १८०५ पासून १८३४ मधील मृत्यूपर्यंत हेलिबरी येथील ईस्ट इंडिया कॉलेजमध्ये राज्यशास्त्र आणि राजकीय अर्थशास्त्राचे (Political Economy) प्राध्यापक म्हणून कार्यरत होते.",
+        "en": "Thomas Robert Malthus, the renowned classical economist famous for his essay on population, was appointed in 1805 as the first professor of history and political economy at Haileybury College, where he taught generations of Indian civil servants until his death in 1834."
+      }
+    },
+    {
+      "id": 6,
+      "question": {
+        "mr": "१८१३ च्या सनदी कायद्याद्वारे (Charter Act 1813) भारतातील ख्रिश्चन चर्चच्या अधिकृत संघटनेसाठी कलकत्ता येथे कोणाची नियुक्ती करण्याची तरतूद करण्यात आली?",
+        "en": "Under the Charter Act of 1813, what ecclesiastical administrative office was instituted at Calcutta to supervise Christian missionary operations and chaplaincies across British India?"
+      },
+      "options": [
+        { "mr": "कलकत्त्याचे एक बिशप (Bishop of Calcutta) आणि तीन आर्चडीकन", "en": "A Bishop of Calcutta assisted by three Archdeacons" },
+        { "mr": "पोपचे मुख्य राजदूत (Papal Nuncio)", "en": "Papal Nuncio to the Mughal Court" },
+        { "mr": "कँटरबरीचे मुख्य आर्चबिशप", "en": "Archbishop of Canterbury" },
+        { "mr": "सर्वोच्च धार्मिक आयुक्त (Supreme Religious Commissioner)", "en": "Supreme Religious Commissioner" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१८१३ च्या कायद्यानुसार ख्रिश्चन धर्मप्रचाराला कायदेशीर परवानगी देण्यात आली आणि ईस्ट इंडिया कंपनीच्या अखत्यारीतील चर्च प्रशासनासाठी कलकत्ता येथे एक बिशप (Bishop of Calcutta) आणि मुंबई, मद्रास व कलकत्तासाठी प्रत्येकी एक आर्चडीकन (Archdeacon) नेमण्याची वैधानिक तरतूद करण्यात आली. थॉमस फॅनशॉ मिडलटन हे पहिले बिशप बनले.",
+        "en": "Section 49 of the Charter Act of 1813 created an ecclesiastical establishment for British India, establishing an Anglican bishopric at Calcutta alongside three archdeaconries (Madras, Bombay, Calcutta), with Thomas Fanshaw Middleton installed as the first Bishop."
+      }
+    },
+    {
+      "id": 7,
+      "question": {
+        "mr": "१८१७ मध्ये नागपूर, पुणे आणि इंदूर येथे पेटलेल्या तिसऱ्या इंग्रज-मराठा युद्धादरम्यान ब्रिटिश सैन्याचे सरसेनापती (Commander-in-Chief) कोण होते?",
+        "en": "Who served as the Commander-in-Chief and director of the Grand Army that suppressed the Marathas and Pindaris during the Third Anglo-Maratha War (1817–1818)?"
+      },
+      "options": [
+        { "mr": "लॉर्ड हेस्टिंग्स (Lord Hastings / Earl of Moira)", "en": "Lord Hastings (Earl of Moira)" },
+        { "mr": "सर थॉमस हिस्लॉप (Sir Thomas Hislop)", "en": "Sir Thomas Hislop" },
+        { "mr": "जनरल जेरार्ड लेक (General Gerard Lake)", "en": "General Gerard Lake" },
+        { "mr": "जनरल ह्यू गॉफ (General Hugh Gough)", "en": "General Hugh Gough" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "तिसऱ्या इंग्रज-मराठा युद्धाच्या वेळी गव्हर्नर-जनरल लॉर्ड हेस्टिंग्स (ज्याला पूर्वी लॉर्ड मॉइरा म्हटले जाई) हा स्वतः ब्रिटिश सैन्याचा सर्वोच्च सरसेनापती (Commander-in-Chief) होता. त्याने उत्तर फौजेचे प्रत्यक्ष नेतृत्व केले, तर सर थॉमस हिस्लॉप यांनी दक्षिण फौजेचे (Army of the Deccan) नेतृत्व केले.",
+        "en": "During the Third Anglo-Maratha War, Governor-General Lord Hastings (the Marquess of Hastings / Earl of Moira) held the concurrent supreme rank of Commander-in-Chief, directly overseeing operations of the Northern Grand Army against the Maratha confederates and Pindaris."
+      }
+    },
+    {
+      "id": 8,
+      "question": {
+        "mr": "१८२२ च्या महालवारी महसूल पद्धतीमध्ये (Mahalwari System) महसुली नोंदी ठेवणाऱ्या आणि गावातून कर गोळा करणाऱ्या पारंपारिक प्रमुखाला उत्तर भारतात कोणत्या नावाने ओळखले जात असे?",
+        "en": "In the Mahalwari revenue settlement in Northern India under Regulation VII of 1822, what was the hereditary village representative responsible for remitting revenue to the treasury called?"
+      },
+      "options": [
+        { "mr": "लंबरदार / नंबरदार (Lambardar)", "en": "Lambardar" },
+        { "mr": "तालुकदार (Talukdar)", "en": "Talukdar" },
+        { "mr": "मिरासदार (Mirasdar)", "en": "Mirasdar" },
+        { "mr": "इनामदार (Inamdar)", "en": "Inamdar" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "महालवारी पद्धतीत महसूल संपूर्ण महालावर (गावावर) संयुक्तपणे आकारला जाई. गावकऱ्यांच्या वतीने सरकारला महसूल भरण्याची आणि हिशोब ठेवण्याची जबाबदारी गावातील एका प्रतिष्ठित प्रमुखावर असे, ज्याला 'लंबरदार' (Lambardar किंवा नंबरदार) म्हटले जाई. त्याला या कामासाठी सुमारे ५% हिस्सा (पचोत्रा) मिळत असे.",
+        "en": "Under the Mahalwari system in North-Western Provinces and Punjab, the state entered into revenue agreements with the village body via an accredited village headman known as the 'Lambardar', who was legally accountable for realizing assessments and depositing them in the treasury in return for a collection commission."
+      }
+    },
+    {
+      "id": 9,
+      "question": {
+        "mr": "१८३१ मध्ये लॉर्ड विल्यम बेंटिंकने न्यायिक प्रशासनात स्थानिक भारतीयांचा सहभाग वाढवण्यासाठी कोणते सर्वोच्च न्यायिक पद निर्माण केले?",
+        "en": "In 1831, which senior judicial office was created by Lord William Bentinck to increase Indian participation in civil judicial administration?"
+      },
+      "options": [
+        { "mr": "सदर अमीन / मुख्य सदर अमीन (Principal Sadar Amin)", "en": "Principal Sadar Amin" },
+        { "mr": "जिल्हा सत्र न्यायाधीश (District Sessions Judge)", "en": "District Sessions Judge" },
+        { "mr": "अतिरिक्त हायकोर्ट न्यायाधीश", "en": "Additional High Court Judge" },
+        { "mr": "रजिस्ट्रार न्यायालयीन अधिकारी", "en": "Registrar Judicial Officer" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "लॉर्ड कॉर्नवॉलिसने भारतीयांना उच्च पदांवरून पूर्णपणे वगळले होते. बेंटिंकने १८३१ मध्ये 'प्रिन्सिपल सदर अमीन' (Principal Sadar Amin) हे पद निर्माण करून भारतीय न्यायाधीशांना ₹५,००० पर्यंतच्या (आणि नंतर अमर्याद मूल्याच्या) दिवाणी दाव्यांची सुनावणी करण्याचे अधिकार दिले.",
+        "en": "Reversing Cornwallis's exclusionary racial bias, Lord William Bentinck created the office of Principal Sadar Amin in 1831, empowering experienced Indian judicial officers to adjudicate civil litigation involving claims up to ₹5,000 (and later unrestricted monetary jurisdiction)."
+      }
+    },
+    {
+      "id": 10,
+      "question": {
+        "mr": "१८३३ च्या सनदी कायद्याद्वारे (Charter Act 1833) भारतातील कायद्यांची संहिता तयार करण्यासाठी नेमण्यात आलेल्या 'पहिल्या विधी आयोगामध्ये' (First Law Commission) मेकॉलव्यतिरिक्त खालीलपैकी कोणत्या सदस्याचा समावेश होता?",
+        "en": "In the First Law Commission constituted in 1834 under the presidency of Lord Macaulay, who among the following was one of the appointed commissioners?"
+      },
+      "options": [
+        { "mr": "सी. एच. कॅमेरॉन (C. H. Cameron)", "en": "C. H. Cameron" },
+        { "mr": "सर विल्यम जोन्स (Sir William Jones)", "en": "Sir William Jones" },
+        { "mr": "जेम्स विल्सन (James Wilson)", "en": "James Wilson" },
+        { "mr": "सर जॉर्ज कॅम्पबेल (Sir George Campbell)", "en": "Sir George Campbell" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१८३४ च्या पहिल्या विधी आयोगात अध्यक्ष लॉर्ड मेकॉल यांच्यासह जे. एम. मॅक्लिओड (J. M. Macleod), जी. डब्ल्यू. अँडरसन (G. W. Anderson) आणि एफ. मिलेट (F. Millett) हे सदस्य होते, तर पुढे सी. एच. कॅमेरॉन (C. H. Cameron) यांनी आयोगाचे प्रमुख म्हणूनही काम केले. या आयोगाने भारतीय दंड संहितेचा (IPC) मसुदा तयार केला.",
+        "en": "The First Law Commission of 1834, chaired by Lord Macaulay, included commissioners C. H. Cameron, J. M. Macleod, G. W. Anderson, and F. Millett, who collaboratively researched and compiled the original draft of the Indian Penal Code."
+      }
+    },
+    {
+      "id": 11,
+      "question": {
+        "mr": "१८३५ मध्ये सर चार्ल्स मेटकॉफ यांनी वृत्तपत्रांवरील पूर्व-परवान्याची (Licensing) अट रद्द करताना प्रकाशकांवर केवळ कोणती साधी प्रशासकीय अट ठेवली होती?",
+        "en": "Under the liberal Press Act of 1835 enacted by Sir Charles Metcalfe, which simple administrative requirement replaced the earlier pre-licensing system?"
+      },
+      "options": [
+        { "mr": "मुद्रक आणि प्रकाशकाने छापखान्याचे स्थान आणि स्वतःचे नाव जिल्हा दंडाधिकाऱ्याकडे जाहीर करणे (Declaration of ownership/location)", "en": "The printer and publisher simply had to submit a statutory declaration giving an account of the location of the press and their names" },
+        { "mr": "दरवर्षी ₹१०,००० ची सुरक्षा ठेव सरकारकडे जमा करणे", "en": "Depositing an annual security guarantee of ₹10,000 with the exchequer" },
+        { "mr": "वृत्तपत्राची प्रत्येक प्रत प्रसिद्धीपूर्वी सरकारी सेन्सॉरकडे पाठवणे", "en": "Mandatory advance clearance of every printed proof sheet by an imperial censor" },
+        { "mr": "केवळ लंडन विद्यापीठाच्या पदवीधरांनाच संपादक म्हणून नेमणे", "en": "Employing exclusively graduates of London University as accredited editors" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "मेटकॉफच्या १८३५ च्या कायद्याने मुद्रकांना कोणत्याही सरकारी पूर्वपरवानगीची किंवा लायसन्सची गरज ठेवली नाही. प्रकाशकाने केवळ दंडाधिकाऱ्यापुढे जाऊन 'मी या छापखान्याचा मालक/मुद्रक आहे' असा रीतसर अर्ज नोंदवणे पुरेसे होते. यामुळे भारतीय व इंग्रजी वृत्तपत्रांची संख्या झपाट्याने वाढली.",
+        "en": "Metcalfe's Press Act (Act XI of 1835) repealed arbitrary administrative licensing, substituting it with a straightforward procedural declaration of the premises of the press and the identities of the publisher and printer, opening a golden era of journalistic expansion in India."
+      }
+    },
+    {
+      "id": 12,
+      "question": {
+        "mr": "१८४८ मध्ये दुसऱ्या इंग्रज-शीख युद्धाची तात्कालिक ठिणगी मुलतान येथे कोणत्या शीख सुभेदाराने केलेल्या बंडामुळे पडली होती?",
+        "en": "In April 1848, the immediate spark for the outbreak of the Second Anglo-Sikh War was ignited by the anti-British revolt of which governor at Multan?"
+      },
+      "options": [
+        { "mr": "मुलराज (Diwan Mulraj)", "en": "Diwan Mulraj" },
+        { "mr": "चतरसिंग अत्तारीवाला (Chattar Singh Attariwalla)", "en": "Chattar Singh Attariwalla" },
+        { "mr": "शेरसिंह अत्तारीवाला (Sher Singh Attariwalla)", "en": "Sher Singh Attariwalla" },
+        { "mr": "लाल सिंग (Lal Singh)", "en": "Lal Singh" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "एप्रिल १८४८ मध्ये मुलतानचे सुभेदार दिवाण मुलराज यांच्यावर ब्रिटिशांनी महसूल वाढवण्याचा दबाव आणल्याने त्यांनी राजीनामा दिला. जेव्हा दोन ब्रिटिश अधिकारी (व्हॅन्स ॲग्न्यू आणि लेफ्टनंट अँडरसन) मुलतानचा ताबा घेण्यासाठी आले, तेव्हा मुलराजच्या सैनिकांनी त्यांची हत्या केली. या बंडातून दुसऱ्या इंग्रज-शीख युद्धाची सुरुवात झाली.",
+        "en": "In April 1848, Diwan Mulraj, governor of Multan, revolted when British officers P. Vans Agnew and Lieutenant W. Anderson arrived to install a new administrator. Their assassination triggered general uprisings in the Sikh army, furnishing Dalhousie with the pretext to invade and annex the Punjab."
+      }
+    },
+    {
+      "id": 13,
+      "question": {
+        "mr": "१८४९ मध्ये पंजाबचे विलीनीकरण झाल्यानंतर प्रशासनाचे नेतृत्व करणाऱ्या 'लॉरेन्स बंधूंमध्ये' (Lawrence Brothers) महसूल आणि जमीनदारांच्या हक्कांवरून तीव्र वाद निर्माण झाला होता. या वादात सर हेन्री लॉरेन्स यांची नेमकी भूमिका कोणती होती?",
+        "en": "Following the annexation of Punjab in 1849, the Lawrence brothers disagreed profoundly on administrative policy. What was Sir Henry Lawrence's stance regarding the traditional Sikh nobility (Sardars and Jagirdars)?"
+      },
+      "options": [
+        { "mr": "पारंपरिक शीख जहागीरदार व सरदारांना सवलती देऊन त्यांचे सामाजिक मानमरातब आणि जमिनी अबाधित राखणे.", "en": "Adopting an aristocratic, sympathetic policy preserving the traditional privileges, lands, and jagirs of the Sikh hereditary nobility." },
+        { "mr": "सर्व शीख सरदारांच्या जमिनी तात्काळ जप्त करून त्यांचा जाहीर लिलाव करणे.", "en": "Immediately confiscating and auctioning all ancestral estates of Sikh sardars." },
+        { "mr": "सर्व जमीन महसूल थेट लंडनच्या तिजोरीत जमा करणे.", "en": "Remitting all agricultural revenue directly to the British national exchequer." },
+        { "mr": "पंजाबमधील शेतीवर १००% कर लादणे.", "en": "Imposing a 100% tax assessment on all arable tracts in Punjab." }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "सर हेन्री लॉरेन्स हे सरदार आणि जहागीरदारांचे अधिकार टिकवून ठेवण्याच्या बाजूने होते, कारण त्यांच्या मते सरंजामदारांची निष्ठा साम्राज्य टिकवण्यासाठी आवश्यक होती. याउलट त्यांचे धाकटे भाऊ जॉन लॉरेन्स हे शेतकऱ्यांना थेट मालकी हक्क देऊन जमीनदारांचे विशेषाधिकार कमी करण्याच्या बाजूने होते. डलहौसीने जॉन लॉरेन्सच्या बाजूने कौल देऊन हेन्री लॉरेन्सची राजपुतान्यात बदली केली.",
+        "en": "Sir Henry Lawrence advocated an aristocratic policy favoring the traditional Sikh feudal sardars and inamdars to secure their political loyalty. Conversely, his brother John Lawrence championed peasant proprietorship and fiscal austerity. Dalhousie backed John's utilitarian policy, leading to Henry's transfer to Rajputana in 1853."
+      }
+    },
+    {
+      "id": 14,
+      "question": {
+        "mr": "१८५३ च्या सनदी कायद्यानुसार (Charter Act 1853) बंगाल प्रांताच्या प्रशासनासाठी गव्हर्नर-जनरलवरील दैनंदिन कामाचा ताण कमी करण्यासाठी कोणते नवीन प्रशासकीय पद निर्माण करण्यात आले?",
+        "en": "To relieve the Governor-General of direct provincial duties, which administrative office was created under the Charter Act of 1853 for the governance of Bengal?"
+      },
+      "options": [
+        { "mr": "बंगालचा स्वतंत्र लेफ्टनंट गव्हर्नर (Lieutenant-Governor of Bengal)", "en": "Lieutenant-Governor of Bengal" },
+        { "mr": "बंगालचा मुख्य आयुक्त (Chief Commissioner of Bengal)", "en": "Chief Commissioner of Bengal" },
+        { "mr": "बंगालचा व्हाइसरॉय", "en": "Viceroy of Bengal" },
+        { "mr": "बंगालचा दिवाण", "en": "Diwan of Bengal" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१८५३ पूर्वी भारताचा गव्हर्नर-जनरल हाच बंगाल प्रांताचाही थेट गव्हर्नर म्हणून काम पाहत असे. संपूर्ण भारताच्या वाढत्या जबाबदाऱ्यांमुळे १८५३ च्या सनदी कायद्याने बंगालसाठी स्वतंत्र 'लेफ्टनंट गव्हर्नर' (Lieutenant-Governor) नियुक्त करण्याची तरतूद केली. सर फ्रेडरिक जेम्स हॅलिडे (Sir Frederick James Halliday) हे १८५४ मध्ये बंगालचे पहिले लेफ्टनंट गव्हर्नर बनले.",
+        "en": "The Charter Act of 1853 empowered the Court of Directors to separate the administration of Bengal from the central executive. In May 1854, Sir Frederick James Halliday was installed as the first separate Lieutenant-Governor of Bengal, relieving the Governor-General of local provincial governance."
+      }
+    },
+    {
+      "id": 15,
+      "question": {
+        "mr": "१८५६ मध्ये लॉर्ड डलहौसीने अवधचे संस्थान (Awadh) ब्रिटिश साम्राज्यात विलीन केल्यानंतर तेथील सैनिकी भरती आणि जनतेवर त्याचा कोणता प्रमुख परिणाम झाला?",
+        "en": "Following the annexation of Awadh in February 1856 by Lord Dalhousie, what immediate grievance developed within the Bengal Army that contributed directly to the 1857 rebellion?"
+      },
+      "options": [
+        { "mr": "बंगाल सैन्यातील सुमारे ७५,००० शिपाई एकट्या अवधमधील शेतकरी कुटुंबातील होते; विलीनीकरणामुळे त्यांच्या जमिनींवरील कर वाढले आणि त्यांचे पूर्वीचे विशेषाधिकार संपुष्टात आले.", "en": "Over 75,000 sepoys in the Bengal Army hailed from peasant families in Awadh; annexation stripped them of traditional privileges and escalated their agrarian tax burdens." },
+        { "mr": "अवधच्या सर्व सैनिकांना तात्काळ ब्रिटिश सैन्यात वरिष्ठ जनरल पदांवर बढती मिळाली.", "en": "All soldiers of Awadh were granted direct promotions to senior general ranks in the British Army." },
+        { "mr": "अवधमधील सर्व शेतजमिनी कायमस्वरूपी करमुक्त करण्यात आल्या.", "en": "All agricultural estates across Awadh were exempted from state taxation in perpetuity." },
+        { "mr": "ब्रिटिश सरकारने अवधमध्ये नवीन सैन्य भरतीवर १०० वर्षांची बंदी घातली.", "en": "The British administration placed a 100-year ban on recruiting sepoys from Awadh." }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "अवधला 'बंगाल सैन्याचे रोपवाटिका' (Nursery of the Bengal Army) म्हटले जाई. अवध विलीन होताच नवाबाचे सैन्य बरखास्त झाल्याने हजारो सैनिक बेकार झाले. तसेच ईस्ट इंडिया कंपनीने जमीन महसुलात वाढ केल्याने सैनिकांच्या स्वतःच्या कुटुंबांवर आर्थिक संकट आले. रेसिडेंटकडे असणारा सैनिकांचा विशेष तक्रार निवारणाचा दर्जा संपल्याने सैनिकांमध्ये प्रचंड असंतोष पसरला.",
+        "en": "Known as the 'Nursery of the Bengal Army', Awadh provided nearly 75,000 sepoys to Company regiments. Annexation dissolved the royal Awadh army, throwing thousands out of work, while the summary land settlement of 1856 displaced taluqdars and imposed heavy tax burdens directly on the sepoys' peasant households."
+      }
+    },
+    {
+      "id": 16,
+      "question": {
+        "mr": "१८५८ च्या भारत सरकार कायद्यान्वये (Government of India Act 1858) भारताचे प्रशासन चालवण्यासाठी स्थापन झालेल्या 'सेक्रेटरी ऑफ स्टेट इन कौन्सिल'ला (Secretary of State in Council) कोणत्या प्रकारचा कायदेशीर दर्जा देण्यात आला?",
+        "en": "Under the Government of India Act 1858, what corporate legal status was conferred upon the 'Secretary of State in Council' regarding litigation and public properties?"
+      },
+      "options": [
+        { "mr": "तो एक 'निगमित निकाय' (Body Corporate) बनला, ज्याच्या नावावर इंग्लंड आणि भारत या दोन्ही ठिकाणी खटला भरता येत होता किंवा ज्याच्याविरुद्ध दावा दाखल करता येत होता.", "en": "It was constituted as a 'Body Corporate', capable of suing and being sued in both England and India in corporate capacity." },
+        { "mr": "त्याला कोणत्याही नागरी किंवा फौजदारी न्यायालयात खटल्यापासून पूर्ण वैधानिक संरक्षण देण्यात आले.", "en": "It was given absolute immunity from judicial proceedings in all civil and criminal courts." },
+        { "mr": "तो केवळ खाजगी ब्रिटिश बँकांचा प्रतिनिधी म्हणून काम करणारा ट्रस्टी बनला.", "en": "It acted strictly as an informal private trust representing commercial banking syndicates." },
+        { "mr": "त्याला केवळ धार्मिक खटल्यांवर निर्णय देणारी अदालत घोषित करण्यात आले.", "en": "It was constituted as an ecclesiastical tribunal adjudicating religious matters." }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१८५८ च्या कायद्यातील कलम ६५ नुसार 'सेक्रेटरी ऑफ स्टेट इन कौन्सिल' या संस्थेला एक कायदेशीर संस्था (Body Corporate) मानले गेले. भारतातील कोणत्याही सरकारी करारासाठी, मालमत्तेसाठी किंवा प्रशासकीय हानीसाठी नागरिक भारत मंत्र्याविरुद्ध इंग्लंड किंवा भारतातील न्यायालयांत थेट दावा दाखल करू शकत असत.",
+        "en": "Under Section 65 of the Government of India Act 1858, the Secretary of State in Council was established as a 'Body Corporate' with perpetual succession, possessing the capacity to hold property, execute commercial contracts, and sue or be sued in courts in both the United Kingdom and India."
+      }
+    },
+    {
+      "id": 17,
+      "question": {
+        "mr": "१८६० मध्ये जेम्स विल्सन यांनी अर्थसंकल्पात आयकर लागू केल्यानंतर त्यांच्या आकस्मिक मृत्यूनंतर १८६१ मध्ये भारताचे अर्थ सदस्य म्हणून कोणाची नियुक्ती झाली?",
+        "en": "Following the sudden death of James Wilson in August 1860, who succeeded him as the Finance Member of the Viceroy's Executive Council to consolidate early budgetary reforms?"
+      },
+      "options": [
+        { "mr": "सॅम्युएल लैंग (Samuel Laing)", "en": "Samuel Laing" },
+        { "mr": "सर रिचर्ड टेम्पल (Sir Richard Temple)", "en": "Sir Richard Temple" },
+        { "mr": "सर जॉन स्ट्रॅची (Sir John Strachey)", "en": "Sir John Strachey" },
+        { "mr": "सर एडवर्ड लॉ (Sir Edward Law)", "en": "Sir Edward Law" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "जेम्स विल्सन यांच्या मृत्यूनंतर ब्रिटिश संसदेचे सदस्य सॅम्युएल लैंग (Samuel Laing) हे १८६१ मध्ये भारताचे दुसरे अर्थ सदस्य बनले. त्यांनी विल्सनच्या आयकर रचनेत सुधारणा केली आणि लष्करी खर्चात कपात करून भारताचा अर्थसंकल्प तुटीतून शिलकीत आणला.",
+        "en": "Following James Wilson's death in Calcutta in August 1860, British railway financier and politician Samuel Laing was appointed Finance Member in 1861, consolidating the new income tax and paring down imperial military expenditure."
+      }
+    },
+    {
+      "id": 18,
+      "question": {
+        "mr": "१८६१ च्या भारतीय उच्च न्यायालय कायद्यानुसार (Indian High Courts Act 1861) प्रत्येक उच्च न्यायालयात मुख्य न्यायाधीशांसह कमाल किती न्यायाधीशांची नियुक्ती करण्याची तरतूद होती?",
+        "en": "Under the Indian High Courts Act of 1861, what was the statutory maximum limit fixed for the total number of judges (including the Chief Justice) for each High Court?"
+      },
+      "options": [
+        { "mr": "१५ न्यायाधीश (15 Judges)", "en": "15 Judges" },
+        { "mr": "१० न्यायाधीश", "en": "10 Judges" },
+        { "mr": "२० न्यायाधीश", "en": "20 Judges" },
+        { "mr": "२५ न्यायाधीश", "en": "25 Judges" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१८६१ च्या कायद्यानुसार प्रत्येक उच्च न्यायालयात एक मुख्य न्यायाधीश आणि जास्तीत जास्त १५ नियमित (पुईसने) न्यायाधीश नेमण्याची तरतूद करण्यात आली होती (एकूण १६ पेक्षा जास्त नाही). तसेच न्यायाधीशांपैकी किमान एक तृतीयांश बॅरिस्टर आणि किमान एक तृतीयांश सनदी सेवेतील (ICS) असणे सक्तीचे होते.",
+        "en": "The Indian High Courts Act of 1861 stipulated that each High Court should consist of a Chief Justice and not more than 15 puisne judges appointed by the Crown, of whom not less than one-third were to be barristers and not less than one-third covenanted civil servants."
+      }
+    },
+    {
+      "id": 19,
+      "question": {
+        "mr": "१८६६ मध्ये सर जॉन लॉरेन्सच्या कार्यकाळात अलाहाबाद (सुरुवातीला आग्रा) येथे चौथे उच्च न्यायालय स्थापन झाले, तेव्हा त्याचे पहिले मुख्य न्यायाधीश कोण होते?",
+        "en": "When the fourth High Court of Judicature was established for the North-Western Provinces at Agra in 1866 (later shifted to Allahabad), who was appointed as its first Chief Justice?"
+      },
+      "options": [
+        { "mr": "सर वॉल्टर मॉर्गन (Sir Walter Morgan)", "en": "Sir Walter Morgan" },
+        { "mr": "सर बार्नेस पीकॉक (Sir Barnes Peacock)", "en": "Sir Barnes Peacock" },
+        { "mr": "सर मॅथ्यू सॉस (Sir Matthew Sausse)", "en": "Sir Matthew Sausse" },
+        { "mr": "सर जॉन एज (Sir John Edge)", "en": "Sir John Edge" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "मार्च १८६६ मध्ये आग्रा येथे वायव्य प्रांतासाठी उच्च न्यायालय स्थापन झाले, ज्याचे पहिले मुख्य न्यायाधीश सर वॉल्टर मॉर्गन होते. पुढे १८६९ मध्ये हे न्यायालय आग्राहून अलाहाबाद येथे हलवण्यात आले. १८८७ मध्ये न्यायमूर्ती सय्यद महमूद हे अलाहाबाद उच्च न्यायालयाचे पहिले भारतीय न्यायाधीश बनले.",
+        "en": "Sir Walter Morgan was sworn in as the first Chief Justice of the High Court of Judicature for the North-Western Provinces in March 1866 at Agra, presiding over its relocation to Allahabad in 1869."
+      }
+    },
+    {
+      "id": 20,
+      "question": {
+        "mr": "१८७१ मध्ये लॉर्ड मेयोच्या कार्यकाळात भारतातील शेतीचा पद्धतशीर विकास आणि महसूल सुधारणांसाठी कोणते नवीन स्वतंत्र केंद्रीय खाते स्थापन करण्यात आले?",
+        "en": "In 1871, under Viceroy Lord Mayo, which dedicated imperial department was established at the Centre to coordinate agricultural research, commerce, and forest management?"
+      },
+      "options": [
+        { "mr": "कृषी, महसूल आणि वाणिज्य खाते (Department of Agriculture, Revenue, and Commerce)", "en": "Department of Agriculture, Revenue, and Commerce" },
+        { "mr": "सार्वजनिक बांधकाम खाते (PWD)", "en": "Public Works Department" },
+        { "mr": "ग्रामीण सिंचन आणि दुष्काळ खाते", "en": "Department of Rural Irrigation and Famines" },
+        { "mr": "राष्ट्रीय कृषी विकास महामंडळ", "en": "National Agricultural Development Board" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "जून १८७१ मध्ये लॉर्ड मेयोच्या पुढाकाराने 'कृषी, महसूल आणि वाणिज्य' हे स्वतंत्र केंद्रीय खाते स्थापन झाले. ए. ओ. ह्यूम (जे पुढे १८८५ मध्ये राष्ट्रीय काँग्रेसचे संस्थापक बनले) यांची या खात्याचे पहिले सचिव म्हणून नियुक्ती करण्यात आली होती.",
+        "en": "In June 1871, Lord Mayo created the separate Department of Agriculture, Revenue, and Commerce to foster modern scientific farming and land administration, appointing Allan Octavian Hume as its first Secretary."
+      }
+    },
+    {
+      "id": 21,
+      "question": {
+        "mr": "१८७८ च्या 'भारतीय शस्त्र कायद्यानुसार' (Indian Arms Act 1878) विनापरवाना शस्त्र बाळगणाऱ्या भारतीयांना जास्तीत जास्त किती वर्षांपर्यंतच्या तुरुंगवासाची शिक्षा ठोठावण्याची तरतूद होती?",
+        "en": "Under Lord Lytton's Indian Arms Act (Act XI of 1878), what was the maximum penal term of imprisonment stipulated for Indians convicted of possessing or carrying unlicensed arms?"
+      },
+      "options": [
+        { "mr": "३ वर्षे (आणि गुप्तपणे शस्त्र बाळगल्यास ७ वर्षे)", "en": "3 years (extendable up to 7 years for concealed arms)" },
+        { "mr": "केवळ ६ महिने", "en": "Strictly 6 months" },
+        { "mr": "जन्मठेपेची काळेपाणी शिक्षा", "en": "Life imprisonment across the seas" },
+        { "mr": "केवळ ₹५० चा रोख दंड", "en": "Merely a ₹50 monetary fine" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१८७८ च्या शस्त्र कायद्यानुसार विनापरवाना शस्त्र ठेवणाऱ्या भारतीयांना ३ वर्षांपर्यंत तुरुंगवास आणि दंडाची तरतूद होती; तसेच शस्त्र लपवून ठेवल्याचे किंवा तस्करीचे गंभीर प्रकरण असल्यास ही शिक्षा ७ वर्षांपर्यंत वाढवली जाऊ शकत होती. युरोपियनांना या शिक्षेतून पूर्णपणे वगळण्यात आले होते.",
+        "en": "Under Sections 19 and 20 of the Indian Arms Act 1878, possessing, importing, or carrying unlicensed firearms was penalized with imprisonment for up to three years (and up to seven years for secret possession or smuggling), applied strictly to native Indians."
+      }
+    },
+    {
+      "id": 22,
+      "question": {
+        "mr": "१८८१ मधील पहिल्या 'फॅक्टरी कायद्यानुसार' (First Factory Act 1881) कारखान्यातील धोकादायक यंत्रसामग्रीबाबत खालीलपैकी कोणती सुरक्षा तरतूद सक्तीची करण्यात आली होती?",
+        "en": "Under the First Indian Factory Act of 1881, which safety requirement regarding industrial machinery was made compulsory for factory owners?"
+      },
+      "options": [
+        { "mr": "सर्व फिरत्या आणि धोकादायक यंत्रांना संरक्षक कुंपण (Fencing of dangerous machinery) लावणे अनिवार्य करण्यात आले.", "en": "Compulsory fencing and enclosure of all rotating and dangerous machinery" },
+        { "mr": "सर्व कारखान्यांमध्ये स्वयंचलित अग्निशामक यंत्रे बसवणे सक्तीचे केले.", "en": "Mandating automatic fire sprinkler systems in all factories" },
+        { "mr": "अपघात झाल्यास मजुराला त्याच्या वेतनाच्या दहापट नुकसानभरपाई देणे.", "en": "Compensating injured workers with ten times their annual wages" },
+        { "mr": "धोकादायक यंत्रांवर काम करण्यासाठी केवळ युरोपियन मजुरांची भरती करणे.", "en": "Restricting the operation of high-risk machines strictly to European workers" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१८८१ च्या फॅक्टरी कायद्याने बालमजुरीवर मर्यादा घालण्यासोबतच कारखान्यातील अपघातांना आळा घालण्यासाठी सर्व फिरणाऱ्या चाकांना आणि धोकादायक यंत्रांना लाकडी किंवा लोखंडी संरक्षक कुंपण (Fencing of machinery) लावणे मालकांसाठी कायदेशीररीत्या बंधनकारक केले.",
+        "en": "In addition to child labor regulations, Section 12 of the First Factory Act of 1881 statutorily compelled factory managers to properly fence and enclose all hazardous transmission machinery, steam engines, and exposed hoists to avert fatal accidents."
+      }
+    },
+    {
+      "id": 23,
+      "question": {
+        "mr": "१८८६ मध्ये तिसऱ्या इंग्रज-ब्रह्मी युद्धानंतर ब्रिटिश सरकारने ब्रह्मदेशाचा संपूर्ण प्रदेश भारताच्या कोणत्या प्रांताप्रमाणे एका अधिकाऱ्याच्या नियंत्रणाखाली आणला?",
+        "en": "Following the Third Anglo-Burmese War in 1886, Upper and Lower Burma were unified into a single administrative territory placed under which designated colonial officer?"
+      },
+      "options": [
+        { "mr": "एक मुख्य आयुक्त (Chief Commissioner - सर चार्ल्स बर्नार्ड)", "en": "A Chief Commissioner (Sir Charles Bernard)" },
+        { "mr": "स्वतंत्र व्हाइसरॉय", "en": "An independent Viceroy" },
+        { "mr": "मुंबईच्या गव्हर्नरच्या थेट नियंत्रणाखाली", "en": "Direct control of the Governor of Bombay" },
+        { "mr": "लंडनच्या नौदल ॲडमिरलच्या नियंत्रणाखाली", "en": "Under an Admiral of the Royal Navy" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१ जानेवारी १८८६ रोजी ब्रह्मदेश जिंकल्यानंतर, १८९७ पर्यंत संपूर्ण म्यानमार हा भारताचा एक नॉन-रेग्युलेशन प्रांत म्हणून 'चीफ कमिशनर'च्या (मुख्य आयुक्त) अखत्यारीत ठेवण्यात आला. सर चार्ल्स बर्नार्ड हे त्याचे पहिले मुख्य आयुक्त बनले. पुढे १८९७ मध्ये हा प्रांत लेफ्टनंट गव्हर्नरच्या अखत्यारीत आणला गेला.",
+        "en": "Following annexation in 1886, Burma was placed under a Chief Commissioner reporting directly to the Governor-General of India, with Sir Charles Bernard serving as the first Chief Commissioner of unified Burma until elevated to a Lieutenant-Governorship in 1897."
+      }
+    },
+    {
+      "id": 24,
+      "question": {
+        "mr": "१८९१ च्या 'संमती वय कायद्याविरुद्ध' (Age of Consent Act 1891) लोकमान्य बाळ गंगाधर टिळकांनी आपल्या 'केसरी' वृत्तपत्रातून प्रामुख्याने कोणत्या तात्त्विक मुद्द्यावर विरोध दर्शवला होता?",
+        "en": "On what fundamental philosophical and political principle did Lokmanya Bal Gangadhar Tilak oppose the Age of Consent Bill of 1891 in the columns of 'Kesari'?"
+      },
+      "options": [
+        { "mr": "परकीय, ख्रिश्चन ब्रिटिश सरकारला हिंदूंच्या कौटुंबिक, सामाजिक आणि धार्मिक परंपरांवर कायदे करण्याचा कोणताही नैतिक अधिकार नाही; सुधारणा या समाजाच्या अंतर्गत प्रबोधनातूनच झाल्या पाहिजेत.", "en": "An alien, Christian colonial regime had no legitimate moral authority to legislate on Hindu domestic traditions; social reforms should emerge autonomously through internal education." },
+        { "mr": "मुलींच्या विवाहाचे वय २५ वर्षे केले पाहिजे हा त्यांचा हट्ट होता.", "en": "He demanded that the statutory age of marriage for girls be raised immediately to 25." },
+        { "mr": "ब्रिटिश सरकारने सर्व हिंदू विवाहांवर कर लादला होता.", "en": "The colonial administration had imposed a prohibitive tax on Hindu wedding ceremonies." },
+        { "mr": "हा कायदा केवळ युरोपियन महिलांनाच लागू करावा अशी त्यांची मागणी होती.", "en": "He insisted that the bill apply exclusively to European women in India." }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "टिळक हे मुलींच्या अकाली विवाहाच्या बाजूने नव्हते, परंतु त्यांचा मुख्य सैद्धांतिक आक्षेप असा होता की एका परकीय, विधर्मी शासनाला हिंदूंच्या कौटुंबिक चालीरीतींवर नियम करण्याचा कोणताही अधिकार नाही. सामाजिक सुधारणा या कायद्याच्या बडग्याऐवजी समाजप्रबोधनातून आणि स्वयंस्फूर्तीने झाल्या पाहिजेत, अशी टिळकांची ठाम भूमिका होती.",
+        "en": "Tilak did not defend child marriage in principle, but argued vehemently against the political precedent of inviting a foreign, alien colonial government to legislate upon domestic religious sacraments. He insisted that social reform must proceed organically from societal awakening rather than imperial penal codes."
+      }
+    },
+    {
+      "id": 25,
+      "question": {
+        "mr": "१८९२ च्या 'इंडियन कौन्सिल्स कायद्याने' (Indian Councils Act 1892) केंद्रीय आणि प्रांतीय कायदेमंडळांमध्ये गैर-सरकारी जागांवर सदस्यांचे नामनिर्देशन करताना अप्रत्यक्ष निवडणुकीचे तत्त्व सुरू केले, तरी या कायद्याच्या अधिकृत मसुद्यात खालीलपैकी कोणत्या शब्दाचा वापर जाणीवपूर्वक टाळण्यात आला होता?",
+        "en": "Although the Indian Councils Act of 1892 practically introduced an indirect representative element into legislative nominations, which word was meticulously avoided throughout the statutory text?"
+      },
+      "options": [
+        { "mr": "\"निवडणूक\" (Election)", "en": "\"Election\"" },
+        { "mr": "\"नामनिर्देशन\" (Nomination)", "en": "\"Nomination\"" },
+        { "mr": "\"अर्थसंकल्प\" (Budget)", "en": "\"Budget\"" },
+        { "mr": "\"कायदेमंडळ\" (Council)", "en": "\"Council\"" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१८९२ च्या कायद्यात प्रत्यक्ष निवडणुकीचे तत्त्व न स्वीकारता 'शिफारशीवरून नामनिर्देशन' (Nomination on recommendation) अशी संदिग्ध रचना करण्यात आली. ब्रिटिश संसदेने भारतीय जनतेला संसदीय अधिकार दिल्याचे दिसू नये म्हणून कायद्याच्या संपूर्ण मजकुरात 'निवडणूक' (Election) हा शब्द जाणीवपूर्वक पूर्णपणे वगळला होता.",
+        "en": "To avoid formally conceding the democratic principle of representative democracy to colonized subjects, the statutory text of the Indian Councils Act of 1892 scrupulously avoided the word 'Election', designating the procedure merely as executive 'nomination' made on the recommendation of designated local bodies."
+      }
+    }
+  ]
+}

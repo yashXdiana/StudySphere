@@ -1,0 +1,464 @@
+{
+  "testId": "p-hist-01-t4",
+  "title": {
+    "mr": "आधुनिक भारताचा इतिहास — सराव 4",
+    "en": "Modern Indian History — Practice Test 4"
+  },
+  "durationMinutes": 20,
+  "marksPerQuestion": 1,
+  "negativeMarking": 0.25,
+  "totalMarks": 25,
+  "difficulty": "मध्यम ते काठिण्य",
+  "questions": [
+    {
+      "id": 1,
+      "question": {
+        "mr": "१७५१ मधील 'अर्काटचा वेढा' (Siege of Arcot) खालीलपैकी कोणाच्या लष्करी कौशल्यासाठी व नेतृत्वासाठी ओळखला जातो?",
+        "en": "The famous 'Siege of Arcot' in 1751 is primarily remembered for the tactical leadership of which British officer?"
+      },
+      "options": [
+        { "mr": "रॉबर्ट क्लाईव्ह", "en": "Robert Clive" },
+        { "mr": "सर आयर कूट", "en": "Sir Eyre Coote" },
+        { "mr": "मेजर स्ट्रिंगर लॉरेन्स", "en": "Major Stringer Lawrence" },
+        { "mr": "हेक्टर मुन्रो", "en": "Hector Munro" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "दुसऱ्या कर्नाटक युद्धादरम्यान त्रिचनापल्लीवरील फ्रेंच आणि चंदासाहेब यांचा दबाव कमी करण्यासाठी रॉबर्ट क्लाईव्हने केवळ २१० सैनिकांसह अर्काट ही कर्नाटकची राजधानी जिंकून घेतली आणि तब्बल ५३ दिवस वेढा यशस्वीपणे परतवून लावला. या पराक्रमामुळे क्लाईव्हची कीर्ती सर्वत्र पसरली.",
+        "en": "During the Second Carnatic War, Robert Clive seized Arcot (the capital of Carnatic) with a small force and heroically defended it for 53 days against overwhelming numbers, relieving pressure on Trichinopoly and turning the tide in favor of the English."
+      }
+    },
+    {
+      "id": 2,
+      "question": {
+        "mr": "१७५७ च्या प्लासीच्या लढाईनंतर मीर जाफरने ईस्ट इंडिया कंपनीला कोणत्या प्रदेशाची जमीनदारी (महसूल हक्क) बहाल केली होती?",
+        "en": "Following the Battle of Plassey in 1757, which region's zamindari (revenue right) was granted by Mir Jafar to the East India Company?"
+      },
+      "options": [
+        { "mr": "२४ परगणा (24 Parganas)", "en": "24 Parganas" },
+        { "mr": "मिदनापूर", "en": "Midnapore" },
+        { "mr": "बर्दवान", "en": "Burdwan" },
+        { "mr": "चितगाव", "en": "Chittagong" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "प्लासीच्या विजयानंतर कृतज्ञतेपोटी मीर जाफरने कंपनीला कलकत्त्याच्या दक्षिणेकडील '२४ परगणा' या संपन्न प्रदेशाची जमीनदारी बहाल केली. मिदनापूर, बर्दवान आणि चितगावचे हक्क नंतर १७६० मध्ये मीर कासीमने दिले होते.",
+        "en": "Immediately after becoming Nawab following the Battle of Plassey, Mir Jafar granted the Company the rich zamindari of the 24 Parganas. Chittagong, Midnapore, and Burdwan were granted later by Mir Qasim in 1760."
+      }
+    },
+    {
+      "id": 3,
+      "question": {
+        "mr": "१७८१ च्या 'बंदोबस्त कायद्याबाबत' (Act of Settlement / Declaratory Act 1781) खालील विधाने विचारात घ्या:\nअ. या कायद्याने कलकत्ता सर्वोच्च न्यायालयाचा अधिकारक्षेत्रीय वाद मिटवण्यासाठी गव्हर्नर-जनरल व त्याच्या कौन्सिलला सर्वोच्च न्यायालयाच्या अधिकारक्षेत्रातून वगळले.\nब. महसूल गोळा करण्याच्या सरकारी अधिकारांवर सर्वोच्च न्यायालयाचा कोणताही हस्तक्षेप राहणार नाही अशी तरतूद करण्यात आली.\nवरीलपैकी कोणते/ती विधान/ने बरोबर आहेत?",
+        "en": "Consider the following statements regarding the Act of Settlement (Declaratory Act) of 1781:\na. It exempted the Governor-General and his Council from the jurisdiction of the Supreme Court for actions taken in their official capacity.\nb. It barred the Supreme Court from interfering in matters concerning the collection of public revenues.\nWhich of the statements given above is/are correct?"
+      },
+      "options": [
+        { "mr": "फक्त अ", "en": "Only a" },
+        { "mr": "फक्त ब", "en": "Only b" },
+        { "mr": "अ आणि ब दोन्ही", "en": "Both a and b" },
+        { "mr": "दोन्ही नाही", "en": "Neither a nor b" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "दोन्ही विधाने बरोबर आहेत. १७७३ च्या रेग्युलेटिंग ॲक्टमधील त्रुटी आणि सर्वोच्च न्यायालय व गव्हर्नर-जनरल कौन्सिल यांच्यातील तीव्र संघर्षाचे निराकरण करण्यासाठी १७८१ चा सुधारणा कायदा संमत करण्यात आला. याद्वारे महसूल विषयक बाबी व शासकीय अधिकाऱ्यांची अधिकृत कर्तव्ये न्यायालयाच्या कक्षेबाहेर ठेवण्यात आली.",
+        "en": "Both statements are correct. The Declaratory Act of 1781 sought to rectify the defects of the Regulating Act of 1773 by curtailing the jurisdictional overreach of the Supreme Court over revenue administration and official acts of the Governor-General in Council."
+      }
+    },
+    {
+      "id": 4,
+      "question": {
+        "mr": "१७९३ च्या सनदी कायद्यानुसार (Charter Act of 1793) खालीलपैकी कोणती महत्त्वपूर्ण वित्तीय तरतूद करण्यात आली?",
+        "en": "Which of the following crucial financial provisions was enacted by the Charter Act of 1793?"
+      },
+      "options": [
+        { "mr": "बोर्ड ऑफ कंट्रोलच्या सदस्यांचे व कर्मचाऱ्यांचे पगार भारतीय महसुलातून देणे बंधनकारक करण्यात आले.", "en": "Salaries of the members and staff of the Board of Control were mandated to be paid out of Indian revenues." },
+        { "mr": "कंपनीचा भारतातील सर्व व्यापार ब्रिटनमधील सर्व खाजगी व्यापाऱ्यांना खुला करण्यात आला.", "en": "The Company's entire Indian trade was thrown open to all British private merchants." },
+        { "mr": "भारताच्या महसुलातून दरवर्षी १ लाख रुपये स्थानिक शिक्षणासाठी राखीव ठेवण्यात आले.", "en": "An annual sum of one lakh rupees was allocated for Indian education from revenues." },
+        { "mr": "कंपनीचे कर्ज फेडण्यासाठी ब्रिटिश संसदेने भारतीय आयात मालावर १००% जकात लादली.", "en": "British Parliament imposed 100% duties on Indian imports to clear Company debts." }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१७९३ च्या सनदी कायद्याने कंपनीची व्यापारी मक्तेदारी आणखी २० वर्षांनी वाढवली आणि लंडनस्थित 'बोर्ड ऑफ कंट्रोल'च्या सर्व सदस्यांचे व त्यांच्या कर्मचाऱ्यांचे वेतन थेट भारतीय तिजोरीतून (Indian Revenues) देण्याची अन्यायकारक तरतूद केली, जी पुढे १९१९ पर्यंत सुरू राहिली.",
+        "en": "The Charter Act of 1793 stipulated that the salaries of the Board of Control members and their staff in London should henceforth be paid out of the revenues of India, a practice that continued until 1919."
+      }
+    },
+    {
+      "id": 5,
+      "question": {
+        "mr": "दुसऱ्या इंग्रज-मराठा युद्धादरम्यान (१८०३-१८०५) झालेल्या तहांच्या संदर्भात योग्य जोड्या जुळवा:\n\nस्तंभ अ (तह)\n१. देवगावचा तह (१८०३)\n२. सुरजी-अंजनगावचा तह (१८०३)\n३. राजघाटचा तह (१८०५)\n\nस्तंभ ब (संबंधित सत्ता)\nअ. दौलतराव शिंदे\nब. रघूजी भोसले\nक. यशवंतराव होळकर\n\nयोग्य पर्याय निवडा:",
+        "en": "Match the pairs regarding the treaties signed during the Second Anglo-Maratha War (1803–1805):\n\nColumn A (Treaty)\n1. Treaty of Deogaon (1803)\n2. Treaty of Surji-Anjangaon (1803)\n3. Treaty of Rajghat (1805)\n\nColumn B (Signatory Power)\na. Daulat Rao Scindia\nb. Raghuji Bhonsle\nc. Yashwantrao Holkar\n\nChoose the correct option:"
+      },
+      "options": [
+        { "mr": "१-ब, २-अ, ३-क", "en": "1-b, 2-a, 3-c" },
+        { "mr": "१-अ, २-ब, ३-क", "en": "1-a, 2-b, 3-c" },
+        { "mr": "१-ब, २-क, ३-अ", "en": "1-b, 2-c, 3-a" },
+        { "mr": "१-क, २-अ, ३-ब", "en": "1-c, 2-a, 3-b" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "अडगावच्या पराभवानंतर रघूजी भोसले यांनी १७ डिसेंबर १८०३ रोजी ब्रिटिशांशी 'देवगावचा तह' केला; असई व लासवारीच्या पराभवानंतर दौलतराव शिंद्यांनी ३० डिसेंबर १८०३ रोजी 'सुरजी-अंजनगावचा तह' केला; आणि यशवंतराव होळकरांशी जानेवारी १८०६ मध्ये 'राजघाटचा तह' संपन्न झाला.",
+        "en": "After defeats at Assaye and Argaon, Raghuji Bhonsle signed the Treaty of Deogaon (17 Dec 1803); Daulat Rao Scindia signed the Treaty of Surji-Anjangaon (30 Dec 1803); and Yashwantrao Holkar concluded the Treaty of Rajghat (Jan 1806)."
+      }
+    },
+    {
+      "id": 6,
+      "question": {
+        "mr": "लॉर्ड कॉर्नवॉलिसने न्यायिक प्रशासनात सुधारणा करताना खालीलपैकी कोणत्या चार शहरांमध्ये 'प्रांतीय अपील व सर्किट न्यायालये' (Provincial Courts of Appeal and Circuit) स्थापन केली होती?",
+        "en": "As part of his judicial overhaul, Lord Cornwallis established Provincial Courts of Appeal and Circuit in which four cities?"
+      },
+      "options": [
+        { "mr": "कलकत्ता, मुर्शिदाबाद, ढाका आणि पाटणा", "en": "Calcutta, Murshidabad, Dacca, and Patna" },
+        { "mr": "कलकत्ता, मुंबई, मद्रास आणि दिल्ली", "en": "Calcutta, Bombay, Madras, and Delhi" },
+        { "mr": "पाटणा, अलाहाबाद, कानपूर आणि लखनौ", "en": "Patna, Allahabad, Kanpur, and Lucknow" },
+        { "mr": "ढाका, चितगाव, कटक आणि कलकत्ता", "en": "Dacca, Chittagong, Cuttack, and Calcutta" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "कॉर्नवॉलिसने फौजदारी खटल्यांसाठी पूर्वीची फौजदारी न्यायालये रद्द करून कलकत्ता, मुर्शिदाबाद, ढाका आणि पाटणा या चार शहरांत युरोपीय न्यायाधीशांच्या अध्यक्षतेखाली फिरती (Circuit) व प्रांतीय अपील न्यायालये सुरू केली.",
+        "en": "Lord Cornwallis restructured the provincial judiciary by abolishing the Faujdari Adalats and creating four Provincial Courts of Appeal and Circuit presided over by European covenanted servants at Calcutta, Murshidabad, Dacca, and Patna."
+      }
+    },
+    {
+      "id": 7,
+      "question": {
+        "mr": "कायमधारा पद्धतीची (Permanent Settlement) आखणी करताना जमीनदारांशी करार १० वर्षांसाठी करावा की कायमस्वरूपी, या मुद्द्यावर गव्हर्नर-जनरल कॉर्नवॉलिसचा खालीलपैकी कोणत्या महसूल तज्ज्ञाशी वैचारिक वाद झाला होता?",
+        "en": "During the formulation of the Permanent Settlement, Governor-General Cornwallis had a major policy debate over ten-year versus perpetual settlement with which senior revenue administrator?"
+      },
+      "options": [
+        { "mr": "सर जॉन शोर (Sir John Shore)", "en": "Sir John Shore" },
+        { "mr": "थॉमस मुन्रो (Thomas Munro)", "en": "Thomas Munro" },
+        { "mr": "अलेक्झांडर रीड (Alexander Read)", "en": "Alexander Read" },
+        { "mr": "होल्ट मॅकेन्झी (Holt Mackenzie)", "en": "Holt Mackenzie" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "सर जॉन शोर यांचे मत होते की संपूर्ण महसूल सर्वेक्षण आणि आकडेवारी पूर्ण होईपर्यंत ही पद्धत सुरुवातीला केवळ १० वर्षांच्या कराराने लागू करावी, तर लॉर्ड कॉर्नवॉलिसने ब्रिटिश जमीनदार वर्गाच्या धर्तीवर ती ताबडतोब कायमस्वरूपी (Permanent) लागू करण्याचा आग्रह धरला.",
+        "en": "Sir John Shore, President of the Board of Revenue, advocated a decennial (10-year) renewable lease until accurate cadastral assessments were available, whereas Lord Cornwallis insisted on making the settlement perpetual immediately."
+      }
+    },
+    {
+      "id": 8,
+      "question": {
+        "mr": "वायव्य प्रांतातील महालवारी महसूल पद्धतीमध्ये सखोल सुधारणा करून जमिनीचे नकाशे व हक्कनोंदणी अद्ययावत केल्याबद्दल खालीलपैकी कोणाला 'उत्तर भारतातील भूमहसूल पद्धतीचा जनक' मानले जाते?",
+        "en": "Who is widely acknowledged as the 'Father of Land Revenue Settlement in Northern India' for systematically overhauling the Mahalwari system with cadastral field mapping?"
+      },
+      "options": [
+        { "mr": "रॉबर्ट मार्टिन्स बर्ड (Robert Merttins Bird)", "en": "Robert Merttins Bird" },
+        { "mr": "होल्ट मॅकेन्झी (Holt Mackenzie)", "en": "Holt Mackenzie" },
+        { "mr": "कॅप्टन रीड (Captain Read)", "en": "Captain Read" },
+        { "mr": "सर चार्ल्स विल्किन्स (Sir Charles Wilkins)", "en": "Sir Charles Wilkins" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "होल्ट मॅकेन्झीच्या १८२२ च्या रचनेतील गुंतागुंत दूर करून १८३३ च्या रेग्युलेशन IX अन्वये रॉबर्ट मार्टिन्स बर्ड यांनी जेम्स थॉमसन यांच्या मदतीने महालवारी पद्धतीत जमिनीचे अचूक नकाशे व मोजणी आणली; म्हणून त्यांना उत्तर भारतातील भूमहसूल बंदोबस्ताचा जनक म्हणतात.",
+        "en": "Robert Merttins Bird, along with James Thomason, overhauled the Mahalwari System under Regulation IX of 1833 by pioneering trigonometric field surveys and village maps, earning him the title 'Father of Land Settlement in North India'."
+      }
+    },
+    {
+      "id": 9,
+      "question": {
+        "mr": "१८३८ मध्ये स्वाक्षरी करण्यात आलेल्या ऐतिहासिक 'त्रिपक्षीय तहामध्ये' (Tripartite Treaty) खालीलपैकी कोणत्या तीन घटकांचा समावेश होता?",
+        "en": "Which three parties were signatories to the historic 'Tripartite Treaty' signed in 1838?"
+      },
+      "options": [
+        { "mr": "ब्रिटिश ईस्ट इंडिया कंपनी (लॉर्ड ऑकलंड), महाराजा रणजितसिंग आणि शाह शुजा", "en": "British East India Company (Lord Auckland), Maharaja Ranjit Singh, and Shah Shuja" },
+        { "mr": "ब्रिटिश ईस्ट इंडिया कंपनी, पेशवे बाजीराव दुसरे आणि गायकवाड", "en": "British East India Company, Peshwa Baji Rao II, and the Gaekwad" },
+        { "mr": "ब्रिटिश ईस्ट इंडिया कंपनी, हैदराबादचा निजाम आणि म्हैसूरचे ओडियार", "en": "British East India Company, the Nizam of Hyderabad, and the Wodeyars of Mysore" },
+        { "mr": "ब्रिटिश ईस्ट इंडिया कंपनी, नेपाळचे राजे आणि अवधचे नवाब", "en": "British East India Company, the King of Nepal, and the Nawab of Awadh" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "जून १८३८ मध्ये अफगाणिस्तानच्या गादीवरून पदच्युत झालेल्या शाह शुजाला काबूलच्या गादीवर पुन्हा बसवण्यासाठी आणि रशियन आक्रमणाचा धोका रोखण्यासाठी लॉर्ड ऑकलंड, पंजाबचे महाराजा रणजितसिंग आणि शाह शुजा यांच्यात हा त्रिपक्षीय करार झाला, ज्यातून पहिले इंग्रज-अफगाण युद्ध उद्भवले.",
+        "en": "Signed in June 1838, the Tripartite Treaty bound Lord Auckland (representing the British), Maharaja Ranjit Singh of Punjab, and exiled Amir Shah Shuja to restore Shah Shuja to the Afghan throne, precipitating the disastrous First Anglo-Afghan War."
+      }
+    },
+    {
+      "id": 10,
+      "question": {
+        "mr": "१८४८-४९ च्या दुसऱ्या इंग्रज-शीख युद्धातील निर्णायक लढाई खालीलपैकी कोणती होती, ज्या लढाईत तोफखान्याच्या प्रचंड वापरामुळे तिला 'तोफांची लढाई' (Battle of the Guns) म्हटले जाते?",
+        "en": "Which decisive engagement of the Second Anglo-Sikh War (1848–1849) was famously termed the 'Battle of the Guns' due to the overwhelming artillery duel?"
+      },
+      "options": [
+        { "mr": "गुजरातची लढाई (Battle of Gujrat)", "en": "Battle of Gujrat" },
+        { "mr": "चिलियनवालाची लढाई (Battle of Chillianwala)", "en": "Battle of Chillianwala" },
+        { "mr": "रामनगरची लढाई (Battle of Ramnagar)", "en": "Battle of Ramnagar" },
+        { "mr": "मुदकीची लढाई (Battle of Mudki)", "en": "Battle of Mudki" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "२१ फेब्रुवारी १८४९ रोजी चिनाब नदीजवळ झालेल्या 'गुजरातच्या लढाईत' जनरल ह्यू गॉफच्या नेतृत्वाखालील ब्रिटिश सैन्याने तोफखान्याचा निर्णायक वापर करून चतरसिंग आणि शेरसिंग यांच्या शीख सैन्याचा पूर्ण पराभव केला. या विजयानंतर २९ मार्च १८४९ रोजी डलहौसीने पंजाब ब्रिटिश साम्राज्यात विलीन केला.",
+        "en": "Fought on 21 February 1849, the Battle of Gujrat witnessed an immense British artillery bombardment that crushed the Sikh resistance. Its decisive outcome led directly to the formal annexation of Punjab by Lord Dalhousie in March 1849."
+      }
+    },
+    {
+      "id": 11,
+      "question": {
+        "mr": "१८४९ मध्ये पंजाबच्या विलीनीकरणानंतर तेथील प्रशासनावर देखरेख ठेवण्यासाठी लॉर्ड डलहौसीने स्थापन केलेल्या तीन सदस्यीय 'प्रशासकीय मंडळाचे' (Board of Administration) अध्यक्ष कोण होते?",
+        "en": "Who served as the President of the three-member 'Board of Administration' appointed by Lord Dalhousie in 1849 to govern the newly annexed Punjab?"
+      },
+      "options": [
+        { "mr": "सर हेन्री लॉरेन्स", "en": "Sir Henry Lawrence" },
+        { "mr": "जॉन लॉरेन्स", "en": "John Lawrence" },
+        { "mr": "चार्ल्स मॅनसेल", "en": "Charles Mansel" },
+        { "mr": "रॉबर्ट मॉन्टगोमेरी", "en": "Robert Montgomery" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "पंजाबच्या प्रशासनासाठी डलहौसीने तीन सदस्यांचे बोर्ड स्थापन केले: सर हेन्री लॉरेन्स (अध्यक्ष - राजकीय व लष्करी व्यवहार), जॉन लॉरेन्स (महसूल व्यवस्था), आणि चार्ल्स मॅनसेल (न्याय व्यवस्था). पुढे १८५३ मध्ये हे बोर्ड बरखास्त करून जॉन लॉरेन्सला पंजाबचा पहिला चीफ कमिशनर बनवण्यात आले.",
+        "en": "In 1849, Dalhousie constituted a triumvirate Board of Administration for Punjab comprising Sir Henry Lawrence as President, John Lawrence (Revenue), and Charles Mansel (Judicial). It was replaced in 1853 by a single Chief Commissioner (John Lawrence)."
+      }
+    },
+    {
+      "id": 12,
+      "question": {
+        "mr": "लॉर्ड डलहौसीने १८५२ मधील दुसऱ्या इंग्रज-ब्रह्मी (म्यानमार) युद्धानंतर खालीलपैकी कोणता सागरी किनारपट्टीचा प्रदेश ब्रिटिश साम्राज्यात जोडला?",
+        "en": "Which rich coastal and deltaic region of Burma did Lord Dalhousie annex into the British Empire after the Second Anglo-Burmese War in 1852?"
+      },
+      "options": [
+        { "mr": "पेगू किंवा लोअर बर्मा (Pegu / Lower Burma)", "en": "Pegu (Lower Burma)" },
+        { "mr": "मांडले (Mandalay)", "en": "Mandalay" },
+        { "mr": "अराकान (Arakan)", "en": "Arakan" },
+        { "mr": "तेनासेरिम (Tenasserim)", "en": "Tenasserim" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१८५२ च्या दुसऱ्या इंग्रज-ब्रह्मी युद्धात ब्रिटिशांनी रंगून आणि मार्ताबान जिंकले. कोणत्याही औपचारिक तहाशिवाय लॉर्ड डलहौसीने डिसेंबर १८५२ मध्ये जाहीरनामा काढून पेगू (कनिष्ठ म्यानमार) हा संपूर्ण सुपीक व सागवान लाकडासाठी प्रसिद्ध प्रदेश ब्रिटिश साम्राज्यात विलीन केला.",
+        "en": "Following the Second Anglo-Burmese War in 1852, Lord Dalhousie annexed the entire province of Pegu (Lower Burma) along with Rangoon by proclamation, totally cutting off Upper Burma from all maritime access."
+      }
+    },
+    {
+      "id": 13,
+      "question": {
+        "mr": "१८५२ मध्ये मुंबई इलाक्यात (बॉम्बे प्रेसिडेन्सी) करमुक्त (इनाम) जमिनींची कागदपत्रे तपासून गैरवाजवी जमिनी जप्त करण्यासाठी नेमण्यात आलेल्या आयोगाचे नाव काय होते?",
+        "en": "What was the name of the commission established in 1852 in the Bombay Presidency to investigate titles of rent-free lands and confiscate unauthorized estates?"
+      },
+      "options": [
+        { "mr": "इनाम कमिशन (Inam Commission)", "en": "Inam Commission" },
+        { "mr": "हंटर कमिशन (Hunter Commission)", "en": "Hunter Commission" },
+        { "mr": "कँपबेल कमिशन (Campbell Commission)", "en": "Campbell Commission" },
+        { "mr": "स्ट्रॅची कमिशन (Strachey Commission)", "en": "Strachey Commission" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "लॉर्ड डलहौसीच्या काळात १८५२ मध्ये मुंबई सरकारने 'इनाम कमिशन' नेमले. या कमिशनने सुमारे ३५,००० जहागिरी व इनाम जमिनींची चौकशी करून मालकीच्या सनदा नसल्याच्या कारणावरून तब्बल २०,००० हून अधिक इनामे जप्त केली, ज्यामुळे पश्चिम भारतातील सरंजामदार व वतनदारांमध्ये १८५७ पूर्वी प्रचंड असंतोष निर्माण झाला.",
+        "en": "The Inam Commission was appointed in 1852 in Bombay to scrutinize title deeds of rent-free estates. Over 20,000 estates were confiscated due to missing documentary evidence, provoking deep resentment among traditional elites prior to the 1857 revolt."
+      }
+    },
+    {
+      "id": 14,
+      "question": {
+        "mr": "१८५३ च्या 'वऱ्हाड (बेरार) तहाच्या' (Treaty of Berar) संदर्भात खालील विधाने विचारात घ्या:\nअ. हा तह लॉर्ड डलहौसी आणि हैदराबादचा निजाम यांच्यात झाला.\nब. 'हैदराबाद कंन्टिजंट' सैन्याचा थकीत खर्च भागवण्यासाठी निजामाने सुपीक कापूस उत्पादक बेरार (वऱ्हाड) जिल्हा इंग्रजांच्या स्वाधीन केला.\nवरीलपैकी कोणते/ती विधान/ने बरोबर आहेत?",
+        "en": "Consider the following statements regarding the Treaty of Berar (1853):\na. It was concluded between Lord Dalhousie and the Nizam of Hyderabad.\nb. The Nizam assigned the fertile cotton-growing district of Berar to the British to meet arrears for maintaining the 'Hyderabad Contingent'.\nWhich of the statements given above is/are correct?"
+      },
+      "options": [
+        { "mr": "फक्त अ", "en": "Only a" },
+        { "mr": "फक्त ब", "en": "Only b" },
+        { "mr": "अ आणि ब दोन्ही", "en": "Both a and b" },
+        { "mr": "दोन्ही नाही", "en": "Neither a nor b" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "दोन्ही विधाने योग्य आहेत. १८५३ मध्ये तैनाती फौजेच्या उपविभागाच्या (हैदराबाद कंन्टिजंट) वाढत्या थकीत रकमेच्या दबावाखाली लॉर्ड डलहौसीने निजामाला वाटाघाटीस भाग पाडून अत्यंत सुपीक काळ्या मातीचा वऱ्हाड (बेरार) प्रदेश ब्रिटिशांच्या ताब्यात कायमस्वरूपी व्यवस्थापनासाठी मिळवला.",
+        "en": "Both statements are correct. In May 1853, Dalhousie pressured the Nizam into surrendering the rich cotton-producing province of Berar to generate regular revenue for the upkeep of the British-officered Hyderabad Contingent force."
+      }
+    },
+    {
+      "id": 15,
+      "question": {
+        "mr": "१८५४ च्या 'भारतीय टपाल कायद्यानुसार' (Post Office Act of 1854) खालीलपैकी कोणता महत्त्वपूर्ण बदल करण्यात आला?",
+        "en": "Which major administrative reform was enacted by the Post Office Act of 1854 under Lord Dalhousie?"
+      },
+      "options": [
+        { "mr": "संपूर्ण भारतात अंतराचा विचार न करता अर्धा आणा (1/2 anna) या एकसमान दराने पत्र पाठवण्याची सुविधा आणि आधुनिक टपाल तिकिटे लागू झाली.", "en": "Uniform postal rate of half an anna across India regardless of distance and adhesive postage stamps were introduced." },
+        { "mr": "फक्त सरकारी अधिकाऱ्यांनाच टपाल पाठवण्याची परवानगी देण्यात आली.", "en": "Postal transit facilities were restricted exclusively to British government officials." },
+        { "mr": "टपालाचा खर्च अंतराच्या पटीत वाढवून तिप्पट करण्यात आला.", "en": "Postal charges were trebled based on distance slabs." },
+        { "mr": "टपाल खात्याचे व्यवस्थापन खाजगी ईस्ट इंडिया कंपनीच्या व्यापारी जहाजांकडे सोपवण्यात आले.", "en": "Postal management was transferred entirely to private commercial shipping lines." }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "लॉर्ड डलहौसीने १८५४ च्या टपाल कायद्याद्वारे आधुनिक टपाल खात्याचा पाया घातला. अंतराचा निकष काढून संपूर्ण भारतात अर्ध्या तोळ्यापर्यंतच्या पत्रासाठी अवघा 'अर्धा आणा' हा एकसमान दर निश्चित केला आणि देशात पहिल्यांदाच चिकट टपाल तिकिटांची (Adhesive Postage Stamps) विक्री सुरू झाली.",
+        "en": "Under Dalhousie's Post Office Act of 1854, postal rates were made uniform across British India at a minimal half anna per letter irrespective of distance, and modern adhesive postage stamps were officially introduced."
+      }
+    },
+    {
+      "id": 16,
+      "question": {
+        "mr": "१८५३ च्या सनदी कायद्यानुसार (Charter Act of 1853) गव्हर्नर-जनरलच्या कौन्सिलमध्ये कायदेनिर्मितीच्या कामासाठी नव्याने समाविष्ट करण्यात आलेल्या ६ सदस्यांमध्ये खालीलपैकी कोणाचा समावेश नव्हता?",
+        "en": "Under the Charter Act of 1853, which of the following was NOT among the members included in the Governor-General's Council for legislative purposes?"
+      },
+      "options": [
+        { "mr": "ब्रिटिश संसदेचा नामनिर्देशित खासदार", "en": "A Nominated Member of the British Parliament" },
+        { "mr": "कलकत्ता सर्वोच्च न्यायालयाचे मुख्य न्यायाधीश", "en": "The Chief Justice of the Supreme Court at Calcutta" },
+        { "mr": "कलकत्ता सर्वोच्च न्यायालयाचा एक ज्येष्ठ सहन्यायाधीश", "en": "A Puisne Judge of the Supreme Court at Calcutta" },
+        { "mr": "बंगाल, मद्रास, मुंबई आणि आग्रा या चार स्थानिक सरकारांचे प्रत्येकी एक प्रतिनिधी", "en": "One representative each from the local governments of Bengal, Madras, Bombay, and Agra" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१८५३ च्या कायद्याने कायदे आणि कार्यकारी कार्ये वेगळी केली. ६ नवीन वैधानिक सदस्यांमध्ये: १ मुख्य न्यायाधीश (कलकत्ता सुप्रीम कोर्ट), १ कनिष्ठ न्यायाधीश आणि मद्रास, मुंबई, बंगाल व आग्राच्या नागरी सेवेतून प्रत्येकी १ स्थानिक प्रतिनिधी नेमण्यात आला. यात ब्रिटिश खासदाराचा समावेश नव्हता.",
+        "en": "The Charter Act of 1853 added 6 legislative members: the Chief Justice of Bengal, one puisne judge, and four civil servants representing the provincial governments of Madras, Bombay, Bengal, and Agra (first introduction of local representation). No British MP was part of it."
+      }
+    },
+    {
+      "id": 17,
+      "question": {
+        "mr": "१८४९ मध्ये कलकत्ता येथे मुलींसाठी पहिली धर्मनिरपेक्ष शाळा (हिंदू फिमेल स्कूल - पुढे बेथून स्कूल) स्थापन करण्यात खालीलपैकी कोणाचे मोलाचे सहकार्य लाभले होते?",
+        "en": "Whose crucial assistance enabled J. E. D. Bethune to establish the pioneering Hindu Female School (later Bethune College) for girls in Calcutta in 1849?"
+      },
+      "options": [
+        { "mr": "पंडित ईश्वरचंद्र विद्यासागर", "en": "Pandit Ishwar Chandra Vidyasagar" },
+        { "mr": "स्वामी दयानंद सरस्वती", "en": "Swami Dayanand Saraswati" },
+        { "mr": "केशवचंद्र सेन", "en": "Keshub Chunder Sen" },
+        { "mr": "महादेव गोविंद रानडे", "en": "Mahadev Govind Ranade" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "मे १८४९ मध्ये कौन्सिलचे विधी सदस्य जे. ई. डी. बेथून यांनी कलकत्ता येथे हिंदू फिमेल स्कूल सुरू केले. यात थोर समाजसुधारक पंडित ईश्वरचंद्र विद्यासागर यांनी स्कूलच्या व्यवस्थापकीय सचिवपदाची धुरा सांभाळून मुलींच्या शिक्षणासाठी मोलाचे योगदान दिले.",
+        "en": "In 1849, J. E. D. Bethune, legal member of the Council, founded the Hindu Female School in Calcutta. Pandit Ishwar Chandra Vidyasagar served as the honorary secretary and champion of this landmark institution for women's education."
+      }
+    },
+    {
+      "id": 18,
+      "question": {
+        "mr": "१७७२ मध्ये वॉरन हेस्टिंग्सने जिल्हा स्तरावर महसूल गोळा करण्यासाठी आणि न्यायदानासाठी कोणत्या नवीन प्रशासकीय पदाची निर्मिती केली?",
+        "en": "Which key administrative post was instituted at the district level by Warren Hastings in 1772 for revenue collection and judicial administration?"
+      },
+      "options": [
+        { "mr": "जिल्हाधिकारी (Collector)", "en": "District Collector" },
+        { "mr": "जिल्हा पोलीस अधीक्षक (SP)", "en": "Superintendent of Police" },
+        { "mr": "तहसीलदार (Tehsildar)", "en": "Tehsildar" },
+        { "mr": "विभागीय आयुक्त (Divisional Commissioner)", "en": "Divisional Commissioner" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१७७२ मध्ये वॉरन हेस्टिंग्सने दुहेरी राज्यव्यवस्था संपुष्टात आणून प्रत्येक जिल्ह्यासाठी एका युरोपीय अधिकाऱ्याची 'कलेक्टर' (जिल्हाधिकारी) म्हणून नियुक्ती केली, ज्याच्यावर महसूल जमा करण्याची आणि दिवाणी न्यायालयाचे अध्यक्षपद भूषवण्याची जबाबदारी होती.",
+        "en": "In 1772, Warren Hastings created the foundational office of the 'Collector' in each district, charging British officers with revenue assessment and collection as well as presiding over the local civil courts (Mofussil Diwani Adalat)."
+      }
+    },
+    {
+      "id": 19,
+      "question": {
+        "mr": "इंग्रजांनी सिंध प्रांताचे १८४३ मध्ये विलीनीकरण केल्यानंतर सर चार्ल्स नेपियर याने आपल्या डायरीत त्या कृतीचे वर्णन कोणत्या शब्दांत केले होते?",
+        "en": "Following the annexation of Sindh in 1843, how did Sir Charles Napier characterize the annexation in his private diary?"
+      },
+      "options": [
+        { "mr": "\"आम्हाला सिंधवर ताबा मिळवण्याचा कोणताही अधिकार नाही, तरीही आम्ही ते करू, आणि तो एक अतिशय फायदेशीर, उपयुक्त आणि मानवी स्वरूपाचा बदमाषपणा ठरेल.\"", "en": "\"We have no right to seize Sind, yet we shall do so, and a very advantageous, useful, humane piece of rascality it will be.\"" },
+        { "mr": "\"सिंधचे विलीनीकरण हा केवळ संरक्षणात्मक उपाय होता.\"", "en": "\"The annexation of Sindh was purely an act of self-defence.\"" },
+        { "mr": "\"आम्ही सिंधच्या जनतेला अत्याचारी राजवटीतून मुक्त केले.\"", "en": "\"We have liberated the oppressed subjects of Sindh from cruel tyrants.\"" },
+        { "mr": "\"मुघल साम्राज्याचा हा नैसर्गिक उत्तराधिकार ब्रिटिश मुकुटाकडे आला आहे.\"", "en": "\"This is the natural succession of the British Crown to the Mughal legacy.\"" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "सर चार्ल्स नेपियरने प्रामाणिकपणे कबूल केले होते की ब्रिटिश साम्राज्याला सिंध जिंकण्याचा कोणताही नैतिक अधिकार नव्हता; परंतु व्यापारी व सामरिक फायद्यासाठी केलेली ती एक 'फायदेशीर व उपयुक्त लबाडी' (A useful piece of rascality) होती.",
+        "en": "Sir Charles Napier candidly confessed in his diary: 'We have no right to seize Sind, yet we shall do so, and a very advantageous, useful, humane piece of rascality it will be', admitting the absence of moral justification."
+      }
+    },
+    {
+      "id": 20,
+      "question": {
+        "mr": "१८५४ च्या वूड्स डिस्पॅचच्या शिफारशीनुसार १८५७ मध्ये लंडन विद्यापीठाच्या धर्तीवर भारतात सर्वप्रथम खालीलपैकी कोणत्या तीन ठिकाणी विद्यापीठांची स्थापना झाली?",
+        "en": "Pursuant to the recommendations of Wood's Despatch of 1854, in which three presidency cities were universities established on the model of the University of London in 1857?"
+      },
+      "options": [
+        { "mr": "कलकत्ता, मुंबई आणि मद्रास", "en": "Calcutta, Bombay, and Madras" },
+        { "mr": "कलकत्ता, दिल्ली आणि लाहोर", "en": "Calcutta, Delhi, and Lahore" },
+        { "mr": "मुंबई, पुणे आणि अहमदाबाद", "en": "Bombay, Poona, and Ahmedabad" },
+        { "mr": "मद्रास, बंगळुरू आणि हैदराबाद", "en": "Madras, Bangalore, and Hyderabad" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "चार्ल्स वूड यांच्या खलित्यानुसार १८५७ मध्ये तीन प्रेसिडेन्सी शहरांमध्ये कलकत्ता विद्यापीठ (जानेवारी १८५७), मुंबई विद्यापीठ (जुलै १८५७) आणि मद्रास विद्यापीठ (सप्टेंबर १८५७) यांची स्थापना करण्यात आली.",
+        "en": "In accordance with Wood's Educational Despatch, the three presidency universities—Calcutta (Jan 1857), Bombay (July 1857), and Madras (Sept 1857)—were incorporated as examining bodies modeled on London University."
+      }
+    },
+    {
+      "id": 21,
+      "question": {
+        "mr": "१८०१ मध्ये लॉर्ड वेलस्लीने तैनाती फौजेच्या कराराद्वारे अवधच्या नवाबाकडून त्याचा कोणता प्रमुख भूभाग काढून घेतला?",
+        "en": "Under the Subsidiary Treaty of 1801, which major territorial portion did Lord Wellesley extract from the Nawab of Awadh?"
+      },
+      "options": [
+        { "mr": "रोहिलखंड आणि खालचा दोआब (गंगा-यमुना मधील प्रदेश)", "en": "Rohilkhand and the Lower Doab (territory between the Ganga and Yamuna)" },
+        { "mr": "वाराणसी आणि गाझीपूर", "en": "Varanasi and Ghazipur" },
+        { "mr": "बुंदेलखंड आणि माळवा", "en": "Bundelkhand and Malwa" },
+        { "mr": "कटक आणि संबळपूर", "en": "Cuttack and Sambalpur" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "नोव्हेंबर १८०१ मध्ये वेलस्लीने नवाब सादत अली खानवर दबाव आणून अवधच्या राज्याचा निम्मा भूभाग (ज्यात रोहिलखंड आणि गंगा-यमुना दोआबचा समृद्ध प्रदेश समाविष्ट होता) ब्रिटिश फौजेच्या कायमस्वरूपी खर्चापोटी जबरदस्तीने हस्तगत केला.",
+        "en": "In November 1801, Wellesley coerced Nawab Saadat Ali Khan of Awadh into surrendering half of his domain—including Rohilkhand and the fertile Lower Doab—to cover the permanent maintenance costs of the British subsidiary force."
+      }
+    },
+    {
+      "id": 22,
+      "question": {
+        "mr": "लॉर्ड हेस्टिंग्सच्या कार्यकाळात १८१८ मध्ये मुघल सम्राटाचे नाममात्र सार्वभौमत्व झुगारून स्वतःला 'राजा' (King) ही पदवी धारण करण्यास खालीलपैकी कोणत्या संस्थानाच्या शासकाला ब्रिटिशांनी प्रोत्साहन दिले?",
+        "en": "During the tenure of Lord Hastings in 1818, the ruler of which state was actively encouraged by the British to throw off nominal allegiance to the Mughal Emperor and assume the title of 'King'?"
+      },
+      "options": [
+        { "mr": "अवधचे नवाब (Nawab of Awadh)", "en": "Nawab of Awadh" },
+        { "mr": "हैदराबादचा निजाम (Nizam of Hyderabad)", "en": "Nizam of Hyderabad" },
+        { "mr": "कर्नाटकचा नवाब (Nawab of Carnatic)", "en": "Nawab of Carnatic" },
+        { "mr": "बंगालचा नवाब (Nawab of Bengal)", "en": "Nawab of Bengal" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "मुघल सम्राटाचा राजकीय प्रभाव कमी करण्यासाठी लॉर्ड हेस्टिंग्सने अवधचा नवाब गाझी-उद्-दीन हैदर याला १८१८-१९ मध्ये बादशहाचे अंकितत्व झुगारून देऊन स्वतःला 'किंग ऑफ अवध' (अवधचा राजा) ही स्वतंत्र पदवी धारण करण्यास प्रवृत्त केले.",
+        "en": "To diminish the prestige of the Mughal throne in Delhi, Lord Hastings encouraged Nawab Ghazi-ud-din Haidar of Awadh in 1819 to repudiate imperial Mughal suzerainty and declare himself an independent 'King of Awadh'."
+      }
+    },
+    {
+      "id": 23,
+      "question": {
+        "mr": "ब्रिटिश भारतातील दुष्काळ धोरणाच्या संदर्भात, १७७० च्या भीषण 'बंगालच्या दुष्काळात' (Great Bengal Famine of 1770) बंगालच्या अंदाजे किती लोकसंख्येचा भूकबळी गेल्याचा अंदाज आहे?",
+        "en": "Regarding colonial famine history, what proportion of Bengal's estimated population perished during the catastrophic Great Bengal Famine of 1770?"
+      },
+      "options": [
+        { "mr": "सुमारे एक तृतीयांश (1/3rd) लोकसंख्या (सुमारे १ कोटी लोक)", "en": "Roughly one-third of the population (approx. 10 million people)" },
+        { "mr": "सुमारे निम्मी (1/2) लोकसंख्या", "en": "Roughly half of the population" },
+        { "mr": "सुमारे एक दशांश (1/10th) लोकसंख्या", "en": "Roughly one-tenth of the population" },
+        { "mr": "सुमारे पाच टक्के (5%) लोकसंख्या", "en": "Roughly five percent of the population" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१७६९-१७७० मध्ये बंगालमध्ये पडलेल्या भीषण दुष्काळात ईस्ट इंडिया कंपनीने महसूलवसुलीत कोणतीही सूट न देता उलट महसूल वाढवून सक्तीने वसूल केला. परिणामी बंगालमधील अंदाजे एक तृतीयांश लोकसंख्या (सुमारे १ कोटी जनता) अन्नान्नदशेने मृत्युमुखी पडली.",
+        "en": "During the disastrous Bengal Famine of 1769–1770, exacerbated by the Company's relentless and rigid revenue exactions, roughly one-third of Bengal's population—nearly 10 million people—perished of starvation and disease."
+      }
+    },
+    {
+      "id": 24,
+      "question": {
+        "mr": "लॉर्ड कॉर्नवॉलिसने १७९० मध्ये केलेल्या न्यायिक सुधारणांनुसार जिल्हा स्तरावर भारतीय न्यायाधीशांच्या हातातील कोणती न्यायालये बरखास्त करून ती युरोपीय न्यायाधीशांच्या नियंत्रणाखाली आणली गेली?",
+        "en": "Under the judicial reorganization introduced by Lord Cornwallis in 1790, which district-level courts presided over by Indian judges were abolished and brought under European control?"
+      },
+      "options": [
+        { "mr": "जिल्हा फौजदारी न्यायालये (District Faujdari Adalats)", "en": "District Faujdari Adalats" },
+        { "mr": "सदर दिवाणी अदालत (Sadar Diwani Adalat)", "en": "Sadar Diwani Adalat" },
+        { "mr": "पंचायती न्यायालये (Panchayat Courts)", "en": "Panchayat Courts" },
+        { "mr": "कमर्शियल न्यायालये (Commercial Courts)", "en": "Commercial Courts" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१७९० मध्ये कॉर्नवॉलिसने भारतीय काझी व मुफ्तींच्या अखत्यारीतील जुनी जिल्हा फौजदारी न्यायालये बरखास्त केली. त्यांच्या जागी युरोपीय न्यायाधीशांच्या नेतृत्वाखाली चार प्रांतीय सर्किट न्यायालये स्थापन केली, ज्यामुळे उच्च न्यायिक पदांवरून भारतीयांना पूर्णपणे बाजूला सारण्यात आले.",
+        "en": "In 1790, Lord Cornwallis dissolved the indigenous District Faujdari Adalats presided over by Indian Qazis and Muftis, replacing them with European-led Circuit Courts, thereby entrenching the racial monopolization of higher judiciary."
+      }
+    },
+    {
+      "id": 25,
+      "question": {
+        "mr": "१८०३ मध्ये दुसऱ्या इंग्रज-मराठा युद्धादरम्यान ब्रिटिशांनी दिल्ली जिंकून घेतल्यानंतर मुघल सम्राट शहा आलम दुसरा याच्याबाबत ब्रिटिशांचे अधिकृत धोरण काय ठरले?",
+        "en": "Following the British capture of Delhi in 1803 during the Second Anglo-Maratha War, what was the official British policy adopted towards Mughal Emperor Shah Alam II?"
+      },
+      "options": [
+        { "mr": "त्याला पदच्युत न करता लाल किल्ल्यापुरते मर्यादित ठेवून ईस्ट इंडिया कंपनीचा निवृत्तिवेतनधारक (पेन्शनर) बनवण्यात आले.", "en": "He was retained as a nominal sovereign confined to the Red Fort as a salaried pensioner of the East India Company." },
+        { "mr": "त्याला मुघल गादीवरून तात्काळ पदच्युत करून रंगूनला हद्दपार करण्यात आले.", "en": "He was immediately deposed from the throne and exiled to Rangoon." },
+        { "mr": "त्याला संपूर्ण उत्तर भारताचा प्रत्यक्ष प्रशासकीय सम्राट म्हणून पुनर्रस्थापित केले गेले.", "en": "He was restored as the active administrative emperor of all Northern India." },
+        { "mr": "त्याचे मुघल साम्राज्य पूर्णपणे संपुष्टात आणून लाल किल्ला पाडण्यात आला.", "en": "The Mughal Empire was extinguished entirely and the Red Fort was demolished." }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "सप्टेंबर १८०३ मध्ये जनरल जेरार्ड लेक याने शिंद्यांचा पराभव करून दिल्ली हस्तगत केली. ब्रिटिशांनी आंधळ्या शहा आलमला संरक्षण दिले, परंतु त्याचे सार्वभौमत्व फक्त लाल किल्ल्यापुरते मर्यादित करून त्याला कंपनीचा निवृत्तिवेतनधारक (पेन्शनर) बनवले.",
+        "en": "In September 1803, Lord Lake entered Delhi after defeating Scindia's forces. Mughal Emperor Shah Alam II was taken under British protection, stripped of sovereign authority outside the Red Fort, and transformed into an imperial pensioner of the East India Company."
+      }
+    }
+  ]
+}

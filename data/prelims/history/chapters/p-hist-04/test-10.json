@@ -1,0 +1,464 @@
+{
+  "testId": "p-hist-04-t10",
+  "title": {
+    "mr": "सामाजिक व धार्मिक सुधारणा चळवळी — सराव 10",
+    "en": "Social and Religious Reform Movements — Practice Test 10"
+  },
+  "durationMinutes": 20,
+  "marksPerQuestion": 1,
+  "negativeMarking": 0.25,
+  "totalMarks": 25,
+  "difficulty": "मध्यम ते काठिण्य",
+  "questions": [
+    {
+      "id": 1,
+      "question": {
+        "mr": "राजा राममोहन रॉय यांच्या वृत्तपत्रीय स्वातंत्र्याविषयीच्या लढ्याबाबत खालील विधाने विचारात घ्या:\nअ. १८२३ मध्ये जॉन ॲडम याने लागू केलेल्या जाचक लायसन्सिंग नियमावलीविरुद्ध त्यांनी सर्वोच्च न्यायालयात ऐतिहासिक याचिका दाखल केली होती.\nब. या कायद्याच्या निषेधार्थ त्यांनी आपले प्रसिद्ध फारसी साप्ताहिक 'मिरात-उल-अखबार' कायमचे बंद केले.\nवरीलपैकी कोणते/ती विधान/ने बरोबर आहेत?",
+        "en": "Consider the following statements regarding Raja Ram Mohan Roy's crusade for freedom of the press:\na. He submitted a historic constitutional memorial to the Supreme Court against the repressive Licensing Regulations introduced by John Adam in 1823.\nb. In principled protest against these regulations, he shut down his famous Persian weekly 'Mirat-ul-Akhbar'.\nWhich of the statements given above is/are correct?"
+      },
+      "options": [
+        { "mr": "फक्त अ", "en": "Only a" },
+        { "mr": "फक्त ब", "en": "Only b" },
+        { "mr": "दोन्ही नाही", "en": "Neither a nor b" },
+        { "mr": "अ आणि ब दोन्ही", "en": "Both a and b" }
+      ],
+      "correctAnswerIndex": 3,
+      "explanation": {
+        "mr": "दोन्ही विधाने बरोबर आहेत. १८२३ च्या वृत्तपत्र परवाना नियमावलीविरुद्ध राजा राममोहन रॉय यांनी सर्वोच्च न्यायालयात व नंतर प्रिव्ही कौन्सिलकडे दाद मागितली, ज्याचे वर्णन 'मुद्रण स्वातंत्र्याचे मॅग्ना कार्टा' मानले जाते. या जाचक कायद्याचा निषेध म्हणून त्यांनी आपले फारसी पत्र 'मिरात-उल-अखबार' कायमचे बंद केले.",
+        "en": "Both statements are correct. In 1823, Raja Ram Mohan Roy petitioned against Acting Governor-General John Adam's Licensing Regulations, memorably closing down 'Mirat-ul-Akhbar' rather than publishing under censorship."
+      }
+    },
+    {
+      "id": 2,
+      "question": {
+        "mr": "१८५१ मध्ये पंडित ईश्वरचंद्र विद्यासागर यांनी संस्कृत कॉलेजच्या प्रवेश नियमांमध्ये कोणता क्रांतिकारक बदल घडवून आणला?",
+        "en": "Which revolutionary admission reform was instituted by Pandit Ishwar Chandra Vidyasagar at the Sanskrit College of Calcutta in 1851?"
+      },
+      "options": [
+        { "mr": "केवळ ब्रिटिश अधिकाऱ्यांनाच संस्कृत शिकण्याची परवानगी दिली.", "en": "Permitted only British officers to study Sanskrit." },
+        { "mr": "ब्राह्मणांशिवाय इतर अब्राह्मण (कायस्थ व इतर गैर-ब्राह्मण) विद्यार्थ्यांनाही संस्कृत शिकण्यासाठी महाविद्यालयाचे दरवाजे खुले केले.", "en": "Threw open the doors of the Sanskrit College to non-Brahmin students (such as Kayasthas)." },
+        { "mr": "संस्कृत भाषेवर बंदी घालून केवळ इंग्रजी शिकवणे सक्तीचे केले.", "en": "Abolished Sanskrit studies in favor of mandatory English instruction." },
+        { "mr": "केवळ युरोपियन महिलांसाठी राखीव जागा निर्माण केल्या.", "en": "Reserved seats exclusively for European women." }
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": {
+        "mr": "१८५१ मध्ये कलकत्ता संस्कृत कॉलेजचे प्राचार्य झाल्यावर ईश्वरचंद्र विद्यासागर यांनी केवळ ब्राह्मण व वैद्यांसाठी मर्यादित असलेला संस्कृत अध्ययनाचा हक्क मोडून काढला आणि कायस्थांसह सर्व बिगर-ब्राह्मण विद्यार्थ्यांसाठी संस्कृतचे दरवाजे खुले केले.",
+        "en": "Upon assuming the principalship of Sanskrit College in 1851, Ishwar Chandra Vidyasagar dismantled the caste monopoly by throwing open admissions to non-Brahmin students, notably Kayasthas."
+      }
+    },
+    {
+      "id": 3,
+      "question": {
+        "mr": "१८४८ मध्ये स्थापन झालेल्या मुंबईच्या 'स्टुडंट्स लिटररी अँड सायंटिफिक सोसायटी'च्या (Students' Literary and Scientific Society) अंतर्गत ज्ञानप्रसारासाठी कोणत्या दोन भाषांच्या शाखा कार्यरत होत्या?",
+        "en": "Under the Students' Literary and Scientific Society founded in Bombay in 1848, which two language divisions were constituted for vernacular intellectual discussions?"
+      },
+      "options": [
+        { "mr": "मराठी ज्ञानप्रसारक सभा आणि गुजराती ज्ञानप्रसारक सभा", "en": "Marathi Dnyanprasarak Sabha and Gujarati Dnyanprasarak Sabha" },
+        { "mr": "हिंदी व संस्कृत शाखा", "en": "Hindi and Sanskrit divisions" },
+        { "mr": "इंग्रजी व फारसी शाखा", "en": "English and Persian divisions" },
+        { "mr": "उर्दू व सिंधी शाखा", "en": "Urdu and Sindhi divisions" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "एल्फिन्स्टन इन्स्टिट्यूटच्या प्राध्यापक व विद्यार्थ्यांनी १८४८ मध्ये स्थापन केलेल्या सोसायटीत मराठी भाषिकांसाठी 'मराठी ज्ञानप्रसारक सभा' (दादोबा पांडुरंग, भाऊ दाजी लाड) आणि गुजराती भाषिकांसाठी 'गुजराती ज्ञानप्रसारक सभा' (दादाभाई नौरोजी) या दोन शाखा कार्यरत होत्या.",
+        "en": "The Students' Literary and Scientific Society formed in Bombay in 1848 established two vernacular wings: the Marathi Dnyanprasarak Sabha and the Gujarati Dnyanprasarak Sabha."
+      }
+    },
+    {
+      "id": 4,
+      "question": {
+        "mr": "१८७० मध्ये मुंबईत स्थापन झालेल्या 'हिंदू लेडीज सोशल क्लब'च्या (Hindu Ladies Social Club) संस्थापिका कोण होत्या, ज्यांनी महिलांच्या सामाजिक सुधारणांचा पाया घातला?",
+        "en": "Who among the following was the founder of the 'Hindu Ladies Social Club' established in Bombay in 1882 to bring high-caste women into public and intellectual life?"
+      },
+      "options": [
+        { "mr": "सावित्रीबाई फुले", "en": "Savitribai Phule" },
+        { "mr": "आनंदीबाई जोशी", "en": "Anandibai Joshi" },
+        { "mr": "रमाबाई रानडे", "en": "Ramabai Ranade" },
+        { "mr": "काशीबाई कानिटकर", "en": "Kashibai Kanitkar" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "रमाबाई रानडे यांनी पुण्यात आणि मुंबईत महिलांचे संघटन करण्यासाठी 'हिंदू लेडीज सोशल क्लब' सुरू केला, ज्याद्वारे महिलांना हस्तकला, वाचन आणि सामाजिक चर्चेचे व्यासपीठ उपलब्ध करून देण्यात आले.",
+        "en": "Ramabai Ranade organized the Hindu Ladies Social Club in Bombay in the 1880s, creating an early platform where women met across caste barriers to discuss social and cultural themes."
+      }
+    },
+    {
+      "id": 5,
+      "question": {
+        "mr": "गोपाळबाबा वलंगकर यांनी १८९० मध्ये ब्रिटिश सरकारकडे महार सैनिकांच्या हक्कांसाठी पाठवलेल्या ऐतिहासिक अर्जावर खालीलपैकी कोणत्या निवृत्त सैनिकांच्या वतीने स्वाक्षऱ्या गोळा केल्या होत्या?",
+        "en": "On behalf of which community of retired military veterans did Gopalbaba Walangkar submit a historic memorandum to the British Government in 1890?"
+      },
+      "options": [
+        { "mr": "गुरखा सैनिक", "en": "Gurkha soldiers" },
+        { "mr": "शीख सैनिक", "en": "Sikh soldiers" },
+        { "mr": "महार आणि चर्मकार निवृत्त सैनिक", "en": "Retired Mahar and Chambhar soldiers" },
+        { "mr": "राजपूत सैनिक", "en": "Rajput soldiers" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "ब्रिटिश सरकारने १८९० च्या सुमारास बॉम्बे लष्करात अस्पृश्य महार समाजाची भरती अचानक बंद केली. या भेदभावाविरुद्ध गोपाळबाबा वलंगकर यांनी 'अनार्य दोष परिहारक मंडळी'च्या वतीने निवृत्त सुभेदार व सैनिकांच्या स्वाक्षऱ्यांसह सरकारकडे याचिका दाखल केली.",
+        "en": "In 1890, through the Anarya Dosh-Pariharak Mandali, Gopalbaba Walangkar mobilized retired native officers to submit a memorial protesting the military closure of Mahar recruitment into the Bombay Army."
+      }
+    },
+    {
+      "id": 6,
+      "question": {
+        "mr": "स्वामी दयानंद सरस्वती यांच्या संदर्भात खालील विधाने विचारात घ्या:\nअ. त्यांनी वेदांमधील तत्त्वज्ञानाचा आधार घेऊन मूर्तीपूजा, अवतारवाद, बालविवाह आणि जातिव्यवस्थेचा कठोर निषेध केला.\nब. 'भारत हा केवळ भारतीयांसाठी आहे' (India for Indians) हा राजकीय मंत्र त्यांनी सर्वप्रथम उच्चारला होता.\nवरीलपैकी कोणते/ती विधान/ने बरोबर आहेत?",
+        "en": "Consider the following statements regarding Swami Dayanand Saraswati:\na. Citing the authority of the Vedas, he categorically repudiated idolatry, divine incarnation, child marriage, and hereditary caste barriers.\nb. He was among the earliest thinkers to proclaim the political vision of 'India for Indians'.\nWhich of the statements given above is/are correct?"
+      },
+      "options": [
+        { "mr": "फक्त अ", "en": "Only a" },
+        { "mr": "फक्त ब", "en": "Only b" },
+        { "mr": "अ आणि ब दोन्ही", "en": "Both a and b" },
+        { "mr": "दोन्ही नाही", "en": "Neither a nor b" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "दोन्ही विधाने बरोबर आहेत. स्वामी दयानंद सरस्वती यांनी वेदांचे श्रेष्ठत्व मांडताना तत्कालीन कुप्रथा नाकारल्या. तसेच विदेशी शासनापेक्षा स्वदेशी राज्य कितीही वाईट असले तरी श्रेष्ठ असते असे सांगत 'स्वराज्य' आणि 'भारत भारतीयांसाठी' ही संकल्पना सर्वप्रथम मांडली.",
+        "en": "Both statements are correct. Dayanand rejected post-Vedic orthodoxies including idol-worship and caste discrimination, and famously declared that good government is no substitute for self-government ('India for Indians')."
+      }
+    },
+    {
+      "id": 7,
+      "question": {
+        "mr": "१८८० च्या दशकात लंडन येथे स्थापन झालेल्या 'सोसायटी फॉर द प्रोटेक्शन ऑफ चिल्ड्रन इन इंडिया'च्या धर्तीवर मुंबईत अनाथ मुलांसाठी 'शिशु संगोपन गृह' कोणी सुरू केले?",
+        "en": "Which reformer established the early Orphanage and Foundling Home in Pandharpur in 1875 under the auspices of the Prarthana Samaj to save destitute infants?"
+      },
+      "options": [
+        { "mr": "लालशंकर उमीयाशंकर", "en": "Lalshankar Umiyashankar" },
+        { "mr": "महात्मा ज्योतिराव फुले", "en": "Mahatma Jyotirao Phule" },
+        { "mr": "गोपाळ गणेश आगरकर", "en": "Gopal Ganesh Agarkar" },
+        { "mr": "धोंडो केशव कर्वे", "en": "Dhondo Keshav Karve" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "प्रार्थना समाजाचे नेते लालशंकर उमीयाशंकर यांनी १८७५ मध्ये पंढरपूर येथे अनाथालय आणि बालहत्या प्रतिबंधक गृह स्थापन केले, जेणेकरून परित्यक्त आणि अनाथ बालकांचे संरक्षण व्हावे.",
+        "en": "Lalshankar Umiyashankar was instrumental in establishing the historic Foundling Home and Orphanage at Pandharpur in 1875 under the Prarthana Samaj."
+      }
+    },
+    {
+      "id": 8,
+      "question": {
+        "mr": "१९०६ मध्ये पुण्यात भरलेल्या 'अखिल भारतीय मराठी साहित्य संमेलना'चे पहिले संमेलन १८७८ मध्ये कोणाच्या पुढाकाराने आयोजित करण्यात आले होते?",
+        "en": "Under whose visionary presidency was the first historic session of the Marathi Sahitya Sammelan convened in Pune in May 1878?"
+      },
+      "options": [
+        { "mr": "विष्णुशास्त्री चिपळूणकर", "en": "Vishnushastri Chiplunkar" },
+        { "mr": "न्यायमूर्ती महादेव गोविंद रानडे", "en": "Justice Mahadev Govind Ranade" },
+        { "mr": "लोकहितवादी गोपाळ हरी देशमुख", "en": "Lokhitwadi Gopal Hari Deshmukh" },
+        { "mr": "बाळ गंगाधर टिळक", "en": "Bal Gangadhar Tilak" }
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": {
+        "mr": "११ मे १८७८ रोजी पुण्यात भरलेल्या पहिल्या अखिल भारतीय ग्रंथकार संमेलनाचे (मराठी साहित्य संमेलन) अध्यक्ष न्यायमूर्ती महादेव गोविंद रानडे होते. लोकहितवादी गोपाळ हरी देशमुख यांनी या संमेलनाचे स्वागताध्यक्षपद भूषवले होते.",
+        "en": "Justice Mahadev Govind Ranade was the President of the First Marathi Granthakar Sammelan (Marathi Sahitya Sammelan) held in Pune in May 1878, with Lokhitwadi serving as reception chairman."
+      }
+    },
+    {
+      "id": 9,
+      "question": {
+        "mr": "१८८२ मध्ये हंटर शिक्षण आयोगासमोर (Hunter Education Commission) प्राथमिक शिक्षणाबाबत साक्ष देताना मोफत व सक्तीच्या शिक्षणाची आग्रही मागणी खालीलपैकी कोणी केली होती?",
+        "en": "Who deposed before the Hunter Education Commission in Pune in 1882, demanding that primary education for the masses be made free and compulsory?"
+      },
+      "options": [
+        { "mr": "गोपाळ कृष्ण गोखले", "en": "Gopal Krishna Gokhale" },
+        { "mr": "बाळ गंगाधर टिळक", "en": "Bal Gangadhar Tilak" },
+        { "mr": "महात्मा ज्योतिराव फुले", "en": "Mahatma Jyotirao Phule" },
+        { "mr": "गोपाळ गणेश आगरकर", "en": "Gopal Ganesh Agarkar" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "१९ ऑक्टोबर १८८२ रोजी महात्मा ज्योतिराव फुले यांनी हंटर कमिशनसमोर प्रदीर्घ लेखी साक्ष दिली. त्यांनी उच्च शिक्षणावरील उधळपट्टी थांबवून तो निधी बहुजन शेतकऱ्यांच्या मुलांसाठी १२ वर्षांपर्यंत मोफत आणि सक्तीचे प्राथमिक शिक्षण देण्यासाठी वापरावा अशी ऐतिहासिक मागणी केली.",
+        "en": "On 19 October 1882, Mahatma Jyotirao Phule submitted his landmark testimony to the Hunter Commission, demanding that public revenues be prioritized for free, compulsory, and universal primary schooling for lower classes."
+      }
+    },
+    {
+      "id": 10,
+      "question": {
+        "mr": "१८८९ मध्ये मुंबईत भरलेल्या काँग्रेस अधिवेशनात सहभागी झालेल्या महिला प्रतिनिधींमध्ये खालीलपैकी कोणाचा समावेश होता?",
+        "en": "Who among the following women leaders was a delegate at the 1889 Bombay session of the Indian National Congress?"
+      },
+      "options": [
+        { "mr": "पंडिता रमाबाई आणि काशिबाई कानिटकर", "en": "Pandita Ramabai and Kashibai Kanitkar" },
+        { "mr": "सरोजिनी नायडू आणि एनी बेझंट", "en": "Sarojini Naidu and Annie Besant" },
+        { "mr": "सावित्रीबाई फुले आणि ताराबाई शिंदे", "en": "Savitribai Phule and Tarabai Shinde" },
+        { "mr": "कमला नेहरू आणि कस्तुरबा गांधी", "en": "Kamala Nehru and Kasturba Gandhi" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१८८९ च्या मुंबई काँग्रेस अधिवेशनात प्रथमच १० महिला प्रतिनिधी सहभागी झाल्या होत्या. यामध्ये पंडिता रमाबाई, काशिबाई कानिटकर आणि शेवंतीबाई निकंबे यांचा समावेश होता.",
+        "en": "The 1889 Bombay session of the Congress saw the historic inclusion of ten women delegates, including Pandita Ramabai and Marathi writer Kashibai Kanitkar."
+      }
+    },
+    {
+      "id": 11,
+      "question": {
+        "mr": "आर्य समाजाने चालवलेल्या 'गोरक्षिणी सभा' (Gaurakshini Sabha) चळवळीची सुरुवात स्वामी दयानंद सरस्वती यांनी कोणत्या वर्षी केली होती?",
+        "en": "In which year did Swami Dayanand Saraswati initiate the 'Gaurakshini Sabha' (Cow Protection Society) and publish the pamphlet 'Gokarunanidhi'?"
+      },
+      "options": [
+        { "mr": "१८७५", "en": "1875" },
+        { "mr": "१८८२", "en": "1882" },
+        { "mr": "१८८९", "en": "1889" },
+        { "mr": "१८९३", "en": "1893" }
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": {
+        "mr": "१८८२ मध्ये स्वामी दयानंद सरस्वती यांनी 'गोरक्षिणी सभा' स्थापन केली आणि 'गोकरुणानिधी' हे पुस्तक लिहिले, ज्यामध्ये गायींचे आर्थिक व पर्यावरणीय महत्त्व अधोरेखित केले होते.",
+        "en": "In 1882, Swami Dayanand Saraswati established the Gaurakshini Sabha and authored 'Gokarunanidhi' to advocate for cattle preservation from economic and humanitarian perspectives."
+      }
+    },
+    {
+      "id": 12,
+      "question": {
+        "mr": "महाराष्ट्रात 'वृत्तपत्रांचे मुक्तिदाता' म्हणून चार्ल्स मेटकॉफ प्रसिद्ध असले, तरी मुंबईत देशी वृत्तपत्रांवर ब्रिटिशांनी लादलेल्या जाचक बंधनांना आव्हान देणारे 'बाँबे क्रॉनिकल'चे संपादक कोण होते?",
+        "en": "Who was the legendary British journalist who edited the 'Bombay Chronicle' (launched by Pherozeshah Mehta in 1913), staunchly championing Indian social and political freedoms?"
+      },
+      "options": [
+        { "mr": "रॉबर्ट नाइट", "en": "Robert Knight" },
+        { "mr": "बी. जी. हॉर्निमन (B. G. Horniman)", "en": "B. G. Horniman" },
+        { "mr": "जेम्स सिल्क बकिंगहॅम", "en": "James Silk Buckingham" },
+        { "mr": "विल्यम डिग्बी", "en": "William Digby" }
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": {
+        "mr": "बेंजामिन गाय हॉर्निमन (B. G. Horniman) हे 'बॉम्बे क्रॉनिकल'चे संपादक होते. त्यांनी जालियानवाला बाग हत्याकांडाची बातमी ब्रिटिश सेन्सॉरशिप मोडून जगात उघडकीस आणली, ज्यामुळे ब्रिटिशांनी त्यांना भारतातून हद्दपार केले होते.",
+        "en": "B. G. Horniman, editor of the 'Bombay Chronicle', was a fearless critic of colonial censorship who exposed the Jallianwala Bagh atrocities to the world, leading to his deportation in 1919."
+      }
+    },
+    {
+      "id": 13,
+      "question": {
+        "mr": "१८९० मध्ये स्थापन झालेल्या 'महार वतन सुधारणा परिषदे'चे नेतृत्व खालीलपैकी कोणत्या पूर्वसुरींनी केले होते?",
+        "en": "Who among the following early Dalit reformers established the 'Anarya Dosh-Pariharak Mandali' in Dapoli in 1886 to eliminate untouchability?"
+      },
+      "options": [
+        { "mr": "गोपाळबाबा वलंगकर", "en": "Gopalbaba Walangkar" },
+        { "mr": "शिवराम जानबा कांबळे", "en": "Shivram Janba Kamble" },
+        { "mr": "किसन फागुजी बनसोडे", "en": "Kisan Faguji Bansode" },
+        { "mr": "डॉ. बाबासाहेब आंबेडकर", "en": "Dr. B. R. Ambedkar" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "गोपाळबाबा वलंगकर यांनी १८८६ मध्ये दापोली येथे 'अनार्य दोष परिहारक मंडळी' स्थापन केली. या संस्थेमार्फत त्यांनी कोकणातील महार व इतर अस्पृश्य समाजातील अनिष्ट रूढी आणि व्यसनाधीनतेविरुद्ध लढा दिला.",
+        "en": "Gopalbaba Walangkar formed the 'Anarya Dosh-Pariharak Mandali' at Dapoli in 1886 to organize Depressed Class youth against traditional social oppressions."
+      }
+    },
+    {
+      "id": 14,
+      "question": {
+        "mr": "छत्रपती शाहू महाराजांनी १९२० मध्ये 'हुकूमशाही पुरोहितशाहीला' शह देण्यासाठी कोणत्या समाजाच्या पुरोहितांना स्वतःचे विधी करण्याचे अधिकार बहाल केले होते?",
+        "en": "To dismantle priestly orthodoxy, which institute was patronized by Rajarshi Shahu Maharaj in Kolhapur in 1920 to train Maratha and backward-class youths as independent family priests?"
+      },
+      "options": [
+        { "mr": "शिवाजी वैदिक विद्यालय (Shivaji Vedic School)", "en": "Shivaji Vedic School" },
+        { "mr": "शारदा मठ", "en": "Sharada Math" },
+        { "mr": "सत्यशोधक पुरोहित शाळा (Satyashodhak Priest School)", "en": "Satyashodhak Priest School" },
+        { "mr": "क्षत्रिय धर्म प्रसारक मंडळ", "en": "Kshatriya Dharma Prasarak Mandal" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "शाहू महाराजांनी १९२० मध्ये कोल्हापुरात 'सत्यशोधक पुरोहित शाळा' सुरू केली. यामध्ये मराठा व बहुजन मुलांना धार्मिक विधी, पौरोहित्य आणि वेदोक्त मंत्र शिकवून पुरोहितांची मक्तेदारी संपुष्टात आणली.",
+        "en": "In 1920, Shahu Maharaj established the 'Satyashodhak Priest School' in Kolhapur, training non-Brahmin youths to officiate domestic and religious sacraments."
+      }
+    },
+    {
+      "id": 15,
+      "question": {
+        "mr": "१९११ मध्ये स्थापन झालेल्या 'सोशल सर्व्हिस लीग'चे मुखपत्र म्हणून ना. म. जोशी यांनी कोणते वृत्तपत्र चालवले?",
+        "en": "Which labor and social service weekly journal was edited by N. M. Joshi in Bombay to voice the grievances of the working class?"
+      },
+      "options": [
+        { "mr": "कामगार हितवर्धक", "en": "Kamgar Hitwardhak" },
+        { "mr": "कामगार समाचार", "en": "Kamgar Samachar" },
+        { "mr": "दी सोशल सर्व्हिस क्वार्टर्ली (The Social Service Quarterly)", "en": "The Social Service Quarterly" },
+        { "mr": "जनता", "en": "Janata" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "ना. म. जोशी यांच्या सोशल सर्व्हिस लीगने 'द सोशल सर्व्हिस क्वार्टर्ली' (The Social Service Quarterly) हे इंग्रजी नियतकालिक चालवले, ज्यातून कामगारांचे राहणीमान, बालमजुरी आणि झोपडपट्ट्यांच्या सुधारणांवर शास्त्रीय अभ्यास मांडला जाई.",
+        "en": "N. M. Joshi edited 'The Social Service Quarterly' under the Social Service League, presenting empirical research on urban housing, labor conditions, and industrial welfare."
+      }
+    },
+    {
+      "id": 16,
+      "question": {
+        "mr": "१८७४ मध्ये सत्यशोधक समाजाच्या प्रसारासाठी 'सत्यशोधक' या नावाचे पहिले साप्ताहिक कोठून सुरू झाले होते?",
+        "en": "From which town in Maharashtra was the early reformist weekly 'Satyashodhak' published in the 1870s?"
+      },
+      "options": [
+        { "mr": "पुणे", "en": "Pune" },
+        { "mr": "रत्नागिरी", "en": "Ratnagiri" },
+        { "mr": "सातारा", "en": "Satara" },
+        { "mr": "कोल्हापूर", "en": "Kolhapur" }
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": {
+        "mr": "रत्नागिरी येथून १८७१-७२ च्या सुमारास रामचंद्र बाबाजी जाधव यांनी 'सत्यशोधक' नावाचे पत्र सुरू केले होते, ज्याने कोकणात सत्यशोधक तत्त्वांचा प्रसार केला.",
+        "en": "The newspaper 'Satyashodhak' was initially brought out from Ratnagiri in the 1870s to spread progressive egalitarian thoughts in the Konkan region."
+      }
+    },
+    {
+      "id": 17,
+      "question": {
+        "mr": "डॉ. बाबासाहेब आंबेडकरांनी स्थापन केलेल्या 'द समता सैनिक दल' (Samata Sainik Dal - 1927) चे मुख्य कार्य कोणते होते?",
+        "en": "What was the fundamental functional role of the 'Samata Sainik Dal' (Army of Equality) founded by Dr. B. R. Ambedkar in 1927?"
+      },
+      "options": [
+        { "mr": "ब्रिटिश लष्कराशी गनिमी काव्याने सशस्त्र लढा देणे.", "en": "Waging guerrilla war against the British army." },
+        { "mr": "अस्पृश्यता निवारण परिषदांचे संरक्षण करणे, सामाजिक चळवळीत स्वयंसेवक म्हणून शिस्त राखणे आणि अन्यायाचा प्रतिकार करणे.", "en": "Providing disciplined volunteer protection to anti-caste gatherings, conferences, and peaceful civil rights agitations." },
+        { "mr": "केवळ धार्मिक मंदिरांचे पुजारी नेमणे.", "en": "Appointing priests for regional temples." },
+        { "mr": "केवळ निवडणुकांमध्ये मतदारांची नोंदणी करणे.", "en": "Registering voters for general elections." }
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": {
+        "mr": "महाड सत्याग्रहाच्या वेळी सप्टेंबर १९२७ मध्ये डॉ. आंबेडकरांनी 'समता सैनिक दल' (SSD) ची स्थापना केली. सामाजिक चळवळीतील सभांचे संरक्षण करणे, जातीभेदाविरुद्ध शिस्तबद्ध प्रतिकार करणे आणि मानवी समतेचे रक्षण करणे हे या स्वयंसेवक दलाचे काम होते.",
+        "en": "In 1927, Dr. Ambedkar founded the Samata Sainik Dal (Corps of Volunteers for Equality) as an organized, disciplined civilian defense wing to safeguard Dalit meetings and maintain order during public agitations."
+      }
+    },
+    {
+      "id": 18,
+      "question": {
+        "mr": "१९०८ मध्ये स्थापन झालेल्या 'ब्राह्मो बालिका शिक्षालया'शी संबंधित असलेल्या आणि भारतातील पहिल्या महिला पदवीधरांपैकी एक असलेल्या विदुषी कोण होत्या?",
+        "en": "Who among the following was one of the first two female graduates of the British Empire (1883) from Bethune College, Calcutta, who actively participated in social reform?"
+      },
+      "options": [
+        { "mr": "कादंबिनी गांगुली (Kadambini Ganguly)", "en": "Kadambini Ganguly" },
+        { "mr": "सरोजिनी नायडू", "en": "Sarojini Naidu" },
+        { "mr": "पंडिता रमाबाई", "en": "Pandita Ramabai" },
+        { "mr": "ताराबाई शिंदे", "en": "Tarabai Shinde" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "कादंबिनी गांगुली (आणि चंद्रमुखी बोस) या १८८३ मध्ये कलकत्ता विद्यापीठातून पदवीधर होणाऱ्या पहिल्या भारतीय महिला होत्या. कादंबिनी गांगुली या भारताच्या पहिल्या पाश्चात्त्य महिला डॉक्टर बनल्या आणि त्यांनी १८८९ च्या काँग्रेस अधिवेशनात भाषण केले.",
+        "en": "Kadambini Ganguly graduated from Bethune College in 1883, becoming one of India's first female physicians and the first woman speaker at an Indian National Congress session in 1889."
+      }
+    },
+    {
+      "id": 19,
+      "question": {
+        "mr": "१८८५ मध्ये पुण्यात 'आनंदाश्रम' (Anandashram) संस्थेची स्थापना करून दुर्मिळ संस्कृत हस्तलिखितांचे संपादन व प्रकाशन करणारे समाजसुधारक कोण होते?",
+        "en": "Who founded the famous 'Anandashram' in Pune in 1888 to preserve, edit, and publish rare ancient Sanskrit texts and manuscripts?"
+      },
+      "options": [
+        { "mr": "महादेव चिमणाजी आपटे (M. C. Apte)", "en": "Mahadev Chimnaji Apte (M. C. Apte)" },
+        { "mr": "विष्णू परशुराम शास्त्री पंडित", "en": "Vishnu Parshuram Shastri Pandit" },
+        { "mr": "न्यायमूर्ती रानडे", "en": "Justice Ranade" },
+        { "mr": "डॉ. आर. जी. भांडारकर", "en": "Dr. R. G. Bhandarkar" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "मुंबई उच्च न्यायालयाचे प्रख्यात वकील महादेव चिमणाजी आपटे यांनी १८८८ मध्ये पुण्यात 'आनंदाश्रम' स्थापन केले. त्यांनी स्वतःची सर्व संपत्ती या संस्थेला देऊन संस्कृत वाङ्मयाच्या जतनाचे ऐतिहासिक कार्य केले.",
+        "en": "Prominent jurist Mahadev Chimnaji Apte established the Anandashram Sanstha in Pune in 1888, dedicating his personal wealth to printing and preserving invaluable Sanskrit texts."
+      }
+    },
+    {
+      "id": 20,
+      "question": {
+        "mr": "१९१३ मध्ये छत्रपती शाहू महाराजांनी कोल्हापूर संस्थानात प्राथमिक शाळांमधील अस्पृश्यांच्या मुलांसाठी कोणता क्रांतिकारक नियम लागू केला?",
+        "en": "Which educational directive was enforced by Rajarshi Shahu Maharaj in Kolhapur in 1919 regarding untouchable students in state-aided primary schools?"
+      },
+      "options": [
+        { "mr": "अस्पृश्य विद्यार्थ्यांना वेगळ्या वर्गात बसवण्याची सक्ती करणे.", "en": "Mandating separate veranda seating for untouchable students." },
+        { "mr": "शाळांमधून जातिभेद पूर्णपणे नष्ट करणे; अस्पृश्य विद्यार्थ्यांना सवर्णांसोबत एकाच बाकावर बसवण्यास नकार देणाऱ्या शाळांचे सरकारी अनुदान रद्द करणे.", "en": "Abolishing caste seating; revoking government grants to any school refusing to seat untouchable pupils on the same benches as caste Hindus." },
+        { "mr": "केवळ सवर्ण शिक्षकांनाच मुख्याध्यापक नेमणे.", "en": "Restricting headmaster posts strictly to upper-caste teachers." },
+        { "mr": "अस्पृश्यांसाठी वेगळे शिक्षण शुल्क आकारणे.", "en": "Levying separate tuition fees on untouchable children." }
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": {
+        "mr": "शाहू महाराजांनी २२ ऑगस्ट १९१९ रोजी फर्मान काढले की, कोणत्याही शाळेत अस्पृश्य विद्यार्थ्यांना सवर्ण मुलांपासून वेगळे बसवले जाऊ नये. जो शिक्षक किंवा शाळा व्यवस्थापन अस्पृश्यांशी भेदभाव करेल, त्याचे सरकारी अनुदान तात्काळ बंद केले जाईल.",
+        "en": "In August 1919, Shahu Maharaj issued a historic notification ordering that schools segregating untouchable children would forfeit their state subsidies, enforcing equal bench seating."
+      }
+    },
+    {
+      "id": 21,
+      "question": {
+        "mr": "१९०५ मध्ये 'भारत सेवक समाज' (Servants of India Society) स्थापन करताना गोपाळ कृष्ण गोखले यांनी घेतलेल्या प्रतिज्ञांमध्ये खालीलपैकी कोणत्या आचारावर भर दिला होता?\nअ. वैयक्तिक स्वार्थाचा पूर्ण त्याग आणि मातृभूमीची निष्काम सेवा\nब. धार्मिक किंवा जातीय पूर्वग्रहांना थारा न देणे\nक. शुद्ध आणि सनदशीर मार्गांचा अवलंब करणे\nयोग्य पर्याय निवडा:",
+        "en": "Which of the following vows were mandated for life-members by Gopal Krishna Gokhale upon entering the Servants of India Society in 1905?\na. Absolute renunciation of personal gain and selfless service of the country\nb. Rejection of communal and caste prejudices\nc. Devotion to constitutional and non-violent public work\nChoose the correct option:"
+      },
+      "options": [
+        { "mr": "फक्त अ आणि ब", "en": "Only a and b" },
+        { "mr": "फक्त ब आणि क", "en": "Only b and c" },
+        { "mr": "फक्त अ आणि क", "en": "Only a and c" },
+        { "mr": "अ, ब आणि क सर्व", "en": "All a, b, and c" }
+      ],
+      "correctAnswerIndex": 3,
+      "explanation": {
+        "mr": "सर्व विधाने बरोबर आहेत. गोखले यांनी भारत सेवक समाजाच्या सदस्यांसाठी सात कठोर प्रतिज्ञा ठरवून दिल्या होत्या: देशसेवा हेच सर्वोच्च ध्येय मानणे, स्वतःच्या फायद्यासाठी पदाचा वापर न करणे, सर्व भारतीयांना बांधव मानणे आणि जीवनभर शुद्ध चारित्र्य राखणे.",
+        "en": "All statements are correct. Gokhale formulated seven strict ethical pledges for members of the Servants of India Society, demanding selfless constitutional service, communal harmony, and personal integrity."
+      }
+    },
+    {
+      "id": 22,
+      "question": {
+        "mr": "१८८० च्या दशकात महाराष्ट्रात 'सत्यशोधक' विचारांनी भारलेल्या कृष्णराव भालेकर यांनी शेतकऱ्यांच्या प्रश्नांवर कोणते नाटक लिहून समाजप्रबोधन केले होते?",
+        "en": "Which dramatic play was authored by Satyashodhak leader Krishnarao Bhalekar to depict the agrarian misery and exploitation of peasant cultivators?"
+      },
+      "options": [
+        { "mr": "बळीबा पाटील (Baliba Patil)", "en": "Baliba Patil" },
+        { "mr": "तृतीय रत्न (Tritiya Ratna)", "en": "Tritiya Ratna" },
+        { "mr": "शेतकऱ्याचा असूड", "en": "Shetkaryacha Asud" },
+        { "mr": "देशाचे शत्रू", "en": "Deshache Dushman" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "कृष्णराव भालेकर यांनी 'बळीबा पाटील' (अथवा गावचा कारभार) हे नाटक लिहून सावकार आणि नोकरशाहीच्या जाळ्यात अडकलेल्या अशिक्षित शेतकऱ्यांची विदारक व्यथा मांडली होती. ('तृतीय रत्न' हे नाटक महात्मा फुले यांनी १८५५ मध्ये लिहिले होते).",
+        "en": "Krishnarao Bhalekar authored the play 'Baliba Patil' to illustrate rural exploitation and encourage peasant education. (Jyotirao Phule had earlier written 'Tritiya Ratna' in 1855)."
+      }
+    },
+    {
+      "id": 23,
+      "question": {
+        "mr": "१९२५ मध्ये स्थापन झालेल्या 'राष्ट्रीय स्वयंसेवक संघा'चे (RSS) संस्थापक कोण होते?",
+        "en": "Who founded the 'Rashtriya Swayamsevak Sangh' (RSS) on the day of Vijayadashami at Nagpur in 1925?"
+      },
+      "options": [
+        { "mr": "डॉ. केशव बळीराम हेडगेवार (Dr. K. B. Hedgewar)", "en": "Dr. K. B. Hedgewar" },
+        { "mr": "विनायक दामोदर सावरकर", "en": "Vinayak Damodar Savarkar" },
+        { "mr": "एम. एस. गोळवलकर", "en": "M. S. Golwalkar" },
+        { "mr": "डॉ. बी. एस. मुंजे", "en": "Dr. B. S. Moonje" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "२७ सप्टेंबर १९२५ रोजी विजयादशमीच्या दिवशी नागपूर येथे डॉ. केशव बळीराम हेडगेवार यांनी राष्ट्रीय स्वयंसेवक संघाची (RSS) स्थापना केली. हिंदू समाजाचे संघटन आणि चारित्र्यसंपन्न स्वयंसेवक घडवणे हे त्याचे उद्दिष्ट होते.",
+        "en": "Dr. Keshav Baliram Hedgewar founded the Rashtriya Swayamsevak Sangh (RSS) in Nagpur on Vijaya Dashami (27 September 1925) to promote Hindu organizational solidarity and discipline."
+      }
+    },
+    {
+      "id": 24,
+      "question": {
+        "mr": "१९२३ ते १९३७ दरम्यान रत्नागिरी येथे स्थानबद्ध असताना विनायक दामोदर सावरकर यांनी अस्पृश्यता निर्मूलनासाठी कोणते ऐतिहासिक मंदिर उभारले, जे सर्व हिंदू जातींसाठी खुले होते?",
+        "en": "Which landmark inclusive shrine was constructed at Ratnagiri in 1931 by V. D. Savarkar during his internment, dedicated to all Hindu castes without untouchability?"
+      },
+      "options": [
+        { "mr": "पतितपावन मंदिर (Patit Pavan Temple)", "en": "Patit Pavan Temple" },
+        { "mr": "कळारम मंदिर", "en": "Kalaram Temple" },
+        { "mr": "विठ्ठल मंदिर", "en": "Vitthal Temple" },
+        { "mr": "मुक्ती मंदिर", "en": "Mukti Temple" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "स्वातंत्र्यवीर सावरकर यांनी रत्नागिरीतील नजरकैदेत असताना २२ फेब्रुवारी १९३१ रोजी भागोजीशेठ कीर यांच्या आर्थिक सहकार्याने 'पतितपावन मंदिर' उभारले. येथे सर्व जातींच्या लोकांना पूजा, वेदोक्त मंत्र आणि सहभोजनाचा समान अधिकार देण्यात आला.",
+        "en": "While interned at Ratnagiri, V. D. Savarkar built the 'Patit Pavan Temple' in February 1931 with the financial aid of Bhagojisheth Keer, throwing it open to all castes and pioneering inter-caste dining."
+      }
+    },
+    {
+      "id": 25,
+      "question": {
+        "mr": "सावरकरांनी आपल्या सामाजिक सुधारणांच्या काळात हिंदू समाजाच्या प्रगतीमध्ये अडथळा ठरणाऱ्या कोणत्या 'सात बेड्या' (Seven Shackles) तोडण्याचे जोरदार आवाहन केले होते?",
+        "en": "Which famous 'Seven Shackles' (Saat Bandhane) did V. D. Savarkar urge Hindu society to dismantle to achieve modern egalitarian progress?"
+      },
+      "options": [
+        { "mr": "वेदोक्तबंदी, व्यवसायबंदी, स्पर्शबंदी, समुद्रबंदी, शुद्धीबंदी, रोटीबंदी आणि बेटीबंदी", "en": "Vedokta-bandi, Vyavasaya-bandi, Sparsha-bandi, Samudra-bandi, Shuddhi-bandi, Roti-bandi, and Beti-bandi" },
+        { "mr": "केवळ शेतीवरील कर आणि जमीन महसूल", "en": "Agrarian taxes and land cess exclusively" },
+        { "mr": "फक्त लष्करी सेवा आणि शस्त्र बाळगण्याची बंदी", "en": "Military service and disarming acts" },
+        { "mr": "केवळ इंग्रजी शिक्षणावरील बंधने", "en": "Restrictions on English education" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "सावरकरांनी आपल्या 'जातीभेद निर्मूलन' या वैचारिक मांडणीत सात बेड्या तोडण्याचा आग्रह धरला: १. वेदोक्तबंदी (धार्मिक ज्ञान सर्वांना), २. व्यवसायबंदी (गुणवत्तेनुसार व्यवसाय), ३. स्पर्शबंदी (अस्पृश्यता नष्ट करणे), ४. समुद्रबंदी (परदेशगमनाची मुभा), ५. शुद्धीबंदी (धर्मांतरितांना स्वधर्मात घेणे), ६. रोटीबंदी (सहभोजन) आणि ७. बेटीबंदी (आंतरजातीय विवाह).",
+        "en": "Savarkar outlined the destruction of seven traditional taboos (shackles): restrictions on Vedic recitation, occupation by birth, touch (untouchability), sea-travel, re-conversion (shuddhi), inter-dining (roti-bandi), and inter-marriage (beti-bandi)."
+      }
+    }
+  ]
+}

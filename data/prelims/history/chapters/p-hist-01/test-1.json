@@ -1,0 +1,464 @@
+{
+  "testId": "p-hist-01-t1",
+  "title": {
+    "mr": "आधुनिक भारताचा इतिहास — सराव 1",
+    "en": "Modern Indian History — Practice Test 1"
+  },
+  "durationMinutes": 20,
+  "marksPerQuestion": 1,
+  "negativeMarking": 0.25,
+  "totalMarks": 25,
+  "difficulty": "मध्यम ते काठिण्य",
+  "questions": [
+    {
+      "id": 1,
+      "question": {
+        "mr": "भारतात युरोपियन व्यापारी कंपन्यांच्या आगमनाचा योग्य कालानुक्रम खालीलपैकी कोणता आहे?",
+        "en": "Which of the following is the correct chronological order of the arrival of European trading companies in India?"
+      },
+      "options": [
+        { "mr": "पोर्तुगीज ➔ डच ➔ इंग्रज ➔ फ्रेंच", "en": "Portuguese ➔ Dutch ➔ English ➔ French" },
+        { "mr": "पोर्तुगीज ➔ इंग्रज ➔ डच ➔ फ्रेंच", "en": "Portuguese ➔ English ➔ Dutch ➔ French" },
+        { "mr": "डच ➔ पोर्तुगीज ➔ फ्रेंच ➔ इंग्रज", "en": "Dutch ➔ Portuguese ➔ French ➔ English" },
+        { "mr": "इंग्रज ➔ पोर्तुगीज ➔ डच ➔ फ्रेंच", "en": "English ➔ Portuguese ➔ Dutch ➔ French" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "भारतात व्यापारी कंपन्यांच्या स्थापनेचा व आगमनाचा क्रम: पोर्तुगीज (१४९८), डच ईस्ट इंडिया कंपनी (१६०२), ब्रिटिश ईस्ट इंडिया कंपनी (१६०० मध्ये स्थापना, १६०८ मध्ये सुरत आगमन), आणि फ्रेंच ईस्ट इंडिया कंपनी (१६६४). त्यामुळे योग्य क्रम पोर्तुगीज ➔ डच ➔ इंग्रज ➔ फ्रेंच असा आहे.",
+        "en": "The chronological order of arrival/establishment of European trading companies in India is Portuguese (1498), Dutch (1602), English (company chartered in 1600, arrived at Surat in 1608), and French (1664). Hence, the sequence is Portuguese ➔ Dutch ➔ English ➔ French."
+      }
+    },
+    {
+      "id": 2,
+      "question": {
+        "mr": "पोर्तुगीज गव्हर्नर फ्रान्सिस्को दी अल्मेडा याच्या संदर्भात खालील विधाने विचारात घ्या:\nअ. त्याने भारतात 'शांत पाण्याचे धोरण' (Blue Water Policy) लागू केले.\nब. त्याने १५१० मध्ये विजापूरच्या सुलतानकडून गोवा जिंकून घेतला.\nवरीलपैकी कोणते/ती विधान/ने बरोबर आहेत?",
+        "en": "Consider the following statements regarding the Portuguese Governor Francisco de Almeida:\na. He implemented the 'Blue Water Policy' in India.\nb. He captured Goa from the Sultan of Bijapur in 1510.\nWhich of the statements given above is/are correct?"
+      },
+      "options": [
+        { "mr": "फक्त अ", "en": "Only a" },
+        { "mr": "फक्त ब", "en": "Only b" },
+        { "mr": "अ आणि ब दोन्ही", "en": "Both a and b" },
+        { "mr": "दोन्ही नाही", "en": "Neither a nor b" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "विधान 'अ' बरोबर आहे कारण फ्रान्सिस्को दी अल्मेडाने समुद्रावरील वर्चस्वासाठी 'ब्लू वॉटर पॉलिसी' लागू केली. विधान 'ब' चुकीचे आहे कारण १५१० मध्ये विजापूरच्या आदिलशहाकडून गोवा अल्फोन्सो दी अल्बुकर्क याने जिंकला होता, अल्मेडाने नाही.",
+        "en": "Statement 'a' is correct as Francisco de Almeida initiated the 'Blue Water Policy' to establish naval supremacy. Statement 'b' is incorrect because Goa was captured from the Sultan of Bijapur in 1510 by Alfonso de Albuquerque, not Almeida."
+      }
+    },
+    {
+      "id": 3,
+      "question": {
+        "mr": "१७५७ च्या प्लासीच्या लढाईच्या संदर्भात खालीलपैकी कोणते विधान अयोग्य आहे?",
+        "en": "Which of the following statements regarding the Battle of Plassey (1757) is incorrect?"
+      },
+      "options": [
+        { "mr": "ही लढाई २३ जून १७५७ रोजी भागीरथी नदीच्या काठी झाली.", "en": "This battle was fought on 23 June 1757 on the banks of the Bhagirathi River." },
+        { "mr": "नवाब सिराज-उद्-दौलाच्या बाजूने मीर मदान आणि मोहन लाल यांनी एकनिष्ठेने लढा दिला.", "en": "Mir Madan and Mohan Lal fought loyally on the side of Nawab Siraj-ud-Daulah." },
+        { "mr": "या लढाईनंतर इंग्रजांनी मीर कासीम याला तात्काळ बंगालचा नवाब बनवले.", "en": "Immediately after this battle, the British made Mir Qasim the Nawab of Bengal." },
+        { "mr": "ब्रिटिश सैन्याचे नेतृत्व रॉबर्ट क्लाईव्ह याने केले होते.", "en": "The British forces were led by Robert Clive." }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "प्लासीच्या लढाईनंतर इंग्रजांनी मीर जाफरला बंगालचा नवाब बनवले होते, मीर कासीमला नाही. मीर कासीमला नंतर १७६० मध्ये गादीवर बसवण्यात आले. उर्वरित सर्व विधाने सत्य आहेत.",
+        "en": "After the Battle of Plassey, the British appointed Mir Jafar as the Nawab of Bengal, not Mir Qasim. Mir Qasim was made Nawab later in 1760. All other statements are historically correct."
+      }
+    },
+    {
+      "id": 4,
+      "question": {
+        "mr": "१७६४ च्या बक्सारच्या लढाईत ब्रिटिशांविरुद्ध लढलेल्या त्रिपुटात खालीलपैकी कोणाचा समावेश नव्हता?",
+        "en": "Who among the following was NOT a part of the confederacy that fought against the British in the Battle of Buxar (1764)?"
+      },
+      "options": [
+        { "mr": "मीर कासीम (बंगालचा पदच्युत नवाब)", "en": "Mir Qasim (Deposed Nawab of Bengal)" },
+        { "mr": "शुजा-उद्-दौला (अयोध्याचा नवाब)", "en": "Shuja-ud-Daula (Nawab of Awadh)" },
+        { "mr": "शहा आलम दुसरा (मुघल सम्राट)", "en": "Shah Alam II (Mughal Emperor)" },
+        { "mr": "सिराज-उद्-दौला (बंगालचा माजी नवाब)", "en": "Siraj-ud-Daulah (Former Nawab of Bengal)" }
+      ],
+      "correctAnswerIndex": 3,
+      "explanation": {
+        "mr": "बक्सारच्या लढाईत (२२ ऑक्टोबर १७६४) हेक्टर मुन्रोच्या नेतृत्वाखालील ब्रिटिश सैन्याविरुद्ध मीर कासीम, शुजा-उद्-दौला आणि मुघल सम्राट शहा आलम दुसरा यांची संयुक्त सेना लढली होती. सिराज-उद्-दौलाचा मृत्यू १७५७ च्या प्लासीच्या लढाईनंतरच झाला होता.",
+        "en": "In the Battle of Buxar (22 October 1764), the British forces under Hector Munro defeated the joint forces of Mir Qasim, Shuja-ud-Daula, and Mughal Emperor Shah Alam II. Siraj-ud-Daulah had already died in 1757 after Plassey."
+      }
+    },
+    {
+      "id": 5,
+      "question": {
+        "mr": "१७६५ च्या अलाहाबादच्या तहानुसार मुघल सम्राट शहा आलम दुसऱ्याने ईस्ट इंडिया कंपनीला कोणत्या प्रांतांचे 'दिवाणी अधिकार' प्रदान केले?",
+        "en": "Under the Treaty of Allahabad (1765), Mughal Emperor Shah Alam II granted the 'Diwani rights' of which provinces to the East India Company?"
+      },
+      "options": [
+        { "mr": "बंगाल, बिहार आणि ओरिसा", "en": "Bengal, Bihar, and Orissa" },
+        { "mr": "बंगाल, आसाम आणि अवध", "en": "Bengal, Assam, and Awadh" },
+        { "mr": "बिहार, ओरिसा आणि संयुक्त प्रांत", "en": "Bihar, Orissa, and United Provinces" },
+        { "mr": "बंगाल, पंजाब आणि सिंध", "en": "Bengal, Punjab, and Sindh" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "ऑगस्ट १७६५ मध्ये रॉबर्ट क्लाईव्ह आणि मुघल सम्राट शहा आलम दुसरा यांच्यात झालेल्या अलाहाबादच्या तहानुसार वार्षिक २६ लाख रुपयांच्या बदल्यात कंपनीला बंगाल, बिहार आणि ओरिसा या प्रांतांचे दिवाणी (महसूल गोळा करण्याचे) अधिकार मिळाले.",
+        "en": "Under the Treaty of Allahabad (August 1765) signed between Robert Clive and Shah Alam II, the Mughal Emperor granted the Diwani (revenue collection) rights of Bengal, Bihar, and Orissa to the East India Company in exchange for an annual payment of 26 lakh rupees."
+      }
+    },
+    {
+      "id": 6,
+      "question": {
+        "mr": "बंगालमधील दुहेरी राज्यव्यवस्थेच्या (Dual Government) संदर्भात खालील विधाने विचारात घ्या:\nअ. रॉबर्ट क्लाईव्हने १७६५ मध्ये ही पद्धत सुरू केली.\nब. १७७२ मध्ये वॉरन हेस्टिंग्सने ही पद्धत औपचारिकपणे संपुष्टात आणली.\nवरीलपैकी कोणते/ती विधान/ने बरोबर आहेत?",
+        "en": "Consider the following statements regarding the Dual System of Government in Bengal:\na. It was introduced by Robert Clive in 1765.\nb. Warren Hastings formally abolished it in 1772.\nWhich of the statements given above is/are correct?"
+      },
+      "options": [
+        { "mr": "फक्त अ", "en": "Only a" },
+        { "mr": "फक्त ब", "en": "Only b" },
+        { "mr": "अ आणि ब दोन्ही", "en": "Both a and b" },
+        { "mr": "दोन्ही नाही", "en": "Neither a nor b" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "दोन्ही विधाने बरोबर आहेत. रॉबर्ट क्लाईव्हने १७६५ मध्ये बंगालमध्ये दुहेरी शासन व्यवस्था आणली, ज्यामध्ये 'दिवाणी' कंपनीकडे आणि 'निजामत' (प्रशासन व शांतता) नवाबाकडे सोपवली गेली. १७७२ मध्ये गव्हर्नर वॉरन हेस्टिंग्सने ही अयशस्वी व्यवस्था रद्द केली आणि कंपनीने थेट कारभार हाती घेतला.",
+        "en": "Both statements are correct. Robert Clive established the Dual System in Bengal in 1765, where Diwani remained with the Company and Nizamat with the Nawab. In 1772, Warren Hastings abolished this system and brought Bengal under direct administration of the Company."
+      }
+    },
+    {
+      "id": 7,
+      "question": {
+        "mr": "१७७३ च्या नियामक कायद्यानुसार (Regulating Act) खालीलपैकी कोणती तरतूद करण्यात आली नव्हती?",
+        "en": "Which of the following provisions was NOT made under the Regulating Act of 1773?"
+      },
+      "options": [
+        { "mr": "बंगालच्या गव्हर्नरचे पद 'बंगालचा गव्हर्नर-जनरल' असे करण्यात आले.", "en": "The Governor of Bengal was designated as the 'Governor-General of Bengal'." },
+        { "mr": "कलकत्ता येथे एका सर्वोच्च न्यायालयाची (Supreme Court) स्थापना करण्याची तरतूद करण्यात आली.", "en": "Provision was made for the establishment of a Supreme Court at Calcutta." },
+        { "mr": "गव्हर्नर-जनरलच्या मदतीसाठी चार सदस्यांचे कार्यकारी मंडळ स्थापन करण्यात आले.", "en": "An Executive Council of four members was created to assist the Governor-General." },
+        { "mr": "ईस्ट इंडिया कंपनीची भारतातील व्यापारी मक्तेदारी पूर्णपणे संपुष्टात आणली गेली.", "en": "The East India Company's trade monopoly in India was completely abolished." }
+      ],
+      "correctAnswerIndex": 3,
+      "explanation": {
+        "mr": "ईस्ट इंडिया कंपनीची व्यापारी मक्तेदारी १८१३ च्या सनदी कायद्याने मर्यादित केली गेली आणि १८३३ च्या कायद्याने पूर्णपणे संपुष्टात आणली. १७७३ च्या कायद्याने कंपनीच्या व्यापारावर नियंत्रण आणले गेले, परंतु मक्तेदारी संपुष्टात आली नव्हती. इतर तिन्ही तरतुदी १७७३ च्या कायद्यातील आहेत.",
+        "en": "The trade monopoly of the East India Company was partially abolished in 1813 and completely abolished by the Charter Act of 1833, not by the 1773 Act. Statements 1, 2, and 3 are key features of the 1773 Regulating Act."
+      }
+    },
+    {
+      "id": 8,
+      "question": {
+        "mr": "१७८४ च्या पिट्स इंडिया कायद्यान्वये (Pitt's India Act) कंपनीच्या राजकीय कारभारावर नियंत्रण ठेवण्यासाठी लंडन येथे कोणती संस्था स्थापन करण्यात आली?",
+        "en": "Under Pitt's India Act of 1784, which body was established in London to supervise the political affairs of the Company?"
+      },
+      "options": [
+        { "mr": "बोर्ड ऑफ कंट्रोल (Board of Control)", "en": "Board of Control" },
+        { "mr": "कोर्ट ऑफ डायरेक्टर्स (Court of Directors)", "en": "Court of Directors" },
+        { "mr": "प्रिव्ही कौन्सिल (Privy Council)", "en": "Privy Council" },
+        { "mr": "सिलेक्ट कमिटी (Select Committee)", "en": "Select Committee" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "पिट्स इंडिया ॲक्ट १७८४ द्वारे व्यापारी आणि राजकीय कार्ये वेगळी करण्यात आली. व्यापारी कामांसाठी कोर्ट ऑफ डायरेक्टर्स कायम राहिले, तर नागरी, लष्करी आणि महसूलविषयक राजकीय कामांच्या नियंत्रणासाठी ६ आयुक्तांचे 'बोर्ड ऑफ कंट्रोल' (नियामक मंडळ) लंडनमध्ये स्थापन करण्यात आले.",
+        "en": "Pitt's India Act of 1784 separated the commercial and political functions of the Company. A 6-member 'Board of Control' was created in Britain to supervise and direct civil, military, and revenue affairs, establishing dual control."
+      }
+    },
+    {
+      "id": 9,
+      "question": {
+        "mr": "योग्य जोड्या जुळवा (कर्नाटक युद्धे व संबंधित तह):\n\nगट अ (युद्ध)\n१. पहिले कर्नाटक युद्ध\n२. दुसरे कर्नाटक युद्ध\n३. तिसरे कर्नाटक युद्ध\n\nगट ब (तह)\nअ. पॅरिसचा तह\nब. पाँडिचेरीचा तह\nक. एक्स-ला-शापेलचा तह\n\nयोग्य पर्याय निवडा:",
+        "en": "Match the pairs (Carnatic Wars and respective Treaties):\n\nGroup A (War)\n1. First Carnatic War\n2. Second Carnatic War\n3. Third Carnatic War\n\nGroup B (Treaty)\na. Treaty of Paris\nb. Treaty of Pondicherry\nc. Treaty of Aix-la-Chapelle\n\nChoose the correct option:"
+      },
+      "options": [
+        { "mr": "१-क, २-ब, ३-अ", "en": "1-c, 2-b, 3-a" },
+        { "mr": "१-ब, २-क, ३-अ", "en": "1-b, 2-c, 3-a" },
+        { "mr": "१-अ, २-ब, ३-क", "en": "1-a, 2-b, 3-c" },
+        { "mr": "१-क, २-अ, ३-ब", "en": "1-c, 2-a, 3-b" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "पहिले कर्नाटक युद्ध (१७४६-४८) हे 'एक्स-ला-शापेल'च्या तहाने संपले; दुसरे कर्नाटक युद्ध (१७४९-५४) 'पाँडिचेरीच्या तहाने' (१७५४) संपले; आणि तिसरे कर्नाटक युद्ध (१७५६-६३) 'पॅरिसच्या तहाने' (१७६३) समाप्त झाले.",
+        "en": "The First Carnatic War (1746-48) ended with the Treaty of Aix-la-Chapelle; the Second Carnatic War (1749-54) ended with the Treaty of Pondicherry; and the Third Carnatic War (1756-63) ended with the Treaty of Paris (1763)."
+      }
+    },
+    {
+      "id": 10,
+      "question": {
+        "mr": "१७६० च्या प्रसिद्ध 'वांदिवाशच्या लढाईत' (Battle of Wandiwash) ब्रिटिश सैन्याचे नेतृत्व कोणी केले होते?",
+        "en": "Who led the British forces in the decisive Battle of Wandiwash in 1760?"
+      },
+      "options": [
+        { "mr": "सर आयर कूट (Sir Eyre Coote)", "en": "Sir Eyre Coote" },
+        { "mr": "रॉबर्ट क्लाईव्ह (Robert Clive)", "en": "Robert Clive" },
+        { "mr": "हेक्टर मुन्रो (Hector Munro)", "en": "Hector Munro" },
+        { "mr": "आर्थर वेलस्ली (Arthur Wellesley)", "en": "Arthur Wellesley" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "२२ जानेवारी १७६० रोजी झालेल्या वांदिवाशच्या लढाईत सर आयर कूट यांच्या नेतृत्वाखालील ब्रिटिश फौजांनी फ्रेंच सेनापती काउंट दी लाली याच्या सैन्याचा निर्णायक पराभव केला. या पराभवाने भारतातील फ्रेंच सत्तेचा राजकीय अंत झाला.",
+        "en": "On 22 January 1760, in the Battle of Wandiwash, the British army led by Sir Eyre Coote decisively defeated the French troops led by Count de Lally, effectively crushing French ambitions in India."
+      }
+    },
+    {
+      "id": 11,
+      "question": {
+        "mr": "लॉर्ड कॉर्नवॉलिसने १७९३ मध्ये बंगाल, बिहार आणि ओरिसामध्ये सुरू केलेल्या 'कायमधारा' (Permanent Settlement) पद्धतीबाबत खालीलपैकी कोणते विधान चुकीचे आहे?",
+        "en": "Which of the following statements is incorrect regarding the Permanent Settlement introduced by Lord Cornwallis in 1793 in Bengal, Bihar, and Orissa?"
+      },
+      "options": [
+        { "mr": "जमीनदारांना जमिनीचे मालकी हक्क देण्यात आले.", "en": "Zamindars were recognized as owners of the land." },
+        { "mr": "शासनाला द्यावयाचा महसूल भविष्यासाठी कायमस्वरूपी निश्चित करण्यात आला.", "en": "The revenue payable to the state was fixed permanently." },
+        { "mr": "जमीनदाराने गोळा केलेल्या एकूण महसुलापैकी १०/११ भाग कंपनीला आणि १/११ भाग जमीनदाराला मिळत असे.", "en": "Out of the total collected revenue, 10/11th went to the Company and 1/11th was retained by the Zamindar." },
+        { "mr": "शेतकऱ्यांचे पारंपरिक जमीन हक्क या पद्धतीमुळे अत्यंत सुरक्षित आणि संरक्षित झाले.", "en": "The traditional land rights of the cultivators were highly secured and protected." }
+      ],
+      "correctAnswerIndex": 3,
+      "explanation": {
+        "mr": "कायमधारा पद्धतीमुळे शेतकरी थेट जमीनदारांच्या दयेवर अवलंबून राहिले. जमीनदारांना ठरवून दिलेला महसूल न भरल्यास जमिनीचा लिलाव होत असे (सूर्यास्त कायदा), परिणामी जमीनदारांनी शेतकऱ्यांचे प्रचंड शोषण केले आणि शेतकरी केवळ कुळ बनले; त्यांचे पारंपरिक हक्क संपुष्टात आले.",
+        "en": "The Permanent Settlement severely hurt the peasants, reducing them to mere tenants-at-will with no security of tenure or protection from rent exploitation by zamindars. Hence, statement 4 is incorrect."
+      }
+    },
+    {
+      "id": 12,
+      "question": {
+        "mr": "मद्रास आणि मुंबई इलाक्यात 'रयतवारी पद्धत' (Ryotwari System) लागू करण्यात खालीलपैकी कोणाचे प्रमुख योगदान होते?",
+        "en": "Who among the following were primarily instrumental in formulating and implementing the Ryotwari System in Madras and Bombay Presidencies?"
+      },
+      "options": [
+        { "mr": "थॉमस मन्रो आणि कॅप्टन अलेक्झांडर रीड", "en": "Thomas Munro and Captain Alexander Read" },
+        { "mr": "लॉर्ड कॉर्नवॉलिस आणि जॉन शोर", "en": "Lord Cornwallis and John Shore" },
+        { "mr": "होल्ट मॅकेन्झी आणि रॉबर्ट मार्टिन्स बर्ड", "en": "Holt Mackenzie and Robert Merttins Bird" },
+        { "mr": "लॉर्ड डलहौसी आणि जेम्स थॉमसन", "en": "Lord Dalhousie and James Thomason" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "रयतवारी पद्धतीची प्रायोगिक सुरुवात कॅप्टन अलेक्झांडर रीडने १७९२ मध्ये बारामहाल जिल्ह्यात केली आणि नंतर सर थॉमस मन्रो यांनी मद्रासचे गव्हर्नर (१८२०-१८२७) असताना ती संपूर्ण मद्रास प्रांतात मोठ्या प्रमाणावर लागू केली.",
+        "en": "The Ryotwari system was initially started on an experimental basis by Captain Alexander Read in Baramahal in 1792, and was later comprehensively developed and applied across Madras by Governor Thomas Munro (1820-1827)."
+      }
+    },
+    {
+      "id": 13,
+      "question": {
+        "mr": "उत्तर-पश्चिम प्रांतात (North-Western Provinces) १८२२ च्या रेग्युलेशन VII नुसार कोणती भूमहसूल पद्धत अस्तित्वात आली?",
+        "en": "Which land revenue system came into existence in the North-Western Provinces under Regulation VII of 1822?"
+      },
+      "options": [
+        { "mr": "महालवारी पद्धत (Mahalwari System)", "en": "Mahalwari System" },
+        { "mr": "रयतवारी पद्धत (Ryotwari System)", "en": "Ryotwari System" },
+        { "mr": "इजारदारी पद्धत (Ijardari System)", "en": "Ijardari System" },
+        { "mr": "कायमधारा पद्धत (Permanent Settlement)", "en": "Permanent Settlement" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "होल्ट मॅकेन्झीच्या शिफारशींवरून १८२२ मध्ये महालवारी पद्धत सुरू झाली. यात 'महाल' म्हणजे संपूर्ण गाव किंवा ग्रामसमूह महसूल देण्याचे एकक मानले गेले आणि गावाच्या प्रमुखाकडे (नंबरदार/लंबरदार) महसूल जमा करण्याची जबाबदारी सोपवली गेली.",
+        "en": "Devised by Holt Mackenzie and legalized by Regulation VII of 1822, the Mahalwari System treated the 'Mahal' (village/estate) as a fiscal unit, with the village community/headman jointly responsible for revenue collection."
+      }
+    },
+    {
+      "id": 14,
+      "question": {
+        "mr": "लॉर्ड वेलस्लीच्या 'तैनाती फौज' (Subsidiary Alliance) पद्धतीचा स्वीकार करणारे पहिले भारतीय राज्य कोणते होते?",
+        "en": "Which was the first Indian princely state to accept Lord Wellesley's Subsidiary Alliance system?"
+      },
+      "options": [
+        { "mr": "हैदराबादचा निजाम (१७९८)", "en": "Nizam of Hyderabad (1798)" },
+        { "mr": "म्हैसूर (१७९९)", "en": "Mysore (1799)" },
+        { "mr": "अवध (१८०१)", "en": "Awadh (1801)" },
+        { "mr": "मराठा पेशवे (१८०२)", "en": "Maratha Peshwa (1802)" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "लॉर्ड वेलस्लीने १७९८ मध्ये गव्हर्नर-जनरल झाल्यावर तैनाती फौजेचा पद्धतशीर वापर केला. १७९८ मध्ये हैदराबादच्या निजामाने सर्वात आधी तैनाती फौजेचा करार केला. त्यानंतर म्हैसूर (१७९९), तंजावर (१७९९), अवध (१८०१) आणि पेशवे (१८०२) यांनी हा स्वीकार केला.",
+        "en": "The Nizam of Hyderabad was the first Indian ruler to accept Wellesley's Subsidiary Alliance in 1798, followed by Mysore in 1799, Awadh in 1801, and the Peshwa via the Treaty of Bassein in 1802."
+      }
+    },
+    {
+      "id": 15,
+      "question": {
+        "mr": "३१ डिसेंबर १८०२ रोजी दुसरा बाजीराव पेशवा आणि ईस्ट इंडिया कंपनी यांच्यात झालेल्या कोणत्या तहाने दुसऱ्या इंग्रज-मराठा युद्धाची पार्श्वभूमी तयार केली?",
+        "en": "Which treaty signed between Peshwa Baji Rao II and the East India Company on 31 December 1802 set the stage for the Second Anglo-Maratha War?"
+      },
+      "options": [
+        { "mr": "वसईचा तह (Treaty of Bassein)", "en": "Treaty of Bassein" },
+        { "mr": "सालबाईचा तह (Treaty of Salbai)", "en": "Treaty of Salbai" },
+        { "mr": "सुरतचा तह (Treaty of Surat)", "en": "Treaty of Surat" },
+        { "mr": "पुरंदरचा तह (Treaty of Purandar)", "en": "Treaty of Purandar" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "यशवंतराव होळकरांनी पेशवे व शिंद्यांच्या संयुक्त सैन्याचा हडपसर येथे पराभव केल्यानंतर दुसऱ्या बाजीरावाने पळून जाऊन ३१ डिसेंबर १८०२ रोजी ब्रिटिशांशी 'वसईचा तह' करून तैनाती फौज स्वीकारली, ज्यामुळे दुसरे इंग्रज-मराठा युद्ध (१८०३-०५) भडकले.",
+        "en": "After being defeated by Yashwantrao Holkar at the Battle of Hadapsar, Peshwa Baji Rao II fled to Bassein and signed the Treaty of Bassein on 31 December 1802, accepting the Subsidiary Alliance, which directly triggered the Second Anglo-Maratha War."
+      }
+    },
+    {
+      "id": 16,
+      "question": {
+        "mr": "१७८२ चा 'सालबाईचा तह' खालीलपैकी कोणत्या युद्धाचा परिणाम म्हणून झाला?",
+        "en": "The Treaty of Salbai (1782) was concluded as a result of which of the following wars?"
+      },
+      "options": [
+        { "mr": "पहिले इंग्रज-मराठा युद्ध", "en": "First Anglo-Maratha War" },
+        { "mr": "दुसरे इंग्रज-मराठा युद्ध", "en": "Second Anglo-Maratha War" },
+        { "mr": "तिसरे इंग्रज-मराठा युद्ध", "en": "Third Anglo-Maratha War" },
+        { "mr": "पहिले इंग्रज-म्हैसूर युद्ध", "en": "First Anglo-Mysore War" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१७७५ ते १७८२ दरम्यान चाललेले पहिले इंग्रज-मराठा युद्ध १७ मे १७८२ रोजी महादजी शिंदे यांच्या मध्यस्थीने झालेल्या 'सालबाईच्या तहा'ने संपुष्टात आले. या तहाने इंग्रज व मराठ्यांमध्ये पुढील २० वर्षे शांतता प्रस्थापित झाली.",
+        "en": "The First Anglo-Maratha War (1775-1782) concluded with the Treaty of Salbai signed on 17 May 1782, facilitated by Mahadji Shinde, which guaranteed twenty years of relative peace between the Marathas and the British."
+      }
+    },
+    {
+      "id": 17,
+      "question": {
+        "mr": "चौथ्या इंग्रज-म्हैसूर युद्धाच्या (१७९९) संदर्भात खालील विधाने विचारात घ्या:\nअ. या युद्धात ब्रिटिशांचे नेतृत्व लॉर्ड वेलस्लीने केले.\nब. श्रीरंगपट्टणमच्या संरक्षणासाठी लढताना ४ मे १७९९ रोजी टिपू सुलतानचा मृत्यू झाला.\nवरीलपैकी कोणते/ती विधान/ने बरोबर आहेत?",
+        "en": "Consider the following statements regarding the Fourth Anglo-Mysore War (1799):\na. The British campaign was overseen by Lord Wellesley.\nb. Tipu Sultan died on 4 May 1799 while defending Srirangapatnam.\nWhich of the statements given above is/are correct?"
+      },
+      "options": [
+        { "mr": "फक्त अ", "en": "Only a" },
+        { "mr": "फक्त ब", "en": "Only b" },
+        { "mr": "अ आणि ब दोन्ही", "en": "Both a and b" },
+        { "mr": "दोन्ही नाही", "en": "Neither a nor b" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "दोन्ही विधाने बरोबर आहेत. १७९९ मध्ये लॉर्ड वेलस्लीने टिपूविरुद्ध निर्णायक मोहीम उघडली. ४ मे १७९९ रोजी आपल्या राजधानीचे (श्रीरंगपट्टणम) रक्षण करताना शूरवीर टिपू सुलतान धारातीर्थी पडला आणि म्हैसूरवर ब्रिटिशांनी ओडियार राजघराण्यामार्फत अप्रत्यक्ष नियंत्रण मिळवले.",
+        "en": "Both statements are correct. Governor-General Lord Wellesley directed the offensive in 1799, and Tipu Sultan was killed on 4 May 1799 while defending his capital Srirangapatnam, ending the Fourth Anglo-Mysore War."
+      }
+    },
+    {
+      "id": 18,
+      "question": {
+        "mr": "लॉर्ड डलहौसीने आपल्या 'खालसा धोरणांतर्गत' (Doctrine of Lapse) सर्वप्रथम कोणते भारतीय संस्थान खालसा केले?",
+        "en": "Which princely state was annexed first by Lord Dalhousie under the 'Doctrine of Lapse'?"
+      },
+      "options": [
+        { "mr": "सातारा (१८४८)", "en": "Satara (1848)" },
+        { "mr": "जैतपूर (१८४९)", "en": "Jaitpur (1849)" },
+        { "mr": "झाशी (१८५३)", "en": "Jhansi (1853)" },
+        { "mr": "नागपूर (१८५४)", "en": "Nagpur (1854)" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "लॉर्ड डलहौसीने दत्तक विधान नामंजूर करून १८४८ मध्ये सर्वात आधी सातारा संस्थान खालसा केले. त्यानंतर संबळपूर व जैतपूर (१८४९), बघाट (१८५०), उदयपूर (१८५२), झाशी (१८५३) आणि नागपूर (१८५४) ही संस्थाने खालसा करण्यात आली.",
+        "en": "Satara was the very first state to be annexed under Dalhousie's Doctrine of Lapse in 1848, followed by Jaitpur and Sambalpur (1849), Baghat (1850), Udaipur (1852), Jhansi (1853), and Nagpur (1854)."
+      }
+    },
+    {
+      "id": 19,
+      "question": {
+        "mr": "१८५६ मध्ये लॉर्ड डलहौसीने अवधचे (Awadh) संस्थान कोणत्या कारणावरून ब्रिटिश साम्राज्यात विलीन केले?",
+        "en": "On what grounds did Lord Dalhousie annex the princely state of Awadh in 1856?"
+      },
+      "options": [
+        { "mr": "संस्थानिकाला वारस नसल्यामुळे (दत्तक नामंजूर)", "en": "Absence of a natural male heir (Doctrine of Lapse)" },
+        { "mr": "प्रशासनातील गैरकारभार (कुशासन)", "en": "Maladministration (Misgovernance)" },
+        { "mr": "कंपनीविरुद्ध परकीय शक्तींशी कट केल्याचा आरोप", "en": "Conspiring with foreign powers against the Company" },
+        { "mr": "तैनाती फौजेचा खर्च थकविल्यामुळे", "en": "Defaulting on Subsidiary Alliance dues" }
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": {
+        "mr": "अवधचा नवाब वाजिद अली शाह याला वारस होता, त्यामुळे तेथे दत्तक वारसाचा नियम लागू होत नव्हता. म्हणूनच जेम्स आऊट्रम यांच्या अहवालाचा आधार घेऊन 'कुशासनाचा' (गैरकारभाराचा) ठपका ठेवून फेब्रुवारी १८५६ मध्ये अवध संस्थान खालसा करण्यात आले.",
+        "en": "Awadh could not be annexed under the Doctrine of Lapse because Nawab Wajid Ali Shah had legitimate heirs. Dalhousie utilized James Outram's report on widespread 'maladministration' to justify its annexation in February 1856."
+      }
+    },
+    {
+      "id": 20,
+      "question": {
+        "mr": "१८१३ च्या सनदी कायद्याद्वारे (Charter Act of 1813) ईस्ट इंडिया कंपनीची भारतातील व्यापारी मक्तेदारी संपुष्टात आली; परंतु कोणत्या दोन व्यापारांवरील तिची मक्तेदारी कायम ठेवण्यात आली?",
+        "en": "The Charter Act of 1813 ended the East India Company's commercial monopoly in India, but preserved its monopoly over which two trades?"
+      },
+      "options": [
+        { "mr": "चहाचा व्यापार आणि चीनबरोबरचा व्यापार", "en": "Tea trade and trade with China" },
+        { "mr": "मिठाचा व्यापार आणि अफूचा व्यापार", "en": "Salt trade and Opium trade" },
+        { "mr": "सुती कापडाचा व्यापार आणि मसाल्यांचा व्यापार", "en": "Cotton textile trade and Spice trade" },
+        { "mr": "नीळचा व्यापार आणि चीनबरोबरचा व्यापार", "en": "Indigo trade and trade with China" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१८१३ च्या चार्टर ॲक्टनुसार भारतातील सर्व व्यापार इतर ब्रिटिश नागरिकांसाठी खुला करण्यात आला, मात्र 'चहाचा व्यापार' आणि 'चीन देशाशी होणारा व्यापार' या दोन बाबींवर कंपनीची मक्तेदारी आणखी २० वर्षांसाठी (१८३३ पर्यंत) कायम राहिली.",
+        "en": "The Charter Act of 1813 ended the commercial trade monopoly of the Company in India, throwing trade open to all British subjects, with the specific exceptions of the tea trade and general trade with China."
+      }
+    },
+    {
+      "id": 21,
+      "question": {
+        "mr": "१८३३ च्या सनदी कायद्यानुसार (Charter Act of 1833) भारताचा पहिला 'गव्हर्नर-जनरल ऑफ इंडिया' कोण बनला?",
+        "en": "Who became the first 'Governor-General of India' under the provisions of the Charter Act of 1833?"
+      },
+      "options": [
+        { "mr": "लॉर्ड विल्यम बेंटिंक", "en": "Lord William Bentinck" },
+        { "mr": "लॉर्ड वॉरन हेस्टिंग्स", "en": "Lord Warren Hastings" },
+        { "mr": "लॉर्ड डलहौसी", "en": "Lord Dalhousie" },
+        { "mr": "लॉर्ड कॅनिंग", "en": "Lord Canning" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१८३३ च्या सनदी कायद्याने 'बंगालचा गव्हर्नर-जनरल' हे पद बदलून 'भारताचा गव्हर्नर-जनरल' करण्यात आले आणि सर्व नागरी व लष्करी अधिकार त्याच्या हाती केंद्रित झाले. लॉर्ड विल्यम बेंटिंक हा भारताचा पहिला गव्हर्नर-जनरल बनला.",
+        "en": "The Charter Act of 1833 redesignated the Governor-General of Bengal as the 'Governor-General of India', vesting all civil and military authority in him. Lord William Bentinck thus became the first Governor-General of India."
+      }
+    },
+    {
+      "id": 22,
+      "question": {
+        "mr": "भारतातील पहिल्या रेल्वे मार्गाच्या संदर्भात खालील विधाने विचारात घ्या:\nअ. १६ एप्रिल १८५३ रोजी मुंबई (बोरीबंदर) ते ठाणे दरम्यान पहिली रेल्वे धावली.\nब. हा मार्ग ३४ किलोमीटर लांबीचा होता आणि त्यावर 'सिंध', 'सुलतान' व 'साहिब' ही तीन इंजिने वापरण्यात आली.\nवरीलपैकी कोणते/ती विधान/ने बरोबर आहेत?",
+        "en": "Consider the following statements regarding the first railway line in India:\na. The first train ran on 16 April 1853 between Bombay (Bori Bunder) and Thane.\nb. The route was 34 km long and utilized three engines: 'Sindh', 'Sultan', and 'Sahib'.\nWhich of the statements given above is/are correct?"
+      },
+      "options": [
+        { "mr": "फक्त अ", "en": "Only a" },
+        { "mr": "फक्त ब", "en": "Only b" },
+        { "mr": "अ आणि ब दोन्ही", "en": "Both a and b" },
+        { "mr": "दोन्ही नाही", "en": "Neither a nor b" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "दोन्ही विधाने अचूक आहेत. १६ एप्रिल १८५३ रोजी ग्रेट इंडियन पेनिन्सुला (GIP) रेल्वे कंपनीने बोरीबंदर ते ठाणे दरम्यान भारतातील पहिली रेल्वे चालवली. हे अंतर ३४ किमी (२१ मैल) होते आणि गाडीला सिंध, सुलतान व साहिब ही तीन वाफेची इंजिने जोडली होती.",
+        "en": "Both statements are correct. India's first passenger train traversed 34 km between Bori Bunder and Thane on 16 April 1853, hauled by three locomotives: Sindh, Sultan, and Sahib."
+      }
+    },
+    {
+      "id": 23,
+      "question": {
+        "mr": "१८५४ च्या सर चार्ल्स वूड यांच्या प्रसिद्ध खलिता (Wood's Despatch) चा संबंध खालीलपैकी कोणत्या क्षेत्राशी होता?",
+        "en": "Sir Charles Wood's famous Despatch of 1854 was related to which of the following sectors?"
+      },
+      "options": [
+        { "mr": "शिक्षण सुधारणा (Education Reforms)", "en": "Education Reforms" },
+        { "mr": "पोलीस प्रशासन सुधारणा (Police Reforms)", "en": "Police Reforms" },
+        { "mr": "लष्करी पुनर्रचना (Military Reorganization)", "en": "Military Reorganization" },
+        { "mr": "भूमहसूल पद्धत (Land Revenue System)", "en": "Land Revenue System" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१८५४ चा वूड्स डिस्पॅच हा भारतातील शिक्षणाचा 'मॅग्ना कार्टा' (Magna Carta of English Education in India) मानला जातो. याने प्राथमिक स्तरावर मातृभाषा आणि उच्च शिक्षणासाठी इंग्रजी माध्यम, विद्यापीठांची स्थापना (मुंबई, कलकत्ता, मद्रास) आणि शिक्षण खात्यांची निर्मिती यांसारख्या क्रांतिकारी शिफारशी केल्या.",
+        "en": "Wood's Despatch of 1854 is regarded as the 'Magna Carta of English Education in India'. It laid down a comprehensive blueprint for primary to university level education, recommending universities at Bombay, Calcutta, and Madras."
+      }
+    },
+    {
+      "id": 24,
+      "question": {
+        "mr": "भारतात 'नागरी सेवांचा जनक' (Father of Indian Civil Services) म्हणून खालीलपैकी कोणत्या गव्हर्नर-जनरलला ओळखले जाते?",
+        "en": "Who among the following Governors-General is known as the 'Father of Indian Civil Services'?"
+      },
+      "options": [
+        { "mr": "लॉर्ड कॉर्नवॉलिस", "en": "Lord Cornwallis" },
+        { "mr": "वॉरन हेस्टिंग्स", "en": "Warren Hastings" },
+        { "mr": "लॉर्ड वेलस्ली", "en": "Lord Wellesley" },
+        { "mr": "लॉर्ड डलहौसी", "en": "Lord Dalhousie" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "लॉर्ड कॉर्नवॉलिस याने कंपनीच्या प्रशासनातील भ्रष्टाचार रोखण्यासाठी अधिकाऱ्यांचे पगार वाढवले, खाजगी व्यापारावर बंदी घातली आणि प्रशासनाचे युरोपीयकरण करून सुसंघटित सनदी सेवांची (Covenanted Civil Services) पायाभरणी केली. म्हणून त्याला भारतातील नागरी सेवांचा जनक म्हणतात.",
+        "en": "Lord Cornwallis is regarded as the Father of Civil Services in India because he purified and reorganized the civil service, introduced high salaries, forbade private trade, and separated administrative and judicial functions."
+      }
+    },
+    {
+      "id": 25,
+      "question": {
+        "mr": "१७८१ मध्ये वॉरन हेस्टिंग्सने मुस्लिम कायद्यांच्या व संबंधित विषयांच्या अभ्यासासाठी 'कलकत्ता मदरसा' (Calcutta Madrasa) ची स्थापना केली होती, तर १७९१ मध्ये जोनाथन डंकन यांनी हिंदू कायदे व तत्त्वज्ञानाच्या अध्ययनासाठी कोठे 'संस्कृत कॉलेज' सुरू केले?",
+        "en": "Warren Hastings founded the Calcutta Madrasa in 1781 for the study of Muslim law, while Jonathan Duncan founded the Sanskrit College in 1791 for the study of Hindu law and philosophy at which place?"
+      },
+      "options": [
+        { "mr": "वाराणसी (बनारस)", "en": "Varanasi (Banaras)" },
+        { "mr": "अलाहाबाद", "en": "Allahabad" },
+        { "mr": "पाटणा", "en": "Patna" },
+        { "mr": "नागपूर", "en": "Nagpur" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "१७९१ मध्ये बनारसचे रेसिडेंट जोनाथन डंकन यांनी हिंदू कायदे, साहित्य आणि तत्त्वज्ञान यांच्या संवर्धन आणि अध्ययनासाठी बनारस (वाराणसी) येथे संस्कृत कॉलेजची स्थापना केली.",
+        "en": "In 1791, Jonathan Duncan, the British Resident at Banaras, established the Sanskrit College at Banaras (Varanasi) to promote the study of Hindu laws, literature, and philosophy."
+      }
+    }
+  ]
+}
