@@ -134,6 +134,15 @@
         </div>
 
         <div class="flex items-center gap-1.5 sm:gap-2">
+          <!-- FEATURE: ON-SCREEN ROUGH SCRATCHPAD TRIGGER BUTTON (FOR MATH & REASONING) -->
+          <button onclick="toggleScratchpad()" title="रफ कामासाठी स्क्रीन स्क्रॅचपॅड उघडा (Scratchpad for Math/Rough work)" 
+                  class="p-1 sm:p-2 rounded-lg bg-amber-50 hover:bg-amber-100 dark:bg-amber-950/60 dark:hover:bg-amber-900/60 text-amber-700 dark:text-amber-300 border border-amber-200 dark:border-amber-800/80 transition-all flex items-center gap-1 text-xs font-bold active:scale-95">
+            <svg class="w-3.5 h-3.5 sm:w-4 sm:h-4 text-amber-600 dark:text-amber-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10"/>
+            </svg>
+            <span class="hidden md:inline">Rough Pad</span>
+          </button>
+
           <!-- Theme Switcher -->
           <button onclick="toggleDarkMode()" title="थीम बदला" class="p-1 sm:p-2 rounded-lg bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300 transition-colors">
             <svg id="sunIcon" class="w-3.5 h-3.5 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
@@ -176,17 +185,27 @@
           
           <div class="flex flex-wrap items-center justify-between gap-2 pb-2.5 mb-3 border-b border-slate-200 dark:border-slate-800">
             
-            <!-- Question Counter -->
+            <!-- Question Counter & Mode Badge -->
             <div class="flex items-center gap-1.5">
               <span class="px-2 py-0.5 rounded-md bg-indigo-100 dark:bg-indigo-950 text-indigo-700 dark:text-indigo-300 font-extrabold text-xs">
                 प्रश्न <span id="currentQuestionNum">१</span>
               </span>
               <span class="text-xs text-slate-400 font-medium">/ <span id="totalQuestionsText">०</span></span>
+              <span id="activeModeBadge" class="hidden px-2 py-0.5 rounded-md text-[10px] font-bold bg-amber-100 dark:bg-amber-950/70 text-amber-700 dark:text-amber-300 border border-amber-300 dark:border-amber-800">
+                📖 सराव मोड
+              </span>
             </div>
 
-            <!-- Controls Right: Language Switcher + Font Size Adjuster in single row -->
+            <!-- Controls Right: Language Switcher + Font Size Adjuster + Bookmark Button -->
             <div class="flex items-center gap-1.5 sm:gap-2">
               
+              <!-- ⭐ LIVE IN-QUIZ BOOKMARK BUTTON -->
+              <button id="inQuizBookmarkBtn" onclick="toggleInQuizBookmark()" title="हा प्रश्न व्हॉल्टमध्ये सेव्ह करा"
+                      class="px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-lg border border-slate-200 dark:border-slate-700 hover:border-amber-300 bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-300 text-[10px] sm:text-xs font-bold flex items-center gap-1 transition-all active:scale-95 shadow-sm">
+                <span id="bookmarkStarIcon">☆</span>
+                <span id="bookmarkStarText" class="hidden xs:inline">Save</span>
+              </button>
+
               <!-- Language Selector Segmented Control -->
               <div class="flex items-center p-0.5 rounded-lg bg-slate-200/80 dark:bg-slate-800 text-[10px] sm:text-[11px] font-bold">
                 <button type="button" onclick="setLanguage('both')" id="langBtnBoth" 
@@ -228,6 +247,19 @@
           <!-- 4 MCQ Options Container -->
           <div id="optionsContainer" class="space-y-2 sm:space-y-2.5 mb-4">
             <!-- Dynamically populated via JS -->
+          </div>
+
+          <!-- PRACTICE MODE INSTANT EXPLANATION CARD (HIDDEN IN EXAM MODE) -->
+          <div id="practiceExplanationCard" class="hidden p-3.5 sm:p-4 rounded-2xl bg-indigo-50/80 dark:bg-[#131d31] border border-indigo-200 dark:border-indigo-900/60 shadow-sm animate-fade-in mb-4">
+            <div class="flex items-center justify-between gap-2 mb-1.5">
+              <span class="text-xs font-bold text-indigo-900 dark:text-indigo-300 flex items-center gap-1">
+                <span>💡</span> <span>सविस्तर स्पष्टीकरण (Instant Explanation):</span>
+              </span>
+              <span id="practiceAnswerStatusBadge" class="text-[10px] font-extrabold px-2 py-0.5 rounded-full"></span>
+            </div>
+            <p id="practiceExplanationText" class="text-xs text-slate-700 dark:text-slate-300 leading-relaxed font-medium">
+              स्पष्टीकरण...
+            </p>
           </div>
 
           <!-- Not Found / Error State Container -->
@@ -424,10 +456,51 @@
   <div id="timeOutModal" class="fixed inset-0 z-50 bg-black/75 backdrop-blur-sm hidden items-center justify-center p-4">
     <div class="bg-white dark:bg-[#131d31] rounded-2xl w-full max-w-sm p-5 shadow-2xl border border-slate-200 dark:border-slate-800 text-center my-auto">
       <div class="w-12 h-12 bg-rose-100 dark:bg-rose-950/60 text-rose-600 dark:text-rose-400 rounded-full flex items-center justify-center mx-auto mb-3 shadow-inner">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
       </div>
       <h3 class="text-base font-bold text-slate-900 dark:text-white">वेळ संपली आहे! (Time Up)</h3>
       <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">तुमची चाचणी आपोआप सबमिट केली जात आहे. कृपया प्रतीक्षा करा...</p>
+    </div>
+  </div>
+
+  <!-- ========================================================================= -->
+  <!-- FEATURE: ON-SCREEN ROUGH WORK SCRATCHPAD OVERLAY FOR MATH/REASONING      -->
+  <!-- ========================================================================= -->
+  <div id="scratchpadModal" class="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-xs hidden flex-col">
+    <!-- Scratchpad Action Toolbar -->
+    <div class="bg-white/95 dark:bg-[#0e1626]/95 border-b border-slate-200 dark:border-slate-800 px-3 py-2 flex items-center justify-between shadow-sm">
+      <div class="flex items-center gap-2">
+        <span class="w-7 h-7 rounded-lg bg-amber-500 text-white flex items-center justify-center text-xs font-bold">✏️</span>
+        <div>
+          <h4 class="text-xs font-bold text-slate-900 dark:text-white leading-tight">रफ स्क्रॅचपॅड (Rough Scratchpad)</h4>
+          <span class="text-[10px] text-slate-400">अंकगणित व बुद्धिमत्तेसाठी बोटाने हिशोब करा</span>
+        </div>
+      </div>
+
+      <!-- Color and Stroke Controls -->
+      <div class="flex items-center gap-2">
+        <div class="flex items-center gap-1 bg-slate-100 dark:bg-slate-800 p-1 rounded-lg">
+          <button type="button" onclick="setPenColor('#ef4444')" class="w-5 h-5 rounded-full bg-rose-500 border-2 border-white dark:border-slate-800 shadow-xs"></button>
+          <button type="button" onclick="setPenColor('#3b82f6')" class="w-5 h-5 rounded-full bg-blue-500 border-2 border-white dark:border-slate-800 shadow-xs"></button>
+          <button type="button" onclick="setPenColor('#10b981')" class="w-5 h-5 rounded-full bg-emerald-500 border-2 border-white dark:border-slate-800 shadow-xs"></button>
+          <button type="button" onclick="setPenColor('#1e293b')" class="w-5 h-5 rounded-full bg-slate-800 border-2 border-white dark:border-slate-800 shadow-xs"></button>
+        </div>
+
+        <button type="button" onclick="clearScratchpad()" 
+                class="px-2.5 py-1 rounded-lg bg-rose-50 hover:bg-rose-100 dark:bg-rose-950/60 text-rose-600 dark:text-rose-300 border border-rose-200 dark:border-rose-900 text-[11px] font-bold transition-all">
+          पुसा (Clear)
+        </button>
+
+        <button type="button" onclick="toggleScratchpad(false)" 
+                class="px-2.5 py-1 rounded-lg bg-slate-200 hover:bg-slate-300 dark:bg-slate-800 text-slate-800 dark:text-slate-100 text-[11px] font-bold transition-all">
+          बंद करा ✕
+        </button>
+      </div>
+    </div>
+
+    <!-- Transparent Canvas Area -->
+    <div class="flex-1 relative cursor-crosshair touch-none bg-amber-50/10 dark:bg-slate-950/30">
+      <canvas id="roughCanvas" class="w-full h-full block"></canvas>
     </div>
   </div>
 
@@ -444,6 +517,195 @@
     let timerInterval = null;
     let isSubmitting = false;
     let activeLanguage = 'both'; // 'both' | 'mr' | 'en'
+    let savedBookmarks = {};   // Device Vault Bookmarks Cache
+
+    // FEATURE: TEST MODE ('exam' | 'practice') & PER-QUESTION TIME TRACKER
+    let activeTestMode = 'exam';
+    let questionTimeSpent = {}; // { questionIndex: secondsSpent }
+    let questionEnterTimestamp = Date.now();
+
+    // FEATURE: ON-SCREEN ROUGH WORK SCRATCHPAD LOGIC
+    let isDrawing = false;
+    let padCtx = null;
+    let penColor = '#ef4444';
+    let penWidth = 2.5;
+
+    function initScratchpadCanvas() {
+      const canvas = document.getElementById('roughCanvas');
+      if (!canvas) return;
+      canvas.width = canvas.parentElement.clientWidth;
+      canvas.height = canvas.parentElement.clientHeight;
+      padCtx = canvas.getContext('2d');
+      padCtx.lineCap = 'round';
+      padCtx.lineJoin = 'round';
+
+      // Mouse Drawing Events
+      canvas.addEventListener('mousedown', startDrawing);
+      canvas.addEventListener('mousemove', draw);
+      canvas.addEventListener('mouseup', stopDrawing);
+      canvas.addEventListener('mouseleave', stopDrawing);
+
+      // Touch Events for Mobile / Tablet Fingers
+      canvas.addEventListener('touchstart', (e) => {
+        e.preventDefault();
+        const touch = e.touches[0];
+        const rect = canvas.getBoundingClientRect();
+        startDrawing({ clientX: touch.clientX, clientY: touch.clientY, rect });
+      }, { passive: false });
+
+      canvas.addEventListener('touchmove', (e) => {
+        e.preventDefault();
+        const touch = e.touches[0];
+        draw({ clientX: touch.clientX, clientY: touch.clientY });
+      }, { passive: false });
+
+      canvas.addEventListener('touchend', stopDrawing);
+    }
+
+    function toggleScratchpad(force) {
+      const modal = document.getElementById('scratchpadModal');
+      const isHidden = modal.classList.contains('hidden');
+      const show = (force !== undefined) ? force : isHidden;
+
+      if (show) {
+        modal.classList.remove('hidden');
+        modal.classList.add('flex');
+        setTimeout(initScratchpadCanvas, 50);
+      } else {
+        modal.classList.remove('flex');
+        modal.classList.add('hidden');
+      }
+    }
+
+    function setPenColor(color) {
+      penColor = color;
+    }
+
+    function clearScratchpad() {
+      const canvas = document.getElementById('roughCanvas');
+      if (padCtx && canvas) {
+        padCtx.clearRect(0, 0, canvas.width, canvas.height);
+      }
+    }
+
+    function startDrawing(e) {
+      isDrawing = true;
+      const canvas = document.getElementById('roughCanvas');
+      const rect = canvas.getBoundingClientRect();
+      const x = (e.clientX || (e.touches && e.touches[0].clientX)) - rect.left;
+      const y = (e.clientY || (e.touches && e.touches[0].clientY)) - rect.top;
+      padCtx.beginPath();
+      padCtx.moveTo(x, y);
+    }
+
+    function draw(e) {
+      if (!isDrawing || !padCtx) return;
+      const canvas = document.getElementById('roughCanvas');
+      const rect = canvas.getBoundingClientRect();
+      const x = (e.clientX || (e.touches && e.touches[0].clientX)) - rect.left;
+      const y = (e.clientY || (e.touches && e.touches[0].clientY)) - rect.top;
+      padCtx.strokeStyle = penColor;
+      padCtx.lineWidth = penWidth;
+      padCtx.lineTo(x, y);
+      padCtx.stroke();
+    }
+
+    function stopDrawing() {
+      isDrawing = false;
+      if (padCtx) padCtx.closePath();
+    }
+
+    // FEATURE: DAILY PRACTICE STREAK UPDATER
+    function updateDailyStreak() {
+      try {
+        const todayStr = new Date().toISOString().slice(0, 10);
+        const lastDate = localStorage.getItem('studySphere_lastStreakDate');
+        let streak = parseInt(localStorage.getItem('studySphere_streakCount') || '0', 10);
+
+        if (!lastDate) {
+          streak = 1;
+          localStorage.setItem('studySphere_streakCount', '1');
+          localStorage.setItem('studySphere_lastStreakDate', todayStr);
+        } else if (lastDate !== todayStr) {
+          const yesterday = new Date();
+          yesterday.setDate(yesterday.getDate() - 1);
+          const yesterdayStr = yesterday.toISOString().slice(0, 10);
+
+          if (lastDate === yesterdayStr) {
+            streak += 1; // Continuous consecutive day
+          } else {
+            streak = 1; // Broken streak reset
+          }
+          localStorage.setItem('studySphere_streakCount', streak.toString());
+          localStorage.setItem('studySphere_lastStreakDate', todayStr);
+        }
+      } catch (err) {
+        console.error("Streak calculation error:", err);
+      }
+    }
+
+    function recordCurrentQuestionTime() {
+      if (currentIndex !== null && currentIndex !== undefined) {
+        const elapsedSeconds = Math.max(0, Math.floor((Date.now() - questionEnterTimestamp) / 1000));
+        questionTimeSpent[currentIndex] = (questionTimeSpent[currentIndex] || 0) + elapsedSeconds;
+      }
+      questionEnterTimestamp = Date.now();
+    }
+
+    // Load bookmarks cache from LocalStorage
+    function loadExamBookmarks() {
+      try {
+        const raw = localStorage.getItem('studySphere_bookmarks');
+        savedBookmarks = raw ? JSON.parse(raw) : {};
+      } catch (e) {
+        savedBookmarks = {};
+      }
+    }
+
+    // Toggle bookmark during the test
+    function toggleInQuizBookmark() {
+      if (!examData || !examData.questions || !examData.questions[currentIndex]) return;
+      const q = examData.questions[currentIndex];
+      const qId = q.id || currentIndex + 1;
+      const qKey = `${examData.testId || 'test'}_q${qId}`;
+
+      if (savedBookmarks[qKey]) {
+        delete savedBookmarks[qKey];
+        updateBookmarkUI(false);
+      } else {
+        savedBookmarks[qKey] = {
+          key: qKey,
+          testId: examData.testId || 'test',
+          testTitle: examData.title,
+          questionId: qId,
+          question: q.question,
+          options: q.options,
+          correctAnswerIndex: q.correctAnswerIndex,
+          explanation: q.explanation || { mr: "स्पष्टीकरण उपलब्ध नाही.", en: "Explanation not available." },
+          savedAt: new Date().toLocaleDateString('mr-IN')
+        };
+        updateBookmarkUI(true);
+      }
+
+      localStorage.setItem('studySphere_bookmarks', JSON.stringify(savedBookmarks));
+    }
+
+    function updateBookmarkUI(isSaved) {
+      const btn = document.getElementById('inQuizBookmarkBtn');
+      const star = document.getElementById('bookmarkStarIcon');
+      const text = document.getElementById('bookmarkStarText');
+      if (!btn || !star) return;
+
+      if (isSaved) {
+        star.textContent = '⭐';
+        if (text) text.textContent = 'Saved';
+        btn.className = 'px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-lg border border-amber-300 bg-amber-50 dark:bg-amber-950/40 text-amber-600 dark:text-amber-400 text-[10px] sm:text-xs font-bold flex items-center gap-1 transition-all active:scale-95 shadow-sm';
+      } else {
+        star.textContent = '☆';
+        if (text) text.textContent = 'Save';
+        btn.className = 'px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-lg border border-slate-200 dark:border-slate-700 hover:border-amber-300 bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-300 text-[10px] sm:text-xs font-bold flex items-center gap-1 transition-all active:scale-95 shadow-sm';
+      }
+    }
 
     // Question font sizes: Default 'small'
     const qFontSizes = ['small', 'medium', 'large'];
@@ -506,9 +768,31 @@
     }
 
     async function loadTestData() {
+      loadExamBookmarks();
       const urlParams = new URLSearchParams(window.location.search);
       const testFile = urlParams.get('file');
+      const mode = urlParams.get('mode');
+      const requestedTestMode = urlParams.get('testMode');
 
+      if (requestedTestMode === 'practice') {
+        activeTestMode = 'practice';
+      } else {
+        activeTestMode = 'exam';
+      }
+
+      // 1. Check if loading from Mistake Notebook Re-attempt session
+      if (mode === 'mistakes') {
+        const rawMistakes = sessionStorage.getItem('mistakesTestPayload');
+        if (rawMistakes) {
+          try {
+            examData = JSON.parse(rawMistakes);
+            initExamSession();
+            return;
+          } catch (e) {}
+        }
+      }
+
+      // 2. Standard flow: load test JSON file
       if (!testFile) {
         showErrorState();
         return;
@@ -541,11 +825,16 @@
         return;
       }
 
+      initExamSession();
+    }
+
+    function initExamSession() {
       totalQuestions = examData.questions.length;
       timeRemaining = (examData.durationMinutes || 15) * 60;
 
       for (let i = 0; i < totalQuestions; i++) {
         questionStatus[i] = 'not_visited';
+        questionTimeSpent[i] = 0;
       }
 
       const titleText = resolveText(examData.title, 'mr') || 'MPSC Group C सराव चाचणी';
@@ -554,9 +843,25 @@
       document.getElementById('totalQuestionsBadge').textContent = `${totalQuestions} प्रश्न`;
       document.getElementById('totalQuestionsText').textContent = totalQuestions;
 
+      // Adjust UI for Practice Mode vs Exam Mode
+      const modeBadge = document.getElementById('activeModeBadge');
+      if (activeTestMode === 'practice') {
+        if (modeBadge) modeBadge.classList.remove('hidden');
+        const timerContainer = document.getElementById('timerContainer');
+        if (timerContainer) {
+          timerContainer.innerHTML = `
+            <span class="text-xs">📖</span>
+            <span class="text-[11px] font-bold text-amber-700 dark:text-amber-300">सराव मोड</span>
+          `;
+          timerContainer.className = "flex items-center gap-1 px-2.5 py-1 rounded-xl bg-amber-50 dark:bg-amber-950/80 border border-amber-300 dark:border-amber-800 font-bold shadow-inner shrink-0";
+        }
+      } else {
+        if (modeBadge) modeBadge.classList.add('hidden');
+        startTimer();
+      }
+
       renderPaletteGrid();
       loadQuestion(0);
-      startTimer();
     }
 
     function showErrorState() {
@@ -596,11 +901,20 @@
 
     function loadQuestion(index) {
       if (!examData || index < 0 || index >= totalQuestions) return;
+
+      // Log time spent on previous question before switching
+      recordCurrentQuestionTime();
+
       currentIndex = index;
 
       const q = examData.questions[index];
       document.getElementById('currentQuestionNum').textContent = index + 1;
       document.getElementById('paletteMobileCount').textContent = `${index + 1}/${totalQuestions}`;
+
+      // Update question bookmark status
+      const qId = q.id || index + 1;
+      const qKey = `${examData.testId || 'test'}_q${qId}`;
+      updateBookmarkUI(!!savedBookmarks[qKey]);
 
       document.getElementById('prevBtn').disabled = (index === 0);
       if (index === 0) {
@@ -648,15 +962,55 @@
 
       const letters = ['A', 'B', 'C', 'D'];
       const selectedAnswer = userAnswers[index];
+      const isAttempted = (selectedAnswer !== undefined);
+
+      // Handle Practice Mode Instant Feedback vs Exam Mode
+      const expCard = document.getElementById('practiceExplanationCard');
+      if (activeTestMode === 'practice' && isAttempted) {
+        const isCorrect = (selectedAnswer === q.correctAnswerIndex);
+        const expBadge = document.getElementById('practiceAnswerStatusBadge');
+        const expText = document.getElementById('practiceExplanationText');
+
+        if (expBadge) {
+          if (isCorrect) {
+            expBadge.textContent = "✓ बरोबर उत्तर";
+            expBadge.className = "text-[10px] font-extrabold px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-800 dark:bg-emerald-950 dark:text-emerald-300 border border-emerald-300";
+          } else {
+            expBadge.textContent = "✗ चुकीचे उत्तर";
+            expBadge.className = "text-[10px] font-extrabold px-2 py-0.5 rounded-full bg-rose-100 text-rose-800 dark:bg-rose-950 dark:text-rose-300 border border-rose-300";
+          }
+        }
+
+        const expMr = resolveText(q.explanation, 'mr');
+        const expEn = resolveText(q.explanation, 'en');
+        if (expText) expText.textContent = activeLanguage === 'en' ? (expEn || expMr) : (expMr || expEn) || "स्पष्टीकरण उपलब्ध नाही.";
+        if (expCard) expCard.classList.remove('hidden');
+      } else {
+        if (expCard) expCard.classList.add('hidden');
+      }
 
       q.options.forEach((opt, optIndex) => {
         const isSelected = (selectedAnswer === optIndex);
+        const isCorrectOption = (optIndex === q.correctAnswerIndex);
+
+        let borderClass = 'border-slate-200 dark:border-slate-800 bg-white dark:bg-[#131d31] hover:bg-slate-50 dark:hover:bg-slate-800/60';
+        let badgeClass = 'border-slate-200 dark:border-slate-700 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300';
+
+        if (activeTestMode === 'practice' && isAttempted) {
+          if (isCorrectOption) {
+            borderClass = 'border-emerald-500 bg-emerald-50/80 dark:bg-emerald-950/60 dark:border-emerald-500 text-emerald-950 dark:text-emerald-100 font-bold';
+            badgeClass = 'bg-emerald-600 text-white border-emerald-600';
+          } else if (isSelected && !isCorrectOption) {
+            borderClass = 'border-rose-500 bg-rose-50/80 dark:bg-rose-950/60 dark:border-rose-500 text-rose-950 dark:text-rose-100 line-through';
+            badgeClass = 'bg-rose-600 text-white border-rose-600';
+          }
+        } else if (isSelected) {
+          borderClass = 'border-indigo-600 bg-indigo-50/80 dark:bg-indigo-950/60 dark:border-indigo-500';
+          badgeClass = 'bg-indigo-600 text-white border-indigo-600 shadow-sm';
+        }
+
         const card = document.createElement('div');
-        card.className = `p-2.5 sm:p-3.5 rounded-xl border-2 cursor-pointer transition-all flex items-center justify-between gap-3 ${
-          isSelected 
-            ? 'border-indigo-600 bg-indigo-50/80 dark:bg-indigo-950/60 dark:border-indigo-500' 
-            : 'border-slate-200 dark:border-slate-800 bg-white dark:bg-[#131d31] hover:bg-slate-50 dark:hover:bg-slate-800/60'
-        }`;
+        card.className = `p-2.5 sm:p-3.5 rounded-xl border-2 cursor-pointer transition-all flex items-center justify-between gap-3 ${borderClass}`;
         
         card.onclick = () => selectOption(optIndex);
 
@@ -683,11 +1037,7 @@
 
         card.innerHTML = `
           <div class="flex items-center gap-2.5 sm:gap-3 min-w-0 flex-1">
-            <div class="w-6 h-6 sm:w-7 sm:h-7 rounded-lg font-bold text-xs flex items-center justify-center shrink-0 border ${
-              isSelected 
-                ? 'bg-indigo-600 text-white border-indigo-600 shadow-sm' 
-                : 'border-slate-200 dark:border-slate-700 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300'
-            }">
+            <div class="w-6 h-6 sm:w-7 sm:h-7 rounded-lg font-bold text-xs flex items-center justify-center shrink-0 border ${badgeClass}">
               ${letters[optIndex] || optIndex + 1}
             </div>
             <div class="min-w-0 flex-1">
@@ -889,6 +1239,12 @@
       isSubmitting = true;
       clearInterval(timerInterval);
 
+      // Record final question time
+      recordCurrentQuestionTime();
+
+      // Update daily practice streak upon finishing quiz
+      updateDailyStreak();
+
       let correctCount = 0;
       let incorrectCount = 0;
       let unattemptedCount = 0;
@@ -922,6 +1278,7 @@
           correctAnswerIndex: q.correctAnswerIndex,
           isCorrect: isCorrect,
           isAttempted: isAttempted,
+          timeSpentSeconds: questionTimeSpent[index] || 0, // Recorded per-question time
           explanation: q.explanation || { mr: "स्पष्टीकरण उपलब्ध नाही.", en: "Explanation not available." }
         });
       });
@@ -941,6 +1298,7 @@
         negativeDeduction: parseFloat((incorrectCount * negMarks).toFixed(2)),
         timeSpentSeconds: timeSpent,
         totalTimeMinutes: examData.durationMinutes,
+        testMode: activeTestMode,
         questionsAnalysis: detailedResponses
       };
 
@@ -994,5 +1352,9 @@
       loadTestData();
     };
   </script>
+
+  <!-- Cloudflare Web Analytics -->
+  <script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "2939e1a62d66448c96ec989a7bfdfe4f"}'></script>
+  <!-- End Cloudflare Web Analytics -->
 </body>
 </html>
