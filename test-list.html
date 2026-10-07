@@ -67,22 +67,6 @@
       font-size: var(--content-subtext-size) !important;
     }
 
-    /* Shimmer Skeleton Animation Effect */
-    @keyframes skeleton-shimmer {
-      0% { background-position: -200% 0; }
-      100% { background-position: 200% 0; }
-    }
-    .skeleton-shimmer {
-      background: linear-gradient(90deg, rgba(226,232,240,0.6) 25%, rgba(241,245,249,0.9) 50%, rgba(226,232,240,0.6) 75%);
-      background-size: 200% 100%;
-      animation: skeleton-shimmer 1.6s infinite ease-in-out;
-    }
-    .dark .skeleton-shimmer {
-      background: linear-gradient(90deg, rgba(30,41,59,0.6) 25%, rgba(51,65,85,0.85) 50%, rgba(30,41,59,0.6) 75%);
-      background-size: 200% 100%;
-      animation: skeleton-shimmer 1.6s infinite ease-in-out;
-    }
-
     /* Accordion transition smoothing */
     .chapter-collapse-content {
       transition: max-height 0.3s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.25s ease-in-out;
@@ -129,14 +113,14 @@
       <!-- Right controls (Zero Mobile Overflow) -->
       <div class="flex items-center gap-1.5 shrink-0">
         
-        <!-- FEATURE: DAILY PRACTICE STREAK BADGE (Visible on both Mobile & Desktop) -->
+        <!-- FEATURE: DAILY PRACTICE STREAK BADGE -->
         <a href="progress.html" title="दैनिक सराव स्ट्रीक पहा"
            class="px-2 py-1 rounded-lg bg-amber-500/10 hover:bg-amber-500/20 text-amber-600 dark:text-amber-400 border border-amber-300 dark:border-amber-800/60 text-xs font-extrabold flex items-center gap-1 transition-all shrink-0">
           <span>🔥</span>
           <span id="listStreakCount">१</span>
         </a>
 
-        <!-- 'माझी प्रगती' (My Stats) Dashboard Trigger Button (Visible on both Mobile & Desktop) -->
+        <!-- 'माझी प्रगती' (My Stats) Dashboard Trigger Button -->
         <a href="progress.html" title="माझी प्रगती व सोडवलेल्या चाचण्यांचा संपूर्ण डॅशबोर्ड पहा"
            class="px-2 sm:px-2.5 py-1 sm:py-1.5 rounded-lg bg-emerald-50 dark:bg-emerald-950/60 hover:bg-emerald-100 dark:hover:bg-emerald-900/60 text-emerald-700 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800 text-xs font-bold flex items-center gap-1 shadow-xs active:scale-95 transition-all shrink-0">
           <svg class="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
@@ -165,7 +149,7 @@
   </header>
 
   <!-- ========================================== -->
-  <!-- INCOGNITO WARNING BANNER (SMART DETECTION) -->
+  <!-- INCOGNITO WARNING BANNER -->
   <!-- ========================================== -->
   <div id="incognitoWarningBanner" class="hidden bg-amber-500/15 dark:bg-amber-950/50 border-b border-amber-300 dark:border-amber-800/60 px-4 py-2.5 text-xs text-amber-900 dark:text-amber-200">
     <div class="max-w-7xl mx-auto flex items-center justify-between gap-3">
@@ -191,11 +175,11 @@
     <nav class="flex items-center gap-2 text-xs font-medium text-slate-500 dark:text-slate-400 mb-5 overflow-x-auto pb-1" aria-label="Breadcrumb">
       <a href="index.html" class="hover:text-indigo-600 dark:hover:text-white flex items-center gap-1 shrink-0">
         <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
-        <span>मुख्यपृष्ठ (Home)</span>
+        <span>Home</span>
       </a>
-      <svg class="w-3.5 h-3.5 text-slate-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+      <svg class="w-3.5 h-3.5 text-slate-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
       <span id="breadcrumbSection" class="shrink-0 text-slate-700 dark:text-slate-300 font-semibold">Prelims</span>
-      <svg class="w-3.5 h-3.5 text-slate-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+      <svg class="w-3.5 h-3.5 text-slate-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
       <span id="breadcrumbSubject" class="text-indigo-600 dark:text-indigo-400 font-bold shrink-0">इतिहास (History)</span>
     </nav>
 
@@ -269,100 +253,8 @@
       </div>
     </div>
 
-    <!-- ========================================================================= -->
-    <!-- SKELETON SHIMMER LOADER (SHOWN WHILE SCANNING & PROBING TEST FILES)       -->
-    <!-- ========================================================================= -->
-    <div id="skeletonLoaderContainer" class="space-y-6 mb-10 transition-opacity duration-300">
-      
-      <!-- Skeleton Chapters Section -->
-      <div class="space-y-3">
-        <div class="flex items-center justify-between pb-2 border-b border-slate-200 dark:border-slate-800">
-          <div class="flex items-center gap-2">
-            <div class="w-2 h-5 rounded-full skeleton-shimmer"></div>
-            <div class="h-4 w-44 rounded-md skeleton-shimmer"></div>
-          </div>
-          <div class="h-3 w-20 rounded-md skeleton-shimmer"></div>
-        </div>
-
-        <!-- 4 Mock Chapter Accordion Bars -->
-        <div class="space-y-3">
-          <div class="p-3.5 sm:p-4 rounded-2xl bg-white dark:bg-[#131d31] border border-slate-200/80 dark:border-slate-800 flex items-center justify-between gap-3 shadow-xs">
-            <div class="flex items-center gap-3 flex-1">
-              <div class="w-7 h-7 rounded-lg skeleton-shimmer shrink-0"></div>
-              <div class="h-3.5 w-3/5 rounded-md skeleton-shimmer"></div>
-            </div>
-            <div class="h-5 w-16 rounded-full skeleton-shimmer shrink-0"></div>
-          </div>
-
-          <div class="p-3.5 sm:p-4 rounded-2xl bg-white dark:bg-[#131d31] border border-slate-200/80 dark:border-slate-800 flex items-center justify-between gap-3 shadow-xs">
-            <div class="flex items-center gap-3 flex-1">
-              <div class="w-7 h-7 rounded-lg skeleton-shimmer shrink-0"></div>
-              <div class="h-3.5 w-1/2 rounded-md skeleton-shimmer"></div>
-            </div>
-            <div class="h-5 w-16 rounded-full skeleton-shimmer shrink-0"></div>
-          </div>
-
-          <div class="p-3.5 sm:p-4 rounded-2xl bg-white dark:bg-[#131d31] border border-slate-200/80 dark:border-slate-800 flex items-center justify-between gap-3 shadow-xs">
-            <div class="flex items-center gap-3 flex-1">
-              <div class="w-7 h-7 rounded-lg skeleton-shimmer shrink-0"></div>
-              <div class="h-3.5 w-2/3 rounded-md skeleton-shimmer"></div>
-            </div>
-            <div class="h-5 w-16 rounded-full skeleton-shimmer shrink-0"></div>
-          </div>
-
-          <div class="p-3.5 sm:p-4 rounded-2xl bg-white dark:bg-[#131d31] border border-slate-200/80 dark:border-slate-800 flex items-center justify-between gap-3 shadow-xs">
-            <div class="flex items-center gap-3 flex-1">
-              <div class="w-7 h-7 rounded-lg skeleton-shimmer shrink-0"></div>
-              <div class="h-3.5 w-2/5 rounded-md skeleton-shimmer"></div>
-            </div>
-            <div class="h-5 w-16 rounded-full skeleton-shimmer shrink-0"></div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Skeleton Mixed Tests Section -->
-      <div class="space-y-3 pt-2">
-        <div class="flex items-center justify-between pb-2 border-b border-slate-200 dark:border-slate-800">
-          <div class="flex items-center gap-2">
-            <div class="w-2 h-5 rounded-full skeleton-shimmer"></div>
-            <div class="h-4 w-48 rounded-md skeleton-shimmer"></div>
-          </div>
-          <div class="h-3 w-20 rounded-md skeleton-shimmer"></div>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div class="p-4 sm:p-5 rounded-2xl bg-white dark:bg-[#131d31] border border-slate-200/80 dark:border-slate-800 space-y-3 shadow-xs">
-            <div class="flex justify-between">
-              <div class="h-4 w-16 rounded skeleton-shimmer"></div>
-              <div class="h-4 w-20 rounded skeleton-shimmer"></div>
-            </div>
-            <div class="h-4 w-3/4 rounded skeleton-shimmer"></div>
-            <div class="h-3 w-full rounded skeleton-shimmer"></div>
-            <div class="pt-3 border-t border-slate-100 dark:border-slate-800/80 flex justify-between items-center">
-              <div class="h-3 w-24 rounded skeleton-shimmer"></div>
-              <div class="h-8 w-24 rounded-xl skeleton-shimmer"></div>
-            </div>
-          </div>
-
-          <div class="p-4 sm:p-5 rounded-2xl bg-white dark:bg-[#131d31] border border-slate-200/80 dark:border-slate-800 space-y-3 shadow-xs">
-            <div class="flex justify-between">
-              <div class="h-4 w-16 rounded skeleton-shimmer"></div>
-              <div class="h-4 w-20 rounded skeleton-shimmer"></div>
-            </div>
-            <div class="h-4 w-3/4 rounded skeleton-shimmer"></div>
-            <div class="h-3 w-full rounded skeleton-shimmer"></div>
-            <div class="pt-3 border-t border-slate-100 dark:border-slate-800/80 flex justify-between items-center">
-              <div class="h-3 w-24 rounded skeleton-shimmer"></div>
-              <div class="h-8 w-24 rounded-xl skeleton-shimmer"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
     <!-- Chapter Section -->
-    <div id="chapterSectionWrapper" class="mb-10 hidden">
+    <div id="chapterSectionWrapper" class="mb-10">
       <div class="flex items-center justify-between mb-4 pb-2 border-b border-slate-200 dark:border-slate-800">
         <div class="flex items-center gap-2">
           <div class="w-2 h-5 bg-indigo-600 rounded-full"></div>
@@ -372,13 +264,13 @@
       </div>
 
       <!-- Chapter Groups Container (Accordion Dropdowns) -->
-    <div id="chapterGroupsContainer" class="space-y-3">
-      <!-- Rendered dynamically via JS & Auto-Probe Engine -->
+      <div id="chapterGroupsContainer" class="space-y-3">
+        <!-- Rendered dynamically via JS & Auto-Probe Engine -->
+      </div>
     </div>
-  </div>
 
-  <!-- Mixed Section -->
-    <div id="mixedSectionWrapper" class="mb-12 hidden">
+    <!-- Mixed Section -->
+    <div id="mixedSectionWrapper" class="mb-12">
       <div class="flex items-center justify-between mb-4 pb-2 border-b border-slate-200 dark:border-slate-800">
         <div class="flex items-center gap-2">
           <div class="w-2 h-5 bg-emerald-600 rounded-full"></div>
@@ -412,7 +304,7 @@
       
       <!-- Close button -->
       <button onclick="closeTestInfoModal()" class="absolute top-3 right-3 p-1.5 text-slate-400 hover:text-slate-600 dark:hover:text-white rounded-lg">
-        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
       </button>
 
       <!-- Modal Header -->
@@ -432,7 +324,7 @@
         </div>
       </div>
 
-      <!-- Test Meta Badges Grid (Ultra compact 4-cell layout) -->
+      <!-- Test Meta Badges Grid -->
       <div class="grid grid-cols-2 gap-2 mb-3">
         <div class="p-2 rounded-xl bg-slate-50 dark:bg-slate-900/60 border border-slate-200/80 dark:border-slate-800 flex items-center gap-2">
           <span class="text-xs">📝</span>
@@ -485,7 +377,7 @@
         </div>
       </div>
 
-      <!-- Concise Single-box Instructions (Zero Scroll Friendly) -->
+      <!-- Instructions Box -->
       <div id="modalInstructionsBox" class="p-2.5 rounded-xl bg-indigo-50/70 dark:bg-indigo-950/30 border border-indigo-100 dark:border-indigo-900/40 text-[11px] text-slate-700 dark:text-slate-300 space-y-1 mb-3.5 font-medium leading-tight">
         <p class="flex items-center gap-1 font-bold text-indigo-950 dark:text-indigo-200 text-[11px]">
           <span>• अचूक: <strong class="text-emerald-600 dark:text-emerald-400">+१.००</strong></span>
@@ -531,7 +423,7 @@
           </div>
         </div>
         <button onclick="closeStatsModal()" class="p-1.5 text-slate-400 hover:text-slate-600 dark:hover:text-white rounded-lg">
-          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
         </button>
       </div>
 
@@ -594,20 +486,33 @@
             </label>
           </div>
 
-  <!-- Toast Notification -->
-  <div id="toastNotification" class="fixed bottom-5 right-5 z-50 transform translate-y-20 opacity-0 transition-all duration-300 bg-slate-900 text-white dark:bg-white dark:text-slate-900 px-4 py-2.5 rounded-xl shadow-xl flex items-center gap-2 text-xs font-semibold">
-    <svg class="w-4 h-4 text-emerald-400 dark:text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
-    <span id="toastMessage">नोंद यशस्वी झाली!</span>
+          <button onclick="clearAllHistoryData()" class="text-[11px] text-rose-500 hover:text-rose-700 dark:hover:text-rose-400 font-semibold text-center sm:text-right py-1">
+            इतिहास नष्ट करा
+          </button>
+        </div>
+
+      </div>
+
+      <!-- Modal Footer -->
+      <div class="pt-2 border-t border-slate-100 dark:border-slate-800 flex justify-end shrink-0">
+        <button onclick="closeStatsModal()" class="px-4 py-1.5 rounded-xl bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 text-xs font-bold text-slate-700 dark:text-slate-300">
+          बंद करा
+        </button>
+      </div>
+
+    </div>
   </div>
 
   <!-- ========================================================================= -->
-  <!-- FLOATING COMPACT PROBE LOADING POPUP (VISIBLE UNTIL ALL QUIZZES LOAD)    -->
+  <!-- FLOATING BOTTOM CENTER LOADING NOTIFICATION POPUP (NON-BLOCKING)         -->
   <!-- ========================================================================= -->
-  <div id="probeLoadingPopup" class="fixed bottom-6 left-1/2 transform -translate-x-1/2 z-50 bg-slate-900/95 dark:bg-indigo-950/95 text-white backdrop-blur border border-indigo-500/40 shadow-2xl px-4 py-2.5 rounded-2xl flex items-center gap-2.5 text-xs font-bold transition-all duration-300">
+  <div id="probeBottomLoadingPopup" 
+       class="fixed bottom-5 left-1/2 -translate-x-1/2 z-50 bg-slate-900/95 dark:bg-indigo-950/95 text-white backdrop-blur-md border border-indigo-500/40 shadow-2xl px-4 py-2.5 rounded-2xl flex items-center gap-2.5 text-xs font-bold transition-all duration-300 pointer-events-none opacity-0 translate-y-4"
+       style="display: none;">
     <div class="w-4 h-4 rounded-full border-2 border-amber-400 border-t-transparent animate-spin shrink-0"></div>
-    <div class="flex items-center gap-1.5">
+    <div class="flex items-center gap-1.5 whitespace-nowrap">
       <span class="text-amber-300">⚡</span>
-      <span id="probeLoadingStatusText" class="truncate max-w-[220px] sm:max-w-xs">सर्व चाचण्या शोधल्या जात आहेत...</span>
+      <span id="probeBottomStatusText">सराव चाचण्या शोधल्या जात आहेत...</span>
     </div>
   </div>
 
@@ -616,7 +521,7 @@
   </footer>
 
   <!-- ======================================================== -->
-  <!-- JAVASCRIPT: CATALOG LOADER & SMART AUTO-PROBE ENGINE     -->
+  <!-- JAVASCRIPT: CATALOG LOADER & PROVEN WORKING AUTO-PROBE   -->
   <!-- ======================================================== -->
   <script>
     let catalogDatabase = null;
@@ -637,7 +542,7 @@
       }
       updateHeaderCompletedBadge();
 
-      // Streak badge
+      // Update streak badge in header
       const count = Object.keys(userProgressHistory).length;
       const streak = parseInt(localStorage.getItem('studySphere_streakCount') || (count > 0 ? '1' : '0'), 10);
       const streakEl = document.getElementById('listStreakCount');
@@ -669,23 +574,16 @@
       return String(item);
     }
 
-    // Safe & robust URL parameters parsing (Prevents double-prefix like prelims-prelims-history)
     function parseURLParams() {
       const urlParams = new URLSearchParams(window.location.search);
-      const subject = (urlParams.get('subject') || '').trim();
-      const section = (urlParams.get('section') || '').trim();
-      const type = (urlParams.get('type') || '').trim();
+      const subject = urlParams.get('subject');
+      const section = urlParams.get('section');
+      const type = urlParams.get('type');
 
       if (type) {
         activeSubjectKey = type;
       } else if (subject) {
-        if (subject.startsWith('prelims-') || subject.startsWith('mains-') || subject.startsWith('pre-') || subject.startsWith('mains-mock')) {
-          activeSubjectKey = subject;
-        } else if (section) {
-          activeSubjectKey = `${section}-${subject}`;
-        } else {
-          activeSubjectKey = `prelims-${subject}`;
-        }
+        activeSubjectKey = (section ? section + '-' : 'prelims-') + subject;
       } else {
         activeSubjectKey = 'prelims-history';
       }
@@ -695,41 +593,10 @@
       loadUserProgress();
       parseURLParams();
 
-      // Clear any faulty empty session cache so fresh scan always runs
-      const cacheKey = `studySphere_catalogCache_${activeSubjectKey}`;
-      const cachedDataStr = sessionStorage.getItem(cacheKey);
-
-      if (cachedDataStr) {
-        try {
-          const cached = JSON.parse(cachedDataStr);
-          const hasDiscoveredQuizzes = (cached.chapters && cached.chapters.some(ch => ch.tests && ch.tests.length > 0)) ||
-                                      (cached.mixed && cached.mixed.length > 0);
-
-          if (cached && Array.isArray(cached.chapters) && hasDiscoveredQuizzes) {
-            renderSubjectHeaderOnly(cached.meta);
-            allLoadedChapters = cached.chapters;
-            allLoadedMixed = cached.mixed || [];
-            
-            document.getElementById('chapterCountBadge').textContent = `${allLoadedChapters.length} घटक उपलब्ध`;
-            renderChapterTests(allLoadedChapters);
-            renderMixedTests(allLoadedMixed);
-            updateTotalStats();
-
-            autoOpenFirstAvailableChapter();
-            hideSkeletonLoader(true);
-            return;
-          } else {
-            sessionStorage.removeItem(cacheKey);
-          }
-        } catch (e) {
-          sessionStorage.removeItem(cacheKey);
-        }
-      }
-
-      // Load master catalog.json with resilient relative candidate paths
       const pathsToTry = [
         'data/catalog.json',
         './data/catalog.json',
+        '/data/catalog.json',
         '../data/catalog.json',
         'catalog.json'
       ];
@@ -755,21 +622,12 @@
       detectIncognitoMode();
     }
 
-    function renderSubjectHeaderOnly(meta) {
-      if (!meta) return;
-      document.getElementById('breadcrumbSection').textContent = meta.section || 'General';
-      document.getElementById('breadcrumbSubject').textContent = `${meta.nameMr || ''} (${meta.nameEn || ''})`;
-      document.getElementById('subjectHeroTitle').textContent = `${meta.nameEn || ''} (${meta.nameMr || ''})`;
-      document.getElementById('subjectHeroDesc').textContent = meta.desc || 'घटकनिहाय आणि संपूर्ण सर्वसमावेशक मोफत सराव चाचण्या.';
-      document.getElementById('heroBadge').textContent = meta.badge || 'MPSC 2026';
-    }
-
     function renderSubjectPage() {
       let data = catalogDatabase ? catalogDatabase[activeSubjectKey] : null;
 
       if (!data && catalogDatabase) {
         const keys = Object.keys(catalogDatabase);
-        const match = keys.find(k => k === activeSubjectKey || k.includes(activeSubjectKey) || activeSubjectKey.includes(k));
+        const match = keys.find(k => k.includes(activeSubjectKey) || activeSubjectKey.includes(k));
         if (match) data = catalogDatabase[match];
       }
 
@@ -777,7 +635,11 @@
         data = (catalogDatabase && catalogDatabase['prelims-history']) || getEmergencyBuiltinData()['prelims-history'];
       }
 
-      renderSubjectHeaderOnly(data);
+      document.getElementById('breadcrumbSection').textContent = data.section || 'General';
+      document.getElementById('breadcrumbSubject').textContent = `${data.nameMr || ''} (${data.nameEn || ''})`;
+      document.getElementById('subjectHeroTitle').textContent = `${data.nameEn || ''} (${data.nameMr || ''})`;
+      document.getElementById('subjectHeroDesc').textContent = data.desc || 'घटकनिहाय आणि संपूर्ण सर्वसमावेशक मोफत सराव चाचण्या.';
+      document.getElementById('heroBadge').textContent = data.badge || 'MPSC 2026';
 
       const rawChapters = data.chapters || [];
       allLoadedChapters = rawChapters.map((ch, idx) => ({
@@ -798,42 +660,14 @@
         document.getElementById('tabChapters').classList.remove('hidden');
       }
 
+      // Initial render - Keep all chapters initially closed or open first if tests exist
       activeOpenChapterIndex = null;
       renderChapterTests(allLoadedChapters);
       renderMixedTests(allLoadedMixed);
       updateTotalStats();
 
-      // Launch 100% resilient GET auto-probing
-      startFastAutoProbing(data);
-    }
-
-    function hideSkeletonLoader(immediate = false) {
-      const loader = document.getElementById('skeletonLoaderContainer');
-      const chapterSec = document.getElementById('chapterSectionWrapper');
-      const mixedSec = document.getElementById('mixedSectionWrapper');
-      const probePopup = document.getElementById('probeLoadingPopup');
-
-      if (probePopup) {
-        probePopup.classList.add('opacity-0', 'translate-y-4', 'pointer-events-none');
-        setTimeout(() => {
-          if (probePopup) probePopup.style.display = 'none';
-        }, 300);
-      }
-
-      if (loader) {
-        if (immediate) {
-          loader.style.display = 'none';
-          if (allLoadedChapters.length > 0 && chapterSec) chapterSec.classList.remove('hidden');
-          if (allLoadedMixed.length > 0 && mixedSec) mixedSec.classList.remove('hidden');
-        } else {
-          loader.classList.add('opacity-0');
-          setTimeout(() => {
-            loader.style.display = 'none';
-            if (allLoadedChapters.length > 0 && chapterSec) chapterSec.classList.remove('hidden');
-            if (allLoadedMixed.length > 0 && mixedSec) mixedSec.classList.remove('hidden');
-          }, 200);
-        }
-      }
+      // Launch Auto-Probe Engine to discover uploaded JSON test files in folders
+      startAutoProbing();
     }
 
     function updateTotalStats() {
@@ -853,21 +687,27 @@
       document.getElementById('mixedCountBadge').textContent = `${allLoadedMixed.length} टेस्ट्स उपलब्ध`;
     }
 
-    // 100% RELIABLE TEST PROBING VIA STANDARD GET REQUEST (Works on GitHub Pages & Localhost)
-    async function probeSingleTest(relPath) {
-      const candidatePaths = [
-        relPath,
-        './' + relPath,
-        '../' + relPath
-      ];
+    // =======================================================================
+    // SMART AUTO-PROBE ENGINE (The exact proven working path detection)
+    // =======================================================================
+    function hideBottomLoadingPopup() {
+      const popup = document.getElementById('probeBottomLoadingPopup');
+      if (popup) {
+        popup.classList.add('opacity-0', 'translate-y-4');
+        setTimeout(() => {
+          if (popup) popup.style.display = 'none';
+        }, 300);
+      }
+    }
 
-      for (const url of candidatePaths) {
+    async function probeTestFile(possiblePaths) {
+      for (const p of possiblePaths) {
         try {
-          const res = await fetch(url);
+          const res = await fetch(p);
           if (res.ok) {
             const data = await res.json();
             if (data && Array.isArray(data.questions) && data.questions.length > 0) {
-              return { path: url, data: data };
+              return { path: p, data: data };
             }
           }
         } catch (e) {}
@@ -875,29 +715,45 @@
       return null;
     }
 
-    async function startFastAutoProbing(subjectMeta) {
-      const statusText = document.getElementById('probeLoadingStatusText');
-      if (statusText) statusText.textContent = 'सर्व चाचण्या शोधल्या जात आहेत...';
+    async function startAutoProbing() {
+      const popup = document.getElementById('probeBottomLoadingPopup');
+      if (popup) {
+        popup.style.display = 'flex';
+        requestAnimationFrame(() => {
+          popup.classList.remove('opacity-0', 'translate-y-4');
+        });
+      }
 
-      // Safety fallback timer: guarantees screen renders within 2 seconds
-      const safetyTimer = setTimeout(() => {
-        renderChapterTests(allLoadedChapters);
-        renderMixedTests(allLoadedMixed);
-        updateTotalStats();
-        autoOpenFirstAvailableChapter();
-        hideSkeletonLoader();
-      }, 2000);
+      // 4-second safety guard to always hide popup
+      const popupTimer = setTimeout(() => {
+        hideBottomLoadingPopup();
+      }, 4000);
 
       try {
-        // PARALLEL PROBING FOR ALL CHAPTERS CONCURRENTLY
-        const chapterProbePromises = allLoadedChapters.map(async (chapter, chIndex) => {
-          if (chapter.tests && chapter.tests.length > 0) return;
+        const subjectFolder1 = activeSubjectKey; // e.g. prelims-history
+        const subjectFolder2 = activeSubjectKey.replace('-', '/'); // e.g. prelims/history
+
+        // 1. Probe Chapter Tests (test-1.json, test-2.json, ... test-20.json)
+        for (let chIndex = 0; chIndex < allLoadedChapters.length; chIndex++) {
+          const chapter = allLoadedChapters[chIndex];
+          const chId = chapter.id;
+
+          // If tests are already manually defined in catalog.json, skip probing
+          if (chapter.tests && chapter.tests.length > 0) continue;
 
           let testNum = 1;
-          while (testNum <= 5) {
-            const probeUrl = `data/${activeSubjectKey}/chapters/${chapter.id}/test-${testNum}.json`;
-            const result = await probeSingleTest(probeUrl);
-            
+
+          while (testNum <= 20) { // Probe up to 20 tests sequentially
+            const possiblePaths = [
+              `data/${subjectFolder1}/chapters/${chId}/test-${testNum}.json`,
+              `data/${subjectFolder1}/chapters/${chId}/test-0${testNum}.json`,
+              `data/${subjectFolder2}/chapters/${chId}/test-${testNum}.json`,
+              `data/${subjectFolder2}/chapters/${chId}/test-0${testNum}.json`,
+              `./data/${subjectFolder1}/chapters/${chId}/test-${testNum}.json`,
+              `./data/${subjectFolder2}/chapters/${chId}/test-${testNum}.json`
+            ];
+
+            const result = await probeTestFile(possiblePaths);
             if (result) {
               const tData = result.data;
               const qCount = tData.questions.length;
@@ -907,34 +763,41 @@
               const rawTitle = resolveText(tData.title, 'mr');
               const cleanTitle = rawTitle || `${chapter.title.split('—').pop().trim()} सराव ${testNum}`;
 
-              const alreadyExists = chapter.tests.some(t => t.file === result.path || t.id === (tData.testId || `${chapter.id}-t${testNum}`));
-              if (!alreadyExists) {
-                chapter.tests.push({
-                  id: tData.testId || `${chapter.id}-t${testNum}`,
-                  title: cleanTitle,
-                  questions: qCount,
-                  time: duration,
-                  marks: totalMarks,
-                  difficulty: tData.difficulty || 'सराव',
-                  file: result.path
-                });
-              }
+              chapter.tests.push({
+                id: tData.testId || `${chId}-t${testNum}`,
+                title: cleanTitle,
+                questions: qCount,
+                time: duration,
+                marks: totalMarks,
+                difficulty: tData.difficulty || 'सराव',
+                file: result.path
+              });
 
+              // Update UI for this chapter immediately
               updateChapterCardUI(chIndex, chapter);
+              updateTotalStats();
               testNum++;
             } else {
+              // Stop probing this chapter when next sequential file is not found
               break;
             }
           }
-        });
+        }
 
-        // PARALLEL PROBE FOR MIXED TESTS CONCURRENTLY
-        const mixedProbePromise = (async () => {
-          if (allLoadedMixed.length > 0) return;
+        // 2. Probe Mixed Tests (test-1.json, test-2.json...)
+        if (allLoadedMixed.length === 0) {
           let mixNum = 1;
-          while (mixNum <= 5) {
-            const mixUrl = `data/${activeSubjectKey}/mixed/test-${mixNum}.json`;
-            const result = await probeSingleTest(mixUrl);
+          while (mixNum <= 20) {
+            const possibleMixedPaths = [
+              `data/${subjectFolder1}/mixed/test-${mixNum}.json`,
+              `data/${subjectFolder1}/mixed/test-0${mixNum}.json`,
+              `data/${subjectFolder2}/mixed/test-${mixNum}.json`,
+              `data/${subjectFolder2}/mixed/test-0${mixNum}.json`,
+              `./data/${subjectFolder1}/mixed/test-${mixNum}.json`,
+              `./data/${subjectFolder2}/mixed/test-${mixNum}.json`
+            ];
+
+            const result = await probeTestFile(possibleMixedPaths);
             if (result) {
               const mData = result.data;
               const qCount = mData.questions.length;
@@ -944,74 +807,55 @@
               const rawTitle = resolveText(mData.title, 'mr');
               const cleanTitle = rawTitle || `संयुक्त सराव टेस्ट ${mixNum}`;
 
-              const alreadyExists = allLoadedMixed.some(t => t.file === result.path || t.id === (mData.testId || `mix-t${mixNum}`));
-              if (!alreadyExists) {
-                allLoadedMixed.push({
-                  id: mData.testId || `mix-t${mixNum}`,
-                  title: cleanTitle,
-                  questions: qCount,
-                  time: duration,
-                  marks: totalMarks,
-                  difficulty: mData.difficulty || 'परीक्षाभिमुख',
-                  file: result.path
-                });
-              }
+              allLoadedMixed.push({
+                id: mData.testId || `mix-t${mixNum}`,
+                title: cleanTitle,
+                questions: qCount,
+                time: duration,
+                marks: totalMarks,
+                difficulty: mData.difficulty || 'परीक्षाभिमुख',
+                file: result.path
+              });
+
+              renderMixedTests(allLoadedMixed);
+              updateTotalStats();
               mixNum++;
             } else {
               break;
             }
           }
-        })();
-
-        // Wait for all probes
-        await Promise.all([...chapterProbePromises, mixedProbePromise]);
-
-        // CRITICAL: Full re-render with discovered tests
-        renderChapterTests(allLoadedChapters);
-        renderMixedTests(allLoadedMixed);
-        updateTotalStats();
-
-        // Automatically expand the first chapter containing tests
-        autoOpenFirstAvailableChapter();
-
-        // Save to cache ONLY if tests were actually found
-        const hasFoundTests = allLoadedChapters.some(c => c.tests && c.tests.length > 0) || allLoadedMixed.length > 0;
-        if (hasFoundTests) {
-          try {
-            const cachePackage = {
-              meta: subjectMeta || {
-                section: document.getElementById('breadcrumbSection').textContent,
-                nameMr: document.getElementById('breadcrumbSubject').textContent,
-                nameEn: document.getElementById('subjectHeroTitle').textContent,
-                desc: document.getElementById('subjectHeroDesc').textContent,
-                badge: document.getElementById('heroBadge').textContent
-              },
-              chapters: allLoadedChapters,
-              mixed: allLoadedMixed
-            };
-            sessionStorage.setItem(`studySphere_catalogCache_${activeSubjectKey}`, JSON.stringify(cachePackage));
-          } catch (e) {}
-        } else {
-          sessionStorage.removeItem(`studySphere_catalogCache_${activeSubjectKey}`);
         }
-
       } catch (err) {
-        console.error("Probing error:", err);
+        console.error("Auto-probe error:", err);
       } finally {
-        clearTimeout(safetyTimer);
-        hideSkeletonLoader();
+        clearTimeout(popupTimer);
+        hideBottomLoadingPopup();
       }
     }
 
-    function autoOpenFirstAvailableChapter() {
-      if (activeOpenChapterIndex !== null) return;
-      const firstIndex = allLoadedChapters.findIndex(ch => ch.tests && ch.tests.length > 0);
-      if (firstIndex !== -1) {
-        toggleChapterDropdown(firstIndex);
+    function updateChapterCardUI(chIndex, chapter) {
+      const card = document.getElementById(`chapter-card-${chIndex}`);
+      if (!card) return;
+
+      const hasTests = chapter.tests && chapter.tests.length > 0;
+      const countBadge = card.querySelector('.chapter-test-count');
+      const container = card.querySelector('.chapter-tests-grid');
+
+      if (countBadge) {
+        countBadge.textContent = chapter.tests.length === 1 ? '१ चाचणी' : `${chapter.tests.length} चाचण्या`;
+        countBadge.className = 'chapter-test-count text-[11px] px-2 py-0.5 rounded-full font-bold bg-indigo-50 dark:bg-indigo-950/70 text-indigo-700 dark:text-indigo-300 border border-indigo-200/80 dark:border-indigo-800/60 shrink-0';
+      }
+
+      if (hasTests && container) {
+        let gridHtml = '';
+        chapter.tests.forEach(test => {
+          gridHtml += generateTestCardHtml(test);
+        });
+        container.className = "chapter-tests-grid grid grid-cols-1 sm:grid-cols-2 gap-2.5 sm:gap-3";
+        container.innerHTML = gridHtml;
       }
     }
 
-    // Helper: generate clean, non-overlapping HTML for a test card
     function generateTestCardHtml(test) {
       const testFileSafe = encodeURIComponent(test.file);
       const testTitleSafe = encodeURIComponent(test.title);
@@ -1029,7 +873,7 @@
         viewResultBtnHtml = `
           <a href="result.html?testId=${encodeURIComponent(test.id)}&mode=view" 
              title="शेवटचा निकाल पहा"
-             class="flex-1 sm:flex-initial inline-flex items-center justify-center gap-1 px-2.5 py-1.5 rounded-lg border border-indigo-300 dark:border-indigo-800 bg-indigo-50 hover:bg-indigo-100 dark:bg-indigo-950/60 dark:hover:bg-indigo-900/60 text-indigo-700 dark:text-indigo-300 text-xs font-bold shadow-xs active:scale-95 transition-all shrink-0 whitespace-nowrap">
+             class="flex-1 sm:flex-initial inline-flex items-center justify-center gap-1 px-2.5 py-1.5 rounded-lg border border-indigo-300 dark:border-indigo-800 bg-indigo-50 hover:bg-indigo-100 dark:bg-indigo-950/60 text-indigo-700 dark:text-indigo-300 text-xs font-bold shadow-xs active:scale-95 transition-all shrink-0 whitespace-nowrap">
             <svg class="w-3.5 h-3.5 text-indigo-600 dark:text-indigo-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
             <span>निकाल पहा</span>
           </a>
@@ -1073,37 +917,15 @@
       `;
     }
 
-    function updateChapterCardUI(chIndex, chapter) {
-      const card = document.getElementById(`chapter-card-${chIndex}`);
-      if (!card) return;
-
-      const hasTests = chapter.tests && chapter.tests.length > 0;
-      const countBadge = card.querySelector('.chapter-test-count');
-      const container = card.querySelector('.chapter-tests-grid');
-
-      if (countBadge) {
-        countBadge.textContent = chapter.tests.length === 1 ? '१ चाचणी' : `${chapter.tests.length} चाचण्या`;
-        countBadge.className = 'chapter-test-count text-[11px] px-2 py-0.5 rounded-full font-bold bg-indigo-50 dark:bg-indigo-950/70 text-indigo-700 dark:text-indigo-300 border border-indigo-200/80 dark:border-indigo-800/60 shrink-0';
-      }
-
-      if (hasTests && container) {
-        let gridHtml = '';
-        chapter.tests.forEach(test => {
-          gridHtml += generateTestCardHtml(test);
-        });
-        container.className = "chapter-tests-grid grid grid-cols-1 sm:grid-cols-2 gap-2.5 sm:gap-3";
-        container.innerHTML = gridHtml;
-      }
-    }
-
     // =======================================================================
-    // ACCORDION DROPDOWN ENGINE
+    // ACCORDION DROPDOWN ENGINE (Single open at a time, Initially all closed)
     // =======================================================================
-    let activeOpenChapterIndex = null;
+    let activeOpenChapterIndex = null; // null means all closed initially
 
     function toggleChapterDropdown(chIndex) {
       const isCurrentlyOpen = (activeOpenChapterIndex === chIndex);
 
+      // If there was an open chapter, close it first
       if (activeOpenChapterIndex !== null) {
         const prevContent = document.getElementById(`chapter-dropdown-content-${activeOpenChapterIndex}`);
         const prevIcon = document.getElementById(`chapter-dropdown-icon-${activeOpenChapterIndex}`);
@@ -1111,11 +933,13 @@
         if (prevIcon) prevIcon.classList.remove('rotate-180');
       }
 
+      // If user clicked the same open chapter, keep all closed
       if (isCurrentlyOpen) {
         activeOpenChapterIndex = null;
         return;
       }
 
+      // Open the clicked chapter
       const targetContent = document.getElementById(`chapter-dropdown-content-${chIndex}`);
       const targetIcon = document.getElementById(`chapter-dropdown-icon-${chIndex}`);
       if (targetContent) targetContent.classList.remove('hidden');
@@ -1155,13 +979,12 @@
           `;
         }
 
-        const isCurrentlyOpen = (activeOpenChapterIndex === index);
-
+        // Accordion Card Structure: Header Button (Title + Count + Arrow) + Collapsible Body (Initially Hidden)
         groupEl.innerHTML = `
           <!-- Dropdown Header Trigger -->
           <button type="button" 
                   onclick="toggleChapterDropdown(${index})"
-                  aria-expanded="${isCurrentlyOpen}"
+                  aria-expanded="false"
                   class="w-full text-left p-3.5 sm:p-4 bg-slate-50/50 hover:bg-slate-100/80 dark:bg-[#131d31] dark:hover:bg-slate-800/50 transition-colors flex items-center justify-between gap-3 focus:outline-none focus:ring-2 focus:ring-indigo-500/30">
             <div class="flex items-center gap-2.5 sm:gap-3 min-w-0">
               <span class="w-6 h-6 sm:w-7 sm:h-7 rounded-lg bg-indigo-50 dark:bg-indigo-950/80 text-indigo-600 dark:text-indigo-400 font-extrabold text-xs flex items-center justify-center shrink-0 border border-indigo-100 dark:border-indigo-900/50">
@@ -1179,7 +1002,7 @@
               }">
                 ${testCountText}
               </span>
-              <div id="chapter-dropdown-icon-${index}" class="w-6 h-6 rounded-lg flex items-center justify-center text-slate-400 dark:text-slate-500 transform transition-transform duration-200 ${isCurrentlyOpen ? 'rotate-180' : ''}">
+              <div id="chapter-dropdown-icon-${index}" class="w-6 h-6 rounded-lg flex items-center justify-center text-slate-400 dark:text-slate-500 transform transition-transform duration-200">
                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.2">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
                 </svg>
@@ -1187,8 +1010,8 @@
             </div>
           </button>
 
-          <!-- Collapsible Content -->
-          <div id="chapter-dropdown-content-${index}" class="chapter-collapse-content p-3.5 sm:p-4 pt-1 sm:pt-2 border-t border-slate-100 dark:border-slate-800/80 bg-slate-50/30 dark:bg-[#0f1728]/40 ${isCurrentlyOpen ? '' : 'hidden'}">
+          <!-- Collapsible Content (Initially Hidden) -->
+          <div id="chapter-dropdown-content-${index}" class="chapter-collapse-content p-3.5 sm:p-4 pt-1 sm:pt-2 border-t border-slate-100 dark:border-slate-800/80 bg-slate-50/30 dark:bg-[#0f1728]/40 hidden">
             ${testsHtml}
           </div>
         `;
@@ -1211,6 +1034,7 @@
         const testFileSafe = encodeURIComponent(test.file);
         const testTitleSafe = encodeURIComponent(test.title);
 
+        // LocalStorage completion lookup
         const completedRecord = userProgressHistory[test.id] || null;
         let completionBadgeHtml = '';
         let btnText = 'चाचणी सुरू करा';
@@ -1312,7 +1136,9 @@
       modal.classList.add('hidden');
     }
 
+    // =========================================================================
     // 'माझी प्रगती' (STATS MODAL, BACKUP EXPORT & IMPORT) ENGINE
+    // =========================================================================
     function openStatsModal() {
       loadUserProgress();
 
@@ -1372,6 +1198,7 @@
       modal.classList.add('hidden');
     }
 
+    // Export Progress Data to JSON File
     function exportProgressData() {
       loadUserProgress();
       if (Object.keys(userProgressHistory).length === 0) {
@@ -1391,6 +1218,7 @@
       URL.revokeObjectURL(url);
     }
 
+    // Import Progress Data from JSON File
     function importProgressData(event) {
       const file = event.target.files && event.target.files[0];
       if (!file) return;
@@ -1401,12 +1229,15 @@
           const imported = JSON.parse(e.target.result);
           if (typeof imported === 'object' && imported !== null) {
             loadUserProgress();
+            // Merge records
             userProgressHistory = { ...userProgressHistory, ...imported };
             localStorage.setItem('studySphere_history', JSON.stringify(userProgressHistory));
             updateHeaderCompletedBadge();
             openStatsModal();
             renderChapterTests(allLoadedChapters);
             renderMixedTests(allLoadedMixed);
+          } else {
+            console.error("Invalid format");
           }
         } catch (err) {
           console.error("File parse error:", err);
@@ -1428,10 +1259,12 @@
       }
     }
 
+    // Detect Private / Incognito Mode
     async function detectIncognitoMode() {
       try {
         if ('storage' in navigator && 'estimate' in navigator.storage) {
           const { quota } = await navigator.storage.estimate();
+          // In mobile private mode quota is typically restricted (< 120MB)
           if (quota && quota < 120000000) {
             document.getElementById('incognitoWarningBanner').classList.remove('hidden');
           }
@@ -1499,6 +1332,7 @@
       }
     }
 
+    // Builtin fallback structure
     function getEmergencyBuiltinData() {
       return {
         "prelims-history": {
@@ -1509,15 +1343,14 @@
           "desc": "आधुनिक भारताचा इतिहास, राष्ट्रीय चळवळ आणि महाराष्ट्राचा विशेष संदर्भ.",
           "chapters": [
             { "id": "p-hist-01", "title": "Modern Indian History — आधुनिक भारताचा इतिहास", "tests": [] },
-            { "id": "p-hist-02", "title": "British Rule in India — भारतातील ब्रिटिश सत्तेचा विस्तार व प्रशासन", "tests": [] },
-            { "id": "p-hist-03", "title": "Revolt of 1857 — १८५७ चा उठाव", "tests": [] },
-            { "id": "p-hist-04", "title": "Social and Religious Reform Movements — सामाजिक व धार्मिक सुधारणा चळवळी", "tests": [] }
+            { "id": "p-hist-02", "title": "British Rule in India — भारतातील ब्रिटिश सत्तेचा विस्तार व प्रशासन", "tests": [] }
           ],
           "mixed": []
         }
       };
     }
 
+    // Theme (Dark / Light)
     function initTheme() {
       const isDark = localStorage.getItem('studySphereTheme') === 'dark' ||
         (!('studySphereTheme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches);
@@ -1547,6 +1380,7 @@
       }
     }
 
+    // Font Sizing (S / M / L)
     const fontSizes = ['small', 'medium', 'large'];
     let currentFontIndex = 1;
     function toggleFontSize() {
