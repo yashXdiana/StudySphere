@@ -669,16 +669,23 @@
       return String(item);
     }
 
+    // Safe & robust URL parameters parsing (Prevents double-prefix like prelims-prelims-history)
     function parseURLParams() {
       const urlParams = new URLSearchParams(window.location.search);
-      const subject = urlParams.get('subject');
-      const section = urlParams.get('section');
-      const type = urlParams.get('type');
+      const subject = (urlParams.get('subject') || '').trim();
+      const section = (urlParams.get('section') || '').trim();
+      const type = (urlParams.get('type') || '').trim();
 
       if (type) {
         activeSubjectKey = type;
       } else if (subject) {
-        activeSubjectKey = (section ? section + '-' : 'prelims-') + subject;
+        if (subject.startsWith('prelims-') || subject.startsWith('mains-') || subject.startsWith('pre-') || subject.startsWith('mains-mock')) {
+          activeSubjectKey = subject;
+        } else if (section) {
+          activeSubjectKey = `${section}-${subject}`;
+        } else {
+          activeSubjectKey = `prelims-${subject}`;
+        }
       } else {
         activeSubjectKey = 'prelims-history';
       }
@@ -688,15 +695,17 @@
       loadUserProgress();
       parseURLParams();
 
-      // FAST SESSION-CACHE CHECK:
-      // If user is returning from a test, load instantly in 0ms!
+      // SESSION-CACHE CHECK: Only reuse cache IF it contains actual discovered tests!
       const cacheKey = `studySphere_catalogCache_${activeSubjectKey}`;
       const cachedDataStr = sessionStorage.getItem(cacheKey);
 
       if (cachedDataStr) {
         try {
           const cached = JSON.parse(cachedDataStr);
-          if (cached && Array.isArray(cached.chapters)) {
+          const hasDiscoveredQuizzes = (cached.chapters && cached.chapters.some(ch => ch.tests && ch.tests.length > 0)) ||
+                                      (cached.mixed && cached.mixed.length > 0);
+
+          if (cached && Array.isArray(cached.chapters) && hasDiscoveredQuizzes) {
             renderSubjectHeaderOnly(cached.meta);
             allLoadedChapters = cached.chapters;
             allLoadedMixed = cached.mixed || [];
@@ -706,20 +715,24 @@
             renderMixedTests(allLoadedMixed);
             updateTotalStats();
 
-            // Instantly hide skeleton and popup without any delay!
+            // Auto-open first chapter that contains tests for immediate visibility
+            autoOpenFirstAvailableChapter();
+
             hideSkeletonLoader(true);
             return;
+          } else {
+            // Remove empty/poisoned cache so fresh probe runs!
+            sessionStorage.removeItem(cacheKey);
           }
         } catch (e) {
           sessionStorage.removeItem(cacheKey);
         }
       }
 
-      // First-time visit in this session: Load catalog & run fast parallel probe
+      // Load master catalog.json with resilient candidate paths
       const pathsToTry = [
         'data/catalog.json',
         './data/catalog.json',
-        '/data/catalog.json',
         '../data/catalog.json',
         'catalog.json'
       ];
@@ -759,7 +772,7 @@
 
       if (!data && catalogDatabase) {
         const keys = Object.keys(catalogDatabase);
-        const match = keys.find(k => k.includes(activeSubjectKey) || activeSubjectKey.includes(k));
+        const match = keys.find(k => k === activeSubjectKey || k.includes(activeSubjectKey) || activeSubjectKey.includes(k));
         if (match) data = catalogDatabase[match];
       }
 
@@ -788,13 +801,13 @@
         document.getElementById('tabChapters').classList.remove('hidden');
       }
 
-      // Initial render - ALL chapters initially closed (null)
+      // Initial render with accordions
       activeOpenChapterIndex = null;
       renderChapterTests(allLoadedChapters);
       renderMixedTests(allLoadedMixed);
       updateTotalStats();
 
-      // Launch FAST PARALLEL PROBING (Finishes in ~300ms!)
+      // Launch parallel probing for files
       startFastAutoProbing(data);
     }
 
@@ -806,7 +819,9 @@
 
       if (probePopup) {
         probePopup.classList.add('opacity-0', 'translate-y-4', 'pointer-events-none');
-        setTimeout(() => probePopup.style.display = 'none', 300);
+        setTimeout(() => {
+          if (probePopup) probePopup.style.display = 'none';
+        }, 300);
       }
 
       if (loader) {
@@ -842,35 +857,45 @@
       document.getElementById('mixedCountBadge').textContent = `${allLoadedMixed.length} टेस्ट्स उपलब्ध`;
     }
 
-    // =======================================================================
-    // ULTRA-FAST PARALLEL PROBING & SESSION CACHING ENGINE
-    // =======================================================================
-    async function probeSingleTest(url) {
-      try {
-        const res = await fetch(url);
-        if (res.ok) {
-          const data = await res.json();
-          if (data && Array.isArray(data.questions) && data.questions.length > 0) {
-            return { path: url, data: data };
+    // Resilient single test probing with multiple relative candidate paths
+    async function probeSingleTest(relPath) {
+      const candidatePaths = [
+        relPath,
+        './' + relPath,
+        '../' + relPath
+      ];
+
+      for (const url of candidatePaths) {
+        try {
+          const res = await fetch(url);
+          if (res.ok) {
+            const data = await res.json();
+            if (data && Array.isArray(data.questions) && data.questions.length > 0) {
+              return { path: url, data: data };
+            }
           }
-        }
-      } catch (e) {}
+        } catch (e) {}
+      }
       return null;
     }
 
     async function startFastAutoProbing(subjectMeta) {
       const statusText = document.getElementById('probeLoadingStatusText');
-      if (statusText) statusText.textContent = 'चाचण्या शोधल्या जात आहेत...';
+      if (statusText) statusText.textContent = 'सर्व चाचण्या शोधल्या जात आहेत...';
 
-      // Safety timeout: Never let loader get stuck for more than 2 seconds!
+      // Safety timeout: Ensure page always displays within 2.5 seconds max
       const safetyTimer = setTimeout(() => {
+        renderChapterTests(allLoadedChapters);
+        renderMixedTests(allLoadedMixed);
+        updateTotalStats();
+        autoOpenFirstAvailableChapter();
         hideSkeletonLoader();
-      }, 2000);
+      }, 2500);
 
       try {
-        // PARALLEL PROBING FOR ALL CHAPTERS SIMULTANEOUSLY!
+        // PARALLEL PROBING FOR ALL CHAPTERS
         const chapterProbePromises = allLoadedChapters.map(async (chapter, chIndex) => {
-          // If tests are already configured in catalog, skip probing
+          // If tests are already pre-loaded, keep them
           if (chapter.tests && chapter.tests.length > 0) return;
 
           let testNum = 1;
@@ -887,20 +912,23 @@
               const rawTitle = resolveText(tData.title, 'mr');
               const cleanTitle = rawTitle || `${chapter.title.split('—').pop().trim()} सराव ${testNum}`;
 
-              chapter.tests.push({
-                id: tData.testId || `${chapter.id}-t${testNum}`,
-                title: cleanTitle,
-                questions: qCount,
-                time: duration,
-                marks: totalMarks,
-                difficulty: tData.difficulty || 'सराव',
-                file: result.path
-              });
+              // Prevent duplicates
+              const alreadyExists = chapter.tests.some(t => t.file === result.path || t.id === (tData.testId || `${chapter.id}-t${testNum}`));
+              if (!alreadyExists) {
+                chapter.tests.push({
+                  id: tData.testId || `${chapter.id}-t${testNum}`,
+                  title: cleanTitle,
+                  questions: qCount,
+                  time: duration,
+                  marks: totalMarks,
+                  difficulty: tData.difficulty || 'सराव',
+                  file: result.path
+                });
+              }
 
               updateChapterCardUI(chIndex, chapter);
               testNum++;
             } else {
-              // If test-1 does not exist, break immediately! Do not waste time!
               break;
             }
           }
@@ -922,15 +950,18 @@
               const rawTitle = resolveText(mData.title, 'mr');
               const cleanTitle = rawTitle || `संयुक्त सराव टेस्ट ${mixNum}`;
 
-              allLoadedMixed.push({
-                id: mData.testId || `mix-t${mixNum}`,
-                title: cleanTitle,
-                questions: qCount,
-                time: duration,
-                marks: totalMarks,
-                difficulty: mData.difficulty || 'परीक्षाभिमुख',
-                file: result.path
-              });
+              const alreadyExists = allLoadedMixed.some(t => t.file === result.path || t.id === (mData.testId || `mix-t${mixNum}`));
+              if (!alreadyExists) {
+                allLoadedMixed.push({
+                  id: mData.testId || `mix-t${mixNum}`,
+                  title: cleanTitle,
+                  questions: qCount,
+                  time: duration,
+                  marks: totalMarks,
+                  difficulty: mData.difficulty || 'परीक्षाभिमुख',
+                  file: result.path
+                });
+              }
               mixNum++;
             } else {
               break;
@@ -938,33 +969,51 @@
           }
         })();
 
-        // Wait for all parallel checks to settle (completes in ~200-300ms)
+        // Settle all parallel probes
         await Promise.all([...chapterProbePromises, mixedProbePromise]);
 
-        // SAVE PROBED DATA TO SESSION CACHE:
-        // So returning from a test takes exactly 0 milliseconds!
-        try {
-          const cachePackage = {
-            meta: subjectMeta || {
-              section: document.getElementById('breadcrumbSection').textContent,
-              nameMr: document.getElementById('breadcrumbSubject').textContent,
-              nameEn: document.getElementById('subjectHeroTitle').textContent,
-              desc: document.getElementById('subjectHeroDesc').textContent,
-              badge: document.getElementById('heroBadge').textContent
-            },
-            chapters: allLoadedChapters,
-            mixed: allLoadedMixed
-          };
-          sessionStorage.setItem(`studySphere_catalogCache_${activeSubjectKey}`, JSON.stringify(cachePackage));
-        } catch (e) {}
-
+        // CRITICAL: Fully re-render chapters and mixed tests after probe completes!
+        renderChapterTests(allLoadedChapters);
         renderMixedTests(allLoadedMixed);
         updateTotalStats();
+
+        // Auto-open the first chapter that has tests so user immediately sees the test card
+        autoOpenFirstAvailableChapter();
+
+        // Save to session cache ONLY if tests were genuinely discovered
+        const hasFoundTests = allLoadedChapters.some(c => c.tests && c.tests.length > 0) || allLoadedMixed.length > 0;
+        if (hasFoundTests) {
+          try {
+            const cachePackage = {
+              meta: subjectMeta || {
+                section: document.getElementById('breadcrumbSection').textContent,
+                nameMr: document.getElementById('breadcrumbSubject').textContent,
+                nameEn: document.getElementById('subjectHeroTitle').textContent,
+                desc: document.getElementById('subjectHeroDesc').textContent,
+                badge: document.getElementById('heroBadge').textContent
+              },
+              chapters: allLoadedChapters,
+              mixed: allLoadedMixed
+            };
+            sessionStorage.setItem(`studySphere_catalogCache_${activeSubjectKey}`, JSON.stringify(cachePackage));
+          } catch (e) {}
+        } else {
+          sessionStorage.removeItem(`studySphere_catalogCache_${activeSubjectKey}`);
+        }
+
       } catch (err) {
-        console.error("Fast probing error:", err);
+        console.error("Probing error:", err);
       } finally {
         clearTimeout(safetyTimer);
         hideSkeletonLoader();
+      }
+    }
+
+    function autoOpenFirstAvailableChapter() {
+      if (activeOpenChapterIndex !== null) return;
+      const firstIndex = allLoadedChapters.findIndex(ch => ch.tests && ch.tests.length > 0);
+      if (firstIndex !== -1) {
+        toggleChapterDropdown(firstIndex);
       }
     }
 
@@ -1004,9 +1053,6 @@
         `;
       }
 
-      // Responsive Non-Overlapping Layout:
-      // Mobile: Flex Column (Text on top, Buttons below)
-      // Desktop: Flex Row (Text on left, Buttons on right)
       return `
         <div class="test-item group p-3 sm:p-3.5 rounded-xl border ${completedRecord ? 'border-emerald-200 dark:border-emerald-900/60 bg-emerald-50/20 dark:bg-emerald-950/10' : 'border-slate-200 dark:border-slate-800 bg-white dark:bg-[#11192a]'} hover:shadow-sm transition-all flex flex-col sm:flex-row sm:items-center justify-between gap-2.5 sm:gap-3">
           <div class="min-w-0 flex-1">
@@ -1057,14 +1103,13 @@
     }
 
     // =======================================================================
-    // ACCORDION DROPDOWN ENGINE (Single open at a time, Initially all closed)
+    // ACCORDION DROPDOWN ENGINE
     // =======================================================================
-    let activeOpenChapterIndex = null; // null means all closed initially
+    let activeOpenChapterIndex = null;
 
     function toggleChapterDropdown(chIndex) {
       const isCurrentlyOpen = (activeOpenChapterIndex === chIndex);
 
-      // If there was an open chapter, close it first
       if (activeOpenChapterIndex !== null) {
         const prevContent = document.getElementById(`chapter-dropdown-content-${activeOpenChapterIndex}`);
         const prevIcon = document.getElementById(`chapter-dropdown-icon-${activeOpenChapterIndex}`);
@@ -1072,13 +1117,11 @@
         if (prevIcon) prevIcon.classList.remove('rotate-180');
       }
 
-      // If user clicked the same open chapter, keep all closed
       if (isCurrentlyOpen) {
         activeOpenChapterIndex = null;
         return;
       }
 
-      // Open the clicked chapter
       const targetContent = document.getElementById(`chapter-dropdown-content-${chIndex}`);
       const targetIcon = document.getElementById(`chapter-dropdown-icon-${chIndex}`);
       if (targetContent) targetContent.classList.remove('hidden');
@@ -1118,12 +1161,13 @@
           `;
         }
 
-        // Accordion Card Structure: Header Button (Title + Count + Arrow) + Collapsible Body (Initially Hidden)
+        const isCurrentlyOpen = (activeOpenChapterIndex === index);
+
         groupEl.innerHTML = `
           <!-- Dropdown Header Trigger -->
           <button type="button" 
                   onclick="toggleChapterDropdown(${index})"
-                  aria-expanded="false"
+                  aria-expanded="${isCurrentlyOpen}"
                   class="w-full text-left p-3.5 sm:p-4 bg-slate-50/50 hover:bg-slate-100/80 dark:bg-[#131d31] dark:hover:bg-slate-800/50 transition-colors flex items-center justify-between gap-3 focus:outline-none focus:ring-2 focus:ring-indigo-500/30">
             <div class="flex items-center gap-2.5 sm:gap-3 min-w-0">
               <span class="w-6 h-6 sm:w-7 sm:h-7 rounded-lg bg-indigo-50 dark:bg-indigo-950/80 text-indigo-600 dark:text-indigo-400 font-extrabold text-xs flex items-center justify-center shrink-0 border border-indigo-100 dark:border-indigo-900/50">
@@ -1141,7 +1185,7 @@
               }">
                 ${testCountText}
               </span>
-              <div id="chapter-dropdown-icon-${index}" class="w-6 h-6 rounded-lg flex items-center justify-center text-slate-400 dark:text-slate-500 transform transition-transform duration-200">
+              <div id="chapter-dropdown-icon-${index}" class="w-6 h-6 rounded-lg flex items-center justify-center text-slate-400 dark:text-slate-500 transform transition-transform duration-200 ${isCurrentlyOpen ? 'rotate-180' : ''}">
                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.2">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
                 </svg>
@@ -1149,8 +1193,8 @@
             </div>
           </button>
 
-          <!-- Collapsible Content (Initially Hidden) -->
-          <div id="chapter-dropdown-content-${index}" class="chapter-collapse-content p-3.5 sm:p-4 pt-1 sm:pt-2 border-t border-slate-100 dark:border-slate-800/80 bg-slate-50/30 dark:bg-[#0f1728]/40 hidden">
+          <!-- Collapsible Content -->
+          <div id="chapter-dropdown-content-${index}" class="chapter-collapse-content p-3.5 sm:p-4 pt-1 sm:pt-2 border-t border-slate-100 dark:border-slate-800/80 bg-slate-50/30 dark:bg-[#0f1728]/40 ${isCurrentlyOpen ? '' : 'hidden'}">
             ${testsHtml}
           </div>
         `;
@@ -1173,7 +1217,6 @@
         const testFileSafe = encodeURIComponent(test.file);
         const testTitleSafe = encodeURIComponent(test.title);
 
-        // LocalStorage completion lookup
         const completedRecord = userProgressHistory[test.id] || null;
         let completionBadgeHtml = '';
         let btnText = 'चाचणी सुरू करा';
@@ -1262,7 +1305,6 @@
       document.getElementById('modalTestTime').textContent = `${time} मिनिटे`;
       document.getElementById('modalTestMarks').textContent = `${marks} गुण`;
 
-      // Reset to default exam mode
       selectTestExecutionMode('exam');
 
       const modal = document.getElementById('testInfoModal');
@@ -1276,9 +1318,7 @@
       modal.classList.add('hidden');
     }
 
-    // =========================================================================
     // 'माझी प्रगती' (STATS MODAL, BACKUP EXPORT & IMPORT) ENGINE
-    // =========================================================================
     function openStatsModal() {
       loadUserProgress();
 
@@ -1338,7 +1378,6 @@
       modal.classList.add('hidden');
     }
 
-    // Export Progress Data to JSON File
     function exportProgressData() {
       loadUserProgress();
       if (Object.keys(userProgressHistory).length === 0) {
@@ -1358,7 +1397,6 @@
       URL.revokeObjectURL(url);
     }
 
-    // Import Progress Data from JSON File
     function importProgressData(event) {
       const file = event.target.files && event.target.files[0];
       if (!file) return;
@@ -1369,15 +1407,12 @@
           const imported = JSON.parse(e.target.result);
           if (typeof imported === 'object' && imported !== null) {
             loadUserProgress();
-            // Merge records
             userProgressHistory = { ...userProgressHistory, ...imported };
             localStorage.setItem('studySphere_history', JSON.stringify(userProgressHistory));
             updateHeaderCompletedBadge();
             openStatsModal();
             renderChapterTests(allLoadedChapters);
             renderMixedTests(allLoadedMixed);
-          } else {
-            console.error("Invalid format");
           }
         } catch (err) {
           console.error("File parse error:", err);
@@ -1399,12 +1434,10 @@
       }
     }
 
-    // Detect Private / Incognito Mode
     async function detectIncognitoMode() {
       try {
         if ('storage' in navigator && 'estimate' in navigator.storage) {
           const { quota } = await navigator.storage.estimate();
-          // In mobile private mode quota is typically restricted (< 120MB)
           if (quota && quota < 120000000) {
             document.getElementById('incognitoWarningBanner').classList.remove('hidden');
           }
@@ -1472,7 +1505,6 @@
       }
     }
 
-    // Builtin fallback structure (No fake tests)
     function getEmergencyBuiltinData() {
       return {
         "prelims-history": {
@@ -1483,14 +1515,15 @@
           "desc": "आधुनिक भारताचा इतिहास, राष्ट्रीय चळवळ आणि महाराष्ट्राचा विशेष संदर्भ.",
           "chapters": [
             { "id": "p-hist-01", "title": "Modern Indian History — आधुनिक भारताचा इतिहास", "tests": [] },
-            { "id": "p-hist-02", "title": "British Rule in India — भारतातील ब्रिटिश सत्तेचा विस्तार व प्रशासन", "tests": [] }
+            { "id": "p-hist-02", "title": "British Rule in India — भारतातील ब्रिटिश सत्तेचा विस्तार व प्रशासन", "tests": [] },
+            { "id": "p-hist-03", "title": "Revolt of 1857 — १८५७ चा उठाव", "tests": [] },
+            { "id": "p-hist-04", "title": "Social and Religious Reform Movements — सामाजिक व धार्मिक सुधारणा चळवळी", "tests": [] }
           ],
           "mixed": []
         }
       };
     }
 
-    // Theme (Dark / Light)
     function initTheme() {
       const isDark = localStorage.getItem('studySphereTheme') === 'dark' ||
         (!('studySphereTheme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches);
@@ -1520,7 +1553,6 @@
       }
     }
 
-    // Font Sizing (S / M / L)
     const fontSizes = ['small', 'medium', 'large'];
     let currentFontIndex = 1;
     function toggleFontSize() {
