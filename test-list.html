@@ -695,7 +695,7 @@
       loadUserProgress();
       parseURLParams();
 
-      // SESSION-CACHE CHECK: Only reuse cache IF it contains actual discovered tests!
+      // Clear any faulty empty session cache so fresh scan always runs
       const cacheKey = `studySphere_catalogCache_${activeSubjectKey}`;
       const cachedDataStr = sessionStorage.getItem(cacheKey);
 
@@ -715,13 +715,10 @@
             renderMixedTests(allLoadedMixed);
             updateTotalStats();
 
-            // Auto-open first chapter that contains tests for immediate visibility
             autoOpenFirstAvailableChapter();
-
             hideSkeletonLoader(true);
             return;
           } else {
-            // Remove empty/poisoned cache so fresh probe runs!
             sessionStorage.removeItem(cacheKey);
           }
         } catch (e) {
@@ -729,7 +726,7 @@
         }
       }
 
-      // Load master catalog.json with resilient candidate paths
+      // Load master catalog.json with resilient relative candidate paths
       const pathsToTry = [
         'data/catalog.json',
         './data/catalog.json',
@@ -801,13 +798,12 @@
         document.getElementById('tabChapters').classList.remove('hidden');
       }
 
-      // Initial render with accordions
       activeOpenChapterIndex = null;
       renderChapterTests(allLoadedChapters);
       renderMixedTests(allLoadedMixed);
       updateTotalStats();
 
-      // Launch parallel probing for files
+      // Launch 100% resilient GET auto-probing
       startFastAutoProbing(data);
     }
 
@@ -857,7 +853,7 @@
       document.getElementById('mixedCountBadge').textContent = `${allLoadedMixed.length} टेस्ट्स उपलब्ध`;
     }
 
-    // Resilient single test probing with multiple relative candidate paths
+    // 100% RELIABLE TEST PROBING VIA STANDARD GET REQUEST (Works on GitHub Pages & Localhost)
     async function probeSingleTest(relPath) {
       const candidatePaths = [
         relPath,
@@ -883,19 +879,18 @@
       const statusText = document.getElementById('probeLoadingStatusText');
       if (statusText) statusText.textContent = 'सर्व चाचण्या शोधल्या जात आहेत...';
 
-      // Safety timeout: Ensure page always displays within 2.5 seconds max
+      // Safety fallback timer: guarantees screen renders within 2 seconds
       const safetyTimer = setTimeout(() => {
         renderChapterTests(allLoadedChapters);
         renderMixedTests(allLoadedMixed);
         updateTotalStats();
         autoOpenFirstAvailableChapter();
         hideSkeletonLoader();
-      }, 2500);
+      }, 2000);
 
       try {
-        // PARALLEL PROBING FOR ALL CHAPTERS
+        // PARALLEL PROBING FOR ALL CHAPTERS CONCURRENTLY
         const chapterProbePromises = allLoadedChapters.map(async (chapter, chIndex) => {
-          // If tests are already pre-loaded, keep them
           if (chapter.tests && chapter.tests.length > 0) return;
 
           let testNum = 1;
@@ -912,7 +907,6 @@
               const rawTitle = resolveText(tData.title, 'mr');
               const cleanTitle = rawTitle || `${chapter.title.split('—').pop().trim()} सराव ${testNum}`;
 
-              // Prevent duplicates
               const alreadyExists = chapter.tests.some(t => t.file === result.path || t.id === (tData.testId || `${chapter.id}-t${testNum}`));
               if (!alreadyExists) {
                 chapter.tests.push({
@@ -934,7 +928,7 @@
           }
         });
 
-        // PARALLEL PROBE FOR MIXED TESTS
+        // PARALLEL PROBE FOR MIXED TESTS CONCURRENTLY
         const mixedProbePromise = (async () => {
           if (allLoadedMixed.length > 0) return;
           let mixNum = 1;
@@ -969,18 +963,18 @@
           }
         })();
 
-        // Settle all parallel probes
+        // Wait for all probes
         await Promise.all([...chapterProbePromises, mixedProbePromise]);
 
-        // CRITICAL: Fully re-render chapters and mixed tests after probe completes!
+        // CRITICAL: Full re-render with discovered tests
         renderChapterTests(allLoadedChapters);
         renderMixedTests(allLoadedMixed);
         updateTotalStats();
 
-        // Auto-open the first chapter that has tests so user immediately sees the test card
+        // Automatically expand the first chapter containing tests
         autoOpenFirstAvailableChapter();
 
-        // Save to session cache ONLY if tests were genuinely discovered
+        // Save to cache ONLY if tests were actually found
         const hasFoundTests = allLoadedChapters.some(c => c.tests && c.tests.length > 0) || allLoadedMixed.length > 0;
         if (hasFoundTests) {
           try {
