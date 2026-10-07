@@ -4,13 +4,32 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>StudySphere | MPSC Group C 2026 Mock Test & Quiz Portal</title>
-  <meta name="description" content="MPSC Group C 2026 पूर्व व मुख्य परीक्षेसाठी मोफत व दर्जेदार सराव चाचण्या आणि मॉक टेस्ट.">
+  <meta name="description" content="MPSC Group C 2026 संयुक्त पूर्व व मुख्य परीक्षेसाठी १००% मोफत व दर्जेदार सराव चाचण्या, मॉक टेस्ट्स, विषयनिहाय विश्लेषण आणि अभ्यास प्रगती डॅशबोर्ड.">
+  <meta name="keywords" content="MPSC Group C 2026, MPSC Mock Test, MPSC Prelims Quiz, MPSC Mains Test, MPSC मोफत सराव चाचणी, StudySphere, Maharashtra Competitive Exam">
+  <meta name="author" content="StudySphere">
+
+  <!-- Open Graph / WhatsApp / Telegram Preview Meta Tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://studysphere.in/">
+  <meta property="og:title" content="StudySphere | MPSC Group C 2026 मोफत सराव टेस्ट पोर्टल">
+  <meta property="og:description" content="MPSC गट-क २०२६ ची परिपूर्ण तयारी: सर्व विषयनिहाय चाचण्या, १/४ निगेटिव्ह मार्किंग, सविस्तर स्पष्टीकरण आणि प्रगती विश्लेषण.">
+  <meta property="og:image" content="https://placehold.co/1200x630/4f46e5/ffffff?text=StudySphere+MPSC+Group+C+2026+Mock+Tests">
+
+  <!-- Twitter / X Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="StudySphere | MPSC Group C 2026 Mock Test Portal">
+  <meta name="twitter:description" content="MPSC गट-क २०२६ पूर्व व मुख्य परीक्षेसाठी मोफत दर्जेदार सराव चाचण्या आणि मॉक टेस्ट्स.">
+  <meta name="twitter:image" content="https://placehold.co/1200x630/4f46e5/ffffff?text=StudySphere+MPSC+Group+C+2026">
   
   <!-- Google Fonts & Tailwind CSS CDN -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;500;600;700;800&family=Noto+Sans+Devanagari:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- PWA Manifest Link -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#4f46e5">
 
   <script>
     tailwind.config = {
@@ -95,10 +114,10 @@
   <!-- HEADER (Zero Mobile Overflow) -->
   <!-- ========================================== -->
   <header class="sticky top-0 z-40 bg-white/95 dark:bg-[#0e1626]/95 backdrop-blur border-b border-slate-200 dark:border-slate-800 shadow-sm transition-colors duration-200">
-    <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 h-14 sm:h-16 flex items-center justify-between gap-1.5 sm:gap-2">
+    <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 h-14 sm:h-16 flex items-center justify-between gap-2">
       
       <!-- Logo & Brand Name -->
-      <a href="index.html" class="flex items-center gap-2 sm:gap-2.5 group focus:outline-none rounded-lg p-0.5 shrink-0 min-w-0">
+      <a href="index.html" class="flex items-center gap-2 group focus:outline-none rounded-lg p-0.5 shrink-0 min-w-0">
         <div class="w-8 h-8 sm:w-10 sm:h-10 rounded-xl bg-gradient-to-tr from-indigo-600 via-indigo-500 to-amber-400 p-[1.5px] shadow-md shadow-indigo-500/20 group-hover:scale-105 transition-transform duration-200 shrink-0">
           <div class="w-full h-full bg-white dark:bg-slate-900 rounded-[10px] flex items-center justify-center">
             <svg class="w-5 h-5 sm:w-6 sm:h-6 text-indigo-600 dark:text-indigo-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -122,38 +141,41 @@
         <button onclick="openModal('contactModal')" class="px-3 py-1.5 rounded-lg hover:text-indigo-600 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">Contact</button>
       </nav>
 
-      <!-- Right Action Controls (Clean, Compact, No Overflow) -->
-      <div class="flex items-center gap-1.5 sm:gap-2 shrink-0">
-        
-        <!-- Telegram Button (Desktop/Tablet Only) -->
+      <!-- Right Action Controls -->
+      <div class="flex items-center gap-1 sm:gap-2 shrink-0">
+
+        <!-- DESKTOP-ONLY EXTRA BUTTONS (Hidden on mobile) -->
+        <button id="pwaInstallBtn" onclick="triggerPwaInstall()" title="StudySphere ॲप फोनमध्ये इन्स्टॉल करा"
+                class="hidden lg:inline-flex px-2 py-1 rounded-lg bg-indigo-50 hover:bg-indigo-100 dark:bg-indigo-950/70 text-indigo-700 dark:text-indigo-300 border border-indigo-200 dark:border-indigo-800 text-xs font-bold items-center gap-1 transition-all">
+          <span>📲</span>
+          <span>Install</span>
+        </button>
+
         <a href="https://t.me/MPSCstudysphere" target="_blank" rel="noopener noreferrer" 
-           class="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-sky-50 dark:bg-sky-950/60 text-sky-600 dark:text-sky-300 hover:bg-sky-100 dark:hover:bg-sky-900 border border-sky-200 dark:border-sky-800 text-xs font-semibold shadow-sm transition-all duration-150">
+           class="hidden lg:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-sky-50 dark:bg-sky-950/60 text-sky-600 dark:text-sky-300 hover:bg-sky-100 dark:hover:bg-sky-900 border border-sky-200 dark:border-sky-800 text-xs font-semibold shadow-sm transition-all duration-150">
           <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
             <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.121l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.535-.197 1.006.128.832.946z"/>
           </svg>
           <span>Telegram</span>
         </a>
 
-        <!-- Donate Us Button (Desktop/Tablet Header - On Mobile it is inside Drawer) -->
         <button onclick="handleDonateClick()" 
-                class="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white text-xs font-bold shadow-sm shadow-amber-500/25 active:scale-95 transition-all duration-150">
+                class="hidden md:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white text-xs font-bold shadow-sm shadow-amber-500/25 active:scale-95 transition-all duration-150">
           <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
             <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
           </svg>
           <span>Donate</span>
         </button>
 
-        <!-- Font Size Adjuster Button -->
-        <button id="fontSizeBtn" onclick="toggleFontSize()" title="मजकुराचा आकार बदला (Small, Medium, Large)"
-                class="px-2 py-1 sm:px-2.5 sm:py-1.5 rounded-lg bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 border border-slate-200 dark:border-slate-700 text-xs font-bold flex items-center gap-0.5 sm:gap-1 transition-all">
-          <span class="tracking-tighter text-[11px] sm:text-xs">A<span class="text-[9px]">A</span></span>
-          <span id="fontBadge" class="text-[8px] sm:text-[9px] uppercase px-1 py-0.2 rounded bg-indigo-100 dark:bg-indigo-900/60 text-indigo-700 dark:text-indigo-300 font-extrabold">M</span>
+        <button id="fontSizeBtn" onclick="toggleFontSize()" title="मजकुराचा आकार बदला"
+                class="hidden md:inline-flex px-2 py-1.5 rounded-lg bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 border border-slate-200 dark:border-slate-700 text-xs font-bold items-center gap-0.5 transition-all">
+          <span class="tracking-tighter text-xs">A<span class="text-[9px]">A</span></span>
+          <span id="fontBadge" class="text-[9px] uppercase px-1 py-0.2 rounded bg-indigo-100 dark:bg-indigo-900/60 text-indigo-700 dark:text-indigo-300 font-extrabold">M</span>
         </button>
 
-        <!-- Dark / Light Theme Toggle -->
-        <button id="themeToggleBtn" onclick="toggleDarkMode()" title="थीम बदला (Dark/Light Mode)"
-                class="p-1.5 sm:p-2 rounded-lg bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 border border-slate-200 dark:border-slate-700 transition-all">
-          <svg id="sunIcon" class="w-3.5 h-3.5 sm:w-4 sm:h-4 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <button id="themeToggleBtn" onclick="toggleDarkMode()" title="थीम बदला"
+                class="hidden md:inline-flex p-2 rounded-xl bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 border border-slate-200 dark:border-slate-700 transition-all shrink-0">
+          <svg id="sunIcon" class="w-4 h-4 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
             <circle cx="12" cy="12" r="5"></circle>
             <line x1="12" y1="1" x2="12" y2="3"></line>
             <line x1="12" y1="21" x2="12" y2="23"></line>
@@ -164,88 +186,196 @@
             <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
             <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
           </svg>
-          <svg id="moonIcon" class="w-3.5 h-3.5 sm:w-4 sm:h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <svg id="moonIcon" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
             <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
           </svg>
         </button>
 
-        <!-- Mobile Menu Hamburger Button -->
-        <button onclick="toggleMobileDrawer(true)" class="md:hidden p-1.5 sm:p-2 rounded-lg bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 border border-slate-200 dark:border-slate-700 focus:outline-none" aria-label="Open Navigation Menu">
-          <svg class="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+        <!-- ======================================================== -->
+        <!-- MOBILE-VISIBLE HEADER CONTROLS (EXACTLY 3 CLEAN BUTTONS) -->
+        <!-- 1. STREAK  |  2. PROGRESS  |  3. HAMBURGER MENU          -->
+        <!-- ======================================================== -->
+
+        <!-- 1. DAILY STREAK BUTTON (Visible on Mobile & Desktop) -->
+        <a href="progress.html" title="दैनिक सराव स्ट्रीक पहा"
+           class="px-2 py-1 rounded-lg bg-amber-500/10 hover:bg-amber-500/20 text-amber-600 dark:text-amber-400 border border-amber-300 dark:border-amber-800/60 text-xs font-extrabold flex items-center gap-1 transition-all shrink-0">
+          <span>🔥</span>
+          <span id="homeStreakCount">१</span>
+        </a>
+
+        <!-- 2. PROGRESS BUTTON (Visible on Mobile & Desktop) -->
+        <a href="progress.html" title="माझी प्रगती व सोडवलेल्या चाचण्यांचा डॅशबोर्ड पहा"
+           class="px-2 sm:px-2.5 py-1 sm:py-1.5 rounded-lg bg-emerald-50 dark:bg-emerald-950/60 hover:bg-emerald-100 dark:hover:bg-emerald-900/60 text-emerald-700 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800 text-xs font-bold flex items-center gap-1 shadow-xs active:scale-95 transition-all shrink-0">
+          <svg class="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+          </svg>
+          <span class="text-xs">प्रगती</span>
+          <span id="homeSolvedCountBadge" class="hidden text-[10px] px-1.5 py-0.2 rounded-full bg-emerald-600 text-white font-extrabold">0</span>
+        </a>
+
+        <!-- 3. MOBILE MENU HAMBURGER BUTTON (Mobile only) -->
+        <button onclick="toggleMobileDrawer(true)" class="md:hidden p-1.5 rounded-xl bg-indigo-50 hover:bg-indigo-100 dark:bg-indigo-950/70 text-indigo-600 dark:text-indigo-400 border border-indigo-200 dark:border-indigo-800 focus:outline-none shrink-0" aria-label="Open Navigation Menu">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
             <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7"></path>
           </svg>
         </button>
+
       </div>
 
     </div>
   </header>
 
-  <!-- ========================================== -->
-  <!-- MOBILE DRAWER (Zero-Scroll on All Mobiles) -->
-  <!-- ========================================== -->
-  <div id="drawerBackdrop" onclick="toggleMobileDrawer(false)" class="fixed inset-0 bg-black/50 z-50 backdrop-blur-sm hidden transition-opacity duration-300"></div>
+  <!-- ========================================================================= -->
+  <!-- MOBILE DRAWER (PUSHED BUTTONS INSIDE + ZERO-SCROLL DIRECT DONATE BUTTON)  -->
+  <!-- ========================================================================= -->
+  <div id="drawerBackdrop" onclick="toggleMobileDrawer(false)" class="fixed inset-0 bg-black/60 z-50 backdrop-blur-sm hidden transition-opacity duration-300"></div>
   
-  <div id="mobileDrawer" class="fixed top-0 right-0 h-[100dvh] max-h-[100dvh] w-[75%] sm:w-[300px] max-w-[320px] bg-white dark:bg-[#0f172a] shadow-2xl z-50 transform translate-x-full transition-transform duration-300 ease-in-out flex flex-col justify-between border-l border-slate-200 dark:border-slate-800 overflow-hidden">
+  <div id="mobileDrawer" class="fixed top-0 right-0 h-[100dvh] max-h-[100dvh] w-[85%] max-w-[310px] bg-white dark:bg-[#0f172a] shadow-2xl z-50 transform translate-x-full transition-transform duration-300 ease-in-out flex flex-col justify-between border-l border-slate-200 dark:border-slate-800 overflow-hidden">
     
-    <!-- Drawer Top Content -->
-    <div class="p-4 sm:p-5 flex flex-col">
-      <div class="flex items-center justify-between pb-3 border-b border-slate-100 dark:border-slate-800">
+    <!-- Drawer Top Content: Compact & Clean Layout -->
+    <div class="p-3.5 flex flex-col min-h-0 flex-1 overflow-y-auto">
+      
+      <!-- Drawer Header -->
+      <div class="flex items-center justify-between pb-2 border-b border-slate-100 dark:border-slate-800 shrink-0">
         <div class="flex items-center gap-2">
-          <div class="w-6 h-6 rounded-lg bg-indigo-600 text-white font-bold text-xs flex items-center justify-center">SS</div>
+          <div class="w-7 h-7 rounded-lg bg-indigo-600 text-white font-bold text-xs flex items-center justify-center">SS</div>
           <span class="font-bold text-sm text-slate-900 dark:text-white">StudySphere Menu</span>
         </div>
-        <button onclick="toggleMobileDrawer(false)" class="p-1.5 rounded-lg text-slate-400 hover:text-slate-600 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800">
-          <svg class="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+        <button onclick="toggleMobileDrawer(false)" class="p-1 rounded-lg text-slate-400 hover:text-slate-600 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
             <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
           </svg>
         </button>
       </div>
 
-      <!-- Drawer Nav Links (Compact, Fits Cleanly) -->
-      <nav class="mt-3 flex flex-col gap-1 text-xs sm:text-sm font-semibold text-slate-700 dark:text-slate-200">
-        <a href="index.html" onclick="toggleMobileDrawer(false)" class="flex items-center gap-2.5 px-3 py-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800">
-          <svg class="w-4 h-4 text-indigo-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+      <!-- Quick Toggles Inside Menu: Theme Switcher & Font Size (Pushed inside menu!) -->
+      <div class="grid grid-cols-2 gap-2 mt-2.5 shrink-0">
+        <!-- Theme Toggle inside Drawer -->
+        <button onclick="toggleDarkMode()" 
+                class="p-2 rounded-xl bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 flex items-center justify-center gap-1.5 text-xs font-bold text-slate-700 dark:text-slate-300">
+          <span id="drawerThemeIcon">🌓</span>
+          <span>थीम बदला</span>
+        </button>
+
+        <!-- Font Toggle inside Drawer -->
+        <button onclick="toggleFontSize()" 
+                class="p-2 rounded-xl bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 flex items-center justify-center gap-1.5 text-xs font-bold text-slate-700 dark:text-slate-300">
+          <span>फॉन्ट:</span>
+          <span id="drawerFontBadge" class="uppercase font-extrabold text-indigo-600 dark:text-indigo-400">M</span>
+        </button>
+      </div>
+
+      <!-- Compact Drawer Navigation Links -->
+      <nav class="mt-2.5 flex flex-col gap-1 text-xs font-semibold text-slate-700 dark:text-slate-200 shrink-0">
+        
+        <a href="index.html" onclick="toggleMobileDrawer(false)" class="flex items-center gap-2.5 px-3 py-2 rounded-xl bg-indigo-50/60 dark:bg-indigo-950/40 text-indigo-700 dark:text-indigo-300 font-bold">
+          <svg class="w-4 h-4 text-indigo-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
           <span>Home (मुख्यपृष्ठ)</span>
         </a>
-        <button onclick="toggleMobileDrawer(false); openModal('aboutModal');" class="flex items-center gap-2.5 px-3 py-2 rounded-lg text-left hover:bg-slate-100 dark:hover:bg-slate-800">
+
+        <a href="progress.html" onclick="toggleMobileDrawer(false)" class="flex items-center justify-between px-3 py-2 rounded-xl hover:bg-emerald-50 dark:hover:bg-emerald-950/40 text-emerald-700 dark:text-emerald-300 font-bold">
+          <div class="flex items-center gap-2.5">
+            <svg class="w-4 h-4 text-emerald-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+            <span>माझी प्रगती (My Stats)</span>
+          </div>
+          <span id="drawerSolvedCountBadge" class="text-[10px] px-1.5 py-0.2 rounded-full bg-emerald-600 text-white font-extrabold">0</span>
+        </a>
+
+        <!-- Install PWA App Button Inside Drawer -->
+        <button id="drawerPwaInstallBtn" onclick="toggleMobileDrawer(false); triggerPwaInstall();" class="flex items-center gap-2.5 px-3 py-2 rounded-xl bg-indigo-50 dark:bg-indigo-950/60 text-indigo-700 dark:text-indigo-300 font-bold text-left">
+          <span class="text-base">📲</span>
+          <span>ॲप इन्स्टॉल करा (Install App)</span>
+        </button>
+
+        <a href="https://t.me/MPSCstudysphere" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2.5 px-3 py-2 rounded-xl hover:bg-sky-50 dark:hover:bg-sky-950/40 text-sky-600 dark:text-sky-400">
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.121l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.535-.197 1.006.128.832.946z"/></svg>
+          <span>Telegram Community</span>
+        </a>
+
+        <button onclick="toggleMobileDrawer(false); openModal('aboutModal');" class="flex items-center gap-2.5 px-3 py-2 rounded-xl text-left hover:bg-slate-100 dark:hover:bg-slate-800">
           <svg class="w-4 h-4 text-emerald-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
           <span>About (माहिती)</span>
         </button>
-        <button onclick="toggleMobileDrawer(false); openModal('contactModal');" class="flex items-center gap-2.5 px-3 py-2 rounded-lg text-left hover:bg-slate-100 dark:hover:bg-slate-800">
+
+        <button onclick="toggleMobileDrawer(false); openModal('contactModal');" class="flex items-center gap-2.5 px-3 py-2 rounded-xl text-left hover:bg-slate-100 dark:hover:bg-slate-800">
           <svg class="w-4 h-4 text-amber-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
           <span>Contact (संपर्क)</span>
         </button>
-        <a href="https://t.me/MPSCstudysphere" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2.5 px-3 py-2 rounded-lg hover:bg-sky-50 dark:hover:bg-sky-950/40 text-sky-600 dark:text-sky-400">
-          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.121l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.535-.197 1.006.128.832.946z"/></svg>
-          <span>Telegram Group</span>
-        </a>
       </nav>
     </div>
 
-    <!-- Drawer Bottom (Prominent Donate Button - 100% Zero Scroll Required) -->
-    <div class="p-4 border-t border-slate-100 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-900/50">
-      <button onclick="toggleMobileDrawer(false); handleDonateClick();" class="w-full py-2.5 px-3 rounded-xl bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white font-bold text-xs flex items-center justify-center gap-2 shadow-md shadow-amber-500/25 active:scale-95 transition-all">
+    <!-- Drawer Bottom (Prominent Donate Button - Always 100% Directly Visible without any scroll!) -->
+    <div class="p-3 border-t border-slate-100 dark:border-slate-800 bg-slate-50 dark:bg-slate-900/80 shrink-0">
+      <button onclick="toggleMobileDrawer(false); handleDonateClick();" class="w-full py-2.5 px-3 rounded-xl bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white font-bold text-xs flex items-center justify-center gap-2 shadow-lg shadow-amber-500/30 active:scale-95 transition-all">
         <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
         <span>Donate Support (सहकार्य करा)</span>
       </button>
-      <p class="text-[10px] text-center text-slate-400 mt-2 font-medium">StudySphere © 2026 • मोफत सराव केंद्र</p>
+      <p class="text-[9px] text-center text-slate-400 mt-1 font-medium">StudySphere © 2026 • मोफत सराव केंद्र</p>
     </div>
   </div>
 
-  <main class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8 w-full">
+  <main class="flex-grow max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 py-5 sm:py-8 w-full">
 
-    <!-- Top Announcement / Quick Info Bar -->
-    <div class="mb-6 sm:mb-8 p-3 sm:p-4 rounded-2xl bg-indigo-50/80 dark:bg-indigo-950/30 border border-indigo-100 dark:border-indigo-900/60 flex items-center justify-between gap-3">
-      <div class="flex items-center gap-2.5 sm:gap-3">
-        <span class="flex h-2.5 w-2.5 relative shrink-0">
-          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-indigo-400 opacity-75"></span>
-          <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-indigo-600"></span>
-        </span>
-        <p class="text-xs sm:text-sm font-semibold text-indigo-950 dark:text-indigo-200">
+    <!-- Top Announcement Strip (Clean Alignment) -->
+    <div class="mb-5 p-2.5 sm:p-3 rounded-xl bg-indigo-50/80 dark:bg-indigo-950/40 border border-indigo-200/80 dark:border-indigo-900/60 flex items-center justify-between gap-3 text-xs shadow-xs">
+      <div class="flex items-center gap-2 min-w-0">
+        <span class="w-6 h-6 rounded-lg bg-indigo-600 text-white flex items-center justify-center text-xs shrink-0 font-bold shadow-xs">🎯</span>
+        <p class="text-indigo-950 dark:text-indigo-200 font-semibold truncate">
           MPSC गट-क २०२६ ची तयारी: सर्व सराव चाचण्या आणि संयुक्त मॉक टेस्ट्स मोफत उपलब्ध आहेत.
         </p>
       </div>
-      <span class="hidden md:inline-flex text-[11px] font-bold px-2 py-0.5 rounded-full bg-indigo-200/60 dark:bg-indigo-900/60 text-indigo-800 dark:text-indigo-300 shrink-0">New Syllabus</span>
+      <span class="hidden sm:inline-flex text-[10px] font-extrabold uppercase px-2 py-0.5 rounded-full bg-indigo-200/80 dark:bg-indigo-900/80 text-indigo-800 dark:text-indigo-200 border border-indigo-300 dark:border-indigo-800 shrink-0">
+        New Syllabus
+      </span>
+    </div>
+
+    <!-- ========================================================================= -->
+    <!-- FEATURE: ⏳ MPSC GROUP C 2026 LIVE EXAM COUNTDOWN CLOCK (COMPACT & SMALL) -->
+    <!-- ========================================================================= -->
+    <div class="mb-6 p-3 sm:p-3.5 rounded-xl bg-gradient-to-r from-slate-900 via-indigo-950 to-slate-900 text-white border border-indigo-500/30 shadow-md relative overflow-hidden">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2.5 relative z-10">
+        
+        <!-- Left: Compact Info -->
+        <div class="flex items-center gap-2.5 min-w-0">
+          <div class="w-8 h-8 rounded-lg bg-indigo-600/40 border border-indigo-400/30 flex items-center justify-center text-sm shrink-0">
+            ⏳
+          </div>
+          <div class="min-w-0">
+            <div class="flex items-center gap-1.5 mb-0.5">
+              <span class="px-1.5 py-0.2 rounded text-[9px] font-extrabold uppercase bg-amber-400/20 text-amber-300 border border-amber-300/30">
+                Exam Countdown
+              </span>
+              <span class="text-[11px] text-indigo-200 font-bold truncate">
+                संयुक्त पूर्व परीक्षा — ०३ जानेवारी २०२७
+              </span>
+            </div>
+            <p class="text-[10px] text-slate-400 font-medium truncate">
+              वेळेचे योग्य नियोजन करा आणि सातत्याने सराव सुरू ठेवा
+            </p>
+          </div>
+        </div>
+
+        <!-- Right: Small Compact 4-Cell Countdown Blocks -->
+        <div class="grid grid-cols-4 gap-1.5 sm:gap-2 text-center shrink-0">
+          <div class="px-2 py-1 rounded-lg bg-white/10 backdrop-blur border border-white/10 min-w-[46px] sm:min-w-[52px]">
+            <span id="cdDays" class="text-xs sm:text-sm font-extrabold text-white block leading-tight">००</span>
+            <span class="text-[8px] sm:text-[9px] text-indigo-200 uppercase font-semibold block">दिवस</span>
+          </div>
+          <div class="px-2 py-1 rounded-lg bg-white/10 backdrop-blur border border-white/10 min-w-[46px] sm:min-w-[52px]">
+            <span id="cdHours" class="text-xs sm:text-sm font-extrabold text-white block leading-tight">००</span>
+            <span class="text-[8px] sm:text-[9px] text-indigo-200 uppercase font-semibold block">तास</span>
+          </div>
+          <div class="px-2 py-1 rounded-lg bg-white/10 backdrop-blur border border-white/10 min-w-[46px] sm:min-w-[52px]">
+            <span id="cdMinutes" class="text-xs sm:text-sm font-extrabold text-white block leading-tight">००</span>
+            <span class="text-[8px] sm:text-[9px] text-indigo-200 uppercase font-semibold block">मिनिटे</span>
+          </div>
+          <div class="px-2 py-1 rounded-lg bg-white/10 backdrop-blur border border-white/10 min-w-[46px] sm:min-w-[52px]">
+            <span id="cdSeconds" class="text-xs sm:text-sm font-extrabold text-amber-400 block leading-tight">००</span>
+            <span class="text-[8px] sm:text-[9px] text-indigo-200 uppercase font-semibold block">सेकंद</span>
+          </div>
+        </div>
+
+      </div>
     </div>
 
     <!-- ========================================== -->
@@ -1221,6 +1351,74 @@
     const fontSizes = ['small', 'medium', 'large'];
     let currentFontIndex = 1; // Default: 'medium'
 
+    // =========================================================================
+    // FEATURE: ⏳ MPSC GROUP C LIVE EXAM COUNTDOWN ENGINE (03 JANUARY 2027)
+    // =========================================================================
+    // Targeted MPSC Group C Prelims Exam Date: 03 January 2027 10:00 AM IST
+    const DEFAULT_EXAM_DATE_MS = new Date('2027-01-03T10:00:00+05:30').getTime();
+
+    function updateCountdown() {
+      const now = Date.now();
+      const distance = DEFAULT_EXAM_DATE_MS - now;
+
+      const daysEl = document.getElementById('cdDays');
+      const hoursEl = document.getElementById('cdHours');
+      const minsEl = document.getElementById('cdMinutes');
+      const secsEl = document.getElementById('cdSeconds');
+
+      if (!daysEl || !hoursEl || !minsEl || !secsEl) return;
+
+      if (distance <= 0) {
+        daysEl.textContent = '००';
+        hoursEl.textContent = '००';
+        minsEl.textContent = '००';
+        secsEl.textContent = '००';
+        return;
+      }
+
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      daysEl.textContent = String(days).padStart(2, '0');
+      hoursEl.textContent = String(hours).padStart(2, '0');
+      minsEl.textContent = String(minutes).padStart(2, '0');
+      secsEl.textContent = String(seconds).padStart(2, '0');
+    }
+
+    // =========================================================================
+    // FEATURE: 📱 PWA INSTALL PROMPT ENGINE
+    // =========================================================================
+    let deferredPrompt = null;
+    window.addEventListener('beforeinstallprompt', (e) => {
+      e.preventDefault();
+      deferredPrompt = e;
+      const btn = document.getElementById('pwaInstallBtn');
+      if (btn) btn.classList.remove('hidden');
+    });
+
+    function triggerPwaInstall() {
+      if (deferredPrompt) {
+        deferredPrompt.prompt();
+        deferredPrompt.userChoice.then((choiceResult) => {
+          if (choiceResult.outcome === 'accepted') {
+            document.getElementById('pwaInstallBtn')?.classList.add('hidden');
+          }
+          deferredPrompt = null;
+        });
+      } else {
+        showToast('ॲप इन्स्टॉल करण्यासाठी ब्राउझर मेनूमधून "Add to Home screen" निवडा.');
+      }
+    }
+
+    // Register Service Worker if supported
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('sw.js').catch(() => {});
+      });
+    }
+
     // --- Device Detection ---
     function isMobileDevice() {
       return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || window.innerWidth < 768;
@@ -1273,9 +1471,10 @@
       document.body.classList.add(`font-size-${size}`);
       
       const badge = document.getElementById('fontBadge');
-      if (size === 'small') badge.textContent = 'S';
-      if (size === 'medium') badge.textContent = 'M';
-      if (size === 'large') badge.textContent = 'L';
+      const drawerBadge = document.getElementById('drawerFontBadge');
+      const letter = size === 'small' ? 'S' : (size === 'medium' ? 'M' : 'L');
+      if (badge) badge.textContent = letter;
+      if (drawerBadge) drawerBadge.textContent = letter;
 
       localStorage.setItem('studySphereFontSize', size);
     }
@@ -1444,10 +1643,59 @@
       }
     });
 
+    // Device Vault Indicator for Home Page
+    function updateHomeVaultBadge() {
+      try {
+        const raw = localStorage.getItem('studySphere_history');
+        const history = raw ? JSON.parse(raw) : {};
+        const count = Object.keys(history).length;
+
+        const homeBadge = document.getElementById('homeSolvedCountBadge');
+        const drawerBadge = document.getElementById('drawerSolvedCountBadge');
+
+        if (count > 0) {
+          if (homeBadge) {
+            homeBadge.textContent = count;
+            homeBadge.classList.remove('hidden');
+          }
+          if (drawerBadge) {
+            drawerBadge.textContent = count;
+          }
+        }
+
+        // Streak Count
+        const streak = parseInt(localStorage.getItem('studySphere_streakCount') || (count > 0 ? '1' : '0'), 10);
+        const streakEl = document.getElementById('homeStreakCount');
+        const drawerStreakEl = document.getElementById('drawerStreakCount');
+        if (streakEl) streakEl.textContent = streak;
+        if (drawerStreakEl) drawerStreakEl.textContent = `${streak} दिवस`;
+      } catch (e) {}
+    }
+
+    // Incognito Detector on Home
+    async function detectHomeIncognito() {
+      try {
+        if ('storage' in navigator && 'estimate' in navigator.storage) {
+          const { quota } = await navigator.storage.estimate();
+          if (quota && quota < 120000000) {
+            document.getElementById('homeIncognitoWarning')?.classList.remove('hidden');
+          }
+        }
+      } catch (e) {}
+    }
+
     window.onload = function() {
       initTheme();
       initFontSize();
+      updateHomeVaultBadge();
+      detectHomeIncognito();
+      updateCountdown();
+      setInterval(updateCountdown, 1000);
     };
   </script>
+
+  <!-- Cloudflare Web Analytics -->
+  <script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "2939e1a62d66448c96ec989a7bfdfe4f"}'></script>
+  <!-- End Cloudflare Web Analytics -->
 </body>
 </html>
