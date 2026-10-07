@@ -1,0 +1,18 @@
+{
+"name": "StudySphere - MPSC Group C Portal",
+"short_name": "StudySphere",
+"description": "MPSC Group C 2026 मोफत सराव चाचण्या, मॉक टेस्ट्स व अभ्यास प्रगती डॅशबोर्ड",
+"start_url": "./index.html",
+"display": "standalone",
+"background_color": "#0b0f19",
+"theme_color": "#4f46e5",
+"orientation": "portrait-primary",
+"icons": [
+{
+"src": "data:image/svg+xml,SS",
+"sizes": "192x192 512x512",
+"type": "image/svg+xml",
+"purpose": "any maskable"
+}
+]
+}
