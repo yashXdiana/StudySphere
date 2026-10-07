@@ -372,12 +372,12 @@
       </div>
 
       <!-- Chapter Groups Container (Accordion Dropdowns) -->
-      <div id="chapterGroupsContainer" class="space-y-3">
-        <!-- Rendered dynamically via JS & Auto-Probe Engine -->
-      </div>
+    <div id="chapterGroupsContainer" class="space-y-3">
+      <!-- Rendered dynamically via JS & Auto-Probe Engine -->
     </div>
+  </div>
 
-    <!-- Mixed Section -->
+  <!-- Mixed Section -->
     <div id="mixedSectionWrapper" class="mb-12 hidden">
       <div class="flex items-center justify-between mb-4 pb-2 border-b border-slate-200 dark:border-slate-800">
         <div class="flex items-center gap-2">
@@ -594,20 +594,20 @@
             </label>
           </div>
 
-          <button onclick="clearAllHistoryData()" class="text-[11px] text-rose-500 hover:text-rose-700 dark:hover:text-rose-400 font-semibold text-center sm:text-right py-1">
-            इतिहास नष्ट करा
-          </button>
-        </div>
+  <!-- Toast Notification -->
+  <div id="toastNotification" class="fixed bottom-5 right-5 z-50 transform translate-y-20 opacity-0 transition-all duration-300 bg-slate-900 text-white dark:bg-white dark:text-slate-900 px-4 py-2.5 rounded-xl shadow-xl flex items-center gap-2 text-xs font-semibold">
+    <svg class="w-4 h-4 text-emerald-400 dark:text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+    <span id="toastMessage">नोंद यशस्वी झाली!</span>
+  </div>
 
-      </div>
-
-      <!-- Modal Footer -->
-      <div class="pt-2 border-t border-slate-100 dark:border-slate-800 flex justify-end shrink-0">
-        <button onclick="closeStatsModal()" class="px-4 py-1.5 rounded-xl bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 text-xs font-bold text-slate-700 dark:text-slate-300">
-          बंद करा
-        </button>
-      </div>
-
+  <!-- ========================================================================= -->
+  <!-- FLOATING COMPACT PROBE LOADING POPUP (VISIBLE UNTIL ALL QUIZZES LOAD)    -->
+  <!-- ========================================================================= -->
+  <div id="probeLoadingPopup" class="fixed bottom-6 left-1/2 transform -translate-x-1/2 z-50 bg-slate-900/95 dark:bg-indigo-950/95 text-white backdrop-blur border border-indigo-500/40 shadow-2xl px-4 py-2.5 rounded-2xl flex items-center gap-2.5 text-xs font-bold transition-all duration-300">
+    <div class="w-4 h-4 rounded-full border-2 border-amber-400 border-t-transparent animate-spin shrink-0"></div>
+    <div class="flex items-center gap-1.5">
+      <span class="text-amber-300">⚡</span>
+      <span id="probeLoadingStatusText" class="truncate max-w-[220px] sm:max-w-xs">सर्व चाचण्या शोधल्या जात आहेत...</span>
     </div>
   </div>
 
@@ -762,16 +762,20 @@
       updateTotalStats();
 
       // Launch Auto-Probe Engine to discover uploaded JSON test files in folders
+      // Wait until complete probing finishes before hiding loader & popup
       startAutoProbing();
-
-      // Hide Skeleton Loader and show actual rendered sections with smooth transition
-      hideSkeletonLoader();
     }
 
     function hideSkeletonLoader() {
       const loader = document.getElementById('skeletonLoaderContainer');
       const chapterSec = document.getElementById('chapterSectionWrapper');
       const mixedSec = document.getElementById('mixedSectionWrapper');
+      const probePopup = document.getElementById('probeLoadingPopup');
+
+      if (probePopup) {
+        probePopup.classList.add('opacity-0', 'translate-y-4', 'pointer-events-none');
+        setTimeout(() => probePopup.remove(), 400);
+      }
 
       if (loader) {
         loader.classList.add('opacity-0');
@@ -825,11 +829,16 @@
     async function startAutoProbing() {
       const subjectFolder1 = activeSubjectKey; // e.g. prelims-history
       const subjectFolder2 = activeSubjectKey.replace('-', '/'); // e.g. prelims/history
+      const statusText = document.getElementById('probeLoadingStatusText');
 
       // 1. Probe Chapter Tests (test-1.json, test-2.json, test-3.json...)
       for (let chIndex = 0; chIndex < allLoadedChapters.length; chIndex++) {
         const chapter = allLoadedChapters[chIndex];
         const chId = chapter.id;
+
+        if (statusText) {
+          statusText.textContent = `घटक ${chIndex + 1}/${allLoadedChapters.length} तपासत आहे...`;
+        }
 
         // If tests are already manually defined in catalog.json, skip probing
         if (chapter.tests && chapter.tests.length > 0) continue;
@@ -879,6 +888,7 @@
 
       // 2. Probe Mixed Tests (test-1.json, test-2.json...)
       if (allLoadedMixed.length === 0) {
+        if (statusText) statusText.textContent = `मिश्र चाचण्या तपासत आहे...`;
         let mixNum = 1;
         while (mixNum <= 10) {
           const possibleMixedPaths = [
@@ -918,6 +928,74 @@
           }
         }
       }
+
+      // Hide Skeleton Loader and Popup once all files are probed!
+      hideSkeletonLoader();
+    }
+
+    // Helper: generate clean, non-overlapping HTML for a test card
+    function generateTestCardHtml(test) {
+      const testFileSafe = encodeURIComponent(test.file);
+      const testTitleSafe = encodeURIComponent(test.title);
+
+      // LocalStorage completion lookup
+      const completedRecord = userProgressHistory[test.id] || null;
+      let completionBadgeHtml = '';
+      let btnText = 'Start';
+      let btnBgClass = 'bg-indigo-600 hover:bg-indigo-700 text-white';
+      let viewResultBtnHtml = '';
+
+      if (completedRecord) {
+        btnText = 'पुन्हा सोडवा';
+        btnBgClass = 'bg-slate-700 hover:bg-slate-800 text-white';
+        viewResultBtnHtml = `
+          <a href="result.html?testId=${encodeURIComponent(test.id)}&mode=view" 
+             title="शेवटचा निकाल पहा"
+             class="flex-1 sm:flex-initial inline-flex items-center justify-center gap-1 px-2.5 py-1.5 rounded-lg border border-indigo-300 dark:border-indigo-800 bg-indigo-50 hover:bg-indigo-100 dark:bg-indigo-950/60 dark:hover:bg-indigo-900/60 text-indigo-700 dark:text-indigo-300 text-xs font-bold shadow-xs active:scale-95 transition-all shrink-0 whitespace-nowrap">
+            <svg class="w-3.5 h-3.5 text-indigo-600 dark:text-indigo-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
+            <span>निकाल पहा</span>
+          </a>
+        `;
+        completionBadgeHtml = `
+          <div class="flex flex-wrap items-center gap-1.5 mt-1.5">
+            <span class="inline-flex items-center gap-0.5 px-1.5 py-0.5 rounded text-[9px] font-extrabold bg-emerald-100 dark:bg-emerald-950 text-emerald-700 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800 shrink-0">
+              ✓ सोडवली
+            </span>
+            <span class="text-[11px] text-emerald-600 dark:text-emerald-400 font-bold whitespace-nowrap">
+              सर्वोत्तम: ${(completedRecord.bestScore !== undefined ? completedRecord.bestScore : completedRecord.lastScore).toFixed(2)}/${completedRecord.totalMarks || test.questions}
+            </span>
+            ${completedRecord.attempts > 1 ? `<span class="text-[10px] text-slate-400 whitespace-nowrap">(${completedRecord.attempts} प्रयत्न)</span>` : ''}
+          </div>
+        `;
+      }
+
+      // Responsive Non-Overlapping Layout:
+      // Mobile: Flex Column (Text on top, Buttons below)
+      // Desktop: Flex Row (Text on left, Buttons on right)
+      return `
+        <div class="test-item group p-3 sm:p-3.5 rounded-xl border ${completedRecord ? 'border-emerald-200 dark:border-emerald-900/60 bg-emerald-50/20 dark:bg-emerald-950/10' : 'border-slate-200 dark:border-slate-800 bg-white dark:bg-[#11192a]'} hover:shadow-sm transition-all flex flex-col sm:flex-row sm:items-center justify-between gap-2.5 sm:gap-3">
+          <div class="min-w-0 flex-1">
+            <div class="flex items-center gap-2 mb-1">
+              <span class="px-1.5 py-0.5 rounded text-[10px] font-bold bg-indigo-100 dark:bg-indigo-950 text-indigo-700 dark:text-indigo-300 shrink-0">${test.questions} प्रश्न</span>
+              <span class="text-[10px] font-medium text-slate-500 dark:text-slate-400 shrink-0">${test.time} मिनिटे</span>
+              <span class="text-[10px] font-medium text-emerald-600 dark:text-emerald-400 shrink-0">• ${test.difficulty || 'सराव'}</span>
+            </div>
+            <h4 class="test-item-title font-bold text-slate-900 dark:text-white leading-snug group-hover:text-indigo-600 dark:group-hover:text-indigo-400 break-words">
+              ${test.title}
+            </h4>
+            ${completionBadgeHtml}
+          </div>
+          <div class="flex items-center gap-1.5 pt-2 sm:pt-0 border-t sm:border-0 border-slate-100 dark:border-slate-800/80 shrink-0 w-full sm:w-auto">
+            ${viewResultBtnHtml}
+            <button type="button" 
+                    onclick="openTestInfoModal('${testTitleSafe}', ${test.questions}, ${test.time}, ${test.marks || test.questions}, '${testFileSafe}')"
+                    class="flex-1 sm:flex-initial inline-flex items-center justify-center gap-1 px-3 py-1.5 rounded-lg ${btnBgClass} text-xs font-bold shadow-xs active:scale-95 transition-all shrink-0 whitespace-nowrap">
+              <span>${btnText}</span>
+              <svg class="w-3.5 h-3.5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+            </button>
+          </div>
+        </div>
+      `;
     }
 
     function updateChapterCardUI(chIndex, chapter) {
@@ -936,64 +1014,7 @@
       if (hasTests && container) {
         let gridHtml = '';
         chapter.tests.forEach(test => {
-          const testFileSafe = encodeURIComponent(test.file);
-          const testTitleSafe = encodeURIComponent(test.title);
-
-          // LocalStorage completion lookup
-          const completedRecord = userProgressHistory[test.id] || null;
-          let completionBadgeHtml = '';
-          let btnText = 'Start';
-          let btnBgClass = 'bg-indigo-600 hover:bg-indigo-700 text-white';
-          let viewResultBtnHtml = '';
-
-          if (completedRecord) {
-            btnText = 'पुन्हा सोडवा';
-            btnBgClass = 'bg-slate-700 hover:bg-slate-800 text-white';
-            viewResultBtnHtml = `
-              <a href="result.html?testId=${encodeURIComponent(test.id)}&mode=view" 
-                 title="शेवटचा निकाल पहा"
-                 class="shrink-0 inline-flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg border border-indigo-300 dark:border-indigo-800 bg-indigo-50 hover:bg-indigo-100 dark:bg-indigo-950/60 dark:hover:bg-indigo-900/60 text-indigo-700 dark:text-indigo-300 text-xs font-bold shadow-sm active:scale-95 transition-all">
-                <svg class="w-3.5 h-3.5 text-indigo-600 dark:text-indigo-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
-                <span>निकाल पहा</span>
-              </a>
-            `;
-            completionBadgeHtml = `
-              <div class="flex items-center gap-1.5 mt-0.5">
-                <span class="inline-flex items-center gap-0.5 px-1.5 py-0.2 rounded text-[9px] font-extrabold bg-emerald-100 dark:bg-emerald-950 text-emerald-700 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800">
-                  ✓ सोडवली
-                </span>
-                <span class="text-[10px] text-emerald-600 dark:text-emerald-400 font-bold">
-                  सर्वोत्तम: ${(completedRecord.bestScore !== undefined ? completedRecord.bestScore : completedRecord.lastScore).toFixed(2)}/${completedRecord.totalMarks || test.questions}
-                </span>
-                ${completedRecord.attempts > 1 ? `<span class="text-[9px] text-slate-400">(${completedRecord.attempts} प्रयत्न)</span>` : ''}
-              </div>
-            `;
-          }
-
-          gridHtml += `
-            <div class="test-item group p-3 sm:p-3.5 rounded-xl border ${completedRecord ? 'border-emerald-200 dark:border-emerald-900/60 bg-emerald-50/20 dark:bg-emerald-950/10' : 'border-slate-200 dark:border-slate-800 bg-white dark:bg-[#11192a]'} hover:shadow-sm transition-all flex items-center justify-between gap-2.5 sm:gap-3">
-              <div class="min-w-0 flex-1">
-                <div class="flex items-center gap-2 mb-1">
-                  <span class="px-1.5 py-0.5 rounded text-[10px] font-bold bg-indigo-100 dark:bg-indigo-950 text-indigo-700 dark:text-indigo-300">${test.questions} प्रश्न</span>
-                  <span class="text-[10px] font-medium text-slate-500 dark:text-slate-400">${test.time} मिनिटे</span>
-                  <span class="text-[10px] font-medium text-emerald-600 dark:text-emerald-400">• ${test.difficulty || 'सराव'}</span>
-                </div>
-                <h4 class="test-item-title font-bold text-slate-900 dark:text-white truncate group-hover:text-indigo-600 dark:group-hover:text-indigo-400">
-                  ${test.title}
-                </h4>
-                ${completionBadgeHtml}
-              </div>
-              <div class="flex items-center gap-1.5 shrink-0">
-                ${viewResultBtnHtml}
-                <button type="button" 
-                        onclick="openTestInfoModal('${testTitleSafe}', ${test.questions}, ${test.time}, ${test.marks || test.questions}, '${testFileSafe}')"
-                        class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg ${btnBgClass} text-xs font-bold shadow-sm active:scale-95 transition-all">
-                  <span>${btnText}</span>
-                  <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
-                </button>
-              </div>
-            </div>
-          `;
+          gridHtml += generateTestCardHtml(test);
         });
         container.className = "chapter-tests-grid grid grid-cols-1 sm:grid-cols-2 gap-2.5 sm:gap-3";
         container.innerHTML = gridHtml;
@@ -1050,64 +1071,7 @@
         if (hasTests) {
           testsHtml = `<div class="chapter-tests-grid grid grid-cols-1 sm:grid-cols-2 gap-2.5 sm:gap-3">`;
           chapter.tests.forEach(test => {
-            const testFileSafe = encodeURIComponent(test.file);
-            const testTitleSafe = encodeURIComponent(test.title);
-
-            // LocalStorage completion lookup
-            const completedRecord = userProgressHistory[test.id] || null;
-            let completionBadgeHtml = '';
-            let btnText = 'Start';
-            let btnBgClass = 'bg-indigo-600 hover:bg-indigo-700 text-white';
-            let viewResultBtnHtml = '';
-
-            if (completedRecord) {
-              btnText = 'पुन्हा सोडवा';
-              btnBgClass = 'bg-slate-700 hover:bg-slate-800 text-white';
-              viewResultBtnHtml = `
-                <a href="result.html?testId=${encodeURIComponent(test.id)}&mode=view" 
-                   title="शेवटचा निकाल पहा"
-                   class="shrink-0 inline-flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg border border-indigo-300 dark:border-indigo-800 bg-indigo-50 hover:bg-indigo-100 dark:bg-indigo-950/60 dark:hover:bg-indigo-900/60 text-indigo-700 dark:text-indigo-300 text-xs font-bold shadow-sm active:scale-95 transition-all">
-                  <svg class="w-3.5 h-3.5 text-indigo-600 dark:text-indigo-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
-                  <span>निकाल पहा</span>
-                </a>
-              `;
-              completionBadgeHtml = `
-                <div class="flex items-center gap-1.5 mt-0.5">
-                  <span class="inline-flex items-center gap-0.5 px-1.5 py-0.2 rounded text-[9px] font-extrabold bg-emerald-100 dark:bg-emerald-950 text-emerald-700 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800">
-                    ✓ सोडवली
-                  </span>
-                  <span class="text-[10px] text-emerald-600 dark:text-emerald-400 font-bold">
-                    सर्वोत्तम: ${(completedRecord.bestScore !== undefined ? completedRecord.bestScore : completedRecord.lastScore).toFixed(2)}/${completedRecord.totalMarks || test.questions}
-                  </span>
-                  ${completedRecord.attempts > 1 ? `<span class="text-[9px] text-slate-400">(${completedRecord.attempts} प्रयत्न)</span>` : ''}
-                </div>
-              `;
-            }
-
-            testsHtml += `
-              <div class="test-item group p-3 sm:p-3.5 rounded-xl border ${completedRecord ? 'border-emerald-200 dark:border-emerald-900/60 bg-emerald-50/20 dark:bg-emerald-950/10' : 'border-slate-200 dark:border-slate-800 bg-white dark:bg-[#11192a]'} hover:shadow-sm transition-all flex items-center justify-between gap-2.5 sm:gap-3">
-                <div class="min-w-0 flex-1">
-                  <div class="flex items-center gap-2 mb-1">
-                    <span class="px-1.5 py-0.5 rounded text-[10px] font-bold bg-indigo-100 dark:bg-indigo-950 text-indigo-700 dark:text-indigo-300">${test.questions} प्रश्न</span>
-                    <span class="text-[10px] font-medium text-slate-500 dark:text-slate-400">${test.time} मिनिटे</span>
-                    <span class="text-[10px] font-medium text-emerald-600 dark:text-emerald-400">• ${test.difficulty || 'सराव'}</span>
-                  </div>
-                  <h4 class="test-item-title font-bold text-slate-900 dark:text-white truncate group-hover:text-indigo-600 dark:group-hover:text-indigo-400">
-                    ${test.title}
-                  </h4>
-                  ${completionBadgeHtml}
-                </div>
-                <div class="flex items-center gap-1.5 shrink-0">
-                  ${viewResultBtnHtml}
-                  <button type="button" 
-                          onclick="openTestInfoModal('${testTitleSafe}', ${test.questions}, ${test.time}, ${test.marks || test.questions}, '${testFileSafe}')"
-                          class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg ${btnBgClass} text-xs font-bold shadow-sm active:scale-95 transition-all">
-                    <span>${btnText}</span>
-                    <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
-                  </button>
-                </div>
-              </div>
-            `;
+            testsHtml += generateTestCardHtml(test);
           });
           testsHtml += `</div>`;
         } else {
