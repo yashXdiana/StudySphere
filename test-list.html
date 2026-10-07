@@ -591,6 +591,28 @@
       }
     }
 
+    // Helper: Normalize & strictly deduplicate tests by unique file path and test ID
+    function deduplicateTests(tests) {
+      if (!Array.isArray(tests)) return [];
+      const seenFiles = new Set();
+      const seenIds = new Set();
+      const clean = [];
+      for (const t of tests) {
+        if (!t) continue;
+        const normFile = (t.file || '').replace(/^(\.\/)+/, '').replace(/^\/+/, '').trim().toLowerCase();
+        const id = (t.id || '').trim().toLowerCase();
+        
+        // Skip duplicate if already encountered
+        if ((normFile && seenFiles.has(normFile)) || (id && seenIds.has(id))) {
+          continue;
+        }
+        if (normFile) seenFiles.add(normFile);
+        if (id) seenIds.add(id);
+        clean.push(t);
+      }
+      return clean;
+    }
+
     // Local Device Registry: remembers discovered tests so subsequent visits load at 0ms
     function getStoredSubjectRegistry(subjectKey) {
       try {
@@ -608,7 +630,7 @@
           chapters: chapters.map(ch => ({
             id: ch.id,
             title: ch.title,
-            tests: (ch.tests || []).map(t => ({
+            tests: deduplicateTests(ch.tests || []).map(t => ({
               id: t.id,
               title: t.title,
               questions: t.questions,
@@ -618,7 +640,7 @@
               file: t.file
             }))
           })),
-          mixed: (mixed || []).map(m => ({
+          mixed: deduplicateTests(mixed || []).map(m => ({
             id: m.id,
             title: m.title,
             questions: m.questions,
@@ -688,15 +710,18 @@
       const rawChapters = data.chapters || [];
 
       if (storedRegistry && Array.isArray(storedRegistry.chapters) && storedRegistry.chapters.length > 0) {
-        allLoadedChapters = storedRegistry.chapters;
-        allLoadedMixed = storedRegistry.mixed || [];
+        allLoadedChapters = storedRegistry.chapters.map(ch => ({
+          ...ch,
+          tests: deduplicateTests(ch.tests || [])
+        }));
+        allLoadedMixed = deduplicateTests(storedRegistry.mixed || []);
       } else {
         allLoadedChapters = rawChapters.map((ch, idx) => ({
           id: ch.id || `ch-${idx+1}`,
           title: ch.title,
-          tests: Array.isArray(ch.tests) ? [...ch.tests] : []
+          tests: deduplicateTests(Array.isArray(ch.tests) ? [...ch.tests] : [])
         }));
-        allLoadedMixed = Array.isArray(data.mixed) ? [...data.mixed] : [];
+        allLoadedMixed = deduplicateTests(Array.isArray(data.mixed) ? [...data.mixed] : []);
       }
 
       document.getElementById('chapterCountBadge').textContent = `${allLoadedChapters.length} घटक उपलब्ध`;
@@ -727,14 +752,16 @@
 
     function updateTotalStats() {
       let totalQuestions = 0;
-      let totalTests = allLoadedMixed.length;
+      let totalTests = 0;
 
       allLoadedChapters.forEach(ch => {
-        totalTests += (ch.tests ? ch.tests.length : 0);
-        if (ch.tests) {
-          ch.tests.forEach(t => totalQuestions += (t.questions || 20));
-        }
+        ch.tests = deduplicateTests(ch.tests || []);
+        totalTests += ch.tests.length;
+        ch.tests.forEach(t => totalQuestions += (t.questions || 20));
       });
+      
+      allLoadedMixed = deduplicateTests(allLoadedMixed || []);
+      totalTests += allLoadedMixed.length;
       allLoadedMixed.forEach(t => totalQuestions += (t.questions || 25));
 
       document.getElementById('statTotalTests').textContent = totalTests;
@@ -818,19 +845,31 @@
               const totalMarks = tData.totalMarks || (qCount * marksPerQ);
               const rawTitle = resolveText(tData.title, 'mr');
               const cleanTitle = rawTitle || `${chapter.title.split('—').pop().trim()} सराव ${testNum}`;
+              const targetId = tData.testId || `${chId}-t${testNum}`;
 
-              chapter.tests.push({
-                id: tData.testId || `${chId}-t${testNum}`,
-                title: cleanTitle,
-                questions: qCount,
-                time: duration,
-                marks: totalMarks,
-                difficulty: tData.difficulty || 'सराव',
-                file: result.path
+              // Strict duplicate check before adding
+              const normNewFile = (result.path || '').replace(/^(\.\/)+/, '').replace(/^\/+/, '').trim().toLowerCase();
+              const alreadyExists = (chapter.tests || []).some(t => {
+                const normFile = (t.file || '').replace(/^(\.\/)+/, '').replace(/^\/+/, '').trim().toLowerCase();
+                const tid = (t.id || '').trim().toLowerCase();
+                return (normFile && normFile === normNewFile) || (tid && tid === targetId.toLowerCase());
               });
 
-              updateChapterCardUI(chIndex, chapter);
-              updateTotalStats();
+              if (!alreadyExists) {
+                chapter.tests.push({
+                  id: targetId,
+                  title: cleanTitle,
+                  questions: qCount,
+                  time: duration,
+                  marks: totalMarks,
+                  difficulty: tData.difficulty || 'सराव',
+                  file: result.path
+                });
+
+                chapter.tests = deduplicateTests(chapter.tests);
+                updateChapterCardUI(chIndex, chapter);
+                updateTotalStats();
+              }
               testNum++;
             } else {
               break;
@@ -860,19 +899,30 @@
               const totalMarks = mData.totalMarks || (qCount * marksPerQ);
               const rawTitle = resolveText(mData.title, 'mr');
               const cleanTitle = rawTitle || `संयुक्त सराव टेस्ट ${mixNum}`;
+              const targetMixId = mData.testId || `mix-t${mixNum}`;
 
-              allLoadedMixed.push({
-                id: mData.testId || `mix-t${mixNum}`,
-                title: cleanTitle,
-                questions: qCount,
-                time: duration,
-                marks: totalMarks,
-                difficulty: mData.difficulty || 'परीक्षाभिमुख',
-                file: result.path
+              const normNewFile = (result.path || '').replace(/^(\.\/)+/, '').replace(/^\/+/, '').trim().toLowerCase();
+              const alreadyExists = allLoadedMixed.some(t => {
+                const normFile = (t.file || '').replace(/^(\.\/)+/, '').replace(/^\/+/, '').trim().toLowerCase();
+                const tid = (t.id || '').trim().toLowerCase();
+                return (normFile && normFile === normNewFile) || (tid && tid === targetMixId.toLowerCase());
               });
 
-              renderMixedTests(allLoadedMixed);
-              updateTotalStats();
+              if (!alreadyExists) {
+                allLoadedMixed.push({
+                  id: targetMixId,
+                  title: cleanTitle,
+                  questions: qCount,
+                  time: duration,
+                  marks: totalMarks,
+                  difficulty: mData.difficulty || 'परीक्षाभिमुख',
+                  file: result.path
+                });
+
+                allLoadedMixed = deduplicateTests(allLoadedMixed);
+                renderMixedTests(allLoadedMixed);
+                updateTotalStats();
+              }
               mixNum++;
             } else {
               break;
@@ -927,20 +977,32 @@
                     const totalMarks = tData.totalMarks || (qCount * marksPerQ);
                     const rawTitle = resolveText(tData.title, 'mr');
                     const cleanTitle = rawTitle || `${chapter.title.split('—').pop().trim()} सराव ${testNum}`;
+                    const targetId = tData.testId || `${chId}-t${testNum}`;
 
-                    chapter.tests.push({
-                      id: tData.testId || `${chId}-t${testNum}`,
-                      title: cleanTitle,
-                      questions: qCount,
-                      time: duration,
-                      marks: totalMarks,
-                      difficulty: tData.difficulty || 'सराव',
-                      file: p
+                    // Guard against duplicates
+                    const normNewFile = p.replace(/^(\.\/)+/, '').replace(/^\/+/, '').trim().toLowerCase();
+                    const alreadyExists = (chapter.tests || []).some(t => {
+                      const normFile = (t.file || '').replace(/^(\.\/)+/, '').replace(/^\/+/, '').trim().toLowerCase();
+                      const tid = (t.id || '').trim().toLowerCase();
+                      return (normFile && normFile === normNewFile) || (tid && tid === targetId.toLowerCase());
                     });
 
-                    updateChapterCardUI(chIndex, chapter);
-                    updateTotalStats();
-                    newFoundCount++;
+                    if (!alreadyExists) {
+                      chapter.tests.push({
+                        id: targetId,
+                        title: cleanTitle,
+                        questions: qCount,
+                        time: duration,
+                        marks: totalMarks,
+                        difficulty: tData.difficulty || 'सराव',
+                        file: p
+                      });
+
+                      chapter.tests = deduplicateTests(chapter.tests);
+                      updateChapterCardUI(chIndex, chapter);
+                      updateTotalStats();
+                      newFoundCount++;
+                    }
                     foundNew = true;
                     testNum++;
                     break;
@@ -962,6 +1024,7 @@
       const card = document.getElementById(`chapter-card-${chIndex}`);
       if (!card) return;
 
+      chapter.tests = deduplicateTests(chapter.tests || []);
       const hasTests = chapter.tests && chapter.tests.length > 0;
       const countBadge = card.querySelector('.chapter-test-count');
       const container = card.querySelector('.chapter-tests-grid');
