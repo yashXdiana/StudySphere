@@ -3,14 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>StudySphere | चाचणी निकाल आणि सविस्तर विश्लेषण</title>
-  <meta name="description" content="MPSC Group C सराव चाचणी निकाल, गुणपत्रक, बुकमार्क व्हॉल्ट आणि सविस्तर स्पष्टीकरण">
+  <title>StudySphere | MPSC Group C 2026 Mock Test & Quiz Portal</title>
+  <meta name="description" content="MPSC Group C 2026 संयुक्त पूर्व व मुख्य परीक्षेसाठी १००% मोफत व दर्जेदार सराव चाचण्या, मॉक टेस्ट्स, विषयनिहाय विश्लेषण आणि अभ्यास प्रगती डॅशबोर्ड.">
+  <meta name="keywords" content="MPSC Group C 2026, MPSC Mock Test, MPSC Prelims Quiz, MPSC Mains Test, MPSC मोफत सराव चाचणी, StudySphere, Maharashtra Competitive Exam">
+  <meta name="author" content="StudySphere">
 
+  <!-- Open Graph / WhatsApp / Telegram Preview Meta Tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://studysphere.in/">
+  <meta property="og:title" content="StudySphere | MPSC Group C 2026 मोफत सराव टेस्ट पोर्टल">
+  <meta property="og:description" content="MPSC गट-क २०२६ ची परिपूर्ण तयारी: सर्व विषयनिहाय चाचण्या, १/४ निगेटिव्ह मार्किंग, सविस्तर स्पष्टीकरण आणि प्रगती विश्लेषण.">
+  <meta property="og:image" content="https://placehold.co/1200x630/4f46e5/ffffff?text=StudySphere+MPSC+Group+C+2026+Mock+Tests">
+
+  <!-- Twitter / X Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="StudySphere | MPSC Group C 2026 Mock Test Portal">
+  <meta name="twitter:description" content="MPSC गट-क २०२६ पूर्व व मुख्य परीक्षेसाठी मोफत दर्जेदार सराव चाचण्या आणि मॉक टेस्ट्स.">
+  <meta name="twitter:image" content="https://placehold.co/1200x630/4f46e5/ffffff?text=StudySphere+MPSC+Group+C+2026">
+  
   <!-- Google Fonts & Tailwind CSS CDN -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;500;600;700;800&family=Noto+Sans+Devanagari:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- PWA Manifest Link -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#4f46e5">
 
   <script>
     tailwind.config = {
@@ -27,6 +46,7 @@
               500: '#6366f1',
               600: '#4f46e5',
               700: '#4338ca',
+              800: '#3730a3',
             }
           }
         }
@@ -35,6 +55,7 @@
   </script>
 
   <style>
+    /* मराठी जोडाक्षरे आणि अक्षरे न तुटण्यासाठी प्रगत टायपोग्राफी */
     html, body {
       font-feature-settings: "liga" 1, "kern" 1;
       text-rendering: optimizeLegibility;
@@ -42,1360 +63,1368 @@
       -moz-osx-font-smoothing: grayscale;
     }
 
-    ::-webkit-scrollbar { width: 6px; height: 6px; }
-    ::-webkit-scrollbar-track { background: transparent; }
-    ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
-    .dark ::-webkit-scrollbar-thumb { background: #334155; }
-
-    /* Screen default: Hide print-only components */
-    .print-only {
-      display: none !important;
+    :root {
+      --content-text-size: 1rem;       /* Default Medium: 16px */
+      --content-subtext-size: 0.8125rem;/* Default Subtitle: 13px */
+    }
+    
+    .font-size-small {
+      --content-text-size: 0.875rem;    /* 14px */
+      --content-subtext-size: 0.75rem;   /* 12px */
+    }
+    
+    .font-size-medium {
+      --content-text-size: 1rem;        /* 16px */
+      --content-subtext-size: 0.8125rem; /* 13px */
+    }
+    
+    .font-size-large {
+      --content-text-size: 1.125rem;    /* 18px */
+      --content-subtext-size: 0.9375rem; /* 15px */
     }
 
-    /* Print & PDF Specific Styles */
-    @media print {
-      header, .no-print {
-        display: none !important;
-      }
+    .subject-title {
+      font-size: var(--content-text-size) !important;
+      line-height: 1.35;
+    }
 
-      body {
-        background: #ffffff !important;
-        color: #0f172a !important;
-      }
+    .subject-subtext {
+      font-size: var(--content-subtext-size) !important;
+      line-height: 1.3;
+    }
 
-      .print-only {
-        display: block !important;
-      }
-
-      .print-link {
-        color: #4338ca !important;
-        text-decoration: underline !important;
-        pointer-events: auto !important;
-      }
-
-      main {
-        max-width: 100% !important;
-        padding: 0 !important;
-        margin: 0 !important;
-      }
-
-      /* Prevent question cards from breaking awkwardly across pages */
-      #questionsReviewContainer > div {
-        break-inside: avoid !important;
-        page-break-inside: avoid !important;
-        margin-bottom: 1rem !important;
-        border: 1px solid #cbd5e1 !important;
-        box-shadow: none !important;
-      }
+    ::-webkit-scrollbar {
+      width: 6px;
+    }
+    ::-webkit-scrollbar-track {
+      background: transparent;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #cbd5e1;
+      border-radius: 4px;
+    }
+    .dark ::-webkit-scrollbar-thumb {
+      background: #334155;
     }
   </style>
 </head>
-<body class="bg-slate-50 text-slate-800 dark:bg-[#0b0f19] dark:text-slate-100 font-sans min-h-screen flex flex-col antialiased transition-colors duration-200">
+<body class="bg-slate-50 text-slate-800 dark:bg-[#0b0f19] dark:text-slate-100 font-sans transition-colors duration-200 min-h-screen flex flex-col font-size-medium antialiased selection:bg-indigo-500 selection:text-white overflow-x-hidden">
 
   <!-- ========================================== -->
-  <!-- HEADER (ZERO MOBILE OVERFLOW)              -->
+  <!-- HEADER (Zero Mobile Overflow) -->
   <!-- ========================================== -->
-  <header class="sticky top-0 z-40 bg-white/95 dark:bg-[#0e1626]/95 backdrop-blur border-b border-slate-200 dark:border-slate-800 shadow-sm transition-colors duration-200 no-print">
+  <header class="sticky top-0 z-40 bg-white/95 dark:bg-[#0e1626]/95 backdrop-blur border-b border-slate-200 dark:border-slate-800 shadow-sm transition-colors duration-200">
     <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 h-14 sm:h-16 flex items-center justify-between gap-2">
       
-      <!-- Brand & Back Link -->
-      <a href="index.html" class="flex items-center gap-1.5 sm:gap-2 group shrink-0 min-w-0">
-        <div class="w-8 h-8 sm:w-9 sm:h-9 rounded-xl bg-indigo-600 text-white flex items-center justify-center font-bold text-xs shadow-md shadow-indigo-600/30 group-hover:scale-105 transition-transform shrink-0">
-          SS
+      <!-- Logo & Brand Name -->
+      <a href="index.html" class="flex items-center gap-2 group focus:outline-none rounded-lg p-0.5 shrink-0 min-w-0">
+        <div class="w-8 h-8 sm:w-10 sm:h-10 rounded-xl bg-gradient-to-tr from-indigo-600 via-indigo-500 to-amber-400 p-[1.5px] shadow-md shadow-indigo-500/20 group-hover:scale-105 transition-transform duration-200 shrink-0">
+          <div class="w-full h-full bg-white dark:bg-slate-900 rounded-[10px] flex items-center justify-center">
+            <svg class="w-5 h-5 sm:w-6 sm:h-6 text-indigo-600 dark:text-indigo-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+              <circle cx="12" cy="12" r="3" class="fill-amber-400 stroke-none"/>
+            </svg>
+          </div>
         </div>
         <div class="flex flex-col min-w-0">
-          <span class="text-sm sm:text-base font-bold tracking-tight text-slate-900 dark:text-white leading-tight truncate">StudySphere</span>
-          <span class="text-[9px] sm:text-[10px] text-slate-500 dark:text-slate-400 truncate">निकाल व विश्लेषण</span>
+          <span class="text-base sm:text-xl font-bold tracking-tight bg-gradient-to-r from-indigo-600 to-indigo-800 dark:from-indigo-400 dark:to-indigo-200 bg-clip-text text-transparent truncate">
+            StudySphere
+          </span>
+          <span class="text-[9px] sm:text-[10px] text-slate-500 dark:text-slate-400 -mt-1 font-medium tracking-wide truncate">MPSC Group C</span>
         </div>
       </a>
 
-      <!-- Quick Action Controls -->
-      <div class="flex items-center gap-1.5 shrink-0">
-        <!-- Daily Streak Badge -->
+      <!-- Desktop Center Navigation Links -->
+      <nav class="hidden md:flex items-center gap-1 text-sm font-semibold text-slate-600 dark:text-slate-300">
+        <a href="index.html" class="px-3 py-1.5 rounded-lg hover:text-indigo-600 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">Home</a>
+        <button onclick="openModal('aboutModal')" class="px-3 py-1.5 rounded-lg hover:text-indigo-600 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">About</button>
+        <button onclick="openModal('contactModal')" class="px-3 py-1.5 rounded-lg hover:text-indigo-600 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">Contact</button>
+      </nav>
+
+      <!-- Right Action Controls -->
+      <div class="flex items-center gap-1 sm:gap-2 shrink-0">
+
+        <!-- DESKTOP-ONLY EXTRA BUTTONS (Hidden on mobile) -->
+        <button id="pwaInstallBtn" onclick="triggerPwaInstall()" title="StudySphere ॲप फोनमध्ये इन्स्टॉल करा"
+                class="hidden lg:inline-flex px-2 py-1 rounded-lg bg-indigo-50 hover:bg-indigo-100 dark:bg-indigo-950/70 text-indigo-700 dark:text-indigo-300 border border-indigo-200 dark:border-indigo-800 text-xs font-bold items-center gap-1 transition-all">
+          <span>📲</span>
+          <span>Install</span>
+        </button>
+
+        <a href="https://t.me/MPSCstudysphere" target="_blank" rel="noopener noreferrer" 
+           class="hidden lg:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-sky-50 dark:bg-sky-950/60 text-sky-600 dark:text-sky-300 hover:bg-sky-100 dark:hover:bg-sky-900 border border-sky-200 dark:border-sky-800 text-xs font-semibold shadow-sm transition-all duration-150">
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.121l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.535-.197 1.006.128.832.946z"/>
+          </svg>
+          <span>Telegram</span>
+        </a>
+
+        <button onclick="handleDonateClick()" 
+                class="hidden md:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white text-xs font-bold shadow-sm shadow-amber-500/25 active:scale-95 transition-all duration-150">
+          <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
+          </svg>
+          <span>Donate</span>
+        </button>
+
+        <button id="fontSizeBtn" onclick="toggleFontSize()" title="मजकुराचा आकार बदला"
+                class="hidden md:inline-flex px-2 py-1.5 rounded-lg bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 border border-slate-200 dark:border-slate-700 text-xs font-bold items-center gap-0.5 transition-all">
+          <span class="tracking-tighter text-xs">A<span class="text-[9px]">A</span></span>
+          <span id="fontBadge" class="text-[9px] uppercase px-1 py-0.2 rounded bg-indigo-100 dark:bg-indigo-900/60 text-indigo-700 dark:text-indigo-300 font-extrabold">M</span>
+        </button>
+
+        <button id="themeToggleBtn" onclick="toggleDarkMode()" title="थीम बदला"
+                class="hidden md:inline-flex p-2 rounded-xl bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 border border-slate-200 dark:border-slate-700 transition-all shrink-0">
+          <svg id="sunIcon" class="w-4 h-4 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg id="moonIcon" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <!-- ======================================================== -->
+        <!-- MOBILE-VISIBLE HEADER CONTROLS (EXACTLY 3 CLEAN BUTTONS) -->
+        <!-- 1. STREAK  |  2. PROGRESS  |  3. HAMBURGER MENU          -->
+        <!-- ======================================================== -->
+
+        <!-- 1. DAILY STREAK BUTTON (Visible on Mobile & Desktop) -->
         <a href="progress.html" title="दैनिक सराव स्ट्रीक पहा"
            class="px-2 py-1 rounded-lg bg-amber-500/10 hover:bg-amber-500/20 text-amber-600 dark:text-amber-400 border border-amber-300 dark:border-amber-800/60 text-xs font-extrabold flex items-center gap-1 transition-all shrink-0">
           <span>🔥</span>
-          <span id="headerStreakCount">१</span>
+          <span id="homeStreakCount">१</span>
         </a>
 
-        <!-- Progress Page Link -->
-        <a href="progress.html" class="px-2 sm:px-2.5 py-1 sm:py-1.5 rounded-lg bg-emerald-50 hover:bg-emerald-100 dark:bg-emerald-950/60 dark:hover:bg-emerald-900/60 text-emerald-700 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800 text-xs font-bold transition-all flex items-center gap-1 shrink-0">
-          <svg class="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
-          <span>प्रगती</span>
+        <!-- 2. PROGRESS BUTTON (Visible on Mobile & Desktop) -->
+        <a href="progress.html" title="माझी प्रगती व सोडवलेल्या चाचण्यांचा डॅशबोर्ड पहा"
+           class="px-2 sm:px-2.5 py-1 sm:py-1.5 rounded-lg bg-emerald-50 dark:bg-emerald-950/60 hover:bg-emerald-100 dark:hover:bg-emerald-900/60 text-emerald-700 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800 text-xs font-bold flex items-center gap-1 shadow-xs active:scale-95 transition-all shrink-0">
+          <svg class="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+          </svg>
+          <span class="text-xs">प्रगती</span>
+          <span id="homeSolvedCountBadge" class="hidden text-[10px] px-1.5 py-0.2 rounded-full bg-emerald-600 text-white font-extrabold">0</span>
         </a>
 
-        <!-- Tests List Link -->
-        <a href="test-list.html" class="px-2 sm:px-2.5 py-1 sm:py-1.5 rounded-lg bg-indigo-50 hover:bg-indigo-100 dark:bg-indigo-950/60 dark:hover:bg-indigo-900/60 text-indigo-700 dark:text-indigo-300 border border-indigo-200 dark:border-indigo-800 text-xs font-bold transition-all flex items-center gap-1 shrink-0">
-          <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/><path d="M6 6h10M6 10h10M6 14h6"/></svg>
-          <span>चाचण्या</span>
-        </a>
-
-        <!-- Theme Switcher -->
-        <button id="themeToggleBtn" onclick="toggleDarkMode()" title="थीम बदला" 
-                class="p-1.5 sm:p-2 rounded-xl bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 border border-slate-200 dark:border-slate-700 transition-all shrink-0">
-          <svg id="sunIcon" class="w-4 h-4 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
-          <svg id="moonIcon" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <!-- 3. MOBILE MENU HAMBURGER BUTTON (Mobile only) -->
+        <button onclick="toggleMobileDrawer(true)" class="md:hidden p-1.5 rounded-xl bg-indigo-50 hover:bg-indigo-100 dark:bg-indigo-950/70 text-indigo-600 dark:text-indigo-400 border border-indigo-200 dark:border-indigo-800 focus:outline-none shrink-0" aria-label="Open Navigation Menu">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
         </button>
+
       </div>
 
     </div>
   </header>
 
-  <!-- ========================================== -->
-  <!-- MAIN CONTAINER                             -->
-  <!-- ========================================== -->
-  <main class="flex-grow max-w-5xl mx-auto px-3 sm:px-6 lg:px-8 py-5 sm:py-7 w-full">
+  <!-- ========================================================================= -->
+  <!-- MOBILE DRAWER (PUSHED BUTTONS INSIDE + ZERO-SCROLL DIRECT DONATE BUTTON)  -->
+  <!-- ========================================================================= -->
+  <div id="drawerBackdrop" onclick="toggleMobileDrawer(false)" class="fixed inset-0 bg-black/60 z-50 backdrop-blur-sm hidden transition-opacity duration-300"></div>
+  
+  <div id="mobileDrawer" class="fixed top-0 right-0 h-[100dvh] max-h-[100dvh] w-[85%] max-w-[310px] bg-white dark:bg-[#0f172a] shadow-2xl z-50 transform translate-x-full transition-transform duration-300 ease-in-out flex flex-col justify-between border-l border-slate-200 dark:border-slate-800 overflow-hidden">
+    
+    <!-- Drawer Top Content: Compact & Clean Layout -->
+    <div class="p-3.5 flex flex-col min-h-0 flex-1 overflow-y-auto">
+      
+      <!-- Drawer Header -->
+      <div class="flex items-center justify-between pb-2 border-b border-slate-100 dark:border-slate-800 shrink-0">
+        <div class="flex items-center gap-2">
+          <div class="w-7 h-7 rounded-lg bg-indigo-600 text-white font-bold text-xs flex items-center justify-center">SS</div>
+          <span class="font-bold text-sm text-slate-900 dark:text-white">StudySphere Menu</span>
+        </div>
+        <button onclick="toggleMobileDrawer(false)" class="p-1 rounded-lg text-slate-400 hover:text-slate-600 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Quick Toggles Inside Menu: Theme Switcher & Font Size (Pushed inside menu!) -->
+      <div class="grid grid-cols-2 gap-2 mt-2.5 shrink-0">
+        <!-- Theme Toggle inside Drawer -->
+        <button onclick="toggleDarkMode()" 
+                class="p-2 rounded-xl bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 flex items-center justify-center gap-1.5 text-xs font-bold text-slate-700 dark:text-slate-300">
+          <span id="drawerThemeIcon">🌓</span>
+          <span>थीम बदला</span>
+        </button>
+
+        <!-- Font Toggle inside Drawer -->
+        <button onclick="toggleFontSize()" 
+                class="p-2 rounded-xl bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 flex items-center justify-center gap-1.5 text-xs font-bold text-slate-700 dark:text-slate-300">
+          <span>फॉन्ट:</span>
+          <span id="drawerFontBadge" class="uppercase font-extrabold text-indigo-600 dark:text-indigo-400">M</span>
+        </button>
+      </div>
+
+      <!-- Compact Drawer Navigation Links -->
+      <nav class="mt-2.5 flex flex-col gap-1 text-xs font-semibold text-slate-700 dark:text-slate-200 shrink-0">
+        
+        <a href="index.html" onclick="toggleMobileDrawer(false)" class="flex items-center gap-2.5 px-3 py-2 rounded-xl bg-indigo-50/60 dark:bg-indigo-950/40 text-indigo-700 dark:text-indigo-300 font-bold">
+          <svg class="w-4 h-4 text-indigo-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+          <span>Home (मुख्यपृष्ठ)</span>
+        </a>
+
+        <a href="progress.html" onclick="toggleMobileDrawer(false)" class="flex items-center justify-between px-3 py-2 rounded-xl hover:bg-emerald-50 dark:hover:bg-emerald-950/40 text-emerald-700 dark:text-emerald-300 font-bold">
+          <div class="flex items-center gap-2.5">
+            <svg class="w-4 h-4 text-emerald-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+            <span>माझी प्रगती (My Stats)</span>
+          </div>
+          <span id="drawerSolvedCountBadge" class="text-[10px] px-1.5 py-0.2 rounded-full bg-emerald-600 text-white font-extrabold">0</span>
+        </a>
+
+        <!-- Install PWA App Button Inside Drawer -->
+        <button id="drawerPwaInstallBtn" onclick="toggleMobileDrawer(false); triggerPwaInstall();" class="flex items-center gap-2.5 px-3 py-2 rounded-xl bg-indigo-50 dark:bg-indigo-950/60 text-indigo-700 dark:text-indigo-300 font-bold text-left">
+          <span class="text-base">📲</span>
+          <span>ॲप इन्स्टॉल करा (Install App)</span>
+        </button>
+
+        <a href="https://t.me/MPSCstudysphere" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2.5 px-3 py-2 rounded-xl hover:bg-sky-50 dark:hover:bg-sky-950/40 text-sky-600 dark:text-sky-400">
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.121l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.535-.197 1.006.128.832.946z"/></svg>
+          <span>Telegram Community</span>
+        </a>
+
+        <button onclick="toggleMobileDrawer(false); openModal('aboutModal');" class="flex items-center gap-2.5 px-3 py-2 rounded-xl text-left hover:bg-slate-100 dark:hover:bg-slate-800">
+          <svg class="w-4 h-4 text-emerald-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+          <span>About (माहिती)</span>
+        </button>
+
+        <button onclick="toggleMobileDrawer(false); openModal('contactModal');" class="flex items-center gap-2.5 px-3 py-2 rounded-xl text-left hover:bg-slate-100 dark:hover:bg-slate-800">
+          <svg class="w-4 h-4 text-amber-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <span>Contact (संपर्क)</span>
+        </button>
+      </nav>
+    </div>
+
+    <!-- Drawer Bottom (Prominent Donate Button - Always 100% Directly Visible without any scroll!) -->
+    <div class="p-3 border-t border-slate-100 dark:border-slate-800 bg-slate-50 dark:bg-slate-900/80 shrink-0">
+      <button onclick="toggleMobileDrawer(false); handleDonateClick();" class="w-full py-2.5 px-3 rounded-xl bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white font-bold text-xs flex items-center justify-center gap-2 shadow-lg shadow-amber-500/30 active:scale-95 transition-all">
+        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+        <span>Donate Support (सहकार्य करा)</span>
+      </button>
+      <p class="text-[9px] text-center text-slate-400 mt-1 font-medium">StudySphere © 2026 • मोफत सराव केंद्र</p>
+    </div>
+  </div>
+
+  <main class="flex-grow max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 py-5 sm:py-8 w-full">
+
+    <!-- Top Announcement Strip (Clean Alignment) -->
+    <div class="mb-5 p-2.5 sm:p-3 rounded-xl bg-indigo-50/80 dark:bg-indigo-950/40 border border-indigo-200/80 dark:border-indigo-900/60 flex items-center justify-between gap-3 text-xs shadow-xs">
+      <div class="flex items-center gap-2 min-w-0">
+        <span class="w-6 h-6 rounded-lg bg-indigo-600 text-white flex items-center justify-center text-xs shrink-0 font-bold shadow-xs">🎯</span>
+        <p class="text-indigo-950 dark:text-indigo-200 font-semibold truncate">
+          MPSC गट-क २०२६ ची तयारी: सर्व सराव चाचण्या आणि संयुक्त मॉक टेस्ट्स मोफत उपलब्ध आहेत.
+        </p>
+      </div>
+      <span class="hidden sm:inline-flex text-[10px] font-extrabold uppercase px-2 py-0.5 rounded-full bg-indigo-200/80 dark:bg-indigo-900/80 text-indigo-800 dark:text-indigo-200 border border-indigo-300 dark:border-indigo-800 shrink-0">
+        New Syllabus
+      </span>
+    </div>
 
     <!-- ========================================================================= -->
-    <!-- ADVANCED OFFICIAL PRINT/PDF HEADER (VISIBLE ONLY IN PRINT / PDF MODE)      -->
+    <!-- FEATURE: ⏳ MPSC GROUP C 2026 LIVE EXAM COUNTDOWN CLOCK (COMPACT & SMALL) -->
     <!-- ========================================================================= -->
-    <div class="print-only mb-5 pb-3 border-b-2 border-indigo-600">
-      <div class="flex items-center justify-between gap-4">
-        <div class="flex items-center gap-3">
-          <div class="w-10 h-10 rounded-xl bg-indigo-600 text-white font-extrabold flex items-center justify-center text-sm shadow-sm">
-            SS
+    <div class="mb-6 p-3 sm:p-3.5 rounded-xl bg-gradient-to-r from-slate-900 via-indigo-950 to-slate-900 text-white border border-indigo-500/30 shadow-md relative overflow-hidden">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2.5 relative z-10">
+        
+        <!-- Left: Compact Info -->
+        <div class="flex items-center gap-2.5 min-w-0">
+          <div class="w-8 h-8 rounded-lg bg-indigo-600/40 border border-indigo-400/30 flex items-center justify-center text-sm shrink-0">
+            ⏳
           </div>
-          <div>
-            <h1 class="text-xl font-extrabold tracking-tight text-slate-900 leading-tight">
-              StudySphere — MPSC Group C 2026
-            </h1>
-            <p class="text-xs text-slate-600 font-semibold">
-              स्पर्धा परीक्षा ऑनलाइन सराव केंद्र • अधिकृत चाचणी निकाल व संपूर्ण प्रश्नपत्रिका
+          <div class="min-w-0">
+            <div class="flex items-center gap-1.5 mb-0.5">
+              <span class="px-1.5 py-0.2 rounded text-[9px] font-extrabold uppercase bg-amber-400/20 text-amber-300 border border-amber-300/30">
+                Exam Countdown
+              </span>
+              <span class="text-[11px] text-indigo-200 font-bold truncate">
+                संयुक्त पूर्व परीक्षा — ०३ जानेवारी २०२७
+              </span>
+            </div>
+            <p class="text-[10px] text-slate-400 font-medium truncate">
+              वेळेचे योग्य नियोजन करा आणि सातत्याने सराव सुरू ठेवा
             </p>
           </div>
         </div>
-        <div class="text-right text-[10px] text-slate-500">
-          <span class="block font-bold text-slate-800 text-xs">
-            पोर्टल: <a href="https://tinyurl.com/MPSC-StudySphere" target="_blank" class="print-link font-extrabold">https://tinyurl.com/MPSC-StudySphere</a>
-          </span>
-          <span id="printDateStamp">तारीख: ०७ ऑक्टोबर २०२६</span>
-        </div>
-      </div>
 
-      <!-- Print Score Summary Strip -->
-      <div class="mt-3 p-2.5 rounded-lg bg-slate-100 border border-slate-300 grid grid-cols-4 gap-2 text-center text-xs">
-        <div>
-          <span class="text-[10px] text-slate-500 block">चाचणी शीर्षक</span>
-          <span id="printTitleBadge" class="font-bold text-slate-900 truncate block">सराव चाचणी</span>
+        <!-- Right: Small Compact 4-Cell Countdown Blocks -->
+        <div class="grid grid-cols-4 gap-1.5 sm:gap-2 text-center shrink-0">
+          <div class="px-2 py-1 rounded-lg bg-white/10 backdrop-blur border border-white/10 min-w-[46px] sm:min-w-[52px]">
+            <span id="cdDays" class="text-xs sm:text-sm font-extrabold text-white block leading-tight">००</span>
+            <span class="text-[8px] sm:text-[9px] text-indigo-200 uppercase font-semibold block">दिवस</span>
+          </div>
+          <div class="px-2 py-1 rounded-lg bg-white/10 backdrop-blur border border-white/10 min-w-[46px] sm:min-w-[52px]">
+            <span id="cdHours" class="text-xs sm:text-sm font-extrabold text-white block leading-tight">००</span>
+            <span class="text-[8px] sm:text-[9px] text-indigo-200 uppercase font-semibold block">तास</span>
+          </div>
+          <div class="px-2 py-1 rounded-lg bg-white/10 backdrop-blur border border-white/10 min-w-[46px] sm:min-w-[52px]">
+            <span id="cdMinutes" class="text-xs sm:text-sm font-extrabold text-white block leading-tight">००</span>
+            <span class="text-[8px] sm:text-[9px] text-indigo-200 uppercase font-semibold block">मिनिटे</span>
+          </div>
+          <div class="px-2 py-1 rounded-lg bg-white/10 backdrop-blur border border-white/10 min-w-[46px] sm:min-w-[52px]">
+            <span id="cdSeconds" class="text-xs sm:text-sm font-extrabold text-amber-400 block leading-tight">००</span>
+            <span class="text-[8px] sm:text-[9px] text-indigo-200 uppercase font-semibold block">सेकंद</span>
+          </div>
         </div>
-        <div>
-          <span class="text-[10px] text-slate-500 block">मिळालेले गुण</span>
-          <span id="printScoreBadge" class="font-extrabold text-indigo-700 block">०.०० / २०</span>
-        </div>
-        <div>
-          <span class="text-[10px] text-slate-500 block">अचूकता (Accuracy)</span>
-          <span id="printAccuracyBadge" class="font-extrabold text-emerald-700 block">०%</span>
-        </div>
-        <div>
-          <span class="text-[10px] text-slate-500 block">निगेटिव्ह वजावट</span>
-          <span id="printNegBadge" class="font-extrabold text-rose-700 block">-०.२५ प्रति चूक</span>
-        </div>
+
       </div>
     </div>
 
-    <!-- Empty / No-Result Fallback State -->
-    <div id="noResultState" class="hidden text-center py-16 px-4 bg-white dark:bg-[#131d31] rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm">
-      <div class="w-16 h-16 bg-indigo-50 dark:bg-indigo-950/60 text-indigo-600 dark:text-indigo-400 rounded-2xl flex items-center justify-center mx-auto mb-3 shadow-inner">
-        <svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
-      </div>
-      <h2 class="text-base sm:text-lg font-bold text-slate-900 dark:text-white">सध्या कोणताही निकाल उपलब्ध नाही</h2>
-      <p class="text-xs text-slate-500 dark:text-slate-400 mt-1 max-w-sm mx-auto leading-relaxed">
-        निकाल पाहण्यासाठी कृपया प्रथम कोणतीही सराव चाचणी सोडवा किंवा 'माझी प्रगती' मधून सोडवलेला निकाल निवडा.
-      </p>
-      <div class="mt-5 flex items-center justify-center gap-3">
-        <a href="test-list.html" class="px-4 py-2 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-bold shadow-md shadow-indigo-600/30 transition-all">
-          चाचणी सूचीकडे जा
-        </a>
-        <a href="progress.html" class="px-4 py-2 rounded-xl bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 text-xs font-bold transition-all">
-          माझी प्रगती डॅशबोर्ड
-        </a>
-      </div>
-    </div>
-
-    <!-- Active Result Container -->
-    <div id="activeResultContainer" class="space-y-5 sm:space-y-6">
-
-      <!-- Historical View Mode Alert Banner (जर जुना निकाल पाहत असाल तर) -->
-      <div id="historyViewModeBanner" class="hidden no-print p-3 sm:p-3.5 rounded-2xl bg-indigo-500/15 border border-indigo-300 dark:border-indigo-800 text-indigo-900 dark:text-indigo-200 text-xs flex items-center justify-between gap-3 shadow-sm">
-        <div class="flex items-center gap-2">
-          <span class="text-base shrink-0">📜</span>
-          <p class="font-medium">
-            <strong class="font-bold">शेवटचा सोडवलेला निकाल (Last Attempt Result):</strong> 
-            हा निकाल तुमच्या फोनमधील सेव्ह नोंदींनुसार दर्शवला जात आहे.
-          </p>
-        </div>
-        <a href="progress.html" class="text-indigo-600 dark:text-indigo-400 font-bold hover:underline shrink-0">
-          प्रगतीकडे परत जा ›
-        </a>
-      </div>
-
-      <!-- Top Score Summary Banner -->
-      <div class="relative overflow-hidden rounded-2xl sm:rounded-3xl bg-gradient-to-br from-indigo-900 via-indigo-800 to-slate-900 text-white p-5 sm:p-7 shadow-xl border border-indigo-700/40">
-        <div class="absolute -right-12 -bottom-12 w-56 h-56 rounded-full bg-indigo-500/20 blur-3xl pointer-events-none"></div>
-
-        <div class="relative z-10">
-          
-          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-4 border-b border-indigo-700/50">
-            <div>
-              <span id="resultModeBadge" class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[10px] sm:text-[11px] font-extrabold uppercase tracking-wide bg-amber-400/20 text-amber-300 border border-amber-300/30 mb-1.5">
-                चाचणी निकाल (Test Result)
-              </span>
-              <h1 id="testTitle" class="text-lg sm:text-2xl font-extrabold text-white leading-snug">
-                सराव चाचणी निकाल
-              </h1>
-            </div>
-
-            <!-- Quick Utility Buttons: Image Card, Share, PDF, Retake -->
-            <div class="flex flex-wrap items-center gap-1.5 sm:gap-2 no-print">
-              <!-- CANVAS WHATSAPP GRAPHIC SCORECARD GENERATOR -->
-              <button onclick="generateAndDownloadScorecardImage()" title="व्हॉट्सॲप स्टेटससाठी इमेज स्कोअरकार्ड बनवा" 
-                      class="px-3 py-1.5 rounded-xl bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white font-bold text-xs flex items-center gap-1.5 shadow-sm active:scale-95 transition-all">
-                <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-                <span>📸 इमेज कार्ड</span>
-              </button>
-
-              <button onclick="shareScoreWhatsApp()" title="WhatsApp वर मजकूर शेअर करा" class="px-3 py-1.5 rounded-xl bg-emerald-600/90 hover:bg-emerald-600 text-white font-bold text-xs flex items-center gap-1.5 shadow-sm active:scale-95 transition-all">
-                <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
-                <span>WhatsApp</span>
-              </button>
-
-              <!-- Print / PDF Button with Clickable Hyperlink & Auto Filename -->
-              <button onclick="prepareAndPrintPdf()" title="PDF सेव्ह किंवा प्रिंट करा" class="px-3 py-1.5 rounded-xl bg-white/10 hover:bg-white/20 border border-white/20 text-white font-bold text-xs backdrop-blur transition-all flex items-center gap-1.5 active:scale-95">
-                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4H7v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"/></svg>
-                <span class="hidden xs:inline">Print / PDF</span>
-              </button>
-
-              <button onclick="retakeTest()" class="px-3 py-1.5 rounded-xl bg-indigo-500 hover:bg-indigo-600 text-white font-bold text-xs shadow-md transition-all flex items-center gap-1.5 active:scale-95">
-                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/></svg>
-                <span>पुन्हा सोडवा</span>
-              </button>
-            </div>
-          </div>
-
-          <!-- 4-Cell Metric Tiles Grid -->
-          <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5 sm:gap-4 mt-5">
-            
-            <!-- Total Marks -->
-            <div class="p-3.5 rounded-xl sm:rounded-2xl bg-white/10 backdrop-blur border border-white/10 flex flex-col justify-between">
-              <span class="text-[11px] sm:text-xs text-indigo-200 font-semibold">मिळालेले गुण</span>
-              <div class="mt-1 flex items-baseline gap-1">
-                <span id="scoreObtained" class="text-xl sm:text-3xl font-extrabold text-white">०.००</span>
-                <span id="scoreTotal" class="text-xs text-indigo-200">/ ०</span>
-              </div>
-              <span id="percentageBadge" class="text-[10px] sm:text-[11px] font-bold text-amber-300 mt-1">०% गुण</span>
-            </div>
-
-            <!-- Accuracy -->
-            <div class="p-3.5 rounded-xl sm:rounded-2xl bg-white/10 backdrop-blur border border-white/10 flex flex-col justify-between">
-              <span class="text-[11px] sm:text-xs text-indigo-200 font-semibold">अचूकता (Accuracy)</span>
-              <div class="mt-1 flex items-baseline gap-1">
-                <span id="accuracyVal" class="text-xl sm:text-3xl font-extrabold text-emerald-400">०%</span>
-              </div>
-              <span class="text-[10px] sm:text-[11px] text-slate-300 mt-1">प्रयत्नांपैकी अचूक</span>
-            </div>
-
-            <!-- Time Spent -->
-            <div class="p-3.5 rounded-xl sm:rounded-2xl bg-white/10 backdrop-blur border border-white/10 flex flex-col justify-between">
-              <span class="text-[11px] sm:text-xs text-indigo-200 font-semibold">घेतलेला वेळ</span>
-              <div class="mt-1 flex items-baseline gap-1">
-                <span id="timeSpentVal" class="text-xl sm:text-3xl font-extrabold text-white">००:००</span>
-              </div>
-              <span id="speedMetricBadge" class="text-[10px] sm:text-[11px] text-slate-300 mt-1">० सेकंद/प्रश्न</span>
-            </div>
-
-            <!-- Negative Deduction -->
-            <div class="p-3.5 rounded-xl sm:rounded-2xl bg-white/10 backdrop-blur border border-white/10 flex flex-col justify-between">
-              <span class="text-[11px] sm:text-xs text-indigo-200 font-semibold">निगेटिव्ह वजावट</span>
-              <div class="mt-1 flex items-baseline gap-1">
-                <span id="negDeductionVal" class="text-xl sm:text-3xl font-extrabold text-rose-400">-०.००</span>
-              </div>
-              <span class="text-[10px] sm:text-[11px] text-slate-300 mt-1">-०.२५ प्रति चूक</span>
-            </div>
-
-          </div>
-
-        </div>
-      </div>
-
-      <!-- Quick Attempt Stat Badges + ADVANCED MISTAKE NOTEBOOK (WRONG / SKIPPED / BOTH) -->
-      <div class="space-y-3">
-        <div class="grid grid-cols-3 gap-2 sm:gap-3">
-          <div class="p-3 sm:p-3.5 rounded-xl bg-emerald-50 dark:bg-emerald-950/40 border border-emerald-200 dark:border-emerald-800/50 flex items-center justify-between">
-            <div class="flex items-center gap-2">
-              <div class="w-6 h-6 sm:w-7 sm:h-7 rounded-lg bg-emerald-500 text-white flex items-center justify-center font-bold text-xs">✓</div>
-              <div>
-                <p class="text-[10px] sm:text-xs text-emerald-800 dark:text-emerald-300 font-semibold">बरोबर</p>
-                <p id="statCorrect" class="text-base sm:text-lg font-extrabold text-emerald-700 dark:text-emerald-400">०</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="p-3 sm:p-3.5 rounded-xl bg-rose-50 dark:bg-rose-950/40 border border-rose-200 dark:border-rose-800/50 flex items-center justify-between">
-            <div class="flex items-center gap-2">
-              <div class="w-6 h-6 sm:w-7 sm:h-7 rounded-lg bg-rose-500 text-white flex items-center justify-center font-bold text-xs">✗</div>
-              <div>
-                <p class="text-[10px] sm:text-xs text-rose-800 dark:text-rose-300 font-semibold">चुकीचे</p>
-                <p id="statIncorrect" class="text-base sm:text-lg font-extrabold text-rose-700 dark:text-rose-400">०</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="p-3 sm:p-3.5 rounded-xl bg-slate-100 dark:bg-slate-800/70 border border-slate-200 dark:border-slate-700 flex items-center justify-between">
-            <div class="flex items-center gap-2">
-              <div class="w-6 h-6 sm:w-7 sm:h-7 rounded-lg bg-slate-400 text-white flex items-center justify-center font-bold text-xs">—</div>
-              <div>
-                <p class="text-[10px] sm:text-xs text-slate-700 dark:text-slate-300 font-semibold">अनुत्तरित</p>
-                <p id="statUnattempted" class="text-base sm:text-lg font-extrabold text-slate-700 dark:text-slate-300">०</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- TARGETED RE-ATTEMPT MISTAKE NOTEBOOK BANNER -->
-        <div id="mistakesActionBanner" class="hidden no-print p-3 sm:p-4 rounded-2xl bg-gradient-to-r from-rose-50 via-amber-50 to-indigo-50 dark:from-rose-950/40 dark:via-amber-950/30 dark:to-indigo-950/40 border border-rose-200 dark:border-rose-900/60 flex flex-col md:flex-row items-stretch md:items-center justify-between gap-3 shadow-sm">
-          <div class="flex items-center gap-3">
-            <div class="w-8 h-8 rounded-xl bg-rose-500 text-white flex items-center justify-center font-bold text-sm shrink-0 shadow-sm">
-              🎯
-            </div>
-            <div>
-              <h3 class="text-xs sm:text-sm font-bold text-rose-950 dark:text-rose-100">
-                चुकलेले व अनुत्तरित प्रश्न पुन्हा सोडवा (Targeted Re-attempt)
-              </h3>
-              <p class="text-[11px] text-slate-600 dark:text-slate-300">
-                चुकलेले (<span id="mistakeBannerCount" class="font-extrabold text-rose-600 dark:text-rose-400">०</span>) किंवा अनुत्तरित (<span id="skippedBannerCount" class="font-extrabold text-amber-600 dark:text-amber-400">०</span>) प्रश्न त्वरित सोडवून परिपूर्ण सराव करा.
-              </p>
-            </div>
-          </div>
-
-          <!-- Compact Action Buttons -->
-          <div class="flex flex-wrap items-center gap-1.5 shrink-0">
-            <!-- 1. Incorrect Only Button -->
-            <button id="btnRetryWrong" onclick="startReattemptSession('wrong')" 
-                    class="px-2.5 py-1.5 rounded-lg bg-rose-600 hover:bg-rose-700 text-white text-[11px] font-bold shadow-sm active:scale-95 transition-all flex items-center gap-1">
-              <span>❌ केवळ चुकलेले (<span id="cntWrongBtn">०</span>)</span>
-            </button>
-
-            <!-- 2. Unattempted Only Button -->
-            <button id="btnRetrySkipped" onclick="startReattemptSession('skipped')" 
-                    class="px-2.5 py-1.5 rounded-lg bg-amber-600 hover:bg-amber-700 text-white text-[11px] font-bold shadow-sm active:scale-95 transition-all flex items-center gap-1">
-              <span>⏳ केवळ अनुत्तरित (<span id="cntSkippedBtn">०</span>)</span>
-            </button>
-
-            <!-- 3. Both (Wrong + Skipped) Button -->
-            <button id="btnRetryBoth" onclick="startReattemptSession('both')" 
-                    class="px-2.5 py-1.5 rounded-lg bg-indigo-600 hover:bg-indigo-700 text-white text-[11px] font-bold shadow-sm active:scale-95 transition-all flex items-center gap-1">
-              <span>🎯 दोन्ही एकत्र (<span id="cntBothBtn">०</span>)</span>
-            </button>
-          </div>
-        </div>
-      </div>
-
-      <!-- LOCAL STORAGE / DEVICE VAULT NOTIFICATION CARD -->
-      <div id="deviceVaultNotice" class="no-print p-3.5 sm:p-4 rounded-2xl bg-gradient-to-r from-indigo-50/90 via-sky-50/70 to-indigo-50/90 dark:from-indigo-950/40 dark:via-[#111c33] dark:to-indigo-950/40 border border-indigo-200/80 dark:border-indigo-900/60 flex items-start gap-3 shadow-sm">
-        <div class="w-8 h-8 sm:w-9 sm:h-9 rounded-xl bg-indigo-600 text-white flex items-center justify-center shrink-0 mt-0.5 shadow-sm">
-          <svg class="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
-          </svg>
-        </div>
-        <div class="flex-1 min-w-0">
-          <div class="flex flex-wrap items-center gap-2 mb-0.5">
-            <h3 id="vaultNoticeTitle" class="text-xs sm:text-sm font-bold text-slate-900 dark:text-white">
-              या चाचणीचा निकाल तुमच्या फोनमध्ये सेव्ह आहे!
-            </h3>
-            <span id="vaultAttemptBadge" class="text-[10px] font-extrabold px-2 py-0.5 rounded-full bg-indigo-100 dark:bg-indigo-900 text-indigo-700 dark:text-indigo-300 border border-indigo-200 dark:border-indigo-800">
-              प्रयत्न १
-            </span>
-            <span id="vaultBestBadge" class="hidden text-[10px] font-extrabold px-2 py-0.5 rounded-full bg-emerald-100 dark:bg-emerald-950 text-emerald-700 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800">
-              सर्वोत्तम: ०.००
-            </span>
-          </div>
-          <p class="text-[11px] sm:text-xs text-slate-600 dark:text-slate-300 leading-relaxed font-medium">
-            कोणत्याही लॉगिनशिवाय तुमचा प्रत्येक प्रयत्न फोनमध्ये सेव्ह होतो. तुम्ही 'माझी प्रगती' किंवा चाचणी सूचीवर जाऊन कधीही हा निकाल पुन्हा पाहू शकता.
-          </p>
-        </div>
-      </div>
-
-      <!-- Review Section Header, Language Switcher & Filter Controls -->
-      <div class="flex flex-col md:flex-row md:items-center justify-between gap-3 pb-3 border-b border-slate-200 dark:border-slate-800 no-print">
+    <!-- ========================================== -->
+    <!-- SECTION 1: MPSC Group C 2026 — PRELIMS -->
+    <!-- ========================================== -->
+    <section class="mb-10 sm:mb-12">
+      <div class="flex items-center gap-3 mb-4 sm:mb-5 pb-2 border-b border-slate-200 dark:border-slate-800">
+        <div class="w-2.5 h-6 bg-indigo-600 rounded-full"></div>
         <div>
-          <h2 class="text-sm sm:text-base font-bold text-slate-900 dark:text-white flex items-center gap-2">
-            <span>सर्व प्रश्नांचे सविस्तर स्पष्टीकरण (Detailed Review)</span>
+          <h2 class="text-lg sm:text-xl font-bold tracking-tight text-slate-900 dark:text-white flex items-center gap-2">
+            MPSC Group C 2026 — PRELIMS
           </h2>
-          <p class="text-[11px] text-slate-500 dark:text-slate-400">⭐ वर क्लिक करून अवघड प्रश्न सेव्ह करा • त्रुटी आढळल्यास Report करा</p>
-        </div>
-
-        <div class="flex flex-wrap items-center gap-2">
-          <!-- Bilingual Language Selector for Review -->
-          <div class="flex items-center p-0.5 rounded-lg bg-slate-200/80 dark:bg-slate-800 text-[10px] sm:text-[11px] font-bold">
-            <button type="button" onclick="setReviewLanguage('both')" id="reviewLangBoth" 
-                    class="px-2.5 py-1 rounded-md transition-all bg-white dark:bg-slate-900 text-indigo-600 dark:text-indigo-400 shadow-sm">
-              दोन्ही
-            </button>
-            <button type="button" onclick="setReviewLanguage('mr')" id="reviewLangMr" 
-                    class="px-2.5 py-1 rounded-md transition-all text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white">
-              मराठी
-            </button>
-            <button type="button" onclick="setReviewLanguage('en')" id="reviewLangEn" 
-                    class="px-2.5 py-1 rounded-md transition-all text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white">
-              Eng
-            </button>
-          </div>
-
-          <!-- Question Attempt Filters -->
-          <div class="flex items-center p-0.5 rounded-lg bg-slate-200/80 dark:bg-slate-800 text-[10px] sm:text-[11px] font-bold">
-            <button onclick="filterQuestions('all')" id="btnFilterAll" class="q-filter px-2 sm:px-2.5 py-1 rounded-md bg-white dark:bg-slate-900 text-indigo-600 dark:text-indigo-400 shadow-sm">
-              सर्व (<span id="countAll">०</span>)
-            </button>
-            <button onclick="filterQuestions('incorrect')" id="btnFilterIncorrect" class="q-filter px-2 sm:px-2.5 py-1 rounded-md text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white">
-              चूक (<span id="countIncorrect">०</span>)
-            </button>
-            <button onclick="filterQuestions('correct')" id="btnFilterCorrect" class="q-filter px-2 sm:px-2.5 py-1 rounded-md text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white">
-              बरोबर (<span id="countCorrect">०</span>)
-            </button>
-            <button onclick="filterQuestions('skipped')" id="btnFilterSkipped" class="q-filter px-2 sm:px-2.5 py-1 rounded-md text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white">
-              अनुत्तरित (<span id="countSkipped">०</span>)
-            </button>
-          </div>
+          <p class="text-xs text-slate-500 dark:text-slate-400 mt-0.5">संयुक्त पूर्व परीक्षा विषयनिहाय सराव चाचण्या (MCQ Tests)</p>
         </div>
       </div>
 
-      <!-- Dynamic Questions Review Cards Container -->
-      <div id="questionsReviewContainer" class="space-y-4">
-        <!-- Rendered dynamically via JavaScript -->
+      <!-- Subject Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3.5 sm:gap-4">
+
+        <!-- 1. History -->
+        <a href="test-list.html?section=prelims&subject=history" class="subject-card group flex items-center justify-between p-3.5 sm:p-4 rounded-xl bg-white dark:bg-[#131d31] border border-slate-200/90 dark:border-slate-800 hover:border-indigo-400 dark:hover:border-indigo-500 shadow-sm hover:shadow-md transition-all duration-200">
+          <div class="flex items-center gap-3.5 min-w-0">
+            <div class="w-10 h-10 rounded-lg bg-amber-50 dark:bg-amber-950/50 text-amber-600 dark:text-amber-400 flex items-center justify-center shrink-0 border border-amber-200/60 dark:border-amber-900/50 group-hover:scale-105 transition-transform">
+              <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/>
+                <path d="M6 6h10M6 10h10M6 14h6"/>
+              </svg>
+            </div>
+            <div class="flex flex-col min-w-0">
+              <span class="subject-title font-bold text-slate-900 dark:text-slate-100 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 truncate">History</span>
+              <span class="subject-subtext text-slate-500 dark:text-slate-400 font-medium">इतिहास</span>
+            </div>
+          </div>
+          <svg class="w-5 h-5 text-slate-400 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 group-hover:translate-x-1 transition-all shrink-0 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
+          </svg>
+        </a>
+
+        <!-- 2. Geography -->
+        <a href="test-list.html?section=prelims&subject=geography" class="subject-card group flex items-center justify-between p-3.5 sm:p-4 rounded-xl bg-white dark:bg-[#131d31] border border-slate-200/90 dark:border-slate-800 hover:border-indigo-400 dark:hover:border-indigo-500 shadow-sm hover:shadow-md transition-all duration-200">
+          <div class="flex items-center gap-3.5 min-w-0">
+            <div class="w-10 h-10 rounded-lg bg-emerald-50 dark:bg-emerald-950/50 text-emerald-600 dark:text-emerald-400 flex items-center justify-center shrink-0 border border-emerald-200/60 dark:border-emerald-900/50 group-hover:scale-105 transition-transform">
+              <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"/>
+                <line x1="2" y1="12" x2="22" y2="12"/>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+              </svg>
+            </div>
+            <div class="flex flex-col min-w-0">
+              <span class="subject-title font-bold text-slate-900 dark:text-slate-100 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 truncate">Geography</span>
+              <span class="subject-subtext text-slate-500 dark:text-slate-400 font-medium">भूगोल</span>
+            </div>
+          </div>
+          <svg class="w-5 h-5 text-slate-400 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 group-hover:translate-x-1 transition-all shrink-0 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
+          </svg>
+        </a>
+
+        <!-- 3. Economics -->
+        <a href="test-list.html?section=prelims&subject=economics" class="subject-card group flex items-center justify-between p-3.5 sm:p-4 rounded-xl bg-white dark:bg-[#131d31] border border-slate-200/90 dark:border-slate-800 hover:border-indigo-400 dark:hover:border-indigo-500 shadow-sm hover:shadow-md transition-all duration-200">
+          <div class="flex items-center gap-3.5 min-w-0">
+            <div class="w-10 h-10 rounded-lg bg-blue-50 dark:bg-blue-950/50 text-blue-600 dark:text-blue-400 flex items-center justify-center shrink-0 border border-blue-200/60 dark:border-blue-900/50 group-hover:scale-105 transition-transform">
+              <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="12" y1="1" x2="12" y2="23"/>
+                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+              </svg>
+            </div>
+            <div class="flex flex-col min-w-0">
+              <span class="subject-title font-bold text-slate-900 dark:text-slate-100 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 truncate">Economics</span>
+              <span class="subject-subtext text-slate-500 dark:text-slate-400 font-medium">अर्थशास्त्र</span>
+            </div>
+          </div>
+          <svg class="w-5 h-5 text-slate-400 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 group-hover:translate-x-1 transition-all shrink-0 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
+          </svg>
+        </a>
+
+        <!-- 4. Polity & Civics -->
+        <a href="test-list.html?section=prelims&subject=polity-civics" class="subject-card group flex items-center justify-between p-3.5 sm:p-4 rounded-xl bg-white dark:bg-[#131d31] border border-slate-200/90 dark:border-slate-800 hover:border-indigo-400 dark:hover:border-indigo-500 shadow-sm hover:shadow-md transition-all duration-200">
+          <div class="flex items-center gap-3.5 min-w-0">
+            <div class="w-10 h-10 rounded-lg bg-purple-50 dark:bg-purple-950/50 text-purple-600 dark:text-purple-400 flex items-center justify-center shrink-0 border border-purple-200/60 dark:border-purple-900/50 group-hover:scale-105 transition-transform">
+              <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+            </div>
+            <div class="flex flex-col min-w-0">
+              <span class="subject-title font-bold text-slate-900 dark:text-slate-100 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 truncate">Polity & Civics</span>
+              <span class="subject-subtext text-slate-500 dark:text-slate-400 font-medium">राज्यशास्त्र व नागरिकशास्त्र</span>
+            </div>
+          </div>
+          <svg class="w-5 h-5 text-slate-400 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 group-hover:translate-x-1 transition-all shrink-0 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
+          </svg>
+        </a>
+
+        <!-- 5. General Science -->
+        <a href="test-list.html?section=prelims&subject=general-science" class="subject-card group flex items-center justify-between p-3.5 sm:p-4 rounded-xl bg-white dark:bg-[#131d31] border border-slate-200/90 dark:border-slate-800 hover:border-indigo-400 dark:hover:border-indigo-500 shadow-sm hover:shadow-md transition-all duration-200">
+          <div class="flex items-center gap-3.5 min-w-0">
+            <div class="w-10 h-10 rounded-lg bg-teal-50 dark:bg-teal-950/50 text-teal-600 dark:text-teal-400 flex items-center justify-center shrink-0 border border-teal-200/60 dark:border-teal-900/50 group-hover:scale-105 transition-transform">
+              <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M10 2v7.31L4.69 19a2 2 0 0 0 1.74 3h11.14a2 2 0 0 0 1.74-3L14 9.31V2"/>
+                <path d="M8.5 2h7M14 9.3h-4"/>
+              </svg>
+            </div>
+            <div class="flex flex-col min-w-0">
+              <span class="subject-title font-bold text-slate-900 dark:text-slate-100 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 truncate">General Science</span>
+              <span class="subject-subtext text-slate-500 dark:text-slate-400 font-medium">सामान्य विज्ञान</span>
+            </div>
+          </div>
+          <svg class="w-5 h-5 text-slate-400 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 group-hover:translate-x-1 transition-all shrink-0 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
+          </svg>
+        </a>
+
+        <!-- 6. Current Affairs -->
+        <a href="test-list.html?section=prelims&subject=current-affairs" class="subject-card group flex items-center justify-between p-3.5 sm:p-4 rounded-xl bg-white dark:bg-[#131d31] border border-slate-200/90 dark:border-slate-800 hover:border-indigo-400 dark:hover:border-indigo-500 shadow-sm hover:shadow-md transition-all duration-200">
+          <div class="flex items-center gap-3.5 min-w-0">
+            <div class="w-10 h-10 rounded-lg bg-rose-50 dark:bg-rose-950/50 text-rose-600 dark:text-rose-400 flex items-center justify-center shrink-0 border border-rose-200/60 dark:border-rose-900/50 group-hover:scale-105 transition-transform">
+              <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"/>
+                <polyline points="12 6 12 12 16 14"/>
+              </svg>
+            </div>
+            <div class="flex flex-col min-w-0">
+              <span class="subject-title font-bold text-slate-900 dark:text-slate-100 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 truncate">Current Affairs</span>
+              <span class="subject-subtext text-slate-500 dark:text-slate-400 font-medium">चालू घडामोडी</span>
+            </div>
+          </div>
+          <svg class="w-5 h-5 text-slate-400 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 group-hover:translate-x-1 transition-all shrink-0 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
+          </svg>
+        </a>
+
+        <!-- 7. Mental Ability & Arithmetic -->
+        <a href="test-list.html?section=prelims&subject=mental-ability-arithmetic" class="subject-card group flex items-center justify-between p-3.5 sm:p-4 rounded-xl bg-white dark:bg-[#131d31] border border-slate-200/90 dark:border-slate-800 hover:border-indigo-400 dark:hover:border-indigo-500 shadow-sm hover:shadow-md transition-all duration-200 sm:col-span-2 lg:col-span-1">
+          <div class="flex items-center gap-3.5 min-w-0">
+            <div class="w-10 h-10 rounded-lg bg-indigo-50 dark:bg-indigo-950/50 text-indigo-600 dark:text-indigo-400 flex items-center justify-center shrink-0 border border-indigo-200/60 dark:border-indigo-900/50 group-hover:scale-105 transition-transform">
+              <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="4" y="2" width="16" height="20" rx="2"/>
+                <line x1="8" y1="6" x2="16" y2="6"/>
+                <line x1="16" y1="14" x2="16" y2="18"/>
+                <path d="M8 10h.01M12 10h.01M16 10h.01M8 14h.01M12 14h.01M8 18h.01M12 18h.01"/>
+              </svg>
+            </div>
+            <div class="flex flex-col min-w-0">
+              <span class="subject-title font-bold text-slate-900 dark:text-slate-100 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 truncate">Mental Ability & Arithmetic</span>
+              <span class="subject-subtext text-slate-500 dark:text-slate-400 font-medium">बुद्धिमत्ता व अंकगणित</span>
+            </div>
+          </div>
+          <svg class="w-5 h-5 text-slate-400 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 group-hover:translate-x-1 transition-all shrink-0 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
+          </svg>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- SECTION 2: MPSC Group C 2026 — MAINS -->
+    <!-- ========================================== -->
+    <section class="mb-10 sm:mb-12">
+      <div class="flex items-center gap-3 mb-4 sm:mb-5 pb-2 border-b border-slate-200 dark:border-slate-800">
+        <div class="w-2.5 h-6 bg-emerald-600 rounded-full"></div>
+        <div>
+          <h2 class="text-lg sm:text-xl font-bold tracking-tight text-slate-900 dark:text-white flex items-center gap-2">
+            MPSC Group C 2026 — MAINS
+          </h2>
+          <p class="text-xs text-slate-500 dark:text-slate-400 mt-0.5">मुख्य परीक्षा सविस्तर विषयनिहाय सराव (Paper 1 & Paper 2)</p>
+        </div>
       </div>
 
-    </div>
+      <!-- Sub heading: Paper 1 — Language -->
+      <div class="mb-6">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-slate-200/70 dark:bg-slate-800 text-xs font-bold text-slate-700 dark:text-slate-300 mb-3 uppercase tracking-wider">
+          <span>Paper 1 — Language</span>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3.5 sm:gap-4">
+          <!-- 1. Marathi -->
+          <a href="test-list.html?section=mains&subject=marathi" class="subject-card group flex items-center justify-between p-3.5 sm:p-4 rounded-xl bg-white dark:bg-[#131d31] border border-slate-200/90 dark:border-slate-800 hover:border-emerald-500 shadow-sm hover:shadow-md transition-all duration-200">
+            <div class="flex items-center gap-3.5 min-w-0">
+              <div class="w-10 h-10 rounded-lg bg-orange-50 dark:bg-orange-950/50 text-orange-600 dark:text-orange-400 flex items-center justify-center shrink-0 border border-orange-200/60 dark:border-orange-900/50 group-hover:scale-105 transition-transform font-bold text-sm">
+                अ
+              </div>
+              <div class="flex flex-col min-w-0">
+                <span class="subject-title font-bold text-slate-900 dark:text-slate-100 group-hover:text-emerald-600 dark:group-hover:text-emerald-400 truncate">Marathi</span>
+                <span class="subject-subtext text-slate-500 dark:text-slate-400 font-medium">मराठी</span>
+              </div>
+            </div>
+            <svg class="w-5 h-5 text-slate-400 group-hover:text-emerald-600 dark:group-hover:text-emerald-400 group-hover:translate-x-1 transition-all shrink-0 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+          </a>
 
-    <!-- ========================================================================= -->
-    <!-- OFFICIAL PRINT/PDF FOOTER (VISIBLE ONLY ON PRINTED PAGES / PDF)          -->
-    <!-- ========================================================================= -->
-    <div class="print-only mt-8 pt-4 border-t border-slate-300 text-center text-[10px] text-slate-600">
-      <p class="font-medium leading-relaxed">
-        StudySphere © २०२६ • MPSC गट-क संयुक्त पूर्व व मुख्य परीक्षा विनामूल्य सराव संच • अधिक चाचण्यांसाठी भेट द्या: 
-        <a href="https://tinyurl.com/MPSC-StudySphere" target="_blank" class="print-link font-extrabold text-indigo-700">https://tinyurl.com/MPSC-StudySphere</a>
-      </p>
-    </div>
+          <!-- 2. English -->
+          <a href="test-list.html?section=mains&subject=english" class="subject-card group flex items-center justify-between p-3.5 sm:p-4 rounded-xl bg-white dark:bg-[#131d31] border border-slate-200/90 dark:border-slate-800 hover:border-emerald-500 shadow-sm hover:shadow-md transition-all duration-200">
+            <div class="flex items-center gap-3.5 min-w-0">
+              <div class="w-10 h-10 rounded-lg bg-sky-50 dark:bg-sky-950/50 text-sky-600 dark:text-sky-400 flex items-center justify-center shrink-0 border border-sky-200/60 dark:border-sky-900/50 group-hover:scale-105 transition-transform font-bold text-sm">
+                En
+              </div>
+              <div class="flex flex-col min-w-0">
+                <span class="subject-title font-bold text-slate-900 dark:text-slate-100 group-hover:text-emerald-600 dark:group-hover:text-emerald-400 truncate">English</span>
+                <span class="subject-subtext text-slate-500 dark:text-slate-400 font-medium">इंग्रजी</span>
+              </div>
+            </div>
+            <svg class="w-5 h-5 text-slate-400 group-hover:text-emerald-600 dark:group-hover:text-emerald-400 group-hover:translate-x-1 transition-all shrink-0 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Sub heading: Paper 2 — General Studies & Intelligence -->
+      <div>
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-slate-200/70 dark:bg-slate-800 text-xs font-bold text-slate-700 dark:text-slate-300 mb-3 uppercase tracking-wider">
+          <span>Paper 2 — General Studies & Intelligence</span>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3.5 sm:gap-4">
+
+          <!-- 3. History -->
+          <a href="test-list.html?section=mains&subject=history" class="subject-card group flex items-center justify-between p-3.5 sm:p-4 rounded-xl bg-white dark:bg-[#131d31] border border-slate-200/90 dark:border-slate-800 hover:border-emerald-500 shadow-sm hover:shadow-md transition-all duration-200">
+            <div class="flex items-center gap-3.5 min-w-0">
+              <div class="w-10 h-10 rounded-lg bg-amber-50 dark:bg-amber-950/50 text-amber-600 dark:text-amber-400 flex items-center justify-center shrink-0 border border-amber-200/60 dark:border-amber-900/50 group-hover:scale-105 transition-transform">
+                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/><path d="M6 6h10M6 10h10M6 14h6"/></svg>
+              </div>
+              <div class="flex flex-col min-w-0">
+                <span class="subject-title font-bold text-slate-900 dark:text-slate-100 group-hover:text-emerald-600 dark:group-hover:text-emerald-400 truncate">History</span>
+                <span class="subject-subtext text-slate-500 dark:text-slate-400 font-medium">इतिहास</span>
+              </div>
+            </div>
+            <svg class="w-5 h-5 text-slate-400 group-hover:text-emerald-600 dark:group-hover:text-emerald-400 group-hover:translate-x-1 transition-all shrink-0 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+          </a>
+
+          <!-- 4. Geography -->
+          <a href="test-list.html?section=mains&subject=geography" class="subject-card group flex items-center justify-between p-3.5 sm:p-4 rounded-xl bg-white dark:bg-[#131d31] border border-slate-200/90 dark:border-slate-800 hover:border-emerald-500 shadow-sm hover:shadow-md transition-all duration-200">
+            <div class="flex items-center gap-3.5 min-w-0">
+              <div class="w-10 h-10 rounded-lg bg-emerald-50 dark:bg-emerald-950/50 text-emerald-600 dark:text-emerald-400 flex items-center justify-center shrink-0 border border-emerald-200/60 dark:border-emerald-900/50 group-hover:scale-105 transition-transform">
+                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+              </div>
+              <div class="flex flex-col min-w-0">
+                <span class="subject-title font-bold text-slate-900 dark:text-slate-100 group-hover:text-emerald-600 dark:group-hover:text-emerald-400 truncate">Geography</span>
+                <span class="subject-subtext text-slate-500 dark:text-slate-400 font-medium">भूगोल</span>
+              </div>
+            </div>
+            <svg class="w-5 h-5 text-slate-400 group-hover:text-emerald-600 dark:group-hover:text-emerald-400 group-hover:translate-x-1 transition-all shrink-0 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+          </a>
+
+          <!-- 5. Polity & Civics -->
+          <a href="test-list.html?section=mains&subject=polity-civics" class="subject-card group flex items-center justify-between p-3.5 sm:p-4 rounded-xl bg-white dark:bg-[#131d31] border border-slate-200/90 dark:border-slate-800 hover:border-emerald-500 shadow-sm hover:shadow-md transition-all duration-200">
+            <div class="flex items-center gap-3.5 min-w-0">
+              <div class="w-10 h-10 rounded-lg bg-purple-50 dark:bg-purple-950/50 text-purple-600 dark:text-purple-400 flex items-center justify-center shrink-0 border border-purple-200/60 dark:border-purple-900/50 group-hover:scale-105 transition-transform">
+                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              </div>
+              <div class="flex flex-col min-w-0">
+                <span class="subject-title font-bold text-slate-900 dark:text-slate-100 group-hover:text-emerald-600 dark:group-hover:text-emerald-400 truncate">Polity & Civics</span>
+                <span class="subject-subtext text-slate-500 dark:text-slate-400 font-medium">राज्यशास्त्र व नागरिकशास्त्र</span>
+              </div>
+            </div>
+            <svg class="w-5 h-5 text-slate-400 group-hover:text-emerald-600 dark:group-hover:text-emerald-400 group-hover:translate-x-1 transition-all shrink-0 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+          </a>
+
+          <!-- 6. Economics -->
+          <a href="test-list.html?section=mains&subject=economics" class="subject-card group flex items-center justify-between p-3.5 sm:p-4 rounded-xl bg-white dark:bg-[#131d31] border border-slate-200/90 dark:border-slate-800 hover:border-emerald-500 shadow-sm hover:shadow-md transition-all duration-200">
+            <div class="flex items-center gap-3.5 min-w-0">
+              <div class="w-10 h-10 rounded-lg bg-blue-50 dark:bg-blue-950/50 text-blue-600 dark:text-blue-400 flex items-center justify-center shrink-0 border border-blue-200/60 dark:border-blue-900/50 group-hover:scale-105 transition-transform">
+                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+              </div>
+              <div class="flex flex-col min-w-0">
+                <span class="subject-title font-bold text-slate-900 dark:text-slate-100 group-hover:text-emerald-600 dark:group-hover:text-emerald-400 truncate">Economics</span>
+                <span class="subject-subtext text-slate-500 dark:text-slate-400 font-medium">अर्थशास्त्र</span>
+              </div>
+            </div>
+            <svg class="w-5 h-5 text-slate-400 group-hover:text-emerald-600 dark:group-hover:text-emerald-400 group-hover:translate-x-1 transition-all shrink-0 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+          </a>
+
+          <!-- 7. General Science -->
+          <a href="test-list.html?section=mains&subject=general-science" class="subject-card group flex items-center justify-between p-3.5 sm:p-4 rounded-xl bg-white dark:bg-[#131d31] border border-slate-200/90 dark:border-slate-800 hover:border-emerald-500 shadow-sm hover:shadow-md transition-all duration-200">
+            <div class="flex items-center gap-3.5 min-w-0">
+              <div class="w-10 h-10 rounded-lg bg-teal-50 dark:bg-teal-950/50 text-teal-600 dark:text-teal-400 flex items-center justify-center shrink-0 border border-teal-200/60 dark:border-teal-900/50 group-hover:scale-105 transition-transform">
+                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 2v7.31L4.69 19a2 2 0 0 0 1.74 3h11.14a2 2 0 0 0 1.74-3L14 9.31V2"/><path d="M8.5 2h7M14 9.3h-4"/></svg>
+              </div>
+              <div class="flex flex-col min-w-0">
+                <span class="subject-title font-bold text-slate-900 dark:text-slate-100 group-hover:text-emerald-600 dark:group-hover:text-emerald-400 truncate">General Science</span>
+                <span class="subject-subtext text-slate-500 dark:text-slate-400 font-medium">सामान्य विज्ञान</span>
+              </div>
+            </div>
+            <svg class="w-5 h-5 text-slate-400 group-hover:text-emerald-600 dark:group-hover:text-emerald-400 group-hover:translate-x-1 transition-all shrink-0 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+          </a>
+
+          <!-- 8. Current Affairs -->
+          <a href="test-list.html?section=mains&subject=current-affairs" class="subject-card group flex items-center justify-between p-3.5 sm:p-4 rounded-xl bg-white dark:bg-[#131d31] border border-slate-200/90 dark:border-slate-800 hover:border-emerald-500 shadow-sm hover:shadow-md transition-all duration-200">
+            <div class="flex items-center gap-3.5 min-w-0">
+              <div class="w-10 h-10 rounded-lg bg-rose-50 dark:bg-rose-950/50 text-rose-600 dark:text-rose-400 flex items-center justify-center shrink-0 border border-rose-200/60 dark:border-rose-900/50 group-hover:scale-105 transition-transform">
+                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+              </svg>
+            </div>
+            <div class="flex flex-col min-w-0">
+              <span class="subject-title font-bold text-slate-900 dark:text-slate-100 group-hover:text-emerald-600 dark:group-hover:text-emerald-400 truncate">Current Affairs</span>
+              <span class="subject-subtext text-slate-500 dark:text-slate-400 font-medium">चालू घडामोडी</span>
+            </div>
+          </div>
+          <svg class="w-5 h-5 text-slate-400 group-hover:text-emerald-600 dark:group-hover:text-emerald-400 group-hover:translate-x-1 transition-all shrink-0 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+        </a>
+
+        <!-- 9. Mental Ability & Arithmetic -->
+        <a href="test-list.html?section=mains&subject=mental-ability-arithmetic" class="subject-card group flex items-center justify-between p-3.5 sm:p-4 rounded-xl bg-white dark:bg-[#131d31] border border-slate-200/90 dark:border-slate-800 hover:border-emerald-500 shadow-sm hover:shadow-md transition-all duration-200">
+          <div class="flex items-center gap-3.5 min-w-0">
+            <div class="w-10 h-10 rounded-lg bg-indigo-50 dark:bg-indigo-950/50 text-indigo-600 dark:text-indigo-400 flex items-center justify-center shrink-0 border border-indigo-200/60 dark:border-indigo-900/50 group-hover:scale-105 transition-transform">
+              <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="8" y1="6" x2="16" y2="6"/><line x1="16" y1="14" x2="16" y2="18"/><path d="M8 10h.01M12 10h.01M16 10h.01M8 14h.01M12 14h.01M8 18h.01M12 18h.01"/></svg>
+            </div>
+            <div class="flex flex-col min-w-0">
+              <span class="subject-title font-bold text-slate-900 dark:text-slate-100 group-hover:text-emerald-600 dark:group-hover:text-emerald-400 truncate">Mental Ability & Arithmetic</span>
+              <span class="subject-subtext text-slate-500 dark:text-slate-400 font-medium">बुद्धिमत्ता व अंकगणित</span>
+            </div>
+          </div>
+          <svg class="w-5 h-5 text-slate-400 group-hover:text-emerald-600 dark:group-hover:text-emerald-400 group-hover:translate-x-1 transition-all shrink-0 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+        </a>
+
+        <!-- 10. Information Technology -->
+        <a href="test-list.html?section=mains&subject=information-technology" class="subject-card group flex items-center justify-between p-3.5 sm:p-4 rounded-xl bg-white dark:bg-[#131d31] border border-slate-200/90 dark:border-slate-800 hover:border-emerald-500 shadow-sm hover:shadow-md transition-all duration-200">
+          <div class="flex items-center gap-3.5 min-w-0">
+            <div class="w-10 h-10 rounded-lg bg-cyan-50 dark:bg-cyan-950/50 text-cyan-600 dark:text-cyan-400 flex items-center justify-center shrink-0 border border-cyan-200/60 dark:border-cyan-900/50 group-hover:scale-105 transition-transform">
+              <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                <line x1="8" y1="21" x2="16" y2="21"/>
+                <line x1="12" y1="17" x2="12" y2="21"/>
+              </svg>
+            </div>
+            <div class="flex flex-col min-w-0">
+              <span class="subject-title font-bold text-slate-900 dark:text-slate-100 group-hover:text-emerald-600 dark:group-hover:text-emerald-400 truncate">Information Technology</span>
+              <span class="subject-subtext text-slate-500 dark:text-slate-400 font-medium">माहिती तंत्रज्ञान</span>
+            </div>
+          </div>
+          <svg class="w-5 h-5 text-slate-400 group-hover:text-emerald-600 dark:group-hover:text-emerald-400 group-hover:translate-x-1 transition-all shrink-0 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+        </a>
+
+        <!-- 11. RTI Act & Maharashtra Right to Public Services Act -->
+        <a href="test-list.html?section=mains&subject=rti-public-services" class="subject-card group flex items-center justify-between p-3.5 sm:p-4 rounded-xl bg-white dark:bg-[#131d31] border border-slate-200/90 dark:border-slate-800 hover:border-emerald-500 shadow-sm hover:shadow-md transition-all duration-200">
+          <div class="flex items-center gap-3.5 min-w-0">
+            <div class="w-10 h-10 rounded-lg bg-yellow-50 dark:bg-yellow-950/50 text-yellow-700 dark:text-yellow-400 flex items-center justify-center shrink-0 border border-yellow-200/60 dark:border-yellow-900/50 group-hover:scale-105 transition-transform">
+              <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                <polyline points="14 2 14 8 20 8"/>
+                <line x1="16" y1="13" x2="8" y2="13"/>
+                <line x1="16" y1="17" x2="8" y2="17"/>
+                <polyline points="10 9 9 9 8 9"/>
+              </svg>
+            </div>
+            <div class="flex flex-col min-w-0">
+              <span class="subject-title font-bold text-slate-900 dark:text-slate-100 group-hover:text-emerald-600 dark:group-hover:text-emerald-400 truncate">RTI & Public Services Act</span>
+              <span class="subject-subtext text-slate-500 dark:text-slate-400 font-medium">माहिती अधिकार व लोकसेवा हक्क कायदा</span>
+            </div>
+          </div>
+          <svg class="w-5 h-5 text-slate-400 group-hover:text-emerald-600 dark:group-hover:text-emerald-400 group-hover:translate-x-1 transition-all shrink-0 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+        </a>
+
+        <!-- 12. Post-Specific Knowledge -->
+        <a href="test-list.html?section=mains&subject=post-specific-knowledge" class="subject-card group flex items-center justify-between p-3.5 sm:p-4 rounded-xl bg-white dark:bg-[#131d31] border border-slate-200/90 dark:border-slate-800 hover:border-emerald-500 shadow-sm hover:shadow-md transition-all duration-200">
+          <div class="flex items-center gap-3.5 min-w-0">
+            <div class="w-10 h-10 rounded-lg bg-pink-50 dark:bg-pink-950/50 text-pink-600 dark:text-pink-400 flex items-center justify-center shrink-0 border border-pink-200/60 dark:border-pink-900/50 group-hover:scale-105 transition-transform">
+              <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+                <circle cx="9" cy="7" r="4"/>
+                <path d="M22 21v-2a4 4 0 0 0-3-3.87"/>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+              </svg>
+            </div>
+            <div class="flex flex-col min-w-0">
+              <span class="subject-title font-bold text-slate-900 dark:text-slate-100 group-hover:text-emerald-600 dark:group-hover:text-emerald-400 truncate">Post-Specific Knowledge</span>
+              <span class="subject-subtext text-slate-500 dark:text-slate-400 font-medium">पदानुसार विशेष ज्ञान (क्लार्क, कर सहाय्यक इ.)</span>
+            </div>
+          </div>
+          <svg class="w-5 h-5 text-slate-400 group-hover:text-emerald-600 dark:group-hover:text-emerald-400 group-hover:translate-x-1 transition-all shrink-0 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- SECTION 3: MPSC COMBINE FULL QUIZZES -->
+    <!-- ========================================== -->
+    <section class="mb-12 sm:mb-14">
+      <div class="flex items-center gap-3 mb-4 sm:mb-5 pb-2 border-b border-slate-200 dark:border-slate-800">
+        <div class="w-2.5 h-6 bg-gradient-to-b from-indigo-500 to-purple-600 rounded-full"></div>
+        <div>
+          <h2 class="text-lg sm:text-xl font-bold tracking-tight text-slate-900 dark:text-white flex items-center gap-2">
+            MPSC Group C 2026 — COMBINE FULL QUIZZES
+          </h2>
+          <p class="text-xs text-slate-500 dark:text-slate-400 mt-0.5">वेळेच्या बंधनासह संपूर्ण १०० व २०० गुणांच्या संयुक्त सराव प्रश्नपत्रिका</p>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+
+        <!-- 1. Prelims Combine Quiz 100 Marks -->
+        <a href="test-list.html?type=pre-mock" class="subject-card group relative overflow-hidden p-4 sm:p-5 rounded-2xl bg-gradient-to-br from-white via-indigo-50/30 to-indigo-100/30 dark:from-[#131d31] dark:via-[#151f38] dark:to-[#1a2542] border-2 border-indigo-200/80 dark:border-indigo-900/70 hover:border-indigo-500 shadow-sm hover:shadow-lg transition-all duration-200 flex items-center justify-between">
+          <div class="flex items-center gap-4 min-w-0">
+            <div class="w-12 h-12 rounded-xl bg-indigo-600 text-white flex items-center justify-center shrink-0 shadow-md shadow-indigo-600/30 group-hover:scale-105 transition-transform">
+              <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="8" r="6"/>
+                <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/>
+              </svg>
+            </div>
+            <div class="flex flex-col min-w-0">
+              <div class="flex items-center gap-2 mb-0.5">
+                <span class="px-2 py-0.5 rounded text-[10px] font-extrabold uppercase bg-indigo-100 dark:bg-indigo-950 text-indigo-700 dark:text-indigo-300">100 Marks</span>
+                <span class="text-[11px] font-medium text-slate-500 dark:text-slate-400">६० मिनिटे</span>
+              </div>
+              <span class="subject-title font-extrabold text-slate-900 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-indigo-400 truncate">
+                MPSC Group C 2026 — PRELIMS Combine Quiz
+              </span>
+              <span class="subject-subtext text-slate-500 dark:text-slate-400 font-medium">
+                संयुक्त पूर्व परीक्षा १०० गुणांची संपूर्ण मॉक टेस्ट
+              </span>
+            </div>
+          </div>
+          <div class="w-8 h-8 rounded-full bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 flex items-center justify-center text-indigo-600 dark:text-indigo-400 group-hover:bg-indigo-600 group-hover:text-white group-hover:translate-x-1 transition-all shrink-0 ml-2 shadow-sm">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+          </div>
+        </a>
+
+        <!-- 2. Mains Quiz 200 Marks -->
+        <a href="test-list.html?type=mains-mock" class="subject-card group relative overflow-hidden p-4 sm:p-5 rounded-2xl bg-gradient-to-br from-white via-purple-50/30 to-purple-100/30 dark:from-[#131d31] dark:via-[#181a38] dark:to-[#221c45] border-2 border-purple-200/80 dark:border-purple-900/70 hover:border-purple-500 shadow-sm hover:shadow-lg transition-all duration-200 flex items-center justify-between">
+          <div class="flex items-center gap-4 min-w-0">
+            <div class="w-12 h-12 rounded-xl bg-purple-600 text-white flex items-center justify-center shrink-0 shadow-md shadow-purple-600/30 group-hover:scale-105 transition-transform">
+              <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/>
+                <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/>
+                <path d="M4 22h16"/>
+                <path d="M10 14.66V17c0 .55-.45 1-1 1H7.5"/>
+                <path d="M14 14.66V17c0 .55.45 1 1 1h1.5"/>
+                <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/>
+              </svg>
+            </div>
+            <div class="flex flex-col min-w-0">
+              <div class="flex items-center gap-2 mb-0.5">
+                <span class="px-2 py-0.5 rounded text-[10px] font-extrabold uppercase bg-purple-100 dark:bg-purple-950 text-purple-700 dark:text-purple-300">200 Marks</span>
+                <span class="text-[11px] font-medium text-slate-500 dark:text-slate-400">१२० मिनिटे</span>
+              </div>
+              <span class="subject-title font-extrabold text-slate-900 dark:text-white group-hover:text-purple-600 dark:group-hover:text-purple-400 truncate">
+                MPSC Group C 2026 — MAINS Quiz
+              </span>
+              <span class="subject-subtext text-slate-500 dark:text-slate-400 font-medium">
+                संयुक्त मुख्य परीक्षा २०० गुणांची संपूर्ण मॉक टेस्ट
+              </span>
+            </div>
+          </div>
+          <div class="w-8 h-8 rounded-full bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 flex items-center justify-center text-purple-600 dark:text-purple-400 group-hover:bg-purple-600 group-hover:text-white group-hover:translate-x-1 transition-all shrink-0 ml-2 shadow-sm">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+          </div>
+        </a>
+
+      </div>
+    </section>
 
   </main>
 
-  <!-- ======================================================== -->
-  <!-- REPORT QUESTION MODAL (PREVIEW, ACCURATE OPTIONS & NOTE) -->
-  <!-- ======================================================== -->
-  <div id="reportModal" class="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm hidden items-center justify-center p-3 sm:p-4 no-print">
-    <div class="bg-white dark:bg-[#131d31] rounded-2xl w-full max-w-sm sm:max-w-md p-5 sm:p-6 shadow-2xl border border-slate-200 dark:border-slate-800 relative animate-fade-in my-auto">
+  <!-- ========================================== -->
+  <!-- COMPACT & BALANCED RESPONSIVE FOOTER -->
+  <!-- ========================================== -->
+  <footer class="mt-auto bg-white dark:bg-[#0b101c] border-t border-slate-200 dark:border-slate-800 transition-colors duration-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-7 sm:py-8">
       
-      <button onclick="closeReportModal()" class="absolute top-4 right-4 p-1.5 text-slate-400 hover:text-slate-600 dark:hover:text-white rounded-lg">
-        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-6 sm:gap-8 pb-6 border-b border-slate-100 dark:border-slate-800/80">
+        
+        <!-- Left: Brand Info (5 cols) -->
+        <div class="md:col-span-5 flex flex-col gap-2.5">
+          <div class="flex items-center gap-2">
+            <div class="w-7 h-7 rounded-lg bg-indigo-600 flex items-center justify-center text-white shadow-sm font-bold text-xs">
+              SS
+            </div>
+            <span class="text-base font-bold tracking-tight text-slate-900 dark:text-white">StudySphere</span>
+            <span class="text-[10px] px-2 py-0.5 rounded-full bg-emerald-50 dark:bg-emerald-950/60 text-emerald-600 dark:text-emerald-400 border border-emerald-200 dark:border-emerald-800 font-bold ml-1">
+              १००% मोफत
+            </span>
+          </div>
+          <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed max-w-sm font-medium">
+            MPSC गट-क २०२६ पूर्व व मुख्य परीक्षेच्या संपूर्ण व दर्जेदार तयारीसाठी महाराष्ट्रातील विद्यार्थ्यांचे विनामूल्य ऑनलाइन सराव व्यासपीठ.
+          </p>
+          <div class="flex items-center gap-2 text-[11px] text-slate-500 dark:text-slate-400">
+            <span>• १/४ निगेटिव्ह पॅटर्न</span>
+            <span>• सविस्तर स्पष्टीकरण</span>
+            <span>• TCS/IBPS फॉरमॅट</span>
+          </div>
+        </div>
+
+        <!-- Middle: Quick Navigation Links (4 cols) -->
+        <div class="md:col-span-4 flex flex-col gap-2">
+          <span class="text-[11px] font-extrabold uppercase tracking-wider text-slate-900 dark:text-white">महत्त्वाच्या लिंक्स</span>
+          <div class="grid grid-cols-2 gap-x-2 gap-y-1 text-xs font-semibold text-slate-600 dark:text-slate-300">
+            <button onclick="openModal('aboutModal')" class="text-left hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors py-0.5">
+              › About Us
+            </button>
+            <button onclick="openModal('contactModal')" class="text-left hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors py-0.5">
+              › Contact Us
+            </button>
+            <button onclick="openModal('privacyModal')" class="text-left hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors py-0.5">
+              › Privacy Policy
+            </button>
+            <button onclick="openModal('termsModal')" class="text-left hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors py-0.5">
+              › Terms of Service
+            </button>
+            <button onclick="openModal('sitemapModal')" class="text-left hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors py-0.5">
+              › Sitemap
+            </button>
+            <a href="https://t.me/MPSCstudysphere" target="_blank" rel="noopener noreferrer" class="hover:text-sky-600 dark:hover:text-sky-400 transition-colors py-0.5">
+              › Telegram Group
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: Actions (3 cols) -->
+        <div class="md:col-span-3 flex flex-col gap-2">
+          <span class="text-[11px] font-extrabold uppercase tracking-wider text-slate-900 dark:text-white">सहकार्य व शेअर करा</span>
+          <p class="text-[11px] text-slate-500 dark:text-slate-400 leading-snug">
+            वेबसाइट अखंड सुरू ठेवण्यासाठी सहकार्य करा व मित्रांना शेअर करा:
+          </p>
+          <div class="flex flex-wrap items-center gap-1.5 pt-1">
+            <a href="https://t.me/MPSCstudysphere" target="_blank" rel="noopener noreferrer" 
+               class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg bg-sky-50 dark:bg-sky-950/60 text-sky-600 dark:text-sky-300 hover:bg-sky-100 dark:hover:bg-sky-900 border border-sky-200 dark:border-sky-800 text-xs font-semibold shadow-sm transition-all">
+              <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.121l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.535-.197 1.006.128.832.946z"/></svg>
+              <span>Telegram</span>
+            </a>
+
+            <button onclick="handleDonateClick()" 
+                    class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white text-xs font-bold shadow-sm shadow-amber-500/20 active:scale-95 transition-all">
+              <svg class="w-3 h-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+              <span>Donate</span>
+            </button>
+
+            <button onclick="shareWebsite()" 
+                    class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 border border-slate-200 dark:border-slate-700 text-xs font-semibold shadow-sm transition-all" title="शेअर करा">
+              <svg class="w-3 h-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/>
+                <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/>
+              </svg>
+              <span>Share</span>
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Compact Copyright Strip -->
+      <div class="pt-4 flex flex-col sm:flex-row items-center justify-between text-[11px] text-slate-500 dark:text-slate-400 gap-1.5 font-medium">
+        <p>© २०२६ StudySphere. सर्व हक्क राखीव (All rights reserved).</p>
+        <p class="text-slate-400 dark:text-slate-500">महाराष्ट्रातील स्पर्धा परीक्षा विद्यार्थ्यांसाठी समर्पित 🚩</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ========================================== -->
+  <!-- MODALS & POPUPS (Donation, Info, Toast) -->
+  <!-- ========================================== -->
+  
+  <!-- Mobile Donation Modal -->
+  <div id="mobileDonationModal" class="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm hidden items-center justify-center p-4">
+    <div class="bg-white dark:bg-[#131d31] rounded-2xl w-full max-w-sm p-6 shadow-2xl border border-slate-200 dark:border-slate-800 relative">
+      <button onclick="closeModal('mobileDonationModal')" class="absolute top-4 right-4 p-1.5 text-slate-400 hover:text-slate-600 dark:hover:text-white rounded-lg">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
       </button>
 
-      <!-- Modal Header -->
-      <div class="flex items-center gap-3 mb-3 pb-2.5 border-b border-slate-100 dark:border-slate-800">
-        <div class="w-9 h-9 rounded-xl bg-rose-50 dark:bg-rose-950/60 text-rose-600 dark:text-rose-400 flex items-center justify-center font-bold text-sm shrink-0">
-          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
+      <div class="text-center mb-3">
+        <div class="w-11 h-11 bg-amber-100 dark:bg-amber-950/60 text-amber-600 dark:text-amber-400 rounded-full flex items-center justify-center mx-auto mb-2.5 shadow-inner">
+          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
         </div>
-        <div>
-          <h3 class="text-xs sm:text-sm font-bold text-slate-900 dark:text-white">प्रश्नातील त्रुटी नोंदवा (Report Issue)</h3>
-          <p id="reportQuestionBadge" class="text-[11px] text-slate-500 dark:text-slate-400 font-medium">प्रश्न क्रमांक #</p>
-        </div>
-      </div>
-
-      <!-- Question Preview Box -->
-      <div class="mb-3.5 p-2.5 rounded-xl bg-slate-50 dark:bg-slate-900/60 border border-slate-200/80 dark:border-slate-800 text-[11px] text-slate-700 dark:text-slate-300">
-        <span class="font-bold text-slate-500 dark:text-slate-400 block mb-0.5">तक्रार असलेला प्रश्न (Preview):</span>
-        <p id="reportQuestionSnippetPreview" class="font-medium line-clamp-2 text-slate-900 dark:text-white leading-relaxed">
-          प्रश्न मजकूर...
+        <h3 class="text-base font-bold text-slate-900 dark:text-white">StudySphere ला पाठिंबा द्या</h3>
+        <p class="text-xs text-slate-600 dark:text-slate-300 mt-1 font-medium">
+          विद्यार्थ्यांना मोफत व दर्जेदार टेस्ट्स उपलब्ध ठेवण्यासाठी आपले सहकार्य मोलाचे आहे.
         </p>
-      </div>
 
-      <form id="reportForm" onsubmit="submitReportToGoogleSheet(event)" class="space-y-3 text-xs">
-        <input type="hidden" id="reportQuizId" value="">
-        <input type="hidden" id="reportQuestionId" value="">
-        <input type="hidden" id="reportQuestionNum" value="">
-        <input type="hidden" id="reportSubject" value="">
-        <input type="hidden" id="reportChapter" value="">
-        <input type="hidden" id="reportQuestionSnippet" value="">
-
-        <!-- Issue Type -->
-        <div>
-          <label class="block font-bold text-slate-700 dark:text-slate-300 mb-1">त्रुटीचा अचूक प्रकार निवडा: *</label>
-          <select id="reportIssueType" required class="w-full p-2 rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900 text-slate-800 dark:text-slate-100 font-medium focus:ring-2 focus:ring-indigo-500 focus:outline-none text-xs">
-            <option value="उत्तर सूचीमध्ये चूक (Incorrect Answer Key)">१. उत्तर सूचीमध्ये चूक (Incorrect Answer Key)</option>
-            <option value="प्रश्नात मुद्रणदोष किंवा चुकीची माहिती (Typo / Fact Error)">२. प्रश्नात मुद्रणदोष किंवा चुकीची माहिती (Typo/Fact Error)</option>
-            <option value="पर्याय चुकीचे किंवा पुनरावृत्त आहेत (Incorrect/Duplicate Options)">३. पर्याय चुकीचे किंवा पुनरावृत्त आहेत (Options Error)</option>
-            <option value="मराठी/इंग्रजी भाषांतरात विसंगती (Translation Discrepancy)">४. मराठी/इंग्रजी भाषांतरात विसंगती (Translation Issue)</option>
-            <option value="स्पष्टीकरणात विसंगती किंवा अपूर्ण संदर्भ (Explanation Inaccuracy)">५. स्पष्टीकरणात विसंगती किंवा अपूर्ण संदर्भ</option>
-            <option value="इतर तांत्रिक किंवा फॉरमॅटिंग समस्या (Formatting/Technical)">६. इतर समस्या</option>
-          </select>
-        </div>
-
-        <!-- Additional Description -->
-        <div>
-          <label class="block font-bold text-slate-700 dark:text-slate-300 mb-1">सविस्तर संदर्भ किंवा आपल्या मते योग्य उत्तर (ऐच्छिक):</label>
-          <textarea id="reportDetails" rows="2" placeholder="उदा. संदर्भ पुस्तक, दुरुस्त तारीख किंवा अधिक माहिती..." 
-                    class="w-full p-2 rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900 text-slate-800 dark:text-slate-100 placeholder-slate-400 focus:ring-2 focus:ring-indigo-500 focus:outline-none text-xs"></textarea>
-        </div>
-
-        <!-- Action Buttons -->
-        <div class="pt-1 flex items-center gap-2">
-          <button type="button" onclick="closeReportModal()" class="flex-1 py-2 rounded-xl bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-300 font-bold transition-colors">
-            रद्द करा
-          </button>
-          <button type="submit" id="submitReportBtn" class="flex-1 py-2 rounded-xl bg-rose-600 hover:bg-rose-700 text-white font-bold shadow-md shadow-rose-600/25 transition-all">
-            तक्रार पाठवा
-          </button>
-        </div>
-
-        <!-- Info Note -->
-        <div class="pt-2 border-t border-slate-100 dark:border-slate-800 text-[10px] text-slate-500 dark:text-slate-400 leading-normal flex items-start gap-1.5">
-          <span class="text-xs shrink-0">🛡️</span>
-          <p>
-            <strong>पारदर्शक नोंद:</strong> ही तक्रार थेट StudySphere च्या अधिकृत Google Sheet मध्ये सुरक्षित साठवली जाते. आमची अभ्यास मंडळ टीम या नोंदीची पडताळणी करून आगामी अपडेटमध्ये प्रश्नात दुरुस्ती करते.
+        <div class="mt-2.5 p-2.5 rounded-xl bg-amber-50 dark:bg-amber-950/40 border border-amber-200/80 dark:border-amber-900/50 text-left">
+          <p class="text-[11px] text-amber-900 dark:text-amber-200 leading-relaxed font-semibold">
+            💡 <span class="underline">महत्त्वाची नोंद:</span> सध्या ही वेबसाइट विनामूल्य वेब सेवांचा (Free Web Hosting & Tools) वापर करून चालवली जात आहे. तुमच्या छोट्याशा आर्थिक सहकार्यामुळे (Donation) वेबसाइट अधिक गतिशील, वेगवान आणि सर्व्हर-सक्षम करण्यात मोठी मदत होईल.
           </p>
         </div>
-      </form>
+      </div>
+
+      <!-- Quick Amount Buttons -->
+      <div class="grid grid-cols-3 gap-2 mb-3">
+        <button type="button" onclick="selectDonationAmount(50)" class="donation-btn py-2 px-3 text-xs font-bold rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800/80 hover:border-amber-500 hover:bg-amber-50 dark:hover:bg-amber-950/40 text-slate-800 dark:text-slate-200 transition-all">
+          ₹ ५०
+        </button>
+        <button type="button" onclick="selectDonationAmount(100)" class="donation-btn py-2 px-3 text-xs font-bold rounded-xl border-2 border-amber-500 bg-amber-50 dark:bg-amber-950/40 text-amber-700 dark:text-amber-300 transition-all">
+          ₹ १००
+        </button>
+        <button type="button" onclick="selectDonationAmount(200)" class="donation-btn py-2 px-3 text-xs font-bold rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800/80 hover:border-amber-500 hover:bg-amber-50 dark:hover:bg-amber-950/40 text-slate-800 dark:text-slate-200 transition-all">
+          ₹ २००
+        </button>
+      </div>
+
+      <!-- Custom Amount Input -->
+      <div class="mb-4">
+        <label for="customAmountInput" class="block text-xs font-semibold text-slate-600 dark:text-slate-300 mb-1">किंवा आपली ऐच्छिक रक्कम टाका (किमान ₹१०):</label>
+        <div class="relative">
+          <span class="absolute left-3 top-2.5 text-xs font-bold text-slate-400">₹</span>
+          <input type="number" id="customAmountInput" value="100" min="10" step="1" 
+                 oninput="validateCustomAmount()"
+                 placeholder="रक्कम टाका" 
+                 class="w-full pl-7 pr-3 py-2 text-sm rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-amber-500">
+        </div>
+        <p id="amountError" class="text-[11px] text-rose-500 mt-1 hidden font-medium">कृपया किमान ₹१० किंवा त्याहून अधिक रक्कम टाका.</p>
+      </div>
+
+      <!-- Pay Now Button -->
+      <button onclick="triggerUPIPayment()" id="payNowBtn" 
+              class="w-full py-2.5 rounded-xl bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white font-bold text-xs shadow-md shadow-amber-500/25 active:scale-[0.98] transition-all flex items-center justify-center gap-2">
+        <span>Pay with UPI App (GPay / PhonePe / Paytm)</span>
+        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+      </button>
+
+      <p class="text-[10px] text-center text-slate-400 mt-2 font-medium">UPI ॲप्सद्वारे थेट व १००% सुरक्षित ट्रान्सफर</p>
     </div>
   </div>
 
-  <!-- Toast Notification -->
-  <div id="toastNotification" class="fixed bottom-5 right-5 z-50 transform translate-y-20 opacity-0 transition-all duration-300 bg-slate-900 text-white dark:bg-white dark:text-slate-900 px-4 py-2.5 rounded-xl shadow-xl flex items-center gap-2 text-xs font-semibold no-print">
-    <svg class="w-4 h-4 text-emerald-400 dark:text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
-    <span id="toastMessage">नोंद यशस्वी झाली!</span>
+  <!-- Desktop Donation Modal -->
+  <div id="desktopDonationModal" class="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm hidden items-center justify-center p-4">
+    <div class="bg-white dark:bg-[#131d31] rounded-2xl w-full max-w-md p-6 shadow-2xl border border-slate-200 dark:border-slate-800 relative">
+      <button onclick="closeModal('desktopDonationModal')" class="absolute top-4 right-4 p-1.5 text-slate-400 hover:text-slate-600 dark:hover:text-white rounded-lg">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+      </button>
+
+      <div class="text-center mb-3">
+        <div class="w-11 h-11 bg-amber-100 dark:bg-amber-950/60 text-amber-600 dark:text-amber-400 rounded-full flex items-center justify-center mx-auto mb-2 shadow-inner">
+          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+        </div>
+        <h3 class="text-base font-bold text-slate-900 dark:text-white">StudySphere ला पाठिंबा द्या</h3>
+        <p class="text-xs text-slate-600 dark:text-slate-300 mt-1 max-w-xs mx-auto font-medium">
+          कोणत्याही UPI ॲपवरून (GPay, PhonePe, Paytm, BHIM) खालील QR कोड स्कॅन करून सुरक्षित सहकार्य करा.
+        </p>
+      </div>
+
+      <div class="mb-3.5 p-2.5 rounded-xl bg-amber-50 dark:bg-amber-950/40 border border-amber-200/80 dark:border-amber-900/50 text-left">
+        <p class="text-[11px] text-amber-900 dark:text-amber-200 leading-relaxed font-semibold">
+          💡 <span class="underline">महत्त्वाची नोंद:</span> सध्या ही वेबसाइट विनामूल्य वेब सेवांचा (Free Web Hosting) वापर करून चालवली जात आहे. तुमच्या छोट्याशा आर्थिक सहकार्यामुळे (Donation) वेबसाइट अधिक गतिशील, वेगवान आणि सर्व्हर-सक्षम करण्यात मोलाची मदत होईल.
+        </p>
+      </div>
+
+      <!-- QR Code Display Box -->
+      <div class="bg-white p-3.5 rounded-2xl border-2 border-dashed border-indigo-200 dark:border-slate-700 w-48 h-48 mx-auto flex flex-col items-center justify-center shadow-md relative overflow-hidden">
+        <svg class="w-40 h-40 text-slate-900" viewBox="0 0 100 100" fill="currentColor">
+          <rect x="5" y="5" width="26" height="26" rx="4" fill="none" stroke="currentColor" stroke-width="4"/>
+          <rect x="11" y="11" width="14" height="14" rx="2" fill="currentColor"/>
+          <rect x="69" y="5" width="26" height="26" rx="4" fill="none" stroke="currentColor" stroke-width="4"/>
+          <rect x="75" y="11" width="14" height="14" rx="2" fill="currentColor"/>
+          <rect x="5" y="69" width="26" height="26" rx="4" fill="none" stroke="currentColor" stroke-width="4"/>
+          <rect x="11" y="75" width="14" height="14" rx="2" fill="currentColor"/>
+
+          <rect x="36" y="8" width="6" height="6" rx="1"/>
+          <rect x="46" y="8" width="6" height="6" rx="1"/>
+          <rect x="56" y="8" width="6" height="6" rx="1"/>
+          <rect x="36" y="18" width="6" height="6" rx="1"/>
+          <rect x="48" y="22" width="8" height="6" rx="1"/>
+          <rect x="58" y="16" width="6" height="6" rx="1"/>
+
+          <rect x="8" y="38" width="6" height="6" rx="1"/>
+          <rect x="18" y="38" width="6" height="6" rx="1"/>
+          <rect x="8" y="48" width="6" height="6" rx="1"/>
+          <rect x="22" y="48" width="6" height="6" rx="1"/>
+          <rect x="14" y="56" width="8" height="6" rx="1"/>
+
+          <rect x="38" y="38" width="24" height="24" rx="6" fill="#4f46e5"/>
+          <path d="M46 50l3 3 5-6" stroke="white" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+          <rect x="68" y="38" width="6" height="6" rx="1"/>
+          <rect x="78" y="44" width="8" height="6" rx="1"/>
+          <rect x="88" y="38" width="6" height="6" rx="1"/>
+          <rect x="68" y="54" width="8" height="6" rx="1"/>
+          <rect x="82" y="56" width="6" height="6" rx="1"/>
+
+          <rect x="36" y="68" width="6" height="6" rx="1"/>
+          <rect x="48" y="68" width="8" height="6" rx="1"/>
+          <rect x="60" y="72" width="6" height="6" rx="1"/>
+          <rect x="38" y="82" width="8" height="6" rx="1"/>
+          <rect x="50" y="84" width="6" height="6" rx="1"/>
+          <rect x="68" y="84" width="8" height="6" rx="1"/>
+          <rect x="82" y="78" width="8" height="6" rx="1"/>
+        </svg>
+      </div>
+
+      <div class="mt-3 text-center">
+        <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-100 dark:bg-slate-800 text-[11px] font-bold text-slate-700 dark:text-slate-300">
+          <svg class="w-3.5 h-3.5 text-emerald-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          Scan QR & Donate using any UPI App
+        </span>
+      </div>
+
+      <div class="mt-4 pt-3 border-t border-slate-100 dark:border-slate-800 flex justify-center">
+        <button onclick="closeModal('desktopDonationModal')" class="px-5 py-1.5 rounded-xl bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-xs font-bold text-slate-700 dark:text-slate-300 transition-colors">
+          बंद करा (Close)
+        </button>
+      </div>
+    </div>
   </div>
 
-  <!-- Standard Web Footer -->
-  <footer class="mt-auto bg-white dark:bg-[#0b101c] border-t border-slate-200 dark:border-slate-800 py-6 text-center text-xs text-slate-400 no-print">
-    StudySphere © 2026 • स्पर्धा परीक्षा ऑनलाइन सराव केंद्र • अधिक सराव चाचण्यांसाठी भेट द्या: 
-    <a href="https://tinyurl.com/MPSC-StudySphere" target="_blank" class="text-indigo-600 dark:text-indigo-400 font-bold hover:underline">https://tinyurl.com/MPSC-StudySphere</a>
-  </footer>
-
-  <!-- ======================================================== -->
-  <!-- JAVASCRIPT: ROBUST RESULT RETRIEVAL & TARGETED RETEST    -->
-  <!-- ======================================================== -->
-  <script>
-    let resultData = null;
-    let reviewLanguage = 'both';
-    let currentFilter = 'all';
-    let savedBookmarks = {};
-    let reportedQuestions = new Set();
-    let currentReportingIndex = null;
-
-    const REPORT_API_URL = "https://script.google.com/macros/s/AKfycbzkH.../exec";
-
-    // Dynamic PDF File Name & Print Controller
-    function prepareAndPrintPdf() {
-      const originalTitle = document.title;
-      try {
-        const testTitle = resultData ? (resolveText(resultData.title, 'mr') || resolveText(resultData.title, 'en') || 'Test') : 'MPSC_Group_C';
-        const cleanTitle = testTitle.replace(/[\/\\?%*:|"<>]/g, '').trim().replace(/\s+/g, '_');
-        const scoreVal = resultData && resultData.marksObtained !== undefined ? resultData.marksObtained.toFixed(2) : 'Result';
-        const dateStr = new Date().toISOString().slice(0, 10);
-        
-        // Browsers use document.title as the suggested filename when saving as PDF
-        document.title = `StudySphere_MPSC_Group_C_${cleanTitle}_Score_${scoreVal}_${dateStr}`;
-      } catch (e) {
-        document.title = "StudySphere_MPSC_Group_C_Test_Result";
-      }
-
-      window.print();
-
-      // Restore original browser tab title after print dialog closes
-      setTimeout(() => {
-        document.title = originalTitle;
-      }, 1500);
-    }
-
-    function resolveText(item, lang = reviewLanguage) {
-      if (!item) return '';
-      if (typeof item === 'string') return item;
-      if (typeof item === 'object') {
-        if (lang === 'mr') return item.mr || item.en || '';
-        if (lang === 'en') return item.en || item.mr || '';
-        return item.mr || item.en || '';
-      }
-      return String(item);
-    }
-
-    function loadBookmarks() {
-      try {
-        const raw = localStorage.getItem('studySphere_bookmarks');
-        savedBookmarks = raw ? JSON.parse(raw) : {};
-      } catch (e) {
-        savedBookmarks = {};
-      }
-    }
-
-    function toggleBookmark(qIndex) {
-      if (!resultData || !resultData.questionsAnalysis || !resultData.questionsAnalysis[qIndex]) return;
-      const q = resultData.questionsAnalysis[qIndex];
-      const qKey = `${resultData.testId || 'test'}_q${q.questionId || qIndex + 1}`;
-
-      if (savedBookmarks[qKey]) {
-        delete savedBookmarks[qKey];
-        showToast("प्रश्न व्हॉल्टमधून काढला गेला.");
-      } else {
-        savedBookmarks[qKey] = {
-          key: qKey,
-          testId: resultData.testId || 'test',
-          testTitle: resultData.title,
-          questionId: q.questionId || qIndex + 1,
-          question: q.question,
-          options: q.options,
-          correctAnswerIndex: q.correctAnswerIndex,
-          explanation: q.explanation,
-          savedAt: new Date().toLocaleDateString('mr-IN')
-        };
-        showToast("⭐ प्रश्न बुकमार्क व्हॉल्टमध्ये सुरक्षित सेव्ह झाला!");
-      }
-
-      localStorage.setItem('studySphere_bookmarks', JSON.stringify(savedBookmarks));
-      updateBookmarkButtonUI(qIndex, !!savedBookmarks[qKey]);
-    }
-
-    function updateBookmarkButtonUI(qIndex, isBookmarked) {
-      const btn = document.getElementById(`bookmark-btn-${qIndex}`);
-      if (!btn) return;
-      if (isBookmarked) {
-        btn.innerHTML = `<span class="text-amber-500">⭐</span> <span class="text-amber-600 dark:text-amber-400 font-bold">Saved</span>`;
-        btn.classList.add('border-amber-300', 'bg-amber-50', 'dark:bg-amber-950/40');
-      } else {
-        btn.innerHTML = `<span>☆</span> <span>Save</span>`;
-        btn.classList.remove('border-amber-300', 'bg-amber-50', 'dark:bg-amber-950/40');
-      }
-    }
-
-    function initPage() {
-      initTheme();
-      loadBookmarks();
-
-      // Update streak badge in header
-      const streak = localStorage.getItem('studySphere_streakCount') || '१';
-      const streakEl = document.getElementById('headerStreakCount');
-      if (streakEl) streakEl.textContent = streak;
-
-      const urlParams = new URLSearchParams(window.location.search);
-      const testIdParam = urlParams.get('testId');
-      const modeParam = urlParams.get('mode');
-
-      // 1. Explicit historical view mode OR fallback
-      if (modeParam === 'view' && testIdParam) {
-        loadHistoricalResult(testIdParam);
-        return;
-      }
-
-      // 2. Just completed current quiz in sessionStorage
-      const raw = sessionStorage.getItem('currentTestResult');
-      if (raw) {
-        try {
-          resultData = JSON.parse(raw);
-          saveResultToDeviceVault(resultData);
-          renderResults();
-          return;
-        } catch (e) {}
-      }
-
-      // 3. Fallback to testId if session storage was expired
-      if (testIdParam) {
-        loadHistoricalResult(testIdParam);
-      } else {
-        showEmptyState();
-      }
-    }
-
-    function loadHistoricalResult(testId) {
-      try {
-        const rawHistory = localStorage.getItem('studySphere_history');
-        const history = rawHistory ? JSON.parse(rawHistory) : {};
-        
-        let record = history[testId];
-        if (!record) {
-          const matchedKey = Object.keys(history).find(k => k.toLowerCase() === testId.toLowerCase());
-          if (matchedKey) record = history[matchedKey];
-        }
-
-        if (record && record.lastResultSnapshot) {
-          resultData = record.lastResultSnapshot;
-          document.getElementById('historyViewModeBanner').classList.remove('hidden');
-          document.getElementById('resultModeBadge').textContent = `शेवटचा निकाल (${record.lastAttemptDate || 'जतन केलेला'})`;
-          renderResults();
-        } else {
-          showEmptyState();
-        }
-      } catch (e) {
-        showEmptyState();
-      }
-    }
-
-    function showEmptyState() {
-      document.getElementById('noResultState').classList.remove('hidden');
-      document.getElementById('activeResultContainer').classList.add('hidden');
-    }
-
-    function saveResultToDeviceVault(data) {
-      if (!data || !data.testId) return;
-
-      try {
-        const storageKey = 'studySphere_history';
-        const raw = localStorage.getItem(storageKey);
-        let history = raw ? JSON.parse(raw) : {};
-
-        const testKey = data.testId;
-        const now = new Date();
-        const formattedDate = now.toLocaleDateString('mr-IN', { day: '2-digit', month: 'short', year: 'numeric' });
-
-        const accuracy = data.totalQuestions > 0 ? Math.round((data.correctCount / data.totalQuestions) * 100) : 0;
-        const currentScore = data.marksObtained || 0;
-
-        const lastSavedTimestamp = sessionStorage.getItem(`saved_${testKey}`);
-        let attempts = 1;
-        let bestScore = currentScore;
-
-        if (history[testKey]) {
-          const prev = history[testKey];
-          bestScore = Math.max(prev.bestScore !== undefined ? prev.bestScore : prev.lastScore, currentScore);
-          attempts = prev.attempts || 1;
-          if (!lastSavedTimestamp) {
-            attempts += 1;
-          }
-        }
-
-        history[testKey] = {
-          testId: testKey,
-          title: data.title,
-          totalQuestions: data.totalQuestions,
-          totalMarks: data.totalMarks,
-          lastScore: currentScore,
-          bestScore: bestScore,
-          accuracy: accuracy,
-          lastAttemptDate: formattedDate,
-          attempts: attempts,
-          completed: true,
-          lastResultSnapshot: data
-        };
-
-        localStorage.setItem(storageKey, JSON.stringify(history));
-        sessionStorage.setItem(`saved_${testKey}`, 'true');
-
-        const attemptBadge = document.getElementById('vaultAttemptBadge');
-        if (attemptBadge) attemptBadge.textContent = `प्रयत्न ${attempts}`;
-
-        const bestBadge = document.getElementById('vaultBestBadge');
-        if (bestBadge && attempts > 1) {
-          bestBadge.textContent = `सर्वोत्तम: ${bestScore.toFixed(2)}`;
-          bestBadge.classList.remove('hidden');
-        }
-      } catch (err) {
-        console.error("Local vault save error:", err);
-      }
-    }
-
-    function renderResults() {
-      if (!resultData) return;
-
-      document.getElementById('noResultState').classList.add('hidden');
-      document.getElementById('activeResultContainer').classList.remove('hidden');
-
-      const titleMr = resolveText(resultData.title, 'mr');
-      const titleEn = resolveText(resultData.title, 'en');
-      const finalTitle = titleMr || titleEn || 'सराव चाचणी निकाल';
-      document.getElementById('testTitle').textContent = finalTitle;
-      document.getElementById('printTitleBadge').textContent = finalTitle;
-
-      const obtained = resultData.marksObtained !== undefined ? resultData.marksObtained : 0;
-      const total = resultData.totalMarks || 20;
-      document.getElementById('scoreObtained').textContent = obtained.toFixed(2);
-      document.getElementById('scoreTotal').textContent = `/ ${total}`;
-      document.getElementById('printScoreBadge').textContent = `${obtained.toFixed(2)} / ${total}`;
-
-      const pct = total > 0 ? Math.round((obtained / total) * 100) : 0;
-      document.getElementById('percentageBadge').textContent = `${pct}% गुण`;
-
-      const answeredTotal = (resultData.correctCount || 0) + (resultData.incorrectCount || 0);
-      const acc = answeredTotal > 0 ? Math.round(((resultData.correctCount || 0) / answeredTotal) * 100) : 0;
-      document.getElementById('accuracyVal').textContent = `${acc}%`;
-      document.getElementById('printAccuracyBadge').textContent = `${acc}%`;
-
-      const timeSpent = resultData.timeSpentSeconds || 0;
-      const mins = Math.floor(timeSpent / 60);
-      const secs = timeSpent % 60;
-      document.getElementById('timeSpentVal').textContent = `${String(mins).padStart(2, '0')}:${String(secs).padStart(2, '0')}`;
-
-      const perQSpeed = (resultData.totalQuestions && resultData.totalQuestions > 0) ? Math.round(timeSpent / resultData.totalQuestions) : 0;
-      document.getElementById('speedMetricBadge').textContent = `${perQSpeed} सेकंद/प्रश्न`;
-
-      const neg = resultData.negativeDeduction !== undefined ? resultData.negativeDeduction : 0;
-      document.getElementById('negDeductionVal').textContent = `-${neg.toFixed(2)}`;
-      document.getElementById('printNegBadge').textContent = `-${neg.toFixed(2)} गुण`;
-
-      const correctCount = resultData.correctCount || 0;
-      const incorrectCount = resultData.incorrectCount || 0;
-      const unattemptedCount = resultData.unattemptedCount || 0;
-
-      document.getElementById('statCorrect').textContent = correctCount;
-      document.getElementById('statIncorrect').textContent = incorrectCount;
-      document.getElementById('statUnattempted').textContent = unattemptedCount;
-
-      document.getElementById('countAll').textContent = resultData.totalQuestions || 0;
-      document.getElementById('countIncorrect').textContent = incorrectCount;
-      document.getElementById('countCorrect').textContent = correctCount;
-      document.getElementById('countSkipped').textContent = unattemptedCount;
-
-      const today = new Date().toLocaleDateString('mr-IN', { day: '2-digit', month: 'long', year: 'numeric' });
-      const printDateEl = document.getElementById('printDateStamp');
-      if (printDateEl) printDateEl.textContent = `तारीख: ${today}`;
-
-      setupMistakeNotebookBanner(incorrectCount, unattemptedCount);
-      renderReviewQuestions();
-    }
-
-    function setupMistakeNotebookBanner(incorrectCount, unattemptedCount) {
-      const banner = document.getElementById('mistakesActionBanner');
-      const btnWrong = document.getElementById('btnRetryWrong');
-      const btnSkipped = document.getElementById('btnRetrySkipped');
-      const btnBoth = document.getElementById('btnRetryBoth');
-
-      const cntWrongBanner = document.getElementById('mistakeBannerCount');
-      const cntSkippedBanner = document.getElementById('skippedBannerCount');
-
-      if (cntWrongBanner) cntWrongBanner.textContent = incorrectCount;
-      if (cntSkippedBanner) cntSkippedBanner.textContent = unattemptedCount;
-
-      const totalRetriable = incorrectCount + unattemptedCount;
-
-      if (totalRetriable > 0) {
-        banner.classList.remove('hidden');
-
-        if (incorrectCount > 0) {
-          btnWrong.classList.remove('hidden');
-          document.getElementById('cntWrongBtn').textContent = incorrectCount;
-        } else {
-          btnWrong.classList.add('hidden');
-        }
-
-        if (unattemptedCount > 0) {
-          btnSkipped.classList.remove('hidden');
-          document.getElementById('cntSkippedBtn').textContent = unattemptedCount;
-        } else {
-          btnSkipped.classList.add('hidden');
-        }
-
-        if (incorrectCount > 0 && unattemptedCount > 0) {
-          btnBoth.classList.remove('hidden');
-          document.getElementById('cntBothBtn').textContent = totalRetriable;
-        } else {
-          btnBoth.classList.add('hidden');
-        }
-      } else {
-        banner.classList.add('hidden');
-      }
-    }
-
-    function startReattemptSession(type) {
-      if (!resultData || !Array.isArray(resultData.questionsAnalysis)) return;
-
-      let targetQuestions = [];
-      let modeTitle = "";
-
-      if (type === 'wrong') {
-        targetQuestions = resultData.questionsAnalysis.filter(q => q.isAttempted && !q.isCorrect);
-        modeTitle = "चुकलेले प्रश्न सराव";
-      } else if (type === 'skipped') {
-        targetQuestions = resultData.questionsAnalysis.filter(q => !q.isAttempted);
-        modeTitle = "अनुत्तरित प्रश्न सराव";
-      } else {
-        targetQuestions = resultData.questionsAnalysis.filter(q => !q.isAttempted || !q.isCorrect);
-        modeTitle = "चुकलेले व अनुत्तरित सराव";
-      }
-
-      if (targetQuestions.length === 0) {
-        showToast("पुन्हा सोडवण्यासाठी एकही प्रश्न उपलब्ध नाही!");
-        return;
-      }
-
-      const formattedQuestions = targetQuestions.map((q, idx) => ({
-        id: q.questionId || idx + 1,
-        question: q.question,
-        options: q.options,
-        correctAnswerIndex: q.correctAnswerIndex,
-        explanation: q.explanation
-      }));
-
-      const mistakesPackage = {
-        testId: `${resultData.testId || 'test'}-${type}`,
-        title: {
-          mr: `${resolveText(resultData.title, 'mr')} — ${modeTitle}`,
-          en: `${resolveText(resultData.title, 'en')} — Re-attempt (${type})`
-        },
-        durationMinutes: Math.max(5, Math.ceil(formattedQuestions.length * 0.8)),
-        marksPerQuestion: 1,
-        negativeMarking: 0.25,
-        totalMarks: formattedQuestions.length,
-        difficulty: "फेरचाचणी",
-        questions: formattedQuestions
-      };
-
-      sessionStorage.setItem('mistakesTestPayload', JSON.stringify(mistakesPackage));
-      window.location.href = 'test.html?mode=mistakes';
-    }
-
-    function renderReviewQuestions() {
-      const container = document.getElementById('questionsReviewContainer');
-      container.innerHTML = '';
-
-      if (!resultData || !Array.isArray(resultData.questionsAnalysis)) return;
-
-      const questions = resultData.questionsAnalysis;
-      const letters = ['A', 'B', 'C', 'D'];
-
-      questions.forEach((q, index) => {
-        if (currentFilter === 'incorrect' && (!q.isAttempted || q.isCorrect)) return;
-        if (currentFilter === 'correct' && (!q.isAttempted || !q.isCorrect)) return;
-        if (currentFilter === 'skipped' && q.isAttempted) return;
-
-        const card = document.createElement('div');
-        const qKey = `${resultData.testId || 'test'}_q${q.questionId || index + 1}`;
-        const isBookmarked = !!savedBookmarks[qKey];
-        const isReported = reportedQuestions.has(qKey);
-
-        let statusPill = '';
-        let cardBorderClass = 'border-slate-200 dark:border-slate-800';
-
-        if (!q.isAttempted) {
-          statusPill = `<span class="px-2 py-0.5 rounded text-[10px] font-bold bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-slate-700">अनुत्तरित (Unattempted)</span>`;
-        } else if (q.isCorrect) {
-          statusPill = `<span class="px-2 py-0.5 rounded text-[10px] font-bold bg-emerald-100 dark:bg-emerald-950 text-emerald-700 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800">✓ बरोबर (+१.००)</span>`;
-          cardBorderClass = 'border-emerald-200 dark:border-emerald-950';
-        } else {
-          statusPill = `<span class="px-2 py-0.5 rounded text-[10px] font-bold bg-rose-100 dark:bg-rose-950 text-rose-700 dark:text-rose-300 border border-rose-200 dark:border-rose-800">✗ चुकीचे (-०.२५)</span>`;
-          cardBorderClass = 'border-rose-200 dark:border-rose-950';
-        }
-
-        let qTimeHtml = '';
-        const qSecs = q.timeSpentSeconds || 0;
-        if (qSecs > 0) {
-          if (qSecs < 30) {
-            qTimeHtml = `<span class="px-1.5 py-0.5 rounded text-[9px] font-extrabold bg-emerald-50 dark:bg-emerald-950/60 text-emerald-700 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800">⚡ ${qSecs}s (जलद)</span>`;
-          } else if (qSecs > 75) {
-            qTimeHtml = `<span class="px-1.5 py-0.5 rounded text-[9px] font-extrabold bg-amber-50 dark:bg-amber-950/60 text-amber-700 dark:text-amber-300 border border-amber-200 dark:border-amber-800">🐢 ${qSecs}s (वेळखाऊ)</span>`;
-          } else {
-            qTimeHtml = `<span class="px-1.5 py-0.5 rounded text-[9px] font-medium bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300">⏱️ ${qSecs}s</span>`;
-          }
-        }
-
-        let questionHtml = '';
-        if (typeof q.question === 'object' && q.question !== null) {
-          const mr = q.question.mr || '';
-          const en = q.question.en || '';
-          if (reviewLanguage === 'mr') {
-            questionHtml = `<p class="font-bold text-slate-900 dark:text-white text-xs sm:text-sm leading-relaxed">${mr || en}</p>`;
-          } else if (reviewLanguage === 'en') {
-            questionHtml = `<p class="font-bold text-slate-900 dark:text-white text-xs sm:text-sm leading-relaxed">${en || mr}</p>`;
-          } else {
-            questionHtml = `
-              <div class="space-y-1">
-                <p class="font-bold text-slate-900 dark:text-white text-xs sm:text-sm leading-relaxed">${mr}</p>
-                ${en ? `<p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed font-medium pt-1 border-t border-dashed border-slate-100 dark:border-slate-800">${en}</p>` : ''}
-              </div>
-            `;
-          }
-        } else {
-          questionHtml = `<p class="font-bold text-slate-900 dark:text-white text-xs sm:text-sm leading-relaxed">${q.question}</p>`;
-        }
-
-        let optionsHtml = '<div class="grid grid-cols-1 sm:grid-cols-2 gap-2 my-3">';
-        (q.options || []).forEach((opt, optIndex) => {
-          const isCorrectAnswer = (optIndex === q.correctAnswerIndex);
-          const isUserPick = (optIndex === q.givenAnswer);
-
-          let optBoxClass = 'border-slate-200 dark:border-slate-800 bg-white dark:bg-[#11192a] text-slate-700 dark:text-slate-300';
-          let letterBadgeClass = 'bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 border-slate-200 dark:border-slate-700';
-
-          if (isCorrectAnswer) {
-            optBoxClass = 'border-emerald-500 bg-emerald-50/70 dark:bg-emerald-950/60 text-emerald-900 dark:text-emerald-100 font-bold';
-            letterBadgeClass = 'bg-emerald-600 text-white border-emerald-600';
-          } else if (isUserPick && !q.isCorrect) {
-            optBoxClass = 'border-rose-500 bg-rose-50/70 dark:bg-rose-950/60 text-rose-900 dark:text-rose-100 font-medium line-through';
-            letterBadgeClass = 'bg-rose-600 text-white border-rose-600';
-          }
-
-          let optTextHtml = '';
-          if (typeof opt === 'object' && opt !== null) {
-            const mrOpt = opt.mr || '';
-            const enOpt = opt.en || '';
-            if (reviewLanguage === 'mr') optTextHtml = mrOpt || enOpt;
-            else if (reviewLanguage === 'en') optTextHtml = enOpt || mrOpt;
-            else optTextHtml = `<span>${mrOpt}</span>${enOpt ? `<span class="block text-[10px] text-slate-400 font-normal">${enOpt}</span>` : ''}`;
-          } else {
-            optTextHtml = String(opt);
-          }
-
-          optionsHtml += `
-            <div class="p-2.5 rounded-xl border-2 flex items-center gap-2.5 text-xs transition-all ${optBoxClass}">
-              <span class="w-5 h-5 rounded-md text-[10px] font-bold flex items-center justify-center shrink-0 border ${letterBadgeClass}">
-                ${letters[optIndex] || optIndex + 1}
-              </span>
-              <div class="flex-1 min-w-0">${optTextHtml}</div>
-              ${isCorrectAnswer ? '<span class="text-emerald-600 dark:text-emerald-400 font-extrabold text-xs shrink-0">✓ योग्य</span>' : ''}
-              ${isUserPick && !isCorrectAnswer ? '<span class="text-rose-600 dark:text-rose-400 font-bold text-xs shrink-0">✗ तुमचे उत्तर</span>' : ''}
+  <div id="thankYouModal" class="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm hidden items-center justify-center p-4">
+    <div class="bg-white dark:bg-[#131d31] rounded-2xl w-full max-w-sm p-6 shadow-2xl border border-slate-200 dark:border-slate-800 text-center animate-bounce-short">
+      <div class="w-12 h-12 bg-emerald-100 dark:bg-emerald-950/60 text-emerald-600 dark:text-emerald-400 rounded-full flex items-center justify-center mx-auto mb-3 shadow-inner">
+        <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/>
+        </svg>
+      </div>
+      <h3 class="text-base font-bold text-slate-900 dark:text-white">StudySphere ला सहकार्य केल्याबद्दल धन्यवाद!</h3>
+      <p class="text-xs text-slate-500 dark:text-slate-400 mt-2 leading-relaxed">
+        तुमचा हा पाठिंबा महाराष्ट्रातील हजारो होतकरू स्पर्धा परीक्षा विद्यार्थ्यांना मोफत टेस्ट्स पोहोचवण्यासाठी आणि वेबसाइट अधिक गतिशील ठेवण्यासाठी मोलाचा ठरेल.
+      </p>
+      <button onclick="closeModal('thankYouModal')" class="mt-4 w-full py-2.5 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white font-bold text-xs shadow-md transition-all">
+        सराव सुरू ठेवा (Continue)
+      </button>
+    </div>
+  </div>
+
+  <!-- Detailed About Modal -->
+  <div id="aboutModal" class="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm hidden items-center justify-center p-4">
+    <div class="bg-white dark:bg-[#131d31] rounded-2xl w-full max-w-xl p-6 shadow-2xl border border-slate-200 dark:border-slate-800 max-h-[85vh] overflow-y-auto">
+      <div class="flex items-center justify-between pb-3 border-b border-slate-100 dark:border-slate-800">
+        <div class="flex items-center gap-2.5">
+          <div class="w-8 h-8 rounded-lg bg-indigo-600 text-white flex items-center justify-center font-bold text-xs">SS</div>
+          <h3 class="text-base font-bold text-slate-900 dark:text-white">StudySphere बद्दल (About Us)</h3>
+        </div>
+        <button onclick="closeModal('aboutModal')" class="p-1 text-slate-400 hover:text-slate-600 dark:hover:text-white rounded-lg">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
+
+      <div class="mt-4 text-xs sm:text-sm text-slate-700 dark:text-slate-300 space-y-3.5 leading-relaxed font-medium">
+        <p>
+          <strong>StudySphere</strong> हे महाराष्ट्र लोकसेवा आयोग (MPSC) द्वारे आयोजित केल्या जाणाऱ्या <strong>गट-क (Group C) २०२६</strong> संयुक्त पूर्व आणि मुख्य परीक्षांसाठी विशेषत्वाने विकसित केलेले एक अत्याधुनिक, विद्यार्थी-केंद्रित आणि विनामूल्य ऑनलाइन सराव व्यासपीठ आहे.
+        </p>
+
+        <div class="p-3.5 rounded-xl bg-indigo-50/80 dark:bg-indigo-950/40 border border-indigo-100 dark:border-indigo-900/50">
+          <h4 class="font-bold text-indigo-950 dark:text-indigo-200 mb-1 text-xs sm:text-sm">आमचे ध्येय व संकल्पना (Our Mission):</h4>
+          <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+            ग्रामीण व शहरी भागातील आर्थिकदृष्ट्या गरजू, तसेच क्लास न लावता सेल्फ-स्टडी करणाऱ्या प्रत्येक विद्यार्थ्याला महागड्या टेस्ट सीरिजवर अवलंबून न राहता उच्च दर्जाच्या, परीक्षाभिमुख आणि आयोगाच्या अद्ययावत अभ्यासक्रमानुसार तयार केलेल्या सराव प्रश्नपत्रिका विनामूल्य उपलब्ध करून देणे.
+          </p>
+        </div>
+
+        <div class="space-y-2">
+          <h4 class="font-bold text-slate-900 dark:text-white text-xs sm:text-sm">प्लॅटफॉर्मची ठळक वैशिष्ट्ये (Key Features):</h4>
+          <ul class="list-disc list-inside space-y-1.5 text-xs text-slate-600 dark:text-slate-300">
+            <li><strong>घटकनिहाय व संपूर्ण सराव (Comprehensive Coverage):</strong> पूर्व परीक्षेचे ७ विषय, मुख्य परीक्षेचे १२ विषय व पदनिहाय विशेष ज्ञान (लिपिक, कर सहायक, उद्योग निरीक्षक, तांत्रिक सहायक, AMVI) यांचे स्वतंत्र घटक.</li>
+            <li><strong>MPSC अधिकृत पॅटर्न:</strong> १/४ (-०.२५) निगेटिव्ह मार्किंग, अचूक टाइमर आणि TCS/IBPS धर्तीवरील सुटसुटीत Question Palette.</li>
+            <li><strong>द्विभाषिक प्रश्न व पर्याय:</strong> सर्व प्रश्न मराठी आणि इंग्रजी दोन्ही भाषांमध्ये उपलब्ध.</li>
+            <li><strong>सविस्तर स्पष्टीकरण (Detailed Explanations):</strong> केवळ योग्य उत्तर नव्हे, तर उत्तरामागील संदर्भ आणि स्पष्टीकरण.</li>
+            <li><strong>त्रुटी निवारण प्रणाली (Report Mechanism):</strong> कोणत्याही प्रश्नाबाबत शंका असल्यास थेट Google Sheets द्वारे रिपोर्ट करण्याची सुविधा.</li>
+          </ul>
+        </div>
+
+        <div class="p-3 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 text-xs">
+          <p><strong>कार्यपद्धती:</strong> StudySphere ही पूर्णपणे क्लायंट-साइड आणि आधुनिक वेब तंत्रज्ञानावर आधारलेली प्रणाली आहे, ज्यामुळे विद्यार्थ्यांना वेगवान, विना-लॉगिन आणि विना-जाहिरात विचलित न होता थेट सराव करता येतो.</p>
+        </div>
+
+        <div class="pt-2 border-t border-slate-100 dark:border-slate-800 text-[11px] text-slate-500 dark:text-slate-400">
+          StudySphere हा विद्यार्थ्यांच्या अखंड अभ्यासासाठी एका निस्वार्थ व दर्जेदार प्रयत्नातून तयार केलेला प्रकल्प आहे.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Detailed Contact Modal -->
+  <div id="contactModal" class="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm hidden items-center justify-center p-4">
+    <div class="bg-white dark:bg-[#131d31] rounded-2xl w-full max-w-md p-6 shadow-2xl border border-slate-200 dark:border-slate-800 max-h-[85vh] overflow-y-auto">
+      <div class="flex items-center justify-between pb-3 border-b border-slate-100 dark:border-slate-800">
+        <h3 class="text-base font-bold text-slate-900 dark:text-white flex items-center gap-2">
+          <span>आमच्याशी संपर्क साधा (Contact Us)</span>
+        </h3>
+        <button onclick="closeModal('contactModal')" class="p-1 text-slate-400 hover:text-slate-600 dark:hover:text-white rounded-lg">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
+
+      <div class="mt-4 text-xs sm:text-sm text-slate-700 dark:text-slate-300 space-y-3 leading-relaxed font-medium">
+        <p>
+          आपल्याकडे नवीन टेस्ट्स संदर्भात काही विधायक सूचना असतील, तांत्रिक अडचण येत असल्यास किंवा अभ्यासाच्या साहित्याबाबत मार्गदर्शन हवे असल्यास आपण आमच्या अधिकृत संपर्क माध्यमांवर संपर्क साधू शकता.
+        </p>
+
+        <!-- Official Channels -->
+        <div class="space-y-2.5 pt-1">
+          <a href="https://t.me/MPSCstudysphere" target="_blank" rel="noopener noreferrer" 
+             class="flex items-center gap-3 p-3 rounded-xl bg-sky-50 dark:bg-sky-950/40 border border-sky-200 dark:border-sky-800 text-sky-700 dark:text-sky-300 hover:bg-sky-100 transition-all">
+            <div class="w-8 h-8 rounded-lg bg-sky-500 text-white flex items-center justify-center shrink-0">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.121l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.535-.197 1.006.128.832.946z"/></svg>
             </div>
-          `;
-        });
-        optionsHtml += '</div>';
-
-        const expMr = resolveText(q.explanation, 'mr');
-        const expEn = resolveText(q.explanation, 'en');
-        const finalExp = reviewLanguage === 'en' ? (expEn || expMr) : (expMr || expEn);
-
-        card.className = `p-4 sm:p-5 rounded-2xl bg-white dark:bg-[#131d31] border-2 shadow-sm ${cardBorderClass}`;
-        card.innerHTML = `
-          <div class="flex items-center justify-between gap-2 mb-2.5 pb-2 border-b border-slate-100 dark:border-slate-800/80">
-            <div class="flex items-center gap-2">
-              <span class="w-6 h-6 rounded-lg bg-indigo-50 dark:bg-indigo-950 text-indigo-700 dark:text-indigo-300 font-extrabold text-xs flex items-center justify-center border border-indigo-200 dark:border-indigo-800">
-                ${index + 1}
-              </span>
-              ${statusPill}
-              ${qTimeHtml}
+            <div class="min-w-0">
+              <span class="block text-xs font-bold">अधिकृत टेलिग्राम चॅनेल व ग्रुप</span>
+              <span class="text-[11px] text-sky-600 dark:text-sky-400">@MPSCstudysphere (सर्व चाचण्यांचे मोफत अपडेट्स)</span>
             </div>
+          </a>
 
-            <div class="flex items-center gap-1.5 no-print">
-              <button id="bookmark-btn-${index}" 
-                      onclick="toggleBookmark(${index})" 
-                      title="अवघड प्रश्न व्हॉल्टमध्ये सेव्ह करा"
-                      class="px-2 py-1 rounded-lg border text-[11px] font-bold transition-all flex items-center gap-1 active:scale-95 ${
-                        isBookmarked 
-                          ? 'border-amber-300 bg-amber-50 dark:bg-amber-950/40 text-amber-700 dark:text-amber-300' 
-                          : 'border-slate-200 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-600 dark:text-slate-300'
-                      }">
-                ${isBookmarked ? '<span class="text-amber-500">⭐</span> <span>Saved</span>' : '<span>☆</span> <span>Save</span>'}
-              </button>
-
-              ${isReported ? `
-                <button id="report-btn-${index}" disabled
-                        title="या प्रश्नाची त्रुटी आधीच नोंदवली आहे"
-                        class="px-2 py-1 rounded-lg border border-emerald-300 dark:border-emerald-800 bg-emerald-50 dark:bg-emerald-950/40 text-emerald-700 dark:text-emerald-300 text-[11px] font-bold flex items-center gap-1 cursor-not-allowed opacity-90">
-                  <svg class="w-3 h-3 text-emerald-600 dark:text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
-                  <span>Reported</span>
-                </button>
-              ` : `
-                <button id="report-btn-${index}" onclick="openReportModal(${index})" 
-                        title="प्रश्नातील त्रुटी नोंदवा"
-                        class="px-2 py-1 rounded-lg border border-slate-200 dark:border-slate-700 hover:border-rose-300 dark:hover:border-rose-900 text-slate-500 hover:text-rose-600 dark:text-slate-400 dark:hover:text-rose-400 text-[11px] font-semibold transition-all flex items-center gap-1">
-                  <svg class="w-3 h-3 text-rose-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
-                  <span>Report</span>
-                </button>
-              `}
-            </div>
-          </div>
-
-          ${questionHtml}
-          ${optionsHtml}
-
-          <div class="mt-3 p-3 rounded-xl bg-indigo-50/70 dark:bg-indigo-950/30 border border-indigo-100 dark:border-indigo-900/50 text-xs">
-            <span class="font-extrabold text-indigo-900 dark:text-indigo-300 block mb-1 flex items-center gap-1">
-              <span>💡</span> <span>सविस्तर स्पष्टीकरण (Explanation):</span>
-            </span>
-            <p class="text-slate-700 dark:text-slate-300 leading-relaxed font-medium">
-              ${finalExp || "या प्रश्नाचे स्पष्टीकरण उपलब्ध नाही."}
+          <div class="p-3 rounded-xl bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-xs text-slate-600 dark:text-slate-300 space-y-1">
+            <span class="font-bold text-slate-800 dark:text-slate-100 block">प्रश्नातील त्रुटी नोंदवण्यासाठी (Question Reporting):</span>
+            <p class="text-[11px]">
+              कोणत्याही प्रश्नात उत्तर किंवा भाषांतर चूक आढळल्यास टेस्ट दिल्यानंतर निकाल पृष्ठावर (Result Page) प्रत्येक प्रश्नासमोर दिलेल्या <strong>"त्रुटी नोंदवा (Report)"</strong> बटणाचा वापर करावा. ही माहिती थेट आमच्या तज्ज्ञ टीमकडे Google Sheets द्वारे पोहोचते.
             </p>
           </div>
-        `;
+        </div>
 
-        container.appendChild(card);
-      });
-    }
+        <p class="text-[11px] text-slate-500 dark:text-slate-400 pt-1">
+          विद्यार्थ्यांच्या प्रत्येक विधायक सूचनेचे, नवीन प्रश्नसंच योगदानाचे आणि अभिप्रायाचे आम्ही मनःपूर्वक स्वागत करतो.
+        </p>
+      </div>
+    </div>
+  </div>
 
-    function filterQuestions(type) {
-      currentFilter = type;
-      document.querySelectorAll('.q-filter').forEach(btn => {
-        btn.className = 'q-filter px-2 sm:px-2.5 py-1 rounded-md text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white transition-all';
-      });
+  <!-- Detailed Privacy Policy Modal -->
+  <div id="privacyModal" class="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm hidden items-center justify-center p-4">
+    <div class="bg-white dark:bg-[#131d31] rounded-2xl w-full max-w-lg p-6 shadow-2xl border border-slate-200 dark:border-slate-800 max-h-[85vh] overflow-y-auto">
+      <div class="flex items-center justify-between pb-3 border-b border-slate-100 dark:border-slate-800">
+        <h3 class="text-base font-bold text-slate-900 dark:text-white">गोपनीयता धोरण (Privacy Policy)</h3>
+        <button onclick="closeModal('privacyModal')" class="p-1 text-slate-400 hover:text-slate-600 dark:hover:text-white rounded-lg">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
 
-      const activeBtn = {
-        all: 'btnFilterAll',
-        incorrect: 'btnFilterIncorrect',
-        correct: 'btnFilterCorrect',
-        skipped: 'btnFilterSkipped'
-      }[type];
+      <div class="mt-4 text-xs sm:text-sm text-slate-700 dark:text-slate-300 space-y-3.5 leading-relaxed font-medium">
+        <p>
+          StudySphere वर आपल्या गोपनीयतेचे (Privacy) १००% संरक्षण केले जाते. आमच्या प्लॅटफॉर्मचा वापर करताना विद्यार्थ्यांची कोणतीही अनावश्यक वैयक्तिक माहिती गोळा केली जात नाही.
+        </p>
 
-      if (document.getElementById(activeBtn)) {
-        document.getElementById(activeBtn).className = 'q-filter px-2 sm:px-2.5 py-1 rounded-md bg-white dark:bg-slate-900 text-indigo-600 dark:text-indigo-400 shadow-sm font-bold transition-all';
+        <div class="space-y-2">
+          <h4 class="font-bold text-slate-900 dark:text-white text-xs sm:text-sm">१. वैयक्तिक डेटा संकलन नाही (Zero Personal Data Collection):</h4>
+          <p class="text-xs text-slate-600 dark:text-slate-300">
+            आम्ही वापरकर्त्यांचे नाव, मोबाईल नंबर, पासवर्ड, आधार किंवा ईमेल अशी कोणतीही वैयक्तिक माहिती गोळा करत नाही. चाचण्या सोडवण्यासाठी कोणत्याही अनिवार्य लॉगिन किंवा नोंदणीची आवश्यकता नाही.
+          </p>
+        </div>
+
+        <div class="space-y-2">
+          <h4 class="font-bold text-slate-900 dark:text-white text-xs sm:text-sm">२. स्थानिक ब्राऊझर स्टोरेज (Local Storage Usage):</h4>
+          <p class="text-xs text-slate-600 dark:text-slate-300">
+            आपली डार्क/लाइट थीम निवड (`studySphereTheme`), फॉन्ट साईज प्राधान्य (`studySphereFontSize`) आणि चालू चाचणीचा तात्पुरता स्कोअर केवळ आपल्या स्वतःच्या मोबाईल किंवा कॉम्प्युटरच्या ब्राऊझरमध्ये स्थानिक स्वरूपात जतन केला जातो.
+          </p>
+        </div>
+
+        <div class="space-y-2">
+          <h4 class="font-bold text-slate-900 dark:text-white text-xs sm:text-sm">३. डेटा सुरक्षा आणि विक्री नाही (Zero Data Sharing):</h4>
+          <p class="text-xs text-slate-600 dark:text-slate-300">
+            StudySphere कोणत्याही बाह्य जाहिरातदार कंपन्यांना किंवा त्रयस्थ संस्थांना डेटा विकत नाही अथवा शेअर करत नाही.
+          </p>
+        </div>
+
+        <div class="space-y-2">
+          <h4 class="font-bold text-slate-900 dark:text-white text-xs sm:text-sm">४. Google Sheets तक्रार नोंदणी:</h4>
+          <p class="text-xs text-slate-600 dark:text-slate-300">
+            जेव्हा विद्यार्थी प्रश्नातील त्रुटी नोंदवतात (Report Issue), तेव्हा केवळ प्रश्न क्रमांक आणि त्रुटीचे स्वरूप आमच्या Google Sheet मध्ये जतन होते; युझरची कोणतीही वैयक्तिक ओळख रेकॉर्ड केली जात नाही.
+          </p>
+        </div>
+
+        <p class="text-[11px] text-slate-500 dark:text-slate-400 pt-2 border-t border-slate-100 dark:border-slate-800">
+          हे गोपनीयता धोरण स्पर्धा परीक्षेच्या विद्यार्थ्यांच्या सुरक्षित, स्वच्छ आणि जाहिरातमुक्त शैक्षणिक अनुभवासाठी कटिबद्ध आहे.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Detailed Terms and Services Modal -->
+  <div id="termsModal" class="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm hidden items-center justify-center p-4">
+    <div class="bg-white dark:bg-[#131d31] rounded-2xl w-full max-w-lg p-6 shadow-2xl border border-slate-200 dark:border-slate-800 max-h-[85vh] overflow-y-auto">
+      <div class="flex items-center justify-between pb-3 border-b border-slate-100 dark:border-slate-800">
+        <h3 class="text-base font-bold text-slate-900 dark:text-white">नियम व अटी (Terms and Services)</h3>
+        <button onclick="closeModal('termsModal')" class="p-1 text-slate-400 hover:text-slate-600 dark:hover:text-white rounded-lg">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
+
+      <div class="mt-4 text-xs sm:text-sm text-slate-700 dark:text-slate-300 space-y-3.5 leading-relaxed font-medium">
+        <p>
+          StudySphere प्लॅटफॉर्मचा वापर करण्यापूर्वी कृपया खालील नियम व अटी काळजीपूर्वक वाचाव्यात:
+        </p>
+
+        <div class="space-y-1.5">
+          <h4 class="font-bold text-slate-900 dark:text-white text-xs sm:text-sm">१. केवळ शैक्षणिक व सराव उद्देश (Educational Purpose Only):</h4>
+          <p class="text-xs text-slate-600 dark:text-slate-300">
+            या वेबसाइटवरील सर्व मॉक टेस्ट्स, प्रश्नसंच, बहुपर्यायी प्रश्न (MCQs) आणि स्पष्टीकरणे ही केवळ विद्यार्थ्यांच्या वैयक्तिक सरावासाठी व मार्गदर्शनासाठी तयार केलेली आहेत.
+          </p>
+        </div>
+
+        <div class="space-y-1.5">
+          <h4 class="font-bold text-slate-900 dark:text-white text-xs sm:text-sm">२. शासकीय आयोगाशी संबंध नाही (Non-Affiliation Disclaimer):</h4>
+          <p class="text-xs text-slate-600 dark:text-slate-300">
+            StudySphere ही एक स्वतंत्र, विद्यार्थी-हितैषी शैक्षणिक उपक्रम आहे. या व्यासपीठाचा <strong>महाराष्ट्र लोकसेवा आयोग (MPSC)</strong> किंवा कोणत्याही शासकीय यंत्रणेशी थेट अधिकृत संबंध नाही. अधिकृत जाहिरात, नियम आणि अंतिम निकालासाठी आयोगाच्या अधिकृत संकेतस्थळाचा संदर्भ घ्यावा.
+          </p>
+        </div>
+
+        <div class="space-y-1.5">
+          <h4 class="font-bold text-slate-900 dark:text-white text-xs sm:text-sm">३. मजकुराची अचूकता (Content Accuracy):</h4>
+          <p class="text-xs text-slate-600 dark:text-slate-300">
+            आम्ही प्रमाण पुस्तके, गॅझेट्स व अधिकृत संदर्भग्रंथांनुसार अचूक उत्तरे देण्याचा १००% प्रयत्न करतो. तरीही मुद्रणदोष किंवा टायपिंग त्रुटी आढळल्यास ती दुरुस्त करण्याचे हक्क सुरक्षित आहेत.
+          </p>
+        </div>
+
+        <div class="space-y-1.5">
+          <h4 class="font-bold text-slate-900 dark:text-white text-xs sm:text-sm">४. सेवा उपलब्धता व मोफत स्वरूप:</h4>
+          <p class="text-xs text-slate-600 dark:text-slate-300">
+            प्लॅटफॉर्म मोफत वेब सेवांवर चालवला जात असल्याने सर्व्हर मेंटेनन्स, तांत्रिक अडचणी किंवा इंटरनेट व्यत्ययामुळे सेवा तात्पुरती खंडित झाल्यास कोणतीही आर्थिक अथवा कायदेशीर जबाबदारी प्लॅटफॉर्मवर राहणार नाही.
+          </p>
+        </div>
+
+        <p class="text-[11px] text-slate-500 dark:text-slate-400 pt-2 border-t border-slate-100 dark:border-slate-800">
+          वेबसाइट वापरून सराव सुरू ठेवणे म्हणजेच आपण या अटींशी पूर्णपणे सहमत आहात.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Detailed Sitemap Modal -->
+  <div id="sitemapModal" class="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm hidden items-center justify-center p-4">
+    <div class="bg-white dark:bg-[#131d31] rounded-2xl w-full max-w-lg p-6 shadow-2xl border border-slate-200 dark:border-slate-800 max-h-[85vh] overflow-y-auto">
+      <div class="flex items-center justify-between pb-3 border-b border-slate-100 dark:border-slate-800">
+        <h3 class="text-base font-bold text-slate-900 dark:text-white">साइटमॅप (Website Sitemap)</h3>
+        <button onclick="closeModal('sitemapModal')" class="p-1 text-slate-400 hover:text-slate-600 dark:hover:text-white rounded-lg">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
+
+      <div class="mt-4 text-xs sm:text-sm text-slate-700 dark:text-slate-300 space-y-3.5 leading-relaxed font-medium">
+        <p class="text-xs text-slate-500 dark:text-slate-400">
+          StudySphere वरील सर्व विभाग, विषय व उपलब्ध चाचण्यांची संपूर्ण रचना खालीलप्रमाणे आहे:
+        </p>
+
+        <!-- Section 1 Structure -->
+        <div class="p-3 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700">
+          <span class="font-bold text-indigo-600 dark:text-indigo-400 block mb-1">१. MPSC Group C 2026 — PRELIMS (संयुक्त पूर्व परीक्षा):</span>
+          <div class="grid grid-cols-2 gap-1 text-[11px] text-slate-600 dark:text-slate-300">
+            <span>• History (इतिहास - १२ घटक)</span>
+            <span>• Geography (भूगोल - १७ घटक)</span>
+            <span>• Economics (अर्थशास्त्र - १७ घटक)</span>
+            <span>• Polity & Civics (राज्यशास्त्र - १९ घटक)</span>
+            <span>• General Science (विज्ञान - २७ घटक)</span>
+            <span>• Current Affairs (चालू घडामोडी - १७ घटक)</span>
+            <span>• Mental Ability & Arithmetic (२७ घटक)</span>
+          </div>
+        </div>
+
+        <!-- Section 2 Structure -->
+        <div class="p-3 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700">
+          <span class="font-bold text-emerald-600 dark:text-emerald-400 block mb-1">२. MPSC Group C 2026 — MAINS (मुख्य परीक्षा):</span>
+          <div class="space-y-1.5 text-[11px] text-slate-600 dark:text-slate-300">
+            <p><strong>Paper 1 (Language):</strong> Marathi (६ घटक), English (६ घटक)</p>
+            <p><strong>Paper 2 (GS & Intelligence):</strong> इतिहास, भूगोल, राज्यशास्त्र, अर्थशास्त्र, विज्ञान, चालू घडामोडी, बुद्धिमत्ता व गणित, माहिती तंत्रज्ञान (IT), RTI व लोकसेवा हक्क कायदा, पदनिहाय विशेष ज्ञान (लिपिक, कर सहायक, उद्योग निरीक्षक, तांत्रिक सहायक, AMVI).</p>
+          </div>
+        </div>
+
+        <!-- Section 3 Structure -->
+        <div class="p-3 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700">
+          <span class="font-bold text-purple-600 dark:text-purple-400 block mb-1">३. Combine Full Quizzes (संपूर्ण मॉक टेस्ट्स):</span>
+          <div class="space-y-0.5 text-[11px] text-slate-600 dark:text-slate-300">
+            <p>• Prelims Combine Mock: १०० प्रश्न | १०० गुण | ६० मिनिटे</p>
+            <p>• Mains Combine Mock: २०० प्रश्न | २०० गुण | १२० मिनिटे</p>
+          </div>
+        </div>
+
+        <!-- Utility & Help Links -->
+        <div class="p-3 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700">
+          <span class="font-bold text-slate-800 dark:text-slate-200 block mb-1">४. इतर उपयुक्त दुवे व साधने:</span>
+          <div class="grid grid-cols-2 gap-1 text-[11px] text-slate-600 dark:text-slate-300">
+            <span>• About StudySphere</span>
+            <span>• Contact & Issues</span>
+            <span>• Privacy Policy</span>
+            <span>• Terms of Service</span>
+            <span>• Support / Donate System</span>
+            <span>• @MPSCstudysphere Telegram</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="toastNotification" class="fixed bottom-5 right-5 z-50 transform translate-y-20 opacity-0 transition-all duration-300 bg-slate-900 text-white dark:bg-white dark:text-slate-900 px-4 py-2.5 rounded-xl shadow-xl flex items-center gap-2 text-xs font-semibold">
+    <svg class="w-4 h-4 text-emerald-400 dark:text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+    <span id="toastMessage">Link copied to clipboard!</span>
+  </div>
+
+  <script>
+    // State Variables
+    let selectedAmount = 100;
+    let paymentInitiated = false;
+    const fontSizes = ['small', 'medium', 'large'];
+    let currentFontIndex = 1; // Default: 'medium'
+
+    // =========================================================================
+    // FEATURE: ⏳ MPSC GROUP C LIVE EXAM COUNTDOWN ENGINE (03 JANUARY 2027)
+    // =========================================================================
+    // Targeted MPSC Group C Prelims Exam Date: 03 January 2027 10:00 AM IST
+    const DEFAULT_EXAM_DATE_MS = new Date('2027-01-03T10:00:00+05:30').getTime();
+
+    function updateCountdown() {
+      const now = Date.now();
+      const distance = DEFAULT_EXAM_DATE_MS - now;
+
+      const daysEl = document.getElementById('cdDays');
+      const hoursEl = document.getElementById('cdHours');
+      const minsEl = document.getElementById('cdMinutes');
+      const secsEl = document.getElementById('cdSeconds');
+
+      if (!daysEl || !hoursEl || !minsEl || !secsEl) return;
+
+      if (distance <= 0) {
+        daysEl.textContent = '००';
+        hoursEl.textContent = '००';
+        minsEl.textContent = '००';
+        secsEl.textContent = '००';
+        return;
       }
 
-      renderReviewQuestions();
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      daysEl.textContent = String(days).padStart(2, '0');
+      hoursEl.textContent = String(hours).padStart(2, '0');
+      minsEl.textContent = String(minutes).padStart(2, '0');
+      secsEl.textContent = String(seconds).padStart(2, '0');
     }
 
-    function setReviewLanguage(lang) {
-      reviewLanguage = lang;
-      ['both', 'mr', 'en'].forEach(l => {
-        const btn = document.getElementById(`reviewLang${l.charAt(0).toUpperCase() + l.slice(1)}`);
-        if (btn) {
-          if (l === lang) {
-            btn.className = 'px-2.5 py-1 rounded-md transition-all bg-white dark:bg-slate-900 text-indigo-600 dark:text-indigo-400 shadow-sm font-bold';
-          } else {
-            btn.className = 'px-2.5 py-1 rounded-md transition-all text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white';
+    // =========================================================================
+    // FEATURE: 📱 PWA INSTALL PROMPT ENGINE
+    // =========================================================================
+    let deferredPrompt = null;
+    window.addEventListener('beforeinstallprompt', (e) => {
+      e.preventDefault();
+      deferredPrompt = e;
+      const btn = document.getElementById('pwaInstallBtn');
+      if (btn) btn.classList.remove('hidden');
+    });
+
+    function triggerPwaInstall() {
+      if (deferredPrompt) {
+        deferredPrompt.prompt();
+        deferredPrompt.userChoice.then((choiceResult) => {
+          if (choiceResult.outcome === 'accepted') {
+            document.getElementById('pwaInstallBtn')?.classList.add('hidden');
           }
-        }
-      });
-      renderReviewQuestions();
-    }
-
-    function retakeTest() {
-      window.location.href = `test-list.html`;
-    }
-
-    function shareScoreWhatsApp() {
-      if (!resultData) return;
-      const score = (resultData.marksObtained || 0).toFixed(2);
-      const total = resultData.totalMarks || 20;
-      const title = resolveText(resultData.title, 'mr');
-      const text = `🎯 *StudySphere MPSC Group C सराव चाचणी निकाल* 🎯\n\n📝 *चाचणी:* ${title}\n🏆 *माझे गुण:* ${score} / ${total}\n⚡ *अचूकता:* ${document.getElementById('accuracyVal').textContent}\n\nतुम्हीही मोफत MPSC सराव चाचण्या सोडवा: https://tinyurl.com/MPSC-StudySphere`;
-      window.open(`https://api.whatsapp.com/send?text=${encodeURIComponent(text)}`, '_blank');
-    }
-
-    function generateAndDownloadScorecardImage() {
-      if (!resultData) return;
-
-      const canvas = document.createElement('canvas');
-      canvas.width = 1080;
-      canvas.height = 1080;
-      const ctx = canvas.getContext('2d');
-
-      // 1. Background Gradient
-      const grad = ctx.createLinearGradient(0, 0, 1080, 1080);
-      grad.addColorStop(0, '#0f172a');
-      grad.addColorStop(0.5, '#1e1b4b');
-      grad.addColorStop(1, '#0f172a');
-      ctx.fillStyle = grad;
-      ctx.fillRect(0, 0, 1080, 1080);
-
-      // 2. Decorative Glow Orbs
-      ctx.save();
-      ctx.filter = 'blur(80px)';
-      ctx.fillStyle = 'rgba(99, 102, 241, 0.25)';
-      ctx.beginPath();
-      ctx.arc(900, 200, 250, 0, Math.PI * 2);
-      ctx.fill();
-      ctx.fillStyle = 'rgba(16, 185, 129, 0.15)';
-      ctx.beginPath();
-      ctx.arc(180, 900, 200, 0, Math.PI * 2);
-      ctx.fill();
-      ctx.restore();
-
-      // 3. Card Frame
-      ctx.fillStyle = 'rgba(255, 255, 255, 0.05)';
-      ctx.strokeStyle = 'rgba(255, 255, 255, 0.15)';
-      ctx.lineWidth = 3;
-      roundRect(ctx, 60, 60, 960, 960, 40, true, true);
-
-      // 4. Logo & Brand Title
-      ctx.fillStyle = '#6366f1';
-      roundRect(ctx, 110, 110, 80, 80, 20, true, false);
-      ctx.fillStyle = '#ffffff';
-      ctx.font = 'bold 36px "Mukta", sans-serif';
-      ctx.textAlign = 'center';
-      ctx.fillText('SS', 150, 163);
-
-      ctx.textAlign = 'left';
-      ctx.font = 'bold 44px "Mukta", sans-serif';
-      ctx.fillStyle = '#ffffff';
-      ctx.fillText('StudySphere', 215, 150);
-
-      ctx.font = '500 24px "Mukta", sans-serif';
-      ctx.fillStyle = '#94a3b8';
-      ctx.fillText('MPSC Group C सराव चाचणी निकाल पत्रक', 215, 185);
-
-      // 5. Quiz Title Box
-      ctx.fillStyle = 'rgba(99, 102, 241, 0.15)';
-      roundRect(ctx, 110, 230, 860, 100, 20, true, false);
-
-      ctx.fillStyle = '#e2e8f0';
-      ctx.font = 'bold 32px "Mukta", sans-serif';
-      const titleMr = resolveText(resultData.title, 'mr') || 'सराव चाचणी निकाल';
-      ctx.fillText(titleMr.length > 40 ? titleMr.slice(0, 38) + '...' : titleMr, 140, 290);
-
-      // 6. Score Showcase Box
-      const score = (resultData.marksObtained || 0).toFixed(2);
-      const totalMarks = resultData.totalMarks || 20;
-      const acc = document.getElementById('accuracyVal').textContent || '0%';
-      const timeStr = document.getElementById('timeSpentVal').textContent || '00:00';
-
-      ctx.fillStyle = 'rgba(255, 255, 255, 0.08)';
-      roundRect(ctx, 110, 360, 860, 360, 30, true, false);
-
-      // Big Score Display
-      ctx.textAlign = 'center';
-      ctx.font = '800 110px "Mukta", sans-serif';
-      ctx.fillStyle = '#ffffff';
-      ctx.fillText(score, 540, 500);
-
-      ctx.font = 'bold 34px "Mukta", sans-serif';
-      ctx.fillStyle = '#cbd5e1';
-      ctx.fillText(`/ ${totalMarks} एकूण गुण`, 540, 560);
-
-      // 3 Mini Metric Badges
-      drawScorePill(ctx, 160, 600, 220, 90, '✓ बरोबर', `${resultData.correctCount || 0}`, '#10b981');
-      drawScorePill(ctx, 430, 600, 220, 90, '✗ चूक', `${resultData.incorrectCount || 0}`, '#f43f5e');
-      drawScorePill(ctx, 700, 600, 220, 90, 'अचूकता', acc, '#fbbf24');
-
-      // 7. Footer Info
-      ctx.textAlign = 'left';
-      ctx.font = '500 24px "Mukta", sans-serif';
-      ctx.fillStyle = '#94a3b8';
-      ctx.fillText(`⏱️ वेळ: ${timeStr} मिनिटे  •  -०.२५ निगेटिव्ह मार्किंग`, 120, 780);
-
-      ctx.fillStyle = 'rgba(255, 255, 255, 0.12)';
-      roundRect(ctx, 110, 820, 860, 70, 20, true, false);
-      ctx.font = 'bold 24px "Mukta", sans-serif';
-      ctx.fillStyle = '#a5b4fc';
-      ctx.textAlign = 'center';
-      ctx.fillText('स्पर्धा परीक्षांसाठी १००% मोफत टेस्ट्स : https://tinyurl.com/MPSC-StudySphere', 540, 865);
-
-      const link = document.createElement('a');
-      link.download = `StudySphere_Scorecard_${Date.now()}.png`;
-      link.href = canvas.toDataURL('image/png');
-      link.click();
-
-      showToast("📸 स्कोअरकार्ड इमेज तयार झाली! गॅलरी तपासा.");
-    }
-
-    function roundRect(ctx, x, y, width, height, radius, fill, stroke) {
-      ctx.beginPath();
-      ctx.moveTo(x + radius, y);
-      ctx.lineTo(x + width - radius, y);
-      ctx.quadraticCurveTo(x + width, y, x + width, y + radius);
-      ctx.lineTo(x + width, y + height - radius);
-      ctx.quadraticCurveTo(x + width, y + height, x + width - radius, y + height);
-      ctx.lineTo(x + radius, y + height);
-      ctx.quadraticCurveTo(x, y + height, x, y + height - radius);
-      ctx.lineTo(x, y + radius);
-      ctx.quadraticCurveTo(x, y, x + radius, y);
-      ctx.closePath();
-      if (fill) ctx.fill();
-      if (stroke) ctx.stroke();
-    }
-
-    function drawScorePill(ctx, x, y, w, h, label, val, color) {
-      ctx.save();
-      ctx.fillStyle = 'rgba(0, 0, 0, 0.25)';
-      roundRect(ctx, x, y, w, h, 16, true, false);
-      ctx.textAlign = 'center';
-      ctx.font = 'bold 20px "Mukta", sans-serif';
-      ctx.fillStyle = '#94a3b8';
-      ctx.fillText(label, x + w / 2, y + 32);
-      ctx.font = 'bold 36px "Mukta", sans-serif';
-      ctx.fillStyle = color;
-      ctx.fillText(val, x + w / 2, y + 74);
-      ctx.restore();
-    }
-
-    function openReportModal(qIndex) {
-      if (!resultData || !resultData.questionsAnalysis || !resultData.questionsAnalysis[qIndex]) return;
-
-      currentReportingIndex = qIndex;
-      const q = resultData.questionsAnalysis[qIndex];
-      const qNum = qIndex + 1;
-      const qSnippet = resolveText(q.question, 'mr') || resolveText(q.question, 'en');
-
-      document.getElementById('reportQuizId').value = resultData.testId || 'test-01';
-      document.getElementById('reportQuestionId').value = q.questionId || qNum;
-      document.getElementById('reportQuestionNum').value = qNum;
-      document.getElementById('reportSubject').value = resolveText(resultData.title, 'mr');
-      document.getElementById('reportChapter').value = resultData.testId || '';
-      document.getElementById('reportQuestionSnippet').value = qSnippet;
-      
-      document.getElementById('reportQuestionBadge').textContent = `प्रश्न क्रमांक #${qNum}`;
-      document.getElementById('reportQuestionSnippetPreview').textContent = qSnippet;
-      document.getElementById('reportDetails').value = '';
-
-      const modal = document.getElementById('reportModal');
-      modal.classList.remove('hidden');
-      modal.classList.add('flex');
-    }
-
-    function closeReportModal() {
-      const modal = document.getElementById('reportModal');
-      modal.classList.remove('flex');
-      modal.classList.add('hidden');
-    }
-
-    function updateReportButtonUI(qIndex) {
-      const btn = document.getElementById(`report-btn-${qIndex}`);
-      if (!btn) return;
-      btn.disabled = true;
-      btn.onclick = null;
-      btn.title = "या प्रश्नाची त्रुटी आधीच नोंदवली आहे";
-      btn.className = "px-2 py-1 rounded-lg border border-emerald-300 dark:border-emerald-800 bg-emerald-50 dark:bg-emerald-950/40 text-emerald-700 dark:text-emerald-300 text-[11px] font-bold flex items-center gap-1 cursor-not-allowed opacity-90 transition-all";
-      btn.innerHTML = `
-        <svg class="w-3 h-3 text-emerald-600 dark:text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
-        <span>Reported</span>
-      `;
-    }
-
-    async function submitReportToGoogleSheet(event) {
-      event.preventDefault();
-      const btn = document.getElementById('submitReportBtn');
-      btn.disabled = true;
-      btn.textContent = "नोंद होत आहे...";
-
-      const targetIndex = currentReportingIndex;
-      const targetQ = (resultData && resultData.questionsAnalysis && targetIndex !== null) 
-        ? resultData.questionsAnalysis[targetIndex] 
-        : null;
-      const qKey = targetQ ? `${resultData.testId || 'test'}_q${targetQ.questionId || targetIndex + 1}` : null;
-
-      const payload = {
-        quizId: document.getElementById('reportQuizId').value,
-        questionId: document.getElementById('reportQuestionId').value,
-        questionNumber: document.getElementById('reportQuestionNum').value,
-        subject: document.getElementById('reportSubject').value,
-        chapter: document.getElementById('reportChapter').value,
-        question: document.getElementById('reportQuestionSnippet').value,
-        issue: document.getElementById('reportIssueType').value,
-        additionalDetails: document.getElementById('reportDetails').value || "None"
-      };
-
-      try {
-        const formData = new URLSearchParams();
-        Object.keys(payload).forEach(k => formData.append(k, payload[k]));
-
-        await fetch(REPORT_API_URL, {
-          method: 'POST',
-          mode: 'no-cors',
-          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-          body: formData.toString()
+          deferredPrompt = null;
         });
-
-        if (qKey) reportedQuestions.add(qKey);
-        if (targetIndex !== null) updateReportButtonUI(targetIndex);
-
-        closeReportModal();
-        showToast("त्रुटी यशस्वीपणे नोंदवली गेली! धन्यवाद.");
-      } catch (err) {
-        if (qKey) reportedQuestions.add(qKey);
-        if (targetIndex !== null) updateReportButtonUI(targetIndex);
-
-        closeReportModal();
-        showToast("नोंद सेव्ह झाली.");
-      } finally {
-        btn.disabled = false;
-        btn.textContent = "तक्रार पाठवा";
+      } else {
+        showToast('ॲप इन्स्टॉल करण्यासाठी ब्राउझर मेनूमधून "Add to Home screen" निवडा.');
       }
     }
 
-    let toastTimeout;
-    function showToast(msg) {
-      const toast = document.getElementById('toastNotification');
-      document.getElementById('toastMessage').textContent = msg;
-
-      toast.classList.remove('translate-y-20', 'opacity-0');
-      toast.classList.add('translate-y-0', 'opacity-100');
-
-      clearTimeout(toastTimeout);
-      toastTimeout = setTimeout(() => {
-        toast.classList.remove('translate-y-0', 'opacity-100');
-        toast.classList.add('translate-y-20', 'opacity-0');
-      }, 3000);
+    // Register Service Worker if supported
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('sw.js').catch(() => {});
+      });
     }
 
+    // --- Device Detection ---
+    function isMobileDevice() {
+      return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || window.innerWidth < 768;
+    }
+
+    // --- Theme (Dark / Light Mode) ---
     function initTheme() {
       const isDark = localStorage.getItem('studySphereTheme') === 'dark' ||
         (!('studySphereTheme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches);
@@ -1413,25 +1442,255 @@
 
     function toggleDarkMode() {
       const html = document.documentElement;
+      const sunIcon = document.getElementById('sunIcon');
+      const moonIcon = document.getElementById('moonIcon');
+
       if (html.classList.contains('dark')) {
         html.classList.remove('dark');
         localStorage.setItem('studySphereTheme', 'light');
-        document.getElementById('sunIcon').classList.add('hidden');
-        document.getElementById('moonIcon').classList.remove('hidden');
+        sunIcon.classList.add('hidden');
+        moonIcon.classList.remove('hidden');
+        showToast('लाइट मोड सुरू केला');
       } else {
         html.classList.add('dark');
         localStorage.setItem('studySphereTheme', 'dark');
-        document.getElementById('sunIcon').classList.remove('hidden');
-        document.getElementById('moonIcon').classList.add('hidden');
+        sunIcon.classList.remove('hidden');
+        moonIcon.classList.add('hidden');
+        showToast('डार्क मोड सुरू केला');
+      }
+    }
+
+    // --- Font Resizer ---
+    function toggleFontSize() {
+      currentFontIndex = (currentFontIndex + 1) % fontSizes.length;
+      applyFontSize(fontSizes[currentFontIndex]);
+    }
+
+    function applyFontSize(size) {
+      document.body.classList.remove('font-size-small', 'font-size-medium', 'font-size-large');
+      document.body.classList.add(`font-size-${size}`);
+      
+      const badge = document.getElementById('fontBadge');
+      const drawerBadge = document.getElementById('drawerFontBadge');
+      const letter = size === 'small' ? 'S' : (size === 'medium' ? 'M' : 'L');
+      if (badge) badge.textContent = letter;
+      if (drawerBadge) drawerBadge.textContent = letter;
+
+      localStorage.setItem('studySphereFontSize', size);
+    }
+
+    function initFontSize() {
+      const saved = localStorage.getItem('studySphereFontSize') || 'medium';
+      currentFontIndex = fontSizes.indexOf(saved);
+      if (currentFontIndex === -1) currentFontIndex = 1;
+      applyFontSize(saved);
+    }
+
+    // --- Mobile Drawer Controls ---
+    function toggleMobileDrawer(open) {
+      const drawer = document.getElementById('mobileDrawer');
+      const backdrop = document.getElementById('drawerBackdrop');
+
+      if (open) {
+        backdrop.classList.remove('hidden');
+        drawer.classList.remove('translate-x-full');
+        document.body.classList.add('overflow-hidden');
+      } else {
+        drawer.classList.add('translate-x-full');
+        backdrop.classList.add('hidden');
+        document.body.classList.remove('overflow-hidden');
+      }
+    }
+
+    // --- Donation Logic ---
+    function handleDonateClick() {
+      if (isMobileDevice()) {
+        openModal('mobileDonationModal');
+      } else {
+        openModal('desktopDonationModal');
+      }
+    }
+
+    function selectDonationAmount(amount) {
+      selectedAmount = amount;
+      document.getElementById('customAmountInput').value = amount;
+      validateCustomAmount();
+
+      document.querySelectorAll('.donation-btn').forEach(btn => {
+        if (btn.textContent.includes(amount.toString())) {
+          btn.className = 'donation-btn py-2 px-3 text-xs font-bold rounded-xl border-2 border-amber-500 bg-amber-50 dark:bg-amber-950/40 text-amber-700 dark:text-amber-300 transition-all';
+        } else {
+          btn.className = 'donation-btn py-2 px-3 text-xs font-bold rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800/80 hover:border-amber-500 hover:bg-amber-50 dark:hover:bg-amber-950/40 text-slate-800 dark:text-slate-200 transition-all';
+        }
+      });
+    }
+
+    function validateCustomAmount() {
+      const input = document.getElementById('customAmountInput');
+      const errorMsg = document.getElementById('amountError');
+      const payBtn = document.getElementById('payNowBtn');
+      const val = parseFloat(input.value);
+
+      if (isNaN(val) || val < 10) {
+        errorMsg.classList.remove('hidden');
+        if (payBtn) payBtn.disabled = true;
+        if (payBtn) payBtn.classList.add('opacity-50', 'pointer-events-none');
+        return false;
+      } else {
+        errorMsg.classList.add('hidden');
+        if (payBtn) payBtn.disabled = false;
+        if (payBtn) payBtn.classList.remove('opacity-50', 'pointer-events-none');
+        selectedAmount = Math.round(val);
+        return true;
+      }
+    }
+
+    function triggerUPIPayment() {
+      if (!validateCustomAmount()) return;
+
+      const upiId = "vikram.joshi9089@oksbi";
+      const payeeName = "StudySphere";
+      const note = encodeURIComponent("StudySphere Donation");
+      const upiUrl = `upi://pay?pa=${upiId}&pn=${payeeName}&am=${selectedAmount}&cu=INR&tn=${note}`;
+
+      paymentInitiated = true;
+      closeModal('mobileDonationModal');
+      window.location.href = upiUrl;
+    }
+
+    document.addEventListener('visibilitychange', function() {
+      if (document.visibilityState === 'visible' && paymentInitiated) {
+        paymentInitiated = false;
+        setTimeout(() => {
+          openModal('thankYouModal');
+        }, 600);
+      }
+    });
+
+    // --- Website Share Handler ---
+    function shareWebsite() {
+      const shareData = {
+        title: 'StudySphere | MPSC Group C 2026 Mock Test & Quiz Portal',
+        text: 'MPSC गट-क २०२६ ची तयारी करा विनामूल्य दर्जेदार सराव टेस्ट्स आणि मॉक टेस्टसह!',
+        url: window.location.href
+      };
+
+      if (navigator.share) {
+        navigator.share(shareData).catch((err) => {
+          copyLinkFallback();
+        });
+      } else {
+        copyLinkFallback();
+      }
+    }
+
+    function copyLinkFallback() {
+      const dummyInput = document.createElement('input');
+      dummyInput.value = window.location.href;
+      document.body.appendChild(dummyInput);
+      dummyInput.select();
+      try {
+        document.execCommand('copy');
+        showToast('वेबसाइट लिंक क्लिपबोर्डवर कॉपी झाली!');
+      } catch (e) {
+        showToast('लिंक: ' + window.location.href);
+      }
+      document.body.removeChild(dummyInput);
+    }
+
+    // --- Toast Notifications ---
+    let toastTimeout;
+    function showToast(message) {
+      const toast = document.getElementById('toastNotification');
+      const msgSpan = document.getElementById('toastMessage');
+      msgSpan.textContent = message;
+
+      toast.classList.remove('translate-y-20', 'opacity-0');
+      toast.classList.add('translate-y-0', 'opacity-100');
+
+      clearTimeout(toastTimeout);
+      toastTimeout = setTimeout(() => {
+        toast.classList.remove('translate-y-0', 'opacity-100');
+        toast.classList.add('translate-y-20', 'opacity-0');
+      }, 2500);
+    }
+
+    // --- Generic Modal Controls ---
+    function openModal(modalId) {
+      const modal = document.getElementById(modalId);
+      if (modal) {
+        modal.classList.remove('hidden');
+        modal.classList.add('flex');
+        document.body.classList.add('overflow-hidden');
+      }
+    }
+
+    function closeModal(modalId) {
+      const modal = document.getElementById(modalId);
+      if (modal) {
+        modal.classList.remove('flex');
+        modal.classList.add('hidden');
+        document.body.classList.remove('overflow-hidden');
       }
     }
 
     document.addEventListener('keydown', function(e) {
-      if (e.key === 'Escape') closeReportModal();
+      if (e.key === 'Escape') {
+        ['mobileDonationModal', 'desktopDonationModal', 'thankYouModal', 'aboutModal', 'contactModal', 'privacyModal', 'termsModal', 'sitemapModal'].forEach(id => {
+          closeModal(id);
+        });
+        toggleMobileDrawer(false);
+      }
     });
 
+    // Device Vault Indicator for Home Page
+    function updateHomeVaultBadge() {
+      try {
+        const raw = localStorage.getItem('studySphere_history');
+        const history = raw ? JSON.parse(raw) : {};
+        const count = Object.keys(history).length;
+
+        const homeBadge = document.getElementById('homeSolvedCountBadge');
+        const drawerBadge = document.getElementById('drawerSolvedCountBadge');
+
+        if (count > 0) {
+          if (homeBadge) {
+            homeBadge.textContent = count;
+            homeBadge.classList.remove('hidden');
+          }
+          if (drawerBadge) {
+            drawerBadge.textContent = count;
+          }
+        }
+
+        // Streak Count
+        const streak = parseInt(localStorage.getItem('studySphere_streakCount') || (count > 0 ? '1' : '0'), 10);
+        const streakEl = document.getElementById('homeStreakCount');
+        const drawerStreakEl = document.getElementById('drawerStreakCount');
+        if (streakEl) streakEl.textContent = streak;
+        if (drawerStreakEl) drawerStreakEl.textContent = `${streak} दिवस`;
+      } catch (e) {}
+    }
+
+    // Incognito Detector on Home
+    async function detectHomeIncognito() {
+      try {
+        if ('storage' in navigator && 'estimate' in navigator.storage) {
+          const { quota } = await navigator.storage.estimate();
+          if (quota && quota < 120000000) {
+            document.getElementById('homeIncognitoWarning')?.classList.remove('hidden');
+          }
+        }
+      } catch (e) {}
+    }
+
     window.onload = function() {
-      initPage();
+      initTheme();
+      initFontSize();
+      updateHomeVaultBadge();
+      detectHomeIncognito();
+      updateCountdown();
+      setInterval(updateCountdown, 1000);
     };
   </script>
 
