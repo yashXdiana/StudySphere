@@ -1,0 +1,464 @@
+{
+  "testId": "p-hist-10-t6",
+  "title": {
+    "mr": "आर्थिक व सामाजिक विकास (अंतिम युनिक सराव संच) — सराव 6",
+    "en": "Economic and Social Development (Final Unique Practice Set) — Practice Test 6"
+  },
+  "durationMinutes": 20,
+  "marksPerQuestion": 1,
+  "negativeMarking": 0.25,
+  "totalMarks": 25,
+  "difficulty": "कठीण (MPSC Standard)",
+  "questions": [
+    {
+      "id": 1,
+      "question": {
+        "mr": "भारतीय अर्थव्यवस्थेच्या संदर्भात 'संभाव्य जीडीपी' (Potential GDP) म्हणजे काय?",
+        "en": "What does 'Potential GDP' signify in macroeconomic theory?"
+      },
+      "options": [
+        { "mr": "महागाई वाढवल्याशिवाय किंवा उच्च दाबाशिवाय, उपलब्ध संसाधनांचा पूर्ण वापर करून अर्थव्यवस्था दीर्घकाळात जी कमाल उत्पादन पातळी गाठू शकते", "en": "The highest level of real output an economy can sustain over the long term without sparking inflation" },
+        { "mr": "केवळ कागदावर काढलेला अंदाज", "en": "An arbitrary projection on paper" },
+        { "mr": "फक्त कृषी क्षेत्राचे उत्पन्न", "en": "Agricultural output alone" },
+        { "mr": "परदेशी कर्जाची एकूण मर्यादा", "en": "Total foreign debt ceiling" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(अर्थशास्त्र): संभाव्य जीडीपी (Potential GDP) म्हणजे उपलब्ध श्रम, तंत्रज्ञान व भांडवल यांचा पूर्ण व कार्यक्षम वापर केल्यावर महागाई न वाढवता अर्थव्यवस्था किती उत्पादन करू शकते याची पातळी होय.\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग]",
+        "en": "Potential GDP is the maximum sustainable output an economy can produce when utilizing all resources fully without triggering inflationary pressures."
+      }
+    },
+    {
+      "id": 2,
+      "question": {
+        "mr": "आर्थिक विकासाचे मोजमाप करताना 'समानता आणि कल्याणाचा' विचार करणारा 'प्रदूषण-समायोजित जीडीपी' किंवा 'हरित जीडीपी' (Green GDP) म्हणजे काय?",
+        "en": "What is meant by 'Green GDP' in modern environmental and developmental economics?"
+      },
+      "options": [
+        { "mr": "पारंपारिक जीडीपीमधून नैसर्गिक संपत्तीचा ऱ्हास आणि पर्यावरण हानीची किंमत वजा करून काढलेला शाश्वत विकासाचा निर्देशांक", "en": "GDP index adjusted for environmental degradation and depletion of natural capital resources" },
+        { "mr": "फक्त रोपांच्या विक्रीतून मिळणारा नफा", "en": "Profit earned from sapling sales" },
+        { "mr": "सौर ऊर्जा प्रकल्पांची उलाढाल", "en": "Solar power turnover" },
+        { "mr": "सेंद्रिय शेतीचे एकूण उत्पन्न", "en": "Organic farming revenue" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(हरित अर्थशास्त्र): ग्रीन जीडीपी (Green GDP) हा पारंपारिक जीडीपीमधील पर्यावरणीय हानी (जसे की प्रदूषण, जंगलतोड, खनिजांचा उपसा) यांची किंमत वजा करून मिळणारा खरा शाश्वत विकासाचा आकडा आहे.\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग]",
+        "en": "Green GDP factors in the environmental costs of economic activities, such as resource depletion and pollution, providing a truer measure of sustainable growth."
+      }
+    },
+    {
+      "id": 3,
+      "question": {
+        "mr": "भारतीय वित्तीय बाजारात 'म्युनिसिपल बॉण्ड्स' (Municipal Bonds) जारी करण्याचा मुख्य उद्देश काय असतो?",
+        "en": "What is the primary objective behind municipal corporations in India issuing 'Municipal Bonds'?"
+      },
+      "options": [
+        { "mr": "शहरी स्थानिक स्वराज्य संस्थांना (महापालिकांना) पाणीपुरवठा, सांडपाणी व रस्ते यांसारख्या पायाभूत सुविधांसाठी भांडवल उभे करणे", "en": "To raise capital from capital markets for urban infrastructure projects like water supply, sanitation, and roads" },
+        { "mr": "स्थानिक नगरसेवकांचे वेतन भागवणे", "en": "To pay salaries of local aldermen" },
+        { "mr": "निवडणुकांचा खर्च उचलणे", "en": "To finance municipal elections" },
+        { "mr": "खाजगी हॉटेलांना कर्ज देणे", "en": "To lend to private hotels" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(स्थानिक वित्त): महापालिकांना केंद्र किंवा राज्य शासनावर अवलंबून न राहता स्वतःच्या पायाभूत सुविधा प्रकल्पांसाठी (उदा. पाणीपुरवठा, स्मार्ट सिटी कामे) थेट भांडवल बाजारातून निधी उभे करता यावा म्हणून म्युनिसिपल बॉण्ड्स आणले जातात.\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग]",
+        "en": "Municipal bonds allow urban local bodies to tap capital markets directly to finance revenue-generating public infrastructure projects."
+      }
+    },
+    {
+      "id": 4,
+      "question": {
+        "mr": "आंतरराष्ट्रीय स्तरावर 'हॉट मनी' (Hot Money) म्हणून कोणत्या प्रकारच्या गुंतवणुकीला किंवा संपत्तीला ओळखले जाते?",
+        "en": "Which category of financial capital or investment is commonly referred to in economics as 'Hot Money'?"
+      },
+      "options": [
+        { "mr": "अल्पकालीन पोर्टफोलिओ गुंतवणूक (FII/FPI) जी अधिक परताव्याच्या शोधात अत्यंत वेगाने एका देशातून दुसऱ्या देशात हलवली जाते", "en": "Short-term portfolio capital that flows swiftly between countries seeking higher short-term returns" },
+        { "mr": "बँकांच्या तिजोरीतील जुन्या नोटा", "en": "Withdrawn physical bank notes" },
+        { "mr": "दीर्घकालीन थेट कारखान्यातील गुंतवणूक (FDI)", "en": "Long-term greenfield FDI" },
+        { "mr": "सोन्याची चोरटी तस्करी", "en": "Smuggled gold bullion" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(आंतरराष्ट्रीय अर्थशास्त्र): 'हॉट मनी' (Hot Money) म्हणजे FII किंवा पोर्टफोलिओ गुंतवणूक होय, जी बाजारातील किंचित बदलांमुळे किंवा उच्च परताव्याच्या अपेक्षेने अत्यंत वेगाने देश सोडते किंवा देशात येते, ज्यामुळे बाजारात अस्थिरता निर्माण होते.\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग]",
+        "en": "Hot money describes short-term speculative capital flows that move rapidly between financial markets to exploit fluctuating interest rates or returns."
+      }
+    },
+    {
+      "id": 5,
+      "question": {
+        "mr": "भारतीय बँकिंग प्रणालीत 'प्रायोरिटी सेक्टर लेंडिंग' (Priority Sector Lending - PSL) अंतर्गत बँकांना एकूण कर्जाच्या किती टक्के हिस्सा प्राधान्य क्षेत्राला (उदा. शेती, दुर्बल घटक) देणे बंधनकारक असते?",
+        "en": "What is the mandatory overall target percentage for Priority Sector Lending (PSL) that domestic commercial banks must maintain in India?"
+      },
+      "options": [
+        { "mr": "४०% (Domestic Commercial Banks target is 40% of ANBC)", "en": "40% of Adjusted Net Bank Credit (ANBC)" },
+        { "mr": "१०%", "en": "10%" },
+        { "mr": "२५%", "en": "25%" },
+        { "mr": "७५%", "en": "75%" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(बँकिंग): आरबीआयच्या नियमानुसार देशातील सर्व व्यावसायिक बँकांना (परदेशी बँकांच्या काही अपवादांसह) त्यांच्या एकूण कर्जाच्या (ANBC) किमान ४०% हिस्सा हा शेती, लघु उद्योग आणि दुर्बल घटकांसाठी ('प्रायोरिटी सेक्टर') देणे बंधनकारक आहे.\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग]",
+        "en": "Under RBI guidelines, domestic commercial banks must allocate 40% of their Adjusted Net Bank Credit (ANBC) to mandated priority sectors like agriculture and weaker sections."
+      }
+    },
+    {
+      "id": 6,
+      "question": {
+        "mr": "भारतात 'राष्ट्रीय अन्न सुरक्षा कायदा' (National Food Security Act - NFSA) कोणत्या वर्षी संमत केला गेला, ज्याने ग्रामीण व शहरी जनतेला अनुदानित अन्नधान्याची कायदेशीर हमी दिली?",
+        "en": "In which year was the National Food Security Act (NFSA) enacted in India to provide subsidized food grains as a legal right?"
+      },
+      "options": [
+        { "mr": "२०१३ (Enacted in September 2013)", "en": "2013" },
+        { "mr": "२००५", "en": "2005" },
+        { "mr": "२००९", "en": "2009" },
+        { "mr": "२०१६", "en": "2016" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(२०१३): सप्टेंबर २०१३ मध्ये संमत झालेल्या 'राष्ट्रीय अन्न सुरक्षा कायद्यान्वये' (NFSA) देशातील सुमारे ६७% लोकसंख्येला (ग्रामीण ७५% व शहरी ५०%) अतिशय स्वस्त दरात (२, ३, १ रुपये प्रति किलो) अन्नधान्य मिळण्याचा कायदेशीर हक्क मिळाला.\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग]",
+        "en": "The NFSA was enacted in September 2013, legally entitling up to 75% of the rural and 50% of the urban population to receive subsidized food grains."
+      }
+    },
+    {
+      "id": 7,
+      "question": {
+        "mr": "भारतीय अर्थव्यवस्थेत 'तारांकित रेटिंग एजन्सीज' (Rating Agencies like CRISIL, CARE, ICRA) चे मुख्य कार्य काय असते?",
+        "en": "What is the core institutional function of credit rating agencies like CRISIL, ICRA, and CARE in India?"
+      },
+      "options": [
+        { "mr": "कर्ज घेणाऱ्या कंपन्यांची किंवा सरकारची पतविषयक पात्रता (Creditworthiness) आणि आर्थिक जोखीम तपासून त्यांना रेटिंग देणे", "en": "Evaluating the credit risk and financial stability of corporate or debt-issuing entities and assigning ratings" },
+        { "mr": "शेअर बाजारात थेट दलाली करणे", "en": "Acting as direct stock brokers" },
+        { "mr": "बँकांच्या नोटा छापणे", "en": "Printing currency notes" },
+        { "mr": "आयकर वसुली करणे", "en": "Collecting income taxes" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(भांडवल बाजार): CRISIL, ICRA यांसारख्या क्रेडिट रेटिंग एजन्सी कंपन्यांच्या किंवा राज्यांच्या आर्थिक शिस्तीचे व कर्जफेडीच्या क्षमतेचे मूल्यमापन करून त्यांना AAA, AA असे ग्रेड्स (Ratings) देतात.\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग]",
+        "en": "Credit rating agencies assess the financial strength, repayment capacity, and default risk of debt issuers, providing independent credit ratings to investors."
+      }
+    },
+    {
+      "id": 8,
+      "question": {
+        "mr": "भारतात 'विमा क्षेत्राचे' नियमन करणारी संस्था 'इरडा' (IRDAI) ची स्थापना कोणत्या समितीच्या शिफारसीनुसार झाली होती?",
+        "en": "On whose expert committee recommendations was the Insurance Regulatory and Development Authority (IRDAI) established?"
+      },
+      "options": [
+        { "mr": "मल्होत्रा समिती (Malhotra Committee - 1994)", "en": "Malhotra Committee (1994)" },
+        { "mr": "नरसिंहम समिती", "en": "Narasimham Committee" },
+        { "mr": "केलकर समिती", "en": "Kelkar Committee" },
+        { "mr": "सरकार समिती", "en": "Sarkar Committee" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(इरडा): विमा क्षेत्रातील सुधारणांचा अभ्यास करण्यासाठी १९९४ मध्ये नेमलेल्या 'आर. एन. मल्होत्रा समितीच्या' शिफारसीनुसार विमा क्षेत्राचे उदारीकरण झाले आणि पुढे 'इरडा' (IRDAI) ची स्थापना झाली.\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग]",
+        "en": "The Malhotra Committee (1994) recommended sweeping reforms in the Indian insurance sector, paving the way for private sector participation and setting up IRDAI."
+      }
+    },
+    {
+      "id": 9,
+      "question": {
+        "mr": "भारतीय बँकिंग क्षेत्रात सुधारणा सुचवण्यासाठी १९९१ आणि १९९८ मध्ये आलेल्या प्रसिद्ध 'नरसिंहम समितीच्या' (Narasimham Committees) अहवालात कशावर भर दिला होता?",
+        "en": "What were the core focus areas of the Narasimham Committees (1991 and 1998) on banking sector reforms in India?"
+      },
+      "options": [
+        { "mr": "बँकांची स्वायत्तता वाढवणे, सीआरआर-एसएलआर प्रमाण कमी करणे, अनुत्पादित कर्जे (NPA) कमी करणे आणि बँकिंग प्रणालीचे तंत्रज्ञान सक्षमीकरण", "en": "Enhancing banking autonomy, reducing CRR/SLR, lowering NPAs, and strengthening capital adequacy norms" },
+        { "mr": "सर्व बँकांचे पूर्ण राष्ट्रीयीकरण करणे", "en": "Nationalizing all private banks entirely" },
+        { "mr": "बँकांमध्ये संगणक वापरण्यास सक्त बंदी घालणे", "en": "Banning computers in banks" },
+        { "mr": "कृषी कर्जे पूर्णपणे बंद करणे", "en": "Terminating agricultural loans" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(नरसिंहम समिती): नरसिंहम समितीने (पहिली व दुसरी) भारतीय बँकिंग क्षेत्राला स्पर्धाक्षम बनवण्यासाठी सीआरआर व एसएलआर कमी करणे, व्याजदर सुलभ करणे, बँकांची स्वायत्तता आणि भांडवल पर्याप्तता निकष (CAR) मजबूत करण्यावर भर दिला.\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग]",
+        "en": "The Narasimham Committees recommended comprehensive structural reforms for Indian banks, focusing on operational flexibility, lowering statutory liquidity ratios, and cleaning up balance sheets."
+      }
+    },
+    {
+      "id": 10,
+      "question": {
+        "mr": "भारतात 'पेट्रोलियम आणि नैसर्गिक वायू नियामक मंडळ' (PNGRB) ही संस्था कोणत्या क्षेत्राचे नियमन करते?",
+        "en": "What is the regulatory purview of the Petroleum and Natural Gas Regulatory Board (PNGRB) in India?"
+      },
+      "options": [
+        { "mr": "शुद्धीकरण, वाहतूक, वितरण आणि पुरवठा यांसारख्या पेट्रोलियम व गॅस उत्पादनांचे (उप-अन्वेषण वगळून) नियमन करणे", "en": "Regulating refining, transport, distribution, and storage of petroleum, petroleum products, and natural gas (excluding upstream exploration)" },
+        { "mr": "केवळ पेट्रोलच्या किमती रोज ठरवणे", "en": "Fixing daily petrol retail prices exclusively" },
+        { "mr": "कोळशाच्या खानी चालवणे", "en": "Operating coal mines" },
+        { "mr": "अण्वस्त्र ऊर्जा विकसित करणे", "en": "Developing nuclear energy" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(ऊर्जा क्षेत्र): PNGRB ही संस्था तेल व गॅस क्षेत्रातील डाऊनस्ट्रीम सेक्टर (जसे की पाईपलाईन वाहतूक, वितरण व शुद्धीकरण) यांचे नियमन करते, ज्यामध्ये upstream (शोध व काढणे) समाविष्ट नसते.\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग]",
+        "en": "PNGRB regulates the refining, processing, storage, transportation, and distribution of petroleum, petroleum products, and natural gas, excluding crude oil and natural gas production upstream."
+      }
+    },
+    {
+      "id": 11,
+      "question": {
+        "mr": "भारतीय अर्थव्यवस्थेत 'इन्सॉल्व्हन्सी अँड बंक्रप्टी कोड' (IBC - Insolvency and Bankruptcy Code) कोणत्या वर्षी लागू करण्यात आला, ज्याने उद्योगांचे दिवाळखोर निवारण सुलभ केले?",
+        "en": "In which year was the landmark Insolvency and Bankruptcy Code (IBC) enacted in India to expedite the resolution of stressed assets and corporate insolvencies?"
+      },
+      "options": [
+        { "mr": "२०१६ (Enacted in May 2016)", "en": "2016" },
+        { "mr": "२०१२", "en": "2012" },
+        { "mr": "२०१९", "en": "2019" },
+        { "mr": "२००८", "en": "2008" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(२०१६): २०१६ मध्ये संमत झालेला आयबीसी (IBC) कायदा हा भारतीय व्यावसायिक जगतातील अत्यंत क्रांतिकारी कायदा ठरला, ज्याने थकबाकीदार व दिवाळखोर कंपन्यांच्या मालमत्तेचे वेळेत व पारदर्शक निवारण (Time-bound resolution) करण्यासाठी 'नॅशनल कंपनी लॉ ट्रिब्युनल' (NCLT) ची भूमिका मजबूत केली.\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग]",
+        "en": "The IBC, enacted in May 2016, revolutionized corporate debt resolution in India by creating a time-bound process for insolvent firms via the NCLT."
+      }
+    },
+    {
+      "id": 12,
+      "question": {
+        "mr": "महाराष्ट्राच्या आर्थिक विकासाच्या संदर्भात 'एमआयडीसी' (MIDC - Maharashtra Industrial Development Corporation) ची स्थापना कोणत्या वर्षी झाली?",
+        "en": "In which year was the Maharashtra Industrial Development Corporation (MIDC) established to spearhead industrial growth across the state?"
+      },
+      "options": [
+        { "mr": "१ ऑगस्ट १९६२ (August 1, 1962)", "en": "August 1, 1962" },
+        { "mr": "१ मे १९६०", "en": "May 1, 1960" },
+        { "mr": "१५ ऑगस्ट १९४७", "en": "August 15, 1947" },
+        { "mr": "१ एप्रिल १९७०", "en": "April 1, 1970" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९६२): महाराष्ट्रात औद्योगिक क्षेत्राचा पद्धतशीर विकास करण्यासाठी आणि औद्योगिक वसाहती (Industrial Estates) स्थापन करण्यासाठी १ ऑगस्ट १९६२ रोजी MIDC ची स्थापना केली गेली.\n\n[संदर्भ: महाराष्ट्राचा इतिहास व अर्थव्यवस्था - डॉ. गाठाळ]",
+        "en": "MIDC was established on August 1, 1962, under the Maharashtra Industrial Development Act to systematically promote and develop industrial areas across the state."
+      }
+    },
+    {
+      "id": 13,
+      "question": {
+        "mr": "महाराष्ट्रात ग्रामीण व कृषी विकासाला गती देण्यासाठी 'मविआ' किंवा राज्य शासनाद्वारे राबवल्या जाणाऱ्या कोणत्या योजनेअंतर्गत शेतकऱ्यांना मोफत वा सवलतीच्या दरात वीज व शेतीपूरक योजना दिल्या जातात?",
+        "en": "Which major state-level agricultural electricity feeder/infrastructure scheme is implemented in Maharashtra to empower rural farmers?"
+      },
+      "options": [
+        { "mr": "मुख्यमंत्री सौर कृषी पंप योजना / कृषी आकस्मिक योजना व महावितरणच्या माध्यमातून कृषी फीडर सोलरकरण", "en": "Chief Minister Solar Agriculture Pump Scheme and solarization of agricultural feeders" },
+        { "mr": "फक्त मेट्रो रेल्वे योजना", "en": "Only metro rail scheme" },
+        { "mr": "मुंबई सागरी किनारा रस्ता", "en": "Coastal road project" },
+        { "mr": "पुणे विमानतळ विस्तार", "en": "Pune airport expansion" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(महाराष्ट्र शासन): महाराष्ट्रात शेतीला दिवसा अखंडित वीज मिळावी म्हणून 'मुख्यमंत्री सौर कृषी पंप योजना' आणि कृषी वाहिनींचे सौरकरण (Solarization of agricultural feeders) वेगाने राबवले जात आहे.\n\n[संदर्भ: महाराष्ट्र आर्थिक पाहणी अहवाल]",
+        "en": "Maharashtra actively promotes agricultural solarization through schemes like the Chief Minister Solar Agriculture Pump Yojana to provide reliable daytime power to farmers."
+      }
+    },
+    {
+      "id": 14,
+      "question": {
+        "mr": "भारतीय अर्थव्यवस्थेत 'डिजिटल रुपी' (Digital Rupee / e-Rupee) ची प्रायोगिक तत्त्वावर (Pilot Project) सुरुवात कोणी केली?",
+        "en": "Who launched the pilot projects for the 'Digital Rupee' (Central Bank Digital Currency - CBDC) in India?"
+      },
+      "options": [
+        { "mr": "भारतीय रिझर्व्ह बँक (RBI)", "en": "Reserve Bank of India" },
+        { "mr": "स्टेट बँक ऑफ इंडिया", "en": "State Bank of India" },
+        { "mr": "निती आयोग", "en": "NITI Aayog" },
+        { "mr": "केंद्रीय वित्त मंत्रालय", "en": "Union Ministry of Finance" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(CBDC): आरबीआयने (RBI) २०२२ आणि २०२३ मध्ये घाऊक (Wholesale) आणि किरकोळ (Retail) अशा दोन्ही बाजारांसाठी 'डिजिटल रुपी' (Central Bank Digital Currency - CBDC) चे प्रायोगिक प्रयोग यशस्वीपणे सुरू केले आहेत.\n\n[संदर्भ: RBI Annual Report / रमेश सिंग]",
+        "en": "The RBI rolled out pilot projects for the Central Bank Digital Currency (CBDC), known as the Digital Rupee (e-Rupee), for both wholesale and retail segments."
+      }
+    },
+    {
+      "id": 15,
+      "question": {
+        "mr": "भारतीय परकीय व्यापारात 'सांकेतिक विनिमय दर' (Nominal Effective Exchange Rate - NEER) आणि 'वास्तविक प्रभावी विनिमय दर' (REER) कशाचे मोजमाप करतात?",
+        "en": "What do the Nominal Effective Exchange Rate (NEER) and Real Effective Exchange Rate (REER) measure in international economics?"
+      },
+      "options": [
+        { "mr": "भारतीय रुपयाचे इतर प्रमुख परदेशी चलनांच्या बास्केटविरुद्ध असणारे सापेक्ष मूल्य आणि आंतरराष्ट्रीय स्पर्धात्मकता (Competitiveness)", "en": "The relative value and international competitiveness of the Indian Rupee against a basket of major foreign currencies" },
+        { "mr": "फक्त सोन्याच्या दागिन्यांची आयात", "en": "Import value of gold bullion exclusively" },
+        { "mr": "देशातील सोन्याचा साठा", "en": "Domestic gold reserves" },
+        { "mr": "फक्त सरकारी कर्मचाऱ्यांचे वेतन", "en": "Public sector wages" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(परकीय व्यापार): NEER आणि REER हे भारताच्या रुपयाचे इतर देशांच्या चलनांच्या तुलनेत सापेक्ष मूल्य दर्शवतात. REER मधून महागाईचा (Inflation adjustment) प्रभाव देखील मोजला जातो, ज्यामुळे भारताच्या निर्यातीची आंतरराष्ट्रीय स्पर्धात्मकता कळते.\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग]",
+        "en": "NEER and REER are weighted geometric averages of bilateral exchange rates, with REER adjusted for relative inflation differentials, indicating India's external trade competitiveness."
+      }
+    },
+    {
+      "id": 16,
+      "question": {
+        "mr": "भारतीय अर्थव्यवस्थेत 'एंजेल टॅक्स' (Angel Tax) हा कर प्रामुख्याने कोणत्या घटकावर किंवा उत्पन्नावर आकारला जात होता, ज्याच्या नियमात अलीकडे मोठे सुसूत्रीकरण केले गेले?",
+        "en": "What was the economic context of the controversial 'Angel Tax' in India, which applied to startup funding?"
+      },
+      "options": [
+        { "mr": "स्टार्टअप कंपन्यांनी त्यांच्या छापील दर्शनी मूल्यापेक्षा (Fair Market Value) जास्त प्रिमियमवर घेतलेली भांडवली गुंतवणूक (Capital investment raised above fair market value)", "en": "Capital raised by unlisted startups through issue of shares at a price exceeding their fair market value" },
+        { "mr": "शेतीतून मिळणारे उत्पादन", "en": "Agricultural income" },
+        { "mr": "परदेशी पर्यटकांची खरेदी", "en": "Tourist shopping purchases" },
+        { "mr": "बँकांच्या ठेवींवरील व्याज", "en": "Bank deposit interest" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(स्टार्टअप अर्थव्यवस्था): स्टार्टअप्सनी शेअर्स विकताना त्यांच्या वाजवी बाजारातील मूल्यापेक्षा (Fair Market Value) जास्त किमतीत पैसे घेतल्यास त्यावर प्राप्तिकर कायद्यांतर्गत 'एंजेल टॅक्स' लावला जात असे (जो नंतरच्या काळात अर्थसंकल्पात पूर्णपणे समाप्त केला गेला).\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग]",
+        "en": "Angel tax was a tax levied on funding raised by unlisted startups from Indian angel investors or entities if the share price exceeded the company's fair market value."
+      }
+    },
+    {
+      "id": 17,
+      "question": {
+        "mr": "भारतीय वित्तीय बाजारात 'आत्मानंद किंवा ग्रीन बॉण्ड्स' (Sovereign Green Bonds) जारी करण्याचा मुख्य उद्देश काय असतो?",
+        "en": "What is the primary purpose behind the Indian government issuing 'Sovereign Green Bonds'?"
+      },
+      "options": [
+        { "mr": "पर्यावरणपूरक आणि हरित पायाभूत प्रकल्पांसाठी (Green Projects) देशांतर्गत व परदेशी गुंतवणूक आकर्षित करणे", "en": "To mobilize sovereign resources for deployment in environmentally sustainable and climate-friendly green infrastructure projects" },
+        { "mr": "केवळ कागद खरेदी करणे", "en": "To buy physical paper" },
+        { "mr": "शेतकऱ्यांचे वीज बिल माफ करणे", "en": "To waive farmer electricity bills" },
+        { "mr": "संरक्षण दलाची शस्त्रे खरेदी करणे", "en": "To buy defense weapons" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(हरित वित्त): भारताने हरित ऊर्जा, प्रदूषण नियंत्रण आणि पर्यावरणपूरक प्रकल्पांसाठी निधी उभे करण्याच्या उद्देशाने 'सार्वभौम हरित रोखे' (Sovereign Green Bonds) जारी करण्याची यशस्वी मोहीम राबवली आहे.\n\n[संदर्भ: केंद्रीय अर्थसंकल्प / रमेश सिंग]",
+        "en": "Sovereign Green Bonds are financial instruments issued by the government specifically to raise funds for eco-friendly, low-carbon, and climate-resilient projects."
+      }
+    },
+    {
+      "id": 18,
+      "question": {
+        "mr": "भारतीय अर्थव्यवस्थेत 'उत्पादन संलग्न प्रोत्साहन योजना' (Production-Linked Incentive - PLI Scheme) चा मुख्य उद्देश काय आहे?",
+        "en": "What is the strategic objective of the 'Production-Linked Incentive' (PLI) scheme introduced across key manufacturing sectors?"
+      },
+      "options": [
+        { "mr": "देशातील मॅन्युफॅक्चरिंग क्षमता वाढवणे, आयात कमी करणे, निर्यात वाढवणे आणि जागतिक स्तरावर कंपन्यांना स्पर्धाक्षम बनवणे", "en": "To boost domestic manufacturing, attract investments, cut down imports, and make Indian industries globally competitive" },
+        { "mr": "केवळ सरकारी कर्मचाऱ्यांचे वेतन वाढवणे", "en": "To raise government employee salaries" },
+        { "mr": "परदेशी कंपन्यांवर पूर्ण बंदी घालणे", "en": "To ban foreign firms completely" },
+        { "mr": "शेतीमधील पिकांची पैदास घटवणे", "en": "To reduce crop yields" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(PLI योजना): PLI योजनेअंतर्गत कंपन्यांच्या उत्पादनातील वाढीव विक्रीवर (Incremental Sales) सरकार ठराविक टक्केवारीने आर्थिक प्रोत्साहन (Incentive) देते, ज्यामुळे चीनवरील अवलंबित्व कमी होऊन भारतात उत्पादन वाढते.\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग]",
+        "en": "The PLI scheme provides financial incentives based on incremental sales to domestic and foreign companies manufacturing goods in India, bolstering industrial self-reliance."
+      }
+    },
+    {
+      "id": 19,
+      "question": {
+        "mr": "भारतीय अर्थव्यवस्थेच्या संदर्भात 'सकल मूल्य वर्धित' (Gross Value Added - GVA) आणि 'जीडीपी' (GDP) मधील तांत्रिक संबंध काय आहे?",
+        "en": "What is the precise mathematical relationship between Gross Value Added (GVA) and Gross Domestic Product (GDP)?"
+      },
+      "options": [
+        { "mr": "GDP = GVA (मूलभूत किमतीवर) + उत्पादनावरील कर (Product Taxes) - उत्पादनावरील अनुदान (Product Subsidies)", "en": "GDP = GVA at basic prices + Product Taxes - Product Subsidies" },
+        { "mr": "GDP हा GVA पेक्षा नेहमी कमी असतो", "en": "GDP is always less than GVA" },
+        { "mr": "GVA मध्ये फक्त परकीय व्यापार मोजला जातो", "en": "GVA measures only foreign trade" },
+        { "mr": "दोन्ही पूर्णपणे स्वतंत्र संकल्पना आहेत", "en": "Both are completely unrelated" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(राष्ट्रीय उत्पन्न): GVA हा उत्पादक बाजूने (Sectoral output) मोजला जातो, तर GDP हा अंतिम खर्चानुसार किंवा उत्पादनावर कर व अनुदान समायोजित करून काढला जातो [GDP = GVA + Taxes on Products - Subsidies on Products].\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग]",
+        "en": "GVA measures output from the supply side across sectors, and adding net product taxes (taxes minus subsidies) yields the final Gross Domestic Product (GDP)."
+      }
+    },
+    {
+      "id": 20,
+      "question": {
+        "mr": "भारतीय अर्थव्यवस्थेत 'वित्तीय स्थैर्य आणि विकास परिषद' (Financial Stability and Development Council - FSDC) चे अध्यक्षपद कोणाकडे असते?",
+        "en": "Who chairs the Financial Stability and Development Council (FSDC), an apex-level body for financial stability and inter-regulatory coordination in India?"
+      },
+      "options": [
+        { "mr": "केंद्रीय अर्थमंत्री (Union Finance Minister)", "en": "Union Finance Minister" },
+        { "mr": "भारताचे पंतप्रधान", "en": "Prime Minister of India" },
+        { "mr": "आरबीआयचे गव्हर्नर", "en": "Governor of the RBI" },
+        { "mr": "सेबीचे अध्यक्ष", "en": "Chairman of SEBI" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(वित्तीय स्थैर्य): FSDC (Financial Stability and Development Council) ही वित्तीय क्षेत्रातील संस्थांमध्ये (RBI, SEBI, IRDAI) समन्वय साधणारी व स्थैर्य राखणारी उच्चस्तरीय संस्था असून तिचे अध्यक्ष **केंद्रीय अर्थमंत्री** असतात.\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग]",
+        "en": "The FSDC is an apex-level forum chaired by the Union Finance Minister, designed to strengthen and institutionalize mechanism for financial stability and inter-regulatory coordination."
+      }
+    },
+    {
+      "id": 21,
+      "question": {
+        "mr": "भारतीय परकीय व्यापारात 'विशेष आर्थिक क्षेत्रे' (Special Economic Zones - SEZs) स्थापन करण्याचा आणि चालना देण्याचा मुख्य उद्देश काय असतो?",
+        "en": "What is the primary policy objective behind establishing Special Economic Zones (SEZs) in India?"
+      },
+      "options": [
+        { "mr": "झटपट निर्यात वाढवणे, विदेशी गुंतवणूक (FDI) मोठ्या प्रमाणावर आकर्षित करणे आणि जागतिक दर्जाच्या पायाभूत सुविधा निर्माण करणे", "en": "To boost export growth, attract massive foreign direct investments (FDI), and create a hassle-free business environment" },
+        { "mr": "केवळ स्थानिक बाजारपेठेत माल विकणे", "en": "To sell goods exclusively in local markets" },
+        { "mr": "शेतकऱ्यांकडून कर गोळा करणे", "en": "To collect taxes from farmers" },
+        { "mr": "सार्वजनिक बँकांचे राष्ट्रीयीकरण करणे", "en": "To nationalize commercial banks" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(SEZs): SEZ कायदा २००५ अंतर्गत देशात निर्यातीला चालना देण्यासाठी आणि परकीय गुंतवणूक आकर्षित करण्यासाठी कर सवलती व सुलभ नियम असलेली विशेष आर्थिक क्षेत्रे निर्माण केली गेली.\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग]",
+        "en": "SEZs are duty-free enclaves designated to promote rapid export-oriented manufacturing, attract FDI, and build world-class infrastructure without bureaucratic hurdles."
+      }
+    },
+    {
+      "id": 22,
+      "question": {
+        "mr": "भारतीय अर्थव्यवस्थेच्या संदर्भात 'पतसंशोधन आणि पतमानांकित संस्था' (Credit Rating Agencies in India) यांचे नियमन कोण करते?",
+        "en": "Which statutory regulatory authority regulates Credit Rating Agencies (CRAs) operating in India?"
+      },
+      "options": [
+        { "mr": "सेबी (SEBI - Securities and Exchange Board of India)", "en": "SEBI" },
+        { "mr": "भारतीय रिझर्व्ह बँक (RBI)", "en": "Reserve Bank of India" },
+        { "mr": "कॉर्पोरेट व्यवहार मंत्रालय", "en": "Ministry of Corporate Affairs" },
+        { "mr": "निती आयोग", "en": "NITI Aayog" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(भांडवल बाजार): CRISIL, ICRA यांसारख्या क्रेडिट रेटिंग एजन्सीज भांडवल बाजाराशी संबंधित असल्याने त्यांचे नियमन आणि नियंत्रण 'सेबी' (SEBI) द्वारे केले जाते.\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग]",
+        "en": "Credit Rating Agencies in India are formally regulated by SEBI under the SEBI (Credit Rating Agencies) Regulations."
+      }
+    },
+    {
+      "id": 23,
+      "question": {
+        "mr": "भारतीय अर्थव्यवस्थेत 'चालू खात्यावरील पूर्ण परिवर्तनीयता' (Full Convertibility on Current Account) भारताने कधी स्वीकारली?",
+        "en": "In which year did India officially accept 'Full Convertibility on the Current Account' under IMF Article VIII?"
+      },
+      "options": [
+        { "mr": "ऑगस्ट १९९४ (August 1994)", "en": "August 1994" },
+        { "mr": "१९९१", "en": "1991" },
+        { "mr": "२०००", "en": "2000" },
+        { "mr": "१९८५", "en": "August 1985" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(परकीय चलन): भारताने ऑगस्ट १९९४ मध्ये आंतरराष्ट्रीय नाणेनिधीच्या (IMF) अनुच्छेद VIII स्वीकारत चालू खात्यावर (Current Account) पूर्ण परिवर्तनीयता घोषित केली, ज्यामुळे आयात-निर्यात व प्रवास खर्चासाठी परकीय चलन मिळवणे सुलभ झाले (भांडवली खात्यावर पूर्ण परिवर्तनीयता अजूनही नाही).\n\n [संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग]",
+        "en": "(1994): India accepted IMF Article VIII status in August 1994, making the Indian Rupee fully convertible on the current account."
+      }
+    },
+    {
+      "id": 24,
+      "question": {
+        "mr": "भारतीय वित्तीय बाजारात 'आंतरबँक दर' (Interbank Rate) आणि 'तरलता व्यवस्थापन' (Liquidity Management) करण्यासाठी आरबीआय कोणते मुख्य साधन वापरते?",
+        "en": "What primary monetary tool does the RBI deploy to manage day-to-day systemic liquidity and align short-term interest rates?"
+      },
+      "options": [
+        { "mr": "खुल्या बाजारपेठेतील उलाढाल (Open Market Operations - OMO) आणि LAF अंतर्गत रेपो/रिव्हर्स रेपो ऑपरेशन्स", "en": "Open Market Operations (OMOs) and Liquidity Adjustment Facility (LAF) repo/reverse repo auctions" },
+        { "mr": "कागदी नोटांची छपाई थांबवणे", "en": "Halting currency printing entirely" },
+        { "mr": "फक्त सरकारी कर्मचाऱ्यांचे कर वाढवणे", "en": "Hiking civil service taxes" },
+        { "mr": "सोन्याची निर्यात सक्तीची करणे", "en": "Mandating gold exports" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(पतधोरण): बँकिंग प्रणालीतील रोखतेचे नियंत्रण करण्यासाठी आरबीआय OMO (सरकारी रोख्यांची खरेदी-विक्री) आणि LAF (लिखित रेपो व रिव्हर्स रेपो लिलाव) चा नियमित वापर करते.\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग]",
+        "en": "The RBI uses Open Market Operations (OMOs) and Liquidity Adjustment Facility (LAF) auctions to manage day-to-day liquidity and anchor short-term interest rates."
+      }
+    },
+    {
+      "id": 25,
+      "question": {
+        "mr": "भारतीय अर्थव्यवस्थेच्या संदर्भात 'दीर्घकालीन शाश्वत विकास आणि सामाजिक न्याय' साधताना सर्वाधिक महत्त्वाची अट कोणती मानली जाते?",
+        "en": "What is considered the overarching prerequisite for achieving sustainable, equitable long-term economic development in India?"
+      },
+      "options": [
+        { "mr": "मानवी भांडवलात गुंतवणूक (आरोग्य व शिक्षण), सर्वसमावेशक वित्तीय समावेशन आणि पर्यावरणपूरक हरित तंत्रज्ञानाचा प्रसार", "en": "Robust investment in human capital (health and education), universal financial inclusion, and adoption of green technologies" },
+        { "mr": "फक्त खाजगी कंपन्यांना कर सवलती देणे", "en": "Granting tax exemptions solely to private conglomerates" },
+        { "mr": "परदेशी कर्जावर पूर्णतः अवलंबून राहणे", "en": "Relying endlessly on foreign sovereign loans" },
+        { "mr": "नागरीकरण पूर्णपणे थांबवणे", "en": "Halting urbanization entirely" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(अंतिम निष्कर्ष): भारतासारख्या उदयोन्मुख अर्थव्यवस्थेत शाश्वत विकास साधण्यासाठी मानवी संपत्तीचा विकास (आरोग्य, शिक्षण), प्रत्येकापर्यंत बँक सेवांची पोहोच (वित्तीय समावेशन) आणि हरित तंत्रज्ञानाचा वापर ही त्रिसूत्री अत्यंत महत्त्वाची ठरते.\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग / NITI Aayog Vision]",
+        "en": "(Conclusion): Sustained equitable development in India depends fundamentally on heavy investment in human capital, deep financial inclusion, and the rapid transition to green, climate-resilient technologies."
+      }
+    }
+  ]
+}

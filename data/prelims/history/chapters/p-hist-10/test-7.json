@@ -1,0 +1,464 @@
+{
+  "testId": "p-hist-10-t7",
+  "title": {
+    "mr": "आर्थिक व सामाजिक विकास (कौशल्य विकास, ग्रामीण विकास व कल्याणकारी योजना) — सराव 7",
+    "en": "Economic and Social Development (Skill Development, Rural Development & Welfare Schemes) — Practice Test 7"
+  },
+  "durationMinutes": 20,
+  "marksPerQuestion": 1,
+  "negativeMarking": 0.25,
+  "totalMarks": 25,
+  "difficulty": "मध्यम ते काठिण्य",
+  "questions": [
+    {
+      "id": 1,
+      "question": {
+        "mr": "भारतात दारिद्र्य मोजण्यासाठी 'बहुआयामी दारिद्र्य निर्देशांक' (National Multidimensional Poverty Index - MPI) अहवाल कोणती संस्था जाहीर करते?",
+        "en": "Which institutional body releases the national Multidimensional Poverty Index (MPI) report in India?"
+      },
+      "options": [
+        { "mr": "निती आयोग (NITI Aayog)", "en": "NITI Aayog" },
+        { "mr": "भारतीय रिझर्व्ह बँक (RBI)", "en": "Reserve Bank of India" },
+        { "mr": "राष्ट्रीय सांख्यिकी कार्यालय (NSO)", "en": "National Statistical Office" },
+        { "mr": "केंद्रीय सांख्यिकी विभाग", "en": "Central Statistics Department" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(निती आयोग): ऑक्सफर्ड पॉव्हर्टी अँड ह्युमन डेव्हलपमेंट इनिशिएटिव्ह (OPHI) आणि UNDP यांच्या सहकार्याने भारताचा राष्ट्रीय 'बहुआयामी दारिद्र्य निर्देशांक' (MPI) अहवाल 'निती आयोग' जाहीर करतो.\n\n[संदर्भ: NITI Aayog National MPI Report]",
+        "en": "(NITI Aayog): The national Multidimensional Poverty Index (MPI) measuring progress across health, education, and standard of living is published periodically by NITI Aayog."
+      }
+    },
+    {
+      "id": 2,
+      "question": {
+        "mr": "भारतात ग्रामीण भागातील घरकुलांच्या विकासासाठी आणि प्रत्येकाला पक्के घर मिळवून देण्यासाठी कोणती प्रमुख योजना राबवली जात आहे?",
+        "en": "Which major national housing scheme is implemented in India to provide pucca houses with basic amenities to rural poor families?"
+      },
+      "options": [
+        { "mr": "प्रधानमंत्री आवास योजना - ग्रामीण (PMAY-G)", "en": "Pradhan Mantri Awas Yojana - Gramin (PMAY-G)" },
+        { "mr": "इंदिरा आवास योजना (जुनी पण आता बंद)", "en": "Indira Awas Yojana" },
+        { "mr": "राजीव आवास योजना", "en": "Rajiv Awas Yojana" },
+        { "mr": "जन आवास मोहीम", "en": "Jan Awas Abhiyan" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(ग्रामीण आवास): ग्रामीण भागातील गरीब व बेघर कुटुंबांना हक्काचे पक्के घर मिळावे यासाठी नोव्हेंबर २०१६ मध्ये 'प्रधानमंत्री आवास योजना - ग्रामीण' (PMAY-G) सुरू करण्यात आली.\n\n[संदर्भ: ग्रामीण विकास मंत्रालय रिपोर्ट / रमेश सिंग]",
+        "en": "PMAY-G aims to provide a pucca house with basic amenities to all houseless households and those living in kutcha houses in rural areas."
+      }
+    },
+    {
+      "id": 3,
+      "question": {
+        "mr": "भारतातील तरुणांना रोजगारक्षम बनवण्यासाठी आणि त्यांना उद्योग प्रशिक्षणाशी जोडण्यासाठी कोणती 'कौशल्य विकास योजना' (PMKVY) सुरू केली गेली?",
+        "en": "What is the flagship skill development scheme of the Indian government aimed at enabling Indian youth to take up industry-relevant skill training?"
+      },
+      "options": [
+        { "mr": "प्रधानमंत्री कौशल विकास योजना (Pradhan Mantri Kaushal Vikas Yojana - PMKVY)", "en": "Pradhan Mantri Kaushal Vikas Yojana (PMKVY)" },
+        { "mr": "युवा भारत कौशल्य मिशन", "en": "Yuva Bharat Skill Mission" },
+        { "mr": "राष्ट्रीय रोजगार प्रशिक्षण कार्यक्रम", "en": "National Employment Training Program" },
+        { "mr": "कौशल भारत उपक्रम", "en": "Kaushal Bharat Initiative" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(कौशल्य विकास): २०१५ मध्ये सुरू झालेली 'प्रधानमंत्री कौशल विकास योजना' (PMKVY) ही कौशल्य विकास व उद्योजकता मंत्रालयाची प्रमुख योजना आहे, जी युवकांना मोफत अल्पकालीन प्रशिक्षण व प्रमाणपत्र देते.\n\n[संदर्भ: कौशल्य विकास मंत्रालय रिपोर्ट]",
+        "en": "PMKVY is the flagship scheme of the Ministry of Skill Development and Entrepreneurship, enabling youth to take up industry-relevant skill training for better livelihoods."
+      }
+    },
+    {
+      "id": 4,
+      "question": {
+        "mr": "भारतीय अर्थव्यवस्थेत 'स्मॉल फायनान्स बँका' (Small Finance Banks) स्थापन करण्याचा मुख्य उद्देश काय आहे?",
+        "en": "What is the primary socio-economic objective behind licensing 'Small Finance Banks' in India?"
+      },
+      "options": [
+        { "mr": "लघु व सीमान्त शेतकरी, सूक्ष्म उद्योग आणि असंघटित क्षेत्रातील घटकांना मूलभूत बँकिंग व पतपुरवठा सेवा पुरवणे", "en": "To provide financial inclusion and basic banking credit to micro industries, small farmers, and unorganized sectors" },
+        { "mr": "मोठ्या बहुराष्ट्रीय कंपन्यांना विदेशी कर्जे देणे", "en": "To finance massive multinational conglomerates" },
+        { "mr": "केवळ सरकारी कर्मचाऱ्यांचे वेतन काढणे", "en": "To disburse civil service salaries exclusively" },
+        { "mr": "शेअर बाजारात सट्टेबाजी करणे", "en": "To trade speculatively in stock markets" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(लघुवित्त बँका): आरबीआयने वित्तीय समावेशन अधिक तळागाळापर्यंत नेण्यासाठी लघु व सीमान्त शेतकरी आणि सूक्ष्म उद्योगांना पतपुरवठा करण्यासाठी 'लघुवित्त बँका' (Small Finance Banks) सुरू केल्या.\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग]",
+        "en": "Small Finance Banks are niche banks set up to provide financial inclusion by catering to unserved and underserved sections including micro industries and small farmers."
+      }
+    },
+    {
+      "id": 5,
+      "question": {
+        "mr": "भारतात 'पेमेंट्स बँका' (Payments Banks) किमान किती भांडवल राखून व्यवसाय सुरू करू शकतात आणि त्या काय करू शकत नाहीत?",
+        "en": "What is a key structural restriction imposed on 'Payments Banks' operating in India?"
+      },
+      "options": [
+        { "mr": "त्या ठेवी स्वीकारू शकतात (मर्यादित रु. २ लाख प्रति ग्राहक), पण ग्राहकांना 'कर्ज वाटप' आणि 'क्रेडिट कार्ड जारी' करू शकत नाहीत", "en": "They can accept deposits (up to Rs. 2 lakh per customer) but are prohibited from lending loans or issuing credit cards" },
+        { "mr": "त्या कर्ज देऊ शकतात पण ठेवी स्वीकारू शकत नाहीत", "en": "They can lend loans but cannot take deposits" },
+        { "mr": "त्या फक्त परदेशी चलनात व्यवहार करू शकतात", "en": "They can transact solely in foreign currency" },
+        { "mr": "त्यांना एटीएम काढण्याची परवानगी नाही", "en": "They are barred from operating ATMs" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(पेमेंट्स बँक): पेमेंट्स बँका बचत व चालू खात्यातील ठेवी स्वीकारू शकतात (सध्या मर्यादा २ लाख), परंतु त्या कुठल्याही प्रकारचे कर्ज वाटप किंवा क्रेडिट कार्ड देऊ शकत नाहीत.\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग]",
+        "en": "Payments banks can accept restricted deposits and provide remittance services, but they cannot issue loans or credit cards."
+      }
+    },
+    {
+      "id": 6,
+      "question": {
+        "mr": "देशातील सूक्ष्म व लघु उद्योगांना कर्ज पुरवठा करण्यासाठी आणि त्यांच्यात विश्वासाचे वातावरण निर्माण करण्यासाठी कोणत्या पत हमी संस्थेची स्थापना केली गेली आहे?",
+        "en": "Which credit guarantee trust was established by the Government of India and SIDBI to provide collateral-free credit guarantees to MSMEs?"
+      },
+      "options": [
+        { "mr": "क्रेडिट गॅरंटी फंड ट्रस्ट फॉर मायक्रो अँड स्मॉल एंटरप्रायझेस (CGTMSE)", "en": "CGTMSE (Credit Guarantee Fund Trust for Micro and Small Enterprises)" },
+        { "mr": "नॅशनल स्मॉल इंडस्ट्रीज बोर्ड", "en": "National Small Industries Board" },
+        { "mr": "एमएसएमई सुरक्षा महामंडळ", "en": "MSME Security Corporation" },
+        { "mr": "उद्यमी कर्ज महामंडळ", "en": "Udyami Loan Board" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(CGTMSE): सूक्ष्म व लघु उद्योगांना (MSMEs) विनातारण (Collateral-free) कर्जे सहज मिळावीत म्हणून सिदबी आणि भारत सरकारने मिळून CGTMSE ची स्थापना केली आहे, जी बँकांच्या कर्जाला हमी देते.\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग]",
+        "en": "CGTMSE facilitates collateral-free credit to micro and small enterprises by providing credit guarantees to lending institutions."
+      }
+    },
+    {
+      "id": 7,
+      "question": {
+        "mr": "भारतीय अर्थव्यवस्थेच्या संदर्भात 'शहरी गरिबी निर्मूलनासाठी' केंद्र सरकार कोणती प्रमुख राष्ट्रीय योजना राबवत आहे?",
+        "en": "Which major national urban livelihood mission is implemented in India to alleviate urban poverty and empower urban poor women through Self-Help Groups?"
+      },
+      "options": [
+        { "mr": "दीनदयाल अंत्योदय योजना - राष्ट्रीय शहरी आजीविका मिशन (DAY-NULM)", "en": "Deendayal Antyodaya Yojana - National Urban Livelihoods Mission (DAY-NULM)" },
+        { "mr": "प्रधानमंत्री शहरी आवास योजना", "en": "Pradhan Mantri Urban Housing Scheme" },
+        { "mr": "शहरी रोजगार हमी कायदा", "en": "Urban Employment Guarantee Act" },
+        { "mr": "स्मार्ट अर्बन मिशन", "en": "Smart Urban Mission" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(DAY-NULM): शहरी भागातील गरिबांना कौशल्य प्रशिक्षण, स्वयंरोजगारासाठी व्याज सवलत आणि महिलांचे स्वयंसहाय्यता गट तयार करून त्यांचे जीवनमान सुधारण्यासाठी 'DAY-NULM' राबवली जाते.\n\n[संदर्भ: शहरी विकास मंत्रालय रिपोर्ट]",
+        "en": "DAY-NULM focuses on reducing urban poverty through skill training, supporting self-employment ventures, and organizing urban poor women into self-help groups."
+      }
+    },
+    {
+      "id": 8,
+      "question": {
+        "mr": "ग्रामीण भागातील भूमिहीन किंवा गरिब कुटुंबांना घर बांधण्यासाठी किंवा खरेदी करण्यासाठी आर्थिक मदत देणारी 'प्रधानमंत्री ग्रामीण आवास योजना' कोणत्या वर्षात पूर्वीच्या कोणत्या योजनेचे रूपान्तर करून आली?",
+        "en": "PMAY-G was restructured in 2016 by revamping which former rural housing scheme?"
+      },
+      "options": [
+        { "mr": "इंदिरा आवास योजना (IAY - Indira Awas Yojana)", "en": "Indira Awas Yojana (IAY)" },
+        { "mr": "राजीव गांधी ग्रामीण आवास योजना", "en": "Rajiv Gandhi Rural Housing Scheme" },
+        { "mr": "कुटीर ज्योती योजना", "en": "Kutir Jyoti Yojana" },
+        { "mr": "संसद आदर्श ग्राम योजना", "en": "Sansad Adarsh Gram Yojana" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(PMAY-G): २०१६ मध्ये जुन्या 'इंदिरा आवास योजनेचे' (IAY) नामकरण व पुनर्रचना करून अधिक पारदर्शक व आधुनिक तंत्रज्ञानाचा वापर करत 'प्रधानमंत्री आवास योजना - ग्रामीण' (PMAY-G) अशी सुरू केली गेली.\n\n[संदर्भ: ग्रामीण विकास मंत्रालय रिपोर्ट]",
+        "en": "PMAY-G was launched in November 2016 by restructuring the erstwhile Indira Awas Yojana (IAY) to address housing gaps more effectively."
+      }
+    },
+    {
+      "id": 9,
+      "question": {
+        "mr": "ग्रामीण भागातील रस्ते विकासासाठी आणि गावे एकमेकांशी जोडण्यासाठी अटल बिहारी वाजपेयी यांच्या काळात डिसेंबर २००० मध्ये कोणती महत्त्वाची योजना सुरू झाली?",
+        "en": "Which landmark rural connectivity program was launched in December 2000 to connect unconnected habitations with all-weather roads?"
+      },
+      "options": [
+        { "mr": "प्रधानमंत्री ग्राम सडक योजना (PMGSY - Pradhan Mantri Gram Sadak Yojana)", "en": "Pradhan Mantri Gram Sadak Yojana (PMGSY)" },
+        { "mr": "भारतमाला रस्ते योजना", "en": "Bharatmala Road Scheme" },
+        { "mr": "राष्ट्रीय ग्रामीण रस्ते विकास मोहीम", "en": "National Rural Road Development Mission" },
+        { "mr": "ग्रामोदयं दूरदूर रस्ते योजना", "en": "Gramoday Road Scheme" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(PMGSY): २५ डिसेंबर २००० रोजी सुरू झालेली 'प्रधानमंत्री ग्राम सडक योजना' (PMGSY) ही ग्रामीण भागातील unconnected गावांना वर्षभर बारमाही (All-weather roads) पक्क्या रस्त्यांनी जोडणारी अत्यंत यशस्वी योजना ठरली.\n\n[संदर्भ: ग्रामीण विकास मंत्रालय रिपोर्ट / रमेश सिंग]",
+        "en": "PMGSY was launched in December 2000 to provide all-weather road connectivity to eligible unconnected rural habitations."
+      }
+    },
+    {
+      "id": 10,
+      "question": {
+        "mr": "ग्रामपंचायतींच्या माध्यमातून ग्रामीण भागात स्वच्छतेचा संदेश देण्यासाठी आणि हागणदारीमुक्त (ODF) गावे करण्यासाठी 'स्वच्छ भारत मिशन (ग्रामीण)' कधी सुरू झाले?",
+        "en": "When was the Swachh Bharat Mission (Gramin) launched to accelerate rural sanitation coverage and achieve Open Defecation Free (ODF) status?"
+      },
+      "options": [
+        { "mr": "२ ऑक्टोबर २०१४ (October 2, 2014)", "en": "October 2, 2014" },
+        { "mr": "१५ ऑगस्ट २०१५", "en": "August 15, 2015" },
+        { "mr": "२६ जानेवारी २०१४", "en": "January 26, 2014" },
+        { "mr": "१ मे २०१६", "en": "May 1, 2016" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(२०१४): महात्मा गांधींच्या जयंतीनिमित्त २ ऑक्टोबर २०१४ रोजी 'स्वच्छ भारत अभियान' (ग्रामीण व शहरी) सुरू केले गेले, ज्याचे मुख्य उद्दिष्ट ग्रामीण भारतात शौचालयांची निर्मिती करून परिसर स्वच्छ ठेवणे होते.\n\n[संदर्भ: पेयजल व स्वच्छता मंत्रालय रिपोर्ट]",
+        "en": "Swachh Bharat Mission (Gramin) was launched on October 2, 2014, to accelerate rural sanitation, eliminate open defecation, and promote solid waste management."
+      }
+    },
+    {
+      "id": 11,
+      "question": {
+        "mr": "भारतात सहकार क्षेत्राला बळकटी देण्यासाठी आणि 'सहकारातून समृद्धी' (Sahakar se Samriddhi) हे स्वप्न साकारण्यासाठी स्वतंत्र 'सहकार मंत्रालयाची' (Ministry of Cooperation) स्थापना कधी झाली?",
+        "en": "When was a separate Ministry of Cooperation created at the central level to realize the vision of 'Sahakar se Samriddhi'?"
+      },
+      "options": [
+        { "mr": "जुलै २०२१ (July 2021)", "en": "July 2021" },
+        { "mr": "मे २०१९", "en": "May 2019" },
+        { "mr": "जानेवारी २०१५", "en": "January 2015" },
+        { "mr": "ऑगस्ट २०१४", "en": "August 2014" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(२०२१): जुलै २०२१ मध्ये केंद्र सरकारतर्फे देशातील सहकारी चळवळीला प्रशासकीय बळ देण्यासाठी आणि 'सहकारातून समृद्धी' साधण्यासाठी पहिल्यांदाच एका स्वतंत्र 'सहकार मंत्रालयाची' स्थापना केली गेली.\n\n[संदर्भ: सहकार मंत्रालय रिपोर्ट / रमेश सिंग]",
+        "en": "A dedicated Ministry of Cooperation was established in July 2021 to provide a separate administrative, legal, and policy framework for strengthening the cooperative movement in India."
+      }
+    },
+    {
+      "id": 12,
+      "question": {
+        "mr": "ग्रामीण भागातील पारंपरिक कारागीर व हस्तकलाकारांना (कुंभार, सुतार, विणकर इ.) आर्थिक सहाय्य, कौशल्य व आधुनिक साधने देणारी कोणती केंद्र सरकारची योजना आहे?",
+        "en": "Which central welfare scheme supports traditional artisans and craftsperson families (like weavers, potters, blacksmiths) with collateral-free loans and skill upgradation?"
+      },
+      "options": [
+        { "mr": "प्रधानमंत्री विश्वकर्मा योजना (PM Vishwakarma Scheme - २०२३)", "en": "Pradhan Mantri Vishwakarma Scheme" },
+        { "mr": "प्रधानमंत्री मुद्रा योजना", "en": "Pradhan Mantri Mudra Yojana" },
+        { "mr": "स्टँड अप इंडिया", "en": "Stand Up India" },
+        { "mr": "पीएम स्वनिधी योजना", "en": "PM SVANidhi" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(विश्वकर्मा योजना): पारंपरिक हस्तकला आणि कारागिरी करणाऱ्या १८ पेक्षा जास्त पारंपारिक व्यवसायातील कारागिरांना ओळखपत्र, कौशल्य प्रशिक्षण, आधुनिक साधने खरेदीसाठी आर्थिक मदत व सवलतीच्या दरात कर्ज देण्यासाठी 'पीएम विश्वकर्मा योजना' सुरू केली आहे.\n\n[संदर्भ: केंद्र सरकार योजना / रमेश सिंग]",
+        "en": "PM Vishwakarma scheme aims to support traditional artisans and craftspeople with recognition, skill upgradation, toolkit incentives, and collateral-free credit support."
+      }
+    },
+    {
+      "id": 13,
+      "question": {
+        "mr": "शहरी भागातील पथविक्रेत्यांना (Street Vendors) कोरोना काळात व त्यानंतर पुन्हा व्यवसाय उभा करण्यासाठी विनातारण खेळते भांडवल पुरवणारी कोणती लोकप्रिय योजना आहे?",
+        "en": "Which micro-credit scheme provides affordable working capital loans to street vendors in urban areas?"
+      },
+      "options": [
+        { "mr": "पीएम स्वनिधी योजना (PM SVANidhi - Pradhan Mantri Street Vendor's AtmaNirbhar Nidhi)", "en": "PM SVANidhi (Pradhan Mantri Street Vendor's AtmaNirbhar Nidhi)" },
+        { "mr": "प्रधानमंत्री मुद्रा योजना", "en": "Pradhan Mantri Mudra Yojana" },
+        { "mr": "स्टार्ट अप इंडिया", "en": "Startup India" },
+        { "mr": "दीनदयाल अंत्योदय योजना", "en": "DAY-NULM" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(PM SVANidhi): जून २०२० मध्ये सुरू झालेली 'पीएम स्वनिधी योजना' शहरी व निमशहरी भागातील पथविक्रेत्यांना (Street vendors) डिजिटल व्यवहारांना प्रोत्साहन देत प्रारंभिक खेळते भांडवल (Working capital loan) पुरवते.\n\n[संदर्भ: आवास व शहरी व्यवहार मंत्रालय रिपोर्ट]",
+        "en": "PM SVANidhi was launched to provide affordable working capital loans to street vendors affected by COVID-19, incentivizing digital transactions and timely repayment."
+      }
+    },
+    {
+      "id": 14,
+      "question": {
+        "mr": "भारताच्या परकीय व्यापारात आणि लॉजिस्टिक्स सुधारण्यासाठी केंद्र सरकारने ऑक्टोबर २०२१ मध्ये कोणती सर्वसमावेशक राष्ट्रीय मास्टर प्लॅन मोहीम सुरू केली?",
+        "en": "Which multi-modal connectivity master plan was launched in October 2021 to integrate infrastructure projects and reduce logistics costs in India?"
+      },
+      "options": [
+        { "mr": "प्रधानमंत्री गतिश शक्ति राष्ट्रीय मास्टर प्लॅन (PM GatiShakti National Master Plan)", "en": "PM GatiShakti National Master Plan" },
+        { "mr": "भारतमाला महामार्ग योजना", "en": "Bharatmala Highway Scheme" },
+        { "mr": "सागरमाला बंदर विकास", "en": "Sagarmala Port Development" },
+        { "mr": "राष्ट्रीय लॉजिस्टिक्स ग्रीड", "en": "National Logistics Grid" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(पीएम गतिश शक्ति): विविध मंत्रालयांच्या पायाभूत सुविधा प्रकल्पांमध्ये समन्वय साधण्यासाठी आणि लॉजिस्टिक्स खर्च कमी करण्यासाठी ऑक्टोबर २०२१ मध्ये 'पीएम गतिश शक्ति राष्ट्रीय मास्टर प्लॅन' सुरू केला गेला.\n\n[संदर्भ: वाणिज्य मंत्रालय रिपोर्ट / रमेश सिंग]",
+        "en": "PM GatiShakti is a digital platform bringing together 16 ministries for integrated planning and coordinated implementation of infrastructure connectivity projects."
+      }
+    },
+    {
+      "id": 15,
+      "question": {
+        "mr": "भारतीय अर्थव्यवस्थेत 'स्टार्टअप इंडिया' (Startup India) उपक्रमाची सुरुवात कधी झाली होती?",
+        "en": "When was the 'Startup India' initiative officially launched by the Government of India to foster a startup ecosystem?"
+      },
+      "options": [
+        { "mr": "१६ जानेवारी २०१६ (January 16, 2016)", "en": "January 16, 2016" },
+        { "mr": "२५ सप्टेंबर २०१४", "en": "September 25, 2014" },
+        { "mr": "१ जानेवारी २०१५", "en": "January 1, 2015" },
+        { "mr": "८ एप्रिल २०१५", "en": "April 8, 2015" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(२०१६): भारतात नाविन्यपूर्ण कल्पनांना व नवउद्योजकांना (Startups) कर सवलती, सुलभ कायदे व निधी मिळवून देण्यासाठी १६ जानेवारी २०१६ रोजी 'स्टार्टअप इंडिया' मोहीम सुरू केली गेली.\n\n[संदर्भ: DPIIT / रमेश सिंग]",
+        "en": "Startup India was launched on January 16, 2016, to build a strong ecosystem for nurturing innovation, driving sustainable economic growth, and generating large-scale employment."
+      }
+    },
+    {
+      "id": 16,
+      "question": {
+        "mr": "महाराष्ट्राच्या आर्थिक व सामाजिक विकासाच्या संदर्भात 'रोजगार हमी योजना' (Employment Guarantee Scheme - EGS) सर्वप्रथम कोणत्या दशकात आणि कोणाच्या पुढाकाराने महाराष्ट्रात राबवली गेली?",
+        "en": "In which decade and under whose political pioneering was the Employment Guarantee Scheme (EGS) first successfully implemented in Maharashtra?"
+      },
+      "options": [
+        { "mr": "१९७० चे दशक (श्रीमती वसंतराव काळे आणि वि. दा. पत्की यांच्या विचारातून, व्ही. एस. पेजेंचे योगदान)", "en": "1970s (Pioneered largely by V.S. Page and championed in Maharashtra)" },
+        { "mr": "१९५० चे दशक", "en": "1950s" },
+        { "mr": "१९९० चे दशक", "en": "1990s" },
+        { "mr": "२००४ नंतर", "en": "Post-2004" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९७० चे दशक): महाराष्ट्रात वि. दा. पेजेंच्या संकल्पनेतून आणि १९७० च्या दशकात (१९७४ मध्ये कायद्याद्वारे) ग्रामीण भागातील मजुरांना कामाची हमी देणारी 'रोजगार हमी योजना' (EGS) सर्वप्रथम महाराष्ट्रात राबवली गेली, जी पुढे राष्ट्रीय मनरेगाचा पाया ठरली.\n\n[संदर्भ: महाराष्ट्राची अर्थव्यवस्था - डॉ. गाठाळ]",
+        "en": "Pioneered in Maharashtra in the 1970s (backed by leaders like V.S. Page), the EGS guaranteed manual work to rural laborers, serving as a blueprint for national employment laws."
+      }
+    },
+    {
+      "id": 17,
+      "question": {
+        "mr": "महाराष्ट्रात कृषी उत्पादनांच्या खरेदी-विक्रीत पारदर्शकता आणण्यासाठी आणि शेतकऱ्यांना योग्य मोबदला मिळण्यासाठी 'कृषी उत्पन्न बाजार समित्या' (APMC) व्यतिरिक्त कोणता आधुनिक पर्याय डिजिटल माध्यमातून उपलब्ध केला गेला आहे?",
+        "en": "What is the name of the pan-India electronic trading portal launched to integrate agricultural APMC mandis and ensure transparent price discovery for farmers?"
+      },
+      "options": [
+        { "mr": "ई-नाम पोर्टल (e-NAM - National Agriculture Market)", "en": "e-NAM (National Agriculture Market)" },
+        { "mr": "महाकृषी डिजिटल पोर्टल", "en": "Mahagri Digital Portal" },
+        { "mr": "किसान क्रेडिट ग्रीड", "en": "Kisan Credit Grid" },
+        { "mr": "ई-मंडी महाराष्ट्र", "en": "e-Mandi Maharashtra" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(e-NAM): २०१६ मध्ये सुरू झालेले 'ई-नाम' (e-NAM) हे अखिल भारतीय इलेक्ट्रॉनिक ट्रेडिंग पोर्टल आहे, जे देशभरातील APMC बाजार समित्या एकाच डिजिटल मंचावर जोडत शेतकऱ्यांना पारदर्शक भाव मिळवून देते.\n\n[संदर्भ: कृषी मंत्रालय रिपोर्ट / रमेश सिंग]",
+        "en": "e-NAM is a pan-India electronic trading portal linking agricultural mandis across states to create a unified national market for agricultural commodities."
+      }
+    },
+    {
+      "id": 18,
+      "question": {
+        "mr": "महाराष्ट्राच्या ग्रामीण भागात महिलांच्या सक्षमीकरणासाठी आणि आर्थिक उन्नतीसाठी राज्य शासनामार्फत कोणती प्रसिद्ध अभियान मोहीम राबवली जाते?",
+        "en": "What is the name of the premier state-level rural livelihood mission implemented in Maharashtra to empower women through Self-Help Groups (Mahila Bachat Gat)?"
+      },
+      "options": [
+        { "mr": "उमेद - महाराष्ट्र राज्य ग्रामीण जीवनोन्नती अभियान (MSRLM - Umed)", "en": "Umed - Maharashtra State Rural Livelihoods Mission (MSRLM)" },
+        { "mr": "तेजस्विनी महिला विकास योजना", "en": "Tejaswini Women Development Scheme" },
+        { "mr": "जिजामाता महिला बचत गट मोहीम", "en": "Jijamata Bachat Gat Mission" },
+        { "mr": "क्रांतीज्योती सावित्रीबाई महिला अभियान", "en": "Savitribai Women Mission" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(उमेद अभियान): महाराष्ट्रात ग्रामीण भागातील महिलांना स्वयंसहाय्यता गटांच्या (Mahila Bachat Gat) माध्यमातून आर्थिक व सामाजिक सक्षम बनवण्यासाठी 'उमेद' (MSRLM - Maharshtra State Rural Livelihoods Mission) प्रभावीपणे राबवले जाते.\n\n[संदर्भ: ग्रामीण विकास विभाग, महाराष्ट्र शासन]",
+        "en": "Umed (MSRLM) is the nodal state mission in Maharashtra working towards poverty alleviation by organizing rural poor women into vibrant community institutions."
+      }
+    },
+    {
+      "id": 19,
+      "question": {
+        "mr": "भारतात 'किसान क्रेडिट कार्ड' (KCC) योजना कोणत्या वर्षी सुरू झाली होती, जिचा उद्देश शेतकऱ्यांना अल्पमुदतीचे सुलभ कृषी कर्ज देणे हा आहे?",
+        "en": "In which year was the 'Kisan Credit Card' (KCC) scheme introduced in India to provide timely and adequate institutional credit to farmers?"
+      },
+      "options": [
+        { "mr": "१९९८-९९ (Introduced in 1998-99)", "en": "1998-99" },
+        { "mr": "१९८५-८६", "en": "1985-86" },
+        { "mr": "२००१-०२", "en": "2001-02" },
+        { "mr": "१९९१-९२", "en": "1991-92" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९९८-९९): आर. व्ही. गुप्ता समितीच्या शिफारसीनुसार १९९८-९९ च्या केंद्रीय अर्थसंकल्पात शेतकऱ्यांना सावकारांच्या विळख्यातून सोडवून सुलभ व कमी व्याजावर कर्ज मिळण्यासाठी 'किसान क्रेडिट कार्ड' (KCC) योजना सुरू झाली.\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग]",
+        "en": "The Kisan Credit Card (KCC) scheme was introduced in 1998-99 based on the R.V. Gupta Committee recommendations to provide adequate and timely timely credit to farmers."
+      }
+    },
+    {
+      "id": 20,
+      "question": {
+        "mr": "महाराष्ट्राच्या औद्योगिक व आर्थिक विकासात 'सिदबी' (SIDBI) व्यतिरिक्त राज्यास्तरीय कोणती संस्था सूक्ष्म व लघु उद्योगांना दीर्घकालीन अर्थसहाय्य पुरवते?",
+        "en": "Which premier state-level financial institution supports industrial promotion and term-loan financing in Maharashtra alongside SIDBI?"
+      },
+      "options": [
+        { "mr": "महाराष्ट्र राज्य वित्त महामंडळ (MSFC - Maharashtra State Financial Corporation)", "en": "Maharashtra State Financial Corporation (MSFC)" },
+        { "mr": "मुंबई कामगार कल्याण मंडळ", "en": "Mumbai Labor Welfare Board" },
+        { "mr": "कोकण विकास महामंडळ", "en": "Konkan Development Corporation" },
+        { "mr": "पुणे व्यापारी संघ", "en": "Pune Traders Association" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(MSFC): राज्यघटनेनुसार आणि राज्य वित्तीय महामंडळ कायदा १९५१ अन्वये स्थापन झालेली 'महाराष्ट्र राज्य वित्त महामंडळ' (MSFC) राज्यातील लघू व मध्यम उद्योगांना टर्म लोन (Term loans) पुरवते.\n\n[संदर्भ: महाराष्ट्राची अर्थव्यवस्था - डॉ. गाठाळ]",
+        "en": "MSFC is a state-level financial institution established to provide term loans and financial assistance to small and medium-scale industrial enterprises in Maharashtra."
+      }
+    },
+    {
+      "id": 21,
+      "question": {
+        "mr": "भारतीय अर्थव्यवस्थेत 'वित्तीय स्थिरता आणि महागाई नियंत्रण' राखताना 'उत्पादकतेवर आधारित वाढ' (Productivity-led Growth) साधण्यासाठी कोणत्या घटकाला सर्वाधिक महत्त्व दिले जाते?",
+        "en": "What is considered paramount for achieving sustainable productivity-led economic growth while maintaining price stability?"
+      },
+      "options": [
+        { "mr": "तंत्रज्ञान अपग्रेडेशन, संशोधन व विकास (R&D) आणि कुशल मानवी भांडवल निर्मिती", "en": "Technological upgradation, research and development (R&D), and skilled human capital formation" },
+        { "mr": "फक्त आयात शुल्कात वाढ करणे", "en": "Hiking import tariffs exclusively" },
+        { "mr": "सार्वजनिक कर्जात अमर्याद वाढ करणे", "en": "Expanding sovereign debt endlessly" },
+        { "mr": "परदेशी कंपन्यांवर पूर्ण कर लादणे", "en": "Levying exorbitant corporate taxes" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(अर्थशास्त्र): कोणत्याही अर्थव्यवस्थेत दीर्घकालीन आणि टिकाऊ वाढ (Productivity-led growth) साधण्यासाठी केवळ पैशांचा पुरवठा वाढवून चालत नाही, तर तंत्रज्ञान, R&D आणि कुशल मनुष्यबळ तयार करणे अनिवार्य असते.\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग]",
+        "en": "Sustainable productivity-led growth relies fundamentally on innovation, R&D investments, advanced technology adoption, and building a skilled workforce."
+      }
+    },
+    {
+      "id": 22,
+      "question": {
+        "mr": "भारतात 'राष्ट्रीय पायाभूत सुविधा पाइपलाइन' (National Infrastructure Pipeline - NIP) अंतर्गत कोणत्या कालावधीसाठी पायाभूत प्रकल्पांचे महाजाल तयार करण्याचे नियोजन केले गेले होते?",
+        "en": "For which multi-year timeframe was the ambitious National Infrastructure Pipeline (NIP) formulated in India?"
+      },
+      "options": [
+        { "mr": "२०२० ते २०२५ (2020-2025)", "en": "2020-2025" },
+        { "mr": "२०१५ ते २०२०", "en": "2015-2020" },
+        { "mr": "२०२५ ते २०३०", "en": "2025-2030" },
+        { "mr": "२०१२ ते २०१७", "en": "2012-2017" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(NIP): देशात आर्थिक व सामाजिक पायाभूत सुविधांचा वेग वाढवण्यासाठी केंद्रीय वित्त मंत्रालयाने २०२० ते २०२५ या कालावधीसाठी 'नॅशनल इन्फ्रास्ट्रक्चर पाईपलाइन' (NIP) जाहीर केली होती, ज्यामध्ये लाखो कोटी रुपयांच्या प्रकल्पांचा समावेश आहे.\n\n[संदर्भ: केंद्रीय अर्थसंकल्प / रमेश सिंग]",
+        "en": "The National Infrastructure Pipeline (NIP) was launched for the period 2020-2025 to provide world-class infrastructure across sectors and drive economic growth."
+      }
+    },
+    {
+      "id": 23,
+      "question": {
+        "mr": "भारतीय अर्थव्यवस्थेच्या संदर्भात 'पतबदल किंवा वित्तीय मंजुरीसाठी' वापरले जाणारे 'CIBIL स्कोअर' (Credit Information Bureau India Limited) काय दर्शवतो?",
+        "en": "What does an individual's or entity's 'CIBIL Score' signify in the Indian credit and banking system?"
+      },
+      "options": [
+        { "mr": "व्यक्तीच्या मागील कर्जफेडीचा इतिहास आणि त्याची पतविषयक पात्रता दर्शवणारा ३ अंकी आकडा (३०० ते ९००)", "en": "A 3-digit numeric summary (ranging from 300 to 900) reflecting an individual's credit history and repayment reliability" },
+        { "mr": "बँकेतील ठेवींचे एकूण प्रमाण", "en": "Total bank deposits held" },
+        { "mr": "वार्षिक आयकराची रक्कम", "en": "Annual income tax liability" },
+        { "mr": "शेअर बाजारातील नफा", "en": "Stock market profits" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(सिबिल स्कोअर): CIBIL स्कोअर हा ३०० ते ९०० दरम्यानचा ३ अंकी आकडा असतो, जो ग्राहकाच्या मागील कर्जफेडीचा शिस्तीचा इतिहास तपासून त्याची पत पात्रता (Creditworthiness) ठरवतो.\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग]",
+        "en": "A CIBIL score is a 3-digit number ranging from 300 to 900 that represents an individual's credit health, history, and loan repayment track record."
+      }
+    },
+    {
+      "id": 24,
+      "question": {
+        "mr": "भारतीय अर्थव्यवस्थेत 'वित्तीय समावेशनाचे' (Financial Inclusion) यश मोजण्यासाठी आणि ग्रामीण ग्राहकांपर्यंत डिजिटल बँकिंग पोहोचवण्यासाठी कोणत्या राष्ट्रीय धोरणाचा स्वीकार केला गेला आहे?",
+        "en": "What strategic framework guides the Reserve Bank of India in driving comprehensive financial inclusion nationwide?"
+      },
+      "options": [
+        { "mr": "राष्ट्रीय वित्तीय समावेशन धोरण (National Strategy for Financial Inclusion - NSFI)", "en": "National Strategy for Financial Inclusion (NSFI)" },
+        { "mr": "डिजिटल इंडिया बँकिंग चार्टर", "en": "Digital India Banking Charter" },
+        { "mr": "राष्ट्रीय नगदीकरण मोहीम", "en": "National Monetization Campaign" },
+        { "mr": "बँकिंग सुधारणा आयोग", "en": "Banking Reforms Commission" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(वित्तीय समावेशन): आरबीआयने देशात सर्वसमावेशक वित्तीय वाढ साध्य करण्यासाठी आणि सर्व घटकांपर्यंत बँकिंग सेवा पोहोचवण्यासाठी 'राष्ट्रीय वित्तीय समावेशन धोरण' (NSFI) तयार केले आहे.\n\n[संदर्भ: RBI Guidelines / रमेश सिंग]",
+        "en": "The Reserve Bank of India spearheads the National Strategy for Financial Inclusion (NSFI) to deepen financial services outreach across unbanked regions."
+      }
+    },
+    {
+      "id": 25,
+      "question": {
+        "mr": "भारताच्या आर्थिक व सामाजिक विकासाचा व्यापक विचार करता, 'आर्थिक वाढ' (Economic Growth) आणि 'आर्थिक विकास' (Economic Development) मधील सूक्ष्म पण महत्त्वाचा फरक काय आहे?",
+        "en": "What is the crucial qualitative and quantitative distinction between 'Economic Growth' and 'Economic Development'?"
+      },
+      "options": [
+        { "mr": "आर्थिक वाढ ही केवळ जीडीपीच्या परिमाणवाढेशी (Quantitative) संबंधित आहे, तर आर्थिक विकासामध्ये गरिबी निर्मूलन, मानवी विकास आणि जीवनाचा दर्जा या गुणात्मक (Qualitative) बदलांचा समावेश होतो", "en": "Economic growth is a quantitative measure of output increase (GDP), whereas economic development is a broader qualitative concept encompassing structural changes, human welfare, and poverty reduction" },
+        { "mr": "दोन्ही पूर्णपणे समान संकल्पना आहेत", "en": "Both terms are identical in scope" },
+        { "mr": "विकास फक्त कागदावर मोजला जातो", "en": "Development is measured only on paper" },
+        { "mr": "वाढ ही फक्त कृषी क्षेत्रात होते", "en": "Growth occurs strictly in agriculture" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(अंतिम निष्कर्ष): आर्थिक वाढ (Economic Growth) हा संख्यात्मक आकडा आहे (उदा. जीडीपी वाढ), तर आर्थिक विकास (Economic Development) हा व्यापक गुणात्मक बदल आहे, ज्यामध्ये लोकांचे आरोग्य, शिक्षण, राहणीमान आणि संपत्तीचे समन्यायी वाटप यांचा समावेश होतो.\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग]",
+        "en": "(Conclusion): Economic growth denotes quantitative expansion in national output, while economic development is a comprehensive qualitative process involving structural reforms, human development, and equity."
+      }
+    }
+  ]
+}

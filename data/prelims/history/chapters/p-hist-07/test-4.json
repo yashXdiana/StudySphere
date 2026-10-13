@@ -1,0 +1,464 @@
+{
+  "testId": "p-hist-07-t4",
+  "title": {
+    "mr": "भारतीय राष्ट्रीय चळवळ (सविनय कायदेभंग व गोलमेज परिषदा) — सराव 4",
+    "en": "Indian National Movement (Civil Disobedience & Round Table Conferences) — Practice Test 4"
+  },
+  "durationMinutes": 20,
+  "marksPerQuestion": 1,
+  "negativeMarking": 0.25,
+  "totalMarks": 25,
+  "difficulty": "मध्यम ते काठिण्य",
+  "questions": [
+    {
+      "id": 1,
+      "question": {
+        "mr": "महात्मा गांधीजींनी सविनय कायदेभंग चळवळीच्या (१९३०) सुरुवातीला ब्रिटीश वाईसरॉय लॉर्ड इरविन यांच्यासमोर किती मागण्यांची 'अखेरची व सविस्तर मागणी' (Eleven Demands) ठेवली होती?",
+        "en": "How many specific demands (Eleven Demands) did Mahatma Gandhi present to Viceroy Lord Irwin as an ultimatum before launching the Civil Disobedience Movement in 1930?"
+      },
+      "options": [
+        { "mr": "११ मागण्या (Eleven Demands)", "en": "11 Demands" },
+        { "mr": "७ मागण्या", "en": "7 Demands" },
+        { "mr": "१५ मागण्या", "en": "15 Demands" },
+        { "mr": "२१ मागण्या", "en": "21 Demands" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९३०): दांडी यात्रेपूर्वी जानेवारी १९३० मध्ये गांधीजींनी 'यंग इंडिया' वृत्तपत्रातून वाईसरॉय लॉर्ड इरविन यांच्यासमोर मिठावरील कर रद्द करणे, दारूबंदी, शेतसारा ५०% कमी करणे यांसारख्या '११ मागण्या' ठेवली होती. त्यावर इरविनने प्रतिसाद न दिल्याने सविनय कायदेभंगाची हाक दिली.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / डॉ. स. शि. गाठाळ]",
+        "en": "(1930): Before embarking on the Dandi March, Gandhi placed 'Eleven Demands' before Viceroy Lord Irwin, ranging from the abolition of the salt tax to land revenue cuts. Irwin's indifference triggered the movement.\n\n"
+      }
+    },
+    {
+      "id": 2,
+      "question": {
+        "mr": "दांडी यात्रेदरम्यान (१९३०) महात्मा गांधींसोबत साबरमती आश्रमातून किती निवडक सत्याग्रही सहभागी झाले होते?",
+        "en": "How many chosen Satyagrahis accompanied Mahatma Gandhi from Sabarmati Ashram during the historic Dandi March in 1930?"
+      },
+      "options": [
+        { "mr": "७८ सत्याग्रही (78 Satyagrahis)", "en": "78 Satyagrahis" },
+        { "mr": "५० सत्याग्रही", "en": "50 Satyagrahis" },
+        { "mr": "१०० सत्याग्रही", "en": "100 Satyagrahis" },
+        { "mr": "५०० सत्याग्रही", "en": "500 Satyagrahis" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९३०): १२ मार्च १९३० रोजी गांधीजींनी आपल्या ७८ विश्वासू सत्याग्रहींसह साबरमती आश्रमातून २४० मैलांची दांडी यात्रा सुरू केली आणि ६ एप्रिल १९३० रोजी दांडीच्या किनाऱ्यावर मीठ बनवून कायदा मोडला.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1930): Gandhi set out from Sabarmati Ashram on March 12, 1930, accompanied by exactly 78 trusted Satyagrahis on the 240-mile journey to the sea coast at Dandi.\n\n"
+      }
+    },
+    {
+      "id": 3,
+      "question": {
+        "mr": "सविनय कायदेभंग चळवळीच्या काळात पेशावरमध्ये (वायव्य सीमा प्रांत) निदर्शने करणाऱ्या 'खुदाई खिदमतगार' (Red Shirts) वर गोलीबार करण्यास कोणत्या ब्रिटीश लष्करी रेजिमेंटच्या सैनिकांनी नकार दिला होता?",
+        "en": "Which British Indian Army regiment famously refused to open fire on unarmed Khudai Khidmatgar protestors in Peshawar during the Civil Disobedience Movement?"
+      },
+      "options": [
+        { "mr": "गरवाल रायफल्स (Garhwal Rifles - चंद्रसिंह ठाकूर यांच्या नेतृत्वाखाली)", "en": "Garhwal Rifles (led by Chandra Singh Garhwali)" },
+        { "mr": "मद्रास रेजिमेंट", "en": "Madras Regiment" },
+        { "mr": "पंजाब रेजिमेंट", "en": "Punjab Regiment" },
+        { "mr": "गोरखा रायफल्स", "en": "Gorkha Rifles" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९३०): पेशावरमध्ये खान अब्दुल गफार खान यांच्या समर्थकांवर गोळीबार करण्याचे आदेश दिल्यावर 'गरवाल रायफल्स'च्या सैनिकांनी (हवालदार चंद्रसिंह ठाकूर यांच्या नेतृत्वाखाली) देशप्रेमापोटी गोळीबार करण्यास स्पष्ट नकार दिला.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1930): In Peshawar, soldiers of the Garhwal Rifles, led by Chandra Singh Garhwali, bravely refused to fire on peaceful Satyagrahis, a monumental act of nationalist defiance within the colonial army.\n\n"
+      }
+    },
+    {
+      "id": 4,
+      "question": {
+        "mr": "मार्च १९३१ मध्ये झालेला प्रसिद्ध 'गांधी-इरविन करार' (Gandhi-Irwin Pact) कशाशी संबंधित होता?",
+        "en": "What was the main outcome of the 'Gandhi-Irwin Pact' signed in March 1931?"
+      },
+      "options": [
+        { "mr": "सविनय कायदेभंग चळवळ स्थगित करणे, राजकीय कैद्यांची सुटका आणि गोलमेज परिषदेत सहभाग", "en": "Suspension of Civil Disobedience, release of political prisoners, and participation in the RTC" },
+        { "mr": "भारताला तात्काळ डोमिनियन स्टेटस देणे", "en": "Immediate Dominion Status for India" },
+        { "mr": "भगत सिंग यांची फाळणी रद्द करणे", "en": "Cancellation of Bhagat Singh's execution" },
+        { "mr": "मीठावरील कर कायम ठेवणे", "en": "Permanently retaining the salt tax" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९३१): ५ मार्च १९३१ रोजी गांधीजी व वाईसरॉय इरविन यांच्यात करार झाला. त्यानुसार सविनय कायदेभंग स्थगित करण्यात आला, हिंसाचार न केलेल्या राजकीय कैद्यांना सोडण्यात आले, आणि गांधीजींनी लंडनच्या दुसऱ्या गोलमेज परिषदेत जाण्याचे मान्य केले.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / डॉ. स. शि. गाठाळ]",
+        "en": "(1931): The Gandhi-Irwin Pact led to the suspension of the Civil Disobedience Movement, release of non-violent political prisoners, and Gandhi's agreement to attend the Second Round Table Conference.\n\n"
+      }
+    },
+    {
+      "id": 5,
+      "question": {
+        "mr": "पहिल्या गोलमेज परिषदेचे (First Round Table Conference - नोव्हेंबर १९३० ते जानेवारी १९३१) आयोजन लंडनमध्ये कोठे करण्यात आले होते आणि काँग्रेसने त्यात सहभाग घेतला होता का?",
+        "en": "Where was the First Round Table Conference held in London (1930-31), and did the Congress participate in it?"
+      },
+      "options": [
+        { "mr": "सेंट जेम्स पॅलेस, लंडन; काँग्रेसने बहिष्कार टाकला होता", "en": "St. James's Palace, London; Congress boycotted it" },
+        { "mr": "बकिंगहॅम पॅलेस; काँग्रेसने सहभाग घेतला", "en": "Buckingham Palace; Congress participated" },
+        { "mr": "हाऊस ऑफ कॉमन्स; मुस्लिम लीगने बहिष्कार टाकला", "en": "House of Commons; Muslim League boycotted" },
+        { "mr": "वेस्टमिनिस्टर ॲबे; सर्व पक्षांनी सहभाग घेतला", "en": "Westminster Abbey; All parties participated" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९३०-३१): पहिली गोलमेज परिषद लंडनच्या सेंट जेम्स पॅलेसमध्ये झाली. त्यावेळी सविनय कायदेभंग चळवळ सुरू असल्याने आणि प्रमुख काँग्रेस नेते तुरुंगात असल्याने काँग्रेसने या परिषदेवर पूर्ण बहिष्कार टाकला होता.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1930-31): The First Round Table Conference was held at St. James's Palace in London, but was boycotted entirely by the INC since its leaders were imprisoned during the Salt Satyagraha.\n\n"
+      }
+    },
+    {
+      "id": 6,
+      "question": {
+        "mr": "ब्रिटनचे पंतप्रधान रमसे मॅकडोनाल्ड यांनी ऑगस्ट १९३२ मध्ये जाहीर केलेल्या 'कम्युनल अवॉर्ड' (Communal Award) नुसार कोणत्या वर्गासाठी स्वतंत्र मतदारसंघ घोषित केले गेले होते?",
+        "en": "According to Ramsay MacDonald's 'Communal Award' of August 1932, separate electorates were extended to which community in addition to Muslims, Sikhs, and Europeans?"
+      },
+      "options": [
+        { "mr": "दलित वर्ग / अवर्ण (Depressed Classes / Dalits)", "en": "Depressed Classes / Dalits" },
+        { "mr": "जमीनदार वर्ग", "en": "Zamindars" },
+        { "mr": "गिरणी कामगार", "en": "Mill workers" },
+        { "mr": "महिला वर्ग", "en": "Women" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९३२): कम्युनल अवॉर्डनुसार मुसलमानांप्रमाणेच दलित वर्गासाठी (Depressed Classes) स्वतंत्र मतदारसंघ जाहीर करण्यात आले, ज्यामुळे हिंदू समाजात फूट पडेल म्हणून गांधीजींनी उपोषण छेडले.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / एम. लक्ष्मीकांत]",
+        "en": "(1932): The Communal Award granted separate electorates to the Depressed Classes (Dalits), sparking intense political friction and Gandhi's fast unto death in Yerwada jail.\n\n"
+      }
+    },
+    {
+      "id": 7,
+      "question": {
+        "mr": "पुणे करारावर (Poona Pact - सप्टेंबर १९३२) स्वाक्षरी करताना महात्मा गांधींच्या वतीने (ते येरवडा तुरुंगात उपोषणात असल्याने) मुख्य स्वाक्षरी कोणी केली होती?",
+        "en": "Who signed the Poona Pact of September 1932 on behalf of Mahatma Gandhi, who was fasting inside Yerwada jail?"
+      },
+      "options": [
+        { "mr": "मदनमोहन मालवीय, सी. राजगोपालाचारी आणि इतर नेते", "en": "Madan Mohan Malaviya, C. Rajagopalachari and others" },
+        { "mr": "जवाहरलाल नेहरू व सुभाशचंद्र बोस", "en": "Jawaharlal Nehru and Subhas Chandra Bose" },
+        { "mr": "सरदार वल्लभभाई पटेल व राजेंद्र प्रसाद", "en": "Sardar Patel and Rajendra Prasad" },
+        { "mr": "मोतीलाल नेहरू व चित्तरंजन दास", "en": "Motilal Nehru and C.R. Das" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९३२): येरवडा तुरुंगात गांधीजींचे प्राण वाचवण्यासाठी मदनमोहन मालवीय, सी. राजगोपालाचारी, राजेंद्र प्रसाद आणि इतर नेत्यांनी डॉ. बाबासाहेब आंबेडकरांशी चर्चा करत २४ सप्टेंबर १९३२ रोजी पुणे करारावर स्वाक्षऱ्या केल्या.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / समाधान महाजन]",
+        "en": "(1932): Since Gandhi was fasting in Yerwada jail, nationalist leaders like Madan Mohan Malaviya, C. Rajagopalachari, and Rajendra Prasad signed the Poona Pact alongside Dr. B.R. Ambedkar.\n\n"
+      }
+    },
+    {
+      "id": 8,
+      "question": {
+        "mr": "पुणे करारानुसार (१९३२) प्रांतिक आणि केंद्रीय कायदेमंडळात दलित वर्गाच्या (Depressed Classes) राखीव जागांच्या संदर्भात काय तरतूद झाली?",
+        "en": "What was the key arrangement regarding reserved seats for Dalits under the Poona Pact (1932) compared to the Communal Award?"
+      },
+      "options": [
+        { "mr": "स्वतंत्र मतदारसंघ रद्द करून संयुक्त मतदारसंघात राखीव जागांची संख्या लक्षणीयरीत्या वाढवली गेली", "en": "Abolished separate electorates in favor of a substantially increased number of reserved seats within joint electorates" },
+        { "mr": "राखीव जागा पूर्णपणे काढून टाकण्यात आल्या", "en": "All reserved seats were completely abolished" },
+        { "mr": "केवळ केंद्रीय स्तरावर जागा ठेवण्यात आल्या", "en": "Seats were restricted only to the central level" },
+        { "mr": "दलित वर्गाला मताधिकार नाकारण्यात आला", "en": "Voting rights were denied to Dalits" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९३२): पुणे करारानुसार स्वतंत्र मतदारसंघाऐवजी 'संयुक्त मतदारसंघ' (Joint Electorates) मान्य झाले आणि प्रांतांमध्ये दलित राखीव जागांची संख्या ७१ वरून थेट १४८ पर्यंत वाढवण्यात आली.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / एम. लक्ष्मीकांत]",
+        "en": "(1932): The Poona Pact replaced separate electorates with joint electorates, while dramatically increasing the reserved seats for Dalits in provincial legislatures from 71 to 148.\n\n"
+      }
+    },
+    {
+      "id": 9,
+      "question": {
+        "mr": "तिसऱ्या गोलमेज परिषदेचे (Third Round Table Conference) आयोजन लंडनमध्ये कधी झाले होते आणि या परिषदेत काँग्रेसची उपस्थिती कशी होती?",
+        "en": "When was the Third Round Table Conference held in London, and what was the nature of Congress participation?"
+      },
+      "options": [
+        { "mr": "नोव्हेंबर-डिसेंबर १९३२; काँग्रेसने यावरही पूर्ण बहिष्कार टाकला होता", "en": "November-December 1932; The Congress boycotted it completely" },
+        { "mr": "जानेवारी १९३३; गांधीजींनी हजेरी लावली", "en": "January 1933; Gandhi attended it" },
+        { "mr": "मार्च १९३४; सर्व पक्ष उपस्थित होते", "en": "March 1934; All parties were present" },
+        { "mr": "ऑक्टोबर १९३१; मुस्लिम लीगने बहिष्कार टाकला", "en": "October 1931; Muslim League boycotted" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९३२): नोव्हेंबर ते डिसेंबर १९३२ दरम्यान तिसरी गोलमेज परिषद भरली. मवाळ आणि इतर काही नेते उपस्थित होते, परंतु काँग्रेसने यावर पूर्ण बहिष्कार टाकला होता आणि मूकदर्शक म्हणून ब्रिटनने ही परिषद पार पाडली.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1932): The Third Round Table Conference held in late 1932 was thinly attended and completely boycotted by the Indian National Congress.\n\n"
+      }
+    },
+    {
+      "id": 10,
+      "question": {
+        "mr": "ब्रिटिश संसदेने १९३५ चा 'भारत सरकार कायदा' (Government of India Act 1935) मंजूर केल्यावर त्यातील मुख्य तरतूद कोणती होती?",
+        "en": "What was the prominent federal structural feature introduced by the Government of India Act 1935?"
+      },
+      "options": [
+        { "mr": "अखिल भारतीय संघराज्य (All-India Federation) आणि प्रांतीय स्वायत्तता (Provincial Autonomy)", "en": "An All-India Federation and Provincial Autonomy" },
+        { "mr": "केंद्रात पूर्ण जबाबदार शासन", "en": "Full responsible government at the Centre" },
+        { "mr": "भारताला तात्काळ स्वातंत्र्य देणे", "en": "Immediate independence for India" },
+        { "mr": "प्रांतीय स्वायत्तता रद्द करणे", "en": "Abolition of provincial autonomy" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९३५): १९३५ च्या कायद्याने ब्रिटिश भारत आणि संस्थाने मिळून एक 'अखिल भारतीय संघराज्य' स्थापन करण्याची तरतूद केली (जी संस्थानिकांच्या अटींमुळे अमलात आली नाही) आणि प्रांतांमध्ये 'प्रांतीय स्वायत्तता' लागू केली.\n\n[संदर्भ: एम. लक्ष्मीकांत / स्पेक्ट्रम]",
+        "en": "(1935): The 1935 Act proposed an All-India Federation comprising British provinces and princely states, and granted 'Provincial Autonomy' by abolishing diarchy in the provinces.\n\n"
+      }
+    },
+    {
+      "id": 11,
+      "question": {
+        "mr": "१९३७ च्या प्रांतीय निवडणुकांमध्ये (Provincial Elections) काँग्रेसने किती प्रांतांमध्ये स्पष्ट बहुमत किंवा सर्वात मोठा पक्ष म्हणून सरकारे स्थापन केली?",
+        "en": "In how many provinces did the Congress form ministries following the 1937 provincial elections?"
+      },
+      "options": [
+        { "mr": "७ ते ८ प्रांतांमध्ये (Congress formed ministries in 7 to 8 provinces)", "en": "7 to 8 provinces" },
+        { "mr": "फक्त २ प्रांतांमध्ये", "en": "Only 2 provinces" },
+        { "mr": "सर्व ११ प्रांतांमध्ये", "en": "All 11 provinces" },
+        { "mr": "कोणत्याही प्रांतातर नाही", "en": "None of the provinces" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९३७): १९३७ च्या प्रांतीय निवडणुकीत काँग्रेसने अभूतपूर्व यश मिळवले. ११ पैकी तब्बल ७ ते ८ प्रांतांमध्ये काँग्रेसने स्वतःची किंवा संमिश्र सरकारे स्थापन केली (मद्रास, संयुक्त प्रांत, मध्य प्रांत, बॉम्बे, बिहार इ.).\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / डॉ. स. शि. गाठाळ]",
+        "en": "(1937): The Congress swept the 1937 provincial elections, forming ministries in 7 out of 11 provinces (later expanding to 8), demonstrating massive popular electoral mandate.\n\n"
+      }
+    },
+    {
+      "id": 12,
+      "question": {
+        "mr": "ऑक्टोबर १९३९ मध्ये काँग्रेसच्या प्रांतीय मंत्रिमंडळांनी राजीनामा का दिला होता?",
+        "en": "Why did the Congress provincial ministries resign en masse in October 1939?"
+      },
+      "options": [
+        { "mr": "ब्रिटिश सरकारने भारतीयांच्या संमतीशिवाय भारताला 'दुसऱ्या महायुद्धात' सहभागी घोषित केल्यामुळे", "en": "Because the British dragged India into World War II without consulting Indian leaders" },
+        { "mr": "प्रांतीय स्वायत्तता नाकारल्यामुळे", "en": "Due to denial of provincial autonomy" },
+        { "mr": "मुस्लिम लीगच्या विरोधामुळे", "en": "Due to Muslim League pressure" },
+        { "mr": "शेतकऱ्यांच्या कर वाढीमुळे", "en": "Due to peasant tax hikes" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९३९): सप्टेंबर १९३९ मध्ये दुसरे महायुद्ध सुरू झाल्यावर ब्रिटीश वाईसरॉय लिनलिथगो यांनी भारताला विचारणा न करता युद्धात सामील केले. या एकतर्फी निर्णयाच्या निषेधार्थ ऑक्टोबर-नोव्हेंबर १९३९ मध्ये काँग्रेसच्या सर्व प्रांतीय मंत्र्यांनी राजीनामे दिले.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1939): The British Viceroy unilaterally dragged India into WWII without Indian consent, prompting the Congress ministries to resign in protest in October 1939.\n\n"
+      }
+    },
+    {
+      "id": 13,
+      "question": {
+        "mr": "खालील विधाने विचारात घ्या:\nअ) १९३९ च्या त्रिपुरी काँग्रेस अधिवेशनात सुभाषचंद्र बोस यांनी गांधीजींचे उमेदवार पट्टाभी सीतारामय्या यांचा पराभव करून अध्यक्षपद जिंकले होते.\nब) कार्यकारिणीच्या रचनेवरून झालेल्या मतभेदांमुळे सुभाषबाबूंनी नंतर राजीनामा दिला आणि 'फॉरवर्ड ब्लॉक' स्थापन केला.\nवरीलपैकी कोणते/ती विधान/ने बरोबर आहेत?",
+        "en": "Consider the following statements:\nA) Subhas Chandra Bose defeated Gandhi's candidate Pattabhi Sitaramayya to win the Congress presidency at the 1939 Tripuri session.\nB) Ideological and executive differences subsequently led him to resign and found the Forward Bloc.\nWhich of the above statement(s) is/are correct?"
+      },
+      "options": [
+        { "mr": "फक्त अ", "en": "Only A" },
+        { "mr": "फक्त ब", "en": "Only B" },
+        { "mr": "अ आणि ब दोन्ही", "en": "Both A and B" },
+        { "mr": "दोन्ही नाहीत", "en": "Neither A nor B" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९३९): दोन्ही विधाने अगदी बरोबर आहेत. त्रिपुरी अधिवेशनात सुभाषबाबूंनी रोमहर्षक विजयाची नोंद केली, पण गांधीजींसोबतच्या मतभेदांमुळे त्यांनी राजीनामा देऊन फॉरवर्ड ब्लॉकची स्थापना केली.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / अनिल कटारे]",
+        "en": "(1939): Both statements are correct. Subhas Chandra Bose won the 1939 Tripuri presidential election against Gandhi's candidate, but soon resigned due to executive deadlocks and formed the Forward Bloc.\n\n"
+      }
+    },
+    {
+      "id": 14,
+      "question": {
+        "mr": "महात्मा गांधीजींनी ऑक्टोबर १९४० मध्ये सुरू केलेल्या 'वैयक्तिक सत्याग्रहाचे' (Individual Satyagraha) मुख्य उद्दिष्ट किंवा धोरण काय होते?",
+        "en": "What was the core objective of the 'Individual Satyagraha' launched by Mahatma Gandhi in October 1940?"
+      },
+      "options": [
+        { "mr": "ब्रिटिश युद्धाच्या धोरणाला अहिंसक मार्गाने विरोध दर्शवणे आणि अभिव्यक्ती स्वातंत्र्याचा अधिकार सिद्ध करणे", "en": "To symbolically express non-violent opposition to Britain's war efforts and assert freedom of speech" },
+        { "mr": "तात्काळ संपूर्ण भारतभर हिंसक क्रांती घडवणे", "en": "To instigate an immediate violent nationwide revolution" },
+        { "mr": "ब्रिटीश सैन्यात जबरदस्तीने भरती करणे", "en": "To forcefully recruit Indians into the British army" },
+        { "mr": "प्रांतीय निवडणुका जिंकणे", "en": "To win provincial elections" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९४०): वैयक्तिक सत्याग्रहाचा उद्देश ब्रिटिशांच्या युद्धात सहभागाविरुद्ध नैतिक विरोध नोंदवणे आणि भारतीय जनतेला युद्धविरोधी भाषण करण्याचे स्वातंत्र्य (Freedom of Speech) आहे हे सिद्ध करणे हा होता.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1940): Individual Satyagraha was designed to register a moral protest against Britain dragging India into war while asserting the fundamental right of free speech against wartime ordinances.\n\n"
+      }
+    },
+    {
+      "id": 15,
+      "question": {
+        "mr": "मार्च १९४२ मध्ये आलेल्या 'क्रिप्स मिशन' (Cripps Mission) शी संबंधित मुख्य प्रस्ताव कोणता होता?",
+        "en": "What was the principal proposal offered by the Cripps Mission in March 1942?"
+      },
+      "options": [
+        { "mr": "युद्धानंतर भारताला डोमिनियन स्टेटस व फाळणीसाठी प्रांतांना वेगळे होण्याचा अधिकार", "en": "Post-war Dominion Status and the right of provinces to secede" },
+        { "mr": "तत्काळ भारताला पूर्ण स्वातंत्र्य आणि अखंडता", "en": "Immediate complete independence and unity" },
+        { "mr": "भारताची तात्काळ फाळणी करून पाकिस्तान निर्मिती", "en": "Immediate partition of India to create Pakistan" },
+        { "mr": "भारताचे लष्कर ब्रिटनकडे कायमस्वरूपी ठेवणे", "en": "Permanent transfer of Indian army to Britain" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९४२): क्रिप्स मिशनने युद्ध संपल्यावर भारताला 'डोमिनियन स्टेटस' देण्याचे आणि ज्या प्रांतांना भारतीय संघराज्यात राहायचे नाही त्यांना स्वतंत्र राहण्याचा किंवा वेगळे होण्याचा अधिकार देण्याचे सूचवले होते.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1942): The Cripps Mission proposed post-war Dominion Status with an explicit provision allowing individual provinces to opt out of the proposed Indian Union, paving the way for potential partition.\n\n"
+      }
+    },
+    {
+      "id": 16,
+      "question": {
+        "mr": "खालील विधाने विचारात घ्या:\nअ) भारत छोडो आंदोलनाची (८ ऑगस्ट १९४२) घोषणा मुंबईच्या गोवालिया टँक मैदानावर झाली.\nब) या आंदोलनाला मवाळ आणि जहाल असा कोणताही भेद न राहता पहिल्या दिवसापासूनच देशव्यापी उत्स्फूर्त जनआंदोलनाचे स्वरूप प्राप्त झाले.\nवरीलपैकी कोणते/ती विधान/ने बरोबर आहेत?",
+        "en": "Consider the following statements:\nA) The Quit India resolution was adopted at Gowalia Tank in Bombay on August 8, 1942.\nB) The movement immediately assumed the character of a spontaneous, leaderless mass upsurge across the country following swift British arrests.\nWhich of the above statement(s) is/are correct?"
+      },
+      "options": [
+        { "mr": "फक्त अ", "en": "Only A" },
+        { "mr": "फक्त ब", "en": "Only B" },
+        { "mr": "अ आणि ब दोन्ही", "en": "Both A and B" },
+        { "mr": "दोन्ही नाहीत", "en": "Neither A nor B" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९४२): दोन्ही विधाने अगदी बरोबर आहेत. ९ ऑगस्टच्या पहाटेच सर्व प्रमुख नेत्यांना अटक केल्यामुळे हे आंदोलन नेत्यांशिवाय (Leaderless mass movement) उत्स्फूर्तपणे देशवासीयांनी चालवले.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / डॉ. स. शि. गाठाळ]",
+        "en": "(1942): Both statements are correct. With top leaders arrested overnight on August 9, Quit India became a remarkably spontaneous, leaderless mass rebellion driven by the people.\n\n"
+      }
+    },
+    {
+      "id": 17,
+      "question": {
+        "mr": "भारत छोडो आंदोलनादरम्यान (१९४२) भूमिगत राहून काँग्रेस रेडिओ (Congress Radio) वरून नियमित राष्ट्रवादाचा प्रसार कोणी केला होता?",
+        "en": "Who bravely operated the underground 'Congress Radio' broadcasting nationalist news during the 1942 Quit India movement?"
+      },
+      "options": [
+        { "mr": "उषा मेहता (Usha Mehta)", "en": "Usha Mehta" },
+        { "mr": "अरुणा असफ अली", "en": "Aruna Asaf Ali" },
+        { "mr": "सुचेतना कृपलानी", "en": "Sucheta Kripalani" },
+        { "mr": "सरोजिनी नायडू", "en": "Sarojini Naidu" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९४२): भारत छोडो आंदोलनात बॉम्बे येथे उषा मेहता यांनी भूमिगत राहून 'काँग्रेस रेडिओ' सुरू केला आणि गोपनीय बातम्या व गांधीजींचे संदेश देशभरात प्रसारित केले.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1942): Usha Mehta famously ran the clandestine 'Congress Radio' transmitter from various secret locations in Bombay during the Quit India movement to broadcast nationalist updates.\n\n"
+      }
+    },
+    {
+      "id": 18,
+      "question": {
+        "mr": "आझाद हिंद फौजेच्या (INA) खटल्यांच्या वेळी (लाल किल्ला खटला - १९४५-४६) देशभरात कोणता नारा अत्यंत लोकप्रिय झाला होता?",
+        "en": "Which slogan gained immense popularity across India during the historic INA Red Fort trials (1945-46)?"
+      },
+      "options": [
+        { "mr": "लाल किले के टूटे ताले, सहगल-ढिल्लों-शाहनवाज छोड़ने वाले (Release INA prisoners / Sahgal, Dhillon, Shahnawaz)", "en": "Release INA prisoners / Sahgal, Dhillon, Shahnawaz" },
+        { "mr": "अंग्रेजों भारत छोड़ो", "en": "Quit India" },
+        { "mr": "पूर्ण स्वराज हमारा जन्मसिद्ध अधिकार है", "en": "Purna Swaraj is our birthright" },
+        { "mr": "इन्कलाब जिंदाबाद", "en": "Inquilab Zindabad" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९४५-४६): आझाद हिंद फौजेच्या सैनिकांवर (शाहनवाज खान, प्रेम सहगल, गुरबक्ष सिंग ढिल्लों) लाल किल्ल्यावर खटला भरल्यावर 'लाल किले के टूटे ताले, सहगल-ढिल्लों-शाहनवाज हमारे हवाले' हा नारा देशभरात दुमदुमला.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1945-46): The slogan demanding the unconditional release of INA defendants Shah Nawaz, Sahgal, and Dhillon galvanized pan-Indian patriotic fervor during the Red Fort trials.\n\n"
+      }
+    },
+    {
+      "id": 19,
+      "question": {
+        "mr": "खालील विधाने विचारात घ्या:\nअ) १९४६ मधील 'रॉयल इंडियन नेव्ही बंड' (RIN Mutiny) मध्ये मुंबईतील खलाशांनी कामगार व जनतेच्या पाठिंब्याने ब्रिटिशविरोधी संघर्ष केला.\nब) या बंडानंतर सरदार पटेल व मोहम्मद अली जिना यांच्या मध्यस्थीमुळे खलाशांनी शस्त्रे खाली ठेवली.\nवरीलपैकी कोणते/ती विधान/ने बरोबर आहेत?",
+        "en": "Consider the following statements:\nA) The RIN Mutiny of February 1946 saw naval ratings in Bombay revolt with massive public and working-class support.\nB) Sardar Vallabhbhai Patel and M.A. Jinnah persuaded the ratings to surrender to prevent a bloodbath.\nWhich of the above statement(s) is/are correct?"
+      },
+      "options": [
+        { "mr": "फक्त अ", "en": "Only A" },
+        { "mr": "फक्त ब", "en": "Only B" },
+        { "mr": "अ आणि ब दोन्ही", "en": "Both A and B" },
+        { "mr": "दोन्ही नाहीत", "en": "Neither A nor B" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९४६): विधान 'अ' बरोबर आहे. विधान 'ब' मध्ये पटेल आणि जिना यांनी खलाशांना आत्मसमर्पण करण्याचे आवाहन केले होते (पटेल व जिना यांच्या संयुक्त निवेदनाद्वारे खलाशांनी आत्मसमर्पण केले होते). दोन्ही विधाने अगदी बरोबर आहेत.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / डॉ. स. शि. गाठाळ]",
+        "en": "(1946): Both statements are correct. The naval mutiny shook the British administration, and leaders like Vallabhbhai Patel and Jinnah intervened to advise surrender, ensuring safety.\n\n"
+      }
+    },
+    {
+      "id": 20,
+      "question": {
+        "mr": "कॅबिनेट मिशन (Cabinet Mission - १९४६) च्या घोषणेनुसार भारतासाठी कोणती त्रिस्तरीय (Three-tier) रचना सुचवली गेली होती?",
+        "en": "What three-tier federal grouping structure was proposed by the Cabinet Mission in 1946?"
+      },
+      "options": [
+        { "mr": "केंद्र सरकार, प्रांतांचे गट (Section A, B, C) आणि प्रांत", "en": "Central government, regional groupings of provinces (Sections A, B, C), and individual provinces" },
+        { "mr": "फक्त दोन स्वतंत्र देश (भारत व पाकिस्तान)", "en": "Only two sovereign nations (India and Pakistan)" },
+        { "mr": "राजेशाही व प्रजासत्ताक", "en": "Monarchy and Republic" },
+        { "mr": "प्रत्येक प्रांतासाठी स्वतंत्र राष्ट्र", "en": "Separate nation for each province" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९४६): कॅबिनेट मिशनने पाकिस्तानची मागणी फेटाळली, परंतु भारताला केंद्रात एकसंध ठेवत प्रांतांचे तीन गट (Section A - हिंदू बहुल, Section B & C - मुस्लिम बहुल) अशी त्रिस्तरीय संघराज्य योजना मांडली.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / एम. लक्ष्मीकांत]",
+        "en": "(1946): The Cabinet Mission proposed a three-tier federation comprising the Centre, provincial groupings (Sections A, B, and C), and individual provinces, balancing unity with regional autonomy.\n\n"
+      }
+    },
+    {
+      "id": 21,
+      "question": {
+        "mr": "मुस्लिम लीगने १६ ऑगस्ट १९४६ रोजी पाळलेल्या 'प्रत्यक्ष कृती दिनामुळे' (Direct Action Day) कोणत्या शहरात सर्वात भयानक जातीय दंगली भडकल्या होत्या?",
+        "en": "Which major city witnessed the most catastrophic communal violence following the Muslim League's 'Direct Action Day' on August 16, 1946?"
+      },
+      "options": [
+        { "mr": "कलकत्ता (Calcutta / Great Calcutta Killing)", "en": "Calcutta (Great Calcutta Killing)" },
+        { "mr": "लाहोर", "en": "Lahore" },
+        { "mr": "मुंबई", "en": "Bombay" },
+        { "mr": "दिल्ली", "en": "Delhi" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९४६): १६ ऑगस्ट १९४६ च्या 'डायरेक्ट ॲक्शन डे' मुळे कलकत्ता शहरात भीषण दंगली उसळल्या, ज्या 'द ग्रेट कलकत्ता किलिंग' म्हणून ओळखल्या जातात. यात हजारो लोकांचे प्राण गेले.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1946): Direct Action Day triggered the 'Great Calcutta Killing', a horrific wave of communal violence that engulfed Calcutta in August 1946.\n\n"
+      }
+    },
+    {
+      "id": 22,
+      "question": {
+        "mr": "माऊंटबॅटन योजना (Mountbatten Plan - ३ जून १९४७) नुसार पंजाब आणि बंगालच्या फाळणीबाबत काय ठरले होते?",
+        "en": "What did the Mountbatten Plan of June 3, 1947, stipulate regarding the provinces of Punjab and Bengal?"
+      },
+      "options": [
+        { "mr": "तेथील प्रांतिक कायदेमंडळांच्या सदस्यांची बैठक होऊन धार्मिक आधारावर फाळणीबाबत निर्णय घेतला जाईल", "en": "Provincial assemblies would meet to vote on the partition of Punjab and Bengal on religious lines" },
+        { "mr": "त्यांची फाळणी होणार नाही", "en": "They would not be partitioned" },
+        { "mr": "त्यांना ब्रिटनमध्ये समाविष्ट केले जाईल", "en": "They would be integrated into Britain" },
+        { "mr": "त्यांना स्वतंत्र राष्ट्रे घोषित केले जाईल", "en": "They would be declared independent nations" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९४७): माऊंटबॅटन योजनेत पंजाब व बंगालच्या प्रांतिक कायदेमंडळांना फाळणीबाबत मतदान करण्याचे अधिकार दिले गेले, ज्यामुळे पश्चिम पंजाब व पूर्व बंगाल पाकिस्तानला गेले तर पूर्व पंजाब व पश्चिम बंगाल भारतात राहिले.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / डॉ. स. शि. गाठाळ]",
+        "en": "(1947): The Mountbatten Plan provided for the partitioning of Punjab and Bengal based on votes by members of their respective provincial legislative assemblies.\n\n"
+      }
+    },
+    {
+      "id": 23,
+      "question": {
+        "mr": "खालील विधाने विचारात घ्या:\nअ) भारतीय स्वातंत्र्य कायदा १९४७ अन्वये व्हाइसरॉयचे पद समाप्त करून दोन्ही देशांसाठी 'गव्हर्नर जनरल' पद निर्माण केले गेले.\nब) स्वतंत्र भारताचे पहिले गव्हर्नर जनरल म्हणून लॉर्ड माऊंटबॅटन यांनी शपथ घेतली.\nवरीलपैकी कोणते/ती विधान/ने बरोबर आहेत?",
+        "en": "Consider the following statements:\nA) The Indian Independence Act 1947 abolished the office of the Viceroy and provided for a Governor-General for each dominion.\nB) Lord Mountbatten was sworn in as the first Governor-General of independent India.\nWhich of the above statement(s) is/are correct?"
+      },
+      "options": [
+        { "mr": "फक्त अ", "en": "Only A" },
+        { "mr": "फक्त ब", "en": "Only B" },
+        { "mr": "अ आणि ब दोन्ही", "en": "Both A and B" },
+        { "mr": "दोन्ही नाहीत", "en": "Neither A nor B" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९४७): दोन्ही विधाने अगदी बरोबर आहेत. कायद्यानुसार व्हाइसरॉय पद रद्द झाले आणि माऊंटबॅटन हे स्वतंत्र भारताचे पहिले गव्हर्नर जनरल झाले, तर पाकिस्तानचे गव्हर्नर जनरल मोहम्मद अली जिना झाले.\n\n[संदर्भ: एम. लक्ष्मीकांत / स्पेक्ट्रम]",
+        "en": "(1947): Both statements are correct. The 1947 Act abolished the Viceroyalty, instituting Governors-General, with Mountbatten serving as independent India's first Governor-General.\n\n"
+      }
+    },
+    {
+      "id": 24,
+      "question": {
+        "mr": "स्वातंत्र्यपूर्व काळातील 'भारतीय राष्ट्रीय चळवळीचा' सर्वात मोठा आणि व्यापक वारसा कोणता मानला जातो?",
+        "en": "What is considered the overarching democratic legacy of the Indian National Movement?"
+      },
+      "options": [
+        { "mr": "विविधतेत एकता टिकवून जगातील सर्वात मोठ्या लोकशाहीची आणि संविधानाची निर्मिती करणे", "en": "Forging unity amidst diversity and establishing the world's largest democratic republic under a sacred Constitution" },
+        { "mr": "भारताला लष्करी हुकूमशाहीकडे नेणे", "en": "Driving India toward military dictatorship" },
+        { "mr": "सर्व प्रादेशिक भाषा नष्ट करणे", "en": "Eradicating all regional languages" },
+        { "mr": "राजेशाही कायम ठेवणे", "en": "Preserving princely autocracy" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९४७): भारतीय राष्ट्रीय चळवळीने जात, धर्म, भाषा या पलीकडे जाऊन भारतीयांना एका सूत्रात बांधले आणि जगासमोर एक आदर्श लोकशाही व संविधान उभे केले.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / एम. लक्ष्मीकांत]",
+        "en": "(1947): The supreme legacy of the national movement was uniting a deeply pluralistic society into a vibrant, constitutionally-governed democratic republic.\n\n"
+      }
+    },
+    {
+      "id": 25,
+      "question": {
+        "mr": "भारतीय राष्ट्रीय चळवळीच्या संदर्भात 'दांडी यात्रा' (१९३०) चे ऐतिहासिक महत्त्व काय सांगता येईल?",
+        "en": "How do historians evaluate the historical significance of the 1930 Dandi March?"
+      },
+      "options": [
+        { "mr": "त्याने आंतरराष्ट्रीय स्तरावर भारताच्या स्वातंत्र्यलढ्याकडे लक्ष वेधले आणि जनमानसात सविनय कायदेभंगाची लाट उसळवली", "en": "It galvanized worldwide attention, broke the psychological fear of colonial law, and ignited mass civil disobedience" },
+        { "mr": "त्याने केवळ मीठाचे कारखाने बंद पाडले", "en": "It merely shut down salt factories" },
+        { "mr": "त्याने ब्रिटिशांचे कर वाढवले", "en": "It increased British taxes" },
+        { "mr": "त्याचा चळवळीवर कोणताही प्रभाव पडला नाही", "en": "It had no impact on the movement" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९३०): दांडी यात्रेने ब्रिटीश कायद्याची भीती मोडून काढली आणि संपूर्ण देशात मिठाचा सत्याग्रह व विदेशी कपड्यांवर बहिष्काराची मोठी राष्ट्रीय लाट उसळवली.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1930): The Dandi March shattered the psychological aura of invincibility surrounding colonial law, transforming salt into a powerful symbol of mass anti-imperialist resistance.\n\n"
+      }
+    }
+  ]
+}

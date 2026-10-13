@@ -1,0 +1,464 @@
+{
+  "testId": "p-hist-10-t2",
+  "title": {
+    "mr": "आर्थिक व सामाजिक विकास (दारिद्र्य, बेरोजगारी व मानवी विकास) — सराव 2",
+    "en": "Economic and Social Development (Poverty, Unemployment & Human Development) — Practice Test 2"
+  },
+  "durationMinutes": 20,
+  "marksPerQuestion": 1,
+  "negativeMarking": 0.25,
+  "totalMarks": 25,
+  "difficulty": "मध्यम ते काठिण्य",
+  "questions": [
+    {
+      "id": 1,
+      "question": {
+        "mr": "भारतात दारिद्र्य मोजमापासाठी (Poverty Estimation) यापूर्वी नेमलेल्या कोणत्या समितीने ग्रामीण भागात प्रतिव्यक्ती प्रतिदिन २४०० उष्मांक (Calories) आणि शहरी भागात २१०० उष्मांक निकष सुचवला होता?",
+        "en": "Which early expert committee on poverty estimation in India recommended a calorie intake norm of 2400 kcal for rural and 2100 kcal for urban areas?"
+      },
+      "options": [
+        { "mr": "वाय. के. अलघ समिती (Y.K. Alag Committee - 1979)", "en": "Y.K. Alag Committee (1979)" },
+        { "mr": "सुरेश तेंडुलकर समिती", "en": "Suresh Tendulkar Committee" },
+        { "mr": "सी. रंगराजन समिती", "en": "C. Rangarajan Committee" },
+        { "mr": "लकडावाला समिती", "en": "Lakdawala Committee" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९७९): वाय. के. अलघ समितीने (१९७९) सर्वप्रथम उष्मांक (Calories) निकषाच्या आधारे दारिद्र्य रेषा (Poverty Line) मोजण्याची पद्धत भारत सरकारला सुचवली, ज्यानुसार ग्रामीण भागात २४०० आणि शहरी भागात २१०० कॅलरी ठरवली गेली.\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग]",
+        "en": "(1979): The Y.K. Alagh Committee was the first to operationalize poverty estimation in India based on nutritional calorie intake criteria (2400 kcal rural, 2100 kcal urban).\n\n"
+      }
+    },
+    {
+      "id": 2,
+      "question": {
+        "mr": "सुरेश तेंडुलकर समितीने (Suresh Tendulkar Committee - 2009) दारिद्र्य मोजमापाबाबत कोणती महत्त्वाची शिफारस केली होती?",
+        "en": "What major methodological shift did the Suresh Tendulkar Committee (2009) introduce in poverty estimation?"
+      },
+      "options": [
+        { "mr": "केवळ अन्न कॅलरीवर भर न देता आरोग्य, शिक्षण आणि अन्न यावरील एकत्रित 'मासिक प्रतिव्यक्ती खर्च' (Monthly Per Capita Consumption Expenditure - MPCE) ग्राह्य धरला", "en": "Shift from calorie-only intake to a comprehensive Monthly Per Capita Consumption Expenditure (MPCE) including health, education, and food" },
+        { "mr": "केवळ शहरी दारिद्र्य पूर्णपणे रद्द करणे", "en": "Abolishing urban poverty measurement entirely" },
+        { "mr": "दारिद्र्य मोजणे अनधिकृत घोषित करणे", "en": "Declaring poverty estimation unconstitutional" },
+        { "mr": "केवळ परदेशी चलनावर दारिद्र्य ठरवणे", "en": "Fixing poverty based strictly on foreign exchange reserves" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(२००९): तेंडुलकर समितीने केवळ कॅलरी निकष अपूर्ण असल्याचे सांगत शिक्षण, आरोग्य आणि अन्न या तिन्ही घटकांवरील एकत्रित मासिक प्रतिव्यक्ती खर्च (MPCE) हा दारिद्र्य मोजण्याचा नवीन निकष सुचवला.\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग]",
+        "en": "(2009): The Tendulkar Committee moved away from calorie-centric poverty lines to a broader MPCE basket incorporating spending on education, health, and food items.\n\n"
+      }
+    },
+    {
+      "id": 3,
+      "question": {
+        "mr": "डॉ. सी. रंगराजन समितीने (C. Rangarajan Committee - 2012) तेंडुलकर समितीच्या अहवालाचा पुनर्विचार करताना ग्रामीण व शहरी भागासाठी दरडोई दैनिक खर्चाची किती सीमा सुचवली होती?",
+        "en": "What per capita daily consumption expenditure threshold for poverty was recommended by the C. Rangarajan Committee (2012) for rural and urban areas respectively?"
+      },
+      "options": [
+        { "mr": "ग्रामीण भागासाठी ₹३२ प्रतिदिन आणि शहरी भागासाठी ₹४७ प्रतिदिन", "en": "Rs. 32 per day for rural and Rs. 47 per day for urban areas" },
+        { "mr": "ग्रामीण ₹१५ आणि शहरी ₹२५", "en": "Rural Rs. 15 and Urban Rs. 25" },
+        { "mr": "ग्रामीण ₹१०० आणि शहरी ₹१५०", "en": "Rural Rs. 100 and Urban Rs. 150" },
+        { "mr": "ग्रामीण ₹५० आणि शहरी ₹१००", "en": "Rural Rs. 50 and Urban Rs. 100" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(२०१२): रंगराजन समितीने तेंडुलकर समितीच्या निकषांवर टीका करत दारिद्र्य रेषेची मर्यादा वाढवली. त्यांच्या मते जे ग्रामीण भागात प्रतिदिन ₹३२ पेक्षा आणि शहरी भागात प्रतिदिन ₹४७ पेक्षा कमी खर्च करतात, ते गरीब मानले जावेत.\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग]",
+        "en": "(2012): The Rangarajan Committee raised the poverty threshold, defining individuals spending below Rs. 32/day in rural areas and Rs. 47/day in urban areas as poor.\n\n"
+      }
+    },
+    {
+      "id": 4,
+      "question": {
+        "mr": "भारतीय अर्थव्यवस्थेत 'बेरोजगारीचे' (Unemployment) वर्गीकरण करताना 'हंगामी बेरोजगारी' (Seasonal Unemployment) म्हणजे काय?",
+        "en": "What is meant by 'Seasonal Unemployment' in the context of the Indian economy and labor market?"
+      },
+      "options": [
+        { "mr": "वर्षातील विशिष्ट हंगामात किंवा शेतीच्या मजुरीच्या मोसमाव्यतिरिक्त इतर वेळी काम न मिळणे (उदा. कृषी क्षेत्रातील बेरोजगारी)", "en": "Unemployment that occurs during certain seasons of the year, highly prevalent in agriculture" },
+        { "mr": "तंत्रज्ञानाच्या बदलामुळे काम सुटणे", "en": "Job loss due to technological changes" },
+        { "mr": "स्वेच्छेने काम न करणे", "en": "Voluntary unemployment due to unwillingness to work" },
+        { "mr": "शिक्षण संपल्यावर तात्काळ नोकरी न मिळणे", "en": "Delayed placement after graduation" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(अर्थशास्त्र): हंगामी बेरोजगारी प्रामुख्याने कृषी क्षेत्रात आढळते, जिथे पिकांच्या पेरणी किंवा कापणीच्या हंगामातच काम मिळते, आणि वर्षभरातील बाकी महिने शेतकऱ्यांना किंवा मजुरांना काम नसते.\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग]",
+        "en": "Seasonal unemployment happens when people are unemployed at certain times of the year when demand for labor is low, most commonly seen in agriculture.\n\n"
+      }
+    },
+    {
+      "id": 5,
+      "question": {
+        "mr": "भारतीय अर्थव्यवस्थेतील शेती क्षेत्रात आढळणारी 'प्रच्छन्न बेरोजगारी' (Disguised Unemployment) किंवा लपलेली बेरोजगारी म्हणजे काय?",
+        "en": "What is 'Disguised Unemployment', which is widely prevalent in India's agricultural sector?"
+      },
+      "options": [
+        { "mr": "कामावर जास्त लोक दिसतात, परंतु प्रत्यक्षात त्यांची सीमांत उत्पादकता (Marginal Productivity) शून्य असते", "en": "A situation where more people are employed in a job than are actually needed, making marginal productivity zero" },
+        { "mr": "बेरोजगार लोकांची नोंदणी न करणे", "en": "Failure to register unemployed citizens" },
+        { "mr": "फक्त शहरांमध्ये आढळणारी बेरोजगारी", "en": "Unemployment restricted to urban areas" },
+        { "mr": "कारखान्यांमधील संपावरील बेरोजगारी", "en": "Unemployment due to factory strikes" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(अर्थशास्त्र): प्रच्छन्न बेरोजगारीत एका शेतात किंवा कामावर गरज नसतानाही अनेक कुटुंबीय काम करत असतात. जर त्यातील काही लोकांना कामावरून काढून टाकले तरी एकूण उत्पादन कमी होत नाही, कारण त्यांची सीमांत उत्पादकता शून्य असते.\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग]",
+        "en": "Disguised unemployment occurs when extra workers do not add to total output; their removal would leave total production unchanged, meaning their marginal productivity is zero.\n\n"
+      }
+    },
+    {
+      "id": 6,
+      "question": {
+        "mr": "संयुक्त राष्ट्र विकास कार्यक्रमाद्वारे (UNDP) जाहीर केला जाणारा प्रसिद्ध 'मानवी विकास निर्देशांक' (Human Development Index - HDI) मोजण्यासाठी कोणते तीन प्रमुख निर्देशक वापरले जातात?",
+        "en": "What are the three core dimensions used by the UNDP to calculate the Human Development Index (HDI)?"
+      },
+      "options": [
+        { "mr": "दीर्घ व निरोगी आयुष्य (आरोग्य), ज्ञान (शिक्षण) आणि राहणीमानाचा दर्जा (दरडोई उत्पन्न)", "en": "A long and healthy life (health), access to knowledge (education), and a decent standard of living (income)" },
+        { "mr": "औद्योगिक उत्पादन, जीडीपी वाढ आणि शेअर बाजार", "en": "Industrial output, GDP growth, and stock market" },
+        { "mr": "शस्त्रसाठा, परकीय गुंतवणूक आणि निर्यात", "en": "Armaments, FDI, and exports" },
+        { "mr": "लोकसंख्या घनता, रस्ते आणि वीज", "en": "Population density, roads, and electricity" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(मानवी विकास): UNDP च्या HDI मध्ये तीन प्रमुख निर्देशक पाहिले जातात: १) अपेक्षित आयुर्मान (Life Expectancy), २) शालेय शिक्षणाचे वर्ष व सरासरी वर्षे (Education), आणि ३) दरडोई संपत्ती (GNI per capita - Standard of living).\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग]",
+        "en": "The HDI measures human development across three basic dimensions: a long and healthy life, knowledge, and a decent standard of living.\n\n"
+      }
+    },
+    {
+      "id": 7,
+      "question": {
+        "mr": "बहुआयामी दारिद्र्य निर्देशांक (Multidimensional Poverty Index - MPI) मोजताना प्रामुख्याने कोणत्या तीन स्तंभांचा (Dimensions) विचार केला जातो?",
+        "en": "What are the three primary dimensions evaluated in the global and national Multidimensional Poverty Index (MPI)?"
+      },
+      "options": [
+        { "mr": "आरोग्य (Health), शिक्षण (Education) आणि राहणीमानाचा स्तर (Standard of Living)", "en": "Health, Education, and Standard of Living" },
+        { "mr": "केवळ उत्पन्न, महागाई आणि कर", "en": "Income, inflation, and taxes only" },
+        { "mr": "शेती, उद्योग आणि सेवा क्षेत्र", "en": "Agriculture, industry, and services" },
+        { "mr": "बँक खाती, पक्के रस्ते आणि मोबाईल", "en": "Bank accounts, paved roads, and mobiles" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(MPI): बहुआयामी दारिद्र्य मोजताना केवळ उत्पन्नावर भर न देता 'आरोग्य, शिक्षण आणि राहणीमान' या तीन स्तंभांतर्गत १० निर्देशक (Indicators) तपासले जातात.\n\n[संदर्भ: NITI Aayog MPI Report / रमेश सिंग]",
+        "en": "The MPI assesses poverty across three dimensions—health, education, and standard of living—using ten specific indicators.\n\n"
+      }
+    },
+    {
+      "id": 8,
+      "question": {
+        "mr": "ग्रामीण भागातील गरिबांना वर्षभरात किमान 'शंभर दिवसांच्या हमीचा रोजगार' उपलब्ध करून देणारी महत्त्वाची योजना कोणती?",
+        "en": "Which landmark Indian social welfare legislation guarantees at least 100 days of wage employment in a financial year to rural households?"
+      },
+      "options": [
+        { "mr": "महात्मा गांधी राष्ट्रीय ग्रामीण रोजगार हमी कायदा (MGNREGA - २००५)", "en": "Mahatma Gandhi National Rural Employment Guarantee Act (MGNREGA)" },
+        { "mr": "प्रधानमंत्री आवास योजना", "en": "Pradhan Mantri Awas Yojana" },
+        { "mr": "दीनदयाल उपाध्याय ग्रामीण कौशल्य योजना", "en": "Deen Dayal Upadhyaya Grameen Kaushalya Yojana" },
+        { "mr": "राष्ट्रीय अन्न सुरक्षा कायदा", "en": "National Food Security Act" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(२००५): मनरेगा (MGNREGA) कायदा २००५ मध्ये संमत झाला (२ फेब्रुवारी २००६ पासून लागू). यानुसार ग्रामीण भागातील प्रत्येक प्रौढ सदस्याला वर्षातून किमान १०० दिवस रोजगाराची कायदेशीर हमी दिली जाते.\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग]",
+        "en": "(2005): MGNREGA provides a legal guarantee for at least 100 days of manual wage employment in every financial year to every rural household whose adult members volunteer to do unskilled manual work.\n\n"
+      }
+    },
+    {
+      "id": 9,
+      "question": {
+        "mr": "भारतात दारिद्र्य निर्मूलन आणि ग्रामीण विकासासाठी २०११ मध्ये सुरू केलेली 'राष्ट्रीय ग्रामीण आजीविका मिशन' (NRLM) चे नवीन नाव काय आहे?",
+        "en": "What is the rechristened name of the National Rural Livelihoods Mission (NRLM) launched to promote self-employment and women's self-help groups?"
+      },
+      "options": [
+        { "mr": "दीनदयाल अंत्योदय योजना - राष्ट्रीय ग्रामीण आजीविका मिशन (DAY-NRLM)", "en": "Deendayal Antyodaya Yojana - National Rural Livelihoods Mission (DAY-NRLM)" },
+        { "mr": "प्रधानमंत्री मुद्रा योजना", "en": "Pradhan Mantri Mudra Yojana" },
+        { "mr": "स्टँड अप इंडिया", "en": "Stand Up India" },
+        { "mr": "प्रधानमंत्री जन धन योजना", "en": "Pradhan Mantri Jan Dhan Yojana" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(आजीविका योजना): ग्रामीण भागातील महिलांचे स्वयंसहाय्यता गट (SHGs) तयार करून त्यांना आर्थिकदृष्ट्या सक्षम करण्यासाठी सुरू केलेल्या NRLM चे नाव बदलून 'DAY-NRLM' (दीनदयाल अंत्योदय योजना) असे ठेवले गेले.\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग]",
+        "en": "NRLM was restructured and renamed as DAY-NRLM (Deendayal Antyodaya Yojana-National Rural Livelihoods Mission) to mobilize rural poor women into self-help groups (SHGs).\n\n"
+      }
+    },
+    {
+      "id": 10,
+      "question": {
+        "mr": "ग्रामीण भागातील युवकांना रोजगाराभिमुख अल्पकालीन प्रशिक्षण देऊन त्यांना स्वावलंबी बनवणारी कोणती योजना भारत सरकार राबवत आहे?",
+        "en": "Which skill development scheme specifically targets rural youth to provide placement-linked skill training?"
+      },
+      "options": [
+        { "mr": "दीनदयाल उपाध्याय ग्रामीण कौशल्य योजना (DDU-GKY)", "en": "Deen Dayal Upadhyaya Grameen Kaushalya Yojana (DDU-GKY)" },
+        { "mr": "प्रधानमंत्री कौशल विकास योजना (PMKVY)", "en": "Pradhan Mantri Kaushal Vikas Yojana (PMKVY)" },
+        { "mr": "स्टार्ट अप इंडिया", "en": "Startup India" },
+        { "mr": "इन्स्पायर योजना", "en": "INSPIRE Scheme" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(कौशल्य विकास): ग्रामीण गरिब कुटुंबातील १५ ते ३५ वयोगटातील युवकांना कौशल्य प्रशिक्षण देऊन रोजगाराच्या संधी उपलब्ध करून देण्यासाठी 'दीनदयाल उपाध्याय ग्रामीण कौशल्य योजना' (DDU-GKY) राबवली जाते.\n\n[संदर्भ: ग्रामीण विकास - किरण दाते / रमेश सिंग]",
+        "en": "DDU-GKY is part of the National Rural Livelihoods Mission tasked with skilling rural youth with an emphasis on sustainable employment.\n\n"
+      }
+    },
+    {
+      "id": 11,
+      "question": {
+        "mr": "देशातील असंघटित क्षेत्रातील कामगारांना व वृद्धांना पेन्शनची हमी देणारी 'अटल पेन्शन योजना' (APY) कोणत्या वर्षापासून सुरू झाली?",
+        "en": "From which year was the 'Atal Pension Yojana' (APY) launched to provide social security and pensions to workers in the unorganized sector?"
+      },
+      "options": [
+        { "mr": "२०१५ (कोलकत्ता / मे २०१५)", "en": "2015 (May 2015)" },
+        { "mr": "२०१४", "en": "2014" },
+        { "mr": "२०१६", "en": "2016" },
+        { "mr": "२०१८", "en": "2018" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(२०१५): असंघटित क्षेत्रातील कामगारांना भविष्यात आर्थिक सुरक्षा मिळावी म्हणून मे २०१५ मध्ये 'अटल पेन्शन योजना' (APY) सुरू केली गेली, ज्यामध्ये वयाच्या ६० वर्षानंतर ₹१,००० ते ₹५,००० मासिक पेन्शनची तरतूद आहे.\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग]",
+        "en": "(2015): Launched in May 2015, the Atal Pension Yojana focuses on unorganized sector workers, guaranteeing a minimum monthly pension ranging from Rs. 1,000 to Rs. 5,000 after age 60.\n\n"
+      }
+    },
+    {
+      "id": 12,
+      "question": {
+        "mr": "भारतातील प्रत्येक नागरिकाला औपचारिक बँकेत खाते उघडून वित्तीय प्रणालीत आणण्यासाठी ऑगस्ट २०१४ मध्ये कोणती जगातील सर्वांत मोठी वित्तीय समावेशन मोहीम सुरू झाली?",
+        "en": "Which world-leading financial inclusion campaign was launched in August 2014 to ensure universal access to banking facilities in India?"
+      },
+      "options": [
+        { "mr": "प्रधानमंत्री जन धन योजना (PMJDY)", "en": "Pradhan Mantri Jan Dhan Yojana (PMJDY)" },
+        { "mr": "प्रधानमंत्री मुद्रा योजना", "en": "Pradhan Mantri Mudra Yojana" },
+        { "mr": "स्टँड अप इंडिया", "en": "Stand Up India" },
+        { "mr": "प्रधानमंत्री जीवन ज्योति योजना", "en": "Pradhan Mantri Jeevan Jyoti Bima Yojana" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(२०१४): ऑगस्ट २०१४ मध्ये 'प्रधानमंत्री जन धन योजना' (PMJDY) सुरू केली गेली. यादरुपये शून्य शिल्लक (Zero Balance) वर बँक खाते उघडणे, रुपे डेबिट कार्ड आणि विम्याची सुविधा दिली जाते.\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग]",
+        "en": "(2014): PMJDY was launched in August 2014 as a national mission for financial inclusion, opening basic savings bank accounts with zero balance requirements.\n\n"
+      }
+    },
+    {
+      "id": 13,
+      "question": {
+        "mr": "देशातील छोट्या उद्योजकांना व दुकानदारांना विनातारण (Collateral-free) ५० हजार ते १० लाखांपर्यंत कर्ज पुरवठा करणारी 'प्रधानमंत्री मुद्रा योजना' (PMMY) कधी सुरू झाली?",
+        "en": "When was the 'Pradhan Mantri MUDRA Yojana' (PMMY) launched to provide collateral-free institutional credit up to Rs. 10 lakh to micro and small enterprises?"
+      },
+      "options": [
+        { "mr": "८ एप्रिल २०१५ (April 8, 2015)", "en": "April 8, 2015" },
+        { "mr": "१५ ऑगस्ट २०१४", "en": "August 15, 2014" },
+        { "mr": "२५ डिसेंबर २०१६", "en": "December 25, 2016" },
+        { "mr": "१ जानेवारी २०१४", "en": "January 1, 2014" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(२०१५): ८ एप्रिल २०१५ रोजी 'प्रधानमंत्री मुद्रा योजना' सुरू केली गेली. यात शिशु (₹५०,००० पर्यंत), किशोर (₹५०,००० ते ५ लाख) आणि तरुण (₹५ लाख ते १० लाख) अशा तीन श्रेणींमध्ये कर्ज दिले जाते.\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग]",
+        "en": "(2015): Launched on April 8, 2015, MUDRA provides institutional loans under three categories (Shishu, Kishor, and Tarun) up to Rs. 10 lakh to non-farm micro enterprises.\n\n"
+      }
+    },
+    {
+      "id": 14,
+      "question": {
+        "mr": "अनुसूचित जाती, जमाती (SC/ST) आणि महिला उद्योजकांना नवीन उद्योग सुरू करण्यासाठी १० लाख ते १ कोटी रुपयांपर्यंत बँक कर्ज मिळवून देणारी योजना कोणती?",
+        "en": "Which scheme facilitates bank loans between Rs. 10 lakh and Rs. 1 crore to at least one SC/ST or woman borrower per bank branch for greenfield enterprises?"
+      },
+      "options": [
+        { "mr": "स्टँड अप इंडिया योजना (Stand Up India Scheme - २०१६)", "en": "Stand Up India Scheme (2016)" },
+        { "mr": "स्टार्ट अप इंडिया", "en": "Startup India" },
+        { "mr": "प्रधानमंत्री रोजगार प्रोत्साहन योजना", "en": "Pradhan Mantri Rozgar Protsahan Yojana" },
+        { "mr": "मुद्रा योजना", "en": "Mudra Yojana" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(२०१६): २०१६ मध्ये सुरू झालेल्या 'स्टँड अप इंडिया' योजनेचा उद्देश प्रत्येक बँक शाखेने किमान एका SC/ST किंवा महिला उद्योजकाला उत्पादन, सेवा किंवा व्यापार क्षेत्रात नवीन उद्योग सुरू करण्यासाठी ₹१० लाख ते ₹१ कोटी कर्ज पुरवावे हा आहे.\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग]",
+        "en": "(2016): The Stand Up India scheme promotes entrepreneurship among women and SC/ST communities by facilitating bank loans from Rs. 10 lakh to Rs. 1 crore.\n\n"
+      }
+    },
+    {
+      "id": 15,
+      "question": {
+        "mr": "ग्रामीण भागातील महिलांना एलपीजी (LPG) गॅस सिलिंडर मोफत वाटप करून त्यांच्या आरोग्याचे रक्षण करणारी 'प्रधानमंत्री उज्ज्वला योजना' (PMUY) कधी सुरू झाली?",
+        "en": "When was the 'Pradhan Mantri Ujjwala Yojana' (PMUY) launched to provide clean cooking fuel (LPG connections) to women from poor rural households?"
+      },
+      "options": [
+        { "mr": "१ मे २०१६ (बलिया, उत्तर प्रदेश)", "en": "May 1, 2016 (Ballia, UP)" },
+        { "mr": "८ मार्च २०१५", "en": "March 8, 2015" },
+        { "mr": "२ ऑक्टोबर २०१४", "en": "October 2, 2014" },
+        { "mr": "२५ डिसेम्बर २०१७", "en": "December 25, 2017" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(२०१६): दारिद्र्यरेषेखालील कुटुंबातील महिलांना धुरापासून मुक्त करण्यासाठी १ मे २०१६ रोजी बलिया (उत्तर प्रदेश) येथून 'प्रधानमंत्री उज्ज्वला योजना' सुरू केली गेली.\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग]",
+        "en": "(2016): PMUY was launched on May 1, 2016, from Ballia, Uttar Pradesh, distributing deposit-free LPG connections to women from BPL households.\n\n"
+      }
+    },
+    {
+      "id": 16,
+      "question": {
+        "mr": "देशातील प्रत्येक नागरिकाला दर्जेदार व स्वस्त आरोग्य सेवा मिळाव्यात म्हणून कोणती जगातील सर्वांत मोठी आरोग्य विमा योजना सप्टेंबर २०१८ मध्ये सुरू झाली?",
+        "en": "Which world-leading health insurance scheme was launched in September 2018 to provide health cover of Rs. 5 lakh per family per year to vulnerable populations?"
+      },
+      "options": [
+        { "mr": "आयुष्मान भारत - प्रधानमंत्री जन आरोग्य योजना (AB-PMJAY)", "en": "Ayushman Bharat - Pradhan Mantri Jan Arogya Yojana (AB-PMJAY)" },
+        { "mr": "राष्ट्रीय आरोग्य अभियान", "en": "National Health Mission" },
+        { "mr": "प्रधानमंत्री स्वास्थ्य सुरक्षा योजना", "en": "Pradhan Mantri Swasthya Suraksha Yojana" },
+        { "mr": "आयुष भारत योजना", "en": "Ayush Bharat Yojana" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(२०१८): सप्टेंबर २०१८ मध्ये रांची (झारखंड) येथून 'आयुष्मान भारत पीएम-जय' (AB-PMJAY) सुरू झाली. याद्वारे पात्र कुटुंबांना प्रतिवर्ष ₹५ लाखांपर्यंतचा मोफत उपचाराचा आरोग्य विमा मिळतो.\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग]",
+        "en": "(2018): Launched in September 2018, AB-PMJAY provides health assurance coverage of up to Rs. 5 lakh per family per year for secondary and tertiary care hospitalization.\n\n"
+      }
+    },
+    {
+      "id": 17,
+      "question": {
+        "mr": "ग्रामीण भागातील प्रत्येक घरात नळाद्वारे शुद्ध पिण्याच्या पाण्याच्या पुरवठ्यासाठी केंद्र सरकारने कोणती महत्त्वाची मोहीम सुरू केली आहे?",
+        "en": "Which ambitious national mission aims to provide piped potable drinking water (Har Ghar Jal) to every rural household?"
+      },
+      "options": [
+        { "mr": "जल जीवन मिशन (Jal Jeevan Mission - JJM)", "en": "Jal Jeevan Mission (JJM)" },
+        { "mr": "राष्ट्रीय पेयजल योजना", "en": "National Drinking Water Programme" },
+        { "mr": "अमृत मोहीम", "en": "AMRUT Mission" },
+        { "mr": "स्वच्छ भारत अभियान", "en": "Swachh Bharat Mission" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(जल जीवन मिशन): ग्रामीण भागातील प्रत्येक कुटुंबाला २०१४ नंतरच्या काळात नळाद्वारे पुरेसे व विहित गुणवत्तेचे पाणी उपलब्ध करून देण्यासाठी 'जल जीवन मिशन' (Har Ghar Jal) ही मोहीम जोमाने राबवली जात आहे.\n\n[संदर्भ: ग्रामीण विकास व जलशक्ती मंत्रालय रिपोर्ट]",
+        "en": "Jal Jeevan Mission aims to ensure assured drinking water supply (Har Ghar Jal) through piped water connections to all rural households.\n\n"
+      }
+    },
+    {
+      "id": 18,
+      "question": {
+        "mr": "शाश्वत विकासाच्या उद्दिष्टांमध्ये (Sustainable Development Goals - SDGs) संयुक्त राष्ट्रसंघाने किती जागतिक उद्दिष्टे निश्चित केली आहेत, जी २०१६ ते २०३० पर्यंत पूर्ण करायची आहेत?",
+        "en": "How many universal Sustainable Development Goals (SDGs) were adopted by the United Nations to be achieved between 2016 and 2030?"
+      },
+      "options": [
+        { "mr": "१७ शाश्वत विकासाची उद्दिष्टे (17 SDGs)", "en": "17 Sustainable Development Goals" },
+        { "mr": "८ सहस्रक विकास उद्दिष्टे (MDGs)", "en": "8 Millennium Development Goals" },
+        { "mr": "२५ उद्दिष्टे", "en": "25 Goals" },
+        { "mr": "१० उद्दिष्टे", "en": "10 Goals" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(SDGs): सहस्रक विकास उद्दिष्टांनंतर (MDGs) २०१६ मध्ये संयुक्त राष्ट्रसंघाने २०३० पर्यंत पूर्ण करण्यासाठी **१७ शाश्वत विकास उद्दिष्टांची** (SDGs) नवी नियमावली लागू केली, ज्यात गरिबी, भूकबळी, शिक्षण व पर्यावरण सुरक्षा समाविष्ट आहे.\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग / UN Report]",
+        "en": "The UN Sustainable Development Goals (SDGs) comprise 17 interconnected global goals designed to be a blueprint for achieving a better and more sustainable future by 2030.\n\n"
+      }
+    },
+    {
+      "id": 19,
+      "question": {
+        "mr": "नीती आयोगाद्वारे (NITI Aayog) देशातील राज्यांच्या सामाजिक व आर्थिक प्रगतीचे मोजमाप करण्यासाठी दरवर्षी कोणता सर्वसमावेशक अहवाल जाहीर केला जातो?",
+        "en": "Which flagship progress index report is periodically published by NITI Aayog to track states' performance across Sustainable Development Goals?"
+      },
+      "options": [
+        { "mr": "एसडीजी इंडिया इंडेक्स (SDG India Index)", "en": "SDG India Index" },
+        { "mr": "मानवी विकास अहवाल", "en": "Human Development Report" },
+        { "mr": "बहुआयामी दारिद्र्य अहवाल", "en": "Multidimensional Poverty Report" },
+        { "mr": "राज्य व्यवसाय सुलभता इंडेक्स", "en": "State Ease of Doing Business Index" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(नीती आयोग): नीती आयोगाने राज्यांच्या स्पर्धात्मक व शाश्वत विकासाचे मोजमाप करण्यासाठी 'एसडीजी इंडिया इंडेक्स' (SDG India Index) विकसित केला आहे, जो विविध १७ लक्ष्यांवर राज्यांची कामगिरी ट्रॅक करतो.\n\n[संदर्भ: NITI Aayog SDG Index Report]",
+        "en": "NITI Aayog's SDG India Index tracks the progress of all states and union territories on social, economic, and environmental parameters.\n\n"
+      }
+    },
+    {
+      "id": 20,
+      "question": {
+        "mr": "भारतीय अर्थव्यवस्थेत 'माथाडी कामगार' किंवा इतर असघटित क्षेत्रातील कामगारांसाठी शासनाने कोणती महत्त्वाची सामाजिक सुरक्षा योजना सुरू केली आहे, ज्याद्वारे त्यांना वैद्यकीय व इतर लाभ मिळतात?",
+        "en": "Which major social security board or legislation governs Mathadi and unorganized manual laborers in Maharashtra?"
+      },
+      "options": [
+        { "mr": "महाराष्ट्र माथाडी, हमाल व इतर श्रमजीवी कामगार मंडळ (Mathadi Act - 1969)", "en": "Maharashtra Mathadi Act (1969)" },
+        { "mr": "कारखाने कायदा", "en": "Factories Act" },
+        { "mr": "कामगार विमा कायदा (ESI)", "en": "Employees' State Insurance Act" },
+        { "mr": "किमान वेतन कायदा", "en": "Minimum Wages Act" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(महाराष्ट्र शासन): महाराष्ट्रात आण्णासाहेब पाटील आणि इतर नेत्यांच्या संघर्षातून १९६९ मध्ये 'महाराष्ट्र माथाडी, हमाल व इतर श्रमजीवी कामगार अधिनियम' (Mathadi Act) मंजूर झाला, ज्याने हमाल व माथाडी कामगारांना कायदेशीर सुरक्षा व कल्याणकारी निधी मिळवून दिला.\n\n[संदर्भ: महाराष्ट्राचा इतिहास व कायदे - डॉ. गाठाळ]",
+        "en": "(1969): The Maharashtra Mathadi, Hamal and Other Manual Workers Act (1969) was a pioneering legislative step protecting unorganized loading-unloading workers in the state.\n\n"
+      }
+    },
+    {
+      "id": 21,
+      "question": {
+        "mr": "आर्थिक विकासाच्या संदर्भात 'लोकसंख्या लाभांश' (Demographic Dividend) म्हणजे काय?",
+        "en": "What does 'Demographic Dividend' signify in the economic growth trajectory of a nation?"
+      },
+      "options": [
+        { "mr": "देशात कार्यक्षम व तरुण लोकसंख्येचे (Working-age population) प्रमाण अधिक असणे आणि त्यामुळे उत्पादकता व आर्थिक वाढीला मिळणारी गती", "en": "Economic growth potential resulting from shifts in a population's age structure, specifically when the share of the working-age population is larger than the non-working-age share" },
+        { "mr": "देशातील वृद्ध लोकसंख्या वाढणे", "en": "Increase in aging population" },
+        { "mr": "केवळ प्रतिव्यक्ती उत्पन्न स्थिर राहणे", "en": "Stagnation of per capita income" },
+        { "mr": "लोकसंख्या पूर्णपणे स्थिर होणे", "en": "Total stabilization of population growth" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(अर्थशास्त्र): जेव्हा एखाद्या देशात १५ ते ६४ वयोगटातील तरुण व कार्यक्षम लोकसंख्या (Working-age population) सर्वाधिक असते, तेव्हा उत्पादकता वाढून आर्थिक विकासाला जो वेग मिळतो त्याला 'लोकसंख्या लाभांश' (Demographic Dividend) म्हणतात.\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग]",
+        "en": "Demographic dividend is the economic growth potential that can occur when a nation's population has a large share of working-age adults, boosting savings and productivity.\n\n"
+      }
+    },
+    {
+      "id": 22,
+      "question": {
+        "mr": "सामाजिक विकासाच्या क्षेत्रात 'जेंडर इन्क्लुजन' (Gender Budgeting) म्हणजे काय?",
+        "en": "What is the core administrative objective of 'Gender Budgeting' in public finance and fiscal policy?"
+      },
+      "options": [
+        { "mr": "अर्थसंकल्पात महिलांच्या सक्षमीकरणासाठी आणि त्यांच्यावरील अन्यायाचे निर्मूलन करण्यासाठी विशेष तरतुदी व निधीची समीक्षा करणे", "en": "An assessment of the gender-differential impacts of government budgets, ensuring targeted resource allocation for women's empowerment" },
+        { "mr": "केवळ पुरुषांसाठी स्वतंत्र बजेट मांडणे", "en": "Allocating budget exclusively for male welfare" },
+        { "mr": "बजेटमध्ये महिलांवर अतिरिक्त कर लादणे", "en": "Imposing special taxes on women" },
+        { "mr": "लिंगभेद मोजणे बंद करणे", "en": "Ceasing collection of gender data" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(सार्वजनिक वित्त): जेंडर बजेटिंग म्हणजे सरकारी अर्थसंकल्पाची अशी पाहणी, ज्याद्वारे महिलांच्या कल्याणासाठी, सुरक्षिततेसाठी व आर्थिक सहभागासाठी किती निधी राखीव ठेवला आहे आणि त्याचा कसा लाभ होत आहे याचे मूल्यमापन केले जाते.\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग]",
+        "en": "Gender budgeting is a tool for ensuring that gender-responsive policies are translated into budgetary commitments, addressing inequalities faced by women.\n\n"
+      }
+    },
+    {
+      "id": 23,
+      "question": {
+        "mr": "भारतात दारिद्र्य मोजण्यासाठी 'आर्थिक व सामाजिक मोजमाप' करताना खालीलपैकी कोणती संस्था अधिकृतपणे दारिद्र्य अंदाज (Poverty Estimates) जाहीर करत असे?",
+        "en": "Which national institution historically processed NSSO consumer expenditure survey data to officially release poverty estimates in India?"
+      },
+      "options": [
+        { "mr": "नियोजन आयोग (Planning Commission) / आता नीती आयोग", "en": "The Planning Commission (now NITI Aayog)" },
+        { "mr": "भारतीय रिझर्व्ह बँक (RBI)", "en": "Reserve Bank of India" },
+        { "mr": "सेबी (SEBI)", "en": "SEBI" },
+        { "mr": "केंद्रीय लोकसेवा आयोग", "en": "UPSC" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(नियोजन आयोग): एन.एस.एस.ओ. (NSSO) च्या उपभोग खर्चाच्या सर्वेक्षणावरून भारतात दारिद्र्यरेषेखालील लोकांची आकडेवारी अधिकृतपणे 'नियोजन आयोग' (आता नीती आयोग) जाहीर करत असे.\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग]",
+        "en": "Traditionally, the Planning Commission (and subsequently NITI Aayog) calculated and released official poverty estimates using NSSO household consumption expenditure surveys.\n\n"
+      }
+    },
+    {
+      "id": 24,
+      "question": {
+        "mr": "आर्थिक असमानता (Economic Inequality) मोजण्यासाठी अर्थशास्त्रामध्ये कोणते प्रसिद्ध वक्र (Curve) वापरले जाते?",
+        "en": "Which graphical curve is widely used in economics to measure income or wealth inequality within a population?"
+      },
+      "options": [
+        { "mr": "लोरेन्झ वक्र (Lorenz Curve) आणि गिनी गुणोत्तर (Gini Coefficient)", "en": "Lorenz Curve and Gini Coefficient" },
+        { "mr": "फिलिप्स वक्र (Phillips Curve)", "en": "Phillips Curve" },
+        { "mr": "लाफर वक्र (Laffer Curve)", "en": "Laffer Curve" },
+        { "mr": "डिमांड वक्र (Demand Curve)", "en": "Demand Curve" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(अर्थशास्त्र): 'लोरेन्झ वक्र' (Lorenz Curve) हा संपत्ती किंवा उत्पन्नातील असमानता दर्शवतो, तर या वक्रावरून काढलेल्या संख्यात्मक मोजमापाला 'गिनी गुणोत्तर' (Gini Coefficient - ० ते १ दरम्यान) म्हणतात.\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग]",
+        "en": "The Lorenz Curve graphically represents income inequality, while the Gini Coefficient quantifies that inequality ranging from 0 (perfect equality) to 1 (max inequality).\n\n"
+      }
+    },
+    {
+      "id": 25,
+      "question": {
+        "mr": "भारताच्या सामाजिक व आर्थिक विकासाचा विचार करता, 'शाश्वत विकास' (Sustainable Development) साधताना मुख्य आव्हान काय आहे?",
+        "en": "What is considered the central developmental challenge for India in achieving true sustainable development?"
+      },
+      "options": [
+        { "mr": "पर्यावरणाची हानी न करता गरिबी निर्मूलन, जलद आर्थिक वाढ, रोजगार निर्मिती आणि नैसर्गिक संसाधनांचे जतन समप्रमाणात साधणे", "en": "Balancing rapid poverty alleviation and job creation with long-term environmental protection and resource conservation" },
+        { "mr": "औद्योगिक प्रगती पूर्णपणे थांबवणे", "en": "Halting all industrial progress" },
+        { "mr": "केवळ परदेशी कर्जावर अवलंबून राहणे", "en": "Depending entirely on foreign debt" },
+        { "mr": "शहरीकरणाला कायदेशीर बंदी घालणे", "en": "Banning urbanization completely" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(निष्कर्ष): भारतासारख्या विकसनशील देशात दारिद्र्य व बेरोजगारी दूर करत असताना पर्यावरणाचा ऱ्हास होऊ न देणे आणि भविष्यातील पिढ्यांसाठी संसाधने राखून ठेवत समतोल साधणे हेच सर्वात मोठे विकासात्मक आव्हान आहे.\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग / UNEP]",
+        "en": "(Conclusion): India's core sustainable development challenge lies in simultaneously eradicating poverty and generating livelihoods while safeguarding ecological systems and natural capital for future generations.\n\n"
+      }
+    }
+  ]
+}

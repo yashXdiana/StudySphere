@@ -1,0 +1,464 @@
+{
+  "testId": "p-hist-07-t1",
+  "title": {
+    "mr": "भारतीय राष्ट्रीय चळवळ (मवाळ व जहाल काळ / स्वदेशी चळवळ) — सराव 1",
+    "en": "Indian National Movement (Moderate/Extremist Phases & Swadeshi) — Practice Test 1"
+  },
+  "durationMinutes": 20,
+  "marksPerQuestion": 1,
+  "negativeMarking": 0.25,
+  "totalMarks": 25,
+  "difficulty": "मध्यम ते काठिण्य",
+  "questions": [
+    {
+      "id": 1,
+      "question": {
+        "mr": "ब्रिटिश वाईसरॉय लॉर्ड कर्झन याने 'बंगालची फाळणी' (Partition of Bengal) अधिकृतरीत्या कधी जाहीर केली आणि ती कधी अमलात आली?",
+        "en": "When was the Partition of Bengal officially announced by Lord Curzon, and when did it actually come into effect?"
+      },
+      "options": [
+        { "mr": "घोषणा: २० जुलै १९०५, अमलात: १६ ऑक्टोबर १९०५", "en": "Announced: July 20, 1905; Effected: October 16, 1905" },
+        { "mr": "घोषणा: १६ ऑक्टोबर १९०५, अमलात: २० डिसेंबर १९०५", "en": "Announced: Oct 16, 1905; Effected: Dec 20, 1905" },
+        { "mr": "घोषणा: १३ डिसेंबर १९०४, अमलात: १६ ऑक्टोबर १९०५", "en": "Announced: Dec 13, 1904; Effected: Oct 16, 1905" },
+        { "mr": "घोषणा: १९ जुलै १९०५, अमलात: १५ ऑगस्ट १९०५", "en": "Announced: July 19, 1905; Effected: August 15, 1905" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९०५): बंगालची फाळणीची घोषणा २० जुलै १९०५ रोजी झाली आणि ती १६ ऑक्टोबर १९०५ रोजी अमलात आली. या दिवशी बंगालमध्ये संताप व्यक्त करत 'शोक दिन' पाळला गेला आणि रवींद्रनाथ टागोरांच्या आव्हानावरून 'राखी पौर्णिमा' (एकता दिन) साजरा करण्यात आला.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / डॉ. स. शि. गाठाळ]",
+        "en": "(1905): The partition of Bengal was publicly announced on July 20, 1905, and came into force on October 16, 1905, which was observed as a day of mourning (Raksha Bandhan symbolizing unity).\n\n"
+      }
+    },
+    {
+      "id": 2,
+      "question": {
+        "mr": "१९०५ मधील 'बनारस काँग्रेस अधिवेशनाचे' अध्यक्षपद कोणी भूषवले होते, ज्यामध्ये स्वदेशी आणि बनिष्कर (Boycott) ठराव संमत करण्यात आला?",
+        "en": "Who presided over the 1905 Banaras session of the INC, where the Swadeshi and Boycott resolutions were moved?"
+      },
+      "options": [
+        { "mr": "गोपाळ कृष्ण गोखले (Gopal Krishna Gokhale)", "en": "Gopal Krishna Gokhale" },
+        { "mr": "बाळ गंगाधर टिळक", "en": "Bal Gangadhar Tilak" },
+        { "mr": "दादाभाई नौरोजी", "en": "Dadabhai Naoroji" },
+        { "mr": "रासबिहारी घोष", "en": "Rash Behari Ghosh" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९०५): डिसेंबर १९०५ मध्ये गोपाळ कृष्ण गोखले यांच्या अध्यक्षतेखाली बनारस येथे काँग्रेसचे अधिवेशन भरले. यात बंगालच्या फाळणीचा निषेध करण्यात आला आणि बंगालपुरती मर्यादित असलेली स्वदेशी व बहिष्कार चळवळ संपूर्ण देशात पसरवण्यास मवाळांनी मंजुरी दिली.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1905): Gopal Krishna Gokhale presided over the 1905 Banaras INC session, where the Congress formally condemned the partition of Bengal and supported the Swadeshi movement.\n\n"
+      }
+    },
+    {
+      "id": 3,
+      "question": {
+        "mr": "१९०७ मधील प्रसिद्ध 'सुरत अधिवेशन' (Surat Split) मध्ये काँग्रेसमध्ये फूट पडली. या अधिवेशनाचे अध्यक्षपद कोणाकडे जाणार होते यावरून जहाल व मवाळांमध्ये वाद झाला?",
+        "en": "The famous Surat Split of 1907 occurred due to a sharp ideological clash over the presidency of which leader?"
+      },
+      "options": [
+        { "mr": "रासबिहारी घोष (मवाळ गटाचे अध्यक्षपद) विरुद्ध लाला लजपत राय (जहाल गटाची पसंती)", "en": "Rash Behari Ghosh (Moderate choice) vs. Lala Lajpat Rai (Extremist choice)" },
+        { "mr": "टिळक विरुद्ध गोखले", "en": "Tilak vs Gokhale" },
+        { "mr": "अरबिंद घोष विरुद्ध फिरोजशाह मेहता", "en": "Aurobindo Ghosh vs Pherozeshah Mehta" },
+        { "mr": "सुरेंद्रनाथ बॅनर्जी विरुद्ध दादाभाई नौरोजी", "en": "Surendranath Banerjea vs Dadabhai Naoroji" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९०७): सुरत अधिवेशनात (सुरतची फूट) जहाल गटाला लाला लजपत राय यांना अध्यक्ष करायचे होते, तर मवाळांनी रासबिहारी घोष यांना अध्यक्ष केले. मताभेदांमुळे काँग्रेसचे मवाळ आणि जहाल असे दोन तुकडे झाले.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / अनिल कटारे]",
+        "en": "(1907): At the Surat session, tensions boiled over when Extremists proposed Lala Lajpat Rai while Moderates backed Rash Behari Ghosh, culminating in the formal split of the Congress.\n\n"
+      }
+    },
+    {
+      "id": 4,
+      "question": {
+        "mr": "स्वदेशी चळवळीदरम्यान (१९०५) बंगालमध्ये राष्ट्रीय शिक्षणाचा प्रसार करण्यासाठी 'नॅशनल कौन्सिल ऑफ एज्युकेशन' (National Council of Education) ची स्थापना कोणत्या वर्षी झाली?",
+        "en": "In which year was the 'National Council of Education' established in Bengal to promote indigenous national education during the Swadeshi movement?"
+      },
+      "options": [
+        { "mr": "१५ ऑगस्ट १९०६ (August 15, 1906)", "en": "August 15, 1906" },
+        { "mr": "१६ ऑक्टोबर १९०५", "en": "October 16, 1905" },
+        { "mr": "२८ डिसेंबर १९०७", "en": "December 28, 1907" },
+        { "mr": "१ जानेवारी १९०१", "en": "January 1, 1901" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९०६): स्वदेशी चळवळीत ब्रिटिश शिक्षण संस्थांवर बहिष्कार टाकत राष्ट्रीय शिक्षणाला चालना देण्यासाठी १५ ऑगस्ट १९०६ रोजी 'नॅशनल कौन्सिल ऑफ एज्युकेशन' स्थापन केली गेली, ज्यातून बंगाल नॅशनल कॉलेजची स्थापना झाली (पहिले प्राचार्य श्री अरबिंदो घोष).\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1906): To boycott government-controlled educational institutions, the National Council of Education was set up on August 15, 1906, to foster technical and literary national education.\n\n"
+      }
+    },
+    {
+      "id": 5,
+      "question": {
+        "mr": "योग्य जोड्या जुळवा (स्वदेशी चळवळीचे नेते आणि त्यांचे कार्यक्षेत्र/शहर):\nगट अ: १) बाळ गंगाधर टिळक, २) लाला लजपत राय, ३) सैयद हैदर रझा, ४) चिदंबरम पिल्लाई\nगट ब: अ) पंजाब, ब) मद्रास / तूटिकोरिन, क) मुंबई व पुणे, ड) दिल्ली",
+        "en": "Match the pairs (Swadeshi movement leaders and regions):\nGroup A: 1) Bal Gangadhar Tilak, 2) Lala Lajpat Rai, 3) Syed Haider Raza, 4) V.O. Chidambaram Pillai\nGroup B: a) Punjab, b) Madras / Tuticorin, c) Bombay and Pune, d) Delhi"
+      },
+      "options": [
+        { "mr": "1-क, 2-अ, 3-ड, 4-ब", "en": "1-c, 2-a, 3-d, 4-b" },
+        { "mr": "1-अ, 2-ब, 3-क, 4-ड", "en": "1-a, 2-b, 3-c, 4-d" },
+        { "mr": "1-क, 2-ड, 3-अ, 4-ब", "en": "1-c, 2-d, 3-a, 4-b" },
+        { "mr": "1-ड, 2-क, 3-ब, 4-अ", "en": "1-d, 2-c, 3-a, 4-b" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९०५-०६): स्वदेशी चळवळ देशभरात पसरली. टिळकांनी मुंबई व पुणे (महाराष्ट्र), लाला लजपत राय व अजित सिंग यांनी पंजाब, सैयद हैदर रझा यांनी दिल्ली, आणि व्ही. ओ. चिदंबरम पिल्लाई यांनी मद्रास/तूटिकोरिन (स्वदेशी स्टीम नेव्हिगेशन कंपनी) येथे नेतृत्व केले.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / समाधान महाजन]",
+        "en": "(1905-06): The Swadeshi movement expanded pan-India: Tilak led in Bombay/Pune, Lala Lajpat Rai in Punjab, Syed Haider Raza in Delhi, and V.O. Chidambaram Pillai in Madras/Tuticorin.\n\n"
+      }
+    },
+    {
+      "id": 6,
+      "question": {
+        "mr": "मुस्लिम लीगची स्थापना ३० डिसेंबर १९०६ रोजी कोठे झाली आणि त्याचे मुख्य संस्थापक कोण होते?",
+        "en": "Where was the All-India Muslim League founded on December 30, 1906, and who were its key founders?"
+      },
+      "options": [
+        { "mr": "ढाका (Dhaka), नवाब सलिमउल्ला खान आणि आगा खान", "en": "Dhaka, Nawab Salimullah Khan and Aga Khan" },
+        { "mr": "अलिगड, सर सय्यद अहमद खान", "en": "Aligarh, Sir Syed Ahmed Khan" },
+        { "mr": "लाहोर, मोहम्मद अली जिना", "en": "Lahore, Muhammad Ali Jinnah" },
+        { "mr": "कलकत्ता, बद्रीद्दीन तैबजी", "en": "Calcutta, Badruddin Tyabji" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९०६): ढाका येथील नवाब 'सलिमउल्ला खान' यांच्या आतिथ्यशीलतेखाली ३० डिसेंबर १९०६ रोजी ऑल इंडिया मुस्लिम लीगची स्थापना झाली. आगा खान हे त्याचे पहिले अध्यक्ष बनले, ज्यांना ब्रिटिश प्रशासनाची गुप्त साहाय्यता लाभली होती.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / डॉ. स. शि. गाठाळ]",
+        "en": "(1906): The All-India Muslim League was founded in Dhaka on December 30, 1906, under the leadership of Nawab Salimullah, Aga Khan, and others, with tacit British encouragement.\n\n"
+      }
+    },
+    {
+      "id": 7,
+      "question": {
+        "mr": "ब्रिटीश पार्लमेंटने १९०९ चा 'भारतीय परिषद कायदा' (Indian Councils Act 1909) संमत केला, ज्याला कोणत्या नावाने ओळखले जाते?",
+        "en": "By what popular name is the Indian Councils Act of 1909 known in Indian history?"
+      },
+      "options": [
+        { "mr": "मॉले-मिंटो सुधारणा (Morley-Minto Reforms)", "en": "Morley-Minto Reforms" },
+        { "mr": "मॉन्टग्यू-चेम्सफोर्ड सुधारणा", "en": "Montagu-Chelmsford Reforms" },
+        { "mr": "रौलट कायदा", "en": "Rowlatt Act" },
+        { "mr": "अगस्त प्रस्ताव", "en": "August Offer" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९०९): लॉर्ड मॉले (भारताचे राज्यसचिव) आणि लॉर्ड मिंटो (व्हाइसरॉय) यांच्या काळात आलेला १९०९ चा कायदा 'मॉले-मिंटो सुधारणा' म्हणून ओळखला जातो. या कायद्याने मुस्लिमांसाठी 'स्वतंत्र मतदारसंघ' (Separate Electorates) देऊन फुटीरतावादाचा पाया रचला.\n\n[संदर्भ: एम. लक्ष्मीकांत / स्पेक्ट्रम]",
+        "en": "(1909): The Indian Councils Act 1909 is popularly known as the Morley-Minto Reforms, notorious for introducing separate electorates for Muslims, laying the seed of communal politics.\n\n"
+      }
+    },
+    {
+      "id": 8,
+      "question": {
+        "mr": "खालील विधाने विचारात घ्या:\nअ) १९१६ चे 'लखनऊ अधिवेशन' (Lucknow Session) हे काँग्रेस आणि मुस्लिम लीग यांच्यात झालेल्या ऐतिहासिक 'लखनऊ करारासाठी' (Lucknow Pact) प्रसिद्ध आहे.\nब) या अधिवेशनाचे अध्यक्षपद अंबिकाचरण मजुमदार (A.C. Mazumdar) यांनी भूषवले होते.\nवरीलपैकी कोणते/ती विधान/ने बरोबर आहेत?",
+        "en": "Consider the following statements:\nA) The 1916 Lucknow session of the INC is famous for the historic 'Lucknow Pact' between the Congress and the Muslim League.\nB) This session was presided over by Ambica Charan Mazumdar.\nWhich of the above statement(s) is/are correct?"
+      },
+      "options": [
+        { "mr": "फक्त अ", "en": "Only A" },
+        { "mr": "फक्त ब", "en": "Only B" },
+        { "mr": "अ आणि ब दोन्ही", "en": "Both A and B" },
+        { "mr": "दोन्ही नाहीत", "en": "Neither A nor B" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "(१९१६): दोन्ही विधाने अगदी बरोबर आहेत. १९१६ च्या लखनऊ अधिवेशनात मवाळ व जहाल गट पुन्हा एकत्र आले आणि काँग्रेस व मुस्लिम लीगमध्ये राजकीय समझोता (लखनऊ करार) झाला.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / डॉ. स. शि. गाठाळ]",
+        "en": "(1916): Both statements are correct. The 1916 Lucknow session marked the reunion of Moderates and Extremists, and the signing of the Lucknow Pact between the INC and Muslim League.\n\n"
+      }
+    },
+    {
+      "id": 9,
+      "question": {
+        "mr": "भारतात 'होम रूल लीग चळवळ' (Home Rule Movement) १९१६ मध्ये कोणी सुरू केली होती?",
+        "en": "Who launched the 'Home Rule Movement' in India in 1916?"
+      },
+      "options": [
+        { "mr": "बाळ गंगाधर टिळक आणि डॉ. ॲनी बेझंट (Bal Gangadhar Tilak and Annie Besant)", "en": "Bal Gangadhar Tilak and Annie Besant" },
+        { "mr": "महात्मा गांधी आणि जवाहरलाल नेहरू", "en": "Mahatma Gandhi and Jawaharlal Nehru" },
+        { "mr": "सुभाषचंद्र बोस आणि सरदार पटेल", "en": "Subhas Chandra Bose and Sardar Patel" },
+        { "mr": "गोपाळ कृष्ण गोखले आणि फिरोजशाह मेहता", "en": "Gopal Krishna Gokhale and Pherozeshah Mehta" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९१६): भारतात स्वशासन (Home Rule) मिळवण्यासाठी लोकमान्य टिळकांनी एप्रिल १९१६ मध्ये (बेळगाव) आणि डॉ. ॲनी बेझंट यांनी सप्टेंबर १९१६ मध्ये (मद्रास) स्वतंत्रपणे होम रूल लीग चळवळ सुरू केली.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / अनिल कटारे]",
+        "en": "(1916): Bal Gangadhar Tilak and Annie Besant independently launched the Home Rule Leagues in 1916 to demand self-government (Home Rule) for India within the British Empire.\n\n"
+      }
+    },
+    {
+      "id": 10,
+      "question": {
+        "mr": "बाळ गंगाधर टिळकांनी एप्रिल १९१६ मध्ये स्थापन केलेल्या होम रूल लीगचे मुख्यालय कोठे होते आणि त्याचे कार्यक्षेत्र कोणते होते?",
+        "en": "Where was the headquarters of Tilak's Home Rule League (April 1916), and what was its operational jurisdiction?"
+      },
+      "options": [
+        { "mr": "पुणे / बेळगाव, कार्यक्षेत्र: महाराष्ट्र, कर्नाटक, मध्य प्रदेश आणि वरार", "en": "Pune / Belgaum; Jurisdiction: Maharashtra, Karnataka, Central Provinces, and Berar" },
+        { "mr": "मद्रास, कार्यक्षेत्र: संपूर्ण भारत", "en": "Madras; Jurisdiction: Entire India" },
+        { "mr": "कलकत्ता, कार्यक्षेत्र: बंगाल व आसाम", "en": "Calcutta; Jurisdiction: Bengal and Assam" },
+        { "mr": "दिल्ली, कार्यक्षेत्र: उत्तर भारत", "en": "Delhi; Jurisdiction: North India" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९१६): टिळकांच्या लीगचे मुख्यालय पुणे येथे होते आणि कार्यक्षेत्र प्रामुख्याने महाराष्ट्र (मुंबई वगळून), कर्नाटक, मध्य प्रदेश आणि बेरार एवढे होते. तर ॲनी बेझंट यांच्या लीगचे कार्यक्षेत्र उर्वरित भारत होते.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / समाधान महाजन]",
+        "en": "(1916): Tilak's Home Rule League, headquartered in Pune, operated across Maharashtra, Karnataka, Central Provinces, and Berar, while Annie Besant's league covered the rest of India.\n\n"
+      }
+    },
+    {
+      "id": 11,
+      "question": {
+        "mr": "पहिल्या महायुद्धकाळात ब्रिटीश सरकारवर दबाव आणण्यासाठी जॉर्ज अरुंडेल, बी. पी. वाडिया आणि सी. पी. रामस्वामी अय्यर हे कोणत्या चळवळीशी प्रमुखपणे जोडले गेले होते?",
+        "en": "Which prominent movement were George Arundale, B.P. Wadia, and C.P. Ramaswami Aiyar closely associated with alongside Annie Besant?"
+      },
+      "options": [
+        { "mr": "होम रूल लीग चळवळ (Home Rule Movement)", "en": "Home Rule Movement" },
+        { "mr": "असहकार चळवळ", "en": "Non-Cooperation Movement" },
+        { "mr": "भारत छोडो आंदोलन", "en": "Quit India Movement" },
+        { "mr": "सविनय कायदेभंग चळवळ", "en": "Civil Disobedience Movement" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९१६): डॉ. ॲनी बेझंट यांच्या होम रूल लीगच्या प्रचारामध्ये जॉर्ज अरुंडेल, बी. पी. वाडिया आणि सी. पी. रामस्वामी अय्यर यांनी अत्यंत सक्रिय सहभाग घेतला होता.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1916): George Arundale, B.P. Wadia, and C.P. Ramaswami Aiyar were key associates of Annie Besant in running her Home Rule League and editing 'New India'.\n\n"
+      }
+    },
+    {
+      "id": 12,
+      "question": {
+        "mr": "ब्रिटिश सरकारने ऑगस्ट १९१७ मध्ये जाहीर केलेल्या ऐतिहासिक घोषणेत (Montagu Declaration / August Declaration) मुख्यत्वे काय आश्वासन दिले गेले होते?",
+        "en": "What major promise was made in the August Declaration (Montagu Declaration) of 1917 by the British government?"
+      },
+      "options": [
+        { "mr": "भारतात हळूहळू जबाबदार शासन पद्धतीची (Responsible Government) स्थापना करणे", "en": "Gradual introduction of responsible government in India" },
+        { "mr": "भारताला तात्काळ पूर्ण स्वातंत्र्य देणे", "en": "Immediate complete independence to India" },
+        { "mr": "बंगालची फाळणी रद्द करणे", "en": "Annulment of Partition of Bengal" },
+        { "mr": "स्वातंत्र्यासाठी संविधान सभा स्थापन करणे", "en": "Setting up a Constituent Assembly" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९१७): २० ऑगस्ट १९१७ रोजी भारताचे राज्यसचिव एडविन मॉन्टग्यू यांनी ब्रिटीश संसदेत घोषणा केली की, भारताच्या प्रशासनात प्रत्येक विभागात भारतीयांचा सहभाग वाढवत हळूहळू 'जबाबदार शासन पद्धती' (Responsible Government) निर्माण केली जाईल. यामुळे होम रूल चळवळ मागे घेण्यात आली.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / डॉ. स. शि. गाठाळ]",
+        "en": "(1917): Edwin Montagu issued the August 1917 Declaration promising the gradual development of self-governing institutions and responsible government in India, prompting the suspension of the Home Rule agitation.\n\n"
+      }
+    },
+    {
+      "id": 13,
+      "question": {
+        "mr": "खालील विधाने विचारात घ्या:\nअ) १९१६ च्या लखनऊ अधिवेशनात जहाल आणि मवाळ गट एकत्र आणण्यात बाळ गंगाधर टिळक आणि डॉ. ॲनी बेझंट यांनी महत्त्वाची भूमिका बजावली.\nब) या अधिवेशनाने मुस्लिम लीगच्या 'स्वतंत्र मतदारसंघाच्या' मागणीला काँग्रेसतर्फे मान्यता दिली.\nवरीलपैकी कोणते/ती विधान/ने बरोबर आहेत?",
+        "en": "Consider the following statements:\nA) Bal Gangadhar Tilak and Annie Besant played a key role in bringing the Moderates and Extremists together at the 1916 Lucknow session.\nB) The session also saw the Congress accepting the Muslim League's demand for separate electorates.\nWhich of the above statement(s) is/are correct?"
+      },
+      "options": [
+        { "mr": "फक्त अ", "en": "Only A" },
+        { "mr": "फक्त ब", "en": "Only B" },
+        { "mr": "अ आणि ब दोन्ही", "en": "Both A and B" },
+        { "mr": "दोन्ही नाहीत", "en": "Neither A nor B" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "(१९१६): दोन्ही विधाने अगदी बरोबर आहेत. टिळक आणि बेझंट यांच्या प्रयत्नांमुळे काँग्रेसमध्ये पुन्हा ऐक्य झाले आणि लखनऊ करारात काँग्रेसने लीगच्या स्वतंत्र मतदारसंघाची मागणी मान्य केली (जी नंतर फुटीर राजकारणास कारणीभूत ठरली).\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / एम. लक्ष्मीकांत]",
+        "en": "(1916): Both statements are correct. Tilak and Besant engineered the historic reunion of the Congress factions, and the Congress regrettably conceded to the Muslim League's separate electorates in the Lucknow Pact.\n\n"
+      }
+    },
+    {
+      "id": 14,
+      "question": {
+        "mr": "१९०५ मधील स्वदेशी चळवळीदरम्यान 'अमार सोनार बांग्ला' (Amar Sonar Bangla) हे बंगाली गीत कोणी रचले होते, जे नंतर बांगलादेशचे राष्ट्रगीत बनले?",
+        "en": "Who composed the patriotic song 'Amar Sonar Bangla' during the 1905 Swadeshi movement, which later became the national anthem of Bangladesh?"
+      },
+      "options": [
+        { "mr": "रवींद्रनाथ टागोर (Rabindranath Tagore)", "en": "Rabindranath Tagore" },
+        { "mr": "बंकीमचंद्र चटर्जी", "en": "Bankim Chandra Chatterjee" },
+        { "mr": "द्विजेंद्रलाल राय", "en": "Dwijendralal Ray" },
+        { "mr": "सुब्रह्मण्य भारती", "en": "Subramania Bharati" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९०५): बंगालच्या फाळणीच्या निषेधार्थ रवींद्रनाथ टागोरांनी 'अमार सोनार बांग्ला' हे प्रसिद्ध गीत रचले, जे बंगाली जनतेच्या ऐक्याचे प्रतीक बनले (आणि १९७१ मध्ये बांगलादेशने ते राष्ट्रगीत म्हणून स्वीकारले).\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1905): Rabindranath Tagore composed 'Amar Sonar Bangla' to unite the Bengali people against the partition, a song that later became the national anthem of Bangladesh in 1971.\n\n"
+      }
+    },
+    {
+      "id": 15,
+      "question": {
+        "mr": "१९०६ च्या कलकत्ता काँग्रेस अधिवेशनात अध्यक्ष दादाभाई नौरोजी यांनी भाषणात प्रथमच कोणत्या मुख्य राजकीय ध्येयाची घोषणा केली होती?",
+        "en": "What historic political goal was officially declared for the first time by Dadabhai Naoroji at the 1906 Calcutta INC session?"
+      },
+      "options": [
+        { "mr": "स्वराज (Swaraj)", "en": "Swaraj" },
+        { "mr": "पूर्ण स्वराज", "en": "Purna Swaraj" },
+        { "mr": "डोमिनियन स्टेटस", "en": "Dominion Status" },
+        { "mr": "संघराज्य", "en": "Federal Republic" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९०६): १९०६ च्या कलकत्ता अधिवेशनात दादाभाई नौरोजींनी अध्यक्षीय भाषणात प्रथमच 'स्वराज' (Swaraj) हे काँग्रेसचे अंतिम राजकीय ध्येय असल्याचे जाहीर केले.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1906): Presiding over the Calcutta session, Grand Old Man Dadabhai Naoroji officially proclaimed 'Swaraj' (self-rule) as the goal of the national movement.\n\n"
+      }
+    },
+    {
+      "id": 16,
+      "question": {
+        "mr": "खालील विधाने विचारात घ्या:\nअ) स्वदेशी चळवळीच्या काळात पारंपरिक जत्रा, मेळे आणि गणपती उत्सवांचा वापर राजकीय जनजागृतीसाठी मोठ्या प्रमाणावर केला गेला.\nब) या चळवळीत महिला, विद्यार्थी आणि मुस्लिम समुदायाचा काही वर्ग मोठ्या प्रमाणावर सक्रिय सहभागी झाला होता.\nवरीलपैकी कोणते/ती विधान/ने बरोबर आहेत?",
+        "en": "Consider the following statements:\nA) Traditional festivals, melas, and Ganpati celebrations were extensively used for political mobilization during the Swadeshi movement.\nB) Women, students, and a section of Muslims actively participated in the Swadeshi agitation.\nWhich of the above statement(s) is/are correct?"
+      },
+      "options": [
+        { "mr": "फक्त अ", "en": "Only A" },
+        { "mr": "फक्त ब", "en": "Only B" },
+        { "mr": "अ आणि ब दोन्ही", "en": "Both A and B" },
+        { "mr": "दोन्ही नाहीत", "en": "Neither A nor B" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "(१९०५): दोन्ही विधाने अगदी बरोबर आहेत. स्वदेशी चळवळीने पारंपारिक जत्रा व उत्सवांचा प्रभावी वापर केला आणि यात प्रथमतः मोठ्या प्रमाणावर महिला व विद्यार्थी रस्त्यावर उतरले.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / समाधान महाजन]",
+        "en": "(1905): Both statements are correct. The Swadeshi movement harnessed traditional festivals and marked a watershed by drawing women, students, and urban youth into active political resistance.\n\n"
+      }
+    },
+    {
+      "id": 17,
+      "question": {
+        "mr": "ब्रिटिश सरकारने बंगालची फाळणी अखेर कोणत्या वर्षी आणि कोणत्या दरबारात रद्द (Annulment) जाहीर केली?",
+        "en": "In which year and at which grand event was the Partition of Bengal officially annulled by the British government?"
+      },
+      "options": [
+        { "mr": "डिसेंबर १९११, दिल्ली दरबार (Delhi Durbar of 1911)", "en": "December 1911, Delhi Durbar" },
+        { "mr": "१९०९, लंडन दरबार", "en": "1909, London Durbar" },
+        { "mr": "१९१६, लखनऊ अधिवेशन", "en": "1916, Lucknow Session" },
+        { "mr": "१९०७, सुरत अधिवेशन", "en": "1907, Surat Session" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९११): वाढता राष्ट्रवाद आणि बॉम्बस्फोट-हिंसेला आळा घालण्यासाठी तसेच सम्राट जॉर्ज पंचम यांच्या भारत भेटीच्या निमित्ताने डिसेबर १९११ मध्ये भरलेल्या 'दिल्ली दरबारात' बंगालची फाळणी रद्द करण्यात आली आणि राजधानी कलकत्त्यावरून दिल्लीला हलवण्याची घोषणा केली.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / डॉ. स. शि. गाठाळ]",
+        "en": "(1911): Faced with relentless nationalist agitation and violence, the British officially annulled the Partition of Bengal at the Delhi Durbar of December 1911, shifting the capital to Delhi.\n\n"
+      }
+    },
+    {
+      "id": 18,
+      "question": {
+        "mr": "जहाल युगातील प्रमुख नेते बाळ गंगाधर टिळक यांनी कोणत्या वृत्तपत्रांतून ब्रिटीश सरकारच्या दडपशाहीविरोधात जहाल लेख लिहून राजद्रोहाच्या आरोपाखाली शिक्षा भोगली होती?",
+        "en": "Through which newspapers did Bal Gangadhar Tilak spearhead militant nationalist journalism, leading to his sedition trials and imprisonments?"
+      },
+      "options": [
+        { "mr": "केसरी (मराठा) आणि मराठा (इंग्रजी)", "en": "Kesari (Marathi) and Mahratta (English)" },
+        { "mr": "सुधारक आणि ज्ञानप्रकाश", "en": "Sudharak and Dnyanprakash" },
+        { "mr": "अमृत बाजार पत्रिका आणि द हिंदू", "en": "Amrita Bazar Patrika and The Hindu" },
+        { "mr": "बंगाली आणि हितवाद", "en": "The Bengalee and Hitavada" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१८९७/१९०८): टिळकांनी 'केसरी' व 'मराठा' वृत्तपत्रांमधून ब्रिटिशांच्या दडपशाहीवर तीव्र टीका केली. १८९७ मध्ये आणि नंतर १९०८ मध्ये (चाफेकर बंधूंच्या प्रकरणावर लिहिलेल्या अग्रलेखांमुळे) त्यांना देशद्रोहाच्या खटल्यात मंडाले (म्यानमार) येथे ६ वर्षांच्या तुरुंगवासाची शिक्षा झाली.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / अनिल कटारे]",
+        "en": "(1897/1908): Tilak used his newspapers 'Kesari' and 'Mahratta' to awaken nationalist fervor, resulting in historic sedition trials and his imprisonment in Mandalay (Burma).\n\n"
+      }
+    },
+    {
+      "id": 19,
+      "question": {
+        "mr": "खालील विधाने विचारात घ्या:\nअ) १९०७ च्या सुरत अधिवेशनानंतर मवाळ व जहाल यांच्यातील दुरावा वाढला आणि काँग्रेसवर पूर्णपणे मवाळ नेत्यांचे नियंत्रण आले.\nब) जहाल नेत्यांना १९१६ च्या लखनऊ अधिवेशनापूर्वी काँग्रेसमध्ये पुन्हा प्रवेश मिळाला नाही.\nवरीलपैकी कोणते/ती विधान/ने बरोबर आहेत?",
+        "en": "Consider the following statements:\nA) Following the 1907 Surat split, the Moderates gained complete control over the Congress organization.\nB) The Extremist leaders were readmitted into the Congress fold only at the 1916 Lucknow session.\nWhich of the above statement(s) is/are correct?"
+      },
+      "options": [
+        { "mr": "फक्त अ", "en": "Only A" },
+        { "mr": "फक्त ब", "en": "Only B" },
+        { "mr": "अ आणि ब दोन्ही", "en": "Both A and B" },
+        { "mr": "दोन्ही नाहीत", "en": "Neither A nor B" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "(१९०७-१९१६): दोन्ही विधाने अगदी बरोबर आहेत. सुरतच्या फुटीनंतर नऊ वर्षे जहाल नेते काँग्रेसबाहेर राहिले आणि १९१६ च्या लखनऊ अधिवेशनात त्यांचे पुनरागमन झाले.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / डॉ. स. शि. गाठाळ]",
+        "en": "(1907-1916): Both statements are correct. The Moderates dominated the Congress for nearly a decade post-Surat, until the triumphant return of the Extremists at Lucknow in 1916.\n\n"
+      }
+    },
+    {
+      "id": 20,
+      "question": {
+        "mr": "स्वातंत्र्यपूर्व काळातील 'भारतीय राष्ट्रीय चळवळीच्या' मवाळ युगात (१८८५-१९०५) नेत्यांची मुख्य उपलब्धी कोणती मानली जाती?",
+        "en": "What is regarded as the primary historic achievement of the Moderates during the early phase of the national movement (1885-1905)?"
+      },
+      "options": [
+        { "mr": "भारतात आर्थिक राष्ट्रवादाची पायाभरणी करणे आणि ब्रिटीश शोषणाचा पर्दाफाश करणे", "en": "Laying the economic foundation of Indian nationalism and exposing the exploitative nature of British rule" },
+        { "mr": "भारताला पूर्ण स्वातंत्र्य मिळवून देणे", "en": "Securing complete independence for India" },
+        { "mr": "ब्रिटिश सैन्याचा पराभव करणे", "en": "Defeating the British army militarily" },
+        { "mr": "नवीन राज्यघटना तयार करणे", "en": "Drafting a new Indian constitution" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१८८५-१९०५): मवाळ नेत्यांनी जरी पूर्ण स्वातंत्र्य मिळवले नसले, तरी त्यांनी ब्रिटिशांच्या आर्थिक शोषणाचा (Drain of Wealth) पर्दाफाश केला आणि भारतीयांमध्ये पहिली राष्ट्रीय राजकीय जाणीव निर्माण केली.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1885-1905): Although the Moderates did not achieve independence, their rigorous economic critique and persistent agitation created an enduring nationalist awareness and political framework.\n\n"
+      }
+    },
+    {
+      "id": 21,
+      "question": {
+        "mr": "भारतीय राष्ट्रीय चळवळीत 'जहाल युगातील' (Extremist Era - १९०५-१९१९) नेत्यांचे मुख्य हत्यार किंवा कार्यक्रम काय होता?",
+        "en": "What was the core program and method of agitation adopted by the Extremist leaders during the militant nationalist phase (1905-1919)?"
+      },
+      "options": [
+        { "mr": "स्वदेशी, बहिष्कार, राष्ट्रीय शिक्षण आणि निष्क्रिय प्रतिकार (Passive Resistance)", "en": "Swadeshi, Boycott, National Education, and Passive Resistance" },
+        { "mr": "केवळ ब्रिटिश मंत्र्यांना अर्ज पाठवणे", "en": "Only sending petitions to British ministers" },
+        { "mr": "कायदेशीर कोर्टात नोकऱ्या स्वीकारणे", "en": "Accepting jobs in colonial courts" },
+        { "mr": "परदेशी मालाचा प्रचार करणे", "en": "Promoting foreign goods" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९०५-१९१९): जहाल नेत्यांनी (लाला, बाळ, पाल) केवळ अर्जांच्या राजकारणावर न थांबता 'स्वदेशी, बहिष्कार, राष्ट्रीय शिक्षण आणि निष्क्रिय प्रतिकार' (Passive Resistance) या चतुःसूत्रीचा पुरस्कार केला.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1905-1919): The Extremists moved beyond mere petitions, championing Swadeshi, Boycott of foreign goods, National Education, and Passive Resistance to force government concessions.\n\n"
+      }
+    },
+    {
+      "id": 22,
+      "question": {
+        "mr": "खालील विधाने विचारात घ्या:\nअ) बंगालच्या फाळणीमागे ब्रिटिशांचे मुख्य धोरण 'फूट पाडा आणि राज्य करा' (Divide and Rule) अंतर्गत बंगाली राष्ट्रवादाला कमकुवत करणे हे होते.\nब) या फाळणीमुळे पूर्व बंगाल आणि आसाम असा नवीन मुस्लिमबहुल प्रांत तयार झाला.\nवरीलपैकी कोणते/ती विधान/ने बरोबर आहेत?",
+        "en": "Consider the following statements:\nA) The underlying British motive behind the Partition of Bengal was to undermine Bengali nationalism through 'Divide and Rule'.\nB) The partition resulted in the creation of a new Muslim-majority province of Eastern Bengal and Assam.\nWhich of the above statement(s) is/are correct?"
+      },
+      "options": [
+        { "mr": "फक्त अ", "en": "Only A" },
+        { "mr": "फक्त ब", "en": "Only B" },
+        { "mr": "अ आणि ब दोन्ही", "en": "Both A and B" },
+        { "mr": "दोन्ही नाहीत", "en": "Neither A nor B" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९०५): दोन्ही विधाने अगदी बरोबर आहेत. कर्झनने प्रशासकीय कारणांचे ढोंग रचले तरी मुख्य उद्देश बंगाली राष्ट्रवादाचा कणा मोडणे आणि हिंदू-मुस्लिम फूट पाडणे हा होता.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / डॉ. स. शि. गाठाळ]",
+        "en": "(1905): Both statements are correct. The partition was a deliberate imperial design to curb growing nationalist activity in Bengal and create a communal divide by carving out a Muslim-majority eastern province.\n\n"
+      }
+    },
+    {
+      "id": 23,
+      "question": {
+        "mr": "भारतीय राष्ट्रीय काँग्रेसच्या कोणत्या अधिवेशनात पहिल्यांदाच 'स्वदेशी' आणि 'बहिष्कार' (Boycott) या ठरावांना औपचारिक मान्यता मिळाली होती?",
+        "en": "At which INC session were the resolutions on 'Swadeshi' and 'Boycott' formally endorsed for the first time?"
+      },
+      "options": [
+        { "mr": "बनारस अधिवेशन (१९०५)", "en": "Banaras Session (1905)" },
+        { "mr": "कलकत्ता अधिवेशन (१९०६)", "en": "Calcutta Session (1906)" },
+        { "mr": "सुरत अधिवेशन (१९०७)", "en": "Surat Session (1907)" },
+        { "mr": "लखनऊ अधिवेशन (१९१६)", "en": "Lucknow Session (1916)" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९०५): १९०५ च्या बनारस अधिवेशनात गोपाळ कृष्ण गोखले यांच्या अध्यक्षतेखाली स्वदेशी आणि बहिष्कार चळवळीला अधिकृत पाठिंबा मिळाला (जरी जहाल नेत्यांना तो बंगालबाहेरही हवा होता, जो १९०६ मध्ये कलकत्ता अधिवेशनात ठरला).\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1905): The Banaras session of 1905 under Gokhale formally endorsed the Swadeshi and Boycott movement in response to the partition of Bengal.\n\n"
+      }
+    },
+    {
+      "id": 24,
+      "question": {
+        "mr": "स्वातंत्र्यपूर्व काळातील 'भारतीय राष्ट्रीय चळवळीच्या' विकासात बंगालच्या फाळणीविरोधी आंदोलनाचे (स्वदेशी चळवळ) ऐतिहासिक महत्त्व काय होते?",
+        "en": "What was the overarching historical significance of the anti-partition Swadeshi movement in the national struggle?"
+      },
+      "options": [
+        { "mr": "त्याने भारतीय स्वातंत्र्यलढ्याला मवाळ राजकारणाकडून जहाल आणि व्यापक जनआंदोलनाच्या पातळीवर नेले", "en": "It transformed the national movement from moderate petitioning to a militant mass mobilization" },
+        { "mr": "त्याने ब्रिटिशांचे साम्राज्य मजबूत केले", "en": "It strengthened the British empire" },
+        { "mr": "त्याने राष्ट्रीय चळवळ पूर्णपणे संपवली", "en": "It ended the national movement entirely" },
+        { "mr": "त्याने केवळ व्यापारी वर्गाचा फायदा केला", "en": "It benefited only foreign merchants" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९०५): स्वदेशी चळवळीने भारताच्या स्वातंत्र्यलढ्याला नवीन आयाम दिला. मवाळांच्या मवाळ राजकारणातून बाहेर पडत जहाल राजकारण आणि जनआंदोलनाचा (Mass movement) पाया याच चळवळीने रचला.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / डॉ. स. शि. गाठाळ]",
+        "en": "(1905): The Swadeshi movement marked a watershed, shifting the character of the freedom struggle from elite-driven constitutionalism to active mass participation and militant nationalism.\n\n"
+      }
+    },
+    {
+      "id": 25,
+      "question": {
+        "mr": "लोकमान्य बाळ गंगाधर टिळकांनी जनतेत राष्ट्रवाद रुजवण्यासाठी आणि संपर्क साधण्यासाठी कोणते दोन प्रसिद्ध उत्सव मोठ्या प्रमाणावर सुरू केले होते?",
+        "en": "Which two popular traditional festivals were revived and utilized by Bal Gangadhar Tilak for political awakening and mass mobilization?"
+      },
+      "options": [
+        { "mr": "सार्वजनिक गणेशोत्सव (१८९३) आणि शिवजयंती (१८९५)", "en": "Public Ganpati Festival (1893) and Shivaji Festival (1895)" },
+        { "mr": "दिवाळी आणि होली", "en": "Diwali and Holi" },
+        { "mr": "दसरा आणि मकरसंक्रांत", "en": "Dussehra and Makar Sankranti" },
+        { "mr": "नागपंचमी आणि ईद", "en": "Nagpanchami and Eid" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१८९३-१८९५): टिळकांनी लोकजागृतीसाठी १८९३ मध्ये सार्वजनिक गणेशोत्सव आणि १८९५ मध्ये शिवजयंती उत्सव सुरू केले, ज्यांच्या माध्यमातून देशभक्तीपर भाषणे, पोवाडे आणि मेळे याद्वारे राजकीय संदेश घराघरांपर्यंत पोहोचवला.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / समाधान महाजन]",
+        "en": "(1893-1895): Tilak revived the public Ganpati festival in 1893 and the Shivaji festival in 1895 as cultural platforms for political propaganda, physical training, and mass contact.\n\n"
+      }
+    }
+  ]
+}

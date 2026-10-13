@@ -1,0 +1,464 @@
+{
+  "testId": "p-hist-01-t4",
+  "title": {
+    "mr": "आधुनिक भारताचा इतिहास — सराव 4",
+    "en": "Modern Indian History — Practice Test 4"
+  },
+  "durationMinutes": 20,
+  "marksPerQuestion": 1,
+  "negativeMarking": 0.25,
+  "totalMarks": 25,
+  "difficulty": "मध्यम ते काठिण्य",
+  "questions": [
+    {
+      "id": 1,
+      "question": {
+        "mr": "बक्सारच्या युद्धानंतर १७६५ मध्ये रॉबर्ट क्लाइव्हने कोणासोबत 'अलाहाबादचा तह' (Treaty of Allahabad) करून बंगाल, बिहार व ओडिसाचे दिवाणी अधिकार मिळवले?",
+        "en": "With whom did Robert Clive sign the 'Treaty of Allahabad' in 1765 after the Battle of Buxar to acquire the Diwani rights of Bengal, Bihar, and Odisha?"
+      },
+      "options": [
+        { "mr": "नवाब सिराज-उद-दौला", "en": "Nawab Siraj-ud-Daulah" },
+        { "mr": "मुघल सम्राट शाह आलम (दुसरा)", "en": "Mughal Emperor Shah Alam II" },
+        { "mr": "नवाब मीर कासिम", "en": "Nawab Mir Qasim" },
+        { "mr": "नवाब शुजा-उद-दौला", "en": "Nawab Shuja-ud-Daulah" }
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": {
+        "mr": "(१७६५): १२ ऑगस्ट १७६५ रोजी रॉबर्ट क्लाइव्ह आणि मुघल सम्राट शाह आलम (दुसरा) यांच्यात अलाहाबादचा पहिला तह झाला. या तहानुसार कंपनीला वार्षिक २६ लाख रुपये देण्याच्या बदल्यात बंगाल, बिहार आणि ओडिसाचे दिवाणी (महसूल) अधिकार मिळाले.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / डॉ. स. शि. गाठाळ]",
+        "en": "(1765): On August 12, 1765, Robert Clive signed the Treaty of Allahabad with Mughal Emperor Shah Alam II. The Emperor granted the Diwani rights of Bengal, Bihar, and Odisha to the East India Company in return for an annual tribute of 26 lakh rupees.\n\n"
+      }
+    },
+    {
+      "id": 2,
+      "question": {
+        "mr": "भारतात आलेल्या तरुण ब्रिटिश नागरी सेवकांना (Civil Servants) भारतीय भाषा आणि संस्कृतीचे प्रशिक्षण देण्यासाठी १८०० मध्ये कोलकात्यात 'फोर्ट विल्यम कॉलेज' कोणी स्थापन केले?",
+        "en": "Who established the 'Fort William College' in Calcutta in 1800 to train young British civil servants in Indian languages and culture?"
+      },
+      "options": [
+        { "mr": "लॉर्ड कॉर्नवॉलिस", "en": "Lord Cornwallis" },
+        { "mr": "लॉर्ड वेलस्ली", "en": "Lord Wellesley" },
+        { "mr": "लॉर्ड विल्यम बेंटिक", "en": "Lord William Bentinck" },
+        { "mr": "वॉरन हेस्टिंग्स", "en": "Warren Hastings" }
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": {
+        "mr": "(१८००): लॉर्ड वेलस्लीने १० जुलै १८०० रोजी 'फोर्ट विल्यम कॉलेज' ची स्थापना केली. याचा मुख्य उद्देश इंग्लंडहून आलेल्या प्रशासकीय अधिकाऱ्यांना भारतीय भाषा, कायदे व चालीरीती शिकवणे हा होता. मात्र १८०२ मध्ये लंडनच्या कोर्ट ऑफ डिरेक्टर्सने हे कॉलेज बंद करण्याचे आदेश दिले.\n\n[संदर्भ: समाधान महाजन]",
+        "en": "(1800): Lord Wellesley founded Fort William College in Calcutta to train civil servants of the East India Company in vernacular languages and local customs. However, it was disapproved by the Court of Directors and training shifted to Haileybury College in England.\n\n"
+      }
+    },
+    {
+      "id": 3,
+      "question": {
+        "mr": "पहिले इंग्रज-मराठा युद्ध (१७७५-१७८२) खालीलपैकी कोणत्या तहामुळे उद्भवले, ज्यामध्ये रघुनाथरावाने पेशवेपद मिळवण्यासाठी ब्रिटिशांची मदत मागितली होती?",
+        "en": "The First Anglo-Maratha War (1775-1782) broke out due to which of the following treaties, in which Raghunathrao sought British help to get the Peshwaship?"
+      },
+      "options": [
+        { "mr": "पुरंदरचा तह", "en": "Treaty of Purandar" },
+        { "mr": "वडगावचा तह", "en": "Treaty of Wadgaon" },
+        { "mr": "सुरतचा तह (Treaty of Surat)", "en": "Treaty of Surat" },
+        { "mr": "वसईचा तह", "en": "Treaty of Bassein" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "(१७७५): नारायणरावाच्या मृत्यूनंतर सवाई माधवरावाला पेशवेपद मिळाल्याने नाराज झालेल्या रघुनाथरावाने (राघोबा) ७ मार्च १७७५ रोजी मुंबईच्या इंग्रजांशी 'सुरतचा तह' केला. या तहानुसार इंग्रजांनी राघोबाला सैन्य देण्याचे आणि राघोबाने त्यांना साष्टी व वसई देण्याचे कबूल केले, ज्यातून पहिले युद्ध भडकले.\n\n[संदर्भ: अनिल कटारे / स्पेक्ट्रम]",
+        "en": "(1775): The Treaty of Surat (1775) was signed between Raghunathrao and the British in Bombay. Raghunathrao ceded Salsette and Bassein to the British in exchange for military support to become the Peshwa, which triggered the First Anglo-Maratha War.\n\n"
+      }
+    },
+    {
+      "id": 4,
+      "question": {
+        "mr": "लॉर्ड विल्यम बेंटिकच्या काळात १८३५ मध्ये संमत झालेल्या 'इंग्रजी शिक्षण कायद्याचा' (English Education Act 1835) मुख्य पाया काय होता?",
+        "en": "What was the main foundation of the 'English Education Act 1835' passed during the time of Lord William Bentinck?"
+      },
+      "options": [
+        { "mr": "चार्ल्स वुड्सचा खलिता", "en": "Charles Wood's Despatch" },
+        { "mr": "मेकॉलेचे मिनिट (Macaulay's Minute)", "en": "Macaulay's Minute" },
+        { "mr": "हंटर आयोगाचा अहवाल", "en": "Hunter Commission Report" },
+        { "mr": "चार्टर ॲक्ट 1813 मधील तरतूद", "en": "Provision in Charter Act 1813" }
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": {
+        "mr": "(१८३५): गव्हर्नर जनरलच्या परिषदेचा कायदे सदस्य 'थॉमस मेकॉले' याने २ फेब्रुवारी १८३५ रोजी आपला प्रसिद्ध अहवाल (Macaulay's Minute) सादर केला. यात त्याने पाश्चात्य शिक्षण इंग्रजी माध्यमातून देण्याची जोरदार शिफारस केली. याच आधारावर ७ मार्च १८३५ रोजी इंग्रजी शिक्षणाचा ठराव मंजूर झाला.\n\n[संदर्भ: डॉ. स. शि. गाठाळ]",
+        "en": "(1835): The English Education Act of 1835 was based on Lord Macaulay's famous 'Minute on Indian Education'. It resolved that the government's funds would be spent exclusively on promoting Western education and sciences through the medium of the English language.\n\n"
+      }
+    },
+    {
+      "id": 5,
+      "question": {
+        "mr": "१८५४ च्या वुड्स खलिताच्या (Wood's Despatch) शिफारशीनुसार, भारतातील पहिली तीन विद्यापीठे (कलकत्ता, बॉम्बे, मद्रास) कोणत्या वर्षी स्थापन करण्यात आली?",
+        "en": "Following the recommendations of Wood's Despatch (1854), in which year were the first three universities (Calcutta, Bombay, Madras) established in India?"
+      },
+      "options": [
+        { "mr": "१८५५", "en": "1855" },
+        { "mr": "१८५७", "en": "1857" },
+        { "mr": "१८५८", "en": "1858" },
+        { "mr": "१८६१", "en": "1861" }
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": {
+        "mr": "(१८५७): चार्ल्स वुड यांच्या शिफारशीनुसार लंडन विद्यापीठाच्या धर्तीवर १८५७ साली कलकत्ता, बॉम्बे (मुंबई) आणि मद्रास येथे तीन विद्यापीठे स्थापन करण्यात आली. १८५७ चा उठाव चालू असतानाच ही विद्यापीठे आकारास येत होती.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / समाधान महाजन]",
+        "en": "(1857): Based on the recommendations of Wood's Despatch (1854), the first three universities in India were established in 1857 at Calcutta, Bombay, and Madras, modeled after the University of London.\n\n"
+      }
+    },
+    {
+      "id": 6,
+      "question": {
+        "mr": "खालील विधाने विचारात घ्या:\nअ) भारतात 'सार्वजनिक बांधकाम विभागाची' (Public Works Department - PWD) स्थापना लॉर्ड डलहौसीने केली.\nब) याआधी सार्वजनिक बांधकामे लष्कराच्या देखरेखीखाली होत असत.\nवरीलपैकी कोणते/ती विधान/ने बरोबर आहेत?",
+        "en": "Consider the following statements:\nA) The 'Public Works Department' (PWD) in India was established by Lord Dalhousie.\nB) Earlier, public works were under the supervision of the military.\nWhich of the above statement(s) is/are correct?"
+      },
+      "options": [
+        { "mr": "फक्त अ", "en": "Only A" },
+        { "mr": "फक्त ब", "en": "Only B" },
+        { "mr": "अ आणि ब दोन्ही", "en": "Both A and B" },
+        { "mr": "दोन्ही नाहीत", "en": "Neither A nor B" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "(१८५४): लॉर्ड डलहौसीच्या आधी रस्ते व इमारतींची बांधकामे 'मिलिटरी बोर्ड' (लष्कर) करत असे. डलहौसीने लष्कराकडून हे अधिकार काढून घेत १८५४ मध्ये एक स्वतंत्र 'सार्वजनिक बांधकाम विभाग' (PWD) स्थापन केला आणि रस्ते, कालवे (उदा. गंगा कालवा) यांच्या कामाला गती दिली.\n\n[संदर्भ: अनिल कटारे / स्पेक्ट्रम]",
+        "en": "(1854): Before Dalhousie, public works were handled by the Military Board. Lord Dalhousie created a separate Public Works Department (PWD) and allotted significant funds for the construction of roads, canals, and bridges.\n\n"
+      }
+    },
+    {
+      "id": 7,
+      "question": {
+        "mr": "१८५५-५६ मध्ये राजमहाल टेकड्यांच्या (झारखंड) परिसरात झालेल्या 'संथाल उठावाचे' (Santhal Rebellion) नेतृत्व कोणी केले होते?",
+        "en": "Who led the 'Santhal Rebellion' that took place in the Rajmahal hills (Jharkhand) region in 1855-56?"
+      },
+      "options": [
+        { "mr": "बिरसा मुंडा", "en": "Birsa Munda" },
+        { "mr": "सिद्धू आणि कान्हू (Sidhu and Kanhu)", "en": "Sidhu and Kanhu" },
+        { "mr": "अल्लुरी सीताराम राजू", "en": "Alluri Sitarama Raju" },
+        { "mr": "चक्र बिश्नोई", "en": "Chakra Bishnoi" }
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": {
+        "mr": "(१८५५): जमीनदार, सावकार आणि ब्रिटिश महसूल अधिकाऱ्यांच्या शोषणाविरुद्ध संथाल आदिवासींनी १८५५ मध्ये भयंकर उठाव केला. याचे नेतृत्व सिद्धू आणि कान्हू या दोन भावांनी केले होते. ब्रिटिशांनी लष्कराचा वापर करून हा उठाव अत्यंत क्रूरपणे मोडून काढला.\n\n[संदर्भ: डॉ. स. शि. गाठाळ]",
+        "en": "(1855): The Santhal Rebellion (Hul) was a massive uprising by the Santhal tribe against both the British colonial authority and the oppressive Zamindari system. It was led by two brothers, Sidhu and Kanhu Murmu.\n\n"
+      }
+    },
+    {
+      "id": 8,
+      "question": {
+        "mr": "राजा राममोहन रॉय यांनी १८१७ मध्ये डेव्हिड हेअर (David Hare) आणि अलेक्झांडर डफ यांच्या मदतीने खालीलपैकी कोणत्या संस्थेची स्थापना केली?",
+        "en": "Which of the following institutions was established by Raja Rammohan Roy with the help of David Hare and Alexander Duff in 1817?"
+      },
+      "options": [
+        { "mr": "वेदान्त कॉलेज", "en": "Vedanta College" },
+        { "mr": "हिंदू कॉलेज (Hindu College)", "en": "Hindu College" },
+        { "mr": "संस्कृत कॉलेज", "en": "Sanskrit College" },
+        { "mr": "स्कॉटिश चर्च कॉलेज", "en": "Scottish Church College" }
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": {
+        "mr": "(१८१७): पाश्चात्य शिक्षण आणि विज्ञानाचा प्रसार करण्यासाठी राजा राममोहन रॉय यांनी १८१७ मध्ये कोलकात्यात 'हिंदू कॉलेज' स्थापन केले (ज्याचे नंतर प्रेसिडेन्सी कॉलेजमध्ये रूपांतर झाले). यासाठी त्यांना डच घड्याळजी डेव्हिड हेअर यांनी मोठी मदत केली.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1817): Raja Rammohan Roy, in collaboration with David Hare (a Dutch watchmaker) and Sir Edward Hyde East, founded the Hindu College in Calcutta in 1817 to impart Western education and sciences.\n\n"
+      }
+    },
+    {
+      "id": 9,
+      "question": {
+        "mr": "लॉर्ड डलहौसीच्या काळात १८५० मध्ये संमत झालेल्या 'लेक्स लोसी ॲक्ट' (Lex Loci Act) किंवा 'Caste Disabilities Removal Act' चा मुख्य उद्देश काय होता?",
+        "en": "What was the main purpose of the 'Lex Loci Act' or 'Caste Disabilities Removal Act' passed in 1850 during Lord Dalhousie's tenure?"
+      },
+      "options": [
+        { "mr": "जातीव्यवस्थेवर पूर्णपणे बंदी घालणे.", "en": "To completely ban the caste system." },
+        { "mr": "ख्रिश्चन धर्म स्वीकारलेल्या भारतीयांना त्यांच्या वडिलोपार्जित संपत्तीचा हक्क मिळवून देणे.", "en": "To allow Indians who converted to Christianity to inherit their ancestral property." },
+        { "mr": "आंतरजातीय विवाहांना कायदेशीर मान्यता देणे.", "en": "To give legal recognition to inter-caste marriages." },
+        { "mr": "दलित वर्गासाठी स्वतंत्र शाळा सुरू करणे.", "en": "To start separate schools for the depressed classes." }
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": {
+        "mr": "(१८५०): १८५० च्या लेक्स लोसी ॲक्ट (किंवा धार्मिक अक्षमता कायदा) नुसार, हिंदू धर्मातून ख्रिश्चन धर्म स्वीकारणाऱ्या व्यक्तीचा त्याच्या वडिलोपार्जित संपत्तीवरील हक्क अबाधित ठेवण्यात आला. भारतीयांनी याला धर्मांतराला प्रोत्साहन देणारा कायदा मानले, जे १८५७ च्या उठावाचे एक सामाजिक कारण बनले.\n\n[संदर्भ: समाधान महाजन]",
+        "en": "(1850): The Lex Loci Act (Caste Disabilities Removal Act of 1850) protected the inheritance rights of Hindus who converted to Christianity. Orthodox Indians viewed this as a direct British attack on their religion and a tool to encourage conversions.\n\n"
+      }
+    },
+    {
+      "id": 10,
+      "question": {
+        "mr": "योग्य जोड्या जुळवा (ब्राह्मो समाजातील फूट आणि त्यांचे नेते):\nगट अ: १) ब्राह्मो समाज, २) आदि ब्राह्मो समाज, ३) भारतीय ब्राह्मो समाज\nगट ब: अ) राजा राममोहन रॉय, ब) देवेंद्रनाथ टागोर, क) केशवचंद्र सेन",
+        "en": "Match the pairs (Split in Brahmo Samaj and their leaders):\nGroup A: 1) Brahmo Samaj, 2) Adi Brahmo Samaj, 3) Brahmo Samaj of India\nGroup B: a) Raja Rammohan Roy, b) Debendranath Tagore, c) Keshub Chandra Sen"
+      },
+      "options": [
+        { "mr": "1-अ, 2-ब, 3-क", "en": "1-a, 2-b, 3-c" },
+        { "mr": "1-ब, 2-अ, 3-क", "en": "1-b, 2-a, 3-c" },
+        { "mr": "1-अ, 2-क, 3-ब", "en": "1-a, 2-c, 3-b" },
+        { "mr": "1-क, 2-ब, 3-अ", "en": "1-c, 2-b, 3-a" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१८२८/१८६६): मूळ 'ब्राह्मो समाज' राजा राममोहन रॉय यांनी १८२८ मध्ये स्थापन केला. वैचारिक मतभेदांमुळे १८६६ मध्ये फूट पडली. केशवचंद्र सेन यांनी 'भारतीय ब्राह्मो समाज' (Brahmo Samaj of India) स्थापन केला, तर देवेंद्रनाथ टागोर यांच्या गटाला 'आदि ब्राह्मो समाज' (Adi Brahmo Samaj) म्हटले गेले.\n\n[संदर्भ: डॉ. स. शि. गाठाळ]",
+        "en": "(1828/1866): Brahmo Samaj was founded by Raja Rammohan Roy. Following a schism in 1866, Keshub Chandra Sen formed the 'Brahmo Samaj of India', while Debendranath Tagore's original faction became known as the 'Adi Brahmo Samaj'.\n\n"
+      }
+    },
+    {
+      "id": 11,
+      "question": {
+        "mr": "खालील विधाने तपासा:\nअ) दुसरा फॅक्टरी कायदा १८९१ मध्ये लॉर्ड लॅन्सडाउनच्या काळात संमत झाला.\nब) या कायद्याने महिलांचे कामाचे तास दिवसाला ११ तास निश्चित केले.\nकोणते विधान योग्य आहे?",
+        "en": "Check the following statements:\nA) The Second Factory Act was passed in 1891 during the tenure of Lord Lansdowne.\nB) This Act fixed the working hours for women at 11 hours per day.\nWhich statement is correct?"
+      },
+      "options": [
+        { "mr": "फक्त अ", "en": "Only A" },
+        { "mr": "फक्त ब", "en": "Only B" },
+        { "mr": "अ आणि ब दोन्ही", "en": "Both A and B" },
+        { "mr": "दोन्ही नाहीत", "en": "Neither A nor B" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "(१८९१): १८८१ च्या पहिल्या कायद्यात महिलांसाठी कोणतीही तरतूद नव्हती. नारायण मेघाजी लोखंडे यांच्या प्रयत्नांनंतर, लॉर्ड लॅन्सडाउनने १८९१ मध्ये दुसरा फॅक्टरी कायदा लागू केला. यात महिलांचे कामाचे तास दिवसाला ११ तास निश्चित केले गेले आणि आठवड्यातून एक दिवस (रविवार) सुट्टी दिली गेली.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1891): The Second Factory Act (1891), passed under Lord Lansdowne, applied to all factories employing 50 or more persons. It restricted working hours for women to 11 hours a day and provided a weekly holiday for all workers.\n\n"
+      }
+    },
+    {
+      "id": 12,
+      "question": {
+        "mr": "भारतीयांना विनापरवाना शस्त्रे बाळगण्यास बंदी घालणारा 'भारतीय शस्त्र कायदा' (Indian Arms Act) १८७८ मध्ये कोणी लागू केला?",
+        "en": "Who introduced the 'Indian Arms Act' in 1878, which prohibited Indians from carrying firearms without a license?"
+      },
+      "options": [
+        { "mr": "लॉर्ड डलहौसी", "en": "Lord Dalhousie" },
+        { "mr": "लॉर्ड लिटन (Lord Lytton)", "en": "Lord Lytton" },
+        { "mr": "लॉर्ड रिपन", "en": "Lord Ripon" },
+        { "mr": "लॉर्ड कर्झन", "en": "Lord Curzon" }
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": {
+        "mr": "(१८७८): लॉर्ड लिटन याने १८७८ मध्ये 'भारतीय शस्त्र कायदा' (Arms Act) लागू केला. या कायद्यानुसार भारतीयांना शस्त्र बाळगण्यासाठी परवाना (License) सक्तीचा करण्यात आला. मात्र युरोपीय आणि अँग्लो-इंडियन लोकांना यातून सूट देण्यात आली होती, ज्यामुळे या कायद्याचा मोठा विरोध झाला.\n\n[संदर्भ: अनिल कटारे]",
+        "en": "(1878): The Indian Arms Act of 1878 was enacted by Lord Lytton. It made it a criminal offense for Indians to keep, bear, or traffic in arms without a license, while explicitly exempting Europeans and Anglo-Indians from its provisions.\n\n"
+      }
+    },
+    {
+      "id": 13,
+      "question": {
+        "mr": "समाजसुधारक बेहरामजी मलबारी (B. M. Malabari) यांच्या अथक प्रयत्नांमुळे १८९१ मध्ये कोणता कायदा संमत झाला?",
+        "en": "Which Act was passed in 1891 due to the relentless efforts of social reformer Behramji Malabari (B. M. Malabari)?"
+      },
+      "options": [
+        { "mr": "हिंदू विधवा पुनर्विवाह कायदा", "en": "Hindu Widow Remarriage Act" },
+        { "mr": "संमती वय कायदा (Age of Consent Act)", "en": "Age of Consent Act" },
+        { "mr": "शारदा कायदा", "en": "Sarda Act" },
+        { "mr": "सती प्रतिबंधक कायदा", "en": "Abolition of Sati Act" }
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": {
+        "mr": "(१८९१): बेहरामजी मलबारी या पारशी समाजसुधारकाच्या प्रयत्नांतून १८९१ मध्ये 'संमती वय कायदा' (Age of Consent Act) पास झाला. या कायद्याने मुलींच्या विवाहाचे किमान वय १० वरून १२ वर्षे इतके वाढवले. लोकमान्य टिळकांनी या कायद्याला 'धर्मात सरकारी हस्तक्षेप' म्हणून विरोध केला होता.\n\n[संदर्भ: डॉ. स. शि. गाठाळ]",
+        "en": "(1891): Due to the campaigning of Parsi reformer B.M. Malabari, the Age of Consent Act was passed in 1891. It raised the age of consent for sexual intercourse for all girls, married or unmarried, from 10 to 12 years.\n\n"
+      }
+    },
+    {
+      "id": 14,
+      "question": {
+        "mr": "पंजाबमध्ये शीख धर्मातील शुद्धीकरणासाठी सुरू झालेली 'कुका चळवळ' (Kuka Movement) नंतर राजकीय चळवळीत रूपांतरित झाली. या चळवळीचे प्रमुख नेते कोण होते?",
+        "en": "The 'Kuka Movement', which started as a religious purification campaign among Sikhs in Punjab, later turned into a political movement. Who was its prominent leader?"
+      },
+      "options": [
+        { "mr": "बाबा दयाल दास", "en": "Baba Dayal Das" },
+        { "mr": "गुरु राम सिंग (Guru Ram Singh)", "en": "Guru Ram Singh" },
+        { "mr": "रणजित सिंग", "en": "Ranjit Singh" },
+        { "mr": "तेग बहादूर", "en": "Tegh Bahadur" }
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": {
+        "mr": "( १८४०/१८७२): कुका चळवळ (नामधारी चळवळ) १८४० च्या दशकात 'भगत जवाहरमल' (सियान साहेब) यांनी सुरू केली. मात्र गुरु राम सिंग यांच्या नेतृत्वाखाली तिने ब्रिटिशांविरुद्ध राजकीय स्वरूप धारण केले. १८७२ मध्ये राम सिंग यांना अटक करून रंगूनला हद्दपार करण्यात आले.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1840/1872): The Kuka (Namdhari) Movement was founded by Bhagat Jawahar Mal in 1840. Under Baba Ram Singh, it acquired a political dimension aimed at overthrowing British rule in Punjab. Ram Singh was exiled to Rangoon in 1872.\n\n"
+      }
+    },
+    {
+      "id": 15,
+      "question": {
+        "mr": "बंगालमध्ये वेदांत तत्त्वज्ञानाचा प्रसार करण्यासाठी १८३९ मध्ये 'तत्त्वबोधिनी सभा' (Tattvabodhini Sabha) कोणी स्थापन केली?",
+        "en": "Who founded the 'Tattvabodhini Sabha' in 1839 in Bengal to propagate the philosophy of Vedanta?"
+      },
+      "options": [
+        { "mr": "राजा राममोहन रॉय", "en": "Raja Rammohan Roy" },
+        { "mr": "देवेंद्रनाथ टागोर (Debendranath Tagore)", "en": "Debendranath Tagore" },
+        { "mr": "ईश्वरचंद्र विद्यासागर", "en": "Ishwar Chandra Vidyasagar" },
+        { "mr": "रवींद्रनाथ टागोर", "en": "Rabindranath Tagore" }
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": {
+        "mr": "(१८३९): देवेंद्रनाथ टागोर यांनी १८३९ मध्ये 'तत्त्वबोधिनी सभा' स्थापन केली आणि 'तत्त्वबोधिनी पत्रिका' हे बंगाली भाषेतील मासिक सुरू केले. नंतर १८४२ मध्ये देवेंद्रनाथ टागोर ब्राह्मो समाजात सामील झाले आणि या सभेचे ब्राह्मो समाजात विलीनीकरण झाले.\n\n[संदर्भ: समाधान महाजन]",
+        "en": "(1839): Debendranath Tagore established the Tattvabodhini Sabha in 1839 to systematize the propagation of Raja Rammohan Roy's ideas and Vedanta philosophy. It also published a journal called Tattvabodhini Patrika.\n\n"
+      }
+    },
+    {
+      "id": 16,
+      "question": {
+        "mr": "मॅडम ब्लाव्हॅट्सकी आणि कर्नल ऑल्कॉट यांनी स्थापन केलेल्या 'थिऑसॉफिकल सोसायटी' (Theosophical Society) चे आंतरराष्ट्रीय मुख्यालय भारतात कोठे स्थापन करण्यात आले?",
+        "en": "Where was the international headquarters of the 'Theosophical Society', founded by Madame Blavatsky and Colonel Olcott, established in India?"
+      },
+      "options": [
+        { "mr": "कलकत्ता", "en": "Calcutta" },
+        { "mr": "वाराणसी", "en": "Varanasi" },
+        { "mr": "अड्यार (Adyar - मद्रास)", "en": "Adyar (Madras)" },
+        { "mr": "पुणे", "en": "Pune" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "(१८८२): थिऑसॉफिकल सोसायटीची मूळ स्थापना १८७५ मध्ये न्यूयॉर्क (अमेरिका) येथे झाली. परंतु १८८२ मध्ये त्यांनी आपले आंतरराष्ट्रीय मुख्यालय मद्रास जवळील 'अड्यार' (Adyar) येथे स्थलांतरित केले. नंतर ॲनी बेझंट यांनी ही चळवळ भारतात लोकप्रिय केली.\n\n[संदर्भ: डॉ. स. शि. गाठाळ / स्पेक्ट्रम]",
+        "en": "(1882): Originally founded in New York in 1875 by H.P. Blavatsky and H.S. Olcott, the Theosophical Society shifted its international headquarters to Adyar, near Madras (Chennai), in 1882.\n\n"
+      }
+    },
+    {
+      "id": 17,
+      "question": {
+        "mr": "खालील विधाने विचारात घ्या:\nअ) १८९९-१९०० च्या भयंकर दुष्काळानंतर लॉर्ड कर्झनने 'मॅकडोनेल आयोग' (MacDonnell Commission) नेमला.\nब) या आयोगाने दुष्काळ निवारणासाठी 'नैतिक धोरणापेक्षा' प्रशासकीय तयारीवर भर देण्याची शिफारस केली.\nवरीलपैकी कोणते/ती विधान/ने योग्य आहेत?",
+        "en": "Consider the following statements:\nA) After the severe famine of 1899-1900, Lord Curzon appointed the 'MacDonnell Commission'.\nB) This commission recommended emphasizing administrative preparedness over 'moral policy' for famine relief.\nWhich of the above statement(s) is/are correct?"
+      },
+      "options": [
+        { "mr": "फक्त अ", "en": "Only A" },
+        { "mr": "फक्त ब", "en": "Only B" },
+        { "mr": "दोन्ही अ आणि ब", "en": "Both A and B" },
+        { "mr": "दोन्ही नाहीत", "en": "Neither A nor B" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "(१९००): लॉर्ड कर्झनने १९०० मध्ये सर अँटनी मॅकडोनेल यांच्या अध्यक्षतेखाली दुष्काळ आयोग नेमला. या आयोगाने स्पष्ट केले की दुष्काळात लोकांना मदत करणे ही सरकारची जबाबदारी आहे आणि दुष्काळ पडण्यापूर्वीच योग्य धोरणे (Moral Strategy) व बियाणे, जनावरे वाटप यांसारख्या उपाययोजना तयार असाव्यात.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1900): Following the devastating famine of 1899-1900, Lord Curzon appointed a commission under Sir Anthony MacDonnell. It stressed that relief measures should be provided as a matter of right and advocated a strategy of 'moral strategy' and better administrative preparedness.\n\n"
+      }
+    },
+    {
+      "id": 18,
+      "question": {
+        "mr": "खालीलपैकी कोणत्या कायद्याने सुप्रीम कोर्ट (Supreme Court) आणि सदर अदालती रद्द करून कलकत्ता, बॉम्बे आणि मद्रास येथे 'उच्च न्यायालयांची' (High Courts) स्थापना केली?",
+        "en": "Which of the following acts abolished the Supreme Courts and Sadar Adalats and established 'High Courts' at Calcutta, Bombay, and Madras?"
+      },
+      "options": [
+        { "mr": "१८३३ चा चार्टर ॲक्ट", "en": "Charter Act of 1833" },
+        { "mr": "१८५८ चा भारत सरकार कायदा", "en": "Government of India Act 1858" },
+        { "mr": "१८६१ चा भारतीय उच्च न्यायालय कायदा (Indian High Courts Act 1861)", "en": "Indian High Courts Act 1861" },
+        { "mr": "१९३५ चा भारत सरकार कायदा", "en": "Government of India Act 1935" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "(१८६१): 'भारतीय उच्च न्यायालय कायदा १८६१' (Indian High Courts Act) नुसार, जुनी सर्वोच्च न्यायालये आणि सदर अदालती विलीन करण्यात आल्या. यानुसार १८६२ मध्ये कलकत्ता, बॉम्बे आणि मद्रास येथे तीन नवीन उच्च न्यायालये (High Courts) स्थापन झाली.\n\n[संदर्भ: एम. लक्ष्मीकांत]",
+        "en": "(1861): The Indian High Courts Act of 1861 authorized the Crown to establish High Courts of judicature at Calcutta, Madras, and Bombay. Consequently, the old Supreme Courts and Sadar Adalats were amalgamated into these newly created High Courts in 1862.\n\n"
+      }
+    },
+    {
+      "id": 19,
+      "question": {
+        "mr": "२८ डिसेंबर १८८५ रोजी 'भारतीय राष्ट्रीय काँग्रेसची' (Indian National Congress) स्थापना झाली, तेव्हा भारताचा व्हाइसरॉय कोण होता?",
+        "en": "Who was the Viceroy of India when the 'Indian National Congress' was founded on December 28, 1885?"
+      },
+      "options": [
+        { "mr": "लॉर्ड रिपन", "en": "Lord Ripon" },
+        { "mr": "लॉर्ड डफरिन (Lord Dufferin)", "en": "Lord Dufferin" },
+        { "mr": "लॉर्ड लॅन्सडाउन", "en": "Lord Lansdowne" },
+        { "mr": "लॉर्ड एल्गिन दुसरा", "en": "Lord Elgin II" }
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": {
+        "mr": "(१८८५): ॲलन ऑक्टेव्हियन ह्युम (A.O. Hume) यांच्या पुढाकाराने १८८५ मध्ये मुंबईत काँग्रेसची स्थापना झाली. त्यावेळी 'लॉर्ड डफरिन' (१८४८-१८८८) हा भारताचा व्हाइसरॉय होता. सुरुवातीला डफरिनने काँग्रेसला अनुकूलता दर्शवली, पण नंतर त्याने काँग्रेसला 'मूठभर लोकांचे प्रतिनिधित्व करणारी संस्था' (Microscopic minority) म्हणून हिणवले.\n\n[संदर्भ: समाधान महाजन / अनिल कटारे]",
+        "en": "(1885): Lord Dufferin was the Viceroy of India from 1884 to 1888. The Indian National Congress was founded during his tenure in 1885. He later famously ridiculed it as representing only a 'microscopic minority' of the people.\n\n"
+      }
+    },
+    {
+      "id": 20,
+      "question": {
+        "mr": "ब्रिटिश भारतात 'महानगरपालिकेची' (Municipal Corporation) पहिली स्थापना १६८७ मध्ये कोणत्या शहरात झाली होती?",
+        "en": "In which city was the first 'Municipal Corporation' established in British India in 1687?"
+      },
+      "options": [
+        { "mr": "कलकत्ता", "en": "Calcutta" },
+        { "mr": "बॉम्बे", "en": "Bombay" },
+        { "mr": "मद्रास (Madras)", "en": "Madras" },
+        { "mr": "सुरत", "en": "Surat" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "(१६८७): भारतातील स्थानिक स्वराज्य संस्थांचा इतिहास जुना आहे. ब्रिटिश इस्ट इंडिया कंपनीने सर्वात आधी १६८७ मध्ये 'मद्रास' (सध्याचे चेन्नई) शहरासाठी भारताची पहिली महानगरपालिका स्थापन केली होती. त्यानंतर १७२६ मध्ये बॉम्बे व कलकत्ता येथे महानगरपालिका स्थापन झाल्या.\n\n[संदर्भ: एम. लक्ष्मीकांत]",
+        "en": "(1687): The first Municipal Corporation in India was set up in Madras in 1687. Later, in 1726, Municipal Corporations were established in Bombay and Calcutta.\n\n"
+      }
+    },
+    {
+      "id": 21,
+      "question": {
+        "mr": "बंगालमधील निळीच्या उठावानंतर, १८६० मध्ये ब्रिटिशांनी कोणाच्या अध्यक्षतेखाली 'निळ आयोग' (Indigo Commission) स्थापन केला?",
+        "en": "Following the Indigo Revolt in Bengal, under whose chairmanship did the British set up the 'Indigo Commission' in 1860?"
+      },
+      "options": [
+        { "mr": "डब्लू. एस. सेटनकार (W. S. Seton-Karr)", "en": "W. S. Seton-Karr" },
+        { "mr": "जेम्स विल्सन", "en": "James Wilson" },
+        { "mr": "चार्ल्स वुड", "en": "Charles Wood" },
+        { "mr": "थॉमस मुन्रो", "en": "Thomas Munro" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१८६०): निळ उत्पादक शेतकऱ्यांच्या भयंकर उठावानंतर (१८५९) बंगाल सरकारने मार्च १८६० मध्ये डब्लू. एस. सेटनकार (W. S. Seton-Karr) यांच्या अध्यक्षतेखाली 'निळ आयोग' नेमला. या आयोगाने शेतकऱ्यांवरील अत्याचार मान्य केले आणि निळीची शेती सक्तीची नसावी असा अहवाल दिला.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1860): In response to the Indigo Revolt, the government appointed the Indigo Commission in March 1860 under the presidency of W. S. Seton-Karr. The commission's report was sympathetic to the peasants, declaring that they could not be compelled to grow indigo.\n\n"
+      }
+    },
+    {
+      "id": 22,
+      "question": {
+        "mr": "१७९२ च्या 'श्रीरंगपट्टणमच्या तहानुसार' (Treaty of Srirangapatna) कोणत्या शासकाला आपले अर्धे राज्य ब्रिटिशांना आणि त्यांच्या मित्रपक्षांना द्यावे लागले?",
+        "en": "According to the 'Treaty of Srirangapatna' of 1792, which ruler had to cede half of his kingdom to the British and their allies?"
+      },
+      "options": [
+        { "mr": "हैदर अली", "en": "Hyder Ali" },
+        { "mr": "टीपू सुलतान (Tipu Sultan)", "en": "Tipu Sultan" },
+        { "mr": "दुसरा बाजीराव पेशवा", "en": "Peshwa Baji Rao II" },
+        { "mr": "निजाम अली", "en": "Nizam Ali" }
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": {
+        "mr": "(१७९२): तिसऱ्या इंग्रज-म्हैसूर युद्धात लॉर्ड कॉर्नवॉलिसने (मराठे आणि निजामाच्या मदतीने) टीपू सुलतानचा पराभव केला. मार्च १७९२ च्या श्रीरंगपट्टणमच्या तहानुसार, टीपू सुलतानाला आपले अर्धे राज्य, ३ कोटी रुपये युद्धदंड आणि आपली दोन मुले ओलीस म्हणून इंग्रजांना द्यावी लागली.\n\n[संदर्भ: अनिल कटारे / समाधान महाजन]",
+        "en": "(1792): The Third Anglo-Mysore War ended with the Treaty of Srirangapatna signed between Lord Cornwallis and Tipu Sultan. Tipu had to cede half of his dominions, pay a heavy war indemnity of 3 crore rupees, and surrender two of his sons as hostages.\n\n"
+      }
+    },
+    {
+      "id": 23,
+      "question": {
+        "mr": "वॉरन हेस्टिंग्सच्या कार्यकाळातील 'रोहिला युद्ध' (Rohilla War - १७७४) खालीलपैकी कोणाच्या मदतीसाठी पुकारण्यात आले होते?",
+        "en": "The 'Rohilla War' (1774) during the tenure of Warren Hastings was waged in support of whom?"
+      },
+      "options": [
+        { "mr": "मराठ्यांच्या मदतीसाठी", "en": "In support of the Marathas" },
+        { "mr": "अवधच्या नवाबाच्या मदतीसाठी (Nawab of Awadh)", "en": "In support of the Nawab of Awadh" },
+        { "mr": "निजामाच्या मदतीसाठी", "en": "In support of the Nizam" },
+        { "mr": "राजपूत राजांच्या मदतीसाठी", "en": "In support of the Rajput kings" }
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": {
+        "mr": "(१७७४): वॉरन हेस्टिंग्सने अवधचा नवाब 'शुजा-उद-दौला' याला पैशाच्या बदल्यात ब्रिटिश सैन्य पुरवले. या सैन्याच्या मदतीने नवाबाने रोहिलखंडावर (सध्याचा बरेली भाग) आक्रमण केले आणि रोहिला अफगाणांचा पराभव केला. या युद्धामुळे वॉरन हेस्टिंग्सवर इंग्लंडमध्ये खूप टीका झाली.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1774): The First Rohilla War of 1774 was a punitive campaign by the Nawab of Awadh, Shuja-ud-Daula, against the Rohillas (Afghan highlanders) with the military support provided by Governor-General Warren Hastings in exchange for money.\n\n"
+      }
+    },
+    {
+      "id": 24,
+      "question": {
+        "mr": "लॉर्ड वेलस्लीच्या 'तैनाती फौजेचा' (Subsidiary Alliance) स्वीकार करणाऱ्या राज्यांचा योग्य कालानुक्रम कोणता?",
+        "en": "What is the correct chronological order of the states that accepted Lord Wellesley's 'Subsidiary Alliance'?"
+      },
+      "options": [
+        { "mr": "हैदराबाद, म्हैसूर, तंजावर, अवध", "en": "Hyderabad, Mysore, Tanjore, Awadh" },
+        { "mr": "म्हैसूर, हैदराबाद, अवध, तंजावर", "en": "Mysore, Hyderabad, Awadh, Tanjore" },
+        { "mr": "अवध, हैदराबाद, तंजावर, म्हैसूर", "en": "Awadh, Hyderabad, Tanjore, Mysore" },
+        { "mr": "हैदराबाद, अवध, म्हैसूर, तंजावर", "en": "Hyderabad, Awadh, Mysore, Tanjore" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१७९८-१८०१): तैनाती फौजेचा स्वीकार करणारी राज्ये क्रमाने - १) हैदराबादचा निजाम (१७९८ आणि १८००), २) म्हैसूर (१७९९ - चौथ्या युद्धानंतर), ३) तंजावर (१७९९), ४) अवधचा नवाब (१८०१), आणि ५) मराठा पेशवा (१८०२ - वसईचा तह).\n\n[संदर्भ: डॉ. स. शि. गाठाळ]",
+        "en": "(1798-1801): The order of states accepting the Subsidiary Alliance: Nizam of Hyderabad (1798), Mysore (1799 after Tipu's death), Tanjore (1799), Nawab of Awadh (1801), and the Peshwa (1802).\n\n"
+      }
+    },
+    {
+      "id": 25,
+      "question": {
+        "mr": "बंगालमधील पुरोगामी विचारवंत तरुणांची 'यंग बंगाल चळवळ' (Young Bengal Movement) कोणी सुरू केली होती?",
+        "en": "Who started the progressive 'Young Bengal Movement' among the youth in Bengal?"
+      },
+      "options": [
+        { "mr": "राजा राममोहन रॉय", "en": "Raja Rammohan Roy" },
+        { "mr": "ईश्वरचंद्र विद्यासागर", "en": "Ishwar Chandra Vidyasagar" },
+        { "mr": "हेन्री विवियन डेरोझिओ (Henry Vivian Derozio)", "en": "Henry Vivian Derozio" },
+        { "mr": "मायकेल मधुसूदन दत्त", "en": "Michael Madhusudan Dutt" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "(१८२६-१८३१): हिंदू कॉलेजमध्ये प्राध्यापक असलेल्या 'हेन्री लुईस विवियन डेरोझिओ' या तरुण अँग्लो-इंडियन शिक्षकाने 'यंग बंगाल चळवळ' सुरू केली. त्याने आपल्या विद्यार्थ्यांना मुक्त विचार, तर्कवाद (Rationality) आणि अंधश्रद्धांना विरोध करण्याचे शिक्षण दिले. १८३१ मध्ये कॉलरामुळे वयाच्या अवघ्या २२ व्या वर्षी त्याचे निधन झाले.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / समाधान महाजन]",
+        "en": "(1826-1831): The Young Bengal Movement was initiated by Henry Louis Vivian Derozio, a brilliant young teacher at Hindu College, Calcutta. He inspired his followers to think freely, question all authority, and oppose irrational orthodox customs.\n\n"
+      }
+    }
+  ]
+}

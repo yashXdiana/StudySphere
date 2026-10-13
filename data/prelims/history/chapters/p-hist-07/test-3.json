@@ -1,0 +1,464 @@
+{
+  "testId": "p-hist-07-t3",
+  "title": {
+    "mr": "भारतीय राष्ट्रीय चळवळ (क्रांतिकारी चळवळी व INA) — सराव 3",
+    "en": "Indian National Movement (Revolutionary Movements & INA) — Practice Test 3"
+  },
+  "durationMinutes": 20,
+  "marksPerQuestion": 1,
+  "negativeMarking": 0.25,
+  "totalMarks": 25,
+  "difficulty": "मध्यम ते काठिण्य",
+  "questions": [
+    {
+      "id": 1,
+      "question": {
+        "mr": "महाराष्ट्रात चाफेकर बंधूंनी (दामोदर आणि बाळकृष्ण) पुण्यात प्लेग कमिश्नर रँड (Rand) व आहरस्ट यांची हत्या कोणत्या वर्षी केली होती?",
+        "en": "In which year did the Chapekar brothers (Damodar and Balkrishna) assassinate Plague Commissioner Rand and Lieutenant Ayerst in Pune?"
+      },
+      "options": [
+        { "mr": "२२ जून १८९७ (June 22, 1897)", "en": "June 22, 1897" },
+        { "mr": "१८९९", "en": "1899" },
+        { "mr": "१९०४", "en": "1904" },
+        { "mr": "१८९२", "en": "1892" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१८९७): पुण्यातील प्लेगच्या काळात ब्रिटिश अधिकारी रँड याने केलेल्या अमानुष व सक्तीच्या जाचाविरुद्ध संताप येऊन २२ जून १८९७ रोजी राणीच्या हिरक महोत्सवाच्या दिवशी चाफेकर बंधूंनी रँड आणि आहरस्ट यांची हत्या केली. हा महाराष्ट्रातील पहिलाच संघटित क्रांतिकारी लाभा मानला जातो.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / डॉ. स. शि. गाठाळ]",
+        "en": "(1897): In response to the brutal and high-handed measures implemented during the Pune plague epidemic, the Chapekar brothers assassinated Plague Commissioner Rand and Lieutenant Ayerst on June 22, 1897.\n\n"
+      }
+    },
+    {
+      "id": 2,
+      "question": {
+        "mr": "विनायक दामोदर सावरकर (वि. दा. सावरकर) यांनी नाशिक येथे 'मित्रमेळा' या गुप्त संघटनेचे रूपांतर १८९९ मध्ये कोणत्या प्रसिद्ध क्रांतिकारी संघटनेत केले होते?",
+        "en": "Into which famous secret revolutionary society was V.D. Savarkar's 'Mitra Mela' transformed in 1899/1904?"
+      },
+      "options": [
+        { "mr": "अभिनव भारत (Abhinav Bharat)", "en": "Abhinav Bharat" },
+        { "mr": "अनुशीलन समिती", "en": "Anushilan Samiti" },
+        { "mr": "गदर पार्टी", "en": "Ghadar Party" },
+        { "mr": "हिंदुस्तान रिपब्लिकन असोसिएशन", "en": "Hindustan Republican Association" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९०४): सावरकरांनी १८९९ मध्ये स्थापन केलेल्या 'मित्रमेळा' चे १९०४ मध्ये 'अभिनव भारत' या गुप्त क्रांतिकारी समाजात नामांतर केले. या संघटनेने महाराष्ट्रात आणि पुढे लंडनमध्ये क्रांतिकारी कार्याचा प्रसार केला.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / समाधान महाजन]",
+        "en": "(1904): V.D. Savarkar transformed his earlier youth group 'Mitra Mela' into the secret revolutionary society 'Abhinav Bharat' in 1904, promoting armed resistance against British rule.\n\n"
+      }
+    },
+    {
+      "id": 3,
+      "question": {
+        "mr": "बंगालमध्ये प्रफुल्ल चाकी आणि खुदीराम बोस यांनी मुजफ्फरपूर येथे ब्रिटिश न्यायधीश किंग्सफोर्डच्या गाडीवर बॉम्बफेक कधी केली होती?",
+        "en": "When did Prafulla Chaki and Khudiram Bose throw a bomb at British judge Kingsford's carriage in Muzaffarpur?"
+      },
+      "options": [
+        { "mr": "३० एप्रिल १९०८ (April 30, 1908)", "en": "April 30, 1908" },
+        { "mr": "११ मे १९०७", "en": "May 11, 1907" },
+        { "mr": "२५ डिसेंबर १९०९", "en": "December 25, 1909" },
+        { "mr": "१५ ऑगस्ट १९०६", "en": "August 15, 1906" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९०८): ३० एप्रिल १९०८ रोजी मुजफ्फरपूर येथे ज्युनिअर न्यायाधीश किंग्सफोर्डच्या गाडीवर प्रफुल्ल चाकी व खुदीराम बोस यांनी बॉम्ब टाकला, पण अपघाताने त्या गाडीत मरे व केनेडी या ब्रिटीश महिला प्रवास करत असल्याने त्यांचा मृत्यू झाला. यानंतर प्रफुल्ल चाकींनी आत्मबलिदान दिले तर खुदीराम बोसांना फाशी झाली.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1908): On April 30, 1908, Prafulla Chaki and Khudiram Bose targeted magistrate Kingsford in Muzaffarpur, mistakenly killing two British women instead. Chaki shot himself upon capture, while Khudiram Bose was hanged.\n\n"
+      }
+    },
+    {
+      "id": 4,
+      "question": {
+        "mr": "लाला हरदयाल आणि सोहन सिंह भाकना यांनी १९१३ मध्ये अमेरिकेतील सॅन फ्रान्सिस्को येथे कोणत्या प्रसिद्ध 'गदर पार्टीची' (Ghadar Party) स्थापना केली?",
+        "en": "In which year and place was the 'Ghadar Party' founded by Lala Hardayal and Sohan Singh Bhakna?"
+      },
+      "options": [
+        { "mr": "नोव्हेंबर १९१३, सॅन फ्रान्सिस्को (युनायटेड स्टेट्स)", "en": "November 1913, San Francisco (USA)" },
+        { "mr": "ऑगस्ट १९१५, टोकियो (जपान)", "en": "August 1915, Tokyo (Japan)" },
+        { "mr": "मार्च १९०७, बर्लिन (जर्मनी)", "en": "March 1907, Berlin (Germany)" },
+        { "mr": "जानेवारी १९११, लंडन (ब्रिटन)", "en": "January 1911, London (Britain)" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९१३): लाला हरदयाल, सोहन सिंह भाकना आणि इतर परदेशी भारतीयांनी अमेरिकेतील सॅन फ्रान्सिस्को येथे नोव्हेंबर १९१३ मध्ये 'पॅसिफिक कोस्ट हिंदुस्थान असोसिएशन' अर्थात 'गदर पार्टी' स्थापन केली. 'गदर' हे त्यांचे वृत्तपत्र होते.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / डॉ. स. शि. गाठाळ]",
+        "en": "(1913): The Ghadar Party was founded in November 1913 in San Francisco, USA, by Lala Hardayal and Sohan Singh Bhakna to mobilize overseas Indians for an armed revolt against the British.\n\n"
+      }
+    },
+    {
+      "id": 5,
+      "question": {
+        "mr": "१९१५ मधील 'गादर कटाची' (Ghadar Conspiracy) योजना अपयशी ठरण्याचे मुख्य कारण काय होते?",
+        "en": "What was the primary reason for the failure of the 1915 Ghadar Mutiny/Conspiracy plan in India?"
+      },
+      "options": [
+        { "mr": "ब्रिटीश गुप्तहेरांकडून आधीच माहिती फुटणे आणि फितुरी (British intelligence and betrayal / pre-mature leakage)", "en": "Pre-mature leakage of plans and betrayal through British intelligence" },
+        { "mr": "शस्त्रास्त्रांचा अपुरा पुरवठा", "en": "Inadequate supply of weapons" },
+        { "mr": "स्थानिक जनतेचा पूर्ण विरोध", "en": "Total public opposition" },
+        { "mr": "नेत्यांनी ऐनवेळी पलायन करणे", "en": "Leaders fleeing at the last minute" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९१५): प्रथम महायुद्धाच्या काळात भारतात सैन्यात बंड घडवून आणण्यासाठी गादर नेत्यांनी २१ फेब्रुवारी १९१५ ही तारीख ठरवली होती, परंतु ब्रिटीश गुप्तहेरांना आधीच माहिती मिळाल्यामुळे आणि फितुरीमुळे हा कट उधळला गेला.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1915): The planned pan-Indian mutiny by the Ghadarites on February 21, 1915, was aborted due to British intelligence infiltration, betrayal, and premature crackdown.\n\n"
+      }
+    },
+    {
+      "id": 6,
+      "question": {
+        "mr": "९ ऑगस्ट १९२५ रोजी झालेल्या प्रसिद्ध 'काकोरी ट्रेन डल्ला' (Kakori Conspiracy / Train Robbery) मध्ये खालीलपैकी कोणत्या क्रांतिकारकांचा प्रमुख सहभाग नव्हता (किंवा होता)?",
+        "en": "Which of the following revolutionaries were key masterminds behind the famous 'Kakori Train Robbery' of August 9, 1925?"
+      },
+      "options": [
+        { "mr": "रामप्रसाद बिस्मिल, अशफाक उल्ला खान, राजेंद्रनाथ लाहिरी व चंद्रशेखर आजाद", "en": "Ramprasad Bismil, Ashfaqulla Khan, Rajendra Lahiri and Chandrashekhar Azad" },
+        { "mr": "फक्त चाफेकर बंधू", "en": "Only Chapekar brothers" },
+        { "mr": "फक्त भगत सिंग व सुखदेव", "en": "Only Bhagat Singh and Sukhdev" },
+        { "mr": "फक्त बाजीराव व तात्या", "en": "Only Bajirao and Tatya" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९२५): हिंदुस्तान रिपब्लिकन असोसिएशनच्या (HRA) क्रांतिकारकांनी ९ ऑगस्ट १९२५ रोजी लखनौजवळ काकोरी येथे सरकारी रेल्वे तिजोरी लुटली. या प्रकरणात बिस्मिल, अशफाक, लाहिरी व रोशन सिंग यांना फाशी झाली तर चंद्रशेखर आजाद निसटण्यात यशस्वी झाले.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / समाधान महाजन]",
+        "en": "(1925): HRA revolutionaries including Ramprasad Bismil, Ashfaqulla Khan, and Chandrashekhar Azad executed the daring Kakori train robbery to acquire funds for revolutionary activities.\n\n"
+      }
+    },
+    {
+      "id": 7,
+      "question": {
+        "mr": "चंद्रशेखर आजाद आणि भगत सिंग यांनी सप्टेंबर १९२८ मध्ये दिल्लीच्या फिरोजशाह कोटला मैदानावर कोणत्या क्रांतिकारी संघटनेची स्थापना केली?",
+        "en": "Which revolutionary organization was founded by Chandrashekhar Azad, Bhagat Singh, and others at Ferozshah Kotla, Delhi, in September 1928?"
+      },
+      "options": [
+        { "mr": "हिंदुस्तान सोशलिस्ट रिपब्लिकन असोसिएशन (HSRA - १९२८)", "en": "Hindustan Socialist Republican Association (HSRA)" },
+        { "mr": "अभिनव भारत", "en": "Abhinav Bharat" },
+        { "mr": "अनुशीलन समिती", "en": "Anushilan Samiti" },
+        { "mr": "इंडियन रिपब्लिकन आर्मी", "en": "Indian Republican Army" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९२८): सप्टेंबर १९२८ मध्ये दिल्लीत झालेल्या बैठकीत चंद्रशेखर आजाद, भगत सिंग, सुखदेव आणि भगवती चरण बोहरा यांनी जुन्या HRA मध्ये समाजवादाचा (Socialism) आदर्श जोडत 'हिंदुस्तान सोशलिस्ट रिपब्लिकन असोसिएशन' (HSRA) ची स्थापना केली.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / डॉ. स. शि. गाठाळ]",
+        "en": "(1928): In September 1928, Chandrashekhar Azad, Bhagat Singh, and their comrades transformed the HRA into the Hindustan Socialist Republican Association (HSRA), incorporating socialist ideals.\n\n"
+      }
+    },
+    {
+      "id": 8,
+      "question": {
+        "mr": "लाला लजपत राय यांच्या मृत्यूचा बदला घेण्यासाठी डिसेंबर १९२८ मध्ये लाहोरमध्ये कोणत्या ब्रिटिश सांडर्स (Saunders) पोलिस अधिकाऱ्याची हत्या करण्यात आली?",
+        "en": "Which British police official was assassinated in Lahore in December 1928 by HSRA revolutionaries to avenge Lala Lajpat Rai's death?"
+      },
+      "options": [
+        { "mr": "असिस्टंट सुपरिंटेंडंट जॉन सांडर्स (Assistant Superintendent John Saunders)", "en": "Assistant Superintendent John Saunders" },
+        { "mr": "प्लेग कमिश्नर रँड", "en": "Plague Commissioner Rand" },
+        { "mr": "जनरल डायर", "en": "General Dyer" },
+        { "mr": "मॅग्जिस्ट्रेट किंग्सफोर्ड", "en": "Magistrate Kingsford" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९२८): लालाजींच्या मृत्यूस कारणीभूत ठरलेला सांडस (Saunders) याला ठार मारण्याचा कट भगत सिंग, राजगुरु आणि चंद्रशेखर आजाद यांनी रचला आणि १७ डिसेंबर १९२८ रोजी सांडर्सची गोळ्या झाडून हत्या केली.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1928): To avenge Lala Lajpat Rai's death, Bhagat Singh, Rajguru, and Chandrashekhar Azad shot and killed British police official John Saunders in Lahore in December 1928.\n\n"
+      }
+    },
+    {
+      "id": 9,
+      "question": {
+        "mr": "भगत सिंग आणि बटुकेश्वर दत्त यांनी केंद्रीय कायदेमंडळात (Central Legislative Assembly) ८ एप्रिल १९२९ रोजी काय फेकले, ज्याचा उद्देश 'बीडूक ऐकू घालणे' हा होता?",
+        "en": "What did Bhagat Singh and Batukeshwar Dutt throw inside the Central Legislative Assembly on April 8, 1929, to 'make the deaf hear'?"
+      },
+      "options": [
+        { "mr": "धुराचे बॉम्ब व पर्चे (Low-intensity smoke bombs and leaflets)", "en": "Smoke bombs and pamphlets" },
+        { "mr": "सशस्त्र डायनामाइट", "en": "Dynamite sticks" },
+        { "mr": "काळ्या झेंड्यांचे बंडल", "en": "Bundles of black flags" },
+        { "mr": "सरकारी कागदपत्रे", "en": "Government documents" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९२९): सार्वजनिक सुरक्षा बिल (Public Safety Bill) आणि व्यापार विवाद बिलाच्या निषेधार्थ ८ एप्रिल १९२९ रोजी भगत सिंग व बटुकेश्वर दत्त यांनी असेंब्लीत साधे धुराचे बॉम्ब फेकले आणि 'इन्कलाब जिंदाबाद' च्या घोषणा देत पर्चे उडाले, आणि स्वतःला स्वेच्छेने अटक करून दिली.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / अनिल कटारे]",
+        "en": "(1929): To protest repressive bills and awaken the colonial administration, Bhagat Singh and Batukeshwar Dutt threw harmless smoke bombs and leaflets inside the Assembly, shouting 'Inquilab Zindabad'.\n\n"
+      }
+    },
+    {
+      "id": 10,
+      "question": {
+        "mr": "लाहोर षडयंत्र खटल्यात फाशीची शिक्षा सुनावल्यानंतर २३ मार्च १९३१ रोजी कोणत्या तीन क्रांतिकारकांना लाहोर तुरुंगात फाशी दिली गेली?",
+        "en": "Which three revolutionaries were executed in Lahore jail on March 23, 1931, in connection with the Lahore Conspiracy Case?"
+      },
+      "options": [
+        { "mr": "भगत सिंग, राजगुरु आणि सुखदेव (Bhagat Singh, Sukhdev and Rajguru)", "en": "Bhagat Singh, Sukhdev and Rajguru" },
+        { "mr": "रामप्रसाद बिस्मिल, अशफाक उल्ला व रोशन सिंग", "en": "Ramprasad Bismil, Ashfaqulla and Roshan Singh" },
+        { "mr": "चाफेकर बंधू", "en": "Chapekar brothers" },
+        { "mr": "सूर्य सेन व आनंद गुप्ता", "en": "Surya Sen and others" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९३१): लाहोर षडयंत्र खटल्यात भगत सिंग, सुखदेव आणि राजगुरु यांना फाशीची शिक्षा सुनावली गेली. ठरलेल्या वेळेच्या आदल्या दिवशीच २३ मार्च १९३१ च्या संध्याकाळी या तिन्ही महान क्रांतिकारकांना लाहोर तुरुंगात फाशी दिली गेली (हा दिवस 'शहीद दिन' म्हणून पाळला जातो).\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / डॉ. स. शि. गाठाळ]",
+        "en": "(1931): Bhagat Singh, Sukhdev, and Rajguru were hanged in Lahore jail on March 23, 1931, a date commemorated nationwide as Martyrs' Day (Shaheed Diwas).\n\n"
+      }
+    },
+    {
+      "id": 11,
+      "question": {
+        "mr": "चित्तोगाव येथे १८ एप्रिल १९३० रोजी ब्रिटिश शस्त्रागार (Armoury Raid) लुटीचे नेतृत्व कोणी केले होते, ज्यांना 'मास्तरदा' म्हणून ओळखले जात असे?",
+        "en": "Who led the daring Chittagong Armoury Raid on April 18, 1930, famously known as 'Masterda'?"
+      },
+      "options": [
+        { "mr": "सूर्य सेन (Surya Sen - Masterda)", "en": "Surya Sen (Masterda)" },
+        { "mr": "राजबिहारी बोस", "en": "Rash Behari Bose" },
+        { "mr": "चंद्रशेखर आजाद", "en": "Chandrashekhar Azad" },
+        { "mr": "जतिन दास", "en": "Jatin Das" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९३०): बंगालमधील चित्तोगाव येथे 'मास्तरदा' सूर्य सेन यांच्या नेतृत्वाखाली क्रांतिकारकांनी (इंडियन रिपब्लिकन आर्मी) १८ एप्रिल १९३० रोजी ब्रिटिश शस्त्रागार लुटले आणि काही काळ स्वतंत्र सरकारची घोषणा केली. सूर्य सेनेस १९३३ मध्ये पकडले गेले व १९३४ मध्ये फाशी दिली.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1930): Surya Sen, affectionately called 'Masterda', led the legendary Chittagong Armoury Raid in April 1930, capturing government weapons and challenging British authority in Bengal.\n\n"
+      }
+    },
+    {
+      "id": 12,
+      "question": {
+        "mr": "खालील विधाने विचारात घ्या:\nअ) बंगालमध्ये क्रांतिकारी चळवळीत प्रीतिलता वाडेदार आणि कल्पना दत्त यांसारख्या महिलांनीही प्रत्यक्ष सहभाग घेतला होता.\nब) प्रीतिलता वाडेदार यांनी युरोपीय क्लबवर (European Club at Pahartali) हल्ल्याचे नेतृत्व केले होते.\nवरीलपैकी कोणते/ती विधान/ने बरोबर आहेत?",
+        "en": "Consider the following statements:\nA) Women revolutionaries like Pritilata Waddedar and Kalpana Datta actively participated in the revolutionary movement in Bengal.\nB) Pritilata Waddedar led the armed raid on the European Club at Pahartali in 1932.\nWhich of the above statement(s) is/are correct?"
+      },
+      "options": [
+        { "mr": "फक्त अ", "en": "Only A" },
+        { "mr": "फक्त ब", "en": "Only B" },
+        { "mr": "अ आणि ब दोन्ही", "en": "Both A and B" },
+        { "mr": "दोन्ही नाहीत", "en": "Neither A nor B" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९३२): दोन्ही विधाने अगदी बरोबर आहेत. सूर्य सेन यांच्या नेतृत्वाखालील चित्तोगाव गटात महिला क्रांतिकारकांचे मोठे योगदान होते. प्रीतिलता वाडेदार यांनी सप्टेंबर १९३२ मध्ये पहातली युरोपीय क्लबवर झालेल्या हल्ल्याचे नेतृत्व केले आणि पोलिसांच्या हाती न लागता सायनाईक प्राशन करून आत्मबलिदान दिले.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / समाधान महाजन]",
+        "en": "(1932): Both statements are correct. Women like Pritilata Waddedar and Kalpana Datta played valiant combat roles in Bengal's revolutionary underground, with Pritilata leading the raid on the Pahartali European Club.\n\n"
+      }
+    },
+    {
+      "id": 13,
+      "question": {
+        "mr": "आझाद हिंद फौजेची (Indian National Army - INA) स्थापना सर्वप्रथम कोणी केली होती आणि पुढे त्याचे पुनरुज्जीवन कुणी केले?",
+        "en": "Who originally conceived and formed the Indian National Army (INA), and who later revived and commanded it?"
+      },
+      "options": [
+        { "mr": "स्थापना: कॅप्टन मोहन सिंग (आणि पुनरुज्जीवन: सुभाषचंद्र बोस)", "en": "Founded: Capt. Mohan Singh; Revived/Led: Subhas Chandra Bose" },
+        { "mr": "स्थापना: रासबिहारी बोस, पुनरुज्जीवन: भगत सिंग", "en": "Founded: Rash Behari Bose; Revived: Bhagat Singh" },
+        { "mr": "स्थापना: सुभाषचंद्र बोस, पुनरुज्जीवन: मोहन सिंग", "en": "Founded: Subhas Chandra Bose; Revived: Mohan Singh" },
+        { "mr": "स्थापना: महात्मा गांधी, पुनरुज्जीवन: जवाहरलाल नेहरू", "en": "Founded: Mahatma Gandhi; Revived: Jawaharlal Nehru" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९४२-१९४३): आझाद हिंद फौजेची (INA) संकल्पना आणि पहिली स्थापना कॅप्टन मोहन सिंग यांनी केली (जपान्यांनी पकडलेल्या भारतीय युद्धाद्यांच्या मदतीने). नंतर रासबिहारी बोस यांनी याचे नेतृत्व सिंगापूर येथे 'नेताजी सुभाषचंद्र बोस' यांच्याकडे सुपूर्द केले.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / डॉ. स. शि. गाठाळ]",
+        "en": "(1942-1943): The INA was originally founded by Captain Mohan Singh with Japanese backing, and was later revitalized and commanded in Southeast Asia by Netaji Subhas Chandra Bose.\n\n"
+      }
+    },
+    {
+      "id": 14,
+      "question": {
+        "mr": "नेताजी सुभाषचंद्र बोस यांनी जुलै १९४३ मध्ये सिंगापूर येथे कोणती प्रसिद्ध घोषणा दिली होती, जी INA सैनिकांचे मुख्य युद्धघोष बनले?",
+        "en": "Which famous slogan was given by Netaji Subhas Chandra Bose in Singapore in July 1943 to inspire the INA troops?"
+      },
+      "options": [
+        { "mr": "दिल्ली चलो (Delhi Chalo)", "en": "Delhi Chalo (On to Delhi)" },
+        { "mr": "करेंगे या मरेंगे", "en": "Do or Die" },
+        { "mr": "इन्कलाब जिंदाबाद", "en": "Inquilab Zindabad" },
+        { "mr": "जय हिंद", "en": "Jai Hind" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९४३): नेताजींनी जुलै १९४३ माध्ये सिंगापूरमध्ये 'दिल्ली चलो' (Delhi Chalo) चा नारा दिला आणि सैनिकांना संबोधित करताना 'तुम मुझे खून दो, मैं तुम्हें आजादी दूंगा' हे ऐतिहासिक वचन दिले.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1943): Netaji Subhas Chandra Bose gave the inspiring battle cry 'Delhi Chalo' (On to Delhi) and promised 'Give me blood, and I shall give you freedom!' to the INA.\n\n"
+      }
+    },
+    {
+      "id": 15,
+      "question": {
+        "mr": "आझाद हिंद फौजेमध्ये (INA) महिला सैनिकांची एक स्वतंत्र तुकडी स्थापन करण्यात आली होती, जिचे नाव काय होते?",
+        "en": "What was the name of the all-women combat regiment formed within the Indian National Army (INA) under Netaji's command?"
+      },
+      "options": [
+        { "mr": "झांसीची राणी रेजिमेंट (Rani Jhansi Regiment)", "en": "Rani Jhansi Regiment" },
+        { "mr": "किरकिरी रेजिमेंट", "en": "Kasturba Regiment" },
+        { "mr": "सरोजिनी वाहिनी", "en": "Sarojini Brigade" },
+        { "mr": "आझाद महिला दल", "en": "Azad Mahila Dal" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९४३): आझाद हिंद फौजेत महिलांच्या सहभागासाठी कॅप्टन लक्ष्मी सहगल यांच्या नेतृत्वाखाली 'झांसीची राणी रेजिमेंट' (Rani Jhansi Regiment) ही स्वतंत्र महिला लष्करी तुकडी तयार केली गेली.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1943): Netaji formed an all-women combat regiment named the 'Rani Jhansi Regiment' in Singapore, commanded by Captain Lakshmi Sahgal.\n\n"
+      }
+    },
+    {
+      "id": 16,
+      "question": {
+        "mr": "खालील विधाने विचारात घ्या:\nअ) आझाद हिंद सरकारने (Arzi Hukumat-e-Azad Hind) अंडमान आणि निकोबार बेटे ब्रिटिशांपासून मुक्त करून त्यांची नावे 'शहीद' आणि 'स्वराज्य' अशी ठेवली होती.\nब) नेताजी सुभाषचंद्र बोस यांनी १९४५ मध्ये टोकियोकडे जाताना झालेल्या विमान अपघातात प्राण गमावले (अशी अधिकृत माहिती आहे).\nवरीलपैकी कोणते/ती विधान/ने बरोबर आहेत?",
+        "en": "Consider the following statements:\nA) The Provisional Government of Free India (Arzi Hukumat-e-Azad Hind) renamed the Andaman and Nicobar Islands as 'Shaheed' and 'Swaraj' islands.\nB) Netaji Subhas Chandra Bose reportedly died in a tragic plane crash in Taiwan/Japan in August 1945.\nWhich of the above statement(s) is/are correct?"
+      },
+      "options": [
+        { "mr": "फक्त अ", "en": "Only A" },
+        { "mr": "फक्त ब", "en": "Only B" },
+        { "mr": "अ आणि ब दोन्ही", "en": "Both A and B" },
+        { "mr": "दोन्ही नाहीत", "en": "Neither A nor B" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९४३-१९४५): दोन्ही विधाने बरोबर आहेत. आझाद हिंद सरकारने अंडमान-निकोबारचा ताба मिळवून त्यांना शहीद व स्वराज्य नावे दिली आणि ऑगस्ट १९४५ मध्ये नेताजींचे विमान अपघातात निधन झाल्याचे मानले जाते.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / डॉ. स. शि. गाठाळ]",
+        "en": "(1943-1945): Both statements are correct. The provisional government occupied the Andaman and Nicobar islands, renaming them Shaheed and Swaraj, and Netaji reportedly perished in a 1945 plane crash.\n\n"
+      }
+    },
+    {
+      "id": 17,
+      "question": {
+        "mr": "लाल किल्ल्यावर (Red Fort Trials - १९४५-४६) चालवलेल्या आझाद हिंद फौजेच्या (INA) खटल्यात आरोपी सैनिकांच्या बचावासाठी काँग्रेसने कोणत्या प्रसिद्ध वकिलांची 'संरक्षण समिती' (Defense Committee) स्थापन केली होती?",
+        "en": "Which prominent legal defense team was established by the Congress in 1945 to defend the captured INA soldiers at the Red Fort trials?"
+      },
+      "options": [
+        { "mr": "भोलाभाई देसाई, जवाहरलाल नेहरू, तेजबहादूर सप्रू, कैलासनाथ काटजू (Bhulabhai Desai, Nehru, Sapru, etc.)", "en": "Bhulabhai Desai, Jawaharlal Nehru, Tej Bahadur Sapru, etc." },
+        { "mr": "फक्त महात्मा गांधी", "en": "Only Mahatma Gandhi" },
+        { "mr": "चित्तरंजन दास व मोतीलाल नेहरू", "en": "C.R. Das and Motilal Nehru" },
+        { "mr": "डॉ. बाबासाहेब आंबेडकर व सप्रू", "en": "B.R. Ambedkar and Sapru" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९४५-४६): लाल किल्ल्यावर INA च्या शिपायांवर देशद्रोहाचा खटला भरल्यावर त्यांच्या बचावासाठी काँग्रेसने भोलाभाई देसाई यांच्या प्रमुख नेतृत्वाखाली जवाहरलाल नेहरू, तेजबहादूर सप्रू आणि कैलासनाथ काटजू यांची 'डिफेन्स टीम' उभी केली.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / समाधान महाजन]",
+        "en": "(1945-46): The Congress set up a stellar legal defense team led by Bhulabhai Desai, including Jawaharlal Nehru and Tej Bahadur Sapru, to defend captured INA officers at the Red Fort trials.\n\n"
+      }
+    },
+    {
+      "id": 18,
+      "question": {
+        "mr": "फेब्रुवारी १९४६ मध्ये मुंबईत ब्रिटीश नौदलाच्या कोणत्या जहाजावरील भारतीय खलाशांनी (Ratings) अन्यायकारक वागणूक व अन्नाच्या विरोधात ऐतिहासिक 'रॉयल इंडियन नेव्ही बंड' (RIN Mutiny) पुकारले?",
+        "en": "On which Royal Indian Navy ship did the historic 'RIN Mutiny' break out in Bombay in February 1946?"
+      },
+      "options": [
+        { "mr": "एचएमआयएस तलवार (HMIS Talwar)", "en": "HMIS Talwar" },
+        { "mr": "एचएमआयएस हिंदुस्तान", "en": "HMIS Hindustan" },
+        { "mr": "एचएमआयएस बंगाल", "en": "HMIS Bengal" },
+        { "mr": "एचएमआयएस पंजाब", "en": "HMIS Punjab" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९४६): १९ फेब्रुवारी १९४६ रोजी मुंबईत 'एचएमआयएस तलवार' (HMIS Talwar) या युद्धनौकेवरील भारतीय खलाशांनी वर्णद्वेषी वागणूक आणि निकृष्ट अन्नाविरुद्ध बंड पुकारले, ज्याला कामगार व जनतेने प्रचंड पाठिंबा दिला.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1946): The Royal Indian Navy (RIN) mutiny began on February 19, 1946, aboard HMIS Talwar in Bombay, protesting racial discrimination, poor food, and colonial injustice.\n\n"
+      }
+    },
+    {
+      "id": 19,
+      "question": {
+        "mr": "खालील विधाने विचारात घ्या:\nअ) कॅबिनेट मिशन (Cabinet Mission - मार्च १९४६) मध्ये स्टॅफर्ड क्रिप्स, पॅथ्रिक लॉरेन्स आणि अलेक्झांडर हे तीन ब्रिटिश मंत्री होते.\nब) या मिशनने भारताची फाळणी करून पाकिस्तान निर्माण करण्याची मागणी पूर्णपणे मान्य केली होती.\nवरीलपैकी कोणते/ती विधान/ने बरोबर आहेत?",
+        "en": "Consider the following statements:\nA) The Cabinet Mission of March 1946 consisted of three British cabinet ministers: Pethick-Lawrence, Stafford Cripps, and A.V. Alexander.\nB) The Mission completely accepted the Muslim League's demand for the immediate creation of Pakistan.\nWhich of the above statement(s) is/are correct?"
+      },
+      "options": [
+        { "mr": "फक्त अ", "en": "Only A" },
+        { "mr": "फक्त ब", "en": "Only B" },
+        { "mr": "अ आणि ब दोन्ही", "en": "Both A and B" },
+        { "mr": "दोन्ही नाहीत", "en": "Neither A nor B" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९४६): विधान 'अ' बरोबर आहे. विधान 'ब' चुकीचे आहे कारण कॅबिनेट मिशनने पाकिस्तानची स्वतंत्र मागणी 'फेटाळून लावली' होती आणि भारताला एका संघराज्याच्या (Federal Union) स्वरूपात ठेवण्याची योजना मांडली होती.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / एम. लक्ष्मीकांत]",
+        "en": "(1946): Statement A is correct. Statement B is incorrect because the Cabinet Mission explicitly rejected the demand for a sovereign Pakistan, instead proposing a loose three-tier federal union.\n\n"
+      }
+    },
+    {
+      "id": 20,
+      "question": {
+        "mr": "मुस्लिम लीगने प्रत्यक्ष कृती दिन (Direct Action Day) कधी पाळला, ज्यामुळे देशभरात अभूतपूर्व सांप्रदायिक हिंसाचार उसळला?",
+        "en": "When did the Muslim League observe 'Direct Action Day', leading to widespread communal violence across the country?"
+      },
+      "options": [
+        { "mr": "१६ ऑगस्ट १९४६ (August 16, 1946)", "en": "August 16, 1946" },
+        { "mr": "१५ ऑगस्ट १९४७", "en": "August 15, 1947" },
+        { "mr": "२६ जानेवारी १९४६", "en": "January 26, 1946" },
+        { "mr": "३ जून १९४७", "en": "June 3, 1947" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९४६): कॅबिनेट मिशन योजनेवरील असंतोष आणि पाकिस्तानच्या मागणीसाठी मुस्लिम लीगने १६ ऑगस्ट १९४६ रोजी 'डायरेक्ट ॲक्शन डे' (Direct Action Day) पाळण्याचे ठरवले, ज्यामुळे कलकत्ता आणि इतर ठिकाणी भीषण दंगली उसळल्या.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1946): The Muslim League called for 'Direct Action Day' on August 16, 1946, to press for Pakistan, resulting in catastrophic communal riots, most notably the Great Calcutta Killing.\n\n"
+      }
+    },
+    {
+      "id": 21,
+      "question": {
+        "mr": "ब्रिटिश पंतप्रधान क्लेमेंट एटली यांनी ब्रिटनच्या संसदेत ऐतिहासिक घोषणा करताना भारताला कोणत्या तारखेपूर्वी पूर्ण सत्ता हस्तांतरित करण्याची घोषणा केली होती?",
+        "en": "By which definitive deadline did British Prime Minister Clement Attlee announce that power would be transferred to Indians?"
+      },
+      "options": [
+        { "mr": "३० जून १९४८ पूर्वी (Before June 30, 1948)", "en": "Before June 30, 1948" },
+        { "mr": "१५ ऑगस्ट १९४७ पूर्वी", "en": "Before August 15, 1947" },
+        { "mr": "२६ जानेवारी १९५० पूर्वी", "en": "Before January 26, 1950" },
+        { "mr": "३१ डिसेंबर १९४९ पूर्वी", "en": "Before December 31, 1949" }
+      ],
+      "correctAnswerIndex": 0,
+     "explanation": {
+        "mr": "(फेब्रुवारी १९४७): पंतप्रधान क्लेमेंट एटली यांनी २० फेब्रुवारी १९४७ रोजी घोषणा केली की, ब्रिटिशांची राजवट भारतातून संपवली जाईल आणि ३० जून १९४८ पूर्वी भारतीयांकडे सत्ता हस्तांतरित केली जाईल (जी नंतर माऊंटबॅटनच्या काळात १५ ऑगस्ट १९४७ केली गेली).\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(February 1947): British PM Clement Attlee announced on February 20, 1947, that power would be transferred to Indian hands by a definitive deadline of June 30, 1948.\n\n"
+      }
+    },
+    {
+      "id": 22,
+      "question": {
+        "mr": "भारताची फाळणी आणि सत्ता हस्तांतरणाची अंतिम योजना कोणत्या वायसरायने ३ जून १९४७ रोजी जाहीर केली, जिचे नाव 'माऊंटबॅटन योजना' (Mountbatten Plan) पडले?",
+        "en": "Which Viceroy announced the final partition and transfer of power plan on June 3, 1947, known as the 'Mountbatten Plan'?"
+      },
+      "options": [
+        { "mr": "लॉर्ड माऊंटबॅटन (Lord Mountbatten)", "en": "Lord Mountbatten" },
+        { "mr": "लॉर्ड वेव्हेल", "en": "Lord Wavell" },
+        { "mr": "लॉर्ड लिनलिथगो", "en": "Lord Linlithgow" },
+        { "mr": "सर स्टॅफर्ड क्रिप्स", "en": "Sir Stafford Cripps" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९४७): भारताचे अंतिम वायसराय लॉर्ड माऊंटबॅटन यांनी ३ जून १९४७ रोजी भारत आणि पाकिस्तान अशा दोन स्वतंत्र राष्ट्रांच्या फाळणीची आणि ब्रिटिश भारताच्या विभाजनाची योजना (माऊंटबॅटन योजना) जाहीर केली.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / डॉ. स. शि. गाठाळ]",
+        "en": "(1947): The final blueprint for the partition of British India into India and Pakistan was unveiled by Viceroy Lord Mountbatten on June 3, 1947.\n\n"
+      }
+    },
+    {
+      "id": 23,
+      "question": {
+        "mr": "खालील विधाने विचारात घ्या:\nअ) भारतीय स्वातंत्र्य कायदा १९४७ (Indian Independence Act 1947) नुसार १५ ऑगस्ट १९४७ रोजी भारत आणि पाकिस्तान हे दोन स्वतंत्र देश अस्तित्वात आले.\nब) या कायद्याने दोन्ही देशांना आपापली संविधान सभा तयार करण्याचे आणि ब्रिटीश राष्ट्रमंडळात राहण्याबाबत स्वतंत्र निर्णय घेण्याचे अधिकार दिले.\nवरीलपैकी कोणते/ती विधान/ने बरोबर आहेत?",
+        "en": "Consider the following statements:\nA) Under the Indian Independence Act 1947, India and Pakistan emerged as two independent dominions on August 15, 1947.\nB) The Act empowered both new nations to frame their respective constitutions and choose their commonwealth status.\nWhich of the above statement(s) is/are correct?"
+      },
+      "options": [
+        { "mr": "फक्त अ", "en": "Only A" },
+        { "mr": "फक्त ब", "en": "Only B" },
+        { "mr": "अ आणि ब दोन्ही", "en": "Both A and B" },
+        { "mr": "दोन्ही नाहीत", "en": "Neither A nor B" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "(१९४७): दोन्ही विधाने अगदी बरोबर आहेत. ब्रिटीश संसदेने जुलै १९४७ मध्ये मंजूर केलेल्या भारतीय स्वातंत्र्य कायद्यानुसार १५ ऑगस्ट १९४७ रोजी भारताला स्वातंत्र्य मिळाले.\n\n[संदर्भ: एम. लक्ष्मीकांत / स्पेक्ट्रम]",
+        "en": "(1947): Both statements are correct. The Indian Independence Act enacted by the British Parliament gave legal shape to the partition and independence of India and Pakistan.\n\n"
+      }
+    },
+    {
+      "id": 24,
+      "question": {
+        "mr": "स्वातंत्र्यपूर्व काळातील 'भारतीय राष्ट्रीय चळवळीत' क्रांतीकारक आणि INA च्या संघर्षाचे ऐतिहासिक योगदान काय मानले जाते?",
+        "en": "What is regarded as the historic impact of the revolutionary and INA movements on India's freedom struggle?"
+      },
+      "options": [
+        { "mr": "भारतीय जनतेमध्ये असीम देशभक्ती आणि तरुणांमध्ये राष्ट्रवादाची प्रेरणा निर्माण करून ब्रिटिश प्रशासनाला हादरे देणे", "en": "Inspiring profound patriotism and nationalist zeal, shaking the foundations of British authority" },
+        { "mr": "केवळ कायदेशीर अर्ज करणे", "en": "Only submitting legal petitions" },
+        { "mr": "ब्रिटिश सैन्याची संख्या वाढवणे", "en": "Increasing British military size" },
+        { "mr": "फाळणी टाळणे", "en": "Preventing partition altogether" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९-२० वे शतक): क्रांतिकारकांच्या आणि INA च्या बलिदानाने (तसेच लाल किल्ल्यावरील खटले व RIN बंड) ब्रिटिशांच्या लक्षात आणून दिले की आता भारतीय सैन्यावर व जनतेवर जास्त काळ राज्य करणे शक्य नाही, ज्यामुळे सत्ता हस्तांतरण जलद झाले.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(19th-20th Century): The supreme sacrifices of revolutionaries and the INA thoroughly undermined British confidence in the loyalty of Indian armed forces, hastening the British exit.\n\n"
+      }
+    },
+    {
+      "id": 25,
+      "question": {
+        "mr": "भारतीय राष्ट्रीय चळवळीचा अंतिम परिणाम किंवा ऐतिहासिक वारसा काय आहे?",
+        "en": "What is the ultimate historical legacy of the Indian National Movement?"
+      },
+      "options": [
+        { "mr": "भारताला लोकशाही, धर्मनिरपेक्ष आणि सार्वभौम गणराज्य म्हणून स्वातंत्र्य मिळवून देणे", "en": "Liberating India as a sovereign, democratic, and secular republic" },
+        { "mr": "राजेशाही पुनर्स्थापित करणे", "en": "Restoring absolute monarchy" },
+        { "mr": "देशाचे संपूर्ण विभाजन करणे", "en": "Permanently dividing the entire subcontinent" },
+        { "mr": "परदेशी राजवटीला कायम ठेवणे", "en": "Perpetuating foreign rule" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९४७): भारतीय राष्ट्रीय चळवळीने शतकानुशतके परकीय गुलामगिरीत असलेल्या भारताला लोकशाही, समता, धर्मनिरपेक्षता आणि सार्वभौमत्वाची मूल्ये जपणारे स्वतंत्र राष्ट्र म्हणून उभे केले.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / एम. लक्ष्मीकांत]",
+        "en": "(1947): The Indian National Movement successfully dismantled colonial rule, giving birth to the world's largest democratic, secular, and sovereign republic.\n\n"
+      }
+    }
+  ]
+}

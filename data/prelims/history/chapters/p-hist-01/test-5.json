@@ -1,0 +1,464 @@
+{
+  "testId": "p-hist-01-t5",
+  "title": {
+    "mr": "आधुनिक भारताचा इतिहास — सराव 5",
+    "en": "Modern Indian History — Practice Test 5"
+  },
+  "durationMinutes": 20,
+  "marksPerQuestion": 1,
+  "negativeMarking": 0.25,
+  "totalMarks": 25,
+  "difficulty": "मध्यम ते काठिण्य",
+  "questions": [
+    {
+      "id": 1,
+      "question": {
+        "mr": "१६३२ मध्ये मुघल सम्राट शाहजहानने हुगळी येथील कोणत्या युरोपीय सत्तेची वखार उद्ध्वस्त करून त्यांच्यावर कारवाई केली होती?",
+        "en": "In 1632, Mughal Emperor Shah Jahan destroyed the factory of which European power at Hooghly and took action against them?"
+      },
+      "options": [
+        { "mr": "डच", "en": "Dutch" },
+        { "mr": "पोर्तुगीज", "en": "Portuguese" },
+        { "mr": "फ्रेंच", "en": "French" },
+        { "mr": "इंग्रज", "en": "English" }
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": {
+        "mr": "(१६३२): पोर्तुगीजांच्या वाढत्या अरेरावीला कंटाळून आणि बंगालमधील व्यापारात लुडबूड केल्यामुळे मुघल सम्राट शाहजहानने १६३२ मध्ये हुगळी येथील पोर्तुगीज ठाण्यावर आक्रमण केले व त्यांची वखार उद्ध्वस्त केली.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / समाधान महाजन]",
+        "en": "(1632): Angered by the Portuguese misbehavior, slave trade, and unauthorized trade privileges, Mughal Emperor Shah Jahan ordered his governor in Bengal to besiege the Portuguese factory at Hooghly in 1632.\n\n"
+      }
+    },
+    {
+      "id": 2,
+      "question": {
+        "mr": "फ्रँकोइस मार्टिन (Francois Martin) याने १६७४ मध्ये कोणत्या ठिकाणी फ्रेंचांची मुख्य वखार स्थापन केली, जी नंतर 'पाँडिचेरी' (पुद्दुचेरी) म्हणून ओळखली जाऊ लागली?",
+        "en": "At which place did Francois Martin establish the main French factory in 1674, which later came to be known as 'Pondicherry' (Puducherry)?"
+      },
+      "options": [
+        { "mr": "चंद्रनगर", "en": "Chandernagore" },
+        { "mr": "मसुलीपट्टणम", "en": "Masulipatnam" },
+        { "mr": "वालीज पुरम / पाँडिचेरी", "en": "Valikondapuram / Pondicherry" },
+        { "mr": "माही", "en": "Mahe" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "(१६७४): फ्रँकोइस मार्टिन याने वलिकोंडापुरमच्या मुस्लिम सुभेदाराकडून (शेर खान लोदी) जमीन घेऊन १६७४ मध्ये एक वस्ती वसविली, जिचे पुढे पाँडिचेरी (पुद्दुचेरी) मध्ये रूपांतर झाले. हा फ्रेंचांचा भारतातील प्रमुख मुक्काम बनला.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1674): Francois Martin secured a settlement from the Muslim governor of Valikondapuram in 1674, which gradually developed into Pondicherry and served as the headquarters of the French possessions in India.\n\n"
+      }
+    },
+    {
+      "id": 3,
+      "question": {
+        "mr": "बक्सारच्या लढाईत (२२ ऑक्टोबर १७६४) इंग्रज सैन्याचे नेतृत्व कोणी केले होते, ज्याने मीर कासिम, शुजा-उद-दौला आणि शाह आलम (दुसरा) यांच्या संयुक्त सैन्याचा पराभव केला?",
+        "en": "Who led the British forces in the Battle of Buxar (October 22, 1764), defeating the allied forces of Mir Qasim, Shuja-ud-Daulah, and Shah Alam II?"
+      },
+      "options": [
+        { "mr": "रॉबर्ट क्लाइव्ह", "en": "Robert Clive" },
+        { "mr": "हेक्टर मुन्रो (Hector Munro)", "en": "Hector Munro" },
+        { "mr": "सर आयर कूट", "en": "Sir Eyre Coote" },
+        { "mr": "चार्ल्स नेपियर", "en": "Charles Napier" }
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": {
+        "mr": "(१७६४): २२ ऑक्टोबर १७६४ रोजी बक्सारची निर्णायक लढाई झाली. यात बंगालचा पदच्युत नवाब मीर कासिम, अवधचा नवाब शुजा-उद-दौला आणि मुघल सम्राट शाह आलम (दुसरा) यांची युती होती. इंग्रज सेनापती मेजर हेक्टर मुन्रो याने या संयुक्त सैन्याचा पराभव केला.\n\n[संदर्भ: डॉ. स. शि. गाठाळ / अनिल कटारे]",
+        "en": "(1764): The decisive Battle of Buxar was fought on October 22, 1764, between the British forces commanded by Major Hector Munro and the combined army of Mir Qasim, Shuja-ud-Daulah, and Shah Alam II.\n\n"
+      }
+    },
+    {
+      "id": 4,
+      "question": {
+        "mr": "खालीलपैकी कोणत्या तहाने 'दुसरे इंग्रज-म्हैसूर युद्ध' (१७८०-१७८४) संपुष्टात आले?",
+        "en": "Which of the following treaties ended the 'Second Anglo-Mysore War' (1780-1784)?"
+      },
+      "options": [
+        { "mr": "मद्रासचा तह", "en": "Treaty of Madras" },
+        { "mr": "मंगळूरचा तह (Treaty of Mangalore)", "en": "Treaty of Mangalore" },
+        { "mr": "श्रीरंगपट्टणमचा तह", "en": "Treaty of Srirangapatna" },
+        { "mr": "म्हैसूरचा तह", "en": "Treaty of Mysore" }
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": {
+        "mr": "(१७८४): हैदर अलीच्या मृत्यूनंतर त्याचे नेतृत्व टीपू सुलतानने चालवले. हे भीषण युद्ध मार्च १७८४ मध्ये 'मंगळूरच्या तहाने' (Treaty of Mangalore) संपले, ज्यानुसार दोन्ही बाजूंनी जिंकलेले प्रदेश एकमेकांना परत करण्याचे ठरले.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1784): The Second Anglo-Mysore War, fought during the tenure of Warren Hastings, concluded with the Treaty of Mangalore in March 1784 on the basis of a mutual restitution of conquests.\n\n"
+      }
+    },
+    {
+      "id": 5,
+      "question": {
+        "mr": "चौथ्या इंग्रज-म्हैसूर युद्धाच्या (१७९९) वेळी इंग्रज सैन्याने कोणत्या दिवशी श्रीरंगपट्टणमवर हल्ला केला आणि टीपू सुलतान धारातीर्थी पडला?",
+        "en": "During the Fourth Anglo-Mysore War (1799), on which date did the British forces attack Srirangapatna, resulting in the death of Tipu Sultan?"
+      },
+      "options": [
+        { "mr": "२३ जून १७५७", "en": "23 June 1757" },
+        { "mr": "४ मे १७९९", "en": "4 May 1799" },
+        { "mr": "१७ मार्च १७९२", "en": "17 March 1792" },
+        { "mr": "१ जानेवारी १८००", "en": "1 January 1800" }
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": {
+        "mr": "(१७९९): लॉर्ड वेलस्लीच्या काळात झालेल्या चौथ्या इंग्रज-म्हैसूर युद्धात ४ मे १७९९ रोजी इंग्रजांनी श्रीरंगपट्टणमचा किल्ला जिंकला आणि राज्याची राजधानी रक्षण करताना टीपू सुलतान वीरगती प्राप्त झाला.\n\n[संदर्भ: समाधान महाजन / अनिल कटारे]",
+        "en": "(1799): In the Fourth Anglo-Mysore War, British troops breached the walls of Srirangapatna on May 4, 1799, and Tipu Sultan died fighting heroically defending his capital.\n\n"
+      }
+    },
+    {
+      "id": 6,
+      "question": {
+        "mr": "दुसऱ्या इंग्रज-मराठा युद्धानंतर (१८०३-१८०५) नागपूरच्या भोसल्यांनी ब्रिटिशांसोबत कोणता तह केला होता?",
+        "en": "Which treaty did the Bhonsles of Nagpur sign with the British after the Second Anglo-Maratha War (1803-1805)?"
+      },
+      "options": [
+        { "mr": "देवगावचा तह (Treaty of Deogaon)", "en": "Treaty of Deogaon" },
+        { "mr": "सुरजी-अंजनगावचा तह", "en": "Treaty of Surji-Anjangaon" },
+        { "mr": "राजापूरघाटाचा तह", "en": "Treaty of Rajapurghat" },
+        { "mr": "ग्वाल्हेरचा तह", "en": "Treaty of Gwalior" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१८०३): दुसऱ्या इंग्रज-मराठा युद्धात रघूजी भोसले यांचा पराभव झाल्यावर त्यांनी १७ डिसेंबर १८०३ रोजी 'देवगावचा तह' केला. याद्वारे त्यांनी कटक आणि वर्धा नदीपर्यंतचा प्रदेश ब्रिटिशांना दिला. (तर शिंद्यांनी सुरजी-अंजनगावचा तह केला).\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1803): Following their defeat in the Second Anglo-Maratha War, the Bhonsle Raja of Nagpur signed the Treaty of Deogaon on December 17, 1803, ceding Cuttack and Berar to the British.\n\n"
+      }
+    },
+    {
+      "id": 7,
+      "question": {
+        "mr": "इंग्रज व नेपाळ (गोरखा) यांच्यात झालेले 'इंग्रज-नेपाळ युद्ध' (१८१४-१८१६) कोणत्या प्रसिद्ध तहाने संपुष्टात आले?",
+        "en": "The 'Anglo-Nepali War' (1814-1816) between the British and Nepal (Gorkhas) ended with which famous treaty?"
+      },
+      "options": [
+        { "mr": "अमृतसरचा तह", "en": "Treaty of Amritsar" },
+        { "mr": "सुगौलीचा तह (Treaty of Sugauli)", "en": "Treaty of Sugauli" },
+        { "mr": "यांदाबोचा तह", "en": "Treaty of Yandabo" },
+        { "mr": "पॅरिसचा तह", "en": "Treaty of Paris" }
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": {
+        "mr": "(१८१६): लॉर्ड हेस्टिंग्सच्या काळात उत्तर सीमेवरील गोरख्यांचा धोका मोडून काढण्यासाठी इंग्रजांनी नेपाळविरुद्ध युद्ध पुकारले. हे युद्ध ४ मार्च १८१६ रोजी झालेल्या 'सुगौलीच्या तहाने' संपले, ज्यानुसार ब्रिटिशांना कुमाळून, गढवाल व सिमल्यासारखी सुंदर गिरिस्थान मिळाली.\n\n[संदर्भ: डॉ. स. शि. गाठाळ]",
+        "en": "(1816): The Anglo-Nepali War concluded with the Treaty of Sugauli in March 1816. Under this treaty, Nepal ceded hill regions like Kumaon, Garhwal, and Sikkim/Darjeeling areas to the British.\n\n"
+      }
+    },
+    {
+      "id": 8,
+      "question": {
+        "mr": "तिसऱ्या इंग्रज-मराठा युद्धानंतर (१८१७-१८१८) मराठ्यांच्या कोणत्या प्रतिनिधीने/शासकाने ब्रिटिशांसोबत 'पुणेचा तह' (Treaty of Poona) केला?",
+        "en": "Which Maratha representative/ruler signed the 'Treaty of Poona' with the British after the Third Anglo-Maratha War (1817-1818)?"
+      },
+      "options": [
+        { "mr": "दुसरा बाजीराव पेशवा", "en": "Peshwa Baji Rao II" },
+        { "mr": "अपप्पासाहेब भोसले", "en": "Appa Sahib Bhonsle" },
+        { "mr": "मल्हारराव होळकर", "en": "Malhar Rao Holkar" },
+        { "mr": "दौलतराव शिंदे", "en": "Daulatrao Shinde" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१८१७): जून १८१७ मध्ये दुसरा बाजीराव पेशव्यावर इंग्रजांनी जबरदस्तीने 'पुणेचा तह' लादला, ज्यानुसार पेशव्याने मराठा संधाचे प्रमुखपद सोडले. या अपमानास्पद तहानंतर पेशव्याने खिडकीच्या लढाईत ब्रिटिशांविरुद्ध अखेरचा प्रयत्न केला पण पराभव झाला.\n\n[संदर्भ: अनिल कटारे / समाधान महाजन]",
+        "en": "(1817): Peshwa Baji Rao II was forced to sign the Treaty of Poona in June 1817, which formally dissolved the Maratha Confederacy under the Peshwa's leadership, leading to the final conflict in the Third Anglo-Maratha War.\n\n"
+      }
+    },
+    {
+      "id": 9,
+      "question": {
+        "mr": "पहिल्या इंग्रज-शीख युद्ध (१८४५-१८४६) मधील 'सोब्राणची लढाई' (Battle of Sobraon) कोणत्या दिवशी जिंकून ब्रिटिशांनी शिखांवर निर्णायक वर्चस्व मिळवले?",
+        "en": "By winning which battle during the First Anglo-Sikh War (1845-1846) did the British establish decisive supremacy over the Sikhs?"
+      },
+      "options": [
+        { "mr": "मुदकीची लढाई", "en": "Battle of Mudki" },
+        { "mr": "फिरोजशहाची लढाई", "en": "Battle of Ferozeshah" },
+        { "mr": "सोब्राणची लढाई (Battle of Sobraon)", "en": "Battle of Sobraon" },
+        { "mr": "चिल्लियावालाची लढाई", "en": "Battle of Chillianwala" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "(१८४६): १० फेब्रुवारी १८४६ रोजी झालेली 'सोब्राणची लढाई' ही पहिल्या इंग्रज-शीख युद्धातील अत्यंत निर्णायक लढाई ठरली. यात लाल सिंग व तेज सिंग यांच्या विश्वासघातामुळे शिखांचा पराभव झाला आणि ब्रिटिशांनी सतलज नदी ओलांडून लाहोरवर ताबा मिळवला.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1846): The Battle of Sobraon on February 10, 1846, was the decisive battle of the First Anglo-Sikh War. The Sikh army was defeated due to betrayal by its commanders, paving the way for the British march to Lahore.\n\n"
+      }
+    },
+    {
+      "id": 10,
+      "question": {
+        "mr": "खालीलपैकी कोणत्या तहानुसार अल्पवयीन महाराज दिलीप सिंग यांच्या संरक्षणासाठी लाहोर दरबारात ब्रिटीश रेसिडेंट (लॉर्ड हेनरी लॉरेन्स) नेमण्यात आला?",
+        "en": "According to which of the following treaties was a British Resident (Sir Henry Lawrence) appointed in the Lahore court for the protection of minor Maharaja Duleep Singh?"
+      },
+      "options": [
+        { "mr": "लाहोरचा तह", "en": "Treaty of Lahore" },
+        { "mr": "भैरोवालचा तह (Treaty of Bhairowal)", "en": "Treaty of Bhairowal" },
+        { "mr": "अमृतसरचा तह", "en": "Treaty of Amritsar" },
+        { "mr": "मुुलतानचा तह", "en": "Treaty of Multan" }
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": {
+        "mr": "(डिसेंबर १८४६): लाहोरच्या तहानंतर शीख दरबारात असंतोष निर्माण झाल्याने १६ डिसेंबर १८४६ रोजी 'भैरोवालचा तह' करण्यात आला. यानुसार महाराणी जिंदन यांना राजकारणातून बाजूला केले गेले आणि ब्रिटिशांच्या नेमलेल्या कौन्सिलकडे पंजाबचा कारभार गेला.\n\n[संदर्भ: अनिल कटारे]",
+        "en": "(1846): As the Treaty of Lahore proved unworkable, the Treaty of Bhairowal was signed in December 1846. It removed Maharani Jindan from power and set up a council of regency headed by a British resident at Lahore.\n\n"
+      }
+    },
+    {
+      "id": 11,
+      "question": {
+        "mr": "लॉर्ड डलहौसीच्या 'खालसा धोरणानुसार' (Doctrine of Lapse) सर्वात शेवटी म्हणजेच १८५४ मध्ये कोणते मोठे संस्थान खालसा करण्यात आले होते?",
+        "en": "Which major state was annexed last under Lord Dalhousie's 'Doctrine of Lapse' in 1854?"
+      },
+      "options": [
+        { "mr": "सातारा", "en": "Satara" },
+        { "mr": "झाशी", "en": "Jhansi" },
+        { "mr": "नागपूर (Nagpur)", "en": "Nagpur" },
+        { "mr": "संबळपूर", "en": "Sambalpur" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "(१८५४): डलहौसीच्या दत्तक वारसा नामंजूर धोरणांतर्गत १८४८ मध्ये सातारा, १८४९ मध्ये जैतपूर व संबळपूर, १८५० मध्ये बघाट, १८५२ मध्ये उदयपूर, १८५३ मध्ये झाशी आणि १८५४ मध्ये 'नागपूर' संस्थान खालसा केले गेले.\n\n[संदर्भ: डॉ. स. शि. गाठाळ / समाधान महाजन]",
+        "en": "(1854): Under the Doctrine of Lapse, Dalhousie annexed Satara (1848), Jaitpur and Sambalpur (1849), Baghat (1850), Udaipur (1852), Jhansi (1853), and finally Nagpur in 1854.\n\n"
+      }
+    },
+    {
+      "id": 12,
+      "question": {
+        "mr": "खालील विधाने विचारात घ्या:\nअ) भारतातील पहिली रेल्वे १६ एप्रिल १८५३ रोजी मुंबई ते ठाणे दरम्यान धावली.\nब) या गाडीचे अंतर ३४ किलोमीटर होते.\nवरीलपैकी कोणते/ती विधान/ने बरोबर आहेत?",
+        "en": "Consider the following statements:\nA) The first train in India ran between Bombay and Thane on April 16, 1853.\nB) The distance of this train route was 34 kilometers.\nWhich of the above statement(s) is/are correct?"
+      },
+      "options": [
+        { "mr": "फक्त अ", "en": "Only A" },
+        { "mr": "फक्त ब", "en": "Only B" },
+        { "mr": "अ आणि ब दोन्ही", "en": "Both A and B" },
+        { "mr": "दोन्ही नाहीत", "en": "Neither A nor B" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "(१८५३): १६ एप्रिल १८५३ रोजी बोरीबंदर (मुंबई) ते ठाणे दरम्यान ३४ किमी (२१ मैल) अंतरावर भारतातील पहिली प्रवासी रेल्वे धावली. ग्रेट इंडियन पेनिनसुला रेल्वे (GIPR) ने ही सेवा सुरू केली होती.\n\n[संदर्भ: समाधान महाजन / स्पेक्ट्रम]",
+        "en": "(1853): Both statements are correct. The first passenger train in India ran on April 16, 1853, covering a distance of 34 kilometers between Bori Bunder (Bombay) and Thane.\n\n"
+      }
+    },
+    {
+      "id": 13,
+      "question": {
+        "mr": "१८५७ च्या उठावानंतर ब्रिटिशांनी सैन्य रचनेत बदल करण्यासाठी कोणता आयोग नेमला होता, ज्याने सैन्यात 'युरोपीय सैनिकांचे प्रमाण वाढवण्याची' शिफारस केली?",
+        "en": "Which commission was appointed after the Revolt of 1857 to reorganize the military, recommending an increase in the proportion of European soldiers?"
+      },
+      "options": [
+        { "mr": "पिल आयोग (Peel Commission)", "en": "Peel Commission" },
+        { "mr": "हंटर आयोग", "en": "Hunter Commission" },
+        { "mr": "रॅले आयोग", "en": "Raleigh Commission" },
+        { "mr": "स्ट्रॅची आयोग", "en": "Strachey Commission" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१८५८): १८५७ च्या उठावाचे मुख्य कारण सैनिक होते. भविष्यात असे बंड होऊ नये म्हणून ब्रिटिश सरकारने १८५८ मध्ये 'पिल आयोग' (Peel Commission) नेमला. याच्या शिफारसीनुसार सैन्यातील युरोपीय आणि भारतीय सैनिकांचे प्रमाण ठरवले गेले आणि तोफखाने पूर्णपणे गोऱ्यांच्या हातात ठेवले.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1858): Following the Revolt of 1857, the British government appointed the Peel Commission in 1858 to inquire into the causes of the revolt and reorganize the Indian army, ensuring a higher ratio of European to Indian troops.\n\n"
+      }
+    },
+    {
+      "id": 14,
+      "question": {
+        "mr": "खालीलपैकी कोणत्या कायद्यान्वये भारतात 'गव्हर्नर जनरल' या पदाचे नाव बदलून 'व्हाइसरॉय' (Viceroy) करण्यात आले आणि लंडनमध्ये 'भारत मंत्री' (Secretary of State) हे पद निर्माण झाले?",
+        "en": "By which of the following acts was the designation of the 'Governor-General' changed to 'Viceroy' in India and the post of 'Secretary of State for India' created in London?"
+      },
+      "options": [
+        { "mr": "१८५३ चा चार्टर ॲक्ट", "en": "Charter Act of 1853" },
+        { "mr": "१८५८ चा भारत सरकार कायदा (Government of India Act 1858)", "en": "Government of India Act 1858" },
+        { "mr": "१८६१ चा भारतीय परिषद कायदा", "en": "Indian Councils Act 1861" },
+        { "mr": "१८९२ चा भारतीय परिषद कायदा", "en": "Indian Councils Act 1892" }
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": {
+        "mr": "(१८५८): 'भारत सरकार कायदा १८५८' नुसार कंपनीची राजवट संपली. या कायद्याने भारताचा गव्हर्नर जनरल आता ब्रिटीश सम्राटाचा थेट प्रतिनिधी बनला, ज्याला 'व्हाइसरॉय' म्हटले गेले. लॉर्ड कॅनिंग हा भारताचा पहिला व्हाइसरॉय ठरला.\n\n[संदर्भ: एम. लक्ष्मीकांत]",
+        "en": "(1858): The Government of India Act 1858 designated the Governor-General of India as the Viceroy of India (representing the British Crown). Lord Canning became the first Viceroy of India.\n\n"
+      }
+    },
+    {
+      "id": 15,
+      "question": {
+        "mr": "भारतात १८७२ मध्ये पहिली प्रायोगिक जनगणना कोणत्या व्हाइसरॉयच्या काळात झाली होती?",
+        "en": "During the tenure of which Viceroy was the first experimental census conducted in India in 1872?"
+      },
+      "options": [
+        { "mr": "लॉर्ड मेयो (Lord Mayo)", "en": "Lord Mayo" },
+        { "mr": "लॉर्ड रिपन", "en": "Lord Ripon" },
+        { "mr": "लॉर्ड लिटन", "en": "Lord Lytton" },
+        { "mr": "लॉर्ड नॉर्थब्रुक", "en": "Lord Northbrook" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१८७२): भारतात पहिली प्रायोगिक जनगणना १८७२ मध्ये लॉर्ड मेयोच्या काळात झाली. मात्र सर्वसमावेशक व नियमित (Synchronous) जनगणना १८८१ मध्ये लॉर्ड रिपनच्या काळात सुरू झाली.\n\n[संदर्भ: समाधान महाजन / स्पेक्ट्रम]",
+        "en": "(1872): The first census in India was conducted in 1872 during the viceroyalty of Lord Mayo, though it was not synchronous across the entire country until 1881.\n\n"
+      }
+    },
+    {
+      "id": 16,
+      "question": {
+        "mr": "खालील विधाने विचारात घ्या:\nअ) १८७८ चा 'देशी वृत्तपत्र कायदा' (Vernacular Press Act) अमृत बाजार पत्रिकेवर लक्ष केंद्रित करून तयार केला गेला होता.\nब) या कायद्यापासून वाचण्यासाठी 'अमृत बाजार पत्रिका' पत्राने रातोरात इंग्रजी वृत्तपत्रात रूपांतर केले.\nवरीलपैकी कोणते/ती विधान/ने बरोबर आहेत?",
+        "en": "Consider the following statements:\nA) The 'Vernacular Press Act' of 1878 was formulated targeting newspapers like Amrita Bazar Patrika.\nB) To escape this act, 'Amrita Bazar Patrika' overnight converted itself into an English-language newspaper.\nWhich of the above statement(s) is/are correct?"
+      },
+      "options": [
+        { "mr": "फक्त अ", "en": "Only A" },
+        { "mr": "फक्त ब", "en": "Only B" },
+        { "mr": "अ आणि ब दोन्ही", "en": "Both A and B" },
+        { "mr": "दोन्ही नाहीत", "en": "Neither A nor B" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "(१८७८): शिशिर कुमार घोष आणि मोतीलाल घोष यांनी सुरू केलेले 'अमृत बाजार पत्रिका' हे बंगाली वृत्तपत्र इंग्रजांच्या विरोधात आक्रमक लिहीत होते. लिटनच्या वर्नाक्युलर प्रेस ॲक्टपासून वाचण्यासाठी त्यांनी एकाच रात्रीत ते पूर्णपणे 'इंग्रजी' वृत्तपत्रात बदलले, कारण हा कायदा फक्त भारतीय भाषांमधील वृत्तपत्रांसाठी होता.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1878): Both statements are correct. To circumvent the draconian Vernacular Press Act of 1878 which targeted vernacular papers, Amrita Bazar Patrika overnight transformed itself into an English-language newspaper.\n\n"
+      }
+    },
+    {
+      "id": 17,
+      "question": {
+        "mr": "१८८३-८४ मध्ये झालेल्या 'इल्बर्ट बिल विवादाच्या' (Ilbert Bill Controversy) वेळी भारताचा व्हाइसरॉय कोण होता?",
+        "en": "Who was the Viceroy of India during the 'Ilbert Bill Controversy' of 1883-84?"
+      },
+      "options": [
+        { "mr": "लॉर्ड लिटन", "en": "Lord Lytton" },
+        { "mr": "लॉर्ड रिपन (Lord Ripon)", "en": "Lord Ripon" },
+        { "mr": "लॉर्ड डफरिन", "en": "Lord Dufferin" },
+        { "mr": "लॉर्ड लॅन्सडाउन", "en": "Lord Lansdowne" }
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": {
+        "mr": "(१८८३-८४): लॉर्ड रिपनच्या काळात त्याच्या कायद्याच्या मसुदा समितीचे सदस्य सर सी. पी. इल्बर्ट यांनी हे बिल मांडले होते. भारतीय न्यायधीशांना युरोपीय आरोपींचे खटले चालवण्याचा अधिकार देणाऱ्या या विधेयकाला गोरा लोकांनी तीव्र विरोध केला (श्वेत बंड), ज्यामुळे रिपनला त्यात बदल करावे लागले.\n\n[संदर्भ: डॉ. स. शि. गाठाळ]",
+        "en": "(1883-84): Lord Ripon was the Viceroy when the Ilbert Bill was introduced by Sir C.P. Ilbert. It sought to allow Indian magistrates to preside over trial cases involving Europeans, sparking fierce opposition from the European community.\n\n"
+      }
+    },
+    {
+      "id": 18,
+      "question": {
+        "mr": "भारतीय राष्ट्रीय काँग्रेसच्या दुसऱ्या अधिवेशनाचे (१८८६, कलकत्ता) अध्यक्ष खालीलपैकी कोण होते?",
+        "en": "Who among the following was the president of the second session of the Indian National Congress (1886, Calcutta)?"
+      },
+      "options": [
+        { "mr": "व्योमेशचंद्र बॅनर्जी", "en": "Womesh Chandra Bonnerjee" },
+        { "mr": "दादाभाई नौरोजी (Dadabhai Naoroji)", "en": "Dadabhai Naoroji" },
+        { "mr": "बद्रुद्दीन तैबजी", "en": "Badruddin Tyabji" },
+        { "mr": "जॉर्ज युल", "en": "George Yule" }
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": {
+        "mr": "(१८८६): काँग्रेसचे पहिले अधिवेशन (१८८५) मुंबईत व्योमेशचंद्र बॅनर्जी यांच्या अध्यक्षतेखाली झाले. दुसरे अधिवेशन १८८६ मध्ये कलकत्ता येथे पार पडले, ज्याचे अध्यक्षपद पारशी नेते 'दादाभाई नौरोजी' यांनी भूषवले होते.\n\n[संदर्भ: समाधान महाजन / स्पेक्ट्रम]",
+        "en": "(1886): While the first INC session (1885) was presided over by W.C. Bonnerjee, the second session held in Calcutta in 1886 was presided over by the 'Grand Old Man of India', Dadabhai Naoroji.\n\n"
+      }
+    },
+    {
+      "id": 19,
+      "question": {
+        "mr": "१८९९ मध्ये भारताचा अतिशय हुकूमशाही प्रवृत्तीचा व्हाइसरॉय म्हणून कोणाची नियुक्ती झाली होती, ज्याने बंगालची फाळणी घडवून आणली?",
+        "en": "Who was appointed as the highly authoritarian Viceroy of India in 1899, who later engineered the Partition of Bengal?"
+      },
+      "options": [
+        { "mr": "लॉर्ड कर्झन (Lord Curzon)", "en": "Lord Curzon" },
+        { "mr": "लॉर्ड मिंटो दुसरा", "en": "Lord Minto II" },
+        { "mr": "लॉर्ड हार्डिंग", "en": "Lord Hardinge" },
+        { "mr": "लॉर्ड चेम्सफोर्ड", "en": "Lord Chelmsford" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१८९९-१९०५): लॉर्ड कर्झन हा १८९९ ते १९०५ पर्यंत भारताचा व्हाइसरॉय होता. त्याने अतिशय केंद्रीय व दडपशाहीचे धोरण राबवले. त्याच्याच काळात विद्यापीठ कायदा (१९०४) आणि १९०५ मध्ये 'बंगالची फाळणी' जाहीर झाली.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1899-1905): Lord Curzon served as the Viceroy of India from 1899 to 1905. Known for his administrative centralization and controversial policies, his tenure culminated in the Partition of Bengal in 1905.\n\n"
+      }
+    },
+    {
+      "id": 20,
+      "question": {
+        "mr": "१९०५ मध्ये घोषित झालेली 'बंगालची फाळणी' प्रत्यक्षात कोणत्या तारखेपासून अमलात आली (ज्या दिवशी संपूर्ण बंगालमध्ये राष्ट्रीय शोक पाळण्यात आला)?",
+        "en": "From which date did the announced 'Partition of Bengal' in 1905 actually come into effect (the day observed as a day of national mourning across Bengal)?"
+      },
+      "options": [
+        { "mr": "२० जुलै १९०५", "en": "20 July 1905" },
+        { "mr": "१६ ऑक्टोबर १९०५ (16 October 1905)", "en": "16 October 1905" },
+        { "mr": "७ ऑगस्ट १९०५", "en": "7 August 1905" },
+        { "mr": "१५ ऑगस्ट १९०५", "en": "15 August 1905" }
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": {
+        "mr": "(१९०५): बंगालची फाळणी २० जुलै १९०५ रोजी जाहीर झाली. याविरुद्ध ७ ऑगस्ट १९०५ रोजी टाऊन हॉल, कलकत्ता येथे स्वदेशी चळवळीचा ठराव पास झाला. अंतिमतः फाळणी '१६ ऑक्टोबर १९०५' रोजी अमलात आली, ज्या दिवशी संताप व्यक्त करण्यासाठी लोकांनी एकमेकांना राख्या बांधल्या आणि उपोषण केले.\n\n[संदर्भ: डॉ. स. शि. गाठाळ / समाधान महाजन]",
+        "en": "(1905): Although the partition of Bengal was announced on July 20, 1905, it officially came into effect on October 16, 1905. The day was observed as a day of mourning, with people tying rakhis to each other as a symbol of unity.\n\n"
+      }
+    },
+    {
+      "id": 21,
+      "question": {
+        "mr": "मॉले-मिंटो सुधारणा कायदा (Indian Councils Act 1909) नुसार मुसलमानांसाठी कोणत्या पद्धतीची तरतूद करण्यात आली, ज्यामुळे भारताच्या विभाजनाचे बीज रोवले गेले?",
+        "en": "What provision was made for Muslims under the Morley-Minto Reforms (Indian Councils Act 1909), which sowed the seeds for the partition of India?"
+      },
+      "options": [
+        { "mr": "स्वतंत्र मतदारसंघ (Separate Electorates)", "en": "Separate Electorates" },
+        { "mr": "राखीव जागा (Reserved Seats in Joint Electorates)", "en": "Reserved Seats in Joint Electorates" },
+        { "mr": "विशेष सवलती व शिष्यवृत्ती", "en": "Special concessions and scholarships" },
+        { "mr": "सरकारी नोकऱ्यांमध्ये ५०% आरक्षण", "en": "50% reservation in government jobs" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९०९): १९०९ च्या कायद्याने (मॉले-मिंटो सुधारणा) मुस्लिमांसाठी 'स्वतंत्र मतदारसंघाची' (Separate Electorates) अत्यंत घातक तरतूद केली. यात मुस्लिम उमेदवाराला केवळ मुस्लिम मतदारच मत देऊ शकत होते. यामुळे भारतात जातीय राजकारणाचे बीज रोवले गेले.\n\n[संदर्भ: एम. लक्ष्मीकांत / स्पेक्ट्रम]",
+        "en": "(1909): The Morley-Minto Reforms of 1909 introduced the system of 'separate electorates' for Muslims, accepting the concept of communal representation. Lord Minto came to be known as the Father of Communal Electorate.\n\n"
+      }
+    },
+    {
+      "id": 22,
+      "question": {
+        "mr": "खालील विधाने विचारात घ्या:\nअ) १८९२ च्या भारतीय परिषद कायद्याने विधिमंडळात सदस्यांना प्रश्न विचारण्याचा (Asking Questions) अधिकार दिला.\nब) मात्र या कायद्यात उपप्रश्न (Supplementary Questions) विचारण्याची परवानगी नव्हती.\nवरीलपैकी कोणते/ती विधान/ने योग्य आहेत?",
+        "en": "Consider the following statements:\nA) The Indian Councils Act of 1892 gave members of the legislature the right to ask questions.\nB) However, this act did not allow asking supplementary questions.\nWhich of the above statement(s) is/are correct?"
+      },
+      "options": [
+        { "mr": "फक्त अ", "en": "Only A" },
+        { "mr": "फक्त ब", "en": "Only B" },
+        { "mr": "अ आणि ब दोन्ही", "en": "Both A and B" },
+        { "mr": "दोन्ही नाहीत", "en": "Neither A nor B" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "(१८९२): १८९२ च्या कायद्याने केंद्रीय व प्रांतीय विधानसभेचा विस्तार केला. सदस्यांना अर्थसंकल्पावर चर्चा करण्याचा आणि प्रशासनाला प्रश्न विचारण्याचा अधिकार मिळाला, परंतु पूरक प्रश्न (Supplementary Questions) विचारण्याची आणि मतदानाचा अधिकार नव्हता.\n\n[संदर्भ: एम. लक्ष्मीकांत]",
+        "en": "(1892): Both statements are correct. The Indian Councils Act of 1892 increased the functions of legislative councils and gave members the power of discussing the budget and addressing questions to the executive, but without the right to ask supplementary questions.\n\n"
+      }
+    },
+    {
+      "id": 23,
+      "question": {
+        "mr": "इंग्रजांनी भारताची राजधानी कलकत्त्यावरून दिल्लीला हलवण्याची घोषणा कोणत्या वर्षी आणि कोणत्या दरबारमध्ये केली?",
+        "en": "In which year and at which Durbar was the transfer of the British capital of India from Calcutta to Delhi announced?"
+      },
+      "options": [
+        { "mr": "१९०५, दिल्ली दरबार", "en": "1905, Delhi Durbar" },
+        { "mr": "१९११, दिल्ली दरबार (Delhi Durbar)", "en": "1911, Delhi Durbar" },
+        { "mr": "१९१९, लंडन परिषद", "en": "1919, London Conference" },
+        { "mr": "१९२१, शिमला दरबार", "en": "1921, Shimla Durbar" }
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": {
+        "mr": "(१९११): राजा जॉर्ज पंचम यांच्या स्वागतासाठी १२ डिसेंबर १९११ रोजी भरलेल्या 'दिल्ली दरबारात' व्हाइसरॉय लॉर्ड हार्डिंग याने दोन मोठ्या घोषणा केल्या - १) बंगालची फाळणी रद्द आणि २) भारताची राजधानी कलकत्त्यावरून दिल्लीला हलवणे (जी १९१२ मध्ये प्रत्यक्षात आली).\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1911): At the Delhi Durbar held on December 12, 1911, King George V announced two major decisions: the annulment of the Partition of Bengal and the transfer of the British capital from Calcutta to Delhi.\n\n"
+      }
+    },
+    {
+      "id": 24,
+      "question": {
+        "mr": "खालीलपैकी कोणत्या महसूल पद्धतीत प्रत्यक्ष शेतकऱ्यांशी (रयतेशी) करार न करता, संपूर्ण गावाची किंवा गावांच्या समूहाची (महालची) महसूल भरण्याची एकत्रित जबाबदारी असायची?",
+        "en": "In which of the following land revenue systems, instead of settling with individual peasants, was the collective responsibility for revenue payment placed on the entire village or group of villages (Mahal)?"
+      },
+      "options": [
+        { "mr": "कायमधारा पद्धत", "en": "Permanent Settlement" },
+        { "mr": "रयतवारी पद्धत", "en": "Ryotwari / Ryotwari System" },
+        { "mr": "महालवारी पद्धत (Mahalwari System)", "en": "Mahalwari System" },
+        { "mr": "इजारदारी पद्धत", "en": "Izaredari System" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "(१८२२): महालवारी पद्धतीत 'महाल' (गाव किंवा गावांचा समूह) हे महसुलाचे एकक मानले गेले. जमिनीची मोजणी करून संपूर्ण गावाने मिळून सरकारला महसूल द्यावयाचा असे. ही उत्तर प्रदेश, पंजाब व मध्य भारतात लागू होती.\n\n[संदर्भ: अनिल कटारे / समाधान महाजन]",
+        "en": "(1822): In the Mahalwari system, the revenue settlement was made with the village community as a whole (Mahal), holding joint responsibility for the payment of land revenue.\n\n"
+      }
+    },
+    {
+      "id": 25,
+      "question": {
+        "mr": "स्वातंत्र्यपूर्व काळात भारतीय अर्थव्यवस्थेचे तीन टप्प्यांत शोषण झाले आहे (व्यापारी भांडवलशाही, औद्योगिक भांडवलशाही आणि वित्तीय भांडवलशाही) असा सिद्धांत कोणी मांडला?",
+        "en": "Who propounded the theory that the Indian economy was exploited in three distinct phases during the pre-independence era (Mercantile, Industrial, and Financial capitalism)?"
+      },
+      "options": [
+        { "mr": "दादाभाई नौरोजी", "en": "Dadabhai Naoroji" },
+        { "mr": "आर. सी. दत्त", "en": "R. C. Dutt" },
+        { "mr": "राजेंद्र प्रसाद", "en": "Rajendra Prasad" },
+        { "mr": "रजनी Palme Dutt (R. P. Dutt)", "en": "R. P. Dutt" }
+      ],
+      "correctAnswerIndex": 3,
+      "explanation": {
+        "mr": "(१९४०): मार्क्सवादी इतिहासकार 'रजनी पालमे दत्त' (R. P. Dutt) यांनी आपल्या 'India Today' या ग्रंथात ब्रिटिश आर्थिक धोरणाचे तीन टप्पे स्पष्ट केले: १) व्यापारी भांडवलशाही (१७५७-१८१३), २) औद्योगिक भांडवलशाही (१८१३-१८५८), आणि ३) वित्तीय भांडवलशाही (१८५८ नंतर).\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1940): Marxist historian R.P. Dutt, in his seminal work 'India Today', categorized British economic exploitation into three phases: Mercantile capitalism, Industrial capitalism, and Financial capitalism.\n\n"
+      }
+    }
+  ]
+}

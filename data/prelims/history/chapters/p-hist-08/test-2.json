@@ -1,0 +1,464 @@
+{
+  "testId": "p-hist-08-t2",
+  "title": {
+    "mr": "स्वातंत्र्य चळवळ व स्वातंत्र्यप्राप्ती (वेव्हेल योजना व शिमला परिषद) — सराव 2",
+    "en": "Freedom Movement and Independence (Wavell Plan & Simla Conference) — Practice Test 2"
+  },
+  "durationMinutes": 20,
+  "marksPerQuestion": 1,
+  "negativeMarking": 0.25,
+  "totalMarks": 25,
+  "difficulty": "मध्यम ते काठिण्य",
+  "questions": [
+    {
+      "id": 1,
+      "question": {
+        "mr": "जून १९४५ मध्ये भारताचे तत्कालीन वाईसरॉय लॉर्ड वेव्हेल यांनी राजकीय कोंडी फोडण्यासाठी आणि नवीन कार्यकारी मंडळ स्थापन करण्यासाठी कोणती योजना जाहीर केली होती?",
+        "en": "Which major political plan was announced by Viceroy Lord Wavell in June 1945 to break the constitutional deadlock in India?"
+      },
+      "options": [
+        { "mr": "वेव्हेल योजना (Wavell Plan)", "en": "Wavell Plan" },
+        { "mr": "कॅबिनेट मिशन योजना", "en": "Cabinet Mission Plan" },
+        { "mr": "माऊंटबॅटन योजना", "en": "Mountbatten Plan" },
+        { "mr": "अगस्त प्रस्ताव", "en": "August Offer" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९४५): दुसऱ्या महायुद्धाच्या अखेरीस भारताला राजकीय स्वायत्ततेकडे नेण्यासाठी वाईसरॉय लॉर्ड वेव्हेल यांनी जून १९४५ मध्ये 'वेव्हेल योजना' जाहीर केली आणि सर्वपक्षीय 'शिमला परिषद' बोलावली.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / डॉ. स. शि. गाठाळ]",
+        "en": "(1945): Viceroy Lord Wavell announced the Wavell Plan in June 1945 proposing a reconstituted Executive Council with caste Hindu and Muslim representation in equal proportions.\n\n"
+      }
+    },
+    {
+      "id": 2,
+      "question": {
+        "mr": "वेव्हेल योजनेनुसार (१९४५) प्रस्तावित वाईसरॉयच्या कार्यकारी मंडळात (Executive Council) कोणती मुख्य तरतूद केली गेली होती?",
+        "en": "What was the key compositional feature proposed for the Viceroy's Executive Council under the Wavell Plan?"
+      },
+      "options": [
+        { "mr": "गव्हर्नर जनरल व कमांडर-इन-चीफ वगळता सर्व सदस्य भारतीय असणे आणि सवर्ण हिंदू व मुस्लिम प्रातिनिधिक संख्या समान असणे", "en": "All members except the Viceroy and Commander-in-Chief to be Indian, with equal representation for caste Hindus and Muslims" },
+        { "mr": "फक्त ब्रिटीश अधिकारीच मंत्रिपदी असणे", "en": "Only British officials holding ministerial berths" },
+        { "mr": "मुस्लिम लीगला परिपूर्ण बहुमत देणे", "en": "Absolute majority for the Muslim League" },
+        { "mr": "काँग्रेसवर पूर्ण बंदी घालणे", "en": "Total ban on Congress participation" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९४५): वेव्हेल योजनेत वाईसरॉय आणि लष्करप्रमुख (Commander-in-Chief) वगळता कार्यकारी मंडळातील सर्व पदे भारतीयांना देण्याचे ठरले होते, तसेच सवर्ण हिंदू आणि मुस्लिम सदस्यांची संख्या समान (Equal representation) ठेवली जाणार होती.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1945): The plan stipulated that all executive council portfolios except the Viceroy and Commander-in-Chief would be held by Indians, with parity between caste Hindus and Muslims.\n\n"
+      }
+    },
+    {
+      "id": 3,
+      "question": {
+        "mr": "जून १९४५ मध्ये शिमला येथे बोलावलेली 'शिमला परिषद' (Simla Conference) मुख्यत्वे कोणत्या कारणास्तव अयशस्वी ठरली?",
+        "en": "What primary contentious issue caused the Simla Conference of June 1945 to ultimately collapse?"
+      },
+      "options": [
+        { "mr": "मुस्लिम लीगचा असा अट्टाहास होता की कार्यकारी मंडळातील सर्व मुस्लिम मंत्र्यांची नावे फक्त लीगच सुचवेल, ज्यास काँग्रेसने विरोध केला", "en": "The Muslim League insisted on the exclusive right to nominate all Muslim members, which the Congress rejected" },
+        { "mr": "गांधीजींनी परिषदेत सहभागी होण्यास नकार दिला", "en": "Gandhi refused to attend the conference" },
+        { "mr": "ब्रिटनने भारताला स्वातंत्र्य देण्यास स्पष्ट नकार दिला", "en": "Britain flatly refused independence" },
+        { "mr": "फक्त कम्युनिस्ट पक्षाने बहिष्कार टाकला", "en": "Only the Communist party boycotted it" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९४५): मोहम्मद अली जिना यांनी अट्टाहास धरला की मंत्रिमंडळातील सर्व मुस्लिम प्रतिनिधी फक्त मुस्लिम लीगचेच असावेत, आणि काँग्रेसने मुस्लिम प्रतिनिधी नेमू नये. यामुळे काँग्रेसच्या सर्वसमावेशक स्वरूपाला बाधा पोहोचत असल्याने परिषद अपयशी ठरली.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / समाधान महाजन]",
+        "en": "(1945): Jinnah stubbornly claimed the sole monopoly of the Muslim League to nominate all Muslim ministers, undermining the secular Congress's right to represent all communities, collapsing the talks.\n\n"
+      }
+    },
+    {
+      "id": 4,
+      "question": {
+        "mr": "शिमला परिषदेत (१९४५) काँग्रेसचे अधिकृत प्रतिनिधी म्हणून आणि वाटाघाटीत महत्त्वाची भूमिका बजावणारे काँग्रेसचे तत्कालीन अध्यक्ष कोण होते?",
+        "en": "Who served as the president of the Congress and led negotiations at the Simla Conference in 1945?"
+      },
+      "options": [
+        { "mr": "मौलाना अबुल कलाम आझाद (Maulana Abul Kalam Azad)", "en": "Maulana Abul Kalam Azad" },
+        { "mr": "जवाहरलाल नेहरू", "en": "Jawaharlal Nehru" },
+        { "mr": "सरदार वल्लभभाई पटेल", "en": "Sardar Vallabhbhai Patel" },
+        { "mr": "डॉ. राजेंद्र प्रसाद", "en": "Dr. Rajendra Prasad" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९४५): मौलाना अबुल कलाम आझाद हे त्या काळात काँग्रेसचे अध्यक्ष होते (१९४० ते १९४५ दरम्यान ते सलग अध्यक्ष होते). त्यांनी शिमला परिषदेत काँग्रेसचे नेतृत्व केले आणि जिनांच्या एकाधिकारशाहीला विरोध दर्शवला.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1945): Maulana Abul Kalam Azad, serving as the long-standing Congress President during the war years, led the delegation and defended the Congress's inclusive national character at Simla.\n\n"
+      }
+    },
+    {
+      "id": 5,
+      "question": {
+        "mr": "दुसऱ्या महायुद्धानंतर ब्रिटनमध्ये जुलै १९४५ मध्ये झालेल्या निवडणुकांमध्ये कोणत्या पक्षाने विजय मिळवला आणि क्लेमेंट एटली भारताचे नवीन पंतप्रधान बनले?",
+        "en": "Which political party won the British general elections of July 1945, bringing Clement Attlee to power as Prime Minister?"
+      },
+      "options": [
+        { "mr": "लेबर पार्टी (Labour Party)", "en": "Labour Party" },
+        { "mr": "कंझर्व्हेटिव्ह पार्टी (Conservative Party)", "en": "Conservative Party" },
+        { "mr": "लिबरल पार्टी", "en": "Liberal Party" },
+        { "mr": "कम्युनिस्ट पार्टी ऑफ ब्रिटन", "en": "Communist Party of Britain" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९४५): जुलै १९४५ च्या ब्रिटनच्या संसदेच्या निवडणुकीत विन्स्टन चर्चिल यांच्या कंझर्व्हेटिव्ह पार्टीचा पराभव झाला आणि 'लेबर पार्टी' (Labour Party) ने दणदणीत विजय मिळवत क्लेमेंट एटली यांना पंतप्रधान केले. लेबर पार्टी भारताच्या स्वातंत्र्याच्या बाजूने अनुकूल होती.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / एम. लक्ष्मीकांत]",
+        "en": "(1945): In the post-war British elections of July 1945, the Labour Party swept to power, replacing Winston Churchill with Clement Attlee as Prime Minister, signaling a proactive stance on Indian independence.\n\n"
+      }
+    },
+    {
+      "id": 6,
+      "question": {
+        "mr": "आझाद हिंद फौजेच्या (INA) सैनिकांवर लाल किल्ल्यावर (Red Fort Trials - १९४५-४६) खटले चालवल्यावर देशभरात उडालेल्या जनक्षोभाच्या काळात खालीलपैकी कोणती व्यक्ती 'INA बचाव समितीच्या' (Defense Committee) प्रमुख वकिलांमध्ये समाविष्ट नव्हती?",
+        "en": "Which of the following prominent legal luminaries was NOT part of the Congress-led INA Defense Committee at the Red Fort trials?"
+      },
+      "options": [
+        { "mr": "मोहम्मद अली जिना (Muhammad Ali Jinnah)", "en": "Muhammad Ali Jinnah" },
+        { "mr": "भोलाभाई देसाई", "en": "Bhulabhai Desai" },
+        { "mr": "तेजबहादूर सप्रू", "en": "Tej Bahadur Sapru" },
+        { "mr": "पंडित जवाहरलाल नेहरू", "en": "Jawaharlal Nehru" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९४५-४६): काँग्रेसने स्थापन केलेल्या आयएनए डिफेन्स कमिटीमध्ये भोलाभाई देसाई (मुख्य वकील), तेजबहादूर सप्रू, जवाहरलाल नेहरू, कैलासनाथ काटजू आणि अस्फ अली यांचा समावेश होता. जिना या समितीचे भाग नव्हते.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1945-46): The INA Defense Committee comprised Bhulabhai Desai, Tej Bahadur Sapru, Jawaharlal Nehru, Kailash Nath Katju, and Asaf Ali. Jinnah and the Muslim League kept away from the defense team.\n\n"
+      }
+    },
+    {
+      "id": 7,
+      "question": {
+        "mr": "लाल किल्ल्यावरील खटल्यात (१९४५-४६) आझाद हिंद फौजेच्या आरोपी अधिकाऱ्यांना ब्रिटिश लष्करी न्यायालयाने (Court-martial) काय शिक्षा सुनावली होती, जी नंतर जनक्षोभामुळे शिथिल करावी लागली?",
+        "en": "What initial sentence did the British court-martial pass against the INA defendants at the Red Fort trials, which had to be remitted due to massive public fury?"
+      },
+      "options": [
+        { "mr": "देशद्रोहाचा गुन्हा सिद्ध करत 'जन्मठेप' (Transportation for life)", "en": "Transportation for life (imprisonment for life)" },
+        { "mr": "तात्काळ फाशीची शिक्षा", "en": "Immediate hanging" },
+        { "mr": "निर्दोश मुक्तता", "en": "Complete acquittal" },
+        { "mr": "देशातून सक्तीने हद्दपार करणे", "en": "Forced exile from India" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९४५-४६): लष्करी न्यायालयाने शाहनवाज खान, प्रेम सहगल आणि गुरबक्ष सिंग ढिल्लों यांना देशद्रोहाचा दोषी ठरवत 'जन्मठेपेची' (Transportation for life) शिक्षा सुनावली. परंतु देशभरात उसळलेल्या आंदोलनामुळे कमांडर-इन-चीपने ही शिक्षा माफ केली.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1945-46): The court-martial found the defendants guilty of treason and sentenced them to transportation for life, sparking fierce nationwide protests that forced the Commander-in-Chief to remit the sentences.\n\n"
+      }
+    },
+    {
+      "id": 8,
+      "question": {
+        "mr": "फेब्रुवारी १९४६ मध्ये मुंबईत 'रॉयल इंडियन नेव्ही बंड' (RIN Mutiny) च्या वेळी खलाशांनी 'एचएमआयएस तलवार' व्यतिरिक्त कोणत्या इतर युद्धनौका आणि स्थानकांवर आपले नियंत्रण मिळवले होते?",
+        "en": "Which other naval establishments and ships joined the RIN mutiny in Bombay alongside HMIS Talwar in February 1946?"
+      },
+      "options": [
+        { "mr": "कॅसल व बॉम्बेमधील इतर नौदल जहाजे व बॅरेक्स (HMIS Hindustan in Karachi also joined later)", "en": "Castle barracks, various ships, and HMIS Hindustan in Karachi" },
+        { "mr": "फक्त कलकत्त्याचे व्यापारी जहाज", "en": "Only merchant ships in Calcutta" },
+        { "mr": "फक्त मद्रासचे कोस्ट गार्ड", "en": "Only Coast Guard in Madras" },
+        { "mr": "फक्त कराचीची पाणबुडी", "en": "Only submarines in Karachi" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९४६): १९ फेब्रुवारी १९४६ रोजी 'एचएमआयएस तलवार' वर सुरू झालेले बंड अवघ्या मुंबईतील नौदल बॅरेक्स (कॅसल व फोर्ट) आणि कराची येथील 'एचएमआयएस हिंदुस्तान' पर्यंत पसरले, जिथे खलाशांनी संप पुकारला.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1946): The mutiny quickly spread from HMIS Talwar to Castle and Fort barracks in Bombay, and subsequently to naval ships and establishments in Karachi, notably HMIS Hindustan.\n\n"
+      }
+    },
+    {
+      "id": 9,
+      "question": {
+        "mr": "फेब्रुवारी १९४६ च्या नौदल बंडाच्या (RIN Mutiny) समर्थनार्थ कोणत्या शहरात कामगारांनी आणि सर्वसामान्य जनतेने अभूतपूर्व सामान्य संप (General Strike) पाळला होता?",
+        "en": "In support of the naval ratings, workers and citizens of which city launched a massive, historic general strike in February 1946?"
+      },
+      "options": [
+        { "mr": "मुंबई (Bombay - तब्बल ३ लाख कामगार संपावर गेले)", "en": "Bombay (with over 300,000 workers striking)" },
+        { "mr": "कलकत्ता", "en": "Calcutta" },
+        { "mr": "मद्रास", "en": "Madras" },
+        { "mr": "कराची", "en": "Karachi" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९४६): खलाशांच्या बंडाला पाठिंबा देण्यासाठी मुंबईतील कामगार वर्गाने आणि जनतेने अभूतपूर्व 'सामान्य संप' पुकारला. ३ लाखांहून अधिक कामगार रस्त्यावर उतरले आणि ब्रिटिशांच्या विरोधात barricades उभारत संघर्ष केला.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1946): In an unprecedented display of working-class solidarity, over 300,000 industrial workers in Bombay launched a general strike supporting the mutineers, clashing with British troops.\n\n"
+      }
+    },
+    {
+      "id": 10,
+      "question": {
+        "mr": "कॅबिनेट मिशन (Cabinet Mission) भारतात मार्च १९४६ मध्ये आले, तेव्हा त्याचे मुख्य ध्येय काय होते?",
+        "en": "What was the primary mandate of the Cabinet Mission dispatched to India in March 1946?"
+      },
+      "options": [
+        { "mr": "भारतात सत्ता हस्तांतरित करण्यासाठी आवश्यक असणारी 'संविधान सभा' स्थापन करण्याबाबत मार्ग काढणे", "en": "To frame machinery for setting up a constitution-making body and negotiate peaceful transfer of power" },
+        { "mr": "भारताची अखंडता मोडून तीन तुकडे करणे", "en": "To permanently divide India into three nations" },
+        { "mr": "भारतावर पुन्हा प्रत्यक्ष सैन्य राजवट लादणे", "en": "To re-impose direct martial law" },
+        { "mr": "फक्त प्रांतीय निवडणुका घेणे", "en": "To conduct only provincial elections" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९४६): पंतप्रधान क्लेमेंट एटली यांनी पाठवलेल्या कॅबिनेट मिशनचे मुख्य काम भारताला स्वातंत्र्य देण्यापूर्वी राज्यघटना तयार करणारी 'संविधान सभा' (Constituent Assembly) कशी स्थापन करावी आणि अंतरिम सरकार कसे बनवावे याचे सोपस्कार पार पाडणे होते.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / एम. लक्ष्मीकांत]",
+        "en": "(1946): The Cabinet Mission was tasked with formulating a constitutional framework, establishing a Constituent Assembly, and setting up an interim government to facilitate the transfer of power.\n\n"
+      }
+    },
+    {
+      "id": 11,
+      "question": {
+        "mr": "कॅबिनेट मिशन योजनेनुसार (१९४६) भारतीय प्रांतांना किती मुख्य गटांमध्ये (Sections) विभागले गेले होते?",
+        "en": "Into how many territorial sections were the British Indian provinces grouped under the Cabinet Mission Plan?"
+      },
+      "options": [
+        { "mr": "तीन गट (Section A, Section B आणि Section C)", "en": "Three groups (Section A, Section B, and Section C)" },
+        { "mr": "दोन गट", "en": "Two groups" },
+        { "mr": "चार गट", "en": "Four groups" },
+        { "mr": "पाच गट", "en": "Five groups" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९४६): कॅबिनेट मिशनने प्रांतांना तीन गटांत विभागले: 'गट अ' (हिंदू बहुल प्रांत - बॉम्बे, मद्रास, युपी, सीपी, बिहार, ओरिसा), 'गट ब' (वायव्येवरील मुस्लिम बहुल - पंजाब, सिंध, वायव्य सीमा प्रांत), आणि 'गट क' (आसाम व बंगाल).\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / एम. लक्ष्मीकांत]",
+        "en": "(1946): The Cabinet Mission grouped provinces into three sections: Section A (Hindu-majority provinces), Section B (North-Western Muslim-majority), and Section C (Assam and Bengal).\n\n"
+      }
+    },
+    {
+      "id": 12,
+      "question": {
+        "mr": "कॅबिनेट मिशनच्या प्रस्तावानुसार सप्टेंबर १९४६ मध्ये 'पंडित जवाहरलाल नेहरूंच्या' नेतृत्वाखाली कोणत्या सरकारची स्थापना झाली?",
+        "en": "Which government was formed in September 1946 under the leadership of Jawaharlal Nehru in accordance with the Cabinet Mission proposals?"
+      },
+      "options": [
+        { "mr": "हंगामी सरकार (Interim Government)", "en": "Interim Government" },
+        { "mr": "स्वतंत्र भारताचे पहिले मंत्रिमंडळ", "en": "First independent cabinet" },
+        { "mr": "संविधान सभा मंडळ", "en": "Constituent Board" },
+        { "mr": "युद्धकालीन नियंत्रण मंडळ", "en": "Wartime Control Board" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९४६): सप्टेंबर १९४६ मध्ये पंडित जवाहरलाल नेहरू यांच्या नेतृत्वाखाली 'हंगामी सरकार' (Interim Government) ने शपथ घेतली (सुरुवातीस मुस्लिम लीग बाहेर राहिली, पण नंतर ऑक्टोबरमध्ये लिसकत अली खान यांच्या नेतृत्वाखाली लीगही त्यात सामील झाली).\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / डॉ. स. शि. गाठाळ]",
+        "en": "(1946): An Interim Government headed by Jawaharlal Nehru was sworn in on September 2, 1946, as the first step towards self-governance.\n\n"
+      }
+    },
+    {
+      "id": 13,
+      "question": {
+        "mr": "ऑक्टोबर १९४६ मध्ये हंगामी सरकारमध्ये मुस्लिम लीग सामील झाली तेव्हा 'अर्थमंत्री' (Finance Minister) म्हणून कोणाची नियुक्ती केली गेली होती, ज्यांनी काँग्रेसच्या धोरणांना अडथळा आणला?",
+        "en": "Which prominent Muslim League leader was inducted into the Interim Government as Finance Minister in October 1946?"
+      },
+      "options": [
+        { "mr": "लियाकत अली खान (Liaquat Ali Khan)", "en": "Liaquat Ali Khan" },
+        { "mr": "मोहम्मद अली जिना", "en": "Muhammad Ali Jinnah" },
+        { "mr": "चुंद्रीगर", "en": "I.I. Chundrigar" },
+        { "mr": "अब्दुल रब निश्तार", "en": "Abdur Rab Nishtar" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९४६): ऑक्टोबर १९४६ मध्ये मुस्लिम लीग हंगामी सरकारमध्ये सामील झाल्यावर 'लियाकत अली खान' यांना अर्थखाते (Finance Ministry) दिले गेले, ज्यांनी काँग्रेसच्या प्रत्येक विभागाच्या बजेटला विरोध करत सरकारमध्ये राहून अडथळे आणण्याचे धोरण ठेवले.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1946): When the Muslim League joined the Interim Government in October 1946, Liaquat Ali Khan was allotted the crucial Finance portfolio, using it to stymie Congress-led departmental initiatives.\n\n"
+      }
+    },
+    {
+      "id": 14,
+      "question": {
+        "mr": "डिसेंबर १९४६ मध्ये जेव्हा पहिल्यांदा 'संविधान सभेची' (Constituent Assembly) बैठक भरली, तेव्हा मुस्लिम लीगने काय भूमिका घेतली होती?",
+        "en": "What stance did the Muslim League take regarding the inaugural session of the Constituent Assembly in December 1946?"
+      },
+      "options": [
+        { "mr": "संविधान सभेवर पूर्ण बहिष्कार टाकला आणि स्वतंत्र पाकिस्तानची मागणी लावून धरली", "en": "Boycotted the Constituent Assembly entirely and persisted in demanding a separate Pakistan" },
+        { "mr": "सभेचे अध्यक्षपद स्वीकारले", "en": "Accepted the presidency of the assembly" },
+        { "mr": "सभेचे कामकाज सुरळीत चालवण्यास मदत केली", "en": "Helped conduct smooth proceedings" },
+        { "mr": "संयुक्त संविधान तयार केले", "en": "Drafted a joint constitution" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९४६): मुस्लिम लीगने ९ डिसेंबर १९४६ रोजी भरलेल्या संविधान सभेच्या पहिल्या बैठकीवर बहिष्कार टाकला आणि स्वतंत्र पाकिस्तानसाठी संविधान सभेची मागणी केली.\n\n[संदर्भ: एम. लक्ष्मीकांत / स्पेक्ट्रम]",
+        "en": "(1946): The Muslim League boycotted the first meeting of the Constituent Assembly on December 9, 1946, demanding a separate constituent assembly for Pakistan.\n\n"
+      }
+    },
+    {
+      "id": 15,
+      "question": {
+        "mr": "ब्रिटनचे पंतप्रधान क्लेमेंट एटली यांनी २० फेब्रुवारी १९४७ रोजी लंडनच्या संसदेत ऐतिहासिक घोषणा करताना भारताला कोणत्या तारखेपूर्वी पूर्ण सत्ता हस्तांतरित करण्याची घोषणा केली होती?",
+        "en": "What absolute target date for British withdrawal and transfer of power to Indian hands was announced by Prime Minister Clement Attlee on February 20, 1947?"
+      },
+      "options": [
+        { "mr": "३० जून १९४८ पूर्वी (Not later than June 30, 1948)", "en": "Not later than June 30, 1948" },
+        { "mr": "१५ ऑगस्ट १९४७", "en": "August 15, 1947" },
+        { "mr": "२६ जानेवारी १९५०", "en": "January 26, 1950" },
+        { "mr": "३१ डिसेंबर १९४९", "en": "December 31, 1949" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(फेब्रुवारी १९४७): एटलींच्या घोषणेनुसार ३० जून १९४८ ही ब्रिटिशांच्या भारत सोडण्याची शेवटची तारीख ठरवली गेली होती, जेणेकरून भारतीय नेत्यांवर लवकरात लवकर निर्णय घेण्यासाठी दबाव निर्माण होईल.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(February 1947): Attlee's historic announcement fixed a firm deadline of June 30, 1948, for the final withdrawal of British rule from India.\n\n"
+      }
+    },
+    {
+      "id": 16,
+      "question": {
+        "mr": "मार्च १९४७ मध्ये भारताचे अंतिम वायसराय म्हणून लॉर्ड माऊंटबॅटन यांनी पदभार स्वीकारला. त्यांनी भारतातील वाढता संघर्ष पाहता सत्तेचे हस्तांतरण करण्यासाठी कोणता नवीन निर्णय घेतला?",
+        "en": "What major modification did Lord Mountbatten introduce regarding the timeline for Indian independence upon assuming office in March 1947?"
+      },
+      "options": [
+        { "mr": "जून १९४८ ची वाट न पाहता फाळणीची प्रक्रिया अत्यंत वेगाने पूर्ण करत १५ ऑगस्ट १९४७ रोजीच स्वातंत्र्य व फाळणी जाहीर करणे", "en": "Advancing the date of transfer of power significantly to August 1947" },
+        { "mr": "ब्रिटिश राजवट आणखी १० वर्षे वाढवणे", "en": "Extending British rule by another decade" },
+        { "mr": "भारताची फाळणी रद्द करणे", "en": "Permanently shelving partition plans" },
+        { "mr": "सत्ता थेट संयुक्त राष्ट्रसंघाकडे सोपवणे", "en": "Handing power to the United Nations" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९४७): माऊंटबॅटन यांनी परिस्थितीचे गांभीर्य ओळखत जून १९४८ ची वाट न पाहता फाळणीची प्रक्रिया अत्यंत वेगाने पूर्ण करत १५ ऑगस्ट १९४७ रोजीच स्वातंत्र्य व फाळणी जाहीर केली (माऊंटबॅटन योजना).\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / डॉ. स. शि. गाठाळ]",
+        "en": "(1947): Realizing that communal strife was spiraling out of control, Mountbatten drastically advanced the transfer date, engineering partition and independence for August 1947.\n\n"
+      }
+    },
+    {
+      "id": 17,
+      "question": {
+        "mr": "माऊंटबॅटन योजना (३ जून १९४७) नुसार पंजाब आणि बंगालच्या प्रांतांच्या फाळणीबाबत काय ठरले होते?",
+        "en": "What did the Mountbatten Plan of June 3, 1947, stipulate regarding the provinces of Punjab and Bengal?"
+      },
+      "options": [
+        { "mr": "तेथील प्रांतिक कायदेमंडळांच्या सदस्यांची बैठक होऊन धार्मिक आधारावर फाळणीबाबत निर्णय घेतला जाईल", "en": "Provincial assemblies would meet to vote on the partition of Punjab and Bengal on religious lines" },
+        { "mr": "त्यांची फाळणी होणार नाही", "en": "They would not be partitioned" },
+        { "mr": "त्यांना ब्रिटिनमध्ये समाविष्ट केले जाईल", "en": "They would be integrated into Britain" },
+        { "mr": "त्यांना स्वतंत्र राष्ट्रे घोषित केले जाईल", "en": "They would be declared independent nations" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९४७): माऊंटबॅटन योजनेत पंजाब व बंगालच्या प्रांतिक कायदेमंडळांना फाळणीबाबत मतदान करण्याचे अधिकार दिले गेले, ज्यामुळे पश्चिम पंजाब व पूर्व बंगाल पाकिस्तानला गेले तर पूर्व पंजाब व पश्चिम बंगाल भारतात राहिले.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / डॉ. स. शि. गाठाळ]",
+        "en": "(1947): The Mountbatten Plan provided for the partitioning of Punjab and Bengal based on votes by members of their respective provincial legislative assemblies.\n\n"
+      }
+    },
+    {
+      "id": 18,
+      "question": {
+        "mr": "माऊंटबॅटन योजनेनुसार उत्तर-पश्चिम सीमा प्रांत (NWFP) आणि आसाममधील सिलहट (Sylhet) जिल्ह्यात फाळणीपूर्वी काय घेण्यात आले होते?",
+        "en": "What democratic mechanism was utilized in the NWFP and Sylhet district of Assam under the Mountbatten Plan to decide their national affiliation?"
+      },
+      "options": [
+        { "mr": "जनमत चाचणी / जनमत संग्रह (Referendum / Plebiscite)", "en": "Referendum / Plebiscite" },
+        { "mr": "लष्करी कब्जा", "en": "Military occupation" },
+        { "mr": "प्रत्यक्ष निवडणूक", "en": "Direct general election" },
+        { "mr": "ब्रिटिश राजाचा निर्णय", "en": "Royal decree" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९४७): माऊंटबॅटन योजनेनुसार उत्तर-पश्चिम सीमा प्रांत (NWFP) आणि सिलहट जिल्ह्यात भारत की पाकिस्तान यात कोणाकडे जायचे हे ठरवण्यासाठी 'जनमत चाचणी' (Referendum) घेतली गेली.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1947): To resolve territorial ambiguity, the Mountbatten Plan mandated a public referendum in the NWFP and the Muslim-majority Sylhet district of Assam.\n\n"
+      }
+    },
+    {
+      "id": 19,
+      "question": {
+        "mr": "ब्रिटीश संसदेने जुलै १९४७ मध्ये संमत केलेल्या 'भारतीय स्वातंत्र्य कायदा १९४७' (Indian Independence Act 1947) ला राजाची मंजुरी (Royal Assent) कधी मिळाली होती?",
+        "en": "On which date did the Indian Independence Act 1947 receive Royal Assent from the British Monarch?"
+      },
+      "options": [
+        { "mr": "१८ जुलै १९४७ (July 18, 1947)", "en": "July 18, 1947" },
+        { "mr": "१५ ऑगस्ट १९४७", "en": "August 15, 1947" },
+        { "mr": "३ जून १९४७", "en": "June 3, 1947" },
+        { "mr": "२६ जानेवारी १९५०", "en": "January 26, 1950" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९४७): माऊंटबॅटन योजनेवर आधारीत 'भारतीय स्वातंत्र्य कायदा १९४७' ब्रिटीश संसदेत पास होऊन १८ जुलै १९४७ रोजी त्याला अधिकृत राजेशाही मंजुरी (Royal Assent) मिळाली.\n\n[संदर्भ: एम. लक्ष्मीकांत / स्पेक्ट्रम]",
+        "en": "(1947): The Indian Independence Bill, based on the Mountbatten Plan, was swiftly passed by the British Parliament and received Royal Assent on July 18, 1947.\n\n"
+      }
+    },
+    {
+      "id": 20,
+      "question": {
+        "mr": "भारतीय स्वातंत्र्य कायदा १९४७ नुसार १५ ऑगस्ट १९४७ रोजी भारत आणि पाकिस्तान हे दोन स्वतंत्र देश अस्तित्वात आले. या कायद्याने दोन्ही देशांसाठी काय निर्माण केले?",
+        "en": "According to the Indian Independence Act 1947, what executive office replaced the Viceroy in each of the new dominions?"
+      },
+      "options": [
+        { "mr": "गव्हर्नर जनरल (Governor-General for each dominion)", "en": "Governor-General for each dominion" },
+        { "mr": "ब्रिटिश पंतप्रधान", "en": "British Prime Minister" },
+        { "mr": "मुख्य सेनापती", "en": "Commander-in-Chief" },
+        { "mr": "साम्राज्य आयुक्त", "en": "Imperial Commissioner" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९४७): भारतीय स्वातंत्र्य कायद्यानुसार ब्रिटीश संसदेने व्हाइसरॉय पद रद्द केले आणि प्रत्येक राज्यासाठी (भारत आणि पाकिस्तान) एक 'गव्हर्नर जनरल' पद निर्माण केले.\n\n[संदर्भ: एम. लक्ष्मीकांत / स्पेक्ट्रम]",
+        "en": "(1947): The 1947 Act abolished the Viceroyalty, instituting a Governor-General for each of the two newly independent dominions.\n\n"
+      }
+    },
+    {
+      "id": 21,
+      "question": {
+        "mr": "स्वातंत्र्यप्राप्तीनंतर (१९४७) भारतातील ५०० हून अधिक स्वदेशी संस्थानांचे (Princely States) भारतात विलीनीकरण करण्याचे अवघड शिवधनुष्य कोणी पेलले होते?",
+        "en": "Which national leader successfully engineered the political integration of over 500 princely states into the Union of India post-independence?"
+      },
+      "options": [
+        { "mr": "सरदार वल्लभभाई पटेल (Sardar Vallabhbhai Patel - गृहमंत्री व व्ही. पी. मेनन यांच्या सहकार्याने)", "en": "Sardar Vallabhbhai Patel (with V.P. Menon)" },
+        { "mr": "जवाहरलाल नेहरू", "en": "Jawaharlal नेहरू" },
+        { "mr": "महात्मा गांधी", "en": "Mahatma Gandhi" },
+        { "mr": "चक्रवर्ती राजगोपालाचारी", "en": "C. Rajagopalachari" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९४७-१९४८): भारताचे पहिले गृहमंत्री 'सरदार वल्लभभाई पटेल' आणि सचिव व्ही. पी. मेनन यांनी आपल्या मुत्सद्देगिरीच्या जोरावर जुन्या संस्थानिकांचे विलीनीकरण करत अखंड भारताची निर्मिती केली.\n\n[संदर्भ: एम. लक्ष्मीकांत / स्पेक्ट्रम]",
+        "en": "(1947-1948): As India's first Home Minister, Sardar Vallabhbhai Patel, ably assisted by V.P. Menon, orchestrated the historic integration of princely states into a unified Indian nation.\n\n"
+      }
+    },
+    {
+      "id": 22,
+      "question": {
+        "mr": "काश्मीर संस्थानाचे (Jammu and Kashmir) भारतामध्ये विलीनीकरण ऑक्टोबर १९४७ मध्ये कोणत्या कागदपत्रावर स्वाक्षरी झाल्यावर झाले?",
+        "en": "Under what legal instrument did Maharaja Hari Singh of Jammu and Kashmir execute accession to India in October 1947?"
+      },
+      "options": [
+        { "mr": "विलिनीकरण करारपत्र (Instrument of Accession)", "en": "Instrument of Accession" },
+        { "mr": "दिल्ली करार", "en": "Delhi Pact" },
+        { "mr": "श्रीनगर मसुदा", "en": "Srinagar Draft" },
+        { "mr": "भारत-पाक करार", "en": "Indo-Pak Treaty" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९४७): पाकिस्तान समर्थित कबिल्यांच्या आक्रमणावर महाराजा हरी सिंग यांनी २६ ऑक्टोबर १९४७ रोजी 'विलिनीकरण करारपत्रावर' (Instrument of Accession) स्वाक्षरी करून काश्मीर भारतात विलीन केले.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / एम. लक्ष्मीकांत]",
+        "en": "(1947): Faced with tribal invasion backed by Pakistan, Maharaja Hari Singh signed the 'Instrument of Accession' on October 26, 1947, legally merging Jammu and Kashmir with India.\n\n"
+      }
+    },
+    {
+      "id": 23,
+      "question": {
+        "mr": "स्वातंत्र्योत्तर काळात हैदराबाद संस्थानाचे विलीनीकरण करण्यासाठी सप्टेंबर १९४८ मध्ये कोणती लष्करी कारवाई राबवली गेली होती?",
+        "en": "What was the official code name of the military/police action launched in September 1948 to integrate Hyderabad into the Indian Union?"
+      },
+      "options": [
+        { "mr": "ऑपरेशन पोलो (Operation Polo / Police Action)", "en": "Operation Polo" },
+        { "mr": "ऑपरेशन विजय", "en": "Operation Vijay" },
+        { "mr": "ऑपरेशन शक्ती", "en": "Operation Shakti" },
+        { "mr": "ऑपरेशन मेघदूत", "en": "Operation Meghdoot" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९४८): हैदराबादच्या निजामाने भारतात विलीन होण्यास नकार दिल्यावर सप्टेंबर १९४८ मध्ये सरदार पटेलांनी 'ऑपरेशन पोलो' (पोलिस कारवाई) राबवत हैदराबादचे भारतात विलीनीकरण घडवून आणले.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / एम. लक्ष्मीकांत]",
+        "en": "(1948): When the Nizam of Hyderabad refused to accede to India, Sardar Patel executed 'Operation Polo' (Police Action) in September 1948, successfully integrating the state.\n\n"
+      }
+    },
+    {
+      "id": 24,
+      "question": {
+        "mr": "स्वतंत्र भारताच्या पहिल्या केंद्रीय मंत्रिमंडळात (१९४७) 'कायदेमंत्री' (Law Minister) म्हणून कोणाची नियुक्ती केली गेली होती?",
+        "en": "Who was appointed as the first Law Minister of independent India in the cabinet of 1947?"
+      },
+      "options": [
+        { "mr": "डॉ. बी. आर. आंबेडकर (Dr. B.R. Ambedkar)", "en": "Dr. B.R. Ambedkar" },
+        { "mr": "सी. राजगोपालाचारी", "en": "C. Rajagopalachari" },
+        { "mr": "जॉन मथाई", "en": "John Matthai" },
+        { "mr": "श्यामाप्रसाद मुखर्जी", "en": "Syama Prasad Mukherjee" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९४७): पंतप्रधान नेहरूंच्या मंत्रिमंडळात काँग्रेस पक्षाबाहेरून डॉ. बाबासाहेब आंबेडकरांना निमंत्रित केले गेले आणि त्यांनी स्वतंत्र भारताचे पहिले 'कायदेमंत्री' म्हणून ऐतिहासिक कार्यभार सांभाळला.\n\n[संदर्भ: एम. लक्ष्मीकांत]",
+        "en": "(1947): Dr. B.R. Ambedkar accepted the invitation to join independent India's first cabinet, serving with distinction as the nation's first Minister of Law.\n\n"
+      }
+    },
+    {
+      "id": 25,
+      "question": {
+        "mr": "भारतीय राष्ट्रीय चळवळीचा अंतिम ऐतिहासिक संदेश किंवा वारसा काय आहे?",
+        "en": "What is the ultimate historical message conveyed by the trajectory of the Indian National Movement?"
+      },
+      "options": [
+        { "mr": "एकता, सत्य, अहिंसा, राष्ट्रप्रेम आणि लोकशाहीच्या मार्गाने कोणतीही साम्राज्यवादी सत्ता पराभूत केली जाऊ शकते", "en": "That unity, moral resolve, non-violent mass participation, and democracy can triumph over any imperial power" },
+        { "mr": "केवळ हिंसेमुळेच देश स्वतंत्र होऊ शकतो", "en": "That only violence can liberate a nation" },
+        { "mr": "लोकांनी नेहमी तटस्थ राहिले पाहिजे", "en": "That citizens should remain politically apathetic" },
+        { "mr": "परदेशी संस्कृतीचा स्वीकार केला पाहिजे", "en": "That foreign cultures must supersede native values" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(निष्कर्ष): भारतीय स्वातंत्र्यलढ्याने जगाला दाखवून दिले की, करोडो सामान्य जनतेची एकता, उच्च नैतिक मूल्ये आणि अहिंसक सत्याग्रहाच्या जोरावर जगातील सबसे मोठ्या साम्राज्यालाही पराभूत करता येते.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(Conclusion): The Indian National Movement stands eternally as a monumental testimony to the power of collective moral courage, mass unity, and non-violent democratic resistance against tyranny.\n\n"
+      }
+    }
+  ]
+}

@@ -1,0 +1,464 @@
+{
+  "testId": "p-hist-03-t1",
+  "title": {
+    "mr": "१८५७ चा उठाव — सराव 1",
+    "en": "Revolt of 1857 — Practice Test 1"
+  },
+  "durationMinutes": 20,
+  "marksPerQuestion": 1,
+  "negativeMarking": 0.25,
+  "totalMarks": 25,
+  "difficulty": "मध्यम ते काठिण्य",
+  "questions": [
+    {
+      "id": 1,
+      "question": {
+        "mr": "१८५७ च्या उठावाच्या संदर्भात खालील विधाने विचारात घ्या:\nअ) या उठावाचे तात्कालिक कारण 'एनफिल्ड रायफल' आणि त्यात वापरल्या जाणाऱ्या चरबीयुक्त काडतुसांचा वापर हे होते.\nब) २९ मार्च १८५७ रोजी बराकपूर छावणीत मंगल पांडे या शिपायाने इंग्रज अधिकाऱ्यांवर गोळीबार केला.\nवरीलपैकी कोणते/ती विधान/ने बरोबर आहेत?",
+        "en": "Consider the following statements regarding the Revolt of 1857:\nA) The immediate cause of the revolt was the introduction of the 'Enfield rifle' with greased cartridges.\nB) On March 29, 1857, sepoy Mangal Pandey fired at British officers at Barrackpore.\nWhich of the above statement(s) is/are correct?"
+      },
+      "options": [
+        { "mr": "फक्त अ", "en": "Only A" },
+        { "mr": "फक्त ब", "en": "Only B" },
+        { "mr": "अ आणि ब दोन्ही", "en": "Both A and B" },
+        { "mr": "दोन्ही नाहीत", "en": "Neither A nor B" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "(१८५७): दोन्ही विधाने अगदी बरोबर आहेत. जानेवारी १८५७ मध्ये नवीन एनफिल्ड रायफल आणली गेली, ज्याच्या काडतुसाला गाईची व डुकराची चरबी लावलेली असल्याची अफवा पसरली. २९ मार्च १८५७ रोजी बराकपूरच्या ३४ व्या रेजिमेंटमधील मंगल पांडे याने सार्जंट ह्युसन आणि लेफ्टनंट बॉग यांच्यावर गोलीबार केला, ज्यानंतर ८ एप्रिल १८५७ रोजी त्याला फाशी देण्यात आली.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / डॉ. स. शि. गाठाळ]",
+        "en": "(1857): Both statements are correct. The introduction of the Enfield rifle with greased cartridges served as the immediate trigger. Mangal Pandey of the 34th Native Infantry revolted at Barrackpore on March 29, 1857, and was executed on April 8.\n\n"
+      }
+    },
+    {
+      "id": 2,
+      "question": {
+        "mr": "योग्य जोड्या जुळवा (१८५७ चा उठाव आणि त्यांचे नेतृत्व):\nगट अ: १) दिल्ली, २) कानपूर, ३) लखनौ, ४) झांसी\nगट ब: अ) नानासाहेब पेशवा, ब) बेगम हजरत महल, क) बहादूर शाह जफर, ड) राणी लक्ष्मीबाई",
+        "en": "Match the pairs (Revolt of 1857 and their leaders):\nGroup A: 1) Delhi, 2) Kanpur, 3) Lucknow, 4) Jhansi\nGroup B: a) Nana Saheb Peshwa, b) Begum Hazrat Mahal, c) Bahadur Shah Zafar, d) Rani Lakshmibai"
+      },
+      "options": [
+        { "mr": "1-क, 2-अ, 3-ब, 4-ड", "en": "1-c, 2-a, 3-b, 4-d" },
+        { "mr": "1-अ, 2-ब, 3-क, 4-ड", "en": "1-a, 2-b, 3-c, 4-d" },
+        { "mr": "1-क, 2-ड, 3-अ, 4-ब", "en": "1-c, 2-d, 3-a, 4-b" },
+        { "mr": "1-ब, 2-अ, 3-ड, 4-क", "en": "1-b, 2-a, 3-d, 4-c" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१८५७): दिल्ली - बहादूर शाह जफर (नाममात्र नेता व जनरल बख्त खान), कानपूर - नानासाहेब पेशवा व तात्या टोपे, लखनौ - बेगम हजरत महल (पुत्र बिरjis कादिरच्या वतीने), झांसी - राणी लक्ष्मीबाई.\n\n[संदर्भ: अनिल कटारे / समाधान महाजन]",
+        "en": "(1857): Leaders of the revolt - Delhi (Bahadur Shah Zafar / General Bakht Khan), Kanpur (Nana Saheb), Lucknow (Begum Hazrat Mahal), Jhansi (Rani Lakshmibai).\n\n"
+      }
+    },
+    {
+      "id": 3,
+      "question": {
+        "mr": "बिहारमधील (जगदीशपूर) १८५७ च्या उठावाचे नेतृत्व कोणी केले होते?",
+        "en": "Who led the Revolt of 1857 in Bihar (Jagdishpur region)?"
+      },
+      "options": [
+        { "mr": "खान बहादूर खान", "en": "Khan Bahadur Khan" },
+        { "mr": "कुंवर सिंग (Kunwar Singh)", "en": "Kunwar Singh" },
+        { "mr": "अहमदुल्ला शाह", "en": "Ahmadullah Shah" },
+        { "mr": "बीर सावरकर", "en": "Vinayak Damodar Savarkar" }
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": {
+        "mr": "(१८५७): बिहारमधील जगदीशपूरचे वृद्ध जमीनदार 'बाबू कुंवर सिंग' यांनी १८५७ च्या उठावात अत्यंत शौर्य दाखवत ब्रिटिश सैन्याला अनेकदा पराभूत केले. वयाच्या ८० व्या वर्षीही त्यांनी प्रभावी नेतृत्व केले.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1857): Babu Kunwar Singh, the zamindar of Jagdishpur in Bihar, led the revolt in the region at the advanced age of 80, displaying remarkable military tactics against the British.\n\n"
+      }
+    },
+    {
+      "id": 4,
+      "question": {
+        "mr": "१८५७ च्या उठाव दडपून टाकताना कोणत्या ब्रिटिश अधिकाऱ्याने 'दिल्ली' पुन्हा जिंकून घेतली?",
+        "en": "Which British officer recaptured 'Delhi' while suppressing the Revolt of 1857?"
+      },
+      "options": [
+        { "mr": "सर कॉलिंग कॅम्पबेल", "en": "Sir Colin Campbell" },
+        { "mr": "जॉन निकलसन व हडसन (John Nicholson and Hudson)", "en": "John Nicholson and Hudson" },
+        { "mr": "सर ह्यू रोज", "en": "Sir Hugh Rose" },
+        { "mr": "कर्नल नील", "en": "Colonel Neill" }
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": {
+        "mr": "(१८५७): सप्टेंबर १८५७ मध्ये जॉन निकलसन आणि हडसन यांच्या नेतृत्वाखालील ब्रिटिश सैन्याने दिल्ली पुन्हा जिंकली. बहादूर शाह जफरला पकडले गेले आणि त्याच्या दोन मुलांना व नातवाला हडसनने गोळ्या घालून ठार मारले.\n\n[संदर्भ: डॉ. स. शि. गाठाळ]",
+        "en": "(1857): Delhi was recaptured by British forces led by John Nicholson and Hudson in September 1857, and Bahadur Shah Zafar was captured and exiled to Rangoon.\n\n"
+      }
+    },
+    {
+      "id": 5,
+      "question": {
+        "mr": "झांसीची राणी लक्ष्मीबाई यांचा पराभव करून झांसीचा किल्ला जिंकणारा आणि 'झांसीची राणी ही सर्व विद्रोहींमध्ये एकमेव मर्द (पुरुष) होती' असे गौरवोद्गार काढणारा ब्रिटीश अधिकारी कोण होता?",
+        "en": "Which British officer defeated Rani Lakshmibai, captured Jhansi, and famously remarked that she was 'the best and bravest military leader of the rebels'?"
+      },
+      "options": [
+        { "mr": "सर ह्यू रोज (Sir Hugh Rose)", "en": "Sir Hugh Rose" },
+        { "mr": "कॉलिन कॅम्पबेल", "en": "Colin Campbell" },
+        { "mr": "जेम्स आउट्रम", "en": "James Outram" },
+        { "mr": "जनरल हॅवलॉक", "en": "General Havelock" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१८५८): सर ह्यू रोज (Sir Hugh Rose) याने मध्य भारतात उठाव दडपला. त्याने झांसी जिंकताना राणी लक्ष्मीबाईंचा पराभव केला. राणीच्या शौर्याने प्रभावित होऊन ह्यू रोजने म्हटले होते की, 'विद्रोहींमध्ये ती एकमेव मर्द (पुरुष) होती'.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / अनिल कटारे]",
+        "en": "(1858): Sir Hugh Rose suppressed the revolt in Central India. After defeating Rani Lakshmibai, he famously paid tribute to her, stating, \"Here lay the woman who was the only man among the rebels.\"\n\n"
+      }
+    },
+    {
+      "id": 6,
+      "question": {
+        "mr": "खालील विधाने विचारात घ्या:\nअ) वि. दा. सावरकर यांनी १८५७ च्या उठावाला 'भारताचे पहिले स्वातंत्र्य समर' (The Indian War of Independence) म्हटले.\nब) आर. सी. मजुमदार यांच्या मते हा उठाव म्हणजे 'न तर पहिला, न तर राष्ट्रीय, आणि न तर स्वातंत्र्यलढा होता'.\nवरीलपैकी कोणते/ती विधान/ने बरोबर आहेत?",
+        "en": "Consider the following statements:\nA) V.D. Savarkar called the Revolt of 1857 'The Indian War of Independence'.\nB) According to R.C. Majumdar, the revolt was 'neither first, nor national, nor a war of independence'.\nWhich of the above statement(s) is/are correct?"
+      },
+      "options": [
+        { "mr": "फक्त अ", "en": "Only A" },
+        { "mr": "फक्त ब", "en": "Only B" },
+        { "mr": "अ आणि ब दोन्ही", "en": "Both A and B" },
+        { "mr": "दोन्ही नाहीत", "en": "Neither A nor B" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "(१८५७): दोन्ही विधाने अगदी बरोबर आहेत. वि. दा. सावरकरांनी त्यांच्या पुस्तकात याला स्वातंत्र्ययुद्ध म्हटले, तर इतिहासकार आर. सी. मजुमदार यांनी टीका करत हा राष्ट्रीय किंवा पहिला स्वातंत्र्य लढा नव्हता असे मत मांडले.\n\n[संदर्भ: डॉ. स. शि. गाठाळ / समाधान महाजन]",
+        "en": "(1857): Both statements are correct. V.D. Savarkar famously characterized it as India's First War of Independence, while historian R.C. Majumdar remarked that it was \"neither first, nor national, nor a war of independence.\"\n\n"
+      }
+    },
+    {
+      "id": 7,
+      "question": {
+        "mr": "१८५७ च्या उठावानंतर ब्रिटिशांनी राणीचा जाहीरनामा (Queen's Proclamation) १ नोव्हेंबर १८५८ रोजी कोठे वाचून दाखवला?",
+        "en": "Where was the Queen's Proclamation read out on November 1, 1858, following the Revolt of 1857?"
+      },
+      "options": [
+        { "mr": "दिल्ली", "en": "Delhi" },
+        { "mr": "इलाहाबाद (Allahabad)", "en": "Allahabad" },
+        { "mr": "कलकत्ता", "en": "Calcutta" },
+        { "mr": "कानपूर", "en": "Kanpur" }
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": {
+        "mr": "(१८५८): १ नोव्हेंबर १८५८ रोजी अलाहाबाद येथे भरलेल्या दरबारात लॉर्ड कॅनिंगने राणी व्हिक्टोरियाचा जाहीरनामा वाचून दाखवला. यात कंपनीची राजवट संपवून थेट ब्रिटीश सम्राटाची राजवट आल्याची घोषणा झाली आणि भारतीयांना धार्मिक स्वातंत्र्याचे आश्वासन दिले गेले.\n\n[संदर्भ: एम. लक्ष्मीकांत / स्पेक्ट्रम]",
+        "en": "(1858): Lord Canning read out Queen Victoria's Proclamation at a grand darbar held at Allahabad on November 1, 1858, announcing the transfer of power from the East India Company to the British Crown.\n\n"
+      }
+    },
+    {
+      "id": 8,
+      "question": {
+        "mr": "महाराष्ट्रात १८५७ च्या उठावादरम्यान कोल्हापूर येथे उठावाचे नेतृत्व कोणी केले होते?",
+        "en": "Who led the Revolt of 1857 in Kolhapur, Maharashtra?"
+      },
+      "options": [
+        { "mr": "रंगो बापूजी गुप्ते", "en": "Rango Bapuji Gupte" },
+        { "mr": "चिमासाहेब (Chimasaheb)", "en": "Chimasaheb" },
+        { "mr": "भागाजी नाईक", "en": "Bhagaji Naik" },
+        { "mr": "नागोजीराव पाटणकर", "en": "Nagojirao Patankar" }
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": {
+        "mr": "(१८५७): महाराष्ट्रात कोल्हापूर येथे छत्रपतींच्या घरातील 'चिमासाहेब' यांच्या नेतृत्वाखाली सैनिकांनी आणि जनतेने १८५७ च्या उठावात सहभाग घेतला होता. मात्र ब्रिटिशांनी तो कठोरपणे मोडून काढला.\n\n[संदर्भ: समाधान महाजन]",
+        "en": "(1857): In Kolhapur, Maharashtra, the revolt was led by Chimasaheb of the ruling royal family, rallying local sepoys and citizens against British authority.\n\n"
+      }
+    },
+    {
+      "id": 9,
+      "question": {
+        "mr": "सातारा येथे १८५७ च्या उठावाचे नियोजन व गुप्त कारवाया कोणाच्या मार्गदर्शनाखाली चालत होत्या, ज्यांनी छत्रपतींच्या अधिकारप्राप्तीसाठी इंग्लंडपर्यंत प्रयत्न केले होते?",
+        "en": "Under whose guidance were the secret operations and planning of the 1857 revolt conducted in Satara, who had even traveled to England to plead the Maratha royal cause?"
+      },
+      "options": [
+        { "mr": "रंगो बापूजी गुप्ते (Rango Bapuji Gupte)", "en": "Rango Bapuji Gupte" },
+        { "mr": "वासुदेव बळवत फडके", "en": "Vasudev Balwant Phadke" },
+        { "mr": "नानासाहेब पेशवा", "en": "Nana Saheb" },
+        { "mr": "तात्या टोपे", "en": "Tatya Tope" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१८५७): सातारा संस्थान खालसा केल्यावर साताऱ्याचे कारभारी 'रंगो बापूजी गुप्ते' यांनी इंग्लंडला जाऊन दाद मागितली होती. ते अपयशी ठरल्यावर त्यांनी साताऱ्यात व महाराष्ट्रात उठावासाठी गुप्त संघटना बांधली आणि सैन्यात व जनतेत असंतोष पसरवला.\n\n[संदर्भ: डॉ. स. शि. गाठाळ]",
+        "en": "(1857): Rango Bapuji Gupte, who had previously traveled to England to appeal against the annexation of Satara, organized underground resistance and mobilized support for the 1857 revolt in Satara and surrounding areas.\n\n"
+      }
+    },
+    {
+      "id": 10,
+      "question": {
+        "mr": "खालीलपैकी कोणत्या ब्रिटीश अधिकाऱ्याने लखनौ येथील एरिस रेजिidency मधील संरक्षणाचे नेतृत्व केले आणि नंतर तो युद्धात मारला गेला?",
+        "en": "Which British officer led the defense of the Residency at Lucknow during the 1857 revolt and was subsequently killed in action?"
+      },
+      "options": [
+        { "mr": "सर হেন्री लॉरेन्स (Sir Henry Lawrence)", "en": "Sir Henry Lawrence" },
+        { "mr": "जनरल नील", "en": "General Neill" },
+        { "mr": "सर ह्यू रोज", "en": "Sir Hugh Rose" },
+        { "mr": "कर्नल फिनिस", "en": "Colonel Finnis" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१८५७): लखनौमध्ये बेगम हजरत महलच्या नेतृत्वाखाली उठाव झाला तेव्हा ब्रिटीश अधिकारी 'सर हेन्री लॉरेन्स' याने लखनौच्या रेजिडेन्सीमध्ये आश्रय घेतला. युद्धादरम्यान तो गोलंदाजांच्या हल्ल्यात मारला गेला.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1857): Sir Henry Lawrence, the Chief Commissioner of Awadh, organized the defense of the Residency at Lucknow during the siege and lost his life during the bombardment.\n\n"
+      }
+    },
+    {
+      "id": 11,
+      "question": {
+        "mr": "खालील विधाने विचारात घ्या:\nअ) १८५७ च्या उठावात दक्षिण भारताने (मद्रास व बॉम्बे प्रेसिडेन्सी) सक्रिय आणि मोठा सहभाग घेतला.\nब) उठावाच्या काळात अनेक सुशिक्षित वर्ग आणि मोठे व्यापारी यांनी ब्रिटिशांना सहकार्य केले किंवा तटस्थ राहिले.\nवरीलपैकी कोणते/ती विधान/ने बरोबर आहेत?",
+        "en": "Consider the following statements:\nA) Southern India (Madras and Bombay presidencies) actively and massively participated in the Revolt of 1857.\nB) During the revolt, many educated elites and big merchants either supported the British or remained neutral.\nWhich of the above statement(s) is/are correct?"
+      },
+      "options": [
+        { "mr": "फक्त अ", "en": "Only A" },
+        { "mr": "फक्त ब", "en": "Only B" },
+        { "mr": "अ आणि ब दोन्ही", "en": "Both A and B" },
+        { "mr": "दोन्ही नाहीत", "en": "Neither A nor B" }
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": {
+        "mr": "(१८५७): विधान 'अ' चुकीचे आहे कारण दक्षिण भारत आणि पश्चिम भारताचा काही भाग सोडल्यास संपूर्ण दक्षिण भारतात उठावाचा प्रभाव लगभग नगण्य होता. विधान 'ब' बरोबर आहे कारण सुशिक्षित मध्यमवर्ग आणि व्यापाऱ्यांनी उठावापासून दूर राहून ब्रिटिश राजवटीला अनुकूलता दर्शवली.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1857): Statement A is incorrect because Southern India remained largely quiet and unaffected by the revolt. Statement B is correct as the educated middle class and merchants largely remained neutral or supported the British.\n\n"
+      }
+    },
+    {
+      "id": 12,
+      "question": {
+        "mr": "रोहिलखंडातील उठावाचे नेतृत्व कोणी केले होते, ज्याने स्वतःला नवाब घोषित केले होते आणि नंतर तो नेपाळला निघून गेला?",
+        "en": "Who led the revolt in Rohilkhand, proclaimed himself Nawab, and later escaped to Nepal?"
+      },
+      "options": [
+        { "mr": "खान बहादूर खान (Khan Bahadur Khan)", "en": "Khan Bahadur Khan" },
+        { "mr": "अहमदुल्ला शाह", "en": "Ahmadullah Shah" },
+        { "mr": "कुंवर सिंग", "en": "Kunwar Singh" },
+        { "mr": "वजीर खान", "en": "Wazir Khan" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१८५७): रोहिलखंडातील बरेली येथे रोहिला राजाचा वंशज 'खान बहादूर खान' याने उठावाचे नेतृत्व केले आणि स्वतःला नवाब घोषित केले. ब्रिटीश सेनापती कॅम्पबेलने हा उठाव मोड, काढल्यावर ते नेपाळला निघून गेले.\n\n[संदर्भ: समाधान महाजन]",
+        "en": "(1857): Khan Bahadur Khan led the revolt in Bareilly (Rohilkhand), organizing an army of 40,000 soldiers before being defeated and fleeing to Nepal when British forces recaptured the region.\n\n"
+      }
+    },
+    {
+      "id": 13,
+      "question": {
+        "mr": "तात्या टोपे यांना कोणाच्या विश्वासघातामुळे नरवरच्या जंगलात झोपेत असताना पकडले गेले आणि १८५९ मध्ये शिवपुरी येथे फाशी दिली गेली?",
+        "en": "Due to whose betrayal was Tatya Tope captured while sleeping in the Narwar forest and subsequently hanged at Shivpuri in 1859?"
+      },
+      "options": [
+        { "mr": "मानसिंह (Narwar Zamindar Man Singh)", "en": "Man Singh" },
+        { "mr": "दिनकर राव", "en": "Dinkar Rao" },
+        { "mr": "ग्वाल्हेरचा सिंधिया", "en": "Scindia of Gwalior" },
+        { "mr": "तुलसीबाई", "en": "Tulsibai" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१८५९): तात्या टोपे यांनी मध्य भारतात गनिमी काव्याने ब्रिटिशांना जेरीस आणले होते. मात्र त्यांचे मित्र नरवरचे राजे 'मानसिंह' यांनी ब्रिटिशांशी केलेल्या विश्वासघातामुळे तात्या टोपे यांना झोपेत असताना पकडले गेले आणि १८ एप्रिल १८५९ रोजी शिवपुरी येथे त्यांना फाशी दिली.\n\n[संदर्भ: डॉ. स. शि. गाठाळ / स्पेक्ट्रम]",
+        "en": "(1859): Tatya Tope waged a prolonged guerrilla war against the British. He was betrayed by his trusted friend, Man Singh, the zamindar of Narwar, captured, and executed at Shivpuri in April 1859.\n\n"
+      }
+    },
+    {
+      "id": 14,
+      "question": {
+        "mr": "खालीलपैकी कोणत्या इंग्रज विचारवंताने / अधिकाऱ्याने १८५७ च्या उठावाला केवळ 'सिपाही बंड' (Sepoy Mutiny) न म्हणता राष्ट्रीय उठाव किंवा स्वातंत्र्यलढ्याची पूर्वतयारी मानले आहे?",
+        "en": "Which British official/historian viewed the Revolt of 1857 not merely as a 'Sepoy Mutiny' but as a widespread popular uprising?"
+      },
+      "options": [
+        { "mr": "बेंजामिन डिस्रायली (Benjamin Disraeli)", "en": "Benjamin Disraeli" },
+        { "mr": "सर जॉन सीले", "en": "Sir John Seeley" },
+        { "mr": "टी. आर. होम्स", "en": "T.R. Holmes" },
+        { "mr": "चार्ल्स रीड", "en": "Charles Reed" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१८५७): ब्रिटनच्या संसदेत बेंजामिन डिस्रायली (Benjamin Disraeli) यांनी १८५७ च्या उठावाला केवळ सिपाही बंड न मानता 'राष्ट्रीय उठाव' (National Revolt) म्हणून घोषित केले होते. तर जॉन सीले याने याला केवळ शिपायांचे स्वार्थी बंड म्हटले होते.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1857): British Conservative leader Benjamin Disraeli described the revolt not merely as a military mutiny but as a national outbreak, contradicting official British downplaying.\n\n"
+      }
+    },
+    {
+      "id": 15,
+      "question": {
+        "mr": "महाराष्ट्रात अजंठा व बुलढाणा परिसरात १८५७ च्या उठावादरम्यान भिल्लांचे नेतृत्व करून ब्रिटिशांना आव्हान देणारा प्रमुख नायक कोण होता?",
+        "en": "Who led the Bhil uprising against the British in the Ajanta and Buldhana region of Maharashtra during the 1857 period?"
+      },
+      "options": [
+        { "mr": "भागाजी नाईक आणि काजी सिंग (Bhagaji Naik and Kaji Singh)", "en": "Bhagaji Naik and Kaji Singh" },
+        { "mr": "उमाजी नाईक", "en": "Umaji Naik" },
+        { "mr": "कोतवाल बळवंत", "en": "Kotwal Balwant" },
+        { "mr": "गोपाळ हरी देशमुख", "en": "Gopal Hari Deshmukh" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१८५७-५८): महाराष्ट्राच्या खानदेश व अजिंठा परिसरात भागाजी नाईक, काजी सिंग आणि त्यांच्या सहकाऱ्यांनी भिल्लांचे नेतृत्व करत ब्रिटीश खजिना व ठाण्यांवर हल्ले केले होते, ज्यांना दडपण्यासाठी ब्रिटीश अधिकारी जेम्स आऊट्रम व इतर सेनापतींना घाम फुटला होता.\n\n[संदर्भ: समाधान महाजन]",
+        "en": "(1857-58): Bhagaji Naik and Kaji Singh led the Bhil revolts in the Ajanta and Khandesh regions of Maharashtra, challenging British control during the turbulent times of 1857.\n\n"
+      }
+    },
+    {
+      "id": 16,
+      "question": {
+        "mr": "खालील विधाने विचारात घ्या:\nअ) १८५७ च्या उठावाच्या यशस्वितेमध्ये भारतीय नेत्यांमध्ये अचूक समन्वय आणि एकात्मिक नेतृत्वाचा अभाव होता.\nब) ब्रिटिशांकडे आधुनिक शस्त्रास्त्रे, तारयंत्र (Telegraph) आणि रेल्वे यांसारख्या दळणवळणाच्या आधुनिक सुविधा उपलब्ध होत्या.\nवरीलपैकी कोणते/ती विधान/ने बरोबर आहेत?",
+        "en": "Consider the following statements:\nA) The Revolt of 1857 lacked centralized coordination and unified leadership among Indian leaders.\nB) The British possessed superior weaponry, telegraph systems, and railway communication networks.\nWhich of the above statement(s) is/are correct?"
+      },
+      "options": [
+        { "mr": "फक्त अ", "en": "Only A" },
+        { "mr": "फक्त ब", "en": "Only B" },
+        { "mr": "अ आणि ब दोन्ही", "en": "Both A and B" },
+        { "mr": "दोन्ही नाहीत", "en": "Neither A nor B" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "(१८५७): दोन्ही विधाने अगदी बरोबर आहेत. उठाव अपयशी ठरण्याची मुख्य कारणे म्हणजे एकात्मिक नेतृत्वाचा अभाव, आधुनिक शस्त्रास्त्रांची कमतरता आणि ब्रिटिशांकडे असलेली तारयंत्र व रेल्वेची तांत्रिक संपत्ती.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / डॉ. स. शि. गाठाळ]",
+        "en": "(1857): Both statements are correct. The lack of a centralized command and modern communication worked to the advantage of the British, who utilized railways and telegraphs effectively.\n\n"
+      }
+    },
+    {
+      "id": 17,
+      "question": {
+        "mr": "१८५७ च्या उठावाच्या प्रचारासाठी आणि संदेशांची देवाणघेवाण करण्यासाठी भारतीय सैनिकांनी / क्रांतिकारकांनी कोणत्या दोन चिन्हांचा वापर केला होता?",
+        "en": "Which two symbols were famously used by the rebels to propagate the message and mobilize support during the Revolt of 1857?"
+      },
+      "options": [
+        { "mr": "कमळ आणि चपाती (Lotus and Chapatis)", "en": "Lotus and Chapatis" },
+        { "mr": "तरवार आणि ढाल", "en": "Sword and Shield" },
+        { "mr": "भगवा झेंडा आणि शंख", "en": "Saffron flag and Conch" },
+        { "mr": "गुलाब आणि पत्र", "en": "Rose and Letter" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१८५७): १८५७ च्या उठावात क्रांतिकारकांनी लोकांमध्ये जनजागृती करण्यासाठी आणि संदेश पोहोचवण्यासाठी 'कमळ' (Lotus) आणि 'चपाती' (भाकरी - Chapatis) या चिन्हांचा गुप्तपणे प्रसार केला होता.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1857): The symbols of the lotus flower and chapatis (bread) were circulated widely from village to village as a secret message and sign of mobilization for the impending revolt.\n\n"
+      }
+    },
+    {
+      "id": 18,
+      "question": {
+        "mr": "फैजाबाद येथे १८५७ च्या उठावाचे नेतृत्व करणारे मौलवी अहमदुल्ला शाह यांना इंग्रजांनी पकडण्यासाठी किती रुपयांचे इनाम जाहीर केले होते?",
+        "en": "How much bounty (reward) had the British announced for the capture of Maulvi Ahmadullah Shah, who led the revolt in Faizabad?"
+      },
+      "options": [
+        { "mr": "५०,००० रुपये (50,000 rupees)", "en": "50,000 rupees" },
+        { "mr": "१०,००० रुपये", "en": "10,000 rupees" },
+        { "mr": "१ लाख रुपये", "en": "1 Lakh rupees" },
+        { "mr": "५,००० रुपये", "en": "5,000 rupees" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१८५७): फैयाबादचे मौलवी 'अहमदुल्ला शाह' (ज्यांना 'मौलवी ऑफ फैजाबाद' म्हणतात) हे ब्रिटिशांचे अत्यंत कट्टर विरोधक होते. त्यांना पकडण्यासाठी ब्रिटिशांनी ५०,००० रुपयांचे मोठे इनाम जाहीर केले होते. नंतर पव्वाच्या राजाच्या विश्वासघाताने त्यांची हत्या झाली.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1857): Maulvi Ahmadullah Shah, known as the 'Lighthouse of Rebellion' in Awadh, fought valiantly against the British, who had placed a massive reward of 50,000 rupees on his head.\n\n"
+      }
+    },
+    {
+      "id": 19,
+      "question": {
+        "mr": "खालीलपैकी कोणत्या राजघराण्याने/संस्थानाने १८५७ च्या उठावात ब्रिटिशांना सर्वात मोठी मदत व निष्ठा दाखवली, ज्यामुळे लॉर्ड कॅनिंगने म्हटले होते की 'जर या लोकांनी पाठिंबा दिला असता तर आपल्याला उद्याच गाशा गुंडाळावा लागला असता'?",
+        "en": "Which princely state provided crucial support and loyalty to the British during the 1857 revolt, prompting Lord Canning to remark that they acted as a 'breakwater against the storm'?"
+      },
+      "options": [
+        { "mr": "ग्वाल्हेरचे सिंधिया (Scindias of Gwalior / हैदराबादचे निजाम)", "en": "Scindias of Gwalior / Nizam of Hyderabad" },
+        { "mr": "झांसीचे नेपथ्य", "en": "Jhansi rulers" },
+        { "mr": "अवधचे राजघराणे", "en": "Awadh royal family" },
+        { "mr": "सातारा राजे", "en": "Satara rulers" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१८५७): ग्वाल्हेरचे सिंधिया, हैदराबादचे निजाम, आणि पत्राळ व जंमदूरचे राजे यांनी ब्रिटिशांना अभूतपूर्व मदत केली. विशेषतः ग्वाल्हेरच्या शिंद्यांनी जर क्रांतिकारकांना साथ दिली असती तर ब्रिटीश टिकले नसते, असे कॅनिंगने म्हटले होते.\n\n[संदर्भ: डॉ. स. शि. गाठाळ / स्पेक्ट्रम]",
+        "en": "(1857): Rulers like the Scindias of Gwalior, the Nizam of Hyderabad, and the Holkars of Indore remained loyal to the British, acting as a crucial line of defense and suppressing the uprising locally.\n\n"
+      }
+    },
+    {
+      "id": 20,
+      "question": {
+        "mr": "खालील विधाने विचारात घ्या:\nअ) १८५७ च्या उठावानंतर ब्रिटीश सैन्यातील भारतीय सैनिकांचे प्रमाण कमी करण्यात आले व युरोपीय सैनिकांचे प्रमाण वाढवले गेले.\nब) ब्रिटिशांनी 'धोरण बदलून' यापुढे संस्थाने खालसा न करण्याचे धोरण स्वीकारले आणि दत्तक घेण्यास मान्यता दिली.\nवरीलपैकी कोणते/ती विधान/ने बरोबर आहेत?",
+        "en": "Consider the following statements:\nA) After the 1857 revolt, the proportion of Indian soldiers in the British army was reduced and European troops increased.\nB) The British altered their policy towards princely states, abandoning the Doctrine of Lapse and permitting adoptions.\nWhich of the above statement(s) is/are correct?"
+      },
+      "options": [
+        { "mr": "फक्त अ", "en": "Only A" },
+        { "mr": "फक्त ब", "en": "Only B" },
+        { "mr": "अ आणि ब दोन्ही", "en": "Both A and B" },
+        { "mr": "दोन्ही नाहीत", "en": "Neither A nor B" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "(१८५८): दोन्ही विधाने बरोबर आहेत. १८५८ च्या जाहीरनाम्यानुसार डलहौसीचे 'खालसा धोरण' (Doctrine of Lapse) रद्द केले गेले आणि राजांना दत्तक घेण्याचा अधिकार परत दिला गेला, तसेच सैन्यात युरोपीय सैनिकांची संख्या वाढवली.\n\n[संदर्भ: एम. लक्ष्मीकांत / स्पेक्ट्रम]",
+        "en": "(1858): Both statements are correct. The post-1857 reorganization saw a restructured military with increased European presence and a policy shift assuring Indian princes that their states would not be annexed.\n\n"
+      }
+    },
+    {
+      "id": 21,
+      "question": {
+        "mr": "महाराष्ट्रात रंगो बापूजी गुप्त्यांव्यतिरिक्त नाशिक व पेठ भागात १८५७ च्या उठावात आदिवासी व कोळ्यांचे नेतृत्व कोणी केले होते?",
+        "en": "Who led the Bhils and local rebels in the Nashik and Peth regions of Maharashtra during the 1857 uprising?"
+      },
+      "options": [
+        { "mr": "भागाजी नाईक", "en": "Bhagaji Naik" },
+        { "mr": "भगवंतराव निळकंठराव व बाजीराव भांगरे (Bhagwantrao Nilkanthrao and Bajirao Bhangare)", "en": "Bhagwantrao Nilkanthrao and Bajirao Bhangare" },
+        { "mr": "वासुदेव फडके", "en": "Vasudev Phadke" },
+        { "mr": "नागोजीराव पाटणकर", "en": "Nagojirao Patankar" }
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": {
+        "mr": "(१८५७): नाशिक व पेठच्या परिसरात 'भगवंतराव निळकंठराव' आणि 'बाजीराव भांगरे' यांनी कोळी व भील लोकांना एकत्र करून ब्रिटिशांविरुद्ध सशस्त्र संघर्ष उभारला होता.\n\n[संदर्भ: समाधान महाजन]",
+        "en": "(1857): Bhagwantrao Nilkanthrao and Bajirao Bhangare led the uprising of the Kolis and local tribes in the Peth and Nashik regions of Maharashtra against the British.\n\n"
+      }
+    },
+    {
+      "id": 22,
+      "question": {
+        "mr": "कानपूर येथे नानासाहेब पेशव्यांच्यावतीने १८५७ च्या उठावाची सर्व सूत्रे प्रत्यक्षात कोणी सांभाळली होती, ज्याने इंग्रजांना सळो की पळो करून सोडले होते?",
+        "en": "Who actually commanded the military forces on behalf of Nana Saheb Peshwa in Kanpur during the 1857 revolt?"
+      },
+      "options": [
+        { "mr": "तात्या टोपे (Tatya Tope)", "en": "Tatya Tope" },
+        { "mr": "अजिमुल्ला खान", "en": "Azimullah Khan" },
+        { "mr": "बख्त खान", "en": "Bakht Khan" },
+        { "mr": "फिरोज शाह", "en": "Firoz Shah" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१८५७): कानपूरमध्ये नानासाहेब पेशव्यांना सैनिकाने पेशवा म्हणून घोषित केल्यावर, त्यांच्या सैन्याचे मुख्य लष्करी सेनापती व कमांडर म्हणून 'तात्या टोपे' यांनी संपूर्ण सूत्रे सांभाळली.\n\n[संदर्भ: अनिल कटारे]",
+        "en": "(1857): Tatya Tope acted as the brilliant military strategist and commander of the rebel forces under the overall leadership of Nana Saheb in Kanpur.\n\n"
+      }
+    },
+    {
+      "id": 23,
+      "question": {
+        "mr": "खालीलपैकी कोणत्या ब्रिटीश अधिकाऱ्याने कानपूर येथील उठाव क्रूरपणे दडपून विद्रोहींवर अमानुष अत्याचार केले होते?",
+        "en": "Which British officer brutally suppressed the revolt in Kanpur and committed severe reprisals against the rebels?"
+      },
+      "options": [
+        { "mr": "जनरल जेम्स नीलम (General James Neill)", "en": "General James Neill" },
+        { "mr": "सर ह्यू रोज", "en": "Sir Hugh Rose" },
+        { "mr": "जॉन निकलसन", "en": "John Nicholson" },
+        { "mr": "कर्नल कॅम्पबेल", "en": "Colonel Campbell" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१८५७): कानपूरमध्ये जनरल नील (General James Neill) याने भारतीय जनतेवर आणि सैनिकांवर प्रचंड अत्याचार केले आणि अनेकांना फासावर लटकावले, ज्याची प्रतिक्रिया म्हणून 'सतीचौरा घाट' येथे इंग्रज महिला व मुलांवर हिंसक हल्ले झाले होते.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1857): General James Neill resorted to extreme cruelty and brutal retaliatory measures to crush the revolt in Kanpur, hanging suspected rebels summarily.\n\n"
+      }
+    },
+    {
+      "id": 24,
+      "question": {
+        "mr": "खालील विधाने विचारात घ्या:\nअ) १८५७ च्या उठावात ब्रिटीश सत्तेविरुद्ध लढताना बहादूर शाह जफरला शेवटी रंगून (म्यानमार) येथे तुरुंगात पाठवले गेले, जिथे १८६२ मध्ये त्याचा मृत्यू झाला.\nब) नानासाहेब पेशवा हे युद्ध संपल्यावर नेपाळच्या जंगलात निघून गेले आणि त्यांचा अंतिम पत्ता लागला नाही.\nवरीलपैकी कोणते/ती विधान/ने बरोबर आहेत?",
+        "en": "Consider the following statements:\nA) After the revolt, Bahadur Shah Zafar was exiled to Rangoon (Burma) where he died in 1862.\nB) Nana Saheb escaped to the jungles of Nepal after the defeat and his exact fate remained unknown.\nWhich of the above statement(s) is/are correct?"
+      },
+      "options": [
+        { "mr": "फक्त अ", "en": "Only A" },
+        { "mr": "फक्त ब", "en": "Only B" },
+        { "mr": "अ आणि ब दोन्ही", "en": "Both A and B" },
+        { "mr": "दोन्ही नाहीत", "en": "Neither A nor B" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "(१८५८-१८६२): दोन्ही विधाने ऐतिहासिक सत्यावर आधारित आणि बरोबर आहेत. बहादूर शाह जफरला रंगूनच्या कैदेत ठेवले गेले जिथे १८६२ मध्ये त्याचे निधन झाले, तर नानासाहेब पेशवा नेपाळच्या दिशेने निघून गेले आणि त्यांचा नंतर कधीही अधिकृत पत्ता लागला नाही.\n\n[संदर्भ: डॉ. स. शि. गाठाळ / स्पेक्ट्रम]",
+        "en": "(1858-1862): Both statements are correct. Bahadur Shah Zafar was deported to Rangoon, dying there in 1862, while Nana Saheb escaped toward the Nepal hills and vanished without a trace.\n\n"
+      }
+    },
+    {
+      "id": 25,
+      "question": {
+        "mr": "१८५७ च्या उठावाच्या अपयशाचे एक प्रमुख कारण म्हणजे 'भारतीयांमध्ये राष्ट्रवादाची (National Consciousness) भावना नसणे'. हे वक्तव्य खालीलपैकी कोणाचे आहे?",
+        "en": "Whose observation is it that a primary reason for the failure of the 1857 revolt was the 'absence of national consciousness' among Indians at that time?"
+      },
+      "options": [
+        { "mr": "सर जॉन सीले / इतर इतिहासकार", "en": "Sir John Seeley" },
+        { "mr": "कार्ल मार्क्स", "en": "Karl Marx" },
+        { "mr": "जवाहरलाल नेहरू", "en": "Jawaharlal Nehru" },
+        { "mr": "दादाभाई नौरोजी", "en": "Dadabhai Naoroji" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१८५७): ब्रिटिश इतिहासकार जॉन सीले यांच्या मते १८५७ चा उठाव म्हणजे संपूर्णपणे स्वार्थी, असंगठित आणि शिपाई लोकांचे राष्ट्रीय भावनाविरहित केवळ एक स्थानिक बंड होते.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1857): Historians like Sir John Seeley characterized the 1857 revolt as a purely selfish and unpatriotic mutiny of sepoys lacking any native national sentiment or widespread public backing.\n\n"
+      }
+    }
+  ]
+}

@@ -1,0 +1,464 @@
+{
+  "testId": "p-hist-06-t4",
+  "title": {
+    "mr": "भारतीय राष्ट्रवादाचा उदय — सराव 4",
+    "en": "Rise of Indian Nationalism — Practice Test 4"
+  },
+  "durationMinutes": 20,
+  "marksPerQuestion": 1,
+  "negativeMarking": 0.25,
+  "totalMarks": 25,
+  "difficulty": "मध्यम ते काठिण्य",
+  "questions": [
+    {
+      "id": 1,
+      "question": {
+        "mr": "भारतात १८५१ मध्ये स्थापन झालेल्या 'ब्रिटिश इंडियन असोसिएशन' (British Indian Association) या संस्थेने ब्रिटीश संसदेकडे कोणत्या प्रमुख मागणीसाठी विस्तृत अर्ज पाठवला होता?",
+        "en": "For which primary demand did the 'British Indian Association' submit a comprehensive petition to the British Parliament in 1852?"
+      },
+      "options": [
+        { "mr": "नवीन कायदेमंडळाची रचना आणि त्यात भारतीयांचा सहभाग तसेच कर कपात", "en": "Creation of a separate legislature with Indian representation and tax cuts" },
+        { "mr": "भारतात ख्रिश्चन धर्म अनिवार्य करणे", "en": "Making Christianity compulsory" },
+        { "mr": "जमीनदारांचे अधिकार पूर्णपणे काढून घेणे", "en": "Abolishing all landlord rights" },
+        { "mr": "इंग्रजी भाषेवर पूर्ण बंदी", "en": "Complete ban on English language" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१८५२): १८५१ मध्ये स्थापन झालेल्या ब्रिटिश इंडियन असोसिएशनने १८५२ मध्ये ब्रिटिश संसदेला एक अर्ज पाठवला, ज्यामध्ये कायदेमंडळाची (Legislative Council) पुनर्रचना करणे, त्यात लोकप्रतिनिधींचा समावेश करणे, आणि मीठ व उत्त्पादनावरील कर कमी करण्याची मागणी केली होती.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / डॉ. स. शि. गाठाळ]",
+        "en": "(1852): The British Indian Association submitted a major petition to the British Parliament in 1852, demanding the establishment of a separate legislature with popular representation and reduction in salt duties.\n\n"
+      }
+    },
+    {
+      "id": 2,
+      "question": {
+        "mr": "दादाभाई नौरोजी यांनी लंडनमध्ये स्थापन केलेल्या 'ईस्ट इंडिया असोसिएशन' (१८६६) च्या शाखा भारतातील कोणत्या प्रमुख शहरांत उघडण्यात आल्या होत्या?",
+        "en": "In which major Indian cities were the branches of Dadabhai Naoroji's East India Association (1866) subsequently established?"
+      },
+      "options": [
+        { "mr": "मुंबई, पुणे, कलकत्ता आणि मद्रास (Bombay, Pune, Calcutta and Madras)", "en": "Bombay, Pune, Calcutta and Madras" },
+        { "mr": "फक्त दिल्ली आणि लाहोर", "en": "Only Delhi and Lahore" },
+        { "mr": "फक्त नागपूर", "en": "Only Nagpur" },
+        { "mr": "फक्त सुरत", "en": "Only Surat" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१८६६ नंतर): दादाभाई नौरोजींच्या लंडनस्थित ईस्ट इंडिया असोसिएशनच्या शाखा मुंबई, पुणे, कलकत्ता आणि मद्रास येथे सुरू झाल्या, ज्यातून भारतातील राजकीय व आर्थिक प्रश्नांवर सखोल चर्चा होऊ लागली.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(Post-1866): Branches of the East India Association were successfully opened in key Indian urban hubs like Bombay, Pune, Calcutta, and Madras to coordinate nationalist dialogues.\n\n"
+      }
+    },
+    {
+      "id": 3,
+      "question": {
+        "mr": "सुरेंद्रनाथ बॅनर्जी आणि आनंदमोहन बोस यांनी १८७६ मध्ये स्थापन केलेल्या 'इंडियन असोसिएशन' (कलकत्ता) च्या स्थापनेमागील मुख्य उद्दिष्ट काय होते?",
+        "en": "What was the foundational objective behind the formation of the 'Indian Association' of Calcutta in 1876 by Surendranath Banerjea and Ananda Mohan Bose?"
+      },
+      "options": [
+        { "mr": "सुशिक्षित मध्यमवर्ग आणि सर्वसामान्य जनतेला एकत्र आणून सशक्त जनमत तयार करणे", "en": "Uniting the educated middle class and masses to create a powerful public opinion" },
+        { "mr": "फक्त इंग्रजांची नोकरी मिळवणे", "en": "Only securing British jobs" },
+        { "mr": "फक्त पारशी समाजाचे हित पाहाणे", "en": "Only looking after Parsi interests" },
+        { "mr": "धार्मिक विधींचे पालन करणे", "en": "Performing religious rituals" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१८७६): जुन्या जमीनदारप्रधान संस्थांच्या मवाळ व संकुचित भूमिकेच्या पलीकडे जाऊन, सर्वसमावेशक लोकमत तयार करणे आणि सुशिक्षित तरुणांना राजकीयदृष्ट्या संघटित करणे हा इंडियन असोसिएशनचा हेतू होता.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / समाधान महाजन]",
+        "en": "(1876): The Indian Association was created to transcend the narrow elite nature of older associations and foster a broader, popular base for political agitation.\n\n"
+      }
+    },
+    {
+      "id": 4,
+      "question": {
+        "mr": "भारतीय राष्ट्रीय काँग्रेसच्या स्थापनेपूर्वी १८८३ मध्ये सुरेंद्रनाथ बॅनर्जी यांनी भरवलेल्या 'इंडियन नॅशनल कॉन्फरन्स' (भारतीय राष्ट्रीय परिषद) मध्ये कोणत्या महत्त्वाच्या विषयांवर प्रामुख्याने भर दिला गेला?",
+        "en": "What major issues were predominantly highlighted at the 'Indian National Conference' convened by Surendranath Banerjea in 1883?"
+      },
+      "options": [
+        { "mr": "सिव्हिल सेवा परीक्षांचे वय वाढवणे, आयसीएस परीक्षा भारतात घेणे आणि स्थानिक स्वराज्य संस्थांचे अधिकार", "en": "Raising the civil service age limit, simultaneous exams in India, and local self-government" },
+        { "mr": "फक्त धार्मिक स्वातंत्र्य", "en": "Only religious freedom" },
+        { "mr": "परदेशी राज्यांवर आक्रमणे", "en": "Invasions of foreign states" },
+        { "mr": "शेतकऱ्यांवर कर वाढवणे", "en": "Increasing peasant taxes" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१८८३): या परिषदेत आयसीएस परीक्षा भारतात घेण्याची मागणी, सिविल सेवांचे वयोमर्यादा वाढवणे, आणि शस्त्र कायद्यातील जाचक अटी शिथिल करणे यांसारख्या राष्ट्रीय मागण्यांवर प्रखर चर्चा झाली.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1883): The conference focused on vital national issues such as holding simultaneous civil service examinations in India and England, reforming judicial systems, and repealing the Arms Act.\n\n"
+      }
+    },
+    {
+      "id": 5,
+      "question": {
+        "mr": "योग्य जोड्या जुळवा (राष्ट्रीय नेते आणि त्यांचे संबंधित प्रांत/शहरे):\nगट अ: १) जी. सुब्रमण्य अय्यर, २) फिरोजशाह मेहता, ३) आनंदमोहन बोस, ४) गणेश वासुदेव जोशी\nगट ब: अ) मद्रास, ब) मुंबई, क) कलकत्ता, ड) पुणे",
+        "en": "Match the pairs (Nationalist leaders and their home bases):\nGroup A: 1) G. Subramania Iyer, 2) Pherozeshah Mehta, 3) Ananda Mohan Bose, 4) G.V. Joshi\nGroup B: a) Madras, b) Bombay, c) Calcutta, d) Pune"
+      },
+      "options": [
+        { "mr": "1-अ, 2-ब, 3-क, 4-ड", "en": "1-a, 2-b, 3-c, 4-d" },
+        { "mr": "1-ब, 2-अ, 3-क, 4-ड", "en": "1-b, 2-a, 3-c, 4-d" },
+        { "mr": "1-अ, 2-क, 3-ब, 4-ड", "en": "1-a, 2-c, 3-b, 4-d" },
+        { "mr": "1-ड, 2-ब, 3-अ, 4-क", "en": "1-d, 2-b, 3-a, 4-c" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९ वे शतक): जी. सुब्रमण्य अय्यर - मद्रास, फिरोजशाह मेहता - मुंबई, आनंदमोहन बोस - कलकत्ता, गणेश वासुदेव जोशी (सार्वजनिक काका) - पुणे.\n\n[संदर्भ: डॉ. स. शि. गाठाळ / समाधान महाजन]",
+        "en": "(19th Century): G. Subramania Iyer operated from Madras; Pherozeshah Mehta from Bombay; Ananda Mohan Bose from Calcutta; and G.V. Joshi ('Sarvajanik Kaka') from Pune.\n\n"
+      }
+    },
+    {
+      "id": 6,
+      "question": {
+        "mr": "भारतीय राष्ट्रीय काँग्रेसच्या स्थापनेच्या वेळी (२८ डिसेंबर १८८५) ब्रिटिश सरकारमध्ये भारताचे राज्यसचिव (Secretary of State for India) कोण होते?",
+        "en": "Who served as the 'Secretary of State for India' in London when the INC was founded in December 1885?"
+      },
+      "options": [
+        { "mr": "लॉर्ड किम्बरले (Lord Kimberley / वा लॉर्ड रँडल्फ चर्चिल नंतर क्रॉस)", "en": "Lord Randolph Churchill / Lord Kimberley" },
+        { "mr": "लॉर्ड डफरिन", "en": "Lord Dufferin" },
+        { "mr": "सर चार्ल्स वुड", "en": "Sir Charles Wood" },
+        { "mr": "लॉर्ड हॅमिल्टन", "en": "Lord Hamilton" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१८८५): १८८५ च्या शेवटी जेव्हा काँग्रेस स्थापन झाली, तेव्हा ब्रिटनमध्ये लॉर्ड रँडल्फ चर्चिल (आणि नंतर लॉर्ड किम्बरले) हे भारत मंत्री (Secretary of State) पदावर कार्यरत होते, तर भारतात लॉर्ड डफरिन व्हाइसरॉय होते.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1885): When the INC was established, Lord Randolph Churchill (and shortly after, Lord Kimberley) served as the Secretary of State for India in the British Cabinet.\n\n"
+      }
+    },
+    {
+      "id": 7,
+      "question": {
+        "mr": "खालील विधाने विचारात घ्या:\nअ) १८७८ चा 'आर्म्स ॲक्ट' (Arms Act) याद्वारे भारतीयांना विनापरवाना शस्त्र बाळगण्यास सक्त प्रतिबंध केला गेला, तर युरोपीय व इंग्रजांना यातून वगळण्यात आले.\nब) या वर्णद्वेषी कायद्यामुळे भारतीयांमध्ये तीव्र असंतोष निर्माण झाला.\nवरीलपैकी कोणते/ती विधान/ने बरोबर आहेत?",
+        "en": "Consider the following statements:\nA) The Arms Act of 1878 made it a criminal offense for Indians to carry arms without a license, while exempting Europeans and Anglo-Indians.\nB) This discriminatory law fueled widespread nationalist resentment.\nWhich of the above statement(s) is/are correct?"
+      },
+      "options": [
+        { "mr": "फक्त अ", "en": "Only A" },
+        { "mr": "फक्त ब", "en": "Only B" },
+        { "mr": "अ आणि ब दोन्ही", "en": "Both A and B" },
+        { "mr": "दोन्ही नाहीत", "en": "Neither A nor B" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "(१८७८): दोन्ही विधाने अगदी बरोबर आहेत. लिटनच्या काळातील आर्म्स ॲक्टने भारतीयांना निःशस्त्र करून त्यांच्यात अविश्वासाची भावना निर्माण केली, ज्यामुळे राष्ट्रवादाचा उदय वेगाने झाला.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / डॉ. स. शि. गाठाळ]",
+        "en": "(1878): Both statements are correct. The Arms Act of 1878 disarmed Indians while giving exemptions to Europeans, highlighting colonial subjugation and uniting public opposition.\n\n"
+      }
+    },
+    {
+      "id": 8,
+      "question": {
+        "mr": "दादाभाई नौरोजी यांनी मांडलेल्या 'ड्रेनेज ऑफ वेल्थ' (Drain of Wealth) सिद्धांतानुसार भारताची संपत्ती प्रामुख्याने कोणत्या मार्गाने ब्रिटनला जात होती?",
+        "en": "According to Dadabhai Naoroji's 'Drain of Wealth' theory, through which primary channels was India's wealth extracted to Britain?"
+      },
+      "options": [
+        { "mr": "गृहभार (Home Charges), लष्करी खर्च, निवृत्तीवेतन आणि ब्रिटिश अधिकारांचे पगार", "en": "Home charges, military expenses, pensions, and salaries of British officials" },
+        { "mr": "फक्त स्वेच्छेने केलेली दानधर्म", "en": "Only voluntary charity" },
+        { "mr": "भारताने ब्रिटनकडून घेतलेली कर्जे", "en": "Loans taken by India from Britain" },
+        { "mr": "भारतात झालेल्या गुंतवणुकीचा मोबदला", "en": "Returns on internal investment" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९०१): दादाभाईंनी स्पष्ट केले की, 'गृहभार' (Home Charges - ब्रिटनमध्ये भारताच्या प्रशासनावर होणारा खर्च), लंडनमधील लष्करी व नागरी अधिकाऱ्यांचे पगार, पेन्शन आणि रेल्वेवरील व्याज या रूपाने भारताचा महसूल ब्रिटनला फुकट जात होता, ज्याचा मोबदला भारताला मिळत नव्हता.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1901): The drain occurred through uncompensated resource transfers termed 'Home Charges', covering military expenses, civil service salaries, pensions, and interest on public debt held in Britain.\n\n"
+      }
+    },
+    {
+      "id": 9,
+      "question": {
+        "mr": "१८८३ मधील 'इल्बर्ट बिल वादात' (Ilbert Bill Controversy) युरोपीय लोकांनी घेतलेल्या वर्णद्वेषी भूमिकेमुळे भारतीयांना कोणता महत्त्वाचा राजकीय धडा मिळाला?",
+        "en": "What crucial political lesson did Indians learn from the aggressive racial agitation mounted by Europeans during the Ilbert Bill controversy?"
+      },
+      "options": [
+        { "mr": "जर आपल्या हक्कांचे रक्षण करायचे असेल, तर अखिल भारतीय पातळीवर संघटित होऊन राजकीय लढा द्यावा लागेल", "en": "That organized political agitation and pan-Indian unity are essential to protect national rights" },
+        { "mr": "ब्रिटिशांच्या न्यायावर पूर्ण अंधश्रद्धा ठेवावी", "en": "To blindly trust British courts" },
+        { "mr": "राजकारणापासून पूर्णपणे दूर राहावे", "en": "To stay entirely away from politics" },
+        { "mr": "केवळ इंग्रजी भाषेत अर्ज करावेत", "en": "To submit petitions only in English" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१८८३): इल्बर्ट बिलच्या वेळी युरोपीय लोकांनी एकाजुटीने सरकारला झुकवले. यावरून सुशिक्षितांना समजले की केवळ अर्जांपेक्षा संघटित शक्ती आणि दबावतंत्राशिवाय (Political agitation) ब्रिटिश सरकार न्याय देत नाही.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1883): The aggressive white opposition to the Ilbert Bill taught educated Indians the immense power of organized political agitation and public pressure against colonial authority.\n\n"
+      }
+    },
+    {
+      "id": 10,
+      "question": {
+        "mr": "खालील विधाने विचारात घ्या:\nअ) सुरेंद्रनाथ बॅनर्जी यांना 'राष्ट्रगुरू' किंवा 'भारतीय बर्क' (Indian Burke) म्हणूनही ओळखले जाते.\nब) त्यांनी 'द बंगाली' वृत्तपत्राच्या माध्यमातून राष्ट्रीय विचारांचा प्रचार केला.\nवरीलपैकी कोणते/ती विधान/ने बरोबर आहेत?",
+        "en": "Consider the following statements:\nA) Surendranath Banerjea is often referred to as the 'Indian Burke' or 'Rashtraguru'.\nB) He propagated nationalist ideas through his newspaper 'The Bengalee'.\nWhich of the above statement(s) is/are correct?"
+      },
+      "options": [
+        { "mr": "फक्त अ", "en": "Only A" },
+        { "mr": "फक्त ब", "en": "Only B" },
+        { "mr": "अ आणि ब दोन्ही", "en": "Both A and B" },
+        { "mr": "दोन्ही नाहीत", "en": "Neither A nor B" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "(१९ वे शतक): दोन्ही विधाने अगदी बरोबर आहेत. आपल्या उत्कृष्ट वक्तृत्वशैलीमुळे सुरेंद्रनाथ बॅनर्जी यांना 'इंडियन बर्क' म्हटले गेले आणि त्यांनी 'द बंगाली' वृत्तपत्र चालवले.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / समाधान महाजन]",
+        "en": "(19th Century): Both statements are correct. Surendranath Banerjea's eloquence earned him the moniker 'Indian Burke', and he effectively used 'The Bengalee' newspaper for nationalist mobilization.\n\n"
+      }
+    },
+    {
+      "id": 11,
+      "question": {
+        "mr": "भारतात १९ व्या शतकाच्या उत्तरार्धात 'आधुनिक वृत्तपत्रसृष्टी' (Nationalist Press) च्या विकासाने राष्ट्रवादाला कसा वेग दिला?",
+        "en": "How did the growth of the nationalist press in the late 19th century accelerate the rise of Indian nationalism?"
+      },
+      "options": [
+        { "mr": "ब्रिटीश धोरणांची सडकून टीका करून जनतेत राजकीय जाणिवा निर्माण केल्या आणि देशव्यापी संवाद साधला", "en": "By fiercely critiquing colonial policies, fostering political awareness, and building a nationwide dialogue" },
+        { "mr": "केवळ मनोरंजनात्मक कथा छापून", "en": "By publishing only entertainment stories" },
+        { "mr": "ब्रिटिशांच्या जाहिराती करून", "en": "By promoting British advertisements" },
+        { "mr": "स्थानिक भाषेवर बंदी घालून", "en": "By banning local languages" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९ वे शतक): राष्ट्रवादी वृत्तपत्रांनी एकाच वेळी देशभरातील सुशिक्षितांपर्यंत सरकारी अन्याय पोचवला आणि लोकांना राजकीय शहाणपण व हक्कांची जाणीव करून दिली.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(19th Century): The nationalist press functioned as an opposition party, educating the masses, organizing public opinion, and critiquing unjust imperial laws.\n\n"
+      }
+    },
+    {
+      "id": 12,
+      "question": {
+        "mr": "भारतीय राष्ट्रीय काँग्रेसच्या स्थापनेच्या पहिल्या दशकात (मवाळ युग) नेत्यांनी ब्रिटिशांसमोर मांडलेल्या प्रमुख राजकीय मागण्यांमध्ये खालीलपैकी कशाचा समावेश होता?",
+        "en": "Which of the following was a prominent demand raised by the early Moderates during the first decade of the INC?"
+      },
+      "options": [
+        { "mr": "इम्पिरियल आणि प्रांतीय कायदेमंडळांचा विस्तार आणि त्यात निर्वाचित भारतीयांचा समावेश", "en": "Expansion of Imperial and Provincial legislative councils with elected Indian representatives" },
+        { "mr": "इंग्रजांना भारतातून लष्करी मार्गाने हाकलून लावणे", "en": "Military expulsion of the British from India" },
+        { "mr": "संपूर्ण भारत स्वतंत्र घोषित करणे", "en": "Declaring total independence for India" },
+        { "mr": "सर्व जमिनींचे राष्ट्रीयीकरण करणे", "en": "Nationalizing all land" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१८८५-१९०५): मवाळ नेत्यांनी कायदेमंडळांचा विस्तार (Expansion of Legislative Councils) आणि त्यात भारतीयांचे निर्वाचित प्रतिनिधित्व वाढवण्याची मागणी लावून धरली होती.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1885-1905): The early Moderates consistently petitioned for the reform and expansion of legislative councils, urging the inclusion of elected Indian members.\n\n"
+      }
+    },
+    {
+      "id": 13,
+      "question": {
+        "mr": "खालील विधाने विचारात घ्या:\nअ) गोपाळ कृष्ण गोखले यांनी १९०५ मध्ये 'सर्व्हेंट्स ऑफ इंडिया सोसायटी' (Servants of India Society) ची स्थापना पुणे येथे केली.\nब) या संस्थेचा उद्देश देशासाठी त्याग करणारे समर्पित राष्ट्रीय कार्यकर्ते तयार करणे हा होता.\nवरीलपैकी कोणते/ती विधान/ने बरोबर आहेत?",
+        "en": "Consider the following statements:\nA) Gopal Krishna Gokhale founded the 'Servants of India Society' in Pune in 1905.\nB) The core objective of the society was to train dedicated national missionaries to serve the country.\nWhich of the above statement(s) is/are correct?"
+      },
+      "options": [
+        { "mr": "फक्त अ", "en": "Only A" },
+        { "mr": "फक्त ब", "en": "Only B" },
+        { "mr": "अ आणि ब दोन्ही", "en": "Both A and B" },
+        { "mr": "दोन्ही नाहीत", "en": "Neither A nor B" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९०५): दोन्ही विधाने अगदी बरोबर आहेत. गोपाळ कृष्ण गोखले यांनी १२ जून १९०५ रोजी पुण्यात 'सर्व्हेंट्स ऑफ इंडिया सोसायटी' स्थापन केली, जिच्या माध्यमातून राष्ट्रसेवेसाठी निःस्वार्थी कार्यकर्ते घडवले जात असत.\n\n[संदर्भ: डॉ. स. शि. गाठाळ / समाधान महाजन]",
+        "en": "(1905): Both statements are correct. G.K. Gokhale founded the Servants of India Society in Pune to train Indians to dedicate their lives to social service and national upliftment.\n\n"
+      }
+    },
+    {
+      "id": 14,
+      "question": {
+        "mr": "भारतीय राष्ट्रीय काँग्रेसच्या तिसऱ्या अधिवेशनाचे (मद्रास - १८८७) अध्यक्षपद भूषवणारे बद्रीद्दीन तैबजी कोणत्या क्षेत्राशी संबंधित होते?",
+        "en": "In which professional field was Badruddin Tyabji, who presided over the 1887 Madras INC session, prominently engaged?"
+      },
+      "options": [
+        { "mr": "उच्च न्यायालयाचे बॅरिस्टर (वकील) आणि न्यायमूर्ती", "en": "Barrister and High Court Judge" },
+        { "mr": "फक्त सैन्य अधिकारी", "en": "Military officer" },
+        { "mr": "परदेशी व्यापारी", "en": "Foreign merchant" },
+        { "mr": "ब्रिटिश सनदी अधिकारी", "en": "British civil servant" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१८८७): बद्रीद्दीन तैबजी हे मुंबई उच्च न्यायालयाचे प्रसिद्ध बॅरिस्टर (वकील) आणि नंतर न्यायाधीश झाले. ते काँग्रेसचे पहिले मुस्लिम अध्यक्ष होते.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1887): Badruddin Tyabji was a distinguished barrister of the Bombay High Court and later a judge, renowned for his secular nationalist outlook.\n\n"
+      }
+    },
+    {
+      "id": 15,
+      "question": {
+        "mr": "काँग्रेसच्या स्थापनेच्या सुरुवातीच्या काळात, खालीलपैकी कोणत्या ब्रिटीश नेत्याने किंवा लेखकाने काँग्रेसच्या चळवळीला खुले समर्थन दिले होते?",
+        "en": "Which British parliamentarian and supporter of India actively aided early Indian nationalists in London?"
+      },
+      "options": [
+        { "mr": "चार्ल्स ब्रॅडलो (Charles Bradlaugh) आणि विल्यम वेडरबर्न", "en": "Charles Bradlaugh and William Wedderburn" },
+        { "mr": "लॉर्ड लिटन", "en": "Lord Lytton" },
+        { "mr": "लॉर्ड कर्झन", "en": "Lord Curzon" },
+        { "mr": "सर जॉन सीले", "en": "Sir John Seeley" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१८८० च्या दशकात): चार्ल्स ब्रॅडलो (ब्रिटीश खासदार) आणि विल्यम वेडरबर्न यांनी ब्रिटनच्या संसदेत भारताच्या बाजूने आवाज उठवला आणि काँग्रेसला मदत केली. ब्रॅडलो १८८९ च्या मुंबई अधिवेशनातही उपस्थित होते.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1880s-1890s): British liberals like Charles Bradlaugh (MP) and William Wedderburn actively championed Indian nationalist causes in the British Parliament and attended INC sessions.\n\n"
+      }
+    },
+    {
+      "id": 16,
+      "question": {
+        "mr": "खालील विधाने विचारात घ्या:\nअ) दादाभाई नौरोजींनी 'द वॅड्स ऑफ इंडिया' (Wants and Means of India) आणि 'पॉवर्टी अँड अन-ब्रिटिश रूल इन इंडिया' यांद्वारे आर्थिक राष्ट्रवादाची पायाभरणी केली.\nब) त्यांनी काँग्रेसच्या १९०६ च्या कलकत्ता अधिवेशनात 'स्वराज' (Swaraj) या शब्दाचा उच्चार करत पहिली अधिकृत मागणी मांडली.\nवरीलपैकी कोणते/ती विधान/ने बरोबर आहेत?",
+        "en": "Consider the following statements:\nA) Dadabhai Naoroji laid the foundations of economic nationalism through his writings.\nB) He officially put forth the demand for 'Swaraj' at the 1906 Calcutta session of the INC.\nWhich of the above statement(s) is/are correct?"
+      },
+      "options": [
+        { "mr": "फक्त अ", "en": "Only A" },
+        { "mr": "फक्त ब", "en": "Only B" },
+        { "mr": "अ आणि ब दोन्ही", "en": "Both A and B" },
+        { "mr": "दोन्ही नाहीत", "en": "Neither A nor B" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "(१९०६): दोन्ही विधाने अगदी बरोबर आहेत. १९०६ च्या कलकत्ता अधिवेशनाचे अध्यक्ष असताना दादाभाई नौरोजींनी भाषणात प्रथमच 'स्वराज' (Swaraj) हे ध्येय घोषित केले होते.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / डॉ. स. शि. गाठाळ]",
+        "en": "(1906): Both statements are correct. Presiding over the 1906 Calcutta session, Dadabhai Naoroji famously declared 'Swaraj' as the ultimate political goal of the Congress.\n\n"
+      }
+    },
+    {
+      "id": 17,
+      "question": {
+        "mr": "भारतीय राष्ट्रवादाच्या उदयात 'प्राच्यविद्या संशोधनाचे' (Orientalist Research) आणि प्राचीन संस्कृतीचे महत्त्व का मानले जाते?",
+        "en": "Why did orientalist research and the rediscovery of ancient Indian heritage play a crucial role in shaping nationalist pride?"
+      },
+      "options": [
+        { "mr": "त्यामुळे भारताला केवळ मागासलेल्या देशाच्या रूपात पाहणाऱ्या ब्रिटीश वसाहतवादी मिथकांचे खंडन झाले", "en": "It shattered the colonial myth that India had always been inherently backward and uncivilized" },
+        { "mr": "त्यामुळे भारताची जमीन दुप्पट झाली", "en": "It doubled India's physical territory" },
+        { "mr": "त्यामुळे सर्व कर माफ झाले", "en": "It exempted all taxes" },
+        { "mr": "त्यामुळे इंग्रज लोक भारत सोडून गेले", "en": "It made the British leave instantly" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९ वे शतक): ब्रिटिश इतिहासकार व प्राच्यविद्या संशोधकांनी (उदा. मॅक्स मुल्लर, विलियम जोन्स) जेव्हा प्राचीन भारतीय साहित्य व संस्कृती जगासमोर आणली, तेव्हा भारतीयांचा हीनगंड नाहीसा होऊन त्यांच्यात राष्ट्रभिमान निर्माण झाला.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(19th Century): Rediscovering India's rich scientific, philosophical, and artistic past undermined the imperialist narrative that Indians were incapable of self-rule.\n\n"
+      }
+    },
+    {
+      "id": 18,
+      "question": {
+        "mr": "काँग्रेसच्या स्थापनेपूर्वी १८७० मध्ये स्थापन झालेल्या 'पुणे सार्वजनिक सभेची' स्थापना कोणत्या उद्देशाने झाली होती?",
+        "en": "What was the core founding purpose of the 'Poona Sarvajanik Sabha' established in 1870?"
+      },
+      "options": [
+        { "mr": "सरकार आणि जनतेमधील सुसंवाद साधणे आणि जनतेच्या हक्कांचे प्रतिनिधित्व करणे", "en": "Acting as a mediating bridge between the government and the public to voice grievances" },
+        { "mr": "फक्त लष्करी भरती करणे", "en": "Only recruiting soldiers" },
+        { "mr": "फक्त परदेशी व्यापार चालवणे", "en": "Only managing foreign trade" },
+        { "mr": "धार्मिक विधी पार पाडणे", "en": "Performing religious rituals" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१८७०): पुणे सार्वजनिक सभेची स्थापना ही जनता आणि ब्रिटिश सरकार यांच्यात सुसंवाद साधणारा दुवा (Mediating bridge) म्हणून झाली होती, जिने लोकांचे प्रश्न पद्धतशीरपणे मांडले.\n\n[संदर्भ: डॉ. स. शि. गाठाळ / समाधान महाजन]",
+        "en": "(1870): The Poona Sarvajanik Sabha was conceived to function as a representative bridge between the government and the people, articulating popular needs systematically.\n\n"
+      }
+    },
+    {
+      "id": 19,
+      "question": {
+        "mr": "खालील विधाने विचारात घ्या:\nअ) जी. सुब्रमण्य अय्यर यांनी मद्रास येथे 'द हिंदू' वृत्तपत्र सुरू केले.\nब) त्यांनीच 'मद्रास महाजन सभेच्या' स्थापनेतही महत्त्वपूर्ण सहभाग घेतला होता.\nवरीलपैकी कोणते/ती विधान/ने बरोबर आहेत?",
+        "en": "Consider the following statements:\nA) G. Subramania Iyer founded the newspaper 'The Hindu' in Madras.\nB) He was also a key co-founder of the Madras Mahajana Sabha.\nWhich of the above statement(s) is/are correct?"
+      },
+      "options": [
+        { "mr": "फक्त अ", "en": "Only A" },
+        { "mr": "फक्त ब", "en": "Only B" },
+        { "mr": "अ आणि ब दोन्ही", "en": "Both A and B" },
+        { "mr": "दोन्ही नाहीत", "en": "Neither A nor B" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "(१८७८-१८८४): दोन्ही विधाने अगदी बरोबर आहेत. जी. सुब्रमण्य अय्यर यांनी १८७८ मध्ये 'द हिंदू' वृत्तपत्र सुरू केले आणि १८८४ मध्ये मद्रास महाजन सभा स्थापन केली.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1878-1884): Both statements are correct. G. Subramania Iyer launched 'The Hindu' in 1878 and co-founded the Madras Mahajana Sabha in 1884.\n\n"
+      }
+    },
+    {
+      "id": 20,
+      "question": {
+        "mr": "भारतीय राष्ट्रवादाच्या पहिल्या टप्प्यात (मवाळ युग) 'आर्थिक राष्ट्रवाद' (Economic Nationalism) रुजवण्यात खालीलपैकी कोणत्या नेत्यांचे योगदान सर्वाधिक महत्त्वाचे होते?",
+        "en": "Whose pioneering works formed the core bedrock of 'Economic Nationalism' during the early nationalist era?"
+      },
+      "options": [
+        { "mr": "दादाभाई नौरोजी, एम. जी. रानडे आणि आर. सी. दत्त (Dadabhai Naoroji, M.G. Ranade and R.C. Dutt)", "en": "Dadabhai Naoroji, M.G. Ranade and R.C. Dutt" },
+        { "mr": "फक्त मवाळ नेते नसलेले जहाल नेते", "en": "Only Extremist leaders" },
+        { "mr": "फक्त ब्रिटीश अधिकारी", "en": "Only British officials" },
+        { "mr": "फक्त परदेशी अर्थतज्ज्ञ", "en": "Only foreign economists" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९ वे शतक): दादाभाई नौरोजी, न्यायमूर्ती रानडे आणि आर. सी. दत्त या 'आर्थिक राष्ट्रवादाच्या त्रिमूर्तीने' ब्रिटिशांच्या वसाहतवादी शोषणाचे गणितीय व शास्त्रीय विश्लेषण करून भारतीय जनातमानसात जागृती निर्माण केली.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(19th Century): Dadabhai Naoroji, M.G. Ranade, and R.C. Dutt formed the intellectual trinity of economic nationalism, systematically critiquing imperialist exploitation.\n\n"
+      }
+    },
+    {
+      "id": 21,
+      "question": {
+        "mr": "काँग्रेसच्या स्थापनेपूर्वी १८५२ मध्ये स्थापन झालेल्या 'बॉम्बे असोसिएशन' चे मुख्य संस्थापक कोण होते?",
+        "en": "Who were the primary founders of the 'Bombay Association' established in 1852?"
+      },
+      "options": [
+        { "mr": "नाना शंकरशेत, भाऊ दाजी लाड आणि दादाभाई नौरोजी", "en": "Nana Shankarshet, Bhau Daji Lad and Dadabhai Naoroji" },
+        { "mr": "टिळक व आग्रकर", "en": "Tilak and Agarkar" },
+        { "mr": "फिरोजशाह मेहता व तेलंग", "en": "Pherozeshah Mehta and Telang" },
+        { "mr": "रानडे व जोशी", "en": "Ranade and Joshi" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१८५२): जगन्नाथ शंकरशेत (नाना शंकरशेत), भाऊ दाजी लाड आणि दादाभाई नौरोजी यांनी २६ ऑगस्ट १८५२ रोजी बॉम्बे असोसिएशन स्थापन केली, जी मुंबई प्रांतातील पहिली राजकीय संघटना होती.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1852): Nana Shankarshet, Bhau Daji Lad, and Dadabhai Naoroji founded the Bombay Association in 1852 as the first political platform in western India.\n\n"
+      }
+    },
+    {
+      "id": 22,
+      "question": {
+        "mr": "खालील विधाने विचारात घ्या:\nअ) काँग्रेसच्या मवाळ नेत्यांचा ब्रिटिश सरकारमधील न्यायबुद्धीवर दृढ विश्वास होता.\nब) त्यांच्या या मवाळ धोरणामुळेच नंतरच्या काळात 'लाल-बाल-पाल' यांसारख्या जहाल नेत्यांचा उदय झाला.\nवरीलपैकी कोणते/ती विधान/ने बरोबर आहेत?",
+        "en": "Consider the following statements:\nA) Early Moderates had firm faith in the sense of justice of the British nation.\nB) The perceived limitations of this moderate approach gave rise to the militant nationalist 'Lal-Bal-Pal' leadership.\nWhich of the above statement(s) is/are correct?"
+      },
+      "options": [
+        { "mr": "फक्त अ", "en": "Only A" },
+        { "mr": "फक्त ब", "en": "Only B" },
+        { "mr": "अ आणि ब दोन्ही", "en": "Both A and B" },
+        { "mr": "दोन्ही नाहीत", "en": "Neither A nor B" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "(१९०५ पूर्वी): दोन्ही विधाने अगदी बरोबर आहेत. मवाळ नेत्यांच्या सनदशीर मार्गांनी ठोस यश न मिळाल्यामुळे तरुण पिढीत असंतोष निर्माण झाला, ज्यातून विसाव्या शतकाच्या सुरुवातीला जहाल राष्ट्रवाद (Lal-Bal-Pal) उदयाला आला.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / डॉ. स. शि. गाठाळ]",
+        "en": "(Pre-1905): Both statements are correct. The failure of Moderate petitions to secure substantive concessions led to disillusionment, paving the way for Extremist leaders like Lal-Bal-Pal.\n\n"
+      }
+    },
+    {
+      "id": 23,
+      "question": {
+        "mr": "भारतीय राष्ट्रीय काँग्रेसच्या स्थापनेच्या प्रक्रियेत 'सुरेंद्रनाथ बॅनर्जी' प्रत्यक्ष का उपस्थित नव्हते?",
+        "en": "Why was Surendranath Banerjea absent from the inaugural session of the INC in Bombay in December 1885?"
+      },
+      "options": [
+        { "mr": "कारण ते स्वतःच्या 'इंडियन नॅशनल कॉन्फरन्स' च्या दुसऱ्या अधिवेशनाच्या तयारी व आयोजनात व्यस्त होते", "en": "He was busy organizing the second session of his own 'Indian National Conference' in Calcutta" },
+        { "mr": "त्यांना ब्रिटिशांनी नजरकैदेत ठेवले होते", "en": "He was placed under house arrest by the British" },
+        { "mr": "त्यांचा काँग्रेसला तीव्र विरोध होता", "en": "He strongly opposed the Congress" },
+        { "mr": "ते परदेशात गेले होते", "en": "He had traveled abroad" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१८८५): डिसेंबर १८८५ मध्ये जेव्हा मुंबईत काँग्रेसचे पहिले अधिवेशन भरले, तेव्हा सुरेंद्रनाथ बॅनर्जी कलकत्त्यामध्ये स्वतःच्या 'इंडियन नॅशनल कॉन्फरन्स' च्या दुसऱ्या अधिवेशनाचे आयोजन करण्यात व्यस्त होते (मात्र पुढच्या वर्षी दोन्ही संस्था एक झाल्या).\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1885): Surendranath Banerjea could not attend the first INC session because he was deeply engrossed in organizing the second session of the Indian National Conference in Calcutta.\n\n"
+      }
+    },
+    {
+      "id": 24,
+      "question": {
+        "mr": "स्वातंत्र्यपूर्व काळातील 'भारतीय राष्ट्रवादाच्या उदयामध्ये' खालीलपैकी कोणत्या घटकाचे योगदान सर्वात पायाभूत मानले जाते?",
+        "en": "What is considered the foundational bedrock underlying the rise of Indian nationalism?"
+      },
+      "options": [
+        { "mr": "वसाहतवादाचे आर्थिक शोषण आणि आधुनिक प्रांतीय व राष्ट्रीय संस्थांची निर्मिती", "en": "Colonial economic exploitation coupled with the formation of modern pan-Indian political organizations" },
+        { "mr": "परदेशी व्यापाऱ्यांचे सहकार्य", "en": "Cooperation from foreign traders" },
+        { "mr": "राजेशाहीचे पुनरुज्जीवन", "en": "Revival of feudal monarchies" },
+        { "mr": "स्थानिक भाषांवर पूर्ण बंदी", "en": "Complete ban on regional languages" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९ वे शतक): ब्रिटीश वसाहतवादी शोषणाने संपूर्ण देशाला एकाच वर्गात ढकलले आणि त्यातून आधुनिक राजकीय संघटनांनी राष्ट्रवादाचा भक्कम पाया रचला.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / डॉ. स. शि. गाठाळ]",
+        "en": "(19th Century): The combined impact of uniform colonial exploitation, modern communication, English education, and institutionalized political associations formed the bedrock of Indian nationalism.\n\n"
+      }
+    },
+    {
+      "id": 25,
+      "question": {
+        "mr": "भारतीय राष्ट्रीय काँग्रेसच्या स्थापनेचे ऐतिहासिक महत्त्व स्पष्ट करताना इतिहासकार काय मानतात?",
+        "en": "How do historians evaluate the historic significance of the founding of the Indian National Congress?"
+      },
+      "options": [
+        { "mr": "ती एक संस्था नसून भारतीय राष्ट्रीय स्वातंत्र्यलढ्याचा संस्थात्मक प्रारंभ व पाया होता", "en": "It was not merely an organization, but the institutional genesis and foundation of India's national freedom struggle" },
+        { "mr": "ती केवळ एक सांस्कृतिक समिती होती", "en": "It was just a cultural committee" },
+        { "mr": "तिने ब्रिटिशांचे गुलाम म्हणून काम केले", "en": "It functioned as a loyal British department" },
+        { "mr": "तिचा स्वातंत्र्यलढ्याशी काहीही संबंध नव्हता", "en": "It had nothing to do with freedom" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१८८५): काँग्रेसची स्थापना हा भारतीय इतिहासातील टर्निंग पॉईंट होता. विखुरलेल्या प्रांतीय चळवळींना एका छताखाली आणत तिने राष्ट्रीय स्वातंत्र्यलढ्याला संस्थात्मक रूप दिले.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1885): Historians view the INC as the institutional turning point that transformed dispersed regional protests into a cohesive, organized national movement for independence.\n\n"
+      }
+    }
+  ]
+}

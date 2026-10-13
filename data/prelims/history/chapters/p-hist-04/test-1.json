@@ -1,0 +1,464 @@
+{
+  "testId": "p-hist-04-t1",
+  "title": {
+    "mr": "सामाजिक व धार्मिक सुधारणा चळवळी — सराव 1",
+    "en": "Social and Religious Reform Movements — Practice Test 1"
+  },
+  "durationMinutes": 20,
+  "marksPerQuestion": 1,
+  "negativeMarking": 0.25,
+  "totalMarks": 25,
+  "difficulty": "मध्यम ते काठिण्य",
+  "questions": [
+    {
+      "id": 1,
+      "question": {
+        "mr": "राजा राममोहन रॉय यांनी १८२८ मध्ये 'ब्राह्मो समाजाची' स्थापना केली. या समाजाच्या संदर्भात खालील विधाने विचारात घ्या:\nअ) हा समाज मूर्तीपूजा, बहुदेववाद आणि कर्मकांडाचा विरोधक होता.\nब) या समाजाने एकेश्वरवादाचा (Monotheism) प्रचार केला.\nवरीलपैकी कोणते/ती विधान/ने बरोबर आहेत?",
+        "en": "Consider the following statements regarding the Brahmo Samaj founded by Raja Rammohan Roy in 1828:\nA) It opposed idol worship, polytheism, and rituals.\nB) It propagated monotheism.\nWhich of the above statement(s) is/are correct?"
+      },
+      "options": [
+        { "mr": "फक्त अ", "en": "Only A" },
+        { "mr": "फक्त ब", "en": "Only B" },
+        { "mr": "अ आणि ब दोन्ही", "en": "Both A and B" },
+        { "mr": "दोन्ही नाहीत", "en": "Neither A nor B" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "(१८२८): राजा राममोहन रॉय यांनी २० ऑगस्ट १८२८ रोजी 'ब्राह्मो सभेची' (पुढे ब्राह्मो समाज) स्थापना केली. हा समाज मूर्तिपूजा, जातभेद, बहुदेववाद आणि निरुपयोगी धार्मिक कर्मकांडांच्या विरोधात होता, तर एकाच परमेश्वरावर (एकेश्वरवाद) श्रद्धा ठेवण्याचा व वेदांताच्या प्रचारावर भर देणारा होता.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / डॉ. स. शि. गाठाळ]",
+        "en": "(1828): Raja Rammohan Roy founded the Brahmo Sabha in 1828 (later Brahmo Samaj), which campaigned strongly against idolatry, polytheism, caste rigors, and rituals, while promoting the worship of one supreme God (monotheism).\n\n"
+      }
+    },
+    {
+      "id": 2,
+      "question": {
+        "mr": "स्वामी दयानंद सरस्वती यांनी 'आर्य समाजाची' स्थापना कोणत्या वर्षी आणि कोठे केली होती?",
+        "en": "In which year and at which place did Swami Dayanand Saraswati found the 'Arya Samaj'?"
+      },
+      "options": [
+        { "mr": "१८७५, मुंबई (Bombay)", "en": "1875, Bombay" },
+        { "mr": "१८२८, कलकत्ता", "en": "1828, Calcutta" },
+        { "mr": "१८७५, लाहोर", "en": "1875, Lahore" },
+        { "mr": "१८९७, बेलूर", "en": "1897, Belur" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१८७५): स्वामी दयानंद सरस्वती यांनी १० एप्रिल १८७५ रोजी मुंबई येथे 'आर्य समाजाची' स्थापना केली. नंतर १८७७ मध्ये त्याचे मुख्यालय लाहोर येथे हलवण्यात आले. 'वेदांकडे परत चला' (Back to the Vedas) हा त्यांचा मुख्य नारा होता.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / समाधान महाजन]",
+        "en": "(1875): Swami Dayanand Saraswati founded the Arya Samaj in Bombay on April 10, 1875. Later, its headquarters were shifted to Lahore in 1877. His famous slogan was 'Back to the Vedas'.\n\n"
+      }
+    },
+    {
+      "id": 3,
+      "question": {
+        "mr": "योग्य जोड्या जुळवा (संस्था आणि त्यांचे संस्थापक):\nगट अ: १) प्रार्थना समाज, २) सत्यशोधक समाज, ३) रामकृष्णा मिशन, ४) तत्त्वबोधिनी सभा\nगट ब: अ) आत्माराम पांडुरंग, ब) ज्योतिराव फुले, क) स्वामी विवेकानंद, ड) देवेंद्रनाथ टागोर",
+        "en": "Match the pairs (Organizations and their founders):\nGroup A: 1) Prarthana Samaj, 2) Satyashodhak Samaj, 3) Ramakrishna Mission, 4) Tattvabodhini Sabha\nGroup B: a) Atmaram Pandurang, b) Jyotirao Phule, c) Swami Vivekananda, d) Debendranath Tagore"
+      },
+      "options": [
+        { "mr": "1-अ, 2-ब, 3-क, 4-ड", "en": "1-a, 2-b, 3-c, 4-d" },
+        { "mr": "1-ब, 2-अ, 3-ड, 4-क", "en": "1-b, 2-a, 3-d, 4-c" },
+        { "mr": "1-अ, 2-क, 3-ब, 4-ड", "en": "1-a, 2-c, 3-b, 4-d" },
+        { "mr": "1-ड, 2-ब, 3-अ, 4-क", "en": "1-d, 2-b, 3-a, 4-c" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१८३९-१८९७): प्रार्थना समाज (१८६७) - डॉ. आत्माराम पांडुरंग (न्याउमूर्ती रानाडे व भांडारकर यांचे सहकार्य), सत्यशोधक समाज (१८७३) - महात्मा ज्योतिराव फुले, रामकृष्णा मिशन (१८९७) - स्वामी विवेकानंद, तत्त्वबोधिनी सभा (१८३९) - देवेंद्रनाथ टागोर.\n\n[संदर्भ: डॉ. स. शि. गाठाळ / अनिल कटारे]",
+        "en": "(1839-1897): Prarthana Samaj (1867) - Atmaram Pandurang; Satyashodhak Samaj (1873) - Jyotirao Phule; Ramakrishna Mission (1897) - Swami Vivekananda; Tattvabodhini Sabha (1839) - Debendranath Tagore.\n\n"
+      }
+    },
+    {
+      "id": 4,
+      "question": {
+        "mr": "स्वामी विवेकानंदांनी शिकागो येथील 'सर्वधर्म परिषदेत' (Parliament of Religions) ऐतिहासिक भाषण कोणत्या वर्षी दिले होते?",
+        "en": "In which year did Swami Vivekananda deliver his historic speech at the 'Parliament of Religions' in Chicago?"
+      },
+      "options": [
+        { "mr": "१८८५", "en": "1885" },
+        { "mr": "१८९३ (1893)", "en": "1893" },
+        { "mr": "१९०१", "en": "1901" },
+        { "mr": "१८९७", "en": "1897" }
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": {
+        "mr": "(१८९३): सप्टेंबर १८९३ मध्ये अमेरिकेतील शिकागो शहरात भरलेल्या जागतिक धर्म परिषदेत स्वामी विवेकानंद यांनी भारताचे व हिंदू धर्माचे प्रतिनिधित्व केले. त्यांच्या 'अमेरिकेच्या बंधू आणि भगिनींनो' या संबोधाने जगभरात भारताची संस्कृती पोहोचवली.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1893): Swami Vivekananda delivered his famous speech representing Hinduism at the Parliament of Religions held in Chicago in September 1893, beginning with the iconic words \"Sisters and brothers of America.\"\n\n"
+      }
+    },
+    {
+      "id": 5,
+      "question": {
+        "mr": "ज्योतिराव फुले यांनी लिहिलेल्या आणि शूद्रा व अतिशूद्रांच्या शोषणावर प्रकाश टाकणाऱ्या 'गुलामगिरी' (Gulamgiri) या ग्रंथाची रचना कोणत्या वर्षी झाली?",
+        "en": "In which year was Jyotirao Phule's famous book 'Gulamgiri', highlighting the exploitation of Shudras and Atishudras, published?"
+      },
+      "options": [
+        { "mr": "१८७३", "en": "1873" },
+        { "mr": "१८८५", "en": "1885" },
+        { "mr": "१८७२", "en": "1872" },
+        { "mr": "१८६९ (1869)", "en": "1869" }
+      ],
+      "correctAnswerIndex": 3,
+      "explanation": {
+        "mr": "(१८६९): महात्मा ज्योतिराव फुले यांनी 'गुलामगिरी' हा ग्रंथ १८६९ मध्ये प्रसिद्ध केला. त्यांनी हा ग्रंथ अमेरिकेतील कृष्णवर्णीयांच्या गुलामगिरीविरुद्ध लढा देणाऱ्या लोकांना समर्पित केला होता.\n\n[संदर्भ: डॉ. स. शि. गाठाळ / समाधान महाजन]",
+        "en": "(1869): Jyotirao Phule published his seminal work 'Gulamgiri' in 1869, dedicating it to those Americans who fought to free slaves in the United States.\n\n"
+      }
+    },
+    {
+      "id": 6,
+      "question": {
+        "mr": "अलिगड चळवळीचे (Aligarh Movement) प्रणेते कोण होते, ज्यांनी मुस्लिम समाजात आधुनिक व पाश्चात्य शिक्षणाचा प्रसार केला?",
+        "en": "Who was the pioneer of the 'Aligarh Movement', who promoted modern and Western education among the Muslim community?"
+      },
+      "options": [
+        { "mr": "मौलाना आजाद", "en": "Maulana Azad" },
+        { "mr": "सर सय्यद अहमद खान (Sir Syed Ahmed Khan)", "en": "Sir Syed Ahmed Khan" },
+        { "mr": "मोहम्मद अली जिना", "en": "Muhammad Ali Jinnah" },
+        { "mr": "बद्रुद्दीन तैबजी", "en": "Badruddin Tyabji" }
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": {
+        "mr": "(१८७५): सर सय्यद अहमद खान यांनी मुस्लिम समाजातील अंधश्रद्धा आणि मागासलेपण दूर करण्यासाठी अलिगड चळवळ सुरू केली. त्यांनी १८७५ मध्ये मोहम्मदन Anglo-Oriental College (ज्याचे पुढे अलिगड मुस्लिम विद्यापीठ झाले) स्थापन केले.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1875): Sir Syed Ahmed Khan founded the Aligarh Movement to modernize the Muslim community through Western education and social reforms, establishing the MAO College in 1875.\n\n"
+      }
+    },
+    {
+      "id": 7,
+      "question": {
+        "mr": "सत्यशोधक समाजाची स्थापना महात्मा ज्योतिराव फुले यांनी पुण्यात कधी केली?",
+        "en": "When did Mahatma Jyotirao Phule found the 'Satyashodhak Samaj' in Pune?"
+      },
+      "options": [
+        { "mr": "२४ सप्टेंबर १८७३ (24 September 1873)", "en": "24 September 1873" },
+        { "mr": "१ जानेवारी १८४८", "en": "1 January 1848" },
+        { "mr": "१५ ऑगस्ट १८८५", "en": "15 August 1885" },
+        { "mr": "३१ मार्च १८९०", "en": "31 March 1890" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१८७३): २४ सप्टेंबर १८७३ रोजी महात्मा ज्योतिराव फुले यांनी पुणे येथे 'सत्यशोधक समाजाची' स्थापना केली. बहुजन समाज व शूद्रातिशूद्रांना धार्मिक व सामाजिक शोषणातून मुक्त करणे हा या समाजात मुख्य उद्देश होता.\n\n[संदर्भ: डॉ. स. शि. गाठाळ / समाधान महाजन]",
+        "en": "(1873): Mahatma Jyotirao Phule founded the Satyashodhak Samaj on September 24, 1873, in Pune to liberate lower castes from socio-religious exploitation by Brahmin priests.\n\n"
+      }
+    },
+    {
+      "id": 8,
+      "question": {
+        "mr": "खालील विधाने विचारात घ्या:\nअ) ईश्वरचंद्र विद्यासागर यांच्या प्रयत्नांमुळे १८५६ चा 'हिंदू विधवा पुनर्विवाह कायदा' संमत झाला.\nब) त्यांनी बंगालमध्ये महिलांसाठी अनेक शाळा सुरू करण्यात मोठे योगदान दिले.\nवरीलपैकी कोणते/ती विधान/ने बरोबर आहेत?",
+        "en": "Consider the following statements:\nA) Due to the efforts of Ishwar Chandra Vidyasagar, the Hindu Widow Remarriage Act of 1856 was passed.\nB) He made significant contributions to starting schools for girls in Bengal.\nWhich of the above statement(s) is/are correct?"
+      },
+      "options": [
+        { "mr": "फक्त अ", "en": "Only A" },
+        { "mr": "फक्त ब", "en": "Only B" },
+        { "mr": "अ आणि ब दोन्ही", "en": "Both A and B" },
+        { "mr": "दोन्ही नाहीत", "en": "Neither A nor B" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "(१८५६): दोन्ही विधाने अगदी बरोबर आहेत. पंडित ईश्वरचंद्र विद्यासागर यांनी हिंदू विधवांच्या विवाहासाठी कायदेशीर लढा दिला आणि १८५६ चा कायदा मंजूर करून घेतला, तसेच बंगालमध्ये अनेक बालिका शाळा सुरू केल्या.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / अनिल कटारे]",
+        "en": "(1856): Both statements are correct. Ishwar Chandra Vidyasagar spearheaded the movement for widow remarriage resulting in the 1856 Act, and actively promoted women's education in Bengal.\n\n"
+      }
+    },
+    {
+      "id": 9,
+      "question": {
+        "mr": "दक्षिण भारतात 'आत्मसन्मान चळवळ' (Self-Respect Movement) कोणी सुरू केली होती?",
+        "en": "Who launched the 'Self-Respect Movement' in South India?"
+      },
+      "options": [
+        { "mr": "इ. व्ही. रामस्वामी नायकर (पेरियार) (E. V. Ramasamy / Periyar)", "en": "E. V. Ramasamy / Periyar" },
+        { "mr": "श्री नारायण गुरु", "en": "Sree Narayana Guru" },
+        { "mr": "ज्योतिराव फुले", "en": "Jyotirao Phule" },
+        { "mr": "अय्यंकली", "en": "Ayyankali" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९२५): तमिळनाडूमध्ये 'ई. व्ही. रामस्वामी नायकर' (पेरियार) यांनी १९२५ मध्ये 'आत्मसन्मान चळवळ' (Self-Respect Movement) सुरू केली. ब्राह्मणवादी वर्चस्वाच्या विरोधात आणि शोषित बहुजनांच्या आत्मसन्मानासाठी त्यांनी हे आंदोलन छेडले होते.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1925): E.V. Ramasamy, popularly known as Periyar, launched the Self-Respect Movement in Tamil Nadu in 1825/1925 to uplift lower castes and challenge Brahminical dominance.\n\n"
+      }
+    },
+    {
+      "id": 10,
+      "question": {
+        "mr": "केरळमध्ये 'श्री नारायण धर्म परिपालन योगम' (SNDP Yogam) या संस्थेची स्थापना करून मागासवर्गीय ईझवा (Ezhavas) जातीच्या उद्धारासाठी कार्य करणारे समाजसुधारक कोण होते?",
+        "en": "Who was the social reformer from Kerala who founded the SNDP Yogam for the upliftment of the Ezhava community?"
+      },
+      "options": [
+        { "mr": "श्री नारायण गुरु (Sree Narayana Guru)", "en": "Sree Narayana Guru" },
+        { "mr": "पेरियार ई. व्ही. रामस्वामी", "en": "Periyar E.V. Ramasamy" },
+        { "mr": "अय्यंकली", "en": "Ayyankali" },
+        { "mr": "कान्कुथ कुन्हीरामन", "en": "K. Kunhiraman" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९०३): श्री नारायण गुरु यांनी केरळमध्ये 'एक जात, एक धर्म, एक ईश्वर माणसासाठी' हा संदेश देत १९०३ मध्ये SNDP योगमची स्थापना केली. त्यांनी केरळमधील अस्पृश्य व मागास जात्यांच्या (विशेषतः ईझवा) उद्धारासाठी मोठे कार्य केले.\n\n[संदर्भ: डॉ. स. शि. गाठाळ / स्पेक्ट्रम]",
+        "en": "(1903): Sree Narayana Guru founded the SNDP Yogam in Kerala in 1903, propagating the famous principle \"One caste, one religion, one God for man,\" uplifting the Ezhava community.\n\n"
+      }
+    },
+    {
+      "id": 11,
+      "question": {
+        "mr": "पारशी समाजातील धार्मिक व सामाजिक सुधारणा करण्यासाठी १८५१ मध्ये मुंबईत स्थापन झालेल्या 'रहनुमाई मजदसान सभा' (Rahnumai Mazdayasan Sabha) चे प्रमुख संस्थापक कोण होते?",
+        "en": "Who were the prominent founders of the 'Rahnumai Mazdayasan Sabha' established in Bombay in 1851 for Parsi social and religious reforms?"
+      },
+      "options": [
+        { "mr": "दादाभाई नौरोजी, के. आर. कामा आणि एस. एस. बंगाली", "en": "Dadabhai Naoroji, K.R. Cama, and S.S. Bengali" },
+        { "mr": "फिरोजशाह मेहता आणि दिनशॉ वाच्छा", "en": "Pherozeshah Mehta and Dinshaw Wacha" },
+        { "mr": "बेहरामजी मलबारी आणि जमशेदजी टाटा", "en": "Behramji Malabari and J.N. Tata" },
+        { "mr": "नारायण मेघाजी लोखंडे", "en": "Narayan Meghaji Lokhande" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१८५१): दादाभाई नौरोजी, नौरोजी फर्दुनजी, के. आर. कामा आणि एस. एस. बंगाली यांनी १८५१ मध्ये 'रहनुमाई मजदसान सभा' (पारशी सुधारणा सभा) स्थापन केली. 'रास्त गोफ्तार' (Truth Teller) या मुखपत्राद्वारे त्यांनी पारशी धर्मातील अनिष्ट रूढींवर टीका केली.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1851): Dadabhai Naoroji, K.R. Cama, and S.S. Bengali founded the Rahnumai Mazdayasan Sabha (Parsi Reform Society) in 1851 to uplift the Parsi community and modernize their religious practices through the journal 'Rast Goftar'.\n\n"
+      }
+    },
+    {
+      "id": 12,
+      "question": {
+        "mr": "गोपाळ गणेश आग्रकरांनी १८८८ मध्ये कोणते विचारप्रधान आणि समाजसुधारणेला वाहलेले वृत्तपत्र सुरू केले होते?",
+        "en": "Which reformist newspaper propagating social rationalism and reform was started by Gopal Ganesh Agarkar in 1888?"
+      },
+      "options": [
+        { "mr": "सुधारकता / सुधारक (Sudharak)", "en": "Sudharak" },
+        { "mr": "केसरी", "en": "Kesari" },
+        { "mr": "दीनमित्र", "en": "Deenmitra" },
+        { "mr": "विविधज्ञानविस्तार", "en": "Vivividhgyanvistar" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१८८८): गोपाळ गणेश आग्रकर यांनी 'केसरी' सोडल्यानंतर १८८८ मध्ये स्वतःचे 'सुधारक' हे साप्ताहिक सुरू केले. यातून त्यांनी बुद्धिप्रामाण्यवाद (Rationalism) आणि सामाजिक सुधारणांना प्राधान्य दिले.\n\n[संदर्भ: डॉ. स. शि. गाठाळ / समाधान महाजन]",
+        "en": "(1888): Gopal Ganesh Agarkar started his own reformist weekly 'Sudharak' in 1888 after leaving Kesari, advocating uncompromised social reform and rationalism.\n\n"
+      }
+    },
+    {
+      "id": 13,
+      "question": {
+        "mr": "प्रार्थना समाजाची स्थापना मुंबईत १८६७ मध्ये कोणाच्या प्रेरणेने झाली, ज्यांचे अनुयायी महर्षी विठ्ठल रामजी शिंदे यांनी नंतर 'डप्रेशन क्लासेस मिशन' स्थापले?",
+        "en": "Under whose inspiration was the Prarthana Samaj founded in Bombay in 1867, whose ideals inspired Maharshi V.R. Shinde later?"
+      },
+      "options": [
+        { "mr": "केशवचंद्र सेन (Keshub Chandra Sen)", "en": "Keshub Chandra Sen" },
+        { "mr": "राजा राममोहन रॉय", "en": "Raja Rammohan Roy" },
+        { "mr": "महादेव गोविंद रानडे", "en": "Mahadev Govind Ranade" },
+        { "mr": "बाळशास्त्री जांभेकर", "en": "Balshastri Jambhekar" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१८६७): बंगाली सुधारक केशवचंद्र सेन यांच्या १८६४ च्या मुंबई दौऱ्यानंतर प्रेरणेने ३१ मार्च १८६७ रोजी डॉ. आत्माराम पांडुरंग यांनी 'प्रार्थना समाजाची' स्थापना केली. यात पुढे न्यायमूर्ती रानडे आणि आर. जी. भांडारकर यांनी महत्त्वाची भूमिका बजावली.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / अनिल कटारे]",
+        "en": "(1867): The Prarthana Samaj was founded in Bombay in 1867 largely inspired by the visit of Brahmo leader Keshub Chandra Sen, with Dr. Atmaram Pandurang and M.G. Ranade as key proponents.\n\n"
+      }
+    },
+    {
+      "id": 14,
+      "question": {
+        "mr": "महर्षी धोंडो केशव कर्वे यांनी विधवा स्त्रियांच्या पुनर्वसनासाठी व शिक्षणासाठी पुणे येथे कोणत्या संस्थेची स्थापना केली?",
+        "en": "Which institution was founded by Maharshi Dhondo Keshav Karve in Pune for the education and rehabilitation of widows?"
+      },
+      "options": [
+        { "mr": "अनाथ बालिका आश्र्रम / महिला विद्यालय (Widow Home / Shreemati Nathibhai Damodar Thackersey Women's University)", "en": "Hindu Widow's Home / SNDT Women's University" },
+        { "mr": "सत्यशोधक समाज", "en": "Satyashodhak Samaj" },
+        { "mr": "सेवादस", "en": "Seva Sadan" },
+        { "mr": "आर्य महिला समाज", "en": "Arya Mahila Samaj" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१८९६/१९१६): महर्षी कर्वे यांनी १८९६ मध्ये 'अनाथ बालिका आश्रम' आणि १९१६ मध्ये भारतातील पहिली महिला विद्यापीठ (SNDT) स्थापन केले. त्यांनी स्वतः एक सवर्ण विधवा महिलेशी (गोदूबाई/आनंदीबाई) विवाह करून आदर्श घालून दिला.\n\n[संदर्भ: डॉ. स. शि. गाठाळ]",
+        "en": "(1896/1916): Maharshi D.K. Karve dedicated his life to women's education, founding the Hindu Widow's Home in 1896 and establishing India's first women's university (SNDT) in 1916.\n\n"
+      }
+    },
+    {
+      "id": 15,
+      "question": {
+        "mr": "पांडुरंग हरी उर्फ 'लोकहितवादी' यांनी आपल्या कोणत्या शतकात (शतपत्रे) ब्रिटीश राजवटीचे स्वागत करत भारतीय समाजातील जुनाट रूढींवर कडक कोरडे ओढले?",
+        "en": "In which collection of letters did Gopal Hari Deshmukh ('Lokahitawadi') critique orthodox Indian customs while welcoming British rule?"
+      },
+      "options": [
+        { "mr": "शतपत्रे (Shatpatre - प्रभाकर साप्ताहिकातील)", "en": "Shatpatre (Published in Prabhakar weekly)" },
+        { "mr": "गुलामगिरी", "en": "Gulamgiri" },
+        { "mr": "धर्मविवेचन", "en": "Dharmavivechan" },
+        { "mr": "अमृतानुभव", "en": "Amritanubhav" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१८४० च्या दशकात): भाऊ महाजन यांच्या 'प्रभाकर' साप्ताहिकात 'लोकहितवादी' (गोपाळ हरी देशमुख) यांनी १८४८ ते १८५० दरम्यान 'शतपत्रे' लिहून सामाजिक व धार्मिक सुधारणांचा पुरस्कार केला.\n\n[संदर्भ: समाधान महाजन / स्पेक्ट्रम]",
+        "en": "(1840s): Gopal Hari Deshmukh, writing under the pen name 'Lokahitawadi' in the weekly Prabhakar, published 'Shatpatre' (A Hundred Letters), advocating radical social reforms and rational thought.\n\n"
+      }
+    },
+    {
+      "id": 16,
+      "question": {
+        "mr": "खालील विधाने विचारात घ्या:\nअ) पंडिता रमाबाई यांनी उच्च वर्णिय विधवांच्या उद्धारासाठी पुणे येथे 'शारदा सदन' (१८८९) ची स्थापना केली.\nब) त्यांनी ख्रिश्चन धर्म स्वीकारला होता आणि नंतर 'मुक्ती मिशन' सुरू केले.\nवरीलपैकी कोणते/ती विधान/ने बरोबर आहेत?",
+        "en": "Consider the following statements:\nA) Pandita Ramabai established 'Sharda Sadan' in Pune in 1889 for the upliftment of upper-caste widows.\nB) She converted to Christianity and later founded the 'Mukti Mission'.\nWhich of the above statement(s) is/are correct?"
+      },
+      "options": [
+        { "mr": "फक्त अ", "en": "Only A" },
+        { "mr": "फक्त ब", "en": "Only B" },
+        { "mr": "अ आणि ब दोन्ही", "en": "Both A and B" },
+        { "mr": "दोन्ही नाहीत", "en": "Neither A nor B" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "(१८८९): दोन्ही विधाने बरोबर आहेत. पंडिता रमाबाईंनी बालविवाह व सतीबंदी तसेच विधवांच्या शिक्षणासाठी शारदा सदन सुरू केले, ख्रिश्चन धर्म स्वीकारल्यावर त्यांनी केडगाव (पुणे) येथे 'मुक्ती मिशन' उभारले.\n\n[संदर्भ: डॉ. स. शि. गाठाळ / स्पेक्ट्रम]",
+        "en": "(1889): Both statements are correct. Pandita Ramabai founded Sharda Sadan for child widows in Pune, converted to Christianity during her travels, and later established the Mukti Mission at Kedgaon.\n\n"
+      }
+    },
+    {
+      "id": 17,
+      "question": {
+        "mr": "रामकृष्ण मिशनची स्थापना १८९७ मध्ये स्वामी विवेकानंदांनी कोठे केली?",
+        "en": "Where was the 'Ramakrishna Mission' founded by Swami Vivekananda in 1897?"
+      },
+      "options": [
+        { "mr": "बेलूरमठ, कलकत्ता (Belur Math, Calcutta)", "en": "Belur Math, Calcutta" },
+        { "mr": "शिकागो, अमेरिका", "en": "Chicago, USA" },
+        { "mr": "मद्रास", "en": "Madras" },
+        { "mr": "वाराणसी", "en": "Varanasi" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१८९७): स्वामी विवेकानंदांनी आपले गुरु रामकृष्ण परमहंस यांच्या विचारांच्या प्रचारासाठी आणि समाजसेवेसाठी (दरिद्रनारायण सेवा) १ मे १८९७ रोजी कलकत्त्याजवळ 'बेलूरमठ' येथे रामकृष्ण मिशनची स्थापना केली.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1897): Swami Vivekananda founded the Ramakrishna Mission on May 1, 1897, at Belur Math near Calcutta, to propagate the teachings of Ramakrishna Paramahamsa and engage in social welfare.\n\n"
+      }
+    },
+    {
+      "id": 18,
+      "question": {
+        "mr": "सिख धर्मातील सुधारणांसाठी अमृतसर येथे १९२० मध्ये 'अकाली दल' आणि कोणत्या सभेची स्थापना केली गेली जी गुरुद्वार सुधारणेशी संबंधित होती?",
+        "en": "Which committee/sabha was established in 1920 along with the Akali Dal for the reform and liberation of Sikh gurdwaras?"
+      },
+      "options": [
+        { "mr": "शिरोमणी गुरुद्वारा प्रबंधक समिती (SGPC)", "en": "Shiromani Gurdwara Parbandhak Committee (SGPC)" },
+        { "mr": "सिंह सभा अमृतसर", "en": "Singh Sabha Amritsar" },
+        { "mr": "खालसा कॉलेज कमिटी", "en": "Khalsa College Committee" },
+        { "mr": "निहंग सेना", "en": "Nihang Sena" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९२०): शिखांच्या गुरुद्वारामधील मंहतांचे भ्रष्ट आचरण संपवण्यासाठी आणि गुरुद्वारांच्या व्यवस्थापनासाठी १९२० मध्ये 'शिरोमणी गुरुद्वारा प्रबंधक समिती' (SGPC) आणि 'अकाली दल' ची स्थापना झाली.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1920): The Shiromani Gurdwara Parbandhak Committee (SGPC) and the Akali Dal were established in 1920 to liberate Sikh gurdwaras from corrupt mahants and reform religious institutions.\n\n"
+      }
+    },
+    {
+      "id": 19,
+      "question": {
+        "mr": "खालीलपैकी कोणत्या समाजसुधारकाने 'सतप्रदीप' आणि 'सत्यार्थ प्रकाश' (Satyarth Prakash) या प्रसिद्ध ग्रंथांची रचना केली?",
+        "en": "Which social reformer authored the famous book 'Satyarth Prakash'?"
+      },
+      "options": [
+        { "mr": "स्वामी दयानंद सरस्वती (Swami Dayanand Saraswati)", "en": "Swami Dayanand Saraswati" },
+        { "mr": "स्वामी विवेकानंद", "en": "Swami Vivekananda" },
+        { "mr": "राजा राममोहन रॉय", "en": "Raja Rammohan Roy" },
+        { "mr": "केशवचंद्र सेन", "en": "Keshub Chandra Sen" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१८७५): स्वामी दयानंद सरस्वती यांनी हिंदी भाषेत 'सत्यार्थ प्रकाश' (Satyarth Prakash) हा आर्य समाजाचा पाया असलेला अत्यंत महत्त्वाचा ग्रंथ लिहिला, ज्यात वैदिक धर्माचा जयघोष व इतर पंथांवर वैचारिक टीका केली आहे.\n\n[संदर्भ: डॉ. स. शि. गाठाळ / स्पेक्ट्रम]",
+        "en": "(1875): Swami Dayanand Saraswati authored 'Satyarth Prakash' (The Light of Truth) in 1875, which outlines the core philosophical and social tenets of the Arya Samaj.\n\n"
+      }
+    },
+    {
+      "id": 20,
+      "question": {
+        "mr": "खालील विधाने विचारात घ्या:\nअ) सत्यशोधक समाजाने पुरोहितांच्या मध्यस्थीशिवाय विवाह लावण्याची (सत्यशोधक पद्धत) पद्धत सुरू केली.\nब) या समाजाने ब्राम्हणी धर्मग्रंथांचे व पुरोहितशाहीचे उच्चाटन करण्याचा पुरस्कार केला.\nवरीलपैकी कोणते/ती विधान/ने बरोबर आहेत?",
+        "en": "Consider the following statements:\nA) The Satyashodhak Samaj introduced marriage ceremonies without the mediation of Brahmin priests (Satyshodhak marriage system).\nB) It advocated the rejection of Brahminical scriptures and priestly dominance.\nWhich of the above statement(s) is/are correct?"
+      },
+      "options": [
+        { "mr": "फक्त अ", "en": "Only A" },
+        { "mr": "फक्त ब", "en": "Only B" },
+        { "mr": "अ आणि ब दोन्ही", "en": "Both A and B" },
+        { "mr": "दोन्ही नाहीत", "en": "Neither A nor B" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "(१८७३ नंतर): दोन्ही विधाने बरोबर आहेत. महात्मा फुलेंच्या सत्यशोधक समाजाने पुरोहितांशिवाय (ब्राह्मणांशिवाय) सत्यशोधक विवाह पद्धत सुरू केली आणि धार्मिक कर्मकांडांचे उच्चाटन करण्याची भूमिका घेतली.\n\n[संदर्भ: समाधान महाजन / डॉ. स. शि. गाठाळ]",
+        "en": "(Post-1873): Both statements are correct. The Satyashodhak Samaj challenged priestly dominance and instituted simple marriage rituals without Brahmin priests.\n\n"
+      }
+    },
+    {
+      "id": 21,
+      "question": {
+        "mr": "भारतात ब्रिटीश काळात 'देवदासी पद्धत' व बालविवाहाविरुद्ध आवाज उठवणारे आणि समाजसुधारणेसाठी झटणारे 'रामकृष्ण बाळकृष्ण जयकर' किंवा इतर सुधारक कोणत्या प्रांतात कार्यरत होते?",
+        "en": "In which region were reformers who campaigned against social evils like child marriage and the Devadasi system primarily active?"
+      },
+      "options": [
+        { "mr": "बॉम्बे व मद्रास प्रेसिडेन्सी (Bombay and Madras Presidencies)", "en": "Bombay and Madras Presidencies" },
+        { "mr": "पंजाब व सिंध", "en": "Punjab and Sindh" },
+        { "mr": "बंगाल व आसाम", "en": "Bengal and Assam" },
+        { "mr": "राजपुताना", "en": "Rajputana" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९ वे शतक): महाराष्ट्रात आणि दक्षिण भारतात (बॉम्बे व मद्रास प्रेसिडेन्सी) बाळशास्त्री जांभेकर, आगरकर, फुले, रानाडे यांच्यासह दक्षिण भारतातील सुधारकांनी देवदासी व बालविवाहाविरुद्ध कायदेशीर व सामाजिक लढा दिला.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(19th Century): Reformers across the Bombay and Madras Presidencies campaigned extensively against social evils such as child marriage and the Devadasi custom.\n\n"
+      }
+    },
+    {
+      "id": 22,
+      "question": {
+        "mr": "भारतात आधुनिक महिला शिक्षणाचा पाया रोवणाऱ्या 'सावित्रीबाई फुले' यांनी ज्योतिराव फुले यांच्यासह पुण्यात मुलींची पहिली शाळा कधी सुरू केली?",
+        "en": "When did Savitribai Phule, along with Jyotirao Phule, start the first school for girls in Pune, laying the foundation of modern women's education in India?"
+      },
+      "options": [
+        { "mr": "१ जानेवारी १८४८ (1 January 1848 - भिडे वाडा)", "en": "1 January 1848 (Bhide Wada)" },
+        { "mr": "२४ सप्टेंबर १८७३", "en": "24 September 1873" },
+        { "mr": "५ नोव्हेंबर १८५२", "en": "5 November 1852" },
+        { "mr": "१ ऑगस्ट १८९०", "en": "1 August 1890" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१८४८): १ जानेवारी १८४८ रोजी पुणे येथील 'भिडे वाड्यात' महात्मा ज्योतिराव फुले आणि सावित्रीबाई फुले यांनी बहुजन मुलींची पहिली शाळा सुरू केली. सावित्रीबाई या देशाच्या पहिल्या महिला शिक्षिका ठरल्या.\n\n[संदर्भ: डॉ. स. शि. गाठाळ / समाधान महाजन]",
+        "en": "(1848): On January 1, 1848, Jyotirao Phule and Savitribai Phule opened the first school for girls at Bhide Wada in Pune, with Savitribai serving as India's first female teacher.\n\n"
+      }
+    },
+    {
+      "id": 23,
+      "question": {
+        "mr": "खालील विधाने विचारात घ्या:\nअ) राजा राममोहन रॉय यांना 'भारतीय प्रबोधनाचे जनक' (Father of Indian Renaissance) म्हटले जाते.\nब) त्यांनी सती प्रथेविरुद्ध तीव्र आवाज उठवून १८२९ मध्ये ती बंद करण्यास साहाय्य केले.\nवरीलपैकी कोणते/ती विधान/ने बरोबर आहेत?",
+        "en": "Consider the following statements:\nA) Raja Rammohan Roy is called the 'Father of Indian Renaissance'.\nB) He raised a strong voice against the practice of Sati, helping abolish it in 1829.\nWhich of the above statement(s) is/are correct?"
+      },
+      "options": [
+        { "mr": "फक्त अ", "en": "Only A" },
+        { "mr": "फक्त ब", "en": "Only B" },
+        { "mr": "अ आणि ब दोन्ही", "en": "Both A and B" },
+        { "mr": "दोन्ही नाहीत", "en": "Neither A nor B" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "(१८२९): दोन्ही विधाने अगदी बरोबर आहेत. राजा राममोहन रॉय यांना भारतीय प्रबोधनाचे जनक मानले जाते. त्यांनी सती प्रथेच्या विरोधात सातत्याने मोहीम राबवली आणि बेंटिककडून १८२९ मध्ये कायदा करून घेतला.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / एम. लक्ष्मीकांत]",
+        "en": "(1829): Both statements are correct. Raja Rammohan Roy is hailed as the Father of Indian Renaissance for his crusading efforts against social evils like Sati, leading to its ban in 1829.\n\n"
+      }
+    },
+    {
+      "id": 24,
+      "question": {
+        "mr": "ब्रिटीश भारतातील समाजसुधारकांनी 'बालविवाह' आणि 'सहमती वय कायद्याला' (Age of Consent Act 1891) पाठिंबा दिला होता, तर या कायद्याला कडाडून विरोध कोणी केला होता?",
+        "en": "While social reformers supported the Age of Consent Act 1891, who among the following vehemently opposed it on grounds of religious interference?"
+      },
+      "options": [
+        { "mr": "लोकमान्य बाळ गंगाधर टिळक (Lokmanya Bal Gangadhar Tilak)", "en": "Lokmanya Bal Gangadhar Tilak" },
+        { "mr": "गोपाळ गणेश आग्रकर", "en": "Gopal Ganesh Agarkar" },
+        { "mr": "महर्षी कर्वे", "en": "Maharshi Karve" },
+        { "mr": "न्यायमूर्ती रानडे", "en": "Justice M.G. Ranade" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१८९१): बेहरामजी मलबारी यांच्या प्रयत्नांमुळे १८९१ चा संमती वय कायदा आला (विवाह वयाची मर्यादा १० वरून १२ वर्षे). आग्रकरांनी याला पाठिंबा दिला, परंतु लोकमान्य टिळकांनी 'हा इंग्रजांचा आपल्या धर्मातील हस्तक्षेप आहे' असे मानत या कायद्यास कडाडून विरोध केला होता.\n\n[संदर्भ: डॉ. स. शि. गाठाळ / स्पेक्ट्रम]",
+        "en": "(1891): While reformers like Agarkar supported the Age of Consent Act (raising age of consent to 12), Lokmanya Tilak opposed it, viewing it as unwarranted British interference in Hindu religious customs.\n\n"
+      }
+    },
+    {
+      "id": 25,
+      "question": {
+        "mr": "थियोसॉफिकल सोसायटीच्या (Theosophical Society) प्रचारात भारतात सर्वात मोठी भूमिका बजावणाऱ्या आणि 'होम रूल लीग' च्या स्थापनेत पुढे नेतृत्व करणाऱ्या महिला सुधारक कोण होत्या?",
+        "en": "Which prominent female reformer played the leading role in popularizing the Theosophical Society in India and later founded the Home Rule League?"
+      },
+      "options": [
+        { "mr": "ॲनी बेझंट (Annie Besant)", "en": "Annie Besant" },
+        { "mr": "सरोजिनी नायडू", "en": "Sarojini Naidu" },
+        { "mr": "मॅडम ब्लाव्हॅट्सकी", "en": "Madame Blavatsky" },
+        { "mr": "भगिनी निवेदिता", "en": "Sister Nivedita" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९०७): म्याडम ब्लाव्हॅट्सकी व ऑल्कॉट यांनी स्थापन केलेल्या थियोसॉफिकल सोसायटीचे काम डॉ. ॲनी बेझंट यांनी भारतात (विशेषतः अड्यार येथे) प्रचंड वाढवले. त्यांनी हिंदू धर्मातील तत्त्वज्ञानाचा गौरव करत भारताच्या राजकीय व सामाजिक विकासात मोठा सहभाग घेतला.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1907): Dr. Annie Besant played the pivotal role in spreading the Theosophical Society across India, making Adyar its global headquarters, and later leading the Home Rule movement.\n\n"
+      }
+    }
+  ]
+}

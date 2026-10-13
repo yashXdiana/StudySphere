@@ -1,0 +1,463 @@
+{
+  "testId": "p-hist-09-t2",
+  "title": {
+    "mr": "महाराष्ट्राचा इतिहास (१८५७ चा उठाव व समाजसुधारणा पर्व) — सराव 2",
+    "en": "History of Maharashtra (1857 Revolt & Early Social Reforms) — Practice Test 2"
+  },
+  "durationMinutes": 20,
+  "marksPerQuestion": 1,
+  "negativeMarking": 0.25,
+  "totalMarks": 25,
+  "difficulty": "मध्यम ते काठिण्य",
+  "questions": [
+    {
+      "id": 1,
+      "question": {
+        "mr": "१८५७ च्या उठावाच्या काळात मुंबई प्रांतात (Bombay Presidency) गुप्तपणे क्रांतीचा प्रसार करण्यासाठी आणि पेटवणाऱ्या उठावात सहभाग घेण्यासाठी कोणाचे प्रमुख नेटवर्क कार्यरत होते?",
+        "en": "Who were the key figures leading underground nationalist propaganda and planning during the 1857 revolt in the Bombay Presidency region?"
+      },
+      "options": [
+        { "mr": "रंगो बापूजी गुप्ते (सातारा) आणि पेटकर बंधू (नागपूर/सतारा)", "en": "Rango Bapuji Gupte and the Petkar brothers" },
+        { "mr": "वासुदेव बळवंत फडके", "en": "Vasudev Balwant Phadke" },
+        { "mr": "महात्मा फुले", "en": "Mahatma Phule" },
+        { "mr": "लोकमन्य टिळक", "en": "Lokmanya Tilak" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१८५७): सातारा संस्थानाचे राजे प्रतापसिंह यांचे वकील रंगो बापूजी गुप्ते यांनी १८५७ च्या उठावात सातारा आणि मुंबई परिसरात भारतीय सैनिकांना (सैनिक छावण्यांना) ब्रिटिशविरुद्ध बंड पुकारण्यासाठी गुप्तपणे एकत्र आणण्याचे प्रयत्न केले होते.\n\n[संदर्भ: आधुनिक महाराष्ट्राचा इतिहास - डॉ. स. शि. गाठाळ / य. दि. फडके]",
+        "en": "(1857): Rango Bapuji Gupte, emissary of Satara, actively networked with sepoys in the Bombay army cantonments to orchestrate a coordinated uprising during 1857.\n\n"
+      }
+    },
+    {
+      "id": 2,
+      "question": {
+        "mr": "महाराष्ट्रात १८५७ च्या उठावादरम्यान 'नागपूर' भागात कोणाच्या नेतृत्वाखाली सैनिकांनी आणि राजाच्या वंशजांनी इंग्रजांविरुद्ध बंड पुकारले होते?",
+        "en": "Who led the 1857 uprising and anti-British conspiracy in the Nagpur region (Vidarbha) on behalf of the Bhonsle dynasty?"
+      },
+      "options": [
+        { "mr": "अप्पासाहेब भोसले आणि त्यांचे सेनापती चिमणकर / बकाबाईंचे कारस्थान", "en": "Appasaheb Bhonsle and Chimankar" },
+        { "mr": "तात्या टोपे", "en": "Tatya Tope" },
+        { "mr": "नानासाहेब पेशवे", "en": "Nanasaheb Peshwa" },
+        { "mr": "उमाजी नाईक", "en": "Umaji Naik" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१८५७): नागपूरच्या भोसले राजघराण्यातील अप्पासाहेब भोसले यांचे समर्थक आणि सेनापती यांनी १८५७ च्या उठावात इंग्रजांविरुद्ध बंडखोरी केली, परंतु ब्रिटिशांनी ती त्वरित मोडून काढली.\n\n[संदर्भ: आधुनिक महाराष्ट्राचा इतिहास - डॉ. स. शि. गाठाळ]",
+        "en": "(1857): Supporters of the Bhonsle dynasty attempted a rising in Nagpur during 1857, which was swiftly suppressed by colonial forces under Sir Richard Temple.\n\n"
+      }
+    },
+    {
+      "id": 3,
+      "question": {
+        "mr": "महाराष्ट्रात सामाजिक व धार्मिक प्रबोधनाची पायाभरणी करणारे 'आधुनिक महाराष्ट्राचे आद्य समाजसुधारक' म्हणून कोणाला ओळखले जाते?",
+        "en": "Who is revered as the pioneer of social reform and modern awakening in Maharashtra?"
+      },
+      "options": [
+        { "mr": "बाळशास्त्री जांभेकर (Balshastri Jambhekar)", "en": "Balshastri Jambhekar" },
+        { "mr": "महात्मा ज्योतिराव फुले", "en": "Mahatma Jyotirao Phule" },
+        { "mr": "गोपाळ हरी देशमुक (लोकहितवादी)", "en": "Gopal Hari Deshmukh (Lokhitwadi)" },
+        { "mr": "जगन्नाथ शंकरशेत", "en": "Jagannath Shankarshet" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९ वे शतक): बाळशास्त्री जांभेकर यांनी ६ जानेवारी १८३२ रोजी मुंबईतून 'दर्पण' हे पहिले मराठी वृत्तपत्र सुरू केले. त्यांना महाराष्ट्रातील आद्य समाजसुधारक व वृत्तपत्रसृष्टीचे जनक मानले जाते.\n\n[संदर्भ: आधुनिक महाराष्ट्राचा इतिहास - डॉ. स. शि. गाठाळ / नरसिंह चिंतामण केळकर]",
+        "en": "(19th Century): Balshastri Jambhekar launched 'Darpan' in 1832, pioneering Marathi journalism and socio-educational awakening, earning him the title of pioneer reformer.\n\n"
+      }
+    },
+    {
+      "id": 4,
+      "question": {
+        "mr": "बाळशास्त्री जांभेकर यांनी ६ जानेवारी १८३२ रोजी सुरू केलेल्या 'दर्पण' (Darpan) या वृत्तपत्राचे स्वरूप कसे होते?",
+        "en": "What was the bilingual format and objective of the 'Darpan' newspaper launched by Balshastri Jambhekar in 1832?"
+      },
+      "options": [
+        { "mr": "मराठी आणि इंग्रजी दोन्ही भाषांमध्ये (Bilingual - Marathi and English)", "en": "Bilingual in Marathi and English columns" },
+        { "mr": "फक्त संस्कृत भाषेत", "en": "Exclusively in Sanskrit" },
+        { "mr": "फक्त हिंदी भाषेत", "en": "Exclusively in Hindi" },
+        { "mr": "फक्त पर्शियन भाषेत", "en": "Exclusively in Persian" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१८३२): 'दर्पण' हे वृत्तपत्र मराठी आणि इंग्रजी अशा दोन्ही भाषांमध्ये प्रसिद्ध होत असे. याद्वारे लोकशिक्षण, विज्ञाननिष्ठा आणि सामाजिक सुधारणांचा प्रसार करणे हा बाळशास्त्र्यांचा हेतू होता.\n\n"
+      }
+    },
+    {
+      "id": 5,
+      "question": {
+        "mr": "गोपाळ हरी देशमुख यांनी 'प्रभाकर' वृत्तपत्रातून 'शतपत्रे' लिहून सामाजिक व धार्मिक सुधारणांचा जोरदार पुरस्कार केला, त्यांना कोणते टोपणनाव मिळाले होते?",
+        "en": "Under what pen name did Gopal Hari Deshmukh write the famous 'Shatpatre' (Hundred Letters) in the 'Prabhakar' weekly?"
+      },
+      "options": [
+        { "mr": "लोकहितवादी (Lokhitwadi)", "en": "Lokhitwadi" },
+        { "mr": "दर्पणकार", "en": "Darpankar" },
+        { "mr": "राष्ट्रसंत", "en": "Rashtrasant" },
+        { "mr": "विश्रामनाथ", "en": "Vishramnath" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१८४० च्या दशकात): गोपाळ हरी देशमुख यांनी 'प्रभाकर' मधून 'लोकहितवादी' या टोपणनावाने शतपत्रे लिहून जुन्या रूढी-परंपरा, चातुर्वर्ण्य आणि जातीसंस्थेवर कठोर प्रहार केला.\n\n[संदर्भ: आधुनिक महाराष्ट्राचा इतिहास - डॉ. स. शि. गाठाळ / य. दि. फडके]",
+        "en": "(1840s): Gopal Hari Deshmukh wrote critical essays on social reform under the pen name 'Lokhitwadi' in the weekly 'Prabhakar', urging Indians to discard blind faith.\n\n"
+      }
+    },
+    {
+      "id": 6,
+      "question": {
+        "mr": "महाराष्ट्रात १८४८ मध्ये 'पुणे येथे तात्यासाहेब भिडे यांच्या वाड्यात' मुलींची पहिली शाळा सुरू करणारे क्रांतिकारक सामाजिक दम्पती कोणते?",
+        "en": "Which legendary social reformer couple established India's first school for girls in Pune at Bhide Wada in 1848?"
+      },
+      "options": [
+        { "mr": "महात्मा ज्योतिराव फुले आणि क्रांतीज्योती सावित्रीबाई फुले", "en": "Mahatma Jyotirao Phule and Savitribai Phule" },
+        { "mr": "गोपाल गणेश आग्रकर आणि पत्नी", "en": "G.G. Agarkar and his wife" },
+        { "mr": "महर्षी विठ्ठल रामजी शिंदे आणि पत्नी", "en": "Maharshi V.R. Shinde and his wife" },
+        { "mr": "राजर्षी शाहू महाराज आणि लक्ष्मीबाई", "en": "Rajarshi Shahu Maharaj and wife" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१८४८): १ जानेवारी १८४८ रोजी महात्मा ज्योतिराव फुले आणि सावित्रीबाई फुले यांनी पुण्याच्या बुधवार पेठेतील भिडे वाड्यात मुलींची पहिली शाळा सुरू करून स्त्रीशिक्षणाचा पाया रचला. सावित्रीबाई फुले या देशाच्या पहिल्या महिला शिक्षिका ठरल्या.\n\n[संदर्भ: आधुनिक महाराष्ट्राचा इतिहास - डॉ. स. शि. गाठाळ / धनंजय कीर]",
+        "en": "(1848): Mahatma Jyotirao Phule and Savitribai Phule founded the historic school for girls at Bhide Wada in Pune, with Savitribai serving as India's first female teacher.\n\n"
+      }
+    },
+    {
+      "id": 7,
+      "question": {
+        "mr": "महात्मा ज्योतिराव फुले यांनी २४ सप्टेंबर १८८८ रोजी कोणत्या क्रांतिकारी संस्थेची स्थापना केली, ज्याचा मुख्य उद्देश शूद्र व अतिशूद्रांना अधिकार मिळवून देणे हा होता?",
+        "en": "Which path-breaking organization was founded by Mahatma Jyotirao Phule on September 24, 1873, to emancipate the Bahujan and Shudra-Atishudras?"
+      },
+      "options": [
+        { "mr": "सत्यशोधक समाज (Satyashodhak Samaj)", "en": "Satyashodhak Samaj" },
+        { "mr": "प्रार्थना समाज", "en": "Prarthana Samaj" },
+        { "mr": "आर्य समाज", "en": "Arya Samaj" },
+        { "mr": "परमहंस सभा", "en": "Paramahamsa Mandali" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१८७३): २४ सप्टेंबर १८७३ रोजी ज्योतिराव फुले यांनी 'सत्यशोधक समाजाची' स्थापना केली. 'सर्वसाक्षी जगत्पती, त्याला नको मध्यस्थी' हे सत्यशोधक समाजाचे मुख्य सूत्र होते.\n\n[संदर्भ: आधुनिक महाराष्ट्राचा इतिहास - डॉ. स. शि. गाठाळ / धनंजय कीर]",
+        "en": "(1873): Mahatma Phule founded the Satyashodhak Samaj (Society of Seekers of Truth) on September 24, 1873, challenging priestly monopoly and ritualistic exploitation.\n\n"
+      }
+    },
+    {
+      "id": 8,
+      "question": {
+        "mr": "महात्मा ज्योतिराव फुले यांनी १८७३ मध्ये लिहिलेल्या कोणत्या ग्रंथामध्ये ब्राह्मणशाहीच्या शोषणावर आणि शेतकऱ्यांच्या दुःस्थितीवर सखोल भाष्य केले आहे?",
+        "en": "In which famous book did Mahatma Phule critique religious exploitation and the plight of the peasantry in 1873?"
+      },
+      "options": [
+        { "mr": "गुलामगिरी (Gulamgiri)", "en": "Gulamgiri" },
+        { "mr": "शेतकऱ्याचा आसूड", "en": "Shetkaryacha Asud" },
+        { "mr": "सार्वजनिक सत्यधर्म", "en": "Sarvajanik Satyadharma" },
+        { "mr": "इशारा", "en": "Ishara" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१८७३): महात्मा फुले यांनी १८७३ मध्ये 'गुलामगिरी' हा ग्रंथ लिहिला आणि तो अमेरिकेत कृष्णवर्णीयांच्या मुक्तीसाठी झटणाऱ्या लोकांना समर्पित केला. तसेच पुढे 'शेतकऱ्याचा आसूड' (१८८३) मध्ये शेतकऱ्यांच्या शोषणाचे वास्तव मांडले.\n\n[संदर्भ: आधुनिक महाराष्ट्राचा इतिहास - डॉ. स. शि. गाठाळ]",
+        "en": "(1873): Phule published 'Gulamgiri' in 1873, dedicating it to American abolitionists fighting against racial slavery, drawing parallels with caste oppression in India.\n\n"
+      }
+    },
+    {
+      "id": 9,
+      "question": {
+        "mr": "मुंबईत ३१ मार्च १८६७ रोजी प्रार्थना समाजाची (Prarthana Samaj) स्थापना करण्यात कोणाचे प्रमुख योगदान होते, ज्यांना महाराष्ट्रात धार्मिक सुधारणावादी चळवळीचे नेते मानले जाते?",
+        "en": "Who were the leading founders of the Prarthana Samaj established in Bombay on March 31, 1867?"
+      },
+      "options": [
+        { "mr": "डाॅ. आत्माराम पांडुरंग तर्खडकर, न्यायमूर्ती रानडे आणि बांडाोरकर", "en": "Dr. Atmaram Pandurang Tarkhadkar, Justice M.G. Ranade, and R.G. Bhandarkar" },
+        { "mr": "महात्मा फुले व सावित्रीबाई फुले", "en": "Mahatma and Savitribai Phule" },
+        { "mr": "लोकमन्य टिळक व आग्रकर", "en": "Tilak and Agarkar" },
+        { "mr": "गोपाळ कृष्ण गोखले व गांधीजी", "en": "Gokhale and Gandhi" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१८६७): ३१ मार्च १८६७ रोजी डॉ. आत्माराम पांडुरंग तर्खडकर यांनी मुंबईत 'प्रार्थना समाजाची' स्थापना केली. पुढे न्यायमूर्ती महादेव गोविंद रानडे, भांडारकर आणि चंदावरकर यांनी या समाजाच्या माध्यमातून एकेश्वरवाद, विधवा विवाह व स्त्रीशिक्षणाचा प्रसार केला.\n\n[संदर्भ: आधुनिक महाराष्ट्राचा इतिहास - डॉ. स. शि. गाठाळ / य. दि. फडके]",
+        "en": "(1867): Dr. Atmaram Pandurang founded the Prarthana Samaj in Bombay in 1867, later championed by Justice M.G. Ranade and R.G. Bhandarkar, promoting monotheism and social reform.\n\n"
+      }
+    },
+    {
+      "id": 10,
+      "question": {
+        "mr": "न्यायमूर्ती महादेव गोविंद रानडे यांनी १८७० मध्ये पुण्यात कोणती महत्त्वाची संस्था स्थापन केली, जिने आर्थिक व सामाजिक प्रश्नांवर अभ्यासपूर्ण लोकमत तयार केले?",
+        "en": "Which influential socio-political public body was founded by Justice M.G. Ranade in Pune in 1870?"
+      },
+      "options": [
+        { "mr": "पुणे सार्वजनिक सभा (Poona Sarvajanik Sabha)", "en": "Poona Sarvajanik Sabha" },
+        { "mr": "बॉम्बे असोसिएशन", "en": "Bombay Association" },
+        { "mr": "डेक्कन एज्युकेशन सोसायटी", "en": "Deccan Education Society" },
+        { "mr": "सर्व्हेंट्स ऑफ इंडिया सोसायटी", "en": "Servants of India Society" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१८७०): न्यायमूर्ती म. गो. रानडे, सार्वजनिक काका (गणेश वासुदेव जोशी) आणि इतर मंडळींनी २ एप्रिल १८७० रोजी 'पुणे सार्वजनिक सभा' स्थापन केली, जिने दुष्काळात शेतकऱ्यांना न्याय मिळवून देणे आणि राजकीय प्रबोधन करण्यात मोलाची कामगिरी बजावली.\n\n[संदर्भ: आधुनिक महाराष्ट्राचा इतिहास - डॉ. स. शि. गाठाळ]",
+        "en": "(1870): Justice M.G. Ranade and G.V. Joshi founded the Poona Sarvajanik Sabha in 1870 to articulate public grievances and advocate for agrarian and administrative reforms.\n\n"
+      }
+    },
+    {
+      "id": 11,
+      "question": {
+        "mr": "न्यायमूर्ती म. गो. रानडे यांनी सामाजिक सुधारणांच्या प्रचारासाठी १८८७ मध्ये कोणत्या राष्ट्रीय संस्थेची स्थापना केली होती?",
+        "en": "Which all-India reform body was founded by Justice M.G. Ranade in 1887 to campaign against social evils like child marriage and caste rigidity?"
+      },
+      "options": [
+        { "mr": "भारतीय राष्ट्रीय सामाजिक परिषद (Indian National Social Conference)", "en": "Indian National Social Conference" },
+        { "mr": "सत्यशोधक समाज", "en": "Satyashodhak Samaj" },
+        { "mr": "सेवा सदन", "en": "Seva Sadan" },
+        { "mr": "भारत सेवक समाज", "en": "Servants of India Society" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१८८७): काँग्रेसच्या अधिवेशनासोबतच सामाजिक सुधारणांवर भर देण्यासाठी न्यायमूर्ती रानडे यांनी १८८७ मध्ये 'भारतीय राष्ट्रीय सामाजिक परिषदेची' (Indian National Social Conference) स्थापना केली, जिचे पहिले अधिवेशन मद्रास येथे झाले.\n\n[संदर्भ: आधुनिक महाराष्ट्राचा इतिहास - डॉ. स. शि. गाठाळ]",
+        "en": "(1887): Justice Ranade founded the Indian National Social Conference in 1887, meeting annually alongside the INC to deliberate on social reforms such as widow remarriage.\n\n"
+      }
+    },
+    {
+      "id": 12,
+      "question": {
+        "mr": "महाराष्ट्रात १८८० मध्ये पुण्यात 'न्यू इंग्लिश स्कूल' आणि १८८४ मध्ये 'फर्ग्युसन कॉलेज' स्थापन करण्यात कोणत्या शिक्षणप्रेमी नेत्यांचा सहभाग होता?",
+        "en": "Which nationalist educators founded the New English School (1880) and Fergusson College (1884) in Pune?"
+      },
+      "options": [
+        { "mr": "विष्णू शास्त्री चिपळूणकर, बाळ गंगाधर टिळक आणि गोपाळ गणेश आग्रकर", "en": "Vishnushastri Chiplunkar, Bal Gangadhar Tilak, and G.G. Agarkar" },
+        { "mr": "महात्मा फुले आणि शाहू महाराज", "en": "Mahatma Phule and Shahu Maharaj" },
+        { "mr": "न्यायमूर्ती रानडे आणि गोखले", "en": "Ranade and Gokhale" },
+        { "mr": "दादाभाई नौरोजी आणि फिरोजशाह मेहता", "en": "Dadabhai Naoroji and Mehta" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१८८०-१८८४): विष्णू शास्त्री चिपळूणकर, लोकमान्य टिळक, गोपाळ गणेश आग्रकर आणि म. गो. नामजोशी यांनी स्वदेशी व राष्ट्रीय शिक्षणाचा प्रसार करण्यासाठी १८८० मध्ये न्यू इंग्लिश स्कूल, १८८४ मध्ये फर्ग्युसन कॉलेज आणि 'डेक्कन एज्युकेशन सोसायटी'ची स्थापना केली.\n\n[संदर्भ: आधुनिक महाराष्ट्राचा इतिहास - डॉ. स. शि. गाठाळ / समाधान महाजन]",
+        "en": "(1880-1884): Chiplunkar, Tilak, and Agarkar established the Deccan Education Society, founding the New English School and Fergusson College to impart nationalist education.\n\n"
+      }
+    },
+    {
+      "id": 13,
+      "question": {
+        "mr": "गोपाळ गणेश आग्रकर यांनी १८८८ मध्ये 'सुधारकांनी' (Sudharak) वृत्तपत्राची स्थापना केली, तेव्हा त्यांचे मुख्य सूत्र किंवा विचार काय होते?",
+        "en": "What was the core social philosophy and slogan of Gopal Ganesh Agarkar's reformist newspaper 'Sudharak' (founded in 1888)?"
+      },
+      "options": [
+        { "mr": "आधी सुधारणा मग स्वातंत्र्य / बुद्धीप्रामाण्यवाद आणि सामाजिक सुधारणांना प्राधान्य", "en": "Reform before independence; rationalism and priority to social reform over political agitation" },
+        { "mr": "राजकारण पहिले आणि समाजसुधारणा नंतर", "en": "Politics first, social reform later" },
+        { "mr": "फक्त धार्मिक कर्मधर्मसंयोग पाळणे", "en": "Strict adherence to rituals" },
+        { "mr": "इंग्रजी राजवटीचे अंध समर्थन", "en": "Blind support for British rule" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१८८८): आग्रकर हे बुद्धिप्रामाण्यवादाचे (Rationalism) पुरस्कर्ते होते. 'आधी सामाजिक सुधारणा मग राजकीय स्वातंत्र्य' या मतावर आग्रकर खंबीर होते. त्यांनी 'केसरी'चे संपादकपद सोडल्यावर स्वतःचे 'सुधारक' वृत्तपत्र सुरू केले.\n\n[संदर्भ: आधुनिक महाराष्ट्राचा इतिहास - डॉ. स. शि. गाठाळ / य. दि. फडके]",
+        "en": "(1888): Agarkar fiercely championed rationalism and individual liberty, arguing that social evils must be eradicated before political freedom ('Reform before Independence').\n\n"
+      }
+    },
+    {
+      "id": 14,
+      "question": {
+        "mr": "लोकमान्य टिळक आणि गोपाळ गणेश आग्रकर यांनी १८८१ मध्ये कोणती दोन गाजलेली वृत्तपत्रे सुरू केली होती?",
+        "en": "Which two influential newspapers were launched by Tilak and Agarkar in 1881 to spearhead nationalist journalism in Maharashtra?"
+      },
+      "options": [
+        { "mr": "केसरी (मराठी) आणि मराठा (इंग्रजी)", "en": "Kesari (Marathi) and Mahratta (English)" },
+        { "mr": "दर्पण आणि प्रभाकर", "en": "Darpan and Prabhakar" },
+        { "mr": "दीनबंधु आणि सुधारक", "en": "Deenbandhu and Sudharak" },
+        { "mr": "काळ आणि वृत्तपत्र", "en": "Kaal and Vritta" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१८८१): जानेवारी १८८१ मध्ये टिळक व आग्रकरांनी मराठा (इंग्रजी) आणि केसरी (मराठी) वृत्तपत्रे सुरू केली. केसरीचे पहिले संपादक आग्रकर होते तर मराठाचे संपादक टिळक होते.\n\n[संदर्भ: आधुनिक महाराष्ट्राचा इतिहास - डॉ. स. शि. गाठाळ]",
+        "en": "(1881): Tilak and Agarkar launched the English weekly 'Mahratta' and Marathi weekly 'Kesari' in January 1881, which became formidable mouthpieces of nationalist awakening.\n\n"
+      }
+    },
+    {
+      "id": 15,
+      "question": {
+        "mr": "सत्यशोधक समाजाच्या वतीने महात्मा फुले यांच्या विचारांचा प्रसार करण्यासाठी १८७७ मध्ये पुणे येथे कोणते साप्ताहिक सुरू केले गेले, ज्याचे पहिले संपादक कृष्णराव भालेकर होते?",
+        "en": "Which prominent newspaper was founded in Pune in 1877 under the auspices of the Satyashodhak Samaj to champion Bahujan rights?"
+      },
+      "options": [
+        { "mr": "दीनबंधु (Deenbandhu)", "en": "Deenbandhu" },
+        { "mr": "प्रभाकर", "en": "Prabhakar" },
+        { "mr": "ज्ञानादय", "en": "Dnyanoday" },
+        { "mr": "विविधज्ञानविस्तार", "en": "Vividh Gyan Vistar" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१८७७): महात्मा फुले यांच्या सत्यशोधक समाजाच्या विचारांचा व बहुजनांच्या हक्कांचा प्रसार करण्यासाठी जानेवारी १८७७ मध्ये 'दीनबंधू' वृत्तपत्र सुरू झाले. कृष्णराव भालेकर आणि नंतर नारायण मेघाजी लोखंडे यांनी याचे संपादक म्हणून काम पाहिले.\n\n[संदर्भ: आधुनिक महाराष्ट्राचा इतिहास - डॉ. स. शि. गाठाळ]",
+        "en": "(1877): The weekly 'Deenbandhu' was launched in Pune in 1877 by Krishnarao Bhalekar to voice the grievances of peasants and workers under the Satyashodhak banner.\n\n"
+      }
+    },
+    {
+      "id": 16,
+      "question": {
+        "mr": "भारतात आणि विशेषतः मुंबईत 'कामगार चळवळीचे जनक' (Father of the Indian Labour Movement) म्हणून कोणाला ओळखले जाते, ज्यांनी गिरणी कामगारांचे प्रश्न मांडले?",
+        "en": "Who is acclaimed as the 'Father of the Indian Labour Movement' for organizing mill hands and securing welfare rights in Bombay?"
+      },
+      "options": [
+        { "mr": "नारायण मेघाजी लोखंडे (Narayan Meghaji Lokhande)", "en": "Narayan Meghaji Lokhande" },
+        { "mr": "नारायण मल्हार जोशी", "en": "N.M. Joshi" },
+        { "mr": "एस. ए. डांगे", "en": "S.A. Dange" },
+        { "mr": "बाजीराव पाटील", "en": "Bajirao Patil" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९ व्या शतकाचा उत्तरार्ध): महात्मा फुले यांचे सहकारी नारायण मेघाजी लोखंडे यांनी मुंबईत गिरणी कामगारांचे प्रश्न शासनासमोर मांडले, रविवारी सुट्टी मिळवून देण्यात यश मिळवले आणि भारतातील पहिली कामगार संघटना स्थापन केली.\n\n[संदर्भ: आधुनिक महाराष्ट्राचा इतिहास - डॉ. स. शि. गाठाळ]",
+        "en": "(Late 19th Century): Narayan Meghaji Lokhande organized Indian textile workers, successfully campaigned for a weekly Sunday holiday, and pioneered organized labor welfare.\n\n"
+      }
+    },
+    {
+      "id": 17,
+      "question": {
+        "mr": "कोल्हापूर संस्थानात सामाजिक समता, बहुजन शिक्षण आणि आरक्षणाचा ऐतिहासिक पाऊलखुणा उमटवणारे महान रक्षणकर्ते राजर्षी शाहू महाराज यांचा जन्म कधी झाला आणि त्यांनी छत्रपती पदाची सूत्रे कधी हाती घेतली?",
+        "en": "When was Rajarshi Shahu Maharaj of Kolhapur born, and when was he crowned as the Chhatrapati of Kolhapur?"
+      },
+      "options": [
+        { "mr": "जन्म: २६ जून १८७४, राज्यारोहण: १८९४", "en": "Born: June 26, 1874; Crowned: 1894" },
+        { "mr": "जन्म: १ जानेवारी १८५२, राज्यारोहण: १८८०", "en": "Born: 1852; Crowned: 1880" },
+        { "mr": "जन्म: ५ मार्च १८८०, राज्यारोहण: १९०५", "en": "Born: 1880; Crowned: 1905" },
+        { "mr": "जन्म: १५ ऑगस्ट १८६५, राज्यारोहण: १८९०", "en": "Born: 1865; Crowned: 1890" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१८७४-१८९४): राजर्षी शाहू महाराजांचा जन्म २६ जून १८७४ रोजी कागलच्या घाटगे घराण्यात झाला (मूл नाव यशवंतराव जयसिंगराव घाटगे). शिवाजी चतुर्थ यांच्या मृत्यूनंतर त्यांना कोल्हापूरची गादी दत्तक मिळाली आणि १८९४ मध्ये त्यांनी प्रत्यक्ष राज्याची सूत्रे हाती घेतली.\n\n[संदर्भ: आधुनिक महाराष्ट्राचा इतिहास - डॉ. स. शि. गाठाळ / धनंजय कीर]",
+        "en": "(1874-1894): Born as Yashwantrao Ghatge on June 26, 1874, he was adopted into the royal family of Kolhapur and assumed full ruling powers in 1894 as Chhatrapati Shahu Maharaj.\n\n"
+      }
+    },
+    {
+      "id": 18,
+      "question": {
+        "mr": "राजर्षी शाहू महाराजांनी कोल्हापूर संस्थानात बहुजन समाजाला व मागासवर्गीयांना प्रशासनात संधी मिळावी म्हणून ऐतिहासिक 'आरक्षणाची घोषणा' (Reservation Policy) कोणत्या वर्षी केली होती?",
+        "en": "In which landmark year did Rajarshi Shahu Maharaj issue the historic reservation order providing 50% reservation for backward classes in Kolhapur administration?"
+      },
+      "options": [
+        { "mr": "२६ जुलै १९०२ (July 26, 1902)", "en": "July 26, 1902" },
+        { "mr": "१ जानेवारी १९०५", "en": "January 1, 1905" },
+        { "mr": "१५ ऑगस्ट १९११", "en": "August 15, 1911" },
+        { "mr": "२६ जानेवारी १९२०", "en": "January 26, 1920" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९०२): २६ जुलै १९०२ रोजी राजर्षी शाहू महाराजांनी मागासवर्गीय व बहुजन समाजासाठी प्रशासनात ५०% जागा राखीव ठेवण्याचा क्रांतिकारी आरक्षणाचा जाहीरनामा प्रसिद्ध केला, जो भारतीय सामाजिक न्यायाच्या इतिहासात मैलाचा दगड ठरला.\n\n[संदर्भ: आधुनिक महाराष्ट्राचा इतिहास - डॉ. स. शि. गाठाळ]",
+        "en": "(1902): On July 26, 1902, Shahu Maharaj issued a revolutionary royal decree providing 50% reservation in state administration for backward classes, a pioneering milestone in social justice.\n\n"
+      }
+    },
+    {
+      "id": 19,
+      "question": {
+        "mr": "राजर्षी शाहू महाराजांनी कोल्हापुरात बहुजन व मागासवर्गीय विद्यार्थ्यांच्या राहण्याची आणि शिक्षणाची सोय व्हावी म्हणून कोणती प्रसिद्ध वसतिगृहे स्थापन केली होती?",
+        "en": "Which famous hostels and educational institutions did Rajarshi Shahu Maharaj establish in Kolhapur to facilitate student education across communities?"
+      },
+      "options": [
+        { "mr": "मराठा वसतिगृह, जैन वसतिगृह, लिंगायत वसतिगृह, व्हिक्टोरिया मराठा बोर्डिंग व वसतिगृहे", "en": "Maratha, Jain, Lingayat, and Victoria hostels for diverse communities" },
+        { "mr": "फक्त इंग्रजी शाळा", "en": "Only English schools" },
+        { "mr": "फक्त संस्कृत पाठशाळा", "en": "Only Sanskrit pathashalas" },
+        { "mr": "फक्त सैनिकी छावण्या", "en": "Only military academies" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९०८ ते १९२० च्या दशकात): शाहू महाराजांनी कोल्हापुरात प्रत्येक समाजातील गरीब विद्यार्थ्यांना शिक्षणासाठी शहरात राहता यावे म्हणून मराठा, जैन, लिंगायत, महार, मुसलमान अशा विविध समाजासाठी वसतिगृहे (Hostels) स्थापन केली.\n\n[संदर्भ: आधुनिक महाराष्ट्राचा इतिहास - डॉ. स. शि. गाठाळ]",
+        "en": "(1900s-1920s): Shahu Maharaj established numerous community-specific hostels (Maratha, Jain, Lingayat, untouchable, etc.) in Kolhapur to ensure equitable access to higher education.\n\n"
+      }
+    },
+    {
+      "id": 20,
+      "question": {
+        "mr": "दलित व शोषितांच्या उद्धारासाठी आणि त्यांच्यात आत्मसन्मान निर्माण करण्यासाठी डॉ. बाबासाहेब आंबेडकरांनी २० जुलै १९२४ रोजी कोणत्या संस्थेची स्थापना केली होती?",
+        "en": "Which pioneering institution was founded by Dr. B.R. Ambedkar on July 20, 1924, in Bombay to uplift the depressed classes?"
+      },
+      "options": [
+        { "mr": "बहिष्कृत हितकारिणी सभा (Bahishkrit Hitakarini Sabha)", "en": "Bahishkrit Hitakarini Sabha" },
+        { "mr": "समता संघ", "en": "Samata Sangh" },
+        { "mr": "शेड्यूल कास्ट फेडरेशन", "en": "Scheduled Castes Federation" },
+        { "mr": "स्वतंत्र मजूर पक्ष", "en": "Independent Labour Party" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९२४): २० जुलै १९२४ रोजी मुंबईत डॉ. बाबासाहेब आंबेडकरांनी 'बहिष्कृत हितकारिणी सभा' स्थापन केली. 'शिका, संघटित व्हा आणि संघर्ष करा' हे या सभेचे मुख्य बोधवाक्य होते.\n\n[संदर्भ: डॉ. बाबासाहेब आंबेडकर चरित्र - चांगदेव खैरमोडे / डॉ. गाठाळ]",
+        "en": "(1924): Dr. B.R. Ambedkar founded the 'Bahishkrit Hitakarini Sabha' on July 20, 1924, in Bombay, giving the immortal motto: 'Educate, Agitate, Organize'.\n\n"
+      }
+    },
+    {
+      "id": 21,
+      "question": {
+        "mr": "डॉ. बाबासाहेब आंबेडकरांनी अस्पृशांच्या मानवी हक्कांसाठी आणि पाण्याच्या सत्याग्रहासाठी २० मार्च १९२७ रोजी कोणता प्रसिद्ध सत्याग्रह केला होता?",
+        "en": "Which historic water rights satyagraha was led by Dr. B.R. Ambedkar on March 20, 1927, at Mahad?"
+      },
+      "options": [
+        { "mr": "महाडचा चवदार तळे सत्याग्रह (Mahad Chavdar Tale Satyagraha)", "en": "Mahad Chavdar Tale Satyagraha" },
+        { "mr": "काळाराम मंदिर सत्याग्रह", "en": "Kalaram Temple Satyagraha" },
+        { "mr": "पार्वती मंदिर सत्याग्रह", "en": "Parvati Temple Satyagraha" },
+        { "mr": "नाशिक सत्याग्रह", "en": "Nashik Satyagraha" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९२७): रायगड जिल्ह्यातील महाड येथील चवदार तळयाचे पाणी पिण्याचा समतेचा अधिकार अस्पृश्यांना मिळवून देण्यासाठी २० मार्च १९२७ रोजी डॉ. आंबेडकरांनी 'महाड सत्याग्रह' केला (या दिवसाची आठवण म्हणून 'सामाजिक सबलीकरण दिन' पाळला जातो).\n\n[संदर्भ: डॉ. गाठाळ / चांगदेव खैरमोडे]",
+        "en": "(1927): Dr. Ambedkar led the historic Mahad Chavdar Tale Satyagraha on March 20, 1927, asserting the fundamental human right of untouchables to access public drinking water sources.\n\n"
+      }
+    },
+    {
+      "id": 22,
+      "question": {
+        "mr": "डॉ. बाबासाहेब आंबेडकरांनी अस्पृश्यांच्या व शोषितांच्या वतीने वृत्तपत्रसृष्टीतून आवाज उठवण्यासाठी ३ एप्रिल १९२७ रोजी कोणते प्रसिद्ध पाक्षिक (नंतर साप्ताहिक) सुरू केले?",
+        "en": "Which path-breaking fortnightly/weekly newspaper was launched by Dr. B.R. Ambedkar on April 3, 1927, to voice Dalit grievances?"
+      },
+      "options": [
+        { "mr": "बहिष्कृत भारत (Bahishkrit Bharat)", "en": "Bahishkrit Bharat" },
+        { "mr": "मूकनायक", "en": "Mooknayak" },
+        { "mr": "जनता", "en": "Janata" },
+        { "mr": "प्रबुद्ध भारत", "en": "Prabuddha Bharat" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९२७): ३ एप्रिल १९२७ रोजी डॉ. आंबेडकरांनी 'बहिष्कृत भारत' पाक्षिक सुरू केले (याआधी ३ जानेवारी १९२० रोजी 'मूकनायक' सुरू केले होते). बहिष्कृत भारताच्या माध्यमातून त्यांनी सामाजिक अन्यायाविरुद्ध प्रखर वैचारिक लढा दिला.\n\n[संदर्भ: डॉ. गाठाळ / चांगदेव खैरमोडे]",
+        "en": "(1927): Dr. Ambedkar launched the fortnightly 'Bahishkrit Bharat' on April 3, 1927 (following 'Mooknayak' in 1920), to articulate the socio-political rights of the depressed classes.\n\n"
+      }
+    },
+    {
+      "id": 23,
+      "question": {
+        "mr": "नाशिक येथे काळाराम मंदिराच्या प्रवेशासाठी डॉ. बाबासाहेब आंबेडकरांच्या नेतृत्वाखाली ऐतिहासिक सत्याग्रह कधी सुरू झाला होता?",
+        "en": "When did the historic Kalaram Temple entry satyagraha led by Dr. B.R. Ambedkar commence in Nashik?"
+      },
+      "options": [
+        { "mr": "२ मार्च १९३० (March 2, 1930)", "en": "March 2, 1930" },
+        { "mr": "२० मार्च १९२७", "en": "March 20, 1927" },
+        { "mr": "१५ ऑगस्ट १९३५", "en": "August 15, 1935" },
+        { "mr": "१४ ऑक्टोबर १९५६", "en": "October 14, 1956" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९३०): नाशिकच्या प्रसिद्ध काळाराम मंदिरात सर्वांना प्रवेश मिळावा म्हणून २ मार्च १९३० रोजी डॉ. आंबेडकरांच्या नेतृत्वाखाली हजारो सत्याग्रहींनी सत्याग्रह केला, जो सुमारे ५ वर्षे चालला.\n\n[संदर्भ: चांगदेव खैरमोडे / डॉ. गाठाळ]",
+        "en": "(1930): Dr. Ambedkar spearheaded the prolonged Kalaram Temple entry movement in Nashik starting March 2, 1930, demanding unconditional temple entry rights for Dalits.\n\n"
+      }
+    },
+    {
+      "id": 24,
+      "question": {
+        "mr": "खालील विधाने विचारात घ्या:\nअ) महर्षी विठ्ठल रामजी शिंदे यांनी १९०६ मध्ये मुंबईत 'ड्रेस्ड डिप्रेस्ड क्लासेस मिशन' (Depressed Classes Mission of India) ची स्थापना केली.\nब) या मिशनच्या माध्यमातून त्यांनी अस्पृश्यांच्या मुलांसाठी शाळा, वसतिगृहे आणि संस्कार केंद्रांची स्थापना केली.\nवरीलपैकी कोणते/ती विधान/ने बरोबर आहेत?",
+        "en": "Consider the following statements:\nA) Maharshi V.R. Shinde founded the 'Depressed Classes Mission of India' in Bombay in 1906.\nB) The mission established schools, hostels, and welfare centers for the educational upliftment of untouchables.\nWhich of the above statement(s) is/are correct?"
+      },
+      "options": [
+        { "mr": "फक्त अ", "en": "Only A" },
+        { "mr": "फक्त ब", "en": "Only B" },
+        { "mr": "अ आणि ब दोन्ही", "en": "Both A and B" },
+        { "mr": "दोन्ही नाहीत", "en": "Neither A nor B" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९०६): दोन्ही विधाने अगदी बरोबर आहेत. महर्षी विठ्ठल रामजी शिंदे (प्रार्थना समाजाचे कार्यकर्ते) यांनी १८ ऑक्टोबर १९०६ रोजी 'डिप्रेस्ड क्लासेस मिशन'ची स्थापना करत अस्पृश्योद्धाराचे मोठे कार्य केले.\n\n[संदर्भ: आधुनिक महाराष्ट्राचा इतिहास - डॉ. स. शि. गाठाळ / य. दि. फडके]",
+        "en": "(1906): Both statements are correct. Maharshi V.R. Shinde established the Depressed Classes Mission in Bombay in 1906, dedicating his life to eradicating untouchability and educating marginalized communities.\n\n"
+      }
+    },
+    {
+      "id": 25,
+      "question": {
+        "mr": "महाराष्ट्राच्या सामाजिक व सांस्कृतिक इतिहासात 'समाजसुधारकांच्या कार्याचा' मुख्य वैचारिक प्रभाव काय राहिला?",
+        "en": "What was the profound historical impact of the socio-religious reform movements in 19th-century Maharashtra?"
+      },
+      "options": [
+        { "mr": "जातीव्यवस्था, अंधश्रद्धा आणि विषमतेविरुद्ध प्रखर लढा देत आधुनिकतेचा, स्त्रीशिक्षणाचा व समतेचा पाया रचला", "en": "Eradicating feudal inequities, promoting female education, and laying the intellectual bedrock of modern egalitarianism" },
+        { "mr": "केवळ धार्मिक विधी अधिक कडक करणे", "en": "Strictly reinforcing orthodox rituals" },
+        { "mr": "आधुनिक शिक्षणावर पूर्ण बंदी घालणे", "en": "Banning modern education entirely" },
+        { "mr": "महाराष्ट्राला राजेशाहीकडे परत नेणे", "en": "Restoring absolute feudalism" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९-२० वे शतक): महाराष्ट्रातील समाजसुधारकांनी जुनाट रूढी, जातीभेद व अंधश्रद्धेवर कठोर प्रहार करत आधुनिकता, समता, स्त्रीशिक्षण आणि मानवी हक्कांचा असा पाया रचला, ज्यामुळे महाराष्ट्र देशपातळीवर प्रबोधनाचे अग्रगण्य राज्य ठरले.\n\n[संदर्भ: आधुनिक महाराष्ट्राचा इतिहास - डॉ. स. शि. गाठाळ / य. दि. फडके]",
+        "en": "(19th-20th Century): Maharashtra's reformists challenged caste hegemony, championing education, rationalism, and social justice, transforming the region into the intellectual epicenter of Indian social reform.\n\n"
+      }
+    }
+  ]
+}

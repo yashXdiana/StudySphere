@@ -1,0 +1,464 @@
+{
+  "testId": "p-hist-02-t1",
+  "title": {
+    "mr": "भारतातील ब्रिटिश सत्तेचा विस्तार व प्रशासन — सराव 1",
+    "en": "British Rule in India — Practice Test 1"
+  },
+  "durationMinutes": 20,
+  "marksPerQuestion": 1,
+  "negativeMarking": 0.25,
+  "totalMarks": 25,
+  "difficulty": "मध्यम ते काठिण्य",
+  "questions": [
+    {
+      "id": 1,
+      "question": {
+        "mr": "खालील विधाने विचारात घ्या:\nअ) रेग्युलेटिंग ॲक्ट १७७३ नुसार बंगालच्या गव्हर्नरला 'गव्हर्नर जनरल ऑफ बंगाल' घोषित करण्यात आले.\nब) वॉरन हेस्टिंग्स हा बंगालचा पहिला गव्हर्नर जनरल होता.\nवरीलपैकी कोणते/ती विधान/ने बरोबर आहेत?",
+        "en": "Consider the following statements:\nA) Under the Regulating Act of 1773, the Governor of Bengal was designated as the 'Governor-General of Bengal'.\nB) Warren Hastings was the first Governor-General of Bengal.\nWhich of the above statement(s) is/are correct?"
+      },
+      "options": [
+        { "mr": "फक्त अ", "en": "Only A" },
+        { "mr": "फक्त ब", "en": "Only B" },
+        { "mr": "अ आणि ब दोन्ही", "en": "Both A and B" },
+        { "mr": "दोन्ही नाहीत", "en": "Neither A nor B" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "(१७७३): १७७३ च्या रेग्युलेटिंग ॲक्टने ईस्ट इंडिया कंपनीच्या कारभारावर नियंत्रण आणण्यास सुरुवात केली. या कायद्यानुसार बंगालच्या गव्हर्नरचे पद उन्नत करून 'गव्हर्नर जनरल ऑफ बंगाल' असे केले गेले आणि वॉरन हेस्टिंग्स या पदावर नेमला गेलेला पहिला व्यक्ती ठरला.\n\n[संदर्भ: एम. लक्ष्मीकांत / स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1773): The Regulating Act of 1773 designated the Governor of Bengal as the 'Governor-General of Bengal' and created an Executive Council of four members to assist him. Warren Hastings became the first holder of this office.\n\n"
+      }
+    },
+    {
+      "id": 2,
+      "question": {
+        "mr": "१८५८ च्या भारत सरकार कायद्यानुसार ब्रिटिशांनी लंडनमध्ये कोणत्या नवीन पदाची निर्मिती केली, ज्याच्याकडे भारताच्या प्रशासनाचे संपूर्ण नियंत्रण सोपवण्यात आले?",
+        "en": "Which new post was created in London under the Government of India Act 1858, which was entrusted with complete control over the administration of India?"
+      },
+      "options": [
+        { "mr": "व्हाइसरॉय ऑफ इंडिया", "en": "Viceroy of India" },
+        { "mr": "भारत मंत्री (Secretary of State for India)", "en": "Secretary of State for India" },
+        { "mr": "गव्हर्नर जनरल ऑफ इंडिया", "en": "Governor-General of India" },
+        { "mr": "बोर्ड ऑफ कंट्रोलचा अध्यक्ष", "en": "President of the Board of Control" }
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": {
+        "mr": "(१८५८): १८५७ च्या उठावानंतर संमत झालेल्या १८५८ च्या कायद्याने कंपनीची राजवट संपवली. लंडनमध्ये 'भारत मंत्री' (Secretary of State for India) हे ब्रिटनच्या मंत्रिमंडळातील सदस्याचे नवीन पद निर्माण केले गेले, ज्याला मदत करण्यासाठी १५ सदस्यांचे इंडिया कौन्सिल नेमले गेले.\n\n[संदर्भ: एम. लक्ष्मीकांत]",
+        "en": "(1858): The Act for the Good Government of India 1858 created the office of the Secretary of State for India, a member of the British Cabinet, who exercised complete authority and control over the Indian administration.\n\n"
+      }
+    },
+    {
+      "id": 3,
+      "question": {
+        "mr": "खालीलपैकी कोणत्या कायद्याने भारतात पहिल्यांदाच 'केंद्रीकृत प्रशासनाचा' (Centralization of Administration) पाया मजबूत केला आणि मुंबई व मद्रास प्रांतांना बंगालच्या अधिपतीखाली आणले?",
+        "en": "Which of the following acts first strengthened the foundation of 'Centralized Administration' in India and brought the Bombay and Madras Presidencies under the control of Bengal?"
+      },
+      "options": [
+        { "mr": "१७७३ चा रेग्युलेटिंग ॲक्ट", "en": "Regulating Act of 1773" },
+        { "mr": "१७८४ चा पिट्स इंडिया ॲक्ट", "en": "Pitt's India Act of 1784" },
+        { "mr": "१७९३ चा चार्टर ॲक्ट", "en": "Charter Act of 1793" },
+        { "mr": "१८३३ चा चार्टर ॲक्ट", "en": "Charter Act of 1833" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१७७३): रेग्युलेटिंग ॲक्ट १७७३ ने मुंबई व मद्रासच्या गव्हर्नरांना बंगालच्या गव्हर्नर जनरलच्या अधीन केले, ज्यामुळे ब्रिटिश भारतातील प्रशासकीय केंद्रीकरणाची पहिली पायरी पार पडली.\n\n[संदर्भ: एम. लक्ष्मीकांत / डॉ. स. शि. गाठाळ]",
+        "en": "(1773): The Regulating Act of 1773 made the Governors of Bombay and Madras subordinate to the Governor-General of Bengal, initiating the process of administrative centralization in British India.\n\n"
+      }
+    },
+    {
+      "id": 4,
+      "question": {
+        "mr": "१८९३ मधील 'लँड्सडाउन समिती' किंवा १८८६ मधील 'एचिन्सन आयोग' (Aitchison Commission) प्रामुख्याने कोणत्या प्रशासकीय सुधारणांशी संबंधित होते?",
+        "en": "The 'Aitchison Commission' of 1886 was primarily related to which administrative reforms?"
+      },
+      "options": [
+        { "mr": "पोलीस सुधारणा", "en": "Police Reforms" },
+        { "mr": "नागरी सेवा सुधारणा (Civil Services Reforms)", "en": "Civil Services Reforms" },
+        { "mr": "शैक्षणिक सुधारणा", "en": "Educational Reforms" },
+        { "mr": "न्यायव्यवस्था सुधारणा", "en": "Judicial Reforms" }
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": {
+        "mr": "(१८८६): लॉर्ड डफरिनच्या काळात १८८६ मध्ये सर चार्ल्स एचिन्सन यांच्या अध्यक्षतेखाली 'सिव्हिल सर्व्हिस आयोग' (Aitchison Commission) नेमला गेला. या आयोगाने सिव्हिल सर्व्हिस परीक्षांचे वय वाढवण्याची आणि 'इंपिरियल', 'प्रॉव्हिन्शियल' व 'सबॉर्डिनेट' असे सेवांचे वर्गीकरण करण्याची शिफारस केली.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1886): The Aitchison Commission on Public Services was set up in 1886 under the chairmanship of Sir Charles Aitchison to recommend reforms in the civil services structure.\n\n"
+      }
+    },
+    {
+      "id": 5,
+      "question": {
+        "mr": "खालील विधाने विचारात घ्या:\nअ) लॉर्ड कॉर्नवॉलिसने भारतात 'सिव्हिल सर्व्हिस' (नागरी सेवा) चा पाया मजबूत केला, म्हणून त्याला 'भारतातील सनदी सेवेचा जनक' (Father of Civil Services in India) म्हणतात.\nब) त्याने भ्रष्टाचाराला आळा घालण्यासाठी अधिकाऱ्यांचे पगार भरमसाठ वाढवले.\nवरीलपैकी कोणते/ती विधान/ने योग्य आहेत?",
+        "en": "Consider the following statements:\nA) Lord Cornwallis laid the foundation of Civil Services in India, hence he is called the 'Father of Civil Services in India'.\nB) He substantially increased the salaries of officials to curb corruption.\nWhich of the above statement(s) is/are correct?"
+      },
+      "options": [
+        { "mr": "फक्त अ", "en": "Only A" },
+        { "mr": "फक्त ब", "en": "Only B" },
+        { "mr": "अ आणि ब दोन्ही", "en": "Both A and B" },
+        { "mr": "दोन्ही नाहीत", "en": "Neither A nor B" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "(१७९३): कॉर्नवॉलिसने कंपनीच्या अधिकाऱ्यांना खासगी व्यापार करण्यास सक्त मनाई केली आणि त्यांच्या वेतनात घसघशीत वाढ केली जेणेकरून ते लाचखोरी करणार नाहीत. या प्रशासकीय शिस्तीमुळे त्याला सनदी सेवेचा जनक मानले जाते.\n\n[संदर्भ: अनिल कटारे / समाधान महाजन]",
+        "en": "(1793): Lord Cornwallis firmly organized the civil services in India. To curb rampant private trade and corruption among officials, he raised their salaries significantly, earning him the title of 'Father of Civil Services in India'.\n\n"
+      }
+    },
+    {
+      "id": 6,
+      "question": {
+        "mr": "भारतीय नागरिकांना शासकीय नोकऱ्यांमध्ये जात, धर्म किंवा रक्ताच्या नात्यावरून डावलले जाणार नाही, अशी घोषणा कोणत्या कायद्यात/घोषणापत्रात प्रथम करण्यात आली?",
+        "en": "In which Act/Proclamation was it first declared that Indian citizens would not be barred from public employment on grounds of religion, place of birth, descent, or color?"
+      },
+      "options": [
+        { "mr": "१८३३ चा चार्टर ॲक्ट (Charter Act of 1833)", "en": "Charter Act of 1833" },
+        { "mr": "१८५३ चा चार्टर ॲक्ट", "en": "Charter Act of 1853" },
+        { "mr": "१८५८ चा राणीचा जाहीरनामा", "en": "Queen's Proclamation of 1858" },
+        { "mr": "१८६१ चा कायदा", "en": "Indian Councils Act 1861" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१८३३): १८३३ च्या चार्टर ॲक्टनुसार असे स्पष्टपणे नमूद केले गेले की कोणत्याही भारतीय नागरिकाला केवळ धर्म, जन्मस्थान, वंश किंवा रंग या कारणावरून कंपनीच्या कोणत्याही पदासाठी अयोग्य ठरवले जाणार नाही. मात्र हा नियम कागदावरच राहिला.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / एम. लक्ष्मीकांत]",
+        "en": "(1833): The Charter Act of 1833 explicitly stated that merit should be the basis of employment under the Company and that no Indian should be disabled from holding any office by reason of religion, place of birth, descent, or color.\n\n"
+      }
+    },
+    {
+      "id": 7,
+      "question": {
+        "mr": "१८५७ च्या उठावानंतर ब्रिटिशांनी सैन्य पुनर्रचनेसाठी नेमलेल्या 'पिल आयोगाच्या' (Peel Commission) शिफारसीनुसार सैन्यात कोणत्या प्रांतातील/जातीमधील सैनिकांचे प्रमाण कमी करण्यात आले?",
+        "en": "According to the recommendations of the 'Peel Commission' set up after the Revolt of 1857, the proportion of troops from which region/community was reduced in the British army?"
+      },
+      "options": [
+        { "mr": "गुरखा व शिख", "en": "Gorkhas and Sikhs" },
+        { "mr": "अवध व उत्तर भारत (Awadh and Northern India)", "en": "Awadh and Northern India" },
+        { "mr": "मद्रास व बॉम्बे", "en": "Madras and Bombay" },
+        { "mr": "राजपूत व मराठा", "en": "Rajputs and Marathas" }
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": {
+        "mr": "(१८५८): १८५७ च्या उठावात अवध (उत्तर प्रदेश) आणि बिहारमधील सैनिकांनी पुढाकार घेतला होता. त्यामुळे पिल आयोगाच्या शिफारसीनुसार सैन्यात 'अवध' प्रांतातील सैनिकांचे प्रमाण घटवले गेले आणि पंजाब व उत्तर-पश्चिम सीमेवरील शीख, गुरखा व पठाणांना 'लढाऊ जाती' (Martial Races) म्हणून सैन्यात मोठ्या प्रमाणात भरती केले गेले.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1858): Following the Revolt of 1857, the Peel Commission recommended reducing the proportion of troops from Awadh, Bihar, and central India (who had formed the bulk of the Bengal army) and increasing recruitment from 'martial races' like Sikhs, Gurkhas, and Punjabis.\n\n"
+      }
+    },
+    {
+      "id": 8,
+      "question": {
+        "mr": "खालीलपैकी कोणत्या कायद्याने गव्हर्नर जनरलच्या कार्यकारी मंडळात 'पोर्टफोलिओ पद्धत' (Portfolio System / खातेवाटप पद्धत) अधिकृतरीत्या रूढ केली, ज्याचा पाया लॉर्ड कॅनिंगने घातला?",
+        "en": "Which of the following acts officially recognized the 'Portfolio System' in the Governor-General's executive council, a practice initiated by Lord Canning?"
+      },
+      "options": [
+        { "mr": "१८५८ चा कायदा", "en": "Government of India Act 1858" },
+        { "mr": "१८६१ चा भारतीय परिषद कायदा (Indian Councils Act 1861)", "en": "Indian Councils Act 1861" },
+        { "mr": "१८९२ चा कायदा", "en": "Indian Councils Act 1892" },
+        { "mr": "१९०९ चा कायदा", "en": "Act of 1909" }
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": {
+        "mr": "(१८६१): १८६१ च्या भारतीय परिषद कायद्याने लॉर्ड कॅनिंगने सुरू केलेली 'पोर्टफोलिओ पद्धत' (खातेवाटप प्रणाली) अधिकृत केली. यानुसार कार्यकारी मंडळाच्या प्रत्येक सदस्याकडे एका किंवा अधिक विभागाची (उदा. वित्त, कायदा, महसूल) जबाबदारी सोपवली गेली.\n\n[संदर्भ: एम. लक्ष्मीकांत]",
+        "en": "(1861): The Indian Councils Act of 1861 gave statutory recognition to the portfolio system, introduced by Lord Canning in 1859, empowering a member of the Viceroy's council to take charge of one or more departments of the government.\n\n"
+      }
+    },
+    {
+      "id": 9,
+      "question": {
+        "mr": "ब्रिटिश भारतातील पोलीस प्रशासनात 'प्रत्येक जिल्ह्यात पोलीस अधीक्षक' (Superintendent of Police - SP) नेमण्याची पद्धत कोणत्या आयोगाच्या शिफारसीनुसार सुरू झाली?",
+        "en": "The system of appointing a 'Superintendent of Police' (SP) in every district of British India was introduced on the recommendation of which commission?"
+      },
+      "options": [
+        { "mr": "पोलिस आयोग 1860 (Police Commission of 1860)", "en": "Police Commission of 1860" },
+        { "mr": "हंटर आयोग", "en": "Hunter Commission" },
+        { "mr": "ॅले आयोग", "en": "Raleigh Commission" },
+        { "mr": "स्ट्रॅची आयोग", "en": "Strachey Commission" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१८६०): १८६० मध्ये ब्रिटीश सरकारने 'पोलिस आयोग' नेमला. या आयोगाच्या शिफारसीनुसार १८६१ चा 'पोलिस ॲक्ट' संमत झाला. यानुसार प्रत्येक जिल्ह्यात एसपी (SP) च्या नेतृत्वाखाली एक सुव्यवस्थित पोलीस दल उभे केले गेले, ज्यावर जिल्हा दंडाधिकाऱ्यांचे नियंत्रण होते.\n\n[संदर्भ: डॉ. स. शि. गाठाळ / स्पेक्ट्रम]",
+        "en": "(1860-1861): Based on the recommendations of the Police Commission of 1860, the Indian Police Act of 1861 was enacted, establishing a professional provincial police force with a Superintendent of Police (SP) heading the police administration in each district.\n\n"
+      }
+    },
+    {
+      "id": 10,
+      "question": {
+        "mr": "खालील विधाने विचारात घ्या:\nअ) १७७३ च्या रेग्युलेटिंग ॲक्टनुसार कोलकात्यात सर्वोच्च न्यायालय स्थापन झाले.\nब) या न्यायालयाला बंगाल, बिहार व ओडिसातील सर्व ब्रिटिश व भारतीय रहिवाशांवर अधिकारक्षेत्र होते.\nवरीलपैकी कोणते/ती विधान/ने बरोबर आहेत?",
+        "en": "Consider the following statements:\nA) A Supreme Court was established in Calcutta under the Regulating Act of 1773.\nB) This court had jurisdiction over all British and Indian residents of Bengal, Bihar, and Odisha.\nWhich of the above statement(s) is/are correct?"
+      },
+      "options": [
+        { "mr": "फक्त अ", "en": "Only A" },
+        { "mr": "फक्त ब", "en": "Only B" },
+        { "mr": "अ आणि ब दोन्ही", "en": "Both A and B" },
+        { "mr": "दोन्ही नाहीत", "en": "Neither A nor B" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "(१७७४): १७७३ च्या रेग्युलेटिंग ॲक्टनुसार १७७४ मध्ये कोलकात्यात सर्वोच्च न्यायालयाची स्थापना झाली. त्यात १ मुख्य न्यायाधीश व ३ इतर न्यायाधीश होते. सर एलिजा इम्पे हे पहिले मुख्य न्यायाधीश होते. या न्यायालयाचे अधिकारक्षेत्र बंगाल, बिहार आणि ओडिशामधील सर्व रहिवाशांवर होते.\n\n[संदर्भ: एम. लक्ष्मीकांत]",
+        "en": "(1774): The Supreme Court at Calcutta was established in 1774 under the Regulating Act of 1773, comprising a Chief Justice and three other judges, with jurisdiction covering all British subjects and inhabitants of Bengal, Bihar, and Orissa.\n\n"
+      }
+    },
+    {
+      "id": 11,
+      "question": {
+        "mr": "वॉरन हेस्टिंग्सने न्यायालयात भारतीय संस्कृती व कायद्यांचा अभ्यास करण्यासाठी १७८१ मध्ये कोणत्या संस्थेची स्थापना केली होती?",
+        "en": "Which institution was established by Warren Hastings in 1781 to study Indian culture and laws for court assistance?"
+      },
+      "options": [
+        { "mr": "एशियाटिक सोसायटी ऑफ बंगाल", "en": "Asiatic Society of Bengal" },
+        { "mr": "कलकत्ता मदरसा (Calcutta Madrasa)", "en": "Calcutta Madrasa" },
+        { "mr": "बनारस संस्कृत कॉलेज", "en": "Banaras Sanskrit College" },
+        { "mr": "फोर्ट विल्यम कॉलेज", "en": "Fort William College" }
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": {
+        "mr": "(१७८१): हिंदू व मुस्लिम कायद्यांच्या आधारे खटले चालवण्यासाठी वॉरन हेस्टिंग्सने १७८१ मध्ये 'कलकत्ता मदरसा' स्थापन केला (मुस्लिम कायद्याच्या अभ्यासासाठी). तर जोनाथन डंकनने १७९१ मध्ये बनारस येथे संस्कृत कॉलेज सुरू केले.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1781): Warren Hastings established the Calcutta Madrasa in 1781 for the study of Muslim law and related subjects, so that Muslim law officers could assist British judges in court proceedings.\n\n"
+      }
+    },
+    {
+      "id": 12,
+      "question": {
+        "mr": "खालीलपैकी कोणत्या कायद्याने प्रथमच प्रांतांमधील 'द्विदल राज्यपद्धती' (Diarchy) समाप्त केली आणि प्रांतीय स्वायत्तता (Provincial Autonomy) जाहीर केली?",
+        "en": "Which of the following acts first ended 'Diarchy' in the provinces and granted 'Provincial Autonomy'?"
+      },
+      "options": [
+        { "mr": "१९१९ चा कायदा", "en": "Government of India Act 1919" },
+        { "mr": "१९३५ चा भारत सरकार कायदा (Government of India Act 1935)", "en": "Government of India Act 1935" },
+        { "mr": "१९४७ चा स्वातंत्र्य कायदा", "en": "Indian Independence Act 1947" },
+        { "mr": "१९०९ चा मॉले-मिंटो कायदा", "en": "Morley-Minto Reforms 1909" }
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": {
+        "mr": "(१९३५): १९३५ च्या भारत सरकार कायद्याने प्रांतांमधील द्विदल राज्यव्यवस्था (Diarchy) रद्द केली आणि प्रांतांना स्वतंत्र आणि स्वायत्त अधिकार (Provincial Autonomy) दिले. तसेच केंद्रात द्विदल पद्धत लागू केली.\n\n[संदर्भ: एम. लक्ष्मीकांत]",
+        "en": "(1935): The Government of India Act of 1935 abolished Diarchy in the provinces and introduced 'Provincial Autonomy', permitting provinces to act as autonomous units of administration in their defined spheres.\n\n"
+      }
+    },
+    {
+      "id": 13,
+      "question": {
+        "mr": "१९३५ च्या कायद्यानुसार भारतात कोणत्या वर्षी 'फेडरल कोर्ट' (Federal Court) ची स्थापना करण्यात आली?",
+        "en": "In which year was the 'Federal Court' established in India under the Act of 1935?"
+      },
+      "options": [
+        { "mr": "१९३५", "en": "1935" },
+        { "mr": "१९३७", "en": "1937" },
+        { "mr": "१९४२", "en": "1942" },
+        { "mr": "१९४७", "en": "1947" }
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": {
+        "mr": "(१९३७): १९३५ च्या भारत सरकार कायद्याच्या तरतुदीनुसार १ ऑक्टोबर '१९३७' रोजी दिल्ली येथे फेडरल कोर्टाची स्थापना झाली. सर मॉरिस ग्वेअर हे त्याचे पहिले मुख्य न्यायाधीश होते.\n\n[संदर्भ: एम. लक्ष्मीकांत]",
+        "en": "(1937): The Federal Court of India was established on October 1, 1937, under the provisions of the Government of India Act 1935, with Sir Maurice Gwyer serving as its first Chief Justice.\n\n"
+      }
+    },
+    {
+      "id": 14,
+      "question": {
+        "mr": "ब्रिटीश भारतातील 'स्थानिक स्वराज्य संस्थांचा पाया मजबूत करणारा' १८८२ चा ऐतिहासिक ठराव खालीलपैकी कोणत्या व्हाइसरॉयने मंजूर केला होता?",
+        "en": "Which Viceroy passed the historic 1882 resolution that strengthened the foundation of 'Local Self-Government' in British India?"
+      },
+      "options": [
+        { "mr": "लॉर्ड लिटन", "en": "Lord Lytton" },
+        { "mr": "लॉर्ड रिपन (Lord Ripon)", "en": "Lord Ripon" },
+        { "mr": "लॉर्ड कर्झन", "en": "Lord Curzon" },
+        { "mr": "लॉर्ड मेयो", "en": "Lord Mayo" }
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": {
+        "mr": "(१८८२): १८८२ च्या लार्ड रिपनच्या स्थानिक स्वराज्य संस्थेच्या ठरावाला भारताच्या स्थानिक स्वराज्य संस्थांचा मॅग्नाकार्टा म्हटले जाते. याने ग्रामीण व शहरी भागात स्थानिक बोर्डांची निर्मिती केली आणि त्यात निर्वाचित भारतीय सदस्यांना प्राधान্য दिले.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / डॉ. स. शि. गाठाळ]",
+        "en": "(1882): Lord Ripon's Resolution of 1882 on local self-government established local boards with non-official majorities and is hailed as the Magna Carta of local democracy in British India.\n\n"
+      }
+    },
+    {
+      "id": 15,
+      "question": {
+        "mr": "खालीलपैकी कोणत्या कायद्याने ब्रिटिश संसदेने प्रथमच स्पष्ट केले की, भारतात ईस्ट इंडिया कंपनीच्या ताब्यातील प्रदेश हा 'ब्रिटिश सम्राटाच्या ताब्यातील प्रदेश' आहे?",
+        "en": "By which of the following acts did the British Parliament first explicitly declare that the territories in India under the East India Company were 'territories in the possession of the British Crown'?"
+      },
+      "options": [
+        { "mr": "१७७३ चा रेग्युलेटिंग ॲक्ट", "en": "Regulating Act of 1773" },
+        { "mr": "१७८४ चा पिट्स इंडिया ॲक्ट (Pitt's India Act of 1784)", "en": "Pitt's India Act of 1784" },
+        { "mr": "१८१३ चा चार्टर ॲक्ट", "en": "Charter Act of 1813" },
+        { "mr": "१८५३ चा चार्टर ॲक्ट", "en": "Charter Act of 1853" }
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": {
+        "mr": "(१७८४): १७८४ च्या पिट्स इंडिया ॲक्टने कंपनीच्या व्यापारावर आणि राजकारणावर नियंत्रण ठेवण्यासाठी 'बोर्ड ऑफ कंट्रोल' नेमले आणि या कायद्याच्या प्रस्तावात पहिल्यांदाच 'ब्रिटिश ताब्यातील भारतातील प्रदेश' (British possessions in India) हा शब्दप्रयोग केला गेला.\n\n[संदर्भ: एम. लक्ष्मीकांत]",
+        "en": "(1784): Pitt's India Act of 1784 for the first time referred to the company's territories in India as the 'British possessions in India', clearly establishing the Crown's ultimate authority over company administration.\n\n"
+      }
+    },
+    {
+      "id": 16,
+      "question": {
+        "mr": "भारतात पहिल्यांदाच 'बजेट' (Budget) मांडण्याची प्रथा १८६० मध्ये सुरू झाली. त्यावेळी भारताचे पहिले अर्थसदस्य (Finance Member) कोण होते?",
+        "en": "The practice of presenting a 'Budget' in India started in 1860. Who was the first Finance Member of India at that time?"
+      },
+      "options": [
+        { "mr": "जेम्स विल्सन (James Wilson)", "en": "James Wilson" },
+        { "mr": "सर रिचर्ड स्ट्रॅची", "en": "Sir Richard Strachey" },
+        { "mr": "थॉमस मेकॉले", "en": "Thomas Macaulay" },
+        { "mr": "चार्ल्स वुड", "en": "Charles Wood" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१८६०): १८५७ च्या उठावानंतरची आर्थिक तूट भरून काढण्यासाठी जेम्स विल्सन यांची नियुक्ती झाली. त्यांनी ७ एप्रिल १८६० रोजी भारताचा पहिला अधिकृत अर्थसंकल्प मांडला आणि प्राप्तिकर (Income Tax) लागू केला.\n\n[संदर्भ: समाधान महाजन / स्पेक्ट्रम]",
+        "en": "(1860): To overcome the financial deficits following the 1857 revolt, James Wilson was appointed as the first Finance Member, presenting the inaugural Indian Budget on April 7, 1860, and introducing income tax.\n\n"
+      }
+    },
+    {
+      "id": 17,
+      "question": {
+        "mr": "खालील विधाने विचारात घ्या:\nअ) १८१३ च्या चार्टर ॲक्टने ख्रिश्चन मिशनऱ्यांना भारतात धर्मप्रचाराची अधिकृत परवानगी दिली.\nब) या कायद्याने भारतातील शिक्षणासाठी दरवर्षी १ लाख रुपयांची तरतूद केली.\nवरीलपैकी कोणते/ती विधान/ने योग्य आहेत?",
+        "en": "Consider the following statements:\nA) The Charter Act of 1813 officially permitted Christian missionaries to propagate religion in India.\nB) This act provided an annual grant of 1 lakh rupees for the promotion of education in India.\nWhich of the above statement(s) is/are correct?"
+      },
+      "options": [
+        { "mr": "फक्त अ", "en": "Only A" },
+        { "mr": "फक्त ब", "en": "Only B" },
+        { "mr": "अ आणि ब दोन्ही", "en": "Both A and B" },
+        { "mr": "दोन्ही नाहीत", "en": "Neither A nor B" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "(१८१३): १८१३ च्या चार्टर ॲक्टने दोन अत्यंत महत्त्वाच्या तरतुदी केल्या - १) ख्रिश्चन मिशनऱ्यांना भारतात येऊन धर्मप्रसार करण्याची परवानगी दिली, आणि २) भारतात शिक्षण प्रसारासाठी वार्षिक १ लाख रुपयांची तरतूद केली.\n\n[संदर्भ: डॉ. स. शि. गाठाळ / स्पेक्ट्रम]",
+        "en": "(1813): The Charter Act of 1813 granted permission to Christian missionaries to enter India for spreading religious and moral instruction, and sanctioned an annual sum of 1 lakh rupees for the revival and promotion of literature and education.\n\n"
+      }
+    },
+    {
+      "id": 18,
+      "question": {
+        "mr": "ब्रिटिश भारतात १९१९ च्या कायद्यानुसार 'केंद्रीय कायदेमंडळ' (Central Legislature) कसे बनवण्यात आले?",
+        "en": "How was the 'Central Legislature' structured under the Act of 1919 in British India?"
+      },
+      "options": [
+        { "mr": "केवळ एकच सभागृह (युनिकॅम्रल)", "en": "Single chamber (Unicameral)" },
+        { "mr": "द्विसदनीय कायदेमंडळ (Bicameral - कौन्सिल ऑफ स्टेट्स आणि लेजिस्लेटिव्ह असेंब्ली)", "en": "Bicameral (Council of States and Legislative Assembly)" },
+        { "mr": "तीन सभागृहे असलेले मंडळ", "en": "Three-chambered legislature" },
+        { "mr": "केवळ प्रांतीय सदस्यांचे मंडळ", "en": "Only provincial council" }
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": {
+        "mr": "(१९१९): १९१९ च्या मॉन्टग्यू-चेम्सफोर्ड सुधारणा कायद्याने भारतात प्रथमच 'द्विसदनीय कायदेमंडळ' (Bicameralism) सुरू केले. यात वरील सभागृह 'कौन्सिल ऑफ स्टेट्स' (Council of State) आणि खालील सभागृह 'केंद्रीय विधान सभा' (Central Legislative Assembly) अशी रचना केली गेली.\n\n[संदर्भ: एम. लक्ष्मीकांत]",
+        "en": "(1919): The Government of India Act of 1919 introduced Bicameralism at the Centre, replacing the Indian Legislative Council with a bicameral legislature consisting of an Upper House (Council of State) and a Lower House (Legislative Assembly).\n\n"
+      }
+    },
+    {
+      "id": 19,
+      "question": {
+        "mr": "१९०९ च्या मॉले-मिंटो सुधारणा कायद्याने मुसलमानांसाठी 'स्वतंत्र मतदारसंघ' (Separate Electorates) निर्माण केल्यामुळे खालीलपैकी कोणाला 'सांप्रदायिक मतदारसंघाचा जनक' (Father of Communal Electorate) म्हटले जाते?",
+        "en": "Who is known as the 'Father of Communal Electorate' for introducing separate electorates for Muslims through the Morley-Minto Reforms of 1909?"
+      },
+      "options": [
+        { "mr": "लॉर्ड मॉले", "en": "Lord Morley" },
+        { "mr": "लॉर्ड मिंटो (Lord Minto II)", "en": "Lord Minto II" },
+        { "mr": "लॉर्ड कर्झन", "en": "Lord Curzon" },
+        { "mr": "रामसे मॅकडोनाल्ड", "en": "Ramsay MacDonald" }
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": {
+        "mr": "(१९०९): १९०९ च्या कायद्याने मुस्लिमांसाठी स्वतंत्र मतदारसंघाची तरतूद करून भारतात फुटीरतावादी राजकारणाचा पाया रचला. व्हाइसरॉय लॉर्ड मिंटो याने ही पद्धत रेटून नेली होती, त्यामुळे त्याला 'सांप्रदायिक मतदारसंघाचा जनक' म्हटले जाते.\n\n[संदर्भ: एम. लक्ष्मीकांत / स्पेक्ट्रम]",
+        "en": "(1909): The Morley-Minto Reforms introduced a system of communal representation for Muslims by accepting the concept of a 'separate electorate'. Lord Minto, the then Viceroy, came to be known as the Father of Communal Electorate.\n\n"
+      }
+    },
+    {
+      "id": 20,
+      "question": {
+        "mr": "खालीलपैकी कोणत्या समितीच्या/आयोगाच्या शिफारसीवरून १९३५ च्या कायद्यात भारतापासून 'म्यानमार (ब्रह्मदेश)' वेगळा करण्यात आला?",
+        "en": "Based on whose recommendation/committee was 'Burma (Myanmar)' separated from India under the Act of 1935?"
+      },
+      "options": [
+        { "mr": "सायमन आयोग (Simon Commission)", "en": "Simon Commission" },
+        { "mr": "बटलर कमिटी", "en": "Butler Committee" },
+        { "mr": "मुडीमन कमिटी", "en": "Muddiman Committee" },
+        { "mr": "हंटर कमिटी", "en": "Hunter Committee" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९३५): सायमन आयोगाने (१९३०) केलेल्या शिफारशीनुसार १९३५ च्या भारत सरकार कायद्यान्वये 'ब्रह्मदेश' (सध्याचा म्यानमार) १९३७ मध्ये अधिकृतपणे भारतापासून वेगळा करण्यात आला.\n\n[संदर्भ: एम. लक्ष्मीकांत / स्पेक्ट्रम]",
+        "en": "(1935): The Simon Commission recommended the separation of Burma from British India, which was formally enacted through the Government of India Act 1935, taking effect in 1937.\n\n"
+      }
+    },
+    {
+      "id": 21,
+      "question": {
+        "mr": "ब्रिटिश काळात 'महसूल अदालती' (Revenue Courts) आणि 'दिवाणी व फौजदारी अदालती' यांच्यातील फरक स्पष्ट करणारी आणि अधिकार वेगळे करणारी 'कॉर्नवॉलिस संहिता' कोणत्या वर्षी संमत झाली?",
+        "en": "In which year was the 'Cornwallis Code', which separated revenue administration from judicial administration, enacted?"
+      },
+      "options": [
+        { "mr": "१७७३", "en": "1773" },
+        { "mr": "१७८४", "en": "1784" },
+        { "mr": "१७९३ (1793)", "en": "1793" },
+        { "mr": "१८०१", "en": "1801" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "(१७९३): लॉर्ड कॉर्नवॉलिसने १७९३ मध्ये 'कॉर्नवॉलिस संहिता' (Cornwallis Code) तयार केली. यानुसार महसूल गोळा करणाऱ्याधिकाऱ्यांचे (Collector) न्यायालयीन अधिकार काढून घेण्यात आले आणि त्यांना केवळ महसूल संकलनाचे काम दिले गेले.\n\n[संदर्भ: अनिल कटारे]",
+        "en": "(1793): The Cornwallis Code of 1793 enacted a clear separation of powers, stripping the district collectors of their magisterial and judicial powers and leaving them solely with revenue administration.\n\n"
+      }
+    },
+    {
+      "id": 22,
+      "question": {
+        "mr": "खालील विधाने विचारात घ्या:\nअ) १९२४ मधील 'मुडीमन समिती' (Muddiman Committee) १९१९ च्या कायद्यातील द्विदल राज्यपद्धतीच्या (Diarchy) अपयशाची चौकशी करण्यासाठी नेमली होती.\nब) 'सायमन आयोगाची' नियुक्ती १९२७ मध्ये नेमणुकीच्या निर्धारित वेळेपूर्वीच करण्यात आली.\nवरीलपैकी कोणते/ती विधान/ने बरोबर आहेत?",
+        "en": "Consider the following statements:\nA) The 'Muddiman Committee' of 1924 was appointed to inquire into the working of Diarchy under the 1919 Act.\nB) The 'Simon Commission' was appointed in 1927, ahead of its scheduled 10-year review time.\nWhich of the above statement(s) is/are correct?"
+      },
+      "options": [
+        { "mr": "फक्त अ", "en": "Only A" },
+        { "mr": "फक्त ब", "en": "Only B" },
+        { "mr": "अ आणि ब दोन्ही", "en": "Both A and B" },
+        { "mr": "दोन्ही नाहीत", "en": "Neither A nor B" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "(१९२४-१९२७): दोन्ही विधाने बरोबर आहेत. १९१९ च्या कायद्याच्या १० वर्षांनंतर आढावा घ्यायचा होता, पण ब्रिटिश सरकारने नोव्हेंबर १९२७ मध्येच (दोन वर्षे आधी) सर जॉन सायमन यांच्या अध्यक्षतेखाली आयोग नेमला, ज्याला सर्वसाधारण विरोध झाला.\n\n[संदर्भ: एम. लक्ष्मीकांत / स्पेक्ट्रम]",
+        "en": "(1924-1927): Both statements are accurate. The Muddiman Committee (1924) evaluated the 1919 Act's Diarchy, and the Simon Commission was rushed out in November 1927, two years ahead of the statutory 10-year review schedule.\n\n"
+      }
+    },
+    {
+      "id": 23,
+      "question": {
+        "mr": "भारतीय राज्यघटनेचा मुख्य पाया म्हणून ओळखल्या जाणाऱ्या १९३५ च्या भारत सरकार कायद्यात एकूण किती कलमे (Sections) आणि किती परिसिष्टे (Schedules) होती?",
+        "en": "How many sections and schedules were there in the Government of India Act 1935, which served as the primary blueprint for the Indian Constitution?"
+      },
+      "options": [
+        { "mr": "३२१ कलमे आणि १० परिसिष्टे (321 Sections and 10 Schedules)", "en": "321 Sections and 10 Schedules" },
+        { "mr": "२५० कलमे आणि ८ परिसिष्टे", "en": "250 Sections and 8 Schedules" },
+        { "mr": "४०० कलमे आणि १२ परिसिष्टे", "en": "400 Sections and 12 Schedules" },
+        { "mr": "१८० कलमे आणि ६ परिसिष्टे", "en": "180 Sections and 6 Schedules" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९३५): १९३५ चा कायदा हा अत्यंत मोठा आणि क्लिष्ट कागदपत्र होता, ज्यात ३२१ कलमे (Sections) आणि १० परिसिष्टे (Schedules) समाविष्ट होती. यातून अनेक तरतुदी स्वतंत्र भारताच्या राज्यघटनेत जशाच्या तशा किंवा सुधारणा करून घेतल्या गेल्या.\n\n[संदर्भ: एम. लक्ष्मीकांत]",
+        "en": "(1935): The Government of India Act of 1935 was an extensive and complex document containing 321 sections and 10 schedules, providing a major framework for independent India's Constitution.\n\n"
+      }
+    },
+    {
+      "id": 24,
+      "question": {
+        "mr": "खालीलपैकी कोणत्या कायद्याने प्रथमच केंद्रीय व प्रांतीय कायदेमंडळांमधील विषयांची 'फेडरल सूची', 'प्रांतीय सूची' आणि 'समवर्ती सूची' अशी विभागणी केली?",
+        "en": "Which of the following acts first divided the legislative subjects between the Centre and provinces into 'Federal List', 'Provincial List', and 'Concurrent List'?"
+      },
+      "options": [
+        { "mr": "१९१९ चा कायदा", "en": "Government of India Act 1919" },
+        { "mr": "१९३५ चा भारत सरकार कायदा (Government of India Act 1935)", "en": "Government of India Act 1935" },
+        { "mr": "१८६१ चा कायदा", "en": "Indian Councils Act 1861" },
+        { "mr": "१८९२ चा कायदा", "en": "Indian Councils Act 1892" }
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": {
+        "mr": "(१९३५): १९३५ च्या कायद्याने केंद्रात आणि प्रांतांमध्ये अधिकारांची स्पष्ट तीन याद्यांद्वारे विभागणी केली - फेडरल सूची (केंद्र सूची - ५९ विषय), प्रांतीय सूची (५४ विषय) आणि समवर्ती सूची (३६ विषय). उरलेले अधिकार (Residuary powers) व्हाइसरॉयकडे दिले होते.\n\n[संदर्भ: एम. लक्ष्मीकांत]",
+        "en": "(1935): The Government of India Act of 1935 divided powers between the Centre and units into three lists: Federal List, Provincial List, and Concurrent List, forming the bedrock of modern Indian federalism.\n\n"
+      }
+    },
+    {
+      "id": 25,
+      "question": {
+        "mr": "ब्रिटिश भारतात पहिल्यांदाच केंद्रीय विधिमंडळात 'थेट निवडणुका' (Direct Elections) घेण्याची पद्धत कोणत्या कायद्याद्वारे सुरू करण्यात आली?",
+        "en": "By which act was the system of 'Direct Elections' to the Central Legislature first introduced in British India?"
+      },
+      "options": [
+        { "mr": "१८९२ चा कायदा", "en": "Indian Councils Act 1892" },
+        { "mr": "१९०९ चा मॉले-मिंटो कायदा", "en": "Morley-Minto Reforms 1909" },
+        { "mr": "१९१९ चा मॉन्टग्यू-चेम्सफोर्ड कायदा (Government of India Act 1919)", "en": "Government of India Act 1919" },
+        { "mr": "१९३५ चा कायदा", "en": "Government of India Act 1935" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "(१९१९): १९१९ च्या मॉन्टग्यू-चेम्सफोर्ड कायद्याने देशात पहिल्यांदाच द्विसदनीय पद्धत आणि 'थेट निवडणुका' (Direct Elections) सुरू केल्या. यामुळे काही निवडक भारतीयांना मतदानाचा अधिकार मिळाला.\n\n[संदर्भ: एम. लक्ष्मीकांत / स्पेक्ट्रम]",
+        "en": "(1919): The Government of India Act of 1919 introduced direct elections in the country for the first time, allowing a restricted franchise for citizens to vote for members of the Central Legislative Assembly.\n\n"
+      }
+    }
+  ]
+}

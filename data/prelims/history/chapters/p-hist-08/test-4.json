@@ -1,0 +1,464 @@
+{
+  "testId": "p-hist-08-t4",
+  "title": {
+    "mr": "स्वातंत्र्य चळवळ व स्वातंत्र्यप्राप्ती (माऊंटबॅटन योजना व फाळणी) — सराव 4",
+    "en": "Freedom Movement and Independence (Mountbatten Plan & Partition) — Practice Test 4"
+  },
+  "durationMinutes": 20,
+  "marksPerQuestion": 1,
+  "negativeMarking": 0.25,
+  "totalMarks": 25,
+  "difficulty": "मध्यम ते काठिण्य",
+  "questions": [
+    {
+      "id": 1,
+      "question": {
+        "mr": "मार्च १९४७ मध्ये भारताचे अंतिम वायसराय म्हणून पदभार स्वीकारणारे आणि भारताच्या फाळणीचा अंतिम मसुदा तयार करणारे अधिकारी कोण होते?",
+        "en": "Who assumed office as the final Viceroy of India in March 1947 and engineered the final partition blueprint?"
+      },
+      "options": [
+        { "mr": "लॉर्ड माऊंटबॅटन (Lord Mountbatten)", "en": "Lord Mountbatten" },
+        { "mr": "लॉर्ड वेव्हेल", "en": "Lord Wavell" },
+        { "mr": "लॉर्ड लिनलिथगो", "en": "Lord Linlithgow" },
+        { "mr": "सर स्टॅफर्ड क्रिप्स", "en": "Sir Stafford Cripps" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९४७): भारताचे अंतिम वायसराय म्हणून लॉर्ड माऊंटबॅटन यांनी मार्च १९४७ मध्ये पदभार स्वीकारला आणि वेगाने परिस्थिती हाताळत ३ जून १९४७ रोजी फाळणीची योजना जाहीर केली.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / डॉ. स. शि. गाठाळ]",
+        "en": "(1947): Lord Mountbatten arrived as the final Viceroy in March 1947, tasked with executing a swift and peaceful exit from the subcontinent.\n\n"
+      }
+    },
+    {
+      "id": 2,
+      "question": {
+        "mr": "माऊंटबॅटन योजना (३ जून १९४७) नुसार पंजाब आणि बंगालच्या प्रांतांच्या फाळणीबाबत काय ठरले होते?",
+        "en": "What did the Mountbatten Plan of June 3, 1947, stipulate regarding the provinces of Punjab and Bengal?"
+      },
+      "options": [
+        { "mr": "तेथील प्रांतिक कायदेमंडळांच्या सदस्यांची बैठक होऊन धार्मिक आधारावर फाळणीबाबत निर्णय घेतला जाईल", "en": "Provincial assemblies would meet to vote on the partition of Punjab and Bengal on religious lines" },
+        { "mr": "त्यांची फाळणी होणार नाही", "en": "They would not be partitioned" },
+        { "mr": "त्यांना ब्रिटनमध्ये समाविष्ट केले जाईल", "en": "They would be integrated into Britain" },
+        { "mr": "त्यांना स्वतंत्र राष्ट्रे घोषित केले जाईल", "en": "They would be declared independent nations" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९४७): माऊंटबॅटन योजनेत पंजाब व बंगालच्या प्रांतिक कायदेमंडळांना फाळणीबाबत मतदान करण्याचे अधिकार दिले गेले, ज्यामुळे पश्चिम पंजाब व पूर्व बंगाल पाकिस्तानला गेले तर पूर्व पंजाब व पश्चिम बंगाल भारतात राहिले.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / डॉ. स. शि. गाठाळ]",
+        "en": "(1947): The Mountbatten Plan provided for the partitioning of Punjab and Bengal based on votes by members of their respective provincial legislative assemblies.\n\n"
+      }
+    },
+    {
+      "id": 3,
+      "question": {
+        "mr": "माऊंटबॅटन योजनेनुसार उत्तर-पश्चिम सीमा प्रांत (NWFP) आणि आसाममधील सिलहट (Sylhet) जिल्ह्यात फाळणीपूर्वी काय घेण्यात आले होते?",
+        "en": "What democratic mechanism was utilized in the NWFP and Sylhet district of Assam under the Mountbatten Plan to decide their national affiliation?"
+      },
+      "options": [
+        { "mr": "जनमत चाचणी / जनमत संग्रह (Referendum / Plebiscite)", "en": "Referendum / Plebiscite" },
+        { "mr": "लष्करी कब्जा", "en": "Military occupation" },
+        { "mr": "प्रत्यक्ष निवडणूक", "en": "Direct general election" },
+        { "mr": "ब्रिटिश राजाचा निर्णय", "en": "Royal decree" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९४७): माऊंटबॅटन योजनेनुसार उत्तर-पश्चिम सीमा प्रांत (NWFP) आणि सिलहट जिल्ह्यात भारत की पाकिस्तान यात कोणाकडे जायचे हे ठरवण्यासाठी 'जनमत चाचणी' (Referendum) घेतली गेली.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1947): To resolve territorial ambiguity, the Mountbatten Plan mandated a public referendum in the NWFP and the Muslim-majority Sylhet district of Assam.\n\n"
+      }
+    },
+    {
+      "id": 4,
+      "question": {
+        "mr": "ब्रिटीश संसदेने जुलै १९४७ मध्ये संमत केलेल्या 'भारतीय स्वातंत्र्य कायदा १९४७' (Indian Independence Act 1947) ला राजाची मंजुरी (Royal Assent) कधी मिळाली होती?",
+        "en": "On which date did the Indian Independence Act 1947 receive Royal Assent from the British Monarch?"
+      },
+      "options": [
+        { "mr": "१८ जुलै १९४७ (July 18, 1947)", "en": "July 18, 1947" },
+        { "mr": "१५ ऑगस्ट १९४७", "en": "August 15, 1947" },
+        { "mr": "३ जून १९४७", "en": "June 3, 1947" },
+        { "mr": "२६ जानेवारी १९५०", "en": "January 26, 1950" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९४७): माऊंटबॅटन योजनेवर आधारीत 'भारतीय स्वातंत्र्य कायदा १९४७' ब्रिटीश संसदेत पास होऊन १८ जुलै १९४७ रोजी त्याला अधिकृत राजेशाही मंजुरी (Royal Assent) मिळाली.\n\n[संदर्भ: एम. लक्ष्मीकांत / स्पेक्ट्रम]",
+        "en": "(1947): The Indian Independence Bill, based on the Mountbatten Plan, was swiftly passed by the British Parliament and received Royal Assent on July 18, 1947.\n\n"
+      }
+    },
+    {
+      "id": 5,
+      "question": {
+        "mr": "भारतीय स्वातंत्र्य कायदा १९४७ नुसार १५ ऑगस्ट १९४७ रोजी भारत आणि पाकिस्तान हे दोन स्वतंत्र देश अस्तित्वात आले. या कायद्याने दोन्ही देशांसाठी काय निर्माण केले?",
+        "en": "According to the Indian Independence Act 1947, what executive office replaced the Viceroy in each of the new dominions?"
+      },
+      "options": [
+        { "mr": "गव्हर्नर जनरल (Governor-General for each dominion)", "en": "Governor-General for each dominion" },
+        { "mr": "ब्रिटिश पंतप्रधान", "en": "British Prime Minister" },
+        { "mr": "मुख्य सेनापती", "en": "Commander-in-Chief" },
+        { "mr": "साम्राज्य आयुक्त", "en": "Imperial Commissioner" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९४७): भारतीय स्वातंत्र्य कायद्यानुसार ब्रिटीश संसदेने व्हाइसरॉय पद रद्द केले आणि प्रत्येक राज्यासाठी (भारत आणि पाकिस्तान) एक 'गव्हर्नर जनरल' पद निर्माण केले.\n\n[संदर्भ: एम. लक्ष्मीकांत / स्पेक्ट्रम]",
+        "en": "(1947): The 1947 Act abolished the Viceroyalty, instituting a Governor-General for each of the two newly independent dominions.\n\n"
+      }
+    },
+    {
+      "id": 6,
+      "question": {
+        "mr": "भारत आणि पाकिस्तान यांच्यातील सीमा निश्चित करण्यासाठी जुलै १९४७ मध्ये स्थापन केलेल्या 'सीमा आयोगाचे' (Boundary Commission) अध्यक्षपद कोणाकडे होते?",
+        "en": "Who chaired the Boundary Commission established in July 1947 to demarcate the borders between India and Pakistan?"
+      },
+      "options": [
+        { "mr": "सर सिरिल रेडक्लिफ (Sir Cyril Radcliffe)", "en": "Sir Cyril Radcliffe" },
+        { "mr": "लॉर्ड माऊंटबॅटन", "en": "Lord Mountbatten" },
+        { "mr": "सर स्टॅफर्ड क्रिप्स", "en": "Sir Stafford Cripps" },
+        { "mr": "व्ही. पी. मेनन", "en": "V.P. Menon" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९४७): पंजाब आणि बंगालच्या सीमा आखण्यासाठी 'सर सिरिल रेडक्लिफ' यांच्या अध्यक्षतेखाली सीमा आयोग (Boundary Commission) नेमला गेला, ज्याने अवघ्या काही आठवड्यांत 'रेडक्लिफ रेषा' निश्चित केली.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1947): Sir Cyril Radcliffe chaired the Punjab and Bengal Boundary Commissions, hastily drawing the notorious 'Radcliffe Line' that partitioned the subcontinent.\n\n"
+      }
+    },
+    {
+      "id": 7,
+      "question": {
+        "mr": "१५ ऑगस्ट १९४७ च्या मध्यरात्री भारताचे पहिले पंतप्रधान म्हणून पंडित जवाहरलाल नेहरू यांनी कोणते ऐतिहासिक भाषण दिले होते?",
+        "en": "What was the title and essence of Jawaharlal Nehru's iconic midnight speech delivered on August 14-15, 1947?"
+      },
+      "options": [
+        { "mr": "ट्रिस्ट विथ डेस्टिनी (Tryst with Destiny)", "en": "Tryst with Destiny" },
+        { "mr": "फ्रीडम ऑफ इंडिया", "en": "Freedom of India" },
+        { "mr": "व्हिक्ट्री स्पीच", "en": "Victory Speech" },
+        { "mr": "स्वराज जाहीरनामा", "en": "Swaraj Manifesto" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९४७): १५ ऑगस्ट १९४७ च्या मध्यरात्री संविधान सभेच्या विशेष अधिवेशनात पंडित जवाहरलाल नेहरू यांनी 'ट्रिस्ट विथ डेस्टिनी' (Tryst with Destiny) हे अत्यंत भावूक आणि ऐतिहासिक भाषण दिले.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1947): At the stroke of midnight, Jawaharlal Nehru delivered his immortal 'Tryst with Destiny' speech, marking India's historic awakening to freedom.\n\n"
+      }
+    },
+    {
+      "id": 8,
+      "question": {
+        "mr": "स्वतंत्र भारताचे पहिले गव्हर्नर जनरल म्हणून कोणी शपथ घेतली होती, तर स्वतंत्र पाकिस्तानचे पहिले गव्हर्नर जनरल कोण झाले?",
+        "en": "Who served as the first Governor-General of independent India, and who became the first Governor-General of Pakistan?"
+      },
+      "options": [
+        { "mr": "भारताचे: लॉर्ड माऊंटबॅटन, पाकिस्तानचे: मोहम्मद अली जिना", "en": "India: Lord Mountbatten; Pakistan: M.A. Jinnah" },
+        { "mr": "भारताचे: चक्रवर्ती राजगोपालाचारी, पाकिस्तानचे: लियाकत अली खान", "en": "India: C. Rajagopalachari; Pakistan: Liaquat Ali Khan" },
+        { "mr": "भारताचे: जवाहरलाल नेहरू, पाकिस्तानचे: जिना", "en": "India: Jawaharlal Nehru; Pakistan: Jinnah" },
+        { "mr": "भारताचे: राजेंद्र प्रसाद, पाकिस्तानचे: सर आखा खान", "en": "India: Rajendra Prasad; Pakistan: Aga Khan" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९४७): भारताच्या विनंतीनुसार लॉर्ड माऊंटबॅटन हे स्वतंत्र भारताचे पहिले गव्हर्नर जनरल राहिले (नंतर १९४८ मध्ये सी. राजगोपालाचारी झाले), तर पाकिस्तानात मोहम्मद अली जिना हे स्वतः गव्हर्नर जनरल बनले.\n\n[संदर्भ: एम. लक्ष्मीकांत / स्पेक्ट्रम]",
+        "en": "(1947): Lord Mountbatten stayed on as India's first Governor-General, while M.A. Jinnah assumed the post of Governor-General of Pakistan.\n\n"
+      }
+    },
+    {
+      "id": 9,
+      "question": {
+        "mr": "स्वातंत्र्यप्राप्तीनंतर (१९४७) भारतातील ५०० हून अधिक स्वदेशी संस्थानांचे (Princely States) विलीनीकरण यशस्वीरीत्या पार पाडणारे मुख्य नेते कोण होते?",
+        "en": "Which national leader successfully engineered the political integration of over 500 princely states into the Union of India post-independence?"
+      },
+      "options": [
+        { "mr": "सरदार वल्लभभाई पटेल (Sardar Vallabhbhai Patel - व्ही. पी. मेनन यांच्या सहकार्याने)", "en": "Sardar Vallabhbhai Patel (with V.P. Menon)" },
+        { "mr": "पंडित जवाहरलाल नेहरू", "en": "Jawaharlal Nehru" },
+        { "mr": "महात्मा गांधी", "en": "Mahatma Gandhi" },
+        { "mr": "चक्रवर्ती राजगोपालाचारी", "en": "C. Rajagopalachari" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९४७-१९४८): भारताचे पहिले गृहमंत्री सरदार वल्लभभाई पटेल आणि सचिव व्ही. पी. मेनन यांनी आपल्या मुत्सद्देगिरीच्या जोरावर जुन्या संस्थानिकांचे विलीनीकरण करत अखंड भारताची निर्मिती केली.\n\n[संदर्भ: एम. लक्ष्मीकांत / स्पेक्ट्रम]",
+        "en": "(1947-1948): As India's first Home Minister, Sardar Vallabhbhai Patel, ably assisted by V.P. Menon, orchestrated the historic integration of princely states into a unified Indian nation.\n\n"
+      }
+    },
+    {
+      "id": 10,
+      "question": {
+        "mr": "काश्मीर संस्थानाचे (Jammu and Kashmir) भारतामध्ये विलीनीकरण ऑक्टोबर १९४७ मध्ये कोणत्या कागदपत्रावर स्वाक्षरी झाल्यावर झाले?",
+        "en": "Under what legal instrument did Maharaja Hari Singh of Jammu and Kashmir execute accession to India in October 1947?"
+      },
+      "options": [
+        { "mr": "विलिनीकरण करारपत्र (Instrument of Accession)", "en": "Instrument of Accession" },
+        { "mr": "दिल्ली करार", "en": "Delhi Pact" },
+        { "mr": "श्रीनगर मसुदा", "en": "Srinagar Draft" },
+        { "mr": "भारत-पाक करार", "en": "Indo-Pak Treaty" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९४७): पाकिस्तान समर्थित कबिल्यांच्या आक्रमणावर महाराजा हरी सिंग यांनी २६ ऑक्टोबर १९४७ रोजी 'विलिनीकरण करारपत्रावर' (Instrument of Accession) स्वाक्षरी करून काश्मीर भारतात विलीन केले.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / एम. लक्ष्मीकांत]",
+        "en": "(1947): Faced with tribal invasion backed by Pakistan, Maharaja Hari Singh signed the 'Instrument of Accession' on October 26, 1947, legally merging Jammu and Kashmir with India.\n\n"
+      }
+    },
+    {
+      "id": 11,
+      "question": {
+        "mr": "स्वातंत्र्योत्तर काळात हैदराबाद संस्थानाचे विलीनीकरण करण्यासाठी सप्टेंबर १९४८ मध्ये कोणती लष्करी/पोलिस कारवाई राबवली गेली होती?",
+        "en": "What was the official code name of the military/police action launched in September 1948 to integrate Hyderabad into the Indian Union?"
+      },
+      "options": [
+        { "mr": "ऑपरेशन पोलो (Operation Polo / Police Action)", "en": "Operation Polo" },
+        { "mr": "ऑपरेशन विजय", "en": "Operation Vijay" },
+        { "mr": "ऑपरेशन शक्ती", "en": "Operation Shakti" },
+        { "mr": "ऑपरेशन मेघदूत", "en": "Operation Meghdoot" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९४८): हैदराबादच्या निजामाने भारतात विलीन होण्यास नकार दिल्यावर सप्टेंबर १९४८ मध्ये सरदार पटेलांनी 'ऑपरेशन पोलो' (पोलिस कारवाई) राबवत हैदराबादचे भारतात विलीनीकरण घडवून आणले.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / एम. लक्ष्मीकांत]",
+        "en": "(1948): When the Nizam of Hyderabad refused to accede to India, Sardar Patel executed 'Operation Polo' (Police Action) in September 1948, successfully integrating the state.\n\n"
+      }
+    },
+    {
+      "id": 12,
+      "question": {
+        "mr": "जुनागढ (Junagadh) संस्थानाचे भारतात विलीनीकरण कसे झाले होते?",
+        "en": "How was the princely state of Junagadh integrated into the Indian Union?"
+      },
+      "options": [
+        { "mr": "लोकमत चाचणीद्वारे (Plebiscite / Janmat Chachni)", "en": "Through a public Plebiscite" },
+        { "mr": "थेट लष्करी आक्रमण करून", "en": "Through direct military invasion" },
+        { "mr": "नवाबने स्वेच्छेने स्वाक्षरी करून", "en": "Voluntary signature by the Nawab" },
+        { "mr": "ब्रिटनच्या मध्यस्थीने", "en": "Through British mediation" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९४७-१९४८): जुनागढचा नवाब पाकिस्तानात सामील होण्याचा निर्णय घेत पळून गेल्यावर, तिथल्या जनतेच्या इच्छेनुसार फेब्रुवारी १९४८ मध्ये 'लोकमत चाचणी' (Plebiscite) घेतली गेली, ज्यातून भारतात राहण्याचा कौल मिळाला.\n\n[संदर्भ: एम. लक्ष्मीकांत]",
+        "en": "(1947-1948): Following the Nawab's flight to Pakistan, a public plebiscite was conducted in Junagadh in February 1948, resulting in an overwhelming mandate for integration with India.\n\n"
+      }
+    },
+    {
+      "id": 13,
+      "question": {
+        "mr": "गोव्याला पोर्तुगीजांच्या दिर्घकालीन राजवटीपासून मुक्त करण्यासाठी भारतीय सैन्याने डिसेंबर १९६१ मध्ये कोणते लष्करी अभियान राबवले होते?",
+        "en": "What was the code name of the military action launched by India in December 1961 to liberate Goa from Portuguese rule?"
+      },
+      "options": [
+        { "mr": "ऑपरेशन विजय (Operation Vijay - December 1961)", "en": "Operation Vijay" },
+        { "mr": "ऑपरेशन पोलो", "en": "Operation Polo" },
+        { "mr": "ऑपरेशन मेघदूत", "en": "Operation Meghdoot" },
+        { "mr": "ऑपरेशन क्रांती", "en": "Operation Kranti" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९६१): पोर्तुगीजांच्या ताब्यातून गोवा, दमन व दीव मुक्त करण्यासाठी डिसेंबर १९६१ मध्ये भारतीय लष्कराने 'ऑपरेशन विजय' राबवले आणि ४५१ वर्षांच्या पोर्तुगीज राजवटीचा अंत केला.\n\n[संदर्भ: एम. लक्ष्मीकांत / स्पेक्ट्रम]",
+        "en": "(1961): India executed 'Operation Vijay' in December 1961, swiftly liberating Goa, Daman, and Diu from 450 years of Portuguese colonial occupation.\n\n"
+      }
+    },
+    {
+      "id": 14,
+      "question": {
+        "mr": "फ्रेंच वसाहतींच्या विरोधात लढा देत 'पाँडिचेरी' (Puducherry) आणि इतर प्रदेश भारतीय संघराज्यात केव्हा विलीन झाले?",
+        "en": "When were French colonial enclaves like Puducherry peacefully transferred and integrated into independent India?"
+      },
+      "options": [
+        { "mr": "नोव्हेंबर १९५४ (De facto transfer on Nov 1, 1954)", "en": "November 1954" },
+        { "mr": "ऑगस्ट १९४७", "en": "August 1947" },
+        { "mr": "डिसेंबर १९६१", "en": "December 1961" },
+        { "mr": "जानेवारी १९५०", "en": "January 1950" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९५४): फ्रेंच ताब्यातील पाँडिचेरी, माये, यानम् आणि चंदननगर हे प्रदेश १ नोव्हेंबर १९५४ रोजी भारताला सुपूर्द केले गेले (प्रत्यक्ष ताबा / de facto transfer).\n\n[संदर्भ: एम. लक्ष्मीकांत]",
+        "en": "(1954): French colonial pockets like Puducherry were peacefully transferred to India in November 1954 after sustained nationalist agitation, completing de facto integration.\n\n"
+      }
+    },
+    {
+      "id": 15,
+      "question": {
+        "mr": "भाषिक आधारावर निर्माण झालेले स्वतंत्र भारताचे पहिले राज्य कोणते होते, जे ऑक्टोबर १९५३ मध्ये अस्तित्वात आले?",
+        "en": "Which was the very first linguistic state carved out of Madras Presidency in October 1953?"
+      },
+      "options": [
+        { "mr": "आंध्र प्रदेश (Andhra State - तेलगू भाषिक)", "en": "Andhra State" },
+        { "mr": "महाराष्ट्र", "en": "Maharashtra" },
+        { "mr": "गुजरात", "en": "Gujarat" },
+        { "mr": "कर्नाटक", "en": "Karnataka" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९५३): पोट्टू श्रीरामलू यांच्या बलिदाननंतर केंद्राला भाग पाडले गेले आणि १ ऑक्टोबर १९५३ रोजी 'आंध्र प्रदेश' हे भाषावार प्रांतरचनेनुसार पहिले राज्य बनले.\n\n[संदर्भ: एम. लक्ष्मीकांत / स्पेक्ट्रम]",
+        "en": "(1953): Following the tragic martyrdom of Potti Sreeramulu after a hunger strike, the Andhra State was carved out as India's first linguistic state on October 1, 1953.\n\n"
+      }
+    },
+    {
+      "id": 16,
+      "question": {
+        "mr": "स्वतंत्र भारताच्या राज्यांची पुनर्रचना करण्यासाठी १९५३ मध्ये नेमलेल्या 'राज्य पुनर्रचना आयोगाचे' (States Reorganisation Commission) अध्यक्ष कोणाकडे होते?",
+        "en": "Who served as the chairman of the States Reorganisation Commission (SRC) set up in 1953?"
+      },
+      "options": [
+        { "mr": "न्यायमूर्ती फजल अली (Justice Fazal Ali)", "en": "Justice Fazal Ali" },
+        { "mr": "के. एम. पन्निकर", "en": "K.M. Panikkar" },
+        { "mr": "हृदयनाथ कुंझ्रू", "en": "H.N. Kunzru" },
+        { "mr": "एस. के. धर", "en": "S.K. Dhar" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९५३): भाषावार प्रांतरचनेच्या मागणीचा अभ्यास करण्यासाठी डिसेंबर १९५३ मध्ये 'न्यायमूर्ती फजल अली' यांच्या अध्यक्षतेखाली राज्य पुनर्रचना आयोग स्थापन झाला (इतर दोन सदस्य के. एम. पन्निकर व हृदयनाथ कुंझ्रू होते).\n\n[संदर्भ: एम. लक्ष्मीकांत]",
+        "en": "(1953): The States Reorganisation Commission was headed by Justice Fazal Ali, with K.M. Panikkar and H.N. Kunzru as members, to examine the linguistic reorganization of states.\n\n"
+      }
+    },
+    {
+      "id": 17,
+      "question": {
+        "mr": "द्विभाषिक मुंबई राज्याचे विभाजन होऊन महाराष्ट्र आणि गुजरात ही दोन स्वतंत्र राज्ये अधिकृतरीत्या कधी अस्तित्वात आली?",
+        "en": "When were the bilingual Bombay state bifurcated to officially establish the linguistic states of Maharashtra and Gujarat?"
+      },
+      "options": [
+        { "mr": "१ मे १९६० (May 1, 1960)", "en": "May 1, 1960" },
+        { "mr": "१ नोव्हेंबर १९५६", "en": "November 1, 1956" },
+        { "mr": "१५ ऑगस्ट १९४७", "en": "August 15, 1947" },
+        { "mr": "२६ जानेवारी १९५०", "en": "January 26, 1950" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९६०): संयुक्त महाराष्ट्र आंदोलनातील १०६ हुतात्म्यांच्या बलिदानानंतर संसदेने मुंबई पुनर्रचना कायदा पास केला, ज्यानुसार १ मे १९६० रोजी महाराष्ट्र आणि गुजरात ही दोन स्वतंत्र राज्ये जन्माला आली.\n\n[संदर्भ: डॉ. स. शि. गाठाळ / समाधान महाजन]",
+        "en": "(1960): Following the Samyukta Maharashtra movement and the sacrifice of martyrs, the bilingual Bombay state was bifurcated, giving birth to Maharashtra and Gujarat on May 1, 1960.\n\n"
+      }
+    },
+    {
+      "id": 18,
+      "question": {
+        "mr": "स्वातंत्र्योत्तर काळात (१९५१-१९५२) स्वतंत्र भारताच्या इतिहासातील 'पहिली सार्वत्रिक निवडणूक' (First General Elections) कोणत्या कालावधीत पार पडली होती?",
+        "en": "When were India's historic first general elections conducted under universal adult suffrage?"
+      },
+      "options": [
+        { "mr": "ऑक्टोबर १९५१ ते फेब्रुवारी १९५२ (October 1951 to February 1952)", "en": "October 1951 to February 1952" },
+        { "mr": "जानेवारी १९५०", "en": "January 1950" },
+        { "mr": "नोव्हेंबर १९४९", "en": "November 1949" },
+        { "mr": "मार्च १९५५", "en": "March 1955" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९५१-५२): स्वतंत्र भारताच्या संविधानानुसार पहिल्या सार्वत्रिक निवडणुका ऑक्टोबर १९५१ ते फेब्रुवारी १९५२ या काळात पार पडल्या, ज्यात सुकुमार सेन हे भारताचे पहिले मुख्य निवडणूक आयुक्त होते.\n\n[संदर्भ: एम. लक्ष्मीकांत]",
+        "en": "(1951-1952): India's monumental first general elections under universal adult suffrage were conducted from October 1951 to February 1952, marking a crowning triumph for Indian democracy.\n\n"
+      }
+    },
+    {
+      "id": 19,
+      "question": {
+        "mr": "कॅबिनेट मिशन योजनेअंतर्गत (१९४६) स्थापन झालेल्या संविधान सभेचे हंगामी अध्यक्ष म्हणून कोणाची निवड झाली होती?",
+        "en": "Who served as the temporary/interim President of the newly convened Constituent Assembly in December 1946?"
+      },
+      "options": [
+        { "mr": "डॉ. सच्चिदानंद सिन्हा (Dr. Sachchidananda Sinha)", "en": "Dr. Sachchidananda Sinha" },
+        { "mr": "डॉ. राजेंद्र प्रसाद", "en": "Dr. Rajendra Prasad" },
+        { "mr": "डॉ. बाबासाहेब आंबेडकर", "en": "Dr. B.R. Ambedkar" },
+        { "mr": "जवाहरलाल नेहरू", "en": "Jawaharlal Nehru" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९४६): ९ डिसेंबर १९४६ रोजी संविधान सभेची पहिली बैठक भरली, तेव्हा फ्रान्सच्या प्रथेनुसार सर्वात ज्येष्ठ सदस्य डॉ. सच्चिदानंद सिन्हा यांची हंगामी अध्यक्ष म्हणून निवड झाली.\n\n[संदर्भ: एम. लक्ष्मीकांत]",
+        "en": "(1946): Following French practice, Dr. Sachchidananda Sinha, the oldest member, was appointed as temporary interim President on Dec 9, 1946.\n\n"
+      }
+    },
+    {
+      "id": 20,
+      "question": {
+        "mr": "संविधान सभेच्या मसुदा समितीचे (Drafting Committee) अध्यक्षपद कोणाकडे होते?",
+        "en": "Who was appointed as the chairman of the Drafting Committee of the Constituent Assembly?"
+      },
+      "options": [
+        { "mr": "डॉ. बाबासाहेब आंबेडकर (Dr. B.R. Ambedkar)", "en": "Dr. B.R. Ambedkar" },
+        { "mr": "के. एम. मुन्शी", "en": "K.M. Munshi" },
+        { "mr": "अल्लादी कृष्णास्वामी अय्यर", "en": "Alladi Krishnaswamy Iyer" },
+        { "mr": "बी. एन. राऊ", "en": "B.N. Rau" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९४७): २९ ऑगस्ट १९४७ रोजी स्थापन झालेल्या ७ सदस्यीय मसुदा समितीचे अध्यक्ष म्हणून डॉ. बाबासाहेब आंबेडकर यांनी ऐतिहासिक भूमिका बजावली.\n\n[संदर्भ: एम. लक्ष्मीकांत]",
+        "en": "(1947): Dr. B.R. Ambedkar was appointed Chairman of the Drafting Committee formed on August 29, 1947.\n\n"
+      }
+    },
+    {
+      "id": 21,
+      "question": {
+        "mr": "भारताची राज्यघटना तयार करण्यासाठी संविधान सभेला एकूण किती अवधी लागला होता?",
+        "en": "How much total time did the Constituent Assembly take to frame the Constitution of India?"
+      },
+      "options": [
+        { "mr": "२ वर्षे, ११ महिने आणि १८ दिवस (2 years, 11 months, and 18 days)", "en": "2 years, 11 months, and 18 days" },
+        { "mr": "३ वर्षे, २ महिने आणि ५ दिवस", "en": "3 years, 2 months, and 5 days" },
+        { "mr": "१ वर्ष, ८ महिने आणि १० दिवस", "en": "1 year, 8 months, and 10 days" },
+        { "mr": "५ वर्षे, ६ महिने आणि १२ दिवस", "en": "5 years, 6 months, and 12 days" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९४६-१९४९): भारताची राज्यघटना तयार करण्यासाठी संविधान सभेला २ वर्षे, ११ महिने आणि १८ दिवस इतका काळ लागला.\n\n[संदर्भ: एम. लक्ष्मीकांत]",
+        "en": "(1946-1949): It took the Constituent Assembly precisely 2 years, 11 months, and 18 days to frame the Constitution.\n\n"
+      }
+    },
+    {
+      "id": 22,
+      "question": {
+        "mr": "भारतीय राज्यघटना अधिकृतरीत्या कधी स्वीकारली गेली आणि ती कधी अमलात आली?",
+        "en": "When was the Constitution of India formally adopted, and when did it come into force?"
+      },
+      "options": [
+        { "mr": "स्वीकार: २६ नोव्हेंबर १९४९, अमलात: २६ जानेवारी १९५०", "en": "Adopted: November 26, 1949; Enforced: January 26, 1950" },
+        { "mr": "स्वीकार: १५ ऑगस्ट १९४७, अमलात: २६ जानेवारी १९४८", "en": "Adopted: August 15, 1947; Enforced: January 26, 1948" },
+        { "mr": "स्वीकार: २६ जानेवारी १९५०, अमलात: १५ ऑगस्ट १९५०", "en": "Adopted: Jan 26, 1950; Enforced: Aug 15, 1950" },
+        { "mr": "स्वीकार: ३० जून १९४८, अमलात: २६ नोव्हेंबर १९४९", "en": "Adopted: June 30, 1948; Enforced: Nov 26, 1949" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९४९-१९५०): संविधान २६ नोव्हेंबर १९४९ रोजी स्वीकारले गेले आणि २६ जानेवारी १९५० रोजी अमलात आले.\n\n[संदर्भ: एम. लक्ष्मीकांत]",
+        "en": "(1949-1950): The Constitution was adopted on November 26, 1949, and came into force on January 26, 1950.\n\n"
+      }
+    },
+    {
+      "id": 23,
+      "question": {
+        "mr": "स्वतंत्र भारताच्या पहिल्या केंद्रीय मंत्रिमंडळात (१९४७) 'कायदेमंत्री' (Law Minister) म्हणून कोणाची नियुक्ती केली गेली होती?",
+        "en": "Who was appointed as the first Law Minister of independent India in the cabinet of 1947?"
+      },
+      "options": [
+        { "mr": "डॉ. बी. आर. आंबेडकर (Dr. B.R. Ambedkar)", "en": "Dr. B.R. Ambedkar" },
+        { "mr": "सी. राजगोपालाचारी", "en": "C. Rajagopalachari" },
+        { "mr": "जॉन मथाई", "en": "John Matthai" },
+        { "mr": "श्यामाप्रसाद मुखर्जी", "en": "Syama Prasad Mukherjee" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९४७): पंतप्रधान नेहरूंच्या मंत्रिमंडळात काँग्रेस पक्षाबाहेरून डॉ. बाबासाहेब आंबेडकरांना निमंत्रित केले गेले आणि त्यांनी स्वतंत्र भारताचे पहिले 'कायदेमंत्री' म्हणून ऐतिहासिक कार्यभार सांभाळला.\n\n[संदर्भ: एम. लक्ष्मीकांत]",
+        "en": "(1947): Dr. B.R. Ambedkar accepted the invitation to join independent India's first cabinet, serving with distinction as the nation's first Minister of Law.\n\n"
+      }
+    },
+    {
+      "id": 24,
+      "question": {
+        "mr": "स्वतंत्र भारताच्या पहिल्या मंत्रिमंडळात 'गृहमंत्री' म्हणून कोणाची वर्णी लागली होती?",
+        "en": "Who served as the first Home Minister of independent India in 1947?"
+      },
+      "options": [
+        { "mr": "सरदार वल्लभभाई पटेल (Sardar Vallabhbhai Patel)", "en": "Sardar Vallabhbhai Patel" },
+        { "mr": "जवाहरलाल नेहरू", "en": "Jawaharlal Nehru" },
+        { "mr": "डॉ. राजेंद्र प्रसाद", "en": "Dr. Rajendra Prasad" },
+        { "mr": "मौलाना आजाद", "en": "Maulana Azad" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९४७): १५ ऑगस्ट १९४७ रोजी स्थापन झालेल्या स्वतंत्र भारताच्या पहिल्या मंत्रिमंडळात सरदार वल्लभभाई पटेल यांनी 'गृहमंत्री' (Home Minister) पदाची धुरा सांभाळली.\n\n[संदर्भ: एम. लक्ष्मीकांत]",
+        "en": "(1947): Sardar Vallabhbhai Patel served as India's first Minister of Home Affairs in the post-independence cabinet.\n\n"
+      }
+    },
+    {
+      "id": 25,
+      "question": {
+        "mr": "भारतीय राष्ट्रीय चळवळीचा आणि स्वातंत्र्योत्तर वाटचालीचा मुख्य वारसा काय आहे?",
+        "en": "What is the enduring legacy of the Indian National Movement and post-independence consolidation?"
+      },
+      "options": [
+        { "mr": "लोकशाही मूल्ये, संविधानवाद, सर्वसमावेशक राष्ट्रवाद, धर्मनिरपेक्षता आणि सामाजिक न्याय", "en": "Democratic governance, constitutionalism, inclusive secular nationalism, and social justice" },
+        { "mr": "धर्म आधारित राजकारण व हुकूमशाही", "en": "Theocratic authoritarianism" },
+        { "mr": "प्रांतीय व भाषावार द्वेष", "en": "Endless linguistic hatred" },
+        { "mr": "परकीय सत्तेची आजीवन गुलामी", "en": "Perpetual colonial subservience" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(स्वातंत्र्योत्तर काळ): स्वातंत्र्यलढ्याने आणि त्यानंतरच्या एकात्मतेने भारताला लोकशाही, संविधान सर्वोच्चता, धर्मनिरपेक्षता आणि सर्वसमावेशकतेचा अमूल्य वारसा दिला आहे.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / एम. लक्ष्मीकांत]",
+        "en": "(Post-Independence): The national movement and consolidation bequeathed a robust commitment to constitutional democracy, secular pluralism, and the rule of law.\n\n"
+      }
+    }
+  ]
+}

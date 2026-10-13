@@ -1,0 +1,464 @@
+{
+  "testId": "p-hist-08-t6",
+  "title": {
+    "mr": "स्वातंत्र्य चळवळ व स्वातंत्र्यप्राप्ती (अंतिम सर्वसमावेशक सराव) — सराव 6",
+    "en": "Freedom Movement and Independence (Final Comprehensive Practice) — Practice Test 6"
+  },
+  "durationMinutes": 20,
+  "marksPerQuestion": 1,
+  "negativeMarking": 0.25,
+  "totalMarks": 25,
+  "difficulty": "कठीण (MPSC Standard)",
+  "questions": [
+    {
+      "id": 1,
+      "question": {
+        "mr": "क्रिप्स मिशनच्या (मार्च १९४२) संदर्भात खालीलपैकी कोणते विधान चुकीचे आहे?",
+        "en": "Which of the following statements regarding the Cripps Mission (March 1942) is INCORRECT?"
+      },
+      "options": [
+        { "mr": "क्रिप्स मिशनने भारताला तात्काळ पूर्ण आणि अखंड स्वातंत्र्याची घोषणा केली होती", "en": "The mission immediately declared complete and undivided independence for India" },
+        { "mr": "या मिशनच्या प्रस्तावात युद्धानंतर डोमिनियन स्टेटस देण्याचे म्हटले होते", "en": "It promised post-war Dominion Status" },
+        { "mr": "यात प्रांतांना संघराज्यातून बाहेर पडण्याचा (Opt-out) अधिकार सुचवला होता", "en": "It proposed the right of provinces to opt out of the Indian Union" },
+        { "mr": "गांधीजींनी या प्रस्तावाला 'बुडत्या बँकेचा पोस्ट डेटेड चेक' म्हटले होते", "en": "Gandhi famously described it as a post-dated cheque on a crashing bank" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९४२): विधान 'अ' चुकीचे आहे कारण क्रिप्स मिशनने तात्काळ पूर्ण स्वातंत्र्याची मागणी फेटाळली होती आणि फक्त युद्धानंतर 'डोमिनियन स्टेटस' देण्याचे आश्वासन दिले होते.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1942): Statement A is incorrect because the Cripps Mission explicitly rejected immediate independence, offering only a conditional post-war Dominion status.\n\n"
+      }
+    },
+    {
+      "id": 2,
+      "question": {
+        "mr": "भारत छोडो आंदोलनादरम्यान (१९४२) भूमिगत राहून 'काँग्रेस रेडिओ' (Congress Radio) वरून नियमित राष्ट्रवादाची बातमी व संदेश प्रसारित करण्याचे साहस कोणी केले होते?",
+        "en": "Who bravely operated the underground 'Congress Radio' transmitter broadcasting nationalist news during the 1942 movement?"
+      },
+      "options": [
+        { "mr": "उषा मेहता (Usha Mehta)", "en": "Usha Mehta" },
+        { "mr": "अरुणा असफ अली", "en": "Aruna Asaf Ali" },
+        { "mr": "सुचेतना कृपलानी", "en": "Sucheta Kripalani" },
+        { "mr": "सरोजिनी नायडू", "en": "Sarojini Naidu" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९४२): आंदोलनाच्या काळात नेत्यांच्या अटकेमुळे बॉम्बेमध्ये उषा मेहता यांनी भूमिगत राहून गुप्तपणे 'काँग्रेस रेडिओ' सुरू केला आणि खबऱ्यांच्या बातम्या व गांधीजींचे संदेश देशभरात प्रसारित केले.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1942): Usha Mehta famously operated the clandestine 'Congress Radio' transmitter from various secret locations in Bombay during the Quit India movement.\n\n"
+      }
+    },
+    {
+      "id": 3,
+      "question": {
+        "mr": "भारत छोडो आंदोलनादरम्यान (१९४२) उत्तर प्रदेशातील बलिया (Ballia) येथे कोणाच्या नेतृत्वाखाली पहिले यशस्वी 'समांतर सरकार' (Parallel Government) स्थापन झाले होते?",
+        "en": "In which district of Uttar Pradesh was the first successful parallel government established under Chittu Pandey during the 1942 movement?"
+      },
+      "options": [
+        { "mr": "चित्तू पांडे (Chittu Pandey)", "en": "Chittu Pandey" },
+        { "mr": "क्रांतीसिंह नाना पाटील", "en": "Krantisinh Nana Patil" },
+        { "mr": "जयप्रकाश नारायण", "en": "Jayaprakash Narayan" },
+        { "mr": "अच्युतराव पटवर्धन", "en": "Achyutrao Patwardhan" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९४२): ऑगस्ट १९४२ मध्ये बलिया येथे चित्तू पांडे यांच्या नेतृत्वाखाली स्थानिकांनी ब्रिटीश अधिकाऱ्यांना हुसकावून लावत पहिले समांतर सरकार स्थापन केले आणि तुरुंगातील कैद्यांची सुटका केली.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / समाधान महाजन]",
+        "en": "(1942): Ballia in Uttar Pradesh witnessed the establishment of the first parallel national government in August 1942 under the dynamic leadership of Chittu Pandey.\n\n"
+      }
+    },
+    {
+      "id": 4,
+      "question": {
+        "mr": "महाराष्ट्रात साताऱ्यात १९४३ मध्ये क्रांतीसिंह नाना पाटील यांनी स्थापन केलेल्या 'प्रति सरकार' (Parallel Government) मधील लोकांच्या न्यायदानासाठीच्या यंत्रणेला काय म्हटले जात असे?",
+        "en": "What were the people's courts established under Nana Patil's famous 'Prati Sarkar' in Satara (1943) called?"
+      },
+      "options": [
+        { "mr": "न्यायदान मंडळे (Nyayadan Mandals)", "en": "Nyayadan Mandals (People's Courts)" },
+        { "mr": "ग्रामपंचायती", "en": "Gram Panchayats" },
+        { "mr": "लोक न्यायालय", "en": "Lok Nyayalaya" },
+        { "mr": "सदर अदालत", "en": "Sadar Adalat" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९४३): साताऱ्याच्या प्रति सरकारमध्ये सावकार व गुन्हेगारांना शिक्षा करण्यासाठी आणि तंटे मिटवण्यासाठी 'न्यायदान मंडळे' (People's Courts) स्थापन केली गेली होती, ज्यांचा न्याय अत्यंत कडक व निःपक्ष असे.\n\n[संदर्भ: डॉ. स. शि. गाठाळ / समाधान महाजन]",
+        "en": "(1943): Nana Patil's Prati Sarkar in Satara instituted popular people's courts known as 'Nyayadan Mandals' to administer swift justice and penalize collaborators and moneylenders.\n\n"
+      }
+    },
+    {
+      "id": 5,
+      "question": {
+        "mr": "सुभाषचंद्र बोस यांनी जानेवारी १९४१ मध्ये ब्रिटिशांच्या नजरकैदेतून कलकत्त्यातून अत्यंत नाट्यमयरित्या निसटून जाण्यासाठी कोणती वेषभूषा धारण केली होती?",
+        "en": "What disguise did Subhas Chandra Bose adopt when he famously escaped from house surveillance in Calcutta in January 1941?"
+      },
+      "options": [
+        { "mr": "जियाउद्दीन (Ziauddin) नावाचा उत्तर भारतीय बीमा एजंट / मुसाफिर", "en": "Ziauddin, a North Indian insurance agent/traveler" },
+        { "mr": "एक पठाण व्यापारी", "en": "A Pathan merchant" },
+        { "mr": "एक इंग्रजी अधिकारी", "en": "A British officer" },
+        { "mr": "एक बौद्ध भिक्षू", "en": "A Buddhist monk" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९४१): कलकत्त्यातील घरातून निसटताना सुभाषचंद्र बोस यांनी 'जियाउद्दीन' हे नाव धारण केले आणि विमा कंपनीचा एजंट असल्याचे भासवत उत्तर भारतीय मुसाफिराचा वेष परिधान केला होता.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1941): Escaping his residence in Calcutta, Bose disguised himself as a northern Indian insurance agent named 'Ziauddin' to slip past British guards.\n\n"
+      }
+    },
+    {
+      "id": 6,
+      "question": {
+        "mr": "जपानच्या सहकार्याने आग्नेय आशियात (सिंगापूर/बँकॉक) 'आझाद हिंद फौजेची' (INA) पुनर्रचना करताना नेताजींनी महिलांसाठी कोणती विशेष रेजिमेंट स्थापन केली होती?",
+        "en": "What was the name of the special all-women combat regiment raised in the INA under Netaji's command?"
+      },
+      "options": [
+        { "mr": "झांसीची राणी रेजिमेंट (Rani of Jhansi Regiment)", "en": "Rani of Jhansi Regiment" },
+        { "mr": "किरकिरी वाहिनी", "en": "Kasturba Brigade" },
+        { "mr": "सरोजिनी दल", "en": "Sarojini Battalion" },
+        { "mr": "आझाद महिला रेजिमेंट", "en": "Azad Women Regiment" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९४३): आझाद हिंद फौजेत महिलांच्या सहभागासाठी कॅप्टन लक्ष्मी सहगल यांच्या नेतृत्वाखाली 'झांसीची राणी रेजिमेंट' (Rani of Jhansi Regiment) ही स्वतंत्र महिला लष्करी तुकडी तयार केली गेली.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1943): Netaji formed an all-women combat regiment named the 'Rani of Jhansi Regiment' in Singapore, commanded by Captain Lakshmi Sahgal.\n\n"
+      }
+    },
+    {
+      "id": 7,
+      "question": {
+        "mr": "आझाद हिंद फौजेच्या (INA) सैनिकांनी जपानच्या फौजांसोबत मिळून ब्रिटिश सैन्याविरुद्ध मोहीम काढत भारताच्या हद्दीत मुख्यत्वे कोणत्या प्रांतात राष्ट्रीय ध्वज फडकवला होता?",
+        "en": "In which region of northeastern India did the INA, alongside Japanese forces, successfully capture territory and hoist the Indian tricolor flag in 1944?"
+      },
+      "options": [
+        { "mr": "मणिपूर (मोइरंग - Moirang, Manipur)", "en": "Moirang, Manipur" },
+        { "mr": "आसाममधील गुवाहाटी", "en": "Guwahati, Assam" },
+        { "mr": "त्रिपुरातील अगरतळा", "en": "Agartala, Tripura" },
+        { "mr": "नागालँडमधील कोहिमा", "en": "Kohima, Nagaland" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९४४): मार्च १९४४ मध्ये आझाद हिंद फौजेने इम्फाळ व कोहिमावर आक्रमण केले आणि मार्च १९४४ मध्ये मणिपूरमधील 'मोइरंग' (Moirang) येथे भारताचा तिरंगा ध्वज फडकवला.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1944): The INA spearheaded a heroic military campaign into Indian territory, successfully capturing Moirang in Manipur where the Indian tricolor was hoisted.\n\n"
+      }
+    },
+    {
+      "id": 8,
+      "question": {
+        "mr": "आझाद हिंद फौजेच्या सैनिकांवर (शाहनवाज, सहगल, ढिल्लों) नोव्हेंबर १९४५ मध्ये कुठे ऐतिहासिक 'लाल किल्ला खटला' (Red Fort Trials) चालवला गेला?",
+        "en": "Where were the historic court-martial trials of captured INA officers (Red Fort Trials) conducted in late 1945?"
+      },
+      "options": [
+        { "mr": "दिल्लीचा लाल किल्ला (Red Fort, Delhi)", "en": "Red Fort, Delhi" },
+        { "mr": "कलकत्त्याचा किल्ला", "en": "Fort William, Calcutta" },
+        { "mr": "मुंबईचा किल्ला", "en": "Bombay Castle" },
+        { "mr": "लाहोरचा किल्ला", "en": "Lahore Fort" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९४५-४६): ब्रिटिशांनी जपानच्या पराभवानंतर पकडलेल्या INA च्या सैनिकांवर दिल्लीच्या लाल किल्ल्यात (Red Fort) देशद्रोहाचे सार्वजनिक खटले चालवले, ज्यामुळे संपूर्ण भारतभर संतापाची व देशक्तीची प्रचंड लाट उठली.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / डॉ. स. शि. गाठाळ]",
+        "en": "(1945-46): The British colonial government held public court-martial trials of INA prisoners at the Red Fort in Delhi, igniting nationwide fury.\n\n"
+      }
+    },
+    {
+      "id": 9,
+      "question": {
+        "mr": "लाल किल्ल्यावरील खटल्यात (१९४५-४६) आझाद हिंद फौजेच्या सैनिकांच्या बचावासाठी काँग्रेसने स्थापन केलेल्या 'डिफेन्स कमिटीचे' नेतृत्व कोणी केले होते?",
+        "en": "Who led the stellar legal defense team established by the Congress to defend the captured INA soldiers at the Red Fort trials?"
+      },
+      "options": [
+        { "mr": "भोलाभाई देसाई (Bhulabhai Desai)", "en": "Bhulabhai Desai" },
+        { "mr": "मोतीलाल नेहरू", "en": "Motilal Nehru" },
+        { "mr": "चित्तरंजन दास", "en": "C.R. Das" },
+        { "mr": "डॉ. बाबासाहेब आंबेडकर", "en": "Dr. B.R. Ambedkar" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९४५-४६): लाल किल्ल्यावरील खटल्यात आझाद हिंद फौजेच्या अधिकाऱ्यांच्या बचावासाठी काँग्रेसच्यावतीने 'भोलाभाई देसाई' यांनी मुख्य बचाव वकील म्हणून ऐतिहासिक युक्तिवाद केला होता.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / डॉ. स. शि. गाठाळ]",
+        "en": "(1945-46): Eminent jurist Bhulabhai Desai brilliantly led the INA Defense Committee, orchestrating the legal defense that captured the nation's imagination.\n\n"
+      }
+    },
+    {
+      "id": 10,
+      "question": {
+        "mr": "फेब्रुवारी १९४६ मध्ये मुंबईत ब्रिटीश नौदलाच्या 'एचएमआयएस तलवार' (HMIS Talwar) युद्धनौकेवर झालेल्या ऐतिहासिक बंडाला काय म्हणतात?",
+        "en": "What was the name of the historic naval mutiny that broke out aboard HMIS Talwar in Bombay in February 1946?"
+      },
+      "options": [
+        { "mr": "रॉयल इंडियन नेव्ही बंड (RIN Mutiny)", "en": "Royal Indian Navy (RIN) Mutiny" },
+        { "mr": "बॉम्बे नौदल बंड", "en": "Bombay Naval Mutiny" },
+        { "mr": "खलाशी विद्रोह", "en": "Rating Revolt" },
+        { "mr": "हिंदुस्तान नेव्ही स्ट्राइक", "en": "Hindustan Navy Strike" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९४६): १९ फेब्रुवारी १९४६ रोजी मुंबईत 'एचएमआयएस तलवार' (HMIS Talwar) युद्धनौकेवरील भारतीय खलाशांनी वर्णद्वेषी वागणूक आणि निकृष्ट अन्नाविरुद्ध 'रॉयल इंडियन नेव्ही बंड' (RIN Mutiny) पुकारले.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1946): The Royal Indian Navy (RIN) mutiny began on February 19, 1946, aboard HMIS Talwar in Bombay, protesting racial discrimination and poor food.\n\n"
+      }
+    },
+    {
+      "id": 11,
+      "question": {
+        "mr": "कॅबिनेट मिशन (Cabinet Mission - मार्च १९४६) मध्ये कोणते तीन ब्रिटीश मंत्री सदस्य समाविष्ट होते?",
+        "en": "Which three British Cabinet ministers constituted the Cabinet Mission that arrived in India in March 1946?"
+      },
+      "options": [
+        { "mr": "पॅथ्रिक लॉरेन्स, सर स्टॅफर्ड क्रिप्स आणि ए. व्ही. अलेक्झांडर (Pethick-Lawrence, Stafford Cripps, and A.V. Alexander)", "en": "Pethick-Lawrence, Stafford Cripps, and A.V. Alexander" },
+        { "mr": "जॉन सायमन, क्लेमेंट एटली आणि चर्चिल", "en": "John Simon, Clement Attlee, and Churchill" },
+        { "mr": "लॉर्ड माऊंटबॅटन, वेव्हेल आणि लिनलिथगो", "en": "Lord Mountbatten, Wavell, and Linlithgow" },
+        { "mr": "रमसे मॅकडोनाल्ड, बर्कनहेड आणि बेझंट", "en": "Ramsay MacDonald, Birkenhead, and Besant" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९४६): कॅबिनेट मिशनमध्ये पॅथ्रिक लॉरेन्स (भारतमंत्री - अध्यक्ष), सर स्टॅफर्ड क्रिप्स (व्यापार मंडळ अध्यक्ष) आणि ए. व्ही. अलेक्झांडर (अ‍ॅडमिरल लॉर्ड फर्स्ट) हे तीन ब्रिटिश मंत्री सदस्य होते.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / एम. लक्ष्मीकांत]",
+        "en": "(1946): The Cabinet Mission comprised Lord Pethick-Lawrence (Secretary of State), Sir Stafford Cripps (President of the Board of Trade), and A.V. Alexander (First Lord of the Admiralty).\n\n"
+      }
+    },
+    {
+      "id": 12,
+      "question": {
+        "mr": "मुस्लिम लीगने १६ ऑगस्ट १९४६ रोजी पाळलेल्या 'प्रत्यक्ष कृती दिनामुळे' (Direct Action Day) कोणत्या शहरात सर्वात भयानक जातीय दंगली भडकल्या होत्या?",
+        "en": "Which major city witnessed the most catastrophic communal violence following the Muslim League's 'Direct Action Day' on August 16, 1946?"
+      },
+      "options": [
+        { "mr": "कलकत्ता (Calcutta / Great Calcutta Killing)", "en": "Calcutta (Great Calcutta Killing)" },
+        { "mr": "लाहोर", "en": "Lahore" },
+        { "mr": "मुंबई", "en": "Bombay" },
+        { "mr": "दिल्ली", "en": "Delhi" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९४६): १६ ऑगस्ट १९४६ च्या 'डायरेक्ट ॲक्शन डे' मुळे कलकत्ता शहरात भीषण दंगली उसळल्या, ज्या 'द ग्रेट कलकत्ता किलिंग' म्हणून ओळखल्या जातात.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1946): Direct Action Day triggered the 'Great Calcutta Killing', a horrific wave of communal violence that engulfed Calcutta in August 1946.\n\n"
+      }
+    },
+    {
+      "id": 13,
+      "question": {
+        "mr": "ब्रिटिश पंतप्रधान क्लेमेंट एटली यांनी २० फेब्रुवारी १९४७ रोजी लंडनमध्ये केलेल्या ऐतिहासिक घोषणेत भारताला सत्ता हस्तांतरित करण्याची अंतिम तारीख कोणती घोषित केली होती?",
+        "en": "What absolute target date for British withdrawal and transfer of power to Indian hands was announced by Prime Minister Clement Attlee on February 20, 1947?"
+      },
+      "options": [
+        { "mr": "३० जून १९४८ पूर्वी (Not later than June 30, 1948)", "en": "Not later than June 30, 1948" },
+        { "mr": "१५ ऑगस्ट १९४७", "en": "August 15, 1947" },
+        { "mr": "२६ जानेवारी १९५०", "en": "January 26, 1950" },
+        { "mr": "३१ डिसेंबर १९४९", "en": "December 31, 1949" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(फेब्रुवारी १९४७): एटलींच्या घोषणेनुसार ३० जून १९४८ ही ब्रिटिशांच्या भारत सोडण्याची शेवटची तारीख ठरवली गेली होती.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(February 1947): Attlee's historic announcement fixed a firm deadline of June 30, 1948, for the final withdrawal of British rule from India.\n\n"
+      }
+    },
+    {
+      "id": 14,
+      "question": {
+        "mr": "भारताची फाळणी आणि सत्ता हस्तांतरणाची अंतिम योजना कोणत्या वायसरायने ३ जून १९४७ रोजी जाहीर केली, जिचे नाव 'माऊंटबॅटन योजना' पडले?",
+        "en": "Which Viceroy announced the final partition and transfer of power plan on June 3, 1947, known as the 'Mountbatten Plan'?"
+      },
+      "options": [
+        { "mr": "लॉर्ड माऊंटबॅटन (Lord Mountbatten)", "en": "Lord Mountbatten" },
+        { "mr": "लॉर्ड वेव्हेल", "en": "Lord Wavell" },
+        { "mr": "लॉर्ड लिनलिथगो", "en": "Lord Linlithgow" },
+        { "mr": "सर स्टॅफर्ड क्रिप्स", "en": "Sir Stafford Cripps" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९४७): भारताचे अंतिम वायसराय म्हणून लॉर्ड माऊंटबॅटन यांनी ३ जून १९४७ रोजी भारत आणि पाकिस्तान अशा दोन स्वतंत्र राष्ट्रांच्या फाळणीची योजना (माऊंटबॅटन योजना) जाहीर केली.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / डॉ. स. शि. गाठाळ]",
+        "en": "(1947): The final blueprint for the partition of British India into India and Pakistan was unveiled by Viceroy Lord Mountbatten on June 3, 1947.\n\n"
+      }
+    },
+    {
+      "id": 15,
+      "question": {
+        "mr": "भारतीय स्वातंत्र्य कायदा १९४७ नुसार १५ ऑगस्ट १९४७ रोजी भारत आणि पाकिस्तान हे दोन स्वतंत्र देश अस्तित्वात आले. या कायद्याने दोन्ही देशांसाठी काय निर्माण केले?",
+        "en": "According to the Indian Independence Act 1947, what executive office replaced the Viceroy in each of the new dominions?"
+      },
+      "options": [
+        { "mr": "गव्हर्नर जनरल (Governor-General for each dominion)", "en": "Governor-General for each dominion" },
+        { "mr": "ब्रिटिश पंतप्रधान", "en": "British Prime Minister" },
+        { "mr": "मुख्य सेनापती", "en": "Commander-in-Chief" },
+        { "mr": "साम्राज्य आयुक्त", "en": "Imperial Commissioner" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९४७): भारतीय स्वातंत्र्य कायद्यानुसार ब्रिटीश संसदेने व्हाइसरॉय पद रद्द केले आणि प्रत्येक राज्यासाठी (भारत आणि पाकिस्तान) एक 'गव्हर्नर जनरल' पद निर्माण केले.\n\n[संदर्भ: एम. लक्ष्मीकांत / स्पेक्ट्रम]",
+        "en": "(1947): The 1947 Act abolished the Viceroyalty, instituting a Governor-General for each of the two newly independent dominions.\n\n"
+      }
+    },
+    {
+      "id": 16,
+      "question": {
+        "mr": "स्वातंत्र्यप्राप्तीनंतर (१९४७) भारतातील ५०० हून अधिक स्वदेशी संस्थानांचे (Princely States) भारतात विलीनीकरण करण्याचे अवघड कार्य कोणी पार पाडले?",
+        "en": "Which national leader successfully engineered the political integration of over 500 princely states into the Union of India post-independence?"
+      },
+      "options": [
+        { "mr": "सरदार वल्लभभाई पटेल (Sardar Vallabhbhai Patel)", "en": "Sardar Vallabhbhai Patel" },
+        { "mr": "जवाहरलाल नेहरू", "en": "Jawaharlal नेहरू" },
+        { "mr": "महात्मा गांधी", "en": "Mahatma Gandhi" },
+        { "mr": "चक्रवर्ती राजगोपालाचारी", "en": "C. Rajagopalachari" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९४७-१९४८): भारताचे पहिले गृहमंत्री 'सरदार वल्लभभाई पटेल' आणि सचिव व्ही. पी. मेनन यांनी आपल्या मुत्सद्देगिरीच्या जोरावर जुन्या संस्थानिकांचे विलीनीकरण करत अखंड भारताची निर्मिती केली.\n\n[संदर्भ: एम. लक्ष्मीकांत / स्पेक्ट्रम]",
+        "en": "(1947-1948): As India's first Home Minister, Sardar Vallabhbhai Patel, ably assisted by V.P. Menon, orchestrated the historic integration of princely states into a unified Indian nation.\n\n"
+      }
+    },
+    {
+      "id": 17,
+      "question": {
+        "mr": "काश्मीर संस्थानाचे (Jammu and Kashmir) भारतामध्ये विलीनीकरण ऑक्टोबर १९४७ मध्ये कोणत्या कागदपत्रावर स्वाक्षरी झाल्यावर झाले?",
+        "en": "Under what legal instrument did Maharaja Hari Singh of Jammu and Kashmir execute accession to India in October 1947?"
+      },
+      "options": [
+        { "mr": "विलिनीकरण करारपत्र (Instrument of Accession)", "en": "Instrument of Accession" },
+        { "mr": "दिल्ली करार", "en": "Delhi Pact" },
+        { "mr": "श्रीनगर मसुदा", "en": "Srinagar Draft" },
+        { "mr": "भारत-पाक करार", "en": "Indo-Pak Treaty" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९४७): पाकिस्तान समर्थित कबिल्यांच्या आक्रमणावर महाराजा हरी सिंग यांनी २६ ऑक्टोबर १९४७ रोजी 'विलिनीकरण करारपत्रावर' (Instrument of Accession) स्वाक्षरी करून काश्मीर भारतात विलीन केले.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / एम. लक्ष्मीकांत]",
+        "en": "(1947): Faced with tribal invasion backed by Pakistan, Maharaja Hari Singh signed the 'Instrument of Accession' on October 26, 1947, legally merging Jammu and Kashmir with India.\n\n"
+      }
+    },
+    {
+      "id": 18,
+      "question": {
+        "mr": "स्वातंत्र्योत्तर काळात हैदराबाद संस्थानाचे विलीनीकरण करण्यासाठी सप्टेंबर १९४८ मध्ये कोणती लष्करी कारवाई राबवली गेली होती?",
+        "en": "What was the official code name of the military/police action launched in September 1948 to integrate Hyderabad into the Indian Union?"
+      },
+      "options": [
+        { "mr": "ऑपरेशन पोलो (Operation Polo / Police Action)", "en": "Operation Polo" },
+        { "mr": "ऑपरेशन विजय", "en": "Operation Vijay" },
+        { "mr": "ऑपरेशन शक्ती", "en": "Operation Shakti" },
+        { "mr": "ऑपरेशन मेघदूत", "en": "Operation Meghdoot" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९४८): हैदराबादच्या निजामाने भारतात विलीन होण्यास नकार दिल्यावर सप्टेंबर १९४८ मध्ये सरदार पटेलांनी 'ऑपरेशन पोलो' (पोलिस कारवाई) राबवत हैदराबादचे भारतात विलीनीकरण घडवून आणले.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / एम. लक्ष्मीकांत]",
+        "en": "(1948): When the Nizam of Hyderabad refused to accede to India, Sardar Patel executed 'Operation Polo' (Police Action) in September 1948, successfully integrating the state.\n\n"
+      }
+    },
+    {
+      "id": 19,
+      "question": {
+        "mr": "स्वतंत्र भारताच्या पहिल्या केंद्रीय मंत्रिमंडळात (१९४७) 'कायदेमंत्री' (Law Minister) म्हणून कोणाची नियुक्ती केली गेली होती?",
+        "en": "Who was appointed as the first Law Minister of independent India in the cabinet of 1947?"
+      },
+      "options": [
+        { "mr": "डॉ. बी. आर. आंबेडकर (Dr. B.R. Ambedkar)", "en": "Dr. B.R. Ambedkar" },
+        { "mr": "सी. राजगोपालाचारी", "en": "C. Rajagopalachari" },
+        { "mr": "जॉन मथाई", "en": "John Matthai" },
+        { "mr": "श्यामाप्रसाद मुखर्जी", "en": "Syama Prasad Mukherjee" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९४७): पंतप्रधान नेहरूंच्या मंत्रिमंडळात काँग्रेस पक्षाबाहेरून डॉ. बाबासाहेब आंबेडकरांना निमंत्रित केले गेले आणि त्यांनी स्वतंत्र भारताचे पहिले 'कायदेमंत्री' म्हणून ऐतिहासिक कार्यभार सांभाळला.\n\n[संदर्भ: एम. लक्ष्मीकांत]",
+        "en": "(1947): Dr. B.R. Ambedkar accepted the invitation to join independent India's first cabinet, serving with distinction as the nation's first Minister of Law.\n\n"
+      }
+    },
+    {
+      "id": 20,
+      "question": {
+        "mr": "कॅबिनेट मिशन योजनेअंतर्गत (१९४६) स्थापन झालेल्या संविधान सभेचे हंगामी अध्यक्ष म्हणून कोणाची निवड झाली होती?",
+        "en": "Who served as the temporary/interim President of the newly convened Constituent Assembly in December 1946?"
+      },
+      "options": [
+        { "mr": "डॉ. सच्चिदानंद सिन्हा (Dr. Sachchidananda Sinha)", "en": "Dr. Sachchidananda Sinha" },
+        { "mr": "डॉ. राजेंद्र प्रसाद", "en": "Dr. Rajendra प्रसाद" },
+        { "mr": "डॉ. बाबासाहेब आंबेडकर", "en": "Dr. B.R. Ambedkar" },
+        { "mr": "जवाहरलाल नेहरू", "en": "Jawaharlal नेहरू" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९४६): ९ डिसेंबर १९४६ रोजी संविधान सभेची पहिली बैठक भरली, तेव्हा फ्रान्सच्या प्रथेनुसार सर्वात ज्येष्ठ सदस्य डॉ. सच्चिदानंद सिन्हा यांची हंगामी अध्यक्ष म्हणून निवड झाली.\n\n[संदर्भ: एम. लक्ष्मीकांत]",
+        "en": "(1946): Following French practice, Dr. Sachchidananda Sinha, the oldest member, was appointed as temporary interim President on Dec 9, 1946.\n\n"
+      }
+    },
+    {
+      "id": 21,
+      "question": {
+        "mr": "संविधान सभेच्या मसुदा समितीचे (Drafting Committee) अध्यक्षपद कोणाकडे होते?",
+        "en": "Who was appointed as the chairman of the Drafting Committee of the Constituent Assembly?"
+      },
+      "options": [
+        { "mr": "डॉ. बाबासाहेब आंबेडकर (Dr. B.R. Ambedkar)", "en": "Dr. B.R. Ambedkar" },
+        { "mr": "के. एम. मुन्शी", "en": "K.M. Munshi" },
+        { "mr": "अल्लादी कृष्णास्वामी अय्यर", "en": "Alladi Krishnaswamy Iyer" },
+        { "mr": "बी. एन. राऊ", "en": "B.N. Rau" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९४७): २९ ऑगस्ट १९४७ रोजी स्थापन झालेल्या ७ सदस्यीय मसुदा समितीचे अध्यक्ष म्हणून डॉ. बाबासाहेब आंबेडकर यांनी ऐतिहासिक भूमिका बजावली.\n\n[संदर्भ: एम. लक्ष्मीकांत]",
+        "en": "(1947): Dr. B.R. Ambedkar was appointed Chairman of the Drafting Committee formed on August 29, 1947.\n\n"
+      }
+    },
+    {
+      "id": 22,
+      "question": {
+        "mr": "भारताची राज्यघटना तयार करण्यासाठी संविधान सभेला एकूण किती अवधी लागला होता?",
+        "en": "How much total time did the Constituent Assembly take to frame the Constitution of India?"
+      },
+      "options": [
+        { "mr": "२ वर्षे, ११ महिने आणि १८ दिवस (2 years, 11 months, and 18 days)", "en": "2 years, 11 months, and 18 days" },
+        { "mr": "३ वर्षे, २ महिने आणि ५ दिवस", "en": "3 years, 2 months, and 5 days" },
+        { "mr": "१ वर्ष, ८ महिने आणि १० दिवस", "en": "1 year, 8 months, and 10 days" },
+        { "mr": "५ वर्षे, ६ महिने आणि १२ दिवस", "en": "5 years, 6 months, and 12 days" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९४६-१९४९): भारताची राज्यघटना तयार करण्यासाठी संविधान सभेला २ वर्षे, ११ महिने आणि १८ दिवस इतका काळ लागला.\n\n[संदर्भ: एम. लक्ष्मीकांत]",
+        "en": "(1946-1949): It took the Constituent Assembly precisely 2 years, 11 months, and 18 days to frame the Constitution.\n\n"
+      }
+    },
+    {
+      "id": 23,
+      "question": {
+        "mr": "भारतीय राज्यघटना अधिकृतरीत्या कधी स्वीकारली गेली आणि ती कधी अमलात आली?",
+        "en": "When was the Constitution of India formally adopted, and when did it come into force?"
+      },
+      "options": [
+        { "mr": "स्वीकार: २६ नोव्हेंबर १९४९, अमलात: २६ जानेवारी १९५०", "en": "Adopted: November 26, 1949; Enforced: January 26, 1950" },
+        { "mr": "स्वीकार: १५ ऑगस्ट १९४७, अमलात: २६ जानेवारी १९४८", "en": "Adopted: August 15, 1947; Enforced: January 26, 1948" },
+        { "mr": "स्वीकार: २६ जानेवारी १९५०, अमलात: १५ ऑगस्ट १९५०", "en": "Adopted: Jan 26, 1950; Enforced: Aug 15, 1950" },
+        { "mr": "स्वीकार: ३० जून १९४८, अमलात: २६ नोव्हेंबर १९४९", "en": "Adopted: June 30, 1948; Enforced: Nov 26, 1949" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९४९-१९५०): संविधान २६ नोव्हेंबर १९४९ रोजी स्वीकारले गेले आणि २६ जानेवारी १९५० रोजी अमलात आले.\n\n[संदर्भ: एम. लक्ष्मीकांत]",
+        "en": "(1949-1950): The Constitution was adopted on November 26, 1949, and came into force on January 26, 1950.\n\n"
+      }
+    },
+    {
+      "id": 24,
+      "question": {
+        "mr": "स्वतंत्र भारताच्या पहिल्या सार्वत्रिक निवडणुका (First General Elections) कोणत्या कालावधीत पार पडल्या होत्या?",
+        "en": "When were India's historic first general elections conducted under universal adult suffrage?"
+      },
+      "options": [
+        { "mr": "ऑक्टोबर १९५१ ते फेब्रुवारी १९५२ (October 1951 to February 1952)", "en": "October 1951 to February 1952" },
+        { "mr": "जानेवारी १९५०", "en": "January 1950" },
+        { "mr": "नोव्हेंबर १९४९", "en": "November 1949" },
+        { "mr": "मार्च १९५५", "en": "March 1955" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९५१-५२): स्वतंत्र भारताच्या संविधानानुसार पहिल्या सार्वत्रिक निवडणुका ऑक्टोबर १९५१ ते फेब्रुवारी १९५२ या काळात पार पडल्या.\n\n[संदर्भ: एम. लक्ष्मीकांत]",
+        "en": "(1951-1952): India's first general elections were held from October 1951 to February 1952.\n\n"
+      }
+    },
+    {
+      "id": 25,
+      "question": {
+        "mr": "भारतीय राष्ट्रीय चळवळीचा आणि स्वातंत्र्योत्तर वाटचालीचा मुख्य वारसा काय आहे?",
+        "en": "What is the enduring legacy of the Indian National Movement and post-independence consolidation?"
+      },
+      "options": [
+        { "mr": "लोकशाही मूल्ये, संविधानवाद, सर्वसमावेशक राष्ट्रवाद, धर्मनिरपेक्षता आणि सामाजिक न्याय", "en": "Democratic governance, constitutionalism, inclusive secular nationalism, and social justice" },
+        { "mr": "धर्म आधारित राजकारण व हुकूमशाही", "en": "Theocratic authoritarianism" },
+        { "mr": "प्रांतीय व भाषावार द्वेष", "en": "Endless linguistic hatred" },
+        { "mr": "परकीय सत्तेची आजीवन गुलामी", "en": "Perpetual colonial subservience" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(स्वातंत्र्योत्तर काळ): स्वातंत्र्यलढ्याने आणि त्यानंतरच्या एकात्मतेने भारताला लोकशाही, संविधान सर्वोच्चता, धर्मनिरपेक्षता आणि सर्वसमावेशकतेचा अमूल्य वारसा दिला आहे.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / एम. लक्ष्मीकांत]",
+        "en": "(Post-Independence): The national movement and consolidation bequeathed a robust commitment to constitutional democracy, secular pluralism, and the rule of law.\n\n"
+      }
+    }
+  ]
+}

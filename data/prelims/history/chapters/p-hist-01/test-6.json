@@ -1,0 +1,464 @@
+{
+  "testId": "p-hist-01-t6",
+  "title": {
+    "mr": "आधुनिक भारताचा इतिहास — सराव 6",
+    "en": "Modern Indian History — Practice Test 6"
+  },
+  "durationMinutes": 20,
+  "marksPerQuestion": 1,
+  "negativeMarking": 0.25,
+  "totalMarks": 25,
+  "difficulty": "मध्यम ते काठिण्य",
+  "questions": [
+    {
+      "id": 1,
+      "question": {
+        "mr": "१६०८ मध्ये ब्रिटिश ईस्ट इंडिया कंपनीने कॅप्टन हॉकिन्सला सुरत येथे वखार स्थापन करण्याच्या परवानगीसाठी कोणाच्या दरबारात पाठवले होते?",
+        "en": "In 1608, to whose court did the British East India Company send Captain Hawkins to seek permission to establish a factory at Surat?"
+      },
+      "options": [
+        { "mr": "अकबर", "en": "Akbar" },
+        { "mr": "जहांगीर (Jahangir)", "en": "Jahangir" },
+        { "mr": "शाहजहान", "en": "Shah Jahan" },
+        { "mr": "औंगजेब", "en": "Aurangzeb" }
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": {
+        "mr": "(१६०८): कॅप्टन हॉकिन्स 'हेक्टर' या जहाजातून १६०८ मध्ये सुरतमध्ये उतरला आणि १६०९ मध्ये मुघल सम्राट जहांगीरच्या आग्र्यावरील दरबारात उपस्थित राहिला. पोर्तुगीजांच्या विरोधामुळे त्याला सुरुवातीला परवानगी मिळाली नाही, पण नंतर १६१३ मध्ये सुरतमध्ये पहिली अधिकृत वखार स्थापन झाली.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / समाधान महाजन]",
+        "en": "(1608): Captain Hawkins arrived at Surat in 1608 and visited the court of Mughal Emperor Jahangir in Agra in 1609 to secure trading concessions for the East India Company.\n\n"
+      }
+    },
+    {
+      "id": 2,
+      "question": {
+        "mr": "इंग्रजांचा सुप्रसिद्ध फर्माद (Royal Farman), ज्याला 'मॅग्नाकार्टा ऑफ द कंपनी' म्हटले जाते, १७१७ मध्ये कोणत्या मुघल सम्राटाने जारी केला होता?",
+        "en": "Which Mughal Emperor issued the famous royal farman to the British in 1717, often called the 'Magna Carta of the Company'?"
+      },
+      "options": [
+        { "mr": "बहादूर शाह पहिला", "en": "Bahadur Shah I" },
+        { "mr": "फर्रुखसियर (Farrukhsiyar)", "en": "Farrukhsiyar" },
+        { "mr": "मोहम्मद शाह", "en": "Muhammad Shah" },
+        { "mr": "रफी-उल-दजात", "en": "Rafi-ud-Darajat" }
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": {
+        "mr": "(१७१७): जॉन सरमनच्या नेतृत्वाखालील शिष्टमंडळाने १७१७ मध्ये मुघल सम्राट फर्रुखसियर कडून एक फर्माद मिळवला. यानुसार बंगालमध्ये ३००० वार्षिक वसुलीच्या बदल्यात कंपनीला विनाशुल्क (Duty-free) व्यापार करण्याचा अधिकार मिळाला, ज्याला 'कंपनीचा मॅग्नाकार्टा' म्हणतात.\n\n[संदर्भ: डॉ. स. शि. गाठाळ / स्पेक्ट्रम]",
+        "en": "(1717): Mughal Emperor Farrukhsiyar issued a farman in 1717 granting the East India Company valuable trading privileges in Bengal, Gujarat, and Hyderabad, famously described by Orme as the 'Magna Carta of the Company'.\n\n"
+      }
+    },
+    {
+      "id": 3,
+      "question": {
+        "mr": "खालील विधाने विचारात घ्या:\nअ) तिसरे कर्नाटक युद्ध (१७५८-१७६३) दरम्यान 'वांदिवॉशची लढाई' जानेवारी १७६० मध्ये झाली.\nब) या लढाईत इंग्रजांच्या वतीने सर आयर कूट आणि फ्रेंचांच्या वतीने काउंट डी लॅली यांनी नेतृत्व केले.\nवरीलपैकी कोणते/ती विधान/ने बरोबर आहेत?",
+        "en": "Consider the following statements:\nA) The 'Battle of Wandiwash' during the Third Carnatic War (1758-1763) took place in January 1760.\nB) In this battle, Sir Eyre Coote led the British while Count de Lally led the French.\nWhich of the above statement(s) is/are correct?"
+      },
+      "options": [
+        { "mr": "फक्त अ", "en": "Only A" },
+        { "mr": "फक्त ब", "en": "Only B" },
+        { "mr": "अ आणि ब दोन्ही", "en": "Both A and B" },
+        { "mr": "दोन्ही नाहीत", "en": "Neither A nor B" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "(१७६०): २२ जानेवारी १७६० रोजी वांदिवॉशची निर्णायक लढाई झाली. ब्रिटिशांचे नेतृत्व सर आयर कूट तर फ्रेंचांचे नेतृत्व लाली यांनी केले. या पराभवाने भारतातील फ्रेंचांचे राजकीय भवितव्य संपुष्टात आले.\n\n[संदर्भ: अनिल कटारे / स्पेक्ट्रम]",
+        "en": "(1760): The Battle of Wandiwash was fought on January 22, 1760. Sir Eyre Coote decisively defeated the French army led by Count de Lally, sealing the fate of French imperial ambitions in India.\n\n"
+      }
+    },
+    {
+      "id": 4,
+      "question": {
+        "mr": "इ.स. १७६५ मधील अलाहाबादच्या दुसऱ्या तहानुसार (ऑगस्ट १७६५) अवधचा नवाब शुजा-उद-दौला याला ब्रिटिशांना किती युद्धदंड द्यावा लागला आणि कोणते किल्ले सोडावे लागले?",
+        "en": "According to the Second Treaty of Allahabad (August 1765), how much war indemnity did Awadh Nawab Shuja-ud-Daulah have to pay to the British and which forts did he have to cede?"
+      },
+      "options": [
+        { "mr": "५० लाख रुपये आणि इलाहाबाद-करा किल्ले", "en": "50 lakh rupees and Allahabad-Kora forts" },
+        { "mr": "३ कोटी रुपये आणि श्रीरंगपट्टणम", "en": "3 crore rupees and Srirangapatna" },
+        { "mr": "२६ लाख रुपये आणि कलकत्ता किल्ला", "en": "26 lakh rupees and Fort William" },
+        { "mr": "१ कोटी रुपये आणि सुरत व वडोदरा", "en": "1 crore rupees and Surat & Vadodara" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१७६५): बक्सारच्या युद्धानंतर रॉबर्ट क्लाइव्हने अवधच्या नवाबासोबत अलाहाबादचा दुसरा तह केला. यानुसार नवाबाने ५० लाख रुपये युद्धदंड म्हणून दिले आणि अलाहाबाद व करा हे दोन किल्ले मुघल सम्राट शाह आलम (दुसरा) याच्या उपजीविकेसाठी ब्रिटिशांनी त्याच्याकडे सुपूर्द केले.\n\n[संदर्भ: समाधान महाजन]",
+        "en": "(1765): By the Second Treaty of Allahabad, Shuja-ud-Daulah had to cede Allahabad and Kora to Mughal Emperor Shah Alam II and pay a war indemnity of 50 lakh rupees to the East India Company.\n\n"
+      }
+    },
+    {
+      "id": 5,
+      "question": {
+        "mr": "वॉरेन हेस्टिंग्सने १७७२ मध्ये बंगालमध्ये दुहेरी राज्यव्यवस्था (Dual Government) समाप्त केल्यावर, महसूल संकलनाचे मुख्य कार्यालय मुर्शिदाबादवरून हलवून कोठे आणले?",
+        "en": "After abolishing the Dual Government in Bengal in 1772, to where did Warren Hastings shift the main revenue collection office from Murshidabad?"
+      },
+      "options": [
+        { "mr": "ढाका", "en": "Dhaka" },
+        { "mr": "कलकत्ता (Calcutta)", "en": "Calcutta" },
+        { "mr": "पटना", "en": "Patna" },
+        { "mr": "आग्रा", "en": "Agra" }
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": {
+        "mr": "(१७७२): वॉरेन हेस्टिंग्सने १७७२ मध्ये दुहेरी राज्यव्यवस्था पूर्णपणे मोडून काढली आणि कंपनीने थेट महसूल गोळा करण्याचे ठरवले. यासाठी त्याने महसूल कार्यालय मुर्शिदाबादवरून हलवून 'कलकत्ता' येथे आणले आणि ब्रिटिश कलेक्टरांची (जिल्हाधिकारी) नेमणूक केली.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1772): Warren Hastings ended the Dual Government system in 1772 and brought the collection of revenue directly under the control of the Company, shifting the treasury from Murshidabad to Calcutta.\n\n"
+      }
+    },
+    {
+      "id": 6,
+      "question": {
+        "mr": "खालीलपैकी कोणत्या तहानुसार मराठ्यांचे पंतप्रधान (पेशवे) आणि इंग्रज यांच्यातील 'पहिले इंग्रज-मराठा युद्ध' (१७७५-१७८२) संपले?",
+        "en": "According to which of the following treaties did the 'First Anglo-Maratha War' (1775-1782) between the Maratha Peshwa and the British end?"
+      },
+      "options": [
+        { "mr": "सुरतचा तह", "en": "Treaty of Surat" },
+        { "mr": "पुरंदरचा तह", "en": "Treaty of Purandar" },
+        { "mr": "सालबाईचा तह (Treaty of Salbai)", "en": "Treaty of Salbai" },
+        { "mr": "वसईचा तह", "en": "Treaty of Bassein" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "(१७८२): महादजी शिंदे यांच्या मध्यस्थीने १७ मे १७८२ रोजी 'सालबाईचा तह' झाला. यानुसार साष्टी बेट ब्रिटिशांकडे राहिले, तर राघोबाची पेन्शन निश्चित झाली आणि दोन्ही बाजूंनी जिंकलेले प्रदेश परत केले गेले, ज्यामुळे २० वर्षे शांतता टिकली.\n\n[संदर्भ: डॉ. स. शि. गाठाळ / अनिल कटारे]",
+        "en": "(1782): The Treaty of Salbai, signed in May 1782 under the mediation of Mahadji Shinde, ended the First Anglo-Maratha War and restored status quo ante regarding territories for twenty years.\n\n"
+      }
+    },
+    {
+      "id": 7,
+      "question": {
+        "mr": "लॉर्ड कॉर्नवॉलिसने १७९३ मध्ये बंगालमध्ये कायमधारा पद्धत (Permanent Settlement) लागू केली, तेव्हा बंगालचा महसूल विभाग पाहणारा मुख्य अधिकारी (Revenue Board President) कोण होता?",
+        "en": "Who was the chief revenue official (President of the Board of Revenue) when Lord Cornwallis introduced the Permanent Settlement in Bengal in 1793?"
+      },
+      "options": [
+        { "mr": "सर जॉन शोर (Sir John Shore)", "en": "Sir John Shore" },
+        { "mr": "जेम्स विल्सन", "en": "James Wilson" },
+        { "mr": "होल्ट मॅकेन्झी", "en": "Holt Mackenzie" },
+        { "mr": "थॉमस मुन्रो", "en": "Thomas Munro" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१७९३): कायमधारा पद्धतीचा आराखडा तयार करण्यात 'सर जॉन शोर' यांचा मोलाचा वाटा होता. कॉर्नवॉलिस आणि जॉन शोर यांच्यातील चर्चेनंतरच १७९३ मध्ये ही पद्धत १० वर्षांऐवजी 'कायमस्वरूपी' लागू करण्यात आली.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1793): Sir John Shore played a prominent role alongside Lord Cornwallis in drafting and implementing the Permanent Settlement of Bengal in 1793.\n\n"
+      }
+    },
+    {
+      "id": 8,
+      "question": {
+        "mr": "खालीलपैकी कोणत्या तहानुसार दुसरा बाजीराव पेशवा याने तैनाती फौजेचा (Subsidiary Alliance) स्वीकार केला होता?",
+        "en": "By which of the following treaties did Peshwa Baji Rao II accept the Subsidiary Alliance?"
+      },
+      "options": [
+        { "mr": "पुणेचा तह", "en": "Treaty of Poona" },
+        { "mr": "वसईचा तह (Treaty of Bassein)", "en": "Treaty of Bassein" },
+        { "mr": "पंढरपूरचा तह", "en": "Treaty of Pandharpur" },
+        { "mr": "ग्वाल्हेरचा तह", "en": "Treaty of Gwalior" }
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": {
+        "mr": "(१८०२): यशवंतराव होळकराकडून पराभूत झाल्यानंतर दुसऱ्या बाजीराव पेशव्याने ३१ डिसेंबर १८०२ रोजी वसई येथे ब्रिटिशांसोबत 'वसईचा तह' केला आणि तैनाती फौजेचा स्वीकार केला, जो मराठासाम्राज्याच्या पतनाचा टर्निंग पॉईंट ठरला.\n\n[संदर्भ: समाधान महाजन / अनिल कटारे]",
+        "en": "(1802): Following his defeat by Yashwantrao Holkar, Peshwa Baji Rao II fled to Bassein and signed the Subsidiary Treaty of Bassein with the British on December 31, 1802.\n\n"
+      }
+    },
+    {
+      "id": 9,
+      "question": {
+        "mr": "१८०३ ते १८०५ दरम्यान झालेल्या 'दुसऱ्या इंग्रज-मराठा युद्धात' सिंध्यांनी ब्रिटिशांसोबत कोणता तह केला होता?",
+        "en": "Which treaty did the Scindias sign with the British during the 'Second Anglo-Maratha War' (1803-1805)?"
+      },
+      "options": [
+        { "mr": "देवगावचा तह", "en": "Treaty of Deogaon" },
+        { "mr": "सुरजी-अंजनगावचा तह (Treaty of Surji-Anjangaon)", "en": "Treaty of Surji-Anjangaon" },
+        { "mr": "राजपूरघाटाचा तह", "en": "Treaty of Rajapurghat" },
+        { "mr": "ग्वाल्हेरचा तह", "en": "Treaty of Gwalior" }
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": {
+        "mr": "(१८०३): लसवाडी आणि आझादच्या युद्धात दौलतराव शिंदे यांचा पराभव झाल्यावर त्यांनी ३० डिसेंबर १८०३ रोजी 'सुरजी-अंजनगावचा तह' केला, ज्यानुसार त्यांनी गंगा-यमुना दोआब, दिल्ली, आग्रा व भरूचचे प्रदेश ब्रिटिशांना सुपूर्द केले.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1803): Daulatrao Scindia signed the Treaty of Surji-Anjangaon on December 30, 1803, after his defeat in the Second Anglo-Maratha War, ceding extensive territories to the British.\n\n"
+      }
+    },
+    {
+      "id": 10,
+      "question": {
+        "mr": "१८१७-१८१८ च्या 'तिसऱ्या इंग्रज-मराठा युद्धानंतर' होळकरांनी ब्रिटिशांसोबत कोणता तह करून आपला पराभव मान्य केला?",
+        "en": "Which treaty did the Holkars sign with the British after the 'Third Anglo-Maratha War' (1817-1818) accepting their defeat?"
+      },
+      "options": [
+        { "mr": "सुरजी-अंजनगावचा तह", "en": "Treaty of Surji-Anjangaon" },
+        { "mr": "देवगावचा तह", "en": "Treaty of Deogaon" },
+        { "mr": "मदसौरचा तह (Treaty of Mandसौर)", "en": "Treaty of Mandसौर" },
+        { "mr": "पुणेचा तह", "en": "Treaty of Poona" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "(१८१८): महिदपूरच्या युद्धात होळकरांच्या सैन्याचा पराभव झाल्यावर ६ जानेवारी १८१८ रोजी त्यांनी 'मंदसौरचा तह' केला. यानुसार त्यांनी खानदेश व इतर अधिकार ब्रिटिशांकडे सोपवले आणि तैनाती फौज स्वीकारली.\n\n[संदर्भ: डॉ. स. शि. गाठाळ]",
+        "en": "(1818): Following the defeat of the Holkars at the Battle of Mahidpur, they signed the Treaty of Mandasor in January 1818, accepting British supremacy and ceding territories.\n\n"
+      }
+    },
+    {
+      "id": 11,
+      "question": {
+        "mr": "खालील विधाने विचारात घ्या:\nअ) १८२९ मध्ये लॉर्ड विल्यम बेंटिकने सती प्रथा बेकायदेशीर ठरवली.\nब) हा कायदा सर्वप्रथम 'बंगाल प्रेसिडेन्सीमध्ये' नियम १७ द्वारे लागू करण्यात आला.\nकोणते विधान योग्य आहे?",
+        "en": "Consider the following statements:\nA) In 1829, Lord William Bentinck declared the practice of Sati illegal.\nB) This law was first implemented in the 'Bengal Presidency' through Regulation XVII.\nWhich statement is correct?"
+      },
+      "options": [
+        { "mr": "फक्त अ", "en": "Only A" },
+        { "mr": "फक्त ब", "en": "Only B" },
+        { "mr": "दोन्ही अ आणि ब", "en": "Both A and B" },
+        { "mr": "दोन्ही नाहीत", "en": "Neither A nor B" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "(१८२९): दोन्ही विधाने अगदी बरोबर आहेत. लॉर्ड विल्यम बेंटिकने ४ डिसेंबर १८२९ रोजी नियम १७ (Regulation XVII of 1829) अन्वये बंगाल प्रेसिडेन्सीमध्ये सती प्रथा करणाऱ्यांना खुनाचा गुन्हा मानून कठोर शिक्षा सुनावली, जी नंतर इतर प्रांतांत लागू झाली.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / समाधान महाजन]",
+        "en": "(1829): Both statements are correct. Lord William Bentinck enacted Regulation XVII in December 1829, declaring the practice of Sati illegal and punishable in the Bengal Presidency, later extending it to other regions.\n\n"
+      }
+    },
+    {
+      "id": 12,
+      "question": {
+        "mr": "लॉर्ड डलहौसीने कोणत्या वर्षी आणि कोणत्या सैनिकी कारवाईद्वारे 'पंजाब' प्रांत संपूर्णपणे ब्रिटिश साम्राज्यात विलीन केला?",
+        "en": "In which year and through which military campaign did Lord Dalhousie completely annex the province of 'Punjab' into the British Empire?"
+      },
+      "options": [
+        { "mr": "१८४६, पहिले शीख युद्ध", "en": "1846, First Sikh War" },
+        { "mr": "१८४९, दुसरे शीख युद्ध (Second Anglo-Sikh War)", "en": "1849, Second Anglo-Sikh War" },
+        { "mr": "१८५६, अवध मोहीम", "en": "1856, Awadh Campaign" },
+        { "mr": "१८४३, सिंध मोहीम", "en": "1843, Sindh Campaign" }
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": {
+        "mr": "(१८४९): चिलियावाला व गुजरातच्या लढाईत (चिल्लियावाला आणि गुजर गुजरात विजय) लॉर्ड गफच्या नेतृत्वाखालील सैन्याने शिखांचा पराभव केल्यावर, मार्च १८४९ मध्ये लॉर्ड डलहौसीने पंजाब ब्रिटिश साम्राज्यात जोडला आणि महाराजा दिलीप सिंग यांना पेन्शन देऊन लंडनला पाठवले.\n\n[संदर्भ: अनिल कटारे]",
+        "en": "(1849): Following the Second Anglo-Sikh War and the decisive Battle of Gujarat (1849), Lord Dalhousie annexed Punjab completely on March 29, 1849, ending the Sikh kingdom.\n\n"
+      }
+    },
+    {
+      "id": 13,
+      "question": {
+        "mr": "खालीलपैकी कोणत्या कायद्याने भारतात पहिल्यांदाच 'केंद्रीय आणि प्रांतीय कायदेमंडळांमध्ये' भारतीयांना अप्रत्यक्ष निवडणुकांद्वारे प्रवेश देण्याची सुरुवात केली?",
+        "en": "Which of the following acts first introduced the system of indirect elections for Indians to enter 'Central and Provincial Legislative Councils'?"
+      },
+      "options": [
+        { "mr": "१८५८ चा कायदा", "en": "Act of 1858" },
+        { "mr": "१८६१ चा कायदा", "en": "Act of 1861" },
+        { "mr": "१८९२ चा भारतीय परिषद कायदा (Indian Councils Act 1892)", "en": "Indian Councils Act 1892" },
+        { "mr": "१९०९ चा कायदा", "en": "Act of 1909" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "(१८९२): १८९२ च्या भारतीय परिषद कायद्याने विधिमंडळाचा आकार वाढवला आणि अप्रत्यक्ष निवडणुकीच्या (Indirect election) तत्त्वावर काही अ गैर-अधिकृत सदस्यांची नावे सुचवण्याची पद्धत सुरू केली, ज्यामुळे भारतात संसदीय व्यवस्थेची मुहूर्तमेढ रोवली गेली.\n\n[संदर्भ: एम. लक्ष्मीकांत]",
+        "en": "(1892): The Indian Councils Act of 1892 increased the number of additional non-official members in the central and provincial legislative councils and introduced a limited and indirect element of election.\n\n"
+      }
+    },
+    {
+      "id": 14,
+      "question": {
+        "mr": "१८९९ ते १९०५ या काळात व्हाइसरॉय असलेल्या लॉर्ड कर्झनने १९०४ मध्ये कोणता कायदा संमत केला, ज्याने विद्यापीठांवर सरकारी नियंत्रण कडक केले आणि निवडणुकांचे प्रमाण घटवले?",
+        "en": "Which act was passed in 1904 by Lord Curzon, Viceroy from 1899 to 1905, which tightened government control over universities and reduced elected members?"
+      },
+      "options": [
+        { "mr": "भारतीय विद्यापीठ कायदा (Indian Universities Act 1904)", "en": "Indian Universities Act 1904" },
+        { "mr": "रॅले आयोग अहवाल", "en": "Raleigh Commission Report" },
+        { "mr": "हंटर एज्युकेशन कायदा", "en": "Hunter Education Act" },
+        { "mr": "वर्नाक्युलर प्रेस ॲक्ट", "en": "Vernacular Press Act" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९०४): सर थॉमस रॅले यांच्या अध्यक्षतेखाली नेमलेल्या आयोगाच्या शिफारशीनुसार लॉर्ड कर्झनने १९०४ मध्ये 'भारतीय विद्यापीठ कायदा' (Indian Universities Act) संमत केला. याने विद्यापीठांच्या सिनेटमधील निर्वाचित सदस्यांची संख्या घटवून ती सरकराच्या हातात केंद्रित केली.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1904): Based on the Raleigh Commission, Lord Curzon pushed through the Indian Universities Act of 1904, which brought universities under stricter government control, reduced the size of senates, and gave the government veto powers over senate regulations.\n\n"
+      }
+    },
+    {
+      "id": 15,
+      "question": {
+        "mr": "१९०६ मध्ये ढाका येथे 'अखिल भारतीय मुस्लिम लीग' (All India Muslim League) ची स्थापना कोणाच्या पुढाकाराने झाली?",
+        "en": "Under whose initiative was the 'All India Muslim League' founded in Dacca in 1906?"
+      },
+      "options": [
+        { "mr": "मोहम्मद अली जिना आणि शौकत अली", "en": "Muhammad Ali Jinnah and Shaukat Ali" },
+        { "mr": "नवाब सलिमूल्ला खान आणि आगा खान (Nawab Salimullah Khan and Aga Khan)", "en": "Nawab Salimullah Khan and Aga Khan" },
+        { "mr": "सर सय्यद अहमद खान", "en": "Sir Syed Ahmed Khan" },
+        { "mr": "मौलाना आझाद", "en": "Maulana Azad" }
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": {
+        "mr": "(१९०६): ३० डिसेंबर १९०६ रोजी ढाका येथे झालेल्या मुस्लिम शिक्षण परिषदेत 'नवाब सलिमूल्ला खान' यांच्या प्रस्तावानुसार मुस्लिम लीगची स्थापना झाली. आगा खान हे त्याचे पहिले अध्यक्ष बनले, तर मुख्य कार्यालय लखनौ येथे ठेवण्यात आले.\n\n[संदर्भ: समाधान महाजन / स्पेक्ट्रम]",
+        "en": "(1906): The All India Muslim League was founded on December 30, 1906, in Dacca, on the initiative of Nawab Salimullah of Dacca, with Aga Khan III serving as its first president.\n\n"
+      }
+    },
+    {
+      "id": 16,
+      "question": {
+        "mr": "१९०७ मधील काँग्रेसच्या 'सुरत अधिवेशनात' मवाळ आणि जहाल यांच्यात फूट पडली, त्यावेळी काँग्रेसचे अध्यक्षपद कोणाकडे होते?",
+        "en": "Who was the president of the Indian National Congress during the infamous 'Surat Split' of 1907 between Moderates and Extremists?"
+      },
+      "options": [
+        { "mr": "बाळ गंगाधर टिळक", "en": "Bal Gangadhar Tilak" },
+        { "mr": "रास बिहारी घोष (Rash Behari Ghosh)", "en": "Rash Behari Ghosh" },
+        { "mr": "गोपाळ कृष्ण गोखले", "en": "Gopal Krishna Gokhale" },
+        { "mr": "लाला लजपत राय", "en": "Lala Lajpat Rai" }
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": {
+        "mr": "(१९०७): काँग्रेसचे २३ वे अधिवेशन सुरत येथे भरणार होते. अध्यक्षपदावरून मवाळ (रास बिहारी घोष हवे होते) आणि जहाल (तिळक किंवा लाला लजपत राय हवे होते) यांच्यात तीव्र मतभेद झाले आणि काँग्रेसमध्ये ऐतिहासिक फूट पडली.\n\n[संदर्भ: डॉ. स. शि. गाठाळ / स्पेक्ट्रम]",
+        "en": "(1907): The Surat session of the INC in 1907 saw an open split between the Moderates and Extremists over the choice of the president and the path of the Swadeshi movement. Rash Behari Ghosh was chosen as president amid chaos.\n\n"
+      }
+    },
+    {
+      "id": 17,
+      "question": {
+        "mr": "१९१६ च्या प्रसिद्ध 'लखनौ करारात' (Lucknow Pact) काँग्रेस आणि मुस्लिम लीग एकत्र आले. या ऐतिहासिक अधिवेशनाचे अध्यक्षीय भाषण कोणी केले होते?",
+        "en": "Who delivered the presidential address at the historic Lucknow Session of 1916 where the 'Lucknow Pact' between the INC and Muslim League was signed?"
+      },
+      "options": [
+        { "mr": "अंबिका चरण मजुमदार (Ambika Charan Mazumdar)", "en": "Ambika Charan Mazumdar" },
+        { "mr": "मोहम्मद अली जिना", "en": "Muhammad Ali Jinnah" },
+        { "mr": "अ‍ॅनी बेझंट", "en": "Annie Besant" },
+        { "mr": "लोकमान्य टिळक", "en": "Lokmanya Tilak" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९१६): १९१६ चे लखनौ अधिवेशन अनेक अर्थाने ऐतिहासिक ठरले कारण यात मवाळ-जहाल पुन्हा एकत्र आले आणि काँग्रेस-मुलिम लीगमध्ये ऐतिहासिक 'लखनौ करार' झाला. या अधिवेशनाचे अध्यक्ष 'अंबिका चरण मजुमदार' होते.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1916): The Lucknow session of 1916 was presided over by Ambika Charan Mazumdar. It is famous for the reunion of Moderates and Extremists and the signing of the Lucknow Pact between Congress and the Muslim League.\n\n"
+      }
+    },
+    {
+      "id": 18,
+      "question": {
+        "mr": "ब्रिटीश सरकारने भारताला जबाबदार शासन देण्याची घोषणा करणारा 'ऑगस्ट घोषणा' (August Declaration) कोणत्या वर्षी आणि कोणाच्या काळात केली?",
+        "en": "In which year and during whose tenure was the 'August Declaration', promising responsible government to India, made by the British government?"
+      },
+      "options": [
+        { "mr": "१९१७, मॉन्टग्यू (Edwin Montagu)", "en": "1917, Edwin Montagu" },
+        { "mr": "१९१९, चेम्सफोर्ड", "en": "1919, Chelmsford" },
+        { "mr": "१९१६, हार्डिंग", "en": "1916, Hardinge" },
+        { "mr": "१९२१, रीडिंग", "en": "1921, Reading" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९१७): २० ऑगस्ट १९१७ रोजी भारताचे सचिव 'एडविन मॉन्टग्यू' (Edwin Montagu) यांनी ब्रिटिश पार्लमेंटमध्ये ऐतिहासिक घोषणा केली की, ब्रिटिशांचे धोरण भारतात टप्प्याटप्प्याने जबाबदार शासन (Responsible Government) प्रस्थापित करण्याचे आहे.\n\n[संदर्भ: एम. लक्ष्मीकांत / स्पेक्ट्रम]",
+        "en": "(1917): On August 20, 1917, Edwin Montagu, the Secretary of State for India, made the historic August Declaration in the British Parliament, stating that the policy of the British government was the gradual development of self-governing institutions in India.\n\n"
+      }
+    },
+    {
+      "id": 19,
+      "question": {
+        "mr": "मॉन्टग्यू-चेम्सफोर्ड सुधारणा कायदा (Government of India Act 1919) नुसार प्रांतांमध्ये कोणती नवीन शासनप्रणाली सुरू करण्यात आली?",
+        "en": "According to the Montagu-Chelmsford Reforms (Government of India Act 1919), which new system of governance was introduced in the provinces?"
+      },
+      "options": [
+        { "mr": "दुहेरी राज्यव्यवस्था (Dual Government)", "en": "Dual Government" },
+        { "mr": "द्विदल राज्यपद्धती (Diarchy / डायर्ची)", "en": "Diarchy" },
+        { "mr": "प्रांतीय स्वायत्तता (Provincial Autonomy)", "en": "Provincial Autonomy" },
+        { "mr": "फेडरल गव्हर्नन्स", "en": "Federal Governance" }
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": {
+        "mr": "(१९१९): १९१९ च्या कायद्याने प्रांतांमध्ये 'द्विदल राज्यपद्धती' (Diarchy) लागू केली. यानुसार प्रांतीय विषयांचे 'सुनेद' (Transferred - मंत्र्यांकडे) आणि 'राखीव' (Reserved - गव्हर्नर व कार्यकारी सदस्यांकडे) असे दोन भाग पाडण्यात आले.\n\n[संदर्भ: एम. लक्ष्मीकांत]",
+        "en": "(1919): The Government of India Act of 1919 introduced Diarchy (rule of two) in the provinces, dividing provincial subjects into two lists: Transferred and Reserved.\n\n"
+      }
+    },
+    {
+      "id": 20,
+      "question": {
+        "mr": "१९१९ च्या 'रौलट कायद्याला' (Rowlatt Act) भारतीय राष्ट्रीय नेत्यांनी कोणता सुप्रसिद्ध काळा कायदा म्हणून विरोध केला होता, ज्यानुसार विनाचौकशी कैदेत ठेवण्याची तरतूद होती?",
+        "en": "By what popular name did Indian nationalist leaders oppose the 'Rowlatt Act' of 1819/1919, which provided for imprisonment without trial?"
+      },
+      "options": [
+        { "mr": "ब्लॅक ॲक्ट / काळा कायदा (No Dalil, No Vakil, No Appeal)", "en": "Black Act (No Dalil, No Vakil, No Appeal)" },
+        { "mr": "गॅगिंग ॲक्ट", "en": "Gagging Act" },
+        { "mr": "इल्बर्ट बिल", "en": "Ilbert Bill" },
+        { "mr": "सूर्यास्त कायदा", "en": "Sunset Law" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९१९): मार्च १९१९ मध्ये संमत झालेला रौलट कायदा (Anarchical and Revolutionary Crimes Act) हा 'विना वकिल, विना अपील, विना दलील' (No Dalil, No Vakil, No Appeal) असा काळा कायदा म्हणून ओळखला गेला, कारण यात संशयावरून कोणालाही अटक करण्याची मुभा होती.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / डॉ. स. शि. गाठाळ]",
+        "en": "(1919): Officially called the Anarchical and Revolutionary Crimes Act, the Rowlatt Act was universally condemned by Indians as the 'Black Act' because it allowed detention of political prisoners without trial for two years.\n\n"
+      }
+    },
+    {
+      "id": 21,
+      "question": {
+        "mr": "१३ एप्रिल १९१९ रोजी झालेल्या भीषण 'जलियनवाला बाग हत्याकांडाच्या' (Jallianwala Bagh Massacre) निषेधार्थ रवींद्रनाथ टागोरांनी कोणती ब्रिटीश पदवी परत केली होती?",
+        "en": "Which British title did Rabindranath Tagore renounce in protest against the brutal 'Jallianwala Bagh Massacre' on April 13, 1919?"
+      },
+      "options": [
+        { "mr": "सरपद (Knighthood / सर)", "en": "Knighthood (Sir)" },
+        { "mr": "राय बहादूर", "en": "Rai Bahadur" },
+        { "mr": "कैसर-ए-हिंद", "en": "Kaisar-i-Hind" },
+        { "mr": "कॉम्पेनियन ऑफ इंडिया", "en": "Companion of India" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९१९): वैशाखीच्या दिवशी अमृतसरच्या जलियनवाला बागेत जनरल डायरने निशस्त्र लोकांवर गोळीबार केला. या अमानुष हत्याकांडाचा तीव्र निषेध म्हणून रवींद्रनाथ टागोरांनी ब्रिटिशांनी दिलेली 'सर' (Knighthood) पदवी परत केली.\n\n[संदर्भ: समाधान महाजन / स्पेक्ट्रम]",
+        "en": "(1919): Following the Jallianwala Bagh massacre on April 13, 1919, a deeply anguished Rabindranath Tagore renounced his British Knighthood in protest against the inhuman brutality.\n\n"
+      }
+    },
+    {
+      "id": 22,
+      "question": {
+        "mr": "जलियनवाला बाग हत्याकांडाची चौकशी करण्यासाठी ब्रिटीश सरकारने कोणता आयोग (Committee) नेमला होता?",
+        "en": "Which committee was appointed by the British government to inquire into the Jallianwala Bagh massacre?"
+      },
+      "options": [
+        { "mr": "हंटर कमिटी (Hunter Committee / Inquiry Committee)", "en": "Hunter Committee" },
+        { "mr": "सायमन आयोग", "en": "Simon Commission" },
+        { "mr": "मुडीमन कमिटी", "en": "Muddiman Committee" },
+        { "mr": "बटलर कमिटी", "en": "Butler Committee" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९१९): जलियनवाला बाग हत्याकांडाच्या चौकशीसाठी ब्रिटीश सरकारने ऑक्टोबर १९१९ मध्ये 'हंटर कमिटी' (Disorders Inquiry Committee) नेमली. या समितीने जनरल डायरच्या कृत्याला चुकीचे म्हटले पण त्याच्यावर कोणतीही कायदेशीर कारवाई केली नाही.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1919): The British government appointed the Disorders Inquiry Committee, commonly known as the Hunter Committee, in October 1919 to investigate the Jallianwala Bagh tragedy.\n\n"
+      }
+    },
+    {
+      "id": 23,
+      "question": {
+        "mr": "१९२० मध्ये नागपूर येथे भरलेल्या काँग्रेस अधिवेशनात महात्मा गांधींनी कोणत्या चळवळीचा मुख्य ठराव संमत करून घेतला?",
+        "en": "At which Congress session held in Nagpur in 1920 did Mahatma Gandhi get the main resolution for which movement passed?"
+      },
+      "options": [
+        { "mr": "सविनय कायदेभंग चळवळ", "en": "Civil Disobedience Movement" },
+        { "mr": "असहकार चळवळ (Non-Cooperation Movement)", "en": "Non-Cooperation Movement" },
+        { "mr": "भारत छोडो आंदोलन", "en": "Quit India Movement" },
+        { "mr": "स्वदेशी चळवळ", "en": "Swadeshi Movement" }
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": {
+        "mr": "(१९२०): सप्टेंबर १९२० मध्ये कलकत्ता येथील विशेष अधिवेशनात असहकार चळवळीचा ठराव मांडला गेला, तर डिसेंबर १९२० च्या 'नागपूर अधिवेशनात' सी. आर. दास यांच्या सहकार्याने 'असहकार चळवळीचा' मुख्य व अंतिम ठराव एकमुखाने मंजूर झाला.\n\n[संदर्भ: डॉ. स. शि. गाठाळ / स्पेक्ट्रम]",
+        "en": "(1920): The Non-Cooperation Movement was endorsed at the Nagpur session of the Indian National Congress in December 1920, transforming Congress into a mass-based political organization under Mahatma Gandhi.\n\n"
+      }
+    },
+    {
+      "id": 24,
+      "question": {
+        "mr": "५ फेब्रुवारी १९२२ रोजी उत्तर प्रदेशातील कोणत्या घटनेमुळे (पोलिस स्टेशनला आग) महात्मा गांधींनी 'असहकार चळवळ' तात्काळ स्थगित केली?",
+        "en": "Which incident in Uttar Pradesh on February 5, 1922 (setting a police station on fire) caused Mahatma Gandhi to immediately suspend the 'Non-Cooperation Movement'?"
+      },
+      "options": [
+        { "mr": "चोरीचारा घटना (Chauri Chaura Incident)", "en": "Chauri Chaura Incident" },
+        { "mr": "काकोरी कांड", "en": "Kakori Conspiracy" },
+        { "mr": "मेरठ षड्यंत्र", "en": "Meerut Conspiracy" },
+        { "mr": "मोपला बंड", "en": "Moplah Rebellion" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९२२): ५ फेब्रुवारी १९२२ रोजी गोरखपुर जिल्ह्यातील 'चौरी चौरा' येथे संतप्त गावकऱ्यांनी पोलीस स्टेशनला आग लावली, ज्यात २२ पोलीस कर्मचारी जिवंत जळाले. अहिंसेचा भंग झाल्यामुळे महात्मा गांधींनी १२ फेब्रुवारी १९२२ रोजी बारडोली येथे असहकार चळवळ मागे घेतली.\n\n[संदर्भ: समाधान महाजन / अनिल कटारे]",
+        "en": "(1922): The Chauri Chaura incident occurred on February 5, 1922, where a violent mob set fire to a police station, killing 22 policemen. Disturbed by this violence, Gandhi suspended the Non-Cooperation Movement.\n\n"
+      }
+    },
+    {
+      "id": 25,
+      "question": {
+        "mr": "१९२३ मध्ये चित्तरंजन दास आणि मोतीलाल नेहरू यांनी काँग्रेस अंतर्गत कोणत्या पक्षाची स्थापना केली होती?",
+        "en": "Which party was established within the Congress by Chittaranjan Das and Motilal Nehru in 1923?"
+      },
+      "options": [
+        { "mr": "स्वराज्य पक्ष (Swaraj Party)", "en": "Swaraj Party" },
+        { "mr": "फॉरवर्ड ब्लॉक", "en": "Forward Bloc" },
+        { "mr": "कम्युनिस्ट पार्टी", "en": "Communist Party" },
+        { "mr": "हिंदुस्थान रिपब्लिकन असोसिएशन", "en": "Hindustan Republican Association" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९२३): असहकार चळवळ स्थगित झाल्यानंतर काँग्रेसमध्ये मतभेद झाले. निवडणूक लढवून विधानसभेत जाऊन ब्रिटीशांच्या धोरणांना विरोध करण्यासाठी सी. आर. दास आणि मोतीलाल नेहरू यांनी जानेवारी १९२३ मध्ये 'स्वराज्य पक्षाची' (Congress-Khilafat Swarajya Party) स्थापना केली.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1923): Following the suspension of the Non-Cooperation Movement, C.R. Das and Motilal Nehru formed the Swaraj Party in January 1923 to contest elections and wreck the reforms from within the councils.\n\n"
+      }
+    }
+  ]
+}

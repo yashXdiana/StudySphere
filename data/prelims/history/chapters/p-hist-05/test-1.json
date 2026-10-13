@@ -1,0 +1,464 @@
+{
+  "testId": "p-hist-05-t1",
+  "title": {
+    "mr": "शेतकरी व आदिवासी चळवळी — सराव 1",
+    "en": "Peasant and Tribal Movements — Practice Test 1"
+  },
+  "durationMinutes": 20,
+  "marksPerQuestion": 1,
+  "negativeMarking": 0.25,
+  "totalMarks": 25,
+  "difficulty": "मध्यम ते काठिण्य",
+  "questions": [
+    {
+      "id": 1,
+      "question": {
+        "mr": "१८५५-५६ मध्ये राजमहाल टेकड्यांच्या परिसरात झालेल्या 'संथाल उठावाचे' (Santhal Rebellion) नेतृत्व कोणी केले होते?",
+        "en": "Who led the 'Santhal Rebellion' that took place in the Rajmahal hills region in 1855-56?"
+      },
+      "options": [
+        { "mr": "सिद्धू आणि कान्हू (Sidhu and Kanhu)", "en": "Sidhu and Kanhu" },
+        { "mr": "बिरसा मुंडा", "en": "Birsa Munda" },
+        { "mr": "अल्लुरी सीताराम राजू", "en": "Alluri Sitarama Raju" },
+        { "mr": "तीरत सिंग", "en": "Tirot Singh" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१८५५): जमीनदार, सावकार आणि ब्रिटिश महसूल अधिकाऱ्यांच्या शोषणाविरुद्ध संथाल आदिवासींनी १८५५ मध्ये भयंकर उठाव केला. याचे नेतृत्व सिद्धू आणि कान्हू या दोन भावांनी केले होते.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / डॉ. स. शि. गाठाळ]",
+        "en": "(1855): The Santhal Rebellion was a massive uprising by the Santhal tribe against the oppressive Zamindari and British colonial system, led by brothers Sidhu and Kanhu.\n\n"
+      }
+    },
+    {
+      "id": 2,
+      "question": {
+        "mr": "बिरसा मुंडा यांच्या नेतृत्वाखाली झालेल्या 'उल्गुलान' (Ulgulan) किंवा मुंडा उठावाचे मुख्य केंद्र कोणते होते?",
+        "en": "What was the main center of the 'Ulgulan' or Munda uprising led by Birsa Munda?"
+      },
+      "options": [
+        { "mr": "छोटा नागपूर (Chota Nagpur region)", "en": "Chota Nagpur region" },
+        { "mr": "खानदेश", "en": "Khandesh" },
+        { "mr": "जयंतिया टेकड्या", "en": "Jaintia Hills" },
+        { "mr": "रामप क्षेत्र", "en": "Rampa region" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१८९९-१९००): छोटा नागपूर भागात बिरसा मुंडा यांच्या नेतृत्वाखाली 'उल्गुलान' (महाविद्रोह) झाला. पारंपरिक खुटकट्टी पद्धतीचे उच्चाटन आणि दकु (बाह्य लोक व जमीनदार) यांच्याविरुद्ध हा लढा होता.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / समाधान महाजन]",
+        "en": "(1899-1900): The Ulgulan (Great Tumult) led by Birsa Munda took place in the Chota Nagpur region, protesting against the erosion of traditional Khuntkati land systems.\n\n"
+      }
+    },
+    {
+      "id": 3,
+      "question": {
+        "mr": "१८५९-६० मध्ये बंगालमध्ये झालेला 'निळाचा उठाव' (Indigo Revolt) प्रामुख्याने कोणत्या जिल्ह्यात सुरू झाला होता?",
+        "en": "In which district did the 'Indigo Revolt' in Bengal primarily begin in 1859-60?"
+      },
+      "options": [
+        { "mr": "नादिया जिल्हा (Govindpur village, Nadia district)", "en": "Nadia district" },
+        { "mr": "मेदिनीपूर", "en": "Medinipur" },
+        { "mr": "बरिसाल", "en": "Barisal" },
+        { "mr": "मुर्शिदाबाद", "en": "Murshidabad" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१८५९): बंगालमधील नादिया जिल्ह्यातील गोविदपूर गावात दिगंबर विश्वास व विष्णू विश्वास यांच्या नेतृत्वाखाली निळ उत्पादक शेतकऱ्यांनी युरोपीय मळेवाल्यांविरुद्ध रोख ठिणगी टाकली, जी पुढे 'नील दर्पण' नाटकामुळे प्रसिद्ध झाली.\n\n[संदर्भ: डॉ. स. शि. गाठाळ / स्पेक्ट्रम]",
+        "en": "(1859): The Indigo Revolt started in the Nadia district of Bengal under Digambar and Bishnu Biswas, refusing to cultivate indigo under oppressive European planters.\n\n"
+      }
+    },
+    {
+      "id": 4,
+      "question": {
+        "mr": "महाराष्ट्रातील 'दख्खन दंगली' (Deccan Riots) १८७५ मध्ये प्रामुख्याने कोणत्या जिल्ह्यात सव्याज वसुली करणाऱ्या मारवाडी व गुजराती सावरकरांविरुद्ध सुरू झाल्या?",
+        "en": "In which districts did the 'Deccan Riots' of 1875 primarily break out against moneylenders?"
+      },
+      "options": [
+        { "mr": "पुणे आणि अहमदनगर (Poona and Ahmednagar)", "en": "Poona and Ahmednagar" },
+        { "mr": "सातारा आणि सांगली", "en": "Satara and Sangli" },
+        { "mr": "नाशिक आणि खानदेश", "en": "Nashik and Khandesh" },
+        { "mr": "कोल्हापूर आणि सोलापूर", "en": "Kolhapur and Solapur" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१८७५): दख्खनमधील शेतकऱ्यांनी सावकारांच्या जाचक व्याजाविरुद्ध आणि कर्जरोख्यांच्या विरोधात १८७५ मध्ये पुणे व अहमदनगर जिल्ह्यात उठाव केला (दख्खन दंगली). यामुळे सरकारने 'दख्खन कृषक मदत कायदा' (Deccan Agriculturists Relief Act) संमत केला.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / अनिल कटारे]",
+        "en": "(1875): Agrarian distress in Poona and Ahmednagar led to the Deccan Riots of 1875, where peasants attacked moneylenders to destroy debt bonds and account books.\n\n"
+      }
+    },
+    {
+      "id": 5,
+      "question": {
+        "mr": "योग्य जोड्या जुळवा (आदिवासी/शेतकरी उठाव आणि त्यांचे नेते):\nगट अ: १) रामसी उठाव, २) भील उठाव, ३) कोहोली/कोळी उठाव, ४) पोग्गल उठाव\nगट ब: अ) उमाजी नाईक, ब) सेवेराम, क) रामजी भांगरे, ड) अल्लुरी सीताराम राजू",
+        "en": "Match the pairs (Tribal/Peasant uprisings and leaders):\nGroup A: 1) Ramosi Uprising, 2) Bhil Uprising, 3) Koli Uprising, 4) Rampa Rebellion\nGroup B: a) Umaji Naik, b) Sewaram, c) Ramji Bhangare, d) Alluri Sitarama Raju"
+      },
+      "options": [
+        { "mr": "1-अ, 2-ब, 3-क, 4-ड", "en": "1-a, 2-b, 3-c, 4-d" },
+        { "mr": "1-ब, 2-अ, 3-क, 4-ड", "en": "1-b, 2-a, 3-c, 4-d" },
+        { "mr": "1-अ, 2-क, 3-ब, 4-ड", "en": "1-a, 2-c, 3-b, 4-d" },
+        { "mr": "1-ड, 2-अ, 3-ब, 4-क", "en": "1-d, 2-a, 3-b, 4-c" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९ वे शतक): महाराष्ट्रात रामसी उठावाचे नेतृत्व उमाजी नाईक यांनी केले, खानदेशात भीलांचे नेतृत्व सेवेराम यांनी, तर महाराष्ट्रात कोळी उठावाचे नेतृत्व रामजी भांगरे व बापू भांगरे यांनी केले. आंध्रप्रदेशात रामप विद्रोह अल्लुरी सीताराम राजू यांनी केला.\n\n[संदर्भ: डॉ. स. शि. गाठाळ / समाधान महाजन]",
+        "en": "(19th-20th Century): Ramosi uprising was led by Umaji Naik, Bhil risings by Sewaram, Koli uprisings by Ramji Bhangare, and the Rampa rebellion by Alluri Sitarama Raju.\n\n"
+      }
+    },
+    {
+      "id": 6,
+      "question": {
+        "mr": "संयुक्त उत्तर प्रदेशात (अवध) १९२१-२२ मध्ये सुरू झालेल्या 'एका चळवळीचे' (Eka Movement) मुख्य नेते कोण होते?",
+        "en": "Who was the primary leader of the 'Eka Movement' in Awadh (United Provinces) during 1921-22?"
+      },
+      "options": [
+        { "mr": "मदारी पासी (Madari Pasi)", "en": "Madari Pasi" },
+        { "mr": "बाबा रामचंद्र", "en": "Baba Ramchandra" },
+        { "mr": "स्वामी सहजानंद सरस्वती", "en": "Swami Sahajanand Saraswati" },
+        { "mr": "अल्गु राय शास्त्री", "en": "Algu Rai Shastri" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९२१-२२): अवधमध्ये (हरदोई, बहराइच, सीतापूर) उच्च जमीन भाडे आणि बेदखलीविरुद्ध शेतकऱ्यांनी 'एका चळवळ' उभारली, जिचे नेतृत्व मदारी पासी व इतर निचल्या वर्गानी केले.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1921-22): The Eka Movement in Awadh was spearheaded by figures like Madari Pasi, protesting high rents, rack-renting, and sharecropping exploitation.\n\n"
+      }
+    },
+    {
+      "id": 7,
+      "question": {
+        "mr": "१९४६-४७ मध्ये बंगालमध्ये झालेली प्रसिद्ध 'तेभागा चळवळ' (Tebhaga Movement) कोणत्या मुद्याशी संबंधित होती?",
+        "en": "With which issue was the famous 'Tebhaga Movement' in Bengal (1946-47) associated?"
+      },
+      "options": [
+        { "mr": "शेतकऱ्यांना पिकाचा दोन-तृतीयांश (२/३) हिस्सा मिळावा म्हणून (ভাগचাষী - Sharecroppers)", "en": "Sharecroppers demanding two-thirds (2/3) share of the produce" },
+        { "mr": "जमीनदारांना पूर्ण मालकी हक्क मिळावा", "en": "Landlords demanding full ownership" },
+        { "mr": "वनउत्पादनांवर कर वाढवणे", "en": "Increasing taxes on forest produce" },
+        { "mr": "निळीची शेती अनिवार्य करणे", "en": "Compulsory indigo cultivation" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९४६-४७): बंगालच्या किसान सभेच्या नेतृत्वाखाली भागचषी (बरगादार / शेतकरी) यांनी 'तेभागा' (दोन-तृतीयांश हिस्सा) मिळावा म्हणून लढा दिला. त्यांनी पीक मलिदा स्वतःकडे ठेवत जमीनदारांना केवळ १/३ हिस्सा देण्याची घोषणा केली.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1946-46/47): The Tebhaga Movement led by the Kisan Sabha in Bengal demanded that sharecroppers (bargadars) receive two-thirds of the harvest instead of half.\n\n"
+      }
+    },
+    {
+      "id": 8,
+      "question": {
+        "mr": "केरळमध्ये १९२१ मध्ये झालेल्या 'मोपला बंडाचा' (Moplah Rebellion) मुख्य भाग कोणता होता आणि तो प्रामुख्याने कोणत्या समुदायाशी संबंधित होता?",
+        "en": "What was the main region of the 'Moplah Rebellion' in 1821/1921 in Kerala, and which community was primarily involved?"
+      },
+      "options": [
+        { "mr": "मलबार (Malabar) प्रांतातील मुस्लिम शेतकरी", "en": "Muslim peasants in the Malabar region" },
+        { "mr": "त्रावणकोरचे चन्नार शेतकरी", "en": "Channar peasants of Travancore" },
+        { "mr": "कोचीनमधील कामगार", "en": "Workers in Cochin" },
+        { "mr": "कालिकतचे व्यापारी", "en": "Traders of Calicut" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९२१): केरळच्या मलबार प्रांतातील मुस्लिम शेतकऱ्यांनी (मोपला) हिंदू जमीनदार व ब्रिटिश राजवटीविरुद्ध ऑगस्ट १९२१ मध्ये तीव्र सशस्त्र बंड पुकारले, ज्याला नंतर असहकार व खिलाफत चळवळीची पार्श्वभूमी लाभली होती.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / डॉ. स. शि. गाठाळ]",
+        "en": "(1921): The Moplah Rebellion broke out in the Malabar region of Kerala, where Muslim tenants revolted against oppressive upper-caste Hindu landlords and British colonial authorities.\n\n"
+      }
+    },
+    {
+      "id": 9,
+      "question": {
+        "mr": "खालील विधाने विचारात घ्या:\nअ) बाबा रामचंद्र यांनी अवध भागात किसान सभेची स्थापना करून शेतकऱ्यांना संघटित केले.\nब) 'अखिल भारतीय किसान सभा' (All India Kisan Sabha) ची स्थापना १९३६ मध्ये लखनऊ येथे झाली आणि त्याचे पहिले अध्यक्ष स्वामी सहजानंद सरस्वती होते.\nवरीलपैकी कोणते/ती विधान/ने बरोबर आहेत?",
+        "en": "Consider the following statements:\nA) Baba Ramchandra organized peasants by establishing the Kisan Sabha in Awadh.\nB) The 'All India Kisan Sabha' was founded in Lucknow in 1936 with Swami Sahajanand Saraswati as its first president.\nWhich of the above statement(s) is/are correct?"
+      },
+      "options": [
+        { "mr": "फक्त अ", "en": "Only A" },
+        { "mr": "फक्त ब", "en": "Only B" },
+        { "mr": "अ आणि ब दोन्ही", "en": "Both A and B" },
+        { "mr": "दोन्ही नाहीत", "en": "Neither A nor B" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "(१९२०-१९३६): दोन्ही विधाने अगदी बरोबर आहेत. बाबा रामचंद्र यांनी अवधमध्ये शेतकऱ्यांना एकत्र केले, तर १९३६ मध्ये लखनऊ येथे अखिल भारतीय किसान सभेची स्थापना होऊन स्वामी सहजानंद सरस्वती त्याचे पहिले अध्यक्ष झाले.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / समाधान महाजन]",
+        "en": "(1920-1936): Both statements are correct. Baba Ramchandra organized peasants in Awadh, and the All India Kisan Sabha was founded in Lucknow in 1936 with Swami Sahajanand Saraswati as president.\n\n"
+      }
+    },
+    {
+      "id": 10,
+      "question": {
+        "mr": "आसाममध्ये ब्रिटिशांच्या दळणवळण व कर आकारणीविरोधात 'खासी उठावाचे' (Khasi Uprising) नेतृत्व कोणी केले होते?",
+        "en": "Who led the 'Khasi Uprising' in Assam against British road construction and colonial domination?"
+      },
+      "options": [
+        { "mr": "सर तीरत सिंग (Tirot Singh)", "en": "Tirot Singh" },
+        { "mr": "बागो जी", "en": "Bago Ji" },
+        { "mr": "संग्राम संगमा", "en": "Sangram Sangma" },
+        { "mr": "कोमूर रामजी", "en": "Komur Ramji" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१८२९-३३): ब्रह्मपुत्रा आणि सिल्हेट यांना जोडणारा रस्ता ब्रिटिशांना बांधू द्यायचा नाही म्हणून खासी टेकड्यांवरील सरदारांनी 'तीरत सिंग' यांच्या नेतृत्वाखाली तीव्र लढा दिला.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1829-33): Tirot Singh led the Khasi chiefs in a fierce revolt against the British occupation of Khasi Hills and forced road-building projects in Assam.\n\n"
+      }
+    },
+    {
+      "id": 11,
+      "question": {
+        "mr": "ओरिसा (ओडिशा) मधील 'खोंड आदिवासींचा उठाव' (Khond Uprising) १८३७-५६ दरम्यान कोणत्या प्रथेच्या विरोधात झाला होता?",
+        "en": "Against which practice was the 'Khond Uprising' in Orissa (1837-56) primarily directed?"
+      },
+      "options": [
+        { "mr": "मरिया प्रथा (Human Sacrifice / Meriah sacrifice) बंद करण्याच्या ब्रिटीश प्रयत्नांना व जमीन महसुलाला विरोध", "en": "British interference with Meriah (human sacrifice) and new land revenue" },
+        { "mr": "निळीची शेती करण्याच्या सक्तीविरोधात", "en": "Compulsory indigo cultivation" },
+        { "mr": "जंगल कायद्यांच्या विरोधात", "en": "Forest laws" },
+        { "mr": "मिठावरील कर वाढवल्यामुळे", "en": "Salt tax increase" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१८३७-५६): ओरिसातील खोंड आदिवासींनी चक्र बिश्नोई यांच्या नेतृत्वाखाली ब्रिटीश सरकारने त्यांच्या धार्मिक विधीतील 'मरिया' (नरबळी - Meriah) प्रथा बंद करण्याच्या प्रयत्नांना आणि नवीन महसूल धोरणाला विरोध केला.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1837-56): The Khonds of Orissa, led by Chakra Bisoi, revolted against British attempts to suppress their ritualistic Meriah (human sacrifice) practice and new taxes.\n\n"
+      }
+    },
+    {
+      "id": 12,
+      "question": {
+        "mr": "महाराष्ट्रात रामशासनाविरुद्ध किंवा ब्रिटीश सत्तेविरुद्ध 'उमाजी नाईक' यांनी रामोशी समाजाला संघटित करून कोणत्या भागात उठाव केला होता?",
+        "en": "In which region did Umaji Naik organize the Ramosis and lead an uprising against British rule in Maharashtra?"
+      },
+      "options": [
+        { "mr": "पुणे, सातारा व पुरंदर परिसर (Pune, Satara and Purandar)", "en": "Pune, Satara and Purandar" },
+        { "mr": "विदर्भ", "en": "Vidarbha" },
+        { "mr": "कोकण", "en": "Konkan" },
+        { "mr": "मराठवाडा", "en": "Marathwada" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१८२२-१८३१): उमाजी नाईक यांनी पुणे, सातारा, पुरंदर व पुरंदर परिसरातील रामोशी लोकांना एकत्र करून ब्रिटीश सरकारी तिजोरी लुटणे आणि अधिकाऱ्यांना जेरीस आणण्याचे काम केले. त्यांना १८३२ मध्ये पुणे येथे फाशी दिली.\n\n[संदर्भ: डॉ. स. शि. गाठाळ / समाधान महाजन]",
+        "en": "(1822-1831): Umaji Naik mobilized the Ramosis in Pune, Satara, and Purandar, challenging British authority through armed raids before being captured and hanged in 1832.\n\n"
+      }
+    },
+    {
+      "id": 13,
+      "question": {
+        "mr": "खालील विधाने विचारात घ्या:\nअ) १९ वे आणि २० वे शतक यात झालेले आदिवासी उठाव हे प्रामुख्याने जमीनदार, सावकार, आणि जंगल कायद्यांच्या शोषणाविरुद्ध होते.\nब) आदिवासींनी कधीही पारंपरिक शस्त्रास्त्रांचा वापर केला नाही.\nवरीलपैकी कोणते/ती विधान/ने बरोबर आहेत?",
+        "en": "Consider the following statements:\nA) Tribal uprisings in the 19th and 20th centuries were primarily against the exploitation by landlords, moneylenders, and restrictive forest laws.\nB) Tribal rebels never used traditional weapons in their struggles.\nWhich of the above statement(s) is/are correct?"
+      },
+      "options": [
+        { "mr": "फक्त अ", "en": "Only A" },
+        { "mr": "फक्त ब", "en": "Only B" },
+        { "mr": "अ आणि ब दोन्ही", "en": "Both A and B" },
+        { "mr": "दोन्ही नाहीत", "en": "Neither A nor B" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९ वे शतक): विधान 'अ' बरोबर आहे. विधान 'ब' चुकीचे आहे कारण आदिवासींनी धनुष्यबाण, कुऱ्हाडी आणि भाले यांसारख्या पारंपरिक शस्त्रास्त्रांचा मोठ्या प्रमाणावर वापर केला होता.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(19th-20th Century): Statement A is correct. Statement B is incorrect because tribal rebels heavily relied on traditional weapons like bows, arrows, and axes.\n\n"
+      }
+    },
+    {
+      "id": 14,
+      "question": {
+        "mr": "तेलंगणातील हैदराबाद संस्थानात १९४६-५१ दरम्यान झालेला प्रसिद्ध 'तेलंगणा लढा' (Telangana Movement) कशाशी संबंधित होता?",
+        "en": "With what was the famous 'Telangana Movement' (1946-51) in the Hyderabad princely state primarily associated?"
+      },
+      "options": [
+        { "mr": "देशमूक व जगीरदारांच्या (Vetti / Forced labour) शोषणाविरुद्ध कम्युनिस्ट नेतृत्वाखालील शेतकरी लढा", "en": "Peasants fighting against forced labor (Vetti) and feudal landlords under communist leadership" },
+        { "mr": "निजामाच्या राजवटीत इंग्रजी शिक्षण सक्तीविरोधात", "en": "Against compulsory English education" },
+        { "mr": "वनोत्पादनावरील टॅक्स कमी करण्यासाठी", "en": "Reducing forest taxes" },
+        { "mr": "विभाजनाच्या विरोधात", "en": "Against partition" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९४६-५१): हैदराबाद संस्थानच्या तेलंगणा भागात कम्युनिस्ट पक्षाच्या (CPI) नेतृत्वाखाली शेतकरी व मजुरांनी 'वेट्टी' (विनावेतन सक्तीची मजुरी) आणि जमीनदारांच्या अत्याचाराविरुद्ध अभूतपूर्व सशस्त्र शेतकरी लढा उभारला.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1946-51): The Telangana Armed Struggle was a peasant rebellion led by the Communist Party against the oppressive feudal lords (Deshmukhs) and the Nizam's rule, protesting forced labor (Vetti).\n\n"
+      }
+    },
+    {
+      "id": 15,
+      "question": {
+        "mr": "महाराष्ट्रात 'वारली आदिवासींचा लढा' (Warli Revolt) १९४५ च्या सुमारास ठाणे जिल्ह्यात कोणाच्या नेतृत्वाखाली झाला होता?",
+        "en": "Under whose leadership did the 'Warli tribal revolt' take place in Thane district around 1945 in Maharashtra?"
+      },
+      "options": [
+        { "mr": "गोदावरी परुळेकर आणि सहकार्‍यांनी (Kisan Sabha / Godavari Parulekar)", "en": "Godavari Parulekar and Kisan Sabha leaders" },
+        { "mr": "साने गुरुजी", "en": "Sane Guruji" },
+        { "mr": "नाना पाटील", "en": "Nana Patil" },
+        { "mr": "यशोदाबाई जोशी", "en": "Yashodabai Joshi" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९४५): ठाणे जिल्ह्यातील वारली आदिवासींनी सवलत, बेगार प्रथा (विनामोबदला काम) आणि सावरकरांच्या जाचाविरुद्ध कम्युनिस्ट किसान सभेच्या 'गोदावरी परुळेकर' यांच्या नेतृत्वाखाली यशस्वी लढा उभारला.\n\n[संदर्भ: समाधान महाजन / स्पेक्ट्रम]",
+        "en": "(1945): The Warli tribals in Thane district launched a militant revolt against forced labor (begar) and debt bondage under the leadership of Godavari Parulekar and the Kisan Sabha.\n\n"
+      }
+    },
+    {
+      "id": 16,
+      "question": {
+        "mr": "बिहारमध्ये १९३० च्या दशकात 'बकाश्त जमीन' (Bakasht Land) च्या रक्षणासाठी शेतकऱ्यांना संघटित करण्याचे मोठे कार्य कोणी केले?",
+        "en": "Who spearheaded the peasant mobilization to protect 'Bakasht Lands' in Bihar during the 1930s?"
+      },
+      "options": [
+        { "mr": "स्वामी सहजानंद सरस्वती (Swami Sahajanand Saraswati)", "en": "Swami Sahajanand Saraswati" },
+        { "mr": "जयप्रकाश नारायण", "en": "Jayaprakash Narayan" },
+        { "mr": "राजेंद्र प्रसाद", "en": "Rajendra Prasad" },
+        { "mr": "श्रीकृष्ण सिंग", "en": "Sri Krishna Singh" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९३० च्या दशकात): बिहारमध्ये 'बकाश्त' जमिनींवरून (ज्या जमिनीवरून जमीनदारांनी कुळांना बेदखल केले होते) मालकी हक्कासाठी स्वामी सहजानंद सरस्वती यांनी 'बकाश्त जमीन आंदोलन' तीव्र केले.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1930s): Swami Sahajanand Saraswati led the Bakasht Land struggle in Bihar, fighting against the eviction of tenants by landlords from lands they previously cultivated.\n\n"
+      }
+    },
+    {
+      "id": 17,
+      "question": {
+        "mr": "खालील विधाने विचारात घ्या:\nअ) सन १९२८ मध्ये गुजरातमध्ये झालेला 'बारडोली सत्याग्रह' हा शेतकऱ्यांवर लादलेल्या वाढीव शेतसारा (महसूल) विरोधात होता.\nब) या सत्याग्रहाचे नेतृत्व सरदार वल्लभभाई पटेल यांनी केले होते.\nवरीलपैकी कोणते/ती विधान/ने बरोबर आहेत?",
+        "en": "Consider the following statements:\nA) The 'Bardoli Satyagraha' in Gujarat in 1928 was against an unjust hike in land revenue.\nB) The Satyagraha was successfully led by Vallabhbhai Patel.\nWhich of the above statement(s) is/are correct?"
+      },
+      "options": [
+        { "mr": "फक्त अ", "en": "Only A" },
+        { "mr": "फक्त ब", "en": "Only B" },
+        { "mr": "अ आणि ब दोन्ही", "en": "Both A and B" },
+        { "mr": "दोन्ही नाहीत", "en": "Neither A nor B" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "(१९२८): दोन्ही विधाने अगदी बरोबर आहेत. बारडोलीत ३०% महसूल वाढवल्याविरुद्ध वल्लभभाई पटेलांच्या नेतृत्वाखाली शेतकऱ्यांनी करबंदी लढा दिला, ज्याच्या यशामुळे महिलांनी त्यांना 'सरदार' पदवी दिली.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / डॉ. स. शि. गाठाळ]",
+        "en": "(1928): Both statements are correct. Vallabhbhai Patel led the successful Bardoli Satyagraha against a 30% revenue hike, earning the title 'Sardar' from the local women.\n\n"
+      }
+    },
+    {
+      "id": 18,
+      "question": {
+        "mr": "महाराष्ट्रात साताऱ्यात १९४३ मध्ये क्रांतीसिंह नाना पाटील यांनी ब्रिटीश सत्तेविरोधात स्थापन केलेल्या समांतर सरकारचे नाव काय होते?",
+        "en": "What was the name of the parallel government established by Nana Patil against British rule in Satara in 1943?"
+      },
+      "options": [
+        { "mr": "प्रती सरकार (Prati Sarkar)", "en": "Prati Sarkar" },
+        { "mr": "आझाद हिंद सरकार", "en": "Azad Hind Sarkar" },
+        { "mr": "स्वराज सरकार", "en": "Swaraj Sarkar" },
+        { "mr": "जनता सरकार", "en": "Janata Sarkar" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९४३): भारत छोडो आंदोलनादरम्यान (१९४२) साताऱ्यात क्रांतीसिंह नाना पाटील आणि त्यांच्या सहकाऱ्यांनी 'प्रति सरकार' (Parallel Government) स्थापन करून न्यायदान, बाजार नियमन आणि कर गोळा करण्याचे कार्य स्वतः हाती घेतले.\n\n[संदर्भ: डॉ. स. शि. गाठाळ / समाधान महाजन]",
+        "en": "(1943): During the Quit India Movement, Krantisinh Nana Patil and local activists established the 'Prati Sarkar' (Parallel Government) in Satara, effectively administering justice and rationing.\n\n"
+      }
+    },
+    {
+      "id": 19,
+      "question": {
+        "mr": "पंजाबमध्ये १९०७ च्या सुमारास झालेल्या 'पंजाब कृषक चळवळीचे' (Punjab Kisan Movement) मुख्य कारण काय होते आणि त्याशी संबंधित नेते कोण होते?",
+        "en": "What was the main cause of the Punjab Kisan Movement around 1907, and who was associated with it?"
+      },
+      "options": [
+        { "mr": "कॅनॉल कॉलनीज ॲक्ट (नेना व जमीन हस्तांतरण निर्बंध), सरदार अजित सिंग व लाला लाजपत राय", "en": "Colonisation Bill / Canal Colonies Act, led by Ajit Singh and Lala Lajpat Rai" },
+        { "mr": "मीठावरील कर वाढवणे", "en": "Salt tax" },
+        { "mr": "रेल्वे भाडेवाढ", "en": "Railway fare hike" },
+        { "mr": "स्थानिक भाषेवर बंदी", "en": "Ban on local language" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९०७): पंजाबमध्ये कॅनॉल कॉलनीज ॲक्टमुळे पाण्याच्या दरात व महसुलात वाढ झाली. याविरुद्ध सरदार अजित सिंग (भगत सिंग यांचे काका) आणि लाला लाजपत राय यांनी 'पगडी संभाल जट्टा' ही चळवळ उभी केली.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1907): The Colonisation Bill led to massive peasant unrest in Punjab against water rates and land alienation, championed by Sardar Ajit Singh and Lala Lajpat Rai ('Pagdi Sambhal Jatta').\n\n"
+      }
+    },
+    {
+      "id": 20,
+      "question": {
+        "mr": "खालील विधाने विचारात घ्या:\nअ) १९व्या शतकातील आदिवासी चळवळींचे मुख्य स्वरूप बाह्य लोकांविरुद्ध (दकू) आणि सावकारी शोषणाविरुद्ध होते.\nब) संथालांच्या उठावान्यानंतर ब्रिटिश सरकारने 'संथाल परगणा टेनन्सी ॲक्ट' (Santhal Pargana Tenancy Act) संमत केला.\nवरीलपैकी कोणते/ती विधान/ने बरोबर आहेत?",
+        "en": "Consider the following statements:\nA) 19th-century tribal uprisings were primarily directed against outsiders (Dikus) and moneylenders.\nB) Following the Santhal rebellion, the British government enacted the 'Santhal Pargana Tenancy Act'.\nWhich of the above statement(s) is/are correct?"
+      },
+      "options": [
+        { "mr": "फक्त अ", "en": "Only A" },
+        { "mr": "फक्त ब", "en": "Only B" },
+        { "mr": "अ आणि ब दोन्ही", "en": "Both A and B" },
+        { "mr": "दोन्ही नाहीत", "en": "Neither A nor B" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "(१८५५-१८७६): दोन्ही विधाने अगदी बरोबर आहेत. आदिवासींनी बाह्य शोषकांना 'दकू' म्हटले आणि उठावानंतर संथालांच्या जमिनींचे रक्षण करण्यासाठी संथाल परगणा कायदा केला गेला.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / डॉ. स. शि. गाठाळ]",
+        "en": "(1855-1876): Both statements are correct. Tribal movements targeted external exploiters ('Dikus'), and post-revolt, protective tenancy acts like the Santhal Pargana Tenancy Act were passed.\n\n"
+      }
+    },
+    {
+      "id": 21,
+      "question": {
+        "mr": "भारतात ब्रिटीश काळात 'पाण्याची व वनाची जंगले' आदिवासींच्या अधिकारातून काढून घेण्याविरुद्ध झालेला 'चूआड उठाव' (Chuar Uprising) प्रामुख्याने कोणत्या भागात झाला होता?",
+        "en": "In which region did the 'Chuar Uprising' by tribal cultivators occur against British land revenue and forest encroachments?"
+      },
+      "options": [
+        { "mr": "मिदनापूर व बांकुरा जिल्हा (Bengal / Midnapore)", "en": "Midnapore district (Bengal)" },
+        { "mr": "छोटा नागपूर", "en": "Chota Nagpur" },
+        { "mr": "जयंतिया टेकड्या", "en": "Jaintia Hills" },
+        { "mr": "वायव्य सीमा प्रांत", "en": "North-Western Frontier" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१७६६-१८३४): बंगालमधील मिदनापूर व बांकुरा जिल्ह्यातील चुआड (Chuar - स्थानिक भूमिहीन आदिवासी व शेतकरी) यांनी ब्रिटीश जमीन महसूल धोरणाविरुद्ध वारंवार सशस्त्र उठाव केले.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1766-1834): The Chuar uprising took place in the Midnapore and Bankura districts of Bengal, where tribal peasants revolted against arbitrary revenue demands and displacement.\n\n"
+      }
+    },
+    {
+      "id": 22,
+      "question": {
+        "mr": "आंध्र प्रदेशातील 'रामप विद्रोह' (Rampa Rebellion - १९२२-२४) चे नेतृत्व कोणी केले होते, ज्यांना आदिवासी 'हिरो' मानत?",
+        "en": "Who led the 'Rampa Rebellion' (1922-24) in the tribal tracts of Andhra Pradesh?"
+      },
+      "options": [
+        { "mr": "अल्लुरी सीताराम राजू (Alluri Sitarama Raju)", "en": "Alluri Sitarama Raju" },
+        { "mr": "बिरसा मुंडा", "en": "Birsa Munda" },
+        { "mr": "तीरत सिंग", "en": "Tirot Singh" },
+        { "mr": "चक्र बिश्नोई", "en": "Chakra Bisoi" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९२२-२४): आंध्रप्रदेशच्या गोदावरी जिल्ह्यातील रामप भागात ब्रिटिश जंगल कायदे आणि मुत्तादार (जमीनदार) यांच्या शोषणाविरुद्ध 'अल्लुरी सीताराम राजू' यांच्या नेतृत्वाखाली आदिवासींनी सशस्त्र लढा दिला.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1922-24): Alluri Sitarama Raju led the Rampa rebellion in Andhra Pradesh, organizing hill tribes against oppressive British forest acts and exploitation by local contractors.\n\n"
+      }
+    },
+    {
+      "id": 23,
+      "question": {
+        "mr": "खालील विधाने विचारात घ्या:\nअ) १९ वे शतकातील शेतकरी व आदिवासी आंदोलने स्थानिक स्वरूपाची असली तरी त्यांनी भारताच्या स्वातंत्र्यलढ्याची पायाभरणी केली.\nब) या सर्व चळवळी पूर्णपणे यशस्वी ठरल्या आणि ब्रिटिशांना तात्काळ माघार घ्यावी लागली.\nवरीलपैकी कोणते/ती विधान/ने बरोबर आहेत?",
+        "en": "Consider the following statements:\nA) 19th-century peasant and tribal movements, though localized, laid the groundwork for Indian national awakening.\nB) All these movements were immediately and completely successful in driving out the British.\nWhich of the above statement(s) is/are correct?"
+      },
+      "options": [
+        { "mr": "फक्त अ", "en": "Only A" },
+        { "mr": "फक्त ब", "en": "Only B" },
+        { "mr": "अ आणि ब दोन्ही", "en": "Both A and B" },
+        { "mr": "दोन्ही नाहीत", "en": "Neither A nor B" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९ वे शतक): विधान 'अ' बरोबर आहे. विधान 'ब' चुकीचे आहे कारण ब्रिटीश सैन्याने ही आंदोलने अत्यंत क्रूरपणे मोडून काढली होती, जरी नंतर काही कायदेशीर सुधारणा कराव्या लागल्या.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(19th Century): Statement A is correct. Statement B is incorrect because while these movements shook colonial rule and forced protective legislation, they were brutally suppressed militarily at the time.\n\n"
+      }
+    },
+    {
+      "id": 24,
+      "question": {
+        "mr": "मणिपूरमध्ये १८९१ च्या सुमारास ब्रिटीश हस्तक्षेपाविरुद्ध 'नागा उठावाचे' नेतृत्व कोणत्या वीर महिलेने केले होते?",
+        "en": "Which brave tribal leader/woman led the anti-British resistance in Manipur during the 1891 uprising?"
+      },
+      "options": [
+        { "mr": "राणी गाइदिन्ल्यू (नंतरच्या काळात) / किंवा मणिपूरच्या संदर्भात स्थानिक नागा नेते व जादोनियांग / रानी ल्‍ैदिन्ल्यू", "en": "Rani Gaidinliu (subsequently) / Zeliangrong movement leaders" },
+        { "mr": "बेगम हजरत महल", "en": "Begum Hazrat Mahal" },
+        { "mr": "राणी लक्ष्मीबाई", "en": "Rani Lakshmibai" },
+        { "mr": "वेलू नचियार", "en": "Velu Nachiyar" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९३० च्या दशकात): नागा आदिवासींमध्ये झादोनियांग आणि नंतर 'राणी गाइदिन्ल्यू' (Rani Gaidinliu) यांनी ब्रिटीश सत्तेविरुद्ध मणिपूर व नागालँड भागात मोठा लढा उभारला होता (ज्याला नेहरूजींनी 'राणी' ही उपाधी दिली).\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1930s): Rani Gaidinliu, a Naga spiritual and political leader, led a fierce revolt against British rule in the Northeast, earning praise from Jawaharlal Nehru.\n\n"
+      }
+    },
+    {
+      "id": 25,
+      "question": {
+        "mr": "भारतीय इतिहासात 'शेतकरी व आदिवासी चळवळींचे' ऐतिहासिक महत्त्व काय आहे?",
+        "en": "What is the primary historical significance of 'Peasant and Tribal Movements' in Indian history?"
+      },
+      "options": [
+        { "mr": "ब्रिटिश वसाहतवादी शोषणाचे खरे स्वरूप उघडे पाडणे आणि तळागाळातील लोकांमध्ये प्रतिरोधाची संस्कृती निर्माण करणे", "en": "Exposing the true exploitative nature of colonial rule and fostering a culture of grassroots resistance" },
+        { "mr": "केवळ दळणवळण सुधारणे", "en": "Only improving transport" },
+        { "mr": "इंग्रजांना कर भरण्यास मदत करणे", "en": "Helping British tax collection" },
+        { "mr": "जमीनदारांचे अधिकार वाढवणे", "en": "Strengthening landlords" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९-२० वे शतक): शेतकरी व आदिवासी चळवळींमुळे वसाहतवादाचे आर्थिक व सामाजिक शोषण उघडे पडले आणि भारतीय जनतेत संघर्षाची परंपरा तयार झाली.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / डॉ. स. शि. गाठाळ]",
+        "en": "(19th-20th Century): These movements exposed the predatory nature of British colonial policies and laid down an inspiring tradition of anti-imperialist mass resistance.\n\n"
+      }
+    }
+  ]
+}

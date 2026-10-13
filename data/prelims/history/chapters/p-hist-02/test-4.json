@@ -1,0 +1,464 @@
+{
+  "testId": "p-hist-02-t4",
+  "title": {
+    "mr": "भारतातील ब्रिटिश सत्तेचा विस्तार व प्रशासन — सराव 4",
+    "en": "British Rule in India — Practice Test 4"
+  },
+  "durationMinutes": 20,
+  "marksPerQuestion": 1,
+  "negativeMarking": 0.25,
+  "totalMarks": 25,
+  "difficulty": "मध्यम ते काठिण्य",
+  "questions": [
+    {
+      "id": 1,
+      "question": {
+        "mr": "खालील विधाने विचारात घ्या:\nअ) १७८४ च्या पिट्स इंडिया ॲक्टने पहिल्यांदाच कंपनीच्या ताब्यातील प्रदेशांना 'ब्रिटीश ताब्यातील भारतातील प्रदेश' म्हणून संबोधले.\nब) या कायद्याने गव्हर्नर जनरलच्या कौन्सिलमधील सदस्यांची संख्या ४ वरून ३ केली.\nवरीलपैकी कोणते/ती विधान/ने बरोबर आहेत?",
+        "en": "Consider the following statements:\nA) Pitt's India Act of 1848/1784 referred to Company's territories as 'British possessions in India' for the first time.\nB) This act reduced the council members to three.\nWhich of the above statement(s) is/are correct?"
+      },
+      "options": [
+        { "mr": "फक्त अ", "en": "Only A" },
+        { "mr": "फक्त ब", "en": "Only B" },
+        { "mr": "अ आणि ब दोन्ही", "en": "Both A and B" },
+        { "mr": "दोन्ही नाहीत", "en": "Neither A nor B" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "(१७८४): पिट्स इंडिया ॲक्ट १७८४ नुसार ब्रिटीश संसदेने कंपनीच्या राजकीय व व्यापारी कारभारावर नियंत्रण ठेवण्यासाठी बोर्ड ऑफ कंट्रोल स्थापन केले आणि प्रथमच भारताच्या प्रदेशांना 'ब्रिटीश ताब्यातील प्रदेश' म्हटले तसेच कौन्सिलमधील सदस्य ४ वरून ३ केले.\n\n[संदर्भ: एम. लक्ष्मीकांत]",
+        "en": "(1784): Both statements are correct. Pitt's India Act of 1784 formally designated Indian territories as British possessions and reduced the Governor-General's council members to three.\n\n"
+      }
+    },
+    {
+      "id": 2,
+      "question": {
+        "mr": "१८३३ च्या चार्टर ॲक्टनुसार भारतातील प्रशासनाचे पूर्ण केंद्रीकरण करण्यात आले. यानुसार बंगालच्या गव्हर्नर जनरलला कोणते नवीन पद मिळाले?",
+        "en": "According to the Charter Act of 1833, administration was fully centralized. What new designation did the Governor-General of Bengal receive?"
+      },
+      "options": [
+        { "mr": "व्हाइसरॉय ऑफ इंडिया", "en": "Viceroy of India" },
+        { "mr": "गव्हर्नर जनरल ऑफ इंडिया (Governor-General of India)", "en": "Governor-General of India" },
+        { "mr": "भारताचा मुख्य आयुक्त", "en": "Chief Commissioner of India" },
+        { "mr": "ब्रिटिश एजंट जनरल", "en": "British Agent-General" }
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": {
+        "mr": "(१८३३): १८३३ च्या चार्टर ॲक्टने ब्रिटिश भारतातील प्रशासकीय केंद्रीकरणाची अंतिम पायरी गाठली आणि बंगालच्या गव्हर्नर जनरलला 'गव्हर्नर जनरल ऑफ इंडिया' बनवले, ज्याचे अधिकार संपूर्ण ब्रिटिश भारतावर चालत होते.\n\n[संदर्भ: एम. लक्ष्मीकांत / स्पेक्ट्रम]",
+        "en": "(1833): The Charter Act of 1833 marked the final step towards centralization in British India by designating the Governor-General of Bengal as the Governor-General of India, vesting him with all civil and military powers.\n\n"
+      }
+    },
+    {
+      "id": 3,
+      "question": {
+        "mr": "खालीलपैकी कोणत्या कायद्याने कंपनीच्या भारतातील व्यापारावरील एकाधिकार पूर्णपणे संपवून तो सर्व ब्रिटीश नागरिकांसाठी खुला केला?",
+        "en": "Which of the following acts completely ended the Company's trade monopoly in India, opening it to all British subjects?"
+      },
+      "options": [
+        { "mr": "१८३३ चा चार्टर ॲक्ट (Charter Act of 1833)", "en": "Charter Act of 1833" },
+        { "mr": "१८१३ चा चार्टर ॲक्ट", "en": "Charter Act of 1813" },
+        { "mr": "१७९३ चा चार्टर ॲक्ट", "en": "Charter Act of 1793" },
+        { "mr": "१८५३ चा चार्टर ॲक्ट", "en": "Charter Act of 1853" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१८३३): १८१३ च्या कायद्याने चहा व चीनचा व्यापार सोडल्यास एकाधिकार संपवला होता, परंतु १८३३ च्या चार्टर ॲक्टने तोही एकाधिकार पूर्णपणे संपवला आणि कंपनीची व्यापारी ओळख संपुष्टात आणली.\n\n[संदर्भ: एम. लक्ष्मीकांत]",
+        "en": "(1833): The Charter Act of 1833 ended the Company's remaining trade monopoly over tea and trade with China, making it a purely administrative entity.\n\n"
+      }
+    },
+    {
+      "id": 4,
+      "question": {
+        "mr": "१८५३ च्या चार्टर ॲक्टनुसार केंद्रीय विधिमंडळात स्थानिक प्रांतांचे प्रतिनिधी समाविष्ट करण्याची सुरुवात झाली. खालीलपैकी कोणत्या प्रांतातून प्रतिनिधी घेतले गेले नव्हते?",
+        "en": "Local representatives were included in the Central Legislature under the Charter Act of 1853. From which of the following provinces was a representative NOT taken?"
+      },
+      "options": [
+        { "mr": "मद्रास", "en": "Madras" },
+        { "mr": "बॉम्बे", "en": "Bombay" },
+        { "mr": "पंजाब (Punjab)", "en": "Punjab" },
+        { "mr": "उत्तर-पश्चिम प्रांत", "en": "North-Western Provinces" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "(१८५३): १८५३ च्या कायद्याने मद्रास, बॉम्बे, बंगाल आणि उत्तर-पश्चिम प्रांत या चार प्रांतांतून प्रत्येकी एक स्थानिक प्रतिनिधी केंद्रीय विधान परिषदेत घेतला होता. यात पंजाबचा समावेश नव्हता.\n\n[संदर्भ: एम. लक्ष्मीकांत]",
+        "en": "(1853): The 1853 Act introduced local representation by appointing four representatives from the local governments of Madras, Bombay, Bengal, and the North-Western Provinces, excluding Punjab at that stage.\n\n"
+      }
+    },
+    {
+      "id": 5,
+      "question": {
+        "mr": "खालील विधाने विचारात घ्या:\nअ) १८५८ च्या कायद्याने 'बोर्ड ऑफ कंट्रोल' आणि 'कोर्ट ऑफ डायरेक्टर्स' बरखास्त केले.\nब) लंडनमध्ये 'भारत मंत्री' (Secretary of State) पदाची निर्मिती केली गेली.\nवरीलपैकी कोणते/ती विधान/ने बरोबर आहेत?",
+        "en": "Consider the following statements:\nA) The Act of 1858 abolished the Board of Control and Court of Directors.\nB) The office of the 'Secretary of State for India' was created in London.\nWhich of the above statement(s) is/are correct?"
+      },
+      "options": [
+        { "mr": "फक्त अ", "en": "Only A" },
+        { "mr": "फक्त ब", "en": "Only B" },
+        { "mr": "अ आणि ब दोन्ही", "en": "Both A and B" },
+        { "mr": "दोन्ही नाहीत", "en": "Neither A nor B" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "(१८५८): १८५७ च्या उठावानंतर आलेल्या १८५८ च्या कायद्याने दुहेरी राजवट संपवली आणि लंडनमध्ये भारत मंत्र्याची स्थापना करून कंपनीची सत्ता सम्राटाकडे हस्तांतरित केली.\n\n[संदर्भ: एम. लक्ष्मीकांत]",
+        "en": "(1858): Both statements are correct. The Government of India Act 1858 abolished the double government system and created the position of the Secretary of State for India.\n\n"
+      }
+    },
+    {
+      "id": 6,
+      "question": {
+        "mr": "१८६१ च्या भारतीय परिषद कायद्यानुसार व्हाइसरॉयला संकटकाळात अध्यादेश (Ordinance) काढण्याचा अधिकार दिला गेला, ज्याची कमाल मर्यादा किती महिने होती?",
+        "en": "Under the Indian Councils Act of 1861, the Viceroy was empowered to issue ordinances during emergencies, with a maximum validity period of how many months?"
+      },
+      "options": [
+        { "mr": "३ महिने", "en": "3 months" },
+        { "mr": "६ महिने (6 months)", "en": "6 months" },
+        { "mr": "१ वर्ष", "en": "1 year" },
+        { "mr": "९ महिने", "en": "9 months" }
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": {
+        "mr": "(१८६१): १८६१ च्या कायद्याने आणीबाणीच्या काळात व्हाइसरॉयला ६ महिन्यांपर्यंत लागू राहील असा अध्यादेश काढण्याचे अधिकार दिले.\n\n[संदर्भ: एम. लक्ष्मीकांत]",
+        "en": "(1861): The ordinance-making power granted to the Viceroy under the 1861 Act was valid for a maximum period of six months.\n\n"
+      }
+    },
+    {
+      "id": 7,
+      "question": {
+        "mr": "खालीलपैकी कोणत्या कायद्याने प्रथमच प्रांतांमध्ये 'द्विदल राज्यपद्धती' (Diarchy) लागू केली?",
+        "en": "Which of the following acts first introduced 'Diarchy' in the provinces?"
+      },
+      "options": [
+        { "mr": "१९०९ चा कायदा", "en": "Morley-Minto Reforms 1909" },
+        { "mr": "१९१९ चा मॉन्टग्यू-चेम्सफोर्ड कायदा (Government of India Act 1919)", "en": "Government of India Act 1919" },
+        { "mr": "१९३५ चा कायदा", "en": "Government of India Act 1935" },
+        { "mr": "१८९२ चा कायदा", "en": "Indian Councils Act 1892" }
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": {
+        "mr": "(१९१९): १९१९ च्या कायद्याने प्रांतांमध्ये द्विदल राज्यपद्धती (Diarchy) आणून प्रशासकीय विषयांचे राखीव आणि सुनेद असे दोन भाग केले.\n\n[संदर्भ: एम. लक्ष्मीकांत]",
+        "en": "(1919): The Montagu-Chelmsford Reforms introduced Diarchy in the provinces, dividing provincial subjects into Reserved and Transferred categories.\n\n"
+      }
+    },
+    {
+      "id": 8,
+      "question": {
+        "mr": "१९३५ च्या भारत सरकार कायद्यानुसार प्रांतांमधील 'द्विदल राज्यपद्धती' (Diarchy) समाप्त करून कोणती नवीन व्यवस्था लागू केली गेली?",
+        "en": "What new system was introduced in the provinces by abolishing 'Diarchy' under the Government of India Act 1935?"
+      },
+      "options": [
+        { "mr": "प्रांतीय स्वायत्तता (Provincial Autonomy)", "en": "Provincial Autonomy" },
+        { "mr": "केंद्रीकृत शासन", "en": "Centralized Governance" },
+        { "mr": "राज्यपाल राजवट", "en": "Governor's Rule" },
+        { "mr": "साम्यवादी प्रशासन", "en": "Communist Administration" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९३५): १९३५ च्या कायद्याने प्रांतांमधील द्विदल पद्धत रद्द केली आणि 'प्रांतीय स्वायत्तता' (Provincial Autonomy) सुरू केली.\n\n[संदर्भ: एम. लक्ष्मीकांत]",
+        "en": "(1935): The Act of 1935 abolished provincial diarchy and introduced Provincial Autonomy, empowering provinces to act as independent administrative units.\n\n"
+      }
+    },
+    {
+      "id": 9,
+      "question": {
+        "mr": "खालील विधाने विचारात घ्या:\nअ) १९३५ च्या कायद्याने भारतात 'फेडरल कोर्ट' स्थापन करण्याची तरतूद केली जी १९३७ मध्ये प्रत्यक्षात आली.\nब) या कायद्याने रिझर्व्ह बँक ऑफ इंडिया (RBI) ची स्थापना केली.\nवरीलपैकी कोणते/ती विधान/ने बरोबर आहेत?",
+        "en": "Consider the following statements:\nA) The Act of 1935 provided for a Federal Court which was set up in 1937.\nB) This act established the Reserve Bank of India (RBI).\nWhich of the above statement(s) is/are correct?"
+      },
+      "options": [
+        { "mr": "फक्त अ", "en": "Only A" },
+        { "mr": "फक्त ब", "en": "Only B" },
+        { "mr": "अ आणि ब दोन्ही", "en": "Both A and B" },
+        { "mr": "दोन्ही नाहीत", "en": "Neither A nor B" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "(१९३५): दोन्ही विधाने अगदी बरोबर आहेत. १९३५ च्या कायद्याने फेडरल कोर्ट आणि आरबीआय (RBI) ची स्थापना केली.\n\n[संदर्भ: एम. लक्ष्मीकांत]",
+        "en": "(1935): Both statements are correct. The Act provided for the establishment of a Federal Court (set up in 1937) and the Reserve Bank of India to regulate currency and credit.\n\n"
+      }
+    },
+    {
+      "id": 10,
+      "question": {
+        "mr": "भारतीय स्वातंत्र्य कायदा १९४७ नुसार ब्रिटीश संसदेत तो कधी मंजूर झाला आणि भारतात सत्ता हस्तांतरण कधी झाले?",
+        "en": "When was the Indian Independence Act 1947 passed by the British Parliament, and when was power transferred in India?"
+      },
+      "options": [
+        { "mr": "१८ जुलै १९४७ रोजी मंजूर, १५ ऑगस्ट १९४७ रोजी सत्ता हस्तांतरण (Passed on 18 July 1947, transfer on 15 August 1947)", "en": "Passed on 18 July 1947, transfer on 15 August 1947" },
+        { "mr": "३ जून १९४७ रोजी मंजूर, ३० जून रोजी सत्ता हस्तांतरण", "en": "Passed on 3 June, transfer on 30 June" },
+        { "mr": "१५ ऑगस्ट १९४७ रोजी मंजूर व त्याच दिवशी सत्ता हस्तांतरण", "en": "Passed on 15 August, transfer on the same day" },
+        { "mr": "२६ जानेवारी १९४७ रोजी मंजूर", "en": "Passed on 26 January 1947" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९४७): १८ जुलै १९४७ रोजी ब्रिटीश संसदेने भारतीय स्वातंत्र्य कायदा संमत केला आणि १५ ऑगस्ट १९४७ रोजी भारत व पाकिस्तान स्वतंत्र झाले.\n\n[संदर्भ: एम. लक्ष्मीकांत]",
+        "en": "(1947): The Indian Independence Act received royal assent on July 18, 1947, and power was transferred to the new dominions on August 15, 1947.\n\n"
+      }
+    },
+    {
+      "id": 11,
+      "question": {
+        "mr": "खालीलपैकी कोणत्या कायद्याने प्रथमच केंद्रीय कायदेमंडळात 'थेट निवडणुका' (Direct Elections) आणि 'द्विसदनीय पद्धत' (Bicameralism) सुरू केली?",
+        "en": "Which of the following acts first introduced 'Direct Elections' and 'Bicameralism' in the Central Legislature?"
+      },
+      "options": [
+        { "mr": "१९०९ चा कायदा", "en": "Morley-Minto Reforms 1909" },
+        { "mr": "१९१९ चा मॉन्टग्यू-चेम्सफोर्ड कायदा (Government of India Act 1919)", "en": "Government of India Act 1919" },
+        { "mr": "१९३५ चा कायदा", "en": "Government of India Act 1935" },
+        { "mr": "१८९२ चा कायदा", "en": "Indian Councils Act 1892" }
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": {
+        "mr": "(१९१९): १९१९ च्या कायद्याने केंद्रात द्विसदनीय कायदेमंडळ आणि थेट निवडणुकांची पद्धत सुरू केली.\n\n[संदर्भ: एम. लक्ष्मीकांत]",
+        "en": "(1919): The Government of India Act of 1919 introduced bicameralism and direct elections at the central level for the first time.\n\n"
+      }
+    },
+    {
+      "id": 12,
+      "question": {
+        "mr": "१९०९ च्या मॉले-मिंटो सुधारणा कायद्याने मुसलमानांसाठी 'स्वतंत्र मतदारसंघ' निर्माण केल्यामुळे कोणाला 'सांप्रदायिक मतदारसंघाचा जनक' म्हणतात?",
+        "en": "Who is known as the 'Father of Communal Electorate' for introducing separate electorates for Muslims through the Morley-Minto Reforms of 1909?"
+      },
+      "options": [
+        { "mr": "लॉर्ड मिंटो दुसरा (Lord Minto II)", "en": "Lord Minto II" },
+        { "mr": "लॉर्ड मॉले", "en": "Lord Morley" },
+        { "mr": "लॉर्ड कर्झन", "en": "Lord Curzon" },
+        { "mr": "लॉर्ड रिपन", "en": "Lord Ripon" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९०९): १९०९ च्या कायद्याने मुस्लिमांसाठी स्वतंत्र मतदारसंघ देऊन जातीय राजकारणाला प्रोत्साहन दिले, ज्यामुळे लॉर्ड मिंटोला या पद्धतीचा जनक मानले जाते.\n\n[संदर्भ: एम. लक्ष्मीकांत]",
+        "en": "(1909): Lord Minto came to be known as the Father of Communal Electorate for accepting the concept of separate electorates for Muslims in the 1909 reforms.\n\n"
+      }
+    },
+    {
+      "id": 13,
+      "question": {
+        "mr": "खालील विधाने विचारात घ्या:\nअ) १८३३ च्या चार्टर ॲक्टने प्रशासनाचे संपूर्ण केंद्रीकरण करून बंगालच्या गव्हर्नर जनरलला 'गव्हर्नर जनरल ऑफ इंडिया' बनवले.\nब) या कायद्याने भारतातून दासप्रथा बेकायदेशीर ठरवली आणि १८४३ मध्ये ती संपुष्टात आली.\nवरीलपैकी कोणते/ती विधान/ने बरोबर आहेत?",
+        "en": "Consider the following statements:\nA) The Charter Act of 1833 centralized administration and made the Governor-General of Bengal the Governor-General of India.\nB) This act directed the abolition of slavery, which was finally abolished in 1843.\nWhich of the above statement(s) is/are correct?"
+      },
+      "options": [
+        { "mr": "फक्त अ", "en": "Only A" },
+        { "mr": "फक्त ब", "en": "Only B" },
+        { "mr": "अ आणि ब दोन्ही", "en": "Both A and B" },
+        { "mr": "दोन्ही नाहीत", "en": "Neither A nor B" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "(१८३३/१८४३): दोन्ही विधाने बरोबर आहेत. १८३३ च्या कायद्याने केंद्रीकरण केले आणि गुलामगिरी संपवण्याच्या सूचना दिल्या, जी १८४३ मध्ये लॉर्ड एलनबरोच्या काळात रद्द झाली.\n\n[संदर्भ: एम. लक्ष्मीकांत / स्पेक्ट्रम]",
+        "en": "(1833/1843): Both statements are correct. The 1833 Act centralized power and initiated measures against slavery, which was formally abolished in 1843 under Lord Ellenborough.\n\n"
+      }
+    },
+    {
+      "id": 14,
+      "question": {
+        "mr": "ब्रिटीश भारतातील 'स्थानिक स्वराज्य संस्थांचा मॅग्नाकार्टा' म्हणून १८८२ च्या ऐतिहासिक ठरावासाठी कोणत्या व्हाइसरॉयचे नाव घेतले जाते?",
+        "en": "Which Viceroy is associated with the historic 1882 resolution on local self-government, often called the 'Magna Carta of Local Self-Government'?"
+      },
+      "options": [
+        { "mr": "लॉर्ड रिपन (Lord Ripon)", "en": "Lord Ripon" },
+        { "mr": "लॉर्ड लिटन", "en": "Lord Lytton" },
+        { "mr": "लॉर्ड कर्झन", "en": "Lord Curzon" },
+        { "mr": "लॉर्ड मेयो", "en": "Lord Mayo" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१८८२): लॉर्ड रिपनने १८८२ मध्ये स्थानिक स्वराज्य संस्थांचा ऐतिहासिक ठराव संमत केला, ज्याने स्थानिक लोकशाहीला बळकटी दिली.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1882): Lord Ripon's resolution of 1882 is hailed as the Magna Carta of local self-government in India for establishing elected local bodies.\n\n"
+      }
+    },
+    {
+      "id": 15,
+      "question": {
+        "mr": "खालीलपैकी कोणत्या कायद्याने प्रथमच केंद्र आणि प्रांतांमध्ये अधिकारांची 'फेडरल सूची', 'प्रांतीय सूची' आणि 'समवर्ती सूची' अशी स्पष्ट विभागणी केली?",
+        "en": "Which of the following acts first clearly divided powers between the Centre and provinces into 'Federal List', 'Provincial List', and 'Concurrent List'?"
+      },
+      "options": [
+        { "mr": "१९१९ चा कायदा", "en": "Government of India Act 1919" },
+        { "mr": "१९३५ चा भारत सरकार कायदा (Government of India Act 1935)", "en": "Government of India Act 1935" },
+        { "mr": "१९०९ चा कायदा", "en": "Morley-Minto Reforms 1909" },
+        { "mr": "१८६१ चा कायदा", "en": "Indian Councils Act 1861" }
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": {
+        "mr": "(१९३५): १९३५ च्या कायद्याने तीन याद्यांद्वारे (केंद्र, प्रांतीय आणि समवर्ती) अधिकारांची स्पष्ट विभागणी केली.\n\n[संदर्भ: एम. लक्ष्मीकांत]",
+        "en": "(1935): The Government of India Act 1935 introduced a tripartite division of powers: Federal List, Provincial List, and Concurrent List.\n\n"
+      }
+    },
+    {
+      "id": 16,
+      "question": {
+        "mr": "खालील विधाने विचारात घ्या:\nअ) १७७३ च्या रेग्युलेटिंग ॲक्टनुसार कोलकात्यात सर्वोच्च न्यायालयाची स्थापना झाली.\nब) सर एलिजा इम्पे हे या न्यायालयाचे पहिले मुख्य न्यायाधीश होते.\nवरीलपैकी कोणते/ती विधान/ने बरोबर आहेत?",
+        "en": "Consider the following statements:\nA) A Supreme Court was established in Calcutta under the Regulating Act of 1773.\nB) Sir Elijah Impey was the first Chief Justice of this court.\nWhich of the above statement(s) is/are correct?"
+      },
+      "options": [
+        { "mr": "फक्त अ", "en": "Only A" },
+        { "mr": "फक्त ब", "en": "Only B" },
+        { "mr": "अ आणि ब दोन्ही", "en": "Both A and B" },
+        { "mr": "दोन्ही नाहीत", "en": "Neither A nor B" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "(१७७४): १७७३ च्या कायद्यानुसार १७७४ मध्ये कोलकात्यात सर्वोच्च न्यायालय स्थापन झाले आणि सर एलिजा इम्पे हे पहिले मुख्य न्यायाधीश बनले.\n\n[संदर्भ: एम. लक्ष्मीकांत]",
+        "en": "(1774): Both statements are correct. The Supreme Court at Calcutta was established in 1774 under the Regulating Act of 1773, with Sir Elijah Impey as its first Chief Justice.\n\n"
+      }
+    },
+    {
+      "id": 17,
+      "question": {
+        "mr": "१९०९ च्या कायद्यानुसार व्हाइसरॉयच्या कार्यकारी मंडळात कायदे सदस्य म्हणून नियुक्त झालेले पहिले भारतीय कोण होते?",
+        "en": "Who was the first Indian to be appointed as a Law Member in the Viceroy's Executive Council under the 1909 Act?"
+      },
+      "options": [
+        { "mr": "सत्येन्द्र प्रसाद सिन्हा (Satyendra Prasad Sinha)", "en": "Satyendra Prasad Sinha" },
+        { "mr": "गोपाळ कृष्ण गोखले", "en": "Gopal Krishna Gokhale" },
+        { "mr": "दादाभाई नौरोजी", "en": "Dadabhai Naoroji" },
+        { "mr": "फिरोजशाह मेहता", "en": "Pherozeshah Mehta" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९०९): सत्येन्द्र प्रसाद सिन्हा हे १९०९ च्या मॉले-मिंटो सुधारणांनुसार व्हाइसरॉयच्या कार्यकारी मंडळात कायदे सदस्य म्हणून सामील झालेले पहिले भारतीय ठरले.\n\n[संदर्भ: एम. लक्ष्मीकांत]",
+        "en": "(1909): Satyendra Prasad Sinha became the first Indian to join the Viceroy's Executive Council as a Law Member under the Morley-Minto Reforms of 1909.\n\n"
+      }
+    },
+    {
+      "id": 18,
+      "question": {
+        "mr": "ब्रिटीश भारतातील प्रशासनात 'खातेवाटप पद्धत' (Portfolio System) अधिकृतरीत्या कोणत्या कायद्याने मान्य केली?",
+        "en": "Which act officially recognized the 'Portfolio System' in British Indian administration?"
+      },
+      "options": [
+        { "mr": "१८६१ चा भारतीय परिषद कायदा (Indian Councils Act 1861)", "en": "Indian Councils Act 1861" },
+        { "mr": "१८५८ चा कायदा", "en": "Government of India Act 1858" },
+        { "mr": "१८९२ चा कायदा", "en": "Indian Councils Act 1892" },
+        { "mr": "१९०९ चा कायदा", "en": "Morley-Minto Reforms 1909" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१८६१): १८६१ च्या कायद्याने लॉर्ड कॅनिंगने सुरू केलेली खातेवाटप पद्धत (Portfolio System) कायदेशीररीत्या मान्य केली.\n\n[संदर्भ: एम. लक्ष्मीकांत]",
+        "en": "(1861): The Indian Councils Act of 1861 gave statutory recognition to the portfolio system, allowing council members to oversee specific government departments.\n\n"
+      }
+    },
+    {
+      "id": 19,
+      "question": {
+        "mr": "खालीलपैकी कोणत्या कायद्याने भारतात 'संघीय लोकसेवा आयोग' (Federal Public Service Commission) सोबत प्रांतीय व संयुक्त आयोग स्थापन करण्याची तरतूद केली?",
+        "en": "Which of the following acts provided for the establishment of a 'Federal Public Service Commission' along with Provincial and Joint Public Service Commissions?"
+      },
+      "options": [
+        { "mr": "१९१९ चा कायदा", "en": "Government of India Act 1919" },
+        { "mr": "१९३५ चा भारत सरकार कायदा (Government of India Act 1935)", "en": "Government of India Act 1935" },
+        { "mr": "१९४७ चा कायदा", "en": "Indian Independence Act 1947" },
+        { "mr": "१९०९ चा कायदा", "en": "Morley-Minto Reforms 1909" }
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": {
+        "mr": "(१९३५): १९३५ च्या कायद्याने संघ लोकसेवा आयोग, प्रांतीय लोकसेवा आयोग आणि संयुक्त लोकसेवा आयोग स्थापन करण्याची तरतूद केली.\n\n[संदर्भ: एम. लक्ष्मीकांत]",
+        "en": "(1935): The Government of India Act 1935 provided for the creation of a Federal Public Service Commission, Provincial Public Service Commissions, and Joint Public Service Commissions.\n\n"
+      }
+    },
+    {
+      "id": 20,
+      "question": {
+        "mr": "खालील विधाने विचारात घ्या:\nअ) १९३५ च्या कायद्याने केंद्र आणि घटकांमध्ये 'अखिल भारतीय महासंघ' स्थापन करण्याची तरतूद केली होती.\nब) संस्थानांनी सहमती न दर्शवल्यामुळे हा महासंघ कधीही प्रत्यक्षात आला नाही.\nवरीलपैकी कोणते/ती विधान/ने बरोबर आहेत?",
+        "en": "Consider the following statements:\nA) The Act of 1935 provided for the establishment of an 'All-India Federation' uniting provinces and princely states.\nB) This federation never materialized as princely states refused to join.\nWhich of the above statement(s) is/are correct?"
+      },
+      "options": [
+        { "mr": "फक्त अ", "en": "Only A" },
+        { "mr": "फक्त ब", "en": "Only B" },
+        { "mr": "अ आणि ब दोन्ही", "en": "Both A and B" },
+        { "mr": "दोन्ही नाहीत", "en": "Neither A nor B" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "(१९३५): दोन्ही विधाने बरोबर आहेत. १९३५ च्या कायद्याने अखिल भारतीय महासंघाची तरतूद केली होती, पण संस्थानिकांच्या असहकारामुळे तो कधीच अस्तित्वात आला नाही.\n\n[संदर्भ: एम. लक्ष्मीकांत]",
+        "en": "(1935): Both statements are correct. The proposed All-India Federation under the 1935 Act failed to materialize because the princely states did not join it.\n\n"
+      }
+    },
+    {
+      "id": 21,
+      "question": {
+        "mr": "ब्रिटीश भारतातील प्रशासनात पहिल्यांदाच प्रांतांना स्वतःचे कायदे करण्याचे अधिकार कोणत्या कायद्याने दिले, ज्यातून विकेंद्रीकरणाची सुरुवात झाली?",
+        "en": "Which act first restored legislative powers to the provinces, initiating the process of decentralization in British India?"
+      },
+      "options": [
+        { "mr": "१८६१ चा भारतीय परिषद कायदा (Indian Councils Act 1861)", "en": "Indian Councils Act 1861" },
+        { "mr": "१८३३ चा कायदा", "en": "Charter Act of 1833" },
+        { "mr": "१८९२ चा कायदा", "en": "Indian Councils Act 1892" },
+        { "mr": "१९०९ चा कायदा", "en": "Morley-Minto Reforms 1909" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१८६१): १८६१ च्या कायद्याने बॉम्बे आणि मद्रास प्रांतांना कायदे करण्याचे अधिकार परत देऊन प्रशासकीय विकेंद्रीकरणाची सुरुवात केली.\n\n[संदर्भ: एम. लक्ष्मीकांत]",
+        "en": "(1861): The Indian Councils Act of 1861 initiated decentralization by restoring legislative powers to the Bombay and Madras Presidencies.\n\n"
+      }
+    },
+    {
+      "id": 22,
+      "question": {
+        "mr": "१९१९ च्या कायद्यानुसार प्रांतिक विषयांचे 'राखीव' (Reserved) आणि 'सुनेद' (Transferred) असे वर्गीकरण केले गेले. खालीलपैकी कोणता विषय 'राखीव' (Reserved) यादीत मोडत होता?",
+        "en": "According to the 1919 Act, provincial subjects were divided into 'Reserved' and 'Transferred'. Which of the following subjects belonged to the 'Reserved' list?"
+      },
+      "options": [
+        { "mr": "शिक्षण व आरोग्य", "en": "Education and Health" },
+        { "mr": "स्थानिक स्वराज्य संस्था", "en": "Local Self-Government" },
+        { "mr": "पोलीस, महसूल व वित्त (Police, Revenue and Finance)", "en": "Police, Revenue and Finance" },
+        { "mr": "कृषि विकास", "en": "Agricultural Development" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "(१९१९): प्रांतातील राखीव विषयात पोलीस, महसूल, वित्त, न्याय यांसारखे महत्त्वाचे विषय होते जे गव्हर्नर आणि त्याच्या कार्यकारी सदस्यांकडे होते.\n\n[संदर्भ: एम. लक्ष्मीकांत]",
+        "en": "(1919): 'Reserved' subjects like police, revenue, and finance were administered by the Governor and his executive council without responsibility to the legislature.\n\n"
+      }
+    },
+    {
+      "id": 23,
+      "question": {
+        "mr": "भारतीय स्वातंत्र्य कायदा १९४७ नुसार भारताच्या संविधान सभेला कोणते महत्त्वपूर्ण अधिकार प्राप्त झाले?",
+        "en": "What significant power was granted to the Constituent Assembly of India under the Indian Independence Act 1947?"
+      },
+      "options": [
+        { "mr": "पूर्ण सार्वभौम अधिकार (Constitutional Sovereignty to frame any law or constitution)", "en": "Complete sovereignty to frame any law or constitution" },
+        { "mr": "फक्त ब्रिटीश कायदे जसेच्या तसे लागू करणे", "en": "Only implement British laws" },
+        { "mr": "कर गोळा करण्याचे अधिकार नसणे", "en": "No power to collect taxes" },
+        { "mr": "परराष्ट्र धोरण राबवण्यास मज्जाव", "en": "Prohibition on foreign policy" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९४७): स्वातंत्र्य कायद्याने संविधान सभेला पूर्ण सार्वभौम अधिकार दिले, ज्यामुळे ती कोणतीही नवीन राज्यघटना बनवू शकत होती आणि कोणताही ब्रिटीश कायदा रद्द करू शकत होती.\n\n[संदर्भ: एम. लक्ष्मीकांत]",
+        "en": "(1947): The Constituent Assembly became a fully sovereign body empowered to frame and adopt any constitution for India and abrogate any British law.\n\n"
+      }
+    },
+    {
+      "id": 24,
+      "question": {
+        "mr": "खालील विधाने विचारात घ्या:\nअ) १९३५ च्या कायद्याने केंद्रात द्विदल राज्यपद्धती (Diarchy at the Centre) आणली.\nब) हा कायदा स्वतंत्र भारताच्या राज्यघटनेचा मुख्य पाया बनला.\nवरीलपैकी कोणते/ती विधान/ने बरोबर आहेत?",
+        "en": "Consider the following statements:\nA) The Act of 1935 introduced Diarchy at the Centre.\nB) This act served as the primary blueprint for the Constitution of Independent India.\nWhich of the above statement(s) is/are correct?"
+      },
+      "options": [
+        { "mr": "फक्त अ", "en": "Only A" },
+        { "mr": "फक्त ब", "en": "Only B" },
+        { "mr": "अ आणि ब दोन्ही", "en": "Both A and B" },
+        { "mr": "दोन्ही नाहीत", "en": "Neither A nor B" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "(१९३५): दोन्ही विधाने अगदी बरोबर आहेत. १९३५ च्या कायद्याने केंद्रात द्विदल पद्धत आणली आणि हा कायदा भारतीय राज्यघटनेचा सर्वात मोठा स्रोत ठरला.\n\n[संदर्भ: एम. लक्ष्मीकांत]",
+        "en": "(1935): Both statements are correct. The 1935 Act introduced diarchy at the Centre and formed the broad structural basis for the Indian Constitution.\n\n"
+      }
+    },
+    {
+      "id": 25,
+      "question": {
+        "mr": "ब्रिटिश भारतात १९१९ च्या मॉन्टग्यू-चेम्सफोर्ड कायद्यान्वये केंद्रीय विधिमंडळात प्रथमच कोणते सभागृह निर्माण केले गेले?",
+        "en": "Which new house/chambers were introduced in the Central Legislature for the first time under the Montagu-Chelmsford Reforms of 1919?"
+      },
+      "options": [
+        { "mr": "द्विसदनीय कायदेमंडळ (कौन्सिल ऑफ स्टेट्स आणि लेजिस्लेटिव्ह असेंब्ली)", "en": "Bicameral legislature (Council of States and Legislative Assembly)" },
+        { "mr": "फक्त एकच कनिष्ठ सभागृह", "en": "Only a lower house" },
+        { "mr": "प्रांतीय परिषद", "en": "Provincial Council" },
+        { "mr": "फेडरल सभा", "en": "Federal Assembly" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९१९): १९१९ च्या कायद्याने केंद्रात द्विसदनीय कायदेमंडळ आणले, ज्यात कौन्सिल ऑफ स्टेट्स (Upper House) आणि सेंट्रल लेजिस्लेटिव्ह असेंब्ली (Lower House) यांचा समावेश होता.\n\n[संदर्भ: एम. लक्ष्मीकांत]",
+        "en": "(1919): The 1919 Act made the Indian legislature bicameral by setting up the Council of States and the Central Legislative Assembly at the Centre.\n\n"
+      }
+    }
+  ]
+}

@@ -1,0 +1,464 @@
+{
+  "testId": "p-hist-01-t3",
+  "title": {
+    "mr": "आधुनिक भारताचा इतिहास — सराव 3",
+    "en": "Modern Indian History — Practice Test 3"
+  },
+  "durationMinutes": 20,
+  "marksPerQuestion": 1,
+  "negativeMarking": 0.25,
+  "totalMarks": 25,
+  "difficulty": "मध्यम ते काठिण्य",
+  "questions": [
+    {
+      "id": 1,
+      "question": {
+        "mr": "खालील विधाने विचारात घ्या:\nअ) पहिले कर्नाटक युद्ध (१७४०-४८) युरोपातील ऑस्ट्रियन वारसा हक्काच्या युद्धाचा परिणाम होते.\nब) हे युद्ध 'एक्स-ला-शापेल' (Aix-la-Chapelle) च्या तहाने संपुष्टात आले.\nवरीलपैकी कोणते/ती विधान/ने बरोबर आहेत?",
+        "en": "Consider the following statements:\nA) The First Carnatic War (1740-48) was an extension of the Austrian War of Succession in Europe.\nB) This war ended with the Treaty of Aix-la-Chapelle.\nWhich of the above statement(s) is/are correct?"
+      },
+      "options": [
+        { "mr": "फक्त अ", "en": "Only A" },
+        { "mr": "फक्त ब", "en": "Only B" },
+        { "mr": "अ आणि ब दोन्ही", "en": "Both A and B" },
+        { "mr": "दोन्ही नाहीत", "en": "Neither A nor B" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "(१७४० ते १७४८): युरोपात ऑस्ट्रियाच्या वारसाहक्कावरून ब्रिटन आणि फ्रान्समध्ये युद्ध सुरू झाले, ज्याचे पडसाद भारतात पहिल्या कर्नाटक युद्धाच्या रूपात उमटले. १७४८ मध्ये युरोपात 'एक्स-ला-शापेल' चा तह झाला आणि त्यानुसार भारतातील पहिले कर्नाटक युद्धही थांबले.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / अनिल कटारे]",
+        "en": "(1740 to 1748): The First Carnatic War was an echo of the Austrian War of Succession in Europe. It concluded with the Treaty of Aix-la-Chapelle in 1748, under which Madras was handed back to the English.\n\n"
+      }
+    },
+    {
+      "id": 2,
+      "question": {
+        "mr": "'सूर्यास्त कायदा' (Sunset Law) खालीलपैकी कोणत्या महसूल पद्धतीशी संबंधित होता?",
+        "en": "The 'Sunset Law' was associated with which of the following land revenue systems?"
+      },
+      "options": [
+        { "mr": "रयतवारी पद्धत", "en": "Ryotwari System" },
+        { "mr": "महालवारी पद्धत", "en": "Mahalwari System" },
+        { "mr": "कायमधारा पद्धत", "en": "Permanent Settlement" },
+        { "mr": "इक्तेदारी पद्धत", "en": "Iqtadari System" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "(१७९४): कायमधारा पद्धतीमध्ये १७९४ साली 'सूर्यास्त कायदा' (Sunset Clause) जोडण्यात आला. यानुसार, ठरवून दिलेल्या तारखेला सूर्यास्तापूर्वी जमीनदाराने शासनाचा महसूल जमा न केल्यास त्याची जमीनदारी (इस्टेट) जप्त करून लिलाव केली जात असे.\n\n[संदर्भ: डॉ. स. शि. गाठाळ]",
+        "en": "(1794): The Sunset Clause was introduced in the Permanent Settlement. According to this rule, if a Zamindar failed to pay the revenue by sunset on a specified date, his estate would be confiscated and auctioned by the government.\n\n"
+      }
+    },
+    {
+      "id": 3,
+      "question": {
+        "mr": "खालीलपैकी कोणत्या कायद्याने 'बोर्ड ऑफ कंट्रोल' च्या सदस्यांचे आणि कर्मचाऱ्यांचे पगार भारतीय महसुलातून देण्याची तरतूद केली?",
+        "en": "Which of the following acts provided that the salaries of the members and staff of the 'Board of Control' would be paid out of Indian revenues?"
+      },
+      "options": [
+        { "mr": "१७७३ चा रेग्युलेटिंग ॲक्ट", "en": "Regulating Act of 1773" },
+        { "mr": "१७८४ चा पिट्स इंडिया ॲक्ट", "en": "Pitt's India Act of 1784" },
+        { "mr": "१७९३ चा चार्टर ॲक्ट", "en": "Charter Act of 1793" },
+        { "mr": "१८१३ चा चार्टर ॲक्ट", "en": "Charter Act of 1813" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "(१७९३): १७९३ च्या चार्टर ॲक्टनुसार अशी अन्यायकारक तरतूद करण्यात आली की 'बोर्ड ऑफ कंट्रोल' (लंडनमध्ये बसणारे अधिकारी) यांचा पगार आणि इतर खर्च भारताच्या तिजोरीतून (Indian Revenue) दिला जाईल. ही पद्धत १९१९ च्या कायद्यापर्यंत (१२६ वर्षे) चालू होती.\n\n[संदर्भ: एम. लक्ष्मीकांत]",
+        "en": "(1793): The Charter Act of 1793 mandated that the salaries and expenses of the Board of Control and their staff were to be paid out of the Indian revenues. This practice continued until the Government of India Act of 1919.\n\n"
+      }
+    },
+    {
+      "id": 4,
+      "question": {
+        "mr": "भारतातील पहिले वृत्तपत्र 'द बंगाल गॅझेट' (The Bengal Gazette) १७८० मध्ये कोणी सुरू केले?",
+        "en": "Who started the first newspaper in India, 'The Bengal Gazette', in 1780?"
+      },
+      "options": [
+        { "mr": "राजा राममोहन रॉय", "en": "Raja Rammohan Roy" },
+        { "mr": "जेम्स ऑगस्टस हिकी (James Augustus Hicky)", "en": "James Augustus Hicky" },
+        { "mr": "जॉन ॲडम्स", "en": "John Adams" },
+        { "mr": "चार्ल्स मेटकाफ", "en": "Charles Metcalfe" }
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": {
+        "mr": "(१७८०): जेम्स ऑगस्टस हिकी याने १७८० मध्ये कोलकात्यातून 'द बंगाल गॅझेट' (किंवा कलकत्ता जनरल ॲडव्हर्टायझर) हे भारतातील पहिले इंग्रजी वृत्तपत्र सुरू केले. सरकारच्या टीकेमुळे १७८२ मध्ये ते जप्त करण्यात आले.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1780): James Augustus Hicky launched 'The Bengal Gazette' (also known as Calcutta General Advertiser) in 1780, making it the first newspaper printed in India. It was seized in 1782 due to its outspoken criticism of the government.\n\n"
+      }
+    },
+    {
+      "id": 5,
+      "question": {
+        "mr": "लॉर्ड रिपनने १८८२ मध्ये शिक्षणाच्या प्रगतीचा आढावा घेण्यासाठी कोणता आयोग (Commission) नेमला होता?",
+        "en": "Which Commission was appointed by Lord Ripon in 1882 to review the progress of education?"
+      },
+      "options": [
+        { "mr": "रॅले कमिशन", "en": "Raleigh Commission" },
+        { "mr": "सॅडलर आयोग", "en": "Sadler Commission" },
+        { "mr": "हंटर कमिशन (Hunter Commission)", "en": "Hunter Commission" },
+        { "mr": "मेकॉले समिती", "en": "Macaulay Committee" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "(१८८२): १८५४ च्या वुड्स खलिता नंतर शिक्षणातील प्रगतीचा आढावा घेण्यासाठी लॉर्ड रिपनने विल्यम हंटर यांच्या अध्यक्षतेखाली 'हंटर कमिशन' नेमले. या आयोगाने विशेषतः प्राथमिक आणि माध्यमिक शिक्षणावर भर दिला.\n\n[संदर्भ: डॉ. स. शि. गाठाळ / समाधान महाजन]",
+        "en": "(1882): Lord Ripon appointed the Hunter Commission in 1882 under the chairmanship of W.W. Hunter to review the progress of education since Wood's Despatch (1854). It emphasized primary and secondary education.\n\n"
+      }
+    },
+    {
+      "id": 6,
+      "question": {
+        "mr": "१८०६ चा 'वेल्लोरचा उठाव' (Vellore Mutiny) कोणत्या गव्हर्नर जनरलच्या काळात झाला?",
+        "en": "The 'Vellore Mutiny' of 1806 took place during the tenure of which Governor-General?"
+      },
+      "options": [
+        { "mr": "लॉर्ड वेलस्ली", "en": "Lord Wellesley" },
+        { "mr": "सर जॉर्ज बार्लो (Sir George Barlow)", "en": "Sir George Barlow" },
+        { "mr": "लॉर्ड मिंटो पहिला", "en": "Lord Minto I" },
+        { "mr": "लॉर्ड कॉर्नवॉलिस", "en": "Lord Cornwallis" }
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": {
+        "mr": "(१८०६): १० जुलै १८०६ रोजी मद्रास प्रेसिडेन्सी मधील वेल्लोर येथे भारतीय सैनिकांनी ब्रिटिशांविरुद्ध बंड केले. हे १८५७ च्या उठावापूर्वीचे पहिले मोठे लष्करी बंड होते. यावेळी 'सर जॉर्ज बार्लो' भारताचा गव्हर्नर जनरल होता.\n\n[संदर्भ: स्पेक्ट्रम / अनिल कटारे]",
+        "en": "(1806): The Vellore Mutiny occurred on July 10, 1806, when Indian sepoys revolted against changes in their uniform dress code. Sir George Barlow was the acting Governor-General of India at the time.\n\n"
+      }
+    },
+    {
+      "id": 7,
+      "question": {
+        "mr": "योग्य जोड्या जुळवा (लढे आणि संबंधित ब्रिटिश गव्हर्नर जनरल):\nगट अ: १) चौथे म्हैसूर युद्ध, २) पहिले अफगाण युद्ध, ३) दुसरे शीख युद्ध\nगट ब: अ) लॉर्ड ऑकलंड, ब) लॉर्ड डलहौसी, क) लॉर्ड वेलस्ली",
+        "en": "Match the pairs (Wars and respective British Governor Generals):\nGroup A: 1) Fourth Mysore War, 2) First Afghan War, 3) Second Sikh War\nGroup B: a) Lord Auckland, b) Lord Dalhousie, c) Lord Wellesley"
+      },
+      "options": [
+        { "mr": "1-क, 2-अ, 3-ब", "en": "1-c, 2-a, 3-b" },
+        { "mr": "1-ब, 2-क, 3-अ", "en": "1-b, 2-c, 3-a" },
+        { "mr": "1-अ, 2-ब, 3-क", "en": "1-a, 2-b, 3-c" },
+        { "mr": "1-क, 2-ब, 3-अ", "en": "1-c, 2-b, 3-a" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१७९९-१८४९): चौथे म्हैसूर युद्ध (१७९९) लॉर्ड वेलस्लीच्या काळात झाले ज्यात टीपू सुलतान मारला गेला. पहिले अफगाण युद्ध (१८३९-४२) लॉर्ड ऑकलंडच्या काळात झाले. दुसरे शीख युद्ध (१८४८-४९) लॉर्ड डलहौसीच्या काळात झाले.\n\n[संदर्भ: समाधान महाजन]",
+        "en": "(1799-1849): Fourth Anglo-Mysore War (1799) - Lord Wellesley; First Anglo-Afghan War (1839-42) - Lord Auckland; Second Anglo-Sikh War (1848-49) - Lord Dalhousie.\n\n"
+      }
+    },
+    {
+      "id": 8,
+      "question": {
+        "mr": "खालील विधाने विचारात घ्या:\nअ) १८५६ चा 'हिंदू विधवा पुनर्विवाह कायदा' लॉर्ड डलहौसीने तयार केला आणि लॉर्ड कॅनिंगने तो संमत केला.\nब) या कायद्यासाठी ईश्वरचंद्र विद्यासागर यांनी मोठे प्रयत्न केले.\nवरीलपैकी कोणते/ती विधान/ने योग्य आहेत?",
+        "en": "Consider the following statements:\nA) The 'Hindu Widow Remarriage Act' of 1856 was drafted by Lord Dalhousie and passed by Lord Canning.\nB) Ishwar Chandra Vidyasagar made great efforts for this Act.\nWhich of the above statement(s) is/are correct?"
+      },
+      "options": [
+        { "mr": "फक्त अ", "en": "Only A" },
+        { "mr": "फक्त ब", "en": "Only B" },
+        { "mr": "अ आणि ब दोन्ही", "en": "Both A and B" },
+        { "mr": "दोन्ही नाहीत", "en": "Neither A nor B" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "(१८५६): हिंदू विधवा पुनर्विवाह कायदा (Act XV of 1856) ईश्वरचंद्र विद्यासागर यांच्या प्रदीर्घ लढ्यामुळे शक्य झाला. लॉर्ड डलहौसीच्या काळात याचा मसुदा तयार झाला होता, परंतु तो जुलै १८५६ मध्ये लॉर्ड कॅनिंगच्या (नवीन गव्हर्नर जनरल) काळात संमत झाला.\n\n[संदर्भ: डॉ. स. शि. गाठाळ / स्पेक्ट्रम]",
+        "en": "(1856): The Hindu Widow Remarriage Act (1856) legalized the remarriage of Hindu widows. It was drafted by Dalhousie and officially passed by his successor, Lord Canning, largely due to the efforts of Ishwar Chandra Vidyasagar.\n\n"
+      }
+    },
+    {
+      "id": 9,
+      "question": {
+        "mr": "ब्रिटिश भारतातील 'पोलीस सुधारणांचा जनक' (Father of Police Reforms) कोणाला मानले जाते, ज्याने 'दारोगा' (Daroga) पद्धत सुरू केली?",
+        "en": "Who is considered the 'Father of Police Reforms' in British India, who introduced the 'Daroga' system?"
+      },
+      "options": [
+        { "mr": "वॉरन हेस्टिंग्स", "en": "Warren Hastings" },
+        { "mr": "लॉर्ड कॉर्नवॉलिस (Lord Cornwallis)", "en": "Lord Cornwallis" },
+        { "mr": "लॉर्ड विल्यम बेंटिक", "en": "Lord William Bentinck" },
+        { "mr": "लॉर्ड कर्झन", "en": "Lord Curzon" }
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": {
+        "mr": "(१७९१): लॉर्ड कॉर्नवॉलिस याने जमीनदारांकडून पोलीस अधिकार काढून घेतले. त्याने जिल्ह्यांचे विभाजन 'थाण्यांमध्ये' (Thanas) केले आणि प्रत्येक थाण्यासाठी एक भारतीय अधिकारी 'दारोगा' (Daroga) नियुक्त केला, जो जिल्हा दंडाधिकाऱ्याच्या नियंत्रणाखाली असे.\n\n[संदर्भ: अनिल कटारे]",
+        "en": "(1791): Lord Cornwallis is credited with organizing a regular police force in India. He relieved Zamindars of their police duties, established 'Thanas' (circles), and placed them under the charge of an Indian officer called the 'Daroga'.\n\n"
+      }
+    },
+    {
+      "id": 10,
+      "question": {
+        "mr": "खालीलपैकी कोणत्या कायद्याने 'बोर्ड ऑफ कंट्रोल' आणि 'कोर्ट ऑफ डिरेक्टर्स' पूर्णपणे बरखास्त करून भारताचे प्रशासन थेट ब्रिटिश मुकुटाकडे (Crown) सोपवले?",
+        "en": "Which of the following acts completely abolished the 'Board of Control' and 'Court of Directors' and transferred the administration of India directly to the British Crown?"
+      },
+      "options": [
+        { "mr": "१८५३ चा चार्टर ॲक्ट", "en": "Charter Act of 1853" },
+        { "mr": "१८५८ चा भारत सरकार कायदा", "en": "Government of India Act 1858" },
+        { "mr": "१८६१ चा भारतीय परिषद कायदा", "en": "Indian Councils Act 1861" },
+        { "mr": "१८९२ चा भारतीय परिषद कायदा", "en": "Indian Councils Act 1892" }
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": {
+        "mr": "(१८५८): १८५७ च्या उठावानंतर ब्रिटिशांनी 'Government of India Act 1858' संमत केला. याने इस्ट इंडिया कंपनीची सत्ता संपुष्टात आणली, दुहेरी शासन व्यवस्था (Board of Control & Court of Directors) रद्द केली आणि भारताचा कारभार 'भारत मंत्री' (Secretary of State for India) या नवीन पदाकडे सोपवला.\n\n[संदर्भ: एम. लक्ष्मीकांत]",
+        "en": "(1858): The Government of India Act 1858 ended the rule of the East India Company and transferred the administration of India directly to the British Crown. It abolished the dual government system introduced by Pitt's India Act.\n\n"
+      }
+    },
+    {
+      "id": 11,
+      "question": {
+        "mr": "१८६८ मध्ये 'The Economic History of India' या ग्रंथाची रचना कोणी केली, ज्याने ब्रिटिश आर्थिक धोरणांचे सविस्तर विश्लेषण केले?",
+        "en": "Who authored the book 'The Economic History of India', which provided a detailed analysis of British economic policies?"
+      },
+      "options": [
+        { "mr": "दादाभाई नौरोजी", "en": "Dadabhai Naoroji" },
+        { "mr": "एम. जी. रानडे", "en": "M. G. Ranade" },
+        { "mr": "रमेशचंद्र दत्त (R. C. Dutt)", "en": "Romesh Chunder Dutt" },
+        { "mr": "सुब्रह्मण्य अय्यर", "en": "Subramaniya Iyer" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "(१९०१): आर. सी. दत्त (Romesh Chunder Dutt) यांनी 'The Economic History of India' हा द्विखंडात्मक ग्रंथ लिहून भारतातील निर्औद्योगिकीकरण (Deindustrialization) आणि कृषीवरील दुष्परिणामांचे सखोल विश्लेषण केले.\n\n[संदर्भ: समाधान महाजन / स्पेक्ट्रम]",
+        "en": "(1901): Romesh Chunder Dutt (R.C. Dutt) published 'The Economic History of India', a pioneering work that extensively critiqued British economic exploitation, focusing on deindustrialization and agrarian distress.\n\n"
+      }
+    },
+    {
+      "id": 12,
+      "question": {
+        "mr": "खालील विधाने विचारात घ्या:\nअ) भारतात 'पहिला फॅक्टरी ॲक्ट' (First Factory Act) १८८१ मध्ये लॉर्ड रिपनच्या काळात लागू झाला.\nब) हा कायदा मुख्यतः बालमजुरांच्या (Child Labour) स्थितीत सुधारणा करण्यासाठी होता.\nवरीलपैकी कोणते/ती विधान/ने बरोबर आहेत?",
+        "en": "Consider the following statements:\nA) The 'First Factory Act' in India was enacted in 1881 during the time of Lord Ripon.\nB) This Act was primarily intended to improve the condition of child labor.\nWhich of the above statement(s) is/are correct?"
+      },
+      "options": [
+        { "mr": "फक्त अ", "en": "Only A" },
+        { "mr": "फक्त ब", "en": "Only B" },
+        { "mr": "अ आणि ब दोन्ही", "en": "Both A and B" },
+        { "mr": "दोन्ही नाहीत", "en": "Neither A nor B" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "(१८८१): लॉर्ड रिपनने १८८१ मध्ये पहिला फॅक्टरी ॲक्ट लागू केला. हा कायदा १०० पेक्षा जास्त कामगार असलेल्या कारखान्यांना लागू होता. यात ७ वर्षांखालील मुलांना कामावर ठेवण्यास बंदी घालण्यात आली आणि ७ ते १२ वर्षांच्या मुलांसाठी कामाचे तास ९ तास निश्चित केले.\n\n[संदर्भ: डॉ. स. शि. गाठाळ]",
+        "en": "(1881): The First Factory Act of 1881 was passed under Lord Ripon. It primarily dealt with the problem of child labor. It prohibited the employment of children below 7 years and restricted working hours to 9 hours for children aged 7-12.\n\n"
+      }
+    },
+    {
+      "id": 13,
+      "question": {
+        "mr": "भारतात 'आर्थिक विकेंद्रीकरणाची' (Financial Decentralization) पहिली सुरुवात १८७० मध्ये कोणी केली?",
+        "en": "Who initiated the first 'Financial Decentralization' in India in 1870?"
+      },
+      "options": [
+        { "mr": "लॉर्ड लिटन", "en": "Lord Lytton" },
+        { "mr": "लॉर्ड मेयो (Lord Mayo)", "en": "Lord Mayo" },
+        { "mr": "लॉर्ड रिपन", "en": "Lord Ripon" },
+        { "mr": "लॉर्ड नॉर्थब्रुक", "en": "Lord Northbrook" }
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": {
+        "mr": "(१८७०): लॉर्ड मेयो याने १८७० च्या ठरावाद्वारे प्रांतीय सरकारांना आर्थिक अधिकार देण्यास सुरुवात केली. त्याने पोलीस, शिक्षण, रस्ते अशा स्थानिक सेवांसाठी प्रांतांना ठराविक अनुदान देण्याची पद्धत सुरू केली, ज्यातून भारतातील आर्थिक विकेंद्रीकरणाचा पाया रचला गेला.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1870): Lord Mayo's Resolution of 1870 initiated the process of financial decentralization in India. It granted provincial governments fixed sums to administer services like police, jails, education, and roads.\n\n"
+      }
+    },
+    {
+      "id": 14,
+      "question": {
+        "mr": "पहिल्या इंग्रज-बर्मी युद्धाचा (१८२४-१८२६) शेवट खालीलपैकी कोणत्या तहाने झाला?",
+        "en": "The First Anglo-Burmese War (1824-1826) ended with which of the following treaties?"
+      },
+      "options": [
+        { "mr": "यांदाबोचा तह (Treaty of Yandabo)", "en": "Treaty of Yandabo" },
+        { "mr": "रंगूनचा तह", "en": "Treaty of Rangoon" },
+        { "mr": "पेगूचा तह", "en": "Treaty of Pegu" },
+        { "mr": "मंडालेचा तह", "en": "Treaty of Mandalay" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१८२६): लॉर्ड ॲम्हर्स्ट (Lord Amherst) च्या काळात पहिले इंग्रज-बर्मी युद्ध झाले. हे युद्ध २४ फेब्रुवारी १८२६ रोजी झालेल्या 'यांदाबोच्या तहाने' संपुष्टात आले. या तहानुसार मणीपूर राज्याला स्वातंत्र्य मिळाले आणि अराकान-तेनासरीमचे प्रदेश ब्रिटिशांना मिळाले.\n\n[संदर्भ: अनिल कटारे]",
+        "en": "(1826): The First Anglo-Burmese War took place during the tenure of Lord Amherst. It concluded with the Treaty of Yandabo on February 24, 1826, forcing Burma to cede Arakan and Tenasserim and recognize Manipur's independence.\n\n"
+      }
+    },
+    {
+      "id": 15,
+      "question": {
+        "mr": "लॉर्ड लिटनने १८७८-७९ मध्ये उच्च पदांवर भारतीयांना संधी देण्यासाठी कोणती नागरी सेवा सुरू केली, जी नंतर अयशस्वी ठरली?",
+        "en": "Which civil service was introduced by Lord Lytton in 1878-79 to give opportunities to Indians in higher posts, which later proved unsuccessful?"
+      },
+      "options": [
+        { "mr": "इंपिरियल सिव्हिल सर्व्हिस", "en": "Imperial Civil Service" },
+        { "mr": "स्टॅच्युटरी सिव्हिल सर्व्हिस (Statutory Civil Service)", "en": "Statutory Civil Service" },
+        { "mr": "प्रोव्हिन्शियल सिव्हिल सर्व्हिस", "en": "Provincial Civil Service" },
+        { "mr": "सबॉर्डिनेट सिव्हिल सर्व्हिस", "en": "Subordinate Civil Service" }
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": {
+        "mr": "(१८७९): लॉर्ड लिटनने 'Statutory Civil Service' (वैधानिक नागरी सेवा) सुरू केली, ज्याअंतर्गत १/६ पदे उच्च कुळातील भारतीयांसाठी राखीव ठेवली जाणार होती. परंतु ही पद्धत अत्यंत वादग्रस्त ठरली आणि एचिन्सन कमिशनच्या (१८८६) शिफारशीनुसार ती रद्द करण्यात आली.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1879): Lord Lytton introduced the 'Statutory Civil Service' whereby one-sixth of covenanted posts were to be filled by Indians of high families through nomination. It failed and was abolished following the Aitchison Commission (1886).\n\n"
+      }
+    },
+    {
+      "id": 16,
+      "question": {
+        "mr": "खालीलपैकी कोणती युरोपीय कंपनी भारतातून मुख्यतः काळी मिरी (Black Pepper) आणि मसाल्यांच्या व्यापारावर लक्ष केंद्रित करत होती आणि त्यांनी भारतात साम्राज्यविस्ताराचा प्रयत्न केला नाही?",
+        "en": "Which of the following European companies focused primarily on the trade of black pepper and spices from India and did not attempt territorial expansion in India?"
+      },
+      "options": [
+        { "mr": "पोर्तुगीज", "en": "Portuguese" },
+        { "mr": "डच (Dutch)", "en": "Dutch" },
+        { "mr": "फ्रेंच", "en": "French" },
+        { "mr": "इंग्रज", "en": "English" }
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": {
+        "mr": "(१६०५-१७५९): डच इस्ट इंडिया कंपनीचे (VOC) मुख्य लक्ष 'इंडोनेशिया' (Spice Islands) मधील मसाल्यांच्या व्यापारावर होते. भारतातून ते सुती कापड, नीळ आणि मसाले निर्यात करत, पण त्यांनी इंग्रज किंवा फ्रेंचांप्रमाणे भारतात मोठे साम्राज्य उभारण्यात रस दाखवला नाही.\n\n[संदर्भ: समाधान महाजन]",
+        "en": "(1605-1759): The Dutch East India Company was mainly interested in the spice trade from the Indonesian archipelago (Spice Islands). They used India primarily as a source of textiles to trade for spices and avoided major territorial ambitions in India.\n\n"
+      }
+    },
+    {
+      "id": 17,
+      "question": {
+        "mr": "बंगालमधील 'निळ उत्पादक शेतकऱ्यांचा उठाव' (Indigo Revolt - १८५९) खालीलपैकी कोणत्या नाटकामुळे देशभर चर्चेत आला?",
+        "en": "The 'Indigo Revolt' (1859) of farmers in Bengal came into nationwide discussion due to which of the following plays?"
+      },
+      "options": [
+        { "mr": "आनंदमठ", "en": "Anandamath" },
+        { "mr": "नील दर्पण (Nil Darpan)", "en": "Nil Darpan" },
+        { "mr": "गोरा", "en": "Gora" },
+        { "mr": "दुर्गेशनंदिनी", "en": "Durgeshnandini" }
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": {
+        "mr": "(१८५९): दिगंबर विश्वास आणि विष्णू विश्वास यांच्या नेतृत्वाखाली बंगालमधील नादिया जिल्ह्यात 'निळीचा उठाव' झाला. दीनबंधू मित्र (Dinabandhu Mitra) यांनी आपल्या 'नील दर्पण' या बंगाली नाटकातून युरोपीय निळ-मळेवाल्यांचे अत्याचार जगासमोर आणले.\n\n[संदर्भ: डॉ. स. शि. गाठाळ / अनिल कटारे]",
+        "en": "(1859): The Indigo Revolt in Bengal, led by Digambar Biswas and Bishnu Biswas, gained widespread attention through the play 'Nil Darpan' written by Dinabandhu Mitra, which vividly portrayed the atrocities of European planters.\n\n"
+      }
+    },
+    {
+      "id": 18,
+      "question": {
+        "mr": "खालील विधाने विचारात घ्या:\nअ) बॉम्बे प्रांतात रयतवारी पद्धतीचे सर्वेक्षण करण्याचे काम प्रामुख्याने 'लेफ्टनंट विंगेट' (Lt. Wingate) याने केले.\nब) या पद्धतीत जमिनीची प्रत आणि पिकांचे उत्पादन यानुसार शेतसारा निश्चित केला जात असे.\nवरीलपैकी कोणते/ती विधान/ने योग्य आहेत?",
+        "en": "Consider the following statements:\nA) The survey work for the Ryotwari system in the Bombay Presidency was primarily done by 'Lt. Wingate'.\nB) In this system, land revenue was fixed according to the quality of the soil and crop yield.\nWhich of the above statement(s) is/are correct?"
+      },
+      "options": [
+        { "mr": "फक्त अ", "en": "Only A" },
+        { "mr": "फक्त ब", "en": "Only B" },
+        { "mr": "दोन्ही अ आणि ब", "en": "Both A and B" },
+        { "mr": "दोन्ही नाहीत", "en": "Neither A nor B" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "(१८३५-४७): बॉम्बे प्रांतात (विशेषतः दख्खनमध्ये) रयतवारी पद्धत लागू करताना सुरुवातीला प्रिंगल (Pringle) ने सर्वेक्षण केले, जे अयशस्वी ठरले. नंतर १८३५ मध्ये लेफ्टनंट विंगेट (Wingate) आणि गोल्डस्मिड (Goldsmid) यांनी सुधारित सर्वेक्षण केले, ज्यात जमिनीची प्रत पाहून ३० वर्षांसाठी सारा निश्चित केला गेला.\n\n[संदर्भ: अनिल कटारे]",
+        "en": "(1835-47): In the Bombay Presidency, after Pringle's failure, a revised survey for the Ryotwari settlement was successfully conducted by Lt. Wingate and Goldsmid. They classified land based on soil quality and yield capability to fix the revenue for 30 years.\n\n"
+      }
+    },
+    {
+      "id": 19,
+      "question": {
+        "mr": "ब्रिटिश काळात १८७८ मध्ये भारतातील दुष्काळ निवारणासाठी पहिला 'दुष्काळ आयोग' (Famine Commission) कोणाच्या अध्यक्षतेखाली नेमण्यात आला?",
+        "en": "Under whose chairmanship was the first 'Famine Commission' appointed in 1878 to tackle famines in India during the British period?"
+      },
+      "options": [
+        { "mr": "कॅम्पबेल", "en": "Campbell" },
+        { "mr": "अँटनी मॅकडोनेल", "en": "Anthony MacDonnell" },
+        { "mr": "रिचर्ड स्ट्रॅची (Richard Strachey)", "en": "Richard Strachey" },
+        { "mr": "जॉन वुडहेड", "en": "John Woodhead" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "(१८७८): लॉर्ड लिटनच्या काळात १८७६-७८ दरम्यान भयानक दुष्काळ पडला होता. यावर उपाययोजना सुचवण्यासाठी लिटनने १८७८ मध्ये 'सर रिचर्ड स्ट्रॅची' यांच्या अध्यक्षतेखाली पहिला अधिकृत दुष्काळ आयोग नेमला. या आयोगाने 'दुष्काळ संहिता' (Famine Code) तयार करण्याची शिफारस केली.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1878): Following the severe famine of 1876-78, Lord Lytton appointed the first Famine Commission under Sir Richard Strachey in 1878. It recommended the creation of a Famine Code and recognizing famine relief as a state duty.\n\n"
+      }
+    },
+    {
+      "id": 20,
+      "question": {
+        "mr": "मराठा साम्राज्यातील पेशवे पदाची (Peshwaship) अधिकृतरीत्या समाप्ती कोणत्या युद्धानंतर झाली?",
+        "en": "After which war was the post of Peshwa (Peshwaship) in the Maratha Empire officially abolished?"
+      },
+      "options": [
+        { "mr": "पहिले इंग्रज-मराठा युद्ध", "en": "First Anglo-Maratha War" },
+        { "mr": "दुसरे इंग्रज-मराठा युद्ध", "en": "Second Anglo-Maratha War" },
+        { "mr": "तिसरे इंग्रज-मराठा युद्ध (Third Anglo-Maratha War)", "en": "Third Anglo-Maratha War" },
+        { "mr": "पानिपतचे तिसरे युद्ध", "en": "Third Battle of Panipat" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "(१८१८): तिसऱ्या इंग्रज-मराठा युद्धात (१८१७-१८१८) दुसऱ्या बाजीरावाचा पूर्णपणे पराभव झाल्यानंतर, गव्हर्नर जनरल लॉर्ड हेस्टिंग्सने 'पेशवे पद' कायमचे रद्द केले आणि दुसऱ्या बाजीरावाला कानपूर जवळील बिठूर येथे पेन्शन देऊन पाठवले.\n\n[संदर्भ: डॉ. स. शि. गाठाळ]",
+        "en": "(1818): The post of Peshwa was officially abolished following the decisive defeat of Peshwa Baji Rao II in the Third Anglo-Maratha War (1817-1818) by Governor-General Lord Hastings. The Peshwa was pensioned off to Bithur.\n\n"
+      }
+    },
+    {
+      "id": 21,
+      "question": {
+        "mr": "खालीलपैकी कोणत्या प्रांतात 'महालवारी' महसूल पद्धत लागू नव्हती?",
+        "en": "In which of the following provinces was the 'Mahalwari' revenue system NOT implemented?"
+      },
+      "options": [
+        { "mr": "पंजाब", "en": "Punjab" },
+        { "mr": "वायव्य प्रांत (North-Western Provinces)", "en": "North-Western Provinces" },
+        { "mr": "अवध व मध्य प्रांत", "en": "Awadh and Central Provinces" },
+        { "mr": "बंगाल व बिहार (Bengal and Bihar)", "en": "Bengal and Bihar" }
+      ],
+      "correctAnswerIndex": 3,
+      "explanation": {
+        "mr": "(१८२२): महालवारी पद्धत (होल्ट मॅकेन्झी) ही प्रामुख्याने पंजाब, वायव्य प्रांत (सध्याचा उत्तर प्रदेश), अवध आणि मध्य भारतात लागू होती. 'बंगाल व बिहार' मध्ये लॉर्ड कॉर्नवॉलिसची 'कायमधारा पद्धत' (Permanent Settlement) लागू होती.\n\n[संदर्भ: समाधान महाजन]",
+        "en": "(1822): The Mahalwari system was implemented in the North-Western Provinces (parts of present-day UP), parts of Central India, and Punjab. Bengal and Bihar were strictly under the Permanent Settlement.\n\n"
+      }
+    },
+    {
+      "id": 22,
+      "question": {
+        "mr": "खालील विधाने तपासा:\nअ) १८३३ च्या चार्टर ॲक्टनुसार भारतातील दास्य प्रथा (Slavery) बेकायदेशीर ठरवली गेली.\nब) अंतिमतः १८४३ मध्ये लॉर्ड एलनबरोच्या काळात दास्य प्रथा भारतातून पूर्णपणे रद्द करण्यात आली.\nकोणते विधान योग्य आहे?",
+        "en": "Check the following statements:\nA) The Charter Act of 1833 declared Slavery illegal in India.\nB) Ultimately, Slavery was completely abolished in India in 1843 during the time of Lord Ellenborough.\nWhich statement is correct?"
+      },
+      "options": [
+        { "mr": "फक्त अ", "en": "Only A" },
+        { "mr": "फक्त ब", "en": "Only B" },
+        { "mr": "अ आणि ब दोन्ही", "en": "Both A and B" },
+        { "mr": "दोन्ही नाहीत", "en": "Neither A nor B" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "(१८३३-१८४३): १८३३ च्या कायद्यात दास्य प्रथा (गुलामगिरी) संपवण्याची तरतूद होती, पण ती लगेच अमलात आली नाही. अखेर १० वर्षांनंतर १८४३ मध्ये (Act V of 1843) लॉर्ड एलनबरोच्या कार्यकाळात भारतात गुलामगिरीची प्रथा कायदेशीररीत्या संपुष्टात आणली गेली.\n\n[संदर्भ: एम. लक्ष्मीकांत / अनिल कटारे]",
+        "en": "(1833-1843): The Charter Act of 1833 directed the Governor-General-in-Council to take steps to mitigate the state of slavery. It was finally abolished in 1843 by Act V under the Governor-Generalship of Lord Ellenborough.\n\n"
+      }
+    },
+    {
+      "id": 23,
+      "question": {
+        "mr": "भारतात येणारी 'डॅनिश इस्ट इंडिया कंपनी' (Danes) यांनी आपली प्रमुख वखार कोठे स्थापन केली होती?",
+        "en": "Where did the 'Danish East India Company' (Danes), which came to India, establish their principal settlement?"
+      },
+      "options": [
+        { "mr": "सुरत", "en": "Surat" },
+        { "mr": "मसुलीपट्टणम", "en": "Masulipatnam" },
+        { "mr": "त्रावणकोर", "en": "Travancore" },
+        { "mr": "ट्रँक्युबार आणि सेरामपूर (Tranquebar and Serampore)", "en": "Tranquebar and Serampore" }
+      ],
+      "correctAnswerIndex": 3,
+      "explanation": {
+        "mr": "(१६२०): डेन्मार्कच्या (Danes) कंपनीने भारतात १६२० मध्ये ट्रँक्युबार (Tranquebar - तमिळनाडू) आणि १६७६ मध्ये सेरामपूर (Serampore - बंगाल) येथे वखारी स्थापन केल्या. सेरामपूर हे त्यांचे मुख्यालय होते. १८४५ मध्ये त्यांनी आपल्या सर्व वखारी ब्रिटिशांना विकून भारताबाहेर गेले.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1620): The Danish East India Company established its settlements at Tranquebar (Tamil Nadu) in 1620 and Serampore (Bengal) in 1676, the latter being their headquarters. They eventually sold all their settlements to the British in 1845.\n\n"
+      }
+    },
+    {
+      "id": 24,
+      "question": {
+        "mr": "जिल्हा न्यायाधीशांना (District Judge) दिवाणी आणि फौजदारी दोन्ही अधिकार कोणत्या गव्हर्नर जनरलने दिले, ज्याने सदर दिवाणी अदालत आणि सदर निजामत अदालत स्थापित केली?",
+        "en": "Which Governor-General gave both civil and criminal powers to the District Judge and established the Sadar Diwani Adalat and Sadar Nizamat Adalat?"
+      },
+      "options": [
+        { "mr": "वॉरन हेस्टिंग्स (Warren Hastings)", "en": "Warren Hastings" },
+        { "mr": "लॉर्ड कॉर्नवॉलिस", "en": "Lord Cornwallis" },
+        { "mr": "लॉर्ड हेस्टिंग्स", "en": "Lord Hastings" },
+        { "mr": "लॉर्ड बेंटिक", "en": "Lord Bentinck" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१७७२): वॉरन हेस्टिंग्सने १७७२ मध्ये न्यायव्यवस्थेची पुनर्रचना केली. त्याने प्रत्येक जिल्ह्यात 'दिवाणी न्यायालय' व 'फौजदारी न्यायालय' स्थापन केले. त्यावरील अपीलासाठी कलकत्ता येथे 'सदर दिवाणी अदालत' आणि 'सदर निजामत अदालत' स्थापन केल्या. (टीप: कॉर्नवॉलिसने नंतर दिवाणी व महसूल अधिकार वेगळे केले).\n\n[संदर्भ: अनिल कटारे]",
+        "en": "(1772): Warren Hastings established a system of civil and criminal courts in each district in 1772. He also set up two courts of appeal in Calcutta: the Sadar Diwani Adalat (for civil cases) and Sadar Nizamat Adalat (for criminal cases).\n\n"
+      }
+    },
+    {
+      "id": 25,
+      "question": {
+        "mr": "खालीलपैकी कोणती जमीन महसूल पद्धत 'थॉमस मुन्रो' (Thomas Munro) आणि 'कॅप्टन अलेक्झांडर रीड' यांनी प्रायोगिक तत्त्वावर १७९२ मध्ये बारा महाल (Baramahal) जिल्ह्यात लागू केली होती?",
+        "en": "Which of the following land revenue systems was introduced on an experimental basis by 'Thomas Munro' and 'Captain Alexander Reed' in the Baramahal district in 1792?"
+      },
+      "options": [
+        { "mr": "कायमधारा", "en": "Permanent Settlement" },
+        { "mr": "रयतवारी (Ryotwari)", "en": "Ryotwari" },
+        { "mr": "महालवारी", "en": "Mahalwari" },
+        { "mr": "इजारदारी", "en": "Izaredari" }
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": {
+        "mr": "(१७९२): रयतवारी पद्धत संपूर्ण मद्रास प्रांतात १८२० मध्ये लागू झाली असली तरी, तिचा पहिला प्रयोग कॅप्टन अलेक्झांडर रीड याने १७९२ मध्ये टीपू सुलतानकडून जिंकलेल्या 'बारा महाल' (Baramahal) जिल्ह्यात केला होता. मुन्रोने नंतर तिचा विस्तार केला.\n\n[संदर्भ: डॉ. स. शि. गाठाळ]",
+        "en": "(1792): Captain Alexander Reed initially introduced the Ryotwari system on an experimental basis in the Baramahal district in 1792. It was later extended and firmly established in the Madras Presidency by Thomas Munro in 1820.\n\n"
+      }
+    }
+  ]
+}

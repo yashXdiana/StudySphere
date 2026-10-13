@@ -1,0 +1,464 @@
+{
+  "testId": "p-hist-07-t5",
+  "title": {
+    "mr": "भारतीय राष्ट्रीय चळवळ (खिलाफत व असहकार सराव) — सराव 5",
+    "en": "Indian National Movement (Khilafat & Non-Cooperation Practice) — Practice Test 5"
+  },
+  "durationMinutes": 20,
+  "marksPerQuestion": 1,
+  "negativeMarking": 0.25,
+  "totalMarks": 25,
+  "difficulty": "मध्यम ते काठिण्य",
+  "questions": [
+    {
+      "id": 1,
+      "question": {
+        "mr": "पहिल्या महायुद्धानंतर तुर्कस्तानच्या खलिफावर झालेल्या अन्यायाविरुद्ध भारतात 'खिलाफत चळवळ' (Khilafat Movement) कोणाच्या नेतृत्वाखाली सुरू झाली होती?",
+        "en": "Under whose leadership was the 'Khilafat Movement' launched in India to protest the dismantling of the Ottoman Caliphate after WWI?"
+      },
+      "options": [
+        { "mr": "अली बंधू (मौलाना मोहम्मद अली आणि मौलाना शौकत अली)", "en": "Ali Brothers (Maulana Mohammed Ali and Maulana Shaukat Ali)" },
+        { "mr": "सर सय्यद अहमद खान", "en": "Sir Syed Ahmed Khan" },
+        { "mr": "मौलाना आजाद", "en": "Maulana Abul Kalam Azad" },
+        { "mr": "मोहम्मद अली जिना", "en": "Muhammad Ali Jinnah" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९१९-२०): पहिल्या महायुद्धात तुर्कस्तानचा पराभव झाल्यावर ब्रिटीशांनी खलिफाची सत्ता व अधिकार नष्ट केले. या धार्मिक अन्यायाविरुद्ध भारतात 'अली बंधू' (मोहम्मद अली व शौकत अली), मौलाना आजाद आणि हसरत मोहानी यांनी 'खिलाफत कमिटी' स्थापन करून आंदोलन छेडले.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / डॉ. स. शि. गाठाळ]",
+        "en": "(1919-20): The Khilafat movement was spearheaded by the Ali Brothers (Mohammed Ali and Shaukat Ali), Maulana Azad, and other leaders to protect the status of the Ottoman Caliph against British truncation.\n\n"
+      }
+    },
+    {
+      "id": 2,
+      "question": {
+        "mr": "महात्मा गांधींनी खिलाफत चळवळीला पाठिंबा देण्यामागे मुख्य राष्ट्रीय उद्देश कोणता होता?",
+        "en": "What was Mahatma Gandhi's primary strategic objective behind supporting the Khilafat Movement?"
+      },
+      "options": [
+        { "mr": "हिंदू-मुस्लिम ऐक्य साधून ब्रिटिशांविरुद्ध सर्वसमावेशक राष्ट्रीय जनआंदोलन उभारणे", "en": "To forge Hindu-Muslim unity and build a broad-based pan-Indian mass movement against the British" },
+        { "mr": "तुर्कस्तानचा राजा होणे", "en": "To become the king of Turkey" },
+        { "mr": "केवळ धार्मिक शिक्षण सक्तीचे करणे", "en": "To make religious education compulsory" },
+        { "mr": "मुस्लिम लीगमध्ये प्रवेश करणे", "en": "To join the Muslim League" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९२०): गांधीजींनी हे ओळखले की हिंदू आणि मुस्लिम यांना एकाच व्यासपीठावर आणण्याची ही सुवर्णसंधी आहे. 'शेकडो वर्षांत कधीही न आलेली हिंदू-मुस्लिम ऐक्याची ही संधी आहे' असे मानत त्यांनी खिलाफतला असहकार आंदोलनाशी जोडले.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1920): Gandhi viewed the Khilafat issue as an unprecedented 'golden opportunity' to unite Hindus and Muslims in a common national struggle against British imperialism.\n\n"
+      }
+    },
+    {
+      "id": 3,
+      "question": {
+        "mr": "असहकार चळवळीच्या कार्यक्रमात (१९२०) खालीलपैकी कोणत्या बाबींचा प्रामुख्याने समावेश होता?",
+        "en": "Which of the following programs formed the core of the Non-Cooperation Movement launched in 1920?"
+      },
+      "options": [
+        { "mr": "सरकारी पदव्यांचा त्याग, सरकारी शाळा-न्यायालयांवर बहिष्कार आणि परदेशी कपड्यांची होली", "en": "Surrender of titles, boycott of government schools/courts, and burning of foreign cloth" },
+        { "mr": "कर भरण्यास सक्ती करणे", "en": "Forced tax collection" },
+        { "mr": "सरकारी नोकऱ्या मोठ्या प्रमाणावर स्वीकारणे", "en": "Accepting government jobs en masse" },
+        { "mr": "सशस्त्र क्रांती करणे", "en": "Carrying out armed revolution" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९२०): असहकार चळवळीत ब्रिटिशांनी दिलेल्या पदव्या व सन्मान परत करणे, सरकारी शाळा, महाविद्याले, वकिलांचे कायदेतज्ज्ञ कोर्ट आणि परदेशी मालाचा बहिष्कार यांचा समावेश होता.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / समाधान महाजन]",
+        "en": "(1920): The Non-Cooperation program entailed surrendering British titles, boycotting schools, colleges, law courts, and legislative councils, and picketing foreign cloth shops.\n\n"
+      }
+    },
+    {
+      "id": 4,
+      "question": {
+        "mr": "ऑगस्ट १९२० मध्ये असहकार चळवळीच्या सुरुवातीच्या दिवशी कोणत्या महान नेत्याचे निधन झाले, ज्यांच्या स्मरणार्थ 'तिलक स्वराज्य फंड' सुरू करण्यात आला?",
+        "en": "Which towering nationalist leader passed away on the very day the Non-Cooperation movement was formally launched (August 1, 1920), leading to the creation of the Tilak Swaraj Fund?"
+      },
+      "options": [
+        { "mr": "लोकमान्य बाळ गंगाधर टिळक (Bal Gangadhar Tilak)", "en": "Bal Gangadhar Tilak" },
+        { "mr": "गोपाळ कृष्ण गोखले", "en": "Gopal Krishna Gokhale" },
+        { "mr": "दादाभाई नौरोजी", "en": "Dadabhai Naoroji" },
+        { "mr": "चित्तरंजन दास", "en": "C.R. Das" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९२०): १ ऑगस्ट १९२० रोजी असहकार आंदोलनाची अधिकृत सुरुवात झाली, आणि त्याच दुर्दैवी दिवशी लोकमान्य टिळकांचे निधन झाले. त्यांच्या नाύने 'तिलक स्वराज्य निधी' स्थापन करण्यात आला, ज्याने अल्पावधीतच एक कोटींहून अधिक निधी जमवला.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / डॉ. स. शि. गाठाळ]",
+        "en": "(1920): Lokmanya Tilak passed away on August 1, 1920, the exact day the Non-Cooperation movement commenced. A Swaraj fund was raised in his memory to finance the movement.\n\n"
+      }
+    },
+    {
+      "id": 5,
+      "question": {
+        "mr": "असहकार चळवळीदरम्यान (१९२०-२२) मोतीलाल नेहरू, चित्तरंजन दास, सी. राजगोपालाचारी आणि वल्लभभाई पटेल यांसारख्या नामवंत वकिलांनी काय केले होते?",
+        "en": "What monumental step did prominent nationalist lawyers like Motilal Nehru, C.R. Das, and Vallabhbhai Patel take during the Non-Cooperation movement?"
+      },
+      "options": [
+        { "mr": "आपली lucrative प्रॅक्टिस (वकिली) सोडून आंदोलनात पूर्णवेळ झोकून दिले", "en": "Gave up their lucrative legal practices to join the mass agitation full-time" },
+        { "mr": "ब्रिटीश न्यायालयांचे न्यायाधीश झाले", "en": "Became judges in British courts" },
+        { "mr": "परदेशात कायदेशीर शिक्षण घेतले", "en": "Went abroad to study law" },
+        { "mr": "आंदोलनाविरुद्ध खटले लढवले", "en": "Fought court cases against the movement" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९२०-२२): चित्तरंजन दास, मोतीलाल नेहरू, राजेंद्र प्रसाद, वल्लभभाई पटेल आणि सी. राजगोपालाचारी यांसारख्या दिग्गजांनी आपली लाखो रुपयांची वकिली सोडून गांधीजींच्या हाकेला साथ दिली.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1920-22): Leading lawyers such as C.R. Das, Motilal Nehru, and Vallabhbhai Patel heroically abandoned their high-earning legal practices to dedicate themselves entirely to the freedom struggle.\n\n"
+      }
+    },
+    {
+      "id": 6,
+      "question": {
+        "mr": "असहकार चळवळीच्या काळात महाराष्ट्रात कोणत्या ठिकाणी शेतकऱ्यांनी 'चिराग अली शाह' किंवा इतर नेत्यांच्या नेतृत्वाखाली किंवा करबंदीचे (No-tax) प्रयोग केले?",
+        "en": "Which region in Maharashtra witnessed notable no-tax or anti-revenue peasant agitations during the early 1920s?"
+      },
+      "options": [
+        { "mr": "मुळशी सत्याग्रह (पुणे - सेनापती बापट) आणि गोकुळ शिरगाव (कोल्हापूर)", "en": "Mulshi Satyagraha (Pune - Senapati Bapat)" },
+        { "mr": "बारडोली सत्याग्रह (गुजरात)", "en": "Bardoli Satyagraha (Gujarat)" },
+        { "mr": "चंपारण्य सत्याग्रह", "en": "Champaran Satyagraha" },
+        { "mr": "तेभागा लढा (बंगाल)", "en": "Tebhaga movement (Bengal)" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९२०-२३): महाराष्ट्रात असहकार चळवळीच्या काळात पुण्यात टाटांच्या धरणाविरुद्ध 'मुळशी सत्याग्रह' (सेनापती बापट) झाला, तसेच आंध्र प्रदेशात गुंटूर येथे करबंदी लढा गाजला.\n\n[संदर्भ: समाधान महाजन / स्पेक्ट्रम]",
+        "en": "(1920-23): Alongside national boycotts, Maharashtra witnessed intense local struggles like the Mulshi Satyagraha led by Senapati Bapat against dam displacement.\n\n"
+      }
+    },
+    {
+      "id": 7,
+      "question": {
+        "mr": "चौरी चौरा घटनेनंतर (५ फेब्रुवारी १९२२) गांधीजींनी असहकार चळवळ मागे घेतल्यावर काँग्रेसमधील कोणत्या नेत्याने या निर्णयावर तीव्र नाराजी व्यक्त केली होती?",
+        "en": "Which prominent leader sharply criticized Mahatma Gandhi's decision to suspend the Non-Cooperation Movement after Chauri Chaura?"
+      },
+      "options": [
+        { "mr": "सुभाषचंद्र बोस, जवाहरलाल नेहरू आणि चित्तरंजन दास (Younger leaders felt deeply disillusioned)", "en": "Younger leaders like Subhas Bose and Nehru felt deeply disillusioned" },
+        { "mr": "केवळ गोपाळ कृष्ण गोखले", "en": "Only G.K. Gokhale" },
+        { "mr": "फक्त मवाळ नेते", "en": "Only Moderate leaders" },
+        { "mr": "कोणताही नेता नाराज नव्हता", "en": "No leader was unhappy" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९२२): असहकार चळवळ अचानक मागे घेतल्यामुळे जवाहरलाल नेहरू, सुभाषचंद्र बोस, चित्तरंजन दास यांसारख्या तरुण व जहाल नेत्यांमध्ये तीव्र निराशा व संताप निर्माण झाला, कारण आंदोलन शिगेला पोहोचले होते.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / अनिल कटारे]",
+        "en": "(1922): The sudden suspension of a peaking mass movement stunned and deeply disillusioned younger nationalist leaders like Subhas Chandra Bose and Jawaharlal Nehru.\n\n"
+      }
+    },
+    {
+      "id": 8,
+      "question": {
+        "mr": "डिसेंबर १९२२ मधील 'गया काँग्रेस अधिवेशनाचे' (Gaya Session) अध्यक्षपद कोणी भूषवले होते, जिथे स्वराज्य पक्षाच्या स्थापनेची पार्श्वभूमी तयार झाली?",
+        "en": "Who presided over the Gaya session of the INC in December 1922, where intense debates on council entry took place?"
+      },
+      "options": [
+        { "mr": "चित्तरंजन दास (C.R. Das)", "en": "C.R. Das" },
+        { "mr": "मोतीलाल नेहरू", "en": "Motilal Nehru" },
+        { "mr": "वल्लभभाई पटेल", "en": "Vallabhbhai Patel" },
+        { "mr": "राजेंद्र प्रसाद", "en": "Rajendra Prasad" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९२२): डिसेंबर १९२२ मध्ये गया येथे झालेल्या काँग्रेस अधिवेशनाचे अध्यक्ष चित्तरंजन दास होते. त्यांनी परिषदांच्या बहिष्कारावरून काँग्रेस नेतृत्वाला विरोध केला आणि जेव्हा त्यांचा ठराव फेटाळला गेला, तेव्हा त्यांनी अध्यक्षपदाचा राजीनामा देऊन 'स्वराज्य पक्षाची' घोषणा केली.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1922): C.R. Das presided over the Gaya INC session, where his pro-council entry resolution was defeated, prompting him to resign and form the Swaraj Party.\n\n"
+      }
+    },
+    {
+      "id": 9,
+      "question": {
+        "mr": "स्वराज्य पक्षाची (Swaraj Party) अधिकृत स्थापना १ जानेवारी १९२३ रोजी झाली तेव्हा त्याचे अध्यक्ष आणि सचिव (General Secretary) कोण होते?",
+        "en": "Who served as the first President and General Secretary of the Swaraj Party upon its formation in January 1923?"
+      },
+      "options": [
+        { "mr": "अध्यक्ष: चित्तरंजन दास, सचिव: मोतीलाल नेहरू", "en": "President: C.R. Das; General Secretary: Motilal Nehru" },
+        { "mr": "अध्यक्ष: मोतीलाल नेहरू, सचिव: चित्तरंजन दास", "en": "President: Motilal Nehru; Secretary: C.R. Das" },
+        { "mr": "अध्यक्ष: विठ्ठलभाई पटेल, सचिव: मदनमोहन मालवीय", "en": "President: Vithalbhai Patel; Secretary: M.M. Malaviya" },
+        { "mr": "अध्यक्ष: गांधीजी, सचिव: नेहरू", "en": "President: Gandhi; Secretary: Nehru" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९२३): १ जानेवारी १९२३ रोजी 'स्वराज्य पक्षाची' (Congress-Khilafat Swarajya Party) स्थापना झाली. यामध्ये चित्तरंजन दास हे पहिले अध्यक्ष बनले, तर मोतीलाल नेहरू हे त्याचे पहिले सरचिटणीस (General Secretary) झाले.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / समाधान महाजन]",
+        "en": "(1923): The Swaraj Party was formally launched on January 1, 1923, with C.R. Das as President and Motilal Nehru as General Secretary.\n\n"
+      }
+    },
+    {
+      "id": 10,
+      "question": {
+        "mr": "स्वराज्य पक्षाचे मुख्य राजकीय धोरण काय होते?",
+        "en": "What was the core political strategy adopted by the Swarajists within the legislative councils?"
+      },
+      "options": [
+        { "mr": "कायदेमंडळात प्रवेश करून ब्रिटीश सरकारच्या प्रत्येक अन्यायकारक धोरणात व बजेटमध्ये अडथळे आणणे (Entering councils to 'wreck the reforms from within')", "en": "Entering councils to obstruct government measures and wreck reforms from within" },
+        { "mr": "ब्रिटीश मंत्र्यांच्या मंत्रिमंडळात पदे स्वीकारणे", "en": "Accepting ministerial positions in British cabinets" },
+        { "mr": "कायदेमंडळांवर कायमचा बहिष्कार टाकत राहणे", "en": "Permanently boycotting all legislatures forever" },
+        { "mr": "सशस्त्र क्रांतीसाठी निधी गोळा करणे", "en": "Raising funds for armed rebellion" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९२३-१९२५): स्वराज्य पक्षाचे म्हणणे होते की जर आपण निवडणुकीत जिंकून कायदेमंडळात गेलो नाही तर सरकार तिथे त्यांचे हस्तक बसवेल. त्यामुळे आत जाऊन सरकारचे बजेट आणि कायदे पाडणे (अडथळा राजकारण - Obstructionist policy) हे आमचे धोरण आहे.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1923-1925): Swarajists argued that boycotting councils left a vacuum for loyalists; hence, they entered legislatures to systematically obstruct colonial legislation and expose autocracy.\n\n"
+      }
+    },
+    {
+      "id": 11,
+      "question": {
+        "mr": "सन १९२३ च्या नोव्हेंबरमध्ये झालेल्या मध्यवर्ती कायदेमंडळाच्या (Central Legislative Assembly) निवडणुकीत स्वराज्य पक्षाने किती जागांवर घवघवीत यश मिळवले होते?",
+        "en": "How many seats did the Swaraj Party secure in the Central Legislative Assembly elections held in November 1923?"
+      },
+      "options": [
+        { "mr": "१०१ पैकी ४२ जागा (42 out of 101 elected seats)", "en": "42 out of 101 elected seats" },
+        { "mr": "सर्वच्या सर्व जागा", "en": "All the seats" },
+        { "mr": "फक्त १० जागा", "en": "Only 10 seats" },
+        { "mr": "८० जागा", "en": "80 seats" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९२३): नोव्हेंबर १९२३ च्या मध्यवर्ती कायदेमंडळाच्या निवडणुकीत स्वराज्य पक्षाने १०१ पैकी ४२ जागा जिंकून दणदणीत यश मिळवले आणि केंद्रीय व प्रांतीय स्तरावर मजबूत विरोधक म्हणून भूमिका बजावली.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1923): In the November 1923 elections, the Swaraj Party won an impressive 42 out of 101 elected seats in the Central Legislative Assembly, emerging as a formidable opposition bloc.\n\n"
+      }
+    },
+    {
+      "id": 12,
+      "question": {
+        "mr": "विठ्ठलभाई पटेल हे १९२५ मध्ये कोणत्या महत्त्वाच्या पदावर स्वराज्य पक्षाच्या तिकिटावर / समर्थनाने निवडून गेले होते?",
+        "en": "To which prestigious legislative office was Vithalbhai Patel elected in 1925 with Swarajist backing?"
+      },
+      "options": [
+        { "mr": "केंद्रीय कायदेमंडळाचे अध्यक्ष / स्पिकर (President / Speaker of the Central Legislative Assembly)", "en": "President / Speaker of the Central Legislative Assembly" },
+        { "mr": "बॉम्बे प्रेसिडेन्सीचे गव्हर्नर", "en": "Governor of Bombay Presidency" },
+        { "mr": "भारताचे महाधिवक्ता (Advocate General)", "en": "Advocate General of India" },
+        { "mr": "कलकत्ता उच्च न्यायालयाचे मुख्य न्यायाधीश", "en": "Chief Justice of Calcutta High Court" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९२५): विठ्ठलभाई पटेल (सरदार पटेलांचे बंधू) यांनी कायदेमंडळाच्या आतून केलेल्या संघर्षाचा एक भाग म्हणून १९२५ मध्ये मध्यवर्ती कायदेमंडळाचे अध्यक्ष (President / Speaker) म्हणून ऐतिहासिक विजय मिळवला.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / डॉ. स. शि. गाठाळ]",
+        "en": "(1925): Vithalbhai Patel (Vallabhbhai Patel's elder brother) achieved a major parliamentary triumph by getting elected as the President (Speaker) of the Central Legislative Assembly in 1925.\n\n"
+      }
+    },
+    {
+      "id": 13,
+      "question": {
+        "mr": "खालील विधाने विचारात घ्या:\nअ) स्वराज्य पक्षाने कायदेमंडळात प्रवेश केल्यानंतर ब्रिटिशांचे अनेक कायदे आणि बजेट नाकारून त्यांना कोंडीत पकडले.\nब) चित्तरंजन दास यांच्या निधनानंतर (जून १९२५) स्वराज्य पक्षाची शक्ती काहीशी क्षीण होत गेली आणि १९२६ च्या निवडणुकांनंतर पक्षात फूट पडली.\nवरीलपैकी कोणते/ती विधान/ने बरोबर आहेत?",
+        "en": "Consider the following statements:\nA) The Swaraj Party successfully defeated several government bills and budgets inside the legislatures.\nB) Following C.R. Das's death in June 1925, the party gradually lost cohesion and fractured after the 1926 elections.\nWhich of the above statement(s) is/are correct?"
+      },
+      "options": [
+        { "mr": "फक्त अ", "en": "Only A" },
+        { "mr": "फक्त ब", "en": "Only B" },
+        { "mr": "अ आणि ब दोन्ही", "en": "Both A and B" },
+        { "mr": "दोन्ही नाहीत", "en": "Neither A nor B" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "(१९२५-१९२६): दोन्ही विधाने अगदी बरोबर आहेत. स्वराज्य पक्षाने कायदेमंडळात जबरदस्त धडक मारली, परंतु सी. आर. दास यांच्या अकाली निधनानंतर (जून १९२५) पक्षात अंतर्गत मतभेद वाढले आणि १९२६ च्या निवडणुकीत पक्षाची पीछेहाट झाली.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / समाधान महाजन]",
+        "en": "(1925-1926): Both statements are correct. The Swarajists effectively paralyzed colonial legislative initiatives until C.R. Das's untimely death in 1925 triggered internal rifts and decline.\n\n"
+      }
+    },
+    {
+      "id": 14,
+      "question": {
+        "mr": "असहकार चळवळीच्या स्थगितीनंतर महात्मा गांधींनी रचनात्मक कार्यक्रमांवर (Constructive Programme) भर दिला, ज्यामध्ये खालीलपैकी कशाचा समावेश होता?",
+        "en": "Following the suspension of the Non-Cooperation Movement, Mahatma Gandhi emphasized a 'Constructive Programme'. Which of the following was a key part of it?"
+      },
+      "options": [
+        { "mr": "खदी व चरख्याचा प्रसार, अस्पृश्यतानिवारण आणि हिंदू-मुस्लिम ऐक्य", "en": "Promotion of Khadi/spinning wheel, eradication of untouchability, and Hindu-Muslim unity" },
+        { "mr": "गुप्तपणे बॉम्ब तयार करणे", "en": "Secret bomb making" },
+        { "mr": "कायदेमंडळात मंत्रिपद स्वीकारणे", "en": "Accepting council ministries" },
+        { "mr": "परदेशी मालाची आयात वाढवणे", "en": "Increasing foreign imports" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९२२ नंतर): चळवळ थांबल्यावर गांधीजींनी ग्रामीण जनतेत खदीचा प्रसार, चरखा चालवणे, अस्पृश्यता निर्मूलन, राष्ट्रीय शिक्षण आणि हिंदू-मुस्लिम सलोखा या 'रचनात्मक कार्यक्रमांवर' भर दिला, ज्याने पुढील आंदोलनासाठी तळागाळात पाया तयार केला.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(Post-1922): During the lull in mass agitation, Gandhi focused on constructive nation-building tasks like Khadi popularization, anti-untouchability, and communal harmony to prepare the masses.\n\n"
+      }
+    },
+    {
+      "id": 15,
+      "question": {
+        "mr": "१९२४ चे बेलगाव काँग्रेस अधिवेशन का ऐतिहासिक मानले जाते?",
+        "en": "Why is the 1924 Belgaum session of the Indian National Congress historically significant?"
+      },
+      "options": [
+        { "mr": "या अधिवेशनाचे अध्यक्षपद पहिल्यांदा आणि एकमेव वेळी 'महात्मा गांधी' यांनी भूषवले होते", "en": "It was the first and only time Mahatma Gandhi presided over an INC session" },
+        { "mr": "याच अधिवेशनात पूर्ण स्वराजचा प्रस्ताव पास झाला", "en": "Purna Swaraj was passed here" },
+        { "mr": "याच अधिवेशनात काँग्रेसची स्थापना झाली", "en": "Congress was founded here" },
+        { "mr": "या अधिवेशनात जहाल व मवाळ फुटले", "en": "Extremists and Moderates split here" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९२४): डिसेंबर १९२४ मध्ये कर्नाटक राज्यातील बेगाव येथे भरलेल्या काँग्रेस अधिवेशनाचे अध्यक्षपद महात्मा गांधींनी भूषवले होते. गांधीजींच्या आयुष्यातील हे एकमेव काँग्रेस अधिवेशन होते ज्यांचे त्यांनी अध्यक्षपद घेतले.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / डॉ. स. शि. गाठाळ]",
+        "en": "(1924): The Belgaum session of December 1924 is legendary because it was the first and only time Mahatma Gandhi served as the President of the Indian National Congress.\n\n"
+      }
+    },
+    {
+      "id": 16,
+      "question": {
+        "mr": "खालील विधाने विचारात घ्या:\nअ) असहकार चळवळीच्या काळात 'राष्ट्रीय शिक्षणाला' चालना देण्यासाठी काशी विद्यापीठ, जामिया मिलिया इस्लामिया आणि बिहार विद्यापीठाची स्थापना झाली.\nब) या चळवळीत पहिल्यांदाच कामगार वर्ग, शेतकरी आणि व्यापारी मोठ्या प्रमाणावर सहभागी झाले होते.\nवरीलपैकी कोणते/ती विधान/ने बरोबर आहेत?",
+        "en": "Consider the following statements:\nA) The Non-Cooperation movement witnessed the establishment of nationalist educational institutions like Kashi Vidyapith, Jamia Millia Islamia, and Bihar Vidyapith.\nB) The movement drew unprecedented mass participation from peasants, workers, and urban poor.\nWhich of the above statement(s) is/are correct?"
+      },
+      "options": [
+        { "mr": "फक्त अ", "en": "Only A" },
+        { "mr": "फक्त ब", "en": "Only B" },
+        { "mr": "अ आणि ब दोन्ही", "en": "Both A and B" },
+        { "mr": "दोन्ही नाहीत", "en": "Neither A nor B" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९२०-२२): विधान 'अ' बरोबर आहे (काशि विद्यापीठ, जामिया मिलिया इस्लामिया स्थापन झाली). विधान 'ब' मध्ये जरी शेतकऱ्यांचा सहभाग असला तरी अनेक ठिकाणी कामगार वर्ग किंवा विशिष्ट घटकांच्या सहभागात मर्यादा होत्या (तथापि व्यापक जनआंदोलन होते). मात्र सर्वसाधारणपणे दोन्ही विधाने अभ्यासकांच्या मते सत्य मानली जातात.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1920-22): Both statements are correct. The boycott of British schools prompted the founding of indigenous universities like Jamia Millia Islamia and Kashi Vidyapith, alongside broad popular mobilization.\n\n"
+      }
+    },
+    {
+      "id": 17,
+      "question": {
+        "mr": "खिलाफत चळवळीच्या काळात ब्रिटीश राजवटीविरुद्ध असहकाराचा पुरस्कार करताना 'कैसर-ए-हिंद' आणि इतर पदव्या परत करणाऱ्या नेत्यांमध्ये कोण प्रमुख होते?",
+        "en": "Apart from Mahatma Gandhi, which prominent leader surrendered their British-awarded titles during the Khilafat and Non-Cooperation days?"
+      },
+      "options": [
+        { "mr": "जमनालाल बजाज (ज्यांनी 'राय बहादूर' पदवी परत केली)", "en": "Jamnalal Bajaj (who returned his 'Rai Bahadur' title)" },
+        { "mr": "सुभाषचंद्र बोस", "en": "Subhas Chandra Bose" },
+        { "mr": "सरदार वल्लभभाई पटेल", "en": "Sardar Vallabhbhai Patel" },
+        { "mr": "डॉ. राजेंद्र प्रसाद", "en": "Dr. Rajendra Prasad" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९२०): गांधीजींनी 'कैसर-ए-हिंद' व जुलु पदक परत केले, तर जमनालाल बजाज यांनी ब्रिटिशांनी दिलेली 'राय बहादूर' ही प्रतिष्ठित पदवी जाहीरपणे परत केली.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1920): Alongside Gandhi renouncing his Kaiser-i-Hind medal, nationalist industrialist and philanthropist Jamnalal Bajaj famously surrendered his 'Rai Bahadur' title.\n\n"
+      }
+    },
+    {
+      "id": 18,
+      "question": {
+        "mr": "असहकार चळवळीच्या काळात (१९२०-२२) ब्रिटीश कपड्यांच्या बहिष्काराचे महत्त्व स्पष्ट करताना गांधीजींनी कशाला सर्वाधिक महत्त्व दिले होते?",
+        "en": "What did Mahatma Gandhi emphasize most when advocating for the boycott of foreign cloth during the Non-Cooperation movement?"
+      },
+      "options": [
+        { "mr": "खदी (Khadi) चा वापर आणि स्वयंपूर्णतेचा संदेश", "en": "The adoption of Khadi as a symbol of economic self-reliance and national dignity" },
+        { "mr": "परदेशी कपड्यांची चोरी करणे", "en": "Stealing foreign clothes" },
+        { "mr": "फक्त कपडे जाळणे आणि नवीन खरेदी बंद करणे", "en": "Only burning and stopping new purchases" },
+        { "mr": "रेशमी कपड्यांचा वापर करणे", "en": "Using silk clothes instead" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९२०-२२): परदेशी कपड्यांची होली पेटवताना गांधीजींनी खदीच्या वापरावर भर दिला, जेणेकरून ग्रामीण भागातील गरिबांना रोजगार मिळेल आणि भारत आर्थिकदृष्ट्या स्वयंपूर्ण होईल.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1920-22): Pickets and bonfires of foreign cloth were accompanied by Gandhi's vigorous promotion of Khadi, transforming spinning and weaving into economic weapons of self-reliance.\n\n"
+      }
+    },
+    {
+      "id": 19,
+      "question": {
+        "mr": "खालील विधाने विचारात घ्या:\nअ) खिलाफत चळवळ ही मूलतः तुर्कस्तानच्या खलिफाच्या धार्मिक अधिकारांच्या रक्षणासाठी सुरू झाली होती.\nब) पुढे तुर्कस्तानमध्ये कमाल पाशा (Mustafa Kemal Pasha) यांनी खलिफा पदच्युत करून आधुनिक सेक्युलर तुर्कस्तान स्थापन केल्यावर खिलाफत चळवळ संपुष्टात आली.\nवरीलपैकी कोणते/ती विधान/ने बरोबर आहेत?",
+        "en": "Consider the following statements:\nA) The Khilafat movement originally began to protect the religious authority of the Ottoman Sultan as Caliph.\nB) The movement naturally fizzled out when Mustafa Kemal Pasha abolished the Caliphate and secularized Turkey in 1924.\nWhich of the above statement(s) is/are correct?"
+      },
+      "options": [
+        { "mr": "फक्त अ", "en": "Only A" },
+        { "mr": "फक्त ब", "en": "Only B" },
+        { "mr": "अ आणि ब दोन्ही", "en": "Both A and B" },
+        { "mr": "दोन्ही नाहीत", "en": "Neither A nor B" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "(१९२४): दोन्ही विधाने अगदी बरोबर आहेत. तुर्कस्तानमध्ये मुस्तफा कमाल पाशा (अतातुर्क) यांनी सत्ता हाती घेतल्यानंतर खलिफा पदच्युत केले (१९२४), ज्यामुळे भारतातील खिलाफत चळवळीचे मूळ कारणच संपुष्टात आले.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / डॉ. स. शि. गाठाळ]",
+        "en": "(1924): Both statements are correct. The Khilafat movement lost its raison d'être when Mustafa Kemal Pasha formally abolished the Caliphate and established a secular republic in Turkey by 1924.\n\n"
+      }
+    },
+    {
+      "id": 20,
+      "question": {
+        "mr": "असहकार चळवळीदरम्यान (१९२०-२२) ब्रिटीश न्यायालयांवर बहिष्काराची हाक दिल्यावर देशात कोणत्या महान कायदेतज्ज्ञांनी वकिलांची प्रॅक्टिस सोडून पुढाकार घेतला होता?",
+        "en": "Which legal luminaries readily gave up their thriving legal practices in response to the boycott of British courts during the Non-Cooperation movement?"
+      },
+      "options": [
+        { "mr": "चित्तरंजन दास, मोतीलाल नेहरू, सी. राजगोपालाचारी आणि सैफुद्दीन किचलू", "en": "C.R. Das, Motilal Nehru, C. Rajagopalachari and Saifuddin Kitchlew" },
+        { "mr": "फक्त तरुण विद्यार्थी", "en": "Only young students" },
+        { "mr": "फक्त ब्रिटिश कायदेतज्ज्ञ", "en": "Only British jurists" },
+        { "mr": "फक्त मवाळ वकील", "en": "Only Moderate lawyers" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९२०): देशातील सर्वोच्च वकिल असणारे सी. आर. दास, मोतीलाल नेहरू, जवाहरलाल नेहरू, वल्लभभाई पटेल, सी. राजगोपालाचारी यांनी वकिली सोडून कोर्टावर बहिष्कार टाकला आणि राष्ट्रीय न्यायालये (पंचायती) स्थापन केली.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1920): Top-tier lawyers including C.R. Das, Motilal Nehru, and C. Rajagopalachari abandoned their lucrative legal careers, boycotting colonial courts to join the mass agitation.\n\n"
+      }
+    },
+    {
+      "id": 21,
+      "question": {
+        "mr": "१९२० च्या नागपूर काँग्रेस अधिवेशनात 'काँग्रेसच्या घटनेत' (INC Constitution) कोणता महत्त्वाचा मूलभूत बदल करण्यात आला होता, ज्यामुळे ती जनआंदोलन बनली?",
+        "en": "What fundamental structural amendment was made to the INC constitution at the Nagpur session in December 1920 to transform it into a mass organization?"
+      },
+      "options": [
+        { "mr": "चार आणे (4 annas) वार्षिक वर्गणी भरून सामान्य जनतेला काँग्रेसचे सभासद बनवण्याची तरतूद आणि प्रांतीय समित्यांची भाषावार रचना", "en": "Making ordinary citizens members for a nominal fee of 4 annas and organizing provincial committees on a linguistic basis" },
+        { "mr": "काँग्रेसचे कार्यालय लंडनला हलवणे", "en": "Moving the Congress headquarters to London" },
+        { "mr": "फक्त वकिलांनाच मतदानाचा अधिकार देणे", "en": "Restricting voting rights only to lawyers" },
+        { "mr": "इंग्रजी भाषा सक्तीची करणे", "en": "Making English compulsory" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९२०): नागपूर अधिवेशनात गांधीजींच्या मसुद्यानुसार काँग्रेसच्या घटनेत बदल झाले. केवळ उच्चभ्रू वर्गापुरती मर्यादित असलेली काँग्रेस आता चार आणे (४ आणे) वर्गणी भरून कोणालाही सभासद करू लागली आणि प्रांतीय समित्यांची रचना भाषावार (Linguistic basis) केली गेली.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / डॉ. स. शि. गाठाळ]",
+        "en": "(1920): The Nagpur session amended the Congress constitution, making membership accessible to anyone paying a nominal 4 annas annual fee and reorganizing provincial committees linguistically.\n\n"
+      }
+    },
+    {
+      "id": 22,
+      "question": {
+        "mr": "असहकार चळवळीच्या काळात (१९२०-२२) ब्रिटीश राजकुमार 'प्रिन्स ऑफ वेल्स' (Prince of Wales) यांच्या भारत भेटीवर (नोव्हेंबर १९२१) काँग्रेसने काय भूमिका घेतली होती?",
+        "en": "What stance did the Congress take regarding the visit of the Prince of Wales to India in November 1921?"
+      },
+      "options": [
+        { "mr": "त्यांच्या स्वागतावर संपूर्ण देशव्यापी कडक बहिष्कार टाकला आणि हडताळ पाळले", "en": "Organized a comprehensive, nationwide boycott and general strikes against his arrival" },
+        { "mr": "त्यांचे भव्य स्वागत केले", "en": "Welcomed him grandly" },
+        { "mr": "त्यांच्यासोबत गुप्त करार केला", "en": "Signed a secret pact with him" },
+        { "mr": "त्यांच्या भेटीकडे दुर्लक्ष केले", "en": "Ignored his visit completely" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९२१): नोव्हेंबर १९२१ मध्ये प्रिन्स ऑफ वेल्स भारतात आले तेव्हा त्यांच्या स्वागतावर संपूर्ण देशात कडक बहिष्कार टाकला गेला. ते उतरलेल्या प्रत्येक शहरात दुकाने बंद ठेवून आणि काळे झेंडे दाखवून तीव्र निषेध नोंदवला गेला.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1921): The arrival of the Prince of Wales in November 1921 was met with massive nationwide strikes, empty streets, and hostile black-flag demonstrations organized by Congress volunteers.\n\n"
+      }
+    },
+    {
+      "id": 23,
+      "question": {
+        "mr": "खालील विधाने विचारात घ्या:\nअ) असहकार चळवळीने भारतातील सामान्य जनतेत (शेतकरी, कामगार, विद्यार्थी) अभूतपूर्व राजकीय जाणिवा निर्माण केल्या.\nब) या आंदोलनामुळे ब्रिटिश राजवटीची आर्थिक व नैतिक पायाभरणी हादरून गेली.\nवरीलपैकी कोणते/ती विधान/ने बरोबर आहेत?",
+        "en": "Consider the following statements:\nA) The Non-Cooperation Movement successfully politicized the rural peasantry, urban workers, and students on an unprecedented scale.\nB) The movement profoundly shook the economic and moral foundations of British colonial rule.\nWhich of the above statement(s) is/are correct?"
+      },
+      "options": [
+        { "mr": "फक्त अ", "en": "Only A" },
+        { "mr": "फक्त ब", "en": "Only B" },
+        { "mr": "अ आणि ब दोन्ही", "en": "Both A and B" },
+        { "mr": "दोन्ही नाहीत", "en": "Neither A nor B" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९२०-२२): दोन्ही विधाने अगदी बरोबर आहेत. असहकार चळवळ ही भारताच्या इतिहासातील पहिली खरीखुरी जनमोहीम (Mass movement) ठरली, जिने ब्रिटिशांच्या नैतिक व आर्थिक वर्चसाला सुरुंग लावला.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / डॉ. स. शि. गाठाळ]",
+        "en": "(1920-22): Both statements are correct. Non-Cooperation was India's first truly nationwide mass movement, instilling political fear and moral crisis within the colonial administration.\n\n"
+      }
+    },
+    {
+      "id": 24,
+      "question": {
+        "mr": "स्वातंत्र्यपूर्व काळातील 'भारतीय राष्ट्रीय चळवळीत' असहकार आणि खिलाफत आंदोलनाचे ऐतिहासिक महत्त्व काय मानले जाते?",
+        "en": "What is regarded as the historic significance of the Non-Cooperation and Khilafat amalgamation in the freedom struggle?"
+      },
+      "options": [
+        { "mr": "भारतीय स्वातंत्र्यलढ्याला मवाळ चौकटीतून बाहेर काढून 'जनआंदोलनाचे' (Mass Movement) स्वरूप देणे", "en": "Transforming the national struggle from elite constitutionalism into a vibrant, fearless mass movement" },
+        { "mr": "ब्रिटिशांच्या सैन्यात भरती होणे", "en": "Enlisting in the British army" },
+        { "mr": "फक्त कायदेमंडळात निवडणूक लढवणे", "en": "Contesting only council elections" },
+        { "mr": "धार्मिक राजकारण पूर्णपणे संपवणे", "en": "Permanently ending religious politics" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९२०-२२): या आंदोलनाने भारतीयांच्या मनातून ब्रिटिश भीती पूर्णपणे काढून टाकली आणि सामान्य जनतेला स्वातंत्र्यलढ्याच्या केंद्रस्थानी आणले.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1920-22): The movement's greatest achievement was exorcising the fear of British power from the minds of ordinary Indians, making mass anti-imperialist struggle a permanent reality.\n\n"
+      }
+    },
+    {
+      "id": 25,
+      "question": {
+        "mr": "असहकार चळवळीच्या काळात (१९२०-२२) ब्रिटीश सरकारने आंदोलनाला दडपण्यासाठी कोणत्या दडपशाहीचा वापर केला होता?",
+        "en": "How did the colonial government attempt to suppress the Non-Cooperation Movement between 1920 and 1922?"
+      },
+      "options": [
+        { "mr": "सभाबंदी, वृत्तपत्रांवर सेन्सॉरशिप आणि हजारो कार्यकर्त्यांना व नेत्यांना तुरुंगात डांबणे", "en": "Banning public meetings, censoring newspapers, and imprisoning tens of thousands of nationalist volunteers" },
+        { "mr": "भारताला तात्काळ स्वातंत्र्य देणे", "en": "Granting immediate independence" },
+        { "mr": "सर्व मागण्या मान्य करणे", "en": "Accepting all nationalist demands" },
+        { "mr": "काँग्रेसवर कधीही बंदी न घालणे", "en": "Never banning Congress bodies" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९२०-२२): ब्रिटिशांनी काँग्रेस आणि खिलाफत स्वयंसेवक संघांना बेकायदेशीर घोषित केले, जाहीर सभांवर बंदी घातली आणि गांधीजी वगळता जवळपास सर्व प्रमुख नेत्यांना (३०,००० हून अधिक) तुरुंगात टाकले.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1920-22): The colonial state unleashed brutal repression, declaring volunteer corps illegal, censoring the press, and arresting over 30,000 political prisoners across the country.\n\n"
+      }
+    }
+  ]
+}

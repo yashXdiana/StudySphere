@@ -1,0 +1,464 @@
+{
+  "testId": "p-hist-07-t8",
+  "title": {
+    "mr": "भारतीय राष्ट्रीय चळवळ (भारत छोडो ते आझाद हिंद फौज) — सराव 8",
+    "en": "Indian National Movement (Quit India to INA) — Practice Test 8"
+  },
+  "durationMinutes": 20,
+  "marksPerQuestion": 1,
+  "negativeMarking": 0.25,
+  "totalMarks": 25,
+  "difficulty": "मध्यम ते काठिण्य",
+  "questions": [
+    {
+      "id": 1,
+      "question": {
+        "mr": "ऑगस्ट १९४२ मध्ये मुंबईत 'भारत छोडो' (Quit India) प्रस्ताव मांडणारे प्रमुख नेते कोण होते आणि त्याचे अनुमोदन कोणी केले होते?",
+        "en": "Who moved the historic 'Quit India' resolution at the Bombay AICC session in August 1942, and who seconded it?"
+      },
+      "options": [
+        { "mr": "प्रस्ताव मांडणारे: जवाहरलाल नेहरू, अनुमोदन करणारे: सरदार वल्लभभाई पटेल", "en": "Moved by: Jawaharlal Nehru; Seconded by: Sardar Vallabhbhai Patel" },
+        { "mr": "प्रस्ताव मांडणारे: गांधीजी, अनुमोदन करणारे: नेहरू", "en": "Moved by: Gandhi; Seconded by: Nehru" },
+        { "mr": "प्रस्ताव मांडणारे: मौलाना आजाद, अनुमोदन करणारे: सुभाषचंद्र बोस", "en": "Moved by: Maulana Azad; Seconded by: Subhas Bose" },
+        { "mr": "प्रस्ताव मांडणारे: अच्युतराव पटवर्धन, अनुमोदन करणारे: जयप्रकाश नारायण", "en": "Moved by: Achyutrao Patwardhan; Seconded by: J.P. Narayan" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९४२): ८ ऑगस्ट १९४२ रोजी मुंबईच्या गोवालिया टँक मैदानावर पंडित जवाहरलाल नेहरू यांनी भारत छोडोचा मूळ प्रस्ताव मांडला आणि सरदार वल्लभभाई पटेल यांनी त्याचे जोरदार 'अनुमोदन' (Second) केले.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / डॉ. स. शि. गाठाळ]",
+        "en": "(1942): Jawaharlal Nehru moved the historic Quit India resolution at the All-India Congress Committee session in Bombay, which was seconded by Sardar Vallabhbhai Patel.\n\n"
+      }
+    },
+    {
+      "id": 2,
+      "question": {
+        "mr": "भारत छोडो आंदोलनादरम्यान (१९४२) देशात कोणत्या ठिकाणी सर्वात दीर्घकाळ टिकणारे आणि प्रभावी 'प्रति सरकार' (सातारा प्रति सरकार) कार्यरत राहिले?",
+        "en": "Which parallel government established during the 1942 Quit India movement remained active for the longest duration, particularly in Maharashtra?"
+      },
+      "options": [
+        { "mr": "सातारा (महाराष्ट्र - क्रांतीसिंह नाना पाटील)", "en": "Satara (Maharashtra - Krantisinh Nana Patil)" },
+        { "mr": "बलिया (उत्तर प्रदेश)", "en": "Ballia (Uttar Pradesh)" },
+        { "mr": "ताम्रलुप्त (बंगाल)", "en": "Tamluk (Bengal)" },
+        { "mr": "तालचर (ओडिशा)", "en": "Talcher (Orissa)" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९४३-१९४५): साताऱ्यात क्रांतीसिंह नाना पाटील आणि अच्युतराव पटवर्धन यांच्या नेतृत्वाखाली स्थापन झालेले 'प्रति सरकार' हे भारताच्या इतिहासात सर्वात दीर्घकाळ (१९४३ ते १९४५ नंतरपर्यंत) अत्यंत प्रभावीपणे टिकणारे समांतर सरकार होते.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / समाधान महाजन]",
+        "en": "(1943-1945): The 'Prati Sarkar' in Satara, led by Krantisinh Nana Patil and local activists, was the most enduring and well-administered parallel government during the Quit India movement.\n\n"
+      }
+    },
+    {
+      "id": 3,
+      "question": {
+        "mr": "भारत छोडो आंदोलनाच्या काळात अमेरिकेचे राष्ट्राध्यक्ष फ्रँकलिन रूझवेलट यांनी ब्रिटीश सरकारवर काय दबाव आणला होता?",
+        "en": "What diplomatic pressure did US President Franklin D. Roosevelt exert on the British government regarding India during the Quit India crisis?"
+      },
+      "options": [
+        { "mr": "भारतीय नेत्यांच्या मागण्या गांभीर्याने घेऊन त्यांना राजकीय सत्ता हस्तांतरित करण्यासाठी ब्रिटिशांना भाग पाडणे", "en": "Urging Churchill to make political concessions and meet Indian national aspirations" },
+        { "mr": "भारतावर पूर्ण लष्करी कब्जा करणे", "en": "To take full military control of India" },
+        { "mr": "काँग्रेस पक्षावर तात्काळ बंदी घालणे", "en": "To ban the Congress party permanently" },
+        { "mr": "भारताला युद्धात निष्प्रभ करणे", "en": "To neutralize India in the war" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९४२): अमेरिकेचे राष्ट्राध्यक्ष रूझवेलट आणि चीनचे म्हासंचालक च्यांग काई शेक यांनी विन्स्टन चर्चिल यांच्यावर दबाव आणला होता की, युद्ध जिंकण्यासाठी भारतीय जनतेचा आणि नेत्यांचा सहभाग मिळवणे अत्यंत आवश्यक आहे, म्हणूनच त्यांनी क्रिप्स मिशन पाठवले होते.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1942): Under pressure from US President Roosevelt and Chinese leader Chiang Kai-shek to secure Indian wartime cooperation, Churchill faced intense Allied prompting to resolve the Indian deadlock.\n\n"
+      }
+    },
+    {
+      "id": 4,
+      "question": {
+        "mr": "सुभाषचंद्र बोस यांनी जानेवारी १९४१ मध्ये ब्रिटिशांच्या नजरकैदेतून निसटून जर्मनीला जाण्यासाठी कोणती गुप्त वेषभूषा आणि नाव धारण केले होते?",
+        "en": "What alias and disguise did Subhas Chandra Bose adopt when he famously escaped from British surveillance in Calcutta in January 1941?"
+      },
+      "options": [
+        { "mr": "जियाउद्दीन (Ziauddin) या नावाचा उत्तर भारतीय बीमा एजंट / मुसाफिर", "en": "Ziauddin, a North Indian insurance agent/traveler" },
+        { "mr": "एक इंग्रजी अधिकारी", "en": "A British officer" },
+        { "mr": "एक पठाण व्यापारी", "en": "A Pathan merchant" },
+        { "mr": "एक बौद्ध भिक्षू", "en": "A Buddhist monk" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९४१): जानेवारी १९४१ च्या सुमारास कलकत्त्यातील एलगिन रोडवरील घरातून निसटताना सुभाषचंद्र बोस यांनी 'जियाउद्दीन' हे नाव धारण केले आणि विमा कंपनीचा एजंट असल्याचे भासवत उत्तर भारतीय मुसाफिराचा वेष परिधान केला होता.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1941): Escaping his Elgin Road residence in Calcutta, Bose disguised himself as a northern Indian insurance agent named 'Ziauddin' to slip past British guards.\n\n"
+      }
+    },
+    {
+      "id": 5,
+      "question": {
+        "mr": "जर्मनीमध्ये असताना सुभाषचंद्र बोस यांनी 'आझाद हिंद रेडिओ' (Azad Hind Radio) वरून कोणत्या देशातून ब्रिटीशविरोधी ब्रॉडकास्ट सुरू केले होते?",
+        "en": "From which European city did Subhas Chandra Bose broadcast regular anti-British nationalist messages via Azad Hind Radio?"
+      },
+      "options": [
+        { "mr": "बर्लिन (Berlin, Germany)", "en": "Berlin, Germany" },
+        { "mr": "पॅरिस (फ्रान्स)", "en": "Paris, France" },
+        { "mr": "रोम (इटली)", "en": "Rome, Italy" },
+        { "mr": "मॉस्को (रशिया)", "en": "Moscow, Russia" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९४१-१९४२): जर्मनीमध्ये असताना सुभाषबाबूंनी 'बर्लिन' येथे आझाद हिंद रेडिओची स्थापना केली आणि तिथून इंग्रज व मित्र राष्ट्रांच्या विरोधात नियमित भाषणे प्रसारित करत भारताच्या स्वातंत्र्याची हाक दिली.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1941-1942): While operating from Berlin, Bose launched Azad Hind Radio, broadcasting fiery anti-imperialist speeches and nationalist propaganda to listeners in India.\n\n"
+      }
+    },
+    {
+      "id": 6,
+      "question": {
+        "mr": "जपानच्या सहकार्याने आग्नेय आशियात (सिंगापूर/बँकॉक) 'आझाद हिंद फौजेची' (INA) पुनर्रचना करताना नेताजींनी 'सुभाष ब्रिगेड', 'गांधी ब्रिगेड', 'नेहरू ब्रिगेड' शिवाय महिलांसाठी कोणती विशेष रेजिमेंट स्थापन केली होती?",
+        "en": "Alongside male combat brigades named after national figures, what was the name of the special all-women brigade raised in the INA under Netaji?"
+      },
+      "options": [
+        { "mr": "झांसीची राणी रेजिमेंट (Rani of Jhansi Regiment)", "en": "Rani of Jhansi Regiment" },
+        { "mr": "किरकिरी वाहिनी", "en": "Kasturba Brigade" },
+        { "mr": "सरोजिनी दल", "en": "Sarojini Battalion" },
+        { "mr": "आझाद महिला रेजिमेंट", "en": "Azad Women Regiment" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९४३): आझाद हिंद फौजेच्या सैनिकांमध्ये देशभक्ती निर्माण करण्यासाठी त्यांनी गांधी, नेहरू व सुभाष ब्रिगेड सोबतच कॅप्टन लक्ष्मी सहगल यांच्या नेतृत्वाखाली 'झांसीची राणी रेजिमेंट' ही महिलांची लढाऊ तुकडी तयार केली.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / डॉ. स. शि. गाठाळ]",
+        "en": "(1943): Netaji organized male combat units named Gandhi, Nehru, and Subhas brigades, and famously formed the 'Rani of Jhansi Regiment' as an elite all-women combat force.\n\n"
+      }
+    },
+    {
+      "id": 7,
+      "question": {
+        "mr": "आझाद हिंद सरकारने (Provisional Government of Free India) २१ ऑक्टोबर १९४३ रोजी सिंगापूर येथे शपथ घेतली, त्याचे सर्वोच्च कमांडर (Supreme Commander) कोण होते?",
+        "en": "Who assumed the role of Head of State and Supreme Commander of the Azad Hind Government (Arzi Hukumat-e-Azad Hind) proclaimed in Singapore in October 1943?"
+      },
+      "options": [
+        { "mr": "नेताजी सुभाषचंद्र बोस (Netaji Subhas Chandra Bose)", "en": "Netaji Subhas Chandra Bose" },
+        { "mr": "रासबिहारी बोस", "en": "Rash Behari Bose" },
+        { "mr": "कॅप्टन मोहन सिंग", "en": "Captain Mohan Singh" },
+        { "mr": "कॅप्टन लक्ष्मी सहगल", "en": "Captain Lakshmi Sahgal" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९४३): २१ ऑक्टोबर १९४३ रोजी सिंगापूर येथे नेताजी सुभाषचंद्र बोस यांनी 'आझाद हिंद सरकारच्या' (स्वतंत्र भारताचे हंगामी सरकार) स्थापनेची घोषणा केली आणि ते स्वतः या सरकारचे पंतप्रधान, परराष्ट्र मंत्री व फौजेचे सर्वोच्च कमांडर बनले.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1943): On October 21, 1943, Netaji proclaimed the Provisional Government of Free India in Singapore, assuming the portfolios of Head of State, Prime Minister, and Supreme Commander of the INA.\n\n"
+      }
+    },
+    {
+      "id": 8,
+      "question": {
+        "mr": "आझाद हिंद फौजेच्या (INA) सैनिकांनी जपानच्या फौजांसोबत मिळून ब्रिटिश सैन्याविरुद्ध मोहीम काढत भारताच्या हद्दीत मुख्यत्वे कोणत्या प्रांतात राष्ट्रीय ध्वज फडकवला होता?",
+        "en": "In which region of northeastern India did the INA, alongside Japanese forces, successfully capture territory and hoist the Indian tricolor flag in 1944?"
+      },
+      "options": [
+        { "mr": "मणिपूर (मोइरंग - Moirang, Manipur)", "en": "Moirang, Manipur" },
+        { "mr": "आसाममधील गुवाहाटी", "en": "Guwahati, Assam" },
+        { "mr": "त्रिपुरातील अगरतळा", "en": "Agartala, Tripura" },
+        { "mr": "नागालँडमधील कोहिमा", "en": "Kohima, Nagaland" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९४४): मार्च १९४४ मध्ये आझाद हिंद फौजेने इम्फाळ व कोहिमावर आक्रमण केले आणि मार्च १९४४ मध्ये मणिपूरमधील 'मोइरंग' (Moirang) येथे भारताचा तिरंगा ध्वज फडकवला. कर्नल शौकत मलिक यांनी इथे पहिला झेंडा फडकवला होता.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1944): The INA spearheaded a heroic military campaign into Indian territory, successfully capturing Moirang in Manipur where Colonel Shaukat Malik hoisted the Indian tricolor in March 1944.\n\n"
+      }
+    },
+    {
+      "id": 9,
+      "question": {
+        "mr": "आझाद हिंद फौजेचे (INA) सैनिक युद्धात पकडल्यावर त्यांच्यावर नोव्हेंबर १९४५ मध्ये कुठे ऐतिहासिक 'लाल किल्ला खटला' (Red Fort Trials) चालवला गेला?",
+        "en": "Where were the historic court-martial trials of captured INA officers (Red Fort Trials) conducted in late 1945?"
+      },
+      "options": [
+        { "mr": "दिल्लीचा लाल किल्ला (Red Fort, Delhi)", "en": "Red Fort, Delhi" },
+        { "mr": "कलकत्त्याचा किल्ला", "en": "Fort William, Calcutta" },
+        { "mr": "मुंबईचा किल्ला", "en": "Bombay Castle" },
+        { "mr": "लाहोरचा किल्ला", "en": "Lahore Fort" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९४५-४६): ब्रिटिशांनी जपानच्या पराभवानंतर पकडलेल्या INA च्या सैनिकांवर दिल्लीच्या लाल किल्ल्यात (Red Fort) देशद्रोहाचे सार्वजनिक खटले चालवले, ज्यामुळे संपूर्ण भारतभर संतापाची व देशक्तीची प्रचंड लाट उसळली.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / डॉ. स. शि. गाठाळ]",
+        "en": "(1945-46): The British colonial government committed a severe political blunder by holding public court-martial trials of INA prisoners at the Red Fort in Delhi, igniting nationwide fury.\n\n"
+      }
+    },
+    {
+      "id": 10,
+      "question": {
+        "mr": "लाल किल्ल्यावरील खटल्यात (१९४५-४६) आझाद हिंद फौजेच्या मुख्य आरोपी सैनिकांमध्ये खालीलपैकी कोणाचा समावेश होता?",
+        "en": "Who were the primary INA officers whose joint court-martial trial at the Red Fort became a national cause célèbre in 1945-46?"
+      },
+      "options": [
+        { "mr": "शहनाज खान, प्रेम सहगल आणि गुरबक्ष सिंग ढिल्लों (Shah Nawaz Khan, Prem Sahgal, and Gurbakhsh Singh Dhillon)", "en": "Shah Nawaz Khan, Prem Sahgal, and Gurbakhsh Singh Dhillon" },
+        { "mr": "भगत सिंग, राजगुरु आणि सुखदेव", "en": "Bhagat Singh, Rajguru, and Sukhdev" },
+        { "mr": "सुभाषचंद्र बोस, मोहन सिंग आणि रासबिहारी बोस", "en": "Subhas Bose, Mohan Singh, and Rash Behari Bose" },
+        { "mr": "चाफेकर बंधू", "en": "Chapekar brothers" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९४५-४६): लाल किल्ल्यातील खटल्यात शाहनवाज खान (मुस्लिम), प्रेम सहगल (हिंदू) आणि गुरबक्ष सिंग ढिल्लों (सिख) या वेगवेगळ्या धर्मांच्या तीन अधिकाऱ्यांवर खटला चालवला गेला, जे INA च्या सर्वसमावेशक राष्ट्रवादाचे प्रतीक बनले.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1945-46): The joint trial featured a Hindu (Prem Sahgal), a Muslim (Shah Nawaz Khan), and a Sikh (Gurbakhsh Singh Dhillon), powerfully symbolizing the secular, pan-Indian ethos of the INA.\n\n"
+      }
+    },
+    {
+      "id": 11,
+      "question": {
+        "mr": "फेब्रुवारी १९४६ मध्ये मुंबईत ब्रिटीश नौदलाच्या 'एचएमआयएस तलवार' (HMIS Talwar) जहाजावर खलाशांनी पुकारलेल्या बंडाला (RIN Mutiny) काँग्रेसच्या कोणत्या नेत्याने उपोषण व हिंसेपासून दूर राहत शांतता राखण्याचे आवाहन केले होते?",
+        "en": "During the Royal Indian Navy (RIN) mutiny in Bombay (1946), which national leader played a crucial role in counseling the mutineers to surrender peacefully?"
+      },
+      "options": [
+        { "mr": "सरदार वल्लभभाई पटेल (Sardar Vallabhbhai Patel)", "en": "Sardar Vallabhbhai Patel" },
+        { "mr": "महात्मा गांधी", "en": "Mahatma Gandhi" },
+        { "mr": "जवाहरलाल नेहरू", "en": "Jawaharlal Nehru" },
+        { "mr": "सुभाषचंद्र बोस", "en": "Subhas Bose" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९४६): खलाशांचे बंड तीव्र होत असताना आणि ब्रिटिशांनी लष्करी कारवाईची धमकी दिल्यावर, सरदार वल्लभभाई पटेलांनी मध्यस्थी करत खलाशांना शांततापूर्ण मार्गाने आत्मसमर्पण करण्याची विनंती केली, जेणेकरून मोठा रक्तपात टळू शकेल.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / समाधान महाजन]",
+        "en": "(1946): Sardar Vallabhbhai Patel intervened decisively during the naval mutiny, persuading the ratings to surrender with guarantees of fair treatment, thereby averting a military bloodbath.\n\n"
+      }
+    },
+    {
+      "id": 12,
+      "question": {
+        "mr": "कॅबिनेट मिशन (Cabinet Mission) मार्च १९४६ मध्ये भारतात आले तेव्हा त्यात कोणते तीन ब्रिटीश मंत्री सदस्य होते?",
+        "en": "Which three British Cabinet ministers constituted the Cabinet Mission that arrived in India in March 1946?"
+      },
+      "options": [
+        { "mr": "पॅथ्रिक लॉरेन्स, सर स्टॅफर्ड क्रिप्स आणि ए. व्ही. अलेक्झांडर (Pethick-Lawrence, Stafford Cripps, and A.V. Alexander)", "en": "Pethick-Lawrence, Stafford Cripps, and A.V. Alexander" },
+        { "mr": "जॉन सायमन, क्लेमेंट एटली आणि चर्चिल", "en": "John Simon, Clement Attlee, and Churchill" },
+        { "mr": "लॉर्ड माऊंटबॅटन, वेव्हेल आणि लिनलिथगो", "en": "Lord Mountbatten, Wavell, and Linlithgow" },
+        { "mr": "रमसे मॅकडोनाल्ड, बर्कनहेड आणि बेझंट", "en": "Ramsay MacDonald, Birkenhead, and Besant" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९४६): कॅबिनेट मिशनमध्ये पॅथ्रिक लॉरेन्स (भारतमंत्री - अध्यक्ष), सर स्टॅफर्ड क्रिप्स (व्यापार मंडळ अध्यक्ष) आणि ए. व्ही. अलेक्झांडर (अ‍ॅडमिरल लॉर्ड फर्स्ट) हे तीन ब्रिटिश मंत्री सदस्य होते.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / एम. लक्ष्मीकांत]",
+        "en": "(1946): The Cabinet Mission comprised Lord Pethick-Lawrence (Secretary of State), Sir Stafford Cripps (President of the Board of Trade), and A.V. Alexander (First Lord of the Admiralty).\n\n"
+      }
+    },
+    {
+      "id": 13,
+      "question": {
+        "mr": "खालील विधाने विचारात घ्या:\nअ) कॅबिनेट मिशन योजनेने पाकिस्तानची स्वतंत्र व सार्वभौम मागणी फेटाळून लावली होती.\nब) या योजनेत केंद्र सरकारकडे केवळ परराष्ट्र व्यवहार, संरक्षण आणि संचार (Foreign Affairs, Defence and Communications) हे तीन विषय ठेवण्यात आले होते.\nवरीलपैकी कोणते/ती विधान/ने बरोबर आहेत?",
+        "en": "Consider the following statements:\nA) The Cabinet Mission Plan explicitly rejected the sovereign demand for Pakistan.\nB) It vested the central union government with jurisdiction strictly over Foreign Affairs, Defence, and Communications.\nWhich of the above statement(s) is/are correct?"
+      },
+      "options": [
+        { "mr": "फक्त अ", "en": "Only A" },
+        { "mr": "फक्त ब", "en": "Only B" },
+        { "mr": "अ आणि ब दोन्ही", "en": "Both A and B" },
+        { "mr": "दोन्ही नाहीत", "en": "Neither A nor B" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९४६): दोन्ही विधाने अगदी बरोबर आहेत. कॅबिनेट मिशनने पाकिस्तानची मागणी अमान्य केली आणि केंद्राकडे फक्त परराष्ट्र, संरक्षण व दळणवळण ठेवून उर्वरित सर्व अधिकार प्रांतांना देण्याचे ठरवले.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / डॉ. स. शि. गाठाळ]",
+        "en": "(1946): Both statements are correct. The Cabinet Mission rejected Pakistan while proposing a decentralized federation where the Centre controlled only Foreign Affairs, Defence, and Communications.\n\n"
+      }
+    },
+    {
+      "id": 14,
+      "question": {
+        "mr": "मुस्लिम लीगने १६ ऑगस्ट १९४६ रोजी पाळलेल्या 'प्रत्यक्ष कृती दिनामुळे' (Direct Action Day) भारताच्या राजकारणावर काय परिणाम झाला?",
+        "en": "What was the immediate political fallout of the Muslim League's observance of 'Direct Action Day' on August 16, 1946?"
+      },
+      "options": [
+        { "mr": "देशभरात भीषण जातीय दंगली उसळल्या आणि फाळणी अटळ बनली", "en": "Catalyzed catastrophic communal violence, making the partition of India virtually inevitable" },
+        { "mr": "काँग्रेसने तात्काळ पाकिस्तानची मागणी मान्य केली", "en": "Congress immediately accepted Pakistan" },
+        { "mr": "ब्रिटिशांनी भारताला तात्काळ स्वतंत्र केले", "en": "The British granted immediate independence" },
+        { "mr": "हिंदू-मुस्लिम ऐक्य अधिक दृढ झाले", "en": "Hindu-Muslim unity grew stronger" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९४६): थेट कृती दिनामुळे कलकत्ता आणि इतर राज्यांत रक्तरंजित दंगली झाल्या. यामुळे अखंड भारताची शक्यता मावळली आणि ब्रिटिशांना व काँग्रेसला फाळणीशिवाय पर्याय उरला नाही.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1946): Direct Action Day unleashed horrific communal carnage, shattering any remaining prospect of a peaceful, united transfer of power and sealing the fate of partition.\n\n"
+      }
+    },
+    {
+      "id": 15,
+      "question": {
+        "mr": "डिसेंबर १९४६ मध्ये स्थापन झालेल्या 'संविधान सभेचे' (Constituent Assembly) पहिले हंगामी अध्यक्ष (Interim President) म्हणून कोणाची निवड झाली होती?",
+        "en": "Who served as the temporary/interim President of the newly convened Constituent Assembly in December 1946?"
+      },
+      "options": [
+        { "mr": "डॉ. सच्चिदानंद सिन्हा (Dr. Sachchidananda Sinha - सर्वात ज्येष्ठ सदस्य)", "en": "Dr. Sachchidananda Sinha (Oldest member)" },
+        { "mr": "डॉ. राजेंद्र प्रसाद", "en": "Dr. Rajendra Prasad" },
+        { "mr": "डॉ. बाबासाहेब आंबेडकर", "en": "Dr. B.R. Ambedkar" },
+        { "mr": "पंडित जवाहरलाल नेहरू", "en": "Jawaharlal Nehru" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९४६): ९ डिसेंबर १९४६ रोजी संविधान सभेची पहिली बैठक भरली. फ्रान्सच्या पद्धतीनुसार सभेतील सर्वात ज्येष्ठ सदस्य डॉ. सच्चिदानंद सिन्हा यांना 'हंगामी अध्यक्ष' (Interim President) बनवले गेले (पुढे स्थायी अध्यक्ष म्हणून डॉ. राजेंद्र प्रसाद निवडले गेले).\n\n[संदर्भ: एम. लक्ष्मीकांत / स्पेक्ट्रम]",
+        "en": "(1946): Following French practice, Dr. Sachchidananda Sinha, the oldest member of the Constituent Assembly, was appointed as its temporary interim President on Dec 9, 1946.\n\n"
+      }
+    },
+    {
+      "id": 16,
+      "question": {
+        "mr": "ब्रिटिश पंतप्रधान क्लेमेंट एटली यांनी २० फेब्रुवारी १९४७ रोजी लंडनमध्ये केलेल्या ऐतिहासिक घोषणेत भारताला सत्ता हस्तांतरित करण्याची अंतिम तारीख कोणती घोषित केली होती?",
+        "en": "What absolute target date for British withdrawal and transfer of power to Indian hands was announced by Prime Minister Clement Attlee on February 20, 1947?"
+      },
+      "options": [
+        { "mr": "३० जून १९४८ पूर्वी (Not later than June 30, 1948)", "en": "Not later than June 30, 1948" },
+        { "mr": "१५ ऑगस्ट १९४७", "en": "August 15, 1947" },
+        { "mr": "२६ जानेवारी १९५०", "en": "January 26, 1950" },
+        { "mr": "३१ डिसेंबर १९४९", "en": "December 31, 1949" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(फेब्रुवारी १९४७): एटलींच्या घोषणेनुसार ३० जून १९४८ ही ब्रिटिशांच्या भारत सोडण्याची शेवटची तारीख ठरवली गेली होती, जेणेकरून भारतीय नेत्यांवर लवकरात लवकर निर्णय घेण्यासाठी दबाव निर्माण होईल.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(February 1947): Attlee's historic announcement fixed a firm deadline of June 30, 1948, for the final withdrawal of British rule from India, compelling political reconciliation.\n\n"
+      }
+    },
+    {
+      "id": 17,
+      "question": {
+        "mr": "भारताचे अंतिम वायसराय म्हणून लॉर्ड माऊंटबॅटन यांनी मार्च १९४७ मध्ये पदभार स्वीकारला. त्यांनी सत्तेचे हस्तांतरण करण्यासाठी कोणता नवीन आणि जलद मार्ग सुचवला?",
+        "en": "What expedited strategy did Lord Mountbatten adopt upon becoming Viceroy in March 1947 to resolve the Indian political impasse?"
+      },
+      "options": [
+        { "mr": "फाळणीची योजना जलद करणे आणि ठरलेल्या वेळेआधीच (१९४७ मध्येच) स्वातंत्र्य व विभागणी करणे", "en": "Advancing the date of transfer of power and fast-tracking the partition of India in 1947" },
+        { "mr": "भारतात आणखी २० वर्षे ब्रिटीश फौज ठेवणे", "en": "Retaining British troops in India for 20 years" },
+        { "mr": "मुस्लिम लीगवर पूर्ण बंदी घालणे", "en": "Banning the Muslim League outright" },
+        { "mr": "सर्व सत्ता संस्थानिकांना देणे", "en": "Handing power exclusively to princes" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९४७): माऊंटबॅटन यांनी परिस्थितीचे गांभीर्य ओळखत जून १९४८ ची वाट न पाहता फाळणीची प्रक्रिया अत्यंत वेगाने पूर्ण करत १५ ऑगस्ट १९४७ रोजीच स्वातंत्र्य व फाळणी जाहीर केली (माऊंटबॅटन योजना).\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / डॉ. स. शि. गाठाळ]",
+        "en": "(1947): Realizing that communal strife was spiraling out of control, Mountbatten drastically advanced the transfer date, engineering partition and independence for August 1947.\n\n"
+      }
+    },
+    {
+      "id": 18,
+      "question": {
+        "mr": "भारतीय स्वातंत्र्य कायदा १९४७ (Indian Independence Act 1947) ला ब्रिटीश संसदेने आणि राजाने अधिकृत मंजुरी कधी दिली?",
+        "en": "When did the British Parliament enact the Indian Independence Act 1947, receiving Royal Assent?"
+      },
+      "options": [
+        { "mr": "जुलै १९४७ (July 1947 / Royal Assent on July 18, 1947)", "en": "July 1947 (Royal Assent on July 18, 1947)" },
+        { "mr": "जून १९४७", "en": "June 1947" },
+        { "mr": "ऑगस्ट १९४७", "en": "August 1947" },
+        { "mr": "मार्च १९४७", "en": "March 1947" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(जुलै १९४७): माऊंटबॅटन योजनेवर आधारीत 'भारतीय स्वातंत्र्य कायदा १९४७' ब्रिटीश संसदेत मांडला गेला आणि ५ जुलै रोजी कॉन्समध्ये आणि १८ जुलै १९४७ रोजी राजाची मंजुरी (Royal Assent) मिळून तो कायदा बनला.\n\n[संदर्भ: एम. लक्ष्मीकांत / स्पेक्ट्रम]",
+        "en": "(July 1947): The Indian Independence Bill, based on the Mountbatten Plan, was swiftly passed by the British Parliament and received Royal Assent on July 18, 1947.\n\n"
+      }
+    },
+    {
+      "id": 19,
+      "question": {
+        "mr": "खालील विधाने विचारात घ्या:\nअ) १५ ऑगस्ट १९४७ च्या मध्यरात्री भारताचे पहिले पंतप्रधान म्हणून पंडित जवाहरलाल नेहरू यांनी 'Tryst with Destiny' हे ऐतिहासिक भाषण दिले.\nब) स्वतंत्र पाकिस्तानचे पहिले पंतप्रधान म्हणून कियाकत अली खान (Liaquat Ali Khan) यांनी शपथ घेतली, तर जिना हे राज्यपाल (Governor-General) झाले.\nवरीलपैकी कोणते/ती विधान/ने बरोबर आहेत?",
+        "en": "Consider the following statements:\nA) At the stroke of midnight on August 14-15, 1947, Jawaharlal Nehru delivered his iconic 'Tryst with Destiny' speech as India's first Prime Minister.\nB) Liaquat Ali Khan became the first Prime Minister of independent Pakistan, while M.A. Jinnah became its Governor-General.\nWhich of the above statement(s) is/are correct?"
+      },
+      "options": [
+        { "mr": "फक्त अ", "en": "Only A" },
+        { "mr": "फक्त ब", "en": "Only B" },
+        { "mr": "अ आणि ब दोन्ही", "en": "Both A and B" },
+        { "mr": "दोन्ही नाहीत", "en": "Neither A nor B" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "(१९४७): दोन्ही विधाने अगदी बरोबर आहेत. नेहरूंनी मध्यरात्री ऐतिहासिक भाषण दिले आणि पाकिस्तानात जिना गव्हर्नर जनरल झाले तर लियाकत अली खान पंतप्रधान झाले.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / डॉ. स. शि. गाठाळ]",
+        "en": "(1947): Both statements are correct. Nehru's unforgettable 'Tryst with Destiny' speech heralded India's birth, while Jinnah and Liaquat Ali Khan assumed top posts in Pakistan.\n\n"
+      }
+    },
+    {
+      "id": 20,
+      "question": {
+        "mr": "स्वातंत्र्यप्राप्तीनंतर (१९४७) भारतातील ५०० हून अधिक स्वदेशी संस्थानांचे (Princely States) भारतात विलीनीकरण करण्याचे अवघड शिवधनुष्य कोणत्या नेत्याने लीलया पेले होते?",
+        "en": "Which national leader successfully engineered the political integration of over 500 princely states into the Union of India post-independence?"
+      },
+      "options": [
+        { "mr": "सरदार वल्लभभाई पटेल (Sardar Vallabhbhai Patel - गृहमंत्री व व्ही. पी. मेनन यांच्या सहकार्याने)", "en": "Sardar Vallabhbhai Patel (with V.P. Menon)" },
+        { "mr": "जवाहरलाल नेहरू", "en": "Jawaharlal Nehru" },
+        { "mr": "महात्मा गांधी", "en": "Mahatma Gandhi" },
+        { "mr": "चक्रवर्ती राजगोपालाचारी", "en": "C. Rajagopalachari" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९४७-१९४८): भारताचे पहिले गृहमंत्री 'सरदार वल्लभभाई पटेल' आणि त्यांचे सचिव व्ही. पी. मेनन यांनी आपल्या मुत्सद्देगिरीच्या जोरावर जुन्या संस्थानिकांचे विलीनीकरण करत अखंड भारताची निर्मिती केली.\n\n[संदर्भ: एम. लक्ष्मीकांत / स्पेक्ट्रम]",
+        "en": "(1947-1948): As India's first Home Minister, Sardar Vallabhbhai Patel, ably assisted by V.P. Menon, orchestrated the historic integration of princely states into a unified Indian nation.\n\n"
+      }
+    },
+    {
+      "id": 21,
+      "question": {
+        "mr": "भारतीय राष्ट्रीय चळवळीत 'उग्र जहाल काळ' (Extremist Era - १९०५-१९१९) आणि 'गांधीयुग' (Gandhian Era - १९१९-१९४७) यांच्यातील कार्यपद्धतीचा मुख्य फरक काय होता?",
+        "en": "What was the fundamental methodological difference between the Militant Nationalist (Extremist) and Gandhian phases of the freedom struggle?"
+      },
+      "options": [
+        { "mr": "जहाल काळात शहरी मध्यमवर्ग व बहिष्कार आंदोलनावर भर होता, तर गांधीयुगात ग्रामीण शेतकरी व सर्वसामान्यांच्या सहभागातून व्यापक 'जनआंदोलनांचा' (Mass movements) पाया रचला गेला", "en": "Extremists focused on urban youth and boycotts, whereas the Gandhian era forged a broad-based rural peasant mass movement centered on non-violence" },
+        { "mr": "गांधीजींनी नेहमी हिंसेचा पुरस्कार केला", "en": "Gandhi always championed violence" },
+        { "mr": "जहाल नेत्यांनी कधीही स्वदेशीचा नारा दिला नाही", "en": "Extremists never used Swadeshi" },
+        { "mr": "दोन्ही काळामध्ये कोणताच फरक नव्हता", "en": "There was no difference at all" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९०५-१९४७): जहाल काळात स्वदेशी व बहिष्काराद्वारे सुशिक्षितांना संघटित केले गेले, तर गांधीजींनी सत्य, अहिंसा आणि रचनात्मक कामांच्या जोरावर खेडोपाड्यातील तळागाळातील शेतकऱ्यांना व सर्वसामान्यांना स्वातंत्र्यलढ्याच्या प्रवाहात आणले.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1905-1947): While the Extremists mobilized urban middle classes, Gandhi revolutionized the struggle by embedding it deeply within the rural peasantry through Satyagraha and constructive work.\n\n"
+      }
+    },
+    {
+      "id": 22,
+      "question": {
+        "mr": "खालील विधाने विचारात घ्या:\nअ) भारतीय राष्ट्रीय चळवळीने महिलांना चूल आणि मूल यांसारख्या चौकटीतून बाहेर काढून राजकारणाच्या व सत्याग्रहाच्या केंद्रस्थानी आणले.\nब) सरोजिनी नायडू, कमलादेवी चट्टोपाध्याय, अरुणा असफ अली यांसारख्या महिला नेत्यांनी स्वातंत्र्यलढ्यात मोलाचे नेतृत्व केले.\nवरीलपैकी कोणते/ती विधान/ने बरोबर आहेत?",
+        "en": "Consider the following statements:\nA) The national movement successfully drew women out of domestic confines into the frontline of political agitation and Satyagraha.\nB) Prominent women leaders like Sarojini Naidu, Kamaladevi Chattopadhyay, and Aruna Asaf Ali provided stellar nationalist leadership.\nWhich of the above statement(s) is/are correct?"
+      },
+      "options": [
+        { "mr": "फक्त अ", "en": "Only A" },
+        { "mr": "फक्त ब", "en": "Only B" },
+        { "mr": "अ आणि ब दोन्ही", "en": "Both A and B" },
+        { "mr": "दोन्ही नाहीत", "en": "Neither A nor B" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९-२० वे शतक): दोन्ही विधाने अगदी बरोबर आहेत. असहकार, सविनय कायदेभंग व भारत छोडो आंदोलनामध्ये महिलांनी उत्स्फूर्तपणे सहभाग घेत अभूतपूर्व नेतृत्व गुण दाखवले.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / डॉ. स. शि. गाठाळ]",
+        "en": "(19th-20th Century): Both statements are correct. The national movement fundamentally elevated the status and political role of Indian women, with iconic leaders spearheading massive resistance.\n\n"
+      }
+    },
+    {
+      "id": 23,
+      "question": {
+        "mr": "स्वातंत्र्यपूर्व काळातील 'भारतीय राष्ट्रीय चळवळीच्या' विकासात 'कम्युनिस्ट पक्ष आणि समाजवादी विचारसरणीच्या' (Socialist and Communist currents) नेत्यांचे योगदान काय होते?",
+        "en": "What role did socialist and communist currents play within the broader spectrum of the Indian National Movement?"
+      },
+      "options": [
+        { "mr": "कामगार, शेतकरी आणि तरुणांना संघटित करून चळवळीला अधिक मूलगामी व आर्थिक न्यायाची जोड देणे", "en": "Mobilizing industrial workers, peasants, and youth to radicalize the national agenda with economic justice" },
+        { "mr": "काँग्रेसला पूर्णपणे नष्ट करणे", "en": "To completely destroy the Congress" },
+        { "mr": "फक्त ब्रिटिशांचे समर्थन करणे", "en": "To solely support the British" },
+        { "mr": "धार्मिक राजकारण वाढवणे", "en": "To promote communal politics" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९२० नंतर): काँग्रेस समाजवादी पक्ष (CSP - जयप्रकाश नारायण, अच्युतराव पटवर्धन) आणि कम्युनिस्ट चळवळीने स्वातंत्र्यलढ्यात कामगार-शेतकऱ्यांचे प्रश्न मांडत राष्ट्रीय चळवळीला समाजवादी व समतावादी विचार दिला.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(Post-1920s): Socialist and communist factions within and outside the Congress infused class consciousness, championing land reforms and workers' rights as integral to Swaraj.\n\n"
+      }
+    },
+    {
+      "id": 24,
+      "question": {
+        "mr": "भारतीय राष्ट्रीय चळवळीचे जागतिक स्तरावर (Global Significance) काय महत्त्व मानले जाते?",
+        "en": "What is the global historical significance of the Indian National Movement?"
+      },
+      "options": [
+        { "mr": "त्याने आशिया आणि आफ्रिकेतील इतर वसाहतींना स्वातंत्र्यासाठी प्रेरणा दिली आणि ब्रिटिश साम्राज्याच्या अस्ताची सुरुवात केली", "en": "It inspired anti-colonial liberation struggles across Asia and Africa, signaling the beginning of the end for global imperialism" },
+        { "mr": "त्याने जगात महायुद्धे घडवून आणली", "en": "It triggered world wars" },
+        { "mr": "त्याने युरोपची अर्थव्यवस्था वाढवली", "en": "It boosted European economies" },
+        { "mr": "त्याचा जगावर कोणताही प्रभाव पडला नाही", "en": "It had no global impact" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९४७ नंतर): अहिंसेच्या आणि सत्याग्रहाच्या मार्गाने एवढ्या मोठ्या साम्राज्यवादी सत्तेला नमवणारी भारतीय राष्ट्रीय चळवळ ही आशिया व आफ्रिकेतील सर्व वसाहतींसाठी एक दीपस्तंभ ठरली.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(Post-1947): The success of India's non-violent mass struggle served as an inspiring beacon for decolonization movements across the globe in Asia and Africa.\n\n"
+      }
+    },
+    {
+      "id": 25,
+      "question": {
+        "mr": "भारतीय राष्ट्रीय चळवळीचा (Indian National Movement) मुख्य गाभा किंवा पाया कशावर आधारित होता?",
+        "en": "What was the foundational ethical and philosophical core of the Indian National Movement?"
+      },
+      "options": [
+        { "mr": "लोकशाही, समता, धर्मनिरपेक्षता, राष्ट्रवाद आणि अहिंसक सत्याग्रह", "en": "Democracy, equality, secularism, nationalism, and non-violent Satyagraha" },
+        { "mr": "केवळ धार्मिक कट्टरता", "en": "Purely religious dogmatism" },
+        { "mr": "हुकूमशाही आणि सक्ती", "en": "Totalitarianism and coercion" },
+        { "mr": "परदेशी राजवटीची अधीनता", "en": "Submission to foreign authority" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९४७): भारतीय राष्ट्रीय चळवळीने जात, वर्ग आणि धर्माच्या पलीकडे जाऊन लोकशाही, समता, राष्ट्रवाद आणि अहिंसेचा पाया रचला, ज्यावर आधुनिक भारताची इमारत उभी आहे.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / डॉ. स. शि. गाठाळ]",
+        "en": "(1947): The movement was built on an uncompromising moral foundation of secular nationalism, democratic values, equality, and Satyagraha, forming the bedrock of modern India.\n\n"
+      }
+    }
+  ]
+}

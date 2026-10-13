@@ -1,0 +1,464 @@
+{
+  "testId": "p-hist-09-t1",
+  "title": {
+    "mr": "महाराष्ट्राचा इतिहास (पेशवे काळ व इंग्रजांचे आगमन) — सराव 1",
+    "en": "History of Maharashtra (Decline of Peshwai & Early British Rule) — Practice Test 1"
+  },
+  "durationMinutes": 20,
+  "marksPerQuestion": 1,
+  "negativeMarking": 0.25,
+  "totalMarks": 25,
+  "difficulty": "मध्यम ते काठिण्य",
+  "questions": [
+    {
+      "id": 1,
+      "question": {
+        "mr": "पेशवे काळाच्या उत्तरार्धात मराठा साम्राज्यात अंतर्गत कलह वाढण्यास कारणीभूत ठरलेला 'नारायणराव पेशव्यांचा खून' (१७७३) शनिवार वाड्यात कोणी केला होता?",
+        "en": "Who assassinated Peshwa Narayanrao in Shaniwar Wada in 1773, a tragic event that triggered internal turmoil in the Maratha Empire?"
+      },
+      "options": [
+        { "mr": "गार्दी सैनिक (सुमेसिंग गार्दी आणि राघोबादादांची संमती)", "en": "Gardis (Mercenary guards under Sumesing Garde)" },
+        { "mr": "महादजी शिंदेंचे सैनिक", "en": "Soldiers of Mahadji Shinde" },
+        { "mr": "नाना फडणविसांचे मारेकरी", "en": "Assassins hired by Nana Fadnavis" },
+        { "mr": "इंग्रज हेर", "en": "British spies" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१७७३): ३० ऑगस्ट १७७३ रोजी नारायणराव पेशव्यांचा खून शनिवार वाड्यात गार्दी सैनिकांकडून केला गेला. या हत्येमध्ये रघुनाथराव (राघोबादादा) आणि त्यांची पत्नी आनंदीबाई यांच्यावर संशयाची सुई होती, ज्यामुळे मराठा राजकारणाला मोठे उधाण आले.\n\n[संदर्भ: आधुनिक महाराष्ट्राचा इतिहास - डॉ. स. शि. गाठाळ / य. दि. फडके]",
+        "en": "(1773): Peshwa Narayanrao was brutally assassinated in Shaniwar Wada by Gardi guards, an event linked to Raghunathrao (Raghoba) and Anandibai, plunging Poona politics into chaos.\n\n"
+      }
+    },
+    {
+      "id": 2,
+      "question": {
+        "mr": "मराठा साम्राज्यात पेशव्यांच्या काळात राजकारणात महत्त्वाचे स्थान असलेले आणि 'महाराष्ट्राचे माकियावेली' म्हणून कोणाला ओळखले जाते?",
+        "en": "Who is famously referred to as the 'Machiavelli of Maharashtra' for his astute statesmanship and political acumen in Maratha history?"
+      },
+      "options": [
+        { "mr": "नाना फडणवीस (Nana Fadnavis)", "en": "Nana Fadnavis" },
+        { "mr": "महादजी शिंदे", "en": "Mahadji Shinde" },
+        { "mr": "सदाशिवराव भाऊ", "en": "Sadashivrao Bhau" },
+        { "mr": "बाबाजी नाईक इंदुरकर", "en": "Babaji Naik" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१८ वे शतक): बाळ जनार्दन भानू ऊर्फ 'नाना फडणवीस' यांनी पेशव्यांच्या काळात मराठा साम्राज्याची घडी दीर्घकाळ एकसंध राखली. त्यांच्या मुत्सद्देगिरीमुळे त्यांना 'महाराष्ट्राचे माकियावेली' म्हटले जाते.\n\n[संदर्भ: डॉ. बाळकृष्ण लईकर / डॉ. स. शि. गाठाळ]",
+        "en": "(18th Century): Balaji Janardan Bhanu, known as Nana Fadnavis, steered the Maratha confederacy through severe crises with remarkable diplomatic skill, earning the title 'Machiavelli of Maharashtra'.\n\n"
+      }
+    },
+    {
+      "id": 3,
+      "question": {
+        "mr": "ब्रिटिशांसोबत १७७५ मध्ये झालेला 'सुरतचा तह' (Treaty of Surat) कोणत्या मराठा सरदाराने किंवा पेशव्याने केला होता, ज्यातून पहिल्या इंग्रज-मराठा युद्धाची ठिणगी पडली?",
+        "en": "Which Maratha leader concluded the ill-fated 'Treaty of Surat' (1775) with the British, sparking the First Anglo-Maratha War?"
+      },
+      "options": [
+        { "mr": "रघुनाथराव पेशवे (राघोबादादा)", "en": "Raghunathrao (Raghoba)" },
+        { "mr": "बाबाजी नाईक", "en": "Babaji Naik" },
+        { "mr": "दूसरा बाजीराव पेशवा", "en": "Baji Rao II" },
+        { "mr": "तुकोजीराव होलकर", "en": "Tukojirao Holkar" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१७७५): सत्तेसाठी इंग्रजांची मदत मिळवण्यासाठी रघुनाथरावाने (राघोबादादा) ६ मार्च १७७५ रोजी ब्रिटिशांसोबत 'सुरतचा तह' केला, ज्यानुसार इंग्रजांना साष्टी व वसईचा ताба देण्याचे ठरले. यामुळे पहिल्या इंग्रज-मराठा युद्धाची सुरुवात झाली.\n\n[संदर्भ: आधुनिक महाराष्ट्राचा इतिहास - डॉ. स. शि. गाठाळ]",
+        "en": "(1775): To secure British military backing for his bid for the Peshwaship, Raghunathrao signed the Treaty of Surat in 1775, triggering the First Anglo-Maratha War.\n\n"
+      }
+    },
+    {
+      "id": 4,
+      "question": {
+        "mr": "पहिल्या इंग्रज-मराठा युद्धात (१७७५-१७८२) मराठी फौजांनी इंग्रजांचा पराभव केल्यावर कोणता प्रसिद्ध तह झाला, ज्याने २० वर्षे शांतता प्रस्थापित केली?",
+        "en": "Which historic treaty concluded the First Anglo-Maratha War in 1782, ensuring two decades of peace between the Marathas and the British?"
+      },
+      "options": [
+        { "mr": "वडगावचा तह (१९ जानेवारी १७७९) आणि नंतर सालबाईचा तह (१७८२)", "en": "Treaty of Wadgaon (1779) followed by the Treaty of Salbai (1782)" },
+        { "mr": "वसईचा तह (१८०२)", "en": "Treaty of Bassein (1802)" },
+        { "mr": "पुण्याचा तह (१८१७)", "en": "Treaty of Poona (1817)" },
+        { "mr": "ग्वाल्हेरचा तह (१८०४)", "en": "Treaty of Gwalior (1804)" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१७७९-१७८२): वडगावच्या लढाईत मराठ्यांनी इंग्रजांचा पराभव करून त्यांना अपमानकारक तह करायला लावला (वडगावचा तह). त्यानंतर महादजी शिंदेंच्या मध्यस्थीने १७८२ मध्ये 'सालबाईचा तह' झाला, ज्यामुळे पुढील २० वर्षे इंग्रजांनी मराठ्यांवर आक्रमण केले नाही.\n\n[संदर्भ: आधुनिक महाराष्ट्राचा इतिहास - डॉ. स. शि. गाठाळ]",
+        "en": "(1779-1782): Following Maratha victories at Wadgaon and subsequent diplomacy, the Treaty of Salbai in 1782 restored status quo and secured twenty years of peace.\n\n"
+      }
+    },
+    {
+      "id": 5,
+      "question": {
+        "mr": "उत्तर भारतात मराठ्यांचे वर्चस्व पुनर्स्थापित करण्यात आणि ग्वाल्हेरची सत्ता मजबूत करण्यात कोणत्या कर्तबगार मराठा सरदाराचे योगदान सर्वात मोठे मानले जाते?",
+        "en": "Which illustrious Maratha statesman and military commander played a pivotal role in restoring Maratha supremacy in northern India?"
+      },
+      "options": [
+        { "mr": "महादजी शिंदे (Mahadji Shinde)", "en": "Mahadji Shinde" },
+        { "mr": "मल्हारराव होलकर", "en": "Malharrao Holkar" },
+        { "mr": "रघोजी भोसले", "en": "Raghoji Bhonsle" },
+        { "mr": "आनंदराव पवार", "en": "Anandrao Pawar" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१८ वे शतक): महादजी शिंदे यांनी पानिपताच्या पराभवानंतर उत्तर भारतात मराठ्यांचे राजकीय व लष्करी वर्चस्व पुन्हा प्रस्थापित केले. त्यांनी फ्रेंच अधिकारी डिबॉयनच्या मदतीने सैन्याचे आधुनिकीकरण केले.\n\n[संदर्भ: य. दि. फडके / डॉ. स. शि. गाठाळ]",
+        "en": "(18th Century): Mahadji Shinde single-handedly resurrected Maratha power in northern India after Panipat, reorganizing his army along European lines with French expertise.\n\n"
+      }
+    },
+    {
+      "id": 6,
+      "question": {
+        "mr": "पेशवेकाळातील प्रसिद्ध मुत्सद्दी व राज्यकर्ते 'नाना फडणवीस' यांचे निधन कोणत्या वर्षी झाले, ज्यानंतर मराठा साम्राज्याला घरघर लागली?",
+        "en": "In which year did Nana Fadnavis pass away, an event famously described as marking the death of Maratha wisdom and independence?"
+      },
+      "options": [
+        { "mr": "१३ मार्च १८०० (March 13, 1800)", "en": "March 13, 1800" },
+        { "mr": "१८०२", "en": "1802" },
+        { "mr": "१७९५", "en": "1795" },
+        { "mr": "१८१८", "en": "1818" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१८००): १३ मार्च १८०० रोजी नाना फडणविसांचे निधन झाले. त्यांच्या निधनानंतर मराठा सरदारांमधील (शिंदे, होळकर, गायकवाड) आपापसातील फुट व दुरावा वाढला, ज्यामुळे इंग्रजांना राजकारणात हस्तक्षेप करण्याची संधी मिळाली.\n\n[संदर्भ: आधुनिक महाराष्ट्राचा इतिहास - डॉ. स. शि. गाठाळ]",
+        "en": "(1800): Nana Fadnavis died on March 13, 1800. Historians note that with his death, 'wisdom and intellect of the Maratha state departed', accelerating internal feuds.\n\n"
+      }
+    },
+    {
+      "id": 7,
+      "question": {
+        "mr": "दुसऱ्या बाजीराव पेशव्याने इंग्रजांसोबत ३१ डिसेंबर १८०२ रोजी केलेला कोणता तह मराठा साम्राज्याच्या स्वातंत्र्याचा अंत करणारा मानला जातो?",
+        "en": "Which notorious treaty signed by Peshwa Baji Rao II on December 31, 1802, virtually surrendered Maratha sovereignty to the British East India Company?"
+      },
+      "options": [
+        { "mr": "वसईचा तह (Treaty of Bassein / Vasai)", "en": "Treaty of Bassein" },
+        { "mr": "पुण्याचा तह", "en": "Treaty of Poona" },
+        { "mr": "ग्वाल्हेरचा तह", "en": "Treaty of Gwalior" },
+        { "mr": "पंढरपूरचा तह", "en": "Treaty of Pandharpur" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१८०२): यशवंतराव होळकरांकडून पराभव पत्करल्यानंतर दुसरा बाजीराव पेशव्याने इंग्रजांच्या आश्रयाला जात ३१ डिसेंबर १८०२ रोजी 'वसईचा तह' केला. या पार्नुसाऱ्या तहानुसार पेशव्याने इंग्रजांचे सहायक सैन्य स्वीकारले, ज्याने मराठ्यांच्या सार्वभौमत्वाचा घात केला.\n\n[संदर्भ: आधुनिक महाराष्ट्राचा इतिहास - डॉ. स. शि. गाठाळ]",
+        "en": "(1802): Fleeing from Yeshwantrao Holkar, Baji Rao II signed the subsidiary Treaty of Bassein in December 1802, surrendering Maratha independence to the British.\n\n"
+      }
+    },
+    {
+      "id": 8,
+      "question": {
+        "mr": "खालील विधाने विचारात घ्या:\nअ) वसईच्या तहानंतर (१८०२) स्वाभिमानी मराठा सरदार संतापले, ज्यातून दुसरे इंग्रज-मराठा युद्ध (१८०३-१८०५) सुरू झाले.\nब) या युद्धात भोसले आणि शिंदेंच्या संयुक्त फौजांचा ब्रिटिशांनी (आर्थर वेलस्ली) पराभव केला.\nवरीलपैकी कोणते/ती विधान/ने बरोबर आहेत?",
+        "en": "Consider the following statements:\nA) The Subsidiary Treaty of Bassein outraged independent-minded Maratha chieftains, leading to the Second Anglo-Maratha War (1803-1805).\nB) In this war, British forces under Arthur Wellesley decisively defeated the combined armies of Scindias and Bhonsles.\nWhich of the above statement(s) is/are correct?"
+      },
+      "options": [
+        { "mr": "फक्त अ", "en": "Only A" },
+        { "mr": "फक्त ब", "en": "Only B" },
+        { "mr": "अ आणि ब दोन्ही", "en": "Both A and B" },
+        { "mr": "दोन्ही नाहीत", "en": "Neither A nor B" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१८०३-१८०५): दोन्ही विधाने अगदी बरोबर आहेत. वसईच्या तहामुळे शिंदे व भोसले यांनी ब्रिटिशांविरुद्ध युद्ध पुकारले (दुसरे इंग्रज-मराठा युद्ध), परंतु आर्थर वेलस्लीने आझाद आणि लासवाडी येथे त्यांचा पराभव केला.\n\n[संदर्भ: आधुनिक महाराष्ट्राचा इतिहास - डॉ. स. शि. गाठाळ]",
+        "en": "(1803-1805): Both statements are correct. The resentment over Bassein ignited the Second Anglo-Maratha War, where Arthur Wellesley defeated Maratha forces at Assaye and Laswari.\n\n"
+      }
+    },
+    {
+      "id": 9,
+      "question": {
+        "mr": "मराठा साम्राज्याचा अंतिम अस्त आणि पेशवाईचा पूर्णपणे संपुष्टात येण्याचा काळ कोणत्या वर्षातील युद्धाने व तहाने घडवून आणला?",
+        "en": "Which war and subsequent settlement in 1817-1818 marked the final liquidation of the Peshwaship and incorporation of Maharashtra into British dominion?"
+      },
+      "options": [
+        { "mr": "तिसरे इंग्रज-मराठा युद्ध (१८१७-१८१८) आणि पेशव्यांचे शरण येणे", "en": "Third Anglo-Maratha War (1817-1818)" },
+        { "mr": "पहिले इंग्रज-मराठा युद्ध", "en": "First Anglo-Maratha War" },
+        { "mr": "पानिपतचे तिसਰੇ युद्ध", "en": "Third Battle of Panipat" },
+        { "mr": "कर्नाटक युद्ध", "en": "Carnatic Wars" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१८१७-१८१८): तिसऱ्या इंग्रज-मराठा युद्धात (तिसरे इंग्रज-मराठा युद्ध) मराठ्यांचा ορισित पराभव झाला. एल्फिन्स्टन आणि हेस्टिंग्जच्या धोरणांमुळे पेशवाई संपली, दुसऱ्या बाजीरावास बिठूरला पेन्शनवर पाठवले आणि ३ जून १८१८ रोजी मराठा साम्राज्य संपले.\n\n[संदर्भ: आधुनिक महाराष्ट्राचा इतिहास - डॉ. स. शि. गाठाळ / य. दि. फडके]",
+        "en": "(1817-1818): The Third Anglo-Maratha War sealed the fate of the Maratha Empire. Baji Rao II surrendered in 1818, ending the Peshwaship and establishing British paramountcy.\n\n"
+      }
+    },
+    {
+      "id": 10,
+      "question": {
+        "mr": "तिसऱ्या इंग्रज-मराठा युद्धानंतर (१८१८) ब्रिटिशांनी महाराष्ट्राचा ताба घेतल्यावर मुंबई प्रेसिडेन्सीत शांतता व प्रशासन प्रस्थापित करण्याचे मुख्य श्रेय कोणत्या ब्रिटिश अधिकाऱ्याला जाते?",
+        "en": "Which British administrator is credited with organizing the civil administration and revenue settlement of the newly acquired Maratha territories after 1818?"
+      },
+      "options": [
+        { "mr": "माउंटस्टुअर्ट एल्फिन्स्टन (Mountstuart Elphinstone)", "en": "Mountstuart Elphinstone" },
+        { "mr": "सर थोमास मन्रो", "en": "Sir Thomas Munro" },
+        { "mr": "लॉर्ड डलहौसी", "en": "Lord Dalhousie" },
+        { "mr": "जॉन मालकम", "en": "John Malcolm" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१८१८-१८२७): पेशवाईच्या पतनानंतर माउंटस्टुअर्ट एल्फिन्स्टन हे मुंबईचे पहिले गव्हर्नर झाले (१८१९-१८२७). त्यांनी रयतवारी पद्धत, रयतेचे संरक्षण, जुन्या वतनदारांचा सांभाळ आणि शैक्षणिक सुधारणा करत ब्रिटीश सत्तेचा पाया रोवला.\n\n[संदर्भ: आधुनिक महाराष्ट्राचा इतिहास - डॉ. स. शि. गाठाळ / समाधान महाजन]",
+        "en": "(1818-1827): Mountstuart Elphinstone served as the commissioner and later Governor of Bombay, laying down administrative, judicial, and educational foundations for British rule in Maharashtra.\n\n"
+      }
+    },
+    {
+      "id": 11,
+      "question": {
+        "mr": "महाराष्ट्रात ब्रिटीश सत्तेच्या विरोधात १८१८ नंतर सर्वात प्रथम हतवेष घेत रामोशी समाजाचे नेतृत्व करत उठाव करणारे पहिले बंडखोर नेते कोण होते?",
+        "en": "Who led the earliest armed tribal/peasant rebellion against British rule in Maharashtra on behalf of the Ramoshi community?"
+      },
+      "options": [
+        { "mr": "उमाजी नाईक (Umaji Naik)", "en": "Umaji Naik" },
+        { "mr": "वासुदेव बळवंत फडके", "en": "Vasudev Balwant Phadke" },
+        { "mr": "बापू त्र्यंबकजी डिंगरे", "en": "Bapu Trimbakji" },
+        { "mr": "रंगो बापूजी गुप्ते", "en": "Rango Bapuji Gupte" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१८१८-१८३१): पुरंदर व सातारा परिसरातील रामोशी समाजाला एकत्र करत 'उमाजी नाईक' यांनी ब्रिटीश सत्तेविरुद्ध सशस्त्र लढा पुकारला. त्यांनी सरकारी तिजोरी लुटून ब्रिटिश प्रशासनाला सळो की पळो करून सोडले होते. अखेर ३ फेब्रुवारी १८३१ रोजी त्यांना पुणे येथे फाशी दिली गेली.\n\n[संदर्भ: आधुनिक महाराष्ट्राचा इतिहास - डॉ. स. शि. गाठाळ / अनिल कटारे]",
+        "en": "(1818-1831): Umaji Naik raised the banner of revolt against British rule in Maharashtra, rallying the Ramoshi community to challenge colonial authority before his execution in 1831.\n\n"
+      }
+    },
+    {
+      "id": 12,
+      "question": {
+        "mr": "उमाजी नाईक यांनी ब्रिटीश सत्तेविरोधात कोणता प्रसिद्ध 'जाहीरनामा' (Proclamation) जारी केला होता, ज्यातून ब्रिटिशांना हुसकावून लावण्याचे आवाहन केले होते?",
+        "en": "What was the core message of the historic manifesto issued by Umaji Naik challenging British legitimacy in Maharashtra?"
+      },
+      "options": [
+        { "mr": "इंग्रजांना सहकार्य करू नका, सरकारी नोकऱ्या सोडा आणि इंग्रजांना हुसकावण्यासाठी शस्त्रास्त्रे हातात घ्या", "en": "Urging people not to assist the British, stop paying revenue, and take up arms to oust the foreigners" },
+        { "mr": "इंग्रजांना कर भरू नका व ख्रिश्चन धर्म स्वीकारा", "en": "To accept Christianity" },
+        { "mr": "फक्त जमीन जुमला ब्रिटिशांना विकून टाका", "en": "To sell all land to the British" },
+        { "mr": "पेशवाई पुन्हा स्थापन करण्यासाठी कागदपत्रे गोळा करा", "en": "Only to collect documents" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१८२६-१८२८): उमाजी नाईकांनी पुरंदर भागात जाहीरनामे वाटत ब्रिटिशांची सत्ता बेकायदेशीर ठरवली. त्यांनी लोकांना इंग्रजांना महसूल न देण्याचे आणि ब्रिटिशांविरुद्ध सशस्त्र युद्धासाठी तयार राहण्याचे आवाहन केले.\n\n[संदर्भ: आधुनिक महाराष्ट्राचा इतिहास - डॉ. स. शि. गाठाळ]",
+        "en": "(1826-1828): Umaji Naik issued fiery proclamations declaring British rule illegal, warning officials, and calling upon the public to withhold taxes and rise in arms.\n\n"
+      }
+    },
+    {
+      "id": 13,
+      "question": {
+        "mr": "खालील विधाने विचारात घ्या:\nअ) सातारा संस्थानाचे राजे छत्रपती प्रतापसिंह यांच्यावर ब्रिटीश विरोधी कट रचल्याचा खोटा आरोप ठेवून ब्रिटिशांनी त्यांना छत्रपतीपदावरून εκδιवासले व तातडीने काशीला स्थानबद्ध केले.\nब) त्यांच्या बाजूने न्यायाची मागणी करण्यासाठी त्यांचे वकील 'रंगो बापूजी गुप्ते' यांनी लंडनपर्यंत जाऊन खटला लढवला होता.\nवरीलपैकी कोणते/ती विधान/ने बरोबर आहेत?",
+        "en": "Consider the following statements:\nA) Chhatrapati Pratapsinh of Satara was deposed by the British on fabricated charges of treason and exiled to Benares.\nB) His loyal emissary Rango Bapuji Gupte traveled all the way to London to appeal his case before the British Parliament.\nWhich of the above statement(s) is/are correct?"
+      },
+      "options": [
+        { "mr": "फक्त अ", "en": "Only A" },
+        { "mr": "फक्त ब", "en": "Only B" },
+        { "mr": "अ आणि ब दोन्ही", "en": "Both A and B" },
+        { "mr": "दोन्ही नाहीत", "en": "Neither A nor B" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१८३९-१८५०): दोन्ही विधाने अगदी बरोबर आहेत. ब्रिटिशांनी छत्रपती प्रतापसिंहांना गादीवरून हटवून तातडीने काशीला पाठवले (१८३९). त्यांच्या मुक्तीसाठी वकील रंगो बापूजी गुप्ते यांनी लंडनमध्ये जाऊन प्रचंड कायदेशीर लढा दिला.\n\n[संदर्भ: आधुनिक महाराष्ट्राचा इतिहास - डॉ. स. शि. गाठाळ / समाधान महाजन]",
+        "en": "(1839-1850): Both statements are correct. Chhatrapati Pratapsinh was deposed in 1839, and his faithful envoy Rango Bapuji Gupte waged a legal battle in London to restore him.\n\n"
+      }
+    },
+    {
+      "id": 14,
+      "question": {
+        "mr": "महाराष्ट्रात आधुनिक सशस्त्र क्रांतीचे जनक म्हणून ओळखले जाणारे आणि ब्रिटीश सत्तेविरुद्ध गुप्त संघटना स्थापन करणारे पहिले क्रांतिकारक कोण होते?",
+        "en": "Who is revered as the 'Father of Indian Armed Rebellion' in Maharashtra who formed a secret revolutionary society to overthrow British rule in 1879?"
+      },
+      "options": [
+        { "mr": "वासुदेव बळवंत फडके (Vasudev Balwant Phadke)", "en": "Vasudev Balwant Phadke" },
+        { "mr": "चाफेकर बंधू", "en": "Chapekar brothers" },
+        { "mr": "वि. दा. सावरकर", "en": "V.D. Savarkar" },
+        { "mr": "लोकमान्य टिळक", "en": "Lokmanya Tilak" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१८७९): वासुदेव बळवंत फडके यांनी पुण्यात तरुणांना एकत्र करून ब्रिटीश सत्तेविरुद्ध सशस्त्र क्रांती करण्यासाठी 'रामोशी क्रांतीकारी संघटना' (आणि गुप्त संघ) उभी केली. त्यांनी सरकारी संपत्ती लुटत दरोडे घालून ब्रिटीश प्रशासनाला जेरीस आणले होते.\n\n[संदर्भ: आधुनिक महाराष्ट्राचा इतिहास - डॉ. स. शि. गाठाळ / अनिल कटारे]",
+        "en": "(1879): Vasudev Balwant Phadke raised a secret army of Ramoshis and youth in Maharashtra, launching armed raids to overthrow British rule before his arrest and exile.\n\n"
+      }
+    },
+    {
+      "id": 15,
+      "question": {
+        "mr": "वासुदेव बळवंत फडके यांनी ब्रिटीश सरकारविरुद्ध सशस्त्र लढा देण्यापूर्वी कोणती शासकीय नोकरी सोडली होती आणि पुण्यात कोणती संस्था स्थापन केली थी?",
+        "en": "Which government job did Vasudev Balwant Phadke resign from, and what educational/social institutions did he help found in Pune prior to his rebellion?"
+      },
+      "options": [
+        { "mr": "मिलिटरी अकाऊंट्स डिपार्टमेंट (Military Accounts Department) मधील कनिष्ठ लिपिक आणि पुणे नेटिव्ह इन्स्टिट्यूशन (आताची भावे स्कूल)", "en": "Military Accounts Department clerk; co-founded Pune Native Institution" },
+        { "mr": "महसूल खात्याचे तहसीलदार", "en": "Revenue Tehsildar" },
+        { "mr": "मुंबई उच्च न्यायालयाचे वकिल", "en": "High Court Lawyer" },
+        { "mr": "पुणे पोलीस इन्स्पेक्टर", "en": "Pune Police Inspector" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१८७० च्या दशकात): वासुदेव बळवंत फडके हे सैन्य लेखा विभागात (Military Accounts) लिपिक म्हणून नोकरी करत होते. त्यांनी नोकरी सोडून पुण्यातून देशसेवेसाठी झोकून दिले आणि अर्ध्यावर शिक्षणासाठी 'पुणे नेटिव्ह इन्स्टिट्यूशन' (आताची भावे शाळा) सुरू केली.\n\n[संदर्भ: आधुनिक महाराष्ट्राचा इतिहास - डॉ. स. शि. गाठाळ]",
+        "en": "(1870s): Phadke worked as a clerk in the Military Accounts Department. He resigned to dedicate his life to anti-British resistance, having co-founded the Pune Native Institution for education.\n\n"
+      }
+    },
+    {
+      "id": 16,
+      "question": {
+        "mr": "वासुदेव बळवंत फडके यांना ब्रिटिशांनी १८७९ मध्ये कोणत्या ठिकाणी पकडले आणि त्यांना कोणती शिक्षा सुनावून कोणत्या तुरुंगात पाठवले गेले?",
+        "en": "Where was Vasudev Balwant Phadke captured in 1879, and to which remote prison was he exiled for life?"
+      },
+      "options": [
+        { "mr": "हैदराबादजवळ (देवनूर) अटक; एडन (Aden) च्या तुरुंगात जन्मठेप", "en": "Captured near Hyderabad; exiled for life to Aden prison" },
+        { "mr": "सातारा येथे अटक; अंदमानच्या सेल्युलर जेलमध्ये फाशी", "en": "Captured in Satara; sent to Andaman" },
+        { "mr": "मुंबईत अटक; मंडालेच्या तुरुंगात ठेवले", "en": "Captured in Bombay; sent to Mandalay" },
+        { "mr": "पुण्यात अटक; रत्नागिरी जेलमध्ये ठेवले", "en": "Captured in Pune; kept in Ratnagiri" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१८७९-१८८३): ब्रिटिशांनी फडक्यांच्या डोक्यावर बक्षीਸ ठेवले होते. मेजर गिबसन यांनी त्यांना जुलै १८७९ मध्ये हैदराबादजवळ (देवनूर) पकडले. मुंबईत खटला चालवून त्यांना एडन (Aden - येमेन) च्या कुख्यात तुरुंगात जन्मठेपेची शिक्षा दिली, जिथे १७ फेब्रुवारी १८८३ रोजी त्यांचे निधन झाले.\n\n[संदर्भ: आधुनिक महाराष्ट्राचा इतिहास - डॉ. स. शि. गाठाळ]",
+        "en": "(1879-1883): Phadke was captured near Hyderabad in July 1879, tried in Bombay, and exiled to Aden prison, where he died on hunger strike in February 1883.\n\n"
+      }
+    },
+    {
+      "id": 17,
+      "question": {
+        "mr": "महाराष्ट्रात १८५७ च्या उठावाच्या काळात कोल्हापूरमध्ये उठावाचे नेतृत्व कोणी केले होते, ज्यांना नंतर ब्रिटिशांनी तोफेच्या तोंडी दिले?",
+        "en": "Who led the 1857 revolt in Kolhapur, mobilizing the garrison and local public before facing brutal execution by the British?"
+      },
+      "options": [
+        { "mr": "चिमासाहेब महाराज आणि रामजी पांढरे", "en": "Chimasaheb Maharaj and Ramji Pandhare" },
+        { "mr": "रंगो बापूजी गुप्ते", "en": "Rango Bapuji Gupte" },
+        { "mr": "नानासाहेब पेशवे", "en": "Nanasaheb Peshwa" },
+        { "mr": "तात्या टोपे", "en": "Tatya Tope" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१८५७): १८५७ च्या उठावात कोल्हापूरच्या २७ व्या रेजिमेंटने बंड केले. छत्रपतींचे बंधू 'चिमासाहेब महाराज' यांनी या उठावाचे नेतृत्व केले. ब्रिटिशांनी हा उठाव मोडून काढत अनेक जणांना तोफेच्या तोंडी दिले आणि चिमासाहेबांना कराचीला नजरकैदेत ठेवले.\n\n[संदर्भ: आधुनिक महाराष्ट्राचा इतिहास - डॉ. स. शि. गाठाळ]",
+        "en": "(1857): In Kolhapur, Chimasaheb Maharaj led the 1857 uprising of the 27th Native Infantry. The British ruthlessly suppressed it, executing rebels and exiling Chimasaheb to Karachi.\n\n"
+      }
+    },
+    {
+      "id": 18,
+      "question": {
+        "mr": "खानदेश भागात १८५७ च्या सुमारास भिल्ल आदिवासींना एकत्र करून ब्रिटिशांविरुद्ध अभूतपूर्व सशस्त्र उठाव करणारे भिल्लनायक कोण होते?",
+        "en": "Which prominent Bhil leader mobilized tribal warriors in Khandesh to launch a fierce armed rebellion against the British during the 1857 era?"
+      },
+      "options": [
+        { "mr": "काजजी नाईक आणि भागोजी नाईक", "en": "Kajji Naik and Bhagoji Naik" },
+        { "mr": "उमाजी नाईक", "en": "Umaji Naik" },
+        { "mr": "बिरसा मुंडा", "en": "Birsa Munda" },
+        { "mr": "टंट्या भिल्ल", "en": "Tantya Bhil" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१८५७-१८५८): खानदेशात काजजी नाईक आणि भागोजी नाईक यांनी भिल्ल बांधवांना एकत्र करत ब्रिटीश छावण्यांवर हल्ले चढवले. ब्रिटिश अधिकारी जेम्स आऊट्रम आणि नंतर विन्स्टन यांनी हा भिल्ल उठाव अत्यंत क्रूरपणे मोडून काढला.\n\n[संदर्भ: आधुनिक महाराष्ट्राचा इतिहास - डॉ. स. शि. गाठाळ]",
+        "en": "(1857-1858): Bhil leaders Kajji Naik and Bhagoji Naik spearheaded a militant tribal uprising in Khandesh, attacking British outposts before being subdued by colonial forces.\n\n"
+      }
+    },
+    {
+      "id": 19,
+      "question": {
+        "mr": "महाराष्ट्रात १८५७ च्या उठावाच्या काळात मराठवाड्यातील (हैदराबाद संस्थानांतर्गत) औरंगाबाद येथे कोणी ब्रिटीश सैन्याविरुद्ध बंडाचा झेंडा फडकवला होता?",
+        "en": "Who led the 1857 mutiny among the troops stationed at Aurangabad in Marathwada against the British?"
+      },
+      "options": [
+        { "mr": "अमीर खान आणि हैदराबादचे रोहिले सैनिक", "en": "Amir Khan and Rohilla soldiers" },
+        { "mr": "तात्या टोपे", "en": "Tatya Tope" },
+        { "mr": "बाबासाहेब भावे", "en": "Babasaheb Bhave" },
+        { "mr": "शहाजी महाराज", "en": "Shahaji Maharaj" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१८५७): औरंगाबाद येथे अश्वदलाच्या सैनिकांनी (कॅव्हल्री) जून १८५७ मध्ये बंड पुकारले. हैदराबादचे निझामाचे सैन्य आणि ब्रिटीश फौजेने एकत्र येत या उठावाचे दमन केले, ज्यानंतर अनेक क्रांतिकारकांना शिक्षा झाली.\n\n[संदर्भ: आधुनिक महाराष्ट्राचा इतिहास - डॉ. स. शि. गाठाळ]",
+        "en": "(1857): Cavalry troops in Aurangabad mutinied in June 1857. British and Nizam's forces swiftly crushed the garrison revolt, executing or punishing the ringleaders.\n\n"
+      }
+    },
+    {
+      "id": 20,
+      "question": {
+        "mr": "खालील विधाने विचारात घ्या:\nअ) १८५७ च्या उठावात ग्वाल्हेरवरून पराभूत झाल्यावर तात्या टोपे यांनी महाराष्ट्रात येऊन सातारा, कोल्हापूर व नरवर भागात ब्रिटिशांविरुद्ध गनिमी काव्याने लढा दिला.\nब) अखेर त्यांच्याच एका मित्राने (मानसिंग) फितुरी केल्यामुळे ब्रिटिशांनी त्यांना पकडले आणि १८५९ मध्ये शिवपुरी येथे फाशी दिली.\nवरीलपैकी कोणते/ती विधान/ने बरोबर आहेत?",
+        "en": "Consider the following statements:\nA) After reverses in central India, Tatya Tope entered Maharashtra and guerrilla-fought the British from bases in Satara, Khandesh, and Central India.\nB) He was betrayed by a trusted friend (Man Singh) and hanged by the British at Shivpuri in April 1859.\nWhich of the above statement(s) is/are correct?"
+      },
+      "options": [
+        { "mr": "फक्त अ", "en": "Only A" },
+        { "mr": "फक्त ब", "en": "Only B" },
+        { "mr": "अ आणि ब दोन्ही", "en": "Both A and B" },
+        { "mr": "दोन्ही नाहीत", "en": "Neither A nor B" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१८५८-१८५९): दोन्ही विधाने अगदी बरोबर आहेत. तात्या टोपे यांनी मध्य भारतातून महाराष्ट्राच्या सीमेवर (खानदेश व सातारा) येत गनिमी युद्ध केले. परंतु मानसिंगच्या फितुरीमुळे ते पकडले गेले आणि १८ एप्रिल १८५९ रोजी शिवपुरी येथे त्यांना फाशी दिली गेली.\n\n[संदर्भ: आधुनिक महाराष्ट्राचा इतिहास - डॉ. स. शि. गाठाळ]",
+        "en": "(1858-1859): Both statements are correct. Tatya Tope waged a brilliant guerrilla campaign extending into Maharashtra, before his betrayal and tragic execution at Shivpuri in April 1859.\n\n"
+      }
+    },
+    {
+      "id": 21,
+      "question": {
+        "mr": "मराठवाड्यात हैदराबाद संस्थानाच्या विरोधात आणि ब्रिटीश सत्तेच्या प्रभावाविरुद्ध नांदेड परिसरामध्ये कोणी 'स्वामी रामानंद तीर्थ' यांच्या आधी किंवा समकालीन काळात स्वातंत्र्यलढ्याची मुहूर्तमेढ रोवली?",
+        "en": "Who pioneered early nationalist and anti-Nizam/anti-British resistance in the Marathwada region prior to the formal Hyderabad freedom struggle?"
+      },
+      "options": [
+        { "mr": "गोविंदराव पानसरे / मराठवाड्यातील स्थानिक स्वातंत्र्य सैनिक (तसेच हैदराबाद स्टेट काँग्रेसचे नेते)", "en": "Early Marathwada freedom fighters and Arya Samaj reformers" },
+        { "mr": "उमाजी नाईक", "en": "Umaji Naik" },
+        { "mr": "वासुदेव बळवंत फडके", "en": "Vasudev Balwant Phadke" },
+        { "mr": "चाफेकर बंधू", "en": "Chapekar brothers" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९ वे ते २० वे शतक): मराठवाड्यात निजामाच्या राजवटीत मराठी भाषिक व राजकीय स्वातंत्र्यासाठी आर्य समाज, वंदे मातरम चळवळ आणि पुढे स्वामी रामानंद तीर्थ यांच्या नेतृत्वाखाली हैदराबाद स्टेट काँग्रेसने अभूतपूर्व लढा दिला.\n\n[संदर्भ: मराठवाड्याचा स्वातंत्र्य लढा - डॉ. वि. प. बोकील]",
+        "en": "(19th-20th Century): Marathwada faced twin oppressions under the Nizam and the British, later giving rise to the heroic Arya Samaj and Hyderabad State Congress movements.\n\n"
+      }
+    },
+    {
+      "id": 22,
+      "question": {
+        "mr": "ब्रिटिश ईस्ट इंडिया कंपनीने मुंबई (बॉम्बे) बेट पोर्तुगीजांकडून कधी आणि किती वार्षिक भाड्याने मिळवले होते?",
+        "en": "In which year did the British East India Company acquire the islands of Bombay from the Portuguese as a royal lease for a nominal annual rent?"
+      },
+      "options": [
+        { "mr": "६८ (1668) मध्ये १० पौंड वार्षिक भाड्याने (इंग्लंडच्या राजाकडून कंपनीला मिळाले)", "en": "1668 for an annual rent of £10 (transferred from the Crown)" },
+        { "mr": "१६०८", "en": "1608" },
+        { "mr": "१७०१", "en": "1701" },
+        { "mr": "१६६१", "en": "1661" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१६६८): इंग्लंडचा राजा चार्ल्स द्वितीय यास पोर्तुगीज राजकुमारी कॅथरीनसोबत विवाह झाल्यासंदर्भात 'मुंबईचे बेट' आंदण म्हणून मिळाले होते. राजाने २७ सप्टेंबर १६६८ रोजी हे बेट अवघ्या १० पौंड वार्षिक भाड्याने ईस्ट इंडिया कंपनीला सुपूर्द केले.\n\n[संदर्भ: आधुनिक महाराष्ट्राचा इतिहास - डॉ. स. शि. गाठाळ]",
+        "en": "(1668): King Charles II, who received Bombay as part of his dowry from Portugal, leased the islands to the East India Company in 1668 for an annual rent of just £10.\n\n"
+      }
+    },
+    {
+      "id": 23,
+      "question": {
+        "mr": "मुंबई प्रांतात (Bombay Presidency) ब्रिटीश प्रशासनाने जमीन महसुलाच्या वसुलीसाठी मुख्यत्वे कोणती पद्धत लागू केली होती, जी रयतेकडून थेट गोळा केली जाई?",
+        "en": "Which primary land revenue settlement was introduced by Mountstuart Elphinstone in the Bombay Presidency, collecting tax directly from cultivators?"
+      },
+      "options": [
+        { "mr": "रयतवारी पद्धत (Ryotwari System)", "en": "Ryotwari System" },
+        { "mr": "जमीनदारी / स्थायी बंदोबस्त", "en": "Zamindari / Permanent Settlement" },
+        { "mr": "महालवारी पद्धत", "en": "Mahalwari System" },
+        { "mr": "चौथ व सरदेशमुखी पद्धत", "en": "Chauth and Sardeshmukhi" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९ वे शतक): मुंबई प्रेसिडेन्सीत (विशेषतः एल्फिन्स्टनच्या काळात) जमीन महसुलासाठी 'रयतवारी पद्धत' (Ryotwari System) लागू केली गेली, ज्यामध्ये शेतकरी (रयत) थेट सरकारला कर भरत असत (मध्यस्थ जमीनदार नव्हते).\n\n[संदर्भ: आधुनिक महाराष्ट्राचा इतिहास - डॉ. स. शि. गाठाळ / एम. लक्ष्मीकांत]",
+        "en": "(19th Century): The British administration in the Bombay Presidency implemented the Ryotwari system, establishing direct revenue settlement with individual cultivators (ryots).\n\n"
+      }
+    },
+    {
+      "id": 24,
+      "question": {
+        "mr": "महाराष्ट्राच्या इतिहासात ब्रिटिशांच्या आगमनापूर्वी आणि सुरुवातीच्या काळात 'वतनदारी' व 'इनामे' यांच्याबाबत ब्रिटीश प्रशासनाने कोणते धोरण स्वीकारले होते?",
+        "en": "What policy did early British administrators in Maharashtra adopt regarding traditional Vatans and Inams (tax-free land grants)?"
+      },
+      "options": [
+        { "mr": "सुरुवातीला शांतता टिकवण्यासाठी वतनदारांचा सांभाळ केला, पण नंतर चौकशी करून अनेक वतनदारी व इनामे जप्त केली", "en": "Initially conciliated vatandars for stability, but later scrutinized and resumed many tax-free inam lands" },
+        { "mr": "सर्व वतनदारांना कायमचे राजे घोषित केले", "en": "Declared all vatandars hereditary kings" },
+        { "mr": "वतनदारी पूर्णपणे ताबडतोब नष्ट केली", "en": "Abolished vatans overnight without exception" },
+        { "mr": "वतनदारांना ब्रिटनच्या संसदेत जागा दिली", "en": "Gave them seats in British parliament" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९ वे शतक): एल्फिन्स्टनने मराठेशाहीतील जुन्या सरदारांचे वतनदार व इनामे टिकवून धरत सहकार्य मिळवले. परंतु नंतरच्या काळात (विशेषतः इनाम कमिशनच्या माध्यमातून) अनेक बोगस किंवा बेकायदेशीर इनामे जप्त करत ब्रिटीश सत्तेने आपली तिजोरी मजबूत केली.\n\n[संदर्भ: आधुनिक महाराष्ट्राचा इतिहास - डॉ. स. शि. गाठाळ]",
+        "en": "(19th Century): British policy initially reconciled traditional vatandars to ensure political stability, but later subjected Inam lands to rigorous scrutiny and resumption through Inam commissions.\n\n"
+      }
+    },
+    {
+      "id": 25,
+      "question": {
+        "mr": "महाराष्ट्राच्या प्रादेशिक इतिहासात 'पेशवाईचा अस्त' आणि 'इंग्रज सत्तेची स्थापना' (१८१८) याचा मराठी समाजावर आणि राजकीयव्यवस्थेवर काय मुख्य परिणाम झाला?",
+        "en": "What was the profound socio-political consequence of the fall of the Peshwai and establishment of British paramountcy in Maharashtra in 1818?"
+      },
+      "options": [
+        { "mr": "मराठा साम्राज्याची सार्वभौम राजकीय सत्ता संपुष्टात आली आणि आधुनिक महाराष्ट्र ब्रिटीश भारताचा भाग बनला", "en": "The sovereign political independence of Maharashtra ended, transforming it into a colonial province under British rule" },
+        { "mr": "मराठी सैन्याची ताकद दुप्पट झाली", "en": "Maratha military might doubled" },
+        { "mr": "पेशवे पद अधिक मजबूत झाले", "en": "The Peshwaship became stronger" },
+        { "mr": "राजकारण पूर्णपणे नष्ट होऊन शेती बंद झाली", "en": "Agriculture was completely banned" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१८१८): १८१८ च्या सुमारास पेशवाईचा अंत होऊन महाराष्ट्र ब्रिटीश साम्राज्याखाली गेला. यामुळे राजकीय सार्वभौमत्व हरपले असले, तरी पुढे आधुनिक शिक्षण, वृत्तपत्रे आणि समाजसुधारणेच्या नव्या पर्वाची सुरुवात झाली.\n\n[संदर्भ: आधुनिक महाराष्ट्राचा इतिहास - डॉ. स. शि. गाठाळ / य. दि. फडके]",
+        "en": "(1818): The collapse of the Peshwai in 1818 obliterated Maratha political sovereignty, setting the stage for colonial administration while simultaneously sparking modern socio-religious reform movements.\n\n"
+      }
+    }
+  ]
+}

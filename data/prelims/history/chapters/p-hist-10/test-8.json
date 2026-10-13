@@ -1,0 +1,464 @@
+{
+  "testId": "p-hist-10-t8",
+  "title": {
+    "mr": "आर्थिक व सामाजिक विकास (विमा, सामाजिक सुरक्षा व कामगार कल्याण) — सराव 8",
+    "en": "Economic and Social Development (Insurance, Social Security & Labor Welfare) — Practice Test 8"
+  },
+  "durationMinutes": 20,
+  "marksPerQuestion": 1,
+  "negativeMarking": 0.25,
+  "totalMarks": 25,
+  "difficulty": "मध्यम ते काठिण्य",
+  "questions": [
+    {
+      "id": 1,
+      "question": {
+        "mr": "भारतात दारिद्र्यरेषेखालील व सर्वसामान्य नागरिकांना अतिशय कमी प्रिमियममध्ये अपघाती विमा सुरक्षा देणारी कोणती योजना मे २०१५ मध्ये सुरू झाली?",
+        "en": "Which low-cost accidental insurance scheme was launched in May 2015 to provide disability and death coverage at a nominal annual premium?"
+      },
+      "options": [
+        { "mr": "प्रधानमंत्री सुरक्षा विमा योजना (PMSBY - रु. २० वार्षिक प्रिमियम)", "en": "Pradhan Mantri Suraksha Bima Yojana (PMSBY)" },
+        { "mr": "प्रधानमंत्री जीवन ज्योति विमा योजना", "en": "Pradhan Mantri Jeevan Jyoti Bima Yojana (PMJJBY)" },
+        { "mr": "अटल पेन्शन योजना", "en": "Atal Pension Yojana" },
+        { "mr": "राष्ट्रीय स्वास्थ्य बिमा योजना", "en": "Rashtriya Swasthya Bima Yojana" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(२०१५): मे २०१५ मध्ये सुरू झालेल्या 'प्रधानमंत्री सुरक्षा विमा योजनेअंतर्गत' (PMSBY) दरवर्षी अवघ्या २० रुपयांच्या प्रिमियममध्ये २ लाखांपर्यंतचा अपघाती मृत्यू व अपंगत्व विमा मिळतो.\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग]",
+        "en": "PMSBY is a government-backed accidental insurance scheme offering death and disability coverage for a nominal annual premium of Rs. 20."
+      }
+    },
+    {
+      "id": 2,
+      "question": {
+        "mr": "भारतातील नागरिकांना 'जीवन विमा' (Life Insurance) सुरक्षा देण्यासाठी प्रतिवर्षी ३३० रुपये प्रिमियम आकारून २ लाखांचे संरक्षण देणारी कोणती योजना २०१५ मध्ये सुरू झाली?",
+        "en": "Which life insurance scheme launched in May 2015 provides a life cover of Rs. 2 lakh for an annual premium of Rs. 330?"
+      },
+      "options": [
+        { "mr": "प्रधानमंत्री जीवन ज्योति विमा योजना (PMJJBY)", "en": "Pradhan Mantri Jeevan Jyoti Bima Yojana (PMJJBY)" },
+        { "mr": "प्रधानमंत्री सुरक्षा विमा योजना (PMSBY)", "en": "Pradhan Mantri Suraksha Bima Yojana (PMSBY)" },
+        { "mr": "आयुष्मान भारत योजना", "en": "Ayushman Bharat Yojana" },
+        { "mr": "आम आदमी विमा योजना", "en": "Aam Aadmi Bima Yojana" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(२०१५): 'प्रधानमंत्री जीवन ज्योति विमा योजनेद्वारे' (PMJJBY) १८ ते ५० वयोगटातील बँक खातेधारकांना दरवर्षी ३३० रुपये भरून २ लाखांपर्यंतचा जीवन विमा मिळतो.\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग]",
+        "en": "PMJJBY offers renewable life insurance coverage of Rs. 2 lakh for any cause to individuals aged 18-50 years at an annual premium of Rs. 330."
+      }
+    },
+    {
+      "id": 3,
+      "question": {
+        "mr": "भारतात कृषी क्षेत्रातील पिकांचे नुकसान झाल्यास शेतकऱ्यांना सवलतीच्या दरात विमा संरक्षण देणारी 'प्रधानमंत्री फसल बीमा योजना' (PMFBY) कधीपासून लागू झाली?",
+        "en": "From which cropping season was the Pradhan Mantri Fasal Bima Yojana (PMFBY) launched in India to provide comprehensive crop insurance?"
+      },
+      "options": [
+        { "mr": "खरीप २०१६ (Kharif Season 2016)", "en": "Kharif 2016" },
+        { "mr": "रब्बी २०१४", "en": "Rabi 2014" },
+        { "mr": "खरीप २०१९", "en": "Kharif 2019" },
+        { "mr": "रब्बी २०१२", "en": "Rabi 2012" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(२०१६): शेतकऱ्यांना नैसर्गिक आपत्तीमुळे होणाऱ्या पिकांच्या नुकसानापासून आर्थिक सुरक्षा देण्यासाठी 'प्रधानमंत्री फसल बीमा योजना' (PMFBY) खरीप २०१६ पासून देशात लागू केली गेली.\n\n[संदर्भ: कृषी मंत्रालय रिपोर्ट / रमेश सिंग]",
+        "en": "PMFBY was implemented starting from the Kharif 2016 season to provide affordable crop insurance and financial support to farmers suffering crop loss."
+      }
+    },
+    {
+      "id": 4,
+      "question": {
+        "mr": "भारतातील असंघटित क्षेत्रातील कामगारांची एकात्मिक डेटाबेस नोंदणी करण्यासाठी आणि त्यांना सामाजिक सुरक्षा लाभ मिळवून देण्यासाठी कोणते राष्ट्रीय पोर्टल सुरू केले गेले आहे?",
+        "en": "What is the name of the national database portal launched by the Ministry of Labor and Employment to register unorganized workers in India?"
+      },
+      "options": [
+        { "mr": "ई-श्रम पोर्टल (e-Shram Portal)", "en": "e-Shram Portal" },
+        { "mr": "श्रम सुविधा पोर्टल", "en": "Shram Suvidha Portal" },
+        { "mr": "उमंग प्लॅटफॉर्म", "en": "Umang Platform" },
+        { "mr": "नॅशनल करिअर सर्व्हिस", "en": "National Career Service" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(ई-श्रम): ऑगस्ट २०२१ मध्ये श्रम व रोजगार मंत्रालयाने 'ई-श्रम पोर्टल' सुरू केले, ज्याद्वारे देशातील कोट्यवधी असंघटित कामगारांची (बांधकाम कामगार, हमाल, शेतमजूर इ.) नोंदणी करून त्यांना युनिव्हर्सल अकाउंट नंबर (UAN) दिला जातो.\n\n[संदर्भ: श्रम मंत्रालय रिपोर्ट]",
+        "en": "The e-Shram portal was launched in August 2021 to create a comprehensive national database of unorganized workers and link them with social security schemes."
+      }
+    },
+    {
+      "id": 5,
+      "question": {
+        "mr": "भारतात कामगारांच्या किमान वेतनाचे नियमन करण्यासाठी आणि सर्व कामगारांना वेतनाची सुरक्षा देण्यासाठी संसदेने २०१९ मध्ये कोणते चार नवीन 'श्रम कायदे कोड' (Labour Codes) मंजूर केले?",
+        "en": "Into how many consolidated labor codes did the Indian Parliament subsume 29 central labor laws in 2019-2020?"
+      },
+      "options": [
+        { "mr": "४ श्रम कोड (वेतन कोड, सामाजिक सुरक्षा कोड, औद्योगिक संबंध कोड आणि व्यावसायिक सुरक्षा, आरोग्य व कार्यस्थिती कोड)", "en": "4 Labour Codes (Wages, Social Security, Industrial Relations, and Occupational Safety)" },
+        { "mr": "२ श्रम कोड", "en": "2 Labour Codes" },
+        { "mr": "६ श्रम कोड", "en": "6 Labour Codes" },
+        { "mr": "१० श्रम कोड", "en": "10 Labour Codes" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(श्रम सुधारणा): भारत सरकारने जुन्या २९ गुंतागुंतीच्या श्रम कायद्यांचे सुसूत्रीकरण करून त्यांचे **४ सुटसुटीत श्रम संहितेत** (Labour Codes) रूपांतर केले आहे.\n\n[संदर्भ: श्रम मंत्रालय / रमेश सिंग]",
+        "en": "The Indian Parliament consolidated 29 archaic central labor laws into 4 comprehensive Labour Codes covering wages, social security, industrial relations, and occupational safety."
+      }
+    },
+    {
+      "id": 6,
+      "question": {
+        "mr": "भारतात 'खाद्य सुरक्षा आणि पोषण' सुधारण्यासाठी अंगणवाडी व शालेय स्तरावर राबवली जाणारी 'पीएम पोषण योजना' (PM POSHAN Scheme - पूर्वीची मध्यान भोजन योजना) कोणत्या मंत्रालयांतर्गत येते?",
+        "en": "Under which Union Ministry is the 'PM POSHAN Scheme' (formerly Mid-Day Meal Scheme) implemented in schools?"
+      },
+      "options": [
+        { "mr": "केंद्रीय शिक्षण मंत्रालय (Ministry of Education)", "en": "Ministry of Education" },
+        { "mr": "महिला आणि बाल विकास मंत्रालय", "en": "Ministry of Women and Child Development" },
+        { "mr": "आरोग्य आणि कुटुंब कल्याण मंत्रालय", "en": "Ministry of Health and Family Welfare" },
+        { "mr": "अन्न आणि सार्वजनिक वितरण मंत्रालय", "en": "Ministry of Consumer Affairs" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(पीएम पोषण): शालेय विद्यार्थ्यांचे पोषणमान सुधारण्यासाठी 'पीएम पोषण योजना' (PM POSHAN) केंद्रीय 'शिक्षण मंत्रालयाद्वारे' (Ministry of Education) राबवली जाते.\n\n[संदर्भ: शिक्षण मंत्रालय रिपोर्ट]",
+        "en": "The PM POSHAN scheme (formerly Mid-Day Meal Scheme) is implemented by the Ministry of Education to boost nutritional status and school enrollment."
+      }
+    },
+    {
+      "id": 7,
+      "question": {
+        "mr": "भारतात बालमृत्यू व मातामृत्यू रोखण्यासाठी आणि गर्भवती महिलांना आर्थिक व वैद्यकीय सहाय्य देणारी कोणती महत्त्वाची योजना राबवली जाते?",
+        "en": "Which maternal welfare scheme provides cash incentives to pregnant women and lactating mothers for health and nutrition needs?"
+      },
+      "options": [
+        { "mr": "प्रधानमंत्री मातृ वंदना योजना (PMMVY - Pradhan Mantri Matru Vandana Yojana)", "en": "Pradhan Mantri Matru Vandana Yojana (PMMVY)" },
+        { "mr": "जननी सुरक्षा योजना", "en": "Janani Suraksha Yojana" },
+        { "mr": "मातृ व बाल आरोग्य मिशन", "en": "Maternal and Child Health Mission" },
+        { "mr": "सुकन्या समृद्धी योजना", "en": "Sukanya Samriddhi Yojana" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(PMMVY): पहिल्यांदा आई होणाऱ्या गर्भवती महिलांना व स्तनदा मातांना पोषण व आरोग्यविषयक गरजांसाठी थेट बँक खात्यात टप्प्याटप्प्याने आर्थिक मदत देणारी 'प्रधानमंत्री मातृ वंदना योजना' (PMMVY) राबवली जाते.\n\n[संदर्भ: महिला व बाल विकास मंत्रालय]",
+        "en": "PMMVY is a direct benefit transfer (DBT) maternity benefit scheme providing partial wage compensation to pregnant and lactating women for their first child."
+      }
+    },
+    {
+      "id": 8,
+      "question": {
+        "mr": "मुलींच्या भविष्यातील शिक्षणासाठी आणि विवाहासाठी बचत व्हावी म्हणून केंद्र सरकारने २०१५ मध्ये कोणती छोटी बचत योजना सुरू केली?",
+        "en": "Which small savings scheme was launched in 2015 under the 'Beti Bachao Beti Padhao' campaign to secure a financial corpus for a girl child?"
+      },
+      "options": [
+        { "mr": "सुकन्या समृद्धी योजना (Sukanya Samriddhi Account Scheme)", "en": "Sukanya Samriddhi Account Scheme" },
+        { "mr": "बालिका समृद्धी योजना", "en": "Balika Samriddhi Yojana" },
+        { "mr": "माय कन्या डिपॉजिट योजना", "en": "My Kanya Deposit Scheme" },
+        { "mr": "किशोरी बालिका बचत योजना", "en": "Kishori Balika Savings Scheme" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(सुकन्या समृद्धी): २०१५ मध्ये 'बेटी बचाओ बेटी पढ़ाओ' अंतर्गत मुलींच्या उच्च शिक्षण व विवाहाच्या खर्चासाठी पालकांना उच्च व्याजदर देणारे 'सुकन्या समृद्धी खाते' (SSA) सुरू केले गेले.\n\n[संदर्भ: आर्थिक पाहणी अहवाल / रमेश सिंग]",
+        "en": "The Sukanya Samriddhi Yojana is a small savings scheme launched to encourage parents to build a financial fund for their girl child's education and marriage."
+      }
+    },
+    {
+      "id": 9,
+      "question": {
+        "mr": "भारतीय अर्थव्यवस्थेत 'वित्तीय स्थिरता अहवाल' (Financial Stability Report - FSR) दर सहा महिन्यांनी कोणती संस्था प्रकाशित करते?",
+        "en": "Which financial institution publishes the biannual 'Financial Stability Report' (FSR) assessing systemic risks in India?"
+      },
+      "options": [
+        { "mr": "भारतीय रिझर्व्ह बँक (RBI)", "en": "Reserve Bank of India" },
+        { "mr": "सेबी (SEBI)", "en": "SEBI" },
+        { "mr": "केंद्रीय वित्त मंत्रालय", "en": "Union Ministry of Finance" },
+        { "mr": "निती आयोग", "en": "NITI Aayog" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(आरबीआय): 'वित्तीय स्थिरता अहवाल' (FSR) हा आरबीआयद्वारे दर सहा महिन्यांनी प्रसिद्ध केला जाणारा अहवाल आहे, ज्यामध्ये बँकिंग क्षेत्राची तब्येत, जोखीम आणि मॅक्रो-इकोनॉमिक स्थैर्याचे मूल्यांकन केले जाते.\n\n[संदर्भ: RBI Bulletin]",
+        "en": "The RBI publishes the biannual Financial Stability Report (FSR), reflecting the central bank's assessment of systemic risks and resilience of the Indian financial system."
+      }
+    },
+    {
+      "id": 10,
+      "question": {
+        "mr": "भारतात लघु व मध्यम उद्योगांसाठी डिजिटल क्रेडिट आणि सुलभ वित्तपुरवठा उपलब्ध करून देण्यासाठी कोणती नवी सार्वजनिक डिजिटल सार्वजनिक पायाभूत सुविधा (DPI) उभी केली जात आहे?",
+        "en": "What is the name of the new digital public infrastructure (DPI) launched to facilitate frictionless credit for MSMEs and farmers in India?"
+      },
+      "options": [
+        { "mr": "ओपन क्रेडिट अनेबलिंग नेटवर्क (OCEN - Open Credit Enablement Network)", "en": "Open Credit Enablement Network (OCEN)" },
+        { "mr": "डिजिटल कर्ज ग्रीड", "en": "Digital Credit Grid" },
+        { "mr": "युनिफाइड लेंडिंग इंटरफेस", "en": "Unified Lending Interface (ULI)" },
+        { "mr": "फिनटेक एक्सप्रेस नेटवर्क", "en": "Fintech Express Network" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(OCEN): भारतात कर्ज देण्याची प्रक्रिया सुटसुटीत आणि डिजिटल करण्यासाठी 'ओपन क्रेडिट अनेबलिंग नेटवर्क' (OCEN) ही डिजिटल सार्वजनिक पायाभूत सुविधा विकसित केली जात आहे.\n\n[संदर्भ: RBI / NITI Aayog Fintech Report]",
+        "en": "OCEN (Open Credit Enablement Network) is a pioneering open-network digital public infrastructure designed to democratize credit and scale lending to MSMEs and individuals."
+      }
+    },
+    {
+      "id": 11,
+      "question": {
+        "mr": "महाराष्ट्राच्या आर्थिक व सामाजिक विकासात 'अण्णासाहेब पाटील आर्थिक मागास विकास महामंडळ' काय कार्य करते?",
+        "en": "What is the primary socioeconomic mandate of the 'Annasaheb Patil Economically Backward Development Corporation' in Maharashtra?"
+      },
+      "options": [
+        { "mr": "आर्थिकदृष्ट्या दुर्बल घटकातील (EWS) तरुणांना स्वतःचा व्यवसाय सुरू करण्यासाठी व्याज परतावा योजना व सुलभ कर्ज पुरवणे", "en": "Providing interest-subsidy loans to youth from economically weaker sections to foster self-employment" },
+        { "mr": "फक्त सरकारी नोकऱ्यात आरक्षण देणे", "en": "Providing reservations in government jobs exclusively" },
+        { "mr": "शेतकऱ्यांची शेतजमीन जप्त करणे", "en": "Acquiring agricultural lands" },
+        { "mr": "मोठ्या बहुराष्ट्रीय कंपन्यांना कारखाने देणे", "en": "Setting up multinational factories" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(महाराष्ट्र शासन): मराठा व इतर आर्थिक मागास घटकांमधील तरुणांना स्वयंरोजगारासाठी बँक कर्जावर 'व्याज परतावा' (Interest Subsidy) देऊन त्यांना उद्योजक बनवण्यासाठी हे महामंडळ कार्य करते.\n\n[संदर्भ: महाराष्ट्र शासनाचे शासन निर्णय / डॉ. गाठाळ]",
+        "en": "The corporation provides interest subsidies on bank loans taken by youth from economically weaker sections in Maharashtra to promote entrepreneurial ventures."
+      }
+    },
+    {
+      "id": 12,
+      "question": {
+        "mr": "भारताच्या परकीय व्यापारात 'लॉजिस्टिक्स सुलभता' (Ease of Logistics) मोजण्यासाठी आणि राज्यांची कामगिरी ट्रॅक करण्यासाठी केंद्र सरकार कोणता इंडेक्स जाहीर करते?",
+        "en": "Which index is released by the Ministry of Commerce and Industry to assess logistics performance and infrastructure efficiency across Indian states?"
+      },
+      "options": [
+        { "mr": "लीड्स इंडेक्स (LEADS - Logistics Ease Across Different States)", "en": "LEADS Index (Logistics Ease Across Different States)" },
+        { "mr": "व्यापार सुलभता इंडेक्स (Ease of Doing Business)", "en": "Ease of Doing Business Index" },
+        { "mr": "राष्ट्रीय लॉजिस्टिक्स ग्रीड", "en": "National Logistics Grid" },
+        { "mr": "एक्सपोर्ट रेडिनेस इंडेक्स", "en": "Export Preparedness Index" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(LEADS इंडेक्स): वाणिज्य मंत्रालयाद्वारे 'लीड्स' (LEADS) इंडेक्स जाहीर केला जातो, जो राज्यांमधील रस्ते, गोदामे आणि वाहतूक सुलभतेच्या आधारे राज्यांचे मानांकन ठरवतो.\n\n[संदर्भ: वाणिज्य मंत्रालय रिपोर्ट]",
+        "en": "The LEADS (Logistics Ease Across Different States) index evaluates states based on their logistics infrastructure, services, and regulatory environment."
+      }
+    },
+    {
+      "id": 13,
+      "question": {
+        "mr": "भारतीय अर्थव्यवस्थेत 'सहकारी साखर कारखानदारी आणि कृषी पणन' सुधारण्यासाठी केंद्र सरकारने अलीकडे कोणत्या कायद्यात किंवा सहकार क्षेत्रात ऐतिहासिक बदल केले आहेत?",
+        "en": "What major legislative amendment framework empowered cooperative societies in India with constitutional backing?"
+      },
+      "options": [
+        { "mr": "९७ वी घटनादुरुस्ती २०११ (97th Constitutional Amendment Act 2011 - सहकारखाना व सहकारी संस्थांना मूलभूत अधिकार)", "en": "97th Constitutional Amendment Act, 2011" },
+        { "mr": "१०१ वी घटनादुरुस्ती", "en": "101st Amendment" },
+        { "mr": "८६ वी घटनादुरुस्ती", "en": "86th Amendment" },
+        { "mr": "७३ वी घटनादुरुस्ती", "en": "73rd Amendment" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(९७ वी घटनादुरुस्ती): २०११ च्या ९७ व्या घटनादुरुस्तीद्वारे संविधानात भाग ९-ब (Part IX-B) जोडला गेला आणि सहकारी संस्था स्थापन करण्याचा अधिकार 'मूलभूत हक्क' (कलम १९) म्हणून समाविष्ट केला गेला.\n\n[संदर्भ: भारतीय राजव्यवस्था - एम. लक्ष्मीकांत]",
+        "en": "The 97th Constitutional Amendment Act of 2011 gave constitutional status and protection to cooperative societies, adding Part IX-B to the Constitution."
+      }
+    },
+    {
+      "id": 14,
+      "question": {
+        "mr": "भारतात 'राष्ट्रीय स्टार्टअप दिवस' (National Startup Day) म्हणून कोणता दिवस दरवर्षी पाळला जातो?",
+        "en": "Which date is officially observed annually as 'National Startup Day' in India?"
+      },
+      "options": [
+        { "mr": "१६ जानेवारी (January 16)", "en": "January 16" },
+        { "mr": "१ जुलै", "en": "July 1" },
+        { "mr": "२५ सप्टेंबर", "en": "September 25" },
+        { "mr": "८ एप्रिल", "en": "April 8" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(राष्ट्रीय स्टार्टअप दिवस): भारतात नवउद्योजकांना व स्टार्टअप संस्कृतीला प्रोत्साहन देण्यासाठी दरवर्षी **१६ जानेवारी** हा दिवस 'राष्ट्रीय स्टार्टअप दिवस' म्हणून साजरा केला जातो.\n\n[संदर्भ: DPIIT / पीआयबी]",
+        "en": "January 16 is officially celebrated as National Startup Day in India to acknowledge and promote the burgeoning startup ecosystem."
+      }
+    },
+    {
+      "id": 15,
+      "question": {
+        "mr": "भारतीय अर्थव्यवस्थेत 'फिनटेक' (FinTech) उद्योगांचे नियमन आणि नियमपालनासाठी कोणत्या यंत्रणेद्वारे मुख्य नियंत्रण ठेवले जाते?",
+        "en": "Which regulatory sandbox approach is adopted by the RBI and SEBI to foster safe fintech innovations?"
+      },
+      "options": [
+        { "mr": "नियामक सॅण्डबॉक्स (Regulatory Sandbox - नियमांच्या चौकटीत राहून नावीन्यपूर्ण प्रयोग तपासण्याची मुभा)", "en": "Regulatory Sandbox framework" },
+        { "mr": "डिजिटल परवाना बोर्ड", "en": "Digital Licensing Board" },
+        { "mr": "फिनटेक एकाधिकार समिती", "en": "Fintech Monopoly Committee" },
+        { "mr": "सायबर सुरक्षा टास्क फोर्स", "en": "Cybersecurity Task Force" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(नियामक सॅण्डबॉक्स): फिनटेक कंपन्यांना त्यांच्या नाविन्यपूर्ण उत्पादनांची प्रत्यक्ष बाजारात सुरक्षित चाचणी घेण्यासाठी 'नियामक सॅण्डबॉक्स' (Regulatory Sandbox) ही नियंत्रित मोकळीक आरबीआय व सेबीने उपलब्ध करून दिली आहे.\n\n[संदर्भ: RBI Guidelines]",
+        "en": "A Regulatory Sandbox provides a controlled, live testing environment where fintech startups can test innovative financial products under regulatory oversight."
+      }
+    },
+    {
+      "id": 16,
+      "question": {
+        "mr": "महाराष्ट्राच्या आर्थिक पाहणीनुसार राज्याच्या अर्थव्यवस्थेत कोणत्या क्षेत्राचा (Sector) सर्वाधिक हिस्सा (GVA मधील वाटा) आहे?",
+        "en": "According to the Economic Survey of Maharashtra, which economic sector contributes the largest share to the state's Gross Value Added (GVA)?"
+      },
+      "options": [
+        { "mr": "सेवा क्षेत्र (Tertiary / Service Sector - सर्वाधिक वाटा)", "en": "Service Sector (Tertiary Sector)" },
+        { "mr": "कृषी व संलग्न क्षेत्र", "en": "Agriculture and allied sector" },
+        { "mr": "उत्पादन व खाणकाम क्षेत्र", "en": "Manufacturing and mining" },
+        { "mr": "वीज व गॅस निर्मिती क्षेत्र", "en": "Electricity and gas sector" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(महाराष्ट्र अर्थव्यवस्था): महाराष्ट्राच्या अर्थव्यवस्थेत (तसेच राष्ट्रीय अर्थव्यवस्थेत) 'सेवा क्षेत्राचा' (Tertiary Sector) GVA मधील वाटा सर्वाधिक (सुमारे ५०% पेक्षा जास्त) आहे, त्यानंतर उद्योग व कृषी येतात.\n\n[संदर्भ: महाराष्ट्र आर्थिक पाहणी अहवाल]",
+        "en": "The tertiary (service) sector accounts for the largest share of Maharashtra's Gross Value Added (GVA), followed by the secondary and primary sectors."
+      }
+    },
+    {
+      "id": 17,
+      "question": {
+        "mr": "भारतात 'हरित हायड्रोजन धोरण' (National Green Hydrogen Mission) अंतर्गत भारताला काय बनवण्याचे उद्दिष्ट ठेवले आहे?",
+        "en": "What is the strategic ambition of the National Green Hydrogen Mission launched by the Indian government?"
+      },
+      "options": [
+        { "mr": "भारताला हरित हायड्रोजनचे उत्पादन, वापर आणि निर्यातीचे जागतिक केंद्र (Global Hub) बनवणे", "en": "To make India a global hub for the production, utilization, and export of Green Hydrogen" },
+        { "mr": "कोळशाचा वापर तिप्पट करणे", "en": "To triple coal usage" },
+        { "mr": "परदेशी तेल आयात वाढवणे", "en": "To boost crude oil imports" },
+        { "mr": "हायड्रोजन वाहनांवर बंदी घालणे", "en": "To ban hydrogen vehicles" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(हरित हायड्रोजन): भारताला ऊर्जा क्षेत्रात स्वावलंबी आणि नेट-झिरोच्या दिशेने नेण्यासाठी 'राष्ट्रीय हरित हायड्रोजन मिशन' अंतर्गत भारताला जगाचे हब बनवण्याचे उद्दिष्ट आहे.\n\n[संदर्भ: नवीन व नवीकरणीय ऊर्जा मंत्रालय / रमेश सिंग]",
+        "en": "The National Green Hydrogen Mission aims to position India as a global hub for the production, usage, and export of green hydrogen, cutting emissions."
+      }
+    },
+    {
+      "id": 18,
+      "question": {
+        "mr": "भारतीय अर्थव्यवस्थेत 'थेट लाभ हस्तांतरण' (Direct Benefit Transfer - DBT) प्रणालीचा मुख्य फायदा काय आहे?",
+        "en": "What is the core structural advantage of the Direct Benefit Transfer (DBT) mechanism in welfare delivery?"
+      },
+      "options": [
+        { "mr": "सरकारी योजनांचे अनुदान थेट लाभार्थ्यांच्या बँक खात्यात जमा होऊन गळती (Leakages) व मध्यस्थ दलाल नष्ट करणे", "en": "Transferring welfare subsidies directly into beneficiaries' bank accounts, eliminating middlemen and leakage" },
+        { "mr": "बँकांच्या शाखा बंद करणे", "en": "Closing down commercial bank branches" },
+        { "mr": "केवळ रोख स्वरूपात पैसे वाटणे", "en": "Distributing cash physically" },
+        { "mr": "अनुदान पूर्णपणे बंद करणे", "en": "Abolishing all subsidies" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(DBT प्रणाली): जन-धन, आधार आणि मोबाईल (JAM ट्रिनिटी) च्या आधारे 'DBT' मुळे सरकारी योजनांमधील गळती थांबली असून पैसे थेट लाभार्थ्यांच्या बँक खात्यात पोहोचतात.\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग]",
+        "en": "DBT uses the JAM (Jan Dhan-Aadhaar-Mobile) trinity to route welfare benefits directly to recipients, curbing leakages and bureaucratic delays."
+      }
+    },
+    {
+      "id": 19,
+      "question": {
+        "mr": "भारतात 'भारतीय स्पर्धा आयोग' (CCI - Competition Commission of India) ही संस्था कोणत्या कायद्यानुसार आणि कशासाठी स्थापन झाली आहे?",
+        "en": "Under which legislative act was the Competition Commission of India (CCI) established to prevent anti-competitive practices?"
+      },
+      "options": [
+        { "mr": "स्पर्धा कायदा, २००२ (Competition Act, 2002)", "en": "Competition Act, 2002" },
+        { "mr": "एमआरटीपी कायदा, १९६९", "en": "MRTP Act, 1969" },
+        { "mr": "कंपनी कायदा, २०१३", "en": "Companies Act, 2013" },
+        { "mr": "ग्राहक संरक्षण कायदा, २०१९", "en": "Consumer Protection Act, 2019" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(CCI): बाजारातील मक्तेदारी (Monopoly) मोडून काढण्यासाठी, स्पर्धा टिकवून ठेवण्यासाठी आणि ग्राहकांच्या हिताचे रक्षण करण्यासाठी 'स्पर्धा कायदा २००२' अन्वये CCI ची स्थापना झाली.\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग]",
+        "en": "The Competition Commission of India (CCI) was established under the Competition Act, 2002, to eliminate anti-competitive practices, promote markets, and protect consumers."
+      }
+    },
+    {
+      "id": 20,
+      "question": {
+        "mr": "भारतीय वित्तीय बाजारात 'म्युच्युअल फंड्स' च्या युनिट्सच्या खरेदी-विक्रीवर नियंत्रण ठेवणारी केंद्रीय संस्था कोणती?",
+        "en": "Which statutory regulator oversees and governs Mutual Funds and asset management companies in India?"
+      },
+      "options": [
+        { "mr": "सेबी (SEBI - Securities and Exchange Board of India)", "en": "SEBI" },
+        { "mr": "भारतीय रिझर्व्ह बँक (RBI)", "en": "Reserve Bank of India" },
+        { "mr": "इरडा (IRDAI)", "en": "IRDAI" },
+        { "mr": "नाबार्ड (NABARD)", "en": "NABARD" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(सेबी): भारतातील सर्व म्युच्युअल फंड्स, स्टॉक एक्स्चेंज आणि पोर्टफोलिओ मॅनेजमेंट कंपन्यांचे नियमन 'सेबी' (SEBI) करते.\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग]",
+        "en": "SEBI is the apex statutory regulator governing mutual funds, asset management companies, and capital markets in India."
+      }
+    },
+    {
+      "id": 21,
+      "question": {
+        "mr": "भारतीय अर्थव्यवस्थेच्या संदर्भात 'सकल राष्ट्रीय उत्पादन' (GNP) आणि 'निव्वळ राष्ट्रीय उत्पादन' (NNP - Net National Product) मधील तांत्रिक फरक काय आहे?",
+        "en": "What is the precise economic difference between Gross National Product (GNP) and Net National Product (NNP)?"
+      },
+      "options": [
+        { "mr": "GNP मधून 'घसारा' (Depreciation / Capital Consumption Allowance) वजा केल्यावर NNP मिळते", "en": "NNP is obtained by subtracting Depreciation (Capital Consumption Allowance) from GNP" },
+        { "mr": "NNP मध्ये परकीय गुंतवणूक जोडली जाते", "en": "NNP adds foreign investments" },
+        { "mr": "GNP हा नेहमी NNP पेक्षा कमी असतो", "en": "GNP is always less than NNP" },
+        { "mr": "दोन्ही समान आहेत", "en": "Both are identical" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(राष्ट्रीय उत्पन्न): कोणत्याही वस्तूंच्या उत्पादनात यंत्रसामग्रीची होणारी झीज किंवा 'घसारा' (Depreciation) GNP मधून वजा केला की 'निव्वळ राष्ट्रीय उत्पादन' (NNP) मिळते [NNP = GNP - Depreciation].\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग]",
+        "en": "Net National Product (NNP) is calculated by subtracting depreciation (wear and tear of capital assets) from Gross National Product (GNP)."
+      }
+    },
+    {
+      "id": 22,
+      "question": {
+        "mr": "भारतात ग्रामीण विकासासाठी आणि शेतकऱ्यांच्या उत्पादनांना बाजारपेठ मिळवून देण्यासाठी कोणत्या इलेक्ट्रॉनिक प्लॅटफॉर्मचा विस्तार केला जात आहे?",
+        "en": "Which electronic trading network connects farmers directly to nationwide buyers, streamlining agricultural supply chains?"
+      },
+      "options": [
+        { "mr": "ई-नाम (e-NAM - National Agriculture Market)", "en": "e-NAM" },
+        { "mr": "किसान डिजिटल बाजार", "en": "Kisan Digital Bazaar" },
+        { "mr": "अग्री-मंडी नेटवर्क", "en": "Agri-Mandi Network" },
+        { "mr": "ग्राम व्यापार पोर्टल", "en": "Gram Vyapar Portal" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(e-NAM): कृषी उत्पन्न बाजार समित्यांच्या आधुनिकीकरणासाठी आणि देशभरातील शेतकऱ्यांना डिजिटल बाजारपेठेत शेतमाल विकण्यासाठी 'ई-नाम' (e-NAM) पोर्टल कार्यरत आहे.\n\n[संदर्भ: कृषी मंत्रालय रिपोर्ट]",
+        "en": "e-NAM integrates agricultural mandis across India into a unified online marketplace, enabling transparent online bidding for farmers' produce."
+      }
+    },
+    {
+      "id": 23,
+      "question": {
+        "mr": "भारतीय वित्तीय बाजारात 'आंतरराष्ट्रीय वित्तीय सेवा केंद्र' (IFSC) भारतामध्ये कुठे उभारले गेले आहे?",
+        "en": "Where is India's maiden international financial services centre (IFSC) located, functioning as a global financial hub?"
+      },
+      "options": [
+        { "mr": "गुजरात इंटरनॅशनल फायनान्स टेक-सिटी (GIFT City, Gandhinagar, Gujarat)", "en": "GIFT City (Gandhinagar, Gujarat)" },
+        { "mr": "मुंबई (Bandra Kurla Complex)", "en": "Mumbai (BKC)" },
+        { "mr": "बेंगळुरू (IT Corridor)", "en": "Bengaluru" },
+        { "mr": "चेन्नई (IT Park)", "en": "Chennai" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(GIFT City): भारताचे पहिले आणि एकमेव आंतरराष्ट्रीय वित्तीय सेवा केंद्र (IFSC) गांधीनगर, गुजरात येथील 'GIFT City' (Gujarat International Finance Tec-City) येथे उभारले गेले आहे.\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग]",
+        "en": "GIFT City in Gandhinagar, Gujarat, houses India's first operational International Financial Services Centre (IFSC), catering to global financial services."
+      }
+    },
+    {
+      "id": 24,
+      "question": {
+        "mr": "भारताच्या परकीय व्यापारात 'निर्यात सवलत योजना' किंवा स्थानिक करांची परतफेड करणारी कोणती महत्त्वाची योजना लागू केली गेली आहे?",
+        "en": "Which scheme was introduced to refund embedded central, state, and local taxes/levies on exported products to boost Indian export competitiveness?"
+      },
+      "options": [
+        { "mr": "रोतेप योजना (RoDTEP - Remission of Duties and Taxes on Exported Products)", "en": "RoDTEP Scheme" },
+        { "mr": "मेक इन इंडिया एक्स्पोर्ट इन्सेंटिभ", "en": "Make in India Export Incentive" },
+        { "mr": "निर्यात विकास निधी", "en": "Export Development Fund" },
+        { "mr": "कस्टम ड्युटी माफी मोहीम", "en": "Customs Duty Waiver Mission" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(RoDTEP): पूर्वीच्या MEIS योजनेच्या जागी डब्लूटीओ सुसंगत अशी 'रोतेप' (RoDTEP) योजना सुरू केली गेली, जी उत्पादनांवर आकारले जाणारे विविध स्थानिक व राज्य कर निर्यातक परतावा म्हणून परत करते.\n\n[संदर्भ: परकीय व्यापार धोरण / रमेश सिंग]",
+        "en": "RoDTEP (Remission of Duties and Taxes on Exported Products) refunds previously un-refunded domestic taxes and levies on exports, enhancing global competitiveness."
+      }
+    },
+    {
+      "id": 25,
+      "question": {
+        "mr": "भारतीय अर्थव्यवस्थेच्या संदर्भात 'शाश्वत विकास आणि सर्वसमावेशकता' साध्य करताना प्रशासकीय पातळीवर सर्वात महत्त्वाची अट कोणती मानली जाते?",
+        "en": "What is considered the foundational governance requirement for achieving sustainable and inclusive socio-economic development in India?"
+      },
+      "options": [
+        { "mr": "पारदर्शक अंमलबजावणी, तंत्रज्ञानाचा वापर (Digital Governance), भ्रष्टाचार निर्मूलन आणि सहकारी संघराज्यीय सहकार्य (Cooperative Federalism)", "en": "Transparent execution, digital governance, anti-corruption, and robust cooperative federalism between Centre and States" },
+        { "mr": "केवळ कागदी योजनांची घोषणा करणे", "en": "Announcing paper-only schemes" },
+        { "mr": "सर्व कर पूर्णपणे माफ करणे", "en": "Waiving all taxes permanently" },
+        { "mr": "परदेशी मदत पूर्णपणे टाळणे", "en": "Rejecting foreign aid completely" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(अंतिम निष्कर्ष): देशाचा शाश्वत व सर्वसमावेशक विकास साधण्यासाठी पारदर्शक डिजिटल प्रशासन (जैसे की JAM ट्रिनिटी), भ्रष्टाचार निर्मूलन आणि केंद्र-राज्यांमधील उत्तम समन्वय (सहकारी संघराज्य) ही प्रशासकीय त्रिसूत्री अत्यंत महत्त्वाची ठरते.\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग / NITI Aayog Governance Framework]",
+        "en": "(Conclusion): Sustained inclusive development relies fundamentally on transparent digital governance, systemic accountability, and active cooperative federalism across all levels of administration."
+      }
+    }
+  ]
+}

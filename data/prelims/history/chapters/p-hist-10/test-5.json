@@ -1,0 +1,464 @@
+{
+  "testId": "p-hist-10-t5",
+  "title": {
+    "mr": "आर्थिक व सामाजिक विकास (बँकिंग, सार्वजनिक वित्त व आंतरराष्ट्रीय संस्था) — सराव 5",
+    "en": "Economic and Social Development (Banking, Public Finance & International Institutions) — Practice Test 5"
+  },
+  "durationMinutes": 20,
+  "marksPerQuestion": 1,
+  "negativeMarking": 0.25,
+  "totalMarks": 25,
+  "difficulty": "मध्यम ते काठिण्य",
+  "questions": [
+    {
+      "id": 1,
+      "question": {
+        "mr": "भारतीय रिझर्व्ह बँकेची (RBI) स्थापना कोणत्या कायद्यानुसार आणि कोणत्या वर्षात झाली होती?",
+        "en": "Under which legislative act and in which year was the Reserve Bank of India (RBI) established?"
+      },
+      "options": [
+        { "mr": "भारतीय रिझर्व्ह बँक कायदा, १९३४ (RBI Act, 1934; स्थापना: १ एप्रिल १९३५)", "en": "Reserve Bank of India Act, 1934 (Established: April 1, 1935)" },
+        { "mr": "भारतीय बँकिंग नियमन कायदा, १९४९", "en": "Banking Regulation Act, 1949" },
+        { "mr": "इम्पीरियल बँक कायदा, १९२०", "en": "Imperial Bank Act, 1920" },
+        { "mr": "कंपनी कायदा, १९५६", "en": "Companies Act, 1956" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९३५): हिल्टन यंग आयोग (रायल कमिशन) च्या शिफारसीनुसार 'भारतीय रिझर्व्ह बँक कायदा, १९३४' अन्वये १ एप्रिल १९३५ रोजी आरबीआयची स्थापना झाली (राष्ट्रीयीकरण १ जानेवारी १९४९ रोजी झाले).\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग / एम. लक्ष्मीकांत]",
+        "en": "(1935): Recommended by the Hilton Young Commission, the RBI was set up on April 1, 1935, under the Reserve Bank of India Act, 1934, and nationalized in 1949.\n\n"
+      }
+    },
+    {
+      "id": 2,
+      "question": {
+        "mr": "भारतीय रिझर्व्ह बँकेच्या पतधोरणातील 'रेपो रेट' (Repo Rate) म्हणजे नेमके काय?",
+        "en": "What is the economic definition of 'Repo Rate' in the monetary policy operations of the RBI?"
+      },
+      "options": [
+        { "mr": "ज्या दराने आरबीआय व्यावसायिक बँकांना अल्प मुदतीसाठी कर्ज पुरवठा करते", "en": "The rate at which the RBI lends short-term money to commercial banks against securities" },
+        { "mr": "ज्या दराने व्यावसायिक बँका आरबीआयकडे ठेवी ठेवतात", "en": "The rate at which commercial banks park excess funds with RBI" },
+        { "mr": "सर्वसामान्य नागरिकांच्या ठेवींवरील व्याजदर", "en": "The interest rate paid on public fixed deposits" },
+        { "mr": "केंद्र सरकारने आरबीआयकडून घेतलेल्या कर्जाचा व्याजदर", "en": "Interest charged on government borrowings from RBI" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(अर्थशास्त्र): रेपो रेट (Repurchase Rate) म्हणजे ज्या व्याजदराने व्यावसायिक बँका त्यांच्या अल्पकालीन गरजा भागवण्यासाठी आरबीआयकडून तारण ठेवून कर्ज घेतात. यात वाढ केल्यास बाजारात कर्जे महिनाग होतात व महागाई नियंत्रित राहते.\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग]",
+        "en": "Repo rate is the benchmark interest rate at which the central bank (RBI) lends short-term funds to commercial banks, typically against government securities.\n\n"
+      }
+    },
+    {
+      "id": 3,
+      "question": {
+        "mr": "आरबीआयच्या पतधोरणातील 'रिव्हर्स रेपो रेट' (Reverse Repo Rate) चा मुख्य उद्देश काय असतो?",
+        "en": "What is the primary objective of the 'Reverse Repo Rate' managed by the Reserve Bank of India?"
+      },
+      "options": [
+        { "mr": "व्यापारी बँकांनी त्यांची अतिरिक्त रोकड (Excess Liquidity) आरबीआयकडे सुरक्षित ठेवावी आणि त्यावर व्याज मिळावे", "en": "To absorb excess liquidity from commercial banks by parking funds with the RBI" },
+        { "mr": "सामान्य जनतेला स्वस्त कर्ज मिळवून देणे", "en": "To provide cheap retail credit to the public" },
+        { "mr": "परकीय चलन साठा वाढवणे", "en": "To accumulate foreign exchange reserves" },
+        { "mr": "कृषी कर्जांची वसुली थांबवणे", "en": "To suspend agricultural loan recoveries" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(अर्थशास्त्र): जेव्हा बँकांकडे अतिरिक्त पैसा (Liquidity) असतो, तेव्हा तो पैसा त्या आरबीआयकडे सुरक्षित ठेवतात आणि ज्या दराने त्यांना आरबीआय व्याज देते त्याला रिव्हर्स रेपो रेट म्हणतात. यामुळे बाजारातील अतिरिक्त पैसा शोषून घेतला जातो.\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग]",
+        "en": "The reverse repo rate is the interest rate at which the RBI borrows money from commercial banks, serving as a tool to absorb surplus liquidity from the financial system.\n\n"
+      }
+    },
+    {
+      "id": 4,
+      "question": {
+        "mr": "वाणिज्य बँकांना त्यांच्या एकूण ठेवींपैकी (Net Demand and Time Liabilities - NDTL) निश्चित रक्कम रोख स्वरूपात स्वतःकडे ठेवावी लागते, त्यास काय म्हणतात?",
+        "en": "What is the mandated percentage of total deposits (NDTL) that commercial banks must maintain in liquid form with themselves called?"
+      },
+      "options": [
+        { "mr": "वैधानिक तरलता प्रमाण (Statutory Liquidity Ratio - SLR)", "en": "Statutory Liquidity Ratio (SLR)" },
+        { "mr": "रोख राखीव प्रमाण (Cash Reserve Ratio - CRR)", "en": "Cash Reserve Ratio (CRR)" },
+        { "mr": "रेपो रेट", "en": "Repo Rate" },
+        { "mr": "बँक रेट", "en": "Bank Rate" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(बँकिंग): SLR (Statutory Liquidity Ratio) नुसार बँकांना त्यांच्या एकूण ठेवींपैकी ठराविक टक्केवारी सोन्याच्या, सरकारी रोख्यांच्या किंवा रोख स्वरूपात स्वतःच्या तिजोरीत ठेवावी लागते.\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग]",
+        "en": "SLR refers to the minimum percentage of deposits that a commercial bank must maintain in the form of liquid assets like gold, government securities, or cash before lending to customers.\n\n"
+      }
+    },
+    {
+      "id": 5,
+      "question": {
+        "mr": "वाणिज्य बँकांना त्यांच्या NDTL मधील निश्चित रक्कम 'फक्त आरबीआयकडे रोकड स्वरूपात' ठेवलीच पाहिजे, त्या प्रमाणाला काय म्हणतात?",
+        "en": "What is the mandatory fraction of deposits that commercial banks must keep strictly in cash with the RBI called?"
+      },
+      "options": [
+        { "mr": "रोख राखीव प्रमाण (Cash Reserve Ratio - CRR)", "en": "Cash Reserve Ratio (CRR)" },
+        { "mr": "वैधानिक तरलता प्रमाण (SLR)", "en": "Statutory Liquidity Ratio (SLR)" },
+        { "mr": "सीमांत स्थायी सुविधा (MSF)", "en": "Marginal Standing Facility" },
+        { "mr": "खुल्या बाजारपेठेतील उलाढाल (OMO)", "en": "Open Market Operations" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(बँकिंग): CRR (Cash Reserve Ratio) नुसार बँकांना त्यांच्या एकूण ठेवींचे निश्चित प्रमाण थेट आरबीआयकडे रोख स्वरूपात जमा ठेवावे लागते, ज्यावर आरबीआय बँकांना कोणतेही व्याज देत नाही.\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग]",
+        "en": "CRR is the minimum percentage of a bank's total deposits that must be maintained in cash directly with the Reserve Bank of India, earning no interest.\n\n"
+      }
+    },
+    {
+      "id": 6,
+      "question": {
+        "mr": "सार्वजनिक वित्त (Public Finance) मध्ये 'राजकोषीय तूट' (Fiscal Deficit) म्हणजे नेमके काय?",
+        "en": "How is 'Fiscal Deficit' precisely defined in the context of government budgeting and public finance?"
+      },
+      "options": [
+        { "mr": "सरकारचा एकूण खर्च आणि एकूण महसूल (कर्ज वगळून) यांच्यातील तफावत (Total Expenditure minus Total Receipts excluding borrowings)", "en": "Total government expenditure exceeding total non-debt receipts" },
+        { "mr": "केवळ महसुली खर्चातील तूट", "en": "Deficit restricted to revenue accounts only" },
+        { "mr": "सरकारने परदेशातून घेतलेले व्याज", "en": "Total interest paid on foreign loans" },
+        { "mr": "व्यापार तूट आणि चालू खाते तूट यांची बेरीज", "en": "Sum of trade and current account deficits" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(अर्थशास्त्र): राजकोषीय तूट (Fiscal Deficit) म्हणजे सरकारने केलेल्या एकूण खर्च आणि कर्जाशिवाय जमा होणारा एकूण महसूल यांच्यातील फरक होय. ही तूट भागवण्यासाठी सरकारला बाजारातून व परदेशातून कर्ज काढावे लागते.\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग]",
+        "en": "Fiscal deficit is the gap between government's total expenditure and total non-borrowed receipts, indicating the total borrowing requirement of the government.\n\n"
+      }
+    },
+    {
+      "id": 7,
+      "question": {
+        "mr": "महसुली तूट (Revenue Deficit) म्हणजे काय?",
+        "en": "What does 'Revenue Deficit' signify in the government's annual financial statement (Budget)?"
+      },
+      "options": [
+        { "mr": "सरकारचा महसुली खर्च (Revenue Expenditure) हा महसुली उत्पन्नापेक्षा (Revenue Receipts) जास्त असणे", "en": "When government's revenue expenditure exceeds its revenue receipts" },
+        { "mr": "भांडवली खात्यावरील तूट", "en": "Deficit on capital accounts only" },
+        { "mr": "देशाची एकूण परकीय कर्ज तूट", "en": "Total external debt obligation" },
+        { "mr": "राज्यांनी केंद्राकडून घेतलेली आगाऊ उचल", "en": "Advances taken by states from Centre" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(बजेट): महसुली तूट म्हणजे सरकारच्या दैनंदिन प्रशासकीय खर्चासाठी येणारा खर्च त्याच्या महसुली उत्पन्नापेक्षा (कर व इतर उत्पन्न) जास्त असणे होय. यामुळे सरकारला भांडवली स्रोतांतून पैसे काढावे लागतात.\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग]",
+        "en": "Revenue deficit occurs when the government's current revenue expenditures exceed its current revenue receipts, implying government dissaving.\n\n"
+      }
+    },
+    {
+      "id": 8,
+      "question": {
+        "mr": "प्राथमिक तूट (Primary Deficit) कशी काढली जाते?",
+        "en": "How is 'Primary Deficit' calculated in government budget metrics?"
+      },
+      "options": [
+        { "mr": "राजकोषीय तूट वजा मागील कर्जावरील दिले जाणारे व्याज (Fiscal Deficit minus Interest Payments)", "en": "Fiscal Deficit minus Interest Payments on previous borrowings" },
+        { "mr": "महसुली तूट वजा भांडवली तूट", "en": "Revenue Deficit minus Capital Deficit" },
+        { "mr": "एकूण खर्च वजा कर महसूल", "en": "Total expenditure minus tax revenue" },
+        { "mr": "व्यापार तूट अधिक राजकोषीय तूट", "en": "Trade deficit plus fiscal deficit" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(अर्थशास्त्र): प्राथमिक तूट म्हणजे चालू वर्षातील राजकोषीय तुटीतून मागील कर्जावरील 'व्याज भरणा' (Interest Payments) वजा केल्यावर उरणारी रक्कम. यामुळे चालू वर्षातील सरकारच्या प्रत्यक्ष कर्जाचा अंदाज येतो.\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग]",
+        "en": "Primary deficit is calculated by subtracting net interest payments on past debt from the current year's fiscal deficit, showing borrowing needs excluding interest obligations.\n\n"
+      }
+    },
+    {
+      "id": 9,
+      "question": {
+        "mr": "केंद्र सरकारने जुलै २०१६ मध्ये मंजूर केलेल्या आणि महागाई नियंत्रणासाठी मध्यवर्ती बँकेला अधिकार देणाऱ्या 'किमान लक्षित मुदत' (Inflation Targeting) धोरणानुसार भारतातील किरकोळ महागाईचा (CPI Inflation) लक्षित दर किती आहे?",
+        "en": "What is the officially mandated target and tolerance band for retail inflation (CPI Inflation) in India under the monetary policy framework?"
+      },
+      "options": [
+        { "mr": "४% (+/- २% सहनशीलता मर्यादा, म्हणजेच २% ते ६%)", "en": "4% with a tolerance band of +/- 2% (i.e., range of 2% to 6%)" },
+        { "mr": "५% (+/- १%)", "en": "5% (+/- 1%)" },
+        { "mr": "२% (+/- ०.५%)", "en": "2% (+/- 0.5%)" },
+        { "mr": "६% (+/- ३%)", "en": "6% (+/- 3%)" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(महागाई नियंत्रण): सरकार आणि आरबीआयच्या करारानुसार किरकोळ महागाई दर (CPI) हा ४% ठेवावा लागतो, ज्यामध्ये २% ते ६% (±२%) अशी सहनशीलता मर्यादा (Tolerance band) दिली गेली आहे.\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग]",
+        "en": "Under the inflation-targeting framework adopted in 2016, the RBI is mandated to maintain retail inflation (CPI) at 4% with a tolerance band of +/- 2% (2% to 6%).\n\n"
+      }
+    },
+    {
+      "id": 10,
+      "question": {
+        "mr": "आंतरराष्ट्रीय नाणेनिधी (IMF - International Monetary Fund) आणि जागतिक बँक (World Bank) यांची स्थापना कोणत्या ऐतिहासिक परिषदेत झाली होती, ज्यांना 'ब्रेटन वुड्स जुळी' (Bretton Woods Twins) म्हणतात?",
+        "en": "In which historic conference were the IMF and the World Bank established, earning them the moniker 'Bretton Woods Twins'?"
+      },
+      "options": [
+        { "mr": "ब्रेटन वुड्स परिषद, अमेरिका (Bretton Woods Conference, July 1944)", "en": "Bretton Woods Conference (1944)" },
+        { "mr": "यल्टा परिषद, रशिया", "en": "Yalta Conference" },
+        { "mr": "पोत्सडॅम परिषद, जर्मनी", "en": "Potsdam Conference" },
+        { "mr": "सान फ्रान्सिस्को परिषद", "en": "San Francisco Conference" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९४४): जुलै १९४४ मध्ये अमेरिकेतील न्यू हॅम्पशायर येथील 'ब्रेटन वुड्स' येथे भरलेल्या संयुक्त राष्ट्र वाटाघाटी परिषदेत आयएमएफ (IMF) आणि जागतिक बँकेची (World Bank) स्थापना झाली, म्हणून त्यांना 'ब्रेटन वुड्स जुळी' म्हणतात.\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग]",
+        "en": "(1944): The IMF and the World Bank were born out of the United Nations Monetary and Financial Conference held in Bretton Woods, New Hampshire, in July 1944.\n\n"
+      }
+    },
+    {
+      "id": 11,
+      "question": {
+        "mr": "जागतिक बँकेचा (World Bank) एक भाग असणारी 'आंतरराष्ट्रीय विकास संस्था' (International Development Association - IDA) कशासाठी ओळखली जाते?",
+        "en": "What is the primary operational role of the International Development Association (IDA), an affiliate of the World Bank Group?"
+      },
+      "options": [
+        { "mr": "जगातील सर्वात गरीब देशांना अत्यंत सवलतीच्या दरात व व्याजाविना दीर्घकालीन कर्जे व अनुदान देणे ('सॉफ्ट लोन विंडो')", "en": "Providing long-term, interest-free loans and grants to the world's poorest developing countries (Soft Loan Window)" },
+        { "mr": "केवळ श्रीमंत देशांना व्यापारी कर्जे पुरवणे", "en": "Providing commercial loans exclusively to developed nations" },
+        { "mr": "खाजगी कंपन्यांच्या शेअर बाजारात गुंतवणूक करणे", "en": "Investing in private corporate stock markets" },
+        { "mr": "सैनिकी आधुनिकीकरणासाठी शस्त्रे खरेदी करणे", "en": "Financing military armaments" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(जागतिक बँक): आयडीए (IDA) ही जागतिक बँकेची 'सॉफ्ट लोन विंडो' (Soft Loan Window) म्हणून ओळखली जाते, जिथे जगातील अत्यंत गरीब देशांना शून्य किंवा नगण्य व्याजावर विकासासाठी दीर्घ मुदतीचे कर्ज दिले जाते.\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग]",
+        "en": "Known as the World Bank's 'soft loan window', the IDA provides zero to low-interest loans (credits) and grants to the poorest developing nations.\n\n"
+      }
+    },
+    {
+      "id": 12,
+      "question": {
+        "mr": "जागतिक व्यापार संघटनेची (WTO - World Trade Organization) स्थापना कधी झाली आणि तिचे मुख्यालय कुठे आहे?",
+        "en": "When was the World Trade Organization (WTO) established, and where is its headquarters located?"
+      },
+      "options": [
+        { "mr": "स्थापना: १ जानेवारी १९९५ (माराकेश करार), मुख्यालय: जिनिव्हा, स्वित्झर्लंड", "en": "Established: January 1, 1995 (Marrakesh Agreement); Headquarters: Geneva, Switzerland" },
+        { "mr": "स्थापना: १९४५, मुख्यालय: वॉशिंग्टन डी.सी.", "en": "Established: 1945; Washington D.C." },
+        { "mr": "स्थापना: १९६०, मुख्यालय: पॅरिस", "en": "Established: 1960; Paris" },
+        { "mr": "स्थापना: १९८०, मुख्यालय: लंडन", "en": "Established: 1980; London" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९९५): गॅट (GATT) कराराच्या जागी १९९४ च्या 'माराकेश करारावर' स्वाक्षऱ्या होऊन १ जानेवारी १९९५ रोजी 'WTO' (जागतिक व्यापार संघटना) अस्तित्वात आली, जिचे मुख्यालय जिनिव्हा, स्वित्झर्लंड येथे आहे.\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग]",
+        "en": "(1995): Following the Marrakesh Agreement replacing GATT, the WTO officially commenced operations on January 1, 1995, headquartered in Geneva, Switzerland.\n\n"
+      }
+    },
+    {
+      "id": 13,
+      "question": {
+        "mr": "डब्लूटीओ (WTO) च्या अंतर्गत कृषी उत्पादनांवरील सबसिडीचे वर्गीकरण करताना 'ग्रीन बॉक्स' (Green Box) सबसिडीचा अर्थ काय होतो?",
+        "en": "What does 'Green Box' subsidy signify under the WTO Agreement on Agriculture (AoA)?"
+      },
+      "options": [
+        { "mr": "व्यापारात कोणताही अडथळा न आणणाऱ्या आणि उत्पादनक्षमतेला विकृत न करणाऱ्या (Minimally distorting) सरकारी मदतीला दिलेली सूट", "en": "Subsidies that do not distort trade or cause production distortions, and are thus exempt from reduction commitments" },
+        { "mr": "केवळ रासायनिक खतांसाठी दिली जाणारी सबसिडी", "en": "Subsidies exclusively for chemical fertilizers" },  
+        { "mr": "निर्यातदारांना बेकायदेशीरपणे दिलेले अनुदान", "en": "Illegal export grants" },
+        { "mr": "फक्त सेंद्रिय शेतीसाठी दिले जाणारे तात्पुरते कर्ज", "en": "Temporary loans for organic farming" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(WTO AoA): ग्रीन बॉक्स सबसिडीमध्ये संशोधन, पर्यावरण संरक्षण, आपत्ती व्यवस्थापन आणि कृषी विस्तार यांसारख्या सेवांचा समावेश होतो, ज्या आंतरराष्ट्रीय व्यापारात कसलीही विकृती (Trade Distortion) निर्माण करत नाहीत, त्यामुळे त्यावर मर्यादा नसतात.\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग]",
+        "en": "Green Box subsidies are government programs (like research, environmental protection, infrastructure) that cause no or minimal trade distortion and are permitted without limits.\n\n"
+      }
+    },
+    {
+      "id": 14,
+      "question": {
+        "mr": "डब्लूटीओच्या कृषी करारात (AoA) विकसनशील देशांच्या अन्नसुरक्षेसाठी सर्वात वादग्रस्त ठरलेली 'किमान आधारभूत किंमत' (MSP) खरेदी कोणत्या बॉक्सच्या अंतर्गत मोजली जाते?",
+        "en": "Under which WTO subsidy box category is price support and procurement like India's MSP typically measured?"
+      },
+      "options": [
+        { "mr": "आंबर बॉक्स (Amber Box - Trade-distorting subsidies subject to reduction limits)", "en": "Amber Box" },
+        { "mr": "ब्लू बॉक्स (Blue Box)", "en": "Blue Box" },
+        { "mr": "ग्रीन बॉक्स (Green Box)", "en": "Green Box" },
+        { "mr": "रेड बॉक्स (Red Box)", "en": "Red Box" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(WTO): कृषी मालाच्या किमतीत थेट हस्तक्षेप करून उत्पादकांना दिली जाणारी MSP खरेदी 'आंबर बॉक्स' (Amber Box) मध्ये मोडते, ज्यावर डब्लूटीओचे कडक नियम व मर्यादा आहेत (जरी भारताकडे पीस क्लॉजचे संरक्षण असले तरी).\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग]",
+        "en": "Amber Box subsidies are considered trade-distorting and are subject to reduction commitments under WTO rules, encompassing price supports like MSP.\n\n"
+      }
+    },
+    {
+      "id": 15,
+      "question": {
+        "mr": "भारतात 'स्थानिक बँकिंग व्यवस्था अधिक तळागाळापर्यंत पोहोचवण्यासाठी' आरबीआयने २०१५-१६ मध्ये कोणत्या नवीन प्रकारच्या बँकांना परवाने दिले होते?",
+        "en": "Which novel types of differentiated banks were licensed by the RBI in 2015-16 to promote financial inclusion in unbanked areas?"
+      },
+      "options": [
+        { "mr": "पेमेंट्स बँका (Payments Banks) आणि लघुवित्त बँका (Small Finance Banks)", "en": "Payments Banks and Small Finance Banks" },
+        { "mr": "विदेशी बँका आणि सहकारी बँका", "en": "Foreign and cooperative banks" },
+        { "mr": "प्रादेशिक ग्रामीण बँका आणि भूविकास बँका", "en": "RRBs and Land Development Banks" },
+        { "mr": "मर्चंट बँका आणि इन्व्हेस्टमेंट बँका", "en": "Merchant and Investment banks" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(२०१५): वित्तीय समावेशन अधिक व्यापक करण्यासाठी आरबीआयने 'पेमेंट्स बँका' (उदा. एअरटेल, इंडिया पोस्ट पेमेंट बँक - ज्या कर्ज देऊ शकत नाहीत पण ठेवी स्वीकारतात) आणि 'लघुवित्त बँका' (Small Finance Banks - ज्या लहान कर्ज व ठेवी दोन्ही देतात) यांना परवाने दिले.\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग]",
+        "en": "(2015): The RBI introduced differentiated banking licenses, establishing Payments Banks (taking deposits without lending) and Small Finance Banks to boost financial inclusion.\n\n"
+      }
+    },
+    {
+      "id": 16,
+      "question": {
+        "mr": "भारतीय बँकिंग क्षेत्रातील 'अनुत्पादित मालमत्ता' (Non-Performing Assets - NPA) म्हणजे नेमके काय?",
+        "en": "What is the technical banking definition of a 'Non-Performing Asset' (NPA) in India?"
+      },
+      "options": [
+        { "mr": "एखाद्या कर्जावर मूळ रक्कम किंवा व्याजाचा हप्ता सलग ९० दिवसांपेक्षा (३ महिने) अधिक काळ थकीत राहिल्यास ते कर्ज एनपीए ठरते", "en": "A loan or advance where principal or interest payment remains overdue for a period of more than 90 days (3 months)" },
+        { "mr": "बँकेची इमारत किंवा फर्निचर पडून राहणे", "en": "Idle bank furniture or unused buildings" },
+        { "mr": "बँकेने दिलेला कर्मचारी भत्ता", "en": "Employee allowances paid by banks" },
+        { "mr": "केंद्र सरकारने दिलेले अनुदान", "en": "Government subsidies pending release" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(बँकिंग): जेव्हा बँकांनी दिलेला कर्जाचा हप्ता किंवा व्याज सलग ९० दिवस (३ महिने) किंवा त्याहून अधिक काळ ग्राहक परत करत नाही, तेव्हा त्या कर्जाला 'अनुत्पादित मालमत्ता' (NPA) घोषित केले जाते.\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग]",
+        "en": "An asset becomes non-performing when it ceases to generate income for the bank, specifically when interest or principal payments are overdue for more than 90 days.\n\n"
+      }
+    },
+    {
+      "id": 17,
+      "question": {
+        "mr": "भारतात बँकांच्या बुडीत कर्जाच्या (NPA) समस्येवर मात करण्यासाठी आणि संकटातील कर्जे खरेदी करण्यासाठी स्थापन केलेल्या संस्थेला काय म्हणतात ('बॅड बँक')?",
+        "en": "What is the popular name and official designation of India's newly established 'Bad Bank' to resolve massive NPAs?"
+      },
+      "options": [
+        { "mr": "नॅशनल अससेट रिकन्स्ट्रक्शन कंपनी लिमिटेड (NARCL - National Asset Reconstruction Company Limited)", "en": "National Asset Reconstruction Company Limited (NARCL)" },
+        { "mr": "बँकिंग सुधारणा महामंडळ", "en": "Banking Reform Corporation" },
+        { "mr": "नॅशनल लोन रिकव्हरी ट्रिब्युनल", "en": "National Loan Recovery Tribunal" },
+        { "mr": "अससेट मॅनेजमेंट बोर्ड", "en": "Asset Management Board" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(बॅड बँक): भारतातील बँकांची बुडीत कर्जे (NPAs) एकत्रित करून त्यांचे व्यवस्थापन व वसुली करण्यासाठी सरकारने 'NARCL' (National Asset Reconstruction Company Limited) ची स्थापना केली, जिची भूमिका 'बॅड बँक' म्हणून आहे.\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग]",
+        "en": "NARCL (National Asset Reconstruction Company Limited) was established as India's designated 'Bad Bank' to acquire and aggregate stressed assets from commercial banks.\n\n"
+      }
+    },
+    {
+      "id": 18,
+      "question": {
+        "mr": "केंद्र सरकारच्या अर्थसंकल्पात 'भांडवली खर्च' (Capital Expenditure / Capex) वाढवण्यावर भर का दिला जातो?",
+        "en": "Why does the government emphasize increasing 'Capital Expenditure' (Capex) in its annual budget?"
+      },
+      "options": [
+        { "mr": "त्यामुळे देशात दीर्घकालीन पायाभूत सुविधा (रस्ते, रेल्वे, कारखाने) निर्माण होतात आणि आर्थिक वाढीला व रोजगार निर्मितीला मोठा वेग मिळतो", "en": "Because it creates long-term productive physical assets (infrastructure) that drive sustainable economic growth and job creation" },
+        { "mr": "कारण त्यामुळे प्रशासकीय कर्मचाऱ्यांचे वेतन वाढवता येते", "en": "Because it helps pay civil servant salaries" },
+        { "mr": "कारण यावर कोणतेही व्याज द्यावे लागत नाही", "en": "Because it incurs no future liabilities" },
+        { "mr": "कारण हा खर्च फक्त कागदावर दाखवला जातो", "en": "Because it is purely a notional bookkeeping entry" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(सार्वजनिक वित्त): भांडवली खर्च (Capex) असा खर्च असतो ज्यामुळे देशात कायमस्वरूपी मालमत्ता (रस्ते, पूल, रुग्णालये, कारखाने) तयार होतात, ज्यामुळे दीर्घकालीन उत्पादन क्षमता वाढते आणि मल्टिप्लायर इफेक्ट मिळतो.\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग]",
+        "en": "Capital expenditure (Capex) creates long-term physical assets and infrastructure, generating a high economic multiplier effect on employment and growth.\n\n"
+      }
+    },
+    {
+      "id": 19,
+      "question": {
+        "mr": "भारतीय वित्तीय बाजारात 'गिल्ट-एज्ड सेक्युरिटीज' (Gilt-edged Securities) कशाला म्हटले जाते?",
+        "en": "What are 'Gilt-edged Securities' in the financial and capital markets of India?"
+      },
+      "options": [
+        { "mr": "केंद्र किंवा राज्य सरकारने जारी केलेले अत्यंत सुरक्षित आणि जोखीममुक्त 'सरकारी रोखे' (Government Securities)", "en": "High-grade, risk-free debt instruments (government bonds/securities) issued by central or state governments" },
+        { "mr": "खाजगी कंपन्यांनी जारी केलेले सोनेरी शेअर्स", "en": "Golden shares issued by private corporations" },
+        { "mr": "परदेशी चलनात दिलेले कर्ज", "en": "Foreign currency loans" },
+        { "mr": "सहकारी बँकांच्या मुदत ठेवी", "en": "Cooperative bank fixed deposits" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(भांडवल बाजार): गिल्ट-एज्ड सेक्युरिटीज म्हणजे सरकारी रोखे (Government Securities - G-secs), ज्यामध्ये मुद्दल व व्याजाची परतफेड खात्रीशीर असते कारण त्यात कोणतीही वित्तीय जोखीम नसते.\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग]",
+        "en": "Gilt-edged securities are high-quality, risk-free government bonds and debt instruments issued by the central or state governments.\n\n"
+      }
+    },
+    {
+      "id": 20,
+      "question": {
+        "mr": "भारत सरकारच्या 'राष्ट्रीय monetisation पाईपलाईन' (National Monetisation Pipeline - NMP) चा मुख्य उद्देश काय आहे?",
+        "en": "What is the primary economic objective of the 'National Monetisation Pipeline' (NMP) launched by the Indian government?"
+      },
+      "options": [
+        { "mr": "सार्वजनिक क्षेत्रातील अप्रत्यक्ष किंवा कमी वापरल्या जाणाऱ्या पायाभूत सुविधांची मालमत्ता (Assets) खाजगी क्षेत्राला भाडेतत्त्वावर देऊन नवीन भांडवल उभे करणे", "en": "Unlocking value from underutilized public infrastructure assets through leasing/concessions to finance new infrastructure" },
+        { "mr": "सरकारी मालकीचे सर्व रस्ते व रेल्वे कायमचे विकून टाकणे", "en": "Permanently selling off all public roads and railways" },
+        { "mr": "सार्वजनिक बँकांचे खाजगीकरण करणे", "en": "Privatizing all public sector banks" },
+        { "mr": "परदेशी कंपन्यांवर पूर्ण कर लादणे", "en": "Imposing heavy taxes on foreign firms" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(NMP): राष्ट्रीय मुद्रीकरण पाईपलाईन (NMP) अंतर्गत सरकार मालकी स्वतःकडे ठेवून ब्राउनफिल्ड पायाभूत सुविधा (रस्ते, रेल्वे, वीज वाहिन्या) खाजगी कंपन्यांना ठराविक काळासाठी भाड्याने/लीजवर देऊन त्यातून मिळणारा निधी नव्या पायाभूत सुविधांवर खर्च करते.\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग]",
+        "en": "NMP aims to unlock value in brownfield public infrastructure assets by engaging the private sector through leasing/concession models without transferring ownership.\n\n"
+      }
+    },
+    {
+      "id": 21,
+      "question": {
+        "mr": "आंतरराष्ट्रीय अर्थव्यवस्थेत 'विशेष अधिकार मुद्रा' (Special Drawing Rights - SDRs) ही चलन युनिट कोणत्या संस्थेशी संबंधित आहे?",
+        "en": "With which international financial institution is the 'Special Drawing Rights' (SDR) reserve asset associated?"
+      },
+      "options": [
+        { "mr": "आंतरराष्ट्रीय नाणेनिधी (IMF - International Monetary Fund)", "en": "International Monetary Fund (IMF)" },
+        { "mr": "जागतिक बँक (World Bank)", "en": "World Bank" },
+        { "mr": "आशियाई विकास बँक (ADB)", "en": "Asian Development Bank" },
+        { "mr": "जागतिक व्यापार संघटना (WTO)", "en": "WTO" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(IMF): SDR (Special Drawing Rights) हे आंतरराष्ट्रीय नाणेनिधीचे (IMF) अधिकृत लेखा युनिट असून ते सदस्य देशांच्या राखीव चलनांच्या बास्केटवर (डॉलर, युरो, युआन, पाउंड, येन) आधारित असते.\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग]",
+        "en": "SDRs are an international reserve asset created by the IMF, acting as a unit of account based on a basket of major world currencies.\n\n"
+      }
+    },
+    {
+      "id": 22,
+      "question": {
+        "mr": "भारतीय अर्थव्यवस्थेत 'थेट परदेशी गुंतवणूक' (FDI) आणि 'परदेशी पोर्टफोलिओ गुंतवणूक' (FPI) यांना मंजुरी देणारी आणि नियमन करणारी मुख्य यंत्रणा कोणती?",
+        "en": "Which regulatory body governs foreign investments (FDI and FPI) in India under the Foreign Exchange Management Act (FEMA)?"
+      },
+      "options": [
+        { "mr": "भारतीय रिझर्व्ह बँक (RBI) आणि उद्योग व अंतर्गत व्यापार प्रवर्धन विभाग (DPIIT)", "en": "RBI and DPIIT (Department for Promotion of Industry and Internal Trade)" },
+        { "mr": "फक्त परराष्ट्र मंत्रालय", "en": "Ministry of External Affairs only" },
+        { "mr": "फक्त सेबी (SEBI)", "en": "SEBI only" },
+        { "mr": "नीति आयोग", "en": "NITI Aayog" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(FDI): भारत सरकारच्या DPIIT द्वारे FDI चे धोरण ठरवले जाते, तर FEMA कायद्यांतर्गत आरबीआय (RBI) या परदेशी गुंतवणुकीच्या प्रवाहांचे नियमन व देखरेख करते.\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग]",
+        "en": "FDI policies are framed by DPIIT, while foreign exchange transactions and capital flows are regulated by the RBI under FEMA guidelines.\n\n"
+      }
+    },
+    {
+      "id": 23,
+      "question": {
+        "mr": "भारतीय वित्तीय बाजारात 'म्युच्युअल फंड्स' (Mutual Funds) आणि 'पोर्टफोलिओ मॅनेजर' यांचे नियंत्रण करणारी नियामक संस्था कोणती?",
+        "en": "Which statutory authority regulates Mutual Funds, alternative investment funds, and stockbrokers in India?"
+      },
+      "options": [
+        { "mr": "सेबी (SEBI - Securities and Exchange Board of India)", "en": "SEBI" },
+        { "mr": "भारतीय रिझर्व्ह बँक (RBI)", "en": "Reserve Bank of India" },
+        { "mr": "पेन्शन फंड नियामक (PFRDA)", "en": "PFRDA" },
+        { "mr": "कॉर्पोरेट व्यवहार मंत्रालय", "en": "Ministry of Corporate Affairs" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(भांडवल बाजार): भारतातील सर्व म्युच्युअल फंड्स, स्टॉक ब्रोकर आणि भांडवल बाजारपेठेतील मध्यस्थांचे नियमन व गुंतवणूकदार संरक्षण करण्याचे कायदेशीर अधिकार 'सेबी' (SEBI) कडे आहेत.\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग]",
+        "en": "SEBI is the statutory regulator governing mutual funds, stock exchanges, and portfolio managers in India's capital markets.\n\n"
+      }
+    },
+    {
+      "id": 24,
+      "question": {
+        "mr": "भारतात 'राष्ट्रीय पेन्शन प्रणाली' (National Pension System - NPS) चे नियंत्रण व नियमन करणारी वैधानिक संस्था कोणती?",
+        "en": "Which statutory regulatory authority regulates the National Pension System (NPS) and the pension sector in India?"
+      },
+      "options": [
+        { "mr": "पेन्शन फंड नियामक आणि विकास प्राधिकरण (PFRDA - Pension Fund Regulatory and Development Authority)", "en": "PFRDA" },
+        { "mr": "इरडा (IRDAI)", "en": "IRDAI" },
+        { "mr": "सेबी (SEBI)", "en": "SEBI" },
+        { "mr": "भविष्य निर्वाह निधी संघटना (EPFO)", "en": "EPFO" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(पेन्शन क्षेत्र): PFRDA (Pension Fund Regulatory and Development Authority) ही पेन्शन क्षेत्राचे नियमन आणि राष्ट्रीय पेन्शन प्रणालीच्या (NPS) व्यवस्थापनाचे काम पाहणारी वैधानिक संस्था आहे.\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग]",
+        "en": "PFRDA is the statutory regulatory body set up to promote, develop, and regulate the pension sector, including the National Pension System (NPS), in India."
+      }
+    },
+    {
+      "id": 25,
+      "question": {
+        "mr": "भारतीय अर्थव्यवस्थेच्या संदर्भात 'सार्वजनिक क्षेत्रातील बँकांचे खाजगीकरण' (Privatization of PSBs) आणि वित्तीय क्षेत्रातील सुधारणा यांचा मुख्य दीर्घकालीन उद्देश काय मानला जातो?",
+        "en": "What is the primary economic rationale behind banking sector reforms and the proposed privatization of select public sector banks?"
+      },
+      "options": [
+        { "mr": "बँकांची कार्यक्षमता वाढवणे, अनुत्पादित मालमत्ता (NPA) कमी करणे, स्पर्धा वाढवणे आणि बाजाराभिमुख व्यावसायिक चालना देणे", "en": "Improving operational efficiency, reducing NPAs, enhancing market competition, and driving professional banking governance" },
+        { "mr": "बँकिंग सेवा पूर्णपणे बंद करणे", "en": "Shutting down banking services entirely" },
+        { "mr": "फक्त परदेशी नागरिकांना ठेवी ठेवण्याची सवलत देणे", "en": "Restricting deposits exclusively to foreigners" },
+        { "mr": "शासकीय खर्चात वाढ करणे", "en": "Expanding government expenditure blindly" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(निष्कर्ष): वित्तीय क्षेत्रातील सुधारणा आणि बँकांच्या खाजगीकरणाचा उद्देश बँकांची कार्यक्षमता सुधारणे, निर्णय प्रक्रियेत व्यावसायिकता आणणे आणि सरकारी तिजोरीवरील ताण कमी करणे हा असतो.\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग]",
+        "en": "(Conclusion): Banking reforms and privatization aim to inject operational agility, reduce fiscal burdens from stressed assets (NPAs), and foster a competitive, tech-driven financial market."
+      }
+    }
+  ]
+}

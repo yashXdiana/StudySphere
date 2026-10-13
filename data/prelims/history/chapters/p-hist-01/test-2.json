@@ -1,0 +1,464 @@
+{
+  "testId": "p-hist-01-t2",
+  "title": {
+    "mr": "आधुनिक भारताचा इतिहास — सराव 2",
+    "en": "Modern Indian History — Practice Test 2"
+  },
+  "durationMinutes": 20,
+  "marksPerQuestion": 1,
+  "negativeMarking": 0.25,
+  "totalMarks": 25,
+  "difficulty": "मध्यम ते काठिण्य",
+  "questions": [
+    {
+      "id": 1,
+      "question": {
+        "mr": "खालील विधाने विचारात घ्या:\nअ) १८२९ मध्ये लॉर्ड विल्यम बेंटिकने सती प्रथा कायदेशीररीत्या बंद केली.\nब) सती प्रथा बंद करण्यासाठी राजा राममोहन रॉय यांनी मोठे प्रयत्न केले होते.\nवरीलपैकी कोणते/ती विधान/ने बरोबर आहेत?",
+        "en": "Consider the following statements:\nA) In 1829, Lord William Bentinck legally abolished the practice of Sati.\nB) Raja Rammohan Roy made great efforts to abolish the Sati practice.\nWhich of the above statement(s) is/are correct?"
+      },
+      "options": [
+        { "mr": "फक्त अ", "en": "Only A" },
+        { "mr": "फक्त ब", "en": "Only B" },
+        { "mr": "अ आणि ब दोन्ही", "en": "Both A and B" },
+        { "mr": "दोन्ही नाहीत", "en": "Neither A nor B" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "(१८२९): ४ डिसेंबर १८२९ रोजी लॉर्ड विल्यम बेंटिकने बंगाल प्रेसिडेन्सीमध्ये नियम १७ (Regulation XVII) द्वारे सती प्रथेवर बंदी घातली. राजा राममोहन रॉय यांच्या प्रदीर्घ सामाजिक लढ्यामुळे हे शक्य झाले.\n\n[संदर्भ: डॉ. स. शि. गाठाळ / स्पेक्ट्रम]",
+        "en": "(1829): On December 4, 1829, Lord William Bentinck banned the practice of Sati in the Bengal Presidency through Regulation XVII, largely due to the persistent efforts of Raja Rammohan Roy.\n\n"
+      }
+    },
+    {
+      "id": 2,
+      "question": {
+        "mr": "भारतात पहिल्यांदा 'नियमित जनगणना' (Regular/Synchronous Census) कोणाच्या कार्यकाळात सुरू झाली?",
+        "en": "During whose tenure did the first 'Regular/Synchronous Census' begin in India?"
+      },
+      "options": [
+        { "mr": "लॉर्ड मेयो", "en": "Lord Mayo" },
+        { "mr": "लॉर्ड रिपन", "en": "Lord Ripon" },
+        { "mr": "लॉर्ड लिटन", "en": "Lord Lytton" },
+        { "mr": "लॉर्ड डफरिन", "en": "Lord Dufferin" }
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": {
+        "mr": "(१८८१): भारतातील पहिली प्रायोगिक जनगणना १८७२ मध्ये 'लॉर्ड मेयो' च्या काळात झाली होती. परंतु, पहिली 'नियमित व संपूर्ण' (Synchronous) जनगणना १८८१ मध्ये 'लॉर्ड रिपन' च्या कार्यकाळात झाली आणि तेव्हापासून दर १० वर्षांनी जनगणना करण्याची प्रथा सुरू झाली.\n\n[संदर्भ: समाधान महाजन / स्पेक्ट्रम]",
+        "en": "(1881): While the first experimental census was conducted in 1872 under Lord Mayo, the first 'regular and synchronous' census took place in 1881 under Lord Ripon, establishing the decennial pattern.\n\n"
+      }
+    },
+    {
+      "id": 3,
+      "question": {
+        "mr": "योग्य जोड्या जुळवा (गव्हर्नर जनरल आणि त्यांचे महत्त्वपूर्ण निर्णय):\nगट अ: १) लॉर्ड कॉर्नवॉलिस, २) लॉर्ड वेलस्ली, ३) लॉर्ड डलहौसी, ४) लॉर्ड विल्यम बेंटिक\nगट ब: अ) तैनाती फौज, ब) कायमधारा पद्धत, क) सतीबंदी, ड) खालसा धोरण",
+        "en": "Match the pairs (Governor Generals and their key decisions):\nGroup A: 1) Lord Cornwallis, 2) Lord Wellesley, 3) Lord Dalhousie, 4) Lord William Bentinck\nGroup B: a) Subsidiary Alliance, b) Permanent Settlement, c) Abolition of Sati, d) Doctrine of Lapse"
+      },
+      "options": [
+        { "mr": "1-ब, 2-अ, 3-ड, 4-क", "en": "1-b, 2-a, 3-d, 4-c" },
+        { "mr": "1-अ, 2-ब, 3-क, 4-ड", "en": "1-a, 2-b, 3-c, 4-d" },
+        { "mr": "1-ब, 2-क, 3-ड, 4-अ", "en": "1-b, 2-c, 3-d, 4-a" },
+        { "mr": "1-ड, 2-अ, 3-ब, 4-क", "en": "1-d, 2-a, 3-b, 4-c" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१७९३-१८५०): लॉर्ड कॉर्नवॉलिस - कायमधारा पद्धत (१७९३), लॉर्ड वेलस्ली - तैनाती फौज (१७९८), लॉर्ड डलहौसी - खालसा धोरण (१८४८-१८५६), लॉर्ड विल्यम बेंटिक - सतीबंदी (१८२९).\n\n[संदर्भ: अनिल कटारे]",
+        "en": "(1793-1850): Lord Cornwallis - Permanent Settlement (1793), Lord Wellesley - Subsidiary Alliance (1798), Lord Dalhousie - Doctrine of Lapse (1848-1856), Lord William Bentinck - Abolition of Sati (1829).\n\n"
+      }
+    },
+    {
+      "id": 4,
+      "question": {
+        "mr": "खालीलपैकी कोणत्या कायद्याला 'भारतीय शिक्षणाचा मॅग्नाकार्टा' (Magna Carta of English Education in India) म्हटले जाते?",
+        "en": "Which of the following acts/despatches is called the 'Magna Carta of English Education in India'?"
+      },
+      "options": [
+        { "mr": "मेकॉलेचे मिनिट (1835)", "en": "Macaulay's Minute (1835)" },
+        { "mr": "हंटर कमिशन (1882)", "en": "Hunter Commission (1882)" },
+        { "mr": "वुड्सचा खलिता (Wood's Despatch - 1854)", "en": "Wood's Despatch (1854)" },
+        { "mr": "चार्टर ॲक्ट (1813)", "en": "Charter Act (1813)" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "(१८५४): चार्ल्स वुड यांच्या अध्यक्षतेखालील 'वुड्सचा खलिता' (१८५४) भारतीय शिक्षणाचा मॅग्नाकार्टा मानला जातो. याने भारतात प्राथमिक शिक्षणापासून ते विद्यापीठ पातळीपर्यंत शिक्षणाचा एक व्यापक आराखडा तयार केला व लंडन विद्यापीठाच्या धर्तीवर भारतात विद्यापीठे स्थापन करण्याची शिफारस केली.\n\n[संदर्भ: डॉ. स. शि. गाठाळ / स्पेक्ट्रम]",
+        "en": "(1854): Charles Wood's Despatch of 1854 is considered the 'Magna Carta of English Education in India'. It laid down a comprehensive scheme of education from primary to university level and recommended setting up universities on the model of London University.\n\n"
+      }
+    },
+    {
+      "id": 5,
+      "question": {
+        "mr": "दुसरे इंग्रज-मराठा युद्ध (१८०३-१८०५) खालीलपैकी कोणत्या तहामुळे सुरू झाले?",
+        "en": "The Second Anglo-Maratha War (1803-1805) started due to which of the following treaties?"
+      },
+      "options": [
+        { "mr": "सालबाईचा तह", "en": "Treaty of Salbai" },
+        { "mr": "पुरंदरचा तह", "en": "Treaty of Purandar" },
+        { "mr": "वसईचा तह (Treaty of Bassein)", "en": "Treaty of Bassein" },
+        { "mr": "देवगावचा तह", "en": "Treaty of Deogaon" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "(१८०२): दुसऱ्या बाजीराव पेशव्याने ३१ डिसेंबर १८०२ रोजी इंग्रजांसोबत 'वसईचा तह' (Treaty of Bassein) करून तैनाती फौजेचा स्वीकार केला. या तहामुळे मराठा साम्राज्याचे स्वातंत्र्य धोक्यात आले, ज्यामुळे शिंदे आणि भोसले यांनी इंग्रजांविरुद्ध दुसरे इंग्रज-मराठा युद्ध पुकारले.\n\n[संदर्भ: अनिल कटारे / समाधान महाजन]",
+        "en": "(1802): Peshwa Baji Rao II signed the Treaty of Bassein on December 31, 1802, accepting the Subsidiary Alliance. This surrender of Maratha independence led Scindia and Bhonsle to initiate the Second Anglo-Maratha War.\n\n"
+      }
+    },
+    {
+      "id": 6,
+      "question": {
+        "mr": "ब्रिटिश भारतात 'स्थानिक स्वराज्य संस्थांचा जनक' (Father of Local Self-Government) म्हणून कोणाला ओळखले जाते?",
+        "en": "Who is known as the 'Father of Local Self-Government' in British India?"
+      },
+      "options": [
+        { "mr": "लॉर्ड लिटन", "en": "Lord Lytton" },
+        { "mr": "लॉर्ड कर्झन", "en": "Lord Curzon" },
+        { "mr": "लॉर्ड मेयो", "en": "Lord Mayo" },
+        { "mr": "लॉर्ड रिपन", "en": "Lord Ripon" }
+      ],
+      "correctAnswerIndex": 3,
+      "explanation": {
+        "mr": "(१८८२): लॉर्ड रिपनने १८८२ मध्ये एक ठराव मंजूर करून भारतात स्थानिक स्वराज्य संस्थांची (महानगरपालिका व जिल्हा बोर्ड) खऱ्या अर्थाने स्थापना केली. त्यामुळे त्याला 'स्थानिक स्वराज्य संस्थांचा जनक' म्हटले जाते.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1882): Lord Ripon's Resolution of 1882 is hailed as the Magna Carta of local self-government in India. Therefore, he is widely regarded as the 'Father of Local Self-Government in India'.\n\n"
+      }
+    },
+    {
+      "id": 7,
+      "question": {
+        "mr": "खालील विधाने तपासा:\nअ) १८७८ चा 'देशी वृत्तपत्र कायदा' (Vernacular Press Act) लॉर्ड लिटनने लागू केला.\nब) या कायद्याला 'गळचेपी करणारा कायदा' (Gagging Act) म्हटले गेले.\nक) लॉर्ड रिपनने १८८२ मध्ये हा कायदा रद्द केला.\nवरीलपैकी कोणते/ती विधान/ने बरोबर आहेत?",
+        "en": "Check the following statements:\nA) The 'Vernacular Press Act' of 1878 was passed by Lord Lytton.\nB) This act was called the 'Gagging Act'.\nC) Lord Ripon repealed this act in 1882.\nWhich of the above statement(s) is/are correct?"
+      },
+      "options": [
+        { "mr": "फक्त अ आणि ब", "en": "Only A and B" },
+        { "mr": "फक्त ब आणि क", "en": "Only B and C" },
+        { "mr": "अ, ब आणि क सर्व", "en": "All A, B, and C" },
+        { "mr": "फक्त अ आणि क", "en": "Only A and C" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "(१८७८-१८८२): भारतीय भाषांमधील वृत्तपत्रांवर निर्बंध लादण्यासाठी लॉर्ड लिटनने १८७८ मध्ये Vernacular Press Act लागू केला. याला 'गॅगिंग ॲक्ट' (आवाज दाबणारा कायदा) म्हटले गेले. नंतर १८८२ मध्ये उदारमतवादी लॉर्ड रिपनने हा कायदा रद्द केला.\n\n[संदर्भ: डॉ. स. शि. गाठाळ]",
+        "en": "(1878-1882): The Vernacular Press Act was enacted in 1878 by Lord Lytton to curtail the freedom of the Indian language press. It was notoriously known as the Gagging Act. It was later repealed by Lord Ripon in 1882.\n\n"
+      }
+    },
+    {
+      "id": 8,
+      "question": {
+        "mr": "भारतात रेल्वेची सुरुवात लॉर्ड डलहौसीच्या काळात झाली. भारतातील पहिली प्रवासी रेल्वे कोणत्या तारखेला धावली?",
+        "en": "Railways were introduced in India during the time of Lord Dalhousie. On which date did the first passenger train run in India?"
+      },
+      "options": [
+        { "mr": "१६ एप्रिल १८५१", "en": "16 April 1851" },
+        { "mr": "१६ एप्रिल १८५३", "en": "16 April 1853" },
+        { "mr": "१ मे १८५३", "en": "1 May 1853" },
+        { "mr": "१५ ऑगस्ट १८५४", "en": "15 August 1854" }
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": {
+        "mr": "(१८५३): १६ एप्रिल १८५३ रोजी दुपारी ३:३० वाजता बोरीबंदर (मुंबई) ते ठाणे या ३४ किमी मार्गावर भारतातील पहिली रेल्वे धावली. या गाडीला साहिब, सिंध आणि सुलतान अशी तीन इंजिने जोडली होती.\n\n[संदर्भ: समाधान महाजन]",
+        "en": "(1853): The first passenger train in India ran between Bori Bunder (Bombay) and Thane on April 16, 1853. The train covered a distance of 34 kilometers and was hauled by three locomotives: Sahib, Sindh, and Sultan.\n\n"
+      }
+    },
+    {
+      "id": 9,
+      "question": {
+        "mr": "१७८४ मध्ये कोलकात्यात 'एशियाटिक सोसायटी ऑफ बंगाल' (Asiatic Society of Bengal) ची स्थापना कोणी केली?",
+        "en": "Who founded the 'Asiatic Society of Bengal' in Calcutta in 1784?"
+      },
+      "options": [
+        { "mr": "वॉरन हेस्टिंग्स", "en": "Warren Hastings" },
+        { "mr": "चार्ल्स विल्किन्स", "en": "Charles Wilkins" },
+        { "mr": "सर विल्यम जोन्स (Sir William Jones)", "en": "Sir William Jones" },
+        { "mr": "थॉमस मेकॉले", "en": "Thomas Macaulay" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "(१७८४): भारताचा प्राचीन इतिहास व संस्कृतीचा अभ्यास करण्यासाठी सर विल्यम जोन्स यांनी १५ जानेवारी १७८४ रोजी कोलकात्यात 'एशियाटिक सोसायटी ऑफ बंगाल' ची स्थापना केली. या संस्थेने अनेक संस्कृत ग्रंथांचे इंग्रजीत भाषांतर केले.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1784): Sir William Jones, a British lawyer and Orientalist, founded the Asiatic Society of Bengal on January 15, 1784, to encourage Oriental studies and translate ancient Indian texts.\n\n"
+      }
+    },
+    {
+      "id": 10,
+      "question": {
+        "mr": "खालीलपैकी कोणते संस्थान लॉर्ड डलहौसीच्या 'खालसा धोरणानुसार' (Doctrine of Lapse) खालसा करण्यात आले नव्हते?",
+        "en": "Which of the following states was NOT annexed under Lord Dalhousie's 'Doctrine of Lapse'?"
+      },
+      "options": [
+        { "mr": "सातारा", "en": "Satara" },
+        { "mr": "झाशी", "en": "Jhansi" },
+        { "mr": "अवध (Awadh)", "en": "Awadh" },
+        { "mr": "नागपूर", "en": "Nagpur" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "(१८५६): सातारा, झाशी आणि नागपूर ही संस्थाने दत्तक वारसा नामंजूर (Doctrine of Lapse) नुसार खालसा झाली. मात्र, अवध (Awadh) संस्थान १८५६ मध्ये 'गैरप्रशासनाचा' (Maladministration) आरोप ठेवून खालसा करण्यात आले होते.\n\n[संदर्भ: डॉ. स. शि. गाठाळ / अनिल कटारे]",
+        "en": "(1856): Satara, Jhansi, and Nagpur were annexed under the Doctrine of Lapse. However, Awadh was annexed in 1856 on the grounds of 'maladministration' (misgovernance), not the Doctrine of Lapse.\n\n"
+      }
+    },
+    {
+      "id": 11,
+      "question": {
+        "mr": "भारतातील 'ठगांचा बंदोबस्त' (Suppression of Thugs) करण्यासाठी लॉर्ड विल्यम बेंटिकने कोणाची नियुक्ती केली होती?",
+        "en": "Whom did Lord William Bentinck appoint for the 'Suppression of Thugs' in India?"
+      },
+      "options": [
+        { "mr": "कॅप्टन स्लीमन (Captain Sleeman)", "en": "Captain Sleeman" },
+        { "mr": "चार्ल्स मेटकाफ", "en": "Charles Metcalfe" },
+        { "mr": "थॉमस मुन्रो", "en": "Thomas Munro" },
+        { "mr": "आर्थर वेलेस्ली", "en": "Arthur Wellesley" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१८३०): लॉर्ड विल्यम बेंटिकच्या काळात (१८३० च्या दशकात) मध्य व उत्तर भारतात प्रवाशांना लुटणाऱ्या आणि हत्या करणाऱ्या 'ठगांचा' भयानक उपद्रव होता. त्यांचा बिमोड करण्यासाठी बेंटिकने 'कॅप्टन विल्यम स्लीमन' याची नियुक्ती केली होती.\n\n[संदर्भ: समाधान महाजन]",
+        "en": "(1830s): Lord William Bentinck appointed Captain William Sleeman to suppress the Thuggee cult, a network of secret fraternities engaged in robbing and murdering travelers in Central and Northern India.\n\n"
+      }
+    },
+    {
+      "id": 12,
+      "question": {
+        "mr": "गव्हर्नर जनरलच्या कार्यकारी मंडळात (Executive Council) पहिल्या 'कायदे सदस्याची' (Law Member) नियुक्ती कोणत्या कायद्यान्वये करण्यात आली?",
+        "en": "By which Act was the first 'Law Member' appointed to the Governor General's Executive Council?"
+      },
+      "options": [
+        { "mr": "१८१३ चा चार्टर ॲक्ट", "en": "Charter Act of 1813" },
+        { "mr": "१८३३ चा चार्टर ॲक्ट", "en": "Charter Act of 1833" },
+        { "mr": "१८५३ चा चार्टर ॲक्ट", "en": "Charter Act of 1853" },
+        { "mr": "१८६१ चा भारतीय परिषद कायदा", "en": "Indian Councils Act 1861" }
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": {
+        "mr": "(१८३३): १८३३ च्या चार्टर ॲक्टनुसार गव्हर्नर जनरलच्या कार्यकारी मंडळात चौथ्या सदस्याची (कायदे सदस्य) निर्मिती झाली. 'लॉर्ड मेकॉले' हा भारतातील पहिला कायदे सदस्य (Law Member) बनला.\n\n[संदर्भ: एम. लक्ष्मीकांत / स्पेक्ट्रम]",
+        "en": "(1833): The Charter Act of 1833 added a fourth member, the 'Law Member', to the Governor-General's Executive Council for legislative purposes. Lord Macaulay was appointed as the first Law Member.\n\n"
+      }
+    },
+    {
+      "id": 13,
+      "question": {
+        "mr": "खालीलपैकी कोणाला 'भारतीय वृत्तपत्रांचा मुक्तीदाता' (Liberator of Indian Press) म्हणून ओळखले जाते?",
+        "en": "Who among the following is known as the 'Liberator of Indian Press'?"
+      },
+      "options": [
+        { "mr": "लॉर्ड विल्यम बेंटिक", "en": "Lord William Bentinck" },
+        { "mr": "चार्ल्स मेटकाफ (Charles Metcalfe)", "en": "Charles Metcalfe" },
+        { "mr": "लॉर्ड कॅनिंग", "en": "Lord Canning" },
+        { "mr": "लॉर्ड डलहौसी", "en": "Lord Dalhousie" }
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": {
+        "mr": "(१८३५): चार्ल्स मेटकाफ (१८३५-३६) याने जॉन ॲडम्सने १८२३ मध्ये वृत्तपत्रांवर लादलेले कठोर निर्बंध रद्द केले आणि प्रेस ॲक्ट १८३५ लागू केला. यामुळे त्याला 'भारतीय वृत्तपत्रांचा मुक्तीदाता' म्हटले जाते.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1835): Charles Metcalfe (Governor-General 1835-36) is known as the 'Liberator of the Indian Press' because he repealed the obnoxious 1823 licensing regulations and passed the liberating Press Act of 1835.\n\n"
+      }
+    },
+    {
+      "id": 14,
+      "question": {
+        "mr": "न्यायव्यवस्था आणि महसूल प्रशासन यांचे विलगीकरण करणारी 'कॉर्नवॉलिस संहिता' (Cornwallis Code) कोणत्या वर्षी लागू करण्यात आली?",
+        "en": "In which year was the 'Cornwallis Code', which separated the judiciary and revenue administration, introduced?"
+      },
+      "options": [
+        { "mr": "१७७३", "en": "1773" },
+        { "mr": "१७८४", "en": "1784" },
+        { "mr": "१७९३", "en": "1793" },
+        { "mr": "१८०२", "en": "1802" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "(१७९३): लॉर्ड कॉर्नवॉलिसने १७९३ मध्ये 'कॉर्नवॉलिस संहिता' लागू केली. यातील सर्वात महत्त्वाचा घटक म्हणजे 'शक्तीचे विभाजन' (Separation of Powers). त्याने महसूल गोळा करणारे अधिकारी (Collector) यांच्याकडून न्यायालयीन (Magisterial) अधिकार काढून घेतले.\n\n[संदर्भ: अनिल कटारे]",
+        "en": "(1793): The Cornwallis Code was enacted in 1793. Its most significant feature was the separation of revenue and justice administration, stripping the Collector of magisterial and judicial powers.\n\n"
+      }
+    },
+    {
+      "id": 15,
+      "question": {
+        "mr": "'इल्बर्ट बिल वाद' (Ilbert Bill Controversy) खालीलपैकी कोणत्या गव्हर्नर जनरलच्या काळात झाला?",
+        "en": "The 'Ilbert Bill Controversy' took place during the tenure of which Governor-General?"
+      },
+      "options": [
+        { "mr": "लॉर्ड लिटन", "en": "Lord Lytton" },
+        { "mr": "लॉर्ड रिपन", "en": "Lord Ripon" },
+        { "mr": "लॉर्ड डफरिन", "en": "Lord Dufferin" },
+        { "mr": "लॉर्ड लॅन्सडाउन", "en": "Lord Lansdowne" }
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": {
+        "mr": "(१८८३-८४): लॉर्ड रिपनच्या काळात 'इल्बर्ट बिल' आणले गेले. या विधेयकानुसार भारतीय न्यायाधीशांना युरोपीय आरोपींचे खटले चालवण्याचा अधिकार मिळणार होता. मात्र, भारतात राहणाऱ्या युरोपीय लोकांनी याला तीव्र विरोध केला, ज्याला 'श्वेत बंड' (White Mutiny) म्हटले जाते.\n\n[संदर्भ: डॉ. स. शि. गाठाळ]",
+        "en": "(1883-84): The Ilbert Bill was introduced during Lord Ripon's viceroyalty. It proposed giving Indian magistrates the power to try European offenders in criminal cases. Massive backlash from Europeans in India forced its modification.\n\n"
+      }
+    },
+    {
+      "id": 16,
+      "question": {
+        "mr": "लॉर्ड डलहौसीने भारतात पहिली 'टेलिग्राफ लाइन' (Telegraph Line) सार्वजनिक वापरासाठी १८५४ मध्ये कोणत्या दोन शहरांदरम्यान सुरू केली?",
+        "en": "Between which two cities did Lord Dalhousie open the first 'Telegraph Line' for public use in India in 1854?"
+      },
+      "options": [
+        { "mr": "मुंबई ते पुणे", "en": "Mumbai to Pune" },
+        { "mr": "कलकत्ता ते आग्रा", "en": "Calcutta to Agra" },
+        { "mr": "मद्रास ते बंगळूर", "en": "Madras to Bangalore" },
+        { "mr": "दिल्ली ते लाहोर", "en": "Delhi to Lahore" }
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": {
+        "mr": "(१८५४): भारतात प्रायोगिक टेलिग्राफ लाइन १८५० मध्ये कलकत्ता ते डायमंड हार्बर दरम्यान टाकली गेली. परंतु, सार्वजनिक आणि अधिकृत वापरासाठी पहिली मोठी टेलिग्राफ लाइन १८५४ मध्ये 'कलकत्ता ते आग्रा' (Calcutta to Agra) ४००० मैलांच्या अंतरासाठी सुरू झाली.\n\n[संदर्भ: समाधान महाजन / स्पेक्ट्रम]",
+        "en": "(1854): While an experimental line was laid in 1850, the first major operational telegraph line opened to the public in 1854, connecting Calcutta to Agra, heavily driven by Lord Dalhousie's administrative reforms.\n\n"
+      }
+    },
+    {
+      "id": 17,
+      "question": {
+        "mr": "खालीलपैकी कोणत्या शीख राजाने १८०९ मध्ये ब्रिटिशांसोबत 'अमृतसरचा तह' (Treaty of Amritsar) केला होता?",
+        "en": "Which Sikh King signed the 'Treaty of Amritsar' with the British in 1809?"
+      },
+      "options": [
+        { "mr": "महाराजा दिलीप सिंग", "en": "Maharaja Duleep Singh" },
+        { "mr": "महाराजा खडक सिंग", "en": "Maharaja Kharak Singh" },
+        { "mr": "महाराजा रणजित सिंग", "en": "Maharaja Ranjit Singh" },
+        { "mr": "गुरु गोबिंद सिंग", "en": "Guru Gobind Singh" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "(१८०९): चार्ल्स मेटकाफ (ब्रिटिश प्रतिनिधी) आणि महाराजा रणजित सिंग यांच्यात २५ एप्रिल १८०९ रोजी 'अमृतसरचा तह' झाला. यानुसार सतलज नदी ही शीख साम्राज्य आणि ब्रिटिश साम्राज्य यांच्यातील सीमा म्हणून निश्चित करण्यात आली.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1809): The Treaty of Amritsar was signed on April 25, 1809, between Charles Metcalfe, representing the British East India Company, and Maharaja Ranjit Singh. It established the Sutlej River as the boundary between the two powers.\n\n"
+      }
+    },
+    {
+      "id": 18,
+      "question": {
+        "mr": "पहिले इंग्रज-शीख युद्ध (१८४५-१८४६) कोणत्या तहाने संपुष्टात आले?",
+        "en": "The First Anglo-Sikh War (1845-1846) ended with which treaty?"
+      },
+      "options": [
+        { "mr": "लाहोरचा तह (Treaty of Lahore)", "en": "Treaty of Lahore" },
+        { "mr": "भैरोवालचा तह", "en": "Treaty of Bhairowal" },
+        { "mr": "अमृतसरचा तह", "en": "Treaty of Amritsar" },
+        { "mr": "मुलतानचा तह", "en": "Treaty of Multan" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१८४६): पहिले इंग्रज-शीख युद्ध ब्रिटिश आणि शीख साम्राज्य यांच्यात झाले. हे युद्ध ९ मार्च १८४६ च्या 'लाहोरच्या तहाने' संपुष्टात आले. या तहानुसार ब्रिटिशांनी जालंधर दोआबचा प्रदेश बळकावला आणि शिखांवर प्रचंड युद्धदंड लादला.\n\n[संदर्भ: अनिल कटारे]",
+        "en": "(1846): The First Anglo-Sikh War concluded with the Treaty of Lahore (March 9, 1846). The Sikhs had to cede the Jalandhar Doab and pay a massive war indemnity to the British.\n\n"
+      }
+    },
+    {
+      "id": 19,
+      "question": {
+        "mr": "खालील विधाने विचारात घ्या:\nअ) १८५४ मध्ये मुंबईत पहिली सुती कापड गिरणी सुरू झाली.\nब) ही गिरणी कावसजी नानाभाय दावर यांनी सुरू केली.\nवरीलपैकी कोणते/ती विधान/ने योग्य आहेत?",
+        "en": "Consider the following statements:\nA) In 1854, the first cotton textile mill was started in Bombay.\nB) This mill was started by Cowasjee Nanabhoy Davar.\nWhich of the above statement(s) is/are correct?"
+      },
+      "options": [
+        { "mr": "फक्त अ", "en": "Only A" },
+        { "mr": "फक्त ब", "en": "Only B" },
+        { "mr": "दोन्ही अ आणि ब", "en": "Both A and B" },
+        { "mr": "दोन्ही नाहीत", "en": "Neither A nor B" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "(१८५४): भारतात आधुनिक उद्योगांची सुरुवात १८५० च्या दशकात झाली. १८५४ मध्ये कावसजी नानाभाय दावर (C. N. Davar) यांनी मुंबईत पहिली यशस्वी सुती कापड गिरणी (Bombay Spinning and Weaving Company) स्थापन केली.\n\n[संदर्भ: डॉ. स. शि. गाठाळ / समाधान महाजन]",
+        "en": "(1854): The foundation of modern industry in India was laid in the 1850s. The first successful mechanized cotton textile mill was established in Bombay in 1854 by a Parsi entrepreneur, Cowasjee Nanabhoy Davar.\n\n"
+      }
+    },
+    {
+      "id": 20,
+      "question": {
+        "mr": "भारतात आधुनिक 'अर्थसंकल्प' (Budget) मांडण्याची पद्धत कोणत्या वर्षी आणि कोणी सुरू केली?",
+        "en": "In which year and by whom was the modern system of presenting a 'Budget' introduced in India?"
+      },
+      "options": [
+        { "mr": "१८६०, जेम्स विल्सन", "en": "1860, James Wilson" },
+        { "mr": "१८५८, लॉर्ड कॅनिंग", "en": "1858, Lord Canning" },
+        { "mr": "१८६१, लॉर्ड मेकॉले", "en": "1861, Lord Macaulay" },
+        { "mr": "१८९२, दादाभाई नौरोजी", "en": "1892, Dadabhai Naoroji" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१८६०): १८५७ च्या उठावानंतर ब्रिटिशांची आर्थिक स्थिती खालावली होती. ती सुधारण्यासाठी अर्थमंत्री म्हणून जेम्स विल्सन (James Wilson) याची नियुक्ती झाली. त्याने ७ एप्रिल १८६० रोजी भारताचा पहिला अर्थसंकल्प मांडला आणि प्राप्तिकर (Income Tax) लागू केला.\n\n[संदर्भ: समाधान महाजन / एम. लक्ष्मीकांत]",
+        "en": "(1860): To recover from the financial crisis post-1857 revolt, James Wilson was appointed as the Finance Member. He introduced the first modern Budget in India on April 7, 1860, and also introduced the Income Tax.\n\n"
+      }
+    },
+    {
+      "id": 21,
+      "question": {
+        "mr": "खालीलपैकी कोणत्या गव्हर्नर जनरलची अंदमान बेटावर पोर्ट ब्लेअर येथे एका पठाणाने (शेर अली) हत्या केली होती?",
+        "en": "Which of the following Governor-Generals was assassinated by a Pathan (Sher Ali) at Port Blair in the Andaman Islands?"
+      },
+      "options": [
+        { "mr": "लॉर्ड एल्गिन", "en": "Lord Elgin" },
+        { "mr": "लॉर्ड मेयो", "en": "Lord Mayo" },
+        { "mr": "लॉर्ड नॉर्थब्रुक", "en": "Lord Northbrook" },
+        { "mr": "लॉर्ड लिटन", "en": "Lord Lytton" }
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": {
+        "mr": "(१८७२): लॉर्ड मेयो (१८६९-१८७२) हा एकमेव गव्हर्नर जनरल आहे ज्याची त्याच्या कार्यकाळात हत्या झाली. १८७२ मध्ये अंदमान निकोबार बेटांच्या दौऱ्यावर असताना पोर्ट ब्लेअर येथे शेर अली आफ्रिदी नावाच्या कैद्याने चाकू भोसकून त्याची हत्या केली.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1872): Lord Mayo is the only Governor-General/Viceroy of India to be assassinated while in office. He was stabbed to death by a convict named Sher Ali Afridi at Port Blair in the Andaman Islands in 1872.\n\n"
+      }
+    },
+    {
+      "id": 22,
+      "question": {
+        "mr": "लॉर्ड डलहौसीच्या काळात १८५४ मध्ये कोणत्या कायद्यान्वये भारतात 'पोस्ट ऑफिस' (टपाल कार्यालय) प्रणालीचे आधुनिकीकरण झाले आणि पहिल्यांदा टपाल तिकीट (Postage Stamp) लागू झाले?",
+        "en": "Under which Act during Lord Dalhousie's time in 1854 was the 'Post Office' system modernized and postage stamps introduced for the first time in India?"
+      },
+      "options": [
+        { "mr": "पोस्ट ऑफिस ॲक्ट, 1837", "en": "Post Office Act, 1837" },
+        { "mr": "इंडियन पोस्ट ऑफिस ॲक्ट, 1854", "en": "Indian Post Office Act, 1854" },
+        { "mr": "रॉयल मेल ॲक्ट, 1854", "en": "Royal Mail Act, 1854" },
+        { "mr": "कम्युनिकेशन ॲक्ट, 1854", "en": "Communication Act, 1854" }
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": {
+        "mr": "(१८५४): लॉर्ड डलहौसीने १८५४ मध्ये 'इंडियन पोस्ट ऑफिस ॲक्ट' मंजूर केला. यानुसार संपूर्ण भारतात एकसमान टपाल दर (Uniform rate of postage) लागू झाले आणि पहिल्यांदा टपाल तिकिटांचा (Postage Stamps) वापर सुरू झाला (ज्यात अर्ध्या आण्यात भारतात कुठेही पत्र पाठवता येत असे).\n\n[संदर्भ: डॉ. स. शि. गाठाळ]",
+        "en": "(1854): The Indian Post Office Act of 1854, passed under Lord Dalhousie, reformed the postal system. It introduced a uniform half-anna rate for letters regardless of distance and officially introduced postage stamps.\n\n"
+      }
+    },
+    {
+      "id": 23,
+      "question": {
+        "mr": "खालील विधाने विचारात घ्या:\nअ) १८५३ च्या चार्टर ॲक्टनुसार 'बोर्ड ऑफ कंट्रोल' रद्द करण्यात आले.\nब) या कायद्याने नागरी सेवांमध्ये भरतीसाठी 'स्पर्धा परीक्षा' सुरू केली.\nकोणते विधान योग्य आहे?",
+        "en": "Consider the following statements:\nA) The 'Board of Control' was abolished by the Charter Act of 1853.\nB) This Act introduced 'competitive examinations' for recruitment to civil services.\nWhich statement is correct?"
+      },
+      "options": [
+        { "mr": "फक्त अ", "en": "Only A" },
+        { "mr": "फक्त ब", "en": "Only B" },
+        { "mr": "दोन्ही अ आणि ब", "en": "Both A and B" },
+        { "mr": "दोन्ही नाहीत", "en": "Neither A nor B" }
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": {
+        "mr": "(१८५३): विधान 'ब' बरोबर आहे कारण या कायद्याने खुल्या स्पर्धा परीक्षेचे तत्त्व आणले. मात्र, विधान 'अ' चुकीचे आहे कारण 'बोर्ड ऑफ कंट्रोल' आणि 'कोर्ट ऑफ डिरेक्टर्स' १८५३ च्या कायद्याने नाही, तर १८५७ च्या उठावानंतर आलेल्या '१८५८ च्या भारत सरकार कायद्याने' (Government of India Act 1858) रद्द केले गेले.\n\n[संदर्भ: एम. लक्ष्मीकांत]",
+        "en": "(1853): Statement B is correct as the 1853 Act introduced open competition for civil services. Statement A is incorrect because the Board of Control and Court of Directors were abolished later by the Government of India Act 1858.\n\n"
+      }
+    },
+    {
+      "id": 24,
+      "question": {
+        "mr": "दुसऱ्या शीख युद्धानंतर (१८४९) लॉर्ड डलहौसीने पंजाब ब्रिटिश साम्राज्याला जोडले. त्यानंतर पंजाबच्या प्रशासनासाठी त्याने कोणाच्या अध्यक्षतेखाली 'बोर्ड ऑफ ॲडमिनिस्ट्रेशन' (Board of Administration) ची स्थापना केली?",
+        "en": "After the Second Sikh War (1849), Lord Dalhousie annexed Punjab. Under whose presidency did he form the 'Board of Administration' to govern Punjab?"
+      },
+      "options": [
+        { "mr": "जॉन लॉरेन्स", "en": "John Lawrence" },
+        { "mr": "हेन्री लॉरेन्स (Sir Henry Lawrence)", "en": "Sir Henry Lawrence" },
+        { "mr": "चार्ल्स मॅन्सेल", "en": "Charles Mansel" },
+        { "mr": "ह्यू गफ", "en": "Hugh Gough" }
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": {
+        "mr": "(१८४९): पंजाब खालसा केल्यावर (२९ मार्च १८४९) डलहौसीने प्रशासनासाठी ३ सदस्यांचे 'बोर्ड ऑफ ॲडमिनिस्ट्रेशन' नेमले. याचे अध्यक्ष 'सर हेन्री लॉरेन्स' होते आणि जॉन लॉरेन्स व चार्ल्स मॅन्सेल हे इतर दोन सदस्य होते.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1849): After annexing Punjab in 1849, Dalhousie established a three-member Board of Administration to govern it. Sir Henry Lawrence was its President, with John Lawrence and Charles Mansel as members.\n\n"
+      }
+    },
+    {
+      "id": 25,
+      "question": {
+        "mr": "खालीलपैकी कोणता कायदा भारताच्या प्रशासकीय इतिहासात 'अधिकारांचे विकेंद्रीकरण' (Decentralization of Administration) सुरू करणारा मानला जातो?",
+        "en": "Which of the following acts is considered to have initiated the 'Decentralization of Administration' in the administrative history of India?"
+      },
+      "options": [
+        { "mr": "१८३३ चा चार्टर ॲक्ट", "en": "Charter Act of 1833" },
+        { "mr": "१८५८ चा भारत सरकार कायदा", "en": "Government of India Act 1858" },
+        { "mr": "१८६१ चा भारतीय परिषद कायदा (Indian Councils Act 1861)", "en": "Indian Councils Act 1861" },
+        { "mr": "१८९२ चा भारतीय परिषद कायदा", "en": "Indian Councils Act 1892" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "(१८६१): १८३३ च्या कायद्याने प्रशासनाचे 'केंद्रीकरण' केले होते. परंतु, १८५७ च्या उठावानंतर आलेल्या '१८६१ च्या भारतीय परिषद कायद्याने' (Indian Councils Act 1861) बॉम्बे आणि मद्रास प्रांतांना त्यांचे कायदे करण्याचे अधिकार परत दिले आणि अशा प्रकारे 'विकेंद्रीकरणाची' (Decentralization) प्रक्रिया सुरू केली.\n\n[संदर्भ: एम. लक्ष्मीकांत / स्पेक्ट्रम]",
+        "en": "(1861): While the Act of 1833 was the final step towards centralization, the Indian Councils Act of 1861 initiated the process of decentralization by restoring the legislative powers to the Bombay and Madras Presidencies.\n\n"
+      }
+    }
+  ]
+}

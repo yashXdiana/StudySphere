@@ -1,0 +1,464 @@
+{
+  "testId": "p-hist-07-t10",
+  "title": {
+    "mr": "भारतीय राष्ट्रीय चळवळ (अंतिम सर्वसमावेशक सराव) — सराव 10",
+    "en": "Indian National Movement (Final Comprehensive Practice) — Practice Test 10"
+  },
+  "durationMinutes": 20,
+  "marksPerQuestion": 1,
+  "negativeMarking": 0.25,
+  "totalMarks": 25,
+  "difficulty": "कठीण (MPSC Standard)",
+  "questions": [
+    {
+      "id": 1,
+      "question": {
+        "mr": "१९०५ मधील बंगालच्या फाळणीच्या विरोधात स्वदेशी चळवळीदरम्यान 'स्वातंत्र्यदिनासारखा' पवित्र दिन मानत कोणत्या दिवशी कलकत्त्यामध्ये ऐतिहासिक 'फेडरेशन हॉल' (Federation Hall) च्या पायाभरणीचा कार्यक्रम पार पडला होता?",
+        "en": "On which day during the Swadeshi movement against the Partition of Bengal was the foundation stone of the historic 'Federation Hall' laid in Calcutta?"
+      },
+      "options": [
+        { "mr": "१६ ऑक्टोबर १९०५ (October 16, 1905)", "en": "October 16, 1905" },
+        { "mr": "२० जुलै १९०५", "en": "July 20, 1905" },
+        { "mr": "११ ऑगस्ट १९०६", "en": "August 11, 1906" },
+        { "mr": "२८ डिसेंबर १९०५", "en": "December 28, 1905" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९०५): १६ ऑक्टोबर १९०५ रोजी बंगालची फाळणी अमलात आली त्या दिवशी संपूर्ण बंगालमध्ये शोक पाळला गेला. आनंदमोहन बोस यांच्या हस्ते कलकत्ता येथे हिंदू-मुस्लिम ऐक्याचे प्रतीक म्हणून 'फेडरेशन हॉल'च्या पायाची वीट रचली गेली.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / डॉ. स. शि. गाठाळ]",
+        "en": "(1905): On October 16, 1905, the day partition took effect, a massive gathering witnessed the laying of the foundation stone of the Federation Hall in Calcutta by Ananda Mohan Bose as a symbol of indestructible provincial unity.\n\n"
+      }
+    },
+    {
+      "id": 2,
+      "question": {
+        "mr": "स्वदेशी चळवळीच्या काळात दक्षिण भारतात (तमिळनाडू) 'स्वदेशी स्टीम नेव्हिगेशन कंपनी' (Swadeshi Steam Navigation Company) ची स्थापना करून ब्रिटिशांच्या मक्तेदारीला तगडे आव्हान कोणी दिले होते?",
+        "en": "Who established the 'Swadeshi Steam Navigation Company' in Tuticorin (Madras Presidency) to challenge British maritime monopoly during the Swadeshi era?"
+      },
+      "options": [
+        { "mr": "व्ही. ओ. चिदंबरम पिल्लाई (V.O. Chidambaram Pillai / VOC)", "en": "V.O. Chidambaram Pillai" },
+        { "mr": "जी. सुब्रमण्य अय्यर", "en": "G. Subramania Iyer" },
+        { "mr": "सुब्रह्मण्य भारती", "en": "Subramania Bharati" },
+        { "mr": "सी. राजगोपालाचारी", "en": "C. Rajagopalachari" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९०६): मद्रास प्रांतातील तूटिकोरिन येथे 'व्ही. ओ. चिदंबरम पिल्लाई' (VOC) यांनी स्वदेशी स्टीमशिप कंपनी सुरू करून ब्रिटिश ब्रिटानिया स्टीम नेव्हिगेशन कंपनीच्या मक्तेदारीविरोधात देशी जहाजे चालवली.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1906): V.O. Chidambaram Pillai launched the Swadeshi Steam Navigation Company in Tuticorin, fiercely challenging the British coastal shipping monopoly as part of the Swadeshi economic agenda.\n\n"
+      }
+    },
+    {
+      "id": 3,
+      "question": {
+        "mr": "१९०७ च्या कुख्यात 'सुरत अधिवेशन' (Surat Split) नंतर काँग्रेसमधील मवाळ गटाचे नियंत्रण प्रस्थापित झाल्यावर काँग्रेसच्या नवीन घटनेत कोणती अट घातली गेली, ज्यामुळे जहाल नेत्यांना बाहेर काढावे लागले?",
+        "en": "Following the 1907 Surat split, what explicit constitutional clause was inserted into the Congress constitution by the Moderates to keep Extremists out?"
+      },
+      "options": [
+        { "mr": "काँग्रेसच्या प्रत्येक सदस्याला ब्रिटिश संविधानांतर्गत स्वराज्य मिळवण्याची प्रतिज्ञा घ्यावी लागेल आणि हिंसक मार्गाचा त्याग करावा लागेल", "en": "Requiring all delegates to explicitly pledge allegiance to constitutional methods under the British Crown" },
+        { "mr": "केवळ वकिलांनाच मतदानाचा अधिकार राहील", "en": "Restricting voting rights exclusively to lawyers" },
+        { "mr": "इंग्रजी भाषा सक्तीची केली जाईल", "en": "Making English compulsory for debates" },
+        { "mr": "वार्षिक वर्गणी १० रुपये केली जाईल", "en": "Raising the annual fee to 10 rupees" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९०८): सुरतच्या फुटीनंतर अलाहाबाद येथे भरलेल्या संमेलनात काँग्रेसची नवीन घटना तयार झाली, ज्यामध्ये सदस्यांना ब्रिटिश साम्राज्यांतर्गत सनदशीर मार्गांनी सुधारणा मिळवण्याची शपथ घेणे बंधनकारक केले गेले, ज्यामुळे टिळक व जहाल नेते काँग्रेसबाहेर राहिले.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1908): At the subsequent Allahabad convention, the Moderates amended the INC constitution, legally barring anyone unwilling to pledge allegiance to constitutional means under the British Crown.\n\n"
+      }
+    },
+    {
+      "id": 4,
+      "question": {
+        "mr": "पहिल्या महायुद्धाच्या काळात गदर पार्टीच्या प्रेरणेने भारतात घडवून आणण्यात आलेल्या अयशस्वी 'गदर कटात' (Ghadar Conspiracy 1915) प्रमुख भूमिका बजावणारे आणि नंतर फाशी जाणारे क्रांतिकारक कोण होते?",
+        "en": "Which prominent Ghadarite revolutionary was executed for masterminding the 1915 Ghadar mutiny plans in Punjab?"
+      },
+      "options": [
+        { "mr": "करतार सिंग सराभा (Kartar Singh Sarabha) आणि अन्य क्रांतिकारक", "en": "Kartar Singh Sarabha and other martyrs" },
+        { "mr": "राजगुरु आणि सुखदेव", "en": "Rajguru and Sukhdev" },
+        { "mr": "प्रफुल्ल चाकी", "en": "Prafulla Chaki" },
+        { "mr": "अशाफ उल्ला खान", "en": "Ashfaqulla Khan" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९१५): अमेरिकेतून भारतात परतत गदर कटाचे नेतृत्व करणारे तरुण 'करतार सिंग सराभा' (अवघ्या १९ व्या वर्षी) आणि इतर सहकाऱ्यांना ब्रिटिश फितुरीमुळे अटक झाली आणि लाहोर षडयंत्र खटल्यात त्यांना फाशी दिली गेली (भगत सिंग हे त्यांचे मोठे चाहते होते).\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1915): Kartar Singh Sarabha, a brilliant young Ghadarite who returned from the US to spark a revolt, was betrayed, captured, and hanged at age 19 in the Lahore Conspiracy Trial.\n\n"
+      }
+    },
+    {
+      "id": 5,
+      "question": {
+        "mr": "पहिल्या महायुद्ध काळात ब्रिटिश राजवटीला अडचणीत आणण्यासाठी जर्मनी आणि जपानच्या मदतीने भारतीय क्रांतिकारकांनी परदेशात स्थापन केलेल्या 'बर्लिन समितीची' (Berlin Committee / Indian Independence Committee) स्थापना कधी झाली?",
+        "en": "When was the 'Berlin Committee' (Indian Independence Committee) established by Indian nationalists with German foreign office backing during WWI?"
+      },
+      "options": [
+        { "mr": "१९१५ (सप्टेंबर १९१४ ते १९१५ च्या दरम्यान - Virendranath Chattopadhyaya, Bhupendra Nath Datta)", "en": "1914-1915 (WWI)" },
+        { "mr": "१९०७", "en": "1907" },
+        { "mr": "१९१३", "en": "1913" },
+        { "mr": "१९१९", "en": "1919" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९१४-१९१५): पहिल्या महायुद्धाच्या सुरुवातीस बर्लिनमध्ये वीरेंद्रनाथ चट्टोपाध्याय, भूपेंद्रनाथ दत्त, लाला हरदयाल यांनी जर्मन सरकारच्या साहाय्याने 'बर्लिन समिती' (भारतीय स्वातंत्र्य समिती) स्थापन केली, जिने पश्चिम आशियातून ब्रिटिशांविरुद्ध उठावाची योजना आखली (झिम्रमन योजना).\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1914-1915): Operating under the 'Zimmermann Plan', expatriate revolutionaries formed the Berlin Committee in Germany to coordinate anti-British uprisings and secure military supplies.\n\n"
+      }
+    },
+    {
+      "id": 6,
+      "question": {
+        "mr": "१९१६ च्या लखनऊ अधिवेशनात काँग्रेस आणि मुस्लिम लीग यांच्यात जो 'लखनऊ करार' (Lucknow Pact) झाला, त्याची मुख्य किंमत किंवा भविष्यातील घातक परिणाम काय ठरला?",
+        "en": "What was the long-term, politically damaging concession made by the Congress in the Lucknow Pact of 1916?"
+      },
+      "options": [
+        { "mr": "मुस्लिम लीगची 'स्वतंत्र मतदारसंघाची' (Separate Electorates) मागणी काँग्रेसने औपचारिकपणे मान्य करणे", "en": "Formal Congress acceptance of the Muslim League's demand for separate electorates" },
+        { "mr": "भारताची फाळणी तात्काळ मान्य करणे", "en": "Immediate acceptance of Pakistan's creation" },
+        { "mr": "काँग्रेसचे नाव बदलून मुस्लिम लीग करणे", "en": "Renaming Congress to Muslim League" },
+        { "mr": "काँग्रेस निवडणुकांवर पूर्ण बहिष्कार टाकणे", "en": "Congress permanently boycotting elections" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९१६): लखनऊ करारात हिंदू-मुस्लिम ऐक्याचा तात्कालिक फायदा झाला खरा, परंतु काँग्रेसने मुस्लिम लीगच्या 'स्वतंत्र मतदारसंघाच्या' (Separate Electorates) तत्त्वाला मान्यता दिली, ज्यामुळे भविष्यातील फुटीरतावादी राजकारणाला कायदेशीर वैधता मिळाली.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / एम. लक्ष्मीकांत]",
+        "en": "(1916): While the Lucknow Pact fostered short-term Hindu-Muslim bonhomie, its most fatal flaw was the Congress's tacit endorsement of separate electorates, institutionalizing communal politics.\n\n"
+      }
+    },
+    {
+      "id": 7,
+      "question": {
+        "mr": "महात्मा गांधींनी दक्षिण आफ्रिकेत असताना तिथे वर्णद्वेषाविरुद्ध लढा देण्यासाठी १९०४ मध्ये डरबन येथे कोणत्या प्रसिद्ध 'आश्रमाची' स्थापना केली होती?",
+        "en": "Which famous farm/ashram was established by Mahatma Gandhi in 1904 near Durban, South Africa, to organize anti-apartheid resistance?"
+      },
+      "options": [
+        { "mr": "फिनिक्स फार्म (Phoenix Farm)", "en": "Phoenix Farm" },
+        { "mr": "टॉलस्टॉय फार्म", "en": "Tolstoy Farm" },
+        { "mr": "साबरमती आश्रम", "en": "Sabarmati Ashram" },
+        { "mr": "वर्धा आश्रम", "en": "Wardha Ashram" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९०४): दक्षिण आफ्रिकेत असताना गांधीजींनी 'इंडियन ओपिनियन' वृत्तपत्र सुरू करण्यासाठी आणि सत्याग्रहींना प्रशिक्षण देण्यासाठी १९०४ मध्ये डरबनजवळ 'फिनिक्स फार्म' स्थापन केले (नंतर १९१० मध्ये जोहान्सबर्गजवळ 'टॉलस्टॉय फार्म' सुरू केले).\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1904): Gandhi established the Phoenix Farm near Durban in 1904 as a communal settlement and headquarters for publishing 'Indian Opinion' and training satyagrahis.\n\n"
+      }
+    },
+    {
+      "id": 8,
+      "question": {
+        "mr": "१९१८ मधील खेडा सत्याग्रहाच्या (Kheda Satyagraha) वेळी शेतकऱ्यांना कर न भरण्याची (No-tax) शपथ देणारे आणि गांधीजींचे प्रमुख सहकारी म्हणून काम करणारे नेते कोण होते?",
+        "en": "Who served as Mahatma Gandhi's key lieutenant in organizing the Kheda Satyagraha of 1918 and urging peasants to withhold land revenue?"
+      },
+      "options": [
+        { "mr": "सरदार वल्लभभाई पटेल आणि इंदुलाल याज्ञिक", "en": "Sardar Vallabhbhai Patel and Indulal Yagnik" },
+        { "mr": "जवाहरलाल नेहरू व सुभाशचंद्र बोस", "en": "Jawaharlal Nehru and Subhas Bose" },
+        { "mr": "राजकुमार शुक्ला", "en": "Rajkumar Shukla" },
+        { "mr": "सेनापती बापट", "en": "Senapati Bapat" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९१८): गुजरातच्या खेडा जिल्ह्यात दुष्काळामुळे पिक बुडाले असतानाही ब्रिटिशांनी सक्तीने महसूल वसूल चालवला. सरदार वल्लभभाई पटेल आणि इंदुलाल याज्ञिक यांनी गांधीजींच्या मार्गदर्शनाखाली शेतकऱ्यांना करबंदीचा लढा लढण्यास प्रवृत्त केले.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / समाधान महाजन]",
+        "en": "(1918): During the Kheda crop failure, Sardar Vallabhbhai Patel and Indulal Yagnik mobilized impoverished peasants to launch a disciplined no-tax campaign under Gandhi's guidance.\n\n"
+      }
+    },
+    {
+      "id": 9,
+      "question": {
+        "mr": "असहकार चळवळीच्या काळात (१९२०-२२) ब्रिटीश राजकुमार 'प्रिन्स ऑफ वेल्स' यांच्या भारत भेटीच्या निषेधार्थ मुंबईत (नोव्हेंबर १९२१) झालेल्या आंदोलनादरम्यान कोणत्या मोठ्या वर्गात उग्र संघर्ष झाला होता?",
+        "en": "What violent communal/class clash erupted in Bombay during the anti-Prince of Wales protests in November 1921, distressing Mahatma Gandhi?"
+      },
+      "options": [
+        { "mr": "आंदोलक आणि प्रिन्सच्या स्वागताला जाणारे पारशी/युरोपीय यांच्यात दंगल व हिंसाचार", "en": "Riots breaking out between nationalist protestors and loyalists/Europeans welcoming the Prince" },
+        { "mr": "शेतकरी आणि कामगार यांच्यात खडाजंगी", "en": "Clashes between peasants and workers" },
+        { "mr": "विद्यार्थी आणि शिक्षक यांच्यात संप", "en": "Strike between students and teachers" },
+        { "mr": "सैन्य आणि पोलीस यांच्यात गोळीबार", "en": "Firefight between army and police" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९२१): नोव्हेंबर १९२१ मध्ये प्रिन्स ऑफ वेल्स मुंबईत उतरल्यावर काँग्रेसने कडक बहिष्कार टाकला, परंतु काही निष्ठावंतांनी स्वागत केल्याने संतप्त आंदोलक आणि त्यांच्यात दंगली उसळल्या, ज्यामुळे गांधीजींना खूप वेदना झाल्या व त्यांनी उपोषण केले.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1921): The royal visit triggered violent street riots in Bombay between nationalist picketers and loyalist crowds, prompting a deeply anguished Gandhi to briefly fast for peace.\n\n"
+      }
+    },
+    {
+      "id": 10,
+      "question": {
+        "mr": "१९२३ मध्ये नागपूरमध्ये (मध्य प्रदेश) राष्ट्रीय स्वयंसेवक संघ (RSS) ची स्थापना कोणी केली होती?",
+        "en": "Who founded the Rashtriya Swayamsevak Sangh (RSS) in Nagpur in September 1925?"
+      },
+      "options": [
+        { "mr": "डॉ. केशव बळीराम हेडगेवार (Dr. Keshav Baliram Hedgewar)", "en": "Dr. Keshav Baliram Hedgewar" },
+        { "mr": "वि. दा. सावरकर", "en": "V.D. Savarkar" },
+        { "mr": "गोळवलकर गुरुजी", "en": "Golwalkar Guruji" },
+        { "mr": "डॉ. बी. एस. मुंजे", "en": "Dr. B.S. Moonje" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९२५): विजयादशमीच्या दिवशी (२७ सप्टेंबर १९२५) नागपूर येथे डॉ. केशव बळीराम हेडगेवार यांनी हिंदू समाजाच्या संस्कृतीचे व संग्ठनाचे रक्षण करण्यासाठी राष्ट्रीय स्वयंसेवक संघाची (RSS) स्थापना केली.\n\n[संदर्भ: आधुनिक महाराष्ट्राचा इतिहास / संदर्भ]",
+        "en": "(1925): Dr. Keshav Baliram Hedgewar founded the Rashtriya Swayamsevak Sangh (RSS) in Nagpur on Vijayadashami in September 1925 to foster Hindu cultural unity and discipline.\n\n"
+      }
+    },
+    {
+      "id": 11,
+      "question": {
+        "mr": "अखिल भारतीय किसान सभेची स्थापना (१९३६) लखनऊ येथे झाल्यावर त्याचे सरचिटणीस (General Secretary) म्हणून कोण कार्यरत होते, तर अध्यक्ष कोण होते?",
+        "en": "Who served as the General Secretary and President respectively of the All India Kisan Sabha when it was founded in Lucknow in 1936?"
+      },
+      "options": [
+        { "mr": "अध्यक्ष: स्वामी सहजानंद सरस्वती, सरचिटणीस: इंदुलाल याज्ञिक", "en": "President: Swami Sahajanand Saraswati; General Secretary: Indulal Yagnik" },
+        { "mr": "अध्यक्ष: इंदुलाल याज्ञिक, सरचिटणीस: सहजानंद सरस्वती", "en": "President: Indulal Yagnik; General Secretary: Sahajanand Saraswati" },
+        { "mr": "अध्यक्ष: एन. जी. रंगा, सरचिटणीस: जयप्रकाश नारायण", "en": "President: N.G. Ranga; Secretary: J.P. Narayan" },
+        { "mr": "अध्यक्ष: बाबा रामचंद्र, सरचिटणीस: आचार्य नरेंद्र देव", "en": "President: Baba Ramchandra; Secretary: Narendra Dev" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९३६): ११ एप्रिल १९३६ रोजी लखनऊ येथे भरलेल्या अखिल भारतीय किसान सभेच्या पहिल्या अधिवेशनात स्वामी सहजानंद सरस्वती हे अध्यक्ष बनले, तर गुजरातचे समाजवादी नेते इंदुलाल याज्ञिक हे त्याचे पहिले सरचिटणीस (General Secretary) झाले.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1936): Swami Sahajanand Saraswati presided over the inaugural session of the All India Kisan Sabha in Lucknow, with prominent socialist leader Indulal Yagnik serving as General Secretary.\n\n"
+      }
+    },
+    {
+      "id": 12,
+      "question": {
+        "mr": "डिसेंबर १९२९ च्या लाहोर अधिवेशनात 'पूर्ण स्वराज' ठराव संमत झाल्यावर गांधीजींनी ब्रिटिशांना १३ मागण्यांची नवीन यादी पाठवली होती, आणि त्यावर अंमलबजावणी न झाल्यास काय सुरू करण्याची घोषणा केली होती?",
+        "en": "What form of direct mass action did Gandhi announce he would launch if Viceroy Irwin ignored his new list of demands in early 1930?"
+      },
+      "options": [
+        { "mr": "सविनय कायदेभंग चळवळ (Civil Disobedience Movement - दांडी यात्रेसह)", "en": "Civil Disobedience Movement starting with breaking the salt law" },
+        { "mr": "सशस्त्र क्रांती", "en": "Armed rebellion" },
+        { "mr": "कायदेमंडळात प्रवेश", "en": "Council entry" },
+        { "mr": "खिलाफत पुनरुज्जीवन", "en": "Khilafat revival" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९३०): पूर्ण स्वराजचा प्रस्ताव पास झाल्यावर गांधीजींनी इरविनला अल्टिमेटम दिला आणि प्रतिसाद न मिळाल्यास 'सविनय कायदेभंगाची' (Civil Disobedience) सुरुवात करण्याचे स्पष्ट केले, ज्याची सुरुवात दांडी यात्रेने झाली.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1930): Following the Lahore Purna Swaraj resolution, Gandhi declared that the nation would launch a mass Civil Disobedience Movement, beginning with breaking the salt laws, if his demands were unmet.\n\n"
+      }
+    },
+    {
+      "id": 13,
+      "question": {
+        "mr": "सविनय कायदेभंग चळवळीच्या काळात (१९३०-३४) बिहार आणि पूर्व युनायटेड प्रोव्हिन्समध्ये शेतकऱ्यांनी जमीन महसूल न भरण्यासाठी कोणती प्रसिद्ध चळवळ चालवली होती?",
+        "en": "What specific anti-revenue campaign did peasants wage in Bihar and parts of UP during the Civil Disobedience Movement?"
+      },
+      "options": [
+        { "mr": "चौकीदारी कर बंद चळवळ (No-Chaukidari Tax Campaign)", "en": "No-Chaukidari Tax Campaign" },
+        { "mr": "निळीची शेती बंदी", "en": "No-indigo campaign" },
+        { "mr": "जमीनदारांवर बहिष्कार", "en": "Boycott of landlords" },
+        { "mr": "रेल्वे तिकीट न काढण्याची चळवळ", "en": "No-ticket rail campaign" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९३०-३४): सविनय कायदेभंगात मिठाच्या सत्याग्रहाव्यतिरिक्त बिहार व बंगालमध्ये शेतकऱ्यांनी गावातील पोलीस रक्षणासाठी द्यावा लागणारा 'चौकीदारी कर' (Chaukidari tax) देण्यास नकार देत 'चौकीदारी कर बंद' चळवळ तीव्र केली.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1930-34): Alongside salt satyagrahas, peasants in Bihar, Bengal, and parts of UP aggressively waged the 'No-Chaukidari Tax' campaign, refusing to pay the humiliating village police tax.\n\n"
+      }
+    },
+    {
+      "id": 14,
+      "question": {
+        "mr": "डिसेंबर १९३१ मध्ये लंडनमधून 'दुसऱ्या गोलमेज परिषदेवरून' रिकाम्या हाताने परतल्यावर महात्मा गांधींनी कोणती घोषणा केली होती?",
+        "en": "What declaration did Mahatma Gandhi make upon returning to India empty-handed from the Second Round Table Conference in December 1931?"
+      },
+      "options": [
+        { "mr": "भारत स्वतंत्र झाला आहे", "en": "India is now free" },
+        { "mr": "सविनय कायदेभंग चळवळ पुन्हा सुरू केली जाईल आणि आम्ही रिकाम्या हातात परतलो तरी देशाची मान खाली जाऊ देणार नाही", "en": "The Civil Disobedience Movement would be resumed, though returning empty-handed, national honor is intact" },
+        { "mr": "आता राजकारणातून संन्यास घेतो", "en": "Retiring from politics forever" },
+        { "mr": "मुस्लिम लीगसोबत युती करतो", "en": "Allied with the Muslim League" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९३१): लंडनहून मुंबईत उतरल्यावर गांधीजींनी जाहीर केले की, जरी आम्ही रिकाम्या हातात परतलो असलो आणि ब्रिटिशांनी दडपशाही केली असली, तरी 'आम्ही देशाची मान खाली जाऊ देणार नाही' आणि सविनय कायदेभंग पुन्हा तीव्र केला जाईल.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1931): Returning to Bombay after the failed conference, Gandhi announced that while he returned empty-handed, he had not compromised national honor and was bracing to resume the struggle.\n\n"
+      }
+    },
+    {
+      "id": 15,
+      "question": {
+        "mr": "१९३४ मध्ये काँग्रेस समाजवादी पक्षाची (Congress Socialist Party - CSP) स्थापना कोणी केली होती?",
+        "en": "Who were the prominent founders of the Congress Socialist Party (CSP) established in 1934?"
+      },
+      "options": [
+        { "mr": "जयप्रकाश नारायण, आचार्य नरेंद्र देव आणि मिनू मसानी (J.P. Narayan, Acharya Narendra Deva and Minoo Masani)", "en": "Jayaprakash Narayan, Acharya Narendra Deva, and Minoo Masani" },
+        { "mr": "सुभाषचंद्र बोस आणि फॉरवर्ड ब्लॉक नेते", "en": "Subhas Bose and Forward Bloc leaders" },
+        { "mr": "एम. एन. रॉय आणि कॉम्रेड डांगे", "en": "M.N. Roy and Com. Dange" },
+        { "mr": "मोतीलाल नेहरू आणि सी. आर. दास", "en": "Motilal Nehru and C.R. Das" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९३४): मे १९३४ मध्ये पटना येथे भरलेल्या बैठकीत जयप्रकाश नारायण, आचार्य नरेंद्र देव, मिनू मसानी, अशोक मेहता आणि डॉ. राम मनोहर लोहिया यांनी काँग्रेसच्या अंतर्गतच 'काँग्रेस समाजवादी पक्षाची' (CSP) स्थापना केली.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / समाधान महाजन]",
+        "en": "(1934): Left-wing socialists within the Congress, including Jayaprakash Narayan, Acharya Narendra Deva, and Ram Manohar Lohia, formally organized the Congress Socialist Party in Patna in 1934.\n\n"
+      }
+    },
+    {
+      "id": 16,
+      "question": {
+        "mr": "१९४२ च्या 'भारत छोडो आंदोलनादरम्यान' (Quit India Movement) बिहारमधील कोणत्या जेलमधून जयप्रकाश नारायण (JP) आणि इतर समाजवादी नेते भिंत ओलांडून भूमिगत चळवळीत सामील झाले होते?",
+        "en": "From which prison did Jayaprakash Narayan (JP) famously make a daring escape by scaling a wall during the Quit India movement in 1942?"
+      },
+      "options": [
+        { "mr": "हजारीबाग सेंट्रल जेल, बिहार (Hazaribagh Central Jail)", "en": "Hazaribagh Central Jail, Bihar" },
+        { "mr": "येरवडा तुरुंग, पुणे", "en": "Yerwada Central Jail, Pune" },
+        { "mr": "अंदमान सेल्युलर जेल", "en": "Cellular Jail, Andaman" },
+        { "mr": "प्रेसिडेन्सी जेल, कलकत्ता", "en": "Presidency Jail, Calcutta" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९४२): भारत छोडो आंदोलनाची सुरुवात झाल्यावर जयप्रकाश नारायण यांना हजारीबाग जेलमध्ये ठेवले होते. दिवाळीच्या रात्री (नोव्हेंबर १९४२) त्यांनी इतर सहकाऱ्यांसह भिंत ओलांडून सुटका करून घेतली आणि भूमिगत चळवळीचे नेतृत्व केले.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1942): Jayaprakash Narayan executed a legendary escape from Hazaribagh Central Jail on Diwali night in 1942, emerging as the preeminent hero of the underground Quit India resistance.\n\n"
+      }
+    },
+    {
+      "id": 17,
+      "question": {
+        "mr": "१९४५ मध्ये शिमला येथे भरलेली 'वेव्हेल परिषद' (Wavell Conference / Simla Conference) का अयशस्वी ठरली होती?",
+        "en": "Why did the Simla Conference convened by Viceroy Lord Wavell in June 1945 ultimately collapse?"
+      },
+      "options": [
+        { "mr": "मुस्लिम लीगचा असा आग्रह होता की कार्यकारी मंडळातील सर्व मुस्लिम मंत्र्यांची नियुक्ती फक्त लीगच करेल, ज्यास काँग्रेसने विरोध केला", "en": "The Muslim League insisted on sole monopoly to nominate all Muslim ministers, which Congress rejected" },
+        { "mr": "गांधीजींनी परिषदेत सहभागी होण्यास नकार दिला", "en": "Gandhi refused to attend the conference" },
+        { "mr": "ब्रिटनने भारताला स्वातंत्र्य देण्यास स्पष्ट नकार दिला", "en": "Britain flatly refused independence" },
+        { "mr": "फक्त कम्युनिस्ट पक्षाने बहिष्कार टाकला", "en": "Only the Communist party boycotted it" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९४५): वाईसरॉय वेव्हेल यांनी सर्वपक्षीय 'शिमला परिषद' बोलावली. परंतु जिनांनी अट्टाहास धरला की मंत्रिमंडळातील सर्व मुस्लिम प्रतिनिधी फक्त मुस्लिम लीगचेच असावेत (ज्यामुळे काँग्रेसच्या राष्ट्रीय स्वरूपाला धक्का बसला असता). या मुद्यावरून ही परिषद अपयशी ठरली.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1945): The Simla Conference collapsed because M.A. Jinnah stubbornly claimed the exclusive right of the Muslim League to nominate all Muslim members to the proposed executive council, which the secular Congress opposed.\n\n"
+      }
+    },
+    {
+      "id": 18,
+      "question": {
+        "mr": "आझाद हिंद फौजेच्या (INA) खटल्यांच्या वेळी (लाल किल्ला खटला - १९४५-४६) देशभरात उडालेल्या जनक्षोभाला काय म्हटले जाते, ज्याने ब्रिटीश सत्तेला हादरवून सोडले?",
+        "en": "What monumental wave of public agitation in support of the INA accused shook the British colonial apparatus to its core in late 1945 and early 1946?"
+      },
+      "options": [
+        { "mr": "आयएनए सहानभूती आंदोलन व लाल किल्ला खटला जनक्षोभ (INA Agitation / Red Fort Trials wave)", "en": "INA Agitation and Red Fort Trials wave" },
+        { "mr": "दुसरे असहकार आंदोलन", "en": "Second Non-Cooperation" },
+        { "mr": "तिसरे सविनय कायदेभंग", "en": "Third Civil Disobedience" },
+        { "mr": "आसाम रायफल्स बंड", "en": "Assam Rifles Mutiny" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९४५-४६): लाल किल्ल्यातील खटल्यांच्या विरोधात काँग्रेस, मुस्लिम लीग, कम्युनिस्ट आणि सर्वपक्षीय जनता रस्त्यावर उतरली. विद्यार्थ्यांचे संप, मोर्चे आणि आक्रमक निदर्शनांनी ब्रिटिश प्रशासनाला जाणीव करून दिली की आता भारतीय सैनिकांची निष्ठा ब्रिटिशांशी राहिलेली नाही.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1945-46): The INA agitation united Indians across all communal and political lines, culminating in massive strikes, violent student-police clashes, and anti-British rallies demanding the release of INA prisoners.\n\n"
+      }
+    },
+    {
+      "id": 19,
+      "question": {
+        "mr": "कॅबिनेट मिशन योजनेनुसार (१९४६) 'संविधान सभेच्या' (Constituent Assembly) निवडणुकांमध्ये प्रांतांना जागा वाटप करताना कोणत्या निकषाचा प्रामुख्याने आधार घेतला गेला होता?",
+        "en": "On what primary demographic criterion were seats allocated to provinces for the election of the Constituent Assembly in 1946?"
+      },
+      "options": [
+        { "mr": "लोकसंख्या (साधारणपणे १० लाखांमागे १ जागा - Population ratio of roughly 1 seat per 1 million people)", "en": "Population (roughly 1 seat per million people)" },
+        { "mr": "केवळ संपत्ती आणि कर भरणारे नागरिक", "en": "Property and tax-paying capacity only" },
+        { "mr": "फक्त उच्चवर्णीय लोकसंख्या", "en": "Upper-caste population only" },
+        { "mr": "सैन्यातील सैनिकांची संख्या", "en": "Number of soldiers in the army" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९४६): कॅबिनेट मिशननुसार संविधान सभेसाठी लोकसंख्येच्या आधारावर जागावाटप झाले. साधारणपणे दर १० लाख लोकसंख्येमागे १ जागा अशी रचना केली गेली आणि तीन प्रमुख समुदाय (मुस्लिम, शिख व सामान्य) ठरवले गेले.\n\n[संदर्भ: एम. लक्ष्मीकांत]",
+        "en": "(1946): Seats in the Constituent Assembly were allocated proportionally to the population, with roughly one representative allotted for every million people across major communities (Muslim, Sikh, and General).\n\n"
+      }
+    },
+    {
+      "id": 20,
+      "question": {
+        "mr": "माऊंटबॅटन योजना (३ जून १९४७) जाहीर झाल्यावर भारताच्या फाळणीचा आणि स्वातंत्र्याचा कायदा ब्रिटीश संसदेत मंजूर झाला, त्या ऐतिहासिक 'भारतीय स्वातंत्र्य कायदा १९४७' नुसार भारत आणि पाकिस्तान स्वतंत्र झाल्यावर कोणत्या राज्यांचे अधिकार समाप्त झाले?",
+        "en": "According to the Indian Independence Act 1947, what imperial title and prerogative of the British Crown formally lapsed?"
+      },
+      "options": [
+        { "mr": "ब्रिटिश सम्राटाचे 'भारताचे सम्राट' (Emperor of India) हे बिरुद आणि पार्लमेंटचे नियंत्रण", "en": "The title 'Emperor of India' and British parliamentary sovereignty over the dominions" },
+        { "mr": "ब्रिटनचे पंतप्रधानपद", "en": "The office of British Prime Minister" },
+        { "mr": "ब्रिटिश नौदल", "en": "The British Navy" },
+        { "mr": "ब्रिटनची बँक", "en": "The Bank of England" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९४७): भारतीय स्वातंत्र्य कायद्यानुसार ब्रिटीश सम्राटाचे 'सम्राट ऑफ इंडिया' (Emperor of India) हे बिरुद रद्द झाले आणि ब्रिटिश संसदेचे कायदेशीर नियंत्रण पूर्णपणे संपले.\n\n[संदर्भ: एम. लक्ष्मीकांत / स्पेक्ट्रम]",
+        "en": "(1947): The Act formally ended the use of the title 'Emperor of India' by the British monarch and terminated all British parliamentary oversight over the newly independent dominions.\n\n"
+      }
+    },
+    {
+      "id": 21,
+      "question": {
+        "mr": "स्वातंत्र्योत्तर काळात हैदराबाद संस्थानाचे विलीनीकरण करण्यासाठी भारतीय लष्कराने व पोलिसांनी राबवलेल्या 'ऑपरेशन पोलो' (Operation Polo) ला दुसरे कोणते नाव किंवा संदर्भ दिला जातो?",
+        "en": "By what alternative popular description is the military action 'Operation Polo' (September 1948) widely remembered?"
+      },
+      "options": [
+        { "mr": "हैदराबादची पोलीस कारवाई (Police Action against Nizam's Razakars)", "en": "Police Action against Hyderabad's Razakars" },
+        { "mr": "निजामाविरुद्ध हवाई बॉम्बफेक", "en": "Aerial bombing of Nizam's palace" },
+        { "mr": "काश्मीर युद्ध", "en": "Kashmir War" },
+        { "mr": "गोवा मुक्तिलढा", "en": "Goa Liberation Struggle" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९४८): हैदराबादच्या रजाकार व लष्कराच्या विरोधात सप्टेंबर १९४८ मध्ये सरदार पटेलांनी जी कारवाई केली तिला अधिकृतरीत्या आणि सामान्यतः 'पोलिस कारवाई' (Police Action) म्हणून ओळखले जाते, ज्याचे लष्करी सांकेतिक नाव 'ऑपरेशन पोलो' होते.\n\n[संदर्भ: एम. लक्ष्मीकांत / स्पेक्ट्रम]",
+        "en": "(1948): Operation Polo is famously referred to as the 'Police Action' launched to restore law and order and suppress the violent Razakar militia in Hyderabad.\n\n"
+      }
+    },
+    {
+      "id": 22,
+      "question": {
+        "mr": "फ्रेंच वसाहतींच्या विरोधात लढा देत 'पाँडिचेरी' (Puducherry) आणि इतर प्रदेश भारतीय संघराज्यात विलीन होण्यासाठी कोणत्या दशकात मोठे लढे झाले?",
+        "en": "In which decade were French colonial enclaves like Puducherry, Karaikal, and Chandernagore successfully integrated into independent India?"
+      },
+      "options": [
+        { "mr": "१९५० चे दशक (Integration completed de facto in 1954 and de jure in 1962)", "en": "1950s (De facto in 1954)" },
+        { "mr": "१९४७", "en": "1947" },
+        { "mr": "१९६० चे दशक", "en": "1960s" },
+        { "mr": "१९७० चे दशक", "en": "1970s" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९५४): फ्रेंच ताब्यातील पाँडिचेरी, माये, यानम् आणि चंदननगर हे प्रदेश १ नोव्हेंबर १९५४ रोजी भारताला सुपूर्द केले गेले (डे फॅक्टो ताबा, आणि १९६२ मध्ये कायदेशीर विलीनीकरण झाले), तर गोव्याचे पोर्तुगीजांकडून १९६१ मध्ये विलीनीकरण झाले.\n\n[संदर्भ: एम. लक्ष्मीकांत]",
+        "en": "(1954): French colonial pockets like Puducherry were peacefully transferred to India in November 1954 after sustained nationalist agitation, completing de facto integration.\n\n"
+      }
+    },
+    {
+      "id": 23,
+      "question": {
+        "mr": "गोव्याला पोर्तुगीजांच्या दिर्घकालीन राजवटीपासून मुक्त करण्यासाठी भारतीय सैन्याने १९६१ मध्ये कोणते लष्करी व नौदल अभियान राबवले होते?",
+        "en": "What was the code name of the military action launched by India in December 1961 to liberate Goa, Daman, and Diu from Portuguese rule?"
+      },
+      "options": [
+        { "mr": "ऑपरेशन विजय (Operation Vijay - December 1961)", "en": "Operation Vijay" },
+        { "mr": "ऑपरेशन पोलो", "en": "Operation Polo" },
+        { "mr": "ऑपरेशन मेघदूत", "en": "Operation Meghdoot" },
+        { "mr": "ऑपरेशन क्रांती", "en": "Operation Kranti" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९६१): पोर्तुगीजांच्या ताब्यातून गोवा, दमन व दीव मुक्त करण्यासाठी डिसेंबर १९६१ मध्ये भारतीय लष्कराने 'ऑपरेशन विजय' राबवले आणि ४५१ वर्षांच्या पोर्तुगीज राजवटीचा अंत करत गोव्याला भारतीय संघराज्यात समाविष्ट केले.\n\n[संदर्भ: एम. लक्ष्मीकांत / स्पेक्ट्रम]",
+        "en": "(1961): India executed 'Operation Vijay' in December 1961, swiftly liberating Goa, Daman, and Diu from 450 years of Portuguese colonial occupation.\n\n"
+      }
+    },
+    {
+      "id": 24,
+      "question": {
+        "mr": "स्वातंत्र्योत्तर काळात (१९५१-१९५२) स्वतंत्र भारताच्या इतिहासातील 'पहिली आमची सार्वत्रिक निवडणूक' (First General Elections) कधी पार पडली होती?",
+        "en": "When were India's historic first general elections held under the new Constitution?"
+      },
+      "options": [
+        { "mr": "ऑक्टोबर १९५१ ते फेब्रुवारी १९५२ (October 1951 to February 1952)", "en": "October 1951 to February 1952" },
+        { "mr": "जानेवारी १९५०", "en": "January 1950" },
+        { "mr": "नोव्हेंबर १९४९", "en": "November 1949" },
+        { "mr": "मार्च १९५५", "en": "March 1955" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९५१-५२): स्वतंत्र भारताच्या संविधानानुसार पहिल्या सार्वत्रिक निवडणुका ऑक्टोबर १९५१ ते फेब्रुवारी १९५२ या काळात पार पडल्या, ज्यात सुकुमार सेन हे भारताचे पहिले मुख्य निवडणूक आयुक्त होते आणि काँग्रेसने मोठा विजय मिळवला.\n\n[संदर्भ: एम. लक्ष्मीकांत]",
+        "en": "(1951-1952): India's monumental first general elections under universal adult suffrage were conducted from October 1951 to February 1952, marking a crowning triumph for Indian democracy.\n\n"
+      }
+    },
+    {
+      "id": 25,
+      "question": {
+        "mr": "भारतीय राष्ट्रीय चळवळीचा (Indian National Movement) भारतीय संस्कृती आणि आधुनिक राष्ट्राच्या उभारणीतील सर्वात चिरंतन संदेश कोणता मानला जातो?",
+        "en": "What is the enduring philosophical hallmark and message of the Indian National Movement for the modern world?"
+      },
+      "options": [
+        { "mr": "अहिंसा, सहिष्णुता, लोकशाही मूल्ये आणि बहुविध संस्कृतीचा आदर राखत समता प्रस्थापित करणे", "en": "Institutionalizing non-violence, pluralism, social justice, and democratic equality as the supreme ethos of statecraft" },
+        { "mr": "केवळ लष्करी बळावर देश चालवणे", "en": "Governing solely through military might" },
+        { "mr": "इतर देशांवर आक्रमणे करणे", "en": "Expediting imperialist conquests" },
+        { "mr": "आधुनिक विज्ञान पूर्णपणे नाकारणे", "en": "Rejecting all modern science and technology" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(निष्कर्ष): भारतीय राष्ट्रीय चळवळीने जगाला हे सिद्ध करून दाखवले की, अत्यंत विषम सामाजिक व आर्थिक परिस्थितीतही अहिंसा, संविधानवाद, आणि बहुजनांच्या सहभागातून एक महान लोकशाही राष्ट्र उभे राहू शकते.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / डॉ. स. शि. गाठाळ]",
+        "en": "(Conclusion): The Indian National Movement remains an unrivaled historical epic, proving that a vast, pluralistic society can achieve liberation and govern itself through the majestic instruments of democracy and secularism.\n\n"
+      }
+    }
+  ]
+}

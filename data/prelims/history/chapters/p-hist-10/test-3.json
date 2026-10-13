@@ -1,0 +1,464 @@
+{
+  "testId": "p-hist-10-t3",
+  "title": {
+    "mr": "आर्थिक व सामाजिक विकास (कृषी, उद्योग व पायाभूत सुविधा) — सराव 3",
+    "en": "Economic and Social Development (Agriculture, Industry & Infrastructure) — Practice Test 3"
+  },
+  "durationMinutes": 20,
+  "marksPerQuestion": 1,
+  "negativeMarking": 0.25,
+  "totalMarks": 25,
+  "difficulty": "मध्यम ते काठिण्य",
+  "questions": [
+    {
+      "id": 1,
+      "question": {
+        "mr": "भारतीय अर्थव्यवस्थेत १९६० च्या दशकात सुरू झालेल्या 'हरित क्रांतीचे' (Green Revolution) भारतातील जनक म्हणून कोणाला ओळखले जाते?",
+        "en": "Who is widely acclaimed as the father of the Green Revolution in India?"
+      },
+      "options": [
+        { "mr": "डॉ. एम. एस. स्वामीनाथन (Dr. M.S. Swaminathan)", "en": "Dr. M.S. Swaminathan" },
+        { "mr": "नॉर्मन बोरलग", "en": "Norman Borlaug" },
+        { "mr": "डॉ. वर्गीस कुरियन", "en": "Dr. Verghese Kurien" },
+        { "mr": "सी. सुब्रह्मण्यम", "en": "C. Subramaniam" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९६० चे दशक): डॉ. एम. एस. स्वामीनाथन यांनी उच्च उत्पादन देणाऱ्या जाती (HYV seeds) आणि आधुनिक कृषी तंत्रज्ञानाच्या माध्यमातून भारतात 'हरित क्रांती' घडवून आणली, ज्यामुळे देश अन्नधान्यात स्वयंपूर्ण झाला.\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग]",
+        "en": "(1960s): Dr. M.S. Swaminathan spearheaded India's Green Revolution, introducing high-yielding crop varieties that secured national food self-sufficiency.\n\n"
+      }
+    },
+    {
+      "id": 2,
+      "question": {
+        "mr": "भारतात 'श्वेत क्रांती' (White Revolution / Operation Flood) चा संबंध कोणत्या क्षेत्राशी आहे आणि त्याचे शिल्पकार कोण होते?",
+        "en": "What sector is associated with India's White Revolution (Operation Flood), and who was its principal architect?"
+      },
+      "options": [
+        { "mr": "दुग्धोत्पादन (Milk Production); शिल्पकार: डॉ. वर्गीस कुरियन", "en": "Milk production; Architect: Dr. Verghese Kurien" },
+        { "mr": "मत्स्योत्पादन; शिल्पकार: हिरालाल चौधरी", "en": "Fish production; Architect: Hiralal Chaudhuri" },
+        { "mr": "तेलबिया उत्पादन; शिल्पकार: सॅम पित्रोडा", "en": "Oilseeds; Architect: Sam Pitroda" },
+        { "mr": "फलोत्पादन; शिल्पकार: एम. के. चड्डा", "en": "Horticulture; Architect: M.K. Chadha" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९७० चे दशक): 'ऑपरेशन फ्लड' (Operation Flood) च्या माध्यमातून दुग्धोत्पादनात क्रांती घडवून आणणारे आणि अमूल (AMUL) ब्रँडची स्थापना करणारे डॉ. वर्गीस कुरियन यांना भारताचे 'मिल्क मॅन' म्हटले जाते.\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग]",
+        "en": "(1970s): Dr. Verghese Kurien engineered the White Revolution (Operation Flood), establishing cooperative dairy networks like AMUL and transforming rural livelihoods.\n\n"
+      }
+    },
+    {
+      "id": 3,
+      "question": {
+        "mr": "भारतीय कृषी क्षेत्रात 'किमान आधारभूत किंमत' (Minimum Support Price - MSP) शिफारस करणारी आणि सरकारला अहवाल देणारी सर्वोच्च संस्था कोणती?",
+        "en": "Which statutory body recommends the Minimum Support Price (MSP) for agricultural commodities in India to the central government?"
+      },
+      "options": [
+        { "mr": "कृषी खर्च व मूल्य आयोग (Commission for Agricultural Costs and Prices - CACP)", "en": "Commission for Agricultural Costs and Prices (CACP)" },
+        { "mr": "भारतीय अन्न महामंडळ (FCI)", "en": "Food Corporation of India (FCI)" },
+        { "mr": "नाबार्ड (NABARD)", "en": "NABARD" },
+        { "mr": "नीती आयोग", "en": "NITI Aayog" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(कृषी धोरण): CACP (कृषी खर्च व मूल्य आयोग) ही संस्था विविध पिकांसाठी MSP ची शिफारस करते, तर त्याची प्रत्यक्ष अंतिम घोषणा केंद्रीय मंत्रिमंडळाची आर्थिक घडामोडींची समिती (CCEA) करते.\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग]",
+        "en": "The CACP recommends MSPs for various agricultural crops, while the final official decision is taken by the Cabinet Committee on Economic Affairs (CCEA).\n\n"
+      }
+    },
+    {
+      "id": 4,
+      "question": {
+        "mr": "देशातील कृषी, लघु उद्योग आणि ग्रामीण विकासासाठी पुनर्वित्तपुरवठा (Refinance) करणारी सर्वोच्च राष्ट्रीय बँक कोणती?",
+        "en": "Which apex development bank provides refinancing for agriculture, small-scale industries, and rural development in India?"
+      },
+      "options": [
+        { "mr": "नाबार्ड (NABARD - National Bank for Agriculture and Rural Development)", "en": "NABARD" },
+        { "mr": "भारतीय रिझर्व्ह बँक (RBI)", "en": "Reserve Bank of India" },
+        { "mr": "सिदबी (SIDBI)", "en": "SIDBI" },
+        { "mr": "इक्झिम बँक (EXIM Bank)", "en": "EXIM Bank" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९८२): बी. शिवरामन समितीच्या शिफारसीनुसार १२ जुलै १९८२ रोजी 'नाबार्ड' (NABARD) ची स्थापना झाली, जी कृषी व ग्रामीण विकासाला पतपुरवठा व पुनर्वित्तपुरवठा करणारी सर्वोच्च बँक आहे.\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग]",
+        "en": "(1982): Established on July 12, 1982, based on the B. Sivaraman Committee recommendation, NABARD is the apex regulatory and refinancing institution for rural and agricultural development.\n\n"
+      }
+    },
+    {
+      "id": 5,
+      "question": {
+        "mr": "सूक्ष्म, लघु आणि मध्यम उद्योगांच्या (MSME) वर्गीकरणासाठी सध्या कोणते निकष वापरले जातात?",
+        "en": "What are the current criteria used in India for classifying Micro, Small, and Medium Enterprises (MSME)?"
+      },
+      "options": [
+        { "mr": "गुंतवणूक (Investment) आणि वार्षिक उलाढाल (Annual Turnover)", "en": "Investment in plant/machinery and annual turnover" },
+        { "mr": "फक्त कामगारांची संख्या", "en": "Number of workers employed only" },
+        { "mr": "फक्त वार्षिक नफा", "en": "Annual net profit only" },
+        { "mr": "कंपनीची स्थापना वर्ष", "en": "Year of establishment" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(MSME वर्गीकरण): २०२० पासून MSME च्या नवीन वर्गीकरणानुसार 'गुंतवणूक' आणि 'वार्षिक उलाढाल' (Turnover) या दोन्ही निकषांचा एकत्रित विचार करून सूक्ष्म, लघू व मध्यम उद्योग ठरवले जातात.\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग]",
+        "en": "MSMEs are classified based on composite criteria combining investment in plant/machinery/equipment and annual turnover.\n\n"
+      }
+    },
+    {
+      "id": 6,
+      "question": {
+        "mr": "लघु आणि मध्यम उद्योगांच्या विकासासाठी व त्यांना मुबलक कर्जाचा पुरवठा करण्यासाठी 'सिदबी' (SIDBI) ची स्थापना कधी झाली?",
+        "en": "When was the Small Industries Development Bank of India (SIDBI) established to finance and promote the MSME sector?"
+      },
+      "options": [
+        { "mr": "२ एप्रिल १९९० (April 2, 1990)", "en": "April 2, 1990" },
+        { "mr": "१२ जुलै १९८२", "en": "July 12, 1982" },
+        { "mr": "१ जानेवारी १९४९", "en": "January 1, 1949" },
+        { "mr": "१९५५", "en": "1955" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९९०): लघू व सूक्ष्म उद्योगांच्या विकासासाठी आणि त्यांना वित्तीय सहाय्य व पुनर्वित्त पुरवण्यासाठी २ एप्रिल १९९० रोजी लखनौ येथे मुख्यालय असलेली 'सिदबी' (SIDBI) संस्था स्थापन झाली.\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग]",
+        "en": "(1990): SIDBI was established on April 2, 1990, under an Act of Parliament as the principal financial institution for the promotion, financing, and development of MSMEs.\n\n"
+      }
+    },
+    {
+      "id": 7,
+      "question": {
+        "mr": "भारताच्या औद्योगिक क्षेत्रात 'मेक इन इंडिया' (Make in India) मोहिमेची सुरुवात कधी झाली होती?",
+        "en": "When was the flagship 'Make in India' initiative launched to transform India into a global manufacturing hub?"
+      },
+      "options": [
+        { "mr": "२५ सप्टेंबर २०१४ (September 25, 2014)", "en": "September 25, 2014" },
+        { "mr": "१५ ऑगस्ट २०१५", "en": "August 15, 2015" },
+        { "mr": "२ ऑक्टोबर २०१४", "en": "October 2, 2014" },
+        { "mr": "१ जानेवारी २०१६", "en": "January 1, 2016" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(२०१४): देशात उत्पादकतेला चालना देण्यासाठी आणि जागतिक मॅन्युफॅक्चरिंग हब बनवण्यासाठी २५ सप्टेंबर २०१४ रोजी 'मेक इन इंडिया' मोहीम सुरू केली गेली.\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग]",
+        "en": "(2014): Make in India was launched on September 25, 2014, to encourage multinational and domestic companies to manufacture their products in India.\n\n"
+      }
+    },
+    {
+      "id": 8,
+      "question": {
+        "mr": "भारतीय अर्थव्यवस्थेच्या संदर्भात 'पायाभूत सुविधा' (Infrastructure) मधील 'आर्थिक पायाभूत सुविधा' (Economic Infrastructure) मध्ये प्रामुख्याने कशाचा समावेश होतो?",
+        "en": "What components form the core of 'Economic Infrastructure' as opposed to social infrastructure?"
+      },
+      "options": [
+        { "mr": "ऊर्जा (वीज), रस्ते, रेल्वे, बंदर, विमानतळ आणि दूरसंचार", "en": "Energy (power), transport (roads, railways, ports, airports), and telecommunications" },
+        { "mr": "शाळा, महाविद्याले आणि रुग्णालये", "en": "Schools, colleges, and hospitals" },
+        { "mr": "मनोरंजनगृहे आणि क्रीडांगणे", "en": "Entertainment parks and stadiums" },
+        { "mr": "न्यायालयीन इमारती", "en": "Courthouse buildings" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(पायाभूत सुविधा): आर्थिक पायाभूत सुविधा थेट उत्पादकता आणि व्यापाराला गती देतात, ज्यात ऊर्जा, वाहतूक (रस्ते, रेल्वे, बंदर) आणि दळणवळण (दूरसंचार) यांचा समावेश होतो. तर शाळा-रुग्णालये 'सामाजिक पायाभूत सुविधा' आहेत.\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग]",
+        "en": "Economic infrastructure directly supports economic production and distribution, encompassing energy, transport, and communications, unlike social infrastructure like health and education.\n\n"
+      }
+    },
+    {
+      "id": 9,
+      "question": {
+        "mr": "देशातील राष्ट्रीय महामार्गांच्या विकासासाठी आणि बांधकामासाठी कोणती प्रमुख केंद्रीय संस्था जबाबदार आहे?",
+        "en": "Which apex statutory body is responsible for the development, maintenance, and management of National Highways in India?"
+      },
+      "options": [
+        { "mr": "भारतीय राष्ट्रीय महामार्ग प्राधिकर (NHAI - National Highways Authority of India)", "en": "National Highways Authority of India (NHAI)" },
+        { "mr": "सीमा रस्ते संघटना (BRO)", "en": "Border Roads Organisation" },
+        { "mr": "केंद्रीय लोकनिर्माण विभाग (CPWD)", "en": "CPWD" },
+        { "mr": "भारतीय रेल्वे बोर्ड", "en": "Railway Board" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(NHAI): १९८८ च्या संसदेच्या कायद्यानुसार स्थापन झालेले 'भारतीय राष्ट्रीय महामार्ग प्राधिकरण' (NHAI) देशातील राष्ट्रीय महामार्गांचे जाळे विकसित व व्यवस्थापित करते.\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग]",
+        "en": "NHAI, operationalized through an Act of 1988, is the nodal agency responsible for the development and management of India's National Highway network.\n\n"
+      }
+    },
+    {
+      "id": 10,
+      "question": {
+        "mr": "भारतातील रस्ते विकासाची गुणवत्ता वाढवण्यासाठी आणि वाहतूक सुलभ करण्यासाठी केंद्र सरकारने सुरू केलेला महामार्ग विकासाचा महाप्रकल्प कोणता?",
+        "en": "What was the landmark national highway development project launched to connect four major metropolitan cities of India (Golden Quadrilateral)?"
+      },
+      "options": [
+        { "mr": "सुवर्ण चतुष्कोन प्रकल्प (Golden Quadrilateral - दिल्ली, मुंबई, चेन्नई, कोलकाता)", "en": "Golden Quadrilateral (Delhi, Mumbai, Chennai, Kolkata)" },
+        { "mr": "भारतमाला परियोजना", "en": "Bharatmala Pariyojana" },
+        { "mr": "सागरमाला प्रकल्प", "en": "Sagarmala Project" },
+        { "mr": "प्रधानमंत्री ग्राम सडक योजना", "en": "Pradhan Mantri Gram Sadak Yojana" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(स्वर्णिम चतुर्भुज): अटलबिहारी वाजपेयी यांच्या काळात सुरू झालेला 'सुवर्ण चतुष्कोन' (Golden Quadrilateral) प्रकल्प देशातील चार प्रमुख महानगररस्त्यांना (दिल्ली, मुंबई, चेन्नई, कोलकाता) चौपदरी/सहापदरी महामार्गाने जोडणारा महाप्रकल्प होता.\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग]",
+        "en": "The Golden Quadrilateral highway network connects India's four top metropolitan hubs—Delhi, Mumbai, Chennai, and Kolkata—boosting transport efficiency.\n\n"
+      }
+    },
+    {
+      "id": 11,
+      "question": {
+        "mr": "देशातील किनारपट्टीचा विकास आणि सागरी बंदरांच्या माध्यमातून जलद मालवाहतूक करण्यासाठी कोणती राष्ट्रीय योजना राबवली जात आहे?",
+        "en": "Which ambitious national program focuses on port-led development and coastal shipping to optimize logistics costs in India?"
+      },
+      "options": [
+        { "mr": "सागरमाला प्रकल्प (Sagarmala Project)", "en": "Sagarmala Project" },
+        { "mr": "भारतमाला परियोजना", "en": "Bharatmala Pariyojana" },
+        { "mr": "उडाण योजना (UDAN)", "en": "UDAN Scheme" },
+        { "mr": "डेडीकेटेड फ्रेट कॉरिडोअर", "en": "Dedicated Freight Corridor" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(सागरमाला): भारताच्या समुद्रकिनाऱ्याचा व बंदरांचा सर्वांगीण विकास साधून लॉजिस्टिक्स खर्च कमी करण्यासाठी 'सागरमाला प्रकल्प' राबवला जात आहे (तर रस्ते जाळ्यासाठी भारतमाला आहे).\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग]",
+        "en": "The Sagarmala project aims for port-led development to harness India's coastline and waterways for seamless logistics and economic growth.\n\n"
+      }
+    },
+    {
+      "id": 12,
+      "question": {
+        "mr": "भारतीय रेल्वेच्या मालवाहतुकीचा वेग वाढवण्यासाठी आणि स्वतंत्र मार्ग तयार करण्यासाठी कोणते दोन प्रमुख कॉरिडोअर (DFC) विकसित केले जात आहेत?",
+        "en": "Which two major dedicated freight corridors (DFC) are being constructed by Indian Railways to decongest passenger routes and accelerate freight?"
+      },
+      "options": [
+        { "mr": "पूर्व समर्पित मालवाहतूक कॉरिडोअर (EDFC) आणि पश्चिम समर्पित मालवाहतूक कॉरिडोअर (WDFC)", "en": "Eastern DFC and Western DFC" },
+        { "mr": "उत्तर आणि दक्षिण कॉरिडोअर", "en": "Northern and Southern DFC" },
+        { "mr": "कोकण आणि पश्चिम किनारा कॉरिडोअर", "en": "Konkan and West Coast DFC" },
+        { "mr": "मध्य रेल्वे कॉरिडोअर", "en": "Central Railway Corridor" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(DFC): भारतीय रेल्वेने लुधियाना ते डानकुनी (पूर्व DFC) आणि दादरा ते जेएनपीटी (पश्चिम DFC) अशा दोन मोठ्या 'डेडिकेटेड फ्रेट कॉरिडोअर' ची निर्मिती केली आहे, ज्यामुळे मालगाड्यांचा वेग वाढला आहे.\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग]",
+        "en": "Indian Railways is constructing the Eastern and Western Dedicated Freight Corridors (DFCs) to segregate freight traffic from passenger routes.\n\n"
+      }
+    },
+    {
+      "id": 13,
+      "question": {
+        "mr": "भारतात हवाई कनेक्टिव्हिटी सामान्यांपर्यंत पोहोचवण्यासाठी आणि लहान शहरांना जोडण्यासाठी कोणती प्रसिद्ध उड्डाण योजना सुरू झाली?",
+        "en": "What is the popular regional connectivity scheme launched to make air travel affordable and accessible to tier-2 and tier-3 cities in India?"
+      },
+      "options": [
+        { "mr": "उडाण योजना (UDAN - Ude Desh ka Aam Nagrik)", "en": "UDAN Scheme (Ude Desh ka Aam Nagrik)" },
+        { "mr": "नवोदय उड्डाण", "en": "Navodaya Uddan" },
+        { "mr": "आकाश मार्ग योजना", "en": "Akash Marg Yojana" },
+        { "mr": "राष्ट्रीय विमानसेवा", "en": "National Aviation Service" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(UDAN): सर्वसामान्यांना परवडणाऱ्या दरात विमानप्रवास उपलब्ध करून देण्यासाठी आणि छोट्या विमानतळांचा विकास करण्यासाठी 'उडाण' (UDAN - उदेश का आम नागरिक) योजना २०१६ मध्ये सुरू झाली.\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग]",
+        "en": "The UDAN (Ude Desh ka Aam Nagrik) regional connectivity scheme aims to stimulate regional air connectivity and make flying affordable for common citizens.\n\n"
+      }
+    },
+    {
+      "id": 14,
+      "question": {
+        "mr": "भारतीय दूरसंचार क्षेत्रात (Telecom) क्रांतिकारी बदल घडवून आणण्यासाठी आणि प्रत्येक ग्रामपंचायतीला हाय-स्पीड इंटरनेट जोडण्यासाठी कोणती महत्त्वाची मोहीम राबवली जात आहे?",
+        "en": "Which national optical fibre network project aims to connect all village panchayats with high-speed broadband internet in India?"
+      },
+      "options": [
+        { "mr": "भारत नेट प्रकल्प (BharatNet Project / παूण ऑप्टिकल फायबर ग्रीड)", "en": "BharatNet Project" },
+        { "mr": "डिजिटल इंडिया ग्रिड", "en": "Digital India Grid" },
+        { "mr": "ई-ग्राम जोडणी", "en": "E-Gram Connectivity" },
+        { "mr": "फायबर विलेज नेटवर्क", "en": "Fiber Village Network" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(BharatNet): देशातील सर्व ग्रामपंचायतींना ऑप्टिकल फायबर केबलच्या माध्यमातून हाय-स्पीड इंटरनेटने जोडण्यासाठी 'भारतनेट' (BharatNet) हा जगातील सर्वात मोठा ग्रामीण ब्रॉडबँड प्रकल्प राबवला जात आहे.\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग]",
+        "en": "BharatNet is the world's largest rural broadband connectivity project using optical fiber, aiming to connect every village panchayat in India.\n\n"
+      }
+    },
+    {
+      "id": 15,
+      "question": {
+        "mr": "भारतीय अर्थव्यवस्थेत 'सार्वजनिक-खाजगी भागीदारी' (Public-Private Partnership - PPP) मॉडेल्स अंतर्गत पायाभूत सुविधांच्या विकासात कोणते मॉडेल सर्वाधिक प्रचलित आहे?",
+        "en": "Which prominent contractual model is widely utilized in Indian infrastructure projects under Public-Private Partnerships (PPP)?"
+      },
+      "options": [
+        { "mr": "बिल्ड-ऑपरेट-ट्रान्सफर (BOT - Build, Operate, Transfer) आणि हायब्रिड अ‍ॅनुइटी मॉडेल (HAM)", "en": "Build-Operate-Transfer (BOT) and Hybrid Annuity Model (HAM)" },
+        { "mr": "फक्त सरकारी मालकी", "en": "Exclusive government ownership" },
+        { "mr": "पूर्णतः विदेशी ठेकेदारी", "en": "Foreign monopoly contracting" },
+        { "mr": "फक्त खाजगी दानधर्म", "en": "Private charity trusts" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(PPP मॉडेल): पायाभूत सुविधांच्या (रस्ते, वीज, बंदर) उभारणीसाठी सरकार आणि खाजगी क्षेत्र मिळून BOT, DBFOT आणि HAM (हायब्रिड अ‍ॅनुइटी मॉडेल) यांसारख्या PPP करारांद्वारे प्रकल्प राबवतात.\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग]",
+        "en": "Infrastructure development under PPP frameworks in India frequently utilizes models like BOT (Build-Operate-Transfer) and HAM (Hybrid Annuity Model).\n\n"
+      }
+    },
+    {
+      "id": 16,
+      "question": {
+        "mr": "भारतीय ऊर्जा क्षेत्रात 'पारंपारिक ऊर्जा स्त्रोत' (Conventional Energy) आणि 'अपरंपारिक ऊर्जा स्त्रोत' (Renewable/Non-conventional Energy) मधील मुख्य फरक काय आहे?",
+        "en": "What is the primary distinguishing feature between conventional and non-conventional energy sources in India?"
+      },
+      "options": [
+        { "mr": "पारंपारिक स्त्रोत संपणारे व प्रदूषण करणारे (कोळसा, तेल) असतात, तर अपरंपारिक स्त्रोत अक्षय व पर्यावरणपूरक (सौर, पवन) असतात", "en": "Conventional sources are exhaustible and polluting (coal, oil), whereas non-conventional sources are renewable and eco-friendly (solar, wind)" },
+        { "mr": "दोन्ही समान प्रमाणात तयार होतात", "en": "Both are generated in equal quantities" },
+        { "mr": "अपरंपारिक ऊर्जा ही फक्त कारखान्यांसाठी असते", "en": "Non-conventional energy is restricted to factories" },
+        { "mr": "पारंपारिक ऊर्जा पूर्णपणे मोफत मिळते", "en": "Conventional energy is entirely free" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(ऊर्जा क्षेत्र): कोळसा, खनिज तेल आणि नैसर्गिक वायू हे संपणारे (Exhaustible) व कार्बन उत्सर्जित करणारे पारंपारिक स्त्रोत आहेत; तर सौर ऊर्जा, पवन ऊर्जा, जलविद्युत हे अक्षय व अपरंपारिक स्त्रोत आहेत.\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग]",
+        "en": "Conventional energy relies on finite, polluting fossil fuels like coal and petroleum, while non-conventional sources harness infinite, clean renewables like solar and wind power.\n\n"
+      }
+    },
+    {
+      "id": 17,
+      "question": {
+        "mr": "आंतरराष्ट्रीय स्तरावर स्वच्छ ऊर्जा व सौर ऊर्जेचा प्रसार करण्यासाठी भारताच्या नेतृत्वाखाली कोणती महत्त्वाची जागतिक आघाडी स्थापन झाली आहे, जिचे मुख्यालय गुरुग्राम (भारत) येथे आहे?",
+        "en": "Which major international coalition was spearheaded by India to promote solar energy deployment, with its headquarters in Gurugram, India?"
+      },
+      "options": [
+        { "mr": "आंतरराष्ट्रीय सौर आघाडी (International Solar Alliance - ISA)", "en": "International Solar Alliance (ISA)" },
+        { "mr": "जागतिक हरित ऊर्जा मंच", "en": "Global Green Energy Forum" },
+        { "mr": "क्वाड ऊर्जा संघ", "en": "Quad Energy Pact" },
+        { "mr": "आशियाई सौर युनियन", "en": "Asian Solar Union" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(२०१५): २०१५ च्या पॅरिस हवामान परिषदेत भारत व फ्रान्सच्या पुढाकाराने 'आंतरराष्ट्रीय सौर आघाडी' (ISA) ची स्थापना झाली. कर्कवृत्त व मकरवृत्ता दरम्यानच्या देशांना जोडणारी ही पहिली आंतरराष्ट्रीय संघटना असून तिचे मुख्यालय हरियाणातील गुरुग्राम येथे आहे.\n\n[संदर्भ: पर्यावरण व अर्थव्यवस्था - रमेश सिंग]",
+        "en": "(2015): Co-founded by India and France at the Paris COP21, the International Solar Alliance (ISA) is a treaty-based intergovernmental organization headquartered in Gurugram, India.\n\n"
+      }
+    },
+    {
+      "id": 18,
+      "question": {
+        "mr": "भारतात जलद औद्योगिक विकास आणि थेट परदेशी गुंतवणूक (FDI) आकर्षित करण्यासाठी केंद्र सरकारने कोणती कर प्रणाली २०१७ मध्ये लागू केली, जिने अनेक अप्रत्यक्ष कर सामावून घेतले?",
+        "en": "Which comprehensive indirect tax reform was implemented in India in July 2017 to subsume multiple taxes into a unified national market?"
+      },
+      "options": [
+        { "mr": "वस्तू आणि सेवा कर (Goods and Services Tax - GST)", "en": "Goods and Services Tax (GST)" },
+        { "mr": "मूल्यवर्धित कर (VAT)", "en": "Value Added Tax (VAT)" },
+        { "mr": "उत्पादन शुल्क (Excise Duty)", "en": "Excise Duty" },
+        { "mr": "सेवा कर (Service Tax)", "en": "Service Tax" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(२०१७): १ जुलै २०१७ रोजी 'वस्तू आणि सेवा कर' (GST) लागू केला गेला. १०१ व्या घटनादुरुस्तीद्वारे अमलात आलेल्या या करामुळे केंद्र व राज्यांचे अनेक अप्रत्यक्ष कर एकात्मिक करप्रणालीत सामावून घेतले गेले.\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग]",
+        "en": "(2017): Implemented on July 1, 2017, via the 101st Constitutional Amendment, GST subsumed numerous central and state indirect taxes into a unified destination-based tax.\n\n"
+      }
+    },
+    {
+      "id": 19,
+      "question": {
+        "mr": "भारतीय अर्थव्यवस्थेच्या संदर्भात 'पतपुरवठा महामंडळ' किंवा 'आरबीआयचे पतधोरण' (Monetary Policy) ठरवण्यासाठी कोणती समिती महत्त्वाची भूमिका बजावते?",
+        "en": "Which statutory committee within the Reserve Bank of India decides the benchmark interest rates and monetary policy stance?"
+      },
+      "options": [
+        { "mr": "पतधोरण समिती (Monetary Policy Committee - MPC)", "en": "Monetary Policy Committee (MPC)" },
+        { "mr": "केंद्रीय बँक बोर्ड", "en": "Central Bank Board" },
+        { "mr": "वित्तीय स्थैर्य मंडळ", "en": "Financial Stability Board" },
+        { "mr": "राष्ट्रीय आर्थिक सल्लागार समिती", "en": "National Economic Advisory Committee" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(आरबीआय): २०१६ मध्ये स्थापन झालेली 'पतधोरण समिती' (MPC) ही ६ सदस्यांची संस्था असून ती देशातील रेपो रेट, रिव्हर्स रेपो रेट आणि महागाई नियंत्रणासाठी व्याजदर ठरवण्याचे अधिकार सांभाळते.\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग]",
+        "en": "The Monetary Policy Committee (MPC), established in 2016, is a statutory 6-member body responsible for fixing the benchmark interest rates in India.\n\n"
+      }
+    },
+    {
+      "id": 20,
+      "question": {
+        "mr": "भारतीय बँकिंग प्रणालीत बँकांच्या राष्ट्रीयीकरणाचा (Nationalization of Banks) पहिला मोठा टप्पा कधी पार पडला होता?",
+        "en": "When did the first major wave of commercial bank nationalization take place in independent India?"
+      },
+      "options": [
+        { "mr": "१९ जुलै १९६९ (१४ मोठ्या व्यावसायिक बँकांचे राष्ट्रीयीकरण)", "en": "July 19, 1969 (Nationalization of 14 major commercial banks)" },
+        { "mr": "१ जानेवारी १९४९ (आरबीआय राष्ट्रीयीकरण)", "en": "January 1, 1949" },
+        { "mr": "१५ एप्रिल १९८० (६ बँकांचे राष्ट्रीयीकरण)", "en": "April 15, 1980" },
+        { "mr": "१९५५ (स्टेट बँक स्थापना)", "en": "1955" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९६९): इंदिरा गांधी यांच्या पंतप्रधानपदाच्या काळात १९ जुलै १९६९ रोजी ५० कोटींपेक्षा अधिक ठेवी असणाऱ्या **१४ मोठ्या व्यावसायिक बँकांचे** राष्ट्रीयीकरण केले गेले (पुढे १९८० मध्ये आणखी ६ बँकांचे झाले).\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग]",
+        "en": "(1969): On July 19, 1969, 14 major commercial banks with deposits over Rs. 50 crore were nationalized under Indira Gandhi's government to channel credit toward priority sectors.\n\n"
+      }
+    },
+    {
+      "id": 21,
+      "question": {
+        "mr": "भारतीय शेअर बाजाराचे (Stock Markets) नियमन आणि नियंत्रण करणारी वैधानिक संस्था कोणती आहे?",
+        "en": "Which statutory regulatory body regulates and oversees the securities and capital markets in India?"
+      },
+      "options": [
+        { "mr": "सेबी (SEBI - Securities and Exchange Board of India)", "en": "SEBI" },
+        { "mr": "भारतीय रिझर्व्ह बँक (RBI)", "en": "Reserve Bank of India" },
+        { "mr": "आयआरडीएआय (IRDAI)", "en": "IRDAI" },
+        { "mr": "कॉर्पोरेट व्यवहार मंत्रालय", "en": "Ministry of Corporate Affairs" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९९२): १९९२ च्या कायद्यान्वये वैधानिक दर्जा मिळालेली 'सेबी' (SEBI) संस्था भारतातील शेअर बाजार (Stock Exchanges), म्युच्युअल फंड्स आणि भांडवल बाजाराचे नियंत्रण व नियमन करते.\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग]",
+        "en": "SEBI, given statutory powers in 1992, is the prime regulator of the securities market, investor protection, and stock exchanges in India.\n\n"
+      }
+    },
+    {
+      "id": 22,
+      "question": {
+        "mr": "भारतीय विमा क्षेत्राचे (Insurance Sector) नियंत्रण व नियमन करणारी सर्वोच्च नियामक संस्था कोणती?",
+        "en": "Which apex regulatory body oversees the insurance and reinsurance sector in India?"
+      },
+      "options": [
+        { "mr": "इरडा (IRDAI - Insurance Regulatory and Development Authority of India)", "en": "IRDAI" },
+        { "mr": "सेबी (SEBI)", "en": "SEBI" },
+        { "mr": "पेन्शन फंड नियामक (PFRDA)", "en": "PFRDA" },
+        { "mr": "नाबार्ड (NABARD)", "en": "NABARD" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(२०००): मल्होत्रा समितीच्या शिफारसीनुसार स्थापन झालेली 'इरडा' (IRDAI) ही संस्था भारतातील सर्व जीवन व सामान्य विमा कंपन्यांचे नियंत्रण व नियमन करते.\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग]",
+        "en": "IRDAI is the statutory apex body tasked with regulating and promoting the insurance and reinsurance industries in India.\n\n"
+      }
+    },
+    {
+      "id": 23,
+      "question": {
+        "mr": "भारताच्या परकीय व्यापारात 'चालू खाते तूट' (Current Account Deficit - CAD) म्हणजे नेमके काय?",
+        "en": "What does 'Current Account Deficit' (CAD) signify in India's balance of payments accounts?"
+      },
+      "options": [
+        { "mr": "देशाची एकूण आयात (Goods, services & transfers) ही निर्गुतीपेक्षा जास्त असणे", "en": "When a nation's total imports of goods, services, and transfers exceed its total exports" },
+        { "mr": "देशातील परकीय चलन संपणे", "en": "Total exhaustion of foreign exchange reserves" },
+        { "mr": "केवळ सरकारी कर्जाची वाढ", "en": "Increase in government debt alone" },
+        { "mr": "परदेशी गुंतवणूक कमी होणे", "en": "Drop in foreign investment" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(परकीय व्यापार): चालू खाते तूट (CAD) तेव्हा होते जेव्हा देश निर्यातीपेक्षा वस्तू आणि सेवांची 'आयात' जास्त प्रमाणात करतो आणि परदेशातून येणाऱ्या पैशांपेक्षा बाहेर जाणारे पैसे जास्त असतात.\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग]",
+        "en": "CAD occurs when the value of goods, services, and transfers imported by a country exceeds the value of exports it sends abroad.\n\n"
+      }
+    },
+    {
+      "id": 24,
+      "question": {
+        "mr": "भारतीय अर्थव्यवस्थेच्या संदर्भात 'एफआयआय' (FII) आणि 'एफडीआय' (FDI) या दोन्ही परदेशी गुंतवणुकीमधील मुख्य फरक काय आहे?",
+        "en": "What is the core economic difference between Foreign Direct Investment (FDI) and Foreign Institutional Investment (FII)?"
+      },
+      "options": [
+        { "mr": "FDI ही दीर्घकालीन व थेट उद्योगात किंवा कंपनीच्या व्यवस्थापनात गुंतवणूक असते, तर FII ही शेअर बाजारातील (Portfolio) अस्थिर व अल्पकालीन गुंतवणूक असते", "en": "FDI is long-term direct investment in physical assets and management control, whereas FII is portfolio investment in stock markets" },
+        { "mr": "FDI फक्त सरकार करते, FII जनता करते", "en": "FDI is done by government, FII by public" },
+        { "mr": "यात कोणताही फरक नाही, दोन्ही समान आहेत", "en": "There is no difference" },
+        { "mr": "FII ही फक्त कृषी क्षेत्रात होते", "en": "FII is restricted to agriculture" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(गुंतवणूक): FDI (परदेशी थेट गुंतवणूक) ही उत्पादक कारखान्यांत, पायाभूत सुविधांत आणि व्यवस्थापनाच्या अधिकारासह दीर्घकाळ टिकणारी असते; तर FII ही शेअर बाजार व डिबेंचरमधील पोर्टफोलिओ गुंतवणूक असल्याने ती पटकन बाहेर काढता येते.\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग]",
+        "en": "FDI involves direct ownership of physical assets or business management with a long-term horizon, while FII (portfolio investment) involves buying shares/bonds on stock exchanges and is more liquid.\n\n"
+      }
+    },
+    {
+      "id": 25,
+      "question": {
+        "mr": "भारतीय अर्थव्यवस्थेच्या दीर्घकालीन प्रगतीचा विचार करता, 'कृषी, उद्योग आणि सेवा क्षेत्र' (Primary, Secondary, and Tertiary sectors) मधील संरचनात्मक बदलाचा (Structural Change) सर्वसामान्य ट्रेंड काय असतो?",
+        "en": "What is the typical structural transformation trend observed in a developing economy like India regarding its three primary economic sectors?"
+      },
+      "options": [
+        { "mr": "कृषी क्षेत्राचा जीडीपीमधील हिस्सा हळूहळू कमी होत जाऊन उद्योग व विशेषतः सेवा क्षेत्राचा हिस्सा सर्वाधिक वाढणे", "en": "Gradual decline in agriculture's share of GDP, accompanied by a substantial rise in the share of industry and services" },
+        { "mr": "कृषी क्षेत्राचा हिस्सा सतत वाढत राहणे", "en": "Continuous expansion of agriculture's share" },
+        { "mr": "सेवा क्षेत्राचा पूर्णपणे र्हास होणे", "en": "Total collapse of the service sector" },
+        { "mr": "सर्व क्षेत्रांचे योगदान समान राहणे", "en": "All sectors maintaining identical output shares" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(निष्कर्ष): जसजशी अर्थव्यवस्था विकसित होते, तसतशी कृषी क्षेत्राची अर्थव्यवस्था आणि रोजगारावरील परावलंबन कमी होत जाते आणि आधुनिक उद्योग व सेवा क्षेत्राचा (Tertiary Sector) जीडीपीमधील वाटा सर्वोच्च होत जातो, जो भारताच्या विकासाचाही मुख्य ट्रेंड आहे.\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग]",
+        "en": "(Conclusion): As an economy develops structurally, agriculture's share of GDP declines, while the industrial and particularly the service sectors expand to drive national output and employment.\n\n"
+      }
+    }
+  ]
+}

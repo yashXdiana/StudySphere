@@ -1,0 +1,464 @@
+{
+  "testId": "p-hist-07-t6",
+  "title": {
+    "mr": "भारतीय राष्ट्रीय चळवळ (सायमन आयोग व सविनय कायदेभंग) — सराव 6",
+    "en": "Indian National Movement (Simon Commission & Civil Disobedience) — Practice Test 6"
+  },
+  "durationMinutes": 20,
+  "marksPerQuestion": 1,
+  "negativeMarking": 0.25,
+  "totalMarks": 25,
+  "difficulty": "मध्यम ते काठिण्य",
+  "questions": [
+    {
+      "id": 1,
+      "question": {
+        "mr": "सायमन आयोगात (Simon Commission - १९२७) एकाही भारतीय सदस्याचा समावेश न केल्यामुळे भारतीयांनी त्यावर बहिष्कार टाकला. या सर्व-श्वेत (All-White) आयोगाचे अध्यक्ष कोण होते?",
+        "en": "Who served as the chairman of the all-white Simon Commission appointed in November 1927?"
+      },
+      "options": [
+        { "mr": "सर जॉन सायमन (Sir John Simon)", "en": "Sir John Simon" },
+        { "mr": "लॉर्ड बर्कनहेड", "en": "Lord Birkenhead" },
+        { "mr": "क्लेमेंट एटली", "en": "Clement Attlee" },
+        { "mr": "रमसे मॅकडोनाल्ड", "en": "Ramsay MacDonald" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९२७): १९१९ च्या कायद्याच्या पुनरावलोकनासाठी ब्रिटिश सरकारने सर जॉन सायमन यांच्या अध्यक्षतेखाली ७ सदस्यीय आयोग नेमला. यात एकही भारतीय नसून सर्व सदस्य ब्रिटिश असल्याने भारतीयांचा तीव्र अपमान झाला आणि 'सायमन गो बॅक' च्या घोषणा देण्यात आल्या.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / डॉ. स. शि. गाठाळ]",
+        "en": "(1927): The commission was headed by Sir John Simon. The total exclusion of Indians outraged the nationalist leadership, sparking the famous 'Simon Go Back' black-flag protests.\n\n"
+      }
+    },
+    {
+      "id": 2,
+      "question": {
+        "mr": "ब्रिटनचे भारतमंत्री 'लॉर्ड बर्कनहेड' (Lord Birkenhead) यांनी भारतीयांना आव्हान देताना कोणती अट घातली होती, ज्याच्या प्रत्युत्तरात 'नेहरू रिपोर्ट' तयार झाला?",
+        "en": "What challenge did Secretary of State Lord Birkenhead throw at Indian leaders, which prompted the creation of the Nehru Report?"
+      },
+      "options": [
+        { "mr": "भारतीयांनी सर्वपक्षीय सहमतीने स्वतःची राज्यघटना तयार करून दाखवावी", "en": "Challenge to draft a universally acceptable constitution for India themselves" },
+        { "mr": "भारतीयांनी ब्रिटनचे कायदे पूर्णपणे मानून घ्यावेत", "en": "To accept British laws unconditionally" },
+        { "mr": "काँग्रेसने निवडणुकांवर पूर्ण बहिष्कार टाकावा", "en": "To permanently boycott elections" },
+        { "mr": "स्वातंत्र्यासाठी शस्त्रे खाली ठेवावीत", "en": "To lay down arms for independence" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९२८): सायमन आयोगाच्या बहिष्कारावर टीका करताना लॉर्ड बर्कनहेडने भारतीयांना आव्हान दिले की, जर तुमच्यात हिंमत असेल तर सर्वपक्षीय संमतीने एक सर्वसमावेशक राज्यघटनेचा मसुदा तयार करून दाखवा. हे आव्हान स्वीकारत मोतीलाल नेहरूंच्या अध्यक्षतेखाली समिती नेमली गेली.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1928): Challenging Indian nationalist unity, Lord Birkenhead taunted Indians to produce a constitution acceptable to all factions, leading directly to the all-party Nehru Committee.\n\n"
+      }
+    },
+    {
+      "id": 3,
+      "question": {
+        "mr": "१९२८ मधील नेहरू रिपोर्टमध्ये (Nehru Report) भारतासाठी कोणत्या प्रमुख राजकीय व्यवस्थेची शिफारस केली गेली होती?",
+        "en": "What primary constitutional status did the Nehru Report recommend for India in 1928?"
+      },
+      "options": [
+        { "mr": "डोमिनियन स्टेटस (Dominion Status within the British Empire)", "en": "Dominion Status" },
+        { "mr": "पूर्ण स्वराज आणि संपूर्ण स्वतंत्र प्रजासत्ताक", "en": "Purna Swaraj / Complete Independence" },
+        { "mr": "द्विदल राज्यव्यवस्था आणि राजेशाही", "en": "Diarchy and Monarchy" },
+        { "mr": "प्रत्येक प्रांतासाठी स्वतंत्र राष्ट्र", "en": "Independent nation for each province" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९२८): नेहरू अहवालात भारताला ब्रिटिश साम्राज्यांतर्गत 'डोमिनियन स्टेटस' (Dominion Status) मिळावे अशी मुख्य शिफारस केली होती. मात्र, जवाहरलाल नेहरू आणि सुभाषचंद्र बोस या तरुण नेत्यांना हे मान्य नव्हते, कारण त्यांना 'पूर्ण स्वराज' हवे होते.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / समाधान महाजन]",
+        "en": "(1928): The Nehru Report recommended 'Dominion Status' for India, a stance that drew fierce criticism from younger leaders like Jawaharlal Nehru and Subhas Bose who demanded absolute independence.\n\n"
+      }
+    },
+    {
+      "id": 4,
+      "question": {
+        "mr": "नेहरू रिपोर्टमध्ये (१९२८) धार्मिक अल्पसंख्याकांच्या संदर्भात कोणती महत्त्वाची तरतूद केली गेली होती, ज्याला नंतर मोहम्मद अली जिना यांनी विरोध केला?",
+        "en": "What provision regarding religious minorities did the Nehru Report contain that was vehemently opposed by M.A. Jinnah?"
+      },
+      "options": [
+        { "mr": "मुसलमानांसाठी स्वतंत्र मतदारसंघांची (Separate Electorates) मागणी फेटाळून लावून 'संयुक्त मतदारसंघ' (Joint Electorates) सुचवले", "en": "Rejection of separate electorates for Muslims in favor of joint electorates with reservation" },
+        { "mr": "मुसलमानांना निवडणुकीत पूर्ण बंदी घातली", "en": "Total ban on Muslims in elections" },
+        { "mr": "मुसलमानांसाठी ५०% आरक्षण दिले", "en": "50% reservation for Muslims" },
+        { "mr": "धार्मिक न्यायालयांची स्थापना केली", "en": "Establishment of religious courts" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९२८): नेहरू अहवालाने स्वतंत्र मतदारसंघाची पद्धत नाकारून संयुक्त मतदारसंघ आणि लोकसंख्येच्या प्रमाणात राखीव जागा सुचवल्या. जिना यांनी यात सुधारणा सुचवल्या (दिल्ली प्रस्ताव), ज्या फेटाळल्या गेल्याने जिना यांनी लीगच्या वतीने या अहवालास विरोध केला.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1928): The Nehru Report discarded separate electorates in favor of joint electorates, prompting M.A. Jinnah to reject it and propose his 'Fourteen Points' shortly after.\n\n"
+      }
+    },
+    {
+      "id": 5,
+      "question": {
+        "mr": "मोहम्मद अली जिना यांनी नेहरू रिपोर्टला प्रत्युत्तर म्हणून १९२९ मध्ये आपल्या कोणत्या प्रसिद्ध मागण्यांची घोषणा केली होती?",
+        "en": "What famous set of demands did M.A. Jinnah formulate in March 1929 in response to the Nehru Report?"
+      },
+      "options": [
+        { "mr": "जिनांचे चौदा मुद्दे (Jinnah's Fourteen Points)", "en": "Jinnah's Fourteen Points" },
+        { "mr": "पाकिस्तान प्रस्ताव", "en": "Pakistan Resolution" },
+        { "mr": "लाहोर जाहीरनामा", "en": "Lahore Manifesto" },
+        { "mr": "शिमला मसुदा", "en": "Simla Draft" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९२९): नेहरू अहवालातील मुसलमानांच्या हक्कांबद्दल असमाधान व्यक्त करत जिना यांनी मार्च १९२९ मध्ये दिल्लीत भरलेल्या मुस्लिम लीगच्या अधिवेशनात आपले 'चौदा मुद्दे' (Fourteen Points) मांडले, ज्याने मुस्लिम लीगच्या पुढील फुटीर राजकारणाला दिशा दिली.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1929): Rejecting the Nehru Report, Jinnah put forth his 'Fourteen Points' in March 1929, outlining Muslim safeguards that became core demands for the League.\n\n"
+      }
+    },
+    {
+      "id": 6,
+      "question": {
+        "mr": "डिसेंबर १९२९ च्या लाहोर काँग्रेस अधिवेशनात पंडित जवाहरलाल नेहरू यांनी कोणत्या ऐतिहासिक घोषणेचा आग्रह धरला आणि तो मंजूर करून घेतला?",
+        "en": "What historic pledge and goal was championed and passed at the Lahore Congress session under Jawaharlal Nehru's presidency in December 1929?"
+      },
+      "options": [
+        { "mr": "पूर्ण स्वराज (Purna Swaraj / Complete Independence)", "en": "Purna Swaraj (Complete Independence)" },
+        { "mr": "डोमिनियन स्टेटस", "en": "Dominion Status" },
+        { "mr": "द्विदल शासन", "en": "Diarchy" },
+        { "mr": "ब्रिटिश राष्ट्रमंडळात सहभाग", "en": "Commonwealth membership" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९२९): लाहोर अधिवेशनात नेहरूंनी डोमिनियन स्टेटसची जुनी मागणी मागे घेत 'पूर्ण स्वराज' (Complete Independence) हे काँग्रेसचे नवीन अधिकृत ध्येय घोषित केले.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / डॉ. स. शि. गाठाळ]",
+        "en": "(1929): The Lahore session marked a generational shift as Jawaharlal Nehru steered the Congress to adopt 'Purna Swaraj' (Complete Independence) as its ultimate political objective.\n\n"
+      }
+    },
+    {
+      "id": 7,
+      "question": {
+        "mr": "भारतात पहिला 'स्वातंत्र्य दिन' (Independence Day) कधी साजरा करण्यात आला, ज्याची घोषणा लाहोर अधिवेशनात ठरली होती?",
+        "en": "When was the first 'Independence Day' celebrated across India following the Lahore Congress resolution?"
+      },
+      "options": [
+        { "mr": "२६ जानेवारी १९३० (January 26, 1930)", "en": "January 26, 1930" },
+        { "mr": "१५ ऑगस्ट १९३०", "en": "August 15, 1930" },
+        { "mr": "२६ नोव्हेंबर १९३०", "en": "November 26, 1930" },
+        { "mr": "१ जानेवारी १९३१", "en": "January 1, 1931" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९३०): लाहोर अधिवेशनातील ठरावानुसार ३१ डिसेंबर १९२९ रोजी रावी नदीच्या तीरावर तिरंगा फडकवला गेला आणि देशभरात **२६ जानेवारी १९३०** हा दिवस पहिला 'स्वातंत्र्य दिन' म्हणून पाळला गेला (हाच दिवस पुढे संविधान लागू करण्यासाठी निवडला गेला).\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1930): As resolved in Lahore, January 26, 1930, was enthusiastically celebrated across the country as India's first Independence Day, with mass meetings hoisting the tricolor.\n\n"
+      }
+    },
+    {
+      "id": 8,
+      "question": {
+        "mr": "महात्मा गांधींनी सविनय कायदेभंगाची सुरुवात करण्यासाठी दांडी यात्रेपूर्वी (मार्च १९३०) वाईसरॉय इरविन यांच्यासमोर किती मागण्या ठेवून अल्टिमेटम दिला होता?",
+        "en": "How many demands did Mahatma Gandhi communicate to Viceroy Lord Irwin in his ultimatum prior to the Dandi March?"
+      },
+      "options": [
+        { "mr": "११ मागण्या (Eleven Demands)", "en": "11 Demands" },
+        { "mr": "५ मागण्या", "en": "5 Demands" },
+        { "mr": "२० मागण्या", "en": "20 Demands" },
+        { "mr": "२ मागण्या", "en": "2nd Demand" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९३०): गांधीजींनी सविनय कायदेभंग सुरू करण्यापूर्वी मिठाचा कर रद्द करणे, दारूबंदी, राजकीय कैद्यांची सुटका यांसारख्या सर्वसमावेशक '११ मागण्या' इरविनसमोर ठेवल्या होत्या.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1930): Gandhi framed his agitation around 'Eleven Demands' representing diverse sections of Indian society, giving the British government an opportunity to avert conflict.\n\n"
+      }
+    },
+    {
+      "id": 9,
+      "question": {
+        "mr": "दांडी यात्रा (१२ मार्च ते ६ एप्रिल १९३०) साबरमती आश्रमापासून दांडीच्या समुद्रकिनाऱ्यापर्यंत किती लांबीची होती?",
+        "en": "What was the approximate total distance covered during Mahatma Gandhi's historic Dandi March in 1930?"
+      },
+      "options": [
+        { "mr": "२४० मैल (Approx. 240 miles / 385 km)", "en": "240 miles" },
+        { "mr": "१०० मैल", "en": "100 miles" },
+        { "mr": "५०० मैल", "en": "500 miles" },
+        { "mr": "५० मैल", "en": "50 miles" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९३०): साबरमती आश्रमापासून गुजरातमधील दांडी किनारपट्टीपर्यंतचे अंतर सुमारे **२४० मैल** (अंदाजे ३८५ किमी) होते, जे गांधीजी व त्यांच्या ७८ अनुयायांनी २४ दिवसांत पैदल पूर्ण केले.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1930): The legendary Dandi March covered approximately 240 miles (385 km) on foot over 24 days, with enthusiastic crowds gathering along the route to witness history.\n\n"
+      }
+    },
+    {
+      "id": 10,
+      "question": {
+        "mr": "सविनय कायदेभंगाच्या काळात तामिळनाडूमध्ये त्रिचिरापल्ली ते वेदारण्यमपर्यंत मिठाची यात्रा कोणी काढली होती?",
+        "en": "Who led the salt Satyagraha march from Trichinopoly to Vedaranyam in Tamil Nadu during the Civil Disobedience Movement?"
+      },
+      "options": [
+        { "mr": "चक्रवर्ती राजगोपालाचारी (C. Rajagopalachari / Rajaji)", "en": "C. Rajagopalachari" },
+        { "mr": "के. कामराज", "en": "K. Kamaraj" },
+        { "mr": "एस. सत्यमूर्ती", "en": "S. Satyamurti" },
+        { "mr": "पेरियार रामास्वामी", "en": "Periyar E.V. Ramasamy" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९३०): दांडी यात्रेच्या धर्तीवर दक्षिण भारतात सी. राजगोपालाचारी (राजाजी) यांनी अप्रिल १९३० मध्ये त्रिचिरापल्ली ते वेदारण्यम अशी मिठाच्या कायद्याविरोधात पदयात्रा काढली होती.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1930): In southern India, C. Rajagopalachari organized a parallel salt march from Trichinopoly to Vedaranyam on the Tanjore coast in April 1930.\n\n"
+      }
+    },
+    {
+      "id": 11,
+      "question": {
+        "mr": "सविनय कायदेभंग चळवळीदरम्यान उत्तर-पश्चिम सीमा प्रांतात (NWFP) खान अब्दुल गफार खान यांनी उभारलेली राष्ट्रप्रेमी संघटना कोणती होती?",
+        "en": "What was the name of the powerful non-violent social reform and nationalist movement founded by Khan Abdul Ghaffar Khan in the NWFP?"
+      },
+      "options": [
+        { "mr": "खुदाई खिदमतगार (Khudai Khidmatgars / Red Shirts)", "en": "Khudai Khidmatgars (Red Shirts)" },
+        { "mr": "आझाद दल", "en": "Azad Dal" },
+        { "mr": "खाकसार दल", "en": "Khaksar Tehrik" },
+        { "mr": "उलेमा कौन्सिल", "en": "Ulema Council" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९३०): 'सरहद गांधी' (Frontier Gandhi) म्हणून ओळखले जाणारे खान अब्दुल गफार खान यांनी पश्तून समाजात सुधारणा व स्वातंत्र्यलढ्यासाठी 'खुदाई खिदमतगार' (ज्यांना लाल शर्ट / Red Shirts म्हणून ओळखले जात) संघटना उभारली.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / डॉ. स. शि. गाठाळ]",
+        "en": "(1930): Khan Abdul Ghaffar Khan ('Frontier Gandhi') organized the Khudai Khidmatgars, popularly known as the Red Shirts, championing non-violent nationalist resistance in the NWFP.\n\n"
+      }
+    },
+    {
+      "id": 12,
+      "question": {
+        "mr": "मणिपूर भागात सविनय कायदेभंग आंदोलनादरम्यान इंग्रजांविरुद्ध सशस्त्र व सामाजिक लढा देणारी तरुण नागा नेत्या कोण होती?",
+        "en": "Which brave teenage Naga spiritual and political leader spearheaded anti-British resistance in Manipur during the 1930s?"
+      },
+      "options": [
+        { "mr": "राणी गाइदिन्ल्यू (Rani Gaidinliu)", "en": "Rani Gaidinliu" },
+        { "mr": "बेगम हजरत महल", "en": "Begum Hazrat Mahal" },
+        { "mr": "प्रीतिलता वाडेदार", "en": "Pritilata Waddedar" },
+        { "mr": "कल्पन दत्ता", "en": "Kalpana Datta" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९३०-३२): मणिपूर व नागालँडमध्ये अवघ्या १३-१४ वर्षांच्या वयात राणी गाइदिन्ल्यू यांनी ब्रिटीश राजवटीविरुद्ध उग्र प्रतिरोध चळवळ चालवली. त्यांना ब्रिटिशांनी जन्मठेपेची शिक्षा दिली आणि जवाहरलाल नेहरूंनी त्यांना 'राणी' ही उपाधी दिली.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1930-32): Teenage Naga leader Rani Gaidinliu led a heroic anti-colonial resistance in the Northeast, earning a life sentence from the British and the title 'Rani' from Nehru.\n\n"
+      }
+    },
+    {
+      "id": 13,
+      "question": {
+        "mr": "खालील विधाने विचारात घ्या:\nअ) ५ मार्च १९३१ रोजी झालेला 'गांधी-इरविन करार' (Gandhi-Irwin Pact) यामुळे काँग्रेसने सविनय कायदेभंग चळवळ तात्पुरती स्थगित केली.\nब) या करारानुसार ब्रिटिश सरकारने सर्व प्रकारच्या राजकीय कैद्यांना (हिंस्र गुन्हेगारांसह) तात्काळ सोडण्याचे मान्य केले.\nवरीलपैकी कोणते/ती विधान/ने बरोबर आहेत?",
+        "en": "Consider the following statements:\nA) The Gandhi-Irwin Pact of March 1931 led to the temporary suspension of the Civil Disobedience Movement.\nB) The pact stipulated the unconditional release of all political prisoners, including those convicted of violence.\nWhich of the above statement(s) is/are correct?"
+      },
+      "options": [
+        { "mr": "फक्त अ", "en": "Only A" },
+        { "mr": "फक्त ब", "en": "Only ब (Incorrect because violent prisoners were excluded)" },
+        { "mr": "अ आणि ब दोन्ही", "en": "Both A and B" },
+        { "mr": "दोन्ही नाहीत", "en": "Neither A nor B" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९३१): विधान 'अ' बरोबर आहे. विधान 'ब' चुकीचे आहे कारण ब्रिटिशांनी हिंसाचार न केलेल्या कैद्यांना सोडण्याचे मान्य केले होते, परंतु भगत सिंग व इतर क्रांतिकारकांच्या फाशीची शिक्षा माफ करण्याची गांधीजींची मागणी इरविनने फेटाळली होती.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / अनिल कटारे]",
+        "en": "(1931): Statement A is correct. Statement B is incorrect because prisoners convicted of violent acts (such as Bhagat Singh and his comrades) were explicitly excluded from release under the pact.\n\n"
+      }
+    },
+    {
+      "id": 14,
+      "question": {
+        "mr": "डिसेंबर १९३१ मध्ये लंडनमध्ये पार पडलेल्या 'दुसऱ्या गोलमेज परिषदेत' (Second Round Table Conference) काँग्रेसचे एकमेव अधिकृत प्रतिनिधी म्हणून कोणी सहभाग घेतला होता?",
+        "en": "Who represented the Indian National Congress as its sole official delegate at the Second Round Table Conference in London (1931)?"
+      },
+      "options": [
+        { "mr": "महात्मा गांधी (Mahatma Gandhi)", "en": "Mahatma Gandhi" },
+        { "mr": "पंडित जवाहरलाल नेहरू", "en": "Jawaharlal Nehru" },
+        { "mr": "सुभाषचंद्र बोस", "en": "Subhas Chandra Bose" },
+        { "mr": "सरदार वल्लभभाई पटेल", "en": "Sardar Vallabhbhai Patel" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९३१): गांधी-इरविन करारानुसार महात्मा गांधींनी राजपुताना जहाजाने लंडनला प्रवास केला आणि सप्टेंबर ते डिसेंबर १९३१ दरम्यान भरलेल्या दुसऱ्या गोलमेज परिषदेत काँग्रेसचे एकमेव प्रतिनिधी म्हणून हजेरी लावली.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / डॉ. स. शि. गाठाळ]",
+        "en": "(1931): Pursuant to the Gandhi-Irwin Pact, Mahatma Gandhi attended the Second Round Table Conference in London as the sole accredited representative of the Congress.\n\n"
+      }
+    },
+    {
+      "id": 15,
+      "question": {
+        "mr": "दुसऱ्या गोलमेज परिषदेत (१९३१) दलित वर्गाचे प्रतिनिधित्व कोणी केले होते आणि परिषदेत मुख्यत्वे कशावरून पेच निर्माण झाला होता?",
+        "en": "Who represented the Depressed Classes at the Second Round Table Conference, and what major deadlock disrupted the proceedings?"
+      },
+      "options": [
+        { "mr": "डॉ. बाबासाहेब आंबेडकर; दलित वर्गासाठी स्वतंत्र मतदारसंघाची मागणी व सांप्रदायिक तिढा", "en": "Dr. B.R. Ambedkar; deadlock over separate electorates for minorities and Depressed Classes" },
+        { "mr": "महात्मा गांधी; पूर्ण स्वातंत्र्याची मागणी", "en": "Mahatma Gandhi; demand for complete independence" },
+        { "mr": "मोहम्मद अली जिना; पाकिस्तान निर्मिती", "en": "M.A. Jinnah; creation of Pakistan" },
+        { "mr": "तेजबहादूर सप्रू; संघराज्यीय न्यायालय", "en": "Tej Bahadur Sapru; Federal Court" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९३१): डॉ. बाबासाहेब आंबेडकरांनी दुसऱ्या गोलमेज परिषदेत दलितांसाठी स्वतंत्र मतदारसंघावर ठाम भूमिका घेतली, तर गांधीजींचा त्यास विरोध होता. या सांप्रदायिक मुद्द्यावरून (Communal deadlock) परिषद अपयशी ठरली.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / एम. लक्ष्मीकांत]",
+        "en": "(1931): Dr. B.R. Ambedkar vigorously pressed for separate electorates for the Depressed Classes, leading to an intractable communal deadlock with Gandhi, resulting in the conference's failure.\n\n"
+      }
+    },
+    {
+      "id": 16,
+      "question": {
+        "mr": "खालील विधाने विचारात घ्या:\nअ) दुसऱ्या गोलमेज परिषदेवरून रिकाम्या हाताने परतल्यावर महात्मा गांधींनी जानेवारी १९३२ मध्ये सविनय कायदेभंग चळवळ पुन्हा सुरू केली.\nब) ब्रिटिश सरकारने तात्काळ कठोर दडपशाही अवलंबत गांधीजींना व इतर काँग्रेस नेत्यांना पुन्हा तुरुंगात डांबले.\nवरीलपैकी कोणते/ती विधान/ने बरोबर आहेत?",
+        "en": "Consider the following statements:\nA) Upon returning empty-handed from London, Gandhi resumed the Civil Disobedience Movement in January 1932.\nB) The colonial government responded with swift, brutal repression, arresting Gandhi and outlawing Congress organizations.\nWhich of the above statement(s) is/are correct?"
+      },
+      "options": [
+        { "mr": "फक्त अ", "en": "Only A" },
+        { "mr": "फक्त ब", "en": "Only B" },
+        { "mr": "अ आणि ब दोन्ही", "en": "Both A and B" },
+        { "mr": "दोन्ही नाहीत", "en": "Neither A nor B" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९३२): दोन्ही विधाने अगदी बरोबर आहेत. लंडनवरून निराश परतल्यावर गांधीजींनी ३ जानेवारी १९३२ रोजी सविनय कायदेभंग पुनरुजीवित केला, मात्र वाईसरॉय वेलिंग्टनच्या सरकारने दडपशाही करत काँग्रेसवर बंदी घातली व गांधीजींना अटक केली.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / समाधान महाजन]",
+        "en": "(1932): Both statements are correct. Disappointed by the London talks, Gandhi restarted Civil Disobedience in Jan 1932, but Viceroy Willingdon unleashed severe martial repression, arresting leaders overnight.\n\n"
+      }
+    },
+    {
+      "id": 17,
+      "question": {
+        "mr": "ऑगस्ट १९३२ मध्ये ब्रिटीश पंतप्रधान रमसे मॅकडोनाल्ड यांनी घोषित केलेल्या 'कम्युनल अवॉर्ड' (Communal Award) विरुद्ध गांधीजींनी येरवडा तुरुंगात कधीपासून आमरण उपोषण सुरू केले होते?",
+        "en": "When did Mahatma Gandhi begin his historic fast unto death inside Yerwada jail to protest the Communal Award?"
+      },
+      "options": [
+        { "mr": "२० सप्टेंबर १९३२ (September 20, 1932)", "en": "September 20, 1932" },
+        { "mr": "१५ ऑगस्ट १९३०", "en": "August 15, 1930" },
+        { "mr": "२६ जानेवारी १९३१", "en": "January 26, 1931" },
+        { "mr": "१ जानेवारी १९३४", "en": "January 1, 1934" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९३२): कम्युनल अवॉर्डने हिंदू समाजाचे विभाजन रोखण्यासाठी गांधीजींनी २० सप्टेंबर १९३२ रोजी येरवडा मध्यवर्ती तुरुंगात आमरण उपोषण सुरू केले, ज्याच्या परिणामी २४ सप्टेंबर रोजी 'पुणे करार' झाला.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / डॉ. स. शि. गाठाळ]",
+        "en": "(1932): Gandhi commenced his epic fast unto death on September 20, 1932, inside Yerwada jail against the communal award's separate electorates for Dalits, culminating in the Poona Pact on Sept 24.\n\n"
+      }
+    },
+    {
+      "id": 18,
+      "question": {
+        "mr": "पुणे करारानंतर (१९३२) महात्मा गांधीजींनी आपले लक्ष राजकारणापेक्षा कोणत्या सामाजिक कारkieर्दीकडे केंद्रित केले होते?",
+        "en": "Following the Poona Pact (1932), to which major social campaign did Mahatma Gandhi shift his primary focus?"
+      },
+      "options": [
+        { "mr": "अस्पृश्यता निर्मूलन आणि दलितोद्धार (Harijan welfare / eradication of untouchability)", "en": "Harijan welfare and eradication of untouchability" },
+        { "mr": "फक्त निवडणुकीची तयारी करणे", "en": "Only preparing for elections" },
+        { "mr": "परदेशी मालाचा प्रचार करणे", "en": "Promoting foreign goods" },
+        { "mr": "लष्करी भरती करणे", "en": "Military recruitment" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९३२ नंतर): पुणे करारानंतर गांधीजींनी आपले संपूर्ण लक्ष अस्पृश्यता निर्मूलनाकडे वळवले. त्यांनी 'अटचॅबिलिटीविरोधी लीग' स्थापन केली आणि 'हरिजन' (Harijan) साप्ताहिक सुरू करत देशभर प्रवास केला.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(Post-1932): Post-Poona Pact, Gandhi dedicated himself entirely to the anti-untouchability campaign, founding the All India Anti-Untouchability League and publishing the 'Harijan' weekly.\n\n"
+      }
+    },
+    {
+      "id": 19,
+      "question": {
+        "mr": "खालील विधाने विचारात घ्या:\nअ) १९३४ मध्ये काँग्रेसने सविनय कायदेभंग चळवळ अधिकृतरीत्या मागे घेतली.\nब) त्यानंतर गांधीजींनी सक्रिय राजकारणातून काही काळ निवृत्ती घेत पूर्णपणे रचनात्मक कामांवर लक्ष केंद्रित केले.\nवरीलपैकी कोणते/ती विधान/ने बरोबर आहेत?",
+        "en": "Consider the following statements:\nA) The Congress formally withdrew the Civil Disobedience Movement in May 1934.\nB) Following this, Gandhi temporarily stepped back from active daily politics to focus entirely on social reconstruction.\nWhich of the above statement(s) is/are correct?"
+      },
+      "options": [
+        { "mr": "फक्त अ", "en": "Only A" },
+        { "mr": "फक्त ब", "en": "Only B" },
+        { "mr": "अ आणि ब दोन्ही", "en": "Both A and B" },
+        { "mr": "दोन्ही नाहीत", "en": "Neither A nor B" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९३४): दोन्ही विधाने अगदी बरोबर आहेत. मे १९३४ मध्ये सविनय कायदेभंग चळवळ अधिकृतपणे संपली आणि गांधीजींनी काँग्रेसच्या प्राथमिक सदस्यत्वाचाही राजीनामा देत पूर्णवेळ रचनात्मक कार्यात झोकून दिले.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / समाधान महाजन]",
+        "en": "(1934): Both statements are correct. Civil Disobedience was formally called off in May 1934, and Gandhi stepped away from active party politics to pursue rural reconstruction.\n\n"
+      }
+    },
+    {
+      "id": 20,
+      "question": {
+        "mr": "१९३५ च्या 'भारत सरकार कायद्यानुसार' (Government of India Act 1935) प्रांतांमध्ये कौनती नवीन व्यवस्था लागू केली गेली?",
+        "en": "What major administrative reform was introduced in the provinces by the Government of India Act 1935?"
+      },
+      "options": [
+        { "mr": "प्रांतीय स्वायत्तता (Provincial Autonomy) आणि प्रांतांमधील द्विदल राज्यव्यवस्था (Diarchy) समाप्त करणे", "en": "Provincial Autonomy and abolition of diarchy in the provinces" },
+        { "mr": "प्रांतीय निवडणुकांवर पूर्ण बंदी", "en": "Total ban on provincial elections" },
+        { "mr": "केंद्रात प्रांतीय स्वायत्तता देणे", "en": "Provincial autonomy at the Centre" },
+        { "mr": "सर्व प्रांत थेट लंडनच्या नियंत्रणाखाली आणणे", "en": "Bringing all provinces under direct London rule" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९३५): १९३५ च्या कायद्याने प्रांतांमधील 'द्विदल पद्धती' (Diarchy) रद्द करून तिथे 'प्रांतीय स्वायत्तता' (Provincial Autonomy) लागू केली, ज्यामुळे भारतीय मंत्र्यांना खात्यांचा कारभार चालवण्याचे अधिकार मिळाले.\n\n[संदर्भ: एम. लक्ष्मीकांत / स्पेक्ट्रम]",
+        "en": "(1935): The 1935 Act dismantled dyarchy at the provincial level and introduced 'Provincial Autonomy', enabling elected Indian ministers to administer departments.\n\n"
+      }
+    },
+    {
+      "id": 21,
+      "question": {
+        "mr": "१९३७ च्या प्रांतीय निवडणुकांमध्ये काँग्रेसला मिळालेल्या यशानंतर, कोणत्या दोन प्रमुख प्रांतांमध्ये मुस्लिम लीगने काँग्रेससोबत युती न करता स्वतंत्रपणे सरकारे स्थापन केली होती?",
+        "en": "In which major provinces did non-Congress governments come to power following the 1937 elections despite Congress dominance elsewhere?"
+      },
+      "options": [
+        { "mr": "पंजाब (यूनियन पार्टी - सिकंदर हयात खान) आणि बंगाल (कृषक प्रजा पार्टी - फझलुल हक)", "en": "Punjab (Unionist Party) and Bengal (Krishak Praja Party)" },
+        { "mr": "मद्रास आणि बॉम्बे", "en": "Madras and Bombay" },
+        { "mr": "बिहार आणि ओरिसा", "en": "Bihar and Orissa" },
+        { "mr": "आसाम आणि सिंध", "en": "Assam and Sindh" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९३७): १९३७ च्या निवडणुकीत काँग्रेसने जबरदस्त बहुमत मिळवले, परंतु पंजाबमध्ये सिकंदर हयात खान यांच्या युनियनस्ट पार्टीने आणि बंगालमध्ये फझलुल हक यांच्या कृषक प्रजा पार्टीने लीगच्या सहकार्याने वा स्वतंत्रपणे प्रांतीय सरकारे बनवली.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1937): While Congress swept general seats, regional parties like the Unionists in Punjab and Krishak Praja Party in Bengal formed governments, which later fueled political estrangement with the Muslim League.\n\n"
+      }
+    },
+    {
+      "id": 22,
+      "question": {
+        "mr": "खालील विधाने विचारात घ्या:\nअ) १९३७ च्या निवडणुकीनंतर संयुक्त प्रांतात (United Provinces) काँग्रेसने मुस्लिम लीगसोबत युती करण्याचे नाकारल्यामुळे लीग आणि काँग्रेसमध्ये दरी निर्माण झाली.\nब) या घटनेनंतर मुस्लिम लीगने काँग्रेसच्या राजवटीविरुद्ध 'पिरपूर रिपोर्ट' (Pirpur Report) प्रसिद्ध करत मुस्लिमांवर अत्याचारांचे आरोप केले.\nवरीलपैकी कोणते/ती विधान/ने बरोबर आहेत?",
+        "en": "Consider the following statements:\nA) The failure of coalition talks between the Congress and the Muslim League in the United Provinces after 1937 widened the political chasm.\nB) Subsequently, the League published the 'Pirpur Report' alleging mistreatment of Muslims under Congress rule.\nWhich of the above statement(s) is/are correct?"
+      },
+      "options": [
+        { "mr": "फक्त अ", "en": "Only A" },
+        { "mr": "फक्त ब", "en": "Only B" },
+        { "mr": "अ आणि ब दोन्ही", "en": "Both A and B" },
+        { "mr": "दोन्ही नाहीत", "en": "Neither A nor B" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९३७-१९३८): विधान 'अ' बरोबर आहे. विधान 'ब' मध्येही पिरपूर रिपोर्ट (१९३८) लीगने प्रसिद्ध केला होता. दोन्ही विधाने अगदी बरोबर आहेत.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / डॉ. स. शि. गाठाळ]",
+        "en": "(1937-1938): Both statements are correct. The breakdown of UP coalition talks embittered the League, leading to aggressive anti-Congress propaganda such as the Pirpur Report.\n\n"
+      }
+    },
+    {
+      "id": 23,
+      "question": {
+        "mr": "सविनय कायदेभंग चळवळीत (१९३०-३४) व्यापारी, उद्योगपती आणि शेतकरी वर्गाचा सहभाग कसा राहिला होता?",
+        "en": "What was the nature of participation by merchants, industrialists, and peasants during the Civil Disobedience Movement?"
+      },
+      "options": [
+        { "mr": "व्यापाऱ्यांनी व उद्योगपतींनी आर्थिक मदत व परदेशी मालाच्या बहिष्कारास साथ दिली, तर शेतकऱ्यांनी करबंदीत सहभाग घेतला", "en": "Merchants and industrialists provided financial backing and boycotted foreign goods, while peasants actively joined no-tax campaigns" },
+        { "mr": "या वर्गांनी पूर्णपणे तटस्थ राहून ब्रिटिशांना साथ दिली", "en": "These classes remained entirely neutral and backed the British" },
+        { "mr": "फक्त कामगारांनी सहभाग घेतला, उद्योगपतींनी विरोध केला", "en": "Only workers participated, industrialists opposed" },
+        { "mr": "शेतकऱ्यांनी चळवळीचा तीव्र विरोध केला", "en": "Peasants fiercely opposed the movement" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९३०-३४): सविनय कायदेभंगात भारतीय व्यापारी व उद्योगपतींनी (उदा. फिरोरोश मेहता यांचे सहकारी, पुरुषोत्तमदास ठाकूरदास इ.) आर्थिक मदत केली आणि परदेशी मालावर बहिष्कार टाकला, तर शेतकऱ्यांनी जमीन महसूल व rent न भरण्याच्या चळवळीत उडी घेतली.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1930-34): The movement drew substantial financial support from the Indian mercantile class alongside militant no-rent and no-revenue struggles waged by peasants in various provinces.\n\n"
+      }
+    },
+    {
+      "id": 24,
+      "question": {
+        "mr": "स्वातंत्र्यपूर्व काळातील 'सविनय कायदेभंग चळवळीचे' (Civil Disobedience Movement) भारतीय स्वातंत्र्यलढ्यात काय महत्त्व मानले जाते?",
+        "en": "What is regarded as the historic significance of the Civil Disobedience Movement in India's freedom struggle?"
+      },
+      "options": [
+        { "mr": "त्याने महिलांचा आणि ग्रामीण जनतेचा सहभाग अभूतपूर्व प्रमाणावर वाढवून स्वातंत्र्यलढ्याला व्यापक जनधार दिला", "en": "It expanded the social base of the freedom struggle through massive participation of women and rural masses" },
+        { "mr": "त्याने भारताची फाळणी तात्काळ टाळली", "en": "It instantly prevented partition" },
+        { "mr": "त्याने ब्रिटिशांना भारतातून हाकलून लावले", "en": "It drove the British out of India immediately" },
+        { "mr": "त्याने निवडणुकीत सर्व जागा जिंकल्या", "en": "It won all legislative seats" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९३०-३४): सविनय कायदेभंग चळवळीत घरोघरी जाऊन महिलांनी, विद्यार्थ्यांनी आणि खेडोपाड्यातील जनतेने घेतलेला सहभाग हा स्वातंत्र्यलढ्याच्या इतिहासातील अत्यंत सुवर्णकाळ मानला जातो.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / डॉ. स. शि. गाठाळ]",
+        "en": "(1930-34): Civil Disobedience vastly widened the national movement's social perimeter, bringing women out of domestic spheres and mobilizing rural peasants in unprecedented numbers.\n\n"
+      }
+    },
+    {
+      "id": 25,
+      "question": {
+        "mr": "गोलमेज परिषदांच्या (Round Table Conferences - १९३०-३२) एकंदरीत निष्कर्षातून ब्रिटीश सरकारने शेवटी कोणता महत्त्वपूर्ण दस्तावेज प्रसिद्ध केला होता?",
+        "en": "What comprehensive constitutional document was ultimately published by the British government in early 1935 following the deliberations of the Round Table Conferences?"
+      },
+      "options": [
+        { "mr": "१९३५ चा श्वेतपत्रिका प्रस्ताव (White Paper on Constitutional Reforms leading to the 1935 Act)", "en": "White Paper on Constitutional Reforms" },
+        { "mr": "सायमन आयोग दुसरा अहवाल", "en": "Simon Commission Second Report" },
+        { "mr": "रौलट कायदा नवीन आवृत्ती", "en": "New Rowlatt Edition" },
+        { "mr": "माऊंटबॅटन मसुदा", "en": "Mountbatten Draft" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९३३-१९३५): तीनही गोलमेज परिषदा आणि संयुक्त संसदीय समितीच्या चर्चेनंतर ब्रिटिश सरकारने एक 'श्वेतपत्रिका' (White Paper) जारी केली, ज्याच्या आधारे पुढे १९३५ चा भारत सरकार कायदा तयार करण्यात आला.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / एम. लक्ष्मीकांत]",
+        "en": "(1933-1935): The cumulative outcomes of the Round Table discussions were codified into a Government White Paper, which served as the direct template for the Government of India Act 1935.\n\n"
+      }
+    }
+  ]
+}

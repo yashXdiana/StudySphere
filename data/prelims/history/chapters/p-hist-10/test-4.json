@@ -1,0 +1,464 @@
+{
+  "testId": "p-hist-10-t4",
+  "title": {
+    "mr": "आर्थिक व सामाजिक विकास (लोकसंख्याशास्त्र, नागरीकरण व पर्यावरण) — सराव 4",
+    "en": "Economic and Social Development (Demography, Urbanization & Environment) — Practice Test 4"
+  },
+  "durationMinutes": 20,
+  "marksPerQuestion": 1,
+  "negativeMarking": 0.25,
+  "totalMarks": 25,
+  "difficulty": "मध्यम ते काठिण्य",
+  "questions": [
+    {
+      "id": 1,
+      "question": {
+        "mr": "भारताच्या लोकसंख्येच्या इतिहासात कोणत्या दशकाला 'लोकसंख्या विभाजक वर्ष' (Great Divide Year) म्हणून ओळखले जाते, कारण त्यानंतर लोकसंख्या सतत वेगाने वाढली?",
+        "en": "Which census year in India's demographic history is known as the 'Year of the Great Divide' due to a permanent upward trend in population growth thereafter?"
+      },
+      "options": [
+        { "mr": "१९२१ (Census Year 1921)", "en": "1921" },
+        { "mr": "१९११", "en": "1911" },
+        { "mr": "१९३१", "en": "1931" },
+        { "mr": "१९५१", "en": "1951" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९२१): १९२१ च्या दशकात भारताचा लोकसंख्या वाढीचा दर नकारात्मक (-०.३१%) नोंदवला गेला होता. १९२१ नंतर मात्र भारतातील लोकसंख्येत सतत आणि वेगाने वाढ होत गेली, म्हणून १९२१ ला 'लोकसंख्या विभाजक वर्ष' म्हणतात.\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग / लोकसंख्याशास्त्र]",
+        "en": "(1921): The decade ending in 1921 recorded a negative population growth rate (-0.31%) due to famines and pandemics, after which India's population grew continuously, earning it the title 'Great Divide Year'.\n\n"
+      }
+    },
+    {
+      "id": 2,
+      "question": {
+        "mr": "जनगणना २०११ नुसार भारताचा साक्षरता दर (Literacy Rate) किती टक्के नोंदवला गेला होता आणि त्यात पुरुष व महिला साक्षरता कशी होती?",
+        "en": "According to Census 2011, what was India's overall literacy rate, and how did male and female literacy stand?"
+      },
+      "options": [
+        { "mr": "एकूण साक्षरता: ७४.०४% (पुरुष: ८२.१४%, महिला: ६५.४६%)", "en": "Overall: 74.04% (Male: 82.14%, Female: 65.46%)" },
+        { "mr": "एकूण साक्षरता: ६५.३८% (पुरुष: ७५%, महिला: ५४%)", "en": "Overall: 65.38%" },
+        { "mr": "एकूण साक्षरता: ८२.२०% (पुरुष: ९०%, महिला: ७५%)", "en": "Overall: 82.20%" },
+        { "mr": "एकूण साक्षरता: ७०.१०% (पुरुष: ७८%, महिला: ६०%)", "en": "Overall: 70.10%" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(२०११ जनगणना): २०११ च्या जनगणनेनुसार भारताची एकूण साक्षरता ७४.०४% होती, ज्यामध्ये पुरुषांची साक्षरता ८२.१४% आणि महिलांची साक्षरता ६५.४६% नोंदवली गेली.\n\n[संदर्भ: भारत जनगणना २०११ / रमेश सिंग]",
+        "en": "(Census 2011): India's literacy rate stood at 74.04%, with male literacy at 82.14% and female literacy at 65.46%.\n\n"
+      }
+    },
+    {
+      "id": 3,
+      "question": {
+        "mr": "जनगणना २०११ नुसार भारताचे 'लिंग गुणोत्तर' (Sex Ratio - प्रति १००० पुरुषांमागे स्त्रियांची संख्या) किती रेकॉर्ड केले गेले होते?",
+        "en": "What was India's overall Sex Ratio (number of females per 1000 males) recorded in the 2011 Census?"
+      },
+      "options": [
+        { "mr": "९४३ स्त्रिया प्रति १००० पुरुष", "en": "943 females per 1000 males" },
+        { "mr": "९२७ स्त्रिया प्रति १००० पुरुष", "en": "927 females per 1000 males" },
+        { "mr": "९६२ स्त्रिया प्रति १००० पुरुष", "en": "962 females per 1000 males" },
+        { "mr": "९१० स्त्रिया प्रति १००० पुरुष", "en": "910 females per 1000 males" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(२०११ जनगणना): २०११ च्या जनगणनेनुसार भारताचे एकूण लिंग गुणोत्तर ९४३ (म्हणजे प्रति १००० पुरुषांमागे ९४३ स्त्रिया) इतके होते, जे २००१ च्या तुलनेत (९३३) किंचित सुधारले होते.\n\n[संदर्भ: भारत जनगणना २०११]",
+        "en": "(Census 2011): India's overall sex ratio improved slightly to 943 females per 1000 males in 2011, compared to 933 in the 2001 census.\n\n"
+      }
+    },
+    {
+      "id": 4,
+      "question": {
+        "mr": "जनगणना २०११ नुसार भारतातील सर्वाधिक लोकसंख्या घनता (Population Density - प्रति चौरस किमी व्यक्ती) असलेले राज्य कोणते आहे?",
+        "en": "According to Census 2011, which Indian state has the highest population density?"
+      },
+      "options": [
+        { "mr": "बिहार (Bihar - ११०६ व्यक्ती प्रति चौ. किमी)", "en": "Bihar (1106 persons/sq. km)" },
+        { "mr": "पश्चिम बंगाल", "en": "West Bengal" },
+        { "mr": "उत्तर प्रदेश", "en": "Uttar Pradesh" },
+        { "mr": "केरळ", "en": "Kerala" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(२०११ जनगणना): २०११ च्या जनगणनेनुसार 'बिहार' हे राज्य सर्वाधिक लोकसंख्या घनता (११०६ व्यक्ती प्रति चौरस किलोमीटर) असलेले देशातील पहिले राज्य ठरले, तर राष्ट्रीय सरासरी ३८२ होती.\n\n[संदर्भ: भारत जनगणना २०११]",
+        "en": "(Census 2011): Bihar emerged as the most densely populated state in India with a population density of 1,106 persons per square kilometer.\n\n"
+      }
+    },
+    {
+      "id": 5,
+      "question": {
+        "mr": "भारताच्या लोकसंख्या धोरणानुसार (National Population Policy 2000) देशाची लोकसंख्या स्थिरावण्याचे (Population Stabilization) दीर्घकालीन उद्दिष्ट कोणत्या वर्षापर्यंत गाठण्याचे ठरवले होते?",
+        "en": "By which target year did the National Population Policy (NPP) 2000 aim to achieve a stable population for India?"
+      },
+      "options": [
+        { "mr": "२०४५ पर्यंत (Target year 2045)", "en": "2045" },
+        { "mr": "२०३० पर्यंत", "en": "2030" },
+        { "mr": "२०२६ पर्यंत", "en": "2026" },
+        { "mr": "२०६० पर्यंत", "en": "2060" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(२०००): राष्ट्रीय लोकसंख्या धोरण २००० नुसार भारताची लोकसंख्या एकात्मिक व शाश्वत रीतीने स्थिरावण्याचे उद्दिष्ट '२०४५' या वर्षापर्यंत गाठण्याचे निश्चित केले गेले होते.\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग]",
+        "en": "The National Population Policy (NPP) 2000 set a long-term objective of achieving population stabilization for India by the year 2045.\n\n"
+      }
+    },
+    {
+      "id": 6,
+      "question": {
+        "mr": "भारतीय अर्थव्यवस्थेच्या संदर्भात 'शहरीकरण' (Urbanization) प्रक्रियेत २०११ च्या जनगणनेनुसार भारतातील शहरी लोकसंख्येची टक्केवारी किती होती?",
+        "en": "According to the 2011 Census, what percentage of India's total population resided in urban areas?"
+      },
+      "options": [
+        { "mr": "३१.१६% (Approx. 31.16%)", "en": "31.16%" },
+        { "mr": "२५.५०%", "en": "25.50%" },
+        { "mr": "४०.२०%", "en": "40.20%" },
+        { "mr": "२१.४०%", "en": "21.40%" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(२०११ जनगणना): २०११ च्या जनगणनेनुसार भारताची एकूण लोकसंख्येतील ३१.१६% लोकसंख्या शहरी भागात राहत होती (म्हणजेच सुमारे ३७.७ कोटी लोक शहरी होते).\n\n[संदर्भ: भारत जनगणना २०११]",
+        "en": "(Census 2011): India's urban population reached 31.16% of the total population, reflecting a gradual yet steady acceleration in urbanization.\n\n"
+      }
+    },
+    {
+      "id": 7,
+      "question": {
+        "mr": "महाराष्ट्राच्या संदर्भात २०११ च्या जनगणनेनुसार महाराष्ट्राचा साक्षरता दर किती होता आणि सर्वाधिक साक्षरता असलेला जिल्हा कोणता होता?",
+        "en": "According to Census 2011, what was Maharashtra's overall literacy rate, and which district recorded the highest literacy?"
+      },
+      "options": [
+        { "mr": "एकूण साक्षरता: ८२.३४%, सर्वाधिक साक्षरता जिल्हा: सिंधुदुर्ग (किंवा मुंबई उपनगर)", "en": "Overall literacy: 82.34%; Highest district: Sindhudurg / Mumbai Suburban" },
+        { "mr": "एकूण साक्षरता: ७५%, सर्वाधिक साक्षरता पुणे", "en": "Overall: 75%; Pune" },
+        { "mr": "एकूण साक्षरता: ८९%, सर्वाधिक साक्षरता नागपूर", "en": "Overall: 89%; Nagpur" },
+        { "mr": "एकूण साक्षरता: ७८%, सर्वाधिक साक्षरता सातारा", "en": "Overall: 78%; Satara" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(महाराष्ट्र जनगणना २०११): महाराष्ट्राची एकूण साक्षरता ८२.३४% होती (पुरुष: ८८.३८%, महिला: ७५.९८%). जिल्ह्यांमध्ये सिंधुदुर्ग आणि मुंबई उपनगर यांनी सर्वाधिक साक्षरतेमध्ये आघाडी घेतली होती.\n\n[संदर्भ: महाराष्ट्र जनगणना २०११ / डॉ. गाठाळ]",
+        "en": "(Census 2011): Maharashtra recorded an overall literacy rate of 82.34%, with Sindhudurg and Mumbai Suburban leading among districts.\n\n"
+      }
+    },
+    {
+      "id": 8,
+      "question": {
+        "mr": "महाराष्ट्राच्या २०११ च्या जनगणनेनुसार राज्याचे 'लिंग गुणोत्तर' (Sex Ratio) किती नोंदवले गेले होते, जे राष्ट्रीय सरासरीपेक्षा थोडे कमी आहे?",
+        "en": "What was Maharashtra's Sex Ratio as per the 2011 Census?"
+      },
+      "options": [
+        { "mr": "९२९ स्त्रिया प्रति १००० पुरुष", "en": "929 females per 1000 males" },
+        { "mr": "९४३ स्त्रिया प्रति १००० पुरुष", "en": "943 females per 1000 males" },
+        { "mr": "९५० स्त्रिया प्रति १००० पुरुष", "en": "950 females per 1000 males" },
+        { "mr": "९१२ स्त्रिया प्रति १००० पुरुष", "en": "912 females per 1000 males" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(महाराष्ट्र जनगणना २०११): २०११ च्या जनगणनेनुसार महाराष्ट्राचे लिंग गुणोत्तर ९२९ (म्हणजे प्रति १००० पुरुषांमागे ९२९ स्त्रिया) नोंदवले गेले, जे राष्ट्रीय सरासरीच्या (९४३) तुलनेत कमी आहे.\n\n[संदर्भ: महाराष्ट्र जनगणना २०११]",
+        "en": "(Census 2011): Maharashtra's overall sex ratio stood at 929 females per 1000 males, lagging behind the national average of 943.\n\n"
+      }
+    },
+    {
+      "id": 9,
+      "question": {
+        "mr": "पर्यावरण अर्थशास्त्र आणि शाश्वत विकासाच्या संदर्भात 'हवामान बदल कृती आराखडा' (National Action Plan on Climate Change - NAPCC) अंतर्गत भारतात किती राष्ट्रीय मोहिमा (Missions) राबवल्या जात आहेत?",
+        "en": "How many core national missions constitute India's National Action Plan on Climate Change (NAPCC)?"
+      },
+      "options": [
+        { "mr": "८ राष्ट्रीय मोहिमा (8 National Missions)", "en": "8 National Missions" },
+        { "mr": "५ राष्ट्रीय मोहिमा", "en": "5 National Missions" },
+        { "mr": "१० राष्ट्रीय मोहिमा", "en": "10 National Missions" },
+        { "mr": "१२ राष्ट्रीय मोहिमा", "en": "12 National Missions" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(NAPCC): भारताने पर्यावरण संरक्षणासाठी व हवामान बदलाचा सामना करण्यासाठी २००८ मध्ये 'राष्ट्रीय हवामान बदल कृती आराखडा' जाहीर केला, ज्यामध्ये सौर ऊर्जा, ऊर्जा दक्षता, जलसाठा, सस्टेनेबल हॅबिटॅट अशा **८ राष्ट्रीय मोहिमांचा** समावेश आहे.\n\n[संदर्भ: पर्यावरण व अर्थव्यवस्था - रमेश सिंग]",
+        "en": "India's National Action Plan on Climate Change (NAPCC) comprises eight core national missions, including Solar Mission, Enhanced Energy Efficiency, and Water Mission.\n\n"
+      }
+    },
+    {
+      "id": 10,
+      "question": {
+        "mr": "क्योटो प्रोटोकॉलशी (Kyoto Protocol) संबंधित 'कार्बन क्रेडिट' (Carbon Credit) ही संकल्पना कशाशी निगडित आहे?",
+        "en": "What does the concept of 'Carbon Credit' under the Kyoto Protocol signify?"
+      },
+      "options": [
+        { "mr": "१ टन कार्बन डायऑक्साइड किंवा समतुल्य ग्रीनहाऊस वायू वातावरणात सोडण्यास किंवा रोखण्यास मिळालेले परवानात्मक मूल्य", "en": "A permit that allows a country or enterprise to emit a certain amount of carbon dioxide or equivalent greenhouse gases (1 credit = 1 tonne of CO2)" },
+        { "mr": "औद्योगिक कारखान्यांना मिळणारी बँक सवलत", "en": "Bank subsidies for factories" },
+        { "mr": "कोळसा खरेदी करण्यासाठी मिळणारे कर्ज", "en": "Loans for purchasing coal" },
+        { "mr": "फॉरेस्ट टॅक्सची माफी", "en": "Exemption from forest tax" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(कार्बन क्रेडिट): क्योटो प्रोटोकॉल अंतर्गत ग्रीनहाऊस वायूंचे उत्सर्जन कमी करण्यासाठी कार्बन क्रेडिटची संकल्पना आली. १ कार्बन क्रेडिट म्हणजे १ टन कार्बन डायऑक्साइड गॅस वातावरणात कमी सोडणे किंवा त्याचे रोपण करणे होय.\n\n[संदर्भ: पर्यावरण व अर्थव्यवस्था - रमेश सिंग]",
+        "en": "A carbon credit is a tradable certificate or permit representing the right to emit one tonne of carbon dioxide or an equivalent greenhouse gas.\n\n"
+      }
+    },
+    {
+      "id": 11,
+      "question": {
+        "mr": "पर्यावरण संरक्षणासाठी भारताने पॅरिस हवामान परिषदेत (COP21) घोषित केलेल्या 'पंचामृत' (Panchamrit) उद्दिष्टांमध्ये भारत कोणत्या वर्षापर्यंत 'नेट झिरो' (Net Zero / Carbon Neutral) होण्याचे लक्ष्य ठेवले आहे?",
+        "en": "By which target year has India committed to achieving 'Net Zero' carbon emissions under its Panchamrit pledge?"
+      },
+      "options": [
+        { "mr": "२०७० पर्यंत (Target year 2070)", "en": "2070" },
+        { "mr": "२०५० पर्यंत", "en": "2050" },
+        { "mr": "२०४७ पर्यंत", "en": "2047" },
+        { "mr": "२०३० पर्यंत", "en": "2030" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(ग्लास्गो COP26): पंतप्रधान नरेंद्र मोदी यांनी ग्लास्गो येथे २०२१ मधील परिषदेत 'पंचामृत' घोषणा केली, ज्यानुसार भारताने **२०७०** पर्यंत कार्बन उत्सर्जन शून्य (Net Zero Emissions) करण्याचे ऐतिहासिक लक्ष्य ठेवले आहे.\n\n[संदर्भ: पर्यावरण व अर्थव्यवस्था - रमेश सिंग / UNFCCC]",
+        "en": "At the COP26 summit in Glasgow, India pledged to achieve Net Zero carbon emissions by the year 2070 as part of its five-point 'Panchamrit' climate commitment.\n\n"
+      }
+    },
+    {
+      "id": 12,
+      "question": {
+        "mr": "जैवविविधतेच्या संवर्धनासाठी भारतात १९७२ मध्ये कोणता ऐतिहासिक कायदा संमत केला गेला, ज्याने वन्यजीवांचे संरक्षण सुनिश्चित केले?",
+        "en": "Which landmark environmental protection legislation was enacted in India in 1972 to safeguard wildlife and prohibit hunting?"
+      },
+      "options": [
+        { "mr": "वन्यजीव संरक्षण कायदा (Wildlife Protection Act - 1972)", "en": "Wildlife Protection Act (1972)" },
+        { "mr": "पर्यावरण संरक्षण कायदा", "en": "Environment Protection Act" },
+        { "mr": "वन संरक्षण कायदा", "en": "Forest Conservation Act" },
+        { "mr": "जैविक विविधता कायदा", "en": "Biological Diversity Act" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९७२): वन्यप्राण्यांचे अवैध शिकार रोखण्यासाठी आणि राष्ट्रीय उद्याने, अभयारणी यांच्या स्थापनेला कायदेशीर चौकट देण्यासाठी संसदेने १९७२ मध्ये 'वन्यजीव संरक्षण कायदा' मंजूर केला.\n\n[संदर्भ: पर्यावरण कायदे - रमेश सिंग]",
+        "en": "(1972): The Wildlife Protection Act of 1972 provides a comprehensive legal framework for the protection of wild animals, birds, and plants, and establishment of protected areas.\n\n"
+      }
+    },
+    {
+      "id": 13,
+      "question": {
+        "mr": "भारतात १९८६ मध्ये व्यापक स्वरूपात कोणता सर्वसमावेशक कायदा लागू केला गेला, जो 'भोपाळ गॅस दुर्घटना' (۱۹۸४) नंतर संपूर्ण देशाच्या पर्यावरणीय सुरक्षेसाठी बनवला गेला?",
+        "en": "Which comprehensive umbrella legislation was enacted in India in 1986 in the wake of the Bhopal gas tragedy to protect and improve the environment?"
+      },
+      "options": [
+        { "mr": "पर्यावरण (संरक्षण) कायदा (Environment Protection Act - 1986)", "en": "Environment (Protection) Act (1986)" },
+        { "mr": "जल प्रदूषण कायदा", "en": "Water Pollution Act" },
+        { "mr": "हवा प्रदूषण कायदा", "en": "Air Pollution Act" },
+        { "mr": "राष्ट्रीय हरित न्यायाधिकरण कायदा", "en": "NGT Act" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९८६): भोपाळ दुर्घटनेच्या पार्श्वभूमीवर केंद्र सरकारला संपूर्ण देशात पर्यावरणाचा र्हास रोखण्यासाठी व उद्योग-धंद्यांवर नियंत्रण ठेवण्यासाठी अपार अधिकार देणारा 'पर्यावरण (संरक्षण) कायदा १९८६' अमलात आला.\n\n[संदर्भ: पर्यावरण कायदे - रमेश सिंग]",
+        "en": "(1986): Enacted in the aftermath of the Bhopal gas tragedy, the Environment (Protection) Act 1986 serves as an umbrella legislation giving central authorities sweeping powers to protect the environment.\n\n"
+      }
+    },
+    {
+      "id": 14,
+      "question": {
+        "mr": "पर्यावरणीय वादांवर आणि प्रकरणांवर जलद व प्रभावी न्यायदान करण्यासाठी भारतात 'राष्ट्रीय हरित न्यायाधिकरण' (National Green Tribunal - NGT) ची स्थापना कोणत्या वर्षी झाली?",
+        "en": "In which year was the National Green Tribunal (NGT) established in India to handle expeditious disposal of environmental litigation?"
+      },
+      "options": [
+        { "mr": "२०१० (National Green Tribunal Act, 2010)", "en": "2010" },
+        { "mr": "२००५", "en": "2005" },
+        { "mr": "२०१५", "en": "2015" },
+        { "mr": "२०००", "en": "2000" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(२०१०): पर्यावरणविषयक कायदे, वनसंवर्धन आणि प्रदूषण नियंत्रण संबंधी खटले जलदगतीने चालवण्यासाठी संसदेच्या कायद्याद्वारे **२०१०** मध्ये 'राष्ट्रीय हरित न्यायाधिकरण' (NGT) ची स्थापना केली गेली.\n\n[संदर्भ: पर्यावरण कायदे - रमेश सिंग]",
+        "en": "(2010): The National Green Tribunal (NGT) was established in 2010 under the NGT Act for effective and expeditious disposal of cases relating to environmental protection and conservation.\n\n"
+      }
+    },
+    {
+      "id": 15,
+      "question": {
+        "mr": "महाराष्ट्राच्या संदर्भात 'शहरीकरण' (Urbanization) प्रक्रियेत २०११ च्या जनगणनेनुसार महाराष्ट्राची शहरी लोकसंख्या एकूण लोकसंख्येच्या किती टक्के होती?",
+        "en": "According to the 2011 Census, what percentage of Maharashtra's total population resided in urban areas, making it one of the most urbanized large states?"
+      },
+      "options": [
+        { "mr": "४५.२% (Approx. 45.2% urban population)", "en": "45.2%" },
+        { "mr": "३१.१% दोन", "en": "31.1%" },
+        { "mr": "५५.८%", "en": "55.8%" },
+        { "mr": "३८.४%", "en": "38.4%" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(महाराष्ट्र जनगणना २०११): महाराष्ट्रात शहरीकरणाचा वेग देशाच्या सरासरीपेक्षा (३१.१६%) जास्त आहे. २०११ च्या जनगणनेनुसार महाराष्ट्राची **४५.२%** लोकसंख्या शहरी भागात राहत होती.\n\n[संदर्भ: महाराष्ट्र जनगणना २०११ / डॉ. गाठाळ]",
+        "en": "(Census 2011): Maharashtra is among India's most urbanized major states, with approximately 45.2% of its population residing in urban areas.\n\n"
+      }
+    },
+    {
+      "id": 16,
+      "question": {
+        "mr": "भारतात पर्यावरण संरक्षणासाठी देण्यात येणारा सर्वोच्च पुरस्कार कोणता आहे, जो पर्यावरण आणि वन्यजीव क्षेत्रात उत्कृष्ट कामगिरी करणाऱ्या व्यक्ती किंवा संस्थांना दिला जातो?",
+        "en": "Which prestigious national award is presented in India for outstanding contributions to environmental protection and wildlife conservation?"
+      },
+      "options": [
+        { "mr": "इंदिरा गांधी पर्यावरण पुरस्कार (Indira Gandhi Paryavaran Puraskar)", "en": "Indira Gandhi Paryavaran Puraskar" },
+        { "mr": "राजीव गांधी पर्यावरण पुरस्कार", "en": "Rajiv Gandhi Environment Award" },
+        { "mr": "वनश्री पुरस्कार", "en": "Vanshri Puraskar" },
+        { "mr": "अमृता देवी विष्णोई पुरस्कार", "en": "Amrita Devi Bishnoi Award" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(पर्यावरण पुरस्कार): पर्यावरण, प्रदूषण नियंत्रण आणि वन्यजीव संवर्धनात अद्वितीय कार्य करणाऱ्या व्यक्ती किंवा संस्थांना केंद्र सरकारतर्फे 'इंदिरा गांधी पर्यावरण पुरस्कार' प्रदान केला जातो.\n\n[संदर्भ: पर्यावरण मंत्रालय रिपोर्ट]",
+        "en": "The Indira Gandhi Paryavaran Puraskar is a premier national award conferred in India for significant contributions to environmental protection and sustainable development.\n\n"
+      }
+    },
+    {
+      "id": 17,
+      "question": {
+        "mr": "आर्थिक विकासाच्या संदर्भात 'परिसंस्था सेवांचे मूल्यमापन' (Ecosystem Services Valuation) म्हणजे काय?",
+        "en": "What does the economic valuation of 'Ecosystem Services' signify in sustainable development economics?"
+      },
+      "options": [
+        { "mr": "जंगले, पाणथळ जागा, नद्या आणि हवा यांसारख्या निसर्गाने फुकट दिलेल्या सेवांचे आर्थिक मूल्य ओळखून पर्यावरणाचा संवर्धनात वापर करणे", "en": "Quantifying the economic benefits that humans freely derive from natural ecosystems (forests, water bodies, clean air) to guide policy" },
+        { "mr": "जंगले तोडून कारखाने उभारणे", "en": "Clearing forests for factories" },
+        { "mr": "निसर्गावर कर लादणे", "en": "Levying taxes on nature" },
+        { "mr": "पाण्यावर पूर्ण खाजगी मालकी हक्क देणे", "en": "Privatizing all water sources" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(शाश्वत विकास): परिसंस्था सेवांचे मूल्यमापन म्हणजे जंगले ऑक्सिजन, भूजल पुनर्भरण, हवा शुद्धीकरण व माती टिकवण्याचे जे काम करतात त्याचे आर्थिक महत्त्व धोरणकर्त्यांना पटवून देणे होय.\n\n[संदर्भ: पर्यावरण अर्थशास्त्र - रमेश सिंग]",
+        "en": "Ecosystem valuation assigns economic values to goods and services provided by nature (such as carbon sequestration, water filtration) to integrate environmental costs into decision-making.\n\n"
+      }
+    },
+    {
+      "id": 18,
+      "question": {
+        "mr": "भारतात हवामान बदलाच्या परिणामांचा सामना करण्यासाठी 'राष्ट्रीय अनुकूलन निधी' (National Adaptation Fund for Climate Change - NAFCC) कधी स्थापन केला गेला?",
+        "en": "When was the National Adaptation Fund for Climate Change (NAFCC) established in India to assist states in climate adaptation actions?"
+      },
+      "options": [
+        { "mr": "२०१५ (Established in 2015)", "en": "2015" },
+        { "mr": "२००८", "en": "2008" },
+        { "mr": "२०१२", "en": "2012" },
+        { "mr": "२०२०", "en": "2020" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(२०१५): हवामान बदलाच्या दुष्परिणामांना तोंड देण्यासाठी राज्यांना आर्थिक मदत करण्याच्या उद्देशाने २०१५ मध्ये 'राष्ट्रीय अनुकूलन निधी' (NAFCC) ची स्थापना केली गेली.\n\n[संदर्भ: पर्यावरण मंत्रालय रिपोर्ट]",
+        "en": "(2015): NAFCC was established in 2015 to support adaptation activities in Indian states that are particularly vulnerable to climate change impacts.\n\n"
+      }
+    },
+    {
+      "id": 19,
+      "question": {
+        "mr": "भारताच्या लोकसंख्येच्या बाबतीत 'लोकसंख्या स्थिरीकरण' (Population Stabilization) साधताना कोणत्या घटकावर मुख्य भर दिला जातो?",
+        "en": "What is the primary demographic indicator monitored to achieve population stabilization globally and in India?"
+      },
+      "options": [
+        { "mr": "एकूण प्रजनन दर (Total Fertility Rate - TFR) हा २.१ (Replacement Level) वर आणणे", "en": "Bringing the Total Fertility Rate (TFR) down to the replacement level of 2.1" },
+        { "mr": "मृत्यूदर शून्यावर आणणे", "en": "Reducing mortality rate to zero" },
+        { "mr": "जन्मदर पूर्णपणे थांबवणे", "en": "Stopping all births entirely" },
+        { "mr": "केवळ वृद्धांची संख्या मोजणे", "en": "Counting only senior citizens" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(लोकसंख्याशास्त्र): लोकसंख्या स्थिरीकरणाचा मुख्य उद्देश 'एकूण प्रजनन दर' (TFR) हा २.१ वर आणणे हा असतो, कारण २.१ हा 'रिप्लेसमेंट लेव्हल' मानला जातो, जिथे माता-पिता आपली जागा घेण्यासाठी पुरेशी नवी पिढी निर्माण करतात.\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग]",
+        "en": "Population stabilization requires bringing the Total Fertility Rate (TFR) to the replacement level of roughly 2.1 children per woman, where a population replaces itself.\n\n"
+      }
+    },
+    {
+      "id": 20,
+      "question": {
+        "mr": "भारतातील ताज्या राष्ट्रीय कुटुंब आरोग्य सर्वेक्षणांनुसार (NFHS-5) भारताचा एकूण प्रजनन दर (TFR) सध्या किती नोंदवला गेला आहे, जो रिप्लेसमेंट लेव्हलपेक्षा खाली आला आहे?",
+        "en": "According to the latest National Family Health Survey (NFHS-5), what is India's current Total Fertility Rate (TFR)?"
+      },
+      "options": [
+        { "mr": "२.० (Below replacement level of 2.1)", "en": "2.0" },
+        { "mr": "२.८", "en": "2.8" },
+        { "mr": "३.२", "en": "3.2" },
+        { "mr": "१.५", "en": "1.5" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(NFHS-5): राष्ट्रीय कुटुंब आरोग्य सर्वेक्षण-५ (NFHS-5) नुसार भारताचा TFR घसरून **२.०** वर आला आहे, जो रिप्लेसमेंट लेव्हल (२.१) पेक्षाही खाली गेला आहे, म्हणजे भारताची लोकसंख्या स्थिरावण्याच्या मार्गावर आहे.\n\n[संदर्भ: NFHS-5 Report / रमेश सिंग]",
+        "en": "(NFHS-5): The latest National Family Health Survey (NFHS-5) revealed that India's TFR has declined to 2.0, falling below the replacement level of 2.1.\n\n"
+      }
+    },
+    {
+      "id": 21,
+      "question": {
+        "mr": "शहरीकरणाच्या संदर्भात भारतात 'स्मार्ट सिटी मिशन' (Smart Cities Mission) ची सुरुवात कधी झाली होती?",
+        "en": "When was the flagship 'Smart Cities Mission' launched in India to promote sustainable and citizen-centric urban development?"
+      },
+      "options": [
+        { "mr": "२५ जून २०१५ (June 25, 2015)", "en": "June 25, 2015" },
+        { "mr": "१५ ऑगस्ट २०१४", "en": "August 15, 2014" },
+        { "mr": "२ ऑक्टोबर २०१६", "en": "October 2, 2016" },
+        { "mr": "१ जानेवारी २०१४", "en": "January 1, 2014" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(२०१५): २५ जून २०१५ रोजी देशातील १०० शहरांना आधुनिक पायाभूत सुविधा, तंत्रज्ञान आणि शाश्वत नागरी जीवनासाठी 'स्मार्ट सिटी मिशन' सुरू केले गेले.\n\n[संदर्भ: शहरी विकास मंत्रालय रिपोर्ट]",
+        "en": "(2015): The Smart Cities Mission was launched on June 25, 2015, to promote cities that provide core infrastructure and give a decent quality of life to citizens.\n\n"
+      }
+    },
+    {
+      "id": 22,
+      "question": {
+        "mr": "शहरी भागातील पायाभूत सुविधा आणि 'अमृत मोहीम' (AMRUT - Atal Mission for Rejuvenation and Urban Transformation) कशाशी संबंधित आहे?",
+        "en": "What is the core focus of the AMRUT (Atal Mission for Rejuvenation and Urban Transformation) scheme?"
+      },
+      "options": [
+        { "mr": "शहरांमध्ये पाणीपुरवठा, सांडपाणी व्यवस्था, हरित क्षेत्र आणि सार्वजनिक वाहतूक व्यवस्था सुधारणे", "en": "Ensuring robust urban infrastructure such as water supply, sewerage networks, green spaces, and urban transport" },
+        { "mr": "केवळ ग्रामीण रस्ते बांधणे", "en": "Building rural roads exclusively" },
+        { "mr": "फक्त विमानतळ बांधणे", "en": "Building airports only" },
+        { "mr": "शहरांमधील जुन्या इमारती पाडणे", "en": "Demolishing old buildings" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(AMRUT): अमृत (AMRUT) मोहिमेचा उद्देश निवडक शहरांमध्ये पाणीपुरवठा, मलनिस्सारण (Sewerage), storm water drainage आणि हरित उद्यानांचा विकास करणे हा आहे.\n\n[संदर्भ: शहरी विकास मंत्रालय रिपोर्ट]",
+        "en": "AMRUT focuses on establishing infrastructure that could ensure adequate robust water supply, sewerage systems, and urban amenities in designated cities.\n\n"
+      }
+    },
+    {
+      "id": 23,
+      "question": {
+        "mr": "पर्यावरण संरक्षणासाठी आणि प्लास्टिक प्रदूषण रोखण्यासाठी भारतात कोणत्या जाडीपेक्षा कमी वजनाच्या सिंगल युज प्लास्टिकवर (Single-use Plastic) पूर्ण बंदी घालण्यात आली आहे?",
+        "en": "Below what thickness threshold has the manufacture, stocking, and use of identified single-use plastic items been banned in India?"
+      },
+      "options": [
+        { "mr": "१२० मायक्रॉनपेक्षा कमी (Phased ban below specific microns, reaching 120 microns)", "en": "Below specified micrometer thresholds (progressively up to 120 microns)" },
+        { "mr": "२० मायक्रॉन", "en": "20 microns" },
+        { "mr": "५० मायक्रॉन", "en": "50 microns" },
+        { "mr": "५०० मायक्रॉन", "en": "500 microns" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(प्लास्टिक बंदी): केंद्र सरकारच्या नियमानुसार देशात सिंगल युज प्लास्टिकच्या वस्तूंवर बंदी आणली गेली असून प्लास्टिक पिशव्यांच्या जाडीची मर्यादा टप्प्याटप्प्याने वाढवत **१२० मायक्रॉनपर्यंत** नेण्यात आली आहे.\n\n[संदर्भ: प्लास्टिक कचरा व्यवस्थापन नियम / पर्यावरण मंत्रालय]",
+        "en": "India implemented a nationwide ban on identified single-use plastic items, with phased restrictions progressively raising plastic carry bag thickness limits up to 120 microns.\n\n"
+      }
+    },
+    {
+      "id": 24,
+      "question": {
+        "mr": "शाश्वत विकासाच्या संदर्भात 'परिसंस्था पुनर्स्थापना दशक' (UN Decade on Ecosystem Restoration) म्हणून संयुक्त राष्ट्रसंघाने कोणत्या दशकाची घोषणा केली आहे?",
+        "en": "Which decade has been declared by the United Nations as the 'Decade on Ecosystem Restoration' to halt and reverse ecological degradation?"
+      },
+      "options": [
+        { "mr": "२०२१ ते २०३० (2021-2030)", "en": "2021-2030" },
+        { "mr": "२०११ ते २०२०", "en": "2011-2020" },
+        { "mr": "२०३१ ते २०४०", "en": "2031-2040" },
+        { "mr": "१९९१ ते २०००", "en": "1991-2000" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(UN Decade): पर्यावरणाचा ऱ्हास रोखण्यासाठी आणि नष्ट झालेल्या परिसंस्थांचे पुनरुज्जीवन करण्यासाठी संयुक्त राष्ट्रसंघाने **२०२१ ते २०३०** हा काळ 'परिसंस्था पुनर्स्थापना दशक' म्हणून घोषित केला आहे.\n\n[संदर्भ: UNEP / रमेश सिंग]",
+        "en": "The United Nations declared 2021-2030 as the 'UN Decade on Ecosystem Restoration' to massively scale up the restoration of degraded and destroyed ecosystems worldwide.\n\n"
+      }
+    },
+    {
+      "id": 25,
+      "question": {
+        "mr": "भारताच्या आर्थिक व सामाजिक विकासात लोकसंख्याशास्त्र, नागरीकरण आणि पर्यावरण यांच्यातील समतोल साधताना काय सर्वात महत्त्वाचे ठरते?",
+        "en": "What is the ultimate balancing act for India in harmonizing demography, urbanization, and environmental sustainability?"
+      },
+      "options": [
+        { "mr": "मानवी विकासाला गती देताना हरित तंत्रज्ञान, कार्यक्षम नगररचना आणि नैसर्गिक संसाधनांचे शाश्वत व्यवस्थापन करणे", "en": "Integrating green technologies, smart urban planning, and sustainable resource management while advancing human capital" },
+        { "mr": "शहरीकरण पूर्णपणे बंद करणे", "en": "Banning urbanization completely" },
+        { "mr": "लोकांचा प्रवास सक्तीने थांबवणे", "en": "Forcibly restricting human mobility" },
+        { "mr": "औद्योगिक प्रगतीकडे पूर्ण दुर्लक्ष करणे", "en": "Ignoring industrial output entirely" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(निष्कर्ष): भारतासारख्या विकसनशील देशात लोकसंख्येचा लाभ (Demographic Dividend) मिळवत असतानाच सुनियोजित नागरीकरण आणि पर्यावरणपूरक हरित विकासाची कास धरून शाश्वत भविष्य निर्माण करणे ही काळाची गरज आहे.\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग / UNEP]",
+        "en": "(Conclusion): India's future trajectory hinges on successfully leveraging its demographic dividend through resilient urban infrastructure, green growth, and rigorous environmental stewardship.\n\n"
+      }
+    }
+  ]
+}

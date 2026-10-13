@@ -1,0 +1,464 @@
+{
+  "testId": "p-hist-10-t1",
+  "title": {
+    "mr": "आर्थिक व सामाजिक विकास (नियोजन व पंचवार्षिक योजना) — सराव 1",
+    "en": "Economic and Social Development (Planning & Five-Year Plans) — Practice Test 1"
+  },
+  "durationMinutes": 20,
+  "marksPerQuestion": 1,
+  "negativeMarking": 0.25,
+  "totalMarks": 25,
+  "difficulty": "मध्यम ते काठिण्य",
+  "questions": [
+    {
+      "id": 1,
+      "question": {
+        "mr": "भारतात आर्थिक नियोजनाची (Economic Planning) पायाभरणी करण्यासाठी १९३८ मध्ये 'राष्ट्रीय नियोजन समितीची' (National Planning Committee) स्थापना कोणाच्या अध्यक्षतेखाली करण्यात आली होती?",
+        "en": "Under whose chairmanship was the 'National Planning Committee' established in 1938 to lay the groundwork for economic planning in India?"
+      },
+      "options": [
+        { "mr": "पंडित जवाहरलाल नेहरू (Jawaharlal Nehru)", "en": "Jawaharlal Nehru" },
+        { "mr": "सुभाषचंद्र बोस", "en": "Subhas Chandra Bose" },
+        { "mr": "एम. विश्वेश्वरय्या", "en": "M. Visvesvaraya" },
+        { "mr": "महलनोबिस", "en": "P.C. Mahalanobis" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९३८): हरिपुरा काँग्रेस अधिवेशनाचे अध्यक्ष सुभाषचंद्र बोस यांच्या инициаटिव्हवरून आणि काँग्रेसचे नेते पंडित जवाहरलाल नेहरू यांच्या अध्यक्षतेखाली १९३८ मध्ये 'राष्ट्रीय नियोजन समितीची' स्थापना केली गेली.\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग / किरण दाते]",
+        "en": "(1938): At the initiative of Subhas Chandra Bose, the National Planning Committee was set up in 1938 under the chairmanship of Jawaharlal Nehru to chart out a planned economic framework.\n\n"
+      }
+    },
+    {
+      "id": 2,
+      "question": {
+        "mr": "भारतात उद्योगपती आणि तज्ज्ञांनी मिळून १९४४ मध्ये तयार केलेल्या प्रसिद्ध 'बॉम्बे प्लॅन' (Bombay Plan) मध्ये किती वर्षांच्या आर्थिक विकासाचा आराखडा मांडला होता?",
+        "en": "How many years of economic development were envisioned in the famous 'Bombay Plan' drafted by Indian industrialists in 1944?"
+      },
+      "options": [
+        { "mr": "१५ वर्षे (15-year economic development plan)", "en": "15 years" },
+        { "mr": "१० वर्षे", "en": "10 years" },
+        { "mr": "५ वर्षे", "en": "5 years" },
+        { "mr": "२० वर्षे", "en": "20 years" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९४४): भारतातील ८ आघाडीच्या उद्योगपतींनी (जसे की जे. आर. डी. टाटा, जी. डी. बिर्ला इ.) मिळून १९४४ मध्ये 'अ प्लॅन ऑफ इकॉनॉमिक डेव्हलपमेंट फॉर इंडिया' (बॉम्बे प्लॅन) जाहीर केला, ज्यामध्ये १५ वर्षांत देशाचे राष्ट्रीय उत्पन्न दुप्पट करण्याचे उद्दिष्ट ठेवले होते.\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग]",
+        "en": "(1944): Eight leading industrialists drafted the 'Bombay Plan' in 1944, proposing a 15-year blueprint to double India's per capita income and triple national output.\n\n"
+      }
+    },
+    {
+      "id": 3,
+      "question": {
+        "mr": "भारतात 'नियोजन आयोगाची' (Planning Commission) स्थापना कधी झाली होती आणि त्याचे पहिले अध्यक्ष कोण होते?",
+        "en": "When was the Planning Commission of India established, and who served as its first Chairman?"
+      },
+      "options": [
+        { "mr": "स्थापना: १५ मार्च १९५०, अध्यक्ष: पंडित जवाहरलाल नेहरू", "en": "Established: March 15, 1950; Chairman: Jawaharlal Nehru" },
+        { "mr": "स्थापना: २६ जानेवारी १९५०, अध्यक्ष: डाॅ. राजेंद्र प्रसाद", "en": "Established: Jan 26, 1950; Chairman: Dr. Rajendra Prasad" },
+        { "mr": "स्थापना: १ जानेवारी १९५१, अध्यक्ष: सी. डी. देशमुख", "en": "Established: Jan 1, 1951; Chairman: C.D. Deshmukh" },
+        { "mr": "स्थापना: १५ ऑगस्ट १९४७, अध्यक्ष: सरदार वल्लभभाई पटेल", "en": "Established: Aug 15, 1947; Chairman: Sardar Patel" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९५०): केंद्रीय मंत्रिमंडळाच्या एका ठरावानुसार १५ मार्च १९५० रोजी 'नियोजन आयोगाची' स्थापना झाली. देशाचे पंतप्रधान हे नेहमीच या आयोगाचे पदसिद्ध अध्यक्ष असत, त्यामुळे पहिले अध्यक्ष पंडित नेहरू होते.\n\n[संदर्भ: भारतीय राजव्यवस्था व अर्थव्यवस्था - एम. लक्ष्मीकांत / रमेश सिंग]",
+        "en": "(1950): The Planning Commission was set up by a cabinet resolution on March 15, 1950, with the Prime Minister (Jawaharlal Nehru) acting as its ex-officio Chairman.\n\n"
+      }
+    },
+    {
+      "id": 4,
+      "question": {
+        "mr": "भारताच्या पहिल्या पंचवार्षिक योजनेचा (First Five-Year Plan - 1951-56) मुख्य भर कशावर होता?",
+        "en": "What was the primary focus of India's First Five-Year Plan (1951-1956)?"
+      },
+      "options": [
+        { "mr": "कृषी, सिंचन आणि ऊर्जा क्षेत्र (Agriculture, irrigation, and power)", "en": "Agriculture, irrigation, and power" },
+        { "mr": "जड व मूलभूत उद्योग", "en": "Heavy and basic industries" },
+        { "mr": "गरिबी हटाव आणि रोजगार", "en": "Poverty eradication and employment" },
+        { "mr": "संरक्षण आधुनिकीकरण", "en": "Defense modernization" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९५१-५६): पहिली पंचवार्षिक योजना 'हॅरोड-डोमर मॉडेलवर' (Harrod-Domar Model) आधारित होती. देशात अन्नाची कमतरता व अन्नसुरक्षेचा प्रश्न असल्याने यात प्रामुख्याने 'कृषी, सिंचन आणि ऊर्जा' क्षेत्राला सर्वोच्च प्राधान्य दिले गेले.\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग / किरण दाते]",
+        "en": "(1951-56): Based on the Harrod-Domar model, the First Plan prioritized agricultural development, irrigation projects, and power generation to overcome post-partition food shortages.\n\n"
+      }
+    },
+    {
+      "id": 5,
+      "question": {
+        "mr": "भारताच्या दुसऱ्या पंचवार्षिक योजनेचे (Second Five-Year Plan - 1956-61) अर्थतज्ज्ञ आराखड्याचे शिल्पकार कोण होते आणि कशाला प्राधान्य दिले गेले?",
+        "en": "Who was the chief architect of India's Second Five-Year Plan (1956-1961), and what did it prioritize?"
+      },
+      "options": [
+        { "mr": "प्रशांतचंद्र महालनोबिस (P.C. Mahalanobis); जड व मूलभूत उद्योग (Heavy Industries)", "en": "P.C. Mahalanobis; Heavy and basic industries" },
+        { "mr": "जे. सी. कुमारप्पा; ग्रामोद्योग", "en": "J.C. Kumarappa; Village industries" },
+        { "mr": "के. एन. राज; कृषी विकास", "en": "K.N. Raj; Agricultural growth" },
+        { "mr": "अमर्त्य सेन; मानवी विकास", "en": "Amartya Sen; Human development" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९५६-६१): दुसरी योजना 'महालनोबिस मॉडेलवर' (Mahalanobis Model) आधारित होती, जिने देशाच्या जलद औद्योगिक विकासासाठी 'जड व मूलभूत उद्योगांच्या' (Heavy Industries) निर्मितीवर भर दिला.\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग]",
+        "en": "(1956-61): Framed around the Mahalanobis model, the Second Plan prioritized rapid industrialization with a special focus on heavy and capital-goods industries.\n\n"
+      }
+    },
+    {
+      "id": 6,
+      "question": {
+        "mr": "दुसऱ्या पंचवार्षिक योजनेच्या काळात (१९५६-६१) स्थापन झालेले प्रसिद्ध पोलाद प्रकल्प (Steel Plants) कोणते आहेत?",
+        "en": "Which major public sector steel plants were established during India's Second Five-Year Plan?"
+      },
+      "options": [
+        { "mr": "भिलाई (छत्तीसगड), राउरकेला (ओडिशा) आणि दुर्गापूर (पश्चिम बंगाल)", "en": "Bhilai, Rourkela, and Durgapur" },
+        { "mr": "बोकारो, विशाखापट्टणम आणि सालेम", "en": "Bokaro, Vizag, and Salem" },
+        { "mr": "टाटा स्टील (जमशेदपूर) आणि IISCO", "en": "Tata Steel and IISCO" },
+        { "mr": "भद्रावती आणि विजयनगर", "en": "Bhadravati and Vijayanagar" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९५६-६१): दुसऱ्या योजनेत रशियाच्या सहकार्याने 'भिलाई', जर्मनीच्या सहकार्याने 'राउरकेला' आणि ब्रिटनच्या सहकार्याने 'दुर्गापूर' हे तीन मोठे पोलाद प्रकल्प उभारले गेले.\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग / डॉ. गाठाळ]",
+        "en": "(1956-61): Three major steel plants were set up with foreign collaboration: Bhilai (Soviet Union), Rourkela (West Germany), and Durgapur (Britain).\n\n"
+      }
+    },
+    {
+      "id": 7,
+      "question": {
+        "mr": "भारताच्या तिसऱ्या पंचवार्षिक योजनेचे (Third Five-Year Plan - 1961-66) उद्दिष्ट काय होते आणि ती अपयशी का ठरली?",
+        "en": "What were the twin objectives of India's Third Five-Year Plan (1961-1966), and why did it fall short of targets?"
+      },
+      "options": [
+        { "mr": "स्वावलंबन आणि कृषी विकास; चीनचे युद्ध (१९६२), पाकिस्तानचे युद्ध (१९६५) आणि भीषण दुष्काळ यामुळे अपयशी", "en": "Self-reliance and agricultural growth; derailed by the 1962 China war, 1965 Pak war, and severe droughts" },
+        { "mr": "फक्त दारिद्र्य निर्मूलन; जागतिक मंदीमुळे अपयशी", "en": "Poverty removal alone; failed due to global recession" },
+        { "mr": "आयटी क्रांती; तंत्रज्ञानाच्या अभावामुळे अपयशी", "en": "IT revolution; failed due to lack of tech" },
+        { "mr": "परदेशी व्यापार; निर्यात घटल्याने अपयशी", "en": "Foreign trade; failed due to export drops" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९६१-६६): तिसऱ्या योजनेने अर्थव्यवस्थेला 'स्वावलंबी' बनवण्याचे ध्येय ठेवले होते. परंतु १९६२ चे भारत-चीन युद्ध, १९६५ चे भारत-पाक युद्ध आणि १९६५-६६ चा ऐतिहासिक दुष्काळ यामुळे ही योजना सर्वाधिक अपयशी ठरली.\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग]",
+        "en": "(1961-66): Aiming for a self-reliant economy, the Third Plan suffered severe setbacks due to the 1962 Sino-Indian war, the 1965 Indo-Pak war, and successive severe droughts.\n\n"
+      }
+    },
+    {
+      "id": 8,
+      "question": {
+        "mr": "तिसऱ्या पंचवार्षिक योजनेच्या अपयशामुळे भारतात सलग तीन वर्षे (१९६६ ते १९६९) कोणती योजना राबवली गेली, जिला 'नियोजन सुट्टी' (Plan Holiday) म्हटले जाते?",
+        "en": "Due to the failure of the Third Plan, what interim economic strategy was implemented in India from 1966 to 1969, known as 'Plan Holiday'?"
+      },
+      "options": [
+        { "mr": "वार्षिक योजना (Annual Plans - तीन वार्षिक योजना)", "en": "Three successive Annual Plans" },
+        { "mr": "केंद्रीकृत समाजवादी योजना", "en": "Centralized socialist command plans" },
+        { "mr": "गांधीवादी ग्रामविकास योजना", "en": "Gandhian rural development plans" },
+        { "mr": "पूर्णतः मुक्त बाजारपेठ धोरण", "en": "Complete market deregulation" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९६६-१९६९): तिसऱ्या योजनेच्या अपयशामुळे आणि आर्थिक अस्थिरतेमुळे पंचवार्षिक योजना राबवणे शक्य नव्हते, म्हणून १९६६ ते १९६९ या काळात तीन 'वार्षिक योजना' (Annual Plans) राबवल्या गेल्या, ज्यास 'प्लॅन हॉलिडे' म्हटले जाते.\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग]",
+        "en": "(1966-1969): The severe resource crunch and economic distress led to a 'Plan Holiday' during which three separate Annual Plans were executed (1966–69).\n\n"
+      }
+    },
+    {
+      "id": 9,
+      "question": {
+        "mr": "भारताच्या चौथ्या पंचवार्षिक योजनेत (Fourth Five-Year Plan - 1969-74) कोणते दोन प्रमुख नारे वा मुख्य उद्दिष्टे समाविष्ट होती?",
+        "en": "What were the two core objectives introduced in India's Fourth Five-Year Plan (1969-1974)?"
+      },
+      "options": [
+        { "mr": "आर्थिक स्थैर्य (Growth with stability) आणि आत्म-स्वावलंबन (Progressive achievement of self-reliance)", "en": "Growth with stability and progressive achievement of self-reliance" },
+        { "mr": "गरिबी हटाव आणि संपूर्ण साक्षरता", "en": "Poverty removal and total literacy" },
+        { "mr": "डिजिटल इंडिया आणि मेक इन इंडिया", "en": "Digital India and Make in India" },
+        { "mr": "खाजगीकरण आणि जागतिकीकरण", "en": "Privatization and globalization" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९६९-७४): चौथी योजना अशोक रुद्र आणि अलन माने यांच्या आराखड्यावर आधारित होती, जिचे मुख्य सूत्र 'स्थैर्याशी विकास' आणि 'स्वावलंबन' हे होते. याच काळात इंदिरा गांधींनी 'गरीबी हटाव'चा नारा दिला.\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग]",
+        "en": "(1969-74): The Fourth Plan focused heavily on 'growth with stability' and self-reliance, while also coinciding with the political slogan of 'Garibi Hatao'.\n\n"
+      }
+    },
+    {
+      "id": 10,
+      "question": {
+        "mr": "पाचव्या पंचवार्षिक योजनेचा (Fifth Five-Year Plan - 1974-79) काळ कोणता होता आणि तिचे सर्वात प्रसिद्ध उद्दिष्ट कोणते होते?",
+        "en": "What was the duration and most famous socio-economic slogan of India's Fifth Five-Year Plan (1974-1979)?"
+      },
+      "options": [
+        { "mr": "काळ: १९७४-१९७८ (एक वर्ष आधीच समाप्त), उद्दिष्ट: 'गरीबी हटाव' (Removal of Poverty) आणि आत्म-स्वावलंबन", "en": "Duration: 1974-1978 (terminated one year early); Goal: Removal of Poverty (Garibi Hatao) and Self-reliance" },
+        { "mr": "काळ: १९७४-१९७९, उद्दिष्ट: औद्योगिकीकरण", "en": "Duration: 1974-1979; Goal: Industrialization" },
+        { "mr": "काळ: १९७६-१९८१, उद्दिष्ट: डिजिटल विकास", "en": "Duration: 1976-1981; Goal: Digital growth" },
+        { "mr": "काळ: १९७२-१९७७, उद्दिष्ट: कृषी क्रांती", "en": "Duration: 1972-1977; Goal: Agricultural revolution" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९७४-७८): पाचव्या योजनेचा मसुदा डी. पी. धर यांनी तयार केला होता. 'गरीबी हटाव' व आत्म-स्वावलंबन हे हिचे ध्येय होते. मोरारजी देसाई यांच्या जनता पक्षाच्या सरकारने १९७८ मध्ये ही योजना एक वर्ष आधीच संपुष्टात आणली आणि 'रोलिंग प्लॅन' आणला.\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग]",
+        "en": "(1974-78): The Fifth Plan emphasized poverty alleviation ('Garibi Hatao') and self-reliance. It was terminated one year ahead of schedule in 1978 by the newly elected Janata Party government.\n\n"
+      }
+    },
+    {
+      "id": 11,
+      "question": {
+        "mr": "जनता पक्षाच्या सरकारने १९७८-८३ या कालावधीसाठी कोणती नवीन अल्पकालीन नियोजन पद्धत सुरू केली होती, जी पुढच्याच सरकारने रद्द केली?",
+        "en": "What short-term planning mechanism was introduced by the Janata Party government for 1978-1983, later abandoned by Indira Gandhi's government?"
+      },
+      "options": [
+        { "mr": "रोलिंग प्लॅन (Rolling Plan - गुन्नार मिर्डल यांच्या विचारांवर आधारित)", "en": "Rolling Plan (based on Gunnar Myrdal's framework)" },
+        { "mr": "विकेंद्रित पंचवार्षिक प्लॅन", "en": "Decentralized Five-Year Plan" },
+        { "mr": "खुली बाजारपेठ योजना", "en": "Open market strategy" },
+        { "mr": "युद्धकालीन नियोजन", "en": "Wartime command plan" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९७८): जनता सरकारने पाचवी योजना रद्द करून 'रोलिंग प्लॅन' (Rolling Plan) सुरू केला, ज्यामध्ये दरवर्षी अर्थव्यवस्थेच्या कामगिरीनुसार योजनांच्या लक्ष्यात बदल केला जात असे. पुढे १९८० मध्ये काँग्रेसने सत्तासूत्रे हाती घेतल्यावर ती रद्द केली.\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग]",
+        "en": "(1978): The Janata Party government introduced the 'Rolling Plan' concept, which evaluated performance annually and adjusted targets, but it was scrapped when Indira Gandhi returned to power in 1980.\n\n"
+      }
+    },
+    {
+      "id": 12,
+      "question": {
+        "mr": "सहाव्या पंचवार्षिक योजनेच्या काळात (Sixth Five-Year Plan - 1980-85) कोणत्या महत्त्वाच्या आर्थिक संकल्पनेची किंवा मॉडेलची सुरुवात झाली?",
+        "en": "Which major economic concept or structural shift was formally inaugurated during India's Sixth Five-Year Plan (1980-1985)?"
+      },
+      "options": [
+        { "mr": "आर्थिक उदारीकरणाची सुरुवात (Beginning of Economic Liberalization / removal of price controls)", "en": "Beginning of Economic Liberalization and dismantling of controls" },
+        { "mr": "पूर्णतः खाजगीकरण व एलपीजी धोरण", "en": "Complete LPG policy implementation" },
+        { "mr": "नियोजन आयोगाचे विसर्जन", "en": "Abolition of Planning Commission" },
+        { "mr": "हरित क्रांतीची सुरुवात", "en": "Launch of Green Revolution" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९८०-८५): सहाव्या योजनेने दारिद्र्य निर्मूलन आणि रोजगार निर्मितीवर भर दिला, तसेच याच काळात राजीव गांधी व इंदिरा गांधी यांच्या काळात किंमत नियंत्रणे शिथिल करत 'आर्थिक उदारीकरणाची' (Economic Liberalization) बीजं रोवली गेली.\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग]",
+        "en": "(1980-85): The Sixth Plan focused on poverty eradication and technological self-reliance, while also initiating early steps toward economic liberalization and price decontrol.\n\n"
+      }
+    },
+    {
+      "id": 13,
+      "question": {
+        "mr": "सातव्या पंचवार्षिक योजनेत (Seventh Five-Year Plan - 1985-90) कोणत्या घटकाला सर्वोच्च प्राधान्य दिले गेले होते?",
+        "en": "What was the core thematic priority of India's Seventh Five-Year Plan (1985-1990)?"
+      },
+      "options": [
+        { "mr": "अन्न, रोजगार आणि उत्पादकता (Food, Work, and Productivity)", "en": "Food, Work, and Productivity" },
+        { "mr": "जड उद्योग व पायाभूत सुविधा", "en": "Heavy industries and infrastructure" },
+        { "mr": "माहिती तंत्रज्ञान आणि सेवा क्षेत्र", "en": "IT and service sector" },
+        { "mr": "परदेशी गुंतवणूक व निर्यात", "en": "Foreign direct investment" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९८५-९०): सातव्या योजनेचे मुख्य सूत्र 'अन्न, रोजगार आणि उत्पादकता' (Food, Work and Productivity) हे होते. यात खाजगी क्षेत्राला अधिक वाव देण्यात आला आणि उत्पादकता वाढवण्यावर भर दिला गेला.\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग]",
+        "en": "(1985-90): The Seventh Plan emphasized 'Food, Work, and Productivity', laying strong stress on improving technological efficiency, social justice, and employment generation.\n\n"
+      }
+    },
+    {
+      "id": 14,
+      "question": {
+        "mr": "१९९० ते १९९२ या काळात भारतात पंचवार्षिक योजना का राबवली गेली नाही आणि त्या बदल्यात काय राबवले गेले?",
+        "en": "Why were Five-Year Plans interrupted between 1990 and 1992, and what was implemented instead during this political-economic crisis?"
+      },
+      "options": [
+        { "mr": "गंभीर आर्थिक संकट आणि परकीय चलनाची टंचाई; दोन वार्षिक योजना (Annual Plans 1990-92) राबवल्या गेल्या", "en": "Severe balance of payments crisis and political instability; two Annual Plans (1990-92) were executed" },
+        { "mr": "नियोजन आयोगाची पुनर्रचना", "en": "Complete restructuring of Planning Commission" },
+        { "mr": "देशात आणीबाणी लागू करणे", "en": "Imposition of national emergency" },
+        { "mr": "योजना पूर्णतः बंद करणे", "en": "Permanent discontinuation of planning" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९९०-९२): १९९०-९२ च्या काळात तीव्र आर्थिक अस्थिरता, राजकीय उलथापालथ आणि १९९१ चे भयंकर 'परकीय चलनाचे संकट' (BOP Crisis) यामुळे पंचवार्षिक योजना लांबणीवर पडली आणि १९९०-९१ व १९९१-९२ अशा दोन 'वार्षिक योजना' राबवल्या गेल्या.\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग]",
+        "en": "(1990-92): Due to severe political instability and the unprecedented 1991 Balance of Payments crisis, regular five-year planning was paused, and two Annual Plans were implemented.\n\n"
+      }
+    },
+    {
+      "id": 15,
+      "question": {
+        "mr": "भारतात ऐतिहासिक 'एलपीजी (LPG) धोरण' (उदारीकरण, खाजगीकरण, जागतिकीकरण) कोणत्या पंचवार्षिक योजनेच्या काळात अधिकृतपणे स्वीकारले गेले?",
+        "en": "During which Five-Year Plan was India's historic LPG (Liberalization, Privatization, Globalization) policy officially ushered in?"
+      },
+      "options": [
+        { "mr": "आठवी पंचवार्षिक योजना (Eighth Five-Year Plan - 1992-97)", "en": "Eighth Five-Year Plan (1992-1997)" },
+        { "mr": "सातवी योजना", "en": "Seventh Plan" },
+        { "mr": "नववी योजना", "en": "Ninth Plan" },
+        { "mr": "सहावी योजना", "en": "Sixth Plan" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९९२-९७): पंतप्रधान नरसिंह राव आणि अर्थमंत्री डॉ. मनमोहन सिंह यांनी १९९१ मधील उदारीकरणाच्या धोरणानंतर आठव्या योजनेची (१९९२-९७) सुरुवात केली. या योजनेने मानवी विकास आणि बाजारपेठ अर्थव्यवस्थेला मुख्य प्रवाहात आणले.\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग]",
+        "en": "(1992-97): The Eighth Plan (1992-97) marked the official post-reform era, incorporating the newly launched LPG (Liberalization, Privatization, Globalization) reforms into national planning.\n\n"
+      }
+    },
+    {
+      "id": 16,
+      "question": {
+        "mr": "भारताच्या नवव्या पंचवार्षिक योजनेत (Ninth Five-Year Plan - 1997-2002) कोणत्या मुख्य संकल्पनेवर भर दिला गेला होता?",
+        "en": "What was the central thematic focus of India's Ninth Five-Year Plan (1997-2002)?"
+      },
+      "options": [
+        { "mr": "न्यायपूर्ण वितरण आणि सामाजिक समभावासह आर्थिक विकास (Growth with social justice and equity)", "en": "Growth with social justice and equity" },
+        { "mr": "केवळ औद्योगिक उत्पादन वाढवणे", "en": "Solely boosting industrial output" },
+        { "mr": "संरक्षण आधुनिकीकरण", "en": "Defense modernization" },
+        { "mr": "शहरीकरण आणि पायाभूत सुविधा", "en": "Urbanization and real estate" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९९७-२००२): नववी योजना भारताच्या स्वातंत्र्याच्या सुवर्णमहोत्सवी वर्षानंतर सुरू झाली. हिचे मुख्य उद्दिष्ट 'सामाजिक न्याय आणि समभावासह आर्थिक विकास' हे होते.\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग]",
+        "en": "(1997-2002): The Ninth Plan coincided with India's 50th year of independence, prioritizing 'growth with social justice and equity' alongside macro-economic stability.\n\n"
+      }
+    },
+    {
+      "id": 17,
+      "question": {
+        "mr": "दहाव्या पंचवार्षिक योजनेत (Tenth Five-Year Plan - 2002-2007) देशाच्या विकासाचा वेग वाढवण्यासोबत कोणत्या सामाजिक निर्देशकांवर (Social Targets) विशेष लक्ष केंद्रित केले गेले?",
+        "en": "In addition to GDP growth targets, what major social development indicators were prioritized in the Tenth Five-Year Plan (2002-2007)?"
+      },
+      "options": [
+        { "mr": "साक्षरता दर वाढवणे, बालमृत्यू व मातामृत्यू प्रमाण कमी करणे आणि गरिबी कमी करणे", "en": "Raising literacy rates, reducing infant/maternal mortality, and cutting poverty" },
+        { "mr": "प्रत्येक शहरात मेट्रो रेल्वे सुरू करणे", "en": "Building metros in every city" },
+        { "mr": "फक्त आयटी उद्योगाला सवलती देणे", "en": "Subsidizing IT sector exclusively" },
+        { "mr": "शस्त्रसाठा वाढवणे", "en": "Increasing armaments" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(२००२-२००७): दहाव्या योजनेने जीडीपी वाढीच्या लक्षyasोबतच साक्षरता, गरिबीचे प्रमाण, बालमृत्यू दर (IMR) आणि मातामृत्यू दर (MMR) कमी करण्यासारख्या मानवी व सामाजिक विकासाच्या मुद्द्यांवर भर दिला.\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग]",
+        "en": "(2002-2007): The Tenth Plan laid down specific monitorable targets for socio-economic indicators like poverty reduction, literacy enhancement, and reduction of IMR and MMR.\n\n"
+      }
+    },
+    {
+      "id": 18,
+      "question": {
+        "mr": "अकरावी पंचवार्षिक योजना (Eleventh Five-Year Plan - 2007-2012) कोणत्या प्रसिद्ध आणि व्यापक उद्दिष्टावर आधारित होती?",
+        "en": "What was the overarching catchphrase and socio-economic objective of India's Eleventh Five-Year Plan (2007-2012)?"
+      },
+      "options": [
+        { "mr": "जलद आणि अधिक सर्वसमावेशक विकास (Faster and More Inclusive Growth)", "en": "Faster and More Inclusive Growth" },
+        { "mr": "केवळ जलद औद्योगिकीकरण", "en": "Only rapid industrialization" },
+        { "mr": "शहरीकरणाचा प्रसार", "en": "Spread of urbanization" },
+        { "mr": "ग्रामीण भागाचे पूर्णतः आधुनिकीकरण", "en": "Complete rural modernization" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(२००७-२०१२): अकरावी योजना 'जलद आणि अधिक सर्वसमावेशक विकास' (Faster and More Inclusive Growth) या ध्येयावर आधारित होती, जिचा उद्देश आर्थिकवाढीचा लाभ समाजातील शेवटच्या घटकापर्यंत पोहोचवणे हा होता.\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग]",
+        "en": "(2007-2012): The Eleventh Plan pioneered the strategic vision of 'Faster and More Inclusive Growth', ensuring that the fruits of economic expansion reached marginalized sections.\n\n"
+      }
+    },
+    {
+      "id": 19,
+      "question": {
+        "mr": "भारताची शेवटची म्हणजेच 'बारावी पंचवार्षिक योजना' (Twelfth Five-Year Plan) कोणत्या कालावधीसाठी राबवली गेली आणि तिचे सूत्र काय होते?",
+        "en": "What was the duration and core theme of India's final, twelfth Five-Year Plan?"
+      },
+      "options": [
+        { "mr": "काळ: २०१२-२०१७, सूत्र: 'जलद, अधिक सर्वसमावेशक आणि शाश्वत विकास' (Faster, More Inclusive and Sustainable Growth)", "en": "Duration: 2012-2017; Theme: 'Faster, More Inclusive and Sustainable Growth'" },
+        { "mr": "काळ: २०१५-२०२०, सूत्र: डिजिटल इंडिया", "en": "Duration: 2015-2020; Theme: Digital India" },
+        { "mr": "काळ: २०१०-२०१५, सूत्र: ग्रामविकास", "en": "Duration: 2010-2015; Theme: Rural development" },
+        { "mr": "काळ: २०१२-२०२२, सूत्र: आत्मनिर्भर भारत", "en": "Duration: 2012-2022; Theme: Atmanirbhar Bharat" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(२०१२-२०१७): बारावी योजना ही भारताची अखेरची पंचवार्षिक योजना ठरली, जिचे मुख्य सूत्र 'जलद, अधिक सर्वसमावेशक आणि शाश्वत विकास' हे होते. त्यानंतर नियोजन आयोगाची जागा 'नीती आयोगाने' घेतली.\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग / किरण दाते]",
+        "en": "(2012-2017): The Twelfth Plan was India's final five-year plan, built around the core theme of 'Faster, More Inclusive and Sustainable Growth' before planning transitioned to NITI Aayog.\n\n"
+      }
+    },
+    {
+      "id": 20,
+      "question": {
+        "mr": "भारतातील जुन्या 'नियोजन आयोगाची' (Planning Commission) जागा घेत १ जानेवारी २०१५ रोजी कोणत्या नवीन थिंक टँकची (Think Tank) स्थापना केली गेली?",
+        "en": "Which new policy think-tank replaced the Planning Commission on January 1, 2015?"
+      },
+      "options": [
+        { "mr": "नीती आयोग (NITI Aayog - National Institution for Transforming India)", "en": "NITI Aayog" },
+        { "mr": "राष्ट्रीय विकास परिषद", "en": "National Development Council" },
+        { "mr": "आर्थिक सल्लागार मंडळ", "en": "Economic Advisory Board" },
+        { "mr": "विकास व धोरण आयोग", "en": "Development and Policy Commission" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(२०१५): १ जानेवारी २०१५ रोजी ६५ वर्षे जुन्या नियोजन आयोगाचे विसर्जन करून 'नीती आयोग' (NITI Aayog) ची स्थापना केली गेली, ज्यामध्ये राज्यांच्या सहभागाला (Cooperative Federalism) प्राधान्य दिले गेले.\n\n[संदर्भ: भारतीय राजव्यवस्था - एम. लक्ष्मीकांत]",
+        "en": "(2015): The Planning Commission was dissolved and replaced by NITI Aayog (National Institution for Transforming India) on January 1, 2015, championing cooperative federalism.\n\n"
+      }
+    },
+    {
+      "id": 21,
+      "question": {
+        "mr": "नियोजन काळातील महत्त्वाच्या 'राष्ट्रीय विकास परिषदेची' (National Development Council - NDC) स्थापना कधी झाली होती?",
+        "en": "When was the 'National Development Council' (NDC) established to oversee and approve national plans?"
+      },
+      "options": [
+        { "mr": "६ ऑगस्ट १९५२ (August 6, 1952)", "en": "August 6, 1952" },
+        { "mr": "१५ मार्च १९५०", "en": "March 15, 1950" },
+        { "mr": "२६ जानेवारी १९५०", "en": "January 26, 1950" },
+        { "mr": "१ जानेवारी १९५६", "en": "January 1, 1956" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९५२): नियोजन आयोगाने तयार केलेल्या पंचवार्षिक योजनांना अंतिम मंजुरी देण्यासाठी आणि केंद्र व राज्यांमध्ये समन्वय साधण्यासाठी ६ ऑगस्ट १९५२ रोजी 'राष्ट्रीय विकास परिषदेची' (NDC) स्थापना केली गेली.\n\n[संदर्भ: भारतीय राजव्यवस्था - एम. लक्ष्मीकांत]",
+        "en": "(1952): The National Development Council (NDC) was established on August 6, 1952, as an apex body to review and approve five-year plans and ensure state cooperation.\n\n"
+      }
+    },
+    {
+      "id": 22,
+      "question": {
+        "mr": "भारतीय अर्थव्यवस्थेच्या संदर्भात 'मिश्र अर्थव्यवस्था' (Mixed Economy) या संकल्पनेचा अर्थ काय होतो?",
+        "en": "What is the core structural meaning of a 'Mixed Economy' in the context of India's economic development?"
+      },
+      "options": [
+        { "mr": "सार्वजनिक क्षेत्र (Public Sector) आणि खाजगी क्षेत्र (Private Sector) यांनी सहअस्तित्वात राहून एकत्र काम करणे", "en": "Coexistence and interplay of both public and private sectors in economic activity" },
+        { "mr": "फक्त खाजगी कंपन्यांचे वर्चस्व असणे", "en": "Absolute dominance of private corporations" },
+        { "mr": "फक्त सरकारी मालकीची उद्योगधंदे असणे", "en": "Exclusive state ownership of all enterprises" },
+        { "mr": "परदेशी व्यापारावर पूर्ण बंदी असणे", "en": "Complete ban on foreign trade" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(स्वातंत्र्योत्तर काळ): भारताने स्वातंत्र्यनंतर समाजवाद व भांडवलशाही या दोन्हीचा सुवर्णमध्य साधत 'मिश्र अर्थव्यवस्थेचा' (Mixed Economy) स्वीकार केला, जिथे सरकार आणि खाजगी उद्योग दोघेही आर्थिक घडामोडीत सहभाग घेतात.\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग]",
+        "en": "A mixed economy combines elements of both capitalism and socialism, where public and private enterprises operate side by side to drive economic growth.\n\n"
+      }
+    },
+    {
+      "id": 23,
+      "question": {
+        "mr": "भारतीय अर्थव्यवस्थेत १९९१ च्या उदारीकरणानंतर स्वीकारलेल्या 'एलपीजी (LPG) धोरणाचा' मुख्य उद्देश काय होता?",
+        "en": "What was the primary structural intent behind the 'LPG (Liberalization, Privatization, Globalization) policy' adopted in India in 1991?"
+      },
+      "options": [
+        { "mr": "भारतीय अर्थव्यवस्थेला जागतिक बाजारपेठेच्या प्रवाहात आणणे, परकीय गुंतवणूक आकर्षित करणे आणि परकीय चलनाचे संकट दूर करणे", "en": "To integrate India into the global market, attract foreign investments, and resolve the balance of payments crisis" },
+        { "mr": "देशातील सर्व खाजगी उद्योग जप्त करणे", "en": "To confiscate all private businesses" },
+        { "mr": "परदेशी व्यापारावर अवाजवी कर लादणे", "en": "To levy prohibitive tariffs on foreign trade" },
+        { "mr": "नियोजन आयोग अधिक शक्तिशाली करणे", "en": "To empower the Planning Commission further" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९९१): १९९१ मधील गंभीर आर्थिक संकटानंतर भारताने उदारीकरण, खाजगीकरण आणि जागतिकीकरणाचे (LPG) धोरण स्वीकारले, ज्यामुळे परदेशी थेट गुंतवणूक (FDI) वाढली आणि अर्थव्यवस्थेला नवी गती मिळाली.\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग]",
+        "en": "(1991): The 1991 structural reforms removed bureaucratic red tape, opened up sectors to private and foreign investment, and integrated India with the global economy.\n\n"
+      }
+    },
+    {
+      "id": 24,
+      "question": {
+        "mr": "आर्थिक विकासाच्या मोजमापासाठी वापरल्या जाणाऱ्या 'सकल राष्ट्रीय उत्पन्न' (Gross National Product - GNP) आणि 'सकल देशांतर्गत उत्पन्न' (GDP) मधील मुख्य फरक कोणता आहे?",
+        "en": "What is the fundamental economic difference between Gross Domestic Product (GDP) and Gross National Product (GNP)?"
+      },
+      "options": [
+        { "mr": "GNP मध्ये देशांतर्गत उत्पादनासह 'परदेशातून मिळणारे शुध्द उत्पन्न' (Net Factor Income from Abroad) जोडले जाते, तर GDP मध्ये फक्त देशाच्या भौगोलिक सीमेवरील उत्पादन मोजले जाते", "en": "GNP includes Net Factor Income from Abroad (NFIA) to GDP, whereas GDP measures output strictly within domestic geographic boundaries" },
+        { "mr": "GDP मध्ये कर मोजले जात नाहीत, तर GNP मध्ये मोजले जातात", "en": "GDP excludes taxes while GNP includes taxes" },
+        { "mr": "GNP ही फक्त कृषी उत्पन्नाची मोजणी करते", "en": "GNP measures only agricultural output" },
+        { "mr": "यात कोणताही फरक नाही, दोन्ही समान आहेत", "en": "There is no difference between them" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(अर्थशास्त्र): GDP हा देशाच्या भौगोलिक सीमांच्या आत तयार झालेला माल व सेवांचे मूल्य मोजतो, तर GNP मध्ये त्यात 'परदेशातील नागरिकांकडून भारतात पाठवलेली कमाई व भारतीय नागरिकांची परदेशातील कमाई' (NFIA) मिळवली जाते [GNP = GDP + NFIA].\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग]",
+        "en": "GDP measures economic output within a nation's borders, while GNP adds Net Factor Income from Abroad (NFIA) earned by citizens overseas.\n\n"
+      }
+    },
+    {
+      "id": 25,
+      "question": {
+        "mr": "भारतीय अर्थव्यवस्थेत 'समावेशक विकास' (Inclusive Growth) साध्य करण्यासाठी खालीलपैकी कोणत्या घटकावर भर देणे सर्वात गरजेचे मानले जाते?",
+        "en": "Which of the following factors is considered indispensable for achieving 'Inclusive Growth' in the Indian economy?"
+      },
+      "options": [
+        { "mr": "कृषी विकास, रोजगार निर्मिती, वित्तीय समावेशन (Financial Inclusion) आणि गरिबांपर्यंत शिक्षण व आरोग्याची पोहोच", "en": "Agricultural growth, employment generation, financial inclusion, and broad access to education and health" },
+        { "mr": "फक्त उच्च उत्पन्न गटातील उद्योगांना कर सवलती देणे", "en": "Providing tax breaks exclusively to high-income industries" },
+        { "mr": "केवळ शहरी भागात पायाभूत सुविधा केंद्रित करणे", "en": "Concentrating infrastructure exclusively in urban centers" },
+        { "mr": "सार्वजनिक खर्चात कपात करणे", "en": "Cutting all public welfare expenditures" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(निष्कर्ष): समावेशक विकासाचा अर्थ असा होतो की आर्थिक वाढीचा फायदा समाजातील सर्व स्तरांपर्यंत (विशेषतः गरीब, महिला, कृषी व मागास घटक) पोहोचला पाहिजे, ज्यासाठी वित्तीय समावेशन व पायाभूत सुविधा आवश्यक आहेत.\n\n[संदर्भ: भारतीय अर्थव्यवस्था - रमेश सिंग]",
+        "en": "(Conclusion): Inclusive growth requires expanding economic opportunities alongside ensuring that the benefits of growth are widely shared through employment, health, education, and financial inclusion.\n\n"
+      }
+    }
+  ]
+}

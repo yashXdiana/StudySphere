@@ -1,0 +1,464 @@
+{
+  "testId": "p-hist-04-t2",
+  "title": {
+    "mr": "सामाजिक व धार्मिक सुधारणा चळवळी — सराव 2",
+    "en": "Social and Religious Reform Movements — Practice Test 2"
+  },
+  "durationMinutes": 20,
+  "marksPerQuestion": 1,
+  "negativeMarking": 0.25,
+  "totalMarks": 25,
+  "difficulty": "मध्यम ते काठिण्य",
+  "questions": [
+    {
+      "id": 1,
+      "question": {
+        "mr": "राजा राममोहन रॉय यांनी १८१५ मध्ये आत्मिक व धार्मिक तत्त्वज्ञानाच्या प्रचारासाठी कलकत्ता येथे कोणती पहिली संस्था स्थापन केली होती?",
+        "en": "Which first society was founded by Raja Rammohan Roy in Calcutta in 1815 for the propagation of spiritual and religious philosophy?"
+      },
+      "options": [
+        { "mr": "आत्मीय सभा (Atmiya Sabha)", "en": "Atmiya Sabha" },
+        { "mr": "ब्राह्मो समाज", "en": "Brahmo Samaj" },
+        { "mr": "तत्वबोधिनी सभा", "en": "Tattvabodhini Sabha" },
+        { "mr": "प्रार्थना समाज", "en": "Prarthana Samaj" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१८१५): राजा राममोहन रॉय यांनी १८१५ मध्ये कोलकात्यात 'आत्मीय सभा' (Atmiya Sabha) स्थापन केली. या सभेच्या माध्यमातून त्यांनी एकेश्वरवादाचा प्रसार केला आणि सामाजिक व धार्मिक अनिष्ट रूढींवर प्रहार करण्यास सुरुवात केली, ज्याचे पुढे १८२८ मध्ये 'ब्राह्मो समाजात' रूपांतर झाले.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / डॉ. स. शि. गाठाळ]",
+        "en": "(1815): Raja Rammohan Roy founded the Atmiya Sabha in Calcutta in 1815 to propagate monotheistic ideals and initiate a crusade against social and religious orthodoxies, which later evolved into the Brahmo Samaj in 1828.\n\n"
+      }
+    },
+    {
+      "id": 2,
+      "question": {
+        "mr": "रामकृष्ण परमहंस यांच्या विचारांवर आधारित 'रामकृष्णा मिशन'ची स्थापना स्वामी विवेकानंदांनी कोणत्या वर्षी केली?",
+        "en": "In which year did Swami Vivekananda establish the 'Ramakrishna Mission' based on the teachings of Ramakrishna Paramahamsa?"
+      },
+      "options": [
+        { "mr": "१८८५", "en": "1885" },
+        { "mr": "१८९३", "en": "1893" },
+        { "mr": "१८९७ (1897)", "en": "1897" },
+        { "mr": "१९०२", "en": "1902" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "(१८९७): स्वामी विवेकानंदांनी १ मे १८९७ रोजी कलकत्त्याजवळ 'बेलूरमठ' येथे 'रामकृष्णा मिशन' ची स्थापना केली. या संस्थेचे मुख्य उद्दिष्ट मानवतावादी सेवा, दरिद्रनारायण सेवा आणि वेदांताचा प्रचार करणे हे होते.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1897): Swami Vivekananda established the Ramakrishna Mission on May 1, 1897, at Belur Math, focusing on spiritual enlightenment and social welfare services like healthcare and education.\n\n"
+      }
+    },
+    {
+      "id": 3,
+      "question": {
+        "mr": "योग्य जोड्या जुळवा (सुधारक आणि त्यांची मुखपत्रे / वृत्तपत्रे):\nगट अ: १) बाळशास्त्री जांभेकर, २) गोपाल हरी देशमुख (लोकहितवादी), ३) भाऊ महाजन, ४) दादोबा पांडुरंग\nगट ब: अ) प्रभाकर, ब) दर्पण, क) यशवन्तराव (किंवा धर्मविवेचन), ड) ज्ञानोदय",
+        "en": "Match the pairs (Reformers and their newspapers/journals):\nGroup A: 1) Balshastri Jambhekar, 2) Gopal Hari Deshmukh, 3) Bhau Mahajan, 4) Dadoba Pandurang\nGroup B: a) Prabhakar, b) Darpan, c) Dharmavivechan, d) Dnyanodaya"
+      },
+      "options": [
+        { "mr": "1-ब, 2-क, 3-अ, 4-ड", "en": "1-b, 2-c, 3-a, 4-d" },
+        { "mr": "1-अ, 2-ब, 3-क, 4-ड", "en": "1-a, 2-b, 3-c, 4-d" },
+        { "mr": "1-ब, 2-अ, 3-क, 4-ड", "en": "1-b, 2-a, 3-c, 4-d" },
+        { "mr": "1-ड, 2-क, 3-ब, 4-अ", "en": "1-d, 2-c, 3-b, 4-a" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९ वे शतक): बाळशास्त्री जांभेकर - दर्पण (पहिले मराठी वृत्तपत्र, १८३२), गोपाळ हरी देशमुख (लोकहितवादी) - प्रभाकरमधील शतपत्रे व धर्मविवेचन, भाऊ महाजन - प्रभाकर, दादोबा पांडुरंग - मानवधर्म सभा व धर्मविवेचन कार्य.\n\n[संदर्भ: समाधान महाजन / डॉ. स. शि. गाठाळ]",
+        "en": "(19th Century): Balshastri Jambhekar founded 'Darpan' (1832), Bhau Mahajan edited 'Prabhakar', and Gopal Hari Deshmukh contributed radical essays ('Shatpatre') urging social rationalism.\n\n"
+      }
+    },
+    {
+      "id": 4,
+      "question": {
+        "mr": "सत्यशोधक समाजाच्या माध्यमातून महात्मा ज्योतिराव फुले यांनी कोणता मुख्य विचार आणि कृती प्रस्थापित केली?",
+        "en": "What core philosophy and practice did Mahatma Jyotirao Phule establish through the Satyashodhak Samaj?"
+      },
+      "options": [
+        { "mr": "धार्मिक विधींसाठी ब्राह्मणांची अनिवार्यता मान्य करणे", "en": "Accepting Brahmin supremacy in rituals" },
+        { "mr": "पुरोहितांच्या मध्यस्थीशिवाय सत्यशोधक विवाह पद्धत आणि बहुजन शिक्षण", "en": "Satyshodhak marriage system without Brahmin priests and mass education" },
+        { "mr": "केवळ उच्चवर्णीय स्त्रियांच्या शिक्षणावर भर देणे", "en": "Focusing only on upper-caste women's education" },
+        { "mr": "परदेशी वस्तूंचा बहिष्कार", "en": "Boycott of foreign goods" }
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": {
+        "mr": "(१८७३ नंतर): महात्मा फुल्यांच्या सत्यशोधक समाजाने पुरोहितशाहीला आव्हान देत सत्यशोधक विवाह पद्धत (मंत्र व पुरोहितांशिवाय) सुरू केली आणि शूद्रातिशूद्रांच्या शैक्षणिक व सामाजिक विकासावर भर दिला.\n\n[संदर्भ: डॉ. स. शि. गाठाळ / समाधान महाजन]",
+        "en": "(Post-1873): The Satyashodhak Samaj pioneered marriages without Brahmin priests, championed the cause of lower-caste education, and fought against caste oppression.\n\n"
+      }
+    },
+    {
+      "id": 5,
+      "question": {
+        "mr": "स्वातंत्र्यपूर्व काळात महाराष्ट्रात 'मानवधर्म सभा' (Manav Dharma Sabha) ची स्थापना १८४४ मध्ये कोठे करण्यात आली होती?",
+        "en": "Where was the 'Manav Dharma Sabha' established in Maharashtra in 1844?"
+      },
+      "options": [
+        { "mr": "सुरत (Surat)", "en": "Surat" },
+        { "mr": "पुणे", "en": "Pune" },
+        { "mr": "मुंबई", "en": "Mumbai" },
+        { "mr": "नाशिक", "en": "Nashik" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१८४४): दादोबा पांडुरंग तरखडकर, दुर्गादास मेतावछ राज आणि इतर सुधारकांनी मिळून २२ जून १८४४ रोजी 'सुरत' येथे मानवधर्म सभेची स्थापना केली. या सभेने जातीभेद, अंधश्रद्धा आणि जुनाट धार्मिक आचारविचारांना कडाडून विरोध केला.\n\n[संदर्भ: समाधान महाजन]",
+        "en": "(1844): Dadoba Pandurang Tarkhadkar and other reformers founded the Manav Dharma Sabha in Surat on June 22, 1844, to preach universal brotherhood, reject caste barriers, and combat superstitions.\n\n"
+      }
+    },
+    {
+      "id": 6,
+      "question": {
+        "mr": "खालील विधाने विचारात घ्या:\nअ) बाळशास्त्री जांभेकर यांनी ६ जानेवारी १८४२ रोजी मुंबईत 'बॉम्बे नेटिव्ह एज्युकेशन सोसायटी' च्या सहकार्याने पहिले वृत्तपत्र सुरू केले.\nब) त्यांच्या स्मरणार्थ ६ जानेवारी हा दिवस महाराष्ट्रात 'पत्रकार दिन' म्हणून पाळला जातो.\nवरीलपैकी कोणते/ती विधान/ने बरोबर आहेत?",
+        "en": "Consider the following statements:\nA) Balshastri Jambhekar started the first Marathi newspaper on January 6, 1832 (Darpan).\nB) In his honor, January 6 is observed as 'Journalism Day' (Patrakar Din) in Maharashtra.\nWhich of the above statement(s) is/are correct?"
+      },
+      "options": [
+        { "mr": "फक्त अ", "en": "Only A" },
+        { "mr": "फक्त ब", "en": "Only B" },
+        { "mr": "अ आणि ब दोन्ही", "en": "Both A and B" },
+        { "mr": "दोन्ही नाहीत", "en": "Neither A nor B" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "(१८३२): दोन्ही विधाने बरोबर आहेत. बाळशास्त्री जांभेकर यांनी ६ जानेवारी १८३२ रोजी 'दर्पण' हे साप्ताहिक सुरू केले. त्यांच्या जन्मदिवसानिमित्त (६ जानेवारी) महाराष्ट्रात पत्रकार दिन साजरा केला जातो.\n\n[संदर्भ: डॉ. स. शि. गाठाळ / स्पेक्ट्रम]",
+        "en": "(1832): Both statements are correct. Balshastri Jambhekar launched 'Darpan' on January 6, 1832, and his birth anniversary is celebrated as Patrakar Din (Journalism Day) in Maharashtra.\n\n"
+      }
+    },
+    {
+      "id": 7,
+      "question": {
+        "mr": "गोपाळ गणेश आग्रकर यांनी आपल्या कोणत्या ग्रंथातून बुद्धीप्रामाण्यवाद (Rationalism) आणि नैतिकतेचा पुरस्कार केला होता?",
+        "en": "Through which book/essay collection did Gopal Ganesh Agarkar champion rationalism and morality?"
+      },
+      "options": [
+        { "mr": "डोंगरची वस्ती / विकारविलसित (Shakespeare translation) व सुधाराकीय लेख", "en": "Dongarchi Vastima, Vikarvilasit, and essays" },
+        { "mr": "गुलामगिरी", "en": "Gulamgiri" },
+        { "mr": "सत्यार्थ प्रकाश", "en": "Satyarth Prakash" },
+        { "mr": "शतपत्रे", "en": "Shatpatre" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९ वे शतक): आग्रकरांनी 'विकारविलसित' (हॅम्लेटचे मराठी रूपांतर) च्या प्रस्तावनेत आणि केसरी-सुधारक मधील लेखांमध्ये 'बुद्धी प्रामाण्यवाद' (जे पटत नाही ते ग्रंथात असले तरी मानू नका) चा पुरस्कार केला.\n\n[संदर्भ: समाधान महाजन]",
+        "en": "(19th Century): Agarkar's writings, including his preface to 'Vikarvilasit' and essays in Sudharak, firmly established uncompromised rationalism and utilitarian ethics in Maharashtra.\n\n"
+      }
+    },
+    {
+      "id": 8,
+      "question": {
+        "mr": "केरळमध्ये निम्न जातींच्या हक्कांसाठी आणि 'चन्नार विज्ञानातून' (Channar revolt / ब्लाउज घालण्याचा अधिकार) महिलांच्या अधिकारांसाठी लढा देणारे थोर समाजसुधारक कोण होते?",
+        "en": "Who championed the rights of lower castes and notably led the Channar revolt in Kerala for women's right to wear upper garments?"
+      },
+      "options": [
+        { "mr": "अय्यंकली (Ayyankali)", "en": "Ayyankali" },
+        { "mr": "श्री नारायण गुरु", "en": "Sree Narayana Guru" },
+        { "mr": "पेरियार", "en": "Periyar" },
+        { "mr": "कुन्हीरामन", "en": "Kunhiraman" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९ वे शतक): केरळमधील 'अय्यंकली' (Ayyankali) यांनी पुथ्येडम (Pulaya) समाजाच्या आणि दलितांच्या हक्कांसाठी तसेच महिलांना मानवी हक्क व वस्त्र परिधान करण्याचा अधिकार मिळवून देण्यासाठी मोठा लढा दिला.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(19th-20th Century): Ayyankali, a prominent social reformer from Kerala, led struggles for the Pulaya community, fighting against caste atrocities and securing basic human rights for lower-caste women.\n\n"
+      }
+    },
+    {
+      "id": 9,
+      "question": {
+        "mr": "आर्य समाजाच्या तत्त्वप्रणालीनुसार 'शुद्धि चळूक' (Shuddhi Movement) चा मुख्य उद्देश काय होता?",
+        "en": "What was the primary objective of the 'Shuddhi Movement' initiated by the Arya Samaj?"
+      },
+      "options": [
+        { "mr": "इतर धर्मांत गेलेल्या व्यक्तींना पुन्हा हिंदू धर्मात परत घेणे", "en": "Reconverting individuals who had converted to other religions back to Hinduism" },
+        { "mr": "पाश्चात्य संस्कृतीचा प्रसार करणे", "en": "Spreading Western culture" },
+        { "mr": "जातीव्यवस्था आणखी कडक करणे", "en": "Strengthening the caste system" },
+        { "mr": "राजकीय निवडणुका लढवणे", "en": "Contesting political elections" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९ वे शतक): स्वामी दयानंद सरस्वती आणि आर्य समाजाने ज्या व्यक्ती इतर धर्मांत (उदा. इस्लाम किंवा ख्रिश्चन) गेले होते, त्यांना शुद्धी विधी करून पुन्हा हिंदू धर्मात प्रवेश देणारी 'शुद्धी चळवळ' सुरू केली.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / डॉ. स. शि. गाठाळ]",
+        "en": "(Late 19th Century): The Shuddhi Movement was launched by the Arya Samaj to reconvert individuals who had earlier converted to Islam or Christianity back to the Hindu fold.\n\n"
+      }
+    },
+    {
+      "id": 10,
+      "question": {
+        "mr": "खालील विधाने विचारात घ्या:\nअ) ब्रह्म समाजाच्या विचारसरणीत नंतर फाट फूट पडून केशवचंद्र सेन यांनी 'भारतीय ब्राह्मो समाज' स्थापन केला.\nब) साधारण ब्राह्मो समाज (Sadharan Brahmo Samaj) ची स्थापना आनंदमोहन बोस यांनी केली.\nवरीलपैकी कोणते/ती विधान/ने बरोबर आहेत?",
+        "en": "Consider the following statements:\nA) Keshub Chandra Sen broke away to form the 'Brahmo Samaj of India'.\nB) Ananda Mohan Bose later founded the 'Sadharan Brahmo Samaj'.\nWhich of the above statement(s) is/are correct?"
+      },
+      "options": [
+        { "mr": "फक्त अ", "en": "Only A" },
+        { "mr": "फक्त ब", "en": "Only B" },
+        { "mr": "अ आणि ब दोन्ही", "en": "Both A and B" },
+        { "mr": "दोन्ही नाहीत", "en": "Neither A nor B" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "(१८६६/१८७८): दोन्ही विधाने अगदी बरोबर आहेत. १८६६ मध्ये केशवचंद्र सेन यांनी 'भारतीय ब्राह्मो समाज' स्थापला आणि पुढे बालविवाहाच्या मुद्द्यावर पुन्हा फूट पडून १८७८ मध्ये आनंदमोहन बोस यांनी 'साधारण ब्राह्मो समाज' स्थापन केला.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1866/1878): Both statements are correct. Keshub Chandra Sen split to form the Brahmo Samaj of India in 1866, and a subsequent split over child marriage led to the Sadharan Brahmo Samaj in 1878 by Ananda Mohan Bose.\n\n"
+      }
+    },
+    {
+      "id": 11,
+      "question": {
+        "mr": "महाराष्ट्रात 'परमहंस मंडळी' (Paramahansa Mandali) ची स्थापना १८४९ मध्ये मुंबईत कोणी केली, जिचा उद्देश जातीभेद व मूर्तिपूजा मोडणे हा होता?",
+        "en": "Who founded the 'Paramahansa Mandali' in Bombay in 1849, aimed at breaking caste barriers and opposing idol worship?"
+      },
+      "options": [
+        { "mr": "बाळकृष्ण बापूजी जांभेकर व दादोबा पांडुरंग (Dadoba Pandurang and Ram Balkrishna Jaykar)", "en": "Dadoba Pandurang Tarkhadkar" },
+        { "mr": "महादेव गोविंद रानडे", "en": "M.G. Ranade" },
+        { "mr": "ज्योतिराव फुले", "en": "Jyotirao Phule" },
+        { "mr": "गोपाल हरी देशमुख", "en": "Gopal Hari Deshmukh" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१८४९): दादोबा पांडुरंग, बाळकृष्ण बापूजी जयकर आणि त्यांच्या सहकाऱ्यांनी १८४९ मध्ये मुंबईत 'परमहंस मंडळी' स्थापन केली. ही एक गुप्त संघटना होती जिने गुप्तपणे जातीभेद मोडण्याचे आणि आंतरजातीय भोजनाचे उपक्रम राबवले.\n\n[संदर्भ: समाधान महाजन / डॉ. स. शि. गाठाळ]",
+        "en": "(1849): Dadoba Pandurang and Ram Balkrishna Jaykar founded the Paramahansa Mandali in Bombay in 1849 as a secret society dedicated to breaking caste restrictions and opposing idol worship.\n\n"
+      }
+    },
+    {
+      "id": 12,
+      "question": {
+        "mr": "पंजाबमध्ये शीख समाजातील धार्मिक व सामाजिक सुधारणांसाठी १८७३ मध्ये पहिली 'सिंह सभा' (Singh Sabha) कोठे स्थापन करण्यात आली होती?",
+        "en": "Where was the first 'Singh Sabha' established in 1873 for socio-religious reforms among the Sikhs in Punjab?"
+      },
+      "options": [
+        { "mr": "अमृतसर (Amritsar)", "en": "Amritsar" },
+        { "mr": "लाहोर", "en": "Lahore" },
+        { "mr": "जालंधर", "en": "Jalandhar" },
+        { "mr": "पटियाला", "en": "Patiala" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१८७३): पंजाबमध्ये ख्रिश्चन मिशनरी आणि आर्य समाजाच्या प्रभावाखाली शीख धर्माचे आचारविचार टिकवण्यासाठी आणि आधुनिकीकरणासाठी पहिली 'सिंह सभा' १८७३ मध्ये अमृतसर येथे स्थापन झाली.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(1873): The first Singh Sabha was founded in Amritsar in 1873 to restore Sikhism to its pristine purity, counter proselytization, and promote modern education among Sikhs.\n\n"
+      }
+    },
+    {
+      "id": 13,
+      "question": {
+        "mr": "खालीलपैकी कोणत्या समाजसुधारकाने 'धर्मो रक्षति रक्षितः' च्या प्रभावाखाली सत्यशोधक समाजाच्या तत्त्वांना विरोध करत पुण्यात 'सनातन धर्म प्रसारिणी सभा' स्थापन केली होती?",
+        "en": "Which orthodox leader opposed the Satyashodhak Samaj and established the 'Sanatan Dharma Prasarini Sabha' in Pune?"
+      },
+      "options": [
+        { "mr": "विष्णूभाऊ ब्रह्मचारी / लोकमान्य टिळक (समर्थक) / पारंपरिक रूढीवादी पंडित", "en": "Traditional orthodox pandits / Lokmanya Tilak's early orthodox circles" },
+        { "mr": "गोपाळ गणेश आग्रकर", "en": "Gopal Ganesh Agarkar" },
+        { "mr": "ज्योतिराव फुले", "en": "Jyotirao Phule" },
+        { "mr": "न्यायमूर्ती रानडे", "en": "Justice M.G. Ranade" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९ वे शतक): महात्मा फुल्यांच्या पुरोगामी विचारांना आणि सत्यशोधक समाजाच्या चळवळीला पुण्यात सनातनी व रूढीवादी ब्राह्मणांनी कडाडून विरोध केला, ज्यासाठी त्यांनी विविध सभा व 'पुणे वैभव' सारखी वृत्तपत्रे वापरली.\n\n[संदर्भ: समाधान महाजन]",
+        "en": "(Late 19th Century): Orthodoxy in Pune fiercely resisted Jyotirao Phule's radical social critique, forming counter-organizations to defend traditional caste privileges and scriptural authority.\n\n"
+      }
+    },
+    {
+      "id": 14,
+      "question": {
+        "mr": "भारतीय राष्ट्रीय सामाजिक परिषद (Indian National Social Conference) ची स्थापना १८८७ मध्ये कोणी केली होती, जी दरवर्षी काँग्रेस अधिवेशनानंतर भरत असे?",
+        "en": "Who founded the 'Indian National Social Conference' in 1887, which met annually alongside the Indian National Congress?"
+      },
+      "options": [
+        { "mr": "महादेव गोविंद रानडे आणि रघुनाथ राव (M.G. Ranade and Raghunath Rao)", "en": "M.G. Ranade and Raghunath Rao" },
+        { "mr": "गोपाळ कृष्ण गोखले", "en": "Gopal Krishna Gokhale" },
+        { "mr": "दादाभाई नौरोजी", "en": "Dadabhai Naoroji" },
+        { "mr": "फिरोजशाह मेहता", "en": "Pherozeshah Mehta" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१८८७): न्यायमूर्ती महादेव गोविंद रानडे आणि राव बहादूर रघुनाथ राव यांनी १८८७ मध्ये 'भारतीय राष्ट्रीय सामाजिक परिषदेची' स्थापना केली. या परिषदेने बालविवाह, बहुपत्नीत्व आणि जातभेदाविरुद्ध सामाजिक सुधारणांचा राष्ट्रीय मंच म्हणून काम केले.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / डॉ. स. शि. गाठाळ]",
+        "en": "(1887): Justice M.G. Ranade and Raghunath Rao founded the Indian National Social Conference in 1887, serving as the social reform wing meeting annually alongside the Indian National Congress.\n\n"
+      }
+    },
+    {
+      "id": 15,
+      "question": {
+        "mr": "खालील विधाने विचारात घ्या:\nअ) स्वामी दयानंद सरस्वती यांच्या मते वेद हे अपौरुषेय (ईश्वरनिर्मित) आणि ज्ञानाचे भांडार आहेत.\nब) त्यांनी 'गोहत्या बंदी'साठी मोठे जनआंदोलन उभारले होते.\nवरीलपैकी कोणते/ती विधान/ने बरोबर आहेत?",
+        "en": "Consider the following statements:\nA) According to Swami Dayanand Saraswati, the Vedas are infallible and the source of all true knowledge.\nB) He launched a major public movement advocating for cow protection (Go-raksha).\nWhich of the above statement(s) is/are correct?"
+      },
+      "options": [
+        { "mr": "फक्त अ", "en": "Only A" },
+        { "mr": "फक्त ब", "en": "Only B" },
+        { "mr": "अ आणि ब दोन्ही", "en": "Both A and B" },
+        { "mr": "दोन्ही नाहीत", "en": "Neither A nor B" }
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": {
+        "mr": "(१८७५ नंतर): दोन्ही विधाने बरोबर आहेत. दयानंद सरस्वती यांनी वेदांचे प्रामाण्य मानले (अफाट ज्ञान) आणि गोहत्येच्या विरोधात 'गोरक्षणी सभा' स्थापन करत गोवंश संरक्षणासाठी मोठे जनआंदोलन केले.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(Post-1875): Both statements are correct. Swami Dayanand regarded the Vedas as infallible sources of truth and championed cow protection (Go-raksha) through public mobilization.\n\n"
+      }
+    },
+    {
+      "id": 16,
+      "question": {
+        "mr": "महाराष्ट्रात 'डेक्कन एज्युकेशन सोसायटी' (Deccan Education Society) ची स्थापना १८८४ मध्ये पुणे येथे कोणी केली होती?",
+        "en": "Who founded the 'Deccan Education Society' in Pune in 1884?"
+      },
+      "options": [
+        { "mr": "टिळक, आग्रकर, चिपळूणकर आणि आपटे (Tilak, Agarkar, Chiplunkar and Apte)", "en": "Tilak, Agarkar, Chiplunkar, and Apte" },
+        { "mr": "फुले आणि लोखंडे", "en": "Phule and Lokhande" },
+        { "mr": "रानडे आणि भांडारकर", "en": "Ranade and Bhandarkar" },
+        { "mr": "कर्वे आणि सावरकर", "en": "Karve and Savarkar" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१८८४): विष्णू कृष्ण चिपळूणकर, बाळ गंगाधर टिळक, गोपाळ गणेश आग्रकर आणि विष्णू शास्त्री आपटे यांनी १८८४ मध्ये 'डेक्कन एज्युकेशन सोसायटी' स्थापन केली आणि न्यू इंग्लिश स्कूल व फर्ग्युसन कॉलेजच्या माध्यमातून शिक्षणाचा प्रसार केला.\n\n[संदर्भ: डॉ. स. शि. गाठाळ / समाधान महाजन]",
+        "en": "(1884): Lokmanya Tilak, G.G. Agarkar, V.K. Chiplunkar, and M.G. Apte founded the Deccan Education Society in Pune in 1884 to provide affordable, nationalist education.\n\n"
+      }
+    },
+    {
+      "id": 17,
+      "question": {
+        "mr": "नारायण मेघाजी लोखंडे यांनी महाराष्ट्रात कामगार चळवळीचे पाय रोवत १८९० मध्ये कोणती संघटना स्थापन केली आणि कोणते वृत्तपत्र काढले?",
+        "en": "Which organization and newspaper did Narayan Meghaji Lokhande establish in 1890, pioneering the labor movement in Maharashtra?"
+      },
+      "options": [
+        { "mr": "बॉम्बे मिलहैंड्स असोसिएशन (Bombay Millhands Association) आणि 'दीनबंधू' वृत्तपत्र", "en": "Bombay Millhands Association and Deenbandhu" },
+        { "mr": "सत्यशोधक समाज सभा", "en": "Satyashodhak Samaj Sabha" },
+        { "mr": "कामगार हितवर्धक सभा", "en": "Kamgar Hitvardhak Sabha" },
+        { "mr": "अखिल भारतीय ट्रेड युनियन", "en": "AITUC" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१८९०): नारायण मेघाजी लोखंडे यांनी १८९० मध्ये 'बॉम्बे मिलहैंड्स असोसिएशन' ही भारतातील पहिली कामगार संघटना स्थापन केली. तसेच ते महात्मा फुल्यांच्या 'दीनबंधू' वृत्तपत्राचे चालवणूक व संपादक म्हणूनही कार्यरत होते.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर / समाधान महाजन]",
+        "en": "(1890): Narayan Meghaji Lokhande established the Bombay Millhands Association in 1890, considered India's first labor union, and actively managed the nationalist-social paper 'Deenbandhu'.\n\n"
+      }
+    },
+    {
+      "id": 18,
+      "question": {
+        "mr": "खालीलपैकी कोणत्या समाजसुधारकाने 'जातिभेद विवेकसार' हा ग्रंथ लिहून चातुर्वर्ण्य व जातीव्यवस्थेवर प्रखर टीका केली होती?",
+        "en": "Which social reformer wrote the book 'Jatibhed Vivekasar' strongly critiquing the caste system and Chaturvarna?"
+      },
+      "options": [
+        { "mr": "महात्मा ज्योतिराव फुले", "en": "Mahatma Jyotirao Phule" },
+        { "mr": "राजर्षी शाहू महाराज", "en": "Rajarshi Shahu Maharaj" },
+        { "mr": "गोपाळ बाबा वळंगकर", "en": "Gopal Baba Walangkar" },
+        { "mr": "किसनराव आगळे", "en": "Kisanrao Agle" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१८८५/१८९२): महात्मा ज्योतिराव फुले यांनी आपल्या मृत्यूपूर्वी 'जातिभेद विवेकसार' हा ग्रंथ लिहिला (जो त्यांच्या निधनानंतर १८९२ मध्ये प्रकाशित झाला), ज्यात जातीव्यवस्थेचे मूळ शोधत त्यावर कठोर ताशेरे ओढले.\n\n[संदर्भ: डॉ. स. शि. गाठाळ]",
+        "en": "(1892): Mahatma Jyotirao Phule authored 'Jatibhed Vivekasar' (published posthumously in 1892), a piercing critique of the Hindu caste system and scriptural sanction behind inequality.\n\n"
+      }
+    },
+    {
+      "id": 19,
+      "question": {
+        "mr": "ब्रिटीश भारतातील सामाजिक सुधारणांच्या काळात 'देवदासी पद्धत' व 'मूर्तीपूजा' यांच्या विरोधात केरळमध्ये अय्यंकली यांच्यासोबत कार्य करणारे दुसरे प्रसिद्ध सुधारक कोण होते?",
+        "en": "Who was the other legendary social reformer in Kerala alongside Ayyankali who revolutionized socio-religious practices?"
+      },
+      "options": [
+        { "mr": "श्री नारायण गुरु (Sree Narayana Guru)", "en": "Sree Narayana Guru" },
+        { "mr": "कुमारन आशान", "en": "Kumaran Asan" },
+        { "mr": "टी. के. माधवन", "en": "T.K. Madhavan" },
+        { "mr": "वरील सर्व", "en": "All of the above" }
+      ],
+      "correctAnswerIndex": 3,
+      "explanation": {
+        "mr": "(२० वे शतक): केरळच्या प्रबोधनात श्री नारायण गुरु, कुमारन आशान आणि टी. के. माधवन या सर्वांचे योगदान मोलाचे होते. त्यांनी मंदिर प्रवेश सत्याग्रह आणि जातीविरोधी चळवळी तीव्र केल्या.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(Early 20th Century): Kerala's renaissance was spearheaded collectively by Sree Narayana Guru, Kumaran Asan, T.K. Madhavan, and Ayyankali through temple entry and social reforms.\n\n"
+      }
+    },
+    {
+      "id": 20,
+      "question": {
+        "mr": "खालील विधाने विचारात घ्या:\nअ) प्रार्थना समाजाने आंतरजातीय विवाह, विधवा पुनर्विवाह आणि महिला शिक्षणावर भर दिला.\nब) या समाजाने ब्राम्हणी धर्मग्रंथ नाकारले परंतु ख्रिश्चन धर्माचे तत्त्वज्ञान पूर्णपणे स्वीकारले.\nवरीलपैकी कोणते/ती विधान/ने बरोबर आहेत?",
+        "en": "Consider the following statements:\nA) The Prarthana Samaj emphasized inter-caste dining, widow remarriage, and women's education.\nB) The Samaj totally rejected Hindu scriptures while completely adopting Christian theology.\nWhich of the above statement(s) is/are correct?"
+      },
+      "options": [
+        { "mr": "फक्त अ", "en": "Only A" },
+        { "mr": "फक्त ब", "en": "Only B" },
+        { "mr": "अ आणि ब दोन्ही", "en": "Both A and B" },
+        { "mr": "दोन्ही नाहीत", "en": "Neither A nor B" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१८६७): विधान 'अ' बरोबर आहे. विधान 'ब' चुकीचे आहे कारण प्रार्थना समाजाने हिंदू धर्मातील भक्ती परंपरेचा व उपनिषदांचा आधार घेत सुधारणा केल्या, ख्रिश्चन धर्म पूर्णपणे स्वीकारला नाही.\n\n[संदर्भ: एम. लक्ष्मीकांत / स्पेक्ट्रम]",
+        "en": "(1867): Statement A is correct as Prarthana Samaj promoted progressive social reform. Statement B is incorrect because it drew inspiration from Hindu devotional traditions and the Upanishads rather than converting to Christianity.\n\n"
+      }
+    },
+    {
+      "id": 21,
+      "question": {
+        "mr": "समाजसुधारक बाळशास्त्री जांभेकर यांनी 'दर्पण' वृत्तपत्रातून कोणत्या मुख्य विषयांवर प्रकाश टाकला होता?",
+        "en": "What primary subjects did Balshastri Jambhekar highlight through his newspaper 'Darpan'?"
+      },
+      "options": [
+        { "mr": "वैज्ञानिक दृष्टिकोन, महिला शिक्षण, विधवा पुनर्विवाह व प्रशासकीय सुधारणा", "en": "Scientific temper, women's education, widow remarriage, and administrative reforms" },
+        { "mr": "केवळ धार्मिक कर्मकांड", "en": "Only religious rituals" },
+        { "mr": "परदेशी कापडांची चोरी", "en": "Theft of foreign goods" },
+        { "mr": "युद्ध तंत्रज्ञान", "en": "Military warfare technology" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१८३२): बाळशास्त्री जांभेकर यांनी 'दर्पण' मधून पश्चिम भारतातील जनतेत आधुनिक विज्ञान, शिक्षण, विधवा विवाह आणि सामाजिक सुधारणांची महती रुजवली.\n\n[संदर्भ: डॉ. स. शि. गाठाळ]",
+        "en": "(1832): Balshastri Jambhekar used 'Darpan' to advocate for western education, scientific knowledge, administrative accountability, and progressive social reforms.\n\n"
+      }
+    },
+    {
+      "id": 22,
+      "question": {
+        "mr": "खालीलपैकी कोणत्या महनीय व्यक्तीने पुण्यात 'अनाथ बालिका आश्रम' (महिला आश्रमाची स्थापना) सुरू केली होती?",
+        "en": "Which noble reformer established the 'Widow Home' (Mahila Ashram) in Pune?"
+      },
+      "options": [
+        { "mr": "महर्षी धोंडो केशव कर्वे (Maharshi D.K. Karve)", "en": "Maharshi D.K. Karve" },
+        { "mr": "ज्योतिराव फुले", "en": "Jyotirao Phule" },
+        { "mr": "गोपाल गणेश आग्रकर", "en": "Gopal Ganesh Agarkar" },
+        { "mr": "न्यायमूर्ती रानडे", "en": "Justice M.G. Ranade" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१८९६): महर्षी धोंडो केशव कर्वे यांनी विधवा महिलांच्या शिक्षणासाठी व त्यांच्या पुनर्वसनासाठी १८९६ मध्ये 'अनाथ बालिका आश्रम' स्थापन केला.\n\n[संदर्भ: डॉ. स. शि. गाठाळ]",
+        "en": "(1896): Maharshi D.K. Karve founded the Widow Home in Pune in 1896 to educate and shelter destitute women and widows.\n\n"
+      }
+    },
+    {
+      "id": 23,
+      "question": {
+        "mr": "खालील विधाने विचारात घ्या:\nअ) सर सय्यद अहमद खान यांनी 'वैज्ञानिक संस्था' (Scientific Society) ची स्थापना करून इंग्रजी ग्रंथांचे उर्दूमध्ये भाषांतर केले.\nब) त्यांनी पडदा पद्धत आणि बहुविवाहाचे समर्थन करत आधुनिक शिक्षणाला कडाडून विरोध केला.\nवरीलपैकी कोणते/ती विधान/ने बरोबर आहेत?",
+        "en": "Consider the following statements:\nA) Sir Syed Ahmed Khan established a 'Scientific Society' to translate English works into Urdu.\nB) He strongly supported purdah and polygamy while opposing modern English education.\nWhich of the above statement(s) is/are correct?"
+      },
+      "options": [
+        { "mr": "फक्त अ", "en": "Only A" },
+        { "mr": "फक्त ब", "en": "Only B" },
+        { "mr": "अ आणि ब दोन्ही", "en": "Both A and B" },
+        { "mr": "दोन्ही नाहीत", "en": "Neither A nor B" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९ वे शतक): विधान 'अ' बरोबर आहे कारण त्यांनी गाजीपूर येथे सायंटिफिक सोसायटी स्थापली होती. विधान 'ब' चुकीचे आहे कारण त्यांनी आधुनिक इंग्रजी शिक्षणाचा व विज्ञाननिष्ठ विचारांचा पुरस्कार केला होता.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(19th Century): Statement A is correct (he founded the Scientific Society). Statement B is incorrect because he was a staunch advocate of modern Western education for Muslims, though socially conservative on some traditional customs.\n\n"
+      }
+    },
+    {
+      "id": 24,
+      "question": {
+        "mr": "पंडिता रमाबाई यांनी महिलांच्या सर्वांगीण विकासासाठी आणि ख्रिश्चन मिशनरी कार्यातून 'मुक्ती मिशन'ची स्थापना कोठे केली होती?",
+        "en": "Where did Pandita Ramabai establish the 'Mukti Mission' for the holistic development and shelter of women?"
+      },
+      "options": [
+        { "mr": "केडगाव, पुणे (Kedgaon, Pune)", "en": "Kedgaon, Pune" },
+        { "mr": "मुंबई", "en": "Mumbai" },
+        { "mr": "नाशिक", "en": "Nashik" },
+        { "mr": "पंढरपूर", "en": "Pandharpur" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९ वे शतक): पंडिता रमाबाईंनी पुणे जवळील 'केडगाव' येथे मुक्ती मिशनची स्थापना केली, ज्यात निराधार महिला, अनाथ मुले आणि विधवा यांच्या राहण्याची, शिक्षणाची व स्वावलंबी बनवण्याची सोय होती.\n\n[संदर्भ: डॉ. स. शि. गाठाळ]",
+        "en": "(Late 19th/Early 20th Century): Pandita Ramabai established the Mukti Mission at Kedgaon near Pune, providing comprehensive shelter, education, and vocational training to destitute women and orphans.\n\n"
+      }
+    },
+    {
+      "id": 25,
+      "question": {
+        "mr": "स्वातंत्र्यपूर्व काळातील 'सामाजिक व धार्मिक सुधारणा चळवळींचे' भारतीय राष्ट्रीय चळवळीच्या संदर्भात सर्वात मोठे योगदान कोणते मानले जाते?",
+        "en": "What is considered the most significant contribution of the 19th-century 'Social and Religious Reform Movements' to the Indian national movement?"
+      },
+      "options": [
+        { "mr": "भारतीय समाजात आत्मसन्मान, rationalism (बुद्धीप्रामाण्यवाद) आणि राष्ट्रीय एकात्मतेचा पाया रचणे", "en": "Laying the foundation of self-respect, rationalism, and national unity in Indian society" },
+        { "mr": "केवळ धार्मिक कर्मकांड वाढवणे", "en": "Only increasing religious rituals" },
+        { "mr": "ब्रिटिशांची सत्ता कायम ठेवणे", "en": "Perpetuating British rule" },
+        { "mr": "प्रांतीय तेढ निर्माण करणे", "en": "Creating regional conflicts" }
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": {
+        "mr": "(१९ वे शतक): या सुधारणा चळवळींमुळे भारतीय समाजातून अंधश्रद्धा, जातभेद आणि जुनाट रूढी नष्ट होण्यास मदत झाली तसेच राष्ट्रवाद व आत्मसन्मानाची भावना निर्माण होऊन स्वातंत्र्यलढ्याची पार्श्वभूमी तयार झाली.\n\n[संदर्भ: स्पेक्ट्रम - राजीव अहीर]",
+        "en": "(19th Century): The reform movements successfully purged debilitating social evils, fostered rationalism, and united Indians under a common national and progressive consciousness, paving the way for the freedom struggle.\n\n"
+      }
+    }
+  ]
+}
