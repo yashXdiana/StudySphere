@@ -1,0 +1,19 @@
+{
+"name": "StudySphere - MPSC Group C Portal",
+"short_name": "StudySphere",
+"description": "MPSC Group C 2026 मोफत सराव चाचण्या, मॉक टेस्ट्स व अभ्यास प्रगती डॅशबोर्ड",
+"start_url": "./index.html",
+"scope": "./",
+"display": "standalone",
+"background_color": "#0f172a",
+"theme_color": "#0a2540",
+"orientation": "portrait-primary",
+"icons": [
+{
+"src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Crect width='512' height='512' rx='108' fill='%230a2540'/%3E%3Crect x='24' y='24' width='464' height='464' rx='90' fill='none' stroke='%23f59e0b' stroke-width='16'/%3E%3Ccircle cx='256' cy='128' r='48' fill='%23f59e0b'/%3E%3Cpath d='M256 176v64' stroke='%23ea580c' stroke-width='32' stroke-linecap='round'/%3E%3Cpath d='M128 256h256v40H128z' fill='%23f59e0b'/%3E%3Cpath d='M168 296v120M256 296v120M344 296v120' stroke='%23fbbf24' stroke-width='36' stroke-linecap='round'/%3E%3Cpath d='M96 416h320l-40 48H136l-40-48z' fill='%230f172a' stroke='%23f59e0b' stroke-width='12'/%3E%3Crect x='0' y='496' width='512' height='16' fill='%2315803d'/%3E%3C/svg%3E",
+"sizes": "192x192 512x512",
+"type": "image/svg+xml",
+"purpose": "any maskable"
+}
+]
+}
