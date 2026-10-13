@@ -163,17 +163,18 @@
 
   <div class="app-screen-container flex flex-col w-full overflow-hidden">
 
-    <!-- मुख्य हेडर (परीक्षा नियंत्रण पट्टी) -->
-    <header class="bg-white dark:bg-[#0d1728] border-b-2 border-slate-200 dark:border-[#1f3358] shadow-xs px-2.5 sm:px-6 py-2 shrink-0 z-30 transition-colors">
+    <!-- मुख्य हेडर (परीक्षा नियंत्रण पट्टी - मोबाईलवर स्क्रीनबाहेर न जाणारी रचना) -->
+    <header class="bg-white dark:bg-[#0d1728] border-b-2 border-slate-200 dark:border-[#1f3358] shadow-xs px-2 xs:px-3 sm:px-6 py-1.5 sm:py-2 shrink-0 z-30 transition-colors">
       <div class="flex flex-col gap-1.5 sm:gap-2 w-full">
         
         <!-- रांग १: नेव्हिगेशन, टाइमर आणि युटिलिटी बटणे -->
-        <div class="flex items-center justify-between gap-1.5 sm:gap-3 w-full">
+        <div class="flex items-center justify-between gap-1 sm:gap-3 w-full min-w-0">
           
           <!-- डावी बाजू: लोगो, एक्झिट आणि टाइमर -->
-          <div class="flex items-center gap-1.5 sm:gap-2.5 shrink-0">
-            <a href="index.html" onclick="event.preventDefault(); openExitModal();" title="मुख्यपृष्ठावर परत जा" class="w-8 h-8 sm:w-9 sm:h-9 rounded-xl bg-slate-900 border-2 border-amber-500 p-1 flex items-center justify-center shrink-0 shadow-xs relative overflow-hidden group">
-              <svg class="w-5 h-5 text-amber-400 group-hover:scale-105 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <div class="flex items-center gap-1 xs:gap-1.5 sm:gap-2.5 shrink-0 min-w-0">
+            <a href="index.html" onclick="event.preventDefault(); openExitModal();" title="मुख्यपृष्ठावर परत जा" 
+               class="w-7 h-7 xs:w-8 xs:h-8 sm:w-9 sm:h-9 rounded-xl bg-slate-900 border-2 border-amber-500 p-0.5 sm:p-1 flex items-center justify-center shrink-0 shadow-xs relative overflow-hidden group">
+              <svg class="w-4 h-4 xs:w-5 xs:h-5 text-amber-400 group-hover:scale-105 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
                 <circle cx="12" cy="4" r="2" class="fill-amber-400 stroke-none"/>
                 <path d="M12 6v3" class="stroke-orange-500" stroke-width="2"/>
                 <path d="M6 10h12v2H6z" class="fill-amber-400 stroke-none"/>
@@ -184,14 +185,14 @@
             </a>
 
             <button onclick="openExitModal()" title="चाचणीतून बाहेर पडा" 
-                    class="h-8 sm:h-9 px-2.5 py-1 sm:px-3 rounded-lg bg-rose-50 hover:bg-rose-100 dark:bg-rose-950/60 dark:hover:bg-rose-900/60 text-rose-700 dark:text-rose-300 border border-rose-300 dark:border-rose-900 text-xs font-bold flex items-center gap-1 transition-all active:scale-95 shrink-0 shadow-2xs">
-              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15M12 9l-3 3m0 0l3 3m-3-3h12.75"/></svg>
-              <span>Exit</span>
+                    class="h-7 xs:h-8 sm:h-9 px-1.5 xs:px-2.5 sm:px-3 rounded-lg bg-rose-50 hover:bg-rose-100 dark:bg-rose-950/60 dark:hover:bg-rose-900/60 text-rose-700 dark:text-rose-300 border border-rose-300 dark:border-rose-900 text-xs font-bold flex items-center gap-1 transition-all active:scale-95 shrink-0 shadow-2xs">
+              <svg class="w-3.5 h-3.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15M12 9l-3 3m0 0l3 3m-3-3h12.75"/></svg>
+              <span class="hidden xs:inline">Exit</span>
             </button>
 
             <!-- टाइमर / सराव मोड दर्शक -->
-            <div id="timerContainer" class="flex items-center gap-1.5 h-8 sm:h-9 px-2.5 py-1 sm:px-3 rounded-xl bg-orange-50 dark:bg-orange-950/70 border border-orange-300 dark:border-orange-800 text-orange-700 dark:text-orange-300 font-mono font-extrabold text-xs sm:text-sm shadow-2xs shrink-0">
-              <svg class="w-3.5 h-3.5 sm:w-4 sm:h-4 text-orange-600 dark:text-orange-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <div id="timerContainer" class="flex items-center gap-1 xs:gap-1.5 h-7 xs:h-8 sm:h-9 px-1.5 xs:px-2.5 sm:px-3 rounded-xl bg-orange-50 dark:bg-orange-950/70 border border-orange-300 dark:border-orange-800 text-orange-700 dark:text-orange-300 font-mono font-extrabold text-xs sm:text-sm shadow-2xs shrink-0">
+              <svg class="w-3.5 h-3.5 text-orange-600 dark:text-orange-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <circle cx="12" cy="12" r="10"/>
                 <polyline points="12 6 12 12 16 14"/>
               </svg>
@@ -199,13 +200,13 @@
             </div>
           </div>
 
-          <!-- उजवी बाजू: स्क्रीन साधने, थीम आणि पॅलेट बटण -->
+          <!-- उजवी बाजू: स्क्रीन साधने, थीम आणि पॅलेट बटण (स्क्रीनबाहेर न जाता सुरक्षित कॉम्पॅक्ट लेआउट) -->
           <div class="flex items-center gap-1 sm:gap-1.5 shrink-0">
             <!-- स्क्रीन रोटेट बटण (मोबाईल) -->
             <button id="screenRotateBtn" onclick="toggleScreenRotation()" 
                     title="स्क्रीन आडवी (Landscape) व फुलस्क्रीन करा" 
-                    class="lg:hidden h-8 w-8 sm:h-9 sm:w-9 rounded-lg bg-indigo-50 hover:bg-indigo-100 dark:bg-indigo-950/60 dark:hover:bg-indigo-900/60 text-indigo-700 dark:text-indigo-300 border border-indigo-300 dark:border-indigo-800 transition-all flex items-center justify-center text-xs font-bold active:scale-95 shrink-0 shadow-2xs">
-              <svg id="rotateIcon" class="w-4 h-4 transition-transform duration-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    class="lg:hidden h-7 w-7 xs:h-8 xs:w-8 sm:h-9 sm:w-9 rounded-lg bg-indigo-50 hover:bg-indigo-100 dark:bg-indigo-950/60 dark:hover:bg-indigo-900/60 text-indigo-700 dark:text-indigo-300 border border-indigo-300 dark:border-indigo-800 transition-all flex items-center justify-center text-xs font-bold active:scale-95 shrink-0 shadow-2xs">
+              <svg id="rotateIcon" class="w-3.5 h-3.5 xs:w-4 xs:h-4 transition-transform duration-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M21 12a9 9 0 0 0-9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/>
                 <path d="M3 3v5h5"/>
                 <path d="M3 12a9 9 0 0 0 9 9 9.75 9.75 0 0 0 6.74-2.74L21 16"/>
@@ -216,11 +217,11 @@
 
             <!-- फुलस्क्रीन टॉगल -->
             <button id="fullscreenToggleBtn" onclick="toggleFullscreen()" title="फुलस्क्रीन मोड चालू/बंद करा (F11)" 
-                    class="flex h-8 px-2 sm:h-9 sm:px-2.5 rounded-lg bg-slate-100 hover:bg-slate-200 dark:bg-[#121e35] dark:hover:bg-[#172744] text-slate-700 dark:text-slate-200 border border-slate-300 dark:border-[#1f3358] transition-all items-center justify-center gap-1 text-xs font-bold active:scale-95 shrink-0 shadow-2xs">
-              <svg id="enterFullscreenIcon" class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.2">
+                    class="h-7 w-7 xs:h-8 xs:w-8 sm:h-9 sm:w-auto sm:px-2.5 rounded-lg bg-slate-100 hover:bg-slate-200 dark:bg-[#121e35] dark:hover:bg-[#172744] text-slate-700 dark:text-slate-200 border border-slate-300 dark:border-[#1f3358] transition-all flex items-center justify-center gap-1 text-xs font-bold active:scale-95 shrink-0 shadow-2xs">
+              <svg id="enterFullscreenIcon" class="w-3.5 h-3.5 xs:w-4 xs:h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.2">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3.75v4.5m0-4.5h4.5m-4.5 0L9 9M3.75 20.25v-4.5m0 4.5h4.5m-4.5 0L9 15M20.25 3.75h-4.5m4.5 0v4.5m0-4.5L15 9m5.25 11.25h-4.5m4.5 0v-4.5m0 4.5L15 15"/>
               </svg>
-              <svg id="exitFullscreenIcon" class="w-4 h-4 shrink-0 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.2">
+              <svg id="exitFullscreenIcon" class="w-3.5 h-3.5 xs:w-4 xs:h-4 shrink-0 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.2">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M9 9V4.5M9 9H4.5M9 9L3.75 3.75M9 15v4.5M9 15H4.5M9 15l-5.25 5.25M15 9h4.5M15 9V4.5M15 9l5.25-5.25M15 15h4.5M15 15v4.5m0-4.5l5.25 5.25"/>
               </svg>
               <span class="hidden xl:inline text-xs" id="fullscreenText">Full Screen</span>
@@ -228,45 +229,46 @@
 
             <!-- रफ स्क्रॅचपॅड -->
             <button onclick="toggleScratchpad()" title="रफ कामासाठी स्क्रीन स्क्रॅचपॅड" 
-                    class="h-8 w-8 sm:h-9 sm:w-auto sm:px-2.5 rounded-lg bg-amber-50 hover:bg-amber-100 dark:bg-amber-950/60 text-amber-700 dark:text-amber-300 border border-amber-300 dark:border-amber-800/80 transition-all flex items-center justify-center gap-1 text-xs font-bold active:scale-95 shrink-0 shadow-2xs">
-              <svg class="w-4 h-4 text-amber-600 dark:text-amber-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                    class="h-7 w-7 xs:h-8 xs:w-8 sm:h-9 sm:w-auto sm:px-2.5 rounded-lg bg-amber-50 hover:bg-amber-100 dark:bg-amber-950/60 text-amber-700 dark:text-amber-300 border border-amber-300 dark:border-amber-800/80 transition-all flex items-center justify-center gap-1 text-xs font-bold active:scale-95 shrink-0 shadow-2xs">
+              <svg class="w-3.5 h-3.5 xs:w-4 xs:h-4 text-amber-600 dark:text-amber-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10"/>
               </svg>
               <span class="hidden 2xl:inline text-xs">Rough Pad</span>
             </button>
 
             <!-- थीम स्विचर -->
-            <button onclick="toggleDarkMode()" title="थीम बदला" class="h-8 w-8 sm:h-9 sm:w-9 rounded-lg bg-slate-100 hover:bg-slate-200 dark:bg-[#121e35] dark:hover:bg-[#172744] text-slate-700 dark:text-slate-200 border border-slate-300 dark:border-[#1f3358] transition-colors flex items-center justify-center shrink-0 shadow-2xs">
-              <svg id="sunIcon" class="w-4 h-4 hidden text-amber-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
-              <svg id="moonIcon" class="w-4 h-4 text-slate-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+            <button onclick="toggleDarkMode()" title="थीम बदला" 
+                    class="h-7 w-7 xs:h-8 xs:w-8 sm:h-9 sm:w-9 rounded-lg bg-slate-100 hover:bg-slate-200 dark:bg-[#121e35] dark:hover:bg-[#172744] text-slate-700 dark:text-slate-200 border border-slate-300 dark:border-[#1f3358] transition-colors flex items-center justify-center shrink-0 shadow-2xs">
+              <svg id="sunIcon" class="w-3.5 h-3.5 xs:w-4 xs:h-4 hidden text-amber-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+              <svg id="moonIcon" class="w-3.5 h-3.5 xs:w-4 xs:h-4 text-slate-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
             </button>
 
             <!-- मोबाईल क्वेश्चन पॅलेट टॉगल बटण -->
-            <button onclick="toggleMobilePalette()" class="lg:hidden flex items-center gap-1 h-8 px-2 sm:h-9 sm:px-2.5 rounded-lg bg-slate-200 dark:bg-[#121e35] text-slate-800 dark:text-slate-200 text-xs font-bold border border-slate-300 dark:border-[#1f3358] shrink-0 shadow-2xs">
+            <button onclick="toggleMobilePalette()" class="lg:hidden flex items-center gap-1 h-7 px-1.5 xs:h-8 xs:px-2 sm:h-9 sm:px-2.5 rounded-lg bg-slate-200 dark:bg-[#121e35] text-slate-800 dark:text-slate-200 text-xs font-bold border border-slate-300 dark:border-[#1f3358] shrink-0 shadow-2xs">
               <svg class="w-3.5 h-3.5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <rect x="3" y="3" width="7" height="7"/>
                 <rect x="14" y="3" width="7" height="7"/>
                 <rect x="14" y="14" width="7" height="7"/>
                 <rect x="3" y="14" width="7" height="7"/>
               </svg>
-              <span id="paletteMobileCount" class="text-[11px]">०/०</span>
+              <span id="paletteMobileCount" class="text-[10px] xs:text-[11px]">०/०</span>
             </button>
           </div>
 
         </div>
 
-        <!-- रांग २: चाचणीचे नाव, गुण पद्धत आणि अंतिम सबमिट बटण -->
-        <div class="flex items-center justify-between gap-2.5 pt-1.5 border-t border-slate-100 dark:border-[#1a2b4c] w-full min-w-0">
-          <div class="flex items-start sm:items-center gap-1.5 min-w-0 flex-1">
-            <h1 id="examTitle" class="text-xs sm:text-sm font-extrabold text-slate-900 dark:text-white leading-snug break-words flex-1">
+        <!-- रांग २: चाचणीचे नाव, गुण पद्धत आणि अंतिम सबमिट बटण (Truncate सुरक्षित) -->
+        <div class="flex items-center justify-between gap-2 pt-1 border-t border-slate-100 dark:border-[#1a2b4c] w-full min-w-0">
+          <div class="flex items-center gap-1.5 min-w-0 flex-1">
+            <h1 id="examTitle" class="text-xs sm:text-sm font-extrabold text-slate-900 dark:text-white leading-tight truncate min-w-0 flex-1">
               MPSC परीक्षा दालन
             </h1>
-            <span id="reattemptHeaderTag" class="hidden px-2 py-0.5 rounded text-[9px] font-black uppercase bg-rose-100 dark:bg-rose-950/80 text-rose-700 dark:text-rose-300 border border-rose-300 shrink-0 mt-0.5 sm:mt-0">
+            <span id="reattemptHeaderTag" class="hidden px-1.5 py-0.5 rounded text-[8px] xs:text-[9px] font-black uppercase bg-rose-100 dark:bg-rose-950/80 text-rose-700 dark:text-rose-300 border border-rose-300 shrink-0">
               Re-attempt
             </span>
           </div>
 
-          <div class="flex items-center gap-2 sm:gap-3 shrink-0">
+          <div class="flex items-center gap-1.5 xs:gap-2 sm:gap-3 shrink-0">
             <div class="hidden xs:flex flex-col text-right text-[10px] sm:text-[11px] text-slate-500 dark:text-slate-400 font-bold leading-tight whitespace-nowrap">
               <span id="markingSchemeBadge">१ गुण | -०.२५</span>
               <span id="totalQuestionsBadge" class="text-[9px] text-slate-400">० प्रश्न</span>
@@ -275,7 +277,7 @@
             <!-- हेडर सबमिट बटण (ID समाविष्ट) -->
             <button id="headerSubmitBtn" onclick="openSubmitModal()" 
                     title="चाचणी अंतिम सबमिट करा"
-                    class="h-8 sm:h-9 px-3.5 sm:px-4 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-black text-xs shadow-xs active:scale-95 transition-all border border-emerald-500 shrink-0 flex items-center justify-center gap-1.5">
+                    class="h-7.5 xs:h-8 sm:h-9 px-2.5 xs:px-3.5 sm:px-4 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-black text-xs shadow-xs active:scale-95 transition-all border border-emerald-500 shrink-0 flex items-center justify-center gap-1 sm:gap-1.5">
               <svg class="w-3.5 h-3.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
               <span id="headerSubmitBtnText">Submit</span>
             </button>
@@ -296,10 +298,10 @@
         <div id="questionScrollContainer" class="flex-1 overflow-y-auto p-3 sm:p-5 lg:p-6 w-full overscroll-contain scroll-smooth">
           <div class="max-w-4xl mx-auto w-full pb-2">
             
-            <!-- प्रश्न शीर्ष बार (क्रमांक, भाषा टॉगल, फॉन्ट साईज व बुकमार्क) -->
-            <div class="flex flex-wrap items-center justify-between gap-2.5 pb-2.5 mb-3.5 border-b-2 border-slate-200 dark:border-[#1f3358]">
-              <div class="flex items-center gap-2">
-                <span class="px-2.5 sm:px-3 py-1 rounded-lg bg-orange-100 dark:bg-orange-950 text-orange-700 dark:text-orange-300 font-extrabold text-xs sm:text-xs border border-orange-200 dark:border-orange-800 shadow-2xs">
+            <!-- प्रश्न शीर्ष बार (क्रमांक, भाषा टॉगल, फॉन्ट साईज व बुकमार्क - रिस्पॉन्सिव्ह) -->
+            <div class="flex flex-wrap items-center justify-between gap-2 pb-2 sm:pb-2.5 mb-3 sm:mb-3.5 border-b-2 border-slate-200 dark:border-[#1f3358]">
+              <div class="flex items-center gap-1.5 sm:gap-2">
+                <span class="px-2 xs:px-2.5 sm:px-3 py-1 rounded-lg bg-orange-100 dark:bg-orange-950 text-orange-700 dark:text-orange-300 font-extrabold text-xs border border-orange-200 dark:border-orange-800 shadow-2xs">
                   प्रश्न <span id="currentQuestionNum">१</span>
                 </span>
                 <span class="text-xs text-slate-400 font-bold">/ <span id="totalQuestionsText">०</span></span>
@@ -308,36 +310,36 @@
                 </span>
               </div>
 
-              <div class="flex items-center gap-2 flex-wrap">
+              <div class="flex items-center gap-1.5 xs:gap-2 flex-wrap">
                 
                 <!-- सेव्ह प्रश्न बटण -->
                 <button id="inQuizBookmarkBtn" onclick="toggleInQuizBookmark()" title="हा प्रश्न व्हॉल्टमध्ये सेव्ह करा"
-                        class="min-h-[38px] h-9 sm:min-h-[32px] sm:h-8 px-3 sm:px-2.5 rounded-xl border border-slate-300 dark:border-[#1f3358] hover:border-amber-400 bg-white dark:bg-[#121e35] text-slate-700 dark:text-slate-300 text-xs sm:text-[11px] font-extrabold flex items-center justify-center gap-1.5 transition-all active:scale-95 shadow-2xs shrink-0">
-                  <span id="bookmarkStarIcon" class="bookmark-star-icon text-base sm:text-sm">☆</span>
+                        class="h-8 sm:h-8 px-2.5 sm:px-2.5 rounded-xl border border-slate-300 dark:border-[#1f3358] hover:border-amber-400 bg-white dark:bg-[#121e35] text-slate-700 dark:text-slate-300 text-xs sm:text-[11px] font-extrabold flex items-center justify-center gap-1 sm:gap-1.5 transition-all active:scale-95 shadow-2xs shrink-0">
+                  <span id="bookmarkStarIcon" class="bookmark-star-icon text-sm">☆</span>
                   <span id="bookmarkStarText">Save</span>
                 </button>
 
                 <!-- भाषा टॉगल (दोन्ही / मराठी / इंग्रजी) -->
-                <div class="min-h-[38px] h-9 sm:min-h-[32px] sm:h-8 flex items-center p-0.5 rounded-xl bg-slate-200 dark:bg-[#121e35] border border-slate-300 dark:border-[#1f3358] text-xs sm:text-[11px] font-extrabold shrink-0 shadow-2xs">
+                <div class="h-8 sm:h-8 flex items-center p-0.5 rounded-xl bg-slate-200 dark:bg-[#121e35] border border-slate-300 dark:border-[#1f3358] text-xs sm:text-[11px] font-extrabold shrink-0 shadow-2xs">
                   <button type="button" onclick="setLanguage('both')" id="langBtnBoth" 
-                          class="h-full px-2.5 sm:px-2.5 rounded-lg transition-all bg-white dark:bg-[#172744] text-orange-600 dark:text-orange-400 shadow-xs flex items-center justify-center font-bold text-xs sm:text-[11px]">
+                          class="h-full px-2 xs:px-2.5 rounded-lg transition-all bg-white dark:bg-[#172744] text-orange-600 dark:text-orange-400 shadow-xs flex items-center justify-center font-bold text-xs sm:text-[11px]">
                     दोन्ही
                   </button>
                   <button type="button" onclick="setLanguage('mr')" id="langBtnMr" 
-                          class="h-full px-2.5 sm:px-2.5 rounded-lg transition-all text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white flex items-center justify-center font-bold text-xs sm:text-[11px]">
+                          class="h-full px-2 xs:px-2.5 rounded-lg transition-all text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white flex items-center justify-center font-bold text-xs sm:text-[11px]">
                     मराठी
                   </button>
                   <button type="button" onclick="setLanguage('en')" id="langBtnEn" 
-                          class="h-full px-2.5 sm:px-2.5 rounded-lg transition-all text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white flex items-center justify-center font-bold text-xs sm:text-[11px]">
+                          class="h-full px-2 xs:px-2.5 rounded-lg transition-all text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white flex items-center justify-center font-bold text-xs sm:text-[11px]">
                     Eng
                   </button>
                 </div>
 
                 <!-- फॉन्ट साईज टॉगल (S / M / L) -->
                 <button id="qFontSizeBtn" onclick="toggleQuestionFontSize()" title="मजकुराचा आकार बदला"
-                        class="min-h-[38px] h-9 sm:min-h-[32px] sm:h-8 px-2.5 sm:px-2.5 rounded-xl bg-slate-200 dark:bg-[#121e35] text-slate-700 dark:text-slate-200 border border-slate-300 dark:border-[#1f3358] text-xs sm:text-[11px] font-black flex items-center justify-center gap-1 active:scale-95 shadow-2xs shrink-0">
-                  <span class="tracking-tighter font-extrabold text-sm sm:text-xs">A<span class="text-[11px] sm:text-[9px]">A</span></span>
-                  <span id="qFontBadge" class="text-[9px] uppercase px-1.5 py-0.5 rounded bg-amber-400 text-slate-950 font-black">S</span>
+                        class="h-8 sm:h-8 px-2 xs:px-2.5 rounded-xl bg-slate-200 dark:bg-[#121e35] text-slate-700 dark:text-slate-200 border border-slate-300 dark:border-[#1f3358] text-xs sm:text-[11px] font-black flex items-center justify-center gap-1 active:scale-95 shadow-2xs shrink-0">
+                  <span class="tracking-tighter font-extrabold text-xs">A<span class="text-[9px]">A</span></span>
+                  <span id="qFontBadge" class="text-[9px] uppercase px-1 py-0.2 rounded bg-amber-400 text-slate-950 font-black">S</span>
                 </button>
 
                 <div class="hidden sm:flex items-center gap-1.5 text-xs font-bold pl-1">
@@ -384,34 +386,34 @@
           </div>
         </div>
 
-        <!-- तळाची ॲक्शन बार (४ बटणे: Review, Clear, Prev, Next) -->
-        <div id="actionBarWrapper" class="w-full shrink-0 bg-white/95 dark:bg-[#0d1728]/95 backdrop-blur border-t-2 border-slate-200 dark:border-[#1f3358] px-2.5 sm:px-6 py-2.5 z-20 shadow-md">
+        <!-- तळाची ॲक्शन बार (४ बटणे: Review, Clear, Prev, Next - स्क्रीनमध्ये १००% सुरक्षित बसणारी) -->
+        <div id="actionBarWrapper" class="w-full shrink-0 bg-white/95 dark:bg-[#0d1728]/95 backdrop-blur border-t-2 border-slate-200 dark:border-[#1f3358] px-2 xs:px-3 sm:px-6 py-2 sm:py-2.5 z-20 shadow-md">
           <div class="max-w-4xl mx-auto w-full">
-            <div class="grid grid-cols-4 gap-1.5 sm:gap-3 items-center w-full">
+            <div class="grid grid-cols-4 gap-1 xs:gap-1.5 sm:gap-3 items-center w-full">
               
               <button onclick="markForReviewAndNext()" 
-                      class="w-full py-2.5 px-1 sm:px-3 rounded-xl bg-white hover:bg-purple-50 dark:bg-[#121e35] dark:hover:bg-purple-950/50 text-purple-700 dark:text-purple-300 border-2 border-purple-600 font-bold text-[11px] sm:text-xs flex items-center justify-center gap-1 transition-all active:scale-95 truncate shadow-2xs">
-                <svg class="w-3.5 h-3.5 text-purple-600 dark:text-purple-400 shrink-0" viewBox="0 0 24 24" fill="currentColor">
+                      class="w-full py-2 xs:py-2.5 px-0.5 xs:px-1 sm:px-3 rounded-xl bg-white hover:bg-purple-50 dark:bg-[#121e35] dark:hover:bg-purple-950/50 text-purple-700 dark:text-purple-300 border-2 border-purple-600 font-bold text-[10px] xs:text-[11px] sm:text-xs flex items-center justify-center gap-0.5 sm:gap-1 transition-all active:scale-95 truncate shadow-2xs">
+                <svg class="w-3 h-3 xs:w-3.5 xs:h-3.5 text-purple-600 dark:text-purple-400 shrink-0" viewBox="0 0 24 24" fill="currentColor">
                   <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
                 </svg>
                 <span class="truncate">Review</span>
               </button>
 
               <button onclick="clearResponse()" 
-                      class="w-full py-2.5 px-1 sm:px-3 rounded-xl bg-slate-200 hover:bg-slate-300 dark:bg-[#121e35] dark:hover:bg-[#172744] border border-slate-300 dark:border-[#1f3358] text-slate-700 dark:text-slate-300 font-bold text-[11px] sm:text-xs flex items-center justify-center transition-all active:scale-95 truncate">
+                      class="w-full py-2 xs:py-2.5 px-0.5 xs:px-1 sm:px-3 rounded-xl bg-slate-200 hover:bg-slate-300 dark:bg-[#121e35] dark:hover:bg-[#172744] border border-slate-300 dark:border-[#1f3358] text-slate-700 dark:text-slate-300 font-bold text-[10px] xs:text-[11px] sm:text-xs flex items-center justify-center transition-all active:scale-95 truncate">
                 <span class="truncate">Clear</span>
               </button>
 
               <button id="prevBtn" onclick="prevQuestion()" 
-                      class="w-full py-2.5 px-1 sm:px-3 rounded-xl border border-slate-300 dark:border-[#1f3358] bg-slate-100 hover:bg-slate-200 dark:bg-[#121e35] dark:hover:bg-[#172744] font-bold text-[11px] sm:text-xs text-slate-700 dark:text-slate-200 transition-all flex items-center justify-center gap-0.5 sm:gap-1 truncate">
-                <svg class="w-3.5 h-3.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/></svg>
+                      class="w-full py-2 xs:py-2.5 px-0.5 xs:px-1 sm:px-3 rounded-xl border border-slate-300 dark:border-[#1f3358] bg-slate-100 hover:bg-slate-200 dark:bg-[#121e35] dark:hover:bg-[#172744] font-bold text-[10px] xs:text-[11px] sm:text-xs text-slate-700 dark:text-slate-200 transition-all flex items-center justify-center gap-0.5 sm:gap-1 truncate">
+                <svg class="w-3 h-3 xs:w-3.5 xs:h-3.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/></svg>
                 <span class="truncate">Prev</span>
               </button>
 
               <button onclick="saveAndNext()" 
-                      class="w-full py-2.5 px-1 sm:px-3 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-[11px] sm:text-xs shadow-xs transition-all flex items-center justify-center gap-0.5 sm:gap-1 active:scale-95 border border-emerald-500 truncate">
+                      class="w-full py-2 xs:py-2.5 px-0.5 xs:px-1 sm:px-3 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-[10px] xs:text-[11px] sm:text-xs shadow-xs transition-all flex items-center justify-center gap-0.5 sm:gap-1 active:scale-95 border border-emerald-500 truncate">
                 <span class="truncate">Next</span>
-                <svg class="w-3.5 h-3.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+                <svg class="w-3 h-3 xs:w-3.5 xs:h-3.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
               </button>
             </div>
           </div>
@@ -961,13 +963,14 @@
       localStorage.setItem('studySphere_bookmarks', JSON.stringify(savedBookmarks));
     }
 
+    // Zero-jump responsive button styling for Save button
     function updateBookmarkUI(isSaved) {
       const btn = document.getElementById('inQuizBookmarkBtn');
       const star = document.getElementById('bookmarkStarIcon');
       const text = document.getElementById('bookmarkStarText');
       if (!btn || !star) return;
 
-      const baseLayoutClasses = 'min-h-[38px] h-9 sm:min-h-[32px] sm:h-8 px-3 sm:px-2.5 rounded-xl text-xs sm:text-[11px] font-extrabold flex items-center justify-center gap-1.5 transition-all active:scale-95 shadow-2xs shrink-0';
+      const baseLayoutClasses = 'h-8 sm:h-8 px-2.5 sm:px-2.5 rounded-xl text-xs sm:text-[11px] font-extrabold flex items-center justify-center gap-1 sm:gap-1.5 transition-all active:scale-95 shadow-2xs shrink-0';
 
       if (isSaved) {
         star.textContent = '⭐';
@@ -1036,9 +1039,9 @@
       Object.keys(btns).forEach(key => {
         if (btns[key]) {
           if (key === lang) {
-            btns[key].className = 'h-full px-2.5 sm:px-2.5 rounded-lg transition-all bg-white dark:bg-[#172744] text-orange-600 dark:text-orange-400 shadow-xs flex items-center justify-center font-bold text-xs sm:text-[11px]';
+            btns[key].className = 'h-full px-2 xs:px-2.5 rounded-lg transition-all bg-white dark:bg-[#172744] text-orange-600 dark:text-orange-400 shadow-xs flex items-center justify-center font-bold text-xs sm:text-[11px]';
           } else {
-            btns[key].className = 'h-full px-2.5 sm:px-2.5 rounded-lg transition-all text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white flex items-center justify-center font-bold text-xs sm:text-[11px]';
+            btns[key].className = 'h-full px-2 xs:px-2.5 rounded-lg transition-all text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white flex items-center justify-center font-bold text-xs sm:text-[11px]';
           }
         }
       });
